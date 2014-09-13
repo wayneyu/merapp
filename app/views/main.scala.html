@@ -1,0 +1,43 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <table id="banner">
+        <tbody>
+        <tr>
+        <td style="color:#000;">
+
+        <table style="white-space:nowrap; border:none; background:none; position:relative">
+        <tbody><tr>
+        <td style="padding: 2px; white-space:nowrap; color:#FFFFFF;">
+        <a href="@routes.Application.index" title="Science:Math Exam Resources">
+        <img alt="Math kid.jpg" src="@routes.Assets.at("images/268px-Math_kid.jpg")" width="268" height="200">
+        </a>
+        </td></tr></tbody>
+        </table>
+
+        </td>
+
+        <td style="padding-right:5px; float:right;">
+        </td>
+        <td style="background:#2F4F4F; left:258px; font-weight:normal; height:200px; width:100%; color: white; font-size:50pt; line-height:120%; text-align:center;">
+        <b>@title</b>
+        </td>
+        </tr></tbody>
+        </table>
+
+
+        <div id="content">@content</div>
+
+        <p><a href=@routes.Application.index>Home</a></p>
+        <p><a href=@routes.Application.team>About us</a></p>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+    <form action="." method="POST">
+
+        <select name="course">
+            <option value="MATH100">Math 100/180</option>
+            <option value="MATH101">Math 101</option>
+            <option value="MATH102">Math 102</option>
+            <option value="MATH103">Math 103</option>
+            <option value="MATH104">Math 104/184</option>
+            <option value="MATH105">Math 105</option>
+            <option value="MATH110">Math 110</option>
+            <option value="MATH152">Math 152</option>
+            <option value="MATH200">Math 200</option>
+            <option value="MATH215">Math 215</option>
+            <option value="MATH220">Math 220</option>
+            <option value="MATH221">Math 221</option>
+            <option value="MATH253">Math 253</option>
+            <option value="MATH257">Math 257</option>
+            <option value="MATH307">Math 307</option>
+        </select>
+
+        <select name="exam_month">
+            <option value="April">April</option>
+            <option value="December">December</option>
+        </select>
+
+        <select name="exam_year">
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+        </select>
+
+        <form>
+            Question: <input type="text" name="question"><br>
+        </form>
+
+
+    <table style="width:100%;" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="width:70%;vertical-align:top;">
+            <h1>Hint</h1>
+
+            <textarea rows="7" type='inputHint' name="inputHint" value="inputHint" style="width:90%">HINT</textarea>
+            <input type="submit" name="submit" value="preview">
+
+            <div name="output-hint" align="left" style="width:90%">$\int_0^1$</div>
+
+
+            <h1>Solution</h1>
+
+            <textarea rows="10" type='inputSol' name="inputSol" value="inputSol" style="width:90%">SOL</textarea>
+            <input type="submit" name="submit" value="preview">
+
+            <div name="output-sol" align="left" style="width:90%">SOL_2</div>
+
+            <input type="submit" name="submit" value="submit">
+
+        </td>
+    </tr>
+    </table>
+    </form>
+
+
+</body>
+</html>

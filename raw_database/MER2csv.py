@@ -1,17 +1,31 @@
+# -*- coding: utf-8 -*-
 import urllib
 import lxml
 import lxml.html
 import os
 import pypandoc
 import re
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def mediawiki_from_edit(input):
     return input.split('name="wpTextbox1">')[1].split('</textarea')[0]
 
 def preCleaning(input):
+    print input
+    input = input.decode('latin1')
     input = input.replace('&lt;', '<')
     input = input.replace('&amp;', '&')
+    input = input.replace(u'221e', '<math>\infty</math>')
+#    input = input.replace('’', "'")
+    input = input.replace(u'â', '<math>\infty</math>')
+#    input = input.replace('≤', '<math>\leq</math>')
+#    input = input.replace('≥', '<math>\geq</math>')
+#    input = input.replace('°', '<math>^{\circ}</math>')
     input = re.sub(r': +<math>', ':<math>', input)
+    print input
+
     return input
 
 def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
@@ -32,7 +46,11 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
         except AttributeError:
             out = urllib.urlopen(urls[shs][index]).read()
         out = mediawiki_from_edit(out)
+        #try:
         return pypandoc.convert(preCleaning(out), 'latex', format='mediawiki')
+        #except:
+        #    return "NULL"
+
 
     return {'statement': [edit_to_latex('statementURL')],
     'hints': [edit_to_latex('hintsURLs', index) for index in range(len(urls['hintsURLs']))],

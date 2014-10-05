@@ -56,10 +56,6 @@ border: 1px dashed black;
 }
 
 
-#latex_box, #latex_box>* {
-  border : 1px solid blue;
-}
-
 #latex_box #tags {
   margin-top: 20px;
   margin-bottom: 2px
@@ -90,4 +86,21 @@ border: 1px solid grey;
 color: #000;
 background-color: #11fff8;
 }
+
+#latex_box button {
+  background-color: #fff;
+  font-size: 20px;
+}
+
+#latex_box button:hover {
+    background-color: #11fff8;
+}
+
+/*#latex_box, #latex_box>* {
+  border : 1px solid blue;
+}*/
+
+
+
+
 

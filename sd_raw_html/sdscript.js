@@ -40,6 +40,7 @@ $("div.hideable_box>div+div").fadeOut(0);
     // }
 
     $("#latex_box button").click(function() {   //this will apply to all anchor tags
+       $("#latex_box p").empty(); 
        $("#latex_box p").append( $("#latex_box textarea").val() );
        MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
        

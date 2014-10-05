@@ -5,47 +5,46 @@ $("div.hideable_box>div+div").fadeOut(0);
     // div.hideable_box>div
     // hide the box below it
     // div.hideable_box>div+div
-    $(".box_title").click(function (){
+    $(".hideable_box>.box_title").click(function (){
       $(this).siblings().fadeToggle(100);
      });
 
-  //   console.log("Script included!");
-  //   console.log(typeof "sd string");
-  //   console.log(typeof $);
+    $("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
+       $("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$'); 
+    });
 
-  //   $('#ingredients tbody tr').click(function (){
-  //   $(this).css( {"color":"grey","transition":"color .5s"});
+    $("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
+       $("#latex_box textarea").val($("#latex_box textarea").val()+'$\\int^4_3 x^2 dx$'); 
+    });
 
-  //   });
+    $("#latex_box #tags ul li:nth-child(3)").click(function() {   //this will apply to all anchor tags
+       $("#latex_box textarea").val($("#latex_box textarea").val()+'$\\Omega + \\Pi = \\Lambda$'); 
+    });
+    // $('#latex_box textarea').click(function()  
+    // { 
+    //    $(this).val($(this).val()+'STOP CLICKING ME!!\n'); 
+    // });
 
-  // // $("li.skip").insertAfter("li:first-child");
-  //   $('ol li').click(function (){
-  //   $("li.skip, p").insertAfter(this);
+    // cmds_latex_box = [
+    //     'sx_1$',
+    //     'sx_2$',
+    //     'sx_3$'
+    // ];
+        
 
-  //   });
+    // for (i = 0; i < cmds_latex_box.length; i++) {
+        // $("#latex_box #tags ul li:nth-child(" + (i+1).toString() + ")").click(function() {   //this will apply to all anchor tags
+        //    $("#latex_box textarea").val($("#latex_box textarea").val() + cmds_latex_box[i]); 
+        //    console.log(cmds_latex_box[i]);
+        // });
+    // }
 
-  //   $('#magicButton').click(function (){
-  //     $("#images img").fadeOut(1500, function () {
-  //      $(this).attr("src","http://upload.wikimedia.org/wikipedia/commons/a/aa/Empty_set.svg"); 
-
-  //     } )
-  //   .fadeIn(500)
-
-  //   ;
-
-
-    
-
-  //   // DOESNT WORK 
-  //   // http://jsfiddle.net/mblase75/fa5Wn/
-  //   $("#ingredients::after").toggleClass("special");
-  //   });
-
-
+    $("#latex_box button").click(function() {   //this will apply to all anchor tags
+       $("#latex_box p").append( $("#latex_box textarea").val() );
+       MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
+       
+    });    
 });
-
-
-
 
 
 

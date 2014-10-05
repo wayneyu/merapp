@@ -11,22 +11,18 @@ sys.setdefaultencoding('utf-8')
 
 question_urls = get_all_questions_from_exam('http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011')
 
-x = get_latex_statement_from_url('http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_01_(c)', 1, 1)
-
-print '-' * 50
-print x
-sys.exit()
+### uncomment for debugging
+#x = get_latex_statement_from_url('http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_04_(b)', 1, 1)
+#
+#print '-' * 50
+#print x['hints'][0]
+#sys.exit()
 
 
 full_db = {}
 for questionURL in question_urls:
     num_hints, num_sols = get_num_hs_question(questionURL)
-    try:
-        full_db[questionURL] = get_latex_statement_from_url('http://wiki.ubc.ca' + questionURL, num_hints, num_sols)
-    except:
-        print questionURL  #todo: some pre-cleaning of special ascii characters
-        print '-'*50
-
+    full_db[questionURL] = get_latex_statement_from_url('http://wiki.ubc.ca' + questionURL, num_hints, num_sols)
 
 with open("MATH100_December2011.json", "w") as outfile:
     json.dump(full_db, outfile, indent=4)

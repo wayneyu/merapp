@@ -2,59 +2,81 @@
 import urllib
 import lxml
 import lxml.html
-import os
 import pypandoc
 import re
+import warnings
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+
 def mediawiki_from_edit(input):
     return input.split('name="wpTextbox1">')[1].split('</textarea')[0]
 
+
 def preCleaning(input):
-    print input
     input = input.decode('latin1')
     input = input.replace('&lt;', '<')
     input = input.replace('&amp;', '&')
-    input = input.replace(u'221e', '<math>\infty</math>')
-#    input = input.replace('’', "'")
     input = input.replace(u'â', '<math>\infty</math>')
-#    input = input.replace('≤', '<math>\leq</math>')
-#    input = input.replace('≥', '<math>\geq</math>')
-#    input = input.replace('°', '<math>^{\circ}</math>')
+    input = input.replace(u'â¥', '<math>\geq</math>')
+    input = input.replace(u'â¤', '<math>\leq</math>')
+    input = input.replace(u'â', '<math>^{\prime}</math>')
+    input = input.replace(u'â²â²', '<math>^{\prime\prime}</math>')
+    input = input.replace(u'â²', '<math>^{\prime}</math>')
+    input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
+    input = input.replace(u'Â°', '<math>^{\circ}</math>')
     input = re.sub(r': +<math>', ':<math>', input)
-    print input
-
     return input
 
+
+def postCleaning(input):
+    input = input.replace(u'ƒ', '$f$')
+    input = input.replace("$f$$^{\prime}$", "$f'$")
+    input = input.replace("$f$$^{\prime\prime}$", "$f''$")
+    input = input.replace("\emph{f$^{\prime\prime}$", "$f''$")
+
+    input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
+    return input
+
+
 def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
+
     def get_dict_action_urls(action):
-        statementURL = questionURL.replace("Science", "index.php?title=Science") + "/Statement&action=" + action
-        hintURL = questionURL.replace("Science", "index.php?title=Science") + "/Hint_"
-        solURL = questionURL.replace("Science", "index.php?title=Science") + "/Solution_"
+        statementURL = questionURL.replace("Science",
+                        "index.php?title=Science") +
+                        "/Statement&action=" + action
+        hintURL = questionURL.replace("Science",
+                        "index.php?title=Science") +
+                        "/Hint_"
+        solURL = questionURL.replace("Science",
+                        "index.php?title=Science") +
+                        "/Solution_"
 
         return {'statementURL': statementURL,
-            'hintsURLs': [hintURL + str(num+1) + "&action=" + action for num in range(num_hints)],
-            'solsURLs': [solURL + str(num+1) + "&action=" + action for num in range(num_sols)]}
-
-    urls = get_dict_action_urls(action='edit')
+            'hintsURLs': [hintURL + str(num+1) + "&action=" +
+                            action for num in range(num_hints)],
+            'solsURLs': [solURL + str(num+1) + "&action=" +
+                            action for num in range(num_sols)]}
 
     def edit_to_latex(shs='statementURL', index=0):
         try:
             out = urllib.urlopen(urls[shs]).read()
         except AttributeError:
             out = urllib.urlopen(urls[shs][index]).read()
-        out = mediawiki_from_edit(out)
-        #try:
-        return pypandoc.convert(preCleaning(out), 'latex', format='mediawiki')
-        #except:
-        #    return "NULL"
+        try:
+            out = mediawiki_from_edit(out)
+        except IndexError:
+            warnings.warn('There is a problem with %s' % questionURL)
+            return 'No content found'
 
+        return postCleaning(pypandoc.convert(preCleaning(out), 'latex',
+            format='mediawiki'))
 
+    urls = get_dict_action_urls(action='edit')
     return {'statement': [edit_to_latex('statementURL')],
-    'hints': [edit_to_latex('hintsURLs', index) for index in range(len(urls['hintsURLs']))],
-    'sols': [edit_to_latex('solsURLs', index) for index in range(len(urls['solsURLs']))]}
+            'hints': [edit_to_latex('hintsURLs', index) for index in range(len(urls['hintsURLs']))],
+            'sols': [edit_to_latex('solsURLs', index) for index in range(len(urls['solsURLs']))]}
 
 
 
@@ -78,7 +100,7 @@ def get_all_exams_from_course(courseURL):
     searchTextA = courseURL.split(':')[2] + '/April'
     searchTextD = courseURL.split(':')[2] + '/December'
     examLinks = []
-    for link in dom.xpath('//a/@href'): # select the url in href for all a tags(links)
+    for link in dom.xpath('//a/@href'):  # select the url in href for all a tags(links)
         if searchTextA in link or searchTextD in link:
             examLinks.append(link)
     return examLinks

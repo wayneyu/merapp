@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} Simplification of answers is\nnot required unless explicitly stated.}\n\nLet\n\n\\[\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}\\]\\\\Find the second derivative of \\emph{y=f(x)}.", 
+    "year": 2011, 
+    "sols": [
+        "From the initial form of the derivative, as computed in\n\\href{Science:Math Exam Resources/Courses/MATH100/December 2011/Question 5 (a)}{part\n(a)},\n\n\\[f'(x) = \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5}\\]\n\nwe find that the second derivative is\n\n\\[\\begin{align}\nf''(x) &= \\left(\\frac65\\right)\\left(-\\frac45\\right)x^{-9/5} + \\left(\\frac65\\right)\\left(\\frac15\\right)x^{-4/5} \\\\\n&= \\frac6{25}\\left(-4x^{-9/5}+x^{-4/5}\\right) \\\\\n&= \\frac6{25x^{9/5}}(-4+x)\n\\end{align}\\]", 
+        "Using the compact form of the derivative, as computed in\n\\href{Science:Math Exam Resources/Courses/MATH100/December 2011/Question 5 (b)}{part\n(b)},\n\n\\[\\begin{align}\nf'(x) &= \\frac{6(x+1)}{5x^{4/5}}\n\\end{align}\\]\n\nwe find the second derivative by taking the quotient rule:\n\n\\[\\begin{align}\nf''(x) &= \\frac{6}{5} \\left( \\frac{x^{4/5}-\\frac{4}{5}x^{-1/5}(x+1)}{x^{8/5}} \\right)\\\\\n&= \\frac{6x^{-1/5}(x - \\frac{4}{5}x - \\frac{4}{5})}{5x^{8/5}}\\\\\n&= \\frac{6(\\frac{1}{5}x - \\frac{4}{5})}{5x^{9/5}}\\\\\n&= \\frac{6(x-4)}{25x^{9/5}}\n\\end{align}\\]"
+    ], 
+    "hints": [
+        "The first derivative was needed in\n\\href{Science:Math Exam Resources/Courses/MATH100/December 2011/Question 5 (b)}{part\n(b)} and has already been computed. Take the derivative of that\nfunction:\n\n\\[\\begin{align}\nf'(x) &= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&= \\frac{6(x+1)}{5x^{4/5}}\n\\end{align}\\]"
+    ]
+}

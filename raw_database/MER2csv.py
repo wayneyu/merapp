@@ -37,7 +37,7 @@ def postCleaning(input):
     input = input.replace("\emph{f$^{\prime\prime}$", "$f''$")
 
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
-    return input
+    return input.strip()
 
 
 def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
@@ -75,7 +75,7 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
                             format='mediawiki'))
 
     urls = get_dict_action_urls(action='edit')
-    return {'statement': [edit_to_latex('statementURL')],
+    return {'statement': edit_to_latex('statementURL'),
             'hints': [edit_to_latex('hintsURLs', index)
                       for index in range(len(urls['hintsURLs']))],
             'sols': [edit_to_latex('solsURLs', index)

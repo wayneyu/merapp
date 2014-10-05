@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nIf $f$(-1) = 9 and $f'(x)$ $\\geq$ 3 for -1 $\\leq$ \\emph{x} $\\leq$ 2,\nhow small can $f$(2) possibly be?", 
+    "year": 2011, 
+    "sols": [
+        "We are being told that the instantaneous rate of change of the function\nis at least of 3 on the interval {[}-1,2{]}, so the smallest possible\nvalue of $f$(2) is the case where the function has the smallest rate of\nchange, that is a constant rate of change of 3 which means it is a\nstraight line (of slope 3).\n\nAnd since we are starting at the point (-1,9) with a slope of 3 and a\nrun of 3 (from -1 to 2) we will end up with a rise of 9 and so the\nminimal value of $f$(2) is 18.", 
+        "Alternatively, you can use the MVT (Mean Value Theorem), which states\nthat if \\emph{f(x)} is defined and continuous on the interval\n\\emph{{[}a,b{]}} and differentiable on \\emph{(a,b)}, then there is at\nleast one number \\emph{c} in the interval \\emph{(a,b)} (that is \\emph{a\n\\textless{} c \\textless{} b}) such that\n\n$f '(c) = \\frac{f(b)-f(a)}{b-a}$\n\nIf we assume $f(x)$ is differentiable on \\emph{(-1,2)} and\ndifferentiable and continuous on the interval \\emph{{[}-1,2{]}}, we can\nuse the MVT which gives:\n\n$\\frac{f(2)-f(-1)}{2-(-1)} = f'(c)$\n\nFor some value \\emph{c} in the interval \\emph{(-1,2)}. However, we know\nthat $f'(x) \\geq 3$ for any value between -1 and 2, thus,\n$f'(c) \\geq 3$. Adding this, plugging in known values, and simplifying\ngives:\n\n$\\frac{f(2) - 9}{3} \\geq 3$\n\nSolving for \\emph{f(2)} we get $f(2) \\geq 18$, thus the minimal value of\n\\emph{f(2)} is 18."
+    ], 
+    "hints": [
+        "What does $f'(x)$ $\\geq$ 3 for -1 $\\leq$ \\emph{x} $\\leq$ 2 mean in\nterms of the increasing/decreasing of the function $f(x)$ between\n-1 and 2?"
+    ]
+}

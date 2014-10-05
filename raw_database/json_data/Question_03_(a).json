@@ -1,0 +1,12 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} Simplification of answers is\nnot required unless explicitly stated.}\\\\A particle moves in a straight\nline according to a law of motion \\emph{s} = $f$(\\emph{t} ), \\emph{t}\n$\\geq$ 0, where \\emph{t} is measured in seconds and \\emph{s} in meters.\nThe acceleration function \\emph{a}(\\emph{t} ) is given by\n\n\\[\\displaystyle\na(t)=12t-30\\] The velocity after 2 seconds is 0, and $f$(0) = 0.\\\\\\\\Find\nthe position function \\emph{s} = $f$(\\emph{t} ).", 
+    "year": 2011, 
+    "sols": [
+        "If \\emph{s} = $f$(''t \\emph{) is the function describing the position of\nthe particle, then its derivative $f$'(}t '') is its velocity and its\nsecond derivative the acceleration. This means we know that\n\n\\[\\displaystyle\nf''(t) = a(t)\\] and so\n\n\\[\\displaystyle\nf''(t) = 12t-30\\] Since this is a polynomial in \\emph{t} of degree one,\nwe know that the velocity must be a polynomial of degree 2:\n\n\\[\\displaystyle\nf'(t) = at^2+bt+c\\] whose derivative is 12\\emph{t}-30\n\n\\[\\frac{d}{dt}\\left( at^2+bt+c \\right) = 2at+b\\] Hence we have\n\n\\[\\displaystyle\n2a = 12 \\qquad \\text{and} \\qquad b=-30\\] And so the velocity is\n\n\\[\\displaystyle\nf'(t) = 6t^2-30t+c\\] for some constant \\emph{c}. Since the velocity\nafter 2 seconds is 0, we actually are being told that $f$'(2)=0 and hence\n\n\\[\\displaystyle\n6 \\cdot 4 - 30 \\cdot 2 + c = 0 \\qquad \\Rightarrow c=36\\] And so the\nvelocity is\n\n\\[\\displaystyle\nf'(t) = 6t^2-30t+36\\] Now, the velocity being the derivative of the\nposition function, we can deduce that it has to be a polynomial of\ndegree 3 and write\n\n\\[\\displaystyle\nf(t) = At^3+Bt^2+Ct+D\\] and computing its derivative gives us\n\n\\[\\displaystyle\nf'(t) = 3At^2+2Bt+C\\] Hence\n\n\\[\\displaystyle\n3A = 6 \\qquad \\text{and} \\qquad 2B=-30 \\qquad \\text{and} \\qquad C=36\\]\nSo the position function is\n\n\\[\\displaystyle\nf(t) = 2t^3-15t^2+36t+D\\] and we can find out the value of \\emph{D}\nsince we are told that $f$(0) = 0 which gives\n\n\\[\\displaystyle\nD=0\\] And so finally, we obtain that the position function is:\n\n\\[\\displaystyle\nf(t) = 2t^3-15t^2+36t\\]"
+    ], 
+    "hints": [
+        "The acceleration is the rate of change of velocity."
+    ]
+}

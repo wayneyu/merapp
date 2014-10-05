@@ -4,10 +4,18 @@ from MER2csv import (get_latex_statement_from_url,
                      get_num_hs_question)
 
 import json
+import os
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+
+def get_course_year_term_question_from_url(url):
+    course, term_year, question = url.split('/')[3:6]
+    print(course, term_year, question)
+    term, year = term_year.split('_')
+
+    return course, int(year), term, question
 
 question_urls = get_all_questions_from_exam(('http://wiki.ubc.ca/'
                                              'Science:Math_Exam_Resources/'
@@ -24,12 +32,19 @@ question_urls = get_all_questions_from_exam(('http://wiki.ubc.ca/'
 # sys.exit()
 
 
-full_db = {}
 for questionURL in question_urls:
     num_hints, num_sols = get_num_hs_question(questionURL)
-    full_db[questionURL] = get_latex_statement_from_url(('http://wiki.ubc.ca' +
-                                                         questionURL),
-                                                        num_hints, num_sols)
+    question_latex = get_latex_statement_from_url(('http://wiki.ubc.ca' +
+                                                   questionURL),
+                                                  num_hints, num_sols)
+    course, year, term, \
+        question = get_course_year_term_question_from_url(questionURL)
+    question_json = {"course": course,
+                     "year": year,
+                     "term": term,
+                     "statement": question_latex['statement'],
+                     "hints": question_latex['hints'],
+                     "sols": question_latex['sols']}
 
-with open("MATH100_December2011.json", "w") as outfile:
-    json.dump(full_db, outfile, indent=4)
+    with open(os.path.join("json_data", question + ".json"), "w") as outfile:
+        json.dump(question_json, outfile, indent=4)

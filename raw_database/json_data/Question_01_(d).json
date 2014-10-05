@@ -1,0 +1,12 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nSuppose \\emph{f} and \\emph{g} are continuous functions such that\n\\emph{g(3) = 2} and\n\n\\[\\displaystyle\n\\lim_{x \\to 3} (xf(x) + g(x)) = 1.\\] Find \\emph{f(3)}.", 
+    "year": 2011, 
+    "sols": [
+        "Our goal is to find \\emph{f(3)}. Since \\emph{f(x)} is continuous we know\nthat $f(3) = \\lim_{x \\to 3} f(x)$ and thus finding \\emph{f(3)} amounts\nto finding the limit.\n\nUsing the limit laws we have\n\n\\[1 = \\lim_{x \\to 3} (xf(x) + g(x)) = \\lim_{x \\to 3} x \\lim_{x \\to 3} f(x) + \\lim_{x \\to 3} g(x).\\]\nUsing that both functions \\emph{x} and \\emph{g(x)} are continuous, we\nhave that\n\n\\[\\lim_{x \\to 3} x = 3\\] and\n\n\\[\\lim_{x \\to 3} g(x) = g(3) = 2.\\] Plugin this into the above equality,\nwe find\n\n\\[1 = 3 \\lim_{x \\to 3} f(x) + 2\\] and hence\n\n\\[\\lim_{x \\to 3} f(x) = - \\frac{1}{3} .\\]\n\nBy the first remark above we have\n\n\\[\\displaystyle f(3) =  - \\frac{1}{3}.\\]"
+    ], 
+    "hints": [
+        "What limit laws can you use to separate the limit?"
+    ]
+}

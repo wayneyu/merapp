@@ -1,0 +1,14 @@
+{
+    "course": "MATH100",
+    "year": 2011,
+    "term": "December",
+    "sols": [
+        "The two variables that are changing in this problem are the volume of\nwater and the height of the water. These two variables are related in\nthe formula for volume of a cylinder:\n\n\\[V = \\pi r^2 h\\] For this problem, we know that the radius of the\ncylinder is 3, so we can put that into our formula to get:\n\n\\[V = 9\\pi  h\\] Since the question is asking about rates of change, we\nwill differentiate the above formula with respect to \\emph{t}.\n\n\\[\\frac{dV}{dt} = 9\\pi\\frac{dh}{dt}\\] In this new formula, \\emph{dh/dt}\nstands for the rate at which the height of the water is changing, which\nis what we're solving for. We also know that \\emph{dV/dt} stands for the\nrate at which the volume of water is changing, which is \\emph{5\nm\\textsuperscript{3}/min}. So substituting in \\emph{dV/dt = 5} we have:\n\n\\[5 = 9\\pi\\frac{dh}{dt}\\] And solving for \\emph{dh/dt} we get:\n\n\\[\\frac{dh}{dt} = \\frac{5}{9\\pi} m/min\\]\n"
+    ],
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nA vertical cylindrical tank with radius \\emph{3m} is being filled with\nwater at a rate of \\emph{5m\\textsuperscript{3}/min}. How fast is the\nheight of the water increasing?\n",
+    "hints": [
+        "What is the relationship between the volume of water being added and the\nincrease in the water's height?\n",
+            "Recall that the formula for a cylinder's volume is\n\n\\[V=\\pi r^2h\\] Where \\emph{r} is the radius of the base and \\emph{h} is\nthe height.\n"
+    ]
+
+}

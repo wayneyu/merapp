@@ -9,6 +9,18 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+course = "MATH100"
+exam = "December_2013"
+directory = os.path.join('json_data', course, exam)
+
+#import urllib
+# urllib.urlretrieve(
+#    "http://wiki.ubc.ca/images/6/6b/Math100_December_2012_Problem_8_Solution.jpg",
+#    "test.jpg")
+
+# images are at http://wiki.ubc.ca/File:Math100_December2012_Q7.png
+# on that page, find the link to the raw graphic
+
 
 def get_course_year_term_question_from_url(url):
     course, term_year, question = url.split('/')[3:6]
@@ -19,13 +31,13 @@ def get_course_year_term_question_from_url(url):
 
 question_urls = get_all_questions_from_exam(('http://wiki.ubc.ca/'
                                              'Science:Math_Exam_Resources/'
-                                             'Courses/MATH100/December_2011'))
+                                             'Courses/' + course + '/' + exam))
 
-### uncomment for debugging
+# uncomment for debugging
 # x = get_latex_statement_from_url(('http://wiki.ubc.ca/'
-                                  # 'Science:Math_Exam_Resources/Courses/'
-                                  # 'MATH100/December_2011/Question_04_(b)'),
-                                 # 1, 1)
+# 'Science:Math_Exam_Resources/Courses/'
+# 'MATH100/December_2011/Question_04_(b)'),
+# 1, 1)
 
 # print("-" * 50)
 # print(x['hints'][0])
@@ -46,5 +58,8 @@ for questionURL in question_urls:
                      "hints": question_latex['hints'],
                      "sols": question_latex['sols']}
 
-    with open(os.path.join("json_data", question + ".json"), "w") as outfile:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    with open(os.path.join(directory, question + ".json"), "w") as outfile:
         json.dump(question_json, outfile, indent=4)

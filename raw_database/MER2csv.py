@@ -34,7 +34,10 @@ def handleImages(content, directory):
         if not imageNames:
             return content_str
         for image in imageNames:
-            content = content_str.replace(image, image.replace(' ', '_'))
+            content = content_str.replace(image, image.replace(' ',
+                                                               '_')).replace(
+                'includegraphics{',
+                'includegraphics[width=.5\\textwidth]{')
             save_image(imageName=image)
         return content
     try:
@@ -101,7 +104,20 @@ def postCleaning(input):
     input = input.replace("$f$$^{\prime\prime}$", "$f''$")
     input = input.replace("\emph{f$^{\prime\prime}$", "$f''$")
 
+    input = input.replace(u'\u03b8', '$\\theta$')
+    input = input.replace(u'\u03c0', '$\pi$')
+    input = input.replace(u'\u03c6', '$\phi$')
+    input = input.replace(u'\u03c1', '$\\rho$')
+    input = input.replace(u'\u221e', '$\infty$')
+
+    input = input.replace("\[\\begin{align}", "\\begin{align*}")
+    input = input.replace("\end{align}\]", "\end{align*}")
+
+    input = input.replace('$\displaystyle\\begin{align}', '\\begin{align*}')
+    input = input.replace('\end{align}$', '\end{align*}')
+
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
+    input = re.sub(r"([\^_])\\sqrt{([^\s]*)}", r"\1{\\sqrt{\2}}", input)
     return input.strip()
 
 
@@ -138,7 +154,6 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
 
         post_cleaned = postCleaning(pypandoc.convert(preCleaning(out), 'latex',
                                                      format='mediawiki'))
-        # return handleImages(post_cleaned)
         return post_cleaned
 
     urls = get_dict_action_urls(action='edit')

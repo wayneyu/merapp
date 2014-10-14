@@ -5,9 +5,74 @@ import lxml.html
 import pypandoc
 import re
 import warnings
+import os
+import json
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+
+def handleImages(content, directory):
+
+    def save_image(imageName):
+        imageName = imageName.replace(' ', '_')
+        imageFileURL = "http://wiki.ubc.ca/File:" + imageName
+
+        connection = urllib.urlopen(imageFileURL)
+        dom = lxml.html.fromstring(connection.read())
+        for link in dom.xpath('//a/@href'):
+            if '//wiki.ubc.ca/images' in link:
+                raw_image_url = link
+                break
+
+        urllib.urlretrieve(
+            "http:" + raw_image_url, os.path.join(directory, imageName))
+
+    def do_string(content_str):
+        imageNames = re.findall(
+            r"includegraphics{(.*)}", content_str)
+        if not imageNames:
+            return content_str
+        for image in imageNames:
+            content = content_str.replace(image, image.replace(' ', '_'))
+            save_image(imageName=image)
+        return content
+    try:
+        return do_string(content)
+    except TypeError:
+        return [do_string(c) for c in content]
+
+
+def json_from_course_exam(course, term, year):
+    exam = term + '_' + str(year)
+    directory = os.path.join('json_data', course, exam)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    question_urls = get_all_questions_from_exam(('http://wiki.ubc.ca/'
+                                                 'Science:Math_Exam_Resources/'
+                                                 'Courses/' + course + '/' +
+                                                 exam))
+    for questionURL in question_urls:
+        num_hints, num_sols = get_num_hs_question(questionURL)
+        question_latex = get_latex_statement_from_url(('http://wiki.ubc.ca' +
+                                                       questionURL),
+                                                      num_hints, num_sols)
+
+        question = questionURL.split('/')[-1]
+        question_json = {"course": course,
+                         "year": int(year),
+                         "term": term,
+                         "question": question,
+                         "statement": handleImages(question_latex['statement'],
+                                                   directory),
+                         "hints": handleImages(question_latex['hints'],
+                                               directory),
+                         "sols": handleImages(question_latex['sols'],
+                                              directory)}
+
+        with open(os.path.join(directory, question + ".json"), "w") as outfile:
+            json.dump(question_json, outfile, indent=4)
 
 
 def mediawiki_from_edit(input):
@@ -54,9 +119,9 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
             "/Solution_"
 
         return {'statementURL': statementURL,
-                'hintsURLs': [hintURL + str(num+1) + "&action=" +
+                'hintsURLs': [hintURL + str(num + 1) + "&action=" +
                               action for num in range(num_hints)],
-                'solsURLs': [solURL + str(num+1) + "&action=" +
+                'solsURLs': [solURL + str(num + 1) + "&action=" +
                              action for num in range(num_sols)]}
 
     def edit_to_latex(shs='statementURL', index=0):
@@ -71,8 +136,10 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
                           % questionURL)
             return 'No content found'
 
-        return postCleaning(pypandoc.convert(preCleaning(out), 'latex',
-                            format='mediawiki'))
+        post_cleaned = postCleaning(pypandoc.convert(preCleaning(out), 'latex',
+                                                     format='mediawiki'))
+        # return handleImages(post_cleaned)
+        return post_cleaned
 
     urls = get_dict_action_urls(action='edit')
     return {'statement': edit_to_latex('statementURL'),
@@ -143,9 +210,9 @@ def get_num_hs_question(questionURL):
         raw = urllib.urlopen(requestURL).read()
         if 'There is currently no text in this page' in raw:
             tryer = False
-            num_hints = num_hints-1
+            num_hints = num_hints - 1
         else:
-            num_hints = num_hints+1
+            num_hints = num_hints + 1
     num_sols = 1
     tryer = True
     while tryer:
@@ -154,9 +221,9 @@ def get_num_hs_question(questionURL):
         raw = urllib.urlopen(requestURL).read()
         if 'There is currently no text in this page' in raw:
             tryer = False
-            num_sols = num_sols-1
+            num_sols = num_sols - 1
         else:
-            num_sols = num_sols+1
+            num_sols = num_sols + 1
     return num_hints, num_sols
 
 

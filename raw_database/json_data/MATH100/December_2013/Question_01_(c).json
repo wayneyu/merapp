@@ -1,0 +1,8 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nEvaluate the limit\n\n\\[\\lim_{x \\to 0} \\frac{x}{\\sqrt{1+2x}-1}\\]", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

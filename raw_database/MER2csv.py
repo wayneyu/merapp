@@ -111,9 +111,18 @@ def postCleaning(input):
     input = input.replace(u'\u221e', '$\infty$')
 
     input = input.replace("\[\\begin{align}", "\\begin{align*}")
+    input = input.replace("$\displaystyle \\begin{align}", "\\begin{align*}")
+    input = input.replace("$\displaystyle\\begin{align}", "\\begin{align*}")
+    input = input.replace("\[\displaystyle \\begin{align}", "\\begin{align*}")
+    input = input.replace("\[\displaystyle\\begin{align}", "\\begin{align*}")
+
+    input = input.replace("\[\n\\begin{align}", "\\begin{align*}")
+
     input = input.replace("\end{align}\]", "\end{align*}")
 
     input = input.replace('$\displaystyle\\begin{align}', '\\begin{align*}')
+    input = input.replace('$\\begin{align}', '\\begin{align*}')
+    input = input.replace('\\begin{align}', '\\begin{align*}')
     input = input.replace('\end{align}$', '\end{align*}')
 
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)

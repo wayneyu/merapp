@@ -26,44 +26,50 @@ def writeLatex(course, term, year):
               '\usepackage{amsfonts}\n'
               '\usepackage{graphicx}\n'
               '\usepackage{fixltx2e}\n'
-              '\usepackage[draft]{hyperref}\n'
+              '\usepackage{hyperref}\n'
               '\usepackage{color}\n'
               '\\newcommand{\R}{\mathbb{R}}'
               '\\newcommand{\C}{\mathbb{C}}'
               '\\newcommand{\N}{\mathbb{N}}'
               '\\newcommand{\Z}{\mathbb{Z}}'
+              '\\setcounter{secnumdepth}{-2}'
               '\\begin{document}\n')
 
-    out.write('\section*{%s - %s %s}' % (course, term, year))
+    out.write('\section{%s - %s %s}' % (course, term, year))
+    out.write('\\tableofcontents\n')
     for f in onlyfiles:
         fd = open(os.path.join(directory, f), 'r')
         text = fd.read()
         fd.close()
         data = json.loads(text)
         qname = data['question'].replace('_', ' ')
-        out.write('\\textbf{' + qname + '}')
+        out.write('\\section{%s}' %
+                  qname.replace('_',
+                                '').replace('Question 0',
+                                            'Q ').replace('Question ',
+                                                          'Q '))
         out.write('\n')
         statement = data['statement']
         out.write(statement)
         hints = data['hints']
         if len(hints) == 1:
             out.write(
-                '\n\n\\bigskip \n \\textbf{Hint.} \n %s \n\n' % hints[0])
+                '\n\n\\bigskip \n \\subsection{Hint} \n %s \n\n' % hints[0])
         else:
             for num, hint in enumerate(hints):
                 out.write(
                     '\n\n\\bigskip \n'
-                    '\\textbf{Hint %s.}'
+                    '\\subsection{Hint %s}'
                     '\n %s \n\n' % (num + 1, hint))
         sols = data['sols']
         if len(sols) == 1:
             out.write(
-                '\n\n\\bigskip \n \\textbf{Solution.} \n %s \n\n' % sols[0])
+                '\n\n\\bigskip \n \\subsection{Solution} \n %s \n\n' % sols[0])
         else:
             for num, sol in enumerate(sols):
                 out.write(
                     '\n\n\\bigskip \n'
-                    '\\textbf{Solution %s.}'
+                    '\\subsection{Solution %s}'
                     '\n %s \n\n' % (num + 1, sol))
         out.write('\n \n \\bigskip \\noindent'
                   '\makebox[\linewidth]{\\rule{0.6\paperwidth}{0.4pt}}'
@@ -92,7 +98,9 @@ if __name__ == '__main__':
     directory = os.path.join('json_data', course, exam)
     os.chdir(directory)
     x = subprocess.check_output(
-        ["pdflatex", "--interaction nonstopmode", "full_exam.tex"])
-    os.remove("full_exam.log")
-    os.remove("full_exam.aux")
+        ["pdflatex", "full_exam.tex"])
+    x = subprocess.check_output(
+        ["pdflatex", "full_exam.tex"])
+    for ending in ['log', 'aux', 'out']:
+        os.remove("full_exam.%s" % ending)
     print('Finished')

@@ -15,7 +15,6 @@ sys.setdefaultencoding('utf-8')
 def handleImages(content, directory):
 
     def save_image(imageName):
-        imageName = imageName.replace(' ', '_')
         imageFileURL = "http://wiki.ubc.ca/File:" + imageName
 
         connection = urllib.urlopen(imageFileURL)
@@ -33,13 +32,17 @@ def handleImages(content, directory):
             r"includegraphics{(.*)}", content_str)
         if not imageNames:
             return content_str
-        for image in imageNames:
-            content = content_str.replace(image, image.replace(' ',
-                                                               '_')).replace(
+        for imageRawName in imageNames:
+            imageName = imageRawName.strip().replace(' ', '_')
+            content_str = content_str.replace('phics{' + imageRawName,
+                                              'phics{' + imageName)
+            content_str = content_str.replace('width]{' + imageRawName,
+                                              'width]{' + imageName)
+            content_str = content_str.replace(
                 'includegraphics{',
                 'includegraphics[width=.5\\textwidth]{')
-            save_image(imageName=image)
-        return content
+            save_image(imageName=imageName)
+        return content_str
     try:
         return do_string(content)
     except TypeError:

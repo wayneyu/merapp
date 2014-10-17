@@ -1,0 +1,8 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle f(x) = 4x^3$. What is the 2nd degree Taylor\npolynomial $\\displaystyle T_2(x)$ centered at \\emph{a = 1} for\n$\\displaystyle f(x)$?", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

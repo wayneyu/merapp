@@ -1,0 +1,8 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nFind an equation of the tangent line to the curve\n$\\displaystyle y = e^{\\sin x} + x$ at the point \\emph{(0,1)}.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

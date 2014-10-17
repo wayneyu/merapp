@@ -1,52 +1,187 @@
+# -*- coding: utf-8 -*-
 import urllib
 import lxml
 import lxml.html
-import os
 import pypandoc
 import re
+import warnings
+import os
+import json
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+def handleImages(content, directory):
+
+    def save_image(imageName):
+        imageFileURL = "http://wiki.ubc.ca/File:" + imageName
+
+        connection = urllib.urlopen(imageFileURL)
+        dom = lxml.html.fromstring(connection.read())
+        for link in dom.xpath('//a/@href'):
+            if '//wiki.ubc.ca/images' in link:
+                raw_image_url = link
+                break
+
+        urllib.urlretrieve(
+            "http:" + raw_image_url, os.path.join(directory, imageName))
+
+    def do_string(content_str):
+        imageNames = re.findall(
+            r"includegraphics{(.*)}", content_str)
+        if not imageNames:
+            return content_str
+        for imageRawName in imageNames:
+            imageName = imageRawName.strip().replace(' ', '_')
+            content_str = content_str.replace('phics{' + imageRawName,
+                                              'phics{' + imageName)
+            content_str = content_str.replace('width]{' + imageRawName,
+                                              'width]{' + imageName)
+            content_str = content_str.replace(
+                'includegraphics{',
+                'includegraphics[width=.5\\textwidth]{')
+            save_image(imageName=imageName)
+        return content_str
+    try:
+        return do_string(content)
+    except TypeError:
+        return [do_string(c) for c in content]
+
+
+def json_from_course_exam(course, term, year):
+    exam = term + '_' + str(year)
+    directory = os.path.join('json_data', course, exam)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    question_urls = get_all_questions_from_exam(('http://wiki.ubc.ca/'
+                                                 'Science:Math_Exam_Resources/'
+                                                 'Courses/' + course + '/' +
+                                                 exam))
+    for questionURL in question_urls:
+        num_hints, num_sols = get_num_hs_question(questionURL)
+        question_latex = get_latex_statement_from_url(('http://wiki.ubc.ca' +
+                                                       questionURL),
+                                                      num_hints, num_sols)
+
+        question = questionURL.split('/')[-1]
+        question_json = {"course": course,
+                         "year": int(year),
+                         "term": term,
+                         "question": question,
+                         "statement": handleImages(question_latex['statement'],
+                                                   directory),
+                         "hints": handleImages(question_latex['hints'],
+                                               directory),
+                         "sols": handleImages(question_latex['sols'],
+                                              directory)}
+
+        with open(os.path.join(directory, question + ".json"), "w") as outfile:
+            json.dump(question_json, outfile, indent=4)
+
 
 def mediawiki_from_edit(input):
     return input.split('name="wpTextbox1">')[1].split('</textarea')[0]
 
+
 def preCleaning(input):
+    input = input.decode('latin1')
     input = input.replace('&lt;', '<')
     input = input.replace('&amp;', '&')
+    input = input.replace(u'â', '<math>\infty</math>')
+    input = input.replace(u'â¥', '<math>\geq</math>')
+    input = input.replace(u'â¤', '<math>\leq</math>')
+    input = input.replace(u'â', '<math>^{\prime}</math>')
+    input = input.replace(u'â²â²', '<math>^{\prime\prime}</math>')
+    input = input.replace(u'â²', '<math>^{\prime}</math>')
+    input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
+    input = input.replace(u'Â°', '<math>^{\circ}</math>')
     input = re.sub(r': +<math>', ':<math>', input)
     return input
 
+
+def postCleaning(input):
+    input = input.replace(u'ƒ', '$f$')
+    input = input.replace("$f$$^{\prime}$", "$f'$")
+    input = input.replace("$f$$^{\prime\prime}$", "$f''$")
+    input = input.replace("\emph{f$^{\prime\prime}$", "$f''$")
+
+    input = input.replace(u'\u03b8', '$\\theta$')
+    input = input.replace(u'\u03c0', '$\pi$')
+    input = input.replace(u'\u03c6', '$\phi$')
+    input = input.replace(u'\u03c1', '$\\rho$')
+    input = input.replace(u'\u221e', '$\infty$')
+
+    input = input.replace("\[\\begin{align}", "\\begin{align*}")
+    input = input.replace("$\displaystyle \\begin{align}", "\\begin{align*}")
+    input = input.replace("$\displaystyle\\begin{align}", "\\begin{align*}")
+    input = input.replace("\[\displaystyle \\begin{align}", "\\begin{align*}")
+    input = input.replace("\[\displaystyle\\begin{align}", "\\begin{align*}")
+
+    input = input.replace("\[\n\\begin{align}", "\\begin{align*}")
+
+    input = input.replace("\end{align}\]", "\end{align*}")
+
+    input = input.replace('$\displaystyle\\begin{align}', '\\begin{align*}')
+    input = input.replace('$\\begin{align}', '\\begin{align*}')
+    input = input.replace('\\begin{align}', '\\begin{align*}')
+    input = input.replace('\end{align}$', '\end{align*}')
+
+    input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
+    input = re.sub(r"([\^_])\\sqrt{([^\s]*)}", r"\1{\\sqrt{\2}}", input)
+    return input.strip()
+
+
 def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
+
     def get_dict_action_urls(action):
-        statementURL = questionURL.replace("Science", "index.php?title=Science") + "/Statement&action=" + action
-        hintURL = questionURL.replace("Science", "index.php?title=Science") + "/Hint_"
-        solURL = questionURL.replace("Science", "index.php?title=Science") + "/Solution_"
+        statementURL = questionURL.replace("Science",
+                                           "index.php?title=Science") + \
+            "/Statement&action=" + action
+        hintURL = questionURL.replace("Science",
+                                      "index.php?title=Science") + \
+            "/Hint_"
+        solURL = questionURL.replace("Science",
+                                     "index.php?title=Science") + \
+            "/Solution_"
 
         return {'statementURL': statementURL,
-            'hintsURLs': [hintURL + str(num+1) + "&action=" + action for num in range(num_hints)],
-            'solsURLs': [solURL + str(num+1) + "&action=" + action for num in range(num_sols)]}
-
-    urls = get_dict_action_urls(action='edit')
+                'hintsURLs': [hintURL + str(num + 1) + "&action=" +
+                              action for num in range(num_hints)],
+                'solsURLs': [solURL + str(num + 1) + "&action=" +
+                             action for num in range(num_sols)]}
 
     def edit_to_latex(shs='statementURL', index=0):
         try:
             out = urllib.urlopen(urls[shs]).read()
         except AttributeError:
             out = urllib.urlopen(urls[shs][index]).read()
-        out = mediawiki_from_edit(out)
-        return pypandoc.convert(preCleaning(out), 'latex', format='mediawiki')
+        try:
+            out = mediawiki_from_edit(out)
+        except IndexError:
+            warnings.warn('There is a problem with %s. Maybe no content?'
+                          % questionURL)
+            return 'No content found'
 
-    return {'statement': [edit_to_latex('statementURL')],
-    'hints': [edit_to_latex('hintsURLs', index) for index in range(len(urls['hintsURLs']))],
-    'sols': [edit_to_latex('solsURLs', index) for index in range(len(urls['solsURLs']))]}
+        post_cleaned = postCleaning(pypandoc.convert(preCleaning(out), 'latex',
+                                                     format='mediawiki'))
+        return post_cleaned
 
-
+    urls = get_dict_action_urls(action='edit')
+    return {'statement': edit_to_latex('statementURL'),
+            'hints': [edit_to_latex('hintsURLs', index)
+                      for index in range(len(urls['hintsURLs']))],
+            'sols': [edit_to_latex('solsURLs', index)
+                     for index in range(len(urls['solsURLs']))]}
 
 
 def get_all_courses(MER_URL):
     connection = urllib.urlopen(MER_URL)
-    dom =  lxml.html.fromstring(connection.read())
+    dom = lxml.html.fromstring(connection.read())
     searchText = '/Science:Math_Exam_Resources/Courses/MATH'
     courseLinks = []
-    for link in dom.xpath('//a/@href'): # select the url in href for all a tags(links)
+    for link in dom.xpath('//a/@href'):  # url in href for tags (are links)
         if searchText in link:
             courseLinks.append(link)
     courseLinks = list(set(courseLinks))
@@ -56,11 +191,11 @@ def get_all_courses(MER_URL):
 
 def get_all_exams_from_course(courseURL):
     connection = urllib.urlopen(courseURL)
-    dom =  lxml.html.fromstring(connection.read())
+    dom = lxml.html.fromstring(connection.read())
     searchTextA = courseURL.split(':')[2] + '/April'
     searchTextD = courseURL.split(':')[2] + '/December'
     examLinks = []
-    for link in dom.xpath('//a/@href'): # select the url in href for all a tags(links)
+    for link in dom.xpath('//a/@href'):  # url in href for tags (are links)
         if searchTextA in link or searchTextD in link:
             examLinks.append(link)
     return examLinks
@@ -68,52 +203,55 @@ def get_all_exams_from_course(courseURL):
 
 def get_all_questions_from_exam(examURL):
     connection = urllib.urlopen(examURL)
-    dom =  lxml.html.fromstring(connection.read())
+    dom = lxml.html.fromstring(connection.read())
     searchText = examURL.split(':')[2] + '/Question'
     questionLinks = []
-    for link in dom.xpath('//a/@href'): # select the url in href for all a tags(links)
+    for link in dom.xpath('//a/@href'):  # url in href for tags (are links)
         if searchText in link:
             questionLinks.append(link)
     return questionLinks
 
 
 def get_content_rating_numvotes(questionURL):
-    requestURL = questionURL.replace('/Science','http://wiki.ubc.ca/Science')
+    requestURL = questionURL.replace('/Science',
+                                     'http://wiki.ubc.ca/Science')
     raw = urllib.urlopen(requestURL).read()
-    ratingNumvotes = raw.split('<span id="w4g_rb_area-1">Current user rating: <b>')
+    ratingNumvotes = raw.split('<span id="w4g_rb_area-1">' +
+                               'Current user rating: <b>')
     if len(ratingNumvotes) == 2:
         ratingNumvotes = ratingNumvotes[1].split('</span>')[0]
         rating = int(ratingNumvotes.split('/100')[0])
         numvotes = int(ratingNumvotes.split('(')[1].split(' ')[0])
     else:
         rating = None
-        numvotes = 0           
-    return rating,numvotes
+        numvotes = 0
+    return rating, numvotes
 
 
 def get_num_hs_question(questionURL):
     num_hints = 1
     tryer = True
     while tryer:
-        requestURL = 'http://wiki.ubc.ca' + questionURL + '/Hint_' + str(num_hints)
+        requestURL = ('http://wiki.ubc.ca' + questionURL +
+                      '/Hint_' + str(num_hints))
         raw = urllib.urlopen(requestURL).read()
         if 'There is currently no text in this page' in raw:
             tryer = False
-            num_hints = num_hints-1
+            num_hints = num_hints - 1
         else:
-            num_hints = num_hints+1     
+            num_hints = num_hints + 1
     num_sols = 1
     tryer = True
     while tryer:
-        requestURL = 'http://wiki.ubc.ca' + questionURL + '/Solution_' + str(num_sols)
+        requestURL = ('http://wiki.ubc.ca' + questionURL +
+                      '/Solution_' + str(num_sols))
         raw = urllib.urlopen(requestURL).read()
         if 'There is currently no text in this page' in raw:
             tryer = False
-            num_sols = num_sols-1
+            num_sols = num_sols - 1
         else:
-            num_sols = num_sols+1
-    return num_hints,num_sols
-
+            num_sols = num_sols + 1
+    return num_hints, num_sols
 
 
 def create_lists_for_examURLs(examURL):
@@ -125,29 +263,30 @@ def create_lists_for_examURLs(examURL):
     ratings = []
     num_hints = []
     num_sols = []
-    
+
     questionURLs = get_all_questions_from_exam(examURL)
     for questionURL in questionURLs:
         question_info = questionURL.split('/')
-        
+
         URLs.append('http://wiki.ubc.ca' + questionURL)
         courses.append(question_info[3])
         exams.append(question_info[4])
-        
+
         question = question_info[5]
-        question = question.replace('Question_0','')
-        question = question.replace('Question_','')
-        question = question.replace('_',' ')
+        question = question.replace('Question_0', '')
+        question = question.replace('Question_', '')
+        question = question.replace('_', ' ')
         questions.append(question)
-        
-        rating,numvote = get_content_rating_numvotes(questionURL)
+
+        rating, numvote = get_content_rating_numvotes(questionURL)
         ratings.append(rating)
         num_votes.append(numvote)
-        
-        num_hint,num_sol = get_num_hs_question(questionURL)
+
+        num_hint, num_sol = get_num_hs_question(questionURL)
         num_hints.append(num_hint)
         num_sols.append(num_sol)
-    return URLs,courses,exams,questions,num_votes,ratings,num_hints,num_sols
+    return (URLs, courses, exams, questions,
+            num_votes, ratings, num_hints, num_sols)
 
 
 def create_lists_for_courseURLs(courseURL):
@@ -161,7 +300,9 @@ def create_lists_for_courseURLs(courseURL):
     num_hints = []
     num_sols = []
     for examURL in examURLs:
-        URL,course,exam,question,num_vote,rating,num_hint,num_sol = create_lists_for_examURLs('http://wiki.ubc.ca' + examURL)
+        URL, course, exam, question, num_vote, rating, num_hint, \
+            num_sol = create_lists_for_examURLs('http://wiki.ubc.ca' +
+                                                examURL)
         URLs.extend(URL)
         courses.extend(course)
         exams.extend(exam)
@@ -170,7 +311,8 @@ def create_lists_for_courseURLs(courseURL):
         ratings.extend(rating)
         num_hints.extend(num_hint)
         num_sols.extend(num_sol)
-    return URLs,courses,exams,questions,num_votes,ratings,num_hints,num_sols   
+    return (URLs, courses, exams, questions,
+            num_votes, ratings, num_hints, num_sols)
 
 
 def create_lists_for_SQL():
@@ -185,7 +327,9 @@ def create_lists_for_SQL():
     num_hints = []
     num_sols = []
     for courseURL in courseURLs:
-        URL,course,exam,question,num_vote,rating,num_hint,num_sol = create_lists_for_courseURLs('http://wiki.ubc.ca' + courseURL)
+        URL, course, exam, question, num_vote, rating, num_hint, \
+            num_sol = create_lists_for_courseURLs('http://wiki.ubc.ca' +
+                                                  courseURL)
         URLs.extend(URL)
         courses.extend(course)
         exams.extend(exam)
@@ -194,14 +338,17 @@ def create_lists_for_SQL():
         ratings.extend(rating)
         num_hints.extend(num_hint)
         num_sols.extend(num_sol)
-    return URLs,courses,exams,questions,num_votes,ratings,num_hints,num_sols 
+    return (URLs, courses, exams, questions,
+            num_votes, ratings, num_hints, num_sols)
 
 
 def main():
-    URLs,courses,exams,questions,num_votes,ratings,num_hints,num_sols = create_lists_for_SQL()
-    f = file("raw_data.csv", 'w')
-    for u,c,e,q,v,r,h,s in zip(URLs,courses,exams,questions,num_votes,ratings,num_hints,num_sols):
-        f.write("%s,%s,%s,%s,%s,%s,%s,%s\n" %(u,c,e,q,v,r,h,s))
+    URLs, courses, exams, questions, num_votes, ratings, num_hints, \
+        num_sols = create_lists_for_SQL()
+    f = open("raw_data.csv", 'w')
+    for u, c, e, q, v, r, h, s in zip(URLs, courses, exams, questions,
+                                      num_votes, ratings, num_hints, num_sols):
+        f.write("%s,%s,%s,%s,%s,%s,%s,%s\n" % (u, c, e, q, v, r, h, s))
     f.close()
 
 if __name__ == "__main__":

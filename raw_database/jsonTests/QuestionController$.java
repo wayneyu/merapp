@@ -1,17 +1,4 @@
-package controllers
-
-import play.api._
-import play.api.mvc._
-import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import play.api.libs.json._
-import scala.concurrent.Future
-
-// Reactive Mongo imports
-import reactivemongo.api._
-
-// Reactive Mongo plugin, including the JSON-specialized collection
-import play.modules.reactivemongo.MongoController
-import play.modules.reactivemongo.json.collection.JSONCollection
+package controllers;
 
 /*
  * Example using ReactiveMongo + Play JSON library.
@@ -53,7 +40,7 @@ object QuestionController extends Controller with MongoController {
       List("this is a hint1","this is hint2"),
       List("this is a solution","this is a solution2")
     )
-    
+
     // insert the question
     val futureResult = collection.insert(q)
     // when the insert is performed, send a OK 200 result

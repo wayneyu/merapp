@@ -1,0 +1,106 @@
+/*
+body {
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+}
+*/
+
+.main_box, .main_box>div {
+  border: 1px solid black;
+}
+
+#tags, #selection {
+  border: none;
+}
+
+.box_title {
+  font-family: verdana;
+  font-size: 38px;
+
+}
+
+.hideable_box>.box_title:hover {
+  background-color: #11fff8;
+}
+
+.box_title, .box_title+div {
+  padding: 10px 10px 10px 10px;
+
+}
+
+/*http://css.maxdesign.com.au/listutorial/horizontal_master.htm#*/
+#tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#tags ul
+{
+font-family: impact;
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+
+#tags ul li { display: inline; }
+
+#tags ul li span
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #000;
+background-color: #fff;
+border: 1px dashed black;
+}
+
+
+#latex_box #tags {
+  margin-top: 20px;
+  margin-bottom: 2px
+}
+
+#latex_box #tags ul
+{
+font-family: impact;
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+
+#latex_box #tags ul li { display: inline; }
+
+#latex_box #tags ul li span
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #000;
+background-color: #fff;
+border: 1px solid grey;
+}
+
+#latex_box #tags ul li span:hover
+{
+color: #000;
+background-color: #11fff8;
+}
+
+#latex_box button {
+  background-color: #fff;
+  font-size: 20px;
+}
+
+#latex_box button:hover {
+    background-color: #11fff8;
+}
+
+/*#latex_box, #latex_box>* {
+  border : 1px solid blue;
+}*/
+
+
+
+
+

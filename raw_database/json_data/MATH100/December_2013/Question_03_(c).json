@@ -1,0 +1,8 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle f(x) = \\begin{cases}\ncx^2 + 3 & \\text{if } x \\geq 1 \\\\\n2x^3 - c & \\text{if } x < 1\n\\end{cases}$\n\nwhere \\emph{c} is a constant. For what value of the constant \\emph{c} is\nthe function \\emph{$f$(x)} continuous on\n$\\displaystyle (-\\infty, \\infty)$?", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

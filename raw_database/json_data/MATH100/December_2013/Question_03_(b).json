@@ -1,0 +1,8 @@
+{
+    "term": "December", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle s = f(t) = t^3 - \\frac{21}2t^2 + 30t$ be the position\nfunction of a particle that is moving in a straight line, where \\emph{t}\nis measured in seconds and \\emph{s} in metres. When is the particle\nmoving in the negative direction?", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

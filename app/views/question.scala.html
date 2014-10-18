@@ -1,4 +1,4 @@
-@(stmt: String, q: String, hint: String, sol: String)
+@(stmt: String, q: String, hints: List[String], sols: List[String])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,16 +69,19 @@
     <div>@stmt</div>
 </div>
 
-
+@for( (h, ind) <- hints.zipWithIndex ) {
 <div class="main_box hideable_box">
-    <div class="box_title">Hint</div>
-    <div>@hint</div>
+    <div class="box_title">Hint (@(ind+1))</div>
+    <div>@h</div>
 </div>
+}
 
+@for( (s, ind) <- sols.zipWithIndex ) {
 <div class="main_box hideable_box">
-    <div class="box_title">Solution </div>
-    <div>@sol</div>
+    <div class="box_title">Solution (@(ind+1))</div>
+    <div>@s</div>
 </div>
+}
 
 <div id="tags">
     <ul>

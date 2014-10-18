@@ -101,6 +101,6 @@ if __name__ == '__main__':
         ["pdflatex", "full_exam.tex"])
     x = subprocess.check_output(
         ["pdflatex", "full_exam.tex"])
-    for ending in ['log', 'aux', 'out']:
+    for ending in ['log', 'aux', 'out', 'toc']:
         os.remove("full_exam.%s" % ending)
     print('Finished')

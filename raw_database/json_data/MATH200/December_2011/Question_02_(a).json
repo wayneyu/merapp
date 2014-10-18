@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH200", 
+    "statement": "Suppose z = f(x,y) has continuous second order partial derivatives and x\n= r cos(t), y = r sin(t). Express the following partial derivatives in\nterms of r,t and the partial derivatives of f.\n\n a)\n\n\\[\\frac{\\partial z}{\\partial t}\\]", 
+    "year": 2011, 
+    "sols": [
+        "The variable \\emph{z} is a function of both \\emph{x}, \\emph{y} which, in\nturn, are both functions of \\emph{t}. Thus, any change in \\emph{z} in\nresponse to a change in \\emph{t} will be the result of how \\emph{x} and\n\\emph{y} change with \\emph{t}. We can write the derivative of \\emph{z}\nwith respect to \\emph{t} using the chain rule:\n\n\\[\\frac{\\partial z}{\\partial t} = \\frac{\\partial f}{\\partial x}\\frac{\\partial x}{\\partial t} + \\frac{\\partial f}{\\partial y}\\frac{\\partial y}{\\partial t}\\]\nWe evaluate the partial derivatives of \\emph{x}, \\emph{y} with respect\nto \\emph{t}:\n\n\\[\\frac{\\partial x}{\\partial t} = -r \\sin(t), \\quad \\frac{\\partial y}{\\partial t} = r \\cos(t).\\]\nAnd thus,\n\n\\[{\\color{blue}\n\\frac{\\partial z}{\\partial t} = \\frac{\\partial f}{\\partial x}\\cdot (-r \\sin(t)) + \\frac{\\partial f}{\\partial y} \\cdot r \\cos(t)}.\\]"
+    ], 
+    "hints": [
+        "To evaluate this partial derivative we need to use the chain rule."
+    ]
+}

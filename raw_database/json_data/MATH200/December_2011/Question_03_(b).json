@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH200", 
+    "statement": "A bee is flying along the curve of intersection of the surfaces\n$3z + x^{2} + y^{2} = 2$ and $z = x^{2} - y^{2}$ in the direction for\nwhich z is increasing. At time t = 2, the bee passes through the point\n(1,1,0) at speed 6.\n\n(b) The temperature T at position (x,y,z) at time t is given by\n$T = xy - 3x + 2yt + z$. Find the rate of change of temperature\nexperienced by the bee at time $t = 2$.", 
+    "year": 2011, 
+    "sols": [
+        "To evaluate the change in temperature, T, experienced by the bee with\nrespect to time at time 2, we need to evaluate the full derivative of\n$\\displaystyle T = T(x(t),y(t),z(t),t)$ with respect to t and substitute\nin the value t = 2. Writing the expression for the full time derivative\ngives:\n\n\\begin{align*}\n\\frac{d T}{dt} &= \\frac{\\partial T}{\\partial t} + \\frac{\\partial T}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial T}{\\partial y}\\frac{dy}{dt} + \\frac{\\partial T}{\\partial z}\\frac{dz}{dt} \\\\\n&= \\frac{\\partial T}{\\partial t} + \\nabla T \\cdot \\mathbf{v}\n\\end{align*} where v is the velocity vector of the bee. Evaluating the\nterms in the above equation we find:\n\n\\[\\frac{\\partial T}{\\partial t} = 2y, \\quad \\nabla T = \\left[y - 3, x + 2t, 1\\right]^{T}.\\]\nNote that we don't need to re-evaluate v since we can just use our\nresults from\n\\href{Science:Math_Exam_Resources/Courses/MATH200/December_2011/Question_03_(a)}{part\n(a)} here. At time t = 2, the bee is at {[}1,1,0{]}, so the above terms\nsatisfy,\n\n\\[\\frac{\\partial T}{\\partial t} = 2, \\quad \\nabla T = \\left[-2,  3, 1\\right]^{T}\\]\nat t = 2. Using this and the fact that v = {[}-2,-4,4{]}, we evaluate\nthe change in temperature:\n\n\\begin{align*}\n\\frac{d T}{dt} &= 2 + [-2,3,1]^{T} \\cdot [-2,-4,4]^{T} = 2 + (-4) = -2.\n\\end{align*} Therefore, the bee is experiencing a change in temperature\nof -2 temperature units per second at t = 2."
+    ], 
+    "hints": [
+        "The rate of change of the temperature is the derivative of the\ntemperature, which is the partial derivative of the temperature plus the\ndirectional derivative of $\\displaystyle T$ in the direction of the\nvelocity vector v of the bee,\n\n$\\frac{d T}{dt} = \\frac{\\partial T}{\\partial t} + \\nabla T \\cdot \\mathbf{v}$\n\nThe vector v for the time $t=2$ is already determined in\n\\href{Science:Math_Exam_Resources/Courses/MATH200/December_2011/Question_03_(a)}{part\n(a)}."
+    ]
+}

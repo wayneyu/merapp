@@ -6,6 +6,7 @@ import pypandoc
 import re
 import warnings
 import os
+import subprocess
 import json
 import sys
 reload(sys)
@@ -27,6 +28,13 @@ def handleImages(content, directory):
         urllib.urlretrieve(
             "http:" + raw_image_url, os.path.join(directory, imageName))
 
+    def handle_gif(imageName):
+        newName = imageName.replace('.gif', '.png')
+        fullOldName = os.path.join(directory, imageName)
+        fullNewName = os.path.join(directory, newName)
+        x = subprocess.check_output(["convert", fullOldName, fullNewName])
+        return newName
+
     def do_string(content_str):
         imageNames = re.findall(
             r"includegraphics{(.*)}", content_str)
@@ -34,14 +42,16 @@ def handleImages(content, directory):
             return content_str
         for imageRawName in imageNames:
             imageName = imageRawName.strip().replace(' ', '_')
+            save_image(imageName=imageName)
+            if '.gif' in imageName:
+                imageName = handle_gif(imageName)
             content_str = content_str.replace('phics{' + imageRawName,
                                               'phics{' + imageName)
-            content_str = content_str.replace('width]{' + imageRawName,
-                                              'width]{' + imageName)
+#            content_str = content_str.replace('width]{' + imageRawName,
+#                                              'width]{' + imageName)
             content_str = content_str.replace(
                 'includegraphics{',
                 'includegraphics[width=.5\\textwidth]{')
-            save_image(imageName=imageName)
         return content_str
     try:
         return do_string(content)
@@ -120,6 +130,9 @@ def postCleaning(input):
     input = input.replace("\[\displaystyle\\begin{align}", "\\begin{align*}")
 
     input = input.replace("\[\n\\begin{align}", "\\begin{align*}")
+    input = input.replace(
+        "\[\displaystyle\n\\begin{align*}", "\\begin{align*}")
+    input = input.replace("\[\displaystyle\n\\begin{align}", "\\begin{align*}")
 
     input = input.replace("\end{align}\]", "\end{align*}")
 
@@ -128,8 +141,13 @@ def postCleaning(input):
     input = input.replace('\\begin{align}', '\\begin{align*}')
     input = input.replace('\end{align}$', '\end{align*}')
 
+    input = input.replace("\\\\]", "\\]")
+
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
     input = re.sub(r"([\^_])\\sqrt{([^\s]*)}", r"\1{\\sqrt{\2}}", input)
+    input = re.sub(
+        r"\[\\displaystyle{\\begin{align\*}([\s\S]*)\\end{align}}\\]",
+        r"\\begin{align*}\1\\end{align*}", input)
     return input.strip()
 
 

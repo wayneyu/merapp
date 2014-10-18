@@ -1,0 +1,122 @@
+@(stmt: String, q: String, hint: String, sol: String)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> 1 page view</title>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
+    });
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+        <link rel='stylesheet' type="text/css" href="@routes.Assets.at("stylesheets/question.css")" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type='text/javascript' src="@routes.Assets.at("javascripts/question.js")"></script>
+
+</head>
+
+<body>
+
+<div id="selection">
+
+        <form>
+        <select name="course">
+            <option value="MATH100">Math 100/180</option>
+            <option value="MATH101">Math 101</option>
+            <option value="MATH102">Math 102</option>
+            <option value="MATH103">Math 103</option>
+            <option value="MATH104">Math 104/184</option>
+            <option value="MATH105">Math 105</option>
+            <option value="MATH110">Math 110</option>
+            <option value="MATH152">Math 152</option>
+            <option value="MATH200">Math 200</option>
+            <option value="MATH215">Math 215</option>
+            <option value="MATH220">Math 220</option>
+            <option value="MATH221">Math 221</option>
+            <option value="MATH253">Math 253</option>
+            <option value="MATH257">Math 257</option>
+            <option value="MATH307">Math 307</option>
+        </select>
+
+        <select name="exam_month">
+            <option value="April">April</option>
+            <option value="December">December</option>
+        </select>
+
+        <select name="exam_year">
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+        </select>
+
+            Question: <input type="text" name="question"><br>
+        </form>    
+</div>
+
+<div class="main_box">
+    <div class="box_title">@q</div>
+    <div>@stmt</div>
+</div>
+
+
+<div class="main_box hideable_box">
+    <div class="box_title">Hint</div>
+    <div>@hint</div>
+</div>
+
+<div class="main_box hideable_box">
+    <div class="box_title">Solution </div>
+    <div>@sol</div>
+</div>
+
+<div id="tags">
+    <ul>
+    <li><span>#Tags:</span></li>
+    <li><span>#Math</span></li>
+    <li><span>#Hard</span></li>
+    <li><span>#Impossible</span></li>
+    <li><span>#Numbers</span></li>
+    </ul>
+</div>
+
+<hr/>
+<hr/>
+
+<div id="latex_box">
+    <div id="tags">
+        <ul>
+            <li><span>"var"</span></li>
+            <li><span>"integral"</span></li>
+            <li><span>"greek"</span></li>
+        </ul>
+    </div>
+
+    <div>
+        <textarea style="height: 80px;" name="latex_formula" id="latex_formula" cols="80" rows="8"></textarea>
+    </div>
+    
+    <p>   </p> <!-- gets appeneded by jquery -->
+
+    <button> render </button>
+    
+
+</div>
+
+<hr/>
+<hr/>
+
+</body>
+</html>
+
+

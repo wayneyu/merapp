@@ -21,7 +21,7 @@ object Application extends Controller {
   }
 
   def question(course: String, year: String, q: String) = Action {
-    val file = Play.application.getFile("/public/raw_database/json_data/" + course + "/" + year + "/" + q + ".json");
+    val file = Play.application.getFile("./public/raw_database/json_data/" + course + "/" + year + "/" + q + ".json");
     val js = Json.parse(Source.fromFile(file).getLines().mkString)
     val stmt = (js \ "statement").as[String]
     val hints = (js \ "hints" ).as[List[String]]

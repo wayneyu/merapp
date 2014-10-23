@@ -1,5 +1,6 @@
 {
     "term": "December", 
+    "question": "Question_01_(d)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nA bacteria culture initially contains 50 cells and grows at a rate\nproportional to its size. After an hour the population has increased to\n250. Find an expression for the number of bacteria after \\emph{t} hours.", 
     "year": 2013, 

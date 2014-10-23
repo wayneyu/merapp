@@ -47,8 +47,8 @@ def handleImages(content, directory):
                 imageName = handle_gif(imageName)
             content_str = content_str.replace('phics{' + imageRawName,
                                               'phics{' + imageName)
-#            content_str = content_str.replace('width]{' + imageRawName,
-#                                              'width]{' + imageName)
+            content_str = content_str.replace('width]{' + imageRawName,
+                                              'width]{' + imageName)
             content_str = content_str.replace(
                 'includegraphics{',
                 'includegraphics[width=.5\\textwidth]{')
@@ -108,6 +108,8 @@ def preCleaning(input):
     input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
     input = input.replace(u'Â°', '<math>^{\circ}</math>')
     input = re.sub(r': +<math>', ':<math>', input)
+    input = re.sub(r'$\\ (.*)$', r'$\1$', input)
+    input = re.sub(r'$\\displaystyle (.*)$', r'$\1$', input)
     return input
 
 
@@ -115,13 +117,21 @@ def postCleaning(input):
     input = input.replace(u'ƒ', '$f$')
     input = input.replace("$f$$^{\prime}$", "$f'$")
     input = input.replace("$f$$^{\prime\prime}$", "$f''$")
-    input = input.replace("\emph{f$^{\prime\prime}$", "$f''$")
+    input = input.replace("\emph{f$^{\prime\prime}$}", "$f''$")
+    input = re.sub(r"f '", r"f'", input)
+    input = re.sub(r"f ?' ?'", r"f''", input)
 
     input = input.replace(u'\u03b8', '$\\theta$')
     input = input.replace(u'\u03c0', '$\pi$')
     input = input.replace(u'\u03c6', '$\phi$')
     input = input.replace(u'\u03c1', '$\\rho$')
     input = input.replace(u'\u221e', '$\infty$')
+
+    input = input.replace('\\toprule\\addlinespace\n', '')
+    input = input.replace('\\addlinespace', '')
+    input = input.replace('\\bottomrule', '')
+
+# $50%$ -> 50\%
 
     input = input.replace("\[\\begin{align}", "\\begin{align*}")
     input = input.replace("$\displaystyle \\begin{align}", "\\begin{align*}")
@@ -140,7 +150,6 @@ def postCleaning(input):
     input = input.replace('$\\begin{align}', '\\begin{align*}')
     input = input.replace('\\begin{align}', '\\begin{align*}')
     input = input.replace('\end{align}$', '\end{align*}')
-
     input = input.replace("\\\\]", "\\]")
 
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)

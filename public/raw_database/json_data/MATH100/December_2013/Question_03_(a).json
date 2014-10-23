@@ -1,5 +1,6 @@
 {
     "term": "December", 
+    "question": "Question_03_(a)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf a function \\emph{y = $f$(x)} is defined implicitly by an equation\n$x^3 + xy = 5x - y^ 3$, find $\\displaystyle \\frac{dy}{dx}$.", 
     "year": 2013, 

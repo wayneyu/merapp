@@ -1,5 +1,6 @@
 {
     "term": "December", 
+    "question": "Question_04_(a)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nUse Newton's method with an initial approximation of\n$\\displaystyle x_1 = -1$ to find $\\displaystyle x_2$, where\n$\\displaystyle x_2$ is the second approximation to the root of the\nequation $x^7 + 4 = 0$.", 
     "year": 2013, 

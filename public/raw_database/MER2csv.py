@@ -59,6 +59,32 @@ def handleImages(content, directory):
         return [do_string(c) for c in content]
 
 
+def json_from_course_exam_question(course, term, year, question):
+    exam = term + '_' + str(year)
+    directory = os.path.join('json_data', course, exam)
+    questionURL = ('/Science:Math_Exam_Resources/'
+                   'Courses/' + course + '/' + exam + '/' + question)
+    num_hints, num_sols = get_num_hs_question(questionURL)
+    question_latex = get_latex_statement_from_url(('http://wiki.ubc.ca' +
+                                                   questionURL),
+                                                  num_hints, num_sols)
+
+    question = questionURL.split('/')[-1]
+    question_json = {"course": course,
+                     "year": int(year),
+                     "term": term,
+                     "question": question,
+                     "statement": handleImages(question_latex['statement'],
+                                               directory),
+                     "hints": handleImages(question_latex['hints'],
+                                           directory),
+                     "sols": handleImages(question_latex['sols'],
+                                          directory)}
+
+    with open(os.path.join(directory, question + ".json"), "w") as outfile:
+        json.dump(question_json, outfile, indent=4)
+
+
 def json_from_course_exam(course, term, year):
     exam = term + '_' + str(year)
     directory = os.path.join('json_data', course, exam)
@@ -107,9 +133,16 @@ def preCleaning(input):
     input = input.replace(u'â²', '<math>^{\prime}</math>')
     input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
     input = input.replace(u'Â°', '<math>^{\circ}</math>')
+    input = re.sub(r'<math> *\\ +', r'<math>', input)
+    input = re.sub(r'\\ +</math>', r'</math>', input)
     input = re.sub(r': +<math>', ':<math>', input)
     input = re.sub(r'$\\ (.*)$', r'$\1$', input)
     input = re.sub(r'$\\displaystyle (.*)$', r'$\1$', input)
+    input = re.sub(r':<math>\\displaystyle{\\begin{align}(.*)'
+                   '\\end{align}}</math>',
+                   r':<math>\\begin{align}\1\\end{align}</math>', input)
+    input = re.sub(r':<math>\\displaystyle{(.*)}</math>',
+                   r':<math>\n\1\n</math>', input)
     return input
 
 
@@ -127,12 +160,6 @@ def postCleaning(input):
     input = input.replace(u'\u03c1', '$\\rho$')
     input = input.replace(u'\u221e', '$\infty$')
 
-    input = input.replace('\\toprule\\addlinespace\n', '')
-    input = input.replace('\\addlinespace', '')
-    input = input.replace('\\bottomrule', '')
-
-# $50%$ -> 50\%
-
     input = input.replace("\[\\begin{align}", "\\begin{align*}")
     input = input.replace("$\displaystyle \\begin{align}", "\\begin{align*}")
     input = input.replace("$\displaystyle\\begin{align}", "\\begin{align*}")
@@ -145,6 +172,8 @@ def postCleaning(input):
     input = input.replace("\[\displaystyle\n\\begin{align}", "\\begin{align*}")
 
     input = input.replace("\end{align}\]", "\end{align*}")
+    input = input.replace('\end{align*}\\\\', '\end{align*}\n')
+    input = input.replace('\end{align}.\\]', '\end{align*}')
 
     input = input.replace('$\displaystyle\\begin{align}', '\\begin{align*}')
     input = input.replace('$\\begin{align}', '\\begin{align*}')
@@ -152,26 +181,43 @@ def postCleaning(input):
     input = input.replace('\end{align}$', '\end{align*}')
     input = input.replace("\\\\]", "\\]")
 
+    input = input.replace('\\begin{align*}\n\n', '\\begin{align*}\n')
+    input = input.replace('\\toprule\\addlinespace\n', '')
+
+    input = input.replace('\n\\bottomrule', '')
+    input = input.replace('\n\\\\\\addlinespace', '\\\\')
+    input = input.replace('\\\\end{longtable}', '\\end{longtable}')
+
+    input = input.replace('\midrule\endhead', '')
+    input = input.replace('style=""\\textbar{} ', '')
+
+    input = re.sub(r'\$(.*)(?<!\\)%(.*)\$', r'$\1\%\2$', input)
     input = re.sub(r"\$f\$('*)\(\\emph{(.)}\)", r"$f\1(\2)$", input)
     input = re.sub(r"([\^_])\\sqrt{([^\s]*)}", r"\1{\\sqrt{\2}}", input)
     input = re.sub(
         r"\[\\displaystyle{\\begin{align\*}([\s\S]*)\\end{align}}\\]",
         r"\\begin{align*}\1\\end{align*}", input)
+
+    input = input.replace("\\\\\\begin{align*}", '\\begin{align*}')
+    input = input.replace("\\\\begin{align*}", '\\begin{align*}')
+    input = input.replace('\end{align*}\\\\', '\end{align*}\n')
+    input = input.replace('\\\end{align*}', '\end{align*}')
+
     return input.strip()
 
 
 def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
 
     def get_dict_action_urls(action):
-        statementURL = questionURL.replace("Science",
-                                           "index.php?title=Science") + \
-            "/Statement&action=" + action
-        hintURL = questionURL.replace("Science",
-                                      "index.php?title=Science") + \
-            "/Hint_"
-        solURL = questionURL.replace("Science",
-                                     "index.php?title=Science") + \
-            "/Solution_"
+        statementURL = (questionURL.replace(
+            "Science", "index.php?title=Science") +
+            "/Statement&action=" + action)
+        hintURL = (questionURL.replace("Science",
+                                       "index.php?title=Science") +
+                   "/Hint_")
+        solURL = (questionURL.replace("Science",
+                                      "index.php?title=Science") +
+                  "/Solution_")
 
         return {'statementURL': statementURL,
                 'hintsURLs': [hintURL + str(num + 1) + "&action=" +
@@ -327,9 +373,9 @@ def create_lists_for_courseURLs(courseURL):
     num_hints = []
     num_sols = []
     for examURL in examURLs:
-        URL, course, exam, question, num_vote, rating, num_hint, \
-            num_sol = create_lists_for_examURLs('http://wiki.ubc.ca' +
-                                                examURL)
+        (URL, course, exam, question, num_vote, rating, num_hint,
+         num_sol) = create_lists_for_examURLs('http://wiki.ubc.ca' +
+                                              examURL)
         URLs.extend(URL)
         courses.extend(course)
         exams.extend(exam)
@@ -354,9 +400,9 @@ def create_lists_for_SQL():
     num_hints = []
     num_sols = []
     for courseURL in courseURLs:
-        URL, course, exam, question, num_vote, rating, num_hint, \
-            num_sol = create_lists_for_courseURLs('http://wiki.ubc.ca' +
-                                                  courseURL)
+        (URL, course, exam, question, num_vote, rating, num_hint,
+         num_sol) = create_lists_for_courseURLs('http://wiki.ubc.ca' +
+                                                courseURL)
         URLs.extend(URL)
         courses.extend(course)
         exams.extend(exam)
@@ -370,8 +416,8 @@ def create_lists_for_SQL():
 
 
 def main():
-    URLs, courses, exams, questions, num_votes, ratings, num_hints, \
-        num_sols = create_lists_for_SQL()
+    (URLs, courses, exams, questions, num_votes, ratings, num_hints,
+     num_sols) = create_lists_for_SQL()
     f = open("raw_data.csv", 'w')
     for u, c, e, q, v, r, h, s in zip(URLs, courses, exams, questions,
                                       num_votes, ratings, num_hints, num_sols):

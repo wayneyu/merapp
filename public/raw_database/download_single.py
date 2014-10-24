@@ -2,13 +2,13 @@ import os
 import json
 from os import listdir
 from os.path import isfile, join
-from MER2csv import json_from_course_exam
+from MER2csv import json_from_course_exam_question
 import sys
 import subprocess
 
 
-def download_json(course, term, year):
-    json_from_course_exam(course, term, year)
+def download_json(course, term, year, question):
+    json_from_course_exam_question(course, term, year, question)
 
 
 def writeLatex(course, term, year):
@@ -81,16 +81,18 @@ def writeLatex(course, term, year):
 
 
 if __name__ == '__main__':
-    if not 4 == len(sys.argv):
-        errorMsg = ("MUST CALL WITH 3 Arguments:"
+    if not 5 == len(sys.argv):
+        errorMsg = ("MUST CALL WITH 4 Arguments:"
                     "course (MATH100), "
                     "term (December), "
-                    "year (2013)")
+                    "year (2013),"
+                    "question (Question_03_(b)")
         raise Exception(errorMsg)
     course = sys.argv[1]
     term = sys.argv[2]
     year = sys.argv[3]
-    download_json(course, term, year)
+    question = sys.argv[4]
+    download_json(course, term, year, question)
     writeLatex(course, term, year)
 
     print('Done downloading from MER. Start compiling LaTeX...')
@@ -99,9 +101,9 @@ if __name__ == '__main__':
     directory = os.path.join('json_data', course, exam)
     os.chdir(directory)
     x = subprocess.check_output(
-        ["pdflatex", "full_exam.tex"])
+        ["pdflatex", "test_exam.tex"])
     x = subprocess.check_output(
-        ["pdflatex", "full_exam.tex"])
+        ["pdflatex", "test_exam.tex"])
     for ending in ['log', 'aux', 'out', 'toc']:
-        os.remove("full_exam.%s" % ending)
+        os.remove("test_exam.%s" % ending)
     print('Finished')

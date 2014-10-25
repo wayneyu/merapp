@@ -33,10 +33,13 @@ def writeLatex(course, term, year):
               '\\newcommand{\C}{\mathbb{C}}\n'
               '\\newcommand{\N}{\mathbb{N}}\n'
               '\\newcommand{\Z}{\mathbb{Z}}\n'
+              '\\DeclareMathOperator{\\arcsec}{arcsec}\n'
+              '\\DeclareMathOperator{\\arccot}{arccot}\n'
+              '\\DeclareMathOperator{\\arccsc}{arccsc}\n'
               '\\setcounter{secnumdepth}{-2}\n'
               '\\begin{document}\n')
 
-    out.write('\section{%s - %s %s}' % (course, term, year))
+    out.write('\section{%s - %s %s}\n' % (course, term, year))
     out.write('\\tableofcontents\n')
     for f in onlyfiles:
         fd = open(os.path.join(directory, f), 'r')

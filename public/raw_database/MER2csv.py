@@ -38,6 +38,7 @@ def handleImages(content, directory):
     def do_string(content_str):
         imageNames = re.findall(
             r"includegraphics{(.*)}", content_str)
+        imageNames = [s.replace(u'\xe2\x80\x8e', '') for s in imageNames]
         if not imageNames:
             return content_str
         for imageRawName in imageNames:
@@ -133,6 +134,7 @@ def preCleaning(input):
     input = input.replace(u'â²', '<math>^{\prime}</math>')
     input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
     input = input.replace(u'Â°', '<math>^{\circ}</math>')
+    input = input.replace(u'â', '')
     input = re.sub(r'<math> *\\ +', r'<math>', input)
     input = re.sub(r'\\ +</math>', r'</math>', input)
     input = re.sub(r': +<math>', ':<math>', input)
@@ -202,6 +204,14 @@ def postCleaning(input):
     input = input.replace("\\\\begin{align*}", '\\begin{align*}')
     input = input.replace('\end{align*}\\\\', '\end{align*}\n')
     input = input.replace('\\\end{align*}', '\end{align*}')
+    input = re.sub(r'\n+\\end{align\*}', '\n\end{align*}', input)
+
+    input = re.sub(r'\\\[{\\color{(.*)}\n\\begin{align\*}([\s\S]*)\\end{align}\n}\\\]',
+                   r'{\\color{\1}\[\n\\begin{aligned}\2\\end{aligned}\n\]}',
+                   input)
+
+    input = re.sub(r'\\\[([\s\S]*)\\begin{align\*}([\s\S]*)\\end{align}',
+                   r'\[\1\\begin{aligned}\2\\end{aligned}', input)
 
     return input.strip()
 

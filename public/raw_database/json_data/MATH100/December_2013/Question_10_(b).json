@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_10_(b)", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nUsing the Lagrange Remainder Formula for\n$\\displaystyle f(x) = \\ln(1-x^2)$ prove that\n$\\displaystyle -\\frac{5}{32} \\leq \\ln\\left(\\frac{8}{9}\\right) \\leq -\\frac{1}{9}$.", 
     "year": 2013, 
     "sols": [], 
     "hints": []

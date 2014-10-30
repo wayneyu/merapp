@@ -27,7 +27,7 @@ def writeLatex(course, term, year):
               '\usepackage{graphicx}\n'
               '\usepackage{fixltx2e}\n'
               '\usepackage{hyperref}\n'
-              '\usepackage{color}\n'
+              '\usepackage[usenames,dvipsnames,svgnames]{xcolor}\n'
               '\usepackage{longtable}\n'
               '\\newcommand{\R}{\mathbb{R}}\n'
               '\\newcommand{\C}{\mathbb{C}}\n'
@@ -43,7 +43,7 @@ def writeLatex(course, term, year):
         text = fd.read()
         fd.close()
         data = json.loads(text)
-        qname = data['question'].replace('_', ' ')
+        qname = f.replace('_', ' ').replace('.json', '')
         out.write('\\section{%s}' %
                   qname.replace('_',
                                 '').replace('Question 0',
@@ -101,9 +101,9 @@ if __name__ == '__main__':
     directory = os.path.join('json_data', course, exam)
     os.chdir(directory)
     x = subprocess.check_output(
-        ["pdflatex", "test_exam.tex"])
+        ["pdflatex", "full_exam.tex"])
     x = subprocess.check_output(
-        ["pdflatex", "test_exam.tex"])
+        ["pdflatex", "full_exam.tex"])
     for ending in ['log', 'aux', 'out', 'toc']:
-        os.remove("test_exam.%s" % ending)
+        os.remove("full_exam.%s" % ending)
     print('Finished')

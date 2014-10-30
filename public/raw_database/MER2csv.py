@@ -82,6 +82,7 @@ def json_from_course_exam_question(course, term, year, question):
                      "sols": handleImages(question_latex['sols'],
                                           directory)}
 
+    question = question.replace('%2B', '-')
     with open(os.path.join(directory, question + ".json"), "w") as outfile:
         json.dump(question_json, outfile, indent=4)
 
@@ -113,7 +114,7 @@ def json_from_course_exam(course, term, year):
                                                directory),
                          "sols": handleImages(question_latex['sols'],
                                               directory)}
-
+        question = question.replace('%2B', '-')
         with open(os.path.join(directory, question + ".json"), "w") as outfile:
             json.dump(question_json, outfile, indent=4)
 
@@ -124,6 +125,7 @@ def mediawiki_from_edit(input):
 
 def preCleaning(input):
     input = input.decode('latin1')
+    input = input.replace(u'ï¬', 'fi')
     input = input.replace('&lt;', '<')
     input = input.replace('&amp;', '&')
     input = input.replace(u'â', '<math>\infty</math>')
@@ -135,6 +137,8 @@ def preCleaning(input):
     input = input.replace(u'â³', '<math>^{\prime\prime}</math>')
     input = input.replace(u'Â°', '<math>^{\circ}</math>')
     input = input.replace(u'â', '')
+    input = input.replace(u'â¨', u'<math>\\vee</math>')
+    input = input.replace(u'â', u'<math>\\rightarrow</math>')
     input = re.sub(r'<math> *\\ +', r'<math>', input)
     input = re.sub(r'\\ +</math>', r'</math>', input)
     input = re.sub(r': +<math>', ':<math>', input)
@@ -153,8 +157,13 @@ def postCleaning(input):
     input = input.replace("$f$$^{\prime}$", "$f'$")
     input = input.replace("$f$$^{\prime\prime}$", "$f''$")
     input = input.replace("\emph{f$^{\prime\prime}$}", "$f''$")
-    input = re.sub(r"f '", r"f'", input)
-    input = re.sub(r"f ?' ?'", r"f''", input)
+    input = re.sub(r"([a-zA-Z)])\s*'",
+                   r"\1'", input)
+    input = re.sub(r"([a-zA-Z)])\s*'\s*'",
+                   r"\1''", input)
+
+    input = re.sub(r"\\color{(.*)\s(.*)}",
+                   r"\\color{\1\2}", input)
 
     input = input.replace(u'\u03b8', '$\\theta$')
     input = input.replace(u'\u03c0', '$\pi$')
@@ -162,8 +171,11 @@ def postCleaning(input):
     input = input.replace(u'\u03c1', '$\\rho$')
     input = input.replace(u'\u221e', '$\infty$')
 
+    input = re.sub(r'\$\\displaystyle\s*\n*',
+                   r'$\\displaystyle ', input)
     input = input.replace("\[\\begin{align}", "\\begin{align*}")
-    input = input.replace("$\displaystyle \\begin{align}", "\\begin{align*}")
+    input = re.sub(r'\$\\displaystyle\s*\\begin{align}',
+                   r'\\begin{align*}', input)
     input = input.replace("$\displaystyle\\begin{align}", "\\begin{align*}")
     input = input.replace("\[\displaystyle \\begin{align}", "\\begin{align*}")
     input = input.replace("\[\displaystyle\\begin{align}", "\\begin{align*}")
@@ -172,10 +184,12 @@ def postCleaning(input):
     input = input.replace(
         "\[\displaystyle\n\\begin{align*}", "\\begin{align*}")
     input = input.replace("\[\displaystyle\n\\begin{align}", "\\begin{align*}")
+    input = input.replace('\[\\begin{alignat}', '\\begin{alignat*}')
 
     input = input.replace("\end{align}\]", "\end{align*}")
     input = input.replace('\end{align*}\\\\', '\end{align*}\n')
     input = input.replace('\end{align}.\\]', '\end{align*}')
+    input = input.replace('\end{alignat}\\]', '\end{alignat*}')
 
     input = input.replace('$\displaystyle\\begin{align}', '\\begin{align*}')
     input = input.replace('$\\begin{align}', '\\begin{align*}')
@@ -183,11 +197,19 @@ def postCleaning(input):
     input = input.replace('\end{align}$', '\end{align*}')
     input = input.replace("\\\\]", "\\]")
 
-    input = input.replace('\\begin{align*}\n\n', '\\begin{align*}\n')
-    input = input.replace('\\toprule\\addlinespace\n', '')
+#    two_newlines_dollar = r'\$([\s\S]*?)\n\n([\s\S]*?)\$'
+#    input = re.sub(two_newlines_dollar, r'$\1\2$', input)
+#    input = re.sub(two_newlines_dollar, r'$\1\2$', input)
+#    two_newlines_align = r'align((?!align)[\s\S]*?)\n\n((?!align)[\s\S]*?)align'
+#    input = re.sub(two_newlines_align, r'align\1\2align', input)
+#    input = re.sub(two_newlines_align, r'align\1\2align', input)
 
+    input = re.sub('\\begin{align\*}\n+', '\\begin{align*}\n', input)
+
+    input = input.replace('\\toprule\\addlinespace\n', '')
     input = input.replace('\n\\bottomrule', '')
-    input = input.replace('\n\\\\\\addlinespace', '\\\\')
+    input = re.sub(r'\n\\+addlinespace', r'\\\\', input)
+    input = input.replace('\\addlinespace\n', '')
     input = input.replace('\\\\end{longtable}', '\\end{longtable}')
 
     input = input.replace('\midrule\endhead', '')
@@ -200,9 +222,8 @@ def postCleaning(input):
         r"\[\\displaystyle{\\begin{align\*}([\s\S]*)\\end{align}}\\]",
         r"\\begin{align*}\1\\end{align*}", input)
 
-    input = input.replace("\\\\\\begin{align*}", '\\begin{align*}')
-    input = input.replace("\\\\begin{align*}", '\\begin{align*}')
-    input = input.replace('\end{align*}\\\\', '\end{align*}\n')
+    input = re.sub(r"\\+begin{align\*}", r'\\begin{align*}', input)
+    input = re.sub(r'\\end{align\*}\\+', r'\\end{align*}\n', input)
     input = input.replace('\\\end{align*}', '\end{align*}')
     input = re.sub(r'\n+\\end{align\*}', '\n\end{align*}', input)
 
@@ -212,6 +233,8 @@ def postCleaning(input):
 
     input = re.sub(r'\\\[([\s\S]*)\\begin{align\*}([\s\S]*)\\end{align}',
                    r'\[\1\\begin{aligned}\2\\end{aligned}', input)
+
+    input = re.sub(r'\\]([,.])', r'\1\\]', input)
 
     return input.strip()
 
@@ -257,6 +280,44 @@ def get_latex_statement_from_url(questionURL, num_hints=1, num_sols=1):
                       for index in range(len(urls['hintsURLs']))],
             'sols': [edit_to_latex('solsURLs', index)
                      for index in range(len(urls['solsURLs']))]}
+
+
+def get_all_topics():
+    MER_URL = 'http://wiki.ubc.ca/Science:Math_Exam_Resources'
+    connection = urllib.urlopen(MER_URL)
+    dom = lxml.html.fromstring(connection.read())
+    searchText = 'MER_Tag_'
+    topicLinks = []
+    for link in dom.xpath('//a/@href'):  # url in href for tags (are links)
+        if searchText in link:
+            topicLinks.append(link)
+    topicLinks = list(set(topicLinks))
+    topicLinks.sort()
+    return topicLinks
+
+
+def write_topics_questions_table():
+    outfile = open('raw_topics_questions.csv', 'w')
+    outfile.write('%s,%s\n' % ('Topic', 'Question'))
+    topics = get_all_topics()
+    topics = ['http://wiki.ubc.ca' + t for t in topics]
+    for topic in topics:
+        questions = get_questionURLs_from_topicURL(topic)
+        for q in questions:
+            outfile.write('%s,%s\n' % (topic, 'http://wiki.ubc.ca' + q))
+    outfile.close()
+
+
+def get_questionURLs_from_topicURL(topicURL):
+    connection = urllib.urlopen(topicURL)
+    dom = lxml.html.fromstring(connection.read())
+    searchText = '/Question'
+    questionLinks = []
+    for link in dom.xpath('//a/@href'):  # url in href for tags (are links)
+        if searchText in link:
+            questionLinks.append(link)
+    questionLinks = list(set(questionLinks))
+    return questionLinks
 
 
 def get_all_courses(MER_URL):

@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_09", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the area of the largest rectangle which has two vertices on the\n\\emph{x}-axis and two vertices lie on the graph of the function\n$\\displaystyle y=8-x^2$ with $\\displaystyle -\\sqrt{8}\\le x \\le\\sqrt{8}$.\nPlease justify your answer.", 
     "year": 2013, 
     "sols": [], 
     "hints": []

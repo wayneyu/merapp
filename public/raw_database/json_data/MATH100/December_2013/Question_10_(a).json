@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_10_(a)", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the first Maclaurin polynomial for\n$\\displaystyle f(x) = \\ln(1-x^2)$.", 
     "year": 2013, 
     "sols": [], 
     "hints": []

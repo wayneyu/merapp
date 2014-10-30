@@ -2,8 +2,13 @@
     "term": "December", 
     "question": "Question_04_(c)", 
     "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle f(x) = 4x^3$. What is the 2nd degree Taylor\npolynomial $\\displaystyle T_2(x)$ centered at \\emph{a = 1} for\n$\\displaystyle f(x)$?", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle f(x) = 4x^3$. What is the 2nd degree Taylor\npolynomial $\\displaystyle T_2(x)$ centred at \\emph{a = 1} for\n$\\displaystyle f(x)$?", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "By definition of the Taylor polynomials,\\begin{align*}\nT_2(x) &= \\sum_{i=0}^{2} \\frac{f^{(i)}(a)}{i!}(x-a)^i \n\\\\ &= \\frac{f^{(0)}(a)}{0!}(x-a)^0 + \\frac{f^{(1)}(a)}{1!}(x-a)^1 + \\frac{f^{(2)}(a)}{2!}(x-a)^2\n\\\\ &= f(a) + f'(a)(x-a) + \\frac{f''(a)}{2}(x-a)^2\n\\end{align*}\n\nComputing the values of the derivatives of $f$ at 1, we find that\n$f(1) = 4 ,\\, f'(1) = 12 ,\\, f''(1) = 24$. Therefore\\begin{align*}\nT_2(x) &= f(a) + f'(a)(x-a) + \\frac{f''(a)}{2}(x-a)^2\n\\\\ &= {\\color{blue} 4 + 12(x-1) + 12(x-1)^2}\\\\ &= {\\color{blue} 12x^2 - 12x + 4}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Recall that the $n$-th degree \\textbf{Taylor polynomial} $T_n(x)$\ncentred at $x=a$ for a function $f(x)$ is given by\n$T_n(x) = \\sum_{i=0}^{n} c_i(x-a)^i$ , where $c_i$ is a coefficient.", 
+        "Recall also that the coefficients are given by\n$c_i = \\frac{f^{(i)}(a)}{i!}$, i.e.,\n$T_n(x) = \\sum_{i=0}^{n} \\frac{f^{(i)}(a)}{i!}(x-a)^i$."
+    ]
 }

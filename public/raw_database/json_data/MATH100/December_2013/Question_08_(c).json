@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_08_(c)", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nLet $\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7}$. Determine the\nintervals where $\\displaystyle f(x)$ is concave up, and the intervals\nwhere $\\displaystyle f(x)$ is concave down.", 
     "year": 2013, 
     "sols": [], 
     "hints": []

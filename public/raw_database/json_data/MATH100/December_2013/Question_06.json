@@ -2,8 +2,15 @@
     "term": "December", 
     "question": "Question_06", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nUsing the definition of the derivative, compute $\\displaystyle f'(x)$ if\n$\\displaystyle f(x) = \\frac{x}{2x+1}$. No marks will be given for the\nuse of differential rules, but you may use them to check your answer.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "By the limit definition of the derivative of $f$ at\n$x$,\\begin{align*}\nf'(x) &= \\lim_{h \\to 0}\\frac{f(x+h) - f(x)}{h}\n\\\\ &= \\lim_{h \\to 0}\\frac{\\frac{x+h}{2(x+h)+1} - \\frac{x}{2x+1}}{h}\n\\\\ &= \\lim_{h \\to 0}\\frac{(x+h)(2x+1) -x(2(x+h)+1)}{h(2(x+h)+1)(2x+1)} \n\\\\ &= \\lim_{h \\to 0}\\frac{(2x^2 + x + 2xh + h) - (2x^2 + 2xh + x)}{h(2(x+h)+1)(2x+1)} \n\\\\ &= \\lim_{h \\to 0}\\frac{h}{h(2(x+h)+1)(2x+1)} \n\\\\ &= \\lim_{h \\to 0}\\frac{1}{(2(x+h)+1)(2x+1)} \n\\\\ &= \\frac{1}{(2(x+0)+1)(2x+1)} \n\\\\ &= {\\color{blue} \\frac{1}{(2x+1)^2}}\\end{align*}\n\nUse of the quotient rule confirms that this is indeed\n$\\displaystyle f'(x)$:\\begin{align*}\nf'(x) &= \\frac{1 \\cdot (2x+1) - x \\cdot 2}{(2x+1)^2}\n\\\\ &= {\\color{OliveGreen} \\frac{1}{(2x+1)^2}}\\end{align*}", 
+        "By the alternative limit definition of the derivative of $f$ at\n$a$,\\begin{align*}\nf'(a) &= \\lim_{x \\to a}\\frac{f(x) - f(a)}{x-a}\n\\\\ &= \\lim_{x \\to a}\\frac{\\frac{x}{2x+1} - \\frac{a}{2a+1}}{x-a}\n\\\\ &= \\lim_{x \\to a}\\frac{\\frac{x(2a+1) - a(2x+1)}{(2x+1)(2a+1)}}{x-a} \n\\\\ &= \\lim_{x \\to a}\\frac{\\frac{(2ax+x) - (2ax+a)}{(2x+1)(2a+1)}}{x-a} \n\\\\ &= \\lim_{x \\to a}\\frac{\\frac{x - a}{(2x+1)(2a+1)}}{x-a} \n\\\\ &= \\lim_{x \\to a}\\frac{1}{(2x+1)(2a+1)} \n\\\\ &= \\frac{1}{(2a+1)^2} \n\\\\ f'(x) &= {\\color{blue} \\frac{1}{(2x+1)^2}}\\end{align*}\n\nUse of the quotient rule confirms that this is indeed\n$\\displaystyle f'(x)$:\\begin{align*}\nf'(x) &= \\frac{1 \\cdot (2x+1) - x \\cdot 2}{(2x+1)^2}\n\\\\ &= {\\color{OliveGreen} \\frac{1}{(2x+1)^2}}\\end{align*}"
+    ], 
+    "hints": [
+        "The derivative of $f$ at $x$ is the slope of the line tangent to $f$ at\n$x$. What is the expression for the slope of a line?", 
+        "The slope of a line between two points $\\displaystyle (x_1, f(x_1))$ and\n$\\displaystyle (x_2, f(x_2))$ is $\\frac{f(x_2) - f(x_1)}{x_2 - x_1}$.\nWhat happens as $\\displaystyle x_2 - x_1 \\to 0$? How can we express this\nmathematically?", 
+        "The limit definition of the derivative of $f$ at $x$ is\n$f'(x) = \\lim_{h \\to 0}\\frac{f(x+h) - f(x)}{h}$.\\\\\\\\Equivalently, the\nderivative of $f$ at $a$ is\n$f'(a) = \\lim_{x \\to a}\\frac{f(x)-f(a)}{x-a}$."
+    ]
 }

@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_07", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nAt a distance of 4 kilometres from the launch site, a spectator is\nobserving a rocket being launched. If the rocket lifts off vertically\nand is rising at a speed of 0.7 kilometres/second when it is at an\naltitude of 3 kilometres, how fast is the distance between the rocket\nand the spectator changing at that instant?", 
     "year": 2013, 
     "sols": [], 
     "hints": []

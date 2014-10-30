@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_08_(d)", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "Let $\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7}$. Sketch the graph of\n$\\displaystyle y=f(x)$ and indicate the inflection point(s) on your\ngraph. (The results from part\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_08_(a)}{(a)},\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_08_(b)}{(b)},\nand\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_08_(c)}{(c)}\nmay be useful.)", 
     "year": 2013, 
     "sols": [], 
     "hints": []

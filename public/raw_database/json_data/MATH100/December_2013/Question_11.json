@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_11", 
     "course": "MATH100", 
-    "statement": "No content found", 
+    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nProve that there exists at most one positive real number\n$\\displaystyle x$ such that $\\displaystyle 4^x = 3\\cos x$.", 
     "year": 2013, 
     "sols": [], 
     "hints": []

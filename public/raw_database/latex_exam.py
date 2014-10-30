@@ -27,7 +27,7 @@ def writeLatex(course, term, year):
               '\usepackage{graphicx}\n'
               '\usepackage{fixltx2e}\n'
               '\usepackage{hyperref}\n'
-              '\usepackage{color}\n'
+              '\usepackage[usenames,dvipsnames,svgnames]{xcolor}\n'
               '\usepackage{longtable}\n'
               '\\newcommand{\R}{\mathbb{R}}\n'
               '\\newcommand{\C}{\mathbb{C}}\n'
@@ -46,7 +46,7 @@ def writeLatex(course, term, year):
         text = fd.read()
         fd.close()
         data = json.loads(text)
-        qname = data['question'].replace('_', ' ')
+        qname = f.replace('_', ' ').replace('.json', '')
         out.write('\\section{%s}' %
                   qname.replace('_',
                                 '').replace('Question 0',

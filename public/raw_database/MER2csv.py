@@ -304,7 +304,9 @@ def write_topics_questions_table():
     for topic in topics:
         questions = get_questionURLs_from_topicURL(topic)
         for q in questions:
-            outfile.write('%s,%s\n' % (topic, 'http://wiki.ubc.ca' + q))
+            outfile.write('%s,%s\n' % (topic.replace(
+                'http://wiki.ubc.ca/Category:MER_Tag_', ''),
+                'http://wiki.ubc.ca' + q))
     outfile.close()
 
 

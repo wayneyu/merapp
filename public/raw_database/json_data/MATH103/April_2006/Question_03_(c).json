@@ -1,0 +1,12 @@
+{
+    "term": "April", 
+    "question": "Question_03_(c)", 
+    "course": "MATH103", 
+    "statement": "Evaluate the following integral.\n\n$\\displaystyle \\int_{0}^{2} \\sqrt{4-x^{2}}\\,dx$", 
+    "year": 2006, 
+    "sols": [
+        "Area of a quarter circle of radius 2 is\n$\\displaystyle \\pi(2)^{2}/4 = \\pi$", 
+        "The long trig sub solution is needed as well."
+    ], 
+    "hints": []
+}

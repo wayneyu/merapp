@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[\\displaystyle \nA = \\begin{bmatrix}\n1 & 2 & 3 & -2 & 4\\\\\n2 & 5 & 8 & -1 & 6\\\\\n1 & 4 & 7 & 5 & 2\\\\\n1 & 3 & 5 & 1 & 2\\\\\n\\end{bmatrix}\\]\n\nand\n\n\\[\\displaystyle \nU = \\begin{bmatrix}\n1 & 2 & 3 & -2 & 4\\\\\n0 & 1 & 2 & 3 & -2\\\\\n0 & 0 & 0 & 1 & 2\\\\\n0 & 0 & 0 & 0 & 0\\\\\n\\end{bmatrix}\\]\n\nThen the matrix \\emph{U} is an echelon form for \\emph{A} (you may assume\nthis, you don't have to do the row reduction again.)\n\nFind the rank of \\emph{A}", 
+    "year": 2010, 
+    "sols": [
+        "The rank of matrix A is found by determining the number of linearly\nindependent columns or the number of linearly independent rows. They are\nequal.\n\n1.) First, we have to reduce the matrix to row echelon form in order to\nsee which columns contain pivot points(point with all zeros below it and\noccurs to the right and below any previous pivot points). These columns\nare the linearly independent columns.\n\n2.) In this question, matrix U is given and is an echelon form of matrix\nA. Therefore, we don$^{\\prime}$t have to perform row reduction anymore.3.)In order to see the pivot points clearly, we can switch columns 3 and\n4 to get:\n\nU =$\\begin{bmatrix}\n1 & 2 & -2 & 3&4 \\\\ \n0 &1 & 3 & 2 &-2 \\\\ \n0& 0 & 1& 0 &2 \\\\ \n0& 0 & 0 &0 &0 \n\\end{bmatrix}$\n\n3.) As you can tell from the edited matrix U, column 1, 2, and 3 contain\nthe pivot points. This means that matrix A has a rank of 3."
+    ], 
+    "hints": []
+}

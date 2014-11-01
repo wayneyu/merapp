@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_05", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Multiple Choice}\n\nThe number of zeros at the end of the decimal representation of 153! is\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  (a) 28\n\\item\n  (b) 33\n\\item\n  (c) 37\n\\item\n  (d) 62\n\\item\n  (e) None of the above.\n\\end{itemize}", 
+    "year": 2005, 
+    "sols": [
+        "The correct answer is \\textbf{c = 37}.\n\nFollowing the hints, we seek to count the number of factors of 10 in the\nnumber $\\displaystyle 153!$. To do this we count the number of 5s\noccuring in its expansion. The number of 5s occurring in the expansion\nof $\\displaystyle n!$ is given by\n\n$\\displaystyle \\left\\lfloor \\frac{n}{5} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{2}} \\right\\rfloor + ... + \\left\\lfloor \\frac{n}{5^{\\lfloor \\log_{5}(n) \\rfloor}} \\right\\rfloor$\n\nThis is true since you get a factor of 5 every 5 integers. You get\nanother factor of 5 every 25 integers and so on. Counting this, we see\nthat\n\n$\\displaystyle \\left\\lfloor \\frac{153}{5} \\right\\rfloor + \\left\\lfloor \\frac{153}{5^{2}} \\right\\rfloor + \\left\\lfloor \\frac{153}{5^{3}} \\right\\rfloor = 30 + 6 + 1 = 37$."
+    ], 
+    "hints": [
+        "To count the number of zeroes in this number, it suffices to count the\nnumber of factors of 10 the number has.", 
+        "To accomplish hint 1, notice that the number of factors of 2 inside\n$\\displaystyle n!$ must exceed the number of factors of 5 so it suffices\nto count the number of factors of 5 inside $\\displaystyle n!$.", 
+        "The number of 5s occurring in the expansion of $\\displaystyle n!$ is\ngiven by\n\n$\\displaystyle \\left\\lfloor \\frac{n}{5} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{2}} \\right\\rfloor + ... + \\left\\lfloor \\frac{n}{5^{\\lfloor \\log_{5}(n) \\rfloor}} \\right\\rfloor$\n\nThis is true since you get a factor of 5 every 5 integers. You get\nanother factor of 5 every 25 integers and so on."
+    ]
+}

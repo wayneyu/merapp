@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH307", 
+    "statement": "Let \\emph{X} be the subspace in three dimensional space $R^3$ containing\nall vectors perpendicular to $\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}$\n\nLet $L$ be the linear transformation defined by the first projective\nvector onto the $x-y$ plane and then projecting the resulting vector\nonto \\emph{X}.\n\nIf \\emph{x} lies in \\emph{X} then so does $\\displaystyle L(x)$. This\nmeans that \\emph{L} defines a linear transformation from \\emph{X} to\n\\emph{X}. Find hte matrix of this transformation with respect to the\nbasis in part (a).", 
+    "year": 2005, 
+    "sols": [], 
+    "hints": []
+}

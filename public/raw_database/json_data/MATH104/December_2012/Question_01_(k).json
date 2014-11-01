@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01_(k)", 
+    "course": "MATH104", 
+    "statement": "The quadratic approximation of a demand function q(p) at p=10 is\n\n\\[\\displaystyle{}T_2(p)=2-4(p-10)+3(p-10)^2.\\]\n\nCalculuate $\\epsilon(10)$ where $\\epsilon(p)$ is the price-elasticity of\ndemand.", 
+    "year": 2012, 
+    "sols": [
+        "Using the hints, we have\n\n\\begin{align*}\n\\epsilon(p) &= \\frac{p \\cdot q'(p)}{q(p)} \\\\\n\\epsilon(10) &= \\frac{10 \\cdot q'(10)}{q(10)} = \\frac{10 (-4))}{2} = -20\n\\end{align*}\n\nwhere the values of $q(10) =2$ are read from the given degree 2 Taylor\npolynomial expansion and similarly for $q'(10)$."
+    ], 
+    "hints": [
+        "Recall that the formula for the price-elasticity of demand is\n\n$\\displaystyle \\epsilon(p) = \\frac{p\\cdot q'(p)}{q(p)}$.", 
+        "The problem requests that we fine $\\epsilon(10)$ which is given by\n\n$\\displaystyle \\epsilon(10) = \\frac{10\\cdot q'(10)}{q(10)}$\n\nso we need to find the values $q(10)$ and $q'(10)$. How can we do this\nwith the given information?", 
+        "Recall that the quadratic approximation is just the second degree Taylor\npolynomial given by\n\n\\[\\displaystyle T_{2}(p) = q(10) + q'(10)(p - 10) + \\frac{1}{2}q''(10)(p-10)^{2}.\\]\n\nCompare this with the given to find the unknown values as given in the\nprevious hint."
+    ]
+}

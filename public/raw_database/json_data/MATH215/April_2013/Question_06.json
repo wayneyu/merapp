@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_06", 
+    "course": "MATH215", 
+    "statement": "For the following system: \\begin{align*}\nx' = -2x + x^2 + xy\\\\\ny' = -3y + 2y^2 + xy\n\\end{align*} Find all critical points and classify them according to\ntheir types and stability.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[f(x) = \\frac{1}{x+1}\\]\n\n(b) Confirm your answer from part (a) by finding $f'(x)$ using\ndifferentiation rules such as the Quotient Rule or Chain Rule.", 
+    "year": 2011, 
+    "sols": [
+        "Using the chain rule is much faster. Rewrite the function as\n\n\\[\\displaystyle\nf(x) = (x+1)^{-1}\\]\n\nThen its derivative simply is\n\n\\[f'(x) = (-1)(x+1)^{-2} \\cdot 1 = - \\frac{1}{(x+1)^2}\\] (The\nmultiplication by 1 represents the derivative of \\emph{x} + 1.)", 
+        "Using the quotient rule works but is usually more messy. If you can\navoid using this rule and use the chain rule as demonstrated in the\nfirst solution, do it. Using the quotient rule, the solution looks like\nthis:\n\n\\[f'(x) = \\frac{0 \\cdot (x+1) - 1 \\cdot 1}{(x+1)^2} = - \\frac{1}{(x+1)^2}\\]"
+    ], 
+    "hints": [
+        "Using the quotient rule works (see solution 2), but it's faster to use\nthe chain rule (see solution 1)."
+    ]
+}

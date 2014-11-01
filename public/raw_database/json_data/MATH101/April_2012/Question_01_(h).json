@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(h)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nExpress $2.65656565....$ as a rational number i.e. in the form $p/q$\nwhere \\emph{p} and \\emph{q} are integers.", 
+    "year": 2012, 
+    "sols": [
+        "Notice that we have\n\n$2.656565.... = 2 + \\frac{65}{100} + \\frac{65}{10000} + \\frac{65}{1000000} = 2 + \\sum_{n=1}^{\\infty}\\frac{65}{100^{n}}$\n\nNow, recall that the sum of a geometric series is\n\n$\\sum_{n=1}^{\\infty}ar^{n-1} = \\frac{a}{1-r}.$\n\nIn our case, we have that $a = 65/100$ (the term when we plug in $n=1$\ninto the sum) and we have that $r = 1/100$ and hence\n\n$2 + \\sum_{n=1}^{\\infty}\\frac{65}{100^{n}} = 2 + \\frac{\\tfrac{65}{100}}{1 - \\tfrac{1}{100}} = 2 + \\frac{65}{99} = \\frac{263}{99}$\n\ncompleting the question.", 
+        "Let\n\n$x = 2.65656565656565....$\n\nNotice that\n\n$100x = 265.656565656565...$\n\nSubtracting the two equations gives\n\n$99x = 263$\n\nand so\n\n$x = \\frac{263}{99}$"
+    ], 
+    "hints": [
+        "Try to write this as a sum of fractions. Then use facts about geometric\nseries to help."
+    ]
+}

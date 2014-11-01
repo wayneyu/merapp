@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_B_08", 
+    "course": "MATH102", 
+    "statement": "The velocity of a crawling cell has been modelled as\n\n$v(x) = \\frac{1}{ax + e^{1/x}}$\n\nwhere $x > 0$ is the number of actin filaments driving the motion and\n$a > 0$ is a constant. Determine the following:\n\n(i) $\\lim_{x \\to 0^+} e^{1/x}$\n\n(ii) $\\lim_{x \\to \\infty} e^{1/x}$\n\n(iii) $\\lim_{x \\to 0^+} v(x)$\n\n(iv) $\\lim_{x \\to \\infty} v(x)$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

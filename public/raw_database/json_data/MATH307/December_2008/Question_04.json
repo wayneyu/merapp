@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH307", 
+    "statement": "Find the \\emph{QR} decomposition of the matrix\n\n\\[\\begin{bmatrix}\n0 & 1 \\\\\n1 & 0 \\\\\n0 & -1 \\\\\n-1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\\]", 
+    "year": 2008, 
+    "sols": [
+        "To begin with, we note that the columns of \\emph{A} are already\northogonal,\n\n\\[\\begin{bmatrix}\n0 & 1 & 0 & -1 & 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\\]\n\nSo we can simply put the normalized columns of \\emph{A} into the matrix\n\\emph{Q}:\n\n\\[Q = \\begin{bmatrix}\n0 & \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} & 0 \\\\\n0 & -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} & 0 \\\\\n0 & \\frac1{\\sqrt 3}\n\\end{bmatrix}\\]\n\nAs a last step, we calculate \\emph{R = Q\\textsuperscript{T}A} to find\n\n\\[R = \\begin{bmatrix}\n\\sqrt 2 & 0 \\\\ 0 & \\sqrt 3\n\\end{bmatrix}\\]"
+    ], 
+    "hints": [
+        "What do you notice when you take the dot product of the two columns of\n\\emph{A}? How does this simplify the computation?", 
+        "Since the two columns of \\emph{A} are already orthogonal, we can simply\nuse the normalized columns of \\emph{A} in \\emph{Q}.", 
+        "As a last step, since \\emph{A = QR} and \\emph{Q} is orthonormal, find\n\\emph{R} by computing \\emph{R = Q\\textsuperscript{T}A}."
+    ]
+}

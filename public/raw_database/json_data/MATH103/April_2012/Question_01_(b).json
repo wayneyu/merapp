@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH103", 
+    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\[\\int_1^{\\infty} \\frac {x^2}{x^3+2x+5} \\,dx\\] converge?\n\nA. Converge.\n\nB. Diverge.", 
+    "year": 2012, 
+    "sols": [
+        "The difference between the highest exponents is 3 - 2 = 1. By the\nintergral \\emph{p} test (with \\emph{p} = 1) this integral diverges.\n\nMore precisely we estimate the integral with\n\n\\[\\int_1^\\infty\\frac{x^2}{x^3 + 2x + 5}dx > \\int_1^\\infty\\frac{x^2}{x^3 + 2x^3 + 5x^3}dx = \\frac18\\int_1^\\infty\\frac1xdx\\]\n\nHere we see exactly how to use the integral \\emph{p} test. We also can\ncontinue with the anti-derivative\n\n\\[\\frac18\\int_1^\\infty\\frac1xdx = \\frac18\\lim_{\\alpha\\rightarrow\\infty}[\\text{ln}(x)]_1^\\alpha = \\frac18\\lim_{\\alpha\\rightarrow\\infty}\\text{ln}(\\alpha)=\\infty\\]"
+    ], 
+    "hints": [
+        "Use the integral \\emph{p} test.", 
+        "If you do not know how to use the integral \\emph{p} test, estimate the\nintegral with a lower bound first."
+    ]
+}

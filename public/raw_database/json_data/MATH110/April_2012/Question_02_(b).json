@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH110", 
+    "statement": "Is your estimate from part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2012/Question_2_(a)}{(a)}\ngreater than, less than, or equal to the actual value of $\\ln(1.1)$?\nJustify your answer.", 
+    "year": 2012, 
+    "sols": [
+        "If you draw a picture of $\\ln(x)$ and the linear approximation\n$y = x - 1$ (see below), you can see that the linear approximation is\nabove the graph of $\\ln(x)$. This means that the value of the linear\napproximation will be greater than the value of the actual function.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMATH110April2012Question2(b).jpg}\n\\caption{ScienceMathExamResourcesCoursesMATH110April2012Question2(b).jpg}\n\\end{figure}\n\nAnother way of showing this is to prove that $\\ln(x)$ is concave down. A\nconcave down function has all of its tangent lines above the graph of\nthe function and so the same conclusion follows as above. We know\n$\\ln(x)$ is concave down because its second derivative is $-1/x^2$ which\nis always negative."
+    ], 
+    "hints": [
+        "Try drawing a picture of $\\ln x$ and your linearization."
+    ]
+}

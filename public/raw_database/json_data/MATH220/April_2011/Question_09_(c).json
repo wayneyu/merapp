@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_09_(c)", 
+    "course": "MATH220", 
+    "statement": "Let\n\n\\[\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\]\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nProve or disprove that \\emph{f} \u00e2\u0097\u008b\\emph{g} must be surjective.", 
+    "year": 2011, 
+    "sols": [
+        "The example that we constructed in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} showed a case where the function \\emph{f} is not surjective and so\nit cannot be possible for $f \\circ g$ to be surjective either. For\nexample, in that case, no negative number is in the image of the\nfunction \\emph{f} and so no negative number can be in the image of\n$f \\circ g$ either."
+    ], 
+    "hints": [
+        "Working on\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} and\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} definitively helps.\n\nIn your example in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} \\emph{f} was not surjective. Can $f \\circ g$ possibly be surjective\nthen?"
+    ]
+}

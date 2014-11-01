@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_11_(b)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[\\displaystyle\nA = \\begin{bmatrix}\n1 & 0 & 2\\\\\n1 & -1 & 1\\\\\n1 & 0 & 0\n\\end{bmatrix}\\]\n\nFind all eigenvalues of \\emph{A}", 
+    "year": 2009, 
+    "sols": [
+        "To find the eigenvalues of matrix A = $\\begin{bmatrix}\n1 &0 &2 \\\\ \n1 &-1 &1 \\\\ \n1 &0 &0 \n\\end{bmatrix}$ we have\n\n$(A - \\lambda I) = \\begin{bmatrix}\n1 - \\lambda &0 &2 \\\\ \n1 &-1 - \\lambda &1 \\\\ \n1 &0 & -\\lambda \n\\end{bmatrix}$\n\nSet the Determinant = 0, we have\n\n$\\begin{matrix}\n(1 - \\lambda)((-\\lambda)(-1 - \\lambda)) + 2(0 - (-1 - \\lambda)) = 0\\\\ \n(1 - \\lambda)(\\lambda + \\lambda^{2}) + 2 + 2\\lambda = 0\\\\ \n\\lambda^{3} - 3\\lambda - 2 = 0\\\\ \n(\\lambda + 1)^{2}(\\lambda - 2)\\\\ \n\\text{Hence,} \\lambda_{1} = \\lambda_{2} =-1, \\lambda_{3} = 2\n\\end{matrix}$"
+    ], 
+    "hints": []
+}

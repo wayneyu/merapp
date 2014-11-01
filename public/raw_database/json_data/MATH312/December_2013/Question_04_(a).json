@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH312", 
+    "statement": "Decrypt OAPB, which was encrypted by the affine transformation\n$\\displaystyle C \\equiv 7P + 11 \\mod{26}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

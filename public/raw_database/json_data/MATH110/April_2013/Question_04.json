@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_04", 
+    "course": "MATH110", 
+    "statement": "Let \\emph{a} and \\emph{b} be constants. Show that if the curves \\emph{xy\n= a} and \\emph{x\\textsuperscript{2} - y\\textsuperscript{2} = b}\nintersect each other, they do so at right angles.", 
+    "year": 2013, 
+    "sols": [
+        "Using implicit differentiation, we solve for the derivative of y in both\ncurves\n\n\\begin{align*}\nxy &= a \\\\\ny + xy' &= 0\\\\\ny' &= \\frac{-y}{x}\n\\end{align*}\n\nand for the second curve,\n\n\\begin{align*}\nx^2 - y^2 &= b  \\\\\n2x - 2yy' &= 0\\\\\n2(x - yy') &= 0\\\\\nx - yy' &= 0\\\\\ny' &= \\frac{x}{y}\n\\end{align*}\n\nThese two slopes are negative reciprocals of each other. Hence, if the\ncurves intersect each other, they do at a right angle."
+    ], 
+    "hints": [
+        "Lets suppose that the curves intersect each other. What does it mean to\nintersect at right angles?", 
+        "Two curves intersect at right angles if their tangent lines at the point\nof intersection have slopes whichs are negative reciprocals of each\nother. Thus, this suggests taking derivatives and checking that at this\nintersection point, the slopes are negative reciprocals.", 
+        "To find the slope of the tangent lines use implicit differentiation."
+    ]
+}

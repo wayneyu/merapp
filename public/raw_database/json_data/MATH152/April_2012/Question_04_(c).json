@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(c)", 
+    "course": "MATH152", 
+    "statement": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\n\\end{align*}\n\nUse the information in items (a) and (b) to write A as $MDM^{-1}$, where\nM is an invertible matrix and D is a diagonal matrix.", 
+    "year": 2012, 
+    "sols": [
+        "The matrix M is made up of the eigenvectors of A and so\n\n\\[M = \\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}.\\]\n\nThe matrix D is a diagonal matrix of the eigenvalues listed in the order\nthat we list the eigenvectors in M. Therefore,\n\n\\[D = \\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}.\\]\n\nWe can also compute $M^{-1}$ by recalling that for a 2x2 matrix Q such\nthat\n\n\\[Q=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\]\n\nthat\n\n\\[Q^{-1}=\\frac{1}{\\det{Q}}\n\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\]\n\nSince det(M)=2, we have that\n\n\\[M^{-1}=\n\\frac{1}{2}\\begin{bmatrix}\n1  &  -1\\\\\n1  &  1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}.\\]\n\nMultiplying everything together we get\n\n\\[MDM^{-1}=\n\\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}\n=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}\\]\n\nas we were expecting."
+    ], 
+    "hints": [
+        "The columns of \\emph{M} correspond to the eigenvectors and the values of\n\\emph{D} are the eigenvalues in order of the eigenvectors in the matrix\n\\emph{M}."
+    ]
+}

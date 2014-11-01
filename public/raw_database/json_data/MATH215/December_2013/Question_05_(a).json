@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH215", 
+    "statement": "Find the general solution $\\vec{x}(t) = \\left[ \\begin{array}{c}\nx(t) \\\\ y(t) \\end{array} \\right]$ of the homogeneous linear system\n\n\\[\\vec{x}' = A \\vec{x}, \\qquad A = \\left[ \\begin{array}{cc} 0 & 3 \\\\ 2 & 1 \\end{array} \\right],\\]\n\nand sketch the phase portrait (i.e. some typical trajectories in the\n$xy-$ plane).", 
+    "year": 2013, 
+    "sols": [
+        "We begin by finding the eigenvalues and eigenvectors.\n\nThe characteristic polynomial of\n$\\begin{bmatrix} 0 & 3 \\\\ 2 & 1 \\end{bmatrix}$ is\n$\\lambda^2 - \\lambda - 6 = (\\lambda - 3)(\\lambda + 2)$ which has roots\n$\\lambda = 3, -2$. The find the eigenvector with eigenvalue $\\lambda$,\nwe seek the nullspace of $A - \\lambda I$.\n\nWith $\\lambda = 3$, we have:\n\n\\[\\begin{bmatrix}-3 & 3 \\\\ 2 & -2 \\end{bmatrix} \\vec{v} = \\vec{0}.\\]\n\nFrom the equation implied by the first row (the second is redundant),\n$-3 v_1 + 3v_2 = 0$ so we can take $\\vec{v} = \\langle 1,1\\rangle$.\n\nWith $\\lambda = -2$, we have:\n\n\\[\\begin{bmatrix}2 & 3 \\\\ 2 & 3 \\end{bmatrix} \\vec{v} = \\vec{0}.\\]\n\nFrom the equation implied by the first row (the second is the same),\n$2 v_1 + 3 v_2 = 0$ so we can take $\\vec{v} = \\langle 3,-2 \\rangle$ as\nan eigenvector.\n\nThe general solution is\n$\\vec{x}(t) = C_1 \\begin{bmatrix}1 \\\\ 1 \\end{bmatrix} e^{3t} + C_2 \\begin{bmatrix}3 \\\\ -2 \\end{bmatrix} e^{-2t}$.\n\nThe origin is a saddle point because the eigenvalues are real and of\nopposite sign. Along the $\\displaystyle \\langle 1,1\\rangle$ direction,\nthe solution grows exponentially. Along the\n$\\displaystyle \\langle 3,-2\\rangle$ direction, the solution decays\nexponentially. At all other points, it will approach the line spanned by\n$\\displaystyle \\langle 1,1\\rangle$ as $t \\rightarrow \\infty$. This is\ndisplayed in the figure.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Wiki5asketch_2013WT1.png}\n\\caption{Saddle point phase portrait}\n\\end{figure}"
+    ], 
+    "hints": [
+        "A good start would be to find the eigenvalues and eigenvectors. This way\nyou can see how the solution trajectories behave (growing/shrinking) in\ndifferent directions."
+    ]
+}

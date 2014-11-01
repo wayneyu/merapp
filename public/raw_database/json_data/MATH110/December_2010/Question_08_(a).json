@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $\\displaystyle f(x) = \\sin x$ and $\\displaystyle g(x) = \\cos x$.\nFind $\\displaystyle f\\left(\\frac{\\pi}{3}\\right)$,\n$\\displaystyle g\\left(\\frac{\\pi}{3}\\right)$,\n$\\displaystyle f'\\left(\\frac{\\pi}{3}\\right)$, and\n$\\displaystyle g'\\left(\\frac{\\pi}{3}\\right)$.", 
+    "year": 2010, 
+    "sols": [
+        "Let $\\displaystyle f(x) = \\sin x$ and $\\displaystyle g(x) = \\cos x$.\nFind $\\displaystyle f\\left(\\frac{\\pi}{3}\\right)$,\n$\\displaystyle g\\left(\\frac{\\pi}{3}\\right)$,\n$\\displaystyle f'\\left(\\frac{\\pi}{3}\\right)$, and\n$\\displaystyle g'\\left(\\frac{\\pi}{3}\\right)$\n\nFirst, let's take derivatives\n\n$\\displaystyle f'(x) = \\cos x$\n\nand\n\n$\\displaystyle g'(x) = -\\sin x$.\n\nPlugging in all the values we need, we see that we need to evaluate\n\n$\\displaystyle f(\\tfrac{\\pi}{3}) = \\sin(\\tfrac{\\pi}{3})$\n\n$\\displaystyle g(\\tfrac{\\pi}{3}) = \\cos(\\tfrac{\\pi}{3})$\n\n$\\displaystyle f'(\\tfrac{\\pi}{3}) = \\cos(\\tfrac{\\pi}{3})$\n\n$\\displaystyle g'(\\tfrac{\\pi}{3}) = -\\sin(\\tfrac{\\pi}{3})$\n\nSo it suffices to evaluate $\\displaystyle \\sin(\\tfrac{\\pi}{3})$ and\n$\\displaystyle \\cos(\\tfrac{\\pi}{3})$\n\nDrawing a triangle with angles 30 degrees, 60 degrees and 90 degrees\n(since $\\displaystyle \\tfrac{\\pi}{3}$ is 60 degrees), we see that the\nside lengths are 1, $\\displaystyle \\sqrt{3}$ and 2. Since the shortest\nside is opposite the shortest angle, the middle angle is opposite the\nmiddle side and the longest angle is opposite to the longest side, we\nhave that\n\n$\\displaystyle \\sin(\\tfrac{\\pi}{3}) = \\frac{O}{H} = \\frac{\\sqrt{3}}{2}$\n\nand\n\n$\\displaystyle \\cos(\\tfrac{\\pi}{3}) = \\frac{A}{H} = \\frac{1}{2}$. Hence,\nwe have\n\n$\\displaystyle f(\\tfrac{\\pi}{3}) = \\sin(\\tfrac{\\pi}{3}) = \\frac{\\sqrt{3}}{2}$\n\n$\\displaystyle g(\\tfrac{\\pi}{3}) = \\cos(\\tfrac{\\pi}{3}) = \\frac{1}{2}$\n\n$\\displaystyle f'(\\tfrac{\\pi}{3}) = \\cos(\\tfrac{\\pi}{3}) = \\frac{1}{2}$\n\n$\\displaystyle g'(\\tfrac{\\pi}{3}) = -\\sin(\\tfrac{\\pi}{3}) = -\\frac{\\sqrt{3}}{2}$"
+    ], 
+    "hints": [
+        "To evaluate the first two values, we simply plug it in and try to use\nour trigonometry tricks. The second two values are similar but we need\nto take a derivative first."
+    ]
+}

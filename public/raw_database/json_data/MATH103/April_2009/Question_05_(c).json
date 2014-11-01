@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH103", 
+    "statement": "A carrot has the shape formed by revolving the region under the graph of\n\n\\[f(x) = \\sqrt{14-x}\\]\n\nfor $0 \\leq x \\leq 12$ cm about the \\emph{x} axis. The concentration of\nvitamin A is found to vary in the carrot with \\emph{x} according to\n\n\\[c(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\\]\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_5\\_(a)\\_5a.png}\n\\end{figure}\n\nYou want to cut the carrot at a certain value of \\emph{x}, obtaining two\npieces of equal volume. How many centimeters from \\emph{x = 0} do you\nhave to cut?", 
+    "year": 2009, 
+    "sols": [
+        "We are searching for a $x_m \\in [0,12]$ such that\n\n$\\int_0^{x_m}\\left(\\sqrt{14-x}\\right)^2\\pi dx = \\frac12 \\int_0^{12}\\left(\\sqrt{14-x}\\right)^2\\pi dx = \\frac12 96\\pi = 48\\pi$.\n\nWe calculate\n\n\\begin{align*}\n\\int_0^{x_m}\\left(\\sqrt{14-x}\\right)^2\\pi dx &= \\pi\\int_0^{x_m}(14-x)dx \\\\\n&= \\pi\\left.\\left(14x - \\frac{x^2}{2}\\right)\\right|_0^{x_m} \\\\\n&= \\pi\\left(14x_m - \\frac{x_m^2}{2}\\right) = 48\\pi\n\\end{align*}\n\nWe cancel the $\\pi$ and continue\n\n$0=x_m^2 - 28x_m + 96 = (x_m-24)(x_m-4)$\n\n\\[x_{m_1}=4, x_{m_2}=24\\]\n\nSince $24\\notin[0,12]$ we conclude $x_m=4$.\n\nYou need to cut 4cm from $x=0$."
+    ], 
+    "hints": [
+        "You can recycle your calculations from\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_5_(a)}{5\n(a)}.\n\nYou also want to use the result from\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_5_(a)}{5\n(a)}.", 
+        "You are searching for a $x_m \\in [0,12]$ such that\n\n$\\int_0^{x_m}\\left(\\sqrt{14-x}\\right)^2\\pi dx = \\frac12 \\int_0^{12}\\left(\\sqrt{14-x}\\right)^2\\pi dx$."
+    ]
+}

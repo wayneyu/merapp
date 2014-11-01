@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_08", 
+    "course": "MATH215", 
+    "statement": "Use the Laplace transform to solve the initial value problem:\n\n$\\displaystyle y'' + 2y = u_{\\pi}(t) \\sin t + u_{2 \\pi}(t) \\sin t \\quad  y(0) = y'(0) = 1$\n\nwhere $u_{\\pi}(t), u_{2\\pi}(t)$ are the unit step functions with steps\nat $\\pi$ and $2\\pi$, respectively.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

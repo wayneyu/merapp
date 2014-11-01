@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH103", 
+    "statement": "In an experiment involving a bacteria population, $N(t)$ denotes the\nsize of the population (measured in thousands of individuals) as a\nfunction of time, starting at $t=0$. The initial population is\n$N(0) = N_{0}$.\n\nc) What happens to the solution from\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_07_(b)}{part\n(b)} as $t\\to 1$? Can you find an initial population $N_{0}$ for which\nthis problem doesn't occur for any time \\emph{t}?", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

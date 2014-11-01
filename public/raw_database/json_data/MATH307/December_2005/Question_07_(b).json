@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH307", 
+    "statement": "The equation\n\n\\[\\begin{bmatrix} 1 & 0\\\\ 0& 1\\\\ 1& 1 \\end{bmatrix} \\begin{bmatrix} x_{1}\\\\ x_{2} \\end{bmatrix} = \\begin{bmatrix} 1\\\\ 2\\\\ 3 \\end{bmatrix}\\]\n\nhas no solution.\n\n\\textbf{(b)} Explain in what way the \\emph{least squares} solution is\nthe best possible approximation to a solution.", 
+    "year": 2005, 
+    "sols": [
+        "The \\emph{least squares solution} is the best possible approximation\nbecause it minimizes the Euclidean distance, i.e. the solution where\n\\emph{Ax} that is closest to \\emph{b}."
+    ], 
+    "hints": []
+}

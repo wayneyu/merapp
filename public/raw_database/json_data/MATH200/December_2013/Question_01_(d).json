@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH200", 
+    "statement": "Let $\\displaystyle f(x)$ be a differentiable function, and suppose it is\ngiven that $\\displaystyle f'(0)=10$. Let\n$\\displaystyle g(s,t)= f(as-bt)$, where $\\displaystyle a$ and\n$\\displaystyle b$ are constants. Evaluate\n$\\displaystyle \\frac{\\partial g}{\\partial s}$ at the point\n$\\displaystyle (s,t)=(b,a)$, that is, find\n$\\displaystyle \\frac{\\partial g}{\\partial s} \\bigg|_{(b,a)}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

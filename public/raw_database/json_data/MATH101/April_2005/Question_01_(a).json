@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Short-Answer Questions.} \\emph{Put your answer in the box\nprovided but show your work also. Full marks will be given for correct\nanswers placed in the bo, but at most one mark will be given for\nincorrect answers. Simplify your answer as much as possible.}\n\nEvaluate\n\n$\\int(x^{2}+e^{2x})\\, dx$", 
+    "year": 2005, 
+    "sols": [
+        "$\\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C$"
+    ], 
+    "hints": [
+        "$\\int_{a}^{b}(f(x) + g(x))\\, dx = \\int_{a}^{b}f(x) \\, dx + \\int_{a}^{b}g(x)\\, dx$"
+    ]
+}

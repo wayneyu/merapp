@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nFind a function $f(x)$ that satisfies\n$\\displaystyle f'(x) = 2\\cos(x)-e^{x}$ and $f(0) = 0$.", 
+    "year": 2012, 
+    "sols": [
+        "Since $\\tfrac{d}{dx}\\sin(x) = \\cos(x)$ and $\\tfrac{d}{dx}e^{x} = e^{x}$,\nwe have that the function given by $f(x) = 2\\sin(x) - e^{x} +C$ where\n\\emph{C} is any constant are functions that have the given derivative.\n\nSince we are also given that $f(0) = 0$, we plug this information in to\nsee that $0 = f(0) = 2\\sin(0) - e^{0} + C = 0-1 + C$. Isolating for\n\\emph{C} gives $C=1$. Thus the required function is given by\n\n\\[\\displaystyle f(x) = 2\\sin(x) - e^{x} + 1\\]"
+    ], 
+    "hints": [
+        "We wish to find a function with derivative as given. So what function\ngives a derivative of $\\cos(x)$? What about for $e^{x}$? Lastly, don't\nforget that adding a constant to the function also gives an\nantiderivative. Use the information $f(0)$ = \\emph{0} to find this\nconstant."
+    ]
+}

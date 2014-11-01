@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH102", 
+    "statement": "Suppose the tangent line to the graph of \\emph{y} = $f(x)$ at\n\\emph{x} = 1 is \\emph{y} = 2\\emph{x} + 1, and $f$(3) = 2.\n\n(d) Suppose $f$ has an inverse function $f$\\textsuperscript{-1}. Given the\ninformation from previous parts of this question, there is one number\n\\emph{c} for which both $f$\\textsuperscript{-1}(\\emph{c}) and\n($f$\\textsuperscript{-1})'(\\emph{c}) can be found. What are \\emph{c},\n$f$\\textsuperscript{-1}(\\emph{c}) and ($f$\\textsuperscript{-1})'(c)?", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

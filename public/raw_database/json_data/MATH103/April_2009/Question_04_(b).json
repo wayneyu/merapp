@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH103", 
+    "statement": "Find the following integral\n\n\\[\\int x\\left(\\ln(x)\\right)^2\\,dx\\]", 
+    "year": 2009, 
+    "sols": [
+        "For calculating this integral we use integration by parts two times. We\ntake $dv=x\\,dx$ and $u = (\\ln(x))^2$. Then\n$\\displaystyle v = \\frac{x^2}2$ and $du = 2\\ln(x)\\frac1{x}\\,dx$ (don't\nforget the derivative 1/\\emph{x} of \\emph{ln(x)}).\n\n\\begin{align*}\n\\int x(\\ln(x))^2dx &= \\left[\\frac{x^2}{2}(\\ln(x))^2\\right] - \\int\\frac{x^2}{2}2\\ln(x)\\frac1xdx\\\\\n&= \\frac{x^2}{2}(\\ln(x))^2 - \\int \\underbrace{x}_{dv}\\underbrace{\\ln(x)}_{u}dx\\\\\n&= \\frac{x^2}{2}(\\ln(x))^2 - \\frac{x^2}{2}\\ln(x) + \\int\\frac{x^2}{2}\\frac{1}{x}dx\\\\\n&= \\frac{x^2}{2}(\\ln(x))^2 - \\frac{x^2}{2}\\ln(x) + \\int\\frac{x}{2}dx\\\\\n&= \\frac{x^2}{2}(\\ln(x))^2 - \\frac{x^2}{2}\\ln(x) + \\frac{x^2}{4} + c\\\\\n\\end{align*}\n\nfor a constant \\emph{c}."
+    ], 
+    "hints": [
+        "This is a typical question for integration by parts. Recall the formula\n\n\\[\\int u\\,dv = uv - \\int v\\,du.\\]\n\nWhat is the easiest choice for \\emph{u} and \\emph{dv}?\n\nSometimes you have to do integration by parts twice to get to your final\nanswer...", 
+        "Use integration by parts with $x\\,dx=dv$ and $(\\ln(x))^2=u$.", 
+        "Then use integration by parts a second time with $x\\,dx= dv$ and\n$\\ln(x) = u$."
+    ]
+}

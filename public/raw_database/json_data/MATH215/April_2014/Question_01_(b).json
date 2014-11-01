@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH215", 
+    "statement": "Solve\n\n$\\frac{dy}{dx} = xy + x + y + 1$ for $y(x)$, subject to $y(1) = 1$.\nHint: Factor it.", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

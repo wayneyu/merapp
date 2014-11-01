@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08", 
+    "course": "MATH312", 
+    "statement": "Prove that the congruence $\\displaystyle x^{5} \\equiv 1 \\mod{52579}$ has\nexactly one solution, $\\displaystyle x \\equiv 1 \\mod{52579}$. Use the\nfact that 52579 is a prime. What other property of 52579 is used in your\nproof?", 
+    "year": 2010, 
+    "sols": [
+        "By Fermat's Little Theorem, we have that\n\n$\\displaystyle x^{52578} \\equiv 1 \\mod{52579}$.\n\nThe given problem tells us that\n\n$\\displaystyle x^{5} \\equiv 1 \\mod{52579}$\n\nUsing the Euclidean Algorithm, we can find integers \\emph{a} and\n\\emph{b} such that\n\n$\\displaystyle 5a + 52578b = \\gcd(52578,5) = 1$.\n\nThus we have that\n\n$\\displaystyle x \\equiv x^{5a + 52578b} \\equiv x^{5a}x^{52578b} \\equiv (x^{5})^{a}(x^{52578})^{b} \\equiv 1 \\mod{52579}$\n\nand this completes the proof. The other property that we used about\n52579 is that 52578 and 5 are coprime."
+    ], 
+    "hints": [
+        "Try see what Fermat's Little Theorem and the Euclidean Algorithm can do\nto attack this problem."
+    ]
+}

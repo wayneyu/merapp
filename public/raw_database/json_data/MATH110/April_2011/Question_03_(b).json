@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nWhat does the Mean Value Theorem tell us about the function\n$f(x) = \\sin x$ on the interval \\emph{{[}0,b{]}}, where \\emph{b} is any\npositive number?", 
+    "year": 2011, 
+    "sols": [
+        "Because the function $\\sin x$ is continuous on the interval $[0,b]$ and\nis differentiable on the interval $(0,b)$, we can apply the Mean Value\nTheorem. Thus we know that there is some $c$ in the interval $(0,b)$ so\nthat:\n\n\\begin{align*}\n\\cos(c) &= \\frac{\\sin(b) - \\sin(0)}{b-0} \\\\\n& = \\frac{\\sin(b)}{b}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Does $\\sin x$ satisfy the conditions of the Mean Value Theorem on the\ninterval $[0,b]$? What conclusion can you draw?"
+    ]
+}

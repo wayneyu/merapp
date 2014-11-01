@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple Choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nEach mouse born with a certain genetic mutation has probability 0.7 of\ncontracting a certain disease. Out of 10 mice born with the mutation,\nthe probability that exactly 8 will contract the disease is\n\n(a) 45(.7)\\textsuperscript{8}(.3)\\textsuperscript{2}\n\n(b) 0.7(0.3)\\textsuperscript{7}\n\n(c) 1/11\n\n(d) 8/10\n\n(e) 45/2\\textsuperscript{10}", 
+    "year": 2009, 
+    "sols": [
+        "By using the formula for the bernoulli experiment\n\n$P(X=k)=\\begin{pmatrix}N\\\\k\\end{pmatrix}p^k(1-p)^{N-k}$\n\nfor $p=0.7$, $N=10$ and $k=8$ and get\n\n$P(X=8)=\\begin{pmatrix}10\\\\8\\end{pmatrix}0.7^8\\cdot(0.3)^{2}=45\\cdot0.7^8\\cdot0.3^2$\n\n\\textbf{So, the answer is (a).}"
+    ], 
+    "hints": [
+        "This is a bernoulli experiment.", 
+        "The formula for probability $p$, number of trials $N$ and success $k$ is\n\n\\[P(X=k)=\\begin{pmatrix}N\\\\k\\end{pmatrix}p^k(1-p)^{N-k}\\].\n\n(Often $\\begin{pmatrix}N\\\\k\\end{pmatrix} = \\frac{N!}{(N-k)!k!}$ is\nwritten as \\emph{C(N,k)}.)"
+    ]
+}

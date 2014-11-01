@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(g)", 
+    "course": "MATH220", 
+    "statement": "Define what it means for the series $\\sum_{n=1}^{\\infty} a_{n}$ to\nconverge.", 
+    "year": 2011, 
+    "sols": [
+        "Let\n\n$S_{N} = \\sum_{n=1}^{N}a_{n}$\n\nbe the $N$th partial sum. We say that the series\n$\\sum_{n=1}^{\\infty}a_{n}$ converges provided the sequence $\\{S_{N}\\}$\nconverges to a number $L$."
+    ], 
+    "hints": [
+        "We can't just add an infinite number of numbers - what can we do\ninstead?"
+    ]
+}

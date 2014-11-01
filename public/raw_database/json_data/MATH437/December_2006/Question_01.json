@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01", 
+    "course": "MATH437", 
+    "statement": "Suppose that \\emph{x},\\emph{y},\\emph{z} are positive integers satisfying\n$\\displaystyle (x,y)=1$ and $\\displaystyle xy = z^{2}$. Show that there\nare integers \\emph{u} and \\emph{v} for which $\\displaystyle x = u^{2}$\nand $\\displaystyle y = v^{2}$.", 
+    "year": 2006, 
+    "sols": [
+        "By the fundamental theorem of arithmetic, let\n$\\displaystyle z^{2} = \\prod_{i=1}^{n}p_{i}^{2\\alpha_{i}}$ be the prime\nfactorization. Suppose that $\\displaystyle p_{i} \\mid  x$ for any\n\\emph{i}. Then since \\emph{x} and \\emph{y} are coprime, this means that\n$\\displaystyle p_{i} \\nmid y$. Thus, we must have that\n$\\displaystyle p_{i} ^{2\\alpha_{i}} \\parallel x$.\n\nIf one of \\emph{x} or \\emph{y} (or both) has no prime factors, then\nsince these numbers are positive, they must be equal to 1 which is a\nsquare.\n\nRepeating this argument for all such \\emph{i} and noticing that this\nargument is symmetric in \\emph{x} and \\emph{y}, we see that\n\n$\\displaystyle x = \\prod_{p_{i} \\mid x}p_{i}^{2\\alpha_{i}} = \\left(\\prod_{p_{i} \\mid x}p_{i}^{\\alpha_{i}}\\right)^{2} = u^{2}$\n\nand\n\n$\\displaystyle y = \\prod_{p_{i} \\mid y}p_{i}^{2\\alpha_{i}} = \\left(\\prod_{p_{i} \\mid y}p_{i}^{\\alpha_{i}}\\right)^{2} = v^{2}$\n\ncompleting the proof."
+    ], 
+    "hints": [
+        "The Fundamental Theorem of Arithmetic is the major idea in this proof.\nStart with the $\\displaystyle z^{2}$ term and proceed from there."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(c)", 
+    "course": "MATH110", 
+    "statement": "Is\n\n\\[g(x) = \\frac{1}{\\sin (x)}\\] continuous on the interval\n$(-\\infty, \\infty)$? Why or why not?", 
+    "year": 2011, 
+    "sols": [
+        "In order for a function to be continuous on the interval\n$( - \\infty, \\infty )$ it must be defined everywhere. However, in the\nprevious part of the question, we just showed that \\emph{g} is not\ndefined at an infinite number of points. Thus \\emph{g} is not continuous\non $(- \\infty, \\infty)$."
+    ], 
+    "hints": [
+        "Recall the answer from part (a) of this question. Does one of those\nrequirements fail?"
+    ]
+}

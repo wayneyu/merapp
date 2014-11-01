@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_02", 
+    "course": "MATH152", 
+    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\[\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\]\n\nA2: Compute $\\mathbf{x} \\times \\mathbf{y}$.", 
+    "year": 2010, 
+    "sols": [
+        "If we think of denoting the unit vectors in the $x, y, z$ directions as\n$\\hat{\\mathbf{i}}, \\hat{\\mathbf{j}}, \\hat{\\mathbf{k}}$ respectively then\nwe can turn our vectors $\\mathbf{x}$ and $\\mathbf{y}$ into the following\nmatrix,\\\\$\\begin{bmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{bmatrix}.$\\\\\\\\Firstly notice that we align the components of the\nvectors such that the $x$ components are in the column with the heading\n$\\hat{\\mathbf{i}}$, the $y$ components are in the column with the\nheading $\\hat{\\mathbf{j}}$, and the $z$ components are in the column\nwith the heading $\\hat{\\mathbf{k}}$. Secondly, this may look odd as a\nmatrix since one of the rows is a vector. This matrix is artificial but\nif we treat it as if it were a standard matrix and computed its\ndeterminant, we would get\\begin{align*}\n\\begin{vmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{vmatrix}\n=-1\\hat{\\mathbf{i}}-3\\hat{\\mathbf{j}}+2\\hat{\\mathbf{k}}\n=[-1,-3,2]\n\\end{align*}\nwhich is precisely the definition of the cross product.\nTherefore $\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]$."
+    ], 
+    "hints": [
+        "Think about how to write the cross product in terms of a determinant to\nbe computed."
+    ]
+}

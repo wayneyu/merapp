@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(l)", 
+    "course": "MATH104", 
+    "statement": "If f'(a) exists, then $\\lim_{x\\to{}a}f(x)$\n\n(i) equals f(a).\n\n(ii) equals f'(a).\n\n(iii) must exist, but may not equal f(a) or f'(a).\n\n(iv) might not exist.\n\n(v) None of the above.", 
+    "year": 2012, 
+    "sols": [
+        "The fact that $f'(a)$ exists is equivalent to saying that the function\n$f(x)$ is differentiable at $x = a$.\n\nRecall that a function must be continuous at a point to be\ndifferentiable at that point.\n\nFor the function to be continuous at a point $x = a$, the condition\n\n\\[\\lim_{x \\rightarrow a}f(x) = f(a)\\] must be satisfied. Therefore, (i)\nis the answer."
+    ], 
+    "hints": [
+        "If a function is differentiable at a point $x = a$, then it is\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ at the point $x = a$."
+    ]
+}

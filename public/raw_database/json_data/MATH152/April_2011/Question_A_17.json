@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_17", 
+    "course": "MATH152", 
+    "statement": "For questions \\textbf{A17-A19} below, $u$ and $z$ are the complex\nnumbers given below:\n\n\\begin{align*} u &= 4-2i \\\\ z &= -1+3i \\end{align*}\n\n\\textbf{A17:} Compute $uz$. Your answer should be in the form $a+ib$\nwhere $a$ and $b$ are real numbers.", 
+    "year": 2011, 
+    "sols": [
+        "Using the hint, we have\n\n$\\displaystyle (4 - 2i)(-1 + 3i) = -4 -(-6) + (12 + 2)i = 2 + 14i$"
+    ], 
+    "hints": [
+        "$\\displaystyle (a + bi)(c + di) = ac -bd + (ad + bc)i$"
+    ]
+}

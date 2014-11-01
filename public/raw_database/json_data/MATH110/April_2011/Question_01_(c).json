@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA point on a function may be both an infection point and a critical\npoint.", 
+    "year": 2011, 
+    "sols": [
+        "An inflection point is a point where $f''$ is zero or undefined\n\\textbf{and} the graph changes concavity. A critical point is a point\n\\emph{c} where either $f'(c) = 0$ or $f'(c)$ does not exist.\n\nIt is possible for a point to satisfy both definitions. Such a function\nhas a point where both the first and second derivative are equal to\nzero. One such simple function is $f(x) = x^3$. It has a horizontal\ntangent line at $x = 0$ (making $x = 0$ a critical point) and also\nchanges concavity at $x = 0$.\n\nThus the statement is \\textbf{true}."
+    ], 
+    "hints": [
+        "Think about the definition of a critical point and an inflection point.\nCan both of these criteria occur at the same time?"
+    ]
+}

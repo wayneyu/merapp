@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA linear approximation \\emph{L} to a function $f$ satisfies \\emph{L(x) =\nf(x)} for exactly one value of \\emph{x}.", 
+    "year": 2011, 
+    "sols": [
+        "The statement is \\textbf{false}, so a linear approximation $L$ to a\nfunction $f$ may satisfy $L(x) = f(x)$ for more than one value of $x$.\nTo prove this, we need an example of such a function. In particular, we\nwould like to find a function with a tangent line (the linear\napproxmiation) that intersects the function at another point.\n\nOne example would be the function $f(x) = x^3$, with the linear\napproximation at the point, say, $(-1,1)$. Drawing that function and\nlinear approximation looks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMATH110April_2011Question1(a).jpg}\n\\caption{ScienceMathExamResourcesCoursesMATH110April 2011Question1(a).jpg}\n\\end{figure}\n\nSo we see that $L(x) = f(x)$ both at $x = -1$ and at $x = 2$. So the\noriginal statement is false.\n\n\\emph{If you want to make it even simpler, choose $f$ to be linear, e.g.\nf(x) = 17x+42. Then the linear approximation L coincides with $f$ at all\npoints.}"
+    ], 
+    "hints": [
+        "$L(x) = f(x)$ when the function and the linear approximation intersect.\nCan a linear approximation and a function intersect in more than one\nplace?"
+    ]
+}

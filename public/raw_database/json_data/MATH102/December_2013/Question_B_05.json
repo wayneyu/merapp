@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_B_05", 
+    "course": "MATH102", 
+    "statement": "Compute the limit\n\n$L = \\lim_{h \\to 0} \\frac{\\sqrt{3+h} - \\sqrt{3}}{h}$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

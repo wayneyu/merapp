@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nFind the length of the curve\n\n\\[\\displaystyle\ny = x^2 - \\frac{\\ln x}8, \\quad\\text{for } 1\\leq x \\leq 2.\\]", 
+    "year": 2010, 
+    "sols": [
+        "Using the formula in the hint, we see that we require the derivative of\nthe curve in question. Notice that\n\n\\[\\frac{dy}{dx} = 2x - \\frac{1}{8x}\\]\n\nand so we compute the arc length to be\n\n\\begin{align*}\n\\int_{1}^{2}\\sqrt{1 + \\left(\\frac{dy}{dx} \\right)^{2}} \\, dx &= \\int_{1}^{2}\\sqrt{1 + \\left(2x - \\frac{1}{8x} \\right)^{2}} \\, dx \\\\\n&= \\int_{1}^{2}\\sqrt{1 + 4x^{2} - \\frac{1}{2} + \\frac{1}{64x^{2}}} \\, dx \\\\\n&= \\int_{1}^{2}\\sqrt{4x^{2} + \\frac{1}{2} + \\frac{1}{64x^{2}}} \\, dx \\\\\n&= \\int_{1}^{2}\\sqrt{(2x + \\frac{1}{8x})^{2}} \\, dx \\\\\n&= \\int_{1}^{2}(2x + \\frac{1}{8x}) \\, dx \\\\\n&= \\left.(x^{2} + \\frac{1}{8}\\ln|x|)\\right|_{1}^{2} \\\\\n&= (2)^{2} + \\frac{1}{8}\\ln(2) - (1)^{2} - \\frac{1}{8}\\ln(1)\\\\\n&= 3 + \\frac{1}{8}\\ln(2).\n\\end{align*}"
+    ], 
+    "hints": [
+        "The formula for the arc length of this curve on the interval from\n$1 \\leq x \\leq 2$ is\n\n$\\int_{1}^{2}\\sqrt{1 + \\left(\\frac{dy}{dx} \\right)^{2}} \\, dx.$"
+    ]
+}

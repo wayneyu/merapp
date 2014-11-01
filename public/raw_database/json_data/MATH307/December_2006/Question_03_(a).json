@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the discrete dynamical system\n\n$\\begin{bmatrix} a_{n+1} \\\\ b_{n+1} \\\\ c_{n+1} \\end{bmatrix} = \\frac{1}{6} \\begin{bmatrix} 1 & 3 & 2 \\\\ 2 & 1 & 1 \\\\ 3 & 2 & 3 \\end{bmatrix} \\begin{bmatrix} a_{n} \\\\ b_{n} \\\\ c_{n} \\end{bmatrix}$\n\nwhich describes the evolution of the vector\n$\\begin{bmatrix} a & b & c \\end{bmatrix}^{T}$\n\nExplain what a Markov matrix (stochastic matrix) is and why the\ncoefficient matrix of this discrete dynamical system is a Markov matrix.", 
+    "year": 2006, 
+    "sols": [
+        "A stochastic matrix \\emph{P} is a matrix in which\n\na) all entries of \\emph{P} are non negative\n\nb) all columns of \\emph{P} add to one\n\nThe given matrix satisfies these conditions hence is a Markov matrix."
+    ], 
+    "hints": []
+}

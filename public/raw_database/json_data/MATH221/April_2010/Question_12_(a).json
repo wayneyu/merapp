@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_12_(a)", 
+    "course": "MATH221", 
+    "statement": "Suppose that the yearly movement of people between Alberta, BC, and\nManitoba is given as follows:\n\n5\\% of the people in Alberta move to BC, 5\\% move to Manitoba, and the\nrest remain\n\n7\\% of the people in BC move to Alberta, 2\\% move to Manitoba, and the\nrest remain\n\n6\\% of the people in Manitoba move to Alberta, 7\\% move to BC, and the\nthe rest remain.\n\nWrite a matrix representing the movement of people between the 3\nprovinces", 
+    "year": 2010, 
+    "sols": [
+        "We can set up a matrix where each column represents the number of people\nwho move from a given province to another. This matrix can be set up as\nfollows:\n\nM = $\\begin{bmatrix}\nAlberta -> Alberta & BC -> Alberta & Manitoba -> Alberta\\\\\nAlberta -> BC & BC -> BC & Manitoba -> BC\\\\\nAlberta -> Manitoba & BC -> Manitoba & Manitoba -> Manitoba\n\\end{bmatrix}$Using the numbers provided, we end up with:\n\nM = $\\begin{bmatrix}\n0.9 & 0.07 & 0.06\\\\\n0.05 & 0.91 & 0.07\\\\\n0.05 & 0.02 & 0.87\n\\end{bmatrix}$Hitting a column vector p = $\\begin{bmatrix}\npopulation(Alberta)\\\\\n\npopulation(BC)\\\\\n\npopulation(Manitoba)\n\n\\end{bmatrix}$ with M will give us the new populations of each province."
+    ], 
+    "hints": []
+}

@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH103", 
+    "statement": "Find the Taylor series for the function $f(x) = x\\cos x$. Write your\nanswer in summation notation. (Hint: the Taylor series for $\\sin x$ may\nbe helpful.)\n\n(Taylor series for\n$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}.$)", 
+    "year": 2011, 
+    "sols": [
+        "Using the fact that $\\cos(x)$ is the derivative of $\\sin(x)$, we can use\nthe Taylor series of $\\sin(x)$ to obtain the Taylor series of $\\cos(x)$.\nSpecifically,\n\n$\\cos(x) = \\frac{d}{dx} \\sin(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\ldots = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}$.\n\nTherefore, to find $x \\cos(x)$ we multiply the taylor series for\n$\\cos(x)$ by the factor $x$. That is\n\n$x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}$.", 
+        "The first solution assumes that the Taylor series for $\\cos(x)$ is not\nknown in advance. The Taylor series for $\\sin(x)$ is known since it was\ngiven in the statement of a previous question.\n\nIf the Taylor series for $\\cos(x)$ is known, then we can start the\nsolution from the starting point\n\n$\\cos(x) = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}$.\n\nAt this point, we multiply the sum by $x$ to obtain\n\n$x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}$."
+    ], 
+    "hints": [
+        "The Taylor series for $\\sin(x)$ is\n\n$\\sin(x) = \\sum_{k=0}^{\\infty} (-1)^{k}\\frac{x^{2k+1}}{(2k+1)!} = x - \\frac{x^{3}}{3!} + \\frac{x^{5}}{5!} - \\ldots$.", 
+        "The derivative of $\\sin(x)$ is $\\cos(x)$."
+    ]
+}

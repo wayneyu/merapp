@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_B_07", 
+    "course": "MATH102", 
+    "statement": "Initially, a patient has $1000$ copies of the HIV virus. If the smallest\ndetectable viral load is $350,000$ virus particles, how long (in days)\nwill it take until the HIV infection is detectable? Assume that the\nnumber of virus particles \\emph{y} grows according to the equation\n\n$\\frac{dy}{dt} = 0.05y$\n\nwhere \\emph{t} is time in days. Leave your answer in terms of\nlogarithms.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

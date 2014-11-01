@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_04_(e)", 
+    "course": "MATH152", 
+    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(e)}\n\n\\[\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\]", 
+    "year": 2010, 
+    "sols": [
+        "For the matrix,\n\n\\[\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\]\n\nwe have two more columns than rows (the matrix is rank deficient) and so\nwe have two free variables. Let \\emph{x}\\textsubscript{3} and\n\\emph{x}\\textsubscript{4} be those variables. Then from row 2 we have,\n\n\\begin{align*}\nx_2+2x_3-2x_4&=2\\\\\nx_2&=2-2x_3+2x_4\n\\end{align*}\n\nand from row 1 we have,\n\n\\begin{align*}\nx_1+2x_3-x_4&=1\\\\\nx_1&=1-2x_3+x_4.\n\\end{align*}\n\nTherefore we have two null vectors,\n\n\\[\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\\]\n\nand\n\n\\[\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}\\]\n\nas well as a particular solution\n\n\\[\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}.\\]\n\nTherefore the solution is\n\n\\[\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\\]\n\nThere are an infinite number of solutions."
+    ], 
+    "hints": [
+        "When we have more columns that rows in a matrix, what do we know about\nthe number of free variables?"
+    ]
+}

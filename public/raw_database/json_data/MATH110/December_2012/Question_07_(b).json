@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=\\sin x-\\cos x$.\n\nFind all values of $x$ satisfying the equation $\\displaystyle f'(x)=0$\nin the interval $[0,\\pi)$. Justify your answer.", 
+    "year": 2012, 
+    "sols": [
+        "This question is similar to the previous one, except we are using the\nderivative:\n\n$\\displaystyle f'(x) = \\cos x - (-\\sin x) = \\cos x + \\sin x$\n\nSetting this equal to zero and moving a term over gives\n\n$\\sin x = - \\cos x$ (or $\\cos x = -\\sin x$)\n\nThis means that $\\sin x$ and $\\cos x$ must have equal values but\nopposite signs. On the unit circle, $\\cos \\theta$ corresponds to\nx-values and $\\sin \\theta$ corresponds to y-values, so the opposite\nsigns place us in quadrant II of the coordinate plane (the restriction\nof $[0, \\pi)$ rules out quadrant IV). The angle where the values of\n$\\sin \\theta$ and $\\cos \\theta$ are equal in this quadrant is $3\\pi/4$,\nso $x = 3\\pi/4$.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_7ab_unit_circle.jpg}\n\\caption{MER MATH110 December 2012 Question 7ab unit circle.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Solving the equation $f'(x) = 0$ will be similar to the previous\nquestion - you'll want to know the values of $\\sin x$ and $\\cos x$ at\ncertain angles. However the answer will be different from before - how\nis this equation different than the previous equation?"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_03", 
+    "course": "MATH221", 
+    "statement": "The population P(t) (in hundreds) of a colony of rabbits in year t is\ngiven in the table:\n\nt 0 2 4 6\n\nP 5 7 8 9\n\nFind the equation P(t) = a + bt of the least squares line that best\n\u00ef\u00ac\u0081ts the data and use it to estimate the population at time t = 7.", 
+    "year": 2009, 
+    "sols": [
+        "First, we need to find the values of a and b by using the least squares\nline or the line-of-best fit procedure. i.e. we need to solve for\n$\\vec{x}$ in$V^T *V*\\vec{x}$=$V^T*\\vec{P}$, where\n$\\vec{x}=\\begin{bmatrix}\nb\\\\ \na\n\\end{bmatrix} , \\vec{P}=\\begin{bmatrix}\nP _1\\\\ \nP _2\\\\ \nP _3\\\\ \nP _4\n\\end{bmatrix}=\\begin{bmatrix}\n5\\\\ \n7\\\\ \n8\\\\ \n9\n\\end{bmatrix}$\n\nWe see that it is the 1st degree polynomial, so our matrix for V is:\n\n$V=\\begin{bmatrix}\nt _1 &1 \\\\ \nt _2 &1 \\\\ \nt _3 &1 \\\\ \nt _4 &1 \n\\end{bmatrix}=\\begin{bmatrix}\n0 &1 \\\\\n2 &1 \\\\\n4 &1 \\\\\n6 &1\n\\end{bmatrix}, V^T=\\begin{bmatrix}\n0 &2 &4 &6 \\\\ \n1&1 &1 &1 \n\\end{bmatrix}$\n\nNow we determine the vector\nx\\[\\vec{x}\\]=$(V^T*V)^{-1}*V^T*\\vec{P}$=$(\\begin{bmatrix}\n0 &2 &4 &6 \\\\ \n1 &1 &1 &1 \n\\end{bmatrix}\\begin{bmatrix}\n0 &1 \\\\ \n2 &1 \\\\ \n4&1 \\\\ \n6&1 \n\\end{bmatrix})^{-1}(\\begin{bmatrix}\n0 &2 &4 &6 \\\\ \n1 &1 &1 &1 \n\\end{bmatrix}\\begin{bmatrix}\n5\\\\ \n7\\\\ \n8\\\\ \n9\n\\end{bmatrix})=\\begin{bmatrix}\n0.05 &-0.15 \\\\ \n-0.15 &0.7 \n\\end{bmatrix}\\begin{bmatrix}\n100\\\\ \n29\n\\end{bmatrix}$ =$\\begin{bmatrix}\n5.3\\\\ \n0.65\n\\end{bmatrix}$\n\nHence, a=0.65 and b=5.3. So we have P(t)=0.65+5.3t.\n\nFinally, we use it to estimate the population at t=7: P(7)=37.75."
+    ], 
+    "hints": []
+}

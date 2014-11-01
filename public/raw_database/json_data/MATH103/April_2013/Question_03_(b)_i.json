@@ -1,0 +1,17 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)_i", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Continuous Probability}.\n\n\\textbf{Consider $\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}$. Convert\n$\\displaystyle f(x)$ into a probability density function (pdf)\n$\\displaystyle p(x)$ on an interval $\\displaystyle (a,b)$}\n\nWith $\\displaystyle p(x) = cf(x)$, find the minimal \\emph{a}, maximal\n\\emph{b}, and the constant $\\displaystyle c > 0$", 
+    "year": 2013, 
+    "sols": [
+        "Firstly, notice that in order for the denominator to be well defined, we\nrequire that $\\displaystyle 1-x > 0$ (strictly greater than 0 since the\ndenominator of a fraction cannot be 0). This gives us that \\emph{b} has\nvalue 1 if it is to be maximal. Now, for a to be minimal, we notice that\nthe denominator is always positive if \\emph{a} is less than 1 so that\ngives no restriction. However the numerator has to be positive in order\nto have a pdf and so we require that \\emph{a} is greater than 0. Lastly,\nthe area condition on a pdf shows us that\n\n$\\displaystyle 1 = \\int_{0}^{1} \\frac{cx}{\\sqrt{1-x}} = \\lim_{q \\to 1^{-}}\\int_{0}^{q}\\frac{cx}{\\sqrt{1-x}}$\n\nLet $\\displaystyle u = 1-x$ so that $\\displaystyle du = -dx$,\n$\\displaystyle u(0) = 1$, $\\displaystyle u(q) = 1-q$ and substituting\ngives\n\n\\begin{align*}\n1 &= \\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{cx}{\\sqrt{1-x}} \\\\\n&= \\lim_{q \\to 1^{-}}\\int_{1}^{1-q}\\frac{-c(1-u)}{\\sqrt{u}} \\\\\n&= \\lim_{q \\to 1^{-}} c\\int_{1-q}^{1}(\\sqrt{u}^{-1}-\\sqrt{u})\\,du \\\\\n&= \\lim_{q \\to 1^{-}} c(2\\sqrt{u} - \\frac{2u^{3/2}}{3})\\big|_{1-q}^{1} \\\\\n&= \\lim_{q \\to 1^{-}} \\big(c(2\\sqrt{1} - \\frac{2(1)^{3/2}}{3}) - c(2\\sqrt{1-q} - \\frac{2(1-q)^{3/2}}{3})\\big)\\\\\n&= c\\left(2 - \\frac{2}{3}\\right)\\\\\n&= \\frac{4c}{3}\n\\end{align*}\n\nand isolating for c gives us that $c = 3/4$."
+    ], 
+    "hints": [
+        "The function itself gives a natural restriction on how big \\emph{b} can\nbe. What goes wrong with your function if \\emph{b} is too big?", 
+        "The fact that a pdf is positive gives you a restriction on \\emph{a}.", 
+        "All pdfs have the property that the area under the curve where the\nfunction is defined must be 1. Use this to find \\emph{c}.", 
+        "To integrate the function, use a substitution.", 
+        "The substitution you seek is $\\displaystyle u = 1-x$."
+    ]
+}

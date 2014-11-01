@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH220", 
+    "statement": "Let $A$ and $B$ be non-empty subsets of the interval {[}0,1{]}. Now let\n$C$ be the set\n\n\\[C=\\{ab\\quad\\textrm{s.t.}\\quad{}a\\in{A},b\\in{B}\\}.\\]\n\n(i) Prove that $\\sup(A)$ and $\\sup(B)$ exist.\n\n(ii) Suppose that $\\inf(A)=\\inf(B)=0$ and $\\sup(A)=\\sup(B)=1$, prove\nthat 0 is a lower bound for $C$ and 1 is an upper bound for $C$.\n\n(iii) Suppose that $\\sup(A)=\\sup(B)=1$, prove that $\\sup(C)=1$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

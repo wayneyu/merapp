@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07", 
+    "course": "MATH220", 
+    "statement": "Determine whether the series\n\n\\[\\sum_{k=1}^\\infty \\frac{k(k+1)}{2^k}\\]\n\nconverges or diverges; prove your answer.", 
+    "year": 2005, 
+    "sols": [
+        "Using the \\href{http://en.wikipedia.org/wiki/Ratio_test}{ratio test}\nseems appropriate here. If we denote the general term of the series by\n\n\\[a_k = \\frac{k(k+1)}{2^k} \\quad\\text{for all } k \\geq 1\\] Then the\nratio test asks us to look at\n\n\\begin{align*}\n\\frac{a_{k+1}}{a_k} &= \\frac{(k+1)(k+2)2^k}{k(k+1)2^{k+1}}\\\\\n&= \\frac{k+2}{2k}\n\\end{align*} (Note: we removed the absolute value since the terms are\nclearly all positive). And so\n\n\\[\\lim_{k \\to \\infty} \\frac{a_{k+1}}{a_k} = \\lim_{k \\to \\infty}\\frac{k+2}{2k} = \\frac{1}{2}\\]\nSince this is a number less than one, the ratio test guarantees that the\nseries converges absolutely."
+    ], 
+    "hints": [
+        "What\n\\href{http://en.wikipedia.org/wiki/Category:Convergence_tests}{convergence\ntests} do you know of? Which one might apply well in this case?"
+    ]
+}

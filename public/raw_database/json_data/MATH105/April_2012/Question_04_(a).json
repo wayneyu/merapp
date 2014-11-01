@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH105", 
+    "statement": "Consider the function\n\n\\[F(x) = \\begin{cases}\na & \\text{if } x < 0, \\\\\nk \\arctan x & \\text{if } 0 \\leq x \\leq 1, \\\\\nb & \\text{if } x \\geq 1.\n\\end{cases}\\]\n\n\\textbf{(a)} Find the values of \\emph{a}, \\emph{k} and \\emph{b} for\nwhich \\emph{F} is a valid cummulative distribution function of a\ncontinuous random variable. Then sketch the graph of \\emph{F}.", 
+    "year": 2012, 
+    "sols": [
+        "Following the definition of a cdf (see the hint), we compute\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\rightarrow -\\infty} F(x) = a$ so $a = 0$\n\\end{itemize}\n\nand\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\rightarrow \\infty} F(x) = b$ so $b=1$.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  To impose continuity at $x=1$, we need\n  $\\lim_{x \\rightarrow 1} F(x) = F(1) = b = 1$. Obviously\n  $\\lim_{x \\rightarrow 1^+} F(x) = 1$. So looking at the left limit will\n  give us \\emph{k}:\n\\end{itemize}\n\n\\[\\lim_{x \\rightarrow 1^-} F(x) = \\lim_{x \\rightarrow 1^-} k \\arctan x = k \\arctan 1\\]\nTherefore \\emph{k} = 1/(arctan 1)'', or simply $k = \\frac4{\\pi}$.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Since arctan is non-decreasing, so is \\emph{F}.\n\\end{itemize}\n\n\\textbf{Hence our final answer is}\n\n$a=0,\\quad b=1,\\quad k = \\frac{4}{\\pi}.$\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{CDF.png}\n\\end{description}\n\n\\emph{As a remark, it is important to know the exact trig values for\nspecial angles. Here\\[\\tan \\frac{\\pi}{4} = 1\\] so\n$\\arctan 1 = \\frac{\\pi}{4}$.}"
+    ], 
+    "hints": [
+        "A cumulative distribution function \\emph{F} of a continuous random\nvariable must satisfy the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x\\to -\\infty} F(x) = 0$\n\\item\n  $\\lim_{x\\to +\\infty} F(x) = 1$\n\\item\n  \\emph{F} is continuous\n\\item\n  \\emph{F} is non-decreasing\n\\end{itemize}"
+    ]
+}

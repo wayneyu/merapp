@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH312", 
+    "statement": "Find all integers \\emph{n} such that \\emph{n}! is divisible by $7^9$ but\nNOT divisible by $7^{10}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

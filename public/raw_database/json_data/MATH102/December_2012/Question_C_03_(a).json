@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_C_03_(a)", 
+    "course": "MATH102", 
+    "statement": "This question is about approximating the value of $b = \\sqrt{48}$.\n\n\\textbf{(a)} Between which two successive integers does \\emph{b} lie?", 
+    "year": 2012, 
+    "sols": [
+        "The number 48 is between perfect squares 36 and 49, so we have:\n\n$\\begin{array}{rcl}\n36 &< 48 &< 49 \\\\\n\\sqrt{36} &< \\sqrt{48} &< \\sqrt{49} \\\\\n6 &< b &< 7 \\end{array}$"
+    ], 
+    "hints": [
+        "Which numbers near 48 are perfect squares? What are their square roots?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH307", 
+    "statement": "Let\n\n$v_1=\\begin{bmatrix} 1\\\\ 0\\\\ 1\\\\ 0 \\end{bmatrix}$,\n$v_2=\\begin{bmatrix} 1\\\\ 2\\\\ 0\\\\ 1 \\end{bmatrix}$,$v_3= \\begin{bmatrix} 1\\\\ 1\\\\ -1\\\\ -1 \\end{bmatrix}$,\n\n(b) Explain how you could use MATLAB/Octave to determine whether\n$v_1, v_2$ and $v_3$ are linearly dependent. What output would tell you\nthat the vectors are independent?", 
+    "year": 2009, 
+    "sols": [
+        "Step 1: Enter the three vectors $v_1, v_2$ and $v_3$. The code is:\n\nv1 = {[}1, 0, 1, 0{]}$^{\\prime}$; v2 = {[}1, 2, 0, 1{]}$^{\\prime}$; v3 =\n{[}1, 1, -1, -1{]}$^{\\prime}$;\n\nNotice that $^{\\prime}$ is to transfer the vector to its transpose.\n\nStep 2: Combine all the three vectors into one matrix as \\emph{V}. The\ncode:\n\nV = {[}v1, v2, v3{]};\n\nStep 3: Find the reduced row echelon form of the matrix using rref()\ncommand. The code is:\n\nA = rref(V)\n\nStep 4, based on the reduced row echelon form we have found, determine\nif the these vectors are linear independent. The vectors are linear\nindependent if and only if the reduced row echelon form of the matrix is\n\n$\\begin{bmatrix}\n1 &0 &0 \\\\\n0& 1 & 0\\\\\n0& 0 & 1\\\\\n0& 0 &0\n\\end{bmatrix}$"
+    ], 
+    "hints": [
+        "Suppose we formed a matrix using the given three vectors. What can we\nlearn from the reduced row echelon form of this matrix?"
+    ]
+}

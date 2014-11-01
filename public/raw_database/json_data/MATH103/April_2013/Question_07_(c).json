@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Biofuel: Suppose you work at an experimental algae farm where\nalgae is turned into biofuel. The algae grows in tanks at a rate\n$\\displaystyle \\alpha = 2$ and the steady supply of nutrients allows\neach tank to sustain $\\displaystyle K$ kilograms of algae.}\n\nWhat is the highest rate $\\displaystyle h^{*}$ at which you can harvest\nalgae?", 
+    "year": 2013, 
+    "sols": [
+        "As $\\displaystyle \\alpha = 2$, we have that $\\displaystyle h^{*}=2$ and\nin fact, $\\displaystyle h < h^{*}$ must be true in order for the\npopulation to survive."
+    ], 
+    "hints": [
+        "The rate of growth of the algae was given in the original question."
+    ]
+}

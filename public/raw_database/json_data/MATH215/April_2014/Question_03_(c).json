@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_03_(c)", 
+    "course": "MATH215", 
+    "statement": "A small mass can move along the x-axis between two large masses located\nat $x = -1$ and $x = 2$. When subjected to a linear drag its position\n$s(t)$ obeys the differential equation:\n\n$\\displaystyle\ns''(t) = \\frac{-1}{(s + 1)^2} + \\frac{4}{(s - 2)^2} - s'(t), \\quad  -1 < s < 2$\n\n(c) Classify the equilibrium solution.", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

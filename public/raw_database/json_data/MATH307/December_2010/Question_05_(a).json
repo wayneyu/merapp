@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH307", 
+    "statement": "Define a sequence \\emph{x}\\textsubscript{0}, \\emph{x}\\textsubscript{1},\n... by the initial conditions \\emph{x}\\textsubscript{0} = \\emph{a},\n\\emph{x}\\textsubscript{1} = \\emph{b} and \\emph{x}\\textsubscript{2} =\n\\emph{c} together with the recursion relation\n\n\\[\\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\\]\n\nfor \\emph{n} = 0, 1, 2, ...\n\n\\textbf{(a)} Rewrite this recursion in matrix form\n\\emph{X\\textsubscript{n+1} = AX\\textsubscript{n}} for \\emph{n} = 0, 1,\n2, ... for a sequence \\emph{X\\textsubscript{n}} of vectors, with an\ninitial vector \\emph{X\\textsubscript{0}} and some matrix \\emph{A}.", 
+    "year": 2010, 
+    "sols": [
+        "As suggested in the hint we first add two trivial equations to help us\nrewrite the recursion relation in matrix form:\n\n\\begin{alignat*}{7}\nx_{n+3} &&\\; = \\;&& x_{n+2}             &&\\; + \\;&& x_{n+1}  &&\\; + \\;&& x_n & \\\\\nx_{n+2} &&\\; = \\;&& x_{n+2}             &&\\; \\;&& &&\\; \\;&& & \\\\\nx_{n+1} &&\\; = \\;&&  &&\\; \\;&& x_{n+1}  &&\\; \\;&& &\n\\end{alignat*}\n\nThis can be written as:\n\n\\[\\begin{bmatrix}\nx_{n+3}\\\\ \nx_{n+2}\\\\ \nx_{n+1}\n\\end{bmatrix} = \\begin{bmatrix}\n1 &1 &1 \\\\ \n1& 0 &0 \\\\ \n0& 1 &0 \n\\end{bmatrix} \\begin{bmatrix}\nx_{n+2}\\\\ \nx_{n+1}\\\\ \nx_{n}\n\\end{bmatrix}\\]\n\nSo define $A = \\begin{bmatrix}\n1 &1 &1 \\\\ \n1 & 1 &0 \\\\ \n0 & 0 &0 \n\\end{bmatrix}$ and $X_{n} = \\begin{bmatrix}\nx_{n+2}\\\\ x_{n+1}\\\\ x_{n}\n\\end{bmatrix}$. Plugging in \\emph{n = 0} we see that the initial vector\n\\emph{X\\textsubscript{0}} contains the initial\nconditions\\[X_{0} = \\begin{bmatrix}\nc\\\\ \nb\\\\ \na\n\\end{bmatrix}.\\]"
+    ], 
+    "hints": [
+        "What will be the (minimal) number of entries in the vector\n\\emph{X\\textsubscript{n}} and what will be the size of the matrix\n\\emph{A}?", 
+        "The vector \\emph{X\\textsubscript{n}} must contain\n\\emph{x\\textsubscript{n+2}}, \\emph{x\\textsubscript{n+1}} and\n\\emph{x\\textsubscript{n}}, which suggest that \\emph{X\\textsubscript{n}}\nhas length 3, and that hence \\emph{A} is a \\emph{3\u00d73} matrix.", 
+        "To get to three equations we can always add trivial equations such as\n\\emph{x\\textsubscript{n+2} = x\\textsubscript{n+2}}."
+    ]
+}

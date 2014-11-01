@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(f)", 
+    "course": "MATH307", 
+    "statement": "What can you say about the eigenvalues and eigenvectors of a stochastic\nmatrix if all the entries are strictly positive?", 
+    "year": 2013, 
+    "sols": [
+        "-\\textgreater{} The largest eigenvalue is 1\n\n-\\textgreater{} All other eigenvalues are less than 1\n\n-\\textgreater{} The eigenvector of the eigenvalue of 1 can be scaled to\nhave all positive entries"
+    ], 
+    "hints": []
+}

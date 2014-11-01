@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(d)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nFind all critical points of $\\displaystyle f$, if they exist.", 
+    "year": 2010, 
+    "sols": [
+        "We start by calculating the derivative of $f(x)$, using the quotient\nrule:\n\n$f'(x) = \\frac{(x-1) - (x + 1)}{(x-1)^2} = \\frac{-2}{(x-1)^2}$.\n\nThe critical points of the function are the x-values where the\nderivative is either undefined or equal to zero.\n\nThe derivative here is undefined when the denominator is equal to zero.\nSetting the denominator equal to zero...\n\n$(x - 1)^2 = 0$\n\n...and solving for x, we get that $\\displaystyle f'(x)$ is undefined\nwhen $x = 1$.\n\nTo find the remaining critical points, we set the derivative equal to\nzero and try solving for x.\n\n$\\frac{-2}{(x-1)^2} = 0$\n\nAs it turns out, there are no x-values that will satisfy this equation.\nThus our only critical point is at $x = 1$."
+    ], 
+    "hints": [
+        "Recall that the critical points of $f(x)$ are those x-values where the\nderivative $\\displaystyle f'(x)$ is zero or undefined."
+    ]
+}

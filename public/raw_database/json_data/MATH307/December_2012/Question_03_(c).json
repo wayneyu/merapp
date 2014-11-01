@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(c)", 
+    "course": "MATH307", 
+    "statement": "Let\n\n\\[S = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\]\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(c)} Find a matrix \\emph{B} so that \\emph{R(B) = S}.", 
+    "year": 2012, 
+    "sols": [
+        "Since \\emph{S} is the set of all possible linear combinations of its\nbasis vectors, and \\emph{R(B)} is the set of all possible linear\ncombinations of its columns, we can simply populate the columns of\n\\emph{B} with (non-trivial linear combinations of) the basis vectors of\n\\emph{S}. For example $B=\\begin{bmatrix}\n-1 & -1\\\\\n1 & 0\\\\\n0 & 1\n\\end{bmatrix}$ or $B=\\begin{bmatrix}\n-1 & -1 & -\\pi & -2 \\\\\n1 & 0 & 0 & 1 \\\\\n0 & 1 & \\pi & 1\n\\end{bmatrix}$"
+    ], 
+    "hints": [
+        "The range of a matrix \\emph{B} is the set of all possible linear\ncombinations of its column vectors."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(d)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nIdentify and sketch the level curve corresponding to \\emph{z = e} of the\nfunction\n\n\\[\\displaystyle\nz = e^{x^2+4y^2}\\]\n\nLabel the axes of your graph and plot the coordinates of at least four\npoints on the level curve.\n\nAlso, answer the following: The curve is a\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  parabola\n\\item\n  ellipse\n\\item\n  circle\n\\item\n  hyperbola\n\\end{enumerate}", 
+    "year": 2012, 
+    "sols": [
+        "If $z = e$ then\n\n$e = e^{x^2 + 4y^2}$ and by taking the logarithm of both sides:\n\n\\[\\displaystyle\n1 = x^2 + 4y^2\\]\n\nThis is an ellipse.\n\nThe four easiest points are the intercepts.\n\nIf $x=0$ then $4y^2 = 1$ and $y = \\pm 1/2$ are the y-intercepts. If\n$y=0$ then $x^2 = 1$ and $x= \\pm 1$ are the x-intercepts. The sketch is\nbelow:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Ellipse2012.png}\n\\end{description}"
+    ], 
+    "hints": [
+        "Try finding the level curve when \\emph{z} = \\emph{e} by setting the\nequation equal to \\emph{e} and simplifying it to classify the curve.\n\nTo find points on the curve, choose simple values for \\emph{x} (and\n\\emph{y}) and calculate the corresponding value for \\emph{y} (and\n\\emph{x})."
+    ]
+}

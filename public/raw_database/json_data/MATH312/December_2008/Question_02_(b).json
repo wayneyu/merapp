@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH312", 
+    "statement": "Find the last three digits of the decimal expansion of\n$\\displaystyle 2009^{1202}$.", 
+    "year": 2008, 
+    "sols": [
+        "Euler's theorem tells us that if $\\displaystyle \\gcd(a,1000)=1$ then\n\n$\\displaystyle a^{\\phi(1000)} \\equiv a^{\\phi(8)\\phi(125)} \\equiv a^{4\\cdot 100} \\equiv a^{400} \\equiv 1 \\mod{1000}$.\n\nThus, we have\n\n$\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}$\n\nand so the last three digits are 081."
+    ], 
+    "hints": [
+        "Consider the number modulo 1000.", 
+        "Use Euler's theorem."
+    ]
+}

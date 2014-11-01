@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_07", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nEvaluate $\\lim_{n \\to \\infty}\\sum_{i=1}^{n}\\frac{n}{(i+n)(i + 2n)}$.", 
+    "year": 2006, 
+    "sols": [
+        "We proceed as in the hint (specifically hint 3). Notice that\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{n}{(i+n)(i + 2n)} = \\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{1}{n} \\cdot \\frac{1}{(\\tfrac{i}{n}+1)(\\tfrac{i}{n} + 2)}$\n\nFrom this, it is clear that $\\Delta x = \\tfrac{1}{n}$ and that we should\nprobably set\n\n$x_{i} = 1 + \\tfrac{i}{n}$\n\nand so $a = 1$ and thus, combining this with the $\\Delta x$ information,\nwe have\n\n$\\frac{1}{n} = \\Delta x = \\frac{b-a}{n} = \\frac{b-1}{n}$\n\nand solving for $b$ gives $b=2$. Hence, we have\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{n}{(i+n)(i + 2n)} = \\int_{1}^{2}\\frac{dx}{x(x+1)}$\n\nWe've reduced the problem to solving an integral. This integral is ripe\nfor the partial fraction algorithm so let's apply that. Let\n\n$\\frac{1}{x(x+1)} = \\frac{A}{x} + \\frac{B}{x+1} = \\frac{A(x+1) + Bx}{x(x+1)}$\n\nand this gives rise to\n\n$\\displaystyle\n1 = A(x+1) + Bx$\n\nPlugging in $x=0$ in the above yields\n\n$\\displaystyle\n1 = A((0)+1) + B(0) = A$\n\nand so $A = 1$. Plugging in $x = -1$ into the equation gives\n\n$\\displaystyle\n1 = A((-1)+1) + B(-1) = -B$\n\nand so $B = -1$. Thus, we have\n\n\\begin{align*}\n\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{n}{(i+n)(i + 2n)} &= \\int_{1}^{2}\\frac{dx}{x(x+1)}\\\\\n&= \\int_{1}^{2}\\frac{dx}{x} - \\int_{1}^{2}\\frac{dx}{x+1} \\\\\n&= \\left. \\ln|x| \\right|_{1}^{2} - \\left. \\ln|x+1|\\right|_{1}^{2} \\\\\n&= \\ln(2) - \\ln(1) -(\\ln(3) - \\ln(2))\\\\\n&= 2\\ln(2) -\\ln(3)\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The notation should be awfully reminiscent of Riemann sums. However, the\nway the sum is presented makes it look a bit mysterious from the Riemann\nsums we are used to. What or where is the $\\Delta x$ value? What or\nwhere is the $x_{i}$ value?", 
+        "Try factoring out an \\emph{n} from each of the two factors in the\ndenominator.", 
+        "The values should look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n}$\n\n$\\displaystyle x_{i} = 1 + \\frac{i}{n}$\n\n$\\displaystyle a = 1$\n\nand so with the above, we can deduce that\n\n$\\displaystyle b = 2$", 
+        "Convert to an integral and now use partial fractions to take you home."
+    ]
+}

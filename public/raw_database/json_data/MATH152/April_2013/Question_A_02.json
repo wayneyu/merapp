@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_02", 
+    "course": "MATH152", 
+    "statement": "Let\n\n\\[a = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\]\n\nWhat is $\\text{Proj}_{c}a$?", 
+    "year": 2013, 
+    "sols": [
+        "We will use the formula,\n\n\\begin{align*} \\text{Proj}_{c}a &= \\frac{a\\cdot c}{|c|^2} c .\\end{align*}\n\nNote that\n\n\\[a\\cdot c = -9+12+36 = 39\\]\n\nand\n\n\\[|c|^2 = c\\cdot c = 9+16+144 = 169.\\]\n\nHence,\n\n\\begin{align*} \\text{Proj}_{c}a &= \\frac{a\\cdot c}{|c|^2} c = \\frac{39}{169} c = \\frac{3}{13}\\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix} .\\end{align*}"
+    ], 
+    "hints": [
+        "The projection \\emph{$\\text{Proj}_{c}a$} is the projection of $a$ onto\n$c$. If you remember the formula for this, you may use it directly. If\nyou don't remember the formula, check the diagram below with $a$, $c$,\nand $\\text{Proj}_{c}a$. Use the picture to help you deduce the formula.", 
+        "Let $\\hat{c} = \\frac{c}{|c|}$. Using the picture below as a guide for a\nsketch of what a projection is\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Projection.jpg}\n\\caption{Projection.jpg}\n\\end{figure}\n\nwe can draw the following conclusions. In the image and below we assume\nthat the angle is acute. If the angle is obtuse the final result is the\nsame, and the argument is very similar.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\cos \\theta =  \\frac{|\\text{Proj}_{c}a|}{|a|}$\n\\item\n  $\\cos \\theta  = \\frac{a\\cdot c}{|a||c|}$ (by the definition of the dot\n  product)\n\\item\n  Thus $\\frac{|\\text{Proj}_{c}a|}{|a|} = \\frac{a\\cdot c}{|a||c|}$ and\n  solving gives\n\\end{enumerate}\n\n\\[|\\text{Proj}_{c}a| = \\frac{a\\cdot c}{|c|}\\]\n\nSo now we know the length of the desired projection. The direction is\n\\emph{c}. To make sure that the length of the vector in the final answer\nis the one calculated above, we choose the unit vector $\\hat{c}$\ninstead:\n\n\\[\\text{Proj}_{c}a = \\left( \\frac{a\\cdot c}{|c|}\\right) \\hat{c} = \\frac{a\\cdot c}{|c|^2} c\\]"
+    ]
+}

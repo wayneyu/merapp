@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH101", 
+    "statement": "Use part (a) to determine an approximation of the following definite\nintegral\n\n\\[\\int_0^{0.1} \\frac{1}{1+x^3}dx\\] so that the error in the\napproximation satisfies\n\n\\[|\\text{error}| \\leq 10^{-9}\\] Remember to justify your answer.", 
+    "year": 2011, 
+    "sols": [
+        "We saw from\n\\href{Science:Math Exam Resources/Courses/MATH101/April 2011/Question 6 (a)}{part\na)} that we have the series expansion\n\n\\[\\frac{1}{1+x^3}=1-x^3+x^6-x^9+\\ldots\\] and so we can write that\n\n\\begin{align*}\\int_0^{0.1} \\frac{1}{1+x^3}\\,dx &= \\int_0^{0.1} dx - \\int_0^{0.1} x^3\\,dx +\\int_0^{0.1} x^6\\,dx - \\int_0^{0.1} x^9\\,dx +\\ldots\\\\\n&= 0.1 - \\frac{(0.1)^4}{4} + \\frac{(0.1)^7}{7} - \\frac{(0.1)^{10}}{10} + \\ldots\\end{align*}\nwhere the \\emph{n}\\textsuperscript{th} term is\n\n\\[\\frac{(-1)^n(0.1)^{3n+1}}{3n+1}\\] Since this is an alternating\nsequence which converges to zero, we have that the error when neglecting\neverything past the \\emph{n}\\textsuperscript{th} term. Thus\n\n\\begin{align*}|\\textrm{error}| &\\leq \\left| \\frac{(-1)^n(0.1)^{3n+1}}{3n+1} \\right| \\\\&= \\frac{0.1^{3n+1}}{3n+1} \\\\&= \\frac{10^{-(3n+1)}}{3n+1}\\end{align*}\nif we want this to be less than 10\\textsuperscript{-9}, then we can\nchoose \\emph{n} = 3, where the error will be less than\n\n\\[\\frac{10^{(-9+1)}}{9+1}=10^{-11}\\] which works fine since it is\nclearly even less than 10\\textsuperscript{-9}."
+    ], 
+    "hints": [
+        "With a convergent power series, you can integrate term by term.", 
+        "For an alternating series, the error is less than or equal to the\nabsolute value of the first neglected term."
+    ]
+}

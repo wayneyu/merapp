@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(f)", 
+    "course": "MATH307", 
+    "statement": "Decide whether each of the following statements is true or false. You\nneed not give a reason. All matrices in this question are square\n$\\displaystyle n \\times n$.\n\nIf 2 is an eigenvalue of $\\displaystyle A$ then 6 is an eigenvalue of\n$\\displaystyle A + A^{2}$", 
+    "year": 2005, 
+    "sols": [
+        "The statement is \\textbf{true}.\n\nLet $\\displaystyle v$ be the eigenvector of $\\displaystyle A$ associated\nto the eigenvalue 2. Then\n\n$\\displaystyle (A + A^{2})v = Av + A^{2}v = 2v + A(Av) = 2v + A(2v) = 2v + 2Av = 2v + 4v = 6v$\n\nand so 6 is an eigenvalue for $\\displaystyle A + A^{2}$."
+    ], 
+    "hints": [
+        "Start of with the associated eigenvector $\\displaystyle v$ for the\neigenvalue 2. Try applying the matrix $\\displaystyle A + A^{2}$ to this\nvector."
+    ]
+}

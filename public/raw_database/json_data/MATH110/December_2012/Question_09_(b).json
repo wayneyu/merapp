@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(b)", 
+    "course": "MATH110", 
+    "statement": "Explain why the two facts from part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_09_(a)}{a)}\nimply that $1+2+2^2+2^3+2^4+2^5+2^6=2^7-1$.", 
+    "year": 2012, 
+    "sols": [
+        "We start with Fact 1 - we know that the claim is true for $n = 1$. Then,\nusing Fact 2, since the claim is true for $n = 1$, we can say that it is\nalso true for the next integer, $n = 2$. We can then use Fact 2 again;\nsince we just said the claim is true for $n = 2$, it is also true for\nthe next integer, $n = 3$. We can continue this process until we get to\n$n = 6$, which is the value of \\emph{n} shown in the statement of the\nquestion.\n\n(Note that you can prove the above statement is true simply by doing the\ncalculations - but this does not use the inductive reasoning steps\ndescribed in part a)."
+    ], 
+    "hints": [
+        "What is the value of \\emph{n} in this part of the question? How would\nyou work your way up from Fact 1 (where \\emph{n = 1}) to this value of\n\\emph{n}, using Fact 2?"
+    ]
+}

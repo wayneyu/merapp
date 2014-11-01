@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nLet $\\displaystyle f(x) = g(2\\sin x)$, where $g'(\\sqrt{2}) = \\sqrt{2}$.\nFind $\\displaystyle f'(\\pi/4)$", 
+    "year": 2012, 
+    "sols": [
+        "Taking the derivative gives\n\n\\[\\displaystyle\nf'(x) = g'(2\\sin(x))(2\\cos(x))\\]\n\nPlugging in $x = \\pi/4$ gives\n\n\\begin{align*}\nf'(\\pi/4) &= g'(2\\sin(\\pi/4))(2\\cos(\\pi/4)) \\\\\n&= g'(2\\cdot\\tfrac{1}{\\sqrt{2}})\\cdot 2\\cdot \\tfrac{1}{\\sqrt{2}} \\\\\n&= g'(\\sqrt{2})\\cdot \\sqrt{2} \\\\\n&= \\sqrt{2}\\cdot \\sqrt{2} \\\\\n&= 2\n\\end{align*}"
+    ], 
+    "hints": [
+        "The question is looking for the derivative of $f(x)$. Since this\nfunction is definted as a composition of functions, we need to use the\nchain rule."
+    ]
+}

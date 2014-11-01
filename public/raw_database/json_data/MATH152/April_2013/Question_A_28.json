@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_28", 
+    "course": "MATH152", 
+    "statement": "Suppose we run the following MATLAB code\n\n\\texttt{A=ones(4,4);}\\\\\\texttt{for~j=1:4;}\\\\\\texttt{~~~~A(j,:)=j*A(j,:);}\\\\\\texttt{end;}\n\nSpecify the output if you now type:\n\n\\texttt{\\textgreater{}\\textgreater{}~A(2,4)}", 
+    "year": 2013, 
+    "sols": [
+        "The hints should explain most of what's going on. Here is the output.\nFor A=ones(4,4) we get\n\n$A = \\begin{bmatrix}\n1 &1 &1 &1\\\\\n1 &1 &1 &1\\\\\n1 &1 &1 &1\\\\\n1 &1 &1 &1\n\\end{bmatrix}$\n\nThen after the loop executes for j=1, we get\n\n$A = \\begin{bmatrix}\n1 &1 &1 &1\\\\\n1 &1 &1 &1\\\\\n1 &1 &1 &1\\\\\n1 &1 &1 &1\n\\end{bmatrix}$\n\n(which is the same as the original A). After j=2, the matrix looks like\n\n$A = \\begin{bmatrix}\n1 &1 &1 &1\\\\\n2 &2 &2 &2\\\\\n1 &1 &1 &1\\\\\n1 &1 &1 &1\n\\end{bmatrix}$\n\nAfter j=3, the matrix looks like\n\n$A = \\begin{bmatrix}\n1 &1 &1 &1\\\\\n2 &2 &2 &2\\\\\n3 &3 &3 &3\\\\\n1 &1 &1 &1\n\\end{bmatrix}$\n\nLastly, when the loop hits its final value of j=4, the matrix looks like\n\n$A = \\begin{bmatrix}\n1 &1 &1 &1\\\\\n2 &2 &2 &2\\\\\n3 &3 &3 &3\\\\\n4 &4 &4 &4\n\\end{bmatrix}$\n\nFinally, the code A(2,4) looks in row two column 4 for the value. The\nanswer is 2."
+    ], 
+    "hints": [
+        "The first line creates a four by four matrix of ones.", 
+        "The key is the line within the for loop. Notice that A(j,:) is the jth\nrow and that it is replaced by a multiple of itself, namely its row\nindex.\n\nWe are interested in the element in the second row and fourth column."
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_B_03", 
+    "course": "MATH102", 
+    "statement": "List the \\emph{x} coordinates of all local minima and maxima of\n$f(x) = x^5 - \\frac54 x^4$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

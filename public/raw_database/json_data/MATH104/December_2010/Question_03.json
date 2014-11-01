@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH104", 
+    "statement": "A city's supply of an herb comes from many small home businesses. The\nsupply q of the herb is a function of the street price p. The Elasticity\nof Supply is by definition equal to\n\n\\[-\\frac{p}{q}\\frac{\\textrm{d}q}{\\textrm{d}p}.\\]\n\nSuppose that a city's weekly supply q of the herb, in millions of grams,\nis related to the street price, p, in dollars per gram, by the equation\n\n\\[\\displaystyle{}p^3+p=2q^3+q^2+10.\\]\n\nCalculate the elasticity of supply when p=3. Please simplify. Note that\nwhen p=3, we have q=2.", 
+    "year": 2010, 
+    "sols": [
+        "In order to find $dq/dp,$ we differentiate both sides of the supply\nequation with respect to $p$.\n\n\\[3p^2+1=(6q^2+2q)\\frac{dq}{dp}\\] Solving for $dq/dp,$\n\n\\[\\frac{dq}{dp} =\\frac{3p^2+1}{6q^2+2q}\\] Hence, the elasticity of\nsupply is\n\n\\[-\\frac{p}{q}\\frac{dq}{dp} =-\\frac{p}{q}\\frac{3p^2+1}{6q^2+2q}.\\]\nEvaluating this when $p=3$ and $q=2$, we obtain\n\n\\[-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}\\frac{28}{28}=-\\frac{3}{2}.\\]"
+    ], 
+    "hints": [
+        "Note that the definition of elasticity depends varies from person to\nperson and text to text; depending on where you look, you may or may not\nfind a minus sign in front of $\\frac{p}{q} \\frac{dq}{dp}.$ For this\nproblem, we are given a definition, so we'll use this in the solution.\nOn your exam, you might not be given the definition of elasticity. In\nthis case, please use the definition that you were given in class. (In\n2012, we did not include a minus sign in front.)", 
+        "Use implicit differentiation to find $dq/dp$."
+    ]
+}

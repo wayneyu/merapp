@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_09_(f)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nA discrete random variable takes only two values, $0$ and $1.$ Find\n$p = P_r(X = 1)$ if the variance of $X$ is $1/4.$", 
+    "year": 2011, 
+    "sols": [
+        "The variance for a discrete random variable is defined to be\n\n\\[\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\]\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\[\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\]\n\nIn this case, there are only two possible outcomes $X = 0$ or $X = 1$.\nIf we define the probability $P(X = 1)$ with $p$ then by the law that\nthe sum of the probabilities for all events must sum to one, we know\nthat $P(X = 0) = 1 - P(X = 1) = 1 - p$. Thus,\n\n\\[\\,\\mu = 0P(X = 0) + 1P(X = 1) = p.\\] Now we can use the definition of\nvariance and get an equation for $p$.\n\n\\begin{align*}\n\\operatorname{Var}(X) = (0-p)^{2}\\underbrace{P(X = 0)}_{=1-p} + (1 - p)^{2}P(X = 1) &= 1/4 \\\\  \n-p^{2}(1 - p) + (1 - p)^{2}p &= 1/4 \\\\ \n-p^{2} + p - 1/4 &= 0\\\\ \np^{2} - p + 1/4 &= 0 \\\\ \n(p - 1/2)^{2} &= 0\n\\end{align*} Thus, the value of $p$ such that Var(X) = 1/4 is\n$p = 1/2$."
+    ], 
+    "hints": [
+        "The variance for a discrete random variable is defined to be\n\n\\[\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\]\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\[\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\]"
+    ]
+}

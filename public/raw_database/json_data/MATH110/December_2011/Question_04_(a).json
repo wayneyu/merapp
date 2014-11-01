@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[f(x) = \\frac{1}{x+1}\\] Find $f'(x)$ using the limit definition of\nthe derivative.\n\n\\emph{No marks will be given for using other methods in part (a).}", 
+    "year": 2011, 
+    "sols": [
+        "We simply input the function in the definition and compute the limit:\n\n\\begin{align*}\nf'(x) &= \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{\\frac{1}{(x+h)+1}-\\frac{1}{x+1}}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{1}{(x+h+1)} - \\frac{1}{(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{x+1}{(x+h+1)(x+1)} - \\frac{x+h+1}{(x+h+1)(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{(x+1)-(x+h+1)}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{-h}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} - \\frac{1}{(x+h+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)^2}\n\\end{align*}"
+    ], 
+    "hints": [
+        "The definition of the derivative is\n\n\\[f'(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\\]"
+    ]
+}

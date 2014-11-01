@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH221", 
+    "statement": "Consider the homogeneous system $\\displaystyle A\\vec{x} = 0$. Suppose\nthat the Echelon form of \\emph{A} is given by\n\n$\\displaystyle A_{1} = \\begin{bmatrix}\n1 & 0 & -1 & 2 \\\\\n0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0\n\\end{bmatrix}$\n\nWhat is the rank of \\emph{A}", 
+    "year": 2008, 
+    "sols": [
+        "The rank is the number of nonzero rows in the rref. We are given the\nrref and can see that the rank is 1."
+    ], 
+    "hints": []
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH102", 
+    "statement": "\\emph{For this short-answer question, only the answers (placed in the\nboxes) will be marked.}\n\nA certain function $f$ satisfies $f$(3) = 5 and $f'$(3) = 7. Given\nthese facts, find an approximate numerical value for $f$(3.02).", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH105", 
+    "statement": "This problem contains three numerical series. For each of them, find out\nwhether it converges or diverges. You should provide appropriate\njustification in order to receive credit.\n\n\\textbf{(a)}\n\n\\[\\sum_{k = 2}^{\\infty}\\frac{\\sqrt[3]{k}}{k^{2} - k}\\,.\\]", 
+    "year": 2013, 
+    "sols": [
+        "For this question, we apply the limit comparision test. Let\n\n\\[a_{k} = \\frac{\\sqrt[3]{k}}{k^{2} - k}.\\] We wish to define another\nseries $\\sum b_{k}$ such that\n\n\\[c = \\lim_{k \\rightarrow \\infty}\\frac{a_{k}}{b_{k}}\\] is positive and\nfinite (i.e. $< \\infty$). By comparing the dominant powers in the\nnumerator \\emph{(1/3)} and denominator \\emph{(2)}, we are inspired\n\\emph{(1/3-2 = -5/3)} to define $b_{k}$ as\n\n\\[\\displaystyle\nb_{k} = k^{-5/3} = \\frac1{k^{5/3}}.\\] The terms $a_{k}$, $b_{k}$ are\npositive for all $k \\ge 2$. By the limit comparison test, if $c$ is\npositive and finite, then both series converge or both diverge. We can\nsee that $\\displaystyle\\sum_{k} b_{k}$ will converge by the p-series\ntest, since the power on $k$ in the denominator, $5/3$, is greater than\n$1$. So if $c$ is finite, then $\\displaystyle\\sum_{k}a_{k}$ converges.\n\n\\begin{align*}\nc = \\lim_{k \\rightarrow \\infty}\\frac{\\sqrt[3]{k}\\times k^{5/3}}{k^{2} - k} = \\lim_{k \\rightarrow \\infty}\\frac{k^{2}}{k^{2} - k} = \\lim_{k \\rightarrow \\infty}\\frac{1}{1 - 1/k} = 1 < \\infty.\n\\end{align*} So $c$ is positive and finite. Therefore, by the limit\ncomparison test, the sum\n${\\color{blue}\\sum_{k = 2}^{\\infty}\\frac{\\sqrt[3]{k}}{k^{2} - k}}$\nconverges."
+    ], 
+    "hints": [
+        "Try using the limit comparison test. You may also want to remind\nyourself of the p-series test.", 
+        "Consider the dominant powers in the numerator and denominator of the\nterms in the series when determining a series to compare to when using\nthe limit comparison test."
+    ]
+}

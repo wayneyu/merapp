@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dx}{dt} = \\frac{x^2-2}{2x}\\]\n\nSolve the differential equation by separation of variables.", 
+    "year": 2009, 
+    "sols": [
+        "To solve the differential equation\n\n\\[\\displaystyle \\frac{dx}{dt}=\\frac{x^2-2}{2x}\\]\n\nwith separation of variables we rewrite the equation as\n\n\\[\\displaystyle \\frac{2x dx}{x^2-2} = dt\\]\n\nand integrate both sides\n\n\\[\\int\\frac{2x}{x^2-2}dx = \\int 1dt.\\]\n\nThe integral on the right hand side simply gives \\emph{t+c}. The\nintegrand on the left hand side is of the form $\\frac{f'(x)}{f(x)}$,\nwith \\emph{f(x) = x\\textsuperscript{2}-2}, which has anti-derivative\n$\\ln|f(x)| = \\ln|x^2-2|$. If you don't see this easily you can simply\nuse the substitution \\emph{u = x\\textsuperscript{2}-2}. Either way, we\nobtain\n\n\\[\\ln(|x^2-2|) = t+c\\]\n\nfor a constant \\emph{c}.\n\nTo solve this equation for \\emph{x} we first take the exponential on\nboth sides\n\n\\[\\displaystyle |x^2-2| = e^{t+c} = e^c\\,e^t = de^{t},\\]\n\nwhere \\emph{d} is another constant, which has to be positive. Finally,\nto remove the absolute value we write\n\n\\[\\pm (x^2-2) = \\displaystyle |x^2-2| = de^t,\\]\n\ni.e.\n\n\\[x^2-2 = \\pm de^t = \\tilde c e^{t}\\]\n\nfor another constant $\\tilde c$ that has no restriction on its sign\n(i.e. can be positive or negative). Now we can finally solve for\n\\emph{x} and obtain\n\n\\[x(t)=\\pm\\sqrt{\\tilde ce^t + 2}.\\]"
+    ], 
+    "hints": [
+        "Both integrals you get after separating variables have an elementary\nanti-derivative. If you don't see it, try a substitution."
+    ]
+}

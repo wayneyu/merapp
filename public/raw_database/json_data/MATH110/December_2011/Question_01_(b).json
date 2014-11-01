@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "Evaluate the following limit.\n\n\\[\\lim_{x \\to 0} \\left(  \\frac{1}{x(1-2x)} - \\frac{1}{x}  \\right)\\]", 
+    "year": 2011, 
+    "sols": [
+        "If we simply try to plug in the value \\emph{x} = 0, we obtain infinity\nminus infinity, which is undefined (you can't say it is zero, it really\ndepends on the ``size'' of each infinity in some sense). So we first do\na little algebra to rewrite the two fractions as one, using a common\ndenominator:\n\n\\[\\frac{1}{x(1-2x)} - \\frac{1}{x} = \\frac{1}{x(1-2x)} - \\frac{1-2x}{x(1-2x)} = \\frac{1-(1-2x)}{x(1-2x)} = \\frac{2x}{x(1-2x)}\\]\nAfter canceling the \\emph{x} we obtain something we can compute:\n\n\\[\\lim_{x \\to 0} \\left( \\frac{1}{x(1-2x)} - \\frac{1}{x} \\right) = \\lim_{x \\to 0} \\frac{2}{1-2x} = 2\\]"
+    ], 
+    "hints": [
+        "A little algebra can get you a long way. Try simplifying the expression."
+    ]
+}

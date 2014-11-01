@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_01_(c)", 
+    "course": "MATH152", 
+    "statement": "Let $L$ be the line $3x = 4y$.\n\nCalculate\n$\\text{Ref}_{L}\\left(\\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix} \\right)$.", 
+    "year": 2013, 
+    "sols": [
+        "Using our answer from (b),\n\n\\[\\text{Ref}_{L}\\left(\\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix} \\right) = \\begin{bmatrix} \\frac{7}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{-7}{25} \\end{bmatrix}\\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix} = \\begin{bmatrix} 7/25 \\\\ 24/25 \\end{bmatrix}\\]"
+    ], 
+    "hints": [
+        "This is a matrix multiplication question now that we have done part (b)."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nDefine a Carmichael number. Use the necessary and sufficient condition\nfor a number to be a Carmichael number to show that 561 is a Carmichael\nnumber.", 
+    "year": 2012, 
+    "sols": [
+        "A Carmichael number is a composite number \\emph{n} which satisfies\n\n$\\displaystyle b^{n-1} \\equiv 1 \\mod{n}$\n\nfor all integers with $\\displaystyle \\gcd(b,n) = 1$.\n\nFor 561, we use Korselt's criterion which states that for each prime\ndividing \\emph{n}, we must check that $\\displaystyle (p-1)\\mid(n-1)$.\nSince\n\n$\\displaystyle 561 = 3 \\cdot 11 \\cdot 17$\n\nwe check that\n\n\\begin{align*}\n(3-1) &= 2 \\mid 560 \\\\\n(11-1) &= 10 \\mid 560 \\\\\n(17-1) &= 16 \\mid 560\n\\end{align*}\n\nvalid since $\\displaystyle 560 = 2^{4} \\cdot 5 \\cdot 7$. Thus 561 is a\nCarmichael number."
+    ], 
+    "hints": [
+        "Recall Korselt's criterion which states that a positive composite\ninteger \\emph{n} is a Carmichael number if and only if \\emph{n} is\nsquare free and for all prime divisors \\emph{p} of \\emph{n}, it is true\nthat $\\displaystyle (p-1) \\mid (n-1)$"
+    ]
+}

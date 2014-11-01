@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_07", 
+    "course": "MATH215", 
+    "statement": "Suppose that $p(t)$ and $q(t)$ are continuous functions on $(0,\\infty)$.\nFind a particular solution to the inhomogeneous equation\n\n$ty'' + p(t)y' + q(t)y = t^3 \\quad  t > 0$\n\ngiven that $\\displaystyle \\{t, t^2\\}$ is a fundamental set of solutions\nto the homogeneous equation\n\n$\\displaystyle ty'' + p(t)y' + q(t)y = 0$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

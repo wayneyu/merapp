@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH220", 
+    "statement": "Let $A$, $B$, and $C$ be sets. Prove the following distributive law from\nfirst principles:\n\n\\[A\\cap(B\\cup{C})=(A\\cap{}B)\\cup(A\\cap{}C).\\]", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

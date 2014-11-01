@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[b_1 = \\left[ \\!\\!\\begin{array}{c} 1 \\\\ -1 \\end{array}\\!\\!\\right] \\quad b_2 = \\left[ \\begin{array}{c} 1 \\\\ 0 \\end{array}\\right] \\quad b_3 = \\left[ \\begin{array}{c} 3 \\\\ 4 \\end{array}\\right]\\]\nLet \\emph{T} denote a linear transformation of\n\\textbf{R}\\textsuperscript{2} such that\n\n\\[T(b_1) = \\left[ \\begin{array}{c} 1 \\\\ 1 \\end{array}\\right] \\quad T(b_2) = \\left[ \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\]\n\nFind \\emph{T}(\\emph{b}\\textsubscript{3}) and give the matrix of \\emph{T}\nwith respect to the standard basis of \\textbf{R}\\textsuperscript{2}", 
+    "year": 2011, 
+    "sols": [
+        "Since\n\n\\[\\displaystyle\nb_3 = 7b_2 - 4b_1\\] we have that\n\n\\begin{align*}\nT(b_3) &= T(7b_2 - 4b_1)\\\\\n&= 7T(b_2) - 4T(b_1) \\\\\n&= 7 \\left[\\begin{array}{c} 1 \\\\ 2 \\end{array}\\right] - 4 \\left[\\begin{array}{c} 1 \\\\ 1 \\end{array}\\right] \\\\\n&= \\left[\\begin{array}{c} 3 \\\\ 10 \\end{array}\\right]\n\\end{align*}\n\nTo find the matrix of \\emph{T} with respect to the standard basis, we\nneed to compute the image of each of these standard vectors.\n\n\\begin{align*}\nT(e_1) &= T\\left( \\left[\\begin{array}{c} 1 \\\\ 0 \\end{array}\\right] \\right) \\\\\n&= T(b_2) \\\\\n&= \\left[\\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\n\\end{align*} and\n\n\\begin{align*}\nT(e_2) &= T\\left( \\left[\\begin{array}{c} 0 \\\\ 1 \\end{array}\\right] \\right) \\\\\n&= T(b_2-b_1) \\\\\n&= T(b_2) - T(b_1) \\\\\n&= \\left[\\begin{array}{c} 1 \\\\ 2 \\end{array}\\right] - \\left[\\begin{array}{c} 1 \\\\ 1 \\end{array}\\right]\n&= \\left[\\begin{array}{c} 0 \\\\ 1 \\end{array}\\right]\n\\end{align*}\n\nAnd so the matrix of \\emph{T} in the standard basis is\n\n\\[\\left[\\begin{array}{cc}\n1 & 0 \\\\\n2 & 1\n\\end{array}\\right]\\]\n\n''Note that you can check that your result makes sense by verifying this\nmatrix on the vector \\emph{b}\\textsubscript{3}, indeed we have that''\n\n\\[\\left[\\begin{array}{cc}\n1 & 0 \\\\\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{c}\n3 \\\\\n4\n\\end{array}\\right] = \\left[\\begin{array}{c}\n3 \\\\\n10\n\\end{array}\\right]\\]"
+    ], 
+    "hints": [
+        "To find \\emph{T(b}\\textsubscript{3}\\emph{)} express\n\\emph{b}\\textsubscript{3} as a linear combination of\n\\emph{b}\\textsubscript{1} and \\emph{b}\\textsubscript{2}. Then use the\nlinearity of \\emph{T}.", 
+        "To find the matrix representation of \\emph{T} you need to calculate\n\\emph{T(e}\\textsubscript{1}\\emph{)} and\n\\emph{T(e}\\textsubscript{2}\\emph{)}, where \\emph{e}\\textsubscript{1} =\n{[}1,0{]} and \\emph{e}\\textsubscript{2} = {[}0,1{]}. Again, linear\ncombinations and linearity of \\emph{T} will be your friends."
+    ]
+}

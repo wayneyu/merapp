@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH104", 
+    "statement": "Consider the curve $x^2+y^3-2xy=0$. Assume that the point \\emph{(x,y) =\n(1,1)} lies on the curve, and that nearby points on the curve satisfy\n\\emph{y=f(x)} for some function of \\emph{f(x)}.\n\nFind $\\displaystyle f(1)$ and $\\displaystyle f'(1)$.", 
+    "year": 2012, 
+    "sols": [
+        "$f(1)=1$\n\n(Explanation: We are given that the curve $x^2+y^3-2xy=0$ passes through\nthe point $(1,1)$. Near this point, the curve is the graph of a\nfunction, $y=f(x)$. When $x=1$, $y=f(x)=1$.)\n\n$f'(1)$ is the same thing as $\\frac{dy}{dx}$ evaluated at the point\n$(x,y)=(1,1)$. In order to find this, we use implicit differentiate the\nequation $x^2+y^3-2xy=0$ with respect to $x$.\n\n\\begin{align*}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \n\\end{align*}\n\nIn order to solve for $\\frac{dy}{dx}$, we first factorize,\n\n\\begin{align*}\n2x-2y+(3y^2-2x) \\frac{dy}{dx}=0.\n\\end{align*}\n\nThen subtract $2x-2y$ from both sides and divide by $(3y^2-2x)$ to\nobtain\n\n\\begin{align*}\n \\frac{dy}{dx}=\\frac{2y-2x}{3y^2-2x}.\n\\end{align*}\n\nWhen $x=y=1,$\n\n\\begin{align*}\n \\frac{dy}{dx}=\\frac{2(1)-2(1)}{3(1)^2-2(1)}=0.\n\\end{align*}\n\nHence, $\\displaystyle f'(1)=0$."
+    ], 
+    "hints": [
+        "To find $f(1)$, note that the curve $y=f(x)$ passes through the point\n$(1,1)$. When $x=1$, what is $f(x)$?", 
+        "Note that $f$'(1) is equal to $\\frac{d y}{dx}$ at the point $(x,y)=(1,1)$.\nHow can you find $\\frac{d y}{dx}$?", 
+        "Use implicit differentiation to find $\\frac{d y}{dx}$ and evaluate at\n$x=y=1$."
+    ]
+}

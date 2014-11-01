@@ -1,0 +1,16 @@
+{
+    "term": "December", 
+    "question": "Question_05", 
+    "course": "MATH437", 
+    "statement": "Show that if \\emph{d} is an odd squarefree integer then a necessary\ncondition for the equation $\\displaystyle x^2 -d  y^2 = -1$ to have an\ninteger solution is that all the primes dividing \\emph{d} must be of the\nform $\\displaystyle 4n + 1$.", 
+    "year": 2006, 
+    "sols": [
+        "We proceed as in the hints. Suppose that in fact \\emph{d} was of the\nform $\\displaystyle 4n + 3$. Then since\n\n$\\displaystyle (4k + 1)(4m+1) = 4(4km + k + m) + 1$\n\nwe know that there must be a prime \\emph{p} of the form\n$\\displaystyle p = 4j + 3$ that divides \\emph{d}. Reducing modulo\n\\emph{p} gives\n\n$\\displaystyle x^{2} \\equiv -1 \\mod{p}$\n\nThis means that $\\displaystyle \\left(\\frac{-1}{p} \\right) = 1$. However,\nEuler's criterion tells us that\n$\\displaystyle 1 = \\left(\\frac{-1}{p} \\right) \\equiv (-1)^{(p-1)/2} = (-1)^{2j+1} =-1 \\mod{p}$\nand this is a contradiction."
+    ], 
+    "hints": [
+        "Your first reaction might be to use the theory of Pell equations and\ncontinued fractions on this problem, but there is a much more elegant\nsolution.", 
+        "Suppose that in fact \\emph{d} was of the form $\\displaystyle 4n + 3$.\nWhat can we conclude about prime divisors of \\emph{d}?", 
+        "Recall that the product of two primes of the form $\\displaystyle 4k + 1$\nmust be a number of the form $\\displaystyle 4m + 1$.", 
+        "Use a sub-case of quadratic reciprocity or Euler's criterion to finish\nthe problem."
+    ]
+}

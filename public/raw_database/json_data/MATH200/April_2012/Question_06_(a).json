@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH200", 
+    "statement": "Combine the sum of the iterated integrals\n\n\\[I=\\int_0^1\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y+\\int_1^4\\int_{y-2}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y\\]\n\ninto a single iterated integral with the order of integration reversed.", 
+    "year": 2012, 
+    "sols": [
+        "If we examine the region of integration by drawing a picture...\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH200_Dec2012_Q6a.png}\n\\caption{The domain of integration is enclosed within the curves\n$\\displaystyle x = y - 2$ (black), ${\\color{blue}x = -\\sqrt{y}}$ (blue),\nand ${\\color{red}x = \\sqrt{y}}$ (red)}\n\\end{figure}\n\n... we see that if we integrate with respect to y first, that we can\nspecify the lower bound of integration as $y = x^{2}$ and the upper\nbound as $y = x + 2$. Looking at where the lines meet, we can see that\nthe bounds of integration for x is x = -1 to x = 2. (To find these\nintersection points solve the equation $x^{2} = x + 2$.)\n\nFrom these observations, we can write I as follows\\[{\\color{blue}\nI = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\\]"
+    ], 
+    "hints": [
+        "Try making a sketch of the region of integration first, rather than\ntrying to tackle this problem from a purely algebraic standpoint."
+    ]
+}

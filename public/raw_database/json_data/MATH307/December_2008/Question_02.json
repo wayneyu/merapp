@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_02", 
+    "course": "MATH307", 
+    "statement": "Let $\\mathbb{P}_3$ be the vector space of polynomials of degree\n$\\leq 3$. The monomials $1,x, x^2, x^3$ form a basis of $\\mathbb{P}_3$.\nConsider the linear mapping from $\\mathbb{P}_3$ into $\\mathbb{P}_3$\ngiven by $p(x) \\mapsto p''(x)$. Find the matrix A of the mapping with\nrespect to the monomial basis and determine its null space.", 
+    "year": 2008, 
+    "sols": [
+        "The number of basis vectors equals the dimension of the vector space, so\n$\\mathbb P_3$ has dimension 4. To begin with, we represent the basis\nmonomials as vectors:\n\n\\begin{align*}\n1 \\leftrightarrow e_1 = \\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0 \\end{bmatrix}, \\quad x \\leftrightarrow e_2 = \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\\\ 0 \\end{bmatrix}, \\quad x^2 \\leftrightarrow e_3 = \\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\quad x^3 \\leftrightarrow e_4 = \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ 1 \\end{bmatrix}\n\\end{align*}\n\nThen, a general polynomial $\\displaystyle a_3x^3 + a_2x^2 + a_1x + a_0$\ncan represented as\n\n\\[a_3x^3 + a_2x^2 + a_1x + a_0 = a_3e_4 + a_2e_3 + a_1e_2 + a_0e_1 = \\begin{bmatrix} a_0 \\\\ a_1 \\\\ a_2 \\\\ a_3 \\end{bmatrix}\\]\n\nin the given basis. Next we calculate how \\emph{A} acts on the basis:\n\n\\begin{align*}\nAe_1 &= 1'' = 0 \\\\\nAe_2 &= x'' = 0 \\\\\nAe_3 &= (x^2)'' = 2 = 2e_1 \\\\\nAe_4 &= (x^3)'' = 6x = 6e_2\n\\end{align*}\n\nThis determines the columns of \\emph{A}, i.e.\n\n\\[A = \\begin{bmatrix}\n0 & 0 & 2 & 0 \\\\\n0 & 0 & 0 & 6 \\\\\n0 & 0 & 0 & 0 \\\\\n0 & 0 & 0 & 0\n\\end{bmatrix}\\]\n\nTo double check this we calculate\n\n\\begin{align*}\n(a_3x^3 + a_2x^2 + a_1x + a_0)'' &\\leftrightarrow A\\begin{bmatrix} a_0 \\\\ a_1 \\\\ a_2 \\\\ a_3 \\end{bmatrix} \\\\\n6a_3x + 2a_2 &\\leftrightarrow \\begin{bmatrix} 2a_2 \\\\ 6a_3 \\\\ 0 \\\\ 0 \\end{bmatrix} \\\\\n6a_3e_2 + 2a_2e_1 &\\leftrightarrow 6a_3 \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\\\ 0 \\end{bmatrix} + 2a_2\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0 \\end{bmatrix} \\quad \\checkmark\n\\end{align*}\n\nFinally, since the second derivative of the first two monomials is zero,\nthe two corresponding vectors form a basis of the null space of\n\\emph{A}:\n\n$N(A)=\\text{span} \\left( \\left\\{ \\begin{bmatrix}\n1\\\\ \n0\\\\ \n0\\\\ \n0\n\\end{bmatrix}, \\begin{bmatrix}\n0\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix} \\right\\} \\right)$"
+    ], 
+    "hints": [
+        "What is the dimension of $\\mathbb{P}_3$? How can you represent a general\npolynomial of $\\mathbb{P}_3$ in vector notation, that is, as a linear\ncombination of the given basis?", 
+        "How does \\emph{A} act on the basis vectors? In other words, calculate\nthe second derivative of the basis vectors and write your results in\nvector notation.", 
+        "To find the null space look at the zero columns of \\emph{A}. To check\nyour answer, which of the basis monomials get mapped to the zero\npolynomial when you take the second derivative?"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH307", 
+    "statement": "Suppose that you want to solve the boundary value problem\n\n\\[f''(x) - x^2f(x) = 1, \\quad 0 \\leq x \\leq 1, \\quad f(0) = 1, \\quad f(1) = 1.\\]\n\nLet $\\mathbf{F} = [f_0, f_1, \\dots, f_N]^T$ be the finite difference\napproximation to the solution \\emph{$f$(x)} at uniformaly spaced points\n\\emph{x\\textsubscript{0}}, \\emph{x\\textsubscript{1}}, ...,\n\\emph{x\\textsubscript{N}}.\n\n\\textbf{(c)} Suppose the boundary condition at \\emph{x = 0} is changed\nto\n\n\\[\\displaystyle\nf(0) = 1 - f'(0).\\]\n\nHow do \\emph{A} and \\textbf{\\emph{b}} change in this case?", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

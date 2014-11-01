@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH101", 
+    "statement": "Find the first three nonzero terms in the power-series representation in\npowers of $x$ (i.e. the Maclaurin series) for\n\n\\[\\int_0^x \\frac{t}{1-t^8}\\,dt.\\]", 
+    "year": 2008, 
+    "sols": [
+        "Recall the following Maclaurin series expansion\n\n\\[\\frac{1}{1-x} = 1 + x + x^{2} + x^{3} + ... = \\sum_{n=1}^{\\infty}x^{n}\\]\n\nNow plugging in $x = t^{8}$ gives\n\n\\[\\frac{1}{1-t^{8}} = 1 + t^{8} + t^{16} + t^{24} + ... = \\sum_{n=1}^{\\infty}t^{8n}\\]\n\nand then multiplying by $t$ gives\n\n\\[\\frac{t}{1-t^{8}} = t + t^{9} + t^{17} + t^{25} + ... = \\sum_{n=1}^{\\infty}t^{8n+1}\\]\n\nHence, the first three nonzero terms are\n\n\\[\\displaystyle t, t^{9}, t^{17}.\\]\n\nTherefore,\n\n\\begin{align*}\n\\int_0^x\\frac{t}{1-t^8}\\textrm{d}t &\\approx\\int_0^x\\left(t+t^9+t^{17}\\right)\\textrm{d}t\\\\\n&=\\left.\\left(\\frac{t^2}{2}+\\frac{t^{10}}{10}+\\frac{t^{18}}{18}\\right)\\right|_0^x\\\\\n&=\\frac{x^2}{2}+\\frac{x^{10}}{10}+\\frac{x^{18}}{18}\n\\end{align*}\n\nproduces the first three non-zero terms of the desired integral."
+    ], 
+    "hints": [
+        "What is the Maclaurin series expansion of\n\n\\[\\frac{1}{1-x}\\]?\n\nThis should look very familiar to the problem at hand."
+    ]
+}

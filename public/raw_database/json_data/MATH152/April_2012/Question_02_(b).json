@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH152", 
+    "statement": "Consider the following system of linear equations\n\n\\begin{align*}\n2x-y+2z&=a\\\\\nx+3y-6z&=b\\\\\n3x+2y-4z&=c,\n\\end{align*}\n\nwhere a,b, and c $\\in\\R$.\n\nFor what values of a, b, and c is the system homogeneous? Solve the\nresulting homogeneous system by calculating the reduced row echelon form\nof the augmented matrix.", 
+    "year": 2012, 
+    "sols": [
+        "We obtain the homogeneous problem by setting a=b=c=0. We can then solve\nthe system by Gaussian elimination. First we switch the second and first\nrow so that we have a 1 as the first entry. Doing this we get,\n\n\\[\\left[\n\\begin{array}{ccc|c}\n1  &  3  &  -6  &  0\\\\\n2  &  -1  &  2  &  0\\\\\n3  &  2  &  -4  &  0\n\\end{array}\\right]\\]\n\nNext we want zeros in the rest of the entries of the first column. To do\nthis we subtract 2 multiples of row 1 from row 2 and 3 multiples of row\n1 from row 3\n\n\\[\\left[\n\\begin{array}{ccc|c}\n1  &  3  &  -6  &  0\\\\\n0  &  -7  &  14  &  0\\\\\n0  &  -7  &  14  &  0\n\\end{array}\\right]\\]\n\nNow divide the second row by -7 to get a 1 in the second column of the\nsecond row\n\n\\[\\left[\n\\begin{array}{ccc|c}\n1  &  3  &  -6  &  0\\\\\n0  &  1  &  -2  &  0\\\\\n0  &  -7  &  14  &  0\n\\end{array}\\right]\\]\n\nNext subtract 3 multiples of row 2 from row 1 and add 7 multiples of row\n2 to row 3\n\n\\[\\left[\n\\begin{array}{ccc|c}\n1  &  0  &  0  &  0\\\\\n0  &  1  &  -2  &  0\\\\\n0  &  0  &  0  &  0\n\\end{array}\\right]\\]\n\nThe system is now in reduced row echelon form and we can now solve the\nsystem. From the first two rows we get\n\n\\[\\begin{array}{cccc}\nx & & &= 0 \\\\\n& y & -2z &= 0\n\\end{array}\\]\n\nThe third row is a little more interesting. No matter what we multiply\nthe third row with, we will get the zero vector which implies that we\nhave a free variable. This free variable can't be x since we know that\nx=0 and so it will be either y or z. Let's choose it to be the z\nvariable and set\n\n\\[\\displaystyle{}z=t\\]\n\nto be a parameter. Using the relation from row 2 then we get\n\n\\[\\displaystyle{}y=2z=2t\\]\n\nWe can therefore write that the solution to the homogeneous problem is\n\n\\[\\mathbf{x}=\\begin{bmatrix}\nx\\\\\ny\\\\\nz\n\\end{bmatrix}=t\n\\begin{bmatrix}\n0\\\\\n2\\\\\n1\n\\end{bmatrix}\\]\n\nfor any number \\emph{t}."
+    ], 
+    "hints": [
+        "A homogeneous problem is one in which the source vector is zero.", 
+        "The source vector is the vector $\\mathbf{b}$ in\n\n\\[A\\mathbf{x}=\\mathbf{b}\\]"
+    ]
+}

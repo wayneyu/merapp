@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH105", 
+    "statement": "You open a savings account under the Escalator Plan with an initial\ndeposit of $\\$P$. The advantage of this plan is that the interest rate\nis not fixed, but grows proportionally with time as long as the account\nis alive. In other words, the money in the account collects interest at\nthe annual rate of $rt$ at time $t,$ compounded continuously (here $r$\nis a constant). You also keep adding money to the account in the form of\na continuous deposit of $\\$S(t)$ at time $t.$\n\nWith the same conditions as in part (b), how long does it take for the\naccount size to reach $\\$100e^2$ after the initial deposit?", 
+    "year": 2011, 
+    "sols": [
+        "We are looking for the time $t$ such that $A(t) = 100e^2$. A computation\nshows\n\n\\begin{align*}\nA(t) &= 100e^2 \\\\\n100e^{0.005 \\cdot t^2} &= 100e^2 \\\\\ne^{0.005 \\cdot t^2} &= e^2 \\\\\n0.005 \\cdot t^2 &= 2 \\\\\nt^2 &= 2/0.005 = 400 \\\\\nt &= \\pm \\sqrt{400} = \\pm 20\n\\end{align*}\n\nSince the question asks for the time $t$ after the initial deposit, the\nnegative solution isn't feasible. We arrive at $t =20$ years."
+    ], 
+    "hints": [
+        "How can you transform this question into an equation to be solved?"
+    ]
+}

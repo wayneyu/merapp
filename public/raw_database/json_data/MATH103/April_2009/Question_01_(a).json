@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nWhich of these integrals does the sum\n\n\\[\\sum_{k=1}^N \\left(\\frac3{N}\\right) \\left[\\left(-2+\\frac{3k}{N}\\right)^3-1\\right]\\]\n\napproximate as $N \\rightarrow \\infty$?\n\n(a) $\\int_0^3 x^3\\,dx$\n\n(b) $\\int_{-2}^1 (x^3-1)\\,dx$\n\n(c) $\\int_0^3 (x^3-2)\\,dx$\n\n(d) $\\int_{-2}^1 x^3\\,dx$\n\n(e) $\\int_0^1 (x-2)^3\\,dx$", 
+    "year": 2009, 
+    "sols": [
+        "As we see in the formula for the limit of the Riemann sum\n\n\\[\\lim_{N\\rightarrow \\infty}\\sum_{k=1}^N\\left(\\frac{b-a}{N}\\right)\\cdot f\\left(a+\\frac{k(b-a)}{N}\\right) = \\int_a^bf(x)dx\\]\n\nthe factor that is devided by $N$, must be $b-a$. So, we know that\n$b-a = 3$.\n\nNow we search for the variable\n\n\\[\\displaystyle x_k=a+\\frac{k(b-a)}{N} = a+\\frac{3k}{N}.\\]\n\nThe only term, that matches this expression is\n\n\\[-2+\\frac{3k}{N}\\]\n\nand thus \\emph{a} must be equal to \\emph{-2}. With \\emph{3=b-a = b+2} we\nfind that \\emph{b=1}.\n\nThe last thing is to find the function \\emph{f}. From the formula of the\nlimit of the Riemann sum we know that\n\n\\[f\\left(a+\\frac{k(b-a)}{N}\\right) = \\left[\\left(a + \\frac{k(b-a)}{N}\\right)^3-1\\right],\\]\n\n\\[f\\left(-2+\\frac{3k}{N}\\right) = \\left(-2 + \\frac{3k}{N}\\right)^3-1,\\]\n\n\\[f(x) = x^3-1.\\]\n\nSo the answer is \\textbf{(b)},\n\n\\[\\lim_{N\\rightarrow \\infty}\\sum_{k=1}^N\\left(\\frac{3}{N}\\right)\\cdot \\left[\\left(-2\\frac{k3}{N}\\right)^3-1\\right] = \\int_{-2}^1(x^3-1)dx.\\]"
+    ], 
+    "hints": [
+        "The formula for the limit of the Rieman sum is\n\n\\[\\lim_{N\\rightarrow \\infty}\\sum_{k=1}^N\\left(\\frac{b-a}{N}\\right)\\cdot f\\left(a+\\frac{k(b-a)}{N}\\right) = \\int_a^bf(x)dx.\\]"
+    ]
+}

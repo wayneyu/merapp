@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(g)", 
+    "course": "MATH104", 
+    "statement": "You are using the Newton-Raphson Method to approximate a solution of an\nequation f(x) = x and you make an initial guess $x_0 = 3$ to the\nsolution. If the tangent line to y = f(x) at x = 3 has the equation y =\n5x - 7, what is the next approximation $x_1$ to the solution?", 
+    "year": 2010, 
+    "sols": [
+        "We want to find a solution to\n\n\\[\\displaystyle{}f(x)=x\\]\n\nand so we begin by defining a function\n\n\\[\\displaystyle{}g(x)=f(x)-x\\]\n\nso that we can think instead of finding roots to g(x). Recall that the\nNewton-Raphson Method for finding roots to a function g(x) gives a\nfuture approximation ($x_{n+1}$) based on a current approximation\n($x_n$) as\n\n\\[x_{n+1}=x_n-\\frac{g(x_n)}{g'(x_n)}.\\]\n\nTherefore, in our case\n\n\\[x_1=x_0-\\frac{g(x_0)}{g'(x_0)}=3-\\frac{g(3)}{g'(3)}\\]\n\nsince $x_0=3$. The task now is to find what g(3) and g'(3) are. Since\ng(x)=f(x)-x then\n\n\\[\\displaystyle{}g'(x)=f'(x)-1\\]\n\nso we really only need to determine f(3) and f'(3). To do this we can\nuse the tangent line which is also the linear approximation to f(x).\nTherefore we have that\n\n\\[\\displaystyle{}f(x)\\approx{}5x-7=5x-15+8=8+5(x-3)=f(3)+f'(3)(x-3).\\]\n\nTherefore, we have that f(3)=8 and f'(3)=5. Similarly, we then have\nthat,\n\n\\begin{align*}\ng(3)=f(3)-3=8-3&=5\\\\\ng'(3)=f'(3)-1=5-1&=4\n\\end{align*}\n\nand so we get that,\n\n\\[x_1=3-\\frac{g(3)}{g'(3)}=3-\\frac{5}{4}=\\frac{7}{4}.\\]\n\nTherefore the next approximation to the solution is $x_1=7/4$."
+    ], 
+    "hints": [
+        "Notice that finding a solution to f(x)=x is the same as finding the root\nof an equation g(x)=f(x)-x.", 
+        "How can you use the tangent line y=5x-7 to give you information about\n$\\displaystyle{}f(x_0)$ and $\\displaystyle{}f'(x_0)$?"
+    ]
+}

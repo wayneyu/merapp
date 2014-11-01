@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH312", 
+    "statement": "Show that $\\displaystyle \\sqrt{3} + \\sqrt{2}$ is irrational.", 
+    "year": 2009, 
+    "sols": [
+        "Assume towards a contradiction that\n\n$\\displaystyle \\sqrt{3} + \\sqrt{2} = \\frac{p}{q}$\n\nwhere $\\displaystyle \\gcd(p,q) = 1$. Now, squaring both sides yields\n\n$\\displaystyle 3 + 2\\sqrt{6} + 2 = \\frac{p^{2}}{q^{2}}$\n\nand isolating for the radical yields\n\n$\\displaystyle \\sqrt{6} = \\frac{p^{2}-5q^{2}}{2q^{2}}$\n\nNow the right hand side is rational so now it suffices to show that\n$\\displaystyle \\sqrt{6}$ is irrational (this will simplify the\ncomputations to treat this as its own case). Suppose that\n\n$\\displaystyle \\sqrt{6} = \\frac{a}{b}$\n\nwhere $\\displaystyle \\gcd(a,b) = 1$. Squaring both sides and cross\nmultiplying yields\n\n$\\displaystyle 6b^{2} = a^{2}$\n\nNow, 2 divides the left hand side so $\\displaystyle 2 \\mid a$ writing\n$\\displaystyle a = 2A$ and substituting yields\n\n$\\displaystyle 6b^{2} = 4A^{2}$.\n\nDividing by 2 yields\n\n$\\displaystyle 3b^{2} = 2A^{2}$.\n\nNow, 2 divides the right hand side so $\\displaystyle 2 \\mid b$. This\ncontradicts the fact that $\\displaystyle \\gcd(a,b) = 1$ since 2 divides\nboth numbers. Thus $\\displaystyle \\sqrt{6}$ is irrational and hence so\nis $\\displaystyle \\sqrt{3} + \\sqrt{2}$ by the above argument as\nrequired."
+    ], 
+    "hints": [
+        "Proceed by a contradiction. Suppose that the given number is rational.\nSquare both side and simplify.", 
+        "It might help to as a lemma prove that $\\displaystyle \\sqrt{6}$ is\nirrational."
+    ]
+}

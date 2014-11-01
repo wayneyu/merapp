@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH312", 
+    "statement": "Find $\\displaystyle 9^{23} \\mod{71}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

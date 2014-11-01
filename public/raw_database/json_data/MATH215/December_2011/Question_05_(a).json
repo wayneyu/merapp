@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH215", 
+    "statement": "Given the function\n\n\\[f(t) = \\begin{cases}\n0, & t<1 \\\\\n2\\pi, & 1 \\leq t < 2 \\\\\n\\pi, & t \\geq 2\n\\end{cases}\\]\n\n\\textbf{(a)} Find the Laplace transform of \\emph{f(t)}.", 
+    "year": 2011, 
+    "sols": [
+        "The Laplace transform, F(s), for a function f(t) is given by\n\n\\[F(s)=\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt.\\]\n\nSince our function is piecewise defined we can split up the integral and\nwrite\n\n\\begin{align*}\nF(s)&=\\int_0^1f(t)dt+\\int_1^2f(t)\\exp(-st)dt+\\int_2^\\infty{}f(t)\\exp(-st)dt\\\\\nF(s)&=\\int_0^10dt+2\\pi\\int_1^2\\exp(-st)dt+\\pi\\int_2^\\infty\\exp(-st)dt.\n\\end{align*}\n\nThe first integral is just zero. For the second integral we get,\n\n\\[2\\pi\\int_1^2\\exp(-st)dt=-\\left.\\frac{2\\pi}{s}\\exp(-st)\\right|_1^2=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s).\\]\n\nFor the third integral we get\n\n\\[\\pi\\int_2^\\infty\\exp(-st)dt=-\\left.\\frac{\\pi}{s}\\exp(-st)\\right|_2^\\infty=\\frac{\\pi}{s}\\exp(-2s).\\]\n\nAdding the two integrals together we get\n\n\\[F(s)=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s)+\\frac{\\pi}{s}\\exp(-2s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\\]"
+    ], 
+    "hints": [
+        "Recall that the Laplace transform for a function f(t) is\n\n\\[\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt\\]", 
+        "How do we integrate a piecewise function?"
+    ]
+}

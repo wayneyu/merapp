@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH105", 
+    "statement": "A study conducted at a waste disposal site reveals soil contamination\nover a region that can be described as the interior of the circle\n\n\\[\\displaystyle\nx^2+y^2 = 16\\]\n\nwhere \\emph{x} and \\emph{y} are in miles. In order to build a circular\nenclosure to contain all polluted territory, the manager of the site\nwants to find the radius of the smallest circle centered at \\emph{(2,\n2)} that contains the entire contamination region. Formulate this as a\nconstrained optimization problem, clearly stating the objective function\nand the constraint. Note that you do not need to do any computation in\npart (a).", 
+    "year": 2013, 
+    "sols": [
+        "Examine the picture below\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math105Q5a2013.jpg}\n\\caption{Math105Q5a2013.jpg}\n\\end{figure}\n\nThe red circle describes the contaminated region. Our blue circle has to\nbe just large enough to completely contain the red circle. Hence, we\nneed to find the distance between any point on the red circle and the\ncentre of the blue circle, \\emph{(2,2)}. The radius of the blue circle\nis then the smallest number that is bigger than all these distances.\n\nThe distance between any point \\emph{(x,y)} and \\emph{(2,2)} is given by\n$\\displaystyle\n\\sqrt{(x-2)^{2} + (y-2)^{2}}$. Hence, the radius \\emph{r} we are looking\nfor is the maximum value of distances from points on the red circle to\nthe centre of the blue circle:\n\n$\\displaystyle r = \\sqrt{(x-2)^{2} + (y-2)^{2}}$\n\nsubject to this point $(x,y)$ lying on the red circle\n\n$\\displaystyle x^{2} +y^{2} = 16$\n\nMaximizing this distance gives the smallest possible radius such that\nthe blue circle still encloses the entire contamination area."
+    ], 
+    "hints": [
+        "We with to make the radius of the new circle around \\emph{(2,2)} as\nsmall as possible and as large as necessary to contain all points from\nthe first circle around \\emph{(0,0)}.", 
+        "Given any point \\emph{(x,y)}, what is the distance from that point to\nthe centre of our new cirle \\emph{(2,2)}?"
+    ]
+}

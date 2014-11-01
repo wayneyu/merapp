@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH221", 
+    "statement": "Two drink makers Hard and Soft compete for customers. Each year 20\\% of\nHard$^{\\prime}$s customers shift to Soft and 30\\% of Soft$^{\\prime}$s\ncustomers shift to Hard. Assume that this year the drink makers have\nequal market share.\n\nWhat will be the market distribution next year?", 
+    "year": 2009, 
+    "sols": [
+        "$\\begin{bmatrix} Hk+1\\\\Sk+1 \\end{bmatrix} = \\begin{bmatrix} 0.8 & 0.3\\\\ 0.2 & 0.7 \\end{bmatrix} \\begin{bmatrix} Hk\\\\Sk \\end{bmatrix}$\n\n$\\begin{bmatrix} 0.55\\\\ 0.45 \\end{bmatrix}=\\begin{bmatrix} 0.8 & 0.3\\\\ 0.2 & 0.7 \\end{bmatrix} \\begin{bmatrix} 0.5\\\\ 0.5 \\end{bmatrix}$"
+    ], 
+    "hints": []
+}

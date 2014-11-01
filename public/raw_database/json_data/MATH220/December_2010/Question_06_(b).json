@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH220", 
+    "statement": "Use mathematical induction to prove the following.\n\nProve that\n\n\\[4^n\\geq(n+1)^2\\]\n\nfor all non-negative integers $\\displaystyle {}n$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

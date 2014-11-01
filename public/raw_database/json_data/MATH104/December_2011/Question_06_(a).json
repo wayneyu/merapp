@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH104", 
+    "statement": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\na) Use the linear approximation to $f(x) = \\ln(x)$ at $a = 1$ to\napproximate $\\ln(0.9)$.", 
+    "year": 2011, 
+    "sols": [
+        "Beginning with definition of the linear approximation of a function\n$f(x)$ at a point \\emph{a}, we find that the linear approximation\nto $\\ln$(\\emph{x}) at \\emph{a} = 1 is given by:\n\n\\begin{align*}\nL(x) &= f(a) + f'(a)(x - a) \\\\ \n&= \\ln(1) + \\frac{1}{1}(x - 1) \\\\\n&= x - 1\n\\end{align*} We used that $f'(x)$ = 1/\\emph{x}. Thus the\napproximation for $\\ln$(0.9) is:\n\n\\[\\ln(0.9) \\approx L(0.9) = -0.1\\]"
+    ], 
+    "hints": [
+        "A linear approximation is simply using the equation of the tangent line\nat some point as a good \\emph{guess} for the function near that point.", 
+        "What does it take to compute the equation of the tangent line to the\nnatural logarithm function near \\emph{x} = 1 ?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH105", 
+    "statement": "Use a Riemann sum with \\emph{n} = 2 and select the midpoints of\nsubintervals to estimate the area under the graph of\n\n\\[f(x) = \\frac1{1+\\sqrt{x}}\\]\n\nfrom 0 to 4.", 
+    "year": 2010, 
+    "sols": [
+        "With \\emph{n} = 2 and an interval of $[0,4]$ we have\n\n\\[\\Delta x = \\frac{4-0}{2} = 2\\] and\n\n\\[x_j = 0+j\\Delta x = 2j \\quad\\text{for } j=0,1,2\\] i.e. our subinterval\nendpoints are 0, 2 and 4.\n\nTo approximate with midpoints, we need to take sample points\n\n\\[x_1^* = 1 \\quad\\text{and}\\quad x_2^* = 3\\] (these are the midpoints of\n$x_0$ and $x_1$, and $x_1$ and $x_2$ respectively).\n\nThe area under the curve is approximated by the midpoint Riemann sum,\nwhich yields\n\n\\begin{align*}\n\\int_0^4 f(x)\\,dx &\\approx \\Delta x (f(x_1^*) + f(x_2^*)) \\\\\n&= 2\\left(\\frac{1}{1+\\sqrt{1}} + \\frac{1}{1+\\sqrt{3}}\\right) \\\\\n&= 1 + \\frac{2}{1+\\sqrt{3}}\n\\end{align*}"
+    ], 
+    "hints": [
+        "How many intervals will you have to use? Where will their endpoints be?\nWhat about their midpoints?"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH104", 
+    "statement": "How many years will it take for \\$10 000 to grow to \\$12 000 if it is\ninvested at 12\\% annual interest compounded quarterly? You may leave\nyour answer in calculator-ready form.", 
+    "year": 2010, 
+    "sols": [
+        "Using the discrete compound interest formula with 4 compounds per year,\nwe know that\n\n\\[\\displaystyle \\$12000=\\$10000(1+0.12/4)^{4t},\\]\n\nwhere \\emph{t} is the time in years required for the \\$10 000 investment\nto grow to \\$12 000. We want to solve for \\emph{t}. Dividing both sides\nby \\$10000,\n\n\\[\\displaystyle 1.2=(1+0.03)^{4t}.\\]\n\nTaking the logarithm of both sides and simplifying,\n\n\\[\\ln(1.2)= \\ln\\left(1.03^{4t}\\right) = 4t \\ln\\left(1.03\\right)\\]\n\nHence, the investment will take\n\n\\[t= \\frac{\\ln(1.2)}{4\\ln(1.03)}\\]\n\nyears to grow to \\$12000.\n\n''A calculator would tell you that \\emph{t} is about 1.54 years.''"
+    ], 
+    "hints": [
+        "``Quarterly'' compounding means that the investment is compounded four\ntimes per year.", 
+        "An investment with initial value $A_0$ compounded quarterly at interest\nrate $r$ (per year) will grow to a value of\n\n\\[A(t)=A_0(1+r/4)^{4t}\\] after a time $t$ in years."
+    ]
+}

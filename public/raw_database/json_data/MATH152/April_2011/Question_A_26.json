@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_26", 
+    "course": "MATH152", 
+    "statement": "For which values of the parameters $\\displaystyle a,b,c$ is the\nfollowing matrix invertible?\n\n\\[B=\\begin{bmatrix}\na  &  a  &  a\\\\\na  &  a  &  b\\\\\na  &  b  &  c\n\\end{bmatrix}\\]", 
+    "year": 2011, 
+    "sols": [
+        "We compute the determinant of our matrix\n\n\\begin{align*}\n\\det(B) &= (a^2c + a^2b + a^2b - (a^3 + a^2c  + ab^2))\\\\ &= 2a^2b -a^3 - ab^2\n\\end{align*}\n\nIn order for the matrix to be invertible, we need the determinant to be\nnonzero. For that, we need to factor our determinant\n\n\\begin{align*}\n\\det(B) &= 2a^2b -a^3 - ab^2\\\\ &= -a(a^{2} - 2ab  + b^{2}) \\\\ &= -a(a-b)^{2}\n\\end{align*}\n\nSo we obtain that\n\n\\[\\displaystyle \\det(B) = -a(a-b)^2\\]\n\nand so, for the matrix to be invertible, that is, for the matrix not to\nhave a determinant of zero, we require that $a \\neq 0$ and $a \\neq b$."
+    ], 
+    "hints": [
+        "What is an easy to compute value that determines when a matrix is\ninvertible?"
+    ]
+}

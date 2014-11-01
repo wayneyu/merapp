@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$ has an inflection point at \\emph{x} = 1\n\\item\n  $f$ has a critical point at \\emph{x} = 2\n\\end{enumerate}", 
+    "year": 2013, 
+    "sols": [
+        "Your drawing should have a function that changes concavity at \\emph{x =\n1}. Critical points are where we find a minimum, maximum, or a\n``corner'' where the derivative does not exist. Your graph should have\none of these features at \\emph{x = 2}.\n\nIn our example below the function switches from concave up to concave\ndown at \\emph{x = 1} and has a maximum at \\emph{x = 2}.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Crit_and_inflect.jpg}\n\\caption{Crit and inflect.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Recall that at an inflection point the function switches concavity (but\ndoes not necessarily switch from increasing to decreasing or decreasing\nto increasing); at a critical point, the slope of the function is zero\n(often a maximum or minimum) or the derivative doesn't exist."
+    ]
+}

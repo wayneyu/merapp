@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH307", 
+    "statement": "Let\n\n\\[A = \\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & a & 0 \\\\\n0 & 0 & 2\n\\end{bmatrix}\\]\n\nwhere \\emph{a} is a real number.\n\n\\textbf{(e)} For what values of \\emph{a} (if any) is \\emph{cond(A) = 4}?", 
+    "year": 2010, 
+    "sols": [
+        "We use the three regions from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(d)}{part\n(d)}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Case 1: If $0 < |a| \\leq 1$ then\n\\end{itemize}\n\n\\[\\displaystyle\n4 = \\mathrm{cond}(A) = 2/|a|\\]\n\nhas the solutions \\emph{\\textbar{}a\\textbar{} = 1/2}, that is, \\emph{a =\n-1/2} and \\emph{a = 1/2}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Case 2: If $1 \\leq |a| \\leq 2$ then\n\\end{itemize}\n\n\\[\\displaystyle\n4 = \\mathrm{cond}(A) = 2\\]\n\nhas no solutions.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Case 3: If $2 \\leq |a|$ then\n\\end{itemize}\n\n\\[\\displaystyle\n4 = \\mathrm{cond}(A) = |a|\\]\n\nhas the solutions \\emph{a = -4} and \\emph{a = 4}.\n\nOverall we have that \\emph{cond(A) = 4} holds if \\emph{a = -4}, \\emph{a\n= -1/2}, \\emph{a = 1/2} or \\emph{a = 4}."
+    ], 
+    "hints": [
+        "\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(d)}{Part\n(d)} suggests that some solutions for \\emph{a} exist. Find them by using\nthe piecewise defined function mapping \\emph{a} to \\emph{cond(A)} found\nin\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(d)}{Part\n(d)}."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(h)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions! No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nEvaluate the indefinite integral\n\n\\[\\int \\frac{\\sqrt{25x^2-4}}{x}\\,dx.\\]", 
+    "year": 2012, 
+    "sols": [
+        "To evaluate $I = \\int \\frac{\\sqrt{25x^2 - 4}}{x} dx$, we will use\ntrigonometric substitution.\n\nThe part with the square root is $25x^2 - 4$. We only have freedom over\nwhat we do to x, and we'd like to use a trig identity to help deal with\nthe square root.\n\nWe recall $\\sec^2 \\theta - 1 = \\tan^2 \\theta$. If\n$25x^2 = 4 \\sec^2 \\theta$ then\n$\\sqrt{25x^2 - 4} = \\sqrt{4 \\tan^2 \\theta} = 2 \\tan \\theta$. Let's make\nthe change of variables $x = \\frac{2}{5} \\sec \\theta$ (by solving\n$25x^2 = 4 \\sec^2 \\theta$ for x.\n\nIf $x = \\frac{2}{5} \\sec \\theta$ then\n$dx = \\frac{2}{5} \\tan \\theta \\sec \\theta d \\theta$:\n\n$I = \\int \\frac{ \\overbrace{2 \\tan \\theta}^{\\sqrt{25x^2 - 4} } }{ \\underbrace{ \\frac{2}{5} \\sec \\theta }_{x} } \\underbrace{ \\frac{2}{5} \\tan \\theta \\sec \\theta d \\theta}_{dx} = 2 \\int \\tan^2 \\theta d \\theta$.\n\nNow, we can use a trig identity:\n\n$I = 2 \\int \\tan^2 \\theta d \\theta = 2 \\int (\\sec^2 \\theta - 1) d \\theta = 2 (\\tan \\theta - \\theta) + C$.\n\nFinally, we need to go back in terms of x.\n\nIf $x = \\frac{2}{5} \\sec \\theta$ then $\\sec \\theta = \\frac{5}{2} x$ and\n$1 + \\tan^2 \\theta = \\sec^2 \\theta = \\frac{25}{4} x^2$. This means we\ncan replace $\\tan \\theta$ by $\\sqrt{\\frac{25}{4} x^2 - 1}$. Also,\n$\\theta = \\arcsec (\\frac{5}{2} x)$.\n\nThus, our final answer is:\n\n$I = 2 (\\sqrt{\\frac{25}{4} x^2 - 1} - \\arcsec(\\frac{5}{2} x)) + C$."
+    ], 
+    "hints": [
+        "You will need your trig identities ready for this one. Recall\n$\\sec^2 \\theta - 1 = \\tan^2 \\theta$."
+    ]
+}

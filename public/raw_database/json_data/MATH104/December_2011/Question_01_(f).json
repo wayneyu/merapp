@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH104", 
+    "statement": "Consider a function \\emph{f} that satisfies\n\n\\[f'(x) = x\\big[f(x)\\big]^2+x^2.\\]\n\nEvaluate\n\n\\[\\displaystyle f''(1)\\]\n\nif\n\n\\[\\displaystyle f(1) = 2.\\]", 
+    "year": 2011, 
+    "sols": [
+        "Taking the derivative of the given equation yields\n\n\\begin{align*}\n\\frac{d}{dx} f'(x) &= \\frac{d}{dx} \\Big(x\\big[f(x)\\big]^2+x^2\\Big) \\\\\n f''(x) &= \\frac{d}{dx} \\Big(x\\big[f(x)\\big]^2\\Big)+\\frac{d}{dx}\\Big(x^2\\Big) \\\\\n&= \\big[f(x)\\big]^2 + x \\big[2f(x)f'(x)\\big]+2x \\\\\n\\end{align*} When \\emph{x}=1, \\emph{f} is equal to 2, so\n\n\\begin{align*}\n f''(1) \n&= \\big[f(1)\\big]^2 + (1) \\big[2f(1)f'(1)\\big]+2(1) \\\\\n&= \\big[2\\big]^2 + \\big[2(2)f'(1)\\big]+2 \\\\\n&= 6 + 4f'(1) .\\\\\n\\end{align*} We need the first derivative of \\emph{f} at \\emph{x} = 1.\nUsing the expression we are given for the derivative of \\emph{f},\n\n\\begin{align*}f'(1) \n&= (1)\\big[f(1)\\big]^2+(1)^2\\\\\n&=2^2+1\\\\\n&=5.\n\\end{align*} Therefore,\n\n\\begin{align*}\n f''(1) \n&= 6 + 4f'(1) \\\\\n&= 6 + 4(5) \\\\\n&= 26.\n\\end{align*}"
+    ], 
+    "hints": [
+        "Calculate $f''(x)$ by differentiating $f'(x)$. How can you use the\ninformation about $f(1)$ to find $f'(1)$ and then $f''(1)$?"
+    ]
+}

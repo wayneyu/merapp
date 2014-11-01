@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH103", 
+    "statement": "A toxic chemical has been spilled somewhere on a 100 km stretch of\nhighway. The probability that the spill occurred within $x$ km of the\nfactory is shown in the panel below.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2010_Question_3_(a)_picture1_top.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2010\\_Question\\_3\\_(a)\\_picture1\\_top.png}\n\\end{figure}\n\n(a) Plot the probability density $p(x)$ for the location of the spill in\nthe grid provided. (You do not need to provide a scale on the $y$ axis.)\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2010_Question_3_(a)_picture1_bottom.png}\n\\end{description}", 
+    "year": 2010, 
+    "sols": [
+        "The derivative \\emph{p(x)} is zero whenever \\emph{F(x)} is flat, and\n\\emph{p(x)} is positive whenever \\emph{F(x)} is increasing.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2010_Question_3_(a)_solution_to_3a.png}\n\\end{description}"
+    ], 
+    "hints": [
+        "What is the relation between the given cumulative function \\emph{F(x)}\nand the probability density function \\emph{p(x)}?", 
+        "Since\n\n\\[F(x) = \\int_0^x p(s)\\,ds\\]\n\nthe Fundamental theorem of calculus says that\n\n\\[F'(x) = p(x).\\]\n\nHence you are asked to plot the derivative of the given function\n\\emph{F(x)}."
+    ]
+}

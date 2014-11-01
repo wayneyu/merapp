@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH104", 
+    "statement": "In the following figure, the curved graph is a demand curve where\n\\emph{q} is the demand and \\emph{p} is the price in dollars. The\nstraight line is the tangent line to this demand curve at the point\n\\emph{(p,q) = (2,6)}. Recall that the price elasticity of demand is\ngiven by\n\n\\[\\epsilon(p) = \\frac{p}{q} \\frac{dq}{dp}\\]\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH104_December2011_Question_5_(a).jpg}\n\\end{description}\n\n\\textbf{(a)} Comput $\\epsilon(2)$, the elasticity at price \\$2.", 
+    "year": 2011, 
+    "sols": [
+        "We can calculate the slope of the line by using two points on the line,\nsay $(0,8)$ and $(8,0)$. These two points give us a slope of $-1$.\n\nBecause the line is tangent to the graph at $(p=2,q=6)$ and its slope is\n$-1$, we know that $\\frac{dq}{dp} = -1$ at $(2,6)$.\n\nThus, by using the elasticity formula above, we get\n$\\epsilon = \\frac{p}{q} \\frac{dp}{dq} = \\frac{2}{6} (-1) = -1/3$."
+    ], 
+    "hints": [
+        "Remember that the derivative $dq/dp$ at $p=2$ is the same as the slope\nof the tangent line at $p=2$."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_09_(b)", 
+    "course": "MATH220", 
+    "statement": "Let\n\n\\[\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\]\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nGive an example of sets \\emph{A}, \\emph{B} and functions \\emph{f},\n\\emph{g} as above such that \\emph{f} is not surjective.", 
+    "year": 2011, 
+    "sols": [
+        "We showed in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} that the function \\emph{g} will always be surjective, this question\nasks us to give an example to illustrate why the function \\emph{f}\ndoesn't have to be necessarily.\n\nFor example, consider the case where the set \\emph{A} is all the natural\nnumbers including zero: \\emph{A}=\\{ 0, 1, 2, ... \\} and the set \\emph{B}\nis all the integers: \\emph{B} = \\{ ..., -2, -1, 0, 1, 2, ... \\}. Now the\nfunction \\emph{f} just maps a natural number to itself, so\n\n\\[\\displaystyle\nf(n) = n \\quad\\text{for all } n=0,1,2,\\dots\\]\n\nand the function \\emph{g} maps an integer to its absolute value, so\n\n\\[\\displaystyle\ng(k) = |k| \\quad\\text{for all } k \\in \\mathbb{Z}\\]\n\nThen the function $g \\circ f$ is clearly surjective since it takes a\nnatural number back to itself. That is, $(g \\circ f)(a) = a$ for all\n$a \\in A$.\n\nBut the function \\emph{f} isn't surjective since it doesn't map to any\nnegative integer (no negative number has a pre-image under the function\n\\emph{f}). Notice that as shown in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} the function \\emph{g} is, and has to be, surjective.", 
+        "Another, minimal example is the following:\n\nLet \\emph{A} = \\{a\\}, and \\emph{B} = \\{1,2\\}. Then define\n\n\\[f: A \\rightarrow B, \\quad f(a) = 1, \\qquad g: B \\rightarrow A, \\quad g(1) = g(2) = a.\\]\n\nThen, clearly\n\n\\[(g \\circ f) : A \\rightarrow A, \\quad (g \\circ f)(a) = g(f(a)) = g(1) = a,\\]\n\nand thus $g \\circ f$ is surjective.\n\nHowever, \\emph{f} is not surjective, since $2 \\in B$ does not have a\npre-image in \\emph{A} under \\emph{f}.\n\n''Notice again, that \\emph{g} is, and needs to be, surjective for\n$g \\circ f$ to be surjective."
+    ], 
+    "hints": [
+        "Start with a choice of sets \\emph{A} and \\emph{B} and functions \\emph{f}\nand \\emph{g} such that $g \\circ f$ is surjective. If \\emph{f} isn't\nsurjective, you won, that's your example! If not, can you add some\nelements to the set \\emph{B} to tweak your example and obtain what\nyou're looking for?"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(c)", 
+    "course": "MATH307", 
+    "statement": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nLet \\emph{U},\\emph{V},\\emph{W} be three subspaces of\n$\\displaystyle \\mathbb{R}^{n}$. If $\\displaystyle U \\perp V$ and\n$\\displaystyle V \\perp W$, then $\\displaystyle U \\perp W$.", 
+    "year": 2006, 
+    "sols": [
+        "False.\n\nProof by counter example.\n\nIn the case that U = W, then it is not necessary that\n$\\displaystyle U \\perp W$ but instead parallel, for example in the\n$\\mathbb{R}^2$ case let $a = [1, 0]$, part of subspace U and\n$b = [ 0, 1 ]$ an element of subspace V, it is clear that\n$a \\cdot b = 0$, hence $\\displaystyle U \\perp W$, now let $c = [2, 0]$,\npart of subspace W. $b \\cdot c =$ but $c \\cdot a \\neq 0$, hence U is not\nperpendicular to W."
+    ], 
+    "hints": []
+}

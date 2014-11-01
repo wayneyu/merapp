@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n\\[\\int_{0}^{3}(x+1)\\sqrt{9-x^{2}}\\, dx\\]", 
+    "year": 2012, 
+    "sols": [
+        "We can write the integral as\n$\\int_0^3(x+1)\\sqrt{9-x^2}dx=\\int_0^3x\\sqrt{9-x^2}dx+\\int_0^3\\sqrt{9-x^2}dx$.\n\nNow we compute: for $\\int_0^3x\\sqrt{9-x^2}dx$ we use the substitution\n$u=9-x^2,$ $du=-2xdx$ to get:\n$\\int_0^3x\\sqrt{9-x^2}dx=-\\int_9^0\\frac{1}{2}\\sqrt{u}du=-\\frac{1}{3}u^{3/2}|_9^0=-(0-\\frac{1}{3}9^{3/2})=9$\n\nFor $\\int_0^3\\sqrt{9-x^2}dx$ we note that this corresponds to one fourth\nof the area of a circle of radius 3, so\n$\\int_0^3\\sqrt{9-x^2}dx=\\frac{1}{4}9\\pi$\n\nHence the final result is $\\int_0^3(x+1)\\sqrt{9-x^2}dx=9+\\frac{9\\pi}{4}$"
+    ], 
+    "hints": [
+        "Try to write the integral as a sum of two integrals that you can\ncalculate.", 
+        "The integral $\\int_0^3 \\sqrt{9-x^2}$ can be interpreted geometrically."
+    ]
+}

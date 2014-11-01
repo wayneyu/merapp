@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems.} Justify your answers and \\textbf{show\nall your work.} \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\nA light sits atop a post \\emph{H} meters high, and a person of height\n\\emph{h}, where $H > h$, walks along a straight line away from the\nlamppost at a speed of \\emph{v} m/s. At what rate is the\nperson$^{\\prime}$s shadow lengthening?", 
+    "year": 2012, 
+    "sols": [
+        "To get started, we draw a diagram and label with variables.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math100_December_2012_Problem_8_Solution.jpg}\n\\caption{Math100 December 2012 Problem 8 Solution.jpg}\n\\end{figure}\n\nNote that \\emph{H} and \\emph{h} (the height of the lamppost and the\nperson) are constant but \\emph{x} and \\emph{y} (the distance of the\nperson from the lamppost, and the length of the person's shadow) are\nchanging.\n\nWe relate all the variables in the above picture by using similar\ntriangles:\n\n$\\frac{y}{h} = \\frac{x+y}{H}$\n\nCross-multiplying gives\n\n$\\displaystyle yH = xh + yh$\n\nIf we differentiate with respect to time, we get\n\n$H  \\frac{dy}{dt} = h\\frac{dx}{dt} + h\\frac{dy}{dt}$\n\n(Recall that H, h are constants, so they aren't differentiated.)\n\nThe question is asking us for the rate at which the person's shadow is\nchanging, which is the same as the rate at which \\emph{y} is changing,\nor $dy/dt$. So we solve the above expression for $dy/dt$.\n\n$H  \\frac{dy}{dt}  - h\\frac{dy}{dt}= h\\frac{dx}{dt}$\n\n$\\frac{dy}{dt}  (H - h) = h\\frac{dx}{dt}$\n\n$\\frac{dy}{dt} = \\frac{h\\frac{dx}{dt}}{H - h}$\n\nThe rate \\emph{v} that is given in the question is the speed at which\nthe person is walking, i.e. the rate at which \\emph{x} changes, so:\n\n$\\frac{dx}{dt} = v$\n\nPlugging this into our previous formula, we get\n\n$\\frac{dy}{dt} = \\frac{h v}{H - h}$\n\nwhich is the final answer."
+    ], 
+    "hints": [
+        "Try drawing a picture and labeling with variables. Which ones are\nconstant? Which are changing?"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_C_03", 
+    "course": "MATH102", 
+    "statement": "Consider the function\n\n\\[f(x) = x^2e^{-x}\\]\n\ndefined on the whole real line.\n\nFind all zeros of $f, f'$ and $f''$ and determine all local minima,\nmaxima and inflection points of \\emph{f}. Sketch the graph of \\emph{f}.\nYou may use the fact that $\\lim_{x \\to \\infty} x^2 e^{-x} = 0$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

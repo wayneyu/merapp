@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(j)", 
+    "course": "MATH105", 
+    "statement": "Find the area under the graph of $\\displaystyle y = e^{-2x}$ for\n$\\displaystyle x \\geq 0$", 
+    "year": 2009, 
+    "sols": [
+        "This question is asking for the value of\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx$\n\nTo solve this, we solve the improper integral as follows. First change\nto a limit\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx$\n\nNext we integrate:\n\n$\\displaystyle \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b}$\n\nPlug in the endpoints:\n\n$\\displaystyle  \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b} = \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right)$\n\nAnd we notice that the first limit is 0 (\\emph{e} to a large negative\nnumber is 0) and the second is independent of the limit and thus\n\n$\\displaystyle  \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right) = \\frac{1}{2}$\n\nThus\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "To proceed, we want to evaluate the integral\n\n$\\displaystyle \\int_{0}^{\\infty}e^{-2x}\\,dx$"
+    ]
+}

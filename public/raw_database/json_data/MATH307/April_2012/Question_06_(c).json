@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(c)", 
+    "course": "MATH307", 
+    "statement": "Now suppose a vector \\textbf{\\emph{y}} contains measurements of the\n\\emph{daily average} temperature for 10 years. Explain how to use the\nDiscrete Fourier Transform to produce a frequency-amplitude plot for\nthis data. You should write the MATLAB/Octave commands you would use,\nand include the range of frequencies 0 to 0.1\nday\\textsuperscript{\\emph{-1}} on your plot.", 
+    "year": 2012, 
+    "sols": [
+        "T = 3650\n\nN = linspace(-500,500,1000);\n\nOmega = N/T;\n\namp = sqrt(2-2*cos(2*pi*T*(1-omega)))./(2*pi*T*abs(1-omega));\n\nplot(Omega, amp);"
+    ], 
+    "hints": []
+}

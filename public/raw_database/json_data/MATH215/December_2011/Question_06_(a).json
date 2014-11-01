@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH215", 
+    "statement": "Let\n\n\\[A = \\left(\\begin{array}{cc}\n3 & 1 \\\\ -4 & -1\n\\end{array}\\right)\\]\n\n\\textbf{(a)} Find the eigenvalues of \\emph{A}.", 
+    "year": 2011, 
+    "sols": [
+        "We have\n\n\\[A - \\lambda I = \\left(\\begin{array}{cc}\n3 - \\lambda & 1 \\\\ -4 & -1 - \\lambda\n\\end{array}\\right)\\]\n\nwhich has determinant\n\n\\[\\displaystyle{}(3 - \\lambda)(-1 - \\lambda) - (-4)(1) = \\lambda^2 - 2 \\lambda + 1.\\]\n\nSetting $\\lambda^2 - 2 \\lambda + 1 = 0$ we find $\\lambda = 1$ as the\nonly eigenvalue."
+    ], 
+    "hints": [
+        "To find the eigenvalues of a matrix $M$, we require\n$\\det(M - \\lambda I) = 0$."
+    ]
+}

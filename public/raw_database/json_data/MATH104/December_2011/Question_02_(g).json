@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_02_(g)", 
+    "course": "MATH104", 
+    "statement": "Draw the graph of \\emph{$f$(x)} on the graph provided. Accurately place\nall critical points and inflection points, indicate all asymptotes, and\nmake sure your graph correctly shows where \\emph{$f$(x)} is increasing and\ndecreasing and correctly shows its concavity.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH104_December2011_Question_2_(g).jpg}\n\\end{description}", 
+    "year": 2011, 
+    "sols": [
+        "Following the order given in Hint 2, we first draw the asymptotes.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M104Dec20112g-1.jpg}\n\\end{description}\n\nWe then draw the maxima and minima.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M104Dec20112g-2.jpg}\n\\end{description}\n\nWe draw the inflection point.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M104Dec20112g-3.jpg}\n\\end{description}\n\nFinally, we use information about where the function is increasing and\ndecreasing, as well as its concavity, to connect these points and finish\nthe graph.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M104Dec20112g-4.jpg}\n\\end{description}\n\nA graphing calculator would produce the following picture:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Graph_for_104_2011_2(g).jpg}\n\\caption{Graph for 104 2011 2(g).jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "You don't even need to use the expression for $f(x)$; the answers from\nparts a - f should be sufficient to draw the graph.", 
+        "Try going step by step.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Draw the asymptotes (part f).\n\\item\n  Draw the local maxima and minima (part e).\n\\item\n  Draw the inflection point (part e).\n\\item\n  Look at where the function is increasing/decreasing (part c) and try\n  to connect the points you've already drawn.\n\\end{enumerate}"
+    ]
+}

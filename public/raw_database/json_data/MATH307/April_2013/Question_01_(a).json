@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH307", 
+    "statement": "Write down the definition of the matrix norm $\\|A\\|$ of a matrix\n\\emph{A}.", 
+    "year": 2013, 
+    "sols": [
+        "The \\emph{matrix} or \\emph{operator norm} is defined as\n\n\\[\\left \\| A \\right \\| = \\max_{x:\\, \\left \\| x \\right \\|\\neq 0}\\frac{\\left \\| Ax \\right \\|}{\\left \\| x \\right \\|}\\]"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH101", 
+    "statement": "Solve the differential equation:\n\n\\[y'=xy^2\\] with initial conditions $y(0)=1$.", 
+    "year": 2009, 
+    "sols": [
+        "We proceed as in the hint\n\n$\\frac{dy}{dx}=xy^2$\n\nbecomes\n\n$\\displaystyle \\frac{dy}{y^{2}}=xdx$\n\nIntegrating both sides gives\n\n$-y^{-1} = \\frac{x^{2}}{2} + C$\n\nPlugging in $y(0)=1$ to solve for the constant yields\n\n$\\displaystyle -1 = C$\n\nTherefore,\n\n$-\\frac{1}{y} = \\frac{x^{2}}{2} -1$\n\nand isolating for \\emph{y}, we have\n\n$y = \\frac{2}{2-x^{2}}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Write\n\n$y' = \\frac{dy}{dx}$\n\nthen try a separation of variables."
+    ]
+}

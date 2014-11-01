@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(c)", 
+    "course": "MATH152", 
+    "statement": "Consider the 2 x 2 system of differential equations\n\n\\[\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\\]\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nBased on the results in\n\\href{Science:Math Exam Resources/Courses/MATH152/April 2012/Question 08 (a)}{(a)}\nand\n\\href{Science:Math Exam Resources/Courses/MATH152/April 2012/Question 08 (b)}{(b)},\nwrite down the general solution in real-valued form.", 
+    "year": 2012, 
+    "sols": [
+        "The complex solution $\\vec{\\mathbf{z}}(t)$ that we found in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(a)}{(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(b)}{(b)}\nis\n\n\\begin{align*}\n\\vec{\\mathbf{z}}(t) &= e^{-t}e^{2ti}\\begin{pmatrix} 1 \\\\ -i \\end{pmatrix} \\\\\n&= e^{-t}(\\cos 2t + i\\sin 2t)\\begin{pmatrix} 1 \\\\ -i \\end{pmatrix} \\\\\n&= e^{-t}\\begin{pmatrix}\\cos 2t \\\\ \\sin 2t\\end{pmatrix} + ie^{-t}\\begin{pmatrix} \\sin 2t \\\\ -\\cos 2t\\end{pmatrix}\n\\end{align*}\n\nFrom this we can read off the real-valued form as\n\n\\[\\vec{\\mathbf{x}}(t) = C_1 e^{-t}\\begin{pmatrix}\\cos 2t \\\\ \\sin 2t\\end{pmatrix} + C_2 e^{-t}\\begin{pmatrix} \\sin 2t \\\\ -\\cos 2t\\end{pmatrix}\\]"
+    ], 
+    "hints": [
+        "Remember that\n\n\\[\\displaystyle e^{ix} = \\cos(x) + i\\sin(x)\\] for any x. You can use\nthis to decompose the solution into its real and imaginary parts. Since\nno imaginary component can be expressed in terms of the real components,\nthe real and imaginary components can be used as a basis for the general\nsolution."
+    ]
+}

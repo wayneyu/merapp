@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the diagonalizable matrix $A = \\begin{bmatrix}\n1 &0 \\\\ \n1 & 0.5\n\\end{bmatrix}= \\begin{bmatrix}\n1 &0 \\\\ \n2 & 1\n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n0&0.5 \n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n2& 1\n\\end{bmatrix}^{-1}$\n\n\\textbf{(a)} Find a solution $x(t) =\\begin{bmatrix}\nx_1(t)\\\\ x_2(t)\n\n\\end{bmatrix}$ of the difference equation $\\displaystyle x(t+1) = Ax(t)$\nsatisfying the initial condition $x_0 = \\begin{bmatrix}\n4\\\\1 \n\\end{bmatrix}$. Determine the limit of the ratio\n$\\displaystyle x_1(t)/ x_2(t)$ as $t \\to \\infty$.", 
+    "year": 2006, 
+    "sols": [
+        "We want to find the ratio of $\\displaystyle x_1(t)/x_2(t)$ as\n$t \\to \\infty$ for the difference equation\n$\\displaystyle x(t+1) = Ax(t)$. The difference equation suggests that\nfor every increment of 1 unit time, we want to multiply\n$\\displaystyle x(t)$ by $\\displaystyle A$.\n\nThe matrix A is already given in the diagonalized form of\n$A = \\begin{bmatrix}\n1 &0 \\\\ \n2 & 1\n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n0&0.5 \n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n2& 1\n\\end{bmatrix}^{-1}$\n\nGiven the initial condition of $x_0 = \\begin{bmatrix}\n4\\\\1 \n\\end{bmatrix}$, we have the equation $\\displaystyle x_k = A^{k}x_0$,\nwhich can also be expressed as the form\n\n\\[x_k = c_1 (1)^{k} \\begin{bmatrix}\n1\\\\2 \n\\end{bmatrix}\n+c_2(0.5)^{k}\\begin{bmatrix}\n0\\\\1 \n\\end{bmatrix}\\]\n\nwhere you can obtain \\emph{c\\textsubscript{1}},\n\\emph{c\\textsubscript{2}} by plugging in the initial condition\n\\emph{x\\textsubscript{0}} and solving\n\n\\[x_0 = \\begin{bmatrix}\n4\\\\1 \n\\end{bmatrix}= c_1\\begin{bmatrix}\n1\\\\2 \n\\end{bmatrix}\n+ c_2\\begin{bmatrix}\n0\\\\1 \n\n\\end{bmatrix}\\]\n\nAs $k \\to \\infty$, the component with $0.5^k$ would reach 0 and you\nwould be left with $x_k = c_1\\begin{bmatrix}\n1\\\\2 \n\n\\end{bmatrix}$ and therefore the ratio of $\\displaystyle x_1(t)/x_2(t)$\nwould just be $\\displaystyle 1/2$."
+    ], 
+    "hints": []
+}

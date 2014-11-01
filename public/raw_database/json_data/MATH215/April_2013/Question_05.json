@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_05", 
+    "course": "MATH215", 
+    "statement": "Use the method of diagonalization to transform the following system of\nequations into a decoupled one:\n\n$\\displaystyle x' = \\begin{pmatrix}\n4 & 2\\\\\n2 & 1\n\\end{pmatrix}\nx +\n\\begin{pmatrix}\nt\ne^{t^2}\n\\end{pmatrix}$\n\nand you must explicitly calculate all matrices involved. Here\n\n$\\displaystyle x(t) = \\begin{pmatrix}\nx_1(t)\\\\\nx_2(t)\\end{pmatrix}\n.$ You do not need to solve the system.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

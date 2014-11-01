@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07", 
+    "course": "MATH101", 
+    "statement": "Find the solution of the differential equation\n\n\\[\\frac{dL}{dt}=kL^{2}\\ln t\\]\n\nthat satisfies $L(1)=1$. Here, $k$ is a constant that will appear in\nyour final answer.", 
+    "year": 2010, 
+    "sols": [
+        "Beginning with the equation\n\n\\[\\frac{dL}{dt} = kL^2\\ln t\\]\n\nwe separate the variables $L$ and $t$ to obtain\n\n\\[\\frac{1}{L^2}dL = k \\ln t \\,dt\\]\n\nIf we then integrate both sides of this equation (ignoring the constant\nof integration in the first case) we find that\n\n\\[\\int \\frac{1}{L^2}dL = -\\frac{1}{L}\\]\n\nand using integration by parts we find that\n\n\\[\\int k \\ln t \\, dt =  k (t \\ln t - t) + C\\]\n\nand so if we set the two of these equal to each other we find that\n\n\\[-\\frac{1}{L} = k(t \\ln t - t) + C\\]\n\nIf we solve for $L$ we find\n\n\\[L = - \\frac{1}{k(t \\ln t - t) + C}\\]\n\nSince $L(1) = 1$ it follows that $C = k - 1$ and so\n\n\\[L(t) = -\\frac{1}{k(t\\ln t - t) + k - 1}\\]"
+    ], 
+    "hints": [
+        "Can you separate the variables $L$ and $t$?"
+    ]
+}

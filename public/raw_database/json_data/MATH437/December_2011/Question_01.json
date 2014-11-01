@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01", 
+    "course": "MATH437", 
+    "statement": "Let \\emph{n} be an integer such that $\\displaystyle n > 1$. Prove that\n$\\displaystyle n \\nmid (2^{n}-1)$.", 
+    "year": 2011, 
+    "sols": [
+        "Assume towards a contradiction that $\\displaystyle n \\mid (2^{n}-1)$.\n\nLet \\emph{p} be the smallest prime dividing \\emph{n}. Notice that\n$\\displaystyle 2^{n}-1$ is odd and so \\emph{p} is not 2. Thus, we have\nthat\n\n$\\displaystyle 2^{n} \\equiv 1 \\mod{p}$\n\nand by Fermat's Little Theorem, we also have that\n\n$\\displaystyle 2^{p-1} \\equiv 1 \\mod{p}$.\n\nThus, we also have that (via the Euclidean Algorithm)\n\n$\\displaystyle 2^{\\gcd(n,p-1)} \\equiv 1 \\mod{p}$.\n\nHowever $\\displaystyle \\gcd(n,p-1) = 1$ since \\emph{p} was the smallest\nprime dividing \\emph{n}. This gives us that\n\n$\\displaystyle 2 \\equiv 1 \\mod{p}$\n\nwhich is a contradiction."
+    ], 
+    "hints": [
+        "Prove this by contradiction.", 
+        "A helpful idea is to consider the smallest prime dividing \\emph{n}.", 
+        "Combining Fermat's Little Theorem as well as notice that if\n\n$\\displaystyle 2^{a} \\equiv 1\\mod{p}$\n\nand\n\n$\\displaystyle 2^{b} \\equiv 1\\mod{p}$\n\nthen\n\n$\\displaystyle 2^{\\gcd(a,b)} \\equiv 1\\mod{p}$\n\nwill help complete the problem."
+    ]
+}

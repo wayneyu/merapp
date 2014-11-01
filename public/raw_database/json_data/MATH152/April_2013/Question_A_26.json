@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_26", 
+    "course": "MATH152", 
+    "statement": "Find the eigenvalues of the matrix \\emph{A} where\n$A = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$", 
+    "year": 2013, 
+    "sols": [
+        "Proceeding as in the hint, we have\n\n$\\det(A-I\\lambda)\n= \\det\\left( \\begin{bmatrix}\n0 & 1  \\\\\n1 & 0  \n\\end{bmatrix}\n-\\begin{bmatrix}\n\\lambda & 0  \\\\\n0 & \\lambda  \n\\end{bmatrix}\n\\right)\n= \\det\\left( \\begin{bmatrix}\n-\\lambda & 1  \\\\\n1 & -\\lambda  \n\\end{bmatrix}\n\\right)\n= \\lambda^{2}-1 = (\\lambda-1)(\\lambda+1)$\n\nand so the eigenvalues are given by $\\lambda = \\pm1$"
+    ], 
+    "hints": [
+        "Eigenvalues are the roots of the characteristic polynomial given by\n$\\det(A-\\lambda I)$."
+    ]
+}

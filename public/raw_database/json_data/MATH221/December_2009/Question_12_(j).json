@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_12_(j)", 
+    "course": "MATH221", 
+    "statement": "Mark each statement either True or False. You do not have to justify\nyour answer.\n\nThe matrix $A = \\begin{bmatrix}\n-0.6 & -0.8 \\\\ \n-0.8 & 0.6 \n\\end{bmatrix}$ is the matrix of rotation by some angle \u00ce\u00b8 in\n$\\displaystyle \\mathbb{R}^{2}$?", 
+    "year": 2009, 
+    "sols": [
+        "\\textbf{False}\n\nIn two dimensions every rotation matrix can be written in the\nform\\[\\begin{bmatrix}\ncos\\theta & -sin\\theta \\\\ \nsin\\theta & cos\\theta\n\\end{bmatrix},\\] Row 1, Column 1 and Row 2, Column 2 don$^{\\prime}$t\nmatch."
+    ], 
+    "hints": []
+}

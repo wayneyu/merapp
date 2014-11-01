@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $\\displaystyle\\lim_{x\\rightarrow0}f(x)$ does not exist and\n$\\displaystyle\\lim_{x\\rightarrow0}g(x)$ does not exist, then\n$\\displaystyle\\lim_{x\\rightarrow0}\\left(f(x)+g(x)\\right)$ does not\nexist.", 
+    "year": 2012, 
+    "sols": [
+        "One common function where $\\lim_{x \\to 0}f(x)$ doesn't exist is the\nrational function $f(x) = \\frac{1}{x}$. The same is true for its\nnegative, $g(x) = -\\frac{1}{x}$. Both have a limit of $\\infty$ or\n$-\\infty$ at 0.\n\nHowever, when these two functions are added together, we get:\n\n$\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = \\lim_{x \\to 0} 0 = 0$\n\nWhich is a perfectly satisfactory limit. Thus, these two functions are a\ncounterexample to this statement, proving it false.\n\nTo see an interactive illustration of this solution, see\n\\href{https://www.desmos.com/calculator/79by0j8hx0}{this page}."
+    ], 
+    "hints": [
+        "One way in which limits fail to exist are at vertical asymptotes (where\nthe function blows up). What would a function with a vertical asymptote\nlook like? Can you think of other ways in which limits don't exist? What\nwould an example function look like for these new behaviours?", 
+        "Is there a way to create a g such that the problems you made in f get\nremoved?"
+    ]
+}

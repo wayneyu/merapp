@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(a)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\]\n\nFind the domain of $f$.", 
+    "year": 2011, 
+    "sols": [
+        "The function $\\ln(x)$ is defined for all $x > 0$. Therefore, in order\nfor $\\ln(4 - x^2)$ to be defined, we need $4 - x^2 > 0$. If we factor\nthe left side of the inequality, we get\n\n\\[\\displaystyle (2 - x)(2 + x) > 0\\]\n\nFor what values of x is this inequality true?\n\nIf $x = 2$ or \\emph{-2}, then the left side of the inequality is zero,\nwhich is not allowed. So 2 and -2 cannot be part of our domain.\nSimilarly, if $x > 2$ or $x < -2$, then the left side of the inequality\nwill be negative, contradicting the inequality. So these values are also\nexcluded from our domain. If we choose $-2 < x < 2$ we find that the\nleft hand side of the inequality is positive, satisfying the inequality.\nThus our domain is $-2 < x < 2$, which written in interval notation is\n$\\displaystyle (-2, 2)$."
+    ], 
+    "hints": [
+        "Where is the function $\\ln (x)$ defined? What does that tell you about\nthe argument ($4 - x^2$) of this function?"
+    ]
+}

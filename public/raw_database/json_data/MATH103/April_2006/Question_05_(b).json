@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH103", 
+    "statement": "Consider the region below the graph $\\displaystyle y = 1-x^{3}$ (and\nabove the \\emph{x} axis) between $x=0$ and $x=1$.\n\nb) Find the volume of the solid dome obtained by rotating this region\nabout the \\emph{y}-axis.", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

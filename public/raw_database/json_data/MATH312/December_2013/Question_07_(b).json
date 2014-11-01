@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH312", 
+    "statement": "Suppose \\emph{p} is an odd prime and let \\emph{a} be a primitive root\nmod \\emph{p}. Show that $-a$ is a primitive root mod \\emph{p} if and\nonly if $p \\equiv 1 \\mod{4}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

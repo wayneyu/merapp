@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\[f(x)=\\frac{2x^3}{3x^2-9}\\]\n\nIts first and second derivatives are given by\n\n\\[f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\]\n\nOn which intervals if f(x) concave up? On which intervals is f(x)\nconcave down?", 
+    "year": 2012, 
+    "sols": [
+        "Since we are given the second derivative, it is easy to see that the\nderivative is 0 at $x=0$. The derivative is undefined when $x^{2}-3 = 0$\nso at the points $x = \\pm \\sqrt{3}$. Let's look at each interval\nindividually.\n\n\\textbf{Case 1\\[(-\\infty,-\\sqrt{3})\\]}\n\nOn this interval, we have that at the point $x=-2$ that the second\nderivative is\n$\\displaystyle \\frac{4(-2)((-2)^{2}+9)}{((-2)^{2}-3)^{3}} = (-8)(13) < 0$\nand so the function is concave down on this interval.\n\n\\textbf{Case 2\\[(-\\sqrt{3},0)\\]}\n\nOn this interval, we have that at the point $x=-1$ that the second\nderivative is\n$\\displaystyle \\frac{4(-1)((-1)^{2}+9)}{((-1)^{2}-3)^{3}} = \\frac{-40}{-8} = 5 > 0$\nand so the function is concave up on this interval.\n\n\\textbf{Case 3\\[(0,\\sqrt{3})\\]}\n\nOn this interval, we have that at the point $x=1$ that the second\nderivative is\n$\\displaystyle \\frac{4(1)((1)^{2}+9)}{((1)^{2}-3)^{3}} = \\frac{40}{-8} = -5 < 0$\nand so the function is concave down on this interval.\n\n\\textbf{Case 4\\[(\\sqrt{3},\\infty)\\]}\n\nOn this interval, we have that at the point $x=2$ that the second\nderivative is\n$\\displaystyle \\frac{4(2)((2)^{2}+9)}{((2)^{2}-3)^{3}} = (8)(13) > 0$\nand so the function is concave up on this interval.\n\nThis completes the problem."
+    ], 
+    "hints": [
+        "Remember that to find intervals where the function is concave up or\nconcave down, we need to check all the intervals between points where\nthe second derivative derivative is undefined and where the derivative\nis zero. Find these values and check points between all these intervals."
+    ]
+}

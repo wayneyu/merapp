@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH221", 
+    "statement": "Find the standard matrix of the linear transformation of\n\\textbf{R}\\textsuperscript{3} which reflects across the \\emph{yz}-plane.", 
+    "year": 2011, 
+    "sols": [
+        "To find the standard matrix of this linear transformation, we simply\nconsider the image of the three base vectors.\n\nThe vector {[}1, 0, 0{]} is sent to the vector {[}-1, 0, 0{]} and the\nvectors {[}0, 1, 0{]} and {[}0, 0, 1{]} simply remain where they are\n(since they belong to the \\emph{yz}-plane itself). Hence the standard\nmatrix of this linear transformation is\n\n\\[\\left[ \\begin{array}{ccc}\n-1 & 0 & 0\\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]\\]"
+    ], 
+    "hints": [
+        "What does this transformation do to the three basis vectors {[}1,0,0{]},\n{[}0,1,0{]}, and {[}0,0,1{]}?"
+    ]
+}

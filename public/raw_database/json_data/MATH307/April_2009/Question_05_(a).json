@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH307", 
+    "statement": "5. The function $e^{i\\pi x}$ for x $\\varepsilon$ {[}0, 1{]} can be\nexpanded in a Fourier series\n\n$e^{i\\pi x}$ = $\\sum_{n=-\\propto }^{\\propto }c _{n} e^{2\\pi inx}$\n\n(a) Caculate $c_{0}$ and $c_{1}$. Simplify as much as possible. Recall\n$\\int e^{iax} dx = \\frac{e^{iax}}{ia} + C$ for any a $\\neq$ 0.", 
+    "year": 2009, 
+    "sols": [
+        "We have $\\displaystyle f(x) = e^{i\\pi x}$ and\n$\\displaystyle T = 1 - 0 = 1$. Then\n\n\\begin{align*}\nc_{0} &= \\frac{1}{T}\\int_{0}^{1}e^{-2\\pi inx}f(x)dx\\\\\n&= \\int_{0}^{1}e^{0}e^{i\\pi x}dx\\\\\n&= \\frac{1}{i\\pi }e^{i\\pi x}|_{0}^{1}\\\\\n&= \\frac{1}{i\\pi }(e^{i\\pi }-1) + C\\\\\n&= \\frac{1}{i\\pi }(\\cos(\\pi ) + i\\sin(\\pi )-1) + C\\\\\n&= -\\frac{2}{i\\pi } + C\n\\end{align*}\n\nand\n\n\\begin{align*}\nc_{1} &= \\frac{1}{T}\\int_{0}^{1}e^{-2\\pi inx}f(x)dx\\\\\n&= \\int_{0}^{1}e^{-2i\\pi x}e^{i\\pi x}dx\\\\\n&= \\int_{0}^{1}e^{-i\\pi x}dx\\\\\n&= -\\frac{1}{i\\pi }e^{-i\\pi x}|_{0}^{1}\\\\\n&= \\frac{1}{i\\pi }(1-e^{-i\\pi }) + C\\\\\n&= \\frac{1}{i\\pi }(1-\\cos(-\\pi ) - i\\sin(-\\pi )) + C\\\\\n&= \\frac{2}{i\\pi } + C\n\\end{align*}"
+    ], 
+    "hints": []
+}

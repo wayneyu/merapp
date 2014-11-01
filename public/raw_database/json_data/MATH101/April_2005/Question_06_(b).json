@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH101", 
+    "statement": "A tree trunk is 60 feet long and has circular cross sections. The\ndiameters in feet measured at 10-foot intervals starting at the bottom\nof the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in\ncubic feet, is computed using the formula\n\n\\[V = \\int_0^{60} A(y)\\,dy,\\]\n\nwhere $A(y)$ is the cross-sectional area of the trunk, in square feet,\n$y$ feet above the bottom of the tree.\n\n(b) It is known that the fourth derivative of $A(y)$ has values that lie\nbetween 3 and 30,000. How many measurements of the tree's diameter\n(equally spaced along the tree trunk) would be needed in order to\nestimate its volume using Simpson's Rule to an accuracy of 1 cubic foot?\nYou may use the fact that the error made in approximating a definite\nintegral $\\int_a^b f(x)\\,dx$ by the corresponding Simpson's Rule\napproximation $S_n$ is at most $(M(b-a)^5)/(180n^4)$, where\n$\\left|f^{(4)}(x)\\right|\\leq M$ on the interval $[a,b]$.\n\nYou must give your answer as explicit integer for full marks.", 
+    "year": 2005, 
+    "sols": [
+        "If the error associated with Simpson's rule is bounded by 1, then we\nwould get that the approximation is precise to 1 cubic foot. Hence we\ncompute when\n\n\\[\\frac{M(b-a)^5}{180n^4} = \\frac{30000(60-0)^{5}}{180n^{4}} \\leq 1\\]\n\nSolving and using {[}prime{]} factorization techniques, we have\n\n\\begin{align*}\n\\frac{30000(60-0)^{5}}{180n^{4}} &\\leq 1 \\\\\n\\frac{3\\cdot 10^{4}\\cdot3^{5}\\cdot2^{5}\\cdot 10^{5}}{2\\cdot3^{2}\\cdot10} &\\leq n^{4} \\\\\n\\frac{ 3^{6}\\cdot2^{5}\\cdot 10^{9}}{2\\cdot3^{2}\\cdot10} &\\leq n^{4} \\\\\n3^{4}\\cdot2^{4}\\cdot 10^{8} &\\leq n^{4} \\\\\n3\\cdot2\\cdot 10^{2} &\\leq n \\\\\n600 &\\leq n \\\\\n\\end{align*}\n\nThus \\emph{n} should be at least 600."
+    ], 
+    "hints": [
+        "Justify to yourself that it suffices to find an \\emph{n} so that\n\n\\[\\frac{M(b-a)^5}{180n^4} = \\frac{30000(60-0)^{5}}{180n^{4}} \\leq 1\\]\n\nDon't forget that \\emph{n} has to be even! (By the constraints of\nSimpson's rule)"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Streptococcus viridans} bacteria divide along a preferred axis and\ntherefore form chains when they divide. You study a population of\n\\emph{S. viridans} in a blood culture. Let \\emph{X} be the length (in\n\u00c2\u00b5m) of a randomly chosen chain. Its distribution is described by the\nprobability density function\n\n\\[p(x) = \\frac1{x}, \\quad 1 \\leq x \\leq e\\]\n\nFind the standard deviation of \\emph{X}.", 
+    "year": 2009, 
+    "sols": [
+        "At first we calculate the Variance $Var[X]$.\n\n\\begin{align*}\nVar[X]=& E[X^2]-(E[X])^2\\\\\n =& \\int_1^ex^2\\cdot\\frac1xdx - (e-1)^2\\\\\n =& \\int_1^exdx - (e-1)^2\\\\\n =& \\left.\\frac{x^2}{2}\\right|_1^e - (e-1)^2\\\\\n =& \\frac{e^2}2 - \\frac12 - e^2 +2e -1 \\\\\n =& -\\frac{e^2}2+2e-\\frac32 \\\\\n =&  -\\frac12(e-3)(e-1)\\\\\n =& \\frac12(3-e)(e-1) \\quad (\\approx 0.242)\n\\end{align*}\n\nThen\n\n\\[\\sigma=\\sqrt{\\frac12(3-e)(e-1)}\\approx0.492\\]"
+    ], 
+    "hints": [
+        "Use the formula for the standard derivation\n\n$\\sigma = \\sqrt{Var[X]},\\quad\\text{with}\\quad Var[X]=E[X^2] - (E[X])^2.$\n\nRecall from (a) that $E[X] = e-1.$"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(j)", 
+    "course": "MATH220", 
+    "statement": "Let $\\displaystyle A$ be the set $\\{ 1, x, y\\}$. What is the power set\n$\\displaystyle \\mathcal{P}(A)$?", 
+    "year": 2011, 
+    "sols": [
+        "$\\displaystyle \\mathcal{P}(A) = \\{\\emptyset, \\{1\\}, \\{x\\}, \\{y\\}, \\{1,x\\} ,\\{1,y\\}, \\{x,y\\}, \\{1,x,y\\} \\}$"
+    ], 
+    "hints": [
+        "The power set is the set of all subsets of a set.", 
+        "The number of elements of the power set of a set with $n$ elements is\n$2^n$."
+    ]
+}

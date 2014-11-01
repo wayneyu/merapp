@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH312", 
+    "statement": "Determine whether 209 passes Miller's test to the base 2.", 
+    "year": 2009, 
+    "sols": [
+        "Recall that 2 passes Miller's test if\n\n$\\displaystyle 2^{d} \\equiv 1 \\mod{209}$\n\nor for some value \\emph{r}\n\n$\\displaystyle 2^{2^{r}d} \\equiv -1 \\mod{209}$\n\nwhere $\\displaystyle 209-1 = 208 = 2^{s}d$ and\n$\\displaystyle 0 \\leq r \\leq s-1$. If 2 fails the test, then 209 is not\nprime. For us, we see that\n$\\displaystyle 208 = 2^{3}(26) = 2^{4}\\cdot13$ and so \\emph{d} is 13 and\n\\emph{r} is 4. We compute manually.\n\n$\\displaystyle 2^{13} \\equiv 2^{8}\\cdot 2^{5} \\equiv (256)(32) \\equiv (47)(32) \\equiv 1504 \\equiv 41 \\not\\equiv \\pm 1 \\mod {209}$\n\nand for the powers of 2,\n\n$\\displaystyle 2^{2\\cdot 13} \\equiv 41^{2} \\equiv 1681 \\equiv 9 \\not\\equiv \\pm 1 \\mod {209}$\n\n$\\displaystyle 2^{4\\cdot 13} \\equiv 9^{2} \\equiv 81 \\not\\equiv \\pm 1 \\mod {209}$\n\n$\\displaystyle 2^{8\\cdot 13} \\equiv 81^{2} \\equiv (2 \\cdot 41-1)^2 \\equiv 4 \\cdot 41^2-4\\cdot 41 + 1 \\equiv 4 \\cdot 9 - 164 + 1 \\equiv 36+45+1 \\equiv 82 \\not\\equiv \\pm 1 \\mod {209}$\n\n$\\displaystyle 2^{16\\cdot 13} \\equiv 82^{2} \\equiv (81+1)^{2} \\equiv 81^{2} + 162 + 1 \\equiv 82 + 162 + 1 \\equiv 36 \\not\\equiv \\pm 1 \\mod {209}$\n\nand so the number 209 is not prime and 2 fails Miller's test. Thus 209\nis composite. In fact $\\displaystyle 209 = 11\\cdot 19$."
+    ], 
+    "hints": [
+        "Recall that 2 passes Miller's test if\n\n$\\displaystyle 2^{d} \\equiv 1 \\mod{209}$\n\nor the following holds for some \\emph{r}\n\n$\\displaystyle 2^{2^{r}d} \\equiv -1 \\mod{209}$\n\nwhere $\\displaystyle 209-1 = 208 = 2^{s}d$ and\n$\\displaystyle 0 \\leq r \\leq s-1$. If 2 passes the test, then 209 is a\nprobable prime. If it fails the test, then the number is not prime."
+    ]
+}

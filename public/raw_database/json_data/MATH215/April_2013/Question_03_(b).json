@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH215", 
+    "statement": "Let $\\displaystyle -\\infty < y_{0} < \\infty$ and consider the following\ninitial value problem:\n\n$\\displaystyle \\frac{dy}{dt} = e^{y} - e^{-y} \\quad y(0) = y0 \\quad  t \\geq 0:$\n\n(b) Determine all values of $y_0$ such that $y(t)$ is increasing for all\n$t \\geq  0$ where the solution to the initial value problem exists. (c)\nClassify the equilibrium solution(s) as asymptotically stable or\nunstable. Provide a brief reason.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

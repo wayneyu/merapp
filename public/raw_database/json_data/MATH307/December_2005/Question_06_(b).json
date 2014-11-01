@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the differential equation $x'(t)=\\begin{bmatrix}\n-1 & -\\alpha \\\\\n1 & -1\n\\end{bmatrix}x(t)$\n\n(b) Find the matrix exponential $\\displaystyle e^{tA}$ when\n$\\displaystyle \\alpha=4$", 
+    "year": 2005, 
+    "sols": [
+        "$x'(t)=\\begin{bmatrix}\n-1 & -4 \\\\\n1 & -1\n\\end{bmatrix}x(t)$\n\nFind the eigenpairs to diagonalize the matrix!\n\n\\begin{align*}\n\\text{det}\\begin{bmatrix}\n\\lambda +1 & 4 \\\\\n-1 & \\lambda +1\n\\end{bmatrix}=\\lambda^2+2\\lambda +1+4\n\\end{align*}\n\nSetting the above to zero and solving yields\n\n\\begin{align*}\n&\\lambda=\\frac{-2\\pm \\sqrt{2^{2}-4(5)}}{2}\\\\\n&=\\frac{-2\\pm \\sqrt{-16}}{2}\\\\\n&= \\frac{-2\\pm 4i}{2}\\\\\n&=-1 \\pm 2i\n\\end{align*}\n\nLet $\\displaystyle \\lambda_1=-1+2i, \\lambda_2=-1-2i$\n\nFind corresponding eigenvectors\n\n$(\\lambda_1I-A)\\bar{x}=\\bar{0}$ $\\begin{bmatrix}\n2i & 4\\\\\n-1 & 2i\n\\end{bmatrix} \\begin{bmatrix}\nx_1\\\\\nx_2\n\\end{bmatrix} = \\begin{bmatrix} 0\\\\ 0\\end{bmatrix}$\n\nFrom the second row\\[x_1=2ix_2\\] \u00e2\u0080\u0093\\textgreater{} corresponding\neigenvector\n\nFind corresponding eigenvectors\n\n$(\\lambda_2I-A)\\bar{x}=\\bar{0}$ $\\begin{bmatrix}\n-2i & 4\\\\\n-1 & -2i\n\\end{bmatrix} \\begin{bmatrix}\nx_1\\\\\nx_2\n\\end{bmatrix} = \\begin{bmatrix} 0\\\\ 0\\end{bmatrix}$\n\nFrom the second row\\[x_1=-2ix_2\\] \u00e2\u0080\u0093\\textgreater{} corresponding\neigenvector\n\nTherefore\n\n$S = \\begin{bmatrix} 2i & -2i \\\\ 1 & 1 \\end{bmatrix}$\n\n$D= \\begin{bmatrix} -1+2i & 0\\\\ 0 & -1-2i \\end{bmatrix}$\n\n$S^-1 = (4i)^{-1} \\begin{bmatrix} 1 & 2i \\\\ -1 & 2i \\end{bmatrix}$\n\nSo\n\n$e^{tA} =(4i)^{-1}\\begin{bmatrix} 2i & -2i \\\\ 1 & 1 \\end{bmatrix}\\begin{bmatrix} e^{t(-1+2i)} & 0\\\\ 0 & e^{t(-1-2i)} \\end{bmatrix}\\begin{bmatrix} 1 & 2i \\\\ -1 & 2i\\end{bmatrix}$\n\nNOTE: please ignore the \\textless{}span\\textgreater{},\n\\textless{}\\textgreater{}.. not sure how to get rid of them."
+    ], 
+    "hints": []
+}

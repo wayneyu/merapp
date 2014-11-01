@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH215", 
+    "statement": "Solve $\\displaystyle y' + y = t$ for $y(t)$, subject to $y(0) = -2$.", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

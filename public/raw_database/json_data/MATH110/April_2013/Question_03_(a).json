@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(a)} Find the \\emph{x}-intercepts of $f(x)$, if any exist.", 
+    "year": 2013, 
+    "sols": [
+        "The function has \\emph{x}-intercepts whenever\n\n$0 = \\frac{\\sin(x)}{e^{x}}$\n\nThis occurs whenever $\\sin(x) = 0$ on the interval $[0, \\pi]$. This\noccurs when the \\emph{x} value is 0 or $\\pi$."
+    ], 
+    "hints": [
+        "Recall that the \\emph{x}-intercepts are found by setting the function to\nzero and solving."
+    ]
+}

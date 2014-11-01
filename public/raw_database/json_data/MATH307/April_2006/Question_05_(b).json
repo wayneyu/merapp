@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH307", 
+    "statement": "A matrix \\emph{A} and a vector \\emph{b} are given by\n\n$\\displaystyle A = \\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$\n\n$\\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}$\n\nFind an orthonormal basis for $\\mathbb{R}^3: \\{ u_1,u_2,u_3\\}$ in which\n$u_1,u_2$ span the column space R(A) of the matrix A. How does the third\nbasis vector $u_3$ relate to the fundamental subspaces of A?", 
+    "year": 2006, 
+    "sols": [
+        "$u_3$ is orthogonal to the R(A) since it is a part of the orthonormal\nbasis for $\\mathbb{R}^3$\n\nRecall that $R(A)^\\perp =N(A^T)$\n\nSince the dim of $N(A^T)=1$ , the basis of $N(A^T)$ is $u_3$\n\nWe can find $u_3$ either by finding $N(A^T)$ or using gram-schmidt\nprocess or with cross products\n\nWe solve it by finding $N(A^T)$\n\n$A^Tu_3=0$\n\n$\\begin{bmatrix}\n1 & 1 & 0 \\\\\n0& 1 & 1\n\\end{bmatrix}\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}=\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}$\n\n$a=c$\n\n$b=-a$\n\n$N(A^T)= \\{\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}\\}$\n\nNormalize the vector\n\n$u_3= \\frac{1}{\\sqrt3}\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$\n\nAlternatively, if you did not recognize that $u_3 \\in N(A^T)$ we can\nstill compute $u_3$ with cross product\n\n$u_3=u_1\\times u_2= \\begin{vmatrix}\ni & j &k \\\\\n\\frac{1}{\\sqrt2} &\\frac{1}{\\sqrt2} &0 \\\\\n-\\frac{\\sqrt2}{2\\sqrt3} &\\frac{\\sqrt2}{2\\sqrt3} &\\sqrt{\\frac{2}{3}}\n\\end{vmatrix}$\n\n$=\\frac{1}{\\sqrt3}\\begin{bmatrix}\n-1\\\\\n1\\\\\n-1\n\\end{bmatrix}$\n\nAnd we note our answer from computing the nullspace versus the cross\nproduct is a multiple of -1 but either one can be used as $u_3$ for the\northonormal basis of $\\mathbb{R}^3$"
+    ], 
+    "hints": []
+}

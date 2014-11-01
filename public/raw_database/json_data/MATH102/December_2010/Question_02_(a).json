@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH102", 
+    "statement": "Suppose the tangent line to the graph of \\emph{y} = $f(x)$ at\n\\emph{x} = 1 is \\emph{y} = 2\\emph{x} + 1, and $f$(3) = 2.\n\n(a) What are the values of $f$(1) and $f$'(1)?", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

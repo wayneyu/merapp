@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH307", 
+    "statement": "You are given a set of 100 data points \\emph{(x\\textsubscript{n},\ny\\textsubscript{n})} with \\emph{x\\textsubscript{n}} increasing.\n\n\\textbf{(a)} Suppose you wish to use Lagrange interpolation to\ninterpolate the data points. What degree of polynomial would you use and\nwhy?", 
+    "year": 2012, 
+    "sols": [
+        "When using Lagrange interpolation, we choose to fit the point with a\npolynomial of lowest degree that goes through all the points.\n\nWe have 100 points, meaning that we need a 99 degree polynomial:\n\n$p(x)=a_1x^{99}+a_2x^{98}+...+a_{99}x+a_{100}$"
+    ], 
+    "hints": []
+}

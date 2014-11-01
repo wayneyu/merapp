@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02", 
+    "course": "MATH105", 
+    "statement": "For a particular commodity, the demand curve is\n\n\\[p = D(x) = \\frac{42}{x+2}\\] and the supply curve is\n\n\\[\\displaystyle\np = S(x) = x+3\\]\n\nFind the consumers' surplus and producers' surplus at the sale level\n\\emph{A}, where \\emph{D(A) = S(A)}.", 
+    "year": 2010, 
+    "sols": [
+        "First we find the sale level \\emph{A}, where \\emph{D(A) = S(A)}:\n\n\\begin{align*}D(A) &= S(A)\\\\\n\\frac{42}{A + 2} &= A + 3\\\\\n42 = A^2 + 5A + 6\\\\\nA^2 + 5A - 36 = 0\\\\\n(A + 9)(A - 4) = 0\\\\\nA = -9 \\mbox{ or } A = 4\\end{align*} The sale level must be positive,\nso \\emph{A} = 4. At this sale level, the price is\n\\emph{p\\textsubscript{A} = 7}.\n\nThe consumer surplus is:\n\n\\begin{align*}CS &= \\int_0^A D(x) dx - Ap_A\\\\\n&= \\int_0^4 \\frac{42}{x + 2} dx - (4)(7)\\\\\n&= 42\\ln(x + 2)\\big|_0^4 - 28\\\\\n&= 42(\\ln(6) - \\ln(2)) - 28\\\\\n&= 42\\ln(3) - 28\\\\\n&\\approx 18.14 \\end{align*}\n\nThe producer surplus is:\n\n\\begin{align*}PS &= Ap_A - \\int_0^A S(x) dx \\\\\n&= (4)(7) - \\int_0^4 (x + 3) dx \\\\\n&= 28 - (x^2/2 + 3x)\\big|_0^4\\\\\n&= 28 - (16/2 + 12)\\\\\n&= 8\\end{align*}"
+    ], 
+    "hints": [
+        "How can you find the consumers' surplus and the producers' surplus?"
+    ]
+}

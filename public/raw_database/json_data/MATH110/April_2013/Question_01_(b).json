@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether the following statement is true or false. If it\nis true, provide justification. If it is false, provide a\ncounterexample.}\n\n\\textbf{(b)} If $f$ has no critical points, then $f$ has no inflection\npoints.", 
+    "year": 2013, 
+    "sols": [
+        "This statement is \\textbf{false}.\n\nConsider, for example, the graph of $f(x) = \\tan(x)$ for -$\\pi$/2\n\\textless{} \\emph{x} \\textless{} $\\pi$/2. Nowhere do we have\n$\\displaystyle f'(x) = \\sec(x) = 0$, but still the curve switches from\nconcave down to concave up.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110_April2013_1b.png}\n\\end{description}", 
+        "The statement is \\textbf{false}.\n\nTwo more examples are $f(x)=\\sin(x)$, $0<x<\\pi$, and $f(x)=\\cos(x)$,\n$-\\pi/2<x<\\pi/2$. The argument is the same as in solution 1."
+    ], 
+    "hints": [
+        "Recall the definition of critical point and inflection point. Recall how\ncritical points and inflection points can be found using the graph.", 
+        "What function do you know which graph has an inflection point? Try to\nthink of at least one example.", 
+        "What trigonometric function has an inflection point on its graph?"
+    ]
+}

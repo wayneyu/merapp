@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(f)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nThe curve $y=\\sqrt{x}$ has no horizontal tangent lines.", 
+    "year": 2012, 
+    "sols": [
+        "Horizontal tangent lines occur when the derivative equals zero. The\nderivative of \\emph{y} is\n\n$y' = \\frac{1}{2\\sqrt{x}}$\n\nHowever, this derivative is never zero, because for all positive values\nof \\emph{x} (the domain of the derivative), $y'$ will be a positive\nnumber, not zero.\n\nThus $y = \\sqrt{x}$ has no horizontal tangent lines, so the statement is\ntrue."
+    ], 
+    "hints": [
+        "In order for a function to have horizontal tangent lines, at some point\nits derivative must be equal to zero."
+    ]
+}

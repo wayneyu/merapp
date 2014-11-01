@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the real matrix\n\n$A = \\begin{bmatrix}\n2 & 1 \\\\\n-8 & 2 \\\\\n\\end{bmatrix}$\n\n(a) Use complex numbers to diagonalize A, this means to find matrices\n$S$, $\\Lambda$, and $S^{-1}$, such that\n\n$A = S\\Lambda S^{-1}$\n\nwhere $\\Lambda$ is diagonal.", 
+    "year": 2006, 
+    "sols": [
+        "To find the eigenvalues of the matrix, we must create the characteristic\nequation and solve for $\\lambda$.\n\n\\begin{align*}\n\\lambda^2 - trace(A) \\lambda + det(A) &= 0\\\\\n\\lambda^2 - (2+(-2)) \\lambda + ((2)(-2) - (-8)(1)) &= 0\\\\\n\\lambda^2 + 4 &= 0\n\\end{align*}\n\nUsing the quadratic formula to solve for $\\lambda$, we find that\n\n\\begin{align*}\n\\lambda &= \\pm \\frac{\\sqrt{-16}}{2}\\\\\n\\lambda &= \\pm 2i\n\\end{align*}\n\nNow to find each eigenvector, we must apply the eigenvalues to matrix A\nand solve $A - \\lambda I$.\n\nfor $\\lambda = 2i$\n\n$\\begin{bmatrix}\n2 - 2i & 1 \\\\\n-8 & -2 - 2i\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n-2 + 2i\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}$\n\nfor $\\lambda = -2i$\n\n$\\begin{bmatrix}\n2 + 2i & 1 \\\\\n-8 & -2+2i\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n-2 -2i\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}$\n\nWe know that $S$ is the matrix of eigenvectors and $S^{-1}$ is its\ninverse, and that $\\Lambda$ is the diagonal matrix containing the\neigenvalues. Therefore,\n\n$S = \\begin{bmatrix}\n1 & 1\\\\\n-2 + 2i & -2 - 2i\n\\end{bmatrix}$\n\n$S^{-1} = \\begin{bmatrix}\n1 & 1\\\\\n-2 + 2i & -2 - 2i\n\\end{bmatrix}^{-1}$\n\n$\\Lambda = \\begin{bmatrix}\n2i & 0\\\\\n0 & -2i\n\\end{bmatrix}$\n\nThus,\n\n$A = S\\Lambda S^{-1} = \\begin{bmatrix}\n1 & 1\\\\\n-2 + 2i & -2 - 2i\n\\end{bmatrix}\n\\begin{bmatrix}\n2i & 0\\\\\n0 & 2i\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 1\\\\\n-2+2i & -2 - 2i\n\\end{bmatrix}^{-1}$\n\n...or by applying $S^{-1} = \\frac{1}{det(S)}\\begin{bmatrix}\nd & -b\\\\\n-c & a\n\\end{bmatrix}$\n\n$A = S\\Lambda S^{-1} = \\begin{bmatrix}\n1 & 1\\\\\n-2 + 2i & -2 - 2i\n\\end{bmatrix}\n\\begin{bmatrix}\n2i & 0\\\\\n0 & 2i\n\\end{bmatrix}\n\\begin{bmatrix}\n\\frac{1}{2}-\\frac{1}{2}i & -\\frac{1}{4}i\\\\\n\\frac{1}{2}+\\frac{1}{2}i & \\frac{1}{4}i\\\\\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

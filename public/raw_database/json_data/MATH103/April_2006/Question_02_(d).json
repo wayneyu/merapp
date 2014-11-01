@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH103", 
+    "statement": "A bag contains 5 red balls, 3 green balls, and 2 yellow balls. If balls\nare always replaced into the bag after being drawn, what is the\nprobability of drawing the same colour out of the bag on two successive\nattempts?", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

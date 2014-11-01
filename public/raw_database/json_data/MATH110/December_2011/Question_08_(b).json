@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08_(b)", 
+    "course": "MATH110", 
+    "statement": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(b) Now suppose that $a = 0$. Find the equation of the tangent line in\nthis case.", 
+    "year": 2011, 
+    "sols": [
+        "If \\emph{a} = 0, then the curve we are looking at is the curve\n\n\\[\\displaystyle\ny = (0x+b)^7 = b^7\\] which is simply a horizontal line at the height\n\\emph{b}\\textsuperscript{7} and so its tangent line is itself, that is,\nthe line \\emph{y} = \\emph{b}\\textsuperscript{7}."
+    ], 
+    "hints": [
+        "If \\emph{a} = 0, just plug that in to see what the problem becomes."
+    ]
+}

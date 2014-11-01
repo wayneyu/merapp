@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH312", 
+    "statement": "Let \\emph{a} and \\emph{b} denote positive integers. Let \\emph{m} denote\nthe least common multiple of \\emph{a} and \\emph{b}, and let \\emph{d}\ndenote the greatest common divisor of \\emph{a} and \\emph{b}. Then show\nthat $\\displaystyle ab = md$. (Hint: use the prime factorization of\n\\emph{a} and \\emph{b}.)", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

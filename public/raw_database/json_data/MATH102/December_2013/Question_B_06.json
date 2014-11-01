@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_B_06", 
+    "course": "MATH102", 
+    "statement": "Let\n\n$f(x) = \\begin{cases} x^2 & x < 1 \\\\ a-x & x \\geq 1 \\end{cases}$\n\nwhere \\emph{a} is a constant. What value of \\emph{a} ensures that\n\\emph{f} is continuous for all \\emph{x}?", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

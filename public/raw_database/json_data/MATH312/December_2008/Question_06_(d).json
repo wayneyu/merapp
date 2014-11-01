@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(d)", 
+    "course": "MATH312", 
+    "statement": "The purpose of this problem is to prove the following tThe purpose of\nthis problem is to prove the following theorem.\n\n\\textbf{Theorem 1.} For all positive integers $\\displaystyle a,m$ we\nhave $\\displaystyle a^{m} \\equiv a^{m-\\phi(m)} \\mod{m}$\n\nLet $\\displaystyle a,m$ be positive integers. For $\\displaystyle m=1$,\nthe theorem holds trivially, so we assume from now on that\n$\\displaystyle m > 1$ and write its prime-power factorization as\n$\\displaystyle m = p_{1}^{e_{1}} \\cdot ... \\cdot p_{k}^{e_{k}}$ for\ndifferent primes $\\displaystyle p_{1},...,p_{k}$ and positive integer\nexponents $\\displaystyle e_{1},...,e_{k}$ and some positive integer\n\\emph{k}. Let $\\displaystyle i \\in \\{1,..,k\\}$ and focus on the prime\npower $\\displaystyle p_{i}^{e_{i}}$ in the prime-power factorization of\n\\emph{m}.\n\n\\textbf{(d)} Complete the proof of Theorem 1 above", 
+    "year": 2008, 
+    "sols": [
+        "Notice that parts (a) to (c) held for an arbitrary prime factor of\n\\emph{m}. We repeat the above for each such prime factor. Since they are\nall distinct primes, the fact that\n\n$\\displaystyle p_{i}^{e_{i}} \\mid (a^{m} - a^{m-\\phi(m)})$\n\nholds for each $\\displaystyle i \\in \\{1,..,k\\}$ will together imply that\nvia the Chinese Remainder Theorem\n\n$\\displaystyle m = \\prod_{i=1}^{k}p_{i}^{e_{i}} \\mid (a^{m} - a^{m-\\phi(m)})$\n\nand this completes the proof."
+    ], 
+    "hints": [
+        "Do parts (a) to (c) for each prime factor."
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH307", 
+    "statement": "You are given a set of 100 data points \\emph{(x\\textsubscript{n},\ny\\textsubscript{n})} with \\emph{x\\textsubscript{n}} increasing.\n\n\\textbf{(b)} Write down the matrix equation that is satisfied by the\ncoefficients of this polynomial. Is the numerical solution of this\nequation likely to be accurate, and why?", 
+    "year": 2012, 
+    "sols": [
+        "From part (a), we know that we require a polynomial of degree 99, of the\nform:\n\n$p(x)=a_1x^{99}+a_2x^{98}+...+a_{99}x+a_{100}$\n\nSince $(x_i,y_i)$ for $1\\leq i\\leq 100$, then there are 100 linear\nequations for the coefficient vector\n\n$\\underline{a}=[a_1,a_2,...,a_{100}]^T$\n\nTherefore, the matrix equation that is satisfied is:\n\n$\\begin{bmatrix}\nx_1^{99} &x_1^{98} &... &x_1^2 &x_1 &1 \\\\\nx_2^{99}& x_2^{98}&...& x_2^{2}& x_2 & 1\\\\\n &  & & &  & \\\\\n\\vdots & \\vdots & & \\ddots& & \\vdots\\\\\n& & &  & & \\\\\nx_{100}^{99}& x_{100}^{98} &... & x_{100}^2 & x_{100}& 1\n\\end{bmatrix}\\begin{bmatrix}\na_1\\\\\na_2\\\\\n...\\\\\n...\\\\\n...\\\\\na_{99}\\\\\na_{100}\\\\\n\n\\end{bmatrix}=\\begin{bmatrix}\ny_1\\\\\ny_2\\\\\n...\\\\\n...\\\\\n...\\\\\ny_{99}\\\\\ny_{100}\n\\end{bmatrix}$\n\nHowever, since the Vandermonde matrix not very well conditioned (because\nVandermonde matrices have large condition numbers, an error in the data\npoints can cause a relatively large error in the solution), it is\nunlikely that the solution is accurate"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nc)\n$f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&\\text{if}\\,\\, x < 1 \\\\ \\sqrt{x} \\,\\,&\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,$\nis continuous at all real numbers.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

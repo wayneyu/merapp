@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(h)", 
+    "course": "MATH101", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind all real number $p$ so that the series is convergent:\n\n\\[\\sum_{n=1}^\\infty (-1)^{n-1}\\frac{1}{n^p} = 1 - \\frac{1}{2^p} + \\frac{1}{3^p} - \\frac{1}{4^p} + \\cdots\\]", 
+    "year": 2011, 
+    "sols": [
+        "The alternating series test says that, given a series\n\n\\[\\sum_{n=1}^\\infty (-1)^n a_n\\]\n\nwhere $a_n$ is a positive sequence such that\n$\\lim_{n\\to \\infty} a_n = 0$, then we have that the series converges. In\nour case, so long as $p > 0$, this satisfies the conditions of the\nalternating series test and so it converges. For $p \\leq 0$, the\nsequence $1/n^p$ does not converge to zero, and so the sequence\ndiverges.\n\nThus the series converges for all $p > 0$."
+    ], 
+    "hints": [
+        "What does the alternating series test tell you?"
+    ]
+}

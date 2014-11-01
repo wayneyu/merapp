@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH307", 
+    "statement": "Explain the physical significance of the values $|c_n|$ and how these\nrelate to $\\omega_n$. If \\emph{t} is measure in days, and the time\nperiod \\emph{T} encompasses several years, which values of\n\\emph{c\\textsubscript{n}} might you expect to be the largest absolute\nvalue? \\emph{(Think about what time scales you expect temperature to\nfluctuate over.)}", 
+    "year": 2012, 
+    "sols": [
+        "Since $c_{n}$ is a complex number with real and imaginary part, we write\n$c_{n}$ in its complex exponential form\n\n$c_{n}$ = $\\left |c _n{} \\right |e^{2\\pi i\\phi _{n} }$\n\nTherefore $c_{n}$ reflects the original temperature function$^{\\prime}$s\nfrequency spectrum. If we put the above expression back into the Fourier\nseries representation of y(t), we have\n\n$y(t)=\\sum_{n=-\\propto }^{\\propto }c_{n}e^{2\\pi i\\frac{n}{T}t} = \\sum_{n=-\\propto }^{\\propto }\\left | c_{n} \\right |e^{2\\pi i\\phi _{n}}e^{2\\pi i\\frac{n}{T}t} = \\sum_{n=-\\propto }^{\\propto }\\left | c_{n} \\right |e^{2\\pi i(\\omega _{n}t+\\phi _{n})}$\n\nt=0 or t=T would make $c_{n}$ the largest. Because both t=0 and t=T\nwould make $e^{2\\pi i\\frac{n}{T}t}$ = 1. So $c_{0}$ and $c_{T}$ have the\nlargest absolute value.\n\nThe values of $c_{n}$ might you expect to have the largest absolute\nvalue is the frequency for the maximum temperature swings over the\ncourse of years. This would probably be seasonal fluctuations, so it\nwould be $c_{n}$ for about 12 months."
+    ], 
+    "hints": []
+}

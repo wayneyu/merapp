@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_04", 
+    "course": "MATH103", 
+    "statement": "You are driving your car at 30 m/sec (approximately 108 km/hr) to catch\nyour flight to Costa Rica for summer holidays. A pedestrian runs across\nthe road, forcing you to break hard. Suppose it takes you 1 sec to react\nto the danger, and that when you apply your brakes, you slow down at the\nrate a = -10 m/$\\text{sec}^{2}$. After applying the brakes, how long\nwill it take you to stop? How far will your car move from the instant\nthat the danger is sighted until coming to a complete stop?", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

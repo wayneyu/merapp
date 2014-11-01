@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(c)", 
+    "course": "MATH110", 
+    "statement": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nUse your answer in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_3_(b)}{(b)}\nto explain why we may conclude that $\\sin b \\leq b$ for any positive\nvalue \\emph{b}.", 
+    "year": 2011, 
+    "sols": [
+        "In the previous question, we showed that for some $c$ in the interval\n$(0,b)$\n\n\\[\\cos(c) = \\frac{\\sin(b)}{b}\\]\n\nNow we know that for all possible values of $c$, $\\cos(c)$ is bounded\nabove by 1, or\n\n\\[\\cos(c) \\leq 1\\]\n\nSubstituting what we know from part (b), this is the same as\n\n\\[\\frac{\\sin(b)}{b} \\leq 1\\]\n\nBecause $b > 0$ we can multiply both sides by \\emph{b} to get\n\n\\[\\sin(b) \\leq b\\]\n\nWhich completes our proof."
+    ], 
+    "hints": [
+        "What is the greatest value that the derivative of $\\sin x$ can achieve\non the interval $[0,b]$? How does this bound the slope you found in part\n(b)?"
+    ]
+}

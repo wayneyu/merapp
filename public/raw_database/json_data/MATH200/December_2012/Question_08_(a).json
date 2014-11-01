@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_08_(a)", 
+    "course": "MATH200", 
+    "statement": "A metal crescent is obtained by removing the interior of the circle\ndefined by the equation $\\displaystyle x^2 + y^2 = x$ from the metal\nplate of constant density 1 occupying the unit disc $x^2 + y^2 \\leq 1$.\n\n\\textbf{(a)} Find the total mass of the crescent.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

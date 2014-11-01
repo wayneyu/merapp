@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH220", 
+    "statement": "Define what it means for a set \\emph{C} to be countable.", 
+    "year": 2005, 
+    "sols": [
+        "A set \\emph{C} is countable if it has the same cardinality as the set\n$\\mathbb{N}$ of natural numbers. In other words, there exists a\nbijective function $f: C \\rightarrow \\mathbb{N}.$ (Equivalently, there\nexists a bijective function $g: \\mathbb{N} \\rightarrow C.$)"
+    ], 
+    "hints": [
+        "An example is \\textbf{not} a definition. But it sure helps to have some\nexamples and counter-examples to understand what you are trying to\ndefine."
+    ]
+}

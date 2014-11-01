@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "Find a number $b > 0$ such that the function $f(x) = x - 1$ has average\nvalue $0$ on the interval $[0,b]$.", 
+    "year": 2010, 
+    "sols": [
+        "We want\n\n\\begin{align*}\n0&=\\frac{1}{b}\\int_0^b(x-1)dx\\\\\n0&=\\frac{1}{b}(\\frac{x^2}{2}-x)|_0^b\\\\\n0&=\\frac{b^2}{2}-b\\\\\nb&=\\frac{b^2}{2}\\\\\n2b&=b^2\\\\\n\\end{align*}\n\nSince $b > 0,$ we can divide both sides by $b$ to find $b=2.$"
+    ], 
+    "hints": [
+        "The average of $f(x)$ over the interval $[a, b]$ is\n$f_{av}=\\frac{1}{b-a}\\int_a^bf(x)dx$"
+    ]
+}

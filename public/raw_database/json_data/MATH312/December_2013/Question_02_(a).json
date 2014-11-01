@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH312", 
+    "statement": "Find all solutions to the congruence\n$\\displaystyle x^{2} \\equiv 1 \\mod{55}$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

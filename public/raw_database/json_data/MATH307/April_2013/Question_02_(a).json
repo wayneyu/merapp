@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH307", 
+    "statement": "Write down the definition of a Hermitian matrix.", 
+    "year": 2013, 
+    "sols": [
+        "A hermitian matrix is a matrix $A$ such that $A=A^*$. A matrix that is\nits own conjugate transpose. All symmetric matrices with all real\nentries are hermitian."
+    ], 
+    "hints": []
+}

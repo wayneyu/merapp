@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(c)", 
+    "course": "MATH215", 
+    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\[\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\]\n\n(c) Again if $y_0 = 3/2$, use Euler$^{\\prime}$s method with the larger\nstep size $h = 2$ to approximate the solution $y(2)$ at time $t=2$.\nPredict what will happen if you continue to use this scheme (with $h=2$)\nto approximate $y(t)$ for large $t$. Compare this with your result from\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)}, and explain any discrepancies.", 
+    "year": 2013, 
+    "sols": [
+        "Implementing the same notation as in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(b)}{part\n(b)}, we have\n\n\\[y(2) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 2(-3/8) = 3/4.\\]\n\nWe observe that $0 < y_1 < 1$ and that $\\frac{dy}{dt}|_{y=3/4} < 0$ so\nthat\n\n\\[y_2 = y_1 + h \\frac{dy}{dt}|_{y=3/4} < y_1.\\]\n\nGiven the information we know from\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)} that solution curves passing through a point $y_0 < 1$ approach\n$y=0$ we anticipate that if these approximations were to carry on for a\nlong time, the approximations would (likely) approach $y=0$.\n\nThis disagrees with the prediction in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)} in that if $y(0) = 3/2$, the exact solution curve should approach\n$y=1$ as $t \\rightarrow \\infty$. The step size of $h=2$ is too large a\nstep to take to accurately resolve the exact solution of the initial\nvalue problem."
+    ], 
+    "hints": [
+        "What sort of behaviour does Euler's method with h=2 predict about $y(t)$\nfor large t? What should happen analytically (based on your analysis in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)})?"
+    ]
+}

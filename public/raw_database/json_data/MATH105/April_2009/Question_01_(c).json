@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH105", 
+    "statement": "Find all points $\\displaystyle (x,y)$ where\n$\\displaystyle f(x,y) = x^{2} + y^{2} + xy + 3x - 7$ may have a relative\nmaximum of minimum.", 
+    "year": 2009, 
+    "sols": [
+        "Taking the partial derivatives yields\n\n\\[\\displaystyle \\frac{\\partial f}{\\partial x} = 2x + y + 3\\]\n\n\\[\\displaystyle \\frac{\\partial f}{\\partial y} = 2y + x\\]\n\nSetting these to zero gives\n\n\\begin{align*}\n2x+y+3 &= 0 \\\\\nx + 2y &= 0\n\\end{align*}\n\nSolving the second equation for \\emph{x} yields \\emph{x = -2y}, which we\nplug into the first equation to obtain $\\displaystyle -4y + y + 3 = 0$\nand hence \\emph{y = 1}. Thus \\emph{x = -2} and so the only point where a\nmaximum or minimum may exist is at $\\displaystyle (x,y) = (-2,1)$."
+    ], 
+    "hints": [
+        "Try finding critical points.", 
+        "Remember critical points are points where both partial derivatives are\nzero."
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_03_(d)", 
+    "course": "MATH103", 
+    "statement": "Evaluate the following integral.\n\n$\\displaystyle \\int_{1}^{2} x\\ln(x)\\,dx$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

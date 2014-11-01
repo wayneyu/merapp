@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(b)} Find the vertical asymptotes of $f$, if any exist.", 
+    "year": 2013, 
+    "sols": [
+        "The functions $\\displaystyle \\sin(x)$ and $\\displaystyle e^x$ are both\ncontinuous everywhere. Further, the function in the denominator,\n$\\displaystyle e^x$, is never 0. Hence $\\displaystyle f(x)$ is\ncontinuous everywhere and thus there are no vertical asymptotes."
+    ], 
+    "hints": [
+        "Recall that $\\displaystyle a$ is a candidate for a vertical asymptote\nonly if $\\displaystyle f(x)$ has a discontinuity at $\\displaystyle a$,\nso that there is a chance that $\\displaystyle f(x)$ tends to\n$\\displaystyle \\infty$ or $\\displaystyle -\\infty$ as $\\displaystyle x$\napproaches $\\displaystyle a$."
+    ]
+}

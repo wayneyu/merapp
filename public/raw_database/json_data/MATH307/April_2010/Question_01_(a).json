@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH307", 
+    "statement": "Mark each statement as true or false and give a general explanation (3\nand a third points per part). If you decide that a statement is false,\nyou can give a contradicting example instead. Bear in mind that to mark\na statement true all of its parts must be true.\n\nIt is given that a real matrix \\emph{A} is a root of the equation\n$\\displaystyle A^n \u00e2\u0088\u0092 A = 0$ with $\\displaystyle n > 1$ an integer.\nThen it is possible to conclude the following. The size of \\emph{A} is\n$\\displaystyle n \\times n$ because by the Cayley - Hamilton theorem\n\\emph{A} satisfies $\\displaystyle p(A) = 0$, with\n$\\displaystyle p(\\lambda)$ being the characteristic polynomial of\n\\emph{A}. Since it is given that \\emph{A} is a root of an \\emph{n}-th\ndegree polynomial, its characteristic polynomial must be of degree\n\\emph{n} and thus \\emph{A} is $\\displaystyle n \\times n$.", 
+    "year": 2010, 
+    "sols": [
+        "No content found"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH312", 
+    "statement": "Find the least nonnegative integer x that satisfies the following system\nof linear congruences.\n\n\\begin{align*}\nx &\\equiv 998 \\mod{999}\\\\\nx &\\equiv 999 \\mod{1000}\\\\\nx &\\equiv 1000 \\mod{1001}\n\\end{align*}", 
+    "year": 2008, 
+    "sols": [
+        "Proceeding as in the hints yields\n\n\\begin{align*}\nx &\\equiv -1 \\mod{999}\\\\\nx &\\equiv -1 \\mod{1000}\\\\\nx &\\equiv -1 \\mod{1001}\n\\end{align*}\n\nAs\n\n\\begin{align*}\n999 &= 3^{3} \\cdot 37\\\\\n1000 &= 2^{3} \\cdot 5^{3}\\\\\n1001 &= 7 \\cdot 11 \\cdot 13\n\\end{align*}\n\nwe see that all these moduli are coprime. Hence by the Chinese remainder\ntheorem, we have that a unique solution is given by\n\n$\\displaystyle x \\equiv -1 \\mod {999 \\cdot 1000 \\cdot 1001}$\n\nor expanded and made positive\n\n$\\displaystyle x \\equiv 999998999 \\mod {999999000}$"
+    ], 
+    "hints": [
+        "Making two clever observations makes this problem much more tractable.\nFirst notice that the right hand sides are all congruent to\n$\\displaystyle -1$ modulo the numbers on the far right.", 
+        "The other observation is that the three moduli on the right are three\nconsecutive pairwise coprime numbers so the Chinese Remainder Theorem\nwill help finish the problem."
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_C_02_(d)", 
+    "course": "MATH102", 
+    "statement": "The population of fish in a particular lake is given by the function\n\\emph{F(t)} where \\emph{F} is measured in number of fish and \\emph{t} is\nmeasured in days. A company that manages fish stocks is hired to restock\nthe lake, adding fish at a constant rate. Only \\emph{N} fishers are\nallowed to fish in the lake at a time. A simple model for this scenario\nis given by the equation:\n\n$\\frac{dF}{dt} = I - \\alpha N F$\n\nWhere \\emph{I} and $\\alpha$ are constant and two cases for \\emph{N} are\nconsidered.\n\nCase 2: The agency that administers fishing permits decides that the\nnumber of fishers should be proportional to the number of fish currently\nin the lake, $N = F/3$. What is the population size $F_*$ to which\n\\emph{F(t)} approaches as $t \\to \\infty$ in this scenario?", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

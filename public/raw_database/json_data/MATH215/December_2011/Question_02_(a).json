@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH215", 
+    "statement": "Find all values of \\emph{a} and \\emph{b} for which the ODE below is an\nexact equation. \\emph{(It is not necessary to solve the ODE.)}\n\n\\[ax^3e^{x+y} + bx^4e^{x+y} + 2x + (x^4e^{x+y} + 2y) \\frac{dy}{dx}\u00c2\u00a0= 0\\]", 
+    "year": 2011, 
+    "sols": [
+        "We begin with assuming there is a governing equation $M(x,y) = 0$ and\ndifferentiating this with respect to x.\n\nThen, $\\frac{d}{dx} M(x,y) = M_x (x,y) + M_y (x,y) \\frac{dy}{dx} = 0$.\n\nHence, $M_x = a x^3 e^{x+y} + bx^4 e^{x+y} + 2x$ and\n$M_y = x^4 e^{x+y} + 2y$.\n\nBy Clairaut's theorem, there must be equality of mixed partial\nderivatives, and $M_{xy} = M_{yx}$. In our problem,\n\n\\begin{align*} M_{xy} &= ax^3 e^{x+y} + bx^4 e^{x+y} \\\\ M_{yx} &= 4x^3 e^{x+y} + x^4 e^{x+y} \\\\ &\\implies a=4, b=1 \\end{align*}\n\nby comparing the coefficients of $x^3 e^{x+y}$ and $x^4 e^{x+y}$."
+    ], 
+    "hints": [
+        "An differential equation is exact if it can be derived by\ndifferentiating an implicit equation $M(x,y) = 0$ with respect to x.\nAfter differentiating with respect to x, think about Clairaut's\ntheorem..."
+    ]
+}

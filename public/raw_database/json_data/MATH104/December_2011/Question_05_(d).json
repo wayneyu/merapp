@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(d)", 
+    "course": "MATH104", 
+    "statement": "Describe geometrically (in terms of the graph of the demand curve) how\nyou would find the price that maximizes the revenue. It might be useful\nto note that the slope of a line connecting a point on the demand curve\nto the origin is q/p.", 
+    "year": 2011, 
+    "sols": [
+        "To maximize revenue, we need the elasticity\n$\\epsilon = \\frac{p}{q} \\frac{dq}{dp} = -1$, which is equivalent to\nstating $\\frac{dp}{dq} = - \\frac{q}{p}.$\n\nConsider the line joining the origin to the point $(p,q = f(p))$ on the\ndemand vs price curve. As the hint suggests, the slope of such a line is\nq/p, which is the negative of what we want $\\frac{dp}{dq}$ to be at the\nprice where revenue is maximized.\n\nThus, to maximize the revenue, we can take a series of lines joining the\norigin to the point $(p_0,f(p_0))$ for different values of $p_0$ and\ndetermine the line such that if it is reflected across the line\n$p = p_0$ (so its slope is negated), it is the tangent line to the graph\n$q = f(p)$ at the point $(p_0, q_0)$. The slope of the tangent line is\n$\\frac{dq}{dp}|_{p=p_0,q=q_0}$.\n\nThis has a nice geometric interpretation: the line segment joining the\norigin to the point $(p_0, q_0)$ has same length as the line segment of\nthe tangent line joining $(p_0, q_0)$ to the $p-$axis. In fact, an\nisosceles triangle is formed.\n\nNote: it is tempting to say that the revenue is maximized at $p_0$ if\nthe line joining the origin to $(p_0, q_0)$ meets the curve $q = f(p)$\nat a right angle (recall two curves are orthogonal if the product of\ntheir slopes at their intersection point is $-1$). But the slope of the\nline is $q/p$ and not $p/q$, so this doesn't hold. We need\n$\\frac{p}{q} \\frac{dq}{dp} = -1$ and not\n$\\frac{q}{p} \\frac{dq}{dp} = -1$."
+    ], 
+    "hints": [
+        "Revenue is maximized when elasticity is -1."
+    ]
+}

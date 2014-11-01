@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH220", 
+    "statement": "Write the negation of the following statement:\n\n\\[\\forall{}x\\in\\mathbb{Z},\\quad\\textrm{if}\\quad{}x>0\\quad\\textrm{then}\\quad\\exists{}y\\in\\mathbb{Q}\\quad\\textrm{s.t.}\\quad{}x^2>y.\\]", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

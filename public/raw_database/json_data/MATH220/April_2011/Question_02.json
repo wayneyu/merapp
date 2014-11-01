@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02", 
+    "course": "MATH220", 
+    "statement": "For each of the following subsets of $\\mathbb R$ write its supremum and\ninfimum if they exist. If they do not exist write ``None``. You do not\nneed to prove your answers.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\left\\{ x\\in \\mathbb R \\text{ s.t. } -1 < x < 5 \\right\\},$\n\\item\n  $\\left\\{ x\\in \\mathbb Q \\text{ s.t. } 3 \\leq x^2 \\leq 7 \\right\\},$\n\\item\n  $\\bigcap_{n=1}^\\infty \\left[2+\\frac1{n}, 6-\\frac2{n}\\right],$\n\\item\n  $\\bigcup_{n=1}^\\infty \\left[\\frac1{n},n\\right].$\n\\end{enumerate}", 
+    "year": 2011, 
+    "sols": [
+        "\\textbf{Solution to 1.}\n\nThe supremum of this set is 5, since it is clearly larger than any\nnumber in (-1,5) and no number smaller than 5 could have that property.\n(If you're not convinced of this, imagine any number smaller than 5, and\ncall it \\emph{N} then there must exist a number between \\emph{N} and 5\nso that \\emph{N} cannot be the supremum).\n\nAnd for a similar reason, the infimum of this set has to be -1.\n\n\\textbf{Solution to 2.}\n\nHere the set that we are looking at is all the rational numbers that are\nbetween the square root of 3 and the square root of 7. The supremum and\ninfimum of a set do not have to be members of the set, so our intuition\nisn't bad: the supremum has to be the square root of 7 and the infimum\nthe square root of 3.\n\n\\textbf{Solution to 3.}\n\nThis set is the intersection of closed intervals that grow. At $n=1$ it\nis the set {[}3,4{]} and then {[}2.5, 5{]}, so we have\n\n\\[\\displaystyle\n[3,4]\u00c2\u00a0\\cap [2.5,5] \\cap\u00c2\u00a0[2+\\frac{1}{3},6-\\frac{2}{3}] \\cap [2+\\frac{1}{4}, 6-\\frac{2}{4}] \\cap \\ldots = [3,4]\\]\n\nsince because we're taking an intersection of larger and larger\ninterval, only the smaller remains. It is now clear that the supremum of\nthat set is 4 and the infimum 3.\n\n\\textbf{Solution to 4.}\n\nHere the sets also are growing in size, but this time we are taking a\nunion. Since 1/\\emph{n} converges to 0, the left side of the interval\nconverges to 0 and clearly the right side of the interval converges to\ninfinity. This means that\n\n\\[\\displaystyle\n\\bigcup_{n=1}^\\infty [\\frac{1}{n},n] = (0,\\infty)\\]\n\nAnd so the infimum of this set is 0, while there isn't a supremum since\nthe set does not have an upper bound."
+    ], 
+    "hints": [
+        "The \\emph{supremum} of a set of real numbers is the smallest real number\nthat is larger or equal than any number of the set. Conversely, the\n\\emph{infimum} of a set is the largest real number that is smaller or\nequal than any number of the set."
+    ]
+}

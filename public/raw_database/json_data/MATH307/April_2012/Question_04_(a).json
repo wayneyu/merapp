@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider a network arranged in the shape of an octahedron as in this\ndiagram:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307_April_2012_Question_04.png}\n\\end{description}\n\nThe nodes have been labeled with the large numbers and 3 of the edges\n(resistors) have been given orientations and labeled with small numbers.\nAssume all resistances are equal to 1. Let \\emph{D} be the incidence\nmatrix (for some choice of labeling and arrows for the remaining edges)\nand let \\emph{L} be the Laplacian.\n\n\\textbf{(a)} Write down a non-zero vector in \\emph{N(D)}.", 
+    "year": 2012, 
+    "sols": [
+        "Looking at the resistor network, we can make the incidence matrix where\nthe columns are the nodes and the rows are the edges.\n\n$D = \\begin{bmatrix}\n-1 & 1 & 0 \\\\\n0 & -1 & 1 \\\\\n-1 & 0 & 1\n\\end{bmatrix}$\n\nThe first column represents node 1, the second column represents node 2,\nand the third column represents node 3. An entry of -1 represents an\nedge leaving the corresponding node column, and an entry of 1 represents\nan edge entering the corresponding node column.\n\nTo find the nullspace of D, we have to find all vectors $\\vec{v}$ that\nare solutions to $D \\vec{v} = \\vec{0}$. For matrix D, it is pretty easy\nto see that $\\vec{v} = \\vec{1}$ or any multiple of this as only solution\nto $D \\vec{v} = \\vec{0}$.\n\nTherefore:\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$\n\nProof:\n\n$rref(D) = \n\\begin{bmatrix}\n1 & 0 & -1 \\\\\n0 & 1 & -1 \\\\\n0 & 0 & 0\n\\end{bmatrix}$\n\n$\\begin{bmatrix}\nx_{1} \\\\ x_{2} \\\\ x_{3}\n\\end{bmatrix} = \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}x_{3}$\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$ Check:\n\n$D \\vec{v} = \\vec{0}$. $\\begin{bmatrix}\n-1 & 1 & 0 \\\\\n0 & -1 & 1 \\\\\n-1 & 0 & 1\n\\end{bmatrix} \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix} = \\begin{bmatrix}\n-1 + 1 \\\\ -1 + 1 \\\\ -1 + 1 \\\\\n\\end{bmatrix} = \\begin{bmatrix}\n0 \\\\ 0 \\\\ 0 \\\\\n\\end{bmatrix}$\n\nFINAL ANSWER\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH103", 
+    "statement": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nWhat is the probability that both lightbulbs are still working after $t$\nmonths?", 
+    "year": 2011, 
+    "sols": [
+        "The probability that lightbulb $A$ is still working after $t$ months is\nequal to the probability that it has \\textbf{not} failed before $t$\nmonths, which is $1-F_A(t)= e^{-t}.$\n\nThe probability that lightbulb $B$ is still working after $t$ months is\nequal to the probability that it fails at a time greater than $t$:\n\n\\begin{align*} \n\\int_t^\\infty p_B(x)\\, dx =2 \\int_t^\\infty e^{-2x}\\, dx =2\\left[\\frac{e^{-2x}}{-2}\\right]_t^\\infty = e^{-2t}.\n\\end{align*}\n\nThe probability that \\textbf{both} lightbulbs are still working after\n$t$ months is equal to the product of the two probabilities found above,\nwhich is\n\n\\begin{align*} \ne^{-t} e^{-2t}=e^{-3t}.\n\\end{align*}"
+    ], 
+    "hints": [
+        "A light bulb is still working after $t$ months if and only if it has not\nfailed before $t$ months."
+    ]
+}

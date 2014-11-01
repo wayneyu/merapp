@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH110", 
+    "statement": "Two curves are said to \\emph{intersect orthogonally at x =a} if\n(\\emph{i}) they intersect at \\emph{x = a} and (\\emph{ii}) their tangent\nlines are perpendicular at \\emph{x = a}.\n\nAre the tangent lines of the curves in part (a) perpendicular at\n$x = 3$? Justify your answer.", 
+    "year": 2010, 
+    "sols": [
+        "First we need to calculate the slope of the tangent line to each curve\nat $x = 3$. We do this by taking the derivative and then plugging in\n$x = 3$.\n\nFor the first curve we use the chain rule to find the derivative:\n\n\\begin{align*}\n\\frac{dy}{dx} &= \\frac 16 \\cdot \\frac 12 (2x^2 + 7)^{-\\frac 12}\\cdot 4x \\\\\n&= \\frac{4x} {12 \\sqrt{2x^2 + 7}}  \\\\\n&= \\frac{x} {3 \\sqrt{2x^2 + 7}}  \\end{align*}\n\nPlugging in $x = 3$ to find the slope we get:\n\n$\\frac{3} {3 \\sqrt{2(3)^2 + 7}} = \\frac{1} {\\sqrt{25}} = \\frac 15$.\n\nFor the second curve we simply use the power rule to calculate the\nderivative:\n\n$\\frac{dy}{dx} = -4x + 7$\n\nPlugging in $x = 3$ gives a slope of:\n\n$\\displaystyle -4(3) + 7 = -5$.\n\nWe know that two slopes are perpendicular if they are negative\nreciprocals of each other, i.e. if one slope is $\\frac ab$ then the\nother slope must be $-\\frac ba$. For this problem, this relationship is\ntrue: the first slope, $\\frac 15$ is the negative reciprocal of $-5$.\nThus the tangent lines to these two curves are perpendicular at $x = 3$."
+    ], 
+    "hints": [
+        "Tangent lines are perpendicular if their slopes are perpendicular. How\ncan you find the slopes of tangent lines at a point? If the slopes are\nperpendicular, what will the relationship between them be?"
+    ]
+}

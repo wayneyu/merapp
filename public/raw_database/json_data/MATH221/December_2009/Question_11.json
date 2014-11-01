@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_11", 
+    "course": "MATH221", 
+    "statement": "Let $A = \\begin{bmatrix}\n0 &1 &-1 \\\\ \n1 &3 &2 \\\\ \n-1 &2 &-2 \\\\ \n2& -1 &1 \n\\end{bmatrix}\n\\quad\nB=\\begin{bmatrix}7\n& -3 &3 \\\\ \n-2& 16 & -2\\\\ \n6 & -1 &10 \n\\end{bmatrix}$Find a matrix X satisfying the equation $A^{T}AX + 2X = BX + B^{T}$", 
+    "year": 2009, 
+    "sols": [
+        "First we can rearrange the equation. $X(A^{T}A +2 - B) = B^{T}$Let $C = A^{T}A + 2 - B$\n\n$C = \\begin{bmatrix}\n1 & 4 &5 \\\\ \n3 & 1 & 4\\\\ \n2 & 3 &2 \n\\end{bmatrix}$\n\n$C^{-1} = \\begin{bmatrix}\n-\\frac{10}{33} & \\frac{7}{33} & \\frac{1}{3}\\\\ \n\\frac{2}{33}& -\\frac{8}{33} & \\frac{1}{3}\\\\ \\frac{7}{33}\n& \\frac{5}{33} & -\\frac{1}{3}\n\\end{bmatrix}$\n\n$X = C^{-1} B^{T}$\n\n$X = \\begin{bmatrix}-\\frac{10}{33} & \\frac{7}{33} & \\frac{1}{3}\\\\ \n\\frac{2}{33}& -\\frac{8}{33} & \\frac{1}{3}\\\\ \\frac{7}{33}\n& \\frac{5}{33} & -\\frac{1}{3}\n\\end{bmatrix} \\begin{bmatrix}7\n& -3 &3 \\\\ \n-2& 16 & -2\\\\ \n6 & -1 &10 \n\\end{bmatrix}$\n\n$X= \\begin{bmatrix}\n-\\frac{58}{33} & \\frac{10}{3} & \\frac{43}{33}\\\\ \n\\frac{71}{33}& -\\frac{14}{3} & \\frac{130}{33}\\\\ \\frac{1}{33}\n& \\frac{8}{3} & -\\frac{73}{33}\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

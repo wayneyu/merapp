@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH220", 
+    "statement": "\\emph{In this question, correct answers without proofs are sufficient.}\n\nFind a function\n\n\\[f: \\mathbb{Z} \\to \\mathbb{Z}\\] which is injective but not surjective.", 
+    "year": 2011, 
+    "sols": [
+        "Multiplying by any non-zero integer (other than 1 or -1) will do the\ntrick. For example, multiplying by 2 gives the map\n\n\\begin{align*}\nf: \\mathbb{Z} &\\to \\mathbb{Z}\\\\\nn &\\mapsto 2n\n\\end{align*}\n\n\\textbf{Proof:} \\emph{recall that this question didn't ask for a proof,\njust the answer. Since the proofs are of a difficulty that you are\nexpected to be able to handle in this course, we present them here for\ncompleteness.}\n\nThe function is injective since\n\n\\[2n = 2m \\iff n = m\\] and is not surjective since clearly no odd\ninteger will be in the image of the function $f$."
+    ], 
+    "hints": [
+        "Recall that injective means that different integers have to be mapped to\ndifferent integers and not being surjective means that there must exist\nsome integer which is not in the image of the function $f$."
+    ]
+}

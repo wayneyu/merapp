@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nFor which positive integers \\emph{m} will\n$\\displaystyle 1000 \\equiv 1 \\mod{m}$", 
+    "year": 2012, 
+    "sols": [
+        "As stated in the hint, the given problem is equivalent to\n\n$\\displaystyle 999 \\equiv 0 \\mod{m}$\n\nThus \\emph{m} must be a divisor of 999. We can factor 999 as\n\n$\\displaystyle 999 = 3^{2}\\cdot111 = 3^{3} 37$.\n\nThus, the divisors are $\\displaystyle 1,3,9,27,37,111,333,999$ and these\nare the potential \\emph{m} values."
+    ], 
+    "hints": [
+        "Isolating, we seek to find integers \\emph{m} such that\n\n$\\displaystyle 999 \\equiv 0 \\mod{m}$\n\nWhat must \\emph{m} divide?"
+    ]
+}

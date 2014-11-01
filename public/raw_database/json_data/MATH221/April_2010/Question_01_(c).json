@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[\\displaystyle \nA = \\begin{bmatrix}\n1 & 2 & 3 & -2 & 4\\\\\n2 & 5 & 8 & -1 & 6\\\\\n1 & 4 & 7 & 5 & 2\\\\\n1 & 3 & 5 & 1 & 2\\\\\n\\end{bmatrix}\\]\n\nand\n\n\\[\\displaystyle \nU = \\begin{bmatrix}\n1 & 2 & 3 & -2 & 4\\\\\n0 & 1 & 2 & 3 & -2\\\\\n0 & 0 & 0 & 1 & 2\\\\\n0 & 0 & 0 & 0 & 0\\\\\n\\end{bmatrix}\\]\n\nThen the matrix \\emph{U} is an echelon form for \\emph{A} (you may assume\nthis, you don't have to do the row reduction again.)\n\nFind a basis of the row space of \\emph{A}", 
+    "year": 2010, 
+    "sols": [
+        "1.) In this question, we are finding a basis for {[}$R(A^{T}$){]} . To\nfind the basis for the row space of A, we need to find the column space\nof the {[}$A^{T}${]} (transpose of matrix A). However, to make things\neasier for ourselves, this is just the linearly independent rows of the\nrow echelon form of the matrix. In this question, it is given as matrix\nU.2.)In order to see the pivot points clearly, we can switch columns 3 and\n4 to get:\n\nU =$\\begin{bmatrix}\n1 & 2 & -2 & 3&4 \\\\ \n0 &1 & 3 & 2 &-2 \\\\ \n0& 0 & 1& 0 &2 \\\\ \n0& 0 & 0 &0 &0 \n\\end{bmatrix}$3.) Rows 1, 2, and 3 are linearly independent. Unlike the column space,\nwe take the rows from the echelon form as the basis, in this case from\nmatrix U.\n\nRemember we switched columns 3 and 4. Take the original form of U to\nfind the basis of the row space.\n\nTherefore, the basis for the row space of A are:\n\nrow 1 = $\\begin{bmatrix}\n1&2&3&-2&4\n\\end{bmatrix}$row 2 = $\\begin{bmatrix}\n0&1&2&3&-2\n\\end{bmatrix}$row 3 = $\\begin{bmatrix}\n0&0&0&1&2\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

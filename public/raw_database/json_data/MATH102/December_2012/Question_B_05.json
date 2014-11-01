@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_B_05", 
+    "course": "MATH102", 
+    "statement": "In the Chernobyl reactor explosion, which occurred on April 26, 1986,\nsubstantial amounts of the isotope strontium-90 (\\textsuperscript{90}Sr)\ncontaminated the area around the nuclear plant. \\textsuperscript{90}Sr\ndecays at a rate proportional to its quantity. \\textsuperscript{90}Sr\nhas a half-life of 29 years; that is, it takes 29 years for a quantity\nof \\textsuperscript{90}Sr to decrease by half. What is the proportion of\n\\textsuperscript{90}Sr originally released which remains on April 26,\n2012?", 
+    "year": 2012, 
+    "sols": [
+        "As stated in the second hint, we will first use the information about\nhalf-life to solve for the rate of decay, or \\emph{k} in the equation:\n\n\\[\\displaystyle y(t) = Ce^{kt}\\]\n\nIf $y(t)$ is the percentage remaining after $t$ years, we know that\n$50\\%$ of \\textsuperscript{90}Sr remains after 29 years. At \\emph{t = 0}\nthe amount is 100 percent, hence choose \\emph{C = 100}. Plugging this\ninto the formula gives:\n\n\\[\\displaystyle 50 = 100e^{k29}\\]\n\nSolving for $k$, we get\n\n$\\ln(\\frac12) = 29k$\n\n$\\displaystyle k = \\ln(1/2)/29$\n\nPlugging this back into our formula for $y(t)$, we can now solve for the\npercentage remaining on April 26, 2012, when $t = 26$.\n\n\\[\\displaystyle y(t) = 100e^{(\\ln(1/2)/29)*26}\\]\n\nSimplifying will give:\n\n\\[y(t) = 100*(\\frac12)^{26/29}\\]\n\nor 53\\% remaining."
+    ], 
+    "hints": [
+        "Recall that radioactive decay is an example of exponential decay,\ndescribed by the formula $\\displaystyle y(t) = Ce^{kt}$, where $y(t)$ is\nthe percentage of material left after \\emph{t} years, and \\emph{C} is\nthe initial amount.", 
+        "Before you can calculate the current amount remaining, you will have to\nuse the information about half-life to find \\emph{k}.", 
+        "With a half life of 29 year, expect more than 50\\% of the material to be\nremaining at 26 years."
+    ]
+}

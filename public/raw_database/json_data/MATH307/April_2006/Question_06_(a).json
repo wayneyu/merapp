@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH307", 
+    "statement": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nIf AB is defined, then R(AB) \u00e2\u008a\u0082 R(A) and rank(AB) $\\leq$ rank(A) (i.e.\nthe column space of AB is contained in the column space of A and the\nrank of AB is at most equal to that of A.)", 
+    "year": 2006, 
+    "sols": [
+        "True\n\nGiven A as an $n \\times m$ and B as an $m \\times q$ matrix (to be\ndefined)\n\nthen AB is an $n \\times q$ matrix. A can have at the most n pivot\ncolumns, i.e. rank(A) = n and AB can have at the most n pivot columns,\nhence rank(AB) $\\leq$ rank(A).\n\nLikewise, since R(AB) is also contained in the the subspace R(A) , the\neasiest way to see this is if given vector y if\n\n$\\vec{y} = (AB)\\vec{x}$\n\nthen\n\n$\\vec{y} = A(B\\vec{x})$\n\nhence the rank of AB is contained in the rank of A"
+    ], 
+    "hints": []
+}

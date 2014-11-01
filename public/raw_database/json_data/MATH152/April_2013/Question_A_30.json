@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_30", 
+    "course": "MATH152", 
+    "statement": "Write a MATLAB for loop that generates a $20\\times 20$ matrix C given by\n\n$C = \\begin{bmatrix}\n1 & 0 & 0 & ... & 0 \\\\\n0 & 2 & 0 & ... & 0 \\\\\n0 & 0 & 3 &  & 0 \\\\\n\\vdots & \\vdots &  & \\ddots & \\vdots \\\\\n0 & 0 & 0 & ... & 20 \\\\\n\\end{bmatrix}$", 
+    "year": 2013, 
+    "sols": [
+        "The following code will work.\n\n\\texttt{C=zeros(20);}\\\\\\texttt{for~j=1:20;}\\\\\\texttt{~~C(j,j)=j;}\\\\\\texttt{end;}"
+    ], 
+    "hints": [
+        "The for loop will run 20 times. Each diagonal entry has the same row and\ncolumn index."
+    ]
+}

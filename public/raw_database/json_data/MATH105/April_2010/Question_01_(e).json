@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH105", 
+    "statement": "Compute the average value of\n\n\\[f(x) = \\frac1{x}\\]\n\nover the interval 1 $\\leq$ \\emph{x} $\\leq$ \\emph{e}.", 
+    "year": 2010, 
+    "sols": [
+        "This is simple matter of evaluating an integral. From the definition of\nthe average value of a function on an interval, we can write an\nexpression for the average value of $1/x$ on the interval $[1,e]$:\n\n\\begin{align*}\nf_{avg} &= \\frac{1}{e - 1}\\int_{1}^{e}\\frac{1}{x}\\,dx \\\\ &= \\frac{1}{e - 1}\\ln(x)\\Big\\vert_{1}^{e}\n\\\\f_{avg} &= \\frac{1}{e - 1}\n\\end{align*}\n\nSo the average value of $1/x$ on the interval $[1,e]$ is $(e - 1)^{-1}$."
+    ], 
+    "hints": [
+        "What is the definition for the average value of a function, $f(x)$, on\nan interval, $[a,b]$?\n\nSee the related\n\\href{http://en.wikipedia.org/wiki/Mean\\#Mean_of_a_function}{wikipedia\narticle}. Note that mean and average have the same meaning in this\ncontext."
+    ]
+}

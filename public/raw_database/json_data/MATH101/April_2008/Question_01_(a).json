@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n$\\int \\frac{x^{3} - 2x}{\\sqrt{x}}\\, dx$", 
+    "year": 2008, 
+    "sols": [
+        "As suggested by the hint, we have\n\n\\begin{align*} \\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx &= \\int\\frac{x^{3}}{\\sqrt{x}}\\, dx - \\int\\frac{2x}{\\sqrt{x}}\\, dx \\\\\n&= \\int x^{5/2} \\, dx -2 \\int x^{1/2} \\, dx \\\\\n&= \\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\n\\end{align*}"
+    ], 
+    "hints": [
+        "Split up the fraction into two parts. Then evaluate the sum as a sum of\neasy to evaluate integrals."
+    ]
+}

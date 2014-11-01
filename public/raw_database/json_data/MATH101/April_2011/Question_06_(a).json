@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH101", 
+    "statement": "Evaluate the following indefinite integral as a power series, and find\nthe radius of convergence.\n\n\\[\\int \\frac{1}{1 + x^3}dx\\]", 
+    "year": 2011, 
+    "sols": [
+        "We have the series expansion\n\n\\[\\frac{1}{1 + x^3} = 1  - x^3 + x^6 - x^9 + \\cdots = \\sum_{n=0}^\\infty (-x)^{3n}\\]\n\nand so, integrating term by term we find that\n\n\\[\\int \\frac{1}{1+x^3}dx = \\sum_{n=0}^\\infty\\int (-x)^{3n}dx = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{3n+1}}{3n+1}\\]\n\nIt only remains to find the radius of convergence. The computing the\nlimit in the ratio test yields\n\n\\begin{align*}\n\\lim_{n\\to\\infty} \\left|\\frac{c_{n+1}}{c_{n}}\\right| \n&= \\lim_{n\\to\\infty} \\left|\\frac{(-1)^{n+1}\\frac{x^{3(n+1)+1}}{3(n+1)+1}}{(-1)^n\\frac{x^{3n+1}}{3n+1}}\\right| \\\\\n&= \\lim_{n\\to\\infty} \\left|\\frac{\\frac{x^{3n+4}}{3n+4}}{\\frac{x^{3n+1}}{3n+1}}\\right| \\\\\n&= \\lim_{n\\to\\infty} \\frac{|x|^{3n+4}}{|x|^{3n+1}}\\frac{3n+1}{3n+4}\\\\\n&= \\lim_{n\\to\\infty} |x|^{3}\\frac{n(3+1/n)}{n(3+4/n)}\\\\\n&= \\lim_{n\\to\\infty} |x|^{3}\\frac{3+1/n}{3+4/n}\\\\\n&= |x|^{3}\n\\end{align*}\n\nNow the ratio test tells us that the series converges whenever\n$\\displaystyle |x|^{3} < 1$ and thus our radius of convergence is 1."
+    ], 
+    "hints": [
+        "Remember the series expansion\n\n\\[\\frac{1}{1-x} = 1 + x + x^2 + x^3 + x^4 + \\cdots = \\sum_{n=0}^\\infty x^n\\]"
+    ]
+}

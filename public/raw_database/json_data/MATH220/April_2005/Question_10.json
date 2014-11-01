@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_10", 
+    "course": "MATH220", 
+    "statement": "Suppose that\n\n\\[f: \\mathbb{N} \\to \\mathbb{R}\\] is a bounded function and that\n$\\{a_n\\}$ is a sequence that converges to 0. Prove that\n\n\\[\\lim_{n \\to \\infty} f(n)a_n = 0\\]", 
+    "year": 2005, 
+    "sols": [
+        "Since $f$ is bounded there exists a constant \\emph{M} such that\n\n\\[|f(n)|<M \\quad\\text{for all } n\\in \\mathbb{N}\\]\n\nWe will show that $\\{f(n)a_n\\}$ converges to zero. Let $\\epsilon>0$.\nSince $\\{a_n\\}$ converges to zero there exists a positive integer\n\\emph{N}\\textsubscript{\u03b5} such that\n\n\\[|a_n|<\\frac{\\epsilon}{M} \\quad\\text{for all } n>N_\\epsilon\\] Hence\n\n\\[|f(n)a_n|=|f(n)||a_n|<M\\frac{\\epsilon}{M}=\\epsilon \\quad\\text{for all } n>N_\\epsilon\\]\nThis shows that $\\{f(n)a_n\\}$ converges to zero."
+    ], 
+    "hints": [
+        "Show that if $\\{a_n\\}$ is a sequence converging to zero and \\emph{M} is\na constant then the sequence $\\{Ma_n\\}$ also converges to zero."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH110", 
+    "statement": "Two curves are said to \\emph{intersect orthogonally at x =a} if\n(\\emph{i}) they intersect at \\emph{x = a} and (\\emph{ii}) their tangent\nlines are perpendicular at \\emph{x = a}.\n\nVerify that the curves $y = \\frac16 \\sqrt{2x^2+7}$ and\n$y = -2x^2 + 7x -\\frac{13}{6}$ intersect at $x = 3$.", 
+    "year": 2010, 
+    "sols": [
+        "The two curves will intersect at $x = 3$ if their y-values are the same\nat $x = 3$. To find the y-values, we just plug $x = 3$ into each curve.\n\nThe first curve gives:\n\n\\begin{align*}\ny &= \\frac16 \\sqrt{2(3)^2 + 7} \\\\\n&= \\frac16 \\sqrt{25} \\\\\n&= \\frac56  \\end{align*}\n\nThe second curve gives:\n\n\\begin{align*}\ny &= -2(3)^2 + 7(3) -\\frac{13}{6}\\\\\n&= -18 + 21 -\\frac{13}{6}\\\\\n&= 3 -\\frac{13}{6}\\\\\n&= \\frac{18}{6} -\\frac{13}{6} \\\\\n&= \\frac56 \\end{align*}\n\nThese two y-values are equal, so the curves do intersect at $x = 3$."
+    ], 
+    "hints": [
+        "Two curves intersect at an x-value if their y-values are the same at\nthat point."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04", 
+    "course": "MATH220", 
+    "statement": "Define \\emph{S} to be the set of all real numbers \\emph{x} such that\n\\emph{exactly one} of the two series\n\n\\[\\sum_{k=1}^\\infty \\left(x-\\frac{1}{2} \\right)^k \\quad\\text{ and }\\quad \\sum_{k=1}^\\infty \\left(x+\\frac{1}{2} \\right)^k\\]\n\nconverges. Write down (with justification) a simple expression for\n\\emph{S}, using interval notation and set operations such as $\\cup$,\n$\\cap$ and / or -.", 
+    "year": 2005, 
+    "sols": [
+        "The first series\n\n\\[\\sum_{k=1}^\\infty \\left(x-\\frac12\\right)^k\\] converges for all values\nof \\emph{x} such that\n\n\\[\\displaystyle\n-1 < x-\\frac12 < 1\\] which we can rewrite as\n\n\\[\\displaystyle\n-1+\\frac12 < x < 1+\\frac12\\] that is\n\n\\[\\displaystyle\n-\\frac12 < x < \\frac32\\]\n\nThe second series\n\n\\[\\sum_{k=1}^\\infty \\left(x+\\frac12\\right)^k\\] converges for all values\nof \\emph{x} such that\n\n\\[\\displaystyle\n-1 < x+\\frac12 < 1\\] which we can rewrite as\n\n\\[\\displaystyle\n-1-\\frac12 < x < 1-\\frac12\\] that is\n\n\\[\\displaystyle\n-\\frac32 < x < \\frac12\\]\n\nSo values of \\emph{x} in the interval (-1/2,3/2) will make the first\nseries converge and values in the interval (-3/2,1/2) will make the\nsecond series converge. Hence the values of \\emph{x} which make\n\\emph{exactly} one of the series convergent cannot be in the\nintersection of these two intervals. We can now conclude that that the\nset \\emph{S} is\n\n\\[\\displaystyle\nS = \\left( -\\frac32, -\\frac12\\right] \\cup \\left[ \\frac12, \\frac32 \\right)\\]"
+    ], 
+    "hints": [
+        "The series\n\n\\[\\sum_{k=1}^{\\infty} x^k\\] converges for all values of \\emph{x} between\n-1 and 1."
+    ]
+}

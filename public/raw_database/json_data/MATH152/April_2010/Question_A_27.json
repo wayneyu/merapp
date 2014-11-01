@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_27", 
+    "course": "MATH152", 
+    "statement": "Suppose that \\emph{A} is an $8 \\times 8$ invertible matrix and \\emph{b}\nis a column vector with 8 entries. Both \\emph{A} and \\emph{b} have been\nentered into MATLAB. What commands would you use to compute the vector\n\\textbf{x} that solves the linear system\n\n\\[A \\mathbf{x} = \\mathbf{b}?\\]", 
+    "year": 2010, 
+    "sols": [
+        "If we have a linear system\n\n\\[A\\mathbf{x}=\\mathbf{b}\\]\n\nthen Matlab can solve this via the \\textbackslash{} operator. Therefore\nif we type\n\n\\texttt{x=A\\textbackslash{}b;}\n\nthen the vector \\emph{x} produced by Matlab is the solution to the\nlinear system.\n\n\\textbf{Note.} Since \\emph{A} is invertible, it is possible to get the\nsolution by typing\n\n\\texttt{x=inv(A)*b;}\n\nbut you are generally discouraged from using the inv() operation in\nMatlab to solve linear systems. (That's because calculating the inverse\nof a matrix \\emph{A} is an overkill here, there is faster ways of\nfinding \\emph{x} that don't require the matrix inverse.)"
+    ], 
+    "hints": [
+        "What is the special Matlab command for solving a linear system?"
+    ]
+}

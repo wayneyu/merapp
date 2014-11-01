@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_03_(c)", 
+    "course": "MATH152", 
+    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\]\n\nand transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\]\n\nWhat is the matrix A?", 
+    "year": 2011, 
+    "sols": [
+        "Let's write our matrix A as\n\n\\[A=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\]\n\nwith yet to be determined entries. In the problem we know that\n\n\\[A\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\\]\n\nand we expand this out to get\n\n\\begin{align*}\na-b&=0,\\\\\nc-d&=0.\n\\end{align*}\n\nTherefore, \\emph{a=b} and \\emph{c=d}. We also have that\n\n\\[A\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\]\n\nwhich we can expand out to get\n\n\\begin{align*}\na+b=2a&=2,\\\\\nc+d=2c&=2.\n\\end{align*}\n\nTherefore we conclude that \\emph{a=b=c=d=1}. Therefore our matrix\n\\emph{A} is\n\n\\[A=\n\\begin{bmatrix}\n1  &  1\\\\\n1  &  1\n\\end{bmatrix}.\\]\n\nNotice that we can indeed confirm that this matrix has eigenvalues 2 and\n0 and is not invertible."
+    ], 
+    "hints": [
+        "The matrix A has four unknowns. We are given 2 vector solutions of\nA\\textbf{x}=\\textbf{b}. How can we turn this into 4 equations for our 4\nunknowns?"
+    ]
+}

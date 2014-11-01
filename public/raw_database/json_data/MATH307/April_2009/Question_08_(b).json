@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_08_(b)", 
+    "course": "MATH307", 
+    "statement": "A player begins a game of chance by placing a marker in box 2, marked\nstart. A die is rolled, and the marker is moved one square to the left\nif a 1 or 2 is rolled and one square to the right if a 3, 4, 5, or 6 is\nrolled. This process continues until the marker lands in square 1, in\nwhich case the player wins the game, or in square 4, in which case the\nplayer loses the game.\n\n\\textbf{(b)} How would you check in MATLAB/Octave whether the above\nstochastic matrix has only one eigenvalue equal to 1 or multiple\neigenvalues equal to 1? Write down the commands you would use and\nexplain how the output would indicate which of the possibilities is\ntrue.", 
+    "year": 2009, 
+    "sols": [
+        "Input the following:\n\n\\texttt{~~~P~=~{[}1,1/3,0,0;0,0,1/3,0;0,2/3,0,0;0,0,2/3,1{]};}\\\\\\texttt{~~~eigs(P)}\n\nThe \\emph{eigs} command gives us a column vector listing the eigenvalues\nof \\emph{P}, including any repetitions. As such, if the value 1 appears\nmore than once in the output vector, then \\emph{P} has multiple\neigenvalues equal to 1."
+    ], 
+    "hints": []
+}

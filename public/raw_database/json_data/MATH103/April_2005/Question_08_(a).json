@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_08_(a)", 
+    "course": "MATH103", 
+    "statement": "Write down the first five terms in a Taylor series expansion of the\nfunction $\\displaystyle y = f(x) = e^{x}$ about $\\displaystyle x=0$.\n(Note: If you remember this series, you are not asked to \\textbf{derive}\nit).", 
+    "year": 2005, 
+    "sols": [], 
+    "hints": []
+}

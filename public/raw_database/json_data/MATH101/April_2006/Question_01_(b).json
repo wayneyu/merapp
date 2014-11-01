@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH101", 
+    "statement": "Evaluate $\\int \\cos^2 x\\,dx.$", 
+    "year": 2006, 
+    "sols": [
+        "First we use the double angle formula\n\n$\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}$\n\nto see that\n\n\\begin{align*}\n\\int \\cos^{2}(x) \\, dx  &= \\int \\frac{1+\\cos(2x)}{2} \\, dx \\\\\n&= \\frac{x}{2}  +  \\frac{1}{2}\\int \\cos(2x) \\, dx \\\\\n&=  \\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The double angle formula which is\n\n$\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}$\n\nwill be useful."
+    ]
+}

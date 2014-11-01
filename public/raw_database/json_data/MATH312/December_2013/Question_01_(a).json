@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH312", 
+    "statement": "Suppose $\\displaystyle m > 1$ is a positive integer and\n$\\displaystyle (a,m) = 1$. State the definition of the inverse\n$\\overline a$ of $\\displaystyle a$ modulo $\\displaystyle m$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

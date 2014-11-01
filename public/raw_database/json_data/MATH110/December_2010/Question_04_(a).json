@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH110", 
+    "statement": "Given a differentiable function $\\displaystyle f$, recall that there are\ntwo definitions for $\\displaystyle f'(a)$ :\n\n\\[\\displaystyle f'(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x - a}\\]\n\nand\n\n\\[\\displaystyle f'(a) = \\lim_{h \\to 0}\\frac{f(a+h) - f(a)}{h}\\]\n\nPick one of these definitions and draw a picture to illustrate the fact\nthat the limit on the right-hand side is the limit of slopes of secant\nlines. Make sure to include the labels $a$ and $f(a)$.", 
+    "year": 2010, 
+    "sols": [
+        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_1.jpg}\n\\caption{Math Exam Resources Math 110 December 2010 Question 4 a Solution 1.jpg}\n\\end{figure}\n\nSee as $x \\to a$, the slope of the line between $(a, f(a))$ and\n$(x, f(x))$ approaches the slope of the tangent line at $x = a$.", 
+        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_b.jpg}\n\\caption{Math Exam Resources Math 110 December 2010 Question 4 a Solution b.jpg}\n\\end{figure}\n\nAs $h \\to 0$, the slope of the line between $(a, f(a))$ and\n$(a+h, f(a+h))$ approaches the slope of the tangent line at $x = a$."
+    ], 
+    "hints": [
+        "Draw an \\emph{a} and \\emph{x} (or an \\emph{x} and an \\emph{x + h}) on\nthe x-axis. Given a drawing of a function $f$, what are the\ncorresponding labels on the y-axis?"
+    ]
+}

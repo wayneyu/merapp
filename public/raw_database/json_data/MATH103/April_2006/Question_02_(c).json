@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH103", 
+    "statement": "If the continuous random variable \\emph{x} has probability density\n$\\displaystyle p(x) = \\frac{\\pi}{2}\\sin(\\pi x)$ for\n$\\displaystyle 0 \\leq x \\leq 1$, find the mean value of \\emph{x}.", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(c)", 
+    "course": "MATH110", 
+    "statement": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(x)$, where $f(x)=\\dfrac{e^{3x}}{3x}$.", 
+    "year": 2012, 
+    "sols": [
+        "To begin calculating this derivative, apply the quotient rule. So\n\n$f'(x) = \\frac{(e^{3x})' *(3x) - e^{3x} *(3x)' }{(3x)^2}$\n\nThe derivative of \\emph{3x} is simple to calculate, but in order to\ncalculate $(e^{3x})'$ we will need to use the chain rule as follows:\n\n$\\displaystyle (e^{3x})'  = e^{3x}*(3x)' = e^{3x}*3$\n\nPlugging this back into the quotient rule, we get:\n\n$f'(x) = \\frac{(e^{3x}*3)*(3x) - e^{3x} *(3) }{(3x)^2}$\n\nYou can leave this answer as is."
+    ], 
+    "hints": [
+        "You need to use the quotient rule and one other rule to calculate this\nderivative."
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(n)", 
+    "course": "MATH105", 
+    "statement": "Find the variance of the random variable \\emph{X} whose density function\nis\n\n\\[f(x) = \\frac1{2\\sqrt{x}} \\quad 1 \\leq x \\leq 4\\].\n\n\\emph{(You may need the fact that the expected value of the random\nvariable X above is 7/3.)}", 
+    "year": 2010, 
+    "sols": [
+        "From the definition of the variance we can directly compute its value.\n\n\\begin{align*}\n\\mathrm{Var}(X) &= \\int_a^b (x-\\overline{X})^2 f(x)\\, dx = \\int_1^4 \\left(x-\\frac73\\right)^2 \\frac1{2\\sqrt{x}}\\,dx \\\\\n&= \\int_1^4 \\left(\\frac{x^2}{2\\sqrt{x}} - \\frac73 \\frac{x}{\\sqrt{x}} + \\frac{49}9 \\frac1{2\\sqrt{x}}\\right)\\,dx \\\\\n&= \\int_1^4 \\left(\\frac12 x^{3/2} - \\frac73 x^{1/2} + \\frac{49}{18}x^{-1/2}\\right)\\,dx \\\\\n&= \\left.\\left(\\frac12 \\frac25 x^{5/2} - \\frac73 \\frac23 x^{3/2} + \\frac{49}{18} 2x^{1/2}\\right)\\right|_1^4 \\\\\n&= \\frac15\\,32 - \\frac{14}9\\,8 + \\frac{49}9\\,2 - \\left(\\frac15 - \\frac{14}9 + \\frac{49}9\\right) \\\\\n&= \\frac{34}{45}.\n\\end{align*}", 
+        "Alternatively, we can also use the identity\n\n\\[\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\]\n\nWe're already given $\\mathbb{E}(X) = 7/3$ so we just need\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 f(x) dx$.\n\nWe compute this integral, finding\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 \\frac{1}{2 \\sqrt{x}} dx = \\int_1^4 \\frac{1}{2} x^{3/2} dx = \\frac{1}{5} x^{5/2}|_1^4 = \\frac{1}{5}(32-1) = 31/5.$\n\nThus $\\mathrm{Var}(X) = \\frac{31}{5} - (\\frac{7}{3})^2 = 34/45$."
+    ], 
+    "hints": [
+        "The definition of the variance is\n\n\\[\\mathrm{Var}(X) = \\int_a^b (x-\\overline{X})^2 f(x)\\, dx\\]", 
+        "The calculation becomes a little easier when you use the identity\n\n\\[\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\]"
+    ]
+}

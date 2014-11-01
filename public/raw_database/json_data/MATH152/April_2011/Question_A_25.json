@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_25", 
+    "course": "MATH152", 
+    "statement": "The matrix,\n\n\\[A=\\begin{bmatrix}\n1  &  0  &  p\\\\\n0  &  1  &  0\\\\\n1  &  0  &  1\n\\end{bmatrix}\\]\n\ncontains a real parameter $p$. For what values of $p$ does $A$ have\nthree \\textbf{real} and \\textbf{distinct} eigenvalues?", 
+    "year": 2011, 
+    "sols": [
+        "We want to find the eigenvalues of $A$, i.e. we seek $\\lambda$ such\nthat,\\\\$A\\mathbf{x}=\\lambda{}\\mathbf{x}.$\\\\Equivalently we can write\nthis as,\\\\$\\underbrace{\\begin{bmatrix}\n1-\\lambda  &  0  &  p\\\\\n0  &  1-\\lambda  &  0\\\\\n1  &  0  &  1-\\lambda\n\\end{bmatrix}}_{M}\\mathbf{x}=0.$\\\\In order for a non-trivial\n($\\mathbf{x}\\neq\\mathbf{0}$) solution we require the determinant of $M$\nto be zero. Computing this determinant and setting it to zero we\nget,\\\\$\\begin{vmatrix}\n1-\\lambda  &  0  &  p\\\\\n0  &  1-\\lambda  &  0\\\\\n1  &  0  &  1-\\lambda\n\\end{vmatrix}\n=(\\lambda-1)((\\lambda-1)^2-p)=0.$\\\\Immediately we can conclude that\n$\\lambda=1$ is an eigenvalue regardless of $p$. The other two\neigenvalues are\\\\$\\lambda_{\\pm}=1\\pm\\sqrt{p}.$\\\\In order for these to be\n\\textbf{distinct}, we require that $p\\neq{0}$. In order for them to be\n\\textbf{real}, we require that $p>0$. Notice $p>0$ satisfies both of\nthese conditions. Also, as long as $p>0$ then $\\lambda_{\\pm}$ will be\ndistinct from the third eigenvalue $\\lambda=1$. Therefore we conclude\nthat if $p>0$ then the eigenvalues of $A$ will be both \\textbf{real} and\n\\textbf{distinct}."
+    ], 
+    "hints": [
+        "How do find the characteristic polynomial of an eigenvalue problem?"
+    ]
+}

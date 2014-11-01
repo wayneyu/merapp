@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH215", 
+    "statement": "Find all values of \\emph{m} so that $\\displaystyle y = t^m$ satisfies\n$\\displaystyle t^{2}y'' - 6y = 0$", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

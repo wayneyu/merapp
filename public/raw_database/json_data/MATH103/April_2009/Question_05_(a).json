@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH103", 
+    "statement": "A carrot has the shape formed by revolving the region under the graph of\n\n\\[f(x) = \\sqrt{14-x}\\]\n\nfor $0 \\leq x \\leq 12$ cm about the \\emph{x} axis. The concentration of\nvitamin A is found to vary in the carrot with \\emph{x} according to\n\n\\[c(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\\]\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_5\\_(a)\\_5a.png}\n\\end{figure}\n\nWhat is the volume of the carrot?", 
+    "year": 2009, 
+    "sols": [
+        "We take the disk method to calculate\n\n\\begin{align*}\n\\int_0^{12}\\left(\\sqrt{14-x}\\right)^2\\pi dx &= \\pi\\int_0^{12}(14-x)dx \\\\\n&= \\pi\\left.\\left(14x - \\frac{x^2}{2}\\right)\\right|_0^{12} \\\\\n&= 96\\pi.\n\\end{align*}"
+    ], 
+    "hints": [
+        "Use the disk method $\\int r(x)^2\\pi dx$"
+    ]
+}

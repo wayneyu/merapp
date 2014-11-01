@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH100", 
+    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nLet\n\n\\[f(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x & \\text{if } x \\geq 1 \\\\\n2-x^{4} & \\text{if } x < 1 \n\\end{cases}\\]\n\nNOTE: Another notation for \\emph{tan}\\textsuperscript{-1}(\\emph{x}) is\n\\emph{arctan}(\\emph{x})\n\nShow that $f(x)$ is continuous at \\emph{x} = 1.", 
+    "year": 2010, 
+    "sols": [
+        "To have continuity we need that:\n\n{[}1{]} The function f(x) is defined at x = 1.\n\n{[}2{]} $\\lim_{x \\rightarrow 1}f(x)$ exists and is equal to f(1).\n\nClearly we can evaluate $f(1) = \\frac{4}{\\pi}\\tan^{-1}(1) = 1$. So f(1)\nis defined and {[}1{]} is satisfied.\n\nTo check condition 2), we need to evaluate the limit as x goes to 1 of\nf(x), but since the function is piecewise defined, we need to evaluate\nthe left and right-hand limits and confirm that they are equal.\n\n\\begin{align*}\n\\lim_{x \\to 1^{-}}f(x) &= \\lim_{x \\to 1}\\left(\\frac{4}{\\pi}\\tan^{-1}(x)\\right) = \\frac4{\\pi} \\tan^{-1}(1) = 1 \\\\\n\\lim_{x \\to 1^{+}}f(x) &= \\lim_{x \\to 1}\\left(2 - x^{4}\\right) = 2-(1)^4 = 1\n\\end{align*} From this we can see the left and right-hand limits are\nequal and that they equal f(1), so {[}2{]} is also satisfied. Thus f(x)\nis continuous at x = 1."
+    ], 
+    "hints": [
+        "What are the conditions for a function to be continuous at a point\n\\emph{x} = \\emph{a}?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH105", 
+    "statement": "According to market research, the demand curve for a local pizza\nrestaurant satis\u00ef\u00ac\u0081es the following relation: if \\emph{p} is the price\nof a pizza (in dollars), and \\emph{q} is the number of pizzas sold per\nday, then\n\n\\[\\displaystyle\np^2 + 4q^2 = 800.\\]\n\nThe restaurant owners want to determine what price the restaurant should\ncharge for each pizza in order to make their daily revenue as high as\npossible.\n\n\\textbf{(a)} Formulate this as a constrained optimization problem,\nclearly stating the objective function and the constraint.", 
+    "year": 2012, 
+    "sols": [
+        "We wish to maximize the revenue $f(p,q) = pq$ subject to the constraint\n$g(p,q) = p^2 + 4q^2 = 800$."
+    ], 
+    "hints": [
+        "Is the given equation the revenue or the constraint? How is the other\none calculated?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_04_(b)", 
+    "course": "MATH152", 
+    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(b)}\n\n\\[\\left[\\begin{array}{ccc}1 & 2 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 0 & 0 \\end{array}\\right. \\left| \\begin{array}{c} 0 \\\\ 0 \\\\ 0 \\end{array}\\right]\\]", 
+    "year": 2010, 
+    "sols": [
+        "From the matrix,\n\n\\[\\left[\\begin{array}{ccc}1 & 2 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 0 & 0 \\end{array}\\right. \\left| \\begin{array}{c} 0 \\\\ 0 \\\\ 0 \\end{array}\\right]\\]\n\nwe see that the third row is all zeros (including the augmented part)\nand so one of the variables is a free parameter. From the second row we\nsee that x\\_3=0. Let the free parameter be x\\_2. Then from the first row\nwe see that x\\_1=-2x\\_2. Therefore we have a null vector,\n\n\\[\\begin{bmatrix}\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\\]\n\nand the solution is\n\n\\[\\mathbf{x}=t\n\\begin{bmatrix}\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}.\\]\n\nThere are an infinite number of solutions."
+    ], 
+    "hints": [
+        "Recall that if the matrix has a row of zeros then the corresponding\nvalue in the augmented part of the matrix must be zero or there is no\nsolution."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH312", 
+    "statement": "The purpose of this problem is to prove the following theorem.\n\n\\textbf{Theorem 1.} For all positive integers $\\displaystyle a,m$ we\nhave $\\displaystyle a^{m} \\equiv a^{m-\\phi(m)} \\mod{m}$\n\nLet $\\displaystyle a,m$ be positive integers. For $\\displaystyle m=1$,\nthe theorem holds trivially, so we assume from now on that\n$\\displaystyle m > 1$ and write its prime-power factorization as\n$\\displaystyle m = p_{1}^{e_{1}} \\cdot ... \\cdot p_{k}^{e_{k}}$ for\ndifferent primes $\\displaystyle p_{1},...,p_{k}$ and positive integer\nexponents $\\displaystyle e_{1},...,e_{k}$ and some positive integer\n\\emph{k}. Let $\\displaystyle i \\in \\{1,..,k\\}$ and focus on the prime\npower $\\displaystyle p_{i}^{e_{i}}$ in the prime-power factorization of\n\\emph{m}.\n\n\\textbf{(a)} Prove that if $\\displaystyle p_{i}\\nmid a$ then\n$\\displaystyle p_{i}^{e_{i}} \\mid (a^{\\phi(m)}-1)$\n\n\\emph{Hint:} Use Euler's theorem and prove/use that\n$\\displaystyle \\phi(p_{i}^{e_{i}}) \\mid \\phi(m)$", 
+    "year": 2008, 
+    "sols": [
+        "Proceed as in the hint given in the problem. Notice that\n\n$\\displaystyle \\phi(m) = \\phi\\left(\\prod_{i=1}^{k}p_{i}^{e_{i}}\\right) = \\prod_{i=1}^{k}\\phi\\left(p_{i}^{e_{i}}\\right)$\n\nholding since $\\displaystyle \\phi$ is multiplicative. Hence\n\n$\\displaystyle \\phi(p_{i}^{e_{i}}) \\mid \\phi(m)$ and for simplicity, say\n$\\displaystyle \\phi(m) = \\phi(p_{i}^{e_{i}})s$ for some integer\n\\emph{s}. Thus\n\n$\\displaystyle a^{\\phi(m)} \\equiv (a^{\\phi(p_{i}^{e_{i}})})^{s} \\equiv 1 \\mod{p_{i}^{e_{i}}}$\n\nwhere the last line holds by Euler's theorem since we are given in this\nquestion that $\\displaystyle p_{i} \\nmid a$ so\n$\\displaystyle \\gcd(a,p_{i}^{e_{i}}) = 1$."
+    ], 
+    "hints": [
+        "The hint in the problem tells you how this proof should be formulated."
+    ]
+}

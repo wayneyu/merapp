@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_10", 
+    "course": "MATH110", 
+    "statement": "(originally for bonus marks)\n\nProve that the curve\n\n\\[y = \\frac{\\cos x - 1}{x}\\] has an infinte number of horizontal tangent\nlines.", 
+    "year": 2010, 
+    "sols": [
+        "As was noted in the hint, the curve has horizontal tangent lines at\nvalues where its derivative is equal to zero. Thus we first take the\nderivative of the curve, using the quotient rule:\n\n\\begin{align*}\n\\frac{dy}{dx} &= \\frac{(\\cos x - 1)'\\cdot x - (\\cos x - 1)\\cdot(x)'}{x^2} \\\\\n&= \\frac{-\\sin x\\cdot x - (\\cos x - 1)\\cdot 1}{x^2} \\\\\n&= \\frac{-x\\sin x - \\cos x + 1}{x^2} \\end{align*}\n\nWe set this equal to zero and simplify to get:\n\n\\begin{align*}\n\\frac{-x\\sin x - \\cos x + 1}{x^2} &= 0 \\\\\n-x\\sin x - \\cos x + 1 &= 0 \\\\\n-x\\sin x - \\cos x &= -1 \\\\\n\\end{align*}\n\nSo we are trying to find x-values that satisfy this final equation; if\nsuch an x-value exists, $y$ has a horizontal tangent at that point.\n\nFrom here, there is no specific method or surefire trick to find the\nanswer - the only thing required is an understanding of the behavior of\n$\\sin x$ and $\\cos x$, especially considering their values as points on\nthe unit circle.\n\nThe most useful observation here is that on the unit circle, when\n$\\cos x$ is zero, $\\sin x$ is $\\pm 1$ and vice versa. This is one step\ntowards a solution, because if we can find a place where $\\sin x = 0$\nand $\\cos x = 1$, we will have found a combination of $x \\sin x$ and\n$\\cos x$ that will equal -1, which is what we want.\n\nIn fact, when $x = 0$ we know that $\\sin x = 0$ and $\\cos x = 1$. On the\nright hand side of the equation above this gives -1, just like we want.\nThus $x = 0$ is one solution to our equation; our curve will have a\nhorizontal tangent line here.\n\nBecause $\\sin x$ and $\\cos x$ are periodic, we know that this solution\nwill work anytime we are at the same angle on the unit circle, i.e. the\nangles $2\\pi, 4\\pi, 6\\pi, \\dots$ and so on. So there are an infinite\nnumber of solutions, $0, 2\\pi, 4\\pi, \\dots$ and so the curve has an\ninfinite number of horizontal tangent lines."
+    ], 
+    "hints": [
+        "A curve has horizontal tangent lines when its derivative is equal to\nzero."
+    ]
+}

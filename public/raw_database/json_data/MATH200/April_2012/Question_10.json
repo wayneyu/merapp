@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_10", 
+    "course": "MATH200", 
+    "statement": "Evaluate\n\n\\[\\iiint\\limits_{\\mathbb{R}^3}\\left[1+(x^2+y^2+z^2)^3\\right]^{-1}\\textrm{d}V.\\]", 
+    "year": 2012, 
+    "sols": [
+        "The combination $x^2+y^2+z^2$ suggests a change to spherical\ncoordinates. The domain is compatible with this: in spherical\ncoordinates, the whole space is covered when:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\theta$ runs from 0 to 2$\\pi$,\n\\item\n  $\\phi$ runs from 0 to $\\pi$, and\n\\item\n  $\\rho$ runs from 0 to +$\\infty$.\n\\end{itemize}\n\nIn spherical coordinates, the differential volume element is:\n\n\\[dV = \\rho^2\\sin(\\phi)\\,d\\rho\\,d\\theta\\,d\\phi\\].\n\nAnd the function to integrate becomes:\n\n\\[(1+(x^2+y^2+z^2)^3)^{-1} = (1+(\\rho^2)^3)^{-1} = \\frac{1}{1+\\rho^6}\\].\n\nThus the integral of interest becomes:\n\n\\[I\n= \\int_{\\rho=0}^\\infty \\int_{\\phi=0}^{\\pi} \\int_{\\theta=0}^{2\\pi} \\frac{\\rho^2\\sin(\\phi)}{1 + \\rho^6} d\\theta\\,d\\phi\\,d\\rho\n= \\int_{\\rho=0}^\\infty \\frac{\\rho^2}{1 + \\rho^6} \\,d\\rho \\underbrace{\\int_{\\phi=0}^{\\pi} \\sin(\\phi) \\,d\\phi}_{=2} \\underbrace{\\int_{\\theta=0}^{2\\pi} d\\theta}_{=2\\pi}\\]\n\nHence\n\n\\[I\n= 4\\pi \\int_{\\rho=0}^\\infty \\frac{\\rho^2}{1 + \\rho^6} \\,d\\rho\\]\n\nSubstitute:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle u=\\rho^3$\n\\item\n  $\\displaystyle du = 3\\rho^2 \\,d\\rho$\n\\end{itemize}\n\nAnd you obtain:\n\n\\[I\n= \\frac{4\\pi}{3} \\int_{u=0}^\\infty \\frac{du}{1+u^2}\n= \\frac{4\\pi}{3} \\Bigl.\\tan^{-1}(u)\\Bigr\\vert_{u=0}^\\infty\n= \\frac{2\\pi^2}{3}.\\]"
+    ], 
+    "hints": [
+        "The combination $x^2+y^2+z^2$ suggests a change to spherical\ncoordinates.", 
+        "We integrate over the entire space, so what are the integration limits\nfor $\\rho$, $\\theta$ and $\\phi$?", 
+        "Don't forget to account for the differential volume element\n$\\displaystyle{} dV$.", 
+        "Luckily, the integrals with respect to $\\phi$ and $\\theta$ are easy to solve\ndirectly. For the final integration with respect to $\\rho$ use the\nsubstitution \\emph{u = $\\rho$\\textsuperscript{3}}."
+    ]
+}

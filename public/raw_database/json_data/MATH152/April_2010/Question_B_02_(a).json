@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_02_(a)", 
+    "course": "MATH152", 
+    "statement": "The matrix\n\n\\[A = \\left[\\begin{array}{ccc}\n2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2\n\\end{array}\\right]\\]\n\nis known to have eigenvalues 1 and 4.\n\n\\textbf{(a)} Find the eigenvector of \\emph{A} that corresponds to\neigenvalue 4.", 
+    "year": 2010, 
+    "sols": [
+        "We want to find the eigenvector of\n\n\\begin{align*}\nA=\\begin{bmatrix}\n2  &  1  &  1\\\\\n1  &  2  &  1\\\\\n1  &  1  &  2\n\\end{bmatrix}\n\\end{align*}\n\nwith eigenvalue $\\lambda=4$. We therefore want to find the vector\n$\\mathbf{x}=[a,b,c]^T$ such that\n\n\\begin{align*}\n(A-4I)\\mathbf{x}=\n\\begin{bmatrix}\n-2  &  1  &  1\\\\\n1  & - 2  &  1\\\\\n1  &  1  & - 2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}\n=\\mathbf{0}\n\\end{align*}\n\nWe therefore have three equations with three unknowns\n\n\\begin{align*}\n-2a+b+c&=0\\\\\na-2b+c&=0\\\\\na+b-2c&=0\n\\end{align*}\n\nWe can solve the first equation for c to get\n\n\\begin{align*}\nc=2a-b\n\\end{align*}\n\nand can sub this into the second equation to get\n\n\\begin{align*}\na-2b+2a-b&=0\\\\\n3a-3b&=0\\\\\nb&=a.\n\\end{align*}\n\nUsing c=2a-b and b=a we conclude that c=a. From the last equation we\nget,\n\n\\begin{align*}\na+a-2a=0\n\\end{align*}\n\nwhich is satisfied for all a. Therefore, let a=1 without loss of\ngenerality. This implies that b=c=1 as well. Therefore the eigenvector\nfor the eigenvalue 4 is\n\n\\begin{align*}\n\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nOf course, any multiple of this is also an eigenvector (expect\nmultiplying by 0)."
+    ], 
+    "hints": [
+        "Recall the eigenvectors with eigenvalue $\\lambda$ satisfy\n\n\\[(A-\\lambda{}I)\\mathbf{x}=\\mathbf{0}\\]"
+    ]
+}

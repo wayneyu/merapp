@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH110", 
+    "statement": "Define what it means for a function $f$ to be continuous at a point\n\\emph{a}.", 
+    "year": 2011, 
+    "sols": [
+        "A function $f$ is continuous as a point \\emph{a} if:\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f(a)$ is defined\n\\end{enumerate}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle \\lim_{x \\to a} f(x)$ exists, i.e.\n  $\\displaystyle \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L$\n  where \\emph{L} is finite.\n\\end{enumerate}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle \\lim_{x \\to a} = f(a)$\n\\end{enumerate}\n\nThe first and third conditions ensure that the drawing of $f$ has no\nholes; the second and third conditions ensure that the drawing of $f$ has\nno jumps."
+    ], 
+    "hints": [
+        "A function is continuous if its graph has no holes or jumps. How can a\nhole or jump be described using mathematical language?"
+    ]
+}

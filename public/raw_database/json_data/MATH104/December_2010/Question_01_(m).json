@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(m)", 
+    "course": "MATH104", 
+    "statement": "Let\n\n\\[\\displaystyle{}p_3(x)=c_0+c_1x+c_2x^2+c_3x^3\\]\n\nbe the third degree Taylor polynomial for the function\n\n\\[\\displaystyle{}f(x)=\\textrm{e}^{2x+1}\\]\n\nat x=0. Determine the value of $c_3$.", 
+    "year": 2010, 
+    "sols": [
+        "In general if\n\n\\[\\displaystyle{}p(x) = c_0 + c_1 (x-a) + c_2 (x-a)^2 + ... + c_n (x-a)^n\\]\n\nis the nth degree Taylor polynomial to $f(x)$ centred at $x=a$ then the\ncoefficient is\n\n\\[c_m = \\frac{f^{(m)}(a)}{m!}.\\]\n\nIf\n\n\\[\\displaystyle{}f(x) = e^{2x+1}\\]\n\nthen\n\n\\begin{align*}\nf'(x) &= 2 e^{2x+1}\\\\\nf''(x) &= 4 e^{2x+1}\\\\\nf'''(x) &= 8 e^{2x+1}.\n\\end{align*}\n\nSince we are centering about $0$,\n\n\\[c_3 = \\frac{f'''(0)}{3!} = \\frac{8e}{6}.\\]"
+    ], 
+    "hints": [
+        "Recall that the \\emph{m}th coefficient in a Taylor Polynomial is given\nby\n\n\\[c_m = \\frac{f^{(m)}(a)}{m!}.\\]"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH110", 
+    "statement": "Two curves are said to \\emph{intersect orthogonally at x =a} if\n(\\emph{i}) they intersect at \\emph{x = a} and (\\emph{ii}) their tangent\nlines are perpendicular at \\emph{x = a}.\n\nConsider the curve $y = \\sin x$. Find constants \\emph{b} and \\emph{c}\nsuch that the curve $y = x^2 + bx + c$ intersects it orthogonally at\n$x = 0$.", 
+    "year": 2010, 
+    "sols": [
+        "To find a solution for $b, c$, we need to satisfy two conditions: (1)\n$\\sin x$ and $x^2 + bx + c$ must intersect at $x = 0$ and (2) the\ntangent line of $\\sin x$ at $x = 0$ must be perpendicular to the tangent\nline of $x^2 + bx + c$ at $x = 0$. For this problem it doesn't matter\nwhich condition you test first; in this case, we will start with the\nsecond condition and then proceed to the first condition.\n\nWe begin by finding the slope of the tangent line to each curve at\n$x = 0$. For $\\sin x$ the derivative is $\\cos x$ and so the slope at\n$x = 0$ is $\\cos (0) = 1$. For $x^2 + bx + c$ the derivative is $2x + b$\nand so the slope at $x = 0$ is $2(0) + b = b$. To satisfy condition (2),\nthese two slopes must be perpendicular, i.e. negative reciprocals of\neach other. Since the tangent slope of $\\sin x$ is 1, this means we need\nthe tangent slope of $x^2 + bx + c$ to equal to -1. However, we know the\ntangent slope of $x^2 + bx + c$ is $b$, so this means $b = -1$.\n\nHaving found $b$ we now turn to the first condition of the definition to\nfind $c$. The first condition requires that $\\sin x$ and $x^2 + bx + c$\nintersect at $x = 0$. This means that $\\sin (0)$ must equal\n$(0)^2 + (-1)(0) + c$. In equations, this is:\n\n\\begin{align*} \n\\sin (0) &= (0)^2 + -1(0) + c \\\\\n0 &= c \\end{align*}\n\nSo $c = 0$.\n\nThus the curve $y = x^2 - x$ satisfies both of our conditions and\nintersects orthogonally the curve $y = \\sin x$ at $x = 0$."
+    ], 
+    "hints": [
+        "To solve this question, you will need to meet the two conditions given\nin the definition of orthogonal intersection. It might be easiest to\nstart with the second condition - that the tangent slopes of each curve\nbe perpendicular to each other. What is the tangent slope of the first\nfunction you're given? What does the tangent slope of the second\nfunction have to be, if it's going to be the negative reciprocal of that\nfirst slope?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(c)", 
+    "course": "MATH312", 
+    "statement": "The purpose of this problem is to prove the following tThe purpose of\nthis problem is to prove the following theorem.\n\n\\textbf{Theorem 1.} For all positive integers $\\displaystyle a,m$ we\nhave $\\displaystyle a^{m} \\equiv a^{m-\\phi(m)} \\mod{m}$\n\nLet $\\displaystyle a,m$ be positive integers. For $\\displaystyle m=1$,\nthe theorem holds trivially, so we assume from now on that\n$\\displaystyle m > 1$ and write its prime-power factorization as\n$\\displaystyle m = p_{1}^{e_{1}} \\cdot ... \\cdot p_{k}^{e_{k}}$ for\ndifferent primes $\\displaystyle p_{1},...,p_{k}$ and positive integer\nexponents $\\displaystyle e_{1},...,e_{k}$ and some positive integer\n\\emph{k}. Let $\\displaystyle i \\in \\{1,..,k\\}$ and focus on the prime\npower $\\displaystyle p_{i}^{e_{i}}$ in the prime-power factorization of\n\\emph{m}.\n\n\\textbf{(c)} Prove that\n$\\displaystyle p_{i}^{e_{i}} \\mid (a^{n} - a^{m-\\phi(m)})$\n\n\\emph{Hint:} Combine the results of\n\\href{Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_06_(a)}{(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_06_(b)}{(b)}.", 
+    "year": 2008, 
+    "sols": [
+        "We proceed in cases.\n\n\\textbf{Case 1\\[\\displaystyle p_{i} \\nmid a\\]}.\n\nIn this case, part (a) states that\n\n$\\displaystyle a^{\\phi(m)}\\equiv 1 \\mod{p_{i}^{e_{i}}}$.\n\nSince $\\displaystyle \\gcd(a,p_{i}^{e_{i}}) = 1$, the element above has\nan inverse showing that\n\n$\\displaystyle a^{-\\phi(m)}\\equiv 1 \\mod{p_{i}^{e_{i}}}$.\n\nMultiplying both sides by $\\displaystyle a^{m}$ yields\n\n$\\displaystyle a^{m-\\phi(m)}\\equiv a^{m} \\mod{p_{i}^{e_{i}}}$.\n\nwhich is what we wanted to show in this case.\n\n\\textbf{Case 2\\[\\displaystyle p_{i} \\mid a\\]}.\n\nIn part (b), we showed that\n\n$\\displaystyle p_{i}^{e_{i}} \\mid a^{m-\\phi(m)}$\n\nSince\n\n$\\displaystyle a^{m - \\phi(m)} \\mid a^{m}$\n\nWe also have that\n\n$\\displaystyle p_{i}^{e_{i}} \\mid a^{m}$\n\nand hence that\n\n$\\displaystyle p_{i}^{e_{i}} \\mid (a^{m} - a^{m-\\phi(m)})$."
+    ], 
+    "hints": [
+        "Split this problem up into the two cases as mentioned in parts (a) and\n(b)."
+    ]
+}

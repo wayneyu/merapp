@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider a matrix $\\displaystyle A \\in \\mathbb{C}^{n\\times n}$, a real\ndiagonal matrix $\\displaystyle S^2$ containing the eigenvalues of\n$\\displaystyle A^{*}A$ (all positive) and a matrix \\emph{V} that\ndiagonalizes $\\displaystyle A^{*}A$. Answer the following questions,\nsubstantiate all your statements.\n\nShow that \\emph{U} diagonalizes $\\displaystyle AA^{*}$ with\n$\\displaystyle S^2$ giving the eigenvalues.", 
+    "year": 2010, 
+    "sols": [
+        "From (a) we found that \\emph{U} is unitary. With this definition,\n\n$\\displaystyle USV^* = AVS^{-1}SV^* = A$.\n\nThen,\n\n$\\displaystyle US^2U^* = AVS^{-1}S^2S^{-1}V^*A^* = AA^*$\n\nFrom this, we can see that \\emph{U} diagonalizes $\\displaystyle AA^*$"
+    ], 
+    "hints": []
+}

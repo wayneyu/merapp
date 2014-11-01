@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(l)", 
+    "course": "MATH100", 
+    "statement": "Find the absolute maximum value of\n$\\displaystyle f(x) = e^{x}(\\sin x - \\cos x )$ on the interval\n$[\\tfrac{\\pi}{2},2\\pi]$", 
+    "year": 2010, 
+    "sols": [
+        "We first take the derivative to see that\n\n$\\displaystyle f'(x) = e^{x}(\\sin x - \\cos x ) + e^{x}(\\cos x + \\sin x) = 2e^{x}\\sin x$\n\nSetting this to zero, we see that the function is zero whenever\n$\\displaystyle \\sin x =0$ (the exponential funciton is always bigger\nthan 0) and on our interval $[\\tfrac{\\pi}{2},2\\pi]$, this occurs at\n$\\displaystyle \\pi$ and at $\\displaystyle 2\\pi$.\n\nChecking the endpoints and values at the critical points, we have\n\n$\\displaystyle f(\\tfrac{\\pi}{2}) = e^{\\tfrac{\\pi}{2}}(\\sin (\\tfrac{\\pi}{2}) - \\cos (\\tfrac{\\pi}{2}) ) = e^{\\tfrac{\\pi}{2}}$\n\n$\\displaystyle f(\\pi) = e^{\\pi}(\\sin (\\pi) - \\cos (\\pi) ) = e^{\\pi}$\n\n$\\displaystyle f(2\\pi) = e^{2\\pi}(\\sin (2\\pi) - \\cos (2\\pi) ) = -e^{2\\pi}$\n\nHence, our function obtains its absolute maximum at $\\displaystyle \\pi$\nand the value is $\\displaystyle e^\\pi$"
+    ], 
+    "hints": [
+        "Maximum values can only occur at the endpoints or critical points. Try\nall these values and see which is biggest.", 
+        "To take the derivative, use the product rule."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH101", 
+    "statement": "Calculate the volume of the solid obtained by rotating the region above\nthe \\emph{x}-axis, below the curve $y = \\frac{\\sin x}{x}$ and between\nthe lines $x = \\frac{\\pi}{2}$ and $\\displaystyle x = \\pi$ about the\n\\emph{y}-axis.", 
+    "year": 2007, 
+    "sols": [
+        "To solve this question, choose an \\emph{x} between $\\pi/2$ and $\\pi$.\nFrom here, the radius of a shell rotated about the \\emph{y}-axis is just\n\\emph{r} = \\emph{x} and the height of this shell is\n$\\frac{\\sin x}{x} - 0 = \\frac{\\sin x}{x}$. The distance the height\ntravels aroudn the \\emph{y}-axis is $2\\pi r$ and hence, we have\n\n\\begin{align*}\nV &= \\int_{\\pi/2}^{\\pi}2\\pi(x)(\\sin(x)/x)\\,dx\\\\\n&= \\int_{\\pi/2}^{\\pi}2\\pi\\sin(x)\\,dx\\\\\n&= 2\\pi(-\\cos(x))\\bigg|_{\\pi/2}^{\\pi} \\\\\n&= 2\\pi(-\\cos(\\pi) + \\cos(\\pi/2))\\\\\n&= 2\\pi(-(-1) + 0)\\\\\n&= 2\\pi\n\\end{align*}"
+    ], 
+    "hints": [
+        "Use the method of cylindrical shells. (Shell Integration)"
+    ]
+}

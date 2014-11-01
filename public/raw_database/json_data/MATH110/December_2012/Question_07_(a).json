@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=\\sin x-\\cos x$. Find all values of $x$ satisfying the equation\n$f(x)=0$ in the interval $[0,\\pi)$. Justify your answer.", 
+    "year": 2012, 
+    "sols": [
+        "The equation $f(x) = 0$ can be written as\n\n$\\sin x  - \\cos x = 0$\n\nor\n\n$\\sin x = \\cos x$\n\nNow it remains to find where $\\sin x$ is equal to $\\cos x$ in the\ninterval $[0, \\pi)$. There are multiple ways to do this.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[Unit Circle]\nThe coordinates of points on the unit circle are given by $\\sin\\theta$\nand $\\cos \\theta$, so finding where $\\sin \\theta = \\cos\\theta$ is the\nsame as finding where the x and y coordinates of a point on the unit\ncircle are the same. This occurs when the angle is equal to $\\pi/4$\nradians.\n\\end{description}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_7ab_unit_circle.jpg}\n\\caption{MER MATH110 December 2012 Question 7ab unit circle.jpg}\n\\end{figure}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[Drawing the graph]\nIf you draw the graphs of $\\sin x$ and $\\cos x$ very carefully, you can\nmake an educated guess about where the two functions are equal. However,\nthis method will never be as accurate as knowing key values of $\\sin x$\nand $\\cos x$ from the unit circle.\n\\end{description}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_7a_graphs.jpg}\n\\caption{MER MATH110 December 2012 Question 7a graphs.jpg}\n\\end{figure}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[Trig ratios]\nOne last method is writing out $\\sin x$ and $\\cos x$ as trig ratios,\nwhere, given a right triangle with angle \\emph{x}, $\\sin x = o/h$ and\n$\\cos x = a/h$. Setting this equal gives:\n\\end{description}\n\n$o/h = a/h$, or $o = a$. The opposite and adjacent sides of a right\ntriangle are equal when the right triangle is isoceles, meaning each\nangle is 45 degrees or $x = \\pi/4$.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_7a_isosceles_triangle.jpg}\n\\caption{MER MATH110 December 2012 Question 7a isosceles triangle.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "In order to solve the equation $f(x) = 0$ it is helpful to know the\nvalues of $\\sin x$ and $\\cos x$ at certain angles. Try using the unit\ncircle or drawing out the graphs of the two functions."
+    ]
+}

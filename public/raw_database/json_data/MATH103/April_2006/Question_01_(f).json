@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH103", 
+    "statement": "Which of the following is essentially a form of the Fundamental Theorem\nof Calculus?\n\ni. The area under the graph of $\\displaystyle f(x)$ between\n$\\displaystyle x=a$ and $\\displaystyle x=b$ is given by\n$\\displaystyle \\int_{a}^{b}f(x)\\,dx$\n\nii.\n$\\displaystyle \\int_{a}^{b}f(x)\\,dx =\\lim_{n \\to \\infty}\\sum_{k=1}^{\\infty}f(x_{k})\\Delta x$\n\niii. The derivative with respect to time of the position of a molecule\nis \\emph{v}. The net displacement of the molecule from\n$\\displaystyle t=0$ to $\\displaystyle t=T$ is given by\n$\\displaystyle \\int_{0}^{T}v(t)\\,dt$\n\niv. $\\displaystyle \\int_{a}^{b}f(x)\\,dx = f'(b) - f'(a)$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

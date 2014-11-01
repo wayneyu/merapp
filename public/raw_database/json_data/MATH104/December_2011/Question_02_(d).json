@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\[f(x) = \\frac{x^3+x^2-2x-3}{x^2-3}\\]\n\nIts first and second derivatives are given by\n\n\\[f'(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}\\] and\n\n\\[f''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}\\]\n\nOn which intervals is f(x) concave up? On which intervals is f(x)\nconcave down?", 
+    "year": 2011, 
+    "sols": [
+        "In order to find the concavity of the function, we first try to find\npoints where the second derivative is zero or undefined. These points\nwill provide endpoints of intervals for concavity.\n\nFrom\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_2_(b)}{part\n(b)} we know that $f''(x)$ is zero exactly when \\emph{x} = 0, and\nthat $f''(x)$ is undefined for \\emph{x} = \u00b1\n\nWe can now either make a sign table or pick test points between those\nvalues to determine whether we are concave up (second derivative\npositive) or concave down (second derivative negative).\n\nFor convenience, recall that\n\n\\[f''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3} = \\frac{2x(x^2+9)}{(x+\\sqrt{3})^3(x-\\sqrt{3})^3}\\]\n\n\\begin{longtable}[c]{@{}lllll@{}}\n& $(-\\infty,-\\sqrt{3})$ & $(-\\sqrt{3},0)$ & $(0,\\sqrt{3})$ &\n$(\\sqrt{3},\\infty)$\\\\\n$\\displaystyle 2x$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$\\displaystyle x^2+9$ & $\\displaystyle +$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x+\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x-\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\n$\\displaystyle f''(x)$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\nConcavity & Concave Down & Concave Up & Concave Down & Concave Up\\\\\n\\end{longtable}\n\nTherefore $f(x)$ is concave up on $(-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)$\nand concave down on $(-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})$."
+    ], 
+    "hints": [
+        "Consider how concavity of a function relates to the second derivative."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH221", 
+    "statement": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear\ntransformation that reflects points through the line \\emph{3x = 4y}.\n\n\\textbf{c)} Compute \\emph{A}\\textsuperscript{1995}.", 
+    "year": 2013, 
+    "sols": [
+        "From the description of \\emph{A}, applying the matrix 1995 to $R^2$ is\nsimply applying the same reflection 1995 times, but as reflections have\norder 2, i.e. applying it twice does nothing, and 1995 is an odd number,\nwe see that $A^{1995} = A$.", 
+        "Alternatively, we can also show this by straightforward computation,\nusing the breakdown in part\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_07_(b)}{b)}:\n\n\\begin{align*}\nA^{1995} &= \\left(B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1}\\right)^{1995} \\\\\n&=  B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array}\\right]^{1995}  B^{-1} \\\\\n&=  B \\left[ \\begin{array}{cc}1^{1995} & 0  \\\\ 0 & (-1)^{1995}\\end{array}\\right]  B^{-1} \\\\\n&= B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1} \\\\\n&= A \n\\end{align*}"
+    ], 
+    "hints": [
+        "Consider what happens to a vector after successive reflections - it may\nhelp to write down a sample vector and it's first 3 or 4 reflections. Do\nyou notice a pattern?"
+    ]
+}

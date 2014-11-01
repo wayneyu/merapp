@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_06_(b)", 
+    "course": "MATH152", 
+    "statement": "Consider the triangle \\emph{T} in three dimensions with vertices\n\\emph{(0, 1, 2)}, \\emph{(1, 1, 5)} and \\emph{(\u00e2\u0088\u00921, 2, 2)}.\n\nConsider also the plane \\emph{P} that contains \\emph{T}.\n\nWhat is the normal (perpendicular) direction to \\emph{P}?", 
+    "year": 2010, 
+    "sols": [
+        "First pick any two linearly independent vectors lying in \\emph{P}\n(meaning the heads and tails of the vectors can be drawn in the plane\n\\emph{P}). A convenient choice will be two sides of the triangle\n\\emph{T}: \\emph{(1, 1, 5) - (0, 1, 2) = (1, 0, 3)} and \\emph{(-1, 2, 2)\n- (0, 1, 2) = (-1, 1, 0)}.\n\nA normal vector to the plane is given by the cross product of these two\nvectors (which is calculated in\n\\href{Science:Math Exam Resources/Courses/MATH152/April 2010/Question B6 (a)}{part\n(a)} already):\n\n\\[\\vec{N} = (1,0,3) \\times (-1,1,0) = (-3,-3,1)\\]\n\nThe above vector gives the normal direction."
+    ], 
+    "hints": [
+        "How does the cross product relate to perpendicular vectors?"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_09_(b)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nFind all vertical and horizontal asymptotes of $\\displaystyle f$, if\nthey exist.", 
+    "year": 2010, 
+    "sols": [
+        "To find the horizontal asymptotes, we evaluate the following limit:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x+1}{x - 1}$\n\nTo evaluate this limit, we need only consider the leading terms - the\n\\emph{x} in both the numerator and denominator. If we think of factoring\nout the \\emph{x} from top and bottom and then canceling, we get:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x(1 + \\frac1x)}{x(1-\\frac1x)} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x}$\n\nThe two $\\frac1x$ terms go to zero as x goes to plus or minus infinity,\nso the limit is as follows:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x} = \\frac11 = 1$\n\nSo $f(x)$ has a horizontal asymptote, given by the equation $y = 1$.\n\nNow to find the vertical asymptotes, we need to find all values $x = a$\nsuch that $\\lim_{x \\to a} f(x)$ diverges to $\\pm \\infty$. The only\ncandidate for a vertical asymptote for this function is the point where\nthe function is undefined, $x = 1$, found in part (a).\n\nIndeed, the limit\n\n$\\lim_{x \\to 1} \\frac{x+1}{x-1}$\n\ngoes to infinity. How does this happen? First consider that when the\ndenominator of a fraction is small, the entire fraction is large (see\nbelow for an example). In our limit, as the \\emph{x}-values get closer\nand closer to 1, the number in the denominator is getting smaller and\nsmaller, closer and closer to zero. Using the previous fact about\nfractions, as the denominator becomes smaller, the entire fraction\ngrows, meaning that the entire function is going to positive or negative\ninfinity. So $f(x)$ has a vertical asymptote at $x = 1$.\n\n\\emph{Example:} The denominator of the fraction\n\n$\\frac{1}{.01}$\n\nis small, but when it is simplified as follows:\n\n$\\frac{1}{.01} = \\frac{1}{\\frac{1}{100}} = 100$\n\nwe can see that entire function is large - in fact it's a large integer,\nnot even a fraction anymore."
+    ], 
+    "hints": [
+        "Horizontal asymptotes are found by taking the limit of the function to\ninfinity.", 
+        "Vertical asymptotes consist of all points $x = a$ such that\n$\\lim_{x \\to a} f(x)$ diverges to $\\pm \\infty$. To find values where\nvertical asymptotes might exist, consider those points where the\nfunction is undefined."
+    ]
+}

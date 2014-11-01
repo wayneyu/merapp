@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_08_(b)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\n\\textbf{(b)} Find the limit, if it exists, of the sequence\n\\{a\\textsubscript{k}\\}, where\n\n\\[a_k = \\frac{k! \\sin^3(k)}{(k+1)!}\\]", 
+    "year": 2012, 
+    "sols": [
+        "We wish to find the limit of the sequence\n$a_k = \\frac{k! \\sin^3 (k)}{(k+1)!}$.\n\n\\textbf{Note:} this is a sequence, not a series! The ratio test does not\napply here, despite the fact we see factorials.\n\nLet's first simplify this a little. Note that $(k+1)! = (k+1) k!$, so\nreally\n\n\\[a_k = \\frac{k! \\sin^3 (k)}{(k+1) k!} = \\frac{\\sin^3 (k)}{k+1}\\]\n\nWe now observe that the denominator goes to infinity for large values of\n\\emph{k}, while the enumerator remains bounded between -1 and +1.\nMathematically, $-1 \\leq \\sin^3 (k) \\leq 1$. Hence, we expect the\nsequence to converge to zero.\n\nTo prove this, we use the squeeze theorem:\n\n$\\lim_{k \\rightarrow \\infty} \\frac{-1}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{1}{k+1}$.\n\nThe first and third limits are both 0, hence\n\n$0 \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq 0$\n\nso the squeeze theorem tells us\n\n$\\lim_{k \\rightarrow \\infty} a_k = \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} = 0$."
+    ], 
+    "hints": [
+        "To start with, can you simplify the factorials?", 
+        "After your simplification, what can you say about the numerator and the\ndenominator separately, as $k \\rightarrow \\infty$?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH103", 
+    "statement": "Evaluate the following integrals.\n\n$\\displaystyle \\int \\frac{\\cos(x)}{\\sin(x)}\\,dx$", 
+    "year": 2006, 
+    "sols": [
+        "Let:\n\n\\[u = \\sin(x), \\quad du=\\cos(x)dx\\]\n\nThen the integral nicely simplifies to\n\n\\[\\int \\frac{\\cos(x)dx}{\\sin(x)} = \\int \\frac{du}{u} = \\ln|u|= \\ln|\\sin(x)|\\]"
+    ], 
+    "hints": [
+        "Use a substitution."
+    ]
+}

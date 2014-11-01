@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH103", 
+    "statement": "The concentration of a protein in a long, thin cylindrically shaped\nbacterium is given by the function $\\displaystyle c(x)$ where \\emph{c}\nis measured in mol/\u03bcm along the long axis of the cell and\n$\\displaystyle 0 < x < 3$ is measured in \u03bcm. Suppose that when the cell\ndivides, it splits at $\\displaystyle x=3/2$ \u03bcm and that all protein to\nthe left of this point ends up in the left daughter cell and any to the\nright ends up in the right daughter cell. Determine which of the\nfollowing statements is necessarily true:\n\ni. If the centre of mass of the protein density is to the left of the\nmedian of the density, then the cell on the right gets more than half of\nthe total protein.\n\nii. If the centre of mass of the protein density is at\n$\\displaystyle x = 1$ \u03bcm, then the cell on the left gets more than half\nof the total protein in the mother cell.\n\niii. If the median of the protein density is at $\\displaystyle x = 1$\n\u03bcm, then the cell on the left gets more than half of the total protein\nin the mother cell.\n\niv. If the mean and median are at the same point, both cells get the\nsame amount of protein.", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

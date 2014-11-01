@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle f(3) = 0$\n\\item\n  $\\displaystyle f'(3) < 0$\n\\item\n  $\\displaystyle f''(3) > 0$\n\\end{enumerate}", 
+    "year": 2013, 
+    "sols": [
+        "A simple-like parabola with a zero at three will work. The other zero\none can be anywhere, for no particular reason lets make it at 5. So the\nfunction\n\n\\[\\displaystyle f(x) = (x-3)(x-5) = x^{2} -8x + 15\\] satisfies all three\nconditions.\n\nTo double check,\n\n\\begin{align*}\nf(3) &= (3-3)(3-5) = 0 \\\\\nf'(3) &= 2(3)-8 = -2 <0  \\\\\nf''(3) &= 2 > 0 \\\\\n\\end{align*}\n\nLet's see the picture\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH110Q2aSolnApr2013.jpg}\n\\caption{MATH110Q2aSolnApr2013.jpg}\n\\end{figure}\n\n\\emph{Note: Many other functions are possible as well, it does not even\nhave to be a second order polynomial.}"
+    ], 
+    "hints": [
+        "Think about what each condition means.\n\nThe first is asking for a function value at 3 to be equal to 0.\n\nWhat does the sign of the first and second derivative mean for the shape\nof the function?", 
+        "The first derivative tells us if the function is increasing or\ndecreasing. Since the second condition says that that the first\nderivative is negative at 3, function is decreasing at 3.", 
+        "The second derivative tells us if the function is concave up or concave\ndown. Since the third condition is saying that the second derivative is\npositive at 3, the function is concave up at 3."
+    ]
+}

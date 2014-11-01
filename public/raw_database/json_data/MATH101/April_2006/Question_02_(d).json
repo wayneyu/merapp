@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nExpress the volume of the solid obtained by rotating the bounded region\nthat lies between the curves $y = (x-2)^{2}$ and $y=x$ about the\nvertical line $x=5$. Do not evaluate this integral.", 
+    "year": 2006, 
+    "sols": [
+        "First, we draw a picture. Setting the line and parabola equal to each\nother, we see that the points of intersection are at\n\n\\begin{align*}\n(x-2)^{2} &= x \\\\\nx^{2} - 4x +4 &= x \\\\\nx^{2} - 5x +4 &= 0 \\\\\n(x-4)(x-1) &= 0\n\\end{align*}\n\nand so \\emph{x}=1 or \\emph{x}=4. This gives the following picture.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH1012006Q2d.jpg}\n\\end{description}\n\nThe white area is what we want to rotate. Let \\emph{x} be a point\nbetween 1 and 4. Then the radius of a shell is \\emph{r} = 5-\\emph{x}.\nThe height of a shell is $h = x-(x-2)^{2}$. Thus, when we rotate about\n\\emph{x}=5, the height will move a distance of $2\\pi r$ and hence, the\nvolume of revolution is\n\n\\begin{align*}\nV &= \\int_{1}^{4}2\\pi(5-x)(x-(x-2)^{2})\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(x-x^{2} + 4x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(-x^{2} + 5x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5(-x^{2} + 5x - 4) -x(-x^{2} + 5x - 4))\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(-5x^{2} + 25x - 20 +x^{3} - 5x^{2} + 4x)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(x^{3} -10x^{2} + 29x - 20) \\,dx \\\\\n&= 2\\pi(x^{4}/4 -10x^{3}/3 + 29x^{2}/2 - 20x)\\bigg|_{1}^{4} \\\\\n&= 2\\pi(4^{4}/4 -10(4)^{3}/3 + 29(4)^{2}/2 - 20(4) \\\\\n& \\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))\\\\\n&= 2\\pi(64 -640/3 + 29(8) - 80 - (1/4 -10/3 + 29/2 - 20))\\\\\n&= 45\\pi/2\n\\end{align*}"
+    ], 
+    "hints": [
+        "First, try drawing a picture, complete with intersection points.", 
+        "Then use the method of cylindrical shells."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(h)", 
+    "course": "MATH104", 
+    "statement": "Find the equation of the tangent line to the graph of y = ln(x) at x =\n1.", 
+    "year": 2010, 
+    "sols": [
+        "This requires us to find a point on the line and its slope.\n\nWhen $x=1$, $\\ln x = 0$ so we know the point $(1,0)$ is on the line.\n\nIf $y = \\ln x$ then $\\frac{dy}{dx} = \\frac{1}{x}$ and\n$\\frac{dy}{dx}|_{x=1} = 1$ so the slope of the line is $1$.\n\nThe equation of the tangent line is then $y - 0 = 1(x-1)$, by the\npoint-slope formula, or $y = x-1$."
+    ], 
+    "hints": [
+        "What are two critical pieces of information to find the equation of a\nline?"
+    ]
+}

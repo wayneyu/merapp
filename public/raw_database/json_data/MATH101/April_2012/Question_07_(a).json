@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH101", 
+    "statement": "Let $I = \\int_{1}^{2} (1/x)\\, dx$. Write down the trapezoidal\napproximation \\emph{T}\\textsubscript{4} for \\emph{I}.\n\n\\emph{You do not need to simplify your answer.}", 
+    "year": 2012, 
+    "sols": [
+        "The formula for the trapezoidal approximation of the integral is as\nfollows:\n\n\\[T_4 = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1)  + 2f(x_2) + 2f(x_3) + f(x_4))\\]\n\nThe \\emph{4} of $T_4$ means that our interval of integration has been\ndivided into four pieces, each of length \\emph{(b-a)/4=1/4}. So\n$\\Delta x = 1/4$. We also know that $x_0$ and $x_4$ are the endpoints of\nthe interval of integration. So we have\n\n\\begin{align*}\nx_0 &= 1 \\\\\nx_1&= 5/4 \\\\\nx_2 &= 6/4 \\\\\nx_3 &= 7/4 \\\\\nx_4 &= 2 \\\\\n\\end{align*}\n\nWe simply plug this all into the formula given above to get:\n\n\\[T_4 = \\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\\]"
+    ], 
+    "hints": [
+        "The general formula for the trapezoidal approximation $T_n$ is given by:\n\n$T_n = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n))$\n\nWhat are $x_0$ and $x_n$?"
+    ]
+}

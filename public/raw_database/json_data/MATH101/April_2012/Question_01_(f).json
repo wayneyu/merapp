@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH101", 
+    "statement": "Find the \\emph{y}-coordinate of the centroid of the region bounded by\nthe curves $y = 1$ , $y = -e^{x}$, $x=0$ and $x=1$. You may use the fact\nthat the area of this region equals \\emph{e}.", 
+    "year": 2012, 
+    "sols": [
+        "Let $f(x) = 1$ and $g(x) = -e^{x}$. Notice that between \\emph{0} and\n\\emph{1}, we have that $g(x) \\leq f(x)$ and so we have\n\n\\begin{align*}\n\\bar{y} &= \\frac{1}{2A}\\int_{0}^{1}(f(x)^{2} - g(x)^{2})\\, dx\\\\\n&= \\frac{1}{2e}\\int_{0}^{1}(1^{2} - (-e^{x})^{2})\\, dx\\\\\n&= \\frac{1}{2e}\\int_{0}^{1}(1 - e^{2x})\\, dx\\\\\n&= \\frac{1}{2e}\\left. \\left(x - \\frac{e^{2x}}{2}\\right) \\right|_{0}^{1}\\\\\n&= \\frac{1}{2e}\\left( \\left(1 - \\frac{e^{2(1)}}{2}\\right) - \\left(0 - \\frac{e^{2(0)}}{2}\\right)  \\right)\\\\\n&= \\frac{1}{2e}\\left( 1 - \\frac{e^{2}}{2} + \\frac{1}{2}\\right) \\\\\n&= \\frac{1}{2e}\\left( \\frac{3}{2} - \\frac{e^{2}}{2} \\right)\\\\\n&= \\frac{3-e^{2}}{4e}\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The formula for the \\emph{y}-coordinate for the centroid is\n\n\\[\\bar{y} = \\frac{1}{2A}\\int_{a}^{b}(f(x)^{2} - g(x)^{2})\\, dx\\]\n\nvalid when $g(x) \\leq f(x)$ on $a \\leq x \\leq b$"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH101", 
+    "statement": "Evaluate $\\int_0^\\pi \\left| \\cos x\\right|\\,dx.$ You must simplify your\nanswer \\emph{completely}.", 
+    "year": 2010, 
+    "sols": [
+        "$\\int_0^\\pi |\\cos{x}|dx=\\int_0^{\\pi/2} |\\cos{x}|dx+\\int_{\\pi/2}^\\pi |\\cos{x}|dx$\n\nRemember that cos is positive on $[0,\\pi/2]$ and negative on\n$[\\pi/2,\\pi]$ so\n\n\\begin{align*}\n\\int_0^{\\pi/2} |\\cos{x}|dx+\\int_{\\pi/2}^\\pi |\\cos{x}|dx&=\\int_0^{\\pi/2}\\cos{x}dx+\\int_{\\pi/2}^\\pi -\\cos{x}dx\\\\\n&=\\sin(x)|_0^{\\pi/2}-\\sin(x)|_{\\pi/2}^{\\pi}\\\\\n&=\\sin(\\pi/2)-\\sin{(0)}-(\\sin(\\pi)-\\sin(\\pi/2))\\\\\n&=1-0-(0-1)=2\n\\end{align*}"
+    ], 
+    "hints": [
+        "On what range is $\\cos(x)$ positive and negative?"
+    ]
+}

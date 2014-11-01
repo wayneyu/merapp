@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_29", 
+    "course": "MATH152", 
+    "statement": "Circle \\emph{all} statements below that are true for any vectors\n\\textbf{a}, \\textbf{b} and \\textbf{c} in R\\textsuperscript{3}.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\mathbf{a} \\cdot (\\mathbf{a} \\times \\mathbf{b}) = 0$\n\\item\n  \\textbf{a}, \\textbf{b} and \\textbf{c} are linearly independent\n\\item\n  $\\mathbf{a} \\cdot \\mathbf{a} = \\|\\mathbf{a}\\|^2$\n\\item\n  $\\mathbf{a} \\cdot \\mathbf{b} = 0$\n\\item\n  $\\mathbf{a} \\times (\\mathbf{b} \\times \\mathbf{c})$ is not defined\n\\end{enumerate}", 
+    "year": 2010, 
+    "sols": [
+        "a. $\\mathbf{a}\\cdot(\\mathbf{a}\\times\\mathbf{b})=0$\n\nThis is \\textbf{true}. Recall that the cross product between two vectors\n$\\mathbf{a}$ and $\\mathbf{b}$ produces a vector which is orthogonal\n(perpendicular) to both the original vectors. The dot product between\ntwo orthogonal vectors is zero. Therefore since\n$\\mathbf{a}\\times\\mathbf{b}$ is orthogonal to $\\mathbf{a}$ then the dot\nproduct should indeed vanish.\n\nb. $\\mathbf{a},\\mathbf{b}.\\mathbf{c}$ are all linearly independent\n\nThis is \\textbf{false}. We can easily come up with a counter-example of\nthree vectors which are not linearly independent. Consider the vector\n{[}1,2,3{]} and {[}1,0,0{]} which are indeed in R3. The vector\n{[}3,2,3{]} is also in R3 but can be written as {[}1,2,3{]} + 2\n{[}1,0,0{]} and therefore is linearly dependent on the other two\nvectors.\n\nc. $\\mathbf{a}\\cdot\\mathbf{a}=||\\mathbf{a}||^2$\n\nThis is \\textbf{true}. Let $\\mathbf{a}=[a_1,a_2,a_3]$ then\n$\\mathbf{a}\\cdot\\mathbf{a}=a_1^2+a_2^2+a_3^2=||\\mathbf{a}||^2$.\n\nd. $\\mathbf{a}\\cdot\\mathbf{b}=0$\n\nThis is \\textbf{false}. We can easily construct two vectors in R3 which\ndo not have a zero dot product. For example consider {[}1,1,1{]} and\n{[}2,2,2{]}, their dot product is 6.\n\ne. $\\mathbf{a}\\times(\\mathbf{b}\\times\\mathbf{c})$ is not defined\n\nThis is \\textbf{false}. The cross product is always defined for vectors\nin R3. The cross product also transforms two vectors in R3 to another\nvector belonging in R3. Therefore the triple cross product here is just\nthe cross product between two vectors in R3 which is defined.\n\n\\emph{Therefore, only (a) and (c) are true.}"
+    ], 
+    "hints": [
+        "Recall properties of the dot and cross products such as the dot product\nof orthogonal vectors is the zero (number) and the cross product of\nparallel vectors is the zero vector."
+    ]
+}

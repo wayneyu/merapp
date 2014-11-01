@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH110", 
+    "statement": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(x)$, where\n$f(x)=a+\\dfrac{b}{x}+\\dfrac{c}{x^2}+\\dfrac{d}{x^3}$, and $a,b,c$ and $d$\nare constants.", 
+    "year": 2012, 
+    "sols": [
+        "You could use the quotient rule on each term of this function, but it\nwill be easier to re-write it as follows:\n\n$\\displaystyle f(x) = a + bx^{-1} + cx^{-2} + dx^{-3}$\n\nRemembering that \\emph{a, b, c} and \\emph{d} are constants, we can\nsimply use the power rule, which gives:\n\n$\\displaystyle f'(x) = b(-x^{-2}) + c(-2x^{-3}) + d(-3x^{-4})$\n\nYou can leave the answer like this. If you wanted to simplify, it would\nbe written:\n\n$\\displaystyle f'(x) = \\frac{-b}{x^2} + \\frac{-2c}{x^3} + \\frac{-3d}{x^4}$"
+    ], 
+    "hints": [
+        "Finding the derivative would be easier if the variable \\emph{x} were in\nthe numerator instead of the denominator of each fraction.\n\nYou can achieve this by switching the signs of the exponents."
+    ]
+}

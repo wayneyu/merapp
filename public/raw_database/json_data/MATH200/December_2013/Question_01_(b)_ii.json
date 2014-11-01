@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)_ii", 
+    "course": "MATH200", 
+    "statement": "Let $\\displaystyle z$ be defined implicitly by\n$\\displaystyle x^2 z^3 + y \\sin(\\pi x) =-y^2$. Find\n$\\displaystyle \\frac{\\partial z}{\\partial x}$ at the point\n$\\displaystyle P=(1,1,-1)$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

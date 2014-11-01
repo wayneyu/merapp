@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH307", 
+    "statement": "A matrix \\emph{A} and a vector \\emph{b} are given by\n\n$\\displaystyle A = \\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$\n\n$\\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}$\n\nSplit b into $b= b^\\perp +b^\\parallel$, where $b^\\parallel$ is in R(A)\nand $b^\\perp$ is in $R(A)^\\perp$ (i.e. the orthogonal complement of\nR(A).)", 
+    "year": 2006, 
+    "sols": [
+        "To find $b^\\perp$ we take the project of b onto the null space $u_3$\nfrom part b\n\n$proj_{u_3}=(u_3\\cdot b)u_3$\n\n$=\\frac{1}{ 3} (\\begin{bmatrix}\n1 & -1 & 1\n\\end{bmatrix}\\cdot \\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix})\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$\n\nWe can find $b^\\parallel$ by vector addition\n\n$b-b^\\perp = b^\\parallel$\n\n$=\\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix}-\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}$\n\n$b^\\parallel =\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}$\n\n$b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

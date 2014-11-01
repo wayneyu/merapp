@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether the following statement is true or false. If it\nis true, provide justification. If it is false, provide a\ncounterexample.}\n\n\\textbf{(c)} If $f$ has a local minimum at 1, then $f$'(1) = 0.", 
+    "year": 2013, 
+    "sols": [
+        "The statement is \\textbf{false}.\n\nA minimum always occurs at a critical point - however, there are two\npossible reasons for a critical point: either $\\displaystyle f'(x) = 0$\n\\textbf{or} $\\displaystyle f'(x)$ does not exist. In this second case,\nthe derivative is not equal to zero, but there can still be a local\nminimum. For example, the derivative does not exist if there is a cusp\n(sharp corner), a vertical tangent or the function is discontinuous; an\nexample of a cusp is given below:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math_110_April_2013_1c_solution.png}\n\\caption{MER Math 110 April 2013 1c solution.png}\n\\end{figure}\n\nIn this case there is a minimum at \\emph{x = 1} but\n$\\displaystyle f'(x)$ does not exist, so it can't be equal to zero. So\nwe found a counter example and hence the statement is \\textbf{false}."
+    ], 
+    "hints": [
+        "Recall the definition of a critical point. Is there more than just the\ncriteria that its derivative is zero?"
+    ]
+}

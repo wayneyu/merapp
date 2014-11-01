@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH221", 
+    "statement": "Let A be a square matrix, with eigenvector v and corresponding\neigenvalue $\\displaystyle \\lambda$.\n\nShow that v is an eigenvector for the matrix A +7I , and find the\ncorresponding eigenvalue.", 
+    "year": 2010, 
+    "sols": [
+        "\\begin{align*}\n(A+7I)v = Av + 7v = \\lambda v + 7v = (\\lambda +7 )v\\\\\n(A+7I)v=(\\lambda +7 )v\\\\\nEigenvalue \\ is \\ \\lambda +7\n\\end{align*}"
+    ], 
+    "hints": []
+}

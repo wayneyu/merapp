@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01", 
+    "course": "MATH221", 
+    "statement": "Consider the system of linear equations:\n\n\\begin{align*}\n3x &\\ +& 4y &\\ +& 7z &\\ =& 3\\\\\n-9x &\\ +& 6y &\\ +& 9z &\\ =& 3\\\\\n45x &\\ -& 12y &\\ +& hz &\\ =& k\n\\end{align*} For which values of \\emph{h} and \\emph{k} does the system\nhave:\n\na) no solutions?\n\nb) exactly one solution?\n\nc) infinitely many solutions?", 
+    "year": 2013, 
+    "sols": [
+        "We can write this system in matrix form:\n\n\\[\\left[ \\begin{array}{ccc}\n3 & 4 & 7 \\\\\n-9 & 6 & 9 \\\\\n45 & -12 & h\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n3 \\\\\n3 \\\\\nk\n\\end{array} \\right]\\]\n\nTo know the number of solutions, we want to look at the row reduced form\nof the augmented matrix.\n\nFirst, perform the operations L\\textsubscript{3} \u2192\nL\\textsubscript{3}+5L\\textsubscript{2} and L\\textsubscript{2} \u2192\nL\\textsubscript{2}-3L\\textsubscript{1}\n\n\\[\\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3\\\\\n-9 & 6 & 9 & 3\\\\\n45 & -12 & h & k\n\\end{array} \\right] \\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 18 & 45 + h & 15+k\n\\end{array} \\right]\\] Then, perform L\\textsubscript{3} \u2192\nL\\textsubscript{3} - L\\textsubscript{2}\n\n\\[\\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 0 & 15+h & 3+k\n\\end{array} \\right]\\]\n\nNoting that the first two rows of the matrix give a matrix of rank at\nleast 2, the number of solutions depend only on the last row. We read\nthe last row of this matrix and we obtain the equation\n\n\\[\\displaystyle\n(15+h)z = 3+k\\]\n\nWe can now read off the solutions from this equation base on whether or\nnot $15+h$ and $3+k$ are equal to zero.\n\na) No solution if $15+ h = 0, 3+k \\ne 0$\n\nb) One solution if $15+h \\ne 0$\n\nc) Infinite solution if $\\displaystyle 15+ h = 0, 3+k = 0$\n\nNotice that this convers all possible values for $\\displaystyle 15+h$ and\n$\\displaystyle 3+k$."
+    ], 
+    "hints": [
+        "Writing this system in matrix form, what will tell about the number of\nsolutions?", 
+        "Pick carefully which row manipulations you will do, they will simplify\nyour calculations quite a bit."
+    ]
+}

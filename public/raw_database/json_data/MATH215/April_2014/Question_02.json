@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02", 
+    "course": "MATH215", 
+    "statement": "Use Laplace transforms to solve the initial value problem:\n\n$\\displaystyle \ny'' + 2y = \\delta (t - 1) + u\\left( t - \\frac{\\pi}{2}\\right) \\sin t, \\quad  y(0) = y'(0) = 1$\n\nwhere $u(t)$ is the unit step function with a step at $t = 0$.", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

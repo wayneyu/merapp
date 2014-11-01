@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH307", 
+    "statement": "In this question we are once again given 4 points\n(\\emph{x}\\textsubscript{1}, \\emph{y}\\textsubscript{1}),\n(\\emph{x}\\textsubscript{2}, \\emph{y}\\textsubscript{2}),\n(\\emph{x}\\textsubscript{3}, \\emph{y}\\textsubscript{3}) and\n(\\emph{x}\\textsubscript{4}, \\emph{y}\\textsubscript{4}) in the plane.\nThis time we want to find a quadratic function\n$\\displaystyle q(x) = ax^2 + bx + c$ that comes closest to going through\nthe points by doing a least squares fit.\n\n\\textbf{(a)} The least squares equation you need to solve to find the\ncoefficients \\emph{a}, \\emph{b} and \\emph{c} has the form\n\\emph{A\\textsuperscript{T}A\\textbf{a} = A\\textsuperscript{T}\\textbf{b}}.\nWrite down expressions for \\emph{A}, \\textbf{\\emph{a}} and\n\\textbf{\\emph{b}}.", 
+    "year": 2010, 
+    "sols": [
+        "\\emph{If} the quadratic polynomial could fit all four points, then these\nconditions would be satisfied:\n\n\\begin{align*}\ny_1 & =ax_1^2+bx_1+c\\\\\ny_2 &= ax_2^2+bx_2+c\\\\\ny_3 &= ax_3^2+bx_3+c\\\\\ny_4 &= ax_4^2+bx_4+c\n\\end{align*}\n\nthis is equivalent to:\n\n\\begin{align*}\n\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix} &= \\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix} \\\\\nA\\mathbf{a} &= \\mathbf{b}\n\\end{align*}.\n\nHowever, we only have 3 unknowns and 4 equations, hence we ask for the\nbest solution (in the least square sense), which is found by solving\n$A^TA\\mathbf{a}=A^T\\mathbf{b}$. Therefore,\n\n\\[A=\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}, \\quad \\mathbf{a} =\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix}, \\quad \\mathbf{b}=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.\\]"
+    ], 
+    "hints": [
+        "Write the conditions that \\emph{q(x)} goes through all four points in\nmatrix notation. The values \\emph{x\\textsubscript{i}} and\n\\emph{y\\textsubscript{i}} are known, and the values \\emph{a}, \\emph{b}\nand \\emph{c} are unknown."
+    ]
+}

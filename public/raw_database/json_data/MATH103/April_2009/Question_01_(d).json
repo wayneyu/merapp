@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple Choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nA Math 103 class of 100 students took a test. The following graph shows\nhow many students' marks were in each of the intervals 1-10, 11-20, ...,\n91-100.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_1_(d)_picture1.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_1\\_(d)\\_picture1.png}\n\\end{figure}\n\nWhat was (approximately) the median?\n\n(a) 50\n\n(b) 60\n\n(c) 70\n\n(d) 80\n\n(e) 90", 
+    "year": 2009, 
+    "sols": [
+        "In total we have 100 students. So we need to find the number of points\nsuch that 50 students have more and 50 students have less points.\n\nWe line up the marks of the students:\n\n$\\underbrace{\\underbrace{20,20,20,20,20}_{5 \\text{times}},\\underbrace{30,30,\\dots,30}_{15 \\text{ times}},\\underbrace{40,\\dots,40}_{10\\text{ times}}, \\underbrace{50,\\dots,50}_{15\\text{ times}},\\underbrace{60,\\dots,60}_{5\\text{ times}}}_{50\\text{ students}}, \\underbrace{70,\\dots,70}_{15\\text{ times}},\\dots$\n\nUnfortunately we end up between 60 and 70. So, we need to think closer.\nThe column at the figure between 20 and 30 marks means, that the student\ngot an amount of marks in the interval $[20,30]$.\n\nSo, the students in the column between 60 and 70 got an amount of marks\nbetween 60 and 70. The students in the column between 70 and 80 got an\namount of marks between 70 and 80. So, the 70 lies exaclty in the\nmiddle.\n\nHence the mean is about 70 and answer \\textbf{c)} is correct."
+    ], 
+    "hints": [
+        "For a random variable $X$ the median $m$ is defined as the value in the\nmiddle when all of the numbers $a_1, a_2, \\dots, a_{100}$ lay sorted in\nfront of you:\n\n$a_1 \\leq a_2 \\leq a_3 \\leq \\dots \\leq a_{49} \\leq \\underbrace{a_{50}}_{=m} \\leq a_{51} \\leq \\dots \\leq a_{99} \\leq a_{100}.$\n\nThis means for us:\n\nFind a number such that half of the students have less points and half\nof the students have more points than this number.\n\nE.g. the median of 1, 1, 2, 3, 17 would be 2."
+    ]
+}

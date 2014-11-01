@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_03_(a)", 
+    "course": "MATH152", 
+    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\]\n\nand transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\]\n\nWhat are the eigenvalues and eigenvectors of A?", 
+    "year": 2011, 
+    "sols": [
+        "From the hint we recall that an eigenvalue, eigenvector pair satisfies,\n\n\\[A\\mathbf{x}=\\lambda\\mathbf{x}.\\]\n\nWe have in our problem that {[}1,1{]} transforms to {[}2,2{]}, which in\nmatrix form is,\n\n\\[A\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n=\n2\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\]\n\nTherefore we see that {[}1,1{]} is an eigenvector of A with eigenvalue\n2. For the other case we have that {[}1,-1{]} gets transformed to\n{[}0,0{]}. Therefore,\n\n\\[A\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\n=\n0\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\]\n\nand so we see that {[}1,-1{]} is also an eigenvector with eigenvalue 0.\nRecall that an $n\\times{n}$ matrix has at most n eigenvalues. Therefore\nsince in this case, n=2, we have found all the eigenvalues of the\nsystem. We conclude that A has eigenvalues and eigenvectors,\n\n\\begin{align*}\n\\lambda_1&=2,\\quad{}\\mathbf{x}_1=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\\\\n\\lambda_2&=0,\\quad{}\\mathbf{x}_2=\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Recall that an eigenvector is a vector such that, left-multiplying it by\nA produces a multiple of itself, i.e.,\n\n\\[A\\mathbf{x}=\\lambda\\mathbf{x}.\\]\n\nDo you see this property in the provided vectors?"
+    ]
+}

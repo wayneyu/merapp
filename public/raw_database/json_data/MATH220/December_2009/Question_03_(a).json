@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH220", 
+    "statement": "Let $f:A\\to{}B$ be a function and let $C\\subseteq{}A$.\n\nGive an example for which $f^{-1}(f(C))\\nsubseteq{}C$.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

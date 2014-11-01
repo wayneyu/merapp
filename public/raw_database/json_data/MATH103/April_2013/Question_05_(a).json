@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the iterated map\n$\\displaystyle x_{t+1} = 4x_{t}^{3} - 12x_{t}^{2} + 8x_{t}$. Calculate\nthe steady states (fixed-points, equilibria) and mark them in the sketch\nbelow. Determine the stability of each equilibrium (explain analytically\nor graphically). Plot a cobweb starting with $\\displaystyle x_{0}$ just\nabove 2 (the point is indicated in the sketch).\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M103W2013Q5aQ.jpg}\n\\end{description}", 
+    "year": 2013, 
+    "sols": [
+        "The steady states are given by solving\n\n\\[\\displaystyle\nx = 4x^{3} - 12x^{2} + 8x\\]\n\nSubtracting \\emph{x} from both sides yields\n\n\\[\\displaystyle\n0 = 4x^{3} - 12x^{2} + 7x = x(4x^{2} - 12x + 7)\\]\n\nUsing the quadratic formula gives\n\n$x = \\frac{12 \\pm \\sqrt{144-4(4)(7)}}{8} = \\frac{12 \\pm \\sqrt{32}}{8} = \\frac{3 \\pm \\sqrt{2}}{2}$\n\nAnalytically to check stability, we would need to take the derivative of\nour function and then plug in the fixed points and check that the\nabsolute value of the derivatives in the fixed points is less than 1\n(this would show that the fixed point is stable). It's easier to notice\nthat graphically, none of the fixed points are the limit of an iterative\nsequence and so none of the fixed points are stable.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M103W2013Q5a.jpg}\n\\end{description}"
+    ], 
+    "hints": [
+        "Recall in this setting, steady states are found by setting\n$\\displaystyle x_{t+1} = x_t$."
+    ]
+}

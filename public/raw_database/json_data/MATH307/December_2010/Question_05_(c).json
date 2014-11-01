@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH307", 
+    "statement": "Define a sequence \\emph{x}\\textsubscript{0}, \\emph{x}\\textsubscript{1},\n... by the initial conditions \\emph{x}\\textsubscript{0} = \\emph{a},\n\\emph{x}\\textsubscript{1} = \\emph{b} and \\emph{x}\\textsubscript{2} =\n\\emph{c} together with the recursion relation\n\n\\[\\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\\]\n\nfor \\emph{n} = 0, 1, 2, ...\n\n\\textbf{(c)} Explain how you could ensure that the \\emph{a}, \\emph{b}\nand \\emph{c} you find in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)}{part\n(b)} are real numbers.", 
+    "year": 2010, 
+    "sols": [
+        "For real matrices, just as complex eigenvalues, also complex\neigenvectors come in conjugate pairs. Hence\n\n\\[\\displaystyle\nv_2 = \\overline{v_3}\\]\n\nHence \\emph{v\\textsubscript{2} + v\\textsubscript{3}} is a real vector\nand therefore we ensure that the solution vector \\emph{{[}c, b, a{]}T}\nin\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)}{part\n(b)} is real by choosing real coefficients \\emph{s} and \\emph{t} and\nsetting \\emph{s = t}:\n\n\\[\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} = s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\\]"
+    ], 
+    "hints": [
+        "For a real matrix, if $\\displaystyle v$ is an eigenvector to a complex\neigenvalue $\\displaystyle \\lambda$, then $\\displaystyle \\overline v$ is\nan eigenvector to a complex eigenvalue $\\displaystyle \\overline \\lambda$"
+    ]
+}

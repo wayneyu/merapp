@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(g)", 
+    "course": "MATH105", 
+    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind the area of the region bounded by the graph of\n$\\displaystyle f(x) = \\frac{1}{(2x - 4)^{2}}$ and the $x$-axis between\n$x = 0$ and $x = 1$.", 
+    "year": 2013, 
+    "sols": [
+        "We proceed directly using the hints. First, the area is given by\n\n\\[\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx\\]\n\nUsing the substitution \\emph{u = 2x-4} we find \\emph{du = 2dx}. When\n\\emph{x = 0} we find \\emph{u = -4}, when \\emph{x = 1} we find \\emph{u =\n-2}. Hence\n\n\\begin{align*}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx &= \\int_{-4}^{-2}\\frac1{u^2} \\frac{du}2\\\\\n&= \\frac12 \\int_{-4}^{-2}u^{-2}du \\\\\n&= \\frac12 \\left.(-u^{-1})\\right|_{-4}^{-2} \\\\\n&= -\\frac12 ((-2)^{-1}-(-4)^{-1}) \\\\\n&= -\\frac12 \\left(-\\frac12 + \\frac14\\right)\\\\\n&= \\frac18\n\\end{align*}"
+    ], 
+    "hints": [
+        "The area between a curve and the \\emph{x}-axis is just the integral from\nthe function on the region.", 
+        "Use the substitution \\emph{u = 2x-4}."
+    ]
+}

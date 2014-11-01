@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH437", 
+    "statement": "For which of the following values of \\emph{k} does\n$\\displaystyle x^2 + y^2 = k!$ have a solution with \\emph{x}, \\emph{y}\nintegers:\n\n(a) $\\displaystyle k = 6$ (b) $\\displaystyle k = 12$ (c)\n$\\displaystyle k = 24$ (d) $\\displaystyle k = 48$", 
+    "year": 2006, 
+    "sols": [
+        "(a) Since $\\displaystyle 6! = 2^{4} \\cdot 3^{2} \\cdot5$, Fermat's\ntheorem says that in case (a) we must have a solution. (The curiously\nminded person should note that as $1^{2} + 2^{2} = 5$ then multiplying\nboth sides by $12^{2}$ gives $\\displaystyle 12^{2} + 24^{2} = 6!$).\n\n(b) As $\\displaystyle 11 \\parallel 12!$ and\n$\\displaystyle 11\\equiv 3 \\mod{4}$, this case has no solutions.\n\n(c) As $\\displaystyle 23 \\parallel 24!$ and\n$\\displaystyle 23 \\equiv 3 \\mod{4}$, this case has no solutions.\n\n(d) As $\\displaystyle 47 \\parallel 48!$ and\n$\\displaystyle 47 \\equiv 3 \\mod{4}$, this case has no solutions."
+    ], 
+    "hints": [
+        "Recall Fermat's Theorem on the Sums of Two Squares: A number \\emph{n} is\na sum of two squares if and only if all prime factors of the form\n$\\displaystyle 4k+3$ have even exponent in the prime factorization of\n\\emph{n}."
+    ]
+}

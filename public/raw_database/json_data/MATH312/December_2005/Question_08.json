@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Prove or Disprove}\n\n\\textbf{For this problem, \\emph{clearly indicate} whether the statement\nis \\emph{true or false} then prove or disprove it.}\n\nIf $\\displaystyle \\phi(n)|n - 1$ then \\emph{n} is squarefree. (Here\n$\\displaystyle \\phi$ is the Euler $\\displaystyle \\phi$-function.)", 
+    "year": 2005, 
+    "sols": [
+        "The statement is \\textbf{true}.\n\nWe use the hint and proceed by proving the contrapositive. Suppose that\n\\emph{n} is not squarefree. Then there is a prime \\emph{p} such that\n$\\displaystyle p^{2} \\mid n$. Now, in this case, we have\n\n$\\displaystyle p \\mid \\phi(p^{k}) = p^{k-1}(p-1)$\n\nwhere $\\displaystyle k \\geq 2$. Further, write\n$\\displaystyle n = p^{k}m$ where \\emph{m} is coprime to \\emph{p}. Then\n\n$\\displaystyle \\phi(p^{k}) \\mid \\phi(p^{k})\\phi(m) = \\phi(p^{k}m) = \\phi(n)$.\n\nHence\n\n$\\displaystyle p \\mid \\phi(n)$.\n\nHowever $\\displaystyle p \\nmid n-1$ since\n$\\displaystyle n \\equiv 0 \\mod{p}$. Thus,\n$\\displaystyle \\phi(n) \\nmid n-1$ since they do not share the factor of\n\\emph{p}. This is precisely what we wanted to show."
+    ], 
+    "hints": [
+        "It might help to prove the contrapositive:\n\nSuppose that \\emph{n} is not square free, then $\\phi(n) \\nmid n-1$"
+    ]
+}

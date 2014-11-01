@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH110", 
+    "statement": "In a fission nuclear weapon, a sphere of uranium-235 is compressed to a\nfraction of its size, forcing at least one atomic nucleus to split and\nrelease neutrons. These neutrons force other nuclei to release\n\\emph{their} neutrons, and so on. The result is that the number of\nneutrons grows exponentially.\n\nLet \\emph{P(t)} be the number of neutrons \\emph{t} seconds after\ndetonation. The number of neutrons satisfies the differential equation\n\n\\[\\displaystyle\n\\frac{dP}{dt} = 10^8P(t).\\]\n\n\\textbf{(a)} Write down an exponential algebraic expression for\n\\emph{P(t)} which satisfies the differential equation given above.", 
+    "year": 2012, 
+    "sols": [
+        "The differential equation above says that the derivative of the function\n$P(t)$ is a constant multiple of the original function. A function that\nhas this property is the exponential function, $e^t$. An exponential\nfunction will satisfy the differential equation when its derivative is\nequal to $10^8$ times the same exponential function. This occurs when we\ninclude a factor of $10^8$ in the exponent of the $e^t$ so we have the\nfunction $P(t) = e^{10^8t}$. We can check by differentiation that this\nsatisfies the differential equation $\\frac{dP}{dt} = 10^8P$."
+    ], 
+    "hints": [
+        "Which function do you know whose derivative is the same as the original\nfunction?"
+    ]
+}

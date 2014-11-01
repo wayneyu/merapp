@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(n)", 
+    "course": "MATH100", 
+    "statement": "Find $\\displaystyle f(t)$, if\n$\\displaystyle f''(t) = \\frac{3}{\\sqrt{t}}$, $\\displaystyle f(4) = 2$\nand $\\displaystyle f'(4) = 7$", 
+    "year": 2010, 
+    "sols": [
+        "If $\\displaystyle f''(t) = \\frac{3}{\\sqrt{t}}$, then antidifferentiating\ngives\n\n$\\displaystyle f'(t) = 6\\sqrt{t} + C$. Since $\\displaystyle f'(4) = 7$,\nwe have that\n\n$\\displaystyle 7 = f'(4) = 6\\sqrt{4} + C = 12 + C$\n\nand hence \\emph{C}=-5. Thus\n\n$\\displaystyle f'(t) = 6\\sqrt{t} -5$\n\nand antidifferentiating once more gives\n\n$\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t + D$\n\nSince $\\displaystyle f(4) = 2$, we see that\n\n$\\displaystyle 2 = f(4) = 4\\sqrt{4}^{3} -5(4) + D = 12 + D$\n\nand so \\emph{D}=-10. Thus, the function we seek is\n\n$\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10$"
+    ], 
+    "hints": [
+        "Use antidifferentiation of the power rule to find \\emph{f}. Don't forget\nyour constants."
+    ]
+}

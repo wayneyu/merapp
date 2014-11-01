@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_06_(e)", 
+    "course": "MATH307", 
+    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU = & \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma = & \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV = & \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(e)} What are the matrix norm $\\|A^{-1}\\|$ and the condition\nnumber of \\emph{A}?", 
+    "year": 2012, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(d)}{part\n(c)}, $A^{-1} = V\\Sigma^{-1}U^T$, and using the same logic as\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)}{part\n(c)} we find that $\\left \\| A^{-1} \\right \\| = \\|\\Sigma^{-1}\\| = 2$. The\ncondition number is then\n\n\\[\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\| = 2\\cdot 2=4.\\]"
+    ], 
+    "hints": [
+        "Use that $A^{-1} = V\\Sigma^{-1}U^T$ and the same argument as in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)}{part\n(c)} to relate the norm of \\emph{A\\textsuperscript{-1}} with the norm of\n$\\Sigma^{-1}$.", 
+        "The condition number is given by\n\n\\[\\kappa(A) = \\left\\Vert A^{-1} \\right\\Vert \\cdot \\left\\Vert A \\right\\Vert\\]"
+    ]
+}

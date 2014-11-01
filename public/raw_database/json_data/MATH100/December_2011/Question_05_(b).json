@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} Simplification of answers is\nnot required unless explicitly stated.}\n\nLet\n\n\\[\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}.\\]\\\\Find the interval(s) of decrease.", 
+    "year": 2011, 
+    "sols": [
+        "The intervals of decrease are the intervals on which the derivative of\nthe function $f$ is negative. Given that\n\n\\begin{align*}\nf'(x) &= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&= \\frac{6x^{-4/5}(1+x)}{5} \\\\\n&= \\frac{6(x+1)}{5x^{4/5}}\n\\end{align*}\n\nOur critical points occur when $x=-1,0$, that is, points on the function\nwhere the derivative is undefined or zero. Writing out a sign chart, we\nsee that when $x< -1$ we have that $f'(x) < 0$. When $-1 < x< 0$ we have\nthat $f'(x) > 0$. When $0 < x$ we have that $f'(x) > 0$. Hence the\nfunction is decreasing on $(-\\infty,-1)$."
+    ], 
+    "hints": [
+        "Derivatives can help us detect where functions are decreasing. Try\ndetermining when the derivative is negative."
+    ]
+}

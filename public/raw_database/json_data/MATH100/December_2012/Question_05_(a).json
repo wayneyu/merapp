@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n5. A sample of the radioactive substance Rhodium-101 decayed to 12.5\\%\nof its original amount after 10 years.\n\n(a) What percentage of the original amount is remaining after another 5\nyears?", 
+    "year": 2012, 
+    "sols": [
+        "Proceeding as the hint, let $\\displaystyle y(t) = Ce^{kt}$ be the\npercentage of material remaining after \\emph{t} years.\n\nAt time 0, we have 100\\% left, so we write:\n\n\\begin{align*} 100 &= y(0) \\\\\n &= Ce^{k0} \\\\\n &= C \\end{align*}\n\nNext, we know that after 10 years, there is 12.5\\% left, thus using\n$C = 100$:\n\n\\begin{align*} 12.5 &= y(10) \\\\\n &= 100e^{10k}\\end{align*}\n\nDividing by 100 and taking natural logarithms of both sides will give:\n\n$\\displaystyle \\ln(12.5/100) = \\ln(e^{10k})$\n\nBecause $e^x$ and $\\ln(x)$ are inverses, the right side simplifies to:\n\n$\\displaystyle \\ln(12.5/100) = 10k$\n\nAnd we can solve for \\emph{k}:\n\n$\\displaystyle k = \\ln(12.5/100)/10 = \\ln(1/8)/10$.\n\nNow, we are looking for the percentage remaining after 15 years, or\n$\\displaystyle y(15)$, so plugging in the data gives\n$\\displaystyle y(15) = 100e^{15(\\ln(1/8)/10)} = 100e^{\\ln((1/8)^{15/10})} = 100(1/8)^{3/2}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Recall that radioactive decay is an example of exponential decay. So use\nthe formula $\\displaystyle y(t) = Ce^{kt}$, where $y(t)$ is the\npercentage of material left after \\emph{t} years.", 
+        "Now use the data in the question to solve for \\emph{C} (original\namount), then \\emph{k} (rate of decay), and finally \\emph{y(15)} (five\nyears after the first 10 years)."
+    ]
+}

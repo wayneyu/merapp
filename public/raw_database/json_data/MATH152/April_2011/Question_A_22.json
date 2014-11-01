@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_22", 
+    "course": "MATH152", 
+    "statement": "Questions A22-A24 concern a random walk with three states that has\ntransition matrix\n\n\\[\\left[\\begin{array}{c c c} 8/10 & 3/10 & 1/10 \\\\ 2/10 & 3/10 & 7/10 \\\\ 0 & 4/10 & 2/10 \\end{array}\\right]\\]\n\nIf the walker is equally likely to start in each of the three states,\nwhat is the chance that she will be in state 3 at the next time step?", 
+    "year": 2011, 
+    "sols": [
+        "If the transition matrix is\n\n\\[P=\\begin{bmatrix}\n8/10  &  3/10  &  1/10\\\\\n2/10  &  3/10  &  7/10\\\\\n0  &  4/10  &  2/10\n\\end{bmatrix}\\]\n\nthen the operation P\\textbf{x}=\\textbf{b} gives us the probability of\nbeing in each of the three states \\textbf{b} based on where we started,\n\\textbf{x}. We are told that we are equally likely to be in any of the\nthree states so we have as our vector,\n\n\\[\\mathbf{x}=\\left[1/3,1/3,1/3\\right].\\]\n\nTo find out the probabilities of being in each state after one\ntransition we compute P\\textbf{x},\n\n\\[P\\mathbf{x}=\\begin{bmatrix}\n8/10  &  3/10  &  1/10\\\\\n2/10  &  3/10  &  7/10\\\\\n0  &  4/10  &  2/10\n\\end{bmatrix}\n\\begin{bmatrix}\n1/3\\\\\n1/3\\\\\n1/3\n\\end{bmatrix}\n=\\begin{bmatrix}\n2/5\\\\\n2/5\\\\\n1/5\n\\end{bmatrix}.\\]\n\nTherefore we get that \\textbf{the probability of being in state 3 is\n1/5}. Notice that the output probabilities sum to 1. This is a\nrequirement since we only allow transitions from states 1 to 3, this\nsummation to 1 simply says that no matter where we start we will end up\nsomewhere in states 1 to 3."
+    ], 
+    "hints": [
+        "Recall that a transition matrix with element i,j (row i and column j) is\nthe probability of reaching state i coming from state j. The vector\ninput is the initial states and the vector output is the final states."
+    ]
+}

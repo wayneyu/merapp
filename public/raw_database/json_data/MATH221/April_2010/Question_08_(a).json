@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_08_(a)", 
+    "course": "MATH221", 
+    "statement": "\\textbf{Please note: Depending on the class section, the original exam\nonly featured Question 8 (a) OR Question 8 (b), not both.}\n\nFind the line \\emph{y = a + bx} which best fits the data points\n\\emph{(x, y)}: \\emph{(0, 1)}, \\emph{(1, 1)}, \\emph{(1, 2)} in the least\nsquares sense.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

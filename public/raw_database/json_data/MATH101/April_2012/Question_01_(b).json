@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nEvaluate\n\n$\\int_{0}^{\\pi/2} \\frac{\\cos x}{1 + \\sin x}\\, dx$\n\nRemember to simplify your answer completely.", 
+    "year": 2012, 
+    "sols": [
+        "Let $u = 1 + \\sin x$ so that $du = \\cos x dx$. Further, notice that\n\n$u(\\pi/2) = 1 + \\sin(\\pi/2) = 1 + 1 = 2$\n\nand that\n\n$u(0) = 1 + \\sin(0) = 1 + 0 = 1$.\n\nThis gives\n\n$\\int_{0}^{\\pi/2}\\frac{\\cos x}{1 + \\sin x}\\, dx = \\int_{1}^{2}\\frac{du}{u} = \\left.(\\ln|u|)\\right|_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)$"
+    ], 
+    "hints": [
+        "Try a substitution.", 
+        "Try the substitution\n\n$u = 1 + \\sin x$"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(e)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nDetermine where $\\displaystyle f$ is increasing and where it is\ndecreasing.", 
+    "year": 2010, 
+    "sols": [
+        "We know that where a function is increasing or decreasing depends on the\nsign of its derivative. Therefore we consider the derivative we found in\npart (d).\n\n$f'(x) = \\frac{-2}{(x-1)^2}$\n\nNote that the sign of the numerator is always negative because the\nnumerator is a constant. Thus the only place the sign of the derivative\ncan change is in the denominator. However, because the x-value in the\ndenominator is squared, the denominator will always be positive. Since\nthe numerator is always negative and the denominator always positive,\nthe entire derivative will be negative for all x for which it is\ndefined. This means that the function $f(x)$ is decreasing, on the\ninterval $(\\infty, 1)\\cup(1, \\infty)$."
+    ], 
+    "hints": [
+        "A function is increasing on an interval if its derivative is positive on\nthat interval, and decreasing if its derivative is negative."
+    ]
+}

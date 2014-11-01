@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(i)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer question! No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nFind the equation of the plane parallel to \\emph{3x-y+4z=13} passing\nthrough the point \\emph{(2,1,-1)}.", 
+    "year": 2012, 
+    "sols": [
+        "For a plane parallel to $3x - y + 4z = 13$, we can take its normal\nvector to be $<3,-1,4>$ (two parallel planes have normal vectors that\nare scalar multiples of each other and we can just as well choose their\nnormal vectors to be identical).\n\nThus, the plane we seek has equation\n$3(x-x_0) + (-1)(y-y_0) + 4(z-z_0) = 0$ where $(x_0, y_0, z_0)$ is any\npoint on the plane. We are told the plane passes through $(2,1,-1)$ so\nwe take $x_0 = 2$, $y_0 = 1$, and $z_0 = -1$ and the plane's equation\nis:\n\n$3(x-2) - (y-1) + 4(z-(-1)) = 0$ or equivalently, $3x - y + 4z = 1$."
+    ], 
+    "hints": [
+        "What is a normal vector to the given plane? What is a normal vector of\nthe plane you are looking for? Given a normal vector and a point,\nfinding the equation of the plane follows a simple formula."
+    ]
+}

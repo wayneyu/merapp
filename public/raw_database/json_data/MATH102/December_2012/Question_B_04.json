@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_B_04", 
+    "course": "MATH102", 
+    "statement": "A car sales person works on commission and gets paid \\$2,000 for every\ncar sold. In any month, there is a 0.7 probability of selling exactly\none car, a 0.2 probability of selling exactly two cars and a 0.1\nprobability of selling exactly three cars. Nobody has ever sold more\nthan 3 cars in a month. He gets a bonus of \\$1000 if he sells three cars\nin a single month. What is the sales person's expected monthly income?", 
+    "year": 2012, 
+    "sols": [
+        "Since we have three possible outcomes here (selling 1, 2, or 3 cars), we\nwill use a formula for expected value that looks like this:\n\n$\\displaystyle E[X] = x_1p_1 + x_2p_2 + x_3p_3$\n\nWhere $x_i$ is the money earned (or value) of selling \\emph{i} cars in a\nmonth and $p_i$ is the corresponding probability of selling \\emph{i}\ncars. Plugging in the appropriate probabilities and amount earned per\ncar (plus the \\$1000 dollar bonus if 3 cars are sold!), we get:\n\n$\\displaystyle E[X] = 2000*.7 + 4000*.2 + 7000*.1$\n\nSimplifying gives:\n\n$\\displaystyle E[X] = 2900$\n\nSo the sales person's expected monthly income is \\$2,900."
+    ], 
+    "hints": [
+        "This question is asking you to find expected value. To find expected\nvalue, you add up possible values (in this case, amount of money made in\na month), multiplied by their corresponding probabilities.", 
+        "The expected value must be between the two extreme values \\$2,000 and\n\\$7,000."
+    ]
+}

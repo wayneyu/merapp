@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH103", 
+    "statement": "Let \\emph{t} be the time (in hours) it takes for a cell division to\noccur. Suppose \\emph{t} is a continuous random variable on the interval\n$0 \\leq t \\leq 1$ (i.e. the cells always divide in less than 1 hour),\nwith probability density\n\n$\\displaystyle p(t) = C(\\sqrt{t}-t)$\n\nb) Find the probability that cell division occurs in less than 30\nminutes.", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

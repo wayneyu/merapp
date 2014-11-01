@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_09", 
+    "course": "MATH152", 
+    "statement": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH152\\_April\\_2011\\_Question\\_A9\\_picture\\_1.png}\n\\end{figure}\n\nList the unknowns in the linear system for this circuit using the\ntechnique for loop currents you learned in the computer labs this term.", 
+    "year": 2011, 
+    "sols": [
+        "From the current loop rule we know that each loop gets its own current\nwhich is an unknown for the system. We also need an unknown for the\nvoltage drop that occurs across each current source. Since we have four\nloops we have \\textbf{4} loop currents, $i_1,i_2,i_3,i_4$ and we have\ntwo current sources so we have \\textbf{2} unknown voltage drops $v_1$\nfor source E1 and $v_2$ for current source E2. Therefore in total we\nhave \\textbf{6} unknowns for our linear system,\n\n\\[\\begin{bmatrix}\ni_1\\\\\ni_2\\\\\ni_3\\\\\ni_4\\\\\nv_1\\\\\nv_2\n\\end{bmatrix}\\]."
+    ], 
+    "hints": [
+        "Recall that if there are n loops and m current sources then we have n+m\nunknowns."
+    ]
+}

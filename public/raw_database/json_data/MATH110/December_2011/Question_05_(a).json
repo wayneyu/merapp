@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH110", 
+    "statement": "Differentiate the following function.\n\n\\[f(x) = \\frac{\\cos (x)}{ \\sin ^2 (x)}\\]", 
+    "year": 2011, 
+    "sols": [
+        "Since this is a quotient, we will be using the quotient rule. For this,\nwe need to have the derivative of both the denominator and the\nnumerator.\n\nThe numerator is simply the cosine function and we know that:\n\n\\[\\displaystyle\n(\\cos(x))' = -\\sin(x)\\]\n\nFor the denominator, we will need to use the chain rule and obtain:\n\n\\[\\displaystyle\n\\left( \\sin^2(x) \\right)' = 2\\sin(x) \\cos(x)\\]\n\nSo now we can use the quotient rule and obtain:\n\n\\begin{align*}\nf'(x) &= \\frac{(\\cos(x))'(\\sin^2(x)) - (\\cos(x))(\\sin^2(x))'}{(\\sin^2(x))^2} \\\\\n&= \\frac{(-\\sin(x))(\\sin^2(x)) - (\\cos(x))(2\\sin(x)\\cos(x))}{\\sin^4(x)} \\\\\n&= \\frac{-\\sin^3(x) - 2\\sin(x)\\cos^2(x)}{\\sin^4(x)} \\\\\n&= \\frac{-\\sin^2(x) - 2\\cos^2(x)}{\\sin^3(x)} \\\\\n&= -\\frac{\\sin^2(x) + 2\\cos^2(x)}{\\sin^3(x)} \\\\\n&= -\\frac{1+\\cos^2(x)}{\\sin^3(x)}\n\\end{align*}\n\nWhere the last equality was obtained using that\n$\\sin^2(x) + \\cos^2(x) = 1$."
+    ], 
+    "hints": [
+        "What differentiation rules will you need here?"
+    ]
+}

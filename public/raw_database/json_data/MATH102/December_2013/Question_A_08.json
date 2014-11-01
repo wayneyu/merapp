@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_A_08", 
+    "course": "MATH102", 
+    "statement": "Given the differential equation and initial condition\n\n\\[\\frac{dy}{dt} = y^2(y - a), y(0) = 2a\\]\n\nwhere $a > 0$ is a constant, which of the following is true?\n\n(a) $\\lim_{t \\to \\infty} y(t) = 0$\n\n(b) $\\lim_{t \\to \\infty} y(t) = \\infty$\n\n(c) $\\lim_{t \\to \\infty} y(t) = a$\n\n(d) $\\lim_{t \\to \\infty} y(t) = 2a$\n\n(e) None of the above.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

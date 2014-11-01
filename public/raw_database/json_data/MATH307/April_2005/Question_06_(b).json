@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH307", 
+    "statement": "Let B be the basis $\\{v_1, v_2, v_3\\}$ of $\\mathbb R^3$, where\n\n\\[v_1 =\\left[ \\begin{array}{c} 1 \\\\ 0 \\\\ 0 \\end{array} \\right], \\quad v_2 =\\left[ \\begin{array}{c} 1 \\\\ 1 \\\\ 0 \\end{array} \\right], \\quad v_3 = \\left[ \\begin{array}{c} 1 \\\\ 1 \\\\ 1 \\end{array} \\right]\\]\n\nand let $T : \\mathbb R^3 \\to \\mathbb R^3$ be the linear transformation\nsuch that\n\n\\[M_B^B(T) =\\left[ \\begin{array}{ccc} 2 & -3 & 3 \\\\ -2 & 1 & -7 \\\\ 5 & -5 & 7 \\end{array} \\right]\\]\n\n\\textbf{(b)} Calculate the matrix \\emph{T} with respect to the standard\nbasis \\emph{\\{e\\textsubscript{1}, e\\textsubscript{2},\ne\\textsubscript{3}\\}} of $\\mathbb R^3$. You may leave your answer\nunsimplified.", 
+    "year": 2005, 
+    "sols": [
+        "The transformations are linear so we can use the formula $Tv_1 = T(e_1)$\n$Tv_2 = T(e_1+e_2) = Te_1+Te_2$ and\n\\emph{Tv\\textsubscript{3}=T(e\\textsubscript{1}+e\\textsubscript{2}+e\\textsubscript{3})\n= Te\\textsubscript{1}+Te\\textsubscript{2}+Te\\textsubscript{3}} where\n\\emph{e} is the standard basis. We also know that $Tv_n$ are the columns\nof $M_B^B$\n\n$T(v_1) =T(e_1)= \\left[ \\begin{array}{c} 2 \\\\ -2 \\\\ 5 \\end{array} \\right]$\n\n$T(v_2) = T(v_1)+T(e_2)$\n\n$T(e_2) = \\left[ \\begin{array}{c} -3 \\\\ 1 \\\\ -5 \\end{array} \\right] - \\left[ \\begin{array}{c} 2 \\\\ -2 \\\\ 5 \\end{array} \\right] = \\left[ \\begin{array}{c} 5 \\\\ -3 \\\\ 10 \\end{array} \\right]$\n\n$T(v_3) =T(v_2)+T(e_3)= \\left[ \\begin{array}{c} 3 \\\\ -7 \\\\ 7 \\end{array} \\right]$\n\n$T(e_3) = \\left[ \\begin{array}{c} 3 \\\\ -7 \\\\ 7 \\end{array} \\right] - \\left[ \\begin{array}{c} 5 \\\\ -3 \\\\ 10 \\end{array} \\right] = \\left[ \\begin{array}{c} -2 \\\\ -4 \\\\ -3 \\end{array} \\right]$\n\nSo we have our transformation matrix\n\n$T = \\left[ \\begin{array}{ccc} 2 & 5 & -2 \\\\ -2 & -3 & -4 \\\\ 5 & 10 & -3 \\end{array} \\right]$"
+    ], 
+    "hints": []
+}

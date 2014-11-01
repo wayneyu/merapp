@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH105", 
+    "statement": "Find the value of \\emph{k} that makes the following antidifferentiation\nformula true:\n\n$\\displaystyle\n\\int\\frac{7}{5-2x}\\,dx = k\\ln|5-2x| + C$\n\nwhere \\emph{C} is a constant.", 
+    "year": 2009, 
+    "sols": [
+        "We proceed as in the hints. Let $\\displaystyle u = 5-2x$ so\n$\\displaystyle du = -2dx$. Substituting gives\n\n\\begin{align*}\n\\int\\frac{7}{u} \\left(\\frac{\\,du}{-2}\\right) &= -\\frac{7}{2} \\int \\frac{du}{u} \\\\\n&= -\\frac72 \\ln|u|  +C \\\\\n&= -\\frac{7}{2}\\ln|5-2x|  +C \\\\\n&= k\\ln|5-2x| + C\n\\end{align*}\n\nThus, $\\displaystyle k = -\\frac{7}{2}$"
+    ], 
+    "hints": [
+        "We can always just try integrating the function on the left. What\ntechnique will work best?", 
+        "Try a substitution.", 
+        "Use $\\displaystyle u=5-2x$."
+    ]
+}

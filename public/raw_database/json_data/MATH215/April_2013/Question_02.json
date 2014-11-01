@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02", 
+    "course": "MATH215", 
+    "statement": "Determine if the following equation is exact or not, and in either case,\nfind the general solution:\n\n$\\displaystyle ydx + (x^{2}y - x)dy = 0 \\quad x > 0$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

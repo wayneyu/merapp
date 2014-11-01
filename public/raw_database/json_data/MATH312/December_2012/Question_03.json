@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH312", 
+    "statement": "Find all positive integers \\emph{n} such that $\\displaystyle n!$ ends\nwith exactly 74 zeros in decimal notation.", 
+    "year": 2012, 
+    "sols": [
+        "As displayed in the hints, it suffices to compute the values of \\emph{n}\nfor which\n\n$\\displaystyle \\left\\lfloor \\frac{n}{5} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{2}} \\right\\rfloor + ... + \\left\\lfloor \\frac{n}{5^{\\lfloor \\log_{5}(n) \\rfloor}} \\right\\rfloor = 74$.\n\nClearly for $\\displaystyle n=400$, we have that the first term in the\nabove sum is 80 so it suffices to look smaller than this value. This\nreduces the above sum to\n\n$\\displaystyle \\left\\lfloor \\frac{n}{5} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{2}} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{3}} \\right\\rfloor = 74$\n\nWe start with the value $\\displaystyle n=200$.\n\n$\\displaystyle \\left\\lfloor \\frac{200}{5} \\right\\rfloor + \\left\\lfloor \\frac{200}{5^{2}} \\right\\rfloor + \\left\\lfloor \\frac{200}{5^{3}} \\right\\rfloor = 40+8+1 = 49$.\n\nTrying $\\displaystyle n=300$ yields\n\n$\\displaystyle \\left\\lfloor \\frac{300}{5} \\right\\rfloor + \\left\\lfloor \\frac{300}{5^{2}} \\right\\rfloor + \\left\\lfloor \\frac{300}{5^{3}} \\right\\rfloor = 60+12+2 = 74$.\n\nThat is an exact match and further we know that $\\displaystyle n=299$\nmakes the above sum less than 74. Notice that increasing the above sum\nfrom 300 to 301,302,303 or 304 does not increment any of the terms but\nat 305, the first summand increases by 1. Thus the five possible values\nare\n\n$\\displaystyle n \\in \\{300,301,302,303,304\\}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "To count the number of zeroes in this number, it suffices to count the\nnumber of factors of 10 the number has.", 
+        "To accomplish hint 1, notice that the number of factors of 2 inside\n$\\displaystyle n!$ must exceed the number of factors of 5 so it suffices\nto count the number of factors of 5 inside $\\displaystyle n!$.", 
+        "The number of 5s occurring in the expansion of $\\displaystyle n!$ is\ngiven by\n\n$\\displaystyle \\left\\lfloor \\frac{n}{5} \\right\\rfloor + \\left\\lfloor \\frac{n}{5^{2}} \\right\\rfloor + ... + \\left\\lfloor \\frac{n}{5^{\\lfloor \\log_{5}(n) \\rfloor}} \\right\\rfloor$\n\nThis is true since you get a factor of 5 every 5 integers. You get\nanother factor of 5 every 25 integers and so on."
+    ]
+}

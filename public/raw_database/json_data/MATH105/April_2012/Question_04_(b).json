@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH105", 
+    "statement": "Consider the function\n\n\\[F(x) = \\begin{cases}\na & \\text{if } x < 0, \\\\\nk \\arctan x & \\text{if } 0 \\leq x \\leq 1, \\\\\nb & \\text{if } x \\geq 1.\n\\end{cases}\\]\n\n\\textbf{(b)} Let \\emph{X} be the continuous random variable with\ncummulative distribution function \\emph{F(x)} as given in part\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_4_(a)}{(a)}.\nFind the probability density function of \\emph{X}.", 
+    "year": 2012, 
+    "sols": [
+        "The cumulative distribution is obtained by integrating the probability\ndensity function, hence the probability density function (pdf) is the\nderivative of the cumulative distribution function.\n\nFrom part (a),\n\n\\[F(x) = \\begin{cases}\n0 & \\text{if } x < 0, \\\\\n\\frac{4}{\\pi} \\arctan x & \\text{if } 0 \\leq x \\leq 1, \\\\\n1 & \\text{if } x \\geq 1.\n\\end{cases}\\]\n\nhence the pdf is the derivative:\n\n\\[f(x) = F'(x) = \\begin{cases}\n0 & \\text{if } x < 0, \\\\\n\\frac{4}{\\pi} \\frac{1}{1+x^2} & \\text{if } 0 < x < 1, \\\\\n0 & \\text{if } x > 1.\n\\end{cases}\\]\n\nIf you are really picky, you might be concerned about the endpoints.\nTechnically the derivative is not defined at the points 0 and 1 (due to\n``corners''); however, for continuous random variables, the\nprobabilities will be unaffected by isolated points where the derivative\nof the cumulative distribution function is undefined. How we defined the\npdf $f(x)$ above is completely fine."
+    ], 
+    "hints": [
+        "The cumulative distribution function and the probability density\nfunction are related by a simple formula that involves an integral. Use\nthe fundamental theorem of calculus to change this integral relationship\nto one using a derivative instead."
+    ]
+}

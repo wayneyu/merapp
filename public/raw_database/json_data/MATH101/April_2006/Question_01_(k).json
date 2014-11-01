@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(k)", 
+    "course": "MATH101", 
+    "statement": "Let $f(x) = \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt$. Compute\n$\\displaystyle f'(1)$.", 
+    "year": 2006, 
+    "sols": [
+        "Using the fundamental theorem of calculus and the chain rule, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx} \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} \\int_{x}^{0} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} -\\int_{0}^{x} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= -\\sqrt{x^{4}+1} + 2x \\sqrt{x^{8}+1} \\\\\n\\end{align*}.\n\nPlugging in $x=1$ yields\n\n\\begin{align*}\nf'(1) &= -\\sqrt{1^{4}+1} + 2(1) \\sqrt{(1)^{8}+1} \\\\\n&= -\\sqrt{2} + 2\\sqrt{2} \\\\\n&= \\sqrt{2} \\\\\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Break up the integral and use the fundamental theorem of calculus part\n1."
+    ]
+}

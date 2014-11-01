@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(c)", 
+    "course": "MATH215", 
+    "statement": "For the following ODE\n\n\\[\\frac{dy}{dt} = (y^2-1)(y-2)^2\\]\n\n\\textbf{(c)} Determine the $\\lim_{t \\rightarrow \\infty} y(t)$ and sketch\nroughly the graph of the solutions for each of the following initial\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{y}(0) = 1.5,\n\\item\n  \\emph{y}(0) = -3, and\n\\item\n  \\emph{y}(0) = 4.\n\\end{itemize}", 
+    "year": 2011, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(a)}{(a)}\nwe know that the fixed points are given by $y_0 = -1, 1, 2$.\n\nIn part\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(b)}{(b)}\nwe calculated that \\emph{y} is increases in $(-\\infty,-1)\\cup(1,\\infty)$\nand decreases in (-1,1).\n\nThis means, that starting at $y(0) = 1.5$, the solution increases\ntowards the critical point $y_0=2$. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = 2$.\n\nStarting at $y(0) = -3$, the solution increases towards the critical\npoint $y_0=-1$. Hence $\\lim_{t\\rightarrow\\infty}y(t) = -1$.\n\nStarting at $y(0) = 4$, the solution increases. Since there is no larger\ncritical point, the solution increases indefinitely. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = \\infty$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Fig_215_2011_3c.jpg}\n\\end{description}"
+    ], 
+    "hints": [
+        "Consider the sign of $\\frac{dy}{dt}$ between the fixed points."
+    ]
+}

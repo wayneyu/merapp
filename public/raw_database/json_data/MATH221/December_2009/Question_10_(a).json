@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_10_(a)", 
+    "course": "MATH221", 
+    "statement": "Find the number \\emph{a} which make the matrix below diagonalizable. (No\nneed to diagonalize them.)\n\n$\\begin{bmatrix}\n0 &1 &2 \\\\ \n0 &3 &a \\\\ \n0 &0 &0 \n\\end{bmatrix}$", 
+    "year": 2009, 
+    "sols": [
+        "For an \\emph{n} by \\emph{n} matrix to be diagonalizable, the matrix must\nhave n distinct eigenvectors. First let$^{\\prime}$s find the eigenvalues\nof a\n\n$\\text{det}(\\begin{bmatrix}\n0-\\lambda &1 &2 \\\\ \n0 &3-\\lambda &a \\\\ \n0 &0 &0-\\lambda \n\\end{bmatrix})=\\lambda^{2}(3-\\lambda)=0$Solve the equation above to get\n$\\displaystyle \\lambda _{1}=3,\\lambda _{2}=\\lambda_{3}=0$We got a double root here, so we need to have 2 corresponding\neigenvectors for $\\lambda=0$. When\n\n$\\displaystyle \\lambda=0,A-\\lambda I= \\begin{bmatrix}\n0 &1 &2 \\\\ \n0 &3 &a \\\\ \n0 &0 &0 \n\\end{bmatrix}$In order to have 2 eigenvectors, we need to have 2 free variables here\ni.e. we need to have $\\frac{1}{3}=\\frac{2}{a}$ Solve this to get $a=6$."
+    ], 
+    "hints": []
+}

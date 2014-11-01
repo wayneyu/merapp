@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(j)", 
+    "course": "MATH104", 
+    "statement": "A racing car travels along the ellipse\n\n\\[\\displaystyle{}x^2+2y^2=9\\]\n\nwhere x and y are measured in kilometers. When the car is at the point\n(1,2), the x-coordinate of the point is changing at the rate of 3\nkilometers per minute. How fast is the y-coordinate changing at that\nmoment?", 
+    "year": 2010, 
+    "sols": [
+        "We have that\n\n\\[x(t)^2+2y(t)^2=9\\]\n\nand we want to find dy/dt when x=1, y=2 and dx/dt=3. Therefore, we\nimplicitly differentiate and isolate for dy/dt,\n\n\\begin{align*}\n2x\\frac{\\textrm{d}x}{\\textrm{d}t}+4y\\frac{\\textrm{d}y}{\\textrm{d}t}&=0\\\\\n\\frac{\\textrm{d}y}{\\textrm{d}t}&=-\\frac{x}{2y}\\frac{\\textrm{d}x}{\\textrm{d}t}.\n\\end{align*}\n\nWe then sub in x=1, y=2, and dx/dt=3 to get that\n\n\\[\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{1}{4}(3)=-\\frac{3}{4}\\]\n\nand so we conclude that the y-coordinate is changing at -3/4 kilometers\nper minute at that moment."
+    ], 
+    "hints": [
+        "Here x and y are functions of time, so we have the \\textbf{implicit\nrelation}\n\n\\[\\displaystyle{}x(t)^2+2y(t)^2=9.\\]", 
+        "Use implicit differentiation!"
+    ]
+}

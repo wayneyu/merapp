@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH100", 
+    "statement": "Find the derivative of\n\n\\[\\displaystyle\ny=\\sin^5(\\cos(3x^2))\\]", 
+    "year": 2010, 
+    "sols": [
+        "Let $\\displaystyle f_{1}(x) = x^{5}$ and let\n$\\displaystyle f_{2}(x) = \\sin(\\cos(3x^2))$. Then\n\n\\[\\displaystyle y = f_{1}(f_{2}(x)) = \\sin^{5}(\\cos(3x^2))\\].\n\nSo the derivative by the chain rule is\n\n\\[\\displaystyle  y' = f'_{1}(f_{2}(x))f_{2}'(x)\\] (Equation 1)\n\nNow, $\\displaystyle f'_{1}(x) = 5x^{4}$ and so\n\n\\[\\displaystyle f'_{1}(f_{2}(x)) = 5(\\sin(\\cos(3x^2)))^{4} = 5\\sin^{4}(\\cos(3x^2))\\]\n(Equation 2)\n\nFor $\\displaystyle f'_{2}(x)$, we again use the chain rule. Let\n$\\displaystyle f_{3}(x) = \\sin(x)$ and\n$\\displaystyle f_{4}(x) = \\cos(3x^{2})$ so we have that\n$\\displaystyle f_{2}(x) = f_{3}(f_{4}(x))$. Using the chain rule, we\nhave that\n\n\\[\\displaystyle f'_{2}(x) = f'_{3}(f_{4}(x))f_{4}'(x)\\] (Equation 3)\n\nNotice that $\\displaystyle f_{3}'(x) = \\cos(x)$ and thus\n\n\\[\\displaystyle f'_{3}(f_{4}(x)) = \\cos(\\cos(3x^{2}))\\] (Equation 4)\n\nThus it suffices to find $\\displaystyle f'_{4}(x)$. Guess what we're\ngoing to use... the chain rule! Let $\\displaystyle f_{5}(x) = \\cos(x)$\nand $\\displaystyle f_{6}(x) = 3x^{2}$. Then, the chain rule states that\n\n\\[\\displaystyle f'_{4}(x) = f'_{5}(f_{6}(x))f'_{6}(x)\\] (Equation 5)\n\nNow, $\\displaystyle f'_{5}(x) = -\\sin(x)$ and so\n\n\\[\\displaystyle f'_{5}(f_{6}(x)) = -\\sin(3x^{2})\\] (Equation 6)\n\nHere, the derivative of $\\displaystyle f_{6}(x)$ is actually doable! We\nhave that\n\n\\[\\displaystyle f'_{6}(x) = \\frac{d}{dx}(3x^{2}) = 6x\\]\n\nand hence by Equations 5 and 6, we have\n\n\\[\\displaystyle f'_{4}(x) = f'_{5}(f_{6}(x))f'_{6}(x) = (-\\sin(3x^{2}))(6x)\\]\n(Equation 7)\n\nCombining Equations 1,2,3,4,6 and 7, we have\n\n\\begin{align*}\ny' &= f'_{1}(f_{2}(x))f_{2}'(x) && \\text{(via Equation 1)}\\\\\n&= 5\\sin^{4}(\\cos(3x^2))(f'_{3}(f_{4}(x))f_{4}'(x)) && \\text{(via Equation 2 and 3)}\\\\\n&= 5\\sin^{4}(\\cos(3x^2))(\\cos(\\cos(3x^{2}))(-\\sin(3x^{2}))(6x))) && \\text{(via Equation 4 and 7)}\\\\\n&= -30x\\sin^{4}(\\cos(3x^2))\\cos(\\cos(3x^{2}))\\sin(3x^{2})) \n\\end{align*}\n\nPhew!"
+    ], 
+    "hints": [
+        "Strap on your seal belts. We're going to need a lot of applications of\nthe chain rule. If $h(x) = f(g(x))$ for differentiable \\emph{f} and\n\\emph{g}, then the chain rule states that\n\n$\\displaystyle\nh'(x) = f'(g(x))g'(x)$", 
+        "To help us out we should break the problem down into smaller\nsubproblems. Let $f_{1}(x) = x^{5}$ and let\n$f_{2}(x) = \\sin(\\cos(3x^2))$. Then\n$y = f_{1}(f_{2}(x)) = \\sin^5(\\cos(3x^2))$. So the derivative by the\nchain rule is\n\n$\\displaystyle  y' = f'_{1}(f_{2}(x))f_{2}'(x)$\n\nTo solve for the derivative of $f_{2}(x)$ we again use the chain rule..."
+    ]
+}

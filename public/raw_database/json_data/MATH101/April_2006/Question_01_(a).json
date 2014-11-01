@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "Find the average value of $\\displaystyle \\cos(x)$ on the interval\n$\\displaystyle [0, \\pi].$", 
+    "year": 2006, 
+    "sols": [
+        "Applying the formula gives\n\n$f_{av} = \\frac{1}{\\pi-0}\\int_{0}^{\\pi}\\cos x\\, dx = \\frac1{\\pi} \\sin(x) |_{0}^{\\pi} = \\frac{\\sin(\\pi) - \\sin(0)}{\\pi} = 0$"
+    ], 
+    "hints": [
+        "The formula for the average value of a function is\n\n$f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx$"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH312", 
+    "statement": "Suppose a positive integer \\emph{n} has 77 positive divisors (1 and\n\\emph{n} count among them). How many of these divisors can be prime?\nExplain your answer.", 
+    "year": 2010, 
+    "sols": [
+        "Start off by using the Fundamental Theorem of Arithmetic to write\n\n$\\displaystyle n = \\prod_{i=1}^{n}p_{i}^{\\alpha_{i}}$\n\nThen the number of divisors of \\emph{n} is\n\n$\\displaystyle d = \\prod_{i=1}^{n}(\\alpha_{i}+1)$\n\nTo see this, notice that each prime factor has\n$\\displaystyle \\alpha_{i} +1$ choices of occurring in the divisor of\n\\emph{n} (either you do not select the divisor or you select the divisor\nand some power of it). As \\emph{d} is given to be 77, and 77 has only\nthe prime factors 7 and 11, we see that there can only be two nontrivial\nterms in the expansion of \\emph{d}. Thus only two of these divisors can\nbe prime."
+    ], 
+    "hints": [
+        "Start off by using the Fundamental Theorem of Arithmetic to write\n\n$\\displaystyle n = \\prod_{i=1}^{n}p_{i}^{\\alpha_{i}}$\n\nHow can we write the number of divisors of \\emph{n} in this notation?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH307", 
+    "statement": "In this question we will work with polynomials of degree 3 written\n\n\\[\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\]\n\n\\textbf{(d)} Using the equation in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_01_(c)}{(c)}\nfind the equation \\emph{C\\textbf{s}=\\textbf{c}} satisfied by\n$\\mathbf{s} = [s_1,s_2]^T$ if \\emph{p(x)}\n\n(i) has coefficient vector\n$\\mathbf{a} = s_1\\mathbf{a}_1 + s_2\\mathbf{a}_2$ (and therefore has zero\nslope at \\emph{x = 0} and \\emph{x = 2}).\n\n(ii) passes through the points \\emph{(0,1)}, \\emph{(1,2)} and\n\\emph{(2,2)}.\n\nDoes this equation have a solution? Give a reason.", 
+    "year": 2012, 
+    "sols": [
+        "Since $\\vec{a}=s_1\\vec{a_1}+s_2\\vec{a_2}=s_1\\begin{bmatrix}\n1\\\\ \n-3\\\\ \n0\\\\ \n0\n\\end{bmatrix}+s_2\\begin{bmatrix}\n0\\\\ \n0\\\\ \n0\\\\ \n1\n\\end{bmatrix}$$=\\begin{bmatrix}\n1 & 0\\\\ \n-3& 0\\\\ \n0& 0\\\\ \n0& 1\n\\end{bmatrix}\\begin{bmatrix}\ns_1\\\\ \ns_2\n\\end{bmatrix}$\n\nUsing the equation from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_01_(c)}{part\n(c)}, we have\n\n$B\\vec{a}=\\vec{b}$\n\n$\\begin{bmatrix}\n8 & 4 & 2 &1 \\\\ \n1 &1 &1 &1 \\\\ \n0& 0 & 0&1 \n\\end{bmatrix}\\begin{bmatrix}\n1 & 0\\\\ \n-3& 0\\\\ \n0& 0\\\\ \n0& 1\n\\end{bmatrix}\\vec{s}=\\begin{bmatrix}\n2\\\\ \n2\\\\ \n1\n\\end{bmatrix}$\n\nTherefore,\n\n$C=\\begin{bmatrix}\n-4 &1 \\\\ \n-2& 1\\\\ \n0& 1\n\\end{bmatrix}$ and $\\vec{c}=\\vec{b}=\\begin{bmatrix}\n2\\\\ \n2\\\\ \n1\n\\end{bmatrix}$.\n\nNotice that for there to be a solution we need $\\vec{c}$ in the range of\n\\emph{C}, \\emph{R(C)}. We know that \\emph{R(C)} is the orthogonal\ncomplement to the nullspace of $C^T$, $N(C^T)$. Therefore, onsider the\nbasis vector of $N(C^T)$ $\\begin{bmatrix}\n-4 & -2 & 0\\\\ \n1& 1 & 1\n\\end{bmatrix}\\vec{x}=0\\rightarrow \\begin{bmatrix}\n2 &1 &0 \\\\ \n0& 1 & 2\n\\end{bmatrix}\\vec{x}=0$\n\n$\\vec{x}=\\begin{bmatrix}\nx_1\\\\ \nx_2\\\\ \nx_3\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\ \n-2\\\\ \n1\n\\end{bmatrix}x_3$\n\nSince $\\begin{bmatrix}\n1\\\\ \n-2\\\\ \n1\n\\end{bmatrix}\\cdot \\begin{bmatrix}\n2\\\\ \n2\\\\ \n1\n\\end{bmatrix}=2-4+1\\neq 0$\n\nIn other words, $N(C^T)$ is not orthogonal to $\\vec{c}$. This means that\n$\\vec{c}$ cannot possibly be in the range of \\emph{C} and so there will\nbe no solution to the problem."
+    ], 
+    "hints": [
+        "To check if a linear system has a solution, we can look at the\nrelationships between two of the fundamental subspaces of a matrix.\nWhich ones should we look at? How are they related?"
+    ]
+}

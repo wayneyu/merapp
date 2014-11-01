@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether the following statement is true or false. If it\nis true, provide justification. If it is false, provide a\ncounterexample.}\n\n\\textbf{(d)} If $f$ has a vertical asymptote at \\emph{x} = 0, then is\nreciprocal 1/$f$ has a vertical asymptote at \\emph{x} = 0.", 
+    "year": 2013, 
+    "sols": [
+        "This statement is \\textbf{false}.\n\nAs a counterexample, consider $f(x)$ = 1/\\emph{x}. It has a\nvertical asymptote at \\emph{x} = 0, but its reciprocal 1/$f$ = \\emph{x}\nhas no vertical asymptotes."
+    ], 
+    "hints": [
+        "Try known examples of functions with vertical asymptotes at 0 and look\nat their reciprocal functions. This should give you the intuition of\nthis question.\n\nOne can also look at this abstractly by recalling the definition of what\nit means to have a vertical asymptote and how this would affect the\nreciprocal function, but trying examples should be sufficient."
+    ]
+}

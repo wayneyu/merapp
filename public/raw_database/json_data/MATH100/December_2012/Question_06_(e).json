@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(e)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(e) Find all vertical asymptotes of the graph $y = f(x)$.", 
+    "year": 2012, 
+    "sols": [
+        "As given in the original statement, the function has domain of all\nnonzero reals. The function itself is only not continuous at 0 so we\ncheck there for an asymptote.\n\nThe value\n\n\\begin{align*}\n\\lim_{x \\to 0^{+}}(2x^{3/5} + 3x^{-2/5}) = \\infty\n\\end{align*} since this function when we plug in values of \\emph{x}\nslightly bigger than 0, the first term tends to 0 and the second term\ntends to positive infinity.\n\nNotice that the left hand limit is also positive infinity since the\nsecond term can be written as\n$\\displaystyle 3x^{-2/5} = \\frac{3}{\\sqrt[5]{x^2}}$ which is always\npositive."
+    ], 
+    "hints": [
+        "Check points of the function where it is not continuous and verify that\none of the left or right hand limits are positive or negative infinity."
+    ]
+}

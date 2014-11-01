@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_A_01", 
+    "course": "MATH102", 
+    "statement": "The functions \\emph{f(x) = x\\textsuperscript{2}} and \\emph{g(x) =\nx\\textsuperscript{3}} are equal at \\emph{x = 0} and at \\emph{x = 1}.\nBetween \\emph{x = 0} and \\emph{x = 1}, for what value of \\emph{x} are\ntheir graphs furthest apart?\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(a)} \\emph{x = 1/2}\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(b)} \\emph{x = 1/3}\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(c)} \\emph{x = 2/3}\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(d)} \\emph{x = 1/4}\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(e)} \\emph{x = 3/4}\n\\end{itemize}", 
+    "year": 2012, 
+    "sols": [
+        "As stated in the hint, sketching a picture of the two graphs between 0\nand 1 is a good first step.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math102_December_2012_Question_A1_solution_graph.jpg}\n\\caption{MER Math102 December 2012 Question A1 solution graph.jpg}\n\\end{figure}\n\nIdentify the distance between the two graphs and write a formula for it.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math102_December_2012_Question_A1_solution_graph_2.jpg}\n\\caption{MER Math102 December 2012 Question A1 solution graph 2.jpg}\n\\end{figure}\n\nThe distance between the two graphs at a point \\emph{x} can be given by\n\n$D(x) = x^2 - x^3$\n\nNow this is simply a max/min problem (see the keyword ``furthest apart''\nin the question): we are looking for the maximum of $D(x)$.\n\nFirst we find critical points by differentiating, setting equal to zero,\nand solving for \\emph{x}:\n\n$D'(x) = 2x - 3x^2$\n\n$0 = x(2 - 3x)$\n\nSo we have critical points \\emph{x = 0} and \\emph{x = 2/3}. We know\n\\emph{x = 0} isn't the correct answer as we already know that the graphs\nare equal there. Thus, the point of furthest distance must be \\emph{x =\n2/3} or \\textbf{(c)}."
+    ], 
+    "hints": [
+        "The question is asking about the distance between two graphs. Try\nsketching a picture of the two graphs (it doesn't have to be 100\\%\naccurate for this technique to work!), and identifying the distance\nbetween the two at a point between 0 and 1. Now find a formula for that\ndistance."
+    ]
+}

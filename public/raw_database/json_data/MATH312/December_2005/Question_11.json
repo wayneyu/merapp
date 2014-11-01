@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_11", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{a} and \\emph{N} are integers with $N \\geq 0$. Show that\n\n\\[(1 + a)^N \\equiv 1 + Na \\mod a^2\\]", 
+    "year": 2005, 
+    "sols": [
+        "We proceed by induction. The case $\\displaystyle N=1$ is easy. For\n$\\displaystyle N=2$, we have\n\n$\\displaystyle (1+a)^{2} = 1 + 2a + a^{2} \\equiv 1 + 2a \\mod{a^{2}}$\n\nSuppose the claim holds for \\emph{N}. Then for $\\displaystyle N+1$, we\nhave\n\n$\\displaystyle (1+a)^{N+1} \\equiv (1+a)^{N}(1+a) \\equiv (1 + Na)(1 + a) \\equiv (1 + (N+1)a + Na^{2}) \\equiv 1 + (N+1)a \\mod{a^{2}}$\n\nand so by mathematical induction we are done.", 
+        "We can use the binomial theorem to see that\n\n$\\displaystyle (1+a)^{N} = \\sum_{i=0}^{N} \\binom{N}{a} a^{i}(1)^{N-i} \\equiv \\binom{N}{0} + \\binom{N}{1}a +\\sum_{i=2}^{N} \\binom{N}{a} a^{i}(1)^{N-i}\\equiv  1 + Na \\mod{a^{2}}$\n\nwhere all the terms in the right most summation are divisible by\n$\\displaystyle a^{2}$."
+    ], 
+    "hints": [
+        "This can be solved either by induction or using the binomial theorem."
+    ]
+}

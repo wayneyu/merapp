@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(c)", 
+    "course": "MATH105", 
+    "statement": "\\emph{The productivity (measured in the dollar value of goods produced)\nof a certain country is given by the function}\n\n\\[\\displaystyle\nf(x,y) = 160x^{3/4}y^{1/4},\\]\n\n\\emph{where $x$ denotes the amount (in dollars) invested in labor, and\n$y$ is the amount invested in capital. Recall that the marginal\nproductivity of labor (respectively capital) is the rate of change of\n$f$ with respect to $x$ (respectively $y$), holding $y$ (respectively\n$x$) fixed.}\n\nFind all vectors\n\n\\[|\\textbf{v}| = |\\nabla f(81,16)|\\] that point in the direction of no\nchange in the productivity from its current value.", 
+    "year": 2011, 
+    "sols": [
+        "In\n\\href{Science:Math Exam Resources/Courses/MATH105/April 2011/Question 8 (a)}{part\n(a)} we computed the partial derivatives, allowing us to write the\ngradient vector\n\n\\[\\displaystyle\n\\nabla f(x,y) = (120x^{-1/4}y^{1/4}, 40x^{3/4}y^{-3/4})\\] hence (as\ncalculated previously)\n\n\\[\\displaystyle\n\\nabla f(81,16) = (80,135)\\]\n\nRecall that a perpendicular vector to (a,b) with the same length is is\n(b,-a) and (-b,a). Therefore, the perpendicular vectors (of the same\nlength as the gradient itself) are the vectors\n\n\\[\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\\]"
+    ], 
+    "hints": [
+        "The \\emph{gradient vector}\n\n\\[\\displaystyle\n\\nabla f (81,16)\\] points to the direction of maximal increase of\nproductivity. Any vector perpendicular to that one will have no change\nof productivity (it's the direction of a level curve, that is a curve\nwhere f is constant)."
+    ]
+}

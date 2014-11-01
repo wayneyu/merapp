@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH101", 
+    "statement": "The length of time in minutes it takes students to solve a certain\nmathematics problem (on probability) is a continuous random variable\nwhose probability density function is\n\n\\[f(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), & \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, & \\text{otherwise.} \\end{cases}\\]\n\n(a) Find the value of the positive constant $k$.", 
+    "year": 2005, 
+    "sols": [
+        "First, note that \\emph{cos}(\\emph{x}/10) \u2265 0 and \\emph{sin}(\\emph{x}/10)\n\u2265 0 for any 0 \u2264 x \u2264 5$\\pi$. Hence we need \\emph{k} \u2265 0 as well.\n\nTo satisfy the second condition we require\n\n\\[1 = \\int_{-\\infty}^\\infty f(x)\\,dx = \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx.\\]\n\nThe integral can easily be solved using the substitution \\emph{u} =\n\\emph{sin}(\\emph{x}/10), \\emph{du} = 1/10 \\emph{cos}(\\emph{x}/10), so\nthat \\emph{u}(0) = 0 and \\emph{u}(5$\\pi$) = \\emph{sin}($\\pi$/2) = 1. Hence we\nneed to choose \\emph{k} such that\n\n\\begin{align*}\n1 &= \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&= \\int_0^1 10ku^2\\,du \\\\\n&= \\left.\\frac{10ku^3}3\\right|_0^1 \\\\\n&= \\frac{10}3 k\n\\end{align*}\n\nHence we choose ''' \\emph{k} = 3/10. '''"
+    ], 
+    "hints": [
+        "For $f$ to be a probability density function it needs to satisfy two\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$(x) \u2265 0 for all \\emph{x},\n\\item\n  $\\int_{-\\infty}^\\infty f(x)\\,dx = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
+    ]
+}

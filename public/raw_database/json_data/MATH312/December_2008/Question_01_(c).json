@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is odd, then $\\displaystyle \\phi(2a) = \\phi(a)$.", 
+    "year": 2008, 
+    "sols": [
+        "The answer is \\textbf{true}. Since $\\displaystyle \\gcd(a,2) = 1$, we\nhave that $\\displaystyle \\phi(2a) = \\phi(2)\\phi(a) = \\phi(a)$ completing\nthe proof."
+    ], 
+    "hints": [
+        "Notice that since \\emph{a} is odd, we have that\n$\\displaystyle \\gcd(a,2) = 1$. Use multiplicativity."
+    ]
+}

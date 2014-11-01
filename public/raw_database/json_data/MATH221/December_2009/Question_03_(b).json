@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH221", 
+    "statement": "Problem 3. Consider the traffic flow diagram:\n\nThe system is clearly inconsistent because the total in flow does not\nequal total out\u00ef\u00ac\u0082ow. Find all least squares solutions to the system.", 
+    "year": 2009, 
+    "sols": [
+        "See Q3 (a) for the flow diagram and system of equations.\n\nThe least squares equation takes the\nform\\[D^{T}D\\mathbf{x} = D^{T}\\mathbf{b}\\]\n\nIn general, $D^{T}D$, has a diagonal of the number of edges connected to\nthe respective node and has off-diagonals entries of -1 if the nodes are\nconnected and 0 if not. It turns out that all of the nodes are connected\nto 2 other nodes by some edge.\n\nSimplifying the least squares equation we have\\[\\begin{bmatrix}\n2 & -1 & -1\\\\ \n-1& 2 & -1\\\\ \n-1& -1 & 2\n\\end{bmatrix}\n\\begin{bmatrix}x_{1}\n\\\\ x_{2}\n\\\\ x_{3}\n\\end{bmatrix}\n=\\begin{bmatrix}450\n\\\\ -450\n\\\\ 0\n\\end{bmatrix}\\]\n\nSolving this system of equations through row reduction yields the\nfollowing least squares solution\\[\\begin{bmatrix}x_{1}\n\\\\ x_{2}\n\\\\ x_{3}\n\\end{bmatrix}\n= \\begin{bmatrix} 1\n\\\\1\n\\\\1\n\\end{bmatrix}x_{3}\n+\\begin{bmatrix}150\n\\\\-150\n\\\\0\n\\end{bmatrix}\\]"
+    ], 
+    "hints": []
+}

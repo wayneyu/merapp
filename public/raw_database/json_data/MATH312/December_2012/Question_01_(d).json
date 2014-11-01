@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nSuppose that $\\displaystyle n = 81294358X$. Write down a digit in the\nslot marked \\emph{X} so that \\emph{n} is divisible by\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  (a) 11\n\\item\n  (b) 9\n\\item\n  (c) 4\n\\end{itemize}", 
+    "year": 2012, 
+    "sols": [
+        "Following the hint, we compute\n\n$\\displaystyle 8-1+2-9+4-3+5-8+X = X-2$\n\nand thus if \\emph{X} is 2, this sum will be 0 and hence the number will\nbe divisible by 11. Next, we see that\n\n$\\displaystyle 8+1+2+9+4+3+5+8+X = 40 + X$\n\nand thus if \\emph{X} is 5, this sum will be divisible by 9 and hence so\nwill the original number. Lastly, to be divisible by 4, we need the last\ntwo digits to be divisible by 4 so if \\emph{X} is one of 0,4, or 8, then\nthis condition is satisfied and the number will be divisible by 4."
+    ], 
+    "hints": [
+        "Recall divisibility rules. For 11, we need the alternating sum of digits\nto be divisible by 11 in order for the number to be divisible by 11. For\n9, we need the sum of the digits to be divisible by 9. For 4, we need\nthe last two digits to be divisible by 4."
+    ]
+}

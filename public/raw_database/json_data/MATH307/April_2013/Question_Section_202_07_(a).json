@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_202_07_(a)", 
+    "course": "MATH307", 
+    "statement": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\[f(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\\]\n\n\\textbf{(a)} Write down \\emph{p\\textsubscript{1}(x)} and\n\\emph{p\\textsubscript{2}(x)} in terms of unknown coefficients.", 
+    "year": 2013, 
+    "sols": [
+        "Since we want to interpolate with cubic splines:\n\n\\begin{align*}\np_1(x) &= a_1x^3+b_1x^2+c_1x+d_1 \\\\\np_2(x) &= a_2(x-1)^3+b_2(x-1)^2+c_2(x-1)+d_2\n\\end{align*}"
+    ], 
+    "hints": []
+}

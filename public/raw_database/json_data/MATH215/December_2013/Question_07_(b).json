@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH215", 
+    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\[\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\]\n\n(b) If $y_0 = 3/2$, use Euler$^{\\prime}$s method with step size $h = 1$\nto approximate the solution $y(2)$ at time $t=2$.", 
+    "year": 2013, 
+    "sols": [
+        "We have $\\displaystyle dy/dt = -y(y-1)^2$ so that if $y(t_0) = y_0$ then\n\n\\[y(t_0 + h) \\approx y(t_0) + h \\frac{dy}{dt}|_{t=t_0} = y(t_0) + h[-y_0 (y_0 - 1)^2]\\]\n\nWe denote \\emph{y\\textsubscript{0} = 3/2} and \\emph{t\\textsubscript{0} =\n0} so that\n\n\\[y(1) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 1\\left[\\frac{-3}{2}\\left(\\frac{1}{2}\\right)^2\\right] = 3/2 - 3/8 = 9/8.\\]\n\nContinuing in this process,\n\n\\[y(2) \\approx y_2 = y_1 + h[-y_1 (y_1 - 1)^2] = \\frac{9}{8} - \\frac{9}{8} \\left(\\frac{1}{8}\\right)^2 = \\frac{9}{8} - \\frac{9}{8^3} = \\frac{9 \\times 8^2 - 9}{8^3} = \\frac{567}{512}.\\]\n\n\\emph{Notice how this approximated solution slowly approaches the\nequilibrium value y=1.}"
+    ], 
+    "hints": [
+        "Euler's method is derived by using a tangent line to a solution curve to\napproximate the value of the solution a time step h later."
+    ]
+}

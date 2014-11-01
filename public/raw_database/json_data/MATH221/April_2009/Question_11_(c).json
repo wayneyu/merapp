@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_11_(c)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[\\displaystyle\nA = \\begin{bmatrix}\n1 & 0 & 2\\\\\n1 & -1 & 1\\\\\n1 & 0 & 0\n\\end{bmatrix}\\]\n\nFind a matrix \\emph{P} such that $\\displaystyle P^{-1}AP$ is diagonal,\nif it exists. If such a \\emph{P} does not exist, explain why. (No need\nto find $\\displaystyle P^{-1}$)", 
+    "year": 2009, 
+    "sols": [
+        "To Find a matrix P such that $P^{-1}AP$ is diagonal, we need to find the\nmatrix P formed by the eigenvectors of A. Using Matlab commands to find\nthe eigenvectors, we write {[}V,L{]}=eig(A). Then we have V =\n$\\begin{bmatrix}\n0& 0.8165 &-0.7071 \\\\ \n1& 0.4082 &0 \\\\ \n0& 0.4082 &0.7071 \n\\end{bmatrix}$\n\nSince V is formed by the eigenvectors of A, the matrix P = V."
+    ], 
+    "hints": []
+}

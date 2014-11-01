@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_09", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{p} is a prime with $p \\equiv 1 \\mod 4$, and \\emph{r} is a\nprimitive root modulo \\emph{p}. Show that \\emph{-r} is also a primitive\nroot modulo \\emph{p}.", 
+    "year": 2005, 
+    "sols": [
+        "Assume towards a contradiction that $\\displaystyle -r$ is not a\nprimitive root. Then $\\displaystyle (-r)^s \\equiv 1 \\mod{p}$ for some\n\\emph{s} smaller than $\\displaystyle p-1$. Now, we have that\n$\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}$ (multiply both sides of the\nprevious congruence by $\\displaystyle (-1)^{s}$. As \\emph{r} is a\nprimitive root, we have that $\\displaystyle r^{p-1} \\equiv 1 \\mod{p}$\nand that $\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}$. As these are the\nonly possible values for a power of \\emph{r} to be equivalent to a power\nof -1, we must have that either $\\displaystyle s=p-1$ or\n$\\displaystyle s=(p-1)/2$.\n\nSuppose towards a contradiction that $\\displaystyle s=(p-1)/2$. Then we\nhave that by the above that\n\n$\\displaystyle -1 \\equiv r^{(p-1)/2} \\equiv (-1)^{(p-1)/2} \\equiv 1 \\mod{p}$\n\nvalid since $\\displaystyle (p-1)/2$ is even. This is a contradiction and\nhence $\\displaystyle s = p-1$ making $\\displaystyle -r$ a primitive\nroot."
+    ], 
+    "hints": [
+        "Suppose that \\emph{s} is the smallest power of $\\displaystyle -r$ such\nthat $\\displaystyle (-r)^s \\equiv 1 \\mod{p}$. What can we say about\n\\emph{s}?", 
+        "Using hint 1, we have that $\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}$.\nAs \\emph{r} is a primitive root, we have that\n$\\displaystyle r^{p-1} \\equiv 1 \\mod{p}$ and that\n$\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}$. As these are the only\npossible values for a power of \\emph{r} to be equivalent to a power of\n-1, we must have that either $\\displaystyle s=p-1$ or\n$\\displaystyle s=(p-1)/2$. Assume the second case and find a\ncontradiction."
+    ]
+}

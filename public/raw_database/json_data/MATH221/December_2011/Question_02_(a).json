@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH221", 
+    "statement": "Determine the values of \\emph{t} for which the following matrix\n\n\\[A=\\left[ \\begin{array}{ccc}\n3 & 2 & t+3 \\\\\n3 & 4 & t+1 \\\\\n2 & 2 & t+1\n\\end{array}\\right]\\] is invertible.", 
+    "year": 2011, 
+    "sols": [
+        "We know that a matrix is invertible if and only if its determinant is\nnot 0.\n\n\\[A=\\left[ \\begin{array}{ccc}\n3 & 2 & t+3 \\\\\n3 & 4 & t+1 \\\\\n2 & 2 & t+1\n\\end{array}\\right]\\] Then,\n\n\\begin{align*}\n\\det(A)&=\\left| \\begin{array}{ccc}\n3 & 2 & t+3 \\\\\n3 & 4 & t+1 \\\\\n2 & 2 & t+1\n\\end{array}\\right| \\\\\n&= 3 \\cdot 4 \\cdot (t+1) + 2 \\cdot (t+1) \\cdot 2 + (t+3) \\cdot 3 \\cdot 2 \\\\\n&\\qquad - (t+3) \\cdot 4 \\cdot 2 - (t+1) \\cdot 2 \\cdot 3 - (t+1) \\cdot 2 \\cdot 3 \\\\\n&= 12(t+1) + 4(t+1) + 6(t+3)  \\\\\n&\\qquad - 8(t+3) - 6(t+1) - 6(t+1) \\\\\n&= 4(t+1) - 2(t+3) \\\\\n&= 2t-2\n\\end{align*}\n\nHence the determinant of the matrix \\emph{A} is zero if and only if\n\\emph{t} = 1. And so, the matrix is invertible for all values of\n\\emph{t} different than 1."
+    ], 
+    "hints": [
+        "What do you know about the determinant of a matrix?"
+    ]
+}

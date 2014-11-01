@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_A_11", 
+    "course": "MATH152", 
+    "statement": "Let\n\n\\[A = \\begin{bmatrix}\n1 & 3 \\\\ 3 & 8\n\\end{bmatrix}\n\\qquad \nB = \\begin{bmatrix}\n1 & 0 & -1 \\\\ -3 & 1 & 0\n\\end{bmatrix}\\]\n\nCalculate the following whenever defined. Otherwise state\n\\textbf{undefined} and include a brief explanation.\n\nA matrix $C$ such that $BC = I_{2}$ where $I_{2}$ is the $2\\times 2$\nidentity matrix.", 
+    "year": 2013, 
+    "sols": [
+        "Let $C = \\begin{bmatrix} a & d \\\\ b & e \\\\ c & f \\end{bmatrix}$. Then\nmultiplying out the required matrix gives\n\n\\begin{align*}\n\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}\n= BC &= \n\\begin{bmatrix} 1 & 0 & -1 \\\\ -3 & 1 & 0 \\end{bmatrix} \\begin{bmatrix} a & d \\\\ b & e \\\\ c & f \\end{bmatrix}\\\\\n&= \\begin{bmatrix} (1)(a)+(0)(b) + (-1)(c) & (1)(d) + (0)(e) + (-1)(f) \\\\ (-3)(a) + (1)(b) + (0)(c) & (-3)(d) + (1)(e) + (0)(f) \\end{bmatrix}\\\\\n&= \\begin{bmatrix} a-c & d-f \\\\ -3a + b & -3d + e \\end{bmatrix}\n\\end{align*}\n\nThis gives the equations\n\n\\begin{align*}\na-c &= 1\\\\\nd-f &= 0 \\\\\n-3a + b &= 0 \\\\\n-3d + e &= 1\n\\end{align*}\n\nSetting simple values like $a=1$ and $e=1$ gives us that\n$b=3,c=0,d=0,f=0$. This is a valid solution and thus such a matrix C\nexists and is given by\n\n$C = \\begin{bmatrix} 1 & 0 \\\\ 3 & 1 \\\\ 0 & 0 \\end{bmatrix}$", 
+        "Proceeding as in hint 3, we find the inverse of\n\n$\\begin{bmatrix}\n1 & 0 \\\\ -3 & 1\n\\end{bmatrix}$\n\nwhich is given by\n\n$\\begin{bmatrix}\n1 & 0 \\\\ 3 & 1\n\\end{bmatrix}$\n\nThus, a matrix C that will work is\n\n$\\begin{bmatrix}\n1 & 0 \\\\ 3 & 1 \\\\ 0 & 0 \n\\end{bmatrix}$\n\nSince the zeroes at the bottom will cancel any terms in the last column\nof B once you perform the matrix multiplication $BC$."
+    ], 
+    "hints": [
+        "To begin with, what are the dimensions of the matrix \\emph{C} that we\nare looking for?", 
+        "Multiply \\emph{B} with a general matrix\n\n\\[C = \\begin{bmatrix}\na & d \\\\ b & e \\\\ c & f\n\\end{bmatrix}\\]\n\nand then solve the resulting four equations.", 
+        "Another solution attempt can be given by only looking at the first two\ncolumns of \\emph{B} and find the matrix inverse of this 2x2 matrix.\nThen, add a row of zeros to that inverse matrix you found."
+    ]
+}

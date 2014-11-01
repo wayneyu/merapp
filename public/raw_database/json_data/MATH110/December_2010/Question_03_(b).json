@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH110", 
+    "statement": "Sketch the graph of a continuous function illustrating the Intermediate\nValue theorem as stated in part (a). Make sure to include the labels\n$a, b, c, f(a), f(b)$ and $L$.", 
+    "year": 2010, 
+    "sols": [
+        "The following picture is a sample illustration of the Intermediate Value\nTheorem.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg}\n\\caption{Math Exam Resources Math 110 December 2010 Question 3 b Solution 1.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "The labels $a, b, c$ belong on the x-axis, and $f(a), f(b), L$ belong on\nthe y-axis."
+    ]
+}

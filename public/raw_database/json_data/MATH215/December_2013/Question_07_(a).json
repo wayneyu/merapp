@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH215", 
+    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\[\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\]\n\n(a) Find the equilibrium solutions (critical points), determine the\nstability (stable or unstable) of each, and find\n$\\lim_{t \\to \\infty} y(t)$ for all possible values of the initial\ncondition $\\displaystyle y_0$.", 
+    "year": 2013, 
+    "sols": [
+        "Setting $dy/dt = 0$, we have $-y (y-1)^2 = 0$ so $y = 0, 1$.\n\nLooking at the sign of $dy/dt$, we have\n$\\begin{cases} y' > 0, \\quad y < 0 \\\\ y' < 0, \\quad 0 < y < 1 \\\\ y' < 0, \\quad y > 1 \\end{cases}$.\n\nThus, if we start below $y=0$, $y(t)$ increases; if we start above $y=0$\nbut below $y=1$, $y(t)$ decreases. Either way, we approach $y=0$ so\n$y=0$ is a stable equilibrium solution.\n\nIf we start below $y=1$ but above $y=0$, $y(t)$ decreases and moves away\nfrom $y=1$ ($\\displaystyle y' < 0$) and if we start above $y=1$, $y(t)$\ndecreases and approaches $y=1$ ($\\displaystyle y' < 0$). However,\nbecause the solution moves away from $y=1$ locally on at least one side,\n$y=1$ is an unstable equilibrium solution.\n\nAll possible values for $\\lim_{t \\rightarrow \\infty} y(t)$ include 0 and\n1. If $y(0) < 0$, $y \\rightarrow 0$ as $t \\rightarrow \\infty$. If\n$0 < y(0) < 1$, $y \\rightarrow 0$ as $t \\rightarrow \\infty$. Finally, if\n$y(0) > 1$ then $y \\rightarrow 1$ as $t \\rightarrow \\infty$."
+    ], 
+    "hints": [
+        "The equilibrium solutions are the constant solutions where $dy/dt = 0$.\nTo assess the stability, consider what the sign of the derivative\n$dy/dt$ tells you about solutions near the equilibrium points."
+    ]
+}

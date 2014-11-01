@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $f(x)$ is a polynomial, then its graph crosses the $x$-axis.", 
+    "year": 2012, 
+    "sols": [
+        "Polynomials are functions like lines, parabolas, cubics, etc. The best\nexamples to consider are horizontal lines and parabolas.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  No horizontal line crosses the \\emph{x}-axis.\n\\end{itemize}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2d_horizontal_line.jpg}\n\\caption{MER MATH110 December 2012 Question 2d horizontal line.jpg}\n\\end{figure}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The graph of a parabola can be shifted so that it doesn't cross the\n  \\emph{x}-axis.\n\\end{itemize}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2d_parabola.jpg}\n\\caption{MER MATH110 December 2012 Question 2d parabola.jpg}\n\\end{figure}\n\nEither of these would be a counter-example, so the statement is false."
+    ], 
+    "hints": [
+        "To get some intuition, think of the most basic polynomials first and see\nif the property holds."
+    ]
+}

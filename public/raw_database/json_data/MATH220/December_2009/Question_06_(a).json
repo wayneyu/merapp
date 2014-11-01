@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH220", 
+    "statement": "Let $\\mathbb{I}$ be the set of irrational numbers. That is\n$\\mathbb{I}=\\mathbb{R}-\\mathbb{Q}$.\n\nProve the following statements:\n\n(i) Let $x\\in\\mathbb{R}$. If $x\\in\\mathbb{I}$ then\n$\\frac{1}{x}\\in\\mathbb{I}$.\n\n(ii) Let $n\\in\\mathbb{Z}$ and $x\\in\\mathbb{R}$. If $x\\in\\mathbb{I}$ then\n$n+x\\in\\mathbb{I}$.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH312", 
+    "statement": "For any positive integers \\emph{a} and \\emph{n}, show that\n$\\displaystyle a \\equiv a^{4n+1} \\mod{10}$", 
+    "year": 2009, 
+    "sols": [
+        "The stated problem is equivalent to showing that\n$\\displaystyle 0 \\equiv a^{4n+1}  - a \\mod{10}$ which is equivalent to\nshowing that 10 divides $\\displaystyle a(a^{4n}-1)$.\n\nTo do this, we break this into cases. Since we are looking modulo 10, we\nonly have to discuss the cases when\n$\\displaystyle a \\in \\{0,1,2,3,4,5,6,7,8,9\\}$ since all numbers reduce\nto one of these modulo 10. We proceed as suggested by the hints.\n\n\\textbf{Case 1\\[\\displaystyle a=0\\]}. This case clearly satisfies\n$\\displaystyle a \\equiv a^{4n+1} \\mod{10}$ by a simple substitution. We\nsuppose that \\emph{a} is positive.\n\n\\textbf{Case 2\\[\\displaystyle 2 \\mid a\\]}. In this case, notice that\nclearly 2 divides $\\displaystyle a(a^{4n}-1)$ so it suffices to show\nthat 5 divides $\\displaystyle a^{4n}-1$. Notice that 5 does not divide\n\\emph{a} and so $\\displaystyle \\gcd(a,5) = 1$. Thus Euler's Theorem\napplies giving us that\n\n$\\displaystyle 1 \\equiv a^{\\phi(5)} \\equiv a^{4} \\mod{5}$.\n\nHence\n\n$\\displaystyle a^{4n}-1 \\equiv (a^{4})^{n} - 1 \\equiv 1^{n}-1 \\equiv 0 \\mod{5}$\n\nThus, 5 divides $\\displaystyle a^{4n}-1$ and so 10 divides\n$\\displaystyle a(a^{4n}-1)$.\n\n\\textbf{Case 3\\[\\displaystyle a=5\\]}. In this case, notice that clearly\n5 divides $\\displaystyle a(a^{4n}-1)$ so it suffices to show that 2\ndivides $\\displaystyle a^{4n}-1$. This last number is even since\n$\\displaystyle a^{4n} = 5^{4n}$ is odd. Thus 10 divides\n$\\displaystyle a(a^{4n}-1)$.\n\n\\textbf{Case 4\\[\\displaystyle 2 \\nmid a\\] and $\\displaystyle a \\neq 5$}.\nIn this case, $\\displaystyle \\gcd(a,10) = 1$. Thus Euler's Theorem\napplies giving us that\n\n$\\displaystyle 1 \\equiv a^{\\phi(10)} \\equiv a^{\\phi(2)\\phi(5)} \\equiv a^{(1)(4)} \\equiv a^{4} \\mod{10}$.\n\nHence\n\n$\\displaystyle a(a^{4n}-1) \\equiv a((a^{4})^{n} - 1) \\equiv a(1^{n}-1)\\equiv 0 \\mod{10}$\n\nThus 10 divides $\\displaystyle a(a^{4n}-1)$ completing the proof."
+    ], 
+    "hints": [
+        "The stated problem is equivalent to showing that 10 divides\n$\\displaystyle a(a^{4n}-1)$.", 
+        "Break this up into cases. We only need to consider 10 possible values\nfor \\emph{a}. They are based on $\\displaystyle a=0$, \\emph{a} being even\n(and not 0), $\\displaystyle a=5$, and \\emph{a} odd (and not 5).", 
+        "Euler's Theorem (or Fermat's Little Theorem) will help you finish the\nproblem."
+    ]
+}

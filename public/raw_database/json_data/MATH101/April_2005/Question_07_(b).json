@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH101", 
+    "statement": "The length of time in minutes it takes students to solve a certain\nmathematics problem (on probability) is a continuous random variable\nwhose probability density function is\n\n\\[f(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), & \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, & \\text{otherwise.} \\end{cases}\\]\n\n(b) What is the probability that a student will take less than $5\\pi/2$\nminutes to complete the problem?", 
+    "year": 2005, 
+    "sols": [
+        "A student takes at most 5$\\pi$/2 minutes to complete the question if his\ncompletion time is anywhere between 0 and 5$\\pi$/2. Hence the probability we\nare looking for is\n\n\\begin{align*}\n\\text{Prob}(a \\leq X \\leq b) &= \\int_a^b f(x)\\,dx \\\\\n&= \\int_0^{5\\pi/2} \\frac3{10} \\cos\\left(\\frac{x}{10}\\right)\\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&= \\int_0^{1/\\sqrt{2}} 3u^2\\,du \\\\\n&= \\left.u^3\\right|_0^{1/\\sqrt{2}} \\\\\n&= \\frac1{2\\sqrt{2}}.\n\\end{align*}\n\nWe used the substitution \\emph{u} = \\emph{sin}(\\emph{x}/10), \\emph{du} =\n1/10 \\emph{cos}(\\emph{x}/10), so that \\emph{u}(0) = 0 and \\emph{u}(5$\\pi$/2)\n= \\emph{sin}($\\pi$/4) = $\\scriptstyle 1/\\sqrt{2}$ from\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_7_(a)}{part\n(a)}."
+    ], 
+    "hints": [
+        "For a continuous random variable \\emph{X} with probability density\nfunction \\emph{f(x)} the probability that an event \\emph{a} \u2264 \\emph{X} \u2264\n\\emph{b} happens is\n\n\\[\\text{Prob}(a \\leq X \\leq b) = \\int_a^b f(x)\\,dx.\\]"
+    ]
+}

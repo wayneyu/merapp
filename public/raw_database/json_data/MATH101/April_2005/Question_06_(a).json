@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH101", 
+    "statement": "A tree trunk is 60 feet long and has circular cross sections. The\ndiameters in feet measured at 10-foot intervals starting at the bottom\nof the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in\ncubic feet, is computed using the formula\n\n\\[V = \\int_0^{60} A(y)\\,dy,\\]\n\nwhere $A(y)$ is the cross-sectional area of the trunk, in square feet,\n$y$ feet above the bottom of the tree.\n\n(a) Using a Simpson's Rule approximation for $V$, give an estimate for\nthe volume of wood in the tree trunk.\n\n(Do not simplify your answer.)", 
+    "year": 2005, 
+    "sols": [
+        "This is a straightforward application of Simpson's Rule to the integral\n\n\\[V = \\int_{0}^{60}A(y)\\,dy.\\]\n\nNotice that\n\n$\\frac{\\Delta x}{3} = \\frac{\\tfrac{60-0}{6}}{3} = \\frac{10}{3}$\n\nBy Simpson's Rule, the integral can be approximated by the sum\n\n\\begin{align*}\nV \\approx \\frac{10}{3}(A(0) + 4A(10) + 2A(20) + 4A(30) + 2A(40) + 4A(50) + A(60))\n\\end{align*} Remembering the given information about the diameter\n$D(y)$ of the tree trunk at various heights, $y$, we make the\nappropriate substitutions to determine the cross sectional area at each\nheight:\n\n\\[A(y) = \\pi \\left(\\frac{D(y)}{2}\\right)^2 = \\frac{\\pi}{4}D(y)^{2}\\]\n\nPlugging into our sum we get the approximate volume for the tree trunk.\n\n\\begin{align*}\nV &\\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\n\\end{align*}"
+    ], 
+    "hints": [
+        "To get the volume of the tree you will need to write a Simpson's Rule\nsum involving the cross sectional area of the trunk.\n\nLook closely at what you are given when evaluating the sum.", 
+        "The formula for the Simpson's rule is given by\n\n$S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)$\n\nwhere as always $n$ is an even integer."
+    ]
+}

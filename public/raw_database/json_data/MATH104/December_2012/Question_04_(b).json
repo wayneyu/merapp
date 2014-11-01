@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH104", 
+    "statement": "The demand equation for a certain product is\n\n\\[\\displaystyle{}q^2+p^{3/2}+2p=20\\]\n\nwhere q is the number of units per hour the manufacturer can sell at a\nprice of p dollars per unit.\n\nIf the price is raised slightly from \\$4 dollars, will the revenue\nincrease or decrease (use the elasticity of demand to do this)?", 
+    "year": 2012, 
+    "sols": [
+        "Using the hint and the first part, we have that\n\n$\\displaystyle \\epsilon(p) = \\frac{4\\cdot q'(4)}{q(4)} = \\frac{4(-5/4)}{2} = \\frac{-5}{2} < -1$\n\nAs the value is less than -1, we see that the revenue will decrease."
+    ], 
+    "hints": [
+        "Recall that the formula for the price-elasticity of demand is\n\n$\\displaystyle \\epsilon(p) = \\frac{p\\cdot q'(p)}{q(p)}$.\n\nRemember to compare this value to -1 to determine if revenue will\nincrease or decrease."
+    ]
+}

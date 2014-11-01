@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nLet \\emph{a} be a constant, and define\n\n$f(x) = \\begin{cases} x^{2} + a & \\text{if } x \\leq 1 \\\\ 2x-3 & \\text{if }x > 1 \\end{cases}$\n\nFind the value of \\emph{a} for which \\emph{f} is continuous everywhere.", 
+    "year": 2012, 
+    "sols": [
+        "To make this function continuous everywhere, we need\n\n$\\lim_{x \\to 1}f(x) = f(1) = (1)^{2}+a = 1+a$\n\nIn particular, we require that the limit on the left exists. To do this,\ncheck left and right hand limits and find a value of a that makes them\nequal. First\n\n$\\lim_{x \\to 1^{+}}f(x) = \\lim_{x \\to 1^{+}}x^{2} + a = 1^{2} + a = 1+a$\n\nand for the other side\n\n$\\lim_{x \\to 1^{-}}f(x) = 2x-3 = 2(1)-3 = -1$\n\nThus we need 1 + \\emph{a} = -1 and so \\textbf{\\emph{a} = -2.}"
+    ], 
+    "hints": [
+        "Since polynomials themselves are continuous everywhere, the only place\nwhere the function can be discontinuous is at the break point $x=1$. So\nwe need to choose \\emph{a} so that the limit at 1 exists, or in other\nwords that the left and right hand limits at 1 are equal."
+    ]
+}

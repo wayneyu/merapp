@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(n)", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind a function \\emph{f(x)} and a number \\emph{a} such that\n\n\\[2f'(a)=\\lim_{h\\to 0} \\frac{2\\cos(\\frac{\\pi}{3}+h)-1}{h}\\]", 
+    "year": 2011, 
+    "sols": [
+        "The limit definition of the derivative at a point \\emph{x=a} is:\n\n\\[f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}\\]\n\nWe notice that the term \\emph{cos($\\pi$/3 + h)} in the statement of the\nquestion resembles the \\emph{f(x+h)} term in the limit definition of the\nderivative. If this is the case, \\emph{f(x) = cos(x)} and \\emph{a =\n$\\pi$/3}.\n\nWe now test these guesses using the limit definition of the derivative.\nIf \\emph{f(x) = cos(x)} and \\emph{a = $\\pi$/3}, then\n\n\\begin{align*}\nf'\\left(\\frac{\\pi}{3}\\right) &= \\lim_{h \\to 0}\\frac{\\cos(\\frac{\\pi}{3} + h) - \\cos(\\frac{\\pi}{3})}{h}\\\\\n&= \\lim_{h \\to 0}\\frac{\\cos(\\frac{\\pi}{3} + h) -\\frac{1}{2}}{h}\n\\end{align*} If we multiply both sides by \\emph{2} we get\n\n\\[2f'\\left(\\frac{\\pi}{3}\\right) = \\lim_{h \\to 0}\\frac{2\\cos(\\frac{\\pi}{3} + h) -1}{h}\\]\n\nThis is the expression we were trying to find, so our guess of the\nfunction \\emph{f(x)} and the value \\emph{a} were correct: \\emph{f(x) =\ncos(x)} and \\emph{a = $\\pi$/3}."
+    ], 
+    "hints": [
+        "What is the limit definition of \\emph{f'(x)}? Where is it similar to the\nabove expression?", 
+        "It may be useful to know that\n\n\\[\\displaystyle \\cos(\\pi/3) = 1/2,\\]\n\nor equivalently\n\n\\[\\displaystyle 2\\cos(\\pi/3) = 1.\\]"
+    ]
+}

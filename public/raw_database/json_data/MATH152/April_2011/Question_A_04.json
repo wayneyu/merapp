@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_04", 
+    "course": "MATH152", 
+    "statement": "Circle the \\emph{one} correct answer below. A linear system of two\nequations in three unknowns has\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\textbf{(a)} always a unique solution.\n\n\\textbf{(b)} either a unique solution or no solutions.\n\n\\textbf{(c)} either a unique solution or an infinite number of\nsolutions.\n\n\\textbf{(d)} either no solutions or an infinite number of solutions.\n\n\\textbf{(e)} either a unique solution or exactly two distinct solutions.\n\\end{description}", 
+    "year": 2011, 
+    "sols": [
+        "With two equations (rows in the matrix), there can be at most 2 pivots\nand thus there is at least one free variable. A free variable implies\nthat there are an infinite number of solutions provided that the right\nhand side vector vanishes wherever there is a row of zeros, otherwise a\nsolution does not exist. Therefore, we either have at least one valid\nfree variable which implies that there are an infinite number of\nsolutions or the right hand side vector does not vanish whenever there\nis a row of zeros. Therefore we either have no solutions or an infinite\nnumber of solutions when a linear system has 2 equations with three\nunknowns. Therefore, the correct option is\n(d).\\\\\\\\\\textbf{Advanced}:\\\\Recall that the\n\\href{Wikipedia:Rank_(linear_algebra)}{rank} (\\emph{r}) of a matrix\ndefines the number of linearly independent rows or columns of a matrix\nor linear system and recall that for any matrix \\emph{A} size \\emph{m}\nby \\emph{n} that,\\\\\\[r\\leq\\min(n,m).\\] For this example we have\n\\emph{m}=2 and \\emph{n}=3 and so \\emph{r} $\\leq$ 2. The dimension of the\nnullspace is \\emph{n}-\\emph{r} and in this case it is at least 1 which\nimplies that there are non-trivial solutions to ''A\\textbf{x} ''=\n\\textbf{0} and in fact there are an infinite number of them. A solution\nto ''A\\textbf{x} ''= \\textbf{\\emph{b}} exists as long as \\textbf{''b}''\nis spanned by the column space of \\emph{A}. If this is true then\n''A\\textbf{x} ''= \\textbf{\\emph{b}} has a particular solution along with\nthe infinite set of solutions belonging to the nullspace and therefore\noverall there are an infinite number of solutions. However, if\n\\textbf{\\emph{b}} is \\textbf{not} spanned by the column space of\n\\emph{A} then there are no solutions to ''A\\textbf{x} ''=\n\\textbf{\\emph{b}}. Therefore, we conclude that a linear system with 2\nequations in 3 unknowns has (d) either no solutions or an infinite\nnumber of solutions."
+    ], 
+    "hints": [
+        "Consider how many pivots and free variables there are with 3 unknowns\nand two equations."
+    ]
+}

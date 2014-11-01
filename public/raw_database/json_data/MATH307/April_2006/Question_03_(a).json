@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH307", 
+    "statement": "Let\n$P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}$\nbe the set of all polynomials of degree at most 2.\n\nShow that $\\displaystyle P_2$ is a vector space and show that\n$\\displaystyle B=\\{1,t,t^2 \\}$ form a basis of $\\displaystyle P_2$.\nExpress the function $\\displaystyle f(t)=1-3t+2t^2 \\in P_2$ in a vector\nform using \\emph{B} as the basis.", 
+    "year": 2006, 
+    "sols": [
+        "If $P_2$ is a vector space then the axioms must hold true\n\n$\\displaystyle \\alpha_0+\\alpha_1t+\\alpha_2t^2+\\beta_0+\\beta_1t+\\beta_2t^2= (\\alpha_0+\\beta_0)+(\\alpha_1+\\beta_1)t+(\\alpha_2+\\beta_2)t^2$\n\n$\\displaystyle c(\\alpha_0+\\alpha_1t+\\alpha_2t^2)= c\\alpha_0+c\\alpha_1t+c\\alpha_2t^2$\n\nWe can also think of $P_2$ to be in $\\mathbb{R}^{3}$\n\n$\\alpha_0+\\alpha_1t+\\alpha_2t^2\\rightarrow \\begin{bmatrix}\n\\alpha_0\\\\\n\\alpha_1\\\\\n\\alpha_2\n\\end{bmatrix}$\n\nsuch that commutative and associate properties are also satisfied.\n\nTo show that B is a basis, we have to show that it spans $P_2$ and are\nlinearly independent\n\nIf we think of $P_2$ to be in $\\mathbb{R}^3$ then we can immediately\nidentify the basis for $\\mathbb{R}^3$\n\nBasis of $\\mathbb{R}^3: \\left\\{\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\right\\}$\n\nWe can use this result and build the basis of $P_2$ such that\n\n$B=\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}+\nt\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix}+\nt^2\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix}$.\n\nTherefore\n\n$f(t)=\\begin{bmatrix}\n1 & -3 & 2\n\\end{bmatrix} \\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix} = 1 -3t + 2t^2$"
+    ], 
+    "hints": []
+}

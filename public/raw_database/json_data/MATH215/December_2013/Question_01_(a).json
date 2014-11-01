@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH215", 
+    "statement": "Write the general solution of $y'' + 2y' + y = 0$.", 
+    "year": 2013, 
+    "sols": [
+        "With $y'' + 2y' + y = 0$, we first solve the characteristic equation\n$r^2 + 2r + 1 = (r+1)^2 = 0$ so $r=-1.$\n\nAs the root is repeated, we only get one solution of the form $e^{-t}$.\nThe other solution will be $t e^{-t}$.\n\nThe general solution is a linear combination of these two independent\nsolutions, $y = A e^{-t} + B t e^{-t}$."
+    ], 
+    "hints": [
+        "Consider the characteristic equation $r^2 + 2r + 1 = 0$.", 
+        "The root of the characteristic equation is repeated. What does this mean\nfor the form of the general solution?"
+    ]
+}

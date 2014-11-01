@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH104", 
+    "statement": "Consider the curve $x^2+y^3-2xy=0$. Assume that the point \\emph{(x,y) =\n(1,1)} lies on the curve, and that nearby points on the curve satisfy\n\\emph{y=f(x)} for some function of \\emph{f(x)}.\n\nFind $\\displaystyle{}f''(1)$.", 
+    "year": 2012, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)}{part\n(a)}, we have\n\n\\begin{align*}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \n\\end{align*}\n\nDifferentiating again gives\n\n\\begin{align*}\n2+3\\left(2y\\left(\\frac{dy}{dx}\\right)^2 + y^{2}\\frac{d^{2}y}{dx^{2}}\\right) -2\\frac{dy}{dx}-2\\left(\\frac{dy}{dx} + x\\frac{d^{2}y}{dx^{2}}\\right)=0 \n\\end{align*}\n\nIsolating for the second derivative gives\n\n\\begin{align*}\n2 + 6y\\left(\\frac{dy}{dx}\\right)^2 + 3y^{2}\\frac{d^{2}y}{dx^{2}} - 4\\frac{dy}{dx} -2x \\frac{d^{2}y}{dx^2}  &=0 \\\\\n2 -4\\frac{dy}{dx}+6y\\left(\\frac{dy}{dx}\\right)^2 +(3y^{2}-2x) \\frac{d^{2}y}{dx^2}  &=0\\\\\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2 + 4\\frac{dy}{dx}-6y\\left(\\frac{dy}{dx}\\right)^2}{3y^{2}-2x}\n\\end{align*}\n\nNow we plug in $x= y =1$ into this equation. From\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)}{part\n(a)}, we know that the derivative at 1 is 0 and thus, we get\n\n\\begin{align*}\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2+ 4(0)-6(1)(0)^2}{3(1)^{2}-2(1)} = \\frac{-2}{1} = -2\n\\end{align*}\n\nand so $\\displaystyle f''(1) = -2$"
+    ], 
+    "hints": [
+        "$y(x)$ is defined implicitly. How do we differentiate functions that are\ndefined this way?", 
+        "Use implicit differentiation to find $\\frac{d^{2}y}{dx^2}$ and evaluate\nat $x=y=1$."
+    ]
+}

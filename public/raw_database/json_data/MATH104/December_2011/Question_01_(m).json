@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(m)", 
+    "course": "MATH104", 
+    "statement": "Find two positive real numbers $m$ and $n$ whose product is 50 and whose\nsum is as small as possible.", 
+    "year": 2011, 
+    "sols": [
+        "We wish to minimize the quantity $S = m + n$ subject to $mn = 50$. Using\nour constraint we rewrite $S$ as\n\n\\[S = m + \\frac{50}{m}.\\]\n\nTo determine the minimum of this quantity $S$, we first find the\ncritical points of $S$:\n\n\\begin{align*}\n\\frac{dS}{dm} = 1 - \\frac{50}{m^{2}} &= 0 \\quad \\rightarrow \\quad m^{2} = 50.\n\\end{align*}\n\nDropping the negative solution, we find\n\n\\[m = \\sqrt{50}.\\]\n\nThe corresponding value for $n$ is determined from the constraint\n$mn = 50$, and is therefore equal to\n\n\\[n = 50/\\sqrt{50} = \\sqrt{50}.\\]\n\nIs this critical point a local minimum? Apply the second derivative\ntest:\n\n\\[\\frac{d^{2}S}{dm^{2}} = \\frac{100}{m^{3}} > 0\\] at the critical point.\nTherefore, this critical point is a minimum of $S$ and the two values\n$m,n$ that have product equal to 50 and the smallest sum are\n\n\\[m = \\sqrt{50}, \\ n = \\sqrt{50}.\\]"
+    ], 
+    "hints": [
+        "A common error for this type of question is to look for solutions\n$m$,$n$ that are integers through trial and error. This is an\noptimization problem. As such, you should determine what quantity you\nwant to optimize and what your constraint is."
+    ]
+}

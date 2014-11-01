@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dx}{dt} = \\frac{x^2-2}{2x}\\]\n\nFind the solution with the initial condition \\emph{x(0) = 2}.", 
+    "year": 2009, 
+    "sols": [
+        "Recall the solution from part (a):\n\n\\[x(t)=\\pm\\sqrt{\\tilde ce^t + 2}.\\]\n\nTo satisfy the initial condition $x(0)=2$, we calculate\n\n\\[\\displaystyle 2 =  x(0)=\\pm\\sqrt{\\tilde ce^0+2}\\]\n\nWe see, that this can only be fullfilled with the plus sign.\n\n\\[x(0)=\\sqrt{\\tilde c + 2}=2,\\]\n\n\\[\\tilde c=2.\\]\n\nSo, the solution of the differential equation with initial condition is\n\n\\[x(t)=\\sqrt{2e^t+2}.\\]"
+    ], 
+    "hints": [
+        "Use your solution from\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_3_(a)}{part\n(a)}:\n\n\\[x(t)=\\pm\\sqrt{\\tilde ce^t + 2}.\\]\n\nDoes the initial condition dictate a positive or a negative sign for\n\\emph{x(t)}?"
+    ]
+}

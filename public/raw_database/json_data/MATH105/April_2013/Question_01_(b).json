@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH105", 
+    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind an equation for the level curve of\n$\\displaystyle f(x,y) = 3xy^{2} + 2y - 1$ that goes through the point\n$\\displaystyle (1,-2)$.", 
+    "year": 2013, 
+    "sols": [
+        "In the equation of a level curve we want to know all\n$\\displaystyle x,y \\in\\mathbb{R}$, such that $\\displaystyle f(x,y)$ is\nconstant. Since the point $\\displaystyle (1,-2)$ shall lie in the level\ncurve, we search for the set satisfying\n\n$\\displaystyle f(x,y) = f(1,-2).$\n\nThis means\n\n$\\displaystyle 3xy^2 + 2y - 1 = 7$\n\nWe can simplify this equation to\n\n$\\displaystyle y(3xy+2) = 8$"
+    ], 
+    "hints": [
+        "A level curve of a function $\\displaystyle f(x,y)$ is the set of points\n$\\displaystyle x,y$ satisfying the equation\n\n$\\displaystyle f(x,y) = constant$\n\nWhat does it mean for the constant, when we know that a special point\n$\\displaystyle (a_1,a_2)$ satisfies this equation? Can you calculate the\nconstant?"
+    ]
+}

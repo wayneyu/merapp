@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n$\\displaystyle W = \\text{span}\\left\\{ \n\\begin{bmatrix} 1 \\\\ 0 \\\\ 3 \\\\ 0 \\end{bmatrix},\n\\begin{bmatrix} 0 \\\\ 1 \\\\ 4 \\\\ -1 \\end{bmatrix},\n\\begin{bmatrix} 2 \\\\ -3 \\\\ -6 \\\\ 3 \\end{bmatrix},\n\\begin{bmatrix} 4 \\\\ -1 \\\\ 8 \\\\ 2 \\end{bmatrix}\n\\right\\}$Find all \\emph{c} such that $\\displaystyle [c,1,1,0]^{T}$ lies in\n\\emph{W}.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

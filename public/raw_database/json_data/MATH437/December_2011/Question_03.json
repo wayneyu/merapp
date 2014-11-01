@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH437", 
+    "statement": "Show that there exist arbitrarily long sequences of consecutive positive\nintegers such that no integer in the sequence is a power of a prime\nnumber.", 
+    "year": 2011, 
+    "sols": [
+        "Let \\emph{m} be an arbitrary integer.\n\nThe main idea uses the Chinese Remainder Theorem. Define a system of\ncongruences by\n\n$\\displaystyle x \\equiv p_{i}-i+1 \\mod{p_{i}^{2}}$ for\n$\\displaystyle i \\in \\{1,..,m-1\\}$\n\nwhere $\\displaystyle p_{i}$ is the \\emph{i}th prime number. So\n\n\\[\\displaystyle x \\equiv 2-1+1 \\mod{4}\\]\n\n\\[\\displaystyle x \\equiv 3-2+1 \\mod{9}\\]\n\n\\[\\displaystyle x \\equiv 5-3+1 \\mod{25}\\]\n\nand so on. Now look at the numbers $\\displaystyle x,x+1,...,x+m-1$.\nNotice that for any $\\displaystyle x+(i-1)$ for\n$\\displaystyle i \\in \\{1,..,m-1\\}$, we have\n\n$\\displaystyle x+(i-1) \\equiv p_{i} \\mod{p_{i}^{2}}$\n\nThis means that $\\displaystyle p_{i} \\mid (x+i-1)$ however\n$\\displaystyle p_{i}^{2} \\nmid (x+i-1)$. Thus, no entry in this list can\nbe a power of a prime (though some entries themselves might be prime if\n\\emph{m} is too small)."
+    ], 
+    "hints": [
+        "Try to find a string of consecutive numbers where 2 divides the first\nnumber but 4 doesn't divide it, 3 divides the second number but 9\ndoesn't divide it, 5 divides the third number but 25 doesn't and so on\nthrough the primes.", 
+        "The main idea uses the Chinese Remainder Theorem. Define a system of\ncongruences by\n\n\\[\\displaystyle x \\equiv p_{i}-i+1 \\mod{p_{i}^{2}}\\] for\n$\\displaystyle i \\in \\{1,..,m-1\\}$\n\nwhere $\\displaystyle p_{i}$ is the \\emph{i}th prime, \\emph{m} an integer\nand argue from here."
+    ]
+}

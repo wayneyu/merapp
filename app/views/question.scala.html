@@ -1,4 +1,4 @@
-@(stmt: String, q: String, hints: List[String], sols: List[String])
+@(q: String, stmt: String, hints: List[String], sols: List[String])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +23,8 @@
 
 <div id="selection">
 
-        <form>
+        @helper.form(action = routes.QuestionController.questionSubmit()) {
+
         <select name="course">
             <option value="MATH100">Math 100</option>
             <option value="MATH101">Math 101</option>
@@ -62,8 +63,24 @@
             <option value="2005">2005</option>
         </select>
 
-            Question: <input type="text" name="question"><br>
-        </form>    
+        <select name="q_no">
+            @for( i <- 1 to 20){
+                @if( i < 10 ){
+                    <option value=@("0" + i)>@("0" + i)</option>
+                }else{
+                    <option value=@i>@i</option>
+                }
+            }
+        </select>
+
+        <select name="q_letter">
+            @for( c <- 'a' to 'e' ){
+                <option value=@c>@c</option>
+            }
+        </select>
+
+        <input type="submit" value="Find Question">
+        }
 </div>
 
 <div class="main_box">

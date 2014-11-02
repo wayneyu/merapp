@@ -5,6 +5,7 @@ import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.functional.syntax._
 import play.api.libs.json._
+import views.html.helper.form
 import scala.concurrent.Future
 import scala.util.{Success, Failure}
 
@@ -18,7 +19,7 @@ import play.modules.reactivemongo.json.collection.JSONCollection
 /**
  * Created by wayneyu on 11/1/14.
  */
-object DBController extends Controller with MongoController {
+object QuestionController extends Controller with MongoController {
 
   def collection: JSONCollection = db.collection[JSONCollection]("questions")
 
@@ -46,11 +47,29 @@ object DBController extends Controller with MongoController {
 
     futureQuestion.map {
       case j::js => Ok(views.html.question(
-        (j \ "statement").as[String], q,
+        q, (j \ "statement").as[String],
         (j \ "hints").as[List[String]],
         (j \ "sols").as[List[String]]))
-      case Nil => BadRequest("Question not found")
+      case Nil => {
+        val resp = "Question not found"
+        Ok(views.html.question(resp,"",Nil,Nil))
+      }
     }
-
   }
+
+  def questionSubmit() = Action { request =>
+    val form = request.body.asFormUrlEncoded
+    form match {
+      case Some(map) => {
+        val q_no = map.getOrElse("q_no", Seq())(0)
+        val q_letter = map.getOrElse("q_letter", Seq())(0)
+        Redirect(controllers.routes.QuestionController.question(
+          map.getOrElse("course", Seq())(0),
+          map.getOrElse("term", Seq())(0) + "_" + map.getOrElse("year", Seq())(0),
+          if (q_no.nonEmpty && q_letter.nonEmpty) "Question_" + q_no + "_(" + q_letter + ")" else ""))
+      }
+      case None => Redirect(controllers.routes.QuestionController.question("","",""))
+    }
+  }
+
 }

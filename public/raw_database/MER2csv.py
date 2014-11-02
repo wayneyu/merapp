@@ -126,8 +126,13 @@ def mediawiki_from_edit(input):
 def preCleaning(input):
     input = input.decode('latin1')
     input = input.replace(u'ï¬', 'fi')
-    input = input.replace('&lt;', '<')
     input = input.replace('&amp;', '&')
+    input = input.replace('&lt;', '<')
+    input = input.replace('&le;', '<math>\leq</math>')
+    input = input.replace('&gt;', '>')
+    input = input.replace('&ge;', '<math>\geq</math>')
+    input = input.replace('&ne;', '<math>\\neq</math>')
+    input = re.sub(r'([-+]?)&infin;', r'<math>\1\\infty</math>', input)
     input = input.replace(u'â', '<math>\infty</math>')
     input = input.replace(u'â¥', '<math>\geq</math>')
     input = input.replace(u'â¤', '<math>\leq</math>')
@@ -139,6 +144,8 @@ def preCleaning(input):
     input = input.replace(u'â', '')
     input = input.replace(u'â¨', u'<math>\\vee</math>')
     input = input.replace(u'â', u'<math>\\rightarrow</math>')
+    input = re.sub(r'&radic;{{overline\|(.*)}}',
+                   r'<math>\\sqrt{\1}</math>', input)
     input = re.sub(r'<math> *\\ +', r'<math>', input)
     input = re.sub(r'\\ +</math>', r'</math>', input)
     input = re.sub(r': +<math>', ':<math>', input)
@@ -154,6 +161,7 @@ def preCleaning(input):
 
 def postCleaning(input):
     input = input.replace(u'ƒ', '$f$')
+    input = input.replace(u'\u00c6\u0092', '$f$')
     input = input.replace("$f$$^{\prime}$", "$f'$")
     input = input.replace("$f$$^{\prime\prime}$", "$f''$")
     input = input.replace("\emph{f$^{\prime\prime}$}", "$f''$")

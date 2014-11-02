@@ -8,7 +8,7 @@
         "To use the quotient rule we first identify the numerator $f(x) = e^{x}$\nand the denominator $g(x) = x^{2} -3$. Then we calculate $f'(x) = e^x$\nand $g'(x) = 2x$. The rest is a walk in the park, just plug it in:\n\n\\begin{align*}\n&\\frac{d}{dx}\\bigg(\\frac{e^{x}}{x^{2}-3}\\bigg)\\\\\n=& \\frac{e^x(x^2-3)-2x(e^x)}{(x^2-3)^2} \\\\\n=& \\frac{e^{x}(x^{2}-3 - 2x)}{(x^{2}-3)^{2}}\\\\\n=& \\frac{e^{x}(x-3)(x+1)}{(x^{2}-3)^{2}}\n\\end{align*}"
     ], 
     "hints": [
-        "Try to run through an algorithm when you want to take a derivative. Ask\nyourself ``Is this a derivative I just 'know'?''. If not, ask yourself\n``Is there a special rule that I can use?''", 
+        "Try to run through an algorithm when you want to take a derivative. Ask\nyourself ``Is this a derivative I just'know'?''. If not, ask yourself\n``Is there a special rule that I can use?''", 
         "For this problem, the quotient rule is your friend. The statement is\n\n$\\frac{d}{dx}\\bigg(\\frac{f(x)}{g(x)} \\bigg) = \\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^{2}}$\n\nprovided $f(x)$ and $g(x)$ are differentiable and $g(x) \\neq 0$."
     ]
 }

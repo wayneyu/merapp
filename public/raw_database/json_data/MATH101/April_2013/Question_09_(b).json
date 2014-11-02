@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_09_(b)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nDetermine, with explanation, whether the following series converges or\ndiverges.\n\n\\[\\displaystyle \n\\sum_{n=1}^\\infty \\frac{2n+1}{2^{2n+1}}\\]", 
+    "year": 2013, 
+    "sols": [
+        "We use the ratio test:\n\n\\begin{align*}\n\\lim_{n\\to\\infty} \\left|\\frac{2(n+1)+1}{2^{2(n+1)+1}} \\cdot \\frac{2^{2n+1}}{2n+1}\\right| & = \\lim_{n\\to\\infty} \\frac{2n+3}{2n+1} \\cdot \\frac{2^{2n+1}}{2^{2n+3}} \\\\\n& = \\lim_{n\\to\\infty} \\frac{2+\\tfrac{3}{n}}{2+\\tfrac{1}{n}} \\cdot \\frac{1}{2^2} \\\\\n& = \\frac{1}{4} \\\\\n& < 1\n\\end{align*}\n\nSo by the ratio test, the series converges."
+    ], 
+    "hints": [
+        "What kind of test works well when you have a mix of polynomials and\nexponentials?", 
+        "Try the ratio test."
+    ]
+}

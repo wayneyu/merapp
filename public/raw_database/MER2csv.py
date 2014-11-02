@@ -63,6 +63,9 @@ def handleImages(content, directory):
 def json_from_course_exam_question(course, term, year, question):
     exam = term + '_' + str(year)
     directory = os.path.join('json_data', course, exam)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
     questionURL = ('/Science:Math_Exam_Resources/'
                    'Courses/' + course + '/' + exam + '/' + question)
     num_hints, num_sols = get_num_hs_question(questionURL)
@@ -148,7 +151,7 @@ def preCleaning(input):
                    r'<math>\\sqrt{\1}</math>', input)
     input = re.sub(r'<math> *\\ +', r'<math>', input)
     input = re.sub(r'\\ +</math>', r'</math>', input)
-    input = re.sub(r': +<math>', ':<math>', input)
+    input = re.sub(r':+ *<math>', ':<math>', input)
     input = re.sub(r'$\\ (.*)$', r'$\1$', input)
     input = re.sub(r'$\\displaystyle (.*)$', r'$\1$', input)
     input = re.sub(r':<math>\\displaystyle{\\begin{align}(.*)'
@@ -189,8 +192,6 @@ def postCleaning(input):
     input = input.replace("\[\displaystyle\\begin{align}", "\\begin{align*}")
 
     input = input.replace("\[\n\\begin{align}", "\\begin{align*}")
-    input = input.replace(
-        "\[\displaystyle\n\\begin{align*}", "\\begin{align*}")
     input = input.replace("\[\displaystyle\n\\begin{align}", "\\begin{align*}")
     input = input.replace('\[\\begin{alignat}', '\\begin{alignat*}')
 
@@ -204,6 +205,9 @@ def postCleaning(input):
     input = input.replace('\\begin{align}', '\\begin{align*}')
     input = input.replace('\end{align}$', '\end{align*}')
     input = input.replace("\\\\]", "\\]")
+    input = re.sub(r"\\\[\\displaystyle\s*\n\\begin{align\*}",
+                   r"\\begin{align*}", input)
+
 
 #    two_newlines_dollar = r'\$([\s\S]*?)\n\n([\s\S]*?)\$'
 #    input = re.sub(two_newlines_dollar, r'$\1\2$', input)

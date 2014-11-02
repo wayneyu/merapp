@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nEvaluate $\\displaystyle \\int_0^1 \\tan^{-1} x \\ dx$", 
+    "year": 2013, 
+    "sols": [
+        "From now on, we will use $\\displaystyle \\arctan x$ instead of\n$\\displaystyle \\tan^{-1} x$. By integration by parts, set\n$\\displaystyle u = \\arctan x$ and $\\displaystyle dv = dx$. Then\n$\\displaystyle du = \\frac{1}{1+x^2} \\ dx$ and $\\displaystyle v = x$.\nThen\n\n\\begin{align*}\n\\int_0^1 \\arctan x \\ dx & = x\\arctan x \\big|_0^1 - \\int_0^1 \\frac{x}{1+x^2} \\ dx \\\\\n& = \\arctan(1)-\\frac{1}{2}\\ln|1+x^2|\\big|_0^1 \\\\\n& = \\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\n\\end{align*}"
+    ], 
+    "hints": [
+        "This is a special integration by parts. Note that another notation for\n$\\displaystyle \\tan^{-1}x$ is $\\displaystyle \\arctan  x$"
+    ]
+}

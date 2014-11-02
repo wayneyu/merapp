@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "\\emph{\\textbf{Short Problem.} Show your work. No credit will be given\nfor the answer without the correct accompanying work.}\n\nEvaluate $\\int x\\ln x\\,dx$.", 
+    "year": 2014, 
+    "sols": [
+        "To evaluate this integral, we integrate by parts.\n\nLet\n\n\\begin{align*}\nu &=\\ln(x) \\quad \\Rightarrow \\quad du = \\frac{1}{x}dx \\\\\ndv &= x\\,dx \\quad \\Rightarrow \\quad v = \\frac{x^2}{2}.\n\\end{align*} Substituting these into the integral, we get\n\n\\begin{align*}\n\\int u\\,dv &= uv - \\int v\\,du\n\\\\ \\int x\\ln(x)\\,dx &= \\ln(x)\\cdot\\left(\\frac{x^2}{2}\\right)-\\int \\frac{x^2}{2}\\frac{1}{x}dx\n\\\\&= \\frac{1}{2}x^2 \\ln(x) - \\frac{1}{2}\\int x\\,dx\n\\\\&= \\frac{1}{2}x^2 \\ln(x) - \\frac{1}{2}\\left(\\frac{x^2}{2}\\right) + C\n\\\\ {\\color{blue}\\int x\\ln(x)\\,dx}&\\, {\\color{blue}= \\frac{1}{2}x^2 \\ln(x) - \\frac{1}{4}x^2 + C}\\end{align*}"
+    ], 
+    "hints": [
+        "Try integrating by parts."
+    ]
+}

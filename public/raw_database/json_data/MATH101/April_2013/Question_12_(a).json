@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_12_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nProve that $\\displaystyle \\int_2^\\infty \\frac{x+\\sin x}{1+x^2} \\ dx$\ndiverges.", 
+    "year": 2013, 
+    "sols": [
+        "Since this integral can be solved directly, we try the comparison test\ninstead to prove divergence. Notice that for large $\\displaystyle x$,\nthe integrand behaves like $\\displaystyle 1/x$. Since\n$\\int_2^\\infty 1/x\\ dx$ diverges, it will be our goal to show that our\nintegrand is larger than a constant times $\\displaystyle 1/x$.\n\nFirst, since $\\displaystyle \\sin x \\geq -1$, we have\n\n\\[\\displaystyle \n\\frac{x+\\sin x}{1+x^2} \\geq \\frac{x-1}{1+x^2}\\]\n\nNow, for $\\displaystyle x \\geq 2$, we have\n\n\\[\\displaystyle \n\\frac{x-1}{1+x^2} \\geq \\frac{1}{3x}\\]\n\nTo prove this, notice if $\\displaystyle x \\geq 2$, then\n\n\\begin{align*} \nx(2x-3) & \\geq 2 \\cdot 1 \\geq 1 \\\\\n3x^2-3x & \\geq x^2 + 1 \\\\\n\\frac{x-1}{1+x^2} & \\geq \\frac{1}{3x}\n\\end{align*}\n\nwhere in the second line we added $\\displaystyle x^2$ to both sides, and\nin the third line we divided by $\\displaystyle (3x)(1+x^2) > 0$.\n\nNow, since\n\n\\[\\displaystyle \n\\int_2^\\infty \\frac{1}{3x} \\ dx = \\frac{1}{3} \\int_2^\\infty \\frac{1}{x} \\ dx\\]\n\ndiverges by \\emph{p}-test, we have that\n\n\\begin{align*}\n\\int_2^\\infty \\frac{x+\\sin x}{1+x^2} \\ dx &\\geq \\int_2^\\infty \\frac{x-1}{1+x^2} \\ dx \\\\\n&\\geq \\int_2^\\infty \\frac1{3x}\\ dx \\\\ \n&= \\frac{1}{3} \\int_2^\\infty \\frac{1}{x} \\ dx > \\infty\n\\end{align*}\n\nand hence the original integral diverges by the Comparison Test, as\nrequired."
+    ], 
+    "hints": [
+        "Intuition should say that the numerator looks like \\emph{x} and the\ndenominator is like $x^{2}$ and so this function should look like the\ninverse of \\emph{x} which should diverge. If you're trying to prove it\ndiverges, you don't need to find the exact antiderivative; there are\nother ways of proving divergence of integrals.", 
+        "Try comparison test.", 
+        "What does the integrand look like for large $\\displaystyle x$?"
+    ]
+}

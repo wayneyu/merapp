@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "\\emph{\\textbf{Short Problem.} Show your work. No credit will be given\nfor the answer without the correct accompanying work.}\n\nEvaluate $\\int \\cos^3 x \\sin^4 x\\,dx$.", 
+    "year": 2014, 
+    "sols": [
+        "To evaluate this integral, we are going to use substitution, but first\nwe rearrange the integral a little bit,\n\n\\begin{align*}\n\\int\\cos^{3}x\\sin^{4}x\\,dx &= \\int (\\cos^{3}x)(\\sin^{4}x)dx\n\\\\ &=\\int (\\cos^{2}x)(\\sin^{4}x)(\\cos x \\,dx)\n\\end{align*} Let\n\n\\[u = \\sin(x) \\quad \\Rightarrow \\quad du = \\cos x\\,dx\\] Also, we use the\ntrig. identity,\n\n\\[\\cos^{2}x + \\sin^{2}x = 1\\quad \\Leftrightarrow \\quad \\cos^{2}x= 1 - \\sin^{2}x.\\]\ngiving us,\n\n\\begin{align*}\n\\int (\\cos^{2}x)(\\sin^{4}x)(\\cos x \\,dx) &= \\int (1 - \\sin^{2}x)(\\sin^{4}x)(\\cos x\\,dx)\n\\\\ &=\\int (1-u^{2})(u^{4})(du)\n\\\\ &=\\int (u^{4}-u^{6})\\,du\n\\\\ &=\\frac{u^{5}}{5}-\\frac{u^{7}}{7} + C\n\\\\ {\\color{blue}\\int\\cos^{3}x\\sin^{4}x\\,dx }&\\,{\\color{blue}=\\frac{\\sin^{5}x}{5}-\\frac{\\sin^{7}x}{7} + C}\\end{align*}"
+    ], 
+    "hints": [
+        "Try integration by substitution. Let\n\n\\[\\displaystyle u = \\sin(x).\\]", 
+        "Remember the trig. identity\n\n\\[\\displaystyle \\cos^{2}x + \\sin^{2}x = 1.\\]"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH101", 
+    "statement": "\\emph{\\textbf{Short Problem.} Show your work. No credit will be given\nfor the answer without the correct accompanying work.}\n\nEvaluate $\\int \\frac{x^2}{(x^3+1)^{101}}\\,dx$.", 
+    "year": 2014, 
+    "sols": [
+        "To evaluate this integral, we use integration by substitution.\n\nLet\n\n\\begin{align*}\nu = x^{3}+1 \\quad \\Rightarrow \\quad du &= 3x^{2}dx, \\\\\n\\frac{1}{3}du & =x^{2}dx\n\\end{align*} Substituting this into the integral gives\n\n\\begin{align*}\n\\int \\frac{x^{2}}{(x^3+1)^{101}}\\,dx &= \\int \\frac{1}{3}\\frac{1}{u^{101}}\\,du\n\\\\ &= \\int \\frac{u^{-101}}{3}\\,du\n\\\\ &= \\frac{1}{3}\\int u^{-101}\\,du + C\n\\\\ &= \\frac{1}{3}\\left( \\frac{(u^{-101+1})}{-101+1} \\right)+ C\n\\\\ &= \\frac{1}{3}\\left( \\frac{u^{-100}}{-100} \\right)+ C\n\\\\ &= \\frac{1}{-300} u^{-100} + C\n\\end{align*} Substituting $u = x^{3} + 1$ back into the result gives\n\n\\[{\\color{blue}\\int \\frac{x^{2}}{(x^3+1)^{101}}\\,dx = -\\frac{1}{300}(x^{3}+1)^{-100} +C}\\]"
+    ], 
+    "hints": [
+        "Try a substitution. Let $u = x^{3} + 1$."
+    ]
+}

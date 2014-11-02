@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_09_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\n'Determine, with explanation, whether the following series converges or\ndiverges.\n\n\\[\\displaystyle \n1+\\frac{1}{3}+\\frac{1}{5}+\\frac{1}{7}+\\frac{1}{9}+\\cdots\\]", 
+    "year": 2013, 
+    "sols": [
+        "This is the series\n\n\\[\\displaystyle \n\\sum_{n=1}^\\infty \\frac{1}{2n-1}\\]\n\nNotice\n\n\\[\\displaystyle \n\\frac{1}{2n-1} > \\frac{1}{2n} > 0\\]\n\nfor all $\\displaystyle n$, and\n\n\\[\\displaystyle \n\\sum_{n=1}^\\infty \\frac{1}{2n} = \\frac{1}{2} \\sum_{n=1}^\\infty \\frac{1}{n}\\]\n\ndiverges by p-series (it's just a multiple of the harmonic series). Then\nby the comparison test, the series\n\n\\[\\displaystyle \n1+\\frac{1}{3}+\\frac{1}{5}+\\frac{1}{7}+\\frac{1}{9}+\\cdots\\]\n\ndiverges."
+    ], 
+    "hints": [
+        "First, write the series in terms of summation notation.", 
+        "Try the p-series test with the comparison test."
+    ]
+}

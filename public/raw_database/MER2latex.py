@@ -7,6 +7,11 @@ import argparse
 import sys
 import subprocess
 import glob
+from MER2csv import json_from_course_exam_question
+
+
+def download_json(course, term, year, question):
+    json_from_course_exam_question(course, term, year, question)
 
 
 def correct_image_path(text, image_path):
@@ -180,7 +185,7 @@ def write_question(data, image_path, easiness_raw):
     return result_str
 
 
-def write_latex(file_list, title, where_to_save):
+def write_latex(file_list, title, where_to_save, overwrite=False):
     df = pd.read_csv('raw_data.csv', header=None,
                      names=['url', 'course', 'exam', 'q_short',
                             'num_votes', 'rating', 'num_hints',
@@ -192,10 +197,15 @@ def write_latex(file_list, title, where_to_save):
     out.write(document_title(title))
 
     for f in file_list:
+        course, exam, question = f.split('/')[-3:]
+        question = question.replace('.json', '')
+        if not os.path.isfile(f) or overwrite:
+            term, year = exam.split('_')
+            download_json(course, term, year, question)
         fd = open(f, 'r')
         data = json.loads(fd.read())
         fd.close()
-        course, exam = f.split('/')[-3:-1]
+
         easiness_raw = list(df['rating'][
             df.url.str.contains(
                 f.replace('json_data/', '').replace('.json', '').
@@ -214,7 +224,17 @@ if __name__ == '__main__':
                         help='filter on course')
     parser.add_argument('--exam', dest='exam', default='/',
                         help='filter on exam')
+    parser.add_argument('--question', dest='q', default='/',
+                        help='filter on question')
+    parser.add_argument('--overwrite', dest='overwrite',
+                        action='store_true',
+                        help='overwrites files by reading from MER')
+    parser.add_argument('--no-overwrite', dest='overwrite',
+                        action='store_false',
+                        help='use stored data if available')
+    parser.set_defaults(overwrite=False)
     args = parser.parse_args()
+    args.q = args.q.replace('(', '\(').replace(')', '\)')
 
     title = ''
     if not args.topic == '/':
@@ -222,7 +242,8 @@ if __name__ == '__main__':
         df['loc'] = df['Question'].apply(file_loc_from_question_url)
         file_locs = df['loc'][((df.Topic == args.topic) &
                                (df.Question.str.contains(args.course)) &
-                               (df.Question.str.contains(args.exam)))].order()
+                               (df.Question.str.contains(args.exam)) &
+                               (df.Question.str.contains(args.q)))].order()
         title += args.topic
         if not args.course == '/':
             title += ' from %s' % args.course
@@ -230,11 +251,13 @@ if __name__ == '__main__':
                 title += ' - %s' % args.exam
     else:
         df = pd.read_csv('raw_data.csv', header=None,
-                         names=['url', 'course', 'exam', 'q_short', 'num_votes',
-                                'rating', 'num_hints', 'num_sols'])
+                         names=['url', 'course', 'exam', 'q_short',
+                                'num_votes', 'rating', 'num_hints',
+                                'num_sols'])
         df['loc'] = df['url'].apply(file_loc_from_question_url)
         file_locs = df['loc'][((df.url.str.contains(args.course)) &
-                               (df.url.str.contains(args.exam)))].order()
+                               (df.url.str.contains(args.exam)) &
+                               (df.url.str.contains(args.q)))].order()
         if not args.course == '/':
             title += args.course
             if not args.exam == '/':
@@ -244,7 +267,10 @@ if __name__ == '__main__':
         print('ERROR: Must specify at least one of --topic, --course, --exam')
         sys.exit()
 
-    write_latex(list(file_locs), title, os.path.join('test'))
+    write_latex(list(file_locs), title, os.path.join('test'),
+                overwrite=args.overwrite)
+
+    print('done preparing. On to LaTeX!')
 
     directory = os.path.join('test')
     os.chdir(directory)

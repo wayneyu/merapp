@@ -4,6 +4,7 @@ case class Question(
                  course: String,
                  year: Int,
                  term: String,
+                 question: String,
                  statement: String,
                  hints: List[String],
                  sols: List[String])

@@ -14,7 +14,8 @@ GET     /team                       controllers.Application.team
 
 # GET     /question/*q             controllers.Application.question(q: String)
 
-GET     /questions/:course/:year/:q         controllers.Application.question(course: String, year: String, q: String)
+# GET     /questions/:course/:year/:q         controllers.Application.question(course: String, year: String, q: String)
+GET     /questions/:course/:term_year/:q         controllers.DBController.question(course: String, term_year: String, q: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

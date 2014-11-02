@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
   ws,
   //play-mongo-jackson-mapper,
   //"org.webjars" % "webjars-play" % "2.11.0",
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.0-SNAPSHOT"
+  //"org.reactivemongo" %% "play2-reactivemongo" % "0.10.2"
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.0.akka23"
   //"org.reactivemongo" %% "play2-reactivemongo" % "0.10.2"
   // WebJars pull in client-side web libraries
   //"org.webjars" %% "webjars-play" % "2.1.0",

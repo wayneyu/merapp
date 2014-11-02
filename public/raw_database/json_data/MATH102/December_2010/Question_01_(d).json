@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH102", 
+    "statement": "\\emph{For this short-answer question, only the answers (placed in the\nboxes) will be marked.}\n\nA certain bacteria culture starts with 1000 bacteria, and the number of\nbacteria doubles every 10 minutes. If this continues indefinitely, how\nlong (in hours) will it take for the population to reach 8 \u00c3\u0097\n10\\textsuperscript{15}?", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

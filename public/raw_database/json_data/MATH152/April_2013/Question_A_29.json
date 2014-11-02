@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_29", 
+    "course": "MATH152", 
+    "statement": "Suppose we run the following MATLAB code.\n\n\\texttt{a=1:2:5;}\\\\\\texttt{b=3:4:11;}\\\\\\texttt{A={[}a;b{]};}\n\nSpecify the matrix \\emph{A} that is produced by this code.", 
+    "year": 2013, 
+    "sols": [
+        "Following the hints, we can quickly see that\n\n$A = \\begin{bmatrix}\n1 & 3 & 5\\\\\n3 & 7 & 11\n\\end{bmatrix}$\n\nKeep in mind that the code b=3:4:11; gives us the second row that begins\nat 3, increments entries by 4 and then goes up to 11."
+    ], 
+    "hints": [
+        "Remember that a = x:y:z in MATLAB means create a vector a with first\nentry x, step size of y for entries across and stop when you exceed z.\nSo for example, the first line produces\n\n$\\begin{bmatrix}\n1 & 3 & 5\n\\end{bmatrix}$", 
+        "The line A = {[}a;b{]} tells the computer to make a matrix with \\emph{a}\non top then \\emph{b} underneath."
+    ]
+}

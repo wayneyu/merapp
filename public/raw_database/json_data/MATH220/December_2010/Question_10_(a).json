@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_10_(a)", 
+    "course": "MATH220", 
+    "statement": "Let $r\\in\\mathbb{R}$. Prove that if\n\n\\[\\lim_{n\\to\\infty}s_n=s\\]\n\nthen\n\n\\[\\lim_{n\\to\\infty}(r-s_n)=r-s.\\]", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

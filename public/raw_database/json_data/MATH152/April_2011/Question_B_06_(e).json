@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_06_(e)", 
+    "course": "MATH152", 
+    "statement": "Consider the linear systems described below. In cases (a)-(d), write a\n\\emph{single}, possible reduced row echelon form of the augmented matrix\nof the system.\n\nRepeat\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B6_(d)}{part\n(d)} (i.e. three equations in two unknowns with no solution) but in this\ncase only, list \\emph{all possible} corresponding reduced row echelon\nforms.", 
+    "year": 2011, 
+    "sols": [
+        "We want to continue with\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B6_(d)}{part\n(d)} but now find all matrices that produce no solution to 3 equations\nin 2 unknowns. We start with an augmented matrix in the form\n\n\\[\\left[\\begin{array}{cc|c}\n1  &  0  &  a\\\\\n0  &  1  &  b\\\\\nc  &  d  &  e\n\\end{array}\\right]\\]\n\nfor some numbers $a,b,c,d,e$. Notice we have put the matrix in reduced\nrow-echelon form up to the first two rows. We did this because we know\nthat if there were only two equations then we could find a unique\nsolution depending the values of $a$ and $b$. The problem now is for\nthose same $a,b$ that would work in the $2\\times{2}$ case we want to\nfind a condition on $e$ that creates no solution. Notice we can\nrow-reduce that last row as follows\n\n\\[\\left[\\begin{array}{cc|c}\n1  &  0  &  a\\\\\n0  &  1  &  b\\\\\nc  &  d  &  e\n\\end{array}\\right]\n\\stackrel{\\longrightarrow}{R3-cR1-cR2}\n\\left[\\begin{array}{cc|c}\n1  &  0  &  a\\\\\n0  &  1  &  b\\\\\n0  &  0  &  e-ca-db\n\\end{array}\\right]\\]\n\nwhere $R_i$ indicates an operation on row $i$. Notice \\textbf{if}\n$e=ca+db$ then we have a row of zeros in the matrix. This implies for a\nvector \\textbf{x} with components $x_1$ and $x_2$ that\n\n\\begin{align*}\nx_1&=a\\\\\nx_2&=b\\\\\n0x_2&=0\n\\end{align*}\n\nwhich would always hold true. Therefore, in this case there would be a\nsolution. As discussed in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B6_(d)}{part\n(d)} this means that the third equation was secretly a linear\ncombination of the first two equations and thus didn't really add\nanother constraint to the problem. Since we are seeking there to be\n\\textbf{no solution} we see then that we must require,\n\n\\[\\displaystyle{}e\\neq{}ac+bd.\\]"
+    ], 
+    "hints": [
+        "Recall there is only no solution if the third equation is not a linear\ncombination of the first two. I.e. how can you make sure that the third\nequation is not a linear combination of the first two?"
+    ]
+}

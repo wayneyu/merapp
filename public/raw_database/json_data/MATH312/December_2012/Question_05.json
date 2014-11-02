@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05", 
+    "course": "MATH312", 
+    "statement": "Show that if \\emph{a} and \\emph{b} are relatively prime integers, then\n$\\displaystyle a^{\\phi(b)}+ b^{\\phi(a)} \\equiv 1 \\mod{ab}$ . What is the\nmultiplicative inverse of $\\displaystyle 5^8$ modulo 16?", 
+    "year": 2012, 
+    "sols": [
+        "Euler's Theorem states that\n\n\\begin{align*}\na^{\\phi(b)} &\\equiv 1 \\mod{b} \\\\\nb^{\\phi(a)} &\\equiv 1 \\mod{a}\n\\end{align*}\n\nTranslating the above, there exist integers \\emph{s} and \\emph{t} such\nthat\n\n\\begin{align*}\na^{\\phi(b)} -1 &= bs\\\\\nb^{\\phi(a)} -1 &= at\n\\end{align*}\n\nTaking the products of the left hand sides of the equation and the right\nhand sides of the equation yields (below we have flipped the sides of\nthe equations)\n\n\\begin{align*}\nabst &= (a^{\\phi(b)} -1)(b^{\\phi(a)} -1) = a^{\\phi(b)}b^{\\phi(a)} - a^{\\phi(b)} - b^{\\phi(a)} + 1\n\\end{align*}\n\nAs $\\displaystyle \\phi(a)$ and $\\displaystyle \\phi(b)$ are at least one,\nwe have that\n\n\\begin{align*}\n0 &\\equiv  - a^{\\phi(b)} - b^{\\phi(a)} + 1 \\mod{ab}\n\\end{align*}\n\nand hence we get the required result. For the last part, we have\n\n$\\displaystyle 5^{8} \\equiv (5^{2})^{4} \\equiv 25^{4} \\equiv 9^{4} \\equiv (9^{2})^{2} \\equiv 81^{2} \\equiv 1^{2} \\equiv 1 \\mod{16}$\n\n(or easier, notice that $\\displaystyle \\phi(16) = 8$ so Euler's theorem\ngives the same result) Thus as the number is 1, its inverse it itself."
+    ], 
+    "hints": [
+        "For the first part, use Euler's Theorem. For the second part, simply\nevaluate it."
+    ]
+}

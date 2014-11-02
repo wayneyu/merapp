@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(c)", 
+    "course": "MATH101", 
+    "statement": "Determine, with explanation, whether the series\n\n\\[\\sum_{n=2}^{\\infty}\\frac{(-1)^{n}}{n(\\ln n)^{101}}\\]\n\nconverges absolutely, converges conditionally, or diverges.", 
+    "year": 2012, 
+    "sols": [
+        "We will use the integral test. Note that\n\n\\[\\int_2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\int_2^a \\frac{dx}{x\\ln(x)^{101}}\\]\n\nWe can calculate $\\int_2^a \\frac{dx}{x\\ln(x)^{101}}$ by substitution\nwith $u=\\ln x$ (then \\emph{du=(1/x)dx}) to get\n\n\\begin{align*}\n\\int_2^a \\frac{dx}{x\\ln(x)^{101}} &= \\int_{\\ln(2)}^{\\ln(a)} u^{-101}du \\\\\n&= \\left.-\\frac1{100u^{100}}\\right|_{\\ln(2)}^{\\ln(a)} \\\\\n&= -\\frac1{100}\\left(\\frac1{(\\ln(a))^{100}}-\\frac1{(\\ln(2))^{100}}\\right) \n\\end{align*}\n\nHence\n\n\\[\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\frac1{100}\\left(\\frac{1}{\\ln(2)^{100}}-\\frac{1}{\\ln(a)^{100}}\\right)=\\frac{1}{100\\ln(2)^{100}}\\].\n\nThis implies that the series converges absolutely by the integral test."
+    ], 
+    "hints": [
+        "Can you integrate $\\frac{1}{x(\\ln x)^{101}}$ ?"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_10", 
+    "course": "MATH221", 
+    "statement": "Find the inverses of $A$ and $AA^{T}$, where\n\n\\[A = \\begin{bmatrix}\n1& 3 & -1 \\\\ \n0 & 1& 2\\\\ \n0 &0 &1 \n\\end{bmatrix}\\]", 
+    "year": 2009, 
+    "sols": [
+        "(i) find inverse of $A$\n\nTo see if inverse matrix exists, we need to verify if determinant is not\nzero.\n\nMatrix is upper triangular, therefore we can simply take the product of\nthe diagonal entries as the determinant of the matrix, so\n$det(A) = 1*1*1 = 1 \\neq 0$\n\nTherefore, inverse matrix exists.\n\nWe need $A^{-1}A = I$, so with\n\n$\\left.\\begin{matrix}\n1 &3 &-1 \\\\ \n0 & 1 &2 \\\\ \n0 & 0&1 \n\\end{matrix}\\right|\n\\begin{matrix}\n1 &0 & 0\\\\ \n0& 1& 0\\\\ \n0&0 &1 \n\\end{matrix}$\n\n$R1+R3$ $R2-2R3$ $R1-3R2$\n\nthen we get,\n\n$\\left.\\begin{matrix}\n1 &0 & 0\\\\\n0& 1& 0\\\\\n0&0 &1\n\\end{matrix}\\right|\n\\begin{matrix}\n1 & -3 & 7 \\\\\n0 & 1 &-2 \\\\\n0 & 0&1\n\\end{matrix}$\n\nTherefore, inverse of A is $\\begin{bmatrix}\n1 & -3 & 7 \\\\\n0 & 1 &-2 \\\\\n0 & 0&1\n\\end{bmatrix}$\n\n(ii) Find inverse of $AA^{T}$ we get $AA^{T}=\n\\begin{bmatrix}\n1 &3 &-1 \\\\\n0 & 1 &2 \\\\\n0 & 0&1 \n\\end{bmatrix}\n\\begin{bmatrix}\n1 &0 &0 \\\\\n3 & 1 &0 \\\\\n-1 & 2&1 \n\\end{bmatrix}\n=\n\\begin{bmatrix}\n11 & 1 & -1 \\\\\n1 & 5 & 2 \\\\\n-1 & 2 & 1 \\\\\n\\end{bmatrix}$\n\nAgain, We need $A^{-1}A = I$ , so with\n\n$\\left.\\begin{matrix}\n11 & 1 & -1 \\\\\n1 & 5 & 2 \\\\\n-1 & 2 & 1 \\\\\n\\end{matrix}\\right|\n\\begin{matrix}\n1 &0 & 0\\\\ \n0& 1& 0\\\\ \n0&0 &1 \n\\end{matrix}$\n\nSwap 2nd and the 1st rows, eliminate 1st column R2-11R1 R3+R1 R2 divided\nby -54, eliminate 2nd column R3-7R2 R1-5R2 R3 divided by (1/54),\neliminate 3rd column R1-(-7/54)R3 R2-(23/54)R3\n\nyields\n\n$\\left.\\begin{matrix}\n1 &0 & 0\\\\\n0& 1& 0\\\\\n0&0 &1\n\\end{matrix}\\right|\n\\begin{matrix}\n1 & -3 & 7 \\\\\n-3 & 10 &-23 \\\\\n7 & -23&54\n\\end{matrix}$\n\nThus the inverse of $AA^{T}$ is $\\begin{bmatrix}\n1 & -3 & 7 \\\\\n-3 & 10 &-23 \\\\\n7 & -23&54\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

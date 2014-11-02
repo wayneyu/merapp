@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle f'(x) = kf(x)$ for some positive constant \\emph{k}.\n\\end{enumerate}", 
+    "year": 2013, 
+    "sols": [
+        "Any exponential function of the form $f(x) = a^x$, where $a$ is a real\nnumber, will satisfy the equation above because\n$\\displaystyle f'(x) = \\ln(a)a^x = kf(x)$ for \\emph{k = ln(a)}. One\nexample would be our favorite $f(x) = e^x$. Here \\emph{k = ln(e) = 1}\nand a graph is shown below.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110_april2013_Question2d_solution.jpg}\n\\end{description}"
+    ], 
+    "hints": [
+        "What function is the same as its derivative? This question is asking you\nto draw an example of this type of function."
+    ]
+}

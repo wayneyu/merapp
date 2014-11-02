@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH253", 
+    "statement": "Let $\\displaystyle f(x,y) = x^{4} + xy - 5y^{2}$. Consider the\ndirectional derivative of $f$ at the point $(a,\\,a^{3})$ in the\ndirection $<3/5,\\,4/5>$. For what values of $a$ is this directional\nderivative equal to zero?", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

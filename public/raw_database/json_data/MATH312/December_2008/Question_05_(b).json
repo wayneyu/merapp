@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH312", 
+    "statement": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(b)} To obtain \\emph{P} from \\emph{C}, Alice first computes an\ninverse $\\displaystyle d \\in \\mathbb{Z}$ of \\emph{e} modulo\n$\\displaystyle \\phi(n)$, since she created the key, she knows that\n$\\displaystyle 1271 = 31 \\cdot 41$ (in fact, the prime factorization of\nn can easily be found since it is so small). Compute such a \\emph{d}.", 
+    "year": 2008, 
+    "sols": [
+        "We use the Euclidean algorithm to find an inverse. We do this with the\nnumbers 1189 and\n\n$\\displaystyle \\phi(n) = \\phi(1271) = \\phi(31)\\phi(41) = 30\\cdot 40 = 1200$.\n\nThis gives\n\n\\begin{align*}\n1200 &= 1189(1) + 11\\\\\n1189 &= 11(108) + 1\n\\end{align*}\n\nand back substituting gives\n\n\\begin{align*}\n1 &= 1189 - 11(108)\\\\\n1 &= 1189 - (1200-1189(1))(108)\\\\\n1 &= 1189(109) - 1200(108)\\\\\n\\end{align*}\n\nHence the value of \\emph{d} can be chosen to be $\\displaystyle d = 109$\nsince $\\displaystyle 1189(109) \\equiv 1 \\mod{\\phi(1271)}$."
+    ], 
+    "hints": [
+        "Euclidean algorithm to the rescue! Do this with the number\n$\\displaystyle \\phi(n)$ and 1189 and then back substitute."
+    ]
+}

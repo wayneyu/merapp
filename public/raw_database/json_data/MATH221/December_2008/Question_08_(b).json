@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_08_(b)", 
+    "course": "MATH221", 
+    "statement": "True or false (explain your answer): Let $T$ be the transformation of\n$\\mathbb{R}^2\\rightarrow \\mathbb{R}^2$ given by\n$T\\begin{pmatrix} x\\\\ y \\end{pmatrix}=\\begin{pmatrix} x+y\\\\ x-y \\end{pmatrix}$.\nThen $T$ is a linear transformation.", 
+    "year": 2008, 
+    "sols": [
+        "The linear transformation will have the properties, such that\n$T(cv)=cT(v)$ and $T(v_1+v_2)=T(v_1)+T(v_2)$. We check these properties\n\n$T(c\\begin{pmatrix} x\\\\ y \\end{pmatrix})=T\\begin{pmatrix} cx\\\\ cy \\end{pmatrix}=\\begin{pmatrix} cx+cy\\\\ cx-cy \\end{pmatrix}=\\begin{pmatrix} c(x+y)\\\\ c(x-y) \\end{pmatrix}=c\\begin{pmatrix} x+y\\\\ x-y \\end{pmatrix}=cT\\begin{pmatrix} x\\\\ y \\end{pmatrix}$,\n\n\\begin{align*}\nT(\\begin{pmatrix} x_1\\\\ y_1 \\end{pmatrix}+\\begin{pmatrix} x_2\\\\ y_2 \\end{pmatrix})&=\nT\\begin{pmatrix} x_1+x_2\\\\ y_1+y_2 \\end{pmatrix}\\\\\n&=\\begin{pmatrix} x_1+x_2+y_1+y_2\\\\ x_1+x_2-y_1-y_2 \\end{pmatrix}\\\\\n&= \\begin{pmatrix} x_1+y_1\\\\ x_1-y_1 \\end{pmatrix}+\\begin{pmatrix} x_2+y_2\\\\ x_2-y_2 \\end{pmatrix}\\\\\n&= T\\begin{pmatrix} x_1\\\\ y_1 \\end{pmatrix}+T\\begin{pmatrix} x_2\\\\ y_2 \\end{pmatrix}.\n\\end{align*}\n\nTherefore, $T$ is a linear transformation."
+    ], 
+    "hints": []
+}

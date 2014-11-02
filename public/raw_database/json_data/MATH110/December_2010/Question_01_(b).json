@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Determine whether each statement is true. If it is, explain why;\nif not, give a counter-example.}\n\nNot all continuous functions are differentiable.", 
+    "year": 2010, 
+    "sols": [
+        "The most common reasons that a function $f$ is non-differentiable at a\npoint \\emph{x = a} are as follows:\n\na) $f$ has a sharp corner (called a cusp) at \\emph{x = a}, where the\ntangent lines from both sides of \\emph{a} converge to different values.\n\nb) $f$ has a vertical tangent line at \\emph{x = a}, that is, the slope\nof the tangent line at \\emph{a} is infinity.\n\nBoth of these conditions can occur for continuous functions. For\nexample:\n\na) The function $f(x) = |x|$ is continuous, but has a sharp corner at\n\\emph{x = 0}.\n\nb) The function $f(x) = \\sqrt[3]{x}$ is continuous, but has a vertical\ntangent line at \\emph{x = 0}.\n\nThus it is clear that there are continuous functions that are not\ndifferentiable, so the statement Not all continuous functions are\ndifferentiable is true. To prove this, it is sufficient to give an\nexample of a function that is continuous but not differentiable, like\none of the functions shown above."
+    ], 
+    "hints": [
+        "If you think the statement is true, that is not all continuous function\nare differentiable, you would need to give an example showing a\ncontinuous function that is not differentiable.\n\nIf you believe the statement is false, that is all continuous functions\nare differentiable, you would need to show that given any continuous\nfunction, then you must have that it is differentiable {[}everywhere{]}.\n\nAs always, it is good to try a few examples to get a feeling for this\nproblem first before trying to answer it.", 
+        "Think about what makes a function non-differentiable. Is there a\nfunction that has this property but is still continuous?"
+    ]
+}

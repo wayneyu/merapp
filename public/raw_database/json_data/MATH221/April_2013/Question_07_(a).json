@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH221", 
+    "statement": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear\ntransformation that reflects points through the line \\emph{3x = 4y}.\n\n\\textbf{a)} Find the eigenvalues and eigenvectors of the standard matrix\n\\emph{A} of \\emph{T}. (Note: In order to do this, you do not need to\nevaluate \\emph{A}.)", 
+    "year": 2013, 
+    "sols": [
+        "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Fig_221_2013_7anew.jpg}\n\\caption{Figure for reflection A}\n\\end{figure}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  For any non-trivial reflection, the eigenvalues are always \\emph{1}\n  and \\emph{-1}.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  For the eigenvalue 1, we can pick any vector on the line itself. Such\n  a vector will not be moved by the linear transformation. So, for us,\n  we pick $\\left[ \\begin{array}{c}4 \\\\ 3 \\end{array} \\right]$ as an\n  eigenvector to the eigenvalue 1. Note that \\emph{(x,y) = (4,3)} is a\n  point on the line \\emph{3x=4y} since \\emph{3(4)=4(3)}.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The eigenvalue of \\emph{-1} comes from picking a vector in the line\n  that is perpendicular (i.e. orthogonal) to the line $4y = 3x$. Any\n  such vector will simply change its sign, thus will correspond to the\n  eigenvalue \\emph{-1}. We choose\n  $\\left[ \\begin{array}{c} -3 \\\\ 4 \\end{array} \\right]$ as an\n  eigenvector to the eigenvalue -1.\n\\end{itemize}"
+    ], 
+    "hints": [
+        "Draw a picture which illustrates what the reflection does to a few\nexample vectors.", 
+        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  What does the reflection do to a vector that is on the line $4y = 3x$?\n\\item\n  What does the reflection do to a vector that is orthogonal to the line\n  $4y=3x$?\n\\end{itemize}"
+    ]
+}

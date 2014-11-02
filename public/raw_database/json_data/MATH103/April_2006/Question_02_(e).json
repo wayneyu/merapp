@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(e)", 
+    "course": "MATH103", 
+    "statement": "The Taylor series for the function $\\displaystyle \\frac{1}{1 + x^{2}}$\naround $x=0$ is\n\n$\\displaystyle \\frac{1}{1 + x^{2}} = \\sum_{n=0}^{\\infty}(-1)^{n}x^{2n} = 1 - x^{2} + x^{4} - x^{6} + x^{8} -...$\n\nUse this fact to find the Taylor series for $\\displaystyle \\arctan(x)$\naround $x=0$.", 
+    "year": 2006, 
+    "sols": [
+        "Notice that $\\frac{1}{1+x^2}$ is the derivative of\n$\\displaystyle \\arctan(x)$. Take the integral of its Taylor Series to\nfind the Taylor Series for $\\displaystyle \\arctan(x)$.\n\n\\begin{align*}\n\\arctan(x) &= \\int \\frac{1}{1+x^2}\\,dx \\\\\n&= \\int \\left(1-x^2+x^4-x^6+x^8\\mp\\dots\\right)\\,dx \\\\\n&= x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\frac{x^7}{7}+\\frac{x^9}{9} \\mp \\dots\n\\end{align*}\n\nLooking at the patterns in these terms, you can see that\n\n\\[\\arctan(x) = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\\]"
+    ], 
+    "hints": [
+        "Notice that $\\frac{1}{1+x^2}$ is the derivative of\n$\\displaystyle \\arctan(x)$.", 
+        "Take the integral of the Taylor Series of $\\frac{1}{1+x^2}$ to find the\nTaylor Series for $\\displaystyle \\arctan(x)$."
+    ]
+}

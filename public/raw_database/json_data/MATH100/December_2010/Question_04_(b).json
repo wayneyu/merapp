@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH100", 
+    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nLet\n\n\\[f(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x & \\text{if } x \\geq 1 \\\\\n2-x^{4} & \\text{if } x < 1 \n\\end{cases}\\]\n\nNOTE: Another notation for \\emph{tan}\\textsuperscript{-1}(\\emph{x}) is\n\\emph{arctan}(\\emph{x})\n\nDetermine the equations of any asymptotes (horizontal, vertical or\nslant).", 
+    "year": 2010, 
+    "sols": [
+        "By inspection of the function, we can see that it is defined everywhere,\nhence there are no possibilities for vertical asymptotes.\n\nTo check if there are any horizontal asymptotes, we must check the\nbehaviour of the function $f(x)$ as \\emph{x} gets very large (both\npositively and negatively). So we evaluate\n\n\\[\\lim_{x \\to +\\infty}f(x), \\quad \\lim_{x \\to -\\infty}f(x).\\]\n\nEvaluating the limits gives\n\n\\begin{align*}\n\\lim_{x \\to -\\infty}f(x) &= \\lim_{x \\to -\\infty}2 - x^{4} = -\\infty \\\\\n\\lim_{x \\to \\infty}f(x) &= \\lim_{x \\to \\infty}\\frac{4}{\\pi}\\tan^{-1}(x) = \\frac{4}{\\pi}\\cdot\\frac{\\pi}{2} = 2\n\\end{align*}\n\nNote: that\n\n\\[\\lim_{x \\to +\\infty} \\tan^{-1}(x) = \\frac{\\pi}{2}\\] since\n\n\\[\\lim_{x \\to \\pi/2} \\tan(x) = +\\infty\\]\n\n(Or draw a trigonometric circle to convince yourself of this).\n\nTherefore, there is a horizontal asymptote on the right, given by the\nline \\emph{y} = 2. It describes the behaviour of the function for large\npositive \\emph{x}.\n\nFinally, we check for slant asymptotes. Having already found an\nasymptote on the right (a slant asymptote of slope 0 if you will) we\nhave to check on the left. Since on the left, the function is a\npolynomial of degree 4, we can directly conclude there is no slant\nasymptote.\n\nMore formally, a function $f$ has a slant asymptote of equation \\emph{y} =\n\\emph{mx} + \\emph{h} if and only if\n\n\\[\\lim_{x \\to \\infty} \\frac{f(x)}{x} = m \\qquad \\lim_{x \\to \\infty} f(x)-mx = h\\]\n\n(For a polynomial of degree 2 or more, the first limit never converges).\n\nSo all in all, there are no vertical asymptotes, no asymptotes\n(horizontal or slant) on the left and a horizontal asymptote on the\nright at \\emph{y} = 2."
+    ], 
+    "hints": [
+        "Look up the definitions for vertical and horizontal asymptotes if you\nare having trouble."
+    ]
+}

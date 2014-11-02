@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(f)", 
+    "course": "MATH307", 
+    "statement": "A real matrix $A_{5\\times 5}$ is brought into its Jordan canonical form\n\n\\[B = \\begin{pmatrix}\n1& 1 &0 & 0 &0 \\\\\n0&1 &0 &0 &0 \\\\\n0& 0 &0 &0 &0 \\\\\n0 &0 &0 &-1 &0 \\\\\n0 &0 &0 &0 &-1\n\\end{pmatrix}\\]\n\nby a matrix $S_{5\\times 5}$, i.e. $\\displaystyle A = SBS^{-1}$. Answer\nthe questions below, substantiate all your statements.\n\n\\textbf{(f)} How should the matrix \\emph{S} be computed? Write an\nequation for each column, state whether a unique solution is expected\nand explain.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

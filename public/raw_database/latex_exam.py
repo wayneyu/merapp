@@ -27,22 +27,26 @@ def writeLatex(course, term, year):
               '\usepackage{graphicx}\n'
               '\usepackage{fixltx2e}\n'
               '\usepackage{hyperref}\n'
-              '\usepackage{color}\n'
-              '\\newcommand{\R}{\mathbb{R}}'
-              '\\newcommand{\C}{\mathbb{C}}'
-              '\\newcommand{\N}{\mathbb{N}}'
-              '\\newcommand{\Z}{\mathbb{Z}}'
-              '\\setcounter{secnumdepth}{-2}'
+              '\usepackage[usenames,dvipsnames,svgnames]{xcolor}\n'
+              '\usepackage{longtable}\n'
+              '\\newcommand{\R}{\mathbb{R}}\n'
+              '\\newcommand{\C}{\mathbb{C}}\n'
+              '\\newcommand{\N}{\mathbb{N}}\n'
+              '\\newcommand{\Z}{\mathbb{Z}}\n'
+              '\\DeclareMathOperator{\\arcsec}{arcsec}\n'
+              '\\DeclareMathOperator{\\arccot}{arccot}\n'
+              '\\DeclareMathOperator{\\arccsc}{arccsc}\n'
+              '\\setcounter{secnumdepth}{-2}\n'
               '\\begin{document}\n')
 
-    out.write('\section{%s - %s %s}' % (course, term, year))
+    out.write('\section{%s - %s %s}\n' % (course, term, year))
     out.write('\\tableofcontents\n')
     for f in onlyfiles:
         fd = open(os.path.join(directory, f), 'r')
         text = fd.read()
         fd.close()
         data = json.loads(text)
-        qname = data['question'].replace('_', ' ')
+        qname = f.replace('_', ' ').replace('.json', '')
         out.write('\\section{%s}' %
                   qname.replace('_',
                                 '').replace('Question 0',

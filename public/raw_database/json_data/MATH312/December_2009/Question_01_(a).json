@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH312", 
+    "statement": "Show that $\\displaystyle (3!)^{n}$ divides $\\displaystyle (3n)!$ for\nevery positive integer \\emph{n}.", 
+    "year": 2009, 
+    "sols": [
+        "The problem is equivalent to showing that $\\displaystyle 6^{n}$ divides\n$\\displaystyle (3n)!$. So we must show that $\\displaystyle (3n)!$\ncontains \\emph{n} copies of both 2 and 3. Now, notice that in\n$\\displaystyle (2n)! < (3n)!$ we have that $\\displaystyle (2n)!$\ncontains \\emph{2n} consecutive numbers of which \\emph{n} are even. Hence\n$\\displaystyle 2^{n} \\mid (2n)! \\mid (3n)!$. Now, notice that\n$\\displaystyle (3n)!$ contains \\emph{3n} consecutive numbers and so\n\\emph{n} of these must be divisible by 3 (one in every 3 consecutive\nnumbers is divisible by 3. Hence $\\displaystyle 3^{n} \\mid (3n)!$ and\ncombining these results (since 2 and 3 are coprime) gives us our result.", 
+        "For a proof by induction, notice that\n$\\displaystyle (3!)^{1} = 6 \\mid 6 = (3n)!$. Assume that\n$\\displaystyle 6^{n} = (3!)^{n} \\mid (3n)!$. For $\\displaystyle n+1$, we\nhave\n\n$\\displaystyle (3!)^{n+1} = 6 \\cdot 6^{n}$.\n\nNow, $\\displaystyle 6^{n} \\mid (3n)!$ and\n$\\displaystyle (3(n+1))! = (3n+3)! = (3n+3)(3n+2)(3n+1)(3n)!$. Thus, it\nsuffices to show that $\\displaystyle 6 \\mid (3n+3)(3n+2)(3n+1)$. Clearly\n$\\displaystyle 3 \\mid (3n+3)$ and since this a product of three\nconsecutive numbers, one must be even and so 2 also divides this\nproduct. Thus $\\displaystyle 6^{n+1} \\mid (3n+3)!$ and this completes\nthe proof."
+    ], 
+    "hints": [
+        "Remember that $\\displaystyle 3! = 6$. An induction argument works or a\nsimple counting argument will suffice."
+    ]
+}

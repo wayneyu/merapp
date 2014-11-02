@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_03_(e)", 
+    "course": "MATH307", 
+    "statement": "Let\n\n\\[S = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\]\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(e)} Let \\emph{Q = I - P}. What kind of matrix is \\emph{Q}? What\nare \\emph{N(Q)} and \\emph{R(Q)}?", 
+    "year": 2012, 
+    "sols": [
+        "First, we show that \\emph{Q} is a projection, that is\n\\emph{Q\\textsuperscript{2} = Q}:\n\n\\[\\displaystyle\nQ^2 = (I-P)(I-P) = I-P-P+P^2 = I-P-P+P = I-P = Q\\]\n\nsince \\emph{P\\textsuperscript{2} = P} because \\emph{P} is a projection.\n\nNext we show that \\emph{N(Q) = R(P)}. So let \\emph{x} be in the\nnullspace of \\emph{Q}. Then \\emph{0 = Qx = (I-P)x = x-Px} and hence\n\\emph{Px = x} which implies in particular that \\emph{x} is in the range\nof \\emph{P}. Next, let \\emph{x} be in the range of \\emph{P}, and choose\n\\emph{y} such that \\emph{x = Py}. Multiplying both sides with \\emph{P}\nyields \\emph{Px = P\\textsuperscript{2}y = Py = x}, which we can rewrite\nas \\emph{(I-P)x = 0} and thus \\emph{x} is in the nullspace of \\emph{Q}.\nTherefore \\emph{N(Q) = R(P)}. But \\emph{P} was chosen such that\n\\emph{R(P) = S} and hence\n\n\\[\\displaystyle\nN(Q) = R(P) = S\\]\n\nInterchanging the roles of \\emph{P} and \\emph{Q}, after all \\emph{Q =\nI-P} implies that \\emph{P = I-Q}, we obtain that \\emph{R(Q) = N(P)}. We\nclaim that \\emph{N(P) = S\\textsuperscript{T}}. This is quick since\n\\emph{Px = 0} is equivalent to saying that \\emph{x} has no component in\n\\emph{S} which is equivalent to saying that \\emph{x} is orthogonal to\n\\emph{S}. From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(a)}{part\n(a)} we remember that the vector \\emph{{[}1, 1, 1{]}\\textsuperscript{T}}\nspans the orthogonal complement of \\emph{S} and hence\n\n\\[\\displaystyle\nR(Q) = S^T = \\mathrm{span}\\left\\{\\begin{bmatrix} 1 \\\\ 1 \\\\ 1\\end{bmatrix}\\right\\}\\]"
+    ], 
+    "hints": [
+        "Use that \\emph{P\\textsuperscript{2} = P} to show that\n\\emph{Q\\textsuperscript{2} = Q}, that is, \\emph{Q} is also a projection.", 
+        "In fact, \\emph{Q} is called the \\emph{complementary projection of P}. As\nsuch \\emph{Q} swaps the range and nullspace of \\emph{P} (why?)."
+    ]
+}

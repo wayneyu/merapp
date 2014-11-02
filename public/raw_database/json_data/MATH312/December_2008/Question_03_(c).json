@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(c)", 
+    "course": "MATH312", 
+    "statement": "Determine all integers \\emph{x} that satisfy the following system of\nlinear congruences.\n\n\\begin{align*}\nx &\\equiv 3 \\mod{6}\\\\\nx &\\equiv 1 \\mod{10}\n\\end{align*}", 
+    "year": 2008, 
+    "sols": [
+        "The conditions\n\n\\begin{align*}\nx &\\equiv 3 \\mod{6}\\\\\nx &\\equiv 1 \\mod{10}\n\\end{align*}\n\ngive us that there is a positive integer \\emph{s} such that\n\n\\begin{align*}\nx &= 3 + 6s.\n\\end{align*}\n\nSubstituting into the second equation yields\n\n\\begin{align*}\n3 + 6s &\\equiv 1 \\mod{10}.\n\\end{align*}\n\nIsolating for 0 gives\n\n\\begin{align*}\n2(3s +1)&\\equiv 0 \\mod{10}.\n\\end{align*}\n\nHence, we have that 5 must divide the term in the bracket, that is\n\n\\begin{align*}\n3s+1 \\equiv 0 \\mod{5}\n\\end{align*}\n\nThis gives\n\n\\begin{align*}\n3s &\\equiv -1 \\mod{5}.\n\\end{align*}\n\nMultiplying both sides by 2 gives\n\n\\begin{align*}\ns &\\equiv -2 \\equiv 3 \\mod{5}.\n\\end{align*}\n\nHence $\\displaystyle s = 3 + 5t$ for some integer \\emph{t}. Thus,\n\n\\begin{align*}\nx &= 3 + 6s = 3 + 6(3 + 5t) = 3 + 18 + 30t = 21 + 30t\n\\end{align*}\n\nand hence all solutions are given by\n\n$\\displaystyle x \\equiv 21 \\mod{30}$."
+    ], 
+    "hints": [
+        "It's a trap! Be careful about using the Chinese Remainder Theorem here\nsince 6 and 10 are not coprime.\n\nThat being said, the same type of idea can be used to get a solution so\nlong as you isolate for 0 and factor at the key step where you cannot\ninvert a non coprime element."
+    ]
+}

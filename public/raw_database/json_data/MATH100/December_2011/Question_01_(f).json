@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH100", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind the derivative of\n\n\\[f(x)=\\frac{x}{x^2-1}\\] Please simplify your answer.", 
+    "year": 2011, 
+    "sols": [
+        "Using the quotient rule we compute\n\n\\begin{align*}\n\\left(\\frac{x}{x^2-1}\\right)' &= \\frac{(1)(x^2-1)-(2x)(x)}{(x^2-1)^2} \\\\\n&= \\frac{x^2-1-2x^2}{(x^2-1)^2} \\\\\n&= -\\frac{x^2+1}{(x^2-1)^2}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Use the quotient rule.", 
+        "The quotient rule is\n\n\\[\\left(\\frac{g}{h}\\right)' = \\frac{g'h-h'g}{h^2}\\]"
+    ]
+}

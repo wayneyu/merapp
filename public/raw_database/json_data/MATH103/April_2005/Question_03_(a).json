@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the cumulative distribution function $\\displaystyle F(x)$ on\n$\\displaystyle 0 \\leq x \\leq 10$ shown below.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103April2005Q3.jpg}\n\\caption{MATH103April2005Q3.jpg}\n\\end{figure}\n\n(a) Sketch the probability density function $\\displaystyle p(x)$.", 
+    "year": 2005, 
+    "sols": [], 
+    "hints": []
+}

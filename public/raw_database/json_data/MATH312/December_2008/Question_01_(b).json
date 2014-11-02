@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is even, then \\emph{a} is not a prime.", 
+    "year": 2008, 
+    "sols": [
+        "The answer is \\textbf{false}. The number 2 is an even prime (the only\neven prime)."
+    ], 
+    "hints": [
+        "No hint this time. This is a gimmie on this exam."
+    ]
+}

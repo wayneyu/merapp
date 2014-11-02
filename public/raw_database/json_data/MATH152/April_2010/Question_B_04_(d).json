@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_04_(d)", 
+    "course": "MATH152", 
+    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(d)}\n\n\\[\\left[\\begin{array}{ccc}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{array}\\right. \\left| \\begin{array}{c} 5 \\\\ -1 \\\\ 2 \\end{array}\\right]\\]", 
+    "year": 2010, 
+    "sols": [
+        "Since the reduced row form of the matrix leads to the identity we know\nthat there is one unique solution and it is the values in the augmented\npart of the matrix. Therefore \\emph{x}\\textsubscript{1} = 5,\n\\emph{x}\\textsubscript{2} = -1, and \\emph{x}\\textsubscript{3} = 2."
+    ], 
+    "hints": [
+        "When the reduced row form of the matrix is the identity matrix, what do\nyou know?"
+    ]
+}

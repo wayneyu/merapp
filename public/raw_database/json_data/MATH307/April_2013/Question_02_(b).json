@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH307", 
+    "statement": "TRUE or FALSE: Eigenvectors for distinct eigenvalues are orthogonal for\na real symmetric matrix. Justify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "True, because:\n\n$\\lambda_2 \\langle x_{1},x_2 \\rangle$\n$= \\langle x_1,\\lambda_2 x_2 \\rangle$ $= \\langle x_1,A x_2 \\rangle$\n$= \\langle A^* x_1,x_2 \\rangle$ $= \\langle A x_1,x_2 \\rangle$\n\nBecause the matrix is hermitian\n\n$= \\langle \\lambda_1 x_1,x_2 \\rangle$\n$= \\overline{\\lambda_1} \\langle x_1,x_2 \\rangle$\n$= \\lambda_1 \\langle x_1,x_2 \\rangle$\n\nBecause hermitian matrices have real eigenvalues. So\n\n$\\lambda_1 \\langle x_1,x_2 \\rangle = \\lambda_2 \\langle x_1,x_2 \\rangle$.\n\nGiven that $\\lambda_1 \\neq \\lambda_2$, this can only be true if\n$\\langle x_1,x_2 \\rangle = 0$"
+    ], 
+    "hints": []
+}

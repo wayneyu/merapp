@@ -1,8 +1,14 @@
 {
     "term": "December", 
+    "question": "Question_04_(a)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nUse Newton's method with an initial approximation of\n$\\displaystyle x_1 = -1$ to find $\\displaystyle x_2$, where\n$\\displaystyle x_2$ is the second approximation to the root of the\nequation $x^7 + 4 = 0$.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "Newton's method is defined by $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$,\nwhere $x_n$ is the $n$-th approximation to a root of $f$.\n\nWe are given that $x_1 = -1~$. Applying the equation above,\\\\\\\\\n\\begin{align*}\nx_{1+1} &= x_1 - \\frac{f(x_1)}{f'(x_1)}\n\\\\ x_2 &= -1 - \\frac{f(-1)}{f'(-1)}\n\\\\ &= -1 - \\frac{(-1)^7 + 4}{7(-1)^6}\n\\\\ &= -1 - \\frac{-1 + 4}{7\\cdot1}\n\\\\ &= {\\color{blue} -\\frac{10}{7}}\\end{align*}"
+    ], 
+    "hints": [
+        "Newton's method involves drawing the tangent line of a function at a\ncertain x-value.", 
+        "The $x$-intercept of the linear approximation at $x_n$ serves as\n$x_{n+1}$."
+    ]
 }

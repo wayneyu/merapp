@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_04_(a)", 
+    "course": "MATH152", 
+    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(a)}\n\n\\[\\left[\\begin{array}{ccc}0 & 1 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{array}\\right. \\left| \\begin{array}{c} 0 \\\\ 0 \\\\ 0 \\end{array}\\right]\\]", 
+    "year": 2010, 
+    "sols": [
+        "Since the last two rows are zeros and the augmented part is zero we have\ntwo variables that are free parameters. Since the first row tells us\nthat x\\_2=0 then we have that x\\_1 and x\\_3 are free. Therefore the two\nnull vectors are\n\n\\[\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}\\]\n\nand\n\n\\[\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\\]\n\nso therefore the solution is\n\n\\[\\mathbf{x}=s\n\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\\]\n\nand there are an infinite number of solutions."
+    ], 
+    "hints": [
+        "Recall that if the matrix has a row of zeros then the corresponding\nvalue in the augmented part of the matrix must be zero or there is no\nsolution."
+    ]
+}

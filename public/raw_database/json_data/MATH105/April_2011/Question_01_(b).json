@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH105", 
+    "statement": "Find the value of the following definite integral:\n\n\\[\\int_0^{\\pi/2} \\cos^3(x)\\sin^2(x) \\, dx\\]", 
+    "year": 2011, 
+    "sols": [
+        "We will first compute the indefinite integral and evaluate our results\nat the boundaries of the integral to get the final result.\n\nThe first step is to split a $\\cos(x)$-factor from $\\cos^3(x)$ in the\nintegrand:\n\n\\[\\int \\cos^3(x)\\sin^2(x) \\, dx = \\int\\cos(x)\\cos^2(x)\\sin^2(x) \\, dx.\\]\n\nNow we use the trigonometric Pythagoras to write\n$\\cos^2(x) = 1 - \\sin^2(x)$ and arrive at\n\n\\[\\int\\cos(x)\\cos^2(x)\\sin^2(x) \\, dx = \\int \\cos(x)(1 - \\sin^2(x))\\sin^2(x) \\, dx.\\]\n\nThe next step is to use the substitution rule with $u = \\sin(x)$. This\nimplies $du/dx = \\cos(x)$ or equivalently $dx = du/\\cos(x)$.\nSubstituting this into the integral yields\n\n\\begin{align*}\n\\int \\cos(x)(1 - \\sin^2(x))\\sin^2(x) \\, dx &= \\int \\cos(x)(1-u^2)u^2\\, \\frac{du}{\\cos(x)} \\\\\n&= \\int (1-u^2)u^2 \\, du \\\\\n&= \\int u^2 - u^4 \\, du \\\\\n&= \\frac{u^3}{3} - \\frac{u^5}{5} + C.\n\\end{align*}\n\nRewriting this integral in terms of $x$ by using the substitution\nequation $u = \\sin(x)$ results in\n\n\\[\\int \\cos^3(x)\\sin^2(x) \\, dx = \\frac{\\sin^3(x)}{3} - \\frac{\\sin^5(x)}{5} + C.\\]\n\nTherefore, we can compute our original definite integral as follows:\n\n\\begin{align*}\n\\int_0^{\\pi/2} \\cos^3(x)\\sin^2(x) \\, dx &= \\left(\\frac{\\sin^3(x)}{3} - \\frac{\\sin^5(x)}{5}\\right.\\Bigr|_0^{\\pi/2} \\\\\n&= \\left(\\frac{\\sin^3(\\pi/2)}{3} - \\frac{\\sin^5(\\pi/2)}{5}\\right) - \\left(\\frac{\\sin^3(0)}{3} - \\frac{\\sin^5(0)}{5}\\right) \\\\\n&= \\left(\\frac{1}{3} - \\frac{1}{5}\\right) - \\left( \\frac{0}{3} - \\frac{0}{5}\\right) \\\\\n&= \\frac{2}{15}.\n\\end{align*}"
+    ], 
+    "hints": [
+        "The power of $\\cos \\, x$ is odd. Is there a strategy that would be\nuseful?"
+    ]
+}

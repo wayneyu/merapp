@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01", 
+    "course": "MATH215", 
+    "statement": "Solve the initial value problem:\n\n$\\displaystyle \\frac{dy}{dx} = \\frac{e^{y}}{x+2}$\n\nsubject to\n\n$\\displaystyle y(0) = 0, x \\geq 0$\n\nAlso, determine the largest interval of positive \\emph{x} where this\nsolution exists.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

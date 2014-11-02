@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH103", 
+    "statement": "Evaluate the following integral.\n\n$\\displaystyle \\int \\frac{1}{(x-5)(x+1)}\\,dx$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

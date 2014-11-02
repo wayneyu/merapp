@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(c)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nFind all \\emph{x-} and \\emph{y-}intercepts of $\\displaystyle f$, if they\nexist.", 
+    "year": 2010, 
+    "sols": [
+        "The x-intercepts of $f(x)$ are all points of the form $(a, 0)$, that is,\nall points where $y = 0$. To find these x-values, we simply set the\nfunction $f(x) = 0$ and solve for $x$.\n\n\\begin{align*}\n\\frac{x+1}{x-1}&= 0 \\\\\nx + 1 &= 0 \\\\\nx &= -1 \\end{align*}\n\nSo $f(x)$ has an x-intercept at $(-1, 0)$.\n\nThe y-intercept of $f(x)$ is the point of the form $(0, b)$, that is,\nwhere $x = 0$. To find the y-intercept therefore, we simply plug $x = 0$\ninto the function to find the y-value.\n\n$f(0) = \\frac{0+1}{0-1} = \\frac{1}{-1} = -1$\n\nSo the y-intercept is $(0, -1)$."
+    ], 
+    "hints": [
+        "What is the y-coordinate of an x-intercept? How about the x-coordinate\nof a y-intercept? Knowing this, how can you find the other coordinate of\neach kind of intercept?"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_04_(c)", 
+    "course": "MATH307", 
+    "statement": "Consider the real matrix\n\n\\[A = \\begin{bmatrix}\n2 & 1 \\\\\n-8 & 2 \n\\end{bmatrix}\\]\n\nDiscuss the long term behaviour of the solutions of\n$\\vec{x}' = A\\vec{x}$.", 
+    "year": 2006, 
+    "sols": [
+        "Since from (b) we solved:\n\n$\\vec{x}' = e^{2it}\n\\begin{bmatrix}\n1\\\\\n-2 + 2i\n\\end{bmatrix}\n= c_1\n\\begin{bmatrix}\n\\cos(2t)\\\\\n-2\\cos(2t) - 2\\sin(2t)\n\\end{bmatrix}\n+ c_2\n\\begin{bmatrix}\n\\sin(2t))\\\\\n2\\cos(2t) - 2\\sin(2t)\n\\end{bmatrix}$\n\nWe can see that since $\\vec{x}' = e^{2it}$, we get an ellipsoidal\nsolution (as $\\lambda = \\pm ib = \\pm 2i$ is pure imaginary) with the\norigin being the centre point. By taking\n$t = 0, \\frac{\\pi}{4}, \\frac{\\pi}{2}, \\text{ and} \\frac{\\pi}{4}$ we see\nthat the ellipsoidal solution goes in a clockwise direction."
+    ], 
+    "hints": []
+}

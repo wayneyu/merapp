@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH105", 
+    "statement": "Now define\n\n\\[H(x,y) = \\int_y^x \\ln(2+\\sin t)\\,dt.\\]\n\nFind the first partial derivatives of \\emph{H} and use this to compute\n$\\displaystyle \\nabla H\\left(\\frac{\\pi}2,\\frac{\\pi}2\\right)$.", 
+    "year": 2012, 
+    "sols": [
+        "We write \\emph{H} as a sum of \\emph{F} and \\emph{G}:\n\n\\[H(x,y) = \\int_y^0 \\ln(2 + \\sin t) dt + \\int_0^x \\ln(2 + \\sin t) dt = G(y) + F(x)\\].\n\nThen\n\n\\[\\displaystyle H_x = \\frac{\\partial}{\\partial x}(F(x)+G(y)) = F'(x) + 0 = \\ln(2+\\sin(x))\\]\nand similarly\n\n\\[\\displaystyle H_y = \\frac{\\partial}{\\partial y}(F(x)+G(y)) = 0 + G'(y) = -\\ln(2+\\sin(y))\\]\nwhere we used the knowledge about the derivatives \\emph{F'(x)} and\n\\emph{G'(y)} from\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_05_(a)}{part\n(a)}. Finally, all that is left to do is to plug in the given values to\nfind that\n\n\\[\\nabla H\\left(\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right) = \\left\\langle F'\\left(\\frac{\\pi}{2}\\right), G'\\left(\\frac{\\pi}{2}\\right) \\right\\rangle = \\langle \\ln 3, -\\ln 3\\rangle\\]"
+    ], 
+    "hints": [
+        "Recall the definition of the gradient:\n\n\\[\\nabla H(x,y) = \\left\\langle \\frac{\\partial H}{\\partial x}(x,y), \\frac{\\partial H}{\\partial y}(x,y) \\right\\rangle\\]\n\nTo use\n\\href{Science:Math Exam Resources/Courses/MATH105/April 2012/Question 05 (a)}{part\n(a)}, write \\emph{H} in terms of \\emph{F} and \\emph{G}."
+    ]
+}

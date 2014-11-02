@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the function $f(x)=e^x$ for 0 $\\leq$ x $\\leq$ 1.\n\nFind the volume $V_1$ of the horn when rotating $f(x)$ around a\nhorizontal axis at $y=1$.", 
+    "year": 2011, 
+    "sols": [
+        "Following the hints, we slice this ``horn'' into circular pieces. The\nvolume of each slice is equal to $\\pi r^2 \\ \\Delta x$ where $r$ is the\nradius of the circle and $\\Delta x$ is its thickness. Hence, in the\nlimit $\\Delta x\\to 0,$\n\n\\begin{align*}\nV_1&=\\int_0^1 \\pi (f(x)-1)^2 dx \\\\\n&= \\pi\\int_0^1  (e^x-1)^2 dx\\\\\n&=\\pi\\int_0^1  (e^{2x}-2e^x+1) dx\\\\\n&=\\pi\\left[\\frac{e^{2x}}{2}-2e^x+x\\right]_0^1 \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{e^{0}}{2}+2e^0-0\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{1}{2}+2\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right) \\\\\n\\end{align*}"
+    ], 
+    "hints": [
+        "Draw a picture.", 
+        "Make slices (orthogonal to the axis of rotation) and integrate."
+    ]
+}

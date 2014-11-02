@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)_ii", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following congruences, find the least\nnonnegative integer \\emph{x} that satisfies it.}\n\n$\\displaystyle \\frac{59!}{30!} \\equiv x \\mod{31}$", 
+    "year": 2008, 
+    "sols": [
+        "Immediately, we have\n\n$\\displaystyle \\frac{59!}{30!} \\equiv (59)(58)...(31) \\equiv 0 \\mod{31}$"
+    ], 
+    "hints": [
+        "A special number occurs in the numerator that makes this problem easy."
+    ]
+}

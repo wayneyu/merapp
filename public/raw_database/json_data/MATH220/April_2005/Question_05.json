@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05", 
+    "course": "MATH220", 
+    "statement": "Let $a_1, a_2, a_3, \\ldots$ be real numbers. Prove, using induction,\nthat for all $n \\in \\mathbb{N}$,\n\n\\[\\left| \\sum_{k=1}^n a_k \\right| \\leq \\sum_{k=1}^n |a_k|\\]\n\nYou may assume the Triangle Inequality in the form\n\n\\[|x+y| \\leq |x| + |y|\\] for all real numbers \\emph{x} and \\emph{y}.", 
+    "year": 2005, 
+    "sols": [
+        "We use induction.\n\nIn the base case when $n=1$ we have $|a_1|\\leq |a_1|$ so the statement\nis true.\n\nInduction step: we assume that $|\\sum_{i-1}^na_i|\\leq \\sum_{i=1}^n|a_i|$\nholds for some (fixed) value $n \\in N$. Then it also holds for $n+1$:\n\n\\begin{align*}\n|\\sum_{i-1}^{n+1}a_i|&=|\\sum_{i-1}^{n}a_i+a_{n+1}|\\\\\n&\\leq |\\sum_{i-1}^{n}a_i|+|a_{n+1}|\\\\\n& \\leq \\sum_{i=1}^n|a_i|+|a_{n+1}|\\\\\n&= \\sum_{i=1}^{n+1}|a_i|\n\\end{align*}\n\nWhere the first inequality is true by the triangle inequality and the\nsecond by induction hypothesis. This finishes the induction step and so\nthe result is true for all $n\\in N$ by induction."
+    ], 
+    "hints": [
+        "Use that $\\sum_{i=1}^na_i=\\sum_{i=1}^{n-1}a_i+a_n$"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(e)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\]\n\n\\textbf{(e)} Determine where $f$ is increasing and where it is decreasing.", 
+    "year": 2012, 
+    "sols": [
+        "We first find the derivative of \\emph{f(x)}. Using the quotient rule,\n\n\\[f'(x) = \\frac{4x(x^2 - 1) - (2x)(2x^2)}{(x^2 - 1)^2} = \\frac{4x^3 - 4x - 4x^3}{(x^2 - 1)^2} = \\frac{-4x}{(x^2 - 1)^2}\\].\n\nSince the denominator is always positive on the domain (squaring\n$x^2 - 1$ always yields a positive number), we only need check whether\nthe numerator is positive or negative. When $x < 0$, $-4x$ is positive\nand when $x > 0$, $-4x$ is negative. Thus \\emph{f} is increasing on the\ninterval $(\\infty, -1)\\cup (-1, 0)$ and decreasing on the interval\n$(0, 1)\\cup (1, \\infty)$."
+    ], 
+    "hints": [
+        "Whether \\emph{f} is increasing or decreasing is related to the sign of\nits first derivative, ''f'''."
+    ]
+}

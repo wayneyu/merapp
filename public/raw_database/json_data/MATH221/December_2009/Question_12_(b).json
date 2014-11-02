@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_12_(b)", 
+    "course": "MATH221", 
+    "statement": "Mark each statement either True or False. You do not have to justify\nyour answer.\n\nIf A is a 4 \u00c3\u0097 3 matrix, then there exists a vector $\\vec{b}$ such that\n$A\\vec{x} = \\vec{b}$ has no solutions.", 
+    "year": 2009, 
+    "sols": [
+        "\\textbf{True}. After taking the row reduce of a matrix 4 \u00c3\u0097 3, at best,\nthe lowest row will be entirely consisted of zeros. If d =/= 0, then the\nabove has no solution. $\\begin{bmatrix}\n1 & 0 & 0 & | a \\\\ \n0 & 1 & 0 & | b \\\\ \n0 & 0 & 1 & |c \\\\ \n0 & 0 & 0 & |d\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

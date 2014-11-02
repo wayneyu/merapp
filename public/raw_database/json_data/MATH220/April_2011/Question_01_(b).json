@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH220", 
+    "statement": "Define the supremum of a set $S$ of real numbers.", 
+    "year": 2011, 
+    "sols": [
+        "The supremum of a set $S$ of real numbers is defined to be the smallest\nreal number $M$ such that every number in $S$ is less than or equal to\n$M$."
+    ], 
+    "hints": [
+        "Think about where the word supremum comes from - it looks like the word'super' is contained. What would it mean to be the'super' of a set?"
+    ]
+}

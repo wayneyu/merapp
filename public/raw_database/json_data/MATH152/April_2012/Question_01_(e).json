@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH152", 
+    "statement": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nCalculate the volume of the parallelpiped with edges AB, AC, and AP.", 
+    "year": 2012, 
+    "sols": [
+        "The parallelepiped formed by the vectors $AB$, $AC$ and $AP$ is given by\n(the absolute value of) the determinant of the three vectors. From\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(c)}{1(c)},\nwe have that\n\n\\begin{align*}\n\\vec{AB}&=[-2,2,1]\\\\\n\\vec{AC}&=[-1,1,1]\n\\end{align*}\n\nand so all we need is $\\vec{AP}$,\n\n\\[\\vec{AP}=P-A=[0,-1,0].\\]\n\nTherefore, the volume of the parallelepiped is given by\n\n\\begin{align*}\n\\textrm{volume}&=\\left|\\textrm{det}\n\\begin{pmatrix}\n-2  &  2  &  1\\\\\n-1  &  1  &  1\\\\\n0  &  -1  &  0\n\\end{pmatrix}\\right|\\\\\n&=\\left|-1\\textrm{det}\n\\begin{pmatrix}\n-2  &  1\\\\\n-1  &  1\n\\end{pmatrix}\\right|\\\\\n&=|-2+1|=|-1|=1.\n\\end{align*}"
+    ], 
+    "hints": [
+        "How can we write the volume of a parallelepiped formed by three vectors\nin terms of a determinant?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH215", 
+    "statement": "Why are the Laplace transforms of $1$ and $u(t)$ (the Heaviside step\nfunction) identical?", 
+    "year": 2013, 
+    "sols": [
+        "The Laplace transform only considers positive values of \\emph{t}. Since\nthe heaviside function is identically equal to $1$ for $t>0$. That is,\n\n\\[\\mathcal{L}(1) = \\int_0^\\infty e^{-st} dt = \\mathcal{L}(u(t)) = \\int_0^\\infty e^{-st} dt\\]"
+    ], 
+    "hints": [
+        "Write out the integral definitions of the Laplace transform of $1$ and\n$u(t)$."
+    ]
+}

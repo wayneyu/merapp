@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_10", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[W = \\text{span}\\left\\{ \\left[\\begin{array}{c}\n1 \\\\ 2 \\\\ 3 \\\\ 4 \\end{array}\\right], \\left[\\begin{array}{c}\n1 \\\\ 0 \\\\ 1 \\\\ 0 \\end{array}\\right], \\left[\\begin{array}{c}\n0 \\\\ 1 \\\\ 1 \\\\ 2 \\end{array}\\right]\n\\right\\}\\]\n\nFind a basis for the orthogonal complement $W^\\bot$ of \\emph{W}.", 
+    "year": 2013, 
+    "sols": [
+        "We first note that there is a relationship between the three vectors,\nnamely $\\left[ \\begin{array}{cccc}\n1 & 2 & 3 & 4 \\\\ \n\\end{array} \\right]  = \\left[ \\begin{array}{cccc}\n1 & 0 & 1 & 0 \\\\ \n\\end{array} \\right] + 2 \\left[ \\begin{array}{cccc}\n0 & 1 & 1 & 2 \\\\ \n\\end{array} \\right]$. Thus, we get that \\emph{W} has dimension 2 and\nthus $W^\\bot$ is also 2 dimensional. Let V be the matrix of basis\nvectors to W,\n\n\\[V=\\begin{bmatrix}\n1  &  0\\\\\n0  &  1\\\\\n1  &  1\\\\\n0  &  2\\\\\n\\end{bmatrix}.\\]\n\nIf $\\displaystyle {}x=[a,b,c,d]^T$ is a basis vector to $W^\\bot$ then\northogonality tells us that\n\n\\begin{align*}\nV^Tx&=0\\\\\n\\begin{bmatrix}\n1  &  0  &  1  &  0\\\\\n0  &  1  &  1  &  2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\\\\\nd\n\\end{bmatrix}\n&=\\mathbf{0}\n\\end{align*}\n\nComputing this we get the following relationships\n\n\\begin{align*}\na+c&=0\\\\\nb+c+2d&=0\n\\end{align*}\n\nSince the dimension (or rank) of V is two we will have two free\nparameters (let's choose \\emph{a} and \\emph{d}) and so we get that\n\n\\begin{align*}\nc&=-a\\\\\nb&=-2d-c=-2d+a\n\\end{align*}\n\nand finally that\n\n\\[x=\n\\begin{bmatrix}\na\\\\\n-2d+a\\\\\n-a\\\\\nd\n\\end{bmatrix}\n=\na\\begin{bmatrix}\n1\\\\\n1\\\\\n-1\\\\\n0\n\\end{bmatrix}\n+\nd\\begin{bmatrix}\n0\\\\\n-2\\\\\n0\\\\\n1\n\\end{bmatrix}\\]\n\nTherefore the two orthogonal vectors\n$\\left[ \\begin{array}{cccc} 1 & 1 & -1 & 0 \\\\  \\end{array} \\right] , \\left[ \\begin{array}{cccc} 0 & -2 & 0 & 1 \\\\  \\end{array} \\right]$\nare a basis for $W^\\bot$. Notice the dimension of $W^\\bot$ is the same\nas that of \\emph{W}."
+    ], 
+    "hints": [
+        "Are all three of the vectors linearly independent? If not, what is the\ndimension (and basis) of W. What will the dimension of the basis of\n$W^\\bot$ be?"
+    ]
+}

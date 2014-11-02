@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH307", 
+    "statement": "Suppose we are given 4 points (\\emph{x}\\textsubscript{1},\n\\emph{y}\\textsubscript{1}), (\\emph{x}\\textsubscript{2},\n\\emph{y}\\textsubscript{2}), (\\emph{x}\\textsubscript{3},\n\\emph{y}\\textsubscript{3}) and (\\emph{x}\\textsubscript{4},\n\\emph{y}\\textsubscript{4}) in the plane and we want to find a function\n\\emph{$f$(x)}, defined for $x_1 \\leq x \\leq x_4$, whose graph interpolates\nthese points. Assume that\n\n\\[f(x) = \\begin{cases}\np_1(x) & \\text{for } x_1 \\leq x \\leq x_2 \\\\\np_2(x) & \\text{for } x_2 \\leq x \\leq x_3 \\\\\np_3(x) & \\text{for } x_3 \\leq x \\leq x_4\n\\end{cases}\\]\n\nwhere each \\emph{p}\\textsubscript{i}(\\emph{x}) is a polynomial.\n\n\\textbf{(a)} What equations, written in terms of\n\\emph{p}\\textsubscript{i}(\\emph{x}) and possibly their derivatives,\nexpress the condition that \\emph{$f$(x)} goes through the given points? Do\nthe equations imply that \\emph{$f$(x)} is continuous?", 
+    "year": 2010, 
+    "sols": [
+        "Since the piece-wise function above has inclusive restrictions, we can\nsee that both polynomials, $p_1$ and $p_2$, have the same value\n$f(x_2)$. The same goes for polynomials $p_2$ and $p_3$.\n\nThus, we need to satisfy\n\n\\[\\displaystyle p_i(x) = p_{i+1}(x)\\]\n\nTherefore,\n\n\\begin{align*}\np_1(x_2) = p_2(x_2)\\\\\np_2(x_3) = p_3(x_3)\n\\end{align*}\n\nHence these equations imply that $f(x)$ is continuous as they show that\nboth polynomials surrounding the given point equal each other at $x_i$.\n\nAs well, to show that the function goes through the given points, we\nneed to write the following six equations:\n\n\\begin{align*}\np_{1}(x_{1}) = y_{1}\\\\\np_{1}(x_{2}) = y_{2}\\\\\np_{2}(x_{2}) = y_{2}\\\\\np_{2}(x_{3}) = y_{3}\\\\\np_{3}(x_{3}) = y_{3}\\\\\np_{3}(x_{4}) = y_{4}\n\\end{align*}"
+    ], 
+    "hints": [
+        "The condition that \\emph{$f$(x)} goes through all the points means that\n\\emph{$f$(x\\textsubscript{i}) = y\\textsubscript{i}}. Rewrite this in terms\nof \\emph{p\\textsubscript{i}(x)}."
+    ]
+}

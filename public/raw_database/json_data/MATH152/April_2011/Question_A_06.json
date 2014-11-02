@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_06", 
+    "course": "MATH152", 
+    "statement": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6;~7~8~9{]};}\\\\\\texttt{A(2,:)}", 
+    "year": 2011, 
+    "sols": [
+        "For the first line of code\n\n\\texttt{A={[}1~2~3;4~5~6;7~8~9{]};}\n\nwe recall that when declaring a matrix in Matlab, square brackets {[}\nand {]} start and end the declaration. While inside a space indicates to\nmove to the next column while a semicolon instructs to start a new row.\nTherefore we place the entries 1, 2, and 3 in the three columns of the\nfirst row; 4, 5, and 6 in the three columns of the second row and 7, 8,\nand 9 in the three columns of the last row. Therefore the matrix\ngenerated is\n\n\\[A=\\begin{bmatrix}\n1  &  2  &  3\\\\\n4  &  5  &  6\\\\\n7  &  8  &  9\n\\end{bmatrix}.\\]\n\nThe semicolon at the end of the line indicates that output is suppressed\nand so the matrix will not be displayed. For the second line of code\n\n\\texttt{A(2,:)}\n\nwe recall that Matlab recognizes entries in a matrix first by row and\ncolumn so a call A(i,j) would return an element in row i and column j.\nThe colon instructs Matlab to take all the entries of a given field.\nTherefore A(:,j) instructs Matlab to output all entries in column j\nwhile A(i,:) instructs Matlab to output all of the entries in row i.\nTherefore A(2,:) instructs Matlab to output all of the entries from row\n2. If we look at out matrix then the output would be\n\n\\texttt{{[}4~~5~~6{]}}\n\nNotice the lack of semicolon on this output indicates that the output is\n\\textbf{not} suppressed."
+    ], 
+    "hints": [
+        "What is the difference between a space and a semicolon when defining a\nmatrix. What does the colon do?"
+    ]
+}

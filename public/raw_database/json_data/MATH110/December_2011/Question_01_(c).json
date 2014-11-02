@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH110", 
+    "statement": "Evaluate the following limit.\n\n\\[\\lim_{x \\to \\infty} \\left( e^{-x} - x \\right)\\]", 
+    "year": 2011, 
+    "sols": [
+        "We will consider the function inside the limit as the sum of two\nfunctions\\[e^{-x}\\] and $-x$. If we take their limits separately, we\nget:\n\n$\\displaystyle \\lim_{x \\to \\infty} e^{-x} = 0$\n\n$\\displaystyle \\lim_{x \\to \\infty} -x$ diverges to\n$\\displaystyle -\\infty$\n\nWe can see that as \\emph{x} goes to infinity, the $e^{-x}$ term is\ndecreasing towards zero and the $-x$ term grows larger and larger. So,\nas \\emph{x} goes to infinity the combined value of $e^{-x} - x$ will\ngrow more and more negative. Thus we have:\n\n$\\displaystyle \\lim_{x \\to \\infty} e^{-x} - x$ diverges to\n$\\displaystyle -\\infty$"
+    ], 
+    "hints": [
+        "What does the graph of $e^{-x}$ look like? What happens to it as\n\\emph{x} goes to infinity?"
+    ]
+}

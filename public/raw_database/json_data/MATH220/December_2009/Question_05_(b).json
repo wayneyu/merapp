@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH220", 
+    "statement": "Use mathematical induction to prove the following statements:\n\nfor all non-negative integers n,\n\n\\[\\displaystyle{}5^n+2(11^n)\\]\n\nis a multiple of 3.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

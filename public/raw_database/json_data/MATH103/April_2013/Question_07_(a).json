@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Biofuel: Suppose you work at an experimental algae farm where\nalgae is turned into biofuel. The algae grows in tanks at a rate\n$\\displaystyle \\alpha = 2$ and the steady supply of nutrients allows\neach tank to sustain $\\displaystyle K$ kilograms of algae.}\n\nThe rate of change of the total mass of algae, $\\displaystyle M$, is\ngiven by:\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big)$.\n\nFind all steady state solutions (equilibria) for this equation.", 
+    "year": 2013, 
+    "sols": [
+        "Setting the derivative to 0 gives\n\n$\\displaystyle 0 = 2M\\big(1 - \\frac{M}{K}\\big)$\n\nand so either $\\displaystyle M=0$ or\n$\\displaystyle 1 - \\frac{M}{K} = 0$, that is $\\displaystyle M=K$."
+    ], 
+    "hints": [
+        "Remember that a steady state occurs at values where the derivative is 0."
+    ]
+}

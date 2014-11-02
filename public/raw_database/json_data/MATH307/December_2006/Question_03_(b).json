@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the discrete dynamical system\n\n$\\begin{bmatrix} a_{n+1} \\\\ b_{n+1} \\\\ c_{n+1} \\end{bmatrix} = \\frac{1}{6} \\begin{bmatrix} 1 & 3 & 2 \\\\ 2 & 1 & 1 \\\\ 3 & 2 & 3 \\end{bmatrix} \\begin{bmatrix} a_{n} \\\\ b_{n} \\\\ c_{n} \\end{bmatrix}$\n\nwhich describes the evolution of the vector\n$\\begin{bmatrix} a & b & c \\end{bmatrix}^{T}$\n\nFind a fixed vector for this discrete dynamical system, i.e., a vector\n$\\begin{bmatrix} a_{0} & b_{0} & c_{0} \\end{bmatrix}^{T}$ such that\n\n$\\begin{bmatrix} a_{n} \\\\ b_{n} \\\\ c_{n} \\end{bmatrix} =  \\begin{bmatrix} a_{0} \\\\ b_{0} \\\\ c_{0} \\end{bmatrix}$\n\nholds for all \\emph{n}.", 
+    "year": 2006, 
+    "sols": [
+        "$\\begin{bmatrix}\na_{0}\\\\b_{0}\n\\\\c_{0}\n\n\\end{bmatrix}\n\\rightarrow \\begin{bmatrix}\na_{n}\\\\b_{n}\n\\\\ c_{n}\n\n\\end{bmatrix}$\n\nas \\emph{n} approaches infinity. If the solution starts as a steady\nstate solution then it will not change with n. ie. we need to find a\nsteady state solution.\n\nOne solution is:\n\n$\\begin{bmatrix}\na_{0}\\\\b_{0}\n\\\\c_{0}\n\n\\end{bmatrix} = \\begin{bmatrix}\n13/41\\\\9/41\n\\\\19/41\n\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

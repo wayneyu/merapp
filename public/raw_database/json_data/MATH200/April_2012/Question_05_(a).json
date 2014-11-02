@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH200", 
+    "statement": "Let \\emph{C} be the intersection of the plane\n\n\\[\\displaystyle{}x+y+z=2\\]\n\nand the sphere\n\n\\[\\displaystyle{}x^2+y^2+z^2=2.\\]\n\nUse Lagrange multipliers to find the maximum value of \\emph{$f$(x,y,z)=z}\non \\emph{C}.", 
+    "year": 2012, 
+    "sols": [
+        "We wish to maximize the value of \\emph{$f$(x,y,z) = z} subject to the\nconstraints\n\n\\[x + y + z = 2, \\quad x^{2} + y^{2} + z^{2} = 2.\\] So we use Lagrange\nmultipliers. The objective function, $\\Lambda$, is\n\n\\[\\displaystyle \\Lambda(x,y,z,\\mu,\\nu) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2)\\]\nComputing the partial derivatives of $\\Lambda$ with respect to all the\nvariables \\emph{x, y, z} and the Lagrange multipliers $\\mu,\\nu$ and\nsetting them equal to zero gives:\n\n\\begin{align*}\n(1) \\quad \\frac{\\partial \\Lambda}{\\partial x} &= \\mu + 2\\nu x = 0 \\\\\n(2) \\quad \\frac{\\partial \\Lambda}{\\partial y} &= \\mu + 2\\nu y = 0 \\\\\n(3) \\quad \\frac{\\partial \\Lambda}{\\partial z} &= 1 + \\mu + 2\\nu z = 0 \\\\\n(4) \\quad \\frac{\\partial \\Lambda}{\\partial \\mu} &= x + y + z - 2 = 0 \\\\\n(5) \\quad \\frac{\\partial \\Lambda}{\\partial \\nu} &= x^{2} + y^{2} + z^{2} - 2 = 0\n\\end{align*} To begin with, we observe that \\emph{\u03bd} can not be zero,\nbecause if it was, then equations (1) and (2) would force \\emph{\u03bc = 0},\nwhile equation (3) would force \\emph{\u03bc = -1}; a contradiction. Hence, we\ncombine equations (1) and (2) to see that the maximum of \\emph{$f$} occurs\non the plane \\emph{y = x}:\n\n\\[\\begin{cases}\n\\mu + 2\\nu x = 0 \\\\\n\\mu + 2\\nu y = 0\n\\end{cases} \\quad \\rightarrow \\quad y = x\\] Taking this result and using\n(4), we find\n\n\\[2x + z - 2 = 0 \\quad \\rightarrow \\quad x = \\frac{2 - z}{2}\\] Taking\nthese two results and using (5) we have an equation for \\emph{z}:\n\n\\[x^{2} + y^{2} + z^{2} - 2 = \\left(\\frac{2 - z}{2}\\right)^{2} + \\left(\\frac{2 - z}{2}\\right)^{2} + z^{2} - 2 = 0\\]\nMultiplying this equation by 4 and expanding all the quadratic terms we\nget:\n\n\\[\\displaystyle 8 - 8z + 6z^{2} - 8 = 6z^{2} - 8z = 0\\] Solving this\nequation for z we get\n\n\\[\\displaystyle z = 0,\\ \\frac{4}{3}.\\] Taking the larger of the two\nresults we obtain the maximum of f(x,y,z) = z subject to the given\nconstraints which is \\emph{z = 4/3}."
+    ], 
+    "hints": [
+        "Get the equations in this Lagrange multiplier problem by setting the\npartial derivatives of the objective function, $\\Lambda$, to zero, where\n\n\\[\\displaystyle \\Lambda(x,y,z,\\mu,\\nu) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2)\\]"
+    ]
+}

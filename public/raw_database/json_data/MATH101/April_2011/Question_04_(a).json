@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH101", 
+    "statement": "Evaluate the integral (\\emph{hint}: put $u = \\sqrt{x}$).\n\n\\[\\int \\frac{\\sqrt{x}}{x - 1}dx\\]", 
+    "year": 2011, 
+    "sols": [
+        "Set the following change of variable\n\n\\[u = \\sqrt{x}\\] then we have\n\n\\[\\displaystyle{ x = u^2 }\\] and so\n\n\\[\\displaystyle{ dx = 2u \\, du }.\\] Making this substitution in the\nintegral gives\n\n\\[\\int \\frac{\\sqrt{x}}{x-1} dx \n= \\int \\frac{u}{u^2 - 1} \\, 2u \\, du \n= 2\\int \\frac{u^2}{u^2 - 1} du.\\]\n\nNow we use the method of partial fractions. We have\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&=2 \\int \\frac{u^2}{u^2 - 1} du \\\\\n&= 2 \\int \\frac{u^2 - 1 + 1}{u^2 - 1} du \\\\\n&= 2\\int \\left( 1 + \\frac{1}{u^2 - 1} \\right) du \\\\\n&= 2u + \\int \\frac{2}{u^2 - 1} du \\\\\n&= u + \\int \\frac{2}{(u - 1)(u+1)} du.\n\\end{align*}\n\nWe want to find numbers $A$ and $B$ such that\n\n\\[\\frac{2}{(u - 1)(u+1)} = \\frac{A}{u-1} + \\frac{B}{u+1}.\\]\n\nMultiplying both sides by $(u-1)(u+1)$ yields\n\n\\[\\displaystyle 2 = Au + A + Bu - B.\\]\n\nEquating coefficients of powers of $u$ on both sides gives\n\n\\[\\begin{cases} 0 = A + B\\\\\n2 = A - B \\end{cases}\\]\n\nFrom the first of these equations we see that $A = - B$. So the second\nequation becomes\n\n\\[\\displaystyle\n2 = 2A.\\] Hence $A = 1$ and $B = -A = -1$. Therefore, we have\n\n\\[\\frac{2}{(u - 1)(u+1)} = \\frac{1}{u-1} - \\frac{1}{u+1}.\\]\n\nUsing this to rewrite the last integral above, we find\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&= 2u + \\int \\frac{2}{(u - 1)(u+1)} du \\\\\n&= 2u + \\int \\frac{1}{u-1} du -  \\int \\frac{1}{u+1} du \\\\\n&= 2u + \\ln|u-1| - \\ln|u+1| + C \\\\\n&= 2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\n\\end{align*}"
+    ], 
+    "hints": [
+        "If $u = \\sqrt{x}$, then $du = \\frac{1}{2\\sqrt{x}}dx$.", 
+        "Use partial fractions."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH253", 
+    "statement": "Let P be the plane tangent to the ellipsoid\n$2x^{2} + 3y^{2} + z^{2} = 9$ at the point (-1,1,2). Find the point\nwhere P intersects the y-axis.", 
+    "year": 2012, 
+    "sols": [
+        "Let $\\displaystyle f(x,y,z) = 2x^2+3y^2+z^2=9$. So,\n\n\\[f_{x}(x,y,z) = 4x, \\quad f_{y}(x,y,z) = 6y, \\quad f_{z}(x,y,z) = 2z.\\]\nPlugging in the point (-1,1,2), the gradient is\n$\\nabla f(-1,1,2) = [-4,6,4]^{T}$. Using this in the plane equation:\n\n\\[\\displaystyle f_{x}(x - x_{0}) + f_{y}(y - y_{0}) + f_{z}(z - z_{0}) = 0,\\]\nwe get\n\n\\[\\displaystyle -4(x + 1) + 6(y - 1) + 4(z - 2) = 0.\\] Since we want to\nfind the intersection of this plane with the y-axis, we know that x = z\n= 0. The equation then becomes\n\n\\[\\displaystyle -4 + 6(y - 1) -8 = 0.\\] Solve for y:\n\n\\[\\displaystyle -4 + 6y - 6 - 8 = 0.\\] Collect like terms:\n\n\\[6y - 18 = 0 \\quad \\rightarrow \\quad {\\color{blue}y =3}.\\]"
+    ], 
+    "hints": [
+        "The plane equation is\n\n\\[\\displaystyle f_{x}(x - x_{0}) + f_{y}(y - y_{0}) + f_{z}(z - z_{0}) = 0.\\]", 
+        "Once you calculated the equation for the plane, set \\emph{x = z = 0} to\nfind the intersection with the \\emph{y}-axis."
+    ]
+}

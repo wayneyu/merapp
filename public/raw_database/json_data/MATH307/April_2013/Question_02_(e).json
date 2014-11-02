@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(e)", 
+    "course": "MATH307", 
+    "statement": "What can you say about the eigenvalues and eigenvectors of a stochastic\nmatrix?", 
+    "year": 2013, 
+    "sols": [
+        "-\\textgreater{} The largest eigenvalue is 1\n\n-\\textgreater{} The eigenvector of the eigenvalue of 1 can be scaled to\nhave no negative entries"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_02_(b)", 
+    "course": "MATH152", 
+    "statement": "Let $A = (0,1,2)$, $B = (1,0,3)$ and $C = (1,1,4)$. Let $\\Delta$ be the\ntriangle whose vertices are \\emph{A},\\emph{B}, and \\emph{C}.\n\nProve that $\\Delta$ is a right-angled triangle.", 
+    "year": 2013, 
+    "sols": [
+        "Let\n\n$\\vec{AB} = B-A = \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix} = \\begin{bmatrix}1 & -1 & 1 \\end{bmatrix}$\n\nand let\n\n$\\vec{BC} = C-B = \\begin{bmatrix}1 & 1 & 4 \\end{bmatrix} - \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix}  = \\begin{bmatrix}0 & 1 & 1 \\end{bmatrix}$\n\nas in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_02_(a)}{part\n(a)}. The vector are orthogonal if their dot product is zero.\nCalculating this dot product yields\n\n$\\vec{AB} \\cdot \\vec{BC} = (1)(0) + (-1)(1) + (1)(1) = 0$\n\nThus, vectors $\\vec{BA}$ and $\\vec{CB}$ are orthogonal and so the\ntriangle is right angled."
+    ], 
+    "hints": [
+        "There is a relationship between the dot product of two vectors and these\nvectors being orthogonal, do you know what it is?"
+    ]
+}

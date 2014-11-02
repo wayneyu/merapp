@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nFind the center of mass of the distribution\n\n\\[\\rho(x) = \\cos\\left(\\frac{x}2\\right), \\quad 0 < x < \\pi.\\]", 
+    "year": 2012, 
+    "sols": [
+        "The centre of mass is given by\n\n\\[\\bar{x} = \\frac{I}{M}\\] where\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx \\\\\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx\n\\end{align*}\n\nWe start with the simpler integral \\emph{M} and use the substitution\n\\emph{w = x/2}. Then \\emph{dw = dx/2}, or equivalently, \\emph{dx = 2dw}.\nFurther, when \\emph{x = $\\pi$} we have \\emph{w = $\\pi$/2} and when \\emph{x = 0}\nwe have \\emph{w = 0}. The integral \\emph{M} therefore becomes\n\n\\begin{align*}\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx \\\\\n&= \\int_0^{\\pi/2} \\cos(w)2\\,dw \\\\\n&= \\left.2\\sin(w)\\right|_0^{\\pi/2} \\\\\n&= 2\\sin(\\pi/2)-2\\sin(0) = 2.\n\\end{align*}\n\nNext we calculate \\emph{I}. This is done using integration by parts:\nChoose \\emph{u} = \\emph{x} and $\\displaystyle dv = \\cos(x/2)dx$. Then\n\\emph{du} = \\emph{dx} and from the integral we just solve, we know that\n$v = \\displaystyle 2\\sin(w) = 2\\sin(x/2)$. Hence\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx = \\left.2x\\sin(x/2)\\right|_0^\\pi - \\int_0^\\pi 2\\sin(x/2)\\,dx \\\\\n&= 2\\pi - 0 - \\left(-\\left.4\\cos(x/2)\\right|_0^\\pi\\right) \\\\\n&= 2\\pi + 0 - 4 = 2\\pi-4.\n\\end{align*}\n\nFor the second integral we again used our favourite substitution \\emph{w\n= x/2}. The center of mass is thus\n\n\\begin{align*}\n\\bar{x} = \\frac{I}{M} = \\frac{2\\pi-4}{2} = \\pi-2.\n\\end{align*}"
+    ], 
+    "hints": [
+        "The centre of mass of the shape delimited by the \\emph{x}-axis, the\nvertical lines \\emph{x} = \\emph{a}, \\emph{x} = \\emph{b} and the curve\n\\emph{y} = $f(x)$ is given by\n\n\\[\\bar{x} = \\frac{\\int_a^b xf(x) \\,dx}{\\int_a^b f(x) \\,dx}\\]"
+    ]
+}

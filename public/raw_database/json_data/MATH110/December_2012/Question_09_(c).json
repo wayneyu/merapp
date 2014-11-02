@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(c)", 
+    "course": "MATH110", 
+    "statement": "Prove the statement labelled \\emph{Fact 2} which you wrote down in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_09_(a)}{a)}.", 
+    "year": 2012, 
+    "sols": [
+        "As suggested in the hint, we can assume\n\n``For n = k, $2^1 + 2^2 + \\dots + 2^k = 2^{k+1} - 1$.''\n\\textbf{(Equation 1)}\n\nWe want to then prove that this claim also holds for $n = k + 1$,\nmeaning that we eventually want to show that\n\n$2^1 + 2^2 + \\dots + 2^{k+1} = 2^{k+2} - 1$ \\textbf{(Equation 2)}\n\nusing the previous statement \\textbf{(1)} as our starting point. So\nlet's start with this equation:\n\n\\[2^1 + 2^2 + \\dots + 2^k = 2^{k+1} - 1\\].\n\nAnd in an attempt to reach equation \\textbf{(2)}, we add $2^{k+1}$ to\nboth sides.\n\n\\[2^1 + 2^2 + \\dots + 2^k + 2^{k+1} = 2^{k+1} - 1 + 2^{k+1}\\].\n\nNow the left side of the equation matches \\textbf{(2)}, but what about\nthe right hand side? Let us combine the terms to see that\n\n\\begin{align*}\n2^1 + 2^2 + \\dots + 2^k + 2^{k+1} &= 2^{k+1} + 2^{k+1} - 1 \\\\\n&= 2(2^{k+1}) - 1 \\\\\n&= 2^{k+1+1} - 1 \\\\\n&= 2^{k+2} - 1 \\\\\n\\end{align*}.\n\nThis is exactly the equation what we were trying to show. Hence we have\nproved that if the claim holds for $n = k$, it also holds for\n$n = k+ 1$, proving Fact 2."
+    ], 
+    "hints": [
+        "Recall that Fact 2 is: \"If for \\emph{n = k},\n\n\\[2^1 + 2^2 + \\dots + 2^k = 2^{k+1} - 1\\] then for $n = k+1$,\n\n\\[2^1 + 2^2 + \\dots + 2^{k+1} = 2^{k+2} - 1\\].\n\nTo prove this statement, you can assume the first part (the ``if'').\nStarting from the ``if'' equation, what can you do to make it look like\nthe ``then'' equation?"
+    ]
+}

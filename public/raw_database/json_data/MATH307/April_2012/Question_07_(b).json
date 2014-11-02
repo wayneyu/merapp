@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the MATLAB/Octave computation\n\n\\texttt{1\\textgreater{}~A={[}0~2~1;~1~0~0;~0~1~0{]}}\\\\\\texttt{A~=~}\\\\\\texttt{~~~0~~2~~1}\\\\\\texttt{~~~1~~0~~0}\\\\\\texttt{~~~0~~1~~0}\n\n\\texttt{2\\textgreater{}~{[}S~D{]}=eig(A)}\\\\\\texttt{S~=}\\\\\\texttt{~~~0.80902~~-0.57735~~~0.30902}\\\\\\texttt{~~~0.50000~~~0.57735~~-0.50000}\\\\\\texttt{~~~0.30902~~-0.57735~~~0.80902}\\\\\\texttt{D~=}\\\\\\texttt{Diagonal~Matrix}\\\\\\texttt{~~~1.61803~~~~~~~~~0~~~~~~~~~0}\\\\\\texttt{~~~~~~~~~0~~-1.00000~~~~~~~~~0}\\\\\\texttt{~~~~~~~~~0~~~~~~~~~0~~-0.61803}\n\n\\textbf{(b)} If you picked initial values at random, what would you\nexpect the large \\emph{n} behaviour of the resulting sequence to be?\nGive a reason.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

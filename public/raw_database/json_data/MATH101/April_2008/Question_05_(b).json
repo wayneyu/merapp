@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH101", 
+    "statement": "Let\n\n\\[I = \\int_0^1 \\cos(x^2)\\,dx\\]\n\nIt can be shown that the 4th derivative of\n\n\\[\\displaystyle \\cos(x^2)\\] has absolute value at most 60 on the\ninterval {[}0,1{]}. Using this bound, find the smallest positive integer\n\\emph{n} you can such that the Simpson's Rule approximation $S_n$ for\n$I$ has error less or equal to 0.001. You may use the fact that if\n\n\\[|f^{(4)}(t)| \\leq K\\] on the interval $[a\\text{, }b]$, then the error\nin using $S_n$ to approximate\n\n\\[\\int_a^b f(x)\\,dx\\] has absolute value less than or equal to\n\n\\[\\frac{K(b-a)^5}{180n^4}\\]", 
+    "year": 2008, 
+    "sols": [
+        "The question tells us that we can choose $K = 60$ in our solution.\nPlugging this in, it suffices to find an \\emph{n} so that\n\n$\\frac{K(b-a)^{5}}{180n^{4}}  = \\frac{60}{180n^{4}} = \\frac{1}{3n^{4}} \\leq 0.001 = \\frac{1}{1000}$\n\nCross multiplying yields\n\n$1000 \\leq 3n^{4}$\n\ndividing both sides by \\emph{3} gives\n\n$333.33333... = \\frac{1000}{3} \\leq n^{4}$\n\nTo find the smallest value for \\emph{n}, we start enumerating the first\nfew even integers to the power of \\emph{4}.\n\n$2^{4} = 16 \\quad\\quad 4^{4} = 256 \\quad\\quad 6^{4} = 1296$\n\nso we see that the first even integer \\emph{n} so that\n$n^{4} \\geq \\frac{1000}{3}$ is $n = 6$ completing the proof."
+    ], 
+    "hints": [
+        "Justify to yourself that it suffices to find an \\emph{n} so that\n\n\\[\\frac{K(b-a)^5}{180n^4} = \\frac{60}{180n^{4}} \\leq 0.001\\]\n\nDon't forget that \\emph{n} has to be even! (By the constraints of\nSimpson's rule)"
+    ]
+}

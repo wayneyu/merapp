@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_C_03_(c)", 
+    "course": "MATH102", 
+    "statement": "This question is about approximating the value of $b = \\sqrt{48}$.\n\n\\textbf{(c)} Determine an appropriate function that has a zero at\n\\emph{b} and apply one iteration of Newton's method (i.e. find\n\\emph{x\\textsubscript{1}}) to estimate \\emph{b} starting with an initial\nguess \\emph{x\\textsubscript{0}} that is the nearest integer to the\nactual value.", 
+    "year": 2012, 
+    "sols": [
+        "The question is telling us to use Newton's method, which can only be\nused to estimate roots of functions. Therefore, in order to use Newton's\nmethod to estimate \\emph{b}, we must create a function with\n$b = \\sqrt{48}$ as a root. Then estimating the root of this function\nwill be the same as estimating the value of \\emph{b}.\n\nOne way to construct a function with specific roots is to place the\nroots into linear factors and then multiply them out to get a\npolynomial. If we want one of our roots to be $\\sqrt{48}$, this means we\nshould have at least one linear factor of the form $(x - \\sqrt{48})$.\n\nIdeally, we want our function to not actually contain the value we're\ntrying to estimate. In order to make that $\\sqrt{48}$ go away, we are\ngoing to use the difference of squares, which says:\n\n$\\displaystyle (a - b)(a+ b) = a^2 - b^2$\n\nor,\n\n$(\\sqrt{a} - \\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a - b$\n\nPutting these two together, we can say:\n\n$f(x) = (x - \\sqrt{48})(x + \\sqrt{48}) = x^2 - 48$\n\nwhich has a root at $\\sqrt{48}$ like we wanted.\n\nNow we can finally use Newton's method to iterate and find $x_1$. The\nformula for the first iteration of Newton's method is as follows:\n\n$x_{1} = x_0 - \\frac{f(x_0)}{f'(x_0)}$\n\nWe have $f(x)$, $f'(x) = 2x$, and our starting point should be a value\nclose to \\emph{b}. Based on the previous parts of the question, it makes\nthe most sense to choose $x_0 = \\sqrt{49} = 7$.\n\nPutting this all together, we finally get:\n\n$x_1 = 7 - \\frac{(7)^2 -48}{2(7)} = 7 - \\frac{1}{14} = \\frac{97}{14}$"
+    ], 
+    "hints": [
+        "Try to find a nice polynomial function with $\\sqrt{48}$ as a root so\nthat we can apply Newton's method to this function. As a further hint,\nthis about what happens with you square the previous number. Can you\nfind a second degree polynomial with integer coefficients such that\n$\\sqrt{48}$ is a root?"
+    ]
+}

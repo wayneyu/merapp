@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(e)", 
+    "course": "MATH307", 
+    "statement": "Explain how you could use the \\emph{fft} command in MATLAB/Octave to\ncompute approximations of the coefficients \\emph{c\\textsubscript{n}} in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}. Write down the commands you would use, and say for what values of\n\\emph{n} you would expect your approximations to be most accurate.", 
+    "year": 2010, 
+    "sols": [
+        "We need to sample $f(x) = x$.\n\nFor example,\n\n\\texttt{~~~F~=~linspace(0,1,100);}\\\\\\texttt{~~~C~=~fft(F);}\n\nIf $C =[\\tilde{c_0},\\tilde{c_1},\\tilde{c_2},...]$, then\n$\\tilde{c_n}\\simeq \\frac{1}{100}c_n$"
+    ], 
+    "hints": []
+}

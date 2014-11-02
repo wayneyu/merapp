@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01_(k)", 
+    "course": "MATH100", 
+    "statement": "If $\\displaystyle f(0) = 10$ and $f'(x) \\geq 3$ for $0 \\leq x \\leq 4$,\nwhat is the least $\\displaystyle f(4)$ could possibly be?", 
+    "year": 2010, 
+    "sols": [
+        "Notice that $\\displaystyle f(x)$ is differentiable on\n$\\displaystyle [0,4]$ and hence it is continuous there. Thus, by the\nmean value theorem, there exists a point $\\displaystyle c \\in [0,4]$\nsuch that\n\n$\\displaystyle f'(c) = \\frac{f(4)-f(0)}{4-0}$.\n\nWe know that on $\\displaystyle [0,4]$ that $\\displaystyle f'(x) \\geq 3$.\nSince $\\displaystyle c \\in [0,4]$ and $\\displaystyle f(0) = 10$ , we\nhave that\n\n$\\displaystyle 3 \\leq f'(c) = \\frac{f(4)-f(0)}{4-0} = \\frac{f(4)-10}{4}$.\n\nSolving gives $\\displaystyle 22 \\leq f(4)$ and hence the minimum\n$\\displaystyle f(4)$ could be is 22."
+    ], 
+    "hints": [
+        "Let's look at all the information we have. We know that we are looking\nat a function on an interval $\\displaystyle [0,4]$ where we know\nsomething about its derivative and about the value of the function at 0.\nDo we have a formula or a theorem that can relate all these values?", 
+        "Try the mean value theorem.", 
+        "The mean value theorem states the following:\n\nIf $\\displaystyle f(x)$ is continuous on $\\displaystyle [a,b]$ and\ndifferentiable on $\\displaystyle (a,b)$, then there exists a point\n$\\displaystyle c \\in [a,b]$ such that\n\n$\\displaystyle f'(c) = \\frac{f(b)-f(a)}{b-a}$."
+    ]
+}

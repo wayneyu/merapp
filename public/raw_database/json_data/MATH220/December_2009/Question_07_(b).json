@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH220", 
+    "statement": "Decide whether the following sequences converge or diverge. Prove your\nanswers using the definition of convergence.\n\n\\[b_n=\\frac{3n^2-4n}{n^2+5n+2}.\\]", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

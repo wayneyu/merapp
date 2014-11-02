@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_A_02", 
+    "course": "MATH102", 
+    "statement": "To find a point (\\emph{a},\\emph{cos(a)}) on the graph of \\emph{y =\ncos(x)} whose tangent line goes through the origin, which of the\nfollowing equations must you solve?\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(a)} $\\cot(a)= a$\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(b)} $\\cot(a)= -a$\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(c)} $\\tan(a)= a$\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\textbf{(d)} $\\tan(a)= -a$\n\\end{itemize}", 
+    "year": 2012, 
+    "sols": [
+        "As stated in the hint, we will begin by sketching a picture of $\\cos x$\nand a few tangent lines.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math_102_December_2012_Question_A2_Solution_graph_1.jpg}\n\\caption{MER Math 102 December 2012 Question A2 Solution graph 1.jpg}\n\\end{figure}\n\nThe scenario described in the question is shown by the red line line.\nRedrawing and relabeling the sketch looks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math_102_December_2012_Question_A2_Solution_graph_2.jpg}\n\\caption{MER Math 102 December 2012 Question A2 Solution graph 2.jpg}\n\\end{figure}\n\n(Solution writer's note: The sketches above are nice and neat for\nclarity, but in real life, i.e. when you're actually taking an exam,\nmessy is okay. My original sketch to solve the problem looked like the\nthumbnail on the right.\n\\includegraphics[width=.5\\textwidth]{MER_Math_102_December_2012_Question_A2_Solution_sketch.jpg}.\nThe point of drawing a sketch is often just to understand what the\nproblem is asking.)\n\nNow there are two ways to compute the slope of the tangent line above.\nThe first is our traditional slope formula:\n\n$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{\\cos(a) - 0}{a - 0} = \\frac{\\cos(a)}{a}$\n\nThe second is through the derivative, as this is the tangent line of\n$y = \\cos x$ at \\emph{x = a}:\n\n$\\displaystyle y' = -\\sin x$\n\n$\\displaystyle m = - \\sin (a)$\n\nAs these two methods are giving the slope of the same line, they must be\nequal:\n\n$\\frac{\\cos(a)}{a} = -\\sin(a)$\n\nCross-multiplying gives:\n\n$\\frac{\\cos(a)}{\\sin(a)} = -a$\n\nOr $\\cot (a) = -a$, which is answer \\textbf{(b)}."
+    ], 
+    "hints": [
+        "Try sketching this scenario: a tangent line to $\\cos (x)$ that passes\nthrough the origin. How could you compute the slope of that line? (There\nwill be two methods)"
+    ]
+}

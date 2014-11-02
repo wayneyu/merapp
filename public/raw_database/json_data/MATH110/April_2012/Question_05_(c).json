@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\]\n\n\\textbf{(c)} Find the horizontal asymptotes of $f$.", 
+    "year": 2012, 
+    "sols": [
+        "We take limits of the function at positive and negative infinity.\n\n\\begin{align*}\n \\lim_{x \\to \\infty} f(x) &= \\lim_{x \\to \\infty} \\frac{2x^2}{x^2 - 1} \\\\\n &= \\lim_{x \\to \\infty} \\frac{2x^2}{x^2 - 1}\\frac{1/x^2}{1/x^2} \\\\\n &= \\lim_{x \\to \\infty} \\frac{2}{1 - 1/x^2} \\\\\n&= 2 \\end{align*}\n\n\\begin{align*}\n \\lim_{x \\to -\\infty} f(x) &= \\lim_{x \\to -\\infty} \\frac{2x^2}{x^2 - 1} \\\\\n &= \\lim_{x \\to -\\infty} \\frac{2x^2}{x^2 - 1}\\frac{1/x^2}{1/x^2} \\\\\n &= \\lim_{x \\to -\\infty} \\frac{2}{1 - 1/x^2} \\\\\n&= 2 \\end{align*}\n\nSo the horizontal asymptotes at positive and negative infinity are both\n\\emph{y = 2}."
+    ], 
+    "hints": [
+        "We find horizontal asymptotes by taking limits of the function at\npositive and negative infinity."
+    ]
+}

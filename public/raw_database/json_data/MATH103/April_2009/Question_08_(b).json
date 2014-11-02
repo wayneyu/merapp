@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(b)", 
+    "course": "MATH103", 
+    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\[\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\\]\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nOn the first day, the plant grew 1mm. Determine the constant \\emph{a}.", 
+    "year": 2009, 
+    "sols": [
+        "By knowing that $h(1)=1$, we calculate\n\n$1=h(1)=2a(e^{\\frac12}-1)$\n\n\\[a=\\frac{1}{2(e^{\\frac12}-1)}\\].\n\nSo, the function of height is\n\n$h(t)=\\frac{e^{\\frac{t}{2}}-1}{e^{\\frac12}-1}.$"
+    ], 
+    "hints": [
+        "Find $a$ with help of $h(1)=1$."
+    ]
+}

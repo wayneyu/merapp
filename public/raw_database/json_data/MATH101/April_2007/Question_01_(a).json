@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n$\\displaystyle \\int(2y+1)^{5}\\, dy$", 
+    "year": 2007, 
+    "sols": [
+        "Let $\\displaystyle x = 2y+1$ so that $\\displaystyle dx = 2dy$ and hence\n\n$\\int(2y+1)^{5} \\, dy = \\int \\frac{x^{5}}{2}\\, dx  = \\frac{x^{6}}{12} + C = \\frac{(2y+1)^{6}}{12} +C$"
+    ], 
+    "hints": [
+        "Try a substitution.", 
+        "Try the substitution $x = 2y+1$."
+    ]
+}

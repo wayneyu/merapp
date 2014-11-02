@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_202_07_(b)", 
+    "course": "MATH307", 
+    "statement": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\[f(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\\]\n\n\\textbf{(b)} \\emph{$f$(x)} must pass through all given points. Write down\nthe linear equations expressing this condition.", 
+    "year": 2013, 
+    "sols": [
+        "We want\n\n\\begin{align*}\n(0,1) &\\Rightarrow p_1(0)=1\\\\\n(1,0) &\\Rightarrow p_1(1)=0\\\\\n(1,0) &\\Rightarrow p_2(1)=0\\\\\n(2,2) &\\Rightarrow p_2(2)=2\n\\end{align*}\n\nThese translate to:\n\n\\begin{align*}\n1 &= 0+0+0+d_1\\\\\n0 &= a_1+b_1+c_1+d_1\\\\\n0 &= 0+0+0+d_2\\\\\n2 &= a_2+b_2+c_2+d_2\n\\end{align*}"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\]\n\nwhere $\\lambda$ is a positive constant, \\emph{t} \u2265 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind the general solution to the differential equation above.", 
+    "year": 2012, 
+    "sols": [
+        "Separating variables and integrating as an indefinite integral,\n\n\\begin{align*}\n\\frac{y \\; dy}{y^2-k^2} & = -\\lambda t \\; dt \\\\\n\\int \\frac{y \\; dy}{y^2-k^2} & = -\\lambda \\int t \\; dt\n\\end{align*}\n\nWe make a simple substitution in the \\emph{y} integral \\emph{u}=\n\\emph{y}\\textsuperscript{2}-\\emph{k}\\textsuperscript{2}, d\\emph{u} =\n2\\emph{y} d\\emph{y} to find\n\n\\begin{align*}\n\\int \\frac{\\frac{1}{2} du}{u} & = -\\lambda \\frac{1}{2} t^2 + C_1  \\\\\n\\frac{1}{2} \\ln(|u|) & = -\\lambda \\frac{1}{2} t^2 + C_1 \\\\\n\\ln(|y^2-k^2|) & = -\\lambda  t^2 + C_2,\n\\end{align*}\n\nwith \\emph{C\\textsubscript{2}}=2\\emph{C\\textsubscript{1}} is the\nconstant of integration. Evaluating this at \\emph{t}=0, we find\n$C_2 = \\ln(|y_0^2-k^2|)$, hence\n\n\\begin{align*}\n\\ln(|y^2-k^2|) & = \\ln(|y_0^2-k^2|) -\\lambda  t^2 \\\\\n|y^2-k^2| & = |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t)^2 & = k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t) & = \\pm \\sqrt{k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2}}\n\\end{align*}\n\nTo choose branches $\\pm$ we need more specific initial conditions."
+    ], 
+    "hints": [
+        "To solve this differential equation, use separation of variables: Move\nall the y's to the left hand side of the equation, move all the t's to\nthe right hand side of the equation, and integrate the left hand side in\ny and the right hand side in t."
+    ]
+}

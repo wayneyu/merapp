@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_C_03_(b)", 
+    "course": "MATH102", 
+    "statement": "This question is about approximating the value of $b = \\sqrt{48}$.\n\n\\textbf{(b)} Use a linear approximation to estimate \\emph{b}. Is your\nestimate larger or smaller than the actual value? Justify your claim.", 
+    "year": 2012, 
+    "sols": [
+        "Using the linear approximation formula\n\n$f(x) \\approx f'(a)(x - a) + f(a)$\n\nwhere our function is $f(x) = \\sqrt{x}$ and our value of \\emph{a} will\nbe a number near 48. Choosing \\emph{a = 49} is sensible because you can\ntake the square root easily. We can either calculate\n$\\displaystyle f'(x)$ again or note that we already found it in\n\\href{Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_2}{question\nC2} as $f'(x) = 1/(2\\sqrt{x})$. Plugging all this in gives:\n\n$f(x) \\approx \\frac{1}{2\\sqrt{49}}(x - 49) + \\sqrt{49} = \\frac1{14}(x - 49) + 7$\n\nTo approximate $b = \\sqrt{48}$, we say\n\n$\\sqrt{48} = f(48) \\approx  \\frac1{14}(48 - 49) + 7 = \\frac{-1}{14} + 7 = 6\\frac{13}{14}$\n\nWhether the linear approximation is an over or under estimate depends on\nthe concavity of the function - if $f(x)$ is concave up, the tangent\nline approximation lies below the graph and is an under-estimate; the\nopposite is true if $f(x)$ is concave down. Because $f(x) = \\sqrt{x}$ is\nconcave down, our estimate in this problem is an over-estimate."
+    ], 
+    "hints": [
+        "The linear approximation formula is $f(x) \\approx f'(a)(x - a) + f(a)$,\nwhere $a$ is a number near the number you're approximating. Based on\n\\href{Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_3_(a)}{part\n(a)} of this question, what would be a good choice for \\emph{a}?"
+    ]
+}

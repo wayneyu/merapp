@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(b)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\]\n\nFind all the vertical and horizontal asymptotes of $f$, if there are any.", 
+    "year": 2011, 
+    "sols": [
+        "To find vertical asymptotes, we will take the limit of the function at\n$x = 2$ and $x = -2$. Note that we are taking one-sided limits because\nthe function is not defined on both sides of the point.\n\n\\[\\lim_{x \\to -2^+} \\ln(4-x^2)\\]\n\n\\[\\lim_{x \\to 2^-} \\ln(4-x^2)\\]\n\nAs $x$ goes to -2 (from the right) or 2 (from the left), the expression\n$4-x^2 \\rightarrow 0^+$. So using $y = 4-x^2$ we can rewrite both of\nthese limits as\n\n\\[\\lim_{y \\to 0^+} \\ln(y)\\]\n\nwhich is simply $-\\infty$. So the function has vertical asymptotes at\nboth $x = -2$ and $x=2$.\n\nSince the function is only defined in the interval $(-2,2)$, which is\nbound on both sides, the function does not have horizontal asymptotes."
+    ], 
+    "hints": [
+        "Remember that we find asymptotes using limits. Horizontal asymptotes are\nfound by taking the limit of the function at positive and negative\ninfinity. Vertical asymptotes are found by taking the limit of the\nfunction at points where the function is not defined - specifically\nendpoints of the domain."
+    ]
+}

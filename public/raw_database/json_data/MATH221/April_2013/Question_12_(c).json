@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_12_(c)", 
+    "course": "MATH221", 
+    "statement": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{c)} Find the 3x3 matrix \\emph{P\\textsubscript{2}} which\nrepresents projection of $\\mathbb{R}^3$ onto the given plane.", 
+    "year": 2013, 
+    "sols": [
+        "We simply repeat the process we did in\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(b)}{(b)};\nfor any vector \\emph{u}, we have that $u - P_1(u)$ is in the plane.\nThus, the projection onto the plane is given by the linear\ntransformation $P_2 = I - P_1$, where \\emph{I} is the identity matrix.\n\nSo, we compute it as follows:\n\n$P_2 = \\left[ \\begin{array}{cccc}\n1 & 0 & 0 \\\\ \n0 & 1 & 0 \\\\ \n0 & 0 & 1\\\\ \n\\end{array} \\right]  - \\frac{1}{3}\\left[ \\begin{array}{cccc}\n1 & -1 & 1 \\\\ \n-1 & 1 & -1 \\\\ \n1 & -1 & 1\\\\ \n\\end{array} \\right]  = \\frac{1}{3}\\left[ \\begin{array}{cccc}\n2 & 1 & -1 \\\\ \n1 & 2 & 1 \\\\ \n-1 & 1 & 2\\\\ \n\\end{array} \\right]$."
+    ], 
+    "hints": [
+        "Can you think of how to generalize what you did in part\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(b)}{(b)}?"
+    ]
+}

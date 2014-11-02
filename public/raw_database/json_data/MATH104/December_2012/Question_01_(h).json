@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(h)", 
+    "course": "MATH104", 
+    "statement": "Suppose you approximate cos(0.25) by L(0.25), where L(x) is the linear\napproximation of cos(x) at x=0. Provide an estimate for the absolute\nvalue of the error in your approximation.", 
+    "year": 2012, 
+    "sols": [
+        "Following the hint, we first find a suitable value for \\emph{M}. To do\nthis, we need the second derivative. Computing gives\n\n\\begin{align*}\nf(x) &= \\cos(x)\\\\\nf'(x) &= -\\sin(x)\\\\\nf''(x) &= -\\cos(x)\n\\end{align*}\n\nand thus\n\n\\begin{align*}\n|f''(x)| = |-\\cos(x)| \\leq 1 = M\n\\end{align*}\n\nwhere the above bound holds for any value of \\emph{x}. Plugging into the\nupper bound on the error in a linear approximation as given by the hint,\nwe have\n\n$|R_{1}(0.25)| \\leq \\frac{M}{2}|0.25-0|^{2} = \\frac{1}{2}|0.25-0|^{2} = \\frac{1}{32}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Recall that an upper bound on the error in a linear approximation is\ngiven by\n\n$|R_{1}(x)| \\leq \\frac{M}{2}|x-0|^{2}$\n\nwhere $\\displaystyle R_{1}(x)$ is the error in a linear approximation at\nthe point \\emph{x} and $\\displaystyle M$ is an upper bound on the second\nderivative, that is $\\displaystyle |f''(x)| \\leq M$ for all values of\n\\emph{x} inside our interval $\\displaystyle [0,0.25]$."
+    ]
+}

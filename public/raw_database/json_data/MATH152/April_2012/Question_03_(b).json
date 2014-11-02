@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH152", 
+    "statement": "Let A be the matrix for the linear transformation T. Suppose we know\nthat $\\mathbf{v}_1=\\begin{bmatrix}1\\\\1\\\\1\\end{bmatrix}$,\n$\\mathbf{v}_2=\\begin{bmatrix}0\\\\1\\\\1\\end{bmatrix}$,\n$\\mathbf{v}_3=\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix}$ are eigenvectors of A\nassociated to the eigenvalues $\\lambda=1$, $\\lambda=2$, and $\\lambda=3$\nrespectively.\n\nCalculate $T(\\mathbf{e}_1)$.", 
+    "year": 2012, 
+    "sols": [
+        "The linear transformation acting on the vector $\\mathbf{e}_1$ will get\ngiven by\n\n\\[T(\\mathbf{e}_1)=A\\mathbf{e}_1.\\]\n\nFrom\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_3_(a)}{part\n(a)} we have that\n\n\\[\\mathbf{e}_1=\\mathbf{v}_1-\\mathbf{v}_2.\\]\n\nIn the question we are given the eigenvalues for these eigenvectors so\nwe know\n\n\\begin{align*}\nA\\mathbf{v}_1&=1\\mathbf{v}_1\\\\\nA\\mathbf{v}_2&=2\\mathbf{v}_2\n\\end{align*}\n\nTherefore\n\n\\[T(\\mathbf{e}_1)=A\\mathbf{e}_1=A\\mathbf{v}_1-A\\mathbf{v}_2=\\mathbf{v}_1-2\\mathbf{v}_2=\n\\begin{bmatrix}\n1\\\\\n-1\\\\\n-1\n\\end{bmatrix}.\\]"
+    ], 
+    "hints": [
+        "Since A is the matrix for the linear transformation then\n\n\\[T(\\mathbf{e}_1)=A\\mathbf{e}_1\\]", 
+        "How can our knowledge from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_3_(a)}{part(a)}\nalong with the fact that $\\mathbf{v}_1$, $\\mathbf{v}_2$, $\\mathbf{v}_3$\nare eigenvectors help us?"
+    ]
+}

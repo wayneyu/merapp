@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH215", 
+    "statement": "Find the \\emph{form} (but not the values of the coefficients!) of a\nparticular solution of the nonhomogeneous ODE\n\n\\[\\displaystyle{}y'' - 4y' + 5y = x \\sin(x)\\]", 
+    "year": 2013, 
+    "sols": [
+        "We first need to find the homogeneous solution. The characteristic\npolynomial $r^2 - 4r + 5$ has roots\n$r^\\pm = \\frac{4 \\pm \\sqrt{16-20}}{2} = 2 \\pm i$ and hence the\nhomogeneous solution is a linear combination of $e^{2x} \\sin x$ and\n$e^{2x} \\cos x$.\n\nNo such terms appear in the forcing function. The forcing function\n$x \\sin x$ is a degree one polynomial times a sinusoidal function. We\nthus would guess a particular solution of form\n$x_p = (Ax + B) \\sin x + (Cx + D) \\cos x$."
+    ], 
+    "hints": [
+        "First things first: what's the homogeneous solution?", 
+        "Now that we know the forcing term $\\displaystyle{} x\\sin(x)$ is not\nappearing in the homogeneous solution, what sort of guess would you take\nfor a forcing term that's a \\emph{first degree} polynomial times a\nsinusoidal function?"
+    ]
+}

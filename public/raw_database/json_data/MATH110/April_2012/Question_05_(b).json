@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\]\n\n\\textbf{(b)} Find all the \\emph{x}- and \\emph{y}-intercepts of $f$.", 
+    "year": 2012, 
+    "sols": [
+        "\\textbf{x-intercept}\\[f(x)\\] has an x-intercept when $f(x) = 0$. So\n\n\\[0 = \\frac{2x^2}{x^2-1}\\]\n\nCross multiplying gives $2x^2 = 0$, which simplifies to $x = 0$. So the\nx-intercept is $(0,0)$\n\n\\textbf{y-intercept}\\[f(x)\\] has an y-intercept when $x = 0$. Plugging\nin \\emph{x = 0} gives $f(0) = 0$.\n\nSo the y-intercept is the same as the x-intercept, $(0,0)$"
+    ], 
+    "hints": [
+        "Recall that $f(x)$ has a y-intercept when \\emph{x = 0} and an\nx-intercept when the function is zero."
+    ]
+}

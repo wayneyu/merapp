@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_03_(d)", 
+    "course": "MATH152", 
+    "statement": "A random walk problem with two states has a transition matrix\n\n\\[P = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\\]\n\nd) After many time steps what state is the walker more likely to be?\nJustify briefly.", 
+    "year": 2010, 
+    "sols": [
+        "Using our answer from c), we can study the limit where $n$ goes to\ninfinity. In this case the probability vector approaches\n\n\\[\\hat{\\mathbf{v}} = \\lim_{n \\rightarrow \\infty}P^{n}\\mathbf{v} = \\left[\\begin{array}{c}3/11 \\\\ 8/11\\end{array}\\right].\\]\n\nHence, it is more likely, that the walker will be be in state 2 after a\nlarge number of steps, since the 2nd entry in the vector is larger than\nthe first entry."
+    ], 
+    "hints": [
+        "In your result from c) let the number of step sizes \\emph{n} go to\ninfinity."
+    ]
+}

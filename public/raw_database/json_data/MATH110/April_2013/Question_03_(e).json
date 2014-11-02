@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(e)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(e)} Make a large sketch of the graph of $f$ below, including all\nyou have found in the previous parts of the question.", 
+    "year": 2013, 
+    "sols": [
+        "The function's value is zero at each end of the interval\n\\emph{{[}0,$\\pi${]}}, we have found a maximum at \\emph{$\\pi$/4} and an\ninflection point at \\emph{$\\pi$/2} so your sketch should look something like\nthe plotted function here.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110Q3eApril2013.png}\n\\end{description}\n\nMake sure you visibly identify the maximum and inflection point on your\nsketch of the function."
+    ], 
+    "hints": [
+        "Try incorporating the answers from parts a - d in order: first draw the\nx-intercepts, then where the graph increases and decreases, and finally\nadding the concavity."
+    ]
+}

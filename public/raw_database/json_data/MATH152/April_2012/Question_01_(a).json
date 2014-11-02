@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH152", 
+    "statement": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nDetermine the planes $S_1$ and $S_2$ in equation form.", 
+    "year": 2012, 
+    "sols": [
+        "For the first plane $S_1$ we know that its normal is\n$\\mathbf{n}=[2,1,-1]$ as this is provided. We$^{\\prime}$re also told\nthat the point $P=[1,-1,0]$ is on the plane. Using this information we\ncan easily get the equation for $S_1$ via\n\n\\begin{align*}\n0&=\\mathbf{n}\\cdot\\left(\\mathbf{x}-\\mathbf{P}\\right)\\\\\n&=[2,1,-1]\\cdot[x_1-1,x_2+1,x_3]\\\\\n&=2x_2+x_2-x_3-1.\n\\end{align*}\n\nWe have to work a little harder to get the equation for the plane of\n$S_2$. However, notice we are given three points that are on the plane.\nLet $\\mathbf{u}=\\vec{AB}$ be the vector connecting A to B and\n$\\mathbf{v}=\\vec{AC}$ be the vector connecting A to C. We therefore have\nthat,\n\n\\begin{align*}\n\\mathbf{u}=B-A&=[-2,2,1]\\\\\n\\mathbf{v}=C-A&=[-1,1,1].\n\\end{align*}\n\nWe know that the normal to the plane is orthogonal to all vectors on the\nplane. Since $\\mathbf{u}$ and $\\mathbf{v}$ are on the plane, if we take\ntheir cross product, we will get a vector orthogonal to both\n$\\mathbf{u}$ and $\\mathbf{v}$ and thus be orthogonal to the plane. Call\nthis vector $\\mathbf{m}$,\n\n\\begin{align*}\n\\mathbf{m}&=\\mathbf{u}\\times\\mathbf{v}\\\\\n&=[-2,2,1]\\times[-1,1,1]\\\\\n&=\\textrm{det}\n\\begin{pmatrix}\n\\mathbf{i}  &  \\mathbf{j}  &  \\mathbf{k}\\\\\n-2  &  2  &  1\\\\\n-1  &  1  &  1\n\\end{pmatrix}\\\\\n&=[1,1,0].\n\\end{align*}\n\nWe can now use this normal vector along with any point on the plane to\nget the equation. We will use $\\mathbf{a}=[1,0,0]$,\n\n\\begin{align*}\n0=\\mathbf{m}\\cdot(\\mathbf{x}-\\mathbf{a})=[1,1,0]\\cdot[x_1-1,x_2,x_3]=x_1+x_2-1.\n\\end{align*}\n\nTherefore, we get that the equation for $S_1$ is $2x_1+x_2-x_3-1=0$\nwhile the equation for $S_2$ is $x_1+x_2-1=0$."
+    ], 
+    "hints": [
+        "Recall that in order to define a plane, we need a normal vector and a\npoint on the plane."
+    ]
+}

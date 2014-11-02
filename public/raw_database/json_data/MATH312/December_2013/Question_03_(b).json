@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH312", 
+    "statement": "Determine if $\\displaystyle 2821 = 7 \\cdot 13 \\cdot 31$ is a Carmichael\nnumber. Explain your answer. (Recall that a Carmichael number is a\ncompositive integer \\emph{n} such that\n$\\displaystyle a^{n-1} \\equiv 1 \\mod{n}$ whenever\n$\\displaystyle (a,n) = 1$.)", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

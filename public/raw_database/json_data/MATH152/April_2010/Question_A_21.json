@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_21", 
+    "course": "MATH152", 
+    "statement": "Let \\emph{T} be a linear transformation from 2D to 3D such that\n\n\\[T\\left(\\left[\\begin{array}{c}\n1 \\\\ 1\n\\end{array}\\right]\\right) = \\left[\\begin{array}{c}\n5\u00c2\u00a0\\\\ 2 \\\\ 1\n\\end{array}\\right]\\]\n\nand\n\n\\[T\\left(\\left[\\begin{array}{c}\n2 \\\\ 3\n\\end{array}\\right]\\right) = \\left[\\begin{array}{c} 1\u00c2\u00a0\\\\ 2 \\\\ 8\n\\end{array}\\right]\\]\n\nWhat is the matrix representation of \\emph{T}?", 
+    "year": 2010, 
+    "sols": [
+        "Just like in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_20}{A20},\nwe can write,\n\n\\[\\begin{bmatrix}\n1\\\\\n0\n\\end{bmatrix}\n=\n3\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n-\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\]\n\nNow transformation are linear. This means that T(ax)=aT(x) and\nT(x+y)=T(x)+T(y). Therefore,\n\n\\begin{align*}\nT\\left(\\begin{bmatrix}1\\\\0\\end{bmatrix}\\right) &= T\\left(3\\begin{bmatrix}1\\\\1\\end{bmatrix}-\\begin{bmatrix}2\\\\3\\end{bmatrix}\\right) \\\\\n&=3T\\left(\\begin{bmatrix}1\\\\1\\end{bmatrix}\\right)-T\\left(\\begin{bmatrix}2\\\\3\\end{bmatrix}\\right) \\\\&\n=3\\begin{bmatrix}5\\\\2\\\\1\\end{bmatrix}-\\begin{bmatrix}1\\\\2\\\\8\\end{bmatrix}=\\begin{bmatrix}14\\\\4\\\\-5\\end{bmatrix}.\n\\end{align*}\n\nTherefore\n\n\\[T\\left(\\begin{bmatrix}1\\\\0\\end{bmatrix}\\right)=\\begin{bmatrix}14\\\\4\\\\-5\\end{bmatrix}\\]\n\nand from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_20}{A20}\nwe have,\n\n\\[T\\left(\\begin{bmatrix}0\\\\1\\end{bmatrix}\\right)=\\begin{bmatrix}-9\\\\-2\\\\6\\end{bmatrix}\\]\n\nso therefore\n\n\\[T=\\begin{bmatrix}\n14 & -9\\\\\n4  & -2\\\\\n-5 & 6\n\\end{bmatrix}\\]\n\nwhere we recall that the columns of the transformation matrix are just\nthe transformation of the basis vectors."
+    ], 
+    "hints": [
+        "We already know the transformation of one of the basis vectors from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_20}{A20}.\nIf we knew the transformation on the other basis vector, how could we\nform the matrix?", 
+        "Recall that the columns of a transformation matrix are the\ntransformations of the basis vectors."
+    ]
+}

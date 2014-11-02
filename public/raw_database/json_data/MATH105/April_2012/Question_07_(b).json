@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH105", 
+    "statement": "Consider\n\n\\[\\displaystyle\nf(x,y) = xye^y + \\frac12 x^2 -2.\\]\n\n\\textbf{(b)} Classify each critical point you found in part\n\\textbf{\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_7_(a)}{(a)}}\nas a local maximum, a local minimum, or a saddle point of \\emph{$f$(x,y)}.", 
+    "year": 2012, 
+    "sols": [
+        "To classify the critical points, we use the second derivative test.\n\nFrom $f_x = ye^y + x$, we compute:\n\n\\[\\displaystyle\nf_{xx} = 1\\] and\n\n\\[\\displaystyle\nf_{xy} = e^y + y e^y = e^y (1+y)\\]\n\nFrom $f_y = xe^y (y+1)$, we find:\n\n\\[\\displaystyle\nf_{yy} = x [e^y (y+1) + e^y] = xe^y (y+2)\\]\n\nHence,\n\n\\[D = f_{xx} f_{yy} - f_{xy}^2 = xe^y (y+2) - e^{2y}(1+y)^2\\]\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  At (0,0), we find $D = 0-1 = -1 < 0$. As $D < 0$, we have a\n  \\textbf{saddle point}.\n\\item\n  At (\\emph{e}\\textsuperscript{-1},-1), we find \\emph{D} =\n  e\\textsuperscript{-2} -0 \\textgreater{} 0, so there is either a local\n  maximum or local minimum. From\n  $f$\\textsubscript{\\emph{xx}}(\\emph{e}\\textsuperscript{-1},-1) = 1\n  \\textgreater{} 0, it must be a \\textbf{local minimum}.\n\\end{itemize}"
+    ], 
+    "hints": [
+        "Remember that the critical points are (0,0) and\n(e\\textsuperscript{\u00e2\u0088\u00921},\u00e2\u0088\u00921). To classify them, use the second\nderivative test."
+    ]
+}

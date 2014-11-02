@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_202_06_(a)", 
+    "course": "MATH307", 
+    "statement": "Find the coefficients \\emph{c\\textsubscript{n}} in the Fourier series\n$f(x) = \\sum_{n = -\\infty}^\\infty c_n e^{2\\pi inx}$ if\n\n\\[f(x) = \\begin{cases}\n1, & 0 \\leq x < 1/2 \\\\\n0, & 1/2 \\leq x \\leq 1\n\\end{cases}\\]", 
+    "year": 2013, 
+    "sols": [
+        "Since $e^{i2\\pi nx}$ is an orthonormal basis for any function in the\nHilbert Space we can use the inner product to find the coefficients:\n\n\\[\\left \\langle e^{i2\\pi mx},f(x) \\right \\rangle =\\sum_{n=-\\infty}^{\\infty}c_n \\left \\langle e^{i2\\pi mx},e^{i2\\pi nx} \\right \\rangle=c_mL\\]\n\nTherefore we get:\n\n\\[c_n=\\frac{1}{L}\\int_{a}^{b}e^{-2\\pi inx/L}f(x)dx\\]\n\nComputing this for the given function\n\n\\begin{align*}\nc_0 &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi (0)x}dx+\\int_{1/2}^{1}e^{-i2\\pi (0)x}(0)dx] = \\frac{1}{2} \\\\\nc_n &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi nx}dx+\\int_{1/2}^{1}e^{-i2\\pi nx}(0)dx] \\\\\n&=\\frac{-1}{i2\\pi n}e^{-i2\\pi nx} \\Big|_0^{1/2} =\\frac{-1}{i2\\pi n}[e^{-i\\pi n}-e^0] \\\\\n&=\\frac{i}{2\\pi n}[(-1)^n-1]\n\\end{align*}\n\n$c_n=\\begin{cases}\n\\frac{1}{2} & \\text{if } n=0 \\\\ \n0 & \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} & \\text{if } n \\text{ is odd}\n\\end{cases}$"
+    ], 
+    "hints": []
+}

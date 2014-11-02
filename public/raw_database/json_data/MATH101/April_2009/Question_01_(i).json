@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(i)", 
+    "course": "MATH101", 
+    "statement": "Calculate the derivative $\\displaystyle f'(x)$ if\n\n\\[f(x)=\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt.\\]", 
+    "year": 2009, 
+    "sols": [
+        "Using the fundamental theorem of calculus, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx}\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt \\\\\n&= \\frac{d}{dx}\\left( \\int_x^{0} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&= \\frac{d}{dx}\\left( -\\int_{0}^{x} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&=  - \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\n\\end{align*}\n\nwhere in the last equality on the right most sum, we used the chain rule\nto compute the derivative. This completes the question."
+    ], 
+    "hints": [
+        "Use the fundamental theorem of calculus.", 
+        "Remember that the Fundamental Theorem of Calculus says\n\n\\[\\frac{d}{dx}\\int_a^x g(t) dt = g(x)\\]\n\n(where \\emph{a} is any fixed real number).", 
+        "The integral given in this problem has a function of x in both bounds\n(top and bottom). You can split the integral into two parts to obtain\nthe form in the previous hint."
+    ]
+}

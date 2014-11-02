@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the following recursion relation:\n\n$x_{n+1} = ax_{n} + bx_{n-1}$ where $n \\geq 1$, and $a, b$ $\\epsilon$\n$\\mathbb{R}$\n\nFind the matrix $A_{n}$ so that for all \\emph{n}, we have\n\n$\\begin{bmatrix}\nx_{n+1}\\\\\nx_{n}\n\\end{bmatrix} = A\\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$", 
+    "year": 2010, 
+    "sols": [
+        "It$^{\\prime}$s relatively simple to find the matrix we want. Using the\nrelation given above and the knowledge that $x_{n} = x_{n}$, we can see\nthat the relation can be defined by the matrix equation:\n\n$\\begin{bmatrix}\nx_{n+1}\\\\\nx_{n}\n\\end{bmatrix} = \\begin{bmatrix}\na &b \\\\\n1& 0\n\\end{bmatrix} \\begin{bmatrix}\nx_{n}\\\\\nx_{n-1}\n\\end{bmatrix}$\n\nbut we want to define the $n^{th}$ term by a combination of $x_{1}$ and\n$x_{0}$ by having a matrix $A_{n}$\n\nWe know what $A_{1}$ is,\n\n$A_{1} = \\begin{bmatrix}\na &b \\\\\n1&0\n\\end{bmatrix}$\n\nSo let$^{\\prime}$s use that knowledge and continue:\n\nWhen $n$ = $1$\n\n$\\begin{bmatrix}\nx_{2}\\\\\nx_{1}\n\\end{bmatrix} = \\begin{bmatrix}\na &b \\\\\n1& 0\n\\end{bmatrix} \\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$\n\nand when $n$ = $2$\n\n$\\begin{bmatrix}\nx_{3}\\\\\nx_{2}\n\\end{bmatrix} = \\begin{bmatrix}\na &b \\\\\n1& 0\n\\end{bmatrix} \\begin{bmatrix}\nx_{2}\\\\\nx_{1}\n\\end{bmatrix}$\n\nbut we know what $\\begin{bmatrix}\n\nx_{2}\\\\\nx_{1}\n\\end{bmatrix}$ is, it$^{\\prime}$s merely $\\begin{bmatrix}\na &b \\\\\n1& 0\n\\end{bmatrix} \\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$\n\nso $\\begin{bmatrix}\nx_{3}\\\\\nx_{2}\n\\end{bmatrix} = \\begin{bmatrix}\na & b\\\\\n1 & 0\n\\end{bmatrix} \\begin{bmatrix}\na & b\\\\\n1&0\n\\end{bmatrix} \\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$\n\nor $\\begin{bmatrix}\nx_{3}\\\\\nx_{2}\n\\end{bmatrix} = \\begin{bmatrix}\na & b\\\\\n1 & 0\n\\end{bmatrix} ^2 \\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$\n\ncontinuing along the trend above, we can see that, in general,\n$A_{n} = \\begin{bmatrix}\na &b \\\\\n1 &0\n\\end{bmatrix}^n$"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(c)", 
+    "course": "MATH215", 
+    "statement": "Let $Y(s) = \\mathcal{L}[y]$ be the Laplace transform of the solution\n$y(t)$ to the following initial value problem:\n\n\\[\\begin{cases} y'' - 2y' + y = g(t), \\\\ y(0) = 0, y'(0) = 1 \\end{cases}\\]\n\nwhere $g(t)$ is the function defined in\n\\href{Science:Math Exam Resources/Courses/MATH215/December 2013/Question 04 (a)}{(a)}:\n\n\\[g(t) = \\begin{cases} 0, \\quad t < 1 \\\\ e^{t-1}, \\quad t \\geq 1 \\end{cases}\\]\n\n(c) Calculate the inverse Laplace transform of \\emph{Y(s)} obtained in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)}{(b)}\nto find the solution, \\emph{y(t)}, to the IVP in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)}{(b)}.", 
+    "year": 2013, 
+    "sols": [
+        "We have $Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2}$ and we need\nto find $y(t) = \\mathcal{L}^{-1} (Y(s))$.\n\nThe most important thing here is finding a function $f(t)$ such that\n$\\mathcal{L}(f(t)) = 1/(s-a)^n$. The key identity to realize is that\n$\\mathcal{L}(t^n f(t)) = (-1)^n \\frac{d^n}{ds^n} F(s)$.\n\nWith this knowledge, since $\\mathcal{L}(e^{t}) = 1/(s-1)$, we have\n$\\mathcal{L}(t e^t) = (-1)(-1/(s-1)^2) = 1/(s-1)^2$ and\n$\\mathcal{L}(t^2 e^t) = 2/(s-1)^3$ (note the factor of 2!). Then\n\n\\[Y(s) = e^{-s} \\mathcal{L} (\\frac{1}{2} t^2 e^t) + \\mathcal{L} (t e^t).\\]\n\nWe use one more identity that\n$\\mathcal{L} (u(t-a) f(t-a)) = e^{-as} F(s)$ which allows us to invert\nthe first term (using a=1) on the right-hand side. We find\n\n\\[y(t) = u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.\\]"
+    ], 
+    "hints": [
+        "You can start by trying to find the inverse Laplace transform of\n$1/(s-1)^2$ and $1/(s-1)^3$. These inverse transforms can be derived by\nlooking at $\\mathcal{L}(e^{at})$ and $\\mathcal{L}(t^n e^{at})$."
+    ]
+}

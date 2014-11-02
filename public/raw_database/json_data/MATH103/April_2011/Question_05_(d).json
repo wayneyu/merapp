@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_05_(d)", 
+    "course": "MATH103", 
+    "statement": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nWhich light bulb has the longer expected lifetime? (i.e. longer average\ntime to failure.) Show your reasoning.", 
+    "year": 2011, 
+    "sols": [
+        "The expected lifetime of lightbulb $A$ is\n\n\\begin{align*}\n\\overline t_A= \\int_0^\\infty t p_A(t)dt= \\int_0^\\infty t e^{-t} dt\n\\end{align*}\n\nIntegrating by parts,\n\n\\begin{align*}\n\\overline t_A & = \\left[-te^{-t}\\right]_0^\\infty- \\int_0^\\infty (- e^{-t}) dt = \\int_0^\\infty e^{-t}\\, dt =\\left.-e^{-t}\\right|_0^\\infty = 1.\n\\end{align*}\n\nThe expected lifetime of lightbulb $B$ is\n\n\\begin{align*}\n\\overline t_B= \\int_0^\\infty t p_B(t)dt= 2\\int_0^\\infty t e^{-2t} dt \n\\end{align*}\n\nAgain, integrating by parts,\n\n\\begin{align*}\n\\overline t_B=  2\\left[-t\\frac{ e^{-2t}}{2} \\right]_0^\\infty-2\\int_0^\\infty \\frac{e^{-2t} }{(-2)}dt =\\int_0^\\infty e^{-2t} dt = \\left. \\frac{e^{-2t}}{-2}\\right|_0^\\infty =\\frac12.\n\\end{align*}\n\nHence, lightbulb $A$ has the longer expected lifetime."
+    ], 
+    "hints": [
+        "The expected lifetime, or the expected time to failure, is the mean\nvalue of the random variable $t$ (the time to failure).", 
+        "Recall from (a) and (b) that $p_A(t) = e^{-t}$ and $p_B(t) = 2e^{-2t}.$"
+    ]
+}

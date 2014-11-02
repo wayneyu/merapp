@@ -1,0 +1,17 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH101", 
+    "statement": "Show that the area of the region inside the ellipse\n\n\\[\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1,\\]\n\nwhere \\emph{a} and \\emph{b} are positive constants, equals\n$\\displaystyle \\pi ab.$", 
+    "year": 2008, 
+    "sols": [
+        "We proceed as in the hints. First, we isolate for \\emph{y} to see that\n\n$y^{2} = b^{2} - \\frac{b^{2}x^{2}}{a^{2}} = \\frac{b^{2}}{a^{2}} \\left(a^{2} - x^{2} \\right)$\n\nTaking the square roots yields\n\n$y = \\pm \\frac{b}{a} \\sqrt{a^{2}-x^{2}}$\n\nNow, we want to know the aera fo the ellipse. First, we set $y=0$ to\nfind the points of intersection with the \\emph{x}-axis. This gives\n\n$\\frac{x^{2}}{a^{2}} - 0 = 1$\n\nSo $x = \\pm a$. Thus, we wish to integrate\n\n$y = \\pm \\frac{b}{a} \\sqrt{a^{2}-x^{2}}$\n\nfrom $-a$ to $a$. By symmetry, we need only to integrate the positive\nfunction above and then double our resulting value (pictorially, the\nellipse has a symmetry that is reflection about the \\emph{x}-axis. So to\nget the full area, compute half of it then double your result). Thus, we\nhave that\n\n$A = 2\\int_{-a}^{a}\\frac{b}{a} \\sqrt{a^{2}-x^{2}}\\, dx = \\frac{2b}{a}\\int_{-a}^{a} \\sqrt{a^{2}-x^{2}}\\, dx$\n\nThis last integral can be interpreted as the area of a half circle of\nradius $a$. This has area $\\displaystyle \\frac{\\pi a^2}{2}$. Thus, our\narea is\n\n$A = \\frac{2b}{a}\\int_{-a}^{a} \\sqrt{a^{2}-x^{2}}\\, dx = \\frac{2b}{a} \\cdot \\frac{\\pi a^2}{2} = \\pi ab$\n\ncompleting the question.", 
+        "We proceed as in solution one until the line\n\n$A = \\frac{2b}{a}\\int_{-a}^{a} \\sqrt{a^{2}-x^{2}} \\, dx$\n\nNow we do a trig substitution. Let $x = a\\sin \\theta$ so that\n$dx = a\\cos \\theta d\\theta$. Changing the bounds, we see that\n$a = a\\sin(\\theta)$ so $\\theta = \\tfrac{\\pi}{2}$ and\n$-a = a\\sin(\\theta)$ so $\\theta = -\\tfrac{\\pi}{2}$. Then the above\nbecomes\n\n\\begin{align*}\nA &= \\frac{2b}{a}\\int_{-a}^{a} \\sqrt{a^{2}-x^{2}} \\, dx\\\\\n&= \\frac{2b}{a}\\int_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}} \\sqrt{a^{2}-a^{2} \\sin^{2}\\theta}a\\cos \\theta \\,d\\theta\\\\\n&= 2ab\\int_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}} \\cos^{2} \\theta \\,d\\theta\n\\end{align*}\n\nNow we use the double angle formula\n\n$\\cos^{2}(\\theta) = \\frac{1+\\cos(2\\theta)}{2}$\n\nto see that\n\n\\begin{align*}\nA&= 2ab\\int_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}}\\cos^{2}(\\theta) \\, d\\theta \\\\\n&= 2ab\\int_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}}\\frac{1+\\cos(2\\theta)}{2} \\, d\\theta \\\\\n&= \\left. ab \\theta\\right|_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}} +  ab\\int_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}}\\cos(2\\theta) \\, d\\theta \\\\\n&= \\frac{\\pi ab}{2} + \\frac{\\pi ab}{2}+ \\left.\\frac{ab}{2} \\sin(2\\theta)\\right|_{-\\tfrac{\\pi}{2}}^{\\tfrac{\\pi}{2}}\\\\\n&= \\pi ab  +  \\frac{ab}{2} (\\sin(\\pi) - \\sin(-\\pi))\\\\\n&= \\pi ab\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "First isolate for \\emph{y}.", 
+        "Find the points of intersection of the ellipse and the \\emph{x}-axis.", 
+        "Note that by symmetry we need to only consider the positive square root\nand double the resulting value.", 
+        "Either interpret this result as an area or try the trig substitution\n$x = \\sin(\\theta)$"
+    ]
+}

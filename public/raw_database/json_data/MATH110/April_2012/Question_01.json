@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01", 
+    "course": "MATH110", 
+    "statement": "The curve below is called a \\emph{lemniscate}; it is given by the\nequation\n\n\\[\\displaystyle (x^2 + y^2)^2 = 18(x^2 - y^2)\\]\n\nFind the equation of the tangent line at the point $(2, \\sqrt{2})$ and\nsketch the tangent line.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MathExam_ResourcesCoursesMATH110April_2012Question1.jpg}\n\\caption{MathExam ResourcesCoursesMATH110April 2012Question1.jpg}\n\\end{figure}", 
+    "year": 2012, 
+    "sols": [
+        "To find the equation of the tangent line we need a point and a slope. We\nalready have the point, so it remains to find the slope of the tangent\nline. We will do so by using implicit differentiation.\n\nImplicitly differentiating $(x^2+y^2)^2 = 18(x^2 - y^2)$ gives:\n\n\\[2(x^2 + y^2)(2x + 2y \\cdot y') = 18(2x - 2y \\cdot y')\\]\n\nWe could solve for $y'$ and then plug in the point $(2, \\sqrt{2})$ to\nfind the slope. However, it might be easier to plug in the point first\nand then solve for $y'$, which is what I will do here:\n\n\\begin{align*} \n2((2)^2 + (\\sqrt{2})^2)(2(2) + 2\\sqrt{2} \\cdot y') &= 18(2(2) - 2\\sqrt{2} \\cdot y') \\\\\n8 + 4\\sqrt{2} \\cdot y' &= 12 - 6\\sqrt{2} \\cdot y' \\\\\n4\\sqrt{2} \\cdot y' + 6\\sqrt{2} \\cdot y' &= 12 - 8 \\\\\n(10\\sqrt{2})y' &= 4 \\\\\ny' &= \\frac{2}{5\\sqrt{2}} \\end{align*}\n\nUsing the point slope formula, with slope $\\frac{2}{5\\sqrt{2}}$ and\npoint $(2, \\sqrt{2})$, we get:\n\n\\[y - \\sqrt{2} = \\frac{2}{5\\sqrt{2}} (x - 2)\\]\n\n\\[y = \\frac{2}{5\\sqrt{2}}x - \\frac{4}{5\\sqrt{2}} + \\sqrt{2}\\]\n\nas our tangent line."
+    ], 
+    "hints": [
+        "In order to find the slope of the tangent line you will need to use\nimplicit differentiation."
+    ]
+}

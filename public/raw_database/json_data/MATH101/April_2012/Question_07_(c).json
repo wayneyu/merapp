@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH101", 
+    "statement": "Let $I = \\int_{1}^{2} (1/x)\\, dx$. Without computing \\emph{I}, find an\nupper bound for $|I - S_{4}|$. You may use the fact that if\n$|f^{(4)}(x)|\\leq K$ on the interval $[a,b]$, then the error in using\n\\emph{S}\\textsubscript{\\emph{n}} to approximate $\\int_{a}^{b}f(x)\\,dx$\nhas absolute value less than or equal to $K(b-a)^{5}/180n^{4}$.", 
+    "year": 2012, 
+    "sols": [
+        "We will use the hint in the statement of the problem: if we can find an\nupper bound \\emph{K} on $|f^{(4)}|$, then we know that\n$|I - S_4| \\leq \\frac{K (b-a)^5}{180\\cdot 4^4}$.\n\nFirst we find an upper bound on $f^{(4)}$.\n\n\\begin{align*}\nf'(x) &= -x^{-2} \\\\\nf''(x) &= 2x^{-3} \\\\\nf^{(3)} &= -6x^{-4} \\\\\nf^{(4)} &= 24x^{-5} \\\\\n\\end{align*}\n\nOn our interval of integration, \\emph{{[}1,2{]}},\n$|f^{(4)}(x)| \\leq \\frac{24}{1^5} = 24$. So our upper bound on\n$|f^{(4)}|$ is \\emph{K = 24}.\n\nNow we simply plug this into the error formula given above to get:\n\n$|I - S_4| \\leq \\frac{24 (2-1)^5}{180\\cdot 4^4} = \\frac{24}{180\\cdot 4^4} = \\frac1{1920}$."
+    ], 
+    "hints": [
+        "As it says in the question statement, given $n$, an even integer, and an\nupper bound $K \\geq |f^{(4)}(x)|$ for all $x$ in the interval $[a,b]$,\nthe error that comes from using Simpson's Rule is as follows:\n\n\\[|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\]\n\nHow would you find \\emph{K}?"
+    ]
+}

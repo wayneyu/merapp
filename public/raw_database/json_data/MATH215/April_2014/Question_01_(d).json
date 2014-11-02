@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH215", 
+    "statement": "Find the general solution of $\\displaystyle y'' + 16y = \\sin 4t$", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

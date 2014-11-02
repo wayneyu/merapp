@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Torricelli's Trumpet}\n\nThe surface area of a solid of revolution obtained from revolving\n$\\displaystyle y = f(x)$ about the \\emph{x}-axis for\n$\\displaystyle a \\leq x \\leq b$ is given by\n$\\displaystyle A = 2\\pi \\int_{a}^{b}y\\sqrt{1 + \\big(\\frac{dy}{dx}\\big)^{2}}\\,dx$\n\nConsider the surface area of the surface obtained by revolving\n$\\displaystyle y = 1/x$ about the \\emph{x}-axis, where \\emph{x} has\ndomain $\\displaystyle [1,\\infty)$. Show whether this surface area exists\n(integral converges) or diverges. If it exists, provide an upper bound.", 
+    "year": 2013, 
+    "sols": [
+        "In our scenario, the surface area is\n$\\displaystyle A = 2\\pi \\int_{1}^{\\infty}\\frac{1}{x}\\sqrt{1 + \\big(\\frac{dy}{dx}\\big)^{2}}\\,dx$\n\nAs mentioned in the hint, the square root must always be at least 1 on\nthe domain $\\displaystyle [1,\\infty)$ since\n$\\displaystyle \\frac{1}{x}\\sqrt{1 + \\big(\\frac{dy}{dx}\\big)^{2}} = \\frac{1}{x}\\sqrt{1 + \\big(-\\frac{1}{x^2}\\big)^{2}} = \\frac{1}{x}\\sqrt{1 + \\frac{1}{x^4}} > \\frac{1}{x}$\n\nNow, since\n\n\\begin{align*}\n\\int_{1}^{\\infty}\\frac{1}{x}\\,dx = \\lim_{b \\to \\infty}\\int_{1}^{b}\\frac{1}{x}\\,dx = \\lim_{b \\to \\infty}\\ln|x|\\big|_{1}^{b} = \\lim_{b \\to \\infty}\\ln|b| - \\ln(1)\n\\end{align*}\n\ndiverges, we have that our integral diverges by the integral comparison\ntest. Thus the surface area diverges.\n\nNOTE: Even though you can fill the horn with a finite amount of paint,\nyou cannot paint the inside with a finite amount of paint."
+    ], 
+    "hints": [
+        "First remind yourself of the comparison test for integrals (its similar\nto that for series).\n\nIf $\\displaystyle 0 \\leq f(x) \\leq g(x)$ and if\n$\\displaystyle \\int_{a}^{b}g(x)\\,dx$ converges then\n$\\displaystyle \\int_{a}^{b}f(x)\\,dx$ also converges. If instead\n$\\displaystyle \\int_{a}^{b}f(x)\\,dx$ diverges, then\n$\\displaystyle \\int_{a}^{b}g(x)\\,dx$ diverges", 
+        "Plug in $\\displaystyle y = 1/x$ into the surface area formula, we know\nthat the square root function has to be at least one on the domain in\nquestion. Use this to your advantage.", 
+        "Show this integral diverges."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "Express\n\n\\[\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}\\]\n\nas a definite integral. \\emph{Do not} evaluate the integral.", 
+    "year": 2008, 
+    "sols": [
+        "From the question, we immediately see that\n\n\\[\\displaystyle \\Delta x = \\frac{1}{n}\\]\n\nNow, to determine $\\displaystyle x_{i}$, notice that we have that the\nfunction is of the form\n\n\\[\\displaystyle f(x_{i}) = \\frac{1}{1 + (\\tfrac{i}{n})^{2}}.\\]\n\nThe only composition of functions is underneath the square sign. So we\nmust have that\n\n\\[\\displaystyle f(x) = \\frac{1}{1 + x^{2}}\\]\n\nand hence that\n\n\\[\\displaystyle x_{i} = \\frac{i}{n}\\]\n\nAs $\\displaystyle x_{i} = a + i\\Delta x$, we have that\n$\\displaystyle a = 0$ and hence since\n\n\\[\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} = \\frac{b}{n}\\]\n\nwe have that $\\displaystyle b = 1$. Combining the above gives\n\n\\[\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}} = \\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\\]\n\nwhich completes the question."
+    ], 
+    "hints": [
+        "This is a Riemann sum. Recall that\n\n\\[\\displaystyle \\Delta x = \\frac{b-a}{n}\\]\n\nand that\n\n\\[\\displaystyle x_{i} = a + i\\Delta x.\\]\n\nThen do a pattern match."
+    ]
+}

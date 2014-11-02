@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH220", 
+    "statement": "For each subset of $\\mathbb{R}$ give its supremum, maximum, infimum, and\nminimum if they exist. If they do not exist write \\emph{``none''}. You\ndo not need to justify your answers.\n\n\\begin{longtable}[c]{@{}lllll@{}}\nthe sets & sup & max & inf & min\\\\\n\n$\\{x\\in\\mathbb{R}\\quad\\textrm{s.t.}\\quad{}2\\leq{x}<\\pi\\}$ & & & &\\\\\n$\\{x\\in\\mathbb{Q}\\quad\\textrm{s.t.}\\quad{}x\\geq0\\quad\\textrm{and}\\quad{}x^2\\leq5\\}$\n& & & &\\\\\n$\\{x\\in\\mathbb{Z}\\quad\\textrm{s.t.}\\quad{}x^2\\geq4\\}$ & & & &\\\\\n$\\bigcup_{n=1}^\\infty\\left[\\frac{1}{n},n^2+1\\right]$ & & & &\\\\\n\\end{longtable}", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

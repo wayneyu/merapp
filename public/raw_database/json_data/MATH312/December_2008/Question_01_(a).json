@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\n$\\displaystyle a \\mid (b + c)$ then $\\displaystyle a \\mid b$ and\n$\\displaystyle a \\mid c$.", 
+    "year": 2008, 
+    "sols": [
+        "The answer is \\textbf{false}. Let $\\displaystyle a=2,b=1,c=1$. Then\n$\\displaystyle a \\mid (b+c)$ but $\\displaystyle a \\nmid b$ or \\emph{c}."
+    ], 
+    "hints": [
+        "Try to find a counter example using very small numbers."
+    ]
+}

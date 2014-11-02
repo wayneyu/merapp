@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(d)", 
+    "course": "MATH152", 
+    "statement": "Consider the 2 x 2 system of differential equations\n\n\\[\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\\]\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nDescribe the trend of the solution as $t\\to\\infty$.", 
+    "year": 2012, 
+    "sols": [
+        "Since $\\displaystyle e^{-t}$ goes to 0 as\n$\\displaystyle t \\rightarrow \\infty$, the solution goes to 0 as well."
+    ], 
+    "hints": [
+        "Apply the limit $t \\rightarrow \\infty$ to your solution from part\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(c)}{(c)}."
+    ]
+}

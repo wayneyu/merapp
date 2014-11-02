@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH312", 
+    "statement": "Let \\emph{b} be a positive integer. Explain what a pseudoprime to the\nbase \\emph{b} is.", 
+    "year": 2008, 
+    "sols": [
+        "We say that \\emph{n} is a pseudoprime to the base \\emph{b} if \\emph{n}\nis a composite integer and\n\n$\\displaystyle b^{n} \\equiv b \\mod{n}$."
+    ], 
+    "hints": [
+        "Check your notes for the definition."
+    ]
+}

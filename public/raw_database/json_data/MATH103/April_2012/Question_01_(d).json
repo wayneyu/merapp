@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH103", 
+    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nThe value of the integral\n\n\\[\\int_0^\\pi \\sin^3(x) \\,dx\\] is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nA. 0\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nB. 1\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nC. $\\pi$/2\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nD. $\\pi$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nE. 4/3\n\\end{description}", 
+    "year": 2012, 
+    "sols": [
+        "We use the substitution\n\n\\[u= \\cos(x)\\] then we have\n\n\\[du= -\\sin(x) \\,dx\\] and\n\n\\[\\displaystyle\n\\sin^2 (x)=1-u^2\\]\n\nTherefore\n\n\\[\\displaystyle\n\\sin^3(x) \\,dx = (1-u^2) (-1) du = (u^2-1) du\\]\n\nConsequently\n\n\\[\\int \\sin^3(x) dx = \\int (u^2-1) du = \\frac {u^3} 3 - u = \\frac{\\cos^3(x)} 3 - \\cos(x)\\]\n\nAnd so we can compute the integral\n\n\\begin{align*}\n\\int_0^{\\pi} \\sin^3(x) \\,dx &= \\frac{\\cos^3(x)} 3 - \\cos(x) \\Bigr|_0^{\\pi} \\\\\n&= (-1/3+1) - (1/3-1)\\\\\n&= 4/3\n\\end{align*} and the correct answer is E."
+    ], 
+    "hints": [
+        "Use the formula\n\n\\[\\sin^2(x) + \\cos^2(x)=1.\\]", 
+        "Then use the substitution that allows you to use the chain rule simply."
+    ]
+}

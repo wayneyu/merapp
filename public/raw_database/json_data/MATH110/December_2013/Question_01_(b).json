@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nb) If $\\lim_{x \\rightarrow 1}f(x) = 4$, then $\\displaystyle f(1) = 4$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

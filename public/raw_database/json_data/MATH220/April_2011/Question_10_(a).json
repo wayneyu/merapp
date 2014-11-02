@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_10_(a)", 
+    "course": "MATH220", 
+    "statement": "Let $A \\subset \\mathbb R$ be a bounded set of real numbers and let\n$B \\subseteq A$ be a nonempty subset of \\emph{A}. Prove that \\emph{B} is\nalso bounded and that\n\n\\[\\inf(A) \\leq \\sup(B) \\leq \\sup(A).\\]", 
+    "year": 2011, 
+    "sols": [
+        "By definition of the supremum of a set, sup(\\emph{B}) is the smallest\nreal number that is larger or equal to all the numbers in the set\n\\emph{B}. Since all the numbers of the set \\emph{B} are also numbers of\nthe set \\emph{A}, we can conclude that sup(\\emph{A}) is also larger or\nequal to all the numbers of the set \\emph{B} (since it is larger or\nequal to all numbers in the set \\emph{A}) but since sup(\\emph{B}) is the\nsmallest real number with that property we can conclude that\n\n\\[\\sup(B) \\leq \\sup(A)\\]\n\nNow inf(\\emph{A}) is a number that is less or equal than any number in\nthe set \\emph{A} and so since \\emph{B} is a subset, it is in particular\nless or equal to any number in the set \\emph{B}. Since sup(\\emph{B}) is\nlarger than any number in the set \\emph{B} we can conclude that\n\n\\[\\inf(A) \\leq \\sup(B)\\]\n\n\\textbf{\\emph{Note:}} \\emph{we could actually prove the more interesting\nand stronger statement:}\n\n\\[\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\\]"
+    ], 
+    "hints": [
+        "Recall the definition of\n\\href{http://en.wikipedia.org/wiki/Supremum}{supremum} and\n\\href{http://en.wikipedia.org/wiki/Infimum}{infimum} of sets of real\nnumbers."
+    ]
+}

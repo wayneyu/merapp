@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(d)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx$", 
+    "year": 2007, 
+    "sols": [
+        "Notice that\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &= \\int (\\cos^{2} x)(\\sin^{4} x)\\cos x \\, dx \\\\\n&=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx\n\\end{align*}\n\nSo let $u = \\sin x$ so $du = (\\cos x)dx$. Thus,\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx \\\\\n&= \\int (1-u^{2} ))u^{4} \\, du \\\\ \n&= \\int u^{4}-u^{6} \\, du \\\\\n&= \\frac{u^{5}}{5} - \\frac{u^{7}}{7} +C\\\\\n&= \\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The power of cosine is odd. Peel off a power then try a substitution."
+    ]
+}

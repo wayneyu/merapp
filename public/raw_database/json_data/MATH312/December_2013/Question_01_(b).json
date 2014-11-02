@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH312", 
+    "statement": "Find the inverse of 16 modulo 19 and solve the congruence\n$\\displaystyle 16x \\equiv 2 \\mod{19}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

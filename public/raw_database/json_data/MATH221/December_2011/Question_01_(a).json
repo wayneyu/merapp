@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH221", 
+    "statement": "Consider the system of equations in the variables\n\\emph{x}\\textsubscript{1}, \\emph{x}\\textsubscript{2},\n\\emph{x}\\textsubscript{3}:\n\n\\begin{align*}\n&x_1 + 2x_2 + 3x_3 &= 1\\\\\n&x_1 + x_2 + 2x_3 &= 2\\\\\n&2x_1 + 3x_2 + (5+t)x_3 &= 2\n\\end{align*} Determine all the values of \\emph{t} for which the system\nis consistent.", 
+    "year": 2011, 
+    "sols": [
+        "We can write this system in matrix form:\n\n\\[\\left[ \\begin{array}{ccc}\n1 & 2 & 3 \\\\\n1 & 1 & 2 \\\\\n2 & 3 & 5+t\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx_1 \\\\\nx_2 \\\\\nx_3\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n1 \\\\\n2 \\\\\n2\n\\end{array} \\right]\\]\n\nTo know if the system is consistent, we want to look at the row reduced\nform of the augmented matrix.\n\nFirst, perform the operations L\\textsubscript{2} \u2192\nL\\textsubscript{2}-L\\textsubscript{1} and L\\textsubscript{3} \u2192\nL\\textsubscript{3}-2L\\textsubscript{1}\n\n\\[\\left[ \\begin{array}{cccc}\n1 & 2 & 3 & 1 \\\\\n1 & 1 & 2 & 2 \\\\\n2 & 3 & 5+t & 2\n\\end{array} \\right]  \\sim \\left[ \\begin{array}{cccc}\n1 & 2 & 3 & 1 \\\\\n0 & -1 & -1 & 1 \\\\\n0 & -1 & -1+t & 0\n\\end{array} \\right]\\] Then, perform L\\textsubscript{2} \u2192\n(-1)L\\textsubscript{2}\n\n\\[\\sim \\left[ \\begin{array}{cccc}\n1 & 2 & 3 & 1 \\\\\n0 & 1 & 1 & -1 \\\\\n0 & -1 & -1+t & 0\n\\end{array} \\right]\\] Perform L\\textsubscript{3} \u2192\nL\\textsubscript{3}+L\\textsubscript{2}\n\n\\[\\sim \\left[ \\begin{array}{cccc}\n1 & 2 & 3 & 1 \\\\\n0 & 1 & 1 & -1 \\\\\n0 & 0 & t & -1\n\\end{array} \\right]\\]\n\nIf we read the last row of this matrix, we obtain the equation\n\n\\[\\displaystyle\ntx_3 = -1\\]\n\nThe system is inconsistent if \\emph{t} = 0 since that would give us the\nequation 0 = -1. Hence the system is consistent for all non-zero values\nof \\emph{t}."
+    ], 
+    "hints": [
+        "Writing this system in matrix form, what will tell you whether the\nsystem is consistent or not?", 
+        "A linear system of three equations is consistent if it has a solution\n(\\emph{x}\\textsubscript{1}, \\emph{x}\\textsubscript{2},\n\\emph{x}\\textsubscript{3})."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08", 
+    "course": "MATH220", 
+    "statement": "Suppose that $\\{ b_n \\}$ is a sequence that satisfies\n\n\\[|b_m-b_n| < \\frac{1}{m+n} \\quad\\text{for all }m,n \\in \\mathbb{N}.\\]\n\nProve that\n\n\\[\\lim_{n \\to \\infty} b_n\\] exists.", 
+    "year": 2005, 
+    "sols": [
+        "We can show that the sequence ${b_n}$ is Cauchy. Let \u03b5 \\textgreater{} 0,\nthen if \\emph{n} and \\emph{m} are larger than 1/(2\u03b5) (that's the value\nof \\emph{N}, you can see from the argument below how we might have\nguessed it), then if \\emph{m} \u2265 \\emph{n}, we have that\n\n\\[\\displaystyle\n| b_m - b_n | < \\frac{1}{m+n} \\leq \\frac{1}{2n} < \\epsilon\\]\n\nAnd since Cauchy sequences of real numbers are always convergent, we\nknow that the limit of this sequence exists."
+    ], 
+    "hints": [
+        "Have you heard of\n\\href{http://en.wikipedia.org/wiki/Cauchy_sequence}{Cauchy sequences}?\nTry seeing if the sequence is Cauchy. If you haven't, first see if you\nshould (the curriculum might have changed since 2005)."
+    ]
+}

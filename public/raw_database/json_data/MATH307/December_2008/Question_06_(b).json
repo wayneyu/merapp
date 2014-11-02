@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH307", 
+    "statement": "Let \\emph{u} be a unit vector and \\emph{Q = I - 2uu\\textsuperscript{T}}.\nShow:\n\n\\textbf{(b)} The matrix \\emph{Q + iI} is invertible.", 
+    "year": 2008, 
+    "sols": [
+        "Recall the definition of the eigenvalue, we know that $-i$ is one of\nQ$^{\\prime}$s eigenvalues when $det(Q+iI)=0$, and $Q+iI$ is invertible\nif and only if $det(Q+iI)\\neq 0$. From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_06_(a)}{part\na}, we know that Q is a symmetric matrix. A symmetric matrix will only\nhave real eigenvalues and since $-i$ is not real, it is not an\neigenvalue of Q and $det(Q+iI)$ is never equal to zero.\n\nTherefore, the matrix $Q+iI$ is invertible."
+    ], 
+    "hints": [
+        "Think eigenvalues and recall part (a)."
+    ]
+}

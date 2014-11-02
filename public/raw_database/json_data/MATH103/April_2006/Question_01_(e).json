@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH103", 
+    "statement": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\n$\\displaystyle 1 -2x^{2}$ is the second order Taylor polynomial (around\n$x=0$) for which one of the following functions?\n\ni. $\\displaystyle 1 -\\sin(4x)$\n\nii. $\\displaystyle e^{-x^{2}}$\n\niii. $\\displaystyle \\cos(2x)$\n\niv. $\\displaystyle e^{-4x}$\n\nv. $\\displaystyle \\cos(x)$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

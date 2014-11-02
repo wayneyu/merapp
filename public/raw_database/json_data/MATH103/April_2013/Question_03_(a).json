@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Continuous Probability.}\n\nLet $\\displaystyle X \\geq 0$ be a random variable on the interval\n$\\displaystyle  [0,a]$ with probability density function\n$\\displaystyle  p(x)$. The mean of \\emph{X} is given by\n$\\displaystyle \\overline{x} = \\int_{0}^{a}xp(x)\\,dx$. Show that\n$\\displaystyle \\overline{x}$ can also be computed as\n$\\displaystyle \\overline{x} = \\int_{0}^{a}(1-F(x))\\,dx$, where\n$\\displaystyle F(x)$ is the cumulative distribution function (cdf) of\n\\emph{X}.", 
+    "year": 2013, 
+    "sols": [
+        "Notice that $\\displaystyle F(x)$ is an antiderivative of\n$\\displaystyle p(x)$. If we use integration by parts, we let\n$\\displaystyle u = x$ and $\\displaystyle dv = p(x)dx$ so that\n$\\displaystyle du = dx$ and $\\displaystyle v = F(x)$ so that\n\n\\begin{align*}\n\\overline{x} &= \\int_{0}^{a}xp(x)\\,dx \\\\\n&= xF(x)\\big|_{0}^{a} - \\int_{0}^{a}F(x)\\,dx \\\\\n&= aF(a) - (0)F(0) - \\int_{0}^{a}F(x)\\,dx \\\\\n\\end{align*}\n\nNow, since the probability distribution is only defined on {[}0,a{]}\nthen the cumulative probability satisfies \\emph{F(0)=0} since nothing\ncan happen before 0 and \\emph{F(a)=1} since by \\emph{x=a}, there is a\n100\\% chance that our event happened. Therefore,\n\n\\begin{align*}\n\\overline{x}&= a - \\int_{0}^{a}F(x)\\,dx \\\\\n&= \\int_{0}^{a}1 - \\int_{0}^{a}F(x)\\,dx \\\\\n&= \\int_{0}^{a}(1 - F(x))\\,dx \\\\\n\\end{align*}\n\nIf we missed the second last step, we could have instead simplified the\nother equation to see that\n$\\displaystyle \\overline{x} = \\int_{0}^{a}(1-F(x))\\,dx = a - \\int_{0}^{a}F(x)$\nand thus the two sides are equal. Either way this completes the proof."
+    ], 
+    "hints": [
+        "Approach this question as a left hand side, right hand side proof\nproblem. We start with the definition of mean and want to get to\n$\\displaystyle \\overline{x} = \\int_{0}^{a}(1-F(x))\\,dx$. Starting from\n$\\displaystyle \\overline{x} = \\int_{0}^{a}xp(x)\\,dx$, what integration\ntechniques can we use to get a start on it?", 
+        "Try integration by parts on the mean.", 
+        "What does $F(a)$ equal?", 
+        "If you get stuck, try simplifying the other side of the equality to\nhelp."
+    ]
+}

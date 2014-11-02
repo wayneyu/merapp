@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH307", 
+    "statement": "Consider the matrix\n\n$A =\\begin{bmatrix}\n1& 2& 0& 3& 4 \\\\ \n2& 4& 3& 0& 5 \\\\ \n1& 2& -1& 5& 5 \n\\end{bmatrix}$\n\n\\textbf{(d)} Find a basis for the row space of \\emph{A}.", 
+    "year": 2006, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2006/Question_02_(a)}{part\n(a)}, we found that\n\n\\[\\text{rref}(A)=\n\\begin{bmatrix} \n1& 2& 0& 3& 4\\\\ \n0& 0& 1& -2& -1 \\\\ \n0& 0& 0& 0& 0\n\\end{bmatrix}\\]\n\nWe know that the basis of $R(A^T)$ i.e columns of $A^T$ corresponding to\nthe pivot columns of $rref(A^T)$, is the same as the pivot rows of\n$rref(A)$. The pivot rows of $rref(A)$ are row 1 and 2.\n\nTherefore a basis of \\emph{R(A\\textsuperscript{T})} is given by\n\n\\[\\left\\{\n\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\\n3\\\\\n4\n\\end{bmatrix}, \\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\\n-2\\\\\n1\n\\end{bmatrix}\\right\\}\\]"
+    ], 
+    "hints": []
+}

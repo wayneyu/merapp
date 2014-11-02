@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_201_06_(d)", 
+    "course": "MATH307", 
+    "statement": "Consider the same graph as in the\n\\href{Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)}{previous\nquestion}, now interpreted as an internet where the vertices represent\nweb pages and the arrows represent links.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q6.png}\n\\end{description}\n\n\\textbf{(d)} Write down the MATLAB/Octave code that would compute the\nranking for each page using the \\textbf{eig} command.", 
+    "year": 2013, 
+    "sols": [
+        "\\textgreater{}\\textgreater{} {[}V D{]} = eig(S)\n\nWhere \\emph{V} is the matrix of normalized eigenvectors, and \\emph{D} is\nthe diagonal matrix of eigenvalues.\n\nIt can be assumed that $\\displaystyle \\lambda _1 = 1$ is the first entry\nin \\emph{D}, the corresponding eigenvector is the first column of matrix\n\\emph{V}. To get the ranking we scale so that the sum is equal to 1.\n\n\\textgreater{}\\textgreater{} V(:,1) / sum(V(:,1))"
+    ], 
+    "hints": []
+}

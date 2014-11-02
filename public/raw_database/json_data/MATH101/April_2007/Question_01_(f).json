@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH101", 
+    "statement": "Write the form of the partial-fraction decomposition for\n\n$\\frac{10}{(x+1)^{2}(x^{2}+9)}$\n\nDo not determine the numerical values of these coefficients.", 
+    "year": 2007, 
+    "sols": [
+        "First, we need to show that the factor $x^{2} + 9$ is irreducible.\nLooking at the discriminant, we see that it is\n$b^{2}-4ac = 0-4(1)(9) = -36 < 0$ and so this factor has no real roots.\nThus, this is an irreducible quadratic. Hence, the partial fraction\ndecomposition is\n\n$\\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9}$"
+    ], 
+    "hints": [
+        "Remember that there are exceptions when you have repeated roots and\nquadratic factors. What were these exceptions?"
+    ]
+}

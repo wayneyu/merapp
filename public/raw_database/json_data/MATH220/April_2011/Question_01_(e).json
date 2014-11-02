@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH220", 
+    "statement": "Define what it means for a function $f : A \\to B$ to be injective.", 
+    "year": 2011, 
+    "sols": [
+        "We say that $f$ is injective if whenever we have $f(x) = f(y)$ for\n$x,y \\in A$ then $x=y$."
+    ], 
+    "hints": [
+        "An injective function is also called a one to one function."
+    ]
+}

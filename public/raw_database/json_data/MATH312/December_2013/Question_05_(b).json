@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH312", 
+    "statement": "Suppose that \\emph{p} is a prime with\n$\\displaystyle p \\equiv  3 \\mod{4}$. Show that there is no solution to\nthe congruence $\\displaystyle x^2 \\equiv -1 \\mod{p}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

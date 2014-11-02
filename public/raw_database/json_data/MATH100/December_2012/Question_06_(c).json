@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(c)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(c) Determine the interval(s) where f(x) is concave up and concave down,\nrespectively. You may use:\n\n$\\displaystyle f''(x) = -(12/25)x^{-7/5} + (42/25)x^{-12/5} = (1/25)x^{-12/5}(-12x + 42).$", 
+    "year": 2012, 
+    "sols": [
+        "We are given that\n\n$\\displaystyle f''(x) = -(12/25)x^{-7/5} + (42/25)x^{-12/5} = (1/25)x^{-12/5}(-12x + 42)$\n\nand this second derivative is undefined at $x=0$. The second derivative\nis 0 when $-12x + 42 = 0$, that is, when $x = 42/12 = 7/2$. So we check\nthe intervals $\\displaystyle (-\\infty,0),(0,7/2),(7/2,\\infty)$\nindividually.\n\nNote that $x^{-12/5} = \\frac1{x^{12/5}} = \\frac1{\\sqrt[5]{x^{12}}} > 0$\nfor all values of $x \\not= 0$.\n\nCase 1\\[\\displaystyle (-\\infty,0)\\]\n\nWe test that the second derivative at a point in the interval, say\n$x = -1$, which gives a value of $54/25 > 0$. Thus the function is\nconcave up on this interval.\n\nCase 2\\[\\displaystyle (0,7/2)\\]\n\nWe test that the derivative at a point in the interval, say $x = 1$,\nwhich gives a value of $30/25 > 0$. Thus the function is concave up on\nthis interval.\n\nCase 3\\[\\displaystyle (7/2,\\infty)\\]\n\nWe test that the derivative at a point in the interval, say $x = 10$,\nwhich gives a value of $(1/25) * 10^{-12/5} * (-78) < 0$. Thus the\nfunction is concave down on this interval.\n\nThis completes the question."
+    ], 
+    "hints": [
+        "Use the given second derivative and check the sign of the second\nderivative between points where the second derivative is zero and\nundefined."
+    ]
+}

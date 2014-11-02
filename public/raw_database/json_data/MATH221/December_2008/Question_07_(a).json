@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH221", 
+    "statement": "Find the characteristic polynomial of the matrix\n\n\\[A = \\begin{bmatrix}\n1&0&-1 \\\\ \n2 &3 &-1 \\\\ \n0 &6 &0 \n\\end{bmatrix}\\]\n\nGive your answer in the form $-x^{3} + a x^{2} + b x + c$ where a, b, c\nare real numbers.", 
+    "year": 2008, 
+    "sols": [
+        "Computing, we have\n\n$(A - xI) = \\begin{bmatrix}\n1 - x & 0 &-1 \\\\ \n2& 3-x &-1 \\\\ \n0&6 & -x\n\\end{bmatrix}$\n\n\\begin{align*}\n\\text{det}(A-xI) &= (1-x) [(3-x) (-x) - (6) (-1)] - 0 +(-1) [(2) (6) - 0(3-x)]\\\\\n&=(1-x) [-3x+x^{2}+6] +(-1)(12 - 0)\\\\\n&=(1-x) [x^{2}-3x +6] - 12\\\\\n&=-x^{3}+4x^{2}-9x-6\n\\end{align*}"
+    ], 
+    "hints": []
+}

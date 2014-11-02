@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH152", 
+    "statement": "This question requires little or no calculations.\n\nFor what value(s) of \\emph{a} are the following vectors\n$\\mathbf{v}_1=[1,2,-1]$, $\\mathbf{v}_2=[0,1,3]$, $\\mathbf{v}_3=[a,4,5]$,\nlinearly dependent?", 
+    "year": 2012, 
+    "sols": [
+        "A set of vectors is linearly dependent if\n$c_{1}\\mathbf{v}_{1} + c_{2}\\mathbf{v}_{2} + c_{3}\\mathbf{v}_{3} = \\mathbf{0}$\nhas more solutions than just the trivial solution\n$\\displaystyle c_{1} = c_{2} = c_{3} = 0$.\n\nTo determine which values of $a$ will cause the vectors to be linearly\ndependent, we write the equation\n$c_{1}\\mathbf{v}_{1} + c_{2}\\mathbf{v}_{2} + c_{3}\\mathbf{v}_{3} = \\mathbf{0}$\nin its matrix-vector form\n\n\\[M\\mathbf{c} = \\mathbf{0}, \\quad \\mbox{where} \\quad M = \\left[\\begin{array}{ccc} 1 & 0 & a \\\\ 2 & 1 & 4 \\\\ -1 & 3 & 5  \\end{array}\\right], \\quad \\mathbf{c} = \\left[ \\begin{array}{c} c_{1} \\\\ c_{2} \\\\ c_{3}\\end{array}\\right].\\]\nIf the row-reduced echelon form of $\\displaystyle M$ has a row of zeros,\nthere are non-zero values of $\\displaystyle \\mathbf{c}$ that will\nsatisfy\n$c_{1}\\mathbf{v}_{1} + c_{2}\\mathbf{v}_{2} + c_{3}\\mathbf{v}_{3} = \\mathbf{0}$.\nRow-reducing $\\displaystyle M$ as follows:\n\n\\begin{align*}\nM &= \\left[\\begin{array}{ccc} 1 & 0 & a \\\\ 2 & 1 & 4 \\\\ -1 & 3 & 5  \\end{array}\\right] \\quad \\rightarrow \\quad \\left[\\begin{array}{ccc} 1 & 0 & a \\\\ 0 & 1 & 4 -2a \\\\ 0 & 3 & 5+a  \\end{array}\\right] \\quad \\rightarrow \\quad \\left[\\begin{array}{ccc} 1 & 0 & a \\\\ 0 & 1 & 4 -2a \\\\ 0 & 0 & -7+7a  \\end{array}\\right],\n\\end{align*} we can see that the last row will be a row of zeros if\n$\\displaystyle a = 1$. Therefore, the vectors\n${\\color{blue}\\mathbf{v}_{1},\\,\\mathbf{v}_{2},\\,\\mathbf{v}_{3}}$ are\nlinearly dependent if ${\\color{blue}a = 1}$.", 
+        "As a quick alternative to the first solution, recall that the columns of\na matrix, $\\displaystyle M$, are \\emph{linearly dependent} if the\ndeterminant of $\\displaystyle M$ is equal to zero. Hence, we define\n\n\\[M = \\left[\\mathbf{v}_{1}, \\mathbf{v}_{2}, \\mathbf{v}_{3}\\right] = \\left[\\begin{array}{ccc} 1 & 0 & a \\\\ 2 & 1 & 4 \\\\ -1 & 3 & 5  \\end{array}\\right],\\]\nwhich has the determinant\n\n\\[\\operatorname{det}(M) = -7 + 7a.\\] The determinant equal to zero when\n$\\displaystyle a = 1$. Therefore, the vectors\n${\\color{blue}\\mathbf{v}_{1},\\,\\mathbf{v}_{2},\\,\\mathbf{v}_{3}}$ are\nlinearly dependent if ${\\color{blue}a = 1}$."
+    ], 
+    "hints": [
+        "A set of three vectors is linearly independent if\n$c_{1}\\mathbf{v}_{1} + c_{2}\\mathbf{v}_{2} + c_{3}\\mathbf{v}_{3} = \\mathbf{0}$\nis only satisfied if $\\displaystyle c_{1} = c_{2} = c_{3} = 0$.", 
+        "For an alternative solution: What is true about the columns of a matrix\nwhen its determinant is equal to zero?"
+    ]
+}

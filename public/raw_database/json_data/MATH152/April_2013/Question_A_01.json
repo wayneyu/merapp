@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_01", 
+    "course": "MATH152", 
+    "statement": "Let\n\n\\[a = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\]\n\nWhat is $a \\times b$?", 
+    "year": 2013, 
+    "sols": [
+        "By the cross product formula,\n\n\\begin{align*}\na \\times b & =\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\n-3&-3&3\\\\\n2&-3&-2\\\\\n\\end{vmatrix} \\\\\n& = \\begin{vmatrix}\n-3&3\\\\\n-3&-2\n\\end{vmatrix}\\mathbf{i}\n-\\begin{vmatrix}\n-3&3\\\\\n2&-2\n\\end{vmatrix}\\mathbf{j}\n+\\begin{vmatrix}\n-3&-3\\\\\n2&-3\n\\end{vmatrix}\\mathbf{k} \\\\\n& = 15 \\mathbf{i} - 0 \\mathbf{j} + 15\\mathbf{k} \\\\\n& = \\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "hints": [
+        "The cross product formula can be interpreted using determinants:\n\n\\[\\mathbf{u\\times v}=\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\nu_1&u_2&u_3\\\\\nv_1&v_2&v_3\\\\\n\\end{vmatrix}\\]", 
+        "Use a cofactor expansion to find the determinant of a 3 by 3 matrix.\nDon't forget about the sign of each factor!"
+    ]
+}

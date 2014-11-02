@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH200", 
+    "statement": "The temperature at a point (x,y,z) is given by\n\n\\[\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\]\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nIn which direction does the temperature decrease most rapidly?", 
+    "year": 2012, 
+    "sols": [
+        "For any given unit vector $\\displaystyle{}\\widehat{\\mathbf{u}}$, the\nrate of change of temperature at \\emph{P} in direction\n$\\displaystyle{}\\widehat{\\mathbf{u}}$ is the scalar\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1) &= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}} \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\,\\left\\vert\\widehat{\\mathbf{u}}\\right\\vert\\cos(\\theta) \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\cos(\\theta)\n\\end{align*}\n\nwhere $\\theta$ is the angle between the given vectors. (Recall that\n$\\displaystyle{}\\vert{\\widehat{\\mathbf{u}}}\\vert=1$.) For optimum\n\\emph{decrease}, we should make the directional derivative as small as\npossible. Since our only degree of freedom is the angle above and we\nknow that\n\n\\[\\displaystyle{}-1\\leq\\cos\\theta\\leq1\\]\n\nwe should arrange $\\displaystyle{}\\cos\\theta=-1$ by choosing $\\theta$=$\\pi$, i.e.,\nby making $\\displaystyle{} \\widehat{\\mathbf{u}}$ parallel to\n$-\\nabla T(1,2,-1)$:\n\n\\[\\widehat{\\mathbf{u}} = \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert}\n= \\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\\] This is the\ndirection of most rapid temperature decrease."
+    ], 
+    "hints": [
+        "Recall that for two vectors\n\n\\[\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta.\\]\n\nHow would we choose $\\theta$ to make this dot product the smallest? How\ncan we relate this idea to the directional derivative?"
+    ]
+}

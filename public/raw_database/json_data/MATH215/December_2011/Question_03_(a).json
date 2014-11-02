@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH215", 
+    "statement": "For the following ODE\n\n\\[\\frac{dy}{dt} = (y^2-1)(y-2)^2\\]\n\n\\textbf{(a)} Determine the equilibrium (fixed) points.", 
+    "year": 2011, 
+    "sols": [
+        "Setting $\\frac{dy}{dt} = (y^2 - 1)(y-2)^2 = 0$ we have $y = \\pm 1, 2$ as\nour equilibrium points."
+    ], 
+    "hints": [
+        "The value of a solution in equilibrium does not change. What does this\nmean for the derivative?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH110", 
+    "statement": "Let \\emph{P} be the point (1,1).\n\nWrite down an equation for the line of slope \\emph{m} which passes\nthrough \\emph{P}.", 
+    "year": 2011, 
+    "sols": [
+        "We know that our line passes through the point (1,1) and has slope\n\\emph{m}. Using the point-slope formula of line, we get\n\n\\[y - 1 = m(x - 1).\\]\n\nSolving for y gives us $y = mx -m + 1$"
+    ], 
+    "hints": [
+        "Try using the point slope formula\n\n\\[y - y_1 = m(x - x_1)\\]\n\nWhere $x_1, y_1$ are the coordinates of a point on the line."
+    ]
+}

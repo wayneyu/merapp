@@ -1,0 +1,16 @@
+{
+    "term": "December", 
+    "question": "Question_02_(c)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $\\displaystyle y = \\sin^{-1}(\\ln x)$, find $\\tfrac{dy}{dx}$. Note:\nAnother notation for $\\sin^{-1}$ is $\\arcsin$", 
+    "year": 2012, 
+    "sols": [
+        "Since\n\n$\\tfrac{d}{dx}\\sin^{-1}(x) = \\frac{1}{\\sqrt{1-x^{2}}}$\n\nand\n\n$\\tfrac{d}{dx}\\ln(x) = \\frac{1}{x}$\n\nThe chain rule gives us\n\n$\\tfrac{d}{dx}\\sin^{-1}(\\ln(x)) = \\frac{1}{\\sqrt{1-(\\ln(x))^{2}}}\\cdot \\frac{1}{x}$", 
+        "For an alternative solution, taking the sin of both sides yields\n\n$\\displaystyle \n\\sin(y) = \\ln(x)$\n\nTaking implicit derivatives of both sides yields\n\n$\\displaystyle \n\\cos(y) y' = \\frac{1}{x}$\n\nSolving for the derivative yields\n\n$\\displaystyle \ny' = \\frac{1}{\\cos(y) x}$\n\nNext, we want to express the right hand side as a function of \\emph{x}.\nSince $\\displaystyle  \\sin(y) = \\ln(x)$ and $\\displaystyle \\sin(y)$ is\nopposite over hypotenuse, we can draw the following triangle,\ninterpreting \\emph{y} as an angle:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH100Dec2012Q2c.jpg}\n\\caption{MATH100Dec2012Q2c.jpg}\n\\end{figure}\n\nwhere the last side (the base of the triangle) is computed using the\nPythagorean theorem. Thus we see that\n\n$\\displaystyle \n\\cos(y) = \\sqrt{1-(\\ln(x))^{2}}$\n\nand plugging into the derivative yields\n\n$\\displaystyle \ny' = \\frac{1}{x\\sqrt{1-(\\ln(x))^{2}}}$\n\ncompleting the problem."
+    ], 
+    "hints": [
+        "This is a composition of functions. What rule helps differentiate\ncompositions of functions?", 
+        "Use the chain rule, namely\n\n$\\tfrac{d}{dx}f(g(x)) = f'(g(x))g'(x)$", 
+        "A reminder that\n\n$\\tfrac{d}{dx}\\sin^{-1}(x) = \\frac{1}{\\sqrt{1 - x^{2}}}$"
+    ]
+}

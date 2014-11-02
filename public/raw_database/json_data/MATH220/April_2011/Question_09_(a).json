@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_09_(a)", 
+    "course": "MATH220", 
+    "statement": "Let\n\n\\[\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\]\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nProve that \\emph{g} is surjective.", 
+    "year": 2011, 
+    "sols": [
+        "We are told that the function $g \\circ f$\u00c2~is surjective and we want to\nshow that the function $g$ is surjective as well. For this, let us\nconsider an element in the image of $g$, that is an element \\emph{a} in\nthe set \\emph{A} (since $g$ sends elements from \\emph{B} to elements in\n\\emph{A}).\n\nTo show the surjectivity we need to show that there is at least one\nelement \\emph{b} in the set \\emph{B} which is mapped to \\emph{a} by the\nfunction \\emph{g}. Now the function $g \\circ f$ sends elements of the\nset \\emph{A} to the set \\emph{A} and is surjective. So there must exist\nan element''a''' in the set \\emph{A} such that\n\n\\[(g \\circ f)(a')=a\\] But since\n\n\\[(g \\circ f)(a')=g(f(a'))\\] we can say that the element \\emph{f(a')},\nwhich is an element of the set \\emph{B} is the element \\emph{b} that we\nare looking for since it is mapped by \\emph{g} to the element \\emph{a}\nas requested. This explains why \\emph{g} is surjective."
+    ], 
+    "hints": [
+        "A function $f: C \\to D$ is \\emph{surjective} if the function hits all\nthe elements of the arrival set \\emph{D}, that is if for any element\n\\emph{d} in the set \\emph{D} there is at least one element \\emph{c} in\nthe set \\emph{C} such that \\emph{f(c)=d}."
+    ]
+}

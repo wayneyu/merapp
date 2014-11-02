@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH307", 
+    "statement": "Explain how to find the eigenvalue of \\emph{A} that is closest to 2\nusing the power method.", 
+    "year": 2013, 
+    "sols": [
+        "Given: A is a real symmetric matrix.\n\nAssuming: The eigenvalue of A closest to 2 is not repeated.\n\n-\\textgreater{} The eigenvalues of $(A-sI)^{-1}$ are $(\\lambda-s)^{-1}$.\n\n-\\textgreater{} The eigenvectors of $(A-sI)^{-1}$ are the eigenvectors\nof $A$.\n\n1) Take a random vector $x_0$.\n\n2) Take $x_{n+1} = (A -2I)^{-1} x_n$\n\n3) Normalize x\n\n4) If $x_n$ is not close enough to $x_{n-1}$ (ignoring sign flips), go\nto 2) (\u00e2\u0080\u009cclose enough\u00e2\u0080\u009d being REALLY close)\n\n-\\textgreater{} x is now an approximation of the eigenvector of the\neigenvalue closest to 2\n\n5)$\\lambda = \\langle x,Ax \\rangle$ (x was normalized earlier)."
+    ], 
+    "hints": []
+}

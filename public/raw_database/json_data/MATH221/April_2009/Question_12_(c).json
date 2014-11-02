@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_12_(c)", 
+    "course": "MATH221", 
+    "statement": "If A is a 5 x 5 matrix such that $A + A^{T} = 0$, then det A = 0.", 
+    "year": 2009, 
+    "sols": [
+        "The answer is \\textbf{true}.\n\nWe have $\\displaystyle A = -A^{T}$ and thus, since determinants are\ntranspose invariant, we have $\\det(A) = -\\det(A)$ or equivalently that\n$2\\det(A) = 0$ and hence that $\\det(A) = 0$."
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH215", 
+    "statement": "Let \\emph{f} and \\emph{g} be two functions satisfying the following\nconditions\n\n\\begin{align*}\nf(0) = 2, \\quad f'(0) = 3, \\quad f''(1) = 2 \\\\\nG(s) = e^{-4s}(s^2F(s)-2s-3)\n\\end{align*}\n\nwhere \\emph{F(s)} and \\emph{G(s)} are the Laplace transforms of the\nfunctions \\emph{f(t)} and \\emph{g(t)}, respectively. Find the value of\n\\emph{g(5)}.", 
+    "year": 2011, 
+    "sols": [
+        "From the chart at the end of the exam we have the following identity\n\n\\[\\mathcal{L}(f^{(n)}(t))=s^nF(s)-s^{n-1}f(0)-\\dots-f^{(n-1)}(0)\\]\n\nand we should always consider this identity first if we see products of\npolynomials and transforms. Comparing this to what we have,\n\n\\[\\displaystyle{}s^2F(s)-2s-3,\\]\n\nwe see that since $\\displaystyle{}f(0)=2$ and $\\displaystyle{}f'(0)=3$\nthen\n\n\\[\\displaystyle{}s^2F(s)-2s-3=\\mathcal{L}(f''(t)).\\]\n\nTherefore we have\n\n\\[G(s)=\\exp(-4s)\\mathcal{L}(f''(t)).\\]\n\nWe now need to compute $\\mathcal{L}^{-1}(G(s))$. Returning again to our\nchart we have the identity\n\n\\[\\mathcal{L}^{-1}\\left(\\exp(-cs)F(s)\\right)=u_c(t)f(t-c)\\]\n\nwhere u\\_c is the Heaviside function defined as\n\n\\[u_c=\n\\begin{cases}\n0,&t<c\\\\\n1,&t\\geq{}c\n\\end{cases}.\\]\n\nUsing this identity, we can immediately write\n\n\\[g(t)=\\mathcal{L}^{-1}(G(s))=\\mathcal{L}^{-1}(\\exp(-4s)\\mathcal{L}(f''(t)))=u_4(t)f''(t-4).\\]\n\nTherefore we have that\n\n\\[\\displaystyle{}g(5)=u_4(5)f''(1)=f''(1)=2.\\]"
+    ], 
+    "hints": [
+        "How can we use the identity\n\n\\[\\mathcal{L}(f^{(n)}(t))=s^nF(s)-s^{n-1}f(0)-\\dots-f^{(n-1)}(0)\\]\n\nto our advantage?"
+    ]
+}

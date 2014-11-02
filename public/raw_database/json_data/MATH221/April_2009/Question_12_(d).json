@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_12_(d)", 
+    "course": "MATH221", 
+    "statement": "If v and w are vectors in $R^{3}$, then the zero vectors in $R^{3}$ must\nbe a linear combination of v and w.", 
+    "year": 2009, 
+    "sols": [
+        "The answer is \\textbf{true}"
+    ], 
+    "hints": []
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH104", 
+    "statement": "Let\n\n\\[\\displaystyle{}h(x)=\\exp(f(x))+[f(x)]^2\\]\n\nwhere f(1)=2, f'(1)=5. Find h'(1).", 
+    "year": 2012, 
+    "sols": [
+        "Taking the derivative of $h(x)$ and using the chain rule, we get:\n\n\\[\\displaystyle h'(x) = \\exp(f(x))f'(x) + 2f(x)f'(x)\\] Substituting\n$x = 1$ and using the given values of $f(1)$ and $f'(1)$ gives:\n\n\\begin{align*}\nh'(1) &= \\exp(f(1))f'(1) + 2f(1)f'(1)\\\\\n&= 5\\exp(2) + 2(2)(5)\\\\\n&= 5e^{2} + 20\n\\end{align*} Therefore,\n${\\color{blue}\\displaystyle h'(1) = 5e^{2} + 20}$."
+    ], 
+    "hints": [
+        "Remember to use the chain rule when differentiating $h(x)$."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH215", 
+    "statement": "Find the Laplace transform of the following piecewise continuous\nfunction by either using the definition of Laplace transform or the\nsecond shifting theorem involving a unit step function.\n\n:g(t) = \\textbackslash{}begin\\{cases\\} 0, \\textbackslash{}quad t\n\\textless{} 1 \\textbackslash{}\\textbackslash{} e\\^{}\\{t-1\\},\n\\textbackslash{}quad t \\textbackslash{}geq 1\n\\textbackslash{}end\\{cases\\}", 
+    "year": 2013, 
+    "sols": [
+        "We will use the fact that $\\mathcal{L}(u(t-a) f(t-a)) = e^{-as} F(s)$.\n\nWe recognize that\n\n\\[\\displaystyle g(t) = u(t-1) e^{t-1} = u(t-1) f(t-1)\\]\n\nwhere $\\displaystyle f(t) = e^t$. Thus,\n\n\\[\\mathcal{L}(g(t)) = e^{-s} \\mathcal{L}(e^t) = \\frac{e^{-s}}{s-1}\\]"
+    ], 
+    "hints": [
+        "The second shifting theorem states\n$\\mathcal{L}( u(t-a) f(t-a)) = e^{-as} F(s)$, where $u$ denotes the\nheaviside function. You need to recognize a function $f$ so that\n\n\\[\\displaystyle g(t) = u(t-a) f(t-a)\\]"
+    ]
+}

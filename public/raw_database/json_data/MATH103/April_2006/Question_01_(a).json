@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH103", 
+    "statement": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\na) Use the graph of g(x) below to determine the correct set of values of\n$\\displaystyle G(x) = \\int_{0}^{x}g(t)\\,dt$\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103April2006Q1a.jpg}\n\\caption{MATH103April2006Q1a.jpg}\n\\end{figure}\n\ni.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\n\\\\\nG(x) & 0 & 2 & 4 & 1 & 0\n\\end{longtable}\n\nii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\n\\\\\nG(x) & 0 & -2 & -2 & 0 & 4\n\\end{longtable}\n\niii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\n\\\\\nG(x) & 2 & 0 & 0 & 2 & 2\n\\end{longtable}\n\niv.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\n\\\\\nG(x) & 0 & 2 & -2 & 0 & 4\n\\end{longtable}", 
+    "year": 2006, 
+    "sols": [
+        "The answer is iv.\n\nAt the point of \\emph{x=0}, \\emph{G(0)=0} because the top and bottom\nlimits of the integral that defines \\emph{G(x)} are identical. The area\nthat is integrated over has zero width.\n\nAt the point of \\emph{x=2}, \\emph{G(2)=2} because the area of the graph\ncan be calculated using the area of triangle formula \\emph{height*base/2\n= 2*2/2 =2}\n\nAt the point of \\emph{x=4}, \\emph{G(4)=-2} because the area between the\n\\emph{x}-axis and the graph \\emph{g(x)} is composed of two triangles\nwith height \\emph{4} and width \\emph{1}. Hence the area is given by\n\\emph{4*1/2 + 4*1/2 = 4}. It is below the \\emph{x}-axis, hence we\nsubtract it from the previous value and get \\emph{G(4) = 2 - 4 = -2}.\n\nAt the point \\emph{x=6}, \\emph{G(6)=0} because we add the area of the\ntriangle with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(6) = -2 + 2*2/2 = 0}\n\nAt the point \\emph{x=8}, \\emph{G(8)=4} because we add the area of the\nsquare with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(8) = 0 + 2*2 = 4}"
+    ], 
+    "hints": [
+        "Substitute \\emph{x} with the values given in the table. Calculate the\narea of \\emph{g(x)} with basic geometry formula, i.e. area of triangle\nand area of a square.", 
+        "The substituted values of \\emph{x} should be 2, 4, 6, 8, as at these\npoints the area under the graph of \\emph{g(x)} can be calculated with\nthe area of triangle formula: base*height/2", 
+        "Area below the \\emph{x}-axis has to be subtracted from the net area."
+    ]
+}

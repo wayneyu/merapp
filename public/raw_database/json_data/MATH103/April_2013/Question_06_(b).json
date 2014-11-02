@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Light Show on the Dance Floor}\n\n\\textbf{A laser is mounted 2m above the floor (see sketch) and its beam\nis directed along a straight line on the dance floor. For visual\neffects, the angle $\\theta$ changes periodically and randomly. The angle\n$\\theta$ is chosen uniformly in the interval\n$(-\\frac{\\pi}{4},\\frac{\\pi}{4})$, that is, the probability density\nfunction (pdf) is $p(\\theta) = \\frac{2}{\\pi}$ for\n$-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$ and zero elsewhere.}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103_2013Q6.jpg}\n\\caption{MATH103 2013Q6.jpg }\n\\end{figure}\n\nFind the probability density function (pdf) for $\\displaystyle p(x)$ of\nthe \\emph{x}-coordinate of the laser point on the floor.", 
+    "year": 2013, 
+    "sols": [
+        "Taking the derivative of the cdf found in\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_06_(a)}{part\na} we have\n\n\\begin{align*}\np(x) &= F'(x) = \\left(\\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}2\\right) + \\frac{\\pi}4\\right)\\right)' \\\\\n&= \\frac2{\\pi} \\cdot \\left(\\frac{1}{1 + \\left(\\tfrac{x}{2}\\right)^2}\\cdot\\frac{1}{2} + 0\\right) \\\\\n&= \\frac1{\\pi} \\cdot \\frac{4}{4 + x^2} = \\frac4{\\pi(4 + x^2)}\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "hints": [
+        "What is the relationship between the cdf in terms of x and the pdf in\nterms of x.", 
+        "The pdf in terms of \\emph{x} is just the derivative of the cdf in terms\nof \\emph{x}."
+    ]
+}

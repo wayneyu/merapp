@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(g)", 
+    "course": "MATH101", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nHow many terms of the convergent series\n\n\\[\\sum_{n=1}^\\infty n^{-3}\\] are needed to ensure that the sum is\naccurate to within 1/20,000?", 
+    "year": 2011, 
+    "sols": [
+        "We want to find the smallest k such that\n\n\\[\\left| \\sum_{n=1}^{\\infty} \\frac{1}{n^3} - \\sum_{n=1}^k \\frac{1}{n^3} \\right| \\leq \\frac{1}{20000}.\\]\n\nOr, equivalently,\n\n\\[\\left| \\sum_{n=k +1}^{\\infty} \\frac{1}{n^3} \\right| \\leq \\frac{1}{20000}.\\]\n\nSince all of the terms in the sum are positive, the sum itself is\npositive. So, the absolute value signs are unnecessary. Note that\n\n\\[\\sum_{n=k +1}^{\\infty} \\frac{1}{n^3}\\]\n\ncan be interpreted as the right Riemann sum for the integral\n\n\\[\\int_k^{\\infty} \\frac{1}{x^3} dx\\].\n\nSince $1/x^3$ is monotonically decreasing, the right Riemann sum is an\nunderestimation for the area under the curve. As step size for the\nRiemann sum $\\Delta x = 1$ is used.\n\nTherefore, we have\n\n\\[\\sum_{n=k +1}^{\\infty} \\frac{1}{n^3} < \\int_k^{\\infty} \\frac{1}{x^3} dx,\\]\n\nand hence it suffices to find the minimal value of $k$ such that the\nintegral above is $\\leq$ 20,000.\n\nBut the integral\n\n\\[\\int_{k}^{\\infty} \\frac{1}{x^3} dx = \\left[- \\frac{1}{2x^2} \\right]_k^{\\infty} = \\frac{1}{2 k ^2}.\\]\n\nHence\n\n\\[\\sum_{n=k+1}^\\infty \\frac1{n^3} < \\int_k^{\\infty} \\frac{1}{x^3} dx = \\frac{1}{2 k^2} \\leq \\frac{1}{20000}.\\]\n\nThe minimal such $k$ is $k=100$ (in fact, for this choice of $k$, the\nright $\\leq$ becomes an $=$).\n\nTherefore we must take the first 100 terms of the sum for the\napproximation to be accurate to within 1/20000."
+    ], 
+    "hints": [
+        "This series can be thought of as a Riemann sum for a certain integral.", 
+        "We want to find the smallest k such that\n\n\\[\\left| \\sum_{n=1}^{\\infty} \\frac{1}{n^3} - \\sum_{n=1}^k \\frac{1}{n^3} \\right| \\leq \\frac{1}{20000}.\\]\n\nOr, equivalently,\n\n\\[\\left| \\sum_{n=k +1}^{\\infty} \\frac{1}{n^3} \\right| \\leq \\frac{1}{20000}.\\]\n\nInterpret this sum as a Riemann sum of a certain integral that you can\ncompute."
+    ]
+}

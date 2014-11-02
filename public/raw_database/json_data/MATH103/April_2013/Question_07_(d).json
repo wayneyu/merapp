@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(d)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Biofuel: Suppose you work at an experimental algae farm where\nalgae is turned into biofuel. The algae grows in tanks at a rate\n$\\displaystyle \\alpha = 2$ and the steady supply of nutrients allows\neach tank to sustain $\\displaystyle K$ kilograms of algae.}\n\nNow suppose that you require a constant supply of algae, so you harvest\nit by removing algae at a constant rate $\\displaystyle H \\geq 0$. Modify\nthe original differential equation\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big)$.\n\naccordingly. Find all steady state solutions (equilibria) for this\nequation.", 
+    "year": 2013, 
+    "sols": [
+        "As mentioned in the hint above, we are looking at the modified\ndifferential equation given by\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big)-H$\n\nSetting the derivative to be 0, we see that\n\n$\\displaystyle 0 = 2M\\big(1 - \\frac{M}{K}\\big)-H = 2M - \\frac{2}{K}M^{2} - H$\n\nUsing the quadratic formula, we see that\n\n\\begin{align*}\nM &= \\frac{-2 \\pm \\sqrt{4 - 4(\\tfrac{-2}{K})(-H)}}{2(\\tfrac{-2}{K})}\\\\\n&= \\frac{-2K \\pm K\\sqrt{4(1-\\tfrac{2H}{K})}}{-4} \\\\\n&= \\frac{-2K \\pm 2K\\sqrt{1-\\tfrac{2H}{K}}}{-4} \\\\\n&= \\frac{K \\mp K\\sqrt{1-\\tfrac{2H}{K}}}{2} \\\\\n&= \\frac{K \\mp \\sqrt{K^2-2HK}}{2} \n\\end{align*}\n\n(Note any of the last three lines would be an acceptable answer)"
+    ], 
+    "hints": [
+        "Instead of $\\displaystyle -hM$ we want $\\displaystyle -H$ in the\ndifferential equation."
+    ]
+}

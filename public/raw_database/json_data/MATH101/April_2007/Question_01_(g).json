@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(g)", 
+    "course": "MATH101", 
+    "statement": "An exponentially distributed continuous random variable \\emph{X} has\nprobability density function $f(x) = ke^{-kx}$ for $x \\geq 0$, where\n\\emph{k} is a positive constant. The median value of \\emph{X} equals 10.\nFind \\emph{k}.", 
+    "year": 2007, 
+    "sols": [
+        "As in the hint, we have that the median \\emph{m} is the number such that\n\n\\[\\frac{1}{2} = \\int_{m}^{\\infty}f(x)\\,dx.\\]\n\nWe are told that \\emph{m}=10. Hence, evaluating this integral gives\n\n\\begin{align*}\n\\frac{1}{2} &= \\int_{10}^{\\infty}ke^{-kx}\\,dx \\\\\n&= \\lim_{c \\to \\infty}\\int_{10}^{c}ke^{-kx}\\,dx\\\\\n&= \\lim_{c \\to \\infty}-e^{-kx}\\bigg|_{10}^{c}\\\\\n&= \\lim_{c \\to \\infty}-e^{-kc } + e^{-10k}\\\\\n&= e^{-10k}\n\\end{align*}\n\nSolving for \\emph{k} yields\n\n\\[\\displaystyle\ne^{10k} = 2\\]\n\nand thus\n\n\\[k = \\frac{\\ln(2)}{10}\\]"
+    ], 
+    "hints": [
+        "The definition of the median is the number \\emph{m} such that\n\n\\[\\frac{1}{2} = \\int_{m}^{\\infty}f(x)\\,dx\\]"
+    ]
+}

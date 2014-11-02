@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH103", 
+    "statement": "A carrot has the shape formed by revolving the region under the graph of\n\n\\[f(x) = \\sqrt{14-x}\\]\n\nfor $0 \\leq x \\leq 12$ cm about the \\emph{x} axis. The concentration of\nvitamin A is found to vary in the carrot with \\emph{x} according to\n\n\\[c(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\\]\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_5\\_(a)\\_5a.png}\n\\end{figure}\n\nWhat is the total amount of vitamin A in the carrot?", 
+    "year": 2009, 
+    "sols": [
+        "To find the amount \\emph{A} of Vitamin A in the carrot, we need to\nmultiply every infinitly small disk with unit $cm^3$ with the passend\nconcentration of Vitamin A and then integrate over all disks:\n\n\\begin{align*}\nA &= \\int_0^{12}\\frac{1}{12}e^{-\\frac{x}{12}}\\left(\\sqrt{14-x}\\right)^2\\pi dx \\\\\n&= \\frac{\\pi}{12}\\int_0^{12}e^{-\\frac{x}{12}}(14-x)dx\\\\\n &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right]\n\\end{align*}\n\nWe let the former integral as is for now and use integration by parts\nfor the latter. Let \\emph{u = x}, \\emph{du} = \\emph{dx}, \\emph{dv} =\n\\emph{e}\\textsuperscript{-\\emph{x}/12}\\emph{dx} and v =\n-12\\emph{e}\\textsuperscript{-\\emph{x}/12}. Then\n\n\\begin{align*}\nA &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right] \\\\\n&= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\left(\\left.x(-12)e^{-\\frac{x}{12}}\\right|_0^{12} - \\int_0^{12} (-12)e^{-\\frac{x}{12}}\\,dx\\right)\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 14\\int_0^{12} e^{-\\frac{x}{12}}\\,dx - 12\\int_0^{12}e^{-\\frac{x}{12}}\\,dx+(12)(12)e^{-1}-0\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 2\\int_0^{12} e^{-\\frac{x}{12}}\\,dx + (12)(12)e^{-1}\\right] \\\\\n&= \\frac{\\pi}{12} \\left[\\left. 2(-12)e^{-\\frac{x}{12}}\\right|_0^{12} + (12)(12)e^{-1}\\right]\\\\\n&= \\frac{\\pi}{12} \\left[-2(12)(e^{-1}-1)+(12)(12)e^{-1}\\right] \\\\\n&= \\pi\\left[-2e^{-1}+2+12e^{-1}\\right] \\\\\n&= \\pi\\left[\\frac{10}{e}+2\\right] \\\\\n&= \\frac{2\\pi(5+e)}{e}.\n\\end{align*}"
+    ], 
+    "hints": [
+        "The amount of Vitamin A is\n\n\\texttt{concentration~x~volume.}", 
+        "You need to multiply the concentration and the disk-volume for every\ninfinitly small disk and then integrate over all disks."
+    ]
+}

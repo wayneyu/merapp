@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_07", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n\\[\\int_{-1}^2 (x-1)dx\\]\n\nusing a limit of Riemann sums. \\textbf{No credit will be given for using\nanother method} (but you can use another method to check your answer).\nYou may use the formulas\n\n\\[\\sum_{i=1}^n i = \\frac{n(n+1)}{2} \\qquad \\sum_{i=1}^n i^2 = \\frac{n(n+1)(2n+1)}{6}\\]", 
+    "year": 2011, 
+    "sols": [
+        "Since $f(a+i(b-a)/N) = f(-1+3i/N) = -1+3i/N - 1$ we follow the hints, to\nobtain\n\n\\begin{align*}\\int_{-1}^2 (x-1) \\,dx &= \\lim_{N \\to \\infty} \\sum_{i=1}^N f(-1+3i/N)\\frac{3}{N}\\\\\n&= \\lim_{N \\to \\infty} \\sum_{i=1}^N (-1+3i/N - 1)\\frac{3}{N}\\\\\n&= \\lim_{N \\to \\infty} \\frac{3}{N} \\sum_{i=1}^N \\left(-2+ \\frac{3i}{N}\\right)\\\\\n&= \\lim_{N \\to \\infty} \\left( -\\frac{6}{N} \\sum_{i=1}^N 1 + \\frac{9}{N^2} \\sum_{i=1}^N i \\right)\\end{align*}\n\nSince\n\n\\[\\sum_{i=1}^N i = N \\quad \\text{ and }\\quad \\sum_{i=1}^N i = \\frac{N(N+1)}{2},\\]\n\nwe can continue our computation\n\n\\begin{align*}\\int_{-1}^2 (x-1) \\,dx &= \\lim_{N \\to \\infty} \\left( -\\frac{6}{N}N + \\frac{9}{N^2} \\frac{N(N+1)}{2} \\right)\\\\\n&= -6 + \\frac{9}{2}\\lim_{N \\to \\infty}\\frac{N+1}{N}\\\\\n&= -6 + \\frac{9}{2}\\\\\n&= -\\frac{3}{2}.\\end{align*}\n\n\\emph{You can always compare your answer to the computation of the\nintegral directly and see that the answers match:}\n\n\\begin{align*}\n\\int_{-1}^2 (x-1)\\,dx &= \\left. \\frac{x^2}2-x\\right|_{-1}^2 \\\\\n&= \\frac42 - 2 - \\left(\\frac12 + 1\\right) \\\\\n&= -\\frac32.\n\\end{align*}"
+    ], 
+    "hints": [
+        "Recall that the integral\n\n\\[\\int_a^b f(x)\\,dx\\]\n\nis given by\n\n\\[\\lim_{N \\to \\infty} \\sum_{i=1}^N f\\left(a+i\\triangle x\\right)\\triangle x\\]\n\nwhere\n\n\\[\\triangle x = \\frac{b-a}{N}\\]", 
+        "Following from the first hint:\n\n\\[\\int_a^b f(x)\\,dx = \\lim_{N \\to \\infty} \\sum_{i=1}^N f(a+i(b-a)/N) \\frac{b-a}{N}\\]\n\nand in this case, we have \\emph{a} = -1 and \\emph{b} = 2 for $f(x)=x-1$."
+    ]
+}

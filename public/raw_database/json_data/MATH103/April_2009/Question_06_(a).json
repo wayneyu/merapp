@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH103", 
+    "statement": "Seeds are dispersed from a tree in all directions uniformly. The density\nof seeds that lands on the ground at a distance \\emph{r} away is\napproximately described by the function\n\n\\[s(r) = 50 \\sin\\left(\\frac{\\pi r}{10}\\right) \\text{ seeds/m}^2, \\quad 0 \\leq r \\leq 10 \\text{ m}\\]\n\nAt what distance from the tree are the seeds most densely distributed?", 
+    "year": 2009, 
+    "sols": [
+        "Since we look for the maximum of \\emph{s}, we set its derivative to\nzero.\n\n\\[0 = \\frac{d}{dr}50\\sin\\left(\\frac{\\pi r}{10}\\right) = 50\\frac{\\pi}{10}\\cos\\left(\\frac{\\pi r}{10}\\right),\\]\n\n\\[\\cos\\left(\\frac{\\pi r}{10}\\right)=0,\\]\n\nDue to the restriction on \\emph{r} the only possible zero is when\n\n\\[\\frac{\\pi r}{10} = \\frac{\\pi}{2}\\]\n\nwhich is attained at\n\n\\[\\displaystyle r=5\\]\n\nNote that $\\sin(\\pi(5)/10) = \\sin(\\pi/2) = 1$ gives indeed the maximum\nvalue for sine and hence for \\emph{s}."
+    ], 
+    "hints": [
+        "The seeds are most densely distributed at the point where the function\nthat describes the density has a maximum."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH101", 
+    "statement": "Solve the differential equation:\n\n\\[y'-2y=4+e^{3t}\\] (\\emph{Give the general solution})", 
+    "year": 2009, 
+    "sols": [
+        "Following the hint, we multiply both sides by the integrating factor\n$e^{-2t}$ to get\n\n\\[\\displaystyle e^{-2t}\\frac{dy}{dt} - 2ye^{-2t} = 4e^{-2t} + e^{t}\\]\n\nThe point of the integrating factor is that we can now express the left\nhand side as simple derivative:\n\n\\[e^{-2t}\\frac{dy}{dt} - 2ye^{-2t} = \\displaystyle (ye^{-2t})'\\]\n\nPlugging this into the initial equation above we find\n\n\\[\\displaystyle (ye^{-2t})' = 4e^{-2t} + e^{t}\\]\n\nand by integrating both sides we obtain\n\n\\[\\displaystyle ye^{-2t} = -2e^{-2t} + e^{t} + C\\]\n\nSolving for \\emph{y} yields\n\n\\[\\displaystyle y = -2 + e^{3t} + Ce^{2t}\\]\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Try using an integrating factor.", 
+        "Try using an integrating factor of $e^{-2t}$ (so multiply both sides of\nthe equation by this factor). This $-2$ in the exponent of \\emph{e}\ncomes from the coefficient of the \\emph{y} term in the differential\nequation."
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH220", 
+    "statement": "Prove that if A is a denumerable subset of $\\mathbb{Z}$ then there\nexists a set B such that B is a proper subset of A and\n$\\displaystyle {}|A|=|B|$.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

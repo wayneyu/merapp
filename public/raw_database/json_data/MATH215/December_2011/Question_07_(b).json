@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH215", 
+    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\n\\end{align*}\n\n\\textbf{(b)} Find the Jacobian matrix of the system.", 
+    "year": 2011, 
+    "sols": [
+        "We will denote $f(x,y) = \\frac{dx}{dt}(x,y) = x(2 - x  - y)$ and\n$g(x,y) = \\frac{dy}{dt}(x,y) = y(1-x)$. Then the Jacobian matrix at at\npoint $(x,y)$ is\n\n\\[J(x,y) = \\left(\\begin{array}{cc}\nf_x(x,y) & f_y(x,y) \\\\ g_x(x,y) & g_y(x,y)\n\\end{array}\\right) = \\left(\\begin{array}{cc}\n2 - 2x - y & -x \\\\ -y & 1-x\n\\end{array}\\right).\\]"
+    ], 
+    "hints": [
+        "The Jacobian matrix is the matrix of all the first-order partial\nderivatives.", 
+        "Let \\emph{f(x,y)} and \\emph{g(x,y)} be the right hand side of x' and y',\nrespectively. Then the Jacobian matrix is\n\n:J = \\textbackslash{}left(\\textbackslash{}begin\\{array\\}\\{cc\\} f\\_x \\&\nf\\_y \\textbackslash{}\\textbackslash{} g\\_x \\& g\\_y\n\\textbackslash{}end\\{array\\}\\textbackslash{}right)"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH307", 
+    "statement": "Let \\emph{S} be the subspace of $\\mathbb R^3$ spanned by\n$\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$,\n$\\begin{bmatrix} 2 \\\\ -1 \\\\ -1 \\end{bmatrix}$ and\n$\\begin{bmatrix} 4 \\\\ 1 \\\\ 1 \\end{bmatrix}$. Given the MATLAB/Octave\ncalculation\n\n\\texttt{\\textgreater{}~rref({[}1~2~4;~1~-1~1;~1~-1~-1{]})}\\\\\\texttt{ans~=}\\\\\\\\\\texttt{~~~1~~0~~2}\\\\\\texttt{~~~0~~1~~1}\\\\\\texttt{~~~0~~0~~0}\n\n\\textbf{(b)} Write down the MATLAB/Octave commands that find the vector\nin \\emph{S} closest to $\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$", 
+    "year": 2013, 
+    "sols": [
+        "Vector in S closest to $\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}$ means minimizing $\\left \\| Ax-b \\right \\|$.\n\nThis will happen when $Ax$ is the projection of b onto $R(A)$, that is,\n$Ax=Pb$\n\nThus, MATLAB commands are following\n\n\\textgreater{} P={[}1 0 0; 0 0.5 0.5; 0 0.5 0.5{]}\n\n\\textgreater{} b={[}1; 0; 0{]}\n\n\\textgreater{}P*b\n\nI got P in (a) as follows.\n\nWe are given $\\begin{bmatrix}\n1 &2 &4 \\\\\n1& -1 & 1\\\\\n1 &-1 & 1\n\\end{bmatrix}$ and its reduced row echelon form $\\begin{bmatrix}\n1 &0 &2 \\\\\n0&1 &1 \\\\\n0& 0& 0\n\\end{bmatrix}$\n\nSince column 1 and column 2 are pivot columns, we take corresponding\ncolumns of A.\n\nThose are $\\begin{bmatrix}\n\n1\\\\\n1\\\\\n1\n\\end{bmatrix}$ and $\\begin{bmatrix}\n2\\\\\n-1\\\\\n-1\n\\end{bmatrix}$, and they are linearly independent.\n\nSo, we define a new matrix $A=\\begin{bmatrix}\n1 &2 \\\\\n1 & -1\\\\\n1 & -1\n\\end{bmatrix}$ $A^{T}=\\begin{bmatrix}\n1 &1 &1 \\\\\n2&-1 &-1\n\\end{bmatrix}$\n\nProjection matrix is given by $P=A(A^{T}A)^{-1}A^{T}$\n\nSo, if we substitute $A$ and $A^{T}$, we get\n\n$P=A(A^{T}A)^{-1}A^{T}=\n\\begin{bmatrix}\n1 &2 \\\\\n1&-1 \\\\\n1& -1\n\\end{bmatrix}\\left ( \\begin{bmatrix}\n1 &1 &1 \\\\\n2& -1& -1\n\\end{bmatrix}\\begin{bmatrix}\n1& 2\\\\\n1& -1\\\\\n1&-1\n\\end{bmatrix} \\right )^{-1}\\begin{bmatrix}\n1 &1 &1 \\\\\n2 & -1& -1\n\\end{bmatrix}=\\begin{bmatrix}\n1 &0 &0 \\\\\n0 &\\frac{1}{2} & \\frac{1}{2}\\\\\n0& \\frac{1}{2}& \\frac{1}{2}\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

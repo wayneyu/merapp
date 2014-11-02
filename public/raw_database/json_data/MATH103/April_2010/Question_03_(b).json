@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH103", 
+    "statement": "A toxic chemical has been spilled somewhere on a 100 km stretch of\nhighway. The probability that the spill occurred within $x$ km of the\nfactory is shown in the panel below.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2010_Question_3_(a)_picture1_top.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2010\\_Question\\_3\\_(a)\\_picture1\\_top.png}\n\\end{figure}\n\n(b) What is/are the most probable location(s) of the spill?", 
+    "year": 2010, 
+    "sols": [
+        "The spill most likely occurred around the \\emph{x}=25km and/or at the\n\\emph{x}=75km margin. This is where the cumulative probability\n\\emph{F(x)} changes the most, which means that this is where the\nprobability density function \\emph{p(x)} has its maximal values."
+    ], 
+    "hints": [
+        "The most probable locations are where the probability density function\nhas its highest values."
+    ]
+}

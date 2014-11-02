@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(c)", 
+    "course": "MATH307", 
+    "statement": "Suppose we are given 4 points (\\emph{x}\\textsubscript{1},\n\\emph{y}\\textsubscript{1}), (\\emph{x}\\textsubscript{2},\n\\emph{y}\\textsubscript{2}), (\\emph{x}\\textsubscript{3},\n\\emph{y}\\textsubscript{3}) and (\\emph{x}\\textsubscript{4},\n\\emph{y}\\textsubscript{4}) in the plane and we want to find a function\n\\emph{$f$(x)}, defined for $x_1 \\leq x \\leq x_4$, whose graph interpolates\nthese points. Assume that\n\n\\[f(x) = \\begin{cases}\np_1(x) & \\text{for } x_1 \\leq x \\leq x_2 \\\\\np_2(x) & \\text{for } x_2 \\leq x \\leq x_3 \\\\\np_3(x) & \\text{for } x_3 \\leq x \\leq x_4\n\\end{cases}\\]\n\nwhere each \\emph{p}\\textsubscript{i}(\\emph{x}) is a polynomial.\n\n\\textbf{(c)} What equations, written in term of\n\\emph{p}\\textsubscript{i}(\\emph{x}) and possibly their derivatives,\nexpress the condition that $\\displaystyle f''(x)$ is continuous?", 
+    "year": 2010, 
+    "sols": [
+        "The function $\\displaystyle f''(x)$ is continuous if the second\nderivative of adjacent polynomials coincide at \\emph{x\\textsubscript{2}}\nand \\emph{x\\textsubscript{3}}. In our case this means\n\n\\begin{align*}\np''_1(x_2) = p''_2(x_2) \\\\ \np''_2(x_3) = p''_3(x_3)\n\\end{align*}"
+    ], 
+    "hints": [
+        "The function $\\displaystyle f''(x)$ is continuous if the second\nderivative of adjacent polynomials coincide at the two inner points\n\\emph{x\\textsubscript{2}} and \\emph{x\\textsubscript{3}}."
+    ]
+}

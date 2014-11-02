@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_06_(c)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Light Show on the Dance Floor}\n\n\\textbf{A laser is mounted 2m above the floor (see sketch) and its beam\nis directed along a straight line on the dance floor. For visual\neffects, the angle $\\theta$ changes periodically and randomly. The angle\n$\\theta$ is chosen uniformly in the interval\n$(-\\frac{\\pi}{4},\\frac{\\pi}{4})$, that is, the probability density\nfunction (pdf) is $p(\\theta) = \\frac{2}{\\pi}$ for\n$-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$ and zero elsewhere.}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103_2013Q6.jpg}\n\\caption{MATH103 2013Q6.jpg }\n\\end{figure}\n\nThe mean \\emph{x}-coordinate $\\displaystyle \\overline{x}$ of the laser\npoint is given by $\\displaystyle \\overline{x} = \\int_{a}^{b}xp(x)\\,dx$\nwhere \\emph{a} corresponds to the x value for\n$\\displaystyle \\theta = \\frac{\\pi}{4}$ and \\emph{b} corresponds to the x\nvalue for $\\displaystyle \\theta = \\frac{-\\pi}{4}$. Evaluate this\nintegral (or state that it diverges).\n\n\\textbf{NOTE: There was an error in the question as written on the exam\nand has been fixed on the wiki.}", 
+    "year": 2013, 
+    "sols": [
+        "Notice that\n\n$\\displaystyle xp(x) = \\frac{2x}{4 + x^{2}}$\n\nis an odd function. The interval in question comes from noting that\n$\\displaystyle x = 2\\tan(\\theta)$ and so\n$\\displaystyle a = 2\\tan(-\\pi/4) = -2$ and\n$\\displaystyle b = 2\\tan(\\pi/4) = 2$ and so\n$\\displaystyle [a,b] = [-2,2]$ is symmetric about the origin. Therefore,\n\n$\\displaystyle \\overline{x} = \\int_{a}^{b}xp(x)\\,dx = 0$\n\nby symmetry of an odd function.", 
+        "As in the previous solution, the interval in question comes from noting\nthat $\\displaystyle x = 2\\tan(\\theta)$ and so\n$\\displaystyle a = 2\\tan(-\\pi/4) = -2$ and\n$\\displaystyle b = 2\\tan(\\pi/4) = 2$. To solve the integral\n\n$\\displaystyle \\overline{x} = \\int_{a}^{b}xp(x)\\,dx = \\int_{-2}^{2}xp(x)\\,dx = \\int_{-2}^{2}\\frac{2x}{4 + x^{2}}\\,dx$\n\nwe use a substitution given by $\\displaystyle u = 4 + x^2$ so that\n$\\displaystyle du = 2xdx$, $\\displaystyle u(-2) = 4 + (-2)^2 = 8$,\n$\\displaystyle u = 4 + (2)^2 = 8$ and so\n\n\\begin{align*}\n\\overline{x} &= \\int_{a}^{b}xp(x)\\,dx = \\int_{-2}^{2}xp(x)\\,dx \\\\\n&= \\int_{-2}^{2}\\frac{2x}{4 + x^{2}}\\,dx\\\\\n&= \\int_{8}^{8}\\frac{du}{u}\\\\\n&= \\ln|u|\\big|_{8}^{8}\\\\\n&= 0\n\\end{align*}"
+    ], 
+    "hints": [
+        "There is a clever solution by symmetry that you should exploit if you\nsee it.", 
+        "(Alternate solution) Otherwise, try a substitution.", 
+        "A good substitution is by setting $\\displaystyle u = 4 + x^{2}$."
+    ]
+}

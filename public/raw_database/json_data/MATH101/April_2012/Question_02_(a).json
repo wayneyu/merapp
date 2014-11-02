@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH101", 
+    "statement": "Let \\emph{R} be the bounded region that lies between the curve\n$y = 4 - (x-1)^{2}$ and the line $y = x + 1$. Sketch \\emph{R} and find\nits area.", 
+    "year": 2012, 
+    "sols": [
+        "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Plot_of_the_region_for_Q2_a).png}\n\\caption{Plot of the region}\n\\end{figure}\n\nSince the two curves $y_1 = f(x) = 4 - (x-1)^2$ and $y_2 = g(x)=x+1$\nintersects when\n\n\\begin{align*}\n0 &= f(x)-g(x) \\\\\n &= 4-(x-1)^2-(x+1)\\\\\n &= 2+x-x^2 \\\\\n &= -(x-2)(x+1) \\\\\n\\end{align*}\n\nThus, the curves intersect at \\emph{x=-1} and \\emph{x=2}. Moreover, from\nthe sketch, we can see that \\emph{f(x) \\textgreater{} g(x)} in the\ninterval \\emph{{[}-1, 2{]}}.\n\nTherefore, the area \\emph{A} bounded by the curves is given by:\n\n\\begin{align*}\nA&=\\int_{-1}^2 f(x)-g(x) dx\\\\\n&=\\int_{-1}^2 (2+x-x^2) dx \\\\\n&= \\left[ 2x + x^2/2 - x^3/3 \\right]_{-1}^{2} \\\\\n&= \\left(4+2-8/3\\right) - \\left(-2+1/2+1/3\\right) \\\\\n&= 9/2 \n\\end{align*}"
+    ], 
+    "hints": [
+        "Where does the two curves intersect?\n\nIf you find the values of \\emph{x}, namely \\emph{a} and \\emph{b} (where\n''aA=\\textbackslash{}int\\_a\\^{}b(f(x)-g(x))dx where \\emph{f}(x) denotes\nthe curve above the region \\emph{R} and \\emph{g(x)} denotes the curve\nbelow respectively.\n\nYou will need the sketch to determine which curve is above and which is\nbelow."
+    ]
+}

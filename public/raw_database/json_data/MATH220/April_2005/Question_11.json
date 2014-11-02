@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_11", 
+    "course": "MATH220", 
+    "statement": "Let \\emph{M} be the set\n\n\\[M = \\{ x \\in \\mathbb{Q} \\mid x^2 < 5 \\}\\] Find, with proof,\ninf(\\emph{M}).", 
+    "year": 2005, 
+    "sols": [
+        "The condition\n\n\\[\\displaystyle\nx^2 < 5\\] is equivalent to the conditions\n\n\\[\\displaystyle\n- \\sqrt{5} < x < \\sqrt{5}\\]\n\nThis means, we can rewrite the set \\emph{M} as being\n\n\\[\\displaystyle\nM = \\mathbb{Q} \\cap (-\\sqrt{5},\\sqrt{5})\\]\n\nThe infimum of a set being the largest real number that is smaller or\nequal to all the numbers of the set, it seems to be a good idea to think\nthat - is a good candidate for the infimum of the set \\emph{M}.\n\nSince -\u00c2~is clearly smaller than all the numbers of the set \\emph{M}, we\nonly need to show that it is the largest real number with that property.\n\nAssume that there is a number \\emph{m} with that property as well, that\nis strictly larger than -, that is\n\n\\[m \\leq x \\quad\\text{for all } x \\in M \\quad\\text{and}\\quad m > -\\sqrt{5}\\]\nWe'll simply show that such a \\emph{m} cannot exist and hence - is the\ninfimum of the set \\emph{M}.\n\nIndeed, if \\emph{m} is strictly larger than - than it means that the\ninterval\n\n\\[\\displaystyle\n(-\\sqrt{5} , m)\\] is not empty. Since non-empty interval of real numbers\ncontain infinitely many numbers, we can find two distinct numbers in\nthat interval $x_1$ and $x_2$, that is\n\n\\[\\displaystyle\n-\\sqrt{5} < x_1 < x_2 < m\\]\n\nNow a property of the rational numbers is that you can always find a\nrational number between any two distinct real numbers. That means there\nmust exist a rational number \\emph{q} between $x_1$ and $x_2$, so we\nhave\n\n\\[\\displaystyle\n-\\sqrt{5} < x_1 < q < x_2 < m < \\sqrt{5}\\] but in particular that means\nthat \\emph{q} is in the interval (-,) and since it is rational, \\emph{q}\nis an element of the set \\emph{M}. But by construction, \\emph{q}\n\\textless{} \\emph{m} which contradicts the assumption that \\emph{m}\ncould be a lower bound of the set \\emph{M}. This means that such a\nnumber \\emph{m} cannot exist and hence the infimum of the set \\emph{M}\nhas to be -."
+    ], 
+    "hints": [
+        "Recall that inf(\\emph{M}) denotes the\n\\href{http://en.wikipedia.org/wiki/Infimum}{\\emph{infimum}} of the set\n\\emph{M}, that is the largest real number that is smaller than any\nelement of the set \\emph{M}."
+    ]
+}

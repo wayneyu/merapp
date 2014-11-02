@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH200", 
+    "statement": "Use Langrange multipliers to find the extreme values of\n\n\\[\\displaystyle\nf(x, y, z) = (x-2)^2 + (y+2)^2 + (z-4)^2\\] on the sphere\n$\\displaystyle x^2 + y^2 + z^2 = 6$.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

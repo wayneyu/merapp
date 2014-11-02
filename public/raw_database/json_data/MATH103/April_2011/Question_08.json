@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_08", 
+    "course": "MATH103", 
+    "statement": "In a lab a bacterial colony is grown in a petri dish. The colony is\ncircular and the area $A$ covered by the colony increases at a rate\nproportional to its circumference $C$ (because of the high nutrient\nconcentration in the surrounding area):\n\n\\[\\frac{dA}{dt} = k \\cdot C.\\]\n\nOne day ($t=0$) the colony was observed to cover an area of $1 [mm^2]$.\nThe next day the colony had grown to cover $2 [mm^2]$. What area does\nthe colony cover after $T$ days? (Assume that the petri dish is large\nenough such that the colony never reaches the boundary.)", 
+    "year": 2011, 
+    "sols": [
+        "We define $r(t)$ to be the radius (in {[}mm{]}) of the area $A(t)$ (in\n{[}mm\\textsuperscript{2}{]}) at time $t$. Then the circumference of $A$\nis $C=2\\pi r$ and we know that\n\n\\[\\frac{dA}{dt} = k\\cdot C = k\\cdot 2\\pi r(t).\\]\n\nThe area $A$ expressed in terms of $r$ is $A=r^2\\pi$. We take the\nderivative on both sides and get\n\n\\[\\frac{d}{dt}A = \\frac{d}{dt}(r^2\\pi) = 2r(t) \\frac{dr}{dt}\\pi.\\]\n\nWe combine the two equations $dA/dt = 2k\\pi r(t)$ and\n$dA/dt = 2r(t)dr/dt \\pi$ above and cancel $2\\pi r(t)$ to get\n\n\\[\\displaystyle \\frac{dr}{dt} = k.\\]\n\nIntegrating leads to\n\n\\[r(t)\\ = kt + const.\\]\n\nTo find $A(t)$ again we get back to the formula\n\n\\[A(t)\\ = r(t)^2\\pi = (kt+const)^2\\pi.\\]\n\nNow all that's left to do is find the constants $k$ and $const$. For\nthat we use the information given\\[A(t)=1\\]. So, we get\n\n\\[A(0)= (k\\cdot 0 + const)^2\\pi = const^2\\pi = 1,\\]\n\nwhich leads to\n\n\\[\\displaystyle const =\\frac{1}{\\sqrt\\pi}.\\]\n\nThe unit of constant is {[}mm{]}. We can take the positive solution of\nthe root, since negative numbers don't make sense in this context. Now\nwe use\n\n\\[A(1) = \\left(1 \\cdot k + \\frac{1}{\\sqrt\\pi}\\right)^2\\pi = 2,\\]\n\nwhich gives\n\n\\[k = \\frac{(\\sqrt2-1)}{\\sqrt\\pi}.\\]\n\nThe unit of \\emph{k} is {[}mm/day{]}.\n\nHence, the final equation for $A(t)$ is given by\n\n\\[A(t) = \\left(\\frac{(\\sqrt2-1)}{\\sqrt\\pi}t + \\frac{1}{\\sqrt\\pi}\\right)^2\\pi,\\]\n\nwhich you can simplify to\n\n\\[A(t) = \\left((\\sqrt2-1)t + 1\\right)^2.\\]"
+    ], 
+    "hints": [
+        "How are the area and circumference of a circle related? Can you relate\nboth to the radius \\emph{r(t)}?", 
+        "Take the derivative of $A(t)=\\pi (r(t))^2$ and relate it to the given\nequation for $dA/dt$. Can you solve for \\emph{r(t)}?"
+    ]
+}

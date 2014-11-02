@@ -1,8 +1,14 @@
 {
     "term": "December", 
+    "question": "Question_03_(c)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nLet $\\displaystyle f(x) = \\begin{cases}\ncx^2 + 3 & \\text{if } x \\geq 1 \\\\\n2x^3 - c & \\text{if } x < 1\n\\end{cases}$\n\nwhere \\emph{c} is a constant. For what value of the constant \\emph{c} is\nthe function \\emph{$f$(x)} continuous on\n$\\displaystyle (-\\infty, \\infty)$?", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "We are concerned with the continuity of $f$ only at $x=1$, though we\nneed not be concerned about whether $f(1)$ is defined or not, since its\npolynomial 'pieces' are defined on $(-\\infty, \\infty)$. It remains to\nfind a $c$ such that\n$\\lim_{x \\to 1} f(x) = \\lim_{x \\to 1^-} f(x) = \\lim_{x \\to 1^+} f(x) = f(1)$.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  By the definition of $\\displaystyle f(x)$ we have\n  $f(1) = \\lim_{x \\to 1^+} f(x) = \\lim_{x \\to 1^+} cx^2 + 3 = c+3$.\n\\item\n  Furthermore,\n  $\\lim_{x \\to 1^-} f(x) = \\lim_{x \\to 1^-} 2x^3 - c = 2-c$.\n\\end{itemize}\n\nHence we need to find a $\\displaystyle c$ such that\n$\\displaystyle 2 - c = c + 3$. It follows that the value\n$\\displaystyle c$ that makes $\\displaystyle f(x)$ continuous on\n$(-\\infty, \\infty)$ is $c = {\\color{blue}\\frac{-1}{2}}$."
+    ], 
+    "hints": [
+        "What is the definition of continuity? At what $x$-value need we\nconcerned about the continuity of $f$?", 
+        "A function is continuous at $\\displaystyle a$ if\n$\\lim_{x \\to a} f(x) = f(a)$."
+    ]
 }

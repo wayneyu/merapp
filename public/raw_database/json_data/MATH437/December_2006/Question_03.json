@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH437", 
+    "statement": "Suppose that $\\displaystyle p = 8n+5$ is a prime and that \\emph{a} is a\nquadratic residue modulo \\emph{p}. Show that the two solutions of\n$\\displaystyle x^2 \\equiv a \\mod{p}$ are given by one of the following\npossibilities\\[\\displaystyle x \\equiv \\pm a^{n+1} \\mod{p}\\] or\n$\\displaystyle x \\equiv \\pm 2^{2n+1}a^{n+1} \\mod{p}$.", 
+    "year": 2006, 
+    "sols": [
+        "Euler's Criterion states that\n\n$\\displaystyle 1 = \\left(\\frac{a}{p} \\right) \\equiv a^{(p-1)/2} = a^{(8n+5-1)/2} = a^{4n+2}\\mod{p}$\n\nThus, we must have that $\\displaystyle a^{2n+1} \\equiv \\pm1 \\mod{p}$\n(since it squares to one and $\\displaystyle \\pm 1$ are the two unique\nsolutions to $\\displaystyle x^{2} \\equiv 1 \\mod{p}$ where uniqueness is\ndue to the fact that \\emph{p} is a prime).\n\n\\textbf{Case 1:} $\\displaystyle a^{2n+1} \\equiv 1 \\mod{p}$. In this\ncase, we have\n\n$\\displaystyle (\\pm a^{n+1})^{2} \\equiv a^{2n+2} \\equiv a\\cdot a^{2n+1} \\equiv a \\mod{p}$\n\n\\textbf{Case 2:} $\\displaystyle a^{2n+1} \\equiv -1 \\mod{p}$. In this\ncase, recall that $\\displaystyle p \\equiv 5 \\mod{8}$ and so a subcase of\nquadratic reciprocity says that (along with Euler's criterion again)\n\n$\\displaystyle -1 = \\left(\\frac{2}{p} \\right) \\equiv 2^{(p-1)/2} = 2^{4n+2} \\mod{p}.$\n\nUsing this, we have\n\n$\\displaystyle (\\pm 2^{2n+1} a^{n+1})^{2} \\equiv 2^{4n+2} a^{2n+2} \\equiv (-1)\\cdot a\\cdot a^{2n+1} \\equiv (-1)a(-1) \\equiv a \\mod{p}$\n\nand this completes the proof."
+    ], 
+    "hints": [
+        "The first fact about \\emph{a} being a quadratic residue should help\ntrigger Legendre symbols.", 
+        "In fact, one might also be reminded of Euler's Criterion.", 
+        "A sub-case of quadratic reciprocity associated with 2 will finish the\nproblem off."
+    ]
+}

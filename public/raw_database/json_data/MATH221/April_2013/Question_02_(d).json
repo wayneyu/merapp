@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n$A = \\left[ \\begin{array}{ccccc}\n1 & 2 & 1 & 3 & 2 \\\\ \n3 & 4 & 9 & 0 & 7 \\\\ \n2 & 3 & 5 & 1 & 8 \\\\ \n2 & 2 & 8 & -3 & 5\n\\end{array} \\right]  B = \\left[ \\begin{array}{ccccc}\n1 & 2 & 1 & 3 & 2 \\\\ \n0 & 1 & -3 & 5 & -4 \\\\ \n0 & 0 & 0 & 1 & -7 \\\\ \n0 & 0 & 0 & 0 & 0\n\\end{array} \\right]$\n\nThe matrices \\emph{A} and \\emph{B} are related by $B = MA$ , where\n\\emph{M} is an invertible 4x4 matrix.\n\nd) Find the general solution of the system of equations:\n\n\\begin{align*}\n&x +2y +z + 3w &= 2\\\\\n&3x + 4y + 9z  &= 7\\\\\n&2x + 3y + 5z + w &= 8\\\\\n&2x + 2y + 8z - 3w &= 5\n\\end{align*}\n\nIs there a solution in which $z = 0$? If so, find it. Is there a\nsolution in which $w = 0$? If so, find it.", 
+    "year": 2013, 
+    "sols": [
+        "If we write the system of equations as an extended matrix, it will be\nexactly the matrix \\emph{A}. Thus, thinking of \\emph{A} as an extended\nmatrix, we know it represents 4 equations in 4 variables. Row operations\nlead to an equivalent system of equations, with the same solutions.\nHence we can instead choose the extended matrix \\emph{B}, even better,\nwe can further use the reduced matrix we used in\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_02_(b)}{part\n(b)}, i.e. the matrix:\n\n$\\left[ \\begin{array}{ccccc}\n1 & 0 & 7 & 0 & -39 \\\\ \n0 & 1 & -3 & 0 & 31 \\\\ \n0 & 0 & 0 & 1 & -7 \\\\ \n0 & 0 & 0 & 0 & 0\n\\end{array} \\right]$\n\nto determine the answer. From the above matrix, we can read the\nequations:\n\n\\begin{align*}\n&x + 7z &= -39\\\\\n&y -3z &= 31\\\\\n&w &= -7\n\\end{align*}\n\nFrom this, we can quickly see that $w = 0$ leads to no solution (i.e. it\nwould lead to saying \\emph{0 = -7}).\n\nIf \\emph{z=0}, then we get the solution\n\n\\[\\displaystyle x = -39, \\quad y = 31,\\quad w = -7\\]"
+    ], 
+    "hints": [
+        "Write the system of equations as an extended matrix - it should look\nfamiliar! How can you use previous work to determine the solution of the\ncorresponding system of equations?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(o)", 
+    "course": "MATH104", 
+    "statement": "Show that the equation\n\n\\[\\displaystyle{}5^x-10x-7=0\\]\n\nhas a solution.", 
+    "year": 2012, 
+    "sols": [
+        "Define the function $f(x)$ as\n\n\\[f(x) = 5^{x} - 10x - 7.\\] Notice that this function is continuous for\nall values of $x$. Hence, we need only find a closed interval where the\nsign of $f(x)$ changes and invoke the intermediate value theorem to get\nthe desired conclusion.\n\nConsider $x = 2$ and $x = 3$. If we take these two points and plug them\ninto $f(x)$, we get\n\n\\begin{align*}\nf(2) &= 5^{2} - 10(2) - 7 = -2 < 0\\\\\nf(3) &= 5^{3} - 10(3) - 7 = 88 > 0\n\\end{align*} and so the sign of $f(x)$ changes over the closed interval\n$[2,3]$.\n\n Therefore, there exists a value $c$ in $[2,3]$ such that\n\n\\[{\\color{blue} f(c) = 5^{c} - 7c - 10 = 0}\\] by the Intermediate Value\nTheorem."
+    ], 
+    "hints": [
+        "Apply the intermediate value theorem."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nA cable that weighs 2 lb/ft is used to lift 800 lb of coal up a mine\nshaft 500 ft deep. Find the \\emph{total} work done (including the work\ndone in lifting the cable itself).", 
+    "year": 2008, 
+    "sols": [
+        "A picture is included below.\n\nLet $x_{i}^{*}$ be a sample point. Then the work done on this \\emph{i}th\npart in foot-pounds is\n\n$W_{i} = 2\\Delta x \\cdot x_{i}^{*}$\n\nwhere the force is the $2\\Delta x$ part and comes from the fact that\nsince the cable weights 2 pounds per foot and the delta x is how much of\nthe cable we are using in the \\emph{i}th part. The $x_{i}^{*}$ part is\nthe distance. Hence, the work done is\n\n$W_{cable} = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}2x_{i}^{*}\\Delta x = \\int_{0}^{500} 2x \\, dx = \\left. x^{2} \\right|_{0}^{500} = 250000$\n\nHowever, this does not include the work done to lift the coal itself.\nThis undergoes\n\n$W_{coal} = 800*500 = 400000$\n\nand so the total work done is\n\n$W_{total} = 400000 + 250000 = 650000$\n\nwhere this is measured in foot pounds. This completes the proof.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2008Q2dNew.jpeg}\n\\caption{MATH101Apr2008Q2dNew.jpeg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Break this problem up into two parts. Compute how much work is done to\nlift up the coal. Then compute how much work is done to lift the cable\nup.", 
+        "Remember that Work = Force x displacement."
+    ]
+}

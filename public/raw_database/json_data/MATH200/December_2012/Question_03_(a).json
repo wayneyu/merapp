@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH200", 
+    "statement": "Suppose that a function $\\displaystyle z = f(x, y)$ is implicitly\nde\u00ef\u00ac\u0081ned by an equation: $\\displaystyle xyz + x + y^2 + z^3 = 0$\n\n(a) Find $\\displaystyle\\frac{\\partial z}{\\partial x}$", 
+    "year": 2012, 
+    "sols": [
+        "In implicit differentiation, we find\n$\\displaystyle \\frac{\\partial z}{\\partial x}$ by\n$\\displaystyle -\\frac{F_x}{F_z}$\n\nHence\n$\\displaystyle \\frac{\\partial z}{\\partial x} = -\\frac{yz + 1}{xy + 3z^2}$", 
+        "Implicitly differentiating term by term, we find\n\n\\begin{align*}\n\\frac{\\partial x}{\\partial x}(yz) +  \\frac{\\partial z}{\\partial x}(xy) + \\frac{\\partial x}{\\partial x} + 3z^2 \\frac{\\partial z}{\\partial x} & = 0 \\\\\n\\frac{\\partial z}{\\partial x} (xy+3z^2) & = -(yz+1) \\\\\n\\frac{\\partial z}{\\partial x} & = -\\frac{yz + 1}{xy + 3z^2}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Remember that\n$\\displaystyle \\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}$", 
+        "Alternatively, implicitly differentiate each term, keeping in mind that\n$\\displaystyle x$ and $\\displaystyle z$ are functions of\n$\\displaystyle x$."
+    ]
+}

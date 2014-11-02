@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Light Show on the Dance Floor}\n\n\\textbf{A laser is mounted 2m above the floor (see sketch) and its beam\nis directed along a straight line on the dance floor. For visual\neffects, the angle $\\theta$ changes periodically and randomly. The angle\n$\\theta$ is chosen uniformly in the interval\n$(-\\frac{\\pi}{4},\\frac{\\pi}{4})$, that is, the probability density\nfunction (pdf) is $p(\\theta) = \\frac{2}{\\pi}$ for\n$-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$ and zero elsewhere.}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103_2013Q6.jpg}\n\\caption{MATH103 2013Q6.jpg }\n\\end{figure}\n\nFind the cumulative distribution function (cdf), F(x) of the\nx-coordinate of the laser point on the floor.", 
+    "year": 2013, 
+    "sols": [
+        "Solving first for the cdf in terms of $\\displaystyle \\theta$, using that\n\\emph{p(t) = 0} for \\emph{t \\textless{} -$\\pi$/4}, we have\n\n\\begin{align*}\nF(\\theta) &= \\int_{-\\pi/4}^{\\theta}\\frac{2}{\\pi}\\,dt = \\left.\\frac{2}{\\pi}t \\right|_{-\\pi/4}^{\\theta} \\\\\n&= \\frac{2}{\\pi}\\left(\\theta - \\frac{-\\pi}4\\right)\n\\end{align*}\n\nTo find the cdf in terms of \\emph{x} we note that, from the diagram,\n$\\displaystyle \\tan(\\theta) = \\tfrac{x}{2}$. Solving for \\emph{$\\theta$} gives\n$\\displaystyle \\theta = \\arctan(\\tfrac{x}{2})$ and thus we have\n\n\\[\\displaystyle F(x) = \\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)\\]\n\ncompleting the problem."
+    ], 
+    "hints": [
+        "First find the cdf in terms of $\\theta$", 
+        "Recall the definition of the cumulative distribution function \\emph{F}\nof a continuous random variable with probability density function\n\\emph{p}:\n\n\\[F(\\theta) = \\int_{-\\infty}^\\theta p(t)\\,dt\\]", 
+        "Then use trigonometry to solve for \\emph{x} in terms of $\\theta$"
+    ]
+}

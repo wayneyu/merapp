@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH220", 
+    "statement": "Let $\\{ b_n \\}$ be a sequence defined by\n\n\\[b_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.\\]\nProve that\n\n\\[1 \\leq b_n \\leq 2 \\quad\\text{ for all } n \\in \\mathbb{N}.\\]", 
+    "year": 2011, 
+    "sols": [
+        "We will prove this by induction on $n$.\n\nFirst, for $n=1$, since $b_1=2$ we clearly have that\n\n\\[\\displaystyle\n1 \\leq b_1 \\leq 2\\]\n\nNow, let us assume that the statement is true up to $n=m$, that is\n\n\\[\\displaystyle\n1 \\leq b_n \\leq 2 \\quad\\text{ for } n=1, \\dots, m\\] and let us show that\n\n\\[\\displaystyle\n1 \\leq b_{m+1} \\leq 2\\]\n\nBy definition of the sequence ${ b_n }$ we have that\n\n\\[b_{m+1} = \\frac{b_m+\\sqrt{b_m}}{2}\\]\n\nSince $b_m$ $\\leq$ 2 we have that\n\n\\[\\displaystyle\n\\sqrt{b_m} \\leq \\sqrt{2} \\leq 2\\]\n\nand so\n\n\\[\\displaystyle\nb_{m+1} = \\frac{b_m + \\sqrt{b_m}}{2} \\leq \\frac{2+2}{2} = 2\\]\n\nAnd since $b_m$ $\\geq$ 1 we have that\n\n\\[\\displaystyle\n\\sqrt{b_m} \\geq 1\\]\n\nand so\n\n\\[\\displaystyle\nb_{m+1} = \\frac{b_m + \\sqrt{b_m}}{2} \\geq \\frac{1+1}{2} = 1\\]\n\nThese two arguments show that\n\n\\[\\displaystyle\n1 \\leq b_{m+1} \\leq 2\\]\n\nand hence conclude our proof."
+    ], 
+    "hints": [
+        "Use induction!"
+    ]
+}

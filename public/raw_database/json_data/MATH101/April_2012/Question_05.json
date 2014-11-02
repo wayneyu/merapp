@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05", 
+    "course": "MATH101", 
+    "statement": "Find, with explanation, the radius of convergence and the interval of\nconvergence of the power series\n\n\\[\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{(x-1)^{n}}{2^{n}(n+2)}\\]", 
+    "year": 2012, 
+    "sols": [
+        "We will use the ratio test:\n\n\\begin{align*}\n\\lim_{n\\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|&=\\lim_{n\\to \\infty}\\left| \\frac{\\frac{(x-1)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(x-1)^n}{2^n(n+2)}} \\right| \\\\\n&=\\lim_{n\\to \\infty}\\frac{|x-1|(n+2)}{2\\cdot (n+3)}\\\\\n&=|\\frac{x-1}{2}|\n\\end{align*}\n\nWe want this limit to be $<1$ so that the series converges absolutely.\nThis means $|\\frac{x-1}{2}|<1$ which means that the radius of\nconvergence is $2$ and that $-1<x<3$. Now we have to test the endpoints.\n\nAt $x=3$ we get:\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n2^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{(-1)^n}{(n+2)}$\n\nwhich converges by alternate series test, if we sum two consecutive\nterms we get:\n\n$\\frac{1}{n}-\\frac{1}{n+1} = \\frac{1}{n(n+1)} <\\frac{1}{n^2}$\n\nand the series $\\sum_{n=1}^\\infty\\frac{1}{n^2}$ converges.\n\nAt $x=-1$ we get\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n(-2)^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{1}{(n+2)}$\n\nwhich diverges because it is the tail of the harmonic series.\n\nSo, the interval of convergence is $(-1,3].$"
+    ], 
+    "hints": [
+        "Use the ratio test to figure out for which values of x does the series\nconverge."
+    ]
+}

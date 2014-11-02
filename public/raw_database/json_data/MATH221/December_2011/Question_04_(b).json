@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH221", 
+    "statement": "True or false (explain your answer): If \\emph{v} is an eigenvector for\nthe invertible matrix \\emph{A}, then \\emph{v} is also an eigenvector for\nthe matrix \\emph{A}\\textsuperscript{\u00e2\u0088\u00921}.", 
+    "year": 2011, 
+    "sols": [
+        "\\textbf{Step 1.} If \\emph{v} is an eigenvector for a matrix \\emph{A} for\nsome eigenvalue \u03bb, then we can write\n\n\\[\\displaystyle\nAv = \\lambda v\\]\n\n\\textbf{Step 2.} Since we assume that the matrix \\emph{A} is invertible,\nwe can multiply on the above equation by that inverse on the left on\neach side and obtain\n\n\\[\\displaystyle\nA^{-1}Av = A^{-1}\\lambda v\\] Which is equivalent to\n\n\\[\\displaystyle\nv = \\lambda A^{-1} v\\]\n\n\\textbf{Step 3.} We would now like to divide by \u03bb, but before we should\ncheck that this is allowed, i.e. that \u03bb is not zero. Since \\emph{A} in\ninvertible, \\emph{Aw = 0 = 0(w)} implies \\emph{w = 0}. Thus \u03bb = 0 is\n\\textbf{not} an eigenvalue for \\emph{A} and we can safely bring \u03bb to the\nLHS in the equation above. This yields\n\n\\[\\displaystyle\n\\frac{1}{\\lambda}v = A^{-1} v\\] which would mean that \\emph{v} is an\neigenvector for the eigenvalue 1/\u03bb of the inverse of the matrix\n\\emph{A}. So we can conclude that the statement is \\textbf{true}."
+    ], 
+    "hints": [
+        "What does it mean to be an eigenvector \\emph{v} of a matrix \\emph{A}?\nWrite down the definition and start from there.", 
+        "Since we are told that \\emph{A} is invertible, we know that\n\\emph{A}\\textsuperscript{-1} exists. So you can multiply that to your\nequation that defines an eigenvector \\emph{v}.", 
+        "Can you divide by the eigenvalue \u03bb? I.e. could \u03bb be zero?"
+    ]
+}

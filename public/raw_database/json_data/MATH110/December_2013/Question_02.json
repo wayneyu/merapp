@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02", 
+    "course": "MATH110", 
+    "statement": "Find the equations of the two tangent lines to the curve\n\n\\[f(x) = \\frac{x - 4}{x + 4}\\] that are parallel to the line x - 2y = 2.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

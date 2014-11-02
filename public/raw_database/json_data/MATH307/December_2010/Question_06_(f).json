@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(f)", 
+    "course": "MATH307", 
+    "statement": "Suppose you expanded the same function \\emph{$f$(x) = x} as in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)} except on the interval $0 \\leq x \\leq 2$. What would be the\n\\emph{form} (i.e., do not compute the coefficients) of the Fourier\nseries valid for this interval? What points on the plane would you plot\nto produce a frequency-amplitude plot from this new Fourier series?\n(Give the answer in terms of the coefficients in the new expansion.)", 
+    "year": 2010, 
+    "sols": [
+        "If we extend the domain from (0,1) to (0,2), the frequency will chenge.\nOur original frequency was $\\omega_n=\\frac{n}{T}$ where T was 1. Now T\nis 2 since interval has increased. Thus, new $\\omega_n=\\frac{n}{2}$.\nHowever, the amplitude will not change.\n\n$c_{n} = \\int_{0}^{1} e^{-2\\pi inx}f(x)dx= \\frac{1}{2}\\int_{0}^{2} e^{-2\\pi \\frac{inx}{2}}f(x)dx$\n\nAs a result, new $c_n$ will be halved, but bigger range of integration\nwill put the value back increased by 2 again. Thus, amplitude is equal.\nAlthough, $c_0$ is different.\n\n$c_{0} = \\frac{1}{2}\\int_{0}^{2} f(x)dx=\\frac{1}{2}\\left [\\frac{1}{2}x^2 \\right ]^2_0=1$\n\nThus new frequency-amplitude plot will be (0,1) and\n$\\left(\\frac{n}{2},|c_n|\\right)$"
+    ], 
+    "hints": []
+}

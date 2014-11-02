@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_18", 
+    "course": "MATH152", 
+    "statement": "For questions \\textbf{A17-A19} below, $u$ and $z$ are the complex\nnumbers given below:\n\n\\begin{align*} u &= 4-2i \\\\ z &= -1+3i \\end{align*}\n\n\\textbf{A18:} Compute $|z|$.", 
+    "year": 2011, 
+    "sols": [
+        "Via the hint\n\n$\\displaystyle |-1 + 3i|= \\sqrt{(-1)^{2} + 3^{2}} = \\sqrt{10}$"
+    ], 
+    "hints": [
+        "$\\displaystyle |a + bi|= \\sqrt{a^{2} + b^{2}}$"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(c)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nSolve the differential equation\n\n\\[\\frac{dy}{dx} = xe^{x^2-\\ln(y^2)}\\]", 
+    "year": 2012, 
+    "sols": [
+        "We begin by rewriting the equation by using exponent and logarithm\nrules:\n\n$\\frac{dy}{dx} = x e^{x^2 - \\ln(y^2)} = x e^{x^2} e^{-\\ln(y^2)} = x e^{x^2} e^{\\ln(y^{-2})} = x e^{x^2} \\frac{1}{y^2}$.\n\nFrom $\\frac{dy}{dx} = x e^{x^2} \\frac{1}{y^2}$, we can separate\nvariables:\n\n$y^2 dy = x e^{x^2} dx$.\n\nNow we integrate:\n\n\\[\\int y^2 dy = \\int x e^{x^2} dx \\implies \\frac{y^3}{3} = \\frac{1}{2} e^{x^2} + C_1\\].\n\nThe second integral was solved using the substitution $u = x^2$, so that\n$du = 2x dx$ and hence\n\n\\[\\int x e^{x^2} dx = \\int \\frac{1}{2} e^u du = \\frac{1}{2} e^u + C_1 = \\frac{1}{2} e^{x^2} + C_1\\]\n\nWe can solve for \\emph{y}:\n\n\\[y^3 = \\frac{3}{2} e^{x^2} + 3C\\] so\n$y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + 3C_1}$\n\nSince \\emph{C}\\textsubscript{1} is arbitrary, we can just as well write\n\n\\[y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + C_2}\\]\n\nfor \\emph{C}\\textsubscript{2} an arbitrary constant."
+    ], 
+    "hints": [
+        "First, simplify the right hand side, then use separation of variables."
+    ]
+}

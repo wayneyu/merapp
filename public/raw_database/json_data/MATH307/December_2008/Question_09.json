@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_09", 
+    "course": "MATH307", 
+    "statement": "Find the singular values of $A=\\begin{pmatrix}\n1 &0 \\\\\n1& 0\\\\\n0&1\n\\end{pmatrix}$\n\nThen determine the diagonal matrix $\\Sigma$ in the singular value\ndecomposition A =$U\\Sigma V^{T}$.", 
+    "year": 2008, 
+    "sols": [
+        "Given $A=\\begin{pmatrix}\n1 &0 \\\\\n1& 0\\\\\n0&1\n\\end{pmatrix}$ and $A^{^{T}}=\\begin{pmatrix}\n1 &1 &0 \\\\\n0&0 &1\n\\end{pmatrix}$ we calculate $A^{T}A=\\begin{pmatrix}\n2 &0 \\\\\n0&1\n\\end{pmatrix}$, which has the eigenvalues \\emph{2} and \\emph{1}. Hence,\nthe singular values of \\emph{A} are $\\sqrt{2}$ and $\\displaystyle 1$.\n\nPutting the singular values on the diagonal of \\emph{\u03a3} we find that\n$\\Sigma =\\begin{pmatrix}\n\\sqrt{2} &0 \\\\\n0&1 \\\\\n0&0\n\\end{pmatrix}.$"
+    ], 
+    "hints": [
+        "The singular values of \\emph{A} are the square root of the eigenvalues\nof \\emph{A\\textsuperscript{T}A}.", 
+        "The matrix \\emph{\u03a3} has the same dimension as \\emph{A} and holds the\nsingular values on the diagonal."
+    ]
+}

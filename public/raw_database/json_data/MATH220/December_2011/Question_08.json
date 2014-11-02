@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08", 
+    "course": "MATH220", 
+    "statement": "Prove that if \\emph{p} is a prime number and \\emph{p} \\textgreater{} 4,\nthen\n\n\\[\\displaystyle\np^2 \\equiv 1 \\pmod 6\\]", 
+    "year": 2011, 
+    "sols": [
+        "By saying that we look at primes larger than 4, what we really mean is\nwe look at all the primes except 2 and 3 (which makes sense since\n2\\textsuperscript{2} = 4 and 3\\textsuperscript{2} = 9 which is 3 mod 6;\nso these two don't work anyway).\n\nNow any prime \\emph{p} other than 2 and 3 will then clearly NOT be a\nmultiple of two and NOT be a multiple of 3. This means that\n\n\\[\\displaystyle\np \\equiv 1 \\text{ or } 5 \\pmod 6\\] since integers that are 0, 2 or 4 mod\n6 are all even and since an integer that is 3 mod 6 is a multiple of 3.\n\nBut since\n\n\\[\\displaystyle\n1^2 \\equiv 1 \\pmod 6\\] and\n\n\\[\\displaystyle\n5^2 =25 \\equiv 1 \\pmod 6\\]\n\nwe can conclude that if \\emph{p} is a prime larger than 4, then its\nsquare is always 1 mod 6."
+    ], 
+    "hints": [
+        "Note: this hint was giving on the exam itself.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nThink about the possible remainders when \\emph{p} is divided by 6.\n\\end{description}"
+    ]
+}

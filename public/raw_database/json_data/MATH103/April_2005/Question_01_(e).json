@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH103", 
+    "statement": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(e)} Consider the mass density function\n\n\\[d(x) = 4-x^2\\] over the interval $0 \\leq x \\leq 2$. The centre of mass\nof this mass distribution is\n\n\\emph{(i)} ~ $\\displaystyle{} 1$ ~ ~\n\n\\emph{(ii)} ~ $\\displaystyle{} 4$ ~ ~\n\n\\emph{(iii)} ~ $\\displaystyle{} \\frac43$ ~ ~\n\n\\emph{(iv)} ~ $\\displaystyle{} \\frac34$ ~ ~\n\n\\emph{(v)} ~ $\\displaystyle{} \\frac{16}3$", 
+    "year": 2005, 
+    "sols": [
+        "Given the mass density function $d(x)=4-x^{2}$ over the interval\n$0\\leq x \\leq 2$, we use the formula for the centre of mass to get\n\n\\begin{align*}\n\\overline{x} &= \\frac{\\int_{0}^{L}x\\rho (x)dx}{\\int_{0}^{L}\\rho (x)dx} \\\\\n&= \\frac{\\int_{0}^{2}x(4-x^{2})dx}{\\int_{0}^{2}(4-x^{2})dx} \\\\\n&= \\frac{\\int_{0}^{2}(4x-x^{3})dx}{\\int_{0}^{2}(4-x^{2})dx} \\\\\n&= \\frac{I_1}{I_2}\n\\end{align*}\n\nThe integral on the top is calculated as\n\n\\begin{align*}\nI_1 &= \\int_{0}^{2}(4x-x^{3})dx \\\\\n&= \\left [2x^{2}-\\frac{x^{4}}{4}  \\right ]_{0}^{2} \\\\\n&= \\left [\\left ( 2(2)^{2}-\\frac{(2)^{4}}{4} \\right )- \\left ( 2(0)^{2}-\\frac{(0)^{4}}{4} \\right )  \\right ] \\\\\n&= 4\n\\end{align*}\n\nand the integral on the bottom reduces to\n\n\\begin{align*}\nI_2 &= \\int_{0}^{2}(4-x^{2})dx \\\\\n&= \\left [4x-\\frac{x^{3}}{3}  \\right ]_{0}^{2} \\\\\n&= \\left [\\left ( 4(2)-\\frac{(2)^{3}}{3} \\right ) - \\left (4(0)-\\frac{(0)^{3}}{3} \\right ) \\right ] \\\\\n&= \\frac{16}{3}\n\\end{align*}\n\nPutting these together we finally obtain\n\n\\[\\overline{x} = \\frac{I_1}{I_2} = \\frac{4}{\\frac{16}{3}} = \\frac34\\]\n\nTherefore, the correct answer is (iv)."
+    ], 
+    "hints": [
+        "The formula for the centre of mass of a continuous distribution over the\ninterval $0\\leq x\\leq L$ is\n\n\\[\\overline{x}=\\frac{\\int_{0}^{L}x\\rho (x)dx}{\\int_{0}^{L}\\rho (x)dx}\\]\n\nwhere $\\rho(x)$ is the mass density function."
+    ]
+}

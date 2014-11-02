@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_06", 
+    "course": "MATH100", 
+    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nFind the derivative of the function\n\n\\[\\frac{t}{t+5}\\]\n\nusing the definition of the derivative.\n\n\\emph{NOTE: No credit will be given for using differentiation rules such\nas the power rule, product rule, quotient rule or chain rule, although\nyou may use these rules to check your answer.}", 
+    "year": 2010, 
+    "sols": [
+        "By the definition of a derivative, we have that\n\n\\begin{align*}\nf'(x) &= \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\\\\\n&= \\lim_{h \\to 0} \\frac{\\frac{x+h}{x + h + 5} - \\frac{x}{x+5} }{h} \\end{align*}\n\nThe key step to simplifying this expression is here: we find a common\ndenominator for the fractions on top and combine them.\n\n\\begin{align*}\n&= \\lim_{h \\to 0} \\frac{\\frac{(x+h)(x+5)}{(x + h + 5)(x+5)} - \\frac{x(x+h+5)}{(x+h+5)(x+5)} }{h} \\\\\n&= \\lim_{h \\to 0} \\frac{\\frac{x^{2} + xh + 5x + 5h - x^{2} - xh - 5x}{(x + h + 5)(x+5) }}{h} \\end{align*}\n\nNow we simplify the expression into a single fraction and cancel the\n\\emph{h} on top and bottom.\n\n\\begin{align*}\n&= \\lim_{h \\to 0} \\frac{5h}{h(x + h + 5)(x+5)} \\\\\n&= \\lim_{h \\to 0} \\frac{5}{(x + h + 5)(x+5)} \\end{align*}\n\nFinally taking the limit gives:\n\n\\begin{align*}\n&= \\frac{5}{(x + 5)(x+5)} \\\\\n&= \\frac{5}{(x + 5)^{2}} \n\\end{align*}", 
+        "Using the alternative definition,\n\n\\begin{align*}\n f'(a) &= \\lim_{x \\to a} \\frac{f(x) - f(a)}{x-a} \\\\\n f'(a) &= \\lim_{x \\to a} \\frac{\\frac{x}{x+5} - \\frac{a}{a+5}}{x-a} \\end{align*}\n\nHere we find a common denominator to simplify the fractions on top of\nthe large fraction.\n\n\\begin{align*} f'(a) &= \\lim_{x \\to a} \\frac{\\frac{x(a+5)}{(x+5)(a+5)} - \\frac{a(x+5)}{(a+5)(x+5)}}{x-a} \\\\\n f'(a) &= \\lim_{x \\to a} \\frac{\\frac{xa+5x - ax - 5a}{(x+5)(a+5)} }{x-a} \\end{align*}\n\nWe then simplify the fraction, factoring out a 5 on top and then\ncanceling the \\emph{(x - a)} term.\n\n\\begin{align*}\n f'(a) &= \\lim_{x \\to a} \\frac{5x - 5a}{(x+5)(a+5)(x-a)} \\\\\n f'(a) &= \\lim_{x \\to a} \\frac{5(x - a)}{(x+5)(a+5)(x-a)} \\\\\n f'(a) &= \\lim_{x \\to a} \\frac{5}{(x+5)(a+5)} \\end{align*}\n\nFinally we take the limit.\n\n\\begin{align*}\n f'(a) &= \\frac{5}{(a+5)(a+5)} \\\\\n f'(a) &= \\frac{5}{(a+5)^{2}} \\\\\n\\end{align*}\n\nWhich completes the question."
+    ], 
+    "hints": [
+        "The definition of a derivative is\n\n$\\displaystyle f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$\n\nAlternatively, one can use\n\n$\\displaystyle f'(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x-a}$", 
+        "At some stage, you might want to find a common denominator for two\nfractions you are trying to subtract."
+    ]
+}

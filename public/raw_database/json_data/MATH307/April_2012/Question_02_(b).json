@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH307", 
+    "statement": "Suppose that you want to solve the boundary value problem\n\n\\[f''(x) - x^2f(x) = 1, \\quad 0 \\leq x \\leq 1, \\quad f(0) = 1, \\quad f(1) = 1.\\]\n\nLet $\\mathbf{F} = [f_0, f_1, \\dots, f_N]^T$ be the finite difference\napproximation to the solution \\emph{$f$(x)} at uniformaly spaced points\n\\emph{x\\textsubscript{0}}, \\emph{x\\textsubscript{1}}, ...,\n\\emph{x\\textsubscript{N}}.\n\n\\textbf{(b)} The finite difference approximation to the equations and\nboundary conditions can be written in the matrix form \\emph{A\\textbf{F}\n= \\textbf{b}}. Find the matrix \\emph{A} and the vector \\textbf{\\emph{b}}\nfor the case \\emph{N = 4}.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

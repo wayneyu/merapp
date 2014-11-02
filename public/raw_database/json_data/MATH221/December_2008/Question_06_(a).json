@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH221", 
+    "statement": "Suppose that each year 10\\% people living in Alberta move to BC, while\n15\\% of people living in BC move to Alberta. Write a transition matrix\nthat represents the change in population each year.", 
+    "year": 2008, 
+    "sols": [
+        "To begin with, we assume that people live in either Alberta or BC. Thus,\neach year 10 We represent a transition matrix as follows:\nT={[}$T _{ij}${]}, where $T _{ij}$ is the We let i = Alberta =1 and j =\nBC = 2,\n\ni.e. $T _{11}$ =$T _{12}$= $T _{21}$ = and finally $T _{22}$ Thus, we\nhave $T=\\begin{bmatrix}\n0.90 &0.10 \\\\ \n0.15& 0.85\n\\end{bmatrix}$."
+    ], 
+    "hints": []
+}

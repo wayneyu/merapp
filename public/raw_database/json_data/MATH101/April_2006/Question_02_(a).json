@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nSketch the bounded region that lies between the curves $y = 2-x^{2}$ and\n$y = |x|$, and show that the area of this region equals $\\tfrac{7}{3}$.", 
+    "year": 2006, 
+    "sols": [
+        "A picture is included below.\n\nFirst, find the points of intersection.\n\n$2-x^{2} = |x|$\n\nTake the positive values of $x$ first and solving gives\n\n$0 = 2-x^{2} - |x| = -x^{2}-x + 2 = -(x-1)(x+2)$\n\nand so $x  = 1$ is a solution here (notice that we discard $x = -2$\nsince we started with only the positive \\emph{x} values first). Now,\ntaking the negative \\emph{x} values gives\n\n$0 = 2-x^{2} - |x| = -x^{2}+x + 2 = -(x+1)(x-2)$\n\nand so $x = -1$ is the other solution. Now, we can draw the picture (see\nbelow). The picture clearly shows that the upper function is\n2-\\emph{x}\\textsuperscript{2}, and that the function $2-x^{2}-|x|$ is an\neven function. So we see that it suffices to compute\n\n$A = 2\\int_{0}^{1}(2-x^{2}-|x|)\\,dx = 2\\int_{0}^{1}(2-x^{2}-x)\\, dx$\n\nEvaluating gives\n\n\\begin{align*}\nA &= 2\\int_{0}^{1}(2-x^{2}-x)\\,dx \\\\\n&= \\left.2\\left(2x - \\frac{x^{3}}{3} - \\frac{x^{2}}{2}\\right)\\right|_{0}^{1}\\\\\n&= 2\\left(2 - \\frac{1}{3} - \\frac{1}{2}\\right)\\\\\n&= 3 - \\frac{2}{3}\\\\\n&= \\frac{7}{3}\n\\end{align*}\n\nas required.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2006Q2a.jpeg}\n\\caption{MATH101Apr2006Q2a.jpeg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Find the points of intersection - then draw the picture."
+    ]
+}

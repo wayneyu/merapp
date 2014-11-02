@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH110", 
+    "statement": "Complete the statement of the Intermediate Value Theorem by filling in\nthe blanks: Suppose the function $f$ is continuous on the interval\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ and $L$ is a number between $f(a)$ and $f(b)$.\nThen there is at least one number \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ in $[a,b]$\nsatisfying $f(c) = L$.", 
+    "year": 2010, 
+    "sols": [
+        "Suppose the function $f$ is continuous on the interval {[}a,b{]} and $L$\nis a number between $f(a)$ and $f(b)$. Then there is at least one number\nc in $[a,b]$ satisfying $f(c) = L$."
+    ], 
+    "hints": [
+        "Which letters appear in the conclusion of the theorem? Where do they\nbelong in the opening statement of the theorem?"
+    ]
+}

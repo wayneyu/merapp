@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH312", 
+    "statement": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(a)} Bob knows that (the plaintext) $\\displaystyle P = 101$, he\ncomputes the ciphertext $\\displaystyle C = 35$ and communicates this\nnumber to Alice. Explain how Bob computed \\emph{C}.", 
+    "year": 2008, 
+    "sols": [
+        "To compute the ciphertext given the plain text, one must compute\n\n$\\displaystyle P^{e} \\mod{n}$\n\nand in this case, we have\n\n$\\displaystyle 101^{1189} \\equiv 35 \\mod{1271}$\n\nso the value of the ciphertext is $\\displaystyle C = 35$. Note: You do\nnot need to actually perform the above computation. It is given to us."
+    ], 
+    "hints": [
+        "No hint here. Review your notes for the RSA protocol (or check out the\nWikipedia page)."
+    ]
+}

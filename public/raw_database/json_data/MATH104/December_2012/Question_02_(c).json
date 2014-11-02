@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(c)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\[f(x)=\\frac{2x^3}{3x^2-9}\\]\n\nIts first and second derivatives are given by\n\n\\[f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\]\n\nFind the x coordinate of all local maxima, local minima, and inflection\npoints. Be sure to indicate which is which.", 
+    "year": 2012, 
+    "sols": [
+        "By\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)}{part(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)}{part(b)}\nof this problem we see that the function changes from decreasing to\nincreasing at $x = -3$, so there is a local maximum there, and the\nfunction changes from decreasing to increasing at $x = 3$, so there is a\nlocal minimum at \\emph{x=3}. The function changes concavity at $x = 0$,\nso there is an inflection point at \\emph{x = 0}.\n\n\\textbf{(Notice that $x = \\pm\\sqrt{3}$ are not points in the domain and\nhence cannot be extrema or inflection points.)}"
+    ], 
+    "hints": [
+        "Remember that local extrema can only occur at the points in the domain\nwhere the derivative is zero or undefined and the function swaps from\nincreasing to decreasing or vice versa. Inflection points are points in\nthe domain where the second derivative is zero or undefined and the\nconcavity changes."
+    ]
+}

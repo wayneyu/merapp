@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_09_(a)", 
+    "course": "MATH220", 
+    "statement": "Find the supremum, maximum, infimum, and minimum of the following\nsubsets of $\\mathbb{R}$ (if they exist). If they do not exist write\n``none''. You do not need to justify your answers.\n\n\\begin{longtable}[c]{@{}lllll@{}}\nset & supremum & maximum & infimum & minimum\\\\\n\n$\\{x\\in\\mathbb{R}\\quad\\textrm{s.t.}\\quad{}7<x\\leq10\\}$ & & & &\\\\\n$\\{x\\in\\mathbb{Q}\\quad\\textrm{s.t.}\\quad{}x^2<3\\}$ & & & &\\\\\n$\\{x\\in\\mathbb{Z}\\quad\\textrm{s.t.}\\quad{}x^2<3\\}$ & & & &\\\\\n$\\bigcap_{n=1}^\\infty\\left(1-\\frac{1}{n},4+\\frac{1}{\\sqrt{n}}\\right)$ &\n& & &\\\\\n\\end{longtable}", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

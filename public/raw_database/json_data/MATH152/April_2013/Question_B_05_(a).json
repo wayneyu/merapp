@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_B_05_(a)", 
+    "course": "MATH152", 
+    "statement": "We are given the following transition matrix for a random walk\n\n\\[P = \\begin{bmatrix} 0 & 1/2 \\\\ 1 & 1/2 \\end{bmatrix}\\]\n\nWhat is the probability that a walker starting in location 1 is in\nlocation 1 after 2 steps?", 
+    "year": 2013, 
+    "sols": [
+        "The first and second entry of $P^k \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix}$\ngive the probability that, after \\emph{k} steps, the random walker is in\nlocation 1 and location 2, respectively, when the random walker starts\nin location 1. Therefore we calculate\n\n\\[P^{2} \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} = \\begin{bmatrix}1/2 & 1/4 \\\\1/2 & 3/4 \\end{bmatrix} \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} = \\begin{bmatrix} 1/2 \\\\ 1/2\\end{bmatrix}\\]\n\nwhich tells us that the probability of being in state 1 is 1/2."
+    ], 
+    "hints": [
+        "What do we calculate when we multiply \\emph{P} with the vector\n$\\begin{bmatrix}1 \\\\ 0 \\end{bmatrix}$?", 
+        "Since the walker does two steps, you will need to use $P^{2}$."
+    ]
+}

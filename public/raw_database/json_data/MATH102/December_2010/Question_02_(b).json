@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH102", 
+    "statement": "Suppose the tangent line to the graph of \\emph{y} = $f(x)$ at\n\\emph{x} = 1 is \\emph{y} = 2\\emph{x} + 1, and $f$(3) = 2.\n\n(b) What is the average rate of change of $f$ on the interval 1 \u2264 \\emph{x}\n\u2264 3?", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

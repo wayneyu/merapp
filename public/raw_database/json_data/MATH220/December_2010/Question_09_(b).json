@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_09_(b)", 
+    "course": "MATH220", 
+    "statement": "Prove that if $a_n\\to1$ then $a_n^2\\to1$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

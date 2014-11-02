@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH312", 
+    "statement": "Suppose that \\emph{p} is an odd prime. Then show that\n\n$\\displaystyle 1^{2} \\cdot 3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\equiv (-1)^{(p+1)/2} \\mod{p}$", 
+    "year": 2009, 
+    "sols": [
+        "We begin by multiplying the product by\n$\\displaystyle (-1)^{p-1} \\equiv 1 \\mod{p}$. This gives\n\n$\\displaystyle 1^{2} \\cdot 3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\equiv \n1^{2} \\cdot 3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\cdot (-1)^{p-1} \\mod{p}$\n\nNow, rewrite each square as $\\displaystyle a^{2} = a\\cdot a$ and for\neach value of \\emph{a}, distribute a power of -1. Notice that we have\n$\\displaystyle (p-1)/2$ terms in our product. So we need to take a\nfactor of $\\displaystyle (-1)^{(p-1)/2}$ to accomplish this. This gives\n\n\\begin{align*}\n1^{2} \\cdot &3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\cdot (-1)^{p-1}  \\\\\n&\\equiv (1)(-1)(3)(-3)(5)(-5)  ...  (p-2)(-(p-2))\\cdot (-1)^{(p-1)/2} \\mod{p}\n\\end{align*}\n\nNow for each negative term, we add \\emph{p} to get.\n\n\\begin{align*}\n(1)(-1)&(3)(-3)(5)(-5) ... (p-2)(-(p-2))\\cdot (-1)^{(p-1)/2} \\\\\n&\\equiv (1)(p-1)(3)(p-3)(5)(p-5)...(p-2)(2) \\cdot (-1)^{(p-1)/2} \\mod{p}\n\\end{align*}\n\nAfter rearranging the right hand side above, we see that\n\n\\begin{align*}\n(1)(p-1)&(3)(p-3)(5)(p-5)...(p-2)(2) \\cdot (-1)^{(p-1)/2}\\\\\n&\\equiv (p-1)!\\cdot (-1)^{(p-1)/2} \\mod{p}\n\\end{align*}\n\nBy Wilson's Theorem and combining the above, we have\n\n\\begin{align*}\n1^{2} \\cdot &3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\\\\n&\\equiv (p-1)!\\cdot (-1)^{(p-1)/2} \\mod{p}\\\\\n&\\equiv (-1)\\cdot (-1)^{(p-1)/2} \\mod{p} \\\\\n&\\equiv (-1)^{(p+1)/2} \\mod{p}\n\\end{align*}\n\nand this was what we wanted to show."
+    ], 
+    "hints": [
+        "Try to find a way to make use of Wilson's Theorem.", 
+        "Multiply the product by $\\displaystyle (-1)^{p-1}$. Write each square\nlike\n\n$\\displaystyle 1^{2} \\equiv (1)(-1) \\mod{p}$.\n\nmaking use of all the negative one powers you included. Then add\n\\emph{p} to all the negative terms and examine what you get."
+    ]
+}

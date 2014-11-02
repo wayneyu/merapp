@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH110", 
+    "statement": "Differentiate the following function.\n\n\\[g(x) = e^{\\sqrt{x}}\\]", 
+    "year": 2011, 
+    "sols": [
+        "Here we will be using the chain rule:\n\n\\[\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\\]\n\nHere we have that\n\n\\[\\displaystyle\np(x) = e^x \\quad q(x) = \\sqrt{x}\\]\n\nAnd so\n\n\\begin{align*}\ng'(x) &= p'(q(x)) \\cdot q'(x) \\\\\n&= e^{\\sqrt{x}} \\left( \\frac{1}{2\\sqrt{x}} \\right) \\\\\n&= \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Which differentiation rule will you need here?"
+    ]
+}

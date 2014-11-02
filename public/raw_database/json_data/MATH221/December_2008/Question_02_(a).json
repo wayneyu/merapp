@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[A=\\begin{bmatrix}\n1 & 0&-2 \\\\ \n1& 1 & 0\\\\ \n0&-2 & h\n\\end{bmatrix}.\\]\n\nFind all values of h such that A is NOT invertible.", 
+    "year": 2008, 
+    "sols": [
+        "The matrix is NOT invertible if its determinant is equal to 0.\n\n$0 =\\text{det}(A) = (1)\\begin{bmatrix}1 &0 \\\\ -2&h \\end{bmatrix}+ (-0)\\begin{bmatrix}1 &0 \\\\ 0&h \\end{bmatrix} + (-2)\\begin{bmatrix}1 &1 \\\\ 0&-2 \\end{bmatrix} = h - 2(-2) = h + 4$\n\nTherefore $\\displaystyle h = -4$ makes the matrix \\emph{A} NOT\ninvertible"
+    ], 
+    "hints": []
+}

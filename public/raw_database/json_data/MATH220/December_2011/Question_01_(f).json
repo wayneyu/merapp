@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH220", 
+    "statement": "State the strong principle of mathematical induction.", 
+    "year": 2011, 
+    "sols": [
+        "Strong mathematical induction is a method to prove a statement\n\\emph{S}(\\emph{n}) is true for all natural numbers \\emph{n}. It is given\nby the following.\n\nSuppose that for every natural number \\emph{n}, that we have the\nimplication\n\n\\[\\big(\\forall\\,k < n, S(k)\\big) \\Rightarrow S(n)\\]\n\nThen for every natural number \\emph{n}, the statement \\emph{S}(\\emph{n})\nis true."
+    ], 
+    "hints": [
+        "Mathematical induction involves wanting to prove statements over all\nnatural numbers. How do we do this?"
+    ]
+}

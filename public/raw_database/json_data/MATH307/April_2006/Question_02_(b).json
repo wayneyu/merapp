@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the diagonalizable matrix $A = \\begin{bmatrix}\n1 &0 \\\\ \n1 & 0.5\n\\end{bmatrix}= \\begin{bmatrix}\n1 &0 \\\\ \n2 & 1\n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n0&0.5 \n\\end{bmatrix}\\begin{bmatrix}\n1 &0 \\\\ \n2& 1\n\\end{bmatrix}^{-1}$\n\n\\textbf{(b)} Find the solution $x(t) =\\begin{bmatrix}\nx_1(t)\\\\ x_2(t)\n\\end{bmatrix}$ of the differential equation\n$\\displaystyle \\frac{dx(t)}{dt} = Ax(t)$ satisfying the initial\ncondition $x_0 = \\begin{bmatrix}\n4\\\\1 \n\\end{bmatrix}$.", 
+    "year": 2006, 
+    "sols": [
+        "The solution for a differential equation of the form\n$\\frac{\\mathrm{d}x }{\\mathrm{d} t} = Ax(t)$ and A is 2 by 2 and\ndiagonalizable has the form\n\n$x(t) = c_1v_1e^{\\lambda_1 t} + c_2v_2e^{\\lambda_2 t}$ where $\\lambda$\nare the eigenvalues of A and $v$ are their respective eigenvectors.\n\n$c_1, c_2$ can be obtained by plugging in the initial condition\n$x(0) = \\begin{bmatrix}\n4\\\\1\n\n\\end{bmatrix}$\n\nSolving $\\begin{bmatrix}\n4\\\\ 1\n\n\\end{bmatrix} = c_1\\begin{bmatrix}\n1\\\\2\n\n\\end{bmatrix}\n+ c_2\\begin{bmatrix}\n0\\\\1\n\n\\end{bmatrix}$ should give you $c_1 = 4, c_2 = -7$\n\ntherefore the solution is\n\n$x(t) = 4e^{t}\\begin{bmatrix}\n1\\\\2\n\n\\end{bmatrix} - 7e^{0.5t}\\begin{bmatrix}\n0\\\\1\n\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

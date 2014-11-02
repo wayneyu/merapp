@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_10", 
+    "course": "MATH221", 
+    "statement": "Let $A = \\begin{pmatrix}16&-9\\\\30&-17\\end{pmatrix}$ Then, given that\n$A = \\begin{pmatrix}3&1\\\\5&2\\end{pmatrix}\\begin{pmatrix}1&0\\\\0&-2\\end{pmatrix}\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}$\nfind the matrix $A^{10}$. (There may be some powers of 2 in the answer,\nbut you should get a single matrix).", 
+    "year": 2010, 
+    "sols": [
+        "Notice that $A = SDS^{-1}$ which is the diagonalization formula where\n$S = \\begin{bmatrix}3&1\\\\5&2\\end{bmatrix}$ and\n$D = \\begin{bmatrix}1&0\\\\0&-2\\end{bmatrix}$\n$A^{10} = SD^{10}S^{-1} = \\begin{bmatrix}3&1\\\\5&2\\end{bmatrix}\\begin{bmatrix}1&0\\\\0&-2\\end{bmatrix}^{10}\\begin{bmatrix}2&-1\\\\-5&3\\end{bmatrix} =\\begin{bmatrix}3&2^{10}\\\\5&2^{11}\\end{bmatrix}\\begin{bmatrix}2&-1\\\\-5&3\\end{bmatrix}$$=\\begin{bmatrix}6-5(2)^{10}&-3+3(2)^{10}\\\\10-5(2)^{11}&-5+3(2)^{11}\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

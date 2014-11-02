@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(b) Find the \\emph{x}-coordinates of the local maxima and local minima\nof $f(x)$.", 
+    "year": 2012, 
+    "sols": [
+        "As stated in the hint, local extrema can only occur at critical points\nthat are also points in the domain. Based on our work in part a, we have\ntwo critical points, but only $x = 1$ is in the domain. Thus, we only\nneed to check if $x = 1$ is a minimum or maximum. Here since we have a\ndecreasing function left of \\emph{1} and an increasing function right of\n\\emph{1}, we have that $x=1$ is a local minimum."
+    ], 
+    "hints": [
+        "Remember that local extrema can only occur at critical points (that are\nalso points in the domain). Check the critical points from the previous\npart and determine if they are local maximums or local minimums (refer\nto part a for the necessary computations)."
+    ]
+}

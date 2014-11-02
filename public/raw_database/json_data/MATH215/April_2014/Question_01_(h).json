@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(h)", 
+    "course": "MATH215", 
+    "statement": "The angle of a pendulum satisfies\n\n$\\displaystyle L\\theta''(t) + c\\theta'(t) + g\\theta(t) = 0$\n\nwhere \\emph{L} is the length (which can be changed),\n$\\displaystyle c = 0.1 m/s$, and $g = 10\n\\text{m/s}^2$. Find the maximum frequency (in Hertz) of the pendulum\nover all possible lengths \\emph{L}.", 
+    "year": 2014, 
+    "sols": [], 
+    "hints": []
+}

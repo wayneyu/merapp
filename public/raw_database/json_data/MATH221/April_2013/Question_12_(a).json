@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_12_(a)", 
+    "course": "MATH221", 
+    "statement": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{a)} Find the 3x3 matrix \\emph{P\\textsubscript{1}} which\nrepresents projection of $\\mathbb{R}^3$ onto a vector orthogonal to this\nplane.", 
+    "year": 2013, 
+    "sols": [
+        "We recall that the formula to compute a projection onto a line spanned\nby the vector \\emph{v} is to take a vector \\emph{x} and mapping it to\n$\\frac{x\\cdot v}{v\\cdot v} v$, that is you take the inner product of the\nvector \\emph{x} with the vector \\emph{v} divide it by the length of the\nvector \\emph{v} and apply this scalar to \\emph{v}. To get a matrix out\nof this, we can simply apply the projection to the standard basis of\n$R^3$ and see where each vector is mapped to.\n\nFirst we note that, for us, the vector \\emph{v} is the normal vector of\nthe plane, i.e.\n$v = \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nThis gives $v\\cdot v = 1 + 1 + 1 = 3$. We are now ready to apply it to a\nstandard basis vector,\n$\\left[ \\begin{array}{ccc} 1 & 0 & 0  \\\\  \\end{array} \\right]$, which\ngets mapped by projection to the vecotr\n$\\frac{1}{3}\\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nSimilarly for the other basis vectors.\n\nThus our matrix for the projection\nis\\[\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1 & -1 & 1 \\\\ \n-1 & 1 & -1 \\\\ \n1 & -1 & 1\\\\ \n\\end{array} \\right]\\]"
+    ], 
+    "hints": [
+        "What is the formula that projects one vector onto another?", 
+        "To find the projection matrix it suffices to calculate the projections\nthe canonical basis vectors {[}1,0,0{]}, {[}0,1,0{]}, {[}0,0,1{]}."
+    ]
+}

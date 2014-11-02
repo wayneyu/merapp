@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_08_(c)", 
+    "course": "MATH307", 
+    "statement": "Consider the stochastic matrix\n\n\\[P = \\begin{bmatrix}\n0 & 1/4 & 1/3 \\\\\n1 & 1/2 & 1/3 \\\\\n0 & 1/4 & 1/3\n\\end{bmatrix}\\]\n\n\\textbf{(c)} What is $\\lim_{n \\to \\infty} P^n[1,0,0]^T$? Give a reason.", 
+    "year": 2012, 
+    "sols": [
+        "Regardless, of the initial vector ($\\mathbf{x_{0}} = [1,0,0]^{T}$ in\nthis case), the probability vector found from\n$\\lim_{n\\rightarrow\\infty}P^{n}\\mathbf{x_{0}}$ will converge to the\neigenvector with the eigenvalue pair of 1 scaled by a constant $a$ such\nthat the sum of the elements in the vector sums to 1. It was found in\npart (a) the following is this particular eigenvalue/vector pair:\n\n$\\mathbf{v} = \\begin{bmatrix}\n3 \\\\ 8 \\\\ 3 \\\\\n\\end{bmatrix}, \\lambda = 1$\n\nTherefore, we want to scale the vector $[3,8,3]$ to have the three\nelements sum to 1. We can do that easily using basic algebra:\n\n\\begin{align*}\n3a + 8a + 3a &= 1\\\\\n14a &= 1\\\\\na &= 1/14\n\\end{align*}\n\nTherefore, the $\\lim_{n\\rightarrow\\infty}P^{n}[1,0,0]^{T}$ would\nconverge to the matrix:\n\n$\\mathbf{x_{\\infty}} = \\frac{1}{14}\\begin{bmatrix}\n3 \\\\ 8 \\\\ 3\n\\end{bmatrix}$\n\nNote: Another way you can look at this is that we are using the power\nmethod to converge towards the eigenvector with the largest absolute\neigenvalue. We already showed in (b) that there would be no eigenvalue\ngreater than 1. Therefore, if we keep multiplying by P and normalize the\nvector every time, we would converge to the eigenvector $[3,8,3]^{T}$\n(Notice that we don$^{\\prime}$t actually have to normalize it every time\nsince a stochastic matrix will already cause the values of the matrix to\nsum to 1). Lastly, we know that any constant multiple of the eigenvector\nis still the same eigenvector, therefore we can scale $[3,8,3]^{T}$ to\nwhat the answer that we found above."
+    ], 
+    "hints": []
+}

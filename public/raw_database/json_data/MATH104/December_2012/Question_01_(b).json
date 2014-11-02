@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH104", 
+    "statement": "For what value of the constant $a$ is the following function continuous\nat $x=1$?\n\n\\[f(x)=\n\\begin{cases}\n\\frac{x\\exp(x)-\\exp(x)}{x^2-3x+2},&x\\neq1\\\\\na,&x=1\n\\end{cases}\\]", 
+    "year": 2012, 
+    "sols": [
+        "Following the second hint, we check all the conditions and see if there\nare any conditions where $a$ needs to take a particular value to satisfy\nthe conditions:\n\ni. $\\displaystyle f(1) = a. \\quad$ So $f(1)$ exists.\n\nii. To check that the limit at $x = 1$ exists, we do not need to bother\nwith left and right-hand limits as the function is defined in the same\nway on both sides of $x = 1$.\n\n\\begin{align*}\n\\lim_{x \\rightarrow 1}\\frac{x\\exp(x) - \\exp(x)}{x^{2} - 3x + 2} &= \\lim_{x \\rightarrow 1}\\frac{(x - 1)\\exp(x)}{(x - 1)(x - 2)} \\\\\n&= \\lim_{x \\rightarrow 1}\\frac{\\exp(x)}{(x - 2)} = -\\exp(1) = -e\n\\end{align*}\n\nSo we have $\\lim_{x \\rightarrow 1}f(x)$ exists and is equal to $-e$.\n\niii. The last condition to check is\n\n\\begin{align*}\n\\lim_{x \\rightarrow 1}f(x) &= f(1) \\quad \\rightarrow \\quad -e = a\n\\end{align*}\n\nSo we can see that for the last condition of continuity to be satisfied\nwe must have $a = -e$.\n\nTherefore, ${\\color{blue}\\displaystyle a = -e}$."
+    ], 
+    "hints": [
+        "Read the definition of continuity and check the conditions for a\nfunction to be continuous at a point. What value does $a$ need to be so\nthat all the conditions for a function to be continuous at $x = 1$ are\nsatisfied?\n\nAlso, the notation $\\displaystyle \\exp(x)$ is equivalent to\n$\\displaystyle e^{x}$.", 
+        "The conditions for a function $f(x)$ to be continuous at a point $x = c$\nare:\n\ni. $\\displaystyle f(c)\\,\\,\\mbox{exists}$\n\nii. $\\lim_{x \\rightarrow c}f(x)\\,\\,\\mbox{exists}$\n\niii. $\\lim_{x \\rightarrow c}f(x) = f(c)$."
+    ]
+}

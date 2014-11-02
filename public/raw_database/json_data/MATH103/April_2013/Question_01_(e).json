@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the series $\\sum_{n=2}^{\\infty} \\frac{1}{n(\\ln n)}$ converge?", 
+    "year": 2013, 
+    "sols": [
+        "Let $f(x) = \\frac{1}{x\\ln x}$. Since this series is continuous, positive\nand decreasing on $[2,\\infty)$, we may apply the integral test to see\nthat the series converges or diverges based on if the following integral\nconverges or diverges:\n\n$\\displaystyle \\int_{2}^{\\infty}\\frac{1}{x\\ln x}$\n\nTo compute this, we have that\n$\\displaystyle \\int_{2}^{\\infty}\\frac{1}{x\\ln x} = \\lim_{b \\to \\infty} \\int_{2}^{b}\\frac{1}{x\\ln x}$\n\nLet $\\displaystyle u = \\ln x$ so $\\displaystyle du = \\frac{dx}{x}$ and\n$\\displaystyle u(2) = \\ln(2)$ and $\\displaystyle u(b) = \\ln(b)$. This\ngives\n\n\\begin{align*}\n \\displaystyle \\int_{2}^{\\infty}\\frac{1}{x\\ln x} &=  \\lim_{b \\to \\infty} \\int_{2}^{b}\\frac{1}{x\\ln x} \\\\\n&= \\lim_{b \\to \\infty}  \\int_{\\ln(2)}^{\\ln(b)}\\frac{du}{u} \\\\\n&= \\lim_{b \\to \\infty} \\ln|u| \\left.\\right|_{\\ln(2)}^{\\ln(b)} \\\\\n&= \\lim_{ b \\to \\infty} \\ln|\\ln(b)| - \\ln|\\ln(2)|\n\\end{align*}\n\nAs this last limit diverges since $\\displaystyle \\ln|\\ln(b)|$ tends to\ninfinity as \\emph{b} tends to infinity, we have that the series\ndiverges.\n\n\\textbf{NOTE: Compare this to the previous question. Even though the\nsequence of terms converges to zero, the integral here still diverges!}", 
+        "No content found"
+    ], 
+    "hints": [
+        "Which convergence tests work well with polynomials and logarithms?", 
+        "The integral test will work well here.", 
+        "No content found"
+    ]
+}

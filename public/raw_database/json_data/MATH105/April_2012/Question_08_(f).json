@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(f)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nFind a bound for the error in approximating\n\n\\[\\int_0^1 \\left[e^{-2x}+3x^3\\right]\\,dx\\] using Simpson$^{\\prime}$s\nrule with \\emph{n} = 6 subintervals. There is no need to simplify your\nanswer.\n\n\\textbf{Do not write down the Simpson$^{\\prime}$s rule approximation\n\\emph{S}\\textsubscript{\\emph{n}}.}", 
+    "year": 2012, 
+    "sols": [
+        "The error bound for Simpson's rule requires us to find the fourth\nderivative of the integrand.\n\nFor $f(x) = e^{-2x} + 3x^3$, we find:\n\n\\[\\displaystyle\nf'(x) = -2e^{-2x} + 9x^2\\]\n\n\\[\\displaystyle\nf''(x) = 4e^{-2x} + 18x\\]\n\n\\[\\displaystyle\nf'''(x) = -8e^{-2x} + 18\\]\n\nand\n\n\\[\\displaystyle\nf^{(4)}(x) = 16 e^{-2x}\\]\n\nTo find our \\emph{K}, we need to know the largest $|f^{(4)}|$ can be\nover the integration range $[0,1]$.\n\n$|f^{(4)}(x)| = 16e^{-2x}$ is a decreasing function, with its largest\nvalue on $[0,1]$ being $16$ at $x=0$, so \\emph{K} = 16.\n\nThe error with $n=6$ is bounded by\n$\\frac{K (b-a)^5}{180n^4} = \\frac{16 (1-0)^5}{180 \\times 6^4} = \\frac{16}{180 \\times 6^4}$.\n\n\\emph{Note: the question did not ask us to evaluate the $n=6$ Simpson's\nrule approximation; we were only asked to bound its error.}"
+    ], 
+    "hints": [
+        "Recall that if $\\left|f^{(4)}(x)\\right| \\leq K$ on the interval $[a,b]$,\nthen the error in using $S_n$ to approximate $\\int_a^b f(x)dx$ has\nabsolute value less than or equal to $K(b-a)^5/180n^4$."
+    ]
+}

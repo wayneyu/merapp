@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this questions.}\n\nTo which of the following integrals does the Fundamental Theorem of\nCalculus apply?\n\ni. $\\int_{-1}^1\\frac{\\cos x}{\\ln x} \\, dx$\n\nii. $\\int_{-1}^1\\frac{\\cos x}{x} \\, dx$\n\niii. $\\int_{-1}^1\\frac{\\cos x}{\\sqrt{x}+1} \\, dx$\n\niv. $\\int_{-1}^1\\frac{\\cos x}{x^2+1} \\, dx$\n\nv. None of the above.", 
+    "year": 2010, 
+    "sols": [
+        "Following the hint we check if the integrands above are continuous on\nthe entire domain of integration.\n\ni. $\\int_{-1}^1\\frac{\\cos x}{\\ln x} \\, dx.$ Since $\\ln x$ is not even\ndefined for negative numbers, the integrand $\\frac{\\cos x}{\\ln x}$ is\ncertainly not continuous on $(-1,1)$.\n\nii. $\\int_{-1}^1\\frac{\\cos x}{x} \\, dx.$ The integrand is not defined\nfor \\emph{x=0}, so it is certainly not continuous on $(-1,1)$.\n\niii. $\\int_{-1}^1\\frac{\\cos x}{\\sqrt{x}+1} \\, dx.$ Since $\\sqrt x$ is\nnot even defined for negative numbers, the integrand\n$\\frac{\\cos x}{\\sqrt{x}+1}$ is certainly not continuous on $(-1,1)$.\n\niv. $\\int_{-1}^1\\frac{\\cos x}{x^2+1} \\, dx.$ Here the integrand is\ndefined everywhere. As a composition of continuous functions, the\nintegrand is continuous. Hence the Fundamental Theorem of Calculus\napplies here.\n\n\\textbf{Final answer: iv.}"
+    ], 
+    "hints": [
+        "The Fundamental Theorem of Calculus only applies to functions that are\ncontinuous on the entire domain of integration."
+    ]
+}

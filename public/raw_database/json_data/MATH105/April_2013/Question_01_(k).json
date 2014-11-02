@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(k)", 
+    "course": "MATH105", 
+    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind the Maclaurin series for $\\displaystyle f(x) = \\frac{1}{2x - 1}$ .", 
+    "year": 2013, 
+    "sols": [
+        "We proceed by using the geometric series summation given by\n\n\\begin{align*}\n\\frac{1}{1-x} = \\sum_{n=0}^{\\infty}x^{n}\n\\end{align*}\n\nvalid for $|x|<1$. To mimic this, we proceed via\n\n\\begin{align*}\n\\frac{1}{2x-1} &= -\\frac{1}{1-2x}\\\\\n&= -\\sum_{n=0}^{\\infty}(2x)^{n}\n\\end{align*}\n\nvalid when $\\displaystyle |2x| <1$, that is, when\n$\\displaystyle |x|<1/2$."
+    ], 
+    "hints": [
+        "Recall the geometric series summation given by\n\n\\begin{align*}\n\\frac{1}{1-x} = \\sum_{n=0}^{\\infty}x^{n}\n\\end{align*}\n\nvalid when $\\displaystyle |x|<1$"
+    ]
+}

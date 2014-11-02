@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "Sketch the graph of the following function.\n\n$\\displaystyle g(x)=\\ln(1-x)$", 
+    "year": 2012, 
+    "sols": [
+        "The graph of $g(x) = \\ln x$ looks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1b_ln.jpg}\n\\caption{MER MATH110 December 2012 Question 1b ln.jpg}\n\\end{figure}\n\nUsing function rules for the graph of $g(x) = \\ln(1 - x)$\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the negative in front of the \\emph{x} means the graph has been\n  reflected over the y-axis and\n\\item\n  \\emph{(1-x)} inside the function means that it is shifted right 1\n\\end{itemize}\n\ngiving:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1b_shifted_ln.jpg}\n\\caption{MER MATH110 December 2012 Question 1b shifted ln.jpg}\n\\end{figure}", 
+        "If you've forgotten the rules used in the first solution (or never\nlearned them), you can also facts about the domain of $\\ln(x)$ to\ndetermine where the graph should go.\n\nThe domain of the function $f(x) = \\ln (x)$ is $x > 0$ which can be seen\nin the graph below.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1b_ln.jpg}\n\\caption{MER MATH110 December 2012 Question 1b ln.jpg}\n\\end{figure}\n\nThe graph of $g(x) = \\ln(1-x)$ will have a similar shape, but has a\ndifferent domain. Let's test some values to see where the domain of this\nfunction is.\n\n\\begin{longtable}[c]{@{}lll@{}}\nx-value & & y-value\\\\\n\n-2 & $\\ln(1 - (-2)) = \\ln(3)$ & $\\ln(3)$\\\\\n-1 & $\\ln(1 - (-2)) = \\ln(2)$ & $\\ln(2)$\\\\\n0 & $\\ln(1 - 0) = \\ln(1)$ & 0\\\\\n1 & $\\ln(1 - 1) = \\ln(0)$ & undefined\\\\\n2 & $\\ln(1 - 2) = \\ln(-1)$ & undefined\\\\\n\\end{longtable}\n\nSo clearly this function is defined on the domain $x < 1$,\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1b_restricted_domain.jpg}\n\\caption{MER MATH110 December 2012 Question 1b restricted domain.jpg}\n\\end{figure}\n\nsuggesting the graph looks something like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1b_shifted_ln.jpg}\n\\caption{MER MATH110 December 2012 Question 1b shifted ln.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Recall that for the usual logarithm, $f(x) = \\ln(x)$, \\emph{x} can't be\nzero or negative. Which values of \\emph{x} will make sure that the above\nfunction doesn't end up with a negative or zero value inside the\nlogarithm?"
+    ]
+}

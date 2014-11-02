@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "Express $\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}$ as a\ndefinite integral. Do not evaluate this integral.", 
+    "year": 2007, 
+    "sols": [
+        "Notice that our question is equivalent to\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{1}{n} \\cdot \\frac{i^{4}}{n^{4}}$\n\nThe values for the Riemann sum look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n}$\n\n$\\displaystyle x_{i} = 0 + \\frac{i}{n}  = \\frac{i}{n}$\n\nand so\n\n$\\displaystyle a = 0$\n\nand so with the above in the $\\Delta x$, we can deduce that\n\n$\\displaystyle b = 1$\n\nand our function should be\n\n$f(x) = x^{4}$\n\nHence, we have\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "This is a Riemann sum problem. Try isolating a factor of $\\frac{1}{n}$", 
+        "The values should look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n}$\n\n$\\displaystyle x_{i} = \\frac{i}{n}$\n\nand so\n\n$\\displaystyle a = 0$\n\nSee if you can determine the rest of the values."
+    ]
+}

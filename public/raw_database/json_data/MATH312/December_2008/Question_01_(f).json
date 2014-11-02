@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(f)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf $\\displaystyle \\gcd(a,b,c) = 1$, then\n$\\displaystyle \\phi(abc) = \\phi(a)\\phi(b)\\phi(c)$", 
+    "year": 2008, 
+    "sols": [
+        "The answer is \\textbf{false}.\n\nLet $\\displaystyle a=b=2$ and $\\displaystyle c=1$. Then\n$\\displaystyle \\gcd(a,b,c) = \\gcd(2,2,1) = 1$ and further\n\n$\\displaystyle \\phi(abc) = \\phi((2)(2)(1)) = \\phi(4) = 2$.\n\nHowever\n\n$\\displaystyle \\phi(a)\\phi(b)\\phi(c) = \\phi(2)\\phi(2)\\phi(1) = (1)(1)(1) = 1 \\neq 2$\n\nand thus this is a counter example."
+    ], 
+    "hints": [
+        "Look for a counter example with $\\displaystyle a=b$ but\n$\\displaystyle \\gcd(b,c) = 1$."
+    ]
+}

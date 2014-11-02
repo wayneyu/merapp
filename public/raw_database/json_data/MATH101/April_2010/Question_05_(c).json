@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values\\[f(0) = 1\\],\n$f(1) = 2$, $f(2) = 0$, $f(3) = -2$, $f(4) = -4.$\n\nIt is known that the fourth derivative $f^{(4)}(x)$ lies between $-3$\nand $2$ on the interval $[0,4]$. What is the largest possible value that\n$\\int_0^4 f(x)dx$ could have? You may use the fact that if\n$\\left|f^{(4)}(x)\\right| \\leq K$ on the interval $[a,b]$, then the error\nin using $S_n$ to approximate $\\int_a^b f(x)dx$ has absolute value less\nthan or equal to $K(b-a)^5/180n^4$.", 
+    "year": 2010, 
+    "sols": [
+        "Using the hint, we plug in $n=4$ into the error bound and notice that\nthe error lies between\n\n$\\frac{(-3)(4-0)^{5}}{180(4)^{4}} < \\frac{K(b-a)^5}{180n^4} < \\frac{(2)(4-0)^{5}}{180(4)^{4}}$\n\nEvaluating these bounds, we get that\n\n$\\frac{-12}{180} < \\frac{K(b-a)^5}{180n^4} < \\frac{8}{180}$\n\nand one last simplification yields\n\n$\\frac{-1}{15} < \\frac{K(b-a)^5}{180n^4} < \\frac{2}{45}$.\n\nNow, let's use the the approximation and notice that by definition, we\nhave that\n\n$\\left|\\int_{0}^{4}f(x)\\, dx - S_{4} \\right|  < \\frac{K(b-a)^5}{180n^4}$\n\nNotice that in magnitude, the value\n\n$\\frac{1}{15} > \\frac{2}{45}$\n\nand so we have that the largest the integral can be is the $S_{4}$\napproximation added onto this largest error bound. This gives\n\n$\\int_{0}^{4}f(x)\\, dx < S_{4} +\\frac{1}{15} = -1 + \\frac{1}{15} = \\frac{-14}{15}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The previous part of this question gives us the value of the Simpson's\nrule approximation. Find the worst value the error can be and then sum\nthis worst value with the approximation from the previous part."
+    ]
+}

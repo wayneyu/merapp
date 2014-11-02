@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH105", 
+    "statement": "\\emph{This problem contains three numerical series. For each of them,\n\u00ef\u00ac\u0081nd out whether it converges or diverges. You should provide\nappropriate justi\u00ef\u00ac\u0081cation in order to receive credit.}\n\n\\[\\sum_{k=1}^\\infty \\frac1{\\sqrt{k}} e^{-\\sqrt{k}}\\]", 
+    "year": 2012, 
+    "sols": [
+        "When we look at this series, all its terms are positive, and they are\nclearly decreasing\\[e^{-\\sqrt{k}}\\] is getting smaller and smaller, as\nis $1/\\sqrt{k}$.\n\nThe integral test can be applied here. We know that\n\n\\[\\sum_{k=1}^{\\infty} \\frac{1}{\\sqrt{k}} e^{-\\sqrt{k}} \\text{ converges if and only if } I = \\int_1^\\infty \\frac{1}{\\sqrt{x}} e^{-\\sqrt{x}} dx \\text{ converges.}\\]\n\nThe integral I is improper (the infinite range of integration), but it\ncan be evaluated with substitution. Set $u = \\sqrt{x}$ then\n$du = \\frac{1}{2 \\sqrt{x}} dx$, and therefore\n$\\frac{1}{\\sqrt{x}} e^{-\\sqrt{x}} dx = 2 e^{-u} du$.\n\n\\[I = \\lim_{R \\rightarrow \\infty} \\int_1^R \\frac{1}{\\sqrt{x}} e^{-\\sqrt{x}} dx = \\lim_{R \\rightarrow \\infty} \\int_1^R 2 e^{-u} du = \\lim_{R \\rightarrow \\infty} -2 e^{-u}|_1^R = 2e^{-1}\\]\n\nFrom the above computation, I converges, and so does the original\nseries."
+    ], 
+    "hints": [
+        "Use the integral test.", 
+        "The resulting integral can be solved using substitution."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06", 
+    "course": "MATH101", 
+    "statement": "A tank in the shape of a hemispherical bowl of radius 3m, with an outlet\nthat rises 2m above its top (see the diagram below), is full of water.\nUsing the fact that the density of water is $1000\\text{kg/m}^{3}$, find\nthe work (in joules) required to pump all the water out of the outlet.\nYou may use the value $g=9.8\\text{m/s}^{2}$ for the acceleration due to\ngravity. \\emph{You do not need to simplify your answer, but you must\ncompletely evaluate any integral(s) that arise.}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{101AR12Q6_-_PNG.png}\n\\caption{Diagram for the above question}\n\\end{figure}", 
+    "year": 2012, 
+    "sols": [
+        "Denote \\emph{y} as the distance from the top of the bowl to the water\nlevel and \\emph{r} the radius of the water surface.\n\nThen, consider a right-angled triangle with a water surface radius\n\\emph{r} as base, then the height is \\emph{y}, and the hypoteneuse is 3,\nwhich is the radius of the bowl. (The top of the triangle is exactly at\nthe center of the the sphere, half of which becomes the bowl).\n\nThen $r^2 + y^2 = 3^2 = 9$ implies $r^2 = 9-y^2$, so the area of the\nwater surface is given as a function of \\emph{y} by\n\n\\[A(y) = r^2 \\pi = \\pi (9-y^2)\\]\n\nA thin slab of water thus has volume $A(y)\\triangle y$ and mass\n\n\\[M(y) = 1000 A(y)\\triangle y = 1000\\pi(9-y^2)\\triangle y\\]\n\nThis slab of water travels a distance of \\emph{y+2} to be pumped out\n(\\emph{+2} because of the 2m vertical outlet) and requires a force of\n\\emph{Mg}\n\nTherefore, summing the work done for each slab, and letting\n$\\triangle y\\to 0$, we get\n\n\\begin{align*}\nW &= \\int_0^3 1000\\pi g (2+y)(9-y^2) dy \\\\\n&= 1000\\pi g \\left[\\int_0^3 (18 + 9y -2y^2 -y^3) dy \\right]\\\\\n&= 1000\\pi g \\left[ 18y +9y^2/2 - 2y^3/3 - y^4/4]_0^3 \\right]\\\\\n&= 1000\\pi g \\left( 18\\cdot 3 + 9(3^2)/2 - 2(3^3)/3 - 3^4/4\\right)\n\\end{align*}"
+    ], 
+    "hints": [
+        "What is the shape of the water surface and how does it change during the\nprocess?\n\nTo describe this, you need the crucial variable that changes with the\nprocess of pumping.\n\nYou can use either the depth of water or the distance from the top of\nthe bowl to the water level, but the latter will be easier.\n\nThen find a formula for the water surface so that you can find the work\ndone to lift up a small slab of water from the water surface up to the\ntop of the bowl and out of the outlet."
+    ]
+}

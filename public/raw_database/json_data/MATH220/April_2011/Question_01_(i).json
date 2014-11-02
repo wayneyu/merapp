@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(i)", 
+    "course": "MATH220", 
+    "statement": "State the principle of mathematical induction.", 
+    "year": 2011, 
+    "sols": [
+        "To prove a statement $S(n)$ is true for all natural numbers $n$, we use\nmathematical induction which states the following:\n\n1. Prove that $P(0)$ is true\n\n2. Assume that $P(n)$ is true\n\n2. Prove that $P(n+1)$ is true (likely using information about $P(n)$\nbeing true).\n\nUpon doing this, mathematical induction states that the statement $P(n)$\nis true for all natural numbers $n$."
+    ], 
+    "hints": [
+        "Mathematical induction involves wanting to prove statements over all\nnatural numbers. How do we do this?"
+    ]
+}

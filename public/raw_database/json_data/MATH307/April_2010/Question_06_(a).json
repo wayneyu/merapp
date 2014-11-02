@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the matrix\n\n$P = \\begin{bmatrix}\n\\frac{1}{2} & 0 & 0 & 0\\\\\n\\frac{1}{6} & \\alpha & 0 & *\\\\\n\\frac{1}{6} & 0 & \\beta & 0\\\\\n\\frac{1}{6} & * & * & \\gamma\n\\end{bmatrix}$\n\nFill in the star entries so that \\emph{P} is a stochastic matrix.", 
+    "year": 2010, 
+    "sols": [
+        "For P to be a stochastic matrix, all entries must be non-negative, and\nall entries in each column must sum to 1.\n\nThe first column already satisfies this requirement.\n\nFor the second column, it must be that\n\n$0 + \\alpha + 0 + * = 1$.\n\nSo, it follows that\n\n$* = 1 - \\alpha$.\n\nFor the third column, it must be that\n\n$0 + 0 + \\beta + * = 1$.\n\nSo, it follows that\n\n$* = 1 - \\beta$.\n\nFor the fourth column, it must be that\n\n$0 + * + 0 + \\gamma = 1$.\n\nSo, it follows that\n\n$* = 1 - \\gamma$.\n\nFilling in the star entries, the stochastic matrix is:\n\n$P =\\begin{bmatrix}\n\\frac{1}{2} & 0 & 0 & 0\\\\\n\\frac{1}{6} & \\alpha & 0 & 1 - \\gamma\\\\\n\\frac{1}{6} & 0 & \\beta & 0\\\\ \n\\frac{1}{6} & 1 - \\alpha & 1 - \\beta & \\gamma\n\\end{bmatrix}$"
+    ], 
+    "hints": []
+}

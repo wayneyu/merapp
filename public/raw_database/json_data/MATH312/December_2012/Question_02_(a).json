@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nIf a positive integer has exactly 3 positive divisors, then it is\nnecessarily of the form $p^{2}$ where \\emph{p} is a prime.", 
+    "year": 2012, 
+    "sols": [
+        "The answer is \\textbf{true}.\n\nSuppose that \\emph{n} has at least two distinct prime divisors \\emph{p}\nand \\emph{q}. Then it has at least 4 positive divisors given by\n$\\displaystyle 1,p,q,pq$. Thus \\emph{n} must only have one prime\ndivisor, so must be of the form $\\displaystyle n = p^{\\alpha}$. In this\ncase, \\emph{n} has exactly $\\displaystyle \\alpha +1$ positive divisors,\nnamely, $\\displaystyle p^\\beta$ for\n$\\displaystyle \\beta = 0,1,2,\\ldots,\\alpha$. Thus if\n$\\displaystyle \\alpha + 1 = 3$ we have that $\\displaystyle \\alpha = 2$\nwhich is as claimed in the question."
+    ], 
+    "hints": [
+        "Suppose a number has at least two distinct prime divisors. What is a\nlower bound on the number of divisors in this case?"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH312", 
+    "statement": "Suppose that \\emph{p} is an odd prime and let \\emph{a} be a primitive\nroot mod \\emph{p}. Then show that\n$\\displaystyle a^{(p-1)/2} \\equiv -1 \\mod{p}$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

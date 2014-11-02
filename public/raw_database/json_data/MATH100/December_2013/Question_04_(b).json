@@ -1,8 +1,15 @@
 {
     "term": "December", 
+    "question": "Question_04_(b)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nThe graph of $\\displaystyle y = f(x) = \\frac{x^3 + x^2}{x^2+1}$ has a\nslant asymptote. Find an equation of the slant asymptote.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "Polynomial division shows us that\n$\\frac{x^3 + x^2}{x^2 + 1} = (x+1) + \\frac{-x-1}{x^2 + 1}$.\nTherefore\\\\\\\\ \\begin{align*}\n\\frac{x^3 + x^2}{x^2 + 1} - (x+1) &= \\frac{-x-1}{x^2 + 1}\n\\\\ \\lim_{x \\to \\pm\\infty} [f(x) - (x+1)] &= \\lim_{x \\to \\pm\\infty} \\frac{-x-1}{x^2 + 1}\n\\\\ \\lim_{x \\to \\pm\\infty} [f(x) - (x+1)] &= 0\n\\end{align*}\n\nHence $\\displaystyle {\\color{blue} y = x +1}$ is a slant asymptote of\n$\\displaystyle f(x)$."
+    ], 
+    "hints": [
+        "Try dividing $x^3 + x^2$ by $x^2 + 1$. (Use polynomial long division or\nsynthetic division.)", 
+        "$\\frac{x^3 + x^2}{x^2 + 1} = (x+1) + \\frac{-x-1}{x^2 + 1}$", 
+        "What difference approaches zero as $x \\to \\infty$ and as\n$x \\to -\\infty$? What relation does this difference have to the (slant)\nasymptote of $f(x)$?"
+    ]
 }

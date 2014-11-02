@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(j)", 
+    "course": "MATH105", 
+    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind a bound for the error in approximating\n$\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx$ using Simpson$^{\\prime}$s\nrule with $n = 4$. Do not write down Simpson$^{\\prime}$s rule\napproximation $\\displaystyle S_{4}$.", 
+    "year": 2013, 
+    "sols": [
+        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\[|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\]\n\nwhere $I = \\int_{1}^{5}\\frac{1}{x}\\,dx$. We know that\n$\\displaystyle a=1$, $\\displaystyle b=5$ and $\\displaystyle n=4$. To\nfind an upper bound on the fourth derivative, we first compute that\n\n\\begin{align*}\nf(x) &= \\frac{1}{x} \\\\\nf'(x) &= -\\frac{1}{x^{2}}\\\\\nf''(x) &= 2\\frac{1}{x^{3}}\\\\\nf'''(x) &= -6\\frac{1}{x^{4}}\\\\\nf''''(x) &= 24\\frac{1}{x^{5}}\n\\end{align*}\n\nAs the fourth derivative $\\displaystyle f''''(x) = \\frac{24}{x^5}$ is a\ndecreasing function in \\emph{x}, its maximum occurs at the smallest\npossible value, when $\\displaystyle x=1$. Hence a value of \\emph{K} is\ngiven by\n\n$\\displaystyle K = 24$\n\nHence, we have a bound on the error is given by\n\n$\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{24\\cdot4^5}{180\\cdot4^4} = \\frac{8}{15}$"
+    ], 
+    "hints": [
+        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\[|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\]\n\nwhere \\emph{I} is the integral in question. How would you find \\emph{K}?"
+    ]
+}

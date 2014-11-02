@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(h)", 
+    "course": "MATH220", 
+    "statement": "Define what it means for a set $\\displaystyle S$ to be countable.", 
+    "year": 2011, 
+    "sols": [
+        "A set $S$ is countable if there exists a bijection (or a one to one\ncorrespondence) between $S$ and $\\mathbb{N}$."
+    ], 
+    "hints": [
+        "What numbers do we typically count? If we want a set to be countable -\nwe want it to be like that set of numbers. What's the correct way to\nword this mathematically?"
+    ]
+}

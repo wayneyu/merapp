@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n\\[\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx\\]", 
+    "year": 2006, 
+    "sols": [
+        "$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$", 
+        "We still have\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx+ x - \\frac{x^{3}}{3}$\n\nTo evaluate the last integral, let $x = \\sin\\theta$ so that\n$dx = \\cos\\theta d\\theta$ and thus, we have\n\n\\begin{align*}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx &= \\int \\left(\\frac{\\cos\\theta}{\\sqrt{1-\\sin^{2}\\theta}} \\right) \\, d \\theta\\\\\n&= \\int \\left(\\frac{\\cos\\theta}{\\cos\\theta} \\right) \\, d \\theta\\\\\n&= \\int  \\, d \\theta \\\\\n&=  \\theta + C\\\\\n&= \\arcsin(x) + C\n\\end{align*}\n\nand so\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$"
+    ], 
+    "hints": [
+        "Just do it.", 
+        "Alternatively, you could evaluate the last two terms easily and then use\na trig substitution on the first integral.", 
+        "Following hint 2, you can use $x = \\sin\\theta$"
+    ]
+}

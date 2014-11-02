@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nFind the least positive residue of\n$\\displaystyle 1! + 2! + 3! + ... + 100!$ modulo 10\n\n\\textbf{NOTE} There was a typo in the original problem statement and the\nmodulo 10 part was missing.", 
+    "year": 2012, 
+    "sols": [
+        "From the hint, we immediately see that\n\n\\begin{align*}\n1! + 2! + 3! + 4! + 5! + ... + 100! &\\equiv 1! + 2! + 3! + 4! \\mod{10}\\\\\n&\\equiv 1 + 4 + 6 + 24 \\mod{10}\\\\\n&\\equiv 5 \\mod{10}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Notice that $\\displaystyle 10 \\mid 5!$ and in fact this divides all\nvalues of $\\displaystyle m!$ for $\\displaystyle m \\geq 5$. This reduces\nthe computation to a small finite set."
+    ]
+}

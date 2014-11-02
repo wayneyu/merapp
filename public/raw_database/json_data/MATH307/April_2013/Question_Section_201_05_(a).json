@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_201_05_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(a)} Write down the incidence matrix \\emph{D} and the Laplacian\nmatrix \\emph{L} for this graph. Show that (for any graph) \\emph{N(L) =\nN(D)}. Is it true that \\emph{R(D\\textsuperscript{T}) = R(L)}? Give a\nreason.", 
+    "year": 2013, 
+    "sols": [
+        "$\\text{Write the incidence matrix } D \\text{ and Laplacian matrix } L \\text{. Also show that (for any graph) } N(L) = N(D) \\text{. Is it true that } R(D^T) = R(L)\\text{?}$\n\nAnswer:\n\nReading off the graph (where -1 is info leaving node and +1 is info\nentering node):\n\n$D= \\begin{bmatrix}\n\n-1 &1 &0 &0 &0 &0\\\\\n\n0 &-1& 1 &0 &0 &0\\\\\n\n-1 &0& 0& 1& 0& 0\\\\\n\n0 &-1& 0& 0& 1& 0\\\\\n\n0 &0& -1& 0& 0& 1\\\\\n\n0 &0 &0 &-1& 1& 0\\\\\n\n0 &0 &0 &0 &-1& 1\n\n\\end{bmatrix}$\n\nand can either compute L by \\} L = D\\^{}TD \\textbackslash{}text\\{ or get\nit directly from the graph using the following method:\n\n$L_{i,i} = \\text{number of other nodes connected to the }i^{th} \\text{ node}$\n\n$L_{i,j} = -1 \\text{if the two nodes are connected, } 0 \\text{ otherwise}$\n\n$L = \\begin{bmatrix}\n\n2 & -1 & 0 & -1 & 0 & 0\\\\\n\n-1 & 3 & -1 & 0 & -1 & 0\\\\\n\n0 & -1 & 2 & 0 & 0 & -1\\\\\n\n-1 & 0 & 0 & 2 & -1 & 0\\\\\n\n0 & -1 & 0 & -1 & 3 & -1\\\\\n\n0 & 0 & -1 & 0 & -1 & 2\\\\\n\n\\end{bmatrix}$\n\nAs for nullspaces of L and D,\n\n$L = D^T RD = D^T D$\n\n$\\text{so if } D\\underline{v} = \\underline{0}$\n\n$L\\underline{v} = d^TD\\underline{v}$\n\n$=D^T(\\underline{0})$\n\n$=\\underline{0}$\n\n$\\therefore N(L) = N(D)$\n\nAlso:\n\n$R(D^T) = N(D)^\\perp = N(L)^\\perp \\text{ by orthogonality relations}$\n\n$=R(L^T)$\n\n$=R(L) \\text{ since L is symmetric}$\n\n$\\therefore R(D^T) = R(L)$"
+    ], 
+    "hints": []
+}

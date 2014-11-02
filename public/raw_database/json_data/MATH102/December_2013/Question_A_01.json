@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_A_01", 
+    "course": "MATH102", 
+    "statement": "Let $f(x) = \\sin(x) + ax^2$. Which of the following conditions describes\nall values of \\emph{a} for which \\emph{f} HAS inflection points?\n\n(a) $|a| > 1/2$\n\n(b) $a > 1/2$\n\n(c) $a \\geq 1/2$\n\n(d) $|a| < 1/2$\n\n(e) $|a| \\leq 1/2$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

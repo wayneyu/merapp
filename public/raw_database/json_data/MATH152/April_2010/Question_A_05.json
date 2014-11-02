@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_05", 
+    "course": "MATH152", 
+    "statement": "If 2 and 3 are both eigenvalues of a $2\\times{2}$ matrix A then A must\nbe invertible. Justify this statement briefly.", 
+    "year": 2010, 
+    "sols": [
+        "Recall that $n\\times{n}$ matrices have n eigenvalues. Here since n=2 we\nhave 2 eigenvalues which are given as 2 and 3. Also recall that if A is\nnot invertible then there exists at least one non-zero vector \\textbf{x}\nsuch that A\\textbf{x}=0. Therefore, we see that if A is not invertible\nthen there is at least one zero eigenvalue with eigenvector \\textbf{x}.\nConversely, if 0 is an eigenvalue then there exists a non-zero vector\n\\textbf{x} such that A\\textbf{x}=0 which means A is not invertible. This\nconcludes that A being non-invertible implies a zero eigenvalue and also\nthat a zero eigenvalue implies that A is non-invertible. We just wrote\nthat the only eigenvalues are 2 and 3 so therefore, 0 is not an\neigenvalues which means A must be invertible."
+    ], 
+    "hints": [
+        "How many eigenvalues does an $n\\times{n}$ matrix have. How do the\neigenvalues relate to the invertibility of a matrix?"
+    ]
+}

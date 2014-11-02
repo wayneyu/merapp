@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_10_(a)", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\[f(x) = x + 2x^2\\sin\\left(\\frac{1}{x} \\right)\\]\n\n(a) Find $f'(x)$.", 
+    "year": 2011, 
+    "sols": [
+        "We need to make sure to use both the product rule since we have\n2\\emph{x}\\textsuperscript{2} multiplied by \\emph{sin}(1/\\emph{x}) and\nthen use the chain rule to deal with \\emph{sin}(1/\\emph{x}).\n\nWe obtain:\n\n\\begin{align*}\nf'(x) &= 1 + 4x \\cdot \\sin(1/x) + 2x^2 \\cdot \\cos(1/x) \\cdot (-x^{-2}) \\\\\n&= 1 + 4x\\sin(1/x) - 2\\cos(1/x)\n\\end{align*}"
+    ], 
+    "hints": [
+        "What rules of differentiation will you need here?"
+    ]
+}

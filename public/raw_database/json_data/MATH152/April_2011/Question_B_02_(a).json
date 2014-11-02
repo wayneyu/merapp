@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_02_(a)", 
+    "course": "MATH152", 
+    "statement": "Consider the differential equation system\n\n\\[\\mathbf{y}'=A\\mathbf{y}\\]\n\nwhere A has eigenvalues $\\lambda_1=-1$ and $\\lambda_2=-2$ with\ncorresponding eigenvectors\n\n\\begin{align*}\n\\mathbf{k}_1=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align*}\n\nWhat is the general solution of the system of differential equations?", 
+    "year": 2011, 
+    "sols": [
+        "Recall that a solution to\n\n\\[\\mathbf{y}'=A\\mathbf{y}\\]\n\nwith eigenvalues $\\lambda_1$, $\\lambda_2$ and eigenvectors\n$\\mathbf{k}_1,\\mathbf{k}_2$ is\n\n\\[\\mathbf{y}(t)=c_1\\mathbf{k}_1\\exp(\\lambda_1{t})+c_2\\mathbf{k}_2\\exp(\\lambda_2{t}).\\]\n\nTherefore, for this specific example, the solution is,\n\n\\[\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\]"
+    ], 
+    "hints": [
+        "How can we write solutions in terms of,\n\n\\[\\exp(\\lambda_1{t}),\\quad\\exp(\\lambda_2{t})\\]?"
+    ]
+}

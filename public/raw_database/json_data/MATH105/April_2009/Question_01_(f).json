@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH105", 
+    "statement": "Find $\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx$", 
+    "year": 2009, 
+    "sols": [
+        "We proceed as suggested by the hints. Let\n$\\displaystyle u = x^{2} - 4x + 7$ so that\n$\\displaystyle du = (2x - 4)dx = 2(x-2)dx$. This gives\n\n\\[\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx = \\int \\frac{du}{2u^{2}}\\]\n\nIntegrating gives\n\n\\[\\displaystyle \\int \\frac{du}{2u^{2}} = \\frac{-1}{2u} + C = \\frac{-1}{2(x^{2}-4x+7)} + C\\]"
+    ], 
+    "hints": [
+        "What's the relationship between the denominator (the term that is being\nsquared) and the numerator? How can this help us integrate?", 
+        "Try a substitution.", 
+        "Try $\\displaystyle u = x^{2} - 4x + 7$."
+    ]
+}

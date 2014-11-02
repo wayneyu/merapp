@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH103", 
+    "statement": "Calculate $\\displaystyle \\sum_{k=1}^{10}(k+3)^{2}$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

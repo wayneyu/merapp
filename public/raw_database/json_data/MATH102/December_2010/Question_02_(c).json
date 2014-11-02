@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_02_(c)", 
+    "course": "MATH102", 
+    "statement": "Suppose the tangent line to the graph of \\emph{y} = $f(x)$ at\n\\emph{x} = 1 is \\emph{y} = 2\\emph{x} + 1, and $f$(3) = 2.\n\n(c) Let \\emph{g}(\\emph{x}) = 3$f$(4\\emph{x} + 5). Given the information\nfrom previous parts of this question, there is one number \\emph{b} for\nwhich both \\emph{g}(\\emph{b}) and \\emph{g}'(\\emph{b}) can be found. What\nare \\emph{b}, \\emph{g}(\\emph{b}) and \\emph{g}'(\\emph{b})?", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

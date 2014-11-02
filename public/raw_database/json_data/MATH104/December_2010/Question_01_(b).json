@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH104", 
+    "statement": "If\n\n\\[\\lim_{x\\to\\infty}g(x)=6\\]\n\nand\n\n\\[\\lim_{x\\to\\infty}\\frac{g(x)}{f(x)-1}=3\\]\n\nfind\n\n\\[\\lim_{x\\to\\infty}f(x).\\]", 
+    "year": 2010, 
+    "sols": [
+        "Since the numerator, $g(x),$ approaches 6 as $x\\to\\infty,$ the\ndenominator must approach 2 in order for the fraction to approach 3.\nHence,\n\n\\[\\lim_{x\\to\\infty}f(x)=3.\\]"
+    ], 
+    "hints": [
+        "Use the limit law for quotients.", 
+        "Let\n\n\\[a=\\lim_{x\\to\\infty} f(x).\\] Then compute\n\n\\[\\lim_{x\\to\\infty}\\frac{g(x)}{f(x)-1}.\\] This is equal to 3. What can\nyou conclude?"
+    ]
+}

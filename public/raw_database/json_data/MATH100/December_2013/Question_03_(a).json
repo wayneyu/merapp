@@ -1,8 +1,14 @@
 {
     "term": "December", 
+    "question": "Question_03_(a)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf a function \\emph{y = $f$(x)} is defined implicitly by an equation\n$x^3 + xy = 5x - y^ 3$, find $\\displaystyle \\frac{dy}{dx}$.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "Differentiating both sides implicitly with respect to x,\n\n\\begin{align*}\n\\frac{d}{dx}(x^3+xy) &= \\frac{d}{dx}(5x-y^3)\n\\\\ \\frac{d}{dx}(x^3)+ {\\color{OliveGreen} \\frac{d}{dx}(xy)} &= \\frac{d}{dx}(5x)- {\\color{OliveGreen} \\frac{d}{dx}(y^3)}\\\\ 3x^2 + {\\color{OliveGreen} 1 \\cdot y + x \\cdot \\frac{d}{dx}(y)} &= 5 - {\\color{OliveGreen} 3y^2 \\cdot \\frac{d}{dx}(y)}\n\\\\ 3x^2 + {\\color{OliveGreen} y + x \\cdot\\frac{dy}{dx}} &= 5 - {\\color{OliveGreen} 3y^2 \\cdot\\frac{dy}{dx}}\\end{align*}\n\nSolving for $\\frac{dy}{dx}$ we find\n\n\\begin{align*}\nx \\cdot\\frac{dy}{dx} + 3y^2 \\cdot\\frac{dy}{dx} &= 5 - 3x^2 - y\n\\\\ \\frac{dy}{dx}\\cdot(x+3y^2) &= 5 - 3x^2 - y\n\\\\ \\frac{dy}{dx} &= {\\color{blue} \\frac{5-3x^2-y}{x+3y^2}}\\end{align*}"
+    ], 
+    "hints": [
+        "Differentiate both sides implicitly with respect to x. It is permissible\nto differentiate term-by-term, but don't forget that y is a\n\\emph{function of x}!", 
+        "$\\displaystyle \\frac{d}{dx}(y^n) = ny^{n-1} \\cdot \\frac{d}{dx}(y)$\\\\\\\\when\n$\\displaystyle y=f(x)$."
+    ]
 }

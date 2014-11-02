@@ -1,8 +1,15 @@
 {
     "term": "December", 
+    "question": "Question_02_(b)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $\\displaystyle y = (\\ln x)^x$, find $\\displaystyle \\frac{dy}{dx}$.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "First we take the natural logarithm of both\nsides:\\\\\\\\$y = (\\ln x)^x \\Leftrightarrow \\ln y = \\ln((\\ln x)^x) \\Leftrightarrow \\ln y = x \\cdot \\ln(\\ln x)$\n~~~~(by the laws of logarithms).\n\nWe then differentiate both sides with respect to $x~$, using the product\nand chain rules as needed:\\\\ \\begin{align*}\n\\frac{d}{dx}(\\ln y) &= \\frac{d}{dx}(x \\cdot \\ln(\\ln x))\n\\\\ \\frac{1}{y} \\cdot \\frac{dy}{dx} &= 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{d}{dx}(\\ln x)\n\\\\ \\frac{dy}{dx} &= y \\cdot \\left( \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x}\\right)\n\\\\ \\frac{dy}{dx} &= {\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\\end{align*}"
+    ], 
+    "hints": [
+        "Note that the power and variable exponent rules do not apply here since\nboth the \\emph{base and the power} contain variables.", 
+        "Try using \\textbf{logarithmic differentiation} - begin by taking the\n(natural) logarithm of both sides.", 
+        "Observe\nthat\\\\$y = f(x)^{g(x)} \\Leftrightarrow \\ln y = \\ln(f(x)^{g(x)}) \\Leftrightarrow \\ln y = g(x)\\ln f(x)$."
+    ]
 }

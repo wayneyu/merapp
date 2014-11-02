@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_27", 
+    "course": "MATH152", 
+    "statement": "Construct a matrix with eigenvector\n$\\begin{bmatrix} 1 \\\\ i \\end{bmatrix}$", 
+    "year": 2013, 
+    "sols": [
+        "The identity matrix has every non-zero vector as an eigenvector. So does\nthe zero matrix."
+    ], 
+    "hints": [
+        "What is one of the first matrices you learn about? Try that one."
+    ]
+}

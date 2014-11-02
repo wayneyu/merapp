@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(d)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(d)} Determine where $f$ is concave up and where it is concave\ndown. Does $f$ have any inflection points?", 
+    "year": 2013, 
+    "sols": [
+        "We know from the previous part of the question that\n\n\\[f'(x) = \\frac{\\cos x - \\sin x}{e^x}\\]\n\nWe take the derivative of $\\displaystyle f'(x)$ to find:\n\n\\begin{align*}\nf''(x) &= \\frac{(-\\sin x - \\cos x)e^x - (e^x)(\\cos x - \\sin x)}{(e^x)^2} \n&= \\frac{e^x (-\\sin x - \\cos x - \\cos x + \\sin x)}{(e^x)^2} \n&= \\frac{-2\\cos x}{e^x}\n\\end{align*}\n\nSetting $\\displaystyle f''(x)$ equal to zero to solve for possible\ninflection points gives:\n\n\\[0 = \\frac{-2\\cos x}{e^x}\\]\n\nor, equivalently,\n\n\\[\\displaystyle \\cos x = 0\\]\n\nUsing the unit circle we see that \\emph{x = $\\pi$/2} is the only solution in\n$[0,\\pi]$ of the equation $\\cos(x) = 0$. This is our only possible point\nof inflection, because $\\displaystyle f''(x)$ is continuous everywhere.\nTesting the values of $f''\\left(\\frac{\\pi}2\\right)$ with the second\nderivative test gives:\n\n:\\{\\textbar{} class=``wikitable'' \\textbar{}- \\textbar{}\n\\textbar{}\\textbar{} $[0,\\pi/2)$ \\textbar{}\\textbar{} $x = \\pi/2$\n\\textbar{}\\textbar{} $(\\pi/2, \\pi]$ \\textbar{}- \\textbar{}\n$\\displaystyle f''(x)$\\textbar{}\\textbar{} - \\textbar{}\\textbar{} 0\n\\textbar{}\\textbar{} + \\textbar{}- \\textbar{} $\\displaystyle f(x)$\n\\textbar{}\\textbar{} concave down \\textbar{}\\textbar{} inflection point\n\\textbar{}\\textbar{} concave up \\textbar{}\\}\n\nHence $\\displaystyle f(x)$ has an inflection point at \\emph{x = $\\pi$/2}."
+    ], 
+    "hints": [
+        "Similar to the previous question, now find the second derivative, its\npossible inflection points, and test the sign of the second derivative\nbetween possible inflection points."
+    ]
+}

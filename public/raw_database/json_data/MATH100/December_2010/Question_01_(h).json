@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01_(h)", 
+    "course": "MATH100", 
+    "statement": "Find $f'$(\\emph{x}), if\n\n\\[\\displaystyle\nf(x)=(\\tan{x})^{\\cos{x}}\\]", 
+    "year": 2010, 
+    "sols": [
+        "To differentiate this, we should use logarithmic differentiation. First,\nwe rewrite the function:\n\n\\[\\displaystyle\n\\ln(f(x)) = \\ln{((\\tan{x})^{\\cos{x}})} = \\cos(x)\\ln{(\\tan{x})}\\] And\nthen use implicit differentiation\n\n\\begin{align*}\n(\\ln(f(x)))' &= (\\cos(x)\\ln{(\\tan(x))})'\\\\\n\\frac{1}{f(x)}f'(x) &= \\cos(x)(\\ln{(\\tan(x))})'-\\sin(x)\\ln{(\\tan(x))}\\\\\n&=\\cos(x)\\frac{\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\n\\end{align*} (Remember that the derivative of $\\tan(x)$ is\n$\\sec^2(x)$). Now, simply solve for $f'(x)$ to obtain the answer:\n\n\\begin{align*}\nf'(x) &= f(x)\\left(\\frac{\\cos(x)\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{\\sec(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{1}{\\sin(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n\\end{align*} (Note that $\\cos(x)\\sec^2(x) = \\sec(x)$.)"
+    ], 
+    "hints": [
+        "You certainly CANNOT use the power rule (it only works if the exponent\nis a number). So what else can you do?", 
+        "Logarithms have awesome properties with respect to exponents.", 
+        "For instance,\n\n\\[\\displaystyle\n\\log(a^n) = n \\log(a)\\]"
+    ]
+}

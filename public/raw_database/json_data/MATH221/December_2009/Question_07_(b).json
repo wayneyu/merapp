@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_07_(b)", 
+    "course": "MATH221", 
+    "statement": "Two drink makers Hard and Soft compete for customers. Each year 20\\% of\nHard$^{\\prime}$s customers shift to Soft and 30\\% of Soft$^{\\prime}$s\ncustomers shift to Hard. Assume that this year the drink makers have\nequal market share.\n\nWhat will be the market distribution in the distant future?", 
+    "year": 2009, 
+    "sols": [
+        "Solving for eigenvalues $\\displaystyle \\lambda_{1}=1,  \\lambda_{2}=0.5$.\nWe have \\emph{n} linearly independent eigenvectors so we can use Power\nMethod. The eigenvector for $\\displaystyle \\lambda_{1}=1$ is\n$\\begin{bmatrix} 1.5\\\\1  \\end{bmatrix}$. We need to scale the vector\ninto a market share vector\n\n$ANS = \\begin{bmatrix} .6\\\\ .4 \\end{bmatrix}$"
+    ], 
+    "hints": []
+}

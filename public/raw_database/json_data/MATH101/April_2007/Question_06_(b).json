@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nThe population of fish in a lake is \\emph{m} million, where $m = m(t)$\nvaries with time \\emph{t} measured in years. The number of fish is\ncurrently 2 million.\n\nSuppose instead that (because of fishing by humans) \\emph{m} satisfies\n\n$\\frac{dm}{dt} = 16m\\left(1-\\frac{m}{4} \\right) - 12$\n\nWill the fish population ever equal 3 million? You must give\njustification for your answer.", 
+    "year": 2007, 
+    "sols": [
+        "We want to find the steady states of this differential equations. To do\nso, set $\\frac{dm}{dt} = 0$, i.e.\n\n\\[16m\\left(1 - \\frac{m}{4}\\right) -12 = 0\\]\n\nSimplifying yields\n\n\\[16m - 4m^{2} -12 = 0\\]\n\nand once more\n\n\\[m^{2}-4m +3 = 0\\]\n\nFactoring yields\n\n\\[(m-3)(m-1) = 0\\]\n\nand so the steady states are given by \\emph{m} = 1 and \\emph{m} = 3. It\nis quickly checked, e.g. by plugging in \\emph{m} = 0, \\emph{m} = 2, and\n\\emph{m = 4}, that\n\n\\[\\frac{dm}{dt} = \\left\\{\\begin{array}{rl}\n\\text{negative }& \\text{if } m < 1 \\text{ or } m > 3, \\\\\n0 & \\text{if  } m = 1 \\text{ or } m = 3, \\\\\n\\text{positive }& \\text{if } 1 < m < 3.\n\\end{array}\\right.\\]\n\nAt time \\emph{t} = 0 we have \\emph{m}(0) = 2. Hence, despite the\nfishing, the population of fish will grow initially. But the growth will\nslow down as the population size approaches the steady state value\n\\emph{m} = 3. A steady state can never be reached in finite time, hence\nthe answer is \\textbf{No}, the fish population will never equal 3\nmillion.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH101_April_2007_Question_6_(b)_log_growth.png}\n\\caption{Caption: We plot the rate of change \\emph{dm/dt}\n(\\emph{y}-axis) as function of population size \\emph{m}\n(\\emph{x}-axis).}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Find the steady states of this differential equation. Are steady states\nactually reached in finite time?"
+    ]
+}

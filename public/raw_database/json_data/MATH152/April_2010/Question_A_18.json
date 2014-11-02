@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_18", 
+    "course": "MATH152", 
+    "statement": "Find the intersection of the line \\emph{L} and the plane \\emph{P} given\nbelow\n\n\\begin{align*}\nL: & \\quad \\mathbf{x} = (1,1,0) + t(1,0,-2) \\\\\nP: & \\quad x + y + z = 2\n\\end{align*}", 
+    "year": 2010, 
+    "sols": [
+        "The equation of the line is\n\n\\[\\mathbf{x}=(1,1,0)+t(1,0,-2)\\]\n\nwhere $\\mathbf{x}=(x,y,z)$. We can write the line as three separate\nequations\n\n\\begin{align*}\nx&=1+t\\\\\ny&=1\\\\\nz&=-2t.\n\\end{align*}\n\nIf we use this for the equation of the plane, we get\n\n\\begin{align*}\nx+y+z&=2\\\\\n1+t+1-2t&=2\\\\\n-t&=0\n\\end{align*}\n\nand therefore we conclude that t=0. We plug this value of \\emph{t} back\ninto the equation of the line to get that the point on the line that\nintersects the plane is (1,1,0)."
+    ], 
+    "hints": [
+        "Write the equation of the line as three separate equations.", 
+        "Each equation for the line depends on a single variable, t. How can we\nuse the last equation to determine t?"
+    ]
+}

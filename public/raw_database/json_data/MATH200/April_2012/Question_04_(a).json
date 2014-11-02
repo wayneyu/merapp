@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH200", 
+    "statement": "The temperature at a point (x,y,z) is given by\n\n\\[\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\]\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nFind the rate of change of temperature at the point P(1,2,-1) in the\ndirection toward the point (1,1,0).", 
+    "year": 2012, 
+    "sols": [
+        "For $\\displaystyle{}T(x,y,z) = 5 e^{-2x^2 - y^2 - 3z^2}$, the gradient\nis\n\n\\begin{align*}\n\\nabla T(x,y,z) &= 5 e^{-2x^2 - y^2 - 3z^2}\\left\\langle{-4x, -2y, -6z}\\right\\rangle \\\\\n&= 10e^{-2x^2 - y^2 - 3z^2}\\left\\langle{-2x, -y, -3z}\\right\\rangle\n\\end{align*}\n\nAt the point $\\displaystyle{}P(1,2,-1)$, we have $\\nabla T(1,2,-1)\n= 10 e^{-9}\\left\\langle{-2,-2,3}\\right\\rangle.$ Each component has units\nof $\\displaystyle{}\\text{C}/\\text{m}$.\n\nThe vector from $\\displaystyle{}P(1,2,-1)$ to $\\displaystyle{}Q(1,1,0)$\nis $\\displaystyle{}\\left\\langle{0,-1,1}\\right\\rangle$\n\nA unit vector in this direction is\n\n\\[\\widehat{\\mathbf{u}} = \\frac{\\left\\langle{0,-1,1}\\right\\rangle}{\\left\\vert\\left\\langle{0,-1,1}\\right\\rangle\\right\\vert} = \\frac{1}{\\sqrt2}\\left\\langle{0,-1,1}\\right\\rangle\\]\n\nEach component is dimensionless because the units of the vector\n$\\mathbf{u}$ and its magnitude are the same.\n\nThe rate of change of \\emph{T} at \\emph{P} in direction\n$\\displaystyle{}\\widehat{\\mathbf{u}}$ is\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1)\n= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}}\n= 10 e^{-9}\\left(\\frac{5}{\\sqrt2}\\right)\n= 25\\sqrt2 e^{-9}.\n\\end{align*} Its units are $\\displaystyle{}\\text{C}/\\text{m}$."
+    ], 
+    "hints": [
+        "Recall that the directional derivative of a scalar function f in the\ndirection $\\mathbf{u}$ is\n\n\\[D_uf=\\nabla{f}\\cdot\\hat{\\mathbf{u}}\\]\n\nwhere $\\hat{\\mathbf{u}}$ is a unit vector.", 
+        "What is the direction vector $\\mathbf{u}$ that we need?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH105", 
+    "statement": "Let $\\displaystyle f(x,y) = (2x+y^{3})^{10}$. Evaluate\n$\\displaystyle \\frac{\\partial^{2} f}{\\partial y \\partial x}$.", 
+    "year": 2009, 
+    "sols": [
+        "Taking the derivative of $\\displaystyle f(x,y) = (2x+y^{3})^{10}$ with\nrespect to \\emph{y} using the chain rule gives\n\n$\\displaystyle\n\\frac{\\partial f}{\\partial y} = 10(2x + y^{3})^{9}(3y^{2})$\n\nThen taking this function's derivative with respect to \\emph{x} using\nthe chain rule gives\n\n$\\displaystyle\n\\frac{\\partial^{2} f}{\\partial y \\partial x} = 90(3y^{2})(2x + y^{3})^{8}(2) = 540y^{2}(2x + y^{3})^{8}$"
+    ], 
+    "hints": [
+        "Evaluate the derivative at \\emph{y} first. Remember to treat the other\nvariable as a constant."
+    ]
+}

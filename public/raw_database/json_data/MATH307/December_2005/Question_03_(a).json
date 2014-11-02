@@ -1,0 +1,12 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH307", 
+    "statement": "\\textbf{Decide whether the following statement is true or false. You\nneed not give a reason. All matrices in this question are square\n$n \\times n$.}\n\nIf $\\displaystyle A = A^{-1}$ then every eigenvalue of \\emph{A} is\neither 1 or -1.", 
+    "year": 2005, 
+    "sols": [
+        "The answer is \\textbf{true}.\n\nWe are given that $\\displaystyle A = A^{-1}$ which implies that\n$\\displaystyle A^{2} = I$. Let $\\displaystyle p(\\lambda)$ is the\ncharacteristic polynomial of \\emph{A} and $\\displaystyle m(\\lambda)$\nits minimal polynomial. Notice that $\\displaystyle m(\\lambda)$ divides\n$\\displaystyle q(\\lambda) = \\lambda^2-1$ (since the matrix itself\nsatisfies its minimal polynomial by the Cayley-Hamilton theorem).\nFurthermore, \\emph{p} and \\emph{m} also share roots and these form the\nonly roots. Hence all the roots of \\emph{p} must be a subset of the\nroots of $\\displaystyle q(\\lambda)$ which are $\\displaystyle \\pm 1$.\nThese roots are the eigenvalues of the matrix \\emph{A} and so the matrix\ncan only have these eigenvalues.", 
+        "This statement is \\textbf{true}.\n\nIf \\emph{\u03bb} is an eigenvalue of \\emph{A}, then \\emph{1/\u03bb} is an\neigenvalue of \\emph{A\\textsuperscript{-1}} with the same eigenvectors\n(\\emph{Av = \u03bbv}, \\emph{v = \u03bbA\\textsuperscript{-1}v}, \\emph{v/\u03bb =\nA\\textsuperscript{-1}v}). Hence\n\n\\[\\lambda v = Av = A^{-1}v = \\frac1{\\lambda}v\\]\n\nor, equivalently (since \\emph{\\textbf{v} \u2260 \\textbf{0}}),\n\n\\[\\displaystyle\n\\lambda^2 = 1,\\]\n\nso \\emph{\u03bb = -1} or \\emph{\u03bb = 1}."
+    ], 
+    "hints": []
+}

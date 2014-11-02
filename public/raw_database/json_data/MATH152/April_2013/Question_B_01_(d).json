@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_B_01_(d)", 
+    "course": "MATH152", 
+    "statement": "Let $L$ be the line $3x = 4y$.\n\nFind an eigenvector of the matrix A associated to the eigenvalue -1\nwhere \\emph{A} was computed in part\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_01_(b)}{(b)}\nand represents the reflection across the line \\emph{L}.", 
+    "year": 2013, 
+    "sols": [
+        "From the statement of the problem we know that $\\lambda = -1$ is an\neigenvalue of the matrix A. The corresponding eigenvector $\\mathbf{v}$\nsatisfies the following equation\n\n\\[(A - \\lambda I)\\mathbf{v} = (A + I)\\mathbf{v} = \\mathbf{0}\\] where I\nis the identity matrix. Solving for $\\mathbf{v}$ gives:\n\n\\begin{align*}\n(A + I)\\mathbf{v} &= \\begin{bmatrix} \\frac{7}{25} + 1 & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{-7}{25} + 1 \\end{bmatrix} \\mathbf{v} = \\frac{2}{25}\\begin{bmatrix} 16 & 12 \\\\ 12 & 9 \\end{bmatrix} \\mathbf{v} = \\mathbf{0} \\quad \\rightarrow \\quad {\\color{blue}\\mathbf{v} = \\begin{bmatrix} 3 \\\\ -4 \\end{bmatrix}}.\n\\end{align*} Any non-zero constant multiple of $\\mathbf{v}$ is also an\nacceptable answer.", 
+        "Any vector perpendicular to the line of reflection will flip it's\ndirection, and hence be an eigenvector with eigenvalue \\emph{-1}. To\nfind the vector that is perpendicular to the line we rewrite\n\\emph{3x=4y} in normal form\n\n\\[\\langle 3, -4 \\rangle \\cdot \\langle x, y \\rangle = 0\\] In other words,\nall point on the line \\emph{3x=4y} are perpendicular to\n$\\langle 3, -4 \\rangle$. Hence $\\langle 3, -4 \\rangle$ must be an\neigenvector with eigenvalue \\emph{-1}."
+    ], 
+    "hints": [
+        "Remember that the eigenvector(s), $\\mathbf{v}$ corresponding to a\nparticular eigenvalue $\\displaystyle\\lambda$ of a matrix\n$\\displaystyle A$ satisfy\n\n\\[A\\mathbf{v} = \\lambda\\mathbf{v} \\quad \\rightarrow \\quad (A - \\lambda I)\\mathbf{v} = \\mathbf{0}\\]\nwhere \\emph{I} is the identity matrix.", 
+        "For an alternative solution, think about which vector flips it's\ndirection when reflected along a line?"
+    ]
+}

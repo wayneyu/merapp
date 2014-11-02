@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH103", 
+    "statement": "Consider the curve given by\n\n\\[\\displaystyle y = f(x) = \\frac{1}{x^{p}}\\]\n\nfor $\\displaystyle 1 \\leq x \\leq B$ where $\\displaystyle p,B$ are\nconstants with $\\displaystyle B > 1$ and $\\displaystyle p > 0$.\n\n(b) Compute the volume obtained by revolving the same region about the\n\\emph{x}-axis. (Later we will refer to this volume as V).", 
+    "year": 2005, 
+    "sols": [
+        "For similar reasons to\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_05_(a)}{part\n(a)} we will have two cases because we will have to worry about the\nintegral we are doing. There will be a unique situation if we are ever\nintegrating \\emph{1/x} which occurs when \\emph{p=1/2} because\n\n\\[V=\\int_{1}^B\\pi\\left [ \\frac{1}{x^p} \\right ]^2 dx=\\int_{1}^B\\pi\\frac{1}{x^{2p}} dx.\\]\n\nIf $p\\neq{}1/2$ then when we rotate the function\n$y = f(x) = \\frac{1}{x^p}$ about the \\emph{x}-axis over the interval\n{[}1,\\emph{B}{]}, the volume obtained is\n\n\\begin{align*}\nV & = \\int_{1}^{B} \\pi \\left [ \\frac{1}{x^p} \\right ]^2 dx = \\pi \\int_{1}^{B} \\frac{1}{x^{2p}} dx = \\pi \\int_{1}^{B} x^{-2p} dx \\\\\n& = \\pi \\left [ \\frac{x^{-2p+1}}{-2p+1} \\right ]_{1}^{B} = \\frac{\\pi}{1-2p} \\left ( B^{1-2p} - 1 \\right )\n\\end{align*}\n\nIf \\emph{p=1/2} then\n\n\\begin{align*}\nV&= \\int_1^B\\pi\\left[\\frac{1}{x^{1/2}}\\right]^2dx=\\pi\\int_1^B\\frac{1}{x}dx\\\\\n&=\\pi\\left[\\ln{x}\\right]_{x=1}^{x=B}=\\pi\\ln{B}\n\\end{align*}"
+    ], 
+    "hints": [
+        "The volume \\emph{V} obtained by rotating a function \\emph{y=f(x)} around\nthe \\emph{x}-axis (for $a \\leq x \\leq b$) is\n$V = \\int_{a}^{b} \\pi [f(x)]^2 dx.$", 
+        "We have\n\n\\[f(x)^2=\\frac{1}{x^{2p}}.\\]\n\nAre there any values of \\emph{p} that makes this integral special\ncompared to other values?"
+    ]
+}

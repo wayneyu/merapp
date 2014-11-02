@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_201_06_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the same graph as in the\n\\href{Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)}{previous\nquestion}, now interpreted as an internet where the vertices represent\nweb pages and the arrows represent links.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q6.png}\n\\end{description}\n\n\\textbf{(b)} What is the stochastic matrix associated with the PageRank\nalgorithm with damping factor \\emph{\u03b1 = 1/2}. What happens to the\neigenvalues as \\emph{\u03b1} tends to \\emph{0} (complete damping)?", 
+    "year": 2013, 
+    "sols": [
+        "The stochastic matrix for a damped system is\n\n\\begin{align*}\nS &= (1 - \\alpha)Q + \\alpha P\n\\\\ &= \\frac{1}{2}Q + \\frac{1}{2}P\n\\\\ &= \\begin{bmatrix}\n1/12 & 1/12 & 1/12 & 1/12 & 1/12 & 1/6\n\\\\ 1/3 & 1/12 & 1/12 & 1/12 & 1/12 & 1/6\n\\\\ 1/12 & 1/3 & 1/12 & 1/12 & 1/12 & 1/6\n\\\\ 1/3 & 1/12 & 1/12 & 1/12 & 1/12 & 1/6\n\\\\ 1/12 & 1/3 & 1/12 & 7/12 & 1/12 & 1/6\n\\\\ 1/12 & 1/12 & 7/12 & 1/12 & 7/12 & 1/6\n\\end{bmatrix}\n\\end{align*}\n\nWhen the damping factor $\\displaystyle \\alpha$ tends to zero, the\neigenvalues of \\emph{S} tend to \\emph{Q}. Because \\emph{Q} projects onto\na 1 dimension subspace, there is one eigenvalue equal to 1, and the rest\nare zero."
+    ], 
+    "hints": []
+}

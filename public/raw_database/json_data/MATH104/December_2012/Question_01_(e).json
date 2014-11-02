@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH104", 
+    "statement": "Sketch the graph of a continuous function f(x) satisfying:\n\n\\[\\lim_{x\\to0^-}f'(x)=1,\\qquad\\lim_{x\\to0^+}f'(x)=-1,\\qquad{}f(0)=3\\]", 
+    "year": 2012, 
+    "sols": [
+        "There are infinitely many possible solutions to this problem. As long\nyou sketch a continuous function that has slope equal to 1 the near\n$x = 0$ on the left, a slope equal to -1 near $x = 0$ on the right and\ntouches the point $(0,3)$, then you should get full marks. Click the\nimages below to see a couple of examples.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH104FINAL_2012_1e_1.png}\n\\caption{A possible solution}\n\\end{figure}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH104FINAL_2012_1e_2.png}\n\\caption{Another possible solution}\n\\end{figure}"
+    ], 
+    "hints": [
+        "The first two conditions specify the behaviour of the slope of the\ntangent lines of $f(x)$ at points near $x = 0$ and the last condition\nspecifies a point that the function $f(x)$ must pass through."
+    ]
+}

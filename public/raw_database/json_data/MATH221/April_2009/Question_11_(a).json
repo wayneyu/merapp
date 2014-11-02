@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_11_(a)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n\\[\\displaystyle\nA = \\begin{bmatrix}\n1 & 0 & 2\\\\\n1 & -1 & 1\\\\\n1 & 0 & 0\n\\end{bmatrix}\\]\n\nFind a nonzero vector $\\displaystyle \\vec{v}$ such that\n$\\displaystyle A\\vec{v} = 2\\vec{v}$", 
+    "year": 2009, 
+    "sols": [
+        "To find a nonzero vector v such that Av = 2v, let v = $[a, b, c]^{T}$,\nwe have $\\begin{matrix}\nAv = 2v\\\\ \n\\begin{bmatrix}\n1 &0 &2 \\\\ \n1 &-1 &1 \\\\ \n1 &0 &0 \n\\end{bmatrix}\\begin{bmatrix}\na\\\\ \nb\\\\ \nc\n\\end{bmatrix} = \\begin{bmatrix}\n2a\\\\ \n2b\\\\ \n2c\n\\end{bmatrix}\n\\end{matrix}$\n\nTherefore, we can get $\\begin{matrix}\na + 2c = 2a\\\\ \na - b + c = 2b\\\\ \na = 2c\n\\end{matrix}$ solving for the system, we get a = 2c, c = b, and so a =\n2b.\n\nThus, the nonzero vector v = $\\begin{pmatrix}\n2\\\\ \n1\\\\ \n1\n\\end{pmatrix}$"
+    ], 
+    "hints": []
+}

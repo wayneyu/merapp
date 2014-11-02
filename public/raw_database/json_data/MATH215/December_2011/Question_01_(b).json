@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH215", 
+    "statement": "Solve the following nonlinear ODE:\n\n\\[t^2 w' + 2tw - w^3 = 0, \\quad t > 0.\\]", 
+    "year": 2011, 
+    "sols": [
+        "As the exam hint suggests, we make the substitution $w = v^{-1/2}$ so\nthat\n\n\\[w' = -\\frac{1}{2} v^{-3/2} v'.\\]\n\nUnder this substitution, $t^2 w' + 2tw - w^3 = 0$ becomes\n\n\\begin{align*} t^2 (-\\frac{1}{2} v^{-3/2} v') + 2t v^{-1/2} - v^{-3/2} &= 0 \\\\\nv' - \\frac{4}{t} v + \\frac{2}{t^2} &= 0 \\end{align*}\n\nwhere we multiplied the equation by $-2 \\frac{v^{3/2}}{t^2}.$\n\nThis is now the same ODE as in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_01_(a)}{part\n(a)}, so the solution is that $v = \\frac{2}{5t} + Ct^4$. Hence we have\n\n\\[w = \\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.\\]"
+    ], 
+    "hints": [
+        "The substitution\n\n\\[\\displaystyle w = v^{-1/2}\\] will simplify matters.", 
+        "After the substitution you will recover a differential equation that you\nare familiar with."
+    ]
+}

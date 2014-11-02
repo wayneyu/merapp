@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH103", 
+    "statement": "\\emph{\\textbf{Short answer question.} Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nUse the integral comparison test to show that\n\n\\[\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx\\] converges.", 
+    "year": 2012, 
+    "sols": [
+        "On the interval $[1,\\infty)$ we have that 2\\emph{x}-1 \u2265 1 and so\n\n\\[\\frac{e^{-x}}{2x-1} \\leq e^{-x}\\] for all \\emph{x} \u2265 1. Therefore\n\n\\[\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx \\leq \\int_1^\\infty e^{-x}\\,dx\\]\n\nby the integral comparison test. Since the latter integral\n\n\\[\\int_1^\\infty e^{-x}\\,dx\\] converges (see lecture notes or direct\ncalculation), the former integral also converges, by the integral\ncomparison test."
+    ], 
+    "hints": [
+        "Use the integral comparison test, i.e. find an integrand \\emph{g(x)}\nsuch that\n\n\\[\\frac{e^{-x}}{2x-1} \\leq g(x) \\quad \\text{and}\u00c2\u00a0\\quad \\int_1^\\infty g(x)\\,dx\\]\nconverges.", 
+        "What can you say about 1/(2\\emph{x}-1) on the interval on which the\nintegration is considered?"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH103", 
+    "statement": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nFind the value of the integral\n\n\\[\\displaystyle \\int_2^4 \\frac2{3x^2-4x+1}\\,dx\\]", 
+    "year": 2012, 
+    "sols": [
+        "This requires partial fractions. In order to use partial fractions, the\ndenominator must be factored. One way to find the factors is to find the\nzeroes of the denominator, and then use them to create the factors. To\ndo so we set 3\\emph{x}\\textsuperscript{2}-4\\emph{x}+1 = 0. Using the\nquadratic formula, we get the following two zeroes:\n\n\\[\\frac{4\\pm\\sqrt{16-12}}{6} = \\frac{4\\pm2}{6} = \\frac13 \\text{ or } 1.\\]\n\nThese zeroes can then be put into factors as follows: $(x - 1/3)(x - 1)$\n\nBut because the first coefficient of the original denominator is\n\\emph{3}, we need to multiply these factors by 3, giving:\n$3(x - 1/3)(x - 1) = (3x - 1)(x - 1)$\n\nIf you're comfortable with factoring, instead of finding the zeroes and\nthen generating the factors, you can also just factor the denominator\ndirectly.\n\nNow we perform the decomposition into partial fractions:\n\n\\[\\frac2{3x^2-4x+1} = \\frac2{(3x-1)(x-1)} = \\frac{A}{3x-1} + \\frac{B}{x-1}.\\]\n\nWhen we try to recombine the final pair of fractions, we get:\n\n\\[\\frac{A}{3x-1}\\cdot\\frac{(x-1)}{(x-1)} + \\frac{B}{x-1}\\cdot\\frac{(3x-1)}{(3x-1)} = \\frac{A(x - 1) + B(3x-1)}{(3x-1)(x-1)}\\]\n\nThus 2 = \\emph{A}(\\emph{x}-1)+\\emph{B}(3\\emph{x}-1). An easy way to find\nthe values for \\emph{A} and \\emph{B} is to plug in \\emph{x = 1} and\n\\emph{x = 1/3}. Plugging in \\emph{x}=1 yields \\emph{B}=1 and plugging in\n\\emph{x}=1/3 yields \\emph{A} = -3. We have now decomposed the fraction\nas follows:\n\n\\[\\frac2{3x^2-4x+1} = \\frac{-3}{3x-1} + \\frac1{x-1}\\]\n\nHaving now decomposed the expression using partial fractions, we can\nreturn to our original goal, which was to integrate the expression.\n\n\\begin{align*}\n\\int_2^4 \\frac2{3x^2-4x+1}\\,dx &= \\int_2^4 \\frac2{(3x-1)(x-1)}\\,dx \\\\\n&= \\int_2^4 \\left(\\frac{-3}{3x-1} + \\frac1{x-1}\\right)\\,dx \\\\\n&= \\left.\\left(\\frac{-3}3\\ln|3x-1| + \\ln|x-1|\\right)\\right|_2^4 \\\\\n&= -\\ln(11)+\\ln(3) - (-\\ln(5)+\\ln(1)) \\\\\n&= -\\ln(11)+\\ln(3)+\\ln(5) = \\ln\\left(\\frac{15}{11}\\right).\n\\end{align*}"
+    ], 
+    "hints": [
+        "The function to be integrated is a rational function. In order to\nintegrate a rational function, you should factor the denominator and\napply partial fraction decomposition.", 
+        "Upon applying partial fraction decomposition, we are left with the\nexpression\n\n\\[\\frac2{3x^2-4x+1} = \\frac{-3}{3x-1} + \\frac1{x-1}.\\] Now integrate the\nright hand side."
+    ]
+}

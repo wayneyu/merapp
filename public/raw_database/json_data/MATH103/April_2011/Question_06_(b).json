@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_06_(b)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dy}{dx} = (y^2-1)x.\\]\n\nSolve for $y(t)$ given the initial value $y(0)=0$.", 
+    "year": 2011, 
+    "sols": [
+        "The differential equation is separable; that is,\n\n\\begin{align*}\n\\frac{dy}{dx}=(y^2-1)x\\implies \\int \\frac{1}{y^2-1} \\, dy = \\int x\\, dx.\n\\end{align*}\n\nOn the right hand side,\n\n\\begin{align*}\n\\int x\\, dx = \\frac{x^2}2+C_1,\n\\end{align*}\n\nfor some constant $C_1.$ On the left hand side, we factor\n$y^2-1 = (y+1)(y-1)$ and use partial fractions.\n\n\\begin{align*}\n&\\frac1{(y+1)(y-1)}=\\frac{A}{y+1}+\\frac{B}{y-1}\\\\\n &\\implies 1=A(y-1)+B(y+1).\n\\end{align*}\n\nThis must be true for all $y$. In particular, at $y=-1$ , $1=-2A$,\nhence, $A=-1/2$. At $y=1$, $1=2B$, hence $B=1/2$. Therefore,\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy& =- \\frac12 \\int \\frac{1}{y+1}\\, dy +\\frac12\\int \\frac{1}{y-1}\\,dy\\\\\n& =- \\frac12 \\ln|y+1| +\\frac12\\ln|y-1| +C_2\\\\\n& =\\frac12 \\ln\\left|\\frac{y-1}{y+1}\\right| +C_2,\n\\end{align*}\n\nfor some constant $C_2.$ The initial condition is $y(0)=0,$ so at least\nfor small $x$ , we know that $-1<y(x)<1$. This means that \\emph{y}-1 is\nnegative and \\emph{y}+1 is positive. Hence\n\n\\[\\left|\\frac{y-1}{y+1}\\right| = - \\frac{y-1}{y+1} = \\frac{1-y}{y+1} = \\frac{1-y}{1+y}.\\]\n\nTherefore\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy\n& =\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) +C_2.\n\\end{align*}\n\nEquating the left and right sides of our first equation, we have\n\n\\begin{align*}\n&\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) =  \\frac{x^2}2+ C_1-C_2\\\\\n&\\implies \\frac{1-y}{1+y} =  A e^{x^2}\\\\\n&\\implies 1-y= (1+y) A e^{x^2}\\\\\n&\\implies 1- A e^{x^2}= y(1+ A e^{x^2})\\\\\n&\\implies y= \\frac{1- A e^{x^2}}{1+ A e^{x^2}}.\n\\end{align*}\n\nwhere $A=e^{2(C_1-C_2)}$. From the initial condition, $y(0)=0$, $A$ must\nbe equal to 1. Hence,\n\n\\begin{align*}\n y(x)= \\frac{1- e^{x^2}}{1+ e^{x^2}}.\n\\end{align*}\n\nNote that this solution does satisfy $-1<y(x)<1$ for all $x$.\n\nRemember: It is important (and usually easy) to check that your solution\nactually satisfies the differential equation."
+    ], 
+    "hints": [
+        "This differential equation is separable."
+    ]
+}

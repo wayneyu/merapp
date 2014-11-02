@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH221", 
+    "statement": "Let A be a square matrix, with eigenvector v and corresponding\neigenvalue $\\displaystyle \\lambda$.Show that cv is also an eigenvector for A with the same eigenvalue\n$\\displaystyle \\lambda$ as v for any nonzero constant c.", 
+    "year": 2010, 
+    "sols": [
+        "Let $\\vec{y} = c\\vec{v}$\n$A\\vec{y} = A(c\\vec{v}) = c(A\\vec{v}) = c(\\lambda\\vec{v}) = \\lambda(c\\vec{v}) = \\lambda\\vec{y}$\nTherefore $c\\vec{v}$ is also an eigenvector with the same eigenvalue\n$\\lambda$"
+    ], 
+    "hints": []
+}

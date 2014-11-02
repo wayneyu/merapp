@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=1+\\frac{1}{x^2}$. Calculate $\\displaystyle f'(x)$ using the\nlimit definition of the derivative. No credit will be given for other\nmethods of differentiation.", 
+    "year": 2012, 
+    "sols": [
+        "Using the limit defnition of the derivative we have\n\n$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h} =  \\lim_{h \\to 0} \\frac{(1 + \\frac{1}{(x+h)^2})- (1 + \\frac1{x^2})}{h}$\n\nTo simplify, we cancel the ones in the numerator, find a common\ndenominator for the fractions, and simplify:\n\n\\begin{align*}\n&= \\lim_{h \\to 0} \\frac{ \\frac{x^2}{(x^2)(x+h)^2}- \\frac{(x+h)^2}{x^2( x+h)^2}}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{ \\frac{x^2}{(x^2)(x+h)^2}- \\frac{x^2 + 2xh + h^2}{x^2( x+h)^2}}{h} \\\\ \n&= \\lim_{h \\to 0} \\frac{ \\frac{ -2xh - h^2}{(x^2)(x+h)^2}}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{h(-2x - h)}{h(x^2)(x+h)^2} \\\\\n&= \\lim_{h \\to 0} \\frac{(-2x - h)}{(x^2)(x+h)^2} \\\\\n&= \\frac{-2x}{x^4}\n\\end{align*}\n\nSo $\\displaystyle f'(x) = \\frac{-2}{x^3}$"
+    ], 
+    "hints": [
+        "The limit definition of the derivative is:\n\n$\\displaystyle \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$"
+    ]
+}

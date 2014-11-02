@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\rightarrow -1^{-}} f(x) = 0$\n\\item\n  $\\lim_{x \\rightarrow -1^{+}} f(x) = \\infty$\n\\item\n  $\\lim_{x \\rightarrow 1} f(x) = -\\infty$\n\\end{enumerate}", 
+    "year": 2013, 
+    "sols": [
+        "See the second hint for how each limit translates into a feature of the\ngraph.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Your graph can do whatever it wants to the left of \\emph{x = -1}, so\n  long as it approaches the point \\emph{(-1,0)}. The simplest (yet\n  somewhat boring) way to achieve this is by setting the function to\n  \\emph{0} for \\emph{x \\textless{} -1}.\n\\item\n  Between \\emph{x = -1} and \\emph{x = 1} the function has to fall from\n  $\\infty$ to $-\\infty$.\n\\item\n  To the right of \\emph{x = 1} the function has to come back from\n  $-\\infty$ and then can do whatever you want it to do.\n\\end{enumerate}\n\nThere is a lot of freedom in how your graph may look, but as long as you\nfollow the key points above your graph will be correct. Below is our\nexample \\emph{(the purple lines represent asymptotes)}:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110_April2013_Question2b_solution.jpg}\n\\end{description}"
+    ], 
+    "hints": [
+        "What does it mean when a limit evaluates to a number? To infinity? Each\nlimit listed above turns into a graph feature like a point or asymptote.", 
+        "Each limit translates into the following graph feature:\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Approaching \\emph{x = -1} from the left, the graph approaches the\n  point \\emph{(-1,0)}.\n\\item\n  There is a vertical asymptote at \\emph{x = -1} and the function\n  increases to $\\infty$ as it approaches \\emph{x = -1} from the right.\n\\item\n  There is a vertical asymptote at \\emph{x = 1} and the function\n  decreases to $-\\infty$ as it approaches \\emph{x = 1} from either side.\n\\end{enumerate}"
+    ]
+}

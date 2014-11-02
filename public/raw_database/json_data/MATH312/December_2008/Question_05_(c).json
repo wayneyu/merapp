@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH312", 
+    "statement": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(c)} Explain what Alice has to do next to obtain \\emph{P} back.", 
+    "year": 2008, 
+    "sols": [
+        "Recall up to this point that Bob computed\n$\\displaystyle C \\equiv P^{e} \\mod{n}$ and you've computed a \\emph{d}\nsuch that $\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}$ so in fact, we have\n$\\displaystyle ed = 1 + \\phi(n)s$ for some integer \\emph{s}. Using\nEuler's Theorem, we can compute \\emph{P} back if we compute\n\n$\\displaystyle C^{d} \\equiv (P^{e})^{d} \\equiv P^{ed} \\equiv P^{1 + \\phi(n)s} \\equiv P(P^{\\phi(n)})^{s} \\equiv P \\mod{n}$.\n\nThis is computable since Alice has both \\emph{C} and \\emph{d} available\nto her. This completes the proof."
+    ], 
+    "hints": [
+        "Recall up to this point that Bob computed\n$\\displaystyle C \\equiv P^{e} \\mod{n}$ and you've computed a \\emph{d}\nsuch that $\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}$. How can you use\nthis information together?"
+    ]
+}

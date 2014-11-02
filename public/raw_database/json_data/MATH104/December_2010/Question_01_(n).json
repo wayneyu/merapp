@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(n)", 
+    "course": "MATH104", 
+    "statement": "Use the linear approximation to ln(x) at x=1 to estimate ln(0.8).", 
+    "year": 2010, 
+    "sols": [
+        "We use the linear approximation of $\\ln(x)$ at $x=1$ to estimate\n$\\ln(0.8)$. (Approximating at \\emph{x = 1} is a logical choice, as 1 is\nclose to 0.8, and we know that $\\ln(1) = 0$.)\n\nWe know $\\frac{d}{dx}\\ln(x)=\\frac1x$, which is equal to 1 when $x=1$.\nSubstituting this into the linear approximation formula, we get,\n\n\\[\\ln(0.8)\\approx \\ln(1)+1(0.8-1) = 0-0.2=-0.2\\]"
+    ], 
+    "hints": [
+        "The graph of the linear approximation taken at $a=1$ is the tangent line\nto the curve at $a=1$.", 
+        "The linear approximation to a function $f$ at $x=a$ is\n\n\\[L(x)=f(a)+f'(a)(x-a).\\]"
+    ]
+}

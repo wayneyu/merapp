@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)_i", 
+    "course": "MATH200", 
+    "statement": "Find the equation of the tangent plane to the surface\n$\\displaystyle x^2 z^3 +y \\sin(\\pi x) = -y^2$ at the point\n$\\displaystyle P=(1,1,-1)$.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(a)", 
+    "course": "MATH312", 
+    "statement": "Suppose $\\displaystyle a,b,m$ are integers with\n$\\displaystyle (a,m) = (b,m) = 1$. Let\n$\\displaystyle s = \\text{ord}_{m}(a)$ and\n$\\displaystyle t = \\text{ord}_{m}(b)$ and suppose that\n$\\displaystyle (s, t) = 1$ . Then show that\n$\\displaystyle \\text{ord}_{m}(ab) = st$ .", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

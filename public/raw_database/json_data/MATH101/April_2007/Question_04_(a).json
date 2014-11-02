@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nFind the general solution of the differential equation $4y'' + y' = 0$.", 
+    "year": 2007, 
+    "sols": [
+        "Bringing the $y'$ term over we have\n\n$\\displaystyle 4y'' = -y'$\n\nIntegrating both sides yields\n\n$\\displaystyle 4y' = -y + C$\n\nNow, bring the \\emph{y} term to the left and dividing by $\\frac{1}{4}$,\nwe have\n\n$y' + \\frac{y}{4} = \\frac{C}{4}$\n\nNow, multiplying both sides by $e^{x/4}$ yields\n\n$e^{x/4}y' + e^{x/4}\\frac{y}{4} =  e^{x/4}\\frac{C}{4}$\n\nThe left hand side is now a product rule derivative, namely\n\n$(e^{x/4}y)' =  e^{x/4}\\frac{C}{4}$\n\nIntegrating both sides yields\n\n$e^{x/4}y  =  \\int e^{x/4}\\frac{C}{4} \\, dx = e^{x/4}C + D$\n\nDividing both sides by $e^{x/4}$ gives\n\n$\\displaystyle y  = C + De^{-x/4}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Try bringing the $y'$ term over first. Then integrating both sides once\nis easy.", 
+        "Next, try an integrating factor.", 
+        "Multiply both sides by $e^{x/4}$. Then integrate."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_A_10", 
+    "course": "MATH152", 
+    "statement": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH152\\_April\\_2011\\_Question\\_A9\\_picture\\_1.png}\n\\end{figure}\n\nIn term of these unknowns {[}found in A9{]}, write the linear equation\nthat represents Kirchhoff's law of voltage drops around the third loop\n(corresponding to $i_3$) in the circuit above.", 
+    "year": 2011, 
+    "sols": [
+        "To be consistent with the labs, we will denote everything in terms of\nvoltage drops so positive numbers are voltage drops and negative numbers\nare voltage gains.\n\nIn the third loop we move clockwise and start with the 9$\\Omega$\nresistor. The voltage across this resistor (and any resistor) is given\nby Ohm's Law V=IR so $V_{9\\Omega}=9i_3$ where we have a positive sign\nbecause we're moving with the current and so there is a voltage drop.\nNext we come to the 7$\\Omega$ resistor which has both loop current 3 and\nloop current 1 flowing through it. Therefore there is a voltage drop\ncontribution from loop current 3 by virtue that we're moving in the\ndirection of that current but there is also a voltage gain from loop\ncurrent 1 going in the opposite direction. Therefore we get that\n$V_{7\\Omega}=7(i_3-i_1)$. Finally we reach the current source; since we\nare traversing it against the arrow we have a voltage drop and the value\nis one of our unknowns, $v_2$. The Kirchhoff rule states that the sum of\nvoltage drops and gains in a loop must be zero and so we have that\n\n\\[\\displaystyle{}0=9i_3+7(i_3-i_1)+v_2\\]\n\nas the linear equation for loop 3."
+    ], 
+    "hints": [
+        "A resistor can only have 1 current going through it so any branches that\nshare loop currents must be added together (with direction considered of\ncourse!)"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_A_12", 
+    "course": "MATH152", 
+    "statement": "Write the matrix of the rotation which transforms\n$\\left[\\begin{array}{c}0\\\\1\\end{array}\\right]$ to\n$\\left[\\begin{array}{c}-1\\\\0\\end{array}\\right].$", 
+    "year": 2011, 
+    "sols": [
+        "As rotation matrices are of the form\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$\n\nWe must have that\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right] \\left[\\begin{array}{c}0\\\\1\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]$\n\nThis gives us that\n\n$\\left[\\begin{array}{c}-\\sin(\\theta)\\\\\\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]$\n\nor more simply\n\n$\\displaystyle -\\sin(\\theta) = -1$\n\nand\n\n$\\displaystyle \\cos(\\theta) = 0$\n\nThus, we plug in these values into our matrix and we see that\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 & -1\\\\ 1 & 0\\end{array}\\right]$\n\nwill do the trick.", 
+        "As rotation matrices have the form\n\n$\\left[\\begin{array}{c c} \\cos(\\theta) & -\\sin(\\theta)\\\\ \\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$\n\nand a diagram shows that we are rotating the first vector (which is a\nunit vector on the positive y-axis) a total of $\\frac{\\pi}{2}$, we have\nthat the rotation matrix that solves our problem is\n\n$\\left[\\begin{array}{c c} \\cos(\\tfrac{\\pi}{2}) & -\\sin(\\tfrac{\\pi}{2})\\\\ \\sin(\\tfrac{\\pi}{2}) & \\cos(\\tfrac{\\pi}{2})\\end{array}\\right] = \\left[\\begin{array}{c c} 0 & -1\\\\ 1 & 0\\end{array}\\right]$"
+    ], 
+    "hints": [
+        "Either try drawing a picture or try setting up an arbitrary matrix and\nsolving the resulting system of equations.", 
+        "Rotation matrices have the form\n\n$\\left[\\begin{array}{c c} \\cos(\\theta) & -\\sin(\\theta)\\\\ \\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$"
+    ]
+}

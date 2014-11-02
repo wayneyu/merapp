@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_A_17", 
+    "course": "MATH152", 
+    "statement": "The matrix\n\n\\[P = \\left[\\begin{array}{cc} 4/5 & -2/5 \\\\ -2/5 & 1/5 \\end{array}\\right]\\]\n\nrepresents projection onto a line in 2D. Write this line in the form\n\\emph{y = mx} with \\emph{m} determined.", 
+    "year": 2010, 
+    "sols": [
+        "All points on the line y=mx are given by {[}x0,mx0{]}=x0{[}1,m{]}. If we\nhave a general point in space {[}x,y{]} then the projection matrix P\nshould map the point {[}x,y{]} to x0{[}1,m{]}. Since this projection\nmust hold for all points, it certainly must hold for the basis vectors.\nTherefore we try the vector {[}1,0{]}. Since we have,\n\n\\[P=\\begin{bmatrix}\n4/5 & -2/5\\\\\n-2/5 & 1/5\n\\end{bmatrix}\\]\n\nthen\n\n\\[P\\begin{bmatrix}1\\\\0\\end{bmatrix}\n=\n\\begin{bmatrix}\n4/5 & -2/5\\\\\n-2/5 & 1/5\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\0\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n4/5\\\\\n-2/5\n\\end{bmatrix}\\]\n\nwhich of course is just the first column of the transformation matrix\n(recall this is exactly how we form transformation matrices). We can\nwrite,\n\n\\[\\begin{bmatrix}\n4/5\\\\\n-2/5\n\\end{bmatrix}\n=\n4/5\\begin{bmatrix}\n1\\\\\n-1/2\n\\end{bmatrix}\\]\n\nwhich in the form x0{[}1,m{]} tells us that x0=4/5 and m=-1/2. Therefore\nthe slope of the line is -1/2. We can then write that the line is\ny=-1/2x. To check our answer we could use the second basis vector\n{[}0,1{]} which would produce the second column of the matrix and once\nagain we'd conclude the slope is -1/2.", 
+        "To begin with, since \\emph{P} projects on a line, the vector \\emph{Pv}\nis on the line for any vector \\emph{v}.\n\nLet \\emph{(x\\textsubscript{0},y\\textsubscript{0})} be a vector on the\nline that \\emph{P} projects onto. Projecting a vector that is already on\nthe line onto the line, does not change the vector. In mathematical\nnotation, this means that\n$P \\begin{bmatrix} x_0 \\\\ y_0 \\end{bmatrix} = \\begin{bmatrix} x_0 \\\\ y_0 \\end{bmatrix}$\nand hence \\emph{(x\\textsubscript{0},y\\textsubscript{0})} is an\neigenvector with eigenvalue 1.\n\nTo find this eigenvector, find the nullspace of\n\n\\[P-I = \\begin{bmatrix}\n-1/5 & -2/5 \\\\ -2/5 & -4/5\n\\end{bmatrix}\\]\n\nRow reducing the matrix above yields\n\n\\[\\begin{bmatrix}\n1 & 2 \\\\ 0 & 0\n\\end{bmatrix}\\] and hence \\emph{(x\\textsubscript{0},y\\textsubscript{0})\n= (-2,1)} is a vector on the line that \\emph{P} projects onto. Plugging\nthis into the equation of the line, \\emph{y = mx} yields \\emph{1 =\nm(-2)} or $m = -\\frac12$"
+    ], 
+    "hints": [
+        "Recall that a transformation matrix applies to all vectors including the\nbasis vector.", 
+        "For an alternative solution: What does the projection do to a vector\nthat is on the line we are looking for? What do we call vectors with\nthis property?"
+    ]
+}

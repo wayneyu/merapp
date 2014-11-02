@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08_(e)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nThere are two boxes containing two balls each. The balls in the \u00ef\u00ac\u0081rst\nbox are numbered \u00e2\u0088\u00921 and 1, the balls in the second box are numbered 0\nand 2. An experimenter draws a ball from each box and observes the\nnumber of each ball. De\u00ef\u00ac\u0081ne a random variable \\emph{X} whose value is\ntwo times the number of the ball drawn from the \u00ef\u00ac\u0081rst box plus three\ntimes the number of the ball drawn from the second box. In other words,\n\n\\emph{X} = 2(number observed from box 1) + 3(number observed from box\n2).\n\nWrite down all possible values of \\emph{X} and use this to compute the\nexpected value of \\emph{X}.", 
+    "year": 2012, 
+    "sols": [
+        "We consider all possible outcomes.\n\nDraw -1 from bin 1 and 0 from bin 2\\[X = 2(-1) + 3(0) = -2\\].\n\nDraw -1 from bin 1 and 2 from bin 2\\[X = 2(-1) + 3(2) = 4\\].\n\nDraw +1 from bin 1 and 0 from bin 2\\[X = 2(1) + 3(0) = 2\\].\n\nDraw +1 from bin 1 and 2 from bin 2\\[X = 2(1) + 3(2) = 8\\].\n\nAll possible values of X are: -2, 2, 4, 8.\n\nEach outcome is equally likely since drawing from the bins is\nindependent and within each bin the balls have equal probability (this\nisn't mentioned, but it seems like a reasonable assumption). Therefore,\n$\\Pr(X=-2) = \\Pr(X=2) = \\Pr(X=4) = \\Pr(X=8) = 1/4$ (since the sum of all\n4 probabilities must be 1).\n\nThe expected value of X\nis\\[\\mathbb{E}(X) = -2/4 + 2/4 + 4/4 + 8/4 = 3.\\]"
+    ], 
+    "hints": [
+        "There are four possible outcomes for the experiment and hence \\emph{X}\ncan take four possible values. Try listing them out. All outcomes are\nequally likely."
+    ]
+}

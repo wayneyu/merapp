@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_Section_201_07_(c)", 
+    "course": "MATH307", 
+    "statement": "Suppose that the matrix \\emph{A} has the following singular value\ndecomposition:\n\n\\[A = \\begin{bmatrix}\n0 & 1 \\\\ 1 & 0\n\\end{bmatrix} \\begin{bmatrix}\n\\sigma_1 & 0 & 0 \\\\ 0 & \\sigma_2 & 0\n\\end{bmatrix} \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\ 0 & 0 & 1 \\\\ -1\\sqrt 2 & 1/\\sqrt 2 & 0\n\\end{bmatrix}\\]\n\nwhere $\\sigma_1 \\geq \\sigma_2 \\geq 0$.\n\n\\textbf{(c)} What are the eigenvalues and eigenvectors of \\emph{A*A} and\n\\emph{AA*}?", 
+    "year": 2013, 
+    "sols": [
+        "The eigenvalues and eigenvectors for $\\displaystyle A^* A$:\n\n$\\displaystyle A^* A = V \\Sigma ^T \\Sigma V^T$\n\nSince $\\displaystyle \\Sigma ^T = \\Sigma$,\n\n$\\displaystyle \\Sigma ^T \\Sigma = \\Sigma ^2$\n\nWhich means that our eigenvalues are\n$\\displaystyle \\sigma _1 ^2 , \\ \\sigma _2 ^2$, and $0$\n\nand the eigenvectors are the columns of V.\n\nThe eigenvalues and eigenvectors for $\\displaystyle AA^*$:\n\n$\\displaystyle AA^* = U \\Sigma ^2 U^T$\n\nFrom this equation, we can see that our eigenvalues are the same as the\nlast. However, the corresponding eigenvectors are now the columns of U."
+    ], 
+    "hints": []
+}

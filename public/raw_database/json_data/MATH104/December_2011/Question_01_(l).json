@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(l)", 
+    "course": "MATH104", 
+    "statement": "If\n\n\\[\\displaystyle f'(a)\\]\n\nexists, then\n\n\\[\\lim_{x \\rightarrow a} f(x)\\]\n\nmust exist, but there is not enough information to determine it exactly.\n\nequals f(a).\n\nequals f'(a).\n\nmight not exist.\n\nNone of the above.", 
+    "year": 2011, 
+    "sols": [
+        "If $f$ is differentiable at \\emph{a}, then $f$ must also be continuous at\n\\emph{a}. Hence, the limit\n\n\\[\\lim_{x\\to a} f(x)\\]\n\nexists and is equal to $f$\\emph{(a)}. The correct answer is therefore\n\\textbf{B}."
+    ], 
+    "hints": [
+        "If a function is differentiable at $a$, must it also be continuous at\n$a$?"
+    ]
+}

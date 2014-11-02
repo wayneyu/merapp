@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_02", 
+    "course": "MATH220", 
+    "statement": "Consider the following two statements:\n\n\\[\\mathbf{(a)} \\text{ for all } w \\in \\mathbb{R}, \\text{ there exists } x \\in \\mathbb{R} \\text{ such that } w < x.\\]\n\n\\[\\mathbf{(b)} \\text{ there exists } y \\in \\mathbb{R} \\text{ such that for all } z \\in \\mathbb{R} \\text{, } y < z.\\]\nOne of the statement is true, and the other is false. Determine which is\nwhich. For the true one, prove that it is true; for the false one, prove\nthat it is false.", 
+    "year": 2005, 
+    "sols": [
+        "The second statement should appear wrong fairly immediately since it\ntalking about the existence of \\emph{the smallest real number} which\ncannot exist. Let's prove this:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nThe statement says that for \\emph{any} real number \\emph{z} it should be\ntrue that \\emph{y} \\textless{} \\emph{z}, but if I pick \\emph{z} to be\nexactly that mysterious number \\emph{y} I should have \\emph{y}\n\\textless{} \\emph{y} which is clearly impossible, so the statement is\nfalse.\n\\end{description}\n\nNow we can prove that the first statement is true:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nThat statement says that if any real number \\emph{w} is picked, then one\ncan find a real number \\emph{x} that is larger than \\emph{w}. Well, sure\nenough, if one always choses \\emph{x} = \\emph{w} + 1, then clearly it is\nalways going to be larger than the \\emph{w} that was picked in the first\nplace.\n\\end{description}"
+    ], 
+    "hints": [
+        "Try reformulating these two statements into more readable English.", 
+        "The first statement is equivalent to\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{Given any real number, there exists a real number larger than that\none.}\n\\end{description}", 
+        "The second statement is equivalent to\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{There exists a real number \\textbf{y} that is strictly smaller\nthan any real number.}\n\\end{description}"
+    ]
+}

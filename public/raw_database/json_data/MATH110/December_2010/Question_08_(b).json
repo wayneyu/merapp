@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08_(b)", 
+    "course": "MATH110", 
+    "statement": "Find the equation of the line tangent to the curve\n$\\displaystyle y = 5 \\sin x \\cos x$ at $x = \\frac{\\pi}{3}$.", 
+    "year": 2010, 
+    "sols": [
+        "To find the equation of a tangent line we need both the slope and a\npoint on the line.\n\nTo find the slope, we simply take the derivative of the function using\nthe product rule and plug in the value $x = \\frac{\\pi}{3}$\n\n$\\frac{dy}{dx} = 5((\\sin x)'\\cos x + \\sin x (\\cos x)') = 5(\\cos^2 x - \\sin^2 x)$\n\nWe know from part (a) that\n$\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$ and\n$\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$. So the value of\nthe derivative at $x = \\frac{\\pi}{3}$ is:\n\n$\\displaystyle 5\\left(\\left( \\frac{1}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\right) = 5\\left(\\frac14 - \\frac34 \\right) = -\\frac52$.\n\nSo the slope of the tangent line at $x = \\frac{\\pi}{3}$ is $-\\frac 52$.\n\nIn order to find a point on the line, we will use the point on the graph\nof the original function at $x = \\frac{\\pi}{3}$. We already have the\nx-coordinate, so we only need to find the y-coordinate by plugging the\nx-value into the original function. This gives:\n\n$y = 5\\sin\\left(\\frac{\\pi}{3}\\right)\\cos\\left(\\frac{\\pi}{3}\\right) = 5\\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2}  = \\frac{5\\sqrt{3}}{4}$\n\nNow that we have the slope $-\\frac52$ and the point\n$\\left(\\frac{\\pi}{3}, \\frac{5\\sqrt{3}}{4} \\right)$, we use the\npoint-slope formula to get the equation of the tangent line.\n\n$y - \\frac{5\\sqrt{3}}{4} = -\\frac52 \\left(x - \\frac{\\pi}{3}\\right)$\n\nNote that this would be a sufficient answer, however, if simplified to\n$y = mx + b$ form, the equation would be:\n\n$y  = -\\frac52x + \\left(\\frac{5\\pi}{6} + \\frac{5\\sqrt{3}}{4}\\right)$"
+    ], 
+    "hints": [
+        "To find the equation of the line you'll need a slope and a point on the\nline. The slope of a tangent line is its derivative at a point; one of\nthe points on the tangent line is also a point on the graph of the\noriginal function."
+    ]
+}

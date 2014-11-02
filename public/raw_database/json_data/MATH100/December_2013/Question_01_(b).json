@@ -1,8 +1,14 @@
 {
     "term": "December", 
+    "question": "Question_01_(b)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $2x-3 \\leq f(x) \\leq x^2-4x+6$ for $x \\geq -1$, find\n$\\lim_{x \\to 3}f(x).$", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "Firstly, we are given that $2x-3 \\leq f(x) \\leq x^2-4x+6$ for all\n$x \\in [-1, \\infty)$. Since $3 \\in [-1, \\infty)$, the initial condition\nof the squeeze theorem is satisfied.\n\nNow, since $\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}$ and$\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}$, we conclude by the\nsqueeze theorem that $\\lim_{x \\to 3} f(x) = {\\color{blue}3}$."
+    ], 
+    "hints": [
+        "Try applying the \\textbf{squeeze theorem}.", 
+        "The squeeze theorem states that if $g(x) \\leq f(x) \\leq h(x)$ for all\n$\\displaystyle x$ in some interval $\\displaystyle I$, and $a \\in I$,\nthen:\\\\\\\\$\\lim_{x \\to a} g(x) = \\lim_{x \\to a} h(x) = L \\implies \\lim_{x \\to a} f(x) = L$"
+    ]
 }

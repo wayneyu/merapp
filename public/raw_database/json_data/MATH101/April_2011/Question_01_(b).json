@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH101", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the derivative $\\displaystyle f'(t)$, if\n\n$f(t) = \\int_{t^4}^2 \\sqrt{1+x^3} dx$", 
+    "year": 2011, 
+    "sols": [
+        "Using hint 2 provided, we may immediatley rewrite $f(t)$ as\n\n\\[f(t)=-\\int_2^{t^4} \\sqrt{1+x^3}dx\\]\n\nWe would like to use hint 1, but this only works if the upper limit of\nintegration is $t$, which in this case is not true. So define for the\ntime being\n\n\\[g(u) = -\\int_2^u \\sqrt{1 + x^3}dx\\].\n\nFrom hint 1, we see immediately that $g'(u) = -\\sqrt{1 + u^3}$. We also\nsee that $f(t) = g(t^4)$. Using the chain rule we can then compute that\n\n\\[f'(t) = g'(t^4) \\frac{du}{dt} = -\\sqrt{1 + (t^{4})^3}(4t^3) = -4t^3\\sqrt{1 + t^{12}}\\]."
+    ], 
+    "hints": [
+        "Remember that the Fundamental Theorem of Calculus says that\n\n\\[\\frac{d}{dx}\\int_a^x f(t) dt = f(x)\\].", 
+        "Recall that\n\n: \\textbackslash{}int\\_a\\^{}b f(t)dt = -\\textbackslash{}int\\_b\\^{}a\nf(t)dt"
+    ]
+}

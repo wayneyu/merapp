@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH110", 
+    "statement": "Sketch the graph of the following function.\n\n$\\displaystyle f(x)=2\\cos(x-\\pi)$", 
+    "year": 2012, 
+    "sols": [
+        "The graph of $f(x) = \\cos x$ looks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1a_cosine_graph.jpg}\n\\caption{MER MATH110 December 2012 Question 1a cosine graph.jpg}\n\\end{figure}\n\nThe rules for shifting functions tell us that\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Multiplying the function by 2 increases its amplitude (stretch the\n  height of the graph) by 2,\n\\item\n  subtracting by $\\pi$ on the inside of the function shifts the graph\n  right by $\\pi$ units,\n\\end{itemize}\n\ngiving:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1a_shifting_illustration.jpg}\n\\caption{MER MATH110 December 2012 Question 1a shifting illustration.jpg}\n\\end{figure}", 
+        "If you've forgotten the rules used in the first solution (or never\nlearned them), you can also use test points. From this picture:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1a_cosine_graph.jpg}\n\\caption{MER MATH110 December 2012 Question 1a cosine graph.jpg}\n\\end{figure}\n\nyou have the following points, placed in a table of values:\n\n\\begin{longtable}[c]{@{}ll@{}}\nx-value & y-value\\\\\n\n0 & 1\\\\\n$\\pi/2$ & 0\\\\\n$\\pi$ & -1\\\\\n$3\\pi/2$ & 0\\\\\n\\end{longtable}\n\nPlugging these same x-values into $f(x) = 2\\cos (x - \\pi)$ gives:\n\n\\begin{longtable}[c]{@{}lll@{}}\nx-value & calculations & y-value\\\\\n\n0 & $2\\cos(0 - \\pi) = 2\\cos(-\\pi) = 2(-1)$ & -2\\\\\n$\\pi/2$ & $2\\cos(\\pi/2 - \\pi) = 2\\cos(-\\pi/2) = 2(0)$ & 0\\\\\n$\\pi$ & $2\\cos(\\pi - \\pi) = 2 \\cos(0) = 2(1)$ & 2\\\\\n$3\\pi/2$ & $2\\cos(3\\pi/2 - \\pi) = 2\\cos(\\pi/2) = 2(0)$ & 0\\\\\n\\end{longtable}\n\nDrawing a picture based on these points, it should be clear that the\ngraph has been shifted right by $\\pi$ and expanded vertically by 2.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_1a_shifted_cosine_graph.jpg}\n\\caption{MER MATH110 December 2012 Question 1a shifted cosine graph.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "What does a normal cosine graph look like? Look at what happens to some\ntest values like $x = 0$ or $x = \\pi$ if you plug them into the function\ngiven above instead of a normal cosine function."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_08_(a)", 
+    "course": "MATH105", 
+    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nThe Maclaurin series for \\emph{arctan x} is given by\n\n\\[\\arctan x = \\sum_{n=0}^\\infty (-1)^n \\frac{x^{2n+1}}{2n+1}\\] which has\nradius of convergence equal to 1. Use this fact to compute the exact\nvalue of the series below:\n\n\\[\\sum_{n=0}^\\infty \\frac{(-1)^n}{(2n+1)3^n}\\]\n\n\\emph{(Hint: Note that $3^n = (\\sqrt{3})^{2n}$).}", 
+    "year": 2012, 
+    "sols": [
+        "To evaluate $S = \\sum_{n=0}^{\\infty} \\frac{(-1)^n}{(2n+1) 3^n}$, we need\nto make it look more like\n$\\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$ for some x.\n\nBoth sums start with $n=0$, have $(-1)^n$, and have a $2n+1$ in the\ndenominator. Therefore, we need that $x^{2n+1} = \\frac{1}{3^n}$.\nFollowing the hint, we write $\\frac{1}{3^n} = \\frac{1}{(\\sqrt{3})^{2n}}$\nwhich we can make even more similar to $x^{2n+1}$ by writing it as\n$(\\frac{1}{\\sqrt{3}})^{2n}$.\n\nLet's write out the two sums again and see how close we are:\n\n$\\arctan x = \\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$ and we\nwish to evaluate\n$S = \\sum_{n=0}^{\\infty} (-1)^n \\frac{(1/\\sqrt{3})^{2n}}{2n+1}$.\n\nIf $x = 1/\\sqrt{3}$, the only difference between the two sums now is a\nfactor of $(1/\\sqrt{3})^1$, which doesn't depend on n. We can multiply S\nby $1/\\sqrt{3}$ (and put that factor in the sum) and also divide S by\nthat same factor (keeping it outside the sum):\n\n\\begin{align*}\nS &= \\frac{1}{1/\\sqrt{3}} \\sum_{n=0}^{\\infty} (-1)^n \\frac{(1/\\sqrt{3})^{2n+1}}{2n+1} \\\\\n&\\stackrel{\\text{recognize sum as} \\arctan(1/\\sqrt{3})}{=} \\sqrt{3} \\arctan (1/\\sqrt{3}) \\\\\n&= \\sqrt{3} \\frac{\\pi}{6}\n\\end{align*}"
+    ], 
+    "hints": [
+        "By a visual inspection, we see that the terms that don't match up to the\nexpression for $\\arctan(x)$ are the terms corresponding to $x^{2n+1}$\nand to $3^{-n} = (3^{-1})^n$ (moving the denominator up to the\nnumerator). Thus, we want to get these two terms to match. How can we\nrearrange these terms to achieve this goal?", 
+        "Utilize the hint given and note\n\n$3^{-n} = (3^{-1})^{n} = (\\sqrt{3}^{-1})^{2n} =  \\sqrt{3}\\sqrt{3}^{-1}(\\sqrt{3}^{-1})^{2n} = \\sqrt{3}(\\sqrt{3}^{-1})^{2n+1}$"
+    ]
+}

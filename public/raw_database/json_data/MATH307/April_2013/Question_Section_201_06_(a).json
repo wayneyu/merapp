@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_Section_201_06_(a)", 
+    "course": "MATH307", 
+    "statement": "Consider the same graph as in the\n\\href{Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)}{previous\nquestion}, now interpreted as an internet where the vertices represent\nweb pages and the arrows represent links.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q6.png}\n\\end{description}\n\n\\textbf{(a)} Write down the stochastic matrix associated with the\nPageRank algorithm with no damping. Explain what you are doing with\nvertex 6.", 
+    "year": 2013, 
+    "sols": [
+        "When $\\alpha$ = 0,\n\nThe stochastic matrix P is the sum of the outgoing links and the\ndangling links:\n\n$P = \\begin{bmatrix}\n0 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 1/2 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 0 & 1/2 & 0 & 0 & 0 & 1/6\n\\\\ 1/2 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 0 & 1/2 & 0 & 1 & 0 & 1/6\n\\\\ 0 & 0 & 1 & 0 & 1 & 1/6\n\\end{bmatrix}$\n\nVertex 6 has no links leaving the site, so it is a dangling node. When\nthe web surfer reaches a dangling node, we assume that any page on the\ninternet can be chosen at random with equal probability. This is why all\nthe entries in column 6 of matrix \\emph{P} contain the value 1/6."
+    ], 
+    "hints": [
+        "Suppose when on page i, that one can move to all pages i points to with\nequal probability. You are looking for the transition matrix, where\ncomponent i of the state vector on which the matrix acts represents the\nprobability of being at webpage i."
+    ]
+}

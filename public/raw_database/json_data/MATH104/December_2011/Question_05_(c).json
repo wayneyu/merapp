@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH104", 
+    "statement": "Use elasticity to estimate the percentage change in price from \\$2\nrequired to result in a 5\\% increase in demand.", 
+    "year": 2011, 
+    "sols": [
+        "The elasticity approximates the percentage change in demand over the\npercentage increase in price.\n\nIf $x$ denotes the percent change in price, at p=2\\$, for a 5\\% increase\nin demand then we need to find $x$ so that $\\epsilon = 5/x$. Thus, using\nthe elasticity calculated in the previous question,\n\n$\\begin{array}{ccl}\nx &=& 5/\\epsilon  \\\\\n&=& 5/(-1/3) \\\\\n&=& 5(-3) \\\\\n&=& -15 \\% \\end{array}$.\n\nThis is a negative number, as we'd expect (to increase demand, the price\nmust decrease).\n\nThe price should be decreased by about 15\\% to yield a 5\\% increase in\ndemand."
+    ], 
+    "hints": [
+        "One way to estimate elasticity is to calculate the fraction of\npercentage change in demand over the percentage change in price."
+    ]
+}

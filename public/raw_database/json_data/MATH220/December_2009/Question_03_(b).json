@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH220", 
+    "statement": "Let $f:A\\to{}B$ be a function and let $C\\subseteq{}A$.\n\nNow let $E\\subseteq{}A.$ Prove that if f is injective then\n$f(C\\cap{}E)=f(C)\\cap{}f(E)$.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

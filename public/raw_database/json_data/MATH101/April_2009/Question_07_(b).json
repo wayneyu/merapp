@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_07_(b)", 
+    "course": "MATH101", 
+    "statement": "An open metal tank has two ends which are isosceles triangles with\nvertex at the bottom, two sides which are rectangular, and an open top.\nThe tank is 1 metre wide, 2 metres deep, 10 metres long and full of\nwater (\\emph{density = 1000 kg/m\\textsuperscript{3}}).\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n(b) Express the work required to pump the water out of the tank, if it\nis pumped out over the top edge, as an integral (\\emph{Do not evaluate\nthe integral.})\n\\end{description}", 
+    "year": 2009, 
+    "sols": [
+        "A picture is included at the bottom of the page. Let $x_{i}^{*}$ be a\nsample point.\n\nFirst, we use similar triangles as in the diagram to see that\n\n$\\displaystyle\n\\frac{1}{2} = \\frac{y}{2-x_{i}^{*}}$\n\nIsolating yields that\n\n$\\displaystyle\ny = 1 - \\frac{x_{i}^{*}}{2}$\n\nNow we use hint 3 and write down the necessary formulas. For volume of\nthe \\emph{i}th piece, we have\n\n$V_{i} = y\\Delta x \\cdot 10 = 10( 1 - \\frac{x_{i}^{*}}{2})\\Delta x = (10 - 5x_{i}^{*})\\Delta x$\n\nFor the mass of the \\emph{i}th piece, where $density = \\rho =1000$, we\nhave\n\n$m_{i} = V\\cdot \\rho = (10 - 5x_{i}^{*})\\Delta x (1000) = 1000(10 - 5x_{i}^{*})\\Delta x$\n\nFor the force, where $g = 9.8$, we have\n\n$F_{i} = m_{i}a = 9.8(1000(10 - 5x_{i}^{*})\\Delta x) = 9800(10 - 5x_{i}^{*})\\Delta x$\n\nFor the work on the \\emph{i}th piece, we have\n\n$W_{i} = F_{i} \\cdot d =  9800(10 - 5x_{i}^{*})\\Delta x(x_{i}^{*}) = 9800x_{i}^{*}(10 - 5x_{i}^{*})\\Delta x$\n\nand so the total work done is\n\n$W = \\lim_{n \\to \\infty}\\sum_{i=1}^{n}W_{i} = \\int_{0}^{2}9800x(10-5x)\\,dx$\n\ncompleting the question.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2009Q7b.jpeg}\n\\caption{MATH101Apr2009Q7b.jpeg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Try drawing a picture first (in the solution, we will set the origin to\nbe the top most point).", 
+        "Use similar triangles to find the width \\emph{y} of a small rectangular\nprism at height $x_{i}^{*}$.", 
+        "The following formulas will probably be useful\n\n\\texttt{Volume~=~length~x~width~x~height}\n\n\\texttt{Mass~=~volume~x~density}\n\n\\texttt{Force~=~acceleration~x~mass~=~gravity~x~mass~=~9.8~x~mass}\n\n\\texttt{Work~=~force~x~displacement}"
+    ]
+}

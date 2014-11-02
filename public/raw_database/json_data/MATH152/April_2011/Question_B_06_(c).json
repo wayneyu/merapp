@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_06_(c)", 
+    "course": "MATH152", 
+    "statement": "Consider the linear systems described below. In cases (a)-(d), write a\n\\emph{single}, possible reduced row echelon form of the augmented matrix\nof the system.\n\nThree equations in three unknowns with no solution.", 
+    "year": 2011, 
+    "sols": [
+        "We have 3 equations in 3 unknowns so we have a $3\\times{3}$ matrix. In\norder for a solution to not be found we require an impossible statement\nto occur. One of the most common ways is to have a line which claims\n$0=a$ for some non-zero number $a$. One such augmented matrix could be\n\n\\[\\left[\\begin{array}{ccc|c}\n1  &  0  &  0  &2\\\\\n0  &  1  &  0  &3\\\\\n0  &  0  &  0  &7\n\\end{array}\\right].\\]\n\nNotice in this example, if the solution vector \\textbf{x} has components\n$x_1$, $x_2$, and $x_3$ then we are trying to claim that $0x_3=7$ which\nis never true. Therefore this system has no solution."
+    ], 
+    "hints": [
+        "Recall that no solution occurs if we have something contradictory or\nfalse occurring. Often it is something in the form $0z=a$ for some\nvariable $z$ and non-zero number $a$."
+    ]
+}

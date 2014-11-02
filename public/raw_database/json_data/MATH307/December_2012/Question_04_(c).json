@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(c)", 
+    "course": "MATH307", 
+    "statement": "Consider the Fourier series\n\n\\[t^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\]\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(c)} Compute the coefficient \\emph{c\\textsubscript{0}}.", 
+    "year": 2012, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_04_(b)}{part\n(b)} we have the formula $c_n=\\int_{0}^{1}f(t)e^{-2\\pi int}\\,dt.$\nPlugging in \\emph{n = 0} we calculate\n\n\\begin{align*}\nc_0 &= \\int_{0}^{1}f(t)e^{-2\\pi i(0)t}\\,dt \\\\\n&= \\int_{0}^{1}(t^2-t)(1)dt \\\\\n&=\\frac{1}{3}-\\frac{1}{2}=-\\frac{1}{6}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Simply plug in \\emph{n = 0} in your formula for\n\\emph{c\\textsubscript{n}} from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_04_(b)}{part\n(b)}."
+    ]
+}

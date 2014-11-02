@@ -1,8 +1,15 @@
 {
     "term": "December", 
+    "question": "Question_02_(c)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nSuppose that $\\displaystyle f(1) = -1$, $\\displaystyle g(-1) = 2$,\n$\\displaystyle f'(1) = -2$, and $\\displaystyle g'(-1) = 3$. Find\n$\\displaystyle h'(-1)$, where\n\n\\[\\displaystyle \nh(x) = f(x^2)g(x)\\]", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "We first apply the product rule to differentiate $h(x)$:\n\n\\begin{align*}\nh'(x) &= (f(x^2))' \\cdot g(x) + f(x^2) \\cdot g'(x)\n\\\\ &= {\\color{OliveGreen} f'(x^2) \\cdot\\frac{d}{dx}(x^2)} \\cdot g(x) + f(x^2) \\cdot g'(x)\n\\\\ &= f'(x^2) \\cdot 2x \\cdot g(x) + f(x^2) \\cdot g'(x)\n\\end{align*}\n\nNow we evaluate $h'(-1)$:\n\n\\begin{align*}\nh'(-1) &= f'((-1)^2) \\cdot 2(-1) \\cdot g(-1) + f((-1)^2) \\cdot g'(-1)\n\\\\ &= -2 \\cdot f'(1) \\cdot g(-1) + f(1) \\cdot g'(-1)\n\\\\ &= -2 \\cdot (-2) \\cdot 2 + (-1) \\cdot 3\n\\\\ &= {\\color{blue} 5}\\end{align*}"
+    ], 
+    "hints": [
+        "Try finding $\\displaystyle h'(x)$ from the definition of\n$\\displaystyle h(x)$.", 
+        "Apply the product rule to find $\\displaystyle h'(x)$.", 
+        "Be careful!\\\\$\\displaystyle (f(x^2))' {\\color{red} \\neq f'(x^2)}$ ~~~~(use the \\emph{chain rule}!)"
+    ]
 }

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe number $\\displaystyle 2^{39}-1$ is divisible by 7.", 
+    "year": 2012, 
+    "sols": [
+        "The answer is \\textbf{true}\n\nFrom Fermat's Little Theorem, we have\n\n$\\displaystyle 2^{6} \\equiv 1\\mod{7}$\n\nand hence\n\n$\\displaystyle 2^{39} \\equiv (2^{6})^{6} \\cdot 2^{3} \\equiv (1)^{6} \\cdot 8 \\equiv 8 \\equiv 1 \\mod{7}$\n\nThus 7 divides $\\displaystyle 2^{39}-1$."
+    ], 
+    "hints": [
+        "Use Fermat's Little Theorem."
+    ]
+}

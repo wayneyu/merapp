@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03", 
+    "course": "MATH221", 
+    "statement": "There are two linear transformations of $R^2$ that map the square with\nvertices at $(0,0), (1,0), (0,1), (1,1)$ to the square with vertices at\n$(0,0), (1,1), (-1,1), (0,2)$. Call them $T_1$ and $T_2$. Determine the\nmatrices of $T_1$ and $T_2$.", 
+    "year": 2013, 
+    "sols": [
+        "As that matrices map the square to the square, it will map the corners\nto the corners, thus we will see all possible ways to map the four\ncorners to the four new corners.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  First, linear transforms must bring the vector $(0,0)$ to the vector\n  $(0,0)$. So one of the corners is taken care of already.\n\\item\n  Next, note that there is a relation between the corners of the\n  original square, that is $(1,0)+(0,1) = (1,1)$. As linear\n  transformation preserve sums, \\emph{T(a+b) = T(a)+T(b)}, we need to\n  have the same relation in the target corners, which we do\n  $(1,1) + (-1,1) = (0,2)$. Hence any linear transform between the two\n  squares must send \\emph{(1,1)} to \\emph{(0,2)}.\n\\item\n  Thus, we are left with sending $(0,1),(1,0)$ to $(1,1),(-1,1)$, and\n  there are two ways to do so. As $(0,1),(1,0)$ forms a basis of the\n  matrix, knowing where theses two vectors go also pins down the two\n  matrices uniquely. We simply need to put the result in the columns of\n  the transformation matrix:\n\\end{itemize}\n\n$\\left[ \\begin{array}{cc}\n1 & -1  \\\\ \n1 & 1\n\\end{array} \\right]$ and $\\left[ \\begin{array}{cc}\n-1 & 1  \\\\ \n1 & 1\n\\end{array} \\right]$"
+    ], 
+    "hints": [
+        "As the matrices must map the square edges to the square edges, we need\nto figure out where the four corners are mapped to. Use the fact that\n\\emph{T\\textsubscript{1}} and \\emph{T\\textsubscript{2}} are linear,\nwhich restricts your options."
+    ]
+}

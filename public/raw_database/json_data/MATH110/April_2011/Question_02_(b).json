@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Evaluate the following limit, if it exists.}\n\n\\[\\displaystyle\n\\lim_{x \\to 0^+} \\frac{\\ln(\\sin x)}{\\ln(\\cos x)}\\]", 
+    "year": 2011, 
+    "sols": [
+        "We can evaluate this limit directly. We start by evaluating what happens\nto $\\sin x$ and $\\cos x$ as $x \\to 0^+$. Because this is a directional\nlimit from the right, we will have $\\sin x \\to 0^+$ (on a sine graph, as\nyou approach \\emph{x = 0} from the right, the \\emph{y} value is\napproaching zero \\emph{from above}, hence approaching $0^+$) and\n$\\cos x \\to 1^-$ (similarly, approaching \\emph{x = 0} from the right on\na cosine graph means approaching \\emph{y = 1} from below, hence $1^-$).\nReplacing $\\sin x$ with \\emph{y} and $\\cos x$ with \\emph{z}, we can thus\nrewrite the limit as a fraction of the limits:\n\n\\[\\lim_{x \\to 0^+} \\frac{\\ln(\\sin x)}{\\ln(\\cos x)} = \\frac{\\lim_{y \\to 0^+} \\ln(y)}{\\lim_{z \\to 1^-} \\ln(z)}\\]\n\nAgain, the fact that this is a directional limit means that for the\nfirst limit, as $y \\to 0^+$, $\\ln(y) \\to -\\infty$ and for the second\nlimit, as $z \\to 1^-$, $\\ln(z) \\to 0^-$. So we have:\n\n\\[\\frac{\\lim_{y \\to 0^+} \\ln(y)}{\\lim_{z \\to 1^-} \\ln(z)} = \\frac{-\\infty}{0^-}\\]\n\nRecall that when a function goes to zero from the left in the\ndenominator, this means that we eventually divide by a very small\nnegative value (for example, -1/100000). Using fraction rules, this very\nsmall value in the denominator is the same as multiplying by a very\nlarge negative value (in my example, -100000) in the numerator. Thus\ngoing to zero in the denominator corresponds to multiplying the\nnumerator by a very large number. Since our numerator is already going\nto negative infinity, the fact that we have $0^-$ in the denominator\nwill make the value of the limit greater, and turn it back from negative\nto positive. Thus the value of this limit is $+\\infty$,\n\n\\[\\displaystyle\n\\lim_{x \\to 0^+} \\frac{\\ln(\\sin x)}{\\ln(\\cos x)} = +\\infty\\]"
+    ], 
+    "hints": [
+        "Try evaluating the limit directly. Pay attention to the directional\nlimit - the fact that this is a right hand limit will impact the sign of\nyour answer."
+    ]
+}

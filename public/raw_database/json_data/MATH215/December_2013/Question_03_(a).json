@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH215", 
+    "statement": "Suppose the displacement x(t) of a damped mass-spring system subject to\nsinusoidal forcing of amplitude $F_0$ is modelled by:\n\n\\[x'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1.\\]\n\n(a) Find and sketch the solution x(t) when $F_0 = 0$ (no forcing).", 
+    "year": 2013, 
+    "sols": [
+        "We have a homogeneous ODE $\\displaystyle x'' + 2x' + 5x = 0$ with\n\\emph{x(0) = 0, x'(0) = 1}.\n\nThe roots of the corresponding characteristic polynomial\n$\\lambda^2 + 2 \\lambda + 5 = 0$ are\n$\\lambda = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(5)}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.$\n\nThe roots are complex, and we have a general solution of\n\n\\[\\displaystyle x(t) = C_1 e^{-t} \\sin(2t) + C_2 e^{-t} \\cos(2t)\\]\n\nWe can use the initial conditions to find the constants.\n$x(0) = 0 + C_2 = 0$ implies $C_2 = 0$. Next, use the fact that the\nsecond term vanishes to calculate the first derivative of the solution.\n\n\\[\\displaystyle x'(t) = - C_1 e^{-t} \\sin(2t) + 2 C_1 e^{-t} \\cos(2t) = 2 C_1\\]\nSince \\emph{x'(0) = 1} this implies $C_1 = 1/2$. The final solution is\ntherefore\n\n\\[x(t) = \\frac{1}{2} e^{-t} \\sin(2t).\\]\n\nA plot of the solution is given below. Note that the solution is bounded\nbetween $x(t) = \\pm \\frac{1}{2} e^{-t}$ so there is an envelope. The\nsolution must fit between the upper and lower envelope functions. At\n$t=0$, $x=0$, and the solution is increasing at $t=0$ (the derivative is\npositive).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Mersolq3a.jpg}\n\\caption{Observe the solution lies between the two envelope functions.}\n\\end{figure}"
+    ], 
+    "hints": [
+        "If $F_0 = 0$, the equation is homogeneous. Can you find the homogeneous\nsolution?"
+    ]
+}

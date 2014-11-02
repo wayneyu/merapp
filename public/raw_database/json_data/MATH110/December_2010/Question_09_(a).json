@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nState the domain of $\\displaystyle f$.", 
+    "year": 2010, 
+    "sols": [
+        "The domain of a function is the set of all values where the function is\ndefined. The function\n\n\\[f(x) = \\frac{x+1}{x-1}\\]\n\nis defined everywhere except where its denominator is equal to zero.\nSetting the denominator equal to zero and solving...\n\n\\[\\displaystyle x - 1 = 0\\]\n\ngives that the denominator is zero when $x = 1$. Thus $f(x)$ is defined\neverywhere except $x = 1$. In interval notation this is written\n$(-\\infty, 1)\\cup(1, \\infty)$, or, equivalently\n\n\\[(-\\infty,\\infty) \\backslash \\{1\\}\\]"
+    ], 
+    "hints": [
+        "A function is undefined if it has a zero in the denominator."
+    ]
+}

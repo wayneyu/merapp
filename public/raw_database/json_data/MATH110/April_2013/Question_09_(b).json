@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_09_(b)", 
+    "course": "MATH110", 
+    "statement": "Is your estimate in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_9_(a)}{(a)}\ngreater than, less than, or equal to the actual value of\n\\emph{e\\textsuperscript{0.1}}? Justify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "The function $\\displaystyle f(x) = e^x$ is concave up, so all tangent\nlines, including our linear approximation, will lie below the graph.\n\nThe purple graph is \\emph{f(x)}, the blue line is the linear\napproximation \\emph{L(x) = x+1} from\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_09_(a)}{part\n(a)}. Thus our linear approximation is an underestimate.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110_april2013_question9b_solution.jpg}\n\\end{description}"
+    ], 
+    "hints": [
+        "A linear approximation is the tangent line to the function at a point\n\\emph{a}. Is the tangent line in this example above or below the graph\nof $f(x) = e^x$?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH220", 
+    "statement": "For any natural number \\emph{n}, let \\emph{P}(\\emph{n}) be the statement\n\"\\emph{n} is divisible by 4\", and let \\emph{Q}(\\emph{n}) be the\nstatement \"\\emph{n}\\textsuperscript{2}+1 is divisible by 3\".\n\nConsider the statement\n\n\\[\\forall\\, n \\in N, P(n) \\Rightarrow Q(n)\\]\n\nIs this statement true or false? Prove your answer.", 
+    "year": 2011, 
+    "sols": [
+        "We note that \\emph{P}(4) is the statement ``4 is divisible by 4'', which\nis true. We also note that \\emph{Q}(4) is the statement ``17 is\ndivisible by 3'' which is false. As such, the implication\n\n\\[\\displaystyle\nP(4) \\Rightarrow Q(4)\\]\n\ndoes not hold, and so the statement\n\n\\[\\forall\\, n \\in \\mathbb{N}, P(n) \\Rightarrow Q(n)\\]\n\nis false."
+    ], 
+    "hints": [
+        "You need to first determine whether the statement is true or false. How\nmight you determine this? Is there some way to check specific cases?"
+    ]
+}

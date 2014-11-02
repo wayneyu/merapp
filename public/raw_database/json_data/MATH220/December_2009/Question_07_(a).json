@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_07_(a)", 
+    "course": "MATH220", 
+    "statement": "Decide whether the following sequences converge or diverge. Prove your\nanswers using the definition of convergence.\n\n\\[a_n=\\cos\\left(\\frac{n\\pi}{3}\\right).\\]", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_05_(c)", 
+    "course": "MATH220", 
+    "statement": "Explain why\n\n\\[\\left|\\mathbb{R}-\\{-2\\}\\right|=\\left|\\mathbb{R}-\\{1\\}\\right|.\\]", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

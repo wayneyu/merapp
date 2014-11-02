@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH307", 
+    "statement": "If \\emph{x} solves the equation $Ax=\\begin{bmatrix}\n1\\\\\n0\\\\\n1\n\\end{bmatrix}$, find $\\displaystyle Ux$", 
+    "year": 2005, 
+    "sols": [
+        "$Ax=\\begin{bmatrix}\n1\\\\\n0\\\\\n1\n\\end{bmatrix}$\n\nFrom a)\n\n$LUx=Ax=\\begin{bmatrix}\n1\\\\\n0\\\\\n1\n\\end{bmatrix}$\n\nThus, $Ux=L^{-1}\\begin{bmatrix}\n1\\\\\n0\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1 &0 &0 \\\\\n-2 &1 &0 \\\\\n-2 &1 &1\n\\end{bmatrix}\\begin{bmatrix}\n1\\\\\n0\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n-2\\\\\n-1\n\\end{bmatrix}$"
+    ], 
+    "hints": [
+        "Recall from part (a) that\n\n\\[A = LU = \\begin{bmatrix}\n1 & 0& 0\\\\ \n2& 1& 0\\\\ \n0& -1& 1\n\\end{bmatrix} \\begin{bmatrix}\n1 & 1& 1& 0\\\\ \n0& 1& 2& 1\\\\ \n0& 0& 3& 2\n\\end{bmatrix}\\]"
+    ]
+}

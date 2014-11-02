@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH110", 
+    "statement": "Evaluate the following limit.\n\n\\[\\lim_{x \\to -\\infty} \\frac{5x^3 - 2x^2 + 1}{6x^3 + 7}\\]", 
+    "year": 2011, 
+    "sols": [
+        "When considering limits at infinity of rational functions, only the\ndominant term matters:\n\n\\begin{align*}\n\\lim_{x \\to -\\infty} \\frac{5x^3-2x^2+1}{6x^3+7} &= \\lim_{x \\to -\\infty} \\frac{x^3 \\left( 5 - \\frac{2}{x} + \\frac{1}{x^3} \\right)}{x^3 \\left( 6 + \\frac{7}{x^3} \\right)} \\\\\n&= \\lim_{x \\to -\\infty} \\frac{5 - \\frac{2}{x} + \\frac{1}{x^3}}{6 + \\frac{7}{x^3}} \\\\\n&= \\frac{5}{6}\n\\end{align*}\n\nHere we factored out the leading term (the $x^3$) on both the top and\nbottom. That allowed us to cancel it and then evaluate the rest of the\nlimit. The $1/x^n$ terms go to zero as $x \\to \\infty$."
+    ], 
+    "hints": [
+        "What can you do when dealing with a limit at infinity of a rational\nfunction?", 
+        "Only the leading term of a polynomial matters when considering what\nhappens at infinity."
+    ]
+}

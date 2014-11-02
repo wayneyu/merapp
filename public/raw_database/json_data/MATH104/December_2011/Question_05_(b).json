@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH104", 
+    "statement": "In order to increase the revenue, should the price be increased or\nlowered from \\$2?", 
+    "year": 2011, 
+    "sols": [
+        "As $\\epsilon = -1/3 > -1$, the product is price inelastic and to\nincrease revenue, price should be increased."
+    ], 
+    "hints": [
+        "Based on the answer to part (a), is the product price elastic or price\ninelastic? What does that mean in terms of raising or lowering the\nprice?"
+    ]
+}

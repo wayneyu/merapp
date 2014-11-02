@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_A_03", 
+    "course": "MATH102", 
+    "statement": "Consider the differential equation and initial condition\n\n$\\frac{dy}{dt} = 2 - y^2, y(0) = 1$\n\nUse Euler's method with one step of size $\\Delta t = 0.1$ to approximate\nthe value of the solution at time $t = 0.1$\n\n(a) $y(0.1) = 2$\n\n(b) $y(0.1) = 2.1$\n\n(c) $y(0.1) = 2.2$\n\n(d) $y(0.1) = 1.2$\n\n(e) $y(0.1) = 1.1$", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

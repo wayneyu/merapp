@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_A_20", 
+    "course": "MATH152", 
+    "statement": "Write $-1+i$ in polar form $re^{i\\theta}$.", 
+    "year": 2011, 
+    "sols": [
+        "The absolute value (or modulus) of a complex number $a+bi$ is\n\n\\[r = \\sqrt{a^2+b^2}=\\sqrt{(-1)^2+1^2}=\\sqrt 2\\] and the argument,\n$\\theta$, is the angle between the right side of the $x$-axis and the\nposition of the complex number on the plane. In this case, the argument\nis $3\\pi /4$. To see that, you can either just visually see that the\npoint (-1,1) is clearly on the diagonal of the second quadrant of the\nplane, or using trigonometry have\n\n\\[\\cos(\\theta)=\\frac{a}{r}=\\frac{-1}{\\sqrt{2}} \\quad\\text{and}\\quad \\sin(\\theta)=\\frac{b}{r}=\\frac{1}{\\sqrt{2}}\\]\nand from there notice that the corresponding angle is $3\\pi /4$ (or in\nreal life compute the angle using a calculator since you only know a\nvery few values of sine and cosine).\n\nSo this allows us to write our complex number in polar form as\n\n\\[-1+i=re^{\\theta i}=\\sqrt 2 e^{3\\pi i/4}\\]"
+    ], 
+    "hints": [
+        "Representing a complex number in the plane; can you geometrically\ndescribe what are the values $r$ and $\\theta$?", 
+        "To follow on the previous hint:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $r$ is the modulus (or absolute value) of a complex number and\n  represents its distance to the origin.\n\\item\n  $\\theta$ is the argument of a complex number and represents the angle\n  between the line joining the point to the origin and the positive real\n  axis.\n\\end{itemize}\n\nSee\n\\href{http://en.wikipedia.org/wiki/Complex_number\\#Absolute_value_and_argument}{the\nWikipedia entry for absolute value and argument of a complex number}."
+    ]
+}

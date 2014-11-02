@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH102", 
+    "statement": "Use the definition of the derivative (no differentiation rules) to find\n$\\displaystyle f'(2)$, where $\\displaystyle f(x) = \\frac1x$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

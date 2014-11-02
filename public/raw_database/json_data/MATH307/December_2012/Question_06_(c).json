@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(c)", 
+    "course": "MATH307", 
+    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU = & \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma = & \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV = & \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(c)} What is the matrix norm $\\|A\\|$? Give a reason.", 
+    "year": 2012, 
+    "sols": [
+        "To begin with, recall that unitary matrices don't change the norm of a\nvector, in particular $\\|Ux\\| = \\|x\\|$ and $\\|V^*x\\| = \\|x\\|$ for all\nvectors \\emph{x}. Using the definition of the matrix norm of \\emph{A} we\nfind that\n\n\\begin{align*}\n\\|A\\| &= \\max_{\\|x\\| = 1} \\|Ax\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|U(\\Sigma V^*x)\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|\\Sigma V^*x\\| \\\\\n&= \\max_{\\|y\\| = 1} \\|\\Sigma y\\| \\\\\n&= \\|\\Sigma\\|\n\\end{align*} where $\\displaystyle y = V^* x$ satisfies\n$\\|y\\| = \\|V^* x\\| = \\|x\\| = 1$. In other words, the matrices\n$\\displaystyle A$ and $\\Sigma$ have the same norm. The norm of the\ndiagonal matrix $\\Sigma$ is simply the largest absolute value of the its\ndiagonal entries. Therefore $\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|$."
+    ], 
+    "hints": [
+        "Use the fact that \\emph{U} and \\emph{V} are unitary and hence do not\naffect the norm of a vector."
+    ]
+}

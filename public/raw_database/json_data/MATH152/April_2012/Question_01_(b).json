@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH152", 
+    "statement": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nDetermine L in equation form.", 
+    "year": 2012, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)}\nwe saw that the equations for the planes $S_1$ and $S_2$ are\n\n\\begin{align*}\n2x_1+x_2-x_3&=1\\\\\nx_1+x_2&=1.\n\\end{align*}\n\nThis precisely the equation form of the line since any $x_1,x_2$ and\n$x_3$ that satisfy this will be on both planes and therefore be on the\nline of intersection."
+    ], 
+    "hints": [
+        "The line must satisfy the equations for each plane. How do we indicate\nthat several linear equations must be true at once?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH220", 
+    "statement": "\\textbf{Use the definition} of convergence for sequences, prove that\n\n\\[\\lim_{n\u00c2\u00a0\\rightarrow \\infty} \\frac{1-2\\cos(n)}{n} = 0.\\]", 
+    "year": 2011, 
+    "sols": [
+        "Here, the limit being 0 means that we simply need to show that given any\n$\\epsilon >\u00c2\u00a00$ there exists a number $N_\\epsilon$ such that\n\n\\[\\left| \\frac{1-2\\cos(n)}{n} \\right| < \\epsilon\\] for any value of $n$\nlarger than $N_\\epsilon$.\n\nSince we have that\n\n\\[-1 \\leq \\cos(n) \\leq 1\\] we can multiply everywhere by -2 and obtain\nthat\n\n\\[2 \\geq -2\\cos(n) \\geq -2\\] and add 1 everywhere to obtain\n\n\\[3 \\geq 1-2\\cos(n) \\geq -1\\] which now allows us to conclude about the\nsize of $1-2\\cos(n)$ in absolute value:\n\n\\[| 1-2 \\cos (n) |\u00c2\u00a0\\leq 3\\]\n\nSo we can conclude that\n\n\\begin{align*}\n\\left| \\frac{1-2\\cos(n)}{n} \\right| &= \\frac{|1-2\\cos(n)|}{n}\\\\\n&\\leq \\frac{3}{n}\\\\\n&< \\epsilon\n\\end{align*}\n\nfor any value of $n$ that is larger than $N_\\epsilon = 3/\\epsilon$; this\nconcludes our proof."
+    ], 
+    "hints": [
+        "As often with trigonometric function, make good use of the fact that\n\n\\[-1 \\leq \\cos(x) \\leq 1\\] for any value of \\emph{x}."
+    ]
+}

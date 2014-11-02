@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\]\n\nwhere $\\lambda$ is a positive constant, \\emph{t} \u2265 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind all solutions \\emph{y} satisfying d\\emph{y}/d\\emph{t}=0.", 
+    "year": 2012, 
+    "sols": [
+        "Following the instructions of the second hint, if we set \\emph{dy/dt}\nequal to zero and solve, we get:\n\n\\[0 = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right)\\]\n\nThis expression will be zero if $y^2 - k^2 = 0$, or alternatively,\n$y^2 = k^2$. This yields the two constant solutions of \\emph{y} = +\n\\emph{k} and \\emph{y} = -\\emph{k}."
+    ], 
+    "hints": [
+        "Solutions \\emph{y} that satisfy d\\emph{y}/d\\emph{t} = 0 are also called\n\\emph{steady state} or \\emph{equilibrium}.", 
+        "Simply set the left hand side d\\emph{y}/d\\emph{t} to zero and solve for\n\\emph{y}. How many constant solutions do you find?"
+    ]
+}

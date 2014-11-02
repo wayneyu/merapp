@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH220", 
+    "statement": "Define what it means for two sets \\emph{A} and \\emph{B} to have the same\ncardinality.", 
+    "year": 2005, 
+    "sols": [
+        "Two sets \\emph{A} and \\emph{B} are said to have the same cardinality if\nthere exists a bijection from one set to the other.\n\nMore precisely, that means there must exist at least one function $f$:\n\\emph{A} \u2192 \\emph{B} such that the function is injective and surjective;\nthat is, for each element \\emph{a} of the set \\emph{A} there exists a\nunique element \\emph{b} in the set \\emph{B} such that $f(a)$ =\n\\emph{b} (that condition is the injectivity) AND for each element\n\\emph{b} of the \\emph{B} there exists a unique element \\emph{a} in the\nset \\emph{A} such that $f(a)$ = \\emph{b} (and this is the condition\nfor surjectivity)."
+    ], 
+    "hints": [
+        "An example is \\textbf{not} a definition. But it sure helps to have some\nexamples and counter-examples to understand what you are trying to\ndefine."
+    ]
+}

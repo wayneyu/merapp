@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Given a curve, its \\textbf{curvature} K is a measure of how much\nit deviates from a straight line. It can be computed using the following\nformula:}\n\n\\[K = \\frac{y''}{\\left(1+(y')^2\\right)^{3/2}}\\]\n\n\\emph{In this question you will calculate the curvature of the curve\nx\\textsuperscript{4} + y\\textsuperscript{4} = 2 at a certain point.}\n\nUse your answer from part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_4_(a)}{(a)}\nto calculate $\\displaystyle y''$.", 
+    "year": 2011, 
+    "sols": [
+        "To find $y''$ we simply need to differentiate the expression\n$y' = -x^3/y^3$ from part (a). Using implicit differentiation and the\nquotient rule, we have:\n\n\\begin{align*}\ny'' &= \\frac{-3x^2(y^3) - (-x^3)3y^2y'}{(y^3)^2} \\\\\n&= \\frac{3x^2y^2(-y + xy')}{y^6} \\\\\n&= \\frac{3x^2(-y + x y')}{y^4} \\\\\n\\end{align*}"
+    ], 
+    "hints": [
+        "Again, use implicit differentiation. You will need to use the quotient\nrule as well."
+    ]
+}

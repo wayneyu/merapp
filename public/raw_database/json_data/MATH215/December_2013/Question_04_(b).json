@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH215", 
+    "statement": "Let $Y(s) = \\mathcal{L}[y]$ be the Laplace transform of the solution\n$y(t)$ to the following initial value problem:\n\n\\[\\begin{cases} y'' - 2y' + y = g(t), \\\\ y(0) = 0, y'(0) = 1 \\end{cases}\\]\n\nwhere $g(t)$ is the function defined in\n\\href{Science:Math Exam Resources/Courses/MATH215/December 2013/Question 04 (a)}{(a)}.\nDetermine $Y(s)$.", 
+    "year": 2013, 
+    "sols": [
+        "We take the Laplace transform of the equation:\n\n\\[\\mathcal{L}(y'' - 2y' + y) = \\mathcal{L}(g(t))\\]\n\n\\[\\underbrace{s^2 Y(s) - s y(0) - y'(0)}_{\\mathcal{L}(y'')} - 2 \\underbrace{(sY(s) - y(0))}_{\\mathcal{L}(y')} + \\underbrace{Y(s)}_{\\mathcal{L}(y)} = \\underbrace{\\frac{e^{-s}}{s-1}}_{\\mathcal{L}(g(t))}\\]\n\n\\[s^2 Y(s) - 0 - 1 - 2(s Y(s) - 0) + Y(s) = (s^2 - 2s + 1) Y(s) - 1 = \\frac{e^{-s}}{s-1}\\]\n\nSince $\\displaystyle s^2 - 2s + 1 = (s-1)^2$ we arrive at our final\nanswer\n\n\\[Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2}\\]"
+    ], 
+    "hints": [
+        "You'll need to take the Laplace transform of the entire equation, and\nthen solve for $Y(s)$. Pay attention to how derivatives transform.\nYou'll need to use your result in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(a)}{(a)}."
+    ]
+}

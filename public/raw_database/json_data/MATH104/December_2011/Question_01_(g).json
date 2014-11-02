@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(g)", 
+    "course": "MATH104", 
+    "statement": "Find the interval(s) on which\n\n\\[\\displaystyle f(x) = x^2 - \\ln(x)\\]\n\nis increasing.", 
+    "year": 2011, 
+    "sols": [
+        "The given function is increasing where its first derivative is positive.\nTaking the derivative yields\n\n\\[\\displaystyle f'(x) = 2x - 1/x\\]\n\nWe must now solve the inequality for \\emph{x} yields the interval where\n$f$ is increasing. We will only be interested in positive values of\n\\emph{x}, as negative values of \\emph{x} are not in the domain of the\ngiven function (because of the natural logarithm). Therefore,\n\n\\begin{align*}\n0 &< 2x - 1/x , \\quad x > 0\\\\\n1/x &< 2x \\\\\n1 & < 2x^2 \\\\\n\\frac{1}{2} &< x^2 \\\\\n\\end{align*} Therefore, we have\n\n\\[x > + \\frac{1}{\\sqrt{2}}\\]\n\nThe negative solution was ruled out because of the requirement that\n\\emph{x} be a positive number.\n\nThe interval on which $f$ is increasing is\n\n\\[(\\frac{1}{\\sqrt{2}}, \\infty)\\]"
+    ], 
+    "hints": [
+        "A function is increasing when its slope is positive."
+    ]
+}

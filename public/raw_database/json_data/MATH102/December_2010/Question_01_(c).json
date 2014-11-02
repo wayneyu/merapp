@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH102", 
+    "statement": "\\emph{For this short-answer question, only the answers (placed in the\nboxes) will be marked.}\n\nFind the derivative of\n\n\\[\\displaystyle\nf(x) = \\left( \\ln(x^2+1) \\right)^3\\]", 
+    "year": 2010, 
+    "sols": [
+        "We want to use the chain rule. So let the outer function\n\\emph{$f$}(\\emph{x}) = \\emph{x}\\textsuperscript{3} and the inner function\n\\emph{g}(\\emph{x}) = ln(\\emph{x}\\textsuperscript{2}+1). Then\n\n\\begin{align*}\n\\left[\\left(\\ln(x^2+1)\\right)^3\\right]' &= \\left[f(g(x))\\right]' \\\\\n&= f'(g(x)) g'(x) \\\\\n&= 3(g(x))^2 \\left[\\ln(x^2+1)\\right]' \\\\\n&= 3(\\ln(x^2+1))^2 \\left[\\ln(x^2+1)\\right]'\n\\end{align*}\n\nIn order to find the derivative of ln(\\emph{x}\\textsuperscript{2}+1) we\nuse the chain rule again. So let's set \\emph{h}(\\emph{x}) = ln(\\emph{x})\nand \\emph{k}(\\emph{x}) = \\emph{x}\\textsuperscript{2}+1. Then\n\n\\begin{align*}\n\\left[\\ln(x^2+1)\\right]' &= \\left[h(k(x))\\right]' \\\\\n&= h'(k(x)) k'(x) \\\\\n&= \\frac1{k(x)} 2x \\\\\n&= \\frac{2x}{x^2+1}\n\\end{align*}\n\nPutting these results together we get our final answer:\n\n\\[\\left[\\left(\\ln(x^2+1)\\right)^3\\right]' = 3(\\ln(x^2+1))^2 \\frac{2x}{x^2+1}\\]"
+    ], 
+    "hints": [
+        "You will need the chain rule, twice."
+    ]
+}

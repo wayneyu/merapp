@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH200", 
+    "statement": "Let \\emph{L} be the line which is parallel to the plane\n\n\\[\\displaystyle{}2x+y-z=5\\]\n\nand perpendicular to the line\n\n\\[x=3-t\\qquad{}y=1-2t\\qquad{}z=3t.\\]\n\nFind parametric equations for the line \\emph{L} if \\emph{L} passes\nthrough a point Q(a,b,c) where a\\textless{}0, b\\textgreater{}0,\nc\\textgreater{}0 and the distances from Q to the xy-plane, xz-plane, and\nthe yz-plane are 2, 3, and 4 respectively.", 
+    "year": 2012, 
+    "sols": [
+        "To find the line to the line $\\displaystyle L$, we must find\n$\\displaystyle a,b,c$ such that the point\n$\\displaystyle Q=\\begin{pmatrix}a\\\\b\\\\c \\end{pmatrix}$ has distance\n$\\displaystyle  2$ to the $\\displaystyle xy$-plane.\n\nThis means $\\displaystyle |c| = 2$. Since $\\displaystyle c>0$, we have\n$\\displaystyle  c=2$.\n\nThe distance from $\\displaystyle Q$ to the $\\displaystyle  xz$-plane is\n$\\displaystyle 3$, hence $\\displaystyle  |b|=3$. With\n$\\displaystyle b>0$, we have $\\displaystyle  b=3$.\n\nThe distance from $\\displaystyle Q$ to the $\\displaystyle  yz$-plane is\n$\\displaystyle 4$, hence $\\displaystyle  |a|=4$. With\n$\\displaystyle a<0$, we have $\\displaystyle  a=-4$.\n\nHence $\\displaystyle Q = \\begin{pmatrix} -4\\\\3\\\\2\\end{pmatrix}$ and\n$\\displaystyle L= \\begin{pmatrix} -4\\\\3\\\\2\\end{pmatrix} + t\\begin{pmatrix}1\\\\-5\\\\-3\\end{pmatrix}$."
+    ], 
+    "hints": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_01_(a)}{part\n(a)} we know that the direction vector of the line $\\displaystyle L$ is\n$\\displaystyle\\begin{pmatrix} 1\\\\-5\\\\-3\\end{pmatrix}$\n\n$\\displaystyle L = Q + t\\begin{pmatrix}1\\\\-5\\\\-3\\end{pmatrix} = \\begin{pmatrix}a\\\\b\\\\c\\end{pmatrix} + t\\begin{pmatrix}1\\\\-5\\\\-3\\end{pmatrix}$", 
+        "Recall that the distance of a point $\\displaystyle P=(p_1,p_2,p_3)$\n\nto the $\\displaystyle xy$-plane is the absolute value of the\n$\\displaystyle z$-coordinate $\\displaystyle |p_3|$,\n\nto the $\\displaystyle xz$-plane is the absolute value of the\n$\\displaystyle y$-coordinate $\\displaystyle |p_2|$,\n\nto the $\\displaystyle yz$-plane is the absolute value of the\n$\\displaystyle x$-coordinate $\\displaystyle |p_1|$."
+    ]
+}

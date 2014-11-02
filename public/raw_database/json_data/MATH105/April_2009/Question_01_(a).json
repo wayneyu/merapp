@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH105", 
+    "statement": "Compute $\\frac{\\partial f}{\\partial x}(2,1)$ if\n$\\displaystyle f(x,y) = e^{(1 - x)y}$.", 
+    "year": 2009, 
+    "sols": [
+        "The first step is straightforward partial differentiation. Take the\nderivative of $f$ with respect to $x$, treating $y$ as a relative\nconstant (use the chain rule):\n\n\\[\\frac{\\partial f}{\\partial x} = \\left(\\frac{\\partial}{\\partial x}((1 - x)y)\\right)e^{(1 - x)y} = -ye^{(1 - x)y}.\\]\nNow we just substitute $(x,y) = (2,1)$:\n\n\\begin{align*}\n\\frac{\\partial f}{\\partial x}(2,1) &= -1e^{(1 - 2)1} \\\\ &= -e^{-1}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Remember to think of \\emph{y} as being fixed (that is, constant) when\nyou take a partial derivative with respect to \\emph{x}."
+    ]
+}

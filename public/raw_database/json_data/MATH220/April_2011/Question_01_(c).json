@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH220", 
+    "statement": "State the converse of this statement:\n\n``If I will win the lottery, then I will buy a new car.''", 
+    "year": 2011, 
+    "sols": [
+        "The converse is:\n\nIf I buy a new car, then I will win the lottery."
+    ], 
+    "hints": [
+        "Let $L$ be the statement ``win the lottery'' and let $B$ be the\nstatement buy a new car. Then the above can be rewritten as\n\n$L \\Rightarrow B$\n\nWhat is the converse of this statement?", 
+        "The converse of $A \\Rightarrow B$ is $B \\Rightarrow A$"
+    ]
+}

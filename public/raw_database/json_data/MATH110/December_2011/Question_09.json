@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_09", 
+    "course": "MATH110", 
+    "statement": "Write down an algebraic expression for a function $f$ satisfying the\nfollowing four criteria:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\to 0^{-}} f(x) = 2$\n\\item\n  $\\lim_{x \\to 0^{+}} f(x) = -1$\n\\item\n  $\\lim_{x \\to - \\infty} f(x) = 0$\n\\item\n  $\\displaystyle f'(x) = -2 \\hbox{ for } x> 0$\n\\end{itemize}\n\nThen sketch the function.", 
+    "year": 2011, 
+    "sols": [
+        "The best way to approach this function is as a piecewise function. The\nstatement of the problem suggests that there will need to be at least\ntwo pieces to the final function: one for $x > 0$ and one for $x < 0$.\nWe will start by considering the $x > 0$ piece.\n\nWe know for $x > 0$ that $f'(x) = -2$. The only function that has -2 as\nits derivative is the line with slope -2. So we know that this piece of\nour function will look something like $y = -2x + b$. Looking at the\nsecond requirement of the function, we know that the limit of this\nfunction as it approaches 0 must be -1. Thus our line should intersect\nthe y-axis at -1 and one piece of our function will be \\emph{y = -2x -\n1}.\n\nNow we consider the piece for $x < 0$. We know that the limit\napproaching \\emph{x = 0} must be 2 and that the limit to negative\ninfinity must be 0. There are many functions that satisfy the first\ncondition; an easy example is \\emph{y = 2}. There are also lots of\nfunctions satisfying the second condition; two examples are $e^x$ and\n$\\frac{1}{x}$. There are multiple ways to continue. We could break this\npiece of the function into two more pieces, using the examples I've\ncited above to get the following piecewise:\n\n$\\displaystyle f(x) = \\begin{cases} e^x & x \\leq -1 \\\\ 2 & -1 < x \\leq 0 \\\\ -2x - 1  & x > 0 \\end{cases}$\n\nA more complex solution would be to take a function that with the\nappropriate limit as x goes to negative infinity, like\n$y = -\\frac{1}{x}$ and shift it so that its y-intercept is 2. This would\nproduce a piecewise like this:\n\n$\\displaystyle f(x) = \\begin{cases} -\\frac{1}{x-1/2} & x \\leq 0 \\\\ -2x - 1  & x > 0 \\end{cases}$"
+    ], 
+    "hints": [
+        "Try drawing a picture of what the graph of this function would look\nlike. Are there some easy functions that you can piece together to\nsatisfy these properties?", 
+        "Which function $f(x)$ has the property that its derivative $f'(x) = -2$?"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH103", 
+    "statement": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\[I = \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx\\]", 
+    "year": 2010, 
+    "sols": [
+        "Let $\\displaystyle u = \\ln(x)$ so that $du = \\tfrac{1}{x} dx$.\n\nNotice that $\\displaystyle u(e) = \\ln(e) = 1$ and\n$\\displaystyle u(e^{2}) = \\ln(e^{2}) = 2\\ln(e) = 2$. Hence\n\n$\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\int_{1}^{2} \\frac{1}{u}\\, du = \\ln(u)\\mid_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "Try a substitution. Which function has a derivative that is already in\nthe problem?", 
+        "Try the substitution $u = ln(x)$"
+    ]
+}

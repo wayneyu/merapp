@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH307", 
+    "statement": "In this question we will work with polynomials of degree 3 written\n\n\\[\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\]\n\n\\textbf{(e)} Write down the MATLAB/OCTAVE code that plots the points\n\\emph{(0,1)}, \\emph{(1,2)} and \\emph{(2,2)} and the polynomial\n\\emph{p(x)} that\n\n(i) has zero slopes at \\emph{x = 0} and \\emph{x = 2},\n\n(ii) comes closest in the least square sense to passing through the\npoints \\emph{(0,1)}, \\emph{(1,2)} and \\emph{(2,2)}.", 
+    "year": 2012, 
+    "sols": [
+        "First, define the matrix \\emph{C} and the vector \\textbf{\\emph{c}}\n\n\\texttt{~~~C={[}-4,~-2;~-2,~1;~0,~1{]};}\\\\\\texttt{~~~c={[}2;~2;~1{]};}\n\nThen solve the least squares equation \\emph{C\\textbf{s} = \\textbf{c}}\nfor \\textbf{\\emph{s}}\n\n\\texttt{~~~s=(C'*C)\\textbackslash{}(C'*c);~~\\%~or~s=inv(C'*C)*C'*c;}\n\nFinally, from \\textbf{\\emph{s}} we retrieve the coefficient vector\n\\textbf{\\emph{a}}\n\n\\texttt{~~~a\\_1~=~{[}1;~-3;~0;~0{]};}\\\\\\texttt{~~~a\\_2~=~{[}0;~0;~0;~1{]};}\\\\\\texttt{~~~a~=~s(1)*a\\_1~+~s(2)*a\\_2;}\n\nThis determines the function \\emph{p(x)}\n\n\\texttt{~~~p~=~@(x)~a(1)*x\\^{}3~+~a(2)*x\\^{}2~+~a(3)*x~+~a(4);}\n\nAll that is left now is to plot the points \\emph{(0, 1)}, \\emph{(1, 2)}\nand \\emph{(2,2)} as well as the polynomial \\emph{p(x)} on the interval\n\\emph{{[}0, 2{]}}:\n\n\\texttt{~~~hold~on}\\\\\\texttt{~~~plot(0,~1,~'o')}\\\\\\texttt{~~~plot(1,~2,~'o')}\\\\\\texttt{~~~plot(2,~2,~'o')}\\\\\\texttt{~~~fplot(p,~{[}0,~2{]})~~\\%~or~eg~plot(linspace(0,~2),~p(linspace(0,~2)))}"
+    ], 
+    "hints": [
+        "In\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_01_(d)}{part\n(d)} we found that, in order for \\emph{p(x)} to have zero slope at\n\\emph{x = 0} and \\emph{x = 2} and pass through the given points, the\ncoefficients $\\mathbf{a} = s_1\\mathbf{a}_1 + s_2\\mathbf{a}_2$ would need\nto satisfy\n\n\\[\\begin{bmatrix}\n-4 &1 \\\\ \n-2& 1\\\\ \n0& 1\n\\end{bmatrix}\\begin{bmatrix}\ns_1 \\\\ s_2\n\\end{bmatrix} = \\begin{bmatrix}\n2\\\\ \n2\\\\ \n1\n\\end{bmatrix}\\]\n\nHow can we find the least square solution of the system\n\\emph{C\\textbf{s} = \\textbf{c}} above?", 
+        "The least square solution \\textbf{\\emph{s}} satisfies\n\n\\[C^TC \\mathbf s = C^T \\mathbf c\\]"
+    ]
+}

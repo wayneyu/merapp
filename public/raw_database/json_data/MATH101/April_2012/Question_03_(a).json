@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_03_(a)", 
+    "course": "MATH101", 
+    "statement": "Evaluate\n\n\\[\\int\\frac{\\ln x}{x^{101}}\\, dx\\]", 
+    "year": 2012, 
+    "sols": [
+        "The \\emph{bad} part of the integrand is $\\ln x$. The hints says we'd\nlike to differentiate it (to make it 1/x). The relevant integration\ntechnique that involves differentiation is then \\emph{integration by\nparts}. First we identify $u=\\ln x$ and $dv=1/x^{101} dx$, then,\n$v=-1/ (100 x^{100})$ by anti-differentiation, and $du=(1/x)dx$ by\ndiffentiation. It seems we are not getting an integral that is harder\nthen before, so let's move on and apply integration by parts:\n\n\\begin{align*}\n\\int\\frac{\\ln x}{x^{101}}dx \n &= \\int udv=uv-\\int vdu\\\\\n &= -\\frac{1}{100}\\frac{\\ln x}{x^{100}}-\\int\\left(-\\frac{1}{100}\\frac{1}{x^{100}}\\right)\\left(\\frac{1}{x}dx\\right)\\\\\n &= -\\frac{1}{100}\\frac{\\ln x}{x^{100}}+\\frac{1}{100}\\int\\frac{1}{x^{101}}dx\\\\\n &= \\frac{1}{100}\\left(-\\frac{\\ln x}{x^{100}}-\\frac{1}{100}\\frac{1}{x^{100}}\\right)+C\\\\\n &= -\\frac{1}{100x^{100}}\\left(\\ln x+\\frac{1}{100}\\right)+C\n\\end{align*}"
+    ], 
+    "hints": [
+        "A \\emph{bad} function in the integrand will look much better when it is\ndifferentiated. Is there an integration technique that involves a\ndifferentiation step?", 
+        "Try integration by parts."
+    ]
+}

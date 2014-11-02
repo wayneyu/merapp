@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH103", 
+    "statement": "Consider the differential equation\n\n\\[\\frac{dy}{dx} = (y^2-1)x.\\] Find the steady state solution(s).", 
+    "year": 2011, 
+    "sols": [
+        "The steady state solutions are solutions to the differential equation\nthat are constant. That is, $y(x) = \\rm{constant}$. For this to be\npossible, the derivative of $y$ has to be zero.\n\nTherefore, to be consistent with the differential equation, we have that\n\n$0 = (y^{2} - 1)x$.\n\nFor this equation to be true, we require that $y = \\pm 1$ or $x = 0$.\nSince $x = 0$ does not fit the definition of a steady state solution, we\nare left with the steady solutions $y = \\pm 1$."
+    ], 
+    "hints": [
+        "A solution $y(x)$ is called ``steady-state'' if it is constant (i.e. if\nthere is some $C$ such that $y(x)=C$ for all $x$).", 
+        "What is the derivative $dy/dx$ of a \\emph{steady state solution}?"
+    ]
+}

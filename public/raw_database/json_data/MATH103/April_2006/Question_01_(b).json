@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_01_(b)", 
+    "course": "MATH103", 
+    "statement": "A biased coin with $\\displaystyle P(H) = 1/10$ is tossed 4 times. What\nis the probability of getting at least one H?\n\ni. $\\displaystyle 1 - (9/10)^{4}$\n\nii. $\\displaystyle (1/10)^{4}$\n\niii. $\\displaystyle (1/10)(9/10)^{3}$\n\niv. $\\displaystyle 1 - (1/10)^{4}$\n\nv. $\\displaystyle (9/10)^{4}$", 
+    "year": 2006, 
+    "sols": [], 
+    "hints": []
+}

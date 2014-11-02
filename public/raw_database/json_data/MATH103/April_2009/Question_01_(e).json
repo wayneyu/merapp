@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(e)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple Choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nA charged molecule moves in a changing electric field which results in\nan acceleration of \\emph{a(t) = cos(t)} (in appropriate units). At time\n\\emph{t = 0}, the molecule is at rest at position \\emph{x(0) = 1}. What\nis the position \\emph{x(t)} when the molecule's velocity reaches the\nvalue -1 for the first time after time 0?\n\n(a) -1\n\n(b) 0\n\n(c) 1\n\n(d) 2\n\n(e) The velocity never reaches -1", 
+    "year": 2009, 
+    "sols": [
+        "We find, that we need to solve the differential equation\n\n\\begin{align*}\nx''(t)&=\\cos(t)\\\\\nx'(0)&=0\\\\\nx(0)&=1\n\\end{align*}\n\nWe integrate $x''(t)=\\cos(t)$ and get $x'(t)=\\sin(t)+c_1$. With\n$0= x'(0)=\\sin(0)+c_1=c_1$ we find $c_1=0$.\n\nWe continue with integrating $x'(t)=\\sin(t)$, which leads to\n$x(t)=-\\cos(t)+c_2$. With $x(0)=1$ we find $1=x(0)=-\\cos(0)+c_2=-1+c_2$\nand get $c_2=2$.\n\nThe velocity beeing $x'(t)=\\sin(t)$ reaches $-1$ at $t=\\frac{3}{2}\\pi$,\nand we get\n\n$x\\left(\\frac{3}{2}\\pi\\right) = -\\cos\\left(\\frac{3}{2}\\pi\\right) + 2 = -0+2=2$.\n\n\\textbf{So, the answer is (d).}"
+    ], 
+    "hints": [
+        "The acceleration $a(t)$ is the second derivative $a(t)=x''(t)$ of the\nposition $x(t)$.", 
+        "With $a(t)=x''(t)$ we find, that we need to solve the differential\nequation\n\n\\begin{align*}\nx''(t)&=\\cos(t),\\\\\nx'(0)&=0 \\quad\\text{(the molecule rests at time 0)}\\\\\nx(0)&=1\n\\end{align*}"
+    ]
+}

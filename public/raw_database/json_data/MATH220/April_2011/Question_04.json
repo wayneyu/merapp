@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_04", 
+    "course": "MATH220", 
+    "statement": "Prove that\n\n\\[P \\Rightarrow ( Q \\vee R ) \\equiv ( P \\Rightarrow Q ) \\vee ( P \\Rightarrow R).\\]", 
+    "year": 2011, 
+    "sols": [
+        "Using \\href{http://en.wikipedia.org/wiki/Truth_table}{truth tables}.\n\nWe write the truth table for each of the two statements that we would\nlike to compare.\n\n\\begin{longtable}[c]{@{}lllll@{}}\n\\textbf{P} & \\textbf{Q} & \\textbf{R} & \\textbf{Q $\\vee$ R} & \\textbf{P\n$\\rightarrow$ (Q $\\vee$ R)}\\\\\n\nT & T & T & T & T\\\\\nT & T & F & \u00c2~T & T\\\\\nT & F & T & T & T\\\\\nT & F & F & F & F\\\\\nF & T & T & T & T\\\\\nF & T & F & T & T\\\\\nF & F & T & T & T\\\\\nF & F & F & F & T\\\\\\\\\n\\caption{table for \\textbf{P $\\rightarrow$ (Q $\\vee$ R)}}\n\\end{longtable}\n\nAnd\n\n\\begin{longtable}[c]{@{}llllll@{}}\n\\textbf{P} & \\textbf{Q} & \\textbf{R} & \\textbf{P $\\rightarrow$ Q} &\n\\textbf{P $\\rightarrow$ R} & \\textbf{(P $\\rightarrow$ Q) $\\vee$ (P\n$\\rightarrow$ R)}\\\\\n\nT & T & T & T & T & T\\\\\nT & T & F & T & F & T\\\\\nT & F & T & F & T & T\\\\\nT & F & F & F & F & F\\\\\nF & T & T & \u00c2~T & T & T\\\\\nF & T & F & T & T & T\\\\\nF & F & T & T & T & T\\\\\nF & F & F & T & T & T\\\\\\\\\n\\caption{table for \\textbf{(P $\\rightarrow$ Q) $\\vee$ (P $\\rightarrow$\nR)}}\n\\end{longtable}\n\nSince the last column is the same for both tables (and since we order\nthe truth of \\emph{P}, \\emph{Q} and \\emph{R} in the same order) we can\nconclude that the two statements are logically equivalent.", 
+        "Another solution consists of using an equivalent statement for the\nimplication:\n\n\\[\\displaystyle\nA \\Rightarrow B \\equiv \\lnot A \\lor B\\]\n\nSo the statement\n\n\\[\\displaystyle\nP \\Rightarrow ( Q \\lor R ) \\equiv ( P \\Rightarrow Q ) \\lor ( P \\Rightarrow R)\\]\nbecomes\n\n\\[\\displaystyle\n\\lnot P \\lor ( Q \\lor R )) \\equiv ( \\lnot P \\lor Q ) \\lor ( \\lnot P \\lor R)\\]\n\nTo prove this statement, we'll just show that the left hand side (LHS)\nis equal to the right hand side (RHS).\n\nFor the LHS, we get\n\n\\[\\displaystyle\n\\lnot P \\lor ( Q \\lor R )) \\equiv \\lnot P \\lor Q \\lor R\\] since\ndisjunction (the logical OR) is associative (that means doesn't care\nabout brackets).\n\nFor the RHS we get\n\n\\[\\displaystyle\n( \\lnot P \\lor Q ) \\lor ( \\lnot P \\lor R) \\equiv \\lnot P \\lor Q \\lor R\\]\nsince again the disjunction is associative and having twice the \u00c2\u00acP term\nis useless.\n\nWe obtained that LHS = RHS which proves the statement."
+    ], 
+    "hints": [
+        "Use \\href{http://en.wikipedia.org/wiki/Truth_table}{truth tables}.\n\nAlso, remember that $P \\Rightarrow Q$ is always true if \\emph{P} is\nfalse.", 
+        "For another solution, do you know or can you prove that\n\n\\[\\displaystyle\nA \\Rightarrow B \\equiv \\lnot A \\lor B.\\]"
+    ]
+}

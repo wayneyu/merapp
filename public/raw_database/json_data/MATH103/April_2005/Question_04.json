@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04", 
+    "course": "MATH103", 
+    "statement": "The level of water in a reservoir changes over the year due to inflow\nand outflow. If the volume at $\\displaystyle t=0$ is\n$\\displaystyle 10^4$ cubic metres and the rate of change of volume is\n$\\displaystyle 10\\sin(\\pi t/10)$ cubic metres per day, where \\emph{t} is\nthe time in days, find the total change in the volume between\n$\\displaystyle t=0$ and $\\displaystyle t=5$.", 
+    "year": 2005, 
+    "sols": [
+        "Given that the rate of change of volume is $10\\sin (\\pi t/10)$ cubic\ncentimetres per day, the total change in the volume between \\emph{t=0}\nand \\emph{t=5}, in cubic centimetres, is\n\n\\begin{align*}\n\\int_{0}^{5}10\\sin (\\pi t/10)dt &= \\left [10 \\frac{-10}{\\pi} \\cos (\\pi t/10) \\right ]_{0}^{5} \\\\\n&= \\frac{-100}{\\pi}\\left (\\cos(5 \\pi/10)-\\cos(0/10) \\right ) \\\\\n&= \\frac{-100}{\\pi}(0-1) \\\\\n&= \\color{blue} \\frac{100}{\\pi}\n\\end{align*}"
+    ], 
+    "hints": [
+        "Given the rate of change of some process \\emph{r(t)}, the total change\nover the time interval $a \\leq t \\leq b$ is given by\n\n\\[\\int_{a}^{b}r(t)dt\\]"
+    ]
+}

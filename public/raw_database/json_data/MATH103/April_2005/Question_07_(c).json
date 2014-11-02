@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH103", 
+    "statement": "Cholera is a disease that can spread through untreated sewage polluting\nthe drinking water supply. Let $\\displaystyle y(t)$ be the fraction of\npeople in a population who have the disease at time \\emph{t}. Assume\nthat in a certain city, the fraction of people who have the disease\nincreases at a rate proportional to the fraction of people who do not\nyet have the disease. (We will use $\\displaystyle k > 0$ as the constant\nof proportionality).\n\n(c) Use one clear sentence and a simple sketch to explain what happens\nto the fraction of infected individuals as time goes by.", 
+    "year": 2005, 
+    "sols": [], 
+    "hints": []
+}

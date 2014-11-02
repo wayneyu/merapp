@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH220", 
+    "statement": "Let\n\n\\[f:A\\to{B}\\]\n\nbe a function and let $C\\subseteq{A}$ and $D\\subseteq{B}$. Define the\nsets $\\displaystyle {}f^{-1}(D)$ and $\\displaystyle {}f(C)$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

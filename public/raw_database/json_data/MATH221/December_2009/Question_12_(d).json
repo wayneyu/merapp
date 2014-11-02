@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_12_(d)", 
+    "course": "MATH221", 
+    "statement": "Mark each statement either True or False. You do not have to justify\nyour answer.\n\nIf a 5 \u00c3\u0097 6 matrix A has rank 4, then dim(Nul(A)) = 1.", 
+    "year": 2009, 
+    "sols": [
+        "\\textbf{False}. By the rank nullity theorem $dim(N(A)) = 6 - rank(A)$\n$dim(N(A)) = 5 - 4$ $dim((N(A)) = 2$ Don$^{\\prime}$t forget for the rank\nnullity theorem, its the number of columns minus the rank!"
+    ], 
+    "hints": []
+}

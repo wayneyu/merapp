@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(d)", 
+    "course": "MATH307", 
+    "statement": "Write down the definition of a stochastic matrix.", 
+    "year": 2013, 
+    "sols": [
+        "A stochastic matrix is a square matrix with no negative entries, and the\ncolumns sum to 1."
+    ], 
+    "hints": []
+}

@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_06_(d)", 
+    "course": "MATH307", 
+    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU = & \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma = & \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV = & \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(d)} Write down the singular value decomposition for\n\\emph{A\\textsuperscript{-1}}.", 
+    "year": 2012, 
+    "sols": [
+        "Taking the inverse we find\n\n\\[A^{-1}=(U\\Sigma V^{*})^{-1}=(V^{*})^{-1}\\Sigma^{-1}U^{-1}\\] Since\n$\\displaystyle U$ and $\\displaystyle V$ are real and unitary they\nsatisfy $\\displaystyle U^{-1} = U^* = U^T$ and\n$\\displaystyle (V^*)^{-1} = V$. Hence\n\n\\[A^{-1}=V\\Sigma^{-1}U^{T}\\]\n\nSo we are left with having to calculate the inverse of $\\Sigma$.\nLuckily, this is easy for a diagonal matrix, simply inverse the diagonal\nentries:\n\n\\[\\Sigma^{-1}=\\begin{bmatrix}\n1/2 & 0 & 0 \\\\\n0 & 1 & 0\\\\\n0 & 0 & 2\n\\end{bmatrix}\\]\n\nPut together, the SVD of $A^{-1}$ is:\n\n\\[A^{-1}=V\\Sigma^{-1}U^T=\\begin{bmatrix}\n\\frac{1}{\\sqrt{3}} & 0 & \\frac{2}{\\sqrt{6}}\\\\\n\\frac{1}{\\sqrt{3}} & \\frac{1}{\\sqrt{2}} & -\\frac{1}{\\sqrt{6}}\\\\\n\\frac{1}{\\sqrt{3}} & -\\frac{1}{\\sqrt{2}} & -\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}\\begin{bmatrix}\n1/2 & 0 & 0 \\\\\n0 & 1 & 0\\\\\n0 & 0 & 2\n\\end{bmatrix}\\begin{bmatrix}\n\\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{2}} & 0\\\\\n\\frac{1}{\\sqrt{2}} & -\\frac{1}{\\sqrt{2}} & 0\\\\\n0 & 0 & 1\n\\end{bmatrix}\\]"
+    ], 
+    "hints": [
+        "Start with $A^{-1}=(U\\Sigma V^{*})^{-1}$.", 
+        "Taking the inverse we find\n\n\\[A^{-1}=(U\\Sigma V^{*})^{-1}=(V^{*})^{-1}\\Sigma^{-1}U^{-1}.\\]\n\nNext, find the inverse of the matrices of the above. This does not\nrequire much computation, because \\emph{U} and \\emph{V} are unitary."
+    ]
+}

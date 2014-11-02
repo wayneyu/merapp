@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH110", 
+    "statement": "\\emph{Given a curve, its \\textbf{curvature} K is a measure of how much\nit deviates from a straight line. It can be computed using the following\nformula:}\n\n\\[K = \\frac{y''}{\\left(1+(y')^2\\right)^{3/2}}\\]\n\n\\emph{In this question you will calculate the curvature of the curve\nx\\textsuperscript{4} + y\\textsuperscript{4} = 2 at a certain point.}\n\nGiven the curve \\emph{x}\\textsuperscript{4} +\n\\emph{y}\\textsuperscript{4} = 2, find $\\displaystyle y'$.", 
+    "year": 2011, 
+    "sols": [
+        "Implicitly differentiating $x^4 + y^4 = 2$ gives\n\n\\[4x^3 + 4y^3\\cdot y' = 0\\]\n\nAnd then we solve for $y'$:\n\n\\begin{align*}4y^3\\cdot y' &= -4x^3 \\\\\ny' &= \\frac{-x^3}{y^3} \\end{align*}"
+    ], 
+    "hints": [
+        "To find $y'$ you will need to use implicit differentiation."
+    ]
+}

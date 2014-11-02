@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH101", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the series is convergent or divergent. In case it is\nconvergent, compute its sum.\n\n\\[\\sum_{n=1}^\\infty \\frac{7 \\cdot 3^{2n-1}}{10^n}\\]", 
+    "year": 2011, 
+    "sols": [
+        "The series can be rewritten as\n\n$\\sum_{n=1}^{\\infty} \\frac{7 \\cdot 3^{2n-1}}{10^n} \n=\n \\sum_{n=1}^{\\infty}  \\frac{7}{3} \\cdot \\left( \\frac{9}{10} \\right)^n.$\n\nThis is a geometric series with common ratio $r = 9/10 < 1.$, so it\nconverges. Recall that a convergent geometric series has sum\n\n$\\sum_{n=0}^{\\infty} ar^n = \\frac{a}{1-r}.$\n\nNote that to use this formula we need to adjust the series to start at\n$n=0.$ We get\n\n$\\sum_{n=1}^{\\infty} \\frac{7 \\cdot 3^{2n-1}}{10^n} \n=\n \\sum_{n=1}^{\\infty}  \\frac{7}{3} \\cdot \\left( \\frac{9}{10} \\right)^n\n=\n\\sum_{n=0}^{\\infty} \\frac{7}{3} \\cdot \\frac{9}{10} \\left( \\frac{9}{10} \\right)^n\n=\n\\frac{7}{3} \\cdot \\frac{9}{10} \\cdot \\frac{1}{1-\\frac{9}{10}}\n=\n\\frac{7}{3} \\cdot \\frac{9}{10} \\cdot \\frac{1}{\\frac{1}{10}}\n=\n\\frac{7}{3} \\cdot 9\n=\n21.$"
+    ], 
+    "hints": [
+        "Note $3^{2n-1} = \\frac{9^n}{3}.$", 
+        "Use the formula for the sum of a geometric series."
+    ]
+}

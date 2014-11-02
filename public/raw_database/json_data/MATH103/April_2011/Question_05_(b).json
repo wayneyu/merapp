@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH103", 
+    "statement": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nDetermine the constant $C$ of the probability density function for the\nfailure time of lightbulb $B$?", 
+    "year": 2011, 
+    "sols": [
+        "Since $p_B$ is a probability density function,\n$\\int_0^\\infty p_B(t)\\,dt=1.$ Hence,\n\n\\begin{align*}\n1=\\int_0^\\infty p_B(t)\\,dt = \\int_0^\\infty Ce^{-2t}\\,dt =C \\left[  \\frac{e^{-2t}}{-2}\\right]_0^\\infty=\\frac{C}2.\n\\end{align*}\n\nTherefore, $C=2.$"
+    ], 
+    "hints": [
+        "Since $p_B$ is a probability density function, what does\n\\begin{align*}\\int_0^\\infty p_B(t)\\, dt\\end{align*} need to be?"
+    ]
+}

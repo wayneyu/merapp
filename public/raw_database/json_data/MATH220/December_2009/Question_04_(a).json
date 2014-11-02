@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH220", 
+    "statement": "Prove that\n\n\\[f:[3,\\infty)\\to[5,\\infty)\\]\n\ndefined by\n\n\\[\\displaystyle{}f(x)=x^2-6x+14\\]\n\nis a bijection.", 
+    "year": 2009, 
+    "sols": [], 
+    "hints": []
+}

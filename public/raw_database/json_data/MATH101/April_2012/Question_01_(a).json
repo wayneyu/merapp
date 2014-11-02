@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nEvaluate\n\n\\[\\int_{1}^{2}\\frac{x^{2}+2}{x^{2}}\\, dx\\]", 
+    "year": 2012, 
+    "sols": [
+        "Using the hint, we see that\n\n\\begin{align*}\n\\int_{1}^{2} \\frac{x^{2}+2}{x^{2}}\\, dx &= \\int_{1}^{2} \\left(\\frac{x^{2}}{x^{2}} + \\frac{2}{x^{2}}\\right)\\, dx\\\\\n&= \\int_{1}^{2} (1 + 2x^{-2})\\, dx\\\\\n&= \\left. \\left(x - 2x^{-1}\\right) \\right|_{1}^{2}\\\\\n&= (2-2(2)^{-1}) - (1 - 2(1)^{-1}) \\\\\n&= (2-1) - (-1)\\\\\n&= 2\n\\end{align*}"
+    ], 
+    "hints": [
+        "Split the fraction into the sum of two fractions."
+    ]
+}

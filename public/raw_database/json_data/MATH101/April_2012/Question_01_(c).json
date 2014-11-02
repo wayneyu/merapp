@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nEvaluate\n\n$\\int_{-2012}^{2012}x^{1/3}\\cos(x)\\, dx$", 
+    "year": 2012, 
+    "sols": [
+        "Since $x^{1/3}$ is an odd function and $\\cos(x)$ is an even function, we\nknow that their product is an odd function. More directly, notice that\nif\n\n\\[\\displaystyle f(x) = x^{1/3}\\cos(x)\\, dx\\]\n\nthen\n\n\\[\\displaystyle f(-x) = (-x)^{1/3}\\cos(-x) = -x^{1/3}\\cos(x) = -f(x)\\]\n\nand so the function is odd. As the interval of integration is symmetric,\nwe have that\n\n\\[\\int_{-2012}^{2012}x^{1/3}\\cos(x)\\, dx = 0.\\]"
+    ], 
+    "hints": [
+        "What do you notice about the interval of integration? How can you use\nthis to your advantage?"
+    ]
+}

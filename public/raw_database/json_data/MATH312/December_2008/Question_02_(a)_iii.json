@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)_iii", 
+    "course": "MATH312", 
+    "statement": "\\textbf{For each of the following congruences, find the least\nnonnegative integer \\emph{x} that satisfies it.}\n\n$\\displaystyle x^{2} \\equiv 9 \\mod{5}$", 
+    "year": 2008, 
+    "sols": [
+        "The given problem is equivalent to\n$\\displaystyle x^{2} \\equiv 4 \\mod{5}$. Testing all points gives\n\n\\begin{align*}\n0^{2} &\\equiv 0 \\mod{5}\\\\\n1^{2} &\\equiv 1 \\mod{5}\\\\\n2^{2} &\\equiv 4 \\mod{5}\\\\\n3^{2} &\\equiv 4 \\mod{5}\\\\\n4^{2} &\\equiv 1 \\mod{5}\n\\end{align*}\n\nand so the smallest admissible integer is\n$\\displaystyle x \\equiv 2 \\mod{5}$"
+    ], 
+    "hints": [
+        "This is the same as $\\displaystyle x^{2} \\equiv 4 \\mod{5}$. Try all the\nnumbers modulo 5 and pick the smallest one."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02", 
+    "course": "MATH312", 
+    "statement": "\\textbf{True or False}\n\nSuppose that $a \\equiv b \\mod m$ and $c \\equiv d \\mod m$ with $c|a$ and\n$d|b$. Then\n\n\\[\\frac{a}{c} \\equiv \\frac{b}{d} \\mod m\\]", 
+    "year": 2005, 
+    "sols": [
+        "The claims is \\textbf{false}.\n\nLet $\\displaystyle 2 \\equiv -4 \\mod{6}$ so $\\displaystyle a = 8$ and\n$\\displaystyle b = 20$.\n\nFurther, let $\\displaystyle 8 \\equiv 20 \\mod{6}$ so\n$\\displaystyle c = 2$ and $\\displaystyle d = -4$.\n\nSo $\\displaystyle c \\mid a$ and $\\displaystyle d \\mid b$. Then\n\n$\\displaystyle \\frac{a}{c} = 4$ and $\\displaystyle \\frac{b}{d} = -5$ and\nso\n\n$\\displaystyle \\frac{a}{c} \\equiv 4 \\mod{6}$ and\n$\\displaystyle \\frac{b}{d} \\equiv -5 \\equiv 1 \\mod{6}$\n\nThese two values are not equivalent and thus this gives a counter\nexample."
+    ], 
+    "hints": [
+        "Let's suppose you were trying to prove this. We would start off with\n\n$\\displaystyle a = b + ms$ and $\\displaystyle c = d + mt$\n\nfor integers \\emph{s} and \\emph{t}. Then, we are asking if\n\n$\\displaystyle \\frac{a}{c} = \\frac{b + ms}{d + mt} \\equiv \\frac{b}{d} \\mod{m}$\n\nor isolated,\n\n$\\displaystyle \\frac{m(sd-tb)}{d(d + mt)} \\equiv 0 \\mod{m}$\n\nso finally, this should suggest that if m and d are not coprime, we\nmight be able to find a counter example."
+    ]
+}

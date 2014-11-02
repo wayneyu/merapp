@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH103", 
+    "statement": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this question.}\n\nWhich of the following series converges?\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{i.} $S = \\sum_{k=1}^\\infty k^{-2}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{ii.} $S = \\sum_{k=1}^\\infty \\frac1{k}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iii.} $S = \\sum_{k=1}^\\infty k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iv.} $S = \\sum_{k=0}^\\infty (1.01)^k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{v.} $S = \\sum_{k=0}^\\infty k^2.$\n\\end{description}", 
+    "year": 2010, 
+    "sols": [
+        "Let's first check if the summands of the offered series go to zero.\n\n\\begin{align*}\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k^{-2} &= \\lim_{k \\rightarrow \\infty} \\frac1{k^2} = 0. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} \\frac1{k} &= 0. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k &= \\infty. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} (1.01)^k &= \\infty. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k^2 &= \\infty.\n\\end{align*}\n\nThus iii., iv., and v. can not converge. But the series i. and ii. are\ncandidates for convergent series.\n\nBy a pairwise comparison of the summands of series i. and series ii. we\nsee that \\emph{k\\textsuperscript{-2} \\textless{} 1/k}, and hence (Series\ni.) \\textless{} (Series ii.). We are told that only one series\nconverges, so it can only be Series i. (If Series ii. would converge,\nand (Series i.) \\textless{} (Series ii.), then Series i. would also\nconverge.)\n\nIndeed this is true, by the p-series test with \\emph{p = 2}.\n\n\\textbf{Thus, the correct answer is i.}\n\nFun fact: $\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.$"
+    ], 
+    "hints": [
+        "A necessary (but not sufficient) condition that a series converges is\nthat the summands go to zero. Which of the series above don't satisfy\nthis criterion, and hence can not be convergent?", 
+        "For the remaining candidates, use the p-series test."
+    ]
+}

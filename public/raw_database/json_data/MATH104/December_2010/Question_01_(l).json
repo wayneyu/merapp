@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(l)", 
+    "course": "MATH104", 
+    "statement": "Find the value of the constant a such that\n\n\\[\\displaystyle{}f(x)=a\\sin(2x)+x\\cos(x)\\]\n\nhas a critical point at $x=\\pi$.", 
+    "year": 2010, 
+    "sols": [
+        "Using the chain and product rules, we compute\n$f'(x) = 2 a \\cos(2x) + \\cos(x) - x \\sin(x) = 0$ at a critical point.\n\nIf $x = \\pi$ is a critical point then\n$2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 2a - 1 - 0 = 0$ so\n$a = 1/2$."
+    ], 
+    "hints": [
+        "What does it mean (state an equation) for $f(x)$ to have a critical\npoint at $x=\\pi$?"
+    ]
+}

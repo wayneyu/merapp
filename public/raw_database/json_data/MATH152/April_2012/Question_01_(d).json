@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH152", 
+    "statement": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nCalculate the area of the triangle ABC.", 
+    "year": 2012, 
+    "sols": [
+        "The area of the parallelogram spanned by two vectors is the magnitude of\ntheir cross product. The area of a triangle is half the area of a\nparallelogram. The parallelogram form by A, B, and C is spanned by\n$\\vec{AB}$ and $\\vec{AC}$ which in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)},\nwe already determined were\n\n\\begin{align*}\n\\vec{AB}&=[-2,2,1]\\\\\n\\vec{AC}&=[-1,1,1].\n\\end{align*}\n\nWe need the cross product of this, but as we saw in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)},\nthis is just the normal vector to the plane $S_2$ and therefore\n$\\vec{AB}\\times\\vec{AC}=\\mathbf{m}=[1,1,0]$. Therefore the area of the\ntriangle is\n\n\\[\\textrm{area}=\\frac{1}{2}||\\vec{AB}\\times\\vec{AC}||=\\frac{1}{2}||\\mathbf{m}||=\\frac{1}{2}\\sqrt{1^2+1^2+0^2}=\\frac{1}{2}\\sqrt{2}.\\]"
+    ], 
+    "hints": [
+        "How can we relate the area of a triangle formed between two vectors to\nthe cross product?"
+    ]
+}

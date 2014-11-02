@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\[f(x) = \\frac{x^3+x^2-2x-3}{x^2-3}.\\]\n\nIts first and second derivatives are given by\n\n\\[f'(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}, \\qquad f''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}.\\]\n\nFind all \\emph{x} such that f'(x) = 0 or f'(x) does not exist.", 
+    "year": 2011, 
+    "sols": [
+        "To determine where \\emph{f'(x)=0}, we look at the numerator of\n\\emph{f'(x)} and note that \\emph{f'(x)=0} when the numerator is zero,\ni.e.\n\n\\[(x^2-1)(x^2-6)=0,\\] which implies \\emph{x\\textsuperscript{2}-1=0} or\n\\emph{x\\textsuperscript{2}-6=0.} Solving each equation and noting that\nboth positive and negative solutions are valid, we obtain\n\n\\[f'(x)=0 \\text{ if and only if } x=\\pm 1 \\text{ or } x=\\pm\\sqrt 6.\\]\n\nTo determine where \\emph{f'(x)} does not exist, we set the denominator\nto 0:\n\n\\[x^2-3=0.\\] So, \\emph{f'(x)} does not exist when $x=\\pm\\sqrt 3$.\n\n''Remark: Note that the denominator and numerator are never\nsimultaneously 0. If they were, say at \\emph{x=a}, we would have to take\nthe limit of f'(x) for $x \\rightarrow a$ to determine if \\emph{f'(x)}\ndid not exist or was zero (or another finite number).''"
+    ], 
+    "hints": [
+        "Try setting the numerator and the denominator to 0. What does a value of\n0 in the numerator correspond to? How about when the denominator is 0?"
+    ]
+}

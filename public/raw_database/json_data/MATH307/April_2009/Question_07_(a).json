@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_07_(a)", 
+    "course": "MATH307", 
+    "statement": "Given the recurrence relation $x_{n+1}=3x_{n}-2x_{n-1}$ with the initial\ncondition $x_0=a$ and $x_1=b$,\n\n\\textbf{(a)} Solve the recurrence relation. (Give a general\n\\emph{scalar} expression for \\emph{$x_n$} in terms of \\emph{n},\n\\emph{a}, and \\emph{b}).", 
+    "year": 2009, 
+    "sols": [
+        "We can start by finding the first few values of this relation.\n$x_2 = 3b - 2a$ $x_3 = 7b - 6a$ $x_4 = 15b - 14a$ $x_5 = 31b - 30a$ With\nthese, we can guess at a scalar expression for $x_n$ and then use\ninduction to prove that it is correct. By inspection, we come up with\nthe following:\n\n$x_n = (2^n - 1)b - (2^n - 2)a$.\n\nProof\\[n = 0\\]\\[x_0 = (2^0 - 1)b - (2^0 - 2)a = 0b - (-1)a = a\\]\n$n = 1$\\[x_1 = (2^1 - 1)b - (2^1 - 2)a = 1b - 0a = b\\]\n$n = 2$\\[x_2 = (2^2 - 1)b - (2^2 - 2)a = (4 - 1)b - (4 - 2)a = 3b - 2a,\\]\nwhich is what we found using the recurrence.\n\nAssume that for $n \\le k$, the expression is true.\n\nWe now want to prove that the expression is true for $n = k + 1$. Using\nthe recurrence relation and our induction hypothesis, we find that\n$x_{k+1} = 3x_k - 2x_{k-1}$\n$= 3((2^k - 1)b - (2^k - 2)a) - 2((2^{k-1} - 1)b - (2^{k-1} - 2)a)$\n$= b(3(2^k - 1) - 2(2^{k-1} - 1)) - a(3(2^k - 2) - 2(2^{k-1} - 2))$\n$= b(2^k(3-1) - 3 + 2) - a(2^k (3-1) - 2)$\n$= b(2^{k+1} - 1) - a(2^{k+1} - 2)$, which is the expression we had come\nup with. So for all integers n, $x_n = (2^n - 1)b - (2^n - 2)a$."
+    ], 
+    "hints": []
+}

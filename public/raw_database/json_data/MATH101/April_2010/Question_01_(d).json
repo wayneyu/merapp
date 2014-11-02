@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(d)", 
+    "course": "MATH101", 
+    "statement": "The first two nonzero terms in the power-series representation in powers\nof $x$ (i.e. the Maclaurin series) for $\\int_0^x \\sin\\left(t^2\\right)dt$\nhave the form $ax^3+bx^7,$ for some constants $a$ and $b.$ Find the\nvalue of $b.$", 
+    "year": 2010, 
+    "sols": [
+        "From the Maclaurin polynomial we see that\n\n$\\sin (t^2)=  t^2-\\frac{t^6}{3!}+\\dots$\n\nso\n\n\\begin{align*}\n\\int_0^x \\sin (t^2)dt&= \\int_0^x (t^2-\\frac{t^6}{3!}+\\dots) dt\\\\\n&=\\frac{t^3}{3}-\\frac{t^7}{42}+\\dots \\Big|_0^x\\\\\n&=\\frac{x^3}{3}-\\frac{x^7}{42}+\\dots\n\\end{align*}\n\nWhich means $b=-\\frac{1}{42}$"
+    ], 
+    "hints": [
+        "The Maclaurin series for $\\sin x$ is\n\n$\\sin x =x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\frac{x^7}{7!}+\\dots$"
+    ]
+}

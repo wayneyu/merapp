@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_12_(h)", 
+    "course": "MATH221", 
+    "statement": "If a matrix \\emph{A} has $k$ distinct eigenvalues, then\n$\\text{Rank}(A) \\geq k$.", 
+    "year": 2009, 
+    "sols": [
+        "The answer is \\textbf{true}."
+    ], 
+    "hints": []
+}

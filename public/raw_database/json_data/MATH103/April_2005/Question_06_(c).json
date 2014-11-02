@@ -1,0 +1,9 @@
+{
+    "term": "April", 
+    "question": "Question_06_(c)", 
+    "course": "MATH103", 
+    "statement": "A CT scanner in a hospital is switched on every morning and switched off\nat night. The scanner has a probability $\\displaystyle q = 0.001$ of\nfailure when the technician turns it on in the morning. (Assume that if\nit turns on, it will not fail later that day i.e. treat this as a\n\\textbf{discrete} event. Also assume that failure is independent of age\nor history of the machine.)\n\n(c) Use the properties of an infinite geometric series to obtain the\nsummation formula given in\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_06_(b)}{part\n(b)}:\n\n\\begin{align*}\n\\sum_{k=1}^{\\infty}kr^{k-1} = \\frac{1}{(1-r)^{2}}\n\\end{align*}\n\nfor $\\displaystyle |r| < 1$.", 
+    "year": 2005, 
+    "sols": [], 
+    "hints": []
+}

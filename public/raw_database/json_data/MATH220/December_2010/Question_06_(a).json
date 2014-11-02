@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH220", 
+    "statement": "Use mathematical induction to prove the following.\n\nProve that\n\n\\[\\frac{1}{2!}+\\frac{2}{3!}+\\dots+\\frac{n}{(n+1)!}=1-\\frac{1}{(n+1)!}\\]\n\nis true for all $n\\in\\mathbb{N}$.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

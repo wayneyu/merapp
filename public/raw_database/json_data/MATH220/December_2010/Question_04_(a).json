@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH220", 
+    "statement": "Let \\[f:A\\to{B}\\] and $g:B\\to{A}$ be functions so that $g\\circ{f}$ is an\ninjection.\n\nProve that $\\displaystyle {}f$ must be injective.", 
+    "year": 2010, 
+    "sols": [], 
+    "hints": []
+}

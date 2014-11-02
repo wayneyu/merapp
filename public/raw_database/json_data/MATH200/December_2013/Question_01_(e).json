@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH200", 
+    "statement": "Suppose it is known that the direction of the fastest increase of the\nfunction $\\displaystyle f(x,y)$ at the origin is given by the vector\n$\\displaystyle \\langle 1,2 \\rangle$. Find a unit vector\n$\\displaystyle \\textbf{u}$ that is tangent to the level curve of\n$\\displaystyle f(x,y)$ that passes through the origin.", 
+    "year": 2013, 
+    "sols": [], 
+    "hints": []
+}

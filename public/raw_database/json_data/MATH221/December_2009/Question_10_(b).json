@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_10_(b)", 
+    "course": "MATH221", 
+    "statement": "Find the numbers \\emph{b},\\emph{c} which make the matrix below\ndiagonalizable. (No need to diagonalize them.)\n\n$\\begin{bmatrix}\n2 &1 &b &3 \\\\ \n0 &3 &-1 &c \\\\ \n0 &0 &2 &2 \\\\ \n0 &0 &0 &3 \n\\end{bmatrix}$", 
+    "year": 2009, 
+    "sols": [
+        "Now let$^{\\prime}$s find the eigenvalues of b\n\n$\\text{det}(\\begin{bmatrix}\n2-\\lambda &1 &b &3 \\\\ \n0 &3-\\lambda &-1 &c \\\\ \n0 &0 &2-\\lambda &2 \\\\ \n0 &0 &0 &3-\\lambda\n\\end{bmatrix})=-(\\lambda-3)^{2}(\\lambda-2)^{2}=0$Solve the equation above to get\n$\\lambda _{1}=\\lambda_{2}=3,\\lambda _{3}=\\lambda_{4}=2$ As similar to a,\nwe need to make sure both eigenvalues have exactly 2 corresponding\neigenvectors. When\n\n$\\lambda=3,A-\\lambda I= \\begin{bmatrix}\n-1 &1 &b &3 \\\\ \n0 &0 &-1 &c \\\\ \n0 &0 &-1 &2 \\\\\n0 &0 &0 &0\n\\end{bmatrix}$In order to get 2 free variables, we need to set\n$\\frac{-1}{-1}=\\frac{c}{2}$ Thus $c=2$ When\n\n$\\lambda=2,A-\\lambda I= \\begin{bmatrix}\n0 &1 &b &3 \\\\ \n0 &1 &-1 &c \\\\ \n0 &0 &0 &2 \\\\\n0 &0 &0 &1\n\\end{bmatrix}$In order to get 2 free variables, we need to set\n$\\frac{1}{1}=\\frac{b}{-1}$ Thus $b=-1$"
+    ], 
+    "hints": []
+}

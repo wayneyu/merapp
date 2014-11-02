@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH103", 
+    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\[\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} \\,dx\\] converge?\n\nA. Converge\n\nB. Diverge.", 
+    "year": 2012, 
+    "sols": [
+        "Since $0 \\leq 1+\\sin x \\leq 2$ for all \\emph{x}, we use the integral\ncomparison test to see that\n\n\\[\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} dx \\leq \\int_1^{\\infty} \\frac2{x^2}\\,dx\\]\n\nThe latter integral converges, by the integral \\emph{p} test (with\n\\emph{p} = 2). Hence, again by the integral comparison test, the former\nintegral also \\textbf{converges}."
+    ], 
+    "hints": [
+        "First use the integral comparison test.\n\nThen use the integral \\emph{p} test."
+    ]
+}

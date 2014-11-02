@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_04_(b)", 
+    "course": "MATH307", 
+    "statement": "Consider the following recursion relation:\n\n$x_{n+1} = ax_{n} + bx_{n-1}$ where $n \\geq 1$, and $a, b$ $\\epsilon$\n$\\mathbb{R}$\n\nHow must the parameters \\emph{a} and \\emph{b} be related if it is given\nthat $A_1$ has $\\displaystyle \\lambda_1 = 1$ as its eigenvalue? What is\nthe other eigenvalue of $A_1$ (in terms of \\emph{a} and \\emph{b} )?", 
+    "year": 2010, 
+    "sols": [
+        "Knowing $A_{1}$ has an eigenvalue of 1 we need to solve the equation:\n\n$A_{1}x = \\lambda x$ where $\\lambda$ = $1$\n\n$\\begin{bmatrix}\na &b \\\\\n1&0\n\\end{bmatrix}\\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix} = \\begin{bmatrix}\nx_{1}\\\\\nx_{0}\n\\end{bmatrix}$\n\nmaking it into a system of linear equations we get:\n\n1) $ax_{1} + bx_{0}$ = $x_{1}$\n\n2) $x_{1}$ = $x_{0}$\n\nusing 2) we can substitute into 1) so that we are only working with one\nvariable,\n\n$ax_{0} + bx_{0}$ = $x_{0}$\n\n$x_{0}$($a$ $+$ $b$) $=$ $x_{0}$\n\n$a$ $+$ $b$ $=$ $1$\n\nnow that we see how $a$ and $b$ have to relate, let$^{\\prime}$s find the\nother eigenvalue of $A_{1}$\n\nsolve for either $a$ or $b$ and input back into $A_{1}$ and then do our\nstandard $det(A_{1}$ $-$ $\\lambda I)$ $=$ $0$\n\nI$^{\\prime}$m going to continue after having solved for $b$\n\nso our new $A_{1}$ = $\\begin{bmatrix}\na &1-a \\\\\n1& 0\n\\end{bmatrix}$\n\n$det(A_{1}-\\lambda I) = det(\\begin{bmatrix}\na-\\lambda &1-a \\\\\n1&-\\lambda\n\\end{bmatrix}) = (a-\\lambda)(-\\lambda) - (1-a) = 0$\n\nwe end up obtaining the equation\\[\\lambda ^2\\] $-$ $\\lambda a$ $+$ ($a$\n$-$ $1$) $=$ $0$\n\nusing the quadratic formula with a = $1$, b = $-a$ and c = $a$ $-$ $1$,\nour result is:\n\n$\\lambda = \\frac{a \\pm \\sqrt{a^2 - 4(a-1)}}{2} = \\frac{a \\pm \\sqrt{a^2 - 4a+4}}{2} = \\frac{a \\pm \\sqrt{(a-2)^2}}{2} = \\frac{a \\pm (a-2)}{2}$\n\n$\\lambda$ $=$ $1$, $a$ $-$ $1$\n\nwe knew about the eigenvalue of $1$ already,\n\nand so the other eigenvalue of $A_{1}$ is $a$ $-$ $1$ or, equivalently,\n$-b$"
+    ], 
+    "hints": []
+}

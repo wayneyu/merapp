@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH312", 
+    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe order $\\displaystyle \\text{ord}_{19}(5)$ is 7.", 
+    "year": 2012, 
+    "sols": [
+        "We compute directly\n\n$\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}$\n\nand so 7 is not the order of 5.", 
+        "We compute directly\n\n$\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv (5\\cdot 4)\\cdot 4^2 \\equiv 20\\cdot 16 \\equiv 1 \\cdot 16 \\not\\equiv 1 \\mod{19}$\n\nand so 7 is not the order of 5."
+    ], 
+    "hints": [
+        "Translating the question, the question is asking whether\n\n$\\displaystyle 5^{7} \\equiv 1 \\mod{19}$\n\nand if \\emph{7} is the smallest such number."
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "term": "April", 
+    "question": "Question_01_(i)", 
+    "course": "MATH105", 
+    "statement": "Find\n\n\\[\\int xe^{2x}\\,dx\\]", 
+    "year": 2010, 
+    "sols": [
+        "Use integration by parts with\n\n\\[\\displaystyle\nu = x \\quad\\text{and}\\quad dv = e^{2x}\\] we obtain:\n\n\\begin{align*}\n\\int xe^{2x}\\,dx &= \\frac{xe^{2x}}{2} - \\int \\frac{1}{2}e^{2x}\\,dx \\\\\n&= \\frac{xe^{2x}}{2} - \\frac{1}{4}e^{2x} + C \\\\\n&= \\frac{(2x - 1)e^{2x}}{4} + C\n\\end{align*}\n\nwhere $C$ is a constant."
+    ], 
+    "hints": [
+        "What technique of integration does one generally use when integrating a\nproduct of functions?", 
+        "What makes computing the integral\n\n\\[\\int xe^{x^2}\\,dx\\] very different?"
+    ]
+}

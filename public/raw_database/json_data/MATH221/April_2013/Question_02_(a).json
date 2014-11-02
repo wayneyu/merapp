@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(a)", 
+    "course": "MATH221", 
+    "statement": "Let\n\n$A = \\left[ \\begin{array}{ccccc}\n1 & 2 & 1 & 3 & 2 \\\\ \n3 & 4 & 9 & 0 & 7 \\\\ \n2 & 3 & 5 & 1 & 8 \\\\ \n2 & 2 & 8 & -3 & 5\n\\end{array} \\right]  B = \\left[ \\begin{array}{ccccc}\n1 & 2 & 1 & 3 & 2 \\\\ \n0 & 1 & -3 & 5 & -4 \\\\ \n0 & 0 & 0 & 1 & -7 \\\\ \n0 & 0 & 0 & 0 & 0\n\\end{array} \\right]$\n\nThe matrices \\emph{A} and \\emph{B} are related by $B = MA$ , where\n\\emph{M} is an invertible 4x4 matrix.\n\na) Find the rank and a basis of the row space of \\emph{A}.", 
+    "year": 2013, 
+    "sols": [
+        "Since the matrix \\emph{A} and \\emph{B} are related by the left\nmultiplication of that invertible matrix \\emph{M}, they share many\ncharacteristic, including rank and they row space. The reason being that\nthe left multiplication by \\emph{M} can be understood as simply being a\nset of (invertible) row operations and the rank and row space are\nproperties that are preserved under (invertible) row operations.\n\nNow, as \\emph{B} is in row echelon form, it is easier to read this\ninformation from the matrix \\emph{B}, so we will use to answer the\nquestion. As \\emph{B} has 3 pivots, we see that the rank is 3. We can\nalso take each row that has a pivot to form a basis of the row space,\nthus our basis is given by:\n\n$\\left[ \\begin{array}{ccccc}\n1 & 2 & 1 & 3 & 2 \\\\ \n\\end{array} \\right] , \\left[ \\begin{array}{ccccc}\n0 & 1 & -3 & 5 & 4 \\\\ \n\\end{array} \\right] , \\left[ \\begin{array}{ccccc}\n0 & 0 & 0 & 1 & -7 \\\\ \n\\end{array} \\right]$"
+    ], 
+    "hints": [
+        "How does left multiplication of a matrix by a invertible matrix change\nthe rank and row space?\n\nWhat are properties preserved under those changes?"
+    ]
+}

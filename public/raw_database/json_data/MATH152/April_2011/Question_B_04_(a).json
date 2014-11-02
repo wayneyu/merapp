@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_B_04_(a)", 
+    "course": "MATH152", 
+    "statement": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nShow that T is a linear transformation.", 
+    "year": 2011, 
+    "sols": [
+        "Following the hint, we seek to show the properties of a linear\ntransformation,\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y}),\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x}).\n\\end{align*}\n\nFor the first property,\n\n\\begin{align*}\n&T(\\mathbf{x}+\\mathbf{y})\\\\\n&=(\\mathbf{x}+\\mathbf{y})\\times\\mathbf{a}\\\\\n&=(\\mathbf{x}\\times\\mathbf{a})+(\\mathbf{y}\\times\\mathbf{a})\\\\\n&=T(\\mathbf{x})+T(\\mathbf{y}),\n\\end{align*}\n\nwhere we have used that the cross product is\n\\href{Wikipedia:Distributive}{distributive} over addition. The second\nproperty holds by the compatibility of scalar multiplication with the\ncross product,\n\n\\begin{align*}\n&T(c\\mathbf{x})\\\\\n&=(c\\mathbf{x})\\times\\mathbf{a}\\\\\n&=c(\\mathbf{x}\\times\\mathbf{a})\\\\\n&=cT(\\mathbf{x}).\n\\end{align*}\n\nTherefore we have concluded that \\emph{T} is a linear transformation."
+    ], 
+    "hints": [
+        "Recall that a transformation is linear if\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y})\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x})\n\\end{align*}\n\nfor some vectors \\textbf{x}, \\textbf{y}, and constant c."
+    ]
+}

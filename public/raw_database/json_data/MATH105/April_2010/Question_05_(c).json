@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(c)", 
+    "course": "MATH105", 
+    "statement": "\\emph{A person purchased a home at the price of \\$ 300,000, paid a down\npayment equal to 20\\% of the purchase price, and financed the remaining\nbalance with a 25 year term mortgage. Assume that the person makes\npayments continuously at a constant annual rate $A$ and that the\ninterest is compounded continuously at the rate of 5\\%.}\n\nDetermine the total interest paid during the 25 year term mortgage.", 
+    "year": 2010, 
+    "sols": [
+        "In\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_5_(b)}{part\n(b)} we saw that our payments totalled \\$480,465.25. The house itself\nhad a price of only \\$300,000. Therefore, the difference of \\$180,465.25\nrepresents the interest paid during the entire mortgage."
+    ], 
+    "hints": [
+        "How much of each monthly payment is actually going towards the house?"
+    ]
+}

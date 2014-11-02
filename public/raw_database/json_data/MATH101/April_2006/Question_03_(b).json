@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_03_(b)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n\\[\\int\\frac{x^{2}+2}{x^{3}+x}\\, dx\\]", 
+    "year": 2006, 
+    "sols": [
+        "We proceed by partial fractions. Let\n\n$\\frac{x^{2}+2}{x^{3}+x} = \\frac{x^{2}+2}{x(x^{2}+1)} = \\frac{A}{x} + \\frac{Bx + C}{x^2 + 1} = \\frac{A(x^{2}+1) + (Bx+C)x}{x^2+1}$\n\nwhere above we used the fact that $x^{2}+1$ is irreducible (its\ndiscriminant is $-4 < 0$). Thus, we know that\n\n$x^2 + 2 = A(x^{2}+1) + (Bx+C)x$\n\nPlugging in $x=0$ gives\n\n$2 = 0^2 + 2 = A(0^{2}+1) + (B(0)+C)(0) = A$\n\nand so $A = 2$. Plugging in $x=1$ gives\n\n$3 = 1^2 + 2 = A(1^{2}+1) + (B(1)+C)(1) = 2A + B + C = 4 + B + C$\n\nand so $B+C = -1$. Plugging in $x=-1$ gives\n\n$3 = (-1)^2 + 2 = A((-1)^{2}+1) + (B(-1)+C)(-1) = 2A + B - C = 4 + B - C$\n\nand so $B-C = -1$. Adding the last two equations and dividing by 2 gives\n$B = -1$ and so $C = 0$ Hence, we have\n\n\\begin{align*}\n\\int\\frac{x^{2}+2}{x^{3}+x}\\, dx &= \\int \\frac{2dx}{x} -  \\int \\frac{x}{x^{2}+1}\\, dx \\\\\n&= 2\\ln|x| - \\int \\frac{x}{x^{2}+1}\\, dx\n\\end{align*}\n\nTo solve the last integral, use substitution. Let $u = x^{2}+1$ so that\n$du = 2xdx$ and so\n\n\\begin{align*}\n- \\int \\frac{x}{x^{2}+1}\\, dx = -\\frac{1}{2}\\int\\frac{du}{u} = -\\frac{1}{2} \\ln|u| + C = -\\frac{\\ln|x^{2}+1|}{2} +C \\\\\n\\end{align*}\n\nand so\n\n\\begin{align*}\n\\int\\frac{x^{2}+2}{x^{3}+x}\\, dx &= 2\\ln|x| -  \\int \\frac{x}{x^{2}+1}\\,dx \\\\\n&= 2\\ln|x| - \\frac{\\ln|x^{2}+1|}{2}  + C\n\\end{align*}"
+    ], 
+    "hints": [
+        "Try integrating by partial fractions."
+    ]
+}

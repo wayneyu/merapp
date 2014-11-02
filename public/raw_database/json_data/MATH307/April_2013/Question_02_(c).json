@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH307", 
+    "statement": "TRUE or FALSE: If a square matrix has repeated eigenvalues, then it\ncannot be diagonalized. Justify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "False, because $\\left[ \\begin{array}{cc}\n\n1 & 0 \\\\\n\n0 & 1\n\n\\end{array} \\right]$ has a repeated eigenvalue of 1 and is diagonalized\nby $I$"
+    ], 
+    "hints": []
+}

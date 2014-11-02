@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\n$\\displaystyle\\lim_{x\\rightarrow2}\\dfrac{2-x}{4-x^2}=\\dfrac{1}{4}$.", 
+    "year": 2012, 
+    "sols": [
+        "As suggested in the hint, we will simplify the limit on the left hand\nside of the equal sign. If we just plug in \\emph{2} we get 0/0, so we\nwill have to do some simplifying. Because the numerator and denominator\nare polynomials, factoring is a good first step.\n\nThe denominator is a difference of squares, so we can write:\n\n$\\lim_{x \\to 2} \\frac{x-2}{4-x^2} = \\lim_{x \\to 2}\\frac{2-x}{(2-x)(2+x)}$\n\nCanceling the common terms, and then plugging in the 2 gives:\n\n$\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac{1}{2 + 2} = \\frac14$\n\nWhich matches the right hand side of the original equation. Thus the\nstatement is true."
+    ], 
+    "hints": [
+        "Try simplifying the limit on the left hand side of the equal sign. How\ncan we eliminate the issue with the denominator tending to 0?"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_07_(c)", 
+    "course": "MATH220", 
+    "statement": "Let $\\{ b_n \\}$ be a sequence defined by\n\n\\[b_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.\\]\nProve that\n\n\\[b_{n+1} \\leq b_n \\quad\\text{ for each }n \\in \\mathbb{N}.\\]", 
+    "year": 2011, 
+    "sols": [
+        "We will prove this statement by induction on $n$.\n\nFirst, for $n=1$. By definition of the sequence we have that\n\n\\begin{align*}\nb_2 &= \\frac{b_1+\\sqrt{b_1}}{2} \\\\\n&= \\frac{2+\\sqrt{2}}{2}\\\\\n&\\leq \\frac{2+2}{2}\\\\\n&=2\\\\\n&\\leq b_1\n\\end{align*} which proves the first step of our induction.\n\nLet us now assume that the statement is true for all values of $n$ up to\n$m$ and let us show that the statement holds for $n=m+1$.\n\nIn\n\\href{Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_07_(b)}{part\n(b)} we showed that\n\n\\[\\displaystyle\nb_n \\geq 1 \\quad\\text{for all } n \\in \\mathbb{N}\\] hence we can\nguarantee that\n\n\\[\\displaystyle\n\\sqrt{b_n} \\leq b_n \\quad \\text{for all } n \\in \\mathbb{N}\\] and so, we\nhave that\n\n\\begin{align*}\nb_{m+1} &= \\frac{b_m + \\sqrt{b_m}}{2}\\\\\n&\\leq \\frac{b_m + b_m}{2}\\\\\n&= b_m\n\\end{align*} which concludes our proof."
+    ], 
+    "hints": [
+        "Use induction!"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_01_(k)", 
+    "course": "MATH101", 
+    "statement": "Let $f(x) = \\int_{e^{x}}^{0}\\cos^{3} t\\, dt$. Find $\\displaystyle f'(x)$", 
+    "year": 2007, 
+    "sols": [
+        "First, we flip the bounds of integration\n\n$f(x) = \\int_{e^{x}}^{0}\\cos^{3} t\\, dt =  -\\int_{0}^{e^{x}}\\cos^{3} t\\, dt$\n\nTaking the derivative using the fundamental theorem of calculus part 1\nand the chain rule, we have\n\n$f'(x) =  -\\frac{d}{dx}\\int_{0}^{e^{x}}\\cos^{3} t\\, dt = -e^{x}\\cos^{3}(e^{x})$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "This is a very fundamental question ;)", 
+        "Use the fundamental theorem of calculus part 1", 
+        "You will need to flip the integral and use the chain rule to get the\ncorrect answer."
+    ]
+}

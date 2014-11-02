@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(f)", 
+    "course": "MATH220", 
+    "statement": "What does it mean for the sequence $\\{a_{n}\\}$ to converge to a number\n$L$.", 
+    "year": 2011, 
+    "sols": [
+        "We say that a sequence $\\{ a_{n}\\}$ converges to a number $L$ if for all\n$\\epsilon > 0$ there exists an $n \\in \\mathbb{N}$ such that for all\n$n \\geq N$ we have $|a_{n} - L| < \\epsilon$"
+    ], 
+    "hints": [
+        "Think limits. Then think epsilons."
+    ]
+}

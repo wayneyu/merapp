@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(d)", 
+    "course": "MATH307", 
+    "statement": "What points in the plane would you plot to produce a frequency-amplitude\nplot for the function in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}?", 
+    "year": 2010, 
+    "sols": [
+        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}, we figured out that $c_{n} = -\\frac{1}{2\\pi in}$. We will think\nthat $\\left | c_n \\right |$ is the amplitude of ascillation with\nfrequency $\\omega _n$ Our T is equal to 1 since it was the range of\n\\emph{x}.\n\nwe are plotting points that is (frequency, amplitude) with the following\ninformation above.\n\nfrequency $=\\omega _n = \\frac{n}{T} =n$. amplitude\n$=\\left | c_n \\right |= \\left | -\\frac{1}{2\\pi in} \\right |=\\sqrt {\\frac{-i}{2\\pi n}^{2}}=\\frac{1}{2\\pi n}$\n(For frequency when n = 0, amplitude is equal to $\\left | c_0 \\right |$\nwhich is $c_{0} = \\frac{1}{2}$ from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)})\n\nmy points to produce frequency- amplitude plot will be ($n$,\n$\\frac{1}{2\\pi n}$) for $n\\neq 0$ $(0, \\frac{1}{2})$ for \\emph{n=0}."
+    ], 
+    "hints": []
+}

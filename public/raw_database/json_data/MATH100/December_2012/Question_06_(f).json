@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(f)", 
+    "course": "MATH100", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(f) Sketch the graph of $y = f(x)$, exhibiting all features in parts (a)\n- (e) and showing the \\emph{y}-coordinates of any points you found in\npart (b) (you do not need to include the \\emph{y}-coordinates of\ninflection points). Also, indicate the coordinates of all\n\\emph{x}-intercepts.", 
+    "year": 2012, 
+    "sols": [
+        "Before assembling the graph, we will calculate the x-intercepts, found\nby setting the original function equal to zero and solving for \\emph{x}.\n\n$2x^{3/5} + 3x^{-2/5} = 0$\n\nFactoring out $x^{-2/5}$ gives:\n\n$x^{-2/5}(2x + 3) = 0$\n\nSo there is an x-intercept at $x = -3/2$\n\nTo draw the graph, we will start by plotting the vertical asymptote at\n\\emph{x = 0} and various points: the x-intercept at $(-3/2, 0)$, the\nminimum at $x=1$ and the inflection point at $x = 7/2$. Because the\nquestion asks for the y-coordinate of the minimum (from part b), we plug\n\\emph{x = 1} into \\emph{f(x)} to get:\n\n$f(1) = 2(1)^{3/5} + 3(1)^{-2/5} = 2 + 3 = 5$\n\nSo our minimum will be the point $(1,5)$. All this gives a picture that\nlooks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math_100_December_2012_Question_6f_alternative.jpg}\n\\caption{MER Math 100 December 2012 Question 6f alternative.jpg}\n\\end{figure}\n\nUsing information from part a) about the intervals of increase and\ndecrease, we know the graph should roughly look like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math100_December_2012_Question_6_part_b.jpg}\n\\caption{MER Math100 December 2012 Question 6 part b.jpg}\n\\end{figure}\n\nFinally, using part c), we know the function is concave up for $x < 7/2$\nand concave down otherwise, which leads us to the final graph:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_Math100_December_2012_Question_6_part_c.jpg}\n\\caption{MER Math100 December 2012 Question 6 part c.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Start by finding the x-intercept(s). Then drawing the asymptote,\nintercepts and minimum should be a good start to drawing the entire\ngraph."
+    ]
+}

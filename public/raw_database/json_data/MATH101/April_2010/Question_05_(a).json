@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_05_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values: $\\ f(0) = 1,$\n$\\ f(1) = 2,$ $\\ f(2) = 0,$ $\\ f(3) = -2,$ $\\ f(4) = -4.$\n\nWrite down the trapezoidal approximation $T_4$ for $\\int_0^4 f(x) dx.$", 
+    "year": 2010, 
+    "sols": [
+        "Since the formula for the trapezoid rule can be given by\n\n\\[T_{n} = \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\\]\n\nand we know that we want to evaluate this rule using $n = 4$, we have\n\n\\[x_{i} = a + i\\Delta x = 0 + i\\frac{4-0}{4}\\]\n\nand thus, the trapezoidal approximation that we need is\n\n\\begin{align*}\nT_{4} &= \\frac{1}{2}\\left(f(0) + 2f(1) + 2f(2) + 2f(3) + f(4)\\right) \\\\\n&= \\frac{1}{2} (1 + 2(2) + 2(0) +2(-2) + (-4)) = \\frac{-3}{2}\n\\end{align*}"
+    ], 
+    "hints": [
+        "The formula for the trapezoid rule is given by\n\n$T_{n} := \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)$"
+    ]
+}

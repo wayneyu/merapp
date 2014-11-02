@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(j)", 
+    "course": "MATH101", 
+    "statement": "Find the first three nonzero terms in the power series representation in\npowers of \\emph{x} (i.e. the Maclaurin series) for\n$\\int_{0}^{x} t\\cos(t^{3})\\, dt$.", 
+    "year": 2007, 
+    "sols": [
+        "We apply $t^{3}$ for \\emph{'x} in the Maclaurin series for \\emph{cos(x)}\nto get\n\n$\\cos (t^{3}) = 1 - \\frac{t^{6}}{2!} + \\frac{t^{12}}{4!} - ... = \\sum_{n=0}^{\\infty}(-1)^{n} \\frac{t^{6n}}{(2n)!}$\n\nNow we multiply by \\emph{t} to get\n\n$t\\cos (t^{3}) = t - \\frac{t^{7}}{2!} + \\frac{t^{13}}{4!} - ... = \\sum_{n=0}^{\\infty}(-1)^{n} \\frac{t^{6n+1}}{(2n)!}$\n\nNow we integrate to get\n\n$\\int t\\cos (t^{3}) = C + \\frac{t^{2}}{2} - \\frac{t^{8}}{8\\cdot2!} + \\frac{t^{14}}{14\\cdot 4!} - ... = \\sum_{n=0}^{\\infty}(-1)^{n} \\frac{t^{6n+2}}{(6n+2)(2n)!}$\n\nApplying the endpoints gives\n\n$\\int_{0}^{x} t\\cos (t^{3}) = \\frac{x^{2}}{2} - \\frac{x^{8}}{8\\cdot2!} + \\frac{x^{14}}{14\\cdot 4!} - ... = \\sum_{n=0}^{\\infty}(-1)^{n} \\frac{x^{6n+2}}{(6n+2)(2n)!}$\n\nand so the first three nonzero terms are\n\n$\\frac{x^{2}}{2}, - \\frac{x^{8}}{8\\cdot2!}, \\frac{x^{14}}{14\\cdot 4!}$\n\ncompleting the question."
+    ], 
+    "hints": [
+        "The Maclaurin series for $\\cos x$ is\n\n$\\cos x = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - ... = \\sum_{n=0}^{\\infty}(-1)^{n} \\frac{x^{2n}}{(2n)!}$"
+    ]
+}

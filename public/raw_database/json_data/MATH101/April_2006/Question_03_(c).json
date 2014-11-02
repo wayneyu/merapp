@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_03_(c)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n\\[\\int \\frac{x^{2}} {(100-x^{2})^{3/2}} \\, dx\\]", 
+    "year": 2006, 
+    "sols": [
+        "Let $x = 10\\sin \\theta$ so that $dx = 10\\cos \\theta d\\theta$. Then we\nhave\n\n\\begin{align*}\n\\int \\frac{x^{2}} {(100-x^{2})^{3/2}} \\, dx &= \\int \\frac{100\\sin^{2}\\theta (10\\cos \\theta d\\theta)} {(100-100\\sin^{2}\\theta)^{3/2}}\\\\\n&= \\int \\frac{1000(\\sin^{2}\\theta)(\\cos \\theta) d\\theta} {(100\\cos^{2}\\theta)^{3/2}}\\\\\n&= \\int \\frac{1000(\\sin^{2}\\theta)(\\cos \\theta) d\\theta} {1000\\cos^{3} \\theta }\\\\\n&= \\int \\frac{\\sin^{2}\\theta d\\theta} {\\cos^{2} \\theta }\\\\\n&= \\int \\tan^{2}\\theta d\\theta\\\\\n&= \\int (\\sec^{2}\\theta-1) d\\theta\\\\\n&= \\tan\\theta - \\theta + C\n\\end{align*}\n\nNow we isolate for the original variables. Using the diagram below\n(created from noting the original condition on \\emph{x} and by using\nPythagorean theorem), we have\n\n\\begin{align*}\n\\int \\frac{x^{2}} {(100-x^{2})^{3/2}} \\, dx &=  \\tan\\theta -\\theta + C \\\\\n&= \\frac{x}{\\sqrt{100-x^{2}}} - \\arcsin\\left(\\frac{x}{10}\\right) + C\\\\\n\\end{align*}\n\ncompleting the proof.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2006Q3c.jpeg}\n\\caption{MATH101Apr2006Q3c.jpeg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Try a trig substitution.", 
+        "Try the trig substitution $x = 10\\sin \\theta$", 
+        "Later down the road you may want to use\n\n$\\tan^{2}\\theta = \\sec^{2}\\theta - 1$", 
+        "Don't forget to plug back your original variables."
+    ]
+}

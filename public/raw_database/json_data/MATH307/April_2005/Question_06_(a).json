@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_06_(a)", 
+    "course": "MATH307", 
+    "statement": "Let B be the basis $\\{v_1, v_2, v_3\\}$ of $\\mathbb R^3$, where\n\n\\[v_1 =\\left[ \\begin{array}{c} 1 \\\\ 0 \\\\ 0 \\end{array} \\right], \\quad v_2 =\\left[ \\begin{array}{c} 1 \\\\ 1 \\\\ 0 \\end{array} \\right], \\quad v_3 = \\left[ \\begin{array}{c} 1 \\\\ 1 \\\\ 1 \\end{array} \\right]\\]\n\nand let $T : \\mathbb R^3 \\to \\mathbb R^3$ be the linear transformation\nsuch that\n\n\\[M_B^B(T) =\\left[ \\begin{array}{ccc} 2 & -3 & 3 \\\\ -2 & 1 & -7 \\\\ 5 & -5 & 7 \\end{array} \\right]\\]\n\n\\textbf{(a)} Find $T(v_3)$.", 
+    "year": 2005, 
+    "sols": [
+        "The column \\emph{n} is equal to $T(v_{n})$ where $v_{n}$ is the basis\ncomponent corresponding to the column number \\emph{n}.\n\nTo find $T(v_3)$ we simply look at the third column of $M_B^B$\n\n\\[T(v_3) = \\left[ \\begin{array}{c} 3 \\\\ -7 \\\\ 7 \\end{array} \\right]\\]"
+    ], 
+    "hints": []
+}

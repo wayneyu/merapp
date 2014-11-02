@@ -1,0 +1,11 @@
+{
+    "term": "April", 
+    "question": "Question_05_(b)", 
+    "course": "MATH307", 
+    "statement": "5. The function $e^{i\\pi x}$ for x $\\varepsilon$ {[}0, 1{]} can be\nexpanded in a Fourier series\n\n$e^{i\\pi x}$ = $\\sum_{n=-\\propto }^{\\propto }c _{n} e^{2\\pi inx}$\n\n(b){[}this part should worth 7 points{]}\n\nSuppose $\\phi _{0}$(x), $\\phi _{1}$(x), $\\phi _{2}$(x),... is an\ninfinite orthonormal basis of functions on the interval {[}0,1{]} and we\nhave the expansion\n\n$e^{i\\pi x} = \\sum_{n=0}^{\\propto }d _{n} \\phi _{n}(x).$\n\nSuppose, in addition, that $\\phi _{0}$ is the constant function\n$\\phi _{0}$(x) = 1. Is it true that $d_{0}$ = $c_{0}$, where $c_{0}$ is\nthe Fourier coefficient above? Give a reason.", 
+    "year": 2009, 
+    "sols": [
+        "We have:\n\n\\begin{align*}\ne^{i\\pi x} &= \\sum_{n=-\\propto }^{\\propto }c _{n} e^{2\\pi inx}\\\\\n&= c_{0} + \\sum_{n=-\\propto }^{-1}c_{n}e^{2\\pi inx}+\\sum_{n=1}^{\\propto }c_{n}e^{2\\pi inx}\\\\\n&= c_{0}+\\sum_{n=1}^{\\propto }c_{-n}e^{-2\\pi inx} + \\sum_{n=1}^{\\propto }c_{n}e^{2\\pi inx}\\\\\n&= c_{0} + \\sum_{n=1}^{\\propto }c_{n}e^{2\\pi inx} + c_{-n}e^{-2\\pi inx}\n\\end{align*}\n\nWe also have:\n\n\\begin{align*}\ne^{i\\pi x} &= \\sum_{n=0}^{\\propto }d _{n} \\phi _{n}(x)\\\\\n&= d_{0}\\phi _{0}(x) + \\sum_{n=1}^{\\propto }d_{n}\\phi _{n}(x)\\\\\n&= d_{0} + \\sum_{n=1}^{\\propto }d_{n}\\phi _{n}(x)\n\\end{align*}\n\nSince $\\phi _{0}$(x), $\\phi _{1}$(x), $\\phi _{2}$(x),... is an infinite\northonormal basis, then $\\phi _{n}$ spans functions in interval\n{[}0,1{]}, thus $\\sum_{n=1}^{\\propto }d_{n}\\phi _{n}(x)$ gives all\npossible components(except for n=0) of $e^{i\\pi x}$. Also,\n$\\sum_{n=1}^{\\propto }c_{n}e^{2\\pi ix} + c_{-n}e^{-2\\pi ix}$ gives all\npossible components(except for n=0) of $e^{i\\pi x}$. Therefore if\n\n$e^{2\\pi ix} = c_{0} + \\sum_{n=1}^{\\propto }c_{n}e^{2\\pi ix} + c_{-n}e^{-2\\pi ix} = d_{0} + \\sum_{n=1}^{\\propto }d_{n}\\phi _{n}(x)$,\n\nwe must have $c_{0} = d_{0}$."
+    ], 
+    "hints": []
+}

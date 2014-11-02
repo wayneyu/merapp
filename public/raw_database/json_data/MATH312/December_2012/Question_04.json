@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH312", 
+    "statement": "Define the sum of divisors function $\\displaystyle \\sigma(n)$ and number\nof divisors function $\\displaystyle \\tau(n)$. Show that there is no\npositive integer \\emph{n} with $\\displaystyle \\phi(n) = 14.$", 
+    "year": 2012, 
+    "sols": [
+        "First,\n\n$\\displaystyle \\sigma(n) = \\sum_{d \\mid n} d$\n\nand\n\n$\\displaystyle \\tau(n) = \\sum_{d \\mid n}1$\n\ngives the required definitions.\n\nFor the last part, we proceed by a contradiction and suppose that\n$\\displaystyle \\phi(n) = 14$ for some integer \\emph{n}.\n\nAs stated in the hint, we have\n\n$\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha_{p}-1}(p-1) = 14$.\n\nwhere $\\displaystyle n = \\prod p^{\\alpha_{p}}$. Now every odd prime\npresent in the factorization of \\emph{n} contributes a power of two to\n$\\displaystyle \\phi(n)$ due to the $\\displaystyle (p-1)$ factor. Thus,\nthere can be at most one odd prime dividing \\emph{n}, say\n$\\displaystyle p$.\n\nIf $\\displaystyle p$ occurs to a power of two, then because it divides\nthe left hand side, it must divide 14 and so must be 7. The prime\n$\\displaystyle p$ cannot occur to a third power or higher since\notherwise there are two factors of $\\displaystyle p$ on the left and at\nmost one on the right. However $\\displaystyle \\phi(7^{2}) = 42 > 14$ and\nso the power must be 1. Thus $\\displaystyle n = 2^{\\alpha} p$ for some\n$\\displaystyle \\alpha$. Notice that as the phi-function is\nmultiplicative, we have that\n\n$\\displaystyle 14 = \\phi(n) = \\phi(2^{\\alpha})\\phi(p) = 2^{\\alpha-1}(p-1)$\n\n(or we have that $\\displaystyle \\phi(n) = p-1$ if no power of 2 divides\nn)\n\nThus, as $\\displaystyle p-1$ is even, we have that\n$\\displaystyle \\alpha = 1$ (or \\emph{n} is odd) and further that\n$\\displaystyle p = 15$ which is not a prime. This is a contradiction and\nhence this equation has no solution."
+    ], 
+    "hints": [
+        "For the last part, use the fact that\n\n$\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha-1}(p-1) = 14$.\n\nwhere $\\displaystyle n = \\prod_{p^{\\alpha} \\parallel n} p^{\\alpha}$ and\nwhere we recall that $\\displaystyle p^{\\alpha} \\parallel n$ means that\n$\\displaystyle p^{\\alpha}$ fully divides \\emph{n} (that is, this is the\nhighest power of \\emph{p} that divides \\emph{n})."
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_08", 
+    "course": "MATH101", 
+    "statement": "Find (a) the radius of convergence, and (b) the interval of convergence\nof the following power series, carefully justifying your answer:\n\n\\[\\sum_{n=0}^\\infty \\frac{(x-2)^n}{\\ln(n+2)}\\]", 
+    "year": 2011, 
+    "sols": [
+        "To find the radius of convergence, we use the ratio test. Let\n$a_n = \\frac{\\ln(n+2)}{|x-2|^n}.$\n\n\\begin{align*}\n\\left|\\frac{a_{n+1}}{a_n}\\right| \n&= \\frac{|x-2|^{n+1}}{\\ln(n+1+2) } \\cdot \\frac{\\ln(n+2)}{|x-2|^n}\\\\\n&= |x-2|\\frac{\\ln(n+2)}{\\ln(n+3)} \\to  |x-2| \\text{ as } n\\to\\infty .\\\\\n\\end{align*}\n\nTo see that $\\frac{\\ln(n+2)}{\\ln(n+3)} \\to  1 \\text{ as } n\\to\\infty,$\nnote that\n\n\\begin{align*}\n\\left|  \\frac{\\ln(n+2)}{\\ln(n+3)} -1 \\right| &=\\left|  \\frac{\\ln(n+2)-\\ln(n+3)}{\\ln(n+3)} \\right| =\\left|  \\frac{\\ln\\left(\\frac{n+2}{n+3}\\right)}{\\ln(n+3)} \\right| \n\\end{align*}\n\nSince logarithm is continuous on its domain, the numerator satisfies\n\n\\begin{align*}\n\\lim_{n\\to\\infty}\\ln\\left(\\frac{n+2}{n+3}\\right)& =\\ln\\left( \\lim_{n\\to\\infty}\\frac{n+2}{n+3}\\right)= \\ln\\left( \\lim_{n\\to\\infty}\\frac{1+2/n}{1+3/n}\\right) = \\ln(1)=0.\n\\end{align*}\n\nIn the denominator, $\\ln(n+3)\\to \\infty$ as $n\\to\\infty$.\n\nWe conclude that\n\n$\\left|  \\frac{\\ln(n+2)}{\\ln(n+3)} -1 \\right| \\to 0$; that is,\n$\\frac{\\ln(n+2)}{\\ln(n+3)}\\to 1,$ as $n\\to\\infty.$\n\nBy the ratio test, it follows that the series is absolutely convergent\nif and only if $|x-2|<1.$ Therefore, the radius of convergence is equal\nto 1.\n\nIn order to determine the interval of convergence, it remains to\ndetermine whether the series is convergent at the endpoints, $x=2\\pm 1.$\n\nAt $x = 3,$ the series is equal to\n\n\\[\\sum_{n=1}^\\infty \\frac{(3-2)^n}{\\ln(n+2)} = \\sum_{n=1}^\\infty \\frac{1}{\\ln(n+2)}.\\]\n\nBy comparison with $\\sum_{n=1}^\\infty\\frac{1}{n},$ this series is\ndivergent. (To compare, note that\n$\\frac{1}{\\ln(n+2)} >\\frac{1}{n+2} \\geq \\frac1{3n}.$)\n\nAt $x = 1$ the series is equal to\n\n\\[\\sum_{n=1}^\\infty \\frac{(1-2)^n}{\\ln(n+2)} = \\sum_{n=1}^\\infty \\frac{(-1)^n}{\\ln(n+2)}\\]\n\nBy the alternating series test, this converges.\n\nHence, the interval of convergence is $[1,3)$ ."
+    ], 
+    "hints": [
+        "a.) Ratio Test\n\nb.) Check end points"
+    ]
+}

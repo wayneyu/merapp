@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH312", 
+    "statement": "\\textbf{Multiple Choice}\n\nThe number of primitive roots of 99 is\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  (a) 0\n\\item\n  (b) 8\n\\item\n  (c) 34\n\\item\n  (d) 66\n\\item\n  (e) None of the above.\n\\end{itemize}", 
+    "year": 2005, 
+    "sols": [
+        "The answer is \\textbf{a = 0}\n\nThe number of primitive roots modulo n is equal to\n$\\displaystyle \\phi(n)$ provided that $n \\in \\{2,4,p^{k},2p^{k}\\}$ for\nsome odd prime \\emph{p}. As $\\displaystyle n = 3^{2} \\cdot 11$, we see\nthat \\emph{n} does not take this form and so there are no primitive\nroots."
+    ], 
+    "hints": [
+        "The number of primitive roots modulo n is equal to\n$\\displaystyle \\phi(n)$ provided that $n \\in \\{2,4,p^{k},2p^{k}\\}$ for\nsome odd prime \\emph{p}."
+    ]
+}

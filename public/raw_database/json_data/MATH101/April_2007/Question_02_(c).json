@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_02_(c)", 
+    "course": "MATH101", 
+    "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nSet up, but do not evaluate, a definite integral for the volume of the\nsolid obtained by rotating the region between $y=0$ and $y = \\sin x$ for\n$0 \\leq x \\leq \\pi$ about the line $y = 1$.", 
+    "year": 2007, 
+    "sols": [
+        "A picture is included below.\n\nImagine yourself standing on the \\emph{x}-axis at \\emph{x}=-1 looking\ntowards the rotated object. This top down view (the circles in the\npicture) show that what we are doing is taking a cylinder of radius 1\nand height $\\pi$, and subtracting from it the shape that we get from\nremoving the inner shape of radius $(1-\\sin(x))^{2}$. This gives the\nvolume to be\n\n$V = \\int_{0}^{\\pi} \\pi(1^{2} - (1-\\sin(x))^{2}) \\, dx = \\pi\\int_{0}^{\\pi}(2\\sin(x) -\\sin^{2}(x)) \\, dx$\n\ncompleting the question.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2007Q2c.jpeg}\n\\caption{MATH101Apr2007Q2c.jpeg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "It might help to draw a picture."
+    ]
+}

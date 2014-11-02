@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(a)", 
+    "course": "MATH215", 
+    "statement": "Find the solution of\n\n\\[y'+x^3 y= 3 x^3,\\quad y(0)=8.\\]", 
+    "year": 2013, 
+    "sols": [
+        "We begin with $y'+x^3 y= 3 x^3, \\quad y(0)=8$. We can use an integrating\nfactor here, taking $\\mu(x) = e^{\\int x^3 dx} = e^{\\frac{x^4}{4}}$ where\nwe chose the arbitrary constant to be 0. Multiplying both sides of the\nequation by $\\mu(x)$ gives\n\n\\[e^{\\frac{x^4}{4}} y' + e^{\\frac{x^4}{4}} x^3 = 3 x^3 e^{\\frac{x^4}{4}}\\]\nor\n\n\\[(e^{\\frac{x^4}{4}} y)' = 3x^3 e^{\\frac{x^4}{4}}.\\]\n\nWe can integrate both sides of the equation (doing a simple substitution\non the right-hand side) giving us\n\n\\[\\int \\frac{d}{dx} (e^{\\frac{x^4}{4}} y(x)) dx = \\int 3x^3 e^{\\frac{x^4}{4}} dx\\]\n\n\\[e^{\\frac{x^4}{4}} y = \\underbrace{\\int 3 e^u du}_{u=x^4/4} = 3 e^u + C = 3 e^{\\frac{x^4}{4}} + C\\]\n\n\\[y = 3 + C e^{\\frac{-x^4}{4}}.\\]\n\nIf $y(0) = 8$ then $8 = 3 + C$ so $C=5$ and the final answer is\n\n$y(x) = 3 + 5 e^{\\frac{-x^4}{4}}$."
+    ], 
+    "hints": [
+        "This is a first-order linear ODE. Can you find an integrating factor?"
+    ]
+}

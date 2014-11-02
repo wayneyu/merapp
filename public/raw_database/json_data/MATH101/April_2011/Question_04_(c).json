@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(c)", 
+    "course": "MATH101", 
+    "statement": "Determine whether the following improper integral is convergent or\ndivergent. Remember to justify your answer.\n\n\\[\\int_1^\\infty \\frac{\\sqrt{x}}{x^2 + x}dx\\]", 
+    "year": 2011, 
+    "sols": [
+        "First notice that attempting to evaluate this integral is long and\ntedious. Instead we attempt to find an integral which we know converges\nor diverges, and compare our integral to that integral. Observe that on\nthe given interval, $[1,\\infty)$ we have that $x^2+x > x^2$ and so\n$\\frac{\\sqrt{x}}{x^2+x}<\\frac{\\sqrt{x}}{x^2}$. Hence,\n\n\\begin{align*}\n\\int_1^\\infty \\frac{\\sqrt{x}}{x^2+x} dx &< \\int_1^\\infty \\frac{\\sqrt{x}}{x^2} dx \\\\\n&=\\int_1^\\infty \\frac{1}{x^{3/2}}dx \\\\\n\\end{align*}\n\nand since we know that the integral $\\int_1^\\infty \\frac{1}{x^p} dx$\nconverges whenever $p > 1$, we know that our integral does indeed\nconverge since $3/2 > 1$."
+    ], 
+    "hints": [
+        "Find a standard integral which you know converges or diverges and\ncompare this integral to that standard integral."
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "term": "December", 
+    "question": "Question_04", 
+    "course": "MATH200", 
+    "statement": "Find the absolute maximum and minimum values of the function\n$\\displaystyle f(x,y)=5+2x-x^2-4y^2$ on the rectangular region\n$R = \\{(x, y)\\,|\\,-1\\leq x \\leq 3, -1 \\leq y \\leq 1\\}$.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": [
+        "First, find the critical points of $\\displaystyle f$ (where\n$\\displaystyle f_x = f_y = 0$) in the interior of the domain, then check\nthe boundary. The extrema must be at one of the critical points, or on\nthe boundary.", 
+        "To handle the boundary case, break up the boundary into 4\ncases\\[\\displaystyle x = -1\\], $\\displaystyle x = 3$,\n$\\displaystyle y = -1$, and $\\displaystyle y = 1$. For the first line,\nyou get a new function $\\displaystyle g(y) = f(-1,y)$, which you can\nthen optimize subject to the constraint\n$\\displaystyle -1 \\leq y \\leq 1$. The other lines are similar."
+    ]
+}

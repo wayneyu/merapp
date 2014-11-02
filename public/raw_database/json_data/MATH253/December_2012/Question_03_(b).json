@@ -1,0 +1,9 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH253", 
+    "statement": "Use linear approximation to estimate the distance from the origin to the\npoint (6.02,7.99). Express your answer as a single number in decimal\nform.", 
+    "year": 2012, 
+    "sols": [], 
+    "hints": []
+}

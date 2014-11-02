@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_01_(c)", 
+    "course": "MATH101", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the average value of the function on the given interval:\n\n\\[f(x)=xe^x, \\quad [0,2]\\]", 
+    "year": 2011, 
+    "sols": [
+        "The average value of a function $f(x)$ over an interval $[a,b]$ is given\nby\n\n\\[\\frac{1}{b-a}\\int_a^b f(x)\\, dx\\]\n\nIn this case, this is given by\n\n\\[\\frac{1}{2}\\int_0^2 xe^x\\, dx\\]\n\nLet us then compute the indefinite integral\n\n\\[\\int xe^x\\, dx\\]\n\nwhich we can compute via integration by parts. If we let $u = x$ and\n$dv = e^xdx$, then we find that\n\n\\[\\begin{matrix} u = x & v = e^x \\\\ du = dx & dv = e^xdx\\end{matrix}\\]\n\nand so it follows that\n\n\\[\\int x e^x dx = xe^x - \\int e^x dx = xe^x - e^x + C= (x - 1)e^x + C\\]\n\nIf we then put that into the definition of the average value, we find\nthat the average value is given by\n\n\\[\\frac{1}{2}\\int_0^2 xe^x\\, dx = \\frac{1}{2}(x - 1)e^x|_0^2 = \\frac{1}{2}\\big((2 - 1)e^2 - (0 - 1)e^0\\big) = \\frac{1}{2}(e^2 + 1)\\]"
+    ], 
+    "hints": [
+        "The average value of a function $f(x)$ over the interval $[a,b]$ is\ngiven by\n\n\\[\\frac{1}{b-a}\\int_a^b f(x) dx\\]"
+    ]
+}

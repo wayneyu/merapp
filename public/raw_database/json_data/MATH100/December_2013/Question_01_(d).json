@@ -1,8 +1,14 @@
 {
     "term": "December", 
+    "question": "Question_01_(d)", 
     "course": "MATH100", 
     "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nA bacteria culture initially contains 50 cells and grows at a rate\nproportional to its size. After an hour the population has increased to\n250. Find an expression for the number of bacteria after \\emph{t} hours.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "Since the bacterial culture grows at a rate proportional to its size, we\ncan say that $\\frac{dy}{dt} = ky$, where $\\displaystyle y(t)$ is the\nnumber of bacteria at time $\\displaystyle t$ (in hours).\n\nThe solution to this differential equation is:\\\\$\\displaystyle \ny(t) = y(0)e^{kt}$\\\\\\\\ We are given that $\\displaystyle y(0) = 50$ and\n$\\displaystyle y(1) = 250$, so we can solve for $\\displaystyle k$ as\nfollows:\n\n\\begin{align*}\ny(1) &= y(0)e^{k\\cdot1}\n\\\\ 250 &= 50e^k\n\\\\ 5 &= e^k\n\\\\ k &= \\ln5\n\\\\\n\\\\ \\therefore y(t) &= 50e^{\\ln(5)t}\n\\\\ &= {\\color{blue} 50 \\cdot 5^t}\\end{align*}"
+    ], 
+    "hints": [
+        "Try expressing this word problem as a \\textbf{differential equation}:\n\"{[}the culture{]} grows at a \\emph{rate proportional to its size}.\"", 
+        "What is the solution to the differential equation $\\frac{dy}{dt} = ky$?"
+    ]
 }

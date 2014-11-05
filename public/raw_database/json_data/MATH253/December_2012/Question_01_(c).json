@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(c)", 
-    "course": "MATH253", 
-    "statement": "Suppose that\n\n\\[\\displaystyle e^{xyz} = x + y + z.\\] Find\n$\\frac{\\partial z}{\\partial x}$ at the point (-1,2,0).", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

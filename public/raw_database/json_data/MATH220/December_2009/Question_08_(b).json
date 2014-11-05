@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_08_(b)", 
-    "course": "MATH220", 
-    "statement": "Let $\\displaystyle {}s_n$ be a convergent sequence such that\n$\\displaystyle {}s_n<q$ for all $n\\in\\mathbb{N}$. Prove that\n\n\\[\\lim_{n\\to\\infty}s_n\\leq{}q.\\]", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

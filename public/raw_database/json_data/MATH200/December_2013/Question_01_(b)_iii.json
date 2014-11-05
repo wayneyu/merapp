@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(b)_iii", 
-    "course": "MATH200", 
-    "statement": "Let $\\displaystyle z$ be the same implicit function as in part (ii),\ndefined by the equation $\\displaystyle x^2 z^3 + y \\sin(\\pi x) =-y^2$.\nLet $\\displaystyle x=0.97$, and $\\displaystyle y=1$. Find the\napproximate value of $\\displaystyle z$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH220", 
-    "statement": "Use mathematical induction to prove the following statements:\n\nfor all $n\\in\\mathbb{N}$,\n\n\\[1\\cdot2^2+3\\cdot2^2+5\\cdot2^3+\\dots+(2n-1)\\cdot2^n=6+2^n(4n-6).\\]", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

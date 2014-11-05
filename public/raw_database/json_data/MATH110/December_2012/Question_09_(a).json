@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_09_(a)", 
     "course": "MATH110", 
-    "statement": "In this question, you will prove by mathematical induction that the\nfollowing claim holds for all positive integers $n$.\n\n\\emph{Claim\\[1+2+2^2+2^3+\\cdots+2^n=2^{n+1}-1\\].}\n\nAccording to mathematical induction, two facts must be proven for the\nclaim to be true for all positive integers $n$. The first is the\nfollowing:\n\n\\emph{Fact 1: The claim holds for $n=1$; in other words, $1=2^{1}-1$.}\n\nCarefully write down the second fact that must be proven for the claim\nto be demonstrated for all positive integers $n$.\n\n\\emph{Fact 2:}", 
+    "statement": "In this question, you will prove by mathematical induction that the\nfollowing claim holds for all positive integers $n$.\n\n\\emph{Claim\\[1+2+2^2+2^3+\\cdots+2^n=2^{n+1}-1.\\]}\n\nAccording to mathematical induction, two facts must be proven for the\nclaim to be true for all positive integers $n$. The first is the\nfollowing:\n\n\\emph{Fact 1: The claim holds for $n=1$; in other words, $1=2^{1}-1$.}\n\nCarefully write down the second fact that must be proven for the claim\nto be demonstrated for all positive integers $n$.\n\n\\emph{Fact 2:}", 
     "year": 2012, 
     "sols": [
         "The second fact that must be proven is:\n\n\\emph{Let k be an integer. If the claim is true for $n = k$ (that is,\n$2^1 + 2^2 + \\dots + 2^k = 2^{k+1} - 1$), then the statement must be\ntrue for $n = k+1$ (meaning\n$2^1 + 2^2 + \\dots + 2^k + 2^{k+1} = 2^{k+2} - 1$).}\n\nThis fact basically states that if the claim holds for some integer, it\nis also true for the consecutive integer."

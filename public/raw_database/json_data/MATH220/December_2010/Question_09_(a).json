@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_09_(a)", 
-    "course": "MATH220", 
-    "statement": "Let $a_n\\to1$. Prove that there exists $N$ such that if $n>N$ then\n$\\displaystyle {}|a_n+1|<3$.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

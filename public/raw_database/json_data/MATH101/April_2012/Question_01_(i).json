@@ -9,6 +9,6 @@
     ], 
     "hints": [
         "At first one might think that L'Hopital's Rule would be a good strategy\nbecause evaluating the limit at zero gives an indeterminate form.\nHowever, taking the derivative of the denominator involves the chain\nrule, which will not help simplify the problem. Instead, try using a\npower series expansion of $\\sin x$ in the numerator.", 
-        "Once you have simplified the expression inside the limit using Hint 1,\nit is useful to recall the following known limit:\n\n\\[\\lim_{y\\rightarrow0}\\frac{y}{\\sin y}=1\\]\n\nwhere $y~$ can be replaced by any continuous function $y=f(x)~$ whenever\n$\\lim_{x\\rightarrow0}f(x)=0$. For example\\[y=x^5~\\]."
+        "Once you have simplified the expression inside the limit using Hint 1,\nit is useful to recall the following known limit:\n\n\\[\\lim_{y\\rightarrow0}\\frac{y}{\\sin y}=1\\]\n\nwhere $y~$ can be replaced by any continuous function $y=f(x)~$ whenever\n$\\lim_{x\\rightarrow0}f(x)=0$. For example\\[y=x^5~.\\]"
     ]
 }

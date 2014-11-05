@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(f)", 
-    "course": "MATH200", 
-    "statement": "Find all the points on the surface $\\displaystyle x^2 + 9y^2 +4z^2=17$\nwhere the tangent plane is parallel to the plane $\\displaystyle x-8z=0$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

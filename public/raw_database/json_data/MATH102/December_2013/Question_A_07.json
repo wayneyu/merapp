@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_A_07", 
-    "course": "MATH102", 
-    "statement": "The number of sunspots (solar storms on the sun) varies with a period of\nroughly 11 years reaching a high of 120 and a low of 0 sunspots\ndetected. A peak of 120 sunspots was detected in the year 2000. Which of\nthe following trigonometric functions could be used to approximate this\ncycle?\n\n(a)\n$N = 60 + 120\\sin\\left(\\frac{2\\pi}{11}(t - 2000 ) + \\frac{\\pi}{2}\\right)$\n\n(b) $N = 60 + 60\\sin\\left(\\frac{11}{2\\pi}(t + 2000 ) \\right)$\n\n(c) $N = 60 + 60\\cos\\left(\\frac{11}{2\\pi}(t + 2000) \\right)$\n\n(d) $N = 60 + 60\\sin\\left(\\frac{2\\pi}{11}(t - 2000) \\right)$\n\n(e) $N = 60 + 60\\cos\\left(\\frac{2\\pi}{11}(t - 2000 ) \\right)$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

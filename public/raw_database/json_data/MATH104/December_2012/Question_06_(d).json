@@ -8,6 +8,6 @@
         "Plugging in the values from\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)}{part\n(a)} and\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(b)}{part\n(b)} into the second degree Taylor polynomial (recalling the a value is\n1) gives\n\n\\begin{align*}\nT_{2}(x) &= f(1) + f'(1)(x-1) + f''(1)(x-1)^{2}/2 \\\\\n&= 1 + (0)(x-1) + (-2)(x-1)^{2}/2 \\\\\n&= 1 - (x-1)^{2} \\\\\n&= -x^2+2x\\\\\n&= x(2-x)\n\\end{align*}\n\nThe graph is given below.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{104Dec12Q6d.jpg}\n\\caption{104Dec12Q6d.jpg}\n\\end{figure}"
     ], 
     "hints": [
-        "Quadratic approximations are given by second degree Taylor polynomials\nwhich are given by\n\n$\\displaystyle\nT_{2}(x) = f(1) + f'(1)(x-1) + f''(1)(x-1)^{2}/2$\n\nCompute this, then graph."
+        "Quadratic approximations are given by second degree Taylor polynomials\nwhich are given by\n\n$\\displaystyle T_{2}(x) = f(1) + f'(1)(x-1) + f''(1)(x-1)^{2}/2$\n\nCompute this, then graph."
     ]
 }

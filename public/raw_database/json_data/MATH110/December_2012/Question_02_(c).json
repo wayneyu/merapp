@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_02_(c)", 
     "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $\\displaystyle\\lim_{x\\rightarrow1}f(x)=2$, then\n$\\displaystyle f(1)=2$.", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $\\displaystyle \\lim_{x\\rightarrow1}f(x)=2$, then\n$\\displaystyle f(1)=2$.", 
     "year": 2012, 
     "sols": [
         "Remember that a limit describes the y-values of a graph \\textbf{around},\nbut not \\textbf{at} the x-value, whereas $f(x)$ gives the y-value of a\ngraph \\textbf{at} \\emph{x}.\n\nSo drawing a picture where $\\lim_{x \\to 1} f(x)$ (y-values are equal to\n2 near \\emph{x = 1}) could look like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2c_example2.jpg}\n\\caption{MER MATH110 December 2012 Question 2c example2.jpg}\n\\end{figure}\n\nBut, $f(1)$, the y-value at \\emph{x = 1}, could be equal to something\nelse, like 1:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2c_example1.jpg}\n\\caption{MER MATH110 December 2012 Question 2c example1.jpg}\n\\end{figure}\n\nBecause the conclusion of the statement is not necessarily true, the\nstatement is false."

@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_A_02", 
-    "course": "MATH102", 
-    "statement": "Which of the following gives a value of\n$\\cos \\left( \\arcsin \\left( \\frac{\\sqrt{9-x^2}}{3} \\right) \\right)$ ?\n\n(a) $\\frac{3}{x}$\n\n(b) $\\frac{x}{3}$\n\n(c) $\\frac{\\sqrt{9-x^2}}{x}$\n\n(d) $\\frac{x}{\\sqrt{9-x^2}}$\n\n(e) $\\frac{3}{\\sqrt{9-x^2}}$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

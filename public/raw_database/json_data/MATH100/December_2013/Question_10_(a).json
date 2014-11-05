@@ -4,6 +4,12 @@
     "course": "MATH100", 
     "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the first Maclaurin polynomial for\n$\\displaystyle f(x) = \\ln(1-x^2)$.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "The formula for the first degree Maclaurin polynomial for the function\nis\n\n$T_1(x) = f(0) + f'(0)x$\n\nFor $f(x)=\\ln(1-x^2)$ we have$f(0) = \\ln(1) = 0$. To get $f'(0)$, we\ndifferentiate $f(x)$ using the chain rule:\n\n\\begin{align*}\nf'(x) &= \\frac{-2x}{1-x^2} \\\\\nf'(0) &= 0\n\\end{align*}\n\nThus the 1st degree Maclaurin polynomial for $f(x) = \\ln(1-x^2)$ is\n\n\\[T_1(x) = 0 + 0x = 0\\]"
+    ], 
+    "hints": [
+        "A Maclaurin polynomial is a Taylor polynomial where the approximation is\ntaken when $x$ is $0$ ($a = 0$).", 
+        "At the point where the approximation is made, the first degree\nTaylor/Maclaurin polynomial has the same first derivative as the\nfunction which it approximates.", 
+        "Recall the formula for a first degree Taylor polynomial:\n$T_1(x) = f(a) + \\frac{f<math>^{\\prime}$(a)(x-a)\\}\\{1!\\} and that for a\nMaclaurin polynomial, $a = 0.$"
+    ]
 }

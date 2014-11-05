@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(f)", 
-    "course": "MATH220", 
-    "statement": "Write the negation of the following statement:\n\n\\[\\forall{x}\\in\\mathbb{R},\\exists{}y\\in\\mathbb{Q}\\quad\\textrm{s.t.}\\quad(\\sqrt{x}\\in\\mathbb{N})\\implies(y^2>x).\\]", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

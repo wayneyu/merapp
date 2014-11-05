@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(a)_i", 
-    "course": "MATH200", 
-    "statement": "The line $\\displaystyle L$ has vector parametric equation\n$\\displaystyle \\textbf{r}(t) = (2+3t)  \\textbf{i} + 4t \\textbf{j} - \\textbf{k}$\n\n i. Write the symmetric equations for $\\displaystyle L$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

@@ -4,6 +4,11 @@
     "course": "MATH100", 
     "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nUsing the Lagrange Remainder Formula for\n$\\displaystyle f(x) = \\ln(1-x^2)$ prove that\n$\\displaystyle -\\frac{5}{32} \\leq \\ln\\left(\\frac{8}{9}\\right) \\leq -\\frac{1}{9}$.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "To begin with, we need to find $x$ such that\n$f(x) = \\ln(1-x^2) = \\ln(8/9)$, that is, $1-x^2 = 8/9$, or\n$x = \\pm 1/3$. Since $\\ln(1-x^2)$ is an even function, we can take\neither root, so we choose the positive root $x = 1/3.$\n\nFrom Taylor's Remainder theorem\n\n\\[T_1(x) + R_{1,\\text{min}}(x) \\leq f(x) \\leq T_1(x) +  R_{1,\\text{max}}(x)\\]\n\nSince $T_1(1/3) = 0$ we simply consider:\n\n\\[R_{1,\\text{min}}(1/3) \\leq \\ln(8/9) \\leq  R_{1,\\text{max}}(1/3)\\]\n\nWe calculate the upper and lower bounds of the error. To do so, we use\nthe Lagrange Remainder Formula:\n\n$R_1(1/3)=\\frac{f''(c) (1/3)^2}{2!} = \\frac{f''(c)}{18}$\n\nfor $c$ is a number in the interval $[0, 1/3]$. To find the minimal and\nmaximal value of $R_1(1/3)$ we maximize this as a function of $c$.\nFirst, observe that\n\n\\[f''(x) = \\frac{d}{dx} \\left(\\frac{-2x}{1-x^2}\\right) = \\frac{-2(x^2+1)}{(1-x^2)^2}\\]\n\nAs $x$ is increasing from 0 to 1/3, the denominator is increasing and\nthe enumerator is decreasing (note the minus sign), so that in total\n$f''(x)$ is decreasing. Hence the minimal and maximal value of the error\nis attained at $c = 1/3$ and $c = 0$, respectively.\n\nPlugging this in we obtain the required lower and upper bound for the\nerror:\n\n\\begin{align*}\n\\frac{f''(1/3)}{18} &\\leq \\ln(8/9) \\leq \\frac{f''(0)}{18} \\\\\n\\frac1{18}\\frac{-2(1/9 + 1)}{(1-1/9)^2} &\\leq \\ln(9/8) \\leq \\frac1{18}\\frac{-2(0 + 1)}{(1-0)^2} \\\\\n\\frac1{18}\\frac{-180}{64} &\\leq \\ln(9/8) \\leq \\frac1{18}(-2) \\\\\n-\\frac5{32} &\\leq \\ln(9/8) \\leq -\\frac19\n\\end{align*}"
+    ], 
+    "hints": [
+        "Use your approximation from\n\\href{Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_10_(a)}{part\n(a)} and the Lagrange remainder formula to calculate the error.", 
+        "Recall the Lagrange Remainder formula:\n\n\\[R_1(x)=\\frac{f''(c) x^2}{2!}\\]\n\nwhere $c$ is some (undetermined) number in the interval $[0, 1/3]$."
+    ]
 }

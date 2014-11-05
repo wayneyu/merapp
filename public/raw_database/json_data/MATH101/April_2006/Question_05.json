@@ -10,6 +10,6 @@
     "hints": [
         "It helps to break this problem up into two shapes and deal with the\nforce on each shape. Put a coordinate system on this figure so that 0 is\non top. Then choose a sample point first only in the square then next\nonly in the semicircle.", 
         "For the semicircle, at a sample point, draw a horizontal line and\nconnect a radius from the centre of the semicircle to the intersection\npoint with the horizontal line and the semicircle. Then use Pythagorean\ntheorem to determine lengths. A picture is included in the solution and\nmight make this hint clearer.", 
-        "Recall that the hydrostatic pressure at a depth h measured from the top\nof a surface is given by,\n\n\\[\\displaystyle P=\\rho{g}h\\]\n\nwhere $\\displaystyle  \\rho$ is the density of the substance exerting the\nforce (water in this case) and $\\displaystyle  g$ is the acceleration\ndue to gravity."
+        "Recall that the hydrostatic pressure at a depth h measured from the top\nof a surface is given by,\n\n\\[\\displaystyle P=\\rho{g}h\\]\n\nwhere $\\displaystyle \\rho$ is the density of the substance exerting the\nforce (water in this case) and $\\displaystyle g$ is the acceleration\ndue to gravity."
     ]
 }

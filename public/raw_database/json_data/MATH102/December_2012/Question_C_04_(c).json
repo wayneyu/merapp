@@ -5,9 +5,9 @@
     "statement": "Dead leaves accumulate on the ground in a forest at a rate of 5 grams\nper square centimeter per year. At the same time, these leaves decompose\nat a continuous rate of 50 percent per year.\n\n(c) Sketch the graph of the solution to your differential equation\nshowing that the mass of dead leaves tends toward a steady state\nassuming that initially (\\emph{t = 0}) there are no leaves on the\nground.", 
     "year": 2012, 
     "sols": [
-        "We want to sketch the solution without solving the equation. Hence, we\ndraw the phase space. Therefore, we first make a table with $\\ Q$ and\nthe corresponding $dQ/dt$.\n\n\\begin{longtable}[c]{@{}llllll@{}}\n$\\ Q=0$ & $\\ Q=2$ & $\\ Q=4$ & $\\ Q=6$ & $\\ Q=8$ & $\\ Q=10$\\\\\n$\\ dQ/dt=5$ & $\\ dQ/dt=4$ & $\\ dQ/dt=3$ & $\\ dQ/dt=2$ & $\\ dQ/dt=1$ &\n$\\ dQ/dt=0$\\\\\n\\end{longtable}\n\nAfter drawing the phase space, the curve of the solution can be plotted\nby following the slopes.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH102_December_2012_Question_C_4_(c)_Image_1.png}\n\\caption{MATH102\\_December\\_2012\\_Question\\_C\\_4\\_\\%28c\\%29\\_Image\\_1.png}\n\\end{figure}"
+        "We want to sketch the solution without solving the equation. Hence, we\ndraw the phase space. Therefore, we first make a table with $Q$ and the\ncorresponding $dQ/dt$.\n\n\\begin{longtable}[c]{@{}llllll@{}}\n$Q=0$ & $Q=2$ & $Q=4$ & $Q=6$ & $Q=8$ & $Q=10$\\\\\n$dQ/dt=5$ & $dQ/dt=4$ & $dQ/dt=3$ & $dQ/dt=2$ & $dQ/dt=1$ & $dQ/dt=0$\\\\\n\\end{longtable}\n\nAfter drawing the phase space, the curve of the solution can be plotted\nby following the slopes.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH102_December_2012_Question_C_4_(c)_Image_1.png}\n\\caption{MATH102\\_December\\_2012\\_Question\\_C\\_4\\_\\%28c\\%29\\_Image\\_1.png}\n\\end{figure}"
     ], 
     "hints": [
-        "Draw the phase space to see the slopes of the solution. Then draw the\nsolution by starting at $\\ (0,0)$ and following the slopes until you\nreach the equilibrium."
+        "Draw the phase space to see the slopes of the solution. Then draw the\nsolution by starting at $(0,0)$ and following the slopes until you reach\nthe equilibrium."
     ]
 }

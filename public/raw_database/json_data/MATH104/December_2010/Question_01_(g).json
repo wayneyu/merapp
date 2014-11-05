@@ -9,6 +9,6 @@
     ], 
     "hints": [
         "Notice that finding a solution to f(x)=x is the same as finding the root\nof an equation g(x)=f(x)-x.", 
-        "How can you use the tangent line y=5x-7 to give you information about\n$\\displaystyle{}f(x_0)$ and $\\displaystyle{}f'(x_0)$?"
+        "How can you use the tangent line y=5x-7 to give you information about\n$\\displaystyle {}f(x_0)$ and $\\displaystyle {}f'(x_0)$?"
     ]
 }

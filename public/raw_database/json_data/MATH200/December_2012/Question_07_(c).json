@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_07_(c)", 
-    "course": "MATH200", 
-    "statement": "Let\n\n\\[I = \\int_0^4 \\int_{\\sqrt 4}^{\\sqrt{8-y}} f(x, y)\\,dx\\,dy.\\]\n\n\\textbf{(c)} Evaluate the integral for $f(x, y) = \\frac1{(1+y)^2}$\n\nHint: You may use\n$\\frac1{9-x^2} = \\frac16\\left(\\frac1{x+3} - \\frac1{x-3}\\right)$", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

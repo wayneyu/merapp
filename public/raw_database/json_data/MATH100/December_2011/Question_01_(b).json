@@ -8,6 +8,6 @@
         "If you try to evaluate the limit directly, you end up with 0/0, which\nmeans we cannot conclude anything for the moment, more work needs to be\ndone. Since we have a square root, we will multiply on each side of the\nfraction by the conjugate in the hope to simplify things:\n\n\\begin{align*}\n\\lim_{x \\to 1} \\frac{\\sqrt{x+3}-2}{x-1} &= \\lim_{x \\to 1} \\frac{(\\sqrt{x+3}-2)}{(x-1)}\\frac{(\\sqrt{x+3}+2)}{(\\sqrt{x+3}+2)}\\\\\n&= \\lim_{x \\to 1} \\frac{(x+3)-4}{(x-1)(\\sqrt{x+3}+2)}\\\\\n&= \\lim_{x \\to 1} \\frac{x-1}{(x-1)(\\sqrt{x+3}+2)}\\\\\n&= \\lim_{x \\to 1} \\frac{1}{(\\sqrt{x+3}+2)}\\\\\n&= \\frac{1}{4}\n\\end{align*}"
     ], 
     "hints": [
-        "If you try to evaluate the limit directly, you end up with 0/0, which\nmeans we cannot conclude anything for the moment. Factorizing would be a\ngreat idea but because of the square root it is not possible. Hence, how\ncould we 'get rid' of the square root at the numerator?"
+        "If you try to evaluate the limit directly, you end up with 0/0, which\nmeans we cannot conclude anything for the moment. Factorizing would be a\ngreat idea but because of the square root it is not possible. Hence, how\ncould we'get rid' of the square root at the numerator?"
     ]
 }

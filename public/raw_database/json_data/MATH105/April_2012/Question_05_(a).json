@@ -5,7 +5,7 @@
     "statement": "If\n\n\\[F(x) = \\int_0^x \\ln(2+\\sin t)\\,dt\\] and\n\n\\[G(y) = \\int_y^0 \\ln(2+\\sin t)\\,dt,\\]\n\nfind $\\displaystyle F'\\left(\\frac{\\pi}2\\right)$ and\n$\\displaystyle G'\\left(\\frac{\\pi}2\\right)$.", 
     "year": 2012, 
     "sols": [
-        "By the Fundamental Theorem of Calculus, if\n\n\\[F(x) = \\int_0^x \\ln(2 + \\sin t) dt\\]\n\nthen\n\n\\[\\displaystyle F'(x) = \\ln(2 + \\sin x)\\].\n\nSimilarly,\n\n\\[G(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt\\]\n\nso the Fundamental Theorem of Calculus tells us that\n\n\\[\\displaystyle G'(y) = - \\ln(2 + \\sin y).\\]\n\nWe now can evaluate\n\n\\[\\displaystyle F'(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3\\]\nand\n\n\\[\\displaystyle G'(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.\\]"
+        "By the Fundamental Theorem of Calculus, if\n\n\\[F(x) = \\int_0^x \\ln(2 + \\sin t) dt\\]\n\nthen\n\n\\[\\displaystyle F'(x) = \\ln(2 + \\sin x).\\]\n\nSimilarly,\n\n\\[G(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt\\]\n\nso the Fundamental Theorem of Calculus tells us that\n\n\\[\\displaystyle G'(y) = - \\ln(2 + \\sin y).\\]\n\nWe now can evaluate\n\n\\[\\displaystyle F'(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3\\]\nand\n\n\\[\\displaystyle G'(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.\\]"
     ], 
     "hints": [
         "Use a \\emph{fundamental} theorem that connects integration and\ndifferentiation."

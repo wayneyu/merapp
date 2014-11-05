@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_01_(i)", 
-    "course": "MATH215", 
-    "statement": "Given $\\displaystyle \nL[\\sqrt{t}] = \\frac{\\pi}{2s^{3/2}}$ find\n$L\\left[\\frac{1}{\\sqrt{t}}\\right]$", 
-    "year": 2014, 
-    "sols": [], 
-    "hints": []
-}

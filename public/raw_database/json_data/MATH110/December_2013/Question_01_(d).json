@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(d)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nd) If $\\displaystyle f(x)$ is differentiable at x = 2, then\n$\\lim_{x \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

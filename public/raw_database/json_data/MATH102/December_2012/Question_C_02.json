@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_C_02", 
     "course": "MATH102", 
-    "statement": "Use the definition of the derivative to calculate the derivative of\n\n\\[g(x) = \\sqrt{x}\\]\n\nThe following might be a useful fact in simplifying the\nlimit\\[(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b\\].", 
+    "statement": "Use the definition of the derivative to calculate the derivative of\n\n\\[g(x) = \\sqrt{x}\\]\n\nThe following might be a useful fact in simplifying the\nlimit\\[(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b.\\]", 
     "year": 2012, 
     "sols": [
         "Using the definition of the derivative from the hint, we set up:\n\n$g'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h}$\n\nNow we use the hint from the statement of the question. If we multiply\nby a conjugate, we can move the square roots and make our limit easier\nto solve.\n\n\\begin{align*}\ng'(x) &= \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h} * \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} \\\\\n&= \\lim_{h \\to 0} \\frac{x + h - x}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\frac{1}{(\\sqrt{x + 0} + \\sqrt{x})} \\\\\n&= \\frac{1}{2\\sqrt{x}} \\\\\n\\end{align*}"

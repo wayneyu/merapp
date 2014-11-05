@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_01_(g)", 
-    "course": "MATH215", 
-    "statement": "Use two steps of Euler's method with time step $\\displaystyle h = 0.5$\nto estimate $y(1)$ for the following problem:\n\n$\\displaystyle \ny'(t) = (2t - y)^2 \\quad  y(0) = 2$", 
-    "year": 2014, 
-    "sols": [], 
-    "hints": []
-}

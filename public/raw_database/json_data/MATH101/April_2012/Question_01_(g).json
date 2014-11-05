@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_01_(g)", 
     "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nLet\n\n\\[R_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}\\].\n\nExpress $\\lim_{n \\to \\infty} R_{n}$ as a definite integral. \\emph{Do not\nevaluate this integral.}", 
+    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nLet\n\n\\[R_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}.\\]\n\nExpress $\\lim_{n \\to \\infty} R_{n}$ as a definite integral. \\emph{Do not\nevaluate this integral.}", 
     "year": 2012, 
     "sols": [
         "Notice that $e^{i/n}$ occurs in the summand. This suggests that\n$x_{i} = i/n$ and so we can take $a = 0$. Writing the sum as\n\n$\\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\sum_{i=1}^{n}\\frac{1}{n}\\cdot \\frac{ie^{i/n}}{n}$\n\nthe last fraction suggests that a possible function is $f(x) = xe^{x}$\nwhich can be seen by noting that we have\n\n$f(x_{i}) = \\frac{ie^{i/n}}{n}.$\n\nAlso, we have\n\n$\\Delta x = \\frac{1}{n} = \\frac{b-a}{n}$\n\nand since $a=0$ we have that $b=1$. Combining this gives\n\n$\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx$\n\ncompleting the question."

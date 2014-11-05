@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_08_(a)", 
-    "course": "MATH220", 
-    "statement": "Suppose that $s_n\\to0$. Prove that if $\\displaystyle {}t_n$ is a bounded\nsequence then\n\n\\[\\lim_{n\\to\\infty}(s_nt_n)=0.\\]", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

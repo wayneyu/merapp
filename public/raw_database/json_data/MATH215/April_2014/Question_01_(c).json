@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH215", 
-    "statement": "Consider $\\frac{dy}{dt} = y(1 - y)(2 - y)$. For what possible initial\nconditions $y(0)$ does $\\lim_{t\\to \\infty} y(t) = 1$?", 
-    "year": 2014, 
-    "sols": [], 
-    "hints": []
-}

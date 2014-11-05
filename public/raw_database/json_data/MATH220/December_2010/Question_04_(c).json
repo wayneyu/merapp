@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_04_(c)", 
-    "course": "MATH220", 
-    "statement": "Let \\[f:A\\to{B}\\] and $g:B\\to{A}$ be functions so that $g\\circ{f}$ is an\ninjection.\n\nProve or disprove that the composition $f\\circ{g}$ must be injective.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

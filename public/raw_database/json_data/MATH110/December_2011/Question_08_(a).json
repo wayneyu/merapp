@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_08_(a)", 
     "course": "MATH110", 
-    "statement": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(a) Suppose that \\emph{a \u2260 0}. Find the equation of the line tangent to\nthe curve at\n\n\\[x = \\frac{b}{a}\\].", 
+    "statement": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(a) Suppose that \\emph{a \u2260 0}. Find the equation of the line tangent to\nthe curve at\n\n\\[x = \\frac{b}{a}.\\]", 
     "year": 2011, 
     "sols": [
         "If \\emph{a} is different than zero, then the given curve is a polynomial\nof degree 7. Let\n\n\\[\\displaystyle\nf(x) = (ax+b)^7\\] then its derivative (using the chain rule) is\n\n\\[\\displaystyle\nf'(x) = 7(ax+b)^6 \\cdot a = 7a(ax+b)^6\\] and so the slope of the tangent\nline to this curve at the point \\emph{x} = \\emph{b}/\\emph{a} is\n\n\\[\\displaystyle\nf'(b/a) = 7a(a \\left( \\frac{b}{a} \\right) +b)^6 = 7a(2b)^6 = 2^6 \\cdot 7 a b^6\\]\nAnd the \\emph{y} coordinate of that point is $f(b/a)$ which is\n\n\\[\\displaystyle\nf(b/a) = (a \\left( \\frac{b}{a} \\right) +b)^7 = (2b)^7 = 2^7b^7\\] So\nusing the standard equation\n\n\\[\\displaystyle\ny=m(x-x_0)+y_0\\] for a line of slope \\emph{m} and going through the\npoint (\\emph{x}\\textsubscript{0}, \\emph{y}\\textsubscript{0}) we obtain\n\n\\[\\displaystyle\ny=2^6 \\cdot 7 a b^6 (x-\\frac{b}{a}) + 2^7b^7\\] which you can simplify a\nbit and obtain\n\n\\[\\displaystyle\ny=2^6 \\cdot 7 a b^6 x - 2^6 \\cdot 5 b^7\\] or if you compute things out\n\n\\[\\displaystyle\ny=448 a b^6 x - 320 b^7\\] You don't need to do the last two steps during\na test usually."

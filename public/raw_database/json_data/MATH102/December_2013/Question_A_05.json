@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_A_05", 
-    "course": "MATH102", 
-    "statement": "Consider the function $y = \\cos(x)$ and the tangent line to this\nfunction at the point $x = \\pi/2$. Using that tangent line as a linear\napproximation of the function would lead to\n\n(a) overestimating the value of the actual function for any nearby\n\\emph{x}.\n\n(b) underestimating the value of the actual function for any nearby\n\\emph{x}.\n\n(c) overestimating the function when $x > \\pi/2$ and underestimating the\nfunction when $x < \\pi/2$.\n\n(d) overestimating the function when $x < \\pi/2$ and underestimating the\nfunction when $x > \\pi/2$.\n\n(e) overestimating the function when $x < 0$ and underestimating the\nfunction when $x > 0$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

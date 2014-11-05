@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_07_(a)", 
-    "course": "MATH200", 
-    "statement": "Let\n\n\\[I = \\int_0^4 \\int_{\\sqrt 4}^{\\sqrt{8-y}} f(x, y)\\,dx\\,dy.\\]\n\n\\textbf{(a)} Sketch the domain of integration.", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

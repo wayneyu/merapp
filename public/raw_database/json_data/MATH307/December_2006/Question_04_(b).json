@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_04_(b)", 
-    "course": "MATH307", 
-    "statement": "Consider the real matrix\n\n\\[A = \\begin{bmatrix}\n2 & 1 \\\\\n-8 & 2 \n\\end{bmatrix}\\]\n\nWrite down (using complex numbers) the general solution of the system of\ndifferential equations\n\n\\[\\frac{d}{dt}\\vec{x}(t) = A\\vec{x}(t).\\]", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
-}

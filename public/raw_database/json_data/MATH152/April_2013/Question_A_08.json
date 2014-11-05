@@ -5,7 +5,7 @@
     "statement": "Give \\textbf{all solutions} to the homogeneous system $Ax = 0$ where\n\n\\[A = \\begin{bmatrix}\n1 & 7 & 7 & ... & 7 \\\\\n0 & 2 & 7 & ... & 7 \\\\\n0 & 0 & 3 & ... & 7 \\\\\n\\vdots & \\vdots &  & \\ddots & \\vdots \\\\\n0 & 0 & 0 & ... & 13 \\\\\n\\end{bmatrix}\\]\n\nJustify that you have provided all solutions.", 
     "year": 2013, 
     "sols": [
-        "Since the matrix is in upper triangular form, we can see immediately\nthat it is of full rank, as none of the diagonal entries are 0. Then the\nsystem has exactly 1 solution. Clearly, the zero vector is a solution\n(to any homogenous system), so the only solution is the trivial\nsolution\\[x = 0\\].", 
+        "Since the matrix is in upper triangular form, we can see immediately\nthat it is of full rank, as none of the diagonal entries are 0. Then the\nsystem has exactly 1 solution. Clearly, the zero vector is a solution\n(to any homogenous system), so the only solution is the trivial\nsolution\\[x = 0.\\]", 
         "We can work out the solution coordinate by coordinate using the\naugmented matrix:\n\n\\[\\begin{bmatrix}\n1 & 7 & 7 & ... & 7 & | &  0\\\\\n0 & 2 & 7 & ... & 7 & | &  0\\\\\n0 & 0 & 3 & ... & 7 & | &  0\\\\\n\\vdots & \\vdots &  & \\ddots & \\vdots & | &  \\vdots\\\\\n0 & 0 & 0 & ... & 13 & | &  0\\\\\n\\end{bmatrix}\\]\n\nThe last row (13th) gives $13x_{13} = 0$, so $x_{13} = 0$. The 12th row\ngives $12x_{12} + 7x_{13} = 0$, but $x_{13} = 0$, so $x_{12} = 0$.\nSimilarly, we calculate $x_{1} = x_{2} = \\ldots = x_{10} = 0$, so the\nonly solution is $x = 0$."
     ], 
     "hints": [

@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_01_(e)", 
-    "course": "MATH215", 
-    "statement": "Find the general solution of the differential equation system:\n\n$\\displaystyle \n\\frac{d\\vec{y(}t)}{dt} =\n\\begin{pmatrix}\n7 &3\\\\\n5 &-7\n\\end{pmatrix}\n\\vec{y}(t)$", 
-    "year": 2014, 
-    "sols": [], 
-    "hints": []
-}

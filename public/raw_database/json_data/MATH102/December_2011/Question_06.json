@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06", 
+    "course": "MATH102", 
+    "statement": "Let $f(x) = \\ln(x^{3})$ and $g(x) = (\\ln x)^{3}$. Find \\emph{all} values\nof \\emph{x} where the tangent lines of these two functions have the same\nslope (or show that no such values exist).", 
+    "year": 2011, 
+    "sols": [
+        "First, we take derivatives and see that\n\n$\\displaystyle f'(x) = \\frac{1}{x^{3}}(3x^{2}) = \\frac{3}{x}$\n\n$\\displaystyle g'(x) = 3(\\ln(x))^{2}\\frac{1}{x} = \\frac{3(\\ln(x))^{2}}{x}$\n\nSetting the derivatives equal to each other gives\n\n$\\displaystyle \\frac{3}{x} = \\frac{3(\\ln(x))^{2}}{x}$\n\nwhich implies that\n\n$\\displaystyle (\\ln(x))^{2} = 1$\n\nHence, we have that $\\displaystyle \\ln(x) = 1$ or\n$\\displaystyle \\ln(x) = -1$. The first gives the solution\n$\\displaystyle x = e$ and the second gives $\\displaystyle x = e^{-1}$\nboth seen by exponentiating both sides. Both of these values are in the\ndomain of the original function and so this completes the proof."
+    ], 
+    "hints": [
+        "Remember that tangent line slopes are just derivatives at points. So\ntake derivatives and set them equal."
+    ]
+}

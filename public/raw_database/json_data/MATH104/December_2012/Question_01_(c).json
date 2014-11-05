@@ -5,7 +5,7 @@
     "statement": "Differentiate the function\n\n\\[\\displaystyle{}f(x)=(x+1)^{\\cos(x)}\\]", 
     "year": 2012, 
     "sols": [
-        "Use logarithmic differentiation on this function.\n\n\\begin{align*}\nf(x) &=(x+1)^{\\cos(x)}\\\\\n\\ln(f(x)) &= \\ln((x+1)^{\\cos(x)})\\\\\n&= \\cos(x)\\ln(x + 1)\n\\end{align*} Taking the derivative of this equation with respect to $x$\ngives:\n\n\\begin{align*}\n\\frac{d}{dx}\\left[\\ln(f(x))\\right] &= \\frac{d}{dx}\\left[\\cos(x)\\ln(x + 1)\\right] \\\\\n\\frac{f'(x)}{f(x)} &= \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\\\\nf'(x) &= f(x)\\left( \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\right)\\\\\n{\\color{blue}f'(x)} &{\\color{blue}\\,= (x+1)^{\\cos(x)}\\left( \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\right)}\n\\end{align*}"
+        "Use logarithmic differentiation on this function.\n\n\\begin{align*}\nf(x) &=(x+1)^{\\cos(x)}\\\\\n\\ln(f(x)) &= \\ln((x+1)^{\\cos(x)})\\\\\n&= \\cos(x)\\ln(x + 1)\n\\end{align*} Taking the derivative of this equation with respect to $x$\ngives:\n\n\\begin{align*}\n\\frac{d}{dx}\\left[\\ln(f(x))\\right] &= \\frac{d}{dx}\\left[\\cos(x)\\ln(x + 1)\\right] \\\\\n\\frac{f'(x)}{f(x)} &= \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\\\\nf'(x) &= f(x)\\left( \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\right)\\\\\n{\\color{blue}f'(x)} &{\\color{blue}\\,= (x+1)^{\\cos(x)}\\left( \\frac{\\cos(x)}{x + 1} - \\sin(x)\\ln(x+1) \\right)}\\end{align*}"
     ], 
     "hints": [
         "Notice that both the base and exponent of $f(x)$ are functions of $x$,\nso neither the power rule nor the exponential derivative rule will work\nhere. What operation can you do to $f(x)$ to express it as a product of\nfunctions?", 

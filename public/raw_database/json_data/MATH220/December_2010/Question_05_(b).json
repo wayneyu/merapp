@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_05_(b)", 
-    "course": "MATH220", 
-    "statement": "Prove that the following function is bijective:\n\n\\[f:\\mathbb{R}-\\{-2\\}\\to\\mathbb{R}-\\{1\\}\\]\n\ndefined by\n\n\\[f(x)=\\frac{x+1}{x+2}.\\]", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

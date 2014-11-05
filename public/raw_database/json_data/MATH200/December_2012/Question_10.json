@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_10", 
-    "course": "MATH200", 
-    "statement": "Evaluate\n\n\\[\\int_{-1}^1 \\int_{-\\sqrt{1-x^2}}^{\\sqrt{1-x^2}} \\int_{1-\\sqrt{1-x^2-y^2}}^{1+\\sqrt{1-x^2-y^2}} (x^2+y^2+z^2)^{\\frac52}\\, dz\\, dy\\, dx\\]\n\nby changing to spherical coordinates.", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

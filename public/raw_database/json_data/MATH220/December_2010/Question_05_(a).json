@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH220", 
-    "statement": "Prove that the set\n$S=\\{x\\in\\mathbb{R}\\quad\\textrm{s.t.}\\quad\\sin(x)=0\\}$ is countable.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

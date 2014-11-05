@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH220", 
-    "statement": "Let $a\\in\\mathbb{Z}$. Prove that $\\displaystyle {}a$ is even if and only\nif $\\displaystyle {}a^3$ is even.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

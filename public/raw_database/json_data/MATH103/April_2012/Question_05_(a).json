@@ -8,6 +8,6 @@
         "In order to satisfy the second condition given in the hint, we must have\nthe following equality hold:\n\n\\[1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx\\]\n\nHowever, this is easy enough to solve, especially if we remember that\n$\\int \\frac1{1 + x^2}\\,dx = \\arctan{x}$.\n\n\\[1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx = k(\\arctan{\\sqrt{3}}-\\arctan(0)) = \\frac{k\\pi}3,\\]\n\nhence $k = \\frac3{\\pi}$.\n\n(Or $k = \\frac1{\\arctan \\sqrt{3} }$, we used\n$\\arctan(\\sqrt{3}) = \\pi/3$.)"
     ], 
     "hints": [
-        "For \\emph{p} to be a probability density function it needs to satisfy\ntwo conditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{p}(\\emph{t}) \u2265 0 for all \\emph{t},\n\\item\n  $\\int_{-\\infty}^\\infty p(t)\\,dt = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
+        "For \\emph{p} to be a probability density function it needs to satisfy\ntwo conditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{p}(\\emph{t}) $\\geq$ 0 for all \\emph{t},\n\\item\n  $\\int_{-\\infty}^\\infty p(t)\\,dt = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
     ]
 }

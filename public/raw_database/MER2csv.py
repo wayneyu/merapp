@@ -8,6 +8,7 @@ import warnings
 import os
 import subprocess
 import json
+import argparse
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -33,6 +34,7 @@ def handleImages(content, directory):
         fullOldName = os.path.join(directory, imageName)
         fullNewName = os.path.join(directory, newName)
         x = subprocess.check_output(["convert", fullOldName, fullNewName])
+        os.remove(fullOldName)
         return newName
 
     def do_string(content_str):
@@ -207,15 +209,6 @@ def postCleaning(input):
     input = input.replace("\\\\]", "\\]")
     input = re.sub(r"\\\[\\displaystyle\s*\n\\begin{align\*}",
                    r"\\begin{align*}", input)
-
-
-#    two_newlines_dollar = r'\$([\s\S]*?)\n\n([\s\S]*?)\$'
-#    input = re.sub(two_newlines_dollar, r'$\1\2$', input)
-#    input = re.sub(two_newlines_dollar, r'$\1\2$', input)
-#    two_newlines_align = r'align((?!align)[\s\S]*?)\n\n((?!align)[\s\S]*?)align'
-#    input = re.sub(two_newlines_align, r'align\1\2align', input)
-#    input = re.sub(two_newlines_align, r'align\1\2align', input)
-
     input = re.sub('\\begin{align\*}\n+', '\\begin{align*}\n', input)
 
     input = input.replace('\\toprule\\addlinespace\n', '')
@@ -308,8 +301,8 @@ def get_all_topics():
     return topicLinks
 
 
-def write_topics_questions_table():
-    outfile = open('raw_topics_questions.csv', 'w')
+def write_questions_topic(where_to_save='questions_topic.csv'):
+    outfile = open(where_to_save, 'w')
     outfile.write('%s,%s\n' % ('Topic', 'Question'))
     topics = get_all_topics()
     topics = ['http://wiki.ubc.ca' + t for t in topics]
@@ -500,14 +493,24 @@ def create_lists_for_SQL():
             num_votes, ratings, num_hints, num_sols)
 
 
-def main():
+def write_questions_meta(where_to_save='questions_meta.csv'):
     (URLs, courses, exams, questions, num_votes, ratings, num_hints,
      num_sols) = create_lists_for_SQL()
-    f = open("raw_data.csv", 'w')
+    f = open(where_to_save, 'w')
     for u, c, e, q, v, r, h, s in zip(URLs, courses, exams, questions,
                                       num_votes, ratings, num_hints, num_sols):
         f.write("%s,%s,%s,%s,%s,%s,%s,%s\n" % (u, c, e, q, v, r, h, s))
     f.close()
 
 if __name__ == "__main__":
-    main()
+    p = argparse.ArgumentParser(description='Download MER meta or topic data')
+    p.add_argument('--topic', dest='topic',
+                   action='store_true',
+                   help='download topic data')
+    p.set_defaults(topic=False)
+    args = p.parse_args()
+
+    if not args.topic:
+        write_questions_meta()
+    else:
+        write_questions_topic()

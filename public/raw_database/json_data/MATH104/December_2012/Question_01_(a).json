@@ -5,7 +5,7 @@
     "statement": "Compute\n\n\\[\\lim_{x\\to0}\\frac{\\sqrt{x+1}-1}{x}\\]", 
     "year": 2012, 
     "sols": [
-        "\\begin{align*}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&= \\frac{1}{2}\n\\end{align*}\n\n\\[{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} = \\frac{1}{2}}\\]"
+        "\\begin{align*}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&= \\frac{1}{2}\n\\end{align*}\n\n\\[{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}\\]"
     ], 
     "hints": [
         "Try multiplying the numerator and denominator by the radical conjugate\nof the numerator. Something may cancel out which should allow you to\nsimply plug in $x = 0$."

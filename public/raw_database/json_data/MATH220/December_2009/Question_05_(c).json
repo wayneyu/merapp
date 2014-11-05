@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_05_(c)", 
-    "course": "MATH220", 
-    "statement": "Use mathematical induction to prove the following statements:\n\nfor all $n\\in\\mathbb{N}$,\n\n\\[\\sum_{j=1}^nj^3>\\frac{1}{4}n^4.\\]", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

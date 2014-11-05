@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(a)_ii", 
-    "course": "MATH200", 
-    "statement": "The line $\\displaystyle L$ has vector parametric equation\n$\\displaystyle \\textbf{r}(t) = (2+3t)  \\textbf{i} + 4t \\textbf{j} - \\textbf{k}$\n\n ii. Let $\\displaystyle \\alpha$ be the angle between the line\n$\\displaystyle L$ and the plane given by the equation\n$\\displaystyle x - y + 2z=0$. Find $\\displaystyle \\alpha$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

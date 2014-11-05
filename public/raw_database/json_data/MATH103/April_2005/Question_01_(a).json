@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH103", 
-    "statement": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(a)} The value of the integral\n\n\\[\\int_0^1 e^{(x+e^x)}\\,dx\\] is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle{} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)}$\n\n\\emph{(ii)} ~ $\\displaystyle{} e^e-e$\n\n\\emph{(iii)} ~ $\\displaystyle{} e^e+e$\n\n\\emph{(iv)} ~ $\\displaystyle{} e^{e+1}$\n\n\\emph{(v)} ~ $\\displaystyle{} (1-e)e$\n\\end{description}", 
+    "statement": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(a)} The value of the integral\n\n\\[\\int_0^1 e^{(x+e^x)}\\,dx\\] is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle {} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)}$\n\n\\emph{(ii)} ~ $\\displaystyle {} e^e-e$\n\n\\emph{(iii)} ~ $\\displaystyle {} e^e+e$\n\n\\emph{(iv)} ~ $\\displaystyle {} e^{e+1}$\n\n\\emph{(v)} ~ $\\displaystyle {} (1-e)e$\n\\end{description}", 
     "year": 2005, 
     "sols": [
         "Rewrite the integral as\n\n$\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.$\n\nLet $u=e^{x}$. Then $du=e^{x}dx$, and our new endpoints of integration\nare\n\n$e^{1}=e \\qquad\\text{ and }\\qquad e^{0}=1.$\n\nThus, our integral becomes\n\n$\\int_{1}^{e} e^{u}du=e^{u}\\mid _{1}^{e}=e^e-e.$\n\nTherefore, the correct answer is (ii)."

@@ -8,6 +8,6 @@
         "\\textbf{(a)} Using the hint we see that, first of all, \\emph{k} needs to\nbe a positive constant. We can calculate \\emph{k} explicitly by\nintegrating:\n\n\\begin{align*}\n\\int_{-\\infty}^\\infty f(x)\\,dx &= \\int_{-\\infty}^0 0\\,dx + \\int_0^1 kx^2(1-x)\\,dx + \\int_1^\\infty 0\\,dx \\\\\n&= k \\int_0^1 (x^2-x^3)\\,dx \\\\\n&= k\\left.\\left(\\frac{x^3}3-\\frac{x^4}4\\right)\\right|_0^1 \\\\\n&= k \\left(\\frac13 - \\frac14\\right) \\\\\n&= \\frac{k}{12}.\n\\end{align*}\n\nThe only way that this integral has value 1 is when \\textbf{\\emph{k} =\n12}."
     ], 
     "hints": [
-        "For $f$ to be a probability density function it needs to satisfy two\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$(x) \u2265 0 for all \\emph{x},\n\\item\n  $\\int_{-\\infty}^\\infty f(x)\\,dx = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
+        "For $f$ to be a probability density function it needs to satisfy two\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$(x) $\\geq$ 0 for all \\emph{x},\n\\item\n  $\\int_{-\\infty}^\\infty f(x)\\,dx = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
     ]
 }

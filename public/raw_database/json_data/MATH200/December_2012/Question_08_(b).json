@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_08_(b)", 
-    "course": "MATH200", 
-    "statement": "A metal crescent is obtained by removing the interior of the circle\ndefined by the equation $\\displaystyle x^2 + y^2 = x$ from the metal\nplate of constant density 1 occupying the unit disc $x^2 + y^2 \\leq 1$.\n\n\\textbf{(b)} Find the \\emph{x}-coordinate of its center of mass.\n\nHint: you may use the fact that\n$\\int_{-\\pi/2}^{\\pi/2} \\cos^4(\\theta)\\,d\\theta = \\frac{3\\pi}8$", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

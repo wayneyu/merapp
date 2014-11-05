@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_C_01", 
-    "course": "MATH102", 
-    "statement": "A mollusc grows inside a shell and produces new shell material at its\nopening (indicated in the image below in bold)\n\n(img)\n\nThe volume of the shell can be approximated as that of a cone of base\nradius \\emph{r} and height \\emph{h}.\n\n(img)\n\nGiven that the height of the cone grows at a constant rate of 0.1\ncm/year, at what rate will the volume of the cone be changing when\n\\emph{h = 10} and \\emph{r = 1} cm? Leave your answer in terms of $/pi$\n\nNote that:\n\n$V_{cone} = \\frac13 \\pi r^2 h$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

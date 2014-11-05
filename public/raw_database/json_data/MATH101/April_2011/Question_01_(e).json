@@ -5,7 +5,7 @@
     "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the sequence is convergent or divergent. In case it is\nconvergent, compute its limit:\n\n\\[\\left\\{  \\frac{\\sin(n)}{\\ln(n)}  \\right\\}_{n=2}^{\\infty}\\]", 
     "year": 2011, 
     "sols": [
-        "For $n \\geq 2$, we have\n\n$\\left|  \\frac{\\sin(n)}{\\ln(n)}\\right| \\leq \\frac{1}{\\ln(n)}  \\quad \\textstyle{ \\text{ and } } \\quad\n\\displaystyle{ \\lim_{n \\rightarrow \\infty} \\frac{1}{\\ln(n)} = 0 }.$.\n\nSo, by the Squeeze Theorem,\n$\\left\\{ \\frac{\\sin(n)}{\\ln(n)} \\right\\}_{n=2}^{\\infty}$ converges to\n$\\displaystyle{0}.$"
+        "For $n \\geq 2$, we have\n\n$\\left|  \\frac{\\sin(n)}{\\ln(n)}\\right| \\leq \\frac{1}{\\ln(n)}  \\quad \\textstyle{ \\text{ and } } \\quad\n\\displaystyle{ \\lim_{n \\rightarrow \\infty} \\frac{1}{\\ln(n)} = 0 }.$.\n\nSo, by the Squeeze Theorem,\n$\\left\\{ \\frac{\\sin(n)}{\\ln(n)} \\right\\}_{n=2}^{\\infty}$ converges to\n$\\displaystyle {0}.$"
     ], 
     "hints": [
         "$|\\sin n| \\leq 1.$", 

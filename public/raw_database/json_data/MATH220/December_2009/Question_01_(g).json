@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(g)", 
-    "course": "MATH220", 
-    "statement": "Define the sets\n\n\\[X=\\bigcap_{\\alpha\\in{I}}S_\\alpha\\]\n\nand\n\n\\[Y=\\bigcup_{\\alpha\\in{I}}S_\\alpha.\\]", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

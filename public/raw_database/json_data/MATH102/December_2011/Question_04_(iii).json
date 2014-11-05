@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(iii)", 
+    "course": "MATH102", 
+    "statement": "Consider the function\n\n\\[f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\]\n\niii) Find the x-values of all the inflection points of f(x).\n\n\\emph{Note: if inflection points do not exist, say so.}", 
+    "year": 2011, 
+    "sols": [
+        "The previous part gave us that\n\n\\[\\displaystyle\nf'(x) = x^{3} - 6x^{2} + 9x = x(x^{2} - 6x + 9) = x(x-3)^{2}.\\]\n\nLet's compute the second derivative of the function:\n\n\\[\\displaystyle\nf''(x) = 3x^2 -12x + 9\\] and then factor it\n\n\\begin{align*}\nf''(x) &= 3x^2 -12x + 9\\\\\n&= 3(x^2-4x+3) \\\\\n&= 3(x-1)(x-3)\n\\end{align*}\n\nThis is plenty enough to get the sign table of the second derivative.\n\n\\begin{longtable}[c]{@{}llllll@{}}\n& & $\\displaystyle 1$ & & $\\displaystyle 3$ &\\\\\n$\\displaystyle 3(x-1)$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle (x-3)$ & $\\displaystyle -$ & & $\\displaystyle -$ &\n$\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f'(x)$ & $\\displaystyle +$ & $\\displaystyle 0$ &\n$\\displaystyle -$ & $\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f(x)$ & $\\displaystyle \\cup$ & & $\\displaystyle \\cap$ &\n& $\\displaystyle \\cup$\\\\\\\\\n\\end{longtable}\n\nAnd so we see that there are two inflection points, one at \\emph{x} = 1\nand one at \\emph{x} = 3."
+    ], 
+    "hints": [
+        "The previous part gave us the derivative of\n\n\\[\\displaystyle\nf'(x) = x^{3} - 6x^{2} + 9x = x(x^{2} - 6x + 9) = x(x-3)^{2}.\\]\n\nNow, we take the second derivative, set it to zero and look at where the\nsign changes."
+    ]
+}

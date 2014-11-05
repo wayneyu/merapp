@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_07", 
     "course": "MATH152", 
-    "statement": "Find the inverse of the matrix\n\n\\[\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}\\].", 
+    "statement": "Find the inverse of the matrix\n\n\\[\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}.\\]", 
     "year": 2010, 
     "sols": [
-        "We see from the hint that the formula for an inverse of $2\\times{2}$\nmatrices of the form\n\n\\[A=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\]\n\nis\n\n\\[A^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}\\].\n\nIn this example we have\n\n\\[A=\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}\\]\n\nand so\n\n\\[\\displaystyle{}\\text{det}(A)=1-2=-1.\\]\n\nTherefore we have that\n\n\\[A^{-1}=-1\n\\begin{bmatrix}\n1  &  -2\\\\\n-1  &  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &  2\\\\\n1  &  -1\n\\end{bmatrix}.\\]"
+        "We see from the hint that the formula for an inverse of $2\\times{2}$\nmatrices of the form\n\n\\[A=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\]\n\nis\n\n\\[A^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\]\n\nIn this example we have\n\n\\[A=\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}\\]\n\nand so\n\n\\[\\displaystyle{}\\text{det}(A)=1-2=-1.\\]\n\nTherefore we have that\n\n\\[A^{-1}=-1\n\\begin{bmatrix}\n1  &  -2\\\\\n-1  &  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &  2\\\\\n1  &  -1\n\\end{bmatrix}.\\]"
     ], 
     "hints": [
         "There is a formula for the inverse of a $2\\times{}2$ matrix in the form\n\n$A=\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}$\n\nwhich is\n\n\\[A^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\]\n\nIf you can compute the determinant of A then the inverse can be written\ndown immediately."

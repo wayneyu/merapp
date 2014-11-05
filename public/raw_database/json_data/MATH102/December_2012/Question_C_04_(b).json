@@ -8,6 +8,6 @@
         "To find the steady state, we set $\\frac{d}{dt}Q = 0$.\n\nHence:\n\n\\[0 = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5}{\\text{year}}Q\\]\n\n\\[Q = 10\\frac{\\text{grams}}{cm^2}\\] is the steady state."
     ], 
     "hints": [
-        "You find the steady state by setting $\\frac{d}{dt}Q = 0$ and calculating\n$\\ Q$."
+        "You find the steady state by setting $\\frac{d}{dt}Q = 0$ and calculating\n$Q$."
     ]
 }

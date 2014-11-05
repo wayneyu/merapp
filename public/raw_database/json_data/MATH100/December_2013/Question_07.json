@@ -4,6 +4,12 @@
     "course": "MATH100", 
     "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nAt a distance of 4 kilometres from the launch site, a spectator is\nobserving a rocket being launched. If the rocket lifts off vertically\nand is rising at a speed of 0.7 kilometres/second when it is at an\naltitude of 3 kilometres, how fast is the distance between the rocket\nand the spectator changing at that instant?", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "If the distance between the spectator and the launchpad is $x$ and the\ndistance between the launchpad and the rocket is $y$, the distance $z$\nbetween the rocket and the spectator is\n$\\displaystyle z = \\sqrt{x^2 + y^2}$. We are given that $x$ = 4 km and\n$y$ = 3 km. Thus $z$ = 5 km.\n\nNote that since the distance between the spectator and the launchpad is\nnot changing, $\\frac{dx}{dt} = 0 \\,\\mathrm{km/s}$. Differentiating both\nsides implicitly with respect to time $t$:\\begin{align*}\nz^2 &= x^2 + y^2\n\\\\ 2z \\cdot \\frac{dz}{dt} &= 2x \\cdot \\frac{dx}{dt} + 2y \\cdot \\frac{dy}{dt}\n\\\\ \\frac{dz}{dt} &= \\frac{1}{z} \\left( x \\cdot \\frac{dx}{dt} + y \\cdot \\frac{dy}{dt}  \\right)\n\\\\ &= \\frac{1}{5 \\,\\mathrm{km}} \\left( 4 \\,\\mathrm{km} \\cdot 0 \\,\\mathrm{km/s} + 3 \\,\\mathrm{km} \\cdot 0.7 \\,\\mathrm{km/s}  \\right)\n\\\\ &= {\\color{blue} 0.42 \\,\\mathrm{km/s}}\\end{align*}"
+    ], 
+    "hints": [
+        "What is the distance between the rocket and the spectator \\emph{at that\ninstant}?\\\\\\\\If the distance between the spectator and the launchpad is\n$x$ and the distance between the launchpad and the rocket is $y$, what\nis the distance $z$ between the rocket and the spectator?", 
+        "From the hint above, the distance between the rocket and the spectator\nis $\\displaystyle z = \\sqrt{x^2 + y^2}$.\\\\How can we manipulate this\nequation to relate the rate of change in $z$ to the rates of change of\n$x$ and $y$?", 
+        "Differentiate both sides of the equation $\\displaystyle z^2 = x^2 + y^2$\nwith respect to time $t$ and solve for $\\frac{dz}{dt}$."
+    ]
 }

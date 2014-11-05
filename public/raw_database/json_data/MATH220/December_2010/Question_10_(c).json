@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_10_(c)", 
-    "course": "MATH220", 
-    "statement": "Using\n\\href{Science:Math_Exam_Resources/Courses/MATH220/December_2010/Question_10_(a)}{(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH220/December_2010/Question_10_(b)}{(b)}\nprove that\n\n\\[\\sum_{n=1}^\\infty\\frac{1}{4n^2-1}=\\frac{1}{2}.\\]", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

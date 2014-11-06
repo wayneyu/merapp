@@ -3,7 +3,7 @@ help: Makefile
 	@sed -n 's/##//p' $<
 
 ## all: update mongo db from scratch
-all: update_mongo
+all: update_mongo_locally, upload_mongo
 
 ## clean: remove all intermediate files: csv and json
 clean:
@@ -11,12 +11,22 @@ clean:
 	rm questions_topic.csv
 	rm -rf json_data
 
-.PHONY: all, clean
+.PHONY: all, clean, update_json, update_mongo_locally, upload_mongo, upload_mongo_only
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-## update_mongo: updates mongo db from json files
-update_mongo: import2mongo.sh update_json
+## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
+upload_mongo_only:
+	mongodump --db merdb --collection questions --out ~/tmp
+	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/
+
+## upload_mongo: updates online mongo db from local mongo db
+upload_mongo: update_mongo_locally
+	mongodump --db merdb --collection questions --out ~/tmp
+	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/
+
+## update_mongo_locally: updates local mongo db from json files
+update_mongo_locally: import2mongo.sh update_json
 	./import2mongo.sh
 
 ## update_json: downloads all json files (takes a few hours)

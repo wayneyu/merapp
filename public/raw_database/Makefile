@@ -31,7 +31,7 @@ update_mongo_locally: import2mongo.sh update_json
 
 ## update_json: downloads all json files (takes a few hours)
 update_json: MER2json.py import2mongo.sh questions_meta.csv questions_topic.csv MER2json.py
-	python $< --no-latex
+	python $< --no-latex --overwrite
 
 ## questions_meta_csv: writes meta information to csv
 questions_meta.csv: MER2csv.py

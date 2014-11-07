@@ -191,6 +191,8 @@ def write_latex(file_list, title, where_to_save, overwrite=False):
                             'num_votes', 'rating', 'num_hints',
                             'num_sols'])
 
+    if not os.path.exists(where_to_save):
+        os.makedirs(where_to_save)
     out = open(
         os.path.join(where_to_save, title.replace(' ', '_') + '.tex'), 'w')
     out.write(latex_header())

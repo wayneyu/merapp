@@ -3,13 +3,14 @@ help: Makefile
 	@sed -n 's/##//p' $<
 
 ## all: update mongo db from scratch
-all: update_mongo_locally, upload_mongo
+all: update_json, update_mongo_locally, upload_mongo
 
 ## clean: remove all intermediate files: csv and json
 clean:
 	rm questions_meta.csv
 	rm questions_topic.csv
 	rm -rf json_data
+	rm -rf test
 
 .PHONY: all, clean, update_json, update_mongo_locally, upload_mongo, upload_mongo_only
 .DELETE_ON_ERROR:
@@ -30,7 +31,7 @@ update_mongo_locally: import2mongo.sh update_json
 	./import2mongo.sh
 
 ## update_json: downloads all json files (takes a few hours)
-update_json: MER2json.py import2mongo.sh questions_meta.csv questions_topic.csv MER2json.py
+update_json: MER2json.py questions_meta.csv questions_topic.csv
 	python $< --no-latex --overwrite
 
 ## questions_meta_csv: writes meta information to csv

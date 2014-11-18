@@ -231,6 +231,7 @@ def postCleaning(input):
     input = re.sub(r'\\end{align\*}\\+', r'\\end{align*}\n', input)
     input = input.replace('\\\end{align*}', '\end{align*}')
     input = re.sub(r'\n+\\end{align\*}', '\n\end{align*}', input)
+    input = re.sub(r'(\\\\\s*)*\n\\end{align\*}', '\end{align*}', input)
 
     input = re.sub(r'\\\[{\\color{(.*)}\n\\begin{align\*}([\s\S]*)\\end{align}\n}\\\]',
                    r'{\\color{\1}\[\n\\begin{aligned}\2\\end{aligned}\n\]}',
@@ -240,6 +241,12 @@ def postCleaning(input):
                    r'\[\1\\begin{aligned}\2\\end{aligned}', input)
 
     input = re.sub(r'\\]([,.])', r'\1\\]', input)
+
+    input = re.sub(r'&\s*=', '&=', input)
+    input = re.sub(r'=\s*&', '&=', input)
+    input = re.sub(r'\$\(\\emph(.*)\)', r'(\1)$', input)
+    input = input.replace(
+        '\[', '\\begin{align*}').replace('\]', '\end{align*}')
 
     return input.strip()
 

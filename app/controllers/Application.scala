@@ -24,6 +24,10 @@ object Application extends Controller {
     Ok(views.html.question("", "", Nil, Nil))
   }
 
+  def editor = Action{
+    Ok(views.html.editor())
+  }
+
 //  def question(course: String, year: String, q: String) = Action {
 //    val inStream = Play.resourceAsStream("public/raw_database/json_data/" + course + "/" + year + "/" + q + ".json")
 //    inStream match {

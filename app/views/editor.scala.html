@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>"Latex editor</title>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
+    });
+    </script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <link rel='stylesheet' type="text/css" href="@routes.Assets.at("stylesheets/question.css")" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript' src="@routes.Assets.at("javascripts/question.js")"></script>
+
+</head>
+
+<body>
+
+<div id="latex_box">
+    <div id="tags">
+        <ul>
+            <li><span>"var"</span></li>
+            <li><span>"integral"</span></li>
+            <li><span>"greek"</span></li>
+        </ul>
+    </div>
+
+    <div>
+        <textarea style="height: 80px;" name="latex_formula" id="latex_formula" cols="80" rows="8"></textarea>
+    </div>
+
+    <p>   </p> <!-- gets appeneded by jquery -->
+
+    <button> render </button>
+
+
+</div>
+
+</body>
+</html>

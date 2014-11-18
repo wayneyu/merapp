@@ -8,6 +8,8 @@ GET     /                           controllers.Application.index
 # Team member page (Static)
 GET     /team                       controllers.Application.team
 
+GET    /editor          controllers.Application.editor
+
 # GET     /mongo/create            controllers.QuestionController.create
 
 # GET     /mongo/findByYear        controllers.QuestionController.findByYear(year: String)

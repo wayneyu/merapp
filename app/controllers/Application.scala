@@ -24,4 +24,8 @@ object Application extends Controller {
     Ok(views.html.question("", "", Nil, Nil))
   }
 
+  def editor = Action{
+    Ok(views.html.editor())
+  }
+
 }

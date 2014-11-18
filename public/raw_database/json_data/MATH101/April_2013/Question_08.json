@@ -1,0 +1,16 @@
+{
+    "term": "April", 
+    "question": "Question_08", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nA tank contains 1000 L (litres) of pure water. A solution that contains\n0.01 kg/L of sugar is poured into the tank at a rate of 20 L/min. The\ntank's contents are throughly mixed and drain out of the tank at the\nsame rate. How much sugar is in the tank after one hour?", 
+    "year": 2013, 
+    "sols": [
+        "Let $\\displaystyle y(t)$ be the mass of sugar in the tank at time\n$\\displaystyle t$ (in minutes), with units of kg. The rate of change of\n$\\displaystyle y(t)$ is the difference between the incoming rate of salt\nand the outgoing rate of salt. The rate is simply the concentration\nmultiplied by the flow rate; for incoming, we know the concentration is\n0.01 kg/L and the flow rate is 20 L/min; for the outgoing, the\nconcentration is $\\displaystyle y/1000$ and the flow rate is still 20\nL/min.\n\n\\begin{align*}\n\\frac{dy}{dt} & = (\\text{rate in}) - (\\text{rate out}) \\\\\n& = 0.01 \\cdot 20 - \\frac{y}{1000} \\cdot 20 \\\\\n& = \\frac{10-y}{50}.\n\\end{align*}\n\nIf $\\displaystyle y \\neq 10$, then\n\n\\begin{align*}\n\\frac{1}{10-y} \\frac{dy}{dt} & = \\frac{1}{50} \\\\\n\\int \\frac{1}{10-y} \\frac{dy}{dt} \\ dt & = \\int \\frac{1}{50} \\ dt \\\\\n-\\ln|10-y| & = \\frac{1}{50}t + C\n\\end{align*}\n\nWe have an initial condition of $y(0) = 0$, so\n\n\\[\\displaystyle \n-\\ln 10 = C.\\]\n\n(Incidentally, this initial condition implies that\n$\\displaystyle y \\neq 10$, since $\\displaystyle y = 10$ is a\nsteady-state solution, where the mass never changes from 10.)\n\nNow we solve\n\n\\begin{align*}\n-\\ln|10-y| & = \\frac{1}{50}t - \\ln 10 \\\\\n|10-y| & = 10e^{-t/50}\n\\end{align*}\n\nSince $\\displaystyle y(t)$ is continuous, $\\displaystyle 10-y(0) > 0$,\nand the right-hand side of the equation above is always positive, we\nconclude $\\displaystyle 10-y(t) > 0$ for all $\\displaystyle t$. Then\n\n\\begin{align*}\n10-y & = 10e^{-t/50} \\\\\ny & = 10-10e^{-t/50}\n\\end{align*}\n\nThe amount of sugar in the tank after 1 hour, or 60 minutes, is\n\n\\[\\displaystyle \ny(60) = 10-10e^{-6/5}\\]"
+    ], 
+    "hints": [
+        "Set up what you know and what you want in variables. What is the\nrelevant equation which relates the variables and quantities?", 
+        "Don't forget the absolute value in $\\ln |x|$. How does this affect\nisolating for your desired variable?", 
+        "What are the initial conditions, and how does that affect your solution?", 
+        "Be careful about your units!"
+    ]
+}

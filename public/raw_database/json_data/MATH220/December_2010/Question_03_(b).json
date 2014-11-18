@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_03_(b)", 
-    "course": "MATH220", 
-    "statement": "Let $\\mathbb{I}$ be the set of irrational numbers. That is\n$\\mathbb{I}=\\mathbb{R}-\\mathbb{Q}$.\n\nProve that if $x\\in\\mathbb{I}$ then $2x\\in\\mathbb{I}$.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

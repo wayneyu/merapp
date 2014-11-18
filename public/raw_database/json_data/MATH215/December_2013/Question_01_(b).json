@@ -9,6 +9,6 @@
     ], 
     "hints": [
         "First things first: what's the homogeneous solution?", 
-        "Now that we know the forcing term $\\displaystyle{} x\\sin(x)$ is not\nappearing in the homogeneous solution, what sort of guess would you take\nfor a forcing term that's a \\emph{first degree} polynomial times a\nsinusoidal function?"
+        "Now that we know the forcing term $\\displaystyle {} x\\sin(x)$ is not\nappearing in the homogeneous solution, what sort of guess would you take\nfor a forcing term that's a \\emph{first degree} polynomial times a\nsinusoidal function?"
     ]
 }

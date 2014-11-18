@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_B_04", 
-    "course": "MATH102", 
-    "statement": "What function satisfies $y'' + 4y = 0$ with initial condition\n$y(0) = 1$?", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

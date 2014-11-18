@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(e)", 
-    "course": "MATH102", 
-    "statement": "\\emph{For this short-answer question, only the answers (placed in the\nboxes) will be marked.}\n\nIf Newton$^{\\prime}$s Method is used to solve the equation\n\\emph{x}\\textsuperscript{3} + \\emph{x} \u00e2\u0088\u0092 5 = 0, starting at\n\\emph{x}\\textsubscript{0} = 1, what is \\emph{x}\\textsubscript{1}?", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

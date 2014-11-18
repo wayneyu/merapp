@@ -5,7 +5,7 @@
     "statement": "\\emph{A person purchased a home at the price of \\$ 300,000, paid a down\npayment equal to 20\\% of the purchase price, and financed the remaining\nbalance with a 25 year term mortgage. Assume that the person makes\npayments continuously at a constant annual rate $A$ and that the\ninterest is compounded continuously at the rate of 5\\%.}\n\nWrite down the differential equation that is satisfied by the amount\n$y(t)$ of money owed on the mortgage at time $t$.", 
     "year": 2010, 
     "sols": [
-        "At any given time, two things are happening: the owed money is growing\nat a rate of 5\\% and the amount of money is going down at a rate of\n\\emph{A}. Therefore, we write:\n\n\\[\\frac{dy}{dt} = 0.05 y - A\\].\n\nAs an initial condition, we impose that\n$y(0) = 0.8 \\times 300,000 = 240,000$ i.e. the amount owed is eighty\npercent of the purchase price since twenty percent was initially paid."
+        "At any given time, two things are happening: the owed money is growing\nat a rate of 5\\% and the amount of money is going down at a rate of\n\\emph{A}. Therefore, we write:\n\n\\[\\frac{dy}{dt} = 0.05 y - A.\\]\n\nAs an initial condition, we impose that\n$y(0) = 0.8 \\times 300,000 = 240,000$ i.e. the amount owed is eighty\npercent of the purchase price since twenty percent was initially paid."
     ], 
     "hints": [
         "How can we use a differential equation to model the rate of the amount\nof money owed,\n\n\\[\\frac{\\textrm{d}y}{\\textrm{d}t}\\]?\n\nWhat are the factors that increase the amount of money we owe? What are\nthe factors that decrease it?"

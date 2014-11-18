@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_B_01", 
-    "course": "MATH102", 
-    "statement": "Use implicit differentiation to find $dy / dx$ where $y(x)$ is defined\nimplicitly by $\\tan(y) = x$. Your answer should not include any trig\nfunctions. Show your work.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

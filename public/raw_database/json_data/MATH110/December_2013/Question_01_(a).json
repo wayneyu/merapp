@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\na) The graph of $f(x) = \\frac{1}{2}((x + 3)^{2} - 2)$ crosses the\nx-axis.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH220", 
-    "statement": "Let $\\mathbb{I}$ be the set of irrational numbers. That is\n$\\mathbb{I}=\\mathbb{R}-\\mathbb{Q}$.\n\nDecide whether the following statements are true or false. Prove your\nanswers. \\textbf{Hint:}The results from part\n\\href{Science:Math_Exam_Resources/Courses/MATH220/December_2009/Question_06_(a)}{(a)}\nwill be of great help.\n\n(i) $\\forall{}x\\in\\mathbb{I},\\forall{}y\\in\\mathbb{I},xy\\in\\mathbb{I}$.\n\n(ii)\n$\\forall{}x\\in\\mathbb{I},\\exists{}y\\in\\mathbb{I}\\quad\\textrm{s.t.}\\quad{}xy\\in\\mathbb{I}$.", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

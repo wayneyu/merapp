@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(c)", 
-    "course": "MATH200", 
-    "statement": "Suppose that\n$\\displaystyle u =x^2 +y z, \\  x = \\rho r \\cos(\\theta), \\ y= \\rho r \\sin(\\theta)$\nand $\\displaystyle z= \\rho r$. Find\n$\\displaystyle \\frac{\\partial u}{\\partial r}$ at the point\n$\\displaystyle (\\rho_0, r_0,\\theta_0)=(2,3,\\pi/2)$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

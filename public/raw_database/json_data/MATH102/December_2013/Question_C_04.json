@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_C_04", 
-    "course": "MATH102", 
-    "statement": "Shown in the figure below is the view from above of the path taken by a\npenguin from point A to a feeding area on the shore at point C. The\npenguin must choose the point B toward which it starts walking. It takes\ntwice as much energy per unit distance for the penguin to walk over land\n(AB) as to swim through water (BC). The distance AD is 300 m and the\ndistance DC is 400 m. Calculate the value of the distance \\emph{x} (and\nhence the location of the point B - see figure) that minimizes the\nenergy spent on the entire trip.\n\n(img)", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

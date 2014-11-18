@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_03_(a)", 
     "course": "MATH110", 
-    "statement": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nComplete the statement of the Mean Value Theorem\n\n\\texttt{Suppose~a~function~$f$~is~continuous~on~the~interval~}\\emph{\\texttt{{[}a,b{]}}}\\texttt{.}\\\\\\texttt{Suppose~further~that~$f$~is~differentiable~on~the~interval~\\_\\_\\_\\_\\_.}\\\\\\texttt{Then~there~exists~some~}\\emph{\\texttt{c}}\\texttt{~in~the~interval~\\_\\_\\_\\_\\_~satisfying}\\\\\\\\$\\displaystyle\nf'(c) = \\underline{\\qquad \\qquad}.$", 
+    "statement": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nComplete the statement of the Mean Value Theorem\n\n\\texttt{Suppose~a~function~$f$~is~continuous~on~the~interval~}\\emph{\\texttt{{[}a,b{]}}}\\texttt{.}\\\\\\texttt{Suppose~further~that~$f$~is~differentiable~on~the~interval~\\_\\_\\_\\_\\_.}\\\\\\texttt{Then~there~exists~some~}\\emph{\\texttt{c}}\\texttt{~in~the~interval~\\_\\_\\_\\_\\_~satisfying}\\\\\\\\$\\displaystyle f'(c) = \\underline{\\qquad \\qquad}.$", 
     "year": 2011, 
     "sols": [
-        "\\texttt{Suppose~a~function~$f$~is~continuous~on~the~interval~}\\emph{\\texttt{{[}a,b{]}}}\\texttt{.}\\\\\\texttt{Suppose~further~that~$f$~is~differentiable~on~the~interval~}\\textbf{\\texttt{(a,b)}}\\texttt{.}\\\\\\texttt{Then~there~exists~some~}\\emph{\\texttt{c}}\\texttt{~in~the~interval~}\\textbf{\\texttt{(a,b)}}\\texttt{~satisfying}\\\\\\\\$\\displaystyle\nf'(c) =$\\texttt{~}\\textbf{$\\frac{f(b) - f(a)}{b - a}.$}"
+        "\\texttt{Suppose~a~function~$f$~is~continuous~on~the~interval~}\\emph{\\texttt{{[}a,b{]}}}\\texttt{.}\\\\\\texttt{Suppose~further~that~$f$~is~differentiable~on~the~interval~}\\textbf{\\texttt{(a,b)}}\\texttt{.}\\\\\\texttt{Then~there~exists~some~}\\emph{\\texttt{c}}\\texttt{~in~the~interval~}\\textbf{\\texttt{(a,b)}}\\texttt{~satisfying}\\\\\\\\$\\displaystyle f'(c) =$\\texttt{~}\\textbf{$\\frac{f(b) - f(a)}{b - a}.$}"
     ], 
     "hints": [
         "The conclusion of the Mean Value Theorem relates the instantaneous rate\nof change (the derivative, or $f'$) at some point in the interval to the\naverage rate of change on the interval (the slope between the two\nendpoints of the graph).", 

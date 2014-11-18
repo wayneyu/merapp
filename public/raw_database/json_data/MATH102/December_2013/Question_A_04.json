@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_A_04", 
-    "course": "MATH102", 
-    "statement": "Shown in the figure below is a function and its tangent line at\n$x = x_0$.\n\n(img)\n\nThe tangent line intersects the \\emph{x} axis at the point $x = x_1$.\nThe coordinate of the point $x_1$ is\n\n(a) $x_1 = x_0 + \\frac{f(x_0)}{f'(x_0)}$\n\n(b) $\\displaystyle x_1 = x_0 - f'(x_0)(x-x_0)$\n\n(c) $x_1 = x_0 - \\frac{f'(x_1)}{f(x_1)}$\n\n(d) $x_1 = x_0 + \\frac{f'(x_1)}{f(x_1)}$\n\n(e) $x_1 = x_0 - \\frac{f(x_0)}{f'(x_0)}$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

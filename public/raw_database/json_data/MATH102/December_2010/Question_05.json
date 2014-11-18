@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_05", 
-    "course": "MATH102", 
-    "statement": "When a person breathes, the volume of air in the lungs may be modelled\nby a function of the form\n\n\\[\\displaystyle\nV(t) = C + A\\sin(\\omega t + \\phi),\\] where \\emph{V} is the volume in\nmillilitres and \\emph{t} is time in seconds. Suppose the minimum and\nmaximum volumes are 1400 and 3400 ml respectively, and the maximum rate\nof change of \\emph{V} is 1200 ml/sec.\n\nWhat is the period of \\emph{V}(\\emph{t})?", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

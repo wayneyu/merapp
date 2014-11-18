@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_03_(c)", 
     "course": "MATH110", 
-    "statement": "Give an example of a function $\\displaystyle  f$ defined in the interval\n$[-1,1]$ satisfying $\\displaystyle f(-1) = -1$ and\n$\\displaystyle f(1) = 1$, such that $f(x) \\not= 0$ for any $x$ in\n$[-1,1]$.", 
+    "statement": "Give an example of a function $\\displaystyle f$ defined in the interval\n$[-1,1]$ satisfying $\\displaystyle f(-1) = -1$ and\n$\\displaystyle f(1) = 1$, such that $f(x) \\not= 0$ for any $x$ in\n$[-1,1]$.", 
     "year": 2010, 
     "sols": [
         "The simplest example of such a function would be the piecewise function:\n\n$f(x) = \\begin{cases} -1 & x < 0 \\\\ 1 & x \\geq 0 \\end{cases}$\n\nThe function $f$ is clearly defined on $[-1,1]$, but jumps from -1 to 1\nat \\emph{x = 0}. Thus at no point in $[-1,1]$ does $f(x) = 0$.\n\nTwo other variations:\n\n$f(x) = \\begin{cases} 1/x & x \\not= 0 \\\\ 1 & x = 0 \\end{cases}$\n\nIn this case, the function $1/x$ is never equal to zero; however, we\nmust add the point $(0,1)$ in the piecewise function to make it defined\neverywhere in our domain.\n\n$f(x) = \\begin{cases} x & x \\not= 0 \\\\ 1 & x = 0 \\end{cases}$\n\nHere we have what would be a continuous function (the function \\emph{x})\n- we've just removed the one point where it would equal zero and moved\nthat point somewhere else, in this case, to $y = 1$.\n\nYou could come up with many other piecewise functions using these same\nideas."

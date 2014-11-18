@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_08_(a)", 
-    "course": "MATH220", 
-    "statement": "Let $\\displaystyle {}\\{a_n\\}$ be a sequence of positive numbers. Prove\nthat if $\\displaystyle {}\\{a_n\\}$ diverges to infinity then\n$\\bigg\\{\\frac{1}{a_n}\\bigg\\}$ converges to 0.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

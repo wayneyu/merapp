@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_10_(b)", 
-    "course": "MATH220", 
-    "statement": "Let $k,\\ell\\in\\mathbb{N}$. Prove, using the definition of convergence,\nthat\n\n\\[\\frac{1}{kn+\\ell}\\to0\\]", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

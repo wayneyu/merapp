@@ -1,0 +1,13 @@
+{
+    "term": "April", 
+    "question": "Question_04_(a)", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\n\\textbf{The graph below shows the region between\n$\\displaystyle y = 4+\\pi \\sin x$ and $\\displaystyle y = 4+2\\pi-2x$}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101April2013Q4.jpg}\n\\caption{MATH101April2013Q4.jpg}\n\\end{figure}\n\nFind the area of this region.", 
+    "year": 2013, 
+    "sols": [
+        "To get our bounds of integration, we need to know where the intersection\npoints are. Also, from the graph, the top function changes, so we need\nto find out exactly where this occurs, which is another point of\nintersection. The intersections can be found by solving\n\n\\begin{align*}\n4+\\pi \\sin x & = 4+2\\pi-2x \\\\\nx & = \\pi - \\frac{\\pi}{2} \\sin x\n\\end{align*}\n\nThis isn't easy to solve, but the graph shows three intersection points\nwhich can be estimated then checked. It looks like the three\nintersection points are $\\displaystyle x = \\pi/2, \\pi, 3\\pi/2$. At\n$\\displaystyle x = \\pi/2$,\n\n\\begin{align*}\n\\pi - \\frac{\\pi}{2} \\sin \\frac{\\pi}{2} = \\pi - \\frac{\\pi}{2} \\cdot 1 = \\frac{\\pi}{2}\n\\end{align*}\n\nso this is a solution. At $\\displaystyle x = \\pi$,\n\n\\begin{align*}\n\\pi - \\frac{\\pi}{2} \\sin \\pi = \\pi - \\frac{\\pi}{2} \\cdot 0 = \\pi\n\\end{align*}\n\nso this is a solution. At $\\displaystyle x = 3\\pi/2$,\n\n\\begin{align*}\n\\pi - \\frac{\\pi}{2} \\sin \\frac{3\\pi}{2} = \\pi - \\frac{\\pi}{2} \\cdot (-1) = \\frac{3\\pi}{2}\n\\end{align*}\n\nso this is a solution. Then, the intersection points are indeed\n$\\displaystyle x = \\pi/2, \\pi, 3\\pi/2$. Notice the top function on\n$\\displaystyle [\\pi/2,\\pi]$ is $\\displaystyle 4+\\pi \\sin x$, whereas the\ntop function on $\\displaystyle [\\pi,3\\pi/2]$ is\n$\\displaystyle 4+2\\pi-2x$.\n\nWe have\n\n\\begin{align*}\nA & = \\int_{\\pi/2}^{\\pi} \\left[(4+\\pi \\sin x) - (4+2\\pi-2x)\\right] \\ dx \\\\\n&\\qquad + \\int_{\\pi}^{3\\pi/2} \\left[(4+2\\pi-2x)-(4+\\pi \\sin x)\\right] \\ dx \\\\\n& = (-\\pi \\cos x - 2\\pi x + x^2)\\big|_{\\pi/2}^{\\pi} + (\\pi\\cos x+2\\pi x-x^2)\\big|_{\\pi}^{3\\pi/2} \\\\\n& = 2(\\pi - \\pi^2/4)\n\\end{align*}"
+    ], 
+    "hints": [
+        "Make sure you are finding the \\textbf{area} - so take care which\nfunction is on top!"
+    ]
+}

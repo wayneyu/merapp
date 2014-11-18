@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08_(ii)", 
+    "course": "MATH102", 
+    "statement": "You are driving down the highway when you see a sleeping moose. You\napply the brakes and carefully stop your car 20m away from the animal.\nWhile you are looking for your camera the moose wakes up. It instantly\ncharges toward your car at a constant speed of 8m/s. One second later,\nyou start backing away from the moose at a constant acceleration of\n2m/s\\textsuperscript{2}.\n\n\\textbf{(ii)} At what time \\emph{T} does the moose hit your car?", 
+    "year": 2011, 
+    "sols": [
+        "From our answer in part i), the distance between the moose and the car\nis given by d(t), where\n\n\\[\\displaystyle d(t) = -t^{2} + 8t - 12.\\] To solve for the time when\nthe moose hits the car we solve the equation d(T) = 0 to get T.\n\n\\begin{align*}\nd(T) = -T^{2} + 8T - 12 &= 0 \\\\\n-(T - 6)(T - 2) &= 0 \\quad \\rightarrow \\quad T = 2,6\n\\end{align*} Since the moose will not hit the car twice, we choose the\nsmaller of the two times, and say the moose will hit the car at\n\n\\[{\\color{blue}T =2.}\\]"
+    ], 
+    "hints": [
+        "Use your answer from part i) to answer this question.\n\nAlso consider: what is the distance between the car and the moose when\nthe moose and the car collide?"
+    ]
+}

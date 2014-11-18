@@ -5,7 +5,7 @@
     "statement": "Find the second order Taylor polynomial for\n\n\\[\\displaystyle{}y=\\arctan(x)\\]\n\nat x=1.", 
     "year": 2012, 
     "sols": [
-        "For our problem, we have that $a = 1$ and $f(x) = \\arctan(x)$.\nEvaluating the derivatives, we get\n\n\\[f'(x) = \\frac{1}{1 + x^{2}}, \\quad f''(x) = \\frac{-2x}{(1 + x^{2})^{2}}\\]\nThus,\n\n\\[\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f'(1) = \\frac{1}{2}, \\quad f''(1) = -\\frac{1}{2}\\]\nand so the 2nd order Taylor polynomial is\n\n\\[{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x - 1)^{2}}.\\]"
+        "For our problem, we have that $a = 1$ and $f(x) = \\arctan(x)$.\nEvaluating the derivatives, we get\n\n\\[f'(x) = \\frac{1}{1 + x^{2}}, \\quad f''(x) = \\frac{-2x}{(1 + x^{2})^{2}}\\]\nThus,\n\n\\[\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f'(1) = \\frac{1}{2}, \\quad f''(1) = -\\frac{1}{2}\\]\nand so the 2nd order Taylor polynomial is\n\n\\[{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.\\]"
     ], 
     "hints": [
         "Recall (or review) the definition of the 2nd order Taylor polynomial of\na function $f(x)$ at a point $x = a$ from your text. In this case, what\nis the function $f(x)$ and what is $a$?", 

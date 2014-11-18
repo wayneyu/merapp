@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH253", 
-    "statement": "Find all the points where the hyperboloid $x^{2} +y^{2} - z^{2} = 1$ and\nthe plane $x + y - z = 1$ meet at right angles.", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

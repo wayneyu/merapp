@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)_iii", 
+    "course": "MATH102", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nLet $f^{-1} \\,$ be the inverse function of $f(x) \\,$. Assume $f(0)=1 \\,$\nand $f'(0)=2. \\,$ Find the tangent line $y=mx+b \\,$ to $f^{-1}(x) \\,$ at\n1.", 
+    "year": 2011, 
+    "sols": [
+        "To determine the equation of the tangent line to $y = f^{-1}(x)$ at the\npoint $x = 1$ we need two things: (1) the slope of $f^{-1}(x)$ at\n$x = 1$ and (2) the value of a point that the tangent line crosses\nthrough.\n\n(1) Recall this important property of inverse functions:\n\n\\[y = f^{-1}(x) \\quad \\Leftrightarrow \\quad x = f(y)\\] From this rule,\nwe can use implicit differentiation to get the derivative for $f^{-1}$\nin terms of $f,\\,f'$.\n\n\\begin{align*}\n\\frac{d}{dx}\\left(x\\right) &= \\frac{d}{dx}\\left(f(y)\\right) \\\\\n1 &= f'(y)\\frac{dy}{dx} \\quad \\rightarrow \\quad \\frac{dy}{dx} = \\frac{1}{f'(f^{-1}(x))}\n\\end{align*} Thus, the slope of the inverse function at the point\n$x = 1$ is given by $m$ where\n\n\\[m = \\frac{1}{f'(f^{-1}(1))}.\\] We know that the tangent line must\ntouch the inverse function at the point $x = 1$. Using the rules of\ninverse functions, since $f(0) = 1$, we know that $f^{-1}(1) = 0$, and\nthus\n\n\\[m = \\frac{1}{f'(f^{-1}(1))} = \\frac{1}{f'(0)} = \\frac{1}{2}.\\]\n\n(2) We get by the above point as\nwell\\[f^{-1}(1) = 0 \\rightarrow (x_{1},y_{1}) = (1,0).\\]\n\nUsing these two things in the standard equation of a line, we get an\nequation for the tangent line\n\n\\begin{align*}\n(y - y_{1}) &= m(x - x_{1}) \\\\\n(y - 0) &= \\frac{1}{2}(x - 1).\n\\end{align*} Rearranging the equation to slope-intercept form (as the\nquestion asks), we get our final answer:\n\n\\[{\\color{blue}y = \\frac{x}{2} -\\frac{1}{2}}.\\]"
+    ], 
+    "hints": [
+        "The standard form of a line is given by\n\n\\[(y - y_{1}) = m(x - x_{1}).\\]\n\nIf the above line lies tangent to the function $f^{-1}(x)$ at $x = 1$,\nwhat is $m$?\n\nIf the above line must touch the function $f^{-1}(x)$ at a point, what\nare the values of $(x_{1},y_{1})$?"
+    ]
+}

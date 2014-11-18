@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_09_(b)", 
-    "course": "MATH220", 
-    "statement": "Let A be a non-empty proper subset of (0,3). Note $A\\neq(0,3)$. Define\n\n\\[B=\\{-a\\quad\\textrm{s.t.}\\quad{}a\\in{}A\\}\\]\n\n(i) Prove that $\\inf(A)$ and $\\sup(A)$ exist using the Completeness\nAxiom.\n\n(ii) Prove that $(-\\inf(A))$ is an upper bound for B.\n\n(iii) Prove that $\\sup(B)=(-\\inf(A))$.", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
-}

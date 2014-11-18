@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_08_(b)", 
-    "course": "MATH221", 
-    "statement": "\\textbf{Please note: Depending on the class section, the original exam\nonly featured Question 8 (a) OR Question 8 (b), not both.}\n\nSuppose that $\\mathcal B = \\{v_1. v_2\\}$ is a basis for $\\mathbf R^2$,\nand that $\\mathcal C = \\{w_1, w_2, w_3\\}$ is a basis for $\\mathbf R^3$.\nSuppose that $T: \\mathbf R^2 \\to \\mathbf R^3$ is a linear transformation\nsuch that $\\displaystyle T(v_1) = w_1 + w_2$ and\n$\\displaystyle T(v_2) = w_1 + w_3$. Find the matrix $\\displaystyle T$\nrelative to the bases $\\mathcal B$ and $\\mathcal C$.", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

@@ -8,7 +8,7 @@
         "Refer to the previous part for the eigenvalue computations. For the\neigenvalue $\\displaystyle \\lambda = 1$\n\n\\begin{align*}\nA-I=\\begin{bmatrix}\n2  &  2\\\\\n2  &  2\n\\end{bmatrix}.\n\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}$ is an eigenvector. For the\n$\\displaystyle \\lambda = 5$ eigenvalue,\n\n\\begin{align*}\nA-5I=\\begin{bmatrix}\n-2  &  2\\\\\n2  &  -2\n\\end{bmatrix}.\n\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$ is an eigenvector."
     ], 
     "hints": [
-        "Recall that to solve for eigenvectors, we must solve\n$\\displaystyle(A-\\lambda I)\\mathbf{x} = \\mathbf{0}$ for each eigenvalue.", 
+        "Recall that to solve for eigenvectors, we must solve\n$\\displaystyle (A-\\lambda I)\\mathbf{x} = \\mathbf{0}$ for each eigenvalue.", 
         "Look at the result from the previous hint and attempt to find the\neigenvectors by inspection. Alternatively, take each eigenvalue and row\nreduce the matrix $\\displaystyle A-\\lambda I$ and then find the\neigenvectors."
     ]
 }

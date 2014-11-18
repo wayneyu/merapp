@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_08_(b)", 
-    "course": "MATH220", 
-    "statement": "Decide whether the following sequence converges or diverges. Prove your\nanswer using the definition of convergence.\n\n\\[c_n=\\frac{2n^3-5n+2}{3n^3+8n+3}.\\]", 
-    "year": 2010, 
-    "sols": [], 
-    "hints": []
-}

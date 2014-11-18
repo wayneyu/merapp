@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_A_06", 
-    "course": "MATH102", 
-    "statement": "The slope field shown below corresponds to which differential equation?\n\n(img)\n\n(a) $\\frac{dy}{dt} = y(y+1)$\n\n(b) $\\frac{dy}{dt} = (y - 1)(y + 1)$\n\n(c) $\\frac{dy}{dt} = -(y - 1)(y + 1)$\n\n(d) $\\frac{dy}{dt} = y(y - 1)$\n\n(e) $\\frac{dy}{dt} = -y(y + 1)$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

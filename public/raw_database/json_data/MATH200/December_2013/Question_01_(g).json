@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_01_(g)", 
-    "course": "MATH200", 
-    "statement": "Find the total mass of the rectangular box\n$\\displaystyle [0, 1] \\times [0, 2] \\times [0, 3]$ (that is, the box\ndefined by the inequalities\n$\\displaystyle 0 \\leq x \\leq 1, 0 \\leq y \\leq 2, 0 \\leq z \\leq 3$), with\ndensity function $\\displaystyle h(x, y, z) = x$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
-}

@@ -1,9 +1,0 @@
-{
-    "term": "April", 
-    "question": "Question_01_(f)", 
-    "course": "MATH215", 
-    "statement": "Find the inverse Laplace transform of\n$\\displaystyle F(s) = \\frac{s^2}{(s^2+100)^2}$ .", 
-    "year": 2014, 
-    "sols": [], 
-    "hints": []
-}

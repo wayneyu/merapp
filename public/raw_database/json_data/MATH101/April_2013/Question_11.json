@@ -1,0 +1,15 @@
+{
+    "term": "April", 
+    "question": "Question_11", 
+    "course": "MATH101", 
+    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nConsider the power series\n$\\displaystyle \\sum_{n=1}^\\infty \\frac{(-1)^n(x+2)^n}{\\sqrt{n}}$, where\n$\\displaystyle x$ is a real number. Find the interval of convergence of\nthis series.", 
+    "year": 2013, 
+    "sols": [
+        "We begin by calculating the radius of convergence, using the Ratio Test:\n\n\\begin{align*}\n\\lim_{n\\to\\infty} \\left|\\frac{(-1)^{n+1}(x+2)^{n+1}}{\\sqrt{n+1}}\\cdot\\frac{\\sqrt{n}}{(-1)^n(x+2)^n}\\right| & = \\lim_{n\\to\\infty} \\sqrt{\\frac{n}{n+1}}\\cdot |x+2| \\\\\n& = \\lim_{n\\to\\infty} \\sqrt{\\frac{1}{1+\\tfrac{1}{n}}}\\cdot |x+2| \\\\\n& = |x+2|\n\\end{align*}\n\nBy the Ratio Test, the series converges if $\\displaystyle |x+2| < 1$ and\ndiverges if $\\displaystyle |x+2| > 1$. Now we need to check the\nendpoints.\n\nWhen $\\displaystyle x+2 = -1$, that is, $\\displaystyle x = -3$, we have\n\n\\begin{align*}\n\\sum_{n=1}^\\infty \\frac{(-1)^n(x+2)^n}{\\sqrt{n}} & = \\sum_{n=1}^\\infty \\frac{(-1)^n(-1)^n}{\\sqrt{n}} = \\sum_{n=1}^\\infty \\frac{1}{\\sqrt{n}}\n\\end{align*}\n\nwhich diverges by the p-series test, since $\\displaystyle 1/2 < 1$.\n\nWhen $\\displaystyle x+2 = 1$, that is, $\\displaystyle x = -1$, we have\n\n\\begin{align*}\n\\sum_{n=1}^\\infty \\frac{(-1)^n(x+2)^n}{\\sqrt{n}} & = \\sum_{n=1}^\\infty \\frac{(-1)^n}{\\sqrt{n}} \n\\end{align*}\n\nThis is an alternating series with\n\n\\begin{align*}\nb_n & = \\frac{1}{\\sqrt{n}}\n\\end{align*}\n\nClearly, $\\displaystyle b_{n+1} \\leq b_n$ and\n$\\displaystyle \\lim_{n\\to\\infty} b_n = 0$. By the Alternating Series\nTest,\n\n\\begin{align*}\n\\sum_{n=1}^\\infty \\frac{(-1)^n(x+2)^n}{\\sqrt{n}} & = \\sum_{n=1}^\\infty \\frac{(-1)^n}{\\sqrt{n}} \n\\end{align*}\n\nconverges. Therefore, the interval of convergence is\n$\\displaystyle (-3,-1]$."
+    ], 
+    "hints": [
+        "Start by finding the radius of convergence.", 
+        "Use the Ratio Test to calculate the radius of convergence.", 
+        "Remember to check the endpoints of the interval!"
+    ]
+}

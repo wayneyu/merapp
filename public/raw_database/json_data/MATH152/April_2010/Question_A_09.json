@@ -5,7 +5,7 @@
     "statement": "For questions \\textbf{A9-A11} below consider the circuit in the diagram\nbelow:\n\n\\href{file:Math152Apr2010Q9to11.png}{600px\\textbar{}center}\n\nList the unknowns in the linear system for this circuit set up using the\ntechniques you learned in the computer labs this term.", 
     "year": 2010, 
     "sols": [
-        "From the current loop rule we know that each loop gets its own current\nwhich is an unknown for the system. We also need an unknown for the\nvoltage drop that occurs across each current source. Since we have three\nloops we have \\textbf{3} loop currents, $i_1,i_2,i_3$ and we have one\ncurrent source so we have \\textbf{1} unknown voltage drop $v_1$ for\ncurrent source E. Therefore in total we have \\textbf{4} unknowns for our\nlinear system,\n\n\\[\\begin{bmatrix}\ni_1\\\\\ni_2\\\\\ni_3\\\\\nv_1\n\\end{bmatrix}\\]."
+        "From the current loop rule we know that each loop gets its own current\nwhich is an unknown for the system. We also need an unknown for the\nvoltage drop that occurs across each current source. Since we have three\nloops we have \\textbf{3} loop currents, $i_1,i_2,i_3$ and we have one\ncurrent source so we have \\textbf{1} unknown voltage drop $v_1$ for\ncurrent source E. Therefore in total we have \\textbf{4} unknowns for our\nlinear system,\n\n\\[\\begin{bmatrix}\ni_1\\\\\ni_2\\\\\ni_3\\\\\nv_1\n\\end{bmatrix}.\\]"
     ], 
     "hints": [
         "Recall that if there are n loops and m current sources then we have n+m\nunknowns."

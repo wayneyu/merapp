@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_07_(a)", 
     "course": "MATH103", 
-    "statement": "In an experiment involving a bacteria population, $N(t)$ denotes the\nsize of the population (measured in thousands of individuals) as a\nfunction of time, starting at $t=0$. The initial population is\n$N(0) = N_{0}$.\n\na) Suppose the population growth is governed by the differential\nequation\n\n$\\displaystyle\n\\frac{dN}{dt} = \\frac{N}{t+1}$\n\nFind $N(t)$ if $N(0)=2$.", 
+    "statement": "In an experiment involving a bacteria population, $N(t)$ denotes the\nsize of the population (measured in thousands of individuals) as a\nfunction of time, starting at $t=0$. The initial population is\n$N(0) = N_{0}$.\n\na) Suppose the population growth is governed by the differential\nequation\n\n$\\displaystyle \\frac{dN}{dt} = \\frac{N}{t+1}$\n\nFind $N(t)$ if $N(0)=2$.", 
     "year": 2006, 
     "sols": [], 
     "hints": []

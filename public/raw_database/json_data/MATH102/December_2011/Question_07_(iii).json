@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_07_(iii)", 
+    "course": "MATH102", 
+    "statement": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its y coordinate changes at a\nrate of 8 units/sec.\n\niii) What is the rate of change of the angle $\\theta$ between the\npositive x-axis and the line connecting the origin and the particle?\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH102_2011_7ii.png}\n\\caption{MATH102 2011 7ii.png}\n\\end{figure}", 
+    "year": 2011, 
+    "sols": [
+        "Notice that\n\n$\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}$\n\nTaking derivatives with respect to time gives\n\n$\\displaystyle \\sec^{2}(\\theta)\\frac{d\\theta}{dt} = \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}}$\n\nFrom the previous parts, we have that\n\n$\\displaystyle \\frac{dx}{dt}\\bigg|_{x=2} = 2$\n\nand we are given that\n\n$\\displaystyle \\frac{dy}{dt}\\bigg|_{x=2} = 8$\n\nand so plugging in the point $\\displaystyle (x(t),y(t)) = (2,4)$ into\nthe triangle, we see that\n\n$\\displaystyle \\sec(\\theta) = \\frac{1}{\\cos(\\theta)} = \\frac{1}{\\frac{2}{\\sqrt{2^{2} + 4^{2}}}} = \\frac{\\sqrt{20}}{2} = \\sqrt{5}$\n\nUsing all this information, we plug in the point $\\displaystyle (2,4)$\nand see that\n\n\\begin{align*}\n \\sec^{2}(\\theta)\\frac{d\\theta}{dt} &= \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}} \\\\\n (\\sqrt{5})^{2}\\frac{d\\theta}{dt} &= \\frac{(8)(2) - (2)(4)}{(2)^{2}} \\\\\n 5\\frac{d\\theta}{dt} &= 2 \\\\\n\\frac{d\\theta}{dt} &= \\frac{2}{5} \\\\\n\\end{align*}\n\nand this completes the question."
+    ], 
+    "hints": [
+        "We need to relate the angle with the \\emph{x} and \\emph{y} coordinates.\nTry using\n\n$\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}$"
+    ]
+}

@@ -1,9 +1,0 @@
-{
-    "term": "December", 
-    "question": "Question_09", 
-    "course": "MATH200", 
-    "statement": "Evaluate $\\int\\!\\!\\!\\int\\!\\!\\!\\int_R yz^2e^{-xyz}\\,dV$, over the\nrectangular box\n\n\\[\\displaystyle\nR = \\{(x, y, z)\\,|\\, 0 \\leq x \\leq 1,\\, 0 \\leq y \\leq 2,\\, 0 \\leq z \\leq 3\\}.\\]", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
-}

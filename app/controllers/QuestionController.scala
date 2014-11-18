@@ -5,12 +5,14 @@ import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.functional.syntax._
 import play.api.libs.json._
+import reactivemongo.bson.BSONDocument
 import views.html.helper.form
 import scala.concurrent.Future
 import scala.util.{Success, Failure}
 
 // Reactive Mongo imports
 import reactivemongo.api._
+import reactivemongo.core.commands._
 
 // Reactive Mongo plugin, including the JSON-specialized collection
 import play.modules.reactivemongo.MongoController
@@ -21,7 +23,7 @@ import play.modules.reactivemongo.json.collection.JSONCollection
  */
 object QuestionController extends Controller with MongoController {
 
-  def collection: JSONCollection = db.collection[JSONCollection]("questions")
+  val collection: JSONCollection = db.collection[JSONCollection]("questions")
 
   def question(course: String, term_year: String, q: String) = Action.async {
 
@@ -70,6 +72,27 @@ object QuestionController extends Controller with MongoController {
       }
       case None => Redirect(controllers.routes.QuestionController.question("","",""))
     }
+  }
+
+  def getExamNames() = Action { request =>
+    // set up query
+    //{ distinct: "<collection>", key: "<field>", query: <query> }
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course"))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    // gather all the JsObjects in a list
+    result onComplete {
+      case Success(res) => Logger.debug("No. of questions found: " + BSONDocument.pretty(res))
+      case Failure(exception) =>
+    }
+
+    result.map( doc => doc.get("values") match {
+        case Some(v) => Ok("")
+        case None => Ok("")
+      }
+    )
+
+    Ok("")
   }
 
 }

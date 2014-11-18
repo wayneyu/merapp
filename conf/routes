@@ -17,7 +17,8 @@ GET     /team                       controllers.Application.team
 # GET     /questions/:course/:year/:q         controllers.Application.question(course: String, year: String, q: String)
 GET     /questions/:course/:term_year/:q         controllers.QuestionController.question(course: String, term_year: String, q: String)
 
-GET    /questions          controllers.Application.questions
+GET    /questions                  controllers.Application.questions
+GET    /questions/examnames        controllers.QuestionController.getExamNames()
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
 

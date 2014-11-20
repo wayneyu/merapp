@@ -5,7 +5,7 @@
     "statement": "For questions \\textbf{A17-A19} below, $u$ and $z$ are the complex\nnumbers given below:\n\n\\begin{align*} u &= 4-2i \\\\ z &= -1+3i \\end{align*}\n\n\\textbf{A19:} Evaluate $u/z$. Put your answer in the form $a+ib$ where\n$a$ and $b$ are real numbers.", 
     "year": 2011, 
     "sols": [
-        "\\[\\displaystyle\n\\frac{u}{z} = \\frac{4-2i}{-1+3i} \\cdot \\frac{-1-3i}{-1-3i} = \\frac{(4-2i)(-1-3i)}{1+9}\\]\n\nContinuing with the simplification, we have\n\n\\[\\frac{u}{z} = \\frac{-4 -6 + (-12+2)i}{10} = \\frac{-10 -10i}{10} = -1-i\\]"
+        "\\begin{align*}\\displaystyle\n\\frac{u}{z} = \\frac{4-2i}{-1+3i} \\cdot \\frac{-1-3i}{-1-3i} = \\frac{(4-2i)(-1-3i)}{1+9}\\end{align*}\n\nContinuing with the simplification, we have\n\n\\begin{align*}\\frac{u}{z} = \\frac{-4 -6 + (-12+2)i}{10} = \\frac{-10 -10i}{10} = -1-i\\end{align*}"
     ], 
     "hints": [
         "Rationalize the denominator."

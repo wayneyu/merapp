@@ -1,0 +1,19 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\na) The graph of $f(x) = \\frac{1}{2}((x + 3)^{2} - 2)$ crosses the\nx-axis.", 
+    "year": 2013, 
+    "sols": [
+        "\\textbf{Note: The first three parts of this question was identical to\nthat of the October Midterm.}\\\\\\textbf{True:} There are multiple ways to\nsee this.\n\nSolve the quadratic equation.\n\nThe function expands to\\begin{align*}f(x) = \\frac{1}{2}x^2+3x+\\frac{7}{2}.\\end{align*} Which\nthen gives:\n\n\\begin{align*}\nx&= \\frac{-3 \\pm \\sqrt{9 - 4\\left(\\frac{1}{2}\\right)\\left(\\frac{7}{2}\\right)}}{2\\left(\\frac{1}{2}\\right)}\\\\\n &= \\frac{-3 \\pm \\sqrt{9 - 7}}{1}\\\\\nx &= -3 \\pm \\sqrt{2}\\\\end{align*}", 
+        "We can also use the vertex formula by seeing that\n$f(x) =\\frac{1}{2}(x+3)^2-1$, with vertex $(-3,-1)$ which is below the\n\\emph{x}-axis. Next, observe that a parabola is continuous (because its\na polynomial). Combining this with the fact that the parabola has a\npositive coefficient of $\\frac{1}{2}$, meaning that the parabola is\ncurving upwards, we get that it must cross the $x$ axis.", 
+        "We can view this as a graph transformation of $y=x^2$ which touches the\n$x$-axis. Then we shift it $3$ to the left and then $2$ down, so it\nstill touches the $x$-axis. This is then followed by a vertical\ncompression of $2$ (or expansion by $0.5$). This does not change\ndirection of curvature of the function and so it must still touch the\n$x$-axis.", 
+        "We can also use the IVT. The function is a quadratic and hence is\ncontinuous. We then look at $f(-3) = -1 <0$ and then $f(0) = 3.5 >0$.\nThus there must be a point between $-3$ and $0$ that crosses the\n$x$-axis."
+    ], 
+    "hints": [
+        "There are multiple ways to see this and each hint corresponds to each\nsolution.\n\nFor a hint to the first solution, you could always just try to solve\nthis directly using the quadratic formula.", 
+        "You could also try to solve this be exploiting the fact that the\nparabola is given in vertex form.", 
+        "One could also reason by starting with the parabola\n$\\displaystyle y = x^{2}$ and from here trying to get the given parabola\nby a series of transformations. Argue how these transformations affect\nthe number of roots of the parabola.", 
+        "One could also use the Intermediate Value Theorem (IVT) to solve this\nproblem."
+    ]
+}

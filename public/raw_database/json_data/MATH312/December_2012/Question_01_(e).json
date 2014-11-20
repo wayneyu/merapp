@@ -5,7 +5,7 @@
     "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nFind all solutions for $\\displaystyle 7x \\equiv 4 \\mod{13}$", 
     "year": 2012, 
     "sols": [
-        "Following the hint, we compute the inverse of 7 modulo 13. Then\n\n\\begin{align*}\n13 &= 7(1) + 6\\\\\n7 &= 6(1) + 1\n\\end{align*}\n\nand back substituting gives\n$\\displaystyle 1 = 7 -6(1) = 7 - (13-7(1)) = 7(2) - 13$.\n\nThus, the inverse of 7 modulo 13 is 2. Hence\n$\\displaystyle x \\equiv 2(7)x \\equiv 2(4) \\equiv 8 \\mod{13}$ which\ncompletes the question."
+        "Following the hint, we compute the inverse of 7 modulo 13. Then\n\n\\begin{align*}\n13 &= 7(1) + 6\\\\\n7 &= 6(1) + 1\\end{align*}\n\nand back substituting gives\n$\\displaystyle 1 = 7 -6(1) = 7 - (13-7(1)) = 7(2) - 13$.\n\nThus, the inverse of 7 modulo 13 is 2. Hence\n$\\displaystyle x \\equiv 2(7)x \\equiv 2(4) \\equiv 8 \\mod{13}$ which\ncompletes the question."
     ], 
     "hints": [
         "We need to find the inverse of 7 modulo 13, possible since they are\ncoprime. Use the Euclidean algorithm."

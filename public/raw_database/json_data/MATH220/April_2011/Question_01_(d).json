@@ -5,7 +5,7 @@
     "statement": "Write the negation of the statement\n\n$\\forall ~x \\in \\mathbb{R}, \\exists ~y \\in \\mathbb{N} {\\rm~s.t.~} x^{2} + y < x + y^{2}$.", 
     "year": 2011, 
     "sols": [
-        "The negation of the statement is given by\n\n\\[\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\\]"
+        "The negation of the statement is given by\n\n\\begin{align*}\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\\end{align*}"
     ], 
     "hints": [
         "Remember that the negation of the statement ``For all $x$, $P(x)$ is\ntrue.'' is ``There exist an $x$ such that $P(x)$ is false''."

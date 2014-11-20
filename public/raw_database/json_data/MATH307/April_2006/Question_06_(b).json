@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_06_(b)", 
     "course": "MATH307", 
-    "statement": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nIf\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b} \\\\\nA^T \\vec{y} &= 0\n\\end{align*}\n\nthen $\\vec{b} \\perp \\vec{y}$.", 
+    "statement": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nIf\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b} \\\\\nA^T \\vec{y} &= 0\\end{align*}\n\nthen $\\vec{b} \\perp \\vec{y}$.", 
     "year": 2006, 
     "sols": [
         "The answer is True\n\nGiven $A\\vec{x} = \\vec{b}$ then $\\vec{b} \\in R(A)$ (i.e. is a vector in\nthe range of A, or a vector b is in the span of A).\n\nAnd $\\vec{y} \\in N(A^T)$, meaning that y is in the nullspace of $A^T$\n\nFrom the orthogonality of subspaces, we now that $N(A^T) = R(A) ^\\perp$\n\nHence, $\\vec{y}^T \\vec{b} = 0$ or $< y, b> = 0$"

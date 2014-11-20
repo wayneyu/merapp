@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(l)", 
     "course": "MATH105", 
-    "statement": "Let \\emph{k} be a constant. Find the value of \\emph{k} such that\n\n\\[\\displaystyle f(x) = k x^{3/2}\\]\n\nis a probability density function on 1 $\\leq$ \\emph{x} $\\leq$ 4.", 
+    "statement": "Let \\emph{k} be a constant. Find the value of \\emph{k} such that\n\n\\begin{align*}\\displaystyle f(x) = k x^{3/2}\\end{align*}\n\nis a probability density function on 1 $\\leq$ \\emph{x} $\\leq$ 4.", 
     "year": 2010, 
     "sols": [
-        "The constant \\emph{k} needs to be chosen such that \\emph{f(x)}\nintegrates to 1:\n\n\\begin{align*}\n\\int_1^4 kx^{3/2}\\,dx &= k\\int_1^4x^{3/2}\\,dx =k\\frac25x^{5/2}\\bigg|_1^4 \\\\\n&=k\\frac25(4^{5/2}-1^{5/2}) = k\\frac{62}5,\n\\end{align*}\n\nhence we choose \\emph{k=5/62}."
+        "The constant \\emph{k} needs to be chosen such that \\emph{f(x)}\nintegrates to 1:\n\n\\begin{align*}\n\\int_1^4 kx^{3/2}\\,dx &= k\\int_1^4x^{3/2}\\,dx =k\\frac25x^{5/2}\\bigg|_1^4 \\\\\n&=k\\frac25(4^{5/2}-1^{5/2}) = k\\frac{62}5,\\end{align*}\n\nhence we choose \\emph{k=5/62}."
     ], 
     "hints": [
-        "For $f(x)$ to be a probability density function on {[}a,b{]} it needs to\nsatisfy\n\n\\[(i) \\quad f(x) \\geq 0\\]\n\nfor all $x \\in [a,b]$, and\n\n\\[(ii) \\quad \\int_a^b f(x)\\,dx = 1.\\]"
+        "For $f(x)$ to be a probability density function on {[}a,b{]} it needs to\nsatisfy\n\n\\begin{align*}(i) \\quad f(x) \\geq 0\\end{align*}\n\nfor all $x \\in [a,b]$, and\n\n\\begin{align*}(ii) \\quad \\int_a^b f(x)\\,dx = 1.\\end{align*}"
     ]
 }

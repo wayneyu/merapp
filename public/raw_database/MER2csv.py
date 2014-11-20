@@ -314,6 +314,7 @@ def write_questions_topic(where_to_save='questions_topic.csv'):
     topics = get_all_topics()
     topics = ['http://wiki.ubc.ca' + t for t in topics]
     for topic in topics:
+        print(topic)
         questions = get_questionURLs_from_topicURL(topic)
         for q in questions:
             outfile.write('%s,%s\n' % (topic.replace(

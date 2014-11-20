@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(b)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\nb) Find all x such that f\"(x) = 0 or f\"(x) does not exist.", 
+    "year": 2013, 
+    "sols": [
+        "Setting the second derivative's numerator and denominator to 0 and\nsolving yields\n\n$\\displaystyle 8(3x^{2}+4) = 0$ and solving gives\n$\\displaystyle x^{2} + 4 = 0$ which cannot be solved.\n\n$\\displaystyle (x^{2}-4)^{3} = 0$ and solving as in part (a) yields\n$\\displaystyle x = \\pm 2$."
+    ], 
+    "hints": [
+        "Recall that a fraction is 0 or undefined if either the numerator or the\ndenominator is equal to 0."
+    ]
+}

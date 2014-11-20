@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(n)", 
     "course": "MATH104", 
-    "statement": "Find the derivative of the function\n\n\\[\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\\]", 
+    "statement": "Find the derivative of the function\n\n\\begin{align*}\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "This question requires multiple uses of the chain rule.\n\n\\[\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(1 + x)))\\] Recognizing that\nthe inner function is $u = h(x) = 1 + \\ln(1 + \\ln(1 + x))$ and the outer\nfunction is $g(u) = \\ln(u)$, we apply the chain rule and get\n\n\\begin{align*}\nf'(x) &= g'(h(x))\\cdot h'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot h'(x).\n\\end{align*} Now we need to use the chain rule again to evaluate\n$h'(x)$. The function $h(x)$ has inner function\n$v = k(x) = 1 + \\ln(1 + x)$ and outer function $j(v) = 1 + \\ln(v)$.\nThus, $h'(x)$ is given by\n\n\\begin{align*}\nh'(x) &= j'(k(x))\\cdot k'(x)\\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot k'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot \\frac{1}{1 + x}\n\\end{align*} Thus putting the pieces together, we write the expression\nfor the derivative of $f$:\n\n\\[{\\color{blue}f'(x) = \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot\\frac{1}{1 + \\ln(1 + x)}\\cdot\\frac{1}{1 + x}\n}.\\]"
+        "This question requires multiple uses of the chain rule.\n\n\\begin{align*}\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(1 + x)))\\end{align*} Recognizing that\nthe inner function is $u = h(x) = 1 + \\ln(1 + \\ln(1 + x))$ and the outer\nfunction is $g(u) = \\ln(u)$, we apply the chain rule and get\n\n\\begin{align*}\nf'(x) &= g'(h(x))\\cdot h'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot h'(x).\\end{align*} Now we need to use the chain rule again to evaluate\n$h'(x)$. The function $h(x)$ has inner function\n$v = k(x) = 1 + \\ln(1 + x)$ and outer function $j(v) = 1 + \\ln(v)$.\nThus, $h'(x)$ is given by\n\n\\begin{align*}\nh'(x) &= j'(k(x))\\cdot k'(x)\\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot k'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot \\frac{1}{1 + x}\\end{align*} Thus putting the pieces together, we write the expression\nfor the derivative of $f$:\n\n\\begin{align*}{\\color{blue}f'(x) = \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot\\frac{1}{1 + \\ln(1 + x)}\\cdot\\frac{1}{1 + x}\n}.\\end{align*}"
     ], 
     "hints": [
         "We need the chain rule for this problem and might need to use it more\nthan once. Can you identify an inner and outer function for $f(x)$?"

@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_01_(c)", 
     "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nEvaluate the limit\n\n\\[\\lim_{x \\to 0} \\frac{x}{\\sqrt{1+2x}-1}\\]", 
+    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nEvaluate the limit\n\n\\begin{align*}\\lim_{x \\to 0} \\frac{x}{\\sqrt{1+2x}-1}\\end{align*}", 
     "year": 2013, 
     "sols": [
         "Multiplying the numerator and denominator by $\\sqrt{1+2x} + 1$ yields:\n\n\\begin{align*}\n\\lim_{x \\to 0} \\frac{x}{\\sqrt{1+2x} - 1} &= \\lim_{x \\to 0} \\left(\\frac{x}{\\sqrt{1+2x} - 1} \\cdot \\frac{\\sqrt{1+2x} + 1}{\\sqrt{1+2x} + 1}\\right)\n\\\\ &= \\lim_{x \\to 0} \\frac{x(\\sqrt{1+2x} + 1)}{(\\sqrt{1+2x})^2 - 1^2}\n\\\\ &= \\lim_{x \\to 0} \\frac{x(\\sqrt{1+2x} + 1)}{(1+2x) - 1}\n\\\\ &= \\lim_{x \\to 0} \\frac{\\sqrt{1+2x} + 1}{2}\n\\\\ &= \\frac{\\sqrt{1+2\\cdot0} + 1}{2}\n\\\\ &= {\\color{blue} 1}\\end{align*}"

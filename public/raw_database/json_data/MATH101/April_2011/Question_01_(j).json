@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(j)", 
     "course": "MATH101", 
-    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the first three nonzero terms of the Maclaurian series (power\nseries in x) for\n\n\\[f(x) = x^3 \\sin(x^3)\\]", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the first three nonzero terms of the Maclaurian series (power\nseries in x) for\n\n\\begin{align*}f(x) = x^3 \\sin(x^3)\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "We could compute all of the derivatives by hand, but this would be a\nlong and arduous process. This is not an efficient use of exam time! As\nsuch, we use the known series of $\\sin(x)$ to note that\n\n\\[\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\]\n\nIt follows then that\n\n\\[x^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots\\]\n\nand so the first three nonzero terms of the Maclurian series are\n\n\\[x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\\]"
+        "We could compute all of the derivatives by hand, but this would be a\nlong and arduous process. This is not an efficient use of exam time! As\nsuch, we use the known series of $\\sin(x)$ to note that\n\n\\begin{align*}\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\end{align*}\n\nIt follows then that\n\n\\begin{align*}x^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots\\end{align*}\n\nand so the first three nonzero terms of the Maclurian series are\n\n\\begin{align*}x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\\end{align*}"
     ], 
     "hints": [
-        "The Maclurian series for $\\sin(x)$ is given by\n\n\\[\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\\]"
+        "The Maclurian series for $\\sin(x)$ is given by\n\n\\begin{align*}\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\\end{align*}"
     ]
 }

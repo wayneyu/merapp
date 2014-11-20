@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_A_16", 
     "course": "MATH152", 
-    "statement": "Write the matrix $A$ so that the equation\n\n\\[s \\left[\\begin{array}{c} 1 \\\\ 2 \\end{array} \\right] + t \\left[\\begin{array}{c} 3 \\\\ -1 \\end{array} \\right] = \\left[\\begin{array}{c} -2 \\\\ 10 \\end{array} \\right]\\]\ncan be represented as a matrix equation,\n\n: A\\textbackslash{}left{[}\\textbackslash{}begin\\{array\\}\\{c\\} s\n\\textbackslash{}\\textbackslash{} t \\textbackslash{}end\\{array\\}\n\\textbackslash{}right{]} =\n\\textbackslash{}left{[}\\textbackslash{}begin\\{array\\}\\{c\\} -2\n\\textbackslash{}\\textbackslash{} 10 \\textbackslash{}end\\{array\\}\n\\textbackslash{}right{]}.", 
+    "statement": "Write the matrix $A$ so that the equation\n\n\\begin{align*}s \\left[\\begin{array}{c} 1 \\\\ 2 \\end{array} \\right] + t \\left[\\begin{array}{c} 3 \\\\ -1 \\end{array} \\right] = \\left[\\begin{array}{c} -2 \\\\ 10 \\end{array} \\right]\\end{align*}\ncan be represented as a matrix equation,\n\n: A\\textbackslash{}left{[}\\textbackslash{}begin\\{array\\}\\{c\\} s\n\\textbackslash{}\\textbackslash{} t \\textbackslash{}end\\{array\\}\n\\textbackslash{}right{]} =\n\\textbackslash{}left{[}\\textbackslash{}begin\\{array\\}\\{c\\} -2\n\\textbackslash{}\\textbackslash{} 10 \\textbackslash{}end\\{array\\}\n\\textbackslash{}right{]}.", 
     "year": 2010, 
     "sols": [
-        "Following the hint gives us\n\n\\begin{align*}\n\\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right]\\left[\\begin{array}{c} s\\\\t \\end{array}\\right] &= \\left[\\begin{array}{c} as+bt \\\\ cs+dt \\end{array}\\right] = s\\left[\\begin{array}{c} a \\\\ c\\end{array}\\right] + t\\left[\\begin{array}{c} b \\\\ d\\end{array}\\right]\n\\end{align*} Comparing to the original equation gives\n\n\\[A = \\left[\\begin{array}{cc}\n1 & 3 \\\\ 2 & -1\n\\end{array}\\right]\\]"
+        "Following the hint gives us\n\n\\begin{align*}\n\\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right]\\left[\\begin{array}{c} s\\\\t \\end{array}\\right] &= \\left[\\begin{array}{c} as+bt \\\\ cs+dt \\end{array}\\right] = s\\left[\\begin{array}{c} a \\\\ c\\end{array}\\right] + t\\left[\\begin{array}{c} b \\\\ d\\end{array}\\right]\\end{align*} Comparing to the original equation gives\n\n\\begin{align*}A = \\left[\\begin{array}{cc}\n1 & 3 \\\\ 2 & -1\n\\end{array}\\right]\\end{align*}"
     ], 
     "hints": [
-        "Set\n\n\\[A = \\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right]\\] and calculate\n\n\\[\\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right] \\left[\\begin{array}{c} s\\\\t \\end{array}\\right]\\]\nMatching one-by-one will give you the values of \\emph{a}, \\emph{b},\n\\emph{c} and \\emph{d}."
+        "Set\n\n\\begin{align*}A = \\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right]\\end{align*} and calculate\n\n\\begin{align*}\\left[\\begin{array}{cc}\na & b \\\\ c & d\n\\end{array}\\right] \\left[\\begin{array}{c} s\\\\t \\end{array}\\right]\\end{align*}\nMatching one-by-one will give you the values of \\emph{a}, \\emph{b},\n\\emph{c} and \\emph{d}."
     ]
 }

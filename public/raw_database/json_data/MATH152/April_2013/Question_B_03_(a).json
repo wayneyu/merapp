@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_B_03_(a)", 
     "course": "MATH152", 
-    "statement": "Let \\emph{A} be a certain $2\\times 3$ matrix. Suppose that using\nelementary row operations, the matrix \\emph{A} can be transformed into\nthe matrix\n\n\\[U = \\begin{bmatrix} \n1 & 0 & -7 \\\\\n0 & 1 & 4\n\\end{bmatrix}\\]\n\nFind all solutions, if any, of the system $Ax = 0$", 
+    "statement": "Let \\emph{A} be a certain $2\\times 3$ matrix. Suppose that using\nelementary row operations, the matrix \\emph{A} can be transformed into\nthe matrix\n\n\\begin{align*}U = \\begin{bmatrix} \n1 & 0 & -7 \\\\\n0 & 1 & 4\n\\end{bmatrix}\\end{align*}\n\nFind all solutions, if any, of the system $Ax = 0$", 
     "year": 2013, 
     "sols": [
         "Elementary row operations don't change the solution of a homogeneous\nequation, hence the solutions of \\emph{Ux = 0} also solve \\emph{Ax = 0}.\n\nFrom the first row on matrix U, we have\n$\\mathbf{x_{1}} = 7\\mathbf{x_{3}}$.\n\nFrom the second row on matrix U, we have\n$\\mathbf{x_{2}} = -4\\mathbf{x_{3}}$.\n\nHence the general solution to is\n$\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}$, where a is any real number."

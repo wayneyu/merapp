@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(c)", 
     "course": "MATH110", 
-    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\]\n\nFind all the \\emph{x}- and \\emph{y}-intercepts of $f$.", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\end{align*}\n\nFind all the \\emph{x}- and \\emph{y}-intercepts of $f$.", 
     "year": 2011, 
     "sols": [
-        "At a function's x-intercept, its y-value is equal to zero. Thus to find\nour x-intercepts, we need to set the function equal to 0 and solve for\n$x$.\n\n\\[0 = \\ln(4 - x^2)\\]\n\nWe raise both sides by \\emph{e} to cancel the logarithm and get:\n\n\\begin{align*}\ne^0 &= e^{\\ln(4 - x^2)} \\\\\n1 &= 4 - x^2 \\\\\nx^2 &= 3 \\\\\n\\pm\\sqrt{3} &= x \\end{align*}\n\nSo our two x-intercepts are at $x = \\pm\\sqrt{3}$.\n\nThe y-intercept of a function occurs when $x = 0$. Therefore the\ny-intercept is $\\displaystyle {}y=\\ln{4}$."
+        "At a function's x-intercept, its y-value is equal to zero. Thus to find\nour x-intercepts, we need to set the function equal to 0 and solve for\n$x$.\n\n\\begin{align*}0 = \\ln(4 - x^2)\\end{align*}\n\nWe raise both sides by \\emph{e} to cancel the logarithm and get:\n\n\\begin{align*}\ne^0 &= e^{\\ln(4 - x^2)} \\\\\n1 &= 4 - x^2 \\\\\nx^2 &= 3 \\\\\n\\pm\\sqrt{3} &= x \\end{align*}\n\nSo our two x-intercepts are at $x = \\pm\\sqrt{3}$.\n\nThe y-intercept of a function occurs when $x = 0$. Therefore the\ny-intercept is $\\displaystyle {}y=\\ln{4}$."
     ], 
     "hints": [
         "What is the value of $x$ at a y-intercept? How can you use this to find\n$y$? Similarly, what is the value of $y$ at an x-intercept?"

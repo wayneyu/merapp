@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_A_21", 
     "course": "MATH152", 
-    "statement": "Suppose that $A$ is a 12 x12 invertible matrix and \\textbf{b} is a\ncolumn vector with 12 entries. Both $A$ and \\textbf{b} have been entered\ninto MATLAB.\n\nWhat command(s) would you use to compute the vector \\textbf{x} that\nsolves the linear system\n\n\\[A\\mathbf{x} = \\textbf{b}\\]?", 
+    "statement": "Suppose that $A$ is a 12 x12 invertible matrix and \\textbf{b} is a\ncolumn vector with 12 entries. Both $A$ and \\textbf{b} have been entered\ninto MATLAB.\n\nWhat command(s) would you use to compute the vector \\textbf{x} that\nsolves the linear system\n\n\\begin{align*}A\\mathbf{x} = \\textbf{b}\\end{align*}?", 
     "year": 2011, 
     "sols": [
         "One would use the backslash operator \u00e2\u0080\u009c\\textbackslash{}\u00e2\u0080\u009d, and store\nthe answer into a vector called \\textbf{x}. The full command in your\nMATLAB console would look like\n\n\\texttt{x~=~A\\textbackslash{}b;}\n\nNote that\n\n\\texttt{x~=~inv(A)*b;}\n\nwould also work, but requires to compute the inverse of \\emph{A} first.\nThere is better ways of solving \\emph{Ax=b} than that, and \\emph{x=\nA\\textbackslash{}b} is one of them. It does not use the inverse matrix\n(which is costly to compute)."

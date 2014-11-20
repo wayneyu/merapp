@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_08", 
+    "course": "MATH110", 
+    "statement": "Let\n\n\\begin{align*}f(x) = \\left\\{\n \\begin{array}{lr}\n   e^{-x} & \\text{if}\\quad x < t\\\\\n   2(x+1) & \\text{if} \\quad x \\geq t\n  \\end{array}\n\\right.\\end{align*}\n\nExplain why there exists a number $t$ such that $f$ is continuous.\n\n(Hint: apply the Intermediate Value Theorem to the function\n$e^{-t}-2(t+1)$.)", 
+    "year": 2013, 
+    "sols": [
+        "The condition for $f$ to be continuous is\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\\end{align*}\n\nSince both piece of the function are continuous, we can use direct\nsubstitution and find $t$. We must show there exists a solution to the\nabove equation. Equivalently we want to show that the following function\n$g(t)$ has a zero\n\n\\begin{align*}\ng(t)=e^{-t}-2(t+1)\\end{align*}\n\nNote that $g$ is continuous since it is constructed from continuous\nfunctions. We aim to apply IVT. Observe\n\n\\begin{align*}\ng(0)&=e^0-2<0\\\\\ng(-1)&=e^1-2(-1+1)=e>0\\end{align*}\n\nHence by the IVT there exists $c \\in (-1,0)$ such that $g(c)=0$. At\n$t=c$, we have $e^{-c} = 2(c+1)$. In turn, this means we have the two\none sided limits equalling each other and hence $f(x)$ will be\ncontinuous by choosing $x=c$."
+    ], 
+    "hints": [
+        "We write down what it means for $f$ to be continuous. This is given by\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\\end{align*}\n\nIn order for our function to be continuous, we need a solution to the\nabove equation. Now we can apply the hint in the problem to use the\nintermediate value theorem."
+    ]
+}

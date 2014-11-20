@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_Section_001_10_(a)", 
+    "course": "MATH110", 
+    "statement": "How many ways can $7$ graduate students be assigned to teach the $4$\nsections of MATH110 next year if each graduate student can be assigned\nto at most one section?\n\n\\emph{For this question, a numerical answer is required as a final\nanswer.}", 
+    "year": 2013, 
+    "sols": [
+        "We have $4$ slots to fill and $7$ people to fill them. So that means, we\nhave $7$ choices for the first slot, $6$ for the second, $5$ for the\nthird and $4$ for the fourth. Since the number of choices for each slot\ndoes not dependent on the choice of the previous spots we need to\nmultiply these numbers. So the total number of ways to fill the slots is\n$7\\cdot6\\cdot5\\cdot4 = \\frac{7!}{3!} = 840$. There are $840$ ways to\nfill the slots."
+    ], 
+    "hints": [
+        "Here it matters which instructor teaches which course. How many choice\nof instructors are there for the first course? For the second course? Do\nyou need to add or multiply these numbers?"
+    ]
+}

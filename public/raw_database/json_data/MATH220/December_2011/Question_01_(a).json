@@ -5,7 +5,7 @@
     "statement": "State De Morgan's laws (in the context of sets).", 
     "year": 2011, 
     "sols": [
-        "De Morgan's laws are, for sets $X, Y \\subseteq Z$ the following.\n\n\\[(X \\cup Y)^c = X^c \\cap Y^c\\]\n\nand\n\n\\[(X \\cap Y)^c = X^c \\cup Y^c\\]\n\nHere the c indicates the complement of the set."
+        "De Morgan's laws are, for sets $X, Y \\subseteq Z$ the following.\n\n\\begin{align*}(X \\cup Y)^c = X^c \\cap Y^c\\end{align*}\n\nand\n\n\\begin{align*}(X \\cap Y)^c = X^c \\cup Y^c\\end{align*}\n\nHere the c indicates the complement of the set."
     ], 
     "hints": [
         "De Morgan's laws are about the intersections, unions, and complements of\nsets."

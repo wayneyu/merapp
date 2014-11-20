@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nd) If $\\displaystyle f(x)$ is differentiable at x = 2, then\n$\\lim_{h \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.$", 
+    "year": 2013, 
+    "sols": [
+        "\\textbf{False:} If $f(x)$ is differentiable at $x=2$, then by the\ndefinition of derivative at a point, we have\n$\\displaystyle f'(2) = \\lim_{h\\rightarrow0}\\frac{f(2+h)-f(2)}{h}.$ So to\nparaphrase the statement, we are asking whether\n$\\displaystyle f'(2) = 2$. Clearly, this does not have to be the case.\nConsider the example $\\displaystyle f(x)=1$. We have\n$\\displaystyle f(x)$ is differentiable at $x=2$ (and everywhere else\ntoo). But $f'(2) = 0$."
+    ], 
+    "hints": [
+        "The given equality should remind you of a Newton quotient (a\nderivative). Does the derivative have to be equal to 2 of an arbitrary\nfunction?"
+    ]
+}

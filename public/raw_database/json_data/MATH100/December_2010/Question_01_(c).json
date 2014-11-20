@@ -2,12 +2,12 @@
     "term": "December", 
     "question": "Question_01_(c)", 
     "course": "MATH100", 
-    "statement": "Find the derivative of\n\n\\[\\displaystyle\nf(x)=x\\cos(x)\\]", 
+    "statement": "Find the derivative of\n\n\\begin{align*}\\displaystyle\nf(x)=x\\cos(x)\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "Using the Product Rule, we get:\n\n\\begin{align*}\nf'(x)&=(x\\cos{x})'\\\\\n&=(x)'(\\cos{x})+x(\\cos{x})'\\\\\n&=\\cos{x}+x(-\\sin{x})\\\\\n&=\\cos{x}-x\\sin{x}\n\\end{align*}"
+        "Using the Product Rule, we get:\n\n\\begin{align*}\nf'(x)&=(x\\cos{x})'\\\\\n&=(x)'(\\cos{x})+x(\\cos{x})'\\\\\n&=\\cos{x}+x(-\\sin{x})\\\\\n&=\\cos{x}-x\\sin{x}\\end{align*}"
     ], 
     "hints": [
-        "Remember that the Product Rule states that:\n\n\\[\\displaystyle\n(f(x)\\times g(x))'=f'(x)g(x)+f(x)g'(x)\\]"
+        "Remember that the Product Rule states that:\n\n\\begin{align*}\\displaystyle\n(f(x)\\times g(x))'=f'(x)g(x)+f(x)g'(x)\\end{align*}"
     ]
 }

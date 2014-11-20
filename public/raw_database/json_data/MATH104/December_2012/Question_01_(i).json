@@ -2,14 +2,14 @@
     "term": "December", 
     "question": "Question_01_(i)", 
     "course": "MATH104", 
-    "statement": "Let\n\n\\[\\displaystyle{}p(q)=e^{3q}.\\]\n\nConsider its 20th order Taylor polynomial at q=1;\n\n\\[T_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\\]\n\nWhat is $a_{20}$?", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle{}p(q)=e^{3q}.\\end{align*}\n\nConsider its 20th order Taylor polynomial at q=1;\n\n\\begin{align*}T_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\\end{align*}\n\nWhat is $a_{20}$?", 
     "year": 2012, 
     "sols": [
-        "Proceeding as in the hints, we compute the 20th derivative to be\n\n\\begin{align*}\np'(q) &= 3e^{3q} \\\\\np''(q) &= 3^{2}e^{3q} \\\\\np'''(q) &= 3^{3}e^{3q} \\\\\n&\\vdots \\\\\np^{(20)}(q) &= 3^{20}e^{3q} \\\\\n\\end{align*}\n\nNow using the second hint, we see that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}$\n\nwhich completes the problem."
+        "Proceeding as in the hints, we compute the 20th derivative to be\n\n\\begin{align*}\np'(q) &= 3e^{3q} \\\\\np''(q) &= 3^{2}e^{3q} \\\\\np'''(q) &= 3^{3}e^{3q} \\\\\n&\\vdots \\\\\np^{(20)}(q) &= 3^{20}e^{3q} \\end{align*}\n\nNow using the second hint, we see that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}$\n\nwhich completes the problem."
     ], 
     "hints": [
         "Recall (or review) the definition of the 20th order Taylor polynomial of\na function $p(q)$ at a point $q = a$ from your text (don't let the\nchange of notation scare you! In this case, \\emph{f} is \\emph{p} and\n\\emph{x} is \\emph{q}).", 
-        "Recall that the second order Taylor polynomial of a function $p(q)$ at a\npoint $q = a$ is given by $T_{20}(x)$ where,\n\n\\[\\displaystyle T_{20}(q) = p(a) + p'(a)(q - a) + \\frac{1}{2}p''(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\\]\n\nIn our case, $a=1$ and $p(q) = e^{3q}$.\n\nHowever even knowing this, it might not be clear how to proceed - Look\nat what $a_{20}$ is in the equation above and try to figure out a\npattern to help you compute this value.", 
+        "Recall that the second order Taylor polynomial of a function $p(q)$ at a\npoint $q = a$ is given by $T_{20}(x)$ where,\n\n\\begin{align*}\\displaystyle T_{20}(q) = p(a) + p'(a)(q - a) + \\frac{1}{2}p''(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\\end{align*}\n\nIn our case, $a=1$ and $p(q) = e^{3q}$.\n\nHowever even knowing this, it might not be clear how to proceed - Look\nat what $a_{20}$ is in the equation above and try to figure out a\npattern to help you compute this value.", 
         "The previous hint tells us that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!}$\n\nSo we need to compute the 20th derivative of $p(q)$ at the point $q=1$.\nTry computing the first few derivatives and seeing if you can figure out\nthe pattern."
     ]
 }

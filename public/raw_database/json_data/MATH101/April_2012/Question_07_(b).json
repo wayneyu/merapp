@@ -5,7 +5,7 @@
     "statement": "Let $I = \\int_{1}^{2} (1/x)\\, dx$. Write down the Simpson's\napproximation \\emph{S}\\textsubscript{4} for \\emph{I}.\n\n\\emph{You do not need to simplify your answer.}", 
     "year": 2012, 
     "sols": [
-        "The Simpson's rule approximation for $n = 4$ is given by:\n\n\\[S_4 = \\frac{\\Delta x}{3}\\left(f(x_0) + 4f(x_1) + 2f(x_2) +4f(x_3) + f(x_4)\\right)\\]\n\nIn our situation, $\\Delta x = \\frac14$, $f(x) = \\frac1{x}$,\n$\\displaystyle x_0 = 1$ and $\\displaystyle x_4 = 2$. Thus we can\ncalculate $S_4$ as:\n\n$S_4 = \\frac{1/4}{3} \\left(\\frac1{1} + 4\\frac1{5/4} + 2\\frac1{6/4} + 4\\frac1{7/4} + \\frac1{2} \\right)$"
+        "The Simpson's rule approximation for $n = 4$ is given by:\n\n\\begin{align*}S_4 = \\frac{\\Delta x}{3}\\left(f(x_0) + 4f(x_1) + 2f(x_2) +4f(x_3) + f(x_4)\\right)\\end{align*}\n\nIn our situation, $\\Delta x = \\frac14$, $f(x) = \\frac1{x}$,\n$\\displaystyle x_0 = 1$ and $\\displaystyle x_4 = 2$. Thus we can\ncalculate $S_4$ as:\n\n$S_4 = \\frac{1/4}{3} \\left(\\frac1{1} + 4\\frac1{5/4} + 2\\frac1{6/4} + 4\\frac1{7/4} + \\frac1{2} \\right)$"
     ], 
     "hints": [
         "The formula for the Simpson's rule is given by\n\n$S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)$\n\nwhere $n$ is an even integer."

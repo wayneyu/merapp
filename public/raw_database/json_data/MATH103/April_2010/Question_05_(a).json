@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_05_(a)", 
     "course": "MATH103", 
-    "statement": "In this problem, you are asked to find a value for the integral\n\n\\[I = \\int_0^1 x\\cos(x)\\,dx\\] in two different ways.\n\n(a) Use one of the integration techniques to compute the above integral\ndirectly. (Leave your answer in terms of sines and cosines of some\nnumber.)", 
+    "statement": "In this problem, you are asked to find a value for the integral\n\n\\begin{align*}I = \\int_0^1 x\\cos(x)\\,dx\\end{align*} in two different ways.\n\n(a) Use one of the integration techniques to compute the above integral\ndirectly. (Leave your answer in terms of sines and cosines of some\nnumber.)", 
     "year": 2010, 
     "sols": [
-        "Let $u=x$ and $dv = \\cos x dx$. This gives $du = dx$ and $v = \\sin x$.\nHence, using integration by parts, we have\n\n\\begin{align*}\n\\int_{0}^{1}x\\cos x \\, dx &= x\\sin x \\mid_{0}^{1} - \\int_{0}^{1}\\sin x \\, dx \\\\\n&= (1)\\sin(1) - (0)\\sin(0) - (-\\cos(x))|_{0}^{1} \\\\\n&= \\sin(1) - (-\\cos(1) + \\cos(0)) \\\\\n&= \\sin(1) + \\cos(1) - 1 \\\\\n\\end{align*}\n\ncompleting the problem."
+        "Let $u=x$ and $dv = \\cos x dx$. This gives $du = dx$ and $v = \\sin x$.\nHence, using integration by parts, we have\n\n\\begin{align*}\n\\int_{0}^{1}x\\cos x \\, dx &= x\\sin x \\mid_{0}^{1} - \\int_{0}^{1}\\sin x \\, dx \\\\\n&= (1)\\sin(1) - (0)\\sin(0) - (-\\cos(x))|_{0}^{1} \\\\\n&= \\sin(1) - (-\\cos(1) + \\cos(0)) \\\\\n&= \\sin(1) + \\cos(1) - 1 \\end{align*}\n\ncompleting the problem."
     ], 
     "hints": [
         "Products of functions usually fall victim to integration by parts."

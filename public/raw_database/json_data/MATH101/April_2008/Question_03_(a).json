@@ -2,13 +2,13 @@
     "term": "April", 
     "question": "Question_03_(a)", 
     "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\[\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.\\]", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.\\end{align*}", 
     "year": 2008, 
     "sols": [
-        "We follow the hints and first rewrite the integral.\n\n\\[\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.\\]\nNow we substitute\n\n\\[u = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.\\]\nFurther, for $x=1$ we have $u=1$, and for $x=2$ we have $u=1/2$.\nTherefore,\n\n\\begin{align*}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&= -\\int_1^{1/2} e^u\\,du \\\\\n&= \\int_{1/2}^1 e^u\\,du \\\\\n&= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&= e-e^{1/2}.\n\\end{align*}"
+        "We follow the hints and first rewrite the integral.\n\n\\begin{align*}\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.\\end{align*}\nNow we substitute\n\n\\begin{align*}u = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.\\end{align*}\nFurther, for $x=1$ we have $u=1$, and for $x=2$ we have $u=1/2$.\nTherefore,\n\n\\begin{align*}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&= -\\int_1^{1/2} e^u\\,du \\\\\n&= \\int_{1/2}^1 e^u\\,du \\\\\n&= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&= e-e^{1/2}.\\end{align*}"
     ], 
     "hints": [
         "Try a substitution.", 
-        "Maybe it helps to rewrite the integrand as\n\n\\[\\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}.\\]"
+        "Maybe it helps to rewrite the integrand as\n\n\\begin{align*}\\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}.\\end{align*}"
     ]
 }

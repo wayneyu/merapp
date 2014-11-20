@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_B_03_(b)", 
     "course": "MATH152", 
-    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\]\n\nand transforms\n\n\\[\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\]\n\nIs A invertible? Justify briefly.", 
+    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\end{align*}\n\nand transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\end{align*}\n\nIs A invertible? Justify briefly.", 
     "year": 2011, 
     "sols": [
-        "Recall that a matrix is invertible if and only if its determinant,\ndet(A) $\\neq$ 0. Also recall that the determinant of a matrix is the\nproduct of its eigenvalues. In\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B3_(a)}{part(a)},\nwe deduced that the eigenvalues were $\\lambda_1=2$ and $\\lambda_2=0$.\nTherefore we have that,\n\n\\[\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\\]\n\nTherefore we conclude that det(A)=0 and thus that the matrix A is\n\\textbf{not} invertible."
+        "Recall that a matrix is invertible if and only if its determinant,\ndet(A) $\\neq$ 0. Also recall that the determinant of a matrix is the\nproduct of its eigenvalues. In\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B3_(a)}{part(a)},\nwe deduced that the eigenvalues were $\\lambda_1=2$ and $\\lambda_2=0$.\nTherefore we have that,\n\n\\begin{align*}\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\\end{align*}\n\nTherefore we conclude that det(A)=0 and thus that the matrix A is\n\\textbf{not} invertible."
     ], 
     "hints": [
         "How do eigenvalues relate to the invertibility of A?"

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_10_(a)", 
+    "course": "MATH110", 
+    "statement": "Explain what it means for a function to be differentiable at the points\n$x=2$ in terms of limits.", 
+    "year": 2013, 
+    "sols": [
+        "A function $f(x)$ is differentiable at the point $x=2$ if the following\nlimit exists\n\n\\begin{align*}\\lim_{x \\to 2}\\frac{f(x)-f(2)}{x-2}\\end{align*}\n\nEquivalently, $f(x)$ is differentiable at the point $x=2$ if the\nfollowing limit exists\n\n\\begin{align*}\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}\\end{align*}"
+    ], 
+    "hints": [
+        "Recall the definition of a derivative at a point $x=a$ is\n\n\\begin{align*}f'(a)=\\lim_{x\\to{}a}\\frac{f(x)-f(a)}{x-a}\\end{align*}\n\nif the limit exists. What must be true for the limit to exist in terms\nof sided limits?"
+    ]
+}

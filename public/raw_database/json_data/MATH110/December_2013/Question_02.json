@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_02", 
+    "course": "MATH110", 
+    "statement": "Find the equations of the two tangent lines to the curve\n\n\\begin{align*}f(x) = \\frac{x - 4}{x + 4}\\end{align*} that are parallel to the line x - 2y = 2.", 
+    "year": 2013, 
+    "sols": [
+        "We first recognise that parallel means that the slopes must be equal.\nRearranging the equation, we get:\n\n\\begin{align*}\nx-2y &= 2\\\\\nx-2 &= 2y\\\\\ny&= \\frac{x-2}{2}\\\\\ny &= \\frac{1}{2} x - 1.\\end{align*}\n\nSo that means we are looking for points along the curve with slope equal\nto $\\frac{1}{2}$. To get those points, we need the derivative of the\ncurve:\n\n\\begin{align*}\n{\\frac{{\\rm d}}{{\\rm d}x}} (y) &= {\\frac{{\\rm d}}{{\\rm d}x}} \\left(\\frac{x-4}{x+4}\\right)\\end{align*}\n\nUsing the quotient rule, we get:\n\n\\begin{align*}\nu(x) &= x-4 & u'(x) = 1\\\\\nv(x) &= x+4 & v'(x) = 1\\end{align*}\n\nSo that means:\n\n\\begin{align*}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &= \\frac{v(x)u'(x) - u(x)v'(x)}{\\left(v(x)\\right)^2}\\\\\n&= \\frac{(x+4)\\cdot (1) - (x-4) \\cdot(1)}{\\left(x+4\\right)^2}\\\\\n&= \\frac{8}{\\left(x+4\\right)^2}\\end{align*}\n\nWe are interested in points where the derivative is $\\frac{1}{2}$\n\n\\begin{align*}\n\\frac{1}{2} &= \\frac{8}{\\left(x+4\\right)^2}\\\\\n\\left(x+4\\right)^2 &= 16\\\\\nx+4 &= \\pm 4\\\\\nx &= 0 , -8\\end{align*}\n\nThis means we have to tackle two potential $x$ values. At $x=0$, we\nhave:\n\n\\begin{align*}\ny &= \\frac{0-4}{0+4} = -1\\end{align*}\n\nAt $x=-8$, we have:\n\n\\begin{align*}\ny &= \\frac{-8-4}{-8+4} = \\frac{-12}{-4} = 3\\end{align*}\n\nSo that means the tangent lines are are looking for are: for $x=0$.\n\n\\begin{align*}\ny &= \\frac{1}{2}(x-0) +(-1)\\\\\n&= \\frac{1}{2}x - 1\\\\end{align*}\n\nand for $x=-8$\n\n\\begin{align*}\ny &= \\frac{1}{2}(x-(-8)) + 3\\\\\n&= \\frac{1}{2} (x+8) +  3\\\\\n&= \\frac{1}{2} x +  7\\\\end{align*}"
+    ], 
+    "hints": [
+        "Remember that the derivative of a function at a point is equal to the\nslope of the tangent line at that point. First find the slope of the\ngiven line by changing this equation to the form\n$\\displaystyle y = mx + b$", 
+        "Once you find the slope of the given line, set it equal to the\nderivative of the given function, which we find using the quotient rule.", 
+        "Following the first two hints, we should now have two \\emph{x}-values.\nPlug these values back into the function definition to find the\n\\emph{y}-values. After this, you now have the points and the slope of\nthe two lines you need to find to solve the question."
+    ]
+}

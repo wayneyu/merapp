@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_07_(a)", 
     "course": "MATH215", 
-    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\n\\end{align*}\n\n\\textbf{(a)} Find and plot the critical (or fixed) points. Find and plot\nboth nullclines, that is the set of points where x' = 0 and where y' =\n0.", 
+    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\\end{align*}\n\n\\textbf{(a)} Find and plot the critical (or fixed) points. Find and plot\nboth nullclines, that is the set of points where x' = 0 and where y' =\n0.", 
     "year": 2011, 
     "sols": [
-        "For the nullclines, we consider $x'= x(2-x-y) = 0$\\[x' = 0,\\] if $x=0$\nor $y = 2-x$.\n\nNow we consider $y'= y(1-x) = 0$\\[y' = 0,\\] if $y=0$ or $x = 1$.\n\nFor the critical points, $x'=y'=0$ must hold. Hence, the critical points\nare $(x_0,y_0) = (0,0), (2,0), (1,1)$.\n\nPlotted in the phase space:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Figure_215_2011_7a.jpg}\n\\caption{Phase space with nullclines of y' in red, nullclines of x' in\nblue, critical points in green}\n\\end{figure}"
+        "For the nullclines, we consider $x'= x(2-x-y) = 0$\\begin{align*}x' = 0,\\end{align*} if $x=0$\nor $y = 2-x$.\n\nNow we consider $y'= y(1-x) = 0$\\begin{align*}y' = 0,\\end{align*} if $y=0$ or $x = 1$.\n\nFor the critical points, $x'=y'=0$ must hold. Hence, the critical points\nare $(x_0,y_0) = (0,0), (2,0), (1,1)$.\n\nPlotted in the phase space:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Figure_215_2011_7a.jpg}\n\\caption{Phase space with nullclines of y' in red, nullclines of x' in\nblue, critical points in green}\n\\end{figure}"
     ], 
     "hints": [
         "To be a critical point, both $x'$ and $y'$ must be 0. You may need to\nconsider multiple cases."

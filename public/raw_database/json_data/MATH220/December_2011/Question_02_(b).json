@@ -5,10 +5,10 @@
     "statement": "For \\emph{n} \u2208 \\textbf{N}, let \\emph{P}(\\emph{n}) be the statement\n\"\\emph{n} is divisible by 4\", and let \\emph{Q}(\\emph{n}) be the\nstatement \"\\emph{n}\\textsuperscript{2} + 1 is divisible by 3\".\n\nWrite out in words the statement \"\\emph{P}(3) \u2192 \\emph{Q}(4)\", its\nconverse, and its contrapositive.", 
     "year": 2011, 
     "sols": [
-        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The statement\n\\end{itemize}\n\n\\[\\displaystyle\nP(3) \\Rightarrow Q(4)\\] is \\emph{``3 is divisible by 4 implies that 17\nis divisible by 3''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{converse} is\n\\end{itemize}\n\n\\[\\displaystyle\nQ(4) \\Rightarrow P(3)\\] hence in words it is \\emph{``17 is divisible by\n3 implies that 3 is divisible by 4''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{contrapositive} is\n\\end{itemize}\n\n\\[\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\\] In words this is \\emph{``17 is not\ndivisible by 3 implies that 3 is not divisible by 4''}."
+        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The statement\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\nP(3) \\Rightarrow Q(4)\\end{align*} is \\emph{``3 is divisible by 4 implies that 17\nis divisible by 3''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{converse} is\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\nQ(4) \\Rightarrow P(3)\\end{align*} hence in words it is \\emph{``17 is divisible by\n3 implies that 3 is divisible by 4''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{contrapositive} is\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\\end{align*} In words this is \\emph{``17 is not\ndivisible by 3 implies that 3 is not divisible by 4''}."
     ], 
     "hints": [
-        "The \\emph{converse} of the statement\n\n\\[\\displaystyle\nA \\Rightarrow B\\] is\n\n\\[\\displaystyle\nB \\Rightarrow A\\]", 
-        "The \\emph{contrapositive} of the statement\n\n\\[\\displaystyle\nA \\Rightarrow B\\] is\n\n\\[\\lnot B \\Rightarrow \\lnot A\\]"
+        "The \\emph{converse} of the statement\n\n\\begin{align*}\\displaystyle\nA \\Rightarrow B\\end{align*} is\n\n\\begin{align*}\\displaystyle\nB \\Rightarrow A\\end{align*}", 
+        "The \\emph{contrapositive} of the statement\n\n\\begin{align*}\\displaystyle\nA \\Rightarrow B\\end{align*} is\n\n\\begin{align*}\\lnot B \\Rightarrow \\lnot A\\end{align*}"
     ]
 }

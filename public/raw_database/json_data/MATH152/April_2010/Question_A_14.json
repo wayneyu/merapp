@@ -5,7 +5,7 @@
     "statement": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6{]};}\\\\\\texttt{A(:,1)}", 
     "year": 2010, 
     "sols": [
-        "The first line of code creates a \\emph{2}x\\emph{3} matrix with the row\nvector {[}1 2 3{]} as its first row and the row vector {[}4 5 6{]} as\nits second row. Hence\n\n\\[A = \\left[\\begin{array}{ccc} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{array}\\right]\\]\n\nThe second line tells MATLAB to return a vector of all entries in\n\\emph{A} that have a second argument \\emph{1}, hence \\emph{A(1,1)} and\n\\emph{A(2,1)}. This is a column vector. Therefore the final answer is\n\n\\[\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\\]"
+        "The first line of code creates a \\emph{2}x\\emph{3} matrix with the row\nvector {[}1 2 3{]} as its first row and the row vector {[}4 5 6{]} as\nits second row. Hence\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{array}\\right]\\end{align*}\n\nThe second line tells MATLAB to return a vector of all entries in\n\\emph{A} that have a second argument \\emph{1}, hence \\emph{A(1,1)} and\n\\emph{A(2,1)}. This is a column vector. Therefore the final answer is\n\n\\begin{align*}\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\\end{align*}"
     ], 
     "hints": [
         "What is the dimension of \\emph{A}? What does the \\textbf{;} do when\nentering a matrix? Is the output a column or a row vector?"

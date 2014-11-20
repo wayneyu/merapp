@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(d)", 
     "course": "MATH100", 
-    "statement": "Find the derivative of:\n\n\\[\\frac{e^x}{x^2-3}\\]", 
+    "statement": "Find the derivative of:\n\n\\begin{align*}\\frac{e^x}{x^2-3}\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "To use the quotient rule we first identify the numerator $f(x) = e^{x}$\nand the denominator $g(x) = x^{2} -3$. Then we calculate $f'(x) = e^x$\nand $g'(x) = 2x$. The rest is a walk in the park, just plug it in:\n\n\\begin{align*}\n&\\frac{d}{dx}\\bigg(\\frac{e^{x}}{x^{2}-3}\\bigg)\\\\\n=& \\frac{e^x(x^2-3)-2x(e^x)}{(x^2-3)^2} \\\\\n=& \\frac{e^{x}(x^{2}-3 - 2x)}{(x^{2}-3)^{2}}\\\\\n=& \\frac{e^{x}(x-3)(x+1)}{(x^{2}-3)^{2}}\n\\end{align*}"
+        "To use the quotient rule we first identify the numerator $f(x) = e^{x}$\nand the denominator $g(x) = x^{2} -3$. Then we calculate $f'(x) = e^x$\nand $g'(x) = 2x$. The rest is a walk in the park, just plug it in:\n\n\\begin{align*}\n&\\frac{d}{dx}\\bigg(\\frac{e^{x}}{x^{2}-3}\\bigg)\\\\\n&= \\frac{e^x(x^2-3)-2x(e^x)}{(x^2-3)^2} \\\\\n&= \\frac{e^{x}(x^{2}-3 - 2x)}{(x^{2}-3)^{2}}\\\\\n&= \\frac{e^{x}(x-3)(x+1)}{(x^{2}-3)^{2}}\\end{align*}"
     ], 
     "hints": [
         "Try to run through an algorithm when you want to take a derivative. Ask\nyourself ``Is this a derivative I just'know'?''. If not, ask yourself\n``Is there a special rule that I can use?''", 

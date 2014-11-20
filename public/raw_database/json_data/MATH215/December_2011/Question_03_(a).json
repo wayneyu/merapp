@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_03_(a)", 
     "course": "MATH215", 
-    "statement": "For the following ODE\n\n\\[\\frac{dy}{dt} = (y^2-1)(y-2)^2\\]\n\n\\textbf{(a)} Determine the equilibrium (fixed) points.", 
+    "statement": "For the following ODE\n\n\\begin{align*}\\frac{dy}{dt} = (y^2-1)(y-2)^2\\end{align*}\n\n\\textbf{(a)} Determine the equilibrium (fixed) points.", 
     "year": 2011, 
     "sols": [
         "Setting $\\frac{dy}{dt} = (y^2 - 1)(y-2)^2 = 0$ we have $y = \\pm 1, 2$ as\nour equilibrium points."

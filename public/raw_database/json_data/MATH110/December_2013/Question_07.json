@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_07", 
+    "course": "MATH110", 
+    "statement": "Find the derivative of the function\n$f(x)=(x^2+1)^7(x^4+2)^5(x^6+3)^3(x^8+4).$ (There is no need to simplify\nyour answer.)", 
+    "year": 2013, 
+    "sols": [
+        "We can solve this problem by using logarithmic differentiation.\n\n\\begin{align*}\n\\ln(f(x)) &= \\ln \\left((x^2+1)^7(x^4+2)^5(x^6+3)^3(x^8+4)\\right)\\\\\n&= 7 \\ln (x^2+1) + 5 \\ln (x^4+2) + 3 \\ln (x^6+3) + \\ln (x^8+4)\\end{align*}\n\nDifferentiating implicitly yields\n\n\\begin{align*}\n\\frac{1}{f(x)} f'(x)&= \\frac{7}{x^2+1}\\cdot 2x + \\frac{5}{x^4+2}\\cdot 4x^3 + \\frac{3}{x^6+3}\\cdot 6x^5 + \\frac{1}{x^8+4} \\cdot 8x^7\\end{align*}\n\nSo\n\n\\begin{align*}\nf'(x)&= (x^2+1)^7(x^4+2)^5(x^6+3)^3(x^8+4) \\left(\\frac{14x}{x^2+1} + \\frac{20x^3}{x^4+2} + \\frac{18x^5}{x^6+3} + \\frac{8x^7}{x^8+4} \\right)\\end{align*}", 
+        "Alternatively, we could solve this problem \u00e2\u0080\u0098normally$^{\\prime}$ by\nusing product and chain rule.\n\n\\begin{align*}\nf'(x)&=7(x^2+1)^6(x^4+2)^5(x^6+3)^3(x^8+4)\\cdot2x + 5(x^2+1)^7(x^4+2)^4(x^6+3)^3(x^8+4)\\cdot4x^3\\\\\n&\\quad + 3(x^2+1)^7(x^4+2)^5(x^6+3)^2(x^8+4)\\cdot 6x^5 + (x^2+1)^7(x^4+2)^5(x^6+3)^3\\cdot 8x^7\\end{align*}\n\nNote that we made use of the general product rule:\n\n\\begin{align*}\n\\frac{d}{dx}(f_1 f_2 f_3 f_4)&= \\frac{df_1}{dx} f_2 f_3 f_4 + f_1 \\frac{df_2}{dx} f_3 f_4 + f_1 f_2 \\frac{df_3}{dx} f_4 + f_1 f_2 f_3 \\frac{df_4}{dx}. \\end{align*}\n\nwhich can be found by applying the product rule 3 separate times."
+    ], 
+    "hints": [
+        "A question like this is solved best through logarithmic differentiation.\nHowever one could do this by using the product rule (see the alternate\nsolution)."
+    ]
+}

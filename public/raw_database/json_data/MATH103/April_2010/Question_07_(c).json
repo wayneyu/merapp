@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_07_(c)", 
     "course": "MATH103", 
-    "statement": "The probability that a newly divided cell will divide again\n\\textbf{before} \\emph{t} hours (where \\emph{t} $\\geq$ 0) is given by\n\n\\[F(t) = 1-e^{-t/12}\\]\n\n(c) What is the median division time?", 
+    "statement": "The probability that a newly divided cell will divide again\n\\textbf{before} \\emph{t} hours (where \\emph{t} $\\geq$ 0) is given by\n\n\\begin{align*}F(t) = 1-e^{-t/12}\\end{align*}\n\n(c) What is the median division time?", 
     "year": 2010, 
     "sols": [
-        "The median \\emph{t\\textsubscript{med}} is defined as\n\n\\[F(t_\\text{med}) = \\frac12\\]\n\nSince \\emph{F(t)} is given we can easily calculate that\n\n\\[\\frac12 = F(t_\\text{med}) = 1-e^{-t_\\text{med}/12}, \\quad\u00c2\u00a0\\text{i.e.} \\quad e^{-t_\\text{med}/12} = \\frac12.\\]\n\nAfter cross multiplying we get $\\displaystyle e^{t_\\text{med}/12} = 2.$\nTaking the logarithm \\emph{ln(x)} on both sides yields the final answer\n\n\\[t_\\text{med} = 12\\ln(2).\\]\n\n\\emph{Note: From the class notes you may remember that the median\nwaiting time is given by ln(2)/k. Here k=1/12, see part (a), so our\ncalculated answer agrees with the answer we expected.}"
+        "The median \\emph{t\\textsubscript{med}} is defined as\n\n\\begin{align*}F(t_\\text{med}) = \\frac12\\end{align*}\n\nSince \\emph{F(t)} is given we can easily calculate that\n\n\\begin{align*}\\frac12 = F(t_\\text{med}) = 1-e^{-t_\\text{med}/12}, \\quad\u00c2\u00a0\\text{i.e.} \\quad e^{-t_\\text{med}/12} = \\frac12.\\end{align*}\n\nAfter cross multiplying we get $\\displaystyle e^{t_\\text{med}/12} = 2.$\nTaking the logarithm \\emph{ln(x)} on both sides yields the final answer\n\n\\begin{align*}t_\\text{med} = 12\\ln(2).\\end{align*}\n\n\\emph{Note: From the class notes you may remember that the median\nwaiting time is given by ln(2)/k. Here k=1/12, see part (a), so our\ncalculated answer agrees with the answer we expected.}"
     ], 
     "hints": [
         "There is a direct relation between the median and the cumulative\nfunction."

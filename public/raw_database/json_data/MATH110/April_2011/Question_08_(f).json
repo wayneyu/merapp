@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_08_(f)", 
     "course": "MATH110", 
-    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\]\n\nSketch the graph of $f$, indicating all you have found in the previous\nparts of the question.", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\end{align*}\n\nSketch the graph of $f$, indicating all you have found in the previous\nparts of the question.", 
     "year": 2011, 
     "sols": [
         "Using the information from parts (a) - (e), we draw the graph as\nfollows.\n\nFirst, we know that the function is undefined outside of\n$\\displaystyle (-2,2)$ so we will shade out that portion of the graph.\n\nNow we add in the two \\emph{x}-intercepts at $-\\sqrt{3}$ and $\\sqrt{3}$.\nWe also include the information about the asymptotes - both $x = -2$ and\n$x = 2$ were asymptotes, with the function going to $-\\infty$.\n\nFinally, incorporating the information from (d) and (e) about\nincrease/decrease and concavity, and the maximum at \\emph{x = 0}, we\nconnect the dots and finish the drawing.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMath110April2011Question8f.png}\n\\caption{ScienceMathExamResourcesCoursesMath110April2011Question8f.png}\n\\end{figure}"

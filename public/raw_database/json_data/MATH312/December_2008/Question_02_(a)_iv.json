@@ -5,7 +5,7 @@
     "statement": "\\textbf{For each of the following congruences, find the least\nnonnegative integer \\emph{x} that satisfies it.}\n\n$\\displaystyle -9x \\equiv 3^{162} \\mod{17}$", 
     "year": 2008, 
     "sols": [
-        "We first reduce the right hand side using Euler's Formula (or Fermat's\nLittle Theorem). As $\\displaystyle \\gcd(3,17) = 1$ and\n\n$\\displaystyle 3^{\\phi(17)} \\equiv 3^{17-1} \\equiv 3^{16} \\equiv 1 \\mod{17}$\n\nand hence\n\n\\begin{align*}\n3^{162} &\\equiv 3^{160}\\cdot 3^{2} \\equiv 9 \\mod{17}\n\\end{align*}\n\nNow, we have\n\n$\\displaystyle 9x \\equiv 9 \\mod{17}$\n\nand thus, multiplying both sides by the inverse of 9 gives\n\n$\\displaystyle x \\equiv 1 \\mod{17}$\n\n(notice that we didn't need to compute this inverse, though if we wanted\nto the inverse is 2)."
+        "We first reduce the right hand side using Euler's Formula (or Fermat's\nLittle Theorem). As $\\displaystyle \\gcd(3,17) = 1$ and\n\n$\\displaystyle 3^{\\phi(17)} \\equiv 3^{17-1} \\equiv 3^{16} \\equiv 1 \\mod{17}$\n\nand hence\n\n\\begin{align*}\n3^{162} &\\equiv 3^{160}\\cdot 3^{2} \\equiv 9 \\mod{17}\\end{align*}\n\nNow, we have\n\n$\\displaystyle 9x \\equiv 9 \\mod{17}$\n\nand thus, multiplying both sides by the inverse of 9 gives\n\n$\\displaystyle x \\equiv 1 \\mod{17}$\n\n(notice that we didn't need to compute this inverse, though if we wanted\nto the inverse is 2)."
     ], 
     "hints": [
         "Reduce the right hand side using Euler's Theoerm (or Fermat's Little\nTheorem). Then isolate for \\emph{x}."

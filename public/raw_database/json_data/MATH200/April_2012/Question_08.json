@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08", 
     "course": "MATH200", 
-    "statement": "Let E be the region in the first octant bounded by the coordinate\nplanes, the plane\n\n\\[\\displaystyle{}x+y=1,\\]\n\nand the surface\n\n\\[\\displaystyle{}z=y^2.\\]\n\nEvaluate\n\n\\[\\iiint\\limits_{E}z\\textrm{d}V.\\]", 
+    "statement": "Let E be the region in the first octant bounded by the coordinate\nplanes, the plane\n\n\\begin{align*}\\displaystyle{}x+y=1,\\end{align*}\n\nand the surface\n\n\\begin{align*}\\displaystyle{}z=y^2.\\end{align*}\n\nEvaluate\n\n\\begin{align*}\\iiint\\limits_{E}z\\textrm{d}V.\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "We find that the integration boundaries are\n$\\displaystyle z\\in[0,y^2],\\ \\ y\\in[0,1-x],\\ \\ x\\in[0,1]$\n\nHence, the integral to calculate is\n\n\\begin{align*}\n \\int_0^1\\int_0^{1-x}\\int_0^{y^2}z\\;\\text{d}z\\text{d}y\\text{x} \n&= \\int_0^1\\int_{0}^{1-x}\\left[\\frac{z^2}{2}\\right]_0^{y^2}\\;\\text{d}y\\text{d}x\\\\\n&=\\int_0^1\\int_{0}^{1-x}\\frac{y^4}{2}\\;\\text{d}y\\text{d}x\\\\\n&=\\int_0^1\\left[\\frac{y^5}{10}\\right]_0^{1-x}\\;\\text{d}x\\\\\n&=\\int_0^1\\frac{(1-x)^5}{10}\\;\\text{d}x\\\\\n&= \\left[-\\frac{(1-x)^6}{60}\\right]_0^1\\\\\n&= \\frac{1}{60}\n\\end{align*}"
+        "We find that the integration boundaries are\n$\\displaystyle z\\in[0,y^2],\\ \\ y\\in[0,1-x],\\ \\ x\\in[0,1]$\n\nHence, the integral to calculate is\n\n\\begin{align*}\n \\int_0^1\\int_0^{1-x}\\int_0^{y^2}z\\;\\text{d}z\\text{d}y\\text{x} \n&= \\int_0^1\\int_{0}^{1-x}\\left[\\frac{z^2}{2}\\right]_0^{y^2}\\;\\text{d}y\\text{d}x\\\\\n&=\\int_0^1\\int_{0}^{1-x}\\frac{y^4}{2}\\;\\text{d}y\\text{d}x\\\\\n&=\\int_0^1\\left[\\frac{y^5}{10}\\right]_0^{1-x}\\;\\text{d}x\\\\\n&=\\int_0^1\\frac{(1-x)^5}{10}\\;\\text{d}x\\\\\n&= \\left[-\\frac{(1-x)^6}{60}\\right]_0^1\\\\\n&= \\frac{1}{60}\\end{align*}"
     ], 
     "hints": [
         "Use the coordinate planes and the equations $\\displaystyle y=1-x$ and\n$\\displaystyle z=y^2$ to find the integration limits\n\n$\\displaystyle z \\in [0, y^2]$\n\n$\\displaystyle y \\in [0, 1-x]$\n\n$\\displaystyle x \\in [0,1]$", 

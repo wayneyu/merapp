@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_07_(a)", 
     "course": "MATH103", 
-    "statement": "Find the first three non-zero terms of the Taylor series for\n\n\\[\\displaystyle f(x) = \\ln(1+x)\\] around $x=0$.", 
+    "statement": "Find the first three non-zero terms of the Taylor series for\n\n\\begin{align*}\\displaystyle f(x) = \\ln(1+x)\\end{align*} around $x=0$.", 
     "year": 2011, 
     "sols": [
-        "The first three derivatives of $f(x)=\\ln(1+x)$ are\n\n$f'(x) = \\frac{1}{1+x},$\n\n$f''(x) = \\frac{-1}{(1+x)^2},$\n\nand\n\n$f'''(x) = \\frac{2}{(1+x)^3}.$\n\nWhen we evaluate these at $x=0$ we get $f'(0) = 1$, $f''(0) = -1$,\n$f'''(0) = 2$. Hence, the first few terms of the Taylor series for\n$f(x)$ about $x=0$ are\n\n\\begin{align*}\n&f(0)+ f'(0)x+\\frac{f''(0)}{2!} x^2+\\frac{f'''(0)}{3!} x^3+\\dots\\\\\n&=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&=x-\\frac12x^2+\\frac13x^3+\\dots\n\\end{align*}\n\nThese are the first three non-zero terms.\n\n(Note: It is actually pretty easy to obtain the entire Taylor series\nanyway. For any $n\\geq 1,$ we can show that\n$f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.$ Hence,\n$f^{(n)}(0) = (-1)^{n-1}(n-1)!$ and therefore,\n$f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.$)"
+        "The first three derivatives of $f(x)=\\ln(1+x)$ are\n\n$f'(x) = \\frac{1}{1+x},$\n\n$f''(x) = \\frac{-1}{(1+x)^2},$\n\nand\n\n$f'''(x) = \\frac{2}{(1+x)^3}.$\n\nWhen we evaluate these at $x=0$ we get $f'(0) = 1$, $f''(0) = -1$,\n$f'''(0) = 2$. Hence, the first few terms of the Taylor series for\n$f(x)$ about $x=0$ are\n\n\\begin{align*}\n&f(0)+ f'(0)x+\\frac{f''(0)}{2!} x^2+\\frac{f'''(0)}{3!} x^3+\\dots\\\\\n&=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&=x-\\frac12x^2+\\frac13x^3+\\dots\\end{align*}\n\nThese are the first three non-zero terms.\n\n(Note: It is actually pretty easy to obtain the entire Taylor series\nanyway. For any $n\\geq 1,$ we can show that\n$f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.$ Hence,\n$f^{(n)}(0) = (-1)^{n-1}(n-1)!$ and therefore,\n$f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.$)"
     ], 
     "hints": [
         "Recall that the Taylor series for a function $f$ about $x=a$ is given by\n\n$f(x)=\\sum_{n=0}^\\infty \\frac{f^{(n)}}{n!} (x-a)^n.$"

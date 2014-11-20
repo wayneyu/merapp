@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_04_(a)", 
     "course": "MATH307", 
-    "statement": "Consider the Fourier series\n\n\\[t^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\]\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(a)} What is the definition of the inner product\n$\\langle f,g \\rangle$ for two complex valued function \\emph{$f$(t)} and\n\\emph{g(t)} defined on $0 \\leq t \\leq 1$?", 
+    "statement": "Consider the Fourier series\n\n\\begin{align*}t^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\end{align*}\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(a)} What is the definition of the inner product\n$\\langle f,g \\rangle$ for two complex valued function \\emph{$f$(t)} and\n\\emph{g(t)} defined on $0 \\leq t \\leq 1$?", 
     "year": 2012, 
     "sols": [
-        "The inner product is defined as\n\n\\[\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\\]\n\nThis is the continuous equivalent of the inner product for vectors,\nwhere we have the sum of the multiplied components of the vectors."
+        "The inner product is defined as\n\n\\begin{align*}\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\\end{align*}\n\nThis is the continuous equivalent of the inner product for vectors,\nwhere we have the sum of the multiplied components of the vectors."
     ], 
     "hints": [
         "The inner product of two functions returns a single number, and\nconsiders the entire domain of both complex functions."

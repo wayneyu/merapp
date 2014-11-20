@@ -5,7 +5,7 @@
     "statement": "\\textbf{Torricelli's Trumpet}\n\nFind the volume of the solid obtained from revolving\n$\\displaystyle y = 1/x$ about the \\emph{x}-axis where \\emph{x} has\ndomain $\\displaystyle [1,\\infty)$.", 
     "year": 2013, 
     "sols": [
-        "Using the formula in the hint, we have\n\n\\begin{align*}\nV &= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&= \\pi\n\\end{align*}"
+        "Using the formula in the hint, we have\n\n\\begin{align*}\nV &= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&= \\pi\\end{align*}"
     ], 
     "hints": [
         "This is a volume of revolution question. We can easily compute this\nsince we are rotating about the \\emph{x}-axis.", 

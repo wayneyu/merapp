@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_02_(a)", 
     "course": "MATH104", 
-    "statement": "Find an equation of the tangent line to the curve\n\n\\[\\displaystyle{}x^3+xy^2+y^3=13\\]\n\nat the point (1,2) on the curve. Please simplify.", 
+    "statement": "Find an equation of the tangent line to the curve\n\n\\begin{align*}\\displaystyle{}x^3+xy^2+y^3=13\\end{align*}\n\nat the point (1,2) on the curve. Please simplify.", 
     "year": 2010, 
     "sols": [
-        "To find the slope of the tangent line, we consider $y$ as a function of\n$x$ near the point (1,2) and use implicit differentiation to find\n$\\frac{dy}{dx}$:\n\n\\[3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0\\]\n\nIsolating $\\frac{dy}{dx}$,\n\n\\[\\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.\\]\n\nHence,\n\n\\[\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .\\]\n\nThe slope of the tangent line to the curve at $(x,y)=(1,2)$ is then\n\n\\[\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.\\]\n\nSince the tangent line passes through the point $(1,2)$ and has slope\n$-7/16$, its equation is\n\n\\[y - 2 = \\frac{-7}{16}(x-1).\\]"
+        "To find the slope of the tangent line, we consider $y$ as a function of\n$x$ near the point (1,2) and use implicit differentiation to find\n$\\frac{dy}{dx}$:\n\n\\begin{align*}3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0\\end{align*}\n\nIsolating $\\frac{dy}{dx}$,\n\n\\begin{align*}\\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.\\end{align*}\n\nHence,\n\n\\begin{align*}\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .\\end{align*}\n\nThe slope of the tangent line to the curve at $(x,y)=(1,2)$ is then\n\n\\begin{align*}\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.\\end{align*}\n\nSince the tangent line passes through the point $(1,2)$ and has slope\n$-7/16$, its equation is\n\n\\begin{align*}y - 2 = \\frac{-7}{16}(x-1).\\end{align*}"
     ], 
     "hints": [
         "What is the slope of the tangent line? Do you know one point that the\ntangent line passes through?", 

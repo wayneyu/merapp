@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_04_(c)", 
     "course": "MATH110", 
-    "statement": "\\emph{Given a curve, its \\textbf{curvature} K is a measure of how much\nit deviates from a straight line. It can be computed using the following\nformula:}\n\n\\[K = \\frac{y''}{\\left(1+(y')^2\\right)^{3/2}}\\]\n\n\\emph{In this question you will calculate the curvature of the curve\nx\\textsuperscript{4} + y\\textsuperscript{4} = 2 at a certain point.}\n\nFind the curvature \\emph{K} of the curve $x^4 + y^4 = 2$ at the point\n(1,1).", 
+    "statement": "\\emph{Given a curve, its \\textbf{curvature} K is a measure of how much\nit deviates from a straight line. It can be computed using the following\nformula:}\n\n\\begin{align*}K = \\frac{y''}{\\left(1+(y')^2\\right)^{3/2}}\\end{align*}\n\n\\emph{In this question you will calculate the curvature of the curve\nx\\textsuperscript{4} + y\\textsuperscript{4} = 2 at a certain point.}\n\nFind the curvature \\emph{K} of the curve $x^4 + y^4 = 2$ at the point\n(1,1).", 
     "year": 2011, 
     "sols": [
-        "It will be complicated to simply plug our expressions for $y'$ and $y''$\ninto the formula for curvature. Instead it might be wiser to calculate\nthe actual value of $y'$ and $y''$ at the point $(1,1)$.\n\nFor $y'$ we have\n\n\\[y' = \\frac{-(1)^3}{(1)^3} = -1\\]\n\nAnd for $y''$ we have\n\n\\[y'' = \\frac{3(1)^2(-(1) + (1)(-1))}{(1)^4} = -6\\]\n\nPlugging these values of $y' = -1$ and $y'' = 6$ into the formula for\n\\emph{K} we get:\n\n\\[K = \\frac{-6}{(1 + (-1)^2)^{3/2}} = \\frac{-6}{2^{3/2}} = \\frac{-3}{\\sqrt{2}}.\\]"
+        "It will be complicated to simply plug our expressions for $y'$ and $y''$\ninto the formula for curvature. Instead it might be wiser to calculate\nthe actual value of $y'$ and $y''$ at the point $(1,1)$.\n\nFor $y'$ we have\n\n\\begin{align*}y' = \\frac{-(1)^3}{(1)^3} = -1\\end{align*}\n\nAnd for $y''$ we have\n\n\\begin{align*}y'' = \\frac{3(1)^2(-(1) + (1)(-1))}{(1)^4} = -6\\end{align*}\n\nPlugging these values of $y' = -1$ and $y'' = 6$ into the formula for\n\\emph{K} we get:\n\n\\begin{align*}K = \\frac{-6}{(1 + (-1)^2)^{3/2}} = \\frac{-6}{2^{3/2}} = \\frac{-3}{\\sqrt{2}}.\\end{align*}"
     ], 
     "hints": [
         "Try solving for the numerical values of $y'$ and $y''$ before plugging\nthem into the formula for curvature."

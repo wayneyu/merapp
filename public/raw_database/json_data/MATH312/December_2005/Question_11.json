@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_11", 
     "course": "MATH312", 
-    "statement": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{a} and \\emph{N} are integers with $N \\geq 0$. Show that\n\n\\[(1 + a)^N \\equiv 1 + Na \\mod a^2\\]", 
+    "statement": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{a} and \\emph{N} are integers with $N \\geq 0$. Show that\n\n\\begin{align*}(1 + a)^N \\equiv 1 + Na \\mod a^2\\end{align*}", 
     "year": 2005, 
     "sols": [
         "We proceed by induction. The case $\\displaystyle N=1$ is easy. For\n$\\displaystyle N=2$, we have\n\n$\\displaystyle (1+a)^{2} = 1 + 2a + a^{2} \\equiv 1 + 2a \\mod{a^{2}}$\n\nSuppose the claim holds for \\emph{N}. Then for $\\displaystyle N+1$, we\nhave\n\n$\\displaystyle (1+a)^{N+1} \\equiv (1+a)^{N}(1+a) \\equiv (1 + Na)(1 + a) \\equiv (1 + (N+1)a + Na^{2}) \\equiv 1 + (N+1)a \\mod{a^{2}}$\n\nand so by mathematical induction we are done.", 

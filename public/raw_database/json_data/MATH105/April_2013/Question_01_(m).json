@@ -2,13 +2,13 @@
     "term": "April", 
     "question": "Question_01_(m)", 
     "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nCompute the cumulative distribution function corresponding to the\nprobability density function\n\n\\[f(x) = 3x^{-4}, \\quad x \\ge 1.\\]", 
+    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nCompute the cumulative distribution function corresponding to the\nprobability density function\n\n\\begin{align*}f(x) = 3x^{-4}, \\quad x \\ge 1.\\end{align*}", 
     "year": 2013, 
     "sols": [
-        "Remember that the cumulative distribution function, $F(x)$, is defined\nin terms of the probability density function, $f(x)$, as follows:\n\n\\[F(t) = \\int_{-\\infty}^{t}f(x)\\,dx.\\] Hence, to determine the\ncumulative distribution function for the given probability density\nfunction is a matter of plugging the particular density function into\nthe definition. (Remember that since the given density function is only\ndefined for $x \\ge 1$, we can assume that the density function evaluates\nto 0 for all $\\displaystyle x < 1$):\n\n\\[F(t) = \\int_{-\\infty}^{t}f(x)\\,dx = \\int_{1}^{t}3x^{-4}\\,dx = -x^{-3}|_{1}^{t} = 1 - t^{-3}.\\]\nTherefore, the cumulative distribution is\n${\\color{blue}F(t) = 1 -\\frac{1}{t^3}}$"
+        "Remember that the cumulative distribution function, $F(x)$, is defined\nin terms of the probability density function, $f(x)$, as follows:\n\n\\begin{align*}F(t) = \\int_{-\\infty}^{t}f(x)\\,dx.\\end{align*} Hence, to determine the\ncumulative distribution function for the given probability density\nfunction is a matter of plugging the particular density function into\nthe definition. (Remember that since the given density function is only\ndefined for $x \\ge 1$, we can assume that the density function evaluates\nto 0 for all $\\displaystyle x < 1$):\n\n\\begin{align*}F(t) = \\int_{-\\infty}^{t}f(x)\\,dx = \\int_{1}^{t}3x^{-4}\\,dx = -x^{-3}|_{1}^{t} = 1 - t^{-3}.\\end{align*}\nTherefore, the cumulative distribution is\n${\\color{blue}F(t) = 1 -\\frac{1}{t^3}}$"
     ], 
     "hints": [
         "How do you define the cumulative distribution function in terms of the\nprobability density function?", 
-        "Remember that the cumulative distribution function, $F(x)$, is defined\nin terms of the probability density function, $f(x)$, as follows:\n\n\\[F(t) = \\int_{-\\infty}^{t}f(x)\\,dx.\\]"
+        "Remember that the cumulative distribution function, $F(x)$, is defined\nin terms of the probability density function, $f(x)$, as follows:\n\n\\begin{align*}F(t) = \\int_{-\\infty}^{t}f(x)\\,dx.\\end{align*}"
     ]
 }

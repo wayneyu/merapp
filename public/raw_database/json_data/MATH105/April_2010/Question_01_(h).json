@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_01_(h)", 
     "course": "MATH105", 
-    "statement": "Find\n\n\\[\\int \\frac{\\sqrt{\\ln x}}{x}\\,dx.\\]", 
+    "statement": "Find\n\n\\begin{align*}\\int \\frac{\\sqrt{\\ln x}}{x}\\,dx.\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "Apply integration by substitution. Let $u = \\ln(x)$ (and thus,\n$du = dx/x$). Then it is a simple matter of applying the power law of\nintegration and making sure to substitute back to express the integral\nin terms of $x$:\n\n\\begin{align*}\n\\int\\frac{\\sqrt{\\ln x}}{x}\\,dx &= \\int\\sqrt{u}\\,du \\\\\n&= \\frac{2}{3}u^{3/2} + C \\\\\n&= \\frac{2}{3}(\\ln x)^{3/2} + C\n\\end{align*} where $C$ is an arbitary constant."
+        "Apply integration by substitution. Let $u = \\ln(x)$ (and thus,\n$du = dx/x$). Then it is a simple matter of applying the power law of\nintegration and making sure to substitute back to express the integral\nin terms of $x$:\n\n\\begin{align*}\n\\int\\frac{\\sqrt{\\ln x}}{x}\\,dx &= \\int\\sqrt{u}\\,du \\\\\n&= \\frac{2}{3}u^{3/2} + C \\\\\n&= \\frac{2}{3}(\\ln x)^{3/2} + C\\end{align*} where $C$ is an arbitary constant."
     ], 
     "hints": [
         "Is there a way to simplify so that the $1/x$ factor is removed?"

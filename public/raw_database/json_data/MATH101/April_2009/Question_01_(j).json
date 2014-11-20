@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(j)", 
     "course": "MATH101", 
-    "statement": "Give the Simpson$^{\\prime}$s rule approximation to\n\n\\[\\int_0^2 \\sin(e^x) \\,dx\\] using 4 equal subintervals (do not simplify\nyour answer).", 
+    "statement": "Give the Simpson$^{\\prime}$s rule approximation to\n\n\\begin{align*}\\int_0^2 \\sin(e^x) \\,dx\\end{align*} using 4 equal subintervals (do not simplify\nyour answer).", 
     "year": 2009, 
     "sols": [
-        "The formula for the Simpson's rule is given by\n\n\\[S_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\]\n\nWhen $n=4$, we have that\n\n\\[x_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\\]\n\nand thus, the Simpson's rule approximation that we need is\n\n\\begin{align*}\nS_{n} &= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\n\\end{align*}"
+        "The formula for the Simpson's rule is given by\n\n\\begin{align*}S_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{align*}\n\nWhen $n=4$, we have that\n\n\\begin{align*}x_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\\end{align*}\n\nand thus, the Simpson's rule approximation that we need is\n\n\\begin{align*}\nS_{n} &= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\\end{align*}"
     ], 
     "hints": [
-        "The formula for the\n\\href{http://en.wikipedia.org/wiki/Simpson's_rule}{Simpson's rule} is\ngiven by\n\n\\[S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\]\n\nwhere as always $n$ is an even integer."
+        "The formula for the\n\\href{http://en.wikipedia.org/wiki/Simpson's_rule}{Simpson's rule} is\ngiven by\n\n\\begin{align*}S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{align*}\n\nwhere as always $n$ is an even integer."
     ]
 }

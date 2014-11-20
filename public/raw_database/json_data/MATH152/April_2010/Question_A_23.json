@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_23", 
     "course": "MATH152", 
-    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\[u = 3 + 2i, \\quad z = 1 - i\\]\n\nA23: Evaluate $\\bar{u}$.", 
+    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\begin{align*}u = 3 + 2i, \\quad z = 1 - i\\end{align*}\n\nA23: Evaluate $\\bar{u}$.", 
     "year": 2010, 
     "sols": [
-        "Using the hint we find\n\n\\[\\overline{u} = \\overline{3+2i} = 3-2i.\\]"
+        "Using the hint we find\n\n\\begin{align*}\\overline{u} = \\overline{3+2i} = 3-2i.\\end{align*}"
     ], 
     "hints": [
         "The complex conjugate $\\overline u$ of any complex number \\emph{u =\na+ib} is \\emph{a-ib}."

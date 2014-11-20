@@ -5,11 +5,11 @@
     "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the first Maclaurin polynomial for\n$\\displaystyle f(x) = \\ln(1-x^2)$.", 
     "year": 2013, 
     "sols": [
-        "The formula for the first degree Maclaurin polynomial for the function\nis\n\n$T_1(x) = f(0) + f'(0)x$\n\nFor $f(x)=\\ln(1-x^2)$ we have$f(0) = \\ln(1) = 0$. To get $f'(0)$, we\ndifferentiate $f(x)$ using the chain rule:\n\n\\begin{align*}\nf'(x) &= \\frac{-2x}{1-x^2} \\\\\nf'(0) &= 0\n\\end{align*}\n\nThus the 1st degree Maclaurin polynomial for $f(x) = \\ln(1-x^2)$ is\n\n\\[T_1(x) = 0 + 0x = 0\\]"
+        "The equation of the \\emph{first degree} \\textbf{Maclaurin polynomial}\nfor \\emph{f} is $\\displaystyle T_1(x) = f(0) + f'(0) \\cdot x$.\n\nFor $\\displaystyle f(x)=\\ln(1-x^2)$ we have\n$\\displaystyle f(0) = \\ln(1 - 0^2) = 0$. To find $\\displaystyle f'(0)$,\nwe differentiate $\\displaystyle f(x)$ using the chain rule:\n\n\\begin{align*}\nf'(x) &= \\frac{1}{1-x^2} \\cdot \\frac{d}{dx} (1-x^2) \\\\\n&= \\frac{-2x}{1-x^2} \\\\\nf'(0) &= 0\\end{align*}\n\nThus the first degree Maclaurin polynomial for $\\displaystyle f$ is\n$\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}$."
     ], 
     "hints": [
-        "A Maclaurin polynomial is a Taylor polynomial where the approximation is\ntaken when $x$ is $0$ ($a = 0$).", 
-        "At the point where the approximation is made, the first degree\nTaylor/Maclaurin polynomial has the same first derivative as the\nfunction which it approximates.", 
-        "Recall the formula for a first degree Taylor polynomial:\n$T_1(x) = f(a) + \\frac{f<math>^{\\prime}$(a)(x-a)\\}\\{1!\\} and that for a\nMaclaurin polynomial, $a = 0.$"
+        "A \\textbf{Maclaurin polynomial} is a Taylor polynomial centred at\n$x = 0$ (i.e, $a = 0$).", 
+        "At the point where the approximation is made, the \\emph{first} degree\nTaylor/Maclaurin polynomial has the same \\emph{first} derivative as the\nfunction which it approximates (i.e., $\\displaystyle T_1'(0) = f'(0)$).", 
+        "Recall that the equation of a \\emph{first degree} Taylor polynomial\ncentred at $a$ is given by $T_1(x) = f(a) + \\frac{f'(a)}{1!}(x-a)$ and\nthat for a Maclaurin polynomial, $a = 0.$"
     ]
 }

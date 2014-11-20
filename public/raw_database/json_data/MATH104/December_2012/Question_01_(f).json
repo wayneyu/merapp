@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(f)", 
     "course": "MATH104", 
-    "statement": "Let\n\n\\[\\displaystyle{}y(x)=e^{rx}\\]\n\nFor what value of r does y(x) satisfy\n\n\\[\\displaystyle{}y''(x)-4y'(x)+4y(x)=0?\\]", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle{}y(x)=e^{rx}\\end{align*}\n\nFor what value of r does y(x) satisfy\n\n\\begin{align*}\\displaystyle{}y''(x)-4y'(x)+4y(x)=0?\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "Evaluate the first and second derivatives of $y(x)$:\n\n\\[\\displaystyle y'(x) = re^{rx}, \\quad y''(x) = r^{2}e^{rx}.\\] Now\nsubstitute them into the given equation:\n\n\\begin{align*}\ny''(x) - 4y'(x) + 4y(x) &= 0\\\\\nr^{2}e^{rx} - 4re^{rx} + 4e^{rx} &= 0\\\\\n(r^{2} - 4r + 4)e^{rx} &= 0\n\\end{align*} Thus, either $e^{rx} = 0$ for any $x$ which does not\nhappen since the exponential function never evaluates to 0, or\n$r^{2} - 4r + 4 = 0$. Factoring the quadratic gives\n\n\\[\\displaystyle r^{2} - 4r + 4 = (r - 2)^{2} = 0.\\] Thus, the value of\n$r$ that satisfies the given equation is\n$\\displaystyle {\\color{blue}r =2}.$"
+        "Evaluate the first and second derivatives of $y(x)$:\n\n\\begin{align*}\\displaystyle y'(x) = re^{rx}, \\quad y''(x) = r^{2}e^{rx}.\\end{align*} Now\nsubstitute them into the given equation:\n\n\\begin{align*}\ny''(x) - 4y'(x) + 4y(x) &= 0\\\\\nr^{2}e^{rx} - 4re^{rx} + 4e^{rx} &= 0\\\\\n(r^{2} - 4r + 4)e^{rx} &= 0\\end{align*} Thus, either $e^{rx} = 0$ for any $x$ which does not\nhappen since the exponential function never evaluates to 0, or\n$r^{2} - 4r + 4 = 0$. Factoring the quadratic gives\n\n\\begin{align*}\\displaystyle r^{2} - 4r + 4 = (r - 2)^{2} = 0.\\end{align*} Thus, the value of\n$r$ that satisfies the given equation is\n$\\displaystyle {\\color{blue}r =2}.$"
     ], 
     "hints": [
         "Evaluate the first and second derivatives of $y(x)$ and substitute them\ninto the given equation."

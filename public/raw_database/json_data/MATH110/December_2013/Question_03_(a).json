@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $\\displaystyle f(x) = x^{6}$\n\nWhat is the derivative of $f(x)$?", 
+    "year": 2013, 
+    "sols": [
+        "Using the power rule with $n=6$.\n\n\\begin{align*}\nf'(x)&= 6x^5.\\end{align*}"
+    ], 
+    "hints": [
+        "Apply the power rule."
+    ]
+}

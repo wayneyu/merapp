@@ -5,9 +5,9 @@
     "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nFind the numbers \\emph{b} such that the average value of the function\n$f(x) = 3x^{2}-6x + 2$ on the interval $[0,b]$ is equal to 0.", 
     "year": 2007, 
     "sols": [
-        "The questions asks for when $f_{av} = 0$. Plugging this into the formula\nin the hint gives\n\n\\begin{align*}\nf_{av} &= \\frac{1}{b-0}\\int_{0}^{b} (3x^{2}-6x + 2 )\\, dx \\\\\n&= \\frac{1}{b}\\left.x^{3} - 3x^{2} + 2x \\right|_{0}^{b}\\\\\n&= \\frac{1}{b}(b^{3} - 3b^{2} + 2b)\\\\\n&= b^{2} - 3b + 2\\\\\n&= (b-2)(b-1)\n\\end{align*}\n\nand so we have that $b = 1$ or $b=2$ completing the question."
+        "The questions asks for when $f_{av} = 0$. Plugging this into the formula\nin the hint gives\n\n\\begin{align*}\nf_{av} &= \\frac{1}{b-0}\\int_{0}^{b} (3x^{2}-6x + 2 )\\, dx \\\\\n&= \\frac{1}{b}\\left.x^{3} - 3x^{2} + 2x \\right|_{0}^{b}\\\\\n&= \\frac{1}{b}(b^{3} - 3b^{2} + 2b)\\\\\n&= b^{2} - 3b + 2\\\\\n&= (b-2)(b-1)\\end{align*}\n\nand so we have that $b = 1$ or $b=2$ completing the question."
     ], 
     "hints": [
-        "The average value of a function on an interval is\n\n\\[f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\\]"
+        "The average value of a function on an interval is\n\n\\begin{align*}f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\\end{align*}"
     ]
 }

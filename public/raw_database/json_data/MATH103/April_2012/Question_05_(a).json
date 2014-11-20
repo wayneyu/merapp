@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_05_(a)", 
     "course": "MATH103", 
-    "statement": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\n\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(a)} What is the constant \\emph{k}?", 
+    "statement": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(a)} What is the constant \\emph{k}?", 
     "year": 2012, 
     "sols": [
-        "In order to satisfy the second condition given in the hint, we must have\nthe following equality hold:\n\n\\[1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx\\]\n\nHowever, this is easy enough to solve, especially if we remember that\n$\\int \\frac1{1 + x^2}\\,dx = \\arctan{x}$.\n\n\\[1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx = k(\\arctan{\\sqrt{3}}-\\arctan(0)) = \\frac{k\\pi}3,\\]\n\nhence $k = \\frac3{\\pi}$.\n\n(Or $k = \\frac1{\\arctan \\sqrt{3} }$, we used\n$\\arctan(\\sqrt{3}) = \\pi/3$.)"
+        "In order to satisfy the second condition given in the hint, we must have\nthe following equality hold:\n\n\\begin{align*}1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx\\end{align*}\n\nHowever, this is easy enough to solve, especially if we remember that\n$\\int \\frac1{1 + x^2}\\,dx = \\arctan{x}$.\n\n\\begin{align*}1 = \\int_0^{\\sqrt{3}} \\frac{k}{1+x^2}\\,dx = k(\\arctan{\\sqrt{3}}-\\arctan(0)) = \\frac{k\\pi}3,\\end{align*}\n\nhence $k = \\frac3{\\pi}$.\n\n(Or $k = \\frac1{\\arctan \\sqrt{3} }$, we used\n$\\arctan(\\sqrt{3}) = \\pi/3$.)"
     ], 
     "hints": [
         "For \\emph{p} to be a probability density function it needs to satisfy\ntwo conditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{p}(\\emph{t}) $\\geq$ 0 for all \\emph{t},\n\\item\n  $\\int_{-\\infty}^\\infty p(t)\\,dt = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."

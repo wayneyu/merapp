@@ -5,9 +5,9 @@
     "statement": "Newton's Method is used to approximate a solution of the equation\n$\\displaystyle e^{x} - x^{2} = 0$, starting with the initial\napproximation $x_{1} = 0$. Find $x_{3}$.", 
     "year": 2010, 
     "sols": [
-        "Let us first compute the derivative\n\n\\[\\displaystyle f'(x) = e^x -2x\\]\n\nand now crank up the algorithm.\n\n\\begin{align*}\nx_{2} &= x_1 - \\frac{f(x_1)}{f'(x_1)} \\\\\n&= 0  - \\frac11 = -1 \\\\\nx_3 &= x_2 - \\frac{f(x_2)}{f'(x_2)} \\\\\n&= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&= \\frac{-1-2e^{-1}}{2+e^{-1}}\n\\end{align*}"
+        "Let us first compute the derivative\n\n\\begin{align*}\\displaystyle f'(x) = e^x -2x\\end{align*}\n\nand now crank up the algorithm.\n\n\\begin{align*}\nx_{2} &= x_1 - \\frac{f(x_1)}{f'(x_1)} \\\\\n&= 0  - \\frac11 = -1 \\\\\nx_3 &= x_2 - \\frac{f(x_2)}{f'(x_2)} \\\\\n&= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&= \\frac{-1-2e^{-1}}{2+e^{-1}}\\end{align*}"
     ], 
     "hints": [
-        "To approximate solutions of $f(x)$ = 0 with Newton's method use\n\n\\[x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\,\\] where\n\\emph{x}\\textsubscript{1} = 0 is given as your starting point."
+        "To approximate solutions of $f(x)$ = 0 with Newton's method use\n\n\\begin{align*}x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\,\\end{align*} where\n\\emph{x}\\textsubscript{1} = 0 is given as your starting point."
     ]
 }

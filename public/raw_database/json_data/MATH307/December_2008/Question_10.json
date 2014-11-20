@@ -5,7 +5,7 @@
     "statement": "Let \\emph{A\\textsuperscript{H} = -A} be a skew-Hermitian complex matrix.\nShow that the matrix \\emph{e\\textsuperscript{At}} is unitary.\n\n\\emph{Note:} The superscript \\emph{H} denotes the\n\\href{http://en.wikipedia.org/wiki/Conjugate_transpose}{Hermitian\nconjugate} $(\\mathbf{A}^H)_{ij} = \\overline{\\mathbf{A}_{ji}}$, which is\noften also called \\emph{adjoint matrix} or \\emph{conjugate transpose}\nand written as \\emph{A\\textsuperscript{*} = A\\textsuperscript{H}}.", 
     "year": 2008, 
     "sols": [
-        "Calculating the Maclaurin expansion we find that\n\n\\[\\left(e^{At}\\right)^{H} = \\left(\\sum_{k=0}^{\\infty}\\frac{(At)^{k}}{k!}\\right)^{H} = \\sum_{k=0}^{\\infty}\\frac{(A^{H}t)^{k}}{k!}=e^{\\left(A^{H}\\right)t}\\]\n\nThus,\n\n\\[\\left(e^{At}\\right)^{H} e^{At}=\\left(e^{A^{H}t}\\right)e^{At}=\\left(e^{-At}\\right)e^{At}=e^{0}=I.\\]"
+        "Calculating the Maclaurin expansion we find that\n\n\\begin{align*}\\left(e^{At}\\right)^{H} = \\left(\\sum_{k=0}^{\\infty}\\frac{(At)^{k}}{k!}\\right)^{H} = \\sum_{k=0}^{\\infty}\\frac{(A^{H}t)^{k}}{k!}=e^{\\left(A^{H}\\right)t}\\end{align*}\n\nThus,\n\n\\begin{align*}\\left(e^{At}\\right)^{H} e^{At}=\\left(e^{A^{H}t}\\right)e^{At}=\\left(e^{-At}\\right)e^{At}=e^{0}=I.\\end{align*}"
     ], 
     "hints": [
         "In order for \\emph{e\\textsuperscript{At}} to be unitary, we need\n$\\left(e^{At}\\right)^{H} e^{At} = I.$", 

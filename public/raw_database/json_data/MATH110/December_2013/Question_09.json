@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_09", 
+    "course": "MATH110", 
+    "statement": "Find the derivative of $y$ with respect to $x$ at the point\n$P = (0,\\pi)$ along the curve:\n\n\\begin{align*}\\displaystyle{}\\sin(x+y) = xy\\end{align*}", 
+    "year": 2013, 
+    "sols": [
+        "Before we start, let's confirm that the point $(0,\\pi)$ is indeed on the\nline, as the statement suggests:\n\n\\begin{align*}\n\\sin(0+\\pi) &= 0 \\cdot \\pi\\\\\n\\sin(\\pi) &= 0\\\\\n0 &= 0\\end{align*}\n\nThe point is on the line. Next we want to find the derivative of the\nfunction. We apply implicit differentiation and differentiate both\nsides:\n\n\\begin{align*}\n{\\frac{{\\rm d}}{{\\rm d}x}} \\sin(x+y) &= {\\frac{{\\rm d}}{{\\rm d}x}} xy\\\\\n\\cos(x+y)\\left(1+{\\frac{{\\rm d} {y}}{{\\rm d}x}}\\right) &= x{\\frac{{\\rm d} {y}}{{\\rm d}x}} + y\\end{align*}\n\nThe left hand side was obtained via the chain rule and the right hand\nside was obtained via a product rule.\n\n\\begin{align*}\n\\cos(x+y) + {\\frac{{\\rm d} {y}}{{\\rm d}x}}\\cos(x+y) &= x{\\frac{{\\rm d} {y}}{{\\rm d}x}} + y\\\\\n{\\frac{{\\rm d} {y}}{{\\rm d}x}}\\cos(x+y) - x{\\frac{{\\rm d} {y}}{{\\rm d}x}} &=  y - \\cos(x+y) \\\\\n{\\frac{{\\rm d} {y}}{{\\rm d}x}}\\left( \\cos(x+y) - x\\right) &= y - \\cos(x+y) \\\\\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &= \\frac{y - \\cos(x+y)}{\\cos(x+y) - x}\\end{align*}\n\nSubstitute in the given point.\n\n\\begin{align*}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}}(0) &= \\frac{\\pi - \\cos(0+\\pi)}{\\cos(0+\\pi) - 0} \\\\\n{\\frac{{\\rm d} {y}}{{\\rm d}x}}(0) &= \\frac{\\pi - (-1) }{(-1) - 0} \\\\\n{\\frac{{\\rm d} {y}}{{\\rm d}x}}(0) &= \\frac{\\pi + 1}{-1} = -(\\pi+1)\\end{align*}"
+    ], 
+    "hints": [
+        "Take the derivative using implicit differentiation and plug in the\npoint. Don't forget to use a product rule on the right hand side!"
+    ]
+}

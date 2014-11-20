@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(g)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\ng) Draw the graph of f(x). Accurately place all critical points and\ninflection points, indicate all asymptotes, and make sure your graph\ncorrectly shows where f(x) is increasing and decreasing and correctly\nshows its concavity.", 
+    "year": 2013, 
+    "sols": [
+        "We draw where our function is increasing, decreasing, concave up,\nconcave down as well as the only local extrema we found on a graph. We\nalso include the asymptotes.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M104_Dec2013_Q2g1.jpg}\n\\caption{M104 Dec2013 Q2g1.jpg}\n\\end{figure}\n\nThen we draw.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M104_Dec2013_Q2g2.jpg}\n\\caption{M104 Dec2013 Q2g2.jpg}\n\\end{figure}"
+    ], 
+    "hints": [
+        "Start by collecting all the information from the previous parts onto one\ngraph. Then graph."
+    ]
+}

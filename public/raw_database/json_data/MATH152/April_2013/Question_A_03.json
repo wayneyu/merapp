@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_03", 
     "course": "MATH152", 
-    "statement": "Let\n\n\\[a = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\]\n\nFurther, let $d = \\begin{bmatrix} -1 \\\\ k \\\\ 2k+1 \\end{bmatrix}$ where\n\\emph{k} is a parameter. Find the value of \\emph{k} for which \\emph{a}\nand \\emph{d} are orthogonal.", 
+    "statement": "Let\n\n\\begin{align*}a = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\end{align*}\n\nFurther, let $d = \\begin{bmatrix} -1 \\\\ k \\\\ 2k+1 \\end{bmatrix}$ where\n\\emph{k} is a parameter. Find the value of \\emph{k} for which \\emph{a}\nand \\emph{d} are orthogonal.", 
     "year": 2013, 
     "sols": [
-        "$a$ and $d$ are orthogonal whenever their dot product is equal to zero.\nThat is,\n\n\\begin{align*}\n0 = a \\cdot d &= \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\cdot \n\\begin{bmatrix} -1 \\\\ k \\\\ 2k+1 \\end{bmatrix}\\\\\n&= (-3)(-1) + (-3)(k) + (3)(2k+1)\\\\\n&= 3 - 3k + 6k+3\\\\\n&= 6 + 3k\\\\\n&= 3(2 + k).\n\\end{align*}\n\nTherefore, $\\displaystyle k = -2$ is the value for which $a$ and $d$ are\northogonal."
+        "$a$ and $d$ are orthogonal whenever their dot product is equal to zero.\nThat is,\n\n\\begin{align*}\n0 = a \\cdot d &= \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\cdot \n\\begin{bmatrix} -1 \\\\ k \\\\ 2k+1 \\end{bmatrix}\\\\\n&= (-3)(-1) + (-3)(k) + (3)(2k+1)\\\\\n&= 3 - 3k + 6k+3\\\\\n&= 6 + 3k\\\\\n&= 3(2 + k).\\end{align*}\n\nTherefore, $\\displaystyle k = -2$ is the value for which $a$ and $d$ are\northogonal."
     ], 
     "hints": [
         "Two vectors are orthogonal if their dot product is zero."

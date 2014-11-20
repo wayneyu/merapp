@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(e)", 
     "course": "MATH215", 
-    "statement": "Write the second-order linear ODE\n\n\\[\\displaystyle{} y'' + t y' + t^2 y = 0\\]\n\nas a first-order linear system.", 
+    "statement": "Write the second-order linear ODE\n\n\\begin{align*}\\displaystyle{} y'' + t y' + t^2 y = 0\\end{align*}\n\nas a first-order linear system.", 
     "year": 2013, 
     "sols": [
-        "We let\n$\\begin{pmatrix} y \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix}$\nso that\n\n\\begin{align*}\nx_1' &= y' = x_2 \\\\\nx_2' &= y'' = -ty' - t^2 y = -t x_2 - t^2 x_1\n\\end{align*}\n\nWe can now write the above in matrix notation\n$\\frac{d}{dt} \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ -t^2 & -t \\end{pmatrix} \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix}$.\nThis is a first-order linear system as requested."
+        "We let\n$\\begin{pmatrix} y \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix}$\nso that\n\n\\begin{align*}\nx_1' &= y' = x_2 \\\\\nx_2' &= y'' = -ty' - t^2 y = -t x_2 - t^2 x_1\\end{align*}\n\nWe can now write the above in matrix notation\n$\\frac{d}{dt} \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ -t^2 & -t \\end{pmatrix} \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix}$.\nThis is a first-order linear system as requested."
     ], 
     "hints": [
         "Let\n$\\begin{pmatrix} y \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x_1 \\\\ x_2 \\end{pmatrix}$."

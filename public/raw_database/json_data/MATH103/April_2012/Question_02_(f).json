@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_02_(f)", 
     "course": "MATH103", 
-    "statement": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nShow that $y(x)=\\frac{\\ln(x)+2}{x}$ is a solution to the differential\nequation\n\n\\[\\displaystyle x^2 y' + xy = 1.\\]", 
+    "statement": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nShow that $y(x)=\\frac{\\ln(x)+2}{x}$ is a solution to the differential\nequation\n\n\\begin{align*}\\displaystyle x^2 y' + xy = 1.\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "In order to see if $y(x)$ satisfies the differential equation, we need\nto find $y'$, substitute $y$ and $y'$ into the left side of the\ndifferential equation, and see if the resulting expression is equal to\n\\emph{1}.\n\nThus, first, we calculate $y'$.\n\n\\[y'(x) = \\frac{x\\left(\\frac1{x}+0\\right)-(\\ln(x)+2)}{x^2} = \\frac{-1-\\ln(x)}{x^2}\\]\n\nThen we plug $y$ and $y'$ into the left hand side of the differential\nequation.\n\n\\begin{align*}\nx^2y' + xy &= x^2 \\left(\\frac{-1-\\ln(x)}{x^2}\\right) + x\\left(\\frac{\\ln(x)+2}{x}\\right) \\\\\n&= -1-\\ln(x)+\\ln(x)+2 = 1 \\checkmark\n\\end{align*}\n\nBecause this equals the right hand side of the original differential\nequation, the solution $y(x)$ is correct."
+        "In order to see if $y(x)$ satisfies the differential equation, we need\nto find $y'$, substitute $y$ and $y'$ into the left side of the\ndifferential equation, and see if the resulting expression is equal to\n\\emph{1}.\n\nThus, first, we calculate $y'$.\n\n\\begin{align*}y'(x) = \\frac{x\\left(\\frac1{x}+0\\right)-(\\ln(x)+2)}{x^2} = \\frac{-1-\\ln(x)}{x^2}\\end{align*}\n\nThen we plug $y$ and $y'$ into the left hand side of the differential\nequation.\n\n\\begin{align*}\nx^2y' + xy &= x^2 \\left(\\frac{-1-\\ln(x)}{x^2}\\right) + x\\left(\\frac{\\ln(x)+2}{x}\\right) \\\\\n&= -1-\\ln(x)+\\ln(x)+2 = 1 \\checkmark\\end{align*}\n\nBecause this equals the right hand side of the original differential\nequation, the solution $y(x)$ is correct."
     ], 
     "hints": [
         "You do not need to solve the differential equation to answer this\nquestion. You are just asked to show that the given function \\emph{is} a\nsolution.", 

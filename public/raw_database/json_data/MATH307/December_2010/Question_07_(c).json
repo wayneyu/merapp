@@ -2,12 +2,12 @@
     "term": "December", 
     "question": "Question_07_(c)", 
     "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is a symmetric 4x4 matrix with eigenvalues 0, 1,\n4, 5. Define a sequence of vectors $\\mathbf{x}_n \\in \\mathbb{R}^4$ by\nchoosing \\textbf{x}\\textsubscript{0} at random, and then settings\n\n\\begin{align*}\n\\mathbf{y}_n &= (A-3I)^{-1}\\mathbf{x}_{n-1} \\\\\n\\mathbf{x}_n &= \\mathbf{y}_n/\\|\\mathbf{y}_{n}\\|\n\\end{align*}\n\nfor \\emph{n = 1, 2, ...}. You then observe that\n\\textbf{x}\\textsubscript{n} converges to\n\n\\[\\mathbf{x}_\\infty = [1/2, 1/2, 1/2, 1/2]^T\\]\n\nas $n \\to \\infty$.\n\n\\textbf{(c)} What vector does $\\mathbf{y}_n$ converge to?", 
+    "statement": "Suppose that \\emph{A} is a symmetric 4x4 matrix with eigenvalues 0, 1,\n4, 5. Define a sequence of vectors $\\mathbf{x}_n \\in \\mathbb{R}^4$ by\nchoosing \\textbf{x}\\textsubscript{0} at random, and then settings\n\n\\begin{align*}\n\\mathbf{y}_n &= (A-3I)^{-1}\\mathbf{x}_{n-1} \\\\\n\\mathbf{x}_n &= \\mathbf{y}_n/\\|\\mathbf{y}_{n}\\|\\end{align*}\n\nfor \\emph{n = 1, 2, ...}. You then observe that\n\\textbf{x}\\textsubscript{n} converges to\n\n\\begin{align*}\\mathbf{x}_\\infty = [1/2, 1/2, 1/2, 1/2]^T\\end{align*}\n\nas $n \\to \\infty$.\n\n\\textbf{(c)} What vector does $\\mathbf{y}_n$ converge to?", 
     "year": 2010, 
     "sols": [
-        "Taking the limit \\emph{n \u2192 $\\infty$} on both sides yields\n\n\\begin{align*}\n\\lim_{n \\to \\infty} \\mathbf y_n &= \\lim_{n \\to \\infty} (A-3I)^{-1}\\mathbf x_{n-1} \\\\\n&= (A-3I)^{-1} \\lim_{n \\to \\infty}\\mathbf x_{n-1} \\\\\n&= (A-3I)^{-1} \\mathbf x_\\infty \\\\\n&= \\eta_3 \\mathbf x_\\infty \\\\\n&= \\mathbf x_\\infty = [1/2, 1/2, 1/2, 1/2]^T\n\\end{align*}\n\nWe used, from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_07_(a)}{part\n(a)}, that $\\mathbf x_\\infty$ is an eigenvector of\n$\\displaystyle (A-3I)^{-1}$ with eigenvalue \\emph{\u03b7\\textsubscript{3} =\n1}."
+        "Taking the limit \\emph{n \u2192 $\\infty$} on both sides yields\n\n\\begin{align*}\n\\lim_{n \\to \\infty} \\mathbf y_n &= \\lim_{n \\to \\infty} (A-3I)^{-1}\\mathbf x_{n-1} \\\\\n&= (A-3I)^{-1} \\lim_{n \\to \\infty}\\mathbf x_{n-1} \\\\\n&= (A-3I)^{-1} \\mathbf x_\\infty \\\\\n&= \\eta_3 \\mathbf x_\\infty \\\\\n&= \\mathbf x_\\infty = [1/2, 1/2, 1/2, 1/2]^T\\end{align*}\n\nWe used, from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_07_(a)}{part\n(a)}, that $\\mathbf x_\\infty$ is an eigenvector of\n$\\displaystyle (A-3I)^{-1}$ with eigenvalue \\emph{\u03b7\\textsubscript{3} =\n1}."
     ], 
     "hints": [
-        "Take the limit \\emph{n \u2192 $\\infty$} on both sides of the definition of\n$\\mathbf y_n$."
+        "Take the limit $n \\to \\infty$ on both sides of the definition of\n$\\mathbf y_n$."
     ]
 }

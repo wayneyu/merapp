@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_04_(a)", 
     "course": "MATH103", 
-    "statement": "Find the following integral:\n\n\\[\\int_{-1}^0 \\frac1{\\sqrt{1-x}}\\,dx\\]", 
+    "statement": "Find the following integral:\n\n\\begin{align*}\\int_{-1}^0 \\frac1{\\sqrt{1-x}}\\,dx\\end{align*}", 
     "year": 2009, 
     "sols": [
-        "For calculating this integral we use substitution.\n\n\\[\\int_{-1}^0\\frac{1}{\\sqrt{1-x}}dx = \\int_{-1}^0(1-x)^{-\\frac12}dx.\\]\n\nWe define \\emph{u}=1-\\emph{x}, \\emph{du}=-\\emph{dx}. The new limits of\nthe integral are \\emph{u}(-1)=1-(-1)=2 and \\emph{u}(0)=1-0=1. Hence\n\n\\[\\int_2^1u^{-\\frac12}(-du) = \\int_1^2u^{-\\frac12}du = \\left[2u^{\\frac12}\\right]_1^2 = 2(\\sqrt2-1).\\]"
+        "For calculating this integral we use substitution.\n\n\\begin{align*}\\int_{-1}^0\\frac{1}{\\sqrt{1-x}}dx = \\int_{-1}^0(1-x)^{-\\frac12}dx.\\end{align*}\n\nWe define \\emph{u}=1-\\emph{x}, \\emph{du}=-\\emph{dx}. The new limits of\nthe integral are \\emph{u}(-1)=1-(-1)=2 and \\emph{u}(0)=1-0=1. Hence\n\n\\begin{align*}\\int_2^1u^{-\\frac12}(-du) = \\int_1^2u^{-\\frac12}du = \\left[2u^{\\frac12}\\right]_1^2 = 2(\\sqrt2-1).\\end{align*}"
     ], 
     "hints": [
         "Use the substitution\n\n$u=1-x$."

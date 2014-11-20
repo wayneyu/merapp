@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_04_(a)", 
     "course": "MATH152", 
-    "statement": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\n\\end{align*}\n\nFind the eigenvalues of A (there will be two distinct eigenvalues).", 
+    "statement": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\\end{align*}\n\nFind the eigenvalues of A (there will be two distinct eigenvalues).", 
     "year": 2012, 
     "sols": [
-        "To determine the eigenvalues, $\\displaystyle \\lambda_{1},\\,\\lambda_{2}$,\nof $\\displaystyle A$, we solve for the characteristic polynomial of\n$\\displaystyle A$ for $\\displaystyle \\lambda$:\n\n\\begin{align*}\n\\det(A - \\lambda I) &= 0 \\\\\n\\det\\left(\\left[\\begin{array}{cc} 3 - \\lambda & 2 \\\\ 2 & 3 - \\lambda \\end{array}  \\right]\\right) &= 0 \\\\\n(3 - \\lambda)^{2} - 4 &= 0 \\\\\n(3 - \\lambda)^{2}  &= 4 \\\\\n3 - \\lambda  &= \\pm2 \\\\\n\\lambda &= -(-3 \\pm 2) \\\\\n\\lambda &= 1 \\text{ or } 5 \n\\end{align*} Thus, the eigenvalues of ${\\color{blue}\\displaystyle A}$are ${\\color{blue}\\displaystyle \\lambda_{1} = 1, \\,\\lambda_{2} = 5}$."
+        "To determine the eigenvalues, $\\displaystyle \\lambda_{1},\\,\\lambda_{2}$,\nof $\\displaystyle A$, we solve for the characteristic polynomial of\n$\\displaystyle A$ for $\\displaystyle \\lambda$:\n\n\\begin{align*}\n\\det(A - \\lambda I) &= 0 \\\\\n\\det\\left(\\left[\\begin{array}{cc} 3 - \\lambda & 2 \\\\ 2 & 3 - \\lambda \\end{array}  \\right]\\right) &= 0 \\\\\n(3 - \\lambda)^{2} - 4 &= 0 \\\\\n(3 - \\lambda)^{2}  &= 4 \\\\\n3 - \\lambda  &= \\pm2 \\\\\n\\lambda &= -(-3 \\pm 2) \\\\\n\\lambda &= 1 \\text{ or } 5 \\end{align*} Thus, the eigenvalues of ${\\color{blue}\\displaystyle A}$are ${\\color{blue}\\displaystyle \\lambda_{1} = 1, \\,\\lambda_{2} = 5}$."
     ], 
     "hints": [
-        "The eigenvalues $\\displaystyle \\lambda_{i}$ of $\\displaystyle A$ satisfy\nthe equation\n\n\\[\\displaystyle \\det(A - \\lambda_{i} I) = 0\\] where $\\displaystyle I$ is\nthe identity matrix with the same dimensions as $\\displaystyle A$."
+        "The eigenvalues $\\displaystyle \\lambda_{i}$ of $\\displaystyle A$ satisfy\nthe equation\n\n\\begin{align*}\\displaystyle \\det(A - \\lambda_{i} I) = 0\\end{align*} where $\\displaystyle I$ is\nthe identity matrix with the same dimensions as $\\displaystyle A$."
     ]
 }

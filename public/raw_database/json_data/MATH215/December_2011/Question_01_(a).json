@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_01_(a)", 
     "course": "MATH215", 
-    "statement": "Solve the following linear ODE:\n\n\\[y' - \\frac4{t}y = -\\frac2{t^2}, \\quad t > 0.\\]", 
+    "statement": "Solve the following linear ODE:\n\n\\begin{align*}y' - \\frac4{t}y = -\\frac2{t^2}, \\quad t > 0.\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "Following the hints we multiply the equation by\n$\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4$\nyielding:\n\n\\[\\frac{1}{t^4} y' - \\frac{4}{t^5}y = -\\frac{2}{t^6}\\] where we can\nrecognize the left-hand side as the derivative of a single term:\n\n\\[\\left( \\frac{1}{t^4} y\\right)' = -\\frac{2}{t^6}\\]\n\nIntegrating both sides yields\n\n\\begin{align*}\n\\frac{1}{t^4} y &= \\frac{2}{5t^5} + C \\\\\ny &= \\frac{2}{5t} + Ct^4\n\\end{align*} for an arbitrary constant \\emph{C}.\n\nRemark (not part of solution): Technically\n$\\int \\frac{-4}{t} dt = -4 \\ln(t) + C$ but by multiplying the entire\nequation by the integrating factor, we inevitably divide by it and this\nconstant of integration cancels out."
+        "Following the hints we multiply the equation by\n$\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4$\nyielding:\n\n\\begin{align*}\\frac{1}{t^4} y' - \\frac{4}{t^5}y = -\\frac{2}{t^6}\\end{align*} where we can\nrecognize the left-hand side as the derivative of a single term:\n\n\\begin{align*}\\left( \\frac{1}{t^4} y\\right)' = -\\frac{2}{t^6}\\end{align*}\n\nIntegrating both sides yields\n\n\\begin{align*}\n\\frac{1}{t^4} y &= \\frac{2}{5t^5} + C \\\\\ny &= \\frac{2}{5t} + Ct^4\\end{align*} for an arbitrary constant \\emph{C}.\n\nRemark (not part of solution): Technically\n$\\int \\frac{-4}{t} dt = -4 \\ln(t) + C$ but by multiplying the entire\nequation by the integrating factor, we inevitably divide by it and this\nconstant of integration cancels out."
     ], 
     "hints": [
         "This is a linear ODE. You may wish to consider an integrating factor.", 
-        "Given a linear ODE of the form\n\n\\[\\displaystyle y' + p(t) y = q(t)\\]\n\na suitable integrating factor is\n\n\\[\\exp\\left(\\int p(t) dt\\right)\\]"
+        "Given a linear ODE of the form\n\n\\begin{align*}\\displaystyle y' + p(t) y = q(t)\\end{align*}\n\na suitable integrating factor is\n\n\\begin{align*}\\exp\\left(\\int p(t) dt\\right)\\end{align*}"
     ]
 }

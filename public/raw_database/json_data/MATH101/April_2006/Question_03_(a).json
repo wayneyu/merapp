@@ -5,7 +5,7 @@
     "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx$", 
     "year": 2006, 
     "sols": [
-        "We proceed via the hint. Let $u = x^{3} + 1$ so that $du = 3x^{2}dx$ and\nso\n\n\\begin{align*}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&= \\frac{1}{-300(x^{3} + 1)^{100}} + C\n\\end{align*}\n\ncompleting the question."
+        "We proceed via the hint. Let $u = x^{3} + 1$ so that $du = 3x^{2}dx$ and\nso\n\n\\begin{align*}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&= \\frac{1}{-300(x^{3} + 1)^{100}} + C\\end{align*}\n\ncompleting the question."
     ], 
     "hints": [
         "This question is ripe for a substitution", 

@@ -5,7 +5,7 @@
     "statement": "Write down the definition of the matrix norm $\\|A\\|$ of a matrix\n\\emph{A}.", 
     "year": 2013, 
     "sols": [
-        "The \\emph{matrix} or \\emph{operator norm} is defined as\n\n\\[\\left \\| A \\right \\| = \\max_{x:\\, \\left \\| x \\right \\|\\neq 0}\\frac{\\left \\| Ax \\right \\|}{\\left \\| x \\right \\|}\\]"
+        "The \\emph{matrix} or \\emph{operator norm} is defined as\n\n\\begin{align*}\\left \\| A \\right \\| = \\max_{x:\\, \\left \\| x \\right \\|\\neq 0}\\frac{\\left \\| Ax \\right \\|}{\\left \\| x \\right \\|}\\end{align*}"
     ], 
     "hints": []
 }

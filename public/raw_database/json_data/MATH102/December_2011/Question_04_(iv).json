@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_04_(iv)", 
     "course": "MATH102", 
-    "statement": "Consider the function\n\n\\[f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\] iv) Determine\nthe interval(s) for which f(x) is increasing and decreasing,\nrespectively.", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\end{align*} iv) Determine\nthe interval(s) for which f(x) is increasing and decreasing,\nrespectively.", 
     "year": 2011, 
     "sols": [
         "In\n\\href{Science:Math Exam Resources/Courses/MATH102/December 2011/Question 4 (ii)}{part\n\\emph{ii)} of this question} we obtained the sign table of the\nderivative:\n\n\\begin{longtable}[c]{@{}llllll@{}}\n& & $\\displaystyle 0$ & & $\\displaystyle 3$ &\\\\\n$\\displaystyle x$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle (x-3)^2$ & $\\displaystyle +$ & & $\\displaystyle +$ &\n$\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f'(x)$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & $\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f(x)$ & $\\displaystyle \\searrow$ & &\n$\\displaystyle \\nearrow$ & & $\\displaystyle \\nearrow$\\\\\\\\\n\\end{longtable}\n\nAnd we see there that the function is decreasing on the interval\n($-\\infty$,0) and increasing on the intervals (0,3) and (3,$+\\infty$)."

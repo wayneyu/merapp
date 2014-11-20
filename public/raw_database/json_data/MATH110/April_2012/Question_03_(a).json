@@ -5,7 +5,7 @@
     "statement": "State either the Mean Value Theorem or Rolle's Theorem.", 
     "year": 2012, 
     "sols": [
-        "Let $f(x)$ be continuous on an interval $[a,b]$ and differentiable on\n$(a,b)$.\n\n\\textbf{Mean Value Theorem}: Then there exists a \\emph{c} in\n\\emph{(a,b)} such that\n\n\\[\\displaystyle f'(c) = \\frac{f(b) - f(a)}{b - a}\\]\n\n\\textbf{Rolle's Theorem}: In addition to the conditions of continuity\nand differentiability, if $f(a) = f(b)$, then there exists a \\emph{c} in\n\\emph{(a,b)} such that $f'(c) = 0$."
+        "Let $f(x)$ be continuous on an interval $[a,b]$ and differentiable on\n$(a,b)$.\n\n\\textbf{Mean Value Theorem}: Then there exists a \\emph{c} in\n\\emph{(a,b)} such that\n\n\\begin{align*}\\displaystyle f'(c) = \\frac{f(b) - f(a)}{b - a}\\end{align*}\n\n\\textbf{Rolle's Theorem}: In addition to the conditions of continuity\nand differentiability, if $f(a) = f(b)$, then there exists a \\emph{c} in\n\\emph{(a,b)} such that $f'(c) = 0$."
     ], 
     "hints": [
         "What conditions need to be true for the function $f$ for Rolle's Theorem\n/ the Mean Value Theorem to be true?"

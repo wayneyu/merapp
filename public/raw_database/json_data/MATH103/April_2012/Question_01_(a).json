@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH103", 
-    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the sum\n\n\\[\\sum_{n=1}^{\\infty} \\frac {n^{0.1}} {n^{0.99}+n^{1.1}+1}\\] converge?\n\nA. Converge.\n\nB. Diverge.", 
+    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the sum\n\n\\begin{align*}\\sum_{n=1}^{\\infty} \\frac {n^{0.1}} {n^{0.99}+n^{1.1}+1}\\end{align*} converge?\n\nA. Converge.\n\nB. Diverge.", 
     "year": 2012, 
     "sols": [
         "The difference between the highest exponents is 1.1-0.1 = 1. By the\nseries \\emph{p} test (with \\emph{p} = 1) this series \\textbf{diverges}.\n\nMore precisely we can prove\n\n$\\sum_{n=1}^\\infty\\frac{n^{0.1}}{n^{0.99} + n^{1.1}+1} > \\sum_{n=1}^\\infty \\frac{n^{0.1}}{n^{1.1} + n^{1.1} + n^{1.1}} = \\sum_{n=1}^\\infty\\frac{n^{0.1}}{3n^{1.1}} = \\frac13\\sum_{n=1}^\\infty\\frac1n=\\infty$\n\nThe last sum diverges because of the series \\emph{p} test with\n\\emph{p=1}."

@@ -5,11 +5,11 @@
     "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nUse a linear approximation to estimate $(2.001)^{4}$. Write your answer\nin the form $n/1000$, where \\emph{n} is an integer.", 
     "year": 2012, 
     "sols": [
-        "Let $f(x) = x^{4}$, so $f'(x) = 4x^{3}$. The linear approximation of\n$f(x)$ at 2 is given by\n\n\\begin{align*}\nL(x) &= f(2) + f'(2)(x-2) \\\\\n&= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&= 16 + 32(x-2)\n\\end{align*}\n\nThus,\n$(2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}$"
+        "Let $f(x) = x^{4}$, so $f'(x) = 4x^{3}$. The linear approximation of\n$f(x)$ at 2 is given by\n\n\\begin{align*}\nL(x) &= f(2) + f'(2)(x-2) \\\\\n&= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&= 16 + 32(x-2)\\end{align*}\n\nThus,\n$(2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}$"
     ], 
     "hints": [
         "There are two key questions we need to think about. Firstly, what would\nbe a good function to use to approximate $(2.001)^{4}$? Secondly, what\nwould be a good value to use as a linear approximation?", 
         "Try using the function $f(x) = x^{4}$ and the linear approximation\naround the point $a=2$.", 
-        "The linear approximation of $f$ at \\emph{x = a} is given by\n\n\\[\\displaystyle\nL(x) = f(a) + f'(a)(x-a)\\]"
+        "The linear approximation of $f$ at \\emph{x = a} is given by\n\n\\begin{align*}\\displaystyle\nL(x) = f(a) + f'(a)(x-a)\\end{align*}"
     ]
 }

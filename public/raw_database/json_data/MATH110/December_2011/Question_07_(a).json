@@ -5,7 +5,7 @@
     "statement": "Let $f(x)$ = \\emph{x}\\textsuperscript{2} - 6\\emph{x} and let\n\\emph{P} be the point (4, -12).\n\na) Is \\emph{P} on the curve \\emph{y} = $f(x)$? Justify your answer.", 
     "year": 2011, 
     "sols": [
-        "As mentioned in the hint, a point is on a curve if its coordinates\nsatisfy the curve equation. So we simply compute:\n\n\\[\\displaystyle\nf(4) = 4^2 - 6\\cdot 4 = 16 - 24 = -8\\]\n\nSince -8 is not -12, we can conclude that the point \\emph{P} is not on\nthis curve."
+        "As mentioned in the hint, a point is on a curve if its coordinates\nsatisfy the curve equation. So we simply compute:\n\n\\begin{align*}\\displaystyle\nf(4) = 4^2 - 6\\cdot 4 = 16 - 24 = -8\\end{align*}\n\nSince -8 is not -12, we can conclude that the point \\emph{P} is not on\nthis curve."
     ], 
     "hints": [
         "A point (\\emph{a}, \\emph{b}) is on the curve \\emph{y} = $f(x)$ if\nand only if $f(a)$ = \\emph{b}."

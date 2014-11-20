@@ -5,13 +5,13 @@
     "statement": "Determine whether $\\int_{1}^{\\infty}\\frac{dx}{1 + 2x}$ converges or\ndiverges. If it converges, evaluate it.", 
     "year": 2006, 
     "sols": [
-        "Evaluating directly, we see that\n\n\\begin{align*}\n\\int_{1}^{\\infty}\\frac{dx}{1 + 2x} &= \\lim_{b \\to\\infty} \\int_{1}^{b}\\frac{dx}{1 + 2x} \\\\\n&= \\lim_{b \\to\\infty} \\left. \\frac{\\ln|1+2x|}{2}\\right|_{1}^{b} \\\\\n&= \\lim_{b \\to\\infty} \\frac{\\ln|1+2b|}{2} - \\frac{\\ln(3)}{2} \n\\end{align*}\n\nand this last limit diverges.", 
-        "Following hints 3 and 4, we want to show that\n\n\\[\\frac1{1+2x}\u00c2\u00a0\\geq C \\frac1{x}.\\]\n\nA fraction is larger when the denominator is smaller, hence we can use\n\n\\[1+2x \\leq x+2x = 3x\\]\n\nto write\n\n\\[\\frac1{1+2x} \\geq \\frac1{3x}.\\]\n\nThus, by the integral comparison test,\n\n\\[\\int_1^\\infty \\frac1{1+2x}\\,dx \\geq \\frac13 \\int_1^\\infty \\frac1{x}\\,dx\\]\n\nHowever, the latter integral diverges by the integral \\emph{p}-test\n(\\emph{p} = 1), and thus the former integral also diverges."
+        "Evaluating directly, we see that\n\n\\begin{align*}\n\\int_{1}^{\\infty}\\frac{dx}{1 + 2x} &= \\lim_{b \\to\\infty} \\int_{1}^{b}\\frac{dx}{1 + 2x} \\\\\n&= \\lim_{b \\to\\infty} \\left. \\frac{\\ln|1+2x|}{2}\\right|_{1}^{b} \\\\\n&= \\lim_{b \\to\\infty} \\frac{\\ln|1+2b|}{2} - \\frac{\\ln(3)}{2} \\end{align*}\n\nand this last limit diverges.", 
+        "Following hints 3 and 4, we want to show that\n\n\\begin{align*}\\frac1{1+2x}\u00c2\u00a0\\geq C \\frac1{x}.\\end{align*}\n\nA fraction is larger when the denominator is smaller, hence we can use\n\n\\begin{align*}1+2x \\leq x+2x = 3x\\end{align*}\n\nto write\n\n\\begin{align*}\\frac1{1+2x} \\geq \\frac1{3x}.\\end{align*}\n\nThus, by the integral comparison test,\n\n\\begin{align*}\\int_1^\\infty \\frac1{1+2x}\\,dx \\geq \\frac13 \\int_1^\\infty \\frac1{x}\\,dx\\end{align*}\n\nHowever, the latter integral diverges by the integral \\emph{p}-test\n(\\emph{p} = 1), and thus the former integral also diverges."
     ], 
     "hints": [
         "You can either calculate this directly (Hint 2, Solution 1) or compare\nit a known \\emph{p}-integral (Hint 3, Solution 2).", 
         "If you want to calculate this directly, how do you deal with the upper\nbound being infinity? Recall that an improper integral like this is the\nlimit of proper (normal) integral.", 
         "Comparing the exponents of the polynomial on the top (0) and on the\nbottom (1) we see that the difference is 1. Hence we suspect that the\nintegral converges or diverges? (Continue at Hint 4)", 
-        "We expect the integral to diverge, since $\\int_1^\\infty \\frac1{x}\\,dx$\ndiverges. Hence, you want to show that\n\n\\[\\frac1{1+2x} \\geq C \\frac1{x}\\]\n\nand then use the integral comparison test."
+        "We expect the integral to diverge, since $\\int_1^\\infty \\frac1{x}\\,dx$\ndiverges. Hence, you want to show that\n\n\\begin{align*}\\frac1{1+2x} \\geq C \\frac1{x}\\end{align*}\n\nand then use the integral comparison test."
     ]
 }

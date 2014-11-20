@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_03_(b)", 
     "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\[\\int \\cos\\sqrt{x}\\,dx\\]", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\\int \\cos\\sqrt{x}\\,dx\\end{align*}", 
     "year": 2008, 
     "sols": [
-        "As in the hint, let $u = \\sqrt{x}$ so that\n$du = \\frac{dx}{2\\sqrt{x}} = \\frac{dx}{2u}$. This gives\n\n$\\int \\cos\\sqrt{x} \\, dx = \\int 2u\\cos(u)\\, du$\n\nTo solve this last integral, we use integration by parts. Let\n\n\\begin{align*}\nw = u \\quad&\\quad v = \\sin(u) \\\\\ndw = du \\quad & \\quad dv = \\cos(u)du\n\\end{align*}\n\nThen, we have\n\n\\begin{align*}\n\\int 2u\\cos(u)\\, du &= 2\\int u\\cos(u)\\, du\\\\\n&= 2u\\sin(u) - 2\\int\\sin(u)\\, du\\\\\n&= 2u\\sin(u) + 2\\cos(u)\n\\end{align*}\n\nand hence\n\n\\begin{align*}\n\\int\\cos(\\sqrt{x})\\, dx &= \\int 2u\\cos(u)\\, du = 2u\\sin(u) + 2\\cos(u) \\\\\n&= 2\\sqrt{x}\\sin(\\sqrt{x}) + 2\\cos(\\sqrt{x})\n\\end{align*}"
+        "As in the hint, let $u = \\sqrt{x}$ so that\n$du = \\frac{dx}{2\\sqrt{x}} = \\frac{dx}{2u}$. This gives\n\n$\\int \\cos\\sqrt{x} \\, dx = \\int 2u\\cos(u)\\, du$\n\nTo solve this last integral, we use integration by parts. Let\n\n\\begin{align*}\nw = u \\quad&\\quad v = \\sin(u) \\\\\ndw = du \\quad & \\quad dv = \\cos(u)du\\end{align*}\n\nThen, we have\n\n\\begin{align*}\n\\int 2u\\cos(u)\\, du &= 2\\int u\\cos(u)\\, du\\\\\n&= 2u\\sin(u) - 2\\int\\sin(u)\\, du\\\\\n&= 2u\\sin(u) + 2\\cos(u)\\end{align*}\n\nand hence\n\n\\begin{align*}\n\\int\\cos(\\sqrt{x})\\, dx &= \\int 2u\\cos(u)\\, du = 2u\\sin(u) + 2\\cos(u) \\\\\n&= 2\\sqrt{x}\\sin(\\sqrt{x}) + 2\\cos(\\sqrt{x})\\end{align*}"
     ], 
     "hints": [
         "\\emph{Note: the following hint was given on the exam.}\n\nYou will need to use a substitution combined with another method of\nintegration.", 

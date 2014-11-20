@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_07_(d)", 
     "course": "MATH215", 
-    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\n\\end{align*}\n\n\\textbf{(d)} Sketch the phase portrait of the non-linear system.", 
+    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\\end{align*}\n\n\\textbf{(d)} Sketch the phase portrait of the non-linear system.", 
     "year": 2011, 
     "sols": [
         "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Fig_215_2011_7d_new.jpg}\n\\end{description}"

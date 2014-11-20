@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_04", 
     "course": "MATH307", 
-    "statement": "Find the \\emph{QR} decomposition of the matrix\n\n\\[\\begin{bmatrix}\n0 & 1 \\\\\n1 & 0 \\\\\n0 & -1 \\\\\n-1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\\]", 
+    "statement": "Find the \\emph{QR} decomposition of the matrix\n\n\\begin{align*}\\begin{bmatrix}\n0 & 1 \\\\\n1 & 0 \\\\\n0 & -1 \\\\\n-1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\\end{align*}", 
     "year": 2008, 
     "sols": [
-        "To begin with, we note that the columns of \\emph{A} are already\northogonal,\n\n\\[\\begin{bmatrix}\n0 & 1 & 0 & -1 & 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\\]\n\nSo we can simply put the normalized columns of \\emph{A} into the matrix\n\\emph{Q}:\n\n\\[Q = \\begin{bmatrix}\n0 & \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} & 0 \\\\\n0 & -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} & 0 \\\\\n0 & \\frac1{\\sqrt 3}\n\\end{bmatrix}\\]\n\nAs a last step, we calculate \\emph{R = Q\\textsuperscript{T}A} to find\n\n\\[R = \\begin{bmatrix}\n\\sqrt 2 & 0 \\\\ 0 & \\sqrt 3\n\\end{bmatrix}\\]"
+        "To begin with, we note that the columns of \\emph{A} are already\northogonal,\n\n\\begin{align*}\\begin{bmatrix}\n0 & 1 & 0 & -1 & 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\\end{align*}\n\nSo we can simply put the normalized columns of \\emph{A} into the matrix\n\\emph{Q}:\n\n\\begin{align*}Q = \\begin{bmatrix}\n0 & \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} & 0 \\\\\n0 & -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} & 0 \\\\\n0 & \\frac1{\\sqrt 3}\n\\end{bmatrix}\\end{align*}\n\nAs a last step, we calculate \\emph{R = Q\\textsuperscript{T}A} to find\n\n\\begin{align*}R = \\begin{bmatrix}\n\\sqrt 2 & 0 \\\\ 0 & \\sqrt 3\n\\end{bmatrix}\\end{align*}"
     ], 
     "hints": [
         "What do you notice when you take the dot product of the two columns of\n\\emph{A}? How does this simplify the computation?", 

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(e)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\ne) Find the coordinates of all local maxima, local minima, and\ninflection points. Be sure to indicate which is which.", 
+    "year": 2013, 
+    "sols": [
+        "Using parts (a) and (c) we can see that the extrema can only occur\npossible at $\\displaystyle x=0,\\pm 2$. Since the latter two points are\nnot in the domain, we need only to check the point $\\displaystyle x=0$\nfor extrema. Looking at part (c), we see to the immediate left of 0, the\nfunction is increasing and to its immediate right the function is\ndecreasing. Thus this point is a local maximum. The coordinates are\ngiven by $\\displaystyle (0,0)$ found by plugging in 0 into the original\nfunction."
+    ], 
+    "hints": [
+        "Refer to parts a and c to help with this problem."
+    ]
+}

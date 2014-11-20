@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_05_(c)", 
     "course": "MATH103", 
-    "statement": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\n\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(c)} What is the median delay?", 
+    "statement": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(c)} What is the median delay?", 
     "year": 2012, 
     "sols": [
-        "Using the formula given in the hint, we know that the median \\emph{m}\nmust satisfy the integral:\n\n\\[\\frac12 = \\int_0^m \\frac3{\\pi} \\frac1{1+t^2}\\,dt\\]\n\nThus, we evaluate the integral above and then solve for \\emph{m}.\n\n\\begin{align*}\n\\frac12 &= \\int_0^m \\frac3{\\pi} \\frac1{1+t^2}\\,dt  \\\\\n&=  \\frac3{\\pi}\\arctan(m) \\end{align*}\n\nhence $m = \\tan(\\pi/6) = 1/\\sqrt{3}$.\n\n(Or $m = \\tan(\\frac{\\arctan \\sqrt{3}}2)$.)"
+        "Using the formula given in the hint, we know that the median \\emph{m}\nmust satisfy the integral:\n\n\\begin{align*}\\frac12 = \\int_0^m \\frac3{\\pi} \\frac1{1+t^2}\\,dt\\end{align*}\n\nThus, we evaluate the integral above and then solve for \\emph{m}.\n\n\\begin{align*}\n\\frac12 &= \\int_0^m \\frac3{\\pi} \\frac1{1+t^2}\\,dt  \\\\\n&=  \\frac3{\\pi}\\arctan(m) \\end{align*}\n\nhence $m = \\tan(\\pi/6) = 1/\\sqrt{3}$.\n\n(Or $m = \\tan(\\frac{\\arctan \\sqrt{3}}2)$.)"
     ], 
     "hints": [
-        "The median \\emph{m} satisfies\n\n\\[\\frac12 = \\int_0^m p(t)\\,dt.\\]"
+        "The median \\emph{m} satisfies\n\n\\begin{align*}\\frac12 = \\int_0^m p(t)\\,dt.\\end{align*}"
     ]
 }

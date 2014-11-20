@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_01_(m)", 
     "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nUse Newton's Method to find the second approximation\n\\emph{x}\\textsubscript{2} to\n\n\\[\\sqrt[6]{2}\\] starting with the inital approximation\n\\emph{x}\\textsubscript{1}=1.", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nUse Newton's Method to find the second approximation\n\\emph{x}\\textsubscript{2} to\n\n\\begin{align*}\\sqrt[6]{2}\\end{align*} starting with the inital approximation\n\\emph{x}\\textsubscript{1}=1.", 
     "year": 2011, 
     "sols": [
-        "The strength of Newton's method is on root finding. We're asked to\napproximate\n\n\\[\\displaystyle{}x=2^{1/6}\\]\n\nwhich we can write as a root finding problem,\n\n\\[\\displaystyle{}x^6-2=0.\\]\n\nWith this in mind, let\n\n\\[\\displaystyle{}f(x) = x^6-2.\\]\n\nTaking the derivative gives\n\n\\[\\displaystyle{}f'(x) = 6x^5.\\]\n\nWe start with $x_1=1$ as our first iteration and so if we apply Newton's\nMethod, we get,\n\n\\[x_{2} = x_{1} - \\frac{f(x_{1})}{f'(x_{1})} = 1 - \\frac{f(1)}{f'(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\\]\n\nIf we actually compute $2^{1/6}$ we get\n\n\\[\\displaystyle{}2^{1/6}\\approx{}1.122462048\\]\n\nand so $\\frac{7}{6}=1.166666667$ is already in good agreement."
+        "The strength of Newton's method is on root finding. We're asked to\napproximate\n\n\\begin{align*}\\displaystyle{}x=2^{1/6}\\end{align*}\n\nwhich we can write as a root finding problem,\n\n\\begin{align*}\\displaystyle{}x^6-2=0.\\end{align*}\n\nWith this in mind, let\n\n\\begin{align*}\\displaystyle{}f(x) = x^6-2.\\end{align*}\n\nTaking the derivative gives\n\n\\begin{align*}\\displaystyle{}f'(x) = 6x^5.\\end{align*}\n\nWe start with $x_1=1$ as our first iteration and so if we apply Newton's\nMethod, we get,\n\n\\begin{align*}x_{2} = x_{1} - \\frac{f(x_{1})}{f'(x_{1})} = 1 - \\frac{f(1)}{f'(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\\end{align*}\n\nIf we actually compute $2^{1/6}$ we get\n\n\\begin{align*}\\displaystyle{}2^{1/6}\\approx{}1.122462048\\end{align*}\n\nand so $\\frac{7}{6}=1.166666667$ is already in good agreement."
     ], 
     "hints": [
         "How can we turn this into a root finding problem?", 
-        "The formula for Newton's Method is\n\n\\[x_{n+1} = x_{n} - \\frac{f(x_{n})}{f'(x_{n})}\\]"
+        "The formula for Newton's Method is\n\n\\begin{align*}x_{n+1} = x_{n} - \\frac{f(x_{n})}{f'(x_{n})}\\end{align*}"
     ]
 }

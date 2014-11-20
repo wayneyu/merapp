@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_06_(c)", 
     "course": "MATH215", 
-    "statement": "Suppose the interaction between two species ($x=x(t)$ is the \u00e2\u0080\u009cprey\u00e2\u0080\u009d\nwhile $y=y(t)$ is the predator) can be modelled by the autonomous\nsystem:\n\n\\[\\left\\{\n\\begin{array}{c}\n\\frac{dx}{dt} = x\\left(3-x-y\\right) \\\\\n\\frac{dy}{dt} = y\\left(1+x-y\\right)\n\\end{array}\n\\right.\\]\n\n(c) If $\\displaystyle x(0)=y(0)=1$, determine $\\lim_{t\\to\\infty}x(t)$\nand $\\lim_{t\\to\\infty}y(t)$.", 
+    "statement": "Suppose the interaction between two species ($x=x(t)$ is the \u00e2\u0080\u009cprey\u00e2\u0080\u009d\nwhile $y=y(t)$ is the predator) can be modelled by the autonomous\nsystem:\n\n\\begin{align*}\\left\\{\n\\begin{array}{c}\n\\frac{dx}{dt} = x\\left(3-x-y\\right) \\\\\n\\frac{dy}{dt} = y\\left(1+x-y\\right)\n\\end{array}\n\\right.\\end{align*}\n\n(c) If $\\displaystyle x(0)=y(0)=1$, determine $\\lim_{t\\to\\infty}x(t)$\nand $\\lim_{t\\to\\infty}y(t)$.", 
     "year": 2013, 
     "sols": [
         "The only stable equilibrium solution is (1,2), which is a stable spiral.\nSaddle points and sources are unstable. While little can be done\nrigorously, our prediction is that with $x(0) = y(0) = 1$ that\n$(x(t), y(t)) \\rightarrow (1,2)$ as $t \\rightarrow \\infty$."

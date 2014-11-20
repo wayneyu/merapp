@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_02_(b)", 
     "course": "MATH110", 
-    "statement": "Find the domain of the function\n\n\\[g(x) = \\frac{1}{\\sin(x)}\\]", 
+    "statement": "Find the domain of the function\n\n\\begin{align*}g(x) = \\frac{1}{\\sin(x)}\\end{align*}", 
     "year": 2011, 
     "sols": [
         "The function \\emph{g}(\\emph{x}) is undefined wherever the denominator is\nzero. Thus we need to know where $\\sin(x) = 0$.\n\nBased on the unit circle, we know that $\\sin(x)$ is zero at the angles\n0, $\\pi$, 2$\\pi$, 3$\\pi$, ... Thus, these points can not be included in the domain\nof \\emph{g}.\n\nSo our domain is:\n\n$\\displaystyle \\{ x : x \\not= n\\pi \\}$ where \\emph{n} is an integer."

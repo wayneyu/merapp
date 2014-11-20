@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_03", 
     "course": "MATH220", 
-    "statement": "For statements \\emph{P}, \\emph{Q} and \\emph{R}, prove that the statement\n\n\\[\\displaystyle\n[(P \\Rightarrow Q) \\Rightarrow R] \\lor (\\lnot P \\lor Q)\\] is a\ntautology.", 
+    "statement": "For statements \\emph{P}, \\emph{Q} and \\emph{R}, prove that the statement\n\n\\begin{align*}\\displaystyle\n[(P \\Rightarrow Q) \\Rightarrow R] \\lor (\\lnot P \\lor Q)\\end{align*} is a\ntautology.", 
     "year": 2011, 
     "sols": [
-        "Using both hints, we can rewrite the statement into equivalent\nstatements as follow\n\n\\begin{align*}\n\\left[(P \\Rightarrow Q) \\Rightarrow R\\right] \\lor (\\lnot P \\lor Q) &\\equiv [(\\lnot P \\lor Q) \\Rightarrow R] \\lor (\\lnot P \\lor Q)\\\\\n&\\equiv \\lnot(\\lnot P \\lor Q) \\lor R \\lor (\\lnot P) \\lor Q\\\\\n&\\equiv (P \\land \\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q\\\\\n&\\equiv [P \\lor R \\lor (\\lnot P) \\lor Q] \\land [(\\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q]\n\\end{align*} The last equivalent statement is of the type \\emph{A} AND\n\\emph{B} with\n\n\\begin{align*}\nA &= P \\lor R \\lor (\\lnot P) \\lor Q\\\\\nB &= (\\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q\n\\end{align*} which both are tautologies since they contain \\emph{P} OR\n\\emph{not P} and respectively \\emph{not Q} OR \\emph{Q}. So if both\n\\emph{A} and \\emph{B} are tautologies, then so is the conjunction of\nthem into the statement \\emph{A} AND \\emph{B}."
+        "Using both hints, we can rewrite the statement into equivalent\nstatements as follow\n\n\\begin{align*}\n\\left[(P \\Rightarrow Q) \\Rightarrow R\\right] \\lor (\\lnot P \\lor Q) &\\equiv [(\\lnot P \\lor Q) \\Rightarrow R] \\lor (\\lnot P \\lor Q)\\\\\n&\\equiv \\lnot(\\lnot P \\lor Q) \\lor R \\lor (\\lnot P) \\lor Q\\\\\n&\\equiv (P \\land \\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q\\\\\n&\\equiv [P \\lor R \\lor (\\lnot P) \\lor Q] \\land [(\\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q]\\end{align*} The last equivalent statement is of the type \\emph{A} AND\n\\emph{B} with\n\n\\begin{align*}\nA &= P \\lor R \\lor (\\lnot P) \\lor Q\\\\\nB &= (\\lnot Q) \\lor R \\lor (\\lnot P) \\lor Q\\end{align*} which both are tautologies since they contain \\emph{P} OR\n\\emph{not P} and respectively \\emph{not Q} OR \\emph{Q}. So if both\n\\emph{A} and \\emph{B} are tautologies, then so is the conjunction of\nthem into the statement \\emph{A} AND \\emph{B}."
     ], 
     "hints": [
-        "Use the identity\n\n\\[A \\Rightarrow B \\quad\\equiv\\quad \\lnot A \\lor B\\]", 
-        "Use the identity\n\n\\[(A \\land B) \\lor C \\quad\\equiv\\quad (A \\lor C) \\land (B \\lor C)\\]"
+        "Use the identity\n\n\\begin{align*}A \\Rightarrow B \\quad\\equiv\\quad \\lnot A \\lor B\\end{align*}", 
+        "Use the identity\n\n\\begin{align*}(A \\land B) \\lor C \\quad\\equiv\\quad (A \\lor C) \\land (B \\lor C)\\end{align*}"
     ]
 }

@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_01_(a)", 
     "course": "MATH104", 
-    "statement": "Evaluate\n\n\\[\\lim_{x\\to2}\\frac{x^2+x-6}{3x^2-5x-2}\\]", 
+    "statement": "Evaluate\n\n\\begin{align*}\\lim_{x\\to2}\\frac{x^2+x-6}{3x^2-5x-2}\\end{align*}", 
     "year": 2010, 
     "sols": [
         "The first thing we should try is direct substitution (it sometimes\nworks). Unfortunately if we substitute in $x=2$ we have $\\frac{0}{0}$.\n\nThe next thing we try is to simplify this expression. Factoring is often\na good idea:\n\n$\\lim_{x\\to2}\\frac{x^2+x-6}{3x^2-5x-2} = \\lim_{x\\to2}\\frac{(x+3)(x-2)}{(3x+1)(x-2)} = \\lim_{x\\to2}\\frac{x+3}{3x+1}$\n\nIn the last equality we cancelled the common factor of (x-2). Note that,\nwithout the limit, $\\frac{(x+3)(x-2)}{(3x+1)(x-2)}$ and\n$\\frac{x+3}{3x+1}$ are not equal (because the function is not defined at\n$x=2$). In taking the limit as $x \\to 2$, however, we don't need to\nworry what happens to the function at the precise point $x=2$.\n\nTo evaluate $\\lim_{x\\to2}\\frac{x+3}{3x+1}$ we can try direct\nsubstitution again. This time, when we directly substitute $x=2$, we\nhave $5/7$. This is our answer."

@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(i)", 
     "course": "MATH104", 
-    "statement": "Find the equation of the tangent line to the curve\n\n\\[\\displaystyle xy^2+2xy=8\\]\n\nat the point (1,2).", 
+    "statement": "Find the equation of the tangent line to the curve\n\n\\begin{align*}\\displaystyle xy^2+2xy=8\\end{align*}\n\nat the point (1,2).", 
     "year": 2011, 
     "sols": [
-        "To determine the equation of the tangent line we will need the slope of\nthe line at the given point. To find the slope at the given point, we\nmay use implicit differentiation and find an expression for y'.\n\n\\begin{align*} \n\\frac{d}{dx} \\Big( xy^2+2xy \\Big) &= \\frac{d}{dx} (8) \\\\\ny^2 + 2xyy'+2y +2xy' &= 0 \\\\\n\\end{align*}\n\nAt the point (1,2), this equation becomes\n\n\\begin{align*} \n(2)^2 + 2(1)(2)y'+2(2)+2(1)y' &= 0 \\\\\n4+4y'+4+2y'&=0\\\\\n6y'&=-8\\\\\ny'&=-4/3\n\\end{align*}\n\nUsing the ``point-slope'' equation of a straight line with slope\n\\emph{m} = y' that passes through the point\n(\\emph{x\\textsubscript{0}},\\emph{y\\textsubscript{0}})\n\n\\[\\displaystyle y-y_0 = m(x-x_0)\\]\n\nwe have\n\n\\begin{align*} \ny-(2) &= (-\\frac{4}{3})\\big(x-(1)\\big) \\\\\ny &= -\\frac{4}{3}x + \\frac{10}{3} \\\\\n\\end{align*}\n\nwhich is the equation of the tangent line at (1,2)."
+        "To determine the equation of the tangent line we will need the slope of\nthe line at the given point. To find the slope at the given point, we\nmay use implicit differentiation and find an expression for y'.\n\n\\begin{align*} \n\\frac{d}{dx} \\Big( xy^2+2xy \\Big) &= \\frac{d}{dx} (8) \\\\\ny^2 + 2xyy'+2y +2xy' &= 0 \\end{align*}\n\nAt the point (1,2), this equation becomes\n\n\\begin{align*} \n(2)^2 + 2(1)(2)y'+2(2)+2(1)y' &= 0 \\\\\n4+4y'+4+2y'&=0\\\\\n6y'&=-8\\\\\ny'&=-4/3\\end{align*}\n\nUsing the ``point-slope'' equation of a straight line with slope\n\\emph{m} = y' that passes through the point\n(\\emph{x\\textsubscript{0}},\\emph{y\\textsubscript{0}})\n\n\\begin{align*}\\displaystyle y-y_0 = m(x-x_0)\\end{align*}\n\nwe have\n\n\\begin{align*} \ny-(2) &= (-\\frac{4}{3})\\big(x-(1)\\big) \\\\\ny &= -\\frac{4}{3}x + \\frac{10}{3} \\end{align*}\n\nwhich is the equation of the tangent line at (1,2)."
     ], 
     "hints": [
         "Use implicit differentiation."

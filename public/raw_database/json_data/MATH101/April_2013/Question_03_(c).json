@@ -5,7 +5,7 @@
     "statement": "\\textbf{Short-Answer Questions}. Question 1-3 are short-answer\nquestions. Put your answer in the box provided. \\textbf{Simplify your\nanswer as much as possible}. Full Marks will be awarded for a correct\nanswer placed in the box. \\textbf{Show your work}, for part marks.\n\nIf $\\displaystyle x\\sin(\\pi x) = \\int_0^x f(t) \\ dt$ where\n$\\displaystyle f$ is a continuous function, find $\\displaystyle f(4)$.", 
     "year": 2013, 
     "sols": [
-        "By the Fundamental Theorem of Calculus,\n\n\\[\\displaystyle \n\\frac{d}{dx}\\int_0^x f(t) \\ dt = f(x),\\]\n\nso differentiating both sides gives\n\n\\[\\displaystyle \nx\\pi \\cos(\\pi x) + \\sin(\\pi x) = f(x)\\]\n\nAt $\\displaystyle x = 4,$ we have $\\displaystyle f(4) = 4\\pi$"
+        "By the Fundamental Theorem of Calculus,\n\n\\begin{align*}\\displaystyle \n\\frac{d}{dx}\\int_0^x f(t) \\ dt = f(x),\\end{align*}\n\nso differentiating both sides gives\n\n\\begin{align*}\\displaystyle \nx\\pi \\cos(\\pi x) + \\sin(\\pi x) = f(x)\\end{align*}\n\nAt $\\displaystyle x = 4,$ we have $\\displaystyle f(4) = 4\\pi$"
     ], 
     "hints": [
         "How can we isolate $\\displaystyle f(x)$? What operation can we perform\nto get rid of the integral?"

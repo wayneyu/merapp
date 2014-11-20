@@ -2,13 +2,13 @@
     "term": "April", 
     "question": "Question_04_(a)", 
     "course": "MATH101", 
-    "statement": "Determine, with explanation, whether the series\n\n\\[\\sum_{n=1}^{\\infty}\\frac{n^{2}-\\sin n}{n^{6}+n^{2}}\\]\n\nconverges or diverges.", 
+    "statement": "Determine, with explanation, whether the series\n\n\\begin{align*}\\sum_{n=1}^{\\infty}\\frac{n^{2}-\\sin n}{n^{6}+n^{2}}\\end{align*}\n\nconverges or diverges.", 
     "year": 2012, 
     "sols": [
-        "We will compare our series with\n$\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^4} .$ So we look at the\nlimit:\n\n\\begin{align*}\n\\lim_{n\\to \\infty} \\frac{(\\frac{n^2-\\sin(n)}{n^6+n^2})}{(\\frac{1}{n^4})} &= \\lim_{n\\to \\infty}\\frac{n^6+n^4\\sin(n)}{n^6+n^2} \\\\\n&=\\lim_{n\\to \\infty}\\frac{1-\\frac{\\sin(n)}{n^2}}{1+\\frac{1}{n^4}} \\\\\n&=\\frac{1}{1}=1\n\\end{align*}\n\nSince $\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^4}$ converges, by\nlimit comparison our series also converges."
+        "We will compare our series with\n$\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^4} .$ So we look at the\nlimit:\n\n\\begin{align*}\n\\lim_{n\\to \\infty} \\frac{(\\frac{n^2-\\sin(n)}{n^6+n^2})}{(\\frac{1}{n^4})} &= \\lim_{n\\to \\infty}\\frac{n^6+n^4\\sin(n)}{n^6+n^2} \\\\\n&=\\lim_{n\\to \\infty}\\frac{1-\\frac{\\sin(n)}{n^2}}{1+\\frac{1}{n^4}} \\\\\n&=\\frac{1}{1}=1\\end{align*}\n\nSince $\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^4}$ converges, by\nlimit comparison our series also converges."
     ], 
     "hints": [
-        "Use the fact that sums of the form\n\n\\[\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^k}\\] converge for $k > 1$", 
+        "Use the fact that sums of the form\n\n\\begin{align*}\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^k}\\end{align*} converge for $k > 1$", 
         "Use a comparison test with a series like\n$\\displaystyle \\sum_{n=1}^\\infty \\frac{1}{n^k}$. How about \\emph{k=4}?", 
         "Use the fact that\n\n$-1 \\leq \\sin(n) \\leq 1$"
     ]

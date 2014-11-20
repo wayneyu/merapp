@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(a)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=\\sqrt{x}-1$ and $g(x)=(f\\circ f)(x)$. Find a formula for\n$g(x)$ in terms of $x$ (in other words, your formula should not use the\nsymbol \u00e2\u0080\u009c$f$\u00e2\u0080\u009d).", 
+    "year": 2013, 
+    "sols": [
+        "We simply substitute:\n\n\\begin{align*}\ng(x) &= (f\\circ f)(x)\\\\\n&= f(f(x))\\\\\n&= f(\\sqrt{x}-1)\\\\\ng(x)&= \\sqrt{\\sqrt{x}-1}-1.\\end{align*}"
+    ], 
+    "hints": [
+        "Remember that by definition\n\n$\\displaystyle (f \\circ f)(x) = f(f(x))$"
+    ]
+}

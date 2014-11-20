@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_04_(v)", 
     "course": "MATH102", 
-    "statement": "Consider the function\n\n\\[f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\]\n\nv) Determine the interval(s) for which f(x) is concave up and concave\ndown, respectively.", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\end{align*}\n\nv) Determine the interval(s) for which f(x) is concave up and concave\ndown, respectively.", 
     "year": 2011, 
     "sols": [
         "In\n\\href{Science:Math Exam Resources/Courses/MATH102/December 2011/Question 4 (iii)}{part\n\\emph{iii)} of this question} we obtained the sign table of the second\nderivative:\n\n\\begin{longtable}[c]{@{}llllll@{}}\n& & $\\displaystyle 1$ & & $\\displaystyle 3$ &\\\\\n$\\displaystyle 3(x-1)$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle (x-3)$ & $\\displaystyle -$ & & $\\displaystyle -$ &\n$\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f'(x)$ & $\\displaystyle +$ & $\\displaystyle 0$ &\n$\\displaystyle -$ & $\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f(x)$ & $\\displaystyle \\cup$ & & $\\displaystyle \\cap$ &\n& $\\displaystyle \\cup$\\\\\\\\\n\\end{longtable}\n\nAnd so we see that function is concave up on the intervals ($-\\infty$,\n1) and (3, $+\\infty$) while it is concave down on the interval (1,3)."

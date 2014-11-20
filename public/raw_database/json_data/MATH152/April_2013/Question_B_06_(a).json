@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_B_06_(a)", 
     "course": "MATH152", 
-    "statement": "Consider the system of linear differential equations given by\n\n\\begin{align*}\ny'_{1}(t) &= 3y_{1}(t) - 2y_{2}(t)\\\\\ny'_{2}(t) &= 4y_{1}(t) - y_{2}(t)\n\\end{align*}\n\nExpress this system in the form of $y'(t) = Ay(t)$", 
+    "statement": "Consider the system of linear differential equations given by\n\n\\begin{align*}\ny'_{1}(t) &= 3y_{1}(t) - 2y_{2}(t)\\\\\ny'_{2}(t) &= 4y_{1}(t) - y_{2}(t)\\end{align*}\n\nExpress this system in the form of $y'(t) = Ay(t)$", 
     "year": 2013, 
     "sols": [
         "This equation is equivalent to $\\mathbf{y'(t)} = \\begin{bmatrix}\n3 & -2\\\\\n4 & -1\n\\end{bmatrix} \\mathbf{y(t)}$"
     ], 
     "hints": [
-        "Put \\emph{y\\textsubscript{1}} and \\emph{y\\textsubscript{2}} in a vector\nlike this\n\n\\[\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\\] Now the given\nequation is just a linear system with coefficient matrix \\emph{A}."
+        "Put \\emph{y\\textsubscript{1}} and \\emph{y\\textsubscript{2}} in a vector\nlike this\n\n\\begin{align*}\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\\end{align*} Now the given\nequation is just a linear system with coefficient matrix \\emph{A}."
     ]
 }

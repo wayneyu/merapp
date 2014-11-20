@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(n)", 
+    "course": "MATH104", 
+    "statement": "If the base $b$ of a triangle is increasing at a rate of 3 centimetres\nper second while its height $h$ is decreasing at a rate of 3 centimetres\nper second, which of the following must be true about the area $A$ of\nthe triangle?\n\n(A) $A$ is always increasing.\n\n(B) $A$ is always decreasing.\n\n(C) $A$ is decreasing only when $b<h$.\n\n(D) $A$ is decreasing only when $b>h$.\n\n(E) $A$ remains constant.", 
+    "year": 2013, 
+    "sols": [
+        "The area of a triangle is given by\n\n\\begin{align*}A = \\frac{bh}{2}.\\end{align*} To determine the rate of change of area of the\ntriangle, we evaluate A' by differentiating A with respect to t,\nrecognizing that both b and h are functions of time.\n\n\\begin{align*}A' = \\frac{1}{2}\\left(bh' + hb' \\right).\\end{align*} Since b' = 3 and h' = -3,\nA' becomes\n\n\\begin{align*}A' = \\frac{3}{2}\\left(h - b \\right).\\end{align*} By inspecting this equation we\ncan determine the answer. Clearly A is not always increasing nor always\ndecreasing nor constant since the both the sign and the value of A'\ndepend on the values of b and h. So (A), (B), and (E) are not true. If A\nis decreasing, then A' \\textless{} 0 and so\n\n\\begin{align*}0 > \\frac{3}{2}\\left(h - b \\right) \\quad \\Rightarrow \\quad b > h.\\end{align*}\nThus, the correct answer is (D)."
+    ], 
+    "hints": [
+        "The area of a triangle is $A = \\frac{bh}2.$ Try evaluating\n$\\frac{dA}{dt}$ in terms of $b$ and $h$ (both functions of $t$) to get\nsome insight."
+    ]
+}

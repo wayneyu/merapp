@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01_(k)", 
+    "course": "MATH104", 
+    "statement": "At $x=0,$ which of the following is true for the function\n$f(x) = x^2+e^{-2x}$?\n\n(A) $f$ is increasing.\n\n(B) $f$ is decreasing.\n\n(C) $f$ is discontinuous.\n\n(D) $f$ has a local minimum.\n\n(E) $f$ has a local maximum.", 
+    "year": 2013, 
+    "sols": [
+        "We are given that $\\displaystyle f(x) = x^{2} + e^{-2x}$. Taking the\nderivative yields\n\n$\\displaystyle f'(x) = 2x - 2e^{-2x}$.\n\nSince this exists everywhere, our function is differentiable hence\ncontinuous thus (C) is not the correct answer. Factoring gives\n\n$\\displaystyle f'(x) = 2(x-e^{-2x})$\n\nWhen we plug in $\\displaystyle x=0$, we see that the\n$\\displaystyle f'(0) = 2(0-e^{-2(0)}) = -2$. As this is negative, we\nknow that $\\displaystyle f(x)$ is decreasing at $\\displaystyle x=0$.\n\\textbf{Thus the correct answer is (B)}."
+    ], 
+    "hints": [
+        "In order to find maxima and minima (and intervals of increasing and\ndecreasing), we need to start taking derivatives.", 
+        "If the derivative exists everywhere - we can eliminate one of the\nincorrect answers above.", 
+        "Lastly, if we have a maximum or minimum at $\\displaystyle x=0$, what\nvalue should the derivative be at this point? What value would the\nderivative be if the function is increasing or decreasing at\n$\\displaystyle x=0$ (this relates to the sign of the derivative)?"
+    ]
+}

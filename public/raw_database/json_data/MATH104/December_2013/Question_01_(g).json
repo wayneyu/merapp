@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(g)", 
+    "course": "MATH104", 
+    "statement": "Find the interval(s) on which $f(x) = x + \\frac1x$ is increasing.", 
+    "year": 2013, 
+    "sols": [
+        "Taking the derivative of this function yields\n\n$\\displaystyle f'(x) = 1 -\\frac{1}{x^{2}}$\n\nThe derivative is undefined at \\emph{x} = 0 (as is the original\nfunction) and setting the derivative to 0 also gives\n\n\\begin{align*} \\frac{1}{x^{2}} &= 1 \\\\ x &= \\pm 1 \\end{align*}\n\nThus $\\displaystyle f$ has three critical points and four intervals to\ncheck:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  On $\\displaystyle (-\\infty, -1)$ the derivative is positive and the\n  function is increasing.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  On $\\displaystyle (-1,0)$ the derivative is negative and the function\n  is decreasing.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  On $\\displaystyle (0,1)$ the derivative is negative and the function\n  is decreasing.\n\\end{itemize}\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  On $\\displaystyle (1,\\infty)$ the derivative is positive and the\n  function is increasing.\n\\end{itemize}\n\nTherefore the function is increasing on\n${\\color{blue} \\displaystyle (-\\infty,-1) \\cup(1,\\infty)}$."
+    ], 
+    "hints": [
+        "To find the intervals of increase and decrease of $\\displaystyle f$, we\nneed to check the sign of $\\displaystyle f'$ between \\textbf{critical\npoints} (i.e., where $\\displaystyle f'$ is undefined or is equal to\nzero)."
+    ]
+}

@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_06_(b)", 
     "course": "MATH220", 
-    "statement": "Use mathematical induction to prove the following statement:\n\n\\[\\text{For all }n \\in \\mathbb{N}, 12^{2n-1} + 11^{n+1} \\,\\text{\u00c2\u00a0is a multiple of 133.}\\]", 
+    "statement": "Use mathematical induction to prove the following statement:\n\n\\begin{align*}\\text{For all }n \\in \\mathbb{N}, 12^{2n-1} + 11^{n+1} \\,\\text{\u00c2\u00a0is a multiple of 133.}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "First, we prove the claim true when $n = 1$. In this case,\n\n\\[\\displaystyle 12^{2n-1} + 11^{n+1} = 12^{2(1)-1} + 11^{1+1} = 12 + 121 = 133\\]\n\nwhich is clearly divisible by 133. We assume the claim is true for\n$n=k$. For $n = k +1$, we have\n\n\\begin{align*}\n12^{2(k+1)-1} + 11^{(k+1)+1} &= 12^{2k+1} + 11^{k+2}\\\\\n&= 12^{2}\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 144\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= (133+11)12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 133\\cdot12^{2k-1}+11\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 133\\cdot12^{2k-1}+11(12^{2k-1} + 11^{k+1})\n\\end{align*}\n\nNow, in the last line, the first summand is divisible by 133 and the\nsecond summand is also divisible by 133 by the induction hypothesis.\nHence we must have that $12^{2(k+1)-1} + 11^{(k+1)+1}$ is divisible by\n133 as required."
+        "First, we prove the claim true when $n = 1$. In this case,\n\n\\begin{align*}\\displaystyle 12^{2n-1} + 11^{n+1} = 12^{2(1)-1} + 11^{1+1} = 12 + 121 = 133\\end{align*}\n\nwhich is clearly divisible by 133. We assume the claim is true for\n$n=k$. For $n = k +1$, we have\n\n\\begin{align*}\n12^{2(k+1)-1} + 11^{(k+1)+1} &= 12^{2k+1} + 11^{k+2}\\\\\n&= 12^{2}\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 144\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= (133+11)12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 133\\cdot12^{2k-1}+11\\cdot12^{2k-1} + 11\\cdot 11^{k+1}\\\\\n&= 133\\cdot12^{2k-1}+11(12^{2k-1} + 11^{k+1})\\end{align*}\n\nNow, in the last line, the first summand is divisible by 133 and the\nsecond summand is also divisible by 133 by the induction hypothesis.\nHence we must have that $12^{2(k+1)-1} + 11^{(k+1)+1}$ is divisible by\n133 as required."
     ], 
     "hints": [
         "This is a routine induction problem. You might want to use the fact that\n$12^2 = 144 = 133 + 11$"

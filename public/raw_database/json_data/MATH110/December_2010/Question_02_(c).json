@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_02_(c)", 
     "course": "MATH110", 
-    "statement": "\\emph{Find the derivative of the following function.}\n\n\\[\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\\]", 
+    "statement": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\\end{align*}", 
     "year": 2010, 
     "sols": [
         "The function we are trying to differentiate is the composition of four\nfunctions: three $\\tan x$ functions and an $x^2$. Thus we will use the\nchain rule. This means taking the derivative of the outermost $\\tan x$\nfunction and then replacing $x$ with the rest of the function; then\nmultiplying by the deriviative of the next $\\tan x$ and so on, until\neach part of the function has been differentiated.\n\n(Recall that the derivative of $\\tan x$ is $\\sec^2 x$.)\n\n$f'(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x$."

@@ -5,12 +5,12 @@
     "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $f(x) = e^{(\\sin x)^{2}}$, find $\\displaystyle f'(x)$", 
     "year": 2012, 
     "sols": [
-        "Applying the chain rule twice gives\n\n\\begin{align*}\nf'(x) &= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\n\\end{align*}", 
-        "Taking logarithms and differentiating gives\n\n\\begin{align*}\n\\ln(f(x)) &= (\\sin x)^{2} \\\\\n\\frac{f'(x)}{f(x)} &= 2\\sin x\\cos x \\\\\nf'(x) &= 2f(x)\\sin x\\cos x \\\\\nf'(x) &= 2e^{(\\sin x)^{2}}\\sin x\\cos x \n\\end{align*}"
+        "Applying the chain rule twice gives\n\n\\begin{align*}\nf'(x) &= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\\end{align*}", 
+        "Taking logarithms and differentiating gives\n\n\\begin{align*}\n\\ln(f(x)) &= (\\sin x)^{2} \\\\\n\\frac{f'(x)}{f(x)} &= 2\\sin x\\cos x \\\\\nf'(x) &= 2f(x)\\sin x\\cos x \\\\\nf'(x) &= 2e^{(\\sin x)^{2}}\\sin x\\cos x \\end{align*}"
     ], 
     "hints": [
         "The chain rule works nicely here. So nicely you'll want to use it twice.", 
-        "Remember that\n\n\\[e^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\\]", 
+        "Remember that\n\n\\begin{align*}e^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\\end{align*}", 
         "Alternatively, taking logarithms and using implicit differentiation will\nwork again."
     ]
 }

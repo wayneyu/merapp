@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(m)", 
     "course": "MATH105", 
-    "statement": "Compute the cumulative distribution function corresponding to the\ndensity function\n\n\\[\\displaystyle f(x) = 2(x-1), \\quad 1 \\leq x \\leq 2.\\]", 
+    "statement": "Compute the cumulative distribution function corresponding to the\ndensity function\n\n\\begin{align*}\\displaystyle f(x) = 2(x-1), \\quad 1 \\leq x \\leq 2.\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "The cumulative distribution function, $F(x)$, can be obtained by\nintegrating the probability density function from negative infinity to\n$x$. i.e:\n\n\\[F(x) = \\int_{-\\infty}^{x}f(t)\\,dt\\] (Note that we can assume that\n$f(x) = 0$ if $x > 2$ or $x < 1$). Applying the defintion of the\ncumulative distribution to this problem gives:\n\n\\[F(x) = \\begin{cases} \\int_{-\\infty}^{x}0\\,dt &\\mbox{if } x < 1\\\\ \n\\int_{-\\infty}^{1}0\\,dt + \\int_{1}^{x}2(t - 1)\\,dt&\\mbox{if } 1 \\le x \\le 2\\\\\n\\int_{-\\infty}^{1}0\\,dt + \\int_{1}^{2}2(t - 1)\\,dt + \\int_{2}^{x}0\\,dt &\\mbox{if } x > 2\\\\\n\\end{cases}\\]\n\nSimplifying gives:\n\n\\[F(x) = \\begin{cases} 0 &\\mbox{if } x < 1\\\\ \nx^2 - 2x + 1&\\mbox{if } 1 \\le x \\le 2\\\\\n1 &\\mbox{if } x > 2\\\\\n\\end{cases}\\]"
+        "The cumulative distribution function, $F(x)$, can be obtained by\nintegrating the probability density function from negative infinity to\n$x$. i.e:\n\n\\begin{align*}F(x) = \\int_{-\\infty}^{x}f(t)\\,dt\\end{align*} (Note that we can assume that\n$f(x) = 0$ if $x > 2$ or $x < 1$). Applying the defintion of the\ncumulative distribution to this problem gives:\n\n\\begin{align*}F(x) = \\begin{cases} \\int_{-\\infty}^{x}0\\,dt &\\mbox{if } x < 1\\\\ \n\\int_{-\\infty}^{1}0\\,dt + \\int_{1}^{x}2(t - 1)\\,dt&\\mbox{if } 1 \\le x \\le 2\\\\\n\\int_{-\\infty}^{1}0\\,dt + \\int_{1}^{2}2(t - 1)\\,dt + \\int_{2}^{x}0\\,dt &\\mbox{if } x > 2\\\\\n\\end{cases}\\end{align*}\n\nSimplifying gives:\n\n\\begin{align*}F(x) = \\begin{cases} 0 &\\mbox{if } x < 1\\\\ \nx^2 - 2x + 1&\\mbox{if } 1 \\le x \\le 2\\\\\n1 &\\mbox{if } x > 2\\\\\n\\end{cases}\\end{align*}"
     ], 
     "hints": [
-        "The cumulative distribution function, $F(x)$, can be obtained by\nintegrating the probability density function from negative infinity to\n$x$. i.e:\n\n\\[F(x) = \\int_{-\\infty}^{x}f(t)\\,dt\\]"
+        "The cumulative distribution function, $F(x)$, can be obtained by\nintegrating the probability density function from negative infinity to\n$x$. i.e:\n\n\\begin{align*}F(x) = \\int_{-\\infty}^{x}f(t)\\,dt\\end{align*}"
     ]
 }

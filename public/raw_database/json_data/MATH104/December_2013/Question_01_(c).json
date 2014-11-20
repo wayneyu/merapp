@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH104", 
+    "statement": "Compute $\\lim_{x \\to \\infty} \\frac{9x^2 - 6x + 8}{-3x^3 + 4}$.", 
+    "year": 2013, 
+    "sols": [
+        "Following the hint, we have\n\n\\begin{align*}\n \\lim_{x \\to \\infty} \\frac{9x^{2}-6x + 8}{-3x^{3}+4} &= \\lim_{x \\to \\infty}\\frac{x^{2}(9 - 6/x + 8/x^2)}{x^{3}(-3 + 4/x^3)} \\\\\n&= \\lim_{x \\to \\infty}\\frac{1}{x}\\cdot \\frac{9 - \\frac6{x} + \\frac8{x^2}}{-3 + \\frac4{x^3}}   \\\\\n&= \\lim_{x \\to \\infty}\\frac{1}{x}\\cdot \\lim_{x \\to \\infty}\\frac{9 - \\frac6{x} + \\frac8{x^2}}{-3 + \\frac4{x^3}}   \\\\\n&= (0)\\cdot \\left(\\frac{9}{-3}\\right) = {\\color{blue} 0}\\end{align*}\n\nThus the answer is 0. The splitting of the limit of a product into a\nproduct of limits is valid since the product is finite."
+    ], 
+    "hints": [
+        "Factor out the largest power of \\emph{x} in both the numerator and the\ndenominator. Simplify and then see if you can take the limit."
+    ]
+}

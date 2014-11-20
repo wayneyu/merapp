@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_02_(b)_i", 
     "course": "MATH102", 
-    "statement": "Consider the differential equation\n\n\\[\\frac{dy}{dt} = y^3-y^2-2y\\]\n\nFind\n\n\\[\\lim_{t \\to \\infty} y(t)\\]\n\nfor \\emph{y}(0) = 1.\n\n\\emph{Hint:} A sketch of the polynomial may be helpful.", 
+    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dt} = y^3-y^2-2y\\end{align*}\n\nFind\n\n\\begin{align*}\\lim_{t \\to \\infty} y(t)\\end{align*}\n\nfor \\emph{y}(0) = 1.\n\n\\emph{Hint:} A sketch of the polynomial may be helpful.", 
     "year": 2011, 
     "sols": [
-        "Let's follow the hint and sketch a graph of the polynomial on the right\nhand side. Note that\n\n\\[\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1).\\] The roots are\nat 0, 2 and -1.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M102graph.jpg}\n\\caption{A graph of $\\frac{dy}{dt}$ vs. $y$}\n\\end{figure}\n\nWe are given that y(0)=1, which is in between 0 and 2. In this region,\n$y$ and $y+1$ are both positive and $y-2$ is negative. Therefore,\n$\\frac{dy}{dt}<0$, which means that $y$ is decreasing (throughout the\ninterval (0,2)). As $y$ approaches zero, we see that $\\frac{dy}{dt}$\nalso approaches zero. (Note that $y$ could never cross zero, since\n$\\frac{dy}{dt}=0$ at the point where $y=0$. In other words, if $y$ ever\nhits 0, it stays there!)\n\nTherefore,\n\n\\[\\lim_{t\\to\\infty} y(t)=0.\\]"
+        "Let's follow the hint and sketch a graph of the polynomial on the right\nhand side. Note that\n\n\\begin{align*}\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1).\\end{align*} The roots are\nat 0, 2 and -1.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M102graph.jpg}\n\\caption{A graph of $\\frac{dy}{dt}$ vs. $y$}\n\\end{figure}\n\nWe are given that y(0)=1, which is in between 0 and 2. In this region,\n$y$ and $y+1$ are both positive and $y-2$ is negative. Therefore,\n$\\frac{dy}{dt}<0$, which means that $y$ is decreasing (throughout the\ninterval (0,2)). As $y$ approaches zero, we see that $\\frac{dy}{dt}$\nalso approaches zero. (Note that $y$ could never cross zero, since\n$\\frac{dy}{dt}=0$ at the point where $y=0$. In other words, if $y$ ever\nhits 0, it stays there!)\n\nTherefore,\n\n\\begin{align*}\\lim_{t\\to\\infty} y(t)=0.\\end{align*}"
     ], 
     "hints": [
         "Is $y$ increasing or decreasing when $t=0$? Using the graph of $dy/dt$\nvs. $y$ as the hint in the problem suggests, how can you predict the\nbehaviour of $y$ as time passes?", 
-        "What do the zeros of\n\n\\[\\frac{dy}{dt} = y^3-y^2-2y\\] represent?"
+        "What do the zeros of\n\n\\begin{align*}\\frac{dy}{dt} = y^3-y^2-2y\\end{align*} represent?"
     ]
 }

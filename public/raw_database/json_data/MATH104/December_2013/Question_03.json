@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03", 
+    "course": "MATH104", 
+    "statement": "Two cylindrical tanks are being filled simultaneously at exactly the\nsame rate. The smaller tank has a radius of 5 metres, and the water\nrises at a rate of 0.5 metres per minute. The larger tank has a radius\nof 8 metres. How fast is the water rising in the larger tank? It may be\nhelpful to know that the volume of a cylinder of radius R and height H\nis $V = \\pi R^2H$.", 
+    "year": 2013, 
+    "sols": [
+        "To do this question, we start by letting $h_{1}$ and $h_{2}$ denote the\nheight of the water level in the smaller and larger cylinder\nrespectively. We also let $r_{1} = 5$, $r_{2} = 8$ be the radii of the\ntanks and $V_{1}, V_{2}$ be the respective volumes of water within each\ntank.\n\nSince we are told that each tank is being filled at the same rate, this\nimplies that\n\n\\begin{align*}\\frac{dV_{1}}{dt} = \\frac{dV_{2}}{dt}\\end{align*} (i.e. The tanks have an equal\nrate of change of volume of water per unit time). Since the radius of\nthe tank is not changing with time, but the height of the water level is\nchanging with time, we can differentiate the expression for volume of a\ncylinder with respect to time giving us\n\n\\begin{align*}\\frac{dV_{1}}{dt} = \\pi r_{1}^{2}\\frac{dh_{1}}{dt}, \\quad \\frac{dV_{2}}{dt} = \\pi r_{2}^{2}\\frac{dh_{2}}{dt}.\\end{align*}\nWe want to find how fast the height of water in the larger tank (i.e.\ntank 2) is changing, hence we are looking for the value of $dh_{2}/dt$.\nUsing the above equations we can write\n\n\\begin{align*}\\pi r_{1}^{2}\\frac{dh_{1}}{dt} = \\pi r_{2}^{2}\\frac{dh_{2}}{dt}.\\end{align*}\nIsolating for $dh_{2}/dt$ gives\n\n\\begin{align*}\n\\frac{dh_{2}}{dt} &= \\frac{r_{1}^{2}}{r_{2}^{2}}\\frac{dh_{1}}{dt} = \\frac{5^{2}}{8^{2}}(0.5) = {\\color{blue}\\frac{25}{128}\\frac{\\text{m}}{\\text{min}}}.\\end{align*} Thus, the water level in the larger tank is rising at a\nrate of (25/128) metres per minute."
+    ], 
+    "hints": [
+        "Both tanks are being filled at the same rate. What does that tell you\nabout the rate of change of the volume of water in each tank relative to\neach other?"
+    ]
+}

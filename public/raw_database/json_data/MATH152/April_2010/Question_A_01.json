@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_01", 
     "course": "MATH152", 
-    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\[\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\]\n\nA1: Compute $\\Vert \\mathbf{x} \\Vert$.", 
+    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{align*}\n\nA1: Compute $\\Vert \\mathbf{x} \\Vert$.", 
     "year": 2010, 
     "sols": [
-        "The length of a vector, $\\Vert \\mathbf{x} \\Vert$ where \\textbf{x} has\ncomponents $[x_1,x_2,x_3]$ is,\n\n\\[||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\\]\n\nSince \\textbf{x}={[}1,-1,-1{]} then\n\n\\[||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\\]"
+        "The length of a vector, $\\Vert \\mathbf{x} \\Vert$ where \\textbf{x} has\ncomponents $[x_1,x_2,x_3]$ is,\n\n\\begin{align*}||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\\end{align*}\n\nSince \\textbf{x}={[}1,-1,-1{]} then\n\n\\begin{align*}||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\\end{align*}"
     ], 
     "hints": [
         "Recall that $\\Vert \\mathbf{x} \\Vert$ means the length of vector\n\\textbf{x}."

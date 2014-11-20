@@ -9,6 +9,6 @@
     ], 
     "hints": [
         "This is a bernoulli experiment.", 
-        "The formula for probability $p$, number of trials $N$ and success $k$ is\n\n\\[P(X=k)=\\begin{pmatrix}N\\\\k\\end{pmatrix}p^k(1-p)^{N-k}.\\]\n\n(Often $\\begin{pmatrix}N\\\\k\\end{pmatrix} = \\frac{N!}{(N-k)!k!}$ is\nwritten as \\emph{C(N,k)}.)"
+        "The formula for probability $p$, number of trials $N$ and success $k$ is\n\n\\begin{align*}P(X=k)=\\begin{pmatrix}N\\\\k\\end{pmatrix}p^k(1-p)^{N-k}.\\end{align*}\n\n(Often $\\begin{pmatrix}N\\\\k\\end{pmatrix} = \\frac{N!}{(N-k)!k!}$ is\nwritten as \\emph{C(N,k)}.)"
     ]
 }

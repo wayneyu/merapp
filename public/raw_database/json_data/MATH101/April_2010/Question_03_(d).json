@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_03_(d)", 
     "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral\\[\\int_0^3 x\\sqrt{81-x^4}\\,dx.\\]\n\nHint: Use a substitution and interpret the result as an area.", 
+    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral\\begin{align*}\\int_0^3 x\\sqrt{81-x^4}\\,dx.\\end{align*}\n\nHint: Use a substitution and interpret the result as an area.", 
     "year": 2010, 
     "sols": [
         "Following the hint, we try the substitution $u = x^{2}$. Then\n$du = 2xdx$ and the endpoints will change to $u(0) = 0^{2} = 0$ and\n$u(3) = 3^{2} = 9$. Hence\n\n$\\int_0^3 x\\sqrt{81-x^4}\\,dx. = \\frac{1}{2} \\int_{0}^{9}\\sqrt{81-u^{2}}\\, du$\n\nThis last value can be seen to be half the area of a quarter circle of\nradius 9. Hence, the value is\n\n$\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}$\n\nas required."

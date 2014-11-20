@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(d)", 
     "course": "MATH104", 
-    "statement": "A drug that stimulates reproduction is introduced into a colony of\nbacteria. After t minutes, the number of bacteria is given approximately\nby\n\n\\[\\displaystyle{}N(t)=1000+30t^2-t^3,\\quad{}t\\geq{0}\\]\n\nWhen is the rate of growth $\\displaystyle {}N'(t)$ decreasing?", 
+    "statement": "A drug that stimulates reproduction is introduced into a colony of\nbacteria. After t minutes, the number of bacteria is given approximately\nby\n\n\\begin{align*}\\displaystyle{}N(t)=1000+30t^2-t^3,\\quad{}t\\geq{0}\\end{align*}\n\nWhen is the rate of growth $\\displaystyle {}N'(t)$ decreasing?", 
     "year": 2010, 
     "sols": [
-        "As long as $N''(t)$ is negative, $N'(t)$ is decreasing. Differentiating\n$N(t),$\n\n\\[N'(t) = 60t-3t^2\\] Differentiating again,\n\n\\[N''(t) = 60-6t.\\] This is negative whenever $6t>60,$ i.e. $t>10.$ We\ncan conclude that $N'(t)$ is decreasing for all $t>10.$\n\n\\emph{(Furthermore, $N'(t)$ is continuous, we also know that it is\nincreasing on the closed interval, $[10,\\infty)$. On an exam, either\nanswer, $(10,\\infty)$ or $[10,\\infty)$, would be acceptable.)}"
+        "As long as $N''(t)$ is negative, $N'(t)$ is decreasing. Differentiating\n$N(t),$\n\n\\begin{align*}N'(t) = 60t-3t^2\\end{align*} Differentiating again,\n\n\\begin{align*}N''(t) = 60-6t.\\end{align*} This is negative whenever $6t>60,$ i.e. $t>10.$ We\ncan conclude that $N'(t)$ is decreasing for all $t>10.$\n\n\\emph{(Furthermore, $N'(t)$ is continuous, we also know that it is\nincreasing on the closed interval, $[10,\\infty)$. On an exam, either\nanswer, $(10,\\infty)$ or $[10,\\infty)$, would be acceptable.)}"
     ], 
     "hints": [
         "First, note that this problem is \\emph{not} asking for the interval(s)\nwhere $N(t)$ is decreasing, but rather where its \\emph{derivative}\n$N'(t)$ is decreasing.", 

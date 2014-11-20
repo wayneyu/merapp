@@ -2,12 +2,12 @@
     "term": "December", 
     "question": "Question_01_(j)", 
     "course": "MATH100", 
-    "statement": "Find the second degree Taylor polynomial T\\textsubscript{2}(x) for\n\n\\[\\displaystyle\nf(x)=\\sqrt{x}\\] At 4 (or about \\emph{x} =4)", 
+    "statement": "Find the second degree Taylor polynomial T\\textsubscript{2}(x) for\n\n\\begin{align*}\\displaystyle\nf(x)=\\sqrt{x}\\end{align*} At 4 (or about \\emph{x} =4)", 
     "year": 2010, 
     "sols": [
-        "To find the second degree Taylor polynomial, we use the equation\n\n\\[T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\] We know that \\emph{a}\n=4 and that $f$(x)=$\\sqrt{x}$. We can easily compute the derivatives to\nget\n\n\\begin{align*}\nf'(x)&=\\frac{1}{2}x^{-1/2}\\\\\nf''(x)&=-\\frac{1}{4x^{3/2}}\n\\end{align*} Plugging this all in to the Taylor equation, we get:\n\n\\begin{align*}\nT_2(x)&=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\\\\n&=f(4)+f'(4)(x-4)+\\frac{f''(4)}{2}(x-4)^2\\\\\n&=\\sqrt{4}+\\frac{1}{2}4^{-1/2}(x-4)+\\frac{-\\frac{1}{4\\times 4^{3/2}}}{2}(x-4)^2\\\\\n&=2+\\frac{1}{4}(x-4)-\\frac{1}{64}(x-4)^2\\\\\n&=2+\\frac{x-4}{4}-\\frac{(x-4)^2}{64}\\\\\n\\end{align*}"
+        "To find the second degree Taylor polynomial, we use the equation\n\n\\begin{align*}T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\end{align*} We know that \\emph{a}\n=4 and that $f$(x)=$\\sqrt{x}$. We can easily compute the derivatives to\nget\n\n\\begin{align*}\nf'(x)&=\\frac{1}{2}x^{-1/2}\\\\\nf''(x)&=-\\frac{1}{4x^{3/2}}\\end{align*} Plugging this all in to the Taylor equation, we get:\n\n\\begin{align*}\nT_2(x)&=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\\\\n&=f(4)+f'(4)(x-4)+\\frac{f''(4)}{2}(x-4)^2\\\\\n&=\\sqrt{4}+\\frac{1}{2}4^{-1/2}(x-4)+\\frac{-\\frac{1}{4\\times 4^{3/2}}}{2}(x-4)^2\\\\\n&=2+\\frac{1}{4}(x-4)-\\frac{1}{64}(x-4)^2\\\\\n&=2+\\frac{x-4}{4}-\\frac{(x-4)^2}{64}\\end{align*}"
     ], 
     "hints": [
-        "Recall that the general equation for a second degree Taylor polynomial\nat \\emph{a} is given by:\n\n\\[T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\]"
+        "Recall that the general equation for a second degree Taylor polynomial\nat \\emph{a} is given by:\n\n\\begin{align*}T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\end{align*}"
     ]
 }

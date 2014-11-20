@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_07_(a)", 
     "course": "MATH103", 
-    "statement": "\\emph{Streptococcus viridans} bacteria divide along a preferred axis and\ntherefore form chains when they divide. You study a population of\n\\emph{S. viridans} in a blood culture. Let \\emph{X} be the length (in\n\u00c2\u00b5m) of a randomly chosen chain. Its distribution is described by the\nprobability density function\n\n\\[p(x) = \\frac1{x}, \\quad 1 \\leq x \\leq e\\]\n\nFind the expected length of a chain (i.e. the expected value of\n\\emph{X}).\n\n$E[X]=$", 
+    "statement": "\\emph{Streptococcus viridans} bacteria divide along a preferred axis and\ntherefore form chains when they divide. You study a population of\n\\emph{S. viridans} in a blood culture. Let \\emph{X} be the length (in\n\u00c2\u00b5m) of a randomly chosen chain. Its distribution is described by the\nprobability density function\n\n\\begin{align*}p(x) = \\frac1{x}, \\quad 1 \\leq x \\leq e\\end{align*}\n\nFind the expected length of a chain (i.e. the expected value of\n\\emph{X}).\n\n$E[X]=$", 
     "year": 2009, 
     "sols": [
-        "To find the expected lenght, we multiply the length \\emph{x} with the\nprobability density function \\emph{p(x)} and integrate over all possible\nlengths. In other words, the mean, or expected value, \\emph{E{[}X{]}} is\ngiven by\n\n\\[E[X] = \\int_a^b xp(x)\\,dx.\\]\n\nIn this problem \\emph{a} = 1, \\emph{b} = \\emph{e} and \\emph{p(x)} =\n1/\\emph{x}, thus\n\n\\[E[X] = \\int_1^e x\\cdot \\frac1x dx = \\int_1^e\\,dx = x|_1^e = e-1.\\]"
+        "To find the expected lenght, we multiply the length \\emph{x} with the\nprobability density function \\emph{p(x)} and integrate over all possible\nlengths. In other words, the mean, or expected value, \\emph{E{[}X{]}} is\ngiven by\n\n\\begin{align*}E[X] = \\int_a^b xp(x)\\,dx.\\end{align*}\n\nIn this problem \\emph{a} = 1, \\emph{b} = \\emph{e} and \\emph{p(x)} =\n1/\\emph{x}, thus\n\n\\begin{align*}E[X] = \\int_1^e x\\cdot \\frac1x dx = \\int_1^e\\,dx = x|_1^e = e-1.\\end{align*}"
     ], 
     "hints": [
         "Use the formula for the continuous expected value."

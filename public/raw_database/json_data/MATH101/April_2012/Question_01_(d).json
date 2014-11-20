@@ -5,9 +5,9 @@
     "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nLet \\emph{k} be a positive constant. Find the average value of the\nfunction $f(x) = \\sin(kx)$ on the interval $[0,\\pi/k]$", 
     "year": 2012, 
     "sols": [
-        "Using the hint, we have\n\n\\begin{align*}\nf_{av} &= \\frac{1}{\\pi/k-0}\\int_{0}^{\\pi/k}\\sin(kx)\\, dx\\\\\n&= \\frac{k}{\\pi}\\left.\\left(\\frac{-1}{k}\\cos(kx) \\right)\\right|_{0}^{\\pi/k}\\\\\n&= \\frac{-1}{\\pi}\\left( \\cos(\\pi) - \\cos(0) \\right)\\\\\n&= \\frac{-1}{\\pi}( -1 -1)\\\\\n&= \\frac{2}{\\pi}\n\\end{align*}"
+        "Using the hint, we have\n\n\\begin{align*}\nf_{av} &= \\frac{1}{\\pi/k-0}\\int_{0}^{\\pi/k}\\sin(kx)\\, dx\\\\\n&= \\frac{k}{\\pi}\\left.\\left(\\frac{-1}{k}\\cos(kx) \\right)\\right|_{0}^{\\pi/k}\\\\\n&= \\frac{-1}{\\pi}\\left( \\cos(\\pi) - \\cos(0) \\right)\\\\\n&= \\frac{-1}{\\pi}( -1 -1)\\\\\n&= \\frac{2}{\\pi}\\end{align*}"
     ], 
     "hints": [
-        "The average value for a function $f(x)$ is defined by\n\n\\[f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\\]"
+        "The average value for a function $f(x)$ is defined by\n\n\\begin{align*}f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\\end{align*}"
     ]
 }

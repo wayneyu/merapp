@@ -2,14 +2,14 @@
     "term": "April", 
     "question": "Question_01_(i)", 
     "course": "MATH101", 
-    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the series is absolutely convergent, conditionally\nconvergent, or divergent:\n\n\\[\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}\\]", 
+    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the series is absolutely convergent, conditionally\nconvergent, or divergent:\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "We will use the ratio test to prove that this series is absolutely\nconvergent. Each term in the series is\n\n\\[a_n = \\frac{(-2011)^n}{n!}\\]\n\nand so we have that\n\n\\[\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}\\]\n\nWe see then that $\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 < 1$, and so\nthe series converges absolutely.", 
-        "As per the second hint, we note that the series is given by\n\n\\[\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}\\]\n\nSince the function $e^x$ converges absolutely over the whole real line,\nit follows that this series does as well."
+        "We will use the ratio test to prove that this series is absolutely\nconvergent. Each term in the series is\n\n\\begin{align*}a_n = \\frac{(-2011)^n}{n!}\\end{align*}\n\nand so we have that\n\n\\begin{align*}\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}\\end{align*}\n\nWe see then that $\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 < 1$, and so\nthe series converges absolutely.", 
+        "As per the second hint, we note that the series is given by\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}\\end{align*}\n\nSince the function $e^x$ converges absolutely over the whole real line,\nit follows that this series does as well."
     ], 
     "hints": [
         "Try the ratio test.", 
-        "Alternatively, try using Taylor series. Recall that the Taylor series\ncentered at 0 for the function $e^x$ is given by\n\n\\[\\sum_{n=0}^\\infty \\frac{x^n}{n!}\\]"
+        "Alternatively, try using Taylor series. Recall that the Taylor series\ncentered at 0 for the function $e^x$ is given by\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{x^n}{n!}\\end{align*}"
     ]
 }

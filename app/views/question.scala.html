@@ -1,4 +1,4 @@
-@(q: String, stmt: String, hints: List[String], sols: List[String])
+@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String],selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,23 +26,9 @@
         @helper.form(action = routes.QuestionController.questionSubmit()) {
 
         <select name="course">
-            <option value="MATH100">Math 100</option>
-            <option value="MATH101">Math 101</option>
-            <option value="MATH102">Math 102</option>
-            <option value="MATH103">Math 103</option>
-            <option value="MATH104">Math 104</option>
-            <option value="MATH105">Math 105</option>
-            <option value="MATH110">Math 110</option>
-            <option value="MATH152">Math 152</option>
-            <option value="MATH200">Math 200</option>
-            <option value="MATH215">Math 215</option>
-            <option value="MATH220">Math 220</option>
-            <option value="MATH221">Math 221</option>
-            <option value="MATH253">Math 253</option>
-            <option value="MATH257">Math 257</option>
-            <option value="MATH307">Math 307</option>
-            <option value="MATH307">Math 312</option>
-            <option value="MATH307">Math 437</option>
+            @for( course <- courses ){
+                <option value=@course @if(course == selectedCourse){selected}>@course</option>
+            }
         </select>
 
         <select name="term">
@@ -51,16 +37,9 @@
         </select>
 
         <select name="year">
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-            <option value="2009">2009</option>
-            <option value="2008">2008</option>
-            <option value="2007">2007</option>
-            <option value="2006">2006</option>
-            <option value="2005">2005</option>
+            @for( year <- years ){
+                <option value=@year @if(year == selectedYear){selected}>@year</option>
+            }
         </select>
 
         <select name="q_no">

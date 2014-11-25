@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(c)", 
     "course": "MATH110", 
-    "statement": "\\emph{Determine whether each statement is true. If it is, explain why;\nif not, give a counter-example.}\n\nIf $f'$(\\emph{x}) =\n\\emph{g}\\textless{}math\\textgreater{}\\^{}\\{\\textbackslash{}prime\\}\\textless{}/math\\textgreater{}(\\emph{x}),\nthen $f(x)$ = \\emph{g}(\\emph{x}).", 
+    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counter-example.}\n\nIf $f'(x) = g'(x)$, then $f(x) = g(x).$", 
     "year": 2010, 
     "sols": [
-        "The statement is false. If we have two functions that only differ by a\nconstant, when we take the derivative the constant will disappear,\nmaking the derivatives equal. However the original functions were not\nequal to start with.\n\nA simple concrete example would be: suppose $f(x) = x^2 + 2$ and\n$g(x) = x^2$. Even though their derivatives are equal,\n\n\\[\\displaystyle f'(x) = g'(x) = 2x\\]\n\nthe original functions aren't equal.\n\nMore generally, if $f(x) = p(x)$ and $g(x) = p(x) + c$ where $p(x)$ is a\ndifferentiable function, then $f'(x) = g'(x) = p'(x)$ but\n$f(x) \\not= g(x)$."
+        "The statement is false. If we have two functions that only differ by a\nconstant, when we take the derivative the constant will disappear,\nmaking the derivatives equal. However the original functions were not\nequal to start with.\n\nA simple concrete example would be: suppose $f(x) = x^2 + 2$ and\n$g(x) = x^2$. Even though their derivatives are equal,\n\n\\begin{align*}\\displaystyle f'(x) = g'(x) = 2x\\end{align*}\n\nthe original functions aren't equal.\n\nMore generally, if $f(x) = p(x)$ and $g(x) = p(x) + c$ where $p(x)$ is a\ndifferentiable function, then $f'(x) = g'(x) = p'(x)$ but\n$f(x) \\not= g(x)$."
     ], 
     "hints": [
         "Can you think of two functions which are different, but have the same\nderivative? What parts of a function can disappear after taking the\nderivative?"

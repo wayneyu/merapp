@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(a)", 
+    "course": "MATH110", 
+    "statement": "Consider the\nfunction\\begin{align*}f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{align*}\n\n\\textbf{(a)} How many solutions are there to the equation $f(x)=0$?\nJustify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "We first simplify using the exponential rules to get\n$f(x) = e^{x^3 + 2x^2 + x - 3}.$ Then we can solve for $f(x) = 0$.\n\n\\begin{align*}\ne^{x^3 + 2x^2 + x - 3} &= 0\\\\\nx^3 + 2x^2 + x - 3 &= \\ln(0).\\end{align*}\n\nBy taking the natural logarithm of both sides, we get a $\\ln(0)$ on the\nright hand side which is bad since $0$ is not in the domain of the\nnatural logarithm. So we conclude that there cannot be a solution to the\nequation $f(x)=0$. Hence, we have $0$ solutions."
+    ], 
+    "hints": [
+        "Simplifying the enumerator first might help. Remember the rule for the\nproduct of exponentials\\begin{align*}(e^a)(e^b) = e^{a+b}.\\end{align*}"
+    ]
+}

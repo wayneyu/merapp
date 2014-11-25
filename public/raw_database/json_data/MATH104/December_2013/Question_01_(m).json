@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(m)", 
+    "course": "MATH104", 
+    "statement": "Let $f$ be a differentiable function such that $\\displaystyle f(3)=2$\nand $\\displaystyle f'(3)=5.$ If the tangent line to the graph of $f$ at\n$a=3$ is used to approximate $f(x)$, then the approximate solution for\n$x$ to the equation $f(x)=0$ is\n\n(A) $x=0.4$.\n\n(B) $x=0.5$.\n\n(C) $x=2.6$.\n\n(D) $x=3.4$.\n\n(E) $x=5.5$.", 
+    "year": 2013, 
+    "sols": [
+        "The correct answer is (C).\n\nTo see this, notice that the equation of the line using the point slope\nformula is given by\n\n$\\displaystyle \\frac{y-2}{x-3} = f'(3) = 5$.\n\nIsolating gives\n\n$\\displaystyle y-2 = 5(x-3)$\n\nand simplifying one last time\n\n$\\displaystyle y = 5x -13$.\n\nWe are using this line to approximate $\\displaystyle f(x)$. Thus, if we\nset $\\displaystyle y=0$ and solve, we can get an approximation to the\nroot of $\\displaystyle f(x)$. Hence\n\n$\\displaystyle 0 = 5x- 13$ which gives $\\displaystyle x = 13/5 = 2.6$\nand thus the correct answer is (C)."
+    ], 
+    "hints": [
+        "First, we find the equation of the tangent line. Remember that the\nderivative at a point gives you the slope of the tangent line.", 
+        "Once you have the tangent line, use it to approximate f(x). Thus, we\nhave\n\n$\\displaystyle f(x) \\approx y = f'(3)x + b$\n\nwhere we solved \\emph{b} by plugging in the point $\\displaystyle (3,2)$\ninto $\\displaystyle y=mx+b$.\n\nNow set the above equation to 0 and solve."
+    ]
+}

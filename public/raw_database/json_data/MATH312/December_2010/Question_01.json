@@ -5,7 +5,7 @@
     "statement": "Let \\emph{n} be an integer. Show that there does not exist a prime\nnumber $\\displaystyle p \\geq 2$ which divides both\n$\\displaystyle 8n + 3$ and $\\displaystyle 5n + 2.$", 
     "year": 2010, 
     "sols": [
-        "Proceed by contradiction. Suppose that there exist integers \\emph{x} and\n\\emph{y} such that $\\displaystyle px = 8n+3$ and\n$\\displaystyle py = 5n+2$. Multiplying the first by 5 and the second\nequation by 8 gives\n\n\\begin{align*}\n5px &= 40n + 15 \\\\\n8py &= 40n + 16 \\\\\n\\end{align*}\n\nsubtracting the two equations gives $\\displaystyle p(8y-5x) = 1$ and as\n\\emph{p} is prime, it divides the left hand side but not the right hand\nside which is a contradiction. Hence no such prime number can exist."
+        "Proceed by contradiction. Suppose that there exist integers \\emph{x} and\n\\emph{y} such that $\\displaystyle px = 8n+3$ and\n$\\displaystyle py = 5n+2$. Multiplying the first by 5 and the second\nequation by 8 gives\n\n\\begin{align*}\n5px &= 40n + 15 \\\\\n8py &= 40n + 16 \\end{align*}\n\nsubtracting the two equations gives $\\displaystyle p(8y-5x) = 1$ and as\n\\emph{p} is prime, it divides the left hand side but not the right hand\nside which is a contradiction. Hence no such prime number can exist."
     ], 
     "hints": [
         "Proceed by contradiction. Write out what it means for \\emph{p} to divide\nthe given numbers.", 

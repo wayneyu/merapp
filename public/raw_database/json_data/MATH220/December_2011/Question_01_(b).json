@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_01_(b)", 
     "course": "MATH220", 
-    "statement": "Define the sets\n\n\\[X = \\bigcap_{\\alpha \\in I} S_\\alpha\\]\n\nand\n\n\\[Y = \\bigcup_{\\alpha \\in I} S_\\alpha\\]", 
+    "statement": "Define the sets\n\n\\begin{align*}X = \\bigcap_{\\alpha \\in I} S_\\alpha\\end{align*}\n\nand\n\n\\begin{align*}Y = \\bigcup_{\\alpha \\in I} S_\\alpha\\end{align*}", 
     "year": 2011, 
     "sols": [
         "The set \\emph{X} is the \\emph{intersection} of all of the sets\n\\emph{S}\\textsubscript{\u03b1}; that is, \\emph{X} is the set of all \\emph{x}\nsuch that, for all \u03b1 \u2208 \\emph{I} we have \\emph{x} \u2208\n\\emph{S}\\textsubscript{\u03b1}.\n\nThe set \\emph{Y} is the \\emph{union} of all of the sets\n\\emph{S}\\textsubscript{\u03b1}; that is, \\emph{Y} is the set of all \\emph{y}\nsuch that there exists an \u03b1 \u2208 \\emph{I} such that \\emph{y} \u2208\n\\emph{S}\\textsubscript{\u03b1}."

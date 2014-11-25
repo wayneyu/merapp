@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(d)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\nd) On which intervals is f(x) concave up? On which intervals is f(x)\nconcave down?", 
+    "year": 2013, 
+    "sols": [
+        "We proceed as suggested by the hint.\n\nOn the interval $\\displaystyle (-\\infty,-2)$, we see that the second\nderivative at the point $\\displaystyle x=-10$ is given by\n$\\displaystyle f'(-10) = \\frac{8(3(-10)^{2}+4)}{((-10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval.\n\nOn the interval $\\displaystyle (-2,2)$, we see that the second\nderivative at the point $\\displaystyle x=0$ is given by\n$\\displaystyle f'(-1) = \\frac{8(3(0)^{2} + 4)}{((0)^{2}-4)^{3}}  < 0$\nand so the function is concave down on this interval.\n\nOn the interval $\\displaystyle (2,\\infty)$, we see that the second\nderivative at the point $\\displaystyle x=10$ is given by\n$\\displaystyle f'(10) = \\frac{8(3(10)^{2} + 4)}{((10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval."
+    ], 
+    "hints": [
+        "Remember we need to check the sign of the second derivative on the\nintervals between the points found in part (b)."
+    ]
+}

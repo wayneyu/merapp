@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_01_(c)", 
     "course": "MATH215", 
-    "statement": "$y_1(x) = x$ and $y_2(x) = -x$ are both solutions of the first-order\ninitial value problem:\n\n\\[y y' = x, \\;\\; y(0) = 0.\\]\n\nDoes this contradict the existence and uniqueness theorem (`Picard's\ntheorem' or `Cauchy-Lipschitz theorem')? Explain.", 
+    "statement": "$y_1(x) = x$ and $y_2(x) = -x$ are both solutions of the first-order\ninitial value problem:\n\n\\begin{align*}y y' = x, \\;\\; y(0) = 0.\\end{align*}\n\nDoes this contradict the existence and uniqueness theorem (`Picard's\ntheorem' or `Cauchy-Lipschitz theorem')? Explain.", 
     "year": 2013, 
     "sols": [
         "Picard's theorem (at least one version of it) states that initial value\nproblems of the form $\\frac{dy}{dx} = f(x,y), \\quad y(x_0) = y_0$ have a\nunique solution over some interval I containing $x_0$ provided f is\ncontinuous at $(x_0, y_0)$.\n\nIf we rearrange the ODE problem $y \\frac{dy}{dx} = x, \\quad y(0) = 0$,\nwe get $\\frac{dy}{dx} = \\frac{x}{y}, \\quad y(0) = 0$. When $x=0$, $y=0$,\nbut $\\displaystyle \\frac{x}{y}$ is not continuous at (0,0) because it is\nnot defined. Therefore the theorem cannot be used and uniqueness is not\nguaranteed."

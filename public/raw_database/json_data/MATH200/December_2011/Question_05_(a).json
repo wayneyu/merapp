@@ -5,7 +5,7 @@
     "statement": "Consider the iterated integral\n$\\int_{-4}^{0}\\int_{\\sqrt{-y}}^{2}\\cos(x^{3})\\,dx\\,dy.$\n\ni) Draw the region of integration.\n\nii) Evaluate the integral.", 
     "year": 2011, 
     "sols": [
-        "(i) \\includegraphics[width=.5\\textwidth]{Math200Dec11Q5a.png}\n\n(ii) Since $\\displaystyle \\cos(x^3)$ is hard to integrate with respect\nto $\\displaystyle x$, we change the order of integration. Using the\nsketch of (i) and that $\\displaystyle x=\\sqrt{-y}$ is equivalent to\n$\\displaystyle y = -x^2$ (and $\\displaystyle x\\geq 0$) we find that\n\n\\begin{align*}\n \\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&= \\frac13\\sin(8)\n\\end{align*}"
+        "(i) \\includegraphics[width=.5\\textwidth]{Math200Dec11Q5a.png}\n\n(ii) Since $\\displaystyle \\cos(x^3)$ is hard to integrate with respect\nto $\\displaystyle x$, we change the order of integration. Using the\nsketch of (i) and that $\\displaystyle x=\\sqrt{-y}$ is equivalent to\n$\\displaystyle y = -x^2$ (and $\\displaystyle x\\geq 0$) we find that\n\n\\begin{align*}\n \\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&= \\frac13\\sin(8)\\end{align*}"
     ], 
     "hints": [
         "For evaluating the integral, change the order of integration."

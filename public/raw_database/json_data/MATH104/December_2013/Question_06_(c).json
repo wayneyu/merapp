@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_06_(c)", 
+    "course": "MATH104", 
+    "statement": "Is your approximation for $\\sqrt[3]{7}$ too large or too small? Explain.\nUse the information together with the error bound you found in\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_06_(b)}{part\n(b)} to construct the smallest interval you can guarantee contains the\ntrue value of $\\sqrt[3]{7}.$", 
+    "year": 2013, 
+    "sols": [
+        "Since the double derivative on (0,\\textbackslash{}infty) is negative,\nthe function is concave down there. Thus, the tangent line is an over\nestimate of the function. Hence, our true value must lie in the interval\n\n$\\displaystyle [23/12 - 2\\cdot7^{-5/3}/9,23/12]$"
+    ], 
+    "hints": []
+}

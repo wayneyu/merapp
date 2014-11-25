@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(e)", 
     "course": "MATH110", 
-    "statement": "Let\n\n\\[\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\]\n\nDetermine where $f$ is concave up and where it is concave down.", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\end{align*}\n\nDetermine where $f$ is concave up and where it is concave down.", 
     "year": 2011, 
     "sols": [
-        "We find the second derivative of $f$ by using the quotient rule on the\nfirst derivative:\n\n\\begin{align*}\nf''(x) &= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \n\\end{align*}\n\nWe find possible inflection points by setting $\\displaystyle f''(x)$\nequal to zero and also by determining where it is undefined. In this\ncase, $\\displaystyle f''$ is never zero and is undefined when\n$x = -2, 2$. Because these points are not included in our domain,\n\\emph{$f$} has no inflection points, i.e. \\emph{$f$} does not change its\nconcavity. Therefore, it suffices to find the concavity at any point in\nthe domain, e.g. at \\emph{x = 0}:\n\n\\[f''(0) = \\frac{-8}{16} < 0\\]\n\nand hence \\emph{$f$} is concave down on its whole domain."
+        "We find the second derivative of $f$ by using the quotient rule on the\nfirst derivative:\n\n\\begin{align*}\nf''(x) &= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \\end{align*}\n\nWe find possible inflection points by setting $\\displaystyle f''(x)$\nequal to zero and also by determining where it is undefined. In this\ncase, $\\displaystyle f''$ is never zero and is undefined when\n$x = -2, 2$. Because these points are not included in our domain,\n\\emph{$f$} has no inflection points, i.e. \\emph{$f$} does not change its\nconcavity. Therefore, it suffices to find the concavity at any point in\nthe domain, e.g. at \\emph{x = 0}:\n\n\\begin{align*}f''(0) = \\frac{-8}{16} < 0\\end{align*}\n\nand hence \\emph{$f$} is concave down on its whole domain."
     ], 
     "hints": [
         "A function's concavity is related to the sign of its second derivative."

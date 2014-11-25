@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(b)", 
     "course": "MATH105", 
-    "statement": "You are given the formula for the sum of a geometric series, namely:\n\n\\[1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| < 1.\\]\n\nUse this fact to evaluate the series in part\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_1_(a)}{(a)}.", 
+    "statement": "You are given the formula for the sum of a geometric series, namely:\n\n\\begin{align*}1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| < 1.\\end{align*}\n\nUse this fact to evaluate the series in part\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_1_(a)}{(a)}.", 
     "year": 2012, 
     "sols": [
         "The trick here is to recognize the series given as a geometric series.\n\nThe question provides the formula\n$1 + r + r^2 + ... = \\sum_{k=0}^{\\infty} r^k = \\frac{1}{1-r}$ for\n$|r| < 1.$\n\nEssentially, would like to evaluate the series by finding a suitable r\nso that this formula can be applied.\n\nLet's first re-express\n$\\sum_{k=0}^{\\infty} (-1)^k 2^{k+1} x^k =\\sum_{k=0}^{\\infty} 2 (-1)^k 2^k x^k$\nas $2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k$ so that all terms in the\nsummation have an exponent of k and the indexing starts at 0.\n\nNow we note that\n$2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k = 2 \\sum_{k=0}^{\\infty} [(-1)(2)(x)]^k = 2 \\sum_{k=0}^{\\infty} (-2x)^k$.\n\nThe formula provided now works with $r = -2x$. The series sums to\n$2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.$"
     ], 
     "hints": [
-        "Note that\n\n\\[1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\\] Try to find a suitable\nvalue for \\emph{r} in our case."
+        "Note that\n\n\\begin{align*}1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\\end{align*} Try to find a suitable\nvalue for \\emph{r} in our case."
     ]
 }

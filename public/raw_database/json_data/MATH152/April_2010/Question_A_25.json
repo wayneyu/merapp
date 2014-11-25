@@ -5,9 +5,9 @@
     "statement": "Evaluate $(1+i)^{10}$ in the form a+ib. Hint write 1+i in polar form.", 
     "year": 2010, 
     "sols": [
-        "Our complex number is z=1+i. Therefore,\n\n\\[\\displaystyle{}|z|=\\sqrt{1+1}=\\sqrt{2}\\]\n\nand\n\n\\[\\text{Arg}(z)=\\arctan\\left(\\frac{1}{1}\\right)=\\arctan(1)=\\frac{\\pi}{4}\\]\n\nsince the vector 1+i is in the first quadrant. Therefore,\n\n\\[1+i=\\sqrt{2}\\exp\\left(\\frac{\\pi}{4}i\\right)\\]\n\nand\n\n\\[(1+i)^{10}=2^{10/2}\\exp\\left(\\frac{10\\pi}{4}i\\right)=32\\exp\\left(\\frac{5\\pi}{2}i\\right).\\]\n\nNow\n\n\\[\\exp\\left(\\frac{5\\pi}{2}i\\right)=\\cos\\left(\\frac{5\\pi}{2}\\right)+i\\sin\\left(\\frac{5\\pi}{2}\\right)=i\\]\n\nand therefore\n\n\\[\\displaystyle{}(1+i)^{10}=32i.\\]"
+        "Our complex number is z=1+i. Therefore,\n\n\\begin{align*}\\displaystyle{}|z|=\\sqrt{1+1}=\\sqrt{2}\\end{align*}\n\nand\n\n\\begin{align*}\\text{Arg}(z)=\\arctan\\left(\\frac{1}{1}\\right)=\\arctan(1)=\\frac{\\pi}{4}\\end{align*}\n\nsince the vector 1+i is in the first quadrant. Therefore,\n\n\\begin{align*}1+i=\\sqrt{2}\\exp\\left(\\frac{\\pi}{4}i\\right)\\end{align*}\n\nand\n\n\\begin{align*}(1+i)^{10}=2^{10/2}\\exp\\left(\\frac{10\\pi}{4}i\\right)=32\\exp\\left(\\frac{5\\pi}{2}i\\right).\\end{align*}\n\nNow\n\n\\begin{align*}\\exp\\left(\\frac{5\\pi}{2}i\\right)=\\cos\\left(\\frac{5\\pi}{2}\\right)+i\\sin\\left(\\frac{5\\pi}{2}\\right)=i\\end{align*}\n\nand therefore\n\n\\begin{align*}\\displaystyle{}(1+i)^{10}=32i.\\end{align*}"
     ], 
     "hints": [
-        "Recall that polar form for a complex number \\emph{z} is\n\n\\[\\displaystyle z=R\\,\\exp(i\\theta)\\]\n\nwhere \\emph{R} is the modulus of \\emph{z} and $\\theta$ is the argument."
+        "Recall that polar form for a complex number \\emph{z} is\n\n\\begin{align*}\\displaystyle z=R\\,\\exp(i\\theta)\\end{align*}\n\nwhere \\emph{R} is the modulus of \\emph{z} and $\\theta$ is the argument."
     ]
 }

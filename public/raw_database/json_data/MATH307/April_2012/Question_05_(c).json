@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_05_(c)", 
     "course": "MATH307", 
-    "statement": "You are given a set of 100 data points \\emph{(x\\textsubscript{n},\ny\\textsubscript{n})} with \\emph{x\\textsubscript{n}} increasing.\n\n\\textbf{(c)} Suppose instead that you choose to make a least square fit\nof the data points to a quadratic polynomial\n\n\\[\\displaystyle\nf(x) = c_0x^2 + c_1x + c_2.\\]\n\nWrite down the MATLAB/Octave command you would use to calculate the\ncoefficients, plot the original data points and plot the quadratic fit\n(you may assume that vectors $X = [x_1, x_2, \\dots, x_N]^T$ and\n$Y = [y_1, y_2, \\dots, y_N]^T$ have already been defined).", 
+    "statement": "You are given a set of 100 data points \\emph{(x\\textsubscript{n},\ny\\textsubscript{n})} with \\emph{x\\textsubscript{n}} increasing.\n\n\\textbf{(c)} Suppose instead that you choose to make a least square fit\nof the data points to a quadratic polynomial\n\n\\begin{align*}\\displaystyle\nf(x) = c_0x^2 + c_1x + c_2.\\end{align*}\n\nWrite down the MATLAB/Octave command you would use to calculate the\ncoefficients, plot the original data points and plot the quadratic fit\n(you may assume that vectors $X = [x_1, x_2, \\dots, x_N]^T$ and\n$Y = [y_1, y_2, \\dots, y_N]^T$ have already been defined).", 
     "year": 2012, 
     "sols": [
         "A= ones(100,1)\n\nfor n=1:99\n\nA={[}X.\\^{}n A{]};\n\nend\n\na= A'*A\\textbackslash{}A'*Y\n\nplot(X,Y,'or')\n\nhold on\n\nXX=linspace(X(1),X(100),1000);\n\nplot(XX,a(1)*XX.\\^{}2+a(2)*XX=C3*ones(1,length(XX)))"

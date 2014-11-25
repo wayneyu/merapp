@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_07_(b)", 
     "course": "MATH220", 
-    "statement": "\\emph{In this question, correct answers without proofs are sufficient.}\n\nFind a function\n\n\\[g: \\mathbb{Z} \\to \\mathbb{Z}\\] which is surjective but not injective.", 
+    "statement": "\\emph{In this question, correct answers without proofs are sufficient.}\n\nFind a function\n\n\\begin{align*}g: \\mathbb{Z} \\to \\mathbb{Z}\\end{align*} which is surjective but not injective.", 
     "year": 2011, 
     "sols": [
         "If we divide all the even integers by two, we obtain all the integers.\nTo turn this into a map, we just need to say what we'll do with the odd\nintegers (anything would work, for example mapping all the odd integers\nto the number 4 or as we present below, map them to the rounded half).\n\n\\begin{align*}\ng: \\mathbb{Z} &\\to \\mathbb{Z}\\\\\nn &\\mapsto \\begin{cases}\n\\,\\,\\,\\frac{n}{2} & \\text{if } n \\text{ is even;}\\\\\n\\frac{n-1}{2} & \\text{if } n \\text{ is odd.} \n\\end{cases}\\end{align*}\n\n\\textbf{Proof:} \\emph{recall that this question didn't ask for a proof,\njust the answer. Since the proofs are of a difficulty that you are\nexpected to be able to handle in this course, we present them here for\ncompleteness.}\n\nThis function is clearly surjective since any integer \\emph{n} is the\nimage of the integer 2\\emph{n}. Now the function is not injective since\n\\emph{g(3) = g(2) = 1} (or more generally since g(2\\emph{k}+1) =\ng(2\\emph{k}) = \\emph{k} for any integer \\emph{k})."

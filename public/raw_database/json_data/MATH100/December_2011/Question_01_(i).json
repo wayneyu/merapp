@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(i)", 
     "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind the derivative of\n\n\\[\\displaystyle\ny=\\sin^{-1}(3x+1)\\] {[}Note: Another notation for\nsin\\textsuperscript{-1} is arcsin{]}", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind the derivative of\n\n\\begin{align*}\\displaystyle\ny=\\sin^{-1}(3x+1)\\end{align*} {[}Note: Another notation for\nsin\\textsuperscript{-1} is arcsin{]}", 
     "year": 2011, 
     "sols": [
-        "Using the fact that\n\n\\[\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\\] and the chain\nrule, we get\n\n\\begin{align*}\n\\frac{d}{dx} y & = \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n & = \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n & = \\frac{1}{\\sqrt{1-(9x^2+6x+1)}} \\cdot 3  \\\\\n & = \\frac{3}{\\sqrt{-9x^2 - 6x}}.\n\\end{align*}"
+        "Using the fact that\n\n\\begin{align*}\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\\end{align*} and the chain\nrule, we get\n\n\\begin{align*}\n\\frac{d}{dx} y &= \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n &= \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n &= \\frac{1}{\\sqrt{1-(9x^2+6x+1)}} \\cdot 3  \\\\\n &= \\frac{3}{\\sqrt{-9x^2 - 6x}}.\\end{align*}"
     ], 
     "hints": [
         "What is the derivative of $\\sin^{-1}(x)$?"

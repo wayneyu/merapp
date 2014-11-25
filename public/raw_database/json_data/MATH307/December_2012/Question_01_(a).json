@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(a)", 
     "course": "MATH307", 
-    "statement": "In this question we will work with polynomials of degree 3 written\n\n\\[\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\]\n\n\\textbf{(a)} The coefficient vector $\\mathbf{a} = [a_1,a_2,a_3,a_4]^T$\nsatisfies an equation of the form \\emph{A\\textbf{a}=\\textbf{0}} when the\nslopes of \\emph{p(x)} at \\emph{x = 0} and \\emph{x = 2} are zero. Write\ndown the matrix \\emph{A}.", 
+    "statement": "In this question we will work with polynomials of degree 3 written\n\n\\begin{align*}\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\end{align*}\n\n\\textbf{(a)} The coefficient vector $\\mathbf{a} = [a_1,a_2,a_3,a_4]^T$\nsatisfies an equation of the form \\emph{A\\textbf{a}=\\textbf{0}} when the\nslopes of \\emph{p(x)} at \\emph{x = 0} and \\emph{x = 2} are zero. Write\ndown the matrix \\emph{A}.", 
     "year": 2012, 
     "sols": [
-        "Slopes of \\emph{p(x) = 0} at $x=0$, $x=2$ implies $p'(0)=p'(2)=0$\n\n\\[\\displaystyle p'(x)=3a_1x^2+2a_2x+a_3\\]\n\nWhen $\\displaystyle p'(0)=0,$ $\\displaystyle {}3a_{1}(0)^2+2a_2(0)+a_3=0$\n\nWhen $\\displaystyle p'(2)=0,$\n$\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0$\n\nHence, matrix \\emph{A} is\n\n\\[A=\\begin{bmatrix}\n12&4&1&0 \\\\ \n0& 0&1&0\n\\end{bmatrix}\\]"
+        "Slopes of \\emph{p(x) = 0} at $x=0$, $x=2$ implies $p'(0)=p'(2)=0$\n\n\\begin{align*}\\displaystyle p'(x)=3a_1x^2+2a_2x+a_3\\end{align*}\n\nWhen $\\displaystyle p'(0)=0,$ $\\displaystyle {}3a_{1}(0)^2+2a_2(0)+a_3=0$\n\nWhen $\\displaystyle p'(2)=0,$\n$\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0$\n\nHence, matrix \\emph{A} is\n\n\\begin{align*}A=\\begin{bmatrix}\n12&4&1&0 \\\\ \n0& 0&1&0\n\\end{bmatrix}\\end{align*}"
     ], 
     "hints": [
         "Recall that we can compute the slope at a point using the derivative.", 

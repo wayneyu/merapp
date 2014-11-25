@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH105", 
-    "statement": "Find the radius of convergence of the series\n\n\\[\\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k\\]", 
+    "statement": "Find the radius of convergence of the series\n\n\\begin{align*}\\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k\\end{align*}", 
     "year": 2012, 
     "sols": [
         "We can apply the ratio test here. Let $a_k = (-1)^k 2^{k+1} x^k,$ so\nthat the series converges absolutely if\n\n$\\lim_{k \\rightarrow \\infty} |\\frac{a_{k+1}}{a_k}| < 1.$\n\nIn this case, we require\n\n$\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = |(-1)(2)(x)| = 2|x| < 1$\nand hence absolute convergence is obtained for $|x| < 1/2.$\n\nThe radius of convergence is 1/2."

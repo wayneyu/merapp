@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(a)", 
     "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nEvaluate\n\n\\[\\lim_{t \\to -2} \\frac{2t^2+t-6}{t^2-4}\\] or determine that the limit\ndoes not exist.", 
+    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nEvaluate\n\n\\begin{align*}\\lim_{t \\to -2} \\frac{2t^2+t-6}{t^2-4}\\end{align*} or determine that the limit\ndoes not exist.", 
     "year": 2011, 
     "sols": [
-        "When we evaluate the function at $t=-2$ we obtain 0/0. Since this is a\nrational function, it means that we can factor $t+2$ in each of the\ndenominator and numerator:\n\n\\[\\displaystyle\n2t^2+t-6 = (t+2)(2t-3)\\] and\n\n\\[\\displaystyle\nt^2-4 = (t+2)(t-2)\\] Hence\n\n\\begin{align*}\n\\lim_{t \\to -2}\\frac{2t^2+t-6}{t^2-4} &= \\lim_{t \\to -2}\\frac{(t+2)(2t-3)}{(t+2)(t-2)}\\\\\n&= \\lim_{t \\to -2}\\frac{(2t-3)}{(t-2)}\\\\\n= \\frac{2(-2)-3}{(-2)-2}\\\\\n= \\frac{7}{4}\n\\end{align*}"
+        "When we evaluate the function at $t=-2$ we obtain 0/0. Since this is a\nrational function, it means that we can factor $t+2$ in each of the\ndenominator and numerator:\n\n\\begin{align*}\\displaystyle\n2t^2+t-6 = (t+2)(2t-3)\\end{align*} and\n\n\\begin{align*}\\displaystyle\nt^2-4 = (t+2)(t-2)\\end{align*} Hence\n\n\\begin{align*}\n\\lim_{t \\to -2}\\frac{2t^2+t-6}{t^2-4} &= \\lim_{t \\to -2}\\frac{(t+2)(2t-3)}{(t+2)(t-2)}\\\\\n&= \\lim_{t \\to -2}\\frac{(2t-3)}{(t-2)}\\\\\n&= \\frac{2(-2)-3}{(-2)-2}\\\\\n&= \\frac{7}{4}\\end{align*}"
     ], 
     "hints": [
         "What happens if you simply plug in -2 in the function? What does it\nmean? What can you do about that?", 

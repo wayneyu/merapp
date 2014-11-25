@@ -1,0 +1,11 @@
+{
+    "term": "December", 
+    "question": "Question_01_(j)", 
+    "course": "MATH104", 
+    "statement": "If a function $f$ is continuous for all $x$ and if $f$ has a local\nmaximum at (-1, 4) and a local minimum at (3, -2), which of the\nfollowing statements \\emph{must} be true?\n\n(A) The graph of $f$ has an inflection point somewhere between $x=-1$\nand $x=3.$\n\n(B) $f'(-1) = 0.$\n\n(C) The graph of $f$ has a horizontal asymptote.\n\n(D) The graph of $f$ has a horizontal tangent line at $x=3.$\n\n(E) The graph of $f$ intersects both axes.", 
+    "year": 2013, 
+    "sols": [
+        "The correct answer is (E).\n\nTo show that E is correct, we can use the intermediate value theorem\ntwice. In order for \\emph{f} to be a continuous function that connects\n$\\displaystyle (-1,4)$ and $\\displaystyle (3,-2)$, we know that it must\nhave some value at $\\displaystyle x=0$ by the fact that the function is\ncontinuous for all real values of \\emph{x}. Thus, it crosses the\n\\emph{y} axis. As these two points live both above and below the\n\\emph{x} axis, we see that $\\displaystyle f(-1) \\geq 0 \\geq f(3)$ and\nsince \\emph{f} is continuous, the intermediate value theorem states that\nthere is some value \\emph{c} in the interval $\\displaystyle (-1,3)$ such\nthat $\\displaystyle f(c) = 0$. Thus the answer is (E).\n\n\\emph{Note.} For the curious minded, the graph below gives a counter\nexample to all of the other 4 conditions.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M104_Dec2013_Q1j.png}\n\\end{description}"
+    ], 
+    "hints": []
+}

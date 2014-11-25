@@ -26,6 +26,10 @@ upload_mongo: update_mongo_locally
 	mongodump --db merdb --collection questions --out ~/tmp
 	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/
 
+## upload_mongo_locally_only: updates local mongo db WITHOUT refreshing questions locally
+update_mongo_locally_only: import2mongo.sh
+	./import2mongo.sh
+
 ## update_mongo_locally: updates local mongo db from json files
 update_mongo_locally: import2mongo.sh update_json
 	./import2mongo.sh

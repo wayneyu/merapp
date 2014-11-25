@@ -5,7 +5,7 @@
     "statement": "Evaluate $\\int_{e}^{\\infty}\\frac{1}{x(\\ln x)^{2}} \\, dx$.", 
     "year": 2007, 
     "sols": [
-        "First, we remove the improper integral to get\n\n$\\int_{e}^{\\infty}\\frac{1}{x(\\ln x)^{2}} \\, dx = \\lim_{b \\to \\infty} \\int_{e}^{b}\\frac{1}{x(\\ln x)^{2}}$.\n\nThen we proceed by substitution. Let $u = \\ln x$ so that\n$du = \\tfrac{1}{x} dx$. The endpoints become $u(e) = \\ln e = 1$ and\n$u(b) = \\ln b$. Hence, we have\n\n\\begin{align*}\n\\int_{e}^{\\infty}\\frac{1}{x(\\ln x)^{2}} \\, dx &= \\lim_{b \\to \\infty} \\int_{e}^{b}\\frac{1}{x(\\ln x)^{2}}\\, dx\\\\\n&= \\lim_{b \\to \\infty} \\int_{1}^{\\ln b}\\frac{1}{(u)^{2}}\\,du \\\\\n&= \\lim_{b \\to \\infty} -u^{-1}|_{1}^{\\ln b} \\\\\n&= \\lim_{b \\to \\infty} -\\frac{1}{\\ln b} + \\frac{1}{1}\\\\\n&= 1\n\\end{align*}\n\ncompleting the question."
+        "First, we remove the improper integral to get\n\n$\\int_{e}^{\\infty}\\frac{1}{x(\\ln x)^{2}} \\, dx = \\lim_{b \\to \\infty} \\int_{e}^{b}\\frac{1}{x(\\ln x)^{2}}$.\n\nThen we proceed by substitution. Let $u = \\ln x$ so that\n$du = \\tfrac{1}{x} dx$. The endpoints become $u(e) = \\ln e = 1$ and\n$u(b) = \\ln b$. Hence, we have\n\n\\begin{align*}\n\\int_{e}^{\\infty}\\frac{1}{x(\\ln x)^{2}} \\, dx &= \\lim_{b \\to \\infty} \\int_{e}^{b}\\frac{1}{x(\\ln x)^{2}}\\, dx\\\\\n&= \\lim_{b \\to \\infty} \\int_{1}^{\\ln b}\\frac{1}{(u)^{2}}\\,du \\\\\n&= \\lim_{b \\to \\infty} -u^{-1}|_{1}^{\\ln b} \\\\\n&= \\lim_{b \\to \\infty} -\\frac{1}{\\ln b} + \\frac{1}{1}\\\\\n&= 1\\end{align*}\n\ncompleting the question."
     ], 
     "hints": [
         "Try a substitution.", 

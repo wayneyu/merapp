@@ -5,7 +5,7 @@
     "statement": "Let $f(x)$ = \\emph{x}\\textsuperscript{2} - 6\\emph{x} and let\n\\emph{P} be the point (4, -12).\n\nb) Find the slope of the line between \\emph{P} and a point (\\emph{a},\n\\emph{a}\\textsuperscript{2} - 6\\emph{a}) on the curve \\emph{y} =\n$f(x)$.", 
     "year": 2011, 
     "sols": [
-        "We have two points:\n\n\\[\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\\]\n\nSo the slope, \\emph{m}, of the line going through these two points is\nthe ratio of rise (change in the y-coordinates) over run (change in the\nx-coordinates):\n\n\\[m = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\\]"
+        "We have two points:\n\n\\begin{align*}\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\\end{align*}\n\nSo the slope, \\emph{m}, of the line going through these two points is\nthe ratio of rise (change in the y-coordinates) over run (change in the\nx-coordinates):\n\n\\begin{align*}m = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\\end{align*}"
     ], 
     "hints": [
         "The slope of a line is the ratio of rise over run."

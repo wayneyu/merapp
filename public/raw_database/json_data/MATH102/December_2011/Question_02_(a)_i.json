@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_02_(a)_i", 
     "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\[\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2x^4-3x^3+5}{2x^3-5x^4}\\]", 
+    "statement": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\begin{align*}\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2x^4-3x^3+5}{2x^3-5x^4}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "\\[\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2x^4-3x^3+5}{2x^3-5x^4}\\]\n\nTo evaluate this limit, first we divide both the numerator and\ndenominator by the largest power of $x$ that appears in this fraction.\nIn this case, $x^{4}$ is the largest power.\n\n\\[\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2-3/x+5/x^{4}}{2/x-5}.\\]\n\nNow all that's left to finish the problem, is calculating the limits\nseparately:\n\n\\begin{align*}\n\\displaystyle A &= \\lim_{x \\to \\infty}\\frac{2-3/x+5/x^{4}}{2/x-5} \\\\\n&= \\frac{\\lim_{x \\to \\infty} 2-3/x+5/x^{4}}{\\lim_{x \\to \\infty} 2/x-5}\n&= \\frac{2}{-5}\n\\end{align*}\n\nTherefore,\n\n\\[\\displaystyle {\\color{blue}A =-\\frac{2}{5}}.\\]"
+        "\\begin{align*}\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2x^4-3x^3+5}{2x^3-5x^4}\\end{align*}\n\nTo evaluate this limit, first we divide both the numerator and\ndenominator by the largest power of $x$ that appears in this fraction.\nIn this case, $x^{4}$ is the largest power.\n\n\\begin{align*}\\displaystyle A= \\lim_{x \\to \\infty}\\frac{2-3/x+5/x^{4}}{2/x-5}.\\end{align*}\n\nNow all that's left to finish the problem, is calculating the limits\nseparately:\n\n\\begin{align*}\n\\displaystyle A &= \\lim_{x \\to \\infty}\\frac{2-3/x+5/x^{4}}{2/x-5} \\\\\n&= \\frac{\\lim_{x \\to \\infty} 2-3/x+5/x^{4}}{\\lim_{x \\to \\infty} 2/x-5}\n&= \\frac{2}{-5}\\end{align*}\n\nTherefore,\n\n\\begin{align*}\\displaystyle {\\color{blue}A =-\\frac{2}{5}}.\\end{align*}"
     ], 
     "hints": [
         "What is the dominating term in the numerator and the denominator?"

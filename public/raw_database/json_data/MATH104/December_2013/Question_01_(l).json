@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(l)", 
+    "course": "MATH104", 
+    "statement": "If $\\lim_{x\\to a}f(x) = L$, where $L$ is a real number, which of the\nfollowing must be true?\n\n(A) $f'(a)$ exists.\n\n(B) $f(x)$ is continuous at $x=a.$\n\n(C) $f(x)$ is defined at $x=a.$\n\n(D) $f(a)=L.$\n\n(E) None of the above.", 
+    "year": 2013, 
+    "sols": [
+        "The answer is (E).\n\nNone of these have to be true! The following is a counter example\n\n\\begin{itemize}\n\\item\n  \\begin{itemize}\n  \\itemsep1pt\\parskip0pt\\parsep0pt\n  \\item\n    Insert graph with a limit at L but no value defined there.\n  \\end{itemize}\n\\end{itemize}"
+    ], 
+    "hints": [
+        "Remember that limits only tell you information about the values of the\nfunction \\textbf{near} the value at \\emph{a}. In a vacuum, limits don't\nsay much about the actual value at \\emph{a}."
+    ]
+}

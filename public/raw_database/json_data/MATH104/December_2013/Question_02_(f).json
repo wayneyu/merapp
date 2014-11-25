@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(f)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\nf) Find any horizontal and vertical asymptotes of the function f(x) and\nwrite their equations.", 
+    "year": 2013, 
+    "sols": [
+        "Our function should have asymptotes at $\\displaystyle x=\\pm2$. Let's\ncheck by taking the one sided limits. To evaluate these, plug in a value\nthat is close tot eh limiting value on the correct side and simplifying.\n\n$\\displaystyle \\lim_{x \\to -2^{-}} \\frac{x^{2}}{x^{2}-4} = \\infty$ valid\nsince plugging in a number to the left of -2 will yield a very small\npositive denominator.\n\nComtinuing on this path,\n\n$\\displaystyle \\lim_{x \\to -2^{+}} \\frac{x^{2}}{x^{2}-4} = -\\infty$\n\n$\\displaystyle \\lim_{x \\to 2^{-}} \\frac{x^{2}}{x^{2}-4} = -\\infty$\n\n$\\displaystyle \\lim_{x \\to 2^{+}} \\frac{x^{2}}{x^{2}-4} = \\infty$\n\nThus there are vertical asymptotes at $\\displaystyle \\pm 2$.\n\nFor the horizontal asymptotes, we check the limit of the function going\nto positive and negative infinity. We can do this by factoring out the\nlargest power of the numerator and the denominator.\n\n$\\displaystyle \\lim_{x \\to -\\infty} \\frac{x^{2}}{x^{2}-4} = \\lim_{x \\to -\\infty}\\frac{x^{2}}{x^{2}(1-4/x^{2})} = \\lim_{x \\to -\\infty}\\frac{1}{1-4/x^{2}} = 1$\n\n$\\displaystyle \\lim_{x \\to \\infty} \\frac{x^{2}}{x^{2}-4} = \\lim_{x \\to -\\infty}\\frac{x^{2}}{x^{2}(1-4/x^{2})} = \\lim_{x \\to -\\infty}\\frac{1}{1-4/x^{2}} = 1$\n\nThis tells us that we have horizontal asymptotes in both directions of\n1."
+    ], 
+    "hints": [
+        "The function f(x) has a vertical asymptote at x = a if\n\n\\begin{align*}\\lim_{x \\rightarrow a^{+}} f(x) = \\infty\\,\\,\\text{or}\\,-\\infty, \\quad \\text{and/or}\\quad \\lim_{x \\rightarrow a^{-}} f(x) = \\infty\\,\\,\\text{or}\\,-\\infty.\\end{align*}\n\nThe function f(x) has a horizontal asymptote at y = b if\n\n\\begin{align*}\\lim_{x \\rightarrow +\\infty} f(x) = b \\quad \\text{and/or} \\quad \\lim_{x \\rightarrow -\\infty} f(x) = b.\\end{align*}"
+    ]
+}

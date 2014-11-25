@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH104", 
+    "statement": "Find the value of $\\displaystyle a$ for which $\\displaystyle f(x)$ is\ncontinuous at $\\displaystyle x = -1$, where\n\n\\begin{align*}f(x) = \\begin{cases} \n\\frac{x^2 + 3x + 2}{x + 1} & \\text{if}\\,\\, x \\neq -1, \\\\ \na & \\text{if}\\,\\, x = -1.\n\\end{cases}\\end{align*}", 
+    "year": 2013, 
+    "sols": [
+        "Following the hint, we need to solve\n\n$\\displaystyle a = f(-1) = \\lim_{x \\to -1}f(x) = \\lim_{x \\to -1}\\frac{x^{2}+3x+2}{x+1}$.\n\nSolving the limit yields\n\n$\\displaystyle \\lim_{x \\to -1}\\frac{x^{2}+3x+2}{x+1} = \\lim_{x \\to -1}\\frac{(x+1)(x+2)}{x+1} = \\lim_{x \\to -1}(x+2) = 1$.\n\nand so $\\displaystyle a = 1$."
+    ], 
+    "hints": [
+        "Remember that a function is continuous at $x = -1$ if\n\n$\\displaystyle \\lim_{x \\to -1}f(x) = f(-1)$\n\nIn our case, we have that $\\displaystyle f(-1) = a$\n\nWe need to find\n\n$\\displaystyle \\lim_{x \\to -1}f(x)$\n\nWhich amounts to finding\n\n$\\displaystyle \\lim_{x \\to -1}f(x) = \\lim_{x \\to -1}\\frac{x^{2}+3x+2}{x+1}$."
+    ]
+}

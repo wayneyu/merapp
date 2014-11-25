@@ -5,7 +5,7 @@
     "statement": "Write the matrix A that would result from the following lines of MATLAB\ncode:\n\n A = zeros(2,3);\\\\A(1,1) = 2;\\\\A(2,3) = 3;", 
     "year": 2010, 
     "sols": [
-        "These commands have the following effects, in sequence:\n\n\"A = zeros(2,3);\" creates a matrix of zeroes having 2 rows and 3\ncolumns. \"A(1,1) = 2;\" changes the value in the first row, first column\nentry to 2. \"A(2,3) = 3;\" changes the value in the second row, third\ncolumn entry to 3.\n\nThe result is the following matrix, \"A\".\n\n\\[A = \\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 0 & 0 & 3\\end{array}\\right]\\]"
+        "These commands have the following effects, in sequence:\n\n\"A = zeros(2,3);\" creates a matrix of zeroes having 2 rows and 3\ncolumns. \"A(1,1) = 2;\" changes the value in the first row, first column\nentry to 2. \"A(2,3) = 3;\" changes the value in the second row, third\ncolumn entry to 3.\n\nThe result is the following matrix, \"A\".\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 0 & 0 & 3\\end{array}\\right]\\end{align*}"
     ], 
     "hints": [
         "What is the dimension of \\emph{A}? All entries of \\emph{A} are initially\nzero. Which entries are then changed in line 2 and 3?"

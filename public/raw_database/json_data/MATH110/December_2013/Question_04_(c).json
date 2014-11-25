@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(c)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=\\sqrt{x}-1$ and $g(x)=(f\\circ f)(x)$. Find the derivative of\n$g(x)$.", 
+    "year": 2013, 
+    "sols": [
+        "We want to apply the chain rule. Set $u = \\sqrt{x}-1$.\n\n\\begin{align*}\ng(u) &= \\sqrt{u}-1 & g'(u) &= \\frac{1}{2\\sqrt{u}}\\\\\nu(x) &= \\sqrt{x}-1 & u'(x) &= \\frac{1}{2\\sqrt{x}}\\end{align*}\n\nCombining, we get:\n\n\\begin{align*}\ng'(x) &= \\frac{1}{2\\sqrt{x}} \\cdot \\frac{1}{2\\sqrt{\\sqrt{x}-1}}\\\\\n&= \\frac{1}{4\\sqrt{x}\\cdot\\sqrt{\\sqrt{x}-1}}\\\\\n&= \\frac{1}{4\\sqrt{x \\left(\\sqrt{x}-1\\right)}}\\end{align*}"
+    ], 
+    "hints": [
+        "Recall that\n\n$\\displaystyle (f \\circ f)(x) = \\sqrt{\\sqrt{x}-1} -1$.\n\nThis is a composition of functions, namely $\\displaystyle \\sqrt{x}$ and\n$\\displaystyle \\sqrt{x}-1$ (and then the -1 term is easily\ndifferentiated). This can be differentiated using the chain rule."
+    ]
+}

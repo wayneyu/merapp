@@ -5,7 +5,7 @@
     "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nFind the slope of the tangent line to the curve\n$\\displaystyle y + x\\cos y = \\cos x$ at the point $(0,1)$.", 
     "year": 2012, 
     "sols": [
-        "Implicitly differentiating gives\n\n\\begin{align*}\ny' + \\cos y + x\\tfrac{d}{dx}(\\cos y) &= -\\sin x \\\\\ny' + \\cos y + x(-\\sin y)(y')&= -\\sin x\n\\end{align*}\n\nPlugging in $(x,y) = (0,1)$ gives\n\n\\begin{align*}\ny' + \\cos(1) + 0(-\\sin(1))(y')&= -\\sin (0) \\\\\ny' + \\cos(1) = 0\\\\\ny' = - \\cos(1)\n\\end{align*}\n\ncompleting the question."
+        "Implicitly differentiating gives\n\n\\begin{align*}\ny' + \\cos y + x\\tfrac{d}{dx}(\\cos y) &= -\\sin x \\\\\ny' + \\cos y + x(-\\sin y)(y')&= -\\sin x\\end{align*}\n\nPlugging in $(x,y) = (0,1)$ gives\n\n\\begin{align*}\ny' + \\cos(1) + 0(-\\sin(1))(y')&= -\\sin (0) \\\\\ny' + \\cos(1) &= 0\\\\\ny' &= - \\cos(1)\\end{align*}\n\ncompleting the question."
     ], 
     "hints": [
         "Recall the relationship between slopes of tangent lines and derivatives.", 

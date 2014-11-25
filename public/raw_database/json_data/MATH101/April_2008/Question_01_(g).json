@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_01_(g)", 
     "course": "MATH101", 
-    "statement": "Let\n\n\\[f(x) =\u00c2\u00a0\\int_x^{x^3} \\sqrt{t}\\sin t\\,dt.\\] Find \\emph{f'(x)}.", 
+    "statement": "Let\n\n\\begin{align*}f(x) =\u00c2\u00a0\\int_x^{x^3} \\sqrt{t}\\sin t\\,dt.\\end{align*} Find \\emph{f'(x)}.", 
     "year": 2008, 
     "sols": [
-        "Following the hint, we have\n\n\\begin{align*}\nf(x) &= \\int_x^{x^3} \\sqrt{t}\\sin t\\,dt \\\\\n&= \\int_x^{0} \\sqrt{t}\\sin t\\,dt +  \\int_0^{x^3} \\sqrt{t}\\sin t\\,dt \\\\\n&= -\\int_{0}^x \\sqrt{t}\\sin t\\,dt +  \\int_0^{x^3} \\sqrt{t}\\sin t\\,dt \n\\end{align*}\n\nNow, taking derivatives by the Fundamental Theorem of Calculus I and\nusing the chain rule on the second integral, we have\n\n$f'(x) = -\\sqrt{x}\\sin x +  3x^2 \\sqrt{x^3}\\sin (x^3)$\n\nand this completes the question."
+        "Following the hint, we have\n\n\\begin{align*}\nf(x) &= \\int_x^{x^3} \\sqrt{t}\\sin t\\,dt \\\\\n&= \\int_x^{0} \\sqrt{t}\\sin t\\,dt +  \\int_0^{x^3} \\sqrt{t}\\sin t\\,dt \\\\\n&= -\\int_{0}^x \\sqrt{t}\\sin t\\,dt +  \\int_0^{x^3} \\sqrt{t}\\sin t\\,dt \\end{align*}\n\nNow, taking derivatives by the Fundamental Theorem of Calculus I and\nusing the chain rule on the second integral, we have\n\n$f'(x) = -\\sqrt{x}\\sin x +  3x^2 \\sqrt{x^3}\\sin (x^3)$\n\nand this completes the question."
     ], 
     "hints": [
         "Review the Fundamental Theorem of Calculus I.", 

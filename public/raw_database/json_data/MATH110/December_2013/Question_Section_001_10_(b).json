@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_Section_001_10_(b)", 
+    "course": "MATH110", 
+    "statement": "There are $9$ courses I want to take next term. All $9$ courses are\noffered during the same $5$ time slots. How many ways do I have to fill\nthose $5$ time slots?\n\n\\emph{For this question, a numerical answer is required as a final\nanswer.}", 
+    "year": 2013, 
+    "sols": [
+        "When selecting courses, the order does not matter. So I am really\ninterested in a combination here. I have want to select $5$ of the $9$\navailable courses, so I am looking at $\\binom{9}{5}$.\n\n\\begin{align*}\n\\binom{9}{5} &= \\frac{9!}{5! (9-5)!}\\\\\n&= \\frac{9!}{5!}\\cdot \\frac{1}{4!}\\\\\n&= \\frac{9\\cdot8\\cdot7\\cdot 6}{4\\cdot3\\cdot2\\cdot1}\\\\\n&= 9\\cdot2\\cdot7 \\\\\n&=126\\end{align*}\n\nThere are $126$ ways to fill the 5 timeslots."
+    ], 
+    "hints": [
+        "In contrast to\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_Section_001_10_(a)}{part\n(a)}, the order in which one chooses his courses does not matter. So\nthis is just a combinations question."
+    ]
+}

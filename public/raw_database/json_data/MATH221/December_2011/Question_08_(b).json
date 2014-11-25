@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_08_(b)", 
     "course": "MATH221", 
-    "statement": "Consider the matrix\n\n\\[A = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\\]\n\n\\textbf{b)} Find the dimension of the nullspace of \\emph{A}.", 
+    "statement": "Consider the matrix\n\n\\begin{align*}A = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\\end{align*}\n\n\\textbf{b)} Find the dimension of the nullspace of \\emph{A}.", 
     "year": 2011, 
     "sols": [
         "By the rank-nullity theorem, we know that dim($\\mathbb{R}^5$) =\ndim(column space) + dim(kernel). Because \\emph{A} is a linear\ntransformation from $\\mathbb{R}^5$, and the dimension of the column\nspace of \\emph{A} is 3, we conclude that the dimension of the kernel is\n2."

@@ -5,7 +5,7 @@
     "statement": "Let\n$P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}$\nbe the set of all polynomials of degree at most 2.\n\nShow that the transformation $T:P_2 \\to P_2$ is a linear transformation,\nwhere $T(f(t)))=(t+1)\\frac{\\mathrm{d} f(t)}{\\mathrm{d} x}$.", 
     "year": 2006, 
     "sols": [
-        "Note that differentiation is a linear operator\n\n$f(t),g(t)\\in P_2$ and some scalar c\n\n\\begin{align*}\nT( f(t)+ g(t) ) &= (1+t)\\frac{\\mathrm{d}(g(t)+f(t)) }{\\mathrm{d} t}\\\\\n&= (1+t)\\frac{\\mathrm{d}f(t)) }{\\mathrm{d} t}+(1+t)\\frac{\\mathrm{d}g(t)) }{\\mathrm{d} t}\\\\\n&= T(g(t))+T(f(t))\n\\end{align*}\n\nand\n\n\\begin{align*}\nT(cf(t))&= (1+t)\\frac{\\mathrm{d} cf(t)}{\\mathrm{d} t}\\\\\n&= (1+t)c\\frac{\\mathrm{d} f(t)}{\\mathrm{d} t}\\\\\n&= cT(f(t)))\n\\end{align*}\n\nThus as\n\n$T( f(t)+ g(t) )=T(g(t))+T(f(t))$\n\nand\n\n$T(cf(t))=cT(f(t)))$\n\nwe see that \\emph{T} is a linear transformation."
+        "Note that differentiation is a linear operator\n\n$f(t),g(t)\\in P_2$ and some scalar c\n\n\\begin{align*}\nT( f(t)+ g(t) ) &= (1+t)\\frac{\\mathrm{d}(g(t)+f(t)) }{\\mathrm{d} t}\\\\\n&= (1+t)\\frac{\\mathrm{d}f(t)) }{\\mathrm{d} t}+(1+t)\\frac{\\mathrm{d}g(t)) }{\\mathrm{d} t}\\\\\n&= T(g(t))+T(f(t))\\end{align*}\n\nand\n\n\\begin{align*}\nT(cf(t))&= (1+t)\\frac{\\mathrm{d} cf(t)}{\\mathrm{d} t}\\\\\n&= (1+t)c\\frac{\\mathrm{d} f(t)}{\\mathrm{d} t}\\\\\n&= cT(f(t)))\\end{align*}\n\nThus as\n\n$T( f(t)+ g(t) )=T(g(t))+T(f(t))$\n\nand\n\n$T(cf(t))=cT(f(t)))$\n\nwe see that \\emph{T} is a linear transformation."
     ], 
     "hints": []
 }

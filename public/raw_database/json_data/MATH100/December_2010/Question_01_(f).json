@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(f)", 
     "course": "MATH100", 
-    "statement": "Find the derivative of\n\n\\[\\displaystyle\\sin^{-1}(\\sqrt{x})\\] {[}\\emph{Note:}~ Another notation\nfor sin\\textsuperscript{-1} is arcsin{]}", 
+    "statement": "Find the derivative of\n\n\\begin{align*}\\displaystyle\\sin^{-1}(\\sqrt{x})\\end{align*} {[}\\emph{Note:}~ Another notation\nfor sin\\textsuperscript{-1} is arcsin{]}", 
     "year": 2010, 
     "sols": [
-        "A quick application of the chain rule gives\n\n\\begin{align*}\n\\frac{d}{dx}(\\sin^{-1}(\\sqrt{x})) &= \\frac{1}{\\sqrt{1-(\\sqrt{x})^{2}}}\\frac{d}{dx}(\\sqrt{x})\\\\\n&= \\frac{1}{\\sqrt{1-x}}\\frac{1}{2\\sqrt{x}}\\\\\n&= \\frac{1}{2\\sqrt{x-x^{2}}}\n\\end{align*}"
+        "A quick application of the chain rule gives\n\n\\begin{align*}\n\\frac{d}{dx}(\\sin^{-1}(\\sqrt{x})) &= \\frac{1}{\\sqrt{1-(\\sqrt{x})^{2}}}\\frac{d}{dx}(\\sqrt{x})\\\\\n&= \\frac{1}{\\sqrt{1-x}}\\frac{1}{2\\sqrt{x}}\\\\\n&= \\frac{1}{2\\sqrt{x-x^{2}}}\\end{align*}"
     ], 
     "hints": [
         "Again, this is not a derivative we immediately know so we have to use\nour toolbox of rules. Here, we have a composition of function so we use\nthe chain rule, which states:\n\nIf $h(x) = f(g(x))$ for differentiable \\emph{f} and \\emph{g}, then\n\n$\\displaystyle h'(x) = f'(g(x))g'(x)$", 

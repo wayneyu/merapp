@@ -5,7 +5,7 @@
     "statement": "Determine whether 2821 is a Carmichael number. Explain your answer.", 
     "year": 2009, 
     "sols": [
-        "We follow the hints above (especially hint 2) which suggests we should\nuse Korselt's Criterion. We first factor the number as\n\n$\\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31$\n\nWe check that $\\displaystyle (p-1) \\mid (n-1)$ for each prime factor.\nNotice that\n\n\\begin{align*}\n(7-1) = 6 &\\mid 2820\\\\\n(13-1) = 12 &\\mid 2820 \\\\\n(31-1) = 30 &\\mid 2820\n\\end{align*}\n\nWe can see these are true by factoring\n\n$\\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47$.\n\nHence 2821 is a Carmichael number."
+        "We follow the hints above (especially hint 2) which suggests we should\nuse Korselt's Criterion. We first factor the number as\n\n$\\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31$\n\nWe check that $\\displaystyle (p-1) \\mid (n-1)$ for each prime factor.\nNotice that\n\n\\begin{align*}\n(7-1) = 6 &\\mid 2820\\\\\n(13-1) = 12 &\\mid 2820 \\\\\n(31-1) = 30 &\\mid 2820\\end{align*}\n\nWe can see these are true by factoring\n\n$\\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47$.\n\nHence 2821 is a Carmichael number."
     ], 
     "hints": [
         "A Carmichael number is a composite number \\emph{n} which satisfies\n\n$\\displaystyle b^{n-1} \\equiv 1 \\mod{n}$\n\nfor all integers with $\\displaystyle \\gcd(b,n) = 1$.", 

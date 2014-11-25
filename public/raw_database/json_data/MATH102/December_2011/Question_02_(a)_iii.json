@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_02_(a)_iii", 
     "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\[\\displaystyle C = \\lim_{x \\to \\infty}\\frac{\\sin(e^{-x})}{e^{-x}}\\]", 
+    "statement": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\begin{align*}\\displaystyle C = \\lim_{x \\to \\infty}\\frac{\\sin(e^{-x})}{e^{-x}}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "To evaluate this limit, we notice that:\n\n\\[\\lim_{x \\to \\infty}e^{-x} = 0.\\] So we can rewrite $C$, letting the\nvariable $z = e^{-x}$.\n\n\\begin{align*}\nC = \\lim_{x \\to \\infty}\\frac{\\sin(e^{-x})}{e^{-x}} &= \\lim_{z \\to 0}\\frac{\\sin(z)}{z} = 1.\n\\end{align*} Therefore, our final answer is\n\n\\begin{align*}\n{\\color{blue}C = 1}\\end{align*}"
+        "To evaluate this limit, we notice that:\n\n\\begin{align*}\\lim_{x \\to \\infty}e^{-x} = 0.\\end{align*} So we can rewrite $C$, letting the\nvariable $z = e^{-x}$.\n\n\\begin{align*}\nC = \\lim_{x \\to \\infty}\\frac{\\sin(e^{-x})}{e^{-x}} &= \\lim_{z \\to 0}\\frac{\\sin(z)}{z} = 1.\\end{align*} Therefore, our final answer is\n\n\\begin{align*}\n{\\color{blue}C = 1}\\end{align*}"
     ], 
     "hints": [
         "As $x \\to \\infty$, what does $e^{-x}$ approach? Can you think of a way\nto rewrite this limit in terms of a different variable?", 
-        "If the value of the limit\n\n\\[\\lim_{z \\rightarrow 0}\\frac{\\sin{z}}{z}\\] is unfamiliar to you, it can\nbe evaluated using\n\\href{http://en.wikipedia.org/wiki/L\\%27H\\%C3\\%B4pital\\%27s_rule}{L'Hopital's\nrule} or by using the fact that\n\n\\[\\sin(z) \\approx z - \\frac{z^{3}}{6}\\] for $z$ near 0."
+        "If the value of the limit\n\n\\begin{align*}\\lim_{z \\rightarrow 0}\\frac{\\sin{z}}{z}\\end{align*} is unfamiliar to you, it can\nbe evaluated using\n\\href{http://en.wikipedia.org/wiki/L\\%27H\\%C3\\%B4pital\\%27s_rule}{L'Hopital's\nrule} or by using the fact that\n\n\\begin{align*}\\sin(z) \\approx z - \\frac{z^{3}}{6}\\end{align*} for $z$ near 0."
     ]
 }

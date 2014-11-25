@@ -5,7 +5,7 @@
     "statement": "Dead leaves accumulate on the ground in a forest at a rate of 5 grams\nper square centimeter per year. At the same time, these leaves decompose\nat a continuous rate of 50 percent per year.\n\n(b) What is the steady state mass of leaves per square centimeter?", 
     "year": 2012, 
     "sols": [
-        "To find the steady state, we set $\\frac{d}{dt}Q = 0$.\n\nHence:\n\n\\[0 = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5}{\\text{year}}Q\\]\n\n\\[Q = 10\\frac{\\text{grams}}{cm^2}\\] is the steady state."
+        "To find the steady state, we set $\\frac{d}{dt}Q = 0$.\n\nHence:\n\n\\begin{align*}0 = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5}{\\text{year}}Q\\end{align*}\n\n\\begin{align*}Q = 10\\frac{\\text{grams}}{cm^2}\\end{align*} is the steady state."
     ], 
     "hints": [
         "You find the steady state by setting $\\frac{d}{dt}Q = 0$ and calculating\n$Q$."

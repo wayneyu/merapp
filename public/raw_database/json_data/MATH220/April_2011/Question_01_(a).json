@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH220", 
-    "statement": "Let\n\n\\[\\displaystyle f : A \\to B\\] be a function and let\n\n\\[C \\subseteq A\\] and $D \\subseteq B$. Define the sets\n\n\\[\\displaystyle f^{-1} (D)\\] and $\\displaystyle f (C)$.", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle f : A \\to B\\end{align*} be a function and let\n\n\\begin{align*}C \\subseteq A\\end{align*} and $D \\subseteq B$. Define the sets\n\n\\begin{align*}\\displaystyle f^{-1} (D)\\end{align*} and $\\displaystyle f (C)$.", 
     "year": 2011, 
     "sols": [
-        "\\[f^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}\\]\n\nand\n\n\\[f(C) = \\{ f(c)\\mid c\\in C \\}.\\]"
+        "\\begin{align*}f^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}\\end{align*}\n\nand\n\n\\begin{align*}f(C) = \\{ f(c)\\mid c\\in C \\}.\\end{align*}"
     ], 
     "hints": [
-        "Recall that\n\n\\[\\displaystyle f^{-1}(D)\\]\n\nis the pre-image of the set $D$, that is the set containing all the\nelements that are mapped by $f$ into the set $D$ and that\n\n\\[\\displaystyle f(C)\\]\n\nis the image of the set $C$, that is the set all the images of elements\nof the set $C$."
+        "Recall that\n\n\\begin{align*}\\displaystyle f^{-1}(D)\\end{align*}\n\nis the pre-image of the set $D$, that is the set containing all the\nelements that are mapped by $f$ into the set $D$ and that\n\n\\begin{align*}\\displaystyle f(C)\\end{align*}\n\nis the image of the set $C$, that is the set all the images of elements\nof the set $C$."
     ]
 }

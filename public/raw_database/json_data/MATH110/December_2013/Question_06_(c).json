@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(c)", 
+    "course": "MATH110", 
+    "statement": "Consider the\nfunction\\begin{align*}f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{align*}\n\n\\textbf{(c)} How many solutions are there to the equation\n$\\displaystyle f'(x)=0$? Justify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "Recall that\n\n$\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.$\n\nFrom\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)}{part\n(a)}, we know that $e^{x^3 + 2x^2 + x - 3}\\neq 0$. That implies that\n$\\displaystyle f'(x) = 0$ when $3x^2 + 4x + 1=0$. Factoring, we get\n$(3x+1)(x+1)=0$, which means $x=-\\frac{1}{3},-1$. That means there are\ntwo solutions for when $\\displaystyle f'(x)=0$."
+    ], 
+    "hints": [
+        "The derivative was computed in\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(b)}{part\n(b)}:\n\n\\begin{align*}\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.\\end{align*}\n\nNow set the derivative and solve. This can be done either by factoring\nor using the quadratic formula."
+    ]
+}

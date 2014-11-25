@@ -2,13 +2,13 @@
     "term": "December", 
     "question": "Question_02_(b)", 
     "course": "MATH110", 
-    "statement": "\\emph{Find the derivative of the following function.}\n\n\\[f(x) = \\frac{\\sqrt{x}}{\\cos(x)}\\]", 
+    "statement": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}f(x) = \\frac{\\sqrt{x}}{\\cos(x)}\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "The function $f(x)$ consists of one function dividing another. This\nmeans we should use the quotient rule to find the derivative.\n\nChanging $\\sqrt{x}$ to $x^{\\frac12}$, and applying the quotient rule we\nget:\n\n\\begin{align*}\nf'(x) & = \\frac{(x^{\\frac12} )'\\cos x - x^{\\frac12}(\\cos x)'}{\\cos^2 x} \\\\\n & = \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n & = \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\n\\end{align*}\n\nThis answer is sufficient, however, we can simplify this term by\nmultiplying the numerator and the denominator by $2\\sqrt{x}$ to get\n\n\\begin{align*}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\n\\end{align*}"
+        "The function $f(x)$ consists of one function dividing another. This\nmeans we should use the quotient rule to find the derivative.\n\nChanging $\\sqrt{x}$ to $x^{\\frac12}$, and applying the quotient rule we\nget:\n\n\\begin{align*}\nf'(x) &= \\frac{(x^{\\frac12} )'\\cos x - x^{\\frac12}(\\cos x)'}{\\cos^2 x} \\\\\n &= \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n &= \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\\end{align*}\n\nThis answer is sufficient, however, we can simplify this term by\nmultiplying the numerator and the denominator by $2\\sqrt{x}$ to get\n\n\\begin{align*}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\\end{align*}"
     ], 
     "hints": [
         "Which derivative rule do you need to use here?", 
-        "Since we see a quotient, I suggest the quotient rule.\n\n\\[\\left(\\frac{f}{g}\\right)' = \\frac{f'g-g'f}{g^2}\\]"
+        "Since we see a quotient, I suggest the quotient rule.\n\n\\begin{align*}\\left(\\frac{f}{g}\\right)' = \\frac{f'g-g'f}{g^2}\\end{align*}"
     ]
 }

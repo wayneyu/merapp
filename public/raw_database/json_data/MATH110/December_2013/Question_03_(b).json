@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_03_(b)", 
+    "course": "MATH110", 
+    "statement": "Rewrite $f(x)$ in such a way that you can differentiate it using a\ndifferent rule than the Power Rule. Name the rule of differentiation\nwhich is applicable, and then confirm that the derivative calculated\nusing this alternative method is the same as in part (a).\n\n(Bonus) You will receive one bonus mark for each different\ndifferentiation rule you use to differentiate $\\displaystyle f(x)$.", 
+    "year": 2013, 
+    "sols": [
+        "\\textbf{Parts b and c combined:} (These are all the rules I can think\nof).\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Addition rule:\n\n  \\begin{align*}\n  f(x) &= \\frac{1}{2}x^6 + \\frac{1}{2}x^6 &\n  f'(x) &= 3x^5 + 3x^5\\end{align*}\n\\item\n  Subtraction rule:\n\n  \\begin{align*}\n  f(x) &= 2x^6 - x^6 &\n  f'(x) &= 12x^5 - 6x^5\\end{align*}\n\\item\n  Product rule:\n\n  \\begin{align*}\n  f(x) &= x^2 \\cdot x^4 &\n  f'(x) &= 2x \\cdot x^4 + 4x^3 \\cdot x^2\\end{align*}\n\\item\n  Quotient rule:\n\n  \\begin{align*}\n  f(x) &= \\frac{x^7}{x} &\n  f'(x) &= \\frac{7x^6 \\cdot x - x^7 \\cdot 1}{x^2}\\end{align*}\n\\item\n  Chain rule:\n\n  \\begin{align*}\n  f(x) &= (x^3)^2 &\n  f'(x) &=  3x^2 \\cdot 2(x^3)\\end{align*}\n\\item\n  Log-diff:\n\n  \\begin{align*}\n  \\ln(f(x)) &= 6 \\ln(x)& \n  f'(x) &= \\frac{6}{x}\\cdot x^6\\end{align*}\n\\item\n  Exp-chain rule:\n\n  \\begin{align*}\n  f(x) &= \\exp[6\\ln(x)]&\n  f'(x) &= \\frac{6}{x} \\cdot \\exp[6\\ln(x)]\\end{align*}\n\\item\n  Limit definition of derivative:\n\n  \\begin{align*}\n  f'(x) &= \\lim_{h\\rightarrow 0} \\frac{(x+h)^6 - x^6}{h} & f'(x) &= \\lim_{h\\rightarrow 0} \\frac{6x^5h + 15x^4h^2 + \\ldots + h^6}{h}\\\\\n  f'(x) &= \\lim_{a\\rightarrow x} \\frac{a^6 - x^6}{a-x} & f'(x) &= \\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\\end{align*}\n\\end{itemize}"
+    ], 
+    "hints": [
+        "There are lots of choices here. The easier ones to see are the chain\nrule, the definition of a derivative, and using logarithmic\ndifferentiation. There are of course many others as you will see in the\nsolution."
+    ]
+}

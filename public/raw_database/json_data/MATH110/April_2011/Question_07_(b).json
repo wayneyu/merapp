@@ -5,7 +5,7 @@
     "statement": "The line you gave as an answer in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_7_(a)}{\n(a)} has an \\emph{x}-intercept and a \\emph{y}-intercept. Find these.\n(They will be in terms of \\emph{m}.)", 
     "year": 2011, 
     "sols": [
-        "Our line has a \\emph{y}-intercept when $x = 0$. Plugging this into our\nequation of the line, we get\n\n\\[y = m(0) - m + 1 = -m + 1.\\]\n\nSo our \\emph{y}-intercept is $(0, -m + 1)$.\n\nSimilarly, our \\emph{x}-intercept occurs when $y = 0$. Setting our\nequation equal to zero and solving for $x$, we get\n\n\\[0 = mx - m + 1\\]\n\nWe see that if \\emph{m=0}, then there is no \\emph{x}-intercept (the line\nis horizontal). Otherwise\n\n\\[x = \\frac{m-1}{m}\\]\n\nand our \\emph{x}-intercept is $\\left(\\frac{m-1}{m} ,0\\right)$."
+        "Our line has a \\emph{y}-intercept when $x = 0$. Plugging this into our\nequation of the line, we get\n\n\\begin{align*}y = m(0) - m + 1 = -m + 1.\\end{align*}\n\nSo our \\emph{y}-intercept is $(0, -m + 1)$.\n\nSimilarly, our \\emph{x}-intercept occurs when $y = 0$. Setting our\nequation equal to zero and solving for $x$, we get\n\n\\begin{align*}0 = mx - m + 1\\end{align*}\n\nWe see that if \\emph{m=0}, then there is no \\emph{x}-intercept (the line\nis horizontal). Otherwise\n\n\\begin{align*}x = \\frac{m-1}{m}\\end{align*}\n\nand our \\emph{x}-intercept is $\\left(\\frac{m-1}{m} ,0\\right)$."
     ], 
     "hints": [
         "What is the value of x at the y-intercept? The value of y at the\nx-intercept? How can you use this information to find the other half of\nthe intercept?"

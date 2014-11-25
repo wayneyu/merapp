@@ -5,7 +5,7 @@
     "statement": "If $R$ is the 2D counter-clockwise rotation by $\\pi/4$ and $Q$ is the 2D\nreflection through the line $y = x$, is $QR = RQ$? Justify briefly.", 
     "year": 2010, 
     "sols": [
-        "Consider a vector, v, that lies on the line $y = x$.\n\nApplying $QR$ to this vector will first rotate the vector so that it\nlies parallel to the $y$-axis, then reflect the vector over $y = x$ so\nthat it lies parallel to the $x$-axis.\n\nApplying $RQ$ to this vector will first reflect the vector over the line\n$y = x$, leaving it unchanged, then will rotate the vector so that it\nlies parallel to the $y$-axis.\n\nBy this example, $QR$ and $RQ$ have different effects on v and thus do\nnot commute. i.e:\n\n\\[QR \\ne RQ.\\]"
+        "Consider a vector, v, that lies on the line $y = x$.\n\nApplying $QR$ to this vector will first rotate the vector so that it\nlies parallel to the $y$-axis, then reflect the vector over $y = x$ so\nthat it lies parallel to the $x$-axis.\n\nApplying $RQ$ to this vector will first reflect the vector over the line\n$y = x$, leaving it unchanged, then will rotate the vector so that it\nlies parallel to the $y$-axis.\n\nBy this example, $QR$ and $RQ$ have different effects on v and thus do\nnot commute. i.e:\n\n\\begin{align*}QR \\ne RQ.\\end{align*}"
     ], 
     "hints": [
         "Do both operations $QR$, $RQ$ have the same effect on all vectors in\n$R^{2}$?", 

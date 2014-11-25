@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_04_(b)", 
+    "course": "MATH110", 
+    "statement": "Let $f(x)=\\sqrt{x}-1$ and $g(x)=(f\\circ f)(x)$. What is the domain of\n$g(x)$?", 
+    "year": 2013, 
+    "sols": [
+        "Looking at the outside function, we want to find $\\sqrt{x}-1\\geq 0$ for\n$\\sqrt{\\sqrt{x}-1}$ to be defined.\n\nSo we want $\\sqrt{x} \\geq 1$. Looking at the inside function, we want\n$\\sqrt{x} \\geq 0$ so $x \\geq 0$.\n\nCombining the two, we get\\begin{align*}x\\geq 0\\end{align*} and $x\\geq 1$.\n\nHence the domain of $g(x)$ is $\\{x \\mathbb{R} \\mid x\\geq 1 \\}$ or\n$x \\in [1,\\infty)$."
+    ], 
+    "hints": [
+        "Recall that from\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_04_(a)}{part\n(a)}, we have that\n\n$\\displaystyle (f \\circ f)(x) = \\sqrt{\\sqrt{x}-1} -1$\n\nwhen dealing with square roots, what problems could arise? The domain of\nthis function should avoid these problems."
+    ]
+}

@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_09", 
     "course": "MATH110", 
-    "statement": "An \\emph{antiderivative} of a function $f$ is a function \\emph{F}\nsatisfying\n\n\\[\\displaystyle\nF'(x) = f(x)\\] for all \\emph{x}. Find two antiderivatives of the\nfunction\n\n\\[\\displaystyle e^{3-x}.\\]", 
+    "statement": "An \\emph{antiderivative} of a function $f$ is a function \\emph{F}\nsatisfying\n\n\\begin{align*}\\displaystyle\nF'(x) = f(x)\\end{align*} for all \\emph{x}. Find two antiderivatives of the\nfunction\n\n\\begin{align*}\\displaystyle e^{3-x}.\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "Because $e^{x}$ is its own derivative, our anti-derivative for the\nfunction $e^{3-x}$ will probably be very similar to the original\nfunction. In fact, $F(x) = - e^{3-x}$ will work; you can check by\ndifferentiating using the chain rule to get\n\n\\[\\displaystyle\nF'(x) = -(-e^{3-x}) = e^{3-x} = f(x)\\]\n\nThis is one anti-derivative. To find another one, we can simply add a\nconstant to the anti-derivative shown above, say\n$F_2(x) = -e^{3-x} + 5$. When we differentiate, the constant will\ndisappear, giving us the same derivative as before."
+        "Because $e^{x}$ is its own derivative, our anti-derivative for the\nfunction $e^{3-x}$ will probably be very similar to the original\nfunction. In fact, $F(x) = - e^{3-x}$ will work; you can check by\ndifferentiating using the chain rule to get\n\n\\begin{align*}\\displaystyle\nF'(x) = -(-e^{3-x}) = e^{3-x} = f(x)\\end{align*}\n\nThis is one anti-derivative. To find another one, we can simply add a\nconstant to the anti-derivative shown above, say\n$F_2(x) = -e^{3-x} + 5$. When we differentiate, the constant will\ndisappear, giving us the same derivative as before."
     ], 
     "hints": [
         "Recall that $e^x$ is its own derivative.", 

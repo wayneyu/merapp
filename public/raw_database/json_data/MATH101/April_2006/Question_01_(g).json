@@ -5,7 +5,7 @@
     "statement": "Determine the general solution of the differential equation\n$y'' - 2y' + 2y = 0$.", 
     "year": 2006, 
     "sols": [
-        "The auxiliary polynomial is\n\n\\[r^{2} - 2r + 2\\]\n\nSolving for $r$ when the above is set to 0 yields\n\n\\[r = \\frac{-(-2) \\pm \\sqrt{(-2)^{2} - 4(1)(2)}}{2} = \\frac{2 \\pm \\sqrt{4-8}}{2} = 1 \\pm i\\]\n\nwhere $i = \\sqrt{-1}$. Thus, the general solution is\n\n\\[\\displaystyle y = e^{x}(C\\cos(x) + D\\sin(x))\\]"
+        "The auxiliary polynomial is\n\n\\begin{align*}r^{2} - 2r + 2\\end{align*}\n\nSolving for $r$ when the above is set to 0 yields\n\n\\begin{align*}r = \\frac{-(-2) \\pm \\sqrt{(-2)^{2} - 4(1)(2)}}{2} = \\frac{2 \\pm \\sqrt{4-8}}{2} = 1 \\pm i\\end{align*}\n\nwhere $i = \\sqrt{-1}$. Thus, the general solution is\n\n\\begin{align*}\\displaystyle y = e^{x}(C\\cos(x) + D\\sin(x))\\end{align*}"
     ], 
     "hints": [
         "Find the roots of the auxiliary polynomial."

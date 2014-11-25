@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_03_(a)", 
     "course": "MATH307", 
-    "statement": "Let\n\n\\[S = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\]\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(a)} Find a matrix \\emph{A} so that \\emph{S} is the null space\nof \\emph{A}, i.e., \\emph{S = N(A)}.", 
+    "statement": "Let\n\n\\begin{align*}S = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\end{align*}\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(a)} Find a matrix \\emph{A} so that \\emph{S} is the null space\nof \\emph{A}, i.e., \\emph{S = N(A)}.", 
     "year": 2012, 
     "sols": [
-        "The definition of \\emph{S} contains a dot product which reveals the\nvector orthogonal to \\emph{S}:\n\n\\begin{align*}\nS &= \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\} \\\\\n&= \\left\\{[x_1, x_2, x_3]^T:\\, \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix} = 0\\right\\}\n\\end{align*}\n\nSince the vector $\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$ is\northogonal to \\emph{S}, and the nullspace of \\emph{A} ( which is\n\\emph{S}) is orthogonal to the row space of \\emph{A}, we can choose any\nmatrix \\emph{A} whose row space is spanned by\n$\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$. Such as\n$A = \\begin{bmatrix} 1 & 1 & 1 \\end{bmatrix}$ or\n$A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 2 & 2 & 2 \\\\ 0 & 0 & 0 \\\\ \\pi & \\pi & \\pi \\end{bmatrix}.$"
+        "The definition of \\emph{S} contains a dot product which reveals the\nvector orthogonal to \\emph{S}:\n\n\\begin{align*}\nS &= \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\} \\\\\n&= \\left\\{[x_1, x_2, x_3]^T:\\, \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix} = 0\\right\\}\\end{align*}\n\nSince the vector $\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$ is\northogonal to \\emph{S}, and the nullspace of \\emph{A} ( which is\n\\emph{S}) is orthogonal to the row space of \\emph{A}, we can choose any\nmatrix \\emph{A} whose row space is spanned by\n$\\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}$. Such as\n$A = \\begin{bmatrix} 1 & 1 & 1 \\end{bmatrix}$ or\n$A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 2 & 2 & 2 \\\\ 0 & 0 & 0 \\\\ \\pi & \\pi & \\pi \\end{bmatrix}.$"
     ], 
     "hints": [
         "How are the row space and the nullspace of of a matrix related?", 

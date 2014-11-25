@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH101", 
-    "statement": "Evaluate\n\n\\[\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\\]", 
+    "statement": "Evaluate\n\n\\begin{align*}\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\\end{align*}", 
     "year": 2009, 
     "sols": [
-        "If we simply spit the fraction in two, we obtain simple terms that we an\neasily integrate.\n\n\\begin{align*}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\n\\end{align*}"
+        "If we simply spit the fraction in two, we obtain simple terms that we an\neasily integrate.\n\n\\begin{align*}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\\end{align*}"
     ], 
     "hints": [
         "Split into two terms."

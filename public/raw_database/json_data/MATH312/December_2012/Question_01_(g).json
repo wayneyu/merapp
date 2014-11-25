@@ -5,7 +5,7 @@
     "statement": "\\textbf{Short answer questions: Each question carries 6 marks, your\nanswers should quote the results being used and show your work.}\n\nWhat is the remainder when $\\displaystyle 5^{16}$ is divided by 23?", 
     "year": 2012, 
     "sols": [
-        "We proceed by the hint.\n\n\\begin{align*}\n5^{16} &\\equiv (5^{2})^{8} \\equiv 25^{8} \\equiv 2^{8} \\equiv 256 \\equiv 26 \\equiv 3 \\mod{23}\n\\end{align*}"
+        "We proceed by the hint.\n\n\\begin{align*}\n5^{16} &\\equiv (5^{2})^{8} \\equiv 25^{8} \\equiv 2^{8} \\equiv 256 \\equiv 26 \\equiv 3 \\mod{23}\\end{align*}"
     ], 
     "hints": [
         "Use the fact that $\\displaystyle 5^{2} \\equiv 25 \\equiv 2 \\mod{23}$."

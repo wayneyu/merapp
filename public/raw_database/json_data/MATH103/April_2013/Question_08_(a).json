@@ -6,7 +6,7 @@
     "year": 2013, 
     "sols": [
         "We have via the fundamental theorem of calculus that\n\n$\\displaystyle I_{a} = \\frac{d}{dx}\\int_{x}^{7}\\cos(\\sin(t))\\,dt = - \\frac{d}{dx}\\int_{7}^{x}\\cos(\\sin(t))\\,dt = -\\cos(\\sin(x))$", 
-        "Recall the Fundamental Theorem of Calculus in its general form:\n\n$\\displaystyle \\frac{d}{dx}\\int_{g(x)}^{h(x)} f(t) \\ dt = h'(x)f(h(x))-g'(x)f(g(x))$\n\nThen\n\n\\begin{align*}\n\\displaystyle I_{a} &= \\frac{d}{dx}\\int_{x}^{7}\\cos(\\sin(t))\\,dt \\\\\n&= \\left(\\frac{d}{dx}7\\right)\\cos(\\sin(7)) - \\left(\\frac{d}{dx}x\\right)\\cos(\\sin(x)) \\\\\n&= -\\cos(\\sin(x))\n\\end{align*}"
+        "Recall the Fundamental Theorem of Calculus in its general form:\n\n$\\displaystyle \\frac{d}{dx}\\int_{g(x)}^{h(x)} f(t) \\ dt = h'(x)f(h(x))-g'(x)f(g(x))$\n\nThen\n\n\\begin{align*}\n\\displaystyle I_{a} &= \\frac{d}{dx}\\int_{x}^{7}\\cos(\\sin(t))\\,dt \\\\\n&= \\left(\\frac{d}{dx}7\\right)\\cos(\\sin(7)) - \\left(\\frac{d}{dx}x\\right)\\cos(\\sin(x)) \\\\\n&= -\\cos(\\sin(x))\\end{align*}"
     ], 
     "hints": [
         "Review the statement of the Fundamental Theorem of Calculus.", 

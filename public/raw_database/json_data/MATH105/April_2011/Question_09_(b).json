@@ -5,10 +5,10 @@
     "statement": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nWhat is the slope of the curve\n\n$y = \\int_{0}^{2 \\sin x} e^{-t^2} \\, dt$\n\nat the point $x = 0?$", 
     "year": 2011, 
     "sols": [
-        "To evaluate the slope of the curve at $x = 0$, we let\n\n\\[\\displaystyle\nf(x) = \\int_{0}^{2\\sin(x)}e^{-t^{2}}\\,dt\\] and evaluate $f'(0)$. By the\nfundamental theorem of calculus, we know that\n\n\\[\\displaystyle\nf(x) = \\int_{0}^{2\\sin(x)}e^{-t^{2}}\\,dt = F(2\\sin(x)) - F(0)\\]\n\nwhere $F$ is the antiderivative of the integrand\n(i.e\\[F'(t) = e^{-t^{2}}\\]). Taking the derivative with respect to $x$,\nwe find\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx}\\left[F(2\\sin(x)) - F(0) \\right] \\\\ &= F'(2\\sin(x))\\cdot\\frac{d}{dx}(2\\sin(x)) \\\\\n&= e^{-4\\sin^{2}(x)}\\cdot2\\cos(x) \\\\\nf'(0) &= 2\n\\end{align*} So the slope of the curve $y = f(x)$ at $x = 0$ is 2."
+        "To evaluate the slope of the curve at $x = 0$, we let\n\n\\begin{align*}\\displaystyle\nf(x) = \\int_{0}^{2\\sin(x)}e^{-t^{2}}\\,dt\\end{align*} and evaluate $f'(0)$. By the\nfundamental theorem of calculus, we know that\n\n\\begin{align*}\\displaystyle\nf(x) = \\int_{0}^{2\\sin(x)}e^{-t^{2}}\\,dt = F(2\\sin(x)) - F(0)\\end{align*}\n\nwhere $F$ is the antiderivative of the integrand\n(i.e\\begin{align*}F'(t) = e^{-t^{2}}\\end{align*}). Taking the derivative with respect to $x$,\nwe find\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx}\\left[F(2\\sin(x)) - F(0) \\right] \\\\ &= F'(2\\sin(x))\\cdot\\frac{d}{dx}(2\\sin(x)) \\\\\n&= e^{-4\\sin^{2}(x)}\\cdot2\\cos(x) \\\\\nf'(0) &= 2\\end{align*} So the slope of the curve $y = f(x)$ at $x = 0$ is 2."
     ], 
     "hints": [
-        "Apply the fundamental theorem of calculus to the integral. i.e:\n\n\\[\\int_{a}^{b}f(x)\\,dx = F(b) - F(a)\\]\n\nwhere F'(x) = f(x).", 
-        "Consider the first hint. Can you take the derivative of\n\n\\[\\int_{a}^{g(x)}f(t)\\,dt\\]\n\nwith respect to $x$ where $g$ is a function of $x$?"
+        "Apply the fundamental theorem of calculus to the integral. i.e:\n\n\\begin{align*}\\int_{a}^{b}f(x)\\,dx = F(b) - F(a)\\end{align*}\n\nwhere F'(x) = f(x).", 
+        "Consider the first hint. Can you take the derivative of\n\n\\begin{align*}\\int_{a}^{g(x)}f(t)\\,dt\\end{align*}\n\nwith respect to $x$ where $g$ is a function of $x$?"
     ]
 }

@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_01_(e)", 
+    "course": "MATH104", 
+    "statement": "Find the slope of the tangent line to $\\displaystyle y = x^3 + 3x^2 + 2$\nat its point of inflection.", 
+    "year": 2013, 
+    "sols": [
+        "Following the hint, we begin differentiating.\n\n\\begin{align*}\ny &= x^{3} + 3x^{2} + 2\\\\\n\\frac{dy}{dx} &= 3x^{2} + 6x \\\\\n\\frac{d^2y}{dx^2} &= 6x + 6\\end{align*}\n\nSolving for $\\displaystyle \\frac{d^2y}{dx^2} = 0$ gives\n$\\displaystyle 0 = 6x + 6$ and so $\\displaystyle x = -1$. A quick check\nshows that the sign of the second derivative changes at this point and\nso we know that $\\displaystyle x=-1$ is indeed an inflection point.\nPlugging $x = -1$ into the first derivative gives us the slope of the\ntangent line at the inflection point:\n\n$\\displaystyle \\left.\\frac{dy}{dx}\\right|_{x = -1} = 3(-1)^{2} + 6(-1) = 3 - 6 = {\\color{blue}-3}.$"
+    ], 
+    "hints": [
+        "This is a multi-step question. How are inflection points related to the\nsecond derivative?", 
+        "\\textbf{Inflection points} may occur where the second derivative is\nzero.", 
+        "The slope of the tangent line at the inflection point is the value of\nthe first derivative at that point."
+    ]
+}

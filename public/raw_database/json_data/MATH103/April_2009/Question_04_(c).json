@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_04_(c)", 
     "course": "MATH103", 
-    "statement": "Find the following integral\n\n\\[\\int \\frac{x+7}{(x-3)(x+2)}\\,dx\\]", 
+    "statement": "Find the following integral\n\n\\begin{align*}\\int \\frac{x+7}{(x-3)(x+2)}\\,dx\\end{align*}", 
     "year": 2009, 
     "sols": [
-        "Before we can calculate the integral, we use partial fraction.\n\n\\begin{align*}\n\\frac{x+7}{(x-3)(x+2)} &= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\n\\end{align*}\n\nSo, we get two equations to solve for $A$ and $B$\n\n\\begin{align*}\n A+B&=1,\\\\\n2A-3B&=7\n\\end{align*}\n\nand we get $A=2, \\ B=-1$.\n\nSo we find that\n\n\\begin{align*} \n\\int \\frac{x+7}{(x-3)(x+2)}dx &= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&= 2\\ln(x-3) - \\ln(x+2) + C\n\\end{align*}"
+        "Before we can calculate the integral, we use partial fraction.\n\n\\begin{align*}\n\\frac{x+7}{(x-3)(x+2)} &= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\\end{align*}\n\nSo, we get two equations to solve for $A$ and $B$\n\n\\begin{align*}\n A+B&=1,\\\\\n2A-3B&=7\\end{align*}\n\nand we get $A=2, \\ B=-1$.\n\nSo we find that\n\n\\begin{align*} \n\\int \\frac{x+7}{(x-3)(x+2)}dx &= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&= 2\\ln(x-3) - \\ln(x+2) + C\\end{align*}"
     ], 
     "hints": [
         "Use partial fractions."

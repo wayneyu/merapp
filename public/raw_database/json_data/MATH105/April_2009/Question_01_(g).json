@@ -5,7 +5,7 @@
     "statement": "Find $\\int 5x \\sin(x+1)\\,dx$", 
     "year": 2009, 
     "sols": [
-        "We proceed by integration by parts. Let $\\displaystyle u = 5x$ and\n$\\displaystyle dv = \\sin(x+1)\\,dx$ so that $\\displaystyle du = 5$ and\n$\\displaystyle v = -\\cos(x+1)$. Then\n\n\\begin{align*}\n\\int 5x \\sin(x+1)\\,dx &= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&= -5x\\cos(x+1) +5\\sin(x+1) + C\n\\end{align*}"
+        "We proceed by integration by parts. Let $\\displaystyle u = 5x$ and\n$\\displaystyle dv = \\sin(x+1)\\,dx$ so that $\\displaystyle du = 5$ and\n$\\displaystyle v = -\\cos(x+1)$. Then\n\n\\begin{align*}\n\\int 5x \\sin(x+1)\\,dx &= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&= -5x\\cos(x+1) +5\\sin(x+1) + C\\end{align*}"
     ], 
     "hints": [
         "What integration technique works well for products?", 

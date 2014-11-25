@@ -2,13 +2,13 @@
     "term": "April", 
     "question": "Question_01_(b)", 
     "course": "MATH105", 
-    "statement": "Let\n\n\\[\\displaystyle f(x,y) = xe^{2y} + y^2\\] Evaluate\n\n\\[\\frac{\\partial^2 f}{\\partial y^2}\\]", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle f(x,y) = xe^{2y} + y^2\\end{align*} Evaluate\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2}\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "We are asked here to compute the second derivative of the given function\nwith respect to \\emph{y}. So we start by taking the first derivative\nwith respect to \\emph{y} and obtain\n\n\\[\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y\\] (Remember that\nwhile doing this, we treat the variable \\emph{x} as if it was a\nconstant). And now we go on for the second derivative with respect to\n\\emph{y} and obtain\n\n\\[\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2\\]"
+        "We are asked here to compute the second derivative of the given function\nwith respect to \\emph{y}. So we start by taking the first derivative\nwith respect to \\emph{y} and obtain\n\n\\begin{align*}\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y\\end{align*} (Remember that\nwhile doing this, we treat the variable \\emph{x} as if it was a\nconstant). And now we go on for the second derivative with respect to\n\\emph{y} and obtain\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2\\end{align*}"
     ], 
     "hints": [
-        "What does the symbols\n\n\\[\\frac{\\partial^2 f}{\\partial y^2}\\] mean in plain English?", 
+        "What does the symbols\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2}\\end{align*} mean in plain English?", 
         "Recall that when computing a partial derivative with respect to the\nvariable \\emph{y}, you have to treat the variable \\emph{x} as if it was\na constant, so for example the partial derivative of \\emph{xy} with\nrespect to the variable \\emph{y} is simply \\emph{x} the same way that\nthe derivative of \\emph{3y} with respect to \\emph{y} would be 3."
     ]
 }

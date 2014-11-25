@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_01_(b)", 
     "course": "MATH101", 
-    "statement": "What integral is defined by the following expression?\n\n\\[\\lim_{n\\to\\infty}\\sum_{i=1}^n \\frac{\\pi}{4n} \\tan\\left(\\frac{i\\pi}{4n}\\right)\\]\n\n(Do not evaluate the integral.)", 
+    "statement": "What integral is defined by the following expression?\n\n\\begin{align*}\\lim_{n\\to\\infty}\\sum_{i=1}^n \\frac{\\pi}{4n} \\tan\\left(\\frac{i\\pi}{4n}\\right)\\end{align*}\n\n(Do not evaluate the integral.)", 
     "year": 2009, 
     "sols": [
-        "We recognize that this has the form of a Riemann sum:\n\n\\[\\lim_{n \\rightarrow \\infty} \\sum_{i=1}^{n} f(x_i) \\Delta x\\]\n\nWe identify\n\n\\[\\Delta x = \\frac{b-a}{n} = \\frac{\\pi}{4n}\\] and\n\n\\[x_i = a + i \\Delta x = a + \\frac{i \\pi}{4n}.\\] This gives us that\n\n\\[b-a = \\frac{\\pi}{4}\\]\n\nNow, notice that the function in question is $f(x) = \\tan(x)$ and so\n\n\\begin{align*}\nf(x_{i}) &= \\tan(x_{i})\\\\\n&= \\tan\\left(a +  \\frac{i \\pi}{4n} \\right)\\\\\n&= \\tan\\left( \\frac{i \\pi}{4n} \\right)\n\\end{align*}\n\nand so we see that we can choose $a = 0$. This gives us that\n\n\\[b = b-0 = b-a = \\frac{\\pi}{4}.\\] Hence, the integral is\n\n\\[\\int_{0}^{\\tfrac{\\pi}{4}}\\tan(x)\\, dx\\]\n\ncompleting the question."
+        "We recognize that this has the form of a Riemann sum:\n\n\\begin{align*}\\lim_{n \\rightarrow \\infty} \\sum_{i=1}^{n} f(x_i) \\Delta x\\end{align*}\n\nWe identify\n\n\\begin{align*}\\Delta x = \\frac{b-a}{n} = \\frac{\\pi}{4n}\\end{align*} and\n\n\\begin{align*}x_i = a + i \\Delta x = a + \\frac{i \\pi}{4n}.\\end{align*} This gives us that\n\n\\begin{align*}b-a = \\frac{\\pi}{4}\\end{align*}\n\nNow, notice that the function in question is $f(x) = \\tan(x)$ and so\n\n\\begin{align*}\nf(x_{i}) &= \\tan(x_{i})\\\\\n&= \\tan\\left(a +  \\frac{i \\pi}{4n} \\right)\\\\\n&= \\tan\\left( \\frac{i \\pi}{4n} \\right)\\end{align*}\n\nand so we see that we can choose $a = 0$. This gives us that\n\n\\begin{align*}b = b-0 = b-a = \\frac{\\pi}{4}.\\end{align*} Hence, the integral is\n\n\\begin{align*}\\int_{0}^{\\tfrac{\\pi}{4}}\\tan(x)\\, dx\\end{align*}\n\ncompleting the question."
     ], 
     "hints": [
         "This is a Riemann sum...", 

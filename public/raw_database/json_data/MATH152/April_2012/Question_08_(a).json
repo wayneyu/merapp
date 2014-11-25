@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(a)", 
     "course": "MATH152", 
-    "statement": "Consider the 2 x 2 system of differential equations\n\n\\[\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\\]\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nFind all eigenvalues that may or may not be complex valued.", 
+    "statement": "Consider the 2 x 2 system of differential equations\n\n\\begin{align*}\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\\end{align*}\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nFind all eigenvalues that may or may not be complex valued.", 
     "year": 2012, 
     "sols": [
-        "To calculate the eigenvalues of the matrix\n$A = \\begin{pmatrix} -1 & -2 \\\\ 2 & -1\\end{pmatrix}$, we find\n$\\displaystyle \\lambda$ such that\n\n\\begin{align*}\n0 & = \\text{det}\\begin{pmatrix}-1-\\lambda & -2 \\\\ 2 & -1-\\lambda\\end{pmatrix}\\\\\n  & = (-1-\\lambda)^2 + 4\\\\\n  & = \\lambda^2 + 2\\lambda + 5\n\\end{align*}\n\nTo calculate $\\displaystyle \\lambda$, we use the quadratic formula,\n\n$\\lambda_{1,2} = \\frac{-2\\pm\\sqrt{4-20}}{2} = -1\\pm2i$\n\nwhere $\\displaystyle \\sqrt{-1} = i$.\n\nHence, the eigenvalues $\\displaystyle \\lambda_{1,2}$ are\n$\\displaystyle -1 + 2i$ and $\\displaystyle -1 - 2i$."
+        "To calculate the eigenvalues of the matrix\n$A = \\begin{pmatrix} -1 & -2 \\\\ 2 & -1\\end{pmatrix}$, we find\n$\\displaystyle \\lambda$ such that\n\n\\begin{align*}\n0 &= \\text{det}\\begin{pmatrix}-1-\\lambda & -2 \\\\ 2 & -1-\\lambda\\end{pmatrix}\\\\\n  &= (-1-\\lambda)^2 + 4\\\\\n  &= \\lambda^2 + 2\\lambda + 5\\end{align*}\n\nTo calculate $\\displaystyle \\lambda$, we use the quadratic formula,\n\n$\\lambda_{1,2} = \\frac{-2\\pm\\sqrt{4-20}}{2} = -1\\pm2i$\n\nwhere $\\displaystyle \\sqrt{-1} = i$.\n\nHence, the eigenvalues $\\displaystyle \\lambda_{1,2}$ are\n$\\displaystyle -1 + 2i$ and $\\displaystyle -1 - 2i$."
     ], 
     "hints": [
         "Find the eigenvalues of the matrix\n\n$A = \\begin{pmatrix} -1 & -2 \\\\ 2 & -1\\end{pmatrix}$.", 

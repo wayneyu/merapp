@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_02_(a)", 
     "course": "MATH200", 
-    "statement": "Let\n\n\\[\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\]\n\nUse a linear approximation of the function z=f(x,y) at (0,1) to estimate\nf(0.1,1.2).", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\end{align*}\n\nUse a linear approximation of the function z=f(x,y) at (0,1) to estimate\nf(0.1,1.2).", 
     "year": 2012, 
     "sols": [
-        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\[\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\]\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable. In this case the partial derivatives of\n$f(x,y) = \\ln(4x^{2} + y^{2})$ are\n\n\\[f_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\\]\nand we wish to approximate $f$ near (x,y) = (0,1). Hence the linear\napproximation we seek is:\n\n\\begin{align*}\n\\displaystyle L(x,y) &= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&= 2y - 2\n\\end{align*} Using the linear approximation, we can estimate the value\nof $f$(0.1,1.2) as\n\n\\[{\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\\]"
+        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable. In this case the partial derivatives of\n$f(x,y) = \\ln(4x^{2} + y^{2})$ are\n\n\\begin{align*}f_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\\end{align*}\nand we wish to approximate $f$ near (x,y) = (0,1). Hence the linear\napproximation we seek is:\n\n\\begin{align*}\n\\displaystyle L(x,y) &= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&= 2y - 2\\end{align*} Using the linear approximation, we can estimate the value\nof $f$(0.1,1.2) as\n\n\\begin{align*}{\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\\end{align*}"
     ], 
     "hints": [
-        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\[\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\]\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable."
+        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable."
     ]
 }

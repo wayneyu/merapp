@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_05_(b)", 
+    "course": "MATH110", 
+    "statement": "Find the equation of the line tangent to the curve\n$y=\\dfrac{\\cos x}{\\sin x}$ at $x=\\dfrac{5\\pi}{3}$.", 
+    "year": 2013, 
+    "sols": [
+        "To find the equation of the tangent line, we need to find the slope via\nthe derivative. We can either apply the quotient rule or the power rule\n(by recognising $y = \\tan(x)^{-1}$. Using the quotient rule:\n\n\\begin{align*}\nu(x) &= \\cos(x) & u'(x) = -\\sin(x)\\\\\nv(x) &= \\sin(x) & v'(x) = \\cos(x)\\end{align*}\n\nThis gives:\n\n\\begin{align*}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &= \\frac{v u' - u v'}{v^2}\\\\\n&= \\frac{\\sin(x) \\cdot (-\\sin(x) - \\cos(x) \\cdot \\cos(x)}{[\\sin(x)]^2}\\\\\n&= \\frac{- \\sin^2(x) - \\cos^2(x) }{\\sin^2(x)}\\\\\n&= \\frac{- \\left( \\sin^2(x) + \\cos^2(x)\\right) }{\\sin^2(x)}\\\\\n&= \\frac{-1}{\\sin^2(x)}\\\\end{align*}\n\nAt $x =\\frac{5\\pi}{3}$, we have\n$\\sin\\left(\\frac{5\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}$ (from part (a)),\nand so that means that the slope of the curve at $x =\\frac{5\\pi}{3}$ is\n\n\\begin{align*}\ny' &= \\frac{-1}{\\sin^2\\left(x\\right)}\\\\\n&= \\frac{-1}{\\sin^2\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{-1}{\\left[-\\frac{\\sqrt{3}}{2}\\right]^2}\\\\\n&= \\frac{-1}{\\frac{3}{4}}\\\\\n&= \\frac{-4}{3}\\\\end{align*}\n\nWe will also need the $y$-value at the point\n\n\\begin{align*}\ny &= \\frac{\\cos(x)}{\\sin(x)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{2\\pi}{3}\\right)}\\\\\n&= \\frac{1}{-\\sqrt{3}}\\\\\n&= -\\frac{\\sqrt{3}}{3}\\end{align*}\n\n(here we used the fact that the function $\\displaystyle \\tan(x)$ is\n$\\pi$ periodic and then applied the computation from part (a)).\n\nThis means our tangent line is:\n\n$y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)$"
+    ], 
+    "hints": [
+        "To compute the tangent line at a point, what important concept in this\ncourse do we need to utilize?", 
+        "You will need to compute the derivative (which is the slope of the\ntangent line to the curve at a point). This can be done using the\nquotient rule.", 
+        "Don't forget to find the \\emph{y} value of the point, plug in the\n\\emph{x} coordinate into the original equation."
+    ]
+}

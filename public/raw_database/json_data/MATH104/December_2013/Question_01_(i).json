@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(i)", 
+    "course": "MATH104", 
+    "statement": "Find an approximation to $\\displaystyle \\ln(1.25)$ by using the linear\napproximation to $\\displaystyle f(x) = \\ln x$ at $\\displaystyle a = 1$.", 
+    "year": 2013, 
+    "sols": [
+        "To solve this question, we begin by finding the equation of the tangent\nline to the function $\\displaystyle f(x) = \\ln(x)$. Differentiating\ngives us $f'(x) = \\frac1{x}$ and plugging in $\\displaystyle a=1$ we\nobtain the $y$ value of $\\displaystyle y = \\ln(1) = 0$. Using the point\nslope formula, we have at the point $\\displaystyle (1,0)$\n\n$\\displaystyle \\frac{y-0}{x-1} = 1$\n\nSolving gives\n\n$\\displaystyle y = x-1$\n\nThus, the approximation we seek is given by\n\n$\\displaystyle y = 1.25-1 = 0.25$."
+    ], 
+    "hints": [
+        "Recall that a \\emph{linear} approximation involves finding the equation\nof the \\emph{tangent line} to $\\displaystyle f$ at the point $a=1$."
+    ]
+}

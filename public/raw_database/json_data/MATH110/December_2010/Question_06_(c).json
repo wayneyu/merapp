@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_06_(c)", 
     "course": "MATH110", 
-    "statement": "A circle of radius 5 centered on the origin has the equation\n\n\\[x^2 + y^2 = 25\\] Prove that the line through the origin and the point\n(3, -4) is perpendicular to the tangent line in part (b).", 
+    "statement": "A circle of radius 5 centered on the origin has the equation\n\n\\begin{align*}x^2 + y^2 = 25\\end{align*} Prove that the line through the origin and the point\n(3, -4) is perpendicular to the tangent line in part (b).", 
     "year": 2010, 
     "sols": [
         "If two lines are perpendicular, their slopes are negative reciprocals of\neach other, that is, if one line has slope $a/b$, the other will have\nslope $-b/a$. Therefore, what we're really concerned about here is the\nslope of each line mentioned in the problem statement. We already have\nthe slope of the line from part (b), namely 3/4, so it remains to find\nthe slope of the line through (3, -4) and the origin. This hardly\nrequires any calculus - we just calculate the slope using the two points\n(0,0) and (3, -4).\n\n$\\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-4 - 0}{3 - 0} = \\frac{-4}{3}$\n\nIn this case, we have slope $-\\frac{4}{3}$ and the line from part (b)\nhas slope $\\frac{3}{4}$. These two numbers are negative reciprocals so\nthe two lines are perpendicular."

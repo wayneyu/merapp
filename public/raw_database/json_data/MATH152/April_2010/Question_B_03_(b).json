@@ -2,12 +2,12 @@
     "term": "April", 
     "question": "Question_B_03_(b)", 
     "course": "MATH152", 
-    "statement": "A random walk problem with two states has a transition matrix\n\n\\[P = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\\]\n\nb) The eigenvalues of $P$ are 1 and 1/12. Find corresponding\neigenvectors.", 
+    "statement": "A random walk problem with two states has a transition matrix\n\n\\begin{align*}P = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\\end{align*}\n\nb) The eigenvalues of $P$ are 1 and 1/12. Find corresponding\neigenvectors.", 
     "year": 2010, 
     "sols": [
-        "To determine the eigenvectors, we must solve the equation\n\n\\[(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\]\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors.\n\n$\\lambda_{1} = 1$\n\n\\begin{align*}\n&(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 & 1/4 \\\\ 2/3 & -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\n\\end{align*}\n\n(Note that we are not normalizing the eigenvectors. It is not necessary\nto do so at this point.)\n\n$\\lambda_{2} = 1/12$\n\n\\begin{align*}\n&(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 & 1/4 \\\\ 2/3 & 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\n\\end{align*}"
+        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors.\n\n$\\lambda_{1} = 1$\n\n\\begin{align*}\n&(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 & 1/4 \\\\ 2/3 & -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\\end{align*}\n\n(Note that we are not normalizing the eigenvectors. It is not necessary\nto do so at this point.)\n\n$\\lambda_{2} = 1/12$\n\n\\begin{align*}\n&(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 & 1/4 \\\\ 2/3 & 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\\end{align*}"
     ], 
     "hints": [
-        "To determine the eigenvectors, we must solve the equation\n\n\\[(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\]\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors."
+        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors."
     ]
 }

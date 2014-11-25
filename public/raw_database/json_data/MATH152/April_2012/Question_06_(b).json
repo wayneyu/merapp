@@ -5,7 +5,7 @@
     "statement": "This question requires little or no calculations.\n\nIf $A=C^{-1}BC$, where \\emph{C} is an invertible matrix, and det\n\\emph{B}=12, det \\emph{C}=-3. Calculate det \\emph{A}.", 
     "year": 2012, 
     "sols": [
-        "By the equation $A = C^{-1}BC$, we can see that $A,B$ are similar\nmatrices.\n\nOne of the properties of similar matrices is that their determinants are\nequal. Hence,\n\n\\[{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\\]"
+        "By the equation $A = C^{-1}BC$, we can see that $A,B$ are similar\nmatrices.\n\nOne of the properties of similar matrices is that their determinants are\nequal. Hence,\n\n\\begin{align*}{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\\end{align*}"
     ], 
     "hints": [
         "If$A=C^{-1}BC$, then $A$, $B$ are similar matrices."

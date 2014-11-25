@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(h)", 
+    "course": "MATH104", 
+    "statement": "You borrow 10 thousand dollars from Nick the Shark, who charges you at a\nfixed rate \\emph{r} that is compounded continuously. If you pay Nick 100\nthousand dollars 2 years later, what was the annual rate of interest\nthat he charged? (A calculator-ready form will suffice.)", 
+    "year": 2013, 
+    "sols": [
+        "For continuously compounded interest, we have the formula\n$\\displaystyle A = Pe^{rt}$ where \\emph{A} is the amount, \\emph{P} is\nthe principal, \\emph{r} is the rate, and \\emph{t} is the time.\n\nWe are given that $\\displaystyle P=10000, A=100000, t=2$. Plugging\nthese in yields\n\n\\begin{align*}\n100000 &= 10000e^{2r} \\\\\n10 &= e^{2r} \\\\\n\\ln 10 &= 2r \\\\\nr &= {\\color{blue} \\frac{\\ln 10}{2}}\\end{align*}"
+    ], 
+    "hints": [
+        "Recall that the formula for continuously compounded interest is given by\n$\\displaystyle A = Pe^{rt}$, where \\emph{A} is the new amount, \\emph{P}\nis the principal, \\emph{r} is the interest rate, and \\emph{t} is the\ntime."
+    ]
+}

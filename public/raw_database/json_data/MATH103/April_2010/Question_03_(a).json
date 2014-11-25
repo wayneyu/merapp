@@ -9,6 +9,6 @@
     ], 
     "hints": [
         "What is the relation between the given cumulative function \\emph{F(x)}\nand the probability density function \\emph{p(x)}?", 
-        "Since\n\n\\[F(x) = \\int_0^x p(s)\\,ds\\]\n\nthe Fundamental theorem of calculus says that\n\n\\[F'(x) = p(x).\\]\n\nHence you are asked to plot the derivative of the given function\n\\emph{F(x)}."
+        "Since\n\n\\begin{align*}F(x) = \\int_0^x p(s)\\,ds\\end{align*}\n\nthe Fundamental theorem of calculus says that\n\n\\begin{align*}F'(x) = p(x).\\end{align*}\n\nHence you are asked to plot the derivative of the given function\n\\emph{F(x)}."
     ]
 }

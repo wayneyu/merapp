@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_24", 
     "course": "MATH152", 
-    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\[u = 3 + 2i, \\quad z = 1 - i\\]\n\nA24: Evaluate $u/z$. Put your answer in the form $a + ib$ where $a$ and\n$b$ are real numbers.", 
+    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\begin{align*}u = 3 + 2i, \\quad z = 1 - i\\end{align*}\n\nA24: Evaluate $u/z$. Put your answer in the form $a + ib$ where $a$ and\n$b$ are real numbers.", 
     "year": 2010, 
     "sols": [
-        "Using the hint and the facts $\\overline{z} = 1+i$ and\n\\emph{i}\\textsuperscript{2} = \\emph{-1} we compute\n\n\\begin{align*}\n\\frac{u}{z} &= \\frac{3+2i}{1-i} \\\\\n&= \\frac{(3+2i)(1+i)}{(1-i)(1+i)} \\\\\n&= \\frac{3+3i+2i+2i^2}{1-i^2} \\\\\n&= \\frac{1+5i}{2} \\\\\n&= \\frac12 + \\frac52 i\n\\end{align*}"
+        "Using the hint and the facts $\\overline{z} = 1+i$ and\n\\emph{i}\\textsuperscript{2} = \\emph{-1} we compute\n\n\\begin{align*}\n\\frac{u}{z} &= \\frac{3+2i}{1-i} \\\\\n&= \\frac{(3+2i)(1+i)}{(1-i)(1+i)} \\\\\n&= \\frac{3+3i+2i+2i^2}{1-i^2} \\\\\n&= \\frac{1+5i}{2} \\\\\n&= \\frac12 + \\frac52 i\\end{align*}"
     ], 
     "hints": [
         "The trick is to multiply enumerator and denominator by the complex\nconjugate $\\overline{z}$ of the denominator. That way you just divide by\na real number, which is easy to handle."

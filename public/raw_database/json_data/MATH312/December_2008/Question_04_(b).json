@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_04_(b)", 
     "course": "MATH312", 
-    "statement": "Prove that $\\displaystyle 1729 = 7 \\cdot 13 \\cdot 19$ is a Carmichael\nnumber.\n\n(Hint\\[\\displaystyle 1728 = 6 \\cdot 288 = 12 \\cdot 144 = 18 \\cdot 96\\])", 
+    "statement": "Prove that $\\displaystyle 1729 = 7 \\cdot 13 \\cdot 19$ is a Carmichael\nnumber.\n\n(Hint\\begin{align*}\\displaystyle 1728 = 6 \\cdot 288 = 12 \\cdot 144 = 18 \\cdot 96\\end{align*})", 
     "year": 2008, 
     "sols": [
-        "We proceed using the hints. Clearly 1729 is square free so it suffices\nto check that for each prime divisor, we have that $(p-1)\\mid(n-1)$. We\nproceed mechanically\n\n\\begin{align*}\n(7-1) &= 6 \\mid 1728 \\\\\n(13-1) &= 12 \\mid 1728 \\\\\n(19-1) &= 18 \\mid 1728 \n\\end{align*}\n\nAnd all of these are true since\n$\\displaystyle 1728 = 12^{3} = 2^{6}3^{3}$. Hence 1729 is a Carmichael\nnumber."
+        "We proceed using the hints. Clearly 1729 is square free so it suffices\nto check that for each prime divisor, we have that $(p-1)\\mid(n-1)$. We\nproceed mechanically\n\n\\begin{align*}\n(7-1) &= 6 \\mid 1728 \\\\\n(13-1) &= 12 \\mid 1728 \\\\\n(19-1) &= 18 \\mid 1728 \\end{align*}\n\nAnd all of these are true since\n$\\displaystyle 1728 = 12^{3} = 2^{6}3^{3}$. Hence 1729 is a Carmichael\nnumber."
     ], 
     "hints": [
         "A Carmichael number is a composite number \\emph{n} which satisfies\n\n$\\displaystyle b^{n-1} \\equiv 1 \\mod{n}$\n\nfor all integers with $\\displaystyle \\gcd(b,n) = 1$.", 

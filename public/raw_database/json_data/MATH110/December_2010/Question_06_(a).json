@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_06_(a)", 
     "course": "MATH110", 
-    "statement": "A circle of radius 5 centered on the origin has the equation\n\n\\[\\displaystyle x^2 + y^2 = 25\\] This circle is not a function. Why not?", 
+    "statement": "A circle of radius 5 centered on the origin has the equation\n\n\\begin{align*}\\displaystyle x^2 + y^2 = 25\\end{align*} This circle is not a function. Why not?", 
     "year": 2010, 
     "sols": [
         "Given a relation or rule that takes input values (usually denoted\n\\emph{x}) and produces output values (usually denoted \\emph{y}), the\nrelation is a function if each \\emph{x}-value is associated with only\none \\emph{y}-value. In other words, the graph of the relation must pass\nthe ``vertical line test'' - if you can draw a vertical line that\nintersects the graph at two points, the relation is not a function.\n\nIn this case, a single \\emph{x}-value in the domain will be associated\nwith two \\emph{y}-values from the upper and lower half of the circle.\nThis is the same as saying that a circle fails the vertical line test,\nas a vertical line drawn through any point in the domain will intersect\nthe graph in two places."

@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_06_(b)", 
+    "course": "MATH104", 
+    "statement": "Use the formuala $|\\text{Error}| \\leq \\frac{M}{2}(x-a)^2,$ where\n$M > 0$, to estimate an error bound for your approximation of\n$\\sqrt[3]{7}$ from\n\\href{Science:Math Exam Resources/Courses/MATH104/December 2013/Question 06 (a)}{part\n(a)}. It will be useful to remember how to find such an $M.$", 
+    "year": 2013, 
+    "sols": [
+        "Our function we are considering is $\\displaystyle f(x) = x^{1/3}$.\nTaking derivatives gives\n\n$\\displaystyle f'(x) = x^{-2/3}/3$\n\n$\\displaystyle f''(x) = -2x^{-5/3}/9$\n\nOn the interval of length 1 around the point 8, we see that the maximum\nvalue on the second derivative of the absolute value of the double\nderivative is given by\n\n$\\displaystyle |f''(x)| = |-2x^{-5/3}/9| \\leq 2x^{-5/3}/9 \\leq 2\\cdot7^{-5/3}/9$\n\ntrue since the function $\\displaystyle x^{-5/3}$ is a decreasing\nfunction. Thus, the absolute value of hte error is bounded by\n\n$\\displaystyle 2\\cdot7^{-5/3}/18 \\cdot (9-8)^{2} = 2\\cdot7^{-5/3}/18$"
+    ], 
+    "hints": [
+        "To find a value for M, it would suffice to find an upper bound on the\nsecond derivative and use this as the value for \\emph{M}."
+    ]
+}

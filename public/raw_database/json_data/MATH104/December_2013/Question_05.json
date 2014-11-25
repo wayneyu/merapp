@@ -1,0 +1,15 @@
+{
+    "term": "December", 
+    "question": "Question_05", 
+    "course": "MATH104", 
+    "statement": "Currently 1800 people ride a commuter passenger ferry each day and pay\n\\$4 for a ticket. The number of people \\emph{q} willing to ride the\nferry at price \\emph{p} is determined by the relationship\n\n\\begin{align*}p = \\left(\\frac{q-3000}{600}\\right)^2.\\end{align*}\n\nThe company would like to increase its revenue. Use the price elasticity\nof demand $\\epsilon$ to give advice to management on whether it should\nincrease or decrease its price from \\$4 per passenger. Recall that\n$\\epsilon = \\frac{p}{q}\\frac{dq}{dp}.$", 
+    "year": 2013, 
+    "sols": [
+        "To use the elasticity of demand, we evaluate $\\epsilon$ at $p = 4$. If\n$\\epsilon < -1$, then demand is elastic and the price should be lowered\nto increase revenue. Otherwise, if $\\epsilon > -1$, then demand is\ninelastic and the price should be raised.\n\nA quick calculation using the given price-demand relationship shows that\nif $p = 4$, then either $q = 4200$ or $q = 1800$. Hence, we will have to\nconsider both scenarios.\n\nTo evaluate $\\frac{dq}{dp}$, we opt to use the chain rule on the\nprice-demand relationship. Differentiating it with respect to $p$, gives\n\n\\begin{align*}1 = 2\\left(\\frac{q - 3000}{600}\\right)\\frac{1}{600}\\frac{dq}{dp} \\quad \\Rightarrow \\quad \\frac{dq}{dp} = 300\\left(\\frac{600}{q - 3000}\\right)\\end{align*}\nPutting together all the pieces to evaluate $\\epsilon$ at $p = 4$, we\nget\n\n\\begin{align*}\n\\epsilon &= \\frac{p}{q}\\frac{dq}{dp}  \\\\\n&= \\frac{1}{q} \\left(\\frac{q-3000}{600}\\right)^2 300\\left(\\frac{600}{q - 3000}\\right) \\\\\n&= \\frac{300}{q}\\left(\\frac{q - 3000}{600}\\right)\\end{align*} Depending on the value of $q$, the value of $\\epsilon$\nwill be different.\n\nIf $q = 4200$, then $\\epsilon = 3/21$.\n\nIf $q = 1800$, then $\\epsilon = -6/18$.\n\nThus, in either case, the price should be raised in order to increase\nrevenue.\n\nNote: The case where $q = 4200$ is may seem somewhat counter-intuitive\nsince the elasticity of demand relationship suggests here that raising\nthe price actually increases demand (in stark contrast to the general\nrule that increasing price decreases demand). However, this phenomenon\nis not actually very unusual. You may want to ponder what this means...\n(e.g. Do expensive handbags become more or less desirable to wealthy\nshoppers if the price drops?)"
+    ], 
+    "hints": [
+        "To use the elasticity of demand, we evaluate $\\epsilon$ at $p = 4$. If\n$\\epsilon < -1$, then demand is elastic and the price should be lowered\nto increase revenue. Otherwise, if $\\epsilon > -1$, then demand is\ninelastic and the price should be raised.", 
+        "Try differentiating the price-demand relationship with respect to $p$\nand using the chain rule to evaluate $\\frac{dq}{dp}$.", 
+        "Note that the price-demand relationship can give more than one value for\nq for any one value of p."
+    ]
+}

@@ -5,7 +5,7 @@
     "statement": "Evaluate the integral (Hint: use trigonometric identities.)\n\n$I_2 = \\int (\\sin x)^3 (\\cos x)^2\\,dx.$", 
     "year": 2011, 
     "sols": [
-        "\\begin{align*}\nI_2&=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\n\\end{align*}\n\nLet $u=\\cos x$ so that $du=-\\sin x dx.$ Then\n\n\\begin{align*}\nI_2& =-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\n\\end{align*}"
+        "\\begin{align*}\nI_2&=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\\end{align*}\n\nLet $u=\\cos x$ so that $du=-\\sin x dx.$ Then\n\n\\begin{align*}\nI_2&=-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\\end{align*}"
     ], 
     "hints": [
         "Use a trigonometric identity to prepare the integrand for a\nsubstitution.", 

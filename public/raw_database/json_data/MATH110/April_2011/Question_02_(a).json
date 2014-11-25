@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_02_(a)", 
     "course": "MATH110", 
-    "statement": "\\emph{Evaluate the following limit, if it exists.}\n\n\\[\\displaystyle\n\\lim_{x \\to \\pi^+} \\frac{\\sin x}{x-\\pi}\\]", 
+    "statement": "\\emph{Evaluate the following limit, if it exists.}\n\n\\begin{align*}\\displaystyle\n\\lim_{x \\to \\pi^+} \\frac{\\sin x}{x-\\pi}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "Simply trying to evaluate the limit as written gives the following:\n\n\\[\\lim_{x \\to \\pi^+} \\frac{\\sin x}{x - \\pi} = \\frac{0}{0}\\]\n\nThis is an indeterminate form and means that we can use L'Hopital's\nRule. Differentiating the numerator and denominator of the function, we\nget the new limit:\n\n\\[\\lim_{x \\to \\pi^+} \\frac{\\cos x}{1} = \\lim_{x \\to \\pi^+} \\cos x\\]\n\nSimply evaluating this limit gives\n\n\\[\\lim_{x \\to \\pi^+} \\cos x = -1\\]\n\nwhich is also the value of the original limit."
+        "Simply trying to evaluate the limit as written gives the following:\n\n\\begin{align*}\\lim_{x \\to \\pi^+} \\frac{\\sin x}{x - \\pi} = \\frac{0}{0}\\end{align*}\n\nThis is an indeterminate form and means that we can use L'Hopital's\nRule. Differentiating the numerator and denominator of the function, we\nget the new limit:\n\n\\begin{align*}\\lim_{x \\to \\pi^+} \\frac{\\cos x}{1} = \\lim_{x \\to \\pi^+} \\cos x\\end{align*}\n\nSimply evaluating this limit gives\n\n\\begin{align*}\\lim_{x \\to \\pi^+} \\cos x = -1\\end{align*}\n\nwhich is also the value of the original limit."
     ], 
     "hints": [
         "Try evaluating the limit as written. Which rule can you apply to the\nlimit based on the answer you get?"

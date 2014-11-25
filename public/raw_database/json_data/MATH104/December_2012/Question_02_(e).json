@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_02_(e)", 
     "course": "MATH104", 
-    "statement": "Consider the function\n\n\\[f(x)=\\frac{2x^3}{3x^2-9}\\]\n\nIts first and second derivatives are given by\n\n\\[f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\]\n\nIndicate which curve below best represents the graph of y=f(x).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH104_December_2012_Question_2_(e).jpg}\n\\caption{ 650px}\n\\end{figure}", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x)=\\frac{2x^3}{3x^2-9}\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\end{align*}\n\nIndicate which curve below best represents the graph of y=f(x).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH104_December_2012_Question_2_(e).jpg}\n\\caption{ 650px}\n\\end{figure}", 
     "year": 2012, 
     "sols": [
         "The function is decreasing between $(-\\sqrt{3},\\sqrt{3})$ by part (a)\nand so this eliminates graphs a,b,c,d,f,h,i,j,k,l.\n\nThis leaves only e and g. The slant asymptote on g is incorrect and\nhence this leave the correct answer e."

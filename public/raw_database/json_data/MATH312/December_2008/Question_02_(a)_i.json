@@ -5,7 +5,7 @@
     "statement": "\\textbf{For each of the following congruences, find the least\nnonnegative integer \\emph{x} that satisfies it.}\n\n$\\displaystyle \\frac{60!}{31!} \\equiv x \\mod{31}$", 
     "year": 2008, 
     "sols": [
-        "We proceed directly.\n\n\\begin{align*}\n\\frac{60!}{31!} &\\equiv (60)(59)...(32) \\mod{31} \\\\\n&\\equiv (29)(28)...(1) \\mod{31} \\\\\n&\\equiv 29! \\mod{31} \\\\\n&\\equiv 30!\\cdot 30^{-1} \\mod{31} \\\\\n&\\equiv (31-1)!\\cdot (-1) \\mod{31} \\\\\n&\\equiv (-1)(-1) \\mod{31} \\\\\n&\\equiv 1 \\mod{31}\n\\end{align*}\n\nwhere in the second last line we used Wilson's Theorem. We also used the\nfact that\n\n$\\displaystyle 30^{-1} \\equiv (-1)^{-1} \\equiv -1 \\mod{31}$."
+        "We proceed directly.\n\n\\begin{align*}\n\\frac{60!}{31!} &\\equiv (60)(59)...(32) \\mod{31} \\\\\n&\\equiv (29)(28)...(1) \\mod{31} \\\\\n&\\equiv 29! \\mod{31} \\\\\n&\\equiv 30!\\cdot 30^{-1} \\mod{31} \\\\\n&\\equiv (31-1)!\\cdot (-1) \\mod{31} \\\\\n&\\equiv (-1)(-1) \\mod{31} \\\\\n&\\equiv 1 \\mod{31}\\end{align*}\n\nwhere in the second last line we used Wilson's Theorem. We also used the\nfact that\n\n$\\displaystyle 30^{-1} \\equiv (-1)^{-1} \\equiv -1 \\mod{31}$."
     ], 
     "hints": [
         "Reduce and use Wilson's Theorem."

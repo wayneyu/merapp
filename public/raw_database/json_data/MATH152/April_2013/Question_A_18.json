@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_18", 
     "course": "MATH152", 
-    "statement": "Find the matrix for the linear transformation\n$S : \\mathbb{R}^{3} \\to \\mathbb{R}^{3}$ given by\n\n\\[S\\left( \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} \\right) = \\begin{bmatrix} -y + z \\\\ x + y + z \\\\ -x - 2y \\end{bmatrix}\\]", 
+    "statement": "Find the matrix for the linear transformation\n$S : \\mathbb{R}^{3} \\to \\mathbb{R}^{3}$ given by\n\n\\begin{align*}S\\left( \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} \\right) = \\begin{bmatrix} -y + z \\\\ x + y + z \\\\ -x - 2y \\end{bmatrix}\\end{align*}", 
     "year": 2013, 
     "sols": [
-        "Using the hint, we see that\n\n\\[S\\left( \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} \\right) = \\begin{bmatrix} -y + z \\\\ x + y + z \\\\ -x - 2y \\end{bmatrix} \n=  \\begin{bmatrix} 0 \\\\ x  \\\\ -x  \\end{bmatrix} +  \\begin{bmatrix} -y  \\\\ y \\\\ -2y \\end{bmatrix} +  \\begin{bmatrix} z \\\\  z \\\\ 0 \\end{bmatrix} \n=  x\\begin{bmatrix} 0 \\\\ 1  \\\\ -1  \\end{bmatrix} +  y\\begin{bmatrix} -1  \\\\ 1 \\\\ -2 \\end{bmatrix} +  \\begin{bmatrix} 1 \\\\  1 \\\\ 0 \\end{bmatrix}\\]\n\nUsing these as our column vectors, we arrive at\n\n\\[S = \\begin{bmatrix} 0 & -1 & 1 \\\\ 1 & 1 & 1 \\\\ -1 & -2 & 0 \\end{bmatrix}\\]"
+        "Using the hint, we see that\n\n\\begin{align*}S\\left( \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} \\right) = \\begin{bmatrix} -y + z \\\\ x + y + z \\\\ -x - 2y \\end{bmatrix} \n=  \\begin{bmatrix} 0 \\\\ x  \\\\ -x  \\end{bmatrix} +  \\begin{bmatrix} -y  \\\\ y \\\\ -2y \\end{bmatrix} +  \\begin{bmatrix} z \\\\  z \\\\ 0 \\end{bmatrix} \n=  x\\begin{bmatrix} 0 \\\\ 1  \\\\ -1  \\end{bmatrix} +  y\\begin{bmatrix} -1  \\\\ 1 \\\\ -2 \\end{bmatrix} +  \\begin{bmatrix} 1 \\\\  1 \\\\ 0 \\end{bmatrix}\\end{align*}\n\nUsing these as our column vectors, we arrive at\n\n\\begin{align*}S = \\begin{bmatrix} 0 & -1 & 1 \\\\ 1 & 1 & 1 \\\\ -1 & -2 & 0 \\end{bmatrix}\\end{align*}"
     ], 
     "hints": [
         "Split the vector on the right into a sum of three vectors, separated by\n\\emph{x}, \\emph{y}, \\emph{z}, then take the vectors as the columns of\nyour matrix \\emph{S}."

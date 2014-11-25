@@ -2,13 +2,13 @@
     "term": "April", 
     "question": "Question_04_(d)", 
     "course": "MATH101", 
-    "statement": "Determine whether the following series is convergent or divergent.\nRemember to justify your answer:\n\n\\[\\sum_{n=2}^\\infty\\left(\\frac{1}{\\ln n}\\right)^2\\frac{1}{n}\\]", 
+    "statement": "Determine whether the following series is convergent or divergent.\nRemember to justify your answer:\n\n\\begin{align*}\\sum_{n=2}^\\infty\\left(\\frac{1}{\\ln n}\\right)^2\\frac{1}{n}\\end{align*}", 
     "year": 2011, 
     "sols": [
-        "By the integral test, this sum is convergent if and only if the integral\n\n\\begin{align*}\n\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx\n\\end{align*}\n\nis also convergent. Using the substitution $u=\\ln x$,\n\n\\begin{align*}\n&\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx \\\\\n&= \\lim_{b \\rightarrow \\infty} \\int_2^b \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx \\\\\n&= \\lim_{b \\rightarrow \\infty} \\int_{\\ln2}^{\\ln b} \\frac{1}{u^2} \\, du\\\\\n&= \\lim_{b \\rightarrow \\infty} \\left. -\\frac{1}{u} \\right|_{\\ln2}^{\\ln b}\\\\\n&= \\lim_{b \\rightarrow \\infty} \\left(-\\frac{1}{\\ln b} + \\frac{1}{\\ln 2}\\right)\\\\\n&= \\frac{1}{\\ln2} <\\infty.\n\\end{align*}\n\nHence, the sum is convergent."
+        "By the integral test, this sum is convergent if and only if the integral\n\n\\begin{align*}\n\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx\\end{align*}\n\nis also convergent. Using the substitution $u=\\ln x$,\n\n\\begin{align*}\n&\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx \\\\\n&= \\lim_{b \\rightarrow \\infty} \\int_2^b \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx \\\\\n&= \\lim_{b \\rightarrow \\infty} \\int_{\\ln2}^{\\ln b} \\frac{1}{u^2} \\, du\\\\\n&= \\lim_{b \\rightarrow \\infty} \\left. -\\frac{1}{u} \\right|_{\\ln2}^{\\ln b}\\\\\n&= \\lim_{b \\rightarrow \\infty} \\left(-\\frac{1}{\\ln b} + \\frac{1}{\\ln 2}\\right)\\\\\n&= \\frac{1}{\\ln2} <\\infty.\\end{align*}\n\nHence, the sum is convergent."
     ], 
     "hints": [
         "Use the integral test.", 
-        "By the integral test, this sum is convergent if and only if the integral\n\n\\begin{align*}\n\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx\n\\end{align*}\n\nconverges."
+        "By the integral test, this sum is convergent if and only if the integral\n\n\\begin{align*}\n\\int_2^\\infty \\left(\\frac{1}{\\ln x}\\right)^2 \\frac{1}{x} \\, dx\\end{align*}\n\nconverges."
     ]
 }

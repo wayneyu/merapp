@@ -5,7 +5,7 @@
     "statement": "Consider the triangle \\emph{T} in three dimensions with vertices\n\\emph{(0, 1, 2)}, \\emph{(1, 1, 5)} and \\emph{(\u00e2\u0088\u00921, 2, 2)}.\n\nConsider also the plane \\emph{P} that contains \\emph{T}.\n\nVerify that \\emph{(0, 0, \u00e2\u0088\u00921)} is on the plane \\emph{P}.", 
     "year": 2010, 
     "sols": [
-        "Plug in \\emph{(0, 0, \u00e2\u0088\u00921)} into the equation in part (c), i.e. put\n\\emph{x = 0, y = 0, z = -1} into the equation\n\n\\[x + y - \\frac{1}{3}z = \\frac{1}{3}\\]\n\nyields $0 + 0 - (-\\frac{1}{3}) = \\frac{1}{3}$.\n\nThus \\emph{(0, 0, \u00e2\u0088\u00921)} is on \\emph{P}."
+        "Plug in \\emph{(0, 0, \u00e2\u0088\u00921)} into the equation in part (c), i.e. put\n\\emph{x = 0, y = 0, z = -1} into the equation\n\n\\begin{align*}x + y - \\frac{1}{3}z = \\frac{1}{3}\\end{align*}\n\nyields $0 + 0 - (-\\frac{1}{3}) = \\frac{1}{3}$.\n\nThus \\emph{(0, 0, \u00e2\u0088\u00921)} is on \\emph{P}."
     ], 
     "hints": [
         "What equation must \\emph{(0, 0, -1)} satisfy?"

@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_04_(a)", 
     "course": "MATH103", 
-    "statement": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\[I = \\int_4^9 e^{\\sqrt{x}}\\,dx\\]", 
+    "statement": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\begin{align*}I = \\int_4^9 e^{\\sqrt{x}}\\,dx\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "Let $u = \\sqrt{x}$ so $du = \\frac{dx}{2\\sqrt{x}}$.\n\nCross multiplying yields $2\\sqrt{x}du = dx$.\n\nSince $u = \\sqrt{x}$, the above is equal to $\\displaystyle 2udu = dx$.\n\nNote further that $u(4) = \\sqrt{4} = 2$ and $u(9) = \\sqrt{9} = 3$\n\nSubstituting gives\n\n$\\int_{4}^{9} e^{\\sqrt{x}} dx = \\int_{2}^{3} 2ue^{u}du = 2\\int_{2}^{3} ue^{u}du$\n\nWe integrate by parts. Let $v=u$ and $dw = e^{u}du$ so\n\n\\begin{align*}\nv = u \\quad&\\quad w = e^{u}\\\\\ndv = du \\quad&\\quad dw = e^{u}du\n\\end{align*}\n\nHence \\begin{align*}\n\\int_{4}^{9} e^{\\sqrt{x}} dx &= 2\\int_{2}^{3} ue^{u}du \\\\ \n&= 2(ue^{u}\\mid_{2}^{3} - \\int_{2}^{3} e^{u}du)\\\\\n&= 2(3e^{3}-2e^{2} - e^{u}\\mid_{2}^{3})\\\\\n&= 2(3e^{3}-2e^{2} - e^{3} + e^{2})\\\\\n&= 2(2e^{3}-e^{2})\\\\\n&= 4e^{3}-2e^{2}\n\\end{align*}\n\ncompleting the integral."
+        "Let $u = \\sqrt{x}$ so $du = \\frac{dx}{2\\sqrt{x}}$.\n\nCross multiplying yields $2\\sqrt{x}du = dx$.\n\nSince $u = \\sqrt{x}$, the above is equal to $\\displaystyle 2udu = dx$.\n\nNote further that $u(4) = \\sqrt{4} = 2$ and $u(9) = \\sqrt{9} = 3$\n\nSubstituting gives\n\n$\\int_{4}^{9} e^{\\sqrt{x}} dx = \\int_{2}^{3} 2ue^{u}du = 2\\int_{2}^{3} ue^{u}du$\n\nWe integrate by parts. Let $v=u$ and $dw = e^{u}du$ so\n\n\\begin{align*}\nv = u \\quad&\\quad w = e^{u}\\\\\ndv = du \\quad&\\quad dw = e^{u}du\\end{align*}\n\nHence \\begin{align*}\n\\int_{4}^{9} e^{\\sqrt{x}} dx &= 2\\int_{2}^{3} ue^{u}du \\\\ \n&= 2(ue^{u}\\mid_{2}^{3} - \\int_{2}^{3} e^{u}du)\\\\\n&= 2(3e^{3}-2e^{2} - e^{u}\\mid_{2}^{3})\\\\\n&= 2(3e^{3}-2e^{2} - e^{3} + e^{2})\\\\\n&= 2(2e^{3}-e^{2})\\\\\n&= 4e^{3}-2e^{2}\\end{align*}\n\ncompleting the integral."
     ], 
     "hints": [
         "What seems to be complicated? Try using a substitution to get rid of the\ncomplicated part.", 

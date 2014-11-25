@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_22", 
     "course": "MATH152", 
-    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\[u = 3 + 2i, \\quad z = 1 - i\\]\n\nA22: Evaluate $2u - z$. Your answer should be in the form $a + ib$ where\n$a$ and $b$ are real numbers.", 
+    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\begin{align*}u = 3 + 2i, \\quad z = 1 - i\\end{align*}\n\nA22: Evaluate $2u - z$. Your answer should be in the form $a + ib$ where\n$a$ and $b$ are real numbers.", 
     "year": 2010, 
     "sols": [
-        "This is straight forward:\n\n\\[2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i\\]"
+        "This is straight forward:\n\n\\begin{align*}2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i\\end{align*}"
     ], 
     "hints": [
         "Multiplying a complex number means multiplying the real and the\nimaginary part. Adding complex numbers means adding the real parts and\nadding the imaginary parts separately."

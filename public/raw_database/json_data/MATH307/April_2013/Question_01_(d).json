@@ -2,7 +2,7 @@
     "term": "April", 
     "question": "Question_01_(d)", 
     "course": "MATH307", 
-    "statement": "Find the norm and condition number of\n\n\\[\\begin{bmatrix}\n0  & 2 \\\\ 1 & 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 & 1 \\\\ 1 & 0\n\\end{bmatrix} \\begin{bmatrix}\n1 & 0 \\\\ 0 & 2\n\\end{bmatrix} \\right)\\]", 
+    "statement": "Find the norm and condition number of\n\n\\begin{align*}\\begin{bmatrix}\n0  & 2 \\\\ 1 & 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 & 1 \\\\ 1 & 0\n\\end{bmatrix} \\begin{bmatrix}\n1 & 0 \\\\ 0 & 2\n\\end{bmatrix} \\right)\\end{align*}", 
     "year": 2013, 
     "sols": [
         "Let $A = \\begin{bmatrix} \n0 & 2 \\\\ \n1 & 0\n\\end{bmatrix}, U = \\begin{bmatrix}\n0 &1 \\\\ \n1& 0\n\\end{bmatrix}, B = \\begin{bmatrix}\n1 & 0\\\\ \n0& 2\n\\end{bmatrix}$\n\nObserve that $U^{-1}$ = $U^{T}$ and all entries are real, so U is an\northogonal matrix. This means that\n$\\begin{Vmatrix}U\\end{Vmatrix}\\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}A\\end{Vmatrix}$\n\n$\\begin{Vmatrix}B\\end{Vmatrix} = 2$\n\nbecause the norm of a diagonal matrix is the entry with the largest\nmagnitude.\n\nand therefore, $\\begin{Vmatrix}A\\end{Vmatrix} = 2$.\n\nNext, notice that\n\n$\\displaystyle A^{-1} = B^{-1}U^{-1} = B^{-1} U$\n\nOnce again, since U is orthogonal,\n\n$\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = \\begin{Vmatrix}B^{-1}\\end{Vmatrix}$\n\nAs\n\n$B^{-1} = \\begin{bmatrix}1 && 0 \\\\ 0 && 1/2\\end{bmatrix}$\n\nwe have that $\\begin{Vmatrix}B^{-1}\\end{Vmatrix} = 1$. Thus\n\n$\\begin{Vmatrix}A\\end{Vmatrix}\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = 2\\cdot 1 = 2$\n\ntherefore, cond(A) = 2"

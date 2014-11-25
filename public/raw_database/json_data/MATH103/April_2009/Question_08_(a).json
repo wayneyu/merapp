@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(a)", 
     "course": "MATH103", 
-    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\[g(t) = ae^{t/2} \\text{ mm/day},\\]\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nDetermine the height of the plant \\emph{h(t)} as a function of time\n\\emph{t}, assuming that it was zero at time \\emph{t = 0}.", 
+    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}g(t) = ae^{t/2} \\text{ mm/day},\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nDetermine the height of the plant \\emph{h(t)} as a function of time\n\\emph{t}, assuming that it was zero at time \\emph{t = 0}.", 
     "year": 2009, 
     "sols": [
-        "Since the growth rate is the derivative of the height for any time\n$t\\geq 0$, we need to integrate the function $g(t)$ to find the height\ndepending on $t$.\n\n$h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c$\n\nfor a constant $c\\in\\R$.\n\nWe find that constant by using the initial condition.\n\n$0=h(0)=2a + c,$\n\n\\[c=-2a.\\]\n\nSo, the function of height is\n\n$h(t)=2a(e^{\\frac{t}{2}}-1)$."
+        "Since the growth rate is the derivative of the height for any time\n$t\\geq 0$, we need to integrate the function $g(t)$ to find the height\ndepending on $t$.\n\n$h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c$\n\nfor a constant $c\\in\\R$.\n\nWe find that constant by using the initial condition.\n\n$0=h(0)=2a + c,$\n\n\\begin{align*}c=-2a.\\end{align*}\n\nSo, the function of height is\n\n$h(t)=2a(e^{\\frac{t}{2}}-1)$."
     ], 
     "hints": [
         "How are the height and the growth rate related?"

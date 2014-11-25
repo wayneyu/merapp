@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_01_(a)", 
     "course": "MATH105", 
-    "statement": "Let\n\n\\[\\displaystyle f(x,y) = 8x^{1/5} y^{4/5}.\\] Find\n\n\\[\\displaystyle f(2x,2y) - 2f(x,y).\\]", 
+    "statement": "Let\n\n\\begin{align*}\\displaystyle f(x,y) = 8x^{1/5} y^{4/5}.\\end{align*} Find\n\n\\begin{align*}\\displaystyle f(2x,2y) - 2f(x,y).\\end{align*}", 
     "year": 2010, 
     "sols": [
-        "Given the function\n\n\\[\\displaystyle f(x,y) = 8x^{1/5} y^{4/5}\\] We can compute each of\n$f(2x,2y)$ and $2f(x,y)$.\n\n\\begin{align*} f(2x,2y) &= 8 (2x)^{1/5} (2y)^{4/5} \\\\ &= 8(2)^{1/5+4/5} x^{1/5} y^{4/5} \\\\&= 16 x^{1/5}y^{4/5}\\end{align*}\n\nand\n\n\\begin{align*}2f(x,y) &= 2(8x^{1/5}y^{4/5}) \\\\&= 16 x^{1/5}y^{4/5}\\end{align*}\n\nAnd so we obtain that\n\n\\[\\displaystyle f(2x,2y)-2f(x,y) = 0\\]"
+        "Given the function\n\n\\begin{align*}\\displaystyle f(x,y) = 8x^{1/5} y^{4/5}\\end{align*} We can compute each of\n$f(2x,2y)$ and $2f(x,y)$.\n\n\\begin{align*} f(2x,2y) &= 8 (2x)^{1/5} (2y)^{4/5} \\\\ &= 8(2)^{1/5+4/5} x^{1/5} y^{4/5} \\\\&= 16 x^{1/5}y^{4/5}\\end{align*}\n\nand\n\n\\begin{align*}2f(x,y) &= 2(8x^{1/5}y^{4/5}) \\\\&= 16 x^{1/5}y^{4/5}\\end{align*}\n\nAnd so we obtain that\n\n\\begin{align*}\\displaystyle f(2x,2y)-2f(x,y) = 0\\end{align*}"
     ], 
     "hints": [
         "Use that $(ab)^c = a^c b^c.$"

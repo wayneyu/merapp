@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(c)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nc)\n$f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&\\text{if}\\,\\, x < 1 \\\\ \\sqrt{x} \\,\\,&\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,$\nis continuous at all real numbers.", 
+    "year": 2013, 
+    "sols": [
+        "\\textbf{False:} To hunt for discontinuities, we have to check inside\neach piece and also at the boundary.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  For the boundary to be continuous, we must have:\n\n  \\begin{align*}\n  \\lim_{x\\rightarrow 1^-} f(x) &=\\lim_{x\\rightarrow 1^+} f(x)\\\\\n  \\lim_{x\\rightarrow 1^-} \\frac{3}{x+2} &=\\lim_{x\\rightarrow 1^+} \\sqrt{x}\\\\\n  \\frac{3}{1+2} &=\\sqrt{1} \\\\\n  1&=1.\\end{align*}\n\n  So the limits exists and is equal to $1$ which happens to be\n  $f(1) =1$. So the function in continuous at the boundary.\n\\item\n  On the right of $x=1$, the function is continuous since $\\sqrt{x}$ is\n  only undefined for $x<0$ which is not covered by this case.\n\\item\n  On the left of $x=1$, the function is discontinuous at $x=-2$ since\n  the denominator is $0$. This fall inside the region considered. So\n  $f(x)$ is discontinuous at $x=-2$.\n\\end{itemize}\n\nThat means $f(x)$ is NOT continuous over all real numbers."
+    ], 
+    "hints": [
+        "You need to check three things:\n\n1. That the function is continue at the break point given by $x=1$\n\n2. That the right hand side of the function is continuous at all points\nlarger than 1.\n\n3. That the left hand side of the function is continuous at all points\nsmaller than 1."
+    ]
+}

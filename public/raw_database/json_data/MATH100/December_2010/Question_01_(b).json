@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(b)", 
     "course": "MATH100", 
-    "statement": "Evaluate\n\n\\[\\lim_{x\\to\\infty}{(\\sqrt{9x^2+x}-3x)}\\] Or determine that this limit\ndoes not exist.", 
+    "statement": "Evaluate\n\n\\begin{align*}\\lim_{x\\to\\infty}{(\\sqrt{9x^2+x}-3x)}\\end{align*} Or determine that this limit\ndoes not exist.", 
     "year": 2010, 
     "sols": [
-        "Rationalizing the numerator gives\n\n\\begin{align*}\n&\\lim_{x\\to\\infty}\\sqrt{9x^2+x}-3x\\\\\n=& \\lim_{x\\to\\infty}\\sqrt{9x^2+x}-3x \\cdot \\frac{\\sqrt{9x^2+x}+3x}{\\sqrt{9x^2+x}+3x}\\\\\n=& \\lim_{x\\to\\infty}\\frac{9x^2+x-9x^2}{\\sqrt{9x^2+x}+3x}\\\\\n=& \\lim_{x\\to\\infty}\\frac{x}{\\sqrt{9x^2+x}+3x}\n\\end{align*}\n\nNow we can factor the denominator. Remembering that\n$\\sqrt{x^{2}} = |x|$, we have that\n\n\\begin{align*}\n& \\lim_{x\\to\\infty}\\frac{x}{\\sqrt{9x^2+x}+3x}\\\\\n=& \\lim_{x\\to\\infty}\\frac{x}{|x|\\sqrt{9+1/x}+3x}\n\\end{align*} As the limit goes to positive infinity, $|x| = x$ and so\n\n\\begin{align*}\n &\\lim_{x\\to\\infty}\\frac{x}{|x|\\sqrt{9+1/x}+3x}\\\\\n=& \\lim_{x\\to\\infty}\\frac{x}{x\\sqrt{9+1/x}+3x}\\\\\n=& \\lim_{x\\to\\infty}\\frac{x}{x(\\sqrt{9+1/x}+3)}\\\\\n=& \\lim_{x\\to\\infty}\\frac{1}{\\sqrt{9+1/x}+3}\\\\\n=& \\frac{1}{\\sqrt{9+0}+3}\\\\\n=& \\frac{1}{6}\\\\\n\\end{align*}"
+        "Rationalizing the numerator gives\n\n\\begin{align*}\n&\\lim_{x\\to\\infty}\\sqrt{9x^2+x}-3x\\\\\n&= \\lim_{x\\to\\infty}\\sqrt{9x^2+x}-3x \\cdot \\frac{\\sqrt{9x^2+x}+3x}{\\sqrt{9x^2+x}+3x}\\\\\n&= \\lim_{x\\to\\infty}\\frac{9x^2+x-9x^2}{\\sqrt{9x^2+x}+3x}\\\\\n&= \\lim_{x\\to\\infty}\\frac{x}{\\sqrt{9x^2+x}+3x}\\end{align*}\n\nNow we can factor the denominator. Remembering that\n$\\sqrt{x^{2}} = |x|$, we have that\n\n\\begin{align*}\n& \\lim_{x\\to\\infty}\\frac{x}{\\sqrt{9x^2+x}+3x}\\\\\n&= \\lim_{x\\to\\infty}\\frac{x}{|x|\\sqrt{9+1/x}+3x}\\end{align*} As the limit goes to positive infinity, $|x| = x$ and so\n\n\\begin{align*}\n &\\lim_{x\\to\\infty}\\frac{x}{|x|\\sqrt{9+1/x}+3x}\\\\\n&= \\lim_{x\\to\\infty}\\frac{x}{x\\sqrt{9+1/x}+3x}\\\\\n&= \\lim_{x\\to\\infty}\\frac{x}{x(\\sqrt{9+1/x}+3)}\\\\\n&= \\lim_{x\\to\\infty}\\frac{1}{\\sqrt{9+1/x}+3}\\\\\n&= \\frac{1}{\\sqrt{9+0}+3}\\\\\n&= \\frac{1}{6}\\end{align*}"
     ], 
     "hints": [
         "We can't plug in the limit value. Factoring doesn't immediately help\neither (if you try it you should end up with something of the form\ninfinity times 0). What other techniques can we try?", 

@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_A_03", 
     "course": "MATH152", 
-    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\[\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\]\n\nA3: Are $\\mathbf{x}$ and $\\mathbf{y}$ linearly independent? Justify\nbriefly.", 
+    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{align*}\n\nA3: Are $\\mathbf{x}$ and $\\mathbf{y}$ linearly independent? Justify\nbriefly.", 
     "year": 2010, 
     "sols": [
-        "From the hint we see that two vectors \\textbf{x} and \\textbf{y} are\nlinearly dependent if they are multiples of one another. This would mean\nthat we can write,\n\n\\[\\mathbf{x}=k\\mathbf{y}\\]\n\nfor some constant \\emph{k}. This is equivalent to\n\n\\[\\begin{bmatrix}\n1\\\\\n-1\\\\\n-1\n\\end{bmatrix}\n=k\n\\begin{bmatrix}\n1\\\\\n1\\\\\n2\n\\end{bmatrix}\\]\n\nor\n\n\\begin{align*}\n1&=k\\\\\n-1&=k\\\\\n-1&=2k\n\\end{align*}\n\nThe first equation tells us \\emph{k}=1 but the other two equations then\nsay that 1=-1 and 2=-1 which are both false and therefore there does not\nexist a unique \\emph{k} such that \\textbf{x}=\\emph{k}\\textbf{y} and thus\n\\textbf{x} and \\textbf{y} are not multiples of one another so they are\n\\textbf{not} linearly dependent."
+        "From the hint we see that two vectors \\textbf{x} and \\textbf{y} are\nlinearly dependent if they are multiples of one another. This would mean\nthat we can write,\n\n\\begin{align*}\\mathbf{x}=k\\mathbf{y}\\end{align*}\n\nfor some constant \\emph{k}. This is equivalent to\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n-1\\\\\n-1\n\\end{bmatrix}\n=k\n\\begin{bmatrix}\n1\\\\\n1\\\\\n2\n\\end{bmatrix}\\end{align*}\n\nor\n\n\\begin{align*}\n1&=k\\\\\n-1&=k\\\\\n-1&=2k\\end{align*}\n\nThe first equation tells us \\emph{k}=1 but the other two equations then\nsay that 1=-1 and 2=-1 which are both false and therefore there does not\nexist a unique \\emph{k} such that \\textbf{x}=\\emph{k}\\textbf{y} and thus\n\\textbf{x} and \\textbf{y} are not multiples of one another so they are\n\\textbf{not} linearly dependent."
     ], 
     "hints": [
         "Two vectors \\textbf{x} and \\textbf{y} are linearly dependent if one is a\nmultiple of the other."

@@ -5,7 +5,7 @@
     "statement": "Find the Laplace transform $X(s)$ of the solution to the initial value\nproblem $x''' + x = 0, \\quad x(0) = 1, x'(0) = 2, x''(0) = 3$ (but\n\\textbf{do not} compute $x(t)$).", 
     "year": 2013, 
     "sols": [
-        "The Laplace transform of the 3rd derivative $\\displaystyle x'''(t)$ is\ngiven by\n\n\\[\\mathcal{L}(x'''(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0)\\]\n\nPlugging this into the equation, and using that the Laplace transform is\nlinear, we obtain\n\n\\[0 = \\mathcal{L}(x'''(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0) + X(s)\\]\n\nUpon using $\\displaystyle x(0) = 1, x'(0) = 2, x''(0) = 3$, we have\n$\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3$ so\n\n\\[X(s) = \\frac{s^2+2s+3}{s^3+1}\\]"
+        "The Laplace transform of the 3rd derivative $\\displaystyle x'''(t)$ is\ngiven by\n\n\\begin{align*}\\mathcal{L}(x'''(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0)\\end{align*}\n\nPlugging this into the equation, and using that the Laplace transform is\nlinear, we obtain\n\n\\begin{align*}0 = \\mathcal{L}(x'''(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0) + X(s)\\end{align*}\n\nUpon using $\\displaystyle x(0) = 1, x'(0) = 2, x''(0) = 3$, we have\n$\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3$ so\n\n\\begin{align*}X(s) = \\frac{s^2+2s+3}{s^3+1}\\end{align*}"
     ], 
     "hints": [
         "How does the \\emph{n}-th derivative, \\emph{x\\textsuperscript{(n)}(t)}\ntransform for an arbitrary function \\emph{x(t)}?"

@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_04_(i)", 
     "course": "MATH102", 
-    "statement": "Consider the function\n\n\\[f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\] i) Determine\nf(x) for $x \\rightarrow \\pm \\infty.$", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\end{align*} i) Determine\nf(x) for $x \\rightarrow \\pm \\infty.$", 
     "year": 2011, 
     "sols": [
-        "When considering limits at infinity, only that term with the highest\ndegree plays a role. So we can conclude instantly that the limit at\neither positive or negative infinity will be positive infinity.\n\nTo illustrate why this is true, consider the full computation below. We\nhave that\n\n\\begin{align*}\n\\lim_{x \\to \\infty} f(x) &= \\lim_{x \\to \\infty} \\frac{1}{4}x^4 -2x^3 + \\frac{9}{2}x^2\\\\\n&= \\lim_{x \\to \\infty} \\frac{1}{4}x^4 (1-2 \\frac{1}{x} + \\frac{9}{2x^2})\\\\\n&=  \\lim_{x \\to \\infty} \\frac{1}{4}x^4\\\\\n&= +\\infty\n\\end{align*}"
+        "When considering limits at infinity, only that term with the highest\ndegree plays a role. So we can conclude instantly that the limit at\neither positive or negative infinity will be positive infinity.\n\nTo illustrate why this is true, consider the full computation below. We\nhave that\n\n\\begin{align*}\n\\lim_{x \\to \\infty} f(x) &= \\lim_{x \\to \\infty} \\frac{1}{4}x^4 -2x^3 + \\frac{9}{2}x^2\\\\\n&= \\lim_{x \\to \\infty} \\frac{1}{4}x^4 (1-2 \\frac{1}{x} + \\frac{9}{2x^2})\\\\\n&=  \\lim_{x \\to \\infty} \\frac{1}{4}x^4\\\\\n&= +\\infty\\end{align*}"
     ], 
     "hints": [
         "Which term dominates the polynomial? What happens to it as it tends to\nplus or minus infinity?"

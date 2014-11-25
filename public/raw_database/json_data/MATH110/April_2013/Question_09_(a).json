@@ -5,7 +5,7 @@
     "statement": "Use an appropriate line approximation to estimate\n\\emph{e\\textsuperscript{0.1}}.", 
     "year": 2013, 
     "sols": [
-        "The linear approximation formula is\n\n\\[f(x) \\approx L(x) = f'(a)(x-a) + f(a)\\]\n\nFor some value \\emph{a} that is near the value to be approximated. In\nour case, $f(x) = e^x$ and a sensible choice for \\emph{a} would be\n\\emph{0} as it is easy to calculate $\\displaystyle f(0) = e^0$ and\n$\\displaystyle f'(0) = e^0$. Plugging this into our formula for\n\\emph{L(x)} we have:\n\n\\[\\displaystyle L(x) = e^0(x - 0) + e^0\\]\n\n\\[\\displaystyle L(x) = x + 1\\]\n\nTo approximate $e^{0.1}$, we simply plug in $x = 0.1$ to get\n\n\\[\\displaystyle L(0.1) = 0.1 + 1 = 1.1\\]"
+        "The linear approximation formula is\n\n\\begin{align*}f(x) \\approx L(x) = f'(a)(x-a) + f(a)\\end{align*}\n\nFor some value \\emph{a} that is near the value to be approximated. In\nour case, $f(x) = e^x$ and a sensible choice for \\emph{a} would be\n\\emph{0} as it is easy to calculate $\\displaystyle f(0) = e^0$ and\n$\\displaystyle f'(0) = e^0$. Plugging this into our formula for\n\\emph{L(x)} we have:\n\n\\begin{align*}\\displaystyle L(x) = e^0(x - 0) + e^0\\end{align*}\n\n\\begin{align*}\\displaystyle L(x) = x + 1\\end{align*}\n\nTo approximate $e^{0.1}$, we simply plug in $x = 0.1$ to get\n\n\\begin{align*}\\displaystyle L(0.1) = 0.1 + 1 = 1.1\\end{align*}"
     ], 
     "hints": [
         "The linear approximation method requires choosing a value that is easy\nto calculate (usually denoted by the variable \\emph{a}), near the value\nbeing approximated. What would be a good choice for this question?"

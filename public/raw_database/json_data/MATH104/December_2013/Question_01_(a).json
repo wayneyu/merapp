@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(a)", 
+    "course": "MATH104", 
+    "statement": "Find $\\displaystyle f'(x)$ where $f(x) = \\frac{\\sin(x)}{e^x + 7}$. Do\nNOT simplify your answer.", 
+    "year": 2013, 
+    "sols": [
+        "Using the quotient rule, we see that\n\n$\\displaystyle f'(x) = \\frac{\\cos(x)(e^{x}+7) - e^{x}\\sin(x)}{(e^{x}+7)^{2}}$\n\nSince we do not need to simplify, this is an acceptable answer."
+    ], 
+    "hints": [
+        "Two words: Quotient Rule."
+    ]
+}

@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_02_(b)", 
     "course": "MATH215", 
-    "statement": "Solve\n\n\\[\\frac{dx}{dt} = \\frac{t^2+1}{x^2+1}, \\quad x(0) = -1.\\] You may leave\nyour result in implicit form.", 
+    "statement": "Solve\n\n\\begin{align*}\\frac{dx}{dt} = \\frac{t^2+1}{x^2+1}, \\quad x(0) = -1.\\end{align*} You may leave\nyour result in implicit form.", 
     "year": 2013, 
     "sols": [
-        "As the ODE is separable, we can re-express with the differentials\nseparated:\n\n\\[\\displaystyle\n(x^2+1) dx = (t^2+1) dt\\] which can be integrated to yield\n\n\\[\\int (x^2+1) dx = \\frac{x^3}{3} + x = \\int (t^2+1) dt = \\frac{t^3}{3} + t + C\\]\n\nWe merge the two integration constants to \\emph{C}. From our initial\ncondition that $x(0) = -1$ we obtain\n\n\\[\\displaystyle \\frac{(-1)^3}{3} - 1 = \\frac{0^3}{3} + 0 + C\\]\n\nand hence \\emph{C = -4/3}. Left in implicit form the solution reads\n\n\\[\\frac{x^3}{3} + x = \\frac{t^3}{3} + t - \\frac{4}{3}\\]"
+        "As the ODE is separable, we can re-express with the differentials\nseparated:\n\n\\begin{align*}\\displaystyle\n(x^2+1) dx = (t^2+1) dt\\end{align*} which can be integrated to yield\n\n\\begin{align*}\\int (x^2+1) dx = \\frac{x^3}{3} + x = \\int (t^2+1) dt = \\frac{t^3}{3} + t + C\\end{align*}\n\nWe merge the two integration constants to \\emph{C}. From our initial\ncondition that $x(0) = -1$ we obtain\n\n\\begin{align*}\\displaystyle \\frac{(-1)^3}{3} - 1 = \\frac{0^3}{3} + 0 + C\\end{align*}\n\nand hence \\emph{C = -4/3}. Left in implicit form the solution reads\n\n\\begin{align*}\\frac{x^3}{3} + x = \\frac{t^3}{3} + t - \\frac{4}{3}\\end{align*}"
     ], 
     "hints": [
         "Can you classify the type of ODE this is? How can this friendly type of\nODE be solved?"

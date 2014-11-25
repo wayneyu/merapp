@@ -2,7 +2,7 @@
     "term": "December", 
     "question": "Question_05_(b)", 
     "course": "MATH307", 
-    "statement": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\[P = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\\]\n\n\\textbf{(b)} If we begin with equal probabilities of being at each site,\nwhat are the probabilities of being at each site after one step? What is\nthe probability of being at site 6 after two steps?", 
+    "statement": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}P = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(b)} If we begin with equal probabilities of being at each site,\nwhat are the probabilities of being at each site after one step? What is\nthe probability of being at site 6 after two steps?", 
     "year": 2012, 
     "sols": [], 
     "hints": []

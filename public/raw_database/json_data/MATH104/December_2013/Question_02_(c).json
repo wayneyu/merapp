@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_02_(c)", 
+    "course": "MATH104", 
+    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\nc) On which intervals is f(x) increasing? On which intervals is f(x)\ndecreasing?", 
+    "year": 2013, 
+    "sols": [
+        "We proceed as suggested by the hint.\n\nOn the interval $\\displaystyle (-\\infty,-2)$, we see that the derivative\nat the point $\\displaystyle x=-10$ is given by\n$\\displaystyle f'(-10) = \\frac{-8(-10)}{((-10)^{2}-4)^{2}} > 0$ and so\nthe function is increasing on this interval.\n\nOn the interval $\\displaystyle (-2,0)$, we see that the derivative at\nthe point $\\displaystyle x=-1$ is given by\n$\\displaystyle f'(-1) = \\frac{-8(-1)}{((-1)^{2}-4)^{2}} > 0$ and so the\nfunction is increasing on this interval.\n\nOn the interval $\\displaystyle (0,2)$, we see that the derivative at the\npoint $\\displaystyle x=1$ is given by\n$\\displaystyle f'(1) = \\frac{-8(1)}{((1)^{2}-4)^{2}} < 0$ and so the\nfunction is decreasing on this interval.\n\nOn the interval $\\displaystyle (2,\\infty)$, we see that the derivative\nat the point $\\displaystyle x=10$ is given by\n$\\displaystyle f'(10) = \\frac{-8(10)}{((10)^{2}-4)^{2}} < 0$ and so the\nfunction is decreasing on this interval."
+    ], 
+    "hints": [
+        "Remember we need to check the sign of the derivative on the intervals\nbetween the critical points found in part (a)."
+    ]
+}

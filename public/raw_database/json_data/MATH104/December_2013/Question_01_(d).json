@@ -1,0 +1,14 @@
+{
+    "term": "December", 
+    "question": "Question_01_(d)", 
+    "course": "MATH104", 
+    "statement": "Find the slope of the tangent line to $\\displaystyle y = \\ln(x^2)$ at\n$\\displaystyle x = e^2$.", 
+    "year": 2013, 
+    "sols": [
+        "Using the hint, we find the derivative at the given point. Applying the\nchain rule we find\n\n\\begin{align*}\ny &= \\ln\\left(x^2\\right) \\\\\n\\frac{dy}{dx} &= \\frac1{x^2} \\cdot 2x \\\\\n\\frac{dy}{dx} &= \\frac2{x} \\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\\end{align*}", 
+        "Using the hint, we find the derivative at the given point. In the first\nstep below, we use our logarithm rules to see that\n$\\ln(x^{2}) = 2\\ln(x)$. Hence\n\n\\begin{align*}\ny &= \\ln(x^{2})\\\\\ny &= 2\\ln(x)\\\\\n\\frac{dy}{dx} &= \\frac{2}{x}\\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\\end{align*}"
+    ], 
+    "hints": [
+        "Remember that the slope of the tangent line is the same as the\nderivative at the given point."
+    ]
+}

@@ -5,7 +5,7 @@
     "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is\n$3^{\\circ}C$. After 30 minutes in a $19^{\\circ}C$ room, its temperature\nis $11^{\\circ}C$.\n\nDetermine when the temperature of the apple is $16^{\\circ}C$.", 
     "year": 2010, 
     "sols": [
-        "From the previous question, we know that\n\n\\begin{align*}\nT(t) - 19 =  -16e^{kt}\n\\end{align*}\n\nwhere\n\n$\\displaystyle k = \\frac{-\\ln(2)}{30}$\n\nSearching for when $T(t) = 16$ yields\n\n\\begin{align*}\n16-19 &= -16e^{kt} \\\\\n-3 &= -16e^{kt} \\\\\n\\frac{3}{16} &= e^{kt} \\\\\n\\ln(3/16) &= kt\\\\\n\\ln(3/16) &= \\frac{-\\ln(2)t}{30} \\\\\nt &= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &= 30\\frac{\\ln(16/3)}{\\ln(2)} \n\\end{align*}\n\ncompleting the question."
+        "From the previous question, we know that\n\n\\begin{align*}\nT(t) - 19 =  -16e^{kt}\\end{align*}\n\nwhere\n\n$\\displaystyle k = \\frac{-\\ln(2)}{30}$\n\nSearching for when $T(t) = 16$ yields\n\n\\begin{align*}\n16-19 &= -16e^{kt} \\\\\n-3 &= -16e^{kt} \\\\\n\\frac{3}{16} &= e^{kt} \\\\\n\\ln(3/16) &= kt\\\\\n\\ln(3/16) &= \\frac{-\\ln(2)t}{30} \\\\\nt &= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &= 30\\frac{\\ln(16/3)}{\\ln(2)} \\end{align*}\n\ncompleting the question."
     ], 
     "hints": [
         "We want to find \\emph{t} subject to $T(t) = 19$."

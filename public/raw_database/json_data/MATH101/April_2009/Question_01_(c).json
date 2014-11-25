@@ -5,7 +5,7 @@
     "statement": "Evaluate $\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy.$", 
     "year": 2009, 
     "sols": [
-        "If we use the substitution\n\n\\[\\displaystyle u=2y+y^2\\] then\n\n\\[\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy\\] and\n\n\\begin{align*} \\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&= \\frac13 3^{3/2} \\\\\n&= \\sqrt3.\n\\end{align*}"
+        "If we use the substitution\n\n\\begin{align*}\\displaystyle u=2y+y^2\\end{align*} then\n\n\\begin{align*}\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy\\end{align*} and\n\n\\begin{align*} \\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&= \\frac13 3^{3/2} \\\\\n&= \\sqrt3.\\end{align*}"
     ], 
     "hints": [
         "Use a substitution.", 

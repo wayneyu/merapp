@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(c)", 
     "course": "MATH103", 
-    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\[\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\\]\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nHow much did the plant grow on the fifth day (i.e. between \\emph{t = 4}\nand \\emph{t = 5})? (If you don't know the constant \\emph{a}, use \\emph{a\n= 1}.)", 
+    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nHow much did the plant grow on the fifth day (i.e. between \\emph{t = 4}\nand \\emph{t = 5})? (If you don't know the constant \\emph{a}, use \\emph{a\n= 1}.)", 
     "year": 2009, 
     "sols": [
-        "The change of height between day $4$ and $5$ is\n\n\\begin{align*}\n\\ h(5)-h(4) &= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\n\\end{align*}"
+        "The change of height between day $4$ and $5$ is\n\n\\begin{align*}\n\\ h(5)-h(4) &= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\\end{align*}"
     ], 
     "hints": [
         "How can you use the height function $h(t)$ to know the change of the\nheight between day $4$ and day $5$."

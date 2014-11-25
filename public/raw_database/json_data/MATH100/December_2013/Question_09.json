@@ -4,6 +4,12 @@
     "course": "MATH100", 
     "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the area of the largest rectangle which has two vertices on the\n\\emph{x}-axis and two vertices lie on the graph of the function\n$\\displaystyle y=8-x^2$ with $\\displaystyle -\\sqrt{8}\\le x \\le\\sqrt{8}$.\nPlease justify your answer.", 
     "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "sols": [
+        "If the base of the rectangle measures $\\displaystyle 2b$, its area is\n$\\displaystyle A(b) = 2b(8-b^2) = 16b - 2b^3$. To maximize\n$\\displaystyle A$, we find its critical points by finding\n$\\displaystyle A'$:\n\n\\begin{align*}\nA(b) &= 16b - 2b^3 \\\\\nA'(b) &= 16 - 6b^2 \\\\\n\\\\\n0 &= 16 - 6b^2 \\\\\n6b^2 &= 16 \\\\\nb &= \\pm \\sqrt{\\frac{8}{3}}\\end{align*}\n\nA simple inspection shows that $b = \\sqrt{\\frac{8}{3}}$ is a maximum\npoint of \\emph{A} since \\emph{A}' changes sign from positive to negative\nat that point. The value of \\emph{A(b)} at that \\emph{b} (i.e., the\nmaximum area) is:\n\n\\begin{align*}\nA\\left(\\sqrt{\\frac{8}{3}}\\right) &= 2\\sqrt{\\frac{8}{3}}\\left(8-\\left(\\sqrt{\\frac{8}{3}}\\right)^2\\right) \\\\\n&= { \\color{blue} \\frac{32}{3} \\cdot \\sqrt{\\frac{8}{3}}} = { \\color{blue} \\frac{64\\sqrt{2}}{3\\sqrt{3}}} = { \\color{blue} \\frac{64\\sqrt{6}}{9} }\\end{align*}"
+    ], 
+    "hints": [
+        "Note that if two vertices of the rectangle must lie on the graph of the\nfunction $\\displaystyle y=8-x^2$, the two vertices on the x-axis must be\nequidistant from the origin.", 
+        "Suppose that the base of the rectangle measures $2b$ units long. What is\nan expression for the area of the rectangle, in terms of $b$?", 
+        "If the base of the rectangle measures $2b$, its bottom right vertex is\nlocated at $(b, 0)$. Therefore its top right vertex is located at\n$(b,8-b^2)$ and it follows that its dimensions are $2b$ by $8-b^2$.\nHence its area is $2b(8-b^2)$. How can we maximize the value of this\nexpression?"
+    ]
 }

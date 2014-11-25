@@ -2,10 +2,10 @@
     "term": "April", 
     "question": "Question_08_(a)", 
     "course": "MATH101", 
-    "statement": "Evaluate\n\n\\[\\sum_{n=1}^{\\infty}\\frac{(-1)^{n-1}}{n2^{n}}\\]", 
+    "statement": "Evaluate\n\n\\begin{align*}\\sum_{n=1}^{\\infty}\\frac{(-1)^{n-1}}{n2^{n}}\\end{align*}", 
     "year": 2012, 
     "sols": [
-        "Recall that the Maclaurin series of $\\ln(1+x)$ is\n\n\\[\\ln(1+x) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n}x^n\\]\n\nwith radius of convergence \\emph{R=1}.\n\nIf we put \\emph{x=1/2}, then we obtain the given series and hence we\nfind\n\n\\[\\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n 2^n} = \\ln(1+1/2)= \\ln(3/2)\\]"
+        "Recall that the Maclaurin series of $\\ln(1+x)$ is\n\n\\begin{align*}\\ln(1+x) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n}x^n\\end{align*}\n\nwith radius of convergence \\emph{R=1}.\n\nIf we put \\emph{x=1/2}, then we obtain the given series and hence we\nfind\n\n\\begin{align*}\\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n 2^n} = \\ln(1+1/2)= \\ln(3/2)\\end{align*}"
     ], 
     "hints": [
         "Both the Alternating Series Test (AST) and Alternating Series Esimation\nTheorem (ASET) \\emph{DO NOT} tell you the exact value of an alternating\nseries. The key word \\textbf{evaluate} implies that there should be a\nway to find the exact value of the series.\n\nDoes the series look like a familiar Maclaurin series of a function\nevaluated at a certain point?"

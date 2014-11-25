@@ -1,0 +1,13 @@
+{
+    "term": "December", 
+    "question": "Question_01_(b)", 
+    "course": "MATH110", 
+    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nb) If $\\lim_{x \\rightarrow 1}f(x) = 4$, then $\\displaystyle f(1) = 4$.", 
+    "year": 2013, 
+    "sols": [
+        "\\textbf{False:} The easiest way to see this is to come up with a\nfunction where the limit exists but the function is not defined there.\nFor example $f(x) = \\frac{4(x-1)}{x-1}$. The limit exists and is equal\nto $4$ but $1$ is not in the domain, so $f(1)$ is not defined. Hence the\nstatement is \\textbf{false}."
+    ], 
+    "hints": [
+        "The key observation in this problem is to note that the function\n$\\displaystyle f(x)$ is not necessarily continuous! Try to find a\ncounter example where the function is not continuous."
+    ]
+}

@@ -2,10 +2,10 @@
     "term": "December", 
     "question": "Question_01_(f)", 
     "course": "MATH104", 
-    "statement": "Find the slope of the graph of\n\n\\[\\displaystyle{}y=\\ln(f(2x))\\]\n\nat x=1, where f(2)=3 and $\\displaystyle {}f'(2)=-5$.", 
+    "statement": "Find the slope of the graph of\n\n\\begin{align*}\\displaystyle{}y=\\ln(f(2x))\\end{align*}\n\nat $x=1$, where $f(2)=3$ and $f'(2)=-5$.", 
     "year": 2010, 
     "sols": [
-        "By the chain rule,\n\n\\[\\frac{dy}{dx} = \\frac{1}{f(2x)}f'(2x)\\cdot 2\\] When $x=1,$ this is\nequal to\n\n\\[\\frac{1}{f(2)}f'(2)\\cdot 2 =\\frac{1}{3} (-5)\\cdot 2 = -\\frac{10}{3}.\\]\nHence, the slope of the tangent line at $x=1$ is equal to $-10/3.$"
+        "By the chain rule,\n\n\\begin{align*}\\frac{dy}{dx} = \\frac{1}{f(2x)}f'(2x)\\cdot 2\\end{align*} When $x=1,$ this is\nequal to\n\n\\begin{align*}\\frac{1}{f(2)}f'(2)\\cdot 2 =\\frac{1}{3} (-5)\\cdot 2 = -\\frac{10}{3}.\\end{align*}\nHence, the slope of the tangent line at $x=1$ is equal to $-10/3.$"
     ], 
     "hints": [
         "The slope of the graph at $x=1$ is simply the derivative, $dy/dx,$\nevaluated when $x=1.$", 

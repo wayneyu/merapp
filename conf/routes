@@ -10,17 +10,10 @@ GET     /team                       controllers.Application.team
 
 GET    /editor          controllers.Application.editor
 
-# GET     /mongo/create            controllers.QuestionController.create
-
-# GET     /mongo/findByYear        controllers.QuestionController.findByYear(year: String)
-
-# GET     /question/*q             controllers.Application.question(q: String)
-
-# GET     /questions/:course/:year/:q         controllers.Application.question(course: String, year: String, q: String)
-GET     /questions/:course/:term_year/:q         controllers.QuestionController.question(course: String, term_year: String, q: String)
-
 GET    /questions                  controllers.Application.questions
-GET    /questions/examnames        controllers.QuestionController.getExamNames()
+GET    /questions/findByYear/:year        controllers.QuestionController.findByYear(year: Int)
+GET    /questions/findByCourse/:course        controllers.QuestionController.findByCourse(course: String)
+GET    /questions/:course/:term_year/:q         controllers.QuestionController.question(course: String, term_year: String, q: String)
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
 

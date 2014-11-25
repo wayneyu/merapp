@@ -20,9 +20,7 @@ object Application extends Controller {
     Ok(views.html.team("About Us"))
   }
 
-  def questions = Action{
-    Ok(views.html.question("", "", Nil, Nil))
-  }
+  def questions = QuestionController.questions()
 
   def editor = Action{
     Ok(views.html.editor())

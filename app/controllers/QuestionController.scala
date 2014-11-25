@@ -5,7 +5,7 @@ import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.functional.syntax._
 import play.api.libs.json._
-import reactivemongo.bson.BSONDocument
+import reactivemongo.bson.{BSONArray, BSONString, BSONDocument}
 import views.html.helper.form
 import scala.concurrent.Future
 import scala.util.{Success, Failure}
@@ -24,6 +24,31 @@ import play.modules.reactivemongo.json.collection.JSONCollection
 object QuestionController extends Controller with MongoController {
 
   val collection: JSONCollection = db.collection[JSONCollection]("questions")
+
+
+  def questions = Action.async {
+    val coursesResult = distinctCourses()
+    val yearsResult = distinctYears()
+
+    val courseAndYearResult = for {
+      cr <- coursesResult
+      yr <- yearsResult
+    } yield (cr, yr)
+
+    coursesResult onComplete {
+      case Success(res) => Logger.debug("No. of courses found: " + res.length.toString())
+      case Failure(exception) =>
+    }
+    yearsResult onComplete {
+      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
+      case Failure(exception) =>
+    }
+
+    courseAndYearResult.map { case (courseList, yearList) =>
+      Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, "", "", "", ""))
+    }
+
+  }
 
   def question(course: String, term_year: String, q: String) = Action.async {
 
@@ -51,10 +76,10 @@ object QuestionController extends Controller with MongoController {
       case j::js => Ok(views.html.question(
         q, (j \ "statement").as[String],
         (j \ "hints").as[List[String]],
-        (j \ "sols").as[List[String]]))
+        (j \ "sols").as[List[String]])(Nil, Nil, Nil, "", "", "", ""))
       case Nil => {
         val resp = "Question not found"
-        Ok(views.html.question(resp,"",Nil,Nil))
+        Ok(views.html.question(resp,"",Nil,Nil)(Nil, Nil, Nil, "", "", "", ""))
       }
     }
   }
@@ -74,25 +99,67 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-  def getExamNames() = Action { request =>
+  def findByYear(year: Int) = Action.async {
+    distinctCourses(year).map( list => Ok(views.html.question("", "", Nil, Nil)(list, Nil, Nil, "", year.toString(), "", "")) )
+  }
+
+  def findByCourse(course: String) = Action.async {
+    val res = distinctYears(course)
+    res onComplete {
+      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
+      case Failure(exception) =>
+    }
+    res.map(list => Ok(views.html.question("", "", Nil, Nil)(Nil, list, Nil, course, "", "", "")))
+  }
+
+  def distinctYears(course: String): Future[List[String]] = {
     // set up query
     //{ distinct: "<collection>", key: "<field>", query: <query> }
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year", "query" -> BSONDocument( "course" -> course)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[Int]]("values")
+    ).map {
+      case Some(list) => list.sorted.map(_.toString())
+      case None => Nil
+    }
+
+  }
+
+  def distinctCourses(year: Int): Future[List[String]] = {
+    // set up query
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course", "query" -> BSONDocument( "year"-> year ) ))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[String]]("values")
+    ).map {
+      case Some(list) => list.sorted
+      case None => Nil
+    }
+  }
+
+  def distinctYears(): Future[List[String]] = {
+    // set up query
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year"))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[Int]]("values")
+    ).map {
+      case Some(list) => list.sorted.map(_.toString())
+      case None => Nil
+    }
+  }
+
+  def distinctCourses(): Future[List[String]] = {
+    // set up query
     val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course"))
     val result = db.command(command) // result is Future[BSONDocument]
 
-    // gather all the JsObjects in a list
-    result onComplete {
-      case Success(res) => Logger.debug("No. of questions found: " + BSONDocument.pretty(res))
-      case Failure(exception) =>
+    result.map( doc => doc.getAs[List[String]]("values")
+    ).map {
+      case Some(list) => list.sorted
+      case None => Nil
     }
-
-    result.map( doc => doc.get("values") match {
-        case Some(v) => Ok("")
-        case None => Ok("")
-      }
-    )
-
-    Ok("")
   }
 
 }

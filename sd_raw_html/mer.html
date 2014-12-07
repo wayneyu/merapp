@@ -19,133 +19,139 @@
 
 <body>
 
-<div id="selection">
+<div class="wrapper">
+    <div id="selection">
 
-        <form>
-        <select name="course">
-            <option value="MATH100">Math 100/180</option>
-            <option value="MATH101">Math 101</option>
-            <option value="MATH102">Math 102</option>
-            <option value="MATH103">Math 103</option>
-            <option value="MATH104">Math 104/184</option>
-            <option value="MATH105">Math 105</option>
-            <option value="MATH110">Math 110</option>
-            <option value="MATH152">Math 152</option>
-            <option value="MATH200">Math 200</option>
-            <option value="MATH215">Math 215</option>
-            <option value="MATH220">Math 220</option>
-            <option value="MATH221">Math 221</option>
-            <option value="MATH253">Math 253</option>
-            <option value="MATH257">Math 257</option>
-            <option value="MATH307">Math 307</option>
-        </select>
+            <form>
+            <select name="course">
+                <option value="MATH100">Math 100/180</option>
+                <option value="MATH101">Math 101</option>
+                <option value="MATH102">Math 102</option>
+                <option value="MATH103">Math 103</option>
+                <option value="MATH104">Math 104/184</option>
+                <option value="MATH105">Math 105</option>
+                <option value="MATH110">Math 110</option>
+                <option value="MATH152">Math 152</option>
+                <option value="MATH200">Math 200</option>
+                <option value="MATH215">Math 215</option>
+                <option value="MATH220">Math 220</option>
+                <option value="MATH221">Math 221</option>
+                <option value="MATH253">Math 253</option>
+                <option value="MATH257">Math 257</option>
+                <option value="MATH307">Math 307</option>
+            </select>
 
-        <select name="exam_month">
-            <option value="April">April</option>
-            <option value="December">December</option>
-        </select>
+            <select name="exam_month">
+                <option value="April">April</option>
+                <option value="December">December</option>
+            </select>
 
-        <select name="exam_year">
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-            <option value="2009">2009</option>
-            <option value="2008">2008</option>
-            <option value="2007">2007</option>
-            <option value="2006">2006</option>
-            <option value="2005">2005</option>
-        </select>
+            <select name="exam_year">
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+            </select>
 
-            Question: <input type="text" name="question"><br>
-        </form>    
-</div>
-
-<div class="main_box">
-    <div class="box_title">Question 01 (e)</div>
-    <div>  Short-Answer Questions. $ \Delta \int \frac{\partial^2 }{\partial x^2} dx $ Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question. Find an equation of the tangent line to the curve y = x3.5 - e3.5 at the point (e, 0).</div>
-</div>
-
-
-<p>
-Make sure you understand the problem fully: What is the question asking you to do? Are there specific conditions or constraints that you should take note of? How will you know if your answer is correct from your work only? Can you rephrase the question in your own words in a way that makes sense to you?
-
-If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
-</p>
-
-<div class="main_box hideable_box">
-    <div class="box_title">Hint</div>
-    <div>How do you find the slope of the tangent line to a given function at a specific point? $ \Delta \int \frac{\partial^2 }{\partial x^2} dx $</div>
-</div>
-
-<p>Checking a solution serves two purposes: helping you if, after having used the hint, you still are stuck on the problem; or if you have solved the problem and would like to check your work. </p>
-
-<div class="main_box hideable_box">
-    <div class="box_title">Solution </div>
-    <div>To find the equation of the tangent line to y = x3.5 - e3.5 at the point (e, 0 ), we must first find the derivative of the curve, which is the slope of the tangent line at that point.
-
-First we use the difference rule to separate the two terms.
-
-    $ \frac{d}{dx}(x^{3.5}-e^{3.5}) =\frac{d}{dx}(x^{3.5})-\frac{d}{dx}(e^{3.5}) $
-
-The next step is to recognize that e3.5 is a constant, so we know that its derivative is equal to 0 and we can remove that term altogether from the equation. Then we use to power rule to differentiate x3.5 :
-
-    $ \frac{d}{dx}(x^{3.5}) =3.5x^{3.5-1} =3.5x^{2.5} $
-
-By plugging in x = e into the derivative, we find the tangent line at the desired point (e, 0), we get the slope m of the tangent line of equation y-y0 = m(x - x0)
-
-    \( \displaystyle m=3.5(e^{2.5}) \)
-
-From this we can conclude that the equation of the line is:
-
-    $ \displaystyle y-y_0=m(x-x_0) \quad\Rightarrow\quad y-0=3.5e^{2.5}(x-e) $
-
-Simplifying, we get
-
-    $ \displaystyle y=3.5e^{2.5}(x-e) $
-
-or
-
-    \( \displaystyle y=3.5e^{2.5}x-3.5e^{3.5} \)
+                Question: <input type="text" name="question"><br>
+            </form>    
     </div>
-</div>
-
-<div id="tags">
+    <div class="main_box">
+        <div class="box_title">Question 01 (e)</div>
+        <div>  Short-Answer Questions. <i>Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.</i><br><br>Find an equation of the tangent line to the curve $y = x^{3.5} - e^{3.5}$ at the point $(e, 0)$.</div>
+    </div>
+    <div class="message">
+    Make sure you understand the problem fully: 
     <ul>
-    <li><span>#Tags:</span></li>
-    <li><span>#Math</span></li>
-    <li><span>#Hard</span></li>
-    <li><span>#Impossible</span></li>
-    <li><span>#Numbers</span></li>
+    <li>What is the question asking you to do? 
+    <li>Are there specific conditions or constraints that you should take note of?</li>
+    <li>How will you know if your answer is correct from your work only? </li>
+    <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
     </ul>
-</div>
 
-<hr/>
-<hr/>
+    If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
+    </div>
 
-<div id="latex_box">
+    <div class="main_box hideable_box">
+        <div class="box_title">Hint</div>
+        <div>How do you find the slope of the tangent line to a given function at a specific point?</div>
+    </div>
+    <div class="message">Checking a solution serves two purposes: <ul>
+    <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+    <li>if you have solved the problem and would like to check your work. </li>
+    </ul>
+    </div>
+    <div class="main_box hideable_box">
+        <div class="box_title">Solution </div>
+        <div>To find the equation of the tangent line to $y = x^{3.5} - e^{3.5}$ at the point $(e, 0)$, we must first find the derivative of the curve, which is the slope of the tangent line at that point.
+
+    First we use the difference rule to separate the two terms.
+
+        $ \frac{d}{dx}(x^{3.5}-e^{3.5}) =\frac{d}{dx}(x^{3.5})-\frac{d}{dx}(e^{3.5}) $
+
+    The next step is to recognize that $e^{3.5}$ is a constant, so we know that its derivative is equal to 0 and we can remove that term altogether from the equation. Then we use to power rule to differentiate $x^{3.5}$:
+
+        $ \frac{d}{dx}(x^{3.5}) =3.5x^{3.5-1} =3.5x^{2.5} $
+
+    By plugging in x = e into the derivative, we find the tangent line at the desired point $(e, 0)$, we get the slope $m$ of the tangent line of equation $y-y_{0} = m(x - x_{0})$
+
+        \( \displaystyle m=3.5(e^{2.5}) \)
+
+    From this we can conclude that the equation of the line is:
+
+        $ \displaystyle y-y_0=m(x-x_0) \quad\Rightarrow\quad y-0=3.5e^{2.5}(x-e) $
+
+    Simplifying, we get
+
+        $ \displaystyle y=3.5e^{2.5}(x-e) $
+
+    or
+
+        \( \displaystyle y=3.5e^{2.5}x-3.5e^{3.5} \)
+        </div>
+    </div>
+
     <div id="tags">
         <ul>
-            <li><span>"var"</span></li>
-            <li><span>"integral"</span></li>
-            <li><span>"greek"</span></li>
+        <li><span>#Tags:</span></li>
+        <li><span>#Math</span></li>
+        <li><span>#Hard</span></li>
+        <li><span>#Impossible</span></li>
+        <li><span>#Numbers</span></li>
         </ul>
     </div>
 
-    <div>
-        <textarea style="height: 80px;" name="latex_formula" id="latex_formula" cols="80" rows="8"></textarea>
-    </div>
-    
-    <p>   </p> <!-- gets appeneded by jquery -->
+    <div style="width=100%; border-bottom: 5px solid #AAAAAA;"></div>
 
-    <button> render </button>
-    
+    <div id="latex_box">
+        <div id="tags">
+            <ul>
+                <li><span>"x_{1}"</span></li>
+                <li><span>"integral"</span></li>
+                <li><span>"alpha"</span></li>
+                <li><span>"d/dx"</span></li>
+                <li><span>"blue text"</span></li>
+                <li><span>"equation"</span></li>
+            </ul>
+        </div>
+
+        <div>
+            <textarea name="latex_formula" id="latex_formula" cols="100" rows="10"></textarea>
+        </div>
+        Hit the render button to view your output: <button style="margin:left 20px; font-family: 'Helvetica Neue'; font-weight: 300; color:#2F4F4F;">render!</button>
+
+        <p style="font-family: serif; font-size: 12pt; width = 100%; border: 1px dashed #AAAAAA;">   </p> <!-- gets appeneded by jquery -->
+        
+
+    </div>
 
 </div>
-
-<hr/>
-<hr/>
 
 </body>
 </html>

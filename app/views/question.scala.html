@@ -1,65 +1,44 @@
 @(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String],selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Exam question</title>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
-    });
-    </script>
-    <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-        <link rel='stylesheet' type="text/css" href="@routes.Assets.at("stylesheets/question.css")" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type='text/javascript' src="@routes.Assets.at("javascripts/question.js")"></script>
-
-</head>
-
-<body>
-
+@main("Questions"){
 <div id="selection">
+@helper.form(action = routes.QuestionController.questionSubmit()) {
 
-        @helper.form(action = routes.QuestionController.questionSubmit()) {
-
-        <select name="course">
-            @for( course <- courses ){
-                <option value=@course @if(course == selectedCourse){selected}>@course</option>
-            }
-        </select>
-
-        <select name="term">
-            <option value="April">April</option>
-            <option value="December">December</option>
-        </select>
-
-        <select name="year">
-            @for( year <- years ){
-                <option value=@year @if(year == selectedYear){selected}>@year</option>
-            }
-        </select>
-
-        <select name="q_no">
-            @for( i <- 1 to 20){
-                @if( i < 10 ){
-                    <option value=@("0" + i)>@("0" + i)</option>
-                }else{
-                    <option value=@i>@i</option>
-                }
-            }
-        </select>
-
-        <select name="q_letter">
-            @for( c <- 'a' to 'e' ){
-                <option value=@c>@c</option>
-            }
-        </select>
-
-        <input type="submit" value="Find Question">
+    <select name="course">
+        @for( course <- courses ){
+            <option value=@course @if(course == selectedCourse){selected}>@course</option>
         }
+    </select>
+
+    <select name="term">
+        <option value="April">April</option>
+        <option value="December">December</option>
+    </select>
+
+    <select name="year">
+        @for( year <- years ){
+            <option value=@year @if(year == selectedYear){selected}>@year</option>
+        }
+    </select>
+
+    <select name="q_no">
+        @for( i <- 1 to 20){
+            @if( i < 10 ){
+                <option value=@("0" + i)>@("0" + i)</option>
+            }else{
+                <option value=@i>@i</option>
+            }
+        }
+    </select>
+
+    <select name="q_letter">
+        @for( c <- 'a' to 'e' ){
+            <option value=@c>@c</option>
+        }
+    </select>
+
+    <input type="submit" value="Find Question">
+    }
 </div>
 
 <div class="main_box">
@@ -90,8 +69,4 @@
     <li><span>#Numbers</span></li>
     </ul>
 </div>
-
-</body>
-</html>
-
-
+}

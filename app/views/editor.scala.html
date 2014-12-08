@@ -1,43 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>"Latex editor</title>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
-    });
-    </script>
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-    <link rel='stylesheet' type="text/css" href="@routes.Assets.at("stylesheets/question.css")" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type='text/javascript' src="@routes.Assets.at("javascripts/question.js")"></script>
-
-</head>
-
-<body>
-
+@main("Editor"){
 <div id="latex_box">
     <div id="tags">
         <ul>
-            <li><span>"var"</span></li>
+            <li><span>"x_{1}"</span></li>
             <li><span>"integral"</span></li>
-            <li><span>"greek"</span></li>
+            <li><span>"alpha"</span></li>
+            <li><span>"d/dx"</span></li>
+            <li><span>"blue text"</span></li>
+            <li><span>"equation"</span></li>
         </ul>
     </div>
 
     <div>
-        <textarea style="height: 80px;" name="latex_formula" id="latex_formula" cols="80" rows="8"></textarea>
+        <textarea name="latex_formula" id="latex_formula" cols="100" rows="10"></textarea>
     </div>
+    Hit the render button to view your output: <button style="margin:left 20px; font-family: 'Helvetica Neue'; font-weight: 300; color:#2F4F4F;">render!</button>
 
-    <p>   </p> <!-- gets appeneded by jquery -->
-
-    <button> render </button>
+    <p style="font-family: serif; font-size: 12pt; width = 100%; border: 1px dashed #AAAAAA;">   </p> <!-- gets appeneded by jquery -->
 
 
 </div>
-
-</body>
-</html>
+}

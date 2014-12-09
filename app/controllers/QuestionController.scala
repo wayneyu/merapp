@@ -1,12 +1,12 @@
 package controllers
 
+import controllers.Application._
+import play.Routes
 import play.api._
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import play.api.libs.functional.syntax._
 import play.api.libs.json._
-import reactivemongo.bson.{BSONArray, BSONString, BSONDocument}
-import views.html.helper.form
+import reactivemongo.bson.{BSONDocument}
 import scala.concurrent.Future
 import scala.util.{Success, Failure}
 
@@ -47,7 +47,6 @@ object QuestionController extends Controller with MongoController {
     courseAndYearResult.map { case (courseList, yearList) =>
       Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, "", "", "", ""))
     }
-
   }
 
   def question(course: String, term_year: String, q: String) = Action.async {
@@ -55,6 +54,7 @@ object QuestionController extends Controller with MongoController {
     val tysplit = term_year.split("_")
     val term = tysplit(0)
     val year = tysplit(1).toInt
+
 
     // let's do our query
     val cursor: Cursor[JsObject] = collection.
@@ -64,25 +64,37 @@ object QuestionController extends Controller with MongoController {
       cursor[JsObject]
 
     // gather all the JsObjects in a list
-    val futureQuestion: Future[List[JsObject]] = cursor.collect[List]()
+    val question: Future[List[JsObject]] = cursor.collect[List]()
+    val coursesResult = distinctCourses()
+    val yearsResult = distinctYears()
+
+    val res = for {
+      cr <- coursesResult
+      yr <- yearsResult
+      q <- question
+    } yield (cr, yr, q)
 
     // log some info
-    futureQuestion onComplete {
-      case Success(res) => Logger.debug("No. of questions found: " + res.length.toString())
-      case Failure(exception) =>
-    }
+//    futureQuestion onComplete {
+//      case Success(res) => Logger.debug("No. of questions found: " + res.length.toString())
+//      case Failure(exception) =>
+//    }
 
-    futureQuestion.map {
-      case j::js => Ok(views.html.question(
-        q, (j \ "statement").as[String],
-        (j \ "hints").as[List[String]],
-        (j \ "sols").as[List[String]])(Nil, Nil, Nil, "", "", "", ""))
-      case Nil => {
-        val resp = "Question not found"
-        Ok(views.html.question(resp,"",Nil,Nil)(Nil, Nil, Nil, "", "", "", ""))
+    res.map { case (courseList, yearList, question) => {
+        question match {
+          case j :: js => Ok(views.html.question(
+            q, (j \ "statement").as[String],
+            (j \ "hints").as[List[String]],
+            (j \ "sols").as[List[String]])(courseList, yearList, Nil, course, year.toString, term, q))
+          case Nil => {
+            val resp = "Question not found"
+            Ok(views.html.question(resp, "", Nil, Nil)(courseList, yearList, Nil, course, year.toString, term, q))
+          }
+        }
       }
     }
   }
+
 
   def questionSubmit() = Action { request =>
     val form = request.body.asFormUrlEncoded
@@ -95,21 +107,37 @@ object QuestionController extends Controller with MongoController {
           map.getOrElse("term", Seq())(0) + "_" + map.getOrElse("year", Seq())(0),
           if (q_no.nonEmpty && q_letter.nonEmpty) "Question_" + q_no + "_(" + q_letter + ")" else ""))
       }
-      case None => Redirect(controllers.routes.QuestionController.question("","",""))
+      case None => Redirect(controllers.routes.QuestionController.question("","","")  )
     }
   }
 
   def findByYear(year: Int) = Action.async {
-    distinctCourses(year).map( list => Ok(views.html.question("", "", Nil, Nil)(list, Nil, Nil, "", year.toString(), "", "")) )
+    val coursesResult = distinctCourses(year)
+    val yearsResult = distinctYears()
+
+    val courseAndYearResult = for {
+      cr <- coursesResult
+      yr <- yearsResult
+    } yield (cr, yr)
+
+    courseAndYearResult.map { case (courseList, yearList) =>
+      Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, "", year.toString, "", ""))
+    }
   }
 
   def findByCourse(course: String) = Action.async {
-    val res = distinctYears(course)
-    res onComplete {
-      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
-      case Failure(exception) =>
+    Logger.debug("find By course: " + course)
+    val coursesResult = distinctCourses()
+    val yearsResult = distinctYears(course)
+
+    val courseAndYearResult = for {
+      cr <- coursesResult
+      yr <- yearsResult
+    } yield (cr, yr)
+
+    courseAndYearResult.map { case (courseList, yearList) =>
+      Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, course, "", "", ""))
     }
-    res.map(list => Ok(views.html.question("", "", Nil, Nil)(Nil, list, Nil, course, "", "", "")))
   }
 
   def distinctYears(course: String): Future[List[String]] = {

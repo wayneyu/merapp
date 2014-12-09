@@ -1,5 +1,6 @@
 $(document).ready(function (){
-$("div.hideable_box>div+div").fadeOut(0);
+
+    $("div.hideable_box>div+div").fadeOut(0);
 
     // click the title
     // div.hideable_box>div
@@ -10,20 +11,20 @@ $("div.hideable_box>div+div").fadeOut(0);
      });
 
     $("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
-       //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$'); 
-       $("#latex_box textarea").insertAtCaret('$x_{1}$'); 
+       //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$');
+       $("#latex_box textarea").insertAtCaret('$x_{1}$');
     });
 
     $("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\int_{a}^{b} f(x)\\,dx$'); 
+       $("#latex_box textarea").insertAtCaret('$\\int_{a}^{b} f(x)\\,dx$');
     });
 
     $("#latex_box #tags ul li:nth-child(3)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\alpha$'); 
+       $("#latex_box textarea").insertAtCaret('$\\alpha$');
     });
 
     $("#latex_box #tags ul li:nth-child(4)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\frac{d}{dx}$'); 
+       $("#latex_box textarea").insertAtCaret('$\\frac{d}{dx}$');
     });
 
     $("#latex_box #tags ul li:nth-child(5)").click(function() {   //this will apply to all anchor tags
@@ -35,11 +36,41 @@ $("div.hideable_box>div+div").fadeOut(0);
     });
 
     $("#latex_box button").click(function() {   //this will apply to all anchor tags
-       $("#latex_box p").empty(); 
+       $("#latex_box p").empty();
        $("#latex_box p").append( $("#latex_box textarea").val() );
        MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
-       
-    });    
+
+    });
+
+
+    //$("#questionByCourse").on('change', function(event) {
+     //   alert($("#questionByCourse option:selected" ).text());
+      //  jsRoutes.controllers.QuestionController.findByCourse($("#questionByCourse option:selected").text()).ajax({
+
+       // success : function (data) {
+
+       //   }
+    //    error : function (data) {
+
+  //          }
+       // });
+    //});
+
+//    $("#questionByCourse").on('change', function(e){
+//        var course = $("#questionByCourse option:selected").text();
+//        alert(course);
+//        $.ajax({
+//          type: 'GET',
+//          url: '@routes.QuestionController.findByCourse()',
+//          data: course,
+//          success: function(html){
+//            //$("#results").append(html);
+//            alert(html);
+//          }
+//        });
+//    })
+
+
 });
 
 $.fn.insertAtCaret = function (tagName) {
@@ -66,3 +97,4 @@ $.fn.insertAtCaret = function (tagName) {
     }
   });
 };
+

@@ -10,12 +10,13 @@ GET     /team                       controllers.Application.team
 
 GET    /editor          controllers.Application.editor
 
-GET    /questions                  controllers.Application.questions
-GET    /questions/findByYear/:year        controllers.QuestionController.findByYear(year: Int)
-GET    /questions/findByCourse/:course        controllers.QuestionController.findByCourse(course: String)
-GET    /questions/:course/:term_year/:q         controllers.QuestionController.question(course: String, term_year: String, q: String)
+GET     /questions                           controllers.Application.questions
+GET    /questions/findByYear/:year          controllers.QuestionController.findByYear(year: Int)
+GET    /questions/findByCourse/:course      controllers.QuestionController.findByCourse(course: String)
+GET    /questions/:course/:term_year/:q     controllers.QuestionController.question(course: String, term_year: String, q: String)
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
 
 # Map static resources from the /public folder to the /assets URL path
+GET     /javascriptRoutes  controllers.Application.javascriptRoutes
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

@@ -1,6 +1,7 @@
 package controllers
 
-import play.api.Play
+import play.Routes
+import play.api.{Logger, Play}
 import play.api.libs.json.Json
 
 import scala.concurrent.ExecutionContext.Implicits._
@@ -24,6 +25,15 @@ object Application extends Controller {
 
   def editor = Action{
     Ok(views.html.editor())
+  }
+
+  def javascriptRoutes = Action { implicit request =>
+    Logger.info("javascriptRoutes: ")
+    Ok(
+      Routes.javascriptRouter("jsRoutes",
+        routes.javascript.QuestionController.findByCourse
+      )
+    ).as("text/javascript")
   }
 
 }

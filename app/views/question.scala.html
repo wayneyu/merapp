@@ -1,18 +1,24 @@
-@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String],selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
+@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
+@terms = @{ List("April", "December") }
+@q_no = @{ 1 to 10 }
+@q_letter = @{ ('a' to 'f') }
+@selected_q_no = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(1) else "" }
+@selected_q_letter = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(2)(1) else "" }
 
 @main("Questions"){
 <div id="selection">
 @helper.form(action = routes.QuestionController.questionSubmit()) {
 
-    <select name="course">
+    <select id="questionByCourse" name="course">
         @for( course <- courses ){
             <option value=@course @if(course == selectedCourse){selected}>@course</option>
         }
     </select>
 
     <select name="term">
-        <option value="April">April</option>
-        <option value="December">December</option>
+        @for( term <- terms ) {
+            <option value=@term @if(term == selectedTerm){selected}>@term</option>
+        }
     </select>
 
     <select name="year">
@@ -22,22 +28,22 @@
     </select>
 
     <select name="q_no">
-        @for( i <- 1 to 20){
+        @for( i <- q_no){
             @if( i < 10 ){
-                <option value=@("0" + i)>@("0" + i)</option>
+                <option value=@("0" + i) @if( "0"+i == selected_q_no){selected}>@("0" + i)</option>
             }else{
-                <option value=@i>@i</option>
+                <option value=@i @if( i.toString == selected_q_no){selected}>@i</option>
             }
         }
     </select>
 
     <select name="q_letter">
-        @for( c <- 'a' to 'e' ){
-            <option value=@c>@c</option>
+        @for( c <- q_letter ){
+            <option value=@c @if(c == selected_q_letter){selected}>@c</option>
         }
     </select>
 
-    <input type="submit" value="Find Question">
+    <input id="findQuestionBtn" type="submit" value="Find Question">
     }
 </div>
 
@@ -69,4 +75,6 @@
     <li><span>#Numbers</span></li>
     </ul>
 </div>
+
+
 }

@@ -118,6 +118,11 @@ background-color: #eeeeee;
 #yearSelect{
     width: 5em;
 }
+
+.semiOpagueText{
+    color: #999;
+    opacity: 0.3;
+}
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;
 }*/

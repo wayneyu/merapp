@@ -68,11 +68,14 @@ $(document).ready(function (){
           success: function(d){
             var $el = $("#yearSelect")
             var y = $("#yearSelect option:selected").text();
-            console.log("selcted" + y)
-            $el.empty();
-            d.sort();
+            console.log("selcted" + y);
+            console.log("years found: ");
+            console.log(d);
+            $("#yearSelect option").each(function(){
+                $(this).addClass("semiOpagueText");
+            })
             $.each(d, function(value,key) {
-              $el.append($("<option></option>").attr("value", key).text(key));
+              $("#yearSelect option[value='"+key+"']").removeClass("semiOpagueText");
             });
             $el.val(d[0]);
 
@@ -94,13 +97,16 @@ $(document).ready(function (){
           //url: '@routes.QuestionController.distinctCourses()', //TODO: replace URL with play's javascriptRoutes
           data: { year: y, term: t},
           success: function(d){
-            var $el = $("#courseSelect")
+            var $el = $("#courseSelect");
             var c = $("#courseSelect option:selected").text();
-            console.log("selected" + y)
-            $el.empty();
-            d.sort();
+            console.log("selected" + y);
+            console.log("courses found: ");
+            console.log(d);
+            $("#courseSelect option").each(function(){
+                $(this).addClass("semiOpagueText");
+            })
             $.each(d, function(value,key) {
-              $el.append($("<option></option>").attr("value", key).text(key));
+              $("#courseSelect option[value='"+key+"']").removeClass("semiOpagueText");
             });
             $el.val(d[0]);
 

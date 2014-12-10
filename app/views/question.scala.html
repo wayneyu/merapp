@@ -11,35 +11,35 @@
 
     <select id="courseSelect" name="course">
         @for( course <- courses ){
-            <option value=@course @if(course == selectedCourse){selected}>@course</option>
+            <option class="semiOpagueText" value=@course @if(course == selectedCourse){selected}>@course</option>
         }
     </select>
 
     <select id="termSelect" name="term">
         @for( term <- terms ) {
-            <option value=@term @if(term == selectedTerm){selected}>@term</option>
+            <option class="semiOpagueText" value=@term @if(term == selectedTerm){selected}>@term</option>
         }
     </select>
 
     <select id="yearSelect" name="year">
         @for( year <- years ){
-            <option value=@year @if(year == selectedYear){selected}>@year</option>
+            <option class="semiOpagueText" value=@year @if(year == selectedYear){selected}>@year</option>
         }
     </select>
 
     <select id="qnoSelect" name="q_no">
         @for( i <- q_no){
             @if( i < 10 ){
-                <option value=@("0" + i) @if( "0"+i == selected_q_no){selected}>@("0" + i)</option>
+                <option class="semiOpagueText" value=@("0" + i) @if( "0"+i == selected_q_no){selected}>@("0" + i)</option>
             }else{
-                <option value=@i @if( i.toString == selected_q_no){selected}>@i</option>
+                <option class="semiOpagueText" value=@i @if( i.toString == selected_q_no){selected}>@i</option>
             }
         }
     </select>
 
     <select id="qletterSelect" name="q_letter">
         @for( c <- q_letter ){
-            <option value=@c @if(c == selected_q_letter){selected}>@c</option>
+            <option class="semiOpagueText" value=@c @if(c == selected_q_letter){selected}>@c</option>
         }
     </select>
 

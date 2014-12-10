@@ -109,7 +109,15 @@ background-color: #eeeeee;
     background-color: rgba(255,255,255,.5);
     padding: 5px;
 }
-
+#courseSelect{
+    width: 10em;
+}
+#termSelect{
+    width: 8em;
+}
+#yearSelect{
+    width: 5em;
+}
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;
 }*/

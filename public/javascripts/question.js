@@ -56,20 +56,61 @@ $(document).ready(function (){
        // });
     //});
 
-//    $("#questionByCourse").on('change', function(e){
-//        var course = $("#questionByCourse option:selected").text();
-//        alert(course);
-//        $.ajax({
-//          type: 'GET',
-//          url: '@routes.QuestionController.findByCourse()',
-//          data: course,
-//          success: function(html){
-//            //$("#results").append(html);
-//            alert(html);
-//          }
-//        });
-//    })
+    $("#courseSelect, #termSelect").on('change', function(e){
+        var c = $("#courseSelect option:selected").text();
+        var t = $("#termSelect option:selected").text();
+        console.log(c.concat(" ").concat(t))
+        $.ajax({
+          type: 'GET',
+          url: "/questions/search/year/"+c+"/"+t,
+          //url: '@routes.QuestionController.distinctYears()', //TODO: replace URL with play's javascriptRoutes
+          data: { course: c, term: t},
+          success: function(d){
+            var $el = $("#yearSelect")
+            var y = $("#yearSelect option:selected").text();
+            console.log("selcted" + y)
+            $el.empty();
+            d.sort();
+            $.each(d, function(value,key) {
+              $el.append($("<option></option>").attr("value", key).text(key));
+            });
+            $el.val(d[0]);
 
+            if ($("#yearSelect option[value='"+y+"']").length > 0){
+                console.log("slecting" + y);
+                $el.val(y);
+            }
+          }
+        });
+    })
+
+    $("#yearSelect, #termSelect").on('change', function(e){
+        var y = $("#yearSelect option:selected").text();
+        var t = $("#termSelect option:selected").text();
+        console.log("selected " + y + " " + t)
+        $.ajax({
+          type: 'GET',
+          url: "/questions/search/course/"+y+"/"+t,
+          //url: '@routes.QuestionController.distinctCourses()', //TODO: replace URL with play's javascriptRoutes
+          data: { year: y, term: t},
+          success: function(d){
+            var $el = $("#courseSelect")
+            var c = $("#courseSelect option:selected").text();
+            console.log("selected" + y)
+            $el.empty();
+            d.sort();
+            $.each(d, function(value,key) {
+              $el.append($("<option></option>").attr("value", key).text(key));
+            });
+            $el.val(d[0]);
+
+            if ($("#courseSelect option[value='"+c+"']").length > 0){
+                console.log("selecting" + c);
+                $el.val(c);
+            }
+          }
+        });
+    })
 
 });
 

@@ -10,10 +10,10 @@ GET     /team                       controllers.Application.team
 
 GET    /editor          controllers.Application.editor
 
-GET     /questions                           controllers.Application.questions
-GET    /questions/findByYear/:year          controllers.QuestionController.findByYear(year: Int)
-GET    /questions/findByCourse/:course      controllers.QuestionController.findByCourse(course: String)
+GET    /questions                           controllers.Application.questions
 GET    /questions/:course/:term_year/:q     controllers.QuestionController.question(course: String, term_year: String, q: String)
+GET    /questions/search/year/:course/:term controllers.QuestionController.distinctYears(course: String, term: String)
+GET    /questions/search/course/:year/:term controllers.QuestionController.distinctCourses(year: Int, term: String)
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
 

@@ -31,7 +31,8 @@ object Application extends Controller {
     Logger.info("javascriptRoutes: ")
     Ok(
       Routes.javascriptRouter("jsRoutes",
-        routes.javascript.QuestionController.findByCourse
+        routes.javascript.QuestionController.distinctYears,
+        routes.javascript.QuestionController.distinctCourses
       )
     ).as("text/javascript")
   }

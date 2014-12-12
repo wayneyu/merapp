@@ -107,48 +107,6 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-  def distinctYears(): Future[List[String]] = {
-    // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year"))
-    val result = db.command(command) // result is Future[BSONDocument]
-
-    result.map( doc => doc.getAs[List[Int]]("values")
-    ).map {
-      case Some(list) => list.sorted.map(_.toString())
-      case None => Nil
-    }
-  }
-
-  def distinctYears(course: String): Future[List[String]] = {
-    // set up query
-    //{ distinct: "<collection>", key: "<field>", query: <query> }
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year", "query" -> BSONDocument( "course" -> course)))
-    val result = db.command(command) // result is Future[BSONDocument]
-
-    result.map( doc => doc.getAs[List[Int]]("values")
-    ).map {
-      case Some(list) => list.sorted.map(_.toString())
-      case None => Nil
-    }
-
-  }
-
-  def distinctYears(course: String, term: String) = Action.async {
-    Logger.debug("distinctYears(course-> " + course + ", term-> " + term + ")")
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year",
-        "query" -> BSONDocument( "course" -> course, "term" -> term)))
-    val result = db.command(command) // result is Future[BSONDocument]
-
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.debug("Result: " + v.toString())
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Logger.debug("Result: no years found.")
-        Ok(Json.obj())
-    }
-  }
 
   def distinctCourses(): Future[List[String]] = {
     // set up query
@@ -187,6 +145,91 @@ object QuestionController extends Controller with MongoController {
         Ok(BSONArrayFormat.writes(v))
       case None =>
         Logger.debug("Result: no courses found.")
+        Ok(Json.obj())
+    }
+  }
+
+  def distinctYears(): Future[List[String]] = {
+    // set up query
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year"))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[Int]]("values")
+    ).map {
+      case Some(list) => list.sorted.map(_.toString())
+      case None => Nil
+    }
+  }
+
+  def distinctYears(course: String): Future[List[String]] = {
+    // set up query
+    //{ distinct: "<collection>", key: "<field>", query: <query> }
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year", "query" -> BSONDocument( "course" -> course)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[Int]]("values")
+    ).map {
+      case Some(list) => list.sorted.map(_.toString())
+      case None => Nil
+    }
+
+  }
+
+  def distinctYears(course: String, term: String) = Action.async {
+    Logger.debug("distinctYears(course-> " + course + ", term-> " + term + ")")
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year",
+      "query" -> BSONDocument( "course" -> course, "term" -> term)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[BSONArray]("values")
+    ).map {
+      case Some(v) =>
+        Logger.debug("Result: " + v.toString())
+        Ok(BSONArrayFormat.writes(v))
+      case None =>
+        Logger.debug("Result: no years found.")
+        Ok(Json.obj())
+    }
+  }
+
+  def distinctTerms(): Future[List[String]] = {
+    // set up query
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term"))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[Int]]("values")
+    ).map {
+      case Some(list) => list.sorted.map(_.toString())
+      case None => Nil
+    }
+  }
+
+  def distinctTerms(course: String) = Action.async {
+    // set up query
+    //{ distinct: "<collection>", key: "<field>", query: <query> }
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term", "query" -> BSONDocument( "course" -> course)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[BSONArray]("values")
+    ).map {
+      case Some(v) => Ok(BSONArrayFormat.writes(v))
+      case None => Ok(Json.obj())
+    }
+  }
+
+  def distinctTerms(course: String, year: String) = Action.async {
+    Logger.debug("distinctYears(course-> " + course + ", year-> " + year + ")")
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term",
+      "query" -> BSONDocument( "course" -> course, "year" -> year)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[BSONArray]("values")
+    ).map {
+      case Some(v) =>
+        Logger.debug("Result: " + v.toString())
+        Ok(BSONArrayFormat.writes(v))
+      case None =>
+        Logger.debug("Result: no years found.")
         Ok(Json.obj())
     }
   }

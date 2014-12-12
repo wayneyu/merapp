@@ -27,6 +27,10 @@ object Application extends Controller {
     Ok(views.html.editor())
   }
 
+  def search = Action{
+    Ok(views.html.search(List()))
+  }
+
   def javascriptRoutes = Action { implicit request =>
     Logger.info("javascriptRoutes: ")
     Ok(

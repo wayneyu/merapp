@@ -120,8 +120,12 @@ background-color: #eeeeee;
 }
 
 .semiOpagueText{
-    color: #999;
+    color: #ffffff;
     opacity: 0.3;
+}
+
+.searchResult{
+    font-family: 'Helvetica Neue';
 }
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;

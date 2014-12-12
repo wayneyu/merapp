@@ -2,8 +2,9 @@
 @terms = @{ List("April", "December") }
 @q_no = @{ 1 to 10 }
 @q_letter = @{ ('a' to 'f') }
-@selected_q_no = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(1) else "" }
-@selected_q_letter = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(2)(1) else "" }
+@selectedQsplit = @{selectedQ.split("_")}
+@selected_q_no = @{ if (selectedQsplit.size > 1) selectedQsplit(1) else "" }
+@selected_q_letter = @{ if (selectedQsplit.size > 2) selectedQsplit(2)(1) else "" }
 
 @main("Questions"){
 <div id="selection">

@@ -64,7 +64,7 @@ $(document).ready(function (){
           type: 'GET',
           url: "/questions/search/year/"+c+"/"+t,
           //url: '@routes.QuestionController.distinctYears()', //TODO: replace URL with play's javascriptRoutes
-          data: { course: c, term: t},
+          //data: { course: c, term: t},
           success: function(d){
             var $el = $("#yearSelect")
             var y = $("#yearSelect option:selected").text();

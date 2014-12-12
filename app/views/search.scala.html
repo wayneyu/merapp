@@ -1,0 +1,18 @@
+@(results: List[String])
+
+@main("Search"){
+
+<div id="selection">
+
+@helper.form(action = routes.QuestionController.searchByKeywordsSubmit()) {
+    <input type="text" name="searchString">
+    <input id="searchBtn" type="submit" value="Search">
+}
+
+@for( r <- results ){
+<p><a class="searchResult" href=@r>@r</a></p>
+}
+
+</div>
+
+}

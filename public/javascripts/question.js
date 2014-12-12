@@ -12,27 +12,31 @@ $(document).ready(function (){
 
     $("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
        //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$');
-       $("#latex_box textarea").insertAtCaret('$x_{1}$');
+       $("#latex_box textarea").insertAtCaret('x_{1}',false);
     });
 
     $("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\int_{a}^{b} f(x)\\,dx$');
+       $("#latex_box textarea").insertAtCaret('\\int_{a}^{b} f(x)\\,dx',false);
     });
 
     $("#latex_box #tags ul li:nth-child(3)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\alpha$');
+       $("#latex_box textarea").insertAtCaret('\\alpha',false);
     });
 
     $("#latex_box #tags ul li:nth-child(4)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('$\\frac{d}{dx}$');
+       $("#latex_box textarea").insertAtCaret('\\frac{d}{dx}',false);
     });
 
     $("#latex_box #tags ul li:nth-child(5)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('<font color="blue"> blue text </font>')
+       $("#latex_box textarea").insertAtCaret('<font color="blue"> blue text </font>',true)
     });
 
     $("#latex_box #tags ul li:nth-child(6)").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n')
+       $("#latex_box textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n',true)
+    });
+
+    $("#latex_box #tags ul li:nth-child(7)").click(function() {   //this will apply to all anchor tags
+       $("#latex_box textarea").insertAtCaret('\\left(   \\right)',false)
     });
 
     $("#latex_box button").click(function() {   //this will apply to all anchor tags
@@ -120,28 +124,57 @@ $(document).ready(function (){
 
 });
 
-$.fn.insertAtCaret = function (tagName) {
+$.fn.insertAtCaret = function (insertion,notMath) {
   return this.each(function(){
     if (document.selection) {
       //IE support
       this.focus();
       sel = document.selection.createRange();
-      sel.text = tagName;
+      sel.text = insertion;
       this.focus();
     }else if (this.selectionStart || this.selectionStart == '0') {
       //MOZILLA/NETSCAPE support
       startPos = this.selectionStart;
       endPos = this.selectionEnd;
       scrollTop = this.scrollTop;
-      this.value = this.value.substring(0, startPos) + tagName + this.value.substring(endPos,this.value.length);
-      this.focus();
-      this.selectionStart = startPos + tagName.length;
-      this.selectionEnd = startPos + tagName.length;
+      if(notMath){
+        this.value = this.value.substring(0, startPos) + insertion + this.value.substring(endPos,this.value.length);
+        this.focus();
+        this.selectionStart = startPos + insertion.length;
+        this.selectionEnd = startPos + insertion.length;
+      } 
+      else {
+      if (isInMathEnvironment(this.value.substring(0, startPos))) {
+        this.value = this.value.substring(0, startPos) + insertion + ' ' + this.value.substring(endPos,this.value.length);
+        this.focus();
+        this.selectionStart = startPos + insertion.length + 1;
+        this.selectionEnd = startPos + insertion.length + 1;
+      }
+      else {
+        this.value = this.value.substring(0, startPos) + '$' + insertion + '$' + this.value.substring(endPos,this.value.length);
+        this.focus();
+        this.selectionStart = startPos + insertion.length + 2;
+        this.selectionEnd = startPos + insertion.length + 2;
+      }
+    }
       this.scrollTop = scrollTop;
     } else {
-      this.value += tagName;
+      this.value += insertion;
       this.focus();
     }
   });
 };
 
+function isInMathEnvironment(aString) {
+  //Check if the string contains an odd number of '$'s
+  var n = aString.split('$').length - 1;
+  var bool = (n%2 == 1);
+
+  //Check if the string contains an odd number of '$'s
+  var nb = aString.split('\\begin{equation}').length - 1;
+  var ne = aString.split('\\end{equation}').length - 1;
+  bool = bool | (nb - ne == 1);
+
+  return bool;
+
+};

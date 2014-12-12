@@ -1,0 +1,119 @@
+
+body {
+font-family: 'Helvetica Neue';
+font-weight: 300;
+}
+
+.wrapper{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #AAAAAA;
+}
+
+.message{
+  font-size: 8pt;
+  color:#AAAAAA;
+}
+
+.main_box, .main_box>div {
+  font-family: serif;
+  font-size: 12pt;
+  border: 1px solid #eeeeee;
+}
+
+#tags, #selection {
+  border: none;
+}
+
+.main_box .box_title {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 20pt;
+  color: #FFFFFF;
+  background: #2F4F4F;
+
+}
+
+.hideable_box>.box_title:hover {
+  background-color: #3F5F5F;
+}
+
+.box_title, .box_title+div {
+  padding: 10px 10px 10px 10px;
+
+}
+
+/*http://css.maxdesign.com.au/listutorial/horizontal_master.htm#*/
+#tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#tags ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+
+#tags ul li { display: inline; }
+
+#tags ul li span
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #000;
+background-color: #fff;
+border: 1px solid #eeeeee;
+}
+
+
+#latex_box #tags {
+  margin-top: 20px;
+  margin-bottom: 2px
+}
+
+#latex_box #tags ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+
+#latex_box #tags ul li { display: inline; }
+
+#latex_box #tags ul li span
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #000;
+background-color: #fff;
+border: 1px solid #eeeeee;
+}
+
+#latex_box #tags ul li span:hover
+{
+background-color: #eeeeee;
+}
+
+#latex_box button {
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+#latex_box button:hover {
+    background-color: #eeeeee;
+}
+
+/*#latex_box, #latex_box>* {
+  border : 1px solid blue;
+}*/
+
+
+
+
+

@@ -10,32 +10,34 @@ $(document).ready(function (){
       $(this).siblings().fadeToggle(100);
      });
 
-    $("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
+    //$("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button1").click(function() {   //this will apply to all anchor tags
        //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$');
        $("#latex_box textarea").insertAtCaret('x_{1}',false);
     });
 
-    $("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
+    //$("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button2").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('\\int_{a}^{b} f(x)\\,dx',false);
     });
 
-    $("#latex_box #tags ul li:nth-child(3)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button3").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('\\alpha',false);
     });
 
-    $("#latex_box #tags ul li:nth-child(4)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button4").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('\\frac{d}{dx}',false);
     });
 
-    $("#latex_box #tags ul li:nth-child(5)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button5").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('<font color="blue"> blue text </font>',true)
     });
 
-    $("#latex_box #tags ul li:nth-child(6)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button6").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n',true)
     });
 
-    $("#latex_box #tags ul li:nth-child(7)").click(function() {   //this will apply to all anchor tags
+    $("#latex_box #inputbuttons #button7").click(function() {   //this will apply to all anchor tags
        $("#latex_box textarea").insertAtCaret('\\left(   \\right)',false)
     });
 

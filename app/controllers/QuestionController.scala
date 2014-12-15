@@ -7,9 +7,10 @@ import play.api._
 import play.api.libs.json.{JsValue, JsArray, Json, JsObject}
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import reactivemongo.bson.{BSONValue, BSONArray, BSONDocument, BSONObjectID}
+import reactivemongo.bson._
 import play.modules.reactivemongo.json.BSONFormats._
-import scala.concurrent.Future
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
 import scala.util.{Success, Failure}
 
 // Reactive Mongo imports
@@ -231,30 +232,14 @@ object QuestionController extends Controller with MongoController {
       cursor[JsObject]
 
     val result: Future[List[JsObject]] = cursor.collect[List]()
-    val resultAsArray: Future[JsArray] = result.map{ res => Json.arr(res)}
 
-    resultAsArray.map( arr => Ok(arr) )
-  }
-
-  def searchByKeywordsQuery(searchString: String): Future[List[JsObject]] = {
-    val keywords = searchString.split(" ")
-    val regex = ".*"+keywords.mkString(".*")+".*"
-    Logger.info("searching for " + searchString + " using regex: " + regex)
-    //TODO implement search over hints and solns and search for latex symbols
-    val cursor: Cursor[JsObject] = collection.
-      // find with case-insensitive and use . to match any chars options
-      find( Json.obj("statement" -> Json.obj("$regex"->regex, "$options" -> "si"))).
-          cursor[JsObject]
-
-    val result: Future[List[JsObject]] = cursor.collect[List]()
-    result.map( r => Logger.info("No. of search hits: " + r.size) )
-    result
+    result.map( arr => Ok(toJsArray(arr)) )
   }
 
   def searchByKeywords(searchString: String) = Action.async {
     val res = searchByKeywordsQuery(searchString)
     res.map{ l =>
-      Ok (views.html.search( l.map(e=>e.as[Question].url)))
+      Ok (views.html.search( l.map( e => e.as[Question].url)))
     }
   }
 
@@ -269,9 +254,52 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
+  def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
+    Logger.info("searching for " + searchString)
+
+//    val command = Aggregate(collection.name, Seq(
+////      Match(BSONDocument("year"->2011))
+//      Match(BSONDocument("text" -> collection.name , "search"->searchString))
+////      Sort( Seq(Descending( "score:{$meta: \"textScore\"}}")) )
+//    ))
+//    val result = db.command(command)
+
+//    val result = db.command(RawCommand(command.makeDocuments))//.map(_.toSeq)
+//    result.map( seq => Logger.info("number of results: " + seq.size))
+//    result.map( seq => Ok(views.html.search(seq.map( bsonDoc2Json ))) )
+//    result.map( doc => Ok(BSONDocument.pretty(doc)) )
+
+//    val cursor: Cursor[JsObject] = collection.
+      // find all people with name `name`
+//      find(Json.obj("text" -> collection.name, "search" -> searchString)).
+//      sort(Json.obj("year" -> Json.obj("$gt" -> 2010) )).
+//      sort(Json.obj("score" -> Json.obj("meta" -> "textScore") )).
+      // perform the query and get a cursor of JsObject
+//      cursor[JsObject]
+//    val res: Future[List[JsObject]] = cursor.collect[List]()
+//
+//    result.map( d=>Ok(BSONDocument.pretty(d)) )
+
+    val searchCommand = BSONDocument(
+      "text" -> collection.name,
+      "search" -> searchString
+//      "filter" -> BSONDocument("year"->2013)
+    )
+
+    val result : Future[BSONDocument]= db.command(RawCommand(searchCommand))
+    result.map {
+      doc => doc.getAs[List[BSONDocument]]("results") match {
+        case Some(list) => list.map( _.getAs[BSONDocument]("obj").get )
+        case None => Nil
+      }
+    }
+
+  }
+
+  def bson2url(doc: BSONDocument) = Json.toJson(doc).as[Question].url
+
   def toJsArray(jsoList: List[JsValue]): JsArray = {
     jsoList.foldLeft(JsArray())((acc, x) => acc ++ Json.arr(x))
   }
-
 
 }

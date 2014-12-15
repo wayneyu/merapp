@@ -12,14 +12,16 @@ import play.api.libs.json.{JsPath, Reads, Json}
 import play.api.data._
 import play.api.data.Forms._
 import play.api.libs.functional.syntax._
+import views.html.question
 
-case class Question( course: String,
+
+case class Question ( course: String,
                      year: Int,
                      term: String,
                      question: String,
                      statement: String,
                      hints: List[String],
-                     sols: List[String]) {
+                     sols: List[String]){
 
   def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
 
@@ -53,4 +55,21 @@ object Question {
         (JsPath \ "hints").read[List[String]] and
         (JsPath \ "sols").read[List[String]]
     )(Question.apply _)
+
+  implicit object QuestionReader extends BSONDocumentReader[Question] {
+    def read(doc: BSONDocument): Question = {
+      Question(
+        doc.getAs[String]("course").get,
+        doc.getAs[Int]("year").get,
+        doc.getAs[String]("term").get,
+        doc.getAs[String]("question").get,
+        doc.getAs[String]("statement").get,
+        doc.getAs[List[String]]("hints").get,
+        doc.getAs[List[String]]("sols").get
+      )
+    }
+  }
+
+  val empty = Question("No",-1,"","","",Nil,Nil)
+
 }

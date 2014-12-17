@@ -127,6 +127,19 @@ background-color: #eeeeee;
 .searchResult{
     font-family: serif;
 }
+
+.latex_edit_area textarea{
+    width: 99%;
+    height: 10em;
+}
+
+.latex_edit_area button{
+    margin: left 20px;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    color:#2F4F4F;
+    width: 5em;
+}
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;
 }*/

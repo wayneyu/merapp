@@ -28,7 +28,6 @@ object QuestionController extends Controller with MongoController {
 
   val collection: JSONCollection = db.collection[JSONCollection]("questions")
 
-
   def questions = Action.async {
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
@@ -48,7 +47,7 @@ object QuestionController extends Controller with MongoController {
     }
 
     courseAndYearResult.map { case (courseList, yearList) =>
-      Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, "", "", "", ""))
+      Ok(views.html.question(Question.empty, false)(courseList, yearList, Nil, "", "", "", ""))
     }
   }
 
@@ -75,7 +74,10 @@ object QuestionController extends Controller with MongoController {
 
   }
 
-  def question(course: String, term_year: String, q: String) = Action.async {
+  def questionEdit(course: String, term_year: String, q: String) = question(course, term_year, q, true)
+
+
+  def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async {
     val tysplit = term_year.split("_")
     val term = tysplit(0)
     val year = tysplit(1).toInt
@@ -90,19 +92,17 @@ object QuestionController extends Controller with MongoController {
       q <- question
     } yield (cr, yr, q)
 
-    res.map { case (courseList, yearList, question) => {
-      question match {
-        case j :: js =>
-          Logger.debug("No. of questions found: " + question.length.toString())
-          val Q = j.as[Question]
-          Ok(views.html.question(
-            q, Q.statement, Q.hints, Q.sols)(courseList, yearList, Nil, course, year.toString, term, q))
-        case Nil => {
-          val resp = "Question not found"
-          Ok(views.html.question(resp, "", Nil, Nil)(courseList, yearList, Nil, course, year.toString, term, q))
+    res.map { case (courseList, yearList, question) =>
+      {
+        question match {
+          case j :: js =>
+            Logger.debug("No. of questions found: " + question.length.toString())
+            val Q = j.as[Question]
+            Ok(views.html.question(Q, editable)(courseList, yearList, Nil, course, year.toString, term, q))
+          case Nil =>
+            Ok(views.html.question(Question.empty, editable)(courseList, yearList, Nil, course, year.toString, term, q))
         }
       }
-    }
     }
   }
 

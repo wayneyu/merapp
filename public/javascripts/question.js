@@ -10,6 +10,32 @@ $(document).ready(function (){
       $(this).siblings().fadeToggle(100);
      });
 
+    $(".latex_edit_render_area").fadeOut(0);
+
+    $("[id$='_edit'] button").click(function (){
+        var parentId = $(this).parent().parent().attr('id');
+        $(this).text($(this).text() == "Edit" ? "Render" : "Edit");
+        var textarea = $("#" + parentId + " textarea");
+        var renderarea = $("#" + parentId + " .latex_edit_render_area");
+        textarea.fadeToggle(10);
+        renderarea.fadeToggle(10);
+        var latex_code = textarea.val();
+        renderarea.empty();
+        renderarea.append(latex_code);
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
+    });
+
+    $("[id$='_edit'] .latex_edit_render_area").click(function() {
+        var parentId = $(this).parent().attr('id');
+        var textarea = $("#" + parentId + " textarea");
+        var renderarea = $("#" + parentId + " .latex_edit_render_area");
+        var button = $("#" + parentId + " button");
+        button.text(button.text() == "Edit" ? "Render" : "Edit");
+        textarea.fadeToggle(10);
+        renderarea.fadeToggle(10);
+    });
+
+
     //$("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
     $("#latex_box #inputbuttons #button1").click(function() {   //this will apply to all anchor tags
        //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$');

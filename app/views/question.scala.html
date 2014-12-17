@@ -1,4 +1,8 @@
-@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
+@(qn: Question, editable: Boolean)(courses: List[String], years: List[String], qs: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
+@q = @{qn.question}
+@stmt = @{qn.statement}
+@hints = @{qn.hints}
+@sols = @{qn.sols}
 @terms = @{ List("April", "December") }
 @q_no = @{ 1 to 10 }
 @q_letter = @{ ('a' to 'f') }
@@ -52,12 +56,26 @@
     <div class="box_title">@q</div>
     <div>@stmt</div>
 </div>
+@if(editable){
+<div class="latex_edit_area" id="stmt_edit">
+    <textarea>@stmt</textarea>
+    <div class="latex_edit_render_area"></div>
+    <p><button style="margin:left 20px; font-family: 'Helvetica Neue'; font-weight: 300; color:#2F4F4F;">render</button></p>
+</div>
+}
 
 @for( (h, ind) <- hints.zipWithIndex ) {
 <div class="main_box hideable_box">
     <div class="box_title">Hint (@(ind+1))</div>
     <div>@h</div>
 </div>
+@if(editable){
+<div class="latex_edit_area" id=@("hints_"+(ind+1)+"_edit")>
+    <textarea>@h</textarea>
+    <div class="latex_edit_render_area"></div>
+    <p><button>render</button></p>
+</div>
+}
 }
 
 @for( (s, ind) <- sols.zipWithIndex ) {
@@ -65,6 +83,17 @@
     <div class="box_title">Solution (@(ind+1))</div>
     <div>@s</div>
 </div>
+@if(editable){
+<div class="latex_edit_area" id=@("sols_"+(ind+1)+"_edit")>
+    <textarea>@s</textarea>
+    <div class="latex_edit_render_area"></div>
+    <p><button>render</button></p>
+</div>
+}
+}
+
+@if(editable){
+    <button>Submit change</button>
 }
 
 <div id="tags">

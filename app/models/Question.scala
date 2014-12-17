@@ -70,6 +70,6 @@ object Question {
     }
   }
 
-  val empty = Question("No",-1,"","","",Nil,Nil)
+  val empty = Question("",-1,"","No Question","",Nil,Nil)
 
 }

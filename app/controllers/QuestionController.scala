@@ -4,7 +4,7 @@ import controllers.Application._
 import models.{Question}
 import play.Routes
 import play.api._
-import play.api.libs.json.{JsValue, JsArray, Json, JsObject}
+import play.api.libs.json._
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import reactivemongo.bson._
@@ -38,11 +38,11 @@ object QuestionController extends Controller with MongoController {
     } yield (cr, yr)
 
     coursesResult onComplete {
-      case Success(res) => Logger.debug("No. of courses found: " + res.length.toString())
+      case Success(res) => Logger.info("No. of courses found: " + res.length.toString())
       case Failure(exception) =>
     }
     yearsResult onComplete {
-      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
+      case Success(res) => Logger.info("No. of years found: " + res.length.toString())
       case Failure(exception) =>
     }
 
@@ -96,8 +96,9 @@ object QuestionController extends Controller with MongoController {
       {
         question match {
           case j :: js =>
-            Logger.debug("No. of questions found: " + question.length.toString())
+            Logger.info("No. of questions found: " + question.length.toString())
             val Q = j.as[Question]
+//            Ok(j)
             Ok(views.html.question(Q, editable)(courseList, yearList, Nil, course, year.toString, term, q))
           case Nil =>
             Ok(views.html.question(Question.empty, editable)(courseList, yearList, Nil, course, year.toString, term, q))
@@ -202,7 +203,7 @@ object QuestionController extends Controller with MongoController {
         Logger.info("Result: " + v.toString())
         Ok(BSONArrayFormat.writes(v))
       case None =>
-        Logger.debug("Result: no courses found.")
+        Logger.info("Result: no courses found.")
         Ok(Json.obj())
     }
   }
@@ -219,7 +220,7 @@ object QuestionController extends Controller with MongoController {
         Logger.info("Result: " + v.toString())
         Ok(BSONArrayFormat.writes(v))
       case None =>
-        Logger.debug("Result: no terms found.")
+        Logger.info("Result: no terms found.")
         Ok(Json.obj())
     }
   }
@@ -300,6 +301,54 @@ object QuestionController extends Controller with MongoController {
 
   def toJsArray(jsoList: List[JsValue]): JsArray = {
     jsoList.foldLeft(JsArray())((acc, x) => acc ++ Json.arr(x))
+  }
+
+  def findAndModify(course: String, term_year: String, q:String) = Action.async(parse.json) { request =>
+
+    val ty = term_year.split("_")
+    Logger.info("Editing " + course + "/" + ty(0) + "/" + ty(1) + "/" + q)
+
+    val bson = BSONDocumentFormat.reads(request.body)
+
+    bson match {
+
+      case e: JsError => Future(BadRequest("Invalid JSON is passed."))
+
+      case b: JsSuccess[BSONDocument] =>
+      {
+        val selector = BSONDocument(
+          "course" -> course, "term" -> ty(0),
+          "year" -> ty(1).toInt, "question" -> q)
+
+        val modifier = BSONDocument(
+          "$set" -> b.get)
+
+        val command = FindAndModify(
+          collection.name,
+          selector,
+          Update(modifier, true))
+
+        val result = db.command(command)
+
+        result.map( r =>
+          r match {
+            case Some(doc) =>
+              Ok(BSONDocument.pretty(doc))
+//              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
+            case None =>
+              Ok("Question was not updated.")
+          }
+        )
+
+      }
+    }
+
+//    val command = RawCommand(BSONDocument(
+//      "distinct" -> "questions",
+//      "key" -> "year", "query" -> BSONDocument( "course" -> course)))
+//    val result = db.command(command) // result is Future[BSONDocument]
+////    db.questions.findAndModify({ query: {_id: ObjectId("54559b01523146ee4ed13f2b")}, update:{$set:{year:2013}},new:true})
+
   }
 
 }

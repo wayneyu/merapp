@@ -57,43 +57,56 @@
     <div>@stmt</div>
 </div>
 @if(editable){
-<div class="latex_edit_area" id="stmt_edit">
+<div class="latex_edit_area" id="statement_edit">
     <textarea>@stmt</textarea>
     <div class="latex_edit_render_area"></div>
-    <p><button style="margin:left 20px; font-family: 'Helvetica Neue'; font-weight: 300; color:#2F4F4F;">render</button></p>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
 </div>
 }
 
 @for( (h, ind) <- hints.zipWithIndex ) {
-<div class="main_box hideable_box">
+@if(editable){
+    <div class="main_box">
+}else{
+    <div class="main_box hideable_box">
+}
     <div class="box_title">Hint (@(ind+1))</div>
     <div>@h</div>
 </div>
 @if(editable){
-<div class="latex_edit_area" id=@("hints_"+(ind+1)+"_edit")>
+<div class="latex_edit_area" id=@("hints_"+ind+"_edit")>
     <textarea>@h</textarea>
     <div class="latex_edit_render_area"></div>
-    <p><button>render</button></p>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
 </div>
 }
 }
 
 @for( (s, ind) <- sols.zipWithIndex ) {
-<div class="main_box hideable_box">
+@if(editable){
+    <div class="main_box">
+}else{
+    <div class="main_box hideable_box">
+}
     <div class="box_title">Solution (@(ind+1))</div>
     <div>@s</div>
 </div>
 @if(editable){
-<div class="latex_edit_area" id=@("sols_"+(ind+1)+"_edit")>
+<div class="latex_edit_area" id=@("sols_"+ind+"_edit")>
     <textarea>@s</textarea>
     <div class="latex_edit_render_area"></div>
-    <p><button>render</button></p>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
 </div>
 }
-}
-
-@if(editable){
-    <button>Submit change</button>
 }
 
 <div id="tags">

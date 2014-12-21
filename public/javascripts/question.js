@@ -12,7 +12,7 @@ $(document).ready(function (){
 
     $(".latex_edit_render_area").fadeOut(0);
 
-    $("[id$='_edit'] button").click(function (){
+    $("[id$='_edit'] .render_button").click(function (){
         var parentId = $(this).parent().parent().attr('id');
         $(this).text($(this).text() == "Edit" ? "Render" : "Edit");
         var textarea = $("#" + parentId + " textarea");
@@ -29,11 +29,33 @@ $(document).ready(function (){
         var parentId = $(this).parent().attr('id');
         var textarea = $("#" + parentId + " textarea");
         var renderarea = $("#" + parentId + " .latex_edit_render_area");
-        var button = $("#" + parentId + " button");
+        var button = $("#" + parentId + " .render_button");
         button.text(button.text() == "Edit" ? "Render" : "Edit");
         textarea.fadeToggle(10);
         renderarea.fadeToggle(10);
     });
+
+    $("[id$='_edit'] .submit_button").click(function (){
+        var parentId = $(this).parent().parent().attr('id');
+        var idstr = parentId.split('_');
+        var url = window.location.pathname;
+        var textarea = $("#" + parentId + " textarea");
+        var newValue = textarea.val();
+        var data = {};
+        var key = idstr[0]+"."+idstr[1];
+        data[key] = newValue;
+        debugger;
+        $.ajax({
+          contentType: 'application/json',
+          type: 'POST',
+          url: url,
+          data: JSON.stringify(data),
+          success: function(d){
+            location.reload();
+          }
+        });
+    });
+
 
 
     //$("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
@@ -71,7 +93,6 @@ $(document).ready(function (){
        $("#latex_box p").empty();
        $("#latex_box p").append( $("#latex_box textarea").val() );
        MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
-
     });
 
 

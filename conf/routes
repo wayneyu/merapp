@@ -14,6 +14,7 @@ GET     /questions/search/id/:id             controllers.QuestionController.sear
 GET     /questions/:course/:term_year/:q     controllers.QuestionController.question(course: String, term_year: String, q: String)
 GET     /questions/:course/:term_year/:q/json     controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
 GET     /questions/:course/:term_year/:q/edit     controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
+POST    /questions/:course/:term_year/:q/edit     controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
 GET     /questions/search/year/:course/:term controllers.QuestionController.distinctYears(course: String, term: String)
 GET     /questions/search/course/:year/:term controllers.QuestionController.distinctCourses(year: Int, term: String)
 GET     /questions/search/term/:course/:year controllers.QuestionController.distinctTerms(course: String, year: Int)

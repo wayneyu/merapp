@@ -24,14 +24,14 @@ font-weight: 300;
   font-size: 20pt;
   color: #FFFFFF;
   background: #2F4F4F;
-
+  margin-top: 2em;
 }
 
 .hideable_box>.box_title:hover {
   background-color: #3F5F5F;
 }
 
-.box_title, .box_title+div {
+.box_title, .box_title+div, .latex_edit_render_area {
   padding: 10px 10px 10px 10px;
 
 }
@@ -134,11 +134,18 @@ background-color: #eeeeee;
 }
 
 .latex_edit_area button{
-    margin: left 20px;
     font-family: 'Helvetica Neue';
     font-weight: 300;
     color:#2F4F4F;
-    width: 5em;
+    width: 10em;
+}
+
+.latex_edit_area button.render_button{
+    /*float: left;*/
+}
+
+.latex_edit_area button.submit_button{
+    /*float: right;*/
 }
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;

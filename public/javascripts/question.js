@@ -37,14 +37,13 @@ $(document).ready(function (){
 
     $("[id$='_edit'] .submit_button").click(function (){
         var parentId = $(this).parent().parent().attr('id');
-        var idstr = parentId.split('_');
+        debugger;
+        var key = parentId.match('.*(?=_edit)')[0].replace('_','.');
         var url = window.location.pathname;
         var textarea = $("#" + parentId + " textarea");
         var newValue = textarea.val();
         var data = {};
-        var key = idstr[0]+"."+idstr[1];
         data[key] = newValue;
-        debugger;
         $.ajax({
           contentType: 'application/json',
           type: 'POST',

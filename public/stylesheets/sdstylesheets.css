@@ -51,17 +51,30 @@ font-weight: 300;
   margin-bottom: 20px;
 }
 
+#latex_box
+{
+  width:800px;
+}
+
 #latex_box #inputbuttons
 {
   font-size: 10pt;
   margin-bottom: 1em;
 }
 
+#latex_box #inputbuttons .buttonbox
+{
+  display:inline-block;
+  line-height: 3.2em;
+  padding: 0.5em;
+}
+
 #latex_box #inputbuttons a
 {
   border: 1px solid black;
   padding: 10px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  margin-bottom: 1em;
 }
 
 #latex_box #inputbuttons a:hover
@@ -69,7 +82,7 @@ font-weight: 300;
   border: 1px solid black;
   padding: 10px;
   color: #ffffff;
-  background-color: #777777;
+  background-color: #00AAAA;
 }
 
 #latex_box button {

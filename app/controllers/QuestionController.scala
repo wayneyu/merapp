@@ -46,11 +46,13 @@ object QuestionController extends Controller with MongoController {
     }
 
     courseAndYearResult.map { case (courseList, yearList) =>
-      Ok(views.html.question("", "", Nil, Nil)(courseList, yearList, Nil, "", "", "", ""))
+      Ok(views.html.question("", "", Nil, Nil)(courseList, Nil, Nil, Nil, "", "", "", ""))
     }
   }
 
   def question(course: String, term_year: String, q: String) = Action.async {
+
+    val terms = distinctTerms(course) // HELP: Bernhard would like to use this in the "Ok(views.html.question...", but it complains that "String" is expected, but actual is "Anytype".
 
     val tysplit = term_year.split("_")
     val term = tysplit(0)
@@ -58,7 +60,6 @@ object QuestionController extends Controller with MongoController {
 
     // let's do our query
     val cursor: Cursor[JsObject] = collection.
-      // find all people with name `name`
       find(Json.obj("course" -> course, "term" -> term, "year" -> year, "question" -> q)).
       // perform the query and get a cursor of JsObject
       cursor[JsObject]
@@ -81,10 +82,10 @@ object QuestionController extends Controller with MongoController {
             Ok(views.html.question(
               q, (j \ "statement").as[String],
               (j \ "hints").as[List[String]],
-              (j \ "sols").as[List[String]])(courseList, yearList, Nil, course, year.toString, term, q))
+              (j \ "sols").as[List[String]])(courseList, Nil, yearList, Nil, course, year.toString, term, q))
           case Nil => {
             val resp = "Question not found"
-            Ok(views.html.question(resp, "", Nil, Nil)(courseList, yearList, Nil, course, year.toString, term, q))
+            Ok(views.html.question(resp, "", Nil, Nil)(courseList, Nil, Nil, Nil, course, year.toString, term, q))
           }
         }
       }
@@ -96,12 +97,13 @@ object QuestionController extends Controller with MongoController {
     val form = request.body.asFormUrlEncoded
     form match {
       case Some(map) => {
-        val q_no = map.getOrElse("q_no", Seq(""))(0)
-        val q_letter = map.getOrElse("q_letter", Seq(""))(0)
+        for (key <- map.keys){
+          Logger.debug(key)
+        }
         Redirect(controllers.routes.QuestionController.question(
           map.getOrElse("course", Seq(""))(0),
           map.getOrElse("term", Seq(""))(0) + "_" + map.getOrElse("year", Seq(""))(0),
-          if (q_no.nonEmpty && q_letter.nonEmpty) "Question_" + q_no + "_(" + q_letter + ")" else ""))
+          map.getOrElse("question", Seq(""))(0)))
       }
       case None => Redirect(controllers.routes.QuestionController.question("","","")  )
     }
@@ -234,4 +236,22 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
+  def distinctQuestions(course: String, term_year: String) = Action.async {
+    val tysplit = term_year.split("_")
+    val term = tysplit(0)
+    val year = tysplit(1).toInt
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "question",
+      "query" -> BSONDocument( "course" -> course, "year" -> year, "term" -> term)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[BSONArray]("values")
+    ).map {
+      case Some(v) =>
+        Logger.debug("Result: " + v.values)
+        Ok(BSONArrayFormat.writes(v))
+      case None =>
+        Logger.debug("Result: no years found.")
+        Ok(Json.obj())
+    }
+  }
 }

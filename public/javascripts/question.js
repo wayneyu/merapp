@@ -43,82 +43,63 @@ $(document).ready(function (){
     });
 
 
-    //$("#questionByCourse").on('change', function(event) {
-     //   alert($("#questionByCourse option:selected" ).text());
-      //  jsRoutes.controllers.QuestionController.findByCourse($("#questionByCourse option:selected").text()).ajax({
 
-       // success : function (data) {
-
-       //   }
-    //    error : function (data) {
-
-  //          }
-       // });
-    //});
-
-    $("#courseSelect, #termSelect").on('change', function(e){
-        var c = $("#courseSelect option:selected").text();
-        var t = $("#termSelect option:selected").text();
-        console.log(c.concat(" ").concat(t))
+    $("#courseSelect").on('change', function(e){
+        var course = $("#courseSelect option:selected").text();
         $.ajax({
           type: 'GET',
-          url: "/questions/search/year/"+c+"/"+t,
-          //url: '@routes.QuestionController.distinctYears()', //TODO: replace URL with play's javascriptRoutes
-          data: { course: c, term: t},
+          url: "/questions/search/term/" + course,
+          //TODO: replace URL with play's javascriptRoutes
           success: function(d){
-            var $el = $("#yearSelect")
-            var y = $("#yearSelect option:selected").text();
-            console.log("selcted" + y);
-            console.log("years found: ");
-            console.log(d);
-            $("#yearSelect option").each(function(){
-                $(this).addClass("semiOpagueText");
-            })
-            $.each(d, function(value,key) {
-              $("#yearSelect option[value='"+key+"']").removeClass("semiOpagueText");
-            });
-            $el.val(d[0]);
-
-            if ($("#yearSelect option[value='"+y+"']").length > 0){
-                console.log("slecting" + y);
-                $el.val(y);
-            }
-          }
-        });
+              var term_selector = $("#termSelect")
+              term_selector.empty()
+              $.each(d, function(value, term) {
+                var option = $('<option />').val(term).text(term);
+                term_selector.append(option)
+              })
+              $("#termSelect option").change();
+           }
+        })
     })
 
-    $("#yearSelect, #termSelect").on('change', function(e){
-        var y = $("#yearSelect option:selected").text();
-        var t = $("#termSelect option:selected").text();
-        console.log("selected " + y + " " + t)
+    $("#termSelect").on('change', function(e){
+        var course = $("#courseSelect option:selected").text();
+        var term = $("#termSelect option:selected").text();
         $.ajax({
           type: 'GET',
-          url: "/questions/search/course/"+y+"/"+t,
-          //url: '@routes.QuestionController.distinctCourses()', //TODO: replace URL with play's javascriptRoutes
-          data: { year: y, term: t},
+          url: "/questions/search/year/" + course + "/" + term,
+          //TODO: replace URL with play's javascriptRoutes
           success: function(d){
-            var $el = $("#courseSelect");
-            var c = $("#courseSelect option:selected").text();
-            console.log("selected" + y);
-            console.log("courses found: ");
-            console.log(d);
-            $("#courseSelect option").each(function(){
-                $(this).addClass("semiOpagueText");
+            var year_selector = $("#yearSelect")
+            year_selector.empty()
+            $.each(d, function(value, year) {
+                var option = $('<option />').val(year).text(year);
+                year_selector.append(option)
             })
-            $.each(d, function(value,key) {
-              $("#courseSelect option[value='"+key+"']").removeClass("semiOpagueText");
-            });
-            $el.val(d[0]);
-
-            if ($("#courseSelect option[value='"+c+"']").length > 0){
-                console.log("selecting" + c);
-                $el.val(c);
-            }
+            $("#yearSelect option").change();
           }
-        });
-    })
+        })
+    });
 
-});
+    $("#yearSelect").on('change', function(e){
+        var course = $("#courseSelect option:selected").text();
+        var term = $("#termSelect option:selected").text();
+        var year = $("#yearSelect option:selected").text();
+        $.ajax({
+          type: 'GET',
+          url: "/questions/search/question/" + course + "/" + term + "_" + year,
+          //TODO: replace URL with play's javascriptRoutes
+          success: function(d){
+            var question_selector = $("#questionSelect")
+            question_selector.empty()
+            $.each(d, function(value, question) {
+                var option = $('<option />').val(question).text(question);
+                question_selector.append(option)
+            })
+          }
+        })
+    });
+})
 
 $.fn.insertAtCaret = function (tagName) {
   return this.each(function(){

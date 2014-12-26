@@ -1,11 +1,8 @@
-@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], years: List[String], qs: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQ: String)
-@terms = @{ List("April", "December") }
-@q_no = @{ 1 to 10 }
-@q_letter = @{ ('a' to 'f') }
-@selected_q_no = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(1) else "" }
-@selected_q_letter = @{ if (selectedQ.nonEmpty) selectedQ.split("_")(2)(1) else "" }
-
+@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedTerm: String, selectedYear: String, selectedQuestion: String)
 @main("Questions"){
+@for( term <- terms ) {
+@term
+}
 <div id="selection">
 @helper.form(action = routes.QuestionController.questionSubmit()) {
 
@@ -17,7 +14,7 @@
 
     <select id="termSelect" name="term">
         @for( term <- terms ) {
-            <option class="semiOpagueText" value=@term @if(term == selectedTerm){selected}>@term</option>
+        <option class="semiOpagueText" value=@term @if(term == selectedTerm){selected}>@term</option>
         }
     </select>
 
@@ -27,19 +24,9 @@
         }
     </select>
 
-    <select id="qnoSelect" name="q_no">
-        @for( i <- q_no){
-            @if( i < 10 ){
-                <option class="semiOpagueText" value=@("0" + i) @if( "0"+i == selected_q_no){selected}>@("0" + i)</option>
-            }else{
-                <option class="semiOpagueText" value=@i @if( i.toString == selected_q_no){selected}>@i</option>
-            }
-        }
-    </select>
-
-    <select id="qletterSelect" name="q_letter">
-        @for( c <- q_letter ){
-            <option class="semiOpagueText" value=@c @if(c == selected_q_letter){selected}>@c</option>
+    <select id="questionSelect" name="question">
+        @for( question <- questions ){
+            <option class="semiOpagueText" value="@question" @if(question == selectedQuestion){selected}>@question</option>
         }
     </select>
 

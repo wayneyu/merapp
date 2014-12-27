@@ -1,0 +1,30 @@
+@(course: String, exams: List[String])
+
+@main(course){
+<div id="exams">
+    <h2>Available final exams</h2>
+
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Instructors</th>
+            <th>Easiness</th>
+            <th colspan="3" align="center">PDF version</th>
+        </tr>
+        <tr>
+        @for( exam <- exams ){
+            <td><div id="exam"><a href="@course/@exam">@exam</a></div></td>
+            <td>(todo)</td>
+            <td>(todo)</td>
+            <td>Questions</td>
+            <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers</a></td>
+            <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Solutions</a></td>
+        </tr>
+    }
+    </table>
+
+    @* <h2>Topics</h2>
+    List all topics in this course. Ideally with weight?
+    *@
+</div>
+}

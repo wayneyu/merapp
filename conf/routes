@@ -3,10 +3,10 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+GET    /                           controllers.Application.index
 
 # Team member page (Static)
-GET     /team                       controllers.Application.team
+GET    /team                       controllers.Application.team
 
 GET    /editor          controllers.Application.editor
 
@@ -26,6 +26,9 @@ POST    /questions/:course/:term_year/:q/edit           controllers.QuestionCont
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
 POST    /questions/search/submit   controllers.QuestionController.searchByKeywordsSubmit()
+
+GET     /course/:course                                 controllers.QuestionController.examsForCourse(course: String)
+GET     /course/:course/:term_year                      controllers.QuestionController.questionsForExam(course: String, term_year: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /javascriptRoutes  controllers.Application.javascriptRoutes

@@ -12,6 +12,7 @@ import play.modules.reactivemongo.json.BSONFormats._
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 import scala.util.{Success, Failure}
+import scala.collection.mutable.ListBuffer
 
 // Reactive Mongo imports
 import reactivemongo.api._
@@ -214,6 +215,18 @@ object QuestionController extends Controller with MongoController {
 
     result.map( doc => doc.getAs[List[Int]]("values")
     ).map {
+      case Some(list) => list.toList.sorted.map(_.toString())
+      case None => Nil
+    }
+  }
+
+  def distinctTermsList(course: String): Future[List[String]] = {
+    // set up query
+    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term", "query" -> BSONDocument( "course" -> course)))
+    val result = db.command(command) // result is Future[BSONDocument]
+
+    result.map( doc => doc.getAs[List[String]]("values")
+    ).map {
       case Some(list) => list.sorted.map(_.toString())
       case None => Nil
     }
@@ -408,5 +421,27 @@ object QuestionController extends Controller with MongoController {
 //    val result = db.command(command) // result is Future[BSONDocument]
 ////    db.questions.findAndModify({ query: {_id: ObjectId("54559b01523146ee4ed13f2b")}, update:{$set:{year:2013}},new:true})
 
+  }
+
+  def examsForCourse(course: String) = Action {
+
+
+    // val terms = distinctTermsList(course)  // HELP: Returns Future[List[String]] but List[String] is needed
+    val terms = List("December")
+    /* var exams = new ListBuffer[String]()
+    for (term <- terms) {  // HELP: Scala does not like this either
+      for ( year <- distinctYears(course, term) ) {
+        exams += term + "_" + year.toString()
+      }
+    }*/
+    var exams = List("December_2012", "December_2013")
+
+    Ok(views.html.course(course, exams))
+  }
+
+  def questionsForExam(course: String, term_year: String) = Action {
+
+    val questions = List("Question_01_(a)", "Question_01_(b)", "Question_02_(a)")
+    Ok(views.html.exam(course, term_year, questions))
   }
 }

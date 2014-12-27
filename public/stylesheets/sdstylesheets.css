@@ -1,0 +1,99 @@
+
+body {
+font-family: 'Helvetica Neue';
+font-weight: 300;
+}
+
+.wrapper{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #AAAAAA;
+}
+
+.message{
+  font-size: 8pt;
+  color:#AAAAAA;
+}
+
+.main_box, .main_box>div {
+  font-family: serif;
+  font-size: 12pt;
+  border: 1px solid #eeeeee;
+}
+
+#tags, #selection {
+  border: none;
+}
+
+.main_box .box_title {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 20pt;
+  color: #FFFFFF;
+  background: #2F4F4F;
+
+}
+
+.hideable_box>.box_title:hover {
+  background-color: #3F5F5F;
+}
+
+.box_title, .box_title+div {
+  padding: 10px 10px 10px 10px;
+
+}
+
+/*http://css.maxdesign.com.au/listutorial/horizontal_master.htm#*/
+#tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#latex_box
+{
+  width:800px;
+}
+
+#latex_box #inputbuttons
+{
+  font-size: 10pt;
+  margin-bottom: 1em;
+}
+
+#latex_box #inputbuttons .buttonbox
+{
+  display:inline-block;
+  line-height: 3.2em;
+  padding: 0.5em;
+}
+
+#latex_box #inputbuttons a
+{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-bottom: 1em;
+}
+
+#latex_box #inputbuttons a:hover
+{
+  border: 1px solid black;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #00AAAA;
+}
+
+#latex_box button {
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+#latex_box button:hover {
+    background-color: #eeeeee;
+}
+
+
+
+

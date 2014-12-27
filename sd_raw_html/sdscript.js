@@ -34,6 +34,10 @@ $("div.hideable_box>div+div").fadeOut(0);
        $("#latex_box textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n')
     });
 
+    $("#latex_box #tags ul li:nth-child(7)").click(function() {   //this will apply to all anchor tags
+       $("#latex_box textarea").insertAtCaret('\n\\begin{align}\n f(x) &= g(x) + a \\\\ &= h(x) \n\\end{align} \n')
+    });
+
     $("#latex_box button").click(function() {   //this will apply to all anchor tags
        $("#latex_box p").empty(); 
        $("#latex_box p").append( $("#latex_box textarea").val() );

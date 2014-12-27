@@ -1,23 +1,92 @@
-@main("Editor"){
-<div id="latex_box">
-    <div id="tags">
-        <ul>
-            <li><span>"x_{1}"</span></li>
-            <li><span>"integral"</span></li>
-            <li><span>"alpha"</span></li>
-            <li><span>"d/dx"</span></li>
-            <li><span>"blue text"</span></li>
-            <li><span>"equation"</span></li>
-        </ul>
-    </div>
 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Editor</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
+            });
+        </script>
+
+        <script type="text/javascript"
+                src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+
+        <link rel="stylesheet" media="screen" href="../../public/stylesheets/stylesheets/main.css">
+        <link rel="stylesheet" media="screen" href="../../public/stylesheets/stylesheets/question.css">
+        <link rel="stylesheet" media="screen" href="../../public/stylesheets/sdstylesheets.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../../public/javascripts/question.js" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/question.js")" type="text/javascript"></script>
+    </head>
+
+<!-- @main("Editor"){ -->
+<div id="latex_box">
+	<div>
+    	Type your input into the box below.
+    </div>
+    <div id="inputbuttons">
+    	<!-- SYMBOLS -->
+    	<div class=buttonbox style="width:35%;">
+    	<a id="button17">${\color{lightgray}x}^{p}$</a>
+        <a id="button1">${\color{lightgray}x}_{n}$</a>
+        <a id="button3">$\alpha$</a>
+        <a id="button12">$\beta$</a>
+        <a id="button13">$\gamma$</a>
+        <a id="button14">$\delta$</a>
+        <a id="button15">$\epsilon$</a>
+        <a id="button18">$\lambda$</a>
+        <a id="button11">$\pi$</a>
+        <a id="button10">$\infty$</a>
+        <a id="button21">$\mathbb{R}$</a>
+        <a id="button22">$\mathbb{C}$</a>
+        <a id="button26">$<$</a>
+        <a id="button23">$\leq$</a>
+        <a id="button25">$>$</a>
+        <a id="button24">$\geq$</a>
+        <a id="button29">$\sim$</a>
+        <a id="button31">$\dots$</a>
+        </div>
+        <!-- OPERATORS -->
+        <div class=buttonbox style="width:30%;">
+        <a id="button20">$\frac{a}{b}$</a>
+        <a id="button4">$\frac{d}{dx}$</a>
+        <a id="button19">$\frac{d^{2}}{dx^{2}}$</a>
+        <a id="button2">$\int_{a}^{b}f(x)\,dx$</a>
+        <a id="button9">$\lim_{x \rightarrow a}$</a>
+        <a id="button27">$\sin\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button28">$\cos\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button30">$\sum_{i = 0}^{N}$</a>
+        </div>
+        <!-- ENVIRONMENTS, ETC. -->
+        <div class=buttonbox style="width:25%;">
+        <a id="button5"><font color="blue">blue text</font></a>
+        <a id="button32"><font color="red">red text</font></a>
+        <a id="button6">equation</a>
+        <a id="button16">align</a>
+        <a id="button33">matrix</a>
+        <a id="button34">piecewise</a>
+        <a id="button7">$\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button8">$\left[{\color{lightgray}\dots} \right]$</a>
+        </div>
+    </div>
+    <div class="message">
+    	All math must be written between a pair of '$' characters or in the 'equation' or 'align' environments which can be input by clicking the corresponding buttons below.<br><br>
+    	Most math symbols are input as you would expect (i.e. the '+' operator is just the '+' button on the keyboard). Other symbols/functions can be input by clicking the buttons directly below. If you can't find the symbol you're looking for, you might be able to find it <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">here</a>.
+    </div>
     <div>
         <textarea name="latex_formula" id="latex_formula" cols="100" rows="10"></textarea>
     </div>
+    <div>
     Hit the render button to view your output: <button style="margin:left 20px; font-family: 'Helvetica Neue'; font-weight: 300; color:#2F4F4F;">render!</button>
+    </div>
 
     <p style="font-family: serif; font-size: 12pt; width = 100%; border: 1px dashed #AAAAAA;">   </p> <!-- gets appeneded by jquery -->
 
 
 </div>
-}
+<!--}-->
+
+</html>

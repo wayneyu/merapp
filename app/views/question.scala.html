@@ -1,4 +1,8 @@
-@(q: String, stmt: String, hints: List[String], sols: List[String])(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedTerm: String, selectedYear: String, selectedQuestion: String)
+@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedTerm: String, selectedYear: String, selectedQuestion: String)
+@q = @{qn.question}
+@stmt = @{qn.statement}
+@hints = @{qn.hints}
+@sols = @{qn.sols}
 @main("Questions"){
 @for( term <- terms ) {
 @term
@@ -38,19 +42,57 @@
     <div class="box_title">@q</div>
     <div>@stmt</div>
 </div>
-
-@for( (h, ind) <- hints.zipWithIndex ) {
-<div class="main_box hideable_box">
-    <div class="box_title">Hint (@(ind+1))</div>
-    <div>@h</div>
+@if(editable){
+<div class="latex_edit_area" id="statement_edit">
+    <textarea>@stmt</textarea>
+    <div class="latex_edit_render_area"></div>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
 </div>
 }
 
+@for( (h, ind) <- hints.zipWithIndex ) {
+@if(editable){
+    <div class="main_box">
+}else{
+    <div class="main_box hideable_box">
+}
+    <div class="box_title">Hint (@(ind+1))</div>
+    <div>@h</div>
+</div>
+@if(editable){
+<div class="latex_edit_area" id=@("hints_"+ind+"_edit")>
+    <textarea>@h</textarea>
+    <div class="latex_edit_render_area"></div>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
+</div>
+}
+}
+
 @for( (s, ind) <- sols.zipWithIndex ) {
-<div class="main_box hideable_box">
+@if(editable){
+    <div class="main_box">
+}else{
+    <div class="main_box hideable_box">
+}
     <div class="box_title">Solution (@(ind+1))</div>
     <div>@s</div>
 </div>
+@if(editable){
+<div class="latex_edit_area" id=@("sols_"+ind+"_edit")>
+    <textarea>@s</textarea>
+    <div class="latex_edit_render_area"></div>
+    <div>
+        <button class="render_button">render</button>
+        <button class="submit_button">submit changes</button>
+    </div>
+</div>
+}
 }
 
 <div id="tags">

@@ -11,13 +11,21 @@ GET     /team                       controllers.Application.team
 GET    /editor          controllers.Application.editor
 
 GET    /questions                                       controllers.Application.questions
+GET    /questions/search                                controllers.Application.search
 GET    /questions/search/term/:course                   controllers.QuestionController.distinctTerms(course: String)
 GET    /questions/search/year/:course/:term             controllers.QuestionController.distinctYears(course: String, term: String)
 GET    /questions/search/question/:course/:term_year    controllers.QuestionController.distinctQuestions(course: String, term_year: String)
 GET    /questions/search/course/:year/:term             controllers.QuestionController.distinctCourses(year: Int, term: String)
-GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)
+GET    /questions/search/id/:id                         controllers.QuestionController.searchById(id: String)
+GET    /questions/search/:keyString                     controllers.QuestionController.searchByKeywords(keyString: String)
+
+GET     /questions/:course/:term_year/:q                controllers.QuestionController.question(course: String, term_year: String, q: String)
+GET     /questions/:course/:term_year/:q/json           controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
+GET     /questions/:course/:term_year/:q/edit           controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
+POST    /questions/:course/:term_year/:q/edit           controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
 
 POST    /questions/submit          controllers.QuestionController.questionSubmit()
+POST    /questions/search/submit   controllers.QuestionController.searchByKeywordsSubmit()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /javascriptRoutes  controllers.Application.javascriptRoutes

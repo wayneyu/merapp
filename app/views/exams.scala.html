@@ -14,7 +14,7 @@
         <tbody id="scrolling">
         @for( c <- allcourses ){
         <tr id="row">
-            <td>@c.replace("MATH","")</td>
+            <td><a href="@routes.QuestionController.course(c)">@c</a></td>
             @for( y <- allyears ){
                 <td id="year">|
                     @if( exams.contains( (c, y, "December") ) ){

@@ -129,42 +129,52 @@ object QuestionController extends Controller with MongoController {
 
   def distinctCourses(): Future[List[String]] = {
     // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course"))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      GroupField("course")("course" -> First("course")),
+      Sort(Seq(Ascending("course"))),
+      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[List[String]]("values")
-    ).map {
-      case Some(list) => list.sorted
-      case None => Nil
+    val res = db.command(command)
+
+    res.map{
+      st => st.map( d => d.getAs[String]("course").get ).toList
     }
   }
 
   def distinctCourses(year: Int): Future[List[String]] = {
-    // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course", "query" -> BSONDocument( "year"-> year ) ))
-    val result = db.command(command) // result is Future[BSONDocument]
 
-    result.map( doc => doc.getAs[List[String]]("values")
-    ).map {
-      case Some(list) => list.sorted
-      case None => Nil
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("year" -> year)),
+      GroupField("course")("course" -> First("course")),
+      Sort(Seq(Descending("course"))),
+      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
+    ))
+
+    val res = db.command(command)
+
+    res.map{
+      st => st.map( d => d.getAs[String]("course").get ).toList
     }
+
   }
 
   def distinctCourses(year: Int, term: String) = Action.async {
     Logger.debug("distinctCourses(year -> " + year + ", term-> " + term + ")")
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course",
-      "query" -> BSONDocument( "year" -> year, "term" -> term)))
-    val result = db.command(command) // result is Future[BSONDocument]
 
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.debug("Result: " + v.toString())
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Logger.debug("Result: no courses found.")
-        Ok(Json.obj())
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("year" -> year, "term" -> term )),
+      GroupField("course")("course" -> First("course")),
+      Sort(Seq(Descending("course"))),
+      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
+    ))
+
+    val res = db.command(command)
+
+    res.map{
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONString]("course").get)
+      )))
     }
   }
 
@@ -184,118 +194,140 @@ object QuestionController extends Controller with MongoController {
   }
 
   def distinctYears(): Future[List[String]] = {
-    // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year"))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      GroupField("year")("year" -> First("year")),
+      Sort(Seq(Ascending("year"))),
+      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[List[Int]]("values")
-    ).map {
-      case Some(list) => list.sorted.map(_.toString())
-      case None => Nil
+    val res = db.command(command)
+
+    res.map{
+      st => st.map(d => d.getAs[Int]("year").get.toString).toList
     }
   }
 
   def distinctYears(course: String): Future[List[String]] = {
-    // set up query
-    //{ distinct: "<collection>", key: "<field>", query: <query> }
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year", "query" -> BSONDocument( "course" -> course)))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course)),
+      GroupField("year")("year" -> First("year")),
+      Sort(Seq(Ascending("year"))),
+      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[List[Int]]("values")
-    ).map {
-      case Some(list) => list.sorted.map(_.toString())
-      case None => Nil
+    val res = db.command(command)
+
+    res.map{
+      st => st.map(d => d.getAs[Int]("year").get.toString()).toList
     }
 
   }
 
   def distinctYears(course: String, term: String) = Action.async {
     Logger.info("distinctYears(course-> " + course + ", term-> " + term + ")")
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "year",
-      "query" -> BSONDocument( "course" -> course, "term" -> term)))
-    val result = db.command(command) // result is Future[BSONDocument]
 
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.info("Result: " + v.toString())
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Logger.debug("Result: no years found.")
-        Ok(Json.obj())
-    }
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course, "term" -> term )),
+      GroupField("year")("year" -> First("year")),
+      Sort(Seq(Ascending("year"))),
+      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
+    ))
+
+    val res = db.command(command)
+
+    res.map{
+         st => Ok(BSONArrayFormat.writes(BSONArray(
+           st.map(d => d.getAs[BSONInteger]("year").get)
+         )))
+      }
+
   }
 
   def distinctTerms(): Future[List[String]] = {
-    // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term"))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      GroupField("term")("term" -> First("term")),
+      Sort(Seq(Descending("term"))),
+      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[List[Int]]("values")
-    ).map {
-      case Some(list) => list.toList.sorted.map(_.toString())
-      case None => Nil
+    val res = db.command(command)
+
+    res.map{
+      st => st.map(d => d.getAs[String]("term").get).toList
     }
   }
 
   def distinctTermsList(course: String): Future[List[String]] = {
-    // set up query
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term", "query" -> BSONDocument( "course" -> course)))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course)),
+      GroupField("term")("term" -> First("term")),
+      Sort(Seq(Descending("term"))),
+      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[List[String]]("values")
-    ).map {
-      case Some(list) => list.sorted.map(_.toString())
-      case None => Nil
+    val res = db.command(command)
+
+    res.map{
+      st => st.map(d => d.getAs[String]("term").get).toList
     }
+
   }
 
   def distinctTerms(course: String) = Action.async {
-    // set up query
-    //{ distinct: "<collection>", key: "<field>", query: <query> }
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term", "query" -> BSONDocument( "course" -> course)))
-    val result = db.command(command) // result is Future[BSONDocument]
 
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) => Ok(BSONArrayFormat.writes(v))
-      case None => Ok(Json.obj())
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course)),
+      GroupField("term")("term" -> First("term")),
+      Sort(Seq(Descending("term"))),
+      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
+    ))
+
+    val res = db.command(command)
+
+    res.map{
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONString]("term").get)
+      )))
     }
+
   }
 
   def distinctTerms(course: String, year: String) = Action.async {
     Logger.debug("distinctYears(course-> " + course + ", year-> " + year + ")")
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term",
-      "query" -> BSONDocument( "course" -> course, "year" -> year)))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course, "year" -> year)),
+      GroupField("term")("term" -> First("term")),
+      Sort(Seq(Descending("term"))),
+      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.info("Result: " + v.toString())
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Logger.info("Result: no courses found.")
-        Ok(Json.obj())
+    val res = db.command(command)
+
+    res.map{
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONString]("term").get)
+      )))
     }
   }
 
   def distinctQuestions(course: String, term_year: String) = Action.async {
     val (term: String, year: Int) = getTermAndYear(term_year)
 
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "question",
-      "query" -> BSONDocument( "course" -> course, "year" -> year, "term" -> term)))
-    val result = db.command(command) // result is Future[BSONDocument]
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
+      GroupField("question")("question" -> First("question")),
+      Sort(Seq(Descending("question"))),
+      Project("_id"->BSONInteger(0), "question" -> BSONInteger(1))
+    ))
 
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.debug("Result: " + v.values)
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Logger.debug("Result: no years found.")
-        Ok(Json.obj())
+    val res = db.command(command)
+
+    res.map{
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONString]("question").get)
+      )))
     }
+
   }
 
   def searchById(id: String) = Action.async {
@@ -399,35 +431,16 @@ object QuestionController extends Controller with MongoController {
 
     Logger.info("Find exams for " + course)
 
-    val command =
-      BSONDocument(
-        "aggregate" -> "questions", // we aggregate on collection `orders`
-        "pipeline" -> BSONArray(
-          BSONDocument(
-            "$match" ->
-              BSONDocument( "course" -> course)
-          ),
-          BSONDocument(
-            "$sort" ->
-              BSONDocument( "year" -> 1)
-          ),
-          BSONDocument(
-            "$group" ->
-              BSONDocument( "_id" -> BSONDocument("year" -> "$year", "term" -> "$term"))
-          )
-        )
-      )
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course)),
+      GroupMulti("year" -> "year", "term" -> "term")("year" -> First("year"), "term" -> First("term")),
+      Sort(Seq(Descending("year"), Ascending("term"))),
+      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1), "term" -> BSONInteger(1))
+    ))
 
-    val result = db.command(RawCommand(command))
+    val res = db.command(command)
 
-    result.map( doc => doc.getAs[List[BSONDocument]]("result") )
-      .map {
-      case Some(list) =>
-        list.map{
-          d => d.getAs[BSONDocument]("_id").get
-        }
-      case None => Nil
-    }
+    res.map{ _.toList }
 
   }
 

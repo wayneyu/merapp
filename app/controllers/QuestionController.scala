@@ -1,12 +1,13 @@
 package controllers
 
 import controllers.Application._
-import models.{Question}
+import models.{April, December, Term, Question}
 import play.Routes
 import play.api._
 import play.api.libs.json._
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import play.modules.reactivemongo.json.BSONFormats._
 import scala.concurrent.duration.Duration
@@ -27,7 +28,7 @@ import play.modules.reactivemongo.json.collection.JSONCollection
  */
 object QuestionController extends Controller with MongoController {
 
-  val collection: JSONCollection = db.collection[JSONCollection]("questions")
+  val collection = db[BSONCollection]("questions")
 
   def questions = Action.async {
     val coursesResult = distinctCourses()
@@ -52,29 +53,28 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-  def questionQuery(course: String, term_year: String, q:String): Future[List[JsObject]] = {
-    val terms = distinctTerms(course) // HELP: Bernhard would like to use this in the "Ok(views.html.question...", but it complains that "String" is expected, but actual is "Anytype".
+  def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
     val tysplit = term_year.split("_")
     val term = tysplit(0)
     val year = tysplit(1).toInt
 
     // let's do our query
-    val cursor: Cursor[JsObject] = collection.
-      find(Json.obj("course" -> course, "term" -> term, "year" -> year, "question" -> q)).
-      // perform the query and get a cursor of JsObject
-      cursor[JsObject]
+    val cursor: Cursor[BSONDocument] = collection.
+    // find all people with name `name`
+    find(BSONDocument("course" -> course, "term" -> term, "year" -> year, "question" -> q)).
+    // perform the query and get a cursor of JsObject
+    cursor[BSONDocument]
 
     // gather all the JsObjects in a list
-    val question: Future[List[JsObject]] = cursor.collect[List]()
+    val question: Future[List[BSONDocument]] = cursor.collect[List]()
     question
   }
 
   def questionInJson(course: String, term_year: String, q: String) = Action.async {
-    questionQuery(course, term_year, q).map( l => Ok(toJsArray(l)) )
+    questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
   }
 
   def questionEdit(course: String, term_year: String, q: String) = question(course, term_year, q, true)
-
 
   def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async {
     val tysplit = term_year.split("_")
@@ -123,7 +123,6 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-
   def distinctCourses(): Future[List[String]] = {
     // set up query
     val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "course"))
@@ -163,6 +162,22 @@ object QuestionController extends Controller with MongoController {
         Logger.debug("Result: no courses found.")
         Ok(Json.obj())
     }
+  }
+
+  def exam(course: String, term_year: String) = Action.async {
+    Logger.info("Find exam  = " + course + " " + term_year)
+    val tysplit = term_year.split("_")
+    val term = tysplit(0)
+    val year = tysplit(1).toInt
+
+    val cursor = collection.
+      find(BSONDocument("course" -> course, "year" -> year, "term" -> term)).
+      sort(BSONDocument("question" -> 1)).
+      cursor[BSONDocument]
+
+    val exams = cursor.collect[List]()
+
+    exams.map{ list => Ok(BSONArray.pretty(BSONArray(list))) }
   }
 
   def distinctYears(): Future[List[String]] = {
@@ -262,22 +277,6 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-  def distinctTerms(course: String, year: Int) = Action.async {
-    Logger.info("distinctTerms(course -> " + course + ", year-> " + year + ")")
-    val command = RawCommand(BSONDocument("distinct" -> "questions", "key" -> "term",
-      "query" -> BSONDocument( "course" -> course, "year" -> year)))
-    val result = db.command(command) // result is Future[BSONDocument]
-
-    result.map( doc => doc.getAs[BSONArray]("values")
-    ).map {
-      case Some(v) =>
-        Logger.info("Result: " + v.toString())
-        Ok(BSONArrayFormat.writes(v))
-      case None =>
-        Ok(Json.obj())
-    }
-  }
-
   def distinctQuestions(course: String, term_year: String) = Action.async {
     val tysplit = term_year.split("_")
     val term = tysplit(0)
@@ -299,14 +298,14 @@ object QuestionController extends Controller with MongoController {
 
   def searchById(id: String) = Action.async {
     Logger.info("search question with id = " + id)
-    val cursor: Cursor[JsObject] = collection.
+    val cursor = collection.
       // find with case-insensitive and use . to match any chars options
-      find( Json.obj("_id" -> BSONObjectID(id))).
-      cursor[JsObject]
+      find( BSONDocument("_id" -> BSONObjectID(id))).
+      cursor[BSONDocument]
 
-    val result: Future[List[JsObject]] = cursor.collect[List]()
+    val result: Future[List[BSONDocument]] = cursor.collect[List]()
 
-    result.map( arr => Ok(toJsArray(arr)) )
+    result.map( list => Ok(BSONArray.pretty(BSONArray(list))) )
   }
 
   def searchByKeywords(searchString: String) = Action.async {
@@ -329,29 +328,6 @@ object QuestionController extends Controller with MongoController {
 
   def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
     Logger.info("searching for " + searchString)
-
-//    val command = Aggregate(collection.name, Seq(
-////      Match(BSONDocument("year"->2011))
-//      Match(BSONDocument("text" -> collection.name , "search"->searchString))
-////      Sort( Seq(Descending( "score:{$meta: \"textScore\"}}")) )
-//    ))
-//    val result = db.command(command)
-
-//    val result = db.command(RawCommand(command.makeDocuments))//.map(_.toSeq)
-//    result.map( seq => Logger.info("number of results: " + seq.size))
-//    result.map( seq => Ok(views.html.search(seq.map( bsonDoc2Json ))) )
-//    result.map( doc => Ok(BSONDocument.pretty(doc)) )
-
-//    val cursor: Cursor[JsObject] = collection.
-      // find all people with name `name`
-//      find(Json.obj("text" -> collection.name, "search" -> searchString)).
-//      sort(Json.obj("year" -> Json.obj("$gt" -> 2010) )).
-//      sort(Json.obj("score" -> Json.obj("meta" -> "textScore") )).
-      // perform the query and get a cursor of JsObject
-//      cursor[JsObject]
-//    val res: Future[List[JsObject]] = cursor.collect[List]()
-//
-//    result.map( d=>Ok(BSONDocument.pretty(d)) )
 
     val searchCommand = BSONDocument(
       "text" -> collection.name,
@@ -405,8 +381,8 @@ object QuestionController extends Controller with MongoController {
         result.map( r =>
           r match {
             case Some(doc) =>
-              Ok(BSONDocument.pretty(doc))
-//              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
+//              Ok(BSONDocument.pretty(doc))
+              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
             case None =>
               Ok("Question was not updated.")
           }
@@ -434,7 +410,7 @@ object QuestionController extends Controller with MongoController {
         exams += term + "_" + year.toString()
       }
     }*/
-    var exams = List("December_2012", "December_2013")
+    val exams = List("December_2012", "December_2013")
 
     Ok(views.html.course(course, exams))
   }
@@ -444,4 +420,82 @@ object QuestionController extends Controller with MongoController {
     val questions = List("Question_01_(a)", "Question_01_(b)", "Question_02_(a)")
     Ok(views.html.exam(course, term_year, questions))
   }
+
+  def browse() = Action.async{
+    val allyears = distinctYears()
+    val allcourses = distinctCourses()
+    val exams = distinctExams()
+
+    val res = for{
+      c <- allcourses
+      y <- allyears
+      e <- exams
+    } yield (c, y, e)
+
+    res.map{
+      ex => Ok(views.html.browse(ex._1, ex._2, ex._3))
+    }
+
+//    Logger.info("browsing questions")
+//    val cursor: Cursor[JsObject] = collection.
+//      // find with case-insensitive and use . to match any chars options
+//      find( Json.obj("_id" -> BSONObjectID(id))).
+//      cursor[JsObject]
+//
+//    val result: Future[List[JsObject]] = cursor.collect[List]()
+//
+//    result.map( arr => Ok(toJsArray(arr)) )
+
+  }
+
+  def distinctExams(): Future[List[(String, String, String)]] = {
+
+    val command =
+      BSONDocument(
+        "aggregate" -> "questions", // we aggregate on collection `orders`
+        "pipeline" -> BSONArray(
+          BSONDocument(
+            "$group" ->
+              BSONDocument( "_id" -> BSONDocument("course"->"$course","year"->"$year","term"->"$term"))
+          )
+        )
+      )
+
+    val result = db.command(RawCommand(command))
+
+    result.map( doc => doc.getAs[List[BSONDocument]]("result") )
+      .map {
+        case Some(list) =>
+          list.map{
+            d => d.getAs[BSONDocument]("_id").get
+          }.map{
+            d => (d.getAs[String]("course").get, d.getAs[Int]("year").get.toString, d.getAs[String]("term").get)
+          }
+        case None => Nil
+      }
+
+  }
+
+
+//  def distinctExams() = Action.async {
+//
+//    val command =
+//      BSONDocument(
+//        "aggregate" -> "questions", // we aggregate on collection `orders`
+//        "pipeline" -> BSONArray(
+//          BSONDocument(
+//            "$group" ->
+//              BSONDocument( "_id" -> BSONDocument("course"->"$course","year"->"$year","term"->"$term"))
+//          )
+//        )
+//      )
+//
+//    //    val command = Aggregate(collection.name, Seq(GroupMulti("course" -> "course","year" -> "year", "term" -> "term")(_)))
+//
+//    val result = db.command(RawCommand(command))
+//
+//
+//    result.map( doc => Ok(BSONDocument.pretty(doc)))
+//
+//  }
 }

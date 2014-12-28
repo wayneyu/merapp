@@ -58,4 +58,10 @@ object Question {
 
   val empty = Question("",-1,"","No Question","",Nil,Nil)
 
+//  def empty(course: String, year: String, term: String) =
+//    Question(course, year.toInt, term, "No Question","",Nil,Nil)
 }
+
+sealed trait Term
+case object December extends Term
+case object April extends Term

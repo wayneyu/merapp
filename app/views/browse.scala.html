@@ -1,0 +1,31 @@
+@(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])
+@main("Browse"){
+
+<div class="questionsDiv">
+    <table id="qtable">
+        <thead>
+            <tr id="vehicles">
+            <th></th>
+            @for( y <- allyears){
+                <th id="year">@y</th>
+            }
+           </tr>
+        </thead>
+        <tbody id="scrolling">
+        @for( c <- allcourses ){
+        <tr id="row">
+            <td>@c.replace("MATH","")</td>
+            @for( y <- allyears ){
+                @{
+                    val dec = {if( exams.contains( (c, y, "December") )) "Dec"  else "---"}
+                    val apr = {if( exams.contains( (c, y, "April") )) "Apr"  else "---"}
+                    <td id="year">| {apr} {dec} </td>
+                }
+            }
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+}

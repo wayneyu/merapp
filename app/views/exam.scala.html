@@ -1,13 +1,13 @@
 @(course: String, term_year: String, questions: List[String])
 
-@main(course + " " + term_year){
-<h2>Available questions</h2>
+@main("Exam"){
+<h2>Questions available for @{course + " " + term_year}</h2>
 
 With easiness (number of votes)
 
-<ul id="questions">
+<ul class="questionsList">
     @for( question <- questions ){
-        <item class="question"><a href="@routes.Application.questions/@course/@term_year/@question">@question</a> 99% (5)</item>
+        <li class="question"><a href="@routes.QuestionController.question(course, term_year, question)">@question</a> 99% (5)</li>
     }
 </ul>
 }

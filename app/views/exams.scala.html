@@ -1,5 +1,5 @@
 @(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])
-@main("Browse"){
+@main("Exams"){
 
 <div class="questionsDiv">
     <table id="qtable">
@@ -16,11 +16,18 @@
         <tr id="row">
             <td>@c.replace("MATH","")</td>
             @for( y <- allyears ){
-                @{
-                    val dec = {if( exams.contains( (c, y, "December") )) "Dec"  else "---"}
-                    val apr = {if( exams.contains( (c, y, "April") )) "Apr"  else "---"}
-                    <td id="year">| {apr} {dec} </td>
-                }
+                <td id="year">|
+                    @if( exams.contains( (c, y, "December") ) ){
+                        <a href="@routes.QuestionController.exam(c, "December_"+y)">Dec</a>
+                    } else {
+                        ---
+                    }
+                    @if( exams.contains( (c, y, "April") )){
+                        <a href="@routes.QuestionController.exam(c, "April_"+y)">Apr</a>
+                    } else {
+                        ---
+                    }
+                </td>
             }
         </tr>
         }

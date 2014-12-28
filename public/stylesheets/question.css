@@ -150,3 +150,7 @@ background-color: #eeeeee;
 /*#latex_box, #latex_box>* {
   border : 1px solid blue;
 }*/
+
+.questionsList{
+    list-style-type: none;
+}

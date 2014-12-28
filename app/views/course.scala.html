@@ -1,8 +1,8 @@
 @(course: String, exams: List[String])
 
-@main(course){
+@main("Course"){
 <div id="exams">
-    <h2>Available final exams</h2>
+    <h2>Available final exams for @course</h2>
 
     <table>
         <tr>
@@ -13,7 +13,7 @@
         </tr>
         <tr>
         @for( exam <- exams ){
-            <td><div id="exam"><a href="@course/@exam">@exam</a></div></td>
+            <td><div id="exam"><a href="@routes.QuestionController.exam(course, exam)">@exam</a></div></td>
             <td>(todo)</td>
             <td>(todo)</td>
             <td>Questions</td>

@@ -23,15 +23,14 @@ GET     /questions/:course/:term_year/:q/json           controllers.QuestionCont
 GET     /questions/:course/:term_year/:q/edit           controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
 POST    /questions/:course/:term_year/:q/edit           controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
 
-GET     /exams/:course/:term_year/            controllers.QuestionController.exam(course: String, term_year: String)
+POST    /questions/submit                               controllers.QuestionController.questionSubmit()
+POST    /questions/search/submit                        controllers.QuestionController.searchByKeywordsSubmit()
 
-GET     /questions/browse                    controllers.QuestionController.browse()
+GET     /courses/:course                                controllers.QuestionController.course(course: String)
 
-POST    /questions/submit          controllers.QuestionController.questionSubmit()
-POST    /questions/search/submit   controllers.QuestionController.searchByKeywordsSubmit()
-
-GET     /course/:course                                 controllers.QuestionController.examsForCourse(course: String)
-GET     /course/:course/:term_year                      controllers.QuestionController.questionsForExam(course: String, term_year: String)
+GET     /exams                                          controllers.Application.exams()
+GET     /exams/:course                                  controllers.QuestionController.course(course: String)
+GET     /exams/:course/:term_year                       controllers.QuestionController.exam(course: String, term_year: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /javascriptRoutes  controllers.Application.javascriptRoutes

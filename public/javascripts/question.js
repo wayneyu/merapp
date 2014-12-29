@@ -13,7 +13,7 @@ $(document).ready(function (){
     $(".latex_edit_render_area").fadeOut(0);
 
     $("[id$='_edit'] .render_button").click(function (){
-        var parentId = $(this).parent().parent().attr('id');
+        var parentId = $(this).parent().parent().parent().attr('id');
         $(this).text($(this).text() == "Edit" ? "Render" : "Edit");
         var textarea = $("#" + parentId + " textarea");
         var renderarea = $("#" + parentId + " .latex_edit_render_area");
@@ -26,7 +26,7 @@ $(document).ready(function (){
     });
 
     $("[id$='_edit'] .latex_edit_render_area").click(function() {
-        var parentId = $(this).parent().attr('id');
+        var parentId = $(this).parent().parent().attr('id');
         var textarea = $("#" + parentId + " textarea");
         var renderarea = $("#" + parentId + " .latex_edit_render_area");
         var button = $("#" + parentId + " .render_button");
@@ -36,7 +36,7 @@ $(document).ready(function (){
     });
 
     $("[id$='_edit'] .submit_button").click(function (){
-        var parentId = $(this).parent().parent().attr('id');
+        var parentId = $(this).parent().parent().parent().attr('id');
         debugger;
         var key = parentId.match('.*(?=_edit)')[0].replace('_','.');
         var url = window.location.pathname;

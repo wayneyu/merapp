@@ -1,6 +1,6 @@
 body {
-font-family: 'Helvetica Neue';
-font-weight: 300;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
 }
 
 .message{
@@ -16,7 +16,7 @@ font-weight: 300;
 
 #tags, #selection {
   border: none;
-
+}
 
 .main_box .box_title {
   font-family: 'Helvetica Neue';
@@ -32,7 +32,6 @@ font-weight: 300;
 
 .box_title, .box_title+div, .latex_edit_render_area {
   padding: 10px 10px 10px 10px;
-
 }
 
 /*http://css.maxdesign.com.au/listutorial/horizontal_master.htm#*/
@@ -179,9 +178,6 @@ background-color: #eeeeee;
 .latex_edit_area button.submit_button{
     /*float: right;*/
 }
-/*#latex_box, #latex_box>* {
-  border : 1px solid blue;
-}*/
 
 .questionsList{
     list-style-type: none;

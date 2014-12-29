@@ -149,6 +149,9 @@ background-color: #eeeeee;
 #yearSelect{
     width: 5em;
 }
+#questionSelect{
+    width: 15em;
+}
 
 .semiOpagueText{
     color: #000000;

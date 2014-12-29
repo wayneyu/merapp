@@ -1,4 +1,4 @@
-@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedTerm: String, selectedYear: String, selectedQuestion: String)
+@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String)
 @q = @{qn.question}
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
@@ -62,25 +62,37 @@
 
     <select id="courseSelect" name="course">
         @for( course <- courses ){
-            <option class="semiOpagueText" value=@course @if(course == selectedCourse){selected}>@course</option>
+            <option value=@course @if(course == selectedCourse){selected}>@course</option>
+        }
+        @if(courses.isEmpty && !selectedCourse.isEmpty){
+            <option value=@selectedCourse>@selectedCourse</option>
         }
     </select>
 
     <select id="termSelect" name="term">
         @for( term <- terms ) {
-        <option class="semiOpagueText" value=@term @if(term == selectedTerm){selected}>@term</option>
+            <option value=@term @if(term == selectedTerm){selected}>@term</option>
+        }
+        @if(terms.isEmpty && !selectedTerm.isEmpty){
+            <option value=@selectedTerm>@selectedTerm</option>
         }
     </select>
 
     <select id="yearSelect" name="year">
         @for( year <- years ){
-            <option class="semiOpagueText" value=@year @if(year == selectedYear){selected}>@year</option>
+            <option value=@year @if(year == selectedYear){selected}>@year</option>
+        }
+        @if( years.isEmpty && !selectedYear.isEmpty){
+            <option value=@selectedYear>@selectedYear</option>
         }
     </select>
 
     <select id="questionSelect" name="question">
         @for( question <- questions ){
-            <option class="semiOpagueText" value="@question" @if(question == selectedQuestion){selected}>@question</option>
+            <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
+        }
+        @if( questions.isEmpty && !selectedQuestion.isEmpty){
+            <option value=@selectedQuestion>@selectedQuestion</option>
         }
     </select>
 

@@ -88,20 +88,22 @@ object QuestionController extends Controller with MongoController {
     val question = questionQuery(course, term_year, q)
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
+    val questionsResult = examQuestions(course, term_year)
 
     val res = for {
       cr <- coursesResult
       yr <- yearsResult
       q <- question
-    } yield (cr, yr, q)
+      qr <- questionsResult.map( l => l.map( _.getAs[String]("question").get) )
+    } yield (cr, yr, q, qr)
 
-    res.map { case (courseList, yearList, question) =>
+    res.map { case (courseList, yearList, question, questionsList) =>
       {
         question match {
           case j :: js =>
-            Logger.debug("No. of questions found: " + question.length.toString())
+            Logger.info("No. of questions found: " + question.length.toString())
             val Q = j.as[Question]
-            Ok(views.html.question(Q, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+            Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
           case Nil =>
             Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
         }
@@ -115,9 +117,6 @@ object QuestionController extends Controller with MongoController {
     val form = request.body.asFormUrlEncoded
     form match {
       case Some(map) => {
-        for (key <- map.keys){
-          Logger.debug(key)
-        }
         Redirect(controllers.routes.QuestionController.question(
           map.getOrElse("course", Seq(""))(0),
           map.getOrElse("term", Seq(""))(0) + "_" + map.getOrElse("year", Seq(""))(0),
@@ -160,7 +159,7 @@ object QuestionController extends Controller with MongoController {
   }
 
   def distinctCourses(year: Int, term: String) = Action.async {
-    Logger.debug("distinctCourses(year -> " + year + ", term-> " + term + ")")
+    Logger.info("distinctCourses(year -> " + year + ", term-> " + term + ")")
 
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("year" -> year, "term" -> term )),
@@ -279,7 +278,7 @@ object QuestionController extends Controller with MongoController {
   }
 
   def distinctTerms(course: String, year: String) = Action.async {
-    Logger.debug("distinctYears(course-> " + course + ", year-> " + year + ")")
+    Logger.info("distinctYears(course-> " + course + ", year-> " + year + ")")
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course, "year" -> year)),
       GroupField("term")("term" -> First("term")),

@@ -178,25 +178,11 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
-  def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-    Logger.info("Find exam  = " + course + " " + term_year)
-    val (term: String, year: Int) = getTermAndYear(term_year)
-
-    val cursor = collection.
-      find(BSONDocument("course" -> course, "year" -> year, "term" -> term)).
-      projection(BSONDocument("question" -> 1)).
-      sort(BSONDocument("question" -> 1)).
-      cursor[BSONDocument]
-
-    val questions: Future[List[BSONDocument]] = cursor.collect[List]()
-
-    questions
-  }
 
   def distinctYears(): Future[List[String]] = {
     val command = Aggregate(collection.name, Seq(
       GroupField("year")("year" -> First("year")),
-      Sort(Seq(Ascending("year"))),
+      Sort(Seq(Descending("year"))),
       Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
     ))
 
@@ -211,7 +197,7 @@ object QuestionController extends Controller with MongoController {
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course)),
       GroupField("year")("year" -> First("year")),
-      Sort(Seq(Ascending("year"))),
+      Sort(Seq(Descending("year"))),
       Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
     ))
 
@@ -229,7 +215,7 @@ object QuestionController extends Controller with MongoController {
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course, "term" -> term )),
       GroupField("year")("year" -> First("year")),
-      Sort(Seq(Ascending("year"))),
+      Sort(Seq(Descending("year"))),
       Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
     ))
 
@@ -246,7 +232,7 @@ object QuestionController extends Controller with MongoController {
   def distinctTerms(): Future[List[String]] = {
     val command = Aggregate(collection.name, Seq(
       GroupField("term")("term" -> First("term")),
-      Sort(Seq(Descending("term"))),
+      Sort(Seq(Ascending("term"))),
       Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
     ))
 
@@ -261,7 +247,7 @@ object QuestionController extends Controller with MongoController {
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course)),
       GroupField("term")("term" -> First("term")),
-      Sort(Seq(Descending("term"))),
+      Sort(Seq(Ascending("term"))),
       Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
     ))
 
@@ -278,7 +264,7 @@ object QuestionController extends Controller with MongoController {
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course)),
       GroupField("term")("term" -> First("term")),
-      Sort(Seq(Descending("term"))),
+      Sort(Seq(Ascending("term"))),
       Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
     ))
 
@@ -297,7 +283,7 @@ object QuestionController extends Controller with MongoController {
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course, "year" -> year)),
       GroupField("term")("term" -> First("term")),
-      Sort(Seq(Descending("term"))),
+      Sort(Seq(Ascending("term"))),
       Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
     ))
 
@@ -311,23 +297,30 @@ object QuestionController extends Controller with MongoController {
   }
 
   def distinctQuestions(course: String, term_year: String) = Action.async {
-    val (term: String, year: Int) = getTermAndYear(term_year)
+    val questions = examQuestions(course, term_year)
 
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-      GroupField("question")("question" -> First("question")),
-      Sort(Seq(Descending("question"))),
-      Project("_id"->BSONInteger(0), "question" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    questions.map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("question").get)
       )))
     }
 
+  }
+
+  def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
+    Logger.info("Find exam  = " + course + " " + term_year)
+    val (term: String, year: Int) = getTermAndYear(term_year)
+
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
+      GroupField("question")("question" -> First("question")),
+      Sort(Seq(Ascending("question"))),
+      Project("_id"->BSONInteger(0), "question" -> BSONInteger(1))
+    ))
+
+    val questions = db.command(command)
+
+    questions.map{ _.toList }
   }
 
   def searchById(id: String) = Action.async {
@@ -387,20 +380,20 @@ object QuestionController extends Controller with MongoController {
 
   def findAndModify(course: String, term_year: String, q:String) = Action.async(parse.json) { request =>
 
-    val ty = term_year.split("_")
-    Logger.info("Editing " + course + "/" + ty(0) + "/" + ty(1) + "/" + q)
+    val (term, year) = getTermAndYear(term_year)
+    Logger.info("Editing " + course + "/" + term + "/" + year + "/" + q)
 
     val bson = BSONDocumentFormat.reads(request.body)
 
     bson match {
 
-      case e: JsError => Future(BadRequest("Invalid JSON is passed."))
+      case e: JsError => Future(BadRequest("Invalid JSON passed."))
 
       case b: JsSuccess[BSONDocument] =>
       {
         val selector = BSONDocument(
-          "course" -> course, "term" -> ty(0),
-          "year" -> ty(1).toInt, "question" -> q)
+          "course" -> course, "term" -> term,
+          "year" -> year.toInt, "question" -> q)
 
         val modifier = BSONDocument(
           "$set" -> b.get)
@@ -412,15 +405,13 @@ object QuestionController extends Controller with MongoController {
 
         val result = db.command(command)
 
-        result.map( r =>
-          r match {
+        result.map{
             case Some(doc) =>
 //              Ok(BSONDocument.pretty(doc))
               Redirect(routes.QuestionController.questionEdit(course, term_year, q))
             case None =>
               Ok("Question was not updated.")
           }
-        )
 
       }
     }
@@ -469,7 +460,7 @@ object QuestionController extends Controller with MongoController {
   }
 
   def exams() = Action.async{
-    val allyears = distinctYears()
+    val allyears = distinctYears().map(_.sorted)
     val allcourses = distinctCourses()
     val exams = distinctExams()
 
@@ -486,30 +477,19 @@ object QuestionController extends Controller with MongoController {
 
   def distinctExams(): Future[List[(String, String, String)]] = {
 
-    val command =
-      BSONDocument(
-        "aggregate" -> "questions", // we aggregate on collection `orders`
-        "pipeline" -> BSONArray(
-          BSONDocument(
-            "$group" ->
-              BSONDocument( "_id" -> BSONDocument("course" -> "$course", "year" -> "$year", "term" -> "$term"))
-          )
-        )
-      )
+    val command = Aggregate(collection.name, Seq(
+      GroupMulti("course" -> "course", "year" -> "year", "term" -> "term")
+        ("course" -> First("course"), "year" -> First("year"), "term" -> First("term")),
+      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1), "year" -> BSONInteger(1), "term" -> BSONInteger(1))
+    ))
 
-    val result = db.command(RawCommand(command))
+    val exams = db.command(command)
 
-    result.map( doc => doc.getAs[List[BSONDocument]]("result") )
-      .map {
-        case Some(list) =>
-          list.map{
-            d => d.getAs[BSONDocument]("_id").get
-          }.map{
-            d => (d.getAs[String]("course").get, d.getAs[Int]("year").get.toString, d.getAs[String]("term").get)
-          }
-        case None => Nil
-      }
-
+    exams.map{
+      st => st.map(
+        d => (d.getAs[String]("course").get, d.getAs[Int]("year").get.toString, d.getAs[String]("term").get)
+      ).toList
+    }
   }
 
 }

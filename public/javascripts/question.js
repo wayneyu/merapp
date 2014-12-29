@@ -211,8 +211,6 @@ $(document).ready(function (){
           url: "/questions/search/term/" + course,
           //TODO: replace URL with play's javascriptRoutes
           success: function(d){
-              debugger;
-              d = d.sort();
               var term_selector = $("#termSelect")
               term_selector.empty()
               $.each(d, function(value, term) {
@@ -232,7 +230,6 @@ $(document).ready(function (){
           url: "/questions/search/year/" + course + "/" + term,
           //TODO: replace URL with play's javascriptRoutes
           success: function(d){
-            debugger;
             var year_selector = $("#yearSelect")
             year_selector.empty()
             $.each(d, function(value, year) {
@@ -253,7 +250,6 @@ $(document).ready(function (){
           url: "/questions/search/question/" + course + "/" + term + "_" + year,
           //TODO: replace URL with play's javascriptRoutes
           success: function(d){
-            d = d.sort();
             var question_selector = $("#questionSelect")
             question_selector.empty()
             $.each(d, function(value, question) {

@@ -27,8 +27,6 @@ POST    /questions/:course/:term_year/:q/edit           controllers.QuestionCont
 POST    /questions/submit                               controllers.QuestionController.questionSubmit()
 POST    /questions/search/submit                        controllers.QuestionController.searchByKeywordsSubmit()
 
-GET     /courses/:course                                controllers.QuestionController.course(course: String)
-
 GET     /exams                                          controllers.Application.exams()
 GET     /exams/:course                                  controllers.QuestionController.course(course: String)
 GET     /exams/:course/:term_year                       controllers.QuestionController.exam(course: String, term_year: String)

@@ -16,7 +16,7 @@ font-weight: 300;
 
 #tags, #selection {
   border: none;
-}
+
 
 .main_box .box_title {
   font-family: 'Helvetica Neue';
@@ -24,7 +24,6 @@ font-weight: 300;
   font-size: 20pt;
   color: #FFFFFF;
   background: #2F4F4F;
-  margin-top: 2em;
 }
 
 .hideable_box>.box_title:hover {
@@ -61,6 +60,10 @@ background-color: #fff;
 border: 1px solid #eeeeee;
 }
 
+#latex_box
+{
+  width:800px;
+}
 
 #latex_box #tags {
   margin-top: 20px;
@@ -89,6 +92,35 @@ border: 1px solid #eeeeee;
 #latex_box #tags ul li span:hover
 {
 background-color: #eeeeee;
+}
+
+#latex_box #inputbuttons
+{
+  font-size: 10pt;
+  margin-bottom: 1em;
+}
+
+#latex_box #inputbuttons .buttonbox
+{
+  display:inline-block;
+  line-height: 3.2em;
+  padding: 0.5em;
+}
+
+#latex_box #inputbuttons a
+{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-bottom: 1em;
+}
+
+#latex_box #inputbuttons a:hover
+{
+  border: 1px solid black;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #00AAAA;
 }
 
 #latex_box button {

@@ -8,3 +8,4 @@ for i in $LIST; do
 	echo $i
 	mongoimport --db $DBNAME --collection $COLLECTIONNAME --file $i --jsonArray
 done
+mongo $DBNAME --eval "db.questions.ensureIndex({statement_latex:\"text\",hints_latex:\"text\",solutions_latex:\"text\",answer_latex:\"text\"})"

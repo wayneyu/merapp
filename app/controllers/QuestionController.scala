@@ -94,7 +94,7 @@ object QuestionController extends Controller with MongoController {
       cr <- coursesResult
       yr <- yearsResult
       q <- question
-      qr <- questionsResult.map( l => l.map( _.getAs[String]("question").get) )
+      qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
     } yield (cr, yr, q, qr)
 
     res.map { case (courseList, yearList, question, questionsList) =>
@@ -296,11 +296,21 @@ object QuestionController extends Controller with MongoController {
   }
 
   def distinctQuestions(course: String, term_year: String) = Action.async {
-    val questions = examQuestions(course, term_year)
+    Logger.info("Find exam  = " + course + " " + term_year)
+    val (term: String, year: Int) = getTermAndYear(term_year)
+
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
+      GroupField("question")("question"->First("question")),
+      Sort(Seq(Ascending("question"))),
+      Project("_id" -> BSONInteger(0), "question"->BSONInteger(1))
+    ))
+
+    val questions = db.command(command)
 
     questions.map{
-      st => Ok(BSONArrayFormat.writes(BSONArray(
-        st.map(d => d.getAs[BSONString]("question").get)
+      st => Ok(BSONArrayFormat.writes(
+        BSONArray(st.map(d => d.getAs[BSONString]("question").get)
       )))
     }
 
@@ -312,9 +322,7 @@ object QuestionController extends Controller with MongoController {
 
     val command = Aggregate(collection.name, Seq(
       Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-      GroupField("question")("question" -> First("question")),
-      Sort(Seq(Ascending("question"))),
-      Project("_id"->BSONInteger(0), "question" -> BSONInteger(1))
+      Sort(Seq(Ascending("question")))
     ))
 
     val questions = db.command(command)
@@ -452,9 +460,8 @@ object QuestionController extends Controller with MongoController {
   def exam(course: String, term_year: String) = Action.async {
     val questions = examQuestions(course, term_year)
 
-    questions.map( list => list.map{ d => d.getAs[String]("question").get } )
-      .map{
-        l => Ok(views.html.exam(course, term_year, l))
+    questions.map{
+        l => Ok(views.html.exam(course, term_year, l.map( d => d.as[Question] )) )
       }
   }
 

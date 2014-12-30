@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}f(x) = \\frac{1}{x+1}\\end{align*} Find $f'(x)$ using the limit definition of\nthe derivative.\n\n\\emph{No marks will be given for using other methods in part (a).}", 
-    "year": 2011, 
-    "sols": [
-        "We simply input the function in the definition and compute the limit:\n\n\\begin{align*}\nf'(x) &= \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{\\frac{1}{(x+h)+1}-\\frac{1}{x+1}}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{1}{(x+h+1)} - \\frac{1}{(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{x+1}{(x+h+1)(x+1)} - \\frac{x+h+1}{(x+h+1)(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{(x+1)-(x+h+1)}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{-h}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} - \\frac{1}{(x+h+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)^2}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=- \\frac{1}{(x+1)^2}\\)</span></p>\n", 
+    "answer_latex": " $f'(x)=- \\frac{1}{(x+1)^2}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "The definition of the derivative is\n\n\\begin{align*}f'(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\\end{align*}"
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The definition of the derivative is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The definition of the derivative is\n\n\\begin{align*}\nf'(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The definition of the derivative is\n:&lt;math>\nf'(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We simply input the function in the definition and compute the limit:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{\\frac{1}{(x+h)+1}-\\frac{1}{x+1}}{h} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{1}{(x+h+1)} - \\frac{1}{(x+1)} \\right)\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{x+1}{(x+h+1)(x+1)} - \\frac{x+h+1}{(x+h+1)(x+1)} \\right)\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{(x+1)-(x+h+1)}{(x+h+1)(x+1)}\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{-h}{(x+h+1)(x+1)}\\\\\n&amp;= \\lim_{h \\to 0} - \\frac{1}{(x+h+1)(x+1)}\\\\\n&amp;= - \\frac{1}{(x+1)(x+1)}\\\\\n&amp;= - \\frac{1}{(x+1)^2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We simply input the function in the definition and compute the limit:\n\n\\begin{align*}\nf'(x) &= \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{\\frac{1}{(x+h)+1}-\\frac{1}{x+1}}{h} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{1}{(x+h+1)} - \\frac{1}{(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{x+1}{(x+h+1)(x+1)} - \\frac{x+h+1}{(x+h+1)(x+1)} \\right)\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{(x+1)-(x+h+1)}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{-h}{(x+h+1)(x+1)}\\\\\n&= \\lim_{h \\to 0} - \\frac{1}{(x+h+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)(x+1)}\\\\\n&= - \\frac{1}{(x+1)^2}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We simply input the function in the definition and compute the limit:\n\n:&lt;math>\\begin{align}\nf'(x) &amp;= \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{\\frac{1}{(x+h)+1}-\\frac{1}{x+1}}{h} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{1}{(x+h+1)} - \\frac{1}{(x+1)} \\right)\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\left( \\frac{x+1}{(x+h+1)(x+1)} - \\frac{x+h+1}{(x+h+1)(x+1)} \\right)\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{(x+1)-(x+h+1)}{(x+h+1)(x+1)}\\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{h} \\cdot \\frac{-h}{(x+h+1)(x+1)}\\\\\n&amp;= \\lim_{h \\to 0} - \\frac{1}{(x+h+1)(x+1)}\\\\\n&amp;= - \\frac{1}{(x+1)(x+1)}\\\\\n&amp;= - \\frac{1}{(x+1)^2}\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{1}{x+1}\\end{aligned}\\]</span></p>\n<p>Find <span class=\"math\">\\(f&#39;(x)\\)</span> using the limit definition of the derivative.</p>\n<p><em>No marks will be given for using other methods in part (a).</em></p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nf(x) = \\frac{1}{x+1}\n\\end{align*} Find $f'(x)$ using the limit definition of\nthe derivative.\n\n\\emph{No marks will be given for using other methods in part (a).}", 
+    "statement_raw": "Let \n: &lt;math>f(x) = \\frac{1}{x+1} &lt;/math>\nFind &amp;fnof;'(''x'') using the limit definition of the derivative.\n\n''No marks will be given for using other methods in part (a).''\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_04_(a)", 
+    "year": 2011
 }

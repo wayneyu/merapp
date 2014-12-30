@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac14\\)</span>Which matches the right hand side of the original equation.Thus the statement is true.</p>\n", 
+    "answer_latex": "$\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac14$Which matches the right hand side of the original equation.Thus the\nstatement is true.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
+    ], 
     "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\n$\\displaystyle \\lim_{x\\rightarrow2}\\dfrac{2-x}{4-x^2}=\\dfrac{1}{4}$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try simplifying the limit on the left hand side of the equal sign. How can we eliminate the issue with the denominator tending to 0?</p>\n"
+    ], 
+    "hints_latex": [
+        "Try simplifying the limit on the left hand side of the equal sign. How\ncan we eliminate the issue with the denominator tending to 0?"
+    ], 
+    "hints_raw": [
+        "Try simplifying the limit on the left hand side of the equal sign. How can we eliminate the issue with the denominator tending to 0?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>As suggested in the hint, we will simplify the limit on the left hand side of the equal sign. If we just plug in <em>2</em> we get 0/0, so we will have to do some simplifying. Because the numerator and denominator are polynomials, factoring is a good first step.</p>\n<p>The denominator is a difference of squares, so we can write:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 2} \\frac{x-2}{4-x^2} = \\lim_{x \\to 2}\\frac{2-x}{(2-x)(2+x)}\\)</span></p>\n<p>Canceling the common terms, and then plugging in the 2 gives:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac{1}{2 + 2} = \\frac14\\)</span></p>\n<p>Which matches the right hand side of the original equation. Thus the statement is true.</p>\n"
+    ], 
+    "sols_latex": [
         "As suggested in the hint, we will simplify the limit on the left hand\nside of the equal sign. If we just plug in \\emph{2} we get 0/0, so we\nwill have to do some simplifying. Because the numerator and denominator\nare polynomials, factoring is a good first step.\n\nThe denominator is a difference of squares, so we can write:\n\n$\\lim_{x \\to 2} \\frac{x-2}{4-x^2} = \\lim_{x \\to 2}\\frac{2-x}{(2-x)(2+x)}$\n\nCanceling the common terms, and then plugging in the 2 gives:\n\n$\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac{1}{2 + 2} = \\frac14$\n\nWhich matches the right hand side of the original equation. Thus the\nstatement is true."
     ], 
-    "hints": [
-        "Try simplifying the limit on the left hand side of the equal sign. How\ncan we eliminate the issue with the denominator tending to 0?"
-    ]
+    "sols_raw": [
+        "As suggested in the hint, we will simplify the limit on the left hand side of the equal sign.  If we just plug in ''2'' we get 0/0, so we will have to do some simplifying.  Because the numerator and denominator are polynomials, factoring is a good first step.\n\nThe denominator is a difference of squares, so we can write:\n\n&lt;math>\\lim_{x \\to 2} \\frac{x-2}{4-x^2} = \\lim_{x \\to 2}\\frac{2-x}{(2-x)(2+x)}&lt;/math>\n\nCanceling the common terms, and then plugging in the 2 gives:\n\n&lt;math>\\lim_{x \\to 2}\\frac{1}{2 + x} = \\frac{1}{2 + 2} = \\frac14&lt;/math>\n\nWhich matches the right hand side of the original equation.  Thus the statement is true.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p><span class=\"math\">\\(\\displaystyle \\lim_{x\\rightarrow2}\\dfrac{2-x}{4-x^2}=\\dfrac{1}{4}\\)</span>.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\n$\\displaystyle \\lim_{x\\rightarrow2}\\dfrac{2-x}{4-x^2}=\\dfrac{1}{4}$.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\n&lt;math>\\displaystyle\\lim_{x\\rightarrow2}\\dfrac{2-x}{4-x^2}=\\dfrac{1}{4}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_02_(b)", 
+    "year": 2012
 }

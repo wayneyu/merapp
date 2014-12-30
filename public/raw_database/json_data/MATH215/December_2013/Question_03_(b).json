@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
-    "course": "MATH215", 
-    "statement": "Suppose the displacement x(t) of a damped mass-spring system subject to\nsinusoidal forcing of amplitude $F_0$ is modelled by:\n\n\\begin{align*}x'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1.\\end{align*}\n\n(b) Now take $F_0 = 1$, and find the steady periodic solution (the part\nof the solution x(t) which remains as $t \\rightarrow \\infty$).", 
-    "year": 2013, 
-    "sols": [
-        "We seek a particular solution since the homogeneous solution will decay\nto 0 as $t \\rightarrow \\infty$. As $\\sin(2t) = \\text{Im}(e^{2it})$, we\nwill look for a particular solution of form $x(t) = \\text{Im}(\\phi(t))$\nwhere $\\phi = A e^{2it}$ satisfies the ODE in complex form:\n\n\\begin{align*}\\displaystyle \\phi'' + 2 \\phi' + 5 \\phi = e^{2it}\\end{align*}\n\nso that\n\n\\begin{align*}\\displaystyle\n-4 A e^{2it} + 4 i A e^{2it} + 5 A e^{2it} = e^{2it}\\end{align*}\n\nwhich upon cancelling the $e^{2it}$ terms and simplification becomes\n\n\\begin{align*}\\displaystyle\nA (1 + 4 i) = 1\\end{align*}\n\nSolving for \\emph{A} we obtain\n\n\\begin{align*}A = \\frac{1}{1 + 4i} = \\frac{1 - 4i}{(1 + 4i)(1 - 4i)} = \\frac{1 - 4i}{17}.\\end{align*}\n\nNow that we have A, we can find x by using A and Euler's identity:\n\n\\begin{align*}\nx(t) &= \\text{Im}\\left(\\frac{1-4i}{17} e^{2it}\\right) \\\\\n&= \\frac1{17}\\text{Im}((1-4i) (\\cos(2t) + i \\sin(2t)) \\\\\n&= \\frac1{17}\\text{Im}(\\cos(2t) + 4 \\sin(2t) + i (\\sin(2t) - 4 \\cos(2t))) \\\\\n&= \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\\end{align*}\n\nThe steady solution is\n$x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)$."
+    "answer_html": "<p>The steady solution is <span class=\"math\">\\(x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\\)</span>.</p>\n", 
+    "answer_latex": "The steady solution is\n$x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)$.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The general solution is a sum of a homogeneous solution and a particular solution. What happens to the homogeneous solution as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>? What solution to you need to find?</p>\n"
+    ], 
+    "hints_latex": [
         "The general solution is a sum of a homogeneous solution and a particular\nsolution. What happens to the homogeneous solution as\n$t \\rightarrow \\infty$? What solution to you need to find?"
-    ]
+    ], 
+    "hints_raw": [
+        "The general solution is a sum of a homogeneous solution and a particular solution. What happens to the homogeneous solution as &lt;math>t \\rightarrow \\infty&lt;/math>? What solution to you need to find?\n"
+    ], 
+    "num_votes": 7, 
+    "question": "3 (b)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>We seek a particular solution since the homogeneous solution will decay to 0 as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>. As <span class=\"math\">\\(\\sin(2t) = \\text{Im}(e^{2it})\\)</span>, we will look for a particular solution of form <span class=\"math\">\\(x(t) = \\text{Im}(\\phi(t))\\)</span> where <span class=\"math\">\\(\\phi = A e^{2it}\\)</span> satisfies the ODE in complex form:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\phi&#39;&#39; + 2 \\phi&#39; + 5 \\phi = e^{2it}\\end{aligned}\\]</span></p>\n<p>so that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n-4 A e^{2it} + 4 i A e^{2it} + 5 A e^{2it} = e^{2it}\\end{aligned}\\]</span></p>\n<p>which upon cancelling the <span class=\"math\">\\(e^{2it}\\)</span> terms and simplification becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA (1 + 4 i) = 1\\end{aligned}\\]</span></p>\n<p>Solving for <em>A</em> we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\frac{1}{1 + 4i} = \\frac{1 - 4i}{(1 + 4i)(1 - 4i)} = \\frac{1 - 4i}{17}.\\end{aligned}\\]</span></p>\n<p>Now that we have A, we can find x by using A and Euler&#8217;s identity:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx(t) &amp;= \\text{Im}\\left(\\frac{1-4i}{17} e^{2it}\\right) \\\\\n&amp;= \\frac1{17}\\text{Im}((1-4i) (\\cos(2t) + i \\sin(2t)) \\\\\n&amp;= \\frac1{17}\\text{Im}(\\cos(2t) + 4 \\sin(2t) + i (\\sin(2t) - 4 \\cos(2t))) \\\\\n&amp;= \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\\end{aligned}\\]</span></p>\n<p>The steady solution is <span class=\"math\">\\(x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We seek a particular solution since the homogeneous solution will decay\nto 0 as $t \\rightarrow \\infty$. As $\\sin(2t) = \\text{Im}(e^{2it})$, we\nwill look for a particular solution of form $x(t) = \\text{Im}(\\phi(t))$\nwhere $\\phi = A e^{2it}$ satisfies the ODE in complex form:\n\n\\begin{align*}\n\\displaystyle \\phi'' + 2 \\phi' + 5 \\phi = e^{2it}\n\\end{align*}\n\nso that\n\n\\begin{align*}\n\\displaystyle\n-4 A e^{2it} + 4 i A e^{2it} + 5 A e^{2it} = e^{2it}\n\\end{align*}\n\nwhich upon cancelling the $e^{2it}$ terms and simplification becomes\n\n\\begin{align*}\n\\displaystyle\nA (1 + 4 i) = 1\n\\end{align*}\n\nSolving for \\emph{A} we obtain\n\n\\begin{align*}\nA = \\frac{1}{1 + 4i} = \\frac{1 - 4i}{(1 + 4i)(1 - 4i)} = \\frac{1 - 4i}{17}.\n\\end{align*}\n\nNow that we have A, we can find x by using A and Euler's identity:\n\n\\begin{align*}\nx(t) &= \\text{Im}\\left(\\frac{1-4i}{17} e^{2it}\\right) \\\\\n&= \\frac1{17}\\text{Im}((1-4i) (\\cos(2t) + i \\sin(2t)) \\\\\n&= \\frac1{17}\\text{Im}(\\cos(2t) + 4 \\sin(2t) + i (\\sin(2t) - 4 \\cos(2t))) \\\\\n&= \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\n\\end{align*}\n\nThe steady solution is\n$x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)$."
+    ], 
+    "sols_raw": [
+        "We seek a particular solution since the homogeneous solution will decay to 0 as &lt;math>t \\rightarrow \\infty&lt;/math>. As &lt;math>\\sin(2t) = \\text{Im}(e^{2it})&lt;/math>, we will look for a particular solution of form &lt;math>x(t) = \\text{Im}(\\phi(t))&lt;/math> where &lt;math>\\phi = A e^{2it}&lt;/math> satisfies the ODE in complex form:\n\n:&lt;math>\\displaystyle \\phi'' + 2 \\phi' + 5 \\phi = e^{2it}&lt;/math>\n\nso that\n\n:&lt;math>\\displaystyle\n-4 A e^{2it} + 4 i A e^{2it} + 5 A e^{2it} = e^{2it}\n&lt;/math>\n\nwhich upon cancelling the &lt;math>e^{2it}&lt;/math> terms and simplification becomes\n\n:&lt;math>\\displaystyle\nA (1 + 4 i) = 1\n&lt;/math>\n\nSolving for ''A'' we obtain\n:&lt;math>A = \\frac{1}{1 + 4i} = \\frac{1 - 4i}{(1 + 4i)(1 - 4i)} = \\frac{1 - 4i}{17}&lt;/math>.\n\nNow that we have A, we can find x by using A and Euler's identity:\n\n:&lt;math> \\begin{align}\nx(t) &amp;= \\text{Im}\\left(\\frac{1-4i}{17} e^{2it}\\right) \\\\\n&amp;= \\frac1{17}\\text{Im}((1-4i) (\\cos(2t) + i \\sin(2t)) \\\\\n&amp;= \\frac1{17}\\text{Im}(\\cos(2t) + 4 \\sin(2t) + i (\\sin(2t) - 4 \\cos(2t))) \\\\\n&amp;= \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)\n\\end{align}&lt;/math>\n\nThe steady solution is &lt;math>x(t) = \\frac{1}{17} \\sin(2t) - \\frac{4}{17} \\cos(2t)&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Suppose the displacement x(t) of a damped mass-spring system subject to sinusoidal forcing of amplitude <span class=\"math\">\\(F_0\\)</span> is modelled by:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&#39;&#39; + 2x&#39; + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x&#39;(0) = 1.\\end{aligned}\\]</span></p>\n<p>(b) Now take <span class=\"math\">\\(F_0 = 1\\)</span>, and find the steady periodic solution (the part of the solution x(t) which remains as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>).</p>\n", 
+    "statement_latex": "Suppose the displacement x(t) of a damped mass-spring system subject to\nsinusoidal forcing of amplitude $F_0$ is modelled by:\n\n\\begin{align*}\nx'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1.\n\\end{align*}\n\n(b) Now take $F_0 = 1$, and find the steady periodic solution (the part\nof the solution x(t) which remains as $t \\rightarrow \\infty$).", 
+    "statement_raw": "Suppose the displacement x(t) of a damped mass-spring system subject to sinusoidal forcing of amplitude &lt;math>F_0&lt;/math> is modelled by:\n\n:&lt;math>x'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1&lt;/math>.\n\n(b) Now take &lt;math>F_0 = 1&lt;/math>, and find the steady periodic solution (the part of the solution x(t) which remains as &lt;math>t \\rightarrow \\infty&lt;/math>).\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_03_(b)", 
+    "year": 2013
 }

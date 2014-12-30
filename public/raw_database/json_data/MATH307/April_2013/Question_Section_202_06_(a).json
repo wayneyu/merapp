@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_202_06_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(c_n=\\begin{cases}\n\\frac{1}{2} &amp; \\text{if } n=0 \\\\ \n0 &amp; \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} &amp; \\text{if } n \\text{ is odd}\n\\end{cases}\\)</span></p>\n", 
+    "answer_latex": "$c_n=\\begin{cases}\n\\frac{1}{2} & \\text{if } n=0 \\\\ \n0 & \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} & \\text{if } n \\text{ is odd}\n\\end{cases}$", 
     "course": "MATH307", 
-    "statement": "Find the coefficients \\emph{c\\textsubscript{n}} in the Fourier series\n$f(x) = \\sum_{n = -\\infty}^\\infty c_n e^{2\\pi inx}$ if\n\n\\begin{align*}f(x) = \\begin{cases}\n1, & 0 \\leq x < 1/2 \\\\\n0, & 1/2 \\leq x \\leq 1\n\\end{cases}\\end{align*}", 
-    "year": 2013, 
-    "sols": [
-        "Since $e^{i2\\pi nx}$ is an orthonormal basis for any function in the\nHilbert Space we can use the inner product to find the coefficients:\n\n\\begin{align*}\\left \\langle e^{i2\\pi mx},f(x) \\right \\rangle =\\sum_{n=-\\infty}^{\\infty}c_n \\left \\langle e^{i2\\pi mx},e^{i2\\pi nx} \\right \\rangle=c_mL\\end{align*}\n\nTherefore we get:\n\n\\begin{align*}c_n=\\frac{1}{L}\\int_{a}^{b}e^{-2\\pi inx/L}f(x)dx\\end{align*}\n\nComputing this for the given function\n\n\\begin{align*}\nc_0 &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi (0)x}dx+\\int_{1/2}^{1}e^{-i2\\pi (0)x}(0)dx] = \\frac{1}{2} \\\\\nc_n &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi nx}dx+\\int_{1/2}^{1}e^{-i2\\pi nx}(0)dx] \\\\\n&=\\frac{-1}{i2\\pi n}e^{-i2\\pi nx} \\Big|_0^{1/2} =\\frac{-1}{i2\\pi n}[e^{-i\\pi n}-e^0] \\\\\n&=\\frac{i}{2\\pi n}[(-1)^n-1]\\end{align*}\n\n$c_n=\\begin{cases}\n\\frac{1}{2} & \\text{if } n=0 \\\\ \n0 & \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} & \\text{if } n \\text{ is odd}\n\\end{cases}$"
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 202 06 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since <span class=\"math\">\\(e^{i2\\pi nx}\\)</span> is an orthonormal basis for any function in the Hilbert Space we can use the inner product to find the coefficients:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left \\langle e^{i2\\pi mx},f(x) \\right \\rangle =\\sum_{n=-\\infty}^{\\infty}c_n \\left \\langle e^{i2\\pi mx},e^{i2\\pi nx} \\right \\rangle=c_mL\\end{aligned}\\]</span></p>\n<p>Therefore we get:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc_n=\\frac{1}{L}\\int_{a}^{b}e^{-2\\pi inx/L}f(x)dx\\end{aligned}\\]</span></p>\n<p>Computing this for the given function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc_0 &amp;= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi (0)x}dx+\\int_{1/2}^{1}e^{-i2\\pi (0)x}(0)dx] = \\frac{1}{2} \\\\\nc_n &amp;= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi nx}dx+\\int_{1/2}^{1}e^{-i2\\pi nx}(0)dx] \\\\\n&amp;=\\frac{-1}{i2\\pi n}e^{-i2\\pi nx} \\Big|_0^{1/2} =\\frac{-1}{i2\\pi n}[e^{-i\\pi n}-e^0] \\\\\n&amp;=\\frac{i}{2\\pi n}[(-1)^n-1]\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\(c_n=\\begin{cases}\n\\frac{1}{2} &amp; \\text{if } n=0 \\\\ \n0 &amp; \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} &amp; \\text{if } n \\text{ is odd}\n\\end{cases}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since $e^{i2\\pi nx}$ is an orthonormal basis for any function in the\nHilbert Space we can use the inner product to find the coefficients:\n\n\\begin{align*}\n\\left \\langle e^{i2\\pi mx},f(x) \\right \\rangle =\\sum_{n=-\\infty}^{\\infty}c_n \\left \\langle e^{i2\\pi mx},e^{i2\\pi nx} \\right \\rangle=c_mL\n\\end{align*}\n\nTherefore we get:\n\n\\begin{align*}\nc_n=\\frac{1}{L}\\int_{a}^{b}e^{-2\\pi inx/L}f(x)dx\n\\end{align*}\n\nComputing this for the given function\n\n\\begin{align*}\nc_0 &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi (0)x}dx+\\int_{1/2}^{1}e^{-i2\\pi (0)x}(0)dx] = \\frac{1}{2} \\\\\nc_n &= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi nx}dx+\\int_{1/2}^{1}e^{-i2\\pi nx}(0)dx] \\\\\n&=\\frac{-1}{i2\\pi n}e^{-i2\\pi nx} \\Big|_0^{1/2} =\\frac{-1}{i2\\pi n}[e^{-i\\pi n}-e^0] \\\\\n&=\\frac{i}{2\\pi n}[(-1)^n-1]\n\\end{align*}\n\n$c_n=\\begin{cases}\n\\frac{1}{2} & \\text{if } n=0 \\\\ \n0 & \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} & \\text{if } n \\text{ is odd}\n\\end{cases}$"
+    ], 
+    "sols_raw": [
+        "Since &lt;math>e^{i2\\pi nx}&lt;/math> is an orthonormal basis for any function in the Hilbert Space we can use the inner product to find the coefficients:\n\n:&lt;math>\\left \\langle e^{i2\\pi mx},f(x) \\right \\rangle =\\sum_{n=-\\infty}^{\\infty}c_n \\left \\langle e^{i2\\pi mx},e^{i2\\pi nx} \\right \\rangle=c_mL&lt;/math>\n\nTherefore we get:\n\n:&lt;math>c_n=\\frac{1}{L}\\int_{a}^{b}e^{-2\\pi inx/L}f(x)dx&lt;/math>\n\nComputing this for the given function\n\n:&lt;math> \\begin{align}\nc_0 &amp;= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi (0)x}dx+\\int_{1/2}^{1}e^{-i2\\pi (0)x}(0)dx] = \\frac{1}{2} \\\\\nc_n &amp;= \\frac{1}{1}[\\int_{0}^{1/2}e^{-i2\\pi nx}dx+\\int_{1/2}^{1}e^{-i2\\pi nx}(0)dx] \\\\\n&amp;=\\frac{-1}{i2\\pi n}e^{-i2\\pi nx} \\Big|_0^{1/2} =\\frac{-1}{i2\\pi n}[e^{-i\\pi n}-e^0] \\\\\n&amp;=\\frac{i}{2\\pi n}[(-1)^n-1]\n\\end{align}&lt;/math>\n\n\n&lt;math>c_n=\\begin{cases}\n\\frac{1}{2} &amp; \\text{if } n=0 \\\\ \n0 &amp; \\text{if } n \\text{ is even, } n \\not= 0\\\\ \n\\frac{-i}{\\pi n} &amp; \\text{if } n \\text{ is odd}\n\\end{cases}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Find the coefficients <em>c<sub>n</sub></em> in the Fourier series <span class=\"math\">\\(f(x) = \\sum_{n = -\\infty}^\\infty c_n e^{2\\pi inx}\\)</span> if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\n1, &amp; 0 \\leq x &lt; 1/2 \\\\\n0, &amp; 1/2 \\leq x \\leq 1\n\\end{cases}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the coefficients \\emph{c\\textsubscript{n}} in the Fourier series\n$f(x) = \\sum_{n = -\\infty}^\\infty c_n e^{2\\pi inx}$ if\n\n\\begin{align*}\nf(x) = \\begin{cases}\n1, & 0 \\leq x < 1/2 \\\\\n0, & 1/2 \\leq x \\leq 1\n\\end{cases}\n\\end{align*}", 
+    "statement_raw": "Find the coefficients ''c&lt;sub>n&lt;/sub>'' in the Fourier series &lt;math>f(x) = \\sum_{n = -\\infty}^\\infty c_n e^{2\\pi inx}&lt;/math> if\n\n:&lt;math>\nf(x) = \\begin{cases}\n1, &amp; 0 \\leq x &lt; 1/2 \\\\\n0, &amp; 1/2 \\leq x \\leq 1\n\\end{cases}\n&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_202_06_(a)", 
+    "year": 2013
 }

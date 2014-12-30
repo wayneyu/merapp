@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH104", 
-    "statement": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\nb) Use the formula\n\n\\begin{align*}|\\mbox{Error}| \\le \\frac{M}{2}(x - a)^{2},\\end{align*}\n\nwhere $M$ \\textgreater{} 0, to estimate an error bound for your\napproximation of $\\ln(0.9)$ in part (a). It will be useful to remember\nhow to find such an $M$.", 
-    "year": 2011, 
-    "sols": [
-        "Here we are working with $x=0.9$ and $a=1$. We find that the error takes\nthe following value\n\n\\begin{align*}|\\text{Error}| \\leq \\frac{M}{2}(0.9-1)^2 = \\frac{M}{200}\\end{align*}\n\nwhere $M$ is the maximum value of the absolute value of the second\nderivative on the interval {[}0.9, 1{]}. In other words, we would like\nto estimate how large the second derivative can be on this interval.\n\nGiven that\n\n\\begin{align*}|f''(x)| = \\left| \\frac{-1}{x^{2}} \\right| = \\frac{1}{x^{2}}\\end{align*} and\nsince this is a decreasing function on the interval {[}0.9, 1{]} we can\ndeduce that the maximum value it takes on the interval is at $x=0.9$ and\nhence\n\n\\begin{align*}M = \\frac{1}{0.9^{2}} = \\frac{100}{81}\\end{align*}\n\nThis allows us to find the upper bound on the error:\n\n\\begin{align*}|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200} = \\frac{1}{162}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200}=\\frac{1}{162}\\)</span></p>\n", 
+    "answer_latex": " $|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200}=\\frac{1}{162}$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How does M relate to the second derivative of f(x)?</p>\n"
+    ], 
+    "hints_latex": [
         "How does M relate to the second derivative of f(x)?"
-    ]
+    ], 
+    "hints_raw": [
+        "How does M relate to the second derivative of f(x)?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Here we are working with <span class=\"math\">\\(x=0.9\\)</span> and <span class=\"math\">\\(a=1\\)</span>. We find that the error takes the following value</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\text{Error}| \\leq \\frac{M}{2}(0.9-1)^2 = \\frac{M}{200}\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(M\\)</span> is the maximum value of the absolute value of the second derivative on the interval <span>[</span>0.9, 1<span>]</span>. In other words, we would like to estimate how large the second derivative can be on this interval.</p>\n<p>Given that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|f&#39;&#39;(x)| = \\left| \\frac{-1}{x^{2}} \\right| = \\frac{1}{x^{2}}\\end{aligned}\\]</span></p>\n<p>and since this is a decreasing function on the interval <span>[</span>0.9, 1<span>]</span> we can deduce that the maximum value it takes on the interval is at <span class=\"math\">\\(x=0.9\\)</span> and hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\frac{1}{0.9^{2}} = \\frac{100}{81}\\end{aligned}\\]</span></p>\n<p>This allows us to find the upper bound on the error:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200} = \\frac{1}{162}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Here we are working with $x=0.9$ and $a=1$. We find that the error takes\nthe following value\n\n\\begin{align*}\n|\\text{Error}| \\leq \\frac{M}{2}(0.9-1)^2 = \\frac{M}{200}\n\\end{align*}\n\nwhere $M$ is the maximum value of the absolute value of the second\nderivative on the interval {[}0.9, 1{]}. In other words, we would like\nto estimate how large the second derivative can be on this interval.\n\nGiven that\n\n\\begin{align*}\n|f''(x)| = \\left| \\frac{-1}{x^{2}} \\right| = \\frac{1}{x^{2}}\n\\end{align*} and\nsince this is a decreasing function on the interval {[}0.9, 1{]} we can\ndeduce that the maximum value it takes on the interval is at $x=0.9$ and\nhence\n\n\\begin{align*}\nM = \\frac{1}{0.9^{2}} = \\frac{100}{81}\n\\end{align*}\n\nThis allows us to find the upper bound on the error:\n\n\\begin{align*}\n|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200} = \\frac{1}{162}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Here we are working with &lt;math>x=0.9&lt;/math> and &lt;math>a=1&lt;/math>. We find that the error takes the following value\n\n:&lt;math>\n|\\text{Error}| \\leq \\frac{M}{2}(0.9-1)^2 = \\frac{M}{200}\n&lt;/math>\n\nwhere &lt;math>M&lt;/math> is the maximum value of the absolute value of the second derivative on the interval [0.9, 1]. In other words, we would like to estimate how large the second derivative can be on this interval.\n\nGiven that\n:&lt;math>\n|f''(x)| = \\left| \\frac{-1}{x^{2}} \\right| = \\frac{1}{x^{2}}\n&lt;/math>\nand since this is a decreasing function on the interval [0.9, 1] we can deduce that the maximum value it takes on the interval is at &lt;math>x=0.9&lt;/math> and hence\n:&lt;math>\nM = \\frac{1}{0.9^{2}} = \\frac{100}{81}\n&lt;/math>\n\nThis allows us to find the upper bound on the error:\n:&lt;math>\n|\\text{Error}| \\leq \\frac{\\frac{100}{81}}{200} = \\frac{1}{162}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>In this problem, you will approximate <span class=\"math\">\\(\\ln(0.9)\\)</span> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of <span class=\"math\">\\(\\ln(x)\\)</span> for <span class=\"math\">\\(x\\)</span> near 1 to help you answer some parts of this question.</p>\n<p>b) Use the formula</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\mbox{Error}| \\le \\frac{M}{2}(x - a)^{2},\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(M\\)</span> &gt; 0, to estimate an error bound for your approximation of <span class=\"math\">\\(\\ln(0.9)\\)</span> in part (a). It will be useful to remember how to find such an <span class=\"math\">\\(M\\)</span>.</p>\n", 
+    "statement_latex": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\nb) Use the formula\n\n\\begin{align*}\n|\\mbox{Error}| \\le \\frac{M}{2}(x - a)^{2},\n\\end{align*}\n\nwhere $M$ \\textgreater{} 0, to estimate an error bound for your\napproximation of $\\ln(0.9)$ in part (a). It will be useful to remember\nhow to find such an $M$.", 
+    "statement_raw": "In this problem, you will approximate &lt;math>\\ln(0.9)&lt;/math> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of &lt;math>\\ln(x)&lt;/math> for &lt;math>x&lt;/math> near 1 to help you answer some parts of this question.\n\nb) Use the formula \n\n:&lt;math>|\\mbox{Error}| \\le \\frac{M}{2}(x - a)^{2},&lt;/math> \n\nwhere &lt;math>M&lt;/math> > 0, to estimate an error bound for your approximation of &lt;math>\\ln(0.9)&lt;/math> in part (a). It will be useful to remember how to find such an &lt;math>M&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation", 
+        "Taylor%27s_remainder_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_06_(b)", 
+    "year": 2011
 }

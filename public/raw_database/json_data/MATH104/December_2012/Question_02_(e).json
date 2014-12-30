@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(e)", 
+    "answer_html": "<p>The slant asymptote on g is incorrect and hence this leave the correct answer e.</p>\n", 
+    "answer_latex": "The slant asymptote on g is incorrect and\nhence this leave the correct answer e.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "ChristinaKoch", 
+        "IainMoyles"
+    ], 
     "course": "MATH104", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x)=\\frac{2x^3}{3x^2-9}\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\end{align*}\n\nIndicate which curve below best represents the graph of y=f(x).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH104_December_2012_Question_2_(e).jpg}\n\\caption{ 650px}\n\\end{figure}", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the information from the previous parts to help pick the correct picture. In particular, try to use parts a and d.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the information from the previous parts to help pick the correct\npicture. In particular, try to use parts a and d."
+    ], 
+    "hints_raw": [
+        "Use the information from the previous parts to help pick the correct picture. In particular, try to use parts a and d.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (e)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>The function is decreasing between <span class=\"math\">\\((-\\sqrt{3},\\sqrt{3})\\)</span> by part (a) and so this eliminates graphs a,b,c,d,f,h,i,j,k,l.</p>\n<p>This leaves only e and g. The slant asymptote on g is incorrect and hence this leave the correct answer e.</p>\n"
+    ], 
+    "sols_latex": [
         "The function is decreasing between $(-\\sqrt{3},\\sqrt{3})$ by part (a)\nand so this eliminates graphs a,b,c,d,f,h,i,j,k,l.\n\nThis leaves only e and g. The slant asymptote on g is incorrect and\nhence this leave the correct answer e."
     ], 
-    "hints": [
-        "Use the information from the previous parts to help pick the correct\npicture. In particular, try to use parts a and d."
-    ]
+    "sols_raw": [
+        "The function is decreasing between &lt;math> (-\\sqrt{3},\\sqrt{3}) &lt;/math> by part (a) and so this eliminates graphs a,b,c,d,f,h,i,j,k,l. \n\nThis leaves only e and g. The slant asymptote on g is incorrect and hence this leave the correct answer e.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)=\\frac{2x^3}{3x^2-9}\\end{aligned}\\]</span></p>\n<p>Its first and second derivatives are given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f&#39;&#39;(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\end{aligned}\\]</span></p>\n<p>Indicate which curve below best represents the graph of y=f(x).</p>\n<p><img src=\"../json_data/MATH104/December_2012/Math_Exam_Resources_Courses_MATH104_December_2012_Question_2_(e).jpg\" alt=\"image\" /></p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x)=\\frac{2x^3}{3x^2-9}\n\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}\nf'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\n\\end{align*}\n\nIndicate which curve below best represents the graph of y=f(x).\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/Math_Exam_Resources_Courses_MATH104_December_2012_Question_2_(e).jpg}", 
+    "statement_raw": "Consider the function\n\n:&lt;math>\nf(x)=\\frac{2x^3}{3x^2-9}\n&lt;/math>\n\nIts first and second derivatives are given by\n\n:&lt;math>\nf'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\n&lt;/math>\n\nIndicate which curve below best represents the graph of y=f(x).\n\n[[File:Math Exam Resources Courses MATH104 December 2012 Question 2 (e).jpg | 650px]]\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_02_(e)", 
+    "year": 2012
 }

@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH103", 
-    "statement": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(b)} What is the average delay?", 
-    "year": 2012, 
-    "sols": [
-        "Using the value of \\emph{k} we found in the previous question, and the\nformula for the mean given in the hint, we know the mean is found using\nthe following integral.\n\n\\begin{align*}\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt\\end{align*}\n\nWe can then solve the integral to find the mean.\n\n\\begin{align*}\n\\mu &= \\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt \\\\\n&= \\frac3{2\\pi} \\left.\\ln(1+t^2)\\right|_0^{\\sqrt{3}} \\\\\n&= \\frac3{2\\pi} \\ln(4) \\\\\n&= \\frac{3\\ln(2)}{\\pi}\\end{align*}\n\n(or $\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}$)."
+    "answer_html": "<p>(or <span class=\"math\">\\(\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}\\)</span>).</p>\n", 
+    "answer_latex": "(or $\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}$).", 
+    "contributors": [
+        "IsabellGraf", 
+        "RobertFraser", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "The average of a random variable \\emph{X} with probability density\nfunction \\emph{p(t)} is given by\n\n\\begin{align*}\\mu = \\int_{-\\infty}^\\infty tp(t)\\,dt.\\end{align*}", 
-        "Using the solution to\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_5_\\%28a\\%29}{Problem\n5a}, along with hint 1 for this problem, we have that the mean should be\ngiven by:\n\n\\begin{align*}\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt.\\end{align*} Substitute\n$u = 1 + t^2$ to evaluate the integral."
-    ]
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The average of a random variable <em>X</em> with probability density function <em>p(t)</em> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mu = \\int_{-\\infty}^\\infty tp(t)\\,dt.\\end{aligned}\\]</span></p>\n", 
+        "<p>Using the solution to <span>Problem 5a</span>, along with hint 1 for this problem, we have that the mean should be given by:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt.\\end{aligned}\\]</span></p>\n<p>Substitute <span class=\"math\">\\(u = 1 + t^2\\)</span> to evaluate the integral.</p>\n"
+    ], 
+    "hints_latex": [
+        "The average of a random variable \\emph{X} with probability density\nfunction \\emph{p(t)} is given by\n\n\\begin{align*}\n\\mu = \\int_{-\\infty}^\\infty tp(t)\\,dt.\n\\end{align*}", 
+        "Using the solution to\n{Problem\n5a}, along with hint 1 for this problem, we have that the mean should be\ngiven by:\n\n\\begin{align*}\n\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt.\n\\end{align*} Substitute\n$u = 1 + t^2$ to evaluate the integral."
+    ], 
+    "hints_raw": [
+        "The average of a random variable ''X'' with probability density function ''p(t)'' is given by\n\n:&lt;math> \\mu = \\int_{-\\infty}^\\infty tp(t)\\,dt. &lt;/math>\n", 
+        "Using the solution to [http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_5_%28a%29 Problem 5a], along with hint 1 for this problem, we have that the mean should be given by:\n:&lt;math>\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt.&lt;/math>\nSubstitute &lt;math> u = 1 + t^2 &lt;/math> to evaluate the integral.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "5 (b)", 
+    "rating": 63, 
+    "sols_html": [
+        "<p>Using the value of <em>k</em> we found in the previous question, and the formula for the mean given in the hint, we know the mean is found using the following integral.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt\\end{aligned}\\]</span></p>\n<p>We can then solve the integral to find the mean.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mu &amp;= \\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt \\\\\n&amp;= \\frac3{2\\pi} \\left.\\ln(1+t^2)\\right|_0^{\\sqrt{3}} \\\\\n&amp;= \\frac3{2\\pi} \\ln(4) \\\\\n&amp;= \\frac{3\\ln(2)}{\\pi}\\end{aligned}\\]</span></p>\n<p>(or <span class=\"math\">\\(\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}\\)</span>).</p>\n"
+    ], 
+    "sols_latex": [
+        "Using the value of \\emph{k} we found in the previous question, and the\nformula for the mean given in the hint, we know the mean is found using\nthe following integral.\n\n\\begin{align*}\n\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt\n\\end{align*}\n\nWe can then solve the integral to find the mean.\n\n\\begin{align*}\n\\mu &= \\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt \\\\\n&= \\frac3{2\\pi} \\left.\\ln(1+t^2)\\right|_0^{\\sqrt{3}} \\\\\n&= \\frac3{2\\pi} \\ln(4) \\\\\n&= \\frac{3\\ln(2)}{\\pi}\n\\end{align*}\n\n(or $\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}$)."
+    ], 
+    "sols_raw": [
+        "Using the value of ''k'' we found in the previous question, and the formula for the mean given in the hint, we know the mean is found using the following integral.  \n\n:&lt;math>\\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt&lt;/math>\n\nWe can then solve the integral to find the mean.  \n\n:&lt;math>\n\\begin{align}\n\\mu &amp;= \\int_0^{\\sqrt{3}} \\frac3{\\pi} \\frac{t}{1+t^2}\\,dt \\\\\n&amp;= \\frac3{2\\pi} \\left.\\ln(1+t^2)\\right|_0^{\\sqrt{3}} \\\\\n&amp;= \\frac3{2\\pi} \\ln(4) \\\\\n&amp;= \\frac{3\\ln(2)}{\\pi}\n\\end{align}\n&lt;/math>\n\n\n(or &lt;math>\\mu = \\frac{\\ln(2)}{\\arctan \\sqrt{3}}&lt;/math>).\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>A professor never finishes his class on time. The time of delay is given by the probability density function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 &lt; t &lt; \\sqrt{3}\\end{aligned}\\]</span></p>\n<p>You can use the facts that <span class=\"math\">\\(\\displaystyle \\arctan(0) = 0\\)</span> and <span class=\"math\">\\(\\arctan(\\sqrt{3}) = \\pi/3\\)</span>.</p>\n<p><strong>(b)</strong> What is the average delay?</p>\n", 
+    "statement_latex": "A professor never finishes his class on time. The time of delay is given\nby the probability density function\n\n\\begin{align*}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 < t < \\sqrt{3}\n\\end{align*}\n\nYou can use the facts that $\\displaystyle \\arctan(0) = 0$ and\n$\\arctan(\\sqrt{3}) = \\pi/3$.\n\n\\textbf{(b)} What is the average delay?", 
+    "statement_raw": "A professor never finishes his class on time. The time of delay is given by the probability density function\n\n:&lt;math>\n\\begin{align}\np(t) = \\frac{k}{1+t^2}, \\text{ where } 0 &lt; t &lt; \\sqrt{3}\n\\end{align}\n&lt;/math>\n\nYou can use the facts that &lt;math>\\displaystyle \\arctan(0) = 0&lt;/math> and &lt;math>\\arctan(\\sqrt{3}) = \\pi/3&lt;/math>.\n\n'''(b)''' What is the average delay?\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_05_(b)", 
+    "year": 2012
 }

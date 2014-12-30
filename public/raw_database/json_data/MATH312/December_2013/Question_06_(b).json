@@ -1,9 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH312", 
-    "statement": "Let \\emph{a} and \\emph{b} denote positive integers. Let \\emph{m} denote\nthe least common multiple of \\emph{a} and \\emph{b}, and let \\emph{d}\ndenote the greatest common divisor of \\emph{a} and \\emph{b}. Then show\nthat $\\displaystyle ab = md$. (Hint: use the prime factorization of\n\\emph{a} and \\emph{b}.)", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Let <em>a</em> and <em>b</em> denote positive integers. Let <em>m</em> denote the least common multiple of <em>a</em> and <em>b</em>, and let <em>d</em> denote the greatest common divisor of <em>a</em> and <em>b</em>. Then show that <span class=\"math\">\\(\\displaystyle ab = md\\)</span>. (Hint: use the prime factorization of <em>a</em> and <em>b</em>.)</p>\n", 
+    "statement_latex": "Let \\emph{a} and \\emph{b} denote positive integers. Let \\emph{m} denote\nthe least common multiple of \\emph{a} and \\emph{b}, and let \\emph{d}\ndenote the greatest common divisor of \\emph{a} and \\emph{b}. Then show\nthat $\\displaystyle ab = md$. (Hint: use the prime factorization of\n\\emph{a} and \\emph{b}.)", 
+    "statement_raw": "Let ''a'' and ''b'' denote positive integers. Let ''m'' denote the least common multiple of ''a'' and ''b'', and let ''d'' denote the greatest common divisor of ''a'' and ''b''. Then show that &lt;math> \\displaystyle ab = md &lt;/math>. (Hint: use the prime factorization of ''a'' and ''b''.)\n", 
+    "term": "December", 
+    "topics": [
+        "Fundamental_theorem_of_arithmetic"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2013/Question_06_(b)", 
+    "year": 2013
 }

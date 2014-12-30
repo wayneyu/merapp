@@ -1,15 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nUse a linear approximation to estimate $(2.001)^{4}$. Write your answer\nin the form $n/1000$, where \\emph{n} is an integer.", 
-    "year": 2012, 
-    "sols": [
-        "Let $f(x) = x^{4}$, so $f'(x) = 4x^{3}$. The linear approximation of\n$f(x)$ at 2 is given by\n\n\\begin{align*}\nL(x) &= f(2) + f'(2)(x-2) \\\\\n&= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&= 16 + 32(x-2)\\end{align*}\n\nThus,\n$(2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}$"
+    "answer_html": "<p>Thus, <span class=\"math\">\\((2.001)^{4} \\approx L(2.001) = \\tfrac{16032}{1000}\\)</span></p>\n", 
+    "answer_latex": "Thus,\n$(2.001)^{4} \\approx L(2.001) = \\tfrac{16032}{1000}$", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>There are two key questions we need to think about. Firstly, what would be a good function to use to approximate <span class=\"math\">\\((2.001)^{4}\\)</span>? Secondly, what would be a good value to use as a linear approximation?</p>\n", 
+        "<p>Try using the function <span class=\"math\">\\(f(x) = x^{4}\\)</span> and the linear approximation around the point <span class=\"math\">\\(a=2\\)</span>.</p>\n", 
+        "<p>The linear approximation of <span class=\"math\">\\(f\\)</span> at <em>x = a</em> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nL(x) = f(a) + f&#39;(a)(x-a)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "There are two key questions we need to think about. Firstly, what would\nbe a good function to use to approximate $(2.001)^{4}$? Secondly, what\nwould be a good value to use as a linear approximation?", 
         "Try using the function $f(x) = x^{4}$ and the linear approximation\naround the point $a=2$.", 
-        "The linear approximation of $f$ at \\emph{x = a} is given by\n\n\\begin{align*}\\displaystyle\nL(x) = f(a) + f'(a)(x-a)\\end{align*}"
-    ]
+        "The linear approximation of $f$ at \\emph{x = a} is given by\n\n\\begin{align*}\n\\displaystyle\nL(x) = f(a) + f'(a)(x-a)\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "There are two key questions we need to think about. Firstly, what would be a good function to use to approximate &lt;math> (2.001)^{4} &lt;/math>? Secondly, what would be a good value to use as a linear approximation?\n", 
+        "Try using the function &lt;math> f(x) = x^{4}&lt;/math> and the linear approximation around the point &lt;math> a=2&lt;/math>.\n", 
+        "The linear approximation of &amp;fnof; at ''x = a'' is given by\n\n:&lt;math> \\displaystyle\nL(x) = f(a) + f'(a)(x-a)\n&lt;/math>\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (b)", 
+    "rating": 88, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(f(x) = x^{4}\\)</span>, so <span class=\"math\">\\(f&#39;(x) = 4x^{3}\\)</span>. The linear approximation of <span class=\"math\">\\(f(x)\\)</span> at 2 is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL(x) &amp;= f(2) + f&#39;(2)(x-2) \\\\\n&amp;= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&amp;= 16 + 32(x-2)\\end{aligned}\\]</span></p>\n<p>Thus, <span class=\"math\">\\((2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let $f(x) = x^{4}$, so $f'(x) = 4x^{3}$. The linear approximation of\n$f(x)$ at 2 is given by\n\n\\begin{align*}\nL(x) &= f(2) + f'(2)(x-2) \\\\\n&= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&= 16 + 32(x-2)\n\\end{align*}\n\nThus,\n$(2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}$"
+    ], 
+    "sols_raw": [
+        "Let &lt;math> f(x) = x^{4}&lt;/math>, so &lt;math>f'(x) = 4x^{3} &lt;/math>. The linear approximation of &lt;math> f(x)&lt;/math> at 2 is given by\n\n&lt;math> \n\\begin{align}\nL(x) &amp;= f(2) + f'(2)(x-2) \\\\\n&amp;= 2^{4} + 4\\cdot2^{3}(x-2)\\\\\n&amp;= 16 + 32(x-2)\n\\end{align}\n&lt;/math>\n\nThus, &lt;math> (2.001)^{4} \\approx L(2.001) = 16 + 32 \\cdot(2.001-2) = 16 + \\tfrac{32}{1000} = \\tfrac{16032}{1000}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Use a linear approximation to estimate <span class=\"math\">\\((2.001)^{4}\\)</span>. Write your answer in the form <span class=\"math\">\\(n/1000\\)</span>, where <em>n</em> is an integer.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nUse a linear approximation to estimate $(2.001)^{4}$. Write your answer\nin the form $n/1000$, where \\emph{n} is an integer.", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nUse a linear approximation to estimate &lt;math>(2.001)^{4} &lt;/math>. Write your answer in the form &lt;math> n/1000&lt;/math>, where ''n'' is an integer.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_01_(b)", 
+    "year": 2012
 }

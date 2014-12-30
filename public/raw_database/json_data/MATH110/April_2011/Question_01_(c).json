@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
+    "answer_html": "<p>It has a horizontal tangent line at <span class=\"math\">\\(x = 0\\)</span> (making <span class=\"math\">\\(x = 0\\)</span> a critical point) and also changes concavity at <span class=\"math\">\\(x = 0\\)</span>.Thus the statement is <strong>true</strong>.</p>\n", 
+    "answer_latex": "It has a horizontal\ntangent line at $x = 0$ (making $x = 0$ a critical point) and also\nchanges concavity at $x = 0$.Thus the statement is \\textbf{true}.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
+    ], 
     "course": "MATH110", 
-    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA point on a function may be both an infection point and a critical\npoint.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Think about the definition of a critical point and an inflection point. Can both of these criteria occur at the same time?</p>\n"
+    ], 
+    "hints_latex": [
+        "Think about the definition of a critical point and an inflection point.\nCan both of these criteria occur at the same time?"
+    ], 
+    "hints_raw": [
+        "Think about the definition of a critical point and an inflection point.  Can both of these criteria occur at the same time?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>An inflection point is a point where <span class=\"math\">\\(f&#39;&#39;\\)</span> is zero or undefined <strong>and</strong> the graph changes concavity. A critical point is a point <em>c</em> where either <span class=\"math\">\\(f&#39;(c) = 0\\)</span> or <span class=\"math\">\\(f&#39;(c)\\)</span> does not exist.</p>\n<p>It is possible for a point to satisfy both definitions. Such a function has a point where both the first and second derivative are equal to zero. One such simple function is <span class=\"math\">\\(f(x) = x^3\\)</span>. It has a horizontal tangent line at <span class=\"math\">\\(x = 0\\)</span> (making <span class=\"math\">\\(x = 0\\)</span> a critical point) and also changes concavity at <span class=\"math\">\\(x = 0\\)</span>.</p>\n<p>Thus the statement is <strong>true</strong>.</p>\n"
+    ], 
+    "sols_latex": [
         "An inflection point is a point where $f''$ is zero or undefined\n\\textbf{and} the graph changes concavity. A critical point is a point\n\\emph{c} where either $f'(c) = 0$ or $f'(c)$ does not exist.\n\nIt is possible for a point to satisfy both definitions. Such a function\nhas a point where both the first and second derivative are equal to\nzero. One such simple function is $f(x) = x^3$. It has a horizontal\ntangent line at $x = 0$ (making $x = 0$ a critical point) and also\nchanges concavity at $x = 0$.\n\nThus the statement is \\textbf{true}."
     ], 
-    "hints": [
-        "Think about the definition of a critical point and an inflection point.\nCan both of these criteria occur at the same time?"
-    ]
+    "sols_raw": [
+        "An inflection point is a point where &lt;math>f''&lt;/math> is zero or undefined '''and''' the graph changes concavity.  A critical point is a point ''c'' where either &lt;math>f'(c) = 0&lt;/math> or &lt;math>f'(c)&lt;/math> does not exist.\n\nIt is possible for a point to satisfy both definitions.  Such a function has a point where both the first and second derivative are equal to zero.  One such simple function is &lt;math>f(x) = x^3&lt;/math>.  It has a horizontal tangent line at &lt;math>x = 0&lt;/math> (making &lt;math>x = 0&lt;/math> a critical point) and also changes concavity at &lt;math>x = 0&lt;/math>.  \n\nThus the statement is '''true'''.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Determine whether this statement is true. If it is, explain why; if not, give a counterexample.</em></p>\n<p>A point on a function may be both an infection point and a critical point.</p>\n", 
+    "statement_latex": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA point on a function may be both an infection point and a critical\npoint.", 
+    "statement_raw": "''Determine whether this statement is true. If it is, explain why; if not, give a counterexample.''\n\nA point on a function may be both an infection point and a critical point.\n", 
+    "term": "April", 
+    "topics": [
+        "Concavity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_01_(c)", 
+    "year": 2011
 }

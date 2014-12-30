@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
-    "course": "MATH103", 
-    "statement": "The height of fluid, $h(t)$ in a cylindrical container is controlled by\na pump so that it satisfies the differential equation\n\n\\begin{align*}\\frac{dh}{dt} = -kh^{1/3}, \\quad h(0)=h_0\\end{align*} where $k>0$, $h_0>0$ are\nconstants, and $h_0$ is the initial height of the fluid.\n\n(b) At what time will the container be empty?", 
-    "year": 2010, 
-    "sols": [
-        "To find the time \\emph{t\\textsubscript{empty}} when the height\n\\emph{h(t\\textsubscript{empty})} is zero we calculate\n\n\\begin{align*}0 = h(t_{\\text{empty}}) = \\left(h_0^{2/3}- \\frac23 kt_{\\text{empty}}\\right)^{3/2}.\\end{align*}\n\nSolving for \\emph{t\\textsubscript{empty}} yields\n\n\\begin{align*}t_{\\text{empty}} = \\frac{3}{2k} h_0^{2/3}.\\end{align*}\n\n\\emph{Note: The differential equation is no longer valid after this\ntime, because a negative height of fluid in a tank does not make sense.}"
+    "answer_html": "<p><em>Note: The differential equation is no longer valid after this time, because a negative height of fluid in a tank does not make sense.</em></p>\n", 
+    "answer_latex": "\\emph{Note: The differential equation is no longer valid after this\ntime, because a negative height of fluid in a tank does not make sense.}", 
+    "contributors": [
+        "CindyBlois", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The container is empty when the height of the fluid in the container is zero.</p>\n"
+    ], 
+    "hints_latex": [
         "The container is empty when the height of the fluid in the container is\nzero."
-    ]
+    ], 
+    "hints_raw": [
+        "The container is empty when the height of the fluid in the container is zero.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "6 (b)", 
+    "rating": 72, 
+    "sols_html": [
+        "<p>To find the time <em>t<sub>empty</sub></em> when the height <em>h(t<sub>empty</sub>)</em> is zero we calculate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = h(t_{\\text{empty}}) = \\left(h_0^{2/3}- \\frac23 kt_{\\text{empty}}\\right)^{3/2}.\\end{aligned}\\]</span></p>\n<p>Solving for <em>t<sub>empty</sub></em> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt_{\\text{empty}} = \\frac{3}{2k} h_0^{2/3}.\\end{aligned}\\]</span></p>\n<p><em>Note: The differential equation is no longer valid after this time, because a negative height of fluid in a tank does not make sense.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the time \\emph{t\\textsubscript{empty}} when the height\n\\emph{h(t\\textsubscript{empty})} is zero we calculate\n\n\\begin{align*}\n0 = h(t_{\\text{empty}}) = \\left(h_0^{2/3}- \\frac23 kt_{\\text{empty}}\\right)^{3/2}.\n\\end{align*}\n\nSolving for \\emph{t\\textsubscript{empty}} yields\n\n\\begin{align*}\nt_{\\text{empty}} = \\frac{3}{2k} h_0^{2/3}.\n\\end{align*}\n\n\\emph{Note: The differential equation is no longer valid after this\ntime, because a negative height of fluid in a tank does not make sense.}"
+    ], 
+    "sols_raw": [
+        "To find the time ''t&lt;sub>empty&lt;/sub>'' when the height ''h(t&lt;sub>empty&lt;/sub>)'' is zero we calculate\n\n:&lt;math> 0 = h(t_{\\text{empty}}) = \\left(h_0^{2/3}- \\frac23 kt_{\\text{empty}}\\right)^{3/2}. &lt;/math>\n\nSolving for ''t&lt;sub>empty&lt;/sub>'' yields\n\n:&lt;math> t_{\\text{empty}} = \\frac{3}{2k} h_0^{2/3}. &lt;/math>\n\n\n''Note: The differential equation is no longer valid after this time, because a negative height of fluid in a tank does not make sense.''\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The height of fluid, <span class=\"math\">\\(h(t)\\)</span> in a cylindrical container is controlled by a pump so that it satisfies the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dh}{dt} = -kh^{1/3}, \\quad h(0)=h_0\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(k&gt;0\\)</span>, <span class=\"math\">\\(h_0&gt;0\\)</span> are constants, and <span class=\"math\">\\(h_0\\)</span> is the initial height of the fluid.</p>\n<p>(b) At what time will the container be empty?</p>\n", 
+    "statement_latex": "The height of fluid, $h(t)$ in a cylindrical container is controlled by\na pump so that it satisfies the differential equation\n\n\\begin{align*}\n\\frac{dh}{dt} = -kh^{1/3}, \\quad h(0)=h_0\n\\end{align*} where $k>0$, $h_0>0$ are\nconstants, and $h_0$ is the initial height of the fluid.\n\n(b) At what time will the container be empty?", 
+    "statement_raw": "The height of fluid, &lt;math>h(t)&lt;/math> in a cylindrical container is controlled by a pump so that it satisfies the differential equation\n:&lt;math> \\frac{dh}{dt} = -kh^{1/3}, \\quad h(0)=h_0 &lt;/math>\nwhere &lt;math>k>0&lt;/math>, &lt;math>h_0>0&lt;/math> are constants, and &lt;math>h_0&lt;/math> is the initial height of the fluid.\n\n(b) At what time will the container be empty?\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_06_(b)", 
+    "year": 2010
 }

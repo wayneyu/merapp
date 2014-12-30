@@ -1,0 +1,49 @@
+{
+    "answer_html": "<p>This is equivalent to answer <span class=\"math\">\\({\\color{blue}\\text{(D)}}\\)</span>.</p>\n", 
+    "answer_latex": "This is equivalent to\nanswer ${\\color{blue}\\text{(D)}}$.", 
+    "contributors": [
+        "CarmenBruni", 
+        "NicholasHu", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>How are <strong>inflection points</strong> related to the second derivative?</p>\n"
+    ], 
+    "hints_latex": [
+        "How are \\textbf{inflection points} related to the second derivative?"
+    ], 
+    "hints_raw": [
+        "How are '''inflection points''' related to the second derivative?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 01", 
+    "rating": 65, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(\\displaystyle f\\)</span> has an <strong>inflection point</strong> wherever <span class=\"math\">\\(\\displaystyle f&#39;&#39;\\)</span> <em>changes sign</em>. Thus we begin by looking for the zeroes of <span class=\"math\">\\(\\displaystyle f&#39;&#39;\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\sin(x) + ax^2 \\\\\nf&#39;(x) &amp;= \\cos(x) + 2ax \\\\\nf&#39;&#39;(x) &amp;= -\\sin(x) + 2a\\end{aligned}\\]</span></p>\n<p>Solving for <em>a</em>, we find that <span class=\"math\">\\(a = \\tfrac12 \\sin(x)\\)</span>. Since <span class=\"math\">\\(-1 \\leq \\sin(x) \\leq 1\\)</span>, we have <span class=\"math\">\\(-\\tfrac{1}{2} \\leq a \\leq \\tfrac{1}{2}\\)</span>.</p>\n<p>But by the same inequalities, <span class=\"math\">\\(0 \\leq f&#39;&#39;(x) \\leq 2\\)</span> when <span class=\"math\">\\(a = \\tfrac12\\)</span>. Similarly, <span class=\"math\">\\(-2 \\leq f&#39;&#39;(x) \\leq 0\\)</span> when <span class=\"math\">\\(a = -\\tfrac12\\)</span>. In these cases, <span class=\"math\">\\(\\displaystyle f\\)</span> has no inflection points since <span class=\"math\">\\(\\displaystyle f&#39;&#39;\\)</span> does not <em>change sign</em>.</p>\n<p>Therefore <span class=\"math\">\\(-\\tfrac{1}{2} &lt; a &lt; \\tfrac{1}{2}\\)</span>. This is equivalent to answer <span class=\"math\">\\({\\color{blue}\\text{(D)}}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "$\\displaystyle f$ has an \\textbf{inflection point} wherever\n$\\displaystyle f''$ \\emph{changes sign}. Thus we begin by looking for\nthe zeroes of $\\displaystyle f''$:\n\n\\begin{align*}\nf(x) &= \\sin(x) + ax^2 \\\\\nf'(x) &= \\cos(x) + 2ax \\\\\nf''(x) &= -\\sin(x) + 2a\n\\end{align*}\n\nSolving for \\emph{a}, we find that $a = \\tfrac12 \\sin(x)$. Since\n$-1 \\leq \\sin(x) \\leq 1$, we have\n$-\\tfrac{1}{2} \\leq a \\leq \\tfrac{1}{2}$.\n\nBut by the same inequalities, $0 \\leq f''(x) \\leq 2$ when\n$a = \\tfrac12$. Similarly, $-2 \\leq f''(x) \\leq 0$ when $a = -\\tfrac12$.\nIn these cases, $\\displaystyle f$ has no inflection points since\n$\\displaystyle f''$ does not \\emph{change sign}.\n\nTherefore $-\\tfrac{1}{2} < a < \\tfrac{1}{2}$. This is equivalent to\nanswer ${\\color{blue}\\text{(D)}}$."
+    ], 
+    "sols_raw": [
+        "&lt;math>\\displaystyle f&lt;/math> has an '''inflection point''' wherever &lt;math>\\displaystyle f''&lt;/math> ''changes sign''. Thus we begin by looking for the zeroes of &lt;math>\\displaystyle f''&lt;/math>:\n\n&lt;math>\\begin{align}\nf(x) &amp;= \\sin(x) + ax^2 \\\\\nf'(x) &amp;= \\cos(x) + 2ax \\\\\nf''(x) &amp;= -\\sin(x) + 2a\n\\end{align}&lt;/math>\n\n\nSolving for ''a'', we find that &lt;math> a = \\tfrac12 \\sin(x)&lt;/math>. Since &lt;math>-1 \\leq \\sin(x) \\leq 1&lt;/math>, we have &lt;math>-\\tfrac{1}{2} \\leq a \\leq \\tfrac{1}{2} &lt;/math>.\n\n\nBut by the same inequalities, &lt;math>0 \\leq f''(x) \\leq 2&lt;/math> when &lt;math>a = \\tfrac12&lt;/math>. Similarly, &lt;math>-2 \\leq f''(x) \\leq 0&lt;/math> when &lt;math>a = -\\tfrac12&lt;/math>. In these cases, &lt;math>\\displaystyle f&lt;/math> has no inflection points since &lt;math>\\displaystyle f''&lt;/math> does not ''change sign''. \n\n\nTherefore &lt;math>-\\tfrac{1}{2} &lt; a &lt; \\tfrac{1}{2} &lt;/math>. This is equivalent to answer &lt;math>{\\color{blue} \\text{(D)}}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\displaystyle f(x) = \\sin(x) + ax^2\\)</span>. Which of the following conditions describes all values of <em>a</em> for which <em>f</em> HAS inflection points?</p>\n<p>(a) <span class=\"math\">\\(\\displaystyle |a| &gt; \\tfrac12\\)</span></p>\n<p>(b) <span class=\"math\">\\(\\displaystyle a &gt; \\tfrac12\\)</span></p>\n<p>(c) <span class=\"math\">\\(a \\geq \\tfrac12\\)</span></p>\n<p>(d) <span class=\"math\">\\(|a| &lt; \\tfrac12\\)</span></p>\n<p>(e) <span class=\"math\">\\(|a| \\leq \\tfrac12\\)</span></p>\n", 
+    "statement_latex": "Let $\\displaystyle f(x) = \\sin(x) + ax^2$. Which of the following\nconditions describes all values of \\emph{a} for which \\emph{f} HAS\ninflection points?\n\n(a) $\\displaystyle |a| > \\tfrac12$\n\n(b) $\\displaystyle a > \\tfrac12$\n\n(c) $a \\geq \\tfrac12$\n\n(d) $|a| < \\tfrac12$\n\n(e) $|a| \\leq \\tfrac12$", 
+    "statement_raw": "Let &lt;math>\\displaystyle f(x) = \\sin(x) + ax^2&lt;/math>. Which of the following conditions describes all values of ''a'' for which ''f'' HAS inflection points?\n\n(a) &lt;math>\\displaystyle |a| > \\tfrac12&lt;/math>\n\n(b) &lt;math>\\displaystyle a > \\tfrac12 &lt;/math>\n\n(c) &lt;math>a \\geq \\tfrac12 &lt;/math>\n\n(d) &lt;math>|a| &lt; \\tfrac12 &lt;/math>\n\n(e) &lt;math>|a| \\leq \\tfrac12 &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Concavity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_A_01", 
+    "year": 2013
+}

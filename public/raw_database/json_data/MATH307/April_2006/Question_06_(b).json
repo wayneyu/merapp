@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
+    "answer_html": "<p>Hence, <span class=\"math\">\\(\\vec{y}^T \\vec{b} = 0\\)</span> or <span class=\"math\">\\(&lt; y, b&gt; = 0\\)</span></p>\n", 
+    "answer_latex": "Hence, $\\vec{y}^T \\vec{b} = 0$ or $< y, b> = 0$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nIf\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b} \\\\\nA^T \\vec{y} &= 0\\end{align*}\n\nthen $\\vec{b} \\perp \\vec{y}$.", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is True</p>\n<p>Given <span class=\"math\">\\(A\\vec{x} = \\vec{b}\\)</span> then <span class=\"math\">\\(\\vec{b} \\in R(A)\\)</span> (i.e. is a vector in the range of A, or a vector b is in the span of A).</p>\n<p>And <span class=\"math\">\\(\\vec{y} \\in N(A^T)\\)</span>, meaning that y is in the nullspace of <span class=\"math\">\\(A^T\\)</span></p>\n<p>From the orthogonality of subspaces, we now that <span class=\"math\">\\(N(A^T) = R(A) ^\\perp\\)</span></p>\n<p>Hence, <span class=\"math\">\\(\\vec{y}^T \\vec{b} = 0\\)</span> or <span class=\"math\">\\(&lt; y, b&gt; = 0\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "The answer is True\n\nGiven $A\\vec{x} = \\vec{b}$ then $\\vec{b} \\in R(A)$ (i.e. is a vector in\nthe range of A, or a vector b is in the span of A).\n\nAnd $\\vec{y} \\in N(A^T)$, meaning that y is in the nullspace of $A^T$\n\nFrom the orthogonality of subspaces, we now that $N(A^T) = R(A) ^\\perp$\n\nHence, $\\vec{y}^T \\vec{b} = 0$ or $< y, b> = 0$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "The answer is True\n\nGiven &lt;math>A\\vec{x} = \\vec{b}&lt;/math> then &lt;math>\\vec{b} \\in R(A)&lt;/math> (i.e. is a vector in the range of A, or a vector b is in the span of A).\n\nAnd &lt;math>\\vec{y} \\in N(A^T)&lt;/math>, meaning that y is in the nullspace of &lt;math>A^T&lt;/math>\n\nFrom the orthogonality of subspaces, we now that &lt;math>N(A^T) = R(A) ^\\perp&lt;/math>\n\nHence, &lt;math>\\vec{y}^T \\vec{b} = 0&lt;/math> or &lt;math>&lt; y, b> = 0&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Determine if each of the following statements is true of false. Show reason or proof if true and show reason or counter example if false.</p>\n<p>If</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\vec{x} &amp;= \\vec{b} \\\\\nA^T \\vec{y} &amp;= 0\\end{aligned}\\]</span></p>\n<p>then <span class=\"math\">\\(\\vec{b} \\perp \\vec{y}\\)</span>.</p>\n", 
+    "statement_latex": "Determine if each of the following statements is true of false. Show\nreason or proof if true and show reason or counter example if false.\n\nIf\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b} \\\\\nA^T \\vec{y} &= 0\n\\end{align*}\n\nthen $\\vec{b} \\perp \\vec{y}$.", 
+    "statement_raw": "Determine if each of the following statements is true of false. Show reason or proof if true and show reason or counter example if false.\n\nIf\n\n&lt;math>\n\\begin{align}\nA\\vec{x} &amp;= \\vec{b} \\\\\nA^T \\vec{y} &amp;= 0\n\\end{align}\n&lt;/math> \n\nthen &lt;math>\\vec{b} \\perp \\vec{y}&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2006/Question_06_(b)", 
+    "year": 2006
 }

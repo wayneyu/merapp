@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH101", 
-    "statement": "Write down the Trapezoidal Rule approximation $\\displaystyle T_{3}$ for\n\n$\\int_{1}^{4}x\\cos(\\pi/x)\\, dx$.\n\nLeave your answer expressed as a sum involving cosines.", 
-    "year": 2008, 
-    "sols": [
-        "Recall that when $\\displaystyle n=3$, $\\displaystyle a=1$, and\n$\\displaystyle b=4$ we have\n\n$\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-1}{3} = 1$\n\nand that\n\n$\\displaystyle x_{i} = a + i\\Delta x = 1 + i(1) = 1 + i.$\n\nWe plug in these values to see that\n\n\\begin{align*}\nT_{3} &= \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + f(x_{3}) \\Big)\\\\\n&= \\frac{1}{2} \\Big(f(1+0) + 2f(1 + 1) + 2f(1 + 2) + f(1 + 3) \\Big) \\\\\n&= \\frac{1}{2} \\Big((1\\cos(\\pi/(1))) + 2(2\\cos(\\pi/2)) + 2(3\\cos(\\pi/3)) + (4\\cos(\\pi/4)) \\Big) \\\\\n&= \\frac{1}{2} \\Big(\\cos(\\pi) + 4\\cos(\\pi/2) + 6\\cos(\\pi/3) + 4\\cos(\\pi/4) \\Big) \\end{align*}\n\ncompleting the question. Note that if we actually compute the value we\nget that, $T_3=2.414213562$ and that,\n\n\\begin{align*}\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039\\end{align*}\n\nwhich already to this low approximation shows fairly good accuracy."
+    "answer_html": "<p><span class=\"math\">\\(\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039\\)</span> which already to this low approximation shows fairly good accuracy.</p>\n", 
+    "answer_latex": " $\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039$ which already to this low approximation shows fairly good accuracy.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Trapezoid Rule in full generality is</p>\n<p><span class=\"math\">\\(T_{n} = \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n}) \\Big)\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The Trapezoid Rule in full generality is\n\n$T_{n} = \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n}) \\Big)$"
-    ]
+    ], 
+    "hints_raw": [
+        "The Trapezoid Rule in full generality is\n\n&lt;math>\nT_{n} = \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n}) \\Big)\n&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (d)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>Recall that when <span class=\"math\">\\(\\displaystyle n=3\\)</span>, <span class=\"math\">\\(\\displaystyle a=1\\)</span>, and <span class=\"math\">\\(\\displaystyle b=4\\)</span> we have</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-1}{3} = 1\\)</span></p>\n<p>and that</p>\n<p><span class=\"math\">\\(\\displaystyle x_{i} = a + i\\Delta x = 1 + i(1) = 1 + i.\\)</span></p>\n<p>We plug in these values to see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_{3} &amp;= \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + f(x_{3}) \\Big)\\\\\n&amp;= \\frac{1}{2} \\Big(f(1+0) + 2f(1 + 1) + 2f(1 + 2) + f(1 + 3) \\Big) \\\\\n&amp;= \\frac{1}{2} \\Big((1\\cos(\\pi/(1))) + 2(2\\cos(\\pi/2)) + 2(3\\cos(\\pi/3)) + (4\\cos(\\pi/4)) \\Big) \\\\\n&amp;= \\frac{1}{2} \\Big(\\cos(\\pi) + 4\\cos(\\pi/2) + 6\\cos(\\pi/3) + 4\\cos(\\pi/4) \\Big) \\end{aligned}\\]</span></p>\n<p>completing the question. Note that if we actually compute the value we get that, <span class=\"math\">\\(T_3=2.414213562\\)</span> and that,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039\\end{aligned}\\]</span></p>\n<p>which already to this low approximation shows fairly good accuracy.</p>\n"
+    ], 
+    "sols_latex": [
+        "Recall that when $\\displaystyle n=3$, $\\displaystyle a=1$, and\n$\\displaystyle b=4$ we have\n\n$\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-1}{3} = 1$\n\nand that\n\n$\\displaystyle x_{i} = a + i\\Delta x = 1 + i(1) = 1 + i.$\n\nWe plug in these values to see that\n\n\\begin{align*}\nT_{3} &= \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + f(x_{3}) \\Big)\\\\\n&= \\frac{1}{2} \\Big(f(1+0) + 2f(1 + 1) + 2f(1 + 2) + f(1 + 3) \\Big) \\\\\n&= \\frac{1}{2} \\Big((1\\cos(\\pi/(1))) + 2(2\\cos(\\pi/2)) + 2(3\\cos(\\pi/3)) + (4\\cos(\\pi/4)) \\Big) \\\\\n&= \\frac{1}{2} \\Big(\\cos(\\pi) + 4\\cos(\\pi/2) + 6\\cos(\\pi/3) + 4\\cos(\\pi/4) \\Big) \n\\end{align*}\n\ncompleting the question. Note that if we actually compute the value we\nget that, $T_3=2.414213562$ and that,\n\n\\begin{align*}\n\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039\n\\end{align*}\n\nwhich already to this low approximation shows fairly good accuracy."
+    ], 
+    "sols_raw": [
+        "Recall that when &lt;math>\\displaystyle n=3&lt;/math>, &lt;math>\\displaystyle a=1&lt;/math>, and &lt;math>\\displaystyle b=4&lt;/math> we have\n\n&lt;math>\n\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-1}{3} = 1\n&lt;/math>\n\nand that\n\n&lt;math>\n\\displaystyle x_{i} = a + i\\Delta x = 1 + i(1) = 1 + i.\n&lt;/math>\n\nWe plug in these values to see that\n\n&lt;math>\n\\begin{align}\nT_{3} &amp;= \\frac{\\Delta x}{2} \\Big(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + f(x_{3}) \\Big)\\\\\n&amp;= \\frac{1}{2} \\Big(f(1+0) + 2f(1 + 1) + 2f(1 + 2) + f(1 + 3) \\Big) \\\\\n&amp;= \\frac{1}{2} \\Big((1\\cos(\\pi/(1))) + 2(2\\cos(\\pi/2)) + 2(3\\cos(\\pi/3)) + (4\\cos(\\pi/4)) \\Big) \\\\\n&amp;= \\frac{1}{2} \\Big(\\cos(\\pi) + 4\\cos(\\pi/2) + 6\\cos(\\pi/3) + 4\\cos(\\pi/4) \\Big) \n\\end{align}\n&lt;/math>\n\ncompleting the question.  Note that if we actually compute the value we get that, &lt;math>T_3=2.414213562&lt;/math> and that,\n\n:&lt;math>\n\\int_1^4{}x\\cos\\left(\\frac{\\pi}{x}\\right)=2.265092039\n&lt;/math>\n\nwhich already to this low approximation shows fairly good accuracy.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Write down the Trapezoidal Rule approximation <span class=\"math\">\\(\\displaystyle T_{3}\\)</span> for</p>\n<p><span class=\"math\">\\(\\int_{1}^{4}x\\cos(\\pi/x)\\, dx\\)</span>.</p>\n<p>Leave your answer expressed as a sum involving cosines.</p>\n", 
+    "statement_latex": "Write down the Trapezoidal Rule approximation $\\displaystyle T_{3}$ for\n\n$\\int_{1}^{4}x\\cos(\\pi/x)\\, dx$.\n\nLeave your answer expressed as a sum involving cosines.", 
+    "statement_raw": "Write down the Trapezoidal Rule approximation &lt;math> \\displaystyle T_{3} &lt;/math> for \n\n&lt;math> \\int_{1}^{4}x\\cos(\\pi/x)\\, dx &lt;/math>. \n\nLeave your answer expressed as a sum involving cosines.\n", 
+    "term": "April", 
+    "topics": [
+        "Trapezoidal_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_01_(d)", 
+    "year": 2008
 }

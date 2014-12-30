@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_06_(d)", 
+    "answer_html": "<p>By part c, we see immediately that concavity changes from concave up to concave down at the point <span class=\"math\">\\(x = 7/2\\)</span>.This is the only inflection point.</p>\n", 
+    "answer_latex": "By part c, we see immediately that concavity changes from concave up to\nconcave down at the point $x = 7/2$.This is the only inflection point.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(d) Find the \\emph{x}-coordinates of all inflection points of $f(x)$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the solution to part c and recall that inflection points are points in the domain of the function where the second derivative changes sign.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the solution to part c and recall that inflection points are points\nin the domain of the function where the second derivative changes sign."
+    ], 
+    "hints_raw": [
+        "Use the solution to part c and recall that inflection points are points in the domain of the function where the second derivative changes sign.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "6 (d)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>By part c, we see immediately that concavity changes from concave up to concave down at the point <span class=\"math\">\\(x = 7/2\\)</span>. This is the only inflection point.</p>\n"
+    ], 
+    "sols_latex": [
         "By part c, we see immediately that concavity changes from concave up to\nconcave down at the point $x = 7/2$. This is the only inflection point."
     ], 
-    "hints": [
-        "Use the solution to part c and recall that inflection points are points\nin the domain of the function where the second derivative changes sign."
-    ]
+    "sols_raw": [
+        "By part c, we see immediately that concavity changes from concave up to concave down at the point &lt;math> x = 7/2 &lt;/math>. This is the only inflection point.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 5-11, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions.</strong></p>\n<p>6. Let <span class=\"math\">\\(f(x) = 2x^{3/5} + 3x^{-2/5}\\)</span>. Note that the domain of <span class=\"math\">\\(f\\)</span> is the set of all nonzero real numbers; for example, <span class=\"math\">\\(f(-1) = -2 + 3 = 1\\)</span>.</p>\n<p>(d) Find the <em>x</em>-coordinates of all inflection points of <span class=\"math\">\\(f(x)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(d) Find the \\emph{x}-coordinates of all inflection points of $f(x)$.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these  questions.'''\n\n6. Let &lt;math>f(x) = 2x^{3/5} + 3x^{-2/5}&lt;/math>. Note that the domain of &amp;fnof; is the set of all nonzero real numbers; for example, &lt;math>f(-1) = -2 + 3 = 1&lt;/math>.\n\n(d) Find the ''x''-coordinates of all inflection points of &lt;math>f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_06_(d)", 
+    "year": 2012
 }

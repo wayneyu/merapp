@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_08_(ii)", 
-    "course": "MATH102", 
-    "statement": "You are driving down the highway when you see a sleeping moose. You\napply the brakes and carefully stop your car 20m away from the animal.\nWhile you are looking for your camera the moose wakes up. It instantly\ncharges toward your car at a constant speed of 8m/s. One second later,\nyou start backing away from the moose at a constant acceleration of\n2m/s\\textsuperscript{2}.\n\n\\textbf{(ii)} At what time \\emph{T} does the moose hit your car?", 
-    "year": 2011, 
-    "sols": [
-        "From our answer in part i), the distance between the moose and the car\nis given by d(t), where\n\n\\begin{align*}\\displaystyle d(t) = -t^{2} + 8t - 12.\\end{align*} To solve for the time when\nthe moose hits the car we solve the equation d(T) = 0 to get T.\n\n\\begin{align*}\nd(T) = -T^{2} + 8T - 12 &= 0 \\\\\n-(T - 6)(T - 2) &= 0 \\quad \\rightarrow \\quad T = 2,6\\end{align*} Since the moose will not hit the car twice, we choose the\nsmaller of the two times, and say the moose will hit the car at\n\n\\begin{align*}{\\color{blue}T =2.}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}T =2.}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}T =2.}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use your answer from part i) to answer this question.</p>\n<p>Also consider: what is the distance between the car and the moose when the moose and the car collide?</p>\n"
+    ], 
+    "hints_latex": [
         "Use your answer from part i) to answer this question.\n\nAlso consider: what is the distance between the car and the moose when\nthe moose and the car collide?"
-    ]
+    ], 
+    "hints_raw": [
+        "Use your answer from part i) to answer this question. \n\nAlso consider: what is the distance between the car and the moose when the moose and the car collide?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "8 (ii)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>From our answer in part i), the distance between the moose and the car is given by d(t), where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle d(t) = |-t^{2} + 8t - 12|.\\end{aligned}\\]</span></p>\n<p>To solve for the time when the moose hits the car we solve the equation d(T) = 0 to get T.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nd(T) = |-T^{2} + 8T - 12| &amp;= 0 \\\\\n|-(T - 6)(T - 2)| &amp;= 0 \\quad \\rightarrow \\quad T = 2,6\\end{aligned}\\]</span></p>\n<p>Since the moose will not hit the car twice, we choose the smaller of the two times, and say the moose will hit the car at</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}T =2.}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From our answer in part i), the distance between the moose and the car\nis given by d(t), where\n\n\\begin{align*}\n\\displaystyle d(t) = |-t^{2} + 8t - 12|.\n\\end{align*} To solve for the time when\nthe moose hits the car we solve the equation d(T) = 0 to get T.\n\n\\begin{align*}\nd(T) = |-T^{2} + 8T - 12| &= 0 \\\\\n|-(T - 6)(T - 2)| &= 0 \\quad \\rightarrow \\quad T = 2,6\n\\end{align*} Since the moose will not hit the car twice, we choose the\nsmaller of the two times, and say the moose will hit the car at\n\n\\begin{align*}\n{\\color{blue}T =2.}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From our answer in part i), the distance between the moose and the car is given by d(t), where\n:&lt;math>\n\\displaystyle d(t) = |-t^{2} + 8t - 12|.\n&lt;/math>\nTo solve for the time when the moose hits the car we solve the equation d(T) = 0 to get T.\n:&lt;math>\n\\begin{align}\nd(T) = |-T^{2} + 8T - 12| &amp;= 0 \\\\\n|-(T - 6)(T - 2)| &amp;= 0 \\quad \\rightarrow \\quad T = 2,6\n\\end{align}\n&lt;/math>\nSince the moose will not hit the car twice, we choose the smaller of the two times, and say the moose will hit the car at\n:&lt;math>\n{\\color{blue}T = 2.}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>You are driving down the highway when you see a sleeping moose. You apply the brakes and carefully stop your car 20m away from the animal. While you are looking for your camera the moose wakes up. It instantly charges toward your car at a constant speed of 8m/s. One second later, you start backing away from the moose at a constant acceleration of 2m/s<sup>2</sup>.</p>\n<p><strong>(ii)</strong> At what time <em>T</em> does the moose hit your car?</p>\n", 
+    "statement_latex": "You are driving down the highway when you see a sleeping moose. You\napply the brakes and carefully stop your car 20m away from the animal.\nWhile you are looking for your camera the moose wakes up. It instantly\ncharges toward your car at a constant speed of 8m/s. One second later,\nyou start backing away from the moose at a constant acceleration of\n2m/s\\textsuperscript{2}.\n\n\\textbf{(ii)} At what time \\emph{T} does the moose hit your car?", 
+    "statement_raw": "You are driving down the highway when you see a sleeping moose. You apply the brakes and carefully stop your car 20m away from the animal. While you are looking for your camera the moose wakes up. It instantly charges toward your car at a constant speed of 8m/s. One second later, you start backing away from the moose at a constant acceleration of 2m/s&lt;sup>2&lt;/sup>.\n\n'''(ii)''' At what time ''T'' does the moose hit your car?\n", 
+    "term": "December", 
+    "topics": [
+        "Equations_of_motion"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_08_(ii)", 
+    "year": 2011
 }

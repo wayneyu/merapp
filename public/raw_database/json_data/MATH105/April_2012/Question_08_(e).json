@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_08_(e)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nThere are two boxes containing two balls each. The balls in the first\nbox are numbered \u00e2\u0088\u00921 and 1, the balls in the second box are numbered 0\nand 2. An experimenter draws a ball from each box and observes the\nnumber of each ball. Define a random variable \\emph{X} whose value is\ntwo times the number of the ball drawn from the first box plus three\ntimes the number of the ball drawn from the second box. In other words,\n\n\\emph{X} = 2(number observed from box 1) + 3(number observed from box\n2).\n\nWrite down all possible values of \\emph{X} and use this to compute the\nexpected value of \\emph{X}.", 
-    "year": 2012, 
-    "sols": [
-        "We consider all possible outcomes.\n\nDraw -1 from bin 1 and 0 from bin 2\\begin{align*}X = 2(-1) + 3(0) = -2.\\end{align*}\n\nDraw -1 from bin 1 and 2 from bin 2\\begin{align*}X = 2(-1) + 3(2) = 4.\\end{align*}\n\nDraw +1 from bin 1 and 0 from bin 2\\begin{align*}X = 2(1) + 3(0) = 2.\\end{align*}\n\nDraw +1 from bin 1 and 2 from bin 2\\begin{align*}X = 2(1) + 3(2) = 8.\\end{align*}\n\nAll possible values of X are: -2, 2, 4, 8.\n\nEach outcome is equally likely since drawing from the bins is\nindependent and within each bin the balls have equal probability (this\nisn't mentioned, but it seems like a reasonable assumption). Therefore,\n$\\Pr(X=-2) = \\Pr(X=2) = \\Pr(X=4) = \\Pr(X=8) = 1/4$ (since the sum of all\n4 probabilities must be 1).\n\nThe expected value of X\nis\\begin{align*}\\mathbb{E}(X) = -2/4 + 2/4 + 4/4 + 8/4 = 3.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\mathbb{E}(X)=3.\\)</span></p>\n", 
+    "answer_latex": " $\\mathbb{E}(X)=3.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>There are four possible outcomes for the experiment and hence <em>X</em> can take four possible values. Try listing them out. All outcomes are equally likely.</p>\n"
+    ], 
+    "hints_latex": [
         "There are four possible outcomes for the experiment and hence \\emph{X}\ncan take four possible values. Try listing them out. All outcomes are\nequally likely."
-    ]
+    ], 
+    "hints_raw": [
+        "There are four possible outcomes for the experiment and hence ''X'' can take four possible values. Try listing them out. All outcomes are equally likely.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "8 (e)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>We consider all possible outcomes.</p>\n<p>Draw -1 from bin 1 and 0 from bin 2</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nX = 2(-1) + 3(0) = -2.\\end{aligned}\\]</span></p>\n<p>Draw -1 from bin 1 and 2 from bin 2</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nX = 2(-1) + 3(2) = 4.\\end{aligned}\\]</span></p>\n<p>Draw +1 from bin 1 and 0 from bin 2</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nX = 2(1) + 3(0) = 2.\\end{aligned}\\]</span></p>\n<p>Draw +1 from bin 1 and 2 from bin 2</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nX = 2(1) + 3(2) = 8.\\end{aligned}\\]</span></p>\n<p>All possible values of X are: -2, 2, 4, 8.</p>\n<p>Each outcome is equally likely since drawing from the bins is independent and within each bin the balls have equal probability (this isn&#8217;t mentioned, but it seems like a reasonable assumption). Therefore, <span class=\"math\">\\(\\Pr(X=-2) = \\Pr(X=2) = \\Pr(X=4) = \\Pr(X=8) = 1/4\\)</span> (since the sum of all 4 probabilities must be 1).</p>\n<p>The expected value of X is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbb{E}(X) = -2/4 + 2/4 + 4/4 + 8/4 = 3.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We consider all possible outcomes.\n\nDraw -1 from bin 1 and 0 from bin 2\\begin{align*}\nX = 2(-1) + 3(0) = -2.\n\\end{align*}\n\nDraw -1 from bin 1 and 2 from bin 2\\begin{align*}\nX = 2(-1) + 3(2) = 4.\n\\end{align*}\n\nDraw +1 from bin 1 and 0 from bin 2\\begin{align*}\nX = 2(1) + 3(0) = 2.\n\\end{align*}\n\nDraw +1 from bin 1 and 2 from bin 2\\begin{align*}\nX = 2(1) + 3(2) = 8.\n\\end{align*}\n\nAll possible values of X are: -2, 2, 4, 8.\n\nEach outcome is equally likely since drawing from the bins is\nindependent and within each bin the balls have equal probability (this\nisn't mentioned, but it seems like a reasonable assumption). Therefore,\n$\\Pr(X=-2) = \\Pr(X=2) = \\Pr(X=4) = \\Pr(X=8) = 1/4$ (since the sum of all\n4 probabilities must be 1).\n\nThe expected value of X\nis\\begin{align*}\n\\mathbb{E}(X) = -2/4 + 2/4 + 4/4 + 8/4 = 3.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We consider all possible outcomes.\n\nDraw -1 from bin 1 and 0 from bin 2: &lt;math>X = 2(-1) + 3(0) = -2&lt;/math>.\n\nDraw -1 from bin 1 and 2 from bin 2: &lt;math>X = 2(-1) + 3(2) = 4&lt;/math>.\n\nDraw +1 from bin 1 and 0 from bin 2: &lt;math>X = 2(1) + 3(0) = 2&lt;/math>.\n\nDraw +1 from bin 1 and 2 from bin 2: &lt;math>X = 2(1) + 3(2) = 8&lt;/math>.\n\n&lt;b>All possible values of X are:&lt;/b> -2, 2, 4, 8.\n\nEach outcome is equally likely since drawing from the bins is independent and within each bin the balls have equal probability (this isn't mentioned, but it seems like a reasonable assumption). Therefore, &lt;math>\\Pr(X=-2) = \\Pr(X=2) = \\Pr(X=4) = \\Pr(X=8) = 1/4&lt;/math> (since the sum of all 4 probabilities must be 1).\n\nThe &lt;b>expected value of X&lt;/b> is: &lt;math>\\mathbb{E}(X) = -2/4 + 2/4 + 4/4 + 8/4 = 3.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.</em></p>\n<p>There are two boxes containing two balls each. The balls in the first box are numbered -1 and 1, the balls in the second box are numbered 0 and 2. An experimenter draws a ball from each box and observes the number of each ball. Define a random variable <em>X</em> whose value is two times the number of the ball drawn from the first box plus three times the number of the ball drawn from the second box. In other words,</p>\n<p><em>X</em> = 2(number observed from box 1) + 3(number observed from box 2).</p>\n<p>Write down all possible values of <em>X</em> and use this to compute the expected value of <em>X</em>.</p>\n", 
+    "statement_latex": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nThere are two boxes containing two balls each. The balls in the first\nbox are numbered -1 and 1, the balls in the second box are numbered 0\nand 2. An experimenter draws a ball from each box and observes the\nnumber of each ball. Define a random variable \\emph{X} whose value is\ntwo times the number of the ball drawn from the first box plus three\ntimes the number of the ball drawn from the second box. In other words,\n\n\\emph{X} = 2(number observed from box 1) + 3(number observed from box\n2).\n\nWrite down all possible values of \\emph{X} and use this to compute the\nexpected value of \\emph{X}.", 
+    "statement_raw": "''Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\nThere are two boxes containing two balls each. The balls in the \ufb01rst box are numbered \u22121 and 1, the balls in the second box are numbered 0 and 2. An experimenter draws a ball from each box and observes the number of each ball. De\ufb01ne a random variable ''X'' whose value is two times the number of the ball drawn from the \ufb01rst box plus three times the number of the ball drawn from the second box. In other words,\n\n''X'' = 2(number observed from box 1) + 3(number observed from box 2).\n\nWrite down all possible values of ''X'' and use this to compute the expected value of ''X''.\n", 
+    "term": "April", 
+    "topics": [
+        "Discrete_probability"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(e)", 
+    "year": 2012
 }

@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_01_(i)", 
-    "course": "MATH105", 
-    "statement": "Find\n\n\\begin{align*}\\int xe^{2x}\\,dx\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "Use integration by parts with\n\n\\begin{align*}\\displaystyle\nu = x \\quad\\text{and}\\quad dv = e^{2x}\\end{align*} we obtain:\n\n\\begin{align*}\n\\int xe^{2x}\\,dx &= \\frac{xe^{2x}}{2} - \\int \\frac{1}{2}e^{2x}\\,dx \\\\\n&= \\frac{xe^{2x}}{2} - \\frac{1}{4}e^{2x} + C \\\\\n&= \\frac{(2x - 1)e^{2x}}{4} + C\\end{align*}\n\nwhere $C$ is a constant."
+    "answer_html": "<p>where <span class=\"math\">\\(C\\)</span> is a constant.</p>\n", 
+    "answer_latex": "where $C$ is a constant.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What technique of integration does one generally use when integrating a product of functions?</p>\n", 
+        "<p>What makes computing the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int xe^{x^2}\\,dx\\end{aligned}\\]</span></p>\n<p>very different?</p>\n"
+    ], 
+    "hints_latex": [
         "What technique of integration does one generally use when integrating a\nproduct of functions?", 
-        "What makes computing the integral\n\n\\begin{align*}\\int xe^{x^2}\\,dx\\end{align*} very different?"
-    ]
+        "What makes computing the integral\n\n\\begin{align*}\n\\int xe^{x^2}\\,dx\n\\end{align*} very different?"
+    ], 
+    "hints_raw": [
+        "What technique of integration does one generally use when integrating a product of functions?\n", 
+        "What makes computing the integral\n:&lt;math>\n\\int xe^{x^2}\\,dx\n&lt;/math>\nvery different?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (i)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>Use integration by parts with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nu = x \\quad\\text{and}\\quad dv = e^{2x}\\end{aligned}\\]</span></p>\n<p>we obtain:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int xe^{2x}\\,dx &amp;= \\frac{xe^{2x}}{2} - \\int \\frac{1}{2}e^{2x}\\,dx \\\\\n&amp;= \\frac{xe^{2x}}{2} - \\frac{1}{4}e^{2x} + C \\\\\n&amp;= \\frac{(2x - 1)e^{2x}}{4} + C\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(C\\)</span> is a constant.</p>\n"
+    ], 
+    "sols_latex": [
+        "Use integration by parts with\n\n\\begin{align*}\n\\displaystyle\nu = x \\quad\\text{and}\\quad dv = e^{2x}\n\\end{align*} we obtain:\n\n\\begin{align*}\n\\int xe^{2x}\\,dx &= \\frac{xe^{2x}}{2} - \\int \\frac{1}{2}e^{2x}\\,dx \\\\\n&= \\frac{xe^{2x}}{2} - \\frac{1}{4}e^{2x} + C \\\\\n&= \\frac{(2x - 1)e^{2x}}{4} + C\n\\end{align*}\n\nwhere $C$ is a constant."
+    ], 
+    "sols_raw": [
+        "Use integration by parts with\n:&lt;math>\\displaystyle\nu = x \\quad\\text{and}\\quad dv = e^{2x}\n&lt;/math>\nwe obtain:\n\n:&lt;math>\n\\begin{align}\n\\int xe^{2x}\\,dx &amp;= \\frac{xe^{2x}}{2} - \\int \\frac{1}{2}e^{2x}\\,dx \\\\\n&amp;= \\frac{xe^{2x}}{2} - \\frac{1}{4}e^{2x} + C \\\\\n&amp;= \\frac{(2x - 1)e^{2x}}{4} + C\n\\end{align}\n&lt;/math>\n\nwhere &lt;math>C&lt;/math> is a constant.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int xe^{2x}\\,dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find\n\n\\begin{align*}\n\\int xe^{2x}\\,dx\n\\end{align*}", 
+    "statement_raw": "Find\n:&lt;math>\n\\int xe^{2x}\\,dx\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_01_(i)", 
+    "year": 2010
 }

@@ -1,9 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_06_(d)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Sketch the plot that you expect to be produced by your answer to\n\\href{Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_06_(c)}{part\n(c)}.", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Sketch the plot that you expect to be produced by your answer to <span>part (c)</span>.</p>\n", 
+    "statement_latex": "Sketch the plot that you expect to be produced by your answer to\n{part\n(c)}.", 
+    "statement_raw": "Sketch the plot that you expect to be produced by your answer to [[Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_06_(c)|part (c)]].\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_06_(d)", 
+    "year": 2012
 }

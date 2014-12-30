@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_04_(b)", 
-    "course": "MATH152", 
-    "statement": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\\end{align*}\n\nFor each eigenvalue of A, find an eigenvector.", 
-    "year": 2012, 
-    "sols": [
-        "Refer to the previous part for the eigenvalue computations. For the\neigenvalue $\\displaystyle \\lambda = 1$\n\n\\begin{align*}\nA-I=\\begin{bmatrix}\n2  &  2\\\\\n2  &  2\n\\end{bmatrix}.\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}$ is an eigenvector. For the\n$\\displaystyle \\lambda = 5$ eigenvalue,\n\n\\begin{align*}\nA-5I=\\begin{bmatrix}\n-2  &  2\\\\\n2  &  -2\n\\end{bmatrix}.\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$ is an eigenvector."
+    "answer_html": "<p>and from this we see that the vector <span class=\"math\">\\(\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}\\)</span> is an eigenvector.</p>\n", 
+    "answer_latex": "and from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$ is an eigenvector.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall that to solve for eigenvectors, we must solve <span class=\"math\">\\(\\displaystyle (A-\\lambda I)\\mathbf{x} = \\mathbf{0}\\)</span> for each eigenvalue.</p>\n", 
+        "<p>Look at the result from the previous hint and attempt to find the eigenvectors by inspection. Alternatively, take each eigenvalue and row reduce the matrix <span class=\"math\">\\(\\displaystyle A-\\lambda I\\)</span> and then find the eigenvectors.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that to solve for eigenvectors, we must solve\n$\\displaystyle (A-\\lambda I)\\mathbf{x} = \\mathbf{0}$ for each eigenvalue.", 
         "Look at the result from the previous hint and attempt to find the\neigenvectors by inspection. Alternatively, take each eigenvalue and row\nreduce the matrix $\\displaystyle A-\\lambda I$ and then find the\neigenvectors."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that to solve for eigenvectors, we must solve &lt;math>\\displaystyle(A-\\lambda I)\\mathbf{x} = \\mathbf{0} &lt;/math> for each eigenvalue.\n", 
+        "Look at the result from the previous hint and attempt to find the eigenvectors by inspection. Alternatively, take each eigenvalue and row reduce the matrix &lt;math> \\displaystyle A-\\lambda I &lt;/math> and then find the eigenvectors.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "4 (b)", 
+    "rating": 97, 
+    "sols_html": [
+        "<p>Refer to the previous part for the eigenvalue computations. For the eigenvalue <span class=\"math\">\\(\\displaystyle \\lambda = 1\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA-I=\\begin{bmatrix}\n2  &amp;  2\\\\\n2  &amp;  2\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>and from this we see that the vector <span class=\"math\">\\(\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}\\)</span> is an eigenvector. For the <span class=\"math\">\\(\\displaystyle \\lambda = 5\\)</span> eigenvalue,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA-5I=\\begin{bmatrix}\n-2  &amp;  2\\\\\n2  &amp;  -2\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>and from this we see that the vector <span class=\"math\">\\(\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}\\)</span> is an eigenvector.</p>\n"
+    ], 
+    "sols_latex": [
+        "Refer to the previous part for the eigenvalue computations. For the\neigenvalue $\\displaystyle \\lambda = 1$\n\n\\begin{align*}\nA-I=\\begin{bmatrix}\n2  &  2\\\\\n2  &  2\n\\end{bmatrix}.\n\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}$ is an eigenvector. For the\n$\\displaystyle \\lambda = 5$ eigenvalue,\n\n\\begin{align*}\nA-5I=\\begin{bmatrix}\n-2  &  2\\\\\n2  &  -2\n\\end{bmatrix}.\n\\end{align*}\n\nand from this we see that the vector\n$\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$ is an eigenvector."
+    ], 
+    "sols_raw": [
+        "Refer to the previous part for the eigenvalue computations. For the eigenvalue &lt;math> \\displaystyle \\lambda = 1 &lt;/math>\n\n&lt;math>\n\\begin{align}\nA-I=\\begin{bmatrix}\n2  &amp;  2\\\\\n2  &amp;  2\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nand from this we see that the vector &lt;math> \\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix} &lt;/math> is an eigenvector. For the &lt;math> \\displaystyle \\lambda = 5 &lt;/math> eigenvalue,\n\n&lt;math>\n\\begin{align}\nA-5I=\\begin{bmatrix}\n-2  &amp;  2\\\\\n2  &amp;  -2\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nand from this we see that the vector &lt;math> \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} &lt;/math> is an eigenvector.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>For each eigenvalue of A, find an eigenvector.</p>\n", 
+    "statement_latex": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\n\\end{align*}\n\nFor each eigenvalue of A, find an eigenvector.", 
+    "statement_raw": "Consider the matrix\n\n:&lt;math>\n\\begin{align}\nA=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nFor each eigenvalue of A, find an eigenvector.\n", 
+    "term": "April", 
+    "topics": [
+        "Eigenvalues_and_eigenvectors"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_04_(b)", 
+    "year": 2012
 }

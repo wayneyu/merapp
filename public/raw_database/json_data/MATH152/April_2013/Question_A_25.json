@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_A_25", 
+    "answer_html": "<p>and hence every <strong>nonzero</strong> vector <em>v</em> is an eigenvector.</p>\n", 
+    "answer_latex": "and hence every \\textbf{nonzero} vector \\emph{v} is an eigenvector.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH152", 
-    "statement": "What are the eigenvalues and eigenvectors of the matrix \\emph{A} below?\n\n$A = \\begin{bmatrix}\n0 & 0 & 0 \\\\\n0 & 0 & 0 \\\\\n0 & 0 & 0 \n\\end{bmatrix}$", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Eigenvalues are the roots of the characteristic polynomial given by <span class=\"math\">\\(\\det(A-\\lambda I)\\)</span>. For the eigenvectors, observe what happens when you take a vector <em>v</em> and multiply it by your matrix.</p>\n"
+    ], 
+    "hints_latex": [
+        "Eigenvalues are the roots of the characteristic polynomial given by\n$\\det(A-\\lambda I)$. For the eigenvectors, observe what happens when you\ntake a vector \\emph{v} and multiply it by your matrix."
+    ], 
+    "hints_raw": [
+        "Eigenvalues are the roots of the characteristic polynomial given by &lt;math>\\det(A-\\lambda I)&lt;/math>. For the eigenvectors, observe what happens when you take a vector ''v'' and multiply it by your matrix.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "A 25", 
+    "rating": 79, 
+    "sols_html": [
+        "<p>Notice that</p>\n<p><span class=\"math\">\\(\\det(A-I\\lambda)\n= \\det\\left( \\begin{bmatrix}\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \n\\end{bmatrix}\n-\\begin{bmatrix}\n\\lambda &amp; 0 &amp; 0 \\\\\n0 &amp; \\lambda &amp; 0 \\\\\n0 &amp; 0 &amp; \\lambda \n\\end{bmatrix}\n\\right)\n= -\\lambda^{3}\\)</span></p>\n<p>and the roots of this polynomial are <span class=\"math\">\\(\\lambda =0\\)</span>. This is a triple root and so this is the only eigenvalue. Next, for any vector <em>v</em>, we have</p>\n<p><span class=\"math\">\\(Av = 0 = 0v\\)</span></p>\n<p>and hence every <strong>nonzero</strong> vector <em>v</em> is an eigenvector.</p>\n"
+    ], 
+    "sols_latex": [
         "Notice that\n\n$\\det(A-I\\lambda)\n= \\det\\left( \\begin{bmatrix}\n0 & 0 & 0 \\\\\n0 & 0 & 0 \\\\\n0 & 0 & 0 \n\\end{bmatrix}\n-\\begin{bmatrix}\n\\lambda & 0 & 0 \\\\\n0 & \\lambda & 0 \\\\\n0 & 0 & \\lambda \n\\end{bmatrix}\n\\right)\n= -\\lambda^{3}$\n\nand the roots of this polynomial are $\\lambda =0$. This is a triple root\nand so this is the only eigenvalue. Next, for any vector \\emph{v}, we\nhave\n\n$Av = 0 = 0v$\n\nand hence every \\textbf{nonzero} vector \\emph{v} is an eigenvector."
     ], 
-    "hints": [
-        "Eigenvalues are the roots of the characteristic polynomial given by\n$\\det(A-\\lambda I)$. For the eigenvectors, observe what happens when you\ntake a vector \\emph{v} and multiply it by your matrix."
-    ]
+    "sols_raw": [
+        "Notice that \n\n&lt;math>\\det(A-I\\lambda)\n= \\det\\left( \\begin{bmatrix}\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \n\\end{bmatrix}\n-\\begin{bmatrix}\n\\lambda &amp; 0 &amp; 0 \\\\\n0 &amp; \\lambda &amp; 0 \\\\\n0 &amp; 0 &amp; \\lambda \n\\end{bmatrix}\n\\right)\n= -\\lambda^{3}\n&lt;/math>\n\nand the roots of this polynomial are &lt;math>\\lambda =0 &lt;/math>. This is a triple root and so this is the only eigenvalue. Next, for any vector ''v'', we have\n\n&lt;math> Av = 0 = 0v &lt;/math>\n\nand hence every '''nonzero''' vector ''v'' is an eigenvector.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>What are the eigenvalues and eigenvectors of the matrix <em>A</em> below?</p>\n<p><span class=\"math\">\\(A = \\begin{bmatrix}\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \n\\end{bmatrix}\\)</span></p>\n", 
+    "statement_latex": "What are the eigenvalues and eigenvectors of the matrix \\emph{A} below?\n\n$A = \\begin{bmatrix}\n0 & 0 & 0 \\\\\n0 & 0 & 0 \\\\\n0 & 0 & 0 \n\\end{bmatrix}$", 
+    "statement_raw": "What are the eigenvalues and eigenvectors of the matrix ''A'' below?\n\n&lt;math>\nA = \\begin{bmatrix}\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \\\\\n0 &amp; 0 &amp; 0 \n\\end{bmatrix}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Eigenvalues_and_eigenvectors"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_25", 
+    "year": 2013
 }

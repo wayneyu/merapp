@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(n)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10\\)</span></p>\n", 
+    "answer_latex": "$\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10$", 
+    "contributors": [
+        "Konradbe", 
+        "Alfred"
+    ], 
     "course": "MATH100", 
-    "statement": "Find $\\displaystyle f(t)$, if\n$\\displaystyle f''(t) = \\frac{3}{\\sqrt{t}}$, $\\displaystyle f(4) = 2$\nand $\\displaystyle f'(4) = 7$", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use antidifferentiation of the power rule to find <em>f</em>. Don&#8217;t forget your constants.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use antidifferentiation of the power rule to find \\emph{f}. Don't forget\nyour constants."
+    ], 
+    "hints_raw": [
+        "Use antidifferentiation of the power rule to find ''f''. Don't forget your constants.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (n)", 
+    "rating": 83, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(\\displaystyle f&#39;&#39;(t) = \\frac{3}{\\sqrt{t}}\\)</span>, then antidifferentiating gives</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(t) = 6\\sqrt{t} + C\\)</span>. Since <span class=\"math\">\\(\\displaystyle f&#39;(4) = 7\\)</span>, we have that</p>\n<p><span class=\"math\">\\(\\displaystyle 7 = f&#39;(4) = 6\\sqrt{4} + C = 12 + C\\)</span></p>\n<p>and hence <em>C</em>=-5. Thus</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(t) = 6\\sqrt{t} -5\\)</span></p>\n<p>and antidifferentiating once more gives</p>\n<p><span class=\"math\">\\(\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t + D\\)</span></p>\n<p>Since <span class=\"math\">\\(\\displaystyle f(4) = 2\\)</span>, we see that</p>\n<p><span class=\"math\">\\(\\displaystyle 2 = f(4) = 4\\sqrt{4}^{3} -5(4) + D = 12 + D\\)</span></p>\n<p>and so <em>D</em>=-10. Thus, the function we seek is</p>\n<p><span class=\"math\">\\(\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "If $\\displaystyle f''(t) = \\frac{3}{\\sqrt{t}}$, then antidifferentiating\ngives\n\n$\\displaystyle f'(t) = 6\\sqrt{t} + C$. Since $\\displaystyle f'(4) = 7$,\nwe have that\n\n$\\displaystyle 7 = f'(4) = 6\\sqrt{4} + C = 12 + C$\n\nand hence \\emph{C}=-5. Thus\n\n$\\displaystyle f'(t) = 6\\sqrt{t} -5$\n\nand antidifferentiating once more gives\n\n$\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t + D$\n\nSince $\\displaystyle f(4) = 2$, we see that\n\n$\\displaystyle 2 = f(4) = 4\\sqrt{4}^{3} -5(4) + D = 12 + D$\n\nand so \\emph{D}=-10. Thus, the function we seek is\n\n$\\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10$"
     ], 
-    "hints": [
-        "Use antidifferentiation of the power rule to find \\emph{f}. Don't forget\nyour constants."
-    ]
+    "sols_raw": [
+        "If &lt;math> \\displaystyle f''(t) = \\frac{3}{\\sqrt{t}} &lt;/math>, then antidifferentiating gives \n\n&lt;math> \\displaystyle f'(t) = 6\\sqrt{t} + C &lt;/math>. Since &lt;math> \\displaystyle f'(4) = 7 &lt;/math>, we have that\n\n&lt;math> \\displaystyle 7 = f'(4) = 6\\sqrt{4} + C = 12 + C &lt;/math>\n\nand hence ''C''=-5. Thus\n\n&lt;math> \\displaystyle f'(t) = 6\\sqrt{t} -5 &lt;/math>\n\nand antidifferentiating once more gives\n\n&lt;math> \\displaystyle f(t) = 4\\sqrt{t}^{3} -5t + D &lt;/math>\n\nSince &lt;math> \\displaystyle f(4) = 2 &lt;/math>, we see that \n\n&lt;math> \\displaystyle 2 = f(4) = 4\\sqrt{4}^{3} -5(4) + D = 12 + D &lt;/math>\n\nand so ''D''=-10. Thus, the function we seek is \n\n&lt;math> \\displaystyle f(t) = 4\\sqrt{t}^{3} -5t - 10 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find <span class=\"math\">\\(\\displaystyle f(t)\\)</span>, if <span class=\"math\">\\(\\displaystyle f&#39;&#39;(t) = \\frac{3}{\\sqrt{t}}\\)</span>, <span class=\"math\">\\(\\displaystyle f(4) = 2\\)</span> and <span class=\"math\">\\(\\displaystyle f&#39;(4) = 7\\)</span></p>\n", 
+    "statement_latex": "Find $\\displaystyle f(t)$, if\n$\\displaystyle f''(t) = \\frac{3}{\\sqrt{t}}$, $\\displaystyle f(4) = 2$\nand $\\displaystyle f'(4) = 7$", 
+    "statement_raw": "Find &lt;math> \\displaystyle f(t) &lt;/math>, if &lt;math> \\displaystyle f''(t) = \\frac{3}{\\sqrt{t}} &lt;/math>, &lt;math> \\displaystyle f(4) = 2 &lt;/math> and &lt;math> \\displaystyle f'(4) = 7 &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(n)", 
+    "year": 2010
 }

@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH220", 
-    "statement": "State De Morgan's laws (in the context of sets).", 
-    "year": 2011, 
-    "sols": [
-        "De Morgan's laws are, for sets $X, Y \\subseteq Z$ the following.\n\n\\begin{align*}(X \\cup Y)^c = X^c \\cap Y^c\\end{align*}\n\nand\n\n\\begin{align*}(X \\cap Y)^c = X^c \\cup Y^c\\end{align*}\n\nHere the c indicates the complement of the set."
+    "answer_html": "<p><span class=\"math\">\\((X \\cap Y)^c=X^c \\cup Y^c\\)</span> Here the c indicates the complement of the set.</p>\n", 
+    "answer_latex": " $(X \\cap Y)^c=X^c \\cup Y^c$ Here the c indicates the complement of the set.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>De Morgan&#8217;s laws are about the intersections, unions, and complements of sets.</p>\n"
+    ], 
+    "hints_latex": [
         "De Morgan's laws are about the intersections, unions, and complements of\nsets."
-    ]
+    ], 
+    "hints_raw": [
+        "De Morgan's laws are about the intersections, unions, and complements of sets.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (a)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>De Morgan&#8217;s laws are, for sets <span class=\"math\">\\(X, Y \\subseteq Z\\)</span> the following.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(X \\cup Y)^c = X^c \\cap Y^c\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(X \\cap Y)^c = X^c \\cup Y^c\\end{aligned}\\]</span></p>\n<p>Here the c indicates the complement of the set.</p>\n"
+    ], 
+    "sols_latex": [
+        "De Morgan's laws are, for sets $X, Y \\subseteq Z$ the following.\n\n\\begin{align*}\n(X \\cup Y)^c = X^c \\cap Y^c\n\\end{align*}\n\nand\n\n\\begin{align*}\n(X \\cap Y)^c = X^c \\cup Y^c\n\\end{align*}\n\nHere the c indicates the complement of the set."
+    ], 
+    "sols_raw": [
+        "De Morgan's laws are, for sets &lt;math>X, Y \\subseteq Z&lt;/math> the following.\n\n:&lt;math>(X \\cup Y)^c = X^c \\cap Y^c&lt;/math>\n\nand\n\n:&lt;math>(X \\cap Y)^c = X^c \\cup Y^c&lt;/math>\n\nHere the c indicates the complement of the set.\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p>State De Morgan&#8217;s laws (in the context of sets).</p>\n", 
+    "statement_latex": "State De Morgan's laws (in the context of sets).", 
+    "statement_raw": "State De Morgan's laws (in the context of sets).\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_01_(a)", 
+    "year": 2011
 }

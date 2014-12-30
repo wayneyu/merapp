@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_A_07", 
-    "course": "MATH152", 
-    "statement": "Find the inverse of the matrix\n\n\\begin{align*}\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}.\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "We see from the hint that the formula for an inverse of $2\\times{2}$\nmatrices of the form\n\n\\begin{align*}A=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\end{align*}\n\nis\n\n\\begin{align*}A^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\end{align*}\n\nIn this example we have\n\n\\begin{align*}A=\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}\\end{align*}\n\nand so\n\n\\begin{align*}\\displaystyle{}\\text{det}(A)=1-2=-1.\\end{align*}\n\nTherefore we have that\n\n\\begin{align*}A^{-1}=-1\n\\begin{bmatrix}\n1  &  -2\\\\\n-1  &  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &  2\\\\\n1  &  -1\n\\end{bmatrix}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A^{-1}=\\begin{bmatrix}\n-1    2\\\\\n1    -1\n\\end{bmatrix}.\\)</span></p>\n", 
+    "answer_latex": " $A^{-1}=\\begin{bmatrix}\n-1    2\\\\\n1    -1\n\\end{bmatrix}.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
-        "There is a formula for the inverse of a $2\\times{}2$ matrix in the form\n\n$A=\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}$\n\nwhich is\n\n\\begin{align*}A^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\end{align*}\n\nIf you can compute the determinant of A then the inverse can be written\ndown immediately."
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>There is a formula for the inverse of a <span class=\"math\">\\(2\\times{}2\\)</span> matrix in the form</p>\n<p><span class=\"math\">\\(A=\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\\)</span></p>\n<p>which is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>If you can compute the determinant of A then the inverse can be written down immediately.</p>\n"
+    ], 
+    "hints_latex": [
+        "There is a formula for the inverse of a $2\\times{}2$ matrix in the form\n\n$A=\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}$\n\nwhich is\n\n\\begin{align*}\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\n\\end{align*}\n\nIf you can compute the determinant of A then the inverse can be written\ndown immediately."
+    ], 
+    "hints_raw": [
+        "There is a formula for the inverse of a &lt;math>2\\times{}2&lt;/math> matrix in the form\n\n&lt;math>\nA=\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\n&lt;/math>\n\nwhich is\n\n:&lt;math>\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}.\n&lt;/math>\n\nIf you can compute the determinant of A then the inverse can be written down immediately.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 07", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>We see from the hint that the formula for an inverse of <span class=\"math\">\\(2\\times{2}\\)</span> matrices of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\n\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>In this example we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n1  &amp;  2\\\\\n1  &amp;  1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}\\text{det}(A)=1-2=-1.\\end{aligned}\\]</span></p>\n<p>Therefore we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA^{-1}=-1\n\\begin{bmatrix}\n1  &amp;  -2\\\\\n-1  &amp;  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &amp;  2\\\\\n1  &amp;  -1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We see from the hint that the formula for an inverse of $2\\times{2}$\nmatrices of the form\n\n\\begin{align*}\nA=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\n\\end{align*}\n\nis\n\n\\begin{align*}\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\n\\end{align*}\n\nIn this example we have\n\n\\begin{align*}\nA=\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}\n\\end{align*}\n\nand so\n\n\\begin{align*}\n\\displaystyle{}\\text{det}(A)=1-2=-1.\n\\end{align*}\n\nTherefore we have that\n\n\\begin{align*}\nA^{-1}=-1\n\\begin{bmatrix}\n1  &  -2\\\\\n-1  &  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &  2\\\\\n1  &  -1\n\\end{bmatrix}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We see from the hint that the formula for an inverse of &lt;math>2\\times{2}&lt;/math> matrices of the form\n\n:&lt;math>\nA=\n\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\n&lt;/math>\n\nis\n\n:&lt;math>\nA^{-1}=\\frac{1}{\\text{det}(A)}\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}\n&lt;/math>.\n\nIn this example we have\n\n:&lt;math>\nA=\\begin{bmatrix}\n1  &amp;  2\\\\\n1  &amp;  1\n\\end{bmatrix}\n&lt;/math>\n\nand so\n\n:&lt;math>\n\\displaystyle{}\\text{det}(A)=1-2=-1.\n&lt;/math>\n\nTherefore we have that\n\n:&lt;math>\nA^{-1}=-1\n\\begin{bmatrix}\n1  &amp;  -2\\\\\n-1  &amp;  1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n-1  &amp;  2\\\\\n1  &amp;  -1\n\\end{bmatrix}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Find the inverse of the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1  &amp;  2\\\\\n1  &amp;  1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the inverse of the matrix\n\n\\begin{align*}\n\\begin{bmatrix}\n1  &  2\\\\\n1  &  1\n\\end{bmatrix}.\n\\end{align*}", 
+    "statement_raw": "Find the inverse of the matrix\n\n:&lt;math>\n\\begin{bmatrix}\n1  &amp;  2\\\\\n1  &amp;  1\n\\end{bmatrix}\n&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_07", 
+    "year": 2010
 }

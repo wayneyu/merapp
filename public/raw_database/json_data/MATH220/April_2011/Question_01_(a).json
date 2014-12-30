@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH220", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle f : A \\to B\\end{align*} be a function and let\n\n\\begin{align*}C \\subseteq A\\end{align*} and $D \\subseteq B$. Define the sets\n\n\\begin{align*}\\displaystyle f^{-1} (D)\\end{align*} and $\\displaystyle f (C)$.", 
-    "year": 2011, 
-    "sols": [
-        "\\begin{align*}f^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}\\end{align*}\n\nand\n\n\\begin{align*}f(C) = \\{ f(c)\\mid c\\in C \\}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f(C)=\\{ f(c)\\mid c\\in C \\}.\\)</span></p>\n", 
+    "answer_latex": " $f(C)=\\{ f(c)\\mid c\\in C \\}.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "SimonRose", 
+        "CameronChristou", 
+        "Konradbe", 
+        "CindyBlois"
     ], 
-    "hints": [
-        "Recall that\n\n\\begin{align*}\\displaystyle f^{-1}(D)\\end{align*}\n\nis the pre-image of the set $D$, that is the set containing all the\nelements that are mapped by $f$ into the set $D$ and that\n\n\\begin{align*}\\displaystyle f(C)\\end{align*}\n\nis the image of the set $C$, that is the set all the images of elements\nof the set $C$."
-    ]
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f^{-1}(D)\\end{aligned}\\]</span></p>\n<p>is the pre-image of the set <span class=\"math\">\\(D\\)</span>, that is the set containing all the elements that are mapped by <span class=\"math\">\\(f\\)</span> into the set <span class=\"math\">\\(D\\)</span> and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(C)\\end{aligned}\\]</span></p>\n<p>is the image of the set <span class=\"math\">\\(C\\)</span>, that is the set all the images of elements of the set <span class=\"math\">\\(C\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that\n\n\\begin{align*}\n\\displaystyle f^{-1}(D)\n\\end{align*}\n\nis the pre-image of the set $D$, that is the set containing all the\nelements that are mapped by $f$ into the set $D$ and that\n\n\\begin{align*}\n\\displaystyle f(C)\n\\end{align*}\n\nis the image of the set $C$, that is the set all the images of elements\nof the set $C$."
+    ], 
+    "hints_raw": [
+        "Recall that\n\n:&lt;math>\\displaystyle f^{-1}(D) &lt;/math>\n\nis the pre-image of the set &lt;math> D &lt;/math>, that is the set containing all the elements that are mapped by &lt;math>f&lt;/math> into the set &lt;math>D&lt;/math> and that\n\n:&lt;math>\\displaystyle f(C) &lt;/math>\n\nis the image of the set &lt;math> C &lt;/math>, that is the set all the images of elements of the set &lt;math>C&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p><span class=\"math\">\\[\\begin{aligned}\nf^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(C) = \\{ f(c)\\mid c\\in C \\}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{align*}\nf^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}\n\\end{align*}\n\nand\n\n\\begin{align*}\nf(C) = \\{ f(c)\\mid c\\in C \\}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        ":&lt;math>f^{-1}(D) = \\{ a \\in A \\mid f(a) \\in D \\}&lt;/math>\n\nand\n\n:&lt;math>f(C) = \\{ f(c)\\mid c\\in C \\}. &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f : A \\to B\\end{aligned}\\]</span></p>\n<p>be a function and let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nC \\subseteq A\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(D \\subseteq B\\)</span>. Define the sets</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f^{-1} (D)\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(\\displaystyle f (C)\\)</span>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle f : A \\to B\n\\end{align*} be a function and let\n\n\\begin{align*}\nC \\subseteq A\n\\end{align*} and $D \\subseteq B$. Define the sets\n\n\\begin{align*}\n\\displaystyle f^{-1} (D)\n\\end{align*} and $\\displaystyle f (C)$.", 
+    "statement_raw": "Let\n:&lt;math>\\displaystyle f : A \\to B &lt;/math>\nbe a function and let\n:&lt;math> C \\subseteq A &lt;/math> and &lt;math> D \\subseteq B &lt;/math>.\nDefine the sets\n:&lt;math>\\displaystyle f^{-1} (D)&lt;/math> and &lt;math>\\displaystyle f (C) &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Set_theory"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_01_(a)", 
+    "year": 2011
 }

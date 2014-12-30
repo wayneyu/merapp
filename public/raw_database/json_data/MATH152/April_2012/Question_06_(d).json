@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_06_(d)", 
-    "course": "MATH152", 
-    "statement": "This question requires little or no calculations.\n\nConsider a linear system of 3 equations with 5 unknowns. Answer\n\\textbf{True} or \\textbf{False} to each of the following statements (no\njustification required).\n\n(1) It always has at least one solution.\n\n(2) There is either no solution or infinitely many solutions.\n\n(3) If a solution exists, then there is precisely a 2-parameter family\nof solutions.\n\n(4) If the coefficient matrix has rank k, then the associated\nhomogeneous system as a k-parameter family of solutions.", 
-    "year": 2012, 
-    "sols": [
-        "(1) It always has at least one solution. (FALSE)\n\n(2) There is either no solution or infinitely many solutions. (TRUE)\n\n(3) If a solution exists, then there is precisely a 2-parameter family\nof solutions. (FALSE)\n\n(4) If the coefficient matrix has rank k, then the associated\nhomogeneous system as a k-parameter family of solutions. (FALSE)\n\nThe justification for each answer is given below.\n\n(1) is FALSE.\n\nConsider the following counter-example of three equations with five\nunknowns:\n\n\\begin{align*}x = 1,\\quad x = 2, \\quad x + y + z + u + v = 3\\end{align*} Clearly, this system\nis inconsistent. Hence (1) is FALSE by counter-example.\n\n(2) is TRUE.\n\nAs we saw in (1), it is possible that there is no solution. For the\nsecond part of the statement, assume that a solution exists. This\nsolution cannot be unique since any row-reduced echelon form of the\ncoefficient matrix admitting a solution has at least two free parameters\n(i.e. Rank of the matrix is at most 3, but there are 5 parameters).\nHence, if any solution exists, then infinitely many solutions must\nexist. Therefore (2) is true.\n\n(3) is FALSE.\n\nConsider the following example:\n\n\\begin{align*}\nx + y + z + u + v &= 0 \\\\\nx + y + z + u + v &= 0 \\\\\nx + y + z + u + v &= 0\\end{align*} In this example, there is a four-parameter family of\nsolutions since the associated coefficient matrix has rank 1.\n\n(4) is FALSE.\n\nSee (1) and (3) for counterexamples."
+    "answer_html": "<p><span class=\"math\">\\(x + y + z + u + v=0\\)</span> In this example, there is a four-parameter family of solutions since the associated coefficient matrix has rank 1.(4) is FALSE.See (1) and (3) for counterexamples.</p>\n", 
+    "answer_latex": " $x + y + z + u + v=0$  In this example, there is a four-parameter family of\nsolutions since the associated coefficient matrix has rank 1.(4) is FALSE.See (1) and (3) for counterexamples.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try to determine a counter-example first. If you find it difficult to determine one, the answer may be true.</p>\n"
+    ], 
+    "hints_latex": [
         "Try to determine a counter-example first. If you find it difficult to\ndetermine one, the answer may be true."
-    ]
+    ], 
+    "hints_raw": [
+        "Try to determine a counter-example first. If you find it difficult to determine one, the answer may be true.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "6 (d)", 
+    "rating": 93, 
+    "sols_html": [
+        "<p>(1) It always has at least one solution. (FALSE)</p>\n<p>(2) There is either no solution or infinitely many solutions. (TRUE)</p>\n<p>(3) If a solution exists, then there is precisely a 2-parameter family of solutions. (FALSE)</p>\n<p>(4) If the coefficient matrix has rank k, then the associated homogeneous system as a k-parameter family of solutions. (FALSE)</p>\n<p>The justification for each answer is given below.</p>\n<p>(1) is FALSE.</p>\n<p>Consider the following counter-example of three equations with five unknowns:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx = 1,\\quad x = 2, \\quad x + y + z + u + v = 3\\end{aligned}\\]</span></p>\n<p>Clearly, this system is inconsistent. Hence (1) is FALSE by counter-example.</p>\n<p>(2) is TRUE.</p>\n<p>As we saw in (1), it is possible that there is no solution. For the second part of the statement, assume that a solution exists. This solution cannot be unique since any row-reduced echelon form of the coefficient matrix admitting a solution has at least two free parameters (i.e. Rank of the matrix is at most 3, but there are 5 parameters). Hence, if any solution exists, then infinitely many solutions must exist. Therefore (2) is true.</p>\n<p>(3) is FALSE.</p>\n<p>Consider the following example:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx + y + z + u + v &amp;= 0 \\\\\nx + y + z + u + v &amp;= 0 \\\\\nx + y + z + u + v &amp;= 0\\end{aligned}\\]</span></p>\n<p>In this example, there is a four-parameter family of solutions since the associated coefficient matrix has rank 1.</p>\n<p>(4) is FALSE.</p>\n<p>See (1) and (3) for counterexamples.</p>\n"
+    ], 
+    "sols_latex": [
+        "(1) It always has at least one solution. (FALSE)\n\n(2) There is either no solution or infinitely many solutions. (TRUE)\n\n(3) If a solution exists, then there is precisely a 2-parameter family\nof solutions. (FALSE)\n\n(4) If the coefficient matrix has rank k, then the associated\nhomogeneous system as a k-parameter family of solutions. (FALSE)\n\nThe justification for each answer is given below.\n\n(1) is FALSE.\n\nConsider the following counter-example of three equations with five\nunknowns:\n\n\\begin{align*}\nx = 1,\\quad x = 2, \\quad x + y + z + u + v = 3\n\\end{align*} Clearly, this system\nis inconsistent. Hence (1) is FALSE by counter-example.\n\n(2) is TRUE.\n\nAs we saw in (1), it is possible that there is no solution. For the\nsecond part of the statement, assume that a solution exists. This\nsolution cannot be unique since any row-reduced echelon form of the\ncoefficient matrix admitting a solution has at least two free parameters\n(i.e. Rank of the matrix is at most 3, but there are 5 parameters).\nHence, if any solution exists, then infinitely many solutions must\nexist. Therefore (2) is true.\n\n(3) is FALSE.\n\nConsider the following example:\n\n\\begin{align*}\nx + y + z + u + v &= 0 \\\\\nx + y + z + u + v &= 0 \\\\\nx + y + z + u + v &= 0\n\\end{align*} In this example, there is a four-parameter family of\nsolutions since the associated coefficient matrix has rank 1.\n\n(4) is FALSE.\n\nSee (1) and (3) for counterexamples."
+    ], 
+    "sols_raw": [
+        "&lt;font style=\"color:blue;\">\n(1) It always has at least one solution. (FALSE)\n\n(2) There is either no solution or infinitely many solutions. (TRUE)\n\n(3) If a solution exists, then there is precisely a 2-parameter family of solutions. (FALSE)\n\n(4) If the coefficient matrix has rank k, then the associated homogeneous system as a k-parameter family of solutions. (FALSE)\n&lt;/font>\n\n&lt;i>The justification for each answer is given below&lt;/i>.\n\n&lt;b>(1) is FALSE. &lt;/b>\n\nConsider the following counter-example of three equations with five unknowns:\n:&lt;math>\nx = 1,\\quad x = 2, \\quad x + y + z + u + v = 3\n&lt;/math>\nClearly, this system is inconsistent. Hence (1) is FALSE by counter-example.\n\n&lt;b>(2) is TRUE.&lt;/b>\n\nAs we saw in (1), it is possible that there is no solution. For the second part of the statement, assume that a solution exists. This solution cannot be unique since any row-reduced echelon form of the coefficient matrix admitting a solution has at least two free parameters (i.e. Rank of the matrix is at most 3, but there are 5 parameters). Hence, if any solution exists, then infinitely many solutions must exist. Therefore (2) is true.\n\n&lt;b>(3) is FALSE.&lt;/b>\n\nConsider the following example:\n:&lt;math>\n\\begin{align}\nx + y + z + u + v &amp;= 0 \\\\\nx + y + z + u + v &amp;= 0 \\\\\nx + y + z + u + v &amp;= 0\n\\end{align}\n&lt;/math>\nIn this example, there is a four-parameter family of solutions since the associated coefficient matrix has rank 1.\n\n&lt;b>(4) is FALSE.&lt;/b>\n\nSee (1) and (3) for counterexamples.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>This question requires little or no calculations.</p>\n<p>Consider a linear system of 3 equations with 5 unknowns. Answer <strong>True</strong> or <strong>False</strong> to each of the following statements (no justification required).</p>\n<p>(1) It always has at least one solution.</p>\n<p>(2) There is either no solution or infinitely many solutions.</p>\n<p>(3) If a solution exists, then there is precisely a 2-parameter family of solutions.</p>\n<p>(4) If the coefficient matrix has rank k, then the associated homogeneous system as a k-parameter family of solutions.</p>\n", 
+    "statement_latex": "This question requires little or no calculations.\n\nConsider a linear system of 3 equations with 5 unknowns. Answer\n\\textbf{True} or \\textbf{False} to each of the following statements (no\njustification required).\n\n(1) It always has at least one solution.\n\n(2) There is either no solution or infinitely many solutions.\n\n(3) If a solution exists, then there is precisely a 2-parameter family\nof solutions.\n\n(4) If the coefficient matrix has rank k, then the associated\nhomogeneous system as a k-parameter family of solutions.", 
+    "statement_raw": "This question requires little or no calculations.\n\nConsider a linear system of 3 equations with 5 unknowns.  Answer '''True''' or '''False''' to each of the following statements (no justification required).\n\n(1) It always has at least one solution.\n\n(2) There is either no solution or infinitely many solutions.\n\n(3) If a solution exists, then there is precisely a 2-parameter family of solutions.\n\n(4) If the coefficient matrix has rank k, then the associated homogeneous system as a k-parameter family of solutions.\n", 
+    "term": "April", 
+    "topics": [
+        "System_of_linear_equations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_06_(d)", 
+    "year": 2012
 }

@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence\n$\\left(\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} \\right)_{n \\geq 1}$\nconverge? If it does, calculate the limit.", 
-    "year": 2013, 
-    "sols": [
-        "Proceeding as in the hint, we have\n\n\\begin{align*}\n\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} &= \\frac{n^3(1 + \\tfrac{2}{n^3})}{\\sqrt{n^6(1+\\tfrac{3}{n^6})} + \\sqrt[3]{27n^9(1 + \\tfrac{1}{27n^9})}} \\\\\n&= \\frac{n^3(1 + \\tfrac{2}{n^3})} {n^3\\sqrt{(1+\\tfrac{3}{n^6})} + 3n^3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} \\\\\n&= \\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}}\\end{align*}\n\nTaking the limit as \\emph{n} tends to infinity in the last equality\nabove yields\n\n$\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\lim_{n \\to \\infty}\\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} = \\frac{1}{1 + 3} = \\frac{1}{4}$\n\nand so the sequence converges to one fourth."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\frac{1}{4}\\)</span>and so the sequence converges to one fourth.</p>\n", 
+    "answer_latex": "$\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\frac{1}{4}$and so the sequence converges to one fourth.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Don&#8217;t let the square and cube roots fool you! This is still essentially a polynomial divided by a polynomial so factor out the largest power of <em>n</em> in both the numerator and the denominator.</p>\n", 
+        "<p>What are the dominant terms when <span class=\"math\">\\(n\\)</span> is large?</p>\n"
+    ], 
+    "hints_latex": [
         "Don't let the square and cube roots fool you! This is still essentially\na polynomial divided by a polynomial so factor out the largest power of\n\\emph{n} in both the numerator and the denominator.", 
         "What are the dominant terms when $n$ is large?"
-    ]
+    ], 
+    "hints_raw": [
+        "Don't let the square and cube roots fool you! This is still essentially a polynomial divided by a polynomial so factor out the largest power of ''n'' in both the numerator and the denominator.\n", 
+        "What are the dominant terms when &lt;math> n &lt;/math> is large?\n"
+    ], 
+    "num_votes": 17, 
+    "question": "1 (b)", 
+    "rating": 51, 
+    "sols_html": [
+        "<p>Proceeding as in the hint, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} &amp;= \\frac{n^3(1 + \\tfrac{2}{n^3})}{\\sqrt{n^6(1+\\tfrac{3}{n^6})} + \\sqrt[3]{27n^9(1 + \\tfrac{1}{27n^9})}} \\\\\n&amp;= \\frac{n^3(1 + \\tfrac{2}{n^3})} {n^3\\sqrt{(1+\\tfrac{3}{n^6})} + 3n^3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} \\\\\n&amp;= \\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}}\\end{aligned}\\]</span></p>\n<p>Taking the limit as <em>n</em> tends to infinity in the last equality above yields</p>\n<p><span class=\"math\">\\(\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\lim_{n \\to \\infty}\\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} = \\frac{1}{1 + 3} = \\frac{1}{4}\\)</span></p>\n<p>and so the sequence converges to one fourth.</p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as in the hint, we have\n\n\\begin{align*}\n\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} &= \\frac{n^3(1 + \\tfrac{2}{n^3})}{\\sqrt{n^6(1+\\tfrac{3}{n^6})} + \\sqrt[3]{27n^9(1 + \\tfrac{1}{27n^9})}} \\\\\n&= \\frac{n^3(1 + \\tfrac{2}{n^3})} {n^3\\sqrt{(1+\\tfrac{3}{n^6})} + 3n^3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} \\\\\n&= \\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}}\n\\end{align*}\n\nTaking the limit as \\emph{n} tends to infinity in the last equality\nabove yields\n\n$\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\lim_{n \\to \\infty}\\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} = \\frac{1}{1 + 3} = \\frac{1}{4}$\n\nand so the sequence converges to one fourth."
+    ], 
+    "sols_raw": [
+        "Proceeding as in the hint, we have\n\n&lt;math>\n\\begin{align}\n\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} &amp;= \\frac{n^3(1 + \\tfrac{2}{n^3})}{\\sqrt{n^6(1+\\tfrac{3}{n^6})} + \\sqrt[3]{27n^9(1 + \\tfrac{1}{27n^9})}} \\\\\n&amp;= \\frac{n^3(1 + \\tfrac{2}{n^3})} {n^3\\sqrt{(1+\\tfrac{3}{n^6})} + 3n^3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} \\\\\n&amp;= \\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}}\n\\end{align}\n&lt;/math>\n\nTaking the limit as ''n'' tends to infinity in the last equality above yields \n\n&lt;math>\n\\lim_{n \\to \\infty} \\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} = \\lim_{n \\to \\infty}\\frac{1 + \\tfrac{2}{n^3}} {\\sqrt{(1+\\tfrac{3}{n^6})} + 3\\sqrt[3]{(1 + \\tfrac{1}{27n^9})}} = \\frac{1}{1 + 3} = \\frac{1}{4}\n&lt;/math>\n\nand so the sequence converges to one fourth.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)</strong></p>\n<p>Does the sequence <span class=\"math\">\\(\\left(\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} \\right)_{n \\geq 1}\\)</span> converge? If it does, calculate the limit.</p>\n", 
+    "statement_latex": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence\n$\\left(\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} \\right)_{n \\geq 1}$\nconverge? If it does, calculate the limit.", 
+    "statement_raw": "'''Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)'''\n\nDoes the sequence &lt;math> \\left(\\frac{n^3 + 2}{\\sqrt{n^6+3} + \\sqrt[3]{27n^9 + 1}} \\right)_{n \\geq 1} &lt;/math> converge? If it does, calculate the limit.\n", 
+    "term": "April", 
+    "topics": [
+        "Sequences"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_01_(b)", 
+    "year": 2013
 }

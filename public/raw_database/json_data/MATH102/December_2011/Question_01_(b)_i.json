@@ -1,14 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)_i", 
-    "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nConsider the curve\n\n\\begin{align*}\\displaystyle\ne^{2x}+y(1-x)=1\\end{align*} Find $\\frac{dy}{dx}$ at the point \\emph{x} = 0.", 
-    "year": 2011, 
-    "sols": [
-        "To do this problem, we rearrange the equation to isolate $y$ and then\ntake the derivative of $y$ with respect to $x$:\n\n\\begin{align*}\ne^{2x} + y(1 - x) = 1 \\\\\n\\rightarrow \\quad y = \\frac{1 - e^{2x}}{1 - x}\\end{align*}\n\nUsing the quotient rule, we evaluate $dy/dx$ and we are done:\n\n\\begin{align*}\n\\frac{dy}{dx} = \\frac{(-2e^{2x})(1-x) - (-1)(1 - e^{2x})}{(1-x)^{2}} = \\frac{-3e^{2x}+2xe^{2x}+1}{(x-1)^{2}}.\\end{align*}\n\nHence, at \\emph{x = 0} we obtain\n\n\\begin{align*}\\frac{dy}{dx}(0) = \\frac{-3e^{0}+0+1}{(-1)^2} = -2\\end{align*}", 
-        "We can also use implicit differentiation. By differentiating with\nrespect to \\emph{x} we obtain:\n\n\\begin{align*}2e^{2x} + \\frac{dy}{dx}(1-x) + y(-1) = 0\\end{align*} (Watch out for the product\nrule on the term \\emph{y}(1-\\emph{x}))\n\nThe difference is that we need to know the value of \\emph{y} when\n\\emph{x} = 0, but if we plug that in the original equation we obtain\n\n\\begin{align*}\\displaystyle\ne^0 + y(1-0) = 1\\end{align*} and so we have that \\emph{y} = 0. We use this in what\nwe obtained by differentiating implicitly:\n\n\\begin{align*}2e^0 + \\frac{dy}{dx} + 0 = 0\\end{align*} and so we have that\n\n\\begin{align*}\\frac{dy}{dx}(0) = -2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dy}{dx}(0)=-2\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dy}{dx}(0)=-2$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "ChristinaKoch", 
+        "Konradbe", 
+        "YihanWu"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>You can either use implicit differentiation or solve for <em>y</em>.</p>\n<p>Give it a try, we provide a solution for each method.</p>\n"
+    ], 
+    "hints_latex": [
         "You can either use implicit differentiation or solve for \\emph{y}.\n\nGive it a try, we provide a solution for each method."
-    ]
+    ], 
+    "hints_raw": [
+        "You can either use implicit differentiation or solve for ''y''.\n\nGive it a try, we provide a solution for each method.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b) i", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>To do this problem, we rearrange the equation to isolate <span class=\"math\">\\(y\\)</span> and then take the derivative of <span class=\"math\">\\(y\\)</span> with respect to <span class=\"math\">\\(x\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{2x} + y(1 - x) = 1 \\\\\n\\rightarrow \\quad y = \\frac{1 - e^{2x}}{1 - x}\\end{aligned}\\]</span></p>\n<p>Using the quotient rule, we evaluate <span class=\"math\">\\(dy/dx\\)</span> and we are done:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = \\frac{(-2e^{2x})(1-x) - (-1)(1 - e^{2x})}{(1-x)^{2}} = \\frac{-3e^{2x}+2xe^{2x}+1}{(x-1)^{2}}.\\end{aligned}\\]</span></p>\n<p>Hence, at <em>x = 0</em> we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx}(0) = \\frac{-3e^{0}+0+1}{(-1)^2} = -2\\end{aligned}\\]</span></p>\n", 
+        "<p>We can also use implicit differentiation. By differentiating with respect to <em>x</em> we obtain:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2e^{2x} + \\frac{dy}{dx}(1-x) + y(-1) = 0\\end{aligned}\\]</span></p>\n<p>(Watch out for the product rule on the term <em>y</em>(1-<em>x</em>))</p>\n<p>The difference is that we need to know the value of <em>y</em> when <em>x</em> = 0, but if we plug that in the original equation we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ne^0 + y(1-0) = 1\\end{aligned}\\]</span></p>\n<p>and so we have that <em>y</em> = 0. We use this in what we obtained by differentiating implicitly:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2e^0 + \\frac{dy}{dx} + 0 = 0\\end{aligned}\\]</span></p>\n<p>and so we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx}(0) = -2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To do this problem, we rearrange the equation to isolate $y$ and then\ntake the derivative of $y$ with respect to $x$:\n\n\\begin{align*}\ne^{2x} + y(1 - x) = 1 \\\\\n\\rightarrow \\quad y = \\frac{1 - e^{2x}}{1 - x}\n\\end{align*}\n\nUsing the quotient rule, we evaluate $dy/dx$ and we are done:\n\n\\begin{align*}\n\\frac{dy}{dx} = \\frac{(-2e^{2x})(1-x) - (-1)(1 - e^{2x})}{(1-x)^{2}} = \\frac{-3e^{2x}+2xe^{2x}+1}{(x-1)^{2}}.\n\\end{align*}\n\nHence, at \\emph{x = 0} we obtain\n\n\\begin{align*}\n\\frac{dy}{dx}(0) = \\frac{-3e^{0}+0+1}{(-1)^2} = -2\n\\end{align*}", 
+        "We can also use implicit differentiation. By differentiating with\nrespect to \\emph{x} we obtain:\n\n\\begin{align*}\n2e^{2x} + \\frac{dy}{dx}(1-x) + y(-1) = 0\n\\end{align*} (Watch out for the product\nrule on the term \\emph{y}(1-\\emph{x}))\n\nThe difference is that we need to know the value of \\emph{y} when\n\\emph{x} = 0, but if we plug that in the original equation we obtain\n\n\\begin{align*}\n\\displaystyle\ne^0 + y(1-0) = 1\n\\end{align*} and so we have that \\emph{y} = 0. We use this in what\nwe obtained by differentiating implicitly:\n\n\\begin{align*}\n2e^0 + \\frac{dy}{dx} + 0 = 0\n\\end{align*} and so we have that\n\n\\begin{align*}\n\\frac{dy}{dx}(0) = -2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To do this problem, we rearrange the equation to isolate &lt;math>y&lt;/math> and then take the derivative of &lt;math>y&lt;/math> with respect to &lt;math>x&lt;/math>:\n\n:&lt;math>\n\\begin{align}\ne^{2x} + y(1 - x) = 1 \\\\\n\\rightarrow \\quad y = \\frac{1 - e^{2x}}{1 - x}\n\\end{align}\n&lt;/math>\n\nUsing the quotient rule, we evaluate &lt;math>dy/dx&lt;/math> and we are done:\n\n:&lt;math>\n\\begin{align}\n\\frac{dy}{dx} = \\frac{(-2e^{2x})(1-x) - (-1)(1 - e^{2x})}{(1-x)^{2}} = \\frac{-3e^{2x}+2xe^{2x}+1}{(x-1)^{2}}.\n\\end{align}\n&lt;/math>\n\nHence, at ''x = 0'' we obtain\n:&lt;math>\n\\frac{dy}{dx}(0) = \\frac{-3e^{0}+0+1}{(-1)^2} = -2\n&lt;/math>\n", 
+        "We can also use implicit differentiation. By differentiating with respect to ''x'' we obtain:\n\n:&lt;math>\n2e^{2x} + \\frac{dy}{dx}(1-x) + y(-1) = 0\n&lt;/math>\n(Watch out for the product rule on the term ''y''(1-''x''))\n\nThe difference is that we need to know the value of ''y'' when ''x'' = 0, but if we plug that in the original equation we obtain\n:&lt;math>\\displaystyle\ne^0 + y(1-0) = 1\n&lt;/math>\nand so we have that ''y'' = 0. We use this in what we obtained by differentiating implicitly:\n:&lt;math>\n2e^0 + \\frac{dy}{dx} + 0 = 0\n&lt;/math>\nand so we have that\n:&lt;math>\n\\frac{dy}{dx}(0) = -2\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> A correct answer in the box gives full marks. For partial marks work needs to be shown.</em></p>\n<p>Consider the curve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ne^{2x}+y(1-x)=1\\end{aligned}\\]</span></p>\n<p>Find <span class=\"math\">\\(\\frac{dy}{dx}\\)</span> at the point <em>x</em> = 0.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nConsider the curve\n\n\\begin{align*}\n\\displaystyle\ne^{2x}+y(1-x)=1\n\\end{align*} Find $\\frac{dy}{dx}$ at the point \\emph{x} = 0.", 
+    "statement_raw": "'''''Short-Answer Questions.''' A correct answer in the box gives full marks. For partial marks work needs to be shown.''\n\nConsider the curve\n:&lt;math>\\displaystyle\ne^{2x}+y(1-x)=1\n&lt;/math>\nFind &lt;math> \\frac{dy}{dx} &lt;/math> at the point ''x'' = 0.\n", 
+    "term": "December", 
+    "topics": [
+        "Implicit_differentiation", 
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_01_(b)_i", 
+    "year": 2011
 }

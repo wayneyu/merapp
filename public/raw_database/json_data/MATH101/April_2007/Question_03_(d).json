@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_03_(d)", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx$", 
-    "year": 2007, 
-    "sols": [
-        "Notice that\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &= \\int (\\cos^{2} x)(\\sin^{4} x)\\cos x \\, dx \\\\\n&=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx\\end{align*}\n\nSo let $u = \\sin x$ so $du = (\\cos x)dx$. Thus,\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx \\\\\n&= \\int (1-u^{2} ))u^{4} \\, du \\\\ \n&= \\int u^{4}-u^{6} \\, du \\\\\n&= \\frac{u^{5}}{5} - \\frac{u^{7}}{7} +C\\\\\n&= \\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx=\\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx=\\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The power of cosine is odd. Peel off a power then try a substitution.</p>\n"
+    ], 
+    "hints_latex": [
         "The power of cosine is odd. Peel off a power then try a substitution."
-    ]
+    ], 
+    "hints_raw": [
+        "The power of cosine is odd. Peel off a power then try a substitution.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "3 (d)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>Notice that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &amp;= \\int (\\cos^{2} x)(\\sin^{4} x)\\cos x \\, dx \\\\\n&amp;=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx\\end{aligned}\\]</span></p>\n<p>So let <span class=\"math\">\\(u = \\sin x\\)</span> so <span class=\"math\">\\(du = (\\cos x)dx\\)</span>. Thus,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &amp;=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx \\\\\n&amp;= \\int (1-u^{2} ))u^{4} \\, du \\\\ \n&amp;= \\int u^{4}-u^{6} \\, du \\\\\n&amp;= \\frac{u^{5}}{5} - \\frac{u^{7}}{7} +C\\\\\n&amp;= \\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &= \\int (\\cos^{2} x)(\\sin^{4} x)\\cos x \\, dx \\\\\n&=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx\n\\end{align*}\n\nSo let $u = \\sin x$ so $du = (\\cos x)dx$. Thus,\n\n\\begin{align*}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx \\\\\n&= \\int (1-u^{2} ))u^{4} \\, du \\\\ \n&= \\int u^{4}-u^{6} \\, du \\\\\n&= \\frac{u^{5}}{5} - \\frac{u^{7}}{7} +C\\\\\n&= \\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Notice that\n\n:&lt;math> \\begin{align}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &amp;= \\int (\\cos^{2} x)(\\sin^{4} x)\\cos x \\, dx \\\\\n&amp;=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx\n\\end{align} &lt;/math>\n\nSo let &lt;math> u = \\sin x &lt;/math> so &lt;math> du = (\\cos x)dx  &lt;/math>. Thus,\n\n:&lt;math> \n\\begin{align}\n\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &amp;=  \\int (1-\\sin^{2} x ))(\\sin^{4} x)\\cos x \\, dx \\\\\n&amp;= \\int (1-u^{2} ))u^{4} \\, du \\\\ \n&amp;= \\int u^{4}-u^{6} \\, du \\\\\n&amp;= \\frac{u^{5}}{5} - \\frac{u^{7}}{7} +C\\\\\n&amp;= \\frac{\\sin^{5} x}{5} - \\frac{\\sin^{7} x}{7}  +C\n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problem. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\(\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx\\)</span></p>\n", 
+    "statement_latex": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int (\\cos^{3} x)(\\sin^{4} x)\\, dx$", 
+    "statement_raw": "&lt;b> Full-Solution Problem. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\n&lt;b> Evaluate the following integral. &lt;/b>\n\n&lt;math> \\int (\\cos^{3} x)(\\sin^{4} x)\\, dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Trigonometric_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_03_(d)", 
+    "year": 2007
 }

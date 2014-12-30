@@ -1,15 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
-    "course": "MATH103", 
-    "statement": "Seeds are dispersed from a tree in all directions uniformly. The density\nof seeds that lands on the ground at a distance \\emph{r} away is\napproximately described by the function\n\n\\begin{align*}s(r) = 50 \\sin\\left(\\frac{\\pi r}{10}\\right) \\text{ seeds/m}^2, \\quad 0 \\leq r \\leq 10 \\text{ m}\\end{align*}\n\nWhat is the total number of seeds on the ground within a 10 m radius of\nthe tree?", 
-    "year": 2009, 
-    "sols": [
-        "The total number of seeds is the sum of all $m^2$ around the tree times\nthe passend concentration of seeds.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_6_(b)_picture_1.jpg}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_6\\_(b)\\_picture\\_1.jpg}\n\\end{figure}\n\nBecause the area around the tree is a ring, the field of seeds looks\nlike a the function rotated around the tree (y-axis).\n\nTo calculate this integral, we use the shell method\n$\\displaystyle \\int 2\\pi xh(x)dx$\n\nFor integration we use integration by parts.\n\n\\begin{align*}\n\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv} &= \n100\\pi\\left[\\left.-r\\cos\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10} + \n\\frac{10}{\\pi}\\int_0^{10}\\cos\\left(\\frac{\\pi r}{10}\\right)dr\\right]\\\\\n&= 100\\left[-10\\cdot 10\\cos(\\pi) + 0 + 10\\left.\\sin\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10}\\right]\\\\\n&= 10000.\\end{align*}\n\nThere are 10000 seeds around the tree."
+    "answer_html": "<p><span class=\"math\">\\(\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv}=10000.\\)</span> There are 10000 seeds around the tree.</p>\n", 
+    "answer_latex": " $\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv}=10000.$ There are 10000 seeds around the tree.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>We have the density <span class=\"math\">\\(s\\)</span> of seeds per <span class=\"math\">\\(m^2\\)</span> given and are searching for the number of seeds. So, an integral must be involved in the calculation.</p>\n", 
+        "<p>The seeds lay radially symmetric around the tree. So, it is a circular area with radius <span class=\"math\">\\(10m\\)</span>, where the seeds are distributed.</p>\n<p>The volume of the seeds are a solid of revolution with the function <span class=\"math\">\\(s(r)\\)</span> rotated around the tree (=y-axis).</p>\n", 
+        "<p>For the solid of revolution use the shell method <span class=\"math\">\\(\\int 2\\pi x h(x)dx\\)</span>.</p>\n<p>For the integration use integration by parts.</p>\n"
+    ], 
+    "hints_latex": [
         "We have the density $s$ of seeds per $m^2$ given and are searching for\nthe number of seeds. So, an integral must be involved in the\ncalculation.", 
         "The seeds lay radially symmetric around the tree. So, it is a circular\narea with radius $10m$, where the seeds are distributed.\n\nThe volume of the seeds are a solid of revolution with the function\n$s(r)$ rotated around the tree (=y-axis).", 
         "For the solid of revolution use the shell method $\\int 2\\pi x h(x)dx$.\n\nFor the integration use integration by parts."
-    ]
+    ], 
+    "hints_raw": [
+        "We have the density &lt;math>\\ s&lt;/math> of seeds per &lt;math>\\ m^2&lt;/math> given and are searching for the number of seeds. So, an integral must be involved in the calculation.\n", 
+        "The seeds lay radially symmetric around the tree. So, it is a circular area with radius &lt;math>\\ 10m&lt;/math>, where the seeds are distributed.\n\nThe volume of the seeds are a solid of revolution with the function &lt;math>\\ s(r)&lt;/math> rotated around the tree (=y-axis).\n", 
+        "For the solid of revolution use the shell method &lt;math>\\ \\int 2\\pi x h(x)dx&lt;/math>. \n\nFor the integration use integration by parts.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "6 (b)", 
+    "rating": 18, 
+    "sols_html": [
+        "<p>The total number of seeds is the sum of all <span class=\"math\">\\(m^2\\)</span> around the tree times the passend concentration of seeds.</p>\n<p><img src=\"../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_6_(b)_picture_1.jpg\" alt=\"image\" /></p>\n<p>Because the area around the tree is a ring, the field of seeds looks like a the function rotated around the tree (y-axis).</p>\n<p>To calculate this integral, we use the shell method <span class=\"math\">\\(\\displaystyle \\int 2\\pi xh(x)dx\\)</span></p>\n<p>For integration we use integration by parts.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv} &amp;= \n100\\pi\\left[\\left.-r\\cos\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10} + \n\\frac{10}{\\pi}\\int_0^{10}\\cos\\left(\\frac{\\pi r}{10}\\right)dr\\right]\\\\\n&amp;= 100\\left[-10\\cdot 10\\cos(\\pi) + 0 + 10\\left.\\sin\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10}\\right]\\\\\n&amp;= 10000.\\end{aligned}\\]</span></p>\n<p>There are 10000 seeds around the tree.</p>\n"
+    ], 
+    "sols_latex": [
+        "The total number of seeds is the sum of all $m^2$ around the tree times\nthe passend concentration of seeds.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_6_(b)_picture_1.jpg}\n\nBecause the area around the tree is a ring, the field of seeds looks\nlike a the function rotated around the tree (y-axis).\n\nTo calculate this integral, we use the shell method\n$\\displaystyle \\int 2\\pi xh(x)dx$\n\nFor integration we use integration by parts.\n\n\\begin{align*}\n\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv} &= \n100\\pi\\left[\\left.-r\\cos\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10} + \n\\frac{10}{\\pi}\\int_0^{10}\\cos\\left(\\frac{\\pi r}{10}\\right)dr\\right]\\\\\n&= 100\\left[-10\\cdot 10\\cos(\\pi) + 0 + 10\\left.\\sin\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10}\\right]\\\\\n&= 10000.\n\\end{align*}\n\nThere are 10000 seeds around the tree."
+    ], 
+    "sols_raw": [
+        "The total number of seeds is the sum of all &lt;math>\\ m^2&lt;/math> around the tree times the passend concentration of seeds.\n\n[[File:Math_Exam_Resources_Courses_MATH103_April_2009_Question_6_(b)_picture_1.jpg|250px|right]]\n\n\nBecause the area around the tree is a ring, the field of seeds looks like a the function rotated around the tree (y-axis).\n\nTo calculate this integral, we use the shell method\n&lt;math>\\displaystyle \\int 2\\pi xh(x)dx&lt;/math>\n\nFor integration we use integration by parts.\n\n&lt;math>\\begin{align}\n\\int_0^{10} 2\\pi \\underbrace{r}_{=u}50\\underbrace{\\sin\\left(\\frac{\\pi r}{10}\\right)dr}_{dv} &amp;= \n100\\pi\\left[\\left.-r\\cos\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10} + \n\\frac{10}{\\pi}\\int_0^{10}\\cos\\left(\\frac{\\pi r}{10}\\right)dr\\right]\\\\\n&amp;= 100\\left[-10\\cdot 10\\cos(\\pi) + 0 + 10\\left.\\sin\\left(\\frac{\\pi r}{10}\\right)\\frac{10}{\\pi}\\right|_0^{10}\\right]\\\\\n&amp;= 10000.\n\\end{align}&lt;/math>\n\nThere are 10000 seeds around the tree.\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p>Seeds are dispersed from a tree in all directions uniformly. The density of seeds that lands on the ground at a distance <em>r</em> away is approximately described by the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ns(r) = 50 \\sin\\left(\\frac{\\pi r}{10}\\right) \\text{ seeds/m}^2, \\quad 0 \\leq r \\leq 10 \\text{ m}\\end{aligned}\\]</span></p>\n<p>What is the total number of seeds on the ground within a 10 m radius of the tree?</p>\n", 
+    "statement_latex": "Seeds are dispersed from a tree in all directions uniformly. The density\nof seeds that lands on the ground at a distance \\emph{r} away is\napproximately described by the function\n\n\\begin{align*}\ns(r) = 50 \\sin\\left(\\frac{\\pi r}{10}\\right) \\text{ seeds/m}^2, \\quad 0 \\leq r \\leq 10 \\text{ m}\n\\end{align*}\n\nWhat is the total number of seeds on the ground within a 10 m radius of\nthe tree?", 
+    "statement_raw": "Seeds are dispersed from a tree in all directions uniformly. The density of seeds that lands on the ground at a distance ''r'' away is approximately described by the function\n\n:&lt;math> s(r) = 50 \\sin\\left(\\frac{\\pi r}{10}\\right) \\text{ seeds/m}^2, \\quad 0 \\leq r \\leq 10 \\text{ m} &lt;/math>\n\nWhat is the total number of seeds on the ground within a 10 m radius of the tree?\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_06_(b)", 
+    "year": 2009
 }

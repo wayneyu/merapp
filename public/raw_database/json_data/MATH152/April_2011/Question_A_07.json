@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_A_07", 
-    "course": "MATH152", 
-    "statement": "Write the matrix \\emph{A} that would result from the following lines of\nMATLAB code:\n\n\\texttt{A~=~zeros(3,2);}\\\\\\texttt{A(1,1)~=~5;}\\\\\\texttt{A(2,2)~=~3;}\\\\\\texttt{A(3,1)~=~1;}", 
-    "year": 2011, 
-    "sols": [
-        "From the hint we know that Matlab stores by row then by column.\nTherefore the first line of code\n\n\\texttt{~A=zeros(3,2);}\n\nwould create a matrix of \\textbf{zeros} with \\textbf{3} rows and\n\\textbf{2} columns,\n\n\\begin{align*}A=\\begin{bmatrix}\n0  &  0\\\\\n0  &  0\\\\\n0  &  0\n\\end{bmatrix}.\\end{align*}\n\nThe next lines of code\n\n\\texttt{~A(1,1)=5;}\\\\\\texttt{~A(2,2)=3;}\\\\\\texttt{~A(3,1)=1;}\n\nwould put a \\textbf{5} in the \\textbf{1}st row, \\textbf{1}st column, a\n\\textbf{3} in the \\textbf{2}nd row, \\textbf{2}nd column and a \\textbf{1}\nin the \\textbf{3}rd row, \\textbf{1}st column and therefore,\n\n\\begin{align*}A=\\begin{bmatrix}\n5  &  0\\\\\n0  &  3\\\\\n1  &  0\n\\end{bmatrix}\\end{align*}\n\nis our created matrix."
+    "answer_html": "<p><span class=\"math\">\\(A=\\begin{bmatrix}\n5    0\\\\\n0    3\\\\\n1    0\n\\end{bmatrix}\\)</span> is our created matrix.</p>\n", 
+    "answer_latex": " $A=\\begin{bmatrix}\n5    0\\\\\n0    3\\\\\n1    0\n\\end{bmatrix}$ is our created matrix.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Matlab stores entries in rows then columns. Therefore A(i,j)=1 would put a 1 in the ith row and jth column.</p>\n"
+    ], 
+    "hints_latex": [
         "Matlab stores entries in rows then columns. Therefore A(i,j)=1 would put\na 1 in the ith row and jth column."
-    ]
+    ], 
+    "hints_raw": [
+        "Matlab stores entries in rows then columns.  Therefore A(i,j)=1 would put a 1 in the ith row and jth column.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 07", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>From the hint we know that Matlab stores by row then by column. Therefore the first line of code</p>\n<p><code>&#160;A=zeros(3,2);</code></p>\n<p>would create a matrix of <strong>zeros</strong> with <strong>3</strong> rows and <strong>2</strong> columns,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n0  &amp;  0\\\\\n0  &amp;  0\\\\\n0  &amp;  0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>The next lines of code</p>\n<p><code>&#160;A(1,1)=5;</code><br /><code>&#160;A(2,2)=3;</code><br /><code>&#160;A(3,1)=1;</code></p>\n<p>would put a <strong>5</strong> in the <strong>1</strong>st row, <strong>1</strong>st column, a <strong>3</strong> in the <strong>2</strong>nd row, <strong>2</strong>nd column and a <strong>1</strong> in the <strong>3</strong>rd row, <strong>1</strong>st column and therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n5  &amp;  0\\\\\n0  &amp;  3\\\\\n1  &amp;  0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>is our created matrix.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the hint we know that Matlab stores by row then by column.\nTherefore the first line of code\n\n\\texttt{~A=zeros(3,2);}\n\nwould create a matrix of \\textbf{zeros} with \\textbf{3} rows and\n\\textbf{2} columns,\n\n\\begin{align*}\nA=\\begin{bmatrix}\n0  &  0\\\\\n0  &  0\\\\\n0  &  0\n\\end{bmatrix}.\n\\end{align*}\n\nThe next lines of code\n\n\\texttt{~A(1,1)=5;}\\\\\\texttt{~A(2,2)=3;}\\\\\\texttt{~A(3,1)=1;}\n\nwould put a \\textbf{5} in the \\textbf{1}st row, \\textbf{1}st column, a\n\\textbf{3} in the \\textbf{2}nd row, \\textbf{2}nd column and a \\textbf{1}\nin the \\textbf{3}rd row, \\textbf{1}st column and therefore,\n\n\\begin{align*}\nA=\\begin{bmatrix}\n5  &  0\\\\\n0  &  3\\\\\n1  &  0\n\\end{bmatrix}\n\\end{align*}\n\nis our created matrix."
+    ], 
+    "sols_raw": [
+        "From the hint we know that Matlab stores by row then by column.  Therefore the first line of code\n\n  A=zeros(3,2);\n\nwould create a matrix of '''zeros''' with '''3''' rows and '''2''' columns,\n\n:&lt;math>\nA=\\begin{bmatrix}\n0  &amp;  0\\\\\n0  &amp;  0\\\\\n0  &amp;  0\n\\end{bmatrix}.\n&lt;/math>\n\nThe next lines of code\n  A(1,1)=5;\n  A(2,2)=3;\n  A(3,1)=1;\n\nwould put a '''5''' in the '''1'''st row, '''1'''st column, a '''3''' in the '''2'''nd row, '''2'''nd column and a '''1''' in the '''3'''rd row, '''1'''st column and therefore,\n\n:&lt;math>\nA=\\begin{bmatrix}\n5  &amp;  0\\\\\n0  &amp;  3\\\\\n1  &amp;  0\n\\end{bmatrix}\n&lt;/math>\n\nis our created matrix.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Write the matrix <em>A</em> that would result from the following lines of MATLAB code:</p>\n<p><code>A&#160;=&#160;zeros(3,2);</code><br /><code>A(1,1)&#160;=&#160;5;</code><br /><code>A(2,2)&#160;=&#160;3;</code><br /><code>A(3,1)&#160;=&#160;1;</code></p>\n", 
+    "statement_latex": "Write the matrix \\emph{A} that would result from the following lines of\nMATLAB code:\n\n\\texttt{A~=~zeros(3,2);}\\\\\\texttt{A(1,1)~=~5;}\\\\\\texttt{A(2,2)~=~3;}\\\\\\texttt{A(3,1)~=~1;}", 
+    "statement_raw": "Write the matrix ''A'' that would result from the following lines of MATLAB code:\n\n A = zeros(3,2);\n A(1,1) = 5;\n A(2,2) = 3;\n A(3,1) = 1;\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_07", 
+    "year": 2011
 }

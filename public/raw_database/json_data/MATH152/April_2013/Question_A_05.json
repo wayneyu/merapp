@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_A_05", 
-    "course": "MATH152", 
-    "statement": "Consider\n\n\\begin{align*}M = \\begin{bmatrix}  1 & 7 & 3 \\\\ 0 & p & 5 \\\\ 1 & pq + 7 & 8 \\end{bmatrix}\\end{align*}\n\nChoose \\emph{p} and \\emph{q} such that \\emph{M} have rank 2. Give an\nexample of a vector \\emph{b} for which the linear system $Mx = b$ has no\nsolution.", 
-    "year": 2013, 
-    "sols": [
-        "As calculated in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_04}{A04},\nwe take $\\displaystyle q=1, p=0$,\n\n\\begin{align*}M = \\begin{pmatrix}1 & 7 & 3 \\\\ 0 & 0 & 5 \\\\ 1 & 7 & 8 \\end{pmatrix}.\\end{align*}\n\nSince $\\displaystyle M$ has rank 2, the columns in $\\displaystyle M$\nmust be linear dependent. We see that the second column is 7 times the\nfirst column. Hence, the second column is redundant.\n\nThe first and the third column of $\\displaystyle M$ are linearly\nindependent since the third one has a 5 as second entry, where the first\none has a 0. Therefore, there is no possible scalar such that columns 1\nand 3 are multiples.\n\n\\begin{align*}\\displaystyle Mx = b\\end{align*} is only solvable, if $\\displaystyle b$ is a\nlinear combination of the columns of $\\displaystyle M$.\n\nWe want to find a vector, which is not a linear combination of the two\nlinear independent columns. Once possible choice is to find a vector\nwhich orthogonal (and hence linear independent) to the first and third\ncolumn by performing the cross product,\n\n\\begin{align*}b = \\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix} \\times\\begin{pmatrix}3\\\\5\\\\8\\end{pmatrix} = \\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}.\\end{align*}\n\nNote that there are several choices that could be made and this method\nis just a quick and effective way for finding a suitable vector."
+    "answer_html": "<p><span class=\"math\">\\(b=\\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}.\\)</span> Note that there are several choices that could be made and this method is just a quick and effective way for finding a suitable vector.</p>\n", 
+    "answer_latex": " $b=\\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}.$ Note that there are several choices that could be made and this method\nis just a quick and effective way for finding a suitable vector.", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Since <span class=\"math\">\\(\\displaystyle M\\)</span> has rank 2, the columns in <span class=\"math\">\\(\\displaystyle M\\)</span> must be linear dependent. Which column in <span class=\"math\">\\(\\displaystyle M\\)</span> is redundant, which two columns are linearly independent?</p>\n", 
+        "<p><span class=\"math\">\\(\\displaystyle Mx = b\\)</span> is only solvable if <span class=\"math\">\\(\\displaystyle b\\)</span> is a linear combination of the columns of <span class=\"math\">\\(\\displaystyle M\\)</span>. How do you find a vector, which is not a linear combination of the two linear independent columns?</p>\n"
+    ], 
+    "hints_latex": [
         "Since $\\displaystyle M$ has rank 2, the columns in $\\displaystyle M$\nmust be linear dependent. Which column in $\\displaystyle M$ is\nredundant, which two columns are linearly independent?", 
         "$\\displaystyle Mx = b$ is only solvable if $\\displaystyle b$ is a linear\ncombination of the columns of $\\displaystyle M$. How do you find a\nvector, which is not a linear combination of the two linear independent\ncolumns?"
-    ]
+    ], 
+    "hints_raw": [
+        "Since &lt;math>\\displaystyle M&lt;/math> has rank 2, the columns in &lt;math>\\displaystyle M&lt;/math> must be linear dependent. Which column in &lt;math>\\displaystyle M&lt;/math> is redundant, which two columns are linearly independent?\n", 
+        "&lt;math>\\displaystyle Mx = b&lt;/math> is only solvable if &lt;math>\\displaystyle b &lt;/math> is a linear combination of the columns of &lt;math> \\displaystyle M&lt;/math>.  How do you find a vector, which is not a linear combination of the two linear independent columns?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 05", 
+    "rating": 67, 
+    "sols_html": [
+        "<p>As calculated in <span>A04</span>, we take <span class=\"math\">\\(\\displaystyle q=1, p=0\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\begin{pmatrix}1 &amp; 7 &amp; 3 \\\\ 0 &amp; 0 &amp; 5 \\\\ 1 &amp; 7 &amp; 8 \\end{pmatrix}.\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(\\displaystyle M\\)</span> has rank 2, the columns in <span class=\"math\">\\(\\displaystyle M\\)</span> must be linear dependent. We see that the second column is 7 times the first column. Hence, the second column is redundant.</p>\n<p>The first and the third column of <span class=\"math\">\\(\\displaystyle M\\)</span> are linearly independent since the third one has a 5 as second entry, where the first one has a 0. Therefore, there is no possible scalar such that columns 1 and 3 are multiples.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle Mx = b\\end{aligned}\\]</span></p>\n<p>is only solvable, if <span class=\"math\">\\(\\displaystyle b\\)</span> is a linear combination of the columns of <span class=\"math\">\\(\\displaystyle M\\)</span>.</p>\n<p>We want to find a vector, which is not a linear combination of the two linear independent columns. Once possible choice is to find a vector which orthogonal (and hence linear independent) to the first and third column by performing the cross product,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb = \\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix} \\times\\begin{pmatrix}3\\\\5\\\\8\\end{pmatrix} = \\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}.\\end{aligned}\\]</span></p>\n<p>Note that there are several choices that could be made and this method is just a quick and effective way for finding a suitable vector.</p>\n"
+    ], 
+    "sols_latex": [
+        "As calculated in\n{A04},\nwe take $\\displaystyle q=1, p=0$,\n\n\\begin{align*}\nM = \\begin{pmatrix}1 & 7 & 3 \\\\ 0 & 0 & 5 \\\\ 1 & 7 & 8 \\end{pmatrix}.\n\\end{align*}\n\nSince $\\displaystyle M$ has rank 2, the columns in $\\displaystyle M$\nmust be linear dependent. We see that the second column is 7 times the\nfirst column. Hence, the second column is redundant.\n\nThe first and the third column of $\\displaystyle M$ are linearly\nindependent since the third one has a 5 as second entry, where the first\none has a 0. Therefore, there is no possible scalar such that columns 1\nand 3 are multiples.\n\n\\begin{align*}\n\\displaystyle Mx = b\n\\end{align*} is only solvable, if $\\displaystyle b$ is a\nlinear combination of the columns of $\\displaystyle M$.\n\nWe want to find a vector, which is not a linear combination of the two\nlinear independent columns. Once possible choice is to find a vector\nwhich orthogonal (and hence linear independent) to the first and third\ncolumn by performing the cross product,\n\n\\begin{align*}\nb = \\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix} \\times\\begin{pmatrix}3\\\\5\\\\8\\end{pmatrix} = \\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}.\n\\end{align*}\n\nNote that there are several choices that could be made and this method\nis just a quick and effective way for finding a suitable vector."
+    ], 
+    "sols_raw": [
+        "As calculated in [[Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_04|A04]], we take &lt;math>\\displaystyle q=1, p=0&lt;/math>, \n\n:&lt;math> M = \\begin{pmatrix}1 &amp; 7 &amp; 3 \\\\ 0 &amp; 0 &amp; 5 \\\\ 1 &amp; 7 &amp; 8 \\end{pmatrix} &lt;/math>.\n\nSince &lt;math>\\displaystyle M&lt;/math> has rank 2, the columns in &lt;math>\\displaystyle M&lt;/math> must be linear dependent. We see that the second column is 7 times the first column. Hence, the second column is redundant.  \n\nThe first and the third column of &lt;math>\\displaystyle M&lt;/math> are linearly independent since the third one has a 5 as second entry, where the first one has a 0.  Therefore, there is no possible scalar such that columns 1 and 3 are multiples.\n\n:&lt;math>\\displaystyle Mx = b&lt;/math> is only solvable, if &lt;math>\\displaystyle b &lt;/math> is a linear combination of the columns of &lt;math> \\displaystyle M&lt;/math>.\n\nWe want to find a vector, which is not a linear combination of the two linear independent columns.  Once possible choice is to find a vector which orthogonal (and hence linear independent) to the first and third column by performing the cross product,\n\n:&lt;math> b = \\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix} \\times\\begin{pmatrix}3\\\\5\\\\8\\end{pmatrix} = \\begin{pmatrix} -5 \\\\ -5 \\\\ 5\\end{pmatrix}&lt;/math>.\n\nNote that there are several choices that could be made and this method is just a quick and effective way for finding a suitable vector.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\begin{bmatrix}  1 &amp; 7 &amp; 3 \\\\ 0 &amp; p &amp; 5 \\\\ 1 &amp; pq + 7 &amp; 8 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Choose <em>p</em> and <em>q</em> such that <em>M</em> have rank 2. Give an example of a vector <em>b</em> for which the linear system <span class=\"math\">\\(Mx = b\\)</span> has no solution.</p>\n", 
+    "statement_latex": "Consider\n\n\\begin{align*}\nM = \\begin{bmatrix}  1 & 7 & 3 \\\\ 0 & p & 5 \\\\ 1 & pq + 7 & 8 \\end{bmatrix}\n\\end{align*}\n\nChoose \\emph{p} and \\emph{q} such that \\emph{M} have rank 2. Give an\nexample of a vector \\emph{b} for which the linear system $Mx = b$ has no\nsolution.", 
+    "statement_raw": "Consider \n\n:&lt;math> \nM = \\begin{bmatrix}  1 &amp; 7 &amp; 3 \\\\ 0 &amp; p &amp; 5 \\\\ 1 &amp; pq + 7 &amp; 8 \\end{bmatrix}\n&lt;/math>\n\nChoose ''p'' and ''q'' such that ''M'' have rank 2. Give an example of a vector ''b'' for which the linear system &lt;math> Mx = b &lt;/math> has no solution.\n", 
+    "term": "April", 
+    "topics": [
+        "Rank_and_nullity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_05", 
+    "year": 2013
 }

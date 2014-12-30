@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}\\)</span>and so 7 is not the order of 5.</p>\n", 
+    "answer_latex": "$\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}$and so 7 is not the order of 5.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe order $\\displaystyle \\text{ord}_{19}(5)$ is 7.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Translating the question, the question is asking whether</p>\n<p><span class=\"math\">\\(\\displaystyle 5^{7} \\equiv 1 \\mod{19}\\)</span></p>\n<p>and if <em>7</em> is the smallest such number.</p>\n"
+    ], 
+    "hints_latex": [
+        "Translating the question, the question is asking whether\n\n$\\displaystyle 5^{7} \\equiv 1 \\mod{19}$\n\nand if \\emph{7} is the smallest such number."
+    ], 
+    "hints_raw": [
+        "Translating the question, the question is asking whether\n\n&lt;math> \\displaystyle 5^{7} \\equiv 1 \\mod{19} &lt;/math>\n\nand if ''7'' is the smallest such number.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We compute directly</p>\n<p><span class=\"math\">\\(\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}\\)</span></p>\n<p>and so 7 is not the order of 5.</p>\n", 
+        "<p>We compute directly</p>\n<p><span class=\"math\">\\(\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv (5\\cdot 4)\\cdot 4^2 \\equiv 20\\cdot 16 \\equiv 1 \\cdot 16 \\not\\equiv 1 \\mod{19}\\)</span></p>\n<p>and so 7 is not the order of 5.</p>\n"
+    ], 
+    "sols_latex": [
         "We compute directly\n\n$\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}$\n\nand so 7 is not the order of 5.", 
         "We compute directly\n\n$\\displaystyle 5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv (5\\cdot 4)\\cdot 4^2 \\equiv 20\\cdot 16 \\equiv 1 \\cdot 16 \\not\\equiv 1 \\mod{19}$\n\nand so 7 is not the order of 5."
     ], 
-    "hints": [
-        "Translating the question, the question is asking whether\n\n$\\displaystyle 5^{7} \\equiv 1 \\mod{19}$\n\nand if \\emph{7} is the smallest such number."
-    ]
+    "sols_raw": [
+        "We compute directly\n\n&lt;math> \\displaystyle \n5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv 5\\cdot 64 \\equiv 5 \\cdot(-12) \\equiv -60 \\equiv 16 \\not\\equiv 1 \\mod{19}\n&lt;/math>\n\nand so 7 is not the order of 5.\n", 
+        "We compute directly\n\n&lt;math> \\displaystyle \n5^{7} \\equiv 5\\cdot5^{6} \\equiv 5\\cdot(25)^{3} \\equiv 5\\cdot4^{3} \\equiv (5\\cdot 4)\\cdot 4^2 \\equiv 20\\cdot 16 \\equiv 1 \\cdot 16 \\not\\equiv 1 \\mod{19}\n&lt;/math>\n\nand so 7 is not the order of 5.\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>State whether the following are true or false with full justification. Each question carries 4 marks.</strong></p>\n<p>The order <span class=\"math\">\\(\\displaystyle \\text{ord}_{19}(5)\\)</span> is 7.</p>\n", 
+    "statement_latex": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe order $\\displaystyle \\text{ord}_{19}(5)$ is 7.", 
+    "statement_raw": "'''State whether the following are true or false with full justification. Each question carries 4 marks.'''\n\nThe order &lt;math> \\displaystyle \\text{ord}_{19}(5) &lt;/math> is 7.\n", 
+    "term": "December", 
+    "topics": [
+        "Modular_arithmetic"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2012/Question_02_(b)", 
+    "year": 2012
 }

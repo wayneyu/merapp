@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH215", 
-    "statement": "Write the general solution of $y'' + 2y' + y = 0$.", 
-    "year": 2013, 
-    "sols": [
-        "With $y'' + 2y' + y = 0$, we first solve the characteristic equation\n$r^2 + 2r + 1 = (r+1)^2 = 0$ so $r=-1.$\n\nAs the root is repeated, we only get one solution of the form $e^{-t}$.\nThe other solution will be $t e^{-t}$.\n\nThe general solution is a linear combination of these two independent\nsolutions, $y = A e^{-t} + B t e^{-t}$."
+    "answer_html": "<p>The general solution is a linear combination of these two independent solutions, <span class=\"math\">\\(y = A e^{-t} + B t e^{-t}\\)</span>.</p>\n", 
+    "answer_latex": "The general solution is a linear combination of these two independent\nsolutions, $y = A e^{-t} + B t e^{-t}$.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Consider the characteristic equation <span class=\"math\">\\(r^2 + 2r + 1 = 0\\)</span>.</p>\n", 
+        "<p>The root of the characteristic equation is repeated. What does this mean for the form of the general solution?</p>\n"
+    ], 
+    "hints_latex": [
         "Consider the characteristic equation $r^2 + 2r + 1 = 0$.", 
         "The root of the characteristic equation is repeated. What does this mean\nfor the form of the general solution?"
-    ]
+    ], 
+    "hints_raw": [
+        "Consider the characteristic equation &lt;math>r^2 + 2r + 1 = 0&lt;/math>.\n", 
+        "The root of the characteristic equation is repeated. What does this mean for the form of the general solution?\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>With <span class=\"math\">\\(y&#39;&#39; + 2y&#39; + y = 0\\)</span>, we first solve the characteristic equation <span class=\"math\">\\(r^2 + 2r + 1 = (r+1)^2 = 0\\)</span> so <span class=\"math\">\\(r=-1.\\)</span></p>\n<p>As the root is repeated, we only get one solution of the form <span class=\"math\">\\(e^{-t}\\)</span>. The other solution will be <span class=\"math\">\\(t e^{-t}\\)</span>.</p>\n<p>The general solution is a linear combination of these two independent solutions, <span class=\"math\">\\(y = A e^{-t} + B t e^{-t}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "With $y'' + 2y' + y = 0$, we first solve the characteristic equation\n$r^2 + 2r + 1 = (r+1)^2 = 0$ so $r=-1.$\n\nAs the root is repeated, we only get one solution of the form $e^{-t}$.\nThe other solution will be $t e^{-t}$.\n\nThe general solution is a linear combination of these two independent\nsolutions, $y = A e^{-t} + B t e^{-t}$."
+    ], 
+    "sols_raw": [
+        "With &lt;math>y'' + 2y' + y = 0&lt;/math>, we first solve the characteristic equation &lt;math>r^2 + 2r + 1 = (r+1)^2 = 0&lt;/math> so &lt;math>r=-1.&lt;/math>\n\nAs the root is repeated, we only get one solution of the form &lt;math>e^{-t}&lt;/math>. The other solution will be &lt;math>t e^{-t}&lt;/math>.\n\nThe general solution is a linear combination of these two independent solutions, &lt;math>y = A e^{-t} + B t e^{-t}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Write the general solution of <span class=\"math\">\\(y&#39;&#39; + 2y&#39; + y = 0\\)</span>.</p>\n", 
+    "statement_latex": "Write the general solution of $y'' + 2y' + y = 0$.", 
+    "statement_raw": "Write the general solution of &lt;math>y'' + 2y' + y = 0&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_01_(a)", 
+    "year": 2013
 }

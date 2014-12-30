@@ -1,14 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_01_(j)", 
-    "course": "MATH104", 
-    "statement": "A racing car travels along the ellipse\n\n\\begin{align*}\\displaystyle{}x^2+2y^2=9\\end{align*}\n\nwhere x and y are measured in kilometers. When the car is at the point\n(1,2), the x-coordinate of the point is changing at the rate of 3\nkilometers per minute. How fast is the y-coordinate changing at that\nmoment?", 
-    "year": 2010, 
-    "sols": [
-        "We have that\n\n\\begin{align*}x(t)^2+2y(t)^2=9\\end{align*}\n\nand we want to find dy/dt when x=1, y=2 and dx/dt=3. Therefore, we\nimplicitly differentiate and isolate for dy/dt,\n\n\\begin{align*}\n2x\\frac{\\textrm{d}x}{\\textrm{d}t}+4y\\frac{\\textrm{d}y}{\\textrm{d}t}&=0\\\\\n\\frac{\\textrm{d}y}{\\textrm{d}t}&=-\\frac{x}{2y}\\frac{\\textrm{d}x}{\\textrm{d}t}.\\end{align*}\n\nWe then sub in x=1, y=2, and dx/dt=3 to get that\n\n\\begin{align*}\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{1}{4}(3)=-\\frac{3}{4}\\end{align*}\n\nand so we conclude that the y-coordinate is changing at -3/4 kilometers\nper minute at that moment."
+    "answer_html": "<p><span class=\"math\">\\(\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{3}{4}\\)</span> and so we conclude that the y-coordinate is changing at -3/4 kilometers per minute at that moment.</p>\n", 
+    "answer_latex": " $\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{3}{4}$ and so we conclude that the y-coordinate is changing at -3/4 kilometers\nper minute at that moment.", 
+    "contributors": [
+        "WilliamThompson", 
+        "MikeL", 
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
-        "Here x and y are functions of time, so we have the \\textbf{implicit\nrelation}\n\n\\begin{align*}\\displaystyle{}x(t)^2+2y(t)^2=9.\\end{align*}", 
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Here x and y are functions of time, so we have the <strong>implicit relation</strong></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x(t)^2+2y(t)^2=9.\\end{aligned}\\]</span></p>\n", 
+        "<p>Use implicit differentiation!</p>\n"
+    ], 
+    "hints_latex": [
+        "Here x and y are functions of time, so we have the \\textbf{implicit\nrelation}\n\n\\begin{align*}\n\\displaystyle{}x(t)^2+2y(t)^2=9.\n\\end{align*}", 
         "Use implicit differentiation!"
-    ]
+    ], 
+    "hints_raw": [
+        "Here x and y are functions of time, so we have the '''implicit relation'''\n\n:&lt;math>\n\\displaystyle{}x(t)^2+2y(t)^2=9.\n&lt;/math>\n", 
+        "Use implicit differentiation!\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (j)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>We have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx(t)^2+2y(t)^2=9\\end{aligned}\\]</span></p>\n<p>and we want to find dy/dt when x=1, y=2 and dx/dt=3. Therefore, we implicitly differentiate and isolate for dy/dt,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2x\\frac{\\textrm{d}x}{\\textrm{d}t}+4y\\frac{\\textrm{d}y}{\\textrm{d}t}&amp;=0\\\\\n\\frac{\\textrm{d}y}{\\textrm{d}t}&amp;=-\\frac{x}{2y}\\frac{\\textrm{d}x}{\\textrm{d}t}.\\end{aligned}\\]</span></p>\n<p>We then sub in x=1, y=2, and dx/dt=3 to get that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{1}{4}(3)=-\\frac{3}{4}\\end{aligned}\\]</span></p>\n<p>and so we conclude that the y-coordinate is changing at -3/4 kilometers per minute at that moment.</p>\n"
+    ], 
+    "sols_latex": [
+        "We have that\n\n\\begin{align*}\nx(t)^2+2y(t)^2=9\n\\end{align*}\n\nand we want to find dy/dt when x=1, y=2 and dx/dt=3. Therefore, we\nimplicitly differentiate and isolate for dy/dt,\n\n\\begin{align*}\n2x\\frac{\\textrm{d}x}{\\textrm{d}t}+4y\\frac{\\textrm{d}y}{\\textrm{d}t}&=0\\\\\n\\frac{\\textrm{d}y}{\\textrm{d}t}&=-\\frac{x}{2y}\\frac{\\textrm{d}x}{\\textrm{d}t}.\n\\end{align*}\n\nWe then sub in x=1, y=2, and dx/dt=3 to get that\n\n\\begin{align*}\n\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{1}{4}(3)=-\\frac{3}{4}\n\\end{align*}\n\nand so we conclude that the y-coordinate is changing at -3/4 kilometers\nper minute at that moment."
+    ], 
+    "sols_raw": [
+        "We have that\n\n:&lt;math>\nx(t)^2+2y(t)^2=9\n&lt;/math>\n\nand we want to find dy/dt when x=1, y=2 and dx/dt=3.  Therefore, we implicitly differentiate and isolate for dy/dt,\n\n:&lt;math>\n\\begin{align}\n2x\\frac{\\textrm{d}x}{\\textrm{d}t}+4y\\frac{\\textrm{d}y}{\\textrm{d}t}&amp;=0\\\\\n\\frac{\\textrm{d}y}{\\textrm{d}t}&amp;=-\\frac{x}{2y}\\frac{\\textrm{d}x}{\\textrm{d}t}.\n\\end{align}\n&lt;/math>\n\nWe then sub in x=1, y=2, and dx/dt=3 to get that\n\n:&lt;math>\n\\left.\\frac{\\textrm{d}y}{\\textrm{d}t}\\right|_{x=1,y=2}=-\\frac{1}{4}(3)=-\\frac{3}{4}\n&lt;/math>\n\nand so we conclude that the y-coordinate is changing at -3/4 kilometers per minute at that moment.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>A racing car travels along the ellipse</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x^2+2y^2=9\\end{aligned}\\]</span></p>\n<p>where x and y are measured in kilometers. When the car is at the point (1,2), the x-coordinate of the point is changing at the rate of 3 kilometers per minute. How fast is the y-coordinate changing at that moment?</p>\n", 
+    "statement_latex": "A racing car travels along the ellipse\n\n\\begin{align*}\n\\displaystyle{}x^2+2y^2=9\n\\end{align*}\n\nwhere x and y are measured in kilometers. When the car is at the point\n(1,2), the x-coordinate of the point is changing at the rate of 3\nkilometers per minute. How fast is the y-coordinate changing at that\nmoment?", 
+    "statement_raw": "A racing car travels along the ellipse\n\n:&lt;math>\n\\displaystyle{}x^2+2y^2=9\n&lt;/math>\n\nwhere x and y are measured in kilometers.  When the car is at the point (1,2), the x-coordinate of the point is changing at the rate of 3 kilometers per minute.  How fast is the y-coordinate changing at that moment?\n", 
+    "term": "December", 
+    "topics": [
+        "Related_rates"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_01_(j)", 
+    "year": 2010
 }

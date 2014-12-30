@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_07_(b)", 
+    "answer_html": "<p>Setting the derivative in this differential equation to 0 gives either <span class=\"math\">\\(\\displaystyle M=0\\)</span> or <span class=\"math\">\\(\\displaystyle 1 - \\frac{M}{K} - \\frac{h}{2} = 0\\)</span> and isolating for <span class=\"math\">\\(\\displaystyle M\\)</span> gives <span class=\"math\">\\(\\displaystyle M = K\\big(1 - \\frac{h}{2}\\big)\\)</span></p>\n", 
+    "answer_latex": "Setting the derivative in this differential equation to 0 gives either\n$\\displaystyle M=0$ or $\\displaystyle 1 - \\frac{M}{K} - \\frac{h}{2} = 0$\nand isolating for $\\displaystyle M$ gives\n$\\displaystyle M = K\\big(1 - \\frac{h}{2}\\big)$", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
+    ], 
     "course": "MATH103", 
-    "statement": "\\textbf{Biofuel: Suppose you work at an experimental algae farm where\nalgae is turned into biofuel. The algae grows in tanks at a rate\n$\\displaystyle \\alpha = 2$ and the steady supply of nutrients allows\neach tank to sustain $\\displaystyle K$ kilograms of algae.}\n\nSuppose you harvest algae proportional to its total mass at a rate\n\\emph{h}. Modify the differential equation\n\n\\begin{align*}\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big).\\end{align*}\n\naccordingly. Find all steady state solutions (equilibria) for the new\nequation. Hint: \\emph{-hM}", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The hint in question is suggesting that you take this value away from the derivative leaving you with</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The hint in question is suggesting that you take this value away from\nthe derivative leaving you with\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM$"
+    ], 
+    "hints_raw": [
+        "The hint in question is suggesting that you take this value away from the derivative leaving you with \n\n&lt;math> \\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM&lt;/math>\n"
+    ], 
+    "num_votes": 8, 
+    "question": "7 (b)", 
+    "rating": 43, 
+    "sols_html": [
+        "<p>As given by the hint, the new differential equation is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM\\)</span></p>\n<p>Factoring out a <span class=\"math\">\\(\\displaystyle 2M\\)</span> gives</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}-\\frac{h}{2}\\big)\\)</span></p>\n<p>Setting the derivative in this differential equation to 0 gives either <span class=\"math\">\\(\\displaystyle M=0\\)</span> or <span class=\"math\">\\(\\displaystyle 1 - \\frac{M}{K} - \\frac{h}{2} = 0\\)</span> and isolating for <span class=\"math\">\\(\\displaystyle M\\)</span> gives <span class=\"math\">\\(\\displaystyle M = K\\big(1 - \\frac{h}{2}\\big)\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "As given by the hint, the new differential equation is given by\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM$\n\nFactoring out a $\\displaystyle 2M$ gives\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}-\\frac{h}{2}\\big)$\n\nSetting the derivative in this differential equation to 0 gives either\n$\\displaystyle M=0$ or $\\displaystyle 1 - \\frac{M}{K} - \\frac{h}{2} = 0$\nand isolating for $\\displaystyle M$ gives\n$\\displaystyle M = K\\big(1 - \\frac{h}{2}\\big)$"
     ], 
-    "hints": [
-        "The hint in question is suggesting that you take this value away from\nthe derivative leaving you with\n\n$\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM$"
-    ]
+    "sols_raw": [
+        "As given by the hint, the new differential equation is given by\n\n&lt;math> \\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big) - hM&lt;/math>\n\nFactoring out a &lt;math> \\displaystyle 2M&lt;/math> gives\n\n&lt;math> \\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}-\\frac{h}{2}\\big)&lt;/math>\n\nSetting the derivative in this differential equation to 0 gives either &lt;math> \\displaystyle M=0&lt;/math> or &lt;math> \\displaystyle 1 - \\frac{M}{K} - \\frac{h}{2} = 0&lt;/math> and isolating for &lt;math> \\displaystyle M&lt;/math> gives &lt;math> \\displaystyle M = K\\big(1 - \\frac{h}{2}\\big)&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Biofuel: Suppose you work at an experimental algae farm where algae is turned into biofuel. The algae grows in tanks at a rate <span class=\"math\">\\(\\displaystyle \\alpha = 2\\)</span> and the steady supply of nutrients allows each tank to sustain <span class=\"math\">\\(\\displaystyle K\\)</span> kilograms of algae.</strong></p>\n<p>Suppose you harvest algae proportional to its total mass at a rate <em>h</em>. Modify the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big).\\end{aligned}\\]</span></p>\n<p>accordingly. Find all steady state solutions (equilibria) for the new equation. Hint: <em>-hM</em></p>\n", 
+    "statement_latex": "\\textbf{Biofuel: Suppose you work at an experimental algae farm where\nalgae is turned into biofuel. The algae grows in tanks at a rate\n$\\displaystyle \\alpha = 2$ and the steady supply of nutrients allows\neach tank to sustain $\\displaystyle K$ kilograms of algae.}\n\nSuppose you harvest algae proportional to its total mass at a rate\n\\emph{h}. Modify the differential equation\n\n\\begin{align*}\n\\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big).\n\\end{align*}\n\naccordingly. Find all steady state solutions (equilibria) for the new\nequation. Hint: \\emph{-hM}", 
+    "statement_raw": "'''Biofuel: Suppose you work at an experimental algae farm where algae is turned into biofuel. The algae grows in tanks at a rate &lt;math> \\displaystyle \\alpha = 2&lt;/math> and the steady supply of nutrients allows each tank to sustain &lt;math> \\displaystyle K&lt;/math> kilograms of algae.'''\n\nSuppose you harvest algae proportional to its total mass at a rate ''h''. Modify the differential equation\n\n:&lt;math> \\displaystyle \\frac{dM}{dt} = 2M\\big(1 - \\frac{M}{K}\\big)&lt;/math>.\n\naccordingly. Find all steady state solutions (equilibria) for the new equation. Hint: ''-hM''\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Steady_states"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_07_(b)", 
+    "year": 2013
 }

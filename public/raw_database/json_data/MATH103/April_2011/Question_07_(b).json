@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(b)", 
-    "course": "MATH103", 
-    "statement": "The following definite integral cannot be solved\nanalytically\\begin{align*}\\int_0^1 \\frac{\\sin x}{x}\\,dx.\\end{align*}\n\nApproximate the integral based on the first three non-zero terms in the\nTaylor series (around $x=0$).\n\nHint: Taylor series for\n$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}$", 
-    "year": 2011, 
-    "sols": [
-        "Dividing the first three nonzero terms in the Taylor series for $\\sin x$\nby $x$,\n\n\\begin{align*}\n\\frac{\\sin x}{x} \\approx 1 - \\frac{x^2}{3!} + \\frac{x^4}{5!} .\\end{align*}\n\nHence,\n\n\\begin{align*} \n\\int_0^1 \\frac{\\sin x}{x}\\,dx &\\approx \\int_0^1\\left(1 - \\frac{x^2}{3!} + \\frac{x^4}{5!}\\right)\\, dx\\\\\n&= \\left. x  - \\frac{x^3}{3\\cdot3!} + \\frac{x^5}{5\\cdot5!}\\right|_0^1\\\\\n&= 1  - \\frac{1}{18} + \\frac{1}{5\\cdot 120}= 1  - \\frac{1}{18} + \\frac{1}{600} =  \\frac{1800-100+3}{1800} = \\frac{1703}{1800} .\\end{align*}\n\n\\emph{(Note that this is a pretty good approximation.\n$\\frac{1703}{1800} \\approx 0.946111,$ while WolframAlpha approximates\nthe full integral $\\int_0^1 \\frac{\\sin x}{x}\\,dx$ with $0.946083$.)}"
+    "answer_html": "<p><em>(Note that this is a pretty good approximation. <span class=\"math\">\\(\\frac{1703}{1800} \\approx 0.946111,\\)</span> while WolframAlpha approximates the full integral <span class=\"math\">\\(\\int_0^1 \\frac{\\sin x}{x}\\,dx\\)</span> with <span class=\"math\">\\(0.946083\\)</span>.)</em></p>\n", 
+    "answer_latex": "\\emph{(Note that this is a pretty good approximation.\n$\\frac{1703}{1800} \\approx 0.946111,$ while WolframAlpha approximates\nthe full integral $\\int_0^1 \\frac{\\sin x}{x}\\,dx$ with $0.946083$.)}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Divide the first three terms in series for <span class=\"math\">\\(\\sin x\\)</span> by <span class=\"math\">\\(x\\)</span>, then integrate term-by-term.</p>\n"
+    ], 
+    "hints_latex": [
         "Divide the first three terms in series for $\\sin x$ by $x$, then\nintegrate term-by-term."
-    ]
+    ], 
+    "hints_raw": [
+        "Divide the first three terms in series for &lt;math> \\sin x&lt;/math> by &lt;math> x&lt;/math>, then integrate term-by-term.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "7 (b)", 
+    "rating": 61, 
+    "sols_html": [
+        "<p>Dividing the first three nonzero terms in the Taylor series for <span class=\"math\">\\(\\sin x\\)</span> by <span class=\"math\">\\(x\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{\\sin x}{x} \\approx 1 - \\frac{x^2}{3!} + \\frac{x^4}{5!} .\\end{aligned}\\]</span></p>\n<p>Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1 \\frac{\\sin x}{x}\\,dx &amp;\\approx \\int_0^1\\left(1 - \\frac{x^2}{3!} + \\frac{x^4}{5!}\\right)\\, dx\\\\\n&amp;= \\left.x  - \\frac{x^3}{3\\cdot3!} + \\frac{x^5}{5\\cdot5!}\\right|_0^1\\\\\n&amp;= 1  - \\frac{1}{18} + \\frac{1}{5\\cdot 120}= 1  - \\frac{1}{18} + \\frac{1}{600} =  \\frac{1800-100+3}{1800} = \\frac{1703}{1800} .\\end{aligned}\\]</span></p>\n<p><em>(Note that this is a pretty good approximation. <span class=\"math\">\\(\\frac{1703}{1800} \\approx 0.946111,\\)</span> while WolframAlpha approximates the full integral <span class=\"math\">\\(\\int_0^1 \\frac{\\sin x}{x}\\,dx\\)</span> with <span class=\"math\">\\(0.946083\\)</span>.)</em></p>\n"
+    ], 
+    "sols_latex": [
+        "Dividing the first three nonzero terms in the Taylor series for $\\sin x$\nby $x$,\n\n\\begin{align*}\n\\frac{\\sin x}{x} \\approx 1 - \\frac{x^2}{3!} + \\frac{x^4}{5!} .\n\\end{align*}\n\nHence,\n\n\\begin{align*}\n\\int_0^1 \\frac{\\sin x}{x}\\,dx &\\approx \\int_0^1\\left(1 - \\frac{x^2}{3!} + \\frac{x^4}{5!}\\right)\\, dx\\\\\n&= \\left.x  - \\frac{x^3}{3\\cdot3!} + \\frac{x^5}{5\\cdot5!}\\right|_0^1\\\\\n&= 1  - \\frac{1}{18} + \\frac{1}{5\\cdot 120}= 1  - \\frac{1}{18} + \\frac{1}{600} =  \\frac{1800-100+3}{1800} = \\frac{1703}{1800} .\n\\end{align*}\n\n\\emph{(Note that this is a pretty good approximation.\n$\\frac{1703}{1800} \\approx 0.946111,$ while WolframAlpha approximates\nthe full integral $\\int_0^1 \\frac{\\sin x}{x}\\,dx$ with $0.946083$.)}"
+    ], 
+    "sols_raw": [
+        "Dividing the first three nonzero terms in the Taylor series for &lt;math>\\sin x &lt;/math> by &lt;math> x&lt;/math>,\n\n&lt;math> \\begin{align}\n\\frac{\\sin x}{x} \\approx 1 - \\frac{x^2}{3!} + \\frac{x^4}{5!} .\n\\end{align}&lt;/math>\n\nHence,\n\n&lt;math>\\begin{align} \n\\int_0^1 \\frac{\\sin x}{x}\\,dx &amp;\\approx \\int_0^1\\left(1 - \\frac{x^2}{3!} + \\frac{x^4}{5!}\\right)\\, dx\\\\\n&amp; = \\left. x  - \\frac{x^3}{3\\cdot3!} + \\frac{x^5}{5\\cdot5!}\\right|_0^1\\\\\n&amp;= 1  - \\frac{1}{18} + \\frac{1}{5\\cdot 120}= 1  - \\frac{1}{18} + \\frac{1}{600} =  \\frac{1800-100+3}{1800} = \\frac{1703}{1800} .\n\\end{align} &lt;/math>\n\n\n''(Note that this is a pretty good approximation. &lt;math>\\frac{1703}{1800} \\approx 0.946111, &lt;/math> while WolframAlpha approximates the full integral &lt;math> \\int_0^1 \\frac{\\sin x}{x}\\,dx &lt;/math> with &lt;math>0.946083&lt;/math>.)''\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>The following definite integral cannot be solved analytically</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1 \\frac{\\sin x}{x}\\,dx.\\end{aligned}\\]</span></p>\n<p>Approximate the integral based on the first three non-zero terms in the Taylor series (around <span class=\"math\">\\(x=0\\)</span>).</p>\n<p>Hint: Taylor series for <span class=\"math\">\\(\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}\\)</span></p>\n", 
+    "statement_latex": "The following definite integral cannot be solved\nanalytically\\begin{align*}\n\\int_0^1 \\frac{\\sin x}{x}\\,dx.\n\\end{align*}\n\nApproximate the integral based on the first three non-zero terms in the\nTaylor series (around $x=0$).\n\nHint: Taylor series for\n$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}$", 
+    "statement_raw": "The following definite integral cannot be solved analytically: &lt;math> \\int_0^1 \\frac{\\sin x}{x}\\,dx.&lt;/math>\n\nApproximate the integral based on the first three non-zero terms in the Taylor series (around &lt;math>x=0&lt;/math>).\n\nHint: Taylor series for &lt;math>\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_07_(b)", 
+    "year": 2011
 }

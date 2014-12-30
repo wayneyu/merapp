@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(j)", 
-    "course": "MATH101", 
-    "statement": "Find the first three nonzero terms in the power series representation in\npowers of \\emph{x} (i.e. the Maclaurin series) for\n$\\int_{0}^{x}t^{2}e^{-t^{2}}\\, dt$", 
-    "year": 2006, 
-    "sols": [
-        "Starting with the Maclaurin series for $e^{y}$, we have\n\n\\begin{align*}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\\end{align*}\n\nPlugging in -\\emph{t}\\textsuperscript{2}, we have\n\n\\begin{align*}\ne^{-t^{2}} = 1 -t^{2} + \\frac{t^{4}}{2!} - \\frac{t^{6}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n}}{n!}\\end{align*}\n\nMultiplying by $t^{2}$, we have\n\n\\begin{align*}\nt^{2}e^{-t^{2}} = t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n+2}}{n!}\\end{align*}\n\nNow integrating gives\n\n\\begin{align*}\n\\int t^{2}e^{-t^{2}} &=\\int t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + ..\\, dt = \\sum_{n=0}^{\\infty}\\int \\frac{(-1)^{n}t^{2n+2}}{n!}\\, dt\\\\\n&=C + \\frac{t^{3}}{3} - \\frac{t^{5}}{5} + \\frac{t^{7}}{7\\cdot2!} - \\frac{t^{9}}{9\\cdot3!} + ... = C + \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}t^{2n+3}}{(2n+3)n!}\\end{align*}\n\nPlugging in endpoints, we have\n\n\\begin{align*}\n\\int_{0}^{x} t^{2}e^{-t^{2}} &=\\frac{x^{3}}{3} - \\frac{x^{5}}{5} + \\frac{x^{7}}{7\\cdot2!} - \\frac{x^{9}}{9\\cdot3!} + ... = \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}x^{2n+3}}{(2n+3)n!}\\end{align*}\n\nand so the first three nonzero terms are\n\n$\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}$"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}\\)</span></p>\n", 
+    "answer_latex": "$\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "The Maclaurin series for $e^{y}$ is\n\n\\begin{align*}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\\end{align*}"
-    ]
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Maclaurin series for <span class=\"math\">\\(e^{y}\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The Maclaurin series for $e^{y}$ is\n\n\\begin{align*}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The Maclaurin series for &lt;math>e^{y} &lt;/math> is \n\n&lt;math>\n\\begin{align}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (j)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Starting with the Maclaurin series for <span class=\"math\">\\(e^{y}\\)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\\end{aligned}\\]</span></p>\n<p>Plugging in -<em>t</em><sup>2</sup>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{-t^{2}} = 1 -t^{2} + \\frac{t^{4}}{2!} - \\frac{t^{6}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n}}{n!}\\end{aligned}\\]</span></p>\n<p>Multiplying by <span class=\"math\">\\(t^{2}\\)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^{2}e^{-t^{2}} = t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n+2}}{n!}\\end{aligned}\\]</span></p>\n<p>Now integrating gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int t^{2}e^{-t^{2}} &amp;=\\int t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + ..\\, dt = \\sum_{n=0}^{\\infty}\\int \\frac{(-1)^{n}t^{2n+2}}{n!}\\, dt\\\\\n&amp;=C + \\frac{t^{3}}{3} - \\frac{t^{5}}{5} + \\frac{t^{7}}{7\\cdot2!} - \\frac{t^{9}}{9\\cdot3!} + ... = C + \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}t^{2n+3}}{(2n+3)n!}\\end{aligned}\\]</span></p>\n<p>Plugging in endpoints, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{x} t^{2}e^{-t^{2}} &amp;=\\frac{x^{3}}{3} - \\frac{x^{5}}{5} + \\frac{x^{7}}{7\\cdot2!} - \\frac{x^{9}}{9\\cdot3!} + ... = \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}x^{2n+3}}{(2n+3)n!}\\end{aligned}\\]</span></p>\n<p>and so the first three nonzero terms are</p>\n<p><span class=\"math\">\\(\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Starting with the Maclaurin series for $e^{y}$, we have\n\n\\begin{align*}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\n\\end{align*}\n\nPlugging in -\\emph{t}\\textsuperscript{2}, we have\n\n\\begin{align*}\ne^{-t^{2}} = 1 -t^{2} + \\frac{t^{4}}{2!} - \\frac{t^{6}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n}}{n!}\n\\end{align*}\n\nMultiplying by $t^{2}$, we have\n\n\\begin{align*}\nt^{2}e^{-t^{2}} = t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n+2}}{n!}\n\\end{align*}\n\nNow integrating gives\n\n\\begin{align*}\n\\int t^{2}e^{-t^{2}} &=\\int t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + ..\\, dt = \\sum_{n=0}^{\\infty}\\int \\frac{(-1)^{n}t^{2n+2}}{n!}\\, dt\\\\\n&=C + \\frac{t^{3}}{3} - \\frac{t^{5}}{5} + \\frac{t^{7}}{7\\cdot2!} - \\frac{t^{9}}{9\\cdot3!} + ... = C + \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}t^{2n+3}}{(2n+3)n!}\n\\end{align*}\n\nPlugging in endpoints, we have\n\n\\begin{align*}\n\\int_{0}^{x} t^{2}e^{-t^{2}} &=\\frac{x^{3}}{3} - \\frac{x^{5}}{5} + \\frac{x^{7}}{7\\cdot2!} - \\frac{x^{9}}{9\\cdot3!} + ... = \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}x^{2n+3}}{(2n+3)n!}\n\\end{align*}\n\nand so the first three nonzero terms are\n\n$\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}$"
+    ], 
+    "sols_raw": [
+        "Starting with the Maclaurin series for &lt;math> e^{y} &lt;/math>, we have\n\n&lt;math>\n\\begin{align}\ne^{y} = 1 + y + \\frac{y^{2}}{2!} + \\frac{y^{3}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{y^{n}}{n!}\n\\end{align}\n&lt;/math>\n\nPlugging in -''t''&lt;sup>2&lt;/sup>, we have\n\n&lt;math>\n\\begin{align}\ne^{-t^{2}} = 1 -t^{2} + \\frac{t^{4}}{2!} - \\frac{t^{6}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n}}{n!}\n\\end{align}\n&lt;/math>\n\nMultiplying by &lt;math>t^{2}&lt;/math>, we have\n\n&lt;math>\n\\begin{align}\nt^{2}e^{-t^{2}} = t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + .. = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}t^{2n+2}}{n!}\n\\end{align}\n&lt;/math>\n\nNow integrating gives\n\n&lt;math>\n\\begin{align}\n\\int t^{2}e^{-t^{2}} &amp;=\\int t^{2} - t^{4} + \\frac{t^{6}}{2!} - \\frac{t^{8}}{3!} + ..\\, dt = \\sum_{n=0}^{\\infty}\\int \\frac{(-1)^{n}t^{2n+2}}{n!}\\, dt\\\\\n&amp;=C + \\frac{t^{3}}{3} - \\frac{t^{5}}{5} + \\frac{t^{7}}{7\\cdot2!} - \\frac{t^{9}}{9\\cdot3!} + ... = C + \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}t^{2n+3}}{(2n+3)n!}\n\\end{align}\n&lt;/math>\n\nPlugging in endpoints, we have\n\n&lt;math>\n\\begin{align}\n\\int_{0}^{x} t^{2}e^{-t^{2}} &amp;=\\frac{x^{3}}{3} - \\frac{x^{5}}{5} + \\frac{x^{7}}{7\\cdot2!} - \\frac{x^{9}}{9\\cdot3!} + ... = \\sum_{n=0}^{\\infty} \\frac{(-1)^{n}x^{2n+3}}{(2n+3)n!}\n\\end{align}\n&lt;/math>\n\nand so the first three nonzero terms are\n\n&lt;math>\n\\frac{x^{3}}{3}, -\\frac{x^{5}}{5}, \\frac{x^{7}}{14}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the first three nonzero terms in the power series representation in powers of <em>x</em> (i.e. the Maclaurin series) for <span class=\"math\">\\(\\int_{0}^{x}t^{2}e^{-t^{2}}\\, dt\\)</span></p>\n", 
+    "statement_latex": "Find the first three nonzero terms in the power series representation in\npowers of \\emph{x} (i.e. the Maclaurin series) for\n$\\int_{0}^{x}t^{2}e^{-t^{2}}\\, dt$", 
+    "statement_raw": "Find the first three nonzero terms in the power series representation in powers of ''x'' (i.e. the Maclaurin series) for &lt;math> \\int_{0}^{x}t^{2}e^{-t^{2}}\\, dt &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(j)", 
+    "year": 2006
 }

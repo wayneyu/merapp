@@ -1,18 +1,63 @@
 {
-    "term": "April", 
-    "question": "Question_10", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Taylor Series:} Find the first five terms of the Taylor series\ncentred at 0 for $\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds$\ni.e. the polynomial $\\displaystyle T_4(x)$ with $\\displaystyle x^4$ the\nhighest power of \\emph{x}.", 
-    "year": 2013, 
-    "sols": [
-        "We mechanically plug in the derivatives to the Taylor series formula\ngiven by\n\n$\\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}$\n\nwhere\n\n$\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds$.\n\nNow, we have\n\n$\\displaystyle F(0) = \\int_{0}^{0}\\ln(1 + s^2)\\,ds = 0$.\n\nUsing the FTC, we get\n\n$\\displaystyle F'(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\int_{0}^{x}\\ln(1 + s^2)\\,ds = \\ln(1 + x^2)\\big|_{x=0} = \\ln(1) = 0$.\n\nThe next derivative is (via the chain rule)\n\n$\\displaystyle F''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\ln(1 + x^2) = \\left.\\frac{2x}{1 + x^2}\\right|_{x=0} = 0$.\n\nThe next derivative is (via the quotient rule)\n\n$\\displaystyle F'''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2x}{1 + x^2}= \\left.\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2}\\right|_{x=0} = 2$.\n\nThe last derivative is\n\n\\begin{align*}\nF''''(0) &= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2} \\\\\n&= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2-2x^2}{(1 + x^2)^2}\\\\\n&= \\left.\\frac{-4x(1 + x^2)^2 - 2(1-x^2)\\cdot2(1+x^2)(2x)}{(1 + x^2)^4}\\right|_{x=0} \\\\\n&= 0 \\end{align*}.\n\nThus, the fourth Taylor polynomial is\n\n$\\displaystyle T_{4}(x) = \\frac{x^3}{3}$\n\nas required.", 
-        "Starting with\n\n$\\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}$\n\nWe see that\n\n$\\displaystyle \\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{s^{2n}}{n}$.\n\nIntegrating yields\n\n$\\displaystyle \\int_{0}^{x}\\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1} \\int_{0}^{x}\\frac{s^{2n}}{n} = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)}$\n\nPlugging in the first few values yields\n\n$\\displaystyle \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)} = \\frac{x^{3}}{3} - \\frac{x^5}{10} + ...$\n\nSince the question is seeking $\\displaystyle T_{4}(x)$, we have that\n\n$\\displaystyle T_{4}(x) = \\frac{x^3}{3}$\n\nas required."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle T_{4}(x) = \\frac{x^3}{3}\\)</span>as required.</p>\n", 
+    "answer_latex": "$\\displaystyle T_{4}(x) = \\frac{x^3}{3}$as required.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>First notice that the question is asking for the first 5 terms NOT the first 5 nonzero terms. Thus, it&#8217;s possible to grind this out simply by taking derivatives.</p>\n", 
+        "<p>The Taylor Series Formula about 0 is given by</p>\n<p><span class=\"math\">\\(\\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}\\)</span></p>\n", 
+        "<p>When taking derivatives, don&#8217;t forget that your first function is the function defined by the integral and that you&#8217;ll have to use the chain rule.</p>\n", 
+        "<p>(Alternate Solution) If you want, you can start with the Taylor expansion of <span class=\"math\">\\(\\displaystyle \\ln(1 + x)\\)</span> and go from there.</p>\n", 
+        "<p>The Taylor expansion is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "First notice that the question is asking for the first 5 terms NOT the\nfirst 5 nonzero terms. Thus, it's possible to grind this out simply by\ntaking derivatives.", 
         "The Taylor Series Formula about 0 is given by\n\n$\\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}$", 
         "When taking derivatives, don't forget that your first function is the\nfunction defined by the integral and that you'll have to use the chain\nrule.", 
         "(Alternate Solution) If you want, you can start with the Taylor\nexpansion of $\\displaystyle \\ln(1 + x)$ and go from there.", 
         "The Taylor expansion is given by\n\n$\\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}$."
-    ]
+    ], 
+    "hints_raw": [
+        "First notice that the question is asking for the first 5 terms NOT the first 5 nonzero terms. Thus, it's possible to grind this out simply by taking derivatives.\n", 
+        "The Taylor Series Formula about 0 is given by\n\n&lt;math> \\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}&lt;/math>\n", 
+        "When taking derivatives, don't forget that your first function is the function defined by the integral and that you'll have to use the chain rule.\n", 
+        "(Alternate Solution) If you want, you can start with the Taylor expansion of &lt;math> \\displaystyle \\ln(1 + x)&lt;/math> and go from there.\n", 
+        "The Taylor expansion is given by\n\n&lt;math> \\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}&lt;/math>.\n"
+    ], 
+    "num_votes": 10, 
+    "question": "10", 
+    "rating": 19, 
+    "sols_html": [
+        "<p>We mechanically plug in the derivatives to the Taylor series formula given by</p>\n<p><span class=\"math\">\\(\\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}\\)</span></p>\n<p>where</p>\n<p><span class=\"math\">\\(\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds\\)</span>.</p>\n<p>Now, we have</p>\n<p><span class=\"math\">\\(\\displaystyle F(0) = \\int_{0}^{0}\\ln(1 + s^2)\\,ds = 0\\)</span>.</p>\n<p>Using the FTC, we get</p>\n<p><span class=\"math\">\\(\\displaystyle F&#39;(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\int_{0}^{x}\\ln(1 + s^2)\\,ds = \\ln(1 + x^2)\\big|_{x=0} = \\ln(1) = 0\\)</span>.</p>\n<p>The next derivative is (via the chain rule)</p>\n<p><span class=\"math\">\\(\\displaystyle F&#39;&#39;(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\ln(1 + x^2) = \\left.\\frac{2x}{1 + x^2}\\right|_{x=0} = 0\\)</span>.</p>\n<p>The next derivative is (via the quotient rule)</p>\n<p><span class=\"math\">\\(\\displaystyle F&#39;&#39;&#39;(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2x}{1 + x^2}= \\left.\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2}\\right|_{x=0} = 2\\)</span>.</p>\n<p>The last derivative is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF&#39;&#39;&#39;&#39;(0) &amp;= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2} \\\\\n&amp;= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2-2x^2}{(1 + x^2)^2}\\\\\n&amp;= \\left.\\frac{-4x(1 + x^2)^2 - 2(1-x^2)\\cdot2(1+x^2)(2x)}{(1 + x^2)^4}\\right|_{x=0} \\\\\n&amp;= 0 \\end{aligned}\\]</span></p>\n<p>.</p>\n<p>Thus, the fourth Taylor polynomial is</p>\n<p><span class=\"math\">\\(\\displaystyle T_{4}(x) = \\frac{x^3}{3}\\)</span></p>\n<p>as required.</p>\n", 
+        "<p>Starting with</p>\n<p><span class=\"math\">\\(\\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}\\)</span></p>\n<p>We see that</p>\n<p><span class=\"math\">\\(\\displaystyle \\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{s^{2n}}{n}\\)</span>.</p>\n<p>Integrating yields</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{x}\\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1} \\int_{0}^{x}\\frac{s^{2n}}{n} = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)}\\)</span></p>\n<p>Plugging in the first few values yields</p>\n<p><span class=\"math\">\\(\\displaystyle \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)} = \\frac{x^{3}}{3} - \\frac{x^5}{10} + ...\\)</span></p>\n<p>Since the question is seeking <span class=\"math\">\\(\\displaystyle T_{4}(x)\\)</span>, we have that</p>\n<p><span class=\"math\">\\(\\displaystyle T_{4}(x) = \\frac{x^3}{3}\\)</span></p>\n<p>as required.</p>\n"
+    ], 
+    "sols_latex": [
+        "We mechanically plug in the derivatives to the Taylor series formula\ngiven by\n\n$\\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}$\n\nwhere\n\n$\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds$.\n\nNow, we have\n\n$\\displaystyle F(0) = \\int_{0}^{0}\\ln(1 + s^2)\\,ds = 0$.\n\nUsing the FTC, we get\n\n$\\displaystyle F'(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\int_{0}^{x}\\ln(1 + s^2)\\,ds = \\ln(1 + x^2)\\big|_{x=0} = \\ln(1) = 0$.\n\nThe next derivative is (via the chain rule)\n\n$\\displaystyle F''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\ln(1 + x^2) = \\left.\\frac{2x}{1 + x^2}\\right|_{x=0} = 0$.\n\nThe next derivative is (via the quotient rule)\n\n$\\displaystyle F'''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2x}{1 + x^2}= \\left.\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2}\\right|_{x=0} = 2$.\n\nThe last derivative is\n\n\\begin{align*}\nF''''(0) &= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2} \\\\\n&= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2-2x^2}{(1 + x^2)^2}\\\\\n&= \\left.\\frac{-4x(1 + x^2)^2 - 2(1-x^2)\\cdot2(1+x^2)(2x)}{(1 + x^2)^4}\\right|_{x=0} \\\\\n&= 0 \n\\end{align*}.\n\nThus, the fourth Taylor polynomial is\n\n$\\displaystyle T_{4}(x) = \\frac{x^3}{3}$\n\nas required.", 
+        "Starting with\n\n$\\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}$\n\nWe see that\n\n$\\displaystyle \\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{s^{2n}}{n}$.\n\nIntegrating yields\n\n$\\displaystyle \\int_{0}^{x}\\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1} \\int_{0}^{x}\\frac{s^{2n}}{n} = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)}$\n\nPlugging in the first few values yields\n\n$\\displaystyle \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)} = \\frac{x^{3}}{3} - \\frac{x^5}{10} + ...$\n\nSince the question is seeking $\\displaystyle T_{4}(x)$, we have that\n\n$\\displaystyle T_{4}(x) = \\frac{x^3}{3}$\n\nas required."
+    ], 
+    "sols_raw": [
+        "We mechanically plug in the derivatives to the Taylor series formula given by \n\n&lt;math> \\displaystyle F(x) = \\sum_{n=0}^{\\infty}\\frac{F^{(n)}(0)x^n}{n!}&lt;/math>\n\nwhere \n\n&lt;math> \\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds&lt;/math>.\n\nNow, we have \n\n&lt;math> \\displaystyle F(0) = \\int_{0}^{0}\\ln(1 + s^2)\\,ds = 0&lt;/math>.\n\nUsing the FTC, we get\n\n&lt;math> \\displaystyle F'(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\int_{0}^{x}\\ln(1 + s^2)\\,ds = \\ln(1 + x^2)\\big|_{x=0} = \\ln(1) = 0&lt;/math>.\n\nThe next derivative is (via the chain rule)\n\n&lt;math> \\displaystyle F''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\ln(1 + x^2) = \\left.\\frac{2x}{1 + x^2}\\right|_{x=0} = 0 &lt;/math>.\n\nThe next derivative is (via the quotient rule)\n\n&lt;math> \\displaystyle F'''(0) = \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2x}{1 + x^2}= \\left.\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2}\\right|_{x=0} = 2 &lt;/math>.\n\nThe last derivative is\n\n&lt;math> \n\\begin{align}\nF''''(0) &amp;= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2(1+x^2) - (2x)^2}{(1 + x^2)^2} \\\\\n&amp;= \\left.\\frac{d}{dx}\\right|_{x=0}\\frac{2-2x^2}{(1 + x^2)^2}\\\\\n&amp;= \\left.\\frac{-4x(1 + x^2)^2 - 2(1-x^2)\\cdot2(1+x^2)(2x)}{(1 + x^2)^4}\\right|_{x=0} \\\\\n&amp;= 0 \n\\end{align}\n&lt;/math>.\n\nThus, the fourth Taylor polynomial is\n\n&lt;math> \\displaystyle T_{4}(x) = \\frac{x^3}{3}&lt;/math>\n\nas required.\n", 
+        "Starting with\n\n&lt;math> \\displaystyle \\ln(1 + x) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}&lt;/math>\n\nWe see that\n\n&lt;math> \\displaystyle \\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{s^{2n}}{n}&lt;/math>.\n\nIntegrating yields\n\n&lt;math> \\displaystyle \\int_{0}^{x}\\ln(1 + s^2) = \\sum_{n=1}^{\\infty}(-1)^{n+1} \\int_{0}^{x}\\frac{s^{2n}}{n} = \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)}&lt;/math>\n\n\nPlugging in the first few values yields\n\n&lt;math> \\displaystyle \\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^{2n+1}}{n(2n+1)} = \\frac{x^{3}}{3} - \\frac{x^5}{10} + ...&lt;/math>\n\nSince the question is seeking &lt;math> \\displaystyle T_{4}(x)&lt;/math>, we have that\n\n&lt;math> \\displaystyle T_{4}(x) = \\frac{x^3}{3}&lt;/math>\n\nas required.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Taylor Series:</strong> Find the first five terms of the Taylor series centred at 0 for <span class=\"math\">\\(\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds\\)</span> i.e. the polynomial <span class=\"math\">\\(\\displaystyle T_4(x)\\)</span> with <span class=\"math\">\\(\\displaystyle x^4\\)</span> the highest power of <em>x</em>.</p>\n", 
+    "statement_latex": "\\textbf{Taylor Series:} Find the first five terms of the Taylor series\ncentred at 0 for $\\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds$\ni.e. the polynomial $\\displaystyle T_4(x)$ with $\\displaystyle x^4$ the\nhighest power of \\emph{x}.", 
+    "statement_raw": "'''Taylor Series:''' Find the first five terms of the Taylor series centred at 0 for &lt;math> \\displaystyle F(x) = \\int_{0}^{x}\\ln(1 + s^2)\\,ds&lt;/math> i.e. the polynomial &lt;math> \\displaystyle T_4(x)&lt;/math> with &lt;math> \\displaystyle x^4&lt;/math> the highest power of ''x''.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_10", 
+    "year": 2013
 }

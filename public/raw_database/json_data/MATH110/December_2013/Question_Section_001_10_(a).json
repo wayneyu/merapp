@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_Section_001_10_(a)", 
+    "answer_html": "<p>There are <span class=\"math\">\\(840\\)</span> ways to fill the slots.</p>\n", 
+    "answer_latex": "There are $840$ ways to\nfill the slots.", 
+    "contributors": [
+        "IainMoyles", 
+        "CarmenBruni"
+    ], 
     "course": "MATH110", 
-    "statement": "How many ways can $7$ graduate students be assigned to teach the $4$\nsections of MATH110 next year if each graduate student can be assigned\nto at most one section?\n\n\\emph{For this question, a numerical answer is required as a final\nanswer.}", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Here it matters which instructor teaches which course. How many choice of instructors are there for the first course? For the second course? Do you need to add or multiply these numbers?</p>\n"
+    ], 
+    "hints_latex": [
+        "Here it matters which instructor teaches which course. How many choice\nof instructors are there for the first course? For the second course? Do\nyou need to add or multiply these numbers?"
+    ], 
+    "hints_raw": [
+        "Here it matters which instructor teaches which course. How many choice of instructors are there for the first course? For the second course? Do you need to add or multiply these numbers?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "Section 001 10 (a)", 
+    "rating": 24, 
+    "sols_html": [
+        "<p>We have <span class=\"math\">\\(4\\)</span> slots to fill and <span class=\"math\">\\(7\\)</span> people to fill them. So that means, we have <span class=\"math\">\\(7\\)</span> choices for the first slot, <span class=\"math\">\\(6\\)</span> for the second, <span class=\"math\">\\(5\\)</span> for the third and <span class=\"math\">\\(4\\)</span> for the fourth. Since the number of choices for each slot does not dependent on the choice of the previous spots we need to multiply these numbers. So the total number of ways to fill the slots is <span class=\"math\">\\(7\\cdot6\\cdot5\\cdot4 = \\frac{7!}{3!} = 840\\)</span>. There are <span class=\"math\">\\(840\\)</span> ways to fill the slots.</p>\n"
+    ], 
+    "sols_latex": [
         "We have $4$ slots to fill and $7$ people to fill them. So that means, we\nhave $7$ choices for the first slot, $6$ for the second, $5$ for the\nthird and $4$ for the fourth. Since the number of choices for each slot\ndoes not dependent on the choice of the previous spots we need to\nmultiply these numbers. So the total number of ways to fill the slots is\n$7\\cdot6\\cdot5\\cdot4 = \\frac{7!}{3!} = 840$. There are $840$ ways to\nfill the slots."
     ], 
-    "hints": [
-        "Here it matters which instructor teaches which course. How many choice\nof instructors are there for the first course? For the second course? Do\nyou need to add or multiply these numbers?"
-    ]
+    "sols_raw": [
+        "We have &lt;math>4&lt;/math> slots to fill and &lt;math>7&lt;/math> people to fill them. So that means, we have &lt;math>7&lt;/math> choices for the first slot, &lt;math>6&lt;/math> for the second, &lt;math>5&lt;/math> for the third and &lt;math>4&lt;/math> for the fourth. Since the number of choices for each slot does not dependent on the choice of the previous spots we need to multiply these numbers. So the total number of ways to fill the slots is &lt;math>7\\cdot6\\cdot5\\cdot4 = \\frac{7!}{3!} = 840&lt;/math>. There are &lt;math>840&lt;/math> ways to fill the slots.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>How many ways can <span class=\"math\">\\(7\\)</span> graduate students be assigned to teach the <span class=\"math\">\\(4\\)</span> sections of MATH110 next year if each graduate student can be assigned to at most one section?</p>\n<p><em>For this question, a numerical answer is required as a final answer.</em></p>\n", 
+    "statement_latex": "How many ways can $7$ graduate students be assigned to teach the $4$\nsections of MATH110 next year if each graduate student can be assigned\nto at most one section?\n\n\\emph{For this question, a numerical answer is required as a final\nanswer.}", 
+    "statement_raw": "How many ways can &lt;math>7&lt;/math> graduate students be assigned to teach the &lt;math>4&lt;/math> sections of MATH110 next year if each graduate student can be assigned to at most one section?\n\n''For this question, a numerical answer is required as a final answer.''\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_Section_001_10_(a)", 
+    "year": 2013
 }

@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_08_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Use the \\textbf{first three terms} of the series found in\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(a)}{part\n(a)} to find a numerical estimate for the constant \\emph{e} (the base of\nthe natural logarithms).", 
-    "year": 2005, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "8 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Use the <strong>first three terms</strong> of the series found in <span>part (a)</span> to find a numerical estimate for the constant <em>e</em> (the base of the natural logarithms).</p>\n", 
+    "statement_latex": "Use the \\textbf{first three terms} of the series found in\n{part\n(a)} to find a numerical estimate for the constant \\emph{e} (the base of\nthe natural logarithms).", 
+    "statement_raw": "Use the '''first three terms''' of the series found in [[Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(a)|part (a)]] to find a numerical estimate for the constant ''e'' (the base of the natural logarithms).\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(b)", 
+    "year": 2005
 }

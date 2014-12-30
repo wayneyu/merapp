@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nA wealthy man was found murdered in his home. The police arrived on\nscene at 10:00 P.M. The temperature of the body at 10:00 P.M. was\n33$^{\\circ}$C and one hour later it was 31$^{\\circ}$C. The temperature\nof the room in which the body was found was 21$^{\\circ}$C and normal\nbody temperature is 37$^{\\circ}$C. Assume that the body cools after\ndeath according to Newton's Law of Cooling.\n\nDid the murder occur before 9:00 P.M.? Please justify your answer.", 
-    "year": 2011, 
-    "sols": [
-        "We know from\n\\href{Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_2_(a)}{Question\n2 (a)} that the police arrived -ln(4/3)/ln(5/6) hours after the murder\n(we add a negative sign because we look at this as a positive amount of\ntime now).\n\nSo the question is whether -ln(4/3)/ln(5/6) is larger than 1 or not.\nLet's see if this is meaningful or not. We know that ln(\\emph{x}) is\npositive if \\emph{x} is larger than 1. So ln(4/3) is positive and\nln(5/6) is negative. Since -ln(5/6) = ln(6/5), we can say that the\n(positive) amount of time it took for the police to get to the crime\nscene is ln(4/3)/ln(6/5).\n\nWhich of 4/3 or 6/5 is larger? Well, they are the same as 20/15 and\n18/15 respectively, so the denominator is smaller than the numerator and\nlikewise if we take a logarithm, hence ln(4/3) \\textgreater{} ln(6/5)\nand so\n\n\\begin{align*}\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} > 1\\end{align*} which means that the police arrived MORE\nthan an hour after the murder, that is, the murder took place BEFORE\n9:00PM."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} &gt; 1\\)</span> which means that the police arrived MORE than an hour after the murder, that is, the murder took place BEFORE 9:00PM.</p>\n", 
+    "answer_latex": " $\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} > 1$  which means that the police arrived MORE\nthan an hour after the murder, that is, the murder took place BEFORE\n9:00PM.", 
+    "contributors": [
+        "Konradbe", 
+        "YihanWu", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Looking back to\n\\href{Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_2_(a)}{\nQuestion 2 (a)}, how long after the murder did the police arrive? When\ndid the police arrive?\n\nSince you do not have access to a calculator during the exam, how can\nyou evaluate ln(4/3)/ln(5/6) without a calculator?"
-    ]
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Looking back to <span> Question 2 (a)</span>, how long after the murder did the police arrive? When did the police arrive?</p>\n<p>Since you do not have access to a calculator during the exam, how can you evaluate ln(4/3)/ln(5/6) without a calculator?</p>\n"
+    ], 
+    "hints_latex": [
+        "Looking back to\n{\nQuestion 2 (a)}, how long after the murder did the police arrive? When\ndid the police arrive?\n\nSince you do not have access to a calculator during the exam, how can\nyou evaluate ln(4/3)/ln(5/6) without a calculator?"
+    ], 
+    "hints_raw": [
+        "Looking back to [[Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_2_(a) | Question 2 (a)]], how long after the murder did the police arrive? When did the police arrive?\n\nSince you do not have access to a calculator during the exam, how can you evaluate ln(4/3)/ln(5/6) without a calculator?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (b)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>We know from <span>Question 2 (a)</span> that the police arrived -ln(4/3)/ln(5/6) hours after the murder (we add a negative sign because we look at this as a positive amount of time now).</p>\n<p>So the question is whether -ln(4/3)/ln(5/6) is larger than 1 or not. Let&#8217;s see if this is meaningful or not. We know that ln(<em>x</em>) is positive if <em>x</em> is larger than 1. So ln(4/3) is positive and ln(5/6) is negative. Since -ln(5/6) = ln(6/5), we can say that the (positive) amount of time it took for the police to get to the crime scene is ln(4/3)/ln(6/5).</p>\n<p>Which of 4/3 or 6/5 is larger? Well, they are the same as 20/15 and 18/15 respectively, so the denominator is smaller than the numerator and likewise if we take a logarithm, hence ln(4/3) &gt; ln(6/5) and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} &gt; 1\\end{aligned}\\]</span></p>\n<p>which means that the police arrived MORE than an hour after the murder, that is, the murder took place BEFORE 9:00PM.</p>\n"
+    ], 
+    "sols_latex": [
+        "We know from\n{Question\n2 (a)} that the police arrived -ln(4/3)/ln(5/6) hours after the murder\n(we add a negative sign because we look at this as a positive amount of\ntime now).\n\nSo the question is whether -ln(4/3)/ln(5/6) is larger than 1 or not.\nLet's see if this is meaningful or not. We know that ln(\\emph{x}) is\npositive if \\emph{x} is larger than 1. So ln(4/3) is positive and\nln(5/6) is negative. Since -ln(5/6) = ln(6/5), we can say that the\n(positive) amount of time it took for the police to get to the crime\nscene is ln(4/3)/ln(6/5).\n\nWhich of 4/3 or 6/5 is larger? Well, they are the same as 20/15 and\n18/15 respectively, so the denominator is smaller than the numerator and\nlikewise if we take a logarithm, hence ln(4/3) \\textgreater{} ln(6/5)\nand so\n\n\\begin{align*}\n\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} > 1\n\\end{align*} which means that the police arrived MORE\nthan an hour after the murder, that is, the murder took place BEFORE\n9:00PM."
+    ], 
+    "sols_raw": [
+        "We know from [[Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_2_(a)|Question 2 (a)]] that the police arrived -ln(4/3)/ln(5/6) hours after the murder (we add a negative sign because we look at this as a positive amount of time now).\n\nSo the question is whether -ln(4/3)/ln(5/6) is larger than 1 or not. Let's see if this is meaningful or not. We know that ln(''x'') is positive if ''x'' is larger than 1. So ln(4/3) is positive and ln(5/6) is negative. Since -ln(5/6) = ln(6/5), we can say that the (positive) amount of time it took for the police to get to the crime scene is ln(4/3)/ln(6/5).\n\nWhich of 4/3 or 6/5 is larger? Well, they are the same as 20/15 and 18/15 respectively, so the denominator is smaller than the numerator and likewise if we take a logarithm, hence ln(4/3) > ln(6/5) and so\n:&lt;math>\\displaystyle\n\\frac{\\ln(4/3)}{\\ln(6/5)} > 1\n&lt;/math>\nwhich means that the police arrived MORE than an hour after the murder, that is, the murder took place BEFORE 9:00PM.\n"
+    ], 
+    "solvers": [
+        "Alfred"
+    ], 
+    "statement_html": "<p><em><strong>Full-Solution Problems.</strong> In questions 2-8, justify your answers and <strong>show all your work.</strong> If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.</em></p>\n<p>A wealthy man was found murdered in his home. The police arrived on scene at 10:00 P.M. The temperature of the body at 10:00 P.M. was 33<span class=\"math\">\\(^{\\circ}\\)</span>C and one hour later it was 31<span class=\"math\">\\(^{\\circ}\\)</span>C. The temperature of the room in which the body was found was 21<span class=\"math\">\\(^{\\circ}\\)</span>C and normal body temperature is 37<span class=\"math\">\\(^{\\circ}\\)</span>C. Assume that the body cools after death according to Newton&#8217;s Law of Cooling.</p>\n<p>Did the murder occur before 9:00 P.M.? Please justify your answer.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nA wealthy man was found murdered in his home. The police arrived on\nscene at 10:00 P.M. The temperature of the body at 10:00 P.M. was\n33$^{\\circ}$C and one hour later it was 31$^{\\circ}$C. The temperature\nof the room in which the body was found was 21$^{\\circ}$C and normal\nbody temperature is 37$^{\\circ}$C. Assume that the body cools after\ndeath according to Newton's Law of Cooling.\n\nDid the murder occur before 9:00 P.M.? Please justify your answer.", 
+    "statement_raw": "'''''Full-Solution Problems.''' In questions 2-8, justify your answers and '''show all your work.''' If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.''\n\nA wealthy man was found murdered in his home. The police arrived on scene at 10:00 P.M. The temperature of the body at 10:00 P.M. was 33\u00b0C and one hour later it was 31\u00b0C. The temperature of the room in which the body was found was 21\u00b0C and normal body temperature is 37\u00b0C. Assume that the body cools after death according to Newton's Law of Cooling.\n\nDid the murder occur before 9:00 P.M.? Please justify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_law_of_cooling"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_02_(b)", 
+    "year": 2011
 }

@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_08", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}f(x) = \\left\\{\n \\begin{array}{lr}\n   e^{-x} & \\text{if}\\quad x < t\\\\\n   2(x+1) & \\text{if} \\quad x \\geq t\n  \\end{array}\n\\right.\\end{align*}\n\nExplain why there exists a number $t$ such that $f$ is continuous.\n\n(Hint: apply the Intermediate Value Theorem to the function\n$e^{-t}-2(t+1)$.)", 
-    "year": 2013, 
-    "sols": [
-        "The condition for $f$ to be continuous is\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\\end{align*}\n\nSince both piece of the function are continuous, we can use direct\nsubstitution and find $t$. We must show there exists a solution to the\nabove equation. Equivalently we want to show that the following function\n$g(t)$ has a zero\n\n\\begin{align*}\ng(t)=e^{-t}-2(t+1)\\end{align*}\n\nNote that $g$ is continuous since it is constructed from continuous\nfunctions. We aim to apply IVT. Observe\n\n\\begin{align*}\ng(0)&=e^0-2<0\\\\\ng(-1)&=e^1-2(-1+1)=e>0\\end{align*}\n\nHence by the IVT there exists $c \\in (-1,0)$ such that $g(c)=0$. At\n$t=c$, we have $e^{-c} = 2(c+1)$. In turn, this means we have the two\none sided limits equalling each other and hence $f(x)$ will be\ncontinuous by choosing $x=c$."
+    "answer_html": "<p>In turn, this means we have the two one sided limits equalling each other and hence <span class=\"math\">\\(f(x)\\)</span> will be continuous by choosing <span class=\"math\">\\(x=c\\)</span>.</p>\n", 
+    "answer_latex": "In turn, this means we have the two\none sided limits equalling each other and hence $f(x)$ will be\ncontinuous by choosing $x=c$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
-        "We write down what it means for $f$ to be continuous. This is given by\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\\end{align*}\n\nIn order for our function to be continuous, we need a solution to the\nabove equation. Now we can apply the hint in the problem to use the\nintermediate value theorem."
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>We write down what it means for <span class=\"math\">\\(f\\)</span> to be continuous. This is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow t^-} f(x) &amp;= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&amp;=2(t+1)\\end{aligned}\\]</span></p>\n<p>In order for our function to be continuous, we need a solution to the above equation. Now we can apply the hint in the problem to use the intermediate value theorem.</p>\n"
+    ], 
+    "hints_latex": [
+        "We write down what it means for $f$ to be continuous. This is given by\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\n\\end{align*}\n\nIn order for our function to be continuous, we need a solution to the\nabove equation. Now we can apply the hint in the problem to use the\nintermediate value theorem."
+    ], 
+    "hints_raw": [
+        "We write down what it means for &lt;math>f&lt;/math> to be continuous. This is given by\n\n&lt;math>\\begin{align}\n\\lim_{x\\rightarrow t^-} f(x) &amp;= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&amp;=2(t+1)\\end{align}&lt;/math>\n\nIn order for our function to be continuous, we need a solution to the above equation. Now we can apply the hint in the problem to use the intermediate value theorem.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "8", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>The condition for <span class=\"math\">\\(f\\)</span> to be continuous is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow t^-} f(x) &amp;= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&amp;=2(t+1)\\end{aligned}\\]</span></p>\n<p>Since both piece of the function are continuous, we can use direct substitution and find <span class=\"math\">\\(t\\)</span>. We must show there exists a solution to the above equation. Equivalently we want to show that the following function <span class=\"math\">\\(g(t)\\)</span> has a zero</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(t)=e^{-t}-2(t+1)\\end{aligned}\\]</span></p>\n<p>Note that <span class=\"math\">\\(g\\)</span> is continuous since it is constructed from continuous functions. We aim to apply IVT. Observe</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(0)&amp;=e^0-2&lt;0\\\\\ng(-1)&amp;=e^1-2(-1+1)=e&gt;0\\end{aligned}\\]</span></p>\n<p>Hence by the IVT there exists <span class=\"math\">\\(c \\in (-1,0)\\)</span> such that <span class=\"math\">\\(g(c)=0\\)</span>. At <span class=\"math\">\\(t=c\\)</span>, we have <span class=\"math\">\\(e^{-c} = 2(c+1)\\)</span>. In turn, this means we have the two one sided limits equalling each other and hence <span class=\"math\">\\(f(x)\\)</span> will be continuous by choosing <span class=\"math\">\\(x=c\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The condition for $f$ to be continuous is\n\n\\begin{align*}\n\\lim_{x\\rightarrow t^-} f(x) &= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&=2(t+1)\n\\end{align*}\n\nSince both piece of the function are continuous, we can use direct\nsubstitution and find $t$. We must show there exists a solution to the\nabove equation. Equivalently we want to show that the following function\n$g(t)$ has a zero\n\n\\begin{align*}\ng(t)=e^{-t}-2(t+1)\n\\end{align*}\n\nNote that $g$ is continuous since it is constructed from continuous\nfunctions. We aim to apply IVT. Observe\n\n\\begin{align*}\ng(0)&=e^0-2<0\\\\\ng(-1)&=e^1-2(-1+1)=e>0\n\\end{align*}\n\nHence by the IVT there exists $c \\in (-1,0)$ such that $g(c)=0$. At\n$t=c$, we have $e^{-c} = 2(c+1)$. In turn, this means we have the two\none sided limits equalling each other and hence $f(x)$ will be\ncontinuous by choosing $x=c$."
+    ], 
+    "sols_raw": [
+        "The condition for &lt;math>f&lt;/math> to be continuous is\n\n&lt;math>\\begin{align}\n\\lim_{x\\rightarrow t^-} f(x) &amp;= \\lim_{x\\rightarrow t^+} f(x)\\\\\ne^{-t}&amp;=2(t+1)\\end{align}&lt;/math>\n\nSince both piece of the function are continuous, we can use direct substitution and find &lt;math>t&lt;/math>. We must show there exists a solution to the above equation. Equivalently we want to show that the following function &lt;math>g(t)&lt;/math> has a zero\n\n&lt;math>\\begin{align}\ng(t)=e^{-t}-2(t+1)\\end{align}&lt;/math>\n\nNote that &lt;math>g&lt;/math> is continuous since it is constructed from continuous functions. We aim to apply IVT. Observe\n\n&lt;math>\\begin{align}\ng(0)&amp;=e^0-2&lt;0\\\\\ng(-1)&amp;=e^1-2(-1+1)=e>0\\end{align}&lt;/math>\n\nHence by the IVT there exists &lt;math>c \\in (-1,0)&lt;/math> such that &lt;math>g(c)=0&lt;/math>. At &lt;math>t=c&lt;/math>, we have &lt;math>e^{-c} = 2(c+1)&lt;/math>. In turn, this means we have the two one sided limits equalling each other and hence &lt;math>f(x)&lt;/math> will be continuous by choosing &lt;math>x=c&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\left\\{\n \\begin{array}{lr}\n   e^{-x} &amp; \\text{if}\\quad x &lt; t\\\\\n   2(x+1) &amp; \\text{if} \\quad x \\geq t\n  \\end{array}\n\\right.\\end{aligned}\\]</span></p>\n<p>Explain why there exists a number <span class=\"math\">\\(t\\)</span> such that <span class=\"math\">\\(f\\)</span> is continuous.</p>\n<p>(Hint: apply the Intermediate Value Theorem to the function <span class=\"math\">\\(e^{-t}-2(t+1)\\)</span>.)</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nf(x) = \\left\\{\n \\begin{array}{lr}\n   e^{-x} & \\text{if}\\quad x < t\\\\\n   2(x+1) & \\text{if} \\quad x \\geq t\n  \\end{array}\n\\right.\n\\end{align*}\n\nExplain why there exists a number $t$ such that $f$ is continuous.\n\n(Hint: apply the Intermediate Value Theorem to the function\n$e^{-t}-2(t+1)$.)", 
+    "statement_raw": "Let\n:&lt;math>f(x) = \\left\\{\n \\begin{array}{lr}\n   e^{-x} &amp; \\text{if}\\quad x &lt; t\\\\\n   2(x+1) &amp; \\text{if} \\quad x \\geq t\n  \\end{array}\n\\right.&lt;/math>\n\nExplain why there exists a number &lt;math>t&lt;/math> such that &lt;math>f&lt;/math> is continuous.\n\n(Hint: apply the Intermediate Value Theorem to the function &lt;math>e^{-t}-2(t+1)&lt;/math>.)\n", 
+    "term": "December", 
+    "topics": [
+        "Intermediate_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_08", 
+    "year": 2013
 }

@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_02_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "If the continuous random variable \\emph{x} has probability density\n$\\displaystyle p(x) = \\frac{\\pi}{2}\\sin(\\pi x)$ for\n$\\displaystyle 0 \\leq x \\leq 1$, find the mean value of \\emph{x}.", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>If the continuous random variable <em>x</em> has probability density <span class=\"math\">\\(\\displaystyle p(x) = \\frac{\\pi}{2}\\sin(\\pi x)\\)</span> for <span class=\"math\">\\(\\displaystyle 0 \\leq x \\leq 1\\)</span>, find the mean value of <em>x</em>.</p>\n", 
+    "statement_latex": "If the continuous random variable \\emph{x} has probability density\n$\\displaystyle p(x) = \\frac{\\pi}{2}\\sin(\\pi x)$ for\n$\\displaystyle 0 \\leq x \\leq 1$, find the mean value of \\emph{x}.", 
+    "statement_raw": "If the continuous random variable ''x'' has probability density &lt;math> \\displaystyle p(x) = \\frac{\\pi}{2}\\sin(\\pi x) &lt;/math> for &lt;math>\\displaystyle 0 \\leq x \\leq 1 &lt;/math>, find the mean value of ''x''.\n", 
+    "term": "April", 
+    "topics": [
+        "Mean_(continuous)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_02_(c)", 
+    "year": 2006
 }

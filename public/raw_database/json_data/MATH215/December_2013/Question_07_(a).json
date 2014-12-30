@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_07_(a)", 
+    "answer_html": "<p>Finally, if <span class=\"math\">\\(y(0) &gt; 1\\)</span> then <span class=\"math\">\\(y \\rightarrow 1\\)</span> as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>.</p>\n", 
+    "answer_latex": "Finally, if\n$y(0) > 1$ then $y \\rightarrow 1$ as $t \\rightarrow \\infty$.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH215", 
-    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{align*}\n\n(a) Find the equilibrium solutions (critical points), determine the\nstability (stable or unstable) of each, and find\n$\\lim_{t \\to \\infty} y(t)$ for all possible values of the initial\ncondition $\\displaystyle y_0$.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The equilibrium solutions are the constant solutions where <span class=\"math\">\\(dy/dt = 0\\)</span>. To assess the stability, consider what the sign of the derivative <span class=\"math\">\\(dy/dt\\)</span> tells you about solutions near the equilibrium points.</p>\n"
+    ], 
+    "hints_latex": [
+        "The equilibrium solutions are the constant solutions where $dy/dt = 0$.\nTo assess the stability, consider what the sign of the derivative\n$dy/dt$ tells you about solutions near the equilibrium points."
+    ], 
+    "hints_raw": [
+        "The equilibrium solutions are the constant solutions where &lt;math>dy/dt = 0&lt;/math>. To assess the stability, consider what the sign of the derivative &lt;math>dy/dt&lt;/math> tells you about solutions near the equilibrium points.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "7 (a)", 
+    "rating": 73, 
+    "sols_html": [
+        "<p>Setting <span class=\"math\">\\(dy/dt = 0\\)</span>, we have <span class=\"math\">\\(-y (y-1)^2 = 0\\)</span> so <span class=\"math\">\\(y = 0, 1\\)</span>.</p>\n<p>Looking at the sign of <span class=\"math\">\\(dy/dt\\)</span>, we have <span class=\"math\">\\(\\begin{cases} y&#39; &gt; 0, \\quad y &lt; 0 \\\\ y&#39; &lt; 0, \\quad 0 &lt; y &lt; 1 \\\\ y&#39; &lt; 0, \\quad y &gt; 1 \\end{cases}\\)</span>.</p>\n<p>Thus, if we start below <span class=\"math\">\\(y=0\\)</span>, <span class=\"math\">\\(y(t)\\)</span> increases; if we start above <span class=\"math\">\\(y=0\\)</span> but below <span class=\"math\">\\(y=1\\)</span>, <span class=\"math\">\\(y(t)\\)</span> decreases. Either way, we approach <span class=\"math\">\\(y=0\\)</span> so <span class=\"math\">\\(y=0\\)</span> is a stable equilibrium solution.</p>\n<p>If we start below <span class=\"math\">\\(y=1\\)</span> but above <span class=\"math\">\\(y=0\\)</span>, <span class=\"math\">\\(y(t)\\)</span> decreases and moves away from <span class=\"math\">\\(y=1\\)</span> (<span class=\"math\">\\(\\displaystyle y&#39; &lt; 0\\)</span>) and if we start above <span class=\"math\">\\(y=1\\)</span>, <span class=\"math\">\\(y(t)\\)</span> decreases and approaches <span class=\"math\">\\(y=1\\)</span> (<span class=\"math\">\\(\\displaystyle y&#39; &lt; 0\\)</span>). However, because the solution moves away from <span class=\"math\">\\(y=1\\)</span> locally on at least one side, <span class=\"math\">\\(y=1\\)</span> is an unstable equilibrium solution.</p>\n<p>All possible values for <span class=\"math\">\\(\\lim_{t \\rightarrow \\infty} y(t)\\)</span> include 0 and 1. If <span class=\"math\">\\(y(0) &lt; 0\\)</span>, <span class=\"math\">\\(y \\rightarrow 0\\)</span> as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>. If <span class=\"math\">\\(0 &lt; y(0) &lt; 1\\)</span>, <span class=\"math\">\\(y \\rightarrow 0\\)</span> as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>. Finally, if <span class=\"math\">\\(y(0) &gt; 1\\)</span> then <span class=\"math\">\\(y \\rightarrow 1\\)</span> as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "Setting $dy/dt = 0$, we have $-y (y-1)^2 = 0$ so $y = 0, 1$.\n\nLooking at the sign of $dy/dt$, we have\n$\\begin{cases} y' > 0, \\quad y < 0 \\\\ y' < 0, \\quad 0 < y < 1 \\\\ y' < 0, \\quad y > 1 \\end{cases}$.\n\nThus, if we start below $y=0$, $y(t)$ increases; if we start above $y=0$\nbut below $y=1$, $y(t)$ decreases. Either way, we approach $y=0$ so\n$y=0$ is a stable equilibrium solution.\n\nIf we start below $y=1$ but above $y=0$, $y(t)$ decreases and moves away\nfrom $y=1$ ($\\displaystyle y' < 0$) and if we start above $y=1$, $y(t)$\ndecreases and approaches $y=1$ ($\\displaystyle y' < 0$). However,\nbecause the solution moves away from $y=1$ locally on at least one side,\n$y=1$ is an unstable equilibrium solution.\n\nAll possible values for $\\lim_{t \\rightarrow \\infty} y(t)$ include 0 and\n1. If $y(0) < 0$, $y \\rightarrow 0$ as $t \\rightarrow \\infty$. If\n$0 < y(0) < 1$, $y \\rightarrow 0$ as $t \\rightarrow \\infty$. Finally, if\n$y(0) > 1$ then $y \\rightarrow 1$ as $t \\rightarrow \\infty$."
     ], 
-    "hints": [
-        "The equilibrium solutions are the constant solutions where $dy/dt = 0$.\nTo assess the stability, consider what the sign of the derivative\n$dy/dt$ tells you about solutions near the equilibrium points."
-    ]
+    "sols_raw": [
+        "Setting &lt;math>dy/dt = 0&lt;/math>, we have &lt;math>-y (y-1)^2 = 0&lt;/math> so &lt;math>y = 0, 1&lt;/math>.\n\nLooking at the sign of &lt;math>dy/dt&lt;/math>, we have &lt;math>\\begin{cases} y' > 0, \\quad y &lt; 0 \\\\ y' &lt; 0, \\quad 0 &lt; y &lt; 1 \\\\ y' &lt; 0, \\quad y > 1 \\end{cases}&lt;/math>.\n\nThus, if we start below &lt;math>y=0&lt;/math>, &lt;math>y(t)&lt;/math> increases; if we start above &lt;math>y=0&lt;/math> but below &lt;math>y=1&lt;/math>, &lt;math>y(t)&lt;/math> decreases. Either way, we approach &lt;math>y=0&lt;/math> so &lt;math>y=0&lt;/math> is a stable equilibrium solution.\n\nIf we start below &lt;math>y=1&lt;/math> but above &lt;math>y=0&lt;/math>, &lt;math>y(t)&lt;/math> decreases and moves away from &lt;math>y=1&lt;/math> (&lt;math>\\displaystyle y' &lt; 0&lt;/math>) and if we start above &lt;math>y=1&lt;/math>, &lt;math>y(t)&lt;/math> decreases and approaches &lt;math>y=1&lt;/math> (&lt;math>\\displaystyle y' &lt; 0&lt;/math>). However, because the solution moves away from &lt;math>y=1&lt;/math> locally on at least one side, &lt;math>y=1&lt;/math> is an unstable equilibrium solution.\n\nAll possible values for &lt;math>\\lim_{t \\rightarrow \\infty} y(t)&lt;/math> include 0 and 1. If &lt;math>y(0) &lt; 0&lt;/math>, &lt;math>y \\rightarrow 0&lt;/math> as &lt;math>t \\rightarrow \\infty&lt;/math>. If &lt;math>0 &lt; y(0) &lt; 1&lt;/math>, &lt;math>y \\rightarrow 0&lt;/math> as &lt;math>t \\rightarrow \\infty&lt;/math>. Finally, if &lt;math>y(0) > 1&lt;/math> then &lt;math>y \\rightarrow 1&lt;/math> as &lt;math>t \\rightarrow \\infty&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Consider the following initial value problem for a first-order autonomous ODE:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{aligned}\\]</span></p>\n<p>(a) Find the equilibrium solutions (critical points), determine the stability (stable or unstable) of each, and find <span class=\"math\">\\(\\lim_{t \\to \\infty} y(t)\\)</span> for all possible values of the initial condition <span class=\"math\">\\(\\displaystyle y_0\\)</span>.</p>\n", 
+    "statement_latex": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\n\\end{align*}\n\n(a) Find the equilibrium solutions (critical points), determine the\nstability (stable or unstable) of each, and find\n$\\lim_{t \\to \\infty} y(t)$ for all possible values of the initial\ncondition $\\displaystyle y_0$.", 
+    "statement_raw": "Consider the following initial value problem for a first-order autonomous ODE: \n\n:&lt;math>\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0&lt;/math>\n\n(a) Find the equilibrium solutions (critical points), determine the stability (stable or unstable) of each, and find &lt;math>\\lim_{t \\to \\infty} y(t)&lt;/math> for all possible values of the initial condition &lt;math>\\displaystyle y_0&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)", 
+    "year": 2013
 }

@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_07_(b)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x)=\\sin x-\\cos x$.\n\nFind all values of $x$ satisfying the equation $\\displaystyle f'(x)=0$\nin the interval $[0,\\pi)$. Justify your answer.", 
-    "year": 2012, 
-    "sols": [
-        "This question is similar to the previous one, except we are using the\nderivative:\n\n$\\displaystyle f'(x) = \\cos x - (-\\sin x) = \\cos x + \\sin x$\n\nSetting this equal to zero and moving a term over gives\n\n$\\sin x = - \\cos x$ (or $\\cos x = -\\sin x$)\n\nThis means that $\\sin x$ and $\\cos x$ must have equal values but\nopposite signs. On the unit circle, $\\cos \\theta$ corresponds to\nx-values and $\\sin \\theta$ corresponds to y-values, so the opposite\nsigns place us in quadrant II of the coordinate plane (the restriction\nof $[0, \\pi)$ rules out quadrant IV). The angle where the values of\n$\\sin \\theta$ and $\\cos \\theta$ are equal in this quadrant is $3\\pi/4$,\nso $x = 3\\pi/4$.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_7ab_unit_circle.jpg}\n\\caption{MER MATH110 December 2012 Question 7ab unit circle.jpg}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_7ab_unit_circle.jpg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_7ab_unit_circle.jpg}", 
+    "contributors": [
+        "ThomasWong", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Solving the equation <span class=\"math\">\\(f&#39;(x) = 0\\)</span> will be similar to the previous question - you&#8217;ll want to know the values of <span class=\"math\">\\(\\sin x\\)</span> and <span class=\"math\">\\(\\cos x\\)</span> at certain angles. However the answer will be different from before - how is this equation different than the previous equation?</p>\n"
+    ], 
+    "hints_latex": [
         "Solving the equation $f'(x) = 0$ will be similar to the previous\nquestion - you'll want to know the values of $\\sin x$ and $\\cos x$ at\ncertain angles. However the answer will be different from before - how\nis this equation different than the previous equation?"
-    ]
+    ], 
+    "hints_raw": [
+        "Solving the equation &lt;math>f '(x) = 0&lt;/math> will be similar to the previous question - you'll want to know the values of &lt;math>\\sin x&lt;/math> and &lt;math>\\cos x&lt;/math> at certain angles.  However the answer will be different from before - how is this equation different than the previous equation?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>This question is similar to the previous one, except we are using the derivative:</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(x) = \\cos x - (-\\sin x) = \\cos x + \\sin x\\)</span></p>\n<p>Setting this equal to zero and moving a term over gives</p>\n<p><span class=\"math\">\\(\\sin x = - \\cos x\\)</span> (or <span class=\"math\">\\(\\cos x = -\\sin x\\)</span>)</p>\n<p>This means that <span class=\"math\">\\(\\sin x\\)</span> and <span class=\"math\">\\(\\cos x\\)</span> must have equal values but opposite signs. On the unit circle, <span class=\"math\">\\(\\cos \\theta\\)</span> corresponds to x-values and <span class=\"math\">\\(\\sin \\theta\\)</span> corresponds to y-values, so the opposite signs place us in quadrant II of the coordinate plane (the restriction of <span class=\"math\">\\([0, \\pi)\\)</span> rules out quadrant IV). The angle where the values of <span class=\"math\">\\(\\sin \\theta\\)</span> and <span class=\"math\">\\(\\cos \\theta\\)</span> are equal in this quadrant is <span class=\"math\">\\(3\\pi/4\\)</span>, so <span class=\"math\">\\(x = 3\\pi/4\\)</span>.</p>\n<p><img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_7ab_unit_circle.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "This question is similar to the previous one, except we are using the\nderivative:\n\n$\\displaystyle f'(x) = \\cos x - (-\\sin x) = \\cos x + \\sin x$\n\nSetting this equal to zero and moving a term over gives\n\n$\\sin x = - \\cos x$ (or $\\cos x = -\\sin x$)\n\nThis means that $\\sin x$ and $\\cos x$ must have equal values but\nopposite signs. On the unit circle, $\\cos \\theta$ corresponds to\nx-values and $\\sin \\theta$ corresponds to y-values, so the opposite\nsigns place us in quadrant II of the coordinate plane (the restriction\nof $[0, \\pi)$ rules out quadrant IV). The angle where the values of\n$\\sin \\theta$ and $\\cos \\theta$ are equal in this quadrant is $3\\pi/4$,\nso $x = 3\\pi/4$.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_7ab_unit_circle.jpg}"
+    ], 
+    "sols_raw": [
+        "This question is similar to the previous one, except we are using the derivative:\n\n&lt;math>\\displaystyle f'(x) = \\cos x - (-\\sin x) = \\cos x + \\sin x&lt;/math>\n\nSetting this equal to zero and moving a term over gives\n\n&lt;math>\\sin x = - \\cos x&lt;/math> (or &lt;math>\\cos x = -\\sin x&lt;/math>)\n\nThis means that &lt;math>\\sin x&lt;/math> and &lt;math>\\cos x&lt;/math> must have equal values but opposite signs.  On the unit circle, &lt;math>\\cos \\theta&lt;/math> corresponds to x-values and &lt;math>\\sin \\theta&lt;/math> corresponds to y-values, so the opposite signs place us in quadrant II of the coordinate plane (the restriction of &lt;math>[0, \\pi)&lt;/math> rules out quadrant IV).  The angle where the values of &lt;math>\\sin \\theta&lt;/math> and &lt;math>\\cos \\theta&lt;/math> are equal in this quadrant is &lt;math>3\\pi/4&lt;/math>, so &lt;math>x = 3\\pi/4&lt;/math>.\n\n[[File:MER MATH110 December 2012 Question 7ab unit circle.jpg|400px]]\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x)=\\sin x-\\cos x\\)</span>.</p>\n<p>Find all values of <span class=\"math\">\\(x\\)</span> satisfying the equation <span class=\"math\">\\(\\displaystyle f&#39;(x)=0\\)</span> in the interval <span class=\"math\">\\([0,\\pi)\\)</span>. Justify your answer.</p>\n", 
+    "statement_latex": "Let $f(x)=\\sin x-\\cos x$.\n\nFind all values of $x$ satisfying the equation $\\displaystyle f'(x)=0$\nin the interval $[0,\\pi)$. Justify your answer.", 
+    "statement_raw": "Let &lt;math>f(x)=\\sin x-\\cos x&lt;/math>.\n\nFind all values of &lt;math>x&lt;/math> satisfying the equation &lt;math>\\displaystyle f'(x)=0&lt;/math> in the interval &lt;math>[0,\\pi)&lt;/math>. Justify your answer.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_07_(b)", 
+    "year": 2012
 }

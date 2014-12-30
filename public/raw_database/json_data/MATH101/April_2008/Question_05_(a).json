@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(Error \\leq \\frac{1}{(720)(13)} &lt; \\frac{1}{(100)(10)} = 0.001\\)</span>and this completes the question.</p>\n", 
+    "answer_latex": "$Error \\leq \\frac{1}{(720)(13)} < \\frac{1}{(100)(10)} = 0.001$and this completes the question.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
+    ], 
     "course": "MATH101", 
-    "statement": "Let\n\n\\begin{align*}I = \\int_0^1 \\cos(x^2)\\,dx\\end{align*}\n\nWrite down the first three nonzero terms obtained by using Maclaurin\nseries to estimate $I$, and explain why the error in using this estimate\nis less than 0.001.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The Maclaurin series for <span class=\"math\">\\(\\cos(x)\\)</span> is</p>\n<p><span class=\"math\">\\(\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{2n}}{(2n)!}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The Maclaurin series for $\\cos(x)$ is\n\n$\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{2n}}{(2n)!}$"
+    ], 
+    "hints_raw": [
+        "The Maclaurin series for &lt;math> \\cos(x) &lt;/math> is\n\n&lt;math>\n\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{2n}}{(2n)!}\n&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "5 (a)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>As suggested in the hint, we know that</p>\n<p><span class=\"math\">\\(\\cos(y) = 1 - \\frac{y^{2}}{2!} + \\frac{y^{4}}{4!} - \\frac{y^{6}}{6!}... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}y^{2n}}{(2n)!}\\)</span></p>\n<p>Plugging in <span class=\"math\">\\(y = x^{2}\\)</span> gives</p>\n<p><span class=\"math\">\\(\\cos(x^{2}) = 1 - \\frac{x^{4}}{2} + \\frac{x^{8}}{24} - \\frac{x^{12}}{720} + ...  = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n}}{(2n)!}\\)</span></p>\n<p>Now, integrating gives</p>\n<p><span class=\"math\">\\(\\int \\cos(x^{2}) = C + x - \\frac{x^{5}}{(2)(5)} + \\frac{x^{9}}{(24)(9)} + \\frac{x^{13}}{(720)(13)} + ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n+1}}{(4n+1)(2n)!}\\)</span></p>\n<p>Now, using just the first three terms and integrating from 0 to 1 gives</p>\n<p><span class=\"math\">\\(\\int_{0}^{1}\\cos(x^{2}) =  1 - \\frac{1}{10} + \\frac{1}{216}\\)</span></p>\n<p>This expansion is correct to within <span class=\"math\">\\(0.001\\)</span> which we can show by using the alternating series estimation theorem. We know that</p>\n<p><span class=\"math\">\\(b_{n} = \\frac{1}{(4n+1)(2n)!}\\)</span></p>\n<p>is decreasing. The terms also limit to 0 and clearly this is an alternating series. Hence, the error above using three terms is no worse than what the fourth term tells us it is. Hence, the error is bounded above by</p>\n<p><span class=\"math\">\\(Error \\leq \\frac{1}{(720)(13)} &lt; \\frac{1}{(100)(10)} = \\frac{1}{1000} = 0.001\\)</span></p>\n<p>and this completes the question.</p>\n"
+    ], 
+    "sols_latex": [
         "As suggested in the hint, we know that\n\n$\\cos(y) = 1 - \\frac{y^{2}}{2!} + \\frac{y^{4}}{4!} - \\frac{y^{6}}{6!}... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}y^{2n}}{(2n)!}$\n\nPlugging in $y = x^{2}$ gives\n\n$\\cos(x^{2}) = 1 - \\frac{x^{4}}{2} + \\frac{x^{8}}{24} - \\frac{x^{12}}{720} + ...  = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n}}{(2n)!}$\n\nNow, integrating gives\n\n$\\int \\cos(x^{2}) = C + x - \\frac{x^{5}}{(2)(5)} + \\frac{x^{9}}{(24)(9)} + \\frac{x^{13}}{(720)(13)} + ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n+1}}{(4n+1)(2n)!}$\n\nNow, using just the first three terms and integrating from 0 to 1 gives\n\n$\\int_{0}^{1}\\cos(x^{2}) =  1 - \\frac{1}{10} + \\frac{1}{216}$\n\nThis expansion is correct to within $0.001$ which we can show by using\nthe alternating series estimation theorem. We know that\n\n$b_{n} = \\frac{1}{(4n+1)(2n)!}$\n\nis decreasing. The terms also limit to 0 and clearly this is an\nalternating series. Hence, the error above using three terms is no worse\nthan what the fourth term tells us it is. Hence, the error is bounded\nabove by\n\n$Error \\leq \\frac{1}{(720)(13)} < \\frac{1}{(100)(10)} = \\frac{1}{1000} = 0.001$\n\nand this completes the question."
     ], 
-    "hints": [
-        "The Maclaurin series for $\\cos(x)$ is\n\n$\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{2n}}{(2n)!}$"
-    ]
+    "sols_raw": [
+        "As suggested in the hint, we know that\n\n&lt;math>\n\\cos(y) = 1 - \\frac{y^{2}}{2!} + \\frac{y^{4}}{4!} - \\frac{y^{6}}{6!}... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}y^{2n}}{(2n)!}\n&lt;/math>\n\nPlugging in &lt;math> y = x^{2} &lt;/math> gives\n\n&lt;math>\n\\cos(x^{2}) = 1 - \\frac{x^{4}}{2} + \\frac{x^{8}}{24} - \\frac{x^{12}}{720} + ...  = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n}}{(2n)!}\n&lt;/math>\n\nNow, integrating gives\n\n&lt;math>\n\\int \\cos(x^{2}) = C + x - \\frac{x^{5}}{(2)(5)} + \\frac{x^{9}}{(24)(9)} + \\frac{x^{13}}{(720)(13)} + ... = \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}x^{4n+1}}{(4n+1)(2n)!}\n&lt;/math>\n\nNow, using just the first three terms and integrating from 0 to 1 gives\n\n&lt;math>\n\\int_{0}^{1}\\cos(x^{2}) =  1 - \\frac{1}{10} + \\frac{1}{216}\n&lt;/math>\n\nThis expansion is correct to within &lt;math> 0.001 &lt;/math> which we can show by using the alternating series estimation theorem. We know that\n\n&lt;math> \nb_{n} = \\frac{1}{(4n+1)(2n)!}\n&lt;/math>\n\nis decreasing. The terms also limit to 0 and clearly this is an alternating series. Hence, the error above using three terms is no worse than what the fourth term tells us it is. Hence, the error is bounded above by\n\n&lt;math>\nError \\leq \\frac{1}{(720)(13)} &lt; \\frac{1}{(100)(10)} = \\frac{1}{1000} = 0.001\n&lt;/math>\n\nand this completes the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int_0^1 \\cos(x^2)\\,dx\\end{aligned}\\]</span></p>\n<p>Write down the first three nonzero terms obtained by using Maclaurin series to estimate <span class=\"math\">\\(I\\)</span>, and explain why the error in using this estimate is less than 0.001.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nI = \\int_0^1 \\cos(x^2)\\,dx\n\\end{align*}\n\nWrite down the first three nonzero terms obtained by using Maclaurin\nseries to estimate $I$, and explain why the error in using this estimate\nis less than 0.001.", 
+    "statement_raw": "Let\n:&lt;math>I = \\int_0^1 \\cos(x^2)\\,dx&lt;/math>\n\nWrite down the first three nonzero terms obtained by using Maclaurin series to estimate &lt;math>I&lt;/math>, and explain why the error in using this estimate is less than 0.001.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_05_(a)", 
+    "year": 2008
 }

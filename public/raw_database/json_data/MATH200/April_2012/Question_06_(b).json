@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
-    "course": "MATH200", 
-    "statement": "Evaluate $I$ from part\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)}{(a)}\nif\n\n\\begin{align*}f(x,y)=\\frac{\\exp(x)}{2-x}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "Using our answer from\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)}{part\n(a)}, we can write I with the given \\emph{$f$} as\n\n\\begin{align*}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx.\\end{align*} We\ncan evaluate the integral as follows:\n\n\\begin{align*}\nI &= \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx \\\\\n&= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\,dx \\\\\n&= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}(-x + 2)(x + 1)\\,dx \\\\\n&= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx.\\end{align*} Using integration by parts, with \\emph{u=x+1} and \\emph{dv\n= exp(x)},\n\n\\begin{align*}\nI &= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx \\\\\n&= \\exp(x)(x + 1)\\Big\\vert_{-1}^{2} - \\int_{-1}^{2}\\exp(x)\\,dx \\\\\n&= 3\\exp(2) - \\left(\\exp(x)\\Big\\vert_{-1}^{2}\\right) = 2\\exp(2) + \\exp(-1)\\end{align*} Therefore,\n\n\\begin{align*}{\\color{blue}\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Using the solution of\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)}{part\n(a)}, we calculate the integral\n\n$\\displaystyle \\int_{-1}^2\\int_{x^2}^{x+2}\\frac{\\exp(x)}{2-x}\\;\\text{d}y\\text{d}x$\n\nIt make sense to use the order of integration, where we first integrate\nwith respect to $\\displaystyle y$, since integration with respect to\n$\\displaystyle x$ first is very hard with this integrand.", 
-        "After integration with respect to $\\displaystyle y$, you need to\nintegrate\n\n\\begin{align*}\\displaystyle \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\text{d}x\\end{align*}\n\nFactorize the term in the brackets, then use integration by parts."
-    ]
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Using the solution of <span>part (a)</span>, we calculate the integral</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{-1}^2\\int_{x^2}^{x+2}\\frac{\\exp(x)}{2-x}\\;\\text{d}y\\text{d}x\\)</span></p>\n<p>It make sense to use the order of integration, where we first integrate with respect to <span class=\"math\">\\(\\displaystyle y\\)</span>, since integration with respect to <span class=\"math\">\\(\\displaystyle x\\)</span> first is very hard with this integrand.</p>\n", 
+        "<p>After integration with respect to <span class=\"math\">\\(\\displaystyle y\\)</span>, you need to integrate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\text{d}x\\end{aligned}\\]</span></p>\n<p>Factorize the term in the brackets, then use integration by parts.</p>\n"
+    ], 
+    "hints_latex": [
+        "Using the solution of\n{part\n(a)}, we calculate the integral\n\n$\\displaystyle \\int_{-1}^2\\int_{x^2}^{x+2}\\frac{\\exp(x)}{2-x}\\;\\text{d}y\\text{d}x$\n\nIt make sense to use the order of integration, where we first integrate\nwith respect to $\\displaystyle y$, since integration with respect to\n$\\displaystyle x$ first is very hard with this integrand.", 
+        "After integration with respect to $\\displaystyle y$, you need to\nintegrate\n\n\\begin{align*}\n\\displaystyle \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\text{d}x\n\\end{align*}\n\nFactorize the term in the brackets, then use integration by parts."
+    ], 
+    "hints_raw": [
+        "Using the solution of [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)|part (a)]], we calculate the integral\n\n&lt;math>\\displaystyle \\int_{-1}^2\\int_{x^2}^{x+2}\\frac{\\exp(x)}{2-x}\\;\\text{d}y\\text{d}x&lt;/math>\n\nIt make sense to use the order of integration, where we first integrate with respect to &lt;math>\\displaystyle  y&lt;/math>, since integration with respect to &lt;math>\\displaystyle x&lt;/math> first is very hard with this integrand.\n", 
+        "After integration with respect to &lt;math> \\displaystyle y &lt;/math>, you need to integrate\n\n:&lt;math>\\displaystyle \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\text{d}x&lt;/math>\n\nFactorize the term in the brackets, then use integration by parts.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "6 (b)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>Using our answer from <span>part (a)</span>, we can write I with the given <em><span class=\"math\">\\(f\\)</span></em> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx.\\end{aligned}\\]</span></p>\n<p>We can evaluate the integral as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI &amp;= \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx \\\\\n&amp;= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\,dx \\\\\n&amp;= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}(-x + 2)(x + 1)\\,dx \\\\\n&amp;= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx.\\end{aligned}\\]</span></p>\n<p>Using integration by parts, with <em>u=x+1</em> and <em>dv = exp(x)</em>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI &amp;= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx \\\\\n&amp;= \\exp(x)(x + 1)\\Big\\vert_{-1}^{2} - \\int_{-1}^{2}\\exp(x)\\,dx \\\\\n&amp;= 3\\exp(2) - \\left(\\exp(x)\\Big\\vert_{-1}^{2}\\right) = 2\\exp(2) + \\exp(-1)\\end{aligned}\\]</span></p>\n<p>Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using our answer from\n{part\n(a)}, we can write I with the given \\emph{$f$} as\n\n\\begin{align*}\nI = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx.\n\\end{align*} We\ncan evaluate the integral as follows:\n\n\\begin{align*}\nI &= \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx \\\\\n&= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\,dx \\\\\n&= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}(-x + 2)(x + 1)\\,dx \\\\\n&= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx.\n\\end{align*} Using integration by parts, with \\emph{u=x+1} and \\emph{dv\n= exp(x)},\n\n\\begin{align*}\nI &= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx \\\\\n&= \\exp(x)(x + 1)\\Big\\vert_{-1}^{2} - \\int_{-1}^{2}\\exp(x)\\,dx \\\\\n&= 3\\exp(2) - \\left(\\exp(x)\\Big\\vert_{-1}^{2}\\right) = 2\\exp(2) + \\exp(-1)\n\\end{align*} Therefore,\n\n\\begin{align*}\n{\\color{blue}\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using our answer from [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)|part (a)]], we can write &lt;i>I&lt;/i> with the given ''&amp;fnof;'' as\n:&lt;math>\nI = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx.\n&lt;/math>\nWe can evaluate the integral as follows:\n:&lt;math>\n\\begin{align}\nI &amp;= \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx \\\\\n&amp;= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}\\left(x + 2 - x^{2} \\right)\\,dx \\\\\n&amp;= \\int_{-1}^{2}\\frac{\\exp(x)}{2 - x}(-x + 2)(x + 1)\\,dx \\\\\n&amp;= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx.\n\\end{align}\n&lt;/math>\nUsing &lt;b>integration by parts&lt;/b>, with ''u=x+1'' and ''dv = exp(x)'',\n:&lt;math>\n\\begin{align}\nI &amp;= \\int_{-1}^{2}\\exp(x)(x + 1)\\,dx \\\\\n&amp;= \\exp(x)(x + 1)\\Big\\vert_{-1}^{2} - \\int_{-1}^{2}\\exp(x)\\,dx \\\\\n&amp;= 3\\exp(2) - \\left(\\exp(x)\\Big\\vert_{-1}^{2}\\right) = 2\\exp(2) + \\exp(-1)\n\\end{align}\n&lt;/math>\nTherefore,\n:&lt;math>\n{\\color{blue}\n\\int_{-1}^{2}\\int_{x^{2}}^{x + 2}\\frac{\\exp(x)}{2 - x}\\,dydx = 2e^{2} + e^{-1}\n}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(I\\)</span> from part <span>(a)</span> if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x,y)=\\frac{\\exp(x)}{2-x}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Evaluate $I$ from part\n{(a)}\nif\n\n\\begin{align*}\nf(x,y)=\\frac{\\exp(x)}{2-x}\n\\end{align*}", 
+    "statement_raw": "Evaluate &lt;math>I&lt;/math> from part [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)|(a)]] if\n\n:&lt;math>\nf(x,y)=\\frac{\\exp(x)}{2-x}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Multiple_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(b)", 
+    "year": 2012
 }

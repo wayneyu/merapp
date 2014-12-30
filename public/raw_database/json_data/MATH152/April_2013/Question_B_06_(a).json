@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_B_06_(a)", 
+    "answer_html": "<p>This equation is equivalent to <span class=\"math\">\\(\\mathbf{y&#39;(t)} = \\begin{bmatrix}\n3 &amp; -2\\\\\n4 &amp; -1\n\\end{bmatrix} \\mathbf{y(t)}\\)</span></p>\n", 
+    "answer_latex": "This equation is equivalent to $\\mathbf{y'(t)} = \\begin{bmatrix}\n3 & -2\\\\\n4 & -1\n\\end{bmatrix} \\mathbf{y(t)}$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH152", 
-    "statement": "Consider the system of linear differential equations given by\n\n\\begin{align*}\ny'_{1}(t) &= 3y_{1}(t) - 2y_{2}(t)\\\\\ny'_{2}(t) &= 4y_{1}(t) - y_{2}(t)\\end{align*}\n\nExpress this system in the form of $y'(t) = Ay(t)$", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Put <em>y<sub>1</sub></em> and <em>y<sub>2</sub></em> in a vector like this</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Now the given equation is just a linear system with coefficient matrix <em>A</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Put \\emph{y\\textsubscript{1}} and \\emph{y\\textsubscript{2}} in a vector\nlike this\n\n\\begin{align*}\n\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\n\\end{align*} Now the given\nequation is just a linear system with coefficient matrix \\emph{A}."
+    ], 
+    "hints_raw": [
+        "Put ''y&lt;sub>1&lt;/sub>'' and ''y&lt;sub>2&lt;/sub>'' in a vector like this\n:&lt;math>\n\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\n&lt;/math>\nNow the given equation is just a linear system with coefficient matrix ''A''.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 06 (a)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>This equation is equivalent to <span class=\"math\">\\(\\mathbf{y&#39;(t)} = \\begin{bmatrix}\n3 &amp; -2\\\\\n4 &amp; -1\n\\end{bmatrix} \\mathbf{y(t)}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "This equation is equivalent to $\\mathbf{y'(t)} = \\begin{bmatrix}\n3 & -2\\\\\n4 & -1\n\\end{bmatrix} \\mathbf{y(t)}$"
     ], 
-    "hints": [
-        "Put \\emph{y\\textsubscript{1}} and \\emph{y\\textsubscript{2}} in a vector\nlike this\n\n\\begin{align*}\\mathbf{y} = \\begin{bmatrix} y_1 \\\\ y_2 \\end{bmatrix}\\end{align*} Now the given\nequation is just a linear system with coefficient matrix \\emph{A}."
-    ]
+    "sols_raw": [
+        "This equation is equivalent to\n&lt;math>\n\\mathbf{y'(t)} = \\begin{bmatrix}\n3 &amp; -2\\\\\n4 &amp; -1\n\\end{bmatrix} \\mathbf{y(t)}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the system of linear differential equations given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39;_{1}(t) &amp;= 3y_{1}(t) - 2y_{2}(t)\\\\\ny&#39;_{2}(t) &amp;= 4y_{1}(t) - y_{2}(t)\\end{aligned}\\]</span></p>\n<p>Express this system in the form of <span class=\"math\">\\(y&#39;(t) = Ay(t)\\)</span></p>\n", 
+    "statement_latex": "Consider the system of linear differential equations given by\n\n\\begin{align*}\ny'_{1}(t) &= 3y_{1}(t) - 2y_{2}(t)\\\\\ny'_{2}(t) &= 4y_{1}(t) - y_{2}(t)\n\\end{align*}\n\nExpress this system in the form of $y'(t) = Ay(t)$", 
+    "statement_raw": "Consider the system of linear differential equations given by \n\n&lt;math>\n\\begin{align}\ny'_{1}(t) &amp;= 3y_{1}(t) - 2y_{2}(t)\\\\\ny'_{2}(t) &amp;= 4y_{1}(t) - y_{2}(t)\n\\end{align}\n&lt;/math>\n\nExpress this system in the form of &lt;math> y'(t) = Ay(t) &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Linear_ordinary_differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_06_(a)", 
+    "year": 2013
 }

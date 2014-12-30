@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH105", 
-    "statement": "Express the Taylor series of the function\n\n\\begin{align*}\\displaystyle\nf(x) = \\ln(1+2x)\\end{align*}\n\nabout \\emph{x = 0} in summation notation.", 
-    "year": 2012, 
-    "sols": [
-        "For \\textbar{}\\emph{r}\\textbar{}\\textless{}1 we use that\n\n\\begin{align*}\\frac{1}{1-r} = 1 + r + r^2 + r^3 + \\dots\\end{align*} and integrate both sides\nto obtain\n\n\\begin{align*}\n-\\ln|1-r| &= \\int \\frac{1}{1-r} dr \\\\\n&= \\int(1 + r + r^2 + r^3 + \\dots) dr \\\\\n&= r + r^2/2 + r^3/3 + r^4/4 + ... + C\\end{align*}\n\nSince \\textbar{}\\emph{r}\\textbar{} \\textless{} 1 we have\n\\textbar{}1-\\emph{r}\\textbar{} = 1-\\emph{r}, therefore\n\n\\begin{align*}\\displaystyle\n-\\ln(1-r) = r + r^2/2 + r^3/3 + r^4/4 + \\dots + C\\end{align*}\n\nTo solve for the integration constant \\emph{C} we plug in \\emph{r} = 0:\n\n\\begin{align*}\n-\\ln(1-r) &= -\\ln 1 = 0 \\\\\n&= 0 + 0^2/2 + 0^3/3 + 0^4/4 + ... + C = C\\end{align*} so \\emph{C} = 0.\n\nSo we obtain the intermediate result that\n\n\\begin{align*}\n\\ln(1-r) = -r - r^2/2 - r^3/3 - r^4/4 + \\dots = - \\sum_{k=1}^{\\infty} r^k/k.\\end{align*}\n\nTo arrive at the summation notation, we noted that every term has the\nsame sign (so there are no terms like $(-1)^k$ floating around), every\ninteger power of $r$ is included starting from $r^1$, and each $r^k$ is\ndivided by \\emph{k}.\n\nAs a last step, the Taylor series for $\\ln(1+2x)$ can be found by\nreplacing $r$ by $-2x$ in the series above. We find:\n\n\\begin{align*}\\ln(1+2x) = - \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\ln(1+2x)=- \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}.\\)</span></p>\n", 
+    "answer_latex": " $\\ln(1+2x)=- \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "First, use the fact from\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_01_(b)}{part\n(b)} that\n\n\\begin{align*}\\frac1{1-r} = 1 + r + r^2 + r^3 + \\dots\\end{align*} provided\n\\textbar{}\\emph{r}\\textbar{} \\textless{} 1, to get the power series of\n$\\ln(1-r)$ per integration. Then make a proper substitution for\n\\emph{r}."
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First, use the fact from <span>part (b)</span> that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac1{1-r} = 1 + r + r^2 + r^3 + \\dots\\end{aligned}\\]</span></p>\n<p>provided <em>r</em> &lt; 1, to get the power series of <span class=\"math\">\\(\\ln(1-r)\\)</span> per integration. Then make a proper substitution for <em>r</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "First, use the fact from\n{part\n(b)} that\n\n\\begin{align*}\n\\frac1{1-r} = 1 + r + r^2 + r^3 + \\dots\n\\end{align*} provided\n\\textbar{}\\emph{r}\\textbar{} \\textless{} 1, to get the power series of\n$\\ln(1-r)$ per integration. Then make a proper substitution for\n\\emph{r}."
+    ], 
+    "hints_raw": [
+        "First, use the fact from [[Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_01_(b)|part (b)]] that\n:&lt;math>\n\\frac1{1-r} = 1 + r + r^2 + r^3 + \\dots\n&lt;/math>\nprovided |''r''| &lt; 1, to get the power series of &lt;math>\\ln(1-r)&lt;/math> per integration. Then make a proper substitution for ''r''.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (c)", 
+    "rating": 40, 
+    "sols_html": [
+        "<p>For <em>r</em>&lt;1 we use that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{1-r} = 1 + r + r^2 + r^3 + \\dots\\end{aligned}\\]</span></p>\n<p>and integrate both sides to obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\ln|1-r| &amp;= \\int \\frac{1}{1-r} dr \\\\\n&amp;= \\int(1 + r + r^2 + r^3 + \\dots) dr \\\\\n&amp;= r + r^2/2 + r^3/3 + r^4/4 + ... + C\\end{aligned}\\]</span></p>\n<p>Since <em>r</em> &lt; 1 we have 1-<em>r</em> = 1-<em>r</em>, therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n-\\ln(1-r) = r + r^2/2 + r^3/3 + r^4/4 + \\dots + C\\end{aligned}\\]</span></p>\n<p>To solve for the integration constant <em>C</em> we plug in <em>r</em> = 0:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\ln(1-r) &amp;= -\\ln 1 = 0 \\\\\n&amp;= 0 + 0^2/2 + 0^3/3 + 0^4/4 + ... + C = C\\end{aligned}\\]</span></p>\n<p>so <em>C</em> = 0.</p>\n<p>So we obtain the intermediate result that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(1-r) = -r - r^2/2 - r^3/3 - r^4/4 + \\dots = - \\sum_{k=1}^{\\infty} r^k/k.\\end{aligned}\\]</span></p>\n<p>To arrive at the summation notation, we noted that every term has the same sign (so there are no terms like <span class=\"math\">\\((-1)^k\\)</span> floating around), every integer power of <span class=\"math\">\\(r\\)</span> is included starting from <span class=\"math\">\\(r^1\\)</span>, and each <span class=\"math\">\\(r^k\\)</span> is divided by <em>k</em>.</p>\n<p>As a last step, the Taylor series for <span class=\"math\">\\(\\ln(1+2x)\\)</span> can be found by replacing <span class=\"math\">\\(r\\)</span> by <span class=\"math\">\\(-2x\\)</span> in the series above. We find:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(1+2x) = - \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "For \\textbar{}\\emph{r}\\textbar{}\\textless{}1 we use that\n\n\\begin{align*}\n\\frac{1}{1-r} = 1 + r + r^2 + r^3 + \\dots\n\\end{align*} and integrate both sides\nto obtain\n\n\\begin{align*}\n-\\ln|1-r| &= \\int \\frac{1}{1-r} dr \\\\\n&= \\int(1 + r + r^2 + r^3 + \\dots) dr \\\\\n&= r + r^2/2 + r^3/3 + r^4/4 + ... + C\n\\end{align*}\n\nSince \\textbar{}\\emph{r}\\textbar{} \\textless{} 1 we have\n\\textbar{}1-\\emph{r}\\textbar{} = 1-\\emph{r}, therefore\n\n\\begin{align*}\n\\displaystyle\n-\\ln(1-r) = r + r^2/2 + r^3/3 + r^4/4 + \\dots + C\n\\end{align*}\n\nTo solve for the integration constant \\emph{C} we plug in \\emph{r} = 0:\n\n\\begin{align*}\n-\\ln(1-r) &= -\\ln 1 = 0 \\\\\n&= 0 + 0^2/2 + 0^3/3 + 0^4/4 + ... + C = C\n\\end{align*} so \\emph{C} = 0.\n\nSo we obtain the intermediate result that\n\n\\begin{align*}\n\\ln(1-r) = -r - r^2/2 - r^3/3 - r^4/4 + \\dots = - \\sum_{k=1}^{\\infty} r^k/k.\n\\end{align*}\n\nTo arrive at the summation notation, we noted that every term has the\nsame sign (so there are no terms like $(-1)^k$ floating around), every\ninteger power of $r$ is included starting from $r^1$, and each $r^k$ is\ndivided by \\emph{k}.\n\nAs a last step, the Taylor series for $\\ln(1+2x)$ can be found by\nreplacing $r$ by $-2x$ in the series above. We find:\n\n\\begin{align*}\n\\ln(1+2x) = - \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "For |''r''|&lt;1 we use that\n:&lt;math>\n\\frac{1}{1-r} = 1 + r + r^2 + r^3 + \\dots\n&lt;/math>\nand integrate both sides to obtain\n:&lt;math>\n\\begin{align}\n-\\ln|1-r| &amp;= \\int \\frac{1}{1-r} dr \\\\\n&amp;= \\int(1 + r + r^2 + r^3 + \\dots) dr \\\\\n&amp;= r + r^2/2 + r^3/3 + r^4/4 + ... + C\n\\end{align}\n&lt;/math>\n\nSince |''r''| &lt; 1  we have |1-''r''| = 1-''r'', therefore\n:&lt;math>\\displaystyle\n-\\ln(1-r) = r + r^2/2 + r^3/3 + r^4/4 + \\dots + C\n&lt;/math>\n\nTo solve for the integration constant ''C'' we plug in ''r'' = 0:\n:&lt;math>\n\\begin{align}\n-\\ln(1-r) &amp;= -\\ln 1 = 0 \\\\\n&amp;= 0 + 0^2/2 + 0^3/3 + 0^4/4 + ... + C = C\n\\end{align}\n&lt;/math>\nso ''C'' = 0.\n\nSo we obtain the intermediate result that\n:&lt;math>\n\\begin{align}\n\\ln(1-r) = -r - r^2/2 - r^3/3 - r^4/4 + \\dots = - \\sum_{k=1}^{\\infty} r^k/k.\n\\end{align}\n&lt;/math> \n\nTo arrive at the summation notation, we noted that every term has the same sign (so there are no terms like &lt;math>(-1)^k&lt;/math> floating around), every integer power of &lt;math>r&lt;/math> is included starting from &lt;math>r^1&lt;/math>, and each &lt;math>r^k&lt;/math> is divided by ''k''.\n\nAs a last step, the Taylor series for &lt;math>\\ln(1+2x)&lt;/math> can be found by replacing &lt;math>r&lt;/math> by &lt;math>-2x&lt;/math> in the series above. We find:\n\n:&lt;math>\\ln(1+2x) = - \\sum_{k=1}^{\\infty} \\frac{(-2x)^k}{k}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Express the Taylor series of the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\ln(1+2x)\\end{aligned}\\]</span></p>\n<p>about <em>x = 0</em> in summation notation.</p>\n", 
+    "statement_latex": "Express the Taylor series of the function\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\ln(1+2x)\n\\end{align*}\n\nabout \\emph{x = 0} in summation notation.", 
+    "statement_raw": "Express the Taylor series of the function\n\n:&lt;math> \\displaystyle\nf(x) = \\ln(1+2x)\n&lt;/math>\n\nabout ''x = 0'' in summation notation.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_01_(c)", 
+    "year": 2012
 }

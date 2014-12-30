@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_08", 
-    "course": "MATH220", 
-    "statement": "Prove that if \\emph{p} is a prime number and \\emph{p} \\textgreater{} 4,\nthen\n\n\\begin{align*}\\displaystyle\np^2 \\equiv 1 \\pmod 6\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "By saying that we look at primes larger than 4, what we really mean is\nwe look at all the primes except 2 and 3 (which makes sense since\n2\\textsuperscript{2} = 4 and 3\\textsuperscript{2} = 9 which is 3 mod 6;\nso these two don't work anyway).\n\nNow any prime \\emph{p} other than 2 and 3 will then clearly NOT be a\nmultiple of two and NOT be a multiple of 3. This means that\n\n\\begin{align*}\\displaystyle\np \\equiv 1 \\text{ or } 5 \\pmod 6\\end{align*} since integers that are 0, 2 or 4 mod\n6 are all even and since an integer that is 3 mod 6 is a multiple of 3.\n\nBut since\n\n\\begin{align*}\\displaystyle\n1^2 \\equiv 1 \\pmod 6\\end{align*} and\n\n\\begin{align*}\\displaystyle\n5^2 =25 \\equiv 1 \\pmod 6\\end{align*}\n\nwe can conclude that if \\emph{p} is a prime larger than 4, then its\nsquare is always 1 mod 6."
+    "answer_html": "<p>we can conclude that if <em>p</em> is a prime larger than 4, then its square is always 1 mod 6.</p>\n", 
+    "answer_latex": "we can conclude that if \\emph{p} is a prime larger than 4, then its\nsquare is always 1 mod 6.", 
+    "contributors": [
+        "Konradbe", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Note: this hint was giving on the exam itself.</p>\n<dl>\n\n<dd><p>Think about the possible remainders when <em>p</em> is divided by 6.</p>\n</dd>\n</dl>\n"
+    ], 
+    "hints_latex": [
         "Note: this hint was giving on the exam itself.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nThink about the possible remainders when \\emph{p} is divided by 6.\n\\end{description}"
-    ]
+    ], 
+    "hints_raw": [
+        "Note: this hint was giving on the exam itself.\n\n:Think about the possible remainders when ''p'' is divided by 6.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "8", 
+    "rating": 10, 
+    "sols_html": [
+        "<p>By saying that we look at primes larger than 4, what we really mean is we look at all the primes except 2 and 3 (which makes sense since 2<sup>2</sup> = 4 and 3<sup>2</sup> = 9 which is 3 mod 6; so these two don&#8217;t work anyway).</p>\n<p>Now any prime <em>p</em> other than 2 and 3 will then clearly NOT be a multiple of two and NOT be a multiple of 3. This means that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np \\equiv 1 \\text{ or } 5 \\pmod 6\\end{aligned}\\]</span></p>\n<p>since integers that are 0, 2 or 4 mod 6 are all even and since an integer that is 3 mod 6 is a multiple of 3.</p>\n<p>But since</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n1^2 \\equiv 1 \\pmod 6\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n5^2 =25 \\equiv 1 \\pmod 6\\end{aligned}\\]</span></p>\n<p>we can conclude that if <em>p</em> is a prime larger than 4, then its square is always 1 mod 6.</p>\n"
+    ], 
+    "sols_latex": [
+        "By saying that we look at primes larger than 4, what we really mean is\nwe look at all the primes except 2 and 3 (which makes sense since\n2\\textsuperscript{2} = 4 and 3\\textsuperscript{2} = 9 which is 3 mod 6;\nso these two don't work anyway).\n\nNow any prime \\emph{p} other than 2 and 3 will then clearly NOT be a\nmultiple of two and NOT be a multiple of 3. This means that\n\n\\begin{align*}\n\\displaystyle\np \\equiv 1 \\text{ or } 5 \\pmod 6\n\\end{align*} since integers that are 0, 2 or 4 mod\n6 are all even and since an integer that is 3 mod 6 is a multiple of 3.\n\nBut since\n\n\\begin{align*}\n\\displaystyle\n1^2 \\equiv 1 \\pmod 6\n\\end{align*} and\n\n\\begin{align*}\n\\displaystyle\n5^2 =25 \\equiv 1 \\pmod 6\n\\end{align*}\n\nwe can conclude that if \\emph{p} is a prime larger than 4, then its\nsquare is always 1 mod 6."
+    ], 
+    "sols_raw": [
+        "By saying that we look at primes larger than 4, what we really mean is we look at all the primes except 2 and 3 (which makes sense since 2&lt;sup>2&lt;/sup> = 4 and 3&lt;sup>2&lt;/sup> = 9 which is 3 mod 6; so these two don't work anyway).\n\nNow any prime ''p'' other than 2 and 3 will then clearly NOT be a multiple of two and NOT be a multiple of 3. This means that\n:&lt;math>\\displaystyle\np \\equiv 1 \\text{ or } 5 \\pmod 6\n&lt;/math>\nsince integers that are 0, 2 or 4 mod 6 are all even and since an integer that is 3 mod 6 is a multiple of 3.\n\nBut since\n:&lt;math>\\displaystyle\n1^2 \\equiv 1 \\pmod 6\n&lt;/math>\nand\n:&lt;math>\\displaystyle\n5^2 =25 \\equiv 1 \\pmod 6\n&lt;/math>\n\nwe can conclude that if ''p'' is a prime larger than 4, then its square is always 1 mod 6.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Prove that if <em>p</em> is a prime number and <em>p</em> &gt; 4, then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np^2 \\equiv 1 \\pmod 6\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Prove that if \\emph{p} is a prime number and \\emph{p} \\textgreater{} 4,\nthen\n\n\\begin{align*}\n\\displaystyle\np^2 \\equiv 1 \\pmod 6\n\\end{align*}", 
+    "statement_raw": "Prove that if ''p'' is a prime number and ''p'' > 4, then\n:&lt;math>\\displaystyle\np^2 \\equiv 1 \\pmod 6\n&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_08", 
+    "year": 2011
 }

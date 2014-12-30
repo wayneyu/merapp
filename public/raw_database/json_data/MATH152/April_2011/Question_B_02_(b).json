@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_B_02_(b)", 
-    "course": "MATH152", 
-    "statement": "Consider the differential equation system\n\n\\begin{align*}\\mathbf{y}'=A\\mathbf{y}\\end{align*}\n\nwhere A has eigenvalues $\\lambda_1=-1$ and $\\lambda_2=-2$ with\ncorresponding eigenvectors\n\n\\begin{align*}\n\\mathbf{k}_1&=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2&=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{align*}\n\nFind the solution that matches the initial conditions\n\n\\begin{align*}\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Recall from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B2_(a)}{part\n(a)} that we figured out that the general solution was\n\n\\begin{align*}\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{align*}\n\nWith the initial condition\n\n\\begin{align*}\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix},\\end{align*}\n\nwe can find the constants $c_1$ and $c_2$ for this particular problem.\nPlugging in the initial condition we get,\n\n\\begin{align*}\\mathbf{y}(0)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(0)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(0)=\n\\begin{bmatrix}\nc_1+2c_2\\\\\n2c_1+3c_2\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{align*}\n\nTherefore we conclude that,\n\n\\begin{align*}\\left\\{\\begin{aligned}\nc_1+2c_2&=1\\\\\n2c_1+3c_2&=1\n\\end{aligned}\\right.\\end{align*}\n\nwhich has solution, $c_1=-1$ and $c_2=1$. Therefore the solution to this\nproblem with initial condition\n\n\\begin{align*}\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\end{align*}\n\nis\n\n\\begin{align*}\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\)</span></p>\n", 
+    "answer_latex": " $\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
-        "How can we use our solution from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B2_(a)}{part(a)}\nand the initial conditions to find the true particular solution?"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How can we use our solution from <span>part(a)</span> and the initial conditions to find the true particular solution?</p>\n"
+    ], 
+    "hints_latex": [
+        "How can we use our solution from\n{part(a)}\nand the initial conditions to find the true particular solution?"
+    ], 
+    "hints_raw": [
+        "How can we use our solution from [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B2_(a)|part(a)]] and the initial conditions to find the true particular solution?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 02 (b)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>Recall from <span>part (a)</span> that we figured out that the general solution was</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{aligned}\\]</span></p>\n<p>With the initial condition</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix},\\end{aligned}\\]</span></p>\n<p>we can find the constants <span class=\"math\">\\(c_1\\)</span> and <span class=\"math\">\\(c_2\\)</span> for this particular problem. Plugging in the initial condition we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(0)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(0)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(0)=\n\\begin{bmatrix}\nc_1+2c_2\\\\\n2c_1+3c_2\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Therefore we conclude that,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left\\{\\begin{aligned}\nc_1+2c_2&amp;=1\\\\\n2c_1+3c_2&amp;=1\n\\end{aligned}\\right.\\end{aligned}\\]</span></p>\n<p>which has solution, <span class=\"math\">\\(c_1=-1\\)</span> and <span class=\"math\">\\(c_2=1\\)</span>. Therefore the solution to this problem with initial condition</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Recall from\n{part\n(a)} that we figured out that the general solution was\n\n\\begin{align*}\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n\\end{align*}\n\nWith the initial condition\n\n\\begin{align*}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix},\n\\end{align*}\n\nwe can find the constants $c_1$ and $c_2$ for this particular problem.\nPlugging in the initial condition we get,\n\n\\begin{align*}\n\\mathbf{y}(0)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(0)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(0)=\n\\begin{bmatrix}\nc_1+2c_2\\\\\n2c_1+3c_2\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nTherefore we conclude that,\n\n\\begin{align*}\n\\left\\{\\begin{aligned}\nc_1+2c_2&=1\\\\\n2c_1+3c_2&=1\n\\end{aligned}\\right.\n\\end{align*}\n\nwhich has solution, $c_1=-1$ and $c_2=1$. Therefore the solution to this\nproblem with initial condition\n\n\\begin{align*}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n\\end{align*}\n\nis\n\n\\begin{align*}\n\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Recall from [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B2_(a)|part (a)]] that we figured out that the general solution was\n\n:&lt;math>\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n&lt;/math>\n\nWith the initial condition\n\n:&lt;math>\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix},\n&lt;/math>\n\nwe can find the constants &lt;math>c_1&lt;/math> and &lt;math>c_2&lt;/math> for this particular problem.  Plugging in the initial condition we get,\n\n:&lt;math>\n\\mathbf{y}(0)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(0)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(0)=\n\\begin{bmatrix}\nc_1+2c_2\\\\\n2c_1+3c_2\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n&lt;/math>\n\nTherefore we conclude that,\n\n:&lt;math>\n\\left\\{\\begin{align}\nc_1+2c_2&amp;=1\\\\\n2c_1+3c_2&amp;=1\n\\end{align}\\right.\n&lt;/math>\n\nwhich has solution, &lt;math>c_1=-1&lt;/math> and &lt;math>c_2=1&lt;/math>.  Therefore the solution to this problem with initial condition\n\n:&lt;math>\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n&lt;/math>\n\nis\n\n:&lt;math>\n\\mathbf{y}(t)=-\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ \n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Consider the differential equation system</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}&#39;=A\\mathbf{y}\\end{aligned}\\]</span></p>\n<p>where A has eigenvalues <span class=\"math\">\\(\\lambda_1=-1\\)</span> and <span class=\"math\">\\(\\lambda_2=-2\\)</span> with corresponding eigenvectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{k}_1&amp;=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2&amp;=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Find the solution that matches the initial conditions</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Consider the differential equation system\n\n\\begin{align*}\n\\mathbf{y}'=A\\mathbf{y}\n\\end{align*}\n\nwhere A has eigenvalues $\\lambda_1=-1$ and $\\lambda_2=-2$ with\ncorresponding eigenvectors\n\n\\begin{align*}\n\\mathbf{k}_1&=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2&=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align*}\n\nFind the solution that matches the initial conditions\n\n\\begin{align*}\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align*}", 
+    "statement_raw": "Consider the differential equation system\n\n:&lt;math>\n\\mathbf{y}'=A\\mathbf{y}\n&lt;/math>\n\nwhere A has eigenvalues &lt;math>\\lambda_1=-1&lt;/math> and &lt;math>\\lambda_2=-2&lt;/math> with corresponding eigenvectors\n\n:&lt;math>\n\\begin{align}\n\\mathbf{k}_1&amp;=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2&amp;=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nFind the solution that matches the initial conditions\n\n:&lt;math>\n\\mathbf{y}(0)=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_02_(b)", 
+    "year": 2011
 }

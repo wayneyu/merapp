@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\int_{0}^{1} x\\cos(x)\\, dx \\approx \\frac{1}{2} - \\frac{1}{8} + \\frac{1}{144} = \\frac{55}{144}\\)</span>completing the question</p>\n", 
+    "answer_latex": "$\\int_{0}^{1} x\\cos(x)\\, dx \\approx \\frac{1}{2} - \\frac{1}{8} + \\frac{1}{144} = \\frac{55}{144}$completing the question", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles", 
+        "CindyBlois"
+    ], 
     "course": "MATH103", 
-    "statement": "In this problem, you are asked to find a value for the integral\n\n\\begin{align*}I = \\int_0^1 x\\cos(x)\\,dx\\end{align*} in two different ways.\n\n(b) Use the Taylor series for the function $\\cos(x)$ to write down a\nTaylor Series approximation for $x\\cos(x)$ and find an approximation to\nthe integral $I$ using the \\emph{first 3 terms} of that series.\n\n(Leave your answer in terms of the three fractions, i.e. you need not\ncompute a simplified fraction nor a decimal approximation. Some\nfactorial values that may be useful\\begin{align*}2! = 2,\\end{align*} $3! = 6$, $4! = 24$,\n$5! = 120$, $6! = 720$, $7! = 5040$.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Taylor series expansion of cosine is</p>\n<p><span class=\"math\">\\(\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The Taylor series expansion of cosine is\n\n$\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}$"
+    ], 
+    "hints_raw": [
+        "The Taylor series expansion of cosine is\n\n&lt;math>\n\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}\n&lt;/math>\n"
+    ], 
+    "num_votes": 7, 
+    "question": "5 (b)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>Via the hint we have that</p>\n<p><span class=\"math\">\\(\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}\\)</span></p>\n<p>multiplying by x gives</p>\n<p><span class=\"math\">\\(x\\cos(x) = x - \\frac{x^{3}}{2!} + \\frac{x^{5}}{4!} - \\frac{x^{7}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+1}}{(2n)!}\\)</span></p>\n<p>and then integrating gives</p>\n<p><span class=\"math\">\\(\\int x\\cos(x)\\, dx = \\frac{x^{2}}{2} - \\frac{x^{4}}{8} + \\frac{x^{6}}{144} - \\frac{x^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+2}}{(2n+2)(2n)!}\\)</span></p>\n<p>Taking into account the end points, we have</p>\n<p><span class=\"math\">\\(\\int_{0}^{1} x\\cos(x)\\, dx = \\frac{1^{2}}{2} - \\frac{1^{4}}{8} + \\frac{1^{6}}{144} - \\frac{1^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{1}{(2n+2)(2n)!}\\)</span></p>\n<p>and simplifying and using only the first three terms, we have</p>\n<p><span class=\"math\">\\(\\int_{0}^{1} x\\cos(x)\\, dx \\approx \\frac{1}{2} - \\frac{1}{8} + \\frac{1}{144} = \\frac{55}{144}\\)</span></p>\n<p>completing the question</p>\n"
+    ], 
+    "sols_latex": [
         "Via the hint we have that\n\n$\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}$\n\nmultiplying by x gives\n\n$x\\cos(x) = x - \\frac{x^{3}}{2!} + \\frac{x^{5}}{4!} - \\frac{x^{7}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+1}}{(2n)!}$\n\nand then integrating gives\n\n$\\int x\\cos(x)\\, dx = \\frac{x^{2}}{2} - \\frac{x^{4}}{8} + \\frac{x^{6}}{144} - \\frac{x^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+2}}{(2n+2)(2n)!}$\n\nTaking into account the end points, we have\n\n$\\int_{0}^{1} x\\cos(x)\\, dx = \\frac{1^{2}}{2} - \\frac{1^{4}}{8} + \\frac{1^{6}}{144} - \\frac{1^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{1}{(2n+2)(2n)!}$\n\nand simplifying and using only the first three terms, we have\n\n$\\int_{0}^{1} x\\cos(x)\\, dx \\approx \\frac{1}{2} - \\frac{1}{8} + \\frac{1}{144} = \\frac{55}{144}$\n\ncompleting the question"
     ], 
-    "hints": [
-        "The Taylor series expansion of cosine is\n\n$\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}$"
-    ]
+    "sols_raw": [
+        "Via the hint we have that\n\n&lt;math>\n\\cos(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\frac{x^{6}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n}}{(2n)!}\n&lt;/math>\n\nmultiplying by x gives\n\n&lt;math>\nx\\cos(x) = x - \\frac{x^{3}}{2!} + \\frac{x^{5}}{4!} - \\frac{x^{7}}{6!} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+1}}{(2n)!}\n&lt;/math>\n\nand then integrating gives\n\n&lt;math>\n\\int x\\cos(x)\\, dx = \\frac{x^{2}}{2} - \\frac{x^{4}}{8} + \\frac{x^{6}}{144} - \\frac{x^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{x^{2n+2}}{(2n+2)(2n)!}\n&lt;/math>\n\nTaking into account the end points, we have\n\n&lt;math>\n\\int_{0}^{1} x\\cos(x)\\, dx = \\frac{1^{2}}{2} - \\frac{1^{4}}{8} + \\frac{1^{6}}{144} - \\frac{1^{8}}{5760} + ... = \\sum_{n=0}^{\\infty}(-1)^{n}\\frac{1}{(2n+2)(2n)!}\n&lt;/math>\n\nand simplifying and using only the first three terms, we have\n\n&lt;math>\n\\int_{0}^{1} x\\cos(x)\\, dx \\approx \\frac{1}{2} - \\frac{1}{8} + \\frac{1}{144} = \\frac{55}{144}\n&lt;/math>\n\ncompleting the question\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>In this problem, you are asked to find a value for the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int_0^1 x\\cos(x)\\,dx\\end{aligned}\\]</span></p>\n<p>in two different ways.</p>\n<p>(b) Use the Taylor series for the function <span class=\"math\">\\(\\cos(x)\\)</span> to write down a Taylor Series approximation for <span class=\"math\">\\(x\\cos(x)\\)</span> and find an approximation to the integral <span class=\"math\">\\(I\\)</span> using the <em>first 3 terms</em> of that series.</p>\n<p>(Leave your answer in terms of the three fractions, i.e. you need not compute a simplified fraction nor a decimal approximation. Some factorial values that may be useful</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2! = 2,\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\(3! = 6\\)</span>, <span class=\"math\">\\(4! = 24\\)</span>, <span class=\"math\">\\(5! = 120\\)</span>, <span class=\"math\">\\(6! = 720\\)</span>, <span class=\"math\">\\(7! = 5040\\)</span>.</p>\n", 
+    "statement_latex": "In this problem, you are asked to find a value for the integral\n\n\\begin{align*}\nI = \\int_0^1 x\\cos(x)\\,dx\n\\end{align*} in two different ways.\n\n(b) Use the Taylor series for the function $\\cos(x)$ to write down a\nTaylor Series approximation for $x\\cos(x)$ and find an approximation to\nthe integral $I$ using the \\emph{first 3 terms} of that series.\n\n(Leave your answer in terms of the three fractions, i.e. you need not\ncompute a simplified fraction nor a decimal approximation. Some\nfactorial values that may be useful\\begin{align*}\n2! = 2,\n\\end{align*} $3! = 6$, $4! = 24$,\n$5! = 120$, $6! = 720$, $7! = 5040$.", 
+    "statement_raw": "In this problem, you are asked to find a value for the integral\n:&lt;math> I = \\int_0^1 x\\cos(x)\\,dx&lt;/math>\nin two different ways.\n\n(b) Use the Taylor series for the function &lt;math>\\cos(x)&lt;/math> to write down a Taylor Series approximation for &lt;math>x\\cos(x)&lt;/math> and find an approximation to the integral &lt;math>I&lt;/math> using the ''first 3 terms'' of that series.\n\n(Leave your answer in terms of the three fractions, i.e. you need not compute a simplified fraction nor a decimal approximation. Some factorial values that may be useful: &lt;math>2! = 2&lt;/math>, &lt;math>3! = 6&lt;/math>, &lt;math>4! = 24&lt;/math>, &lt;math>5! = 120&lt;/math>, &lt;math>6! = 720&lt;/math>, &lt;math>7! = 5040&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_05_(b)", 
+    "year": 2010
 }

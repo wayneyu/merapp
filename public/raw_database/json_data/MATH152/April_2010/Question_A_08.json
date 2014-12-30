@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_A_08", 
-    "course": "MATH152", 
-    "statement": "What is $\\cos(\\theta)$ where $\\theta$ is the angle between the vectors\n{[}1,2,3{]} and {[}-1,5,-2{]}?", 
-    "year": 2010, 
-    "sols": [
-        "We can write the dot product between two vectors \\textbf{u} and\n\\textbf{v} as\n\n\\begin{align*}\\mathbf{u}\\cdot\\mathbf{v}=|\\mathbf{u}||\\mathbf{v}|\\cos(\\theta)\\end{align*}\n\nwhere $\\theta$ is the angle between vectors \\textbf{u} and \\textbf{v}.\nTherefore we have that\n\n\\begin{align*}\\cos(\\theta)=\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{u}||\\mathbf{v}|}.\\end{align*}\n\nHere our two vectors are\n\n\\begin{align*}\n\\mathbf{u}&=[1,2,3]\\\\\n\\mathbf{v}&=[-1,5,-2]\\end{align*}\n\nWe have that\n\n\\begin{align*}\n|\\mathbf{u}|&=\\sqrt{1+4+9}=\\sqrt{14}\\\\\n|\\mathbf{v}|&=\\sqrt{1+25+4}=\\sqrt{30}\\end{align*}\n\nand that\n\n\\begin{align*}\\mathbf{u}\\cdot\\mathbf{v}=u_1v_1+u_2v_2+u_3v_3=-1+10-6=3.\\end{align*}\n\nTherefore,\n\n\\begin{align*}\\cos(\\theta)=\\frac{3}{\\sqrt{14}\\sqrt{30}}=\\frac{3}{\\sqrt{420}}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\cos(\\theta)=\\frac{3}{\\sqrt{420}}.\\)</span></p>\n", 
+    "answer_latex": " $\\cos(\\theta)=\\frac{3}{\\sqrt{420}}.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that dot products and cross products can be written in terms of angles between vectors. Which one of those two products (dot or cross) uses cosine?</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that dot products and cross products can be written in terms of\nangles between vectors. Which one of those two products (dot or cross)\nuses cosine?"
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that dot products and cross products can be written in terms of angles between vectors.  Which one of those two products (dot or cross) uses cosine?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 08", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We can write the dot product between two vectors <strong>u</strong> and <strong>v</strong> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{u}\\cdot\\mathbf{v}=|\\mathbf{u}||\\mathbf{v}|\\cos(\\theta)\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\theta\\)</span> is the angle between vectors <strong>u</strong> and <strong>v</strong>. Therefore we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\cos(\\theta)=\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{u}||\\mathbf{v}|}.\\end{aligned}\\]</span></p>\n<p>Here our two vectors are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{u}&amp;=[1,2,3]\\\\\n\\mathbf{v}&amp;=[-1,5,-2]\\end{aligned}\\]</span></p>\n<p>We have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\mathbf{u}|&amp;=\\sqrt{1+4+9}=\\sqrt{14}\\\\\n|\\mathbf{v}|&amp;=\\sqrt{1+25+4}=\\sqrt{30}\\end{aligned}\\]</span></p>\n<p>and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{u}\\cdot\\mathbf{v}=u_1v_1+u_2v_2+u_3v_3=-1+10-6=3.\\end{aligned}\\]</span></p>\n<p>Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\cos(\\theta)=\\frac{3}{\\sqrt{14}\\sqrt{30}}=\\frac{3}{\\sqrt{420}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We can write the dot product between two vectors \\textbf{u} and\n\\textbf{v} as\n\n\\begin{align*}\n\\mathbf{u}\\cdot\\mathbf{v}=|\\mathbf{u}||\\mathbf{v}|\\cos(\\theta)\n\\end{align*}\n\nwhere $\\theta$ is the angle between vectors \\textbf{u} and \\textbf{v}.\nTherefore we have that\n\n\\begin{align*}\n\\cos(\\theta)=\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{u}||\\mathbf{v}|}.\n\\end{align*}\n\nHere our two vectors are\n\n\\begin{align*}\n\\mathbf{u}&=[1,2,3]\\\\\n\\mathbf{v}&=[-1,5,-2]\n\\end{align*}\n\nWe have that\n\n\\begin{align*}\n|\\mathbf{u}|&=\\sqrt{1+4+9}=\\sqrt{14}\\\\\n|\\mathbf{v}|&=\\sqrt{1+25+4}=\\sqrt{30}\n\\end{align*}\n\nand that\n\n\\begin{align*}\n\\mathbf{u}\\cdot\\mathbf{v}=u_1v_1+u_2v_2+u_3v_3=-1+10-6=3.\n\\end{align*}\n\nTherefore,\n\n\\begin{align*}\n\\cos(\\theta)=\\frac{3}{\\sqrt{14}\\sqrt{30}}=\\frac{3}{\\sqrt{420}}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We can write the dot product between two vectors '''u''' and '''v''' as\n\n:&lt;math>\n\\mathbf{u}\\cdot\\mathbf{v}=|\\mathbf{u}||\\mathbf{v}|\\cos(\\theta)\n&lt;/math>\n\nwhere &lt;math>\\theta&lt;/math> is the angle between vectors '''u''' and '''v'''.  Therefore we have that\n\n:&lt;math>\n\\cos(\\theta)=\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{u}||\\mathbf{v}|}.\n&lt;/math>\n\nHere our two vectors are\n\n:&lt;math>\n\\begin{align}\n\\mathbf{u}&amp;=[1,2,3]\\\\\n\\mathbf{v}&amp;=[-1,5,-2]\n\\end{align}.\n&lt;/math>\n\nWe have that\n\n:&lt;math>\n\\begin{align}\n|\\mathbf{u}|&amp;=\\sqrt{1+4+9}=\\sqrt{14}\\\\\n|\\mathbf{v}|&amp;=\\sqrt{1+25+4}=\\sqrt{30}\n\\end{align}\n&lt;/math>\n\nand that\n\n:&lt;math>\n\\mathbf{u}\\cdot\\mathbf{v}=u_1v_1+u_2v_2+u_3v_3=-1+10-6=3.\n&lt;/math>\n\nTherefore,\n\n:&lt;math>\n\\cos(\\theta)=\\frac{3}{\\sqrt{14}\\sqrt{30}}=\\frac{3}{\\sqrt{420}}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>What is <span class=\"math\">\\(\\cos(\\theta)\\)</span> where <span class=\"math\">\\(\\theta\\)</span> is the angle between the vectors <span>[</span>1,2,3<span>]</span> and <span>[</span>-1,5,-2<span>]</span>?</p>\n", 
+    "statement_latex": "What is $\\cos(\\theta)$ where $\\theta$ is the angle between the vectors\n{[}1,2,3{]} and {[}-1,5,-2{]}?", 
+    "statement_raw": "What is &lt;math>\\cos(\\theta)&lt;/math> where &lt;math>\\theta&lt;/math> is the angle between the vectors [1,2,3] and [-1,5,-2]?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_08", 
+    "year": 2010
 }

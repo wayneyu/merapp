@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH312", 
-    "statement": "Determine whether 2821 is a Carmichael number. Explain your answer.", 
-    "year": 2009, 
-    "sols": [
-        "We follow the hints above (especially hint 2) which suggests we should\nuse Korselt's Criterion. We first factor the number as\n\n$\\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31$\n\nWe check that $\\displaystyle (p-1) \\mid (n-1)$ for each prime factor.\nNotice that\n\n\\begin{align*}\n(7-1) = 6 &\\mid 2820\\\\\n(13-1) = 12 &\\mid 2820 \\\\\n(31-1) = 30 &\\mid 2820\\end{align*}\n\nWe can see these are true by factoring\n\n$\\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47$.\n\nHence 2821 is a Carmichael number."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle 2820 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47\\)</span>.Hence 2821 is a Carmichael number.</p>\n", 
+    "answer_latex": "$\\displaystyle 2820 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47$.Hence 2821 is a Carmichael number.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A Carmichael number is a composite number <em>n</em> which satisfies</p>\n<p><span class=\"math\">\\(\\displaystyle b^{n-1} \\equiv 1 \\mod{n}\\)</span></p>\n<p>for all integers with <span class=\"math\">\\(\\displaystyle \\gcd(b,n) = 1\\)</span>.</p>\n", 
+        "<p>Recall Korselt&#8217;s criterion which states that a positive composite integer <em>n</em> is a Carmichael number if and only if <em>n</em> is square free and for all prime divisors <em>p</em> of <em>n</em>, it is true that <span class=\"math\">\\(\\displaystyle (p-1) \\mid (n-1)\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "A Carmichael number is a composite number \\emph{n} which satisfies\n\n$\\displaystyle b^{n-1} \\equiv 1 \\mod{n}$\n\nfor all integers with $\\displaystyle \\gcd(b,n) = 1$.", 
         "Recall Korselt's criterion which states that a positive composite\ninteger \\emph{n} is a Carmichael number if and only if \\emph{n} is\nsquare free and for all prime divisors \\emph{p} of \\emph{n}, it is true\nthat $\\displaystyle (p-1) \\mid (n-1)$"
-    ]
+    ], 
+    "hints_raw": [
+        "A Carmichael number is a composite number ''n'' which satisfies \n\n&lt;math> \\displaystyle b^{n-1} \\equiv 1 \\mod{n}&lt;/math>\n\nfor all integers with &lt;math> \\displaystyle \\gcd(b,n) = 1&lt;/math>.\n", 
+        "Recall Korselt's criterion which states that a positive composite integer ''n'' is a Carmichael number if and only if ''n'' is square free and for all prime divisors ''p'' of ''n'', it is true that &lt;math> \\displaystyle (p-1) \\mid (n-1)&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We follow the hints above (especially hint 2) which suggests we should use Korselt&#8217;s Criterion. We first factor the number as</p>\n<p><span class=\"math\">\\(\\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31\\)</span></p>\n<p>We check that <span class=\"math\">\\(\\displaystyle (p-1) \\mid (n-1)\\)</span> for each prime factor. Notice that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(7-1) = 6 &amp;\\mid 2820\\\\\n(13-1) = 12 &amp;\\mid 2820 \\\\\n(31-1) = 30 &amp;\\mid 2820\\end{aligned}\\]</span></p>\n<p>We can see these are true by factoring</p>\n<p><span class=\"math\">\\(\\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47\\)</span>.</p>\n<p>Hence 2821 is a Carmichael number.</p>\n"
+    ], 
+    "sols_latex": [
+        "We follow the hints above (especially hint 2) which suggests we should\nuse Korselt's Criterion. We first factor the number as\n\n$\\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31$\n\nWe check that $\\displaystyle (p-1) \\mid (n-1)$ for each prime factor.\nNotice that\n\n\\begin{align*}\n(7-1) = 6 &\\mid 2820\\\\\n(13-1) = 12 &\\mid 2820 \\\\\n(31-1) = 30 &\\mid 2820\n\\end{align*}\n\nWe can see these are true by factoring\n\n$\\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47$.\n\nHence 2821 is a Carmichael number."
+    ], 
+    "sols_raw": [
+        "We follow the hints above (especially hint 2) which suggests we should use Korselt's Criterion. We first factor the number as \n\n&lt;math> \\displaystyle 2821 = 7 \\cdot 403 = 7 \\cdot 13 \\cdot 31&lt;/math>\n\nWe check that &lt;math> \\displaystyle (p-1) \\mid (n-1)&lt;/math> for each prime factor. Notice that \n\n&lt;math> \\displaystyle \n\\begin{align}\n(7-1) = 6 &amp;\\mid 2820\\\\\n(13-1) = 12 &amp;\\mid 2820 \\\\\n(31-1) = 30 &amp;\\mid 2820\n\\end{align}\n&lt;/math>\n\nWe can see these are true by factoring \n\n&lt;math> \\displaystyle 2820 = 10\\cdot 282 = 2\\cdot 5 \\cdot 2 \\cdot 141 = 2^{2} \\cdot 5 \\cdot 3 \\cdot 47 = 2^{2} \\cdot 3 \\cdot 5 \\cdot 47&lt;/math>.\n\nHence 2821 is a Carmichael number.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Determine whether 2821 is a Carmichael number. Explain your answer.</p>\n", 
+    "statement_latex": "Determine whether 2821 is a Carmichael number. Explain your answer.", 
+    "statement_raw": "Determine whether 2821 is a Carmichael number. Explain your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Carmichael_number"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2009/Question_02_(b)", 
+    "year": 2009
 }

@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Let \\emph{t} be the time (in hours) it takes for a cell division to\noccur. Suppose \\emph{t} is a continuous random variable on the interval\n$0 \\leq t \\leq 1$ (i.e. the cells always divide in less than 1 hour),\nwith probability density\n\n$\\displaystyle p(t) = C(\\sqrt{t}-t), \\qquad 0 \\leq t \\leq 1$\n\na) Find \\emph{C}.", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Let <em>t</em> be the time (in hours) it takes for a cell division to occur. Suppose <em>t</em> is a continuous random variable on the interval <span class=\"math\">\\(0 \\leq t \\leq 1\\)</span> (i.e. the cells always divide in less than 1 hour), with probability density</p>\n<p><span class=\"math\">\\(\\displaystyle p(t) = C(\\sqrt{t}-t), \\qquad 0 \\leq t \\leq 1\\)</span></p>\n<p>a) Find <em>C</em>.</p>\n", 
+    "statement_latex": "Let \\emph{t} be the time (in hours) it takes for a cell division to\noccur. Suppose \\emph{t} is a continuous random variable on the interval\n$0 \\leq t \\leq 1$ (i.e. the cells always divide in less than 1 hour),\nwith probability density\n\n$\\displaystyle p(t) = C(\\sqrt{t}-t), \\qquad 0 \\leq t \\leq 1$\n\na) Find \\emph{C}.", 
+    "statement_raw": "Let ''t'' be the time (in hours) it takes for a cell division to occur. Suppose ''t'' is a continuous random variable on the interval &lt;math> 0 \\leq t \\leq 1 &lt;/math> (i.e. the cells always divide in less than 1 hour), with probability density \n\n&lt;math> \\displaystyle p(t) = C(\\sqrt{t}-t), \\qquad 0 \\leq t \\leq 1&lt;/math>\n\na) Find ''C''.\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_06_(a)", 
+    "year": 2006
 }

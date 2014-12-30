@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_02", 
-    "course": "MATH101", 
-    "statement": "For what values of p does $\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p}$\nconverge?", 
-    "year": 2009, 
-    "sols": [
-        "First, write this integral as\n\n$\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} = \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}$\n\nLet $u = \\ln(x)$. Then $du = dx/x$, $u(e) = \\ln(e) = 1$ and\n$u(b) = \\ln(b)$. Then\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}\\\\\n&= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u^p}\\end{align*}\n\nAt this point, we see that we need to break this up into two cases. The\nintegral above is different when $p = 1$ and when $p \\neq 1$. So suppose\n$p \\neq 1$. Then we have\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &= \\lim_{b \\to \\infty} \\left. \\frac{u^{-p+1}}{1-p}\\right|_1^{\\ln(b)} \\\\\n&= \\lim_{b \\to \\infty} \\frac{\\ln(b)^{-p+1}}{1-p} - \\frac{1}{1-p}\\end{align*}\n\nThis first term will tend to $0$ provided that $1-p < 0$ so whenever\n$p > 1$. This term will tend to infinity when $p < 1$ since the\nlogarithmic term stays in the numerator. To take care of the $p=1$ case\nthat we have left out, we have\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^1} &= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x\\ln{x}}\\\\\n&= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u}\\\\\n&= \\lim_{b \\to \\infty} \\left. \\ln(u) \\right|_1^{\\ln(b)} \\\\\n&= \\lim_{b \\to \\infty} \\ln\\ln(b) - \\ln(1)\\end{align*}\n\nand this diverges. So our integral converges when $p > 1$ and diverges\nwhen $p \\leq 1$ as required."
+    "answer_html": "<p>So our integral converges when <span class=\"math\">\\(p &gt; 1\\)</span> and diverges when <span class=\"math\">\\(p \\leq 1\\)</span> as required.</p>\n", 
+    "answer_latex": "So our integral converges when $p > 1$ and diverges\nwhen $p \\leq 1$ as required.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try a substitution and then evaluating the integral directly.</p>\n", 
+        "<p>Try the substitution <span class=\"math\">\\(u = \\ln(x)\\)</span> (Don&#8217;t forget to substitute the endpoints!)</p>\n", 
+        "<p>You might want to isolate the case when <span class=\"math\">\\(p = 1\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try a substitution and then evaluating the integral directly.", 
         "Try the substitution $u = \\ln(x)$ (Don't forget to substitute the\nendpoints!)", 
         "You might want to isolate the case when $p = 1$"
-    ]
+    ], 
+    "hints_raw": [
+        "Try a substitution and then evaluating the integral directly.\n", 
+        "Try the substitution &lt;math> u = \\ln(x) &lt;/math> (Don't forget to substitute the endpoints!)\n", 
+        "You might want to isolate the case when &lt;math> p = 1 &lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>First, write this integral as</p>\n<p><span class=\"math\">\\(\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} = \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}\\)</span></p>\n<p>Let <span class=\"math\">\\(u = \\ln(x)\\)</span>. Then <span class=\"math\">\\(du = dx/x\\)</span>, <span class=\"math\">\\(u(e) = \\ln(e) = 1\\)</span> and <span class=\"math\">\\(u(b) = \\ln(b)\\)</span>. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &amp;= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}\\\\\n&amp;= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u^p}\\end{aligned}\\]</span></p>\n<p>At this point, we see that we need to break this up into two cases. The integral above is different when <span class=\"math\">\\(p = 1\\)</span> and when <span class=\"math\">\\(p \\neq 1\\)</span>. So suppose <span class=\"math\">\\(p \\neq 1\\)</span>. Then we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &amp;= \\lim_{b \\to \\infty} \\left.\\frac{u^{-p+1}}{1-p}\\right|_1^{\\ln(b)} \\\\\n&amp;= \\lim_{b \\to \\infty} \\frac{\\ln(b)^{-p+1}}{1-p} - \\frac{1}{1-p}\\end{aligned}\\]</span></p>\n<p>This first term will tend to <span class=\"math\">\\(0\\)</span> provided that <span class=\"math\">\\(1-p &lt; 0\\)</span> so whenever <span class=\"math\">\\(p &gt; 1\\)</span>. This term will tend to infinity when <span class=\"math\">\\(p &lt; 1\\)</span> since the logarithmic term stays in the numerator. To take care of the <span class=\"math\">\\(p=1\\)</span> case that we have left out, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^1} &amp;= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x\\ln{x}}\\\\\n&amp;= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u}\\\\\n&amp;= \\lim_{b \\to \\infty} \\left.\\ln(u) \\right|_1^{\\ln(b)} \\\\\n&amp;= \\lim_{b \\to \\infty} \\ln\\ln(b) - \\ln(1)\\end{aligned}\\]</span></p>\n<p>and this diverges. So our integral converges when <span class=\"math\">\\(p &gt; 1\\)</span> and diverges when <span class=\"math\">\\(p \\leq 1\\)</span> as required.</p>\n"
+    ], 
+    "sols_latex": [
+        "First, write this integral as\n\n$\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} = \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}$\n\nLet $u = \\ln(x)$. Then $du = dx/x$, $u(e) = \\ln(e) = 1$ and\n$u(b) = \\ln(b)$. Then\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}\\\\\n&= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u^p}\n\\end{align*}\n\nAt this point, we see that we need to break this up into two cases. The\nintegral above is different when $p = 1$ and when $p \\neq 1$. So suppose\n$p \\neq 1$. Then we have\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &= \\lim_{b \\to \\infty} \\left.\\frac{u^{-p+1}}{1-p}\\right|_1^{\\ln(b)} \\\\\n&= \\lim_{b \\to \\infty} \\frac{\\ln(b)^{-p+1}}{1-p} - \\frac{1}{1-p}\n\\end{align*}\n\nThis first term will tend to $0$ provided that $1-p < 0$ so whenever\n$p > 1$. This term will tend to infinity when $p < 1$ since the\nlogarithmic term stays in the numerator. To take care of the $p=1$ case\nthat we have left out, we have\n\n\\begin{align*}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^1} &= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x\\ln{x}}\\\\\n&= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u}\\\\\n&= \\lim_{b \\to \\infty} \\left.\\ln(u) \\right|_1^{\\ln(b)} \\\\\n&= \\lim_{b \\to \\infty} \\ln\\ln(b) - \\ln(1)\n\\end{align*}\n\nand this diverges. So our integral converges when $p > 1$ and diverges\nwhen $p \\leq 1$ as required."
+    ], 
+    "sols_raw": [
+        "First, write this integral as\n\n&lt;math>\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} = \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}&lt;/math>\n\nLet &lt;math> u = \\ln(x) &lt;/math>. Then &lt;math> du = dx/x  &lt;/math>, &lt;math> u(e) = \\ln(e) = 1 &lt;/math> and &lt;math> u(b) = \\ln(b) &lt;/math>. Then \n\n&lt;math>\n\\begin{align}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &amp;= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x(\\ln{x})^p}\\\\\n&amp;= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u^p}\\\\\n\\end{align}\n&lt;/math>\n\nAt this point, we see that we need to break this up into two cases. The integral above is different when &lt;math> p = 1 &lt;/math> and when &lt;math> p \\neq 1&lt;/math>. So suppose &lt;math> p \\neq 1 &lt;/math>. Then we have\n\n&lt;math>\n\\begin{align}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p} &amp;= \\lim_{b \\to \\infty} \\left. \\frac{u^{-p+1}}{1-p}\\right|_1^{\\ln(b)} \\\\\n&amp;= \\lim_{b \\to \\infty} \\frac{\\ln(b)^{-p+1}}{1-p} - \\frac{1}{1-p}\n\\end{align}\n&lt;/math>\n\nThis first term will tend to &lt;math> 0 &lt;/math> provided that &lt;math> 1-p &lt; 0 &lt;/math>  so whenever &lt;math> p > 1 &lt;/math>. This term will tend to infinity when &lt;math> p &lt; 1 &lt;/math> since the logarithmic term stays in the numerator. To take care of the &lt;math> p=1 &lt;/math> case that we have left out, we have\n\n&lt;math>\n\\begin{align}\n\\int_e^\\infty \\frac{dx}{x(\\ln{x})^1} &amp;= \\lim_{b \\to \\infty} \\int_e^b \\frac{dx}{x\\ln{x}}\\\\\n&amp;= \\lim_{b \\to \\infty} \\int_1^{\\ln(b)} \\frac{du}{u}\\\\\n&amp;= \\lim_{b \\to \\infty} \\left. \\ln(u) \\right|_1^{\\ln(b)} \\\\\n&amp;= \\lim_{b \\to \\infty} \\ln\\ln(b) - \\ln(1)\n\\end{align}\n&lt;/math>\n\nand this diverges. So our integral converges when &lt;math> p > 1 &lt;/math> and diverges when &lt;math> p \\leq 1 &lt;/math> as required.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>For what values of p does <span class=\"math\">\\(\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p}\\)</span> converge?</p>\n", 
+    "statement_latex": "For what values of p does $\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p}$\nconverge?", 
+    "statement_raw": "For what values of p does &lt;math>\\int_e^\\infty \\frac{dx}{x(\\ln{x})^p}&lt;/math> converge?\n", 
+    "term": "April", 
+    "topics": [
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_02", 
+    "year": 2009
 }

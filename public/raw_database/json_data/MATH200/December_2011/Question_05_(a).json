@@ -1,13 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH200", 
-    "statement": "Consider the iterated integral\n$\\int_{-4}^{0}\\int_{\\sqrt{-y}}^{2}\\cos(x^{3})\\,dx\\,dy.$\n\ni) Draw the region of integration.\n\nii) Evaluate the integral.", 
-    "year": 2011, 
-    "sols": [
-        "(i) \\includegraphics[width=.5\\textwidth]{Math200Dec11Q5a.png}\n\n(ii) Since $\\displaystyle \\cos(x^3)$ is hard to integrate with respect\nto $\\displaystyle x$, we change the order of integration. Using the\nsketch of (i) and that $\\displaystyle x=\\sqrt{-y}$ is equivalent to\n$\\displaystyle y = -x^2$ (and $\\displaystyle x\\geq 0$) we find that\n\n\\begin{align*}\n \\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&= \\frac13\\sin(8)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y=\\frac13\\sin(8)\\)</span></p>\n", 
+    "answer_latex": " $\\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y=\\frac13\\sin(8)$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>For evaluating the integral, change the order of integration.</p>\n"
+    ], 
+    "hints_latex": [
         "For evaluating the integral, change the order of integration."
-    ]
+    ], 
+    "hints_raw": [
+        "For evaluating the integral, change the order of integration.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "5 (a)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>(i) <img src=\"../json_data/MATH200/December_2011/Math200Dec11Q5a.png\" alt=\"image\" /></p>\n<p>(ii) Since <span class=\"math\">\\(\\displaystyle \\cos(x^3)\\)</span> is hard to integrate with respect to <span class=\"math\">\\(\\displaystyle x\\)</span>, we change the order of integration. Using the sketch of (i) and that <span class=\"math\">\\(\\displaystyle x=\\sqrt{-y}\\)</span> is equivalent to <span class=\"math\">\\(\\displaystyle y = -x^2\\)</span> (and <span class=\"math\">\\(\\displaystyle x\\geq 0\\)</span>) we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &amp;= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&amp;= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&amp;= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&amp;= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&amp;= \\frac13\\sin(8)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "(i) \\includegraphics[width=0.5\\textwidth]{../json_data/MATH200/December_2011/Math200Dec11Q5a.png}\n\n(ii) Since $\\displaystyle \\cos(x^3)$ is hard to integrate with respect\nto $\\displaystyle x$, we change the order of integration. Using the\nsketch of (i) and that $\\displaystyle x=\\sqrt{-y}$ is equivalent to\n$\\displaystyle y = -x^2$ (and $\\displaystyle x\\geq 0$) we find that\n\n\\begin{align*}\n\\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&= \\frac13\\sin(8)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "(i) \n[[File:Math200Dec11Q5a.png|300px|Region of integration]]\n\n(ii)\nSince &lt;math>\\displaystyle \\cos(x^3) &lt;/math> is hard to integrate with respect to &lt;math>\\displaystyle x &lt;/math>, we change the order of integration. \nUsing the sketch of (i) and that &lt;math>\\displaystyle x=\\sqrt{-y} &lt;/math> is equivalent to &lt;math>\\displaystyle y = -x^2 &lt;/math> (and &lt;math>\\displaystyle x\\geq 0&lt;/math>) we find that\n\n\n&lt;math>\\displaystyle \\begin{align}\n \\int_{-4}^0\\int_{\\sqrt{-y}}^2\\cos(x^3)\\;\\text{d}x\\text{d}y &amp;= \\int_0^2\\int_{-x^2}^0 \\cos(x^3)\\;\\text{d}y\\text{d}x\\\\\n&amp;= \\int_0^2\\cos(x^3)[y]_{-x^2}^0\\;\\text{d}x\\\\\n&amp;= \\int_0^2\\cos(x^3)x^2\\;\\text{d}x\\\\\n&amp;= [\\frac13\\sin(x^3)]_0^2 = \\frac13\\sin(8) - \\frac13\\sin(0) \\\\\n&amp;= \\frac13\\sin(8)\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the iterated integral <span class=\"math\">\\(\\int_{-4}^{0}\\int_{\\sqrt{-y}}^{2}\\cos(x^{3})\\,dx\\,dy.\\)</span></p>\n<p>i) Draw the region of integration.</p>\n<p>ii) Evaluate the integral.</p>\n", 
+    "statement_latex": "Consider the iterated integral\n$\\int_{-4}^{0}\\int_{\\sqrt{-y}}^{2}\\cos(x^{3})\\,dx\\,dy.$\n\ni) Draw the region of integration.\n\nii) Evaluate the integral.", 
+    "statement_raw": "Consider the iterated integral &lt;math>\n\\int_{-4}^{0}\\int_{\\sqrt{-y}}^{2}\\cos(x^{3})\\,dx\\,dy.\n&lt;/math>\n\ni) Draw the region of integration.\n\nii) Evaluate the integral.\n", 
+    "term": "December", 
+    "topics": [
+        "Integration", 
+        "Multiple_integral", 
+        "Multivariable_calculus", 
+        "Trigonometric_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/December_2011/Question_05_(a)", 
+    "year": 2011
 }

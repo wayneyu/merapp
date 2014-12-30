@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_05", 
-    "course": "MATH110", 
-    "statement": "Consider an equilateral triangle whose sides are of length 4. Determine\nthe dimensions of the largest rectangle which may be inscribed inside\nthe triangle if one side of the rectangle lies on the base of the\ntriangle.", 
-    "year": 2013, 
-    "sols": [
-        "Let's start with drawing a sketch.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110Q5April2013.jpg}\n\\end{description}\n\nThe area of the rectangle with width \\emph{w} and length \\emph{l} is\ngiven by\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{Area = wl}\n\\end{description}\n\nThe constrains are \\emph{0 $\\leq$ w $\\leq$ 4}, \\emph{0 $\\leq$ l $\\leq$\nh}, where \\emph{h} is the height of the surrounding triangle. However,\n\\emph{w} and \\emph{l} are not independent: a larger width results in a\nshorter length and vice versa. Hence, the next step is to express the\nformula for the Area with respect to just one variable. We achieve this\nby observing the similar triangles ABC and DEC to find\n\n\\begin{align*}\\frac{h}2 = \\frac{l}{2-w/2}\\end{align*}\n\nor, equivalently,\n\n\\begin{align*}w = 4\\left(1-\\frac{l}{h}\\right)\\end{align*}\n\nPlugging this into the formula for the Area of the rectangle we find\n\n\\begin{align*}\\mathrm{Area}(l) = 4\\left(1-\\frac{l}{h}\\right)l = 4\\left(l-\\frac{l^2}h\\right)\\end{align*}\n\nNow, that we expressed the Area as a function of just one variable, we\ncan go about maximizing it as usual: Set the derivative to zero and\nsolve for the variable \\emph{l}:\n\n\\begin{align*}\\mathrm{Area}'(l) = 4\\left(1-\\frac{2l}{h}\\right)\\end{align*}\n\nSetting this expression to zero we obtain \\emph{l = h/2} as critical\npoint. Since the area vanishes at the endpoints, \\emph{Area(0) = 0} and\n\\emph{Area(h) = 0}, the critical point \\emph{l = h/2} is the maximum we\nare looking for.\n\nHence, the dimensions of the rectangle that maximizes the area are\n\n\\begin{align*}w = 4\\left(1-\\frac{\\frac{l}2}{h}\\right) = 2, \\quad l = \\frac{h}2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(w=\\frac{h}2\\)</span></p>\n", 
+    "answer_latex": " $w=\\frac{h}2$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try drawing a picture of the rectangle and triangle. Is there a way to relate the height and width of the rectangle using a property of triangles?</p>\n", 
+        "<p>To relate the height and width of the rectangle using an equation, use similar triangles. You&#8217;ll need to calculate the height of the triangle using either the Pythagorean theorem or special triangles.</p>\n", 
+        "<p>Once the height and width of the rectangle are related in an equation, solve for either variable and plug the resulting expression into the formula for the area of the rectangle. This new area formula is what you want to maximize.</p>\n"
+    ], 
+    "hints_latex": [
         "Try drawing a picture of the rectangle and triangle. Is there a way to\nrelate the height and width of the rectangle using a property of\ntriangles?", 
         "To relate the height and width of the rectangle using an equation, use\nsimilar triangles. You'll need to calculate the height of the triangle\nusing either the Pythagorean theorem or special triangles.", 
         "Once the height and width of the rectangle are related in an equation,\nsolve for either variable and plug the resulting expression into the\nformula for the area of the rectangle. This new area formula is what you\nwant to maximize."
-    ]
+    ], 
+    "hints_raw": [
+        "Try drawing a picture of the rectangle and triangle.  Is there a way to relate the height and width of the rectangle using a property of triangles?\n", 
+        "To relate the height and width of the rectangle using an equation, use similar triangles.  You'll need to calculate the height of the triangle using either the Pythagorean theorem or special triangles.\n", 
+        "Once the height and width of the rectangle are related in an equation, solve for either variable and plug the resulting expression into the formula for the area of the rectangle.  This new area formula is what you want to maximize.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Let&#8217;s start with drawing a sketch.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110Q5April2013.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>The area of the rectangle with width <em>w</em> and length <em>l</em> is given by</p>\n<dl>\n\n<dd><p><em>Area = wl</em></p>\n</dd>\n</dl>\n<p>The constrains are <em>0 <span class=\"math\">\\(\\leq\\)</span> w <span class=\"math\">\\(\\leq\\)</span> 4</em>, <em>0 <span class=\"math\">\\(\\leq\\)</span> l <span class=\"math\">\\(\\leq\\)</span> h</em>, where <em>h</em> is the height of the surrounding triangle. However, <em>w</em> and <em>l</em> are not independent: a larger width results in a shorter length and vice versa. Hence, the next step is to express the formula for the Area with respect to just one variable. We achieve this by observing the similar triangles ABC and DEC to find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{h}2 = \\frac{l}{2-w/2}\\end{aligned}\\]</span></p>\n<p>or, equivalently,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nw = 4\\left(1-\\frac{l}{h}\\right)\\end{aligned}\\]</span></p>\n<p>Plugging this into the formula for the Area of the rectangle we find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Area}(l) = 4\\left(1-\\frac{l}{h}\\right)l = 4\\left(l-\\frac{l^2}h\\right)\\end{aligned}\\]</span></p>\n<p>Now, that we expressed the Area as a function of just one variable, we can go about maximizing it as usual: Set the derivative to zero and solve for the variable <em>l</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Area}&#39;(l) = 4\\left(1-\\frac{2l}{h}\\right)\\end{aligned}\\]</span></p>\n<p>Setting this expression to zero we obtain <em>l = h/2</em> as critical point. Since the area vanishes at the endpoints, <em>Area(0) = 0</em> and <em>Area(h) = 0</em>, the critical point <em>l = h/2</em> is the maximum we are looking for.</p>\n<p>Hence, the dimensions of the rectangle that maximizes the area are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nw = 4\\left(1-\\frac{\\frac{l}2}{h}\\right) = 2, \\quad l = \\frac{h}2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let's start with drawing a sketch.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110Q5April2013.jpg}\n\\end{description}\n\nThe area of the rectangle with width \\emph{w} and length \\emph{l} is\ngiven by\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{Area = wl}\n\\end{description}\n\nThe constrains are \\emph{0 $\\leq$ w $\\leq$ 4}, \\emph{0 $\\leq$ l $\\leq$\nh}, where \\emph{h} is the height of the surrounding triangle. However,\n\\emph{w} and \\emph{l} are not independent: a larger width results in a\nshorter length and vice versa. Hence, the next step is to express the\nformula for the Area with respect to just one variable. We achieve this\nby observing the similar triangles ABC and DEC to find\n\n\\begin{align*}\n\\frac{h}2 = \\frac{l}{2-w/2}\n\\end{align*}\n\nor, equivalently,\n\n\\begin{align*}\nw = 4\\left(1-\\frac{l}{h}\\right)\n\\end{align*}\n\nPlugging this into the formula for the Area of the rectangle we find\n\n\\begin{align*}\n\\mathrm{Area}(l) = 4\\left(1-\\frac{l}{h}\\right)l = 4\\left(l-\\frac{l^2}h\\right)\n\\end{align*}\n\nNow, that we expressed the Area as a function of just one variable, we\ncan go about maximizing it as usual: Set the derivative to zero and\nsolve for the variable \\emph{l}:\n\n\\begin{align*}\n\\mathrm{Area}'(l) = 4\\left(1-\\frac{2l}{h}\\right)\n\\end{align*}\n\nSetting this expression to zero we obtain \\emph{l = h/2} as critical\npoint. Since the area vanishes at the endpoints, \\emph{Area(0) = 0} and\n\\emph{Area(h) = 0}, the critical point \\emph{l = h/2} is the maximum we\nare looking for.\n\nHence, the dimensions of the rectangle that maximizes the area are\n\n\\begin{align*}\nw = 4\\left(1-\\frac{\\frac{l}2}{h}\\right) = 2, \\quad l = \\frac{h}2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Let's start with drawing a sketch.\n\n:[[File:Math110Q5April2013.jpg | 400px | thumbnail]]\n\nThe area of the rectangle with width ''w'' and length ''l'' is given by\n\n:''Area = wl''\n\nThe constrains are ''0 &amp;le; w &amp;le; 4'', ''0 &amp;le; l &amp;le; h'', where ''h'' is the height of the surrounding triangle. However, ''w'' and ''l'' are not independent: a larger width results in a shorter length and vice versa. Hence, the next step is to express the formula for the Area with respect to just one variable. We achieve this by observing the similar triangles ABC and DEC to find\n\n:&lt;math>\n\\frac{h}2 = \\frac{l}{2-w/2}\n&lt;/math>\n\nor, equivalently,\n\n:&lt;math>\nw = 4\\left(1-\\frac{l}{h}\\right)\n&lt;/math>\n\nPlugging this into the formula for the Area of the rectangle we find\n\n:&lt;math>\n\\mathrm{Area}(l) = 4\\left(1-\\frac{l}{h}\\right)l = 4\\left(l-\\frac{l^2}h\\right)\n&lt;/math>\n\nNow, that we expressed the Area as a function of just one variable, we can go about maximizing it as usual: Set the derivative to zero and solve for the variable ''l'':\n\n:&lt;math>\n\\mathrm{Area}'(l) = 4\\left(1-\\frac{2l}{h}\\right)\n&lt;/math>\n\nSetting this expression to zero we obtain ''l = h/2'' as critical point. Since the area vanishes at the endpoints, ''Area(0) = 0'' and ''Area(h) = 0'', the critical point ''l = h/2'' is the maximum we are looking for.\n\nHence, the dimensions of the rectangle that maximizes the area are\n\n:&lt;math>\nw = 4\\left(1-\\frac{\\frac{l}2}{h}\\right) = 2, \\quad l = \\frac{h}2\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider an equilateral triangle whose sides are of length 4. Determine the dimensions of the largest rectangle which may be inscribed inside the triangle if one side of the rectangle lies on the base of the triangle.</p>\n", 
+    "statement_latex": "Consider an equilateral triangle whose sides are of length 4. Determine\nthe dimensions of the largest rectangle which may be inscribed inside\nthe triangle if one side of the rectangle lies on the base of the\ntriangle.", 
+    "statement_raw": "Consider an equilateral triangle whose sides are of length 4. Determine the dimensions of the largest rectangle which may be inscribed inside the triangle if one side of the rectangle lies on the base of the triangle.\n", 
+    "term": "April", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_05", 
+    "year": 2013
 }

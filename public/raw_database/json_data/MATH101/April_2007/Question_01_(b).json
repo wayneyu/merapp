@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int_{-1}^{0}(2x - e^{x})\\, dx$", 
-    "year": 2007, 
-    "sols": [
-        "Evaluating directly, we have\n\n\\begin{align*}\n \\int_{-1}^{0}(2x - e^{x})\\, dx &= \\left. x^{2} - e^{x} \\right| _{-1}^{0} \\\\\n&= 0 - e^{0} - ((-1)^{2} - e^{-1}) \\\\\n&= -1 - 1 + e^{-1} \\\\\n&= -2 +e^{-1} \\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_{-1}^{0}(2x - e^{x})\\, dx=-2 +e^{-1}\\)</span></p>\n", 
+    "answer_latex": " $\\int_{-1}^{0}(2x - e^{x})\\, dx=-2 +e^{-1}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>As in Nike&#8217;s slogan - Just do it!</p>\n"
+    ], 
+    "hints_latex": [
         "As in Nike's slogan - Just do it!"
-    ]
+    ], 
+    "hints_raw": [
+        "As in Nike's slogan - Just do it!\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Evaluating directly, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-1}^{0}(2x - e^{x})\\, dx &amp;= \\left.x^{2} - e^{x} \\right| _{-1}^{0} \\\\\n&amp;= 0 - e^{0} - ((-1)^{2} - e^{-1}) \\\\\n&amp;= -1 - 1 + e^{-1} \\\\\n&amp;= -2 +e^{-1} \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Evaluating directly, we have\n\n\\begin{align*}\n\\int_{-1}^{0}(2x - e^{x})\\, dx &= \\left.x^{2} - e^{x} \\right| _{-1}^{0} \\\\\n&= 0 - e^{0} - ((-1)^{2} - e^{-1}) \\\\\n&= -1 - 1 + e^{-1} \\\\\n&= -2 +e^{-1} \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Evaluating directly, we have\n\n&lt;math>\n\\begin{align}\n \\int_{-1}^{0}(2x - e^{x})\\, dx &amp;= \\left. x^{2} - e^{x} \\right| _{-1}^{0} \\\\\n&amp;= 0 - e^{0} - ((-1)^{2} - e^{-1}) \\\\\n&amp;= -1 - 1 + e^{-1} \\\\\n&amp;= -2 +e^{-1} \\\\\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int_{-1}^{0}(2x - e^{x})\\, dx\\)</span></p>\n", 
+    "statement_latex": "Evaluate $\\int_{-1}^{0}(2x - e^{x})\\, dx$", 
+    "statement_raw": "Evaluate &lt;math> \\int_{-1}^{0}(2x - e^{x})\\, dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_01_(b)", 
+    "year": 2007
 }

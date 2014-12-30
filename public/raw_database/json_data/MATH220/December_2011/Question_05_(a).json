@@ -1,13 +1,46 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH220", 
-    "statement": "State what is means for a set \\emph{A} to be denumerable.", 
-    "year": 2011, 
-    "sols": [
-        "A set \\emph{A} is denumerable if it is in bijective correspondence with\nthe natural numbers. That is, it is denumerable if and only if there\nexists a bijective function\n\n\\begin{align*}\\displaystyle\nf: A \\to \\mathbb{N}\\end{align*}\n\n\\textbf{Note:} Mathematicians think of this function as a\n\\emph{counting} of all the elements of the set \\emph{A}. Given a\ncounting, that is such a bijection $f$ the \\emph{first} element of the set\n\\emph{A} is the one that is mapped to 1 by the function, the\n\\emph{second} element is the one mapped to 2 and so on. Observe that we\nneed to require the function to be bijective to guarantee that all the\nelements are counted and are counted in a unique way (we don't want to\nhave two elements mapped to the same natural number)."
+    "answer_html": "<p>Given a counting, that is such a bijection <span class=\"math\">\\(f\\)</span> the <em>first</em> element of the set <em>A</em> is the one that is mapped to 1 by the function, the <em>second</em> element is the one mapped to 2 and so on.Observe that we need to require the function to be bijective to guarantee that all the elements are counted and are counted in a unique way (we don&#8217;t want to have two elements mapped to the same natural number).</p>\n", 
+    "answer_latex": "Given a\ncounting, that is such a bijection $f$ the \\emph{first} element of the set\n\\emph{A} is the one that is mapped to 1 by the function, the\n\\emph{second} element is the one mapped to 2 and so on.Observe that we\nneed to require the function to be bijective to guarantee that all the\nelements are counted and are counted in a unique way (we don't want to\nhave two elements mapped to the same natural number).", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The word &#8220;denumerable&#8221; suggests natural numbers. Denumerable is another word for <em>countably infinite</em>.</p>\n"
+    ], 
+    "hints_latex": [
         "The word ``denumerable'' suggests natural numbers. Denumerable is\nanother word for \\emph{countably infinite}."
-    ]
+    ], 
+    "hints_raw": [
+        "The word \"denumerable\" suggests natural numbers. Denumerable is another word for ''countably infinite''.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (a)", 
+    "rating": 50, 
+    "sols_html": [
+        "<p>A set <em>A</em> is denumerable if it is in bijective correspondence with the natural numbers. That is, it is denumerable if and only if there exists a bijective function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf: A \\to \\mathbb{N}\\end{aligned}\\]</span></p>\n<p><strong>Note:</strong> Mathematicians think of this function as a <em>counting</em> of all the elements of the set <em>A</em>. Given a counting, that is such a bijection <span class=\"math\">\\(f\\)</span> the <em>first</em> element of the set <em>A</em> is the one that is mapped to 1 by the function, the <em>second</em> element is the one mapped to 2 and so on. Observe that we need to require the function to be bijective to guarantee that all the elements are counted and are counted in a unique way (we don&#8217;t want to have two elements mapped to the same natural number).</p>\n"
+    ], 
+    "sols_latex": [
+        "A set \\emph{A} is denumerable if it is in bijective correspondence with\nthe natural numbers. That is, it is denumerable if and only if there\nexists a bijective function\n\n\\begin{align*}\n\\displaystyle\nf: A \\to \\mathbb{N}\n\\end{align*}\n\n\\textbf{Note:} Mathematicians think of this function as a\n\\emph{counting} of all the elements of the set \\emph{A}. Given a\ncounting, that is such a bijection $f$ the \\emph{first} element of the set\n\\emph{A} is the one that is mapped to 1 by the function, the\n\\emph{second} element is the one mapped to 2 and so on. Observe that we\nneed to require the function to be bijective to guarantee that all the\nelements are counted and are counted in a unique way (we don't want to\nhave two elements mapped to the same natural number)."
+    ], 
+    "sols_raw": [
+        "A set ''A'' is denumerable if it is in bijective correspondence with the natural numbers. That is, it is denumerable if and only if there exists a bijective function\n:&lt;math>\\displaystyle\nf: A \\to \\mathbb{N}\n&lt;/math>\n\n\n'''Note:''' Mathematicians think of this function as a ''counting'' of all the elements of the set ''A''. Given a counting, that is such a bijection &amp;fnof; the ''first'' element of the set ''A'' is the one that is mapped to 1 by the function, the ''second'' element is the one mapped to 2 and so on. Observe that we need to require the function to be bijective to guarantee that all the elements are counted and are counted in a unique way (we don't want to have two elements mapped to the same natural number).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>State what is means for a set <em>A</em> to be denumerable.</p>\n", 
+    "statement_latex": "State what is means for a set \\emph{A} to be denumerable.", 
+    "statement_raw": "State what is means for a set ''A'' to be denumerable.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_05_(a)", 
+    "year": 2011
 }

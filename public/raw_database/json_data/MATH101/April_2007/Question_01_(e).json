@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
-    "course": "MATH101", 
-    "statement": "Calculate the volume of the solid obtained by rotating the region above\nthe \\emph{x}-axis, below the curve $y = \\frac{\\sin x}{x}$ and between\nthe lines $x = \\frac{\\pi}{2}$ and $\\displaystyle x = \\pi$ about the\n\\emph{y}-axis.", 
-    "year": 2007, 
-    "sols": [
-        "To solve this question, choose an \\emph{x} between $\\pi/2$ and $\\pi$.\nFrom here, the radius of a shell rotated about the \\emph{y}-axis is just\n\\emph{r} = \\emph{x} and the height of this shell is\n$\\frac{\\sin x}{x} - 0 = \\frac{\\sin x}{x}$. The distance the height\ntravels aroudn the \\emph{y}-axis is $2\\pi r$ and hence, we have\n\n\\begin{align*}\nV &= \\int_{\\pi/2}^{\\pi}2\\pi(x)(\\sin(x)/x)\\,dx\\\\\n&= \\int_{\\pi/2}^{\\pi}2\\pi\\sin(x)\\,dx\\\\\n&= 2\\pi(-\\cos(x))\\bigg|_{\\pi/2}^{\\pi} \\\\\n&= 2\\pi(-\\cos(\\pi) + \\cos(\\pi/2))\\\\\n&= 2\\pi(-(-1) + 0)\\\\\n&= 2\\pi\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(V=2\\pi\\)</span></p>\n", 
+    "answer_latex": " $V=2\\pi$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the method of cylindrical shells. (Shell Integration)</p>\n"
+    ], 
+    "hints_latex": [
         "Use the method of cylindrical shells. (Shell Integration)"
-    ]
+    ], 
+    "hints_raw": [
+        "Use the method of cylindrical shells. (Shell Integration)\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To solve this question, choose an <em>x</em> between <span class=\"math\">\\(\\pi/2\\)</span> and <span class=\"math\">\\(\\pi\\)</span>. From here, the radius of a shell rotated about the <em>y</em>-axis is just <em>r</em> = <em>x</em> and the height of this shell is <span class=\"math\">\\(\\frac{\\sin x}{x} - 0 = \\frac{\\sin x}{x}\\)</span>. The distance the height travels aroudn the <em>y</em>-axis is <span class=\"math\">\\(2\\pi r\\)</span> and hence, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\int_{\\pi/2}^{\\pi}2\\pi(x)(\\sin(x)/x)\\,dx\\\\\n&amp;= \\int_{\\pi/2}^{\\pi}2\\pi\\sin(x)\\,dx\\\\\n&amp;= 2\\pi(-\\cos(x))\\bigg|_{\\pi/2}^{\\pi} \\\\\n&amp;= 2\\pi(-\\cos(\\pi) + \\cos(\\pi/2))\\\\\n&amp;= 2\\pi(-(-1) + 0)\\\\\n&amp;= 2\\pi\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To solve this question, choose an \\emph{x} between $\\pi/2$ and $\\pi$.\nFrom here, the radius of a shell rotated about the \\emph{y}-axis is just\n\\emph{r} = \\emph{x} and the height of this shell is\n$\\frac{\\sin x}{x} - 0 = \\frac{\\sin x}{x}$. The distance the height\ntravels aroudn the \\emph{y}-axis is $2\\pi r$ and hence, we have\n\n\\begin{align*}\nV &= \\int_{\\pi/2}^{\\pi}2\\pi(x)(\\sin(x)/x)\\,dx\\\\\n&= \\int_{\\pi/2}^{\\pi}2\\pi\\sin(x)\\,dx\\\\\n&= 2\\pi(-\\cos(x))\\bigg|_{\\pi/2}^{\\pi} \\\\\n&= 2\\pi(-\\cos(\\pi) + \\cos(\\pi/2))\\\\\n&= 2\\pi(-(-1) + 0)\\\\\n&= 2\\pi\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To solve this question, choose an ''x'' between &lt;math>\\pi/2 &lt;/math> and &lt;math>\\pi &lt;/math>. From here, the radius of a shell rotated about the ''y''-axis is just ''r'' = ''x'' and the height of this shell is &lt;math>\\frac{\\sin x}{x} - 0 = \\frac{\\sin x}{x} &lt;/math>. The distance the height travels aroudn the ''y''-axis is &lt;math> 2\\pi r &lt;/math> and hence, we have\n\n&lt;math>\n\\begin{align}\nV &amp;= \\int_{\\pi/2}^{\\pi}2\\pi(x)(\\sin(x)/x)\\,dx\\\\\n&amp;= \\int_{\\pi/2}^{\\pi}2\\pi\\sin(x)\\,dx\\\\\n&amp;= 2\\pi(-\\cos(x))\\bigg|_{\\pi/2}^{\\pi} \\\\\n&amp;= 2\\pi(-\\cos(\\pi) + \\cos(\\pi/2))\\\\\n&amp;= 2\\pi(-(-1) + 0)\\\\\n&amp;= 2\\pi\n\\end{align}\n &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Calculate the volume of the solid obtained by rotating the region above the <em>x</em>-axis, below the curve <span class=\"math\">\\(y = \\frac{\\sin x}{x}\\)</span> and between the lines <span class=\"math\">\\(x = \\frac{\\pi}{2}\\)</span> and <span class=\"math\">\\(\\displaystyle x = \\pi\\)</span> about the <em>y</em>-axis.</p>\n", 
+    "statement_latex": "Calculate the volume of the solid obtained by rotating the region above\nthe \\emph{x}-axis, below the curve $y = \\frac{\\sin x}{x}$ and between\nthe lines $x = \\frac{\\pi}{2}$ and $\\displaystyle x = \\pi$ about the\n\\emph{y}-axis.", 
+    "statement_raw": "Calculate the volume of the solid obtained by rotating the region above the ''x''-axis, below the curve &lt;math> y = \\frac{\\sin x}{x} &lt;/math> and between the lines &lt;math> x = \\frac{\\pi}{2} &lt;/math> and &lt;math>\\displaystyle x = \\pi &lt;/math> about the ''y''-axis.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_01_(e)", 
+    "year": 2007
 }

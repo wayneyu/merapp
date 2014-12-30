@@ -1,16 +1,58 @@
 {
-    "term": "April", 
-    "question": "Question_03_(d)", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int e^{2x}\\sin 2x\\, dx$", 
-    "year": 2006, 
-    "sols": [
-        "We proceed by integration by parts. Let\n\n\\begin{align*}\nu = e^{2x} \\quad & \\quad v = -\\frac{\\cos(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad & \\quad dv = \\sin(2x)dx \\end{align*}\n\nand so the integral becomes\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\,dx &= -e^{2x}\\frac{\\cos(2x)}{2}  + \\int e^{2x}\\cos(2x) \\, dx\\end{align*}\n\nWe use parts again. Let\n\n\\begin{align*}\nu = e^{2x} \\quad & \\quad v = \\frac{\\sin(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad & \\quad dv = \\cos(2x)dx \\end{align*}\n\nThen, we have\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\,dx &= -e^{2x}\\frac{\\cos(2x)}{2} + \\int e^{2x}\\cos(2x) \\, dx\\\\\n&= -e^{2x}\\frac{\\cos(2x)}{2} + \\left( \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx \\right)\\\\\n&= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx\\end{align*}\n\nThis last integral on the right is the same as the integral on the left\n(up to a constant). Hence, we have\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\, dx +  \\int e^{2x}\\sin(2x) \\, dx  &= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n2\\int e^{2x}\\sin(2x) \\, dx  &= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n\\int e^{2x}\\sin(2x) \\, dx  &= -\\frac{e^{2x}\\cos(2x)}{4} + \\frac{e^{2x}\\sin(2x)}{4} +D \\end{align*}\n\nwhere $D = 2C$. This completes the question."
+    "answer_html": "<p>where <span class=\"math\">\\(D = 2C\\)</span>.This completes the question.</p>\n", 
+    "answer_latex": "where $D = 2C$.This completes the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try integrating by parts.</p>\n", 
+        "<p>Make <span class=\"math\">\\(u =e^{2x}\\)</span> and <span class=\"math\">\\(dv = \\sin(2x)dx\\)</span>.</p>\n", 
+        "<p>Try integrating by parts again similar to hint 2.</p>\n", 
+        "<p>Try integrating... no wait the integral on the far right looks like the one on the far left!!! So bring it over and simplify. (This is an example of a cyclic integral).</p>\n"
+    ], 
+    "hints_latex": [
         "Try integrating by parts.", 
         "Make $u =e^{2x}$ and $dv = \\sin(2x)dx$.", 
         "Try integrating by parts again similar to hint 2.", 
         "Try integrating... no wait the integral on the far right looks like the\none on the far left!!! So bring it over and simplify. (This is an\nexample of a cyclic integral)."
-    ]
+    ], 
+    "hints_raw": [
+        "Try integrating by parts.\n", 
+        "Make &lt;math> u =e^{2x} &lt;/math> and &lt;math> dv = \\sin(2x)dx &lt;/math>.\n", 
+        "Try integrating by parts again similar to hint 2.\n", 
+        "Try integrating... no wait the integral on the far right looks like the one on the far left!!! So bring it over and simplify. (This is an example of a cyclic integral).\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We proceed by integration by parts. Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = e^{2x} \\quad &amp; \\quad v = -\\frac{\\cos(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad &amp; \\quad dv = \\sin(2x)dx \\end{aligned}\\]</span></p>\n<p>and so the integral becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int  e^{2x}\\sin(2x)\\,dx &amp;= -e^{2x}\\frac{\\cos(2x)}{2}  + \\int e^{2x}\\cos(2x) \\, dx\\end{aligned}\\]</span></p>\n<p>We use parts again. Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = e^{2x} \\quad &amp; \\quad v = \\frac{\\sin(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad &amp; \\quad dv = \\cos(2x)dx \\end{aligned}\\]</span></p>\n<p>Then, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int  e^{2x}\\sin(2x)\\,dx &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\int e^{2x}\\cos(2x) \\, dx\\\\\n&amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\left( \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx \\right)\\\\\n&amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx\\end{aligned}\\]</span></p>\n<p>This last integral on the right is the same as the integral on the left (up to a constant). Hence, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int  e^{2x}\\sin(2x)\\, dx +  \\int e^{2x}\\sin(2x) \\, dx  &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n2\\int e^{2x}\\sin(2x) \\, dx  &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n\\int e^{2x}\\sin(2x) \\, dx  &amp;= -\\frac{e^{2x}\\cos(2x)}{4} + \\frac{e^{2x}\\sin(2x)}{4} +D \\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(D = 2C\\)</span>. This completes the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed by integration by parts. Let\n\n\\begin{align*}\nu = e^{2x} \\quad & \\quad v = -\\frac{\\cos(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad & \\quad dv = \\sin(2x)dx \n\\end{align*}\n\nand so the integral becomes\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\,dx &= -e^{2x}\\frac{\\cos(2x)}{2}  + \\int e^{2x}\\cos(2x) \\, dx\n\\end{align*}\n\nWe use parts again. Let\n\n\\begin{align*}\nu = e^{2x} \\quad & \\quad v = \\frac{\\sin(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad & \\quad dv = \\cos(2x)dx \n\\end{align*}\n\nThen, we have\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\,dx &= -e^{2x}\\frac{\\cos(2x)}{2} + \\int e^{2x}\\cos(2x) \\, dx\\\\\n&= -e^{2x}\\frac{\\cos(2x)}{2} + \\left( \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx \\right)\\\\\n&= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx\n\\end{align*}\n\nThis last integral on the right is the same as the integral on the left\n(up to a constant). Hence, we have\n\n\\begin{align*}\n\\int  e^{2x}\\sin(2x)\\, dx +  \\int e^{2x}\\sin(2x) \\, dx  &= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n2\\int e^{2x}\\sin(2x) \\, dx  &= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n\\int e^{2x}\\sin(2x) \\, dx  &= -\\frac{e^{2x}\\cos(2x)}{4} + \\frac{e^{2x}\\sin(2x)}{4} +D \n\\end{align*}\n\nwhere $D = 2C$. This completes the question."
+    ], 
+    "sols_raw": [
+        "We proceed by integration by parts. Let\n\n&lt;math>\n\\begin{align}\nu = e^{2x} \\quad &amp; \\quad v = -\\frac{\\cos(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad &amp; \\quad dv = \\sin(2x)dx \\\\\n\\end{align}\n&lt;/math>\n\nand so the integral becomes\n\n&lt;math>\n\\begin{align}\n\\int  e^{2x}\\sin(2x)\\,dx &amp;= -e^{2x}\\frac{\\cos(2x)}{2}  + \\int e^{2x}\\cos(2x) \\, dx\n\\end{align}\n&lt;/math>\n\nWe use parts again. Let\n\n&lt;math>\n\\begin{align}\nu = e^{2x} \\quad &amp; \\quad v = \\frac{\\sin(2x)}{2} \\\\\ndu = 2e^{2x}dx \\quad &amp; \\quad dv = \\cos(2x)dx \\\\\n\\end{align}\n&lt;/math>\n\nThen, we have\n\n&lt;math>\n\\begin{align}\n\\int  e^{2x}\\sin(2x)\\,dx &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\int e^{2x}\\cos(2x) \\, dx\\\\\n&amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\left( \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx \\right)\\\\\n&amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} - \\int e^{2x}\\sin(2x) \\, dx\n\\end{align}\n&lt;/math>\n\nThis last integral on the right is the same as the integral on the left (up to a constant). Hence, we have\n\n&lt;math>\n\\begin{align}\n\\int  e^{2x}\\sin(2x)\\, dx +  \\int e^{2x}\\sin(2x) \\, dx  &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n2\\int e^{2x}\\sin(2x) \\, dx  &amp;= -e^{2x}\\frac{\\cos(2x)}{2} + \\frac{e^{2x}\\sin(2x)}{2} +C \\\\\n\\int e^{2x}\\sin(2x) \\, dx  &amp;= -\\frac{e^{2x}\\cos(2x)}{4} + \\frac{e^{2x}\\sin(2x)}{4} +D \\\\\n\\end{align}\n&lt;/math>\n\nwhere &lt;math> D = 2C &lt;/math>. This completes the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\(\\int e^{2x}\\sin 2x\\, dx\\)</span></p>\n", 
+    "statement_latex": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int e^{2x}\\sin 2x\\, dx$", 
+    "statement_raw": "&lt;b> Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\n&lt;b> Evaluate the following integral. &lt;/b>\n\n&lt;math> \\int e^{2x}\\sin 2x\\, dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integrals_that_cycle", 
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_03_(d)", 
+    "year": 2006
 }

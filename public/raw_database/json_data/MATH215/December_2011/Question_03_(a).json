@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
+    "answer_html": "<p>Setting <span class=\"math\">\\(\\frac{dy}{dt} = 0\\)</span> we have <span class=\"math\">\\(y = \\pm 1, 2\\)</span> as our equilibrium points.</p>\n", 
+    "answer_latex": "Setting $\\frac{dy}{dt} = 0$ we have $y = \\pm 1, 2$ as\nour equilibrium points.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH215", 
-    "statement": "For the following ODE\n\n\\begin{align*}\\frac{dy}{dt} = (y^2-1)(y-2)^2\\end{align*}\n\n\\textbf{(a)} Determine the equilibrium (fixed) points.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The value of a solution in equilibrium does not change. What does this mean for the derivative?</p>\n"
+    ], 
+    "hints_latex": [
+        "The value of a solution in equilibrium does not change. What does this\nmean for the derivative?"
+    ], 
+    "hints_raw": [
+        "The value of a solution in equilibrium does not change. What does this mean for the derivative?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "3 (a)", 
+    "rating": 97, 
+    "sols_html": [
+        "<p>Setting <span class=\"math\">\\(\\frac{dy}{dt} = (y^2 - 1)(y-2)^2 = 0\\)</span> we have <span class=\"math\">\\(y = \\pm 1, 2\\)</span> as our equilibrium points.</p>\n"
+    ], 
+    "sols_latex": [
         "Setting $\\frac{dy}{dt} = (y^2 - 1)(y-2)^2 = 0$ we have $y = \\pm 1, 2$ as\nour equilibrium points."
     ], 
-    "hints": [
-        "The value of a solution in equilibrium does not change. What does this\nmean for the derivative?"
-    ]
+    "sols_raw": [
+        "Setting &lt;math>\\frac{dy}{dt} = (y^2 - 1)(y-2)^2 = 0&lt;/math> we have &lt;math>y = \\pm 1, 2&lt;/math> as our equilibrium points.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>For the following ODE</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Determine the equilibrium (fixed) points.</p>\n", 
+    "statement_latex": "For the following ODE\n\n\\begin{align*}\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\n\\end{align*}\n\n\\textbf{(a)} Determine the equilibrium (fixed) points.", 
+    "statement_raw": "For the following ODE\n\n:&lt;math>\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\n&lt;/math>\n\n'''(a)''' Determine the equilibrium (fixed) points.\n", 
+    "term": "December", 
+    "topics": [
+        "Equilibrium"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_03_(a)", 
+    "year": 2011
 }

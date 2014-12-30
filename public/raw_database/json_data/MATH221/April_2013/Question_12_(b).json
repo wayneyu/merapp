@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_12_(b)", 
-    "course": "MATH221", 
-    "statement": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{b)} Let \\textbf{u} =\n$\\left[\\begin{array}{c} 1 \\\\ 1 \\\\ 1\\end{array}\\right]$. Find vectors\n\\textbf{v} and \\textbf{w} such that \\textbf{u} = \\textbf{v} +\n\\textbf{w}, where \\textbf{v} is in the plane and \\textbf{w} is\nperpendicular to the plane.", 
-    "year": 2013, 
-    "sols": [
-        "If we apply the projection of\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(a)}{(a)}\nto the vector \\textbf{\\emph{u}}, we get a vector \\textbf{\\emph{w}} that\nis orthogonal to the plane. To get \\textbf{\\emph{v}}, we simply subtract\n\\textbf{\\emph{w}} from \\textbf{\\emph{u}}.\n\nTo verify that \\textbf{\\emph{v}} is indeed on the plane, we compute\nthat\\begin{align*}P_1(v) = P_1(u - w) = P_1(u) - P_1(w) = w - w = 0,\\end{align*} which shows\nthat the vector \\textbf{\\emph{v}} has no competent that is orthogonal to\nthe plane. Thus \\textbf{\\emph{v}} must lie in the plane itself.\n\nLet's perform the necessary calculations to get \\textbf{\\emph{w}} and\n\\textbf{\\emph{v}}. We have\n\n\\begin{align*}w = \\frac{u \\cdot \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]} {3} \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right] = \\frac{1}{3} \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]\\end{align*}\n\nAnd hence\n$v = u - w = \\left[ \\begin{array}{ccc} \\frac{2}{3} & \\frac{4}{3} & \\frac{2}{3}  \\\\  \\end{array} \\right]$.\n\n'\\textbf{'Note}: It is also easy to directly verify that\n\\textbf{\\emph{v}} satisfies the equation \\emph{x - y + z = 0} of the\nplane, since $2/3 -4/3 + 2/3 = 0$."
+    "answer_html": "<p>&#8217;<strong>&#8217;Note</strong>: It is also easy to directly verify that <strong><em>v</em></strong> satisfies the equation <em>x - y + z = 0</em> of the plane, since = &#8217;<strong>&#8217;Note</strong>: It is also easy to directly verify that <strong><em>v</em></strong> satisfies the equation <em>x - y + z = 0</em> of the plane, since <span class=\"math\">\\(2/3 -4/3 + 2/3 = 0\\)</span>.</p>\n", 
+    "answer_latex": "'\\textbf{'Note}: It is also easy to directly verify that\n\\textbf{\\emph{v}} satisfies the equation \\emph{x - y + z = 0} of the\nplane, since = '\\textbf{'Note}: It is also easy to directly verify that\n\\textbf{\\emph{v}} satisfies the equation \\emph{x - y + z = 0} of the\nplane, since $2/3 -4/3 + 2/3 = 0$.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "What happens when you apply the projection of\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(a)}{(a)}\nto the vector \\textbf{\\emph{u}}?"
-    ]
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What happens when you apply the projection of <span>(a)</span> to the vector <strong><em>u</em></strong>?</p>\n"
+    ], 
+    "hints_latex": [
+        "What happens when you apply the projection of\n{(a)}\nto the vector \\textbf{\\emph{u}}?"
+    ], 
+    "hints_raw": [
+        "What happens when you apply the projection of [[Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(a)|(a)]] to the vector '''''u'''''?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "12 (b)", 
+    "rating": 10, 
+    "sols_html": [
+        "<p>If we apply the projection of <span>(a)</span> to the vector <strong><em>u</em></strong>, we get a vector <strong><em>w</em></strong> that is orthogonal to the plane. To get <strong><em>v</em></strong>, we simply subtract <strong><em>w</em></strong> from <strong><em>u</em></strong>.</p>\n<p>To verify that <strong><em>v</em></strong> is indeed on the plane, we compute that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP_1(v) = P_1(u - w) = P_1(u) - P_1(w) = w - w = 0,\\end{aligned}\\]</span></p>\n<p>which shows that the vector <strong><em>v</em></strong> has no competent that is orthogonal to the plane. Thus <strong><em>v</em></strong> must lie in the plane itself.</p>\n<p>Let&#8217;s perform the necessary calculations to get <strong><em>w</em></strong> and <strong><em>v</em></strong>. We have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nw = \\frac{u \\cdot \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right]} {3} \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right] = \\frac{1}{3} \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right]\\end{aligned}\\]</span></p>\n<p>And hence <span class=\"math\">\\(v = u - w = \\left[ \\begin{array}{ccc} \\frac{2}{3} &amp; \\frac{4}{3} &amp; \\frac{2}{3}  \\\\  \\end{array} \\right]\\)</span>.</p>\n<p>&#8217;<strong>&#8217;Note</strong>: It is also easy to directly verify that <strong><em>v</em></strong> satisfies the equation <em>x - y + z = 0</em> of the plane, since <span class=\"math\">\\(2/3 -4/3 + 2/3 = 0\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "If we apply the projection of\n{(a)}\nto the vector \\textbf{\\emph{u}}, we get a vector \\textbf{\\emph{w}} that\nis orthogonal to the plane. To get \\textbf{\\emph{v}}, we simply subtract\n\\textbf{\\emph{w}} from \\textbf{\\emph{u}}.\n\nTo verify that \\textbf{\\emph{v}} is indeed on the plane, we compute\nthat\\begin{align*}\nP_1(v) = P_1(u - w) = P_1(u) - P_1(w) = w - w = 0,\n\\end{align*} which shows\nthat the vector \\textbf{\\emph{v}} has no competent that is orthogonal to\nthe plane. Thus \\textbf{\\emph{v}} must lie in the plane itself.\n\nLet's perform the necessary calculations to get \\textbf{\\emph{w}} and\n\\textbf{\\emph{v}}. We have\n\n\\begin{align*}\nw = \\frac{u \\cdot \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]} {3} \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right] = \\frac{1}{3} \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]\n\\end{align*}\n\nAnd hence\n$v = u - w = \\left[ \\begin{array}{ccc} \\frac{2}{3} & \\frac{4}{3} & \\frac{2}{3}  \\\\  \\end{array} \\right]$.\n\n'\\textbf{'Note}: It is also easy to directly verify that\n\\textbf{\\emph{v}} satisfies the equation \\emph{x - y + z = 0} of the\nplane, since $2/3 -4/3 + 2/3 = 0$."
+    ], 
+    "sols_raw": [
+        "If we apply the projection of [[Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(a)|(a)]] to the vector '''''u''''', we get a vector '''''w''''' that is orthogonal to the plane. To get '''''v''''', we simply subtract '''''w''''' from '''''u'''''.\n\nTo verify that '''''v''''' is indeed on the plane, we compute that: &lt;math> P_1(v) = P_1(u - w) = P_1(u) - P_1(w) = w - w = 0&lt;/math>, which shows that the vector '''''v''''' has no competent that is orthogonal to the plane. Thus '''''v''''' must lie in the plane itself.\n\nLet's perform the necessary calculations to get '''''w''''' and '''''v'''''. We have \n:&lt;math> w = \\frac{u \\cdot \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right]} {3} \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right] = \\frac{1}{3} \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right] &lt;/math>\n\nAnd hence &lt;math> v = u - w = \\left[ \\begin{array}{ccc} \\frac{2}{3} &amp; \\frac{4}{3} &amp; \\frac{2}{3}  \\\\  \\end{array} \\right] &lt;/math>.\n\n'''''Note''': It is also easy to directly verify that '''''v''''' satisfies the equation ''x - y + z = 0'' of the plane, since &lt;math> 2/3 -4/3 + 2/3 = 0 &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "JeromeLefebvre"
+    ], 
+    "statement_html": "<p>Consider the plane <em>x - y + z = 0</em>.</p>\n<p><strong>b)</strong> Let <strong>u</strong> = <span class=\"math\">\\(\\left[\\begin{array}{c} 1 \\\\ 1 \\\\ 1\\end{array}\\right]\\)</span>. Find vectors <strong>v</strong> and <strong>w</strong> such that <strong>u</strong> = <strong>v</strong> + <strong>w</strong>, where <strong>v</strong> is in the plane and <strong>w</strong> is perpendicular to the plane.</p>\n", 
+    "statement_latex": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{b)} Let \\textbf{u} =\n$\\left[\\begin{array}{c} 1 \\\\ 1 \\\\ 1\\end{array}\\right]$. Find vectors\n\\textbf{v} and \\textbf{w} such that \\textbf{u} = \\textbf{v} +\n\\textbf{w}, where \\textbf{v} is in the plane and \\textbf{w} is\nperpendicular to the plane.", 
+    "statement_raw": "Consider the plane ''x - y + z = 0''.\n\n'''b)''' Let '''u''' = &lt;math>\\left[\\begin{array}{c} 1 \\\\ 1 \\\\ 1\\end{array}\\right]&lt;/math>. Find vectors '''v''' and '''w''' such that '''u''' = '''v''' + '''w''', where '''v''' is in the plane and '''w''' is perpendicular to the plane.\n", 
+    "term": "April", 
+    "topics": [
+        "Orthogonal_projection"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(b)", 
+    "year": 2013
 }

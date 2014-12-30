@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
-    "course": "MATH200", 
-    "statement": "Combine the sum of the iterated integrals\n\n\\begin{align*}I=\\int_0^1\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y+\\int_1^4\\int_{y-2}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y\\end{align*}\n\ninto a single iterated integral with the order of integration reversed.", 
-    "year": 2012, 
-    "sols": [
-        "If we examine the region of integration by drawing a picture...\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH200_Dec2012_Q6a.png}\n\\caption{The domain of integration is enclosed within the curves\n$\\displaystyle x = y - 2$ (black), ${\\color{blue}x = -\\sqrt{y}}$ (blue),and ${\\color{red}x = \\sqrt{y}}$ (red)}\n\\end{figure}\n\n... we see that if we integrate with respect to y first, that we can\nspecify the lower bound of integration as $y = x^{2}$ and the upper\nbound as $y = x + 2$. Looking at where the lines meet, we can see that\nthe bounds of integration for x is x = -1 to x = 2. (To find these\nintersection points solve the equation $x^{2} = x + 2$.)\n\nFrom these observations, we can write I as follows\\begin{align*}{\\color{blue}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Try making a sketch of the region of integration first, rather than trying to tackle this problem from a purely algebraic standpoint.</p>\n"
+    ], 
+    "hints_latex": [
         "Try making a sketch of the region of integration first, rather than\ntrying to tackle this problem from a purely algebraic standpoint."
-    ]
+    ], 
+    "hints_raw": [
+        "Try making a sketch of the region of integration first, rather than trying to tackle this problem from a purely algebraic standpoint.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "6 (a)", 
+    "rating": 66, 
+    "sols_html": [
+        "<p>If we examine the region of integration by drawing a picture...</p>\n<p><img src=\"../json_data/MATH200/April_2012/MATH200_Dec2012_Q6a.png\" alt=\"image\" /></p>\n<p>... we see that if we integrate with respect to y first, that we can specify the lower bound of integration as <span class=\"math\">\\(y = x^{2}\\)</span> and the upper bound as <span class=\"math\">\\(y = x + 2\\)</span>. Looking at where the lines meet, we can see that the bounds of integration for x is x = -1 to x = 2. (To find these intersection points solve the equation <span class=\"math\">\\(x^{2} = x + 2\\)</span>.)</p>\n<p>From these observations, we can write I as follows</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "If we examine the region of integration by drawing a picture...\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH200/April_2012/MATH200_Dec2012_Q6a.png}\n\n... we see that if we integrate with respect to y first, that we can\nspecify the lower bound of integration as $y = x^{2}$ and the upper\nbound as $y = x + 2$. Looking at where the lines meet, we can see that\nthe bounds of integration for x is x = -1 to x = 2. (To find these\nintersection points solve the equation $x^{2} = x + 2$.)\n\nFrom these observations, we can write I as follows\\begin{align*}\n{\\color{blue}I = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "If we examine the region of integration by drawing a picture...\n\n[[File:MATH200 Dec2012 Q6a.png|center|frame|The domain of integration is enclosed within the curves &lt;math>\\displaystyle x = y - 2&lt;/math> (black), &lt;math>{\\color{blue}x = -\\sqrt{y}}&lt;/math> (blue), and &lt;math>{\\color{red}x = \\sqrt{y}}&lt;/math> (red)]]\n\n... we see that if we integrate with respect to &lt;i>y&lt;/i> first, that we can specify the lower bound of integration as &lt;math>y = x^{2}&lt;/math> and the upper bound as &lt;math>y = x + 2&lt;/math>. Looking at where the lines meet, we can see that the bounds of integration for &lt;i>x&lt;/i> is &lt;i>x = -1&lt;/i> to &lt;i>x = 2&lt;/i>. (To find these intersection points solve the equation &lt;math>x^{2} = x + 2&lt;/math>.)\n\nFrom these observations, we can write &lt;i>I&lt;/i> as follows:  &lt;math>\n{\\color{blue}\nI = \\int_{-1}^{2}\\int_{x^{2}}^{x + 2}f(x,y)\\,\\textrm{d}y\\textrm{d}x\n}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Combine the sum of the iterated integrals</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI=\\int_0^1\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y+\\int_1^4\\int_{y-2}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y\\end{aligned}\\]</span></p>\n<p>into a single iterated integral with the order of integration reversed.</p>\n", 
+    "statement_latex": "Combine the sum of the iterated integrals\n\n\\begin{align*}\nI=\\int_0^1\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y+\\int_1^4\\int_{y-2}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y\n\\end{align*}\n\ninto a single iterated integral with the order of integration reversed.", 
+    "statement_raw": "Combine the sum of the iterated integrals\n\n:&lt;math>\nI=\\int_0^1\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y+\\int_1^4\\int_{y-2}^{\\sqrt{y}}f(x,y)\\textrm{d}x\\textrm{d}y\n&lt;/math>\n\ninto a single iterated integral with the order of integration reversed.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_06_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(j)", 
-    "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind a bound for the error in approximating\n$\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx$ using Simpson$^{\\prime}$s\nrule with $n = 4$. Do not write down Simpson$^{\\prime}$s rule\napproximation $\\displaystyle S_{4}$.", 
-    "year": 2013, 
-    "sols": [
-        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\begin{align*}|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\end{align*}\n\nwhere $I = \\int_{1}^{5}\\frac{1}{x}\\,dx$. We know that\n$\\displaystyle a=1$, $\\displaystyle b=5$ and $\\displaystyle n=4$. To\nfind an upper bound on the fourth derivative, we first compute that\n\n\\begin{align*}\nf(x) &= \\frac{1}{x} \\\\\nf'(x) &= -\\frac{1}{x^{2}}\\\\\nf''(x) &= 2\\frac{1}{x^{3}}\\\\\nf'''(x) &= -6\\frac{1}{x^{4}}\\\\\nf''''(x) &= 24\\frac{1}{x^{5}}\\end{align*}\n\nAs the fourth derivative $\\displaystyle f''''(x) = \\frac{24}{x^5}$ is a\ndecreasing function in \\emph{x}, its maximum occurs at the smallest\npossible value, when $\\displaystyle x=1$. Hence a value of \\emph{K} is\ngiven by\n\n$\\displaystyle K = 24$\n\nHence, we have a bound on the error is given by\n\n$\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{24\\cdot4^5}{180\\cdot4^4} = \\frac{8}{15}$"
+    "answer_html": "<p><span class=\"math\">\\(\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{8}{15}\\)</span></p>\n", 
+    "answer_latex": "$\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{8}{15}$", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
-        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\begin{align*}|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\end{align*}\n\nwhere \\emph{I} is the integral in question. How would you find \\emph{K}?"
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Given <span class=\"math\">\\(n\\)</span>, an even integer, and an upper bound <span class=\"math\">\\(K \\geq |f^{(4)}(x)|\\)</span> for all <span class=\"math\">\\(x\\)</span> in the interval <span class=\"math\">\\([a,b]\\)</span>, the error that comes from using Simpson&#8217;s Rule is as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\end{aligned}\\]</span></p>\n<p>where <em>I</em> is the integral in question. How would you find <em>K</em>?</p>\n"
+    ], 
+    "hints_latex": [
+        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\begin{align*}\n|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\n\\end{align*}\n\nwhere \\emph{I} is the integral in question. How would you find \\emph{K}?"
+    ], 
+    "hints_raw": [
+        "Given &lt;math>n&lt;/math>, an even integer, and an upper bound &lt;math> K \\geq |f^{(4)}(x)|&lt;/math> for all &lt;math>x&lt;/math> in the interval &lt;math>[a,b]&lt;/math>, the error that comes from using Simpson's Rule is as follows: \n\n:&lt;math> |I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}&lt;/math>\n\nwhere ''I'' is the integral in question. How would you find ''K''?\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (j)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>Given <span class=\"math\">\\(n\\)</span>, an even integer, and an upper bound <span class=\"math\">\\(K \\geq |f^{(4)}(x)|\\)</span> for all <span class=\"math\">\\(x\\)</span> in the interval <span class=\"math\">\\([a,b]\\)</span>, the error that comes from using Simpson&#8217;s Rule is as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(I = \\int_{1}^{5}\\frac{1}{x}\\,dx\\)</span>. We know that <span class=\"math\">\\(\\displaystyle a=1\\)</span>, <span class=\"math\">\\(\\displaystyle b=5\\)</span> and <span class=\"math\">\\(\\displaystyle n=4\\)</span>. To find an upper bound on the fourth derivative, we first compute that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\frac{1}{x} \\\\\nf&#39;(x) &amp;= -\\frac{1}{x^{2}}\\\\\nf&#39;&#39;(x) &amp;= 2\\frac{1}{x^{3}}\\\\\nf&#39;&#39;&#39;(x) &amp;= -6\\frac{1}{x^{4}}\\\\\nf&#39;&#39;&#39;&#39;(x) &amp;= 24\\frac{1}{x^{5}}\\end{aligned}\\]</span></p>\n<p>As the fourth derivative <span class=\"math\">\\(\\displaystyle f&#39;&#39;&#39;&#39;(x) = \\frac{24}{x^5}\\)</span> is a decreasing function in <em>x</em>, its maximum occurs at the smallest possible value, when <span class=\"math\">\\(\\displaystyle x=1\\)</span>. Hence a value of <em>K</em> is given by</p>\n<p><span class=\"math\">\\(\\displaystyle K = 24\\)</span></p>\n<p>Hence, we have a bound on the error is given by</p>\n<p><span class=\"math\">\\(\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{24\\cdot4^5}{180\\cdot4^4} = \\frac{8}{15}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Given $n$, an even integer, and an upper bound $K \\geq |f^{(4)}(x)|$ for\nall $x$ in the interval $[a,b]$, the error that comes from using\nSimpson's Rule is as follows:\n\n\\begin{align*}\n|I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}\n\\end{align*}\n\nwhere $I = \\int_{1}^{5}\\frac{1}{x}\\,dx$. We know that\n$\\displaystyle a=1$, $\\displaystyle b=5$ and $\\displaystyle n=4$. To\nfind an upper bound on the fourth derivative, we first compute that\n\n\\begin{align*}\nf(x) &= \\frac{1}{x} \\\\\nf'(x) &= -\\frac{1}{x^{2}}\\\\\nf''(x) &= 2\\frac{1}{x^{3}}\\\\\nf'''(x) &= -6\\frac{1}{x^{4}}\\\\\nf''''(x) &= 24\\frac{1}{x^{5}}\n\\end{align*}\n\nAs the fourth derivative $\\displaystyle f''''(x) = \\frac{24}{x^5}$ is a\ndecreasing function in \\emph{x}, its maximum occurs at the smallest\npossible value, when $\\displaystyle x=1$. Hence a value of \\emph{K} is\ngiven by\n\n$\\displaystyle K = 24$\n\nHence, we have a bound on the error is given by\n\n$\\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{24\\cdot4^5}{180\\cdot4^4} = \\frac{8}{15}$"
+    ], 
+    "sols_raw": [
+        "Given &lt;math>n&lt;/math>, an even integer, and an upper bound &lt;math> K \\geq |f^{(4)}(x)|&lt;/math> for all &lt;math>x&lt;/math> in the interval &lt;math>[a,b]&lt;/math>, the error that comes from using Simpson's Rule is as follows: \n\n:&lt;math> |I - S_n| \\leq \\frac{K (b-a)^5}{180\\cdot n^4}&lt;/math>\n\nwhere &lt;math>I = \\int_{1}^{5}\\frac{1}{x}\\,dx &lt;/math>. We know that &lt;math>\\displaystyle a=1 &lt;/math>, &lt;math>\\displaystyle b=5 &lt;/math> and &lt;math>\\displaystyle n=4 &lt;/math>. To find an upper bound on the fourth derivative, we first compute that\n\n&lt;math>\n\\begin{align}\nf(x) &amp;= \\frac{1}{x} \\\\\nf'(x) &amp;= -\\frac{1}{x^{2}}\\\\\nf''(x) &amp;= 2\\frac{1}{x^{3}}\\\\\nf'''(x) &amp;= -6\\frac{1}{x^{4}}\\\\\nf''''(x) &amp;= 24\\frac{1}{x^{5}}\n\\end{align}\n&lt;/math>\n\nAs the fourth derivative &lt;math>\\displaystyle f''''(x) = \\frac{24}{x^5}&lt;/math> is a decreasing function in ''x'', its maximum occurs at the smallest possible value, when &lt;math>\\displaystyle x=1 &lt;/math>. Hence a value of ''K'' is given by\n\n&lt;math> \\displaystyle K = 24 &lt;/math>\n\nHence, we have a bound on the error is given by\n\n&lt;math> \\left|\\int_{1}^{5}\\frac{1}{x}\\,dx - S_n \\right| \\leq \\frac{24 (5-1)^5}{180\\cdot 4^4} = \\frac{24\\cdot4^5}{180\\cdot4^4} = \\frac{8}{15}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Find a bound for the error in approximating <span class=\"math\">\\(\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx\\)</span> using Simpson<span class=\"math\">\\(^{\\prime}\\)</span>s rule with <span class=\"math\">\\(n = 4\\)</span>. Do not write down Simpson<span class=\"math\">\\(^{\\prime}\\)</span>s rule approximation <span class=\"math\">\\(\\displaystyle S_{4}\\)</span>.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind a bound for the error in approximating\n$\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx$ using Simpson$^{\\prime}$s\nrule with $n = 4$. Do not write down Simpson$^{\\prime}$s rule\napproximation $\\displaystyle S_{4}$.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nFind a bound for the error in approximating &lt;math>\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx&lt;/math> using Simpson\u2019s rule with &lt;math>n = 4&lt;/math>.\nDo not write down Simpson\u2019s rule approximation &lt;math>\\displaystyle S_{4}&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Simpson%27s_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(j)", 
+    "year": 2013
 }

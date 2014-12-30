@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
-    "course": "MATH110", 
-    "statement": "Given a differentiable function $\\displaystyle f$, recall that there are\ntwo definitions for $\\displaystyle f'(a)$ :\n\n\\begin{align*}\\displaystyle f'(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x - a}\\end{align*}\n\nand\n\n\\begin{align*}\\displaystyle f'(a) = \\lim_{h \\to 0}\\frac{f(a+h) - f(a)}{h}\\end{align*}\n\nPick one of these definitions and draw a picture to illustrate the fact\nthat the limit on the right-hand side is the limit of slopes of secant\nlines. Make sure to include the labels $a$ and $f(a)$.", 
-    "year": 2010, 
-    "sols": [
-        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_1.jpg}\n\\caption{Math Exam Resources Math 110 December 2010 Question 4 a Solution 1.jpg}\n\\end{figure}\n\nSee as $x \\to a$, the slope of the line between $(a, f(a))$ and\n$(x, f(x))$ approaches the slope of the tangent line at $x = a$.", 
-        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_b.jpg}\n\\caption{Math Exam Resources Math 110 December 2010 Question 4 a Solution b.jpg}\n\\end{figure}\n\nAs $h \\to 0$, the slope of the line between $(a, f(a))$ and\n$(a+h, f(a+h))$ approaches the slope of the tangent line at $x = a$."
+    "answer_html": "<p>See as <span class=\"math\">\\(x \\to a\\)</span>, the slope of the line between <span class=\"math\">\\((a, f(a))\\)</span> and <span class=\"math\">\\((x, f(x))\\)</span> approaches the slope of the tangent line at <span class=\"math\">\\(x = a\\)</span>.</p>\n", 
+    "answer_latex": "See as $x \\to a$, the slope of the line between $(a, f(a))$ and\n$(x, f(x))$ approaches the slope of the tangent line at $x = a$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Draw an <em>a</em> and <em>x</em> (or an <em>x</em> and an <em>x + h</em>) on the x-axis. Given a drawing of a function <span class=\"math\">\\(f\\)</span>, what are the corresponding labels on the y-axis?</p>\n"
+    ], 
+    "hints_latex": [
         "Draw an \\emph{a} and \\emph{x} (or an \\emph{x} and an \\emph{x + h}) on\nthe x-axis. Given a drawing of a function $f$, what are the\ncorresponding labels on the y-axis?"
-    ]
+    ], 
+    "hints_raw": [
+        "Draw an ''a'' and ''x'' (or an ''x'' and an ''x + h'') on the x-axis.  Given a drawing of a function &lt;math>f&lt;/math>, what are the corresponding labels on the y-axis?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A drawing illustrating the first definition given would look something like this:</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_1.jpg\" alt=\"image\" /></p>\n<p>See as <span class=\"math\">\\(x \\to a\\)</span>, the slope of the line between <span class=\"math\">\\((a, f(a))\\)</span> and <span class=\"math\">\\((x, f(x))\\)</span> approaches the slope of the tangent line at <span class=\"math\">\\(x = a\\)</span>.</p>\n", 
+        "<p>A drawing illustrating the first definition given would look something like this:</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_b.jpg\" alt=\"image\" /></p>\n<p>As <span class=\"math\">\\(h \\to 0\\)</span>, the slope of the line between <span class=\"math\">\\((a, f(a))\\)</span> and <span class=\"math\">\\((a+h, f(a+h))\\)</span> approaches the slope of the tangent line at <span class=\"math\">\\(x = a\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_1.jpg}\n\nSee as $x \\to a$, the slope of the line between $(a, f(a))$ and\n$(x, f(x))$ approaches the slope of the tangent line at $x = a$.", 
+        "A drawing illustrating the first definition given would look something\nlike this:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_4_a_Solution_b.jpg}\n\nAs $h \\to 0$, the slope of the line between $(a, f(a))$ and\n$(a+h, f(a+h))$ approaches the slope of the tangent line at $x = a$."
+    ], 
+    "sols_raw": [
+        "A drawing illustrating the first definition given would look something like this: \n\n[[File:Math Exam Resources Math 110 December 2010 Question 4 a Solution 1.jpg]]\n\nSee as &lt;math>x \\to a&lt;/math>, the slope of the line between &lt;math>(a, f(a))&lt;/math> and &lt;math>(x, f(x))&lt;/math> approaches the slope of the tangent line at &lt;math>x = a&lt;/math>.\n", 
+        "A drawing illustrating the first definition given would look something like this: \n\n[[File:Math Exam Resources Math 110 December 2010 Question 4 a Solution b.jpg]]\n\nAs &lt;math>h \\to 0&lt;/math>, the slope of the line between &lt;math>(a, f(a))&lt;/math> and &lt;math>(a+h, f(a+h))&lt;/math> approaches the slope of the tangent line at &lt;math>x = a&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Given a differentiable function <span class=\"math\">\\(\\displaystyle f\\)</span>, recall that there are two definitions for <span class=\"math\">\\(\\displaystyle f&#39;(a)\\)</span> :</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x - a}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(a) = \\lim_{h \\to 0}\\frac{f(a+h) - f(a)}{h}\\end{aligned}\\]</span></p>\n<p>Pick one of these definitions and draw a picture to illustrate the fact that the limit on the right-hand side is the limit of slopes of secant lines. Make sure to include the labels <span class=\"math\">\\(a\\)</span> and <span class=\"math\">\\(f(a)\\)</span>.</p>\n", 
+    "statement_latex": "Given a differentiable function $\\displaystyle f$, recall that there are\ntwo definitions for $\\displaystyle f'(a)$ :\n\n\\begin{align*}\n\\displaystyle f'(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x - a}\n\\end{align*}\n\nand\n\n\\begin{align*}\n\\displaystyle f'(a) = \\lim_{h \\to 0}\\frac{f(a+h) - f(a)}{h}\n\\end{align*}\n\nPick one of these definitions and draw a picture to illustrate the fact\nthat the limit on the right-hand side is the limit of slopes of secant\nlines. Make sure to include the labels $a$ and $f(a)$.", 
+    "statement_raw": "Given a differentiable function &lt;math>\\displaystyle f&lt;/math>, recall that there are two definitions for &lt;math>\\displaystyle f'(a)&lt;/math> : \n: &lt;math> \\displaystyle f'(a) = \\lim_{x \\to a} \\frac{f(x) - f(a)}{x - a} &lt;/math>\n\nand \n\n: &lt;math> \\displaystyle f'(a) = \\lim_{h \\to 0}\\frac{f(a+h) - f(a)}{h}&lt;/math>\n\nPick one of these definitions and draw a picture to illustrate the fact that the limit on the right-hand side is the limit of slopes of secant lines.  Make sure to include the labels &lt;math>a&lt;/math> and &lt;math>f(a)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_definition_of_the_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_04_(a)", 
+    "year": 2010
 }

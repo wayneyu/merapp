@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH103", 
-    "statement": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this question.}\n\nWhich of the following series converges?\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{i.} $S = \\sum_{k=1}^\\infty k^{-2}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{ii.} $S = \\sum_{k=1}^\\infty \\frac1{k}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iii.} $S = \\sum_{k=1}^\\infty k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iv.} $S = \\sum_{k=0}^\\infty (1.01)^k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{v.} $S = \\sum_{k=0}^\\infty k^2.$\n\\end{description}", 
-    "year": 2010, 
-    "sols": [
-        "Let's first check if the summands of the offered series go to zero.\n\n\\begin{align*}\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k^{-2} &= \\lim_{k \\rightarrow \\infty} \\frac1{k^2} = 0. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} \\frac1{k} &= 0. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k &= \\infty. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} (1.01)^k &= \\infty. \\\\\n\\lim_{k\u00c2\u00a0\\rightarrow \\infty} k^2 &= \\infty.\\end{align*}\n\nThus iii., iv., and v. can not converge. But the series i. and ii. are\ncandidates for convergent series.\n\nBy a pairwise comparison of the summands of series i. and series ii. we\nsee that \\emph{k\\textsuperscript{-2} \\textless{} 1/k}, and hence (Series\ni.) \\textless{} (Series ii.). We are told that only one series\nconverges, so it can only be Series i. (If Series ii. would converge,\nand (Series i.) \\textless{} (Series ii.), then Series i. would also\nconverge.)\n\nIndeed this is true, by the p-series test with \\emph{p = 2}.\n\n\\textbf{Thus, the correct answer is i.}\n\nFun fact: $\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.$"
+    "answer_html": "<p>Fun fact: <span class=\"math\">\\(\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.\\)</span></p>\n", 
+    "answer_latex": "Fun fact: $\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.$", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "IainMoyles", 
+        "Konradbe", 
+        "CindyBlois"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A necessary (but not sufficient) condition that a series converges is that the summands go to zero. Which of the series above don&#8217;t satisfy this criterion, and hence can not be convergent?</p>\n", 
+        "<p>For the remaining candidates, use the p-series test.</p>\n"
+    ], 
+    "hints_latex": [
         "A necessary (but not sufficient) condition that a series converges is\nthat the summands go to zero. Which of the series above don't satisfy\nthis criterion, and hence can not be convergent?", 
         "For the remaining candidates, use the p-series test."
-    ]
+    ], 
+    "hints_raw": [
+        "A necessary (but not sufficient) condition that a series converges is that the summands go to zero. Which of the series above don't satisfy this criterion, and hence can not be convergent?\n", 
+        "For the remaining candidates, use the p-series test.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "1 (d)", 
+    "rating": 65, 
+    "sols_html": [
+        "<p>Let&#8217;s first check if the summands of the offered series go to zero.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{k\\rightarrow \\infty} k^{-2} &amp;= \\lim_{k \\rightarrow \\infty} \\frac1{k^2} = 0. \\\\\n\\lim_{k\\rightarrow \\infty} \\frac1{k} &amp;= 0. \\\\\n\\lim_{k\\rightarrow \\infty} k &amp;= \\infty. \\\\\n\\lim_{k\\rightarrow \\infty} (1.01)^k &amp;= \\infty. \\\\\n\\lim_{k\\rightarrow \\infty} k^2 &amp;= \\infty.\\end{aligned}\\]</span></p>\n<p>Thus iii., iv., and v. can not converge. But the series i. and ii. are candidates for convergent series.</p>\n<p>By a pairwise comparison of the summands of series i. and series ii. we see that <em>k<sup>-2</sup> &lt; 1/k</em>, and hence (Series i.) &lt; (Series ii.). We are told that only one series converges, so it can only be Series i. (If Series ii. would converge, and (Series i.) &lt; (Series ii.), then Series i. would also converge.)</p>\n<p>Indeed this is true, by the p-series test with <em>p = 2</em>.</p>\n<p><strong>Thus, the correct answer is i.</strong></p>\n<p>Fun fact: <span class=\"math\">\\(\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let's first check if the summands of the offered series go to zero.\n\n\\begin{align*}\n\\lim_{k\\rightarrow \\infty} k^{-2} &= \\lim_{k \\rightarrow \\infty} \\frac1{k^2} = 0. \\\\\n\\lim_{k\\rightarrow \\infty} \\frac1{k} &= 0. \\\\\n\\lim_{k\\rightarrow \\infty} k &= \\infty. \\\\\n\\lim_{k\\rightarrow \\infty} (1.01)^k &= \\infty. \\\\\n\\lim_{k\\rightarrow \\infty} k^2 &= \\infty.\n\\end{align*}\n\nThus iii., iv., and v. can not converge. But the series i. and ii. are\ncandidates for convergent series.\n\nBy a pairwise comparison of the summands of series i. and series ii. we\nsee that \\emph{k\\textsuperscript{-2} \\textless{} 1/k}, and hence (Series\ni.) \\textless{} (Series ii.). We are told that only one series\nconverges, so it can only be Series i. (If Series ii. would converge,\nand (Series i.) \\textless{} (Series ii.), then Series i. would also\nconverge.)\n\nIndeed this is true, by the p-series test with \\emph{p = 2}.\n\n\\textbf{Thus, the correct answer is i.}\n\nFun fact: $\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.$"
+    ], 
+    "sols_raw": [
+        "Let's first check if the summands of the offered series go to zero.\n\n:&lt;math> \\begin{align}\n\\lim_{k\u00a0\\rightarrow \\infty} k^{-2} &amp;= \\lim_{k \\rightarrow \\infty} \\frac1{k^2} = 0. \\\\\n\\lim_{k\u00a0\\rightarrow \\infty} \\frac1{k} &amp;= 0. \\\\\n\\lim_{k\u00a0\\rightarrow \\infty} k &amp;= \\infty. \\\\\n\\lim_{k\u00a0\\rightarrow \\infty} (1.01)^k &amp;= \\infty. \\\\\n\\lim_{k\u00a0\\rightarrow \\infty} k^2 &amp;= \\infty.\n\\end{align}\n&lt;/math>\n\nThus iii., iv., and v. can not converge. But the series i. and ii. are candidates for convergent series.\n\nBy a pairwise comparison of the summands of series i. and series ii. we see that ''k&lt;sup>-2&lt;/sup> &lt; 1/k'', and hence (Series i.) &lt; (Series ii.). We are told that only one series converges, so it can only be Series i. (If Series ii. would converge, and (Series i.) &lt; (Series ii.), then Series i. would also converge.)\n\nIndeed this is true, by the p-series test with ''p = 2''.\n\n'''Thus, the correct answer is i.'''\n\nFun fact:\n&lt;math>\n\\sum_{k=1}^{\\infty}k^{-2} = \\frac{\\pi^{2}}{6}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><em>Multiple Choice Question: Exactly ONE of the answers provided is correct. There is no partial credit in this question.</em></p>\n<p>Which of the following series converges?</p>\n<dl>\n\n<dd><p><em>i.</em> <span class=\"math\">\\(S = \\sum_{k=1}^\\infty k^{-2}.\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>ii.</em> <span class=\"math\">\\(S = \\sum_{k=1}^\\infty \\frac1{k}.\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>iii.</em> <span class=\"math\">\\(S = \\sum_{k=1}^\\infty k.\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>iv.</em> <span class=\"math\">\\(S = \\sum_{k=0}^\\infty (1.01)^k.\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>v.</em> <span class=\"math\">\\(S = \\sum_{k=0}^\\infty k^2.\\)</span></p>\n</dd>\n</dl>\n", 
+    "statement_latex": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this question.}\n\nWhich of the following series converges?\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{i.} $S = \\sum_{k=1}^\\infty k^{-2}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{ii.} $S = \\sum_{k=1}^\\infty \\frac1{k}.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iii.} $S = \\sum_{k=1}^\\infty k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{iv.} $S = \\sum_{k=0}^\\infty (1.01)^k.$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{v.} $S = \\sum_{k=0}^\\infty k^2.$\n\\end{description}", 
+    "statement_raw": "''Multiple Choice Question: Exactly ONE of the answers provided is correct. There is no partial credit in this question.''\n\n\nWhich of the following series converges?\n\n:''i.'' &lt;math> S = \\sum_{k=1}^\\infty k^{-2}. &lt;/math>\n\n:''ii.'' &lt;math> S = \\sum_{k=1}^\\infty \\frac1{k}. &lt;/math>\n\n:''iii.'' &lt;math> S = \\sum_{k=1}^\\infty k. &lt;/math>\n\n:''iv.'' &lt;math> S = \\sum_{k=0}^\\infty (1.01)^k. &lt;/math>\n\n:''v.'' &lt;math> S = \\sum_{k=0}^\\infty k^2. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Series_(other)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_01_(d)", 
+    "year": 2010
 }

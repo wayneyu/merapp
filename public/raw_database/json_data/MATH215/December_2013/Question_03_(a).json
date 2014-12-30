@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
-    "course": "MATH215", 
-    "statement": "Suppose the displacement x(t) of a damped mass-spring system subject to\nsinusoidal forcing of amplitude $F_0$ is modelled by:\n\n\\begin{align*}x'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1.\\end{align*}\n\n(a) Find and sketch the solution x(t) when $F_0 = 0$ (no forcing).", 
-    "year": 2013, 
-    "sols": [
-        "We have a homogeneous ODE $\\displaystyle x'' + 2x' + 5x = 0$ with\n\\emph{x(0) = 0, x'(0) = 1}.\n\nThe roots of the corresponding characteristic polynomial\n$\\lambda^2 + 2 \\lambda + 5 = 0$ are\n$\\lambda = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(5)}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.$\n\nThe roots are complex, and we have a general solution of\n\n\\begin{align*}\\displaystyle x(t) = C_1 e^{-t} \\sin(2t) + C_2 e^{-t} \\cos(2t)\\end{align*}\n\nWe can use the initial conditions to find the constants.\n$x(0) = 0 + C_2 = 0$ implies $C_2 = 0$. Next, use the fact that the\nsecond term vanishes to calculate the first derivative of the solution.\n\n\\begin{align*}\\displaystyle x'(t) = - C_1 e^{-t} \\sin(2t) + 2 C_1 e^{-t} \\cos(2t) = 2 C_1\\end{align*}\nSince \\emph{x'(0) = 1} this implies $C_1 = 1/2$. The final solution is\ntherefore\n\n\\begin{align*}x(t) = \\frac{1}{2} e^{-t} \\sin(2t).\\end{align*}\n\nA plot of the solution is given below. Note that the solution is bounded\nbetween $x(t) = \\pm \\frac{1}{2} e^{-t}$ so there is an envelope. The\nsolution must fit between the upper and lower envelope functions. At\n$t=0$, $x=0$, and the solution is increasing at $t=0$ (the derivative is\npositive).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Mersolq3a.jpg}\n\\caption{Observe the solution lies between the two envelope functions.}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH215/December_2013/Mersolq3a.jpg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2013/Mersolq3a.jpg}", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>If <span class=\"math\">\\(F_0 = 0\\)</span>, the equation is homogeneous. Can you find the homogeneous solution?</p>\n"
+    ], 
+    "hints_latex": [
         "If $F_0 = 0$, the equation is homogeneous. Can you find the homogeneous\nsolution?"
-    ]
+    ], 
+    "hints_raw": [
+        "If &lt;math>F_0 = 0&lt;/math>, the equation is homogeneous. Can you find the homogeneous solution?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "3 (a)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>We have a homogeneous ODE <span class=\"math\">\\(\\displaystyle x&#39;&#39; + 2x&#39; + 5x = 0\\)</span> with <em>x(0) = 0, x&#8217;(0) = 1</em>.</p>\n<p>The roots of the corresponding characteristic polynomial <span class=\"math\">\\(\\lambda^2 + 2 \\lambda + 5 = 0\\)</span> are <span class=\"math\">\\(\\lambda = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(5)}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.\\)</span></p>\n<p>The roots are complex, and we have a general solution of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x(t) = C_1 e^{-t} \\sin(2t) + C_2 e^{-t} \\cos(2t)\\end{aligned}\\]</span></p>\n<p>We can use the initial conditions to find the constants. <span class=\"math\">\\(x(0) = 0 + C_2 = 0\\)</span> implies <span class=\"math\">\\(C_2 = 0\\)</span>. Next, use the fact that the second term vanishes to calculate the first derivative of the solution.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x&#39;(t) = - C_1 e^{-t} \\sin(2t) + 2 C_1 e^{-t} \\cos(2t) = 2 C_1\\end{aligned}\\]</span></p>\n<p>Since <em>x&#8217;(0) = 1</em> this implies <span class=\"math\">\\(C_1 = 1/2\\)</span>. The final solution is therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx(t) = \\frac{1}{2} e^{-t} \\sin(2t).\\end{aligned}\\]</span></p>\n<p>A plot of the solution is given below. Note that the solution is bounded between <span class=\"math\">\\(x(t) = \\pm \\frac{1}{2} e^{-t}\\)</span> so there is an envelope. The solution must fit between the upper and lower envelope functions. At <span class=\"math\">\\(t=0\\)</span>, <span class=\"math\">\\(x=0\\)</span>, and the solution is increasing at <span class=\"math\">\\(t=0\\)</span> (the derivative is positive).</p>\n<p><img src=\"../json_data/MATH215/December_2013/Mersolq3a.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "We have a homogeneous ODE $\\displaystyle x'' + 2x' + 5x = 0$ with\n\\emph{x(0) = 0, x'(0) = 1}.\n\nThe roots of the corresponding characteristic polynomial\n$\\lambda^2 + 2 \\lambda + 5 = 0$ are\n$\\lambda = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(5)}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.$\n\nThe roots are complex, and we have a general solution of\n\n\\begin{align*}\n\\displaystyle x(t) = C_1 e^{-t} \\sin(2t) + C_2 e^{-t} \\cos(2t)\n\\end{align*}\n\nWe can use the initial conditions to find the constants.\n$x(0) = 0 + C_2 = 0$ implies $C_2 = 0$. Next, use the fact that the\nsecond term vanishes to calculate the first derivative of the solution.\n\n\\begin{align*}\n\\displaystyle x'(t) = - C_1 e^{-t} \\sin(2t) + 2 C_1 e^{-t} \\cos(2t) = 2 C_1\n\\end{align*}\nSince \\emph{x'(0) = 1} this implies $C_1 = 1/2$. The final solution is\ntherefore\n\n\\begin{align*}\nx(t) = \\frac{1}{2} e^{-t} \\sin(2t).\n\\end{align*}\n\nA plot of the solution is given below. Note that the solution is bounded\nbetween $x(t) = \\pm \\frac{1}{2} e^{-t}$ so there is an envelope. The\nsolution must fit between the upper and lower envelope functions. At\n$t=0$, $x=0$, and the solution is increasing at $t=0$ (the derivative is\npositive).\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2013/Mersolq3a.jpg}"
+    ], 
+    "sols_raw": [
+        "We have a homogeneous ODE &lt;math>\\displaystyle x'' + 2x' + 5x = 0&lt;/math> with ''x(0) = 0, x'(0) = 1''.\n\nThe roots of the corresponding characteristic polynomial &lt;math>\\lambda^2 + 2 \\lambda + 5 = 0&lt;/math> are &lt;math>\\lambda = \\frac{-2 \\pm \\sqrt{2^2 - 4(1)(5)}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.&lt;/math>\n\nThe roots are complex, and we have a general solution of\n:&lt;math>\\displaystyle x(t) = C_1 e^{-t} \\sin(2t) + C_2 e^{-t} \\cos(2t)&lt;/math>\n\nWe can use the initial conditions to find the constants. &lt;math>x(0) = 0 + C_2 = 0&lt;/math> implies &lt;math>C_2 = 0&lt;/math>. Next, use the fact that the second term vanishes to calculate the first derivative of the solution.\n:&lt;math>\\displaystyle x'(t) = - C_1 e^{-t} \\sin(2t) + 2 C_1 e^{-t} \\cos(2t) = 2 C_1 &lt;/math>\nSince ''x'(0) = 1'' this implies &lt;math>C_1 = 1/2&lt;/math>. The final solution is therefore\n\n:&lt;math>x(t) = \\frac{1}{2} e^{-t} \\sin(2t).&lt;/math>\n\nA plot of the solution is given below. Note that the solution is bounded between &lt;math>x(t) = \\pm \\frac{1}{2} e^{-t}&lt;/math> so there is an envelope. The solution must fit between the upper and lower envelope functions. At &lt;math>t=0&lt;/math>, &lt;math>x=0&lt;/math>, and the solution is increasing at &lt;math>t=0&lt;/math> (the derivative is positive).\n\n[[File:Mersolq3a.jpg|300px|Observe the solution lies between the two envelope functions.]]\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Suppose the displacement x(t) of a damped mass-spring system subject to sinusoidal forcing of amplitude <span class=\"math\">\\(F_0\\)</span> is modelled by:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&#39;&#39; + 2x&#39; + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x&#39;(0) = 1.\\end{aligned}\\]</span></p>\n<p>(a) Find and sketch the solution x(t) when <span class=\"math\">\\(F_0 = 0\\)</span> (no forcing).</p>\n", 
+    "statement_latex": "Suppose the displacement x(t) of a damped mass-spring system subject to\nsinusoidal forcing of amplitude $F_0$ is modelled by:\n\n\\begin{align*}\nx'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1.\n\\end{align*}\n\n(a) Find and sketch the solution x(t) when $F_0 = 0$ (no forcing).", 
+    "statement_raw": "Suppose the displacement x(t) of a damped mass-spring system subject to sinusoidal forcing of amplitude &lt;math>F_0&lt;/math> is modelled by:\n\n:&lt;math>x'' + 2x' + 5x = F_0 \\sin(2t), \\quad x(0) = 0, x'(0) = 1&lt;/math>.\n\n(a) Find and sketch the solution x(t) when &lt;math>F_0 = 0&lt;/math> (no forcing).\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_03_(a)", 
+    "year": 2013
 }

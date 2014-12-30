@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "If\n\n\\begin{align*}\\displaystyle F(x) = \\int_{0}^{x^{2}}f(t)\\, dt,\\end{align*}\n\nwhere $\\displaystyle f$ is a function satisfying\n$\\displaystyle f(4) = 1$, compute $\\displaystyle F'(2).$", 
-    "year": 2005, 
-    "sols": [
-        "By the fundamental theorem of calculus, we know that there exists a\nfunction g(x) such that\n\n\\begin{align*}F(x) = \\int_{0}^{x^{2}}f(t)\\,dt = g(x^{2}) - g(0)\\end{align*}\n\nwhere g(x) is the anti-derivative of the function f(x) (i.e: g'(x) =\nf(x)). Taking the derivative of F(x) gives\n\n\\begin{align*}F'(x) = \\frac{d}{dx}\\left(g(x^{2}) - g(0) \\right) = g'(x^2)\\cdot 2x\\end{align*}\n\nby the chain rule. Using the anti-derivative property of g,\n\n\\begin{align*}F'(x) = f(x^2)\\cdot 2x.\\end{align*}\n\nPlugging in x = 2 and using the fact that f(4) = 1 gives us our answer\n\n\\begin{align*}F'(2) = f(4)\\cdot 4 = 4\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(F&#39;(2)=4\\)</span></p>\n", 
+    "answer_latex": " $F'(2)=4$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ErinMoulding"
     ], 
-    "hints": [
-        "Apply the fundmental theorem of calculus to the integral\n\n\\begin{align*}\\quad \\int_{0}^{x^{2}}f(t)\\,dt.\\end{align*}"
-    ]
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Apply the fundmental theorem of calculus to the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\quad \\int_{0}^{x^{2}}f(t)\\,dt.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Apply the fundmental theorem of calculus to the integral\n\n\\begin{align*}\n\\quad \\int_{0}^{x^{2}}f(t)\\,dt.\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Apply the fundmental theorem of calculus to the integral \n:&lt;math>\n\\quad \\int_{0}^{x^{2}}f(t)\\,dt.\n&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (c)", 
+    "rating": 73, 
+    "sols_html": [
+        "<p>By the fundamental theorem of calculus, we know that there exists a function g(x) such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(x) = \\int_{0}^{x^{2}}f(t)\\,dt = g(x^{2}) - g(0)\\end{aligned}\\]</span></p>\n<p>where g(x) is the anti-derivative of the function f(x) (i.e: g&#8217;(x) = f(x)). Taking the derivative of F(x) gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF&#39;(x) = \\frac{d}{dx}\\left(g(x^{2}) - g(0) \\right) = g&#39;(x^2)\\cdot 2x\\end{aligned}\\]</span></p>\n<p>by the chain rule. Using the anti-derivative property of g,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF&#39;(x) = f(x^2)\\cdot 2x.\\end{aligned}\\]</span></p>\n<p>Plugging in x = 2 and using the fact that f(4) = 1 gives us our answer</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF&#39;(2) = f(4)\\cdot 4 = 4\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By the fundamental theorem of calculus, we know that there exists a\nfunction g(x) such that\n\n\\begin{align*}\nF(x) = \\int_{0}^{x^{2}}f(t)\\,dt = g(x^{2}) - g(0)\n\\end{align*}\n\nwhere g(x) is the anti-derivative of the function f(x) (i.e: g'(x) =\nf(x)). Taking the derivative of F(x) gives\n\n\\begin{align*}\nF'(x) = \\frac{d}{dx}\\left(g(x^{2}) - g(0) \\right) = g'(x^2)\\cdot 2x\n\\end{align*}\n\nby the chain rule. Using the anti-derivative property of g,\n\n\\begin{align*}\nF'(x) = f(x^2)\\cdot 2x.\n\\end{align*}\n\nPlugging in x = 2 and using the fact that f(4) = 1 gives us our answer\n\n\\begin{align*}\nF'(2) = f(4)\\cdot 4 = 4\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By the fundamental theorem of calculus, we know that there exists a function g(x) such that\n\n:&lt;math>\nF(x) = \\int_{0}^{x^{2}}f(t)\\,dt = g(x^{2}) - g(0)\n&lt;/math>\n\nwhere g(x) is the anti-derivative of the function f(x) (i.e: g'(x) = f(x)). Taking the derivative of F(x) gives\n\n:&lt;math>\nF'(x) = \\frac{d}{dx}\\left(g(x^{2}) - g(0) \\right) = g'(x^2)\\cdot 2x\n&lt;/math>\n\nby the chain rule. Using the anti-derivative property of g,\n\n:&lt;math>\nF'(x) = f(x^2)\\cdot 2x.\n&lt;/math>\n\nPlugging in x = 2 and using the fact that f(4) = 1 gives us our answer\n\n:&lt;math>\nF'(2) = f(4)\\cdot 4 = 4\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>If</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle F(x) = \\int_{0}^{x^{2}}f(t)\\, dt,\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\displaystyle f\\)</span> is a function satisfying <span class=\"math\">\\(\\displaystyle f(4) = 1\\)</span>, compute <span class=\"math\">\\(\\displaystyle F&#39;(2).\\)</span></p>\n", 
+    "statement_latex": "If\n\n\\begin{align*}\n\\displaystyle F(x) = \\int_{0}^{x^{2}}f(t)\\, dt,\n\\end{align*}\n\nwhere $\\displaystyle f$ is a function satisfying\n$\\displaystyle f(4) = 1$, compute $\\displaystyle F'(2).$", 
+    "statement_raw": "If\n\n:&lt;math> \\displaystyle F(x) = \\int_{0}^{x^{2}}f(t)\\, dt, &lt;/math>\n\nwhere &lt;math> \\displaystyle f&lt;/math> is a function satisfying &lt;math> \\displaystyle f(4) = 1&lt;/math>, compute &lt;math> \\displaystyle F'(2). &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_01_(c)", 
+    "year": 2005
 }

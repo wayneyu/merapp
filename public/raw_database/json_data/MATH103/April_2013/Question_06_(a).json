@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Light Show on the Dance Floor}\n\n\\textbf{A laser is mounted 2m above the floor (see sketch) and its beam\nis directed along a straight line on the dance floor. For visual\neffects, the angle $\\theta$ changes periodically and randomly. The angle\n$\\theta$ is chosen uniformly in the interval\n$(-\\frac{\\pi}{4},\\frac{\\pi}{4})$, that is, the probability density\nfunction (pdf) is $p(\\theta) = \\frac{2}{\\pi}$ for\n$-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$ and zero elsewhere.}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103_2013Q6.jpg}\n\\caption{MATH103 2013Q6.jpg }\n\\end{figure}\n\nFind the cumulative distribution function (cdf), F(x) of the\nx-coordinate of the laser point on the floor.", 
-    "year": 2013, 
-    "sols": [
-        "Solving first for the cdf in terms of $\\displaystyle \\theta$, using that\n\\emph{p(t) = 0} for \\emph{t \\textless{} -$\\pi$/4}, we have\n\n\\begin{align*}\nF(\\theta) &= \\int_{-\\pi/4}^{\\theta}\\frac{2}{\\pi}\\,dt = \\left.\\frac{2}{\\pi}t \\right|_{-\\pi/4}^{\\theta} \\\\\n&= \\frac{2}{\\pi}\\left(\\theta - \\frac{-\\pi}4\\right)\\end{align*}\n\nTo find the cdf in terms of \\emph{x} we note that, from the diagram,\n$\\displaystyle \\tan(\\theta) = \\tfrac{x}{2}$. Solving for \\emph{$\\theta$} gives\n$\\displaystyle \\theta = \\arctan(\\tfrac{x}{2})$ and thus we have\n\n\\begin{align*}\\displaystyle F(x) = \\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)\\end{align*}\n\ncompleting the problem."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle F(x)=\\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)\\)</span> completing the problem.</p>\n", 
+    "answer_latex": " $\\displaystyle F(x)=\\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)$ completing the problem.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>First find the cdf in terms of <span class=\"math\">\\(\\theta\\)</span></p>\n", 
+        "<p>Recall the definition of the cumulative distribution function <em>F</em> of a continuous random variable with probability density function <em>p</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(\\theta) = \\int_{-\\infty}^\\theta p(t)\\,dt\\end{aligned}\\]</span></p>\n", 
+        "<p>Then use trigonometry to solve for <em>x</em> in terms of <span class=\"math\">\\(\\theta\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "First find the cdf in terms of $\\theta$", 
-        "Recall the definition of the cumulative distribution function \\emph{F}\nof a continuous random variable with probability density function\n\\emph{p}:\n\n\\begin{align*}F(\\theta) = \\int_{-\\infty}^\\theta p(t)\\,dt\\end{align*}", 
+        "Recall the definition of the cumulative distribution function \\emph{F}\nof a continuous random variable with probability density function\n\\emph{p}:\n\n\\begin{align*}\nF(\\theta) = \\int_{-\\infty}^\\theta p(t)\\,dt\n\\end{align*}", 
         "Then use trigonometry to solve for \\emph{x} in terms of $\\theta$"
-    ]
+    ], 
+    "hints_raw": [
+        "First find the cdf in terms of &lt;math> \\theta &lt;/math>\n", 
+        "Recall the definition of the cumulative distribution function ''F'' of a continuous random variable with probability density function ''p'':\n\n:&lt;math>\nF(\\theta) = \\int_{-\\infty}^\\theta p(t)\\,dt\n&lt;/math>\n", 
+        "Then use trigonometry to solve for ''x'' in terms of &lt;math> \\theta &lt;/math>\n"
+    ], 
+    "num_votes": 11, 
+    "question": "6 (a)", 
+    "rating": 17, 
+    "sols_html": [
+        "<p>Solving first for the cdf in terms of <span class=\"math\">\\(\\displaystyle \\theta\\)</span>, using that <em>p(t) = 0</em> for <em>t &lt; -<span class=\"math\">\\(\\pi\\)</span>/4</em>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(\\theta) &amp;= \\int_{-\\pi/4}^{\\theta}\\frac{2}{\\pi}\\,dt = \\left.\\frac{2}{\\pi}t \\right|_{-\\pi/4}^{\\theta} \\\\\n&amp;= \\frac{2}{\\pi}\\left(\\theta - \\frac{-\\pi}4\\right)\\end{aligned}\\]</span></p>\n<p>To find the cdf in terms of <em>x</em> we note that, from the diagram, <span class=\"math\">\\(\\displaystyle \\tan(\\theta) = \\tfrac{x}{2}\\)</span>. Solving for <em><span class=\"math\">\\(\\theta\\)</span></em> gives <span class=\"math\">\\(\\displaystyle \\theta = \\arctan(\\tfrac{x}{2})\\)</span> and thus we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle F(x) = \\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)\\end{aligned}\\]</span></p>\n<p>completing the problem.</p>\n"
+    ], 
+    "sols_latex": [
+        "Solving first for the cdf in terms of $\\displaystyle \\theta$, using that\n\\emph{p(t) = 0} for \\emph{t \\textless{} -$\\pi$/4}, we have\n\n\\begin{align*}\nF(\\theta) &= \\int_{-\\pi/4}^{\\theta}\\frac{2}{\\pi}\\,dt = \\left.\\frac{2}{\\pi}t \\right|_{-\\pi/4}^{\\theta} \\\\\n&= \\frac{2}{\\pi}\\left(\\theta - \\frac{-\\pi}4\\right)\n\\end{align*}\n\nTo find the cdf in terms of \\emph{x} we note that, from the diagram,\n$\\displaystyle \\tan(\\theta) = \\tfrac{x}{2}$. Solving for \\emph{$\\theta$} gives\n$\\displaystyle \\theta = \\arctan(\\tfrac{x}{2})$ and thus we have\n\n\\begin{align*}\n\\displaystyle F(x) = \\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)\n\\end{align*}\n\ncompleting the problem."
+    ], 
+    "sols_raw": [
+        "Solving first for the cdf in terms of &lt;math> \\displaystyle \\theta&lt;/math>, using that ''p(t) = 0'' for ''t &lt; -&amp;pi;/4'', we have\n\n:&lt;math> \\begin{align}\nF(\\theta) &amp;= \\int_{-\\pi/4}^{\\theta}\\frac{2}{\\pi}\\,dt = \\left.\\frac{2}{\\pi}t \\right|_{-\\pi/4}^{\\theta} \\\\\n&amp;= \\frac{2}{\\pi}\\left(\\theta - \\frac{-\\pi}4\\right)\n\\end{align} &lt;/math>\n\nTo find the cdf in terms of ''x'' we note that, from the diagram, &lt;math> \\displaystyle \\tan(\\theta) = \\tfrac{x}{2}&lt;/math>. Solving for ''&amp;theta;'' gives &lt;math> \\displaystyle \\theta = \\arctan(\\tfrac{x}{2})&lt;/math> and thus we have\n\n:&lt;math> \\displaystyle F(x) = \\frac2{\\pi}\\left(\\arctan\\left(\\frac{x}{2}\\right) + \\frac{\\pi}{4}\\right)&lt;/math>\n\ncompleting the problem.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Light Show on the Dance Floor</strong></p>\n<p><strong>A laser is mounted 2m above the floor (see sketch) and its beam is directed along a straight line on the dance floor. For visual effects, the angle <span class=\"math\">\\(\\theta\\)</span> changes periodically and randomly. The angle <span class=\"math\">\\(\\theta\\)</span> is chosen uniformly in the interval <span class=\"math\">\\((-\\frac{\\pi}{4},\\frac{\\pi}{4})\\)</span>, that is, the probability density function (pdf) is <span class=\"math\">\\(p(\\theta) = \\frac{2}{\\pi}\\)</span> for <span class=\"math\">\\(-\\frac{\\pi}{4} &lt; \\theta &lt; \\frac{\\pi}{4}\\)</span> and zero elsewhere.</strong></p>\n<p><img src=\"../json_data/MATH103/April_2013/MATH103_2013Q6.jpg\" alt=\"image\" /></p>\n<p>Find the cumulative distribution function (cdf), F(x) of the x-coordinate of the laser point on the floor.</p>\n", 
+    "statement_latex": "\\textbf{Light Show on the Dance Floor}\n\n\\textbf{A laser is mounted 2m above the floor (see sketch) and its beam\nis directed along a straight line on the dance floor. For visual\neffects, the angle $\\theta$ changes periodically and randomly. The angle\n$\\theta$ is chosen uniformly in the interval\n$(-\\frac{\\pi}{4},\\frac{\\pi}{4})$, that is, the probability density\nfunction (pdf) is $p(\\theta) = \\frac{2}{\\pi}$ for\n$-\\frac{\\pi}{4} < \\theta < \\frac{\\pi}{4}$ and zero elsewhere.}\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/MATH103_2013Q6.jpg}\n\nFind the cumulative distribution function (cdf), F(x) of the\nx-coordinate of the laser point on the floor.", 
+    "statement_raw": "'''Light Show on the Dance Floor'''\n\n'''A laser is mounted 2m above the floor (see sketch) and its beam is directed along a straight line on the dance floor. For visual effects, the angle &lt;math> \\theta &lt;/math> changes periodically and randomly. The angle &lt;math> \\theta &lt;/math> is chosen uniformly in the interval &lt;math> (-\\frac{\\pi}{4},\\frac{\\pi}{4}) &lt;/math>, that is, the probability density function (pdf) is &lt;math> p(\\theta) = \\frac{2}{\\pi} &lt;/math> for &lt;math> -\\frac{\\pi}{4} &lt; \\theta &lt; \\frac{\\pi}{4}&lt;/math> and zero elsewhere.'''\n\n[[File:MATH103 2013Q6.jpg ]]\n\nFind the cumulative distribution function (cdf), F(x) of the x-coordinate of the laser point on the floor.\n", 
+    "term": "April", 
+    "topics": [
+        "Cumulative_distribution_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_06_(a)", 
+    "year": 2013
 }

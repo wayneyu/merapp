@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "Express\n\n\\begin{align*}\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}\\end{align*}\n\nas a definite integral. \\emph{Do not} evaluate the integral.", 
-    "year": 2008, 
-    "sols": [
-        "From the question, we immediately see that\n\n\\begin{align*}\\displaystyle \\Delta x = \\frac{1}{n}\\end{align*}\n\nNow, to determine $\\displaystyle x_{i}$, notice that we have that the\nfunction is of the form\n\n\\begin{align*}\\displaystyle f(x_{i}) = \\frac{1}{1 + (\\tfrac{i}{n})^{2}}.\\end{align*}\n\nThe only composition of functions is underneath the square sign. So we\nmust have that\n\n\\begin{align*}\\displaystyle f(x) = \\frac{1}{1 + x^{2}}\\end{align*}\n\nand hence that\n\n\\begin{align*}\\displaystyle x_{i} = \\frac{i}{n}\\end{align*}\n\nAs $\\displaystyle x_{i} = a + i\\Delta x$, we have that\n$\\displaystyle a = 0$ and hence since\n\n\\begin{align*}\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} = \\frac{b}{n}\\end{align*}\n\nwe have that $\\displaystyle b = 1$. Combining the above gives\n\n\\begin{align*}\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}} = \\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\\end{align*}\n\nwhich completes the question."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}=\\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\\)</span> which completes the question.</p>\n", 
+    "answer_latex": " $\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}=\\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx$ which completes the question.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles", 
+        "Simontse"
     ], 
-    "hints": [
-        "This is a Riemann sum. Recall that\n\n\\begin{align*}\\displaystyle \\Delta x = \\frac{b-a}{n}\\end{align*}\n\nand that\n\n\\begin{align*}\\displaystyle x_{i} = a + i\\Delta x.\\end{align*}\n\nThen do a pattern match."
-    ]
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This is a Riemann sum. Recall that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\Delta x = \\frac{b-a}{n}\\end{aligned}\\]</span></p>\n<p>and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x_{i} = a + i\\Delta x.\\end{aligned}\\]</span></p>\n<p>Then do a pattern match.</p>\n"
+    ], 
+    "hints_latex": [
+        "This is a Riemann sum. Recall that\n\n\\begin{align*}\n\\displaystyle \\Delta x = \\frac{b-a}{n}\n\\end{align*}\n\nand that\n\n\\begin{align*}\n\\displaystyle x_{i} = a + i\\Delta x.\n\\end{align*}\n\nThen do a pattern match."
+    ], 
+    "hints_raw": [
+        "This is a Riemann sum. Recall that\n\n:&lt;math>\\displaystyle \\Delta x = \\frac{b-a}{n} &lt;/math>\n\nand that\n\n:&lt;math> \\displaystyle x_{i} = a + i\\Delta x. &lt;/math>\n\nThen do a pattern match.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (c)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>From the question, we immediately see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\Delta x = \\frac{1}{n}\\end{aligned}\\]</span></p>\n<p>Now, to determine <span class=\"math\">\\(\\displaystyle x_{i}\\)</span>, notice that we have that the function is of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x_{i}) = \\frac{1}{1 + (\\tfrac{i}{n})^{2}}.\\end{aligned}\\]</span></p>\n<p>The only composition of functions is underneath the square sign. So we must have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x) = \\frac{1}{1 + x^{2}}\\end{aligned}\\]</span></p>\n<p>and hence that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x_{i} = \\frac{i}{n}\\end{aligned}\\]</span></p>\n<p>As <span class=\"math\">\\(\\displaystyle x_{i} = a + i\\Delta x\\)</span>, we have that <span class=\"math\">\\(\\displaystyle a = 0\\)</span> and hence since</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} = \\frac{b}{n}\\end{aligned}\\]</span></p>\n<p>we have that <span class=\"math\">\\(\\displaystyle b = 1\\)</span>. Combining the above gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}} = \\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\\end{aligned}\\]</span></p>\n<p>which completes the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the question, we immediately see that\n\n\\begin{align*}\n\\displaystyle \\Delta x = \\frac{1}{n}\n\\end{align*}\n\nNow, to determine $\\displaystyle x_{i}$, notice that we have that the\nfunction is of the form\n\n\\begin{align*}\n\\displaystyle f(x_{i}) = \\frac{1}{1 + (\\tfrac{i}{n})^{2}}.\n\\end{align*}\n\nThe only composition of functions is underneath the square sign. So we\nmust have that\n\n\\begin{align*}\n\\displaystyle f(x) = \\frac{1}{1 + x^{2}}\n\\end{align*}\n\nand hence that\n\n\\begin{align*}\n\\displaystyle x_{i} = \\frac{i}{n}\n\\end{align*}\n\nAs $\\displaystyle x_{i} = a + i\\Delta x$, we have that\n$\\displaystyle a = 0$ and hence since\n\n\\begin{align*}\n\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} = \\frac{b}{n}\n\\end{align*}\n\nwe have that $\\displaystyle b = 1$. Combining the above gives\n\n\\begin{align*}\n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}} = \\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\n\\end{align*}\n\nwhich completes the question."
+    ], 
+    "sols_raw": [
+        "From the question, we immediately see that\n\n:&lt;math> \\displaystyle \\Delta x = \\frac{1}{n} &lt;/math>\n\nNow, to determine &lt;math> \\displaystyle x_{i} &lt;/math>, notice that we have that the function is of the form\n\n:&lt;math> \\displaystyle f(x_{i}) = \\frac{1}{1 + (\\tfrac{i}{n})^{2}}. &lt;/math>\n\nThe only composition of functions is underneath the square sign. So we must have that\n\n:&lt;math> \\displaystyle f(x) = \\frac{1}{1 + x^{2}} &lt;/math>\n\nand hence that\n\n:&lt;math>\n\\displaystyle x_{i} = \\frac{i}{n} \n&lt;/math>\n\nAs &lt;math> \\displaystyle x_{i} = a + i\\Delta x &lt;/math>, we have that &lt;math> \\displaystyle a = 0 &lt;/math> and hence since\n\n:&lt;math>\n\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} = \\frac{b}{n}\n&lt;/math>\n\nwe have that &lt;math> \\displaystyle b = 1 &lt;/math>. Combining the above gives\n\n:&lt;math> \n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}} = \\int_{0}^{1}\\frac{1}{1 + x^{2}}\\,dx\n&lt;/math>\n\nwhich completes the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Express</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}\\end{aligned}\\]</span></p>\n<p>as a definite integral. <em>Do not</em> evaluate the integral.</p>\n", 
+    "statement_latex": "Express\n\n\\begin{align*}\n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}\n\\end{align*}\n\nas a definite integral. \\emph{Do not} evaluate the integral.", 
+    "statement_raw": "Express\n\n:&lt;math> \n\\lim_{n \\to \\infty}\\frac{1}{n}\\sum_{i=1}^{n}\\frac{1}{1 + (\\tfrac{i}{n})^{2}}\n&lt;/math>\n\nas a definite integral. ''Do not'' evaluate the integral.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_01_(c)", 
+    "year": 2008
 }

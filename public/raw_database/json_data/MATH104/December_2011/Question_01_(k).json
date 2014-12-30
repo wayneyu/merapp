@@ -1,15 +1,56 @@
 {
-    "term": "December", 
-    "question": "Question_01_(k)", 
-    "course": "MATH104", 
-    "statement": "Let \\emph{g} be a continuous function on a close interval {[}0,1{]}. Let\n\\emph{g}(0) = 1 and \\emph{g}(1) = 0. Which of the following is NOT\nnecessarily true?\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  There exists a number \\emph{c} in {[}0,1{]} such that\n  \\emph{g}(\\emph{c}) $\\geq$ \\emph{g}(\\emph{x}) for all \\emph{x} in\n  {[}0,1{]}.\n\\item\n  For all \\emph{a} and \\emph{b} in {[}0,1{]}, if \\emph{a} = \\emph{b}\n  then \\emph{g}(\\emph{a}) = \\emph{g}(\\emph{b}).\n\\item\n  There exists a number \\emph{c} in {[}0,1{]} such that\n  \\emph{g}(\\emph{c}) = 1/2.\n\\item\n  There exists a number \\emph{c} in {[}0,1{]} such that\n  \\emph{g}(\\emph{c}) = 3/2.\n\\item\n  For all \\emph{c} in the open interval (0,1),\n\n  \\begin{align*}\\lim_{x \\rightarrow c} g(x) = g(c)\\end{align*}\n\\end{enumerate}\n\n\\emph{Note: the Dec 2011 exam had a typo in option E: g(c) in the limit\nshould have been g(x)}", 
-    "year": 2011, 
-    "sols": [
-        "The correct answer is (d). Let's examine each possibility.\n\n(a) Since $g(x)$ is continuous, we can use the extreme value theorem\nwhich says exactly what (a) is telling us - there is a maximum value on\nthe interval $[0,1]$\n\n(b) This is saying that if two values are equal then their function\nvalues are equal. Since a function can only take one output value for\neach input value, this is a true statement.\n\n(c) Since $g(0) = 1 > 1/2 > 0 = g(1)$ and $g(x)$ is continuous, then the\nintermediate value theorem tells us exactly what this statement says,\nthere is a value \\emph{c} in $[0,1]$ such that $g(c) = 1/2$\n\n(d) This statement is false. The difference between (c) and this problem\nis that the number 3/2 does not lie between $g(0)$ and $g(1)$. A counter\nexample would be a straight line joining $g(0)$ and $g(1)$. This can be\ndescribed by $y = -x + 1$.\n\n(e) This is true as this is the definition of continuity and $g(x)$ is\ngiven to be continuous."
+    "answer_html": "<p>(e) This is true as this is the definition of continuity and <span class=\"math\">\\(g(x)\\)</span> is given to be continuous.</p>\n", 
+    "answer_latex": "(e) This is true as this is the definition of continuity and $g(x)$ is\ngiven to be continuous.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "GregMayer", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try to think back to the theorems and definitions in this course and see which statements are satisfied by these theorems and definitions.</p>\n", 
+        "<p>The following theorems and definitions might be useful:</p>\n<p>The intermediate value theorem,</p>\n<p>The extreme value theorem,</p>\n<p>The definition of continuity.</p>\n", 
+        "<p>No content found</p>\n"
+    ], 
+    "hints_latex": [
         "Try to think back to the theorems and definitions in this course and see\nwhich statements are satisfied by these theorems and definitions.", 
         "The following theorems and definitions might be useful:\n\nThe intermediate value theorem,\n\nThe extreme value theorem,\n\nThe definition of continuity.", 
         "No content found"
-    ]
+    ], 
+    "hints_raw": [
+        "Try to think back to the theorems and definitions in this course and see which statements are satisfied by these theorems and definitions.\n", 
+        "The following theorems and definitions might be useful:\n\nThe intermediate value theorem,\n\nThe extreme value theorem,\n\nThe definition of continuity.\n", 
+        "No content found"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (k)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>The correct answer is (d). Let&#8217;s examine each possibility.</p>\n<p>(a) Since <span class=\"math\">\\(g(x)\\)</span> is continuous, we can use the extreme value theorem which says exactly what (a) is telling us - there is a maximum value on the interval <span class=\"math\">\\([0,1]\\)</span></p>\n<p>(b) This is saying that if two values are equal then their function values are equal. Since a function can only take one output value for each input value, this is a true statement.</p>\n<p>(c) Since <span class=\"math\">\\(g(0) = 1 &gt; 1/2 &gt; 0 = g(1)\\)</span> and <span class=\"math\">\\(g(x)\\)</span> is continuous, then the intermediate value theorem tells us exactly what this statement says, there is a value <em>c</em> in <span class=\"math\">\\([0,1]\\)</span> such that <span class=\"math\">\\(g(c) = 1/2\\)</span></p>\n<p>(d) This statement is false. The difference between (c) and this problem is that the number 3/2 does not lie between <span class=\"math\">\\(g(0)\\)</span> and <span class=\"math\">\\(g(1)\\)</span>. A counter example would be a straight line joining <span class=\"math\">\\(g(0)\\)</span> and <span class=\"math\">\\(g(1)\\)</span>. This can be described by <span class=\"math\">\\(y = -x + 1\\)</span>.</p>\n<p>(e) This is true as this is the definition of continuity and <span class=\"math\">\\(g(x)\\)</span> is given to be continuous.</p>\n"
+    ], 
+    "sols_latex": [
+        "The correct answer is (d). Let's examine each possibility.\n\n(a) Since $g(x)$ is continuous, we can use the extreme value theorem\nwhich says exactly what (a) is telling us - there is a maximum value on\nthe interval $[0,1]$\n\n(b) This is saying that if two values are equal then their function\nvalues are equal. Since a function can only take one output value for\neach input value, this is a true statement.\n\n(c) Since $g(0) = 1 > 1/2 > 0 = g(1)$ and $g(x)$ is continuous, then the\nintermediate value theorem tells us exactly what this statement says,\nthere is a value \\emph{c} in $[0,1]$ such that $g(c) = 1/2$\n\n(d) This statement is false. The difference between (c) and this problem\nis that the number 3/2 does not lie between $g(0)$ and $g(1)$. A counter\nexample would be a straight line joining $g(0)$ and $g(1)$. This can be\ndescribed by $y = -x + 1$.\n\n(e) This is true as this is the definition of continuity and $g(x)$ is\ngiven to be continuous."
+    ], 
+    "sols_raw": [
+        "The correct answer is (d). Let's examine each possibility.\n\n(a) Since &lt;math> g(x) &lt;/math> is continuous, we can use the extreme value theorem which says exactly what (a) is telling us - there is a maximum value on the interval &lt;math> [0,1] &lt;/math>\n\n(b) This is saying that if two values are equal then their function values are equal. Since a function can only take one output value for each input value, this is a true statement.\n\n(c) Since &lt;math> g(0) = 1 > 1/2 > 0 = g(1) &lt;/math> and &lt;math> g(x) &lt;/math> is continuous, then the intermediate value theorem tells us exactly what this statement says, there is a value ''c'' in &lt;math> [0,1] &lt;/math> such that &lt;math> g(c) = 1/2 &lt;/math>\n\n(d) This statement is false. The difference between (c) and this problem is that the number 3/2 does not lie between &lt;math> g(0) &lt;/math> and &lt;math> g(1) &lt;/math>. A counter example would be a straight line joining &lt;math> g(0) &lt;/math> and &lt;math> g(1) &lt;/math>. This can be described by &lt;math> y = -x + 1 &lt;/math>.\n\n(e) This is true as this is the definition of continuity and &lt;math> g(x) &lt;/math> is given to be continuous.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <em>g</em> be a continuous function on a close interval <span>[</span>0,1<span>]</span>. Let <em>g</em>(0) = 1 and <em>g</em>(1) = 0. Which of the following is NOT necessarily true?</p>\n<p>There exists a number <em>c</em> in <span>[</span>0,1<span>]</span> such that <em>g</em>(<em>c</em>) <span class=\"math\">\\(\\geq\\)</span> <em>g</em>(<em>x</em>) for all <em>x</em> in <span>[</span>0,1<span>]</span>.</p>\n<p>For all <em>a</em> and <em>b</em> in <span>[</span>0,1<span>]</span>, if <em>a</em> = <em>b</em> then <em>g</em>(<em>a</em>) = <em>g</em>(<em>b</em>).</p>\n<p>There exists a number <em>c</em> in <span>[</span>0,1<span>]</span> such that <em>g</em>(<em>c</em>) = 1/2.</p>\n<p>There exists a number <em>c</em> in <span>[</span>0,1<span>]</span> such that <em>g</em>(<em>c</em>) = 3/2.</p>\n<p>For all <em>c</em> in the open interval (0,1),</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\rightarrow c} g(x) = g(c)\\end{aligned}\\]</span></p>\n<p><em>Note: the Dec 2011 exam had a typo in option E: g(c) in the limit should have been g(x)</em></p>\n", 
+    "statement_latex": "Let \\emph{g} be a continuous function on a close interval {[}0,1{]}. Let\n\\emph{g}(0) = 1 and \\emph{g}(1) = 0. Which of the following is NOT\nnecessarily true?\n\nThere exists a number \\emph{c} in {[}0,1{]} such that \\emph{g}(\\emph{c})\n$\\geq$ \\emph{g}(\\emph{x}) for all \\emph{x} in {[}0,1{]}.\n\nFor all \\emph{a} and \\emph{b} in {[}0,1{]}, if \\emph{a} = \\emph{b} then\n\\emph{g}(\\emph{a}) = \\emph{g}(\\emph{b}).\n\nThere exists a number \\emph{c} in {[}0,1{]} such that \\emph{g}(\\emph{c})\n= 1/2.\n\nThere exists a number \\emph{c} in {[}0,1{]} such that \\emph{g}(\\emph{c})\n= 3/2.\n\nFor all \\emph{c} in the open interval (0,1),\n\n\\begin{align*}\n\\lim_{x \\rightarrow c} g(x) = g(c)\n\\end{align*}\n\n\\emph{Note: the Dec 2011 exam had a typo in option E: g(c) in the limit\nshould have been g(x)}", 
+    "statement_raw": "Let ''g'' be a continuous function on a close interval [0,1]. Let ''g''(0) = 1 and ''g''(1) = 0. Which of the following is NOT necessarily true?\n\n&lt;ol style=\"list-style-type: upper-alpha;\">\n&lt;li> There exists a number ''c'' in [0,1] such that ''g''(''c'') &amp;ge; ''g''(''x'') for all ''x'' in [0,1]. \n&lt;li> For all ''a'' and ''b'' in [0,1], if ''a'' = ''b'' then ''g''(''a'') = ''g''(''b''). \n&lt;li> There exists a number ''c'' in [0,1] such that ''g''(''c'') = 1/2.\n&lt;li> There exists a number ''c'' in [0,1] such that ''g''(''c'') = 3/2.\n&lt;li> For all ''c'' in the open interval (0,1), \n\n:&lt;math>\\lim_{x \\rightarrow c} g(x) = g(c)&lt;/math>\n&lt;/ol>\n\n\n''Note: the Dec 2011 exam had a typo in option E: g(c) in the limit should have been g(x)''\n", 
+    "term": "December", 
+    "topics": [
+        "Intermediate_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(k)", 
+    "year": 2011
 }

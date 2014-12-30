@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_05", 
-    "course": "MATH220", 
-    "statement": "Let $a_1, a_2, a_3, \\ldots$ be real numbers. Prove, using induction,\nthat for all $n \\in \\mathbb{N}$,\n\n\\begin{align*}\\left| \\sum_{k=1}^n a_k \\right| \\leq \\sum_{k=1}^n |a_k|\\end{align*}\n\nYou may assume the Triangle Inequality in the form\n\n\\begin{align*}|x+y| \\leq |x| + |y|\\end{align*} for all real numbers \\emph{x} and \\emph{y}.", 
-    "year": 2005, 
-    "sols": [
-        "We use induction.\n\nIn the base case when $n=1$ we have $|a_1|\\leq |a_1|$ so the statement\nis true.\n\nInduction step: we assume that $|\\sum_{i-1}^na_i|\\leq \\sum_{i=1}^n|a_i|$\nholds for some (fixed) value $n \\in N$. Then it also holds for $n+1$:\n\n\\begin{align*}\n|\\sum_{i-1}^{n+1}a_i|&=|\\sum_{i-1}^{n}a_i+a_{n+1}|\\\\\n&\\leq |\\sum_{i-1}^{n}a_i|+|a_{n+1}|\\\\\n& \\leq \\sum_{i=1}^n|a_i|+|a_{n+1}|\\\\\n&= \\sum_{i=1}^{n+1}|a_i|\\end{align*}\n\nWhere the first inequality is true by the triangle inequality and the\nsecond by induction hypothesis. This finishes the induction step and so\nthe result is true for all $n\\in N$ by induction."
+    "answer_html": "<p>This finishes the induction step and so the result is true for all <span class=\"math\">\\(n\\in N\\)</span> by induction.</p>\n", 
+    "answer_latex": "This finishes the induction step and so\nthe result is true for all $n\\in N$ by induction.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use that <span class=\"math\">\\(\\sum_{i=1}^na_i=\\sum_{i=1}^{n-1}a_i+a_n\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Use that $\\sum_{i=1}^na_i=\\sum_{i=1}^{n-1}a_i+a_n$"
-    ]
+    ], 
+    "hints_raw": [
+        "Use that &lt;math> \\sum_{i=1}^na_i=\\sum_{i=1}^{n-1}a_i+a_n &lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "5", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>We use induction.</p>\n<p>In the base case when <span class=\"math\">\\(n=1\\)</span> we have <span class=\"math\">\\(|a_1|\\leq |a_1|\\)</span> so the statement is true.</p>\n<p>Induction step: we assume that <span class=\"math\">\\(|\\sum_{i-1}^na_i|\\leq \\sum_{i=1}^n|a_i|\\)</span> holds for some (fixed) value <span class=\"math\">\\(n \\in N\\)</span>. Then it also holds for <span class=\"math\">\\(n+1\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\sum_{i-1}^{n+1}a_i|&amp;=|\\sum_{i-1}^{n}a_i+a_{n+1}|\\\\\n&amp;\\leq |\\sum_{i-1}^{n}a_i|+|a_{n+1}|\\\\\n&amp; \\leq \\sum_{i=1}^n|a_i|+|a_{n+1}|\\\\\n&amp;= \\sum_{i=1}^{n+1}|a_i|\\end{aligned}\\]</span></p>\n<p>Where the first inequality is true by the triangle inequality and the second by induction hypothesis. This finishes the induction step and so the result is true for all <span class=\"math\">\\(n\\in N\\)</span> by induction.</p>\n"
+    ], 
+    "sols_latex": [
+        "We use induction.\n\nIn the base case when $n=1$ we have $|a_1|\\leq |a_1|$ so the statement\nis true.\n\nInduction step: we assume that $|\\sum_{i-1}^na_i|\\leq \\sum_{i=1}^n|a_i|$\nholds for some (fixed) value $n \\in N$. Then it also holds for $n+1$:\n\n\\begin{align*}\n|\\sum_{i-1}^{n+1}a_i|&=|\\sum_{i-1}^{n}a_i+a_{n+1}|\\\\\n&\\leq |\\sum_{i-1}^{n}a_i|+|a_{n+1}|\\\\\n& \\leq \\sum_{i=1}^n|a_i|+|a_{n+1}|\\\\\n&= \\sum_{i=1}^{n+1}|a_i|\n\\end{align*}\n\nWhere the first inequality is true by the triangle inequality and the\nsecond by induction hypothesis. This finishes the induction step and so\nthe result is true for all $n\\in N$ by induction."
+    ], 
+    "sols_raw": [
+        "We use induction.\n\nIn the base case when &lt;math> n=1 &lt;/math> we have &lt;math> |a_1|\\leq |a_1| &lt;/math> so the statement is true.\n\nInduction step: we assume that &lt;math> |\\sum_{i-1}^na_i|\\leq \\sum_{i=1}^n|a_i| &lt;/math> holds for some (fixed) value &lt;math> n \\in N&lt;/math>. Then it also holds for &lt;math>n+1&lt;/math>:\n\n:&lt;math> \n\\begin{align}\n|\\sum_{i-1}^{n+1}a_i|&amp;=|\\sum_{i-1}^{n}a_i+a_{n+1}|\\\\\n&amp;\\leq |\\sum_{i-1}^{n}a_i|+|a_{n+1}|\\\\\n&amp; \\leq \\sum_{i=1}^n|a_i|+|a_{n+1}|\\\\\n&amp;= \\sum_{i=1}^{n+1}|a_i|\n\\end{align}&lt;/math>\n\nWhere the first inequality is true by the triangle inequality and the second by induction hypothesis. This finishes the induction step and so the result is true for all &lt;math> n\\in N &lt;/math> by induction.\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(a_1, a_2, a_3, \\ldots\\)</span> be real numbers. Prove, using induction, that for all <span class=\"math\">\\(n \\in \\mathbb{N}\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left| \\sum_{k=1}^n a_k \\right| \\leq \\sum_{k=1}^n |a_k|\\end{aligned}\\]</span></p>\n<p>You may assume the Triangle Inequality in the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|x+y| \\leq |x| + |y|\\end{aligned}\\]</span></p>\n<p>for all real numbers <em>x</em> and <em>y</em>.</p>\n", 
+    "statement_latex": "Let $a_1, a_2, a_3, \\ldots$ be real numbers. Prove, using induction,\nthat for all $n \\in \\mathbb{N}$,\n\n\\begin{align*}\n\\left| \\sum_{k=1}^n a_k \\right| \\leq \\sum_{k=1}^n |a_k|\n\\end{align*}\n\nYou may assume the Triangle Inequality in the form\n\n\\begin{align*}\n|x+y| \\leq |x| + |y|\n\\end{align*} for all real numbers \\emph{x} and \\emph{y}.", 
+    "statement_raw": "Let &lt;math>a_1, a_2, a_3, \\ldots&lt;/math> be real numbers. Prove, using induction, that for all &lt;math>n \\in \\mathbb{N}&lt;/math>,\n\n:&lt;math>\\left| \\sum_{k=1}^n a_k \\right| \\leq \\sum_{k=1}^n |a_k|&lt;/math>\n\nYou may assume the Triangle Inequality in the form\n:&lt;math>|x+y| \\leq |x| + |y|&lt;/math>\nfor all real numbers ''x'' and ''y''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2005/Question_05", 
+    "year": 2005
 }

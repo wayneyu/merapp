@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_04_(c)", 
-    "course": "MATH152", 
-    "statement": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\\end{align*}\n\nUse the information in items (a) and (b) to write A as $MDM^{-1}$, where\nM is an invertible matrix and D is a diagonal matrix.", 
-    "year": 2012, 
-    "sols": [
-        "The matrix M is made up of the eigenvectors of A and so\n\n\\begin{align*}M = \\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}.\\end{align*}\n\nThe matrix D is a diagonal matrix of the eigenvalues listed in the order\nthat we list the eigenvectors in M. Therefore,\n\n\\begin{align*}D = \\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}.\\end{align*}\n\nWe can also compute $M^{-1}$ by recalling that for a 2x2 matrix Q such\nthat\n\n\\begin{align*}Q=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\\end{align*}\n\nthat\n\n\\begin{align*}Q^{-1}=\\frac{1}{\\det{Q}}\n\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\\end{align*}\n\nSince det(M)=2, we have that\n\n\\begin{align*}M^{-1}=\n\\frac{1}{2}\\begin{bmatrix}\n1  &  -1\\\\\n1  &  1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}.\\end{align*}\n\nMultiplying everything together we get\n\n\\begin{align*}MDM^{-1}=\n\\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}\n=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}\\end{align*}\n\nas we were expecting."
+    "answer_html": "<p><span class=\"math\">\\(MDM^{-1}=\\begin{bmatrix}\n3    2\\\\\n2    3\n\\end{bmatrix}\\)</span> as we were expecting.</p>\n", 
+    "answer_latex": " $MDM^{-1}=\\begin{bmatrix}\n3    2\\\\\n2    3\n\\end{bmatrix}$ as we were expecting.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The columns of <em>M</em> correspond to the eigenvectors and the values of <em>D</em> are the eigenvalues in order of the eigenvectors in the matrix <em>M</em>.</p>\n"
+    ], 
+    "hints_latex": [
         "The columns of \\emph{M} correspond to the eigenvectors and the values of\n\\emph{D} are the eigenvalues in order of the eigenvectors in the matrix\n\\emph{M}."
-    ]
+    ], 
+    "hints_raw": [
+        "The columns of ''M'' correspond to the eigenvectors and the values of ''D'' are the eigenvalues in order of the eigenvectors in the matrix ''M''.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (c)", 
+    "rating": 41, 
+    "sols_html": [
+        "<p>The matrix M is made up of the eigenvectors of A and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\begin{bmatrix}\n1 &amp; 1 \\\\\n-1 &amp; 1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>The matrix D is a diagonal matrix of the eigenvalues listed in the order that we list the eigenvectors in M. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nD = \\begin{bmatrix}\n1 &amp; 0 \\\\\n0 &amp; 5\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>We can also compute <span class=\"math\">\\(M^{-1}\\)</span> by recalling that for a 2x2 matrix Q such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nQ=\n\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nQ^{-1}=\\frac{1}{\\det{Q}}\n\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Since det(M)=2, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM^{-1}=\n\\frac{1}{2}\\begin{bmatrix}\n1  &amp;  -1\\\\\n1  &amp;  1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1/2  &amp;  -1/2\\\\\n1/2  &amp;  1/2\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Multiplying everything together we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nMDM^{-1}=\n\\begin{bmatrix}\n1 &amp; 1 \\\\\n-1 &amp; 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 &amp; 0 \\\\\n0 &amp; 5\n\\end{bmatrix}\n\\begin{bmatrix}\n1/2  &amp;  -1/2\\\\\n1/2  &amp;  1/2\n\\end{bmatrix}\n=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>as we were expecting.</p>\n"
+    ], 
+    "sols_latex": [
+        "The matrix M is made up of the eigenvectors of A and so\n\n\\begin{align*}\nM = \\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}.\n\\end{align*}\n\nThe matrix D is a diagonal matrix of the eigenvalues listed in the order\nthat we list the eigenvectors in M. Therefore,\n\n\\begin{align*}\nD = \\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}.\n\\end{align*}\n\nWe can also compute $M^{-1}$ by recalling that for a 2x2 matrix Q such\nthat\n\n\\begin{align*}\nQ=\n\\begin{bmatrix}\na  &  b\\\\\nc  &  d\n\\end{bmatrix}\n\\end{align*}\n\nthat\n\n\\begin{align*}\nQ^{-1}=\\frac{1}{\\det{Q}}\n\\begin{bmatrix}\nd  &  -b\\\\\n-c  &  a\n\\end{bmatrix}.\n\\end{align*}\n\nSince det(M)=2, we have that\n\n\\begin{align*}\nM^{-1}=\n\\frac{1}{2}\\begin{bmatrix}\n1  &  -1\\\\\n1  &  1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}.\n\\end{align*}\n\nMultiplying everything together we get\n\n\\begin{align*}\nMDM^{-1}=\n\\begin{bmatrix}\n1 & 1 \\\\\n-1 & 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 & 0 \\\\\n0 & 5\n\\end{bmatrix}\n\\begin{bmatrix}\n1/2  &  -1/2\\\\\n1/2  &  1/2\n\\end{bmatrix}\n=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}\n\\end{align*}\n\nas we were expecting."
+    ], 
+    "sols_raw": [
+        "The matrix M is made up of the eigenvectors of A and so\n\n:&lt;math>\nM = \\begin{bmatrix}\n1 &amp; 1 \\\\\n-1 &amp; 1\n\\end{bmatrix}.\n&lt;/math>\n\nThe matrix D is a diagonal matrix of the eigenvalues listed in the order that we list the eigenvectors in M.  Therefore,\n\n:&lt;math>\nD = \\begin{bmatrix}\n1 &amp; 0 \\\\\n0 &amp; 5\n\\end{bmatrix}.\n&lt;/math>\n\nWe can also compute &lt;math>M^{-1}&lt;/math> by recalling that for a 2x2 matrix Q such that\n\n:&lt;math>\nQ=\n\\begin{bmatrix}\na  &amp;  b\\\\\nc  &amp;  d\n\\end{bmatrix}\n&lt;/math>\n\nthat\n\n:&lt;math>\nQ^{-1}=\\frac{1}{\\det{Q}}\n\\begin{bmatrix}\nd  &amp;  -b\\\\\n-c  &amp;  a\n\\end{bmatrix}.\n&lt;/math>\n\nSince det(M)=2, we have that\n:&lt;math>\nM^{-1}=\n\\frac{1}{2}\\begin{bmatrix}\n1  &amp;  -1\\\\\n1  &amp;  1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1/2  &amp;  -1/2\\\\\n1/2  &amp;  1/2\n\\end{bmatrix}.\n&lt;/math>\n\nMultiplying everything together we get\n\n:&lt;math>\nMDM^{-1}=\n\\begin{bmatrix}\n1 &amp; 1 \\\\\n-1 &amp; 1\n\\end{bmatrix}\n\\begin{bmatrix}\n1 &amp; 0 \\\\\n0 &amp; 5\n\\end{bmatrix}\n\\begin{bmatrix}\n1/2  &amp;  -1/2\\\\\n1/2  &amp;  1/2\n\\end{bmatrix}\n=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}\n&lt;/math>\n\nas we were expecting.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Use the information in items (a) and (b) to write A as <span class=\"math\">\\(MDM^{-1}\\)</span>, where M is an invertible matrix and D is a diagonal matrix.</p>\n", 
+    "statement_latex": "Consider the matrix\n\n\\begin{align*}\nA=\\begin{bmatrix}\n3  &  2\\\\\n2  &  3\n\\end{bmatrix}.\n\\end{align*}\n\nUse the information in items (a) and (b) to write A as $MDM^{-1}$, where\nM is an invertible matrix and D is a diagonal matrix.", 
+    "statement_raw": "Consider the matrix\n\n:&lt;math>\n\\begin{align}\nA=\\begin{bmatrix}\n3  &amp;  2\\\\\n2  &amp;  3\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nUse the information in items (a) and (b) to write A as &lt;math>MDM^{-1}&lt;/math>, where M is an invertible matrix and D is a diagonal matrix.\n", 
+    "term": "April", 
+    "topics": [
+        "Eigenvalues_and_eigenvectors", 
+        "Matrix_diagonalization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_04_(c)", 
+    "year": 2012
 }

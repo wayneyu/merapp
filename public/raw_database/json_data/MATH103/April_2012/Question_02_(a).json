@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
-    "course": "MATH103", 
-    "statement": "\\emph{\\textbf{Short answer question.} Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nUse the integral comparison test to show that\n\n\\begin{align*}\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx\\end{align*} converges.", 
-    "year": 2012, 
-    "sols": [
-        "On the interval $[1,\\infty)$ we have that 2\\emph{x}-1 $\\geq$ 1 and so\n\n\\begin{align*}\\frac{e^{-x}}{2x-1} \\leq e^{-x}\\end{align*} for all \\emph{x} $\\geq$ 1. Therefore\n\n\\begin{align*}\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx \\leq \\int_1^\\infty e^{-x}\\,dx\\end{align*}\n\nby the integral comparison test. Since the latter integral\n\n\\begin{align*}\\int_1^\\infty e^{-x}\\,dx\\end{align*} converges (see lecture notes or direct\ncalculation), the former integral also converges, by the integral\ncomparison test."
+    "answer_html": "<p><span class=\"math\">\\(\\int_1^\\infty e^{-x}\\,dx\\)</span> converges (see lecture notes or direct calculation), the former integral also converges, by the integral comparison test.</p>\n", 
+    "answer_latex": " $\\int_1^\\infty e^{-x}\\,dx$  converges (see lecture notes or direct\ncalculation), the former integral also converges, by the integral\ncomparison test.", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "Alfred", 
+        "IsabellGraf"
     ], 
-    "hints": [
-        "Use the integral comparison test, i.e. find an integrand \\emph{g(x)}\nsuch that\n\n\\begin{align*}\\frac{e^{-x}}{2x-1} \\leq g(x) \\quad \\text{and}\u00c2\u00a0\\quad \\int_1^\\infty g(x)\\,dx\\end{align*}\nconverges.", 
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the integral comparison test, i.e. find an integrand <em>g(x)</em> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{e^{-x}}{2x-1} \\leq g(x) \\quad \\text{and}\\quad \\int_1^\\infty g(x)\\,dx\\end{aligned}\\]</span></p>\n<p>converges.</p>\n", 
+        "<p>What can you say about 1/(2<em>x</em>-1) on the interval on which the integration is considered?</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the integral comparison test, i.e. find an integrand \\emph{g(x)}\nsuch that\n\n\\begin{align*}\n\\frac{e^{-x}}{2x-1} \\leq g(x) \\quad \\text{and}\\quad \\int_1^\\infty g(x)\\,dx\n\\end{align*}\nconverges.", 
         "What can you say about 1/(2\\emph{x}-1) on the interval on which the\nintegration is considered?"
-    ]
+    ], 
+    "hints_raw": [
+        "Use the integral comparison test, i.e. find an integrand ''g(x)'' such that\n:&lt;math>\n\\frac{e^{-x}}{2x-1} \\leq g(x) \\quad \\text{and}\u00a0\\quad \\int_1^\\infty g(x)\\,dx\n&lt;/math>\nconverges.\n", 
+        "What can you say about 1/(2''x''-1) on the interval on which the integration is considered?\n"
+    ], 
+    "num_votes": 6, 
+    "question": "2 (a)", 
+    "rating": 8, 
+    "sols_html": [
+        "<p>On the interval <span class=\"math\">\\([1,\\infty)\\)</span> we have that 2<em>x</em>-1 <span class=\"math\">\\(\\geq\\)</span> 1 and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{e^{-x}}{2x-1} \\leq e^{-x}\\end{aligned}\\]</span></p>\n<p>for all <em>x</em> <span class=\"math\">\\(\\geq\\)</span> 1. Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx \\leq \\int_1^\\infty e^{-x}\\,dx\\end{aligned}\\]</span></p>\n<p>by the integral comparison test. Since the latter integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^\\infty e^{-x}\\,dx\\end{aligned}\\]</span></p>\n<p>converges (see lecture notes or direct calculation), the former integral also converges, by the integral comparison test.</p>\n"
+    ], 
+    "sols_latex": [
+        "On the interval $[1,\\infty)$ we have that 2\\emph{x}-1 $\\geq$ 1 and so\n\n\\begin{align*}\n\\frac{e^{-x}}{2x-1} \\leq e^{-x}\n\\end{align*} for all \\emph{x} $\\geq$ 1. Therefore\n\n\\begin{align*}\n\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx \\leq \\int_1^\\infty e^{-x}\\,dx\n\\end{align*}\n\nby the integral comparison test. Since the latter integral\n\n\\begin{align*}\n\\int_1^\\infty e^{-x}\\,dx\n\\end{align*} converges (see lecture notes or direct\ncalculation), the former integral also converges, by the integral\ncomparison test."
+    ], 
+    "sols_raw": [
+        "On the interval &lt;math>[1,\\infty)&lt;/math> we have that 2''x''-1 &amp;ge; 1 and so\n:&lt;math>\n\\frac{e^{-x}}{2x-1} \\leq e^{-x}\n&lt;/math>\nfor all ''x'' &amp;ge; 1.  Therefore\n:&lt;math>\n\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx \\leq \\int_1^\\infty e^{-x}\\,dx\n&lt;/math>\n\nby the integral comparison test. Since the latter integral\n:&lt;math>\n\\int_1^\\infty e^{-x}\\,dx\n&lt;/math>\nconverges (see lecture notes or direct calculation), the former integral also converges, by the integral comparison test.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><em><strong>Short answer question.</strong> Simplify your answer to the best possible. Show in detail how you arrive at your answer (work will be considered for this problem).</em></p>\n<p>Use the integral comparison test to show that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx\\end{aligned}\\]</span></p>\n<p>converges.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short answer question.} Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nUse the integral comparison test to show that\n\n\\begin{align*}\n\\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx\n\\end{align*} converges.", 
+    "statement_raw": "'''''Short answer question.''' Simplify your answer to the best possible. Show in detail how you arrive at your answer (work will be considered for this problem).''\n\nUse the integral comparison test to show that\n:&lt;math> \\int_1^\\infty \\frac{e^{-x}}{2x-1}\\,dx &lt;/math>\nconverges.\n", 
+    "term": "April", 
+    "topics": [
+        "Direct_comparison_test", 
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_02_(a)", 
+    "year": 2012
 }

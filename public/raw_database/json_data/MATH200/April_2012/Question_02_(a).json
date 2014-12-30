@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
-    "course": "MATH200", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\end{align*}\n\nUse a linear approximation of the function z=f(x,y) at (0,1) to estimate\nf(0.1,1.2).", 
-    "year": 2012, 
-    "sols": [
-        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable. In this case the partial derivatives of\n$f(x,y) = \\ln(4x^{2} + y^{2})$ are\n\n\\begin{align*}f_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\\end{align*}\nand we wish to approximate $f$ near (x,y) = (0,1). Hence the linear\napproximation we seek is:\n\n\\begin{align*}\n\\displaystyle L(x,y) &= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&= 2y - 2\\end{align*} Using the linear approximation, we can estimate the value\nof $f$(0.1,1.2) as\n\n\\begin{align*}{\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable."
-    ]
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The linear approximation to a multivariable function <span class=\"math\">\\(f\\)</span>(x,y) at a point (x,y) = (a,b) is given by L(x,y) where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{aligned}\\]</span></p>\n<p>where the subscripts denote partial differentiation with respect to the given variable.</p>\n"
+    ], 
+    "hints_latex": [
+        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\n\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable."
+    ], 
+    "hints_raw": [
+        "The linear approximation to a multivariable function &lt;i>\u0192(x,y)&lt;/i> at a point &lt;i>(x,y) = (a,b)&lt;/i> is given by &lt;i>L(x,y)&lt;/i> where\n:&lt;math>\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\n&lt;/math>\nwhere the subscripts denote partial differentiation with respect to the given variable.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "2 (a)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>The linear approximation to a multivariable function <span class=\"math\">\\(f\\)</span>(x,y) at a point (x,y) = (a,b) is given by L(x,y) where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\\end{aligned}\\]</span></p>\n<p>where the subscripts denote partial differentiation with respect to the given variable. In this case the partial derivatives of <span class=\"math\">\\(f(x,y) = \\ln(4x^{2} + y^{2})\\)</span> are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\\end{aligned}\\]</span></p>\n<p>and we wish to approximate <span class=\"math\">\\(f\\)</span> near (x,y) = (0,1). Hence the linear approximation we seek is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle L(x,y) &amp;= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&amp;= 2y - 2\\end{aligned}\\]</span></p>\n<p>Using the linear approximation, we can estimate the value of <span class=\"math\">\\(f\\)</span>(0.1,1.2) as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The linear approximation to a multivariable function $f$(x,y) at a point\n(x,y) = (a,b) is given by L(x,y) where\n\n\\begin{align*}\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\n\\end{align*}\nwhere the subscripts denote partial differentiation with respect to the\ngiven variable. In this case the partial derivatives of\n$f(x,y) = \\ln(4x^{2} + y^{2})$ are\n\n\\begin{align*}\nf_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\n\\end{align*}\nand we wish to approximate $f$ near (x,y) = (0,1). Hence the linear\napproximation we seek is:\n\n\\begin{align*}\n\\displaystyle L(x,y) &= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&= 2y - 2\n\\end{align*} Using the linear approximation, we can estimate the value\nof $f$(0.1,1.2) as\n\n\\begin{align*}\n{\\color{blue}f(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The linear approximation to a multivariable function &lt;i>\u0192(x,y)&lt;/i> at a point &lt;i>(x,y) = (a,b)&lt;/i> is given by &lt;i>L(x,y)&lt;/i> where\n:&lt;math>\n\\displaystyle L(x,y) = f(a,b) + f_{x}(a,b)(x - a) + f_{y}(a,b)(y - b)\n&lt;/math>\nwhere the subscripts denote partial differentiation with respect to the given variable. In this case\nthe partial derivatives of &lt;math>f(x,y) = \\ln(4x^{2} + y^{2})&lt;/math> are\n:&lt;math>\nf_{x}(x,y) = \\frac{8x}{4x^{2} + y^{2}}, \\quad f_{y}(x,y) = \\frac{2y}{4x^{2} + y^{2}}.\n&lt;/math>\nand we wish to approximate &lt;i>\u0192&lt;/i> near &lt;i>(x,y) = (0,1)&lt;/i>. Hence the linear approximation we seek is:\n:&lt;math>\n\\begin{align}\n\\displaystyle L(x,y) &amp;= \\ln(1) + 0\\cdot(x - 0) + 2(y - 1) \\\\\n&amp;= 2y - 2\n\\end{align}\n&lt;/math>\nUsing the linear approximation, we can estimate the value of &lt;i>\u0192(0.1,1.2)&lt;/i> as\n:&lt;math>\n{\\color{blue}\nf(0.1,1.2) \\approx L(0.1,1.2) = 0.4}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\end{aligned}\\]</span></p>\n<p>Use a linear approximation of the function z=f(x,y) at (0,1) to estimate f(0.1,1.2).</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\n\\end{align*}\n\nUse a linear approximation of the function z=f(x,y) at (0,1) to estimate\nf(0.1,1.2).", 
+    "statement_raw": "Let\n\n:&lt;math>\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\n&lt;/math>\n\nUse a linear approximation of the function z=f(x,y) at (0,1) to estimate f(0.1,1.2).\n", 
+    "term": "April", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_02_(a)", 
+    "year": 2012
 }

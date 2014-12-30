@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_A_23", 
+    "answer_html": "<p>We know <span class=\"math\">\\(\\displaystyle (P^{10})_{2,1} = 0.3843\\)</span>, <span class=\"math\">\\(\\displaystyle (P^{10})_{2,2} = 0.3753\\)</span>, and <span class=\"math\">\\(\\displaystyle (P^{10})_{2,3} = 0.3786\\)</span>, so to maximize the probability of getting to location 2, you should start from location 1.</p>\n", 
+    "answer_latex": "We know\n$\\displaystyle (P^{10})_{2,1} = 0.3843$,\n$\\displaystyle (P^{10})_{2,2} = 0.3753$, and\n$\\displaystyle (P^{10})_{2,3} = 0.3786$, so to maximize the probability\nof getting to location 2, you should start from location 1.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH152", 
-    "statement": "Consider a random walk with three possible states and where the random\nwalker (possibly) changes from state to state once every day according\nto the transition matrix \\emph{P}. Answer the following questions using\nthe martix \\emph{P} and some of its powers given below.\n\n\\begin{align*}\nP = \\begin{bmatrix} 0.0284 & 0.5938 & 0.1626 \\\\ 0.9207 & 0.1579 & 0.1634 \\\\ 0.0509 & 0.2483 & 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 & 0.2907 & 0.2875 \\\\ 0.3843 & 0.3753 & 0.3786 \\\\ 0.3325 & 0.3340 & 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 & 0.2875 & 0.2875 \\\\ 0.3791 & 0.3790 & 0.3790 \\\\ 0.3335 & 0.3335 & 0.3335 \\end{bmatrix}\\end{align*}\n\nIf you are the random walker and you want to maximize the probability of\ngetting to location 2 when 10 days have passed from the beginning, what\nlocation should you start from?", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The probability of moving from location <span class=\"math\">\\(\\displaystyle i\\)</span> to location <span class=\"math\">\\(\\displaystyle j\\)</span> in <span class=\"math\">\\(\\displaystyle k\\)</span> time steps is <span class=\"math\">\\(\\displaystyle (P^k)_{j,i}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "The probability of moving from location $\\displaystyle i$ to location\n$\\displaystyle j$ in $\\displaystyle k$ time steps is\n$\\displaystyle (P^k)_{j,i}$."
+    ], 
+    "hints_raw": [
+        "The probability of moving from location &lt;math> \\displaystyle i &lt;/math> to location &lt;math> \\displaystyle j &lt;/math> in &lt;math> \\displaystyle k &lt;/math> time steps is &lt;math> \\displaystyle (P^k)_{j,i} &lt;/math>.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "A 23", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>The probability of moving from location <span class=\"math\">\\(\\displaystyle i\\)</span> to location <span class=\"math\">\\(\\displaystyle 2\\)</span> in <span class=\"math\">\\(\\displaystyle 10\\)</span> time steps is <span class=\"math\">\\(\\displaystyle (P^{10})_{2,i}\\)</span>. We know <span class=\"math\">\\(\\displaystyle (P^{10})_{2,1} = 0.3843\\)</span>, <span class=\"math\">\\(\\displaystyle (P^{10})_{2,2} = 0.3753\\)</span>, and <span class=\"math\">\\(\\displaystyle (P^{10})_{2,3} = 0.3786\\)</span>, so to maximize the probability of getting to location 2, you should start from location 1.</p>\n"
+    ], 
+    "sols_latex": [
         "The probability of moving from location $\\displaystyle i$ to location\n$\\displaystyle 2$ in $\\displaystyle 10$ time steps is\n$\\displaystyle (P^{10})_{2,i}$. We know\n$\\displaystyle (P^{10})_{2,1} = 0.3843$,\n$\\displaystyle (P^{10})_{2,2} = 0.3753$, and\n$\\displaystyle (P^{10})_{2,3} = 0.3786$, so to maximize the probability\nof getting to location 2, you should start from location 1."
     ], 
-    "hints": [
-        "The probability of moving from location $\\displaystyle i$ to location\n$\\displaystyle j$ in $\\displaystyle k$ time steps is\n$\\displaystyle (P^k)_{j,i}$."
-    ]
+    "sols_raw": [
+        "The probability of moving from location &lt;math> \\displaystyle i &lt;/math> to location &lt;math> \\displaystyle 2 &lt;/math> in &lt;math> \\displaystyle 10 &lt;/math> time steps is &lt;math> \\displaystyle (P^{10})_{2,i} &lt;/math>. We know &lt;math> \\displaystyle (P^{10})_{2,1} = 0.3843 &lt;/math>, &lt;math> \\displaystyle (P^{10})_{2,2} = 0.3753 &lt;/math>, and &lt;math> \\displaystyle (P^{10})_{2,3} = 0.3786 &lt;/math>, so to maximize the probability of getting to location 2, you should start from location 1.\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p>Consider a random walk with three possible states and where the random walker (possibly) changes from state to state once every day according to the transition matrix <em>P</em>. Answer the following questions using the martix <em>P</em> and some of its powers given below.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix} 0.0284 &amp; 0.5938 &amp; 0.1626 \\\\ 0.9207 &amp; 0.1579 &amp; 0.1634 \\\\ 0.0509 &amp; 0.2483 &amp; 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 &amp; 0.2907 &amp; 0.2875 \\\\ 0.3843 &amp; 0.3753 &amp; 0.3786 \\\\ 0.3325 &amp; 0.3340 &amp; 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 &amp; 0.2875 &amp; 0.2875 \\\\ 0.3791 &amp; 0.3790 &amp; 0.3790 \\\\ 0.3335 &amp; 0.3335 &amp; 0.3335 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>If you are the random walker and you want to maximize the probability of getting to location 2 when 10 days have passed from the beginning, what location should you start from?</p>\n", 
+    "statement_latex": "Consider a random walk with three possible states and where the random\nwalker (possibly) changes from state to state once every day according\nto the transition matrix \\emph{P}. Answer the following questions using\nthe martix \\emph{P} and some of its powers given below.\n\n\\begin{align*}\nP = \\begin{bmatrix} 0.0284 & 0.5938 & 0.1626 \\\\ 0.9207 & 0.1579 & 0.1634 \\\\ 0.0509 & 0.2483 & 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 & 0.2907 & 0.2875 \\\\ 0.3843 & 0.3753 & 0.3786 \\\\ 0.3325 & 0.3340 & 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 & 0.2875 & 0.2875 \\\\ 0.3791 & 0.3790 & 0.3790 \\\\ 0.3335 & 0.3335 & 0.3335 \\end{bmatrix}\n\\end{align*}\n\nIf you are the random walker and you want to maximize the probability of\ngetting to location 2 when 10 days have passed from the beginning, what\nlocation should you start from?", 
+    "statement_raw": "Consider a random walk with three possible states and where the random walker (possibly) changes from state to state once every day according to the transition matrix ''P''. Answer the following questions using the martix ''P'' and some of its powers given below.\n\n&lt;math>\n\\begin{align}\nP = \\begin{bmatrix} 0.0284 &amp; 0.5938 &amp; 0.1626 \\\\ 0.9207 &amp; 0.1579 &amp; 0.1634 \\\\ 0.0509 &amp; 0.2483 &amp; 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 &amp; 0.2907 &amp; 0.2875 \\\\ 0.3843 &amp; 0.3753 &amp; 0.3786 \\\\ 0.3325 &amp; 0.3340 &amp; 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 &amp; 0.2875 &amp; 0.2875 \\\\ 0.3791 &amp; 0.3790 &amp; 0.3790 \\\\ 0.3335 &amp; 0.3335 &amp; 0.3335 \\end{bmatrix}\n\\end{align}\n&lt;/math>\n\nIf you are the random walker and you want to maximize the probability of getting to location 2 when 10 days have passed from the beginning, what location should you start from?\n", 
+    "term": "April", 
+    "topics": [
+        "Random_walks"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_23", 
+    "year": 2013
 }

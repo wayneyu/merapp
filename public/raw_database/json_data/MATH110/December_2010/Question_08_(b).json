@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_08_(b)", 
-    "course": "MATH110", 
-    "statement": "Find the equation of the line tangent to the curve\n$\\displaystyle y = 5 \\sin x \\cos x$ at $x = \\frac{\\pi}{3}$.", 
-    "year": 2010, 
-    "sols": [
-        "To find the equation of a tangent line we need both the slope and a\npoint on the line.\n\nTo find the slope, we simply take the derivative of the function using\nthe product rule and plug in the value $x = \\frac{\\pi}{3}$\n\n$\\frac{dy}{dx} = 5((\\sin x)'\\cos x + \\sin x (\\cos x)') = 5(\\cos^2 x - \\sin^2 x)$\n\nWe know from part (a) that\n$\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$ and\n$\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$. So the value of\nthe derivative at $x = \\frac{\\pi}{3}$ is:\n\n$\\displaystyle 5\\left(\\left( \\frac{1}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\right) = 5\\left(\\frac14 - \\frac34 \\right) = -\\frac52$.\n\nSo the slope of the tangent line at $x = \\frac{\\pi}{3}$ is $-\\frac 52$.\n\nIn order to find a point on the line, we will use the point on the graph\nof the original function at $x = \\frac{\\pi}{3}$. We already have the\nx-coordinate, so we only need to find the y-coordinate by plugging the\nx-value into the original function. This gives:\n\n$y = 5\\sin\\left(\\frac{\\pi}{3}\\right)\\cos\\left(\\frac{\\pi}{3}\\right) = 5\\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2}  = \\frac{5\\sqrt{3}}{4}$\n\nNow that we have the slope $-\\frac52$ and the point\n$\\left(\\frac{\\pi}{3}, \\frac{5\\sqrt{3}}{4} \\right)$, we use the\npoint-slope formula to get the equation of the tangent line.\n\n$y - \\frac{5\\sqrt{3}}{4} = -\\frac52 \\left(x - \\frac{\\pi}{3}\\right)$\n\nNote that this would be a sufficient answer, however, if simplified to\n$y = mx + b$ form, the equation would be:\n\n$y  = -\\frac52x + \\left(\\frac{5\\pi}{6} + \\frac{5\\sqrt{3}}{4}\\right)$"
+    "answer_html": "<p><span class=\"math\">\\(y  = -2x + \\frac{2\\pi}{3} + \\sqrt{3}\\)</span></p>\n", 
+    "answer_latex": "$y  = -2x + \\frac{2\\pi}{3} + \\sqrt{3}$", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To find the equation of the line you&#8217;ll need a slope and a point on the line. The slope of a tangent line is its derivative at a point; one of the points on the tangent line is also a point on the graph of the original function.</p>\n"
+    ], 
+    "hints_latex": [
         "To find the equation of the line you'll need a slope and a point on the\nline. The slope of a tangent line is its derivative at a point; one of\nthe points on the tangent line is also a point on the graph of the\noriginal function."
-    ]
+    ], 
+    "hints_raw": [
+        "To find the equation of the line you'll need a slope and a point on the line.  The slope of a tangent line is its derivative at a point; one of the points on the tangent line is also a point on the graph of the original function.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To find the equation of a tangent line we need both the slope and a point on the line.</p>\n<p>To find the slope, we simply take the derivative of the function using the product rule and plug in the value <span class=\"math\">\\(x = \\frac{\\pi}{3}\\)</span></p>\n<p><span class=\"math\">\\(\\frac{dy}{dx} = 4((\\sin x)&#39;\\cos x + \\sin x (\\cos x)&#39;) = 4(\\cos^2 x - \\sin^2 x)\\)</span></p>\n<p>We know from part (a) that <span class=\"math\">\\(\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}\\)</span> and <span class=\"math\">\\(\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}\\)</span>. So the value of the derivative at <span class=\"math\">\\(x = \\frac{\\pi}{3}\\)</span> is:</p>\n<p><span class=\"math\">\\(\\displaystyle 4\\left(\\left( \\frac{1}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\right) = 4\\left(\\frac14 - \\frac34 \\right) = -\\frac42 = -2\\)</span>.</p>\n<p>So the slope of the tangent line at <span class=\"math\">\\(x = \\frac{\\pi}{3}\\)</span> is <span class=\"math\">\\(-2\\)</span>.</p>\n<p>In order to find a point on the line, we will use the point on the graph of the original function at <span class=\"math\">\\(x = \\frac{\\pi}{3}\\)</span>. We already have the x-coordinate, so we only need to find the y-coordinate by plugging the x-value into the original function. This gives:</p>\n<p><span class=\"math\">\\(y = 4\\sin\\left(\\frac{\\pi}{3}\\right)\\cos\\left(\\frac{\\pi}{3}\\right) = 4\\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2}  = \\sqrt{3}\\)</span></p>\n<p>Now that we have the slope <span class=\"math\">\\(-2\\)</span> and the point <span class=\"math\">\\(\\left(\\frac{\\pi}{3}, \\sqrt{3} \\right)\\)</span>, we use the point-slope formula to get the equation of the tangent line.</p>\n<p><span class=\"math\">\\(y - \\sqrt{3} = -2\\left(x - \\frac{\\pi}{3}\\right)\\)</span></p>\n<p>Note that this would be a sufficient answer, however, if simplified to <span class=\"math\">\\(y = mx + b\\)</span> form, the equation would be:</p>\n<p><span class=\"math\">\\(y  = -2x + \\frac{2\\pi}{3} + \\sqrt{3}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the equation of a tangent line we need both the slope and a\npoint on the line.\n\nTo find the slope, we simply take the derivative of the function using\nthe product rule and plug in the value $x = \\frac{\\pi}{3}$\n\n$\\frac{dy}{dx} = 4((\\sin x)'\\cos x + \\sin x (\\cos x)') = 4(\\cos^2 x - \\sin^2 x)$\n\nWe know from part (a) that\n$\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$ and\n$\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$. So the value of\nthe derivative at $x = \\frac{\\pi}{3}$ is:\n\n$\\displaystyle 4\\left(\\left( \\frac{1}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\right) = 4\\left(\\frac14 - \\frac34 \\right) = -\\frac42 = -2$.\n\nSo the slope of the tangent line at $x = \\frac{\\pi}{3}$ is $-2$.\n\nIn order to find a point on the line, we will use the point on the graph\nof the original function at $x = \\frac{\\pi}{3}$. We already have the\nx-coordinate, so we only need to find the y-coordinate by plugging the\nx-value into the original function. This gives:\n\n$y = 4\\sin\\left(\\frac{\\pi}{3}\\right)\\cos\\left(\\frac{\\pi}{3}\\right) = 4\\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2}  = \\sqrt{3}$\n\nNow that we have the slope $-2$ and the point\n$\\left(\\frac{\\pi}{3}, \\sqrt{3} \\right)$, we use the point-slope formula\nto get the equation of the tangent line.\n\n$y - \\sqrt{3} = -2\\left(x - \\frac{\\pi}{3}\\right)$\n\nNote that this would be a sufficient answer, however, if simplified to\n$y = mx + b$ form, the equation would be:\n\n$y  = -2x + \\frac{2\\pi}{3} + \\sqrt{3}$"
+    ], 
+    "sols_raw": [
+        "To find the equation of a tangent line we need both the slope and a point on the line.  \n\nTo find the slope, we simply take the derivative of the function using the product rule and plug in the value &lt;math>x = \\frac{\\pi}{3}&lt;/math>\n\n&lt;math>\\frac{dy}{dx} = 4((\\sin x)'\\cos x + \\sin x (\\cos x)') = 4(\\cos^2 x - \\sin^2 x)&lt;/math>\n\nWe know from part (a) that &lt;math>\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}&lt;/math> and &lt;math>\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}&lt;/math>.  So the value of the derivative at &lt;math>x = \\frac{\\pi}{3}&lt;/math> is:\n\n&lt;math>\\displaystyle 4\\left(\\left( \\frac{1}{2}\\right)^2 - \\left(\\frac{\\sqrt{3}}{2}\\right)^2\\right) = 4\\left(\\frac14 - \\frac34 \\right) = -\\frac42 = -2&lt;/math>.  \n\nSo the slope of the tangent line at &lt;math>x = \\frac{\\pi}{3}&lt;/math> is &lt;math>-2&lt;/math>.\n\nIn order to find a point on the line, we will use the point on the graph of the original function at &lt;math>x = \\frac{\\pi}{3}&lt;/math>.  We already have the x-coordinate, so we only need to find the y-coordinate by plugging the x-value into the original function.  This gives: \n\n&lt;math>y = 4\\sin\\left(\\frac{\\pi}{3}\\right)\\cos\\left(\\frac{\\pi}{3}\\right) = 4\\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2}  = \\sqrt{3}&lt;/math>\n\nNow that we have the slope &lt;math>-2&lt;/math> and the point &lt;math>\\left(\\frac{\\pi}{3}, \\sqrt{3} \\right)&lt;/math>, we use the point-slope formula to get the equation of the tangent line.  \n\n&lt;math>y - \\sqrt{3} = -2\\left(x - \\frac{\\pi}{3}\\right)&lt;/math>\n\nNote that this would be a sufficient answer, however, if simplified to &lt;math>y = mx + b&lt;/math> form, the equation would be: \n\n&lt;math>y  = -2x + \\frac{2\\pi}{3} + \\sqrt{3}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Find the equation of the line tangent to the curve <span class=\"math\">\\(\\displaystyle y = 4 \\sin x \\cos x\\)</span> at <span class=\"math\">\\(x = \\frac{\\pi}{3}\\)</span>.</p>\n", 
+    "statement_latex": "Find the equation of the line tangent to the curve\n$\\displaystyle y = 4 \\sin x \\cos x$ at $x = \\frac{\\pi}{3}$.", 
+    "statement_raw": "Find the equation of the line tangent to the curve &lt;math>\\displaystyle y = 4 \\sin x \\cos x&lt;/math> at &lt;math>x = \\frac{\\pi}{3}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_08_(b)", 
+    "year": 2010
 }

@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH103", 
-    "statement": "Consider the function $f(x)=e^x$ for 0 $\\leq$ x $\\leq$ 1.\n\nFind the volume $V_1$ of the horn when rotating $f(x)$ around a\nhorizontal axis at $y=1$.", 
-    "year": 2011, 
-    "sols": [
-        "Following the hints, we slice this ``horn'' into circular pieces. The\nvolume of each slice is equal to $\\pi r^2 \\ \\Delta x$ where $r$ is the\nradius of the circle and $\\Delta x$ is its thickness. Hence, in the\nlimit $\\Delta x\\to 0,$\n\n\\begin{align*}\nV_1&=\\int_0^1 \\pi (f(x)-1)^2 dx \\\\\n&= \\pi\\int_0^1  (e^x-1)^2 dx\\\\\n&=\\pi\\int_0^1  (e^{2x}-2e^x+1) dx\\\\\n&=\\pi\\left[\\frac{e^{2x}}{2}-2e^x+x\\right]_0^1 \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{e^{0}}{2}+2e^0-0\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{1}{2}+2\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right) \\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(V_1=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right)\\)</span></p>\n", 
+    "answer_latex": " $V_1=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Draw a picture.</p>\n", 
+        "<p>Make slices (orthogonal to the axis of rotation) and integrate.</p>\n"
+    ], 
+    "hints_latex": [
         "Draw a picture.", 
         "Make slices (orthogonal to the axis of rotation) and integrate."
-    ]
+    ], 
+    "hints_raw": [
+        "Draw a picture.\n", 
+        "Make slices (orthogonal to the axis of rotation) and integrate.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "4 (a)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>Following the hints, we slice this &#8220;horn&#8221; into circular pieces. The volume of each slice is equal to <span class=\"math\">\\(\\pi r^2 \\ \\Delta x\\)</span> where <span class=\"math\">\\(r\\)</span> is the radius of the circle and <span class=\"math\">\\(\\Delta x\\)</span> is its thickness. Hence, in the limit <span class=\"math\">\\(\\Delta x\\to 0,\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV_1&amp;=\\int_0^1 \\pi (f(x)-1)^2 dx \\\\\n&amp;= \\pi\\int_0^1  (e^x-1)^2 dx\\\\\n&amp;=\\pi\\int_0^1  (e^{2x}-2e^x+1) dx\\\\\n&amp;=\\pi\\left[\\frac{e^{2x}}{2}-2e^x+x\\right]_0^1 \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{e^{0}}{2}+2e^0-0\\right) \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{1}{2}+2\\right) \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right) \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Following the hints, we slice this ``horn'' into circular pieces. The\nvolume of each slice is equal to $\\pi r^2 \\ \\Delta x$ where $r$ is the\nradius of the circle and $\\Delta x$ is its thickness. Hence, in the\nlimit $\\Delta x\\to 0,$\n\n\\begin{align*}\nV_1&=\\int_0^1 \\pi (f(x)-1)^2 dx \\\\\n&= \\pi\\int_0^1  (e^x-1)^2 dx\\\\\n&=\\pi\\int_0^1  (e^{2x}-2e^x+1) dx\\\\\n&=\\pi\\left[\\frac{e^{2x}}{2}-2e^x+x\\right]_0^1 \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{e^{0}}{2}+2e^0-0\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{1}{2}+2\\right) \\\\\n&=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right) \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Following the hints, we slice this \"horn\" into circular pieces.  The volume of each slice is equal to &lt;math>\\pi r^2 \\ \\Delta x &lt;/math> where &lt;math>r &lt;/math> is the radius of the circle and &lt;math> \\Delta x&lt;/math> is its thickness.  Hence, in the limit &lt;math> \\Delta x\\to 0,&lt;/math>\n\n:&lt;math> \\begin{align}\nV_1&amp;=\\int_0^1 \\pi (f(x)-1)^2 dx \\\\\n&amp;= \\pi\\int_0^1  (e^x-1)^2 dx\\\\\n&amp;=\\pi\\int_0^1  (e^{2x}-2e^x+1) dx\\\\\n&amp;=\\pi\\left[\\frac{e^{2x}}{2}-2e^x+x\\right]_0^1 \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{e^{0}}{2}+2e^0-0\\right) \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+1-\\frac{1}{2}+2\\right) \\\\\n&amp;=\\pi\\left(\\frac{e^{2}}{2}-2e+\\frac{5}{2}\\right) \\\\\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Consider the function <span class=\"math\">\\(f(x)=e^x\\)</span> for 0 <span class=\"math\">\\(\\leq\\)</span> x <span class=\"math\">\\(\\leq\\)</span> 1.</p>\n<p>Find the volume <span class=\"math\">\\(V_1\\)</span> of the horn when rotating <span class=\"math\">\\(f(x)\\)</span> around a horizontal axis at <span class=\"math\">\\(y=1\\)</span>.</p>\n", 
+    "statement_latex": "Consider the function $f(x)=e^x$ for 0 $\\leq$ x $\\leq$ 1.\n\nFind the volume $V_1$ of the horn when rotating $f(x)$ around a\nhorizontal axis at $y=1$.", 
+    "statement_raw": "Consider the function &lt;math>f(x)=e^x&lt;/math> for 0 \u2264 x \u2264 1.\n\nFind the volume &lt;math>V_1&lt;/math> of the horn when rotating &lt;math>f(x)&lt;/math> around a horizontal axis at &lt;math>y=1&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_04_(a)", 
+    "year": 2011
 }

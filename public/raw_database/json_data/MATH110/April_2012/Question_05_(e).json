@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(e)", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{align*}\n\n\\textbf{(e)} Determine where $f$ is increasing and where it is decreasing.", 
-    "year": 2012, 
-    "sols": [
-        "We first find the derivative of \\emph{f(x)}. Using the quotient rule,\n\n\\begin{align*}f'(x) = \\frac{4x(x^2 - 1) - (2x)(2x^2)}{(x^2 - 1)^2} = \\frac{4x^3 - 4x - 4x^3}{(x^2 - 1)^2} = \\frac{-4x}{(x^2 - 1)^2}.\\end{align*}\n\nSince the denominator is always positive on the domain (squaring\n$x^2 - 1$ always yields a positive number), we only need check whether\nthe numerator is positive or negative. When $x < 0$, $-4x$ is positive\nand when $x > 0$, $-4x$ is negative. Thus \\emph{f} is increasing on the\ninterval $(\\infty, -1)\\cup (-1, 0)$ and decreasing on the interval\n$(0, 1)\\cup (1, \\infty)$."
+    "answer_html": "<p>Thus <em>f</em> is increasing on the interval <span class=\"math\">\\((\\infty, -1)\\cup (-1, 0)\\)</span> and decreasing on the interval <span class=\"math\">\\((0, 1)\\cup (1, \\infty)\\)</span>.</p>\n", 
+    "answer_latex": "Thus \\emph{f} is increasing on the\ninterval $(\\infty, -1)\\cup (-1, 0)$ and decreasing on the interval\n$(0, 1)\\cup (1, \\infty)$.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Whether <em>f</em> is increasing or decreasing is related to the sign of its first derivative, &#8221;f&#8221;&#8217;.</p>\n"
+    ], 
+    "hints_latex": [
         "Whether \\emph{f} is increasing or decreasing is related to the sign of\nits first derivative, ''f'''."
-    ]
+    ], 
+    "hints_raw": [
+        "Whether ''f'' is increasing or decreasing is related to the sign of its first derivative, ''f' ''.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We first find the derivative of <em>f(x)</em>. Using the quotient rule,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\frac{4x(x^2 - 1) - (2x)(2x^2)}{(x^2 - 1)^2} = \\frac{4x^3 - 4x - 4x^3}{(x^2 - 1)^2} = \\frac{-4x}{(x^2 - 1)^2}.\\end{aligned}\\]</span></p>\n<p>Since the denominator is always positive on the domain (squaring <span class=\"math\">\\(x^2 - 1\\)</span> always yields a positive number), we only need check whether the numerator is positive or negative. When <span class=\"math\">\\(x &lt; 0\\)</span>, <span class=\"math\">\\(-4x\\)</span> is positive and when <span class=\"math\">\\(x &gt; 0\\)</span>, <span class=\"math\">\\(-4x\\)</span> is negative. Thus <em>f</em> is increasing on the interval <span class=\"math\">\\((\\infty, -1)\\cup (-1, 0)\\)</span> and decreasing on the interval <span class=\"math\">\\((0, 1)\\cup (1, \\infty)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We first find the derivative of \\emph{f(x)}. Using the quotient rule,\n\n\\begin{align*}\nf'(x) = \\frac{4x(x^2 - 1) - (2x)(2x^2)}{(x^2 - 1)^2} = \\frac{4x^3 - 4x - 4x^3}{(x^2 - 1)^2} = \\frac{-4x}{(x^2 - 1)^2}.\n\\end{align*}\n\nSince the denominator is always positive on the domain (squaring\n$x^2 - 1$ always yields a positive number), we only need check whether\nthe numerator is positive or negative. When $x < 0$, $-4x$ is positive\nand when $x > 0$, $-4x$ is negative. Thus \\emph{f} is increasing on the\ninterval $(\\infty, -1)\\cup (-1, 0)$ and decreasing on the interval\n$(0, 1)\\cup (1, \\infty)$."
+    ], 
+    "sols_raw": [
+        "We first find the derivative of ''f(x)''.  Using the quotient rule, \n\n: &lt;math>f'(x) = \\frac{4x(x^2 - 1) - (2x)(2x^2)}{(x^2 - 1)^2} = \\frac{4x^3 - 4x - 4x^3}{(x^2 - 1)^2} = \\frac{-4x}{(x^2 - 1)^2}&lt;/math>.  \n\nSince the denominator is always positive on the domain (squaring &lt;math>x^2 - 1&lt;/math> always yields a positive number), we only need check whether the numerator is positive or negative.  When &lt;math>x &lt; 0&lt;/math>, &lt;math>-4x&lt;/math> is positive and when &lt;math>x > 0&lt;/math>, &lt;math>-4x&lt;/math> is negative.  Thus ''f'' is increasing on the interval &lt;math>(\\infty, -1)\\cup (-1, 0)&lt;/math> and decreasing on the interval &lt;math>(0, 1)\\cup (1, \\infty)&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{aligned}\\]</span></p>\n<p><strong>(e)</strong> Determine where <span class=\"math\">\\(f\\)</span> is increasing and where it is decreasing.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n\\end{align*}\n\n\\textbf{(e)} Determine where $f$ is increasing and where it is decreasing.", 
+    "statement_raw": "Let\n:&lt;math> \\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n&lt;/math>\n\n'''(e)''' Determine where &amp;fnof; is increasing and where it is decreasing.\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2012/Question_05_(e)", 
+    "year": 2012
 }

@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_03_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(f(t)= 1 -3t + 2t^2\\)</span></p>\n", 
+    "answer_latex": "$f(t)= 1 -3t + 2t^2$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Let\n$P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}$\nbe the set of all polynomials of degree at most 2.\n\nShow that $\\displaystyle P_2$ is a vector space and show that\n$\\displaystyle B=\\{1,t,t^2 \\}$ form a basis of $\\displaystyle P_2$.\nExpress the function $\\displaystyle f(t)=1-3t+2t^2 \\in P_2$ in a vector\nform using \\emph{B} as the basis.", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "3 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(P_2\\)</span> is a vector space then the axioms must hold true</p>\n<p><span class=\"math\">\\(\\displaystyle \\alpha_0+\\alpha_1t+\\alpha_2t^2+\\beta_0+\\beta_1t+\\beta_2t^2= (\\alpha_0+\\beta_0)+(\\alpha_1+\\beta_1)t+(\\alpha_2+\\beta_2)t^2\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle c(\\alpha_0+\\alpha_1t+\\alpha_2t^2)= c\\alpha_0+c\\alpha_1t+c\\alpha_2t^2\\)</span></p>\n<p>We can also think of <span class=\"math\">\\(P_2\\)</span> to be in <span class=\"math\">\\(\\mathbb{R}^{3}\\)</span></p>\n<p><span class=\"math\">\\(\\alpha_0+\\alpha_1t+\\alpha_2t^2\\rightarrow \\begin{bmatrix}\n\\alpha_0\\\\\n\\alpha_1\\\\\n\\alpha_2\n\\end{bmatrix}\\)</span></p>\n<p>such that commutative and associate properties are also satisfied.</p>\n<p>To show that B is a basis, we have to show that it spans <span class=\"math\">\\(P_2\\)</span> and are linearly independent</p>\n<p>If we think of <span class=\"math\">\\(P_2\\)</span> to be in <span class=\"math\">\\(\\mathbb{R}^3\\)</span> then we can immediately identify the basis for <span class=\"math\">\\(\\mathbb{R}^3\\)</span></p>\n<p>Basis of <span class=\"math\">\\(\\mathbb{R}^3: \\left\\{\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\right\\}\\)</span></p>\n<p>We can use this result and build the basis of <span class=\"math\">\\(P_2\\)</span> such that</p>\n<p><span class=\"math\">\\(B=\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}+\nt\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix}+\nt^2\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix}\\)</span>.</p>\n<p>Therefore</p>\n<p><span class=\"math\">\\(f(t)=\\begin{bmatrix}\n1 &amp; -3 &amp; 2\n\\end{bmatrix} \\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix} = 1 -3t + 2t^2\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "If $P_2$ is a vector space then the axioms must hold true\n\n$\\displaystyle \\alpha_0+\\alpha_1t+\\alpha_2t^2+\\beta_0+\\beta_1t+\\beta_2t^2= (\\alpha_0+\\beta_0)+(\\alpha_1+\\beta_1)t+(\\alpha_2+\\beta_2)t^2$\n\n$\\displaystyle c(\\alpha_0+\\alpha_1t+\\alpha_2t^2)= c\\alpha_0+c\\alpha_1t+c\\alpha_2t^2$\n\nWe can also think of $P_2$ to be in $\\mathbb{R}^{3}$\n\n$\\alpha_0+\\alpha_1t+\\alpha_2t^2\\rightarrow \\begin{bmatrix}\n\\alpha_0\\\\\n\\alpha_1\\\\\n\\alpha_2\n\\end{bmatrix}$\n\nsuch that commutative and associate properties are also satisfied.\n\nTo show that B is a basis, we have to show that it spans $P_2$ and are\nlinearly independent\n\nIf we think of $P_2$ to be in $\\mathbb{R}^3$ then we can immediately\nidentify the basis for $\\mathbb{R}^3$\n\nBasis of $\\mathbb{R}^3: \\left\\{\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\right\\}$\n\nWe can use this result and build the basis of $P_2$ such that\n\n$B=\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}+\nt\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix}+\nt^2\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix}$.\n\nTherefore\n\n$f(t)=\\begin{bmatrix}\n1 & -3 & 2\n\\end{bmatrix} \\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix} = 1 -3t + 2t^2$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "If &lt;math>P_2&lt;/math> is a vector space then the axioms must hold true\n\n&lt;math> \\displaystyle \\alpha_0+\\alpha_1t+\\alpha_2t^2+\\beta_0+\\beta_1t+\\beta_2t^2= (\\alpha_0+\\beta_0)+(\\alpha_1+\\beta_1)t+(\\alpha_2+\\beta_2)t^2&lt;/math>\n\n&lt;math> \\displaystyle c(\\alpha_0+\\alpha_1t+\\alpha_2t^2)= c\\alpha_0+c\\alpha_1t+c\\alpha_2t^2&lt;/math>\n\nWe can also think of &lt;math>P_2&lt;/math> to be in &lt;math>\\mathbb{R}^{3}&lt;/math>\n\n&lt;math>\\alpha_0+\\alpha_1t+\\alpha_2t^2\\rightarrow \\begin{bmatrix}\n\\alpha_0\\\\\n\\alpha_1\\\\\n\\alpha_2\n\\end{bmatrix}&lt;/math>\n\nsuch that commutative and associate properties are also satisfied.\n\nTo show that B is a basis, we have to show that it spans &lt;math>P_2&lt;/math> and are linearly independent\n\nIf we think of &lt;math>P_2&lt;/math> to be in &lt;math>\\mathbb{R}^3&lt;/math> then we can immediately identify the basis for &lt;math>\\mathbb{R}^3&lt;/math>\n\nBasis of &lt;math>\\mathbb{R}^3: \\left\\{\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix},\n\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\right\\}&lt;/math>\n\nWe can use this result and build the basis of &lt;math>P_2&lt;/math> such that\n\n&lt;math>B=\\begin{bmatrix}\n1\\\\\n0\\\\\n0\n\\end{bmatrix}+\nt\\begin{bmatrix}\n0\\\\\n1\\\\\n0\n\\end{bmatrix}+\nt^2\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix}=\n\\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix}&lt;/math>.\n\nTherefore\n\n&lt;math>f(t)=\\begin{bmatrix}\n1 &amp; -3 &amp; 2\n\\end{bmatrix} \\begin{bmatrix}\n1\\\\\nt\\\\\nt^2\n\\end{bmatrix} = 1 -3t + 2t^2&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}\\)</span> be the set of all polynomials of degree at most 2.</p>\n<p>Show that <span class=\"math\">\\(\\displaystyle P_2\\)</span> is a vector space and show that <span class=\"math\">\\(\\displaystyle B=\\{1,t,t^2 \\}\\)</span> form a basis of <span class=\"math\">\\(\\displaystyle P_2\\)</span>. Express the function <span class=\"math\">\\(\\displaystyle f(t)=1-3t+2t^2 \\in P_2\\)</span> in a vector form using <em>B</em> as the basis.</p>\n", 
+    "statement_latex": "Let\n$P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}$\nbe the set of all polynomials of degree at most 2.\n\nShow that $\\displaystyle P_2$ is a vector space and show that\n$\\displaystyle B=\\{1,t,t^2 \\}$ form a basis of $\\displaystyle P_2$.\nExpress the function $\\displaystyle f(t)=1-3t+2t^2 \\in P_2$ in a vector\nform using \\emph{B} as the basis.", 
+    "statement_raw": "Let &lt;math>P_2=\\{ \\alpha_0+ \\alpha_1t+\\alpha_2t^2: \\alpha_j \\in \\mathbb{R} (j=0,1,2) \\}&lt;/math> be the set of all polynomials of degree at most 2.\n\nShow that &lt;math>\\displaystyle P_2&lt;/math> is a vector space and show that &lt;math>\\displaystyle B=\\{1,t,t^2 \\}&lt;/math> form a basis of &lt;math>\\displaystyle P_2&lt;/math>. Express the function &lt;math>\\displaystyle f(t)=1-3t+2t^2 \\in P_2&lt;/math> in a vector form using ''B'' as the basis.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2006/Question_03_(a)", 
+    "year": 2006
 }

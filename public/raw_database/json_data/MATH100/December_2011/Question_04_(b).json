@@ -1,9 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_04_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\nT_2(8.1)&lt;\\sqrt[3]{8.1}\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle\nT_2(8.1)<\\sqrt[3]{8.1}$ ", 
+    "contributors": [
+        "IainMoyles"
+    ], 
     "course": "MATH100", 
-    "statement": "No content found", 
-    "year": 2011, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What can you say about the error between the Taylor polynomial and the actual function? That error is also called the remained.</p>\n"
+    ], 
+    "hints_latex": [
+        "What can you say about the error between the Taylor polynomial and the\nactual function? That error is also called the remained."
+    ], 
+    "hints_raw": [
+        "What can you say about the error between the Taylor polynomial and the actual function? That error is also called the remained.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "4 (b)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Lagrange&#8217;s Remainder Formula states that:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR_n(x) &amp;=f(x)-T_n(x) \\\\\n&amp;= \\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{(n+1)}\\end{aligned}\\]</span></p>\n<p>Where <span class=\"math\">\\(c\\)</span> is a number in <span class=\"math\">\\([x, a].\\)</span></p>\n<p>When <span class=\"math\">\\(R_n(x)\\)</span> is positive, then <span class=\"math\">\\(T_n(x)\\)</span> is an underestimate; if it is negative, then <span class=\"math\">\\(T_n(x)\\)</span> is an overestimate. For this problem,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;=\\sqrt[3]{x} = x^{1/3} \\\\\nf&#39;(x) &amp;=\\frac{1}{3x^{2/3}}\\\\\nf&#39;&#39;(x) &amp;= -\\frac{2}{9x^{5/3}}\\\\\nf&#39;&#39;&#39;(x) &amp;= \\frac{10}{(27 x^{8/3})} \\\\\n(x-a)^{(n+1)} &amp;= (8.1-8)^3 = 0.001\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(f(8.1)\\)</span> and <span class=\"math\">\\((x-a)^{n+1}\\)</span> are both positive, we can conclude that <span class=\"math\">\\(R_n(8.1)\\)</span> is also positive since the factorial is positive as well. This means that:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nT_2(8.1)&lt;\\sqrt[3]{8.1}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Lagrange's Remainder Formula states that:\n\n\\begin{align*}\nR_n(x) &=f(x)-T_n(x) \\\\\n&= \\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{(n+1)}\n\\end{align*} Where $c$ is a number in $[x, a].$\n\nWhen $R_n(x)$ is positive, then $T_n(x)$ is an underestimate; if it is\nnegative, then $T_n(x)$ is an overestimate. For this problem,\n\n\\begin{align*}\nf(x) &=\\sqrt[3]{x} = x^{1/3} \\\\\nf'(x) &=\\frac{1}{3x^{2/3}}\\\\\nf''(x) &= -\\frac{2}{9x^{5/3}}\\\\\nf'''(x) &= \\frac{10}{(27 x^{8/3})} \\\\\n(x-a)^{(n+1)} &= (8.1-8)^3 = 0.001\n\\end{align*}\n\nSince $f(8.1)$ and $(x-a)^{n+1}$ are both positive, we can conclude that\n$R_n(8.1)$ is also positive since the factorial is positive as well.\nThis means that:\n\n\\begin{align*}\n\\displaystyle\nT_2(8.1)<\\sqrt[3]{8.1}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Lagrange's Remainder Formula states that:\n:&lt;math>\\displaystyle\n\\begin{align}\nR_n(x) &amp; =f(x)-T_n(x) \\\\\n&amp; = \\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{(n+1)}\n\\end{align}\n&lt;/math>\nWhere &lt;math>c&lt;/math> is a number in &lt;math>[x, a].&lt;/math>\n\nWhen &lt;math>R_n(x)&lt;/math> is positive, then &lt;math>T_n(x)&lt;/math> is an underestimate; if it is negative, then &lt;math>T_n(x)&lt;/math> is an overestimate. For this problem,\n:&lt;math>\n\\begin{align}\nf(x) &amp; =\\sqrt[3]{x} = x^{1/3} \\\\\nf'(x) &amp; =\\frac{1}{3x^{2/3}}\\\\\nf''(x) &amp; = -\\frac{2}{9x^{5/3}}\\\\\nf'''(x) &amp; = \\frac{10}{(27 x^{8/3})} \\\\\n(x-a)^{(n+1)} &amp; = (8.1-8)^3 = 0.001\n\\end{align}\n&lt;/math>\n\nSince &lt;math>f(8.1)&lt;/math> and &lt;math>(x-a)^{n+1}&lt;/math> are both positive, we can conclude that &lt;math>R_n(8.1)&lt;/math> is also positive since the factorial is positive as well. This means that:\n\n:&lt;math>\\displaystyle\nT_2(8.1)&lt;\\sqrt[3]{8.1}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><em><strong>Full-Solution Problem.</strong> Justify your answers and <strong>show all your work.</strong> Simplification of answers is not required unless explicitly stated.</em></p>\n<p>Let <span class=\"math\">\\(T_2(x)\\)</span> be the second degree Taylor polynomial about <span class=\"math\">\\(a=8\\)</span> for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)= \\sqrt[3]{x}\\end{aligned}\\]</span></p>\n<p>Is <span class=\"math\">\\(T_2(8.1)\\)</span> larger than <span class=\"math\">\\(\\sqrt[3]{8.1}\\)</span>? Please justify your answer.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Full-Solution Problem.} Justify your answers and\n\\textbf{show all your work.} Simplification of answers is not required\nunless explicitly stated.}\n\nLet $T_2(x)$ be the second degree Taylor polynomial about $a=8$ for\n\n\\begin{align*}\nf(x)= \\sqrt[3]{x}\n\\end{align*}\n\nIs $T_2(8.1)$ larger than $\\sqrt[3]{8.1}$? Please justify your answer.", 
+    "statement_raw": "'''''Full-Solution Problem.''' Justify your answers and '''show all your work.''' Simplification of answers is not required unless explicitly stated.''\n\nLet &lt;math>T_2(x)&lt;/math> be the second degree Taylor polynomial about &lt;math>a=8&lt;/math> for\n:&lt;math>\nf(x)= \\sqrt[3]{x}\n&lt;/math>\n\nIs &lt;math>T_2(8.1)&lt;/math> larger than &lt;math>\\sqrt[3]{8.1}&lt;/math>? Please justify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor%27s_remainder_theorem", 
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_04_(b)", 
+    "year": 2011
 }

@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle x \\equiv 32,69,106 \\mod{111}\\)</span>seen by adding multiples of 37 to 32.</p>\n", 
+    "answer_latex": "$\\displaystyle x \\equiv 32,69,106 \\mod{111}$seen by adding multiples of 37 to 32.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Determine, using no moduli other than 111 in your final answer, all\nintegers \\emph{x} that satisfy the following linear congruence.\n\n$\\displaystyle 21x \\equiv 6 \\mod{111}$", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First, isolate for 0, factor then argue that one of the terms has to be divisible by 37. Solve that congruence then lift back to 111.</p>\n"
+    ], 
+    "hints_latex": [
+        "First, isolate for 0, factor then argue that one of the terms has to be\ndivisible by 37. Solve that congruence then lift back to 111."
+    ], 
+    "hints_raw": [
+        "First, isolate for 0, factor then argue that one of the terms has to be divisible by 37. Solve that congruence then lift back to 111.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Proceeding as suggested in the hint, we have</p>\n<p><span class=\"math\">\\(\\displaystyle 3(7x - 2) \\equiv 0 \\mod{111}\\)</span></p>\n<p>Now, as <span class=\"math\">\\(\\displaystyle 111 = 3\\cdot 37\\)</span>, we see that we must have</p>\n<p><span class=\"math\">\\(\\displaystyle 7x-2 \\equiv 0 \\mod{37}\\)</span></p>\n<p>if the above congruence is to hold. Now, isolating gives</p>\n<p><span class=\"math\">\\(\\displaystyle 7x \\equiv 2 \\mod{37}\\)</span></p>\n<p>We can crunch through the Euclidean algorithm to find the inverse of 7 but here I will use a clever time saving trick. The right hand side is equivalent to</p>\n<p><span class=\"math\">\\(\\displaystyle 7x \\equiv -35 \\mod{37}\\)</span></p>\n<p>Thus, multiplying by the inverse of 7 on both sides yields</p>\n<p><span class=\"math\">\\(\\displaystyle x \\equiv -5 \\equiv 32 \\mod{37}\\)</span>.</p>\n<p>Thus, modulo 111, the solutions are</p>\n<p><span class=\"math\">\\(\\displaystyle x \\equiv 32,69,106 \\mod{111}\\)</span></p>\n<p>seen by adding multiples of 37 to 32.</p>\n"
+    ], 
+    "sols_latex": [
         "Proceeding as suggested in the hint, we have\n\n$\\displaystyle 3(7x - 2) \\equiv 0 \\mod{111}$\n\nNow, as $\\displaystyle 111 = 3\\cdot 37$, we see that we must have\n\n$\\displaystyle 7x-2 \\equiv 0 \\mod{37}$\n\nif the above congruence is to hold. Now, isolating gives\n\n$\\displaystyle 7x \\equiv 2 \\mod{37}$\n\nWe can crunch through the Euclidean algorithm to find the inverse of 7\nbut here I will use a clever time saving trick. The right hand side is\nequivalent to\n\n$\\displaystyle 7x \\equiv -35 \\mod{37}$\n\nThus, multiplying by the inverse of 7 on both sides yields\n\n$\\displaystyle x \\equiv -5 \\equiv 32 \\mod{37}$.\n\nThus, modulo 111, the solutions are\n\n$\\displaystyle x \\equiv 32,69,106 \\mod{111}$\n\nseen by adding multiples of 37 to 32."
     ], 
-    "hints": [
-        "First, isolate for 0, factor then argue that one of the terms has to be\ndivisible by 37. Solve that congruence then lift back to 111."
-    ]
+    "sols_raw": [
+        "Proceeding as suggested in the hint, we have\n\n&lt;math> \\displaystyle 3(7x - 2) \\equiv 0 \\mod{111}&lt;/math>\n\nNow, as &lt;math> \\displaystyle 111 = 3\\cdot 37&lt;/math>, we see that we must have\n\n&lt;math> \\displaystyle 7x-2 \\equiv 0 \\mod{37}&lt;/math>\n\nif the above congruence is to hold. Now, isolating gives \n\n&lt;math> \\displaystyle 7x \\equiv 2 \\mod{37}&lt;/math>\n\nWe can crunch through the Euclidean algorithm to find the inverse of 7 but here I will use a clever time saving trick. The right hand side is equivalent to  \n\n&lt;math> \\displaystyle 7x \\equiv -35 \\mod{37}&lt;/math>\n\nThus, multiplying by the inverse of 7 on both sides yields\n\n&lt;math> \\displaystyle x \\equiv -5 \\equiv 32 \\mod{37}&lt;/math>.\n\nThus, modulo 111, the solutions are\n\n&lt;math> \\displaystyle x \\equiv 32,69,106 \\mod{111}&lt;/math>\n\nseen by adding multiples of 37 to 32.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Determine, using no moduli other than 111 in your final answer, all integers <em>x</em> that satisfy the following linear congruence.</p>\n<p><span class=\"math\">\\(\\displaystyle 21x \\equiv 6 \\mod{111}\\)</span></p>\n", 
+    "statement_latex": "Determine, using no moduli other than 111 in your final answer, all\nintegers \\emph{x} that satisfy the following linear congruence.\n\n$\\displaystyle 21x \\equiv 6 \\mod{111}$", 
+    "statement_raw": "Determine, using no moduli other than 111 in your final answer, all integers ''x'' that satisfy the following linear congruence.\n\n&lt;math> \\displaystyle 21x \\equiv 6 \\mod{111}&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Euclidean_algorithm", 
+        "Modular_arithmetic"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_03_(a)", 
+    "year": 2008
 }

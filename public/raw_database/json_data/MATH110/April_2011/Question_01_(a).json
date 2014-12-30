@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA linear approximation \\emph{L} to a function $f$ satisfies \\emph{L(x) =\nf(x)} for exactly one value of \\emph{x}.", 
-    "year": 2011, 
-    "sols": [
-        "The statement is \\textbf{false}, so a linear approximation $L$ to a\nfunction $f$ may satisfy $L(x) = f(x)$ for more than one value of $x$.\nTo prove this, we need an example of such a function. In particular, we\nwould like to find a function with a tangent line (the linear\napproxmiation) that intersects the function at another point.\n\nOne example would be the function $f(x) = x^3$, with the linear\napproximation at the point, say, $(-1,1)$. Drawing that function and\nlinear approximation looks like this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMATH110April_2011Question1(a).jpg}\n\\caption{ScienceMathExamResourcesCoursesMATH110April 2011Question1(a).jpg}\n\\end{figure}\n\nSo we see that $L(x) = f(x)$ both at $x = -1$ and at $x = 2$. So the\noriginal statement is false.\n\n\\emph{If you want to make it even simpler, choose $f$ to be linear, e.g.\nf(x) = 17x+42. Then the linear approximation L coincides with $f$ at all\npoints.}"
+    "answer_html": "<p>Then the linear approximation L coincides with <span class=\"math\">\\(f\\)</span> at all points.</p>\n", 
+    "answer_latex": "Then the linear approximation L coincides with $f$ at all\npoints.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p><span class=\"math\">\\(L(x) = f(x)\\)</span> when the function and the linear approximation intersect. Can a linear approximation and a function intersect in more than one place?</p>\n"
+    ], 
+    "hints_latex": [
         "$L(x) = f(x)$ when the function and the linear approximation intersect.\nCan a linear approximation and a function intersect in more than one\nplace?"
-    ]
+    ], 
+    "hints_raw": [
+        "&lt;math>L(x) = f(x)&lt;/math> when the function and the linear approximation intersect.  Can a linear approximation and a function intersect in more than one place?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The statement is <strong>false</strong>, so a linear approximation <span class=\"math\">\\(L\\)</span> to a function <span class=\"math\">\\(f\\)</span> may satisfy <span class=\"math\">\\(L(x) = f(x)\\)</span> for more than one value of <span class=\"math\">\\(x\\)</span>. To prove this, we need an example of such a function. In particular, we would like to find a function with a tangent line (the linear approxmiation) that intersects the function at another point.</p>\n<p>One example would be the function <span class=\"math\">\\(f(x) = x^3\\)</span>, with the linear approximation at the point, say, <span class=\"math\">\\((-1,1)\\)</span>. Drawing that function and linear approximation looks like this:</p>\n<p><img src=\"../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMATH110April_2011Question1(a).jpg\" alt=\"image\" /></p>\n<p>So we see that <span class=\"math\">\\(L(x) = f(x)\\)</span> both at <span class=\"math\">\\(x = -1\\)</span> and at <span class=\"math\">\\(x = 2\\)</span>. So the original statement is false.</p>\n<p><em>If you want to make it even simpler, choose <span class=\"math\">\\(f\\)</span> to be linear, e.g. f(x) = 17x+42. Then the linear approximation L coincides with <span class=\"math\">\\(f\\)</span> at all points.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "The statement is \\textbf{false}, so a linear approximation $L$ to a\nfunction $f$ may satisfy $L(x) = f(x)$ for more than one value of $x$.\nTo prove this, we need an example of such a function. In particular, we\nwould like to find a function with a tangent line (the linear\napproxmiation) that intersects the function at another point.\n\nOne example would be the function $f(x) = x^3$, with the linear\napproximation at the point, say, $(-1,1)$. Drawing that function and\nlinear approximation looks like this:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMATH110April_2011Question1(a).jpg}\n\nSo we see that $L(x) = f(x)$ both at $x = -1$ and at $x = 2$. So the\noriginal statement is false.\n\n\\emph{If you want to make it even simpler, choose $f$ to be linear, e.g.\nf(x) = 17x+42. Then the linear approximation L coincides with $f$ at all\npoints.}"
+    ], 
+    "sols_raw": [
+        "The statement is '''false''', so a linear approximation &lt;math>L&lt;/math> to a function &lt;math>f&lt;/math> may satisfy &lt;math>L(x) = f(x)&lt;/math> for more than one value of &lt;math>x&lt;/math>.  To prove this, we need an example of such a function.  In particular, we would like to find a function with a tangent line (the linear approxmiation) that intersects the function at another point.  \n\nOne example would be the function &lt;math>f(x) = x^3&lt;/math>, with the linear approximation at the point, say, &lt;math>(-1,1)&lt;/math>.  Drawing that function and linear approximation looks like this: \n\n[[File:ScienceMathExamResourcesCoursesMATH110April 2011Question1(a).jpg]]\n\nSo we see that &lt;math>L(x) = f(x)&lt;/math> both at &lt;math>x = -1&lt;/math> and at &lt;math>x = 2&lt;/math>.  So the original statement is false.\n\n\n''If you want to make it even simpler, choose &amp;fnof; to be linear, e.g. f(x) = 17x+42. Then the linear approximation L coincides with &amp;fnof; at all points.''\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Determine whether this statement is true. If it is, explain why; if not, give a counterexample.</em></p>\n<p>A linear approximation <em>L</em> to a function <span class=\"math\">\\(f\\)</span> satisfies <em>L(x) = f(x)</em> for exactly one value of <em>x</em>.</p>\n", 
+    "statement_latex": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nA linear approximation \\emph{L} to a function $f$ satisfies \\emph{L(x) =\nf(x)} for exactly one value of \\emph{x}.", 
+    "statement_raw": "''Determine whether this statement is true. If it is, explain why; if not, give a counterexample.''\n\nA linear approximation ''L'' to a function &amp;fnof; satisfies ''L(x) = f(x)'' for exactly one value of ''x''.\n", 
+    "term": "April", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_01_(a)", 
+    "year": 2011
 }

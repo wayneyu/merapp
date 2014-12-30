@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05", 
-    "course": "MATH101", 
-    "statement": "Find, with explanation, the radius of convergence and the interval of\nconvergence of the power series\n\n\\begin{align*}\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{(x-1)^{n}}{2^{n}(n+2)}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "We will use the ratio test:\n\n\\begin{align*}\n\\lim_{n\\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|&=\\lim_{n\\to \\infty}\\left| \\frac{\\frac{(x-1)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(x-1)^n}{2^n(n+2)}} \\right| \\\\\n&=\\lim_{n\\to \\infty}\\frac{|x-1|(n+2)}{2\\cdot (n+3)}\\\\\n&=|\\frac{x-1}{2}|\\end{align*}\n\nWe want this limit to be $<1$ so that the series converges absolutely.\nThis means $|\\frac{x-1}{2}|<1$ which means that the radius of\nconvergence is $2$ and that $-1<x<3$. Now we have to test the endpoints.\n\nAt $x=3$ we get:\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n2^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{(-1)^n}{(n+2)}$\n\nwhich converges by alternate series test, if we sum two consecutive\nterms we get:\n\n$\\frac{1}{n}-\\frac{1}{n+1} = \\frac{1}{n(n+1)} <\\frac{1}{n^2}$\n\nand the series $\\sum_{n=1}^\\infty\\frac{1}{n^2}$ converges.\n\nAt $x=-1$ we get\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n(-2)^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{1}{(n+2)}$\n\nwhich diverges because it is the tail of the harmonic series.\n\nSo, the interval of convergence is $(-1,3].$"
+    "answer_html": "<p>So, the interval of convergence is <span class=\"math\">\\((-1,3].\\)</span></p>\n", 
+    "answer_latex": "So, the interval of convergence is $(-1,3].$", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the ratio test to figure out for which values of x does the series converge.</p>\n"
+    ], 
+    "hints_latex": [
         "Use the ratio test to figure out for which values of x does the series\nconverge."
-    ]
+    ], 
+    "hints_raw": [
+        "Use the ratio test to figure out for which values of x does the series converge.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "5", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>We will use the ratio test:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n\\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|&amp;=\\lim_{n\\to \\infty}\\left| \\frac{\\frac{(x-1)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(x-1)^n}{2^n(n+2)}} \\right| \\\\\n&amp;=\\lim_{n\\to \\infty}\\frac{|x-1|(n+2)}{2\\cdot (n+3)}\\\\\n&amp;=|\\frac{x-1}{2}|\\end{aligned}\\]</span></p>\n<p>We want this limit to be <span class=\"math\">\\(&lt;1\\)</span> so that the series converges absolutely. This means <span class=\"math\">\\(|\\frac{x-1}{2}|&lt;1\\)</span> which means that the radius of convergence is <span class=\"math\">\\(2\\)</span> and that <span class=\"math\">\\(-1&lt;x&lt;3\\)</span>. Now we have to test the endpoints.</p>\n<p>At <span class=\"math\">\\(x=3\\)</span> we get:</p>\n<p><span class=\"math\">\\(\\sum_{n=0}^\\infty \\frac{(-1)^n2^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{(-1)^n}{(n+2)}\\)</span></p>\n<p>which converges by alternate series test, if we sum two consecutive terms we get:</p>\n<p><span class=\"math\">\\(\\frac{1}{n}-\\frac{1}{n+1} = \\frac{1}{n(n+1)} &lt;\\frac{1}{n^2}\\)</span></p>\n<p>and the series <span class=\"math\">\\(\\sum_{n=1}^\\infty\\frac{1}{n^2}\\)</span> converges.</p>\n<p>At <span class=\"math\">\\(x=-1\\)</span> we get</p>\n<p><span class=\"math\">\\(\\sum_{n=0}^\\infty \\frac{(-1)^n(-2)^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{1}{(n+2)}\\)</span></p>\n<p>which diverges because it is the tail of the harmonic series.</p>\n<p>So, the interval of convergence is <span class=\"math\">\\((-1,3].\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We will use the ratio test:\n\n\\begin{align*}\n\\lim_{n\\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|&=\\lim_{n\\to \\infty}\\left| \\frac{\\frac{(x-1)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(x-1)^n}{2^n(n+2)}} \\right| \\\\\n&=\\lim_{n\\to \\infty}\\frac{|x-1|(n+2)}{2\\cdot (n+3)}\\\\\n&=|\\frac{x-1}{2}|\n\\end{align*}\n\nWe want this limit to be $<1$ so that the series converges absolutely.\nThis means $|\\frac{x-1}{2}|<1$ which means that the radius of\nconvergence is $2$ and that $-1<x<3$. Now we have to test the endpoints.\n\nAt $x=3$ we get:\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n2^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{(-1)^n}{(n+2)}$\n\nwhich converges by alternate series test, if we sum two consecutive\nterms we get:\n\n$\\frac{1}{n}-\\frac{1}{n+1} = \\frac{1}{n(n+1)} <\\frac{1}{n^2}$\n\nand the series $\\sum_{n=1}^\\infty\\frac{1}{n^2}$ converges.\n\nAt $x=-1$ we get\n\n$\\sum_{n=0}^\\infty \\frac{(-1)^n(-2)^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{1}{(n+2)}$\n\nwhich diverges because it is the tail of the harmonic series.\n\nSo, the interval of convergence is $(-1,3].$"
+    ], 
+    "sols_raw": [
+        "We will use the ratio test:\n\n&lt;math> \\begin{align}\n\\lim_{n\\to \\infty} \\left|\\frac{a_{n+1}}{a_n}\\right|&amp;=\\lim_{n\\to \\infty}\\left| \\frac{\\frac{(x-1)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(x-1)^n}{2^n(n+2)}} \\right| \\\\\n&amp;=\\lim_{n\\to \\infty}\\frac{|x-1|(n+2)}{2\\cdot (n+3)}\\\\\n&amp;=|\\frac{x-1}{2}|\n\\end{align}\n&lt;/math>\n\nWe want this limit to be &lt;math> &lt;1 &lt;/math> so that the series converges absolutely. This means &lt;math> |\\frac{x-1}{2}|&lt;1 &lt;/math> which means that the radius of convergence is &lt;math> 2 &lt;/math> and that &lt;math> -1&lt;x&lt;3 &lt;/math>. Now we have to test the endpoints. \n\nAt &lt;math> x=3 &lt;/math> we get:\n\n&lt;math>\n\\sum_{n=0}^\\infty \\frac{(-1)^n2^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{(-1)^n}{(n+2)} &lt;/math>\n\nwhich converges by alternate series test, if we sum two consecutive terms we get:\n\n&lt;math> \\frac{1}{n}-\\frac{1}{n+1} = \\frac{1}{n(n+1)} &lt;\\frac{1}{n^2} &lt;/math>\n\nand the series &lt;math> \\sum_{n=1}^\\infty\\frac{1}{n^2} &lt;/math> converges.\n\n\nAt &lt;math> x=-1 &lt;/math> we get \n\n&lt;math> \n\\sum_{n=0}^\\infty \\frac{(-1)^n(-2)^n}{2^n(n+2)}=\\sum_{n=0}^\\infty \\frac{1}{(n+2)}&lt;/math>\n\nwhich diverges because it is the tail of the harmonic series. \n\nSo, the interval of convergence is &lt;math> (-1,3]. &lt;/math>\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Find, with explanation, the radius of convergence and the interval of convergence of the power series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{(x-1)^{n}}{2^{n}(n+2)}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find, with explanation, the radius of convergence and the interval of\nconvergence of the power series\n\n\\begin{align*}\n\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{(x-1)^{n}}{2^{n}(n+2)}\n\\end{align*}", 
+    "statement_raw": "Find, with explanation, the radius of convergence and the interval of convergence of the power series\n\n:&lt;math>\n\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{(x-1)^{n}}{2^{n}(n+2)}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Power_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_05", 
+    "year": 2012
 }

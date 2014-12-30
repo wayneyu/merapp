@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH101", 
-    "statement": "Calculate the integral:\n\n\\begin{align*}\\int (4-x^2)^{-3/2} dx\\end{align*}", 
-    "year": 2009, 
-    "sols": [
-        "Following the hint, we let\n\n\\begin{align*}\\displaystyle x = 2\\sin\\theta\\end{align*}\n\nThen\n\n\\begin{align*}\\displaystyle dx = 2\\cos \\theta d\\theta\\end{align*}\n\nand so we have\n\n\\begin{align*}\n\\int (4-x^2)^{-3/2} \\, dx &= \\int \\frac{dx}{\\sqrt{4-x^{2}}^{3}} \\\\ \n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}} \\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}}\\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4\\cos^{2}\\theta}^{3}}\\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{8\\cos^{3}\\theta}\\\\\n&= \\int \\frac{d\\theta}{4\\cos^{2}\\theta} \\\\\n&= \\frac{1}{4}\\int \\sec^{2}\\theta \\\\\n&= \\frac{\\tan \\theta}{4} + C\\end{align*}\n\nTo substitute back to an expression with \\emph{x} you need to undo the\noriginal substitution $\\sin\\theta = x/2.$ With the help of a little\ndiagram (included below) and the Pythagorean theorem to see that\n\n\\begin{align*}\\tan \\theta = \\frac{x}{\\sqrt{4-x^{2}}}\\end{align*}\n\nand hence\n\n\\begin{align*}\\int (4-x^2)^{-3/2} \\, dx =\\frac{\\tan \\theta}{4} + C = \\frac{x}{4\\sqrt{4-x^{2}}} + C\\end{align*}\n\ncompleting the question.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{TrigPicMATH1012009p4.jpg}\n\\caption{TrigPicMATH1012009p4.jpg}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH101/April_2009/TrigPicMATH1012009p4.jpg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2009/TrigPicMATH1012009p4.jpg}", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try a trig substitution.</p>\n", 
+        "<p>Try the substitution</p>\n<p><span class=\"math\">\\(x = 2\\sin(\\theta)\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try a trig substitution.", 
         "Try the substitution\n\n$x = 2\\sin(\\theta)$"
-    ]
+    ], 
+    "hints_raw": [
+        "Try a trig substitution.\n", 
+        "Try the substitution\n\n&lt;math>\nx = 2\\sin(\\theta)\n&lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (a)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>Following the hint, we let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x = 2\\sin\\theta\\end{aligned}\\]</span></p>\n<p>Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle dx = 2\\cos \\theta d\\theta\\end{aligned}\\]</span></p>\n<p>and so we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int (4-x^2)^{-3/2} \\, dx &amp;= \\int \\frac{dx}{\\sqrt{4-x^{2}}^{3}} \\\\ \n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}} \\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}}\\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4\\cos^{2}\\theta}^{3}}\\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{8\\cos^{3}\\theta}\\\\\n&amp;= \\int \\frac{d\\theta}{4\\cos^{2}\\theta} \\\\\n&amp;= \\frac{1}{4}\\int \\sec^{2}\\theta \\\\\n&amp;= \\frac{\\tan \\theta}{4} + C\\end{aligned}\\]</span></p>\n<p>To substitute back to an expression with <em>x</em> you need to undo the original substitution <span class=\"math\">\\(\\sin\\theta = x/2.\\)</span> With the help of a little diagram (included below) and the Pythagorean theorem to see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\tan \\theta = \\frac{x}{\\sqrt{4-x^{2}}}\\end{aligned}\\]</span></p>\n<p>and hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int (4-x^2)^{-3/2} \\, dx =\\frac{\\tan \\theta}{4} + C = \\frac{x}{4\\sqrt{4-x^{2}}} + C\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n<p><img src=\"../json_data/MATH101/April_2009/TrigPicMATH1012009p4.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "Following the hint, we let\n\n\\begin{align*}\n\\displaystyle x = 2\\sin\\theta\n\\end{align*}\n\nThen\n\n\\begin{align*}\n\\displaystyle dx = 2\\cos \\theta d\\theta\n\\end{align*}\n\nand so we have\n\n\\begin{align*}\n\\int (4-x^2)^{-3/2} \\, dx &= \\int \\frac{dx}{\\sqrt{4-x^{2}}^{3}} \\\\ \n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}} \\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}}\\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4\\cos^{2}\\theta}^{3}}\\\\\n&= \\int \\frac{2\\cos\\theta d\\theta}{8\\cos^{3}\\theta}\\\\\n&= \\int \\frac{d\\theta}{4\\cos^{2}\\theta} \\\\\n&= \\frac{1}{4}\\int \\sec^{2}\\theta \\\\\n&= \\frac{\\tan \\theta}{4} + C\n\\end{align*}\n\nTo substitute back to an expression with \\emph{x} you need to undo the\noriginal substitution $\\sin\\theta = x/2.$ With the help of a little\ndiagram (included below) and the Pythagorean theorem to see that\n\n\\begin{align*}\n\\tan \\theta = \\frac{x}{\\sqrt{4-x^{2}}}\n\\end{align*}\n\nand hence\n\n\\begin{align*}\n\\int (4-x^2)^{-3/2} \\, dx =\\frac{\\tan \\theta}{4} + C = \\frac{x}{4\\sqrt{4-x^{2}}} + C\n\\end{align*}\n\ncompleting the question.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2009/TrigPicMATH1012009p4.jpg}"
+    ], 
+    "sols_raw": [
+        "Following the hint, we let\n\n:&lt;math>\n\\displaystyle x = 2\\sin\\theta\n&lt;/math>\n\nThen\n\n:&lt;math>\n\\displaystyle dx = 2\\cos \\theta d\\theta\n&lt;/math>\n\nand so we have\n\n&lt;math>\n\\begin{align}\n\\int (4-x^2)^{-3/2} \\, dx &amp;= \\int \\frac{dx}{\\sqrt{4-x^{2}}^{3}} \\\\ \n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}} \\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4-4\\sin^{2}\\theta}^{3}}\\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{\\sqrt{4\\cos^{2}\\theta}^{3}}\\\\\n&amp;= \\int \\frac{2\\cos\\theta d\\theta}{8\\cos^{3}\\theta}\\\\\n&amp;= \\int \\frac{d\\theta}{4\\cos^{2}\\theta} \\\\\n&amp;= \\frac{1}{4}\\int \\sec^{2}\\theta \\\\\n&amp;= \\frac{\\tan \\theta}{4} + C\n\\end{align}\n&lt;/math>\n\nTo substitute back to an expression with ''x'' you need to undo the original substitution &lt;math> \\sin\\theta = x/2. &lt;/math>\nWith the help of a little diagram (included below) and the Pythagorean theorem to see that\n\n:&lt;math>\n\\tan \\theta = \\frac{x}{\\sqrt{4-x^{2}}}\n&lt;/math>\n\nand hence\n\n:&lt;math>\n\\int (4-x^2)^{-3/2} \\, dx =\\frac{\\tan \\theta}{4} + C = \\frac{x}{4\\sqrt{4-x^{2}}} + C\n&lt;/math>\n\ncompleting the question.\n\n[[File:TrigPicMATH1012009p4.jpg]]\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Calculate the integral:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int (4-x^2)^{-3/2} dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Calculate the integral:\n\n\\begin{align*}\n\\int (4-x^2)^{-3/2} dx\n\\end{align*}", 
+    "statement_raw": "Calculate the integral: \n:&lt;math>\\int (4-x^2)^{-3/2} dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Trigonometric_substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_04_(a)", 
+    "year": 2009
 }

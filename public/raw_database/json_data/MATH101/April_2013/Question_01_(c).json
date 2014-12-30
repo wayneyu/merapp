@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Questions}. Question 1-3 are short-answer\nquestions. Put your answer in the box provided. \\textbf{Simplify your\nanswer as much as possible}. Full Marks will be awarded for a correct\nanswer placed in the box. \\textbf{Show your work}, for part marks.\n\nEvaluate\n\n\\begin{align*}\\int_1^2 \\frac{dx}{x+x^2}\\end{align*}", 
-    "year": 2013, 
-    "sols": [
-        "This is a rational function, so we try partial fractions. The\nintegrand's denominator can be factored, then we apply partial fraction\ndecomposition giving\n\n\\begin{align*}\n\\frac{dx}{x+x^2} &= \\frac{1}{x(1+x)} \\\\\n&= \\frac{A}{x} + \\frac{B}{1+x}\\end{align*}\n\nCross multiplying,\n\n\\begin{align*}\n1 &= A(1+x) + Bx\\end{align*}\n\nWe can solve this several ways.\n\n(1) Setting $\\displaystyle x = 0$ we get $\\displaystyle 1 = A$, and\nsetting $\\displaystyle x = -1$ we get $\\displaystyle 1 = -B$, so\n$\\displaystyle B = -1$.\n\n(2) Comparing coefficients of the constant term, we get\n$\\displaystyle 1 = A$, and then comparing coefficients of the\n$\\displaystyle x$ term, we get $\\displaystyle 0 = A+B = 1+B$, so\n$\\displaystyle B = -1$.\n\n(3) We get $\\displaystyle A = 1$ and $\\displaystyle B = -1$ by\ninspection.\n\nNow we solve the integral:\n\n\\begin{align*}\n\\int_1^2 \\frac{dx}{x+x^2} &= \\int_1^2 \\frac{dx}{x(1+x)} \\\\\n&= \\int_1^2 \\left( \\frac1{x} + \\frac{-1}{1+x}\\right)\\,dx \\\\\n&= \\left( \\ln|x| - \\ln|1+x|\\right)\\big|_1^2 \\\\\n&= (\\ln 2 - \\ln 3) - (\\ln 1 - \\ln 2) \\\\\n&= 2\\ln 2 - \\ln 3\\end{align*}\n\nThe answer $\\ln \\frac43$ is equivalent."
+    "answer_html": "<p>The answer <span class=\"math\">\\(\\ln \\frac43\\)</span> is equivalent.</p>\n", 
+    "answer_latex": "The answer $\\ln \\frac43$ is equivalent.", 
+    "contributors": [
+        "VincentChan", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The integrand is a fraction of polynomials. What integration technique is ideal for this situation?</p>\n", 
+        "<p>Try partial fractions!</p>\n"
+    ], 
+    "hints_latex": [
         "The integrand is a fraction of polynomials. What integration technique\nis ideal for this situation?", 
         "Try partial fractions!"
-    ]
+    ], 
+    "hints_raw": [
+        "The integrand is a fraction of polynomials. What integration technique is ideal for this situation?\n", 
+        "Try partial fractions!\n"
+    ], 
+    "num_votes": 16, 
+    "question": "1 (c)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>This is a rational function, so we try partial fractions. The integrand&#8217;s denominator can be factored, then we apply partial fraction decomposition giving</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dx}{x+x^2} &amp;= \\frac{1}{x(1+x)} \\\\\n&amp;= \\frac{A}{x} + \\frac{B}{1+x}\\end{aligned}\\]</span></p>\n<p>Cross multiplying,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= A(1+x) + Bx\\end{aligned}\\]</span></p>\n<p>We can solve this several ways.</p>\n<p>(1) Setting <span class=\"math\">\\(\\displaystyle x = 0\\)</span> we get <span class=\"math\">\\(\\displaystyle 1 = A\\)</span>, and setting <span class=\"math\">\\(\\displaystyle x = -1\\)</span> we get <span class=\"math\">\\(\\displaystyle 1 = -B\\)</span>, so <span class=\"math\">\\(\\displaystyle B = -1\\)</span>.</p>\n<p>(2) Comparing coefficients of the constant term, we get <span class=\"math\">\\(\\displaystyle 1 = A\\)</span>, and then comparing coefficients of the <span class=\"math\">\\(\\displaystyle x\\)</span> term, we get <span class=\"math\">\\(\\displaystyle 0 = A+B = 1+B\\)</span>, so <span class=\"math\">\\(\\displaystyle B = -1\\)</span>.</p>\n<p>(3) We get <span class=\"math\">\\(\\displaystyle A = 1\\)</span> and <span class=\"math\">\\(\\displaystyle B = -1\\)</span> by inspection.</p>\n<p>Now we solve the integral:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^2 \\frac{dx}{x+x^2} &amp;= \\int_1^2 \\frac{dx}{x(1+x)} \\\\\n&amp;= \\int_1^2 \\left( \\frac1{x} + \\frac{-1}{1+x}\\right)\\,dx \\\\\n&amp;= \\left( \\ln|x| - \\ln|1+x|\\right)\\big|_1^2 \\\\\n&amp;= (\\ln 2 - \\ln 3) - (\\ln 1 - \\ln 2) \\\\\n&amp;= 2\\ln 2 - \\ln 3\\end{aligned}\\]</span></p>\n<p>The answer <span class=\"math\">\\(\\ln \\frac43\\)</span> is equivalent.</p>\n"
+    ], 
+    "sols_latex": [
+        "This is a rational function, so we try partial fractions. The\nintegrand's denominator can be factored, then we apply partial fraction\ndecomposition giving\n\n\\begin{align*}\n\\frac{dx}{x+x^2} &= \\frac{1}{x(1+x)} \\\\\n&= \\frac{A}{x} + \\frac{B}{1+x}\n\\end{align*}\n\nCross multiplying,\n\n\\begin{align*}\n1 &= A(1+x) + Bx\n\\end{align*}\n\nWe can solve this several ways.\n\n(1) Setting $\\displaystyle x = 0$ we get $\\displaystyle 1 = A$, and\nsetting $\\displaystyle x = -1$ we get $\\displaystyle 1 = -B$, so\n$\\displaystyle B = -1$.\n\n(2) Comparing coefficients of the constant term, we get\n$\\displaystyle 1 = A$, and then comparing coefficients of the\n$\\displaystyle x$ term, we get $\\displaystyle 0 = A+B = 1+B$, so\n$\\displaystyle B = -1$.\n\n(3) We get $\\displaystyle A = 1$ and $\\displaystyle B = -1$ by\ninspection.\n\nNow we solve the integral:\n\n\\begin{align*}\n\\int_1^2 \\frac{dx}{x+x^2} &= \\int_1^2 \\frac{dx}{x(1+x)} \\\\\n&= \\int_1^2 \\left( \\frac1{x} + \\frac{-1}{1+x}\\right)\\,dx \\\\\n&= \\left( \\ln|x| - \\ln|1+x|\\right)\\big|_1^2 \\\\\n&= (\\ln 2 - \\ln 3) - (\\ln 1 - \\ln 2) \\\\\n&= 2\\ln 2 - \\ln 3\n\\end{align*}\n\nThe answer $\\ln \\frac43$ is equivalent."
+    ], 
+    "sols_raw": [
+        "This is a rational function, so we try partial fractions. The integrand's denominator can be factored, then we apply partial fraction decomposition giving\n\n:&lt;math>\n\\displaystyle\n\\begin{align}\n\\frac{dx}{x+x^2} &amp;= \\frac{1}{x(1+x)} \\\\\n&amp; = \\frac{A}{x} + \\frac{B}{1+x}\n\\end{align}\n&lt;/math>\n\nCross multiplying,\n\n:&lt;math>\n\\displaystyle\n\\begin{align}\n1 &amp;= A(1+x) + Bx\n\\end{align}\n&lt;/math>\n\nWe can solve this several ways. \n\n(1) Setting &lt;math> \\displaystyle x = 0&lt;/math> we get &lt;math> \\displaystyle 1 = A&lt;/math>, and setting &lt;math> \\displaystyle x = -1&lt;/math> we get &lt;math> \\displaystyle 1 = -B&lt;/math>, so &lt;math> \\displaystyle B = -1&lt;/math>.\n\n(2) Comparing coefficients of the constant term, we get &lt;math> \\displaystyle 1 = A&lt;/math>, and then comparing coefficients of the &lt;math>\\displaystyle x &lt;/math> term, we get &lt;math> \\displaystyle 0 = A+B = 1+B&lt;/math>, so &lt;math> \\displaystyle B = -1&lt;/math>.\n\n(3) We get &lt;math> \\displaystyle A = 1&lt;/math> and &lt;math> \\displaystyle B = -1&lt;/math> by inspection.\n\nNow we solve the integral:\n\n:&lt;math>\n\\displaystyle\n\\begin{align}\n\\int_1^2 \\frac{dx}{x+x^2} &amp;= \\int_1^2 \\frac{dx}{x(1+x)} \\\\\n&amp;= \\int_1^2 \\left( \\frac1{x} + \\frac{-1}{1+x}\\right)\\,dx \\\\\n&amp;= \\left( \\ln|x| - \\ln|1+x|\\right)\\big|_1^2 \\\\\n&amp;= (\\ln 2 - \\ln 3) - (\\ln 1 - \\ln 2) \\\\\n&amp;= 2\\ln 2 - \\ln 3\n\\end{align}\n&lt;/math>\n\nThe answer  &lt;math>\\ln \\frac43 &lt;/math> is equivalent.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Question 1-3 are short-answer questions. Put your answer in the box provided. <strong>Simplify your answer as much as possible</strong>. Full Marks will be awarded for a correct answer placed in the box. <strong>Show your work</strong>, for part marks.</p>\n<p>Evaluate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^2 \\frac{dx}{x+x^2}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Question 1-3 are short-answer\nquestions. Put your answer in the box provided. \\textbf{Simplify your\nanswer as much as possible}. Full Marks will be awarded for a correct\nanswer placed in the box. \\textbf{Show your work}, for part marks.\n\nEvaluate\n\n\\begin{align*}\n\\int_1^2 \\frac{dx}{x+x^2}\n\\end{align*}", 
+    "statement_raw": "'''Short-Answer Questions'''. Question 1-3 are short-answer questions. Put your answer in the box provided. '''Simplify your answer as much as possible'''. Full Marks will be awarded for a correct answer placed in the box. '''Show your work''', for part marks.\n\nEvaluate\n\n:&lt;math>\n\\int_1^2 \\frac{dx}{x+x^2}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_fractions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_01_(c)", 
+    "year": 2013
 }

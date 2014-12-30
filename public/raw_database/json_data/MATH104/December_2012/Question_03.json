@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_03", 
-    "course": "MATH104", 
-    "statement": "A steel company, ABC steel, manufactures nuts and bolts. When x nuts are\nproduced, they can be sold for\n\n\\begin{align*}\\displaystyle{}-3x+500\\end{align*}\n\ndollars each. When y bolts are produced, they can be sold for\n\n\\begin{align*}\\displaystyle{}-y+300\\end{align*}\n\ndollars each.\n\nAssume that nuts and bolts weigh 0.5kg each. How many nuts and how many\nbolts must be produced to maximize the revenue from 100kg of steel?\nJustify your answer.", 
-    "year": 2012, 
-    "sols": [
-        "In this optimization problem, we want to maximize our revenue, so our\nobjective function is\n\n\\begin{align*}\nR &= (\\mbox{number of nuts sold})(\\mbox{price per nut})\\\\\n&\\,\\, + (\\mbox{number of bolts sold})(\\mbox{price per bolt})\\\\\n&= (x)(-3x + 500) + (y)(-y + 300) \\\\\n&= 500x + 300y - 3x^{2} - y^{2}.\\end{align*} Since nuts and bolts weigh 0.5kg each and we only have\n100kg of steel, our constraint becomes\n\n\\begin{align*}\\displaystyle 0.5x + 0.5y = 100.\\end{align*} Using the constraint, we can\nexpress the objective function in terms of just one variable. Solving\nfor $y$ gives $y = 200 - x$. Substituting into $R$ we get,\n\n\\begin{align*}\nR &= 500x + 300(200 - x) - 3x^{2} - (200 - x)^{2} \\\\\n&= 20000 + 600x - 4x^{2}\\end{align*} We will only concern ourselves with values of $x > 0$\nsince we can't sell negative numbers of nuts. To determine the critical\npoints, solve $R'(x) = 0$ for $x$.\n\n\\begin{align*}\n\\displaystyle{}R'(x) = 600 - 8x &=0\\\\\nx&=\\frac{600}{8}=75.\\end{align*}\n\nSince this is the only critical point of $R$, if we can show that\n$R''(75) < 0$, then $R$ has a global maximum at $x = 75$.\n\nWe have that\n\n\\begin{align*}\\displaystyle{}R''(x)=-8\\end{align*}\n\nand so $\\displaystyle {}R''(x)<0$ for all x. Therefore,\n$R''(75) = -8 < 0$, and $R$ has a global maximum at $x = 75$. The\ncorresponding value of bolts is $y = 125$. Therefore, we should sell 75\nnuts and 125 bolts to maximize revenue."
+    "answer_html": "<p>The corresponding value of bolts is <span class=\"math\">\\(y = 125\\)</span>.Therefore, we should sell 75 nuts and 125 bolts to maximize revenue.</p>\n", 
+    "answer_latex": "The\ncorresponding value of bolts is $y = 125$.Therefore, we should sell 75\nnuts and 125 bolts to maximize revenue.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember, revenue is price times quantity. What variables are the quantities, what are the prices?</p>\n", 
+        "<p>What is the constraint? How can we use it to write our objective function (revenue) in terms of one variable?</p>\n"
+    ], 
+    "hints_latex": [
         "Remember, revenue is price times quantity. What variables are the\nquantities, what are the prices?", 
         "What is the constraint? How can we use it to write our objective\nfunction (revenue) in terms of one variable?"
-    ]
+    ], 
+    "hints_raw": [
+        "Remember, revenue is price times quantity.  What variables are the quantities, what are the prices?\n", 
+        "What is the constraint?  How can we use it to write our objective function (revenue) in terms of one variable?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>In this optimization problem, we want to maximize our revenue, so our objective function is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR &amp;= (\\mbox{number of nuts sold})(\\mbox{price per nut})\\\\\n&amp;\\,\\, + (\\mbox{number of bolts sold})(\\mbox{price per bolt})\\\\\n&amp;= (x)(-3x + 500) + (y)(-y + 300) \\\\\n&amp;= 500x + 300y - 3x^{2} - y^{2}.\\end{aligned}\\]</span></p>\n<p>Since nuts and bolts weigh 0.5kg each and we only have 100kg of steel, our constraint becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 0.5x + 0.5y = 100.\\end{aligned}\\]</span></p>\n<p>Using the constraint, we can express the objective function in terms of just one variable. Solving for <span class=\"math\">\\(y\\)</span> gives <span class=\"math\">\\(y = 200 - x\\)</span>. Substituting into <span class=\"math\">\\(R\\)</span> we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR &amp;= 500x + 300(200 - x) - 3x^{2} - (200 - x)^{2} \\\\\n&amp;= 20000 + 600x - 4x^{2}\\end{aligned}\\]</span></p>\n<p>We will only concern ourselves with values of <span class=\"math\">\\(x &gt; 0\\)</span> since we can&#8217;t sell negative numbers of nuts. To determine the critical points, solve <span class=\"math\">\\(R&#39;(x) = 0\\)</span> for <span class=\"math\">\\(x\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}R&#39;(x) = 600 - 8x &amp;=0\\\\\nx&amp;=\\frac{600}{8}=75.\\end{aligned}\\]</span></p>\n<p>Since this is the only critical point of <span class=\"math\">\\(R\\)</span>, if we can show that <span class=\"math\">\\(R&#39;&#39;(75) &lt; 0\\)</span>, then <span class=\"math\">\\(R\\)</span> has a global maximum at <span class=\"math\">\\(x = 75\\)</span>.</p>\n<p>We have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}R&#39;&#39;(x)=-8\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(\\displaystyle {}R&#39;&#39;(x)&lt;0\\)</span> for all x. Therefore, <span class=\"math\">\\(R&#39;&#39;(75) = -8 &lt; 0\\)</span>, and <span class=\"math\">\\(R\\)</span> has a global maximum at <span class=\"math\">\\(x = 75\\)</span>. The corresponding value of bolts is <span class=\"math\">\\(y = 125\\)</span>. Therefore, we should sell 75 nuts and 125 bolts to maximize revenue.</p>\n"
+    ], 
+    "sols_latex": [
+        "In this optimization problem, we want to maximize our revenue, so our\nobjective function is\n\n\\begin{align*}\nR &= (\\mbox{number of nuts sold})(\\mbox{price per nut})\\\\\n&\\,\\, + (\\mbox{number of bolts sold})(\\mbox{price per bolt})\\\\\n&= (x)(-3x + 500) + (y)(-y + 300) \\\\\n&= 500x + 300y - 3x^{2} - y^{2}.\n\\end{align*} Since nuts and bolts weigh 0.5kg each and we only have\n100kg of steel, our constraint becomes\n\n\\begin{align*}\n\\displaystyle 0.5x + 0.5y = 100.\n\\end{align*} Using the constraint, we can\nexpress the objective function in terms of just one variable. Solving\nfor $y$ gives $y = 200 - x$. Substituting into $R$ we get,\n\n\\begin{align*}\nR &= 500x + 300(200 - x) - 3x^{2} - (200 - x)^{2} \\\\\n&= 20000 + 600x - 4x^{2}\n\\end{align*} We will only concern ourselves with values of $x > 0$\nsince we can't sell negative numbers of nuts. To determine the critical\npoints, solve $R'(x) = 0$ for $x$.\n\n\\begin{align*}\n\\displaystyle{}R'(x) = 600 - 8x &=0\\\\\nx&=\\frac{600}{8}=75.\n\\end{align*}\n\nSince this is the only critical point of $R$, if we can show that\n$R''(75) < 0$, then $R$ has a global maximum at $x = 75$.\n\nWe have that\n\n\\begin{align*}\n\\displaystyle{}R''(x)=-8\n\\end{align*}\n\nand so $\\displaystyle {}R''(x)<0$ for all x. Therefore,\n$R''(75) = -8 < 0$, and $R$ has a global maximum at $x = 75$. The\ncorresponding value of bolts is $y = 125$. Therefore, we should sell 75\nnuts and 125 bolts to maximize revenue."
+    ], 
+    "sols_raw": [
+        "In this optimization problem, we want to maximize our revenue, so our objective function is\n:&lt;math>\n\\begin{align}\nR &amp;= (\\mbox{number of nuts sold})(\\mbox{price per nut})\\\\\n&amp;\\,\\, + (\\mbox{number of bolts sold})(\\mbox{price per bolt})\\\\\n&amp;= (x)(-3x + 500) + (y)(-y + 300) \\\\\n&amp;= 500x + 300y - 3x^{2} - y^{2}.\n\\end{align}\n&lt;/math>\nSince nuts and bolts weigh 0.5kg each and we only have 100kg of steel, our constraint becomes\n:&lt;math>\n\\displaystyle 0.5x + 0.5y = 100.\n&lt;/math>\nUsing the constraint, we can express the objective function in terms of just one variable. Solving for &lt;math>y&lt;/math> gives &lt;math>y = 200 - x&lt;/math>. Substituting into &lt;math>R&lt;/math> we get,\n:&lt;math>\n\\begin{align}\nR &amp;= 500x + 300(200 - x) - 3x^{2} - (200 - x)^{2} \\\\\n&amp;= 20000 + 600x - 4x^{2}\n\\end{align}\n&lt;/math>\nWe will only concern ourselves with values of &lt;math>x > 0&lt;/math> since we can't sell negative numbers of nuts. To determine the critical points, solve &lt;math>R'(x) = 0&lt;/math> for &lt;math>x&lt;/math>.\n:&lt;math>\n\\begin{align}\n\\displaystyle{}R'(x) = 600 - 8x &amp;=0\\\\\nx&amp;=\\frac{600}{8}=75.\n\\end{align}\n&lt;/math>\n\nSince this is the only critical point of &lt;math>R&lt;/math>, if we can show that &lt;math>R''(75) &lt; 0&lt;/math>, then &lt;math>R&lt;/math> has a global maximum at &lt;math>x = 75&lt;/math>.\n\nWe have that\n:&lt;math>\n\\displaystyle{}R''(x)=-8\n&lt;/math>\n\nand so &lt;math>\\displaystyle{}R''(x)&lt;0&lt;/math> for all x.  Therefore, &lt;math>R''(75) = -8 &lt; 0&lt;/math>, and &lt;math>R&lt;/math> has a global maximum at &lt;math>x = 75&lt;/math>. The corresponding value of bolts is &lt;math>y = 125&lt;/math>. &lt;span style=color:#0000FF>Therefore, we should sell 75 nuts and 125 bolts to maximize revenue.&lt;/span>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>A steel company, ABC steel, manufactures nuts and bolts. When x nuts are produced, they can be sold for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}-3x+500\\end{aligned}\\]</span></p>\n<p>dollars each. When y bolts are produced, they can be sold for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}-y+300\\end{aligned}\\]</span></p>\n<p>dollars each.</p>\n<p>Assume that nuts and bolts weigh 0.5kg each. How many nuts and how many bolts must be produced to maximize the revenue from 100kg of steel? Justify your answer.</p>\n", 
+    "statement_latex": "A steel company, ABC steel, manufactures nuts and bolts. When x nuts are\nproduced, they can be sold for\n\n\\begin{align*}\n\\displaystyle{}-3x+500\n\\end{align*}\n\ndollars each. When y bolts are produced, they can be sold for\n\n\\begin{align*}\n\\displaystyle{}-y+300\n\\end{align*}\n\ndollars each.\n\nAssume that nuts and bolts weigh 0.5kg each. How many nuts and how many\nbolts must be produced to maximize the revenue from 100kg of steel?\nJustify your answer.", 
+    "statement_raw": "A steel company, ABC steel, manufactures nuts and bolts.  When x nuts are produced, they can be sold for\n\n:&lt;math>\n\\displaystyle{}-3x+500\n&lt;/math>\n\ndollars each.  When y bolts are produced, they can be sold for\n\n:&lt;math>\n\\displaystyle{}-y+300\n&lt;/math>\n\ndollars each.\n\nAssume that nuts and bolts weigh 0.5kg each.  How many nuts and how many bolts must be produced to maximize the revenue from 100kg of steel?  Justify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_03", 
+    "year": 2012
 }

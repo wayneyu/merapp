@@ -1,15 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH307", 
-    "statement": "Let\n\n\\begin{align*}A = \\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & a & 0 \\\\\n0 & 0 & 2\n\\end{bmatrix}\\end{align*}\n\nwhere \\emph{a} is a real number.\n\n\\textbf{(a)} For what values of \\emph{a} (if any) does the norm have the\nvalue $\\|A\\| = 2$?", 
-    "year": 2010, 
-    "sols": [
-        "Since the matrix norm of a diagonal matrix with diagonal entries\n$\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}$ is the largest\nvalue of $\\left | \\lambda _{k} \\right |$, if $\\left | a \\right |\\leq 2$,\nthen $\\left \\| A \\right \\| =2$.", 
-        "The matrix norm is given by\n\n$\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel$\n\nLet $\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nx_2\\\\ \n\nx_3\\end{pmatrix}$, where $\\parallel \\vec{x}\\parallel = 1$\n\nFor $A = \\begin{bmatrix}\n1 & 0 & 0\\\\ \n0& a & 0\\\\ \n0 & 0 & 2\n\\end{bmatrix}$\n\n$A\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nax_2\\\\ \n\n2x_3\\end{pmatrix}$\n\nSo,\n\n\\begin{align*}\n\\parallel A\\vec{x} \\parallel &= (x_1^2 + a^2x_2^2 + 4x_3^2)^{0.5} \\leqslant (\\max\\{1,a^2,4\\}(x_1^2+x_2^2+x_3^2))^{0.5}\\\\\n&= \\max\\{1, |a|, 2 \\}(x_1^2 + x_2^2 + x_3^2)^{0.5} \\\\\n&= \\max\\{1, |a|, 2 \\}\\end{align*}\n\nNotice that each of these values is obtained by taking our vector\n\\emph{x} to be one of the unit basis vectors. Thus for any unit vector\n$\\vec{x}$ we have established that\n$\\parallel A \\parallel = \\max\\{1,|a|,2\\}$.\n\nGoing by this,\n$\\parallel  A \\parallel = 2 \\Leftrightarrow |a| \\leqslant 2$\n\nThe vector $\\vec{x}$ that will maximize the magnitude of\n$|| A\\vec{x} ||$ in this example is $\\begin{pmatrix}\n0\\\\ \n0\\\\ \n\n1\\end{pmatrix}$ if $\\displaystyle |a| \\leq 2$"
+    "answer_html": "<p>Since the matrix norm of a diagonal matrix with diagonal entries <span class=\"math\">\\(\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}\\)</span> is the largest value of <span class=\"math\">\\(\\left | \\lambda _{k} \\right |\\)</span>, if <span class=\"math\">\\(\\left | a \\right |\\leq 2\\)</span>, then <span class=\"math\">\\(\\left \\| A \\right \\| =2\\)</span>.</p>\n", 
+    "answer_latex": "Since the matrix norm of a diagonal matrix with diagonal entries\n$\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}$ is the largest\nvalue of $\\left | \\lambda _{k} \\right |$, if $\\left | a \\right |\\leq 2$,\nthen $\\left \\| A \\right \\| =2$.", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>In this special case, the matrix norm of a diagonal matrix with diagonal entries <span class=\"math\">\\(\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}\\)</span> can be easily computed.</p>\n", 
+        "<p>It is also possible to directly use the definition of the matrix norm, which is given by</p>\n<p><span class=\"math\">\\(\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "In this special case, the matrix norm of a diagonal matrix with diagonal\nentries $\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}$ can be\neasily computed.", 
         "It is also possible to directly use the definition of the matrix norm,\nwhich is given by\n\n$\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel$"
-    ]
+    ], 
+    "hints_raw": [
+        "In this special case, the matrix norm of a diagonal matrix with diagonal entries &lt;math> \\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}&lt;/math> can be easily computed.\n", 
+        "It is also possible to directly use the definition of the matrix norm, which is given by\n\n&lt;math>\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since the matrix norm of a diagonal matrix with diagonal entries <span class=\"math\">\\(\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}\\)</span> is the largest value of <span class=\"math\">\\(\\left | \\lambda _{k} \\right |\\)</span>, if <span class=\"math\">\\(\\left | a \\right |\\leq 2\\)</span>, then <span class=\"math\">\\(\\left \\| A \\right \\| =2\\)</span>.</p>\n", 
+        "<p>The matrix norm is given by</p>\n<p><span class=\"math\">\\(\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel\\)</span></p>\n<p>Let <span class=\"math\">\\(\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nx_2\\\\ \n\nx_3\\end{pmatrix}\\)</span>, where <span class=\"math\">\\(\\parallel \\vec{x}\\parallel = 1\\)</span></p>\n<p>For <span class=\"math\">\\(A = \\begin{bmatrix}\n1 &amp; 0 &amp; 0\\\\ \n0&amp; a &amp; 0\\\\ \n0 &amp; 0 &amp; 2\n\\end{bmatrix}\\)</span></p>\n<p><span class=\"math\">\\(A\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nax_2\\\\ \n\n2x_3\\end{pmatrix}\\)</span></p>\n<p>So,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\parallel A\\vec{x} \\parallel &amp;= (x_1^2 + a^2x_2^2 + 4x_3^2)^{0.5} \\leqslant (\\max\\{1,a^2,4\\}(x_1^2+x_2^2+x_3^2))^{0.5}\\\\\n&amp;= \\max\\{1, |a|, 2 \\}(x_1^2 + x_2^2 + x_3^2)^{0.5} \\\\\n&amp;= \\max\\{1, |a|, 2 \\}\\end{aligned}\\]</span></p>\n<p>Notice that each of these values is obtained by taking our vector <em>x</em> to be one of the unit basis vectors. Thus for any unit vector <span class=\"math\">\\(\\vec{x}\\)</span> we have established that <span class=\"math\">\\(\\parallel A \\parallel = \\max\\{1,|a|,2\\}\\)</span>.</p>\n<p>Going by this, <span class=\"math\">\\(\\parallel  A \\parallel = 2 \\Leftrightarrow |a| \\leqslant 2\\)</span></p>\n<p>The vector <span class=\"math\">\\(\\vec{x}\\)</span> that will maximize the magnitude of <span class=\"math\">\\(|| A\\vec{x} ||\\)</span> in this example is <span class=\"math\">\\(\\begin{pmatrix}\n0\\\\ \n0\\\\ \n\n1\\end{pmatrix}\\)</span> if <span class=\"math\">\\(\\displaystyle |a| \\leq 2\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since the matrix norm of a diagonal matrix with diagonal entries\n$\\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}$ is the largest\nvalue of $\\left | \\lambda _{k} \\right |$, if $\\left | a \\right |\\leq 2$,\nthen $\\left \\| A \\right \\| =2$.", 
+        "The matrix norm is given by\n\n$\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel$\n\nLet $\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nx_2\\\\ \n\nx_3\\end{pmatrix}$, where $\\parallel \\vec{x}\\parallel = 1$\n\nFor $A = \\begin{bmatrix}\n1 & 0 & 0\\\\ \n0& a & 0\\\\ \n0 & 0 & 2\n\\end{bmatrix}$\n\n$A\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nax_2\\\\ \n\n2x_3\\end{pmatrix}$\n\nSo,\n\n\\begin{align*}\n\\parallel A\\vec{x} \\parallel &= (x_1^2 + a^2x_2^2 + 4x_3^2)^{0.5} \\leqslant (\\max\\{1,a^2,4\\}(x_1^2+x_2^2+x_3^2))^{0.5}\\\\\n&= \\max\\{1, |a|, 2 \\}(x_1^2 + x_2^2 + x_3^2)^{0.5} \\\\\n&= \\max\\{1, |a|, 2 \\}\n\\end{align*}\n\nNotice that each of these values is obtained by taking our vector\n\\emph{x} to be one of the unit basis vectors. Thus for any unit vector\n$\\vec{x}$ we have established that\n$\\parallel A \\parallel = \\max\\{1,|a|,2\\}$.\n\nGoing by this,\n$\\parallel  A \\parallel = 2 \\Leftrightarrow |a| \\leqslant 2$\n\nThe vector $\\vec{x}$ that will maximize the magnitude of\n$|| A\\vec{x} ||$ in this example is $\\begin{pmatrix}\n0\\\\ \n0\\\\ \n\n1\\end{pmatrix}$ if $\\displaystyle |a| \\leq 2$"
+    ], 
+    "sols_raw": [
+        "Since the matrix norm of a diagonal matrix with diagonal entries &lt;math> \\displaystyle \\lambda_1, \\lambda_2,.....,\\lambda_{n}&lt;/math> is the largest value of &lt;math>\\left | \\lambda _{k} \\right |&lt;/math>, if &lt;math>\\left | a \\right |\\leq 2&lt;/math>, then &lt;math>\\left \\| A \\right \\| =2&lt;/math>.\n", 
+        "The matrix norm is given by\n\n&lt;math>\\parallel A\\parallel = \\max_{\\vec{x},\\parallel \\vec{x}\\parallel = 1}\\parallel A\\vec{x}\\parallel&lt;/math>\n\nLet &lt;math>\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nx_2\\\\ \n\nx_3\\end{pmatrix}&lt;/math>, where &lt;math>\\parallel \\vec{x}\\parallel = 1&lt;/math>\n\nFor &lt;math>A = \\begin{bmatrix}\n1 &amp; 0 &amp; 0\\\\ \n0&amp; a &amp; 0\\\\ \n0 &amp; 0 &amp; 2\n\\end{bmatrix}&lt;/math>\n\n&lt;math>A\\vec{x} = \\begin{pmatrix}\nx_1\\\\ \nax_2\\\\ \n\n2x_3\\end{pmatrix}&lt;/math>\n\nSo,\n\n&lt;math>\n\\begin{align}\n\\parallel A\\vec{x} \\parallel &amp;= (x_1^2 + a^2x_2^2 + 4x_3^2)^{0.5} \\leqslant (\\max\\{1,a^2,4\\}(x_1^2+x_2^2+x_3^2))^{0.5}\\\\\n&amp;= \\max\\{1, |a|, 2 \\}(x_1^2 + x_2^2 + x_3^2)^{0.5} \\\\\n&amp;= \\max\\{1, |a|, 2 \\}\n\\end{align}\n&lt;/math>\n\nNotice that each of these values is obtained by taking our vector ''x'' to be one of the unit basis vectors. Thus for any unit vector &lt;math>\\vec{x}&lt;/math> we have established that &lt;math>\\parallel A \\parallel = \\max\\{1,|a|,2\\}&lt;/math>.\n\nGoing by this, &lt;math> \\parallel  A \\parallel = 2 \\Leftrightarrow |a| \\leqslant 2&lt;/math>\n\nThe vector &lt;math>\\vec{x}&lt;/math> that will maximize the magnitude of &lt;math>|| A\\vec{x} ||&lt;/math> in this example is &lt;math>\\begin{pmatrix}\n0\\\\ \n0\\\\ \n\n1\\end{pmatrix}&lt;/math> if &lt;math>\\displaystyle |a| \\leq 2 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\begin{bmatrix}\n1 &amp; 0 &amp; 0 \\\\\n0 &amp; a &amp; 0 \\\\\n0 &amp; 0 &amp; 2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>where <em>a</em> is a real number.</p>\n<p><strong>(a)</strong> For what values of <em>a</em> (if any) does the norm have the value <span class=\"math\">\\(\\|A\\| = 2\\)</span>?</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nA = \\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & a & 0 \\\\\n0 & 0 & 2\n\\end{bmatrix}\n\\end{align*}\n\nwhere \\emph{a} is a real number.\n\n\\textbf{(a)} For what values of \\emph{a} (if any) does the norm have the\nvalue $\\|A\\| = 2$?", 
+    "statement_raw": "Let\n\n:&lt;math>\nA = \\begin{bmatrix}\n1 &amp; 0 &amp; 0 \\\\\n0 &amp; a &amp; 0 \\\\\n0 &amp; 0 &amp; 2\n\\end{bmatrix}\n&lt;/math>\n\nwhere ''a'' is a real number.\n\n'''(a)''' For what values of ''a'' (if any) does the norm have the value &lt;math>\\|A\\| = 2&lt;/math>?\n", 
+    "term": "December", 
+    "topics": [
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(a)", 
+    "year": 2010
 }

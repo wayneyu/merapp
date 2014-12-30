@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
+    "answer_html": "<p>Then there is at least one number c in <span class=\"math\">\\([a,b]\\)</span> satisfying <span class=\"math\">\\(f(c) = L\\)</span>.</p>\n", 
+    "answer_latex": "Then there is at least one number\nc in $[a,b]$ satisfying $f(c) = L$.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH110", 
-    "statement": "Complete the statement of the Intermediate Value Theorem by filling in\nthe blanks: Suppose the function $f$ is continuous on the interval\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ and $L$ is a number between $f(a)$ and $f(b)$.\nThen there is at least one number \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ in $[a,b]$\nsatisfying $f(c) = L$.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Which letters appear in the conclusion of the theorem? Where do they belong in the opening statement of the theorem?</p>\n"
+    ], 
+    "hints_latex": [
+        "Which letters appear in the conclusion of the theorem? Where do they\nbelong in the opening statement of the theorem?"
+    ], 
+    "hints_raw": [
+        "Which letters appear in the conclusion of the theorem?  Where do they belong in the opening statement of the theorem?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "3 (a)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>Suppose the function <span class=\"math\">\\(f\\)</span> is continuous on the interval <span>[</span>a,b<span>]</span> and <span class=\"math\">\\(L\\)</span> is a number between <span class=\"math\">\\(f(a)\\)</span> and <span class=\"math\">\\(f(b)\\)</span>. Then there is at least one number c in <span class=\"math\">\\([a,b]\\)</span> satisfying <span class=\"math\">\\(f(c) = L\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "Suppose the function $f$ is continuous on the interval {[}a,b{]} and $L$\nis a number between $f(a)$ and $f(b)$. Then there is at least one number\nc in $[a,b]$ satisfying $f(c) = L$."
     ], 
-    "hints": [
-        "Which letters appear in the conclusion of the theorem? Where do they\nbelong in the opening statement of the theorem?"
-    ]
+    "sols_raw": [
+        "Suppose the function &lt;math>f&lt;/math> is continuous on the interval &lt;b>[a,b]&lt;/b> and &lt;math>L&lt;/math> is a number between &lt;math>f(a)&lt;/math> and &lt;math>f(b)&lt;/math>.  Then there is at least one number &lt;b>c&lt;/b> in &lt;math>[a,b]&lt;/math> satisfying &lt;math>f(c) = L&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Complete the statement of the Intermediate Value Theorem by filling in the blanks: Suppose the function <span class=\"math\">\\(f\\)</span> is continuous on the interval ____________ and <span class=\"math\">\\(L\\)</span> is a number between <span class=\"math\">\\(f(a)\\)</span> and <span class=\"math\">\\(f(b)\\)</span>. Then there is at least one number _____________ in <span class=\"math\">\\([a,b]\\)</span> satisfying <span class=\"math\">\\(f(c) = L\\)</span>.</p>\n", 
+    "statement_latex": "Complete the statement of the Intermediate Value Theorem by filling in\nthe blanks: Suppose the function $f$ is continuous on the interval\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ and $L$ is a number between $f(a)$ and $f(b)$.\nThen there is at least one number \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ in $[a,b]$\nsatisfying $f(c) = L$.", 
+    "statement_raw": "Complete the statement of the Intermediate Value Theorem by filling in the blanks:\nSuppose the function &lt;math>f&lt;/math> is continuous on the interval ____________ and &lt;math>L&lt;/math> is a number between &lt;math>f(a)&lt;/math> and &lt;math>f(b)&lt;/math>.  Then there is at least one number _____________ in &lt;math>[a,b]&lt;/math> satisfying &lt;math>f(c) = L&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Intermediate_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_03_(a)", 
+    "year": 2010
 }

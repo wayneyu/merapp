@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
-    "course": "MATH221", 
-    "statement": "Consider the matrix\n\n\\begin{align*}A = \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array} \\right]\\end{align*} Compute $\\det(B)$ where $B = A^2 + 3A + 2I$.", 
-    "year": 2011, 
-    "sols": [
-        "First, let's compute the matrix \\emph{B}\n\n\\begin{align*}\nB &= A^2 + 3A + 2I \\\\\n&= \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right]\\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right] + 3 \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right] + 2 \\left[ \\begin{array}{cc}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n&= \\left[ \\begin{array}{cc}\n4 & 0 \\\\\n0 & 4\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n-18 & 24 \\\\\n-12 & 18\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n2 & 0 \\\\\n0 & 2\n\\end{array}\\right] \\\\\n&= \\left[ \\begin{array}{cc}\n-12 & 24 \\\\\n-12 & 24\n\\end{array}\\right]\\end{align*}\n\nAnd clearly this matrix has determinant zero.", 
-        "\\textbf{Note: this is a more fancy solution, no worries if you don't\nlike it as much.}\n\nThe matrix \\emph{B} is a polynomial in the matrix \\emph{A} that we can\nfactor as\n\n\\begin{align*}\nB &= A^2 + 3A + 2I \\\\\n&= (A+I)(A+2I)\\end{align*} And since the determinant is multiplicative, we have that\n\n\\begin{align*}\n\\det(B) &= \\det((A+I)(A+2I)) \\\\\n&= \\det(A+I) \\det(A+2I)\\end{align*}\n\nNow in\n\\href{Science:Math Exam Resources/Courses/MATH221/December 2011/Question_3_(a)}{part\n(a)} we saw that -2 is an eigenvalue and hence the determinant of $A+2I$\nis zero and thus so is the determinant of the matrix \\emph{B}."
+    "answer_html": "<p><span class=\"math\">\\(B=\\left[ \\begin{array}{cc}\n-12  24 \\\\\n-12  24\n\\end{array}\\right]\\)</span> And clearly this matrix has determinant zero.</p>\n", 
+    "answer_latex": " $B=\\left[ \\begin{array}{cc}\n-12  24 \\\\\n-12  24\n\\end{array}\\right]$ And clearly this matrix has determinant zero.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Nothing fancy here, just a straight up computation.</p>\n"
+    ], 
+    "hints_latex": [
         "Nothing fancy here, just a straight up computation."
-    ]
+    ], 
+    "hints_raw": [
+        "Nothing fancy here, just a straight up computation.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, let&#8217;s compute the matrix <em>B</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB &amp;= A^2 + 3A + 2I \\\\\n&amp;= \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right]\\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right] + 3 \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right] + 2 \\left[ \\begin{array}{cc}\n1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right] \\\\\n&amp;= \\left[ \\begin{array}{cc}\n4 &amp; 0 \\\\\n0 &amp; 4\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n-18 &amp; 24 \\\\\n-12 &amp; 18\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n2 &amp; 0 \\\\\n0 &amp; 2\n\\end{array}\\right] \\\\\n&amp;= \\left[ \\begin{array}{cc}\n-12 &amp; 24 \\\\\n-12 &amp; 24\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>And clearly this matrix has determinant zero.</p>\n", 
+        "<p><strong>Note: this is a more fancy solution, no worries if you don&#8217;t like it as much.</strong></p>\n<p>The matrix <em>B</em> is a polynomial in the matrix <em>A</em> that we can factor as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB &amp;= A^2 + 3A + 2I \\\\\n&amp;= (A+I)(A+2I)\\end{aligned}\\]</span></p>\n<p>And since the determinant is multiplicative, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\det(B) &amp;= \\det((A+I)(A+2I)) \\\\\n&amp;= \\det(A+I) \\det(A+2I)\\end{aligned}\\]</span></p>\n<p>Now in <span>part (a)</span> we saw that -2 is an eigenvalue and hence the determinant of <span class=\"math\">\\(A+2I\\)</span> is zero and thus so is the determinant of the matrix <em>B</em>.</p>\n"
+    ], 
+    "sols_latex": [
+        "First, let's compute the matrix \\emph{B}\n\n\\begin{align*}\nB &= A^2 + 3A + 2I \\\\\n&= \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right]\\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right] + 3 \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array}\\right] + 2 \\left[ \\begin{array}{cc}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n&= \\left[ \\begin{array}{cc}\n4 & 0 \\\\\n0 & 4\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n-18 & 24 \\\\\n-12 & 18\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n2 & 0 \\\\\n0 & 2\n\\end{array}\\right] \\\\\n&= \\left[ \\begin{array}{cc}\n-12 & 24 \\\\\n-12 & 24\n\\end{array}\\right]\n\\end{align*}\n\nAnd clearly this matrix has determinant zero.", 
+        "\\textbf{Note: this is a more fancy solution, no worries if you don't\nlike it as much.}\n\nThe matrix \\emph{B} is a polynomial in the matrix \\emph{A} that we can\nfactor as\n\n\\begin{align*}\nB &= A^2 + 3A + 2I \\\\\n&= (A+I)(A+2I)\n\\end{align*} And since the determinant is multiplicative, we have that\n\n\\begin{align*}\n\\det(B) &= \\det((A+I)(A+2I)) \\\\\n&= \\det(A+I) \\det(A+2I)\n\\end{align*}\n\nNow in\n{part\n(a)} we saw that -2 is an eigenvalue and hence the determinant of $A+2I$\nis zero and thus so is the determinant of the matrix \\emph{B}."
+    ], 
+    "sols_raw": [
+        "First, let's compute the matrix ''B''\n:&lt;math>\\begin{align}\nB &amp;= A^2 + 3A + 2I \\\\\n&amp;= \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right]\\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right] + 3 \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array}\\right] + 2 \\left[ \\begin{array}{cc}\n1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right] \\\\\n&amp;= \\left[ \\begin{array}{cc}\n4 &amp; 0 \\\\\n0 &amp; 4\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n-18 &amp; 24 \\\\\n-12 &amp; 18\n\\end{array}\\right] + \\left[ \\begin{array}{cc}\n2 &amp; 0 \\\\\n0 &amp; 2\n\\end{array}\\right] \\\\\n&amp;= \\left[ \\begin{array}{cc}\n-12 &amp; 24 \\\\\n-12 &amp; 24\n\\end{array}\\right]\n\\end{align}&lt;/math>\n\nAnd clearly this matrix has determinant zero.\n", 
+        "'''Note: this is a more fancy solution, no worries if you don't like it as much.'''\n\nThe matrix ''B'' is a polynomial in the matrix ''A'' that we can factor as\n:&lt;math>\\begin{align}\nB &amp;= A^2 + 3A + 2I \\\\\n&amp;= (A+I)(A+2I)\n\\end{align}&lt;/math>\nAnd since the determinant is multiplicative, we have that\n:&lt;math>\\begin{align}\n\\det(B) &amp;= \\det((A+I)(A+2I)) \\\\\n&amp;= \\det(A+I) \\det(A+2I)\n\\end{align}&lt;/math>\n\nNow in [[Science:Math Exam Resources/Courses/MATH221/December 2011/Question_3_(a)|part (a)]] we saw that -2 is an eigenvalue and hence the determinant of &lt;math>A+2I&lt;/math> is zero and thus so is the determinant of the matrix ''B''.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Consider the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array} \\right]\\end{aligned}\\]</span></p>\n<p>Compute <span class=\"math\">\\(\\det(B)\\)</span> where <span class=\"math\">\\(B = A^2 + 3A + 2I\\)</span>.</p>\n", 
+    "statement_latex": "Consider the matrix\n\n\\begin{align*}\nA = \\left[ \\begin{array}{cc}\n-6 & 8 \\\\\n-4 & 6\n\\end{array} \\right]\n\\end{align*} Compute $\\det(B)$ where $B = A^2 + 3A + 2I$.", 
+    "statement_raw": "Consider the matrix\n:&lt;math>\nA = \\left[ \\begin{array}{cc}\n-6 &amp; 8 \\\\\n-4 &amp; 6\n\\end{array} \\right]\n&lt;/math>\nCompute &lt;math>\\det(B)&lt;/math> where &lt;math>B = A^2 + 3A + 2I&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/December_2011/Question_03_(b)", 
+    "year": 2011
 }

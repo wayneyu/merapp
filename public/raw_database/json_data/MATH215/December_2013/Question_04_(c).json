@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_04_(c)", 
-    "course": "MATH215", 
-    "statement": "Let $Y(s) = \\mathcal{L}[y]$ be the Laplace transform of the solution\n$y(t)$ to the following initial value problem:\n\n\\begin{align*}\\begin{cases} y'' - 2y' + y = g(t), \\\\ y(0) = 0, y'(0) = 1 \\end{cases}\\end{align*}\n\nwhere $g(t)$ is the function defined in\n\\href{Science:Math Exam Resources/Courses/MATH215/December 2013/Question 04 (a)}{(a)}:\n\n\\begin{align*}g(t) = \\begin{cases} 0, \\quad t < 1 \\\\ e^{t-1}, \\quad t \\geq 1 \\end{cases}\\end{align*}\n\n(c) Calculate the inverse Laplace transform of \\emph{Y(s)} obtained in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)}{(b)}\nto find the solution, \\emph{y(t)}, to the IVP in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)}{(b)}.", 
-    "year": 2013, 
-    "sols": [
-        "We have $Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2}$ and we need\nto find $y(t) = \\mathcal{L}^{-1} (Y(s))$.\n\nThe most important thing here is finding a function $f(t)$ such that\n$\\mathcal{L}(f(t)) = 1/(s-a)^n$. The key identity to realize is that\n$\\mathcal{L}(t^n f(t)) = (-1)^n \\frac{d^n}{ds^n} F(s)$.\n\nWith this knowledge, since $\\mathcal{L}(e^{t}) = 1/(s-1)$, we have\n$\\mathcal{L}(t e^t) = (-1)(-1/(s-1)^2) = 1/(s-1)^2$ and\n$\\mathcal{L}(t^2 e^t) = 2/(s-1)^3$ (note the factor of 2!). Then\n\n\\begin{align*}Y(s) = e^{-s} \\mathcal{L} (\\frac{1}{2} t^2 e^t) + \\mathcal{L} (t e^t).\\end{align*}\n\nWe use one more identity that\n$\\mathcal{L} (u(t-a) f(t-a)) = e^{-as} F(s)$ which allows us to invert\nthe first term (using a=1) on the right-hand side. We find\n\n\\begin{align*}y(t) = u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(y(t)=u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.\\)</span></p>\n", 
+    "answer_latex": " $y(t)=u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>You can start by trying to find the inverse Laplace transform of <span class=\"math\">\\(1/(s-1)^2\\)</span> and <span class=\"math\">\\(1/(s-1)^3\\)</span>. These inverse transforms can be derived by looking at <span class=\"math\">\\(\\mathcal{L}(e^{at})\\)</span> and <span class=\"math\">\\(\\mathcal{L}(t^n e^{at})\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "You can start by trying to find the inverse Laplace transform of\n$1/(s-1)^2$ and $1/(s-1)^3$. These inverse transforms can be derived by\nlooking at $\\mathcal{L}(e^{at})$ and $\\mathcal{L}(t^n e^{at})$."
-    ]
+    ], 
+    "hints_raw": [
+        "You can start by trying to find the inverse Laplace transform of &lt;math>1/(s-1)^2&lt;/math> and &lt;math>1/(s-1)^3&lt;/math>. These inverse transforms can be derived by looking at &lt;math>\\mathcal{L}(e^{at})&lt;/math> and &lt;math>\\mathcal{L}(t^n e^{at})&lt;/math>.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "4 (c)", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>We have <span class=\"math\">\\(Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2}\\)</span> and we need to find <span class=\"math\">\\(y(t) = \\mathcal{L}^{-1} (Y(s))\\)</span>.</p>\n<p>The most important thing here is finding a function <span class=\"math\">\\(f(t)\\)</span> such that <span class=\"math\">\\(\\mathcal{L}(f(t)) = 1/(s-a)^n\\)</span>. The key identity to realize is that <span class=\"math\">\\(\\mathcal{L}(t^n f(t)) = (-1)^n \\frac{d^n}{ds^n} F(s)\\)</span>.</p>\n<p>With this knowledge, since <span class=\"math\">\\(\\mathcal{L}(e^{t}) = 1/(s-1)\\)</span>, we have <span class=\"math\">\\(\\mathcal{L}(t e^t) = (-1)(-1/(s-1)^2) = 1/(s-1)^2\\)</span> and <span class=\"math\">\\(\\mathcal{L}(t^2 e^t) = 2/(s-1)^3\\)</span> (note the factor of 2!). Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nY(s) = e^{-s} \\mathcal{L} (\\frac{1}{2} t^2 e^t) + \\mathcal{L} (t e^t).\\end{aligned}\\]</span></p>\n<p>We use one more identity that <span class=\"math\">\\(\\mathcal{L} (u(t-a) f(t-a)) = e^{-as} F(s)\\)</span> which allows us to invert the first term (using a=1) on the right-hand side. We find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We have $Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2}$ and we need\nto find $y(t) = \\mathcal{L}^{-1} (Y(s))$.\n\nThe most important thing here is finding a function $f(t)$ such that\n$\\mathcal{L}(f(t)) = 1/(s-a)^n$. The key identity to realize is that\n$\\mathcal{L}(t^n f(t)) = (-1)^n \\frac{d^n}{ds^n} F(s)$.\n\nWith this knowledge, since $\\mathcal{L}(e^{t}) = 1/(s-1)$, we have\n$\\mathcal{L}(t e^t) = (-1)(-1/(s-1)^2) = 1/(s-1)^2$ and\n$\\mathcal{L}(t^2 e^t) = 2/(s-1)^3$ (note the factor of 2!). Then\n\n\\begin{align*}\nY(s) = e^{-s} \\mathcal{L} (\\frac{1}{2} t^2 e^t) + \\mathcal{L} (t e^t).\n\\end{align*}\n\nWe use one more identity that\n$\\mathcal{L} (u(t-a) f(t-a)) = e^{-as} F(s)$ which allows us to invert\nthe first term (using a=1) on the right-hand side. We find\n\n\\begin{align*}\ny(t) = u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We have &lt;math>Y(s) = \\frac{e^{-s}}{(s-1)^3} + \\frac{1}{(s-1)^2} &lt;/math> and we need to find &lt;math>y(t) = \\mathcal{L}^{-1} (Y(s))&lt;/math>.\n\nThe most important thing here is finding a function &lt;math>f(t)&lt;/math> such that &lt;math>\\mathcal{L}(f(t)) = 1/(s-a)^n&lt;/math>. The key identity to realize is that &lt;math>\\mathcal{L}(t^n f(t)) = (-1)^n \\frac{d^n}{ds^n} F(s)&lt;/math>.\n\nWith this knowledge, since &lt;math>\\mathcal{L}(e^{t}) = 1/(s-1)&lt;/math>, we have &lt;math>\\mathcal{L}(t e^t) = (-1)(-1/(s-1)^2) = 1/(s-1)^2&lt;/math> and &lt;math>\\mathcal{L}(t^2 e^t) = 2/(s-1)^3&lt;/math> (note the factor of 2!). Then\n\n:&lt;math>Y(s) = e^{-s} \\mathcal{L} (\\frac{1}{2} t^2 e^t) + \\mathcal{L} (t e^t)&lt;/math>.\n\nWe use one more identity that &lt;math>\\mathcal{L} (u(t-a) f(t-a)) = e^{-as} F(s)&lt;/math> which allows us to invert the first term (using a=1) on the right-hand side. We find\n\n:&lt;math>y(t) = u(t-1) \\frac{1}{2} (t-1)^2 e^{t-1} + t e^t&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(Y(s) = \\mathcal{L}[y]\\)</span> be the Laplace transform of the solution <span class=\"math\">\\(y(t)\\)</span> to the following initial value problem:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases} y&#39;&#39; - 2y&#39; + y = g(t), \\\\ y(0) = 0, y&#39;(0) = 1 \\end{cases}\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(g(t)\\)</span> is the function defined in <span>(a)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(t) = \\begin{cases} 0, \\quad t &lt; 1 \\\\ e^{t-1}, \\quad t \\geq 1 \\end{cases}\\end{aligned}\\]</span></p>\n<p>(c) Calculate the inverse Laplace transform of <em>Y(s)</em> obtained in <span>(b)</span> to find the solution, <em>y(t)</em>, to the IVP in <span>(b)</span>.</p>\n", 
+    "statement_latex": "Let $Y(s) = \\mathcal{L}[y]$ be the Laplace transform of the solution\n$y(t)$ to the following initial value problem:\n\n\\begin{align*}\n\\begin{cases} y'' - 2y' + y = g(t), \\\\ y(0) = 0, y'(0) = 1 \\end{cases}\n\\end{align*}\n\nwhere $g(t)$ is the function defined in\n{(a)}:\n\n\\begin{align*}\ng(t) = \\begin{cases} 0, \\quad t < 1 \\\\ e^{t-1}, \\quad t \\geq 1 \\end{cases}\n\\end{align*}\n\n(c) Calculate the inverse Laplace transform of \\emph{Y(s)} obtained in\n{(b)}\nto find the solution, \\emph{y(t)}, to the IVP in\n{(b)}.", 
+    "statement_raw": "Let &lt;math>Y(s) = \\mathcal{L}[y]&lt;/math> be the Laplace transform of the solution &lt;math>y(t)&lt;/math> to the following initial value problem:\n\n:&lt;math> \\begin{cases} y'' - 2y' + y = g(t), \\\\ y(0) = 0, y'(0) = 1 \\end{cases}&lt;/math> \n\nwhere &lt;math>g(t)&lt;/math> is the function defined in [[Science:Math Exam Resources/Courses/MATH215/December 2013/Question 04 (a)|(a)]]:\n\n:&lt;math>g(t) = \\begin{cases} 0, \\quad t &lt; 1 \\\\ e^{t-1}, \\quad t \\geq 1 \\end{cases}&lt;/math>\n\n(c) Calculate the inverse Laplace transform of ''Y(s)'' obtained in [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)|(b)]] to find the solution, ''y(t)'', to the IVP in [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(b)|(b)]].\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_04_(c)", 
+    "year": 2013
 }

@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH103", 
-    "statement": "Find the first three non-zero terms of the Taylor series for\n\n\\begin{align*}\\displaystyle f(x) = \\ln(1+x)\\end{align*} around $x=0$.", 
-    "year": 2011, 
-    "sols": [
-        "The first three derivatives of $f(x)=\\ln(1+x)$ are\n\n$f'(x) = \\frac{1}{1+x},$\n\n$f''(x) = \\frac{-1}{(1+x)^2},$\n\nand\n\n$f'''(x) = \\frac{2}{(1+x)^3}.$\n\nWhen we evaluate these at $x=0$ we get $f'(0) = 1$, $f''(0) = -1$,\n$f'''(0) = 2$. Hence, the first few terms of the Taylor series for\n$f(x)$ about $x=0$ are\n\n\\begin{align*}\n&f(0)+ f'(0)x+\\frac{f''(0)}{2!} x^2+\\frac{f'''(0)}{3!} x^3+\\dots\\\\\n&=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&=x-\\frac12x^2+\\frac13x^3+\\dots\\end{align*}\n\nThese are the first three non-zero terms.\n\n(Note: It is actually pretty easy to obtain the entire Taylor series\nanyway. For any $n\\geq 1,$ we can show that\n$f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.$ Hence,\n$f^{(n)}(0) = (-1)^{n-1}(n-1)!$ and therefore,\n$f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.$)"
+    "answer_html": "<p>For any <span class=\"math\">\\(n\\geq 1,\\)</span> we can show that <span class=\"math\">\\(f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.\\)</span> Hence, <span class=\"math\">\\(f^{(n)}(0) = (-1)^{n-1}(n-1)!\\)</span> and therefore, <span class=\"math\">\\(f(x) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.\\)</span>)</p>\n", 
+    "answer_latex": "For any $n\\geq 1,$ we can show that\n$f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.$ Hence,\n$f^{(n)}(0) = (-1)^{n-1}(n-1)!$ and therefore,\n$f(x) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.$)", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that the Taylor series for a function <span class=\"math\">\\(f\\)</span> about <span class=\"math\">\\(x=a\\)</span> is given by</p>\n<p><span class=\"math\">\\(f(x)=\\sum_{n=0}^\\infty \\frac{f^{(n)}}{n!} (x-a)^n.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Recall that the Taylor series for a function $f$ about $x=a$ is given by\n\n$f(x)=\\sum_{n=0}^\\infty \\frac{f^{(n)}}{n!} (x-a)^n.$"
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that the Taylor series for a function &lt;math>f &lt;/math> about &lt;math> x=a&lt;/math> is given by\n\n&lt;math>f(x)=\\sum_{n=0}^\\infty \\frac{f^{(n)}}{n!} (x-a)^n. &lt;/math>\n"
+    ], 
+    "num_votes": 7, 
+    "question": "7 (a)", 
+    "rating": 64, 
+    "sols_html": [
+        "<p>The first three derivatives of <span class=\"math\">\\(f(x)=\\ln(1+x)\\)</span> are</p>\n<p><span class=\"math\">\\(f&#39;(x) = \\frac{1}{1+x},\\)</span></p>\n<p><span class=\"math\">\\(f&#39;&#39;(x) = \\frac{-1}{(1+x)^2},\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(f&#39;&#39;&#39;(x) = \\frac{2}{(1+x)^3}.\\)</span></p>\n<p>When we evaluate these at <span class=\"math\">\\(x=0\\)</span> we get <span class=\"math\">\\(f&#39;(0) = 1\\)</span>, <span class=\"math\">\\(f&#39;&#39;(0) = -1\\)</span>, <span class=\"math\">\\(f&#39;&#39;&#39;(0) = 2\\)</span>. Hence, the first few terms of the Taylor series for <span class=\"math\">\\(f(x)\\)</span> about <span class=\"math\">\\(x=0\\)</span> are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;f(0)+ f&#39;(0)x+\\frac{f&#39;&#39;(0)}{2!} x^2+\\frac{f&#39;&#39;&#39;(0)}{3!} x^3+\\dots\\\\\n&amp;=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&amp;=x-\\frac12x^2+\\frac13x^3+\\dots\\end{aligned}\\]</span></p>\n<p>These are the first three non-zero terms.</p>\n<p>(Note: It is actually pretty easy to obtain the entire Taylor series anyway. For any <span class=\"math\">\\(n\\geq 1,\\)</span> we can show that <span class=\"math\">\\(f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.\\)</span> Hence, <span class=\"math\">\\(f^{(n)}(0) = (-1)^{n-1}(n-1)!\\)</span> and therefore, <span class=\"math\">\\(f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.\\)</span>)</p>\n"
+    ], 
+    "sols_latex": [
+        "The first three derivatives of $f(x)=\\ln(1+x)$ are\n\n$f'(x) = \\frac{1}{1+x},$\n\n$f''(x) = \\frac{-1}{(1+x)^2},$\n\nand\n\n$f'''(x) = \\frac{2}{(1+x)^3}.$\n\nWhen we evaluate these at $x=0$ we get $f'(0) = 1$, $f''(0) = -1$,\n$f'''(0) = 2$. Hence, the first few terms of the Taylor series for\n$f(x)$ about $x=0$ are\n\n\\begin{align*}\n&f(0)+ f'(0)x+\\frac{f''(0)}{2!} x^2+\\frac{f'''(0)}{3!} x^3+\\dots\\\\\n&=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&=x-\\frac12x^2+\\frac13x^3+\\dots\n\\end{align*}\n\nThese are the first three non-zero terms.\n\n(Note: It is actually pretty easy to obtain the entire Taylor series\nanyway. For any $n\\geq 1,$ we can show that\n$f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}.$ Hence,\n$f^{(n)}(0) = (-1)^{n-1}(n-1)!$ and therefore,\n$f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.$)"
+    ], 
+    "sols_raw": [
+        "The first three derivatives of &lt;math> f(x)=\\ln(1+x)&lt;/math>  are\n\n&lt;math>f'(x) = \\frac{1}{1+x}, &lt;/math>\n\n&lt;math>f''(x) = \\frac{-1}{(1+x)^2}, &lt;/math>\n\nand\n\n&lt;math>f'''(x) = \\frac{2}{(1+x)^3}.&lt;/math>\n\nWhen we evaluate these at &lt;math> x=0 &lt;/math> we get &lt;math>f'(0) = 1&lt;/math>, &lt;math>f''(0) = -1&lt;/math>, &lt;math>f'''(0) = 2&lt;/math>. Hence, the first few terms of the Taylor series for &lt;math>f(x) &lt;/math> about &lt;math>x=0 &lt;/math> are \n\n&lt;math> \\begin{align}\n&amp;f(0)+ f'(0)x+\\frac{f''(0)}{2!} x^2+\\frac{f'''(0)}{3!} x^3+\\dots\\\\\n&amp;=0+x-\\frac12x^2+\\frac26x^3+\\dots\\\\\n&amp;=x-\\frac12x^2+\\frac13x^3+\\dots\n\\end{align}&lt;/math>\n\nThese are the first three non-zero terms.\n\n(Note: It is actually pretty easy to obtain the entire Taylor series anyway.  For any &lt;math> n\\geq 1,&lt;/math> we can show that &lt;math>f^{(n)}(x) = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}. &lt;/math> Hence, &lt;math>f^{(n)}(0) = (-1)^{n-1}(n-1)!&lt;/math> and therefore, &lt;math> f(x) = \\ln(x+1) = \\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n} x^n.&lt;/math>)\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Find the first three non-zero terms of the Taylor series for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x) = \\ln(1+x)\\end{aligned}\\]</span></p>\n<p>around <span class=\"math\">\\(x=0\\)</span>.</p>\n", 
+    "statement_latex": "Find the first three non-zero terms of the Taylor series for\n\n\\begin{align*}\n\\displaystyle f(x) = \\ln(1+x)\n\\end{align*} around $x=0$.", 
+    "statement_raw": "Find the first three non-zero terms of the Taylor series for\n:&lt;math>\\displaystyle f(x) = \\ln(1+x) &lt;/math>\naround &lt;math>x=0&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_07_(a)", 
+    "year": 2011
 }

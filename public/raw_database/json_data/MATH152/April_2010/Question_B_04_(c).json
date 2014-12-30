@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_04_(c)", 
-    "course": "MATH152", 
-    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(c)}\n\n\\begin{align*}\\left[\\begin{array}{cccc}1 & 0 & 4 & 5 \\\\ 0 & 1 & 1 & 3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "From the matrix,\n\n\\begin{align*}\\left[\\begin{array}{cccc}1 & 0 & 4 & 5 \\\\ 0 & 1 & 1 & 3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\\end{align*}\n\nwe see that the last row is all zeros (including the augmented part) and\nso we have a free parameter. Since there are more columns than rows to\nthis matrix (the matrix is rank deficient) then there is a second free\nparameter. Let the free parameters be x\\_3 and x\\_4. Then from the\nsecond row we have\n\n\\begin{align*}\nx_2+x_3+3x_4&=2\\\\\nx_2&=2-x_3-3x_4\\end{align*}\n\nand from the first row we have\n\n\\begin{align*}\nx_1+4x_3+5x_4&=1\\\\\nx_1&=1-4x_3-5x_4.\\end{align*}\n\nTherefore we have two null vectors\n\n\\begin{align*}\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\\end{align*}\n\nand\n\n\\begin{align*}\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{align*}\n\nas well as a particular solution\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\\end{align*}\n\nso that the solution is\n\n\\begin{align*}\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.\\end{align*}\n\nThere are an infinite number of solutions."
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.\\)</span> There are an infinite number of solutions.</p>\n", 
+    "answer_latex": " $\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.$ There are an infinite number of solutions.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that if the matrix has a row of zeros then the corresponding value in the augmented part of the matrix must be zero or there is no solution.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that if the matrix has a row of zeros then the corresponding\nvalue in the augmented part of the matrix must be zero or there is no\nsolution."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that if the matrix has a row of zeros then the corresponding value in the augmented part of the matrix must be zero or there is no solution.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 04 (c)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>From the matrix,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 4 &amp; 5 \\\\ 0 &amp; 1 &amp; 1 &amp; 3 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>we see that the last row is all zeros (including the augmented part) and so we have a free parameter. Since there are more columns than rows to this matrix (the matrix is rank deficient) then there is a second free parameter. Let the free parameters be x_3 and x_4. Then from the second row we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_2+x_3+3x_4&amp;=2\\\\\nx_2&amp;=2-x_3-3x_4\\end{aligned}\\]</span></p>\n<p>and from the first row we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_1+4x_3+5x_4&amp;=1\\\\\nx_1&amp;=1-4x_3-5x_4.\\end{aligned}\\]</span></p>\n<p>Therefore we have two null vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>as well as a particular solution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>so that the solution is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>There are an infinite number of solutions.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the matrix,\n\n\\begin{align*}\n\\left[\\begin{array}{cccc}1 & 0 & 4 & 5 \\\\ 0 & 1 & 1 & 3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\n\\end{align*}\n\nwe see that the last row is all zeros (including the augmented part) and\nso we have a free parameter. Since there are more columns than rows to\nthis matrix (the matrix is rank deficient) then there is a second free\nparameter. Let the free parameters be x\\_3 and x\\_4. Then from the\nsecond row we have\n\n\\begin{align*}\nx_2+x_3+3x_4&=2\\\\\nx_2&=2-x_3-3x_4\n\\end{align*}\n\nand from the first row we have\n\n\\begin{align*}\nx_1+4x_3+5x_4&=1\\\\\nx_1&=1-4x_3-5x_4.\n\\end{align*}\n\nTherefore we have two null vectors\n\n\\begin{align*}\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n\\end{align*}\n\nand\n\n\\begin{align*}\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\end{align*}\n\nas well as a particular solution\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n\\end{align*}\n\nso that the solution is\n\n\\begin{align*}\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nThere are an infinite number of solutions."
+    ], 
+    "sols_raw": [
+        "From the matrix,\n\n:&lt;math>\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 4 &amp; 5 \\\\ 0 &amp; 1 &amp; 1 &amp; 3 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\n&lt;/math>\n\nwe see that the last row is all zeros (including the augmented part) and so we have a free parameter.  Since there are more columns than rows to this matrix (the matrix is rank deficient) then there is a second free parameter.  Let the free parameters be x_3 and x_4.  Then from the second row we have\n\n:&lt;math>\n\\begin{align}\nx_2+x_3+3x_4&amp;=2\\\\\nx_2&amp;=2-x_3-3x_4\n\\end{align}\n&lt;/math>\n\nand from the first row we have\n\n:&lt;math>\n\\begin{align}\nx_1+4x_3+5x_4&amp;=1\\\\\nx_1&amp;=1-4x_3-5x_4.\n\\end{align}\n&lt;/math>\n\nTherefore we have two null vectors\n\n:&lt;math>\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n&lt;/math>\n\nand\n\n:&lt;math>\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}\n&lt;/math>\n\nas well as a particular solution\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n&lt;/math>\n\nso that the solution is\n\n:&lt;math>\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-4\\\\\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n-5\\\\\n-3\\\\\n0\\\\\n1\n\\end{bmatrix}.\n&lt;/math>\n\nThere are an infinite number of solutions.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>The augmented matrix below for a linear system is put in reduced row echelon form with row operations. Write one of the following:</p>\n<ul>\n<li><p>the solution if it is unique</p></li>\n<li><p>all solutions if there are more than one</p></li>\n<li><p>state that there are no solutions.</p></li>\n</ul>\n<p><strong>(c)</strong></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 4 &amp; 5 \\\\ 0 &amp; 1 &amp; 1 &amp; 3 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(c)}\n\n\\begin{align*}\n\\left[\\begin{array}{cccc}1 & 0 & 4 & 5 \\\\ 0 & 1 & 1 & 3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\n\\end{align*}", 
+    "statement_raw": "The augmented matrix below for a linear system is put in reduced row echelon form with row operations. Write one of the following:\n* the solution if it is unique\n* all solutions if there are more than one\n* state that there are no solutions.\n\n'''(c)'''\n:&lt;math>\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 4 &amp; 5 \\\\ 0 &amp; 1 &amp; 1 &amp; 3 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\\\ 0 \\end{array}\\right]\n&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_04_(c)", 
+    "year": 2010
 }

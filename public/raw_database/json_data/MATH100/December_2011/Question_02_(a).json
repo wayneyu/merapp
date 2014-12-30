@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nA wealthy man was found murdered in his home. The police arrived on\nscene at 10:00 P.M. The temperature of the body at 10:00 P.M. was\n33$^{\\circ}$C and one hour later it was 31$^{\\circ}$C. The temperature\nof the room in which the body was found was 21$^{\\circ}$C and normal\nbody temperature is 37$^{\\circ}$C. Assume that the body cools after\ndeath according to Newton's Law of Cooling.\n\nHow many hours before the police arrived on the scene did the murder\noccur?", 
-    "year": 2011, 
-    "sols": [
-        "Newton's Law of Cooling which states that\n\n\\begin{align*}\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}.\\end{align*} Here, the initial temperature of the body\n\\emph{T}\\textsubscript{0} is 33$^{\\circ}$C; the temperature of the\nenvironment \\emph{T}\\textsubscript{a} is given to be 21$^{\\circ}$C; and\nthe temperature of the body after 1 hour (\\emph{T}(1)) is 31$^{\\circ}$C.\nPlugging in these numbers give us\n\n\\begin{align*}\\displaystyle\n31=21+(33-21)e^{-k}\\end{align*} Using this equation, we can solve for \\emph{k}:\n\n\\begin{align*}\ne^{-k} &=\\frac{31-21}{33-21}=\\frac{5}{6} \\\\\n-k &=\\ln(5/6) \\\\\nk &=-\\ln(5/6) \\end{align*}\n\nAnd so now we have found the equation that gives us the temperature of\nthe body at any time \\emph{t}:\n\n\\begin{align*}\\displaystyle\nT(t) = 21 + 12e^{t\\ln(5/6)}\\end{align*} and we would like to know the time of\ndeath, which is the time at which the body temperature was\n37$^{\\circ}$C. For this, we simply solve\n\n\\begin{align*}\\displaystyle\nT(t) = 37\\end{align*} that is\n\n\\begin{align*}\n21 + 12e^{t\\ln(5/6)} &= 37 \\\\\n12e^{t\\ln(5/6)} &= 16 \\\\\ne^{t\\ln(5/6)} &= 16/12 \\\\\nt\\ln(5/6) &= \\ln(4/3) \\\\\nt &= \\frac{\\ln(4/3)}{\\ln(5/6)} \\\\\nt &\\approx -1.578\\end{align*}\n\nTherefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the\nmurder, that is, roughly an hour and a half."
+    "answer_html": "<p><span class=\"math\">\\(t \\approx -1.578\\)</span> Therefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the murder, that is, roughly an hour and a half.</p>\n", 
+    "answer_latex": " $t \\approx -1.578$ Therefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the\nmurder, that is, roughly an hour and a half.", 
+    "contributors": [
+        "Konradbe", 
+        "YihanWu", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Recall that Newton's Law of Cooling states that\n\n\\begin{align*}\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}\\end{align*} where \\emph{T}\\textsubscript{a} is the\ntemperature of the environment; \\emph{T}\\textsubscript{0} is the initial\ntemperature of the object; and \\emph{T}(\\emph{t}) is the temperature of\nthe object at time \\emph{t}."
-    ]
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that Newton&#8217;s Law of Cooling states that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}\\end{aligned}\\]</span></p>\n<p>where <em>T</em><sub>a</sub> is the temperature of the environment; <em>T</em><sub>0</sub> is the initial temperature of the object; and <em>T</em>(<em>t</em>) is the temperature of the object at time <em>t</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that Newton's Law of Cooling states that\n\n\\begin{align*}\n\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}\n\\end{align*} where \\emph{T}\\textsubscript{a} is the\ntemperature of the environment; \\emph{T}\\textsubscript{0} is the initial\ntemperature of the object; and \\emph{T}(\\emph{t}) is the temperature of\nthe object at time \\emph{t}."
+    ], 
+    "hints_raw": [
+        "Recall that Newton's Law of Cooling states that\n:&lt;math>\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}\n&lt;/math>\nwhere ''T''&lt;sub>a&lt;/sub> is the temperature of the environment; ''T''&lt;sub>0&lt;/sub> is the initial temperature of the object; and ''T''(''t'') is the temperature of the object at time ''t''.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (a)", 
+    "rating": 68, 
+    "sols_html": [
+        "<p>Newton&#8217;s Law of Cooling which states that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}.\\end{aligned}\\]</span></p>\n<p>Here, the initial temperature of the body <em>T</em><sub>0</sub> is 33<span class=\"math\">\\(^{\\circ}\\)</span>C; the temperature of the environment <em>T</em><sub>a</sub> is given to be 21<span class=\"math\">\\(^{\\circ}\\)</span>C; and the temperature of the body after 1 hour (<em>T</em>(1)) is 31<span class=\"math\">\\(^{\\circ}\\)</span>C. Plugging in these numbers give us</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n31=21+(33-21)e^{-k}\\end{aligned}\\]</span></p>\n<p>Using this equation, we can solve for <em>k</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{-k} &amp;=\\frac{31-21}{33-21}=\\frac{5}{6} \\\\\n-k &amp;=\\ln(5/6) \\\\\nk &amp;=-\\ln(5/6) \\end{aligned}\\]</span></p>\n<p>And so now we have found the equation that gives us the temperature of the body at any time <em>t</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nT(t) = 21 + 12e^{t\\ln(5/6)}\\end{aligned}\\]</span></p>\n<p>and we would like to know the time of death, which is the time at which the body temperature was 37<span class=\"math\">\\(^{\\circ}\\)</span>C. For this, we simply solve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nT(t) = 37\\end{aligned}\\]</span></p>\n<p>that is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n21 + 12e^{t\\ln(5/6)} &amp;= 37 \\\\\n12e^{t\\ln(5/6)} &amp;= 16 \\\\\ne^{t\\ln(5/6)} &amp;= 16/12 \\\\\nt\\ln(5/6) &amp;= \\ln(4/3) \\\\\nt &amp;= \\frac{\\ln(4/3)}{\\ln(5/6)} \\\\\nt &amp;\\approx -1.578\\end{aligned}\\]</span></p>\n<p>Therefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the murder, that is, roughly an hour and a half.</p>\n"
+    ], 
+    "sols_latex": [
+        "Newton's Law of Cooling which states that\n\n\\begin{align*}\n\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}.\n\\end{align*} Here, the initial temperature of the body\n\\emph{T}\\textsubscript{0} is 33$^{\\circ}$C; the temperature of the\nenvironment \\emph{T}\\textsubscript{a} is given to be 21$^{\\circ}$C; and\nthe temperature of the body after 1 hour (\\emph{T}(1)) is 31$^{\\circ}$C.\nPlugging in these numbers give us\n\n\\begin{align*}\n\\displaystyle\n31=21+(33-21)e^{-k}\n\\end{align*} Using this equation, we can solve for \\emph{k}:\n\n\\begin{align*}\ne^{-k} &=\\frac{31-21}{33-21}=\\frac{5}{6} \\\\\n-k &=\\ln(5/6) \\\\\nk &=-\\ln(5/6) \n\\end{align*}\n\nAnd so now we have found the equation that gives us the temperature of\nthe body at any time \\emph{t}:\n\n\\begin{align*}\n\\displaystyle\nT(t) = 21 + 12e^{t\\ln(5/6)}\n\\end{align*} and we would like to know the time of\ndeath, which is the time at which the body temperature was\n37$^{\\circ}$C. For this, we simply solve\n\n\\begin{align*}\n\\displaystyle\nT(t) = 37\n\\end{align*} that is\n\n\\begin{align*}\n21 + 12e^{t\\ln(5/6)} &= 37 \\\\\n12e^{t\\ln(5/6)} &= 16 \\\\\ne^{t\\ln(5/6)} &= 16/12 \\\\\nt\\ln(5/6) &= \\ln(4/3) \\\\\nt &= \\frac{\\ln(4/3)}{\\ln(5/6)} \\\\\nt &\\approx -1.578\n\\end{align*}\n\nTherefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the\nmurder, that is, roughly an hour and a half."
+    ], 
+    "sols_raw": [
+        "Newton's Law of Cooling which states that\n:&lt;math>\\displaystyle\nT(t)=T_a+(T_0-T_a)e^{-kt}\n&lt;/math>.\nHere, the initial temperature of the body ''T''&lt;sub>0&lt;/sub> is 33\u00b0C; the temperature of the environment ''T''&lt;sub>a&lt;/sub> is given to be 21\u00b0C; and the temperature of the body after 1 hour (''T''(1)) is 31\u00b0C.\nPlugging in these numbers give us\n:&lt;math>\\displaystyle\n31=21+(33-21)e^{-k}\n&lt;/math>\nUsing this equation, we can solve for ''k'':\n:&lt;math>\n\\begin{align}\ne^{-k} &amp; =\\frac{31-21}{33-21}=\\frac{5}{6} \\\\\n-k &amp; =\\ln(5/6) \\\\\nk &amp; =-\\ln(5/6) \\\\\n\\end{align}\n&lt;/math>\n\nAnd so now we have found the equation that gives us the temperature of the body at any time ''t'':\n:&lt;math>\\displaystyle\nT(t) = 21 + 12e^{t\\ln(5/6)}\n&lt;/math>\nand we would like to know the time of death, which is the time at which the body temperature was 37\u00b0C. For this, we simply solve\n:&lt;math>\\displaystyle\nT(t) = 37\n&lt;/math>\nthat is\n:&lt;math>\\begin{align}\n21 + 12e^{t\\ln(5/6)} &amp;= 37 \\\\\n12e^{t\\ln(5/6)} &amp;= 16 \\\\\ne^{t\\ln(5/6)} &amp;= 16/12 \\\\\nt\\ln(5/6) &amp;= \\ln(4/3) \\\\\nt &amp;= \\frac{\\ln(4/3)}{\\ln(5/6)} \\\\\nt &amp;\\approx -1.578\n\\end{align}&lt;/math>\n\nTherefore, the police arrived (ln(3/4))/(ln(5/6)) hours after the murder, that is, roughly an hour and a half.\n"
+    ], 
+    "solvers": [
+        "Alfred"
+    ], 
+    "statement_html": "<p><em><strong>Full-Solution Problems.</strong> In questions 2-8, justify your answers and <strong>show all your work.</strong> If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.</em></p>\n<p>A wealthy man was found murdered in his home. The police arrived on scene at 10:00 P.M. The temperature of the body at 10:00 P.M. was 33<span class=\"math\">\\(^{\\circ}\\)</span>C and one hour later it was 31<span class=\"math\">\\(^{\\circ}\\)</span>C. The temperature of the room in which the body was found was 21<span class=\"math\">\\(^{\\circ}\\)</span>C and normal body temperature is 37<span class=\"math\">\\(^{\\circ}\\)</span>C. Assume that the body cools after death according to Newton&#8217;s Law of Cooling.</p>\n<p>How many hours before the police arrived on the scene did the murder occur?</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nA wealthy man was found murdered in his home. The police arrived on\nscene at 10:00 P.M. The temperature of the body at 10:00 P.M. was\n33$^{\\circ}$C and one hour later it was 31$^{\\circ}$C. The temperature\nof the room in which the body was found was 21$^{\\circ}$C and normal\nbody temperature is 37$^{\\circ}$C. Assume that the body cools after\ndeath according to Newton's Law of Cooling.\n\nHow many hours before the police arrived on the scene did the murder\noccur?", 
+    "statement_raw": "'''''Full-Solution Problems.''' In questions 2-8, justify your answers and '''show all your work.''' If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.''\n\nA wealthy man was found murdered in his home. The police arrived on scene at 10:00 P.M. The temperature of the body at 10:00 P.M. was 33\u00b0C and one hour later it was 31\u00b0C. The temperature of the room in which the body was found was 21\u00b0C and normal body temperature is 37\u00b0C. Assume that the body cools after death according to Newton's Law of Cooling.\n\nHow many hours before the police arrived on the scene did the murder occur?\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_law_of_cooling"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_02_(a)", 
+    "year": 2011
 }

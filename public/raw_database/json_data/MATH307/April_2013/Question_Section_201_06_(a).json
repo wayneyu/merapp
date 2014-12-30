@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_Section_201_06_(a)", 
+    "answer_html": "<p>This is why all the entries in column 6 of matrix <em>P</em> contain the value 1/6.</p>\n", 
+    "answer_latex": "This is why all\nthe entries in column 6 of matrix \\emph{P} contain the value 1/6.", 
+    "contributors": [
+        "Konradbe", 
+        "MikeL"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider the same graph as in the\n\\href{Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)}{previous\nquestion}, now interpreted as an internet where the vertices represent\nweb pages and the arrows represent links.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q6.png}\n\\end{description}\n\n\\textbf{(a)} Write down the stochastic matrix associated with the\nPageRank algorithm with no damping. Explain what you are doing with\nvertex 6.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "RQ", 
+        "RH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Suppose when on page i, that one can move to all pages i points to with equal probability. You are looking for the transition matrix, where component i of the state vector on which the matrix acts represents the probability of being at webpage i.</p>\n"
+    ], 
+    "hints_latex": [
+        "Suppose when on page i, that one can move to all pages i points to with\nequal probability. You are looking for the transition matrix, where\ncomponent i of the state vector on which the matrix acts represents the\nprobability of being at webpage i."
+    ], 
+    "hints_raw": [
+        "Suppose when on page i, that one can move to all pages i points to with equal probability. You are looking for the transition matrix, where component i of the state vector on which the matrix acts represents the probability of being at webpage i.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "Section 201 06 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>When <span class=\"math\">\\(\\alpha\\)</span> = 0,</p>\n<p>The stochastic matrix P is the sum of the outgoing links and the dangling links:</p>\n<p><span class=\"math\">\\(P = \\begin{bmatrix}\n0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 1/2 &amp; 0 &amp; 1 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1/6\n\\end{bmatrix}\\)</span></p>\n<p>Vertex 6 has no links leaving the site, so it is a dangling node. When the web surfer reaches a dangling node, we assume that any page on the internet can be chosen at random with equal probability. This is why all the entries in column 6 of matrix <em>P</em> contain the value 1/6.</p>\n"
+    ], 
+    "sols_latex": [
         "When $\\alpha$ = 0,\n\nThe stochastic matrix P is the sum of the outgoing links and the\ndangling links:\n\n$P = \\begin{bmatrix}\n0 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 1/2 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 0 & 1/2 & 0 & 0 & 0 & 1/6\n\\\\ 1/2 & 0 & 0 & 0 & 0 & 1/6\n\\\\ 0 & 1/2 & 0 & 1 & 0 & 1/6\n\\\\ 0 & 0 & 1 & 0 & 1 & 1/6\n\\end{bmatrix}$\n\nVertex 6 has no links leaving the site, so it is a dangling node. When\nthe web surfer reaches a dangling node, we assume that any page on the\ninternet can be chosen at random with equal probability. This is why all\nthe entries in column 6 of matrix \\emph{P} contain the value 1/6."
     ], 
-    "hints": [
-        "Suppose when on page i, that one can move to all pages i points to with\nequal probability. You are looking for the transition matrix, where\ncomponent i of the state vector on which the matrix acts represents the\nprobability of being at webpage i."
-    ]
+    "sols_raw": [
+        "When &lt;math>\\alpha&lt;/math> = 0,\n\nThe stochastic matrix P is the sum of the outgoing links and the dangling links:\n\n&lt;math>P = \\begin{bmatrix}\n0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 1/2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 1/2 &amp; 0 &amp; 1 &amp; 0 &amp; 1/6\n\\\\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1/6\n\\end{bmatrix}&lt;/math>\n\nVertex 6 has no links leaving the site, so it is a dangling node. When the web surfer reaches a dangling node, we assume that any page on the internet can be chosen at random with equal probability. This is why all the entries in column 6 of matrix ''P'' contain the value 1/6.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the same graph as in the <span>previous question</span>, now interpreted as an internet where the vertices represent web pages and the arrows represent links.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH307/April_2013/MATH307April2013Section201Q6.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p><strong>(a)</strong> Write down the stochastic matrix associated with the PageRank algorithm with no damping. Explain what you are doing with vertex 6.</p>\n", 
+    "statement_latex": "Consider the same graph as in the\n{previous\nquestion}, now interpreted as an internet where the vertices represent\nweb pages and the arrows represent links.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH307/April_2013/MATH307April2013Section201Q6.png}\n\\end{description}\n\n\\textbf{(a)} Write down the stochastic matrix associated with the\nPageRank algorithm with no damping. Explain what you are doing with\nvertex 6.", 
+    "statement_raw": "Consider the same graph as in the [[Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)|previous question]], now interpreted as an internet where the vertices represent web pages and the arrows represent links.\n\n:[[File:MATH307April2013Section201Q6.png|300px]]\n\n'''(a)''' Write down the stochastic matrix associated with the PageRank algorithm with no damping. Explain what you are doing with vertex 6.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_06_(a)", 
+    "year": 2013
 }

@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH103", 
-    "statement": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nDetermine the constant $C$ of the probability density function for the\nfailure time of lightbulb $B$?", 
-    "year": 2011, 
-    "sols": [
-        "Since $p_B$ is a probability density function,\n$\\int_0^\\infty p_B(t)\\,dt=1.$ Hence,\n\n\\begin{align*}\n1=\\int_0^\\infty p_B(t)\\,dt = \\int_0^\\infty Ce^{-2t}\\,dt =C \\left[  \\frac{e^{-2t}}{-2}\\right]_0^\\infty=\\frac{C}2.\\end{align*}\n\nTherefore, $C=2.$"
+    "answer_html": "<p>Therefore, <span class=\"math\">\\(C=2.\\)</span></p>\n", 
+    "answer_latex": "Therefore, $C=2.$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Since $p_B$ is a probability density function, what does\n\\begin{align*}\\int_0^\\infty p_B(t)\\, dt\\end{align*} need to be?"
-    ]
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Since <span class=\"math\">\\(p_B\\)</span> is a probability density function, what does</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^\\infty p_B(t)\\, dt\\end{aligned}\\]</span></p>\n<p>need to be?</p>\n"
+    ], 
+    "hints_latex": [
+        "Since $p_B$ is a probability density function, what does\n\\begin{align*}\n\\int_0^\\infty p_B(t)\\, dt\n\\end{align*} need to be?"
+    ], 
+    "hints_raw": [
+        "Since &lt;math>p_B &lt;/math> is a probability density function, what does &lt;math> \\begin{align}\\int_0^\\infty p_B(t)\\, dt\\end{align}&lt;/math> need to be?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "5 (b)", 
+    "rating": 59, 
+    "sols_html": [
+        "<p>Since <span class=\"math\">\\(p_B\\)</span> is a probability density function, <span class=\"math\">\\(\\int_0^\\infty p_B(t)\\,dt=1.\\)</span> Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1=\\int_0^\\infty p_B(t)\\,dt = \\int_0^\\infty Ce^{-2t}\\,dt =C \\left[  \\frac{e^{-2t}}{-2}\\right]_0^\\infty=\\frac{C}2.\\end{aligned}\\]</span></p>\n<p>Therefore, <span class=\"math\">\\(C=2.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since $p_B$ is a probability density function,\n$\\int_0^\\infty p_B(t)\\,dt=1.$ Hence,\n\n\\begin{align*}\n1=\\int_0^\\infty p_B(t)\\,dt = \\int_0^\\infty Ce^{-2t}\\,dt =C \\left[  \\frac{e^{-2t}}{-2}\\right]_0^\\infty=\\frac{C}2.\n\\end{align*}\n\nTherefore, $C=2.$"
+    ], 
+    "sols_raw": [
+        "Since &lt;math>p_B &lt;/math> is a probability density function, &lt;math>\\int_0^\\infty p_B(t)\\,dt=1. &lt;/math>  Hence,\n\n&lt;math> \\begin{align}\n1=\\int_0^\\infty p_B(t)\\,dt = \\int_0^\\infty Ce^{-2t}\\,dt =C \\left[  \\frac{e^{-2t}}{-2}\\right]_0^\\infty=\\frac{C}2.\n\\end{align}&lt;/math>\n\nTherefore, &lt;math> C=2.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>In a room two different lightbulbs <span class=\"math\">\\(A\\)</span> and <span class=\"math\">\\(B\\)</span> are installed. According to the packaging, lightbulb <span class=\"math\">\\(A\\)</span> fails before time <span class=\"math\">\\(t\\)</span> with probability <span class=\"math\">\\(F_A(t)=1-e^{-t}\\)</span> (<span class=\"math\">\\(t\\)</span> in months). Lightbulb <span class=\"math\">\\(B\\)</span> has a probability density function for the failure time given by <span class=\"math\">\\(p_B(t)=Ce^{-2t}.\\)</span></p>\n<p>Determine the constant <span class=\"math\">\\(C\\)</span> of the probability density function for the failure time of lightbulb <span class=\"math\">\\(B\\)</span>?</p>\n", 
+    "statement_latex": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nDetermine the constant $C$ of the probability density function for the\nfailure time of lightbulb $B$?", 
+    "statement_raw": "In a  room two different lightbulbs &lt;math>A&lt;/math> and &lt;math>B&lt;/math> are installed. According to the packaging, lightbulb &lt;math>A&lt;/math> fails before time &lt;math>t&lt;/math> with probability &lt;math>F_A(t)=1-e^{-t}&lt;/math> (&lt;math>t&lt;/math> in months). Lightbulb &lt;math>B&lt;/math> has a probability density function for the failure time given by &lt;math>p_B(t)=Ce^{-2t}.&lt;/math>\n\nDetermine the constant &lt;math>C&lt;/math> of the probability density function for the failure time of lightbulb &lt;math>B&lt;/math>?\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_05_(b)", 
+    "year": 2011
 }

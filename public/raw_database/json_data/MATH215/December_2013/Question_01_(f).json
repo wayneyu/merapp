@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_01_(f)", 
-    "course": "MATH215", 
-    "statement": "Find the Laplace transform $X(s)$ of the solution to the initial value\nproblem $x''' + x = 0, \\quad x(0) = 1, x'(0) = 2, x''(0) = 3$ (but\n\\textbf{do not} compute $x(t)$).", 
-    "year": 2013, 
-    "sols": [
-        "The Laplace transform of the 3rd derivative $\\displaystyle x'''(t)$ is\ngiven by\n\n\\begin{align*}\\mathcal{L}(x'''(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0)\\end{align*}\n\nPlugging this into the equation, and using that the Laplace transform is\nlinear, we obtain\n\n\\begin{align*}0 = \\mathcal{L}(x'''(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0) + X(s)\\end{align*}\n\nUpon using $\\displaystyle x(0) = 1, x'(0) = 2, x''(0) = 3$, we have\n$\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3$ so\n\n\\begin{align*}X(s) = \\frac{s^2+2s+3}{s^3+1}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(X(s)=\\frac{s^2+2s+3}{s^3+1}\\)</span></p>\n", 
+    "answer_latex": " $X(s)=\\frac{s^2+2s+3}{s^3+1}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How does the <em>n</em>-th derivative, <em>x<sup>(n)</sup>(t)</em> transform for an arbitrary function <em>x(t)</em>?</p>\n"
+    ], 
+    "hints_latex": [
         "How does the \\emph{n}-th derivative, \\emph{x\\textsuperscript{(n)}(t)}\ntransform for an arbitrary function \\emph{x(t)}?"
-    ]
+    ], 
+    "hints_raw": [
+        "How does the ''n''-th derivative, ''x&lt;sup>(n)&lt;/sup>(t)'' transform for an arbitrary function ''x(t)''?\n"
+    ], 
+    "num_votes": 9, 
+    "question": "1 (f)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>The Laplace transform of the 3rd derivative <span class=\"math\">\\(\\displaystyle x&#39;&#39;&#39;(t)\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathcal{L}(x&#39;&#39;&#39;(t)) = s^3 X(s) - s^2 x(0) - s x&#39;(0) - x&#39;&#39;(0)\\end{aligned}\\]</span></p>\n<p>Plugging this into the equation, and using that the Laplace transform is linear, we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = \\mathcal{L}(x&#39;&#39;&#39;(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x&#39;(0) - x&#39;&#39;(0) + X(s)\\end{aligned}\\]</span></p>\n<p>Upon using <span class=\"math\">\\(\\displaystyle x(0) = 1, x&#39;(0) = 2, x&#39;&#39;(0) = 3\\)</span>, we have <span class=\"math\">\\(\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3\\)</span> so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nX(s) = \\frac{s^2+2s+3}{s^3+1}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The Laplace transform of the 3rd derivative $\\displaystyle x'''(t)$ is\ngiven by\n\n\\begin{align*}\n\\mathcal{L}(x'''(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0)\n\\end{align*}\n\nPlugging this into the equation, and using that the Laplace transform is\nlinear, we obtain\n\n\\begin{align*}\n0 = \\mathcal{L}(x'''(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0) + X(s)\n\\end{align*}\n\nUpon using $\\displaystyle x(0) = 1, x'(0) = 2, x''(0) = 3$, we have\n$\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3$ so\n\n\\begin{align*}\nX(s) = \\frac{s^2+2s+3}{s^3+1}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The Laplace transform of the 3rd derivative &lt;math>\\displaystyle x'''(t)&lt;/math> is given by\n:&lt;math>\n\\mathcal{L}(x'''(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0)\n&lt;/math>\n\nPlugging this into the equation, and using that the Laplace transform is linear, we obtain\n:&lt;math>\n0 = \\mathcal{L}(x'''(t) + x(t)) = s^3 X(s) - s^2 x(0) - s x'(0) - x''(0) + X(s)\n&lt;/math>\n\nUpon using &lt;math>\\displaystyle x(0) = 1, x'(0) = 2, x''(0) = 3&lt;/math>, we have &lt;math>\\displaystyle (s^3 + 1) X(s) = s^2 + 2s + 3&lt;/math> so\n\n:&lt;math>X(s) = \\frac{s^2+2s+3}{s^3+1}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find the Laplace transform <span class=\"math\">\\(X(s)\\)</span> of the solution to the initial value problem <span class=\"math\">\\(x&#39;&#39;&#39; + x = 0, \\quad x(0) = 1, x&#39;(0) = 2, x&#39;&#39;(0) = 3\\)</span> (but <strong>do not</strong> compute <span class=\"math\">\\(x(t)\\)</span>).</p>\n", 
+    "statement_latex": "Find the Laplace transform $X(s)$ of the solution to the initial value\nproblem $x''' + x = 0, \\quad x(0) = 1, x'(0) = 2, x''(0) = 3$ (but\n\\textbf{do not} compute $x(t)$).", 
+    "statement_raw": "Find the Laplace transform &lt;math>X(s)&lt;/math> of the solution to the initial value problem &lt;math>x''' + x = 0, \\quad x(0) = 1, x'(0) = 2, x''(0) = 3&lt;/math> (but '''do not''' compute &lt;math>x(t)&lt;/math>).\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_01_(f)", 
+    "year": 2013
 }

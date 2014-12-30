@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values: $f(0) = 1,$\n$f(1) = 2,$ $f(2) = 0,$ $f(3) = -2,$ $f(4) = -4.$\n\nWrite down the trapezoidal approximation $T_4$ for $\\int_0^4 f(x) dx.$", 
-    "year": 2010, 
-    "sols": [
-        "Since the formula for the trapezoid rule can be given by\n\n\\begin{align*}T_{n} = \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\\end{align*}\n\nand we know that we want to evaluate this rule using $n = 4$, we have\n\n\\begin{align*}x_{i} = a + i\\Delta x = 0 + i\\frac{4-0}{4}\\end{align*}\n\nand thus, the trapezoidal approximation that we need is\n\n\\begin{align*}\nT_{4} &= \\frac{1}{2}\\left(f(0) + 2f(1) + 2f(2) + 2f(3) + f(4)\\right) \\\\\n&= \\frac{1}{2} (1 + 2(2) + 2(0) +2(-2) + (-4)) = \\frac{-3}{2}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(T_{4}=\\frac{-3}{2}\\)</span></p>\n", 
+    "answer_latex": " $T_{4}=\\frac{-3}{2}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The formula for the trapezoid rule is given by</p>\n<p><span class=\"math\">\\(T_{n} := \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The formula for the trapezoid rule is given by\n\n$T_{n} := \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)$"
-    ]
+    ], 
+    "hints_raw": [
+        "The formula for the trapezoid rule is given by\n\n&lt;math>\nT_{n} := \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since the formula for the trapezoid rule can be given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_{n} = \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\\end{aligned}\\]</span></p>\n<p>and we know that we want to evaluate this rule using <span class=\"math\">\\(n = 4\\)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{i} = a + i\\Delta x = 0 + i\\frac{4-0}{4}\\end{aligned}\\]</span></p>\n<p>and thus, the trapezoidal approximation that we need is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_{4} &amp;= \\frac{1}{2}\\left(f(0) + 2f(1) + 2f(2) + 2f(3) + f(4)\\right) \\\\\n&amp;= \\frac{1}{2} (1 + 2(2) + 2(0) +2(-2) + (-4)) = \\frac{-3}{2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since the formula for the trapezoid rule can be given by\n\n\\begin{align*}\nT_{n} = \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\n\\end{align*}\n\nand we know that we want to evaluate this rule using $n = 4$, we have\n\n\\begin{align*}\nx_{i} = a + i\\Delta x = 0 + i\\frac{4-0}{4}\n\\end{align*}\n\nand thus, the trapezoidal approximation that we need is\n\n\\begin{align*}\nT_{4} &= \\frac{1}{2}\\left(f(0) + 2f(1) + 2f(2) + 2f(3) + f(4)\\right) \\\\\n&= \\frac{1}{2} (1 + 2(2) + 2(0) +2(-2) + (-4)) = \\frac{-3}{2}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Since the formula for the trapezoid rule can be given by\n\n:&lt;math>\nT_{n} = \\frac{\\Delta x}{2}\\left(f(x_{0}) + 2f(x_{1}) + 2f(x_{2}) + ... + 2f(x_{n-1}) + f(x_{n})\\right)\n&lt;/math>\n\nand we know that we want to evaluate this rule using &lt;math> n = 4 &lt;/math>, we have\n\n:&lt;math>\nx_{i} = a + i\\Delta x = 0 + i\\frac{4-0}{4}\n&lt;/math>\n\nand thus, the trapezoidal approximation that we need is\n\n:&lt;math> \\begin{align}\nT_{4} &amp;= \\frac{1}{2}\\left(f(0) + 2f(1) + 2f(2) + 2f(3) + f(4)\\right) \\\\\n&amp;= \\frac{1}{2} (1 + 2(2) + 2(0) +2(-2) + (-4)) = \\frac{-3}{2}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answer and <strong>show all your work.</strong> Simplification of the answer is not required.</p>\n<p>An unknown function <span class=\"math\">\\(f(x)\\)</span> has the following values: <span class=\"math\">\\(f(0) = 1,\\)</span> <span class=\"math\">\\(f(1) = 2,\\)</span> <span class=\"math\">\\(f(2) = 0,\\)</span> <span class=\"math\">\\(f(3) = -2,\\)</span> <span class=\"math\">\\(f(4) = -4.\\)</span></p>\n<p>Write down the trapezoidal approximation <span class=\"math\">\\(T_4\\)</span> for <span class=\"math\">\\(\\int_0^4 f(x) dx.\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values: $f(0) = 1,$\n$f(1) = 2,$ $f(2) = 0,$ $f(3) = -2,$ $f(4) = -4.$\n\nWrite down the trapezoidal approximation $T_4$ for $\\int_0^4 f(x) dx.$", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nAn unknown function &lt;math> f(x) &lt;/math> has the following values:\n&lt;math>\\ f(0) = 1,&lt;/math> &lt;math>\\ f(1) = 2,&lt;/math> &lt;math>\\ f(2) = 0,&lt;/math> &lt;math>\\ f(3) = -2,&lt;/math> &lt;math>\\ f(4) = -4. &lt;/math>\n\nWrite down the trapezoidal approximation &lt;math> T_4 &lt;/math> for &lt;math> \\int_0^4 f(x) dx. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Trapezoidal_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_05_(a)", 
+    "year": 2010
 }

@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} = 3\\)</span>3 is not smaller than 2, so this is impossible.</p>\n", 
+    "answer_latex": "$\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} = 3$3 is not smaller than 2, so this is impossible.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "If \\emph{A} is a \\emph{2 x 2} matrix with $\\|A\\| = 2$, is it possible\nthat\n$A\\begin{bmatrix} 1 \\\\ 0\\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 3 \\end{bmatrix}$?\nGive a reason.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Take norms on both sides and recall that</p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leq \\begin{Vmatrix}\nA\n\\end{Vmatrix} \\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Take norms on both sides and recall that\n\n$\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leq \\begin{Vmatrix}\nA\n\\end{Vmatrix} \\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}$"
+    ], 
+    "hints_raw": [
+        "Take norms on both sides and recall that \n\n&lt;math>\n\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leq \\begin{Vmatrix}\nA\n\\end{Vmatrix} \\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Recall that <span class=\"math\">\\(\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\n= 2\\cdot1 = 2\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} = \n\\begin{Vmatrix}\n3\\\\0\n\\end{Vmatrix}\n= 3\\)</span></p>\n<p>3 is not smaller than 2, so this is impossible.</p>\n"
+    ], 
+    "sols_latex": [
         "Recall that $\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\n= 2\\cdot1 = 2$\n\nand\n\n$\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} = \n\\begin{Vmatrix}\n3\\\\0\n\\end{Vmatrix}\n= 3$\n\n3 is not smaller than 2, so this is impossible."
     ], 
-    "hints": [
-        "Take norms on both sides and recall that\n\n$\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leq \\begin{Vmatrix}\nA\n\\end{Vmatrix} \\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}$"
-    ]
+    "sols_raw": [
+        "Recall that &lt;math>\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\n= 2\\cdot1 = 2&lt;/math>\n\nand\n\n&lt;math>\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} = \n\\begin{Vmatrix}\n3\\\\0\n\\end{Vmatrix}\n= 3\n&lt;/math>\n\n3 is not smaller than 2, so this is impossible.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>If <em>A</em> is a <em>2 x 2</em> matrix with <span class=\"math\">\\(\\|A\\| = 2\\)</span>, is it possible that <span class=\"math\">\\(A\\begin{bmatrix} 1 \\\\ 0\\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 3 \\end{bmatrix}\\)</span>? Give a reason.</p>\n", 
+    "statement_latex": "If \\emph{A} is a \\emph{2 x 2} matrix with $\\|A\\| = 2$, is it possible\nthat\n$A\\begin{bmatrix} 1 \\\\ 0\\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 3 \\end{bmatrix}$?\nGive a reason.", 
+    "statement_raw": "If ''A'' is a ''2 x 2'' matrix with &lt;math>\\|A\\| = 2&lt;/math>, is it possible that &lt;math>A\\begin{bmatrix} 1 \\\\ 0\\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 3 \\end{bmatrix}&lt;/math>? Give a reason.\n", 
+    "term": "April", 
+    "topics": [
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_01_(c)", 
+    "year": 2013
 }

@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(c)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nc)\n$f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&\\text{if}\\,\\, x < 1 \\\\ \\sqrt{x} \\,\\,&\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,$\nis continuous at all real numbers.", 
-    "year": 2013, 
-    "sols": [
-        "\\textbf{False:} To hunt for discontinuities, we have to check inside\neach piece and also at the boundary.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  For the boundary to be continuous, we must have:\n\n  \\begin{align*}\n  \\lim_{x\\rightarrow 1^-} f(x) &=\\lim_{x\\rightarrow 1^+} f(x)\\\\\n  \\lim_{x\\rightarrow 1^-} \\frac{3}{x+2} &=\\lim_{x\\rightarrow 1^+} \\sqrt{x}\\\\\n  \\frac{3}{1+2} &=\\sqrt{1} \\\\\n  1&=1.\\end{align*}\n\n  So the limits exists and is equal to $1$ which happens to be\n  $f(1) =1$. So the function in continuous at the boundary.\n\\item\n  On the right of $x=1$, the function is continuous since $\\sqrt{x}$ is\n  only undefined for $x<0$ which is not covered by this case.\n\\item\n  On the left of $x=1$, the function is discontinuous at $x=-2$ since\n  the denominator is $0$. This fall inside the region considered. So\n  $f(x)$ is discontinuous at $x=-2$.\n\\end{itemize}\n\nThat means $f(x)$ is NOT continuous over all real numbers."
+    "answer_html": "<p>That means <span class=\"math\">\\(f(x)\\)</span> is NOT continuous over all real numbers.</p>\n", 
+    "answer_latex": "That means $f(x)$ is NOT continuous over all real numbers.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>You need to check three things:</p>\n<p>1. That the function is continue at the break point given by <span class=\"math\">\\(x=1\\)</span></p>\n<p>2. That the right hand side of the function is continuous at all points larger than 1.</p>\n<p>3. That the left hand side of the function is continuous at all points smaller than 1.</p>\n"
+    ], 
+    "hints_latex": [
         "You need to check three things:\n\n1. That the function is continue at the break point given by $x=1$\n\n2. That the right hand side of the function is continuous at all points\nlarger than 1.\n\n3. That the left hand side of the function is continuous at all points\nsmaller than 1."
-    ]
+    ], 
+    "hints_raw": [
+        "You need to check three things:\n\n1. That the function is continue at the break point given by &lt;math>x=1&lt;/math>\n\n2. That the right hand side of the function is continuous at all points larger than 1.\n\n3. That the left hand side of the function is continuous at all points smaller than 1.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>False:</strong> To hunt for discontinuities, we have to check inside each piece and also at the boundary.</p>\n<ol>\n<li><p>For the boundary to be continuous, we must have:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 1^-} f(x) &amp;=\\lim_{x\\rightarrow 1^+} f(x)\\\\\n  \\lim_{x\\rightarrow 1^-} \\frac{3}{x+2} &amp;=\\lim_{x\\rightarrow 1^+} \\sqrt{x}\\\\\n  \\frac{3}{1+2} &amp;=\\sqrt{1} \\\\\n  1&amp;=1.\\end{aligned}\\]</span></p>\n<p>So the limits exists and is equal to <span class=\"math\">\\(1\\)</span> which happens to be <span class=\"math\">\\(f(1) =1\\)</span>. So the function in continuous at the boundary.</p></li>\n<li><p>On the right of <span class=\"math\">\\(x=1\\)</span>, the function is continuous since <span class=\"math\">\\(\\sqrt{x}\\)</span> is only undefined for <span class=\"math\">\\(x&lt;0\\)</span> which is not covered by this case.</p></li>\n<li><p>On the left of <span class=\"math\">\\(x=1\\)</span>, the function is discontinuous at <span class=\"math\">\\(x=-2\\)</span> since the denominator is <span class=\"math\">\\(0\\)</span>. This fall inside the region considered. So <span class=\"math\">\\(f(x)\\)</span> is discontinuous at <span class=\"math\">\\(x=-2\\)</span>.</p></li>\n</ol>\n<p>That means <span class=\"math\">\\(f(x)\\)</span> is NOT continuous over all real numbers.</p>\n"
+    ], 
+    "sols_latex": [
+        "\\textbf{False:} To hunt for discontinuities, we have to check inside\neach piece and also at the boundary.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  For the boundary to be continuous, we must have:\n\n  \\begin{align*}\n\\lim_{x\\rightarrow 1^-} f(x) &=\\lim_{x\\rightarrow 1^+} f(x)\\\\\n  \\lim_{x\\rightarrow 1^-} \\frac{3}{x+2} &=\\lim_{x\\rightarrow 1^+} \\sqrt{x}\\\\\n  \\frac{3}{1+2} &=\\sqrt{1} \\\\\n  1&=1.\n\\end{align*}\n\n  So the limits exists and is equal to $1$ which happens to be\n  $f(1) =1$. So the function in continuous at the boundary.\n\\item\n  On the right of $x=1$, the function is continuous since $\\sqrt{x}$ is\n  only undefined for $x<0$ which is not covered by this case.\n\\item\n  On the left of $x=1$, the function is discontinuous at $x=-2$ since\n  the denominator is $0$. This fall inside the region considered. So\n  $f(x)$ is discontinuous at $x=-2$.\n\\end{enumerate}\n\nThat means $f(x)$ is NOT continuous over all real numbers."
+    ], 
+    "sols_raw": [
+        "&lt;span>'''False:'''&lt;/span> To hunt for discontinuities, we have to check inside each piece and also at the boundary.\n\n&lt;ul>\n&lt;li>&lt;p>For the boundary to be continuous, we must have:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\n\\lim_{x\\rightarrow 1^-} f(x) &amp;=\\lim_{x\\rightarrow 1^+} f(x)\\\\\n\\lim_{x\\rightarrow 1^-} \\frac{3}{x+2} &amp;=\\lim_{x\\rightarrow 1^+} \\sqrt{x}\\\\\n\\frac{3}{1+2} &amp;=\\sqrt{1} \\\\\n1&amp;=1.\\end{align}&lt;/math>&lt;/p>\n&lt;p>So the limits exists and is equal to &lt;math>1&lt;/math> which happens to be &lt;math>f(1) =1&lt;/math>. So the function in continuous at the boundary.&lt;/p>&lt;/li>\n&lt;li>&lt;p>On the right of &lt;math>x=1&lt;/math>, the function is continuous since &lt;math>\\sqrt{x}&lt;/math> is only undefined for &lt;math>x&lt;0&lt;/math> which is not covered by this case.&lt;/p>&lt;/li>\n&lt;li>&lt;p>On the left of &lt;math>x=1&lt;/math>, the function is discontinuous at &lt;math>x=-2&lt;/math> since the denominator is &lt;math>0&lt;/math>. This fall inside the region considered. So &lt;math>f(x)&lt;/math> is discontinuous at &lt;math>x=-2&lt;/math>.&lt;/p>&lt;/li>&lt;/ul>\n\nThat means &lt;math>f(x)&lt;/math> is NOT continuous over all real numbers.\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>c) <span class=\"math\">\\(f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&amp;\\text{if}\\,\\, x &lt; 1 \\\\ \\sqrt{x} \\,\\,&amp;\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,\\)</span> is continuous at all real numbers.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nc)\n$f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&\\text{if}\\,\\, x < 1 \\\\ \\sqrt{x} \\,\\,&\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,$\nis continuous at all real numbers.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\n&lt;b>c)&lt;/b> &lt;math>f(x) = \\begin{cases} \\frac{3}{x + 2} \\,\\,&amp;\\text{if}\\,\\, x &lt; 1 \\\\ \\sqrt{x} \\,\\,&amp;\\text{if}\\,\\, x \\ge 1 \\end{cases}\\,\\,\\,&lt;/math> is continuous at all real numbers.\n", 
+    "term": "December", 
+    "topics": [
+        "Continuity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_01_(c)", 
+    "year": 2013
 }

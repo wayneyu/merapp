@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH103", 
-    "statement": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(a)} The value of the integral\n\n\\begin{align*}\\int_0^1 e^{(x+e^x)}\\,dx\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle {} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)}$\n\n\\emph{(ii)} ~ $\\displaystyle {} e^e-e$\n\n\\emph{(iii)} ~ $\\displaystyle {} e^e+e$\n\n\\emph{(iv)} ~ $\\displaystyle {} e^{e+1}$\n\n\\emph{(v)} ~ $\\displaystyle {} (1-e)e$\n\\end{description}", 
-    "year": 2005, 
-    "sols": [
-        "Rewrite the integral as\n\n$\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.$\n\nLet $u=e^{x}$. Then $du=e^{x}dx$, and our new endpoints of integration\nare\n\n$e^{1}=e \\qquad\\text{ and }\\qquad e^{0}=1.$\n\nThus, our integral becomes\n\n$\\int_{1}^{e} e^{u}du=e^{u}\\mid _{1}^{e}=e^e-e.$\n\nTherefore, the correct answer is (ii)."
+    "answer_html": "<p>Therefore, the correct answer is (ii).</p>\n", 
+    "answer_latex": "Therefore, the correct answer is (ii).", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Rewrite the integral as <span class=\"math\">\\(\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.\\)</span></p>\n", 
+        "<p>Use the substitution <span class=\"math\">\\(\\displaystyle u=e^{x}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Rewrite the integral as\n$\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.$", 
         "Use the substitution $\\displaystyle u=e^{x}$."
-    ]
+    ], 
+    "hints_raw": [
+        "Rewrite the integral as\n&lt;math>\n\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.\n&lt;/math>\n", 
+        "Use the substitution &lt;math>\\displaystyle u=e^{x}&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>Rewrite the integral as</p>\n<p><span class=\"math\">\\(\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.\\)</span></p>\n<p>Let <span class=\"math\">\\(u=e^{x}\\)</span>. Then <span class=\"math\">\\(du=e^{x}dx\\)</span>, and our new endpoints of integration are</p>\n<p><span class=\"math\">\\(e^{1}=e \\qquad\\text{ and }\\qquad e^{0}=1.\\)</span></p>\n<p>Thus, our integral becomes</p>\n<p><span class=\"math\">\\(\\int_{1}^{e} e^{u}du=e^{u}\\mid _{1}^{e}=e^e-e.\\)</span></p>\n<p>Therefore, the correct answer is (ii).</p>\n"
+    ], 
+    "sols_latex": [
+        "Rewrite the integral as\n\n$\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.$\n\nLet $u=e^{x}$. Then $du=e^{x}dx$, and our new endpoints of integration\nare\n\n$e^{1}=e \\qquad\\text{ and }\\qquad e^{0}=1.$\n\nThus, our integral becomes\n\n$\\int_{1}^{e} e^{u}du=e^{u}\\mid _{1}^{e}=e^e-e.$\n\nTherefore, the correct answer is (ii)."
+    ], 
+    "sols_raw": [
+        "Rewrite the integral as \n\n&lt;math>\n\\int_{0}^{1} e^{(x+e^{x})}dx=\\int_{0}^{1} e^{x}e^{e^{x}}dx.\n&lt;/math>\n\nLet &lt;math>u=e^{x}&lt;/math>. Then &lt;math>du=e^{x}dx&lt;/math>, and our new endpoints of integration are\n\n&lt;math>\ne^{1}=e \\qquad\\text{ and }\\qquad e^{0}=1.\n&lt;/math>\n\nThus, our integral becomes \n\n&lt;math>\n\\int_{1}^{e} e^{u}du=e^{u}\\mid _{1}^{e}=e^e-e.\n&lt;/math>\n\nTherefore, the correct answer is (ii).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Multiple Choice Question: Select <strong>ONE</strong> correct answer <em>(i)</em>, <em>(ii)</em>, <em>(iii)</em>, <em>(iv)</em>, or <em>(v)</em>.</p>\n<p><strong>(a)</strong> The value of the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1 e^{(x+e^x)}\\,dx\\end{aligned}\\]</span></p>\n<p>is</p>\n<dl>\n\n<dd><p><em>(i)</em> &#160; <span class=\"math\">\\(\\displaystyle {} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)}\\)</span></p>\n<p><em>(ii)</em> &#160; <span class=\"math\">\\(\\displaystyle {} e^e-e\\)</span></p>\n<p><em>(iii)</em> &#160; <span class=\"math\">\\(\\displaystyle {} e^e+e\\)</span></p>\n<p><em>(iv)</em> &#160; <span class=\"math\">\\(\\displaystyle {} e^{e+1}\\)</span></p>\n<p><em>(v)</em> &#160; <span class=\"math\">\\(\\displaystyle {} (1-e)e\\)</span></p>\n</dd>\n</dl>\n", 
+    "statement_latex": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(a)} The value of the integral\n\n\\begin{align*}\n\\int_0^1 e^{(x+e^x)}\\,dx\n\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle {} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)}$\n\n\\emph{(ii)} ~ $\\displaystyle {} e^e-e$\n\n\\emph{(iii)} ~ $\\displaystyle {} e^e+e$\n\n\\emph{(iv)} ~ $\\displaystyle {} e^{e+1}$\n\n\\emph{(v)} ~ $\\displaystyle {} (1-e)e$\n\\end{description}", 
+    "statement_raw": "Multiple Choice Question: Select '''ONE''' correct answer ''(i)'', ''(ii)'', ''(iii)'', ''(iv)'', or ''(v)''.\n\n'''(a)''' The value of the integral\n:&lt;math>\n\\int_0^1 e^{(x+e^x)}\\,dx\n&lt;/math>\nis\n\n:''(i)'' &amp;nbsp; &lt;math>\\displaystyle{} \\frac{e^{(x+e^x+1)}}{(x+e^x+1)} &lt;/math>\n:''(ii)'' &amp;nbsp; &lt;math>\\displaystyle{} e^e-e &lt;/math> \n:''(iii)'' &amp;nbsp; &lt;math>\\displaystyle{} e^e+e &lt;/math> \n:''(iv)'' &amp;nbsp; &lt;math>\\displaystyle{} e^{e+1} &lt;/math> \n:''(v)'' &amp;nbsp; &lt;math>\\displaystyle{} (1-e)e &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_01_(a)", 
+    "year": 2005
 }

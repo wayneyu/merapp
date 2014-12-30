@@ -1,0 +1,49 @@
+{
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dS}{dt}={\\color{blue} \\frac{12}{5} \\, \\text{cm}/\\text{s} }\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dS}{dt}={\\color{blue} \\frac{12}{5} \\, \\text{cm}/\\text{s} }$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>You may need the following formula (the <em>cosine law</em>):</p>\n<p><span class=\"math\">\\(a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\theta~\\)</span></p>\n", 
+        "<p>Apply <strong>implicit differentiation</strong> with respect to time. Note that <span class=\"math\">\\(\\displaystyle S\\)</span> and <span class=\"math\">\\(\\displaystyle \\theta\\)</span> are functions of time (the other sides have fixed, or constant lengths).</p>\n"
+    ], 
+    "hints_latex": [
+        "You may need the following formula (the \\emph{cosine law}):\n\n$a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\theta~$", 
+        "Apply \\textbf{implicit differentiation} with respect to time. Note that\n$\\displaystyle S$ and $\\displaystyle \\theta$ are functions of time (the\nother sides have fixed, or constant lengths)."
+    ], 
+    "hints_raw": [
+        "You may need the following formula (the ''cosine law''):\n\n&lt;math>a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\theta~&lt;/math>\n", 
+        "Apply '''implicit differentiation''' with respect to time. Note that &lt;math>\\displaystyle S&lt;/math> and &lt;math>\\displaystyle \\theta&lt;/math> are functions of time (the other sides have fixed, or constant lengths).\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 02", 
+    "rating": 73, 
+    "sols_html": [
+        "<p>Following the hint, we recall the <strong>cosine law</strong>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na^2 &amp;= b^2 + c^2 - 2bc \\cdot \\cos\\theta\n\\\\ S^2 &amp;= 3^2 + 4^2 - 2(3)(4) \\cdot \\cos\\theta\n\\\\ S^2 &amp;= 25 - 24 \\cos\\theta\\end{aligned}\\]</span></p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH102/December_2013/MATH102_December_2013_B_02.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Differentiating implicitly with respect to time,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dt}(S^2) &amp;= \\frac{d}{dt} (25 - 24 \\cos\\theta)\n\\\\ 2S \\cdot \\frac{dS}{dt} &amp;= 24 \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ \\frac{dS}{dt} &amp;= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\\end{aligned}\\]</span></p>\n<p>At the time in question, we are given that <span class=\"math\">\\(\\theta = \\frac{\\pi}{2}, \\, \\frac{d\\theta}{dt} = 1\\)</span>. From the cosine law above, we also have <span class=\"math\">\\(\\displaystyle S = 5\\)</span>, when <span class=\"math\">\\(\\theta = \\frac{\\pi}{2}\\)</span>. Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dS}{dt} &amp;= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ &amp;= \\frac{12}{5} \\sin\\left(\\frac{\\pi}{2}\\right) \\cdot 1\n\\\\ &amp;= {\\color{blue} \\frac{12}{5} \\, \\text{cm}/\\text{s} }\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Following the hint, we recall the \\textbf{cosine law}:\n\n\\begin{align*}\na^2 &= b^2 + c^2 - 2bc \\cdot \\cos\\theta\n\\\\ S^2 &= 3^2 + 4^2 - 2(3)(4) \\cdot \\cos\\theta\n\\\\ S^2 &= 25 - 24 \\cos\\theta\n\\end{align*}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH102/December_2013/MATH102_December_2013_B_02.jpg}\n\\end{description}\n\nDifferentiating implicitly with respect to time,\n\n\\begin{align*}\n\\frac{d}{dt}(S^2) &= \\frac{d}{dt} (25 - 24 \\cos\\theta)\n\\\\ 2S \\cdot \\frac{dS}{dt} &= 24 \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ \\frac{dS}{dt} &= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\end{align*}\n\nAt the time in question, we are given that\n$\\theta = \\frac{\\pi}{2}, \\, \\frac{d\\theta}{dt} = 1$. From the cosine law\nabove, we also have $\\displaystyle S = 5$, when\n$\\theta = \\frac{\\pi}{2}$. Therefore\n\n\\begin{align*}\n\\frac{dS}{dt} &= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ &= \\frac{12}{5} \\sin\\left(\\frac{\\pi}{2}\\right) \\cdot 1\n\\\\ &= {\\color{blue} \\frac{12}{5} \\, \\text{cm}/\\text{s} }\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Following the hint, we recall the '''cosine law''':\n:&lt;math>\n\\begin{align}\na^2 &amp;= b^2 + c^2 - 2bc \\cdot \\cos\\theta\n\\\\ S^2 &amp;= 3^2 + 4^2 - 2(3)(4) \\cdot \\cos\\theta\n\\\\ S^2 &amp;= 25 - 24 \\cos\\theta\n\\end{align}\n&lt;/math>\n\n\n:[[File:MATH102 December 2013 B 02.jpg|300px]]\n\nDifferentiating implicitly with respect to time,\n\n&lt;math>\n\\begin{align}\n\\frac{d}{dt}(S^2) &amp;= \\frac{d}{dt} (25 - 24 \\cos\\theta)\n\\\\ 2S \\cdot \\frac{dS}{dt} &amp;= 24 \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ \\frac{dS}{dt} &amp;= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\end{align}\n&lt;/math>\n\nAt the time in question, we are given that &lt;math>\\theta = \\frac{\\pi}{2}, \\, \\frac{d\\theta}{dt} = 1&lt;/math>. From the cosine law above, we also have &lt;math>\\displaystyle S = 5&lt;/math>, when &lt;math>\\theta = \\frac{\\pi}{2}&lt;/math>. Therefore\n\n&lt;math>\n\\begin{align}\n\\frac{dS}{dt} &amp;= \\frac{12}{S} \\sin\\theta \\cdot \\frac{d\\theta}{dt}\n\\\\ &amp;= \\frac{12}{5} \\sin\\left(\\frac{\\pi}{2}\\right) \\cdot 1\n\\\\ &amp;= {\\color{blue} \\frac{12}{5} \\, \\text{cm}/\\text{s} }\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "NicholasHu"
+    ], 
+    "statement_html": "<p>A triangle has two sides with fixed lengths 3 cm and 4 cm respectively. The angle between them changes at a constant rate of 1 radian/sec. How quickly is the length of the third side (S) changing when the angle between the sides of fixed length is <span class=\"math\">\\(\\pi/2\\)</span> ?</p>\n", 
+    "statement_latex": "A triangle has two sides with fixed lengths 3 cm and 4 cm respectively.\nThe angle between them changes at a constant rate of 1 radian/sec. How\nquickly is the length of the third side (S) changing when the angle\nbetween the sides of fixed length is $\\pi/2$ ?", 
+    "statement_raw": "A triangle has two sides with fixed lengths 3 cm and 4 cm respectively.  The angle between them changes at a constant rate of 1 radian/sec.  How quickly is the length of the third side (S) changing when the angle between the sides of fixed length is &lt;math>\\pi/2&lt;/math> ?\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_B_02", 
+    "year": 2013
+}

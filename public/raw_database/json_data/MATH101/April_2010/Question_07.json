@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_07", 
-    "course": "MATH101", 
-    "statement": "Find the solution of the differential equation\n\n\\begin{align*}\\frac{dL}{dt}=kL^{2}\\ln t\\end{align*}\n\nthat satisfies $L(1)=1$. Here, $k$ is a constant that will appear in\nyour final answer.", 
-    "year": 2010, 
-    "sols": [
-        "Beginning with the equation\n\n\\begin{align*}\\frac{dL}{dt} = kL^2\\ln t\\end{align*}\n\nwe separate the variables $L$ and $t$ to obtain\n\n\\begin{align*}\\frac{1}{L^2}dL = k \\ln t \\,dt\\end{align*}\n\nIf we then integrate both sides of this equation (ignoring the constant\nof integration in the first case) we find that\n\n\\begin{align*}\\int \\frac{1}{L^2}dL = -\\frac{1}{L}\\end{align*}\n\nand using integration by parts we find that\n\n\\begin{align*}\\int k \\ln t \\, dt =  k (t \\ln t - t) + C\\end{align*}\n\nand so if we set the two of these equal to each other we find that\n\n\\begin{align*}-\\frac{1}{L} = k(t \\ln t - t) + C\\end{align*}\n\nIf we solve for $L$ we find\n\n\\begin{align*}L = - \\frac{1}{k(t \\ln t - t) + C}\\end{align*}\n\nSince $L(1) = 1$ it follows that $C = k - 1$ and so\n\n\\begin{align*}L(t) = -\\frac{1}{k(t\\ln t - t) + k - 1}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(L(t)=-\\frac{1}{k(t\\ln t - t) + k - 1}\\)</span></p>\n", 
+    "answer_latex": " $L(t)=-\\frac{1}{k(t\\ln t - t) + k - 1}$ ", 
+    "contributors": [
+        "Simontse", 
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Can you separate the variables <span class=\"math\">\\(L\\)</span> and <span class=\"math\">\\(t\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "Can you separate the variables $L$ and $t$?"
-    ]
+    ], 
+    "hints_raw": [
+        "Can you separate the variables &lt;math>L&lt;/math> and &lt;math>t&lt;/math>?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "7", 
+    "rating": 53, 
+    "sols_html": [
+        "<p>Beginning with the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dL}{dt} = kL^2\\ln t\\end{aligned}\\]</span></p>\n<p>we separate the variables <span class=\"math\">\\(L\\)</span> and <span class=\"math\">\\(t\\)</span> to obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{L^2}dL = k \\ln t \\,dt\\end{aligned}\\]</span></p>\n<p>If we then integrate both sides of this equation (ignoring the constant of integration in the first case) we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{1}{L^2}dL = -\\frac{1}{L}\\end{aligned}\\]</span></p>\n<p>and using integration by parts we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int k \\ln t \\, dt =  k (t \\ln t - t) + C\\end{aligned}\\]</span></p>\n<p>and so if we set the two of these equal to each other we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{1}{L} = k(t \\ln t - t) + C\\end{aligned}\\]</span></p>\n<p>If we solve for <span class=\"math\">\\(L\\)</span> we find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL = - \\frac{1}{k(t \\ln t - t) + C}\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(L(1) = 1\\)</span> it follows that <span class=\"math\">\\(C = k - 1\\)</span> and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL(t) = -\\frac{1}{k(t\\ln t - t) + k - 1}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Beginning with the equation\n\n\\begin{align*}\n\\frac{dL}{dt} = kL^2\\ln t\n\\end{align*}\n\nwe separate the variables $L$ and $t$ to obtain\n\n\\begin{align*}\n\\frac{1}{L^2}dL = k \\ln t \\,dt\n\\end{align*}\n\nIf we then integrate both sides of this equation (ignoring the constant\nof integration in the first case) we find that\n\n\\begin{align*}\n\\int \\frac{1}{L^2}dL = -\\frac{1}{L}\n\\end{align*}\n\nand using integration by parts we find that\n\n\\begin{align*}\n\\int k \\ln t \\, dt =  k (t \\ln t - t) + C\n\\end{align*}\n\nand so if we set the two of these equal to each other we find that\n\n\\begin{align*}\n-\\frac{1}{L} = k(t \\ln t - t) + C\n\\end{align*}\n\nIf we solve for $L$ we find\n\n\\begin{align*}\nL = - \\frac{1}{k(t \\ln t - t) + C}\n\\end{align*}\n\nSince $L(1) = 1$ it follows that $C = k - 1$ and so\n\n\\begin{align*}\nL(t) = -\\frac{1}{k(t\\ln t - t) + k - 1}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Beginning with the equation\n\n:&lt;math> \\frac{dL}{dt} = kL^2\\ln t &lt;/math>\n\nwe separate the variables &lt;math>L&lt;/math> and &lt;math>t&lt;/math> to obtain\n\n:&lt;math> \\frac{1}{L^2}dL = k \\ln t \\,dt&lt;/math>\n\nIf we then integrate both sides of this equation (ignoring the constant of integration in the first case) we find that\n\n:&lt;math> \\int \\frac{1}{L^2}dL = -\\frac{1}{L}&lt;/math>\n\nand using integration by parts we find that\n\n:&lt;math> \\int k \\ln t \\, dt =  k (t \\ln t - t) + C&lt;/math>\n\nand so if we set the two of these equal to each other we find that\n\n:&lt;math> -\\frac{1}{L} = k(t \\ln t - t) + C &lt;/math>\n\nIf we solve for &lt;math>L&lt;/math> we find\n\n:&lt;math> L = - \\frac{1}{k(t \\ln t - t) + C}&lt;/math>\n\nSince &lt;math>L(1) = 1&lt;/math> it follows that &lt;math> C = k - 1&lt;/math> and so\n\n:&lt;math> L(t) = -\\frac{1}{k(t\\ln t - t) + k - 1}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p>Find the solution of the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dL}{dt}=kL^{2}\\ln t\\end{aligned}\\]</span></p>\n<p>that satisfies <span class=\"math\">\\(L(1)=1\\)</span>. Here, <span class=\"math\">\\(k\\)</span> is a constant that will appear in your final answer.</p>\n", 
+    "statement_latex": "Find the solution of the differential equation\n\n\\begin{align*}\n\\frac{dL}{dt}=kL^{2}\\ln t\n\\end{align*}\n\nthat satisfies $L(1)=1$. Here, $k$ is a constant that will appear in\nyour final answer.", 
+    "statement_raw": "Find the solution of the differential equation\n\n:&lt;math> \\frac{dL}{dt}=kL^{2}\\ln t &lt;/math>\n\nthat satisfies &lt;math> L(1)=1 &lt;/math>. Here, &lt;math>k&lt;/math> is a constant that will appear in your final answer.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_07", 
+    "year": 2010
 }

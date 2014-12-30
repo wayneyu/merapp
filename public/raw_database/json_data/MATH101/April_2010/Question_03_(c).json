@@ -1,15 +1,56 @@
 {
-    "term": "April", 
-    "question": "Question_03_(c)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral:\n\n\\begin{align*}\\int x \\tan^{-1}x\\,dx.\\end{align*}\n\nNote: tan\\textsuperscript{-1}(\\emph{x}) is also denoted by\narctan(\\emph{x}).", 
-    "year": 2010, 
-    "sols": [
-        "For the integral\n\n\\begin{align*}\\int x\\arctan(x)\\, dx,\\end{align*}\n\nwe start by using integration by parts. Let\n\n\\begin{align*}\nu = \\arctan(x) \\quad & \\quad v = \\frac{x^{2}}{2} \\\\\ndu = \\frac{dx}{1 + x^{2}} \\quad & \\quad dv = xdx\\end{align*}\n\nThis gives\n\n\\begin{align*}\\int x\\arctan(x)\\, dx = \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx\\end{align*}\n\nTo evaluate the last integral, we use the fact that\n$x^{2} = 1 + x^{2} - 1$ to see that\n\n\\begin{align*}\n\\int x\\arctan(x)\\, dx &= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{1 + x^{2} - 1}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int\\, dx + \\frac{1}{2}\\int \\frac{ 1}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C\\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\int x\\arctan(x)\\, dx=\\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $\\int x\\arctan(x)\\, dx=\\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C$ completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Notice that <span class=\"math\">\\(\\arctan(x)\\)</span> has an easy derivative. How can we exploit this?</p>\n", 
+        "<p>Try starting with integration by parts.</p>\n", 
+        "<p>A clever last trick is to note that <span class=\"math\">\\(x^{2} = 1 + x^{2} - 1\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Notice that $\\arctan(x)$ has an easy derivative. How can we exploit\nthis?", 
         "Try starting with integration by parts.", 
         "A clever last trick is to note that $x^{2} = 1 + x^{2} - 1$"
-    ]
+    ], 
+    "hints_raw": [
+        "Notice that &lt;math> \\arctan(x) &lt;/math> has an easy derivative. How can we exploit this?\n", 
+        "Try starting with integration by parts.\n", 
+        "A clever last trick is to note that &lt;math> x^{2} = 1 + x^{2} - 1 &lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "3 (c)", 
+    "rating": 63, 
+    "sols_html": [
+        "<p>For the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x\\arctan(x)\\, dx,\\end{aligned}\\]</span></p>\n<p>we start by using integration by parts. Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = \\arctan(x) \\quad &amp; \\quad v = \\frac{x^{2}}{2} \\\\\ndu = \\frac{dx}{1 + x^{2}} \\quad &amp; \\quad dv = xdx\\end{aligned}\\]</span></p>\n<p>This gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x\\arctan(x)\\, dx = \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx\\end{aligned}\\]</span></p>\n<p>To evaluate the last integral, we use the fact that <span class=\"math\">\\(x^{2} = 1 + x^{2} - 1\\)</span> to see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x\\arctan(x)\\, dx &amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{1 + x^{2} - 1}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int\\, dx + \\frac{1}{2}\\int \\frac{ 1}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "For the integral\n\n\\begin{align*}\n\\int x\\arctan(x)\\, dx,\n\\end{align*}\n\nwe start by using integration by parts. Let\n\n\\begin{align*}\nu = \\arctan(x) \\quad & \\quad v = \\frac{x^{2}}{2} \\\\\ndu = \\frac{dx}{1 + x^{2}} \\quad & \\quad dv = xdx\n\\end{align*}\n\nThis gives\n\n\\begin{align*}\n\\int x\\arctan(x)\\, dx = \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx\n\\end{align*}\n\nTo evaluate the last integral, we use the fact that\n$x^{2} = 1 + x^{2} - 1$ to see that\n\n\\begin{align*}\n\\int x\\arctan(x)\\, dx &= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{1 + x^{2} - 1}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int\\, dx + \\frac{1}{2}\\int \\frac{ 1}{1 + x^{2}}\\, dx \\\\\n&= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "For the integral\n\n:&lt;math>\n\\int x\\arctan(x)\\, dx,\n&lt;/math>\n\nwe start by using integration by parts. Let \n\n:&lt;math>\n\\begin{align}\nu = \\arctan(x) \\quad &amp; \\quad v = \\frac{x^{2}}{2} \\\\\ndu = \\frac{dx}{1 + x^{2}} \\quad &amp; \\quad dv = xdx\n\\end{align}\n&lt;/math> \n\nThis gives\n\n:&lt;math>\n\\int x\\arctan(x)\\, dx = \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx\n&lt;/math>\n\nTo evaluate the last integral, we use the fact that &lt;math> x^{2} = 1 + x^{2} - 1 &lt;/math> to see that\n\n:&lt;math>\n\\begin{align}\n\\int x\\arctan(x)\\, dx &amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{x^{2}}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int \\frac{1 + x^{2} - 1}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}\\int\\, dx + \\frac{1}{2}\\int \\frac{ 1}{1 + x^{2}}\\, dx \\\\\n&amp;= \\arctan(x)\\frac{x^{2}}{2} - \\frac{1}{2}x + \\frac{1}{2}\\arctan(x) + C\n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answer and <strong>show all your work.</strong> Simplification of the answer is not required.</p>\n<p>Evaluate the following integral:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x \\tan^{-1}x\\,dx.\\end{aligned}\\]</span></p>\n<p>Note: tan<sup>-1</sup>(<em>x</em>) is also denoted by arctan(<em>x</em>).</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral:\n\n\\begin{align*}\n\\int x \\tan^{-1}x\\,dx.\n\\end{align*}\n\nNote: tan\\textsuperscript{-1}(\\emph{x}) is also denoted by\narctan(\\emph{x}).", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nEvaluate the following integral:\n:&lt;math>\n\\int x \\tan^{-1}x\\,dx.\n&lt;/math>\n\nNote: tan&lt;sup>-1&lt;/sup>(''x'') is also denoted by arctan(''x'').\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_03_(c)", 
+    "year": 2010
 }

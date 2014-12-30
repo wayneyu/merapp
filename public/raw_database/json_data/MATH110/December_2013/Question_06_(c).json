@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_06_(c)", 
-    "course": "MATH110", 
-    "statement": "Consider the\nfunction\\begin{align*}f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{align*}\n\n\\textbf{(c)} How many solutions are there to the equation\n$\\displaystyle f'(x)=0$? Justify your answer.", 
-    "year": 2013, 
-    "sols": [
-        "Recall that\n\n$\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.$\n\nFrom\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)}{part\n(a)}, we know that $e^{x^3 + 2x^2 + x - 3}\\neq 0$. That implies that\n$\\displaystyle f'(x) = 0$ when $3x^2 + 4x + 1=0$. Factoring, we get\n$(3x+1)(x+1)=0$, which means $x=-\\frac{1}{3},-1$. That means there are\ntwo solutions for when $\\displaystyle f'(x)=0$."
+    "answer_html": "<p>That means there are two solutions for when <span class=\"math\">\\(\\displaystyle f&#39;(x)=0\\)</span>.</p>\n", 
+    "answer_latex": "That means there are\ntwo solutions for when $\\displaystyle f'(x)=0$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
-        "The derivative was computed in\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(b)}{part\n(b)}:\n\n\\begin{align*}\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.\\end{align*}\n\nNow set the derivative and solve. This can be done either by factoring\nor using the quadratic formula."
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The derivative was computed in <span>part (b)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.\\end{aligned}\\]</span></p>\n<p>Now set the derivative and solve. This can be done either by factoring or using the quadratic formula.</p>\n"
+    ], 
+    "hints_latex": [
+        "The derivative was computed in\n{part\n(b)}:\n\n\\begin{align*}\n\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.\n\\end{align*}\n\nNow set the derivative and solve. This can be done either by factoring\nor using the quadratic formula."
+    ], 
+    "hints_raw": [
+        "The derivative was computed in [[Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(b)|part (b)]]:\n\n:&lt;math>\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.&lt;/math>\n\nNow set the derivative and solve. This can be done either by factoring or using the quadratic formula.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Recall that</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.\\)</span></p>\n<p>From <span>part (a)</span>, we know that <span class=\"math\">\\(e^{x^3 + 2x^2 + x - 3}\\neq 0\\)</span>. That implies that <span class=\"math\">\\(\\displaystyle f&#39;(x) = 0\\)</span> when <span class=\"math\">\\(3x^2 + 4x + 1=0\\)</span>. Factoring, we get <span class=\"math\">\\((3x+1)(x+1)=0\\)</span>, which means <span class=\"math\">\\(x=-\\frac{1}{3},-1\\)</span>. That means there are two solutions for when <span class=\"math\">\\(\\displaystyle f&#39;(x)=0\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Recall that\n\n$\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.$\n\nFrom\n{part\n(a)}, we know that $e^{x^3 + 2x^2 + x - 3}\\neq 0$. That implies that\n$\\displaystyle f'(x) = 0$ when $3x^2 + 4x + 1=0$. Factoring, we get\n$(3x+1)(x+1)=0$, which means $x=-\\frac{1}{3},-1$. That means there are\ntwo solutions for when $\\displaystyle f'(x)=0$."
+    ], 
+    "sols_raw": [
+        "Recall that\n\n&lt;math>\\displaystyle f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}.&lt;/math>\n\nFrom [[Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)|part (a)]], we know that &lt;math>e^{x^3 + 2x^2 + x - 3}\\neq 0&lt;/math>. That implies that &lt;math>\\displaystyle f'(x) = 0&lt;/math> when &lt;math>3x^2 + 4x + 1=0&lt;/math>. Factoring, we get &lt;math>(3x+1)(x+1)=0&lt;/math>, which means &lt;math>x=-\\frac{1}{3},-1&lt;/math>. That means there are two solutions for when &lt;math>\\displaystyle f'(x)=0&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> How many solutions are there to the equation <span class=\"math\">\\(\\displaystyle f&#39;(x)=0\\)</span>? Justify your answer.</p>\n", 
+    "statement_latex": "Consider the\nfunction\\begin{align*}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\n\\end{align*}\n\n\\textbf{(c)} How many solutions are there to the equation\n$\\displaystyle f'(x)=0$? Justify your answer.", 
+    "statement_raw": "Consider the function: &lt;math>f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.&lt;/math>\n\n'''(c)''' How many solutions are there to the equation &lt;math>\\displaystyle f'(x)=0&lt;/math>? Justify your answer.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(c)", 
+    "year": 2013
 }

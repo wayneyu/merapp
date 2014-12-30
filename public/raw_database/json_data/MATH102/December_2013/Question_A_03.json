@@ -1,0 +1,49 @@
+{
+    "answer_html": "<p>By applying <strong>Euler&#8217;s method</strong> with a step size of <span class=\"math\">\\(\\Delta t = 0.1\\)</span>, our next point would be at the value <span class=\"math\">\\(y(0.1) = 1.1\\)</span>, which is answer <span class=\"math\">\\({\\color{blue}\\text{(E)}}\\)</span>.</p>\n", 
+    "answer_latex": "By applying \\textbf{Euler's method} with a step size of\n$\\Delta t = 0.1$, our next point would be at the value\n$y(0.1) = 1.1$,\nwhich is answer ${\\color{blue}\\text{(E)}}$.", 
+    "contributors": [
+        "Konradbe", 
+        "NicholasHu", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p><strong>Euler&#8217;s method</strong> is an <em>iterative</em> method whereby we start with the initial value, plug it into our differential equation to find the slope, then use the slope of this tangent line to find the next point on the curve that is <span class=\"math\">\\(\\Delta t\\)</span> units away.</p>\n"
+    ], 
+    "hints_latex": [
+        "\\textbf{Euler's method} is an \\emph{iterative} method whereby we start\nwith the initial value, plug it into our differential equation to find\nthe slope, then use the slope of this tangent line to find the next\npoint on the curve that is $\\Delta t$ units away."
+    ], 
+    "hints_raw": [
+        "'''Euler's method''' is an ''iterative'' method whereby we start with the initial value, plug it into our differential equation to find the slope, then use the slope of this tangent line to find the next point on the curve that is &lt;math> \\Delta t &lt;/math> units away.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 03", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>We start at the point <span class=\"math\">\\((0,1)\\)</span>, where the slope of the tangent line at this point is</p>\n<p><span class=\"math\">\\(\\frac{dy}{dx} = 2 - y^2 = 2 - [y(0)]^{2} = 2-1 = 1\\)</span></p>\n<p>By applying <strong>Euler&#8217;s method</strong> with a step size of <span class=\"math\">\\(\\Delta t = 0.1\\)</span>, our next point would be at the value <span class=\"math\">\\(y(0.1) = y(0) + \\left.\\frac{dy}{dx}\\right|_{ x=0 }(0.1 - 0) = 1 + 0.1 = 1.1\\)</span>, which is answer <span class=\"math\">\\({\\color{blue}\\text{(E)}}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We start at the point $(0,1)$, where the slope of the tangent line at\nthis point is\n\n$\\frac{dy}{dx} = 2 - y^2 = 2 - [y(0)]^{2} = 2-1 = 1$\n\nBy applying \\textbf{Euler's method} with a step size of\n$\\Delta t = 0.1$, our next point would be at the value\n$y(0.1) = y(0) + \\left.\\frac{dy}{dx}\\right|_{ x=0 }(0.1 - 0) = 1 + 0.1 = 1.1$,\nwhich is answer ${\\color{blue}\\text{(E)}}$."
+    ], 
+    "sols_raw": [
+        "We start at the point &lt;math> (0,1) &lt;/math>, where the slope of the tangent line at this point is\n\n&lt;math> \\frac{dy}{dx} = 2 - y^2 = 2 - [y(0)]^{2} = 2-1 = 1 &lt;/math>\n\n\nBy applying '''Euler's method''' with a step size of &lt;math> \\Delta t = 0.1 &lt;/math>, our next point would be at the value &lt;math> y(0.1) = y(0) + \\left.\\frac{dy}{dx}\\right|_{ x=0 }(0.1 - 0) = 1 + 0.1 = 1.1 &lt;/math>, which is answer &lt;math>{\\color{blue} \\text{(E)}}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the differential equation and initial condition</p>\n<p><span class=\"math\">\\(\\frac{dy}{dt} = 2 - y^2,\\quad y(0) = 1\\)</span></p>\n<p>Use Euler&#8217;s method with one step of size <span class=\"math\">\\(\\Delta t = 0.1\\)</span> to approximate the value of the solution at time <span class=\"math\">\\(t = 0.1\\)</span></p>\n<p>(a) <span class=\"math\">\\(y(0.1) = 2\\)</span></p>\n<p>(b) <span class=\"math\">\\(y(0.1) = 2.1\\)</span></p>\n<p>(c) <span class=\"math\">\\(y(0.1) = 2.2\\)</span></p>\n<p>(d) <span class=\"math\">\\(y(0.1) = 1.2\\)</span></p>\n<p>(e) <span class=\"math\">\\(y(0.1) = 1.1\\)</span></p>\n", 
+    "statement_latex": "Consider the differential equation and initial condition\n\n$\\frac{dy}{dt} = 2 - y^2,\\quad y(0) = 1$\n\nUse Euler's method with one step of size $\\Delta t = 0.1$ to approximate\nthe value of the solution at time $t = 0.1$\n\n(a) $y(0.1) = 2$\n\n(b) $y(0.1) = 2.1$\n\n(c) $y(0.1) = 2.2$\n\n(d) $y(0.1) = 1.2$\n\n(e) $y(0.1) = 1.1$", 
+    "statement_raw": "Consider the differential equation and initial condition\n\n&lt;math>\\frac{dy}{dt} = 2 - y^2,\\quad y(0) = 1&lt;/math>\n\nUse Euler's method with one step of size &lt;math>\\Delta t = 0.1&lt;/math> to approximate the value of the solution at time &lt;math>t = 0.1&lt;/math>\n\n(a) &lt;math> y(0.1) = 2 &lt;/math>\n\n(b) &lt;math> y(0.1) = 2.1 &lt;/math>\n\n(c) &lt;math> y(0.1) = 2.2&lt;/math>\n\n(d) &lt;math> y(0.1) = 1.2&lt;/math>\n\n(e) &lt;math> y(0.1) = 1.1&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Euler%27s_method"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_A_03", 
+    "year": 2013
+}

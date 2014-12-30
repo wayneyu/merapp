@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x}\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "If we start by simplifying the expression of the function $f$ we have:\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x} = \\frac{x^{20}}{x}\\end{align*} This function is\nnot defined at 0 and for all the other value, we can divide and obtain\nthat\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{x^{20}}{x} = x^{19} \\quad \\text{if }x \\neq 0\\end{align*} and so its\nderivative is\n\n\\begin{align*}\\displaystyle\nf'(x) = 19 x^{18} \\quad \\text{if }x \\neq 0\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\nf&#39;(x)=19 x^{18} \\quad \\text{if }x \\neq 0\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle\nf'(x)=19 x^{18} \\quad \\text{if }x \\neq 0$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Simplifying first will make your life easier.</p>\n"
+    ], 
+    "hints_latex": [
         "Simplifying first will make your life easier."
-    ]
+    ], 
+    "hints_raw": [
+        "Simplifying first will make your life easier.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If we start by simplifying the expression of the function <span class=\"math\">\\(f\\)</span> we have:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x} = \\frac{x^{20}}{x}\\end{aligned}\\]</span></p>\n<p>This function is not defined at 0 and for all the other value, we can divide and obtain that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{x^{20}}{x} = x^{19} \\quad \\text{if }x \\neq 0\\end{aligned}\\]</span></p>\n<p>and so its derivative is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf&#39;(x) = 19 x^{18} \\quad \\text{if }x \\neq 0\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "If we start by simplifying the expression of the function $f$ we have:\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x} = \\frac{x^{20}}{x}\n\\end{align*} This function is\nnot defined at 0 and for all the other value, we can divide and obtain\nthat\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{x^{20}}{x} = x^{19} \\quad \\text{if }x \\neq 0\n\\end{align*} and so its\nderivative is\n\n\\begin{align*}\n\\displaystyle\nf'(x) = 19 x^{18} \\quad \\text{if }x \\neq 0\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "If we start by simplifying the expression of the function &amp;fnof; we have:\n:&lt;math>\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x} = \\frac{x^{20}}{x}\n&lt;/math>\nThis function is not defined at 0 and for all the other value, we can divide and obtain that\n:&lt;math>\\displaystyle\nf(x) = \\frac{x^{20}}{x} = x^{19} \\quad \\text{if }x \\neq 0\n&lt;/math>\nand so its derivative is\n:&lt;math>\\displaystyle\nf'(x) = 19 x^{18} \\quad \\text{if }x \\neq 0\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p><em>Find the derivative of the following function.</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x}\n\\end{align*}", 
+    "statement_raw": "''Find the derivative of the following function.''\n\n:&lt;math>\\displaystyle\nf(x) = \\frac{x^2x^3x^4x^5x^6}{x}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Power_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_02_(a)", 
+    "year": 2010
 }

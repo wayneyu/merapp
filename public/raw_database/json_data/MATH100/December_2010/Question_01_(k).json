@@ -1,15 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_01_(k)", 
-    "course": "MATH100", 
-    "statement": "If $\\displaystyle f(0) = 10$ and $f'(x) \\geq 3$ for $0 \\leq x \\leq 4$,\nwhat is the least $\\displaystyle f(4)$ could possibly be?", 
-    "year": 2010, 
-    "sols": [
-        "Notice that $\\displaystyle f(x)$ is differentiable on\n$\\displaystyle [0,4]$ and hence it is continuous there. Thus, by the\nmean value theorem, there exists a point $\\displaystyle c \\in [0,4]$\nsuch that\n\n$\\displaystyle f'(c) = \\frac{f(4)-f(0)}{4-0}$.\n\nWe know that on $\\displaystyle [0,4]$ that $\\displaystyle f'(x) \\geq 3$.\nSince $\\displaystyle c \\in [0,4]$ and $\\displaystyle f(0) = 10$ , we\nhave that\n\n$\\displaystyle 3 \\leq f'(c) = \\frac{f(4)-f(0)}{4-0} = \\frac{f(4)-10}{4}$.\n\nSolving gives $\\displaystyle 22 \\leq f(4)$ and hence the minimum\n$\\displaystyle f(4)$ could be is 22."
+    "answer_html": "<p>Solving gives <span class=\"math\">\\(\\displaystyle 22 \\leq f(4)\\)</span> and hence the minimum <span class=\"math\">\\(\\displaystyle f(4)\\)</span> could be is 22.</p>\n", 
+    "answer_latex": "Solving gives $\\displaystyle 22 \\leq f(4)$ and hence the minimum\n$\\displaystyle f(4)$ could be is 22.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch", 
+        "Alfred"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Let&#8217;s look at all the information we have. We know that we are looking at a function on an interval <span class=\"math\">\\(\\displaystyle [0,4]\\)</span> where we know something about its derivative and about the value of the function at 0. Do we have a formula or a theorem that can relate all these values?</p>\n", 
+        "<p>Try the mean value theorem.</p>\n", 
+        "<p>The mean value theorem states the following:</p>\n<p>If <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is continuous on <span class=\"math\">\\(\\displaystyle [a,b]\\)</span> and differentiable on <span class=\"math\">\\(\\displaystyle (a,b)\\)</span>, then there exists a point <span class=\"math\">\\(\\displaystyle c \\in [a,b]\\)</span> such that</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(c) = \\frac{f(b)-f(a)}{b-a}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Let's look at all the information we have. We know that we are looking\nat a function on an interval $\\displaystyle [0,4]$ where we know\nsomething about its derivative and about the value of the function at 0.\nDo we have a formula or a theorem that can relate all these values?", 
         "Try the mean value theorem.", 
         "The mean value theorem states the following:\n\nIf $\\displaystyle f(x)$ is continuous on $\\displaystyle [a,b]$ and\ndifferentiable on $\\displaystyle (a,b)$, then there exists a point\n$\\displaystyle c \\in [a,b]$ such that\n\n$\\displaystyle f'(c) = \\frac{f(b)-f(a)}{b-a}$."
-    ]
+    ], 
+    "hints_raw": [
+        "Let's look at all the information we have. We know that we are looking at a function on an interval &lt;math>\\displaystyle [0,4] &lt;/math> where we know something about its derivative and about the value of the function at 0. Do we have a formula or a theorem that can relate all these values?\n", 
+        "Try the mean value theorem.\n", 
+        "The mean value theorem states the following: \n\nIf &lt;math>\\displaystyle f(x) &lt;/math> is continuous on &lt;math>\\displaystyle [a,b] &lt;/math> and differentiable on &lt;math>\\displaystyle (a,b) &lt;/math>, then there exists a point &lt;math>\\displaystyle c \\in [a,b] &lt;/math> such that\n\n&lt;math>\\displaystyle f'(c) = \\frac{f(b)-f(a)}{b-a} &lt;/math>.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (k)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>Notice that <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is differentiable on <span class=\"math\">\\(\\displaystyle [0,4]\\)</span> and hence it is continuous there. Thus, by the mean value theorem, there exists a point <span class=\"math\">\\(\\displaystyle c \\in [0,4]\\)</span> such that</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(c) = \\frac{f(4)-f(0)}{4-0}\\)</span>.</p>\n<p>We know that on <span class=\"math\">\\(\\displaystyle [0,4]\\)</span> that <span class=\"math\">\\(\\displaystyle f&#39;(x) \\geq 3\\)</span>. Since <span class=\"math\">\\(\\displaystyle c \\in [0,4]\\)</span> and <span class=\"math\">\\(\\displaystyle f(0) = 10\\)</span> , we have that</p>\n<p><span class=\"math\">\\(\\displaystyle 3 \\leq f&#39;(c) = \\frac{f(4)-f(0)}{4-0} = \\frac{f(4)-10}{4}\\)</span>.</p>\n<p>Solving gives <span class=\"math\">\\(\\displaystyle 22 \\leq f(4)\\)</span> and hence the minimum <span class=\"math\">\\(\\displaystyle f(4)\\)</span> could be is 22.</p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that $\\displaystyle f(x)$ is differentiable on\n$\\displaystyle [0,4]$ and hence it is continuous there. Thus, by the\nmean value theorem, there exists a point $\\displaystyle c \\in [0,4]$\nsuch that\n\n$\\displaystyle f'(c) = \\frac{f(4)-f(0)}{4-0}$.\n\nWe know that on $\\displaystyle [0,4]$ that $\\displaystyle f'(x) \\geq 3$.\nSince $\\displaystyle c \\in [0,4]$ and $\\displaystyle f(0) = 10$ , we\nhave that\n\n$\\displaystyle 3 \\leq f'(c) = \\frac{f(4)-f(0)}{4-0} = \\frac{f(4)-10}{4}$.\n\nSolving gives $\\displaystyle 22 \\leq f(4)$ and hence the minimum\n$\\displaystyle f(4)$ could be is 22."
+    ], 
+    "sols_raw": [
+        "Notice that &lt;math>\\displaystyle f(x) &lt;/math> is differentiable on &lt;math>\\displaystyle [0,4] &lt;/math> and hence it is continuous there. Thus, by the mean value theorem, there exists a point &lt;math>\\displaystyle c \\in [0,4] &lt;/math> such that\n\n&lt;math>\\displaystyle f'(c) = \\frac{f(4)-f(0)}{4-0} &lt;/math>.\n\nWe know that on &lt;math>\\displaystyle [0,4] &lt;/math> that &lt;math>\\displaystyle f'(x) \\geq 3 &lt;/math>. Since &lt;math>\\displaystyle c \\in [0,4] &lt;/math> and &lt;math>\\displaystyle f(0) = 10 &lt;/math> , we have that\n\n&lt;math>\\displaystyle 3 \\leq f'(c) = \\frac{f(4)-f(0)}{4-0} = \\frac{f(4)-10}{4} &lt;/math>.\n\nSolving gives &lt;math>\\displaystyle 22 \\leq f(4) &lt;/math> and hence the minimum &lt;math>\\displaystyle f(4) &lt;/math> could be is 22.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>If <span class=\"math\">\\(\\displaystyle f(0) = 10\\)</span> and <span class=\"math\">\\(f&#39;(x) \\geq 3\\)</span> for <span class=\"math\">\\(0 \\leq x \\leq 4\\)</span>, what is the least <span class=\"math\">\\(\\displaystyle f(4)\\)</span> could possibly be?</p>\n", 
+    "statement_latex": "If $\\displaystyle f(0) = 10$ and $f'(x) \\geq 3$ for $0 \\leq x \\leq 4$,\nwhat is the least $\\displaystyle f(4)$ could possibly be?", 
+    "statement_raw": "If &lt;math>\\displaystyle f(0) = 10 &lt;/math> and &lt;math> f'(x) \\geq 3 &lt;/math> for &lt;math> 0 \\leq x \\leq 4 &lt;/math>, what is the least &lt;math>\\displaystyle f(4) &lt;/math> could possibly be?\n", 
+    "term": "December", 
+    "topics": [
+        "Mean_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(k)", 
+    "year": 2010
 }

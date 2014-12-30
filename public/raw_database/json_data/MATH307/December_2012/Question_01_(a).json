@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH307", 
-    "statement": "In this question we will work with polynomials of degree 3 written\n\n\\begin{align*}\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\end{align*}\n\n\\textbf{(a)} The coefficient vector $\\mathbf{a} = [a_1,a_2,a_3,a_4]^T$\nsatisfies an equation of the form \\emph{A\\textbf{a}=\\textbf{0}} when the\nslopes of \\emph{p(x)} at \\emph{x = 0} and \\emph{x = 2} are zero. Write\ndown the matrix \\emph{A}.", 
-    "year": 2012, 
-    "sols": [
-        "Slopes of \\emph{p(x) = 0} at $x=0$, $x=2$ implies $p'(0)=p'(2)=0$\n\n\\begin{align*}\\displaystyle p'(x)=3a_1x^2+2a_2x+a_3\\end{align*}\n\nWhen $\\displaystyle p'(0)=0,$ $\\displaystyle {}3a_{1}(0)^2+2a_2(0)+a_3=0$\n\nWhen $\\displaystyle p'(2)=0,$\n$\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0$\n\nHence, matrix \\emph{A} is\n\n\\begin{align*}A=\\begin{bmatrix}\n12&4&1&0 \\\\ \n0& 0&1&0\n\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A=\\begin{bmatrix}\n12410 \\\\ \n0 010\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $A=\\begin{bmatrix}\n12410 \\\\ \n0 010\n\\end{bmatrix}$ ", 
+    "contributors": [
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall that we can compute the slope at a point using the derivative.</p>\n", 
+        "<p>Notice that once we sub <em>x=0</em> and <em>x=2</em> into the derivative we will have linear equations in terms of the unknowns. How can we combine those equations to form a matrix?</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that we can compute the slope at a point using the derivative.", 
         "Notice that once we sub \\emph{x=0} and \\emph{x=2} into the derivative we\nwill have linear equations in terms of the unknowns. How can we combine\nthose equations to form a matrix?"
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that we can compute the slope at a point using the derivative.\n", 
+        "Notice that once we sub ''x=0'' and ''x=2'' into the derivative we will have linear equations in terms of the unknowns.  How can we combine those equations to form a matrix?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Slopes of <em>p(x) = 0</em> at <span class=\"math\">\\(x=0\\)</span>, <span class=\"math\">\\(x=2\\)</span> implies <span class=\"math\">\\(p&#39;(0)=p&#39;(2)=0\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle p&#39;(x)=3a_1x^2+2a_2x+a_3\\end{aligned}\\]</span></p>\n<p>When <span class=\"math\">\\(\\displaystyle p&#39;(0)=0,\\)</span> <span class=\"math\">\\(\\displaystyle {}3a_{1}(0)^2+2a_2(0)+a_3=0\\)</span></p>\n<p>When <span class=\"math\">\\(\\displaystyle p&#39;(2)=0,\\)</span> <span class=\"math\">\\(\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0\\)</span></p>\n<p>Hence, matrix <em>A</em> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n12&amp;4&amp;1&amp;0 \\\\ \n0&amp; 0&amp;1&amp;0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Slopes of \\emph{p(x) = 0} at $x=0$, $x=2$ implies $p'(0)=p'(2)=0$\n\n\\begin{align*}\n\\displaystyle p'(x)=3a_1x^2+2a_2x+a_3\n\\end{align*}\n\nWhen $\\displaystyle p'(0)=0,$ $\\displaystyle {}3a_{1}(0)^2+2a_2(0)+a_3=0$\n\nWhen $\\displaystyle p'(2)=0,$\n$\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0$\n\nHence, matrix \\emph{A} is\n\n\\begin{align*}\nA=\\begin{bmatrix}\n12&4&1&0 \\\\ \n0& 0&1&0\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Slopes of ''p(x) = 0'' at &lt;math>x=0&lt;/math>, &lt;math>x=2&lt;/math> implies &lt;math>p'(0)=p'(2)=0&lt;/math>\n\n:&lt;math>\\displaystyle p'(x)=3a_1x^2+2a_2x+a_3&lt;/math>\n\nWhen &lt;math>\\displaystyle p'(0)=0,&lt;/math> &lt;math>\\displaystyle{}3a_{1}(0)^2+2a_2(0)+a_3=0&lt;/math>\n\nWhen &lt;math>\\displaystyle p'(2)=0,&lt;/math> &lt;math>\\displaystyle 3a_1(2)^2+2a_2(2)+a_3=0\\rightarrow 12a_1+4a_2+a_3=0&lt;/math>\n\nHence, matrix ''A'' is\n\n:&lt;math>A=\\begin{bmatrix}\n12&amp;4&amp;1&amp;0 \\\\ \n0&amp; 0&amp;1&amp;0\n\\end{bmatrix}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>In this question we will work with polynomials of degree 3 written</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> The coefficient vector <span class=\"math\">\\(\\mathbf{a} = [a_1,a_2,a_3,a_4]^T\\)</span> satisfies an equation of the form <em>A<strong>a</strong>=<strong>0</strong></em> when the slopes of <em>p(x)</em> at <em>x = 0</em> and <em>x = 2</em> are zero. Write down the matrix <em>A</em>.</p>\n", 
+    "statement_latex": "In this question we will work with polynomials of degree 3 written\n\n\\begin{align*}\n\\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\n\\end{align*}\n\n\\textbf{(a)} The coefficient vector $\\mathbf{a} = [a_1,a_2,a_3,a_4]^T$\nsatisfies an equation of the form \\emph{A\\textbf{a}=\\textbf{0}} when the\nslopes of \\emph{p(x)} at \\emph{x = 0} and \\emph{x = 2} are zero. Write\ndown the matrix \\emph{A}.", 
+    "statement_raw": "In this question we will work with polynomials of degree 3 written\n\n:&lt;math> \\displaystyle\np(x) = a_1x^3 + a_2x^2 + a_3x + a_4\n&lt;/math>\n\n'''(a)''' The coefficient vector &lt;math>\\mathbf{a} = [a_1,a_2,a_3,a_4]^T&lt;/math> satisfies an equation of the form ''A'''a'''='''0''''' when the slopes of ''p(x)'' at ''x = 0'' and ''x = 2'' are zero. Write down the matrix ''A''.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_systems"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_01_(a)", 
+    "year": 2012
 }

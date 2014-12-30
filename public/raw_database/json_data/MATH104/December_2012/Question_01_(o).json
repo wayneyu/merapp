@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(o)", 
-    "course": "MATH104", 
-    "statement": "Show that the equation\n\n\\begin{align*}\\displaystyle{}5^x-10x-7=0\\end{align*}\n\nhas a solution.", 
-    "year": 2012, 
-    "sols": [
-        "Define the function $f(x)$ as\n\n\\begin{align*}f(x) = 5^{x} - 10x - 7.\\end{align*} Notice that this function is continuous for\nall values of $x$. Hence, we need only find a closed interval where the\nsign of $f(x)$ changes and invoke the intermediate value theorem to get\nthe desired conclusion.\n\nConsider $x = 2$ and $x = 3$. If we take these two points and plug them\ninto $f(x)$, we get\n\n\\begin{align*}\nf(2) &= 5^{2} - 10(2) - 7 = -2 < 0\\\\\nf(3) &= 5^{3} - 10(3) - 7 = 88 > 0\\end{align*} and so the sign of $f(x)$ changes over the closed interval\n$[2,3]$.\n\n Therefore, there exists a value $c$ in $[2,3]$ such that\n\n\\begin{align*}{\\color{blue} f(c) = 5^{c} - 7c - 10 =0}\\end{align*} by the Intermediate Value\nTheorem."
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue} f(c) = 5^{c} - 7c - 10 =0}\\)</span> by the Intermediate Value Theorem.</p>\n", 
+    "answer_latex": " ${\\color{blue} f(c) = 5^{c} - 7c - 10 =0}$  by the Intermediate Value\nTheorem.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Apply the intermediate value theorem.</p>\n"
+    ], 
+    "hints_latex": [
         "Apply the intermediate value theorem."
-    ]
+    ], 
+    "hints_raw": [
+        "Apply the intermediate value theorem.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (o)", 
+    "rating": 84, 
+    "sols_html": [
+        "<p>Define the function <span class=\"math\">\\(f(x)\\)</span> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = 5^{x} - 10x - 7.\\end{aligned}\\]</span></p>\n<p>Notice that this function is continuous for all values of <span class=\"math\">\\(x\\)</span>. Hence, we need only find a closed interval where the sign of <span class=\"math\">\\(f(x)\\)</span> changes and invoke the intermediate value theorem to get the desired conclusion.</p>\n<p>Consider <span class=\"math\">\\(x = 2\\)</span> and <span class=\"math\">\\(x = 3\\)</span>. If we take these two points and plug them into <span class=\"math\">\\(f(x)\\)</span>, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(2) &amp;= 5^{2} - 10(2) - 7 = -2 &lt; 0\\\\\nf(3) &amp;= 5^{3} - 10(3) - 7 = 88 &gt; 0\\end{aligned}\\]</span></p>\n<p>and so the sign of <span class=\"math\">\\(f(x)\\)</span> changes over the closed interval <span class=\"math\">\\([2,3]\\)</span>.</p>\n<p>Therefore, there exists a value <span class=\"math\">\\(c\\)</span> in <span class=\"math\">\\([2,3]\\)</span> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue} f(c) = 5^{c} - 7c - 10 =0}\\end{aligned}\\]</span></p>\n<p>by the Intermediate Value Theorem.</p>\n"
+    ], 
+    "sols_latex": [
+        "Define the function $f(x)$ as\n\n\\begin{align*}\nf(x) = 5^{x} - 10x - 7.\n\\end{align*} Notice that this function is continuous for\nall values of $x$. Hence, we need only find a closed interval where the\nsign of $f(x)$ changes and invoke the intermediate value theorem to get\nthe desired conclusion.\n\nConsider $x = 2$ and $x = 3$. If we take these two points and plug them\ninto $f(x)$, we get\n\n\\begin{align*}\nf(2) &= 5^{2} - 10(2) - 7 = -2 < 0\\\\\nf(3) &= 5^{3} - 10(3) - 7 = 88 > 0\n\\end{align*} and so the sign of $f(x)$ changes over the closed interval\n$[2,3]$.\n\n Therefore, there exists a value $c$ in $[2,3]$ such that\n\n\\begin{align*}\n{\\color{blue} f(c) = 5^{c} - 7c - 10 =0}\n\\end{align*} by the Intermediate Value\nTheorem."
+    ], 
+    "sols_raw": [
+        "Define the function &lt;math>f(x)&lt;/math> as\n:&lt;math>\nf(x) = 5^{x} - 10x - 7.\n&lt;/math>\nNotice that this function is continuous for all values of &lt;math>x&lt;/math>. Hence, we need only find a closed interval where the sign of &lt;math>f(x)&lt;/math> changes and invoke the intermediate value theorem to get the desired conclusion.\n\nConsider &lt;math>x = 2&lt;/math> and &lt;math>x = 3&lt;/math>. If we take these two points and plug them into &lt;math>f(x)&lt;/math>, we get\n:&lt;math>\n\\begin{align}\nf(2) &amp;= 5^{2} - 10(2) - 7 = -2 &lt; 0\\\\\nf(3) &amp;= 5^{3} - 10(3) - 7 = 88 > 0\n\\end{align}\n&lt;/math>\nand so the sign of &lt;math>f(x)&lt;/math> changes over the closed interval &lt;math>[2,3]&lt;/math>. \n\n&lt;span style=color:#0000FF> Therefore, there exists a value &lt;math>c&lt;/math> in &lt;math>[2,3]&lt;/math> such that &lt;/span>\n:&lt;math>\n{\\color{blue} f(c) = 5^{c} - 7c - 10 = 0}\n&lt;/math>\n&lt;span style=color:#0000FF>by the Intermediate Value Theorem.&lt;/span>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Show that the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}5^x-10x-7=0\\end{aligned}\\]</span></p>\n<p>has a solution.</p>\n", 
+    "statement_latex": "Show that the equation\n\n\\begin{align*}\n\\displaystyle{}5^x-10x-7=0\n\\end{align*}\n\nhas a solution.", 
+    "statement_raw": "Show that the equation\n\n:&lt;math>\n\\displaystyle{}5^x-10x-7=0\n&lt;/math>\n\nhas a solution.\n", 
+    "term": "December", 
+    "topics": [
+        "Intermediate_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(o)", 
+    "year": 2012
 }

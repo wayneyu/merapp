@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
+    "answer_html": "<p>Since the numerator grows faster than the denominator (as <span class=\"math\">\\(k^k \\gg k!\\)</span>), we get that this sequence diverges.</p>\n", 
+    "answer_latex": "Since the numerator grows faster than the denominator (as $k^k \\gg k!$),\nwe get that this sequence diverges.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH103", 
-    "statement": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence $\\left( \\frac{k^k}{k!} \\right)_{k \\geq 1}$ converge?\nIf it does, calculate the limit.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Which grows faster, the numerator or the denominator?</p>\n", 
+        "<p>(Alternate solution) Can you show that this sequence is always bigger than a sequence that diverges?</p>\n"
+    ], 
+    "hints_latex": [
+        "Which grows faster, the numerator or the denominator?", 
+        "(Alternate solution) Can you show that this sequence is always bigger\nthan a sequence that diverges?"
+    ], 
+    "hints_raw": [
+        "Which grows faster, the numerator or the denominator?\n", 
+        "(Alternate solution) Can you show that this sequence is always bigger than a sequence that diverges?\n"
+    ], 
+    "num_votes": 24, 
+    "question": "1 (a)", 
+    "rating": 57, 
+    "sols_html": [
+        "<p>Since the numerator grows faster than the denominator (as <span class=\"math\">\\(k^k \\gg k!\\)</span>), we get that this sequence diverges.</p>\n", 
+        "<p>Since</p>\n<p><span class=\"math\">\\(\\frac{k^k}{k!} = \\frac{k\\cdot k\\cdot k\\cdot...\\cdot k}{1\\cdot2\\cdot3\\cdot...\\cdot k} \\geq k\\)</span></p>\n<p>and the sequence defined by <span class=\"math\">\\((k)_{k \\geq 1}\\)</span> diverges, the sequence <span class=\"math\">\\(\\big( \\frac{k^k}{k!} \\big)_{k \\geq 1}\\)</span> also diverges.</p>\n"
+    ], 
+    "sols_latex": [
         "Since the numerator grows faster than the denominator (as $k^k \\gg k!$),\nwe get that this sequence diverges.", 
         "Since\n\n$\\frac{k^k}{k!} = \\frac{k\\cdot k\\cdot k\\cdot...\\cdot k}{1\\cdot2\\cdot3\\cdot...\\cdot k} \\geq k$\n\nand the sequence defined by $(k)_{k \\geq 1}$ diverges, the sequence\n$\\big( \\frac{k^k}{k!} \\big)_{k \\geq 1}$ also diverges."
     ], 
-    "hints": [
-        "Which grows faster, the numerator or the denominator?", 
-        "(Alternate solution) Can you show that this sequence is always bigger\nthan a sequence that diverges?"
-    ]
+    "sols_raw": [
+        "Since the numerator grows faster than the denominator (as &lt;math> k^k \\gg k! &lt;/math>), we get that this sequence diverges.\n", 
+        "Since \n\n&lt;math>\n\\frac{k^k}{k!} = \\frac{k\\cdot k\\cdot k\\cdot...\\cdot k}{1\\cdot2\\cdot3\\cdot...\\cdot k} \\geq k\n&lt;/math>\n\nand the sequence defined by &lt;math> (k)_{k \\geq 1} &lt;/math> diverges, the sequence &lt;math> \\big( \\frac{k^k}{k!} \\big)_{k \\geq 1} &lt;/math> also diverges.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)</strong></p>\n<p>Does the sequence <span class=\"math\">\\(\\left( \\frac{k^k}{k!} \\right)_{k \\geq 1}\\)</span> converge? If it does, calculate the limit.</p>\n", 
+    "statement_latex": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence $\\left( \\frac{k^k}{k!} \\right)_{k \\geq 1}$ converge?\nIf it does, calculate the limit.", 
+    "statement_raw": "'''Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)'''\n\nDoes the sequence &lt;math> \\left( \\frac{k^k}{k!} \\right)_{k \\geq 1} &lt;/math> converge? If it does, calculate the limit.\n", 
+    "term": "April", 
+    "topics": [
+        "Sequences"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_01_(a)", 
+    "year": 2013
 }

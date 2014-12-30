@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_A_01", 
-    "course": "MATH152", 
-    "statement": "Given the vectors\\begin{align*}\n\\mathbf{x}&=[0,-3,2]\\\\\n\\mathbf{y}&=[1,1,1]\\end{align*}\n Compute $\\mathbf{x}+\\mathbf{y}$.", 
-    "year": 2011, 
-    "sols": [
-        "To add vectors, we add component wise. Therefore,\\begin{align*}\n&\\mathbf{x}+\\mathbf{y}\\\\\n&=[0,-3,2]+[1,1,1]\\\\\n&=[0+1,-3+1,2+1]\\\\\n&=[1,-2,3]\\end{align*}\n and so $\\mathbf{x}+\\mathbf{y}=[1,-2,3]$."
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{x}+\\mathbf{y}=[1,-2,3]\\)</span> and so <span class=\"math\">\\(\\mathbf{x}+\\mathbf{y}=[1,-2,3]\\)</span>.</p>\n", 
+    "answer_latex": " $\\mathbf{x}+\\mathbf{y}=[1,-2,3]$ \n and so $\\mathbf{x}+\\mathbf{y}=[1,-2,3]$.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Consider what adding vectors means component-wise.</p>\n"
+    ], 
+    "hints_latex": [
         "Consider what adding vectors means component-wise."
-    ]
+    ], 
+    "hints_raw": [
+        "Consider what adding vectors means component-wise.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 01", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>To add vectors, we add component wise. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;\\mathbf{x}+\\mathbf{y}\\\\\n&amp;=[0,-3,2]+[1,1,1]\\\\\n&amp;=[0+1,-3+1,2+1]\\\\\n&amp;=[1,-2,3]\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(\\mathbf{x}+\\mathbf{y}=[1,-2,3]\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "To add vectors, we add component wise. Therefore,\\begin{align*}\n&\\mathbf{x}+\\mathbf{y}\\\\\n&=[0,-3,2]+[1,1,1]\\\\\n&=[0+1,-3+1,2+1]\\\\\n&=[1,-2,3]\n\\end{align*}\n and so $\\mathbf{x}+\\mathbf{y}=[1,-2,3]$."
+    ], 
+    "sols_raw": [
+        "To add vectors, we add component wise.  Therefore,\n&lt;br />\n&lt;math>\n\\begin{align}\n&amp;\\mathbf{x}+\\mathbf{y}\\\\\n&amp;=[0,-3,2]+[1,1,1]\\\\\n&amp;=[0+1,-3+1,2+1]\\\\\n&amp;=[1,-2,3]\\\\\n\\end{align}\n&lt;/math>\n&lt;br />\n\nand so &lt;math> \\mathbf{x}+\\mathbf{y}=[1,-2,3] &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Given the vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}&amp;=[0,-3,2]\\\\\n\\mathbf{y}&amp;=[1,1,1]\\end{aligned}\\]</span></p>\n<p>Compute <span class=\"math\">\\(\\mathbf{x}+\\mathbf{y}\\)</span>.</p>\n", 
+    "statement_latex": "Given the vectors\\begin{align*}\n\\mathbf{x}&=[0,-3,2]\\\\\n\\mathbf{y}&=[1,1,1]\n\\end{align*}\n Compute $\\mathbf{x}+\\mathbf{y}$.", 
+    "statement_raw": "Given the vectors\n&lt;br />\n:&lt;math>\n\\begin{align}\n\\mathbf{x}&amp;=[0,-3,2]\\\\\n\\mathbf{y}&amp;=[1,1,1]\\\\\n\\end{align}\n&lt;/math>\n&lt;br />\n\nCompute &lt;math> \\mathbf{x}+\\mathbf{y} &lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_01", 
+    "year": 2011
 }

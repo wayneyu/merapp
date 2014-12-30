@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(d)", 
+    "answer_html": "<p>But <span class=\"math\">\\(f&#39;(2) = 0\\)</span>.</p>\n", 
+    "answer_latex": "But $f'(2) = 0$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nd) If $\\displaystyle f(x)$ is differentiable at x = 2, then\n$\\lim_{h \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.$", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The given equality should remind you of a Newton quotient (a derivative). Does the derivative have to be equal to 2 of an arbitrary function?</p>\n"
+    ], 
+    "hints_latex": [
+        "The given equality should remind you of a Newton quotient (a\nderivative). Does the derivative have to be equal to 2 of an arbitrary\nfunction?"
+    ], 
+    "hints_raw": [
+        "The given equality should remind you of a Newton quotient (a derivative). Does the derivative have to be equal to 2 of an arbitrary function?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>False:</strong> If <span class=\"math\">\\(f(x)\\)</span> is differentiable at <span class=\"math\">\\(x=2\\)</span>, then by the definition of derivative at a point, we have <span class=\"math\">\\(\\displaystyle f&#39;(2) = \\lim_{h\\rightarrow0}\\frac{f(2+h)-f(2)}{h}.\\)</span> So to paraphrase the statement, we are asking whether <span class=\"math\">\\(\\displaystyle f&#39;(2) = 2\\)</span>. Clearly, this does not have to be the case. Consider the example <span class=\"math\">\\(\\displaystyle f(x)=1\\)</span>. We have <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is differentiable at <span class=\"math\">\\(x=2\\)</span> (and everywhere else too). But <span class=\"math\">\\(f&#39;(2) = 0\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "\\textbf{False:} If $f(x)$ is differentiable at $x=2$, then by the\ndefinition of derivative at a point, we have\n$\\displaystyle f'(2) = \\lim_{h\\rightarrow0}\\frac{f(2+h)-f(2)}{h}.$ So to\nparaphrase the statement, we are asking whether\n$\\displaystyle f'(2) = 2$. Clearly, this does not have to be the case.\nConsider the example $\\displaystyle f(x)=1$. We have\n$\\displaystyle f(x)$ is differentiable at $x=2$ (and everywhere else\ntoo). But $f'(2) = 0$."
     ], 
-    "hints": [
-        "The given equality should remind you of a Newton quotient (a\nderivative). Does the derivative have to be equal to 2 of an arbitrary\nfunction?"
-    ]
+    "sols_raw": [
+        "&lt;span>'''False:'''&lt;/span> If &lt;math>f(x)&lt;/math> is differentiable at &lt;math>x=2&lt;/math>, then by the definition of derivative at a point, we have &lt;math>\\displaystyle f'(2) = \\lim_{h\\rightarrow0}\\frac{f(2+h)-f(2)}{h}.&lt;/math> So to paraphrase the statement, we are asking whether &lt;math>\\displaystyle f'(2) = 2&lt;/math>. Clearly, this does not have to be the case. Consider the example &lt;math>\\displaystyle f(x)=1&lt;/math>. We have &lt;math>\\displaystyle f(x)&lt;/math> is differentiable at &lt;math>x=2&lt;/math> (and everywhere else too). But &lt;math>f'(2) = 0&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>d) If <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is differentiable at x = 2, then <span class=\"math\">\\(\\lim_{h \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.\\)</span></p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nd) If $\\displaystyle f(x)$ is differentiable at x = 2, then\n$\\lim_{h \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.$", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\n&lt;b>d)&lt;/b> If &lt;math>\\displaystyle f(x)&lt;/math> is differentiable at &lt;i>x = 2&lt;/i>, then\n&lt;math>\n\\lim_{h \\rightarrow 0}\\frac{f(2 + h) - f(2)}{h} = 2.\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_definition_of_the_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_01_(d)", 
+    "year": 2013
 }

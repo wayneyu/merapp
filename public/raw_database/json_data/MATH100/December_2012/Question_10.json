@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_10", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\nFind a function $f(x)$ such that $\\displaystyle f'(x) = x^3$ and such\nthat the line $x + y = 0$ is tangent to the graph of $y = f(x)$.", 
-    "year": 2012, 
-    "sols": [
-        "Antidifferentiating gives us that\n\n$f(x) = \\frac{x^{4}}{4} + C$\n\nNow, the slope of the line $\\displaystyle x + y = 0$, which is\nequivalent to $\\displaystyle y = -x$, is -1. The point where this line\nis tangent to the curve is the \\emph{x} value where the derivative is\nequal to this slope. Thus, $\\displaystyle f'(x) = x^{3} = -1$ and so\n$\\displaystyle x = -1$. The corresponding point is at\n$\\displaystyle (-1,1/4 + C)$ which we get by plugging in our function.\nThis point must also lie on the line and thus\n\n\\begin{align*}\ny &= -x\\\\\n\\frac{1}{4} + C &= -(-1) \\\\\nC &= \\frac{3}{4}\\end{align*}\n\nThus, our desired function is\n$\\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}$."
+    "answer_html": "<p>Thus, our desired function is <span class=\"math\">\\(\\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}\\)</span>.</p>\n", 
+    "answer_latex": "Thus, our desired function is\n$\\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}$.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Antidifferentiating gives you step one. However remember that antidifferentiating only gives you the answer up to a constant. We need to use the other information given to help figure our constant. How do we relate slopes and derivatives?</p>\n"
+    ], 
+    "hints_latex": [
         "Antidifferentiating gives you step one. However remember that\nantidifferentiating only gives you the answer up to a constant. We need\nto use the other information given to help figure our constant. How do\nwe relate slopes and derivatives?"
-    ]
+    ], 
+    "hints_raw": [
+        "Antidifferentiating gives you step one. However remember that antidifferentiating only gives you the answer up to a constant. We need to use the other information given to help figure our constant. How do we relate slopes and derivatives?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "10", 
+    "rating": 54, 
+    "sols_html": [
+        "<p>To find the form of the function we compute the antiderivative,</p>\n<p><span class=\"math\">\\(f(x) = \\frac{x^{4}}{4} + C.\\)</span></p>\n<p>To find the actual function we are interested in, we need to determine C. The extra information we are given is that we want the line <span class=\"math\">\\(\\displaystyle x + y = 0\\)</span>, which is equivalent to <span class=\"math\">\\(\\displaystyle y = -x\\)</span> to be tangent at some point on the function <span class=\"math\">\\(\\displaystyle {}f(x)\\)</span>. The slope of this line is -1 and thus we need <span class=\"math\">\\(\\displaystyle f&#39;(x) = x^{3} = -1\\)</span> which happens when <span class=\"math\">\\(\\displaystyle {}x=-1\\)</span>. Plugging this point into the line we have that <span class=\"math\">\\(\\displaystyle {}y=-(-1)=1\\)</span> and so since the line is tangent to the function there, <span class=\"math\">\\(\\displaystyle {}f(-1)=1\\)</span> as well. Therefore we have,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(-1)&amp;=\\frac{1}{4} + C = 1 \\\\\nC &amp;= 1-\\frac{1}{4}=\\frac{3}{4}.\\end{aligned}\\]</span></p>\n<p>Thus, our desired function is <span class=\"math\">\\(\\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "To find the form of the function we compute the antiderivative,\n\n$f(x) = \\frac{x^{4}}{4} + C.$\n\nTo find the actual function we are interested in, we need to determine\nC. The extra information we are given is that we want the line\n$\\displaystyle x + y = 0$, which is equivalent to $\\displaystyle y = -x$\nto be tangent at some point on the function $\\displaystyle {}f(x)$. The\nslope of this line is -1 and thus we need\n$\\displaystyle f'(x) = x^{3} = -1$ which happens when\n$\\displaystyle {}x=-1$. Plugging this point into the line we have that\n$\\displaystyle {}y=-(-1)=1$ and so since the line is tangent to the\nfunction there, $\\displaystyle {}f(-1)=1$ as well. Therefore we have,\n\n\\begin{align*}\nf(-1)&=\\frac{1}{4} + C = 1 \\\\\nC &= 1-\\frac{1}{4}=\\frac{3}{4}.\n\\end{align*}\n\nThus, our desired function is\n$\\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}$."
+    ], 
+    "sols_raw": [
+        "To find the form of the function we compute the antiderivative,\n\n&lt;math>\nf(x) = \\frac{x^{4}}{4} + C.\n&lt;/math>\n\nTo find the actual function we are interested in, we need to determine C.  The extra information we are given is that we want the line &lt;math> \\displaystyle x + y = 0&lt;/math>, which is equivalent to &lt;math> \\displaystyle y = -x&lt;/math> to be tangent at some point on the function &lt;math>\\displaystyle{}f(x)&lt;/math>.  The slope of this line is -1 and thus we need &lt;math> \\displaystyle f'(x) = x^{3} = -1&lt;/math> which happens when &lt;math>\\displaystyle{}x=-1&lt;/math>.  Plugging this point into the line we have that &lt;math>\\displaystyle{}y=-(-1)=1&lt;/math> and so since the line is tangent to the function there, &lt;math>\\displaystyle{}f(-1)=1&lt;/math> as well.  Therefore we have,\n\n:&lt;math> \n\\begin{align}\nf(-1)&amp;=\\frac{1}{4} + C = 1 \\\\\nC &amp;= 1-\\frac{1}{4}=\\frac{3}{4}.\n\\end{align}\n &lt;/math>\n\nThus, our desired function is &lt;math> \\displaystyle y = \\frac{x^{4}}{4} + \\frac{3}{4}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 5-11, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions.</strong></p>\n<p>Find a function <span class=\"math\">\\(f(x)\\)</span> such that <span class=\"math\">\\(\\displaystyle f&#39;(x) = x^3\\)</span> and such that the line <span class=\"math\">\\(x + y = 0\\)</span> is tangent to the graph of <span class=\"math\">\\(y = f(x)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\nFind a function $f(x)$ such that $\\displaystyle f'(x) = x^3$ and such\nthat the line $x + y = 0$ is tangent to the graph of $y = f(x)$.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these  questions.'''\n\nFind a function &lt;math> f(x) &lt;/math> such that &lt;math>\\displaystyle f'(x) = x^3&lt;/math> and such that the line &lt;math>x + y = 0 &lt;/math> is tangent to the graph of &lt;math>y = f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_10", 
+    "year": 2012
 }

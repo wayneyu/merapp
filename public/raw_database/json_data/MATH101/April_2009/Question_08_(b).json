@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_08_(b)", 
+    "answer_html": "<p>Thus, the concentration tends to <span class=\"math\">\\(\\tfrac{1}{10} = 0.1\\)</span> as <em>t</em> tends to infinity.</p>\n", 
+    "answer_latex": "Thus, the concentration tends to $\\tfrac{1}{10} = 0.1$ as \\emph{t} tends\nto infinity.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
+    ], 
     "course": "MATH101", 
-    "statement": "Consider the chemical reaction\n\n\\begin{align*}\\displaystyle\nA + B \\rightarrow C + D.\\end{align*}\n\nSuppose at time \\emph{t} = 0 sec the concentration of chemical \\emph{A}\nis 0.1 mol/L, the concentration of chemical \\emph{B} is 0.2 mol/L, and\nthe concentrations of chemicals \\emph{C} and \\emph{D} are both 0. For\n\\emph{t} $\\geq$ 0, let \\emph{x(t)} be the concentration of chemical\n\\emph{D} in mol/L. It can be shown that \\emph{x(t)} is the solution to\nthe initial-value problem\n\n\\begin{align*}\\frac{dx}{dt} = k(0.1-x)(0.2-x), \\quad x(0)=0,\\end{align*}\n\nwhere \\emph{k} is a positive constant whole value can be determined by\nexperiment.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n(b) What value does the concentration of chemical \\emph{D} approach as\n\\emph{t} approaches $\\infty$?\n\\end{description}", 
-    "year": 2009, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the previous part to get the equation. Then take the limit. You may want to factor out a <span class=\"math\">\\(e^{\\tfrac{kt}{10}}\\)</span> from the numerator and denominator.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the previous part to get the equation. Then take the limit. You may\nwant to factor out a $e^{\\tfrac{kt}{10}}$ from the numerator and\ndenominator."
+    ], 
+    "hints_raw": [
+        "Use the previous part to get the equation. Then take the limit. You may want to factor out a &lt;math> e^{\\tfrac{kt}{10}} &lt;/math> from the numerator and denominator.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "8 (b)", 
+    "rating": 51, 
+    "sols_html": [
+        "<p>From the previous part, we know that</p>\n<p><span class=\"math\">\\(\\displaystyle x(t) = \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1}\\)</span></p>\n<p>taking the limit as <em>t</em> tends to infinity yields</p>\n<p><span class=\"math\">\\(\\lim_{t \\to \\infty} \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1} = \\lim_{t \\to \\infty} \\frac{0.2 -0.2e^{\\tfrac{-kt}{10}} }{2 - e^{\\tfrac{-kt}{10}}} = \\frac{0.2}{2} = \\frac{1}{10}\\)</span></p>\n<p>Thus, the concentration tends to <span class=\"math\">\\(\\tfrac{1}{10} = 0.1\\)</span> as <em>t</em> tends to infinity.</p>\n"
+    ], 
+    "sols_latex": [
         "From the previous part, we know that\n\n$\\displaystyle x(t) = \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1}$\n\ntaking the limit as \\emph{t} tends to infinity yields\n\n$\\lim_{t \\to \\infty} \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1} = \\lim_{t \\to \\infty} \\frac{0.2 -0.2e^{\\tfrac{-kt}{10}} }{2 - e^{\\tfrac{-kt}{10}}} = \\frac{0.2}{2} = \\frac{1}{10}$\n\nThus, the concentration tends to $\\tfrac{1}{10} = 0.1$ as \\emph{t} tends\nto infinity."
     ], 
-    "hints": [
-        "Use the previous part to get the equation. Then take the limit. You may\nwant to factor out a $e^{\\tfrac{kt}{10}}$ from the numerator and\ndenominator."
-    ]
+    "sols_raw": [
+        "From the previous part, we know that\n\n&lt;math> \\displaystyle\nx(t) = \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1}\n&lt;/math>\n\ntaking the limit as ''t'' tends to infinity yields\n\n&lt;math>\n\\lim_{t \\to \\infty} \\frac{0.2e^{\\tfrac{kt}{10}} -0.2 }{2e^{\\tfrac{kt}{10}} - 1} = \\lim_{t \\to \\infty} \\frac{0.2 -0.2e^{\\tfrac{-kt}{10}} }{2 - e^{\\tfrac{-kt}{10}}} = \\frac{0.2}{2} = \\frac{1}{10}\n&lt;/math>\n\nThus, the concentration tends to &lt;math> \\tfrac{1}{10} = 0.1&lt;/math> as ''t'' tends to infinity.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the chemical reaction</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA + B \\rightarrow C + D.\\end{aligned}\\]</span></p>\n<p>Suppose at time <em>t</em> = 0 sec the concentration of chemical <em>A</em> is 0.1 mol/L, the concentration of chemical <em>B</em> is 0.2 mol/L, and the concentrations of chemicals <em>C</em> and <em>D</em> are both 0. For <em>t</em> <span class=\"math\">\\(\\geq\\)</span> 0, let <em>x(t)</em> be the concentration of chemical <em>D</em> in mol/L. It can be shown that <em>x(t)</em> is the solution to the initial-value problem</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dx}{dt} = k(0.1-x)(0.2-x), \\quad x(0)=0,\\end{aligned}\\]</span></p>\n<p>where <em>k</em> is a positive constant whole value can be determined by experiment.</p>\n<dl>\n\n<dd><p>(b) What value does the concentration of chemical <em>D</em> approach as <em>t</em> approaches <span class=\"math\">\\(\\infty\\)</span>?</p>\n</dd>\n</dl>\n", 
+    "statement_latex": "Consider the chemical reaction\n\n\\begin{align*}\n\\displaystyle\nA + B \\rightarrow C + D.\n\\end{align*}\n\nSuppose at time \\emph{t} = 0 sec the concentration of chemical \\emph{A}\nis 0.1 mol/L, the concentration of chemical \\emph{B} is 0.2 mol/L, and\nthe concentrations of chemicals \\emph{C} and \\emph{D} are both 0. For\n\\emph{t} $\\geq$ 0, let \\emph{x(t)} be the concentration of chemical\n\\emph{D} in mol/L. It can be shown that \\emph{x(t)} is the solution to\nthe initial-value problem\n\n\\begin{align*}\n\\frac{dx}{dt} = k(0.1-x)(0.2-x), \\quad x(0)=0,\n\\end{align*}\n\nwhere \\emph{k} is a positive constant whole value can be determined by\nexperiment.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n(b) What value does the concentration of chemical \\emph{D} approach as\n\\emph{t} approaches $\\infty$?\n\\end{description}", 
+    "statement_raw": "Consider the chemical reaction\n\n:&lt;math>\\displaystyle\nA + B \\rightarrow C + D.\n&lt;/math>\n\nSuppose at time ''t'' = 0 sec the concentration of chemical ''A'' is 0.1 mol/L, the concentration of chemical ''B'' is 0.2 mol/L, and the concentrations of chemicals ''C'' and ''D'' are both 0. For ''t'' &amp;ge; 0, let ''x(t)'' be the concentration of chemical ''D'' in mol/L. It can be shown that ''x(t)'' is the solution to the initial-value problem\n\n:&lt;math>\n\\frac{dx}{dt} = k(0.1-x)(0.2-x), \\quad x(0)=0,\n&lt;/math>\n\nwhere ''k'' is a positive constant whole value can be determined by experiment.\n\n:(b) What value does the concentration of chemical ''D'' approach as ''t'' approaches &lt;math>\\infty&lt;/math>?\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_08_(b)", 
+    "year": 2009
 }

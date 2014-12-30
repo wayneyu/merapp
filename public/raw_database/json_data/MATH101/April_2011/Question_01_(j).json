@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(j)", 
-    "course": "MATH101", 
-    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the first three nonzero terms of the Maclaurian series (power\nseries in x) for\n\n\\begin{align*}f(x) = x^3 \\sin(x^3)\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We could compute all of the derivatives by hand, but this would be a\nlong and arduous process. This is not an efficient use of exam time! As\nsuch, we use the known series of $\\sin(x)$ to note that\n\n\\begin{align*}\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\end{align*}\n\nIt follows then that\n\n\\begin{align*}x^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots\\end{align*}\n\nand so the first three nonzero terms of the Maclurian series are\n\n\\begin{align*}x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\\)</span></p>\n", 
+    "answer_latex": " $x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "The Maclurian series for $\\sin(x)$ is given by\n\n\\begin{align*}\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\\end{align*}"
-    ]
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Maclurian series for <span class=\"math\">\\(\\sin(x)\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The Maclurian series for $\\sin(x)$ is given by\n\n\\begin{align*}\n\\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The Maclurian series for &lt;math>\\sin(x)&lt;/math> is given by\n\n:&lt;math> \\sin(x) = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots&lt;/math>\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (j)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We could compute all of the derivatives by hand, but this would be a long and arduous process. This is not an efficient use of exam time! As such, we use the known series of <span class=\"math\">\\(\\sin(x)\\)</span> to note that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\end{aligned}\\]</span></p>\n<p>It follows then that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots\\end{aligned}\\]</span></p>\n<p>and so the first three nonzero terms of the Maclurian series are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We could compute all of the derivatives by hand, but this would be a\nlong and arduous process. This is not an efficient use of exam time! As\nsuch, we use the known series of $\\sin(x)$ to note that\n\n\\begin{align*}\n\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\n\\end{align*}\n\nIt follows then that\n\n\\begin{align*}\nx^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots\n\\end{align*}\n\nand so the first three nonzero terms of the Maclurian series are\n\n\\begin{align*}\nx^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We could compute all of the derivatives by hand, but this would be a long and arduous process. This is not an efficient use of exam time! As such, we use the known series of &lt;math>\\sin(x)&lt;/math> to note that\n\n:&lt;math>\\sin(x^3) = x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots&lt;/math>\n\nIt follows then that\n\n:&lt;math>x^3\\sin(x^3) = x^3\\left(x^3 - \\frac{x^9}{3!} + \\frac{x^{15}}{5!}  - \\cdots\\right) = x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}  - \\cdots&lt;/math>\n\nand so the first three nonzero terms of the Maclurian series are\n\n:&lt;math>x^6 - \\frac{x^{12}}{3!} + \\frac{x^{18}}{5!}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p><em>For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.</em></p>\n<p>Find the first three nonzero terms of the Maclaurian series (power series in x) for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = x^3 \\sin(x^3)\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the first three nonzero terms of the Maclaurian series (power\nseries in x) for\n\n\\begin{align*}\nf(x) = x^3 \\sin(x^3)\n\\end{align*}", 
+    "statement_raw": "''For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.''\n\nFind the first three nonzero terms of the Maclaurian series (power series in x) for\n\n:&lt;math> f(x) = x^3 \\sin(x^3)&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_01_(j)", 
+    "year": 2011
 }

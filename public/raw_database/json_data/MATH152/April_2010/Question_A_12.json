@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_A_12", 
-    "course": "MATH152", 
-    "statement": "Write the matrix A that would result from the following lines of MATLAB\ncode:\n\n A = zeros(2,3);\\\\A(1,1) = 2;\\\\A(2,3) = 3;", 
-    "year": 2010, 
-    "sols": [
-        "These commands have the following effects, in sequence:\n\n\"A = zeros(2,3);\" creates a matrix of zeroes having 2 rows and 3\ncolumns. \"A(1,1) = 2;\" changes the value in the first row, first column\nentry to 2. \"A(2,3) = 3;\" changes the value in the second row, third\ncolumn entry to 3.\n\nThe result is the following matrix, \"A\".\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 0 & 0 & 3\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A=\\left[\\begin{array}{ccc} 2  0  0 \\\\ 0  0  3\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $A=\\left[\\begin{array}{ccc} 2  0  0 \\\\ 0  0  3\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What is the dimension of <em>A</em>? All entries of <em>A</em> are initially zero. Which entries are then changed in line 2 and 3?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the dimension of \\emph{A}? All entries of \\emph{A} are initially\nzero. Which entries are then changed in line 2 and 3?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the dimension of ''A''? All entries of ''A'' are initially zero. Which entries are then changed in line 2 and 3?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 12", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>These commands have the following effects, in sequence:</p>\n<p>&#8220;A = zeros(2,3);&#8221; creates a matrix of zeroes having 2 rows and 3 columns. &#8220;A(1,1) = 2;&#8221; changes the value in the first row, first column entry to 2. &#8220;A(2,3) = 3;&#8221; changes the value in the second row, third column entry to 3.</p>\n<p>The result is the following matrix, &#8220;A&#8221;.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} 2 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 3\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "These commands have the following effects, in sequence:\n\n\"A = zeros(2,3);\" creates a matrix of zeroes having 2 rows and 3\ncolumns. \"A(1,1) = 2;\" changes the value in the first row, first column\nentry to 2. \"A(2,3) = 3;\" changes the value in the second row, third\ncolumn entry to 3.\n\nThe result is the following matrix, \"A\".\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 0 & 0 & 3\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "These commands have the following effects, in sequence:\n\n\"&lt;font face=\"Courier\">A = zeros(2,3);&lt;/font>\" creates a matrix of zeroes having 2 rows and 3 columns. \"&lt;font face=\"Courier\">A(1,1) = 2;&lt;/font>\" changes the value in the first row, first column entry to 2. \"&lt;font face=\"Courier\">A(2,3) = 3;&lt;/font>\" changes the value in the second row, third column entry to 3. \n\nThe result is the following matrix, \"&lt;font face=\"Courier\">A&lt;/font>\".\n\n:&lt;math>\nA = \\left[\\begin{array}{ccc} 2 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 3\\end{array}\\right]\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Write the matrix A that would result from the following lines of MATLAB code:</p>\n<p>A = zeros(2,3);<br />A(1,1) = 2;<br />A(2,3) = 3;</p>\n", 
+    "statement_latex": "Write the matrix A that would result from the following lines of MATLAB\ncode:\n\n A = zeros(2,3);\\\\A(1,1) = 2;\\\\A(2,3) = 3;", 
+    "statement_raw": "Write the matrix &lt;font face=\"Courier\">A&lt;/font> that would result from the following lines of MATLAB code:\n\n&lt;font face=\"Courier\">\nA = zeros(2,3);&lt;br>\nA(1,1) = 2;&lt;br>\nA(2,3) = 3;\n&lt;/font>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_12", 
+    "year": 2010
 }

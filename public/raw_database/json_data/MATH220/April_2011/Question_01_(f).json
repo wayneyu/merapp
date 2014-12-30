@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_01_(f)", 
+    "answer_html": "<p>We say that a sequence <span class=\"math\">\\(\\{ a_{n}\\}\\)</span> converges to a number <span class=\"math\">\\(L\\)</span> if for all <span class=\"math\">\\(\\epsilon &gt; 0\\)</span> there exists an <span class=\"math\">\\(n \\in \\mathbb{N}\\)</span> such that for all <span class=\"math\">\\(n \\geq N\\)</span> we have <span class=\"math\">\\(|a_{n} - L| &lt; \\epsilon\\)</span></p>\n", 
+    "answer_latex": "We say that a sequence $\\{ a_{n}\\}$ converges to a number $L$ if for all\n$\\epsilon > 0$ there exists an $n \\in \\mathbb{N}$ such that for all\n$n \\geq N$ we have $|a_{n} - L| < \\epsilon$", 
+    "contributors": [
+        "DavidKohler", 
+        "SimonRose", 
+        "CameronChristou"
+    ], 
     "course": "MATH220", 
-    "statement": "What does it mean for the sequence $\\{a_{n}\\}$ to converge to a number\n$L$.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Think limits. Then think epsilons.</p>\n"
+    ], 
+    "hints_latex": [
+        "Think limits. Then think epsilons."
+    ], 
+    "hints_raw": [
+        "Think limits. Then think epsilons.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (f)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We say that a sequence <span class=\"math\">\\(\\{ a_{n}\\}\\)</span> converges to a number <span class=\"math\">\\(L\\)</span> if for all <span class=\"math\">\\(\\epsilon &gt; 0\\)</span> there exists an <span class=\"math\">\\(n \\in \\mathbb{N}\\)</span> such that for all <span class=\"math\">\\(n \\geq N\\)</span> we have <span class=\"math\">\\(|a_{n} - L| &lt; \\epsilon\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "We say that a sequence $\\{ a_{n}\\}$ converges to a number $L$ if for all\n$\\epsilon > 0$ there exists an $n \\in \\mathbb{N}$ such that for all\n$n \\geq N$ we have $|a_{n} - L| < \\epsilon$"
     ], 
-    "hints": [
-        "Think limits. Then think epsilons."
-    ]
+    "sols_raw": [
+        "We say that a sequence &lt;math> \\{ a_{n}\\} &lt;/math> converges to a number &lt;math> L &lt;/math> if for all &lt;math> \\epsilon > 0 &lt;/math> there exists an &lt;math> n \\in \\mathbb{N} &lt;/math> such that for all &lt;math> n \\geq N &lt;/math> we have &lt;math> |a_{n} - L| &lt; \\epsilon &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>What does it mean for the sequence <span class=\"math\">\\(\\{a_{n}\\}\\)</span> to converge to a number <span class=\"math\">\\(L\\)</span>.</p>\n", 
+    "statement_latex": "What does it mean for the sequence $\\{a_{n}\\}$ to converge to a number\n$L$.", 
+    "statement_raw": "What does it mean for the sequence &lt;math> \\{a_{n}\\} &lt;/math> to converge to a number &lt;math> L &lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_01_(f)", 
+    "year": 2011
 }

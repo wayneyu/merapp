@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
+    "answer_html": "<p>(d) As <span class=\"math\">\\(\\displaystyle 47 \\parallel 48!\\)</span> and <span class=\"math\">\\(\\displaystyle 47 \\equiv 3 \\mod{4}\\)</span>, this case has no solutions.</p>\n", 
+    "answer_latex": "(d) As $\\displaystyle 47 \\parallel 48!$ and\n$\\displaystyle 47 \\equiv 3 \\mod{4}$, this case has no solutions.", 
+    "contributors": [
+        "CarmenBruni"
+    ], 
     "course": "MATH437", 
-    "statement": "For which of the following values of \\emph{k} does\n$\\displaystyle x^2 + y^2 = k!$ have a solution with \\emph{x}, \\emph{y}\nintegers:\n\n(a) $\\displaystyle k = 6$ (b) $\\displaystyle k = 12$ (c)\n$\\displaystyle k = 24$ (d) $\\displaystyle k = 48$", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall Fermat&#8217;s Theorem on the Sums of Two Squares: A number <em>n</em> is a sum of two squares if and only if all prime factors of the form <span class=\"math\">\\(\\displaystyle 4k+3\\)</span> have even exponent in the prime factorization of <em>n</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall Fermat's Theorem on the Sums of Two Squares: A number \\emph{n} is\na sum of two squares if and only if all prime factors of the form\n$\\displaystyle 4k+3$ have even exponent in the prime factorization of\n\\emph{n}."
+    ], 
+    "hints_raw": [
+        "Recall Fermat's Theorem on the Sums of Two Squares: A number ''n'' is a sum of two squares if and only if all prime factors of the form &lt;math> \\displaystyle 4k+3 &lt;/math> have even exponent in the prime factorization of ''n''.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4", 
+    "rating": null, 
+    "sols_html": [
+        "<p>(a) Since <span class=\"math\">\\(\\displaystyle 6! = 2^{4} \\cdot 3^{2} \\cdot5\\)</span>, Fermat&#8217;s theorem says that in case (a) we must have a solution. (The curiously minded person should note that as <span class=\"math\">\\(1^{2} + 2^{2} = 5\\)</span> then multiplying both sides by <span class=\"math\">\\(12^{2}\\)</span> gives <span class=\"math\">\\(\\displaystyle 12^{2} + 24^{2} = 6!\\)</span>).</p>\n<p>(b) As <span class=\"math\">\\(\\displaystyle 11 \\parallel 12!\\)</span> and <span class=\"math\">\\(\\displaystyle 11\\equiv 3 \\mod{4}\\)</span>, this case has no solutions.</p>\n<p>(c) As <span class=\"math\">\\(\\displaystyle 23 \\parallel 24!\\)</span> and <span class=\"math\">\\(\\displaystyle 23 \\equiv 3 \\mod{4}\\)</span>, this case has no solutions.</p>\n<p>(d) As <span class=\"math\">\\(\\displaystyle 47 \\parallel 48!\\)</span> and <span class=\"math\">\\(\\displaystyle 47 \\equiv 3 \\mod{4}\\)</span>, this case has no solutions.</p>\n"
+    ], 
+    "sols_latex": [
         "(a) Since $\\displaystyle 6! = 2^{4} \\cdot 3^{2} \\cdot5$, Fermat's\ntheorem says that in case (a) we must have a solution. (The curiously\nminded person should note that as $1^{2} + 2^{2} = 5$ then multiplying\nboth sides by $12^{2}$ gives $\\displaystyle 12^{2} + 24^{2} = 6!$).\n\n(b) As $\\displaystyle 11 \\parallel 12!$ and\n$\\displaystyle 11\\equiv 3 \\mod{4}$, this case has no solutions.\n\n(c) As $\\displaystyle 23 \\parallel 24!$ and\n$\\displaystyle 23 \\equiv 3 \\mod{4}$, this case has no solutions.\n\n(d) As $\\displaystyle 47 \\parallel 48!$ and\n$\\displaystyle 47 \\equiv 3 \\mod{4}$, this case has no solutions."
     ], 
-    "hints": [
-        "Recall Fermat's Theorem on the Sums of Two Squares: A number \\emph{n} is\na sum of two squares if and only if all prime factors of the form\n$\\displaystyle 4k+3$ have even exponent in the prime factorization of\n\\emph{n}."
-    ]
+    "sols_raw": [
+        "(a) Since &lt;math> \\displaystyle 6! = 2^{4} \\cdot 3^{2} \\cdot5 &lt;/math>, Fermat's theorem says that in case (a) we must have a solution. (The curiously minded person should note that as &lt;math> 1^{2} + 2^{2} = 5 &lt;/math> then multiplying both sides by &lt;math> 12^{2} &lt;/math> gives &lt;math> \\displaystyle 12^{2} + 24^{2} = 6! &lt;/math>).\n\n(b) As &lt;math> \\displaystyle 11 \\parallel 12! &lt;/math> and &lt;math> \\displaystyle 11\\equiv 3 \\mod{4} &lt;/math>, this case has no solutions.\n\n(c) As &lt;math> \\displaystyle 23 \\parallel 24! &lt;/math> and &lt;math> \\displaystyle 23 \\equiv 3 \\mod{4} &lt;/math>, this case has no solutions.\n\n(d) As &lt;math> \\displaystyle 47 \\parallel 48! &lt;/math> and &lt;math> \\displaystyle 47 \\equiv 3 \\mod{4} &lt;/math>, this case has no solutions.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>For which of the following values of <em>k</em> does <span class=\"math\">\\(\\displaystyle x^2 + y^2 = k!\\)</span> have a solution with <em>x</em>, <em>y</em> integers:</p>\n<p>(a) <span class=\"math\">\\(\\displaystyle k = 6\\)</span> (b) <span class=\"math\">\\(\\displaystyle k = 12\\)</span> (c) <span class=\"math\">\\(\\displaystyle k = 24\\)</span> (d) <span class=\"math\">\\(\\displaystyle k = 48\\)</span></p>\n", 
+    "statement_latex": "For which of the following values of \\emph{k} does\n$\\displaystyle x^2 + y^2 = k!$ have a solution with \\emph{x}, \\emph{y}\nintegers:\n\n(a) $\\displaystyle k = 6$ (b) $\\displaystyle k = 12$ (c)\n$\\displaystyle k = 24$ (d) $\\displaystyle k = 48$", 
+    "statement_raw": "For which of the following values of ''k'' does &lt;math> \\displaystyle x^2 + y^2 = k! &lt;/math> have a solution with ''x'', ''y'' integers: \n\n(a) &lt;math> \\displaystyle k = 6 &lt;/math>\n(b) &lt;math> \\displaystyle k = 12 &lt;/math>\n(c) &lt;math> \\displaystyle k = 24 &lt;/math>\n(d) &lt;math> \\displaystyle k = 48 &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Fermat%27s_theorem_on_sums_of_two_squares"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2006/Question_04", 
+    "year": 2006
 }

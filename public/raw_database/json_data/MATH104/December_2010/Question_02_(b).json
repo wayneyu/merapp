@@ -1,14 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH104", 
-    "statement": "Use a suitable linear approximation (tangent line approximation) to\nestimate the x-coordinate of the point on the curve whose y-coordinate\nis 31/16. A calculator-ready answer is enough.", 
-    "year": 2010, 
-    "sols": [
-        "First note that the difference between the y-coordinates of this point\nand (1,2) is $31/16-2=-1/16$, which is fairly small. It is probably\nsmall enough to use the tangent line from part (a) to find a reasonable\napproximation for the x-coordinate of this point. (We are not asked to\nestimate the error in this approximation.)\n\nThe x-coordinate of the point on the tangent line with y-coordinate\n31/16 can be found by substituting y=31/16 into the equation for the\ntangent line and solving for x.\n\n\\begin{align*}\\frac{31}{16}-2 =  -\\frac{7}{16}(x-1)\\end{align*} Solving for $x$,\n\n\\begin{align*}x =  1-\\frac{16}{7}\\left(\\frac{31}{16}-2\\right) = 1-\\frac{16}{7}\\left(-\\frac{1}{16}\\right) = 1+\\frac{1}{7} = \\frac{8}{7}.\\end{align*}\n\nMaking a linear approximation, we conclude that the point on the\n\\emph{curve} with y-coordinate 31/16 is approximately the same as the\npoint on the \\emph{tangent line} with y-coordinate 31/16.\n\nHence, the x-coordinate of the point on the curve with y-coordinate\n31/16 is approximately 8/7."
+    "answer_html": "<p>Making a linear approximation, we conclude that the point on the <em>curve</em> with y-coordinate 31/16 is approximately the same as the point on the <em>tangent line</em> with y-coordinate 31/16.Hence, the x-coordinate of the point on the curve with y-coordinate 31/16 is approximately 8/7.</p>\n", 
+    "answer_latex": "Making a linear approximation, we conclude that the point on the\n\\emph{curve} with y-coordinate 31/16 is approximately the same as the\npoint on the \\emph{tangent line} with y-coordinate 31/16.Hence, the x-coordinate of the point on the curve with y-coordinate\n31/16 is approximately 8/7.", 
+    "contributors": [
+        "WilliamThompson", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ChristinaKoch", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The graph of the linear approximation near a point on a curve is simply the tangent line to the curve at that point.</p>\n", 
+        "<p>You&#8217;ve already found the equation of the tangent line at the point (1,2) in part (a). Is the point on the curve with y-coordinate 31/16 close to (1,2)? If so, you can use the tangent line equation from part (a).</p>\n"
+    ], 
+    "hints_latex": [
         "The graph of the linear approximation near a point on a curve is simply\nthe tangent line to the curve at that point.", 
         "You've already found the equation of the tangent line at the point (1,2)\nin part (a). Is the point on the curve with y-coordinate 31/16 close to\n(1,2)? If so, you can use the tangent line equation from part (a)."
-    ]
+    ], 
+    "hints_raw": [
+        "The graph of the linear approximation near a point on a curve is simply the tangent line to the curve at that point.\n", 
+        "You've already found the equation of the tangent line at the point (1,2) in part (a).  Is the point on the curve with y-coordinate 31/16 close to (1,2)?  If so, you can use the tangent line equation from part (a).\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (b)", 
+    "rating": 55, 
+    "sols_html": [
+        "<p>First note that the difference between the y-coordinates of this point and (1,2) is <span class=\"math\">\\(31/16-2=-1/16\\)</span>, which is fairly small. It is probably small enough to use the tangent line from part (a) to find a reasonable approximation for the x-coordinate of this point. (We are not asked to estimate the error in this approximation.)</p>\n<p>The x-coordinate of the point on the tangent line with y-coordinate 31/16 can be found by substituting y=31/16 into the equation for the tangent line and solving for x.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{31}{16}-2 =  -\\frac{7}{16}(x-1)\\end{aligned}\\]</span></p>\n<p>Solving for <span class=\"math\">\\(x\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx =  1-\\frac{16}{7}\\left(\\frac{31}{16}-2\\right) = 1-\\frac{16}{7}\\left(-\\frac{1}{16}\\right) = 1+\\frac{1}{7} = \\frac{8}{7}.\\end{aligned}\\]</span></p>\n<p>Making a linear approximation, we conclude that the point on the <em>curve</em> with y-coordinate 31/16 is approximately the same as the point on the <em>tangent line</em> with y-coordinate 31/16.</p>\n<p>Hence, the x-coordinate of the point on the curve with y-coordinate 31/16 is approximately 8/7.</p>\n"
+    ], 
+    "sols_latex": [
+        "First note that the difference between the y-coordinates of this point\nand (1,2) is $31/16-2=-1/16$, which is fairly small. It is probably\nsmall enough to use the tangent line from part (a) to find a reasonable\napproximation for the x-coordinate of this point. (We are not asked to\nestimate the error in this approximation.)\n\nThe x-coordinate of the point on the tangent line with y-coordinate\n31/16 can be found by substituting y=31/16 into the equation for the\ntangent line and solving for x.\n\n\\begin{align*}\n\\frac{31}{16}-2 =  -\\frac{7}{16}(x-1)\n\\end{align*} Solving for $x$,\n\n\\begin{align*}\nx =  1-\\frac{16}{7}\\left(\\frac{31}{16}-2\\right) = 1-\\frac{16}{7}\\left(-\\frac{1}{16}\\right) = 1+\\frac{1}{7} = \\frac{8}{7}.\n\\end{align*}\n\nMaking a linear approximation, we conclude that the point on the\n\\emph{curve} with y-coordinate 31/16 is approximately the same as the\npoint on the \\emph{tangent line} with y-coordinate 31/16.\n\nHence, the x-coordinate of the point on the curve with y-coordinate\n31/16 is approximately 8/7."
+    ], 
+    "sols_raw": [
+        "First note that the difference between the y-coordinates of this point and (1,2) is &lt;math>31/16-2=-1/16 &lt;/math>, which is fairly small.  It is probably small enough to use the tangent line from part (a) to find a reasonable approximation for the x-coordinate of this point.  (We are not asked to estimate the error in this approximation.)\n\nThe x-coordinate of the point on the tangent line with y-coordinate 31/16 can be found by substituting y=31/16 into the equation for the tangent line and solving for x.\n\n:&lt;math>\\frac{31}{16}-2 =  -\\frac{7}{16}(x-1)&lt;/math>\nSolving for &lt;math>x &lt;/math>,\n:&lt;math>x =  1-\\frac{16}{7}\\left(\\frac{31}{16}-2\\right) = 1-\\frac{16}{7}\\left(-\\frac{1}{16}\\right) = 1+\\frac{1}{7} = \\frac{8}{7}&lt;/math>.\n\nMaking a linear approximation, we conclude that the point on the ''curve'' with y-coordinate 31/16 is approximately the same as the point on the ''tangent line'' with y-coordinate 31/16.\n\nHence, the x-coordinate of the point on the curve with y-coordinate 31/16 is approximately 8/7.\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Use a suitable linear approximation (tangent line approximation) to estimate the x-coordinate of the point on the curve whose y-coordinate is 31/16. A calculator-ready answer is enough.</p>\n", 
+    "statement_latex": "Use a suitable linear approximation (tangent line approximation) to\nestimate the x-coordinate of the point on the curve whose y-coordinate\nis 31/16. A calculator-ready answer is enough.", 
+    "statement_raw": "Use a suitable linear approximation (tangent line approximation) to estimate the x-coordinate of the point on the curve whose y-coordinate is 31/16.  A calculator-ready answer is enough.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_02_(b)", 
+    "year": 2010
 }

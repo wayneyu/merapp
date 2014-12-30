@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nEvaluate $\\displaystyle \\int_{0}^{5/2}\\frac{dx}{\\sqrt{25 - x^{2}}}$.", 
-    "year": 2013, 
-    "sols": [
-        "We start by noting that the denominator is in the form\n\n\\begin{align*}\\displaystyle{}a^2-x^2\\end{align*}\n\nwith \\emph{a = 5}. This is a good indicator that we want to do a trig\nsubstitution with\n\n\\begin{align*}\\displaystyle{}x=a\\sin\\theta\\end{align*}\n\nbecause\n\n\\begin{align*}\\displaystyle{}a^2\\sin^2\\theta+a^2\\cos^2\\theta=a^2\\end{align*}\n\nand hence\n\n\\begin{align*}\\displaystyle{} a^2 - a^2\\sin^2\\theta = a^2\\cos^2\\theta\\end{align*}\n\nWe will use this identity to handle the square root in the denominator.\nSo, let\n\n\\begin{align*}\nx&=5\\sin\\theta\\\\\ndx&=5\\cos \\theta d\\theta.\\end{align*}\n\nWe must also modify the limits of integration since we have a new\nvariable. When\n\n\\begin{align*}\nx&=0=5\\sin\\theta\\end{align*}\n\nsolving for $\\theta$ gives $\\displaystyle {}\\theta=0$. Solving\n\n\\begin{align*}\nx&=5/2=5\\sin\\theta\\end{align*}\n\nfor $\\theta$ gives $\\displaystyle {}\\theta=\\frac{\\pi}{6}$. Substituting\nthese values into our integral we obtain\n\n\\begin{align*}\\int_{0}^{5/2}\\frac{dx}{\\sqrt{25-x^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{25-(5\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}.\\end{align*}\n\nWe can use the identity above we get\n\n\\begin{align*}\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2(\\cos\\theta)^{2}}} = \\int_{0}^{\\pi/6} 1 d\\theta = \\frac{\\pi}{6}\\end{align*}\n\nSince this is a definite integral, the result is a number and we do not\nneed to return to the previous variables."
+    "answer_html": "<p><span class=\"math\">\\(\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}=\\frac{\\pi}{6}\\)</span> Since this is a definite integral, the result is a number and we do not need to return to the previous variables.</p>\n", 
+    "answer_latex": " $\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}=\\frac{\\pi}{6}$ Since this is a definite integral, the result is a number and we do not\nneed to return to the previous variables.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The identity <span class=\"math\">\\(\\displaystyle {}\\sin^2\\theta+\\cos^2\\theta=1\\)</span> may be useful here.</p>\n"
+    ], 
+    "hints_latex": [
         "The identity $\\displaystyle {}\\sin^2\\theta+\\cos^2\\theta=1$ may be useful\nhere."
-    ]
+    ], 
+    "hints_raw": [
+        "The identity &lt;math>\\displaystyle{}\\sin^2\\theta+\\cos^2\\theta=1&lt;/math> may be useful here.\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (c)", 
+    "rating": 83, 
+    "sols_html": [
+        "<p>We start by noting that the denominator is in the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}a^2-x^2\\end{aligned}\\]</span></p>\n<p>with <em>a = 5</em>. This is a good indicator that we want to do a trig substitution with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x=a\\sin\\theta\\end{aligned}\\]</span></p>\n<p>because</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}a^2\\sin^2\\theta+a^2\\cos^2\\theta=a^2\\end{aligned}\\]</span></p>\n<p>and hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{} a^2 - a^2\\sin^2\\theta = a^2\\cos^2\\theta\\end{aligned}\\]</span></p>\n<p>We will use this identity to handle the square root in the denominator. So, let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&amp;=5\\sin\\theta\\\\\ndx&amp;=5\\cos \\theta d\\theta.\\end{aligned}\\]</span></p>\n<p>We must also modify the limits of integration since we have a new variable. When</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&amp;=0=5\\sin\\theta\\end{aligned}\\]</span></p>\n<p>solving for <span class=\"math\">\\(\\theta\\)</span> gives <span class=\"math\">\\(\\displaystyle {}\\theta=0\\)</span>. Solving</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&amp;=5/2=5\\sin\\theta\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(\\theta\\)</span> gives <span class=\"math\">\\(\\displaystyle {}\\theta=\\frac{\\pi}{6}\\)</span>. Substituting these values into our integral we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{5/2}\\frac{dx}{\\sqrt{25-x^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{25-(5\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}.\\end{aligned}\\]</span></p>\n<p>We can use the identity above we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2(\\cos\\theta)^{2}}} = \\int_{0}^{\\pi/6} 1 d\\theta = \\frac{\\pi}{6}\\end{aligned}\\]</span></p>\n<p>Since this is a definite integral, the result is a number and we do not need to return to the previous variables.</p>\n"
+    ], 
+    "sols_latex": [
+        "We start by noting that the denominator is in the form\n\n\\begin{align*}\n\\displaystyle{}a^2-x^2\n\\end{align*}\n\nwith \\emph{a = 5}. This is a good indicator that we want to do a trig\nsubstitution with\n\n\\begin{align*}\n\\displaystyle{}x=a\\sin\\theta\n\\end{align*}\n\nbecause\n\n\\begin{align*}\n\\displaystyle{}a^2\\sin^2\\theta+a^2\\cos^2\\theta=a^2\n\\end{align*}\n\nand hence\n\n\\begin{align*}\n\\displaystyle{} a^2 - a^2\\sin^2\\theta = a^2\\cos^2\\theta\n\\end{align*}\n\nWe will use this identity to handle the square root in the denominator.\nSo, let\n\n\\begin{align*}\nx&=5\\sin\\theta\\\\\ndx&=5\\cos \\theta d\\theta.\n\\end{align*}\n\nWe must also modify the limits of integration since we have a new\nvariable. When\n\n\\begin{align*}\nx&=0=5\\sin\\theta\n\\end{align*}\n\nsolving for $\\theta$ gives $\\displaystyle {}\\theta=0$. Solving\n\n\\begin{align*}\nx&=5/2=5\\sin\\theta\n\\end{align*}\n\nfor $\\theta$ gives $\\displaystyle {}\\theta=\\frac{\\pi}{6}$. Substituting\nthese values into our integral we obtain\n\n\\begin{align*}\n\\int_{0}^{5/2}\\frac{dx}{\\sqrt{25-x^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{25-(5\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}.\n\\end{align*}\n\nWe can use the identity above we get\n\n\\begin{align*}\n\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2(\\cos\\theta)^{2}}} = \\int_{0}^{\\pi/6} 1 d\\theta = \\frac{\\pi}{6}\n\\end{align*}\n\nSince this is a definite integral, the result is a number and we do not\nneed to return to the previous variables."
+    ], 
+    "sols_raw": [
+        "We start by noting that the denominator is in the form\n\n:&lt;math>\n\\displaystyle{}a^2-x^2\n&lt;/math>\n\nwith ''a = 5''. This is a good indicator that we want to do a trig substitution with\n\n:&lt;math>\n\\displaystyle{}x=a\\sin\\theta\n&lt;/math>\n\nbecause\n\n:&lt;math>\n\\displaystyle{}a^2\\sin^2\\theta+a^2\\cos^2\\theta=a^2\n&lt;/math>\n\nand hence\n:&lt;math>\n\\displaystyle{} a^2 - a^2\\sin^2\\theta = a^2\\cos^2\\theta\n&lt;/math>\n\nWe will use this identity to handle the square root in the denominator. So, let\n\n:&lt;math>\n\\begin{align}\nx&amp;=5\\sin\\theta\\\\\ndx&amp;=5\\cos \\theta d\\theta.\n\\end{align}\n&lt;/math>\n\nWe must also modify the limits of integration since we have a new variable. When \n\n:&lt;math>\n\\begin{align}\nx&amp;=0=5\\sin\\theta\n\\end{align}\n&lt;/math>\n\nsolving for &lt;math>\\theta&lt;/math> gives &lt;math>\\displaystyle{}\\theta=0&lt;/math>. Solving\n\n:&lt;math>\n\\begin{align}\nx&amp;=5/2=5\\sin\\theta\n\\end{align}\n&lt;/math>\n\nfor &lt;math>\\theta&lt;/math> gives &lt;math>\\displaystyle{}\\theta=\\frac{\\pi}{6}&lt;/math>. Substituting these values into our integral we obtain\n\n:&lt;math>\n\\int_{0}^{5/2}\\frac{dx}{\\sqrt{25-x^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{25-(5\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}}.\n&lt;/math>\n\nWe can use the identity above we get\n\n:&lt;math>\n\\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2-(5)^2(\\sin\\theta)^{2}}} = \\int_{0}^{\\pi/6}\\frac{5\\cos \\theta d\\theta }{\\sqrt{(5)^2(\\cos\\theta)^{2}}} = \\int_{0}^{\\pi/6} 1 d\\theta = \\frac{\\pi}{6}\n&lt;/math>\n\nSince this is a definite integral, the result is a number and we do not need to return to the previous variables.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Evaluate <span class=\"math\">\\(\\displaystyle \\int_{0}^{5/2}\\frac{dx}{\\sqrt{25 - x^{2}}}\\)</span>.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nEvaluate $\\displaystyle \\int_{0}^{5/2}\\frac{dx}{\\sqrt{25 - x^{2}}}$.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nEvaluate &lt;math>\\displaystyle \\int_{0}^{5/2}\\frac{dx}{\\sqrt{25 - x^{2}}}&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Trigonometric_substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(c)", 
+    "year": 2013
 }

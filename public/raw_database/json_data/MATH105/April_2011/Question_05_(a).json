@@ -1,13 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH105", 
-    "statement": "You open a savings account under the Escalator Plan with an initial\ndeposit of $\\$P$. The advantage of this plan is that the interest rate\nis not fixed, but grows proportionally with time as long as the account\nis alive. In other words, the money in the account collects interest at\nthe annual rate of $rt$ at time $t,$ compounded continuously (here $r$\nis a constant). You also keep adding money to the account in the form of\na continuous deposit of $\\$S(t)$ at time $t.$\n\nWrite down the initial value problem for the amount $A(t)$ in your\naccount in time $t.$", 
-    "year": 2011, 
-    "sols": [
-        "Let $P$ be the initial deposit in the account and $A(t)$ be the amount\nof money in the account at time $t$. We denote the interest rate by $i$.\nThe fact that we compound interest rate continuously translates into the\ndifferential equation\n\n\\begin{align*}\\frac{dA}{dt} = i \\cdot A\\end{align*}\n\nIn addition, at every time we add the amount $S(t)$ to the account.\nHence, the differential equation changes to\n\n\\begin{align*}\\frac{dA}{dt} = i \\cdot A + S\\end{align*}\n\nFurthermore, the interest rate grows proportionally with time. This\nmeans that $i = rt$ for some constant $r$. Thus, we arrive at\n\n\\begin{align*}\\frac{dA}{dt} = rt\\cdot A + S\\end{align*}\n\nWe also know that $A(0) = P$ because $P$ is the initial deposit."
+    "answer_html": "<p>We also know that <span class=\"math\">\\(A(0) = P\\)</span> because <span class=\"math\">\\(P\\)</span> is the initial deposit.</p>\n", 
+    "answer_latex": "We also know that $A(0) = P$ because $P$ is the initial deposit.", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "Konradbe", 
+        "ErickWong", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Proceed step by step to create that differential equation:</p>\n<ul>\n<li><p>what is the influence of the continuous compounding?</p></li>\n<li><p>how do you take into account that you continuously add to your investment?</p></li>\n<li><p>how do we model the fact that the interest rate grows proportionally with time?</p></li>\n</ul>\n"
+    ], 
+    "hints_latex": [
         "Proceed step by step to create that differential equation:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  what is the influence of the continuous compounding?\n\\item\n  how do you take into account that you continuously add to your\n  investment?\n\\item\n  how do we model the fact that the interest rate grows proportionally\n  with time?\n\\end{itemize}"
-    ]
+    ], 
+    "hints_raw": [
+        "Proceed step by step to create that differential equation:\n* what is the influence of the continuous compounding?\n* how do you take into account that you continuously add to your investment?\n* how do we model the fact that the interest rate grows proportionally with time?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(P\\)</span> be the initial deposit in the account and <span class=\"math\">\\(A(t)\\)</span> be the amount of money in the account at time <span class=\"math\">\\(t\\)</span>. We denote the interest rate by <span class=\"math\">\\(i\\)</span>. The fact that we compound interest rate continuously translates into the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dA}{dt} = i \\cdot A\\end{aligned}\\]</span></p>\n<p>In addition, at every time we add the amount <span class=\"math\">\\(S(t)\\)</span> to the account. Hence, the differential equation changes to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dA}{dt} = i \\cdot A + S\\end{aligned}\\]</span></p>\n<p>Furthermore, the interest rate grows proportionally with time. This means that <span class=\"math\">\\(i = rt\\)</span> for some constant <span class=\"math\">\\(r\\)</span>. Thus, we arrive at</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dA}{dt} = rt\\cdot A + S\\end{aligned}\\]</span></p>\n<p>We also know that <span class=\"math\">\\(A(0) = P\\)</span> because <span class=\"math\">\\(P\\)</span> is the initial deposit.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let $P$ be the initial deposit in the account and $A(t)$ be the amount\nof money in the account at time $t$. We denote the interest rate by $i$.\nThe fact that we compound interest rate continuously translates into the\ndifferential equation\n\n\\begin{align*}\n\\frac{dA}{dt} = i \\cdot A\n\\end{align*}\n\nIn addition, at every time we add the amount $S(t)$ to the account.\nHence, the differential equation changes to\n\n\\begin{align*}\n\\frac{dA}{dt} = i \\cdot A + S\n\\end{align*}\n\nFurthermore, the interest rate grows proportionally with time. This\nmeans that $i = rt$ for some constant $r$. Thus, we arrive at\n\n\\begin{align*}\n\\frac{dA}{dt} = rt\\cdot A + S\n\\end{align*}\n\nWe also know that $A(0) = P$ because $P$ is the initial deposit."
+    ], 
+    "sols_raw": [
+        "Let &lt;math>P&lt;/math> be the initial deposit in the account and &lt;math>A(t)&lt;/math> be the amount of money in the account at time &lt;math>t&lt;/math>. We denote the interest rate by &lt;math>i&lt;/math>. The fact that we compound interest rate continuously translates into the differential equation\n\n:&lt;math>\n\\frac{dA}{dt} = i \\cdot A\n&lt;/math>\n\nIn addition, at every time we add the amount &lt;math>S(t)&lt;/math> to the account. Hence, the differential equation changes to\n\n:&lt;math>\n\\frac{dA}{dt} = i \\cdot A + S\n&lt;/math>\n\nFurthermore, the interest rate grows proportionally with time. This means that &lt;math>i = rt&lt;/math> for some constant &lt;math>r&lt;/math>. Thus, we arrive at\n\n:&lt;math>\n\\frac{dA}{dt} = rt\\cdot A + S\n&lt;/math>\n\nWe also know that &lt;math>A(0) = P&lt;/math> because &lt;math>P&lt;/math> is the initial deposit.\n"
+    ], 
+    "solvers": [
+        "Klinzmann"
+    ], 
+    "statement_html": "<p>You open a savings account under the Escalator Plan with an initial deposit of <span class=\"math\">\\(\\$P\\)</span>. The advantage of this plan is that the interest rate is not fixed, but grows proportionally with time as long as the account is alive. In other words, the money in the account collects interest at the annual rate of <span class=\"math\">\\(rt\\)</span> at time <span class=\"math\">\\(t,\\)</span> compounded continuously (here <span class=\"math\">\\(r\\)</span> is a constant). You also keep adding money to the account in the form of a continuous deposit of <span class=\"math\">\\(\\$S(t)\\)</span> at time <span class=\"math\">\\(t.\\)</span></p>\n<p>Write down the initial value problem for the amount <span class=\"math\">\\(A(t)\\)</span> in your account in time <span class=\"math\">\\(t.\\)</span></p>\n", 
+    "statement_latex": "You open a savings account under the Escalator Plan with an initial\ndeposit of $\\$P$. The advantage of this plan is that the interest rate\nis not fixed, but grows proportionally with time as long as the account\nis alive. In other words, the money in the account collects interest at\nthe annual rate of $rt$ at time $t,$ compounded continuously (here $r$\nis a constant). You also keep adding money to the account in the form of\na continuous deposit of $\\$S(t)$ at time $t.$\n\nWrite down the initial value problem for the amount $A(t)$ in your\naccount in time $t.$", 
+    "statement_raw": "You open a savings account under the Escalator Plan with an initial deposit of &lt;math>\\$P&lt;/math>. The advantage of this plan is that the interest rate is not fixed, but grows proportionally with time as long as the account is alive.  In other words, the money in the account collects interest at the annual rate of &lt;math> rt &lt;/math> at time &lt;math> t, &lt;/math> compounded continuously (here &lt;math> r &lt;/math> is a constant).  You also keep adding money to the account in the form of a continuous deposit of &lt;math>\\$S(t)&lt;/math> at time &lt;math> t. &lt;/math>\n\nWrite down the initial value problem for the amount &lt;math> A(t) &lt;/math> in your account in time &lt;math> t. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Initial_value_problem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2011/Question_05_(a)", 
+    "year": 2011
 }

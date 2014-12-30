@@ -1,14 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_01_(n)", 
-    "course": "MATH104", 
-    "statement": "Find an approximation to $(7.5)^{1/3}$ by using the linear approximation\nto $f(x) = x^{1/3}$ at $a = 8$. Give your answer as a fraction, $p/q$,\nin lowest terms.", 
-    "year": 2011, 
-    "sols": [
-        "The linear approximation, $L(x)$, to a function, $f(x)$, at the point\n$a$, is given by\n\n\\begin{align*}\\displaystyle\nL(x) = f(a) + f'(a)(x - a).\\end{align*}\n\nFrom the information given we can write the linear approximation to the\nfunction $f(x) = x^{1/3}$ at $a = 8$ as follows:\n\n\\begin{align*}\nL(x) &= 8^{1/3} + \\frac{1}{3}8^{-2/3}(x - 8) \\\\\n&= 2 + \\frac{1}{12}(x - 8).\\end{align*}\n\nThus, the linear approximation gives us the approximate value for\n$(7.5)^{1/3}$:\n\n\\begin{align*}\n(7.5)^{1/3} \\approx L(7.5) &= 2 + \\frac{1}{12}(7.5 - 8) \\\\\n&= 2 - \\frac{1}{24} \\\\\n&= \\frac{47}{24}.\\end{align*}\n\n(This answer is already expressed in lowest terms.)"
+    "answer_html": "<p>(This answer is already expressed in lowest terms.)</p>\n", 
+    "answer_latex": "(This answer is already expressed in lowest terms.)", 
+    "contributors": [
+        "Konradbe", 
+        "GregMayer", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is the definition of the linear approximation to a function <span class=\"math\">\\(f(x)\\)</span> at the point <span class=\"math\">\\(a\\)</span>?</p>\n", 
+        "<p>The linear approximation, <span class=\"math\">\\(L(x)\\)</span>, to a function, <span class=\"math\">\\(f(x)\\)</span>, at the point <span class=\"math\">\\(a\\)</span>, is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nL(x) = f(a) + f&#39;(a)(x - a).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "What is the definition of the linear approximation to a function $f(x)$\nat the point $a$?", 
-        "The linear approximation, $L(x)$, to a function, $f(x)$, at the point\n$a$, is given by\n\n\\begin{align*}\\displaystyle\nL(x) = f(a) + f'(a)(x - a).\\end{align*}"
-    ]
+        "The linear approximation, $L(x)$, to a function, $f(x)$, at the point\n$a$, is given by\n\n\\begin{align*}\n\\displaystyle\nL(x) = f(a) + f'(a)(x - a).\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "What is the definition of the linear approximation to a function &lt;math>f(x)&lt;/math> at the point &lt;math>a&lt;/math>?\n", 
+        "The linear approximation, &lt;math>L(x)&lt;/math>, to a function, &lt;math>f(x)&lt;/math>, at the point &lt;math>a&lt;/math>, is given by\n\n:&lt;math> \\displaystyle\nL(x) = f(a) + f'(a)(x - a).\n&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (n)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The linear approximation, <span class=\"math\">\\(L(x)\\)</span>, to a function, <span class=\"math\">\\(f(x)\\)</span>, at the point <span class=\"math\">\\(a\\)</span>, is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nL(x) = f(a) + f&#39;(a)(x - a).\\end{aligned}\\]</span></p>\n<p>From the information given we can write the linear approximation to the function <span class=\"math\">\\(f(x) = x^{1/3}\\)</span> at <span class=\"math\">\\(a = 8\\)</span> as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL(x) &amp;= 8^{1/3} + \\frac{1}{3}8^{-2/3}(x - 8) \\\\\n&amp;= 2 + \\frac{1}{12}(x - 8).\\end{aligned}\\]</span></p>\n<p>Thus, the linear approximation gives us the approximate value for <span class=\"math\">\\((7.5)^{1/3}\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(7.5)^{1/3} \\approx L(7.5) &amp;= 2 + \\frac{1}{12}(7.5 - 8) \\\\\n&amp;= 2 - \\frac{1}{24} \\\\\n&amp;= \\frac{47}{24}.\\end{aligned}\\]</span></p>\n<p>(This answer is already expressed in lowest terms.)</p>\n"
+    ], 
+    "sols_latex": [
+        "The linear approximation, $L(x)$, to a function, $f(x)$, at the point\n$a$, is given by\n\n\\begin{align*}\n\\displaystyle\nL(x) = f(a) + f'(a)(x - a).\n\\end{align*}\n\nFrom the information given we can write the linear approximation to the\nfunction $f(x) = x^{1/3}$ at $a = 8$ as follows:\n\n\\begin{align*}\nL(x) &= 8^{1/3} + \\frac{1}{3}8^{-2/3}(x - 8) \\\\\n&= 2 + \\frac{1}{12}(x - 8).\n\\end{align*}\n\nThus, the linear approximation gives us the approximate value for\n$(7.5)^{1/3}$:\n\n\\begin{align*}\n(7.5)^{1/3} \\approx L(7.5) &= 2 + \\frac{1}{12}(7.5 - 8) \\\\\n&= 2 - \\frac{1}{24} \\\\\n&= \\frac{47}{24}.\n\\end{align*}\n\n(This answer is already expressed in lowest terms.)"
+    ], 
+    "sols_raw": [
+        "The linear approximation, &lt;math>L(x)&lt;/math>, to a function, &lt;math>f(x)&lt;/math>, at the point &lt;math>a&lt;/math>, is given by\n\n:&lt;math> \\displaystyle\nL(x) = f(a) + f'(a)(x - a).\n&lt;/math>\n\nFrom the information given we can write the linear approximation to the function &lt;math>f(x) = x^{1/3}&lt;/math> at &lt;math>a = 8&lt;/math> as follows:\n\n:&lt;math>\n\\begin{align}\nL(x) &amp;= 8^{1/3} + \\frac{1}{3}8^{-2/3}(x - 8) \\\\\n&amp;= 2 + \\frac{1}{12}(x - 8).\n\\end{align}\n&lt;/math>\n\nThus, the linear approximation gives us the approximate value for &lt;math>(7.5)^{1/3}&lt;/math>:\n\n:&lt;math>\n\\begin{align}\n(7.5)^{1/3} \\approx L(7.5) &amp;= 2 + \\frac{1}{12}(7.5 - 8) \\\\\n&amp; = 2 - \\frac{1}{24} \\\\\n&amp; = \\frac{47}{24}.\n\\end{align}\n&lt;/math>\n\n(This answer is already expressed in lowest terms.)\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Find an approximation to <span class=\"math\">\\((7.5)^{1/3}\\)</span> by using the linear approximation to <span class=\"math\">\\(f(x) = x^{1/3}\\)</span> at <span class=\"math\">\\(a = 8\\)</span>. Give your answer as a fraction, <span class=\"math\">\\(p/q\\)</span>, in lowest terms.</p>\n", 
+    "statement_latex": "Find an approximation to $(7.5)^{1/3}$ by using the linear approximation\nto $f(x) = x^{1/3}$ at $a = 8$. Give your answer as a fraction, $p/q$,\nin lowest terms.", 
+    "statement_raw": "Find an approximation to &lt;math>(7.5)^{1/3}&lt;/math> by using the linear approximation to &lt;math>f(x) = x^{1/3}&lt;/math> at &lt;math>a = 8&lt;/math>. Give your answer as a fraction, &lt;math>p/q&lt;/math>, in lowest terms.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation", 
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(n)", 
+    "year": 2011
 }

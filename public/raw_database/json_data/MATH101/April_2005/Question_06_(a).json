@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
-    "course": "MATH101", 
-    "statement": "A tree trunk is 60 feet long and has circular cross sections. The\ndiameters in feet measured at 10-foot intervals starting at the bottom\nof the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in\ncubic feet, is computed using the formula\n\n\\begin{align*}V = \\int_0^{60} A(y)\\,dy,\\end{align*}\n\nwhere $A(y)$ is the cross-sectional area of the trunk, in square feet,\n$y$ feet above the bottom of the tree.\n\n(a) Using a Simpson's Rule approximation for $V$, give an estimate for\nthe volume of wood in the tree trunk.\n\n(Do not simplify your answer.)", 
-    "year": 2005, 
-    "sols": [
-        "This is a straightforward application of Simpson's Rule to the integral\n\n\\begin{align*}V = \\int_{0}^{60}A(y)\\,dy.\\end{align*}\n\nNotice that\n\n$\\frac{\\Delta x}{3} = \\frac{\\tfrac{60-0}{6}}{3} = \\frac{10}{3}$\n\nBy Simpson's Rule, the integral can be approximated by the sum\n\n\\begin{align*}\nV \\approx \\frac{10}{3}(A(0) + 4A(10) + 2A(20) + 4A(30) + 2A(40) + 4A(50) + A(60))\\end{align*} Remembering the given information about the diameter\n$D(y)$ of the tree trunk at various heights, $y$, we make the\nappropriate substitutions to determine the cross sectional area at each\nheight:\n\n\\begin{align*}A(y) = \\pi \\left(\\frac{D(y)}{2}\\right)^2 = \\frac{\\pi}{4}D(y)^{2}\\end{align*}\n\nPlugging into our sum we get the approximate volume for the tree trunk.\n\n\\begin{align*}\nV &\\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(V \\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\\)</span></p>\n", 
+    "answer_latex": " $V \\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>To get the volume of the tree you will need to write a Simpson&#8217;s Rule sum involving the cross sectional area of the trunk.</p>\n<p>Look closely at what you are given when evaluating the sum.</p>\n", 
+        "<p>The formula for the Simpson&#8217;s rule is given by</p>\n<p><span class=\"math\">\\(S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\)</span></p>\n<p>where as always <span class=\"math\">\\(n\\)</span> is an even integer.</p>\n"
+    ], 
+    "hints_latex": [
         "To get the volume of the tree you will need to write a Simpson's Rule\nsum involving the cross sectional area of the trunk.\n\nLook closely at what you are given when evaluating the sum.", 
         "The formula for the Simpson's rule is given by\n\n$S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)$\n\nwhere as always $n$ is an even integer."
-    ]
+    ], 
+    "hints_raw": [
+        "To get the volume of the tree you will need to write a Simpson's Rule sum involving the cross sectional area of the trunk.\n\nLook closely at what you are given when evaluating the sum.\n", 
+        "The formula for the Simpson's rule is given by\n\n&lt;math>\nS_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\n&lt;/math>\n\nwhere as always &lt;math> n &lt;/math> is an even integer.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>This is a straightforward application of Simpson&#8217;s Rule to the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV = \\int_{0}^{60}A(y)\\,dy.\\end{aligned}\\]</span></p>\n<p>Notice that</p>\n<p><span class=\"math\">\\(\\frac{\\Delta x}{3} = \\frac{\\tfrac{60-0}{6}}{3} = \\frac{10}{3}\\)</span></p>\n<p>By Simpson&#8217;s Rule, the integral can be approximated by the sum</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV \\approx \\frac{10}{3}(A(0) + 4A(10) + 2A(20) + 4A(30) + 2A(40) + 4A(50) + A(60))\\end{aligned}\\]</span></p>\n<p>Remembering the given information about the diameter <span class=\"math\">\\(D(y)\\)</span> of the tree trunk at various heights, <span class=\"math\">\\(y\\)</span>, we make the appropriate substitutions to determine the cross sectional area at each height:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA(y) = \\pi \\left(\\frac{D(y)}{2}\\right)^2 = \\frac{\\pi}{4}D(y)^{2}\\end{aligned}\\]</span></p>\n<p>Plugging into our sum we get the approximate volume for the tree trunk.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;\\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "This is a straightforward application of Simpson's Rule to the integral\n\n\\begin{align*}\nV = \\int_{0}^{60}A(y)\\,dy.\n\\end{align*}\n\nNotice that\n\n$\\frac{\\Delta x}{3} = \\frac{\\tfrac{60-0}{6}}{3} = \\frac{10}{3}$\n\nBy Simpson's Rule, the integral can be approximated by the sum\n\n\\begin{align*}\nV \\approx \\frac{10}{3}(A(0) + 4A(10) + 2A(20) + 4A(30) + 2A(40) + 4A(50) + A(60))\n\\end{align*} Remembering the given information about the diameter\n$D(y)$ of the tree trunk at various heights, $y$, we make the\nappropriate substitutions to determine the cross sectional area at each\nheight:\n\n\\begin{align*}\nA(y) = \\pi \\left(\\frac{D(y)}{2}\\right)^2 = \\frac{\\pi}{4}D(y)^{2}\n\\end{align*}\n\nPlugging into our sum we get the approximate volume for the tree trunk.\n\n\\begin{align*}\nV &\\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "This is a straightforward application of Simpson's Rule to the integral \n\n:&lt;math>\nV = \\int_{0}^{60}A(y)\\,dy.\n&lt;/math>\n\nNotice that\n\n&lt;math>\n\\frac{\\Delta x}{3} = \\frac{\\tfrac{60-0}{6}}{3} = \\frac{10}{3}\n&lt;/math>\n\nBy Simpson's Rule, the integral can be approximated by the sum\n\n:&lt;math>\n\\begin{align}\nV \\approx \\frac{10}{3}(A(0) + 4A(10) + 2A(20) + 4A(30) + 2A(40) + 4A(50) + A(60))\n\\end{align}\n&lt;/math>\nRemembering the given information about the diameter &lt;math>D(y)&lt;/math> of the tree trunk at various heights, &lt;math>y&lt;/math>, we make the appropriate substitutions to determine the cross sectional area at each height:\n:&lt;math>\nA(y) = \\pi \\left(\\frac{D(y)}{2}\\right)^2 = \\frac{\\pi}{4}D(y)^{2}\n&lt;/math>\n\nPlugging into our sum we get the approximate volume for the tree trunk.\n\n:&lt;math>\n\\begin{align}\nV &amp;\\approx \\frac{10\\pi}{12}(10^2 + 4\\times 8^2 + 2\\times 7^2 + 4\\times 6^2  + 2\\times 5^2 + 4\\times 4^2 + 3^2)\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>A tree trunk is 60 feet long and has circular cross sections. The diameters in feet measured at 10-foot intervals starting at the bottom of the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in cubic feet, is computed using the formula</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV = \\int_0^{60} A(y)\\,dy,\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(A(y)\\)</span> is the cross-sectional area of the trunk, in square feet, <span class=\"math\">\\(y\\)</span> feet above the bottom of the tree.</p>\n<p>(a) Using a Simpson&#8217;s Rule approximation for <span class=\"math\">\\(V\\)</span>, give an estimate for the volume of wood in the tree trunk.</p>\n<p>(Do not simplify your answer.)</p>\n", 
+    "statement_latex": "A tree trunk is 60 feet long and has circular cross sections. The\ndiameters in feet measured at 10-foot intervals starting at the bottom\nof the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in\ncubic feet, is computed using the formula\n\n\\begin{align*}\nV = \\int_0^{60} A(y)\\,dy,\n\\end{align*}\n\nwhere $A(y)$ is the cross-sectional area of the trunk, in square feet,\n$y$ feet above the bottom of the tree.\n\n(a) Using a Simpson's Rule approximation for $V$, give an estimate for\nthe volume of wood in the tree trunk.\n\n(Do not simplify your answer.)", 
+    "statement_raw": "A tree trunk is 60 feet long and has circular cross sections. The diameters in feet measured at 10-foot intervals starting at the bottom of the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in cubic feet, is computed using the formula\n\n:&lt;math> V = \\int_0^{60} A(y)\\,dy, &lt;/math>\n\nwhere &lt;math>A(y)&lt;/math> is the cross-sectional area of the trunk, in square feet, &lt;math>y&lt;/math> feet above the bottom of the tree.\n\n(a) Using a Simpson's Rule approximation for &lt;math>V&lt;/math>, give an estimate for the volume of wood in the tree trunk.\n\n(Do not simplify your answer.)\n", 
+    "term": "April", 
+    "topics": [
+        "Simpson%27s_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_06_(a)", 
+    "year": 2005
 }

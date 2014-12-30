@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_03_(d)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\\int \\frac{dx}{\\sqrt{x^2+16}}.\\end{align*}", 
-    "year": 2008, 
-    "sols": [
-        "We use the trigonometric substitution\n\n\\begin{align*}x = 4\\tan\\theta, \\quad dx = 4\\sec^2\\theta\\,d\\theta\\end{align*}\n\nand obtain\n\n\\begin{align*} \\int \\frac{dx}{\\sqrt{x^2+16}} &= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{\\sqrt{16\\tan^2\\theta+16}} \\\\\n&= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{4\\sec \\theta} \\\\\n&= \\int \\sec\\theta\\,d\\theta.\\end{align*}\n\nTo solve this integral we substitute\n\n\\begin{align*}u=\\sec \\theta +\\tan \\theta, \\quad du = (\\tan \\theta+\\sec\\theta)\\sec\\theta\\,d\\theta,\\end{align*}\n\nand obtain\n\n\\begin{align*}\n\\int \\sec\\theta\\,d\\theta &= \\int \\frac{\\sec \\theta\\,du}{(\\tan\\theta + \\sec\\theta)\\sec \\theta} \\\\\n&= \\int \\frac{du}{u} = \\ln|u| \\\\\n&= \\ln|\\sec \\theta + \\tan \\theta| + C.\\end{align*}\n\nWe use the first substitution $\\tan \\theta = x/4$ to find that\n$\\cos \\theta = \\frac4{\\sqrt{x^2+16}}$ so that our final answer becomes\n\n\\begin{align*}\\int \\frac{dx}{\\sqrt{x^2+16}} = \\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C.\\end{align*}\n\n\\emph{Note that $\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C$\ncan also be written as $\\sinh^{-1}\\left(\\frac{x}4\\right) +C,$ the\ninverse hyperbolic sine function.}"
+    "answer_html": "<p><em>Note that <span class=\"math\">\\(\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C\\)</span> can also be written as <span class=\"math\">\\(\\sinh^{-1}\\left(\\frac{x}4\\right) +C,\\)</span> the inverse hyperbolic sine function.</em></p>\n", 
+    "answer_latex": "\\emph{Note that $\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C$\ncan also be written as $\\sinh^{-1}\\left(\\frac{x}4\\right) +C,$ the\ninverse hyperbolic sine function.}", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try a trigonometric substitution.</p>\n", 
+        "<p>Your trigonometric substitution should make use of the fact that <span class=\"math\">\\(a^2+a^2\\tan^2\\theta = a^2\\sec^2\\theta.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try a trigonometric substitution.", 
         "Your trigonometric substitution should make use of the fact that\n$a^2+a^2\\tan^2\\theta = a^2\\sec^2\\theta.$"
-    ]
+    ], 
+    "hints_raw": [
+        "Try a trigonometric substitution.\n", 
+        "Your trigonometric substitution should make use of the fact that &lt;math>a^2+a^2\\tan^2\\theta = a^2\\sec^2\\theta.&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3 (d)", 
+    "rating": 51, 
+    "sols_html": [
+        "<p>We use the trigonometric substitution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx = 4\\tan\\theta, \\quad dx = 4\\sec^2\\theta\\,d\\theta\\end{aligned}\\]</span></p>\n<p>and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{dx}{\\sqrt{x^2+16}} &amp;= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{\\sqrt{16\\tan^2\\theta+16}} \\\\\n&amp;= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{4\\sec \\theta} \\\\\n&amp;= \\int \\sec\\theta\\,d\\theta.\\end{aligned}\\]</span></p>\n<p>To solve this integral we substitute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu=\\sec \\theta +\\tan \\theta, \\quad du = (\\tan \\theta+\\sec\\theta)\\sec\\theta\\,d\\theta,\\end{aligned}\\]</span></p>\n<p>and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\sec\\theta\\,d\\theta &amp;= \\int \\frac{\\sec \\theta\\,du}{(\\tan\\theta + \\sec\\theta)\\sec \\theta} \\\\\n&amp;= \\int \\frac{du}{u} = \\ln|u| \\\\\n&amp;= \\ln|\\sec \\theta + \\tan \\theta| + C.\\end{aligned}\\]</span></p>\n<p>We use the first substitution <span class=\"math\">\\(\\tan \\theta = x/4\\)</span> to find that <span class=\"math\">\\(\\cos \\theta = \\frac4{\\sqrt{x^2+16}}\\)</span> so that our final answer becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{dx}{\\sqrt{x^2+16}} = \\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C.\\end{aligned}\\]</span></p>\n<p><em>Note that <span class=\"math\">\\(\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C\\)</span> can also be written as <span class=\"math\">\\(\\sinh^{-1}\\left(\\frac{x}4\\right) +C,\\)</span> the inverse hyperbolic sine function.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "We use the trigonometric substitution\n\n\\begin{align*}\nx = 4\\tan\\theta, \\quad dx = 4\\sec^2\\theta\\,d\\theta\n\\end{align*}\n\nand obtain\n\n\\begin{align*}\n\\int \\frac{dx}{\\sqrt{x^2+16}} &= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{\\sqrt{16\\tan^2\\theta+16}} \\\\\n&= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{4\\sec \\theta} \\\\\n&= \\int \\sec\\theta\\,d\\theta.\n\\end{align*}\n\nTo solve this integral we substitute\n\n\\begin{align*}\nu=\\sec \\theta +\\tan \\theta, \\quad du = (\\tan \\theta+\\sec\\theta)\\sec\\theta\\,d\\theta,\n\\end{align*}\n\nand obtain\n\n\\begin{align*}\n\\int \\sec\\theta\\,d\\theta &= \\int \\frac{\\sec \\theta\\,du}{(\\tan\\theta + \\sec\\theta)\\sec \\theta} \\\\\n&= \\int \\frac{du}{u} = \\ln|u| \\\\\n&= \\ln|\\sec \\theta + \\tan \\theta| + C.\n\\end{align*}\n\nWe use the first substitution $\\tan \\theta = x/4$ to find that\n$\\cos \\theta = \\frac4{\\sqrt{x^2+16}}$ so that our final answer becomes\n\n\\begin{align*}\n\\int \\frac{dx}{\\sqrt{x^2+16}} = \\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C.\n\\end{align*}\n\n\\emph{Note that $\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C$\ncan also be written as $\\sinh^{-1}\\left(\\frac{x}4\\right) +C,$ the\ninverse hyperbolic sine function.}"
+    ], 
+    "sols_raw": [
+        "We use the trigonometric substitution\n\n:&lt;math> x = 4\\tan\\theta, \\quad dx = 4\\sec^2\\theta\\,d\\theta&lt;/math>\n\nand obtain\n\n&lt;math> \\begin{align} \\int \\frac{dx}{\\sqrt{x^2+16}} &amp;= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{\\sqrt{16\\tan^2\\theta+16}} \\\\\n&amp;= \\int \\frac{4\\sec^2\\theta\\,d\\theta}{4\\sec \\theta} \\\\\n&amp;= \\int \\sec\\theta\\,d\\theta.\n\\end{align} &lt;/math>\n\nTo solve this integral we substitute\n\n:&lt;math>u=\\sec \\theta +\\tan \\theta, \\quad du = (\\tan \\theta+\\sec\\theta)\\sec\\theta\\,d\\theta, &lt;/math>\n\nand obtain\n\n&lt;math> \\begin{align}\n\\int \\sec\\theta\\,d\\theta &amp;= \\int \\frac{\\sec \\theta\\,du}{(\\tan\\theta + \\sec\\theta)\\sec \\theta} \\\\\n&amp;= \\int \\frac{du}{u} = \\ln|u| \\\\\n&amp;= \\ln|\\sec \\theta + \\tan \\theta| + C.\n\\end{align} &lt;/math>\n\nWe use the first substitution &lt;math>\\tan \\theta = x/4&lt;/math> to find that &lt;math>\\cos \\theta = \\frac4{\\sqrt{x^2+16}}&lt;/math> so that our final answer becomes\n\n:&lt;math> \\int \\frac{dx}{\\sqrt{x^2+16}} = \\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C. &lt;/math>\n\n\n''Note that &lt;math>\\ln\\left|\\frac{\\sqrt{x^2+16}}4 + \\frac{x}4\\right| + C&lt;/math> can also be written as &lt;math> \\sinh^{-1}\\left(\\frac{x}4\\right) +C,&lt;/math> the inverse hyperbolic sine function.''\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answers and <strong>show all your work.</strong> Simplification of answers is not required.</p>\n<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{dx}{\\sqrt{x^2+16}}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\n\\int \\frac{dx}{\\sqrt{x^2+16}}.\n\\end{align*}", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answers and '''show all your work.''' Simplification of answers is not required.\n\nEvaluate the following integral.\n\n:&lt;math> \\int \\frac{dx}{\\sqrt{x^2+16}}.&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Trigonometric_substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_03_(d)", 
+    "year": 2008
 }

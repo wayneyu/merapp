@@ -1,15 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_04_(b)", 
-    "course": "MATH221", 
-    "statement": "True or false (explain your answer): If \\emph{v} is an eigenvector for\nthe invertible matrix \\emph{A}, then \\emph{v} is also an eigenvector for\nthe matrix \\emph{A}\\textsuperscript{\u00e2\u0088\u00921}.", 
-    "year": 2011, 
-    "sols": [
-        "\\textbf{Step 1.} If \\emph{v} is an eigenvector for a matrix \\emph{A} for\nsome eigenvalue \u03bb, then we can write\n\n\\begin{align*}\\displaystyle\nAv = \\lambda v\\end{align*}\n\n\\textbf{Step 2.} Since we assume that the matrix \\emph{A} is invertible,\nwe can multiply on the above equation by that inverse on the left on\neach side and obtain\n\n\\begin{align*}\\displaystyle\nA^{-1}Av = A^{-1}\\lambda v\\end{align*} Which is equivalent to\n\n\\begin{align*}\\displaystyle\nv = \\lambda A^{-1} v\\end{align*}\n\n\\textbf{Step 3.} We would now like to divide by \u03bb, but before we should\ncheck that this is allowed, i.e. that \u03bb is not zero. Since \\emph{A} in\ninvertible, \\emph{Aw = 0 = 0(w)} implies \\emph{w = 0}. Thus \u03bb = 0 is\n\\textbf{not} an eigenvalue for \\emph{A} and we can safely bring \u03bb to the\nLHS in the equation above. This yields\n\n\\begin{align*}\\displaystyle\n\\frac{1}{\\lambda}v = A^{-1} v\\end{align*} which would mean that \\emph{v} is an\neigenvector for the eigenvalue 1/\u03bb of the inverse of the matrix\n\\emph{A}. So we can conclude that the statement is \\textbf{true}."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\n\\frac{1}{\\lambda}v=A^{-1} v\\)</span> which would mean that <em>v</em> is an eigenvector for the eigenvalue 1/<span class=\"math\">\\(\\lambda\\)</span> of the inverse of the matrix <em>A</em>. So we can conclude that the statement is <strong>true</strong>.</p>\n", 
+    "answer_latex": " $\\displaystyle\n\\frac{1}{\\lambda}v=A^{-1} v$  which would mean that \\emph{v} is an\neigenvector for the eigenvalue 1/$\\lambda$ of the inverse of the matrix\n\\emph{A}. So we can conclude that the statement is \\textbf{true}.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What does it mean to be an eigenvector <em>v</em> of a matrix <em>A</em>? Write down the definition and start from there.</p>\n", 
+        "<p>Since we are told that <em>A</em> is invertible, we know that <em>A</em><sup>-1</sup> exists. So you can multiply that to your equation that defines an eigenvector <em>v</em>.</p>\n", 
+        "<p>Can you divide by the eigenvalue <span class=\"math\">\\(\\lambda\\)</span>? I.e. could <span class=\"math\">\\(\\lambda\\)</span> be zero?</p>\n"
+    ], 
+    "hints_latex": [
         "What does it mean to be an eigenvector \\emph{v} of a matrix \\emph{A}?\nWrite down the definition and start from there.", 
         "Since we are told that \\emph{A} is invertible, we know that\n\\emph{A}\\textsuperscript{-1} exists. So you can multiply that to your\nequation that defines an eigenvector \\emph{v}.", 
-        "Can you divide by the eigenvalue \u03bb? I.e. could \u03bb be zero?"
-    ]
+        "Can you divide by the eigenvalue $\\lambda$? I.e. could $\\lambda$ be zero?"
+    ], 
+    "hints_raw": [
+        "What does it mean to be an eigenvector ''v'' of a matrix ''A''? Write down the definition and start from there.\n", 
+        "Since we are told that ''A'' is invertible, we know that ''A''&lt;sup>-1&lt;/sup> exists. So you can multiply that to your equation that defines an eigenvector ''v''.\n", 
+        "Can you divide by the eigenvalue &amp;lambda;? I.e. could &amp;lambda; be zero?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>Step 1.</strong> If <em>v</em> is an eigenvector for a matrix <em>A</em> for some eigenvalue <span class=\"math\">\\(\\lambda\\)</span>, then we can write</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nAv = \\lambda v\\end{aligned}\\]</span></p>\n<p><strong>Step 2.</strong> Since we assume that the matrix <em>A</em> is invertible, we can multiply on the above equation by that inverse on the left on each side and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA^{-1}Av = A^{-1}\\lambda v\\end{aligned}\\]</span></p>\n<p>Which is equivalent to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nv = \\lambda A^{-1} v\\end{aligned}\\]</span></p>\n<p><strong>Step 3.</strong> We would now like to divide by <span class=\"math\">\\(\\lambda\\)</span>, but before we should check that this is allowed, i.e. that <span class=\"math\">\\(\\lambda\\)</span> is not zero. Since <em>A</em> in invertible, <em>Aw = 0 = 0(w)</em> implies <em>w = 0</em>. Thus <span class=\"math\">\\(\\lambda\\)</span> = 0 is <strong>not</strong> an eigenvalue for <em>A</em> and we can safely bring <span class=\"math\">\\(\\lambda\\)</span> to the LHS in the equation above. This yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\frac{1}{\\lambda}v = A^{-1} v\\end{aligned}\\]</span></p>\n<p>which would mean that <em>v</em> is an eigenvector for the eigenvalue 1/<span class=\"math\">\\(\\lambda\\)</span> of the inverse of the matrix <em>A</em>. So we can conclude that the statement is <strong>true</strong>.</p>\n"
+    ], 
+    "sols_latex": [
+        "\\textbf{Step 1.} If \\emph{v} is an eigenvector for a matrix \\emph{A} for\nsome eigenvalue $\\lambda$, then we can write\n\n\\begin{align*}\n\\displaystyle\nAv = \\lambda v\n\\end{align*}\n\n\\textbf{Step 2.} Since we assume that the matrix \\emph{A} is invertible,\nwe can multiply on the above equation by that inverse on the left on\neach side and obtain\n\n\\begin{align*}\n\\displaystyle\nA^{-1}Av = A^{-1}\\lambda v\n\\end{align*} Which is equivalent to\n\n\\begin{align*}\n\\displaystyle\nv = \\lambda A^{-1} v\n\\end{align*}\n\n\\textbf{Step 3.} We would now like to divide by $\\lambda$, but before we should\ncheck that this is allowed, i.e. that $\\lambda$ is not zero. Since \\emph{A} in\ninvertible, \\emph{Aw = 0 = 0(w)} implies \\emph{w = 0}. Thus $\\lambda$ = 0 is\n\\textbf{not} an eigenvalue for \\emph{A} and we can safely bring $\\lambda$ to the\nLHS in the equation above. This yields\n\n\\begin{align*}\n\\displaystyle\n\\frac{1}{\\lambda}v = A^{-1} v\n\\end{align*} which would mean that \\emph{v} is an\neigenvector for the eigenvalue 1/$\\lambda$ of the inverse of the matrix\n\\emph{A}. So we can conclude that the statement is \\textbf{true}."
+    ], 
+    "sols_raw": [
+        "'''Step 1.''' If ''v'' is an eigenvector for a matrix ''A'' for some eigenvalue &amp;lambda;, then we can write\n:&lt;math>\\displaystyle\nAv = \\lambda v\n&lt;/math>\n\n\n'''Step 2.''' Since we assume that the matrix ''A'' is invertible, we can multiply on the above equation by that inverse on the left on each side and obtain\n:&lt;math>\\displaystyle\nA^{-1}Av = A^{-1}\\lambda v\n&lt;/math>\nWhich is equivalent to\n:&lt;math>\\displaystyle\nv = \\lambda A^{-1} v\n&lt;/math>\n\n'''Step 3.''' We would now like to divide by &amp;lambda;, but before we should check that this is allowed, i.e. that &amp;lambda; is not zero. Since ''A'' in invertible, ''Aw = 0 = 0(w)'' implies ''w = 0''. Thus &amp;lambda; = 0 is '''not''' an eigenvalue for ''A'' and we can safely bring &amp;lambda; to the LHS in the equation above. This yields\n:&lt;math>\\displaystyle\n\\frac{1}{\\lambda}v = A^{-1} v\n&lt;/math>\nwhich would mean that ''v'' is an eigenvector for the eigenvalue 1/&amp;lambda; of the inverse of the matrix ''A''. So we can conclude that the statement is '''true'''.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>True or false (explain your answer): If <em>v</em> is an eigenvector for the invertible matrix <em>A</em>, then <em>v</em> is also an eigenvector for the matrix <em>A</em><sup>-1</sup>.</p>\n", 
+    "statement_latex": "True or false (explain your answer): If \\emph{v} is an eigenvector for\nthe invertible matrix \\emph{A}, then \\emph{v} is also an eigenvector for\nthe matrix \\emph{A}\\textsuperscript{-1}.", 
+    "statement_raw": "True or false (explain your answer): If ''v'' is an eigenvector for the invertible matrix ''A'', then ''v'' is also an eigenvector for the matrix ''A''&lt;sup>\u22121&lt;/sup>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/December_2011/Question_04_(b)", 
+    "year": 2011
 }

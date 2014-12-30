@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_01_(b)", 
-    "course": "MATH152", 
-    "statement": "Three friends, Hartosh, Mark and Keiko decide to paint houses over the\nsummer. Hartosh paints twice as fast as Mark. Hartosh and Keiko paint a\nhome with six rooms in 8 hours. All three together paint a home with 14\nrooms in 16 hours.\n\n\\textbf{(b)} Write the system you found above in augmented matrix form.", 
-    "year": 2010, 
-    "sols": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B1_(a)}{B1(a)}\nwe have that\n\n\\begin{align*}\nA=\\begin{bmatrix}\n1  &  -2  &  0\\\\\n8  &  0  &  8\\\\\n16  &  16  &  16\n\\end{bmatrix}\\end{align*}\n\nand\n\n\\begin{align*}\n\\mathbf{b}=\\begin{bmatrix}\n0\\\\\n6\\\\\n14\n\\end{bmatrix}.\\end{align*}\n\nThe augmented matrix for $A\\mathbf{x}=\\mathbf{b}$ is $[A|\\mathbf{b}]$.\nThis says to take the matrix $A$ and add the vector $\\mathbf{b}$ as an\nextra column. Therefore the augmented matrix is\n\n\\begin{align*}\n\\left[\\begin{array}{ccc|c}\n1  &  -2  &  0 & 0\\\\\n8  &  0  &  8 & 6\\\\\n16  &  16  &  16 & 14\n\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left[\\begin{array}{ccc|c}\n1    -2    0  0\\\\\n8    0    8  6\\\\\n16    16    16  14\n\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\left[\\begin{array}{ccc|c}\n1    -2    0  0\\\\\n8    0    8  6\\\\\n16    16    16  14\n\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The augmented matrix is the matrix A with an extra column, how do we get the numbers for that extra column?</p>\n"
+    ], 
+    "hints_latex": [
         "The augmented matrix is the matrix A with an extra column, how do we get\nthe numbers for that extra column?"
-    ]
+    ], 
+    "hints_raw": [
+        "The augmented matrix is the matrix A with an extra column, how do we get the numbers for that extra column?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 01 (b)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>From <span>B1(a)</span> we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n1  &amp;  -2  &amp;  0\\\\\n8  &amp;  0  &amp;  8\\\\\n16  &amp;  16  &amp;  16\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{b}=\\begin{bmatrix}\n0\\\\\n6\\\\\n14\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>The augmented matrix for <span class=\"math\">\\(A\\mathbf{x}=\\mathbf{b}\\)</span> is <span class=\"math\">\\([A|\\mathbf{b}]\\)</span>. This says to take the matrix <span class=\"math\">\\(A\\)</span> and add the vector <span class=\"math\">\\(\\mathbf{b}\\)</span> as an extra column. Therefore the augmented matrix is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{ccc|c}\n1  &amp;  -2  &amp;  0 &amp; 0\\\\\n8  &amp;  0  &amp;  8 &amp; 6\\\\\n16  &amp;  16  &amp;  16 &amp; 14\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From\n{B1(a)}\nwe have that\n\n\\begin{align*}\nA=\\begin{bmatrix}\n1  &  -2  &  0\\\\\n8  &  0  &  8\\\\\n16  &  16  &  16\n\\end{bmatrix}\n\\end{align*}\n\nand\n\n\\begin{align*}\n\\mathbf{b}=\\begin{bmatrix}\n0\\\\\n6\\\\\n14\n\\end{bmatrix}.\n\\end{align*}\n\nThe augmented matrix for $A\\mathbf{x}=\\mathbf{b}$ is $[A|\\mathbf{b}]$.\nThis says to take the matrix $A$ and add the vector $\\mathbf{b}$ as an\nextra column. Therefore the augmented matrix is\n\n\\begin{align*}\n\\left[\\begin{array}{ccc|c}\n1  &  -2  &  0 & 0\\\\\n8  &  0  &  8 & 6\\\\\n16  &  16  &  16 & 14\n\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B1_(a)|B1(a)]] we have that\n\n:&lt;math>\n\\begin{align}\nA=\\begin{bmatrix}\n1  &amp;  -2  &amp;  0\\\\\n8  &amp;  0  &amp;  8\\\\\n16  &amp;  16  &amp;  16\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\n\nand\n\n:&lt;math>\n\\begin{align}\n\\mathbf{b}=\\begin{bmatrix}\n0\\\\\n6\\\\\n14\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\n\nThe augmented matrix for &lt;math>A\\mathbf{x}=\\mathbf{b}&lt;/math> is &lt;math>[A|\\mathbf{b}]&lt;/math>.  This says to take the matrix &lt;math>A&lt;/math> and add the vector &lt;math>\\mathbf{b}&lt;/math> as an extra column.  Therefore the augmented matrix is\n\n:&lt;math>\n\\begin{align}\n\\left[\\begin{array}{ccc|c}\n1  &amp;  -2  &amp;  0 &amp; 0\\\\\n8  &amp;  0  &amp;  8 &amp; 6\\\\\n16  &amp;  16  &amp;  16 &amp; 14\n\\end{array}\\right]\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Three friends, Hartosh, Mark and Keiko decide to paint houses over the summer. Hartosh paints twice as fast as Mark. Hartosh and Keiko paint a home with six rooms in 8 hours. All three together paint a home with 14 rooms in 16 hours.</p>\n<p><strong>(b)</strong> Write the system you found above in augmented matrix form.</p>\n", 
+    "statement_latex": "Three friends, Hartosh, Mark and Keiko decide to paint houses over the\nsummer. Hartosh paints twice as fast as Mark. Hartosh and Keiko paint a\nhome with six rooms in 8 hours. All three together paint a home with 14\nrooms in 16 hours.\n\n\\textbf{(b)} Write the system you found above in augmented matrix form.", 
+    "statement_raw": "Three friends, Hartosh, Mark and Keiko decide to paint houses over the summer. Hartosh paints twice as fast as Mark. Hartosh and Keiko paint a home with six rooms in 8 hours. All three together paint a home with 14 rooms in 16 hours.\n\n'''(b)''' Write the system you found above in augmented matrix form.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_01_(b)", 
+    "year": 2010
 }

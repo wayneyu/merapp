@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH103", 
-    "statement": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\na) Use the graph of g(x) below to determine the correct set of values of\n$\\displaystyle G(x) = \\int_{0}^{x}g(t)\\,dt$\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH103April2006Q1a.jpg}\n\\caption{MATH103April2006Q1a.jpg}\n\\end{figure}\n\ni.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & 2 & 4 & 1 & 0\\\\\n\\end{longtable}\n\nii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & -2 & -2 & 0 & 4\\\\\n\\end{longtable}\n\niii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 2 & 0 & 0 & 2 & 2\\\\\n\\end{longtable}\n\niv.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & 2 & -2 & 0 & 4\\\\\n\\end{longtable}", 
-    "year": 2006, 
-    "sols": [
-        "The answer is iv.\n\nAt the point of \\emph{x=0}, \\emph{G(0)=0} because the top and bottom\nlimits of the integral that defines \\emph{G(x)} are identical. The area\nthat is integrated over has zero width.\n\nAt the point of \\emph{x=2}, \\emph{G(2)=2} because the area of the graph\ncan be calculated using the area of triangle formula \\emph{height*base/2\n= 2*2/2 =2}\n\nAt the point of \\emph{x=4}, \\emph{G(4)=-2} because the area between the\n\\emph{x}-axis and the graph \\emph{g(x)} is composed of two triangles\nwith height \\emph{4} and width \\emph{1}. Hence the area is given by\n\\emph{4*1/2 + 4*1/2 = 4}. It is below the \\emph{x}-axis, hence we\nsubtract it from the previous value and get \\emph{G(4) = 2 - 4 = -2}.\n\nAt the point \\emph{x=6}, \\emph{G(6)=0} because we add the area of the\ntriangle with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(6) = -2 + 2*2/2 = 0}\n\nAt the point \\emph{x=8}, \\emph{G(8)=4} because we add the area of the\nsquare with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(8) = 0 + 2*2 = 4}"
+    "answer_html": "<p>At the point <em>x=8</em>, <em>G(8)=4</em> because we add the area of the square with height <em>2</em> and width <em>2</em> to the previous value: <em>G(8) = 0 + 2*2 = 4</em></p>\n", 
+    "answer_latex": "At the point \\emph{x=8}, \\emph{G(8)=4} because we add the area of the\nsquare with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(8) = 0 + 2*2 = 4}", 
+    "contributors": [
+        "IainMoyles", 
+        "CarmenBruni", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Substitute <em>x</em> with the values given in the table. Calculate the area of <em>g(x)</em> with basic geometry formula, i.e. area of triangle and area of a square.</p>\n", 
+        "<p>The substituted values of <em>x</em> should be 2, 4, 6, 8, as at these points the area under the graph of <em>g(x)</em> can be calculated with the area of triangle formula: base*height/2</p>\n", 
+        "<p>Area below the <em>x</em>-axis has to be subtracted from the net area.</p>\n"
+    ], 
+    "hints_latex": [
         "Substitute \\emph{x} with the values given in the table. Calculate the\narea of \\emph{g(x)} with basic geometry formula, i.e. area of triangle\nand area of a square.", 
         "The substituted values of \\emph{x} should be 2, 4, 6, 8, as at these\npoints the area under the graph of \\emph{g(x)} can be calculated with\nthe area of triangle formula: base*height/2", 
         "Area below the \\emph{x}-axis has to be subtracted from the net area."
-    ]
+    ], 
+    "hints_raw": [
+        "Substitute ''x'' with the values given in the table. Calculate the area of ''g(x)'' with basic geometry formula, i.e. area of triangle and area of a square.\n", 
+        "The substituted values of ''x'' should be 2, 4, 6, 8, as at these points the area under the graph of ''g(x)'' can be calculated with the area of triangle formula: base*height/2\n", 
+        "Area below the ''x''-axis has to be subtracted from the net area.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is iv.</p>\n<p>At the point of <em>x=0</em>, <em>G(0)=0</em> because the top and bottom limits of the integral that defines <em>G(x)</em> are identical. The area that is integrated over has zero width.</p>\n<p>At the point of <em>x=2</em>, <em>G(2)=2</em> because the area of the graph can be calculated using the area of triangle formula <em>height*base/2 = 2*2/2 =2</em></p>\n<p>At the point of <em>x=4</em>, <em>G(4)=-2</em> because the area between the <em>x</em>-axis and the graph <em>g(x)</em> is composed of two triangles with height <em>4</em> and width <em>1</em>. Hence the area is given by <em>4*1/2 + 4*1/2 = 4</em>. It is below the <em>x</em>-axis, hence we subtract it from the previous value and get <em>G(4) = 2 - 4 = -2</em>.</p>\n<p>At the point <em>x=6</em>, <em>G(6)=0</em> because we add the area of the triangle with height <em>2</em> and width <em>2</em> to the previous value: <em>G(6) = -2 + 2*2/2 = 0</em></p>\n<p>At the point <em>x=8</em>, <em>G(8)=4</em> because we add the area of the square with height <em>2</em> and width <em>2</em> to the previous value: <em>G(8) = 0 + 2*2 = 4</em></p>\n"
+    ], 
+    "sols_latex": [
+        "The answer is iv.\n\nAt the point of \\emph{x=0}, \\emph{G(0)=0} because the top and bottom\nlimits of the integral that defines \\emph{G(x)} are identical. The area\nthat is integrated over has zero width.\n\nAt the point of \\emph{x=2}, \\emph{G(2)=2} because the area of the graph\ncan be calculated using the area of triangle formula \\emph{height*base/2\n= 2*2/2 =2}\n\nAt the point of \\emph{x=4}, \\emph{G(4)=-2} because the area between the\n\\emph{x}-axis and the graph \\emph{g(x)} is composed of two triangles\nwith height \\emph{4} and width \\emph{1}. Hence the area is given by\n\\emph{4*1/2 + 4*1/2 = 4}. It is below the \\emph{x}-axis, hence we\nsubtract it from the previous value and get \\emph{G(4) = 2 - 4 = -2}.\n\nAt the point \\emph{x=6}, \\emph{G(6)=0} because we add the area of the\ntriangle with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(6) = -2 + 2*2/2 = 0}\n\nAt the point \\emph{x=8}, \\emph{G(8)=4} because we add the area of the\nsquare with height \\emph{2} and width \\emph{2} to the previous value:\n\\emph{G(8) = 0 + 2*2 = 4}"
+    ], 
+    "sols_raw": [
+        "The answer is iv.\n\nAt the point of ''x=0'', ''G(0)=0'' because the top and bottom limits of the integral that defines ''G(x)'' are identical. The area that is integrated over has zero width.\n\nAt the point of ''x=2'', ''G(2)=2'' because the area of the graph can be calculated using the area of triangle formula ''height*base/2 = 2*2/2 =2''\n\nAt the point of ''x=4'', ''G(4)=-2'' because the area between the ''x''-axis and the graph ''g(x)'' is composed of two triangles with height ''4'' and width ''1''. Hence the area is given by ''4*1/2 + 4*1/2 = 4''. It is below the ''x''-axis, hence we subtract it from the previous value and get ''G(4) = 2 - 4 = -2''.\n\nAt the point ''x=6'', ''G(6)=0'' because we add the area of the triangle with height ''2'' and width ''2'' to the previous value: ''G(6) = -2 + 2*2/2 = 0''\n\nAt the point ''x=8'', ''G(8)=4'' because we add the area of the square with height ''2'' and width ''2'' to the previous value: ''G(8) = 0 + 2*2 = 4''\n"
+    ], 
+    "solvers": [
+        "Toanle95"
+    ], 
+    "statement_html": "<p>For each of the following multiple-choice questions, there is one correct answer. Circle the corresponding (roman) numeral.</p>\n<p>a) Use the graph of g(x) below to determine the correct set of values of <span class=\"math\">\\(\\displaystyle G(x) = \\int_{0}^{x}g(t)\\,dt\\)</span></p>\n<p><img src=\"../json_data/MATH103/April_2006/MATH103April2006Q1a.jpg\" alt=\"image\" /></p>\n<p>i.</p>\n<p>[c]<span>@llllll@</span> x &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8<br />G(x) &amp; 0 &amp; 2 &amp; 4 &amp; 1 &amp; 0<br /></p>\n<p>ii.</p>\n<p>[c]<span>@llllll@</span> x &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8<br />G(x) &amp; 0 &amp; -2 &amp; -2 &amp; 0 &amp; 4<br /></p>\n<p>iii.</p>\n<p>[c]<span>@llllll@</span> x &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8<br />G(x) &amp; 2 &amp; 0 &amp; 0 &amp; 2 &amp; 2<br /></p>\n<p>iv.</p>\n<p>[c]<span>@llllll@</span> x &amp; 0 &amp; 2 &amp; 4 &amp; 6 &amp; 8<br />G(x) &amp; 0 &amp; 2 &amp; -2 &amp; 0 &amp; 4<br /></p>\n", 
+    "statement_latex": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\na) Use the graph of g(x) below to determine the correct set of values of\n$\\displaystyle G(x) = \\int_{0}^{x}g(t)\\,dt$\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2006/MATH103April2006Q1a.jpg}\n\ni.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & 2 & 4 & 1 & 0\\\\\n\\end{longtable}\n\nii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & -2 & -2 & 0 & 4\\\\\n\\end{longtable}\n\niii.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 2 & 0 & 0 & 2 & 2\\\\\n\\end{longtable}\n\niv.\n\n\\begin{longtable}[c]{@{}llllll@{}}\nx & 0 & 2 & 4 & 6 & 8\\\\\nG(x) & 0 & 2 & -2 & 0 & 4\\\\\n\\end{longtable}", 
+    "statement_raw": "For each of the following multiple-choice questions, there is one correct answer. Circle the corresponding (roman) numeral.\n\na) Use the graph of g(x) below to determine the correct set of values of &lt;math> \\displaystyle G(x) = \\int_{0}^{x}g(t)\\,dt &lt;/math>\n\n[[File:MATH103April2006Q1a.jpg]]\n\ni. \n{| class=\"wikitable\"\n|-\n| x || 0 || 2 || 4 || 6 || 8\n|-\n| G(x) || 0 || 2 || 4 || 1 || 0\n|}\n\nii. \n{| class=\"wikitable\"\n|-\n| x || 0 || 2 || 4 || 6 || 8\n|-\n| G(x) || 0 || -2 || -2 || 0 || 4\n|}\n\niii. \n{| class=\"wikitable\"\n|-\n| x || 0 || 2 || 4 || 6 || 8\n|-\n| G(x) || 2 || 0 || 0 || 2 || 2\n|}\n\niv. \n{| class=\"wikitable\"\n|-\n| x || 0 || 2 || 4 || 6 || 8\n|-\n| G(x) || 0 || 2 || -2 || 0 || 4\n|}\n", 
+    "term": "April", 
+    "topics": [
+        "Antiderivative_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_01_(a)", 
+    "year": 2006
 }

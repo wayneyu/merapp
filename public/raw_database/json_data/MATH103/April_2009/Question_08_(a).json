@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_08_(a)", 
-    "course": "MATH103", 
-    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}g(t) = ae^{t/2} \\text{ mm/day},\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nDetermine the height of the plant \\emph{h(t)} as a function of time\n\\emph{t}, assuming that it was zero at time \\emph{t = 0}.", 
-    "year": 2009, 
-    "sols": [
-        "Since the growth rate is the derivative of the height for any time\n$t\\geq 0$, we need to integrate the function $g(t)$ to find the height\ndepending on $t$.\n\n$h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c$\n\nfor a constant $c\\in\\R$.\n\nWe find that constant by using the initial condition.\n\n$0=h(0)=2a + c,$\n\n\\begin{align*}c=-2a.\\end{align*}\n\nSo, the function of height is\n\n$h(t)=2a(e^{\\frac{t}{2}}-1)$."
+    "answer_html": "<p><span class=\"math\">\\(h(t)=2a(e^{\\frac{t}{2}}-1)\\)</span>.</p>\n", 
+    "answer_latex": "$h(t)=2a(e^{\\frac{t}{2}}-1)$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How are the height and the growth rate related?</p>\n"
+    ], 
+    "hints_latex": [
         "How are the height and the growth rate related?"
-    ]
+    ], 
+    "hints_raw": [
+        "How are the height and the growth rate related?\n"
+    ], 
+    "num_votes": 9, 
+    "question": "8 (a)", 
+    "rating": 78, 
+    "sols_html": [
+        "<p>Since the growth rate is the derivative of the height for any time <span class=\"math\">\\(t\\geq 0\\)</span>, we need to integrate the function <span class=\"math\">\\(g(t)\\)</span> to find the height depending on <span class=\"math\">\\(t\\)</span>.</p>\n<p><span class=\"math\">\\(h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c\\)</span></p>\n<p>for a constant <span class=\"math\">\\(c\\in\\R\\)</span>.</p>\n<p>We find that constant by using the initial condition.</p>\n<p><span class=\"math\">\\(0=h(0)=2a + c,\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc=-2a.\\end{aligned}\\]</span></p>\n<p>So, the function of height is</p>\n<p><span class=\"math\">\\(h(t)=2a(e^{\\frac{t}{2}}-1)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Since the growth rate is the derivative of the height for any time\n$t\\geq 0$, we need to integrate the function $g(t)$ to find the height\ndepending on $t$.\n\n$h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c$\n\nfor a constant $c\\in\\R$.\n\nWe find that constant by using the initial condition.\n\n$0=h(0)=2a + c,$\n\n\\begin{align*}\nc=-2a.\n\\end{align*}\n\nSo, the function of height is\n\n$h(t)=2a(e^{\\frac{t}{2}}-1)$."
+    ], 
+    "sols_raw": [
+        "Since the growth rate is the derivative of the height for any time &lt;math>\\ t\\geq 0&lt;/math>, we need to integrate the function &lt;math>\\ g(t)&lt;/math> to find the height depending on &lt;math>\\ t&lt;/math>.\n\n&lt;math> h(t)=\\int g(t)dt=\\int ae^{\\frac{t}{2}}dt = 2ae^{\\frac{t}{2}} + c&lt;/math>\n\nfor a constant &lt;math>\\ c\\in\\R&lt;/math>.\n\nWe find that constant by using the initial condition.\n\n&lt;math> 0=h(0)=2a + c,\\ &lt;/math>\n\n:&lt;math> c=-2a\\ &lt;/math>.\n\nSo, the function of height is\n\n&lt;math> h(t)=2a(e^{\\frac{t}{2}}-1)\\ &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p>The growth rate of a plant during the first week after germination is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(t) = ae^{t/2} \\text{ mm/day},\\end{aligned}\\]</span></p>\n<p>where the time <em>t</em> is measured in days, and <em>a</em> is a constant.</p>\n<p>Determine the height of the plant <em>h(t)</em> as a function of time <em>t</em>, assuming that it was zero at time <em>t = 0</em>.</p>\n", 
+    "statement_latex": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}\ng(t) = ae^{t/2} \\text{ mm/day},\n\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nDetermine the height of the plant \\emph{h(t)} as a function of time\n\\emph{t}, assuming that it was zero at time \\emph{t = 0}.", 
+    "statement_raw": "The growth rate of a plant during the first week after germination is given by\n\n:&lt;math>\\ g(t) = ae^{t/2} \\text{ mm/day}, &lt;/math>\n\nwhere the time ''t'' is measured in days, and ''a'' is a constant.\n\nDetermine the height of the plant ''h(t)'' as a function of time ''t'', assuming that it was zero at time ''t = 0''.\n", 
+    "term": "April", 
+    "topics": [
+        "Net_change_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_08_(a)", 
+    "year": 2009
 }

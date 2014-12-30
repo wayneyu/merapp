@@ -1,15 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_08", 
-    "course": "MATH437", 
-    "statement": "Suppose that the positive integer \\emph{n} satisfies\n$\\displaystyle 2^{n} \\equiv -1 \\mod{n}$. Let \\emph{p} be the smallest\nprime divisor of \\emph{n}. Show that $\\displaystyle p = 3$.", 
-    "year": 2006, 
-    "sols": [
-        "Note that $\\displaystyle 2^{n}+1$ is odd for all values of \\emph{n} so\nthe smallest prime factor must be odd. Then further,\n$\\displaystyle 2^{p-1} \\equiv 1 \\mod{p}$ by Fermat's Little Theorem.\nFrom the given, we know that $\\displaystyle 2^{n} \\equiv -1 \\mod{p}$ and\nthus\n\n$\\displaystyle 2^{2n} \\equiv (2^{n})^{2} \\equiv (-1)^{2} \\equiv 1 \\mod{p}$\n\nHence the order of 2 must be a divisor of\n$\\displaystyle d = \\gcd(2n,p-1)$ (you can see this by using the\nEuclidean algorithm to find an \\emph{a} and a \\emph{b} so that\n$\\displaystyle a(p-1) + bn = d$ and then noting that\n$\\displaystyle 2^{d} = 2^{a(p-1) + bn} \\equiv 1 \\mod{p}$). As \\emph{p}\nis the smallest prime factor of \\emph{n} and as noted it is odd, we see\nthat $\\displaystyle \\gcd(2n,p-1)=2$. Since clearly\n$\\displaystyle 2 \\equiv 1 \\mod{p}$ is false, we see that\n$\\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p}$ which happens only when\n$\\displaystyle p=3$ as required."
+    "answer_html": "<p>Since clearly <span class=\"math\">\\(\\displaystyle 2 \\equiv 1 \\mod{p}\\)</span> is false, we see that <span class=\"math\">\\(\\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p}\\)</span> which happens only when <span class=\"math\">\\(\\displaystyle p=3\\)</span> as required.</p>\n", 
+    "answer_latex": "Since clearly\n$\\displaystyle 2 \\equiv 1 \\mod{p}$ is false, we see that\n$\\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p}$ which happens only when\n$\\displaystyle p=3$ as required.", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH437", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Firstly, note that <span class=\"math\">\\(\\displaystyle 2^{n}+1\\)</span> is odd for all values of <em>n</em> so the smallest prime factor must be odd.</p>\n", 
+        "<p>Try using Fermat&#8217;s Little Theorem.</p>\n", 
+        "<p>Also, include some facts about the order of a number modulo a prime to take you home.</p>\n"
+    ], 
+    "hints_latex": [
         "Firstly, note that $\\displaystyle 2^{n}+1$ is odd for all values of\n\\emph{n} so the smallest prime factor must be odd.", 
         "Try using Fermat's Little Theorem.", 
         "Also, include some facts about the order of a number modulo a prime to\ntake you home."
-    ]
+    ], 
+    "hints_raw": [
+        "Firstly, note that &lt;math> \\displaystyle 2^{n}+1 &lt;/math> is odd for all values of ''n'' so the smallest prime factor must be odd.\n", 
+        "Try using Fermat's Little Theorem.\n", 
+        "Also, include some facts about the order of a number modulo a prime to take you home.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Note that <span class=\"math\">\\(\\displaystyle 2^{n}+1\\)</span> is odd for all values of <em>n</em> so the smallest prime factor must be odd. Then further, <span class=\"math\">\\(\\displaystyle 2^{p-1} \\equiv 1 \\mod{p}\\)</span> by Fermat&#8217;s Little Theorem. From the given, we know that <span class=\"math\">\\(\\displaystyle 2^{n} \\equiv -1 \\mod{p}\\)</span> and thus</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{2n} \\equiv (2^{n})^{2} \\equiv (-1)^{2} \\equiv 1 \\mod{p}\\)</span></p>\n<p>Hence the order of 2 must be a divisor of <span class=\"math\">\\(\\displaystyle d = \\gcd(2n,p-1)\\)</span> (you can see this by using the Euclidean algorithm to find an <em>a</em> and a <em>b</em> so that <span class=\"math\">\\(\\displaystyle a(p-1) + bn = d\\)</span> and then noting that <span class=\"math\">\\(\\displaystyle 2^{d} = 2^{a(p-1) + bn} \\equiv 1 \\mod{p}\\)</span>). As <em>p</em> is the smallest prime factor of <em>n</em> and as noted it is odd, we see that <span class=\"math\">\\(\\displaystyle \\gcd(2n,p-1)=2\\)</span>. Since clearly <span class=\"math\">\\(\\displaystyle 2 \\equiv 1 \\mod{p}\\)</span> is false, we see that <span class=\"math\">\\(\\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p}\\)</span> which happens only when <span class=\"math\">\\(\\displaystyle p=3\\)</span> as required.</p>\n"
+    ], 
+    "sols_latex": [
+        "Note that $\\displaystyle 2^{n}+1$ is odd for all values of \\emph{n} so\nthe smallest prime factor must be odd. Then further,\n$\\displaystyle 2^{p-1} \\equiv 1 \\mod{p}$ by Fermat's Little Theorem.\nFrom the given, we know that $\\displaystyle 2^{n} \\equiv -1 \\mod{p}$ and\nthus\n\n$\\displaystyle 2^{2n} \\equiv (2^{n})^{2} \\equiv (-1)^{2} \\equiv 1 \\mod{p}$\n\nHence the order of 2 must be a divisor of\n$\\displaystyle d = \\gcd(2n,p-1)$ (you can see this by using the\nEuclidean algorithm to find an \\emph{a} and a \\emph{b} so that\n$\\displaystyle a(p-1) + bn = d$ and then noting that\n$\\displaystyle 2^{d} = 2^{a(p-1) + bn} \\equiv 1 \\mod{p}$). As \\emph{p}\nis the smallest prime factor of \\emph{n} and as noted it is odd, we see\nthat $\\displaystyle \\gcd(2n,p-1)=2$. Since clearly\n$\\displaystyle 2 \\equiv 1 \\mod{p}$ is false, we see that\n$\\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p}$ which happens only when\n$\\displaystyle p=3$ as required."
+    ], 
+    "sols_raw": [
+        "Note that &lt;math> \\displaystyle 2^{n}+1 &lt;/math> is odd for all values of ''n'' so the smallest prime factor must be odd. Then further, &lt;math> \\displaystyle 2^{p-1} \\equiv 1 \\mod{p} &lt;/math> by Fermat's Little Theorem. From the given, we know that &lt;math> \\displaystyle 2^{n} \\equiv -1 \\mod{p} &lt;/math> and thus\n\n&lt;math> \\displaystyle 2^{2n} \\equiv (2^{n})^{2} \\equiv (-1)^{2} \\equiv 1 \\mod{p} &lt;/math> \n\nHence the order of 2 must be a divisor of &lt;math> \\displaystyle d = \\gcd(2n,p-1)&lt;/math> (you can see this by using the Euclidean algorithm to find an ''a'' and a ''b'' so that &lt;math> \\displaystyle a(p-1) + bn = d&lt;/math> and then noting that &lt;math> \\displaystyle 2^{d} = 2^{a(p-1) + bn} \\equiv 1 \\mod{p} &lt;/math>). As ''p'' is the smallest prime factor of ''n'' and as noted it is odd, we see that &lt;math> \\displaystyle \\gcd(2n,p-1)=2&lt;/math>. Since clearly &lt;math> \\displaystyle 2 \\equiv 1 \\mod{p} &lt;/math> is false, we see that &lt;math> \\displaystyle 4 = 2^{2} \\equiv 1 \\mod{p} &lt;/math> which happens only when &lt;math> \\displaystyle p=3 &lt;/math> as required.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Suppose that the positive integer <em>n</em> satisfies <span class=\"math\">\\(\\displaystyle 2^{n} \\equiv -1 \\mod{n}\\)</span>. Let <em>p</em> be the smallest prime divisor of <em>n</em>. Show that <span class=\"math\">\\(\\displaystyle p = 3\\)</span>.</p>\n", 
+    "statement_latex": "Suppose that the positive integer \\emph{n} satisfies\n$\\displaystyle 2^{n} \\equiv -1 \\mod{n}$. Let \\emph{p} be the smallest\nprime divisor of \\emph{n}. Show that $\\displaystyle p = 3$.", 
+    "statement_raw": "Suppose that the positive integer ''n'' satisfies &lt;math>\\displaystyle 2^{n} \\equiv -1 \\mod{n} &lt;/math>. Let ''p'' be the smallest prime divisor of ''n''. Show that &lt;math> \\displaystyle p = 3&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility", 
+        "Euclidean_algorithm", 
+        "Fermat%27s_little_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2006/Question_08", 
+    "year": 2006
 }

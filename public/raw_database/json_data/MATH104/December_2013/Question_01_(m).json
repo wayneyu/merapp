@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_01_(m)", 
-    "course": "MATH104", 
-    "statement": "Let $f$ be a differentiable function such that $\\displaystyle f(3)=2$\nand $\\displaystyle f'(3)=5.$ If the tangent line to the graph of $f$ at\n$a=3$ is used to approximate $f(x)$, then the approximate solution for\n$x$ to the equation $f(x)=0$ is\n\n(A) $x=0.4$.\n\n(B) $x=0.5$.\n\n(C) $x=2.6$.\n\n(D) $x=3.4$.\n\n(E) $x=5.5$.", 
-    "year": 2013, 
-    "sols": [
-        "The correct answer is (C).\n\nTo see this, notice that the equation of the line using the point slope\nformula is given by\n\n$\\displaystyle \\frac{y-2}{x-3} = f'(3) = 5$.\n\nIsolating gives\n\n$\\displaystyle y-2 = 5(x-3)$\n\nand simplifying one last time\n\n$\\displaystyle y = 5x -13$.\n\nWe are using this line to approximate $\\displaystyle f(x)$. Thus, if we\nset $\\displaystyle y=0$ and solve, we can get an approximation to the\nroot of $\\displaystyle f(x)$. Hence\n\n$\\displaystyle 0 = 5x- 13$ which gives $\\displaystyle x = 13/5 = 2.6$\nand thus the correct answer is (C)."
+    "answer_html": "<p>Thus the correct answer is (C).</p>\n", 
+    "answer_latex": "Thus the correct answer is\n(C).", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First, we find the equation of the tangent line. Remember that the derivative at a point gives you the slope of the tangent line.</p>\n", 
+        "<p>Once you have the tangent line, use it to approximate <span class=\"math\">\\(f(x)\\)</span>. Thus, we have</p>\n<p><span class=\"math\">\\(\\displaystyle f(x) \\approx y = f&#39;(3)x + b\\)</span></p>\n<p>where we find <span class=\"math\">\\(b\\)</span> by plugging in the point <span class=\"math\">\\(\\displaystyle (3,2)\\)</span> into <span class=\"math\">\\(\\displaystyle y=f&#39;(3)x+b\\)</span>. Then set the above equation to 0 and solve for <span class=\"math\">\\(x\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "First, we find the equation of the tangent line. Remember that the\nderivative at a point gives you the slope of the tangent line.", 
-        "Once you have the tangent line, use it to approximate f(x). Thus, we\nhave\n\n$\\displaystyle f(x) \\approx y = f'(3)x + b$\n\nwhere we solved \\emph{b} by plugging in the point $\\displaystyle (3,2)$\ninto $\\displaystyle y=mx+b$.\n\nNow set the above equation to 0 and solve."
-    ]
+        "Once you have the tangent line, use it to approximate $f(x)$. Thus, we\nhave\n\n$\\displaystyle f(x) \\approx y = f'(3)x + b$\n\nwhere we find $b$ by plugging in the point $\\displaystyle (3,2)$ into\n$\\displaystyle y=f'(3)x+b$. Then set the above equation to 0 and solve\nfor $x$."
+    ], 
+    "hints_raw": [
+        "First, we find the equation of the tangent line. Remember that the derivative at a point gives you the slope of the tangent line.\n", 
+        "Once you have the tangent line, use it to approximate &lt;math>f(x)&lt;/math>. Thus, we have \n\n&lt;math> \\displaystyle f(x) \\approx y = f'(3)x + b&lt;/math>\n\nwhere we find &lt;math>b&lt;/math> by plugging in the point &lt;math> \\displaystyle (3,2)&lt;/math> into &lt;math> \\displaystyle y=f'(3)x+b&lt;/math>. Then set the above equation to 0 and solve for &lt;math>x&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (m)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To see this, notice that the equation of the line using the point slope formula is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{y-2}{x-3} = f&#39;(3) = 5\\)</span>.</p>\n<p>Isolating gives</p>\n<p><span class=\"math\">\\(\\displaystyle y-2 = 5(x-3)\\)</span></p>\n<p>and simplifying one last time</p>\n<p><span class=\"math\">\\(\\displaystyle y = 5x -13\\)</span>.</p>\n<p>We are using this line to approximate <span class=\"math\">\\(\\displaystyle f(x)\\)</span>. Thus, if we set <span class=\"math\">\\(\\displaystyle y=0\\)</span> and solve, we can get an approximation to the root of <span class=\"math\">\\(\\displaystyle f(x)\\)</span>. Hence, set <span class=\"math\">\\(\\displaystyle 0 = 5x- 13\\)</span> which gives <span class=\"math\">\\(\\displaystyle x = 13/5 = 2.6\\)</span>. Thus the correct answer is (C).</p>\n"
+    ], 
+    "sols_latex": [
+        "To see this, notice that the equation of the line using the point slope\nformula is given by\n\n$\\displaystyle \\frac{y-2}{x-3} = f'(3) = 5$.\n\nIsolating gives\n\n$\\displaystyle y-2 = 5(x-3)$\n\nand simplifying one last time\n\n$\\displaystyle y = 5x -13$.\n\nWe are using this line to approximate $\\displaystyle f(x)$. Thus, if we\nset $\\displaystyle y=0$ and solve, we can get an approximation to the\nroot of $\\displaystyle f(x)$. Hence, set $\\displaystyle 0 = 5x- 13$\nwhich gives $\\displaystyle x = 13/5 = 2.6$. Thus the correct answer is\n(C)."
+    ], 
+    "sols_raw": [
+        "To see this, notice that the equation of the line using the point slope formula is given by\n\n&lt;math> \\displaystyle \\frac{y-2}{x-3} = f'(3) = 5&lt;/math>.\n\nIsolating gives\n\n&lt;math> \\displaystyle y-2 = 5(x-3)&lt;/math>\n\nand simplifying one last time\n\n&lt;math> \\displaystyle y = 5x -13&lt;/math>.\n\nWe are using this line to approximate &lt;math> \\displaystyle f(x)&lt;/math>. Thus, if we set &lt;math> \\displaystyle y=0&lt;/math> and solve, we can get an approximation to the root of &lt;math> \\displaystyle f(x)&lt;/math>. Hence, set &lt;math> \\displaystyle 0 = 5x- 13&lt;/math> which gives &lt;math> \\displaystyle x = 13/5 = 2.6&lt;/math>. Thus the correct answer is (C).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f\\)</span> be a differentiable function such that <span class=\"math\">\\(\\displaystyle f(3)=2\\)</span> and <span class=\"math\">\\(\\displaystyle f&#39;(3)=5.\\)</span> If the tangent line to the graph of <span class=\"math\">\\(f\\)</span> at <span class=\"math\">\\(a=3\\)</span> is used to approximate <span class=\"math\">\\(f(x)\\)</span>, then the approximate solution for <span class=\"math\">\\(x\\)</span> to the equation <span class=\"math\">\\(f(x)=0\\)</span> is</p>\n<p>(A) <span class=\"math\">\\(x=0.4\\)</span>.</p>\n<p>(B) <span class=\"math\">\\(x=0.5\\)</span>.</p>\n<p>(C) <span class=\"math\">\\(x=2.6\\)</span>.</p>\n<p>(D) <span class=\"math\">\\(x=3.4\\)</span>.</p>\n<p>(E) <span class=\"math\">\\(x=5.5\\)</span>.</p>\n", 
+    "statement_latex": "Let $f$ be a differentiable function such that $\\displaystyle f(3)=2$\nand $\\displaystyle f'(3)=5.$ If the tangent line to the graph of $f$ at\n$a=3$ is used to approximate $f(x)$, then the approximate solution for\n$x$ to the equation $f(x)=0$ is\n\n(A) $x=0.4$.\n\n(B) $x=0.5$.\n\n(C) $x=2.6$.\n\n(D) $x=3.4$.\n\n(E) $x=5.5$.", 
+    "statement_raw": "Let &lt;math>f&lt;/math> be a differentiable function such that &lt;math>\\displaystyle f(3)=2&lt;/math> and &lt;math>\\displaystyle f'(3)=5.&lt;/math> If the tangent line to the graph of &lt;math>f&lt;/math> at &lt;math>a=3&lt;/math> is used to approximate &lt;math>f(x)&lt;/math>, then the approximate solution for &lt;math>x&lt;/math> to the equation &lt;math>f(x)=0&lt;/math> is\n\n(A) &lt;math>x=0.4&lt;/math>.\n\n(B) &lt;math>x=0.5&lt;/math>.\n\n(C) &lt;math>x=2.6&lt;/math>.\n\n(D) &lt;math>x=3.4&lt;/math>.\n\n(E) &lt;math>x=5.5&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_01_(m)", 
+    "year": 2013
 }

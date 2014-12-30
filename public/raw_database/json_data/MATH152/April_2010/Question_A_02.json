@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_A_02", 
-    "course": "MATH152", 
-    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{align*}\n\nA2: Compute $\\mathbf{x} \\times \\mathbf{y}$.", 
-    "year": 2010, 
-    "sols": [
-        "If we think of denoting the unit vectors in the $x, y, z$ directions as\n$\\hat{\\mathbf{i}}, \\hat{\\mathbf{j}}, \\hat{\\mathbf{k}}$ respectively then\nwe can turn our vectors $\\mathbf{x}$ and $\\mathbf{y}$ into the following\nmatrix,\\\\$\\begin{bmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{bmatrix}.$\\\\\\\\Firstly notice that we align the components of the\nvectors such that the $x$ components are in the column with the heading\n$\\hat{\\mathbf{i}}$, the $y$ components are in the column with the\nheading $\\hat{\\mathbf{j}}$, and the $z$ components are in the column\nwith the heading $\\hat{\\mathbf{k}}$. Secondly, this may look odd as a\nmatrix since one of the rows is a vector. This matrix is artificial but\nif we treat it as if it were a standard matrix and computed its\ndeterminant, we would get\\begin{align*}\n\\begin{vmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{vmatrix}\n=-1\\hat{\\mathbf{i}}-3\\hat{\\mathbf{j}}+2\\hat{\\mathbf{k}}\n=[-1,-3,2]\\end{align*}\nwhich is precisely the definition of the cross product.\nTherefore $\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]$."
+    "answer_html": "<p><span class=\"math\">\\(\\begin{vmatrix}\n\\hat{\\mathbf{i}}    \\hat{\\mathbf{j}}    \\hat{\\mathbf{k}}\\\\\n1    -1    -1\\\\\n1    1    2\\\\\n\\end{vmatrix}=[-1,-3,2]\\)</span> which is precisely the definition of the cross product. Therefore <span class=\"math\">\\(\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]\\)</span>.</p>\n", 
+    "answer_latex": " $\\begin{vmatrix}\n\\hat{\\mathbf{i}}    \\hat{\\mathbf{j}}    \\hat{\\mathbf{k}}\\\\\n1    -1    -1\\\\\n1    1    2\\\\\n\\end{vmatrix}=[-1,-3,2]$ \nwhich is precisely the definition of the cross product.\nTherefore $\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Think about how to write the cross product in terms of a determinant to be computed.</p>\n"
+    ], 
+    "hints_latex": [
         "Think about how to write the cross product in terms of a determinant to\nbe computed."
-    ]
+    ], 
+    "hints_raw": [
+        "Think about how to write the cross product in terms of a determinant to be computed.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 02", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>If we think of denoting the unit vectors in the <span class=\"math\">\\(x, y, z\\)</span> directions as <span class=\"math\">\\(\\hat{\\mathbf{i}}, \\hat{\\mathbf{j}}, \\hat{\\mathbf{k}}\\)</span> respectively then we can turn our vectors <span class=\"math\">\\(\\mathbf{x}\\)</span> and <span class=\"math\">\\(\\mathbf{y}\\)</span> into the following matrix,<br /><span class=\"math\">\\(\\begin{bmatrix}\n\\hat{\\mathbf{i}}  &amp;  \\hat{\\mathbf{j}}  &amp;  \\hat{\\mathbf{k}}\\\\\n1  &amp;  -1  &amp;  -1\\\\\n1  &amp;  1  &amp;  2\\\\\n\\end{bmatrix}.\\)</span><br /><br />Firstly notice that we align the components of the vectors such that the <span class=\"math\">\\(x\\)</span> components are in the column with the heading <span class=\"math\">\\(\\hat{\\mathbf{i}}\\)</span>, the <span class=\"math\">\\(y\\)</span> components are in the column with the heading <span class=\"math\">\\(\\hat{\\mathbf{j}}\\)</span>, and the <span class=\"math\">\\(z\\)</span> components are in the column with the heading <span class=\"math\">\\(\\hat{\\mathbf{k}}\\)</span>. Secondly, this may look odd as a matrix since one of the rows is a vector. This matrix is artificial but if we treat it as if it were a standard matrix and computed its determinant, we would get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{vmatrix}\n\\hat{\\mathbf{i}}  &amp;  \\hat{\\mathbf{j}}  &amp;  \\hat{\\mathbf{k}}\\\\\n1  &amp;  -1  &amp;  -1\\\\\n1  &amp;  1  &amp;  2\\\\\n\\end{vmatrix}\n=-1\\hat{\\mathbf{i}}-3\\hat{\\mathbf{j}}+2\\hat{\\mathbf{k}}\n=[-1,-3,2]\\end{aligned}\\]</span></p>\n<p>which is precisely the definition of the cross product. Therefore <span class=\"math\">\\(\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "If we think of denoting the unit vectors in the $x, y, z$ directions as\n$\\hat{\\mathbf{i}}, \\hat{\\mathbf{j}}, \\hat{\\mathbf{k}}$ respectively then\nwe can turn our vectors $\\mathbf{x}$ and $\\mathbf{y}$ into the following\nmatrix,\\\\$\\begin{bmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{bmatrix}.$\\\\\\\\Firstly notice that we align the components of the\nvectors such that the $x$ components are in the column with the heading\n$\\hat{\\mathbf{i}}$, the $y$ components are in the column with the\nheading $\\hat{\\mathbf{j}}$, and the $z$ components are in the column\nwith the heading $\\hat{\\mathbf{k}}$. Secondly, this may look odd as a\nmatrix since one of the rows is a vector. This matrix is artificial but\nif we treat it as if it were a standard matrix and computed its\ndeterminant, we would get\\begin{align*}\n\\begin{vmatrix}\n\\hat{\\mathbf{i}}  &  \\hat{\\mathbf{j}}  &  \\hat{\\mathbf{k}}\\\\\n1  &  -1  &  -1\\\\\n1  &  1  &  2\\\\\n\\end{vmatrix}\n=-1\\hat{\\mathbf{i}}-3\\hat{\\mathbf{j}}+2\\hat{\\mathbf{k}}\n=[-1,-3,2]\n\\end{align*}\nwhich is precisely the definition of the cross product.\nTherefore $\\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]$."
+    ], 
+    "sols_raw": [
+        "If we think of denoting the unit vectors in the &lt;math> x, y, z &lt;/math> directions as &lt;math> \\hat{\\mathbf{i}}, \\hat{\\mathbf{j}}, \\hat{\\mathbf{k}} &lt;/math> respectively then we can turn our vectors &lt;math> \\mathbf{x} &lt;/math> and &lt;math> \\mathbf{y} &lt;/math> into the following matrix,\n&lt;br />\n&lt;math>\n\\begin{bmatrix}\n\\hat{\\mathbf{i}}  &amp;  \\hat{\\mathbf{j}}  &amp;  \\hat{\\mathbf{k}}\\\\\n1  &amp;  -1  &amp;  -1\\\\\n1  &amp;  1  &amp;  2\\\\\n\\end{bmatrix}.\n&lt;/math>\n&lt;br /> &lt;br />\nFirstly notice that we align the components of the vectors such that the &lt;math> x &lt;/math> components are in the column with the heading &lt;math> \\hat{\\mathbf{i}}&lt;/math>, the &lt;math> y &lt;/math> components are in the column with the heading &lt;math> \\hat{\\mathbf{j}} &lt;/math>, and the &lt;math> z &lt;/math> components are in the column with the heading &lt;math> \\hat{\\mathbf{k}} &lt;/math>.  Secondly, this may look odd as a matrix since one of the rows is a vector.  This matrix is artificial but if we treat it as if it were a standard matrix and computed its determinant, we would get\n&lt;br />\n&lt;math>\n\\begin{align}\n\\begin{vmatrix}\n\\hat{\\mathbf{i}}  &amp;  \\hat{\\mathbf{j}}  &amp;  \\hat{\\mathbf{k}}\\\\\n1  &amp;  -1  &amp;  -1\\\\\n1  &amp;  1  &amp;  2\\\\\n\\end{vmatrix}\n=-1\\hat{\\mathbf{i}}-3\\hat{\\mathbf{j}}+2\\hat{\\mathbf{k}}\n=[-1,-3,2]\n\\end{align}\n&lt;/math>\n&lt;br />\nwhich is precisely the definition of the cross product.  Therefore &lt;math> \\mathbf{x} \\times \\mathbf{y}=[-1,-3,2]&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>For questions A1-A3 below, <span class=\"math\">\\(\\mathbf{x}\\)</span> and <span class=\"math\">\\(\\mathbf{y}\\)</span> are the given vectors below.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{aligned}\\]</span></p>\n<p>A2: Compute <span class=\"math\">\\(\\mathbf{x} \\times \\mathbf{y}\\)</span>.</p>\n", 
+    "statement_latex": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\n\\end{align*}\n\nA2: Compute $\\mathbf{x} \\times \\mathbf{y}$.", 
+    "statement_raw": "For questions &lt;b>A1-A3&lt;/b> below, &lt;math> \\mathbf{x}&lt;/math> and &lt;math> \\mathbf{y}&lt;/math> are the given vectors below.\n\n:&lt;math>\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\n&lt;/math>\n\n&lt;b>A2&lt;/b>: Compute &lt;math> \\mathbf{x} \\times \\mathbf{y}&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_02", 
+    "year": 2010
 }

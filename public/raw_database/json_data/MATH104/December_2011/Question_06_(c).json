@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_06_(c)", 
-    "course": "MATH104", 
-    "statement": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\nc) Is your approximation for $\\ln(0.9)$ too large or too small? Explain.\nUse this information together with the error bound found in part (b) to\nconstruct an interval you can guarantee contains the true value of\n$\\ln(0.9)$.", 
-    "year": 2011, 
-    "sols": [
-        "We find the second derivative of f(x)=ln(x),\n\n\\begin{align*}\nf'(x)&=\\frac{1}{x}\\\\\nf''(x)&=-\\frac{1}{x^2}.\\end{align*}\n\nBy looking at the sign of the second derivative of the function\n$\\ln(x)$, we see that the function is concave down for all $x$. Thus,\nthe linear approximation is too large. (One can see this visually by\ndrawing a tangent line to the $\\ln(x)$ function at any point on the\ncurve).\n\nSince, we know the linear approximation overestimates the value\n$\\ln(0.9)$, we know that the true value of $\\ln(0.9)$ must lie within\nthe interval:\n\n$\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]$,\n\nwhere we have used our upper bound on the error from part (b) to help\ndefine the lower bound on our interval."
+    "answer_html": "<p><span class=\"math\">\\(\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]\\)</span>,where we have used our upper bound on the error from part (b) to help define the lower bound on our interval.</p>\n", 
+    "answer_latex": "$\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]$,where we have used our upper bound on the error from part (b) to help\ndefine the lower bound on our interval.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How does concavity help with determining an over or under estimate by the linear approximation?</p>\n"
+    ], 
+    "hints_latex": [
         "How does concavity help with determining an over or under estimate by\nthe linear approximation?"
-    ]
+    ], 
+    "hints_raw": [
+        "How does concavity help with determining an over or under estimate by the linear approximation?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "6 (c)", 
+    "rating": 84, 
+    "sols_html": [
+        "<p>We find the second derivative of f(x)=ln(x),</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x)&amp;=\\frac{1}{x}\\\\\nf&#39;&#39;(x)&amp;=-\\frac{1}{x^2}.\\end{aligned}\\]</span></p>\n<p>By looking at the sign of the second derivative of the function <span class=\"math\">\\(\\ln(x)\\)</span>, we see that the function is concave down for all <span class=\"math\">\\(x\\)</span>. Thus, the linear approximation is too large. (One can see this visually by drawing a tangent line to the <span class=\"math\">\\(\\ln(x)\\)</span> function at any point on the curve).</p>\n<p>Since, we know the linear approximation overestimates the value <span class=\"math\">\\(\\ln(0.9)\\)</span>, we know that the true value of <span class=\"math\">\\(\\ln(0.9)\\)</span> must lie within the interval:</p>\n<p><span class=\"math\">\\(\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]\\)</span>,</p>\n<p>where we have used our upper bound on the error from part (b) to help define the lower bound on our interval.</p>\n"
+    ], 
+    "sols_latex": [
+        "We find the second derivative of f(x)=ln(x),\n\n\\begin{align*}\nf'(x)&=\\frac{1}{x}\\\\\nf''(x)&=-\\frac{1}{x^2}.\n\\end{align*}\n\nBy looking at the sign of the second derivative of the function\n$\\ln(x)$, we see that the function is concave down for all $x$. Thus,\nthe linear approximation is too large. (One can see this visually by\ndrawing a tangent line to the $\\ln(x)$ function at any point on the\ncurve).\n\nSince, we know the linear approximation overestimates the value\n$\\ln(0.9)$, we know that the true value of $\\ln(0.9)$ must lie within\nthe interval:\n\n$\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]$,\n\nwhere we have used our upper bound on the error from part (b) to help\ndefine the lower bound on our interval."
+    ], 
+    "sols_raw": [
+        "We find the second derivative of f(x)=ln(x),\n\n:&lt;math>\n\\begin{align}\nf'(x)&amp;=\\frac{1}{x}\\\\\nf''(x)&amp;=-\\frac{1}{x^2}.\n\\end{align}\n&lt;/math>\n\nBy looking at the sign of the second derivative of the function &lt;math>\\ln(x)&lt;/math>, we see that the function is concave down for all &lt;math>x&lt;/math>. Thus, the linear approximation is &lt;b>too large&lt;/b>. (One can see this visually by drawing a tangent line to the &lt;math>\\ln(x)&lt;/math> function at any point on the curve).\n\nSince, we know the linear approximation overestimates the value &lt;math>\\ln(0.9)&lt;/math>, we know that the true value of &lt;math>\\ln(0.9)&lt;/math> must lie within the interval:\n\n&lt;math>\\Big[-0.1 - \\frac{1}{162},-0.1\\Big]&lt;/math>,\n\nwhere we have used our upper bound on the error from part (b) to help define the lower bound on our interval.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>In this problem, you will approximate <span class=\"math\">\\(\\ln(0.9)\\)</span> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of <span class=\"math\">\\(\\ln(x)\\)</span> for <span class=\"math\">\\(x\\)</span> near 1 to help you answer some parts of this question.</p>\n<p>c) Is your approximation for <span class=\"math\">\\(\\ln(0.9)\\)</span> too large or too small? Explain. Use this information together with the error bound found in part (b) to construct an interval you can guarantee contains the true value of <span class=\"math\">\\(\\ln(0.9)\\)</span>.</p>\n", 
+    "statement_latex": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\nc) Is your approximation for $\\ln(0.9)$ too large or too small? Explain.\nUse this information together with the error bound found in part (b) to\nconstruct an interval you can guarantee contains the true value of\n$\\ln(0.9)$.", 
+    "statement_raw": "In this problem, you will approximate &lt;math>\\ln(0.9)&lt;/math> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of &lt;math>\\ln(x)&lt;/math> for &lt;math>x&lt;/math> near 1 to help you answer some parts of this question.\n\nc) Is your approximation for &lt;math>\\ln(0.9)&lt;/math> too large or too small? Explain. Use this information together with the error bound found in part (b) to construct an interval you can guarantee contains the true value of &lt;math>\\ln(0.9)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Concavity", 
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_06_(c)", 
+    "year": 2011
 }

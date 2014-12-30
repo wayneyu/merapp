@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH215", 
-    "statement": "Solve the following nonlinear ODE:\n\n\\begin{align*}t^2 w' + 2tw - w^3 = 0, \\quad t > 0.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "As the exam hint suggests, we make the substitution $w = v^{-1/2}$ so\nthat\n\n\\begin{align*}w' = -\\frac{1}{2} v^{-3/2} v'.\\end{align*}\n\nUnder this substitution, $t^2 w' + 2tw - w^3 = 0$ becomes\n\n\\begin{align*} t^2 (-\\frac{1}{2} v^{-3/2} v') + 2t v^{-1/2} - v^{-3/2} &= 0 \\\\\nv' - \\frac{4}{t} v + \\frac{2}{t^2} &= 0 \\end{align*}\n\nwhere we multiplied the equation by $-2 \\frac{v^{3/2}}{t^2}.$\n\nThis is now the same ODE as in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_01_(a)}{part\n(a)}, so the solution is that $v = \\frac{2}{5t} + Ct^4$. Hence we have\n\n\\begin{align*}w = \\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(w=\\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.\\)</span></p>\n", 
+    "answer_latex": " $w=\\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "The substitution\n\n\\begin{align*}\\displaystyle w = v^{-1/2}\\end{align*} will simplify matters.", 
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The substitution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle w = v^{-1/2}\\end{aligned}\\]</span></p>\n<p>will simplify matters.</p>\n", 
+        "<p>After the substitution you will recover a differential equation that you are familiar with.</p>\n"
+    ], 
+    "hints_latex": [
+        "The substitution\n\n\\begin{align*}\n\\displaystyle w = v^{-1/2}\n\\end{align*} will simplify matters.", 
         "After the substitution you will recover a differential equation that you\nare familiar with."
-    ]
+    ], 
+    "hints_raw": [
+        "The substitution \n:&lt;math> \\displaystyle w = v^{-1/2}&lt;/math>\nwill simplify matters.\n", 
+        "After the substitution you will recover a differential equation that you are familiar with.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (b)", 
+    "rating": 41, 
+    "sols_html": [
+        "<p>As the exam hint suggests, we make the substitution <span class=\"math\">\\(w = v^{-1/2}\\)</span> so that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nw&#39; = -\\frac{1}{2} v^{-3/2} v&#39;.\\end{aligned}\\]</span></p>\n<p>Under this substitution, <span class=\"math\">\\(t^2 w&#39; + 2tw - w^3 = 0\\)</span> becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^2 (-\\frac{1}{2} v^{-3/2} v&#39;) + 2t v^{-1/2} - v^{-3/2} &amp;= 0 \\\\\nv&#39; - \\frac{4}{t} v + \\frac{2}{t^2} &amp;= 0 \\end{aligned}\\]</span></p>\n<p>where we multiplied the equation by <span class=\"math\">\\(-2 \\frac{v^{3/2}}{t^2}.\\)</span></p>\n<p>This is now the same ODE as in <span>part (a)</span>, so the solution is that <span class=\"math\">\\(v = \\frac{2}{5t} + Ct^4\\)</span>. Hence we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nw = \\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "As the exam hint suggests, we make the substitution $w = v^{-1/2}$ so\nthat\n\n\\begin{align*}\nw' = -\\frac{1}{2} v^{-3/2} v'.\n\\end{align*}\n\nUnder this substitution, $t^2 w' + 2tw - w^3 = 0$ becomes\n\n\\begin{align*}\nt^2 (-\\frac{1}{2} v^{-3/2} v') + 2t v^{-1/2} - v^{-3/2} &= 0 \\\\\nv' - \\frac{4}{t} v + \\frac{2}{t^2} &= 0 \n\\end{align*}\n\nwhere we multiplied the equation by $-2 \\frac{v^{3/2}}{t^2}.$\n\nThis is now the same ODE as in\n{part\n(a)}, so the solution is that $v = \\frac{2}{5t} + Ct^4$. Hence we have\n\n\\begin{align*}\nw = \\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "As the exam hint suggests, we make the substitution &lt;math>w = v^{-1/2}&lt;/math> so that \n\n:&lt;math>w' = -\\frac{1}{2} v^{-3/2} v'&lt;/math>.\n\nUnder this substitution,  &lt;math>t^2 w' + 2tw - w^3 = 0&lt;/math> becomes\n\n&lt;math> \\begin{align} t^2 (-\\frac{1}{2} v^{-3/2} v') + 2t v^{-1/2} - v^{-3/2} &amp;= 0 \\\\\nv' - \\frac{4}{t} v + \\frac{2}{t^2} &amp;= 0 \\end{align} &lt;/math> \n\nwhere we multiplied the equation by &lt;math>-2 \\frac{v^{3/2}}{t^2}.&lt;/math>\n\nThis is now the same ODE as in [[Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_01_(a)|part (a)]], so the solution is that &lt;math>v = \\frac{2}{5t} + Ct^4&lt;/math>. Hence we have\n\n:&lt;math>w = \\left( \\frac{2}{5t} + Ct^4\\right)^{-1/2}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Solve the following nonlinear ODE:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^2 w&#39; + 2tw - w^3 = 0, \\quad t &gt; 0.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Solve the following nonlinear ODE:\n\n\\begin{align*}\nt^2 w' + 2tw - w^3 = 0, \\quad t > 0.\n\\end{align*}", 
+    "statement_raw": "Solve the following nonlinear ODE:\n\n:&lt;math>\nt^2 w' + 2tw - w^3 = 0, \\quad t > 0.\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Differential_equation_(higher_order)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_01_(b)", 
+    "year": 2011
 }

@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nEvaluate $\\displaystyle \\int_0^1 \\tan^{-1} x \\ dx$", 
-    "year": 2013, 
-    "sols": [
-        "From now on, we will use $\\displaystyle \\arctan x$ instead of\n$\\displaystyle \\tan^{-1} x$. By integration by parts, set\n$\\displaystyle u = \\arctan x$ and $\\displaystyle dv = dx$. Then\n$\\displaystyle du = \\frac{1}{1+x^2} \\ dx$ and $\\displaystyle v = x$.\nThen\n\n\\begin{align*}\n\\int_0^1 \\arctan x \\ dx &= x\\arctan x \\big|_0^1 - \\int_0^1 \\frac{x}{1+x^2} \\ dx \\\\\n&= \\arctan(1)-\\frac{1}{2}\\ln|1+x^2|\\big|_0^1 \\\\\n&= \\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_0^1 \\arctan x \\ dx=\\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\\)</span></p>\n", 
+    "answer_latex": " $\\int_0^1 \\arctan x \\ dx=\\frac{\\pi}{4}-\\frac{1}{2}\\ln 2$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This is a special integration by parts. Note that another notation for <span class=\"math\">\\(\\displaystyle \\tan^{-1}x\\)</span> is <span class=\"math\">\\(\\displaystyle \\arctan  x\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "This is a special integration by parts. Note that another notation for\n$\\displaystyle \\tan^{-1}x$ is $\\displaystyle \\arctan  x$"
-    ]
+    ], 
+    "hints_raw": [
+        "This is a special integration by parts. Note that another notation for &lt;math> \\displaystyle \\tan^{-1}x &lt;/math> is &lt;math> \\displaystyle \\arctan  x&lt;/math>\n"
+    ], 
+    "num_votes": 11, 
+    "question": "6 (a)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>From now on, we will use <span class=\"math\">\\(\\displaystyle \\arctan x\\)</span> instead of <span class=\"math\">\\(\\displaystyle \\tan^{-1} x\\)</span>. By integration by parts, set <span class=\"math\">\\(\\displaystyle u = \\arctan x\\)</span> and <span class=\"math\">\\(\\displaystyle dv = dx\\)</span>. Then <span class=\"math\">\\(\\displaystyle du = \\frac{1}{1+x^2} \\ dx\\)</span> and <span class=\"math\">\\(\\displaystyle v = x\\)</span>. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1 \\arctan x \\ dx &amp;= x\\arctan x \\big|_0^1 - \\int_0^1 \\frac{x}{1+x^2} \\ dx \\\\\n&amp;= \\arctan(1)-\\frac{1}{2}\\ln|1+x^2|\\big|_0^1 \\\\\n&amp;= \\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From now on, we will use $\\displaystyle \\arctan x$ instead of\n$\\displaystyle \\tan^{-1} x$. By integration by parts, set\n$\\displaystyle u = \\arctan x$ and $\\displaystyle dv = dx$. Then\n$\\displaystyle du = \\frac{1}{1+x^2} \\ dx$ and $\\displaystyle v = x$.\nThen\n\n\\begin{align*}\n\\int_0^1 \\arctan x \\ dx &= x\\arctan x \\big|_0^1 - \\int_0^1 \\frac{x}{1+x^2} \\ dx \\\\\n&= \\arctan(1)-\\frac{1}{2}\\ln|1+x^2|\\big|_0^1 \\\\\n&= \\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From now on, we will use &lt;math> \\displaystyle \\arctan x &lt;/math> instead of &lt;math> \\displaystyle \\tan^{-1} x&lt;/math>. By integration by parts, set &lt;math>\\displaystyle u = \\arctan x&lt;/math> and &lt;math>\\displaystyle dv = dx&lt;/math>. Then &lt;math>\\displaystyle du = \\frac{1}{1+x^2} \\ dx&lt;/math> and &lt;math>\\displaystyle v = x&lt;/math>. Then\n\n:&lt;math> \n\\displaystyle \n\\begin{align}\n\\int_0^1 \\arctan x \\ dx &amp; = x\\arctan x \\big|_0^1 - \\int_0^1 \\frac{x}{1+x^2} \\ dx \\\\\n&amp; = \\arctan(1)-\\frac{1}{2}\\ln|1+x^2|\\big|_0^1 \\\\\n&amp; = \\frac{\\pi}{4}-\\frac{1}{2}\\ln 2\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 4&#226;&#128;&#147;12, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions</strong>.</p>\n<p>Evaluate <span class=\"math\">\\(\\displaystyle \\int_0^1 \\tan^{-1} x \\ dx\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nEvaluate $\\displaystyle \\int_0^1 \\tan^{-1} x \\ dx$", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 4\u201312, justify your answers and '''show all your work'''. If\na box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these questions'''.\n\nEvaluate &lt;math> \\displaystyle \\int_0^1 \\tan^{-1} x \\ dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_06_(a)", 
+    "year": 2013
 }

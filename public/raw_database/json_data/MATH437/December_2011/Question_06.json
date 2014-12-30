@@ -1,15 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_06", 
-    "course": "MATH437", 
-    "statement": "If $\\displaystyle n \\in \\mathbb{N}$ is an even perfect number, then\nthere exists a $\\displaystyle k \\in \\mathbb{N}$ such that\n$\\displaystyle 2^{k+1}-1$ is a prime number and\n\n\\begin{align*}\\displaystyle n = 2^{k}(2^{k+1}-1)\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Let $\\displaystyle n = 2^{k}m$ with \\emph{k} at least 1. Further, let\n\n\\begin{align*}\\displaystyle \\sigma(n) = \\sum_{d \\mid n}d\\end{align*}\n\nand recall that this function is multiplicative (the sum is over\npositive divisors of \\emph{n}). Since we are given that \\emph{n} is an\neven perfect number, we know that\n\n\\begin{align*}\\displaystyle 2n = \\sigma(n).\\end{align*}\n\nNext, we use the multiplicativity of $\\displaystyle \\sigma$ and see that\n\n\\begin{align*}\\displaystyle 2^{k+1}m = 2n = \\sigma(n) = \\sigma(2^{k}m) = \\sigma(2^{k})\\sigma(m) = (1 + 2 + 2^{2} + ... + 2^{k})\\sigma(m) = (2^{k+1}-1)\\sigma(m).\\end{align*}\n\nSince $\\displaystyle \\gcd(2^{k+1},2^{k+1}-1) = 1$, we see that\n$\\displaystyle (2^{k+1}-1)\\mid m$. Let \\emph{M} be an integer such that\n$\\displaystyle m = (2^{k+1}-1)M$. Substituting this into the above\nyields\n\n$\\displaystyle 2^{k+1}(2^{k+1}-1)M = 2^{k+1}m = (2^{k+1}-1)\\sigma(m)$.\n\nCancelling on both sides yields\n\n$\\displaystyle 2^{k+1}M = \\sigma(m)$.\n\nUsing the fact that both \\emph{m} and \\emph{M} are divisors of \\emph{m}\n(and hence are terms inside the expansion of $\\displaystyle \\sigma(m)$,\nwe have that\n\n$\\displaystyle 2^{k+1}M = \\sigma(m) \\geq m + M = (2^{k+1}-1)M + M = 2^{k+1}M$.\n\nThus, the greater than sign is in fact an equality. This means that\n$\\displaystyle \\sigma(m)$ has only two factors, namely \\emph{m} and\n\\emph{M}. Since $\\displaystyle m > M$, we must have that\n$\\displaystyle M=1$ and so $\\displaystyle m = (2^{k+1}-1)M = 2^{k+1}-1$.\nAs \\emph{m} has only two prime factors, we also know that\n$\\displaystyle m = 2^{k+1}-1$ is prime. This completes the proof."
+    "answer_html": "<p>Since <span class=\"math\">\\(\\displaystyle m &gt; M\\)</span>, we must have that <span class=\"math\">\\(\\displaystyle M=1\\)</span> and so <span class=\"math\">\\(\\displaystyle m = 2^{k+1}-1\\)</span>. As <em>m</em> has only two prime factors, we also know that <span class=\"math\">\\(\\displaystyle m = 2^{k+1}-1\\)</span> is prime.This completes the proof.</p>\n", 
+    "answer_latex": "Since $\\displaystyle m > M$, we must have that\n$\\displaystyle M=1$ and so $\\displaystyle m = 2^{k+1}-1$.\nAs \\emph{m} has only two prime factors, we also know that\n$\\displaystyle m = 2^{k+1}-1$ is prime.This completes the proof.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH437", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Let <span class=\"math\">\\(\\displaystyle n = 2^{k}m\\)</span>. First, recall</p>\n<p><span class=\"math\">\\(\\displaystyle \\sigma(n) = \\sum_{d \\mid n}d\\)</span></p>\n<p>is a multiplicative function. The condition that <em>n</em> is an even perfect number translates to <span class=\"math\">\\(\\displaystyle 2n = \\sigma(n)\\)</span>.</p>\n", 
+        "<p>Show that <span class=\"math\">\\(\\displaystyle 2^{k+1}-1\\mid m\\)</span> so that <span class=\"math\">\\(\\displaystyle m = (2^{k+1}-1)M\\)</span> for some integer <em>M</em>.</p>\n", 
+        "<p>A final piece of advice, notice that both <em>m</em> and <em>M</em> are divisors of <em>m</em>. Hence <span class=\"math\">\\(\\displaystyle \\sigma(m) \\geq m + M\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Let $\\displaystyle n = 2^{k}m$. First, recall\n\n$\\displaystyle \\sigma(n) = \\sum_{d \\mid n}d$\n\nis a multiplicative function. The condition that \\emph{n} is an even\nperfect number translates to $\\displaystyle 2n = \\sigma(n)$.", 
         "Show that $\\displaystyle 2^{k+1}-1\\mid m$ so that\n$\\displaystyle m = (2^{k+1}-1)M$ for some integer \\emph{M}.", 
         "A final piece of advice, notice that both \\emph{m} and \\emph{M} are\ndivisors of \\emph{m}. Hence $\\displaystyle \\sigma(m) \\geq m + M$."
-    ]
+    ], 
+    "hints_raw": [
+        "Let &lt;math> \\displaystyle n = 2^{k}m &lt;/math>. First, recall\n\n&lt;math> \\displaystyle \\sigma(n) = \\sum_{d \\mid n}d&lt;/math>\n\nis a multiplicative function. The condition that ''n'' is an even perfect number translates to &lt;math> \\displaystyle 2n = \\sigma(n)&lt;/math>.\n", 
+        "Show that &lt;math> \\displaystyle 2^{k+1}-1\\mid m&lt;/math> so that &lt;math> \\displaystyle m = (2^{k+1}-1)M&lt;/math> for some integer ''M''.\n", 
+        "A final piece of advice, notice that both ''m'' and ''M'' are divisors of ''m''. Hence &lt;math> \\displaystyle \\sigma(m) \\geq m + M&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(\\displaystyle n = 2^{k}m\\)</span> with <em>k</em> at least 1. Further, let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\sigma(n) = \\sum_{d \\mid n}d\\end{aligned}\\]</span></p>\n<p>and recall that this function is multiplicative (the sum is over positive divisors of <em>n</em>). Since we are given that <em>n</em> is an even perfect number, we know that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 2n = \\sigma(n).\\end{aligned}\\]</span></p>\n<p>Next, we use the multiplicativity of <span class=\"math\">\\(\\displaystyle \\sigma\\)</span> and see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 2^{k+1}m = 2n = \\sigma(n) = \\sigma(2^{k}m) = \\sigma(2^{k})\\sigma(m) = (1 + 2 + 2^{2} + ... + 2^{k})\\sigma(m) = (2^{k+1}-1)\\sigma(m).\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(\\displaystyle \\gcd(2^{k+1},2^{k+1}-1) = 1\\)</span>, we see that <span class=\"math\">\\(\\displaystyle (2^{k+1}-1)\\mid m\\)</span>. Let <em>M</em> be an integer such that <span class=\"math\">\\(\\displaystyle m = (2^{k+1}-1)M\\)</span>. Substituting this into the above yields</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{k+1}(2^{k+1}-1)M = 2^{k+1}m = (2^{k+1}-1)\\sigma(m)\\)</span>.</p>\n<p>Cancelling on both sides yields</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{k+1}M = \\sigma(m)\\)</span>.</p>\n<p>Using the fact that both <em>m</em> and <em>M</em> are divisors of <em>m</em> (and hence are terms inside the expansion of <span class=\"math\">\\(\\displaystyle \\sigma(m)\\)</span>, we have that</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{k+1}M = \\sigma(m) \\geq m + M = (2^{k+1}-1)M + M = 2^{k+1}M\\)</span>.</p>\n<p>Thus, the greater than sign is in fact an equality. This means that <span class=\"math\">\\(\\displaystyle \\sigma(m)\\)</span> has only two factors, namely <em>m</em> and <em>M</em>. Since <span class=\"math\">\\(\\displaystyle m &gt; M\\)</span>, we must have that <span class=\"math\">\\(\\displaystyle M=1\\)</span> and so <span class=\"math\">\\(\\displaystyle m = (2^{k+1}-1)M = 2^{k+1}-1\\)</span>. As <em>m</em> has only two prime factors, we also know that <span class=\"math\">\\(\\displaystyle m = 2^{k+1}-1\\)</span> is prime. This completes the proof.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let $\\displaystyle n = 2^{k}m$ with \\emph{k} at least 1. Further, let\n\n\\begin{align*}\n\\displaystyle \\sigma(n) = \\sum_{d \\mid n}d\n\\end{align*}\n\nand recall that this function is multiplicative (the sum is over\npositive divisors of \\emph{n}). Since we are given that \\emph{n} is an\neven perfect number, we know that\n\n\\begin{align*}\n\\displaystyle 2n = \\sigma(n).\n\\end{align*}\n\nNext, we use the multiplicativity of $\\displaystyle \\sigma$ and see that\n\n\\begin{align*}\n\\displaystyle 2^{k+1}m = 2n = \\sigma(n) = \\sigma(2^{k}m) = \\sigma(2^{k})\\sigma(m) = (1 + 2 + 2^{2} + ... + 2^{k})\\sigma(m) = (2^{k+1}-1)\\sigma(m).\n\\end{align*}\n\nSince $\\displaystyle \\gcd(2^{k+1},2^{k+1}-1) = 1$, we see that\n$\\displaystyle (2^{k+1}-1)\\mid m$. Let \\emph{M} be an integer such that\n$\\displaystyle m = (2^{k+1}-1)M$. Substituting this into the above\nyields\n\n$\\displaystyle 2^{k+1}(2^{k+1}-1)M = 2^{k+1}m = (2^{k+1}-1)\\sigma(m)$.\n\nCancelling on both sides yields\n\n$\\displaystyle 2^{k+1}M = \\sigma(m)$.\n\nUsing the fact that both \\emph{m} and \\emph{M} are divisors of \\emph{m}\n(and hence are terms inside the expansion of $\\displaystyle \\sigma(m)$,\nwe have that\n\n$\\displaystyle 2^{k+1}M = \\sigma(m) \\geq m + M = (2^{k+1}-1)M + M = 2^{k+1}M$.\n\nThus, the greater than sign is in fact an equality. This means that\n$\\displaystyle \\sigma(m)$ has only two factors, namely \\emph{m} and\n\\emph{M}. Since $\\displaystyle m > M$, we must have that\n$\\displaystyle M=1$ and so $\\displaystyle m = (2^{k+1}-1)M = 2^{k+1}-1$.\nAs \\emph{m} has only two prime factors, we also know that\n$\\displaystyle m = 2^{k+1}-1$ is prime. This completes the proof."
+    ], 
+    "sols_raw": [
+        "Let &lt;math> \\displaystyle n = 2^{k}m&lt;/math> with ''k'' at least 1. Further, let\n\n:&lt;math> \\displaystyle \\sigma(n) = \\sum_{d \\mid n}d&lt;/math>\n\nand recall that this function is multiplicative (the sum is over positive divisors of ''n''). Since we are given that ''n'' is an even perfect number, we know that \n\n:&lt;math> \\displaystyle 2n = \\sigma(n)&lt;/math>.\n\nNext, we use the multiplicativity of &lt;math> \\displaystyle \\sigma&lt;/math> and see that\n\n:&lt;math> \\displaystyle 2^{k+1}m = 2n = \\sigma(n) = \\sigma(2^{k}m) = \\sigma(2^{k})\\sigma(m) = (1 + 2 + 2^{2} + ... + 2^{k})\\sigma(m) = (2^{k+1}-1)\\sigma(m)&lt;/math>.\n\nSince &lt;math> \\displaystyle \\gcd(2^{k+1},2^{k+1}-1) = 1&lt;/math>, we see that &lt;math> \\displaystyle (2^{k+1}-1)\\mid m&lt;/math>. Let ''M'' be an integer such that &lt;math> \\displaystyle m = (2^{k+1}-1)M&lt;/math>. Substituting this into the above yields\n\n&lt;math> \\displaystyle 2^{k+1}(2^{k+1}-1)M = 2^{k+1}m = (2^{k+1}-1)\\sigma(m)&lt;/math>.\n\nCancelling on both sides yields\n\n&lt;math> \\displaystyle 2^{k+1}M = \\sigma(m)&lt;/math>.\n\nUsing the fact that both ''m'' and ''M'' are divisors of ''m'' (and hence are terms inside the expansion of &lt;math> \\displaystyle \\sigma(m)&lt;/math>, we have that\n\n&lt;math> \\displaystyle 2^{k+1}M = \\sigma(m) \\geq m + M = (2^{k+1}-1)M + M = 2^{k+1}M&lt;/math>.\n\nThus, the greater than sign is in fact an equality. This means that &lt;math> \\displaystyle \\sigma(m)&lt;/math> has only two factors, namely ''m'' and ''M''. Since &lt;math> \\displaystyle m > M&lt;/math>, we must have that &lt;math> \\displaystyle M=1&lt;/math> and so &lt;math> \\displaystyle m = (2^{k+1}-1)M = 2^{k+1}-1&lt;/math>. As ''m'' has only two prime factors, we also know that &lt;math> \\displaystyle m = 2^{k+1}-1&lt;/math> is prime. This completes the proof.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>If <span class=\"math\">\\(\\displaystyle n \\in \\mathbb{N}\\)</span> is an even perfect number, then there exists a <span class=\"math\">\\(\\displaystyle k \\in \\mathbb{N}\\)</span> such that <span class=\"math\">\\(\\displaystyle 2^{k+1}-1\\)</span> is a prime number and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle n = 2^{k}(2^{k+1}-1)\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "If $\\displaystyle n \\in \\mathbb{N}$ is an even perfect number, then\nthere exists a $\\displaystyle k \\in \\mathbb{N}$ such that\n$\\displaystyle 2^{k+1}-1$ is a prime number and\n\n\\begin{align*}\n\\displaystyle n = 2^{k}(2^{k+1}-1)\n\\end{align*}", 
+    "statement_raw": "If &lt;math> \\displaystyle n \\in \\mathbb{N}&lt;/math> is an even perfect number, then there exists a &lt;math> \\displaystyle k \\in \\mathbb{N}&lt;/math> such that &lt;math> \\displaystyle 2^{k+1}-1&lt;/math> is a prime number and \n\n:&lt;math> \\displaystyle n = 2^{k}(2^{k+1}-1)&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility", 
+        "Multiplicative_functions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2011/Question_06", 
+    "year": 2011
 }

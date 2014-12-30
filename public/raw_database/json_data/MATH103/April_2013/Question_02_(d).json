@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_02_(d)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Integration: Short Answer Problems - Evaluate the following\nintegrals: state if a definite integral does not exist; use limits for\nimproper integrals. (full marks for correct answer; work must be shown\nfor partial marks)}\n\n$\\displaystyle I_d = \\int \\sin(\\ln x)\\,dx$", 
-    "year": 2013, 
-    "sols": [
-        "The integral will become less complicated if we make a substitution\n$u = \\ln x$.\n\n\\subparagraph{First substitution}\\label{first-substitution}\n\nIf \\emph{u} = \\emph{ln x} then $du = (1/x) \\ dx$ so\n$dx = x \\ du = e^u \\ du$. For the last equality we solved $u = \\ln x$\nfor $x$. Therefore,\n\n\\begin{align*}I = \\int \\sin(\\ln x) \\ dx = \\int e^u \\sin u \\ du\\end{align*}\n\n\\subparagraph{First integration by\nparts}\\label{first-integration-by-parts}\n\nTo find this integral, we will need to integrate by parts twice.\n\nLet $f = e^u$ with $df = e^u \\ du$ and $dg = \\sin u \\ du$ with\n$g = -\\cos u$. Then\n\n\\begin{align*}\nI &= fg - \\int g df = -e^u \\cos u - \\int e^u (-\\cos u) \\ du \\\\\n&= -e^u \\cos u + \\int e^u \\cos u \\ du\\end{align*}\n\n\\subparagraph{Second integration by\nparts}\\label{second-integration-by-parts}\n\nWe repeat the process on the second integral, this time with $f = e^u$\nand $df = e^u \\ du$, and $dg = \\cos u \\ du$ with $g = \\sin u$. Now we\nfind:\n\n\\begin{align*}I = -e^u \\cos u + (e^u \\sin u - \\int e^u \\sin u \\ du)\\end{align*}\n\n\\subparagraph{Inspect the result}\\label{inspect-the-result}\n\nWe recognize the integral above as \\emph{I}! We can now solve for\n\\emph{I}:\n\n\\begin{align*}\\displaystyle\nI = -e^u \\cos u + e^u \\sin u - I\\end{align*} so\n\n\\begin{align*}\\displaystyle\n2I = e^u \\sin u - e^u \\cos u\\end{align*}\n\nThen\n\n\\begin{align*}\\displaystyle\nI = \\frac{1}{2} e^u (\\sin u-\\cos u) + C\\end{align*}\n\nWe added the arbitrary constant \\emph{C} because we are computing an\nindefinite integral.\n\n\\subparagraph{Bring \\emph{x} back}\\label{bring-x-back}\n\nFinally, the integral we desire can be found by replacing $u$ by $\\ln x$\nso that $e^u = x$:\n\n\\begin{align*}\\displaystyle\nI = \\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\nI=\\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle\nI=\\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C$ ", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Start with the substitution <em>u</em> = <em>ln x</em>.</p>\n", 
+        "<p>Next, do integration by parts twice to solve for the integral you wound up with after the substitution.</p>\n"
+    ], 
+    "hints_latex": [
         "Start with the substitution \\emph{u} = \\emph{ln x}.", 
         "Next, do integration by parts twice to solve for the integral you wound\nup with after the substitution."
-    ]
+    ], 
+    "hints_raw": [
+        "Start with the substitution ''u'' = ''ln x''.\n", 
+        "Next, do integration by parts twice to solve for the integral you wound up with after the substitution.\n"
+    ], 
+    "num_votes": 24, 
+    "question": "2 (d)", 
+    "rating": 25, 
+    "sols_html": [
+        "<p>The integral will become less complicated if we make a substitution <span class=\"math\">\\(u = \\ln x\\)</span>.</p>\n<h5 id=\"first-substitution\">First substitution</h5>\n<p>If <em>u</em> = <em>ln x</em> then <span class=\"math\">\\(du = (1/x) \\ dx\\)</span> so <span class=\"math\">\\(dx = x \\ du = e^u \\ du\\)</span>. For the last equality we solved <span class=\"math\">\\(u = \\ln x\\)</span> for <span class=\"math\">\\(x\\)</span>. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int \\sin(\\ln x) \\ dx = \\int e^u \\sin u \\ du\\end{aligned}\\]</span></p>\n<h5 id=\"first-integration-by-parts\">First integration by parts</h5>\n<p>To find this integral, we will need to integrate by parts twice.</p>\n<p>Let <span class=\"math\">\\(f = e^u\\)</span> with <span class=\"math\">\\(df = e^u \\ du\\)</span> and <span class=\"math\">\\(dg = \\sin u \\ du\\)</span> with <span class=\"math\">\\(g = -\\cos u\\)</span>. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI &amp;= fg - \\int g df = -e^u \\cos u - \\int e^u (-\\cos u) \\ du \\\\\n&amp;= -e^u \\cos u + \\int e^u \\cos u \\ du\\end{aligned}\\]</span></p>\n<h5 id=\"second-integration-by-parts\">Second integration by parts</h5>\n<p>We repeat the process on the second integral, this time with <span class=\"math\">\\(f = e^u\\)</span> and <span class=\"math\">\\(df = e^u \\ du\\)</span>, and <span class=\"math\">\\(dg = \\cos u \\ du\\)</span> with <span class=\"math\">\\(g = \\sin u\\)</span>. Now we find:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = -e^u \\cos u + (e^u \\sin u - \\int e^u \\sin u \\ du)\\end{aligned}\\]</span></p>\n<h5 id=\"inspect-the-result\">Inspect the result</h5>\n<p>We recognize the integral above as <em>I</em>! We can now solve for <em>I</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nI = -e^u \\cos u + e^u \\sin u - I\\end{aligned}\\]</span></p>\n<p>so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n2I = e^u \\sin u - e^u \\cos u\\end{aligned}\\]</span></p>\n<p>Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nI = \\frac{1}{2} e^u (\\sin u-\\cos u) + C\\end{aligned}\\]</span></p>\n<p>We added the arbitrary constant <em>C</em> because we are computing an indefinite integral.</p>\n<h5 id=\"bring-x-back\">Bring <em>x</em> back</h5>\n<p>Finally, the integral we desire can be found by replacing <span class=\"math\">\\(u\\)</span> by <span class=\"math\">\\(\\ln x\\)</span> so that <span class=\"math\">\\(e^u = x\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nI = \\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The integral will become less complicated if we make a substitution\n$u = \\ln x$.\n\n\\subparagraph{First substitution}\\label{first-substitution}\n\nIf \\emph{u} = \\emph{ln x} then $du = (1/x) \\ dx$ so\n$dx = x \\ du = e^u \\ du$. For the last equality we solved $u = \\ln x$\nfor $x$. Therefore,\n\n\\begin{align*}\nI = \\int \\sin(\\ln x) \\ dx = \\int e^u \\sin u \\ du\n\\end{align*}\n\n\\subparagraph{First integration by\nparts}\\label{first-integration-by-parts}\n\nTo find this integral, we will need to integrate by parts twice.\n\nLet $f = e^u$ with $df = e^u \\ du$ and $dg = \\sin u \\ du$ with\n$g = -\\cos u$. Then\n\n\\begin{align*}\nI &= fg - \\int g df = -e^u \\cos u - \\int e^u (-\\cos u) \\ du \\\\\n&= -e^u \\cos u + \\int e^u \\cos u \\ du\n\\end{align*}\n\n\\subparagraph{Second integration by\nparts}\\label{second-integration-by-parts}\n\nWe repeat the process on the second integral, this time with $f = e^u$\nand $df = e^u \\ du$, and $dg = \\cos u \\ du$ with $g = \\sin u$. Now we\nfind:\n\n\\begin{align*}\nI = -e^u \\cos u + (e^u \\sin u - \\int e^u \\sin u \\ du)\n\\end{align*}\n\n\\subparagraph{Inspect the result}\\label{inspect-the-result}\n\nWe recognize the integral above as \\emph{I}! We can now solve for\n\\emph{I}:\n\n\\begin{align*}\n\\displaystyle\nI = -e^u \\cos u + e^u \\sin u - I\n\\end{align*} so\n\n\\begin{align*}\n\\displaystyle\n2I = e^u \\sin u - e^u \\cos u\n\\end{align*}\n\nThen\n\n\\begin{align*}\n\\displaystyle\nI = \\frac{1}{2} e^u (\\sin u-\\cos u) + C\n\\end{align*}\n\nWe added the arbitrary constant \\emph{C} because we are computing an\nindefinite integral.\n\n\\subparagraph{Bring \\emph{x} back}\\label{bring-x-back}\n\nFinally, the integral we desire can be found by replacing $u$ by $\\ln x$\nso that $e^u = x$:\n\n\\begin{align*}\n\\displaystyle\nI = \\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The integral will become less complicated if we make a substitution &lt;math>u = \\ln x &lt;/math>.\n\n===== First substitution =====\n\nIf ''u'' = ''ln x'' then &lt;math>du = (1/x) \\ dx&lt;/math> so &lt;math>dx = x \\ du = e^u \\ du&lt;/math>. For the last equality we solved &lt;math>u = \\ln x&lt;/math> for &lt;math>x&lt;/math>. Therefore,\n\n:&lt;math>I = \\int \\sin(\\ln x) \\ dx = \\int e^u \\sin u \\ du&lt;/math>\n\n===== First integration by parts =====\n\nTo find this integral, we will need to integrate by parts twice.\n\nLet &lt;math>f = e^u&lt;/math> with &lt;math>df = e^u \\ du&lt;/math> and &lt;math>dg = \\sin u \\ du&lt;/math> with &lt;math>g = -\\cos u&lt;/math>. Then \n\n:&lt;math>\\begin{align}\nI &amp;= fg - \\int g df = -e^u \\cos u - \\int e^u (-\\cos u) \\ du \\\\\n&amp;= -e^u \\cos u + \\int e^u \\cos u \\ du\n\\end{align} &lt;/math>\n\n===== Second integration by parts =====\n\nWe repeat the process on the second integral, this time with &lt;math>f = e^u&lt;/math> and &lt;math>df = e^u \\ du&lt;/math>, and &lt;math>dg = \\cos u \\ du&lt;/math> with &lt;math>g = \\sin u&lt;/math>. Now we find:\n\n:&lt;math>I = -e^u \\cos u + (e^u \\sin u - \\int e^u \\sin u \\ du)&lt;/math>\n\n\n===== Inspect the result =====\n\nWe recognize the integral above as ''I''! We can now solve for ''I'':\n\n:&lt;math> \\displaystyle\nI = -e^u \\cos u + e^u \\sin u - I\n&lt;/math>\nso\n\n:&lt;math> \\displaystyle\n2I = e^u \\sin u - e^u \\cos u\n&lt;/math>\n\nThen\n\n:&lt;math> \\displaystyle\nI = \\frac{1}{2} e^u (\\sin u-\\cos u) + C\n&lt;/math>\n\nWe added the arbitrary constant ''C'' because we are computing an indefinite integral.\n\n\n===== Bring ''x'' back =====\n\nFinally, the integral we desire can be found by replacing &lt;math>u&lt;/math> by &lt;math>\\ln x&lt;/math> so that &lt;math>e^u = x&lt;/math>:\n\n:&lt;math>\\displaystyle\nI = \\frac{1}{2} x (\\sin (\\ln x) - \\cos (\\ln x)) + C \n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Integration: Short Answer Problems - Evaluate the following integrals: state if a definite integral does not exist; use limits for improper integrals. (full marks for correct answer; work must be shown for partial marks)</strong></p>\n<p><span class=\"math\">\\(\\displaystyle I_d = \\int \\sin(\\ln x)\\,dx\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Integration: Short Answer Problems - Evaluate the following\nintegrals: state if a definite integral does not exist; use limits for\nimproper integrals. (full marks for correct answer; work must be shown\nfor partial marks)}\n\n$\\displaystyle I_d = \\int \\sin(\\ln x)\\,dx$", 
+    "statement_raw": "'''Integration: Short Answer Problems - Evaluate the following integrals: state if a definite integral does not exist; use limits for improper integrals. (full marks for correct answer; work must be shown for partial marks)'''\n\n&lt;math> \\displaystyle I_d = \\int \\sin(\\ln x)\\,dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integrals_that_cycle", 
+        "Integration", 
+        "Integration_by_parts", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_02_(d)", 
+    "year": 2013
 }

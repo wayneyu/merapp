@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Consider the region below the graph $\\displaystyle y = 1-x^{3}$ (and\nabove the \\emph{x} axis) between $x=0$ and $x=1$.\n\nc) Suppose the density of the solid from\n\\href{Science:Math Exam Resources/Courses/MATH103/April 2006/Question 05 (b)}{part\n(b)} is $\\displaystyle p(y) = ky$. Find its mass.", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Consider the region below the graph <span class=\"math\">\\(\\displaystyle y = 1-x^{3}\\)</span> (and above the <em>x</em> axis) between <span class=\"math\">\\(x=0\\)</span> and <span class=\"math\">\\(x=1\\)</span>.</p>\n<p>c) Suppose the density of the solid from <span>part (b)</span> is <span class=\"math\">\\(\\displaystyle p(y) = ky\\)</span>. Find its mass.</p>\n", 
+    "statement_latex": "Consider the region below the graph $\\displaystyle y = 1-x^{3}$ (and\nabove the \\emph{x} axis) between $x=0$ and $x=1$.\n\nc) Suppose the density of the solid from\n{part\n(b)} is $\\displaystyle p(y) = ky$. Find its mass.", 
+    "statement_raw": "Consider the region below the graph &lt;math> \\displaystyle y = 1-x^{3} &lt;/math> (and above the ''x'' axis) between &lt;math>x=0 &lt;/math> and &lt;math>x=1 &lt;/math>.\n\nc) Suppose the density of the solid from [[Science:Math Exam Resources/Courses/MATH103/April 2006/Question 05 (b)|part (b)]] is &lt;math>\\displaystyle  p(y) = ky &lt;/math>. Find its mass.\n", 
+    "term": "April", 
+    "topics": [
+        "Mass"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_05_(c)", 
+    "year": 2006
 }

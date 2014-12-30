@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(\\int_{0}^{4}f(x)\\, dx &lt; S_{4} +\\frac{1}{15} = \\frac{-14}{15}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\int_{0}^{4}f(x)\\, dx < S_{4} +\\frac{1}{15} = \\frac{-14}{15}$completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "Simontse"
+    ], 
     "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values\\begin{align*}f(0) = 1,\\end{align*}\n$f(1) = 2$, $f(2) = 0$, $f(3) = -2$, $f(4) = -4.$\n\nIt is known that the fourth derivative $f^{(4)}(x)$ lies between $-3$\nand $2$ on the interval $[0,4]$. What is the largest possible value that\n$\\int_0^4 f(x)dx$ could have? You may use the fact that if\n$\\left|f^{(4)}(x)\\right| \\leq K$ on the interval $[a,b]$, then the error\nin using $S_n$ to approximate $\\int_a^b f(x)dx$ has absolute value less\nthan or equal to $K(b-a)^5/180n^4$.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The previous part of this question gives us the value of the Simpson&#8217;s rule approximation. Find the worst value the error can be and then sum this worst value with the approximation from the previous part.</p>\n"
+    ], 
+    "hints_latex": [
+        "The previous part of this question gives us the value of the Simpson's\nrule approximation. Find the worst value the error can be and then sum\nthis worst value with the approximation from the previous part."
+    ], 
+    "hints_raw": [
+        "The previous part of this question gives us the value of the Simpson's rule approximation. Find the worst value the error can be and then sum this worst value with the approximation from the previous part.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Using the hint, we plug in <span class=\"math\">\\(n=4\\)</span> into the error bound and notice that the error lies between</p>\n<p><span class=\"math\">\\(\\frac{(-3)(4-0)^{5}}{180(4)^{4}} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{(2)(4-0)^{5}}{180(4)^{4}}\\)</span></p>\n<p>Evaluating these bounds, we get that</p>\n<p><span class=\"math\">\\(\\frac{-12}{180} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{8}{180}\\)</span></p>\n<p>and one last simplification yields</p>\n<p><span class=\"math\">\\(\\frac{-1}{15} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{2}{45}\\)</span>.</p>\n<p>Now, let&#8217;s use the the approximation and notice that by definition, we have that</p>\n<p><span class=\"math\">\\(\\left|\\int_{0}^{4}f(x)\\, dx - S_{4} \\right|  &lt; \\frac{K(b-a)^5}{180n^4}\\)</span></p>\n<p>Notice that in magnitude, the value</p>\n<p><span class=\"math\">\\(\\frac{1}{15} &gt; \\frac{2}{45}\\)</span></p>\n<p>and so we have that the largest the integral can be is the <span class=\"math\">\\(S_{4}\\)</span> approximation added onto this largest error bound. This gives</p>\n<p><span class=\"math\">\\(\\int_{0}^{4}f(x)\\, dx &lt; S_{4} +\\frac{1}{15} = -1 + \\frac{1}{15} = \\frac{-14}{15}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
         "Using the hint, we plug in $n=4$ into the error bound and notice that\nthe error lies between\n\n$\\frac{(-3)(4-0)^{5}}{180(4)^{4}} < \\frac{K(b-a)^5}{180n^4} < \\frac{(2)(4-0)^{5}}{180(4)^{4}}$\n\nEvaluating these bounds, we get that\n\n$\\frac{-12}{180} < \\frac{K(b-a)^5}{180n^4} < \\frac{8}{180}$\n\nand one last simplification yields\n\n$\\frac{-1}{15} < \\frac{K(b-a)^5}{180n^4} < \\frac{2}{45}$.\n\nNow, let's use the the approximation and notice that by definition, we\nhave that\n\n$\\left|\\int_{0}^{4}f(x)\\, dx - S_{4} \\right|  < \\frac{K(b-a)^5}{180n^4}$\n\nNotice that in magnitude, the value\n\n$\\frac{1}{15} > \\frac{2}{45}$\n\nand so we have that the largest the integral can be is the $S_{4}$\napproximation added onto this largest error bound. This gives\n\n$\\int_{0}^{4}f(x)\\, dx < S_{4} +\\frac{1}{15} = -1 + \\frac{1}{15} = \\frac{-14}{15}$\n\ncompleting the question."
     ], 
-    "hints": [
-        "The previous part of this question gives us the value of the Simpson's\nrule approximation. Find the worst value the error can be and then sum\nthis worst value with the approximation from the previous part."
-    ]
+    "sols_raw": [
+        "Using the hint, we plug in &lt;math> n=4 &lt;/math> into the error bound and notice that the error lies between\n\n&lt;math> \\frac{(-3)(4-0)^{5}}{180(4)^{4}} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{(2)(4-0)^{5}}{180(4)^{4}} &lt;/math>\n\nEvaluating these bounds, we get that\n\n&lt;math> \\frac{-12}{180} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{8}{180} &lt;/math>\n\nand one last simplification yields\n\n&lt;math> \\frac{-1}{15} &lt; \\frac{K(b-a)^5}{180n^4} &lt; \\frac{2}{45} &lt;/math>.\n\nNow, let's use the the approximation and notice that by definition, we have that\n\n&lt;math> \\left|\\int_{0}^{4}f(x)\\, dx - S_{4} \\right|  &lt; \\frac{K(b-a)^5}{180n^4}  &lt;/math>\n\nNotice that in magnitude, the value \n\n&lt;math> \\frac{1}{15} > \\frac{2}{45} &lt;/math>\n\nand so we have that the largest the integral can be is the &lt;math> S_{4} &lt;/math> approximation added onto this largest error bound. This gives\n\n&lt;math> \\int_{0}^{4}f(x)\\, dx &lt; S_{4} +\\frac{1}{15} = -1 + \\frac{1}{15} = \\frac{-14}{15}  &lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answer and <strong>show all your work.</strong> Simplification of the answer is not required.</p>\n<p>An unknown function <span class=\"math\">\\(f(x)\\)</span> has the following values</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(0) = 1,\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\(f(1) = 2\\)</span>, <span class=\"math\">\\(f(2) = 0\\)</span>, <span class=\"math\">\\(f(3) = -2\\)</span>, <span class=\"math\">\\(f(4) = -4.\\)</span></p>\n<p>It is known that the fourth derivative <span class=\"math\">\\(f^{(4)}(x)\\)</span> lies between <span class=\"math\">\\(-3\\)</span> and <span class=\"math\">\\(2\\)</span> on the interval <span class=\"math\">\\([0,4]\\)</span>. What is the largest possible value that <span class=\"math\">\\(\\int_0^4 f(x)dx\\)</span> could have? You may use the fact that if <span class=\"math\">\\(\\left|f^{(4)}(x)\\right| \\leq K\\)</span> on the interval <span class=\"math\">\\([a,b]\\)</span>, then the error in using <span class=\"math\">\\(S_n\\)</span> to approximate <span class=\"math\">\\(\\int_a^b f(x)dx\\)</span> has absolute value less than or equal to <span class=\"math\">\\(K(b-a)^5/180n^4\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nAn unknown function $f(x)$ has the following values\\begin{align*}\nf(0) = 1,\n\\end{align*}\n$f(1) = 2$, $f(2) = 0$, $f(3) = -2$, $f(4) = -4.$\n\nIt is known that the fourth derivative $f^{(4)}(x)$ lies between $-3$\nand $2$ on the interval $[0,4]$. What is the largest possible value that\n$\\int_0^4 f(x)dx$ could have? You may use the fact that if\n$\\left|f^{(4)}(x)\\right| \\leq K$ on the interval $[a,b]$, then the error\nin using $S_n$ to approximate $\\int_a^b f(x)dx$ has absolute value less\nthan or equal to $K(b-a)^5/180n^4$.", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nAn unknown function &lt;math> f(x) &lt;/math> has the following values: &lt;math> f(0) = 1&lt;/math>, &lt;math> f(1) = 2&lt;/math>, &lt;math> f(2) = 0&lt;/math>, &lt;math> f(3) = -2&lt;/math>, &lt;math> f(4) = -4. &lt;/math>\n\nIt is known that the fourth derivative &lt;math> f^{(4)}(x) &lt;/math> lies between &lt;math> -3 &lt;/math> and &lt;math>2&lt;/math> on the interval &lt;math>[0,4]&lt;/math>. What is the largest possible value that &lt;math>\\int_0^4 f(x)dx&lt;/math> could have? You may use the fact that if &lt;math>\\left|f^{(4)}(x)\\right| \\leq K &lt;/math> on the interval &lt;math>[a,b]&lt;/math>, then the error in using &lt;math>S_n&lt;/math> to approximate &lt;math>\\int_a^b f(x)dx&lt;/math> has absolute value less than or equal to &lt;math> K(b-a)^5/180n^4 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Simpson%27s_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_05_(c)", 
+    "year": 2010
 }

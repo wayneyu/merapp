@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(e)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf a function is continuous, then it is differentiable.", 
-    "year": 2012, 
-    "sols": [
-        "A function is non-differentiable if it has a vertical tangent or a sharp\ncorner (cusp). A function is continuous if it can be drawn in one go\nwithout lifting your pencil. It is possible to draw a continuous\nfunction with one (or multiple!) of the non-differentiable properties\njust listed:\n\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2e_cusp_example.jpg}\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_2e_vertical_tangent.jpg}\n\nSo a function can be continuous, without necessarily being\ndifferentiable. Thus the statement is false."
+    "answer_html": "<p><img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_cusp_example.jpg\" alt=\"image\" /> <img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_vertical_tangent.jpg\" alt=\"image\" />So a function can be continuous, without necessarily being differentiable.Thus the statement is false.</p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_cusp_example.jpg}\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_vertical_tangent.jpg}So a function can be continuous, without necessarily being\ndifferentiable.Thus the statement is false.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What makes a function non-differentiable? Can you draw a continuous function with this property?</p>\n"
+    ], 
+    "hints_latex": [
         "What makes a function non-differentiable? Can you draw a continuous\nfunction with this property?"
-    ]
+    ], 
+    "hints_raw": [
+        "What makes a function non-differentiable?  Can you draw a continuous function with this property?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A function is non-differentiable if it has a vertical tangent or a sharp corner (cusp). A function is continuous if it can be drawn in one go without lifting your pencil. It is possible to draw a continuous function with one (or multiple!) of the non-differentiable properties just listed:</p>\n<p><img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_cusp_example.jpg\" alt=\"image\" /> <img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_vertical_tangent.jpg\" alt=\"image\" /></p>\n<p>So a function can be continuous, without necessarily being differentiable. Thus the statement is false.</p>\n"
+    ], 
+    "sols_latex": [
+        "A function is non-differentiable if it has a vertical tangent or a sharp\ncorner (cusp). A function is continuous if it can be drawn in one go\nwithout lifting your pencil. It is possible to draw a continuous\nfunction with one (or multiple!) of the non-differentiable properties\njust listed:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_cusp_example.jpg}\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_2e_vertical_tangent.jpg}\n\nSo a function can be continuous, without necessarily being\ndifferentiable. Thus the statement is false."
+    ], 
+    "sols_raw": [
+        "A function is non-differentiable if it has a vertical tangent or a sharp corner (cusp).  A function is continuous if it can be drawn in one go without lifting your pencil.  It is possible to draw a continuous function with one (or multiple!) of the non-differentiable properties just listed:  \n\n[[File:MER MATH110 December 2012 Question 2e cusp example.jpg|200px]]  [[File:MER MATH110 December 2012 Question 2e vertical tangent.jpg|200px]]\n\nSo a function can be continuous, without necessarily being differentiable.  Thus the statement is false.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>If a function is continuous, then it is differentiable.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf a function is continuous, then it is differentiable.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\nIf a function is continuous, then it is differentiable.\n", 
+    "term": "December", 
+    "topics": [
+        "Continuity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_02_(e)", 
+    "year": 2012
 }

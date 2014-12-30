@@ -1,15 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nFind the general solution of the differential equation $4y'' + y' = 0$.", 
-    "year": 2007, 
-    "sols": [
-        "Bringing the $y'$ term over we have\n\n$\\displaystyle 4y'' = -y'$\n\nIntegrating both sides yields\n\n$\\displaystyle 4y' = -y + C$\n\nNow, bring the \\emph{y} term to the left and dividing by $\\frac{1}{4}$,\nwe have\n\n$y' + \\frac{y}{4} = \\frac{C}{4}$\n\nNow, multiplying both sides by $e^{x/4}$ yields\n\n$e^{x/4}y' + e^{x/4}\\frac{y}{4} =  e^{x/4}\\frac{C}{4}$\n\nThe left hand side is now a product rule derivative, namely\n\n$(e^{x/4}y)' =  e^{x/4}\\frac{C}{4}$\n\nIntegrating both sides yields\n\n$e^{x/4}y  =  \\int e^{x/4}\\frac{C}{4} \\, dx = e^{x/4}C + D$\n\nDividing both sides by $e^{x/4}$ gives\n\n$\\displaystyle y  = C + De^{-x/4}$\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle y  = C + De^{-x/4}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\displaystyle y  = C + De^{-x/4}$completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try bringing the <span class=\"math\">\\(y&#39;\\)</span> term over first. Then integrating both sides once is easy.</p>\n", 
+        "<p>Next, try an integrating factor.</p>\n", 
+        "<p>Multiply both sides by <span class=\"math\">\\(e^{x/4}\\)</span>. Then integrate.</p>\n"
+    ], 
+    "hints_latex": [
         "Try bringing the $y'$ term over first. Then integrating both sides once\nis easy.", 
         "Next, try an integrating factor.", 
         "Multiply both sides by $e^{x/4}$. Then integrate."
-    ]
+    ], 
+    "hints_raw": [
+        "Try bringing the &lt;math> y' &lt;/math> term over first. Then integrating both sides once is easy.\n", 
+        "Next, try an integrating factor.\n", 
+        "Multiply both sides by &lt;math> e^{x/4} &lt;/math>. Then integrate.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Bringing the <span class=\"math\">\\(y&#39;\\)</span> term over we have</p>\n<p><span class=\"math\">\\(\\displaystyle 4y&#39;&#39; = -y&#39;\\)</span></p>\n<p>Integrating both sides yields</p>\n<p><span class=\"math\">\\(\\displaystyle 4y&#39; = -y + C\\)</span></p>\n<p>Now, bring the <em>y</em> term to the left and dividing by <span class=\"math\">\\(\\frac{1}{4}\\)</span>, we have</p>\n<p><span class=\"math\">\\(y&#39; + \\frac{y}{4} = \\frac{C}{4}\\)</span></p>\n<p>Now, multiplying both sides by <span class=\"math\">\\(e^{x/4}\\)</span> yields</p>\n<p><span class=\"math\">\\(e^{x/4}y&#39; + e^{x/4}\\frac{y}{4} =  e^{x/4}\\frac{C}{4}\\)</span></p>\n<p>The left hand side is now a product rule derivative, namely</p>\n<p><span class=\"math\">\\((e^{x/4}y)&#39; =  e^{x/4}\\frac{C}{4}\\)</span></p>\n<p>Integrating both sides yields</p>\n<p><span class=\"math\">\\(e^{x/4}y  =  \\int e^{x/4}\\frac{C}{4} \\, dx = e^{x/4}C + D\\)</span></p>\n<p>Dividing both sides by <span class=\"math\">\\(e^{x/4}\\)</span> gives</p>\n<p><span class=\"math\">\\(\\displaystyle y  = C + De^{-x/4}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Bringing the $y'$ term over we have\n\n$\\displaystyle 4y'' = -y'$\n\nIntegrating both sides yields\n\n$\\displaystyle 4y' = -y + C$\n\nNow, bring the \\emph{y} term to the left and dividing by $\\frac{1}{4}$,\nwe have\n\n$y' + \\frac{y}{4} = \\frac{C}{4}$\n\nNow, multiplying both sides by $e^{x/4}$ yields\n\n$e^{x/4}y' + e^{x/4}\\frac{y}{4} =  e^{x/4}\\frac{C}{4}$\n\nThe left hand side is now a product rule derivative, namely\n\n$(e^{x/4}y)' =  e^{x/4}\\frac{C}{4}$\n\nIntegrating both sides yields\n\n$e^{x/4}y  =  \\int e^{x/4}\\frac{C}{4} \\, dx = e^{x/4}C + D$\n\nDividing both sides by $e^{x/4}$ gives\n\n$\\displaystyle y  = C + De^{-x/4}$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Bringing the &lt;math> y' &lt;/math> term over we have\n\n&lt;math> \\displaystyle 4y'' = -y' &lt;/math>\n\nIntegrating both sides yields\n\n&lt;math> \\displaystyle 4y' = -y + C &lt;/math>\n\nNow, bring the ''y'' term to the left and dividing by &lt;math>\\frac{1}{4} &lt;/math>, we have\n\n&lt;math> y' + \\frac{y}{4} = \\frac{C}{4} &lt;/math>\n\nNow, multiplying both sides by &lt;math> e^{x/4} &lt;/math> yields\n\n&lt;math>  e^{x/4}y' + e^{x/4}\\frac{y}{4} =  e^{x/4}\\frac{C}{4} &lt;/math>\n\nThe left hand side is now a product rule derivative, namely\n\n&lt;math> (e^{x/4}y)' =  e^{x/4}\\frac{C}{4} &lt;/math>\n\nIntegrating both sides yields\n\n&lt;math> e^{x/4}y  =  \\int e^{x/4}\\frac{C}{4} \\, dx = e^{x/4}C + D &lt;/math>\n\nDividing both sides by &lt;math> e^{x/4} &lt;/math> gives\n\n&lt;math> \\displaystyle y  = C + De^{-x/4} &lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problem. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>Find the general solution of the differential equation <span class=\"math\">\\(4y&#39;&#39; + y&#39; = 0\\)</span>.</p>\n", 
+    "statement_latex": "Full-Solution Problem. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nFind the general solution of the differential equation $4y'' + y' = 0$.", 
+    "statement_raw": "&lt;b> Full-Solution Problem. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\nFind the general solution of the differential equation &lt;math> 4y'' + y' = 0 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_04_(a)", 
+    "year": 2007
 }

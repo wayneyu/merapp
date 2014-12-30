@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH110", 
-    "statement": "Let \\emph{P} be the point (1,1).\n\nWrite down an equation for the line of slope \\emph{m} which passes\nthrough \\emph{P}.", 
-    "year": 2011, 
-    "sols": [
-        "We know that our line passes through the point (1,1) and has slope\n\\emph{m}. Using the point-slope formula of line, we get\n\n\\begin{align*}y - 1 = m(x - 1).\\end{align*}\n\nSolving for y gives us $y = mx -m + 1$"
+    "answer_html": "<p>Solving for y gives us <span class=\"math\">\\(y = mx -m + 1\\)</span></p>\n", 
+    "answer_latex": "Solving for y gives us $y = mx -m + 1$", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
-        "Try using the point slope formula\n\n\\begin{align*}y - y_1 = m(x - x_1)\\end{align*}\n\nWhere $x_1, y_1$ are the coordinates of a point on the line."
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try using the point slope formula</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny - y_1 = m(x - x_1)\\end{aligned}\\]</span></p>\n<p>Where <span class=\"math\">\\(x_1, y_1\\)</span> are the coordinates of a point on the line.</p>\n"
+    ], 
+    "hints_latex": [
+        "Try using the point slope formula\n\n\\begin{align*}\ny - y_1 = m(x - x_1)\n\\end{align*}\n\nWhere $x_1, y_1$ are the coordinates of a point on the line."
+    ], 
+    "hints_raw": [
+        "Try using the point slope formula \n\n:&lt;math>y - y_1 = m(x - x_1)&lt;/math>\n\nWhere &lt;math>x_1, y_1&lt;/math> are the coordinates of a point on the line.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "7 (a)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We know that our line passes through the point (1,1) and has slope <em>m</em>. Using the point-slope formula of line, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny - 1 = m(x - 1).\\end{aligned}\\]</span></p>\n<p>Solving for y gives us <span class=\"math\">\\(y = mx -m + 1\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We know that our line passes through the point (1,1) and has slope\n\\emph{m}. Using the point-slope formula of line, we get\n\n\\begin{align*}\ny - 1 = m(x - 1).\n\\end{align*}\n\nSolving for y gives us $y = mx -m + 1$"
+    ], 
+    "sols_raw": [
+        "We know that our line passes through the point (1,1) and has slope ''m''.  Using the point-slope formula of line, we get\n: &lt;math>y - 1 = m(x - 1)&lt;/math>.  \n\nSolving for y gives us &lt;math>y = mx -m + 1&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <em>P</em> be the point (1,1).</p>\n<p>Write down an equation for the line of slope <em>m</em> which passes through <em>P</em>.</p>\n", 
+    "statement_latex": "Let \\emph{P} be the point (1,1).\n\nWrite down an equation for the line of slope \\emph{m} which passes\nthrough \\emph{P}.", 
+    "statement_raw": "Let ''P'' be the point (1,1).\n\nWrite down an equation for the line of slope ''m'' which passes through ''P''.\n", 
+    "term": "April", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_07_(a)", 
+    "year": 2011
 }

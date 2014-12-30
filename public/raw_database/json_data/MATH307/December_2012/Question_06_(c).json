@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_06_(c)", 
-    "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(c)} What is the matrix norm $\\|A\\|$? Give a reason.", 
-    "year": 2012, 
-    "sols": [
-        "To begin with, recall that unitary matrices don't change the norm of a\nvector, in particular $\\|Ux\\| = \\|x\\|$ and $\\|V^*x\\| = \\|x\\|$ for all\nvectors \\emph{x}. Using the definition of the matrix norm of \\emph{A} we\nfind that\n\n\\begin{align*}\n\\|A\\| &= \\max_{\\|x\\| = 1} \\|Ax\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|U(\\Sigma V^*x)\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|\\Sigma V^*x\\| \\\\\n&= \\max_{\\|y\\| = 1} \\|\\Sigma y\\| \\\\\n&= \\|\\Sigma\\|\\end{align*} where $\\displaystyle y = V^* x$ satisfies\n$\\|y\\| = \\|V^* x\\| = \\|x\\| = 1$. In other words, the matrices\n$\\displaystyle A$ and $\\Sigma$ have the same norm. The norm of the\ndiagonal matrix $\\Sigma$ is simply the largest absolute value of the its\ndiagonal entries. Therefore $\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|$."
+    "answer_html": "<p><span class=\"math\">\\(\\|A\\|=\\|\\Sigma\\|\\)</span> where <span class=\"math\">\\(\\displaystyle y = V^* x\\)</span> satisfies <span class=\"math\">\\(\\|y\\| = \\|V^* x\\| = \\|x\\| = 1\\)</span>. In other words, the matrices <span class=\"math\">\\(\\displaystyle A\\)</span> and <span class=\"math\">\\(\\Sigma\\)</span> have the same norm. The norm of the diagonal matrix <span class=\"math\">\\(\\Sigma\\)</span> is simply the largest absolute value of the its diagonal entries. Therefore <span class=\"math\">\\(\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|\\)</span>.</p>\n", 
+    "answer_latex": " $\\|A\\|=\\|\\Sigma\\|$  where $\\displaystyle y = V^* x$ satisfies\n$\\|y\\| = \\|V^* x\\| = \\|x\\| = 1$. In other words, the matrices\n$\\displaystyle A$ and $\\Sigma$ have the same norm. The norm of the\ndiagonal matrix $\\Sigma$ is simply the largest absolute value of the its\ndiagonal entries. Therefore $\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|$.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Use the fact that <em>U</em> and <em>V</em> are unitary and hence do not affect the norm of a vector.</p>\n"
+    ], 
+    "hints_latex": [
         "Use the fact that \\emph{U} and \\emph{V} are unitary and hence do not\naffect the norm of a vector."
-    ]
+    ], 
+    "hints_raw": [
+        "Use the fact that ''U'' and ''V'' are unitary and hence do not affect the norm of a vector.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To begin with, recall that unitary matrices don&#8217;t change the norm of a vector, in particular <span class=\"math\">\\(\\|Ux\\| = \\|x\\|\\)</span> and <span class=\"math\">\\(\\|V^*x\\| = \\|x\\|\\)</span> for all vectors <em>x</em>. Using the definition of the matrix norm of <em>A</em> we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\|A\\| &amp;= \\max_{\\|x\\| = 1} \\|Ax\\| \\\\\n&amp;= \\max_{\\|x\\| = 1} \\|U(\\Sigma V^*x)\\| \\\\\n&amp;= \\max_{\\|x\\| = 1} \\|\\Sigma V^*x\\| \\\\\n&amp;= \\max_{\\|y\\| = 1} \\|\\Sigma y\\| \\\\\n&amp;= \\|\\Sigma\\|\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\displaystyle y = V^* x\\)</span> satisfies <span class=\"math\">\\(\\|y\\| = \\|V^* x\\| = \\|x\\| = 1\\)</span>. In other words, the matrices <span class=\"math\">\\(\\displaystyle A\\)</span> and <span class=\"math\">\\(\\Sigma\\)</span> have the same norm. The norm of the diagonal matrix <span class=\"math\">\\(\\Sigma\\)</span> is simply the largest absolute value of the its diagonal entries. Therefore <span class=\"math\">\\(\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "To begin with, recall that unitary matrices don't change the norm of a\nvector, in particular $\\|Ux\\| = \\|x\\|$ and $\\|V^*x\\| = \\|x\\|$ for all\nvectors \\emph{x}. Using the definition of the matrix norm of \\emph{A} we\nfind that\n\n\\begin{align*}\n\\|A\\| &= \\max_{\\|x\\| = 1} \\|Ax\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|U(\\Sigma V^*x)\\| \\\\\n&= \\max_{\\|x\\| = 1} \\|\\Sigma V^*x\\| \\\\\n&= \\max_{\\|y\\| = 1} \\|\\Sigma y\\| \\\\\n&= \\|\\Sigma\\|\n\\end{align*} where $\\displaystyle y = V^* x$ satisfies\n$\\|y\\| = \\|V^* x\\| = \\|x\\| = 1$. In other words, the matrices\n$\\displaystyle A$ and $\\Sigma$ have the same norm. The norm of the\ndiagonal matrix $\\Sigma$ is simply the largest absolute value of the its\ndiagonal entries. Therefore $\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|$."
+    ], 
+    "sols_raw": [
+        "To begin with, recall that unitary matrices don't change the norm of a vector, in particular &lt;math>\\|Ux\\| = \\|x\\|&lt;/math> and &lt;math>\\|V^*x\\| = \\|x\\|&lt;/math> for all vectors ''x''. Using the definition of the matrix norm of ''A'' we find that\n:&lt;math> \\begin{align}\n\\|A\\| &amp;= \\max_{\\|x\\| = 1} \\|Ax\\| \\\\\n&amp;= \\max_{\\|x\\| = 1} \\|U(\\Sigma V^*x)\\| \\\\\n&amp;= \\max_{\\|x\\| = 1} \\|\\Sigma V^*x\\| \\\\\n&amp;= \\max_{\\|y\\| = 1} \\|\\Sigma y\\| \\\\\n&amp;= \\|\\Sigma\\|\n\\end{align} &lt;/math>\nwhere &lt;math>\\displaystyle y = V^* x&lt;/math> satisfies &lt;math>\\|y\\| = \\|V^* x\\| = \\|x\\| = 1&lt;/math>. In other words, the matrices &lt;math>\\displaystyle A&lt;/math> and &lt;math>\\Sigma&lt;/math> have the same norm. The norm of the diagonal matrix &lt;math>\\Sigma&lt;/math> is simply the largest absolute value of the its diagonal entries. Therefore &lt;math>\\displaystyle 2 = \\|\\Sigma\\| = \\|A\\|&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is a matrix with singular value decomposition <span class=\"math\">\\(A = U\\Sigma V^*\\)</span> where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nU &amp;= \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma &amp;= \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV &amp;= \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> What is the matrix norm <span class=\"math\">\\(\\|A\\|\\)</span>? Give a reason.</p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(c)} What is the matrix norm $\\|A\\|$? Give a reason.", 
+    "statement_raw": "Suppose that ''A'' is a matrix with singular value decomposition &lt;math>A = U\\Sigma V^*&lt;/math> where\n\n:&lt;math>\n\\begin{align}\nU = &amp; \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma = &amp; \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV = &amp; \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\n'''(c)''' What is the matrix norm &lt;math>\\|A\\|&lt;/math>? Give a reason.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)", 
+    "year": 2012
 }

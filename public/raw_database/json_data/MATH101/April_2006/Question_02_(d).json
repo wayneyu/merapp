@@ -1,14 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_02_(d)", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nExpress the volume of the solid obtained by rotating the bounded region\nthat lies between the curves $y = (x-2)^{2}$ and $y=x$ about the\nvertical line $x=5$. Do not evaluate this integral.", 
-    "year": 2006, 
-    "sols": [
-        "First, we draw a picture. Setting the line and parabola equal to each\nother, we see that the points of intersection are at\n\n\\begin{align*}\n(x-2)^{2} &= x \\\\\nx^{2} - 4x +4 &= x \\\\\nx^{2} - 5x +4 &= 0 \\\\\n(x-4)(x-1) &= 0\\end{align*}\n\nand so \\emph{x}=1 or \\emph{x}=4. This gives the following picture.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH1012006Q2d.jpg}\n\\end{description}\n\nThe white area is what we want to rotate. Let \\emph{x} be a point\nbetween 1 and 4. Then the radius of a shell is \\emph{r} = 5-\\emph{x}.\nThe height of a shell is $h = x-(x-2)^{2}$. Thus, when we rotate about\n\\emph{x}=5, the height will move a distance of $2\\pi r$ and hence, the\nvolume of revolution is\n\n\\begin{align*}\nV &= \\int_{1}^{4}2\\pi(5-x)(x-(x-2)^{2})\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(x-x^{2} + 4x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(-x^{2} + 5x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5(-x^{2} + 5x - 4) -x(-x^{2} + 5x - 4))\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(-5x^{2} + 25x - 20 +x^{3} - 5x^{2} + 4x)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(x^{3} -10x^{2} + 29x - 20) \\,dx \\\\\n&= 2\\pi(x^{4}/4 -10x^{3}/3 + 29x^{2}/2 - 20x)\\bigg|_{1}^{4} \\\\\n&= 2\\pi(4^{4}/4 -10(4)^{3}/3 + 29(4)^{2}/2 - 20(4) \\\\\n& \\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))\\\\\n&= 2\\pi(64 -640/3 + 29(8) - 80 - (1/4 -10/3 + 29/2 - 20))\\\\\n&= 45\\pi/2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))=45\\pi/2\\)</span></p>\n", 
+    "answer_latex": " $\\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))=45\\pi/2$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First, try drawing a picture, complete with intersection points.</p>\n", 
+        "<p>Then use the method of cylindrical shells.</p>\n"
+    ], 
+    "hints_latex": [
         "First, try drawing a picture, complete with intersection points.", 
         "Then use the method of cylindrical shells."
-    ]
+    ], 
+    "hints_raw": [
+        "First, try drawing a picture, complete with intersection points.\n", 
+        "Then use the method of cylindrical shells.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, we draw a picture. Setting the line and parabola equal to each other, we see that the points of intersection are at</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(x-2)^{2} &amp;= x \\\\\nx^{2} - 4x +4 &amp;= x \\\\\nx^{2} - 5x +4 &amp;= 0 \\\\\n(x-4)(x-1) &amp;= 0\\end{aligned}\\]</span></p>\n<p>and so <em>x</em>=1 or <em>x</em>=4. This gives the following picture.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH101/April_2006/MATH1012006Q2d.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>The white area is what we want to rotate. Let <em>x</em> be a point between 1 and 4. Then the radius of a shell is <em>r</em> = 5-<em>x</em>. The height of a shell is <span class=\"math\">\\(h = x-(x-2)^{2}\\)</span>. Thus, when we rotate about <em>x</em>=5, the height will move a distance of <span class=\"math\">\\(2\\pi r\\)</span> and hence, the volume of revolution is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\int_{1}^{4}2\\pi(5-x)(x-(x-2)^{2})\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5-x)(x-x^{2} + 4x - 4)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5-x)(-x^{2} + 5x - 4)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5(-x^{2} + 5x - 4) -x(-x^{2} + 5x - 4))\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(-5x^{2} + 25x - 20 +x^{3} - 5x^{2} + 4x)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(x^{3} -10x^{2} + 29x - 20) \\,dx \\\\\n&amp;= 2\\pi(x^{4}/4 -10x^{3}/3 + 29x^{2}/2 - 20x)\\bigg|_{1}^{4} \\\\\n&amp;= 2\\pi(4^{4}/4 -10(4)^{3}/3 + 29(4)^{2}/2 - 20(4) \\\\\n&amp; \\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))\\\\\n&amp;= 2\\pi(64 -640/3 + 29(8) - 80 - (1/4 -10/3 + 29/2 - 20))\\\\\n&amp;= 45\\pi/2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First, we draw a picture. Setting the line and parabola equal to each\nother, we see that the points of intersection are at\n\n\\begin{align*}\n(x-2)^{2} &= x \\\\\nx^{2} - 4x +4 &= x \\\\\nx^{2} - 5x +4 &= 0 \\\\\n(x-4)(x-1) &= 0\n\\end{align*}\n\nand so \\emph{x}=1 or \\emph{x}=4. This gives the following picture.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2006/MATH1012006Q2d.jpg}\n\\end{description}\n\nThe white area is what we want to rotate. Let \\emph{x} be a point\nbetween 1 and 4. Then the radius of a shell is \\emph{r} = 5-\\emph{x}.\nThe height of a shell is $h = x-(x-2)^{2}$. Thus, when we rotate about\n\\emph{x}=5, the height will move a distance of $2\\pi r$ and hence, the\nvolume of revolution is\n\n\\begin{align*}\nV &= \\int_{1}^{4}2\\pi(5-x)(x-(x-2)^{2})\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(x-x^{2} + 4x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5-x)(-x^{2} + 5x - 4)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(5(-x^{2} + 5x - 4) -x(-x^{2} + 5x - 4))\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(-5x^{2} + 25x - 20 +x^{3} - 5x^{2} + 4x)\\,dx \\\\\n&= \\int_{1}^{4}2\\pi(x^{3} -10x^{2} + 29x - 20) \\,dx \\\\\n&= 2\\pi(x^{4}/4 -10x^{3}/3 + 29x^{2}/2 - 20x)\\bigg|_{1}^{4} \\\\\n&= 2\\pi(4^{4}/4 -10(4)^{3}/3 + 29(4)^{2}/2 - 20(4) \\\\\n& \\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))\\\\\n&= 2\\pi(64 -640/3 + 29(8) - 80 - (1/4 -10/3 + 29/2 - 20))\\\\\n&= 45\\pi/2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "First, we draw a picture. Setting the line and parabola equal to each other, we see that the points of intersection are at\n\n:&lt;math>\n\\begin{align}\n(x-2)^{2} &amp;= x \\\\\nx^{2} - 4x +4 &amp;= x \\\\\nx^{2} - 5x +4 &amp;= 0 \\\\\n(x-4)(x-1) &amp;= 0\n\\end{align}\n&lt;/math>\n\nand so ''x''=1 or ''x''=4. This gives the following picture.\n\n:[[File:MATH1012006Q2d.jpg]]\n\nThe white area is what we want to rotate. Let ''x'' be a point between 1 and 4. Then the radius of a shell is ''r'' = 5-''x''. The height of a shell is &lt;math> h = x-(x-2)^{2} &lt;/math>. Thus, when we rotate about ''x''=5, the height will move a distance of &lt;math> 2\\pi r&lt;/math> and hence, the volume of revolution is\n\n:&lt;math>\n\\begin{align}\nV &amp;= \\int_{1}^{4}2\\pi(5-x)(x-(x-2)^{2})\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5-x)(x-x^{2} + 4x - 4)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5-x)(-x^{2} + 5x - 4)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(5(-x^{2} + 5x - 4) -x(-x^{2} + 5x - 4))\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(-5x^{2} + 25x - 20 +x^{3} - 5x^{2} + 4x)\\,dx \\\\\n&amp;= \\int_{1}^{4}2\\pi(x^{3} -10x^{2} + 29x - 20) \\,dx \\\\\n&amp;= 2\\pi(x^{4}/4 -10x^{3}/3 + 29x^{2}/2 - 20x)\\bigg|_{1}^{4} \\\\\n&amp;= 2\\pi(4^{4}/4 -10(4)^{3}/3 + 29(4)^{2}/2 - 20(4) \\\\\n&amp; \\quad - ((1)^{4}/4 -10(1)^{3}/3 + 29(1)^{2}/2 - 20(1)))\\\\\n&amp;= 2\\pi(64 -640/3 + 29(8) - 80 - (1/4 -10/3 + 29/2 - 20))\\\\\n&amp;= 45\\pi/2\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>Express the volume of the solid obtained by rotating the bounded region that lies between the curves <span class=\"math\">\\(y = (x-2)^{2}\\)</span> and <span class=\"math\">\\(y=x\\)</span> about the vertical line <span class=\"math\">\\(x=5\\)</span>. Do not evaluate this integral.</p>\n", 
+    "statement_latex": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nExpress the volume of the solid obtained by rotating the bounded region\nthat lies between the curves $y = (x-2)^{2}$ and $y=x$ about the\nvertical line $x=5$. Do not evaluate this integral.", 
+    "statement_raw": "&lt;b> Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\nExpress the volume of the solid obtained by rotating the bounded region that lies between the curves &lt;math> y = (x-2)^{2} &lt;/math> and &lt;math> y=x &lt;/math> about the vertical line &lt;math> x=5 &lt;/math>. Do not evaluate this integral.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_02_(d)", 
+    "year": 2006
 }

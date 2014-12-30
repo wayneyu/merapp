@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH200", 
-    "statement": "Let \\emph{C} be the intersection of the plane\n\n\\begin{align*}\\displaystyle{}x+y+z=2\\end{align*}\n\nand the sphere\n\n\\begin{align*}\\displaystyle{}x^2+y^2+z^2=2.\\end{align*}\n\nWhat are the coordinates of the lowest point on \\emph{C}?", 
-    "year": 2012, 
-    "sols": [
-        "From our answer in\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)}{part\n(a)}, we found that there were two critical points of the objective\nfunction,\n\n\\begin{align*}\\displaystyle \\Lambda(x,y,z) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2),\\end{align*}\non \\emph{C}. Those critical points corresponded to the critical points\nof the function \\emph{$f$(x,y,z) = z} restricted to the curve \\emph{C}.\nThe values of \\emph{z} corresponding to those critical points were\n\\emph{z = 0} and \\emph{z = 4/3}. In contrast to\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)}{part\n(a)} where we looked for the larger of the two, we are now interested in\nthe smaller value \\emph{z = 0}.\n\nTo find the corresponding \\emph{x} and \\emph{y} value, recall the\ncondition \\emph{x = y} from\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)}{part\n(a)}. Plugging this into the equation for the line, we obtain\n\n\\begin{align*}x + x + 0 = 2 \\quad \\rightarrow \\quad x = y = 1\\end{align*}\n\nTherefore, the lowest point on \\emph{C} is (1,1,0)."
+    "answer_html": "<p>Therefore, the lowest point on <em>C</em> is (1,1,0).</p>\n", 
+    "answer_latex": "Therefore, the lowest point on \\emph{C} is (1,1,0).", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Consider that ``height'' in this case is referring the value of the\n\\emph{z} coordinate. In\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)}{part\n(a)}, we were trying to find the maximum value of \\emph{z} (i.e. the\nmaximum height) on \\emph{C}. How can we use our answer from\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)}{part\n(a)} to answer this question?"
-    ]
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Consider that &#8220;height&#8221; in this case is referring the value of the <em>z</em> coordinate. In <span>part (a)</span>, we were trying to find the maximum value of <em>z</em> (i.e. the maximum height) on <em>C</em>. How can we use our answer from <span>part (a)</span> to answer this question?</p>\n"
+    ], 
+    "hints_latex": [
+        "Consider that ``height'' in this case is referring the value of the\n\\emph{z} coordinate. In\n{part\n(a)}, we were trying to find the maximum value of \\emph{z} (i.e. the\nmaximum height) on \\emph{C}. How can we use our answer from\n{part\n(a)} to answer this question?"
+    ], 
+    "hints_raw": [
+        "Consider that \"height\" in this case is referring the value of the ''z'' coordinate. In [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)|part (a)]], we were trying to find the maximum value of ''z'' (i.e. the maximum height) on ''C''. How can we use our answer from [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)|part (a)]] to answer this question?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (b)", 
+    "rating": 42, 
+    "sols_html": [
+        "<p>From our answer in <span>part (a)</span>, we found that there were two critical points of the objective function,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\Lambda(x,y,z) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2),\\end{aligned}\\]</span></p>\n<p>on <em>C</em>. Those critical points corresponded to the critical points of the function <em><span class=\"math\">\\(f\\)</span>(x,y,z) = z</em> restricted to the curve <em>C</em>. The values of <em>z</em> corresponding to those critical points were <em>z = 0</em> and <em>z = 4/3</em>. In contrast to <span>part (a)</span> where we looked for the larger of the two, we are now interested in the smaller value <em>z = 0</em>.</p>\n<p>To find the corresponding <em>x</em> and <em>y</em> value, recall the condition <em>x = y</em> from <span>part (a)</span>. Plugging this into the equation for the line, we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx + x + 0 = 2 \\quad \\rightarrow \\quad x = y = 1\\end{aligned}\\]</span></p>\n<p>Therefore, the lowest point on <em>C</em> is (1,1,0).</p>\n"
+    ], 
+    "sols_latex": [
+        "From our answer in\n{part\n(a)}, we found that there were two critical points of the objective\nfunction,\n\n\\begin{align*}\n\\displaystyle \\Lambda(x,y,z) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2),\n\\end{align*}\non \\emph{C}. Those critical points corresponded to the critical points\nof the function \\emph{$f$(x,y,z) = z} restricted to the curve \\emph{C}.\nThe values of \\emph{z} corresponding to those critical points were\n\\emph{z = 0} and \\emph{z = 4/3}. In contrast to\n{part\n(a)} where we looked for the larger of the two, we are now interested in\nthe smaller value \\emph{z = 0}.\n\nTo find the corresponding \\emph{x} and \\emph{y} value, recall the\ncondition \\emph{x = y} from\n{part\n(a)}. Plugging this into the equation for the line, we obtain\n\n\\begin{align*}\nx + x + 0 = 2 \\quad \\rightarrow \\quad x = y = 1\n\\end{align*}\n\nTherefore, the lowest point on \\emph{C} is (1,1,0)."
+    ], 
+    "sols_raw": [
+        "From our answer in [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)|part (a)]], we found that there were two critical points of the objective function,\n:&lt;math>\n\\displaystyle \\Lambda(x,y,z) = f(x,y,z) + \\mu(x + y + z - 2) + \\nu(x^{2} + y^{2} + z^{2} - 2),\n&lt;/math>\non ''C''. Those critical points corresponded to the critical points of the function ''&amp;fnof;(x,y,z) = z'' restricted to the curve ''C''. The values of ''z'' corresponding to those critical points were ''z = 0'' and ''z = 4/3''. In contrast to [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)|part (a)]] where we looked for the larger of the two, we are now interested in the smaller value ''z = 0''.\n\nTo find the corresponding ''x'' and ''y'' value, recall the condition ''x = y'' from [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(a)|part (a)]]. Plugging this into the equation for the line, we obtain\n\n:&lt;math>\nx + x + 0 = 2 \\quad \\rightarrow \\quad x = y = 1\n&lt;/math>\n\n&lt;font style=\"color:blue;\">Therefore, the lowest point on ''C'' is (1,1,0).&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let <em>C</em> be the intersection of the plane</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x+y+z=2\\end{aligned}\\]</span></p>\n<p>and the sphere</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x^2+y^2+z^2=2.\\end{aligned}\\]</span></p>\n<p>What are the coordinates of the lowest point on <em>C</em>?</p>\n", 
+    "statement_latex": "Let \\emph{C} be the intersection of the plane\n\n\\begin{align*}\n\\displaystyle{}x+y+z=2\n\\end{align*}\n\nand the sphere\n\n\\begin{align*}\n\\displaystyle{}x^2+y^2+z^2=2.\n\\end{align*}\n\nWhat are the coordinates of the lowest point on \\emph{C}?", 
+    "statement_raw": "Let ''C'' be the intersection of the plane\n\n:&lt;math>\n\\displaystyle{}x+y+z=2\n&lt;/math>\n\nand the sphere\n\n:&lt;math>\n\\displaystyle{}x^2+y^2+z^2=2.\n&lt;/math>\n\nWhat are the coordinates of the lowest point on ''C''?\n", 
+    "term": "April", 
+    "topics": [
+        "Lagrange_multipliers"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_05_(b)", 
+    "year": 2012
 }

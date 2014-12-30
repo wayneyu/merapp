@@ -1,9 +1,43 @@
 {
-    "term": "April", 
-    "question": "Question_06", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ErinMoulding"
+    ], 
     "course": "MATH105", 
-    "statement": "Find a function $\\displaystyle f(x)$ whose graph goes through the point\n$\\displaystyle (0,3)$ and whose slope at any point\n$\\displaystyle (x,f(x))$ is given by\n\n$\\displaystyle \\lim_{n \\to \\infty} \\left(\\left(1 + \\left(1 + 2\\frac{x}{n} \\right)^3  + \\left(1 + 2\\frac{2x}{n} \\right)^3  + \\left(1 + 2\\frac{3x}{n} \\right)^3 + ... +  + \\left(1 + 2\\frac{(n-1)x}{n} \\right)^3 \\right)\\frac{x}{n} \\right)$", 
-    "year": 2009, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Find a function <span class=\"math\">\\(\\displaystyle f(x)\\)</span> whose graph goes through the point <span class=\"math\">\\(\\displaystyle (0,3)\\)</span> and whose slope at any point <span class=\"math\">\\(\\displaystyle (x,f(x))\\)</span> is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\lim_{n \\to \\infty} \\left(\\left(1 + \\left(1 + 2\\frac{x}{n} \\right)^3  + \\left(1 + 2\\frac{2x}{n} \\right)^3  + \\left(1 + 2\\frac{3x}{n} \\right)^3 + ... +  + \\left(1 + 2\\frac{(n-1)x}{n} \\right)^3 \\right)\\frac{x}{n} \\right)\\)</span></p>\n", 
+    "statement_latex": "Find a function $\\displaystyle f(x)$ whose graph goes through the point\n$\\displaystyle (0,3)$ and whose slope at any point\n$\\displaystyle (x,f(x))$ is given by\n\n$\\displaystyle \\lim_{n \\to \\infty} \\left(\\left(1 + \\left(1 + 2\\frac{x}{n} \\right)^3  + \\left(1 + 2\\frac{2x}{n} \\right)^3  + \\left(1 + 2\\frac{3x}{n} \\right)^3 + ... +  + \\left(1 + 2\\frac{(n-1)x}{n} \\right)^3 \\right)\\frac{x}{n} \\right)$", 
+    "statement_raw": "Find a function &lt;math> \\displaystyle f(x) &lt;/math> whose graph goes through the point &lt;math> \\displaystyle (0,3) &lt;/math> and whose slope at any point  &lt;math> \\displaystyle (x,f(x)) &lt;/math> is given by\n\n&lt;math> \\displaystyle \\lim_{n \\to \\infty} \\left(\\left(1 + \\left(1 + 2\\frac{x}{n} \\right)^3  + \\left(1 + 2\\frac{2x}{n} \\right)^3  + \\left(1 + 2\\frac{3x}{n} \\right)^3 + ... +  + \\left(1 + 2\\frac{(n-1)x}{n} \\right)^3 \\right)\\frac{x}{n} \\right) &lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2009/Question_06", 
+    "year": 2009
 }

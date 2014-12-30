@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_B_03_(a)", 
+    "answer_html": "<p>Hence the general solution to is <span class=\"math\">\\(\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}\\)</span>, where a is any real number.</p>\n", 
+    "answer_latex": "Hence the general solution to is\n$\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}$, where a is any real number.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH152", 
-    "statement": "Let \\emph{A} be a certain $2\\times 3$ matrix. Suppose that using\nelementary row operations, the matrix \\emph{A} can be transformed into\nthe matrix\n\n\\begin{align*}U = \\begin{bmatrix} \n1 & 0 & -7 \\\\\n0 & 1 & 4\n\\end{bmatrix}\\end{align*}\n\nFind all solutions, if any, of the system $Ax = 0$", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The matrix <em>U</em> describes a system of two equations and three unknowns. Hence the homogeneous system has at least one free parameter, and hence infinitely many solutions.</p>\n"
+    ], 
+    "hints_latex": [
+        "The matrix \\emph{U} describes a system of two equations and three\nunknowns. Hence the homogeneous system has at least one free parameter,\nand hence infinitely many solutions."
+    ], 
+    "hints_raw": [
+        "The matrix ''U'' describes a system of two equations and three unknowns. Hence the homogeneous system has at least one free parameter, and hence infinitely many solutions.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "B 03 (a)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>Elementary row operations don&#8217;t change the solution of a homogeneous equation, hence the solutions of <em>Ux = 0</em> also solve <em>Ax = 0</em>.</p>\n<p>From the first row on matrix U, we have <span class=\"math\">\\(\\mathbf{x_{1}} = 7\\mathbf{x_{3}}\\)</span>.</p>\n<p>From the second row on matrix U, we have <span class=\"math\">\\(\\mathbf{x_{2}} = -4\\mathbf{x_{3}}\\)</span>.</p>\n<p>Hence the general solution to is <span class=\"math\">\\(\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}\\)</span>, where a is any real number.</p>\n"
+    ], 
+    "sols_latex": [
         "Elementary row operations don't change the solution of a homogeneous\nequation, hence the solutions of \\emph{Ux = 0} also solve \\emph{Ax = 0}.\n\nFrom the first row on matrix U, we have\n$\\mathbf{x_{1}} = 7\\mathbf{x_{3}}$.\n\nFrom the second row on matrix U, we have\n$\\mathbf{x_{2}} = -4\\mathbf{x_{3}}$.\n\nHence the general solution to is\n$\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}$, where a is any real number."
     ], 
-    "hints": [
-        "The matrix \\emph{U} describes a system of two equations and three\nunknowns. Hence the homogeneous system has at least one free parameter,\nand hence infinitely many solutions."
-    ]
+    "sols_raw": [
+        "Elementary row operations don't change the solution of a homogeneous equation, hence the solutions of ''Ux = 0'' also solve ''Ax = 0''.\n\nFrom the first row on matrix U, we have &lt;math>\\mathbf{x_{1}} = 7\\mathbf{x_{3}}&lt;/math>.\n\nFrom the second row on matrix U, we have &lt;math>\\mathbf{x_{2}} = -4\\mathbf{x_{3}}&lt;/math>.\n\nHence the general solution to is\n&lt;math>\\begin{bmatrix}\\mathbf{x_{1}}\\\\ \\mathbf{x_{2}}\\\\ \\mathbf{x_{3}}\\end{bmatrix} = a\\begin{bmatrix}7\\\\\n-4\\\\1\\end{bmatrix}&lt;/math>, where a is any real number.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <em>A</em> be a certain <span class=\"math\">\\(2\\times 3\\)</span> matrix. Suppose that using elementary row operations, the matrix <em>A</em> can be transformed into the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nU = \\begin{bmatrix} \n1 &amp; 0 &amp; -7 \\\\\n0 &amp; 1 &amp; 4\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Find all solutions, if any, of the system <span class=\"math\">\\(Ax = 0\\)</span></p>\n", 
+    "statement_latex": "Let \\emph{A} be a certain $2\\times 3$ matrix. Suppose that using\nelementary row operations, the matrix \\emph{A} can be transformed into\nthe matrix\n\n\\begin{align*}\nU = \\begin{bmatrix} \n1 & 0 & -7 \\\\\n0 & 1 & 4\n\\end{bmatrix}\n\\end{align*}\n\nFind all solutions, if any, of the system $Ax = 0$", 
+    "statement_raw": "Let ''A'' be a certain &lt;math>2\\times 3 &lt;/math> matrix. Suppose that using elementary row operations, the matrix ''A'' can be transformed into the matrix \n\n:&lt;math>\nU = \\begin{bmatrix} \n1 &amp; 0 &amp; -7 \\\\\n0 &amp; 1 &amp; 4\n\\end{bmatrix}\n&lt;/math>\n\nFind all solutions, if any, of the system &lt;math> Ax = 0 &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "System_of_linear_equations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_03_(a)", 
+    "year": 2013
 }

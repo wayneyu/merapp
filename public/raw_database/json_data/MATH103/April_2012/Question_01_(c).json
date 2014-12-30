@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH103", 
-    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\begin{align*}\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} \\,dx\\end{align*} converge?\n\nA. Converge\n\nB. Diverge.", 
-    "year": 2012, 
-    "sols": [
-        "Since $0 \\leq 1+\\sin x \\leq 2$ for all \\emph{x}, we use the integral\ncomparison test to see that\n\n\\begin{align*}\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} dx \\leq \\int_1^{\\infty} \\frac2{x^2}\\,dx\\end{align*}\n\nThe latter integral converges, by the integral \\emph{p} test (with\n\\emph{p} = 2). Hence, again by the integral comparison test, the former\nintegral also \\textbf{converges}."
+    "answer_html": "<p>The latter integral converges, by the integral <em>p</em> test (with <em>p</em> = 2).Hence, again by the integral comparison test, the former integral also <strong>converges</strong>.</p>\n", 
+    "answer_latex": "The latter integral converges, by the integral \\emph{p} test (with\n\\emph{p} = 2).Hence, again by the integral comparison test, the former\nintegral also \\textbf{converges}.", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First use the integral comparison test.</p>\n<p>Then use the integral <em>p</em> test.</p>\n"
+    ], 
+    "hints_latex": [
         "First use the integral comparison test.\n\nThen use the integral \\emph{p} test."
-    ]
+    ], 
+    "hints_raw": [
+        "First use the integral comparison test.\n\nThen use the integral ''p'' test.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (c)", 
+    "rating": 54, 
+    "sols_html": [
+        "<p>Since <span class=\"math\">\\(0 \\leq 1+\\sin x \\leq 2\\)</span> for all <em>x</em>, we use the integral comparison test to see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} dx \\leq \\int_1^{\\infty} \\frac2{x^2}\\,dx\\end{aligned}\\]</span></p>\n<p>The latter integral converges, by the integral <em>p</em> test (with <em>p</em> = 2). Hence, again by the integral comparison test, the former integral also <strong>converges</strong>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Since $0 \\leq 1+\\sin x \\leq 2$ for all \\emph{x}, we use the integral\ncomparison test to see that\n\n\\begin{align*}\n\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} dx \\leq \\int_1^{\\infty} \\frac2{x^2}\\,dx\n\\end{align*}\n\nThe latter integral converges, by the integral \\emph{p} test (with\n\\emph{p} = 2). Hence, again by the integral comparison test, the former\nintegral also \\textbf{converges}."
+    ], 
+    "sols_raw": [
+        "Since &lt;math>0 \\leq 1+\\sin x \\leq 2&lt;/math> for all ''x'', we use the integral comparison test to see that\n\n:&lt;math> \\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} dx \\leq \\int_1^{\\infty} \\frac2{x^2}\\,dx &lt;/math>\n\nThe latter integral converges, by the integral ''p'' test (with ''p'' = 2). Hence, again by the integral comparison test, the former integral also '''converges'''.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).</p>\n<p>Does the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} \\,dx\\end{aligned}\\]</span></p>\n<p>converge?</p>\n<p>A. Converge</p>\n<p>B. Diverge.</p>\n", 
+    "statement_latex": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\begin{align*}\n\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} \\,dx\n\\end{align*} converge?\n\nA. Converge\n\nB. Diverge.", 
+    "statement_raw": "Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).\n\nDoes the integral\n:&lt;math>\n\\int_1^{\\infty} \\frac{1+\\sin x} {x^{2}} \\,dx\n&lt;/math>\nconverge?\n\nA. Converge\n\nB. Diverge.\n", 
+    "term": "April", 
+    "topics": [
+        "Direct_comparison_test", 
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_01_(c)", 
+    "year": 2012
 }

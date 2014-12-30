@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_06_(a)", 
-    "course": "MATH307", 
-    "statement": "Let \\emph{u} be a unit vector and \\emph{Q = I - 2uu\\textsuperscript{T}}.\nShow:\n\n\\textbf{(a)} The matrix \\emph{Q} is symmetric and orthogonal.", 
-    "year": 2008, 
-    "sols": [
-        "First, we can show that the matrix \\emph{Q} is symmetric by showing that\n\\emph{Q=Q\\textsuperscript{T}}:\n\n\\begin{align*}\\displaystyle Q^T=(I-2uu^T)^T=I^T-(2uu^T)^T=I-2(u^T)^Tu^T=I-2uu^T=Q\\end{align*}\n\nNext, we can show the matrix \\emph{Q} is orthogonal by showing that\n\\emph{Q\\textsuperscript{T}Q=I}. Since we know that \\emph{Q} is\nsymmetric, \\emph{Q\\textsuperscript{T}Q=QQ}.\n\n\\begin{align*}\nQ^TQ &= (I-2uu^T)(I-2uu^T) = I-4uu^T+4(uu^T)(uu^T)\\\\\n&= I-4uu^T+4u(u^Tu)u^T\\end{align*}\n\nNotice that \\emph{u\\textsuperscript{T}u} is just a number. In fact,\n$u^Tu=\\|u\\|^2$ and since $u$ is unit vector $\\|u\\|^2=1$. Thus, indeed\n\\emph{Q} is orthonogal:\n\n\\begin{align*}\\displaystyle Q^TQ=I-4uu^T+4u(1)u^T=I-4uu^T+4uu^T=I.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle Q^TQ=I.\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle Q^TQ=I.$ ", 
+    "contributors": [
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To show that <em>Q</em> is symmetric, confirm that <em>Q<sup>T</sup> = Q</em>. Remember that <em>(ab)<sup>T</sup> = b<sup>T</sup>a<sup>T</sup></em>.</p>\n<p>To show that <em>Q</em> is orthogonal, confirm that <em>Q<sup>T</sup>Q = I</em>. Use that <em>u<sup>T</sup>u = u<sup>2</sup></em> and that <em>u</em> is a unit vector.</p>\n"
+    ], 
+    "hints_latex": [
         "To show that \\emph{Q} is symmetric, confirm that\n\\emph{Q\\textsuperscript{T} = Q}. Remember that\n\\emph{(ab)\\textsuperscript{T} =\nb\\textsuperscript{T}a\\textsuperscript{T}}.\n\nTo show that \\emph{Q} is orthogonal, confirm that\n\\emph{Q\\textsuperscript{T}Q = I}. Use that \\emph{u\\textsuperscript{T}u =\n\\textbar{}\\textbar{}u\\textbar{}\\textbar{}\\textsuperscript{2}} and that\n\\emph{u} is a unit vector."
-    ]
+    ], 
+    "hints_raw": [
+        "To show that ''Q'' is symmetric, confirm that ''Q&lt;sup>T&lt;/sup> = Q''. Remember that ''(ab)&lt;sup>T&lt;/sup> = b&lt;sup>T&lt;/sup>a&lt;sup>T&lt;/sup>''.\n\nTo show that ''Q'' is orthogonal, confirm that ''Q&lt;sup>T&lt;/sup>Q = I''. Use that ''u&lt;sup>T&lt;/sup>u = ||u||&lt;sup>2&lt;/sup>'' and that ''u'' is a unit vector.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, we can show that the matrix <em>Q</em> is symmetric by showing that <em>Q=Q<sup>T</sup></em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle Q^T=(I-2uu^T)^T=I^T-(2uu^T)^T=I-2(u^T)^Tu^T=I-2uu^T=Q\\end{aligned}\\]</span></p>\n<p>Next, we can show the matrix <em>Q</em> is orthogonal by showing that <em>Q<sup>T</sup>Q=I</em>. Since we know that <em>Q</em> is symmetric, <em>Q<sup>T</sup>Q=QQ</em>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nQ^TQ &amp;= (I-2uu^T)(I-2uu^T) = I-4uu^T+4(uu^T)(uu^T)\\\\\n&amp;= I-4uu^T+4u(u^Tu)u^T\\end{aligned}\\]</span></p>\n<p>Notice that <em>u<sup>T</sup>u</em> is just a number. In fact, <span class=\"math\">\\(u^Tu=\\|u\\|^2\\)</span> and since <span class=\"math\">\\(u\\)</span> is unit vector <span class=\"math\">\\(\\|u\\|^2=1\\)</span>. Thus, indeed <em>Q</em> is orthonogal:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle Q^TQ=I-4uu^T+4u(1)u^T=I-4uu^T+4uu^T=I.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First, we can show that the matrix \\emph{Q} is symmetric by showing that\n\\emph{Q=Q\\textsuperscript{T}}:\n\n\\begin{align*}\n\\displaystyle Q^T=(I-2uu^T)^T=I^T-(2uu^T)^T=I-2(u^T)^Tu^T=I-2uu^T=Q\n\\end{align*}\n\nNext, we can show the matrix \\emph{Q} is orthogonal by showing that\n\\emph{Q\\textsuperscript{T}Q=I}. Since we know that \\emph{Q} is\nsymmetric, \\emph{Q\\textsuperscript{T}Q=QQ}.\n\n\\begin{align*}\nQ^TQ &= (I-2uu^T)(I-2uu^T) = I-4uu^T+4(uu^T)(uu^T)\\\\\n&= I-4uu^T+4u(u^Tu)u^T\n\\end{align*}\n\nNotice that \\emph{u\\textsuperscript{T}u} is just a number. In fact,\n$u^Tu=\\|u\\|^2$ and since $u$ is unit vector $\\|u\\|^2=1$. Thus, indeed\n\\emph{Q} is orthonogal:\n\n\\begin{align*}\n\\displaystyle Q^TQ=I-4uu^T+4u(1)u^T=I-4uu^T+4uu^T=I.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "First, we can show that the matrix ''Q'' is symmetric by showing that ''Q=Q&lt;sup>T&lt;/sup>'':\n\n:&lt;math> \\displaystyle Q^T=(I-2uu^T)^T=I^T-(2uu^T)^T=I-2(u^T)^Tu^T=I-2uu^T=Q&lt;/math>\n\nNext, we can show the matrix ''Q'' is orthogonal by showing that ''Q&lt;sup>T&lt;/sup>Q=I''. Since we know that ''Q'' is symmetric, ''Q&lt;sup>T&lt;/sup>Q=QQ''.\n\n:&lt;math>\\begin{align}\nQ^TQ &amp;= (I-2uu^T)(I-2uu^T) = I-4uu^T+4(uu^T)(uu^T)\\\\\n&amp;= I-4uu^T+4u(u^Tu)u^T\n\\end{align}&lt;/math>\n\nNotice that ''u&lt;sup>T&lt;/sup>u'' is just a number. In fact, &lt;math>u^Tu=\\|u\\|^2&lt;/math> and since &lt;math>u&lt;/math> is unit vector &lt;math>\\|u\\|^2=1&lt;/math>. Thus, indeed ''Q'' is orthonogal: \n\n:&lt;math> \\displaystyle Q^TQ=I-4uu^T+4u(1)u^T=I-4uu^T+4uu^T=I.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <em>u</em> be a unit vector and <em>Q = I - 2uu<sup>T</sup></em>. Show:</p>\n<p><strong>(a)</strong> The matrix <em>Q</em> is symmetric and orthogonal.</p>\n", 
+    "statement_latex": "Let \\emph{u} be a unit vector and \\emph{Q = I - 2uu\\textsuperscript{T}}.\nShow:\n\n\\textbf{(a)} The matrix \\emph{Q} is symmetric and orthogonal.", 
+    "statement_raw": "Let ''u'' be a unit vector and ''Q = I - 2uu&lt;sup>T&lt;/sup>''. Show:\n\n'''(a)''' The matrix ''Q'' is symmetric and orthogonal.\n", 
+    "term": "December", 
+    "topics": [
+        "Matrix_operations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_06_(a)", 
+    "year": 2008
 }

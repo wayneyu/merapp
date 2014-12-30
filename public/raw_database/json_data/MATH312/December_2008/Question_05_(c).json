@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p>This is computable since Alice has both <em>C</em> and <em>d</em> available to her.This completes the proof.</p>\n", 
+    "answer_latex": "This is computable since Alice has both \\emph{C} and \\emph{d} available\nto her.This completes the proof.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(c)} Explain what Alice has to do next to obtain \\emph{P} back.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall up to this point that Bob computed <span class=\"math\">\\(\\displaystyle C \\equiv P^{e} \\mod{n}\\)</span> and you&#8217;ve computed a <em>d</em> such that <span class=\"math\">\\(\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}\\)</span>. How can you use this information together?</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall up to this point that Bob computed\n$\\displaystyle C \\equiv P^{e} \\mod{n}$ and you've computed a \\emph{d}\nsuch that $\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}$. How can you use\nthis information together?"
+    ], 
+    "hints_raw": [
+        "Recall up to this point that Bob computed &lt;math> \\displaystyle C \\equiv P^{e} \\mod{n}&lt;/math> and you've computed a ''d'' such that &lt;math> \\displaystyle ed \\equiv 1 \\mod{\\phi(n)}&lt;/math>. How can you use this information together?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Recall up to this point that Bob computed <span class=\"math\">\\(\\displaystyle C \\equiv P^{e} \\mod{n}\\)</span> and you&#8217;ve computed a <em>d</em> such that <span class=\"math\">\\(\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}\\)</span> so in fact, we have <span class=\"math\">\\(\\displaystyle ed = 1 + \\phi(n)s\\)</span> for some integer <em>s</em>. Using Euler&#8217;s Theorem, we can compute <em>P</em> back if we compute</p>\n<p><span class=\"math\">\\(\\displaystyle C^{d} \\equiv (P^{e})^{d} \\equiv P^{ed} \\equiv P^{1 + \\phi(n)s} \\equiv P(P^{\\phi(n)})^{s} \\equiv P \\mod{n}\\)</span>.</p>\n<p>This is computable since Alice has both <em>C</em> and <em>d</em> available to her. This completes the proof.</p>\n"
+    ], 
+    "sols_latex": [
         "Recall up to this point that Bob computed\n$\\displaystyle C \\equiv P^{e} \\mod{n}$ and you've computed a \\emph{d}\nsuch that $\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}$ so in fact, we have\n$\\displaystyle ed = 1 + \\phi(n)s$ for some integer \\emph{s}. Using\nEuler's Theorem, we can compute \\emph{P} back if we compute\n\n$\\displaystyle C^{d} \\equiv (P^{e})^{d} \\equiv P^{ed} \\equiv P^{1 + \\phi(n)s} \\equiv P(P^{\\phi(n)})^{s} \\equiv P \\mod{n}$.\n\nThis is computable since Alice has both \\emph{C} and \\emph{d} available\nto her. This completes the proof."
     ], 
-    "hints": [
-        "Recall up to this point that Bob computed\n$\\displaystyle C \\equiv P^{e} \\mod{n}$ and you've computed a \\emph{d}\nsuch that $\\displaystyle ed \\equiv 1 \\mod{\\phi(n)}$. How can you use\nthis information together?"
-    ]
+    "sols_raw": [
+        "Recall up to this point that Bob computed &lt;math> \\displaystyle C \\equiv P^{e} \\mod{n}&lt;/math> and you've computed a ''d'' such that &lt;math> \\displaystyle ed \\equiv 1 \\mod{\\phi(n)}&lt;/math> so in fact, we have &lt;math> \\displaystyle ed = 1 + \\phi(n)s&lt;/math> for some integer ''s''. Using Euler's Theorem, we can compute ''P'' back if we compute\n\n&lt;math> \\displaystyle C^{d} \\equiv (P^{e})^{d} \\equiv P^{ed} \\equiv P^{1 + \\phi(n)s} \\equiv P(P^{\\phi(n)})^{s} \\equiv P \\mod{n}&lt;/math>.\n\nThis is computable since Alice has both ''C'' and ''d'' available to her. This completes the proof.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Alice wants Bob to send her a secret integer <em>P</em> between 0 and 1250 using RSA encryption with key <span class=\"math\">\\(\\displaystyle (e, n) = (1189, 1271)\\)</span> (so the exponent is 1189 and the modulus is 1271, it is way too small to be really secure, but basic RSA encryption and decryption methods still work of course).</p>\n<p><strong>(c)</strong> Explain what Alice has to do next to obtain <em>P</em> back.</p>\n", 
+    "statement_latex": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(c)} Explain what Alice has to do next to obtain \\emph{P} back.", 
+    "statement_raw": "Alice wants Bob to send her a secret integer ''P'' between 0 and 1250 using RSA encryption with key &lt;math> \\displaystyle (e, n) = (1189, 1271)&lt;/math> (so the exponent is 1189 and the modulus is 1271, it is way too small to be really secure, but basic RSA encryption and decryption methods still work of course).\n\n'''(c)''' Explain what Alice has to do next to obtain ''P'' back.\n", 
+    "term": "December", 
+    "topics": [
+        "RSA"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_05_(c)", 
+    "year": 2008
 }

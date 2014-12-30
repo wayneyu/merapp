@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_C_03_(b)", 
-    "course": "MATH102", 
-    "statement": "This question is about approximating the value of $b = \\sqrt{48}$.\n\n\\textbf{(b)} Use a linear approximation to estimate \\emph{b}. Is your\nestimate larger or smaller than the actual value? Justify your claim.", 
-    "year": 2012, 
-    "sols": [
-        "Using the linear approximation formula\n\n$f(x) \\approx f'(a)(x - a) + f(a)$\n\nwhere our function is $f(x) = \\sqrt{x}$ and our value of \\emph{a} will\nbe a number near 48. Choosing \\emph{a = 49} is sensible because you can\ntake the square root easily. We can either calculate\n$\\displaystyle f'(x)$ again or note that we already found it in\n\\href{Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_2}{question\nC2} as $f'(x) = 1/(2\\sqrt{x})$. Plugging all this in gives:\n\n$f(x) \\approx \\frac{1}{2\\sqrt{49}}(x - 49) + \\sqrt{49} = \\frac1{14}(x - 49) + 7$\n\nTo approximate $b = \\sqrt{48}$, we say\n\n$\\sqrt{48} = f(48) \\approx  \\frac1{14}(48 - 49) + 7 = \\frac{-1}{14} + 7 = 6\\frac{13}{14}$\n\nWhether the linear approximation is an over or under estimate depends on\nthe concavity of the function - if $f(x)$ is concave up, the tangent\nline approximation lies below the graph and is an under-estimate; the\nopposite is true if $f(x)$ is concave down. Because $f(x) = \\sqrt{x}$ is\nconcave down, our estimate in this problem is an over-estimate."
+    "answer_html": "<p>Because <span class=\"math\">\\(f(x) = \\sqrt{x}\\)</span> is concave down, our estimate in this problem is an over-estimate.</p>\n", 
+    "answer_latex": "Because $f(x) = \\sqrt{x}$ is\nconcave down, our estimate in this problem is an over-estimate.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "The linear approximation formula is $f(x) \\approx f'(a)(x - a) + f(a)$,\nwhere $a$ is a number near the number you're approximating. Based on\n\\href{Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_3_(a)}{part\n(a)} of this question, what would be a good choice for \\emph{a}?"
-    ]
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The linear approximation formula is <span class=\"math\">\\(f(x) \\approx f&#39;(a)(x - a) + f(a)\\)</span>, where <span class=\"math\">\\(a\\)</span> is a number near the number you&#8217;re approximating. Based on <span>part (a)</span> of this question, what would be a good choice for <em>a</em>?</p>\n"
+    ], 
+    "hints_latex": [
+        "The linear approximation formula is $f(x) \\approx f'(a)(x - a) + f(a)$,\nwhere $a$ is a number near the number you're approximating. Based on\n{part\n(a)} of this question, what would be a good choice for \\emph{a}?"
+    ], 
+    "hints_raw": [
+        "The linear approximation formula is &lt;math>f(x) \\approx f'(a)(x - a) + f(a)&lt;/math>, where &lt;math>a&lt;/math> is a number near the number you're approximating.  Based on [[Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_3_(a)|part (a)]] of this question, what would be a good choice for ''a''?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "C 03 (b)", 
+    "rating": 61, 
+    "sols_html": [
+        "<p>Using the linear approximation formula</p>\n<p><span class=\"math\">\\(f(x) \\approx f&#39;(a)(x - a) + f(a)\\)</span></p>\n<p>where our function is <span class=\"math\">\\(f(x) = \\sqrt{x}\\)</span> and our value of <em>a</em> will be a number near 48. Choosing <em>a = 49</em> is sensible because you can take the square root easily. We can either calculate <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> again or note that we already found it in <span>question C2</span> as <span class=\"math\">\\(f&#39;(x) = 1/(2\\sqrt{x})\\)</span>. Plugging all this in gives:</p>\n<p><span class=\"math\">\\(f(x) \\approx \\frac{1}{2\\sqrt{49}}(x - 49) + \\sqrt{49} = \\frac1{14}(x - 49) + 7\\)</span></p>\n<p>To approximate <span class=\"math\">\\(b = \\sqrt{48}\\)</span>, we say</p>\n<p><span class=\"math\">\\(\\sqrt{48} = f(48) \\approx  \\frac1{14}(48 - 49) + 7 = \\frac{-1}{14} + 7 = 6\\frac{13}{14}\\)</span></p>\n<p>Whether the linear approximation is an over or under estimate depends on the concavity of the function - if <span class=\"math\">\\(f(x)\\)</span> is concave up, the tangent line approximation lies below the graph and is an under-estimate; the opposite is true if <span class=\"math\">\\(f(x)\\)</span> is concave down. Because <span class=\"math\">\\(f(x) = \\sqrt{x}\\)</span> is concave down, our estimate in this problem is an over-estimate.</p>\n"
+    ], 
+    "sols_latex": [
+        "Using the linear approximation formula\n\n$f(x) \\approx f'(a)(x - a) + f(a)$\n\nwhere our function is $f(x) = \\sqrt{x}$ and our value of \\emph{a} will\nbe a number near 48. Choosing \\emph{a = 49} is sensible because you can\ntake the square root easily. We can either calculate\n$\\displaystyle f'(x)$ again or note that we already found it in\n{question\nC2} as $f'(x) = 1/(2\\sqrt{x})$. Plugging all this in gives:\n\n$f(x) \\approx \\frac{1}{2\\sqrt{49}}(x - 49) + \\sqrt{49} = \\frac1{14}(x - 49) + 7$\n\nTo approximate $b = \\sqrt{48}$, we say\n\n$\\sqrt{48} = f(48) \\approx  \\frac1{14}(48 - 49) + 7 = \\frac{-1}{14} + 7 = 6\\frac{13}{14}$\n\nWhether the linear approximation is an over or under estimate depends on\nthe concavity of the function - if $f(x)$ is concave up, the tangent\nline approximation lies below the graph and is an under-estimate; the\nopposite is true if $f(x)$ is concave down. Because $f(x) = \\sqrt{x}$ is\nconcave down, our estimate in this problem is an over-estimate."
+    ], 
+    "sols_raw": [
+        "Using the linear approximation formula\n\n&lt;math>f(x) \\approx f'(a)(x - a) + f(a)&lt;/math>\n\nwhere our function is &lt;math>f(x) = \\sqrt{x}&lt;/math> and our value of ''a'' will be a number near 48.  Choosing ''a = 49'' is sensible because you can take the square root easily.  We can either calculate &lt;math>\\displaystyle f'(x)&lt;/math> again or note that we already found it in [[Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_2|question C2]] as &lt;math>f'(x) = 1/(2\\sqrt{x})&lt;/math>.  Plugging all this in gives: \n\n&lt;math>f(x) \\approx \\frac{1}{2\\sqrt{49}}(x - 49) + \\sqrt{49} = \\frac1{14}(x - 49) + 7&lt;/math>\n\nTo approximate &lt;math>b = \\sqrt{48}&lt;/math>, we say\n\n&lt;math>\\sqrt{48} = f(48) \\approx  \\frac1{14}(48 - 49) + 7 = \\frac{-1}{14} + 7 = 6\\frac{13}{14}&lt;/math>\n\nWhether the linear approximation is an over or under estimate depends on the concavity of the function - if &lt;math>f(x)&lt;/math> is concave up, the tangent line approximation lies below the graph and is an under-estimate; the opposite is true if &lt;math>f(x)&lt;/math> is concave down.  Because &lt;math>f(x) = \\sqrt{x}&lt;/math> is concave down, our estimate in this problem is an over-estimate.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>This question is about approximating the value of <span class=\"math\">\\(b = \\sqrt{48}\\)</span>.</p>\n<p><strong>(b)</strong> Use a linear approximation to estimate <em>b</em>. Is your estimate larger or smaller than the actual value? Justify your claim.</p>\n", 
+    "statement_latex": "This question is about approximating the value of $b = \\sqrt{48}$.\n\n\\textbf{(b)} Use a linear approximation to estimate \\emph{b}. Is your\nestimate larger or smaller than the actual value? Justify your claim.", 
+    "statement_raw": "This question is about approximating the value of &lt;math> b = \\sqrt{48} &lt;/math>.\n\n'''(b)''' Use a linear approximation to estimate ''b''. Is your estimate larger or smaller than the actual value? Justify your claim.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_03_(b)", 
+    "year": 2012
 }

@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_03_(d)", 
-    "course": "MATH110", 
-    "statement": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(\\theta)$, where $f(\\theta)$ is the area of the\ntriangle with vertices at the origin, $P$ and $Q$, shown below. Note\nthat the circle is of radius $1$.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_December_2012_Question_3d_diagram.jpg}\n\\caption{Math Exam Resources December 2012 Question 3d diagram.jpg}\n\\end{figure}", 
-    "year": 2012, 
-    "sols": [
-        "First we need to find a formula for $f(\\theta)$, the area of the\ntriangle. The area of a triangle is $(b)(h)/2$. See the labeled picture\nbelow:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH110_December_2012_Question_3d_labeled_diagram.jpg}\n\\caption{MER MATH110 December 2012 Question 3d labeled diagram.jpg}\n\\end{figure}\n\nThe base of the triangle is a radius of the circle, which is equal to 1.\nWe can find the height by a trig ratio. Using the blue right triangle,\nwe can see that $\\sin\\theta = h/1$. So $h = \\sin\\theta$. Plugging these\ninto our area formula, we get:\n\n$\\displaystyle f(\\theta) = (1)(\\sin\\theta)/2 = (\\sin \\theta)/2$\n\nIt is now easy to find the derivative,\n\n$\\displaystyle f'(\\theta) = (\\cos \\theta)/2$\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle f&#39;(\\theta) = (\\cos \\theta)/2\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\displaystyle f'(\\theta) = (\\cos \\theta)/2$completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Identify the base and height of the triangle in order to arrive at the area formula. Finding the height will involve a trig ratio.</p>\n"
+    ], 
+    "hints_latex": [
         "Identify the base and height of the triangle in order to arrive at the\narea formula. Finding the height will involve a trig ratio."
-    ]
+    ], 
+    "hints_raw": [
+        "Identify the base and height of the triangle in order to arrive at the area formula.  Finding the height will involve a trig ratio.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First we need to find a formula for <span class=\"math\">\\(f(\\theta)\\)</span>, the area of the triangle. The area of a triangle is <span class=\"math\">\\((b)(h)/2\\)</span>. See the labeled picture below:</p>\n<p><img src=\"../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_3d_labeled_diagram.jpg\" alt=\"image\" /></p>\n<p>The base of the triangle is a radius of the circle, which is equal to 1. We can find the height by a trig ratio. Using the blue right triangle, we can see that <span class=\"math\">\\(\\sin\\theta = h/1\\)</span>. So <span class=\"math\">\\(h = \\sin\\theta\\)</span>. Plugging these into our area formula, we get:</p>\n<p><span class=\"math\">\\(\\displaystyle f(\\theta) = (1)(\\sin\\theta)/2 = (\\sin \\theta)/2\\)</span></p>\n<p>It is now easy to find the derivative,</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(\\theta) = (\\cos \\theta)/2\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "First we need to find a formula for $f(\\theta)$, the area of the\ntriangle. The area of a triangle is $(b)(h)/2$. See the labeled picture\nbelow:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/MER_MATH110_December_2012_Question_3d_labeled_diagram.jpg}\n\nThe base of the triangle is a radius of the circle, which is equal to 1.\nWe can find the height by a trig ratio. Using the blue right triangle,\nwe can see that $\\sin\\theta = h/1$. So $h = \\sin\\theta$. Plugging these\ninto our area formula, we get:\n\n$\\displaystyle f(\\theta) = (1)(\\sin\\theta)/2 = (\\sin \\theta)/2$\n\nIt is now easy to find the derivative,\n\n$\\displaystyle f'(\\theta) = (\\cos \\theta)/2$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "First we need to find a formula for &lt;math>f(\\theta)&lt;/math>, the area of the triangle.  The area of a triangle is &lt;math>(b)(h)/2&lt;/math>.  See the labeled picture below:\n\n[[File:MER MATH110 December 2012 Question 3d labeled diagram.jpg|400px]]\n\nThe base of the triangle is a radius of the circle, which is equal to 1.  We can find the height by a trig ratio.  Using the blue right triangle, we can see that &lt;math>\\sin\\theta = h/1&lt;/math>.  So &lt;math>h = \\sin\\theta&lt;/math>.  Plugging these into our area formula, we get:\n\n&lt;math>\\displaystyle f(\\theta) = (1)(\\sin\\theta)/2 = (\\sin \\theta)/2 &lt;/math>\n\nIt is now easy to find the derivative, \n\n&lt;math>\\displaystyle f'(\\theta) = (\\cos \\theta)/2&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Calculate the following derivative. You may leave your answer unsimplified.</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(\\theta)\\)</span>, where <span class=\"math\">\\(f(\\theta)\\)</span> is the area of the triangle with vertices at the origin, <span class=\"math\">\\(P\\)</span> and <span class=\"math\">\\(Q\\)</span>, shown below. Note that the circle is of radius <span class=\"math\">\\(1\\)</span>.</p>\n<p><img src=\"../json_data/MATH110/December_2012/Math_Exam_Resources_December_2012_Question_3d_diagram.jpg\" alt=\"image\" /></p>\n", 
+    "statement_latex": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(\\theta)$, where $f(\\theta)$ is the area of the\ntriangle with vertices at the origin, $P$ and $Q$, shown below. Note\nthat the circle is of radius $1$.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2012/Math_Exam_Resources_December_2012_Question_3d_diagram.jpg}", 
+    "statement_raw": "Calculate the following derivative. You may leave your answer unsimplified.\n\n&lt;math>\\displaystyle f'(\\theta)&lt;/math>, where &lt;math>f(\\theta)&lt;/math> is the area of the triangle with vertices at the origin, &lt;math>P&lt;/math> and &lt;math>Q&lt;/math>, shown below. Note that the circle is of radius &lt;math>1&lt;/math>.\n\n[[File:Math Exam Resources December 2012 Question 3d diagram.jpg]]\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_03_(d)", 
+    "year": 2012
 }

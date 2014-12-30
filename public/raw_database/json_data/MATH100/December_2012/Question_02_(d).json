@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_02_(d)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nLet $\\displaystyle f(x) = g(2\\sin x)$, where $g'(\\sqrt{2}) = \\sqrt{2}$.\nFind $\\displaystyle f'(\\pi/4)$", 
-    "year": 2012, 
-    "sols": [
-        "Taking the derivative gives\n\n\\begin{align*}\\displaystyle\nf'(x) = g'(2\\sin(x))(2\\cos(x))\\end{align*}\n\nPlugging in $x = \\pi/4$ gives\n\n\\begin{align*}\nf'(\\pi/4) &= g'(2\\sin(\\pi/4))(2\\cos(\\pi/4)) \\\\\n&= g'(2\\cdot\\tfrac{1}{\\sqrt{2}})\\cdot 2\\cdot \\tfrac{1}{\\sqrt{2}} \\\\\n&= g'(\\sqrt{2})\\cdot \\sqrt{2} \\\\\n&= \\sqrt{2}\\cdot \\sqrt{2} \\\\\n&= 2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(\\pi/4)=2\\)</span></p>\n", 
+    "answer_latex": " $f'(\\pi/4)=2$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The question is looking for the derivative of <span class=\"math\">\\(f(x)\\)</span>. Since this function is definted as a composition of functions, we need to use the chain rule.</p>\n"
+    ], 
+    "hints_latex": [
         "The question is looking for the derivative of $f(x)$. Since this\nfunction is definted as a composition of functions, we need to use the\nchain rule."
-    ]
+    ], 
+    "hints_raw": [
+        "The question is looking for the derivative of &lt;math>f(x)&lt;/math>. Since this function is definted as a composition of functions, we need to use the chain rule.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "2 (d)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Taking the derivative gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf&#39;(x) = g&#39;(2\\sin(x))(2\\cos(x))\\end{aligned}\\]</span></p>\n<p>Plugging in <span class=\"math\">\\(x = \\pi/4\\)</span> gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(\\pi/4) &amp;= g&#39;(2\\sin(\\pi/4))(2\\cos(\\pi/4)) \\\\\n&amp;= g&#39;(2\\cdot\\tfrac{1}{\\sqrt{2}})\\cdot 2\\cdot \\tfrac{1}{\\sqrt{2}} \\\\\n&amp;= g&#39;(\\sqrt{2})\\cdot \\sqrt{2} \\\\\n&amp;= \\sqrt{2}\\cdot \\sqrt{2} \\\\\n&amp;= 2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Taking the derivative gives\n\n\\begin{align*}\n\\displaystyle\nf'(x) = g'(2\\sin(x))(2\\cos(x))\n\\end{align*}\n\nPlugging in $x = \\pi/4$ gives\n\n\\begin{align*}\nf'(\\pi/4) &= g'(2\\sin(\\pi/4))(2\\cos(\\pi/4)) \\\\\n&= g'(2\\cdot\\tfrac{1}{\\sqrt{2}})\\cdot 2\\cdot \\tfrac{1}{\\sqrt{2}} \\\\\n&= g'(\\sqrt{2})\\cdot \\sqrt{2} \\\\\n&= \\sqrt{2}\\cdot \\sqrt{2} \\\\\n&= 2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Taking the derivative gives\n\n:&lt;math> \\displaystyle\nf'(x) = g'(2\\sin(x))(2\\cos(x))\n&lt;/math>\n\nPlugging in &lt;math> x = \\pi/4 &lt;/math> gives\n\n:&lt;math>\n\\begin{align}\nf'(\\pi/4) &amp;= g'(2\\sin(\\pi/4))(2\\cos(\\pi/4)) \\\\\n&amp;= g'(2\\cdot\\tfrac{1}{\\sqrt{2}})\\cdot 2\\cdot \\tfrac{1}{\\sqrt{2}} \\\\\n&amp;= g'(\\sqrt{2})\\cdot \\sqrt{2} \\\\\n&amp;= \\sqrt{2}\\cdot \\sqrt{2} \\\\\n&amp;= 2\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Let <span class=\"math\">\\(\\displaystyle f(x) = g(2\\sin x)\\)</span>, where <span class=\"math\">\\(g&#39;(\\sqrt{2}) = \\sqrt{2}\\)</span>. Find <span class=\"math\">\\(\\displaystyle f&#39;(\\pi/4)\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nLet $\\displaystyle f(x) = g(2\\sin x)$, where $g'(\\sqrt{2}) = \\sqrt{2}$.\nFind $\\displaystyle f'(\\pi/4)$", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nLet &lt;math> \\displaystyle f(x) = g(2\\sin x) &lt;/math>, where &lt;math>g'(\\sqrt{2}) = \\sqrt{2} &lt;/math>. Find &lt;math> \\displaystyle f'(\\pi/4)&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_02_(d)", 
+    "year": 2012
 }

@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_08_(b)", 
-    "course": "MATH110", 
-    "statement": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(b) Now suppose that $a = 0$. Find the equation of the tangent line in\nthis case.", 
-    "year": 2011, 
-    "sols": [
-        "If \\emph{a} = 0, then the curve we are looking at is the curve\n\n\\begin{align*}\\displaystyle\ny = (0x+b)^7 = b^7\\end{align*} which is simply a horizontal line at the height\n\\emph{b}\\textsuperscript{7} and so its tangent line is itself, that is,\nthe line \\emph{y} = \\emph{b}\\textsuperscript{7}."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\ny=b^7\\)</span> which is simply a horizontal line at the height <em>b</em><sup>7</sup> and so its tangent line is itself, that is, the line <em>y</em> = <em>b</em><sup>7</sup>.</p>\n", 
+    "answer_latex": " $\\displaystyle\ny=b^7$  which is simply a horizontal line at the height\n\\emph{b}\\textsuperscript{7} and so its tangent line is itself, that is,\nthe line \\emph{y} = \\emph{b}\\textsuperscript{7}.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>If <em>a</em> = 0, just plug that in to see what the problem becomes.</p>\n"
+    ], 
+    "hints_latex": [
         "If \\emph{a} = 0, just plug that in to see what the problem becomes."
-    ]
+    ], 
+    "hints_raw": [
+        "If ''a'' = 0, just plug that in to see what the problem becomes.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If <em>a</em> = 0, then the curve we are looking at is the curve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny = (0x+b)^7 = b^7\\end{aligned}\\]</span></p>\n<p>which is simply a horizontal line at the height <em>b</em><sup>7</sup> and so its tangent line is itself, that is, the line <em>y</em> = <em>b</em><sup>7</sup>.</p>\n"
+    ], 
+    "sols_latex": [
+        "If \\emph{a} = 0, then the curve we are looking at is the curve\n\n\\begin{align*}\n\\displaystyle\ny = (0x+b)^7 = b^7\n\\end{align*} which is simply a horizontal line at the height\n\\emph{b}\\textsuperscript{7} and so its tangent line is itself, that is,\nthe line \\emph{y} = \\emph{b}\\textsuperscript{7}."
+    ], 
+    "sols_raw": [
+        "If ''a'' = 0, then the curve we are looking at is the curve\n:&lt;math>\\displaystyle\ny = (0x+b)^7 = b^7\n&lt;/math>\nwhich is simply a horizontal line at the height ''b''&lt;sup>7&lt;/sup> and so its tangent line is itself, that is, the line ''y'' = ''b''&lt;sup>7&lt;/sup>.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(y = (ax + b)^7\\)</span>, where <em>a</em> and <em>b</em> are constant.</p>\n<p>(b) Now suppose that <span class=\"math\">\\(a = 0\\)</span>. Find the equation of the tangent line in this case.</p>\n", 
+    "statement_latex": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(b) Now suppose that $a = 0$. Find the equation of the tangent line in\nthis case.", 
+    "statement_raw": "Let &lt;math>y = (ax + b)^7 &lt;/math>, where ''a'' and ''b'' are constant. \n\n(b) Now suppose that &lt;math> a = 0&lt;/math>.  Find the equation of the tangent line in this case.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_08_(b)", 
+    "year": 2011
 }

@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_02_(a)", 
-    "course": "MATH152", 
-    "statement": "The matrix\n\n\\begin{align*}A = \\left[\\begin{array}{ccc}\n2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2\n\\end{array}\\right]\\end{align*}\n\nis known to have eigenvalues 1 and 4.\n\n\\textbf{(a)} Find the eigenvector of \\emph{A} that corresponds to\neigenvalue 4.", 
-    "year": 2010, 
-    "sols": [
-        "We want to find the eigenvector of\n\n\\begin{align*}\nA=\\begin{bmatrix}\n2  &  1  &  1\\\\\n1  &  2  &  1\\\\\n1  &  1  &  2\n\\end{bmatrix}\\end{align*}\n\nwith eigenvalue $\\lambda=4$. We therefore want to find the vector\n$\\mathbf{x}=[a,b,c]^T$ such that\n\n\\begin{align*}\n(A-4I)\\mathbf{x}=\n\\begin{bmatrix}\n-2  &  1  &  1\\\\\n1  & - 2  &  1\\\\\n1  &  1  & - 2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}\n=\\mathbf{0}\\end{align*}\n\nWe therefore have three equations with three unknowns\n\n\\begin{align*}\n-2a+b+c&=0\\\\\na-2b+c&=0\\\\\na+b-2c&=0\\end{align*}\n\nWe can solve the first equation for c to get\n\n\\begin{align*}\nc=2a-b\\end{align*}\n\nand can sub this into the second equation to get\n\n\\begin{align*}\na-2b+2a-b&=0\\\\\n3a-3b&=0\\\\\nb&=a.\\end{align*}\n\nUsing c=2a-b and b=a we conclude that c=a. From the last equation we\nget,\n\n\\begin{align*}\na+a-2a=0\\end{align*}\n\nwhich is satisfied for all a. Therefore, let a=1 without loss of\ngenerality. This implies that b=c=1 as well. Therefore the eigenvector\nfor the eigenvalue 4 is\n\n\\begin{align*}\n\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\\end{align*}\n\nOf course, any multiple of this is also an eigenvector (expect\nmultiplying by 0)."
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\\)</span> Of course, any multiple of this is also an eigenvector (expect multiplying by 0).</p>\n", 
+    "answer_latex": " $\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.$ Of course, any multiple of this is also an eigenvector (expect\nmultiplying by 0).", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Recall the eigenvectors with eigenvalue $\\lambda$ satisfy\n\n\\begin{align*}(A-\\lambda{}I)\\mathbf{x}=\\mathbf{0}\\end{align*}"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall the eigenvectors with eigenvalue <span class=\"math\">\\(\\lambda\\)</span> satisfy</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(A-\\lambda{}I)\\mathbf{x}=\\mathbf{0}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Recall the eigenvectors with eigenvalue $\\lambda$ satisfy\n\n\\begin{align*}\n(A-\\lambda{}I)\\mathbf{x}=\\mathbf{0}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Recall the eigenvectors with eigenvalue &lt;math>\\lambda&lt;/math> satisfy\n\n:&lt;math>\n(A-\\lambda{}I)\\mathbf{x}=\\mathbf{0}\n&lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 02 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We want to find the eigenvector of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n2  &amp;  1  &amp;  1\\\\\n1  &amp;  2  &amp;  1\\\\\n1  &amp;  1  &amp;  2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>with eigenvalue <span class=\"math\">\\(\\lambda=4\\)</span>. We therefore want to find the vector <span class=\"math\">\\(\\mathbf{x}=[a,b,c]^T\\)</span> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(A-4I)\\mathbf{x}=\n\\begin{bmatrix}\n-2  &amp;  1  &amp;  1\\\\\n1  &amp; - 2  &amp;  1\\\\\n1  &amp;  1  &amp; - 2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}\n=\\mathbf{0}\\end{aligned}\\]</span></p>\n<p>We therefore have three equations with three unknowns</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-2a+b+c&amp;=0\\\\\na-2b+c&amp;=0\\\\\na+b-2c&amp;=0\\end{aligned}\\]</span></p>\n<p>We can solve the first equation for c to get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc=2a-b\\end{aligned}\\]</span></p>\n<p>and can sub this into the second equation to get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na-2b+2a-b&amp;=0\\\\\n3a-3b&amp;=0\\\\\nb&amp;=a.\\end{aligned}\\]</span></p>\n<p>Using c=2a-b and b=a we conclude that c=a. From the last equation we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na+a-2a=0\\end{aligned}\\]</span></p>\n<p>which is satisfied for all a. Therefore, let a=1 without loss of generality. This implies that b=c=1 as well. Therefore the eigenvector for the eigenvalue 4 is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Of course, any multiple of this is also an eigenvector (expect multiplying by 0).</p>\n"
+    ], 
+    "sols_latex": [
+        "We want to find the eigenvector of\n\n\\begin{align*}\nA=\\begin{bmatrix}\n2  &  1  &  1\\\\\n1  &  2  &  1\\\\\n1  &  1  &  2\n\\end{bmatrix}\n\\end{align*}\n\nwith eigenvalue $\\lambda=4$. We therefore want to find the vector\n$\\mathbf{x}=[a,b,c]^T$ such that\n\n\\begin{align*}\n(A-4I)\\mathbf{x}=\n\\begin{bmatrix}\n-2  &  1  &  1\\\\\n1  & - 2  &  1\\\\\n1  &  1  & - 2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}\n=\\mathbf{0}\n\\end{align*}\n\nWe therefore have three equations with three unknowns\n\n\\begin{align*}\n-2a+b+c&=0\\\\\na-2b+c&=0\\\\\na+b-2c&=0\n\\end{align*}\n\nWe can solve the first equation for c to get\n\n\\begin{align*}\nc=2a-b\n\\end{align*}\n\nand can sub this into the second equation to get\n\n\\begin{align*}\na-2b+2a-b&=0\\\\\n3a-3b&=0\\\\\nb&=a.\n\\end{align*}\n\nUsing c=2a-b and b=a we conclude that c=a. From the last equation we\nget,\n\n\\begin{align*}\na+a-2a=0\n\\end{align*}\n\nwhich is satisfied for all a. Therefore, let a=1 without loss of\ngenerality. This implies that b=c=1 as well. Therefore the eigenvector\nfor the eigenvalue 4 is\n\n\\begin{align*}\n\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nOf course, any multiple of this is also an eigenvector (expect\nmultiplying by 0)."
+    ], 
+    "sols_raw": [
+        "We want to find the eigenvector of\n\n:&lt;math>\n\\begin{align}\nA=\\begin{bmatrix}\n2  &amp;  1  &amp;  1\\\\\n1  &amp;  2  &amp;  1\\\\\n1  &amp;  1  &amp;  2\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\n\nwith eigenvalue &lt;math>\\lambda=4&lt;/math>.  We therefore want to find the vector &lt;math>\\mathbf{x}=[a,b,c]^T&lt;/math> such that\n\n:&lt;math>\n\\begin{align}\n(A-4I)\\mathbf{x}=\n\\begin{bmatrix}\n-2  &amp;  1  &amp;  1\\\\\n1  &amp; - 2  &amp;  1\\\\\n1  &amp;  1  &amp; - 2\n\\end{bmatrix}\n\\begin{bmatrix}\na\\\\\nb\\\\\nc\n\\end{bmatrix}\n=\\mathbf{0}\n\\end{align}\n&lt;/math>\n\n\nWe therefore have three equations with three unknowns\n\n:&lt;math>\n\\begin{align}\n-2a+b+c&amp;=0\\\\\na-2b+c&amp;=0\\\\\na+b-2c&amp;=0\n\\end{align}\n&lt;/math>\n\n\nWe can solve the first equation for c to get\n\n:&lt;math>\n\\begin{align}\nc=2a-b\n\\end{align}\n&lt;/math>\n\n\nand can sub this into the second equation to get\n\n:&lt;math>\n\\begin{align}\na-2b+2a-b&amp;=0\\\\\n3a-3b&amp;=0\\\\\nb&amp;=a.\n\\end{align}\n&lt;/math>\n\n\nUsing c=2a-b and b=a we conclude that c=a.  From the last equation we get,\n\n:&lt;math>\n\\begin{align}\na+a-2a=0\n\\end{align}\n&lt;/math>\n\n\nwhich is satisfied for all a.  Therefore, let a=1 without loss of generality.  This implies that b=c=1 as well.  Therefore the eigenvector for the eigenvalue 4 is\n\n:&lt;math>\n\\begin{align}\n\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\n\nOf course, any multiple of this is also an eigenvector (expect multiplying by 0).\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>The matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc}\n2 &amp; 1 &amp; 1 \\\\ 1 &amp; 2 &amp; 1 \\\\ 1 &amp; 1 &amp; 2\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>is known to have eigenvalues 1 and 4.</p>\n<p><strong>(a)</strong> Find the eigenvector of <em>A</em> that corresponds to eigenvalue 4.</p>\n", 
+    "statement_latex": "The matrix\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc}\n2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2\n\\end{array}\\right]\n\\end{align*}\n\nis known to have eigenvalues 1 and 4.\n\n\\textbf{(a)} Find the eigenvector of \\emph{A} that corresponds to\neigenvalue 4.", 
+    "statement_raw": "The matrix\n\n:&lt;math>\nA = \\left[\\begin{array}{ccc}\n2 &amp; 1 &amp; 1 \\\\ 1 &amp; 2 &amp; 1 \\\\ 1 &amp; 1 &amp; 2\n\\end{array}\\right]\n&lt;/math>\n\nis known to have eigenvalues 1 and 4.\n\n'''(a)''' Find the eigenvector of ''A'' that corresponds to eigenvalue 4.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_02_(a)", 
+    "year": 2010
 }

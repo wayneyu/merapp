@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_01_(n)", 
-    "course": "MATH104", 
-    "statement": "Use the linear approximation to ln(x) at x=1 to estimate ln(0.8).", 
-    "year": 2010, 
-    "sols": [
-        "We use the linear approximation of $\\ln(x)$ at $x=1$ to estimate\n$\\ln(0.8)$. (Approximating at \\emph{x = 1} is a logical choice, as 1 is\nclose to 0.8, and we know that $\\ln(1) = 0$.)\n\nWe know $\\frac{d}{dx}\\ln(x)=\\frac1x$, which is equal to 1 when $x=1$.\nSubstituting this into the linear approximation formula, we get,\n\n\\begin{align*}\\ln(0.8)\\approx \\ln(1)+1(0.8-1) = 0-0.2=-0.2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\ln(0.8)\\approx \\ln(1)+1(0.8-1)=-0.2\\)</span></p>\n", 
+    "answer_latex": " $\\ln(0.8)\\approx \\ln(1)+1(0.8-1)=-0.2$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The graph of the linear approximation taken at <span class=\"math\">\\(a=1\\)</span> is the tangent line to the curve at <span class=\"math\">\\(a=1\\)</span>.</p>\n", 
+        "<p>The linear approximation to a function <span class=\"math\">\\(f\\)</span> at <span class=\"math\">\\(x=a\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL(x)=f(a)+f&#39;(a)(x-a).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "The graph of the linear approximation taken at $a=1$ is the tangent line\nto the curve at $a=1$.", 
-        "The linear approximation to a function $f$ at $x=a$ is\n\n\\begin{align*}L(x)=f(a)+f'(a)(x-a).\\end{align*}"
-    ]
+        "The linear approximation to a function $f$ at $x=a$ is\n\n\\begin{align*}\nL(x)=f(a)+f'(a)(x-a).\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The graph of the linear approximation taken at &lt;math>a=1&lt;/math> is the tangent line to the curve at &lt;math>a=1&lt;/math>.\n", 
+        "The linear approximation to a function &lt;math>f&lt;/math> at &lt;math>x=a&lt;/math> is \n:&lt;math>L(x)=f(a)+f'(a)(x-a).&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (n)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We use the linear approximation of <span class=\"math\">\\(\\ln(x)\\)</span> at <span class=\"math\">\\(x=1\\)</span> to estimate <span class=\"math\">\\(\\ln(0.8)\\)</span>. (Approximating at <em>x = 1</em> is a logical choice, as 1 is close to 0.8, and we know that <span class=\"math\">\\(\\ln(1) = 0\\)</span>.)</p>\n<p>We know <span class=\"math\">\\(\\frac{d}{dx}\\ln(x)=\\frac1x\\)</span>, which is equal to 1 when <span class=\"math\">\\(x=1\\)</span>. Substituting this into the linear approximation formula, we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(0.8)\\approx \\ln(1)+1(0.8-1) = 0-0.2=-0.2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We use the linear approximation of $\\ln(x)$ at $x=1$ to estimate\n$\\ln(0.8)$. (Approximating at \\emph{x = 1} is a logical choice, as 1 is\nclose to 0.8, and we know that $\\ln(1) = 0$.)\n\nWe know $\\frac{d}{dx}\\ln(x)=\\frac1x$, which is equal to 1 when $x=1$.\nSubstituting this into the linear approximation formula, we get,\n\n\\begin{align*}\n\\ln(0.8)\\approx \\ln(1)+1(0.8-1) = 0-0.2=-0.2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We use the linear approximation of &lt;math>\\ln(x)&lt;/math> at &lt;math>x=1&lt;/math> to estimate &lt;math>\\ln(0.8)&lt;/math>.  (Approximating at ''x = 1'' is a logical choice, as 1 is close to 0.8, and we know that &lt;math>\\ln(1) = 0&lt;/math>.) \n\nWe know &lt;math>\\frac{d}{dx}\\ln(x)=\\frac1x&lt;/math>, which is equal to 1 when &lt;math>x=1&lt;/math>.  Substituting this into the linear approximation formula, we get,\n:&lt;math>\\ln(0.8)\\approx \\ln(1)+1(0.8-1) = 0-0.2=-0.2&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Use the linear approximation to ln(x) at x=1 to estimate ln(0.8).</p>\n", 
+    "statement_latex": "Use the linear approximation to ln(x) at x=1 to estimate ln(0.8).", 
+    "statement_raw": "Use the linear approximation to ln(x) at x=1 to estimate ln(0.8).\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_01_(n)", 
+    "year": 2010
 }

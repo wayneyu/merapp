@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_03", 
-    "course": "MATH105", 
-    "statement": "Find the area of the region bounded by\n\n\\begin{align*}y=-\\frac{2}{x}, \\quad y=-4\\sqrt{x} \\quad\\text{and}\\quad y=-x.\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "First, we sketch each of the three curves to see what is the region that\nwe are talking about.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MER_MATH105_April_2010_3.png}\n\\caption{MER MATH105 April 2010 3.png}\n\\end{figure}\n\nWe will need to find the coordinates of points \\emph{A} and \\emph{B}\nwhich are the intersection of curves. For \\emph{A} we have\n\n\\begin{align*}\n-x &= - \\frac{2}{x}\\\\\nx^2 &= 2\\\\\nx &= \\pm \\sqrt{2}\\end{align*} We can see from the picture that we are interested in the\npoint with a positive \\emph{x} coordinate, so\n\n\\begin{align*}\\displaystyle\nA = (\\sqrt{2}, -\\sqrt{2})\\end{align*}\n\nFor \\emph{B} we have\n\n\\begin{align*}\n-4\\sqrt{x} &= - \\frac{2}{x}\\\\\nx^{3/2} &= \\frac{1}{2}\\\\\nx &= \\left( \\frac{1}{2} \\right)^{2/3} = \\frac{1}{\\sqrt[3]{4}}\\end{align*} And so since \\emph{y} = -2/\\emph{x} we have\n\n\\begin{align*}\\displaystyle\nB = \\left( \\frac{1}{\\sqrt[3]{4}}, -2\\sqrt[3]{4} \\right)\\end{align*}\n\nThis allows us to write the desired area as the sum of 2 integrals\n\n\\begin{align*}\n\\text{area} &= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( (-x) - (-4\\sqrt{x}) \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( (-x) - (-\\frac{2}{x}) \\right) \\,dx\\\\\n&= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( -x+4\\sqrt {x} \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( -x + \\frac{2}{x} \\right) \\,dx\\\\\n&= \\left[ -\\frac{x^2}{2} + \\frac{4\\cdot 2}{3} x^{3/2} \\right]_0^{\\frac{1}{\\sqrt[3]{4}}} + \\left[ -\\frac{x^2}{2} + 2\\ln(x) \\right]_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}}\\\\\n&= -\\frac{(2^{-2/3})^2}{2} + \\frac{8}{3} (2^{-2/3})^{3/2} + 0 - 0 - \\frac{(\\sqrt{2})^2}{2} + 2\\ln(\\sqrt{2}) + \\frac{(2^{-2/3})^2}{2} - 2\\ln(2^{-2/3})\\\\\n&= \\frac{4}{3} - 1 +\\ln(2) + \\frac{4}{3}\\ln(2)\\\\\n&=\\frac{1}{3}+\\frac{7}{3}\\ln(2)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\text{area}=\\frac{1}{3}+\\frac{7}{3}\\ln(2)\\)</span></p>\n", 
+    "answer_latex": " $\\text{area}=\\frac{1}{3}+\\frac{7}{3}\\ln(2)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What does this region look like? How can you find the area of such a region?</p>\n"
+    ], 
+    "hints_latex": [
         "What does this region look like? How can you find the area of such a\nregion?"
-    ]
+    ], 
+    "hints_raw": [
+        "What does this region look like? How can you find the area of such a region?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3", 
+    "rating": 58, 
+    "sols_html": [
+        "<p>First, we sketch each of the three curves to see what is the region that we are talking about.</p>\n<p><img src=\"../json_data/MATH105/April_2010/MER_MATH105_April_2010_3.png\" alt=\"image\" /></p>\n<p>We will need to find the coordinates of points <em>A</em> and <em>B</em> which are the intersection of curves. For <em>A</em> we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-x &amp;= - \\frac{2}{x}\\\\\nx^2 &amp;= 2\\\\\nx &amp;= \\pm \\sqrt{2}\\end{aligned}\\]</span></p>\n<p>We can see from the picture that we are interested in the point with a positive <em>x</em> coordinate, so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA = (\\sqrt{2}, -\\sqrt{2})\\end{aligned}\\]</span></p>\n<p>For <em>B</em> we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-4\\sqrt{x} &amp;= - \\frac{2}{x}\\\\\nx^{3/2} &amp;= \\frac{1}{2}\\\\\nx &amp;= \\left( \\frac{1}{2} \\right)^{2/3} = \\frac{1}{\\sqrt[3]{4}}\\end{aligned}\\]</span></p>\n<p>And so since <em>y</em> = -2/<em>x</em> we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nB = \\left( \\frac{1}{\\sqrt[3]{4}}, -2\\sqrt[3]{4} \\right)\\end{aligned}\\]</span></p>\n<p>This allows us to write the desired area as the sum of 2 integrals</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\text{area} &amp;= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( (-x) - (-4\\sqrt{x}) \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( (-x) - (-\\frac{2}{x}) \\right) \\,dx\\\\\n&amp;= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( -x+4\\sqrt {x} \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( -x + \\frac{2}{x} \\right) \\,dx\\\\\n&amp;= \\left[ -\\frac{x^2}{2} + \\frac{4\\cdot 2}{3} x^{3/2} \\right]_0^{\\frac{1}{\\sqrt[3]{4}}} + \\left[ -\\frac{x^2}{2} + 2\\ln(x) \\right]_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}}\\\\\n&amp;= -\\frac{(2^{-2/3})^2}{2} + \\frac{8}{3} (2^{-2/3})^{3/2} + 0 - 0 - \\frac{(\\sqrt{2})^2}{2} + 2\\ln(\\sqrt{2}) + \\frac{(2^{-2/3})^2}{2} - 2\\ln(2^{-2/3})\\\\\n&amp;= \\frac{4}{3} - 1 +\\ln(2) + \\frac{4}{3}\\ln(2)\\\\\n&amp;=\\frac{1}{3}+\\frac{7}{3}\\ln(2)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First, we sketch each of the three curves to see what is the region that\nwe are talking about.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2010/MER_MATH105_April_2010_3.png}\n\nWe will need to find the coordinates of points \\emph{A} and \\emph{B}\nwhich are the intersection of curves. For \\emph{A} we have\n\n\\begin{align*}\n-x &= - \\frac{2}{x}\\\\\nx^2 &= 2\\\\\nx &= \\pm \\sqrt{2}\n\\end{align*} We can see from the picture that we are interested in the\npoint with a positive \\emph{x} coordinate, so\n\n\\begin{align*}\n\\displaystyle\nA = (\\sqrt{2}, -\\sqrt{2})\n\\end{align*}\n\nFor \\emph{B} we have\n\n\\begin{align*}\n-4\\sqrt{x} &= - \\frac{2}{x}\\\\\nx^{3/2} &= \\frac{1}{2}\\\\\nx &= \\left( \\frac{1}{2} \\right)^{2/3} = \\frac{1}{\\sqrt[3]{4}}\n\\end{align*} And so since \\emph{y} = -2/\\emph{x} we have\n\n\\begin{align*}\n\\displaystyle\nB = \\left( \\frac{1}{\\sqrt[3]{4}}, -2\\sqrt[3]{4} \\right)\n\\end{align*}\n\nThis allows us to write the desired area as the sum of 2 integrals\n\n\\begin{align*}\n\\text{area} &= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( (-x) - (-4\\sqrt{x}) \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( (-x) - (-\\frac{2}{x}) \\right) \\,dx\\\\\n&= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( -x+4\\sqrt {x} \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( -x + \\frac{2}{x} \\right) \\,dx\\\\\n&= \\left[ -\\frac{x^2}{2} + \\frac{4\\cdot 2}{3} x^{3/2} \\right]_0^{\\frac{1}{\\sqrt[3]{4}}} + \\left[ -\\frac{x^2}{2} + 2\\ln(x) \\right]_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}}\\\\\n&= -\\frac{(2^{-2/3})^2}{2} + \\frac{8}{3} (2^{-2/3})^{3/2} + 0 - 0 - \\frac{(\\sqrt{2})^2}{2} + 2\\ln(\\sqrt{2}) + \\frac{(2^{-2/3})^2}{2} - 2\\ln(2^{-2/3})\\\\\n&= \\frac{4}{3} - 1 +\\ln(2) + \\frac{4}{3}\\ln(2)\\\\\n&=\\frac{1}{3}+\\frac{7}{3}\\ln(2)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "First, we sketch each of the three curves to see what is the region that we are talking about.\n\n[[File:MER MATH105 April 2010 3.png|500px]]\n\nWe will need to find the coordinates of points ''A'' and ''B'' which are the intersection of curves. For ''A'' we have\n:&lt;math>\\begin{align}\n-x &amp;= - \\frac{2}{x}\\\\\nx^2 &amp;= 2\\\\\nx &amp;= \\pm \\sqrt{2}\n\\end{align}&lt;/math>\nWe can see from the picture that we are interested in the point with a positive ''x'' coordinate, so\n:&lt;math>\\displaystyle\nA = (\\sqrt{2}, -\\sqrt{2})\n&lt;/math>\n\nFor ''B'' we have\n:&lt;math>\\begin{align}\n-4\\sqrt{x} &amp;= - \\frac{2}{x}\\\\\nx^{3/2} &amp;= \\frac{1}{2}\\\\\nx &amp;= \\left( \\frac{1}{2} \\right)^{2/3} = \\frac{1}{\\sqrt[3]{4}}\n\\end{align}&lt;/math>\nAnd so since ''y'' = -2/''x'' we have\n:&lt;math>\\displaystyle\nB = \\left( \\frac{1}{\\sqrt[3]{4}}, -2\\sqrt[3]{4} \\right)\n&lt;/math>\n\nThis allows us to write the desired area as the sum of 2 integrals\n:&lt;math>\\begin{align}\n\\text{area} &amp;= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( (-x) - (-4\\sqrt{x}) \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( (-x) - (-\\frac{2}{x}) \\right) \\,dx\\\\\n&amp;= \\int_0^{\\frac{1}{\\sqrt[3]{4}}} \\left( -x+4\\sqrt {x} \\right) \\,dx + \\int_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}} \\left( -x + \\frac{2}{x} \\right) \\,dx\\\\\n&amp;= \\left[ -\\frac{x^2}{2} + \\frac{4\\cdot 2}{3} x^{3/2} \\right]_0^{\\frac{1}{\\sqrt[3]{4}}} + \\left[ -\\frac{x^2}{2} + 2\\ln(x) \\right]_{\\frac{1}{\\sqrt[3]{4}}}^{\\sqrt{2}}\\\\\n&amp;= -\\frac{(2^{-2/3})^2}{2} + \\frac{8}{3} (2^{-2/3})^{3/2} + 0 - 0 - \\frac{(\\sqrt{2})^2}{2} + 2\\ln(\\sqrt{2}) + \\frac{(2^{-2/3})^2}{2} - 2\\ln(2^{-2/3})\\\\\n&amp;= \\frac{4}{3} - 1 +\\ln(2) + \\frac{4}{3}\\ln(2)\\\\\n&amp;=\\frac{1}{3}+\\frac{7}{3}\\ln(2)\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ErinMoulding"
+    ], 
+    "statement_html": "<p>Find the area of the region bounded by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny=-\\frac{2}{x}, \\quad y=-4\\sqrt{x} \\quad\\text{and}\\quad y=-x.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the area of the region bounded by\n\n\\begin{align*}\ny=-\\frac{2}{x}, \\quad y=-4\\sqrt{x} \\quad\\text{and}\\quad y=-x.\n\\end{align*}", 
+    "statement_raw": "Find the area of the region bounded by \n:&lt;math>\ny=-\\frac{2}{x}, \\quad y=-4\\sqrt{x} \\quad\\text{and}\\quad y=-x.\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Area_between_two_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_03", 
+    "year": 2010
 }

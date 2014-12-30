@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(h)", 
+    "answer_html": "<p>The equation of the tangent line is then <span class=\"math\">\\(y - 0 = 1(x-1)\\)</span>, by the point-slope formula, or <span class=\"math\">\\(y = x-1\\)</span>.</p>\n", 
+    "answer_latex": "The equation of the tangent line is then $y - 0 = 1(x-1)$, by the\npoint-slope formula, or $y = x-1$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
+    ], 
     "course": "MATH104", 
-    "statement": "Find the equation of the tangent line to the graph of y = ln(x) at x =\n1.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What are two critical pieces of information to find the equation of a line?</p>\n"
+    ], 
+    "hints_latex": [
+        "What are two critical pieces of information to find the equation of a\nline?"
+    ], 
+    "hints_raw": [
+        "What are two critical pieces of information to find the equation of a line?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (h)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>This requires us to find a point on the line and its slope.</p>\n<p>When <span class=\"math\">\\(x=1\\)</span>, <span class=\"math\">\\(\\ln x = 0\\)</span> so we know the point <span class=\"math\">\\((1,0)\\)</span> is on the line.</p>\n<p>If <span class=\"math\">\\(y = \\ln x\\)</span> then <span class=\"math\">\\(\\frac{dy}{dx} = \\frac{1}{x}\\)</span> and <span class=\"math\">\\(\\frac{dy}{dx}|_{x=1} = 1\\)</span> so the slope of the line is <span class=\"math\">\\(1\\)</span>.</p>\n<p>The equation of the tangent line is then <span class=\"math\">\\(y - 0 = 1(x-1)\\)</span>, by the point-slope formula, or <span class=\"math\">\\(y = x-1\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "This requires us to find a point on the line and its slope.\n\nWhen $x=1$, $\\ln x = 0$ so we know the point $(1,0)$ is on the line.\n\nIf $y = \\ln x$ then $\\frac{dy}{dx} = \\frac{1}{x}$ and\n$\\frac{dy}{dx}|_{x=1} = 1$ so the slope of the line is $1$.\n\nThe equation of the tangent line is then $y - 0 = 1(x-1)$, by the\npoint-slope formula, or $y = x-1$."
     ], 
-    "hints": [
-        "What are two critical pieces of information to find the equation of a\nline?"
-    ]
+    "sols_raw": [
+        "This requires us to find a point on the line and its slope.\n\nWhen &lt;math>x=1&lt;/math>, &lt;math>\\ln x = 0&lt;/math> so we know the point &lt;math>(1,0)&lt;/math> is on the line.\n\nIf &lt;math>y = \\ln x&lt;/math> then &lt;math>\\frac{dy}{dx} = \\frac{1}{x}&lt;/math> and &lt;math>\\frac{dy}{dx}|_{x=1} = 1&lt;/math> so the slope of the line is &lt;math>1&lt;/math>.\n\nThe equation of the tangent line is then &lt;math>y - 0 = 1(x-1)&lt;/math>, by the point-slope formula, or &lt;math> y = x-1&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find the equation of the tangent line to the graph of y = ln(x) at x = 1.</p>\n", 
+    "statement_latex": "Find the equation of the tangent line to the graph of y = ln(x) at x =\n1.", 
+    "statement_raw": "Find the equation of the tangent line to the graph of &lt;i>y = ln(x)&lt;/i> at &lt;i>x = 1&lt;/i>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_01_(h)", 
+    "year": 2010
 }

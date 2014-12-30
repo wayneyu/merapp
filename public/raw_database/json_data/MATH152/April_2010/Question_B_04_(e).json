@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_04_(e)", 
-    "course": "MATH152", 
-    "statement": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(e)}\n\n\\begin{align*}\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "For the matrix,\n\n\\begin{align*}\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\end{align*}\n\nwe have two more columns than rows (the matrix is rank deficient) and so\nwe have two free variables. Let \\emph{x}\\textsubscript{3} and\n\\emph{x}\\textsubscript{4} be those variables. Then from row 2 we have,\n\n\\begin{align*}\nx_2+2x_3-2x_4&=2\\\\\nx_2&=2-2x_3+2x_4\\end{align*}\n\nand from row 1 we have,\n\n\\begin{align*}\nx_1+2x_3-x_4&=1\\\\\nx_1&=1-2x_3+x_4.\\end{align*}\n\nTherefore we have two null vectors,\n\n\\begin{align*}\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\\end{align*}\n\nand\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{align*}\n\nas well as a particular solution\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}.\\end{align*}\n\nTherefore the solution is\n\n\\begin{align*}\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\\end{align*}\n\nThere are an infinite number of solutions."
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\\)</span> There are an infinite number of solutions.</p>\n", 
+    "answer_latex": " $\\mathbf{x}=\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.$ There are an infinite number of solutions.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>When we have more columns that rows in a matrix, what do we know about the number of free variables?</p>\n"
+    ], 
+    "hints_latex": [
         "When we have more columns that rows in a matrix, what do we know about\nthe number of free variables?"
-    ]
+    ], 
+    "hints_raw": [
+        "When we have more columns that rows in a matrix, what do we know about the number of free variables?\n"
+    ], 
+    "num_votes": 5, 
+    "question": "B 04 (e)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>For the matrix,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; -1 \\\\ 0 &amp; 1 &amp; 2 &amp; -2 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>we have two more columns than rows (the matrix is rank deficient) and so we have two free variables. Let <em>x</em><sub>3</sub> and <em>x</em><sub>4</sub> be those variables. Then from row 2 we have,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_2+2x_3-2x_4&amp;=2\\\\\nx_2&amp;=2-2x_3+2x_4\\end{aligned}\\]</span></p>\n<p>and from row 1 we have,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_1+2x_3-x_4&amp;=1\\\\\nx_1&amp;=1-2x_3+x_4.\\end{aligned}\\]</span></p>\n<p>Therefore we have two null vectors,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>as well as a particular solution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Therefore the solution is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>There are an infinite number of solutions.</p>\n"
+    ], 
+    "sols_latex": [
+        "For the matrix,\n\n\\begin{align*}\n\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\n\\end{align*}\n\nwe have two more columns than rows (the matrix is rank deficient) and so\nwe have two free variables. Let \\emph{x}\\textsubscript{3} and\n\\emph{x}\\textsubscript{4} be those variables. Then from row 2 we have,\n\n\\begin{align*}\nx_2+2x_3-2x_4&=2\\\\\nx_2&=2-2x_3+2x_4\n\\end{align*}\n\nand from row 1 we have,\n\n\\begin{align*}\nx_1+2x_3-x_4&=1\\\\\nx_1&=1-2x_3+x_4.\n\\end{align*}\n\nTherefore we have two null vectors,\n\n\\begin{align*}\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n\\end{align*}\n\nand\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\end{align*}\n\nas well as a particular solution\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}.\n\\end{align*}\n\nTherefore the solution is\n\n\\begin{align*}\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nThere are an infinite number of solutions."
+    ], 
+    "sols_raw": [
+        "For the matrix,\n\n:&lt;math>\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; -1 \\\\ 0 &amp; 1 &amp; 2 &amp; -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\n&lt;/math>\n\nwe have two more columns than rows (the matrix is rank deficient) and so we have two free variables.  Let ''x''&lt;sub>3&lt;/sub> and ''x''&lt;sub>4&lt;/sub> be those variables.  Then from row 2 we have,\n\n:&lt;math>\n\\begin{align}\nx_2+2x_3-2x_4&amp;=2\\\\\nx_2&amp;=2-2x_3+2x_4\n\\end{align}\n&lt;/math>\n\nand from row 1 we have,\n\n:&lt;math>\n\\begin{align}\nx_1+2x_3-x_4&amp;=1\\\\\nx_1&amp;=1-2x_3+x_4.\n\\end{align}\n&lt;/math>\n\nTherefore we have two null vectors,\n\n:&lt;math>\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n&lt;/math>\n\nand\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}\n&lt;/math>\n\nas well as a particular solution\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}.\n&lt;/math>\n\nTherefore the solution is\n\n:&lt;math>\n\\mathbf{x}=\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n0\n\\end{bmatrix}\n+s\n\\begin{bmatrix}\n-2\\\\\n-2\\\\\n1\\\\\n0\n\\end{bmatrix}\n+t\n\\begin{bmatrix}\n1\\\\\n2\\\\\n0\\\\\n1\n\\end{bmatrix}.\n&lt;/math>\n\nThere are an infinite number of solutions.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>The augmented matrix below for a linear system is put in reduced row echelon form with row operations. Write one of the following:</p>\n<ul>\n<li><p>the solution if it is unique</p></li>\n<li><p>all solutions if there are more than one</p></li>\n<li><p>state that there are no solutions.</p></li>\n</ul>\n<p><strong>(e)</strong></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; -1 \\\\ 0 &amp; 1 &amp; 2 &amp; -2 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "The augmented matrix below for a linear system is put in reduced row\nechelon form with row operations. Write one of the following:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  the solution if it is unique\n\\item\n  all solutions if there are more than one\n\\item\n  state that there are no solutions.\n\\end{itemize}\n\n\\textbf{(e)}\n\n\\begin{align*}\n\\left[\\begin{array}{cccc}1 & 0 & 2 & -1 \\\\ 0 & 1 & 2 & -2 \\end{array}\\right.\\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\n\\end{align*}", 
+    "statement_raw": "The augmented matrix below for a linear system is put in reduced row echelon form with row operations. Write one of the following:\n* the solution if it is unique\n* all solutions if there are more than one\n* state that there are no solutions.\n\n'''(e)'''\n:&lt;math>\n\\left[\\begin{array}{cccc}1 &amp; 0 &amp; 2 &amp; -1 \\\\ 0 &amp; 1 &amp; 2 &amp; -2 \\end{array}\\right. \\left| \\begin{array}{c} 1 \\\\ 2 \\end{array}\\right]\n&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_04_(e)", 
+    "year": 2010
 }

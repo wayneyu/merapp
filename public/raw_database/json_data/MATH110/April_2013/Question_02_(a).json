@@ -1,15 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle f(3) = 0$\n\\item\n  $\\displaystyle f'(3) < 0$\n\\item\n  $\\displaystyle f''(3) > 0$\n\\end{enumerate}", 
-    "year": 2013, 
-    "sols": [
-        "A simple-like parabola with a zero at three will work. The other zero\none can be anywhere, for no particular reason lets make it at 5. So the\nfunction\n\n\\begin{align*}\\displaystyle f(x) = (x-3)(x-5) = x^{2} -8x + 15\\end{align*} satisfies all three\nconditions.\n\nTo double check,\n\n\\begin{align*}\nf(3) &= (3-3)(3-5) = 0 \\\\\nf'(3) &= 2(3)-8 = -2 <0  \\\\\nf''(3) &= 2 > 0 \\end{align*}\n\nLet's see the picture\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH110Q2aSolnApr2013.jpg}\n\\caption{MATH110Q2aSolnApr2013.jpg}\n\\end{figure}\n\n\\emph{Note: Many other functions are possible as well, it does not even\nhave to be a second order polynomial.}"
+    "answer_html": "<p><em>Note: Many other functions are possible as well, it does not even have to be a second order polynomial.</em></p>\n", 
+    "answer_latex": "\\emph{Note: Many other functions are possible as well, it does not even\nhave to be a second order polynomial.}", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Think about what each condition means.</p>\n<p>The first is asking for a function value at 3 to be equal to 0.</p>\n<p>What does the sign of the first and second derivative mean for the shape of the function?</p>\n", 
+        "<p>The first derivative tells us if the function is increasing or decreasing. Since the second condition says that that the first derivative is negative at 3, function is decreasing at 3.</p>\n", 
+        "<p>The second derivative tells us if the function is concave up or concave down. Since the third condition is saying that the second derivative is positive at 3, the function is concave up at 3.</p>\n"
+    ], 
+    "hints_latex": [
         "Think about what each condition means.\n\nThe first is asking for a function value at 3 to be equal to 0.\n\nWhat does the sign of the first and second derivative mean for the shape\nof the function?", 
         "The first derivative tells us if the function is increasing or\ndecreasing. Since the second condition says that that the first\nderivative is negative at 3, function is decreasing at 3.", 
         "The second derivative tells us if the function is concave up or concave\ndown. Since the third condition is saying that the second derivative is\npositive at 3, the function is concave up at 3."
-    ]
+    ], 
+    "hints_raw": [
+        "Think about what each condition means.\n\nThe first is asking for a function value at 3 to be equal to 0.\n\nWhat does the sign of the first and second derivative mean for the shape of the function?\n", 
+        "The first derivative tells us if the function is increasing or decreasing. Since the second condition says that that the first derivative is negative at 3, function is decreasing at 3.\n", 
+        "The second derivative tells us if the function is concave up or concave down. Since the third condition is saying that the second derivative is positive at 3, the function is concave up at 3.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A simple-like parabola with a zero at three will work. The other zero one can be anywhere, for no particular reason lets make it at 5. So the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x) = (x-3)(x-5) = x^{2} -8x + 15\\end{aligned}\\]</span></p>\n<p>satisfies all three conditions.</p>\n<p>To double check,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(3) &amp;= (3-3)(3-5) = 0 \\\\\nf&#39;(3) &amp;= 2(3)-8 = -2 &lt;0  \\\\\nf&#39;&#39;(3) &amp;= 2 &gt; 0 \\end{aligned}\\]</span></p>\n<p>Let&#8217;s see the picture</p>\n<p><img src=\"../json_data/MATH110/April_2013/MATH110Q2aSolnApr2013.jpg\" alt=\"image\" /></p>\n<p><em>Note: Many other functions are possible as well, it does not even have to be a second order polynomial.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "A simple-like parabola with a zero at three will work. The other zero\none can be anywhere, for no particular reason lets make it at 5. So the\nfunction\n\n\\begin{align*}\n\\displaystyle f(x) = (x-3)(x-5) = x^{2} -8x + 15\n\\end{align*} satisfies all three\nconditions.\n\nTo double check,\n\n\\begin{align*}\nf(3) &= (3-3)(3-5) = 0 \\\\\nf'(3) &= 2(3)-8 = -2 <0  \\\\\nf''(3) &= 2 > 0 \n\\end{align*}\n\nLet's see the picture\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/MATH110Q2aSolnApr2013.jpg}\n\n\\emph{Note: Many other functions are possible as well, it does not even\nhave to be a second order polynomial.}"
+    ], 
+    "sols_raw": [
+        "A simple-like parabola with a zero at three will work. The other zero one can be anywhere,  for no particular reason lets make it at 5. So the function\n:&lt;math>\n\\displaystyle f(x) = (x-3)(x-5) = x^{2} -8x + 15\n&lt;/math>\nsatisfies all three conditions.\n\nTo double check,\n\n&lt;math>\n\\begin{align}\nf(3) &amp;= (3-3)(3-5) = 0 \\\\\nf'(3) &amp;= 2(3)-8 = -2 &lt;0  \\\\\nf''(3) &amp;= 2 > 0 \\\\\n\\end{align}\n&lt;/math> \n\nLet's see the picture\n\n[[File:MATH110Q2aSolnApr2013.jpg|300px]]\n\n''Note: Many other functions are possible as well, it does not even have to be a second order polynomial.''\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><em>Sketch a single function satisfying all of the listed criteria.</em></p>\n<ol>\n<li><p><span class=\"math\">\\(\\displaystyle f(3) = 0\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle f&#39;(3) &lt; 0\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle f&#39;&#39;(3) &gt; 0\\)</span></p></li>\n</ol>\n", 
+    "statement_latex": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle f(3) = 0$\n\\item\n  $\\displaystyle f'(3) < 0$\n\\item\n  $\\displaystyle f''(3) > 0$\n\\end{enumerate}", 
+    "statement_raw": "''Sketch a single function satisfying all of the listed criteria.''\n\n# &lt;math>\\displaystyle f(3) = 0 &lt;/math>\n# &lt;math>\\displaystyle f'(3) &lt; 0 &lt;/math>\n# &lt;math>\\displaystyle f''(3) > 0 &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_02_(a)", 
+    "year": 2013
 }

@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
-    "course": "MATH104", 
-    "statement": "It costs a small firm C(q) dollars to produce q kilograms of a certain\nchemical, where\n\n\\begin{align*}\\displaystyle{}C(q)=3q^{4/3}+50q+10000\\end{align*}\n\nThe average cost of production per kilogram is defined to be\n\n\\begin{align*}\\displaystyle{}\\frac{C(q)}{q}.\\end{align*}\n\nUse calculus to find how many kilograms the firm should produce in order\nto minimize the average cost of production per kilogram. Please\nsimplify. You need not justify that your calculation actually minimizes\naverage cost.", 
-    "year": 2010, 
-    "sols": [
-        "Let $A(q)$ denote the average cost per kilogram of producing $q$\nkilograms of this chemical,\n\n\\begin{align*}A(q) = \\frac{C(q)}{q} = 3q^{1/3}+50+\\frac{10000}{q}.\\end{align*} The domain of\ninterest is $(0,\\infty)$ because the company cannot produce negative\nkilograms of their product. In order to find the absolute minimum of the\naverage cost function, we begin by looking for its critical points. The\nderivative of $A$ is\n\n\\begin{align*}A'(q) = q^{-2/3}-\\frac{10000}{q^2}  = \\frac{1}{q^2} (q^{4/3}-10000)\\end{align*}\nThis exists everywhere in our domain and is equal to zero when\n$q^{4/3}-10000 =0$, that is, when\n\n\\begin{align*}q^{\\frac43}=10000 = 10^4.\\end{align*} Since $q\\geq 0$, we can take the positive\nfourth root of both sides to obtain\n\n\\begin{align*}q^{\\frac13}=10.\\end{align*} Hence,\n\n\\begin{align*}q=10^3 = 1000\\end{align*} which is our final answer.\n\n\\emph{Note:}\n\n\\emph{It is easy to check that this is indeed an absolute minimum by\nnoting that $A'(q)<0$ when $q<1000$ and $A'(q)>0$ when $q>1000$. Since\n$A(q)$ is decreasing when $q<1000$ and increasing when $q>1000$, $A(q)$\nmust have an absolute minimum at $q=1000.$}\n\n\\emph{Hence, the company should produce 1000 kg of chemical in order to\nminimize its average cost.}"
+    "answer_html": "<p><em>Hence, the company should produce 1000 kg of chemical in order to minimize its average cost.</em></p>\n", 
+    "answer_latex": "\\emph{Hence, the company should produce 1000 kg of chemical in order to\nminimize its average cost.}", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "ChristinaKoch", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>If you are looking for maximum or minimum values of a function, you can start by looking for its critical points.</p>\n"
+    ], 
+    "hints_latex": [
         "If you are looking for maximum or minimum values of a function, you can\nstart by looking for its critical points."
-    ]
+    ], 
+    "hints_raw": [
+        "If you are looking for maximum or minimum values of a function, you can start by looking for its critical points.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "4", 
+    "rating": 73, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(A(q)\\)</span> denote the average cost per kilogram of producing <span class=\"math\">\\(q\\)</span> kilograms of this chemical,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA(q) = \\frac{C(q)}{q} = 3q^{1/3}+50+\\frac{10000}{q}.\\end{aligned}\\]</span></p>\n<p>The domain of interest is <span class=\"math\">\\((0,\\infty)\\)</span> because the company cannot produce negative kilograms of their product. In order to find the absolute minimum of the average cost function, we begin by looking for its critical points. The derivative of <span class=\"math\">\\(A\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA&#39;(q) = q^{-2/3}-\\frac{10000}{q^2}  = \\frac{1}{q^2} (q^{4/3}-10000)\\end{aligned}\\]</span></p>\n<p>This exists everywhere in our domain and is equal to zero when <span class=\"math\">\\(q^{4/3}-10000 =0\\)</span>, that is, when</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nq^{\\frac43}=10000 = 10^4.\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(q\\geq 0\\)</span>, we can take the positive fourth root of both sides to obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nq^{\\frac13}=10.\\end{aligned}\\]</span></p>\n<p>Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nq=10^3 = 1000\\end{aligned}\\]</span></p>\n<p>which is our final answer.</p>\n<p><em>Note:</em></p>\n<p><em>It is easy to check that this is indeed an absolute minimum by noting that <span class=\"math\">\\(A&#39;(q)&lt;0\\)</span> when <span class=\"math\">\\(q&lt;1000\\)</span> and <span class=\"math\">\\(A&#39;(q)&gt;0\\)</span> when <span class=\"math\">\\(q&gt;1000\\)</span>. Since <span class=\"math\">\\(A(q)\\)</span> is decreasing when <span class=\"math\">\\(q&lt;1000\\)</span> and increasing when <span class=\"math\">\\(q&gt;1000\\)</span>, <span class=\"math\">\\(A(q)\\)</span> must have an absolute minimum at <span class=\"math\">\\(q=1000.\\)</span></em></p>\n<p><em>Hence, the company should produce 1000 kg of chemical in order to minimize its average cost.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "Let $A(q)$ denote the average cost per kilogram of producing $q$\nkilograms of this chemical,\n\n\\begin{align*}\nA(q) = \\frac{C(q)}{q} = 3q^{1/3}+50+\\frac{10000}{q}.\n\\end{align*} The domain of\ninterest is $(0,\\infty)$ because the company cannot produce negative\nkilograms of their product. In order to find the absolute minimum of the\naverage cost function, we begin by looking for its critical points. The\nderivative of $A$ is\n\n\\begin{align*}\nA'(q) = q^{-2/3}-\\frac{10000}{q^2}  = \\frac{1}{q^2} (q^{4/3}-10000)\n\\end{align*}\nThis exists everywhere in our domain and is equal to zero when\n$q^{4/3}-10000 =0$, that is, when\n\n\\begin{align*}\nq^{\\frac43}=10000 = 10^4.\n\\end{align*} Since $q\\geq 0$, we can take the positive\nfourth root of both sides to obtain\n\n\\begin{align*}\nq^{\\frac13}=10.\n\\end{align*} Hence,\n\n\\begin{align*}\nq=10^3 = 1000\n\\end{align*} which is our final answer.\n\n\\emph{Note:}\n\n\\emph{It is easy to check that this is indeed an absolute minimum by\nnoting that $A'(q)<0$ when $q<1000$ and $A'(q)>0$ when $q>1000$. Since\n$A(q)$ is decreasing when $q<1000$ and increasing when $q>1000$, $A(q)$\nmust have an absolute minimum at $q=1000.$}\n\n\\emph{Hence, the company should produce 1000 kg of chemical in order to\nminimize its average cost.}"
+    ], 
+    "sols_raw": [
+        "Let &lt;math>A(q)&lt;/math> denote the average cost per kilogram of producing &lt;math>q&lt;/math> kilograms of this chemical,\n:&lt;math>A(q) = \\frac{C(q)}{q} = 3q^{1/3}+50+\\frac{10000}{q}.&lt;/math>\nThe domain of interest is &lt;math>(0,\\infty)&lt;/math> because the company cannot produce negative kilograms of their product. In order to find the absolute minimum of the average cost function, we begin by looking for its critical points.  The derivative of &lt;math>A&lt;/math> is\n:&lt;math>A'(q) = q^{-2/3}-\\frac{10000}{q^2}  = \\frac{1}{q^2} (q^{4/3}-10000)&lt;/math>\nThis exists everywhere in our domain and is equal to zero when &lt;math> q^{4/3}-10000 =0&lt;/math>, that is, when \n:&lt;math>q^{\\frac43}=10000 = 10^4.&lt;/math>  \nSince &lt;math>q\\geq 0&lt;/math>, we can take the positive fourth root of both sides to obtain \n:&lt;math>q^{\\frac13}=10.&lt;/math>  \nHence, \n:&lt;math>q=10^3 = 1000&lt;/math>\nwhich is our final answer.\n\n\n''Note:''\n\n''It is easy to check that this is indeed an absolute minimum by noting that &lt;math> A'(q)&lt;0&lt;/math> when &lt;math>q&lt;1000 &lt;/math> and &lt;math> A'(q)>0&lt;/math> when &lt;math>q>1000 &lt;/math>.  Since &lt;math>A(q) &lt;/math> is decreasing when &lt;math> q&lt;1000&lt;/math> and increasing when &lt;math> q>1000&lt;/math>, &lt;math>A(q) &lt;/math> must have an absolute minimum at &lt;math> q=1000.&lt;/math>''\n\n''Hence, the company should produce 1000 kg of chemical in order to minimize its average cost.''\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>It costs a small firm C(q) dollars to produce q kilograms of a certain chemical, where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}C(q)=3q^{4/3}+50q+10000\\end{aligned}\\]</span></p>\n<p>The average cost of production per kilogram is defined to be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}\\frac{C(q)}{q}.\\end{aligned}\\]</span></p>\n<p>Use calculus to find how many kilograms the firm should produce in order to minimize the average cost of production per kilogram. Please simplify. You need not justify that your calculation actually minimizes average cost.</p>\n", 
+    "statement_latex": "It costs a small firm C(q) dollars to produce q kilograms of a certain\nchemical, where\n\n\\begin{align*}\n\\displaystyle{}C(q)=3q^{4/3}+50q+10000\n\\end{align*}\n\nThe average cost of production per kilogram is defined to be\n\n\\begin{align*}\n\\displaystyle{}\\frac{C(q)}{q}.\n\\end{align*}\n\nUse calculus to find how many kilograms the firm should produce in order\nto minimize the average cost of production per kilogram. Please\nsimplify. You need not justify that your calculation actually minimizes\naverage cost.", 
+    "statement_raw": "It costs a small firm C(q) dollars to produce q kilograms of a certain chemical, where\n\n:&lt;math>\n\\displaystyle{}C(q)=3q^{4/3}+50q+10000\n&lt;/math>\n\nThe average cost of production per kilogram is defined to be\n\n:&lt;math>\n\\displaystyle{}\\frac{C(q)}{q}.\n&lt;/math>\n\nUse calculus to find how many kilograms the firm should produce in order to minimize the average cost of production per kilogram.  Please simplify.  You need not justify that your calculation actually minimizes average cost.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_04", 
+    "year": 2010
 }

@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH101", 
-    "statement": "Evaluate\n$\\int_0^1 \\left( \\sqrt{x^3} + \\left(x^2\\right)^{1/3}\\right)\\,dx.$\nSimplify your answer as much as possible.", 
-    "year": 2010, 
-    "sols": [
-        "$\\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}= \\int_0^1{ x^{\\frac{3}{2}}+x^{\\frac{2}{3}}dx} = \\left. \\left(\\frac{2x^{\\frac{5}{2}}}{5}+\\frac{3x^{\\frac{5}{3}}}{5}\\right)\\right|_0^1 = \\frac{2}{5}+\\frac{3}{5}=1$"
+    "answer_html": "<p><span class=\"math\">\\(\\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}=1\\)</span></p>\n", 
+    "answer_latex": "$\\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}=1$", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IsabellGraf", 
+        "Konradbe", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Convert the powers to fractions.</p>\n<p>More correct way to say this: Write each of <span class=\"math\">\\(\\sqrt{x^3}\\)</span> and <span class=\"math\">\\(\\left(x^2\\right)^{1/3}\\)</span> as a power of <span class=\"math\">\\(\\displaystyle { x }\\)</span> with a fractional exponent.</p>\n"
+    ], 
+    "hints_latex": [
         "Convert the powers to fractions.\n\nMore correct way to say this: Write each of $\\sqrt{x^3}$ and\n$\\left(x^2\\right)^{1/3}$ as a power of $\\displaystyle { x }$ with a\nfractional exponent."
-    ]
+    ], 
+    "hints_raw": [
+        "Convert the powers to fractions.\n\nMore correct way to say this: Write each of &lt;math> \\sqrt{x^3} &lt;/math> and &lt;math>\\left(x^2\\right)^{1/3} &lt;/math> as a power of  &lt;math> \\displaystyle{ x } &lt;/math> with a fractional exponent.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "1 (a)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(\\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}= \\int_0^1{ x^{\\frac{3}{2}}+x^{\\frac{2}{3}}dx} = \\left.\\left(\\frac{2x^{\\frac{5}{2}}}{5}+\\frac{3x^{\\frac{5}{3}}}{5}\\right)\\right|_0^1 = \\frac{2}{5}+\\frac{3}{5}=1\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "$\\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}= \\int_0^1{ x^{\\frac{3}{2}}+x^{\\frac{2}{3}}dx} = \\left.\\left(\\frac{2x^{\\frac{5}{2}}}{5}+\\frac{3x^{\\frac{5}{3}}}{5}\\right)\\right|_0^1 = \\frac{2}{5}+\\frac{3}{5}=1$"
+    ], 
+    "sols_raw": [
+        "&lt;math> \\int_0^1 {\\sqrt{x^3}+x^{\\frac{2}{3}}dx}= \\int_0^1{ x^{\\frac{3}{2}}+x^{\\frac{2}{3}}dx} = \\left. \\left(\\frac{2x^{\\frac{5}{2}}}{5}+\\frac{3x^{\\frac{5}{3}}}{5}\\right)\\right|_0^1 = \\frac{2}{5}+\\frac{3}{5}=1 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int_0^1 \\left( \\sqrt{x^3} + \\left(x^2\\right)^{1/3}\\right)\\,dx.\\)</span> Simplify your answer as much as possible.</p>\n", 
+    "statement_latex": "Evaluate\n$\\int_0^1 \\left( \\sqrt{x^3} + \\left(x^2\\right)^{1/3}\\right)\\,dx.$\nSimplify your answer as much as possible.", 
+    "statement_raw": "Evaluate &lt;math> \\int_0^1 \\left( \\sqrt{x^3} + \\left(x^2\\right)^{1/3}\\right)\\,dx. &lt;/math>  Simplify your answer as much as possible.\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_01_(a)", 
+    "year": 2010
 }

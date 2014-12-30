@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH105", 
-    "statement": "Let $\\displaystyle f(x,y) = xye^{-2x-y}$.\n\nFind all critical points of $f(x,y)$.", 
-    "year": 2013, 
-    "sols": [
-        "The critical points of a multivariable function $f(x,y)$ are the values\nof $(x,y)$ where the following conditions are both simultaneously true:\n\n\\begin{align*}\\begin{cases}\n\\frac{\\partial f}{\\partial x}(x,y) = 0 \\\\\n\\frac{\\partial f}{\\partial y}(x,y) = 0\n\\end{cases}\\end{align*} Since $\\displaystyle f(x,y) = xye^{-2x-y}$, the above\nconditions become:\n\n\\begin{align*}\\begin{cases}\nye^{-2x - y} -2xye^{-2x - y} = 0 \\\\\nxe^{-2x - y} - xye^{-2x - y} = 0\n\\end{cases}\\end{align*} To solve these equations, we begin by factoring the\nleft-hand sides, giving us\n\n\\begin{align*}\\begin{cases}\ny(1 - 2x)e^{-2x - y} = 0 \\\\\nx(1 - y)e^{-2x - y} = 0\n\\end{cases}\\end{align*} Since the exponential function is never zero, the\nequations above are equivalent to\n\n\\begin{align*}\\begin{cases}\ny(1 - 2x) = 0 \\quad &(1) \\\\\nx(1 - y) = 0. \\quad &(2)\n\\end{cases}\\end{align*}\n\nWe now proceed to determine the values of $(x,y)$ such both Eq. (1) and\n(2) hold. The solutions to Eq. (1) are $y = 0$ and $x = 1/2$. We take\neach of these solutions and plug them into Eq. (2).\n\nIf $y = 0$, then Eq. (2) becomes:\n\n\\begin{align*}x(1-0) = 0 \\quad \\rightarrow \\quad x = 0.\\end{align*} Hence one of the critical\npoints is $(x,y) = (0,0)$.\n\nIf $x = 1/2$, then Eq. (2) becomes:\n\n\\begin{align*}\\frac{1}{2}(1 - y) = 0 \\quad \\rightarrow \\quad y = 1.\\end{align*} So, another\ncritical point is $(x,y) = (1/2,1)$.\n\nTherefore, the critical points of $f$ are\n${\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}$"
+    "answer_html": "<p>Therefore, the critical points of <span class=\"math\">\\(f\\)</span> are <span class=\"math\">\\({\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}={\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}\\)</span></p>\n", 
+    "answer_latex": "Therefore, the critical points of $f$ are\n${\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}={\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is true about the partial derivatives of a multi-variable function at critical points?</p>\n"
+    ], 
+    "hints_latex": [
         "What is true about the partial derivatives of a multi-variable function\nat critical points?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is true about the partial derivatives of a multi-variable function at critical points?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "4 (a)", 
+    "rating": 79, 
+    "sols_html": [
+        "<p>The critical points of a multivariable function <span class=\"math\">\\(f(x,y)\\)</span> are the values of <span class=\"math\">\\((x,y)\\)</span> where the following conditions are both simultaneously true:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\n\\frac{\\partial f}{\\partial x}(x,y) = 0 \\\\\n\\frac{\\partial f}{\\partial y}(x,y) = 0\n\\end{cases}\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(\\displaystyle f(x,y) = xye^{-2x-y}\\)</span>, the above conditions become:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\nye^{-2x - y} -2xye^{-2x - y} = 0 \\\\\nxe^{-2x - y} - xye^{-2x - y} = 0\n\\end{cases}\\end{aligned}\\]</span></p>\n<p>To solve these equations, we begin by factoring the left-hand sides, giving us</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\ny(1 - 2x)e^{-2x - y} = 0 \\\\\nx(1 - y)e^{-2x - y} = 0\n\\end{cases}\\end{aligned}\\]</span></p>\n<p>Since the exponential function is never zero, the equations above are equivalent to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\ny(1 - 2x) = 0 \\quad &amp;(1) \\\\\nx(1 - y) = 0. \\quad &amp;(2)\n\\end{cases}\\end{aligned}\\]</span></p>\n<p>We now proceed to determine the values of <span class=\"math\">\\((x,y)\\)</span> such both Eq. (1) and (2) hold. The solutions to Eq. (1) are <span class=\"math\">\\(y = 0\\)</span> and <span class=\"math\">\\(x = 1/2\\)</span>. We take each of these solutions and plug them into Eq. (2).</p>\n<p>If <span class=\"math\">\\(y = 0\\)</span>, then Eq. (2) becomes:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx(1-0) = 0 \\quad \\rightarrow \\quad x = 0.\\end{aligned}\\]</span></p>\n<p>Hence one of the critical points is <span class=\"math\">\\((x,y) = (0,0)\\)</span>.</p>\n<p>If <span class=\"math\">\\(x = 1/2\\)</span>, then Eq. (2) becomes:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{2}(1 - y) = 0 \\quad \\rightarrow \\quad y = 1.\\end{aligned}\\]</span></p>\n<p>So, another critical point is <span class=\"math\">\\((x,y) = (1/2,1)\\)</span>.</p>\n<p>Therefore, the critical points of <span class=\"math\">\\(f\\)</span> are <span class=\"math\">\\({\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The critical points of a multivariable function $f(x,y)$ are the values\nof $(x,y)$ where the following conditions are both simultaneously true:\n\n\\begin{align*}\n\\begin{cases}\n\\frac{\\partial f}{\\partial x}(x,y) = 0 \\\\\n\\frac{\\partial f}{\\partial y}(x,y) = 0\n\\end{cases}\n\\end{align*} Since $\\displaystyle f(x,y) = xye^{-2x-y}$, the above\nconditions become:\n\n\\begin{align*}\n\\begin{cases}\nye^{-2x - y} -2xye^{-2x - y} = 0 \\\\\nxe^{-2x - y} - xye^{-2x - y} = 0\n\\end{cases}\n\\end{align*} To solve these equations, we begin by factoring the\nleft-hand sides, giving us\n\n\\begin{align*}\n\\begin{cases}\ny(1 - 2x)e^{-2x - y} = 0 \\\\\nx(1 - y)e^{-2x - y} = 0\n\\end{cases}\n\\end{align*} Since the exponential function is never zero, the\nequations above are equivalent to\n\n\\begin{align*}\n\\begin{cases}\ny(1 - 2x) = 0 \\quad &(1) \\\\\nx(1 - y) = 0. \\quad &(2)\n\\end{cases}\n\\end{align*}\n\nWe now proceed to determine the values of $(x,y)$ such both Eq. (1) and\n(2) hold. The solutions to Eq. (1) are $y = 0$ and $x = 1/2$. We take\neach of these solutions and plug them into Eq. (2).\n\nIf $y = 0$, then Eq. (2) becomes:\n\n\\begin{align*}\nx(1-0) = 0 \\quad \\rightarrow \\quad x = 0.\n\\end{align*} Hence one of the critical\npoints is $(x,y) = (0,0)$.\n\nIf $x = 1/2$, then Eq. (2) becomes:\n\n\\begin{align*}\n\\frac{1}{2}(1 - y) = 0 \\quad \\rightarrow \\quad y = 1.\n\\end{align*} So, another\ncritical point is $(x,y) = (1/2,1)$.\n\nTherefore, the critical points of $f$ are\n${\\color{blue}\\displaystyle (x,y) = (0,0),\\left(\\frac{1}{2},1\\right).}$"
+    ], 
+    "sols_raw": [
+        "The critical points of a multivariable function &lt;math>f(x,y)&lt;/math> are the values of &lt;math>(x,y)&lt;/math> where the following conditions are both simultaneously true:\n:&lt;math>\n\\begin{cases}\n\\frac{\\partial f}{\\partial x}(x,y) = 0 \\\\\n\\frac{\\partial f}{\\partial y}(x,y) = 0\n\\end{cases}\n&lt;/math>\nSince &lt;math>\\displaystyle f(x,y) = xye^{-2x-y}&lt;/math>, the above conditions become:\n:&lt;math>\n\\begin{cases}\nye^{-2x - y} -2xye^{-2x - y} = 0 \\\\\nxe^{-2x - y} - xye^{-2x - y} = 0\n\\end{cases}\n&lt;/math>\nTo solve these equations, we begin by factoring the left-hand sides, giving us\n:&lt;math>\n\\begin{cases}\ny(1 - 2x)e^{-2x - y} = 0 \\\\\nx(1 - y)e^{-2x - y} = 0\n\\end{cases}\n&lt;/math>\nSince the exponential function is never zero, the equations above are equivalent to\n:&lt;math>\n\\begin{cases}\ny(1 - 2x) = 0 \\quad &amp;(1) \\\\\nx(1 - y) = 0. \\quad &amp;(2)\n\\end{cases}\n&lt;/math>\n\nWe now proceed to determine the values of &lt;math>(x,y)&lt;/math> such both Eq. (1) and (2) hold. The solutions to Eq. (1) are &lt;math>y = 0&lt;/math> and &lt;math>x = 1/2&lt;/math>. We take each of these solutions and plug them into Eq. (2).\n\nIf &lt;math>y = 0&lt;/math>, then Eq. (2) becomes:\n:&lt;math>\nx(1-0) = 0 \\quad \\rightarrow \\quad x = 0.\n&lt;/math>\nHence one of the critical points is &lt;math>(x,y) = (0,0)&lt;/math>.\n\nIf &lt;math>x = 1/2&lt;/math>, then Eq. (2) becomes:\n:&lt;math>\n\\frac{1}{2}(1 - y) = 0 \\quad \\rightarrow \\quad y = 1.\n&lt;/math>\nSo, another critical point is &lt;math>(x,y) = (1/2,1)&lt;/math>.\n\n&lt;font style=\"color:blue;\">Therefore, the critical points of &lt;math>f&lt;/math> are &lt;math>\n{\\color{blue}\\displaystyle (x,y) = (0,0), \\left(\\frac{1}{2},1\\right).}\n&lt;/math>\n&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\displaystyle f(x,y) = xye^{-2x-y}\\)</span>.</p>\n<p>Find all critical points of <span class=\"math\">\\(f(x,y)\\)</span>.</p>\n", 
+    "statement_latex": "Let $\\displaystyle f(x,y) = xye^{-2x-y}$.\n\nFind all critical points of $f(x,y)$.", 
+    "statement_raw": "Let &lt;math>\\displaystyle f(x,y) = xye^{-2x-y}&lt;/math>.\n\nFind all critical points of &lt;math>f(x,y)&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Multivariable_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_04_(a)", 
+    "year": 2013
 }

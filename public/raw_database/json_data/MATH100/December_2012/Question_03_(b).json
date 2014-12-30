@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
+    "answer_html": "<p>As these two limits are the same and our function <span class=\"math\">\\(f(x)\\)</span> is bounded below and above by the two functions above, we have that <span class=\"math\">\\(\\lim_{x \\to 4}f(x) = 7\\)</span> by the squeeze theorem.</p>\n", 
+    "answer_latex": "As these two limits are the same and our function $f(x)$ is bounded\nbelow and above by the two functions above, we have that\n$\\lim_{x \\to 4}f(x) = 7$ by the squeeze theorem.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $4x-9 \\leq f(x) \\leq x^2 -4x + 7$ for $x \\geq 0$, find\n$\\lim_{x \\to 4}f(x)$", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This question looks ready for an application of the squeeze theorem which states if functions <em>f</em>,<em>g</em>,<em>h</em> are such that</p>\n<p><span class=\"math\">\\(g(x) \\leq f(x) \\leq h(x)\\)</span></p>\n<p>and if <span class=\"math\">\\(\\lim_{x \\to a}g(x) = L = \\lim_{x \\to a}h(x)\\)</span>, then <span class=\"math\">\\(\\lim_{x \\to a}f(x)= L\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "This question looks ready for an application of the squeeze theorem\nwhich states if functions \\emph{f},\\emph{g},\\emph{h} are such that\n\n$g(x) \\leq f(x) \\leq h(x)$\n\nand if $\\lim_{x \\to a}g(x) = L = \\lim_{x \\to a}h(x)$, then\n$\\lim_{x \\to a}f(x)= L$."
+    ], 
+    "hints_raw": [
+        "This question looks ready for an application of the squeeze theorem which states if functions ''f'',''g'',''h'' are such that\n\n&lt;math>\ng(x) \\leq f(x) \\leq h(x)\n&lt;/math>\n\nand if &lt;math>\\lim_{x \\to a}g(x) = L = \\lim_{x \\to a}h(x) &lt;/math>, then &lt;math>\\lim_{x \\to a}f(x)= L&lt;/math>.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "3 (b)", 
+    "rating": 96, 
+    "sols_html": [
+        "<p>Following the advice of the hint since</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 4}(4x-9) = 4(4)-9 = 16-9 = 7\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 4}(x^{2}-4x+7) = (4)^{2}-4(4)+7 = 16-16+7 = 7\\)</span></p>\n<p>As these two limits are the same and our function <span class=\"math\">\\(f(x)\\)</span> is bounded below and above by the two functions above, we have that <span class=\"math\">\\(\\lim_{x \\to 4}f(x) = 7\\)</span> by the squeeze theorem.</p>\n"
+    ], 
+    "sols_latex": [
         "Following the advice of the hint since\n\n$\\lim_{x \\to 4}(4x-9) = 4(4)-9 = 16-9 = 7$\n\nand\n\n$\\lim_{x \\to 4}(x^{2}-4x+7) = (4)^{2}-4(4)+7 = 16-16+7 = 7$\n\nAs these two limits are the same and our function $f(x)$ is bounded\nbelow and above by the two functions above, we have that\n$\\lim_{x \\to 4}f(x) = 7$ by the squeeze theorem."
     ], 
-    "hints": [
-        "This question looks ready for an application of the squeeze theorem\nwhich states if functions \\emph{f},\\emph{g},\\emph{h} are such that\n\n$g(x) \\leq f(x) \\leq h(x)$\n\nand if $\\lim_{x \\to a}g(x) = L = \\lim_{x \\to a}h(x)$, then\n$\\lim_{x \\to a}f(x)= L$."
-    ]
+    "sols_raw": [
+        "Following the advice of the hint since\n\n&lt;math>\n\\lim_{x \\to 4}(4x-9) = 4(4)-9 = 16-9 = 7\n&lt;/math>\n\nand\n\n&lt;math>\n\\lim_{x \\to 4}(x^{2}-4x+7) = (4)^{2}-4(4)+7 = 16-16+7 = 7\n&lt;/math>\n\nAs these two limits are the same and our function &lt;math>f(x) &lt;/math> is bounded below and above by the two functions above, we have that &lt;math> \\lim_{x \\to 4}f(x) = 7 &lt;/math> by the squeeze theorem.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>If <span class=\"math\">\\(4x-9 \\leq f(x) \\leq x^2 -4x + 7\\)</span> for <span class=\"math\">\\(x \\geq 0\\)</span>, find <span class=\"math\">\\(\\lim_{x \\to 4}f(x)\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $4x-9 \\leq f(x) \\leq x^2 -4x + 7$ for $x \\geq 0$, find\n$\\lim_{x \\to 4}f(x)$", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nIf &lt;math> 4x-9 \\leq f(x) \\leq x^2 -4x + 7&lt;/math> for &lt;math> x \\geq 0&lt;/math>, find &lt;math>\\lim_{x \\to 4}f(x) &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_03_(b)", 
+    "year": 2012
 }

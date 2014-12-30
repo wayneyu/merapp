@@ -1,9 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_07", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "CarmenBruni"
+    ], 
     "course": "MATH215", 
-    "statement": "Suppose that $p(t)$ and $q(t)$ are continuous functions on $(0,\\infty)$.\nFind a particular solution to the inhomogeneous equation\n\n$ty'' + p(t)y' + q(t)y = t^3 \\quad  t > 0$\n\ngiven that $\\displaystyle \\{t, t^2\\}$ is a fundamental set of solutions\nto the homogeneous equation\n\n$\\displaystyle ty'' + p(t)y' + q(t)y = 0$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "7", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Suppose that <span class=\"math\">\\(p(t)\\)</span> and <span class=\"math\">\\(q(t)\\)</span> are continuous functions on <span class=\"math\">\\((0,\\infty)\\)</span>. Find a particular solution to the inhomogeneous equation</p>\n<p><span class=\"math\">\\(ty&#39;&#39; + p(t)y&#39; + q(t)y = t^3 \\quad  t &gt; 0\\)</span></p>\n<p>given that <span class=\"math\">\\(\\displaystyle \\{t, t^2\\}\\)</span> is a fundamental set of solutions to the homogeneous equation</p>\n<p><span class=\"math\">\\(\\displaystyle ty&#39;&#39; + p(t)y&#39; + q(t)y = 0\\)</span></p>\n", 
+    "statement_latex": "Suppose that $p(t)$ and $q(t)$ are continuous functions on $(0,\\infty)$.\nFind a particular solution to the inhomogeneous equation\n\n$ty'' + p(t)y' + q(t)y = t^3 \\quad  t > 0$\n\ngiven that $\\displaystyle \\{t, t^2\\}$ is a fundamental set of solutions\nto the homogeneous equation\n\n$\\displaystyle ty'' + p(t)y' + q(t)y = 0$", 
+    "statement_raw": "Suppose that &lt;math> p(t) &lt;/math> and &lt;math> q(t) &lt;/math> are continuous functions on &lt;math> (0,\\infty)&lt;/math>. Find a particular solution to the inhomogeneous equation\n\n&lt;math> ty'' + p(t)y' + q(t)y = t^3 \\quad  t > 0 &lt;/math>\n\ngiven that &lt;math> \\displaystyle \\{t, t^2\\} &lt;/math> is a fundamental set of solutions to the homogeneous equation\n\n&lt;math> \\displaystyle ty'' + p(t)y' + q(t)y = 0 &lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/April_2013/Question_07", 
+    "year": 2013
 }

@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH103", 
-    "statement": "Evaluate the integral (Hint: use trigonometric identities.)\n\n$I_2 = \\int (\\sin x)^3 (\\cos x)^2\\,dx.$", 
-    "year": 2011, 
-    "sols": [
-        "\\begin{align*}\nI_2&=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\\end{align*}\n\nLet $u=\\cos x$ so that $du=-\\sin x dx.$ Then\n\n\\begin{align*}\nI_2&=-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(I_2=\\frac15\\cos^5x-\\frac13\\cos^3x  +C\\)</span></p>\n", 
+    "answer_latex": " $I_2=\\frac15\\cos^5x-\\frac13\\cos^3x  +C$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use a trigonometric identity to prepare the integrand for a substitution.</p>\n", 
+        "<p>Use the identity</p>\n<p><span class=\"math\">\\(\\sin^2x=1-\\cos^2x.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Use a trigonometric identity to prepare the integrand for a\nsubstitution.", 
         "Use the identity\n\n$\\sin^2x=1-\\cos^2x.$"
-    ]
+    ], 
+    "hints_raw": [
+        "Use a trigonometric identity to prepare the integrand for a substitution.\n", 
+        "Use the identity\n\n&lt;math> \\sin^2x=1-\\cos^2x. &lt;/math>\n"
+    ], 
+    "num_votes": 8, 
+    "question": "2 (b)", 
+    "rating": 79, 
+    "sols_html": [
+        "<p><span class=\"math\">\\[\\begin{aligned}\nI_2&amp;=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\\end{aligned}\\]</span></p>\n<p>Let <span class=\"math\">\\(u=\\cos x\\)</span> so that <span class=\"math\">\\(du=-\\sin x dx.\\)</span> Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI_2&amp;=-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&amp;= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{align*}\nI_2&=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\n\\end{align*}\n\nLet $u=\\cos x$ so that $du=-\\sin x dx.$ Then\n\n\\begin{align*}\nI_2&=-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "&lt;math> \\begin{align}\nI_2&amp;=\\int \\sin^3x\\cos^2 x\\, dx =\\int (1-\\cos^2 x)\\cos^2x \\sin x\\, dx\n\\end{align}&lt;/math>\n\nLet &lt;math>u=\\cos x &lt;/math> so that &lt;math>du=-\\sin x dx. &lt;/math>  Then\n\n&lt;math> \\begin{align}\nI_2&amp; =-\\int (1-u^2 )u^2 \\, du = \\int (u^4-u^2 ) \\, du\\\\\n&amp;= \\frac15u^5-\\frac13u^3  +C= \\frac15\\cos^5x-\\frac13\\cos^3x  +C\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Evaluate the integral (Hint: use trigonometric identities.)</p>\n<p><span class=\"math\">\\(I_2 = \\int (\\sin x)^3 (\\cos x)^2\\,dx.\\)</span></p>\n", 
+    "statement_latex": "Evaluate the integral (Hint: use trigonometric identities.)\n\n$I_2 = \\int (\\sin x)^3 (\\cos x)^2\\,dx.$", 
+    "statement_raw": "Evaluate the integral (Hint: use trigonometric identities.)\n\n&lt;math>I_2 = \\int (\\sin x)^3 (\\cos x)^2\\,dx.&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution", 
+        "Trigonometric_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_02_(b)", 
+    "year": 2011
 }

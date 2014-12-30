@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)_ii", 
-    "course": "MATH102", 
-    "statement": "Circle the function that solves the following differential equation\n\n\\begin{align*}\\frac{dy}{dx} = 2xy.\\end{align*}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle y = xe^{2x}$\n\\item\n  $\\displaystyle y = \\frac1{2x}$\n\\item\n  $\\displaystyle y = -e^{-x}$\n\\item\n  $\\displaystyle y = -3e^{x^2}$\n\\item\n  $\\displaystyle y = 3e^{-x^2}$\n\\end{enumerate}", 
-    "year": 2011, 
-    "sols": [
-        "To solve this, we compare the left and right-hand sides of the equation,\n\n\\begin{align*}\\frac{dy}{dx} = 2xy.\\end{align*}\n\n1. $\\displaystyle y = xe^{2x}$.\n\n\\begin{align*}\\begin{cases}\n\\frac{dy}{dx} &= e^{2x} + 2xe^{2x} \\\\\n2xy &= 2x^{2}e^{2x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{align*} Therefore,\n(1.) is not the answer.\n\n2. $\\displaystyle y = \\frac{1}{2x}$.\n\n\\begin{align*}\\begin{cases}\n\\frac{dy}{dx} &= -\\frac{1}{2x^{2}} \\\\\n2xy &= 1\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{align*} Therefore,\n(2.) is not the answer.\n\n3. $\\displaystyle y = -e^{-x}$.\n\n\\begin{align*}\\begin{cases}\n\\frac{dy}{dx} &= e^{-x} \\\\\n2xy &= -2xe^{-x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{align*} Therefore,\n(3.) is not the answer.\n\n4. ${\\color{blue}y =-3e^{x^2}}$.\n\n\\begin{align*}\\begin{cases}\n\\frac{dy}{dx} &= -6xe^{x^{2}} \\\\\n2xy &= -6xe^{x^{2}}\n\\end{cases} \\quad \\rightarrow \\quad {\\color{blue}\\frac{dy}{dx} =2xy}\\end{align*}\nTherefore, (4.) IS the answer.\n\n5. $\\displaystyle y = 3e^{-x^2}$.\n\n\\begin{align*}\\begin{cases}\n\\frac{dy}{dx} &= -6xe^{-x^{2}} \\\\\n2xy &= 6xe^{-x^{2}}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{align*} Therefore,\n(5.) is not the answer."
+    "answer_html": "<p>Finally, the in case 4 we have <span class=\"math\">\\(\\frac{dy}{dx} = 2xy\\)</span>.</p>\n", 
+    "answer_latex": "Finally, the in case 4 we have $\\frac{dy}{dx} = 2xy$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Try comparing the left and right hand side of the equation\n\n\\begin{align*}\\frac{dy}{dx} = 2xy\\end{align*} for the given possible solutions, $y$."
-    ]
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try comparing the left and right hand side of the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = 2xy\\end{aligned}\\]</span></p>\n<p>for the given possible solutions, <span class=\"math\">\\(y\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Try comparing the left and right hand side of the equation\n\n\\begin{align*}\n\\frac{dy}{dx} = 2xy\n\\end{align*} for the given possible solutions, $y$."
+    ], 
+    "hints_raw": [
+        "Try comparing the left and right hand side of the equation\n:&lt;math>\n\\frac{dy}{dx} = 2xy\n&lt;/math>\nfor the given possible solutions, &lt;math>y&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (b) ii", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>To solve this, we compare the left and right-hand sides of the equation,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = 2xy.\\end{aligned}\\]</span></p>\n<p>1. <span class=\"math\">\\(\\displaystyle y = xe^{2x}\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\n\\frac{dy}{dx} &amp;= e^{2x} + 2xe^{2x} \\\\\n2xy &amp;= 2x^{2}e^{2x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{aligned}\\]</span></p>\n<p>Therefore, (1.) is not the answer.</p>\n<p>2. <span class=\"math\">\\(\\displaystyle y = \\frac{1}{2x}\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\n\\frac{dy}{dx} &amp;= -\\frac{1}{2x^{2}} \\\\\n2xy &amp;= 1\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{aligned}\\]</span></p>\n<p>Therefore, (2.) is not the answer.</p>\n<p>3. <span class=\"math\">\\(\\displaystyle y = -e^{-x}\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\n\\frac{dy}{dx} &amp;= e^{-x} \\\\\n2xy &amp;= -2xe^{-x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\\end{aligned}\\]</span></p>\n<p>Therefore, (3.) is not the answer.</p>\n<p>4. <span class=\"math\">\\({\\color{blue}y =-3e^{x^2}}\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\n\\frac{dy}{dx} &amp;= -6xe^{x^{2}} \\\\\n2xy &amp;= -6xe^{x^{2}}\n\\end{cases} \\quad \\rightarrow \\quad {\\color{blue}\\frac{dy}{dx} =2xy}\\end{aligned}\\]</span></p>\n<p>Therefore, (4.) IS the answer.</p>\n<p>5. <span class=\"math\">\\(\\displaystyle y = 3e^{-x^2}\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases}\\frac{dy}{dx} &amp;= -6xe^{-x^{2}} \\\\\n2xy &amp;= 6xe^{-x^{2}}\\end{cases}\\end{aligned}\\]</span></p>\n<p>Hence, <span class=\"math\">\\(\\frac{dy}{dx} \\ne 2xy\\)</span> and therefore, (5.) is not the answer.</p>\n<p>Finally, the in case 4 we have <span class=\"math\">\\(\\frac{dy}{dx} = 2xy\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "To solve this, we compare the left and right-hand sides of the equation,\n\n\\begin{align*}\n\\frac{dy}{dx} = 2xy.\n\\end{align*}\n\n1. $\\displaystyle y = xe^{2x}$.\n\n\\begin{align*}\n\\begin{cases}\n\\frac{dy}{dx} &= e^{2x} + 2xe^{2x} \\\\\n2xy &= 2x^{2}e^{2x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n\\end{align*} Therefore,\n(1.) is not the answer.\n\n2. $\\displaystyle y = \\frac{1}{2x}$.\n\n\\begin{align*}\n\\begin{cases}\n\\frac{dy}{dx} &= -\\frac{1}{2x^{2}} \\\\\n2xy &= 1\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n\\end{align*} Therefore,\n(2.) is not the answer.\n\n3. $\\displaystyle y = -e^{-x}$.\n\n\\begin{align*}\n\\begin{cases}\n\\frac{dy}{dx} &= e^{-x} \\\\\n2xy &= -2xe^{-x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n\\end{align*} Therefore,\n(3.) is not the answer.\n\n4. ${\\color{blue}y =-3e^{x^2}}$.\n\n\\begin{align*}\n\\begin{cases}\n\\frac{dy}{dx} &= -6xe^{x^{2}} \\\\\n2xy &= -6xe^{x^{2}}\n\\end{cases} \\quad \\rightarrow \\quad {\\color{blue}\\frac{dy}{dx} =2xy}\n\\end{align*}\nTherefore, (4.) IS the answer.\n\n5. $\\displaystyle y = 3e^{-x^2}$.\n\n\\begin{align*}\n\\begin{cases}\\frac{dy}{dx} &= -6xe^{-x^{2}} \\\\\n2xy &= 6xe^{-x^{2}}\\end{cases}\n\\end{align*} Hence, $\\frac{dy}{dx} \\ne 2xy$ and\ntherefore, (5.) is not the answer.\n\nFinally, the in case 4 we have $\\frac{dy}{dx} = 2xy$."
+    ], 
+    "sols_raw": [
+        "To solve this, we compare the left and right-hand sides of the equation,\n:&lt;math>\n\\frac{dy}{dx} = 2xy.\n&lt;/math>\n\n1.  &lt;math>\\displaystyle y = xe^{2x}&lt;/math>.\n:&lt;math>\n\\begin{cases}\n\\frac{dy}{dx} &amp;= e^{2x} + 2xe^{2x} \\\\\n2xy &amp;= 2x^{2}e^{2x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n&lt;/math>\nTherefore, (1.) is not the answer.\n\n2.  &lt;math>\\displaystyle y = \\frac{1}{2x}&lt;/math>.\n:&lt;math>\n\\begin{cases}\n\\frac{dy}{dx} &amp;= -\\frac{1}{2x^{2}} \\\\\n2xy &amp;= 1\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n&lt;/math>\nTherefore, (2.) is not the answer.\n\n3.  &lt;math>\\displaystyle y = -e^{-x}&lt;/math>.\n:&lt;math>\n\\begin{cases}\n\\frac{dy}{dx} &amp;= e^{-x} \\\\\n2xy &amp;= -2xe^{-x}\n\\end{cases} \\quad \\rightarrow \\quad \\frac{dy}{dx} \\ne 2xy\n&lt;/math>\nTherefore, (3.) is not the answer.\n\n4.  &lt;math>{\\color{blue}y = -3e^{x^2}}&lt;/math>.\n:&lt;math>\n\\begin{cases}\n\\frac{dy}{dx} &amp;= -6xe^{x^{2}} \\\\\n2xy &amp;= -6xe^{x^{2}}\n\\end{cases} \\quad \\rightarrow \\quad {\\color{blue}\\frac{dy}{dx} = 2xy}\n&lt;/math>\nTherefore, (4.) IS the answer.\n\n5.  &lt;math>\\displaystyle y = 3e^{-x^2}&lt;/math>.\n:&lt;math>\n\\begin{cases}\\frac{dy}{dx} &amp;= -6xe^{-x^{2}} \\\\\n2xy &amp;= 6xe^{-x^{2}}\\end{cases}\n&lt;/math>\nHence, &lt;math>\\frac{dy}{dx} \\ne 2xy&lt;/math> and therefore, (5.) is not the answer.\n\nFinally, the in case 4 we have &lt;math> \\frac{dy}{dx} = 2xy&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Circle the function that solves the following differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = 2xy.\\end{aligned}\\]</span></p>\n<ol>\n<li><p><span class=\"math\">\\(\\displaystyle y = xe^{2x}\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle y = \\frac1{2x}\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle y = -e^{-x}\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle y = -3e^{x^2}\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\displaystyle y = 3e^{-x^2}\\)</span></p></li>\n</ol>\n", 
+    "statement_latex": "Circle the function that solves the following differential equation\n\n\\begin{align*}\n\\frac{dy}{dx} = 2xy.\n\\end{align*}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle y = xe^{2x}$\n\\item\n  $\\displaystyle y = \\frac1{2x}$\n\\item\n  $\\displaystyle y = -e^{-x}$\n\\item\n  $\\displaystyle y = -3e^{x^2}$\n\\item\n  $\\displaystyle y = 3e^{-x^2}$\n\\end{enumerate}", 
+    "statement_raw": "Circle the function that solves the following differential equation\n\n:&lt;math>\n\\frac{dy}{dx} = 2xy.\n&lt;/math>\n\n# &lt;math> \\displaystyle y = xe^{2x} &lt;/math>\n# &lt;math> \\displaystyle y = \\frac1{2x} &lt;/math>\n# &lt;math> \\displaystyle y = -e^{-x} &lt;/math>\n# &lt;math> \\displaystyle y = -3e^{x^2} &lt;/math>\n# &lt;math> \\displaystyle y = 3e^{-x^2} &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_02_(b)_ii", 
+    "year": 2011
 }

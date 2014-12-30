@@ -1,13 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_02_(d)", 
-    "course": "MATH104", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\nd) On which intervals is f(x) concave up? On which intervals is f(x)\nconcave down?", 
-    "year": 2013, 
-    "sols": [
-        "We proceed as suggested by the hint.\n\nOn the interval $\\displaystyle (-\\infty,-2)$, we see that the second\nderivative at the point $\\displaystyle x=-10$ is given by\n$\\displaystyle f'(-10) = \\frac{8(3(-10)^{2}+4)}{((-10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval.\n\nOn the interval $\\displaystyle (-2,2)$, we see that the second\nderivative at the point $\\displaystyle x=0$ is given by\n$\\displaystyle f'(-1) = \\frac{8(3(0)^{2} + 4)}{((0)^{2}-4)^{3}}  < 0$\nand so the function is concave down on this interval.\n\nOn the interval $\\displaystyle (2,\\infty)$, we see that the second\nderivative at the point $\\displaystyle x=10$ is given by\n$\\displaystyle f'(10) = \\frac{8(3(10)^{2} + 4)}{((10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval."
+    "answer_html": "<p>To summarize, <span class=\"math\">\\(f(x)\\)</span> is concave up on <span class=\"math\">\\((-\\infty,-2) \\cup (2, \\infty)\\)</span> and concave down on <span class=\"math\">\\((-2,2).\\)</span></p>\n", 
+    "answer_latex": "To summarize, $f(x)$ is concave up on $(-\\infty,-2) \\cup (2, \\infty)$\nand concave down on $(-2,2).$", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
-        "Remember we need to check the sign of the second derivative on the\nintervals between the points found in part (b)."
-    ]
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember we need to check the sign of the second derivative on the intervals between the points found in <span>part (b)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember we need to check the sign of the second derivative on the\nintervals between the points found in\n{part\n(b)}."
+    ], 
+    "hints_raw": [
+        "Remember we need to check the sign of the second derivative on the intervals between the points found in [[Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_02_(b)|part (b)]].\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We proceed as suggested by the hint.</p>\n<p>On the interval <span class=\"math\">\\(\\displaystyle (-\\infty,-2)\\)</span>, we see that the second derivative at the point <span class=\"math\">\\(\\displaystyle x=-10\\)</span> is given by <span class=\"math\">\\(\\displaystyle f&#39;&#39;(-10) = \\frac{8(3(-10)^{2}+4)}{((-10)^{2}-4)^{3}} &gt; 0\\)</span> and so the function is concave up on this interval.</p>\n<p>On the interval <span class=\"math\">\\(\\displaystyle (-2,2)\\)</span>, we see that the second derivative at the point <span class=\"math\">\\(\\displaystyle x=0\\)</span> is given by <span class=\"math\">\\(\\displaystyle f&#39;&#39;(0) = \\frac{8(3(0)^{2} + 4)}{((0)^{2}-4)^{3}}  &lt; 0\\)</span> and so the function is concave down on this interval.</p>\n<p>On the interval <span class=\"math\">\\(\\displaystyle (2,\\infty)\\)</span>, we see that the second derivative at the point <span class=\"math\">\\(\\displaystyle x=10\\)</span> is given by <span class=\"math\">\\(\\displaystyle f&#39;&#39;(10) = \\frac{8(3(10)^{2} + 4)}{((10)^{2}-4)^{3}} &gt; 0\\)</span> and so the function is concave up on this interval.</p>\n<p>To summarize, <span class=\"math\">\\(f(x)\\)</span> is concave up on <span class=\"math\">\\((-\\infty,-2) \\cup (2, \\infty)\\)</span> and concave down on <span class=\"math\">\\((-2,2).\\)</span></p>\n", 
+        "<p>We can also argue a bit more intelligently as follows.</p>\n<p>Look at the second derivative given by</p>\n<p><span class=\"math\">\\(f&#39;&#39;(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\)</span></p>\n<p>Notice that the numerator of the second derivative is always positive and so the sign of the second derivative is given by the behaviour of the denominator, namely the polynomial</p>\n<p><span class=\"math\">\\((x^{2} - 4)^{3}\\)</span></p>\n<p>Since this polynomial is to the power of 3, the sign of the cube of the polynomial is the same as the sign of the polynomial itself, given by</p>\n<p><span class=\"math\">\\(x^{2} - 4\\)</span></p>\n<p>Next, this polynomial is an upwards facing parabola with roots at <span class=\"math\">\\(\\pm 2\\)</span>. Thus, it is negative between <span class=\"math\">\\(-2 &lt; x &lt; 2\\)</span> and is positive on <span class=\"math\">\\((-\\infty,-2) \\cup (2,\\infty)\\)</span>.</p>\n<p>Hence, <span class=\"math\">\\(f(x)\\)</span> is concave up on <span class=\"math\">\\((-\\infty,-2) \\cup (2, \\infty)\\)</span> and concave down on <span class=\"math\">\\((-2,2).\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed as suggested by the hint.\n\nOn the interval $\\displaystyle (-\\infty,-2)$, we see that the second\nderivative at the point $\\displaystyle x=-10$ is given by\n$\\displaystyle f''(-10) = \\frac{8(3(-10)^{2}+4)}{((-10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval.\n\nOn the interval $\\displaystyle (-2,2)$, we see that the second\nderivative at the point $\\displaystyle x=0$ is given by\n$\\displaystyle f''(0) = \\frac{8(3(0)^{2} + 4)}{((0)^{2}-4)^{3}}  < 0$\nand so the function is concave down on this interval.\n\nOn the interval $\\displaystyle (2,\\infty)$, we see that the second\nderivative at the point $\\displaystyle x=10$ is given by\n$\\displaystyle f''(10) = \\frac{8(3(10)^{2} + 4)}{((10)^{2}-4)^{3}} > 0$\nand so the function is concave up on this interval.\n\nTo summarize, $f(x)$ is concave up on $(-\\infty,-2) \\cup (2, \\infty)$\nand concave down on $(-2,2).$", 
+        "We can also argue a bit more intelligently as follows.\n\nLook at the second derivative given by\n\n$f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}$\n\nNotice that the numerator of the second derivative is always positive\nand so the sign of the second derivative is given by the behaviour of\nthe denominator, namely the polynomial\n\n$(x^{2} - 4)^{3}$\n\nSince this polynomial is to the power of 3, the sign of the cube of the\npolynomial is the same as the sign of the polynomial itself, given by\n\n$x^{2} - 4$\n\nNext, this polynomial is an upwards facing parabola with roots at\n$\\pm 2$. Thus, it is negative between $-2 < x < 2$ and is positive on\n$(-\\infty,-2) \\cup (2,\\infty)$.\n\nHence, $f(x)$ is concave up on $(-\\infty,-2) \\cup (2, \\infty)$ and\nconcave down on $(-2,2).$"
+    ], 
+    "sols_raw": [
+        "We proceed as suggested by the hint.\n\nOn the interval &lt;math> \\displaystyle (-\\infty,-2)&lt;/math>, we see that the second derivative at the point &lt;math> \\displaystyle x=-10&lt;/math> is given by &lt;math> \\displaystyle f''(-10) = \\frac{8(3(-10)^{2}+4)}{((-10)^{2}-4)^{3}} > 0 &lt;/math> and so the function is concave up on this interval.\n\nOn the interval &lt;math> \\displaystyle (-2,2)&lt;/math>, we see that the second derivative at the point &lt;math> \\displaystyle x=0&lt;/math> is given by &lt;math> \\displaystyle f''(0) = \\frac{8(3(0)^{2} + 4)}{((0)^{2}-4)^{3}}  &lt; 0 &lt;/math> and so the function is concave down on this interval.\n\nOn the interval &lt;math> \\displaystyle (2,\\infty)&lt;/math>, we see that the second derivative at the point &lt;math> \\displaystyle x=10&lt;/math> is given by &lt;math> \\displaystyle f''(10) = \\frac{8(3(10)^{2} + 4)}{((10)^{2}-4)^{3}} > 0 &lt;/math> and so the function is concave up on this interval.\n\nTo summarize, &lt;math>f(x)&lt;/math> is concave up on &lt;math>(-\\infty,-2) \\cup (2, \\infty)&lt;/math> and concave down on &lt;math>(-2,2).&lt;/math>\n", 
+        "We can also argue a bit more intelligently as follows.\n\nLook at the second derivative given by\n\n&lt;math>\nf''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\n&lt;/math>\n\nNotice that the numerator of the second derivative is always positive and so the sign of the second derivative is given by the behaviour of the denominator, namely the polynomial\n\n&lt;math>\n(x^{2} - 4)^{3}\n&lt;/math>\n\nSince this polynomial is to the power of 3, the sign of the cube of the polynomial is the same as the sign of the polynomial itself, given by\n\n&lt;math>\nx^{2} - 4\n&lt;/math>\n\nNext, this polynomial is an upwards facing parabola with roots at &lt;math> \\pm 2 &lt;/math>. Thus, it is negative between &lt;math> -2 &lt; x &lt; 2 &lt;/math> and is positive on &lt;math> (-\\infty,-2) \\cup (2,\\infty) &lt;/math>.\n\nHence, &lt;math>f(x)&lt;/math> is concave up on &lt;math>(-\\infty,-2) \\cup (2, \\infty)&lt;/math> and concave down on &lt;math>(-2,2).&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{aligned}\\]</span></p>\n<p>Its first and second derivatives are given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f&#39;&#39;(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{aligned}\\]</span></p>\n<p><strong>(d)</strong> On which intervals is <span class=\"math\">\\(f(x)\\)</span> concave up? On which intervals is <span class=\"math\">\\(f(x)\\)</span> concave down?</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\n\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}\nf'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\n\\end{align*}\n\n\\textbf{(d)} On which intervals is $f(x)$ concave up? On which intervals\nis $f(x)$ concave down?", 
+    "statement_raw": "Consider the function\n:&lt;math>\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\n&lt;/math>\nIts first and second derivatives are given by\n:&lt;math>\nf'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\n&lt;/math>\n\n'''(d)''' On which intervals is &lt;math>f(x)&lt;/math> concave up? On which intervals is &lt;math>f(x)&lt;/math> concave down?\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_02_(d)", 
+    "year": 2013
 }

@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_08_(c)", 
-    "course": "MATH103", 
-    "statement": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nHow much did the plant grow on the fifth day (i.e. between \\emph{t = 4}\nand \\emph{t = 5})? (If you don't know the constant \\emph{a}, use \\emph{a\n= 1}.)", 
-    "year": 2009, 
-    "sols": [
-        "The change of height between day $4$ and $5$ is\n\n\\begin{align*}\n\\ h(5)-h(4) &= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\ h(5)-h(4)=e^2\\)</span></p>\n", 
+    "answer_latex": " $\\ h(5)-h(4)=e^2$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How can you use the height function <span class=\"math\">\\(h(t)\\)</span> to know the change of the height between day <span class=\"math\">\\(4\\)</span> and day <span class=\"math\">\\(5\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "How can you use the height function $h(t)$ to know the change of the\nheight between day $4$ and day $5$."
-    ]
+    ], 
+    "hints_raw": [
+        "How can you use the height function &lt;math> h(t)\\ &lt;/math> to know the change of the height between day &lt;math>\\ 4&lt;/math> and day &lt;math>\\ 5&lt;/math>.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "8 (c)", 
+    "rating": 58, 
+    "sols_html": [
+        "<p>The change of height between day <span class=\"math\">\\(4\\)</span> and <span class=\"math\">\\(5\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ h(5)-h(4) &amp;= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &amp;= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The change of height between day $4$ and $5$ is\n\n\\begin{align*}\n\\ h(5)-h(4) &= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The change of height between day &lt;math>\\ 4&lt;/math> and &lt;math>\\ 5&lt;/math> is\n\n&lt;math>\\begin{align}\n\\ h(5)-h(4) &amp;= \\frac{e^{\\frac52}-1}{e^{\\frac12}-1} - \\frac{e^{\\frac42}-1}{e^{\\frac12}-1}\\\\\n &amp;= \\frac{e^{2.5}-e^2}{e^{\\frac12}-1} = e^2\\frac{e^{\\frac12} - 1}{e^{\\frac12} - 1} = e^2\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p>The growth rate of a plant during the first week after germination is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\\end{aligned}\\]</span></p>\n<p>where the time <em>t</em> is measured in days, and <em>a</em> is a constant.</p>\n<p>How much did the plant grow on the fifth day (i.e. between <em>t = 4</em> and <em>t = 5</em>)? (If you don&#8217;t know the constant <em>a</em>, use <em>a = 1</em>.)</p>\n", 
+    "statement_latex": "The growth rate of a plant during the first week after germination is\ngiven by\n\n\\begin{align*}\n\\displaystyle g(t) = ae^{t/2} \\text{ mm/day},\n\\end{align*}\n\nwhere the time \\emph{t} is measured in days, and \\emph{a} is a constant.\n\nHow much did the plant grow on the fifth day (i.e. between \\emph{t = 4}\nand \\emph{t = 5})? (If you don't know the constant \\emph{a}, use \\emph{a\n= 1}.)", 
+    "statement_raw": "The growth rate of a plant during the first week after germination is given by\n\n:&lt;math>\\displaystyle g(t) = ae^{t/2} \\text{ mm/day}, &lt;/math>\n\nwhere the time ''t'' is measured in days, and ''a'' is a constant.\n\nHow much did the plant grow on the fifth day (i.e. between ''t = 4'' and ''t = 5'')? (If you don't know the constant ''a'', use ''a = 1''.)\n", 
+    "term": "April", 
+    "topics": [
+        "Net_change_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_08_(c)", 
+    "year": 2009
 }

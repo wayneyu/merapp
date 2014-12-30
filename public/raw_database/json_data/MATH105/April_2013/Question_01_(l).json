@@ -1,15 +1,56 @@
 {
-    "term": "April", 
-    "question": "Question_01_(l)", 
-    "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nLet $k$ be a constant. Find the value of $k$ such that\n\n\\begin{align*}\\displaystyle f(x) = ke^{-x}e^{(-e^{-x})}\\end{align*} is a probability density\nfunction on $(-\\infty,1]$.", 
-    "year": 2013, 
-    "sols": [
-        "We proceed in the hint and try to solve for \\emph{k} where\n\n$\\displaystyle 1 = \\int_{-\\infty}^{1}ke^{-x}e^{(-e^{-x})}$\n\nFirst, we change the improper integral to\n\n$\\displaystyle 1 = \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}$\n\nLet $\\displaystyle u = -e^{-x}$ so that $\\displaystyle du = e^{-x}dx$\nand the endpoints change to\n\n$\\displaystyle u(1) = -e^{-1} \\qquad u(b) = -e^{-b}$\n\nThis gives\n\n\\begin{align*}\n1 &= \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\\\\\n&= \\lim_{b \\to -\\infty} \\int_{ -e^{-b}}^{ -e^{-1}}ke^{u}\\,du\\\\\n&= \\lim_{b \\to -\\infty} ke^{u}\\Bigr|_{ -e^{-b}}^{ -e^{-1}}\\\\\n&= \\lim_{b \\to -\\infty} k(e^{ -e^{-1}} - e^{ -e^{-b}})\\end{align*}\n\nSince $\\lim_{b \\to -\\infty}  -b = +\\infty$ we have that\n$\\lim_{b \\to -\\infty}  e^{-b} = +\\infty$. Using this yields that\n$\\lim_{b \\to -\\infty}  -e^{-b} = -\\infty$ and hence\n$\\lim_{b \\to -\\infty}  e^{-e^{-b}} = 0$. Thus the second term in the\nlong equation above vanishes and we finally conclude that\n\n$\\displaystyle 1 = ke^{ -e^{-1}}$\n\nSolving gives $\\displaystyle e^{ e^{-1}} = k$"
+    "answer_html": "<p>Solving gives <span class=\"math\">\\(\\displaystyle e^{ e^{-1}} = k\\)</span></p>\n", 
+    "answer_latex": "Solving gives $\\displaystyle e^{ e^{-1}} = k$", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The integral of a probability density function over the given interval must be 1.</p>\n", 
+        "<p>Next, use a substitution to help evaluate the corresponding integral.</p>\n", 
+        "<p>Use the substitution</p>\n<p><span class=\"math\">\\(\\displaystyle u = -e^{-x}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The integral of a probability density function over the given interval\nmust be 1.", 
         "Next, use a substitution to help evaluate the corresponding integral.", 
         "Use the substitution\n\n$\\displaystyle u = -e^{-x}$"
-    ]
+    ], 
+    "hints_raw": [
+        "The integral of a probability density function over the given interval must be 1.\n", 
+        "Next, use a substitution to help evaluate the corresponding integral.\n", 
+        "Use the substitution\n\n&lt;math>\n\\displaystyle u = -e^{-x}\n&lt;/math>\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (l)", 
+    "rating": 33, 
+    "sols_html": [
+        "<p>We proceed in the hint and try to solve for <em>k</em> where</p>\n<p><span class=\"math\">\\(\\displaystyle 1 = \\int_{-\\infty}^{1}ke^{-x}e^{(-e^{-x})}\\)</span></p>\n<p>First, we change the improper integral to</p>\n<p><span class=\"math\">\\(\\displaystyle 1 = \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\\)</span></p>\n<p>Let <span class=\"math\">\\(\\displaystyle u = -e^{-x}\\)</span> so that <span class=\"math\">\\(\\displaystyle du = e^{-x}dx\\)</span> and the endpoints change to</p>\n<p><span class=\"math\">\\(\\displaystyle u(1) = -e^{-1} \\qquad u(b) = -e^{-b}\\)</span></p>\n<p>This gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\\\\\n&amp;= \\lim_{b \\to -\\infty} \\int_{ -e^{-b}}^{ -e^{-1}}ke^{u}\\,du\\\\\n&amp;= \\lim_{b \\to -\\infty} ke^{u}\\Bigr|_{ -e^{-b}}^{ -e^{-1}}\\\\\n&amp;= \\lim_{b \\to -\\infty} k(e^{ -e^{-1}} - e^{ -e^{-b}})\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(\\lim_{b \\to -\\infty}  -b = +\\infty\\)</span> we have that <span class=\"math\">\\(\\lim_{b \\to -\\infty}  e^{-b} = +\\infty\\)</span>. Using this yields that <span class=\"math\">\\(\\lim_{b \\to -\\infty}  -e^{-b} = -\\infty\\)</span> and hence <span class=\"math\">\\(\\lim_{b \\to -\\infty}  e^{-e^{-b}} = 0\\)</span>. Thus the second term in the long equation above vanishes and we finally conclude that</p>\n<p><span class=\"math\">\\(\\displaystyle 1 = ke^{ -e^{-1}}\\)</span></p>\n<p>Solving gives <span class=\"math\">\\(\\displaystyle e^{ e^{-1}} = k\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed in the hint and try to solve for \\emph{k} where\n\n$\\displaystyle 1 = \\int_{-\\infty}^{1}ke^{-x}e^{(-e^{-x})}$\n\nFirst, we change the improper integral to\n\n$\\displaystyle 1 = \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}$\n\nLet $\\displaystyle u = -e^{-x}$ so that $\\displaystyle du = e^{-x}dx$\nand the endpoints change to\n\n$\\displaystyle u(1) = -e^{-1} \\qquad u(b) = -e^{-b}$\n\nThis gives\n\n\\begin{align*}\n1 &= \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\\\\\n&= \\lim_{b \\to -\\infty} \\int_{ -e^{-b}}^{ -e^{-1}}ke^{u}\\,du\\\\\n&= \\lim_{b \\to -\\infty} ke^{u}\\Bigr|_{ -e^{-b}}^{ -e^{-1}}\\\\\n&= \\lim_{b \\to -\\infty} k(e^{ -e^{-1}} - e^{ -e^{-b}})\n\\end{align*}\n\nSince $\\lim_{b \\to -\\infty}  -b = +\\infty$ we have that\n$\\lim_{b \\to -\\infty}  e^{-b} = +\\infty$. Using this yields that\n$\\lim_{b \\to -\\infty}  -e^{-b} = -\\infty$ and hence\n$\\lim_{b \\to -\\infty}  e^{-e^{-b}} = 0$. Thus the second term in the\nlong equation above vanishes and we finally conclude that\n\n$\\displaystyle 1 = ke^{ -e^{-1}}$\n\nSolving gives $\\displaystyle e^{ e^{-1}} = k$"
+    ], 
+    "sols_raw": [
+        "We proceed in the hint and try to solve for ''k'' where\n\n&lt;math>\n\\displaystyle 1 = \\int_{-\\infty}^{1}ke^{-x}e^{(-e^{-x})}\n&lt;/math>\n\nFirst, we change the improper integral to\n\n&lt;math>\n\\displaystyle 1 = \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\n&lt;/math>\n\nLet &lt;math> \\displaystyle u = -e^{-x} &lt;/math> so that &lt;math> \\displaystyle du = e^{-x}dx &lt;/math> and the endpoints change to\n\n&lt;math> \\displaystyle u(1) = -e^{-1} \\qquad u(b) = -e^{-b} &lt;/math>\n\nThis gives\n\n&lt;math>\n\\begin{align}\n1 &amp;= \\lim_{b \\to -\\infty} \\int_{b}^{1}ke^{-x}e^{(-e^{-x})}\\\\\n&amp;= \\lim_{b \\to -\\infty} \\int_{ -e^{-b}}^{ -e^{-1}}ke^{u}\\,du\\\\\n&amp;= \\lim_{b \\to -\\infty} ke^{u}\\Bigr|_{ -e^{-b}}^{ -e^{-1}}\\\\\n&amp;= \\lim_{b \\to -\\infty} k(e^{ -e^{-1}} - e^{ -e^{-b}})\n\\end{align}\n&lt;/math>\n\nSince &lt;math>\\lim_{b \\to -\\infty}  -b = +\\infty&lt;/math> we have that &lt;math>\\lim_{b \\to -\\infty}  e^{-b} = +\\infty&lt;/math>. Using this yields that &lt;math>\\lim_{b \\to -\\infty}  -e^{-b} = -\\infty&lt;/math> and hence &lt;math>\\lim_{b \\to -\\infty}  e^{-e^{-b}} = 0&lt;/math>. Thus the second term in the long equation above vanishes and we finally conclude that\n\n&lt;math>\n\\displaystyle\n1 = ke^{ -e^{-1}}\n&lt;/math>\n\nSolving gives &lt;math> \\displaystyle e^{ e^{-1}} = k &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Let <span class=\"math\">\\(k\\)</span> be a constant. Find the value of <span class=\"math\">\\(k\\)</span> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x) = ke^{-x}e^{(-e^{-x})}\\end{aligned}\\]</span></p>\n<p>is a probability density function on <span class=\"math\">\\((-\\infty,1]\\)</span>.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nLet $k$ be a constant. Find the value of $k$ such that\n\n\\begin{align*}\n\\displaystyle f(x) = ke^{-x}e^{(-e^{-x})}\n\\end{align*} is a probability density\nfunction on $(-\\infty,1]$.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nLet &lt;math>k&lt;/math> be a constant. Find the value of &lt;math>k&lt;/math> such that\n:&lt;math>\n\\displaystyle f(x) = ke^{-x}e^{(-e^{-x})}\n&lt;/math>\nis a probability density function on &lt;math>(-\\infty,1]&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Probability_density_function", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(l)", 
+    "year": 2013
 }

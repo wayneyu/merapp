@@ -1,14 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01", 
-    "course": "MATH221", 
-    "statement": "Consider the system of linear equations:\n\n\\begin{align*}\n3x &\\ +& 4y &\\ +& 7z &\\ &= 3\\\\\n-9x &\\ +& 6y &\\ +& 9z &\\ &= 3\\\\\n45x &\\ -& 12y &\\ +& hz &\\ &= k\\end{align*} For which values of \\emph{h} and \\emph{k} does the system\nhave:\n\na) no solutions?\n\nb) exactly one solution?\n\nc) infinitely many solutions?", 
-    "year": 2013, 
-    "sols": [
-        "We can write this system in matrix form:\n\n\\begin{align*}\\left[ \\begin{array}{ccc}\n3 & 4 & 7 \\\\\n-9 & 6 & 9 \\\\\n45 & -12 & h\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n3 \\\\\n3 \\\\\nk\n\\end{array} \\right]\\end{align*}\n\nTo know the number of solutions, we want to look at the row reduced form\nof the augmented matrix.\n\nFirst, perform the operations L\\textsubscript{3} \u2192\nL\\textsubscript{3}+5L\\textsubscript{2} and L\\textsubscript{2} \u2192\nL\\textsubscript{2}-3L\\textsubscript{1}\n\n\\begin{align*}\\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3\\\\\n-9 & 6 & 9 & 3\\\\\n45 & -12 & h & k\n\\end{array} \\right] \\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 18 & 45 + h & 15+k\n\\end{array} \\right]\\end{align*} Then, perform L\\textsubscript{3} \u2192\nL\\textsubscript{3} - L\\textsubscript{2}\n\n\\begin{align*}\\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 0 & 15+h & 3+k\n\\end{array} \\right]\\end{align*}\n\nNoting that the first two rows of the matrix give a matrix of rank at\nleast 2, the number of solutions depend only on the last row. We read\nthe last row of this matrix and we obtain the equation\n\n\\begin{align*}\\displaystyle\n(15+h)z = 3+k\\end{align*}\n\nWe can now read off the solutions from this equation base on whether or\nnot $15+h$ and $3+k$ are equal to zero.\n\na) No solution if $15+ h = 0, 3+k \\ne 0$\n\nb) One solution if $15+h \\ne 0$\n\nc) Infinite solution if $\\displaystyle 15+ h = 0, 3+k = 0$\n\nNotice that this convers all possible values for $\\displaystyle 15+h$ and\n$\\displaystyle 3+k$."
+    "answer_html": "<p>Notice that this convers all possible values for <span class=\"math\">\\(\\displaystyle 15+h\\)</span> and <span class=\"math\">\\(\\displaystyle 3+k\\)</span>.</p>\n", 
+    "answer_latex": "Notice that this convers all possible values for $\\displaystyle 15+h$ and\n$\\displaystyle 3+k$.", 
+    "contributors": [
+        "JeromeLefebvre"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Writing this system in matrix form, what will tell about the number of solutions?</p>\n", 
+        "<p>Pick carefully which row manipulations you will do, they will simplify your calculations quite a bit.</p>\n"
+    ], 
+    "hints_latex": [
         "Writing this system in matrix form, what will tell about the number of\nsolutions?", 
         "Pick carefully which row manipulations you will do, they will simplify\nyour calculations quite a bit."
-    ]
+    ], 
+    "hints_raw": [
+        "Writing this system in matrix form, what will tell about the number of solutions?\n", 
+        "Pick carefully which row manipulations you will do, they will simplify your calculations quite a bit.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "1", 
+    "rating": 66, 
+    "sols_html": [
+        "<p>We can write this system in matrix form:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[ \\begin{array}{ccc}\n3 &amp; 4 &amp; 7 \\\\\n-9 &amp; 6 &amp; 9 \\\\\n45 &amp; -12 &amp; h\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n3 \\\\\n3 \\\\\nk\n\\end{array} \\right]\\end{aligned}\\]</span></p>\n<p>To know the number of solutions, we want to look at the row reduced form of the augmented matrix.</p>\n<p>First, perform the operations L<sub>3</sub> <span class=\"math\">\\(\\rightarrow\\)</span> L<sub>3</sub>+5L<sub>2</sub> and L<sub>2</sub> <span class=\"math\">\\(\\rightarrow\\)</span> L<sub>2</sub>-3L<sub>1</sub></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3\\\\\n-9 &amp; 6 &amp; 9 &amp; 3\\\\\n45 &amp; -12 &amp; h &amp; k\n\\end{array} \\right] \\sim \\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3 \\\\\n0 &amp; 18 &amp; 30 &amp; 12 \\\\\n0 &amp; 18 &amp; 45 + h &amp; 15+k\n\\end{array} \\right]\\end{aligned}\\]</span></p>\n<p>Then, perform L<sub>3</sub> <span class=\"math\">\\(\\rightarrow\\)</span> L<sub>3</sub> - L<sub>2</sub></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sim \\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3 \\\\\n0 &amp; 18 &amp; 30 &amp; 12 \\\\\n0 &amp; 0 &amp; 15+h &amp; 3+k\n\\end{array} \\right]\\end{aligned}\\]</span></p>\n<p>Noting that the first two rows of the matrix give a matrix of rank at least 2, the number of solutions depend only on the last row. We read the last row of this matrix and we obtain the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n(15+h)z = 3+k\\end{aligned}\\]</span></p>\n<p>We can now read off the solutions from this equation base on whether or not <span class=\"math\">\\(15+h\\)</span> and <span class=\"math\">\\(3+k\\)</span> are equal to zero.</p>\n<p>a) No solution if <span class=\"math\">\\(15+ h = 0, 3+k \\ne 0\\)</span></p>\n<p>b) One solution if <span class=\"math\">\\(15+h \\ne 0\\)</span></p>\n<p>c) Infinite solution if <span class=\"math\">\\(\\displaystyle 15+ h = 0, 3+k = 0\\)</span></p>\n<p>Notice that this convers all possible values for <span class=\"math\">\\(\\displaystyle 15+h\\)</span> and <span class=\"math\">\\(\\displaystyle 3+k\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We can write this system in matrix form:\n\n\\begin{align*}\n\\left[ \\begin{array}{ccc}\n3 & 4 & 7 \\\\\n-9 & 6 & 9 \\\\\n45 & -12 & h\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n3 \\\\\n3 \\\\\nk\n\\end{array} \\right]\n\\end{align*}\n\nTo know the number of solutions, we want to look at the row reduced form\nof the augmented matrix.\n\nFirst, perform the operations L\\textsubscript{3} $\\rightarrow$\nL\\textsubscript{3}+5L\\textsubscript{2} and L\\textsubscript{2} $\\rightarrow$\nL\\textsubscript{2}-3L\\textsubscript{1}\n\n\\begin{align*}\n\\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3\\\\\n-9 & 6 & 9 & 3\\\\\n45 & -12 & h & k\n\\end{array} \\right] \\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 18 & 45 + h & 15+k\n\\end{array} \\right]\n\\end{align*} Then, perform L\\textsubscript{3} $\\rightarrow$\nL\\textsubscript{3} - L\\textsubscript{2}\n\n\\begin{align*}\n\\sim \\left[ \\begin{array}{cccc}\n3 & 4 & 7 & 3 \\\\\n0 & 18 & 30 & 12 \\\\\n0 & 0 & 15+h & 3+k\n\\end{array} \\right]\n\\end{align*}\n\nNoting that the first two rows of the matrix give a matrix of rank at\nleast 2, the number of solutions depend only on the last row. We read\nthe last row of this matrix and we obtain the equation\n\n\\begin{align*}\n\\displaystyle\n(15+h)z = 3+k\n\\end{align*}\n\nWe can now read off the solutions from this equation base on whether or\nnot $15+h$ and $3+k$ are equal to zero.\n\na) No solution if $15+ h = 0, 3+k \\ne 0$\n\nb) One solution if $15+h \\ne 0$\n\nc) Infinite solution if $\\displaystyle 15+ h = 0, 3+k = 0$\n\nNotice that this convers all possible values for $\\displaystyle 15+h$ and\n$\\displaystyle 3+k$."
+    ], 
+    "sols_raw": [
+        "We can write this system in matrix form:\n:&lt;math>\n\\left[ \\begin{array}{ccc}\n3 &amp; 4 &amp; 7 \\\\\n-9 &amp; 6 &amp; 9 \\\\\n45 &amp; -12 &amp; h\n\\end{array} \\right] \\left[ \\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array} \\right] = \\left[ \\begin{array}{c}\n3 \\\\\n3 \\\\\nk\n\\end{array} \\right]\n&lt;/math>\n\nTo know the number of solutions, we want to look at the row reduced form of the augmented matrix.\n\nFirst, perform the operations L&lt;sub>3&lt;/sub> &amp;rarr; L&lt;sub>3&lt;/sub>+5L&lt;sub>2&lt;/sub> and L&lt;sub>2&lt;/sub> &amp;rarr; L&lt;sub>2&lt;/sub>-3L&lt;sub>1&lt;/sub>\n:&lt;math>\n\\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3\\\\\n-9 &amp; 6 &amp; 9 &amp; 3\\\\\n45 &amp; -12 &amp; h &amp; k\n\\end{array} \\right] \\sim \\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3 \\\\\n0 &amp; 18 &amp; 30 &amp; 12 \\\\\n0 &amp; 18 &amp; 45 + h &amp; 15+k\n\\end{array} \\right]\n&lt;/math>\nThen, perform L&lt;sub>3&lt;/sub> &amp;rarr; L&lt;sub>3&lt;/sub> - L&lt;sub>2&lt;/sub> \n:&lt;math>\n\\sim \\left[ \\begin{array}{cccc}\n3 &amp; 4 &amp; 7 &amp; 3 \\\\\n0 &amp; 18 &amp; 30 &amp; 12 \\\\\n0 &amp; 0 &amp; 15+h &amp; 3+k\n\\end{array} \\right]\n&lt;/math>\n\nNoting that the first two rows of the matrix give a matrix of rank at least 2, the number of solutions depend only on the last row. We read the last row of this matrix and we obtain the equation\n:&lt;math>\\displaystyle\n(15+h)z = 3+k\n&lt;/math>\n\nWe can now read off the solutions from this equation base on whether or not &lt;math>15+h&lt;/math> and &lt;math>3+k&lt;/math> are equal to zero.\n\na) No solution if &lt;math>15+ h = 0, 3+k \\ne 0&lt;/math>\n\nb) One solution if &lt;math>15+h \\ne 0&lt;/math>\n\nc) Infinite solution if &lt;math>\\displaystyle 15+ h = 0, 3+k = 0&lt;/math>\n\nNotice that this convers all possible values for &lt;math>\\displaystyle15+h&lt;/math> and &lt;math>\\displaystyle3+k&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the system of linear equations:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n3x &amp;\\ +&amp; 4y &amp;\\ +&amp; 7z &amp;\\ &amp;= 3\\\\\n-9x &amp;\\ +&amp; 6y &amp;\\ +&amp; 9z &amp;\\ &amp;= 3\\\\\n45x &amp;\\ -&amp; 12y &amp;\\ +&amp; hz &amp;\\ &amp;= k\\end{aligned}\\]</span></p>\n<p>For which values of <em>h</em> and <em>k</em> does the system have:</p>\n<p>a) no solutions?</p>\n<p>b) exactly one solution?</p>\n<p>c) infinitely many solutions?</p>\n", 
+    "statement_latex": "Consider the system of linear equations:\n\n\\begin{align*}\n3x &\\ +& 4y &\\ +& 7z &\\ &= 3\\\\\n-9x &\\ +& 6y &\\ +& 9z &\\ &= 3\\\\\n45x &\\ -& 12y &\\ +& hz &\\ &= k\n\\end{align*} For which values of \\emph{h} and \\emph{k} does the system\nhave:\n\na) no solutions?\n\nb) exactly one solution?\n\nc) infinitely many solutions?", 
+    "statement_raw": "Consider the system of linear equations:\n:&lt;math>\n\\begin{align}\n3x &amp;\\ +&amp; 4y &amp;\\ +&amp; 7z &amp;\\ =&amp; 3\\\\\n-9x &amp;\\ +&amp; 6y &amp;\\ +&amp; 9z &amp;\\ =&amp; 3\\\\\n45x &amp;\\ -&amp; 12y &amp;\\ +&amp; hz &amp;\\ =&amp; k\n\\end{align}\n&lt;/math>\nFor which values of ''h'' and ''k'' does the system have:\n\na) no solutions?\n\nb) exactly one solution?\n\nc) infinitely many solutions?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_01", 
+    "year": 2013
 }

@@ -1,13 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_02_(c)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nFind the center of mass of the distribution\n\n\\begin{align*}\\rho(x) = \\cos\\left(\\frac{x}2\\right), \\quad 0 < x < \\pi.\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "The centre of mass is given by\n\n\\begin{align*}\\bar{x} = \\frac{I}{M}\\end{align*} where\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx \\\\\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx\\end{align*}\n\nWe start with the simpler integral \\emph{M} and use the substitution\n\\emph{w = x/2}. Then \\emph{dw = dx/2}, or equivalently, \\emph{dx = 2dw}.\nFurther, when \\emph{x = $\\pi$} we have \\emph{w = $\\pi$/2} and when \\emph{x = 0}\nwe have \\emph{w = 0}. The integral \\emph{M} therefore becomes\n\n\\begin{align*}\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx \\\\\n&= \\int_0^{\\pi/2} \\cos(w)2\\,dw \\\\\n&= \\left.2\\sin(w)\\right|_0^{\\pi/2} \\\\\n&= 2\\sin(\\pi/2)-2\\sin(0) = 2.\\end{align*}\n\nNext we calculate \\emph{I}. This is done using integration by parts:\nChoose \\emph{u} = \\emph{x} and $\\displaystyle dv = \\cos(x/2)dx$. Then\n\\emph{du} = \\emph{dx} and from the integral we just solve, we know that\n$v = \\displaystyle 2\\sin(w) = 2\\sin(x/2)$. Hence\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx = \\left.2x\\sin(x/2)\\right|_0^\\pi - \\int_0^\\pi 2\\sin(x/2)\\,dx \\\\\n&= 2\\pi - 0 - \\left(-\\left.4\\cos(x/2)\\right|_0^\\pi\\right) \\\\\n&= 2\\pi + 0 - 4 = 2\\pi-4.\\end{align*}\n\nFor the second integral we again used our favourite substitution \\emph{w\n= x/2}. The center of mass is thus\n\n\\begin{align*}\n\\bar{x} = \\frac{I}{M} = \\frac{2\\pi-4}{2} = \\pi-2.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\bar{x}=\\pi-2.\\)</span></p>\n", 
+    "answer_latex": " $\\bar{x}=\\pi-2.$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
-        "The centre of mass of the shape delimited by the \\emph{x}-axis, the\nvertical lines \\emph{x} = \\emph{a}, \\emph{x} = \\emph{b} and the curve\n\\emph{y} = $f(x)$ is given by\n\n\\begin{align*}\\bar{x} = \\frac{\\int_a^b xf(x) \\,dx}{\\int_a^b f(x) \\,dx}\\end{align*}"
-    ]
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The centre of mass of the shape delimited by the <em>x</em>-axis, the vertical lines <em>x</em> = <em>a</em>, <em>x</em> = <em>b</em> and the curve <em>y</em> = <span class=\"math\">\\(f(x)\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\bar{x} = \\frac{\\int_a^b xf(x) \\,dx}{\\int_a^b f(x) \\,dx}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The centre of mass of the shape delimited by the \\emph{x}-axis, the\nvertical lines \\emph{x} = \\emph{a}, \\emph{x} = \\emph{b} and the curve\n\\emph{y} = $f(x)$ is given by\n\n\\begin{align*}\n\\bar{x} = \\frac{\\int_a^b xf(x) \\,dx}{\\int_a^b f(x) \\,dx}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The centre of mass of the shape delimited by the ''x''-axis, the vertical lines ''x'' = ''a'', ''x'' = ''b'' and the curve ''y'' = &amp;fnof;(''x'') is given by\n:&lt;math>\n\\bar{x} = \\frac{\\int_a^b xf(x) \\,dx}{\\int_a^b f(x) \\,dx}\n&lt;/math>\n"
+    ], 
+    "num_votes": 14, 
+    "question": "2 (c)", 
+    "rating": 64, 
+    "sols_html": [
+        "<p>The centre of mass is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\bar{x} = \\frac{I}{M}\\end{aligned}\\]</span></p>\n<p>where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI &amp;= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx \\\\\nM &amp;= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx\\end{aligned}\\]</span></p>\n<p>We start with the simpler integral <em>M</em> and use the substitution <em>w = x/2</em>. Then <em>dw = dx/2</em>, or equivalently, <em>dx = 2dw</em>. Further, when <em>x = <span class=\"math\">\\(\\pi\\)</span></em> we have <em>w = <span class=\"math\">\\(\\pi\\)</span>/2</em> and when <em>x = 0</em> we have <em>w = 0</em>. The integral <em>M</em> therefore becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM &amp;= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx \\\\\n&amp;= \\int_0^{\\pi/2} \\cos(w)2\\,dw \\\\\n&amp;= \\left.2\\sin(w)\\right|_0^{\\pi/2} \\\\\n&amp;= 2\\sin(\\pi/2)-2\\sin(0) = 2.\\end{aligned}\\]</span></p>\n<p>Next we calculate <em>I</em>. This is done using integration by parts: Choose <em>u</em> = <em>x</em> and <span class=\"math\">\\(\\displaystyle dv = \\cos(x/2)dx\\)</span>. Then <em>du</em> = <em>dx</em> and from the integral we just solve, we know that <span class=\"math\">\\(v = \\displaystyle 2\\sin(w) = 2\\sin(x/2)\\)</span>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI &amp;= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx = \\left.2x\\sin(x/2)\\right|_0^\\pi - \\int_0^\\pi 2\\sin(x/2)\\,dx \\\\\n&amp;= 2\\pi - 0 - \\left(-\\left.4\\cos(x/2)\\right|_0^\\pi\\right) \\\\\n&amp;= 2\\pi + 0 - 4 = 2\\pi-4.\\end{aligned}\\]</span></p>\n<p>For the second integral we again used our favourite substitution <em>w = x/2</em>. The center of mass is thus</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\bar{x} = \\frac{I}{M} = \\frac{2\\pi-4}{2} = \\pi-2.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The centre of mass is given by\n\n\\begin{align*}\n\\bar{x} = \\frac{I}{M}\n\\end{align*} where\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx \\\\\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx\n\\end{align*}\n\nWe start with the simpler integral \\emph{M} and use the substitution\n\\emph{w = x/2}. Then \\emph{dw = dx/2}, or equivalently, \\emph{dx = 2dw}.\nFurther, when \\emph{x = $\\pi$} we have \\emph{w = $\\pi$/2} and when \\emph{x = 0}\nwe have \\emph{w = 0}. The integral \\emph{M} therefore becomes\n\n\\begin{align*}\nM &= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx \\\\\n&= \\int_0^{\\pi/2} \\cos(w)2\\,dw \\\\\n&= \\left.2\\sin(w)\\right|_0^{\\pi/2} \\\\\n&= 2\\sin(\\pi/2)-2\\sin(0) = 2.\n\\end{align*}\n\nNext we calculate \\emph{I}. This is done using integration by parts:\nChoose \\emph{u} = \\emph{x} and $\\displaystyle dv = \\cos(x/2)dx$. Then\n\\emph{du} = \\emph{dx} and from the integral we just solve, we know that\n$v = \\displaystyle 2\\sin(w) = 2\\sin(x/2)$. Hence\n\n\\begin{align*}\nI &= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx = \\left.2x\\sin(x/2)\\right|_0^\\pi - \\int_0^\\pi 2\\sin(x/2)\\,dx \\\\\n&= 2\\pi - 0 - \\left(-\\left.4\\cos(x/2)\\right|_0^\\pi\\right) \\\\\n&= 2\\pi + 0 - 4 = 2\\pi-4.\n\\end{align*}\n\nFor the second integral we again used our favourite substitution \\emph{w\n= x/2}. The center of mass is thus\n\n\\begin{align*}\n\\bar{x} = \\frac{I}{M} = \\frac{2\\pi-4}{2} = \\pi-2.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The centre of mass is given by\n:&lt;math>\n\\bar{x} = \\frac{I}{M}\n&lt;/math>\nwhere\n:&lt;math>\\begin{align}\nI &amp;= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx \\\\\nM &amp;= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx\n\\end{align}&lt;/math>\n\nWe start with the simpler integral ''M'' and use the substitution ''w = x/2''. Then ''dw = dx/2'', or equivalently, ''dx = 2dw''. Further, when ''x = &amp;pi;'' we have ''w = &amp;pi;/2'' and when ''x = 0'' we have ''w = 0''. The integral ''M'' therefore becomes\n\n:&lt;math> \\begin{align}\nM &amp;= \\int_0^{\\pi} \\cos\\left(\\frac{x}2\\right)\\,dx \\\\\n&amp;= \\int_0^{\\pi/2} \\cos(w)2\\,dw \\\\\n&amp;= \\left.2\\sin(w)\\right|_0^{\\pi/2} \\\\\n&amp;= 2\\sin(\\pi/2)-2\\sin(0) = 2.\n\\end{align} &lt;/math>\n\nNext we calculate ''I''. This is done using integration by parts: Choose ''u'' = ''x'' and &lt;math>\\displaystyle dv = \\cos(x/2)dx&lt;/math>. Then ''du'' = ''dx'' and from the integral we just solve, we know that &lt;math>v = \\displaystyle 2\\sin(w) = 2\\sin(x/2)&lt;/math>. Hence\n\n:&lt;math> \\begin{align}\nI &amp;= \\int_0^\\pi x\\cos\\left(\\frac{x}{2}\\right)\\,dx = \\left.2x\\sin(x/2)\\right|_0^\\pi - \\int_0^\\pi 2\\sin(x/2)\\,dx \\\\\n&amp;= 2\\pi - 0 - \\left(-\\left.4\\cos(x/2)\\right|_0^\\pi\\right) \\\\\n&amp;= 2\\pi + 0 - 4 = 2\\pi-4.\n\\end{align} &lt;/math>\n\nFor the second integral we again used our favourite substitution ''w = x/2''. The center of mass is thus\n\n:&lt;math> \\begin{align}\n\\bar{x} = \\frac{I}{M} = \\frac{2\\pi-4}{2} = \\pi-2.\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Short answer question. Simplify your answer to the best possible. Show in detail how you arrive at your answer (work will be considered for this problem).</strong></p>\n<p>Find the center of mass of the distribution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\rho(x) = \\cos\\left(\\frac{x}2\\right), \\quad 0 &lt; x &lt; \\pi.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\textbf{Short answer question. Simplify your answer to the best\npossible. Show in detail how you arrive at your answer (work will be\nconsidered for this problem).}\n\nFind the center of mass of the distribution\n\n\\begin{align*}\n\\rho(x) = \\cos\\left(\\frac{x}2\\right), \\quad 0 < x < \\pi.\n\\end{align*}", 
+    "statement_raw": "'''Short answer question. Simplify your answer to the best possible. Show in detail how you arrive at your answer (work will be considered for this problem).'''\n\nFind the center of mass of the distribution\n\n:&lt;math> \\rho(x) = \\cos\\left(\\frac{x}2\\right), \\quad 0 &lt; x &lt; \\pi. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Center_of_mass", 
+        "Integration", 
+        "Integration_by_parts", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_02_(c)", 
+    "year": 2012
 }

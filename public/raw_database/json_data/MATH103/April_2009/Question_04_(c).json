@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_04_(c)", 
-    "course": "MATH103", 
-    "statement": "Find the following integral\n\n\\begin{align*}\\int \\frac{x+7}{(x-3)(x+2)}\\,dx\\end{align*}", 
-    "year": 2009, 
-    "sols": [
-        "Before we can calculate the integral, we use partial fraction.\n\n\\begin{align*}\n\\frac{x+7}{(x-3)(x+2)} &= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\\end{align*}\n\nSo, we get two equations to solve for $A$ and $B$\n\n\\begin{align*}\n A+B&=1,\\\\\n2A-3B&=7\\end{align*}\n\nand we get $A=2, \\ B=-1$.\n\nSo we find that\n\n\\begin{align*} \n\\int \\frac{x+7}{(x-3)(x+2)}dx &= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&= 2\\ln(x-3) - \\ln(x+2) + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\frac{x+7}{(x-3)(x+2)}dx=2\\ln(x-3) - \\ln(x+2) + C\\)</span></p>\n", 
+    "answer_latex": " $\\int \\frac{x+7}{(x-3)(x+2)}dx=2\\ln(x-3) - \\ln(x+2) + C$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use partial fractions.</p>\n"
+    ], 
+    "hints_latex": [
         "Use partial fractions."
-    ]
+    ], 
+    "hints_raw": [
+        "Use partial fractions.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (c)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>Before we can calculate the integral, we use partial fraction.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{x+7}{(x-3)(x+2)} &amp;= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &amp;= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\\end{aligned}\\]</span></p>\n<p>So, we get two equations to solve for <span class=\"math\">\\(A\\)</span> and <span class=\"math\">\\(B\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA+B&amp;=1,\\\\\n2A-3B&amp;=7\\end{aligned}\\]</span></p>\n<p>and we get <span class=\"math\">\\(A=2, \\ B=-1\\)</span>.</p>\n<p>So we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{x+7}{(x-3)(x+2)}dx &amp;= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&amp;= 2\\ln(x-3) - \\ln(x+2) + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Before we can calculate the integral, we use partial fraction.\n\n\\begin{align*}\n\\frac{x+7}{(x-3)(x+2)} &= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\n\\end{align*}\n\nSo, we get two equations to solve for $A$ and $B$\n\n\\begin{align*}\nA+B&=1,\\\\\n2A-3B&=7\n\\end{align*}\n\nand we get $A=2, \\ B=-1$.\n\nSo we find that\n\n\\begin{align*}\n\\int \\frac{x+7}{(x-3)(x+2)}dx &= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&= 2\\ln(x-3) - \\ln(x+2) + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Before we can calculate the integral, we use partial fraction.\n\n:&lt;math>\\begin{align}\n\\frac{x+7}{(x-3)(x+2)} &amp;= \\frac{A}{x-3} + \\frac{B}{x+2}\\\\\n &amp;= \\frac{A(x+2) + B(x-3)}{(x-3)(x+2)} = \\frac{x\\overbrace{(A+B)}^{= 1} + \\overbrace{2A-3B}^{= 7}}{(x-3)(x+2)}\n\\end{align}&lt;/math>\n\nSo, we get two equations to solve for &lt;math> \\ A&lt;/math> and &lt;math>\\ B&lt;/math>\n\n:&lt;math>\\begin{align}\n A+B&amp;=1,\\\\\n2A-3B&amp;=7\n\\end{align}&lt;/math>\n\nand we get &lt;math> A=2, \\ B=-1&lt;/math>.\n\nSo we find that\n\n:&lt;math>\\begin{align} \n\\int \\frac{x+7}{(x-3)(x+2)}dx &amp;= \\int\\left(\\frac{2}{x-3} - \\frac{1}{x+2}\\right)\\,dx \\\\\n&amp;= 2\\ln(x-3) - \\ln(x+2) + C\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p>Find the following integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{x+7}{(x-3)(x+2)}\\,dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the following integral\n\n\\begin{align*}\n\\int \\frac{x+7}{(x-3)(x+2)}\\,dx\n\\end{align*}", 
+    "statement_raw": "Find the following integral\n\n:&lt;math> \\int \\frac{x+7}{(x-3)(x+2)}\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_fractions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_04_(c)", 
+    "year": 2009
 }

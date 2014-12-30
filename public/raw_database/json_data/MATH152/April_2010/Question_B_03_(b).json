@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_B_03_(b)", 
-    "course": "MATH152", 
-    "statement": "A random walk problem with two states has a transition matrix\n\n\\begin{align*}P = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\\end{align*}\n\nb) The eigenvalues of $P$ are 1 and 1/12. Find corresponding\neigenvectors.", 
-    "year": 2010, 
-    "sols": [
-        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors.\n\n$\\lambda_{1} = 1$\n\n\\begin{align*}\n&(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 & 1/4 \\\\ 2/3 & -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\\end{align*}\n\n(Note that we are not normalizing the eigenvectors. It is not necessary\nto do so at this point.)\n\n$\\lambda_{2} = 1/12$\n\n\\begin{align*}\n&(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 & 1/4 \\\\ 2/3 & 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\quad \\rightarrow \\quad \\mathbf{v}_{2}=\\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\quad \\rightarrow \\quad \\mathbf{v}_{2}=\\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors."
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>To determine the eigenvectors, we must solve the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\lambda_{k}\\)</span> are the eigenvalues and <strong>v</strong><sub><em>k</em></sub> are the eigenvectors.</p>\n"
+    ], 
+    "hints_latex": [
+        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\n\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors."
+    ], 
+    "hints_raw": [
+        "To determine the eigenvectors, we must solve the equation\n\n:&lt;math>\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\n&lt;/math>\n\nwhere &lt;math>\\lambda_{k}&lt;/math> are the eigenvalues and '''v'''&lt;sub>''k''&lt;/sub> are the eigenvectors.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 03 (b)", 
+    "rating": 83, 
+    "sols_html": [
+        "<p>To determine the eigenvectors, we must solve the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\lambda_{k}\\)</span> are the eigenvalues and <strong>v</strong><sub><em>k</em></sub> are the eigenvectors.</p>\n<p><span class=\"math\">\\(\\lambda_{1} = 1\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 &amp; 1/4 \\\\ 2/3 &amp; -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ &amp; \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>(Note that we are not normalizing the eigenvectors. It is not necessary to do so at this point.)</p>\n<p><span class=\"math\">\\(\\lambda_{2} = 1/12\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 &amp; 1/4 \\\\ 2/3 &amp; 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ &amp; \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To determine the eigenvectors, we must solve the equation\n\n\\begin{align*}\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\n\\end{align*}\n\nwhere $\\lambda_{k}$ are the eigenvalues and\n\\textbf{v}\\textsubscript{\\emph{k}} are the eigenvectors.\n\n$\\lambda_{1} = 1$\n\n\\begin{align*}\n&(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 & 1/4 \\\\ 2/3 & -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\n\\end{align*}\n\n(Note that we are not normalizing the eigenvectors. It is not necessary\nto do so at this point.)\n\n$\\lambda_{2} = 1/12$\n\n\\begin{align*}\n&(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 & 1/4 \\\\ 2/3 & 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ & \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To determine the eigenvectors, we must solve the equation\n\n:&lt;math>\n(P - \\lambda_{k} I)\\mathbf{v}_{k} = 0\n&lt;/math>\n\nwhere &lt;math>\\lambda_{k}&lt;/math> are the eigenvalues and '''v'''&lt;sub>''k''&lt;/sub> are the eigenvectors.\n\n&lt;b>&lt;math>\\lambda_{1} = 1&lt;/math>&lt;/b>\n\n:&lt;math>\n\\begin{align}\n&amp;(P - I)\\mathbf{v}_{1} = \\left[\\begin{array}{cc} -2/3 &amp; 1/4 \\\\ 2/3 &amp; -1/4\\end{array}\\right]\\mathbf{v}_{1} = 0 \\\\ &amp; \\quad \\rightarrow \\quad \\mathbf{v}_{1} = \\left[\\begin{array}{c}1/4 \\\\ 2/3\\end{array}\\right]\n\\end{align}\n&lt;/math>\n\n(Note that we are not normalizing the eigenvectors. It is not necessary to do so at this point.)\n\n&lt;b>&lt;math>\\lambda_{2} = 1/12&lt;/math>&lt;/b>\n\n:&lt;math>\n\\begin{align}\n&amp;(P - \\frac{1}{12}I)\\mathbf{v}_{2} = \\left[\\begin{array}{cc} 1/4 &amp; 1/4 \\\\ 2/3 &amp; 2/3\\end{array}\\right]\\mathbf{v}_{2} = 0 \\\\ &amp; \\quad \\rightarrow \\quad \\mathbf{v}_{2} = \\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>A random walk problem with two states has a transition matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\left[\\begin{array}{cc} 1/3 &amp; 1/4 \\\\ 2/3 &amp; 3/4\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>b) The eigenvalues of <span class=\"math\">\\(P\\)</span> are 1 and 1/12. Find corresponding eigenvectors.</p>\n", 
+    "statement_latex": "A random walk problem with two states has a transition matrix\n\n\\begin{align*}\nP = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\n\\end{align*}\n\nb) The eigenvalues of $P$ are 1 and 1/12. Find corresponding\neigenvectors.", 
+    "statement_raw": "A random walk problem with two states has a transition matrix\n\n:&lt;math>\nP = \\left[\\begin{array}{cc} 1/3 &amp; 1/4 \\\\ 2/3 &amp; 3/4\\end{array}\\right]\n&lt;/math>\n\nb) The eigenvalues of &lt;math>P&lt;/math> are 1 and 1/12. Find corresponding eigenvectors.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_03_(b)", 
+    "year": 2010
 }

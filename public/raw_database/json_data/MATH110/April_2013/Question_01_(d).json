@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
+    "answer_html": "<p>It has a vertical asymptote at <em>x</em> = 0, but its reciprocal 1/<span class=\"math\">\\(f\\)</span> = <em>x</em> has no vertical asymptotes.</p>\n", 
+    "answer_latex": "It has a\nvertical asymptote at \\emph{x} = 0, but its reciprocal 1/$f$ = \\emph{x}\nhas no vertical asymptotes.", 
+    "contributors": [
+        "CarmenBruni"
+    ], 
     "course": "MATH110", 
-    "statement": "\\emph{Determine whether the following statement is true or false. If it\nis true, provide justification. If it is false, provide a\ncounterexample.}\n\n\\textbf{(d)} If $f$ has a vertical asymptote at \\emph{x} = 0, then is\nreciprocal 1/$f$ has a vertical asymptote at \\emph{x} = 0.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try known examples of functions with vertical asymptotes at 0 and look at their reciprocal functions. This should give you the intuition of this question.</p>\n<p>One can also look at this abstractly by recalling the definition of what it means to have a vertical asymptote and how this would affect the reciprocal function, but trying examples should be sufficient.</p>\n"
+    ], 
+    "hints_latex": [
+        "Try known examples of functions with vertical asymptotes at 0 and look\nat their reciprocal functions. This should give you the intuition of\nthis question.\n\nOne can also look at this abstractly by recalling the definition of what\nit means to have a vertical asymptote and how this would affect the\nreciprocal function, but trying examples should be sufficient."
+    ], 
+    "hints_raw": [
+        "Try known examples of functions with vertical asymptotes at 0 and look at their reciprocal functions. This should give you the intuition of this question. \n\nOne can also look at this abstractly by recalling the definition of what it means to have a vertical asymptote and how this would affect the reciprocal function, but trying examples should be sufficient.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>This statement is <strong>false</strong>.</p>\n<p>As a counterexample, consider <span class=\"math\">\\(f(x)\\)</span> = 1/<em>x</em>. It has a vertical asymptote at <em>x</em> = 0, but its reciprocal 1/<span class=\"math\">\\(f\\)</span> = <em>x</em> has no vertical asymptotes.</p>\n"
+    ], 
+    "sols_latex": [
         "This statement is \\textbf{false}.\n\nAs a counterexample, consider $f(x)$ = 1/\\emph{x}. It has a\nvertical asymptote at \\emph{x} = 0, but its reciprocal 1/$f$ = \\emph{x}\nhas no vertical asymptotes."
     ], 
-    "hints": [
-        "Try known examples of functions with vertical asymptotes at 0 and look\nat their reciprocal functions. This should give you the intuition of\nthis question.\n\nOne can also look at this abstractly by recalling the definition of what\nit means to have a vertical asymptote and how this would affect the\nreciprocal function, but trying examples should be sufficient."
-    ]
+    "sols_raw": [
+        "This statement is '''false'''.\n\nAs a counterexample, consider &amp;fnof;(''x'') = 1/''x''. It has a vertical asymptote at ''x'' = 0, but its reciprocal 1/&amp;fnof; = ''x'' has no vertical asymptotes.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><em>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</em></p>\n<p><strong>(d)</strong> If <span class=\"math\">\\(f\\)</span> has a vertical asymptote at <em>x</em> = 0, then is reciprocal 1/<span class=\"math\">\\(f\\)</span> has a vertical asymptote at <em>x</em> = 0.</p>\n", 
+    "statement_latex": "\\emph{Determine whether the following statement is true or false. If it\nis true, provide justification. If it is false, provide a\ncounterexample.}\n\n\\textbf{(d)} If $f$ has a vertical asymptote at \\emph{x} = 0, then is\nreciprocal 1/$f$ has a vertical asymptote at \\emph{x} = 0.", 
+    "statement_raw": "''Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.''\n\n'''(d)''' If &amp;fnof; has a vertical asymptote at ''x'' = 0, then is reciprocal 1/&amp;fnof; has a vertical asymptote at ''x'' = 0.\n", 
+    "term": "April", 
+    "topics": [
+        "Asymptote"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_01_(d)", 
+    "year": 2013
 }

@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_03_(c)", 
-    "course": "MATH215", 
-    "statement": "For the following ODE\n\n\\begin{align*}\\frac{dy}{dt} = (y^2-1)(y-2)^2\\end{align*}\n\n\\textbf{(c)} Determine the $\\lim_{t \\rightarrow \\infty} y(t)$ and sketch\nroughly the graph of the solutions for each of the following initial\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{y}(0) = 1.5,\n\\item\n  \\emph{y}(0) = -3, and\n\\item\n  \\emph{y}(0) = 4.\n\\end{itemize}", 
-    "year": 2011, 
-    "sols": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(a)}{(a)}\nwe know that the fixed points are given by $y_0 = -1, 1, 2$.\n\nIn part\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(b)}{(b)}\nwe calculated that \\emph{y} is increases in $(-\\infty,-1)\\cup(1,\\infty)$\nand decreases in (-1,1).\n\nThis means, that starting at $y(0) = 1.5$, the solution increases\ntowards the critical point $y_0=2$. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = 2$.\n\nStarting at $y(0) = -3$, the solution increases towards the critical\npoint $y_0=-1$. Hence $\\lim_{t\\rightarrow\\infty}y(t) = -1$.\n\nStarting at $y(0) = 4$, the solution increases. Since there is no larger\ncritical point, the solution increases indefinitely. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = \\infty$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Fig_215_2011_3c.jpg}\n\\end{description}"
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_3c.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_3c.jpg}\n\\end{description}", 
+    "contributors": [
+        "DavidKohler", 
+        "MikeL", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Consider the sign of <span class=\"math\">\\(\\frac{dy}{dt}\\)</span> between the fixed points.</p>\n"
+    ], 
+    "hints_latex": [
         "Consider the sign of $\\frac{dy}{dt}$ between the fixed points."
-    ]
+    ], 
+    "hints_raw": [
+        "Consider the sign of &lt;math>\\frac{dy}{dt}&lt;/math> between the fixed points.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3 (c)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>From <span>(a)</span> we know that the fixed points are given by <span class=\"math\">\\(y_0 = -1, 1, 2\\)</span>.</p>\n<p>In part <span>(b)</span> we calculated that <em>y</em> is increases in <span class=\"math\">\\((-\\infty,-1)\\cup(1,\\infty)\\)</span> and decreases in (-1,1).</p>\n<p>This means, that starting at <span class=\"math\">\\(y(0) = 1.5\\)</span>, the solution increases towards the critical point <span class=\"math\">\\(y_0=2\\)</span>. Hence <span class=\"math\">\\(\\lim_{t\\rightarrow\\infty}y(t) = 2\\)</span>.</p>\n<p>Starting at <span class=\"math\">\\(y(0) = -3\\)</span>, the solution increases towards the critical point <span class=\"math\">\\(y_0=-1\\)</span>. Hence <span class=\"math\">\\(\\lim_{t\\rightarrow\\infty}y(t) = -1\\)</span>.</p>\n<p>Starting at <span class=\"math\">\\(y(0) = 4\\)</span>, the solution increases. Since there is no larger critical point, the solution increases indefinitely. Hence <span class=\"math\">\\(\\lim_{t\\rightarrow\\infty}y(t) = \\infty\\)</span>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_3c.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+    ], 
+    "sols_latex": [
+        "From\n{(a)}\nwe know that the fixed points are given by $y_0 = -1, 1, 2$.\n\nIn part\n{(b)}\nwe calculated that \\emph{y} is increases in $(-\\infty,-1)\\cup(1,\\infty)$\nand decreases in (-1,1).\n\nThis means, that starting at $y(0) = 1.5$, the solution increases\ntowards the critical point $y_0=2$. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = 2$.\n\nStarting at $y(0) = -3$, the solution increases towards the critical\npoint $y_0=-1$. Hence $\\lim_{t\\rightarrow\\infty}y(t) = -1$.\n\nStarting at $y(0) = 4$, the solution increases. Since there is no larger\ncritical point, the solution increases indefinitely. Hence\n$\\lim_{t\\rightarrow\\infty}y(t) = \\infty$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_3c.jpg}\n\\end{description}"
+    ], 
+    "sols_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(a)|(a)]] we know that the fixed points are given by &lt;math>\\ y_0 = -1, 1, 2&lt;/math>.\n\nIn part [[Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_3_(b)|(b)]] we calculated that ''y'' is increases in &lt;math> (-\\infty,-1)\\cup(1,\\infty) &lt;/math> and decreases in (-1,1).\n\nThis means, that starting at &lt;math> \\ y(0) = 1.5 &lt;/math>, the solution increases towards the critical point &lt;math>\\  y_0=2&lt;/math>. Hence &lt;math>\\ \\lim_{t\\rightarrow\\infty}y(t) = 2&lt;/math>.\n\nStarting at &lt;math> \\ y(0) = -3 &lt;/math>, the solution increases towards the critical point &lt;math>\\  y_0=-1&lt;/math>. Hence &lt;math>\\ \\lim_{t\\rightarrow\\infty}y(t) = -1&lt;/math>.\n\nStarting at &lt;math> \\ y(0) = 4 &lt;/math>, the solution increases. Since there is no larger critical point, the solution increases indefinitely. Hence &lt;math>\\ \\lim_{t\\rightarrow\\infty}y(t) = \\infty&lt;/math>.\n\n:[[File:Fig 215 2011 3c.jpg|400px|Sketch of the three solution]]\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>For the following ODE</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> Determine the <span class=\"math\">\\(\\lim_{t \\rightarrow \\infty} y(t)\\)</span> and sketch roughly the graph of the solutions for each of the following initial conditions:</p>\n<ul>\n<li><p><em>y</em>(0) = 1.5,</p></li>\n<li><p><em>y</em>(0) = -3, and</p></li>\n<li><p><em>y</em>(0) = 4.</p></li>\n</ul>\n", 
+    "statement_latex": "For the following ODE\n\n\\begin{align*}\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\n\\end{align*}\n\n\\textbf{(c)} Determine the $\\lim_{t \\rightarrow \\infty} y(t)$ and sketch\nroughly the graph of the solutions for each of the following initial\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{y}(0) = 1.5,\n\\item\n  \\emph{y}(0) = -3, and\n\\item\n  \\emph{y}(0) = 4.\n\\end{itemize}", 
+    "statement_raw": "For the following ODE\n\n:&lt;math>\n\\frac{dy}{dt} = (y^2-1)(y-2)^2\n&lt;/math>\n\n'''(c)''' Determine the &lt;math> \\lim_{t \\rightarrow \\infty} y(t) &lt;/math> and sketch roughly the graph of the solutions for each of the following initial conditions:\n\n* ''y''(0) = 1.5,\n* ''y''(0) = -3, and\n* ''y''(0) = 4.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_03_(c)", 
+    "year": 2011
 }

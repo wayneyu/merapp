@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(c)", 
-    "course": "MATH220", 
-    "statement": "Let $\\{ b_n \\}$ be a sequence defined by\n\n\\begin{align*}b_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.\\end{align*}\nProve that\n\n\\begin{align*}b_{n+1} \\leq b_n \\quad\\text{ for each }n \\in \\mathbb{N}.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We will prove this statement by induction on $n$.\n\nFirst, for $n=1$. By definition of the sequence we have that\n\n\\begin{align*}\nb_2 &= \\frac{b_1+\\sqrt{b_1}}{2} \\\\\n&= \\frac{2+\\sqrt{2}}{2}\\\\\n&\\leq \\frac{2+2}{2}\\\\\n&=2\\\\\n&\\leq b_1\\end{align*} which proves the first step of our induction.\n\nLet us now assume that the statement is true for all values of $n$ up to\n$m$ and let us show that the statement holds for $n=m+1$.\n\nIn\n\\href{Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_07_(b)}{part\n(b)} we showed that\n\n\\begin{align*}\\displaystyle\nb_n \\geq 1 \\quad\\text{for all } n \\in \\mathbb{N}\\end{align*} hence we can\nguarantee that\n\n\\begin{align*}\\displaystyle\n\\sqrt{b_n} \\leq b_n \\quad \\text{for all } n \\in \\mathbb{N}\\end{align*} and so, we\nhave that\n\n\\begin{align*}\nb_{m+1} &= \\frac{b_m + \\sqrt{b_m}}{2}\\\\\n&\\leq \\frac{b_m + b_m}{2}\\\\\n&= b_m\\end{align*} which concludes our proof."
+    "answer_html": "<p><span class=\"math\">\\(\\leq \\frac{b_m + b_m}{2}=b_m\\)</span> which concludes our proof.</p>\n", 
+    "answer_latex": " $\\leq \\frac{b_m + b_m}{2}=b_m$  which concludes our proof.", 
+    "contributors": [
+        "Konradbe", 
+        "CameronChristou"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use induction!</p>\n"
+    ], 
+    "hints_latex": [
         "Use induction!"
-    ]
+    ], 
+    "hints_raw": [
+        "Use induction!\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We will prove this statement by induction on <span class=\"math\">\\(n\\)</span>.</p>\n<p>First, for <span class=\"math\">\\(n=1\\)</span>. By definition of the sequence we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb_2 &amp;= \\frac{b_1+\\sqrt{b_1}}{2} \\\\\n&amp;= \\frac{2+\\sqrt{2}}{2}\\\\\n&amp;\\leq \\frac{2+2}{2}\\\\\n&amp;=2\\\\\n&amp;\\leq b_1\\end{aligned}\\]</span></p>\n<p>which proves the first step of our induction.</p>\n<p>Let us now assume that the statement is true for all values of <span class=\"math\">\\(n\\)</span> up to <span class=\"math\">\\(m\\)</span> and let us show that the statement holds for <span class=\"math\">\\(n=m+1\\)</span>.</p>\n<p>In <span>part (b)</span> we showed that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nb_n \\geq 1 \\quad\\text{for all } n \\in \\mathbb{N}\\end{aligned}\\]</span></p>\n<p>hence we can guarantee that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\sqrt{b_n} \\leq b_n \\quad \\text{for all } n \\in \\mathbb{N}\\end{aligned}\\]</span></p>\n<p>and so, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb_{m+1} &amp;= \\frac{b_m + \\sqrt{b_m}}{2}\\\\\n&amp;\\leq \\frac{b_m + b_m}{2}\\\\\n&amp;= b_m\\end{aligned}\\]</span></p>\n<p>which concludes our proof.</p>\n"
+    ], 
+    "sols_latex": [
+        "We will prove this statement by induction on $n$.\n\nFirst, for $n=1$. By definition of the sequence we have that\n\n\\begin{align*}\nb_2 &= \\frac{b_1+\\sqrt{b_1}}{2} \\\\\n&= \\frac{2+\\sqrt{2}}{2}\\\\\n&\\leq \\frac{2+2}{2}\\\\\n&=2\\\\\n&\\leq b_1\n\\end{align*} which proves the first step of our induction.\n\nLet us now assume that the statement is true for all values of $n$ up to\n$m$ and let us show that the statement holds for $n=m+1$.\n\nIn\n{part\n(b)} we showed that\n\n\\begin{align*}\n\\displaystyle\nb_n \\geq 1 \\quad\\text{for all } n \\in \\mathbb{N}\n\\end{align*} hence we can\nguarantee that\n\n\\begin{align*}\n\\displaystyle\n\\sqrt{b_n} \\leq b_n \\quad \\text{for all } n \\in \\mathbb{N}\n\\end{align*} and so, we\nhave that\n\n\\begin{align*}\nb_{m+1} &= \\frac{b_m + \\sqrt{b_m}}{2}\\\\\n&\\leq \\frac{b_m + b_m}{2}\\\\\n&= b_m\n\\end{align*} which concludes our proof."
+    ], 
+    "sols_raw": [
+        "We will prove this statement by induction on &lt;math>n&lt;/math>.\n\nFirst, for &lt;math>n=1&lt;/math>. By definition of the sequence we have that\n:&lt;math>\\displaystyle\\begin{align}\nb_2 &amp;= \\frac{b_1+\\sqrt{b_1}}{2} \\\\\n&amp;= \\frac{2+\\sqrt{2}}{2}\\\\\n&amp;\\leq \\frac{2+2}{2}\\\\\n&amp;=2\\\\\n&amp;\\leq b_1\n\\end{align}&lt;/math>\nwhich proves the first step of our induction.\n\nLet us now assume that the statement is true for all values of &lt;math>n&lt;/math> up to &lt;math>m&lt;/math> and let us show that the statement holds for &lt;math>n=m+1&lt;/math>.\n\nIn [[Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_07_(b)|part (b)]] we showed that\n:&lt;math>\\displaystyle\nb_n \\geq 1 \\quad\\text{for all } n \\in \\mathbb{N}\n&lt;/math>\nhence we can guarantee that\n:&lt;math>\\displaystyle\n\\sqrt{b_n} \\leq b_n \\quad \\text{for all } n \\in \\mathbb{N}\n&lt;/math>\nand so, we have that\n:&lt;math>\\displaystyle\\begin{align}\nb_{m+1} &amp;= \\frac{b_m + \\sqrt{b_m}}{2}\\\\\n&amp;\\leq \\frac{b_m + b_m}{2}\\\\\n&amp;= b_m\n\\end{align}&lt;/math>\nwhich concludes our proof.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\{ b_n \\}\\)</span> be a sequence defined by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.\\end{aligned}\\]</span></p>\n<p>Prove that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb_{n+1} \\leq b_n \\quad\\text{ for each }n \\in \\mathbb{N}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Let $\\{ b_n \\}$ be a sequence defined by\n\n\\begin{align*}\nb_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.\n\\end{align*}\nProve that\n\n\\begin{align*}\nb_{n+1} \\leq b_n \\quad\\text{ for each }n \\in \\mathbb{N}.\n\\end{align*}", 
+    "statement_raw": "Let &lt;math>\\{ b_n \\}&lt;/math> be a sequence defined by\n:&lt;math>b_1 =2 \\quad \\text{ and } \\quad b_{n+1}=\\frac{b_n + \\sqrt{b_n}}{2} \\quad\\text{ for each }n \\in \\mathbb{N}.&lt;/math>\nProve that\n:&lt;math>b_{n+1} \\leq b_n \\quad\\text{ for each }n \\in \\mathbb{N}.&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Mathematical_induction"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_07_(c)", 
+    "year": 2011
 }

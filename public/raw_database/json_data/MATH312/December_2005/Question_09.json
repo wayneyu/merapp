@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_09", 
-    "course": "MATH312", 
-    "statement": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{p} is a prime with $p \\equiv 1 \\mod 4$, and \\emph{r} is a\nprimitive root modulo \\emph{p}. Show that \\emph{-r} is also a primitive\nroot modulo \\emph{p}.", 
-    "year": 2005, 
-    "sols": [
-        "Assume towards a contradiction that $\\displaystyle -r$ is not a\nprimitive root. Then $\\displaystyle (-r)^s \\equiv 1 \\mod{p}$ for some\n\\emph{s} smaller than $\\displaystyle p-1$. Now, we have that\n$\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}$ (multiply both sides of the\nprevious congruence by $\\displaystyle (-1)^{s}$. As \\emph{r} is a\nprimitive root, we have that $\\displaystyle r^{p-1} \\equiv 1 \\mod{p}$\nand that $\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}$. As these are the\nonly possible values for a power of \\emph{r} to be equivalent to a power\nof -1, we must have that either $\\displaystyle s=p-1$ or\n$\\displaystyle s=(p-1)/2$.\n\nSuppose towards a contradiction that $\\displaystyle s=(p-1)/2$. Then we\nhave that by the above that\n\n$\\displaystyle -1 \\equiv r^{(p-1)/2} \\equiv (-1)^{(p-1)/2} \\equiv 1 \\mod{p}$\n\nvalid since $\\displaystyle (p-1)/2$ is even. This is a contradiction and\nhence $\\displaystyle s = p-1$ making $\\displaystyle -r$ a primitive\nroot."
+    "answer_html": "<p>This is a contradiction and hence <span class=\"math\">\\(\\displaystyle s = p-1\\)</span> making <span class=\"math\">\\(\\displaystyle -r\\)</span> a primitive root.</p>\n", 
+    "answer_latex": "This is a contradiction and\nhence $\\displaystyle s = p-1$ making $\\displaystyle -r$ a primitive\nroot.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Suppose that <em>s</em> is the smallest power of <span class=\"math\">\\(\\displaystyle -r\\)</span> such that <span class=\"math\">\\(\\displaystyle (-r)^s \\equiv 1 \\mod{p}\\)</span>. What can we say about <em>s</em>?</p>\n", 
+        "<p>Using hint 1, we have that <span class=\"math\">\\(\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}\\)</span>. As <em>r</em> is a primitive root, we have that <span class=\"math\">\\(\\displaystyle r^{p-1} \\equiv 1 \\mod{p}\\)</span> and that <span class=\"math\">\\(\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}\\)</span>. As these are the only possible values for a power of <em>r</em> to be equivalent to a power of -1, we must have that either <span class=\"math\">\\(\\displaystyle s=p-1\\)</span> or <span class=\"math\">\\(\\displaystyle s=(p-1)/2\\)</span>. Assume the second case and find a contradiction.</p>\n"
+    ], 
+    "hints_latex": [
         "Suppose that \\emph{s} is the smallest power of $\\displaystyle -r$ such\nthat $\\displaystyle (-r)^s \\equiv 1 \\mod{p}$. What can we say about\n\\emph{s}?", 
         "Using hint 1, we have that $\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}$.\nAs \\emph{r} is a primitive root, we have that\n$\\displaystyle r^{p-1} \\equiv 1 \\mod{p}$ and that\n$\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}$. As these are the only\npossible values for a power of \\emph{r} to be equivalent to a power of\n-1, we must have that either $\\displaystyle s=p-1$ or\n$\\displaystyle s=(p-1)/2$. Assume the second case and find a\ncontradiction."
-    ]
+    ], 
+    "hints_raw": [
+        "Suppose that ''s'' is the smallest power of &lt;math> \\displaystyle -r&lt;/math> such that &lt;math> \\displaystyle (-r)^s \\equiv 1 \\mod{p}&lt;/math>. What can we say about ''s''?\n", 
+        "Using hint 1, we have that &lt;math> \\displaystyle r^s \\equiv (-1)^{s} \\mod{p}&lt;/math>. As ''r'' is a primitive root, we have that &lt;math> \\displaystyle r^{p-1} \\equiv 1 \\mod{p}&lt;/math> and that &lt;math> \\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}&lt;/math>. As these are the only possible values for a power of ''r'' to be equivalent to a power of -1, we must have that either &lt;math> \\displaystyle s=p-1&lt;/math> or &lt;math> \\displaystyle s=(p-1)/2&lt;/math>. Assume the second case and find a contradiction.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Assume towards a contradiction that <span class=\"math\">\\(\\displaystyle -r\\)</span> is not a primitive root. Then <span class=\"math\">\\(\\displaystyle (-r)^s \\equiv 1 \\mod{p}\\)</span> for some <em>s</em> smaller than <span class=\"math\">\\(\\displaystyle p-1\\)</span>. Now, we have that <span class=\"math\">\\(\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}\\)</span> (multiply both sides of the previous congruence by <span class=\"math\">\\(\\displaystyle (-1)^{s}\\)</span>. As <em>r</em> is a primitive root, we have that <span class=\"math\">\\(\\displaystyle r^{p-1} \\equiv 1 \\mod{p}\\)</span> and that <span class=\"math\">\\(\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}\\)</span>. As these are the only possible values for a power of <em>r</em> to be equivalent to a power of -1, we must have that either <span class=\"math\">\\(\\displaystyle s=p-1\\)</span> or <span class=\"math\">\\(\\displaystyle s=(p-1)/2\\)</span>.</p>\n<p>Suppose towards a contradiction that <span class=\"math\">\\(\\displaystyle s=(p-1)/2\\)</span>. Then we have that by the above that</p>\n<p><span class=\"math\">\\(\\displaystyle -1 \\equiv r^{(p-1)/2} \\equiv (-1)^{(p-1)/2} \\equiv 1 \\mod{p}\\)</span></p>\n<p>valid since <span class=\"math\">\\(\\displaystyle (p-1)/2\\)</span> is even. This is a contradiction and hence <span class=\"math\">\\(\\displaystyle s = p-1\\)</span> making <span class=\"math\">\\(\\displaystyle -r\\)</span> a primitive root.</p>\n"
+    ], 
+    "sols_latex": [
+        "Assume towards a contradiction that $\\displaystyle -r$ is not a\nprimitive root. Then $\\displaystyle (-r)^s \\equiv 1 \\mod{p}$ for some\n\\emph{s} smaller than $\\displaystyle p-1$. Now, we have that\n$\\displaystyle r^s \\equiv (-1)^{s} \\mod{p}$ (multiply both sides of the\nprevious congruence by $\\displaystyle (-1)^{s}$. As \\emph{r} is a\nprimitive root, we have that $\\displaystyle r^{p-1} \\equiv 1 \\mod{p}$\nand that $\\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}$. As these are the\nonly possible values for a power of \\emph{r} to be equivalent to a power\nof -1, we must have that either $\\displaystyle s=p-1$ or\n$\\displaystyle s=(p-1)/2$.\n\nSuppose towards a contradiction that $\\displaystyle s=(p-1)/2$. Then we\nhave that by the above that\n\n$\\displaystyle -1 \\equiv r^{(p-1)/2} \\equiv (-1)^{(p-1)/2} \\equiv 1 \\mod{p}$\n\nvalid since $\\displaystyle (p-1)/2$ is even. This is a contradiction and\nhence $\\displaystyle s = p-1$ making $\\displaystyle -r$ a primitive\nroot."
+    ], 
+    "sols_raw": [
+        "Assume towards a contradiction that &lt;math> \\displaystyle -r&lt;/math> is not a primitive root. Then &lt;math> \\displaystyle (-r)^s \\equiv 1 \\mod{p}&lt;/math> for some ''s'' smaller than &lt;math> \\displaystyle p-1 &lt;/math>. Now, we have that &lt;math> \\displaystyle r^s \\equiv (-1)^{s} \\mod{p}&lt;/math> (multiply both sides of the previous congruence by &lt;math> \\displaystyle (-1)^{s}&lt;/math>. As ''r'' is a primitive root, we have that &lt;math> \\displaystyle r^{p-1} \\equiv 1 \\mod{p}&lt;/math> and that &lt;math> \\displaystyle r^{(p-1)/2} \\equiv -1 \\mod{p}&lt;/math>. As these are the only possible values for a power of ''r'' to be equivalent to a power of -1, we must have that either &lt;math> \\displaystyle s=p-1&lt;/math> or &lt;math> \\displaystyle s=(p-1)/2&lt;/math>.\n\nSuppose towards a contradiction that &lt;math> \\displaystyle s=(p-1)/2&lt;/math>. Then we have that by the above that\n\n&lt;math> \\displaystyle -1 \\equiv r^{(p-1)/2} \\equiv (-1)^{(p-1)/2} \\equiv 1 \\mod{p}&lt;/math>\n\nvalid since &lt;math> \\displaystyle (p-1)/2 &lt;/math> is even. This is a contradiction and hence &lt;math> \\displaystyle s = p-1&lt;/math> making &lt;math> \\displaystyle -r&lt;/math> a primitive root.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Prove</strong></p>\n<p><strong>In this section, prove the statement given to you.</strong></p>\n<p>Suppose <em>p</em> is a prime with <span class=\"math\">\\(p \\equiv 1 \\mod 4\\)</span>, and <em>r</em> is a primitive root modulo <em>p</em>. Show that <em>-r</em> is also a primitive root modulo <em>p</em>.</p>\n", 
+    "statement_latex": "\\textbf{Prove}\n\n\\textbf{In this section, prove the statement given to you.}\n\nSuppose \\emph{p} is a prime with $p \\equiv 1 \\mod 4$, and \\emph{r} is a\nprimitive root modulo \\emph{p}. Show that \\emph{-r} is also a primitive\nroot modulo \\emph{p}.", 
+    "statement_raw": "'''Prove'''\n\n'''In this section, prove the statement given to you.'''\n\nSuppose ''p'' is a prime with &lt;math>p \\equiv 1 \\mod 4&lt;/math>, and ''r'' is a primitive root modulo ''p''. Show that ''-r'' is also a primitive root modulo ''p''.\n", 
+    "term": "December", 
+    "topics": [
+        "Primitive_roots"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2005/Question_09", 
+    "year": 2005
 }

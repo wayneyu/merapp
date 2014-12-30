@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)_iii", 
-    "course": "MATH102", 
-    "statement": "Using Euler's method, determine \\emph{y\\textsubscript{1}},\n\\emph{y\\textsubscript{2}}, \\emph{y\\textsubscript{3}} for\n\\emph{y\\textsubscript{0} = 1} and $\\Delta t = 1/2$\n\n\\begin{align*}\\frac{dy}{dt} = 3y-y^2\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "By Euler's method, we can determine an approximation for the values\n$y_{n} = y(n\\Delta t)$ by the formula,\n\n\\begin{align*}\ny_{n+1} &= y_{n} + \\Delta t\\,f(y_{n}), \\quad f(y) = 3y - y^{2} \\\\\n&= y_{n} + \\Delta t \\, (3y_{n} - y_{n}^{2})\\end{align*} Thus, to determine $y_{1}$ we evaluate the following:\n\n\\begin{align*}\ny_{1} &= y_{0} + \\Delta t \\,(3y_{0} - y_{0}^{2})\\\\\n&= 1 + (1/2)(3 - 1^{2})\\\\\n&= 2.\\end{align*} Applying Euler's method for the following two steps, we\nget $y_{2}$...\n\n\\begin{align*}\ny_{2} &= y_{1} + \\Delta t \\,(3y_{1} - y_{1}^{2})\\\\\n&= 2 + (1/2)(6 - 2^{2})\\\\\n&= 3.\\end{align*} and $y_{3}$...\n\n\\begin{align*}\ny_{3} &= y_{2} + \\Delta t \\,(3y_{2} - y_{2}^{2})\\\\\n&= 3 + (1/2)(9 - 3^{2})\\\\\n&= 3.\\end{align*} Therefore,\n\n\\begin{align*}{\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} =3}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} =3}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} =3}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Remember that $y_{n} = y(n \\Delta t)$.\n\nIf you are unsure about how to proceed, you might try reviewing this\n\\href{http://en.wikipedia.org/wiki/Euler_method\\#Example}{example of\nusing Euler's method}. (In the example, $h$ is equivalent to $\\Delta t$\nof our problem)."
-    ]
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember that <span class=\"math\">\\(y_{n} = y(n \\Delta t)\\)</span>.</p>\n<p>If you are unsure about how to proceed, you might try reviewing this <span>example of using Euler&#8217;s method</span>. (In the example, <span class=\"math\">\\(h\\)</span> is equivalent to <span class=\"math\">\\(\\Delta t\\)</span> of our problem).</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that $y_{n} = y(n \\Delta t)$.\n\nIf you are unsure about how to proceed, you might try reviewing this\n{example of\nusing Euler's method}. (In the example, $h$ is equivalent to $\\Delta t$\nof our problem)."
+    ], 
+    "hints_raw": [
+        "Remember that &lt;math>y_{n} = y(n \\Delta t)&lt;/math>.\n\nIf you are unsure about how to proceed, you might try reviewing this [http://en.wikipedia.org/wiki/Euler_method#Example example of using Euler's method]. (In the example, &lt;math>h&lt;/math> is equivalent to &lt;math>\\Delta t&lt;/math> of our problem).\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (b) iii", 
+    "rating": 78, 
+    "sols_html": [
+        "<p>By Euler&#8217;s method, we can determine an approximation for the values <span class=\"math\">\\(y_{n} = y(n\\Delta t)\\)</span> by the formula,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_{n+1} &amp;= y_{n} + \\Delta t\\,f(y_{n}), \\quad f(y) = 3y - y^{2} \\\\\n&amp;= y_{n} + \\Delta t \\, (3y_{n} - y_{n}^{2})\\end{aligned}\\]</span></p>\n<p>Thus, to determine <span class=\"math\">\\(y_{1}\\)</span> we evaluate the following:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_{1} &amp;= y_{0} + \\Delta t \\,(3y_{0} - y_{0}^{2})\\\\\n&amp;= 1 + (1/2)(3 - 1^{2})\\\\\n&amp;= 2.\\end{aligned}\\]</span></p>\n<p>Applying Euler&#8217;s method for the following two steps, we get <span class=\"math\">\\(y_{2}\\)</span>...</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_{2} &amp;= y_{1} + \\Delta t \\,(3y_{1} - y_{1}^{2})\\\\\n&amp;= 2 + (1/2)(6 - 2^{2})\\\\\n&amp;= 3.\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(y_{3}\\)</span>...</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_{3} &amp;= y_{2} + \\Delta t \\,(3y_{2} - y_{2}^{2})\\\\\n&amp;= 3 + (1/2)(9 - 3^{2})\\\\\n&amp;= 3.\\end{aligned}\\]</span></p>\n<p>Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} =3}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By Euler's method, we can determine an approximation for the values\n$y_{n} = y(n\\Delta t)$ by the formula,\n\n\\begin{align*}\ny_{n+1} &= y_{n} + \\Delta t\\,f(y_{n}), \\quad f(y) = 3y - y^{2} \\\\\n&= y_{n} + \\Delta t \\, (3y_{n} - y_{n}^{2})\n\\end{align*} Thus, to determine $y_{1}$ we evaluate the following:\n\n\\begin{align*}\ny_{1} &= y_{0} + \\Delta t \\,(3y_{0} - y_{0}^{2})\\\\\n&= 1 + (1/2)(3 - 1^{2})\\\\\n&= 2.\n\\end{align*} Applying Euler's method for the following two steps, we\nget $y_{2}$...\n\n\\begin{align*}\ny_{2} &= y_{1} + \\Delta t \\,(3y_{1} - y_{1}^{2})\\\\\n&= 2 + (1/2)(6 - 2^{2})\\\\\n&= 3.\n\\end{align*} and $y_{3}$...\n\n\\begin{align*}\ny_{3} &= y_{2} + \\Delta t \\,(3y_{2} - y_{2}^{2})\\\\\n&= 3 + (1/2)(9 - 3^{2})\\\\\n&= 3.\n\\end{align*} Therefore,\n\n\\begin{align*}\n{\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} =3}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By Euler's method, we can determine an approximation for the values &lt;math>y_{n} = y(n\\Delta t)&lt;/math> by the formula,\n:&lt;math>\n\\begin{align}\ny_{n+1} &amp;= y_{n} + \\Delta t\\,f(y_{n}), \\quad f(y) = 3y - y^{2} \\\\\n&amp;= y_{n} + \\Delta t \\, (3y_{n} - y_{n}^{2})\n\\end{align}\n&lt;/math>\nThus, to determine &lt;math>y_{1}&lt;/math> we evaluate the following:\n:&lt;math>\n\\begin{align}\ny_{1} &amp;= y_{0} + \\Delta t \\,(3y_{0} - y_{0}^{2})\\\\\n&amp;= 1 + (1/2)(3 - 1^{2})\\\\\n&amp;= 2.\n\\end{align}\n&lt;/math>\nApplying Euler's method for the following two steps, we get &lt;math>y_{2}&lt;/math>...\n:&lt;math>\n\\begin{align}\ny_{2} &amp;= y_{1} + \\Delta t \\,(3y_{1} - y_{1}^{2})\\\\\n&amp;= 2 + (1/2)(6 - 2^{2})\\\\\n&amp;= 3.\n\\end{align}\n&lt;/math>\nand &lt;math>y_{3}&lt;/math>...\n:&lt;math>\n\\begin{align}\ny_{3} &amp;= y_{2} + \\Delta t \\,(3y_{2} - y_{2}^{2})\\\\\n&amp;= 3 + (1/2)(9 - 3^{2})\\\\\n&amp;= 3.\n\\end{align}\n&lt;/math>\nTherefore,\n:&lt;math>\n{\\color{blue}y_{1} = 2, \\,y_{2} = 3, \\,y_{3} = 3}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Using Euler&#8217;s method, determine <em>y<sub>1</sub></em>, <em>y<sub>2</sub></em>, <em>y<sub>3</sub></em> for <em>y<sub>0</sub> = 1</em> and <span class=\"math\">\\(\\Delta t = 1/2\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = 3y-y^2\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Using Euler's method, determine \\emph{y\\textsubscript{1}},\n\\emph{y\\textsubscript{2}}, \\emph{y\\textsubscript{3}} for\n\\emph{y\\textsubscript{0} = 1} and $\\Delta t = 1/2$\n\n\\begin{align*}\n\\frac{dy}{dt} = 3y-y^2\n\\end{align*}", 
+    "statement_raw": "Using Euler's method, determine ''y&lt;sub>1&lt;/sub>'', ''y&lt;sub>2&lt;/sub>'', ''y&lt;sub>3&lt;/sub>'' for ''y&lt;sub>0&lt;/sub> = 1'' and &lt;math>\\Delta t = 1/2&lt;/math>\n\n:&lt;math>\n\\frac{dy}{dt} = 3y-y^2\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Differential_equation", 
+        "Euler%27s_method"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_02_(b)_iii", 
+    "year": 2011
 }

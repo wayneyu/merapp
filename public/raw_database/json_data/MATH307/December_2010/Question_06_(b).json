@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\langle f(x),f(x) \\rangle=\\frac{1}{3}\\)</span></p>\n", 
+    "answer_latex": " $\\langle f(x),f(x) \\rangle=\\frac{1}{3}$ ", 
     "course": "MATH307", 
-    "statement": "Calculate the inner product $\\langle f(x), f(x)\\rangle$ for \\emph{$f$(x) =\nx} on the interval $0 \\leq x \\leq 1$, using the definition of the inner\nproduct for functions.", 
-    "year": 2010, 
-    "sols": [
-        "\\begin{align*}\n\\langle f(x),f(x) \\rangle &= \\int^{b}_{a}f(x)\\overline{f(x)}dx \\\\\n&= \\int^{1}_{0}x \\cdot x\\, dx \\\\\n&=\\frac{1}{3}\\end{align*}"
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
     ], 
-    "hints": [
-        "Recall the definition\n\n\\begin{align*}\n\\langle f(x),f(x) \\rangle &= \\int^{b}_{a}f(x)\\overline{f(x)}dx\\end{align*}"
-    ]
+    "hints_html": [
+        "<p>Recall the definition</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\langle f(x),f(x) \\rangle &amp;= \\int^{b}_{a}f(x)\\overline{f(x)}dx\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Recall the definition\n\n\\begin{align*}\n\\langle f(x),f(x) \\rangle &= \\int^{b}_{a}f(x)\\overline{f(x)}dx\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Recall the definition\n\n:&lt;math> \\begin{align}\n\\langle f(x),f(x) \\rangle &amp;= \\int^{b}_{a}f(x)\\overline{f(x)}dx\n\\end{align} &lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><span class=\"math\">\\[\\begin{aligned}\n\\langle f(x),f(x) \\rangle &amp;= \\int^{b}_{a}f(x)\\overline{f(x)}dx \\\\\n&amp;= \\int^{1}_{0}x \\cdot x\\, dx \\\\\n&amp;=\\frac{1}{3}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{align*}\n\\langle f(x),f(x) \\rangle &= \\int^{b}_{a}f(x)\\overline{f(x)}dx \\\\\n&= \\int^{1}_{0}x \\cdot x\\, dx \\\\\n&=\\frac{1}{3}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        ":&lt;math> \\begin{align}\n\\langle f(x),f(x) \\rangle &amp;= \\int^{b}_{a}f(x)\\overline{f(x)}dx \\\\\n&amp;= \\int^{1}_{0}x \\cdot x\\, dx \\\\\n&amp;=\\frac{1}{3}\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Calculate the inner product <span class=\"math\">\\(\\langle f(x), f(x)\\rangle\\)</span> for <em><span class=\"math\">\\(f\\)</span>(x) = x</em> on the interval <span class=\"math\">\\(0 \\leq x \\leq 1\\)</span>, using the definition of the inner product for functions.</p>\n", 
+    "statement_latex": "Calculate the inner product $\\langle f(x), f(x)\\rangle$ for \\emph{$f$(x) =\nx} on the interval $0 \\leq x \\leq 1$, using the definition of the inner\nproduct for functions.", 
+    "statement_raw": "Calculate the inner product &lt;math>\\langle f(x), f(x)\\rangle&lt;/math> for ''&amp;fnof;(x) = x'' on the interval &lt;math> 0 \\leq x \\leq 1&lt;/math>, using the definition of the inner product for functions.\n", 
+    "term": "December", 
+    "topics": [
+        "Fourier_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)", 
+    "year": 2010
 }

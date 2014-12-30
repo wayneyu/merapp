@@ -1,14 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_A_19", 
-    "course": "MATH152", 
-    "statement": "If $R$ is the 2D counter-clockwise rotation by $\\pi/4$ and $Q$ is the 2D\nreflection through the line $y = x$, is $QR = RQ$? Justify briefly.", 
-    "year": 2010, 
-    "sols": [
-        "Consider a vector, v, that lies on the line $y = x$.\n\nApplying $QR$ to this vector will first rotate the vector so that it\nlies parallel to the $y$-axis, then reflect the vector over $y = x$ so\nthat it lies parallel to the $x$-axis.\n\nApplying $RQ$ to this vector will first reflect the vector over the line\n$y = x$, leaving it unchanged, then will rotate the vector so that it\nlies parallel to the $y$-axis.\n\nBy this example, $QR$ and $RQ$ have different effects on v and thus do\nnot commute. i.e:\n\n\\begin{align*}QR \\ne RQ.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(QR \\ne RQ.\\)</span></p>\n", 
+    "answer_latex": " $QR \\ne RQ.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Do both operations <span class=\"math\">\\(QR\\)</span>, <span class=\"math\">\\(RQ\\)</span> have the same effect on all vectors in <span class=\"math\">\\(R^{2}\\)</span>?</p>\n", 
+        "<p>The statement is not true. Try to find a counter example.</p>\n"
+    ], 
+    "hints_latex": [
         "Do both operations $QR$, $RQ$ have the same effect on all vectors in\n$R^{2}$?", 
         "The statement is not true. Try to find a counter example."
-    ]
+    ], 
+    "hints_raw": [
+        "Do both operations &lt;math>QR&lt;/math>, &lt;math>RQ&lt;/math> have the same effect on all vectors in &lt;math>R^{2}&lt;/math>?\n", 
+        "The statement is not true. Try to find a counter example.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 19", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>Consider a vector, v, that lies on the line <span class=\"math\">\\(y = x\\)</span>.</p>\n<p>Applying <span class=\"math\">\\(QR\\)</span> to this vector will first rotate the vector so that it lies parallel to the <span class=\"math\">\\(y\\)</span>-axis, then reflect the vector over <span class=\"math\">\\(y = x\\)</span> so that it lies parallel to the <span class=\"math\">\\(x\\)</span>-axis.</p>\n<p>Applying <span class=\"math\">\\(RQ\\)</span> to this vector will first reflect the vector over the line <span class=\"math\">\\(y = x\\)</span>, leaving it unchanged, then will rotate the vector so that it lies parallel to the <span class=\"math\">\\(y\\)</span>-axis.</p>\n<p>By this example, <span class=\"math\">\\(QR\\)</span> and <span class=\"math\">\\(RQ\\)</span> have different effects on v and thus do not commute. i.e:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nQR \\ne RQ.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Consider a vector, v, that lies on the line $y = x$.\n\nApplying $QR$ to this vector will first rotate the vector so that it\nlies parallel to the $y$-axis, then reflect the vector over $y = x$ so\nthat it lies parallel to the $x$-axis.\n\nApplying $RQ$ to this vector will first reflect the vector over the line\n$y = x$, leaving it unchanged, then will rotate the vector so that it\nlies parallel to the $y$-axis.\n\nBy this example, $QR$ and $RQ$ have different effects on v and thus do\nnot commute. i.e:\n\n\\begin{align*}\nQR \\ne RQ.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Consider a vector, &lt;b>v&lt;/b>,  that lies on the line &lt;math>y = x&lt;/math>. \n\nApplying &lt;math>QR&lt;/math> to this vector will first rotate the vector so that it lies parallel to the &lt;math>y&lt;/math>-axis, then reflect the vector over &lt;math>y = x&lt;/math> so that it lies parallel to the &lt;math>x&lt;/math>-axis.\n\nApplying &lt;math>RQ&lt;/math> to this vector will first reflect the vector over the line &lt;math>y = x&lt;/math>, leaving it unchanged, then will rotate the vector so that it lies parallel to the &lt;math>y&lt;/math>-axis.\n\nBy this example, &lt;math>QR&lt;/math> and &lt;math>RQ&lt;/math> have different effects on &lt;b>v&lt;/b> and thus do not commute. i.e:\n\n:&lt;math>QR \\ne RQ&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>If <span class=\"math\">\\(R\\)</span> is the 2D counter-clockwise rotation by <span class=\"math\">\\(\\pi/4\\)</span> and <span class=\"math\">\\(Q\\)</span> is the 2D reflection through the line <span class=\"math\">\\(y = x\\)</span>, is <span class=\"math\">\\(QR = RQ\\)</span>? Justify briefly.</p>\n", 
+    "statement_latex": "If $R$ is the 2D counter-clockwise rotation by $\\pi/4$ and $Q$ is the 2D\nreflection through the line $y = x$, is $QR = RQ$? Justify briefly.", 
+    "statement_raw": "If &lt;math>R&lt;/math> is the 2D counter-clockwise rotation by &lt;math>\\pi/4&lt;/math> and &lt;math>Q&lt;/math> is the 2D reflection through the line &lt;math>y = x&lt;/math>, is &lt;math>QR = RQ&lt;/math>? Justify briefly.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_19", 
+    "year": 2010
 }

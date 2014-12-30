@@ -1,11 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_02_(c)", 
-    "course": "MATH307", 
-    "statement": "TRUE or FALSE: If a square matrix has repeated eigenvalues, then it\ncannot be diagonalized. Justify your answer.", 
-    "year": 2013, 
-    "sols": [
-        "False, because $\\left[ \\begin{array}{cc}\n\n1 & 0 \\\\\n\n0 & 1\n\n\\end{array} \\right]$ has a repeated eigenvalue of 1 and is diagonalized\nby $I$"
+    "answer_html": "<p>False, because <span class=\"math\">\\(\\left[ \\begin{array}{cc}\n1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array} \\right]\\)</span> has a repeated eigenvalue of 1 and is diagonalized by <span class=\"math\">\\(I\\)</span></p>\n", 
+    "answer_latex": "False, because $\\left[ \\begin{array}{cc}\n1 & 0 \\\\\n0 & 1\n\\end{array} \\right]$ has a repeated eigenvalue of 1 and is diagonalized\nby $I$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": []
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>False, because <span class=\"math\">\\(\\left[ \\begin{array}{cc}\n1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array} \\right]\\)</span> has a repeated eigenvalue of 1 and is diagonalized by <span class=\"math\">\\(I\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "False, because $\\left[ \\begin{array}{cc}\n1 & 0 \\\\\n0 & 1\n\\end{array} \\right]$ has a repeated eigenvalue of 1 and is diagonalized\nby $I$"
+    ], 
+    "sols_raw": [
+        "False, because &lt;math>\\left[ \\begin{array}{cc}\n1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array} \\right]&lt;/math> has a repeated eigenvalue of 1 and is diagonalized by &lt;math>I&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>TRUE or FALSE: If a square matrix has repeated eigenvalues, then it cannot be diagonalized. Justify your answer.</p>\n", 
+    "statement_latex": "TRUE or FALSE: If a square matrix has repeated eigenvalues, then it\ncannot be diagonalized. Justify your answer.", 
+    "statement_raw": "TRUE or FALSE: If a square matrix has repeated eigenvalues, then it cannot be diagonalized. Justify your answer.\n", 
+    "term": "April", 
+    "topics": [
+        "Eigenvalues_and_eigenvectors"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_02_(c)", 
+    "year": 2013
 }

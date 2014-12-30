@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nIf \\emph{f(0) = 1} and \\emph{f(1) = 1}, then there exists some \\emph{c}\nin the interval (0,1) satisfying\n\n\\begin{align*}\\displaystyle f'(c) = 0.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "This statement is \\textbf{false}. It reads like the conclusion of\nRolle's Theorem; however, Rolle's Theorem has two conditions: that $f$\nbe continuous on a closed interval (in this case the interval $[0,1]$)\nand differentiable on the same open interval (in this case $(0,1)$). If\nwe drop either of these two conditions, then the conclusion of Rolle's\nTheorem does not necessarily hold.\n\nFor example, suppose $f$ is not differentiable on $(0,1)$. Then we can\ndraw the picture:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMath110April2011Question1cv2a.jpg}\n\\caption{ScienceMathExamResourcesCoursesMath110April2011Question1cv2a.jpg}\n\\end{figure}\n\nWhile this graph satisfies $f(0) = f(1) = 1$ there is no point where the\nderivative is zero, because the derivative is either 1, -1, or\nundefined.\n\nSuppose $f$ is not continuous on $[0,1]$. Then you can draw a picture\nlike this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMath110April2011Question1cv2b.jpg}\n\\caption{ScienceMathExamResourcesCoursesMath110April2011Question1cv2b.jpg}\n\\end{figure}\n\nWhere clearly the derivative is never zero, even though\n$f(0) = f(1) = 1$.\n\nEither example (or a similar example) would suffice to prove the\nstatement false."
+    "answer_html": "<p>Where clearly the derivative is never zero, even though <span class=\"math\">\\(f(0) = 1\\)</span>.Either example (or a similar example) would suffice to prove the statement false.</p>\n", 
+    "answer_latex": "Where clearly the derivative is never zero, even though\n$f(0) = 1$.Either example (or a similar example) would suffice to prove the\nstatement false.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>This statement reads like the conclusion of Rolle&#8217;s Theorem. Rolle&#8217;s Theorem has two conditions for <span class=\"math\">\\(f\\)</span>. What are they? What happens if a function doesn&#8217;t satisfy one of the conditions?</p>\n"
+    ], 
+    "hints_latex": [
         "This statement reads like the conclusion of Rolle's Theorem. Rolle's\nTheorem has two conditions for $f$. What are they? What happens if a\nfunction doesn't satisfy one of the conditions?"
-    ]
+    ], 
+    "hints_raw": [
+        "This statement reads like the conclusion of Rolle's Theorem.  Rolle's Theorem has two conditions for &lt;math>f&lt;/math>.  What are they?  What happens if a function doesn't satisfy one of the conditions?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (b)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>This statement is <strong>false</strong>. It reads like the conclusion of Rolle&#8217;s Theorem; however, Rolle&#8217;s Theorem has two conditions: that <span class=\"math\">\\(f\\)</span> be continuous on a closed interval (in this case the interval <span class=\"math\">\\([0,1]\\)</span>) and differentiable on the same open interval (in this case <span class=\"math\">\\((0,1)\\)</span>). If we drop either of these two conditions, then the conclusion of Rolle&#8217;s Theorem does not necessarily hold.</p>\n<p>For example, suppose <span class=\"math\">\\(f\\)</span> is not differentiable on <span class=\"math\">\\((0,1)\\)</span>. Then we can draw the picture:</p>\n<p><img src=\"../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question1cv2a.jpg\" alt=\"image\" /></p>\n<p>While this graph satisfies <span class=\"math\">\\(f(0) = f(1) = 1\\)</span> there is no point where the derivative is zero, because the derivative is either 1, -1, or undefined.</p>\n<p>Suppose <span class=\"math\">\\(f\\)</span> is not continuous on <span class=\"math\">\\([0,1]\\)</span>. Then you can draw a picture like this:</p>\n<p><img src=\"../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question1cv2b.jpg\" alt=\"image\" /></p>\n<p>Where clearly the derivative is never zero, even though <span class=\"math\">\\(f(0) = f(1) = 1\\)</span>.</p>\n<p>Either example (or a similar example) would suffice to prove the statement false.</p>\n"
+    ], 
+    "sols_latex": [
+        "This statement is \\textbf{false}. It reads like the conclusion of\nRolle's Theorem; however, Rolle's Theorem has two conditions: that $f$\nbe continuous on a closed interval (in this case the interval $[0,1]$)\nand differentiable on the same open interval (in this case $(0,1)$). If\nwe drop either of these two conditions, then the conclusion of Rolle's\nTheorem does not necessarily hold.\n\nFor example, suppose $f$ is not differentiable on $(0,1)$. Then we can\ndraw the picture:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question1cv2a.jpg}\n\nWhile this graph satisfies $f(0) = f(1) = 1$ there is no point where the\nderivative is zero, because the derivative is either 1, -1, or\nundefined.\n\nSuppose $f$ is not continuous on $[0,1]$. Then you can draw a picture\nlike this:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question1cv2b.jpg}\n\nWhere clearly the derivative is never zero, even though\n$f(0) = f(1) = 1$.\n\nEither example (or a similar example) would suffice to prove the\nstatement false."
+    ], 
+    "sols_raw": [
+        "This statement is '''false'''.  It reads like the conclusion of Rolle's Theorem; however, Rolle's Theorem has two conditions: that &lt;math>f&lt;/math> be continuous on a closed interval (in this case the interval &lt;math>[0,1]&lt;/math>) and differentiable on the same open interval (in this case &lt;math>(0,1)&lt;/math>).  If we drop either of these two conditions, then the conclusion of Rolle's Theorem does not necessarily hold.  \n\nFor example, suppose &lt;math>f&lt;/math> is not differentiable on &lt;math>(0,1)&lt;/math>.  Then we can draw the picture: \n\n[[File:ScienceMathExamResourcesCoursesMath110April2011Question1cv2a.jpg]]\n\nWhile this graph satisfies &lt;math>f(0) = f(1) = 1&lt;/math> there is no point where the derivative is zero, because the derivative is either 1, -1, or undefined.  \n\nSuppose &lt;math>f&lt;/math> is not continuous on &lt;math>[0,1]&lt;/math>.  Then you can draw a picture like this: \n\n[[File:ScienceMathExamResourcesCoursesMath110April2011Question1cv2b.jpg]]\n\nWhere clearly the derivative is never zero, even though &lt;math>f(0) = f(1) = 1&lt;/math>.  \n\nEither example (or a similar example) would suffice to prove the statement false.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Determine whether this statement is true. If it is, explain why; if not, give a counterexample.</em></p>\n<p>If <em>f(0) = 1</em> and <em>f(1) = 1</em>, then there exists some <em>c</em> in the interval (0,1) satisfying</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(c) = 0.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Determine whether this statement is true. If it is, explain why;\nif not, give a counterexample.}\n\nIf \\emph{f(0) = 1} and \\emph{f(1) = 1}, then there exists some \\emph{c}\nin the interval (0,1) satisfying\n\n\\begin{align*}\n\\displaystyle f'(c) = 0.\n\\end{align*}", 
+    "statement_raw": "''Determine whether this statement is true. If it is, explain why; if not, give a counterexample.''\n\nIf ''f(0) = 1'' and ''f(1) = 1'', then there exists some ''c'' in the interval (0,1) satisfying\n:&lt;math> \\displaystyle f'(c) = 0.&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Mean_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_01_(b)", 
+    "year": 2011
 }

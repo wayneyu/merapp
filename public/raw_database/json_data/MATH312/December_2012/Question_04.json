@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
+    "answer_html": "<p>Thus, as <span class=\"math\">\\(\\displaystyle p-1\\)</span> is even, we have that <span class=\"math\">\\(\\displaystyle \\alpha = 1\\)</span> (or <em>n</em> is odd) and further that <span class=\"math\">\\(\\displaystyle p = 15\\)</span> which is not a prime.This is a contradiction and hence this equation has no solution.</p>\n", 
+    "answer_latex": "Thus, as $\\displaystyle p-1$ is even, we have that\n$\\displaystyle \\alpha = 1$ (or \\emph{n} is odd) and further that\n$\\displaystyle p = 15$ which is not a prime.This is a contradiction and\nhence this equation has no solution.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Define the sum of divisors function $\\displaystyle \\sigma(n)$ and number\nof divisors function $\\displaystyle \\tau(n)$. Show that there is no\npositive integer \\emph{n} with $\\displaystyle \\phi(n) = 14.$", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>For the last part, use the fact that</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha-1}(p-1) = 14\\)</span>.</p>\n<p>where <span class=\"math\">\\(\\displaystyle n = \\prod_{p^{\\alpha} \\parallel n} p^{\\alpha}\\)</span> and where we recall that <span class=\"math\">\\(\\displaystyle p^{\\alpha} \\parallel n\\)</span> means that <span class=\"math\">\\(\\displaystyle p^{\\alpha}\\)</span> fully divides <em>n</em> (that is, this is the highest power of <em>p</em> that divides <em>n</em>).</p>\n"
+    ], 
+    "hints_latex": [
+        "For the last part, use the fact that\n\n$\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha-1}(p-1) = 14$.\n\nwhere $\\displaystyle n = \\prod_{p^{\\alpha} \\parallel n} p^{\\alpha}$ and\nwhere we recall that $\\displaystyle p^{\\alpha} \\parallel n$ means that\n$\\displaystyle p^{\\alpha}$ fully divides \\emph{n} (that is, this is the\nhighest power of \\emph{p} that divides \\emph{n})."
+    ], 
+    "hints_raw": [
+        "For the last part, use the fact that \n\n&lt;math> \\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha-1}(p-1) = 14&lt;/math>.\n\nwhere &lt;math> \\displaystyle n = \\prod_{p^{\\alpha} \\parallel n} p^{\\alpha}&lt;/math> and where we recall that &lt;math> \\displaystyle p^{\\alpha} \\parallel n &lt;/math> means that &lt;math> \\displaystyle p^{\\alpha} &lt;/math> fully divides ''n'' (that is, this is the highest power of ''p'' that divides ''n'').\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First,</p>\n<p><span class=\"math\">\\(\\displaystyle \\sigma(n) = \\sum_{d \\mid n} d\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(\\displaystyle \\tau(n) = \\sum_{d \\mid n}1\\)</span></p>\n<p>gives the required definitions.</p>\n<p>For the last part, we proceed by a contradiction and suppose that <span class=\"math\">\\(\\displaystyle \\phi(n) = 14\\)</span> for some integer <em>n</em>.</p>\n<p>As stated in the hint, we have</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha_{p}-1}(p-1) = 14\\)</span>.</p>\n<p>where <span class=\"math\">\\(\\displaystyle n = \\prod p^{\\alpha_{p}}\\)</span>. Now every odd prime present in the factorization of <em>n</em> contributes a power of two to <span class=\"math\">\\(\\displaystyle \\phi(n)\\)</span> due to the <span class=\"math\">\\(\\displaystyle (p-1)\\)</span> factor. Thus, there can be at most one odd prime dividing <em>n</em>, say <span class=\"math\">\\(\\displaystyle p\\)</span>.</p>\n<p>If <span class=\"math\">\\(\\displaystyle p\\)</span> occurs to a power of two, then because it divides the left hand side, it must divide 14 and so must be 7. The prime <span class=\"math\">\\(\\displaystyle p\\)</span> cannot occur to a third power or higher since otherwise there are two factors of <span class=\"math\">\\(\\displaystyle p\\)</span> on the left and at most one on the right. However <span class=\"math\">\\(\\displaystyle \\phi(7^{2}) = 42 &gt; 14\\)</span> and so the power must be 1. Thus <span class=\"math\">\\(\\displaystyle n = 2^{\\alpha} p\\)</span> for some <span class=\"math\">\\(\\displaystyle \\alpha\\)</span>. Notice that as the phi-function is multiplicative, we have that</p>\n<p><span class=\"math\">\\(\\displaystyle 14 = \\phi(n) = \\phi(2^{\\alpha})\\phi(p) = 2^{\\alpha-1}(p-1)\\)</span></p>\n<p>(or we have that <span class=\"math\">\\(\\displaystyle \\phi(n) = p-1\\)</span> if no power of 2 divides n)</p>\n<p>Thus, as <span class=\"math\">\\(\\displaystyle p-1\\)</span> is even, we have that <span class=\"math\">\\(\\displaystyle \\alpha = 1\\)</span> (or <em>n</em> is odd) and further that <span class=\"math\">\\(\\displaystyle p = 15\\)</span> which is not a prime. This is a contradiction and hence this equation has no solution.</p>\n"
+    ], 
+    "sols_latex": [
         "First,\n\n$\\displaystyle \\sigma(n) = \\sum_{d \\mid n} d$\n\nand\n\n$\\displaystyle \\tau(n) = \\sum_{d \\mid n}1$\n\ngives the required definitions.\n\nFor the last part, we proceed by a contradiction and suppose that\n$\\displaystyle \\phi(n) = 14$ for some integer \\emph{n}.\n\nAs stated in the hint, we have\n\n$\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha_{p}-1}(p-1) = 14$.\n\nwhere $\\displaystyle n = \\prod p^{\\alpha_{p}}$. Now every odd prime\npresent in the factorization of \\emph{n} contributes a power of two to\n$\\displaystyle \\phi(n)$ due to the $\\displaystyle (p-1)$ factor. Thus,\nthere can be at most one odd prime dividing \\emph{n}, say\n$\\displaystyle p$.\n\nIf $\\displaystyle p$ occurs to a power of two, then because it divides\nthe left hand side, it must divide 14 and so must be 7. The prime\n$\\displaystyle p$ cannot occur to a third power or higher since\notherwise there are two factors of $\\displaystyle p$ on the left and at\nmost one on the right. However $\\displaystyle \\phi(7^{2}) = 42 > 14$ and\nso the power must be 1. Thus $\\displaystyle n = 2^{\\alpha} p$ for some\n$\\displaystyle \\alpha$. Notice that as the phi-function is\nmultiplicative, we have that\n\n$\\displaystyle 14 = \\phi(n) = \\phi(2^{\\alpha})\\phi(p) = 2^{\\alpha-1}(p-1)$\n\n(or we have that $\\displaystyle \\phi(n) = p-1$ if no power of 2 divides\nn)\n\nThus, as $\\displaystyle p-1$ is even, we have that\n$\\displaystyle \\alpha = 1$ (or \\emph{n} is odd) and further that\n$\\displaystyle p = 15$ which is not a prime. This is a contradiction and\nhence this equation has no solution."
     ], 
-    "hints": [
-        "For the last part, use the fact that\n\n$\\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha-1}(p-1) = 14$.\n\nwhere $\\displaystyle n = \\prod_{p^{\\alpha} \\parallel n} p^{\\alpha}$ and\nwhere we recall that $\\displaystyle p^{\\alpha} \\parallel n$ means that\n$\\displaystyle p^{\\alpha}$ fully divides \\emph{n} (that is, this is the\nhighest power of \\emph{p} that divides \\emph{n})."
-    ]
+    "sols_raw": [
+        "First,\n\n&lt;math> \\displaystyle \\sigma(n) = \\sum_{d \\mid n} d&lt;/math>\n\nand\n\n&lt;math> \\displaystyle \\tau(n) = \\sum_{d \\mid n}1&lt;/math>\n\ngives the required definitions. \n\nFor the last part, we proceed by a contradiction and suppose that &lt;math> \\displaystyle \\phi(n) = 14&lt;/math> for some integer ''n''.\n\nAs stated in the hint, we have\n\n&lt;math> \\displaystyle \\phi(n) = n \\prod_{p \\mid n}\\left(1 - \\frac{1}{p}\\right) = \\prod_{p^{\\alpha} \\parallel n}p^{\\alpha_{p}-1}(p-1) = 14&lt;/math>.\n\nwhere &lt;math> \\displaystyle n = \\prod p^{\\alpha_{p}}&lt;/math>. Now every odd prime present in the factorization of ''n'' contributes a power of two to &lt;math> \\displaystyle \\phi(n)&lt;/math> due to the &lt;math> \\displaystyle (p-1) &lt;/math> factor. Thus, there can be at most one odd prime dividing ''n'', say &lt;math> \\displaystyle p &lt;/math>.\n\nIf &lt;math> \\displaystyle p &lt;/math> occurs to a power of two, then because it divides the left hand side, it must divide 14 and so must be 7. The prime &lt;math> \\displaystyle p &lt;/math> cannot occur to a third power or higher since otherwise there are two factors of &lt;math> \\displaystyle p &lt;/math> on the left and at most one on the right. However &lt;math> \\displaystyle \\phi(7^{2}) = 42 > 14&lt;/math> and so the power must be 1. Thus &lt;math> \\displaystyle n = 2^{\\alpha} p&lt;/math> for some &lt;math> \\displaystyle \\alpha&lt;/math>. Notice that as the phi-function is multiplicative, we have that \n\n&lt;math> \\displaystyle 14 = \\phi(n) = \\phi(2^{\\alpha})\\phi(p) = 2^{\\alpha-1}(p-1)&lt;/math>\n\n(or we have that &lt;math> \\displaystyle \\phi(n) = p-1&lt;/math> if no power of 2 divides n)\n\nThus, as &lt;math> \\displaystyle p-1&lt;/math> is even, we have that &lt;math> \\displaystyle \\alpha = 1&lt;/math> (or ''n'' is odd) and further that &lt;math> \\displaystyle p = 15&lt;/math> which is not a prime. This is a contradiction and hence this equation has no solution.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Define the sum of divisors function <span class=\"math\">\\(\\displaystyle \\sigma(n)\\)</span> and number of divisors function <span class=\"math\">\\(\\displaystyle \\tau(n)\\)</span>. Show that there is no positive integer <em>n</em> with <span class=\"math\">\\(\\displaystyle \\phi(n) = 14.\\)</span></p>\n", 
+    "statement_latex": "Define the sum of divisors function $\\displaystyle \\sigma(n)$ and number\nof divisors function $\\displaystyle \\tau(n)$. Show that there is no\npositive integer \\emph{n} with $\\displaystyle \\phi(n) = 14.$", 
+    "statement_raw": "Define the sum of divisors function &lt;math>\\displaystyle \\sigma(n) &lt;/math> and number of divisors function &lt;math> \\displaystyle \\tau(n) &lt;/math>. Show that there is no positive integer ''n'' with &lt;math> \\displaystyle \\phi(n) = 14. &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2012/Question_04", 
+    "year": 2012
 }

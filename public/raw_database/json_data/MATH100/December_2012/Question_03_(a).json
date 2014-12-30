@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nSuppose the tangent line to the curve $y = f(x)$ at $x=1$ passes through\nthe points $(-2,3)$ and $(0,5)$. Find $\\displaystyle f(1)$ and\n$\\displaystyle f'(1)$.", 
-    "year": 2012, 
-    "sols": [
-        "We compute the equation of the line between the points $(-2,3)$ and\n$(0,5)$. First compute the slope via\n\n$m = \\frac{5-3}{0-(-2)} = \\frac{2}{2} = 1.$\n\nThe \\emph{y}-intercept is given to be 5 since the point $(0,5)$ is on\nthe line. Thus the equation of the line is $y = x + 5$. As this line is\ntangent to the function at 1, we see that $\\displaystyle m=1=f'(1)$ and\n$f(1) = y = (1)+5 = 6$ completing the question.", 
-        "According to the point slope formula given by\n\n$y - y_{0} = m(x - x_{0})$\n\nwe can use the fact that our tangent line in question contains the point\n$(1,f(1))$ and has slope $\\displaystyle f'(1)$ and thus, we have the\nequation of the line is given by\n\n$\\displaystyle y - f(1) = f'(1)(x - 1)$\n\nNow, we know that the points $(-2,3)$ and $(0,5)$ lie on our cruve and\nthis gives the two equations\n\n\\begin{align*}\n5 - f(1) &= f'(1)(0 - 1)\\\\\n3 - f(1) &= f'(1)(-2 - 1)\\end{align*}\n\nSimplifying gives\n\n\\begin{align*}\n5 - f(1) &= -f'(1)\\\\\n3 - f(1) &= -3f'(1)\\end{align*}\n\nSubtracting yields\n\n\\begin{align*}\n2 &= 2f'(1)\\end{align*}\n\nand so $\\displaystyle f'(1) = 1$. Plugging back into either of the\noriginal equations yields $f(1) = 6$"
+    "answer_html": "<p>As this line is tangent to the function at 1, we see that <span class=\"math\">\\(\\displaystyle m=f&#39;(1)\\)</span> and <span class=\"math\">\\(f(1) = 6\\)</span> completing the question.</p>\n", 
+    "answer_latex": "As this line is\ntangent to the function at 1, we see that $\\displaystyle m=f'(1)$ and\n$f(1) = 6$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>First compute the equation of the tangent line. Then, how do the values of <span class=\"math\">\\(f(1)\\)</span> and <span class=\"math\">\\(f&#39;(1)\\)</span> relate to this tangent line?</p>\n"
+    ], 
+    "hints_latex": [
         "First compute the equation of the tangent line. Then, how do the values\nof $f(1)$ and $f'(1)$ relate to this tangent line?"
-    ]
+    ], 
+    "hints_raw": [
+        "First compute the equation of the tangent line. Then, how do the values of &lt;math> f(1) &lt;/math> and &lt;math> f'(1) &lt;/math> relate to this tangent line?\n"
+    ], 
+    "num_votes": 11, 
+    "question": "3 (a)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>We compute the equation of the line between the points <span class=\"math\">\\((-2,3)\\)</span> and <span class=\"math\">\\((0,5)\\)</span>. First compute the slope via</p>\n<p><span class=\"math\">\\(m = \\frac{5-3}{0-(-2)} = \\frac{2}{2} = 1.\\)</span></p>\n<p>The <em>y</em>-intercept is given to be 5 since the point <span class=\"math\">\\((0,5)\\)</span> is on the line. Thus the equation of the line is <span class=\"math\">\\(y = x + 5\\)</span>. As this line is tangent to the function at 1, we see that <span class=\"math\">\\(\\displaystyle m=1=f&#39;(1)\\)</span> and <span class=\"math\">\\(f(1) = y = (1)+5 = 6\\)</span> completing the question.</p>\n", 
+        "<p>According to the point slope formula given by</p>\n<p><span class=\"math\">\\(y - y_{0} = m(x - x_{0})\\)</span></p>\n<p>we can use the fact that our tangent line in question contains the point <span class=\"math\">\\((1,f(1))\\)</span> and has slope <span class=\"math\">\\(\\displaystyle f&#39;(1)\\)</span> and thus, we have the equation of the line is given by</p>\n<p><span class=\"math\">\\(\\displaystyle y - f(1) = f&#39;(1)(x - 1)\\)</span></p>\n<p>Now, we know that the points <span class=\"math\">\\((-2,3)\\)</span> and <span class=\"math\">\\((0,5)\\)</span> lie on our cruve and this gives the two equations</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n5 - f(1) &amp;= f&#39;(1)(0 - 1)\\\\\n3 - f(1) &amp;= f&#39;(1)(-2 - 1)\\end{aligned}\\]</span></p>\n<p>Simplifying gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n5 - f(1) &amp;= -f&#39;(1)\\\\\n3 - f(1) &amp;= -3f&#39;(1)\\end{aligned}\\]</span></p>\n<p>Subtracting yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2 &amp;= 2f&#39;(1)\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(\\displaystyle f&#39;(1) = 1\\)</span>. Plugging back into either of the original equations yields <span class=\"math\">\\(f(1) = 6\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We compute the equation of the line between the points $(-2,3)$ and\n$(0,5)$. First compute the slope via\n\n$m = \\frac{5-3}{0-(-2)} = \\frac{2}{2} = 1.$\n\nThe \\emph{y}-intercept is given to be 5 since the point $(0,5)$ is on\nthe line. Thus the equation of the line is $y = x + 5$. As this line is\ntangent to the function at 1, we see that $\\displaystyle m=1=f'(1)$ and\n$f(1) = y = (1)+5 = 6$ completing the question.", 
+        "According to the point slope formula given by\n\n$y - y_{0} = m(x - x_{0})$\n\nwe can use the fact that our tangent line in question contains the point\n$(1,f(1))$ and has slope $\\displaystyle f'(1)$ and thus, we have the\nequation of the line is given by\n\n$\\displaystyle y - f(1) = f'(1)(x - 1)$\n\nNow, we know that the points $(-2,3)$ and $(0,5)$ lie on our cruve and\nthis gives the two equations\n\n\\begin{align*}\n5 - f(1) &= f'(1)(0 - 1)\\\\\n3 - f(1) &= f'(1)(-2 - 1)\n\\end{align*}\n\nSimplifying gives\n\n\\begin{align*}\n5 - f(1) &= -f'(1)\\\\\n3 - f(1) &= -3f'(1)\n\\end{align*}\n\nSubtracting yields\n\n\\begin{align*}\n2 &= 2f'(1)\n\\end{align*}\n\nand so $\\displaystyle f'(1) = 1$. Plugging back into either of the\noriginal equations yields $f(1) = 6$"
+    ], 
+    "sols_raw": [
+        "We compute the equation of the line between the points &lt;math>(-2,3) &lt;/math> and &lt;math>(0,5)&lt;/math>. First compute the slope via\n\n&lt;math>\nm = \\frac{5-3}{0-(-2)} = \\frac{2}{2} = 1.\n&lt;/math>\n\nThe ''y''-intercept is given to be 5 since the point &lt;math>(0,5)&lt;/math> is on the line. Thus the equation of the line is &lt;math> y = x + 5 &lt;/math>.  As this line is tangent to the function at 1, we see that &lt;math>\\displaystyle m=1=f'(1) &lt;/math> and &lt;math>f(1) = y = (1)+5 = 6&lt;/math> completing the question.\n", 
+        "According to the point slope formula given by\n\n&lt;math>\ny - y_{0} = m(x - x_{0})\n&lt;/math>\n\nwe can use the fact that our tangent line in question contains the point &lt;math>(1,f(1))&lt;/math> and has slope &lt;math>\\displaystyle f'(1) &lt;/math> and thus, we have the equation of the line is given by\n\n&lt;math>\\displaystyle \ny - f(1) = f'(1)(x - 1)\n&lt;/math>\n\nNow, we know that the points &lt;math> (-2,3) &lt;/math> and &lt;math> (0,5) &lt;/math> lie on our cruve and this gives the two equations\n\n&lt;math>\\begin{align}\n5 - f(1) =&amp; f'(1)(0 - 1)\\\\\n3 - f(1) =&amp; f'(1)(-2 - 1)\n\\end{align}\n&lt;/math>\n\nSimplifying gives\n\n&lt;math>\\begin{align}\n5 - f(1) =&amp; -f'(1)\\\\\n3 - f(1) =&amp; -3f'(1)\n\\end{align}\n&lt;/math>\n\nSubtracting yields\n\n&lt;math>\\begin{align}\n2 =&amp; 2f'(1)\n\\end{align}\n&lt;/math>\n\nand so &lt;math> \\displaystyle f'(1) = 1 &lt;/math>. Plugging back into either of the original equations yields &lt;math> f(1) = 6 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Suppose the tangent line to the curve <span class=\"math\">\\(y = f(x)\\)</span> at <span class=\"math\">\\(x=1\\)</span> passes through the points <span class=\"math\">\\((-2,3)\\)</span> and <span class=\"math\">\\((0,5)\\)</span>. Find <span class=\"math\">\\(\\displaystyle f(1)\\)</span> and <span class=\"math\">\\(\\displaystyle f&#39;(1)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nSuppose the tangent line to the curve $y = f(x)$ at $x=1$ passes through\nthe points $(-2,3)$ and $(0,5)$. Find $\\displaystyle f(1)$ and\n$\\displaystyle f'(1)$.", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nSuppose the tangent line to the curve &lt;math>y = f(x) &lt;/math> at &lt;math> x=1 &lt;/math> passes through the points &lt;math> (-2,3) &lt;/math> and &lt;math> (0,5) &lt;/math>. Find &lt;math> \\displaystyle f(1)&lt;/math> and &lt;math> \\displaystyle f'(1)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_03_(a)", 
+    "year": 2012
 }

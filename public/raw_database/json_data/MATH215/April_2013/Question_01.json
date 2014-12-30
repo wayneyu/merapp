@@ -1,9 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_01", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "CarmenBruni"
+    ], 
     "course": "MATH215", 
-    "statement": "Solve the initial value problem:\n\n$\\displaystyle \\frac{dy}{dx} = \\frac{e^{y}}{x+2}$\n\nsubject to\n\n$\\displaystyle y(0) = 0, x \\geq 0$\n\nAlso, determine the largest interval of positive \\emph{x} where this\nsolution exists.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Solve the initial value problem:</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dy}{dx} = \\frac{e^{y}}{x+2}\\)</span></p>\n<p>subject to</p>\n<p><span class=\"math\">\\(\\displaystyle y(0) = 0, x \\geq 0\\)</span></p>\n<p>Also, determine the largest interval of positive <em>x</em> where this solution exists.</p>\n", 
+    "statement_latex": "Solve the initial value problem:\n\n$\\displaystyle \\frac{dy}{dx} = \\frac{e^{y}}{x+2}$\n\nsubject to\n\n$\\displaystyle y(0) = 0, x \\geq 0$\n\nAlso, determine the largest interval of positive \\emph{x} where this\nsolution exists.", 
+    "statement_raw": "Solve the initial value problem:\n\n&lt;math> \\displaystyle\n\n\\frac{dy}{dx} = \\frac{e^{y}}{x+2}\n\n&lt;/math>\n\nsubject to\n\n&lt;math> \\displaystyle \n\ny(0) = 0, x \\geq 0\n\n&lt;/math>\n\nAlso, determine the largest interval of positive ''x'' where this solution exists.\n", 
+    "term": "April", 
+    "topics": [
+        "Initial_value_problem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/April_2013/Question_01", 
+    "year": 2013
 }

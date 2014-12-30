@@ -1,16 +1,57 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $f(x) = e^{(\\sin x)^{2}}$, find $\\displaystyle f'(x)$", 
-    "year": 2012, 
-    "sols": [
-        "Applying the chain rule twice gives\n\n\\begin{align*}\nf'(x) &= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\\end{align*}", 
-        "Taking logarithms and differentiating gives\n\n\\begin{align*}\n\\ln(f(x)) &= (\\sin x)^{2} \\\\\n\\frac{f'(x)}{f(x)} &= 2\\sin x\\cos x \\\\\nf'(x) &= 2f(x)\\sin x\\cos x \\\\\nf'(x) &= 2e^{(\\sin x)^{2}}\\sin x\\cos x \\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\\)</span></p>\n", 
+    "answer_latex": " $f'(x)=e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The chain rule works nicely here. So nicely you&#8217;ll want to use it twice.</p>\n", 
+        "<p>Remember that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\\end{aligned}\\]</span></p>\n", 
+        "<p>Alternatively, taking logarithms and using implicit differentiation will work again.</p>\n"
+    ], 
+    "hints_latex": [
         "The chain rule works nicely here. So nicely you'll want to use it twice.", 
-        "Remember that\n\n\\begin{align*}e^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\\end{align*}", 
+        "Remember that\n\n\\begin{align*}\ne^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\n\\end{align*}", 
         "Alternatively, taking logarithms and using implicit differentiation will\nwork again."
-    ]
+    ], 
+    "hints_raw": [
+        "The chain rule works nicely here. So nicely you'll want to use it twice.\n", 
+        "Remember that\n:&lt;math>\ne^{g(x)} = e^{g(x)} \\frac{d}{dx}g(x)\n&lt;/math>\n", 
+        "Alternatively, taking logarithms and using implicit differentiation will work again.\n"
+    ], 
+    "num_votes": 10, 
+    "question": "2 (a)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>Applying the chain rule twice gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&amp;= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\\end{aligned}\\]</span></p>\n", 
+        "<p>Taking logarithms and differentiating gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(f(x)) &amp;= (\\sin x)^{2} \\\\\n\\frac{f&#39;(x)}{f(x)} &amp;= 2\\sin x\\cos x \\\\\nf&#39;(x) &amp;= 2f(x)\\sin x\\cos x \\\\\nf&#39;(x) &amp;= 2e^{(\\sin x)^{2}}\\sin x\\cos x \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Applying the chain rule twice gives\n\n\\begin{align*}\nf'(x) &= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\n\\end{align*}", 
+        "Taking logarithms and differentiating gives\n\n\\begin{align*}\n\\ln(f(x)) &= (\\sin x)^{2} \\\\\n\\frac{f'(x)}{f(x)} &= 2\\sin x\\cos x \\\\\nf'(x) &= 2f(x)\\sin x\\cos x \\\\\nf'(x) &= 2e^{(\\sin x)^{2}}\\sin x\\cos x \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Applying the chain rule twice gives\n\n&lt;math> \n\\begin{align}\nf'(x) &amp;= e^{(\\sin x)^{2}}\\tfrac{d}{dx}(\\sin x)^{2} \\\\\n&amp;= e^{(\\sin x)^{2}}(2\\sin x)(\\cos x)\n\\end{align}\n&lt;/math>\n", 
+        "Taking logarithms and differentiating gives\n\n&lt;math>\n\\begin{align}\n\\ln(f(x)) &amp;= (\\sin x)^{2} \\\\\n\\frac{f'(x)}{f(x)} &amp;= 2\\sin x\\cos x \\\\\nf'(x) &amp;= 2f(x)\\sin x\\cos x \\\\\nf'(x) &amp;= 2e^{(\\sin x)^{2}}\\sin x\\cos x \n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>If <span class=\"math\">\\(f(x) = e^{(\\sin x)^{2}}\\)</span>, find <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nIf $f(x) = e^{(\\sin x)^{2}}$, find $\\displaystyle f'(x)$", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nIf &lt;math> f(x) = e^{(\\sin x)^{2}} &lt;/math>, find &lt;math>\\displaystyle f'(x) &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule", 
+        "Logarithmic_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_02_(a)", 
+    "year": 2012
 }

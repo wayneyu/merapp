@@ -1,13 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_05_(b)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} Simplification of answers is\nnot required unless explicitly stated.}\n\nLet\n\n\\begin{align*}\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}.\\end{align*}\\\\Find the interval(s) of decrease.", 
-    "year": 2011, 
-    "sols": [
-        "The intervals of decrease are the intervals on which the derivative of\nthe function $f$ is negative. Given that\n\n\\begin{align*}\nf'(x) &= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&= \\frac{6x^{-4/5}(1+x)}{5} \\\\\n&= \\frac{6(x+1)}{5x^{4/5}}\\end{align*}\n\nOur critical points occur when $x=-1,0$, that is, points on the function\nwhere the derivative is undefined or zero. Writing out a sign chart, we\nsee that when $x< -1$ we have that $f'(x) < 0$. When $-1 < x< 0$ we have\nthat $f'(x) > 0$. When $0 < x$ we have that $f'(x) > 0$. Hence the\nfunction is decreasing on $(-\\infty,-1)$."
+    "answer_html": "<p>Hence the function is decreasing on <span class=\"math\">\\((-\\infty,-1)\\)</span>.</p>\n", 
+    "answer_latex": "Hence the\nfunction is decreasing on $(-\\infty,-1)$.", 
+    "contributors": [
+        "CarmenBruni", 
+        "ChristinaKoch", 
+        "Alfred", 
+        "Konradbe", 
+        "YihanWu"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Derivatives can help us detect where functions are decreasing. Try determining when the derivative is negative.</p>\n"
+    ], 
+    "hints_latex": [
         "Derivatives can help us detect where functions are decreasing. Try\ndetermining when the derivative is negative."
-    ]
+    ], 
+    "hints_raw": [
+        "Derivatives can help us detect where functions are decreasing. Try determining when the derivative is negative.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (b)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The intervals of decrease are the intervals on which the derivative of the function <span class=\"math\">\\(f\\)</span> is negative. Given that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&amp;= \\frac{6x^{-4/5}(1+x)}{5} \\\\\n&amp;= \\frac{6(x+1)}{5x^{4/5}}\\end{aligned}\\]</span></p>\n<p>Our critical points occur when <span class=\"math\">\\(x=-1,0\\)</span>, that is, points on the function where the derivative is undefined or zero. Writing out a sign chart, we see that when <span class=\"math\">\\(x&lt; -1\\)</span> we have that <span class=\"math\">\\(f&#39;(x) &lt; 0\\)</span>. When <span class=\"math\">\\(-1 &lt; x&lt; 0\\)</span> we have that <span class=\"math\">\\(f&#39;(x) &gt; 0\\)</span>. When <span class=\"math\">\\(0 &lt; x\\)</span> we have that <span class=\"math\">\\(f&#39;(x) &gt; 0\\)</span>. Hence the function is decreasing on <span class=\"math\">\\((-\\infty,-1)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The intervals of decrease are the intervals on which the derivative of\nthe function $f$ is negative. Given that\n\n\\begin{align*}\nf'(x) &= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&= \\frac{6x^{-4/5}(1+x)}{5} \\\\\n&= \\frac{6(x+1)}{5x^{4/5}}\n\\end{align*}\n\nOur critical points occur when $x=-1,0$, that is, points on the function\nwhere the derivative is undefined or zero. Writing out a sign chart, we\nsee that when $x< -1$ we have that $f'(x) < 0$. When $-1 < x< 0$ we have\nthat $f'(x) > 0$. When $0 < x$ we have that $f'(x) > 0$. Hence the\nfunction is decreasing on $(-\\infty,-1)$."
+    ], 
+    "sols_raw": [
+        "The intervals of decrease are the intervals on which the derivative of the function &amp;fnof; is negative. Given that\n:&lt;math>\\begin{align}\nf'(x) &amp;= \\frac{6}{5}x^{-4/5} + \\frac{6}{5}x^{1/5} \\\\\n&amp;= \\frac{6x^{-4/5}(1+x)}{5} \\\\\n&amp;= \\frac{6(x+1)}{5x^{4/5}}\n\\end{align}&lt;/math>\n\nOur critical points occur when &lt;math>x=-1,0 &lt;/math>, that is, points on the function where the derivative is undefined or zero. Writing out a sign chart, we see that when &lt;math> x&lt; -1 &lt;/math> we have that &lt;math> f'(x) &lt; 0 &lt;/math>. When &lt;math> -1 &lt; x&lt; 0 &lt;/math> we have that &lt;math> f'(x) > 0 &lt;/math>. When &lt;math> 0 &lt; x &lt;/math> we have that &lt;math> f'(x) > 0 &lt;/math>. Hence the function is decreasing on &lt;math> (-\\infty,-1) &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p><em><strong>Full-Solution Problems.</strong> In questions 2-8, justify your answers and <strong>show all your work.</strong> Simplification of answers is not required unless explicitly stated.</em></p>\n<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}.\\end{aligned}\\]</span></p>\n<p><br />Find the interval(s) of decrease.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} Simplification of answers is\nnot required unless explicitly stated.}\n\nLet\n\n\\begin{align*}\n\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}.\n\\end{align*}\\\\Find the interval(s) of decrease.", 
+    "statement_raw": "'''''Full-Solution Problems.''' In questions 2-8, justify your answers and '''show all your work.''' Simplification of answers is not required unless explicitly stated.''\n\nLet\n:&lt;math>\\displaystyle\ny=f(x)=6x^{1/5}+x^{6/5}.\n&lt;/math>\n&lt;br />\nFind the interval(s) of decrease.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_05_(b)", 
+    "year": 2011
 }

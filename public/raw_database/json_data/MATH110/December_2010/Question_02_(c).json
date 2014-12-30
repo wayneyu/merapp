@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x\\)</span>.</p>\n", 
+    "answer_latex": "$f'(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x$.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
+    ], 
     "course": "MATH110", 
-    "statement": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\\end{align*}", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try using the chain rule.</p>\n"
+    ], 
+    "hints_latex": [
+        "Try using the chain rule."
+    ], 
+    "hints_raw": [
+        "Try using the chain rule.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The function we are trying to differentiate is the composition of four functions: three <span class=\"math\">\\(\\tan x\\)</span> functions and an <span class=\"math\">\\(x^2\\)</span>. Thus we will use the chain rule. This means taking the derivative of the outermost <span class=\"math\">\\(\\tan x\\)</span> function and then replacing <span class=\"math\">\\(x\\)</span> with the rest of the function; then multiplying by the deriviative of the next <span class=\"math\">\\(\\tan x\\)</span> and so on, until each part of the function has been differentiated.</p>\n<p>(Recall that the derivative of <span class=\"math\">\\(\\tan x\\)</span> is <span class=\"math\">\\(\\sec^2 x\\)</span>.)</p>\n<p><span class=\"math\">\\(f&#39;(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The function we are trying to differentiate is the composition of four\nfunctions: three $\\tan x$ functions and an $x^2$. Thus we will use the\nchain rule. This means taking the derivative of the outermost $\\tan x$\nfunction and then replacing $x$ with the rest of the function; then\nmultiplying by the deriviative of the next $\\tan x$ and so on, until\neach part of the function has been differentiated.\n\n(Recall that the derivative of $\\tan x$ is $\\sec^2 x$.)\n\n$f'(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x$."
     ], 
-    "hints": [
-        "Try using the chain rule."
-    ]
+    "sols_raw": [
+        "The function we are trying to differentiate is the composition of four functions: three &lt;math>\\tan x&lt;/math> functions and an &lt;math>x^2&lt;/math>.  Thus we will use the chain rule.  This means taking the derivative of the outermost &lt;math>\\tan x&lt;/math> function and then replacing &lt;math>x&lt;/math> with the rest of the function; then multiplying by the deriviative of the next &lt;math> \\tan x&lt;/math> and so on, until each part of the function has been differentiated.  \n\n(Recall that the derivative of &lt;math>\\tan x&lt;/math> is &lt;math>\\sec^2 x&lt;/math>.)\n\n&lt;math>f'(x) = \\sec^2(\\tan(\\tan(x^2)))\\cdot \\sec^2(\\tan(x^2)) \\cdot \\sec^2(x^2) \\cdot 2x&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Find the derivative of the following function.</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\n\\end{align*}", 
+    "statement_raw": "''Find the derivative of the following function.''\n\n:&lt;math>\\displaystyle\nf(x) = \\tan(\\tan(\\tan(x^2)))\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_02_(c)", 
+    "year": 2010
 }

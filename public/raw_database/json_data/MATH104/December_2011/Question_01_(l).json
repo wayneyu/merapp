@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(l)", 
-    "course": "MATH104", 
-    "statement": "If\n\n\\begin{align*}\\displaystyle f'(a)\\end{align*}\n\nexists, then\n\n\\begin{align*}\\lim_{x \\rightarrow a} f(x)\\end{align*}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  must exist, but there is not enough information to determine it\n  exactly.\n\\item\n  equals f(a).\n\\item\n  equals f'(a).\n\\item\n  might not exist.\n\\item\n  None of the above.\n\\end{enumerate}", 
-    "year": 2011, 
-    "sols": [
-        "If $f$ is differentiable at \\emph{a}, then $f$ must also be continuous at\n\\emph{a}. Hence, the limit\n\n\\begin{align*}\\lim_{x\\to a} f(x)\\end{align*}\n\nexists and is equal to $f$\\emph{(a)}. The correct answer is therefore\n\\textbf{B}."
+    "answer_html": "<p>The correct answer is therefore <strong>B</strong>.</p>\n", 
+    "answer_latex": "The correct answer is therefore\n\\textbf{B}.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "GregMayer"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>If a function is differentiable at <span class=\"math\">\\(a\\)</span>, must it also be continuous at <span class=\"math\">\\(a\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "If a function is differentiable at $a$, must it also be continuous at\n$a$?"
-    ]
+    ], 
+    "hints_raw": [
+        "If a function is differentiable at &lt;math>a&lt;/math>, must it also be continuous at &lt;math>a&lt;/math>?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (l)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(f\\)</span> is differentiable at <em>a</em>, then <span class=\"math\">\\(f\\)</span> must also be continuous at <em>a</em>. Hence, the limit</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\to a} f(x)\\end{aligned}\\]</span></p>\n<p>exists and is equal to <span class=\"math\">\\(f\\)</span><em>(a)</em>. The correct answer is therefore <strong>B</strong>.</p>\n"
+    ], 
+    "sols_latex": [
+        "If $f$ is differentiable at \\emph{a}, then $f$ must also be continuous at\n\\emph{a}. Hence, the limit\n\n\\begin{align*}\n\\lim_{x\\to a} f(x)\n\\end{align*}\n\nexists and is equal to $f$\\emph{(a)}. The correct answer is therefore\n\\textbf{B}."
+    ], 
+    "sols_raw": [
+        "If &amp;fnof; is differentiable at ''a'', then &amp;fnof; must also be continuous at ''a''.  Hence, the limit \n\n:&lt;math>\\lim_{x\\to a} f(x)&lt;/math>\n\nexists and is equal to &amp;fnof;''(a)''.  The correct answer is therefore '''B'''.\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>If</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(a)\\end{aligned}\\]</span></p>\n<p>exists, then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\rightarrow a} f(x)\\end{aligned}\\]</span></p>\n<p>must exist, but there is not enough information to determine it exactly.</p>\n<p>equals f(a).</p>\n<p>equals f&#8217;(a).</p>\n<p>might not exist.</p>\n<p>None of the above.</p>\n", 
+    "statement_latex": "If\n\n\\begin{align*}\n\\displaystyle f'(a)\n\\end{align*}\n\nexists, then\n\n\\begin{align*}\n\\lim_{x \\rightarrow a} f(x)\n\\end{align*}\n\nmust exist, but there is not enough information to determine it exactly.\n\nequals f(a).\n\nequals f'(a).\n\nmight not exist.\n\nNone of the above.", 
+    "statement_raw": "If \n\n:&lt;math>\\displaystyle f'(a)&lt;/math> \n\nexists, then\n\n:&lt;math>\\lim_{x \\rightarrow a} f(x)&lt;/math>\n\n\n&lt;ol style=\"list-style-type: upper-alpha;\">\n&lt;li> must exist, but there is not enough information to determine it exactly.\n&lt;li> equals f(a).\n&lt;li> equals f'(a).\n&lt;li> might not exist.\n&lt;li> None of the above.\n&lt;/ol>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(l)", 
+    "year": 2011
 }

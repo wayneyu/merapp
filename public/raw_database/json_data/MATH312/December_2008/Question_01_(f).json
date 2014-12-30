@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(f)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle \\phi(a)\\phi(b)\\phi(c) = 1 \\neq 2\\)</span>and thus this is a counter example.</p>\n", 
+    "answer_latex": "$\\displaystyle \\phi(a)\\phi(b)\\phi(c) = 1 \\neq 2$and thus this is a counter example.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf $\\displaystyle \\gcd(a,b,c) = 1$, then\n$\\displaystyle \\phi(abc) = \\phi(a)\\phi(b)\\phi(c)$", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Look for a counter example with <span class=\"math\">\\(\\displaystyle a=b\\)</span> but <span class=\"math\">\\(\\displaystyle \\gcd(b,c) = 1\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Look for a counter example with $\\displaystyle a=b$ but\n$\\displaystyle \\gcd(b,c) = 1$."
+    ], 
+    "hints_raw": [
+        "Look for a counter example with &lt;math> \\displaystyle a=b&lt;/math> but &lt;math> \\displaystyle \\gcd(b,c) = 1&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>false</strong>.</p>\n<p>Let <span class=\"math\">\\(\\displaystyle a=b=2\\)</span> and <span class=\"math\">\\(\\displaystyle c=1\\)</span>. Then <span class=\"math\">\\(\\displaystyle \\gcd(a,b,c) = \\gcd(2,2,1) = 1\\)</span> and further</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(abc) = \\phi((2)(2)(1)) = \\phi(4) = 2\\)</span>.</p>\n<p>However</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(a)\\phi(b)\\phi(c) = \\phi(2)\\phi(2)\\phi(1) = (1)(1)(1) = 1 \\neq 2\\)</span></p>\n<p>and thus this is a counter example.</p>\n"
+    ], 
+    "sols_latex": [
         "The answer is \\textbf{false}.\n\nLet $\\displaystyle a=b=2$ and $\\displaystyle c=1$. Then\n$\\displaystyle \\gcd(a,b,c) = \\gcd(2,2,1) = 1$ and further\n\n$\\displaystyle \\phi(abc) = \\phi((2)(2)(1)) = \\phi(4) = 2$.\n\nHowever\n\n$\\displaystyle \\phi(a)\\phi(b)\\phi(c) = \\phi(2)\\phi(2)\\phi(1) = (1)(1)(1) = 1 \\neq 2$\n\nand thus this is a counter example."
     ], 
-    "hints": [
-        "Look for a counter example with $\\displaystyle a=b$ but\n$\\displaystyle \\gcd(b,c) = 1$."
-    ]
+    "sols_raw": [
+        "The answer is '''false'''. \n\nLet &lt;math> \\displaystyle a=b=2&lt;/math> and &lt;math> \\displaystyle c=1&lt;/math>. Then &lt;math> \\displaystyle \\gcd(a,b,c) = \\gcd(2,2,1) = 1&lt;/math> and further\n\n&lt;math> \\displaystyle \\phi(abc) = \\phi((2)(2)(1)) = \\phi(4) = 2&lt;/math>.\n\nHowever\n\n&lt;math> \\displaystyle \\phi(a)\\phi(b)\\phi(c) = \\phi(2)\\phi(2)\\phi(1) = (1)(1)(1) = 1 \\neq 2&lt;/math>\n\nand thus this is a counter example.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>For each of the following statements, indicate if it holds for every positive integers <span class=\"math\">\\(\\displaystyle a, b, c\\)</span> (if so, a simple <em>true</em> without a proof suffices, if not, a <em>false</em> together with a counterexample is expected).</strong></p>\n<p>If <span class=\"math\">\\(\\displaystyle \\gcd(a,b,c) = 1\\)</span>, then <span class=\"math\">\\(\\displaystyle \\phi(abc) = \\phi(a)\\phi(b)\\phi(c)\\)</span></p>\n", 
+    "statement_latex": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf $\\displaystyle \\gcd(a,b,c) = 1$, then\n$\\displaystyle \\phi(abc) = \\phi(a)\\phi(b)\\phi(c)$", 
+    "statement_raw": "'''For each of the following statements, indicate if it holds for every positive integers &lt;math>\\displaystyle a, b, c &lt;/math> (if so, a simple ''true'' without a proof suffices, if not, a ''false'' together with a counterexample is  expected).'''\n\nIf &lt;math> \\displaystyle \\gcd(a,b,c) = 1&lt;/math>, then &lt;math> \\displaystyle \\phi(abc) = \\phi(a)\\phi(b)\\phi(c)&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Multiplicative_functions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_01_(f)", 
+    "year": 2008
 }

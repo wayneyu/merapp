@@ -1,15 +1,56 @@
 {
-    "term": "April", 
-    "question": "Question_01_(i)", 
-    "course": "MATH101", 
-    "statement": "Calculate the derivative $\\displaystyle f'(x)$ if\n\n\\begin{align*}f(x)=\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt.\\end{align*}", 
-    "year": 2009, 
-    "sols": [
-        "Using the fundamental theorem of calculus, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx}\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt \\\\\n&= \\frac{d}{dx}\\left( \\int_x^{0} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&= \\frac{d}{dx}\\left( -\\int_{0}^{x} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&=  - \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\\end{align*}\n\nwhere in the last equality on the right most sum, we used the chain rule\nto compute the derivative. This completes the question."
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=- \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\\)</span> where in the last equality on the right most sum, we used the chain rule to compute the derivative.This completes the question.</p>\n", 
+    "answer_latex": " $f'(x)=- \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}$ where in the last equality on the right most sum, we used the chain rule\nto compute the derivative.This completes the question.", 
+    "contributors": [
+        "CindyBlois", 
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the fundamental theorem of calculus.</p>\n", 
+        "<p>Remember that the Fundamental Theorem of Calculus says</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx}\\int_a^x g(t) dt = g(x)\\end{aligned}\\]</span></p>\n<p>(where <em>a</em> is any fixed real number).</p>\n", 
+        "<p>The integral given in this problem has a function of x in both bounds (top and bottom). You can split the integral into two parts to obtain the form in the previous hint.</p>\n"
+    ], 
+    "hints_latex": [
         "Use the fundamental theorem of calculus.", 
-        "Remember that the Fundamental Theorem of Calculus says\n\n\\begin{align*}\\frac{d}{dx}\\int_a^x g(t) dt = g(x)\\end{align*}\n\n(where \\emph{a} is any fixed real number).", 
+        "Remember that the Fundamental Theorem of Calculus says\n\n\\begin{align*}\n\\frac{d}{dx}\\int_a^x g(t) dt = g(x)\n\\end{align*}\n\n(where \\emph{a} is any fixed real number).", 
         "The integral given in this problem has a function of x in both bounds\n(top and bottom). You can split the integral into two parts to obtain\nthe form in the previous hint."
-    ]
+    ], 
+    "hints_raw": [
+        "Use the fundamental theorem of calculus.\n\n&lt;!---\nRemember that the Fundamental Theorem of Calculus says that\n\n:&lt;math> \\frac{d}{dx}\\int_a^x g(t) dt = g(x) &lt;/math>\n\n(where ''a'' is any fixed real number).\n--->\n", 
+        "Remember that the Fundamental Theorem of Calculus says \n\n:&lt;math> \\frac{d}{dx}\\int_a^x g(t) dt = g(x) &lt;/math>\n\n(where ''a'' is any fixed real number).\n", 
+        "The integral given in this problem has a function of x in both bounds (top and bottom). You can split the integral into two parts to obtain the form in the previous hint.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (i)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>Using the fundamental theorem of calculus, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{d}{dx}\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt \\\\\n&amp;= \\frac{d}{dx}\\left( \\int_x^{0} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&amp;= \\frac{d}{dx}\\left( -\\int_{0}^{x} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&amp;=  - \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\\end{aligned}\\]</span></p>\n<p>where in the last equality on the right most sum, we used the chain rule to compute the derivative. This completes the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Using the fundamental theorem of calculus, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx}\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt \\\\\n&= \\frac{d}{dx}\\left( \\int_x^{0} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&= \\frac{d}{dx}\\left( -\\int_{0}^{x} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&=  - \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\n\\end{align*}\n\nwhere in the last equality on the right most sum, we used the chain rule\nto compute the derivative. This completes the question."
+    ], 
+    "sols_raw": [
+        "Using the fundamental theorem of calculus, we have\n\n:&lt;math>\n\\begin{align}\nf'(x) &amp;= \\frac{d}{dx}\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt \\\\\n&amp;= \\frac{d}{dx}\\left( \\int_x^{0} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&amp;= \\frac{d}{dx}\\left( -\\int_{0}^{x} \\sqrt{\\cos{t}}\\, dt +  \\int_{0}^{e^{x}} \\sqrt{\\cos{t}}\\, dt\\right)\\\\\n&amp;=  - \\sqrt{\\cos{x}} +  e^{x} \\sqrt{\\cos{e^{x}}}\n\\end{align}\n&lt;/math>\n\nwhere in the last equality on the right most sum, we used the chain rule to compute the derivative. This completes the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Calculate the derivative <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)=\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Calculate the derivative $\\displaystyle f'(x)$ if\n\n\\begin{align*}\nf(x)=\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt.\n\\end{align*}", 
+    "statement_raw": "Calculate the derivative &lt;math>\\displaystyle f'(x) &lt;/math> if\n:&lt;math>\nf(x)=\\int_x^{e^x} \\sqrt{\\cos{t}}\\, dt.\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(i)", 
+    "year": 2009
 }

@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
+    "answer_html": "<p>So in total, <em>(N-1) + (N-1) = 2N - 2</em> equations.</p>\n", 
+    "answer_latex": "So in total, \\emph{(N-1) + (N-1) = 2N - 2} equations.", 
     "course": "MATH307", 
-    "statement": "Suppose you are given a set of \\emph{N} data points\n\\emph{(x\\textsubscript{n}, y\\textsubscript{n})}, with\n\\emph{x\\textsubscript{n}} increasing, and you wish to interpolate these\npoints with a spline function \\emph{$f$}, where \\emph{$f$(x)} is given by\nthe cubic polynomial \\emph{p\\textsubscript{n}(x)} on each interval\n\\emph{(x\\textsubscript{n}, x\\textsubscript{n+1})} for \\emph{n = 1, ...,\nN-1}:\n\n\\begin{align*}\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\\end{align*}\n\n\\textbf{(a)} Write down the equations required for \\emph{$f$(x)} to be\ncontinuous and to pass through the data points. How many equations does\nthis provide?", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>For <em><span class=\"math\">\\(f\\)</span>(x)</em> to pass through all the data points, we must have <em>p<sub>n</sub>(x<sub>n</sub>) = y<sub>n</sub></em> and for <em><span class=\"math\">\\(f\\)</span>(x)</em> to be continuous, we must have <em>p<sub>n</sub>(x<sub>n+1</sub>) = y<sub>n+1</sub></em>. Each of these give us <em>N-1</em> equations because there are <em>N-1</em> polynomials. So in total, <em>(N-1) + (N-1) = 2N - 2</em> equations.</p>\n"
+    ], 
+    "sols_latex": [
         "For \\emph{$f$(x)} to pass through all the data points, we must have\n\\emph{p\\textsubscript{n}(x\\textsubscript{n}) = y\\textsubscript{n}} and\nfor \\emph{$f$(x)} to be continuous, we must have\n\\emph{p\\textsubscript{n}(x\\textsubscript{n+1}) = y\\textsubscript{n+1}}.\nEach of these give us \\emph{N-1} equations because there are \\emph{N-1}\npolynomials. So in total, \\emph{(N-1) + (N-1) = 2N - 2} equations."
     ], 
-    "hints": []
+    "sols_raw": [
+        "For ''&amp;fnof;(x)'' to pass through all the data points, we must have ''p&lt;sub>n&lt;/sub>(x&lt;sub>n&lt;/sub>) = y&lt;sub>n&lt;/sub>'' and for ''&amp;fnof;(x)'' to be continuous, we must have ''p&lt;sub>n&lt;/sub>(x&lt;sub>n+1&lt;/sub>) = y&lt;sub>n+1&lt;/sub>''. Each of these give us ''N-1'' equations because there are ''N-1'' polynomials. So in total, ''(N-1) + (N-1) = 2N - 2'' equations.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Suppose you are given a set of <em>N</em> data points <em>(x<sub>n</sub>, y<sub>n</sub>)</em>, with <em>x<sub>n</sub></em> increasing, and you wish to interpolate these points with a spline function <em><span class=\"math\">\\(f\\)</span></em>, where <em><span class=\"math\">\\(f\\)</span>(x)</em> is given by the cubic polynomial <em>p<sub>n</sub>(x)</em> on each interval <em>(x<sub>n</sub>, x<sub>n+1</sub>)</em> for <em>n = 1, ..., N-1</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Write down the equations required for <em><span class=\"math\">\\(f\\)</span>(x)</em> to be continuous and to pass through the data points. How many equations does this provide?</p>\n", 
+    "statement_latex": "Suppose you are given a set of \\emph{N} data points\n\\emph{(x\\textsubscript{n}, y\\textsubscript{n})}, with\n\\emph{x\\textsubscript{n}} increasing, and you wish to interpolate these\npoints with a spline function \\emph{$f$}, where \\emph{$f$(x)} is given by\nthe cubic polynomial \\emph{p\\textsubscript{n}(x)} on each interval\n\\emph{(x\\textsubscript{n}, x\\textsubscript{n+1})} for \\emph{n = 1, ...,\nN-1}:\n\n\\begin{align*}\n\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\n\\end{align*}\n\n\\textbf{(a)} Write down the equations required for \\emph{$f$(x)} to be\ncontinuous and to pass through the data points. How many equations does\nthis provide?", 
+    "statement_raw": "Suppose you are given a set of ''N'' data points ''(x&lt;sub>n&lt;/sub>, y&lt;sub>n&lt;/sub>)'', with ''x&lt;sub>n&lt;/sub>'' increasing, and you wish to interpolate these points with a spline function ''&amp;fnof;'', where ''&amp;fnof;(x)'' is given by the cubic polynomial ''p&lt;sub>n&lt;/sub>(x)'' on each interval ''(x&lt;sub>n&lt;/sub>, x&lt;sub>n+1&lt;/sub>)'' for ''n = 1, ..., N-1'':\n\n:&lt;math> \\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\n&lt;/math>\n\n'''(a)''' Write down the equations required for ''&amp;fnof;(x)'' to be continuous and to pass through the data points. How many equations does this provide?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_01_(a)", 
+    "year": 2012
 }

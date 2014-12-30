@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_A_14", 
-    "course": "MATH152", 
-    "statement": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6{]};}\\\\\\texttt{A(:,1)}", 
-    "year": 2010, 
-    "sols": [
-        "The first line of code creates a \\emph{2}x\\emph{3} matrix with the row\nvector {[}1 2 3{]} as its first row and the row vector {[}4 5 6{]} as\nits second row. Hence\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{array}\\right]\\end{align*}\n\nThe second line tells MATLAB to return a vector of all entries in\n\\emph{A} that have a second argument \\emph{1}, hence \\emph{A(1,1)} and\n\\emph{A(2,1)}. This is a column vector. Therefore the final answer is\n\n\\begin{align*}\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]$ ", 
+    "contributors": [
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What is the dimension of <em>A</em>? What does the <strong>;</strong> do when entering a matrix? Is the output a column or a row vector?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the dimension of \\emph{A}? What does the \\textbf{;} do when\nentering a matrix? Is the output a column or a row vector?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the dimension of ''A''? What does the ''';''' do when entering a matrix? Is the output a column or a row vector?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 14", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>The first line of code creates a <em>2</em>x<em>3</em> matrix with the row vector <span>[</span>1 2 3<span>]</span> as its first row and the row vector <span>[</span>4 5 6<span>]</span> as its second row. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} 1 &amp; 2 &amp; 3 \\\\ 4 &amp; 5 &amp; 6 \\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>The second line tells MATLAB to return a vector of all entries in <em>A</em> that have a second argument <em>1</em>, hence <em>A(1,1)</em> and <em>A(2,1)</em>. This is a column vector. Therefore the final answer is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The first line of code creates a \\emph{2}x\\emph{3} matrix with the row\nvector {[}1 2 3{]} as its first row and the row vector {[}4 5 6{]} as\nits second row. Hence\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{array}\\right]\n\\end{align*}\n\nThe second line tells MATLAB to return a vector of all entries in\n\\emph{A} that have a second argument \\emph{1}, hence \\emph{A(1,1)} and\n\\emph{A(2,1)}. This is a column vector. Therefore the final answer is\n\n\\begin{align*}\n\\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The first line of code creates a ''2''x''3'' matrix with the row vector [1 2 3] as its first row and the row vector [4 5 6] as its second row. Hence\n\n:&lt;math> A = \\left[\\begin{array}{ccc} 1 &amp; 2 &amp; 3 \\\\ 4 &amp; 5 &amp; 6 \\end{array}\\right] &lt;/math>\n\nThe second line tells MATLAB to return a vector of all entries in ''A'' that have a second argument ''1'', hence ''A(1,1)'' and ''A(2,1)''. This is a column vector. Therefore the final answer is\n\n:&lt;math> \\left[\\begin{array}{c} 1 \\\\ 4 \\end{array}\\right] &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>What is the output after the following lines of MATLAB code?</p>\n<p><code>A&#160;=&#160;[1&#160;2&#160;3;&#160;4&#160;5&#160;6];</code><br /><code>A(:,1)</code></p>\n", 
+    "statement_latex": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6{]};}\\\\\\texttt{A(:,1)}", 
+    "statement_raw": "What is the output after the following lines of MATLAB code?\n\n A = [1 2 3; 4 5 6];\n A(:,1)\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_14", 
+    "year": 2010
 }

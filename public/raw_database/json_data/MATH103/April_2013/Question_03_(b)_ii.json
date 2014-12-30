@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)_ii", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Continuous Probability}.\n\n\\textbf{Consider $\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}$. Convert\n$\\displaystyle f(x)$ into a probability density function (pdf)\n$\\displaystyle p(x)$ on an interval $\\displaystyle (a,b)$}\n\nFind the mean of $\\displaystyle p(x)$", 
-    "year": 2013, 
-    "sols": [
-        "We seek to compute\n\n$\\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx = \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\ dx = \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}} \\ dx$\n\nLet $\\displaystyle u = 1-x$ so that $\\displaystyle du = -dx$,\n$\\displaystyle u(0) = 1$, $\\displaystyle u(q) = 1-q$ and substituting\ngives\n\n\\begin{align*}\n\\overline{x} &= \\int_{0}^{1}xp(x)\\,dx \\\\\n&= \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\,dx\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}}\\,dx\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1}^{1-q} \\frac{-(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{1-2u+u^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\sqrt{u}^{-1}-2\\sqrt{u}+u^{3/2}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(2\\sqrt{u}-\\frac{4u^{3/2}}{3}+\\frac{2u^{5/2}}{5}\\right) \\big|_{1-q}^{1}\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(\\left(2\\sqrt{1}-\\frac{4(1)^{3/2}}{3}+\\frac{2(1)^{5/2}}{5}\\right) - \\left(2\\sqrt{1-q}-\\frac{4(1-q)^{3/2}}{3}+\\frac{2(1-q)^{5/2}}{5}\\right)\\right) \\\\\n&= \\frac{3}{4}\\left(2-\\frac{4}{3}+\\frac{2}{5}\\right) \\\\\n&= \\frac{4}{5}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\overline{x}=\\frac{4}{5}\\)</span></p>\n", 
+    "answer_latex": " $\\overline{x}=\\frac{4}{5}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The mean is defined by</p>\n<p><span class=\"math\">\\(\\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx\\)</span></p>\n", 
+        "<p>The substitution from <span>part i</span> will be useful.</p>\n"
+    ], 
+    "hints_latex": [
         "The mean is defined by\n\n$\\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx$", 
-        "The substitution from\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_03_(b)_i}{part\ni} will be useful."
-    ]
+        "The substitution from\n{part\ni} will be useful."
+    ], 
+    "hints_raw": [
+        "The mean is defined by\n\n&lt;math> \\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx&lt;/math>\n", 
+        "The substitution from [[Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_03_(b)_i|part i]] will be useful.\n"
+    ], 
+    "num_votes": 11, 
+    "question": "3 (b) ii", 
+    "rating": 15, 
+    "sols_html": [
+        "<p>We seek to compute</p>\n<p><span class=\"math\">\\(\\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx = \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\ dx = \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}} \\ dx\\)</span></p>\n<p>Let <span class=\"math\">\\(\\displaystyle u = 1-x\\)</span> so that <span class=\"math\">\\(\\displaystyle du = -dx\\)</span>, <span class=\"math\">\\(\\displaystyle u(0) = 1\\)</span>, <span class=\"math\">\\(\\displaystyle u(q) = 1-q\\)</span> and substituting gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\overline{x} &amp;= \\int_{0}^{1}xp(x)\\,dx \\\\\n&amp;= \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\,dx\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}}\\,dx\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1}^{1-q} \\frac{-(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{1-2u+u^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\sqrt{u}^{-1}-2\\sqrt{u}+u^{3/2}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(2\\sqrt{u}-\\frac{4u^{3/2}}{3}+\\frac{2u^{5/2}}{5}\\right) \\big|_{1-q}^{1}\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(\\left(2\\sqrt{1}-\\frac{4(1)^{3/2}}{3}+\\frac{2(1)^{5/2}}{5}\\right) - \\left(2\\sqrt{1-q}-\\frac{4(1-q)^{3/2}}{3}+\\frac{2(1-q)^{5/2}}{5}\\right)\\right) \\\\\n&amp;= \\frac{3}{4}\\left(2-\\frac{4}{3}+\\frac{2}{5}\\right) \\\\\n&amp;= \\frac{4}{5}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We seek to compute\n\n$\\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx = \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\ dx = \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}} \\ dx$\n\nLet $\\displaystyle u = 1-x$ so that $\\displaystyle du = -dx$,\n$\\displaystyle u(0) = 1$, $\\displaystyle u(q) = 1-q$ and substituting\ngives\n\n\\begin{align*}\n\\overline{x} &= \\int_{0}^{1}xp(x)\\,dx \\\\\n&= \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\,dx\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}}\\,dx\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1}^{1-q} \\frac{-(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{1-2u+u^2}{\\sqrt{u}}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\sqrt{u}^{-1}-2\\sqrt{u}+u^{3/2}\\,du\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(2\\sqrt{u}-\\frac{4u^{3/2}}{3}+\\frac{2u^{5/2}}{5}\\right) \\big|_{1-q}^{1}\\\\\n&= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(\\left(2\\sqrt{1}-\\frac{4(1)^{3/2}}{3}+\\frac{2(1)^{5/2}}{5}\\right) - \\left(2\\sqrt{1-q}-\\frac{4(1-q)^{3/2}}{3}+\\frac{2(1-q)^{5/2}}{5}\\right)\\right) \\\\\n&= \\frac{3}{4}\\left(2-\\frac{4}{3}+\\frac{2}{5}\\right) \\\\\n&= \\frac{4}{5}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We seek to compute\n\n&lt;math> \\displaystyle \\overline{x} = \\int_{0}^{1}xp(x)\\,dx = \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\ dx = \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}} \\ dx&lt;/math>\n\nLet &lt;math> \\displaystyle u = 1-x&lt;/math> so that &lt;math> \\displaystyle du = -dx&lt;/math>, &lt;math> \\displaystyle u(0) = 1&lt;/math>, &lt;math> \\displaystyle u(q) = 1-q&lt;/math> and substituting gives\n\n&lt;math> \n\\begin{align}\n\\overline{x} &amp;= \\int_{0}^{1}xp(x)\\,dx \\\\\n&amp;= \\frac{3}{4}\\int_{0}^{1} \\frac{x^2}{\\sqrt{1-x}} \\,dx\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{x^2}{\\sqrt{1-x}}\\,dx\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1}^{1-q} \\frac{-(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{(1-u)^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\frac{1-2u+u^2}{\\sqrt{u}}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}}\\int_{1-q}^{1} \\sqrt{u}^{-1}-2\\sqrt{u}+u^{3/2}\\,du\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(2\\sqrt{u}-\\frac{4u^{3/2}}{3}+\\frac{2u^{5/2}}{5}\\right) \\big|_{1-q}^{1}\\\\\n&amp;= \\frac{3}{4}\\lim_{q \\to 1^{-}} \\left(\\left(2\\sqrt{1}-\\frac{4(1)^{3/2}}{3}+\\frac{2(1)^{5/2}}{5}\\right) - \\left(2\\sqrt{1-q}-\\frac{4(1-q)^{3/2}}{3}+\\frac{2(1-q)^{5/2}}{5}\\right)\\right) \\\\\n&amp;= \\frac{3}{4}\\left(2-\\frac{4}{3}+\\frac{2}{5}\\right) \\\\\n&amp;= \\frac{4}{5}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Continuous Probability</strong>.</p>\n<p><strong>Consider <span class=\"math\">\\(\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}\\)</span>. Convert <span class=\"math\">\\(\\displaystyle f(x)\\)</span> into a probability density function (pdf) <span class=\"math\">\\(\\displaystyle p(x)\\)</span> on an interval <span class=\"math\">\\(\\displaystyle (a,b)\\)</span></strong></p>\n<p>Find the mean of <span class=\"math\">\\(\\displaystyle p(x)\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Continuous Probability}.\n\n\\textbf{Consider $\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}$. Convert\n$\\displaystyle f(x)$ into a probability density function (pdf)\n$\\displaystyle p(x)$ on an interval $\\displaystyle (a,b)$}\n\nFind the mean of $\\displaystyle p(x)$", 
+    "statement_raw": "'''Continuous Probability'''. \n\n'''Consider &lt;math> \\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}&lt;/math>. Convert &lt;math> \\displaystyle f(x)&lt;/math> into a probability density function (pdf) &lt;math> \\displaystyle p(x)&lt;/math> on an interval &lt;math> \\displaystyle (a,b)&lt;/math>'''\n\nFind the mean of &lt;math> \\displaystyle p(x)&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Mean_(continuous)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_03_(b)_ii", 
+    "year": 2013
 }

@@ -1,13 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
-    "course": "MATH110", 
-    "statement": "Rewrite $f(x)$ in such a way that you can differentiate it using a\ndifferent rule than the Power Rule. Name the rule of differentiation\nwhich is applicable, and then confirm that the derivative calculated\nusing this alternative method is the same as in part (a).\n\n(Bonus) You will receive one bonus mark for each different\ndifferentiation rule you use to differentiate $\\displaystyle f(x)$.", 
-    "year": 2013, 
-    "sols": [
-        "\\textbf{Parts b and c combined:} (These are all the rules I can think\nof).\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Addition rule:\n\n  \\begin{align*}\n  f(x) &= \\frac{1}{2}x^6 + \\frac{1}{2}x^6 &\n  f'(x) &= 3x^5 + 3x^5\\end{align*}\n\\item\n  Subtraction rule:\n\n  \\begin{align*}\n  f(x) &= 2x^6 - x^6 &\n  f'(x) &= 12x^5 - 6x^5\\end{align*}\n\\item\n  Product rule:\n\n  \\begin{align*}\n  f(x) &= x^2 \\cdot x^4 &\n  f'(x) &= 2x \\cdot x^4 + 4x^3 \\cdot x^2\\end{align*}\n\\item\n  Quotient rule:\n\n  \\begin{align*}\n  f(x) &= \\frac{x^7}{x} &\n  f'(x) &= \\frac{7x^6 \\cdot x - x^7 \\cdot 1}{x^2}\\end{align*}\n\\item\n  Chain rule:\n\n  \\begin{align*}\n  f(x) &= (x^3)^2 &\n  f'(x) &=  3x^2 \\cdot 2(x^3)\\end{align*}\n\\item\n  Log-diff:\n\n  \\begin{align*}\n  \\ln(f(x)) &= 6 \\ln(x)& \n  f'(x) &= \\frac{6}{x}\\cdot x^6\\end{align*}\n\\item\n  Exp-chain rule:\n\n  \\begin{align*}\n  f(x) &= \\exp[6\\ln(x)]&\n  f'(x) &= \\frac{6}{x} \\cdot \\exp[6\\ln(x)]\\end{align*}\n\\item\n  Limit definition of derivative:\n\n  \\begin{align*}\n  f'(x) &= \\lim_{h\\rightarrow 0} \\frac{(x+h)^6 - x^6}{h} & f'(x) &= \\lim_{h\\rightarrow 0} \\frac{6x^5h + 15x^4h^2 + \\ldots + h^6}{h}\\\\\n  f'(x) &= \\lim_{a\\rightarrow x} \\frac{a^6 - x^6}{a-x} & f'(x) &= \\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\\end{align*}\n\\end{itemize}"
+    "answer_html": "<ol>\n<li><p><span class=\"math\">\\(f&#39;(x)=\\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\\)</span></p></li>\n</ol>\n", 
+    "answer_latex": "\\begin{enumerate}\\item  $f'(x)=\\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}$ \n\\end{enumerate}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>There are lots of choices here. The easier ones to see are the chain rule, the definition of a derivative, and using logarithmic differentiation. There are of course many others as you will see in the solution.</p>\n"
+    ], 
+    "hints_latex": [
         "There are lots of choices here. The easier ones to see are the chain\nrule, the definition of a derivative, and using logarithmic\ndifferentiation. There are of course many others as you will see in the\nsolution."
-    ]
+    ], 
+    "hints_raw": [
+        "There are lots of choices here. The easier ones to see are the chain rule, the definition of a derivative, and using logarithmic differentiation. There are of course many others as you will see in the solution.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>Parts b and c combined:</strong> (These are all the rules I can think of).</p>\n<ol>\n<li><p>Addition rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\frac{1}{2}x^6 + \\frac{1}{2}x^6 &amp;\n  f&#39;(x) &amp;= 3x^5 + 3x^5\\end{aligned}\\]</span></p></li>\n<li><p>Subtraction rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= 2x^6 - x^6 &amp;\n  f&#39;(x) &amp;= 12x^5 - 6x^5\\end{aligned}\\]</span></p></li>\n<li><p>Product rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= x^2 \\cdot x^4 &amp;\n  f&#39;(x) &amp;= 2x \\cdot x^4 + 4x^3 \\cdot x^2\\end{aligned}\\]</span></p></li>\n<li><p>Quotient rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\frac{x^7}{x} &amp;\n  f&#39;(x) &amp;= \\frac{7x^6 \\cdot x - x^7 \\cdot 1}{x^2}\\end{aligned}\\]</span></p></li>\n<li><p>Chain rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= (x^3)^2 &amp;\n  f&#39;(x) &amp;=  3x^2 \\cdot 2(x^3)\\end{aligned}\\]</span></p></li>\n<li><p>Log-diff:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(f(x)) &amp;= 6 \\ln(x)&amp; \n  f&#39;(x) &amp;= \\frac{6}{x}\\cdot x^6\\end{aligned}\\]</span></p></li>\n<li><p>Exp-chain rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\exp[6\\ln(x)]&amp;\n  f&#39;(x) &amp;= \\frac{6}{x} \\cdot \\exp[6\\ln(x)]\\end{aligned}\\]</span></p></li>\n<li><p>Limit definition of derivative:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\lim_{h\\rightarrow 0} \\frac{(x+h)^6 - x^6}{h} &amp; f&#39;(x) &amp;= \\lim_{h\\rightarrow 0} \\frac{6x^5h + 15x^4h^2 + \\ldots + h^6}{h}\\\\\n  f&#39;(x) &amp;= \\lim_{a\\rightarrow x} \\frac{a^6 - x^6}{a-x} &amp; f&#39;(x) &amp;= \\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\\end{aligned}\\]</span></p></li>\n</ol>\n"
+    ], 
+    "sols_latex": [
+        "\\textbf{Parts b and c combined:} (These are all the rules I can think\nof).\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Addition rule:\n\n  \\begin{align*}\nf(x) &= \\frac{1}{2}x^6 + \\frac{1}{2}x^6 &\n  f'(x) &= 3x^5 + 3x^5\n\\end{align*}\n\\item\n  Subtraction rule:\n\n  \\begin{align*}\nf(x) &= 2x^6 - x^6 &\n  f'(x) &= 12x^5 - 6x^5\n\\end{align*}\n\\item\n  Product rule:\n\n  \\begin{align*}\nf(x) &= x^2 \\cdot x^4 &\n  f'(x) &= 2x \\cdot x^4 + 4x^3 \\cdot x^2\n\\end{align*}\n\\item\n  Quotient rule:\n\n  \\begin{align*}\nf(x) &= \\frac{x^7}{x} &\n  f'(x) &= \\frac{7x^6 \\cdot x - x^7 \\cdot 1}{x^2}\n\\end{align*}\n\\item\n  Chain rule:\n\n  \\begin{align*}\nf(x) &= (x^3)^2 &\n  f'(x) &=  3x^2 \\cdot 2(x^3)\n\\end{align*}\n\\item\n  Log-diff:\n\n  \\begin{align*}\n\\ln(f(x)) &= 6 \\ln(x)& \n  f'(x) &= \\frac{6}{x}\\cdot x^6\n\\end{align*}\n\\item\n  Exp-chain rule:\n\n  \\begin{align*}\nf(x) &= \\exp[6\\ln(x)]&\n  f'(x) &= \\frac{6}{x} \\cdot \\exp[6\\ln(x)]\n\\end{align*}\n\\item\n  Limit definition of derivative:\n\n  \\begin{align*}\nf'(x) &= \\lim_{h\\rightarrow 0} \\frac{(x+h)^6 - x^6}{h} & f'(x) &= \\lim_{h\\rightarrow 0} \\frac{6x^5h + 15x^4h^2 + \\ldots + h^6}{h}\\\\\n  f'(x) &= \\lim_{a\\rightarrow x} \\frac{a^6 - x^6}{a-x} & f'(x) &= \\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\n\\end{align*}\n\\end{enumerate}"
+    ], 
+    "sols_raw": [
+        "&lt;span>'''Parts b and c combined:'''&lt;/span> (These are all the rules I can think of).\n\n&lt;ul>\n&lt;li>&lt;p>Addition rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= \\frac{1}{2}x^6 + \\frac{1}{2}x^6 &amp;\nf'(x) &amp;= 3x^5 + 3x^5\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Subtraction rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= 2x^6 - x^6 &amp;\nf'(x) &amp;= 12x^5 - 6x^5\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Product rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= x^2 \\cdot x^4 &amp;\nf'(x) &amp;= 2x \\cdot x^4 + 4x^3 \\cdot x^2\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Quotient rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= \\frac{x^7}{x} &amp;\nf'(x) &amp;= \\frac{7x^6 \\cdot x - x^7 \\cdot 1}{x^2}\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Chain rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= (x^3)^2 &amp;\nf'(x) &amp;=  3x^2 \\cdot 2(x^3)\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Log-diff:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\n\\ln(f(x)) &amp;= 6 \\ln(x)&amp; \nf'(x) &amp;= \\frac{6}{x}\\cdot x^6\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Exp-chain rule:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf(x) &amp;= \\exp[6\\ln(x)]&amp;\nf'(x) &amp;= \\frac{6}{x} \\cdot \\exp[6\\ln(x)]\\end{align}&lt;/math>&lt;/p>&lt;/li>\n&lt;li>&lt;p>Limit definition of derivative:&lt;/p>\n&lt;p>&lt;math>\\begin{align}\nf'(x) &amp;= \\lim_{h\\rightarrow 0} \\frac{(x+h)^6 - x^6}{h} &amp; f'(x) &amp;= \\lim_{h\\rightarrow 0} \\frac{6x^5h + 15x^4h^2 + \\ldots + h^6}{h}\\\\\nf'(x) &amp;= \\lim_{a\\rightarrow x} \\frac{a^6 - x^6}{a-x} &amp; f'(x) &amp;= \\lim_{a\\rightarrow x} \\frac{(a-x)(a^5 + a^4x + \\ldots x^5)}{(a-x)}\\end{align}&lt;/math>&lt;/p>&lt;/li>&lt;/ul>\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Rewrite <span class=\"math\">\\(f(x)\\)</span> in such a way that you can differentiate it using a different rule than the Power Rule. Name the rule of differentiation which is applicable, and then confirm that the derivative calculated using this alternative method is the same as in part (a).</p>\n<p>(Bonus) You will receive one bonus mark for each different differentiation rule you use to differentiate <span class=\"math\">\\(\\displaystyle f(x)\\)</span>.</p>\n", 
+    "statement_latex": "Rewrite $f(x)$ in such a way that you can differentiate it using a\ndifferent rule than the Power Rule. Name the rule of differentiation\nwhich is applicable, and then confirm that the derivative calculated\nusing this alternative method is the same as in part (a).\n\n(Bonus) You will receive one bonus mark for each different\ndifferentiation rule you use to differentiate $\\displaystyle f(x)$.", 
+    "statement_raw": "Rewrite &lt;math>f(x)&lt;/math> in such a way that you can differentiate it using a different rule than the Power Rule. Name the rule of differentiation which is applicable, and then confirm that the derivative calculated using this alternative method is the same as in part (a).\n\n(Bonus)  You will receive one bonus mark for each different differentiation rule you use to differentiate &lt;math> \\displaystyle f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule", 
+        "Limit_definition_of_the_derivative", 
+        "Logarithmic_differentiation", 
+        "Product_rule", 
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_03_(b)", 
+    "year": 2013
 }

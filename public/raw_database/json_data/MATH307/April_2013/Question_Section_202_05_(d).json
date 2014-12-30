@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_Section_202_05_(d)", 
+    "answer_html": "<p>hence dim(N(<span class=\"math\">\\(A^{T}\\)</span>)) = 1</p>\n", 
+    "answer_latex": "hence dim(N($A^{T}$)) = 1", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is the following \\emph{3 x 4} with\n\n\\begin{align*}A = \\begin{bmatrix}\n1 & 1 & 0 & 1 \\\\ 2 & 2 & 1 & 3 \\\\ 3 & 3 & 1 & 4\n\\end{bmatrix} \\quad \\mathrm{rref}(A) = \\begin{bmatrix}\n1 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 0 & 0 & 0\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(d)} What is the rank of \\emph{A} and\n\\emph{dim(N(A\\textsuperscript{T}))}?", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 202 05 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From part a) the rank of A (also written as r(A) is 2. (number of pivot columns)</p>\n<p>From the nullity theorem, dim(N(<span class=\"math\">\\(A^{T}\\)</span>)) = n-r(A)</p>\n<p>but n = 3</p>\n<p>r(A) = 2</p>\n<p>hence dim(N(<span class=\"math\">\\(A^{T}\\)</span>)) = 3-2 = 1</p>\n"
+    ], 
+    "sols_latex": [
         "From part a) the rank of A (also written as r(A) is 2. (number of pivot\ncolumns)\n\nFrom the nullity theorem, dim(N($A^{T}$)) = n-r(A)\n\nbut n = 3\n\nr(A) = 2\n\nhence dim(N($A^{T}$)) = 3-2 = 1"
     ], 
-    "hints": []
+    "sols_raw": [
+        "From part a) the rank of A (also written as r(A) is 2. (number of pivot columns) \n\nFrom the nullity theorem, dim(N(&lt;math>A^{T}&lt;/math>)) = n-r(A)\n\nbut n = 3\n\nr(A) = 2\n\nhence dim(N(&lt;math>A^{T}&lt;/math>)) = 3-2 = 1\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is the following <em>3 x 4</em> with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\begin{bmatrix}\n1 &amp; 1 &amp; 0 &amp; 1 \\\\ 2 &amp; 2 &amp; 1 &amp; 3 \\\\ 3 &amp; 3 &amp; 1 &amp; 4\n\\end{bmatrix} \\quad \\mathrm{rref}(A) = \\begin{bmatrix}\n1 &amp; 1 &amp; 0 &amp; 1 \\\\ 0 &amp; 0 &amp; 1 &amp; 1 \\\\ 0 &amp; 0 &amp; 0 &amp; 0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(d)</strong> What is the rank of <em>A</em> and <em>dim(N(A<sup>T</sup>))</em>?</p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is the following \\emph{3 x 4} with\n\n\\begin{align*}\nA = \\begin{bmatrix}\n1 & 1 & 0 & 1 \\\\ 2 & 2 & 1 & 3 \\\\ 3 & 3 & 1 & 4\n\\end{bmatrix} \\quad \\mathrm{rref}(A) = \\begin{bmatrix}\n1 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 1 \\\\ 0 & 0 & 0 & 0\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(d)} What is the rank of \\emph{A} and\n\\emph{dim(N(A\\textsuperscript{T}))}?", 
+    "statement_raw": "Suppose that ''A'' is the following ''3 x 4'' with\n\n:&lt;math>\nA = \\begin{bmatrix}\n1 &amp; 1 &amp; 0 &amp; 1 \\\\ 2 &amp; 2 &amp; 1 &amp; 3 \\\\ 3 &amp; 3 &amp; 1 &amp; 4\n\\end{bmatrix} \\quad \\mathrm{rref}(A) = \\begin{bmatrix}\n1 &amp; 1 &amp; 0 &amp; 1 \\\\ 0 &amp; 0 &amp; 1 &amp; 1 \\\\ 0 &amp; 0 &amp; 0 &amp; 0\n\\end{bmatrix}\n&lt;/math>\n\n'''(d)''' What is the rank of ''A'' and ''dim(N(A&lt;sup>T&lt;/sup>))''?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_202_05_(d)", 
+    "year": 2013
 }

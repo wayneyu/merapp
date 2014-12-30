@@ -1,15 +1,56 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH104", 
-    "statement": "Compute\n\n\\begin{align*}\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "The limit evaluates to the form 0/0,\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&= \\frac{16-12-4}{2-2}\\\\\n&= \\frac{0}{0}\\end{align*}\n\nwhich is undefined. However, notice that in the denominator we can get\nrid of the square root by multiplying top and bottom by the conjugate\n\n\\begin{align*}\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\cdot \\frac{\\sqrt{x}+2}{\\sqrt{x}+2}=\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}.\\end{align*}\n\nNow notice that the quadratic polynomial on the top can factor,\n\n\\begin{align*}\\displaystyle{}x^2-3x-4=(x-4)(x+1)\\end{align*}\n\nand therefore\n\n\\begin{align*}\n&\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}\\\\\n&=\\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1))(\\sqrt{x}+2)}{x-4}\\\\\n&=\\lim_{x\\rightarrow 4} (x+1)(\\sqrt{x}+2)\\\\\n&=20.\\end{align*}\n\nTherefore\n\n\\begin{align*}\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} =\\frac{4^2-3(4)-4}{\\sqrt{4}-2}=20.\\end{align*}", 
-        "The limit evaluates to the form 0/0,\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&= \\frac{16-12-4}{2-2}\\\\\n&= \\frac{0}{0}\\end{align*}\n\nwhich is undefined. 0/0 is a form for which we can apply l'Hospital's\nrule (if you know it):\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\lim_{x\\rightarrow 4} \\frac{\\frac{d}{dx}\\Big(x^2-3x-4\\Big)}{\\frac{d}{dx}\\Big(\\sqrt{x}-2\\Big)} \\\\\n&=\\lim_{x\\rightarrow 4} \\frac{2x-3}{\\frac{1}{2}x^{-1/2}} \\\\ \n&= \\frac{5}{\\frac{1}{2}4^{-1/2}} \\\\ \n&= \\frac{5}{1/4} \\\\ \n&= 20\\end{align*}", 
-        "We can be a bit clever and factor $x^2-3x-4 = (x-4)(x+1)$ then factor\n$x-4$ as a difference of squares where we think of $x$ as the square of\n$\\sqrt{x}$.\n\nHence\n\n\\begin{align*}x-4  = (\\sqrt{x}-2)(\\sqrt{x}+2).\\end{align*}\n\nCombining gives\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &= \\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1)}{\\sqrt{x}-2}\\\\\n&=\\lim_{x\\rightarrow 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)(x+1)}{\\sqrt{x}-2}\\\\\n&=\\lim_{x\\rightarrow 4} (\\sqrt{x}+2)(x+1)\\\\\n&=(\\sqrt{4}+2)(4+1)\\\\\n&=20\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}=20.\\)</span></p>\n", 
+    "answer_latex": " $\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}=20.$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "ErinMoulding", 
+        "IainMoyles", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How can we use conjugates to deal with the square root in the bottom?</p>\n"
+    ], 
+    "hints_latex": [
         "How can we use conjugates to deal with the square root in the bottom?"
-    ]
+    ], 
+    "hints_raw": [
+        "How can we use conjugates to deal with the square root in the bottom?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>The limit evaluates to the form 0/0,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&amp;= \\frac{16-12-4}{2-2}\\\\\n&amp;= \\frac{0}{0}\\end{aligned}\\]</span></p>\n<p>which is undefined. However, notice that in the denominator we can get rid of the square root by multiplying top and bottom by the conjugate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\cdot \\frac{\\sqrt{x}+2}{\\sqrt{x}+2}=\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}.\\end{aligned}\\]</span></p>\n<p>Now notice that the quadratic polynomial on the top can factor,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x^2-3x-4=(x-4)(x+1)\\end{aligned}\\]</span></p>\n<p>and therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}\\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1))(\\sqrt{x}+2)}{x-4}\\\\\n&amp;=\\lim_{x\\rightarrow 4} (x+1)(\\sqrt{x}+2)\\\\\n&amp;=20.\\end{aligned}\\]</span></p>\n<p>Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} =\\frac{4^2-3(4)-4}{\\sqrt{4}-2}=20.\\end{aligned}\\]</span></p>\n", 
+        "<p>The limit evaluates to the form 0/0,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&amp;= \\frac{16-12-4}{2-2}\\\\\n&amp;= \\frac{0}{0}\\end{aligned}\\]</span></p>\n<p>which is undefined. 0/0 is a form for which we can apply l&#8217;Hospital&#8217;s rule (if you know it):</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\lim_{x\\rightarrow 4} \\frac{\\frac{d}{dx}\\Big(x^2-3x-4\\Big)}{\\frac{d}{dx}\\Big(\\sqrt{x}-2\\Big)} \\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{2x-3}{\\frac{1}{2}x^{-1/2}} \\\\ \n&amp;= \\frac{5}{\\frac{1}{2}4^{-1/2}} \\\\ \n&amp;= \\frac{5}{1/4} \\\\ \n&amp;= 20\\end{aligned}\\]</span></p>\n", 
+        "<p>We can be a bit clever and factor <span class=\"math\">\\(x^2-3x-4 = (x-4)(x+1)\\)</span> then factor <span class=\"math\">\\(x-4\\)</span> as a difference of squares where we think of <span class=\"math\">\\(x\\)</span> as the square of <span class=\"math\">\\(\\sqrt{x}\\)</span>.</p>\n<p>Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx-4  = (\\sqrt{x}-2)(\\sqrt{x}+2).\\end{aligned}\\]</span></p>\n<p>Combining gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;= \\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1)}{\\sqrt{x}-2}\\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)(x+1)}{\\sqrt{x}-2}\\\\\n&amp;=\\lim_{x\\rightarrow 4} (\\sqrt{x}+2)(x+1)\\\\\n&amp;=(\\sqrt{4}+2)(4+1)\\\\\n&amp;=20\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The limit evaluates to the form 0/0,\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&= \\frac{16-12-4}{2-2}\\\\\n&= \\frac{0}{0}\n\\end{align*}\n\nwhich is undefined. However, notice that in the denominator we can get\nrid of the square root by multiplying top and bottom by the conjugate\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\cdot \\frac{\\sqrt{x}+2}{\\sqrt{x}+2}=\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}.\n\\end{align*}\n\nNow notice that the quadratic polynomial on the top can factor,\n\n\\begin{align*}\n\\displaystyle{}x^2-3x-4=(x-4)(x+1)\n\\end{align*}\n\nand therefore\n\n\\begin{align*}\n&\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}\\\\\n&=\\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1))(\\sqrt{x}+2)}{x-4}\\\\\n&=\\lim_{x\\rightarrow 4} (x+1)(\\sqrt{x}+2)\\\\\n&=20.\n\\end{align*}\n\nTherefore\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} =\\frac{4^2-3(4)-4}{\\sqrt{4}-2}=20.\n\\end{align*}", 
+        "The limit evaluates to the form 0/0,\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&= \\frac{16-12-4}{2-2}\\\\\n&= \\frac{0}{0}\n\\end{align*}\n\nwhich is undefined. 0/0 is a form for which we can apply l'Hospital's\nrule (if you know it):\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &=\\lim_{x\\rightarrow 4} \\frac{\\frac{d}{dx}\\Big(x^2-3x-4\\Big)}{\\frac{d}{dx}\\Big(\\sqrt{x}-2\\Big)} \\\\\n&=\\lim_{x\\rightarrow 4} \\frac{2x-3}{\\frac{1}{2}x^{-1/2}} \\\\ \n&= \\frac{5}{\\frac{1}{2}4^{-1/2}} \\\\ \n&= \\frac{5}{1/4} \\\\ \n&= 20\n\\end{align*}", 
+        "We can be a bit clever and factor $x^2-3x-4 = (x-4)(x+1)$ then factor\n$x-4$ as a difference of squares where we think of $x$ as the square of\n$\\sqrt{x}$.\n\nHence\n\n\\begin{align*}\nx-4  = (\\sqrt{x}-2)(\\sqrt{x}+2).\n\\end{align*}\n\nCombining gives\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &= \\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1)}{\\sqrt{x}-2}\\\\\n&=\\lim_{x\\rightarrow 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)(x+1)}{\\sqrt{x}-2}\\\\\n&=\\lim_{x\\rightarrow 4} (\\sqrt{x}+2)(x+1)\\\\\n&=(\\sqrt{4}+2)(4+1)\\\\\n&=20\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The limit evaluates to the form 0/0,\n\n:&lt;math>\\begin{align}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&amp;= \\frac{16-12-4}{2-2}\\\\\n&amp;= \\frac{0}{0}\n\\end{align}&lt;/math>\n\nwhich is undefined.  However, notice that in the denominator we can get rid of the square root by multiplying top and bottom by the conjugate\n\n:&lt;math>\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\cdot \\frac{\\sqrt{x}+2}{\\sqrt{x}+2}=\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}.\n&lt;/math>\n\nNow notice that the quadratic polynomial on the top can factor,\n\n:&lt;math>\n\\displaystyle{}x^2-3x-4=(x-4)(x+1)\n&lt;/math>\n\nand therefore\n\n:&lt;math>\n\\begin{align}\n&amp;\\lim_{x\\rightarrow 4} \\frac{(x^2-3x-4)(\\sqrt{x}+2)}{x-4}\\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1))(\\sqrt{x}+2)}{x-4}\\\\\n&amp;=\\lim_{x\\rightarrow 4} (x+1)(\\sqrt{x}+2)\\\\\n&amp;=20.\n\\end{align}\n&lt;/math>\n\nTherefore\n\n:&lt;math>\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} =\\frac{4^2-3(4)-4}{\\sqrt{4}-2}=20.\n&lt;/math>\n", 
+        "The limit evaluates to the form 0/0,\n\n:&lt;math>\\begin{align}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\frac{4^2-3(4)-4}{\\sqrt{4}-2}\\\\\n&amp;= \\frac{16-12-4}{2-2}\\\\\n&amp;= \\frac{0}{0}\n\\end{align}&lt;/math>\n\nwhich is undefined. 0/0 is a form for which we can apply l'Hospital's rule (if you know it):\n\n:&lt;math>\n\\begin{align}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;=\\lim_{x\\rightarrow 4} \\frac{\\frac{d}{dx}\\Big(x^2-3x-4\\Big)}{\\frac{d}{dx}\\Big(\\sqrt{x}-2\\Big)} \\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{2x-3}{\\frac{1}{2}x^{-1/2}} \\\\ \n&amp;= \\frac{5}{\\frac{1}{2}4^{-1/2}} \\\\ \n&amp;= \\frac{5}{1/4} \\\\ \n&amp;= 20\n\\end{align}\n&lt;/math>\n", 
+        "We can be a bit clever and factor &lt;math>x^2-3x-4 = (x-4)(x+1) &lt;/math> then factor &lt;math> x-4 &lt;/math> as a difference of squares where we think of &lt;math>x&lt;/math> as the square of &lt;math> \\sqrt{x} &lt;/math>. \n\nHence \n\n:&lt;math> x-4  = (\\sqrt{x}-2)(\\sqrt{x}+2) &lt;/math>. \n\nCombining gives\n\n:&lt;math>\n\\begin{align}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2} &amp;= \\lim_{x\\rightarrow 4} \\frac{(x-4)(x+1)}{\\sqrt{x}-2}\\\\\n&amp;=\\lim_{x\\rightarrow 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)(x+1)}{\\sqrt{x}-2}\\\\\n&amp;=\\lim_{x\\rightarrow 4} (\\sqrt{x}+2)(x+1)\\\\\n&amp;=(\\sqrt{4}+2)(4+1)\\\\\n&amp;=20\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Compute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Compute\n\n\\begin{align*}\n\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}\n\\end{align*}", 
+    "statement_raw": "Compute\n:&lt;math>\\lim_{x\\rightarrow 4} \\frac{x^2-3x-4}{\\sqrt{x}-2}&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(a)", 
+    "year": 2011
 }

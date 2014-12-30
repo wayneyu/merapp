@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)", 
-    "course": "MATH101", 
-    "statement": "Let $R$ be the finite region in the $xy$-plane bounded by $x = 0$,\n$y = 0$ and $y = \\cos x$.\\\\ (b) Express the volume of the solid obtained\nby rotating $R$ about the line $x = -2$ as an integral. \\emph{Do not\nevaluate the integral.}", 
-    "year": 2009, 
-    "sols": [
-        "A picture is included below. To solve this question, we need to use the\nmethod of left and right side integration. Recall the formula\n\n\\begin{align*}V = \\pi \\int_{a}^{b}((x_{R}+s)^{2} - (x_{L}+s)^{2})\\, dy\\end{align*}\n\nwhere we think of $x_{R}$ and $x_{L}$ as functions of \\emph{y} and the\n$s$ factor is the shifting factor (so basically this factor accounts for\nwhat line we are rotating over - the picture should make this clear).\nHere, the right most curve is $x_{R} = \\arccos(y)$ and the left most\ncurve is $x_{L} = 0$ and the $s$ factor in this case is \\emph{2}. The\nlast thing is the limits of integration. we know on the \\emph{x}-axis,\nfrom the previous problem, we were integrating from 0 to\n$\\tfrac{\\pi}{2}$. Here however we are integrating from the \\emph{y}-axis\nso we want to know when $\\cos(x)$ crosses the \\emph{y}-axis. This occurs\nwhen $y=1$. Thus, we have\n\n\\begin{align*}V = \\pi\\int_{0}^{1} ((\\arccos(y)+2)^{2}-(2)^{2})\\, dy = \\pi\\int_{0}^{1}((\\arccos(y))^{2} + 4\\arccos(y))\\, dy\\end{align*}\n\nTo challenge yourself, try showing the above is actually equal to\n$\\displaystyle \\pi^2+2\\pi$.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101Apr2009Q3b.jpeg}\n\\caption{MATH101Apr2009Q3b.jpeg}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH101/April_2009/MATH101Apr2009Q3b.jpeg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2009/MATH101Apr2009Q3b.jpeg}", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>By solving the first part of this problem, you should know the points of intersection. Drawing a picture will probably help.</p>\n", 
+        "<p>We are rotating about an axis parallel to the <em>y</em>-axis</p>\n", 
+        "<p>Try modifying the formula</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\pi \\int_{a}^{b}(x_{R}^{2} - x_{L}^{2}) \\, dy\\end{aligned}\\]</span></p>\n<p>(Note: this entire problem can also be solved by interchanging the <em>x</em> and <em>y</em> variables)</p>\n"
+    ], 
+    "hints_latex": [
         "By solving the first part of this problem, you should know the points of\nintersection. Drawing a picture will probably help.", 
         "We are rotating about an axis parallel to the \\emph{y}-axis", 
-        "Try modifying the formula\n\n\\begin{align*}\\pi \\int_{a}^{b}(x_{R}^{2} - x_{L}^{2}) \\, dy\\end{align*}\n\n(Note: this entire problem can also be solved by interchanging the\n\\emph{x} and \\emph{y} variables)"
-    ]
+        "Try modifying the formula\n\n\\begin{align*}\n\\pi \\int_{a}^{b}(x_{R}^{2} - x_{L}^{2}) \\, dy\n\\end{align*}\n\n(Note: this entire problem can also be solved by interchanging the\n\\emph{x} and \\emph{y} variables)"
+    ], 
+    "hints_raw": [
+        "By solving the first part of this problem, you should know the points of intersection. Drawing a picture will probably help.\n", 
+        "We are rotating about an axis parallel to the ''y''-axis\n", 
+        "Try modifying the formula\n\n:&lt;math>\n\\pi \\int_{a}^{b}(x_{R}^{2} - x_{L}^{2}) \\, dy\n&lt;/math>\n\n(Note: this entire problem can also be solved by interchanging the ''x'' and ''y'' variables)\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3 (b)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>A picture is included below. To solve this question, we need to use the method of left and right side integration. Recall the formula</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV = \\pi \\int_{a}^{b}((x_{R}+s)^{2} - (x_{L}+s)^{2})\\, dy\\end{aligned}\\]</span></p>\n<p>where we think of <span class=\"math\">\\(x_{R}\\)</span> and <span class=\"math\">\\(x_{L}\\)</span> as functions of <em>y</em> and the <span class=\"math\">\\(s\\)</span> factor is the shifting factor (so basically this factor accounts for what line we are rotating over - the picture should make this clear). Here, the right most curve is <span class=\"math\">\\(x_{R} = \\arccos(y)\\)</span> and the left most curve is <span class=\"math\">\\(x_{L} = 0\\)</span> and the <span class=\"math\">\\(s\\)</span> factor in this case is <em>2</em>. The last thing is the limits of integration. we know on the <em>x</em>-axis, from the previous problem, we were integrating from 0 to <span class=\"math\">\\(\\tfrac{\\pi}{2}\\)</span>. Here however we are integrating from the <em>y</em>-axis so we want to know when <span class=\"math\">\\(\\cos(x)\\)</span> crosses the <em>y</em>-axis. This occurs when <span class=\"math\">\\(y=1\\)</span>. Thus, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV = \\pi\\int_{0}^{1} ((\\arccos(y)+2)^{2}-(2)^{2})\\, dy = \\pi\\int_{0}^{1}((\\arccos(y))^{2} + 4\\arccos(y))\\, dy\\end{aligned}\\]</span></p>\n<p>To challenge yourself, try showing the above is actually equal to <span class=\"math\">\\(\\displaystyle \\pi^2+2\\pi\\)</span>.</p>\n<p><img src=\"../json_data/MATH101/April_2009/MATH101Apr2009Q3b.jpeg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "A picture is included below. To solve this question, we need to use the\nmethod of left and right side integration. Recall the formula\n\n\\begin{align*}\nV = \\pi \\int_{a}^{b}((x_{R}+s)^{2} - (x_{L}+s)^{2})\\, dy\n\\end{align*}\n\nwhere we think of $x_{R}$ and $x_{L}$ as functions of \\emph{y} and the\n$s$ factor is the shifting factor (so basically this factor accounts for\nwhat line we are rotating over - the picture should make this clear).\nHere, the right most curve is $x_{R} = \\arccos(y)$ and the left most\ncurve is $x_{L} = 0$ and the $s$ factor in this case is \\emph{2}. The\nlast thing is the limits of integration. we know on the \\emph{x}-axis,\nfrom the previous problem, we were integrating from 0 to\n$\\tfrac{\\pi}{2}$. Here however we are integrating from the \\emph{y}-axis\nso we want to know when $\\cos(x)$ crosses the \\emph{y}-axis. This occurs\nwhen $y=1$. Thus, we have\n\n\\begin{align*}\nV = \\pi\\int_{0}^{1} ((\\arccos(y)+2)^{2}-(2)^{2})\\, dy = \\pi\\int_{0}^{1}((\\arccos(y))^{2} + 4\\arccos(y))\\, dy\n\\end{align*}\n\nTo challenge yourself, try showing the above is actually equal to\n$\\displaystyle \\pi^2+2\\pi$.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2009/MATH101Apr2009Q3b.jpeg}"
+    ], 
+    "sols_raw": [
+        "A picture is included below. To solve this question, we need to use the method of left and right side integration. Recall the formula\n\n:&lt;math>\nV = \\pi \\int_{a}^{b}((x_{R}+s)^{2} - (x_{L}+s)^{2})\\, dy\n&lt;/math>\n \nwhere we think of &lt;math> x_{R} &lt;/math> and &lt;math> x_{L} &lt;/math> as functions of ''y'' and the &lt;math>s &lt;/math> factor is the shifting factor (so basically this factor accounts for what line we are rotating over - the picture should make this clear). Here, the right most curve is &lt;math> x_{R} = \\arccos(y) &lt;/math> and the left most curve is &lt;math> x_{L} = 0 &lt;/math> and the &lt;math>s &lt;/math> factor in this case is ''2''. The last thing is the limits of integration. we know on the ''x''-axis, from the previous problem, we were integrating from 0 to &lt;math> \\tfrac{\\pi}{2} &lt;/math>. Here however we are integrating from the ''y''-axis so we want to know when &lt;math> \\cos(x) &lt;/math> crosses the ''y''-axis. This occurs when &lt;math> y=1 &lt;/math>. Thus, we have\n\n:&lt;math>\nV = \\pi\\int_{0}^{1} ((\\arccos(y)+2)^{2}-(2)^{2})\\, dy = \\pi\\int_{0}^{1}((\\arccos(y))^{2} + 4\\arccos(y))\\, dy\n&lt;/math>\n\nTo challenge yourself, try showing the above is actually equal to &lt;math> \\displaystyle \\pi^2+2\\pi &lt;/math>.\n\n[[File:MATH101Apr2009Q3b.jpeg]]\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(R\\)</span> be the finite region in the <span class=\"math\">\\(xy\\)</span>-plane bounded by <span class=\"math\">\\(x = 0\\)</span>, <span class=\"math\">\\(y = 0\\)</span> and <span class=\"math\">\\(y = \\cos x\\)</span>.<br />(b) Express the volume of the solid obtained by rotating <span class=\"math\">\\(R\\)</span> about the line <span class=\"math\">\\(x = -2\\)</span> as an integral. <em>Do not evaluate the integral.</em></p>\n", 
+    "statement_latex": "Let $R$ be the finite region in the $xy$-plane bounded by $x = 0$,\n$y = 0$ and $y = \\cos x$.\\\\ (b) Express the volume of the solid obtained\nby rotating $R$ about the line $x = -2$ as an integral. \\emph{Do not\nevaluate the integral.}", 
+    "statement_raw": "Let &lt;math>R&lt;/math> be the finite region in the &lt;math>xy&lt;/math>-plane bounded by &lt;math>x = 0&lt;/math>, &lt;math>y = 0&lt;/math> and &lt;math>y = \\cos x&lt;/math>. &lt;br />\n\n(b) Express the volume of the solid obtained by rotating &lt;math>R&lt;/math> about the line &lt;math>x = -2&lt;/math> as an\nintegral. ''Do not evaluate the integral.''\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_03_(b)", 
+    "year": 2009
 }

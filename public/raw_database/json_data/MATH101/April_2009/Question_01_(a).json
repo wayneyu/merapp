@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH101", 
-    "statement": "Evaluate\n\n\\begin{align*}\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\\end{align*}", 
-    "year": 2009, 
-    "sols": [
-        "If we simply spit the fraction in two, we obtain simple terms that we an\neasily integrate.\n\n\\begin{align*}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx=6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\\)</span></p>\n", 
+    "answer_latex": " $\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx=6x^{1/2}+ \\frac{2}{11}x^{11/2} +C$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "Konradbe", 
+        "MikeL", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Split into two terms.</p>\n"
+    ], 
+    "hints_latex": [
         "Split into two terms."
-    ]
+    ], 
+    "hints_raw": [
+        "Split into two terms.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>If we simply spit the fraction in two, we obtain simple terms that we an easily integrate.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &amp;=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&amp;= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "If we simply spit the fraction in two, we obtain simple terms that we an\neasily integrate.\n\n\\begin{align*}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "If we simply spit the fraction in two, we obtain simple terms that we an easily integrate.\n:&lt;math>\\begin{align}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx &amp;=\\int 3x^{-1/2}+x^{9/2} \\,dx\\\\\n&amp;= 6x^{1/2}+ \\frac{2}{11}x^{11/2} +C\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Evaluate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Evaluate\n\n\\begin{align*}\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\n\\end{align*}", 
+    "statement_raw": "Evaluate\n:&lt;math>\n\\int \\frac{3+x^5}{\\sqrt{x}}\\,dx.\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(a)", 
+    "year": 2009
 }

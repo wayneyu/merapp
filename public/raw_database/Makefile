@@ -19,12 +19,12 @@ clean:
 ## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
 upload_mongo_only:
 	mongodump --db merdb --collection questions --out ~/tmp
-	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/
+	mongorestore --username $MERWEBAPP_MONGODB_USERNAME --password $MERWEBAPP_MONGODB_PASS --host $MERWEBAPP_MONGODB_HOST --db $MERWEBAPP_MONGODB_USERNAME ~/tmp/merdb/
 
 ## upload_mongo: updates online mongo db from local mongo db
 upload_mongo: update_mongo_locally
 	mongodump --db merdb --collection questions --out ~/tmp
-	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/
+	mongorestore --username $MERWEBAPP_MONGODB_USERNAME --password $MERWEBAPP_MONGODB_PASS --host $MERWEBAPP_MONGODB_HOST --db $MERWEBAPP_MONGODB_USERNAME ~/tmp/merdb/
 
 ## upload_mongo_locally_only: updates local mongo db WITHOUT refreshing questions locally
 update_mongo_locally_only: import2mongo.sh

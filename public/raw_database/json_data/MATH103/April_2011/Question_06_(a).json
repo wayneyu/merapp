@@ -1,14 +1,56 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
-    "course": "MATH103", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dx} = (y^2-1)x.\\end{align*} Find the steady state solution(s).", 
-    "year": 2011, 
-    "sols": [
-        "The steady state solutions are solutions to the differential equation\nthat are constant. That is, $y(x) = \\rm{constant}$. For this to be\npossible, the derivative of $y$ has to be zero.\n\nTherefore, to be consistent with the differential equation, we have that\n\n$0 = (y^{2} - 1)x$.\n\nFor this equation to be true, we require that $y = \\pm 1$ or $x = 0$.\nSince $x = 0$ does not fit the definition of a steady state solution, we\nare left with the steady solutions $y = \\pm 1$."
+    "answer_html": "<p>For this equation to be true, we require that <span class=\"math\">\\(y = \\pm 1\\)</span> or <span class=\"math\">\\(x = 0\\)</span>. Since <span class=\"math\">\\(x = 0\\)</span> does not fit the definition of a steady state solution, we are left with the steady solutions <span class=\"math\">\\(y = \\pm 1\\)</span>.</p>\n", 
+    "answer_latex": "For this equation to be true, we require that $y = \\pm 1$ or $x = 0$.\nSince $x = 0$ does not fit the definition of a steady state solution, we\nare left with the steady solutions $y = \\pm 1$.", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IsabellGraf", 
+        "SimonRose", 
+        "Konradbe", 
+        "CindyBlois"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A solution <span class=\"math\">\\(y(x)\\)</span> is called &#8220;steady-state&#8221; if it is constant (i.e. if there is some <span class=\"math\">\\(C\\)</span> such that <span class=\"math\">\\(y(x)=C\\)</span> for all <span class=\"math\">\\(x\\)</span>).</p>\n", 
+        "<p>What is the derivative <span class=\"math\">\\(dy/dx\\)</span> of a <em>steady state solution</em>?</p>\n"
+    ], 
+    "hints_latex": [
         "A solution $y(x)$ is called ``steady-state'' if it is constant (i.e. if\nthere is some $C$ such that $y(x)=C$ for all $x$).", 
         "What is the derivative $dy/dx$ of a \\emph{steady state solution}?"
-    ]
+    ], 
+    "hints_raw": [
+        "A solution &lt;math>y(x) &lt;/math> is called \"steady-state\" if it is constant (i.e. if there is some &lt;math>C &lt;/math> such that &lt;math>y(x)=C &lt;/math> for all &lt;math>x &lt;/math>).\n", 
+        "What is the derivative &lt;math>dy/dx&lt;/math> of a ''steady state solution''?\n"
+    ], 
+    "num_votes": 6, 
+    "question": "6 (a)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>The steady state solutions are solutions to the differential equation that are constant. That is, <span class=\"math\">\\(y(x) = \\rm{constant}\\)</span>. For this to be possible, the derivative of <span class=\"math\">\\(y\\)</span> has to be zero.</p>\n<p>Therefore, to be consistent with the differential equation, we have that</p>\n<p><span class=\"math\">\\(0 = (y^{2} - 1)x\\)</span>.</p>\n<p>For this equation to be true, we require that <span class=\"math\">\\(y = \\pm 1\\)</span> or <span class=\"math\">\\(x = 0\\)</span>. Since <span class=\"math\">\\(x = 0\\)</span> does not fit the definition of a steady state solution, we are left with the steady solutions <span class=\"math\">\\(y = \\pm 1\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The steady state solutions are solutions to the differential equation\nthat are constant. That is, $y(x) = \\rm{constant}$. For this to be\npossible, the derivative of $y$ has to be zero.\n\nTherefore, to be consistent with the differential equation, we have that\n\n$0 = (y^{2} - 1)x$.\n\nFor this equation to be true, we require that $y = \\pm 1$ or $x = 0$.\nSince $x = 0$ does not fit the definition of a steady state solution, we\nare left with the steady solutions $y = \\pm 1$."
+    ], 
+    "sols_raw": [
+        "The steady state solutions are solutions to the differential equation that are constant.  That is, &lt;math> y(x) = \\rm{constant}&lt;/math>.  For this to be possible, the derivative of &lt;math> y &lt;/math> has to be zero. \n\nTherefore, to be consistent with the differential equation, we have that \n\n&lt;math> 0 = (y^{2} - 1)x &lt;/math>.\n\nFor this equation to be true, we require that &lt;math> y = \\pm 1&lt;/math> or &lt;math> x = 0&lt;/math>.  Since &lt;math> x = 0&lt;/math> does not fit the definition of a steady state solution, we are left with the steady solutions &lt;math> y = \\pm 1&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CameronChristou"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = (y^2-1)x.\\end{aligned}\\]</span></p>\n<p>Find the steady state solution(s).</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dx} = (y^2-1)x.\n\\end{align*} Find the steady state solution(s).", 
+    "statement_raw": "Consider the differential equation\n:&lt;math> \\frac{dy}{dx} = (y^2-1)x. &lt;/math>\nFind the steady state solution(s).\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Steady_states"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_06_(a)", 
+    "year": 2011
 }

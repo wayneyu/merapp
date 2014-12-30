@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
+    "answer_html": "<p>therefore, cond(A) = 2</p>\n", 
+    "answer_latex": "therefore, cond(A) = 2", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Find the norm and condition number of\n\n\\begin{align*}\\begin{bmatrix}\n0  & 2 \\\\ 1 & 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 & 1 \\\\ 1 & 0\n\\end{bmatrix} \\begin{bmatrix}\n1 & 0 \\\\ 0 & 2\n\\end{bmatrix} \\right)\\end{align*}", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What special kind of matrix is <span class=\"math\">\\(\\begin{bmatrix}0 &amp; 1 \\\\ 1 &amp; 0 \\end{bmatrix}\\)</span>? What is the norm of this kind of matrix? How can this help you?</p>\n"
+    ], 
+    "hints_latex": [
+        "What special kind of matrix is\n$\\begin{bmatrix}0 & 1 \\\\ 1 & 0 \\end{bmatrix}$? What is the norm of this\nkind of matrix? How can this help you?"
+    ], 
+    "hints_raw": [
+        "What special kind of matrix is &lt;math> \\begin{bmatrix}0 &amp; 1 \\\\ 1 &amp; 0 \\end{bmatrix} &lt;/math>? What is the norm of this kind of matrix? How can this help you?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(A = \\begin{bmatrix} \n0 &amp; 2 \\\\ \n1 &amp; 0\n\\end{bmatrix}, U = \\begin{bmatrix}\n0 &amp;1 \\\\ \n1&amp; 0\n\\end{bmatrix}, B = \\begin{bmatrix}\n1 &amp; 0\\\\ \n0&amp; 2\n\\end{bmatrix}\\)</span></p>\n<p>Observe that <span class=\"math\">\\(U^{-1}\\)</span> = <span class=\"math\">\\(U^{T}\\)</span> and all entries are real, so U is an orthogonal matrix. This means that <span class=\"math\">\\(\\begin{Vmatrix}U\\end{Vmatrix}\\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}A\\end{Vmatrix}\\)</span></p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}B\\end{Vmatrix} = 2\\)</span></p>\n<p>because the norm of a diagonal matrix is the entry with the largest magnitude.</p>\n<p>and therefore, <span class=\"math\">\\(\\begin{Vmatrix}A\\end{Vmatrix} = 2\\)</span>.</p>\n<p>Next, notice that</p>\n<p><span class=\"math\">\\(\\displaystyle A^{-1} = B^{-1}U^{-1} = B^{-1} U\\)</span></p>\n<p>Once again, since U is orthogonal,</p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = \\begin{Vmatrix}B^{-1}\\end{Vmatrix}\\)</span></p>\n<p>As</p>\n<p><span class=\"math\">\\(B^{-1} = \\begin{bmatrix}1 &amp;&amp; 0 \\\\ 0 &amp;&amp; 1/2\\end{bmatrix}\\)</span></p>\n<p>we have that <span class=\"math\">\\(\\begin{Vmatrix}B^{-1}\\end{Vmatrix} = 1\\)</span>. Thus</p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}A\\end{Vmatrix}\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = 2\\cdot 1 = 2\\)</span></p>\n<p>therefore, cond(A) = 2</p>\n"
+    ], 
+    "sols_latex": [
         "Let $A = \\begin{bmatrix} \n0 & 2 \\\\ \n1 & 0\n\\end{bmatrix}, U = \\begin{bmatrix}\n0 &1 \\\\ \n1& 0\n\\end{bmatrix}, B = \\begin{bmatrix}\n1 & 0\\\\ \n0& 2\n\\end{bmatrix}$\n\nObserve that $U^{-1}$ = $U^{T}$ and all entries are real, so U is an\northogonal matrix. This means that\n$\\begin{Vmatrix}U\\end{Vmatrix}\\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}A\\end{Vmatrix}$\n\n$\\begin{Vmatrix}B\\end{Vmatrix} = 2$\n\nbecause the norm of a diagonal matrix is the entry with the largest\nmagnitude.\n\nand therefore, $\\begin{Vmatrix}A\\end{Vmatrix} = 2$.\n\nNext, notice that\n\n$\\displaystyle A^{-1} = B^{-1}U^{-1} = B^{-1} U$\n\nOnce again, since U is orthogonal,\n\n$\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = \\begin{Vmatrix}B^{-1}\\end{Vmatrix}$\n\nAs\n\n$B^{-1} = \\begin{bmatrix}1 && 0 \\\\ 0 && 1/2\\end{bmatrix}$\n\nwe have that $\\begin{Vmatrix}B^{-1}\\end{Vmatrix} = 1$. Thus\n\n$\\begin{Vmatrix}A\\end{Vmatrix}\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = 2\\cdot 1 = 2$\n\ntherefore, cond(A) = 2"
     ], 
-    "hints": [
-        "What special kind of matrix is\n$\\begin{bmatrix}0 & 1 \\\\ 1 & 0 \\end{bmatrix}$? What is the norm of this\nkind of matrix? How can this help you?"
-    ]
+    "sols_raw": [
+        "Let &lt;math>A = \\begin{bmatrix} \n0 &amp; 2 \\\\ \n1 &amp; 0\n\\end{bmatrix}, U = \\begin{bmatrix}\n0 &amp;1 \\\\ \n1&amp; 0\n\\end{bmatrix}, B = \\begin{bmatrix}\n1 &amp; 0\\\\ \n0&amp; 2\n\\end{bmatrix}&lt;/math>\n\nObserve that &lt;math>U^{-1}&lt;/math> = &lt;math>U^{T}&lt;/math> and all entries are real, so U is an orthogonal matrix. This means that &lt;math>\\begin{Vmatrix}U\\end{Vmatrix}\\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}B\\end{Vmatrix} = \\begin{Vmatrix}A\\end{Vmatrix}&lt;/math>\n\n&lt;math>\\begin{Vmatrix}B\\end{Vmatrix} = 2&lt;/math>\n\nbecause the norm of a diagonal matrix is the entry with the largest magnitude.\n\nand therefore, &lt;math>\\begin{Vmatrix}A\\end{Vmatrix} = 2&lt;/math>.\n\nNext, notice that\n\n&lt;math>\\displaystyle A^{-1} = B^{-1}U^{-1} = B^{-1} U&lt;/math>\n\nOnce again, since U is orthogonal,\n\n\n&lt;math> \\begin{Vmatrix}A^{-1}\\end{Vmatrix} = \\begin{Vmatrix}B^{-1}\\end{Vmatrix}&lt;/math>\n\nAs\n\n&lt;math>B^{-1} = \\begin{bmatrix}1 &amp;&amp; 0 \\\\ 0 &amp;&amp; 1/2\\end{bmatrix}&lt;/math>\n\nwe have that &lt;math>\\begin{Vmatrix}B^{-1}\\end{Vmatrix} = 1&lt;/math>. Thus\n\n&lt;math>\\begin{Vmatrix}A\\end{Vmatrix}\\begin{Vmatrix}A^{-1}\\end{Vmatrix} = 2\\cdot 1 = 2&lt;/math>\n\ntherefore, cond(A) = 2\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the norm and condition number of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n0  &amp; 2 \\\\ 1 &amp; 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 &amp; 1 \\\\ 1 &amp; 0\n\\end{bmatrix} \\begin{bmatrix}\n1 &amp; 0 \\\\ 0 &amp; 2\n\\end{bmatrix} \\right)\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the norm and condition number of\n\n\\begin{align*}\n\\begin{bmatrix}\n0  & 2 \\\\ 1 & 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 & 1 \\\\ 1 & 0\n\\end{bmatrix} \\begin{bmatrix}\n1 & 0 \\\\ 0 & 2\n\\end{bmatrix} \\right)\n\\end{align*}", 
+    "statement_raw": "Find the norm and condition number of\n:&lt;math>\n\\begin{bmatrix}\n0  &amp; 2 \\\\ 1 &amp; 0\n\\end{bmatrix} = \\left( \\begin{bmatrix}\n0 &amp; 1 \\\\ 1 &amp; 0\n\\end{bmatrix} \\begin{bmatrix}\n1 &amp; 0 \\\\ 0 &amp; 2\n\\end{bmatrix} \\right)\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Condition_number", 
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_01_(d)", 
+    "year": 2013
 }

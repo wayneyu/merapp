@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle t = \\frac{\\ln(3)}{16}\\)</span>and this completes the problem.</p>\n", 
+    "answer_latex": "$\\displaystyle t = \\frac{\\ln(3)}{16}$and this completes the problem.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH101", 
-    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nThe population of fish in a lake is \\emph{m} million, where $m = m(t)$\nvaries with time \\emph{t} measured in years. The number of fish is\ncurrently 2 million.\n\nSuppose \\emph{m} satisfies the logistic-growth differential equation\n\n$\\frac{dm}{dt} = 16m \\left(1 - \\frac{m}{4} \\right)$\n\nWhen will the number of fish equal 3 million? You may use the fact that\nthe general solution to the logistic-growth differential equation\n$y' = ky(1-(y/K))$ is $y = K/(1 + Ae^{-kt})$ where \\emph{A} is constant.", 
-    "year": 2007, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First solve for the constant <em>A</em> using the initial condition <span class=\"math\">\\(m(0) = 2\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "First solve for the constant \\emph{A} using the initial condition\n$m(0) = 2$"
+    ], 
+    "hints_raw": [
+        "First solve for the constant ''A'' using the initial condition &lt;math> m(0) = 2 &lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>With <span class=\"math\">\\(k=16\\)</span> and <span class=\"math\">\\(K = 4\\)</span>, we know from the problem that</p>\n<p><span class=\"math\">\\(m(t) = \\frac{4}{1 + Ae^{-16t}}\\)</span></p>\n<p>Solving for <em>A</em>, we use the fact that <span class=\"math\">\\(m(0) = 2\\)</span> and see that</p>\n<p><span class=\"math\">\\(2 = m(0) =  \\frac{4}{1 + Ae^{-16(0)}} = \\frac{4}{1 + A}\\)</span></p>\n<p>Cross multiplying, we see that</p>\n<p><span class=\"math\">\\(\\displaystyle 2+2A = 4\\)</span></p>\n<p>and solving gives <span class=\"math\">\\(A = 1\\)</span>. Thus, we have</p>\n<p><span class=\"math\">\\(m(t) = \\frac{4}{1 + e^{-16t}}\\)</span>.</p>\n<p>We want to solve for <em>t</em> when <span class=\"math\">\\(m(t) = 3\\)</span>. Plugging this in yields</p>\n<p><span class=\"math\">\\(3 = \\frac{4}{1 + e^{-16t}}\\)</span></p>\n<p>Cross multiplying, we see that</p>\n<p><span class=\"math\">\\(\\displaystyle 3 + 3e^{-16t} = 4\\)</span></p>\n<p>Bringing the 3 over and dividing by 3 yields</p>\n<p><span class=\"math\">\\(\\displaystyle e^{-16t} = \\frac{1}{3}\\)</span></p>\n<p>Taking logarithms and then dividing by -16 gives</p>\n<p><span class=\"math\">\\(\\displaystyle t = \\frac{-\\ln(\\frac{1}{3})}{16} = \\frac{\\ln(3)}{16}\\)</span></p>\n<p>and this completes the problem.</p>\n"
+    ], 
+    "sols_latex": [
         "With $k=16$ and $K = 4$, we know from the problem that\n\n$m(t) = \\frac{4}{1 + Ae^{-16t}}$\n\nSolving for \\emph{A}, we use the fact that $m(0) = 2$ and see that\n\n$2 = m(0) =  \\frac{4}{1 + Ae^{-16(0)}} = \\frac{4}{1 + A}$\n\nCross multiplying, we see that\n\n$\\displaystyle 2+2A = 4$\n\nand solving gives $A = 1$. Thus, we have\n\n$m(t) = \\frac{4}{1 + e^{-16t}}$.\n\nWe want to solve for \\emph{t} when $m(t) = 3$. Plugging this in yields\n\n$3 = \\frac{4}{1 + e^{-16t}}$\n\nCross multiplying, we see that\n\n$\\displaystyle 3 + 3e^{-16t} = 4$\n\nBringing the 3 over and dividing by 3 yields\n\n$\\displaystyle e^{-16t} = \\frac{1}{3}$\n\nTaking logarithms and then dividing by -16 gives\n\n$\\displaystyle t = \\frac{-\\ln(\\frac{1}{3})}{16} = \\frac{\\ln(3)}{16}$\n\nand this completes the problem."
     ], 
-    "hints": [
-        "First solve for the constant \\emph{A} using the initial condition\n$m(0) = 2$"
-    ]
+    "sols_raw": [
+        "With &lt;math> k=16 &lt;/math> and &lt;math> K = 4 &lt;/math>, we know from the problem that\n\n&lt;math> m(t) = \\frac{4}{1 + Ae^{-16t}} &lt;/math>\n\nSolving for ''A'', we use the fact that &lt;math> m(0) = 2 &lt;/math> and see that\n\n&lt;math> 2 = m(0) =  \\frac{4}{1 + Ae^{-16(0)}} = \\frac{4}{1 + A} &lt;/math>\n\nCross multiplying, we see that\n\n&lt;math> \\displaystyle 2+2A = 4 &lt;/math>\n\nand solving gives &lt;math> A = 1 &lt;/math>. Thus, we have\n\n&lt;math> m(t) = \\frac{4}{1 + e^{-16t}} &lt;/math>.\n\nWe want to solve for ''t'' when &lt;math> m(t) = 3 &lt;/math>. Plugging this in yields\n\n&lt;math> 3 = \\frac{4}{1 + e^{-16t}} &lt;/math>\n\nCross multiplying, we see that\n\n&lt;math> \\displaystyle 3 + 3e^{-16t} = 4 &lt;/math>\n\nBringing the 3 over and dividing by 3 yields\n\n&lt;math> \\displaystyle e^{-16t} = \\frac{1}{3} &lt;/math>\n\nTaking logarithms and then dividing by -16 gives\n\n&lt;math> \\displaystyle t = \\frac{-\\ln(\\frac{1}{3})}{16} = \\frac{\\ln(3)}{16}&lt;/math>\n\nand this completes the problem.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>The population of fish in a lake is <em>m</em> million, where <span class=\"math\">\\(m = m(t)\\)</span> varies with time <em>t</em> measured in years. The number of fish is currently 2 million.</p>\n<p>Suppose <em>m</em> satisfies the logistic-growth differential equation</p>\n<p><span class=\"math\">\\(\\frac{dm}{dt} = 16m \\left(1 - \\frac{m}{4} \\right)\\)</span></p>\n<p>When will the number of fish equal 3 million? You may use the fact that the general solution to the logistic-growth differential equation <span class=\"math\">\\(y&#39; = ky(1-(y/K))\\)</span> is <span class=\"math\">\\(y = K/(1 + Ae^{-kt})\\)</span> where <em>A</em> is constant.</p>\n", 
+    "statement_latex": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\nThe population of fish in a lake is \\emph{m} million, where $m = m(t)$\nvaries with time \\emph{t} measured in years. The number of fish is\ncurrently 2 million.\n\nSuppose \\emph{m} satisfies the logistic-growth differential equation\n\n$\\frac{dm}{dt} = 16m \\left(1 - \\frac{m}{4} \\right)$\n\nWhen will the number of fish equal 3 million? You may use the fact that\nthe general solution to the logistic-growth differential equation\n$y' = ky(1-(y/K))$ is $y = K/(1 + Ae^{-kt})$ where \\emph{A} is constant.", 
+    "statement_raw": "&lt;b> Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\nThe population of fish in a lake is ''m'' million, where &lt;math> m = m(t) &lt;/math> varies with time ''t'' measured in years. The number of fish is currently 2 million.\n\nSuppose ''m'' satisfies the logistic-growth differential equation\n\n&lt;math> \n\\frac{dm}{dt} = 16m \\left(1 - \\frac{m}{4} \\right)\n&lt;/math>\n\nWhen will the number of fish equal 3 million? You may use the fact that the general solution to the logistic-growth differential equation &lt;math> y' = ky(1-(y/K)) &lt;/math> is &lt;math> y = K/(1 + Ae^{-kt}) &lt;/math> where ''A'' is constant.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_06_(a)", 
+    "year": 2007
 }

@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_03_(d)", 
+    "answer_html": "<p><span class=\"math\">\\(\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}\\)</span>as required.</p>\n", 
+    "answer_latex": "$\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}$as required.", 
+    "contributors": [
+        "Konradbe", 
+        "IsabellGraf"
+    ], 
     "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral\\begin{align*}\\int_0^3 x\\sqrt{81-x^4}\\,dx.\\end{align*}\n\nHint: Use a substitution and interpret the result as an area.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try the substitution <span class=\"math\">\\(u = x^{2}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Try the substitution $u = x^{2}$."
+    ], 
+    "hints_raw": [
+        "Try the substitution &lt;math> u = x^{2} &lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3 (d)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>Following the hint, we try the substitution <span class=\"math\">\\(u = x^{2}\\)</span>. Then <span class=\"math\">\\(du = 2xdx\\)</span> and the endpoints will change to <span class=\"math\">\\(u(0) = 0^{2} = 0\\)</span> and <span class=\"math\">\\(u(3) = 3^{2} = 9\\)</span>. Hence</p>\n<p><span class=\"math\">\\(\\int_0^3 x\\sqrt{81-x^4}\\,dx. = \\frac{1}{2} \\int_{0}^{9}\\sqrt{81-u^{2}}\\, du\\)</span></p>\n<p>This last value can be seen to be half the area of a quarter circle of radius 9. Hence, the value is</p>\n<p><span class=\"math\">\\(\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}\\)</span></p>\n<p>as required.</p>\n"
+    ], 
+    "sols_latex": [
         "Following the hint, we try the substitution $u = x^{2}$. Then\n$du = 2xdx$ and the endpoints will change to $u(0) = 0^{2} = 0$ and\n$u(3) = 3^{2} = 9$. Hence\n\n$\\int_0^3 x\\sqrt{81-x^4}\\,dx. = \\frac{1}{2} \\int_{0}^{9}\\sqrt{81-u^{2}}\\, du$\n\nThis last value can be seen to be half the area of a quarter circle of\nradius 9. Hence, the value is\n\n$\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}$\n\nas required."
     ], 
-    "hints": [
-        "Try the substitution $u = x^{2}$."
-    ]
+    "sols_raw": [
+        "Following the hint, we try the substitution &lt;math> u = x^{2} &lt;/math>. Then &lt;math> du = 2xdx &lt;/math> and the endpoints will change to &lt;math> u(0) = 0^{2} = 0 &lt;/math> and &lt;math> u(3) = 3^{2} = 9 &lt;/math>. Hence\n\n&lt;math> \n\\int_0^3 x\\sqrt{81-x^4}\\,dx. = \\frac{1}{2} \\int_{0}^{9}\\sqrt{81-u^{2}}\\, du\n&lt;/math>\n\nThis last value can be seen to be half the area of a quarter circle of radius 9. Hence, the value is \n\n&lt;math>\n\\frac{1}{2} \\cdot \\frac{\\pi(9)^{2}}{4} = \\frac{81\\pi}{8}\n&lt;/math>\n\nas required.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answer and <strong>show all your work.</strong> Simplification of the answer is not required.</p>\n<p>Evaluate the following integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^3 x\\sqrt{81-x^4}\\,dx.\\end{aligned}\\]</span></p>\n<p>Hint: Use a substitution and interpret the result as an area.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work.} Simplification of the answer is not required.\n\nEvaluate the following integral\\begin{align*}\n\\int_0^3 x\\sqrt{81-x^4}\\,dx.\n\\end{align*}\n\nHint: Use a substitution and interpret the result as an area.", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nEvaluate the following integral: &lt;math> \\int_0^3 x\\sqrt{81-x^4}\\,dx. &lt;/math>\n\nHint: Use a substitution and interpret the result as an area.\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_03_(d)", 
+    "year": 2010
 }

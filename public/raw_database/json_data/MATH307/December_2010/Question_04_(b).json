@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04_(b)", 
+    "answer_html": "<p>If this is not the case, replace <em>X1</em> with <em>min(<span>[</span>X1, X2, X3, X4<span>]</span>)</em> and <em>X4</em> with <em>max(<span>[</span>X1, X2, X3, X4<span>]</span>)</em>.</p>\n", 
+    "answer_latex": "If this is not the case,\nreplace \\emph{X1} with \\emph{min({[}X1, X2, X3, X4{]})} and \\emph{X4}\nwith \\emph{max({[}X1, X2, X3, X4{]})}.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "In this question we are once again given 4 points\n(\\emph{x}\\textsubscript{1}, \\emph{y}\\textsubscript{1}),\n(\\emph{x}\\textsubscript{2}, \\emph{y}\\textsubscript{2}),\n(\\emph{x}\\textsubscript{3}, \\emph{y}\\textsubscript{3}) and\n(\\emph{x}\\textsubscript{4}, \\emph{y}\\textsubscript{4}) in the plane.\nThis time we want to find a quadratic function\n$\\displaystyle q(x) = ax^2 + bx + c$ that comes closest to going through\nthe points by doing a least squares fit.\n\n\\textbf{(b)} Suppose the points (\\emph{x}\\textsubscript{i},\n\\emph{y}\\textsubscript{i}) have been defined in MATLAB/Octave as\n\n\\texttt{X1,~...,~X4,~Y1,~...,~Y4.}\n\nWrite down the MATLAB/Octave code that plots these points, then computes\n\\emph{q(x)}, and finally plots \\emph{q(x)}.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Use the matrix <em>A</em>, and the vector <em>b</em> found in <span>Part (a)</span>.</p>\n<p>First define <em>A</em> and <em>b</em> as matrix and vector in MATLAB, then use to solve the linear system of the least square equation in MATLAB. From the coefficient vector you can then define the polynomial <em>q(x)</em> and plot as usual.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the matrix \\emph{A}, and the vector \\emph{b} found in\n{Part\n(a)}.\n\nFirst define \\emph{A} and \\emph{b} as matrix and vector in MATLAB, then\nuse to solve the linear system of the least square equation in MATLAB.\nFrom the coefficient vector you can then define the polynomial\n\\emph{q(x)} and plot as usual."
+    ], 
+    "hints_raw": [
+        "Use the matrix ''A'', and the vector ''b'' found in [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_04_(a)|Part (a)]].\n\nFirst define ''A'' and ''b'' as matrix and vector in MATLAB, then use to solve the linear system of the least square equation in MATLAB. From the coefficient vector you can then define the polynomial ''q(x)'' and plot as usual.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, let&#8217;s define the matrix <em>A</em> and <em>b</em>:</p>\n<p><code>&#160;&#160;&#160;A&#160;=&#160;[X1^2&#160;X1&#160;1;&#160;X2^2&#160;X2&#160;1;&#160;X3^2&#160;X3&#160;1;&#160;X4^2&#160;X4&#160;1];</code><br /><code>&#160;&#160;&#160;b&#160;=&#160;[Y1;&#160;Y2;&#160;Y3;&#160;Y4];</code></p>\n<p>Next, we solve <em>A<sup>T</sup>A<strong>a</strong> = A<sup>T</sup><strong>b</strong></em> for <strong>a</strong>:</p>\n<p><code>&#160;&#160;&#160;a&#160;=&#160;(A&#8217;*A)\\(A&#8217;*b);&#160;&#160;&#160;%&#160;or&#160;a&#160;=&#160;inv(A&#8217;*A)*A&#8217;*b;</code></p>\n<p>The vector <em>a</em> now holds the coefficients of <em>q(x)</em>, so we can define the function <em>q(x)</em></p>\n<p><code>&#160;&#160;&#160;q&#160;=&#160;@(x)&#160;a[1]*x^2&#160;+&#160;a[2]*x&#160;+&#160;a[3];</code></p>\n<p>and finally plot this anonymous function:</p>\n<p><code>&#160;&#160;&#160;fplot(q,&#160;[X1&#160;X4])&#160;&#160;%&#160;or&#160;plot(linspace(X1,&#160;X4),&#160;q(linspace(X1,&#160;X4)))</code></p>\n<p><em>Note:</em> We assume that the <em>x</em>-values are well-ordered, <em>x<sub>1</sub> <span class=\"math\">\\(\\leq\\)</span> x<sub>2</sub> <span class=\"math\">\\(\\leq\\)</span> x<sub>3</sub> <span class=\"math\">\\(\\leq\\)</span> x<sub>4</sub></em>. If this is not the case, replace <em>X1</em> with <em>min(<span>[</span>X1, X2, X3, X4<span>]</span>)</em> and <em>X4</em> with <em>max(<span>[</span>X1, X2, X3, X4<span>]</span>)</em>.</p>\n"
+    ], 
+    "sols_latex": [
         "First, let's define the matrix \\emph{A} and \\emph{b}:\n\n\\texttt{~~~A~=~{[}X1\\^{}2~X1~1;~X2\\^{}2~X2~1;~X3\\^{}2~X3~1;~X4\\^{}2~X4~1{]};}\\\\\\texttt{~~~b~=~{[}Y1;~Y2;~Y3;~Y4{]};}\n\nNext, we solve \\emph{A\\textsuperscript{T}A\\textbf{a} =\nA\\textsuperscript{T}\\textbf{b}} for \\textbf{a}:\n\n\\texttt{~~~a~=~(A'*A)\\textbackslash{}(A'*b);~~~\\%~or~a~=~inv(A'*A)*A'*b;}\n\nThe vector \\emph{a} now holds the coefficients of \\emph{q(x)}, so we can\ndefine the function \\emph{q(x)}\n\n\\texttt{~~~q~=~@(x)~a{[}1{]}*x\\^{}2~+~a{[}2{]}*x~+~a{[}3{]};}\n\nand finally plot this anonymous function:\n\n\\texttt{~~~fplot(q,~{[}X1~X4{]})~~\\%~or~plot(linspace(X1,~X4),~q(linspace(X1,~X4)))}\n\n\\emph{Note:} We assume that the \\emph{x}-values are well-ordered,\n\\emph{x\\textsubscript{1} $\\leq$ x\\textsubscript{2} $\\leq$\nx\\textsubscript{3} $\\leq$ x\\textsubscript{4}}. If this is not the case,\nreplace \\emph{X1} with \\emph{min({[}X1, X2, X3, X4{]})} and \\emph{X4}\nwith \\emph{max({[}X1, X2, X3, X4{]})}."
     ], 
-    "hints": [
-        "Use the matrix \\emph{A}, and the vector \\emph{b} found in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_04_(a)}{Part\n(a)}.\n\nFirst define \\emph{A} and \\emph{b} as matrix and vector in MATLAB, then\nuse to solve the linear system of the least square equation in MATLAB.\nFrom the coefficient vector you can then define the polynomial\n\\emph{q(x)} and plot as usual."
-    ]
+    "sols_raw": [
+        "First, let's define the matrix ''A'' and ''b'':\n\n    A = [X1^2 X1 1; X2^2 X2 1; X3^2 X3 1; X4^2 X4 1];\n    b = [Y1; Y2; Y3; Y4];\n\nNext, we solve ''A&lt;sup>T&lt;/sup>A'''a''' = A&lt;sup>T&lt;/sup>'''b''''' for '''a''':\n\n    a = (A'*A)\\(A'*b);   % or a = inv(A'*A)*A'*b;\n\nThe vector ''a'' now holds the coefficients of ''q(x)'', so we can define the function ''q(x)''\n\n    q = @(x) a[1]*x^2 + a[2]*x + a[3];\n\nand finally plot this anonymous function:\n\n    fplot(q, [X1 X4])  % or plot(linspace(X1, X4), q(linspace(X1, X4)))\n\n''Note:'' We assume that the ''x''-values are well-ordered, ''x&lt;sub>1&lt;/sub> &amp;le; x&lt;sub>2&lt;/sub> &amp;le; x&lt;sub>3&lt;/sub> &amp;le; x&lt;sub>4&lt;/sub>''. If this is not the case, replace ''X1'' with ''min([X1, X2, X3, X4])'' and ''X4'' with ''max([X1, X2, X3, X4])''.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>In this question we are once again given 4 points (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), (<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>) and (<em>x</em><sub>4</sub>, <em>y</em><sub>4</sub>) in the plane. This time we want to find a quadratic function <span class=\"math\">\\(\\displaystyle q(x) = ax^2 + bx + c\\)</span> that comes closest to going through the points by doing a least squares fit.</p>\n<p><strong>(b)</strong> Suppose the points (<em>x</em><sub>i</sub>, <em>y</em><sub>i</sub>) have been defined in MATLAB/Octave as</p>\n<p><code>X1,&#160;...,&#160;X4,&#160;Y1,&#160;...,&#160;Y4.</code></p>\n<p>Write down the MATLAB/Octave code that plots these points, then computes <em>q(x)</em>, and finally plots <em>q(x)</em>.</p>\n", 
+    "statement_latex": "In this question we are once again given 4 points\n(\\emph{x}\\textsubscript{1}, \\emph{y}\\textsubscript{1}),\n(\\emph{x}\\textsubscript{2}, \\emph{y}\\textsubscript{2}),\n(\\emph{x}\\textsubscript{3}, \\emph{y}\\textsubscript{3}) and\n(\\emph{x}\\textsubscript{4}, \\emph{y}\\textsubscript{4}) in the plane.\nThis time we want to find a quadratic function\n$\\displaystyle q(x) = ax^2 + bx + c$ that comes closest to going through\nthe points by doing a least squares fit.\n\n\\textbf{(b)} Suppose the points (\\emph{x}\\textsubscript{i},\n\\emph{y}\\textsubscript{i}) have been defined in MATLAB/Octave as\n\n\\texttt{X1,~...,~X4,~Y1,~...,~Y4.}\n\nWrite down the MATLAB/Octave code that plots these points, then computes\n\\emph{q(x)}, and finally plots \\emph{q(x)}.", 
+    "statement_raw": "In this question we are once again given 4 points (''x''&lt;sub>1&lt;/sub>, ''y''&lt;sub>1&lt;/sub>), (''x''&lt;sub>2&lt;/sub>, ''y''&lt;sub>2&lt;/sub>), (''x''&lt;sub>3&lt;/sub>, ''y''&lt;sub>3&lt;/sub>) and (''x''&lt;sub>4&lt;/sub>, ''y''&lt;sub>4&lt;/sub>) in the plane. This time we want to find a quadratic function &lt;math>\\displaystyle q(x) = ax^2 + bx + c&lt;/math> that comes closest to going through the points by doing a least squares fit.\n\n'''(b)''' Suppose the points (''x''&lt;sub>i&lt;/sub>, ''y''&lt;sub>i&lt;/sub>) have been defined in MATLAB/Octave as\n X1, ..., X4, Y1, ..., Y4.\n\nWrite down the MATLAB/Octave code that plots these points, then computes ''q(x)'', and finally plots ''q(x)''.\n", 
+    "term": "December", 
+    "topics": [
+        "MATLAB"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_04_(b)", 
+    "year": 2010
 }

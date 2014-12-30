@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_04_(c)", 
-    "course": "MATH200", 
-    "statement": "The temperature at a point (x,y,z) is given by\n\n\\begin{align*}\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\end{align*}\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nFind the maximum rate of decrease at P.", 
-    "year": 2012, 
-    "sols": [
-        "When \\emph{T} is decreasing most rapidly from its value at \\emph{P}, the\nactual rate of change (a scalar) is based on the direction chosen in\n\\href{Science:Math Exam Resources/Courses/MATH200/April 2012/Question 04 (b)}{part\n(b)}:\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1)\n&= \\nabla T(1,2,-1)\\cdot \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert} \\\\\n&= \\frac{-\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert^2 }{\\left\\vert \\nabla T(1,2,-1)\\right\\vert} \\\\\n&= -\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert \\\\\n&= -10 e^{-9}\\sqrt{17}.\\end{align*}\n\nThis has units of $\\displaystyle {}\\text{C}/\\text{m}$.\n\nIn plain English, the words can absorb the minus sign: ''The maximum\nrate of decrease of temperature at point \\emph{P} is\n\n\\begin{align*}10 e^{-9}\\sqrt{17} \\text{C}/\\text{m}\\end{align*}\n\nobtained in the direction\n$\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}$.''"
+    "answer_html": "<p>obtained in the direction <span class=\"math\">\\(\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}\\)</span>.&#8221;</p>\n", 
+    "answer_latex": "obtained in the direction\n$\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}$.''", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_04_(b)}{part\n(b)} we have the direction which makes the directional derivative\nsmallest. What is the actual value of the directional derivative in this\ndirection?"
-    ]
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>From <span>part (b)</span> we have the direction which makes the directional derivative smallest. What is the actual value of the directional derivative in this direction?</p>\n"
+    ], 
+    "hints_latex": [
+        "From\n{part\n(b)} we have the direction which makes the directional derivative\nsmallest. What is the actual value of the directional derivative in this\ndirection?"
+    ], 
+    "hints_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_04_(b)|part (b)]] we have the direction which makes the directional derivative smallest.  What is the actual value of the directional derivative in this direction?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "4 (c)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>When <em>T</em> is decreasing most rapidly from its value at <em>P</em>, the actual rate of change (a scalar) is based on the direction chosen in <span>part (b)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1)\n&amp;= \\nabla T(1,2,-1)\\cdot \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert} \\\\\n&amp;= \\frac{-\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert^2 }{\\left\\vert \\nabla T(1,2,-1)\\right\\vert} \\\\\n&amp;= -\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert \\\\\n&amp;= -10 e^{-9}\\sqrt{17}.\\end{aligned}\\]</span></p>\n<p>This has units of <span class=\"math\">\\(\\displaystyle {}\\text{C}/\\text{m}\\)</span>.</p>\n<p>In plain English, the words can absorb the minus sign: &#8221;The maximum rate of decrease of temperature at point <em>P</em> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n10 e^{-9}\\sqrt{17} \\text{C}/\\text{m}\\end{aligned}\\]</span></p>\n<p>obtained in the direction <span class=\"math\">\\(\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}\\)</span>.&#8221;</p>\n"
+    ], 
+    "sols_latex": [
+        "When \\emph{T} is decreasing most rapidly from its value at \\emph{P}, the\nactual rate of change (a scalar) is based on the direction chosen in\n{part\n(b)}:\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1)\n&= \\nabla T(1,2,-1)\\cdot \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert} \\\\\n&= \\frac{-\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert^2 }{\\left\\vert \\nabla T(1,2,-1)\\right\\vert} \\\\\n&= -\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert \\\\\n&= -10 e^{-9}\\sqrt{17}.\n\\end{align*}\n\nThis has units of $\\displaystyle {}\\text{C}/\\text{m}$.\n\nIn plain English, the words can absorb the minus sign: ''The maximum\nrate of decrease of temperature at point \\emph{P} is\n\n\\begin{align*}\n10 e^{-9}\\sqrt{17} \\text{C}/\\text{m}\n\\end{align*}\n\nobtained in the direction\n$\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}$.''"
+    ], 
+    "sols_raw": [
+        "When ''T'' is decreasing most rapidly from its value at ''P'', the actual rate of change (a scalar) is based on the direction chosen in [[Science:Math Exam Resources/Courses/MATH200/April 2012/Question 04 (b)|part (b)]]:\n:&lt;math>\n\\begin{align}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1)\n&amp;= \\nabla T(1,2,-1)\\cdot \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert} \\\\\n&amp;= \\frac{-\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert^2 }{\\left\\vert \\nabla T(1,2,-1)\\right\\vert} \\\\\n&amp;= -\\left\\vert{\\nabla T(1,2,-1)}\\right\\vert \\\\\n&amp;= -10 e^{-9}\\sqrt{17}.\n\\end{align}\n&lt;/math>\n\nThis has units of &lt;math>\\displaystyle{}\\text{C}/\\text{m}&lt;/math>.\n\nIn plain English, the words can absorb the minus sign: ''The maximum rate of decrease of temperature at point ''P'' is\n\n:&lt;math> 10 e^{-9}\\sqrt{17} \\text{C}/\\text{m}&lt;/math>\n\nobtained in the direction &lt;math>\\left\\langle 2,2,-3\\right\\rangle/\\sqrt{17}&lt;/math>.''\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The temperature at a point (x,y,z) is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\end{aligned}\\]</span></p>\n<p>where T is measured in centigrade and x,y,z in metres.</p>\n<p>Find the maximum rate of decrease at P.</p>\n", 
+    "statement_latex": "The temperature at a point (x,y,z) is given by\n\n\\begin{align*}\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\n\\end{align*}\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nFind the maximum rate of decrease at P.", 
+    "statement_raw": "The temperature at a point (x,y,z) is given by\n\n:&lt;math>\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\n&lt;/math>\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nFind the maximum rate of decrease at P.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_04_(c)", 
+    "year": 2012
 }

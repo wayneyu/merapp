@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_06_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "A CT scanner in a hospital is switched on every morning and switched off\nat night. The scanner has a probability $\\displaystyle q = 0.001$ of\nfailure when the technician turns it on in the morning. (Assume that if\nit turns on, it will not fail later that day i.e. treat this as a\n\\textbf{discrete} event. Also assume that failure is independent of age\nor history of the machine.)\n\n(c) Use the properties of an infinite geometric series to obtain the\nsummation formula given in\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_06_(b)}{part\n(b)}:\n\n\\begin{align*}\n\\sum_{k=1}^{\\infty}kr^{k-1} = \\frac{1}{(1-r)^{2}}\\end{align*}\n\nfor $\\displaystyle |r| < 1$.", 
-    "year": 2005, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>A CT scanner in a hospital is switched on every morning and switched off at night. The scanner has a probability <span class=\"math\">\\(\\displaystyle q = 0.001\\)</span> of failure when the technician turns it on in the morning. (Assume that if it turns on, it will not fail later that day i.e. treat this as a <strong>discrete</strong> event. Also assume that failure is independent of age or history of the machine.)</p>\n<p>(c) Use the properties of an infinite geometric series to obtain the summation formula given in <span>part (b)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=1}^{\\infty}kr^{k-1} = \\frac{1}{(1-r)^{2}}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(\\displaystyle |r| &lt; 1\\)</span>.</p>\n", 
+    "statement_latex": "A CT scanner in a hospital is switched on every morning and switched off\nat night. The scanner has a probability $\\displaystyle q = 0.001$ of\nfailure when the technician turns it on in the morning. (Assume that if\nit turns on, it will not fail later that day i.e. treat this as a\n\\textbf{discrete} event. Also assume that failure is independent of age\nor history of the machine.)\n\n(c) Use the properties of an infinite geometric series to obtain the\nsummation formula given in\n{part\n(b)}:\n\n\\begin{align*}\n\\sum_{k=1}^{\\infty}kr^{k-1} = \\frac{1}{(1-r)^{2}}\n\\end{align*}\n\nfor $\\displaystyle |r| < 1$.", 
+    "statement_raw": "A CT scanner in a hospital is switched on every morning and switched off at night. The scanner has a probability &lt;math> \\displaystyle q = 0.001&lt;/math> of failure when the technician turns it on in the morning. (Assume that if it turns on, it will not fail later that day i.e. treat this as a '''discrete''' event. Also assume that failure is independent of age or history of the machine.)\n\n(c) Use the properties of an infinite geometric series to obtain the summation formula given in [[Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_06_(b)|part (b)]]:\n\n&lt;math>\n\\begin{align}\n\\sum_{k=1}^{\\infty}kr^{k-1} = \\frac{1}{(1-r)^{2}}\n\\end{align}\n&lt;/math>\n\nfor &lt;math> \\displaystyle |r| &lt; 1 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_06_(c)", 
+    "year": 2005
 }

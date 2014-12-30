@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p>We can check by differentiation that this satisfies the differential equation <span class=\"math\">\\(\\frac{dP}{dt} = 10^8P\\)</span>.</p>\n", 
+    "answer_latex": "We can check by differentiation that this\nsatisfies the differential equation $\\frac{dP}{dt} = 10^8P$.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
+    ], 
     "course": "MATH110", 
-    "statement": "In a fission nuclear weapon, a sphere of uranium-235 is compressed to a\nfraction of its size, forcing at least one atomic nucleus to split and\nrelease neutrons. These neutrons force other nuclei to release\n\\emph{their} neutrons, and so on. The result is that the number of\nneutrons grows exponentially.\n\nLet \\emph{P(t)} be the number of neutrons \\emph{t} seconds after\ndetonation. The number of neutrons satisfies the differential equation\n\n\\begin{align*}\\displaystyle\n\\frac{dP}{dt} = 10^8P(t).\\end{align*}\n\n\\textbf{(a)} Write down an exponential algebraic expression for\n\\emph{P(t)} which satisfies the differential equation given above.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Which function do you know whose derivative is the same as the original function?</p>\n"
+    ], 
+    "hints_latex": [
+        "Which function do you know whose derivative is the same as the original\nfunction?"
+    ], 
+    "hints_raw": [
+        "Which function do you know whose derivative is the same as the original function?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The differential equation above says that the derivative of the function <span class=\"math\">\\(P(t)\\)</span> is a constant multiple of the original function. A function that has this property is the exponential function, <span class=\"math\">\\(e^t\\)</span>. An exponential function will satisfy the differential equation when its derivative is equal to <span class=\"math\">\\(10^8\\)</span> times the same exponential function. This occurs when we include a factor of <span class=\"math\">\\(10^8\\)</span> in the exponent of the <span class=\"math\">\\(e^t\\)</span> so we have the function <span class=\"math\">\\(P(t) = e^{10^8t}\\)</span>. We can check by differentiation that this satisfies the differential equation <span class=\"math\">\\(\\frac{dP}{dt} = 10^8P\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The differential equation above says that the derivative of the function\n$P(t)$ is a constant multiple of the original function. A function that\nhas this property is the exponential function, $e^t$. An exponential\nfunction will satisfy the differential equation when its derivative is\nequal to $10^8$ times the same exponential function. This occurs when we\ninclude a factor of $10^8$ in the exponent of the $e^t$ so we have the\nfunction $P(t) = e^{10^8t}$. We can check by differentiation that this\nsatisfies the differential equation $\\frac{dP}{dt} = 10^8P$."
     ], 
-    "hints": [
-        "Which function do you know whose derivative is the same as the original\nfunction?"
-    ]
+    "sols_raw": [
+        "The differential equation above says that the derivative of the function &lt;math>P(t)&lt;/math> is a constant multiple of the original function.  A function that has this property is the exponential function, &lt;math>e^t&lt;/math>.  An exponential function will satisfy the differential equation when its derivative is equal to &lt;math>10^8&lt;/math> times the same exponential function.  This occurs when we include a factor of &lt;math>10^8&lt;/math> in the exponent of the &lt;math>e^t&lt;/math> so we have the function &lt;math>P(t) = e^{10^8t}&lt;/math>.  We can check by differentiation that this satisfies the differential equation &lt;math>\\frac{dP}{dt} = 10^8P&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>In a fission nuclear weapon, a sphere of uranium-235 is compressed to a fraction of its size, forcing at least one atomic nucleus to split and release neutrons. These neutrons force other nuclei to release <em>their</em> neutrons, and so on. The result is that the number of neutrons grows exponentially.</p>\n<p>Let <em>P(t)</em> be the number of neutrons <em>t</em> seconds after detonation. The number of neutrons satisfies the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\frac{dP}{dt} = 10^8P(t).\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Write down an exponential algebraic expression for <em>P(t)</em> which satisfies the differential equation given above.</p>\n", 
+    "statement_latex": "In a fission nuclear weapon, a sphere of uranium-235 is compressed to a\nfraction of its size, forcing at least one atomic nucleus to split and\nrelease neutrons. These neutrons force other nuclei to release\n\\emph{their} neutrons, and so on. The result is that the number of\nneutrons grows exponentially.\n\nLet \\emph{P(t)} be the number of neutrons \\emph{t} seconds after\ndetonation. The number of neutrons satisfies the differential equation\n\n\\begin{align*}\n\\displaystyle\n\\frac{dP}{dt} = 10^8P(t).\n\\end{align*}\n\n\\textbf{(a)} Write down an exponential algebraic expression for\n\\emph{P(t)} which satisfies the differential equation given above.", 
+    "statement_raw": "In a fission nuclear weapon, a sphere of uranium-235 is compressed to a fraction of its size, forcing at least one atomic nucleus to split and release neutrons. These neutrons force other nuclei to release ''their'' neutrons, and so on. The result is that the number of neutrons grows exponentially.\n\nLet ''P(t)'' be the number of neutrons ''t'' seconds after detonation. The number of neutrons satisfies the differential equation\n:&lt;math>\\displaystyle\n\\frac{dP}{dt} = 10^8P(t).\n&lt;/math>\n\n'''(a)''' Write down an exponential algebraic expression for ''P(t)'' which satisfies the differential equation given above.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Exponential_growth_and_decay"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2012/Question_06_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH104", 
-    "statement": "Compute\n\n\\begin{align*}\\lim_{x\\to0}\\frac{\\sqrt{x+1}-1}{x}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "\\begin{align*}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&= \\frac{1}{2}\\end{align*}\n\n\\begin{align*}{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try multiplying the numerator and denominator by the radical conjugate of the numerator. Something may cancel out which should allow you to simply plug in <span class=\"math\">\\(x = 0\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Try multiplying the numerator and denominator by the radical conjugate\nof the numerator. Something may cancel out which should allow you to\nsimply plug in $x = 0$."
-    ]
+    ], 
+    "hints_raw": [
+        "Try multiplying the numerator and denominator by the radical conjugate of the numerator. Something may cancel out which should allow you to simply plug in &lt;math>x = 0&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &amp;= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&amp;= \\frac{1}{2}\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{align*}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&= \\frac{1}{2}\n\\end{align*}\n\n\\begin{align*}\n{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} =\\frac{1}{2}}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        ":&lt;math>\n\\begin{align}\n\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} &amp;= \\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x}\\times \\frac{\\sqrt{x + 1} + 1}{\\sqrt{x + 1} + 1} \\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{x + 1 - 1}{x(\\sqrt{x + 1} + 1)}\\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{x}{x(\\sqrt{x + 1} + 1)}\\\\\n&amp;= \\lim_{x \\rightarrow 0}\\frac{1}{\\sqrt{x + 1} + 1}\\\\\n&amp;= \\frac{1}{2}\n\\end{align}\n&lt;/math>\n\n:&lt;math>\n{\\color{blue}\\mbox{Therefore, }\\lim_{x \\rightarrow 0}\\frac{\\sqrt{x + 1} - 1}{x} = \\frac{1}{2}}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Compute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\to0}\\frac{\\sqrt{x+1}-1}{x}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Compute\n\n\\begin{align*}\n\\lim_{x\\to0}\\frac{\\sqrt{x+1}-1}{x}\n\\end{align*}", 
+    "statement_raw": "Compute\n\n:&lt;math>\n\\lim_{x\\to0}\\frac{\\sqrt{x+1}-1}{x}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(a)", 
+    "year": 2012
 }

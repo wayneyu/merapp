@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_Section_201_05_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\therefore R(D^T) = R(L)\\)</span></p>\n", 
+    "answer_latex": "$\\therefore R(D^T) = R(L)$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(a)} Write down the incidence matrix \\emph{D} and the Laplacian\nmatrix \\emph{L} for this graph. Show that (for any graph) \\emph{N(L) =\nN(D)}. Is it true that \\emph{R(D\\textsuperscript{T}) = R(L)}? Give a\nreason.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 201 05 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(\\text{Write the incidence matrix } D \\text{ and Laplacian matrix } L \\text{. Also show that (for any graph) } N(L) = N(D) \\text{. Is it true that } R(D^T) = R(L)\\text{?}\\)</span></p>\n<p>Answer:</p>\n<p>Reading off the graph (where -1 is info leaving node and +1 is info entering node):</p>\n<p><span class=\"math\">\\(D= \\begin{bmatrix}\n\n-1 &amp;1 &amp;0 &amp;0 &amp;0 &amp;0\\\\\n\n0 &amp;-1&amp; 1 &amp;0 &amp;0 &amp;0\\\\\n\n-1 &amp;0&amp; 0&amp; 1&amp; 0&amp; 0\\\\\n\n0 &amp;-1&amp; 0&amp; 0&amp; 1&amp; 0\\\\\n\n0 &amp;0&amp; -1&amp; 0&amp; 0&amp; 1\\\\\n\n0 &amp;0 &amp;0 &amp;-1&amp; 1&amp; 0\\\\\n\n0 &amp;0 &amp;0 &amp;0 &amp;-1&amp; 1\n\n\\end{bmatrix}\\)</span></p>\n<p>and can either compute L by } L = D^TD \\text{ or get it directly from the graph using the following method:</p>\n<p><span class=\"math\">\\(L_{i,i} = \\text{number of other nodes connected to the }i^{th} \\text{ node}\\)</span></p>\n<p><span class=\"math\">\\(L_{i,j} = -1 \\text{if the two nodes are connected, } 0 \\text{ otherwise}\\)</span></p>\n<p><span class=\"math\">\\(L = \\begin{bmatrix}\n\n2 &amp; -1 &amp; 0 &amp; -1 &amp; 0 &amp; 0\\\\\n\n-1 &amp; 3 &amp; -1 &amp; 0 &amp; -1 &amp; 0\\\\\n\n0 &amp; -1 &amp; 2 &amp; 0 &amp; 0 &amp; -1\\\\\n\n-1 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0\\\\\n\n0 &amp; -1 &amp; 0 &amp; -1 &amp; 3 &amp; -1\\\\\n\n0 &amp; 0 &amp; -1 &amp; 0 &amp; -1 &amp; 2\\\\\n\n\\end{bmatrix}\\)</span></p>\n<p>As for nullspaces of L and D,</p>\n<p><span class=\"math\">\\(L = D^T RD = D^T D\\)</span></p>\n<p><span class=\"math\">\\(\\text{so if } D\\underline{v} = \\underline{0}\\)</span></p>\n<p><span class=\"math\">\\(L\\underline{v} = d^TD\\underline{v}\\)</span></p>\n<p><span class=\"math\">\\(=D^T(\\underline{0})\\)</span></p>\n<p><span class=\"math\">\\(=\\underline{0}\\)</span></p>\n<p><span class=\"math\">\\(\\therefore N(L) = N(D)\\)</span></p>\n<p>Also:</p>\n<p><span class=\"math\">\\(R(D^T) = N(D)^\\perp = N(L)^\\perp \\text{ by orthogonality relations}\\)</span></p>\n<p><span class=\"math\">\\(=R(L^T)\\)</span></p>\n<p><span class=\"math\">\\(=R(L) \\text{ since L is symmetric}\\)</span></p>\n<p><span class=\"math\">\\(\\therefore R(D^T) = R(L)\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "$\\text{Write the incidence matrix } D \\text{ and Laplacian matrix } L \\text{. Also show that (for any graph) } N(L) = N(D) \\text{. Is it true that } R(D^T) = R(L)\\text{?}$\n\nAnswer:\n\nReading off the graph (where -1 is info leaving node and +1 is info\nentering node):\n\n$D= \\begin{bmatrix}\n\n-1 &1 &0 &0 &0 &0\\\\\n\n0 &-1& 1 &0 &0 &0\\\\\n\n-1 &0& 0& 1& 0& 0\\\\\n\n0 &-1& 0& 0& 1& 0\\\\\n\n0 &0& -1& 0& 0& 1\\\\\n\n0 &0 &0 &-1& 1& 0\\\\\n\n0 &0 &0 &0 &-1& 1\n\n\\end{bmatrix}$\n\nand can either compute L by \\} L = D\\^{}TD \\textbackslash{}text\\{ or get\nit directly from the graph using the following method:\n\n$L_{i,i} = \\text{number of other nodes connected to the }i^{th} \\text{ node}$\n\n$L_{i,j} = -1 \\text{if the two nodes are connected, } 0 \\text{ otherwise}$\n\n$L = \\begin{bmatrix}\n\n2 & -1 & 0 & -1 & 0 & 0\\\\\n\n-1 & 3 & -1 & 0 & -1 & 0\\\\\n\n0 & -1 & 2 & 0 & 0 & -1\\\\\n\n-1 & 0 & 0 & 2 & -1 & 0\\\\\n\n0 & -1 & 0 & -1 & 3 & -1\\\\\n\n0 & 0 & -1 & 0 & -1 & 2\\\\\n\n\\end{bmatrix}$\n\nAs for nullspaces of L and D,\n\n$L = D^T RD = D^T D$\n\n$\\text{so if } D\\underline{v} = \\underline{0}$\n\n$L\\underline{v} = d^TD\\underline{v}$\n\n$=D^T(\\underline{0})$\n\n$=\\underline{0}$\n\n$\\therefore N(L) = N(D)$\n\nAlso:\n\n$R(D^T) = N(D)^\\perp = N(L)^\\perp \\text{ by orthogonality relations}$\n\n$=R(L^T)$\n\n$=R(L) \\text{ since L is symmetric}$\n\n$\\therefore R(D^T) = R(L)$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "&lt;math>\\text{Write the incidence matrix } D \\text{ and Laplacian matrix } L \\text{. Also show that (for any graph) } N(L) = N(D) \\text{. Is it true that } R(D^T) = R(L)\\text{?}&lt;/math>\n\nAnswer:\n\nReading off the graph (where -1 is info leaving node and +1 is info entering node):\n\n&lt;math>D= \\begin{bmatrix}\n\n-1 &amp;1 &amp;0 &amp;0 &amp;0 &amp;0\\\\\n\n0 &amp;-1&amp; 1 &amp;0 &amp;0 &amp;0\\\\\n\n-1 &amp;0&amp; 0&amp; 1&amp; 0&amp; 0\\\\\n\n0 &amp;-1&amp; 0&amp; 0&amp; 1&amp; 0\\\\\n\n0 &amp;0&amp; -1&amp; 0&amp; 0&amp; 1\\\\\n\n0 &amp;0 &amp;0 &amp;-1&amp; 1&amp; 0\\\\\n\n0 &amp;0 &amp;0 &amp;0 &amp;-1&amp; 1\n\n\\end{bmatrix}&lt;/math>\n\nand can either compute L by } L = D^TD \\text{ or get it directly from the graph using the following method:\n\n&lt;math>L_{i,i} = \\text{number of other nodes connected to the }i^{th} \\text{ node}&lt;/math>\n\n&lt;math>L_{i,j} = -1 \\text{if the two nodes are connected, } 0 \\text{ otherwise}&lt;/math>\n\n&lt;math>L = \\begin{bmatrix}\n\n2 &amp; -1 &amp; 0 &amp; -1 &amp; 0 &amp; 0\\\\\n\n-1 &amp; 3 &amp; -1 &amp; 0 &amp; -1 &amp; 0\\\\\n\n0 &amp; -1 &amp; 2 &amp; 0 &amp; 0 &amp; -1\\\\\n\n-1 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0\\\\\n\n0 &amp; -1 &amp; 0 &amp; -1 &amp; 3 &amp; -1\\\\\n\n0 &amp; 0 &amp; -1 &amp; 0 &amp; -1 &amp; 2\\\\\n\n\\end{bmatrix}&lt;/math>\n\nAs for nullspaces of L and D,\n\n&lt;math>L = D^T RD = D^T D&lt;/math>\n\n&lt;math>\\text{so if } D\\underline{v} = \\underline{0}&lt;/math>\n\n&lt;math>L\\underline{v} = d^TD\\underline{v}&lt;/math>\n\n&lt;math>=D^T(\\underline{0})&lt;/math>\n\n&lt;math>=\\underline{0}&lt;/math>\n\n&lt;math>\\therefore N(L) = N(D)&lt;/math>\n\nAlso:\n\n&lt;math>R(D^T) = N(D)^\\perp = N(L)^\\perp \\text{ by orthogonality relations}&lt;/math>\n\n&lt;math>=R(L^T)&lt;/math>\n\n&lt;math>=R(L) \\text{ since L is symmetric}&lt;/math>\n\n&lt;math>\\therefore R(D^T) = R(L)&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the following graph, interpreted as a resistor network with all resistances <em>R = 1</em>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p><strong>(a)</strong> Write down the incidence matrix <em>D</em> and the Laplacian matrix <em>L</em> for this graph. Show that (for any graph) <em>N(L) = N(D)</em>. Is it true that <em>R(D<sup>T</sup>) = R(L)</em>? Give a reason.</p>\n", 
+    "statement_latex": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(a)} Write down the incidence matrix \\emph{D} and the Laplacian\nmatrix \\emph{L} for this graph. Show that (for any graph) \\emph{N(L) =\nN(D)}. Is it true that \\emph{R(D\\textsuperscript{T}) = R(L)}? Give a\nreason.", 
+    "statement_raw": "Consider the following graph, interpreted as a resistor network with all resistances ''R = 1''.\n\n:[[File:MATH307April2013Section201Q5a.png|300px]]\n\n'''(a)''' Write down the incidence matrix ''D'' and the Laplacian matrix ''L'' for this graph. Show that (for any graph) ''N(L) = N(D)''. Is it true that ''R(D&lt;sup>T&lt;/sup>) = R(L)''? Give a reason.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(a)", 
+    "year": 2013
 }

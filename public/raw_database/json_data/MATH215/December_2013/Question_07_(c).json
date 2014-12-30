@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_07_(c)", 
-    "course": "MATH215", 
-    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{align*}\n\n(c) Again if $y_0 = 3/2$, use Euler$^{\\prime}$s method with the larger\nstep size $h = 2$ to approximate the solution $y(2)$ at time $t=2$.\nPredict what will happen if you continue to use this scheme (with $h=2$)\nto approximate $y(t)$ for large $t$. Compare this with your result from\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)}, and explain any discrepancies.", 
-    "year": 2013, 
-    "sols": [
-        "Implementing the same notation as in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(b)}{part\n(b)}, we have\n\n\\begin{align*}y(2) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 2(-3/8) = 3/4.\\end{align*}\n\nWe observe that $0 < y_1 < 1$ and that $\\frac{dy}{dt}|_{y=3/4} < 0$ so\nthat\n\n\\begin{align*}y_2 = y_1 + h \\frac{dy}{dt}|_{y=3/4} < y_1.\\end{align*}\n\nGiven the information we know from\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)} that solution curves passing through a point $y_0 < 1$ approach\n$y=0$ we anticipate that if these approximations were to carry on for a\nlong time, the approximations would (likely) approach $y=0$.\n\nThis disagrees with the prediction in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)} in that if $y(0) = 3/2$, the exact solution curve should approach\n$y=1$ as $t \\rightarrow \\infty$. The step size of $h=2$ is too large a\nstep to take to accurately resolve the exact solution of the initial\nvalue problem."
+    "answer_html": "<p>The step size of <span class=\"math\">\\(h=2\\)</span> is too large a step to take to accurately resolve the exact solution of the initial value problem.</p>\n", 
+    "answer_latex": "The step size of $h=2$ is too large a\nstep to take to accurately resolve the exact solution of the initial\nvalue problem.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "What sort of behaviour does Euler's method with h=2 predict about $y(t)$\nfor large t? What should happen analytically (based on your analysis in\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)}{part\n(a)})?"
-    ]
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What sort of behaviour does Euler&#8217;s method with h=2 predict about <span class=\"math\">\\(y(t)\\)</span> for large t? What should happen analytically (based on your analysis in <span>part (a)</span>)?</p>\n"
+    ], 
+    "hints_latex": [
+        "What sort of behaviour does Euler's method with h=2 predict about $y(t)$\nfor large t? What should happen analytically (based on your analysis in\n{part\n(a)})?"
+    ], 
+    "hints_raw": [
+        "What sort of behaviour does Euler's method with h=2 predict about &lt;math>y(t)&lt;/math> for large t? What should happen analytically (based on your analysis in [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)|part (a)]])?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "7 (c)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>Implementing the same notation as in <span>part (b)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(2) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 2(-3/8) = 3/4.\\end{aligned}\\]</span></p>\n<p>We observe that <span class=\"math\">\\(0 &lt; y_1 &lt; 1\\)</span> and that <span class=\"math\">\\(\\frac{dy}{dt}|_{y=3/4} &lt; 0\\)</span> so that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_2 = y_1 + h \\frac{dy}{dt}|_{y=3/4} &lt; y_1.\\end{aligned}\\]</span></p>\n<p>Given the information we know from <span>part (a)</span> that solution curves passing through a point <span class=\"math\">\\(y_0 &lt; 1\\)</span> approach <span class=\"math\">\\(y=0\\)</span> we anticipate that if these approximations were to carry on for a long time, the approximations would (likely) approach <span class=\"math\">\\(y=0\\)</span>.</p>\n<p>This disagrees with the prediction in <span>part (a)</span> in that if <span class=\"math\">\\(y(0) = 3/2\\)</span>, the exact solution curve should approach <span class=\"math\">\\(y=1\\)</span> as <span class=\"math\">\\(t \\rightarrow \\infty\\)</span>. The step size of <span class=\"math\">\\(h=2\\)</span> is too large a step to take to accurately resolve the exact solution of the initial value problem.</p>\n"
+    ], 
+    "sols_latex": [
+        "Implementing the same notation as in\n{part\n(b)}, we have\n\n\\begin{align*}\ny(2) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 2(-3/8) = 3/4.\n\\end{align*}\n\nWe observe that $0 < y_1 < 1$ and that $\\frac{dy}{dt}|_{y=3/4} < 0$ so\nthat\n\n\\begin{align*}\ny_2 = y_1 + h \\frac{dy}{dt}|_{y=3/4} < y_1.\n\\end{align*}\n\nGiven the information we know from\n{part\n(a)} that solution curves passing through a point $y_0 < 1$ approach\n$y=0$ we anticipate that if these approximations were to carry on for a\nlong time, the approximations would (likely) approach $y=0$.\n\nThis disagrees with the prediction in\n{part\n(a)} in that if $y(0) = 3/2$, the exact solution curve should approach\n$y=1$ as $t \\rightarrow \\infty$. The step size of $h=2$ is too large a\nstep to take to accurately resolve the exact solution of the initial\nvalue problem."
+    ], 
+    "sols_raw": [
+        "Implementing the same notation as in [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(b)|part (b)]], we have\n\n:&lt;math>y(2) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 2(-3/8) = 3/4.&lt;/math>\n\nWe observe that &lt;math>0 &lt; y_1 &lt; 1&lt;/math> and that &lt;math>\\frac{dy}{dt}|_{y=3/4} &lt; 0&lt;/math> so that\n:&lt;math>y_2 = y_1 + h \\frac{dy}{dt}|_{y=3/4} &lt; y_1&lt;/math>.\n\nGiven the information we know from [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)|part (a)]] that solution curves passing through a point &lt;math>y_0 &lt; 1&lt;/math> approach &lt;math>y=0&lt;/math> we anticipate that if these approximations were to carry on for a long time, the approximations would (likely) approach &lt;math>y=0&lt;/math>.\n\nThis disagrees with the prediction in [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)|part (a)]] in that if &lt;math>y(0) = 3/2&lt;/math>, the exact solution curve should approach &lt;math>y=1&lt;/math> as &lt;math>t \\rightarrow \\infty&lt;/math>. The step size of &lt;math>h=2&lt;/math> is too large a step to take to accurately resolve the exact solution of the initial value problem.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Consider the following initial value problem for a first-order autonomous ODE:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{aligned}\\]</span></p>\n<p>(c) Again if <span class=\"math\">\\(y_0 = 3/2\\)</span>, use Euler<span class=\"math\">\\(^{\\prime}\\)</span>s method with the larger step size <span class=\"math\">\\(h = 2\\)</span> to approximate the solution <span class=\"math\">\\(y(2)\\)</span> at time <span class=\"math\">\\(t=2\\)</span>. Predict what will happen if you continue to use this scheme (with <span class=\"math\">\\(h=2\\)</span>) to approximate <span class=\"math\">\\(y(t)\\)</span> for large <span class=\"math\">\\(t\\)</span>. Compare this with your result from <span>part (a)</span>, and explain any discrepancies.</p>\n", 
+    "statement_latex": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\n\\end{align*}\n\n(c) Again if $y_0 = 3/2$, use Euler$^{\\prime}$s method with the larger\nstep size $h = 2$ to approximate the solution $y(2)$ at time $t=2$.\nPredict what will happen if you continue to use this scheme (with $h=2$)\nto approximate $y(t)$ for large $t$. Compare this with your result from\n{part\n(a)}, and explain any discrepancies.", 
+    "statement_raw": "Consider the following initial value problem for a first-order autonomous ODE: \n\n:&lt;math>\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0&lt;/math>\n\n(c) Again if &lt;math>y_0 = 3/2&lt;/math>, use Euler\u2019s method with the larger step size &lt;math>h = 2&lt;/math> to approximate the solution &lt;math>y(2)&lt;/math> at time &lt;math>t=2&lt;/math>. Predict what will happen if you continue to use this scheme (with &lt;math>h=2&lt;/math>) to approximate &lt;math>y(t)&lt;/math> for large &lt;math>t&lt;/math>. Compare this with your result from [[Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(a)|part (a)]], and explain any discrepancies.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(c)", 
+    "year": 2013
 }

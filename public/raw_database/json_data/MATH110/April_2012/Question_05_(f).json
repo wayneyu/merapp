@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_05_(f)", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{align*}\n\n\\textbf{(f)} Determine where $f$ is concave up and where it is concave\ndown.", 
-    "year": 2012, 
-    "sols": [
-        "From the previous question, we know that\n\n\\begin{align*}f'(x) = \\frac{-4x}{(x^2 - 1)^2}.\\end{align*}\n\nUsing the quotient rule, we calculate the second derivative\n\n\\begin{align*} f''(x) &= \\frac{-4(x^2 - 1)^2 - (-4x)(2(x^2 - 1)(2x))}{(x^2 - 1)^4} \\\\\n&= \\frac{-4(x^2 - 1)^2 +16x^2(x^2 - 1)}{(x^2 - 1)^4} \\\\\n&= \\frac{-4(x^2 -1) + 16x^2}{(x^2 - 1)^3} \\\\\n&= \\frac{12x^2 + 4}{(x^2 - 1)^3} \\\\ \\end{align*}\n\nFor this fraction, the numerator is always positive so we need only\ncheck the sign of the denominator. The denominator is zero when\n$x = \\pm 1$. For $x < -1$, the denominator is positive, for $-1 < x < 1$\nthe denominator is negative, and then for $x > 1$ the denominator is\nagain positive. Thus we have that the function is concave up on\n$(-\\infty, -1) \\cup (1, \\infty)$ and concave down on $(-1, 1)$."
+    "answer_html": "<p>Thus we have that the function is concave up on <span class=\"math\">\\((-\\infty, -1) \\cup (1, \\infty)\\)</span> and concave down on <span class=\"math\">\\((-1, 1)\\)</span>.</p>\n", 
+    "answer_latex": "Thus we have that the function is concave up on\n$(-\\infty, -1) \\cup (1, \\infty)$ and concave down on $(-1, 1)$.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>We determine whether <em>f</em> is concave up or concave down by checking the sign of the second derivative, <span class=\"math\">\\(f&#39;&#39;\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "We determine whether \\emph{f} is concave up or concave down by checking\nthe sign of the second derivative, $f''$."
-    ]
+    ], 
+    "hints_raw": [
+        "We determine whether ''f'' is concave up or concave down by checking the sign of the second derivative, &lt;math>f''&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From the previous question, we know that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\frac{-4x}{(x^2 - 1)^2}.\\end{aligned}\\]</span></p>\n<p>Using the quotient rule, we calculate the second derivative</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x) &amp;= \\frac{-4(x^2 - 1)^2 - (-4x)(2(x^2 - 1)(2x))}{(x^2 - 1)^4} \\\\\n&amp;= \\frac{-4(x^2 - 1)^2 +16x^2(x^2 - 1)}{(x^2 - 1)^4} \\\\\n&amp;= \\frac{-4(x^2 -1) + 16x^2}{(x^2 - 1)^3} \\\\\n&amp;= \\frac{12x^2 + 4}{(x^2 - 1)^3} \\\\ \\end{aligned}\\]</span></p>\n<p>For this fraction, the numerator is always positive so we need only check the sign of the denominator. The denominator is zero when <span class=\"math\">\\(x = \\pm 1\\)</span>. For <span class=\"math\">\\(x &lt; -1\\)</span>, the denominator is positive, for <span class=\"math\">\\(-1 &lt; x &lt; 1\\)</span> the denominator is negative, and then for <span class=\"math\">\\(x &gt; 1\\)</span> the denominator is again positive. Thus we have that the function is concave up on <span class=\"math\">\\((-\\infty, -1) \\cup (1, \\infty)\\)</span> and concave down on <span class=\"math\">\\((-1, 1)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the previous question, we know that\n\n\\begin{align*}\nf'(x) = \\frac{-4x}{(x^2 - 1)^2}.\n\\end{align*}\n\nUsing the quotient rule, we calculate the second derivative\n\n\\begin{align*}\nf''(x) &= \\frac{-4(x^2 - 1)^2 - (-4x)(2(x^2 - 1)(2x))}{(x^2 - 1)^4} \\\\\n&= \\frac{-4(x^2 - 1)^2 +16x^2(x^2 - 1)}{(x^2 - 1)^4} \\\\\n&= \\frac{-4(x^2 -1) + 16x^2}{(x^2 - 1)^3} \\\\\n&= \\frac{12x^2 + 4}{(x^2 - 1)^3} \\\\ \n\\end{align*}\n\nFor this fraction, the numerator is always positive so we need only\ncheck the sign of the denominator. The denominator is zero when\n$x = \\pm 1$. For $x < -1$, the denominator is positive, for $-1 < x < 1$\nthe denominator is negative, and then for $x > 1$ the denominator is\nagain positive. Thus we have that the function is concave up on\n$(-\\infty, -1) \\cup (1, \\infty)$ and concave down on $(-1, 1)$."
+    ], 
+    "sols_raw": [
+        "From the previous question, we know that\n\n: &lt;math>f'(x) = \\frac{-4x}{(x^2 - 1)^2}&lt;/math>.  \n\nUsing the quotient rule, we calculate the second derivative\n\n: &lt;math> \\begin{align} f''(x) &amp;= \\frac{-4(x^2 - 1)^2 - (-4x)(2(x^2 - 1)(2x))}{(x^2 - 1)^4} \\\\\n&amp;= \\frac{-4(x^2 - 1)^2 +16x^2(x^2 - 1)}{(x^2 - 1)^4} \\\\\n&amp;= \\frac{-4(x^2 -1) + 16x^2}{(x^2 - 1)^3} \\\\\n&amp;= \\frac{12x^2 + 4}{(x^2 - 1)^3} \\\\ \\end{align} &lt;/math>\n\nFor this fraction, the numerator is always positive so we need only check the sign of the denominator.  The denominator is zero when &lt;math>x = \\pm 1&lt;/math>.  For &lt;math>x &lt; -1 &lt;/math>, the denominator is positive, for &lt;math>-1 &lt; x &lt; 1&lt;/math> the denominator is negative, and then for &lt;math>x > 1&lt;/math> the denominator is again positive.  Thus we have that the function is concave up on &lt;math>(-\\infty, -1) \\cup (1, \\infty)&lt;/math> and concave down on &lt;math>(-1, 1)&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{aligned}\\]</span></p>\n<p><strong>(f)</strong> Determine where <span class=\"math\">\\(f\\)</span> is concave up and where it is concave down.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n\\end{align*}\n\n\\textbf{(f)} Determine where $f$ is concave up and where it is concave\ndown.", 
+    "statement_raw": "Let\n:&lt;math> \\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n&lt;/math>\n\n'''(f)''' Determine where &amp;fnof; is concave up and where it is concave down.\n", 
+    "term": "April", 
+    "topics": [
+        "Concavity", 
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2012/Question_05_(f)", 
+    "year": 2012
 }

@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
+    "answer_html": "<p>This limit is 0 since as <em>n</em> tends to infinity, the denominator tends to infinity.</p>\n", 
+    "answer_latex": "This limit is 0 since as \\emph{n} tends to infinity, the denominator\ntends to infinity.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH103", 
-    "statement": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence $\\left( \\frac{1}{n(\\ln n)}\\right)_{n \\geq 1}$\nconverge? If it does, calculate the limit.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What happens to the denominator as <em>n</em> grows large?</p>\n"
+    ], 
+    "hints_latex": [
+        "What happens to the denominator as \\emph{n} grows large?"
+    ], 
+    "hints_raw": [
+        "What happens to the denominator as ''n'' grows large?\n"
+    ], 
+    "num_votes": 19, 
+    "question": "1 (d)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>This limit is 0 since as <em>n</em> tends to infinity, the denominator tends to infinity.</p>\n"
+    ], 
+    "sols_latex": [
         "This limit is 0 since as \\emph{n} tends to infinity, the denominator\ntends to infinity."
     ], 
-    "hints": [
-        "What happens to the denominator as \\emph{n} grows large?"
-    ]
+    "sols_raw": [
+        "This limit is 0 since as ''n'' tends to infinity, the denominator tends to infinity.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)</strong></p>\n<p>Does the sequence <span class=\"math\">\\(\\left( \\frac{1}{n(\\ln n)}\\right)_{n \\geq 1}\\)</span> converge? If it does, calculate the limit.</p>\n", 
+    "statement_latex": "\\textbf{Sequences and Series: Short Answer Problems - Determine whether\nthe following sequences and series converge (full marks for correct\nanswer with justification; work must be shown for partial marks)}\n\nDoes the sequence $\\left( \\frac{1}{n(\\ln n)}\\right)_{n \\geq 1}$\nconverge? If it does, calculate the limit.", 
+    "statement_raw": "'''Sequences and Series: Short Answer Problems - Determine whether the following sequences and series converge (full marks for correct answer with justification; work must be shown for partial marks)'''\n\nDoes the sequence &lt;math> \\left( \\frac{1}{n(\\ln n)}\\right)_{n \\geq 1} &lt;/math> converge? If it does, calculate the limit.\n", 
+    "term": "April", 
+    "topics": [
+        "Sequences"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_01_(d)", 
+    "year": 2013
 }

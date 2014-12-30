@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_05_(b)", 
-    "course": "MATH110", 
-    "statement": "Differentiate the following function.\n\n\\begin{align*}g(x) = e^{\\sqrt{x}}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Here we will be using the chain rule:\n\n\\begin{align*}\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\\end{align*}\n\nHere we have that\n\n\\begin{align*}\\displaystyle\np(x) = e^x \\quad q(x) = \\sqrt{x}\\end{align*}\n\nAnd so\n\n\\begin{align*}\ng'(x) &= p'(q(x)) \\cdot q'(x) \\\\\n&= e^{\\sqrt{x}} \\left( \\frac{1}{2\\sqrt{x}} \\right) \\\\\n&= \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(g&#39;(x)=\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\\)</span></p>\n", 
+    "answer_latex": " $g'(x)=\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Which differentiation rule will you need here?</p>\n"
+    ], 
+    "hints_latex": [
         "Which differentiation rule will you need here?"
-    ]
+    ], 
+    "hints_raw": [
+        "Which differentiation rule will you need here?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Here we will be using the chain rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n( p(q(x)) )&#39; = p&#39;(q(x)) \\cdot q&#39;(x)\\end{aligned}\\]</span></p>\n<p>Here we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np(x) = e^x \\quad q(x) = \\sqrt{x}\\end{aligned}\\]</span></p>\n<p>And so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng&#39;(x) &amp;= p&#39;(q(x)) \\cdot q&#39;(x) \\\\\n&amp;= e^{\\sqrt{x}} \\left( \\frac{1}{2\\sqrt{x}} \\right) \\\\\n&amp;= \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Here we will be using the chain rule:\n\n\\begin{align*}\n\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n\\end{align*}\n\nHere we have that\n\n\\begin{align*}\n\\displaystyle\np(x) = e^x \\quad q(x) = \\sqrt{x}\n\\end{align*}\n\nAnd so\n\n\\begin{align*}\ng'(x) &= p'(q(x)) \\cdot q'(x) \\\\\n&= e^{\\sqrt{x}} \\left( \\frac{1}{2\\sqrt{x}} \\right) \\\\\n&= \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Here we will be using the chain rule:\n:&lt;math>\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n&lt;/math>\n\nHere we have that\n:&lt;math>\\displaystyle\np(x) = e^x \\quad q(x) = \\sqrt{x}\n&lt;/math>\n\nAnd so\n:&lt;math>\\begin{align}\ng'(x) &amp;= p'(q(x)) \\cdot q'(x) \\\\\n&amp;= e^{\\sqrt{x}} \\left( \\frac{1}{2\\sqrt{x}} \\right) \\\\\n&amp;= \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Differentiate the following function.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(x) = e^{\\sqrt{x}}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Differentiate the following function.\n\n\\begin{align*}\ng(x) = e^{\\sqrt{x}}\n\\end{align*}", 
+    "statement_raw": "Differentiate the following function.\n\n: &lt;math>g(x) = e^{\\sqrt{x}} &lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_05_(b)", 
+    "year": 2011
 }

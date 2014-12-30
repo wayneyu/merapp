@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_07_(d)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = x^2 - 6x$ and let \\emph{P} be the point (4, -12).\n\nd) Find the slopes of all lines through \\emph{P} which are also tangent\nto the curve $y = f(x)$.", 
-    "year": 2011, 
-    "sols": [
-        "This question is asking which lines through $P$ are also tangent lines\nto the curve. In order for a line through P to be a tangent line, it\nmust pass through a point on the curve. We found the slope of such a\nline in part (b). Furthermore, the slope between that point and P must\nbe equal to the value of the derivative at that point. which is what we\nfound in part (c).\n\nWe know that the slope of a line between \\emph{P (4, -12)} and a point\n(\\emph{a}, \\emph{a}\\textsuperscript{2} - 6\\emph{a}) on the curve is:\n\n\\begin{align*}-\\frac{a^2-6a+12}{4-a}\\end{align*}\n\nThe slope of the tangent line at the same point on the curve, (\\emph{a},\n\\emph{a}\\textsuperscript{2} - 6\\emph{a}) is:\n\n\\begin{align*}\\displaystyle\n2a - 6\\end{align*}\n\nWe set these two slopes equal to each other and solve for \\emph{a}.\n\n\\begin{align*}\n-\\frac{a^2-6a+12}{4-a} &= 2a - 6 \\\\\n-(a^2-6a+12) &= (2a - 6)(4-a) \\\\\n-a^2+6a-12) &= -2a^2+ 14a -24 \\\\\na^2-8a+12) &= 0 \\\\\n(a - 6) (a - 2) &= 0 \\end{align*}\n\nSo \\emph{a = 2} and \\emph{a = 6}. Plugging these back into our original\nslopes (either one will work, since we have found the values where the\ntwo are equal) we get the two slopes of 6 and -2."
+    "answer_html": "<p>So <em>a = 2</em> and <em>a = 6</em>.Plugging these back into our original slopes (either one will work, since we have found the values where the two are equal) we get the two slopes of 6 and -2.</p>\n", 
+    "answer_latex": "So \\emph{a = 2} and \\emph{a = 6}.Plugging these back into our original\nslopes (either one will work, since we have found the values where the\ntwo are equal) we get the two slopes of 6 and -2.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Suppose we have a tangent line at a point on the curve, and a line between the same point on the curve and P. If the two lines are equal, what is true about their slopes?</p>\n"
+    ], 
+    "hints_latex": [
         "Suppose we have a tangent line at a point on the curve, and a line\nbetween the same point on the curve and P. If the two lines are equal,\nwhat is true about their slopes?"
-    ]
+    ], 
+    "hints_raw": [
+        "Suppose we have a tangent line at a point on the curve, and a line between the same point on the curve and P.   If the two lines are equal, what is true about their slopes?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>This question is asking which lines through <span class=\"math\">\\(P\\)</span> are also tangent lines to the curve. In order for a line through P to be a tangent line, it must pass through a point on the curve. We found the slope of such a line in part (b). Furthermore, the slope between that point and P must be equal to the value of the derivative at that point. which is what we found in part (c).</p>\n<p>We know that the slope of a line between <em>P (4, -12)</em> and a point (<em>a</em>, <em>a</em><sup>2</sup> - 6<em>a</em>) on the curve is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{a^2-6a+12}{4-a}\\end{aligned}\\]</span></p>\n<p>The slope of the tangent line at the same point on the curve, (<em>a</em>, <em>a</em><sup>2</sup> - 6<em>a</em>) is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n2a - 6\\end{aligned}\\]</span></p>\n<p>We set these two slopes equal to each other and solve for <em>a</em>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{a^2-6a+12}{4-a} &amp;= 2a - 6 \\\\\n-(a^2-6a+12) &amp;= (2a - 6)(4-a) \\\\\n-a^2+6a-12) &amp;= -2a^2+ 14a -24 \\\\\na^2-8a+12) &amp;= 0 \\\\\n(a - 6) (a - 2) &amp;= 0 \\end{aligned}\\]</span></p>\n<p>So <em>a = 2</em> and <em>a = 6</em>. Plugging these back into our original slopes (either one will work, since we have found the values where the two are equal) we get the two slopes of 6 and -2.</p>\n"
+    ], 
+    "sols_latex": [
+        "This question is asking which lines through $P$ are also tangent lines\nto the curve. In order for a line through P to be a tangent line, it\nmust pass through a point on the curve. We found the slope of such a\nline in part (b). Furthermore, the slope between that point and P must\nbe equal to the value of the derivative at that point. which is what we\nfound in part (c).\n\nWe know that the slope of a line between \\emph{P (4, -12)} and a point\n(\\emph{a}, \\emph{a}\\textsuperscript{2} - 6\\emph{a}) on the curve is:\n\n\\begin{align*}\n-\\frac{a^2-6a+12}{4-a}\n\\end{align*}\n\nThe slope of the tangent line at the same point on the curve, (\\emph{a},\n\\emph{a}\\textsuperscript{2} - 6\\emph{a}) is:\n\n\\begin{align*}\n\\displaystyle\n2a - 6\n\\end{align*}\n\nWe set these two slopes equal to each other and solve for \\emph{a}.\n\n\\begin{align*}\n-\\frac{a^2-6a+12}{4-a} &= 2a - 6 \\\\\n-(a^2-6a+12) &= (2a - 6)(4-a) \\\\\n-a^2+6a-12) &= -2a^2+ 14a -24 \\\\\na^2-8a+12) &= 0 \\\\\n(a - 6) (a - 2) &= 0 \n\\end{align*}\n\nSo \\emph{a = 2} and \\emph{a = 6}. Plugging these back into our original\nslopes (either one will work, since we have found the values where the\ntwo are equal) we get the two slopes of 6 and -2."
+    ], 
+    "sols_raw": [
+        "This question is asking which lines through &lt;math>P&lt;/math> are also tangent lines to the curve.  In order for a line through P to be a tangent line, it must pass through a point on the curve.  We found the slope of such a line in part (b).  Furthermore, the slope between that point and P must be equal to the value of the derivative at that point. which is what we found in part (c).  \n\nWe know that the slope of a line between ''P (4, -12)'' and a point (''a'', ''a''&lt;sup>2&lt;/sup> - 6''a'') on the curve is:  \n\n:&lt;math>\n-\\frac{a^2-6a+12}{4-a}\n&lt;/math>\n\nThe slope of the tangent line at the same point on the curve, (''a'', ''a''&lt;sup>2&lt;/sup> - 6''a'') is: \n\n:&lt;math>\\displaystyle\n2a - 6\n&lt;/math>\n\nWe set these two slopes equal to each other and solve for ''a''.  \n\n:&lt;math>\\begin{align}\n-\\frac{a^2-6a+12}{4-a} &amp;= 2a - 6 \\\\\n-(a^2-6a+12) &amp;= (2a - 6)(4-a) \\\\\n-a^2+6a-12) &amp;= -2a^2+ 14a -24 \\\\\na^2-8a+12) &amp;= 0 \\\\\n(a - 6) (a - 2) &amp;= 0 \\end{align}&lt;/math>\n\nSo ''a = 2'' and ''a = 6''.  Plugging these back into our original slopes (either one will work, since we have found the values where the two are equal) we get the two slopes of 6 and -2.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = x^2 - 6x\\)</span> and let <em>P</em> be the point (4, -12).</p>\n<p>d) Find the slopes of all lines through <em>P</em> which are also tangent to the curve <span class=\"math\">\\(y = f(x)\\)</span>.</p>\n", 
+    "statement_latex": "Let $f(x) = x^2 - 6x$ and let \\emph{P} be the point (4, -12).\n\nd) Find the slopes of all lines through \\emph{P} which are also tangent\nto the curve $y = f(x)$.", 
+    "statement_raw": "Let &lt;math>f(x) = x^2 - 6x &lt;/math> and let ''P'' be the point (4, -12).  \n\nd) Find the slopes of all lines through ''P'' which are also tangent to the curve &lt;math>y = f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_07_(d)", 
+    "year": 2011
 }

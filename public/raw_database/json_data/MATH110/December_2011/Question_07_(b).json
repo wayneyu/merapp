@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_07_(b)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x)$ = \\emph{x}\\textsuperscript{2} - 6\\emph{x} and let\n\\emph{P} be the point (4, -12).\n\nb) Find the slope of the line between \\emph{P} and a point (\\emph{a},\n\\emph{a}\\textsuperscript{2} - 6\\emph{a}) on the curve \\emph{y} =\n$f(x)$.", 
-    "year": 2011, 
-    "sols": [
-        "We have two points:\n\n\\begin{align*}\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\\end{align*}\n\nSo the slope, \\emph{m}, of the line going through these two points is\nthe ratio of rise (change in the y-coordinates) over run (change in the\nx-coordinates):\n\n\\begin{align*}m = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(m=-\\frac{a^2-6a+12}{4-a}\\)</span></p>\n", 
+    "answer_latex": " $m=-\\frac{a^2-6a+12}{4-a}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The slope of a line is the ratio of rise over run.</p>\n"
+    ], 
+    "hints_latex": [
         "The slope of a line is the ratio of rise over run."
-    ]
+    ], 
+    "hints_raw": [
+        "The slope of a line is the ratio of rise over run.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We have two points:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\\end{aligned}\\]</span></p>\n<p>So the slope, <em>m</em>, of the line going through these two points is the ratio of rise (change in the y-coordinates) over run (change in the x-coordinates):</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nm = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We have two points:\n\n\\begin{align*}\n\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\n\\end{align*}\n\nSo the slope, \\emph{m}, of the line going through these two points is\nthe ratio of rise (change in the y-coordinates) over run (change in the\nx-coordinates):\n\n\\begin{align*}\nm = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We have two points:\n:&lt;math>\\displaystyle\n(4, -12) \\qquad (a, a^2-6a)\n&lt;/math>\n\nSo the slope, ''m'', of the line going through these two points is the ratio of rise (change in the y-coordinates) over run (change in the x-coordinates): \n:&lt;math>\nm = \\frac{(-12) - (a^2-6a)}{4-a} = -\\frac{a^2-6a+12}{4-a}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x)\\)</span> = <em>x</em><sup>2</sup> - 6<em>x</em> and let <em>P</em> be the point (4, -12).</p>\n<p>b) Find the slope of the line between <em>P</em> and a point (<em>a</em>, <em>a</em><sup>2</sup> - 6<em>a</em>) on the curve <em>y</em> = <span class=\"math\">\\(f(x)\\)</span>.</p>\n", 
+    "statement_latex": "Let $f(x)$ = \\emph{x}\\textsuperscript{2} - 6\\emph{x} and let\n\\emph{P} be the point (4, -12).\n\nb) Find the slope of the line between \\emph{P} and a point (\\emph{a},\n\\emph{a}\\textsuperscript{2} - 6\\emph{a}) on the curve \\emph{y} =\n$f(x)$.", 
+    "statement_raw": "Let &amp;fnof;(''x'') = ''x''&lt;sup>2&lt;/sup> - 6''x'' and let ''P'' be the point (4, -12).  \n\nb) Find the slope of the line between ''P'' and a point (''a'', ''a''&lt;sup>2&lt;/sup> - 6''a'') on the curve ''y'' = &amp;fnof;(''x'').\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_07_(b)", 
+    "year": 2011
 }

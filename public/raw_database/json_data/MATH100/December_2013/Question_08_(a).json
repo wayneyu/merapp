@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_08_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nLet $\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7}$. Find the critical\nnumbers of $\\displaystyle y=f(x)$.", 
-    "year": 2013, 
-    "sols": [
-        "By the definition of a \\textbf{critical number}, we must find the $x$\nfor which $\\displaystyle f'(x) = 0$ or for which $\\displaystyle f'(x)$\ndoes not exist:\n\n\\begin{align*}\nf(x) &= 63 x^{\\frac{2}{7}} - 14 x^{\\frac{9}{7}}\n\\\\ f'(x) &= \\frac{2}{7} \\cdot 63 x^{\\frac{2}{7} - 1} - \\frac{9}{7} \\cdot 14 x^{\\frac{9}{7} - 1}\n\\\\ &= 18x^{-\\frac{5}{7}} - 18x^{\\frac{2}{7}}\n\\\\ &= 18x^{-\\frac{5}{7}}(1 - x)\\end{align*}\n\nSetting $\\displaystyle f'(x) = 0$ and applying the zero product\nproperty:\n\n\\begin{align*}\n18x^{-\\frac{5}{7}}(1 - x) &= 0\n\\\\ 18x^{-\\frac{5}{7}} = 0 ,\\,\\,\\,\\, 1-x &= 0\n\\\\ {\\color{red} \\frac{18}{x^{\\frac{5}{7}}} = 0,}\\,\\,\\,\\, 1-x &= 0\n\\\\ x &= 1\\end{align*}\n\nNote that $18x^{-\\frac{5}{7}}$ is never equal to zero on the interval\n$(-\\infty, \\infty)$. However, $18x^{-\\frac{5}{7}}$ is undefined at\n$x = 0$, so $\\displaystyle f'(x)$ does not exist at $x = 0$.\n\nTherefore the critical numbers of $f$ are $x = {\\color{blue} 0,1}$."
+    "answer_html": "<p>Therefore the critical numbers of <span class=\"math\">\\(f\\)</span> are <span class=\"math\">\\(x = {\\color{blue} 0,1}\\)</span>.</p>\n", 
+    "answer_latex": "Therefore the critical numbers of $f$ are $x = {\\color{blue} 0,1}$.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p><span class=\"math\">\\(x\\)</span> is said to be a <strong>critical number</strong>/point of <span class=\"math\">\\(f\\)</span> if the slope of the tangent line to <span class=\"math\">\\(f\\)</span> at <span class=\"math\">\\(x\\)</span> is 0, or if the slope does not exist.</p>\n"
+    ], 
+    "hints_latex": [
         "$x$ is said to be a \\textbf{critical number}/point of $f$ if the slope\nof the tangent line to $f$ at $x$ is 0, or if the slope does not exist."
-    ]
+    ], 
+    "hints_raw": [
+        "&lt;math>x&lt;/math> is said to be a '''critical number'''/point of &lt;math>f&lt;/math> if the slope of the tangent line to &lt;math>f&lt;/math> at &lt;math>x&lt;/math> is 0, or if the slope does not exist.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "8 (a)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>By the definition of a <strong>critical number</strong>, we must find the <span class=\"math\">\\(x\\)</span> for which <span class=\"math\">\\(\\displaystyle f&#39;(x) = 0\\)</span> or for which <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> does not exist:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= 63 x^{\\frac{2}{7}} - 14 x^{\\frac{9}{7}}\n\\\\ f&#39;(x) &amp;= \\frac{2}{7} \\cdot 63 x^{\\frac{2}{7} - 1} - \\frac{9}{7} \\cdot 14 x^{\\frac{9}{7} - 1}\n\\\\ &amp;= 18x^{-\\frac{5}{7}} - 18x^{\\frac{2}{7}}\n\\\\ &amp;= 18x^{-\\frac{5}{7}}(1 - x)\\end{aligned}\\]</span></p>\n<p>Setting <span class=\"math\">\\(\\displaystyle f&#39;(x) = 0\\)</span> and applying the zero product property:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n18x^{-\\frac{5}{7}}(1 - x) &amp;= 0\n\\\\ 18x^{-\\frac{5}{7}} = 0 ,\\,\\,\\,\\, 1-x &amp;= 0\n\\\\ {\\color{red} \\frac{18}{x^{\\frac{5}{7}}} = 0,}\\,\\,\\,\\, 1-x &amp;= 0\n\\\\ x &amp;= 1\\end{aligned}\\]</span></p>\n<p>Note that <span class=\"math\">\\(18x^{-\\frac{5}{7}}\\)</span> is never equal to zero on the interval <span class=\"math\">\\((-\\infty, \\infty)\\)</span>. However, <span class=\"math\">\\(18x^{-\\frac{5}{7}}\\)</span> is undefined at <span class=\"math\">\\(x = 0\\)</span>, so <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> does not exist at <span class=\"math\">\\(x = 0\\)</span>.</p>\n<p>Therefore the critical numbers of <span class=\"math\">\\(f\\)</span> are <span class=\"math\">\\(x = {\\color{blue} 0,1}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "By the definition of a \\textbf{critical number}, we must find the $x$\nfor which $\\displaystyle f'(x) = 0$ or for which $\\displaystyle f'(x)$\ndoes not exist:\n\n\\begin{align*}\nf(x) &= 63 x^{\\frac{2}{7}} - 14 x^{\\frac{9}{7}}\n\\\\ f'(x) &= \\frac{2}{7} \\cdot 63 x^{\\frac{2}{7} - 1} - \\frac{9}{7} \\cdot 14 x^{\\frac{9}{7} - 1}\n\\\\ &= 18x^{-\\frac{5}{7}} - 18x^{\\frac{2}{7}}\n\\\\ &= 18x^{-\\frac{5}{7}}(1 - x)\n\\end{align*}\n\nSetting $\\displaystyle f'(x) = 0$ and applying the zero product\nproperty:\n\n\\begin{align*}\n18x^{-\\frac{5}{7}}(1 - x) &= 0\n\\\\ 18x^{-\\frac{5}{7}} = 0 ,\\,\\,\\,\\, 1-x &= 0\n\\\\ {\\color{red} \\frac{18}{x^{\\frac{5}{7}}} = 0,}\\,\\,\\,\\, 1-x &= 0\n\\\\ x &= 1\n\\end{align*}\n\nNote that $18x^{-\\frac{5}{7}}$ is never equal to zero on the interval\n$(-\\infty, \\infty)$. However, $18x^{-\\frac{5}{7}}$ is undefined at\n$x = 0$, so $\\displaystyle f'(x)$ does not exist at $x = 0$.\n\nTherefore the critical numbers of $f$ are $x = {\\color{blue} 0,1}$."
+    ], 
+    "sols_raw": [
+        "By the definition of a '''critical number''', we must find the &lt;math>x&lt;/math> for which &lt;math>\\displaystyle f'(x) = 0&lt;/math> or for which &lt;math>\\displaystyle f'(x)&lt;/math> does not exist:\n\n&lt;math>\n\\begin{align}\nf(x) &amp;= 63 x^{\\frac{2}{7}} - 14 x^{\\frac{9}{7}}\n\\\\ f'(x) &amp;= \\frac{2}{7} \\cdot 63 x^{\\frac{2}{7} - 1} - \\frac{9}{7} \\cdot 14 x^{\\frac{9}{7} - 1}\n\\\\ &amp;= 18x^{-\\frac{5}{7}} - 18x^{\\frac{2}{7}}\n\\\\ &amp;= 18x^{-\\frac{5}{7}}(1 - x)\n\\end{align}\n&lt;/math>\n\n&lt;br>Setting &lt;math>\\displaystyle f'(x) = 0&lt;/math> and applying the zero product property:\n\n&lt;math>\n\\begin{align}\n18x^{-\\frac{5}{7}}(1 - x) &amp;= 0\n\\\\ 18x^{-\\frac{5}{7}} = 0 ,\\,\\,\\,\\, 1-x &amp;= 0\n\\\\ {\\color{red} \\frac{18}{x^{\\frac{5}{7}}} = 0 ,}\\,\\,\\,\\, 1-x &amp;= 0\n\\\\ x &amp;= 1\n\\end{align}\n&lt;/math>\n\n&lt;br> Note that &lt;math>18x^{-\\frac{5}{7}}&lt;/math> is never equal to zero on the interval &lt;math>(-\\infty, \\infty)&lt;/math>. However, &lt;math>18x^{-\\frac{5}{7}}&lt;/math> is undefined at &lt;math> x = 0 &lt;/math>, so &lt;math>\\displaystyle f'(x)&lt;/math> does not exist at &lt;math> x = 0 &lt;/math>.\n\nTherefore the critical numbers of &lt;math>f&lt;/math> are &lt;math> x = {\\color{blue} 0, 1}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "NicholasHu"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem. Justify your answer and show your work. Full simplification of numerical answers is required unless explicitly stated otherwise.</strong></p>\n<p>Let <span class=\"math\">\\(\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7}\\)</span>. Find the critical numbers of <span class=\"math\">\\(\\displaystyle y=f(x)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nLet $\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7}$. Find the critical\nnumbers of $\\displaystyle y=f(x)$.", 
+    "statement_raw": "'''Full-Solution Problem. Justify your answer and show your work. Full simplification of numerical answers is required unless explicitly stated otherwise.'''\n\nLet &lt;math>\\displaystyle y = f(x) = 63x^{2/7}-14x^{9/7} &lt;/math>. Find the critical numbers of &lt;math>\\displaystyle  y=f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching", 
+        "Power_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_08_(a)", 
+    "year": 2013
 }

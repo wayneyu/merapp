@@ -1,14 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH110", 
-    "statement": "Find the domain of the function\n\n\\begin{align*}g(x) = \\frac{1}{\\sin(x)}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "The function \\emph{g}(\\emph{x}) is undefined wherever the denominator is\nzero. Thus we need to know where $\\sin(x) = 0$.\n\nBased on the unit circle, we know that $\\sin(x)$ is zero at the angles\n0, $\\pi$, 2$\\pi$, 3$\\pi$, ... Thus, these points can not be included in the domain\nof \\emph{g}.\n\nSo our domain is:\n\n$\\displaystyle \\{ x : x \\not= n\\pi \\}$ where \\emph{n} is an integer."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle \\{ x : x \\not= n\\pi \\}\\)</span> where <em>n</em> is an integer.</p>\n", 
+    "answer_latex": "$\\displaystyle \\{ x : x \\not= n\\pi \\}$ where \\emph{n} is an integer.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What value in the denominator will make a function undefined?</p>\n", 
+        "<p>Where is <span class=\"math\">\\(\\sin (x) = 0\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "What value in the denominator will make a function undefined?", 
         "Where is $\\sin (x) = 0$?"
-    ]
+    ], 
+    "hints_raw": [
+        "What value in the denominator will make a function undefined?\n", 
+        "Where is &lt;math>\\sin (x) = 0&lt;/math>?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The function <em>g</em>(<em>x</em>) is undefined wherever the denominator is zero. Thus we need to know where <span class=\"math\">\\(\\sin(x) = 0\\)</span>.</p>\n<p>Based on the unit circle, we know that <span class=\"math\">\\(\\sin(x)\\)</span> is zero at the angles 0, <span class=\"math\">\\(\\pi\\)</span>, 2<span class=\"math\">\\(\\pi\\)</span>, 3<span class=\"math\">\\(\\pi\\)</span>, ... Thus, these points can not be included in the domain of <em>g</em>.</p>\n<p>So our domain is:</p>\n<p><span class=\"math\">\\(\\displaystyle \\{ x : x \\not= n\\pi \\}\\)</span> where <em>n</em> is an integer.</p>\n"
+    ], 
+    "sols_latex": [
+        "The function \\emph{g}(\\emph{x}) is undefined wherever the denominator is\nzero. Thus we need to know where $\\sin(x) = 0$.\n\nBased on the unit circle, we know that $\\sin(x)$ is zero at the angles\n0, $\\pi$, 2$\\pi$, 3$\\pi$, ... Thus, these points can not be included in the domain\nof \\emph{g}.\n\nSo our domain is:\n\n$\\displaystyle \\{ x : x \\not= n\\pi \\}$ where \\emph{n} is an integer."
+    ], 
+    "sols_raw": [
+        "The function ''g''(''x'') is undefined wherever the denominator is zero.  Thus we need to know where &lt;math>\\sin(x) = 0&lt;/math>.  \n\nBased on the unit circle, we know that &lt;math>\\sin(x)&lt;/math> is zero at the angles 0, &amp;pi;, 2&amp;pi;, 3&amp;pi;, ...  Thus, these points can not be included in the domain of ''g''.  \n\nSo our domain is:\n\n&lt;math> \\displaystyle \\{ x : x \\not= n\\pi \\}&lt;/math> where ''n'' is an integer.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Find the domain of the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(x) = \\frac{1}{\\sin(x)}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the domain of the function\n\n\\begin{align*}\ng(x) = \\frac{1}{\\sin(x)}\n\\end{align*}", 
+    "statement_raw": "Find the domain of the function \n: &lt;math>g(x) = \\frac{1}{\\sin(x)} &lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_02_(b)", 
+    "year": 2011
 }

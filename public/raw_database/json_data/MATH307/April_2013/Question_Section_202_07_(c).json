@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_202_07_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(6a_1+2b_1=2b_2\\)</span></p>\n", 
+    "answer_latex": " $6a_1+2b_1=2b_2$ ", 
     "course": "MATH307", 
-    "statement": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}f(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\\end{align*}\n\n\\textbf{(c)} Interior derivative must be continuous. Write down the\nlinear equations expressing this condition.", 
-    "year": 2013, 
-    "sols": [
-        "The only interior point is $(1,0)$. This condition can be written as:\n\n\\begin{align*}\np_1'(1) &= p_2'(1)\\\\\np_2''(1) &= p_2'(1)\\end{align*}\n\nwith\n\n$p_1'(x)=3a_1x^2+2b_1x+c_1\\Rightarrow p_1'(1)=3a_1+2b_1+c_1$\n\n$p_2'(x)=3a_2(x-1)^2+2b_2(x-1)+c_2\\Rightarrow p_2'(1)=0+0+c_2$\n\nand the second derivatives:\n\n$p_1''(x)=6a_1x+2b_1\\Rightarrow p_1''(1)=6a_1+2b_1$\n\n$p_2''(x)=6a_2(x-1)+2b_2 \\Rightarrow p_2''(1)=2b_2$\n\nThe equations are therefore:\n\n\\begin{align*}\n3a_1+2b_1+c_1 &= c_2\\\\\n6a_1+2b_1 &= 2b_2\\end{align*}"
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 202 07 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The only interior point is <span class=\"math\">\\((1,0)\\)</span>. This condition can be written as:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np_1&#39;(1) &amp;= p_2&#39;(1)\\\\\np_2&#39;&#39;(1) &amp;= p_2&#39;(1)\\end{aligned}\\]</span></p>\n<p>with</p>\n<p><span class=\"math\">\\(p_1&#39;(x)=3a_1x^2+2b_1x+c_1\\Rightarrow p_1&#39;(1)=3a_1+2b_1+c_1\\)</span></p>\n<p><span class=\"math\">\\(p_2&#39;(x)=3a_2(x-1)^2+2b_2(x-1)+c_2\\Rightarrow p_2&#39;(1)=0+0+c_2\\)</span></p>\n<p>and the second derivatives:</p>\n<p><span class=\"math\">\\(p_1&#39;&#39;(x)=6a_1x+2b_1\\Rightarrow p_1&#39;&#39;(1)=6a_1+2b_1\\)</span></p>\n<p><span class=\"math\">\\(p_2&#39;&#39;(x)=6a_2(x-1)+2b_2 \\Rightarrow p_2&#39;&#39;(1)=2b_2\\)</span></p>\n<p>The equations are therefore:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n3a_1+2b_1+c_1 &amp;= c_2\\\\\n6a_1+2b_1 &amp;= 2b_2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The only interior point is $(1,0)$. This condition can be written as:\n\n\\begin{align*}\np_1'(1) &= p_2'(1)\\\\\np_2''(1) &= p_2'(1)\n\\end{align*}\n\nwith\n\n$p_1'(x)=3a_1x^2+2b_1x+c_1\\Rightarrow p_1'(1)=3a_1+2b_1+c_1$\n\n$p_2'(x)=3a_2(x-1)^2+2b_2(x-1)+c_2\\Rightarrow p_2'(1)=0+0+c_2$\n\nand the second derivatives:\n\n$p_1''(x)=6a_1x+2b_1\\Rightarrow p_1''(1)=6a_1+2b_1$\n\n$p_2''(x)=6a_2(x-1)+2b_2 \\Rightarrow p_2''(1)=2b_2$\n\nThe equations are therefore:\n\n\\begin{align*}\n3a_1+2b_1+c_1 &= c_2\\\\\n6a_1+2b_1 &= 2b_2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The only interior point is &lt;math>(1,0)&lt;/math>. This condition can be written as:\n\n:&lt;math>\\begin{align}\np_1'(1) &amp;= p_2'(1)\\\\\np_2''(1) &amp;= p_2'(1)\n\\end{align}&lt;/math>\n\nwith\n\n&lt;math>p_1'(x)=3a_1x^2+2b_1x+c_1\\Rightarrow p_1'(1)=3a_1+2b_1+c_1&lt;/math>\n\n&lt;math>p_2'(x)=3a_2(x-1)^2+2b_2(x-1)+c_2\\Rightarrow p_2'(1)=0+0+c_2&lt;/math>\n\nand the second derivatives:\n\n&lt;math>p_1''(x)=6a_1x+2b_1\\Rightarrow p_1''(1)=6a_1+2b_1&lt;/math>\n\n&lt;math>p_2''(x)=6a_2(x-1)+2b_2 \\Rightarrow p_2''(1)=2b_2&lt;/math>\n\nThe equations are therefore:\n\n:&lt;math> \\begin{align}\n3a_1+2b_1+c_1 &amp;= c_2\\\\\n6a_1+2b_1 &amp;= 2b_2\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>We want to interpolate through <em>(0, 1)</em>, <em>(1, 0)</em>, <em>(2, 2)</em> using cubic splines</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> Interior derivative must be continuous. Write down the linear equations expressing this condition.</p>\n", 
+    "statement_latex": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}\nf(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\n\\end{align*}\n\n\\textbf{(c)} Interior derivative must be continuous. Write down the\nlinear equations expressing this condition.", 
+    "statement_raw": "We want to interpolate through ''(0, 1)'', ''(1, 0)'', ''(2, 2)'' using cubic splines\n\n:&lt;math>\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\n&lt;/math>\n\n'''(c)''' Interior derivative must be continuous. Write down the linear equations expressing this condition.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_202_07_(c)", 
+    "year": 2013
 }

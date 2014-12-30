@@ -1,9 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_05_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH312", 
-    "statement": "Suppose that \\emph{p} is a prime with\n$\\displaystyle p \\equiv  3 \\mod{4}$. Show that there is no solution to\nthe congruence $\\displaystyle x^2 \\equiv -1 \\mod{p}$.", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Suppose that <em>p</em> is a prime with <span class=\"math\">\\(\\displaystyle p \\equiv  3 \\mod{4}\\)</span>. Show that there is no solution to the congruence <span class=\"math\">\\(\\displaystyle x^2 \\equiv -1 \\mod{p}\\)</span>.</p>\n", 
+    "statement_latex": "Suppose that \\emph{p} is a prime with\n$\\displaystyle p \\equiv  3 \\mod{4}$. Show that there is no solution to\nthe congruence $\\displaystyle x^2 \\equiv -1 \\mod{p}$.", 
+    "statement_raw": "Suppose that ''p'' is a prime with &lt;math> \\displaystyle p \\equiv  3 \\mod{4} &lt;/math>. Show that there is no solution to the congruence &lt;math> \\displaystyle x^2 \\equiv -1 \\mod{p} &lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Quadratic_reciprocity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2013/Question_05_(b)", 
+    "year": 2013
 }

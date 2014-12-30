@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_03_(a)", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx$", 
-    "year": 2006, 
-    "sols": [
-        "We proceed via the hint. Let $u = x^{3} + 1$ so that $du = 3x^{2}dx$ and\nso\n\n\\begin{align*}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&= \\frac{1}{-300(x^{3} + 1)^{100}} + C\\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx=\\frac{1}{-300(x^{3} + 1)^{100}} + C\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx=\\frac{1}{-300(x^{3} + 1)^{100}} + C$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This question is ripe for a substitution</p>\n", 
+        "<p>Try <span class=\"math\">\\(u = x^{3} + 1\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "This question is ripe for a substitution", 
         "Try $u = x^{3} + 1$"
-    ]
+    ], 
+    "hints_raw": [
+        "This question is ripe for a substitution\n", 
+        "Try &lt;math> u = x^{3} + 1 &lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "3 (a)", 
+    "rating": 97, 
+    "sols_html": [
+        "<p>We proceed via the hint. Let <span class=\"math\">\\(u = x^{3} + 1\\)</span> so that <span class=\"math\">\\(du = 3x^{2}dx\\)</span> and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &amp;= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&amp;= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&amp;= \\frac{1}{-300(x^{3} + 1)^{100}} + C\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed via the hint. Let $u = x^{3} + 1$ so that $du = 3x^{2}dx$ and\nso\n\n\\begin{align*}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&= \\frac{1}{-300(x^{3} + 1)^{100}} + C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "We proceed via the hint. Let &lt;math> u = x^{3} + 1 &lt;/math> so that &lt;math> du = 3x^{2}dx &lt;/math> and so\n\n:&lt;math> \n\\begin{align}\n\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &amp;= \\frac{1}{3}\\int \\frac{du}{u^{101}} \\\\\n&amp;= \\frac{1}{3} \\cdot \\frac{1}{-100u^{100}} + C \\\\\n&amp;= \\frac{1}{-300(x^{3} + 1)^{100}} + C\n\\end{align}\n &lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\(\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx\\)</span></p>\n", 
+    "statement_latex": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n Evaluate the following integral.\n\n$\\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx$", 
+    "statement_raw": "&lt;b> Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\n&lt;b> Evaluate the following integral. &lt;/b>\n\n&lt;math> \\int\\frac{x^{2}}{(x^{3}+1)^{101}}\\, dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_03_(a)", 
+    "year": 2006
 }

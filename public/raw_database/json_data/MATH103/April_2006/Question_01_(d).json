@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "The concentration of a protein in a long, thin cylindrically shaped\nbacterium is given by the function $\\displaystyle c(x)$ where \\emph{c}\nis measured in mol/\u03bcm along the long axis of the cell and\n$\\displaystyle 0 < x < 3$ is measured in \u03bcm. Suppose that when the cell\ndivides, it splits at $\\displaystyle x=3/2$ \u03bcm and that all protein to\nthe left of this point ends up in the left daughter cell and any to the\nright ends up in the right daughter cell. Determine which of the\nfollowing statements is necessarily true:\n\ni. If the centre of mass of the protein density is to the left of the\nmedian of the density, then the cell on the right gets more than half of\nthe total protein.\n\nii. If the centre of mass of the protein density is at\n$\\displaystyle x = 1$ \u03bcm, then the cell on the left gets more than half\nof the total protein in the mother cell.\n\niii. If the median of the protein density is at $\\displaystyle x = 1$\n\u03bcm, then the cell on the left gets more than half of the total protein\nin the mother cell.\n\niv. If the mean and median are at the same point, both cells get the\nsame amount of protein.", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>The concentration of a protein in a long, thin cylindrically shaped bacterium is given by the function <span class=\"math\">\\(\\displaystyle c(x)\\)</span> where <em>c</em> is measured in mol/<span class=\"math\">\\(\\mu\\)</span>m along the long axis of the cell and <span class=\"math\">\\(\\displaystyle 0 &lt; x &lt; 3\\)</span> is measured in <span class=\"math\">\\(\\mu\\)</span>m. Suppose that when the cell divides, it splits at <span class=\"math\">\\(\\displaystyle x=3/2\\)</span> <span class=\"math\">\\(\\mu\\)</span>m and that all protein to the left of this point ends up in the left daughter cell and any to the right ends up in the right daughter cell. Determine which of the following statements is necessarily true:</p>\n<p>i. If the centre of mass of the protein density is to the left of the median of the density, then the cell on the right gets more than half of the total protein.</p>\n<p>ii. If the centre of mass of the protein density is at <span class=\"math\">\\(\\displaystyle x = 1\\)</span> <span class=\"math\">\\(\\mu\\)</span>m, then the cell on the left gets more than half of the total protein in the mother cell.</p>\n<p>iii. If the median of the protein density is at <span class=\"math\">\\(\\displaystyle x = 1\\)</span> <span class=\"math\">\\(\\mu\\)</span>m, then the cell on the left gets more than half of the total protein in the mother cell.</p>\n<p>iv. If the mean and median are at the same point, both cells get the same amount of protein.</p>\n", 
+    "statement_latex": "The concentration of a protein in a long, thin cylindrically shaped\nbacterium is given by the function $\\displaystyle c(x)$ where \\emph{c}\nis measured in mol/$\\mu$m along the long axis of the cell and\n$\\displaystyle 0 < x < 3$ is measured in $\\mu$m. Suppose that when the cell\ndivides, it splits at $\\displaystyle x=3/2$ $\\mu$m and that all protein to\nthe left of this point ends up in the left daughter cell and any to the\nright ends up in the right daughter cell. Determine which of the\nfollowing statements is necessarily true:\n\ni. If the centre of mass of the protein density is to the left of the\nmedian of the density, then the cell on the right gets more than half of\nthe total protein.\n\nii. If the centre of mass of the protein density is at\n$\\displaystyle x = 1$ $\\mu$m, then the cell on the left gets more than half\nof the total protein in the mother cell.\n\niii. If the median of the protein density is at $\\displaystyle x = 1$\n$\\mu$m, then the cell on the left gets more than half of the total protein\nin the mother cell.\n\niv. If the mean and median are at the same point, both cells get the\nsame amount of protein.", 
+    "statement_raw": "The concentration of a protein in a long, thin cylindrically shaped bacterium is given by the function &lt;math> \\displaystyle c(x)&lt;/math> where ''c'' is measured in mol/&amp;mu;m along the long axis of the cell and &lt;math> \\displaystyle 0 &lt; x &lt; 3&lt;/math> is measured in &amp;mu;m. Suppose that when the cell divides, it splits at &lt;math> \\displaystyle x=3/2&lt;/math> &amp;mu;m and that all protein to the left of this point ends up in the left daughter cell and any to the right ends up in the right daughter cell. Determine which of the following statements is necessarily true:\n\ni. If the centre of mass of the protein density is to the left of the median of the density, then the cell on the right gets more than half of the total protein.\n\nii. If the centre of mass of the protein density is at &lt;math> \\displaystyle x = 1&lt;/math> &amp;mu;m, then the cell on the left gets more than half of the total protein in the mother cell.\n\niii. If the median of the protein density is at &lt;math> \\displaystyle x = 1&lt;/math> &amp;mu;m, then the cell on the left gets more than half of the total protein in the mother cell.\n\niv. If the mean and median are at the same point, both cells get the same amount of protein.\n", 
+    "term": "April", 
+    "topics": [
+        "Center_of_mass"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_01_(d)", 
+    "year": 2006
 }

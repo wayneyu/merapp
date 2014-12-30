@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Questions}. Question 1-3 are short-answer\nquestions. Put your answer in the box provided. \\textbf{Simplify your\nanswer as much as possible}. Full Marks will be awarded for a correct\nanswer placed in the box. \\textbf{Show your work}, for part marks.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101April2013Q1ab.jpg}\n\\caption{MATH101April2013Q1ab.jpg}\n\\end{figure}\n\nUse Simpson's Rule, with \\emph{n} = 4, to estimate the area under the\ngraph between \\emph{x} = 2 and \\emph{x} = 6.", 
-    "year": 2013, 
-    "sols": [
-        "We proceed as suggested by the hint. First notice that\n\n$\\displaystyle \\Delta x = (6-2)/4 = 1.$\n\nNext, notice that\n\n\\begin{align*}\nx_{0} &= 2 + 0\\Delta x = 2\\\\\nx_{1} &= 2 + 1\\Delta x = 3\\\\\n...&\\\\\nx_{4} &= 2 + 4\\Delta x = 6 \\end{align*}\n\nThus, figuring out the $f(x_{i})$ terms directly from the graph, we have\n\n$S_4 = \\frac13[3+(4)(8)+(2)(7)+(4)(6)+4] = \\frac{77}{3}$"
+    "answer_html": "<p><span class=\"math\">\\(S_4 = \\frac{77}{3}\\)</span></p>\n", 
+    "answer_latex": "$S_4 = \\frac{77}{3}$", 
+    "contributors": [
+        "VincentChan", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Simpson&#8217;s Rule in full generality is, for even <span class=\"math\">\\(\\displaystyle n\\)</span>,</p>\n<p><span class=\"math\">\\(S_{n} = \\frac{\\Delta x}{3} \\Big(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + 4f(x_3) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_{n}) \\Big)\\)</span></p>\n<p>where</p>\n<p><span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(\\displaystyle x_{i} = a + i\\Delta x\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Simpson's Rule in full generality is, for even $\\displaystyle n$,\n\n$S_{n} = \\frac{\\Delta x}{3} \\Big(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + 4f(x_3) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_{n}) \\Big)$\n\nwhere\n\n$\\Delta x = \\frac{b-a}{n}$\n\nand\n\n$\\displaystyle x_{i} = a + i\\Delta x$"
-    ]
+    ], 
+    "hints_raw": [
+        "Simpson's Rule in full generality is, for even &lt;math> \\displaystyle n &lt;/math>,\n\n&lt;math>\nS_{n} = \\frac{\\Delta x}{3} \\Big(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + 4f(x_3) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_{n}) \\Big)\n&lt;/math>\n\nwhere\n\n&lt;math>\n\\Delta x = \\frac{b-a}{n}\n&lt;/math>\n\nand\n\n&lt;math>\n\\displaystyle x_{i} = a + i\\Delta x\n&lt;/math>\n"
+    ], 
+    "num_votes": 14, 
+    "question": "1 (b)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We proceed as suggested by the hint. First notice that</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = (6-2)/4 = 1.\\)</span></p>\n<p>Next, notice that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{0} &amp;= 2 + 0\\Delta x = 2\\\\\nx_{1} &amp;= 2 + 1\\Delta x = 3\\\\\n...&amp;\\\\\nx_{4} &amp;= 2 + 4\\Delta x = 6 \\end{aligned}\\]</span></p>\n<p>Thus, figuring out the <span class=\"math\">\\(f(x_{i})\\)</span> terms directly from the graph, we have</p>\n<p><span class=\"math\">\\(S_4 = \\frac13[3+(4)(8)+(2)(7)+(4)(6)+4] = \\frac{77}{3}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed as suggested by the hint. First notice that\n\n$\\displaystyle \\Delta x = (6-2)/4 = 1.$\n\nNext, notice that\n\n\\begin{align*}\nx_{0} &= 2 + 0\\Delta x = 2\\\\\nx_{1} &= 2 + 1\\Delta x = 3\\\\\n...&\\\\\nx_{4} &= 2 + 4\\Delta x = 6 \n\\end{align*}\n\nThus, figuring out the $f(x_{i})$ terms directly from the graph, we have\n\n$S_4 = \\frac13[3+(4)(8)+(2)(7)+(4)(6)+4] = \\frac{77}{3}$"
+    ], 
+    "sols_raw": [
+        "We proceed as suggested by the hint. First notice that\n\n&lt;math> \\displaystyle \\Delta x = (6-2)/4 = 1. &lt;/math>\n\nNext, notice that \n\n&lt;math>\n\\begin{align}\nx_{0} &amp;= 2 + 0\\Delta x = 2\\\\\nx_{1} &amp;= 2 + 1\\Delta x = 3\\\\\n...&amp;\\\\\nx_{4} &amp;= 2 + 4\\Delta x = 6 \n\\end{align}\n&lt;/math>\n\nThus, figuring out the &lt;math> f(x_{i}) &lt;/math> terms directly from the graph, we have\n\n&lt;math> S_4 = \\frac13[3+(4)(8)+(2)(7)+(4)(6)+4] = \\frac{77}{3} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Question 1-3 are short-answer questions. Put your answer in the box provided. <strong>Simplify your answer as much as possible</strong>. Full Marks will be awarded for a correct answer placed in the box. <strong>Show your work</strong>, for part marks.</p>\n<p><img src=\"../json_data/MATH101/April_2013/MATH101April2013Q1ab.jpg\" alt=\"image\" /></p>\n<p>Use Simpson&#8217;s Rule, with <em>n</em> = 4, to estimate the area under the graph between <em>x</em> = 2 and <em>x</em> = 6.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Question 1-3 are short-answer\nquestions. Put your answer in the box provided. \\textbf{Simplify your\nanswer as much as possible}. Full Marks will be awarded for a correct\nanswer placed in the box. \\textbf{Show your work}, for part marks.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2013/MATH101April2013Q1ab.jpg}\n\nUse Simpson's Rule, with \\emph{n} = 4, to estimate the area under the\ngraph between \\emph{x} = 2 and \\emph{x} = 6.", 
+    "statement_raw": "'''Short-Answer Questions'''. Question 1-3 are short-answer questions. Put your answer in the box provided. '''Simplify your answer as much as possible'''. Full Marks will be awarded for a correct answer placed in the box. '''Show your work''', for part marks.\n\n[[File:MATH101April2013Q1ab.jpg]]\n\nUse Simpson's Rule, with ''n'' = 4, to estimate the area under the graph between ''x'' = 2 and ''x'' = 6.\n", 
+    "term": "April", 
+    "topics": [
+        "Simpson%27s_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_01_(b)", 
+    "year": 2013
 }

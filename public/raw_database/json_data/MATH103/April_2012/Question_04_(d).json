@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_04_(d)", 
-    "course": "MATH103", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nSuppose \\emph{y}\\textsubscript{0} = \\emph{k}/2. Write the solution to\nthe differential equation above in the form\n\n\\begin{align*}y(t) = \\cdots.\\end{align*}\n\nWhat happens as $t \\to \\infty$?", 
-    "year": 2012, 
-    "sols": [
-        "Using similar reasoning as the previous problem,\n\n\\begin{align*}\ny(t) &= \\pm \\sqrt{k^2 \\pm  |(k/2)^2-k^2| e^{-\\lambda  t^2}} \\\\\n&= \\pm \\sqrt{k^2 \\pm |-3/4| k^2 e^{-\\lambda  t^2}} \\\\\n&= \\pm k \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} \\end{align*}\n\nWhen \\emph{t}=0, \\emph{y}(0)\\textgreater{}0, so we need to take the\npositive branch outside the square root:\n\n\\begin{align*}y(t) = + |k| \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} = k\\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}},\\end{align*}\n\nagain the last equality holding since \\emph{k} is positive. If we\nevaluate this at \\emph{t}=0, the positive branch gives\n$y(0) = k \\sqrt{1 + 3/4}  = \\sqrt{7}k/2$, which is wrong, since\n\\emph{y}(0)=\\emph{y}\\textsubscript{0}=\\emph{k}/2. Hence this is the\nwrong branch. Indeed, the negative branch gives\n$y(0) = k \\sqrt{1 - 3/4} = k/2.$ Our answer is therefore\n\n\\begin{align*}y(t) = k \\sqrt{1 - 3/4 e^{-\\lambda  t^2}},\\end{align*}\n\nAs $t \\to \\infty$ we have that $y(t) \\to k.$"
+    "answer_html": "<p>As <span class=\"math\">\\(t \\to \\infty\\)</span> we have that <span class=\"math\">\\(y(t) \\to k.\\)</span></p>\n", 
+    "answer_latex": "As $t \\to \\infty$ we have that $y(t) \\to k.$", 
+    "contributors": [
+        "IsabellGraf", 
+        "CarmenBruni", 
+        "RobertFraser", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "Plug in $y_0 = \\frac{k}{2}$ into the solution of\n\\href{http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_4_\\%28b\\%29}{Problem\n4b}. Remember that $y_0 = \\frac{k}{2}$ and use this to select the\nappropriate signs in the expression. Then take the limit as\n$t \\to \\infty$."
-    ]
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Plug in <span class=\"math\">\\(y_0 = \\frac{k}{2}\\)</span> into the solution of <span>Problem 4b</span>. Remember that <span class=\"math\">\\(y_0 = \\frac{k}{2}\\)</span> and use this to select the appropriate signs in the expression. Then take the limit as <span class=\"math\">\\(t \\to \\infty\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Plug in $y_0 = \\frac{k}{2}$ into the solution of\n{Problem\n4b}. Remember that $y_0 = \\frac{k}{2}$ and use this to select the\nappropriate signs in the expression. Then take the limit as\n$t \\to \\infty$."
+    ], 
+    "hints_raw": [
+        "Plug in &lt;math> y_0 = \\frac{k}{2} &lt;/math> into the solution of [http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_4_%28b%29 Problem 4b].  Remember that &lt;math> y_0 = \\frac{k}{2} &lt;/math> and use this to select the appropriate signs in the expression.  Then take the limit as &lt;math> t \\to \\infty &lt;/math>.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "4 (d)", 
+    "rating": 26, 
+    "sols_html": [
+        "<p>Using similar reasoning as the previous problem,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) &amp;= \\pm \\sqrt{k^2 \\pm  |(k/2)^2-k^2| e^{-\\lambda  t^2}} \\\\\n&amp;= \\pm \\sqrt{k^2 \\pm |-3/4| k^2 e^{-\\lambda  t^2}} \\\\\n&amp;= \\pm k \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} \\end{aligned}\\]</span></p>\n<p>When <em>t</em>=0, <em>y</em>(0)&gt;0, so we need to take the positive branch outside the square root:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = + |k| \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} = k\\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}},\\end{aligned}\\]</span></p>\n<p>again the last equality holding since <em>k</em> is positive. If we evaluate this at <em>t</em>=0, the positive branch gives <span class=\"math\">\\(y(0) = k \\sqrt{1 + 3/4}  = \\sqrt{7}k/2\\)</span>, which is wrong, since <em>y</em>(0)=<em>y</em><sub>0</sub>=<em>k</em>/2. Hence this is the wrong branch. Indeed, the negative branch gives <span class=\"math\">\\(y(0) = k \\sqrt{1 - 3/4} = k/2.\\)</span> Our answer is therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = k \\sqrt{1 - 3/4 e^{-\\lambda  t^2}},\\end{aligned}\\]</span></p>\n<p>As <span class=\"math\">\\(t \\to \\infty\\)</span> we have that <span class=\"math\">\\(y(t) \\to k.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using similar reasoning as the previous problem,\n\n\\begin{align*}\ny(t) &= \\pm \\sqrt{k^2 \\pm  |(k/2)^2-k^2| e^{-\\lambda  t^2}} \\\\\n&= \\pm \\sqrt{k^2 \\pm |-3/4| k^2 e^{-\\lambda  t^2}} \\\\\n&= \\pm k \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} \n\\end{align*}\n\nWhen \\emph{t}=0, \\emph{y}(0)\\textgreater{}0, so we need to take the\npositive branch outside the square root:\n\n\\begin{align*}\ny(t) = + |k| \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} = k\\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}},\n\\end{align*}\n\nagain the last equality holding since \\emph{k} is positive. If we\nevaluate this at \\emph{t}=0, the positive branch gives\n$y(0) = k \\sqrt{1 + 3/4}  = \\sqrt{7}k/2$, which is wrong, since\n\\emph{y}(0)=\\emph{y}\\textsubscript{0}=\\emph{k}/2. Hence this is the\nwrong branch. Indeed, the negative branch gives\n$y(0) = k \\sqrt{1 - 3/4} = k/2.$ Our answer is therefore\n\n\\begin{align*}\ny(t) = k \\sqrt{1 - 3/4 e^{-\\lambda  t^2}},\n\\end{align*}\n\nAs $t \\to \\infty$ we have that $y(t) \\to k.$"
+    ], 
+    "sols_raw": [
+        "Using similar reasoning as the previous problem,\n\n:&lt;math>\n\\begin{align}\ny(t) &amp; = \\pm \\sqrt{k^2 \\pm  |(k/2)^2-k^2| e^{-\\lambda  t^2}} \\\\\n&amp; = \\pm \\sqrt{k^2 \\pm |-3/4| k^2 e^{-\\lambda  t^2}} \\\\\n&amp; = \\pm k \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} \n\\end{align}\n&lt;/math>\n\nWhen ''t''=0, ''y''(0)>0, so we need to take the positive branch outside the square root: \n\n:&lt;math>\ny(t) = + |k| \\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}} = k\\sqrt{1 \\pm 3/4 e^{-\\lambda  t^2}},\n&lt;/math>\n\nagain the last equality holding since ''k'' is positive. If we evaluate this at ''t''=0, the positive branch gives &lt;math>y(0) = k \\sqrt{1 + 3/4}  = \\sqrt{7}k/2&lt;/math>, which is wrong, since ''y''(0)=''y''&lt;sub>0&lt;/sub>=''k''/2. Hence this is the wrong branch. Indeed, the negative branch  gives &lt;math>y(0) = k \\sqrt{1 - 3/4} = k/2.&lt;/math> Our answer is therefore\n\n:&lt;math>\ny(t) = k \\sqrt{1 - 3/4 e^{-\\lambda  t^2}},\n&lt;/math>\n\nAs &lt;math>t \\to \\infty&lt;/math> we have that &lt;math> y(t) \\to k.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\lambda\\)</span> is a positive constant, <em>t</em> <span class=\"math\">\\(\\geq\\)</span> 0, <em>k</em> &gt; 0, but <em>y</em> may be positive or negative. Suppose <em>y</em>(0) = <em>y</em><sub>0</sub>.</p>\n<p>Suppose <em>y</em><sub>0</sub> = <em>k</em>/2. Write the solution to the differential equation above in the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = \\cdots.\\end{aligned}\\]</span></p>\n<p>What happens as <span class=\"math\">\\(t \\to \\infty\\)</span>?</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nSuppose \\emph{y}\\textsubscript{0} = \\emph{k}/2. Write the solution to\nthe differential equation above in the form\n\n\\begin{align*}\ny(t) = \\cdots.\n\\end{align*}\n\nWhat happens as $t \\to \\infty$?", 
+    "statement_raw": "Consider the differential equation\n\n:&lt;math>\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n&lt;/math>\n\nwhere &lt;math> \\lambda &lt;/math> is a positive constant, ''t'' &amp;ge; 0, ''k'' > 0, but ''y'' may be positive or negative. Suppose\n''y''(0) = ''y''&lt;sub>0&lt;/sub>.\n\nSuppose ''y''&lt;sub>0&lt;/sub> = ''k''/2. Write the solution to the differential equation above in the form\n\n:&lt;math> y(t) = \\cdots.&lt;/math>\n\nWhat happens as &lt;math> t \\to \\infty &lt;/math>?\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_04_(d)", 
+    "year": 2012
 }

@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(A=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.\\)</span></p>\n", 
+    "answer_latex": " $A=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.$ ", 
     "course": "MATH307", 
-    "statement": "In this question we are once again given 4 points\n(\\emph{x}\\textsubscript{1}, \\emph{y}\\textsubscript{1}),\n(\\emph{x}\\textsubscript{2}, \\emph{y}\\textsubscript{2}),\n(\\emph{x}\\textsubscript{3}, \\emph{y}\\textsubscript{3}) and\n(\\emph{x}\\textsubscript{4}, \\emph{y}\\textsubscript{4}) in the plane.\nThis time we want to find a quadratic function\n$\\displaystyle q(x) = ax^2 + bx + c$ that comes closest to going through\nthe points by doing a least squares fit.\n\n\\textbf{(a)} The least squares equation you need to solve to find the\ncoefficients \\emph{a}, \\emph{b} and \\emph{c} has the form\n\\emph{A\\textsuperscript{T}A\\textbf{a} = A\\textsuperscript{T}\\textbf{b}}.\nWrite down expressions for \\emph{A}, \\textbf{\\emph{a}} and\n\\textbf{\\emph{b}}.", 
-    "year": 2010, 
-    "sols": [
-        "\\emph{If} the quadratic polynomial could fit all four points, then these\nconditions would be satisfied:\n\n\\begin{align*}\ny_1 &=ax_1^2+bx_1+c\\\\\ny_2 &= ax_2^2+bx_2+c\\\\\ny_3 &= ax_3^2+bx_3+c\\\\\ny_4 &= ax_4^2+bx_4+c\\end{align*}\n\nthis is equivalent to:\n\n\\begin{align*}\n\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix} &= \\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix} \\\\\nA\\mathbf{a} &= \\mathbf{b}\\end{align*}.\n\nHowever, we only have 3 unknowns and 4 equations, hence we ask for the\nbest solution (in the least square sense), which is found by solving\n$A^TA\\mathbf{a}=A^T\\mathbf{b}$. Therefore,\n\n\\begin{align*}A=\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}, \\quad \\mathbf{a} =\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix}, \\quad \\mathbf{b}=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.\\end{align*}"
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
     ], 
-    "hints": [
+    "hints_html": [
+        "<p>Write the conditions that <em>q(x)</em> goes through all four points in matrix notation. The values <em>x<sub>i</sub></em> and <em>y<sub>i</sub></em> are known, and the values <em>a</em>, <em>b</em> and <em>c</em> are unknown.</p>\n"
+    ], 
+    "hints_latex": [
         "Write the conditions that \\emph{q(x)} goes through all four points in\nmatrix notation. The values \\emph{x\\textsubscript{i}} and\n\\emph{y\\textsubscript{i}} are known, and the values \\emph{a}, \\emph{b}\nand \\emph{c} are unknown."
-    ]
+    ], 
+    "hints_raw": [
+        "Write the conditions that ''q(x)'' goes through all four points in matrix notation. The values ''x&lt;sub>i&lt;/sub>'' and ''y&lt;sub>i&lt;/sub>'' are known, and the values ''a'', ''b'' and ''c'' are unknown.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><em>If</em> the quadratic polynomial could fit all four points, then these conditions would be satisfied:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny_1 &amp;=ax_1^2+bx_1+c\\\\\ny_2 &amp;= ax_2^2+bx_2+c\\\\\ny_3 &amp;= ax_3^2+bx_3+c\\\\\ny_4 &amp;= ax_4^2+bx_4+c\\end{aligned}\\]</span></p>\n<p>this is equivalent to:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{pmatrix}\nx_1^2 &amp;x_1 &amp;1 \\\\ \nx_2^2 &amp;x_2 &amp;1 \\\\ \nx_3^2 &amp;x_3 &amp; 1\\\\ \nx_4^2 &amp; x_4 &amp; 1\n\\end{pmatrix}\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix} &amp;= \\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix} \\\\\nA\\mathbf{a} &amp;= \\mathbf{b}\\end{aligned}\\]</span></p>\n<p>.</p>\n<p>However, we only have 3 unknowns and 4 equations, hence we ask for the best solution (in the least square sense), which is found by solving <span class=\"math\">\\(A^TA\\mathbf{a}=A^T\\mathbf{b}\\)</span>. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{pmatrix}\nx_1^2 &amp;x_1 &amp;1 \\\\ \nx_2^2 &amp;x_2 &amp;1 \\\\ \nx_3^2 &amp;x_3 &amp; 1\\\\ \nx_4^2 &amp; x_4 &amp; 1\n\\end{pmatrix}, \\quad \\mathbf{a} =\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix}, \\quad \\mathbf{b}=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\emph{If} the quadratic polynomial could fit all four points, then these\nconditions would be satisfied:\n\n\\begin{align*}\ny_1 &=ax_1^2+bx_1+c\\\\\ny_2 &= ax_2^2+bx_2+c\\\\\ny_3 &= ax_3^2+bx_3+c\\\\\ny_4 &= ax_4^2+bx_4+c\n\\end{align*}\n\nthis is equivalent to:\n\n\\begin{align*}\n\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix} &= \\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix} \\\\\nA\\mathbf{a} &= \\mathbf{b}\n\\end{align*}.\n\nHowever, we only have 3 unknowns and 4 equations, hence we ask for the\nbest solution (in the least square sense), which is found by solving\n$A^TA\\mathbf{a}=A^T\\mathbf{b}$. Therefore,\n\n\\begin{align*}\nA=\\begin{pmatrix}\nx_1^2 &x_1 &1 \\\\ \nx_2^2 &x_2 &1 \\\\ \nx_3^2 &x_3 & 1\\\\ \nx_4^2 & x_4 & 1\n\\end{pmatrix}, \\quad \\mathbf{a} =\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix}, \\quad \\mathbf{b}=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "''If'' the quadratic polynomial could fit all four points, then these conditions would be satisfied:\n\n:&lt;math>\\begin{align}\ny_1 &amp; =ax_1^2+bx_1+c\\\\\ny_2 &amp;= ax_2^2+bx_2+c\\\\\ny_3 &amp;= ax_3^2+bx_3+c\\\\\ny_4 &amp;= ax_4^2+bx_4+c\n\\end{align}\n&lt;/math>\n\nthis is equivalent to:\n\n:&lt;math>\\begin{align}\n\\begin{pmatrix}\nx_1^2 &amp;x_1 &amp;1 \\\\ \nx_2^2 &amp;x_2 &amp;1 \\\\ \nx_3^2 &amp;x_3 &amp; 1\\\\ \nx_4^2 &amp; x_4 &amp; 1\n\\end{pmatrix}\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix} &amp;= \\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix} \\\\\nA\\mathbf{a} &amp;= \\mathbf{b}\n\\end{align}&lt;/math>.\n\nHowever, we only have 3 unknowns and 4 equations, hence we ask for the best solution (in the least square sense), which is found by solving &lt;math>A^TA\\mathbf{a}=A^T\\mathbf{b}&lt;/math>. Therefore,\n:&lt;math>A=\\begin{pmatrix}\nx_1^2 &amp;x_1 &amp;1 \\\\ \nx_2^2 &amp;x_2 &amp;1 \\\\ \nx_3^2 &amp;x_3 &amp; 1\\\\ \nx_4^2 &amp; x_4 &amp; 1\n\\end{pmatrix}, \\quad \\mathbf{a} =\\begin{pmatrix}\na\\\\ \nb\\\\ \nc\n\\end{pmatrix}, \\quad \\mathbf{b}=\\begin{pmatrix}\ny_1\\\\ \ny_2\\\\ \ny_3\\\\ \ny_4\n\\end{pmatrix}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>In this question we are once again given 4 points (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), (<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>) and (<em>x</em><sub>4</sub>, <em>y</em><sub>4</sub>) in the plane. This time we want to find a quadratic function <span class=\"math\">\\(\\displaystyle q(x) = ax^2 + bx + c\\)</span> that comes closest to going through the points by doing a least squares fit.</p>\n<p><strong>(a)</strong> The least squares equation you need to solve to find the coefficients <em>a</em>, <em>b</em> and <em>c</em> has the form <em>A<sup>T</sup>A<strong>a</strong> = A<sup>T</sup><strong>b</strong></em>. Write down expressions for <em>A</em>, <strong><em>a</em></strong> and <strong><em>b</em></strong>.</p>\n", 
+    "statement_latex": "In this question we are once again given 4 points\n(\\emph{x}\\textsubscript{1}, \\emph{y}\\textsubscript{1}),\n(\\emph{x}\\textsubscript{2}, \\emph{y}\\textsubscript{2}),\n(\\emph{x}\\textsubscript{3}, \\emph{y}\\textsubscript{3}) and\n(\\emph{x}\\textsubscript{4}, \\emph{y}\\textsubscript{4}) in the plane.\nThis time we want to find a quadratic function\n$\\displaystyle q(x) = ax^2 + bx + c$ that comes closest to going through\nthe points by doing a least squares fit.\n\n\\textbf{(a)} The least squares equation you need to solve to find the\ncoefficients \\emph{a}, \\emph{b} and \\emph{c} has the form\n\\emph{A\\textsuperscript{T}A\\textbf{a} = A\\textsuperscript{T}\\textbf{b}}.\nWrite down expressions for \\emph{A}, \\textbf{\\emph{a}} and\n\\textbf{\\emph{b}}.", 
+    "statement_raw": "In this question we are once again given 4 points (''x''&lt;sub>1&lt;/sub>, ''y''&lt;sub>1&lt;/sub>), (''x''&lt;sub>2&lt;/sub>, ''y''&lt;sub>2&lt;/sub>), (''x''&lt;sub>3&lt;/sub>, ''y''&lt;sub>3&lt;/sub>) and (''x''&lt;sub>4&lt;/sub>, ''y''&lt;sub>4&lt;/sub>) in the plane. This time we want to find a quadratic function &lt;math>\\displaystyle q(x) = ax^2 + bx + c&lt;/math> that comes closest to going through the points by doing a least squares fit.\n\n'''(a)''' The least squares equation you need to solve to find the coefficients ''a'', ''b'' and ''c'' has the form ''A&lt;sup>T&lt;/sup>A'''a''' = A&lt;sup>T&lt;/sup>'''b'''''. Write down expressions for ''A'', '''''a''''' and '''''b'''''.\n", 
+    "term": "December", 
+    "topics": [
+        "Least_squares"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_04_(a)", 
+    "year": 2010
 }

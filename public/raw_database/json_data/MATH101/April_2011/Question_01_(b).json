@@ -1,14 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH101", 
-    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the derivative $\\displaystyle f'(t)$, if\n\n$f(t) = \\int_{t^4}^2 \\sqrt{1+x^3} dx$", 
-    "year": 2011, 
-    "sols": [
-        "Using hint 2 provided, we may immediatley rewrite $f(t)$ as\n\n\\begin{align*}f(t)=-\\int_2^{t^4} \\sqrt{1+x^3}dx\\end{align*}\n\nWe would like to use hint 1, but this only works if the upper limit of\nintegration is $t$, which in this case is not true. So define for the\ntime being\n\n\\begin{align*}g(u) = -\\int_2^u \\sqrt{1 + x^3}dx.\\end{align*}\n\nFrom hint 1, we see immediately that $g'(u) = -\\sqrt{1 + u^3}$. We also\nsee that $f(t) = g(t^4)$. Using the chain rule we can then compute that\n\n\\begin{align*}f'(t) = g'(t^4) \\frac{du}{dt} = -\\sqrt{1 + (t^{4})^3}(4t^3) = -4t^3\\sqrt{1 + t^{12}}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(t)=-4t^3\\sqrt{1 + t^{12}}.\\)</span></p>\n", 
+    "answer_latex": " $f'(t)=-4t^3\\sqrt{1 + t^{12}}.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "SimonRose", 
+        "Konradbe", 
+        "KristinaB"
     ], 
-    "hints": [
-        "Remember that the Fundamental Theorem of Calculus says that\n\n\\begin{align*}\\frac{d}{dx}\\int_a^x f(t) dt = f(x).\\end{align*}", 
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember that the Fundamental Theorem of Calculus says that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx}\\int_a^x f(t) dt = f(x).\\end{aligned}\\]</span></p>\n", 
+        "<p>Recall that</p>\n<p>: \\int_a^b f(t)dt = -\\int_b^a f(t)dt</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that the Fundamental Theorem of Calculus says that\n\n\\begin{align*}\n\\frac{d}{dx}\\int_a^x f(t) dt = f(x).\n\\end{align*}", 
         "Recall that\n\n: \\textbackslash{}int\\_a\\^{}b f(t)dt = -\\textbackslash{}int\\_b\\^{}a\nf(t)dt"
-    ]
+    ], 
+    "hints_raw": [
+        "Remember that the Fundamental Theorem of Calculus says that\n\n:&lt;math> \\frac{d}{dx}\\int_a^x f(t) dt = f(x) &lt;/math>.\n", 
+        "Recall that\n\n:&lt;math> \\int_a^b f(t)dt = -\\int_b^a f(t)dt\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (b)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>Using hint 2 provided, we may immediatley rewrite <span class=\"math\">\\(f(t)\\)</span> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(t)=-\\int_2^{t^4} \\sqrt{1+x^3}dx\\end{aligned}\\]</span></p>\n<p>We would like to use hint 1, but this only works if the upper limit of integration is <span class=\"math\">\\(t\\)</span>, which in this case is not true. So define for the time being</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(u) = -\\int_2^u \\sqrt{1 + x^3}dx.\\end{aligned}\\]</span></p>\n<p>From hint 1, we see immediately that <span class=\"math\">\\(g&#39;(u) = -\\sqrt{1 + u^3}\\)</span>. We also see that <span class=\"math\">\\(f(t) = g(t^4)\\)</span>. Using the chain rule we can then compute that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(t) = g&#39;(t^4) \\frac{du}{dt} = -\\sqrt{1 + (t^{4})^3}(4t^3) = -4t^3\\sqrt{1 + t^{12}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using hint 2 provided, we may immediatley rewrite $f(t)$ as\n\n\\begin{align*}\nf(t)=-\\int_2^{t^4} \\sqrt{1+x^3}dx\n\\end{align*}\n\nWe would like to use hint 1, but this only works if the upper limit of\nintegration is $t$, which in this case is not true. So define for the\ntime being\n\n\\begin{align*}\ng(u) = -\\int_2^u \\sqrt{1 + x^3}dx.\n\\end{align*}\n\nFrom hint 1, we see immediately that $g'(u) = -\\sqrt{1 + u^3}$. We also\nsee that $f(t) = g(t^4)$. Using the chain rule we can then compute that\n\n\\begin{align*}\nf'(t) = g'(t^4) \\frac{du}{dt} = -\\sqrt{1 + (t^{4})^3}(4t^3) = -4t^3\\sqrt{1 + t^{12}}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using hint 2 provided, we may immediatley rewrite &lt;math>f(t)&lt;/math> as\n\n:&lt;math>f(t)=-\\int_2^{t^4} \\sqrt{1+x^3}dx&lt;/math>\n\nWe would like to use hint 1, but this only works if the upper limit of integration is &lt;math>t&lt;/math>, which in this case is not true. So define for the time being\n\n:&lt;math> g(u) = -\\int_2^u \\sqrt{1 + x^3}dx &lt;/math>.\n\nFrom hint 1, we see immediately that &lt;math> g'(u) = -\\sqrt{1 + u^3}&lt;/math>. We also see that &lt;math> f(t) = g(t^4)&lt;/math>. Using the chain rule we can then compute that\n\n:&lt;math>f'(t) = g'(t^4) \\frac{du}{dt} = -\\sqrt{1 + (t^{4})^3}(4t^3) = -4t^3\\sqrt{1 + t^{12}}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "StephenKelly"
+    ], 
+    "statement_html": "<p><em>For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.</em></p>\n<p>Find the derivative <span class=\"math\">\\(\\displaystyle f&#39;(t)\\)</span>, if</p>\n<p><span class=\"math\">\\(f(t) = \\int_{t^4}^2 \\sqrt{1+x^3} dx\\)</span></p>\n", 
+    "statement_latex": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nFind the derivative $\\displaystyle f'(t)$, if\n\n$f(t) = \\int_{t^4}^2 \\sqrt{1+x^3} dx$", 
+    "statement_raw": "''For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.''\n\nFind the derivative &lt;math>\\displaystyle f'(t)&lt;/math>, if\n\n&lt;math>f(t) = \\int_{t^4}^2 \\sqrt{1+x^3} dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_01_(b)", 
+    "year": 2011
 }

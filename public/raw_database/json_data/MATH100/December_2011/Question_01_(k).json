@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(k)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind \\emph{dy/dt} where\n\n\\begin{align*}\\displaystyle\ny=e^{t\\cos({2t})}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We compute this derivative using the chain rule twice and the product\nrule\n\n\\begin{align*}\n\\frac{dy}{dt} &= e^{t\\cos(2t)} \\cdot \\frac{d}{dt}( t\\cos(2t))\\\\\n&= e^{t\\cos(2t)} \\cdot (\\frac{d}{dt}(t) \\cdot \\cos(2t) + t \\frac{d}{dt}(\\cos(2t)))\\\\\n&= e^{t\\cos(2t)} \\cdot ( 1 \\cdot \\cos(2t) + t (-\\sin(2t) \\cdot 2))\\\\\n&= e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dy}{dt}=e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dy}{dt}=e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "SteveBennoun", 
+        "Alfred"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Which differentiation rules will you be using here?</p>\n"
+    ], 
+    "hints_latex": [
         "Which differentiation rules will you be using here?"
-    ]
+    ], 
+    "hints_raw": [
+        "Which differentiation rules will you be using here?\n"
+    ], 
+    "num_votes": 6, 
+    "question": "1 (k)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We compute this derivative using the chain rule twice and the product rule</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} &amp;= e^{t\\cos(2t)} \\cdot \\frac{d}{dt}( t\\cos(2t))\\\\\n&amp;= e^{t\\cos(2t)} \\cdot (\\frac{d}{dt}(t) \\cdot \\cos(2t) + t \\frac{d}{dt}(\\cos(2t)))\\\\\n&amp;= e^{t\\cos(2t)} \\cdot ( 1 \\cdot \\cos(2t) + t (-\\sin(2t) \\cdot 2))\\\\\n&amp;= e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We compute this derivative using the chain rule twice and the product\nrule\n\n\\begin{align*}\n\\frac{dy}{dt} &= e^{t\\cos(2t)} \\cdot \\frac{d}{dt}( t\\cos(2t))\\\\\n&= e^{t\\cos(2t)} \\cdot (\\frac{d}{dt}(t) \\cdot \\cos(2t) + t \\frac{d}{dt}(\\cos(2t)))\\\\\n&= e^{t\\cos(2t)} \\cdot ( 1 \\cdot \\cos(2t) + t (-\\sin(2t) \\cdot 2))\\\\\n&= e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We compute this derivative using the chain rule twice and the product rule\n\n:&lt;math>\n\\begin{align}\n\\frac{dy}{dt} &amp;= e^{t\\cos(2t)} \\cdot \\frac{d}{dt}( t\\cos(2t))\\\\\n&amp;= e^{t\\cos(2t)} \\cdot (\\frac{d}{dt}(t) \\cdot \\cos(2t) + t \\frac{d}{dt}(\\cos(2t)))\\\\\n&amp;= e^{t\\cos(2t)} \\cdot ( 1 \\cdot \\cos(2t) + t (-\\sin(2t) \\cdot 2))\\\\\n&amp;= e^{t\\cos(2t)} \\left( \\cos(2t) - 2t\\sin(2t) \\right)\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.</em></p>\n<p>Find <em>dy/dt</em> where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=e^{t\\cos({2t})}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind \\emph{dy/dt} where\n\n\\begin{align*}\n\\displaystyle\ny=e^{t\\cos({2t})}\n\\end{align*}", 
+    "statement_raw": "'''''Short-Answer Questions.''' Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.''\n\nFind ''dy/dt'' where\n:&lt;math>\\displaystyle\ny=e^{t\\cos({2t})}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule", 
+        "Product_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_01_(k)", 
+    "year": 2011
 }

@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_04_(e)", 
-    "course": "MATH100", 
-    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nLet\n\n\\begin{align*}f(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x & \\text{if } x \\geq 1 \\\\\n2-x^{4} & \\text{if } x < 1 \n\\end{cases}\\end{align*}\n\nNOTE: Another notation for \\emph{tan}\\textsuperscript{-1}(\\emph{x}) is\n\\emph{arctan}(\\emph{x})\n\nSketch the curve \\emph{y} = $f(x)$, showing all the features given\nin items (a) to (d) above and giving the (\\emph{x}, \\emph{y})\ncoordinates for all points occurring above (if any).", 
-    "year": 2010, 
-    "sols": [
-        "From parts a) - d), we found that\n\n{[}1{]} f is continous everywhere\n\n{[}2{]} There is a horizontal asymptote of $y = 2$ for\n$x \\rightarrow \\infty$.\n\n{[}3{]} There is a local max at (0,2) and a local min at (1,1)\n\n{[}4{]} There are no inflection points at f is concave down everywhere\nexcept at x = 0, x = 1.\n\nFrom this information we can obtain an image that looks similar to this:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH100_2010_4e.png}\n\\caption{MATH100 2010 4e.png}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH100/December_2010/MATH100_2010_4e.png\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH100/December_2010/MATH100_2010_4e.png}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Parts a) - d) have each told you something about how the function should appear when you sketch it:</p>\n<p>Does the function have a discontinuity? (see part a)</p>\n<p>Does the function has have any vertical asymptotes or approach any points/lines as x gets large? (see part b)</p>\n<p>Does the function have any maxima/minima? (see part c)</p>\n<p>What is the concavity of the function? (see part d)</p>\n"
+    ], 
+    "hints_latex": [
         "Parts a) - d) have each told you something about how the function should\nappear when you sketch it:\n\nDoes the function have a discontinuity? (see part a)\n\nDoes the function has have any vertical asymptotes or approach any\npoints/lines as x gets large? (see part b)\n\nDoes the function have any maxima/minima? (see part c)\n\nWhat is the concavity of the function? (see part d)"
-    ]
+    ], 
+    "hints_raw": [
+        "Parts a) - d) have each told you something about how the function should appear when you sketch it:\n\nDoes the function have a discontinuity? (see part a)\n\nDoes the function has have any vertical asymptotes or approach any points/lines as x gets large? (see part b)\n\nDoes the function have any maxima/minima? (see part c)\n\nWhat is the concavity of the function? (see part d)\n"
+    ], 
+    "num_votes": 1, 
+    "question": "4 (e)", 
+    "rating": 96, 
+    "sols_html": [
+        "<p>From parts a) - d), we found that</p>\n<p><span>[</span>1<span>]</span> f is continous everywhere</p>\n<p><span>[</span>2<span>]</span> There is a horizontal asymptote of <span class=\"math\">\\(y = 2\\)</span> for <span class=\"math\">\\(x \\rightarrow \\infty\\)</span>.</p>\n<p><span>[</span>3<span>]</span> There is a local max at (0,2) and a local min at (1,1)</p>\n<p><span>[</span>4<span>]</span> There are no inflection points at f is concave down everywhere except at x = 0, x = 1.</p>\n<p>From this information we can obtain an image that looks similar to this:</p>\n<p><img src=\"../json_data/MATH100/December_2010/MATH100_2010_4e.png\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "From parts a) - d), we found that\n\n{[}1{]} f is continous everywhere\n\n{[}2{]} There is a horizontal asymptote of $y = 2$ for\n$x \\rightarrow \\infty$.\n\n{[}3{]} There is a local max at (0,2) and a local min at (1,1)\n\n{[}4{]} There are no inflection points at f is concave down everywhere\nexcept at x = 0, x = 1.\n\nFrom this information we can obtain an image that looks similar to this:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH100/December_2010/MATH100_2010_4e.png}"
+    ], 
+    "sols_raw": [
+        "From parts a) - d), we found that\n\n[1] f is continous everywhere\n\n[2] There is a horizontal asymptote of &lt;math>y = 2&lt;/math> for &lt;math>x \\rightarrow \\infty&lt;/math>.\n\n[3] There is a local max at (0,2) and a local min at (1,1)\n\n[4] There are no inflection points at f is concave down everywhere except at x = 0, x = 1.\n\nFrom this information we can obtain an image that looks similar to this:\n\n[[File:MATH100 2010 4e.png]]\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.</p>\n<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x &amp; \\text{if } x \\geq 1 \\\\\n2-x^{4} &amp; \\text{if } x &lt; 1 \n\\end{cases}\\end{aligned}\\]</span></p>\n<p>NOTE: Another notation for <em>tan</em><sup>-1</sup>(<em>x</em>) is <em>arctan</em>(<em>x</em>)</p>\n<p>Sketch the curve <em>y</em> = <span class=\"math\">\\(f(x)\\)</span>, showing all the features given in items (a) to (d) above and giving the (<em>x</em>, <em>y</em>) coordinates for all points occurring above (if any).</p>\n", 
+    "statement_latex": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nLet\n\n\\begin{align*}\nf(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x & \\text{if } x \\geq 1 \\\\\n2-x^{4} & \\text{if } x < 1 \n\\end{cases}\n\\end{align*}\n\nNOTE: Another notation for \\emph{tan}\\textsuperscript{-1}(\\emph{x}) is\n\\emph{arctan}(\\emph{x})\n\nSketch the curve \\emph{y} = $f(x)$, showing all the features given\nin items (a) to (d) above and giving the (\\emph{x}, \\emph{y})\ncoordinates for all points occurring above (if any).", 
+    "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nLet \n\n:&lt;math>\nf(x) = \\begin{cases}\n\\frac{4}{\\pi} \\tan^{-1} x &amp; \\text{if } x \\geq 1 \\\\\n2-x^{4} &amp; \\text{if } x &lt; 1 \n\\end{cases}\n&lt;/math>\n\nNOTE: Another notation for ''tan''&lt;sup>-1&lt;/sup>(''x'') is ''arctan''(''x'')\n\nSketch the curve ''y'' = &amp;fnof;(''x''), showing all the features given in items (a) to (d) above and giving the (''x'', ''y'') coordinates for all points occurring above (if any).\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_04_(e)", 
+    "year": 2010
 }

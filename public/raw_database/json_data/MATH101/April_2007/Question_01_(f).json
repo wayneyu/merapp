@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(f)", 
+    "answer_html": "<p><span class=\"math\">\\(\\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9}\\)</span></p>\n", 
+    "answer_latex": "$\\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9}$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH101", 
-    "statement": "Write the form of the partial-fraction decomposition for\n\n$\\frac{10}{(x+1)^{2}(x^{2}+9)}$\n\nDo not determine the numerical values of these coefficients.", 
-    "year": 2007, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember that there are exceptions when you have repeated roots and quadratic factors. What were these exceptions?</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that there are exceptions when you have repeated roots and\nquadratic factors. What were these exceptions?"
+    ], 
+    "hints_raw": [
+        "Remember that there are exceptions when you have repeated roots and quadratic factors. What were these exceptions?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, we need to show that the factor <span class=\"math\">\\(x^{2} + 9\\)</span> is irreducible. Looking at the discriminant, we see that it is <span class=\"math\">\\(b^{2}-4ac = 0-4(1)(9) = -36 &lt; 0\\)</span> and so this factor has no real roots. Thus, this is an irreducible quadratic. Hence, the partial fraction decomposition is</p>\n<p><span class=\"math\">\\(\\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "First, we need to show that the factor $x^{2} + 9$ is irreducible.\nLooking at the discriminant, we see that it is\n$b^{2}-4ac = 0-4(1)(9) = -36 < 0$ and so this factor has no real roots.\nThus, this is an irreducible quadratic. Hence, the partial fraction\ndecomposition is\n\n$\\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9}$"
     ], 
-    "hints": [
-        "Remember that there are exceptions when you have repeated roots and\nquadratic factors. What were these exceptions?"
-    ]
+    "sols_raw": [
+        "First, we need to show that the factor &lt;math> x^{2} + 9 &lt;/math> is irreducible. Looking at the discriminant, we see that it is &lt;math> b^{2}-4ac = 0-4(1)(9) = -36 &lt; 0 &lt;/math> and so this factor has no real roots. Thus, this is an irreducible quadratic. Hence, the partial fraction decomposition is\n\n&lt;math> \\frac{10}{(x+1)^{2}(x^{2}+9)} = \\frac{A}{x+1} + \\frac{B}{(x+1)^{2}} + \\frac{Cx + D}{x^{2} + 9} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Write the form of the partial-fraction decomposition for</p>\n<p><span class=\"math\">\\(\\frac{10}{(x+1)^{2}(x^{2}+9)}\\)</span></p>\n<p>Do not determine the numerical values of these coefficients.</p>\n", 
+    "statement_latex": "Write the form of the partial-fraction decomposition for\n\n$\\frac{10}{(x+1)^{2}(x^{2}+9)}$\n\nDo not determine the numerical values of these coefficients.", 
+    "statement_raw": "Write the form of the partial-fraction decomposition for\n\n&lt;math> \\frac{10}{(x+1)^{2}(x^{2}+9)} &lt;/math>\n\nDo not determine the numerical values of these coefficients.\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_fractions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_01_(f)", 
+    "year": 2007
 }

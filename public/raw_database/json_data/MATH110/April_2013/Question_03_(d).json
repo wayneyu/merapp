@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_03_(d)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(d)} Determine where $f$ is concave up and where it is concave\ndown. Does $f$ have any inflection points?", 
-    "year": 2013, 
-    "sols": [
-        "We know from the previous part of the question that\n\n\\begin{align*}f'(x) = \\frac{\\cos x - \\sin x}{e^x}\\end{align*}\n\nWe take the derivative of $\\displaystyle f'(x)$ to find:\n\n\\begin{align*}\nf''(x) &= \\frac{(-\\sin x - \\cos x)e^x - (e^x)(\\cos x - \\sin x)}{(e^x)^2} \n&= \\frac{e^x (-\\sin x - \\cos x - \\cos x + \\sin x)}{(e^x)^2} \n&= \\frac{-2\\cos x}{e^x}\\end{align*}\n\nSetting $\\displaystyle f''(x)$ equal to zero to solve for possible\ninflection points gives:\n\n\\begin{align*}0 = \\frac{-2\\cos x}{e^x}\\end{align*}\n\nor, equivalently,\n\n\\begin{align*}\\displaystyle \\cos x = 0\\end{align*}\n\nUsing the unit circle we see that \\emph{x = $\\pi$/2} is the only solution in\n$[0,\\pi]$ of the equation $\\cos(x) = 0$. This is our only possible point\nof inflection, because $\\displaystyle f''(x)$ is continuous everywhere.\nTesting the values of $f''\\left(\\frac{\\pi}2\\right)$ with the second\nderivative test gives:\n\n:\\{\\textbar{} class=``wikitable'' \\textbar{}- \\textbar{}\n\\textbar{}\\textbar{} $[0,\\pi/2)$ \\textbar{}\\textbar{} $x = \\pi/2$\n\\textbar{}\\textbar{} $(\\pi/2, \\pi]$ \\textbar{}- \\textbar{}\n$\\displaystyle f''(x)$\\textbar{}\\textbar{} - \\textbar{}\\textbar{} 0\n\\textbar{}\\textbar{} + \\textbar{}- \\textbar{} $\\displaystyle f(x)$\n\\textbar{}\\textbar{} concave down \\textbar{}\\textbar{} inflection point\n\\textbar{}\\textbar{} concave up \\textbar{}\\}\n\nHence $\\displaystyle f(x)$ has an inflection point at \\emph{x = $\\pi$/2}."
+    "answer_html": "<p>Hence <span class=\"math\">\\(\\displaystyle f(x)\\)</span> has an inflection point at <span class=\"math\">\\(x = \\pi/2\\)</span>.</p>\n", 
+    "answer_latex": "Hence $\\displaystyle f(x)$ has an inflection point at $x = \\pi/2$.", 
+    "contributors": [
+        "DavidKohler", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Similar to the previous question, now find the second derivative, its possible inflection points, and test the sign of the second derivative between possible inflection points.</p>\n"
+    ], 
+    "hints_latex": [
         "Similar to the previous question, now find the second derivative, its\npossible inflection points, and test the sign of the second derivative\nbetween possible inflection points."
-    ]
+    ], 
+    "hints_raw": [
+        "Similar to the previous question, now find the second derivative, its possible inflection points, and test the sign of the second derivative between possible inflection points.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We know from the previous part of the question that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\frac{\\cos x - \\sin x}{e^x}\\end{aligned}\\]</span></p>\n<p>We take the derivative of <span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> to find:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x) &amp;= \\frac{(-\\sin x - \\cos x)e^x - (e^x)(\\cos x - \\sin x)}{(e^x)^2} \n&amp;= \\frac{e^x (-\\sin x - \\cos x - \\cos x + \\sin x)}{(e^x)^2} \n&amp;= \\frac{-2\\cos x}{e^x}\\end{aligned}\\]</span></p>\n<p>Setting <span class=\"math\">\\(\\displaystyle f&#39;&#39;(x)\\)</span> equal to zero to solve for possible inflection points gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = \\frac{-2\\cos x}{e^x}\\end{aligned}\\]</span></p>\n<p>or, equivalently,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\cos x = 0\\end{aligned}\\]</span></p>\n<p>Using the unit circle we see that <em>x = <span class=\"math\">\\(\\pi\\)</span>/2</em> is the only solution in <span class=\"math\">\\([0,\\pi]\\)</span> of the equation <span class=\"math\">\\(\\cos(x) = 0\\)</span>. This is our only possible point of inflection, because <span class=\"math\">\\(\\displaystyle f&#39;&#39;(x)\\)</span> is continuous everywhere. Testing the values of <span class=\"math\">\\(f&#39;&#39;\\left(\\frac{\\pi}2\\right)\\)</span> with the second derivative test gives:</p>\n<p>:{ class=&#8220;wikitable&#8221; - <span class=\"math\">\\([0,\\pi/2)\\)</span> <span class=\"math\">\\(x = \\pi/2\\)</span> <span class=\"math\">\\((\\pi/2, \\pi]\\)</span> - <span class=\"math\">\\(\\displaystyle f&#39;&#39;(x)\\)</span> - 0 + - <span class=\"math\">\\(\\displaystyle f(x)\\)</span> concave down inflection point concave up }</p>\n<p>Hence <span class=\"math\">\\(\\displaystyle f(x)\\)</span> has an inflection point at <span class=\"math\">\\(x = \\pi/2\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We know from the previous part of the question that\n\n\\begin{align*}\nf'(x) = \\frac{\\cos x - \\sin x}{e^x}\n\\end{align*}\n\nWe take the derivative of $\\displaystyle f'(x)$ to find:\n\n\\begin{align*}\nf''(x) &= \\frac{(-\\sin x - \\cos x)e^x - (e^x)(\\cos x - \\sin x)}{(e^x)^2} \n&= \\frac{e^x (-\\sin x - \\cos x - \\cos x + \\sin x)}{(e^x)^2} \n&= \\frac{-2\\cos x}{e^x}\n\\end{align*}\n\nSetting $\\displaystyle f''(x)$ equal to zero to solve for possible\ninflection points gives:\n\n\\begin{align*}\n0 = \\frac{-2\\cos x}{e^x}\n\\end{align*}\n\nor, equivalently,\n\n\\begin{align*}\n\\displaystyle \\cos x = 0\n\\end{align*}\n\nUsing the unit circle we see that \\emph{x = $\\pi$/2} is the only solution in\n$[0,\\pi]$ of the equation $\\cos(x) = 0$. This is our only possible point\nof inflection, because $\\displaystyle f''(x)$ is continuous everywhere.\nTesting the values of $f''\\left(\\frac{\\pi}2\\right)$ with the second\nderivative test gives:\n\n:\\{\\textbar{} class=``wikitable'' \\textbar{}- \\textbar{}\n\\textbar{}\\textbar{} $[0,\\pi/2)$ \\textbar{}\\textbar{} $x = \\pi/2$\n\\textbar{}\\textbar{} $(\\pi/2, \\pi]$ \\textbar{}- \\textbar{}\n$\\displaystyle f''(x)$\\textbar{}\\textbar{} - \\textbar{}\\textbar{} 0\n\\textbar{}\\textbar{} + \\textbar{}- \\textbar{} $\\displaystyle f(x)$\n\\textbar{}\\textbar{} concave down \\textbar{}\\textbar{} inflection point\n\\textbar{}\\textbar{} concave up \\textbar{}\\}\n\nHence $\\displaystyle f(x)$ has an inflection point at $x = \\pi/2$."
+    ], 
+    "sols_raw": [
+        "We know from the previous part of the question that\n\n:&lt;math>f'(x) = \\frac{\\cos x - \\sin x}{e^x}&lt;/math>\n\nWe take the derivative of &lt;math>\\displaystyle f'(x)&lt;/math> to find:\n\n:&lt;math>\\begin{align}\nf''(x) &amp;= \\frac{(-\\sin x - \\cos x)e^x - (e^x)(\\cos x - \\sin x)}{(e^x)^2} \n&amp;= \\frac{e^x (-\\sin x - \\cos x - \\cos x + \\sin x)}{(e^x)^2} \n&amp;= \\frac{-2\\cos x}{e^x}\n\\end{align}&lt;/math>\n\nSetting &lt;math>\\displaystyle f''(x)&lt;/math> equal to zero to solve for possible inflection points gives: \n\n:&lt;math>0 = \\frac{-2\\cos x}{e^x}&lt;/math>\n\nor, equivalently,\n\n:&lt;math>\\displaystyle \\cos x = 0&lt;/math>\n\nUsing the unit circle we see that ''x = &amp;pi;/2'' is the only solution in &lt;math>[0,\\pi]&lt;/math> of the equation &lt;math>\\cos(x) = 0&lt;/math>.  This is our only possible point of inflection, because &lt;math>\\displaystyle f''(x)&lt;/math> is continuous everywhere.  Testing the values of &lt;math>f''\\left(\\frac{\\pi}2\\right)&lt;/math> with the second derivative test gives:\n\n:{| class=\"wikitable\"\n|-\n|  || &lt;math>[0,\\pi/2)&lt;/math> || &lt;math>x = \\pi/2&lt;/math> || &lt;math>(\\pi/2, \\pi]&lt;/math>\n|-\n| &lt;math>\\displaystyle f''(x)&lt;/math>|| - || 0 || +\n|-\n| &lt;math>\\displaystyle f(x)&lt;/math> || concave down || inflection point || concave up\n|}\n\nHence &lt;math>\\displaystyle f(x)&lt;/math> has an inflection point at &lt;math>x = \\pi/2&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\frac{\\sin(x)}{e^{x}}\\)</span> on the interval <span class=\"math\">\\([0, \\pi]\\)</span>. In this question you will sketch this function.</p>\n<p><strong>(d)</strong> Determine where <span class=\"math\">\\(f\\)</span> is concave up and where it is concave down. Does <span class=\"math\">\\(f\\)</span> have any inflection points?</p>\n", 
+    "statement_latex": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(d)} Determine where $f$ is concave up and where it is concave\ndown. Does $f$ have any inflection points?", 
+    "statement_raw": "Let &lt;math> f(x) = \\frac{\\sin(x)}{e^{x}} &lt;/math> on the interval &lt;math> [0, \\pi] &lt;/math>. In this question you will sketch this function.\n\n'''(d)''' Determine where &amp;fnof; is concave up and where it is concave down. Does &amp;fnof; have any inflection points?\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_03_(d)", 
+    "year": 2013
 }

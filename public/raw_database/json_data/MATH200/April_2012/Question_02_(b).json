@@ -1,14 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH200", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\end{align*}\n\nFind a point \\emph{P(a,b,c)} on the graph of $\\displaystyle z=f(x,y)$\nsuch that the tangent plane to the graph of $\\displaystyle z=f(x,y)$ at\nthe point \\emph{P} is parallel to the plane $\\displaystyle 2x+2y-z=3$.", 
-    "year": 2012, 
-    "sols": [
-        "Two planes are parallel if their normal vectors are parallel. Hence, we\nwill evaluate the normal vectors for the given plane and the function $f$\nto determine the points where they are parallel.\n\nBy inspection of the equation of the plane 2x + 2y - z = 3, we can see\nthat is normal vector is $\\mathbf{n}_{1} = [2,2,-1]^{T}$.\n\nThe normal vector to the function $f$ at the point (x,y) is given by\ncomputing the gradient to F(x,y,z) = $f$(x,y) - z:\n\n\\begin{align*}\\nabla F(x,y,z) = \\left[F_{x}(x,y,z),F_{y}(x,y,z),F_{z}(x,y,z)\\right]^{T} = \\left[\\frac{8x}{4x^{2} + y^{2}},\\frac{2y}{4x^{2} + y^{2}},-1 \\right]^{T}.\\end{align*}\nHence, to determine points where the normal vectors are parallel, we\nneed to solve the following two equations for (x,y):\n\n\\begin{align*}\\frac{8x}{4x^{2} + y^{2}} = 2, \\quad \\frac{2y}{4x^{2} + y^{2}} = 2\\end{align*}\nTaking the difference of the two equations gives us the condition y =\n4x. Taking this result and plugging it into the first equation above\ngives:\n\n\\begin{align*}\n\\frac{8x}{4x^{2} + y^{2}} = 2 \\quad \\rightarrow \\quad 8x &= 8x^{2} + 2y^{2} \\\\\n8x &= 8x^{2} + 32x^{2} \\\\\nx &= 5x^{2}\\end{align*} This equation has two solutions: x = 0 and x = 1/5. Notice\nthat the x = 0 is invalid since the corresponding value of y is y = 4x =\n0 and $f$ is undefined at (0,0). Therefore, the only valid solution is x\n= 1/5 which corresponds to y = 4x = 4/5. The corresponding value of z is\nz = $f$(1/5,4/5) = ln(4/5).\n\nTherefore, the tangent plane to $f$ is parallel to 2x + 2y - z = 3 at the\npoint P(a,b,c) = (1/5,4/5,ln(4/5))."
+    "answer_html": "<p>Therefore, the tangent plane to <span class=\"math\">\\(f\\)</span> is parallel to 2x + 2y - z = (1/5,4/5,ln(4/5)).</p>\n", 
+    "answer_latex": "Therefore, the tangent plane to $f$ is parallel to 2x + 2y - z = (1/5,4/5,ln(4/5)).", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Consider that if the tangent plane is parallel to another plane Q, then the normal vectors between the tangent plane and Q must also be parallel.</p>\n", 
+        "<p>The normal vector to the plane ax + by + cz = d is <span>[</span>a,b,c<span>]</span>.</p>\n<p>The normal vector to a function z = f(x,y) is given by the gradient of the function F(x,y,z) = f(x,y) - z.</p>\n"
+    ], 
+    "hints_latex": [
         "Consider that if the tangent plane is parallel to another plane Q, then\nthe normal vectors between the tangent plane and Q must also be\nparallel.", 
         "The normal vector to the plane ax + by + cz = d is {[}a,b,c{]}.\n\nThe normal vector to a function z = f(x,y) is given by the gradient of\nthe function F(x,y,z) = f(x,y) - z."
-    ]
+    ], 
+    "hints_raw": [
+        "Consider that if the tangent plane is parallel to another plane &lt;i>Q&lt;/i>, then the &lt;b>normal vectors&lt;/b> between the tangent plane and &lt;i>Q&lt;/i> must also be parallel.\n", 
+        "The normal vector to the plane &lt;i>ax + by + cz = d&lt;/i> is &lt;i>[a,b,c]&lt;/i>.\n\nThe normal vector to a function &lt;i>z = f(x,y)&lt;/i> is given by the gradient of the function &lt;i>F(x,y,z) = f(x,y) - z&lt;/i>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (b)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>Two planes are parallel if their normal vectors are parallel. Hence, we will evaluate the normal vectors for the given plane and the function <span class=\"math\">\\(f\\)</span> to determine the points where they are parallel.</p>\n<p>By inspection of the equation of the plane 2x + 2y - z = 3, we can see that is normal vector is <span class=\"math\">\\(\\mathbf{n}_{1} = [2,2,-1]^{T}\\)</span>.</p>\n<p>The normal vector to the function <span class=\"math\">\\(f\\)</span> at the point (x,y) is given by computing the gradient to F(x,y,z) = <span class=\"math\">\\(f\\)</span>(x,y) - z:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\nabla F(x,y,z) = \\left[F_{x}(x,y,z),F_{y}(x,y,z),F_{z}(x,y,z)\\right]^{T} = \\left[\\frac{8x}{4x^{2} + y^{2}},\\frac{2y}{4x^{2} + y^{2}},-1 \\right]^{T}.\\end{aligned}\\]</span></p>\n<p>Hence, to determine points where the normal vectors are parallel, we need to solve the following two equations for (x,y):</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{8x}{4x^{2} + y^{2}} = 2, \\quad \\frac{2y}{4x^{2} + y^{2}} = 2\\end{aligned}\\]</span></p>\n<p>Taking the difference of the two equations gives us the condition y = 4x. Taking this result and plugging it into the first equation above gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{8x}{4x^{2} + y^{2}} = 2 \\quad \\rightarrow \\quad 8x &amp;= 8x^{2} + 2y^{2} \\\\\n8x &amp;= 8x^{2} + 32x^{2} \\\\\nx &amp;= 5x^{2}\\end{aligned}\\]</span></p>\n<p>This equation has two solutions: x = 0 and x = 1/5. Notice that the x = 0 is invalid since the corresponding value of y is y = 4x = 0 and <span class=\"math\">\\(f\\)</span> is undefined at (0,0). Therefore, the only valid solution is x = 1/5 which corresponds to y = 4x = 4/5. The corresponding value of z is z = <span class=\"math\">\\(f\\)</span>(1/5,4/5) = ln(4/5).</p>\n<p>Therefore, the tangent plane to <span class=\"math\">\\(f\\)</span> is parallel to 2x + 2y - z = 3 at the point P(a,b,c) = (1/5,4/5,ln(4/5)).</p>\n"
+    ], 
+    "sols_latex": [
+        "Two planes are parallel if their normal vectors are parallel. Hence, we\nwill evaluate the normal vectors for the given plane and the function $f$\nto determine the points where they are parallel.\n\nBy inspection of the equation of the plane 2x + 2y - z = 3, we can see\nthat is normal vector is $\\mathbf{n}_{1} = [2,2,-1]^{T}$.\n\nThe normal vector to the function $f$ at the point (x,y) is given by\ncomputing the gradient to F(x,y,z) = $f$(x,y) - z:\n\n\\begin{align*}\n\\nabla F(x,y,z) = \\left[F_{x}(x,y,z),F_{y}(x,y,z),F_{z}(x,y,z)\\right]^{T} = \\left[\\frac{8x}{4x^{2} + y^{2}},\\frac{2y}{4x^{2} + y^{2}},-1 \\right]^{T}.\n\\end{align*}\nHence, to determine points where the normal vectors are parallel, we\nneed to solve the following two equations for (x,y):\n\n\\begin{align*}\n\\frac{8x}{4x^{2} + y^{2}} = 2, \\quad \\frac{2y}{4x^{2} + y^{2}} = 2\n\\end{align*}\nTaking the difference of the two equations gives us the condition y =\n4x. Taking this result and plugging it into the first equation above\ngives:\n\n\\begin{align*}\n\\frac{8x}{4x^{2} + y^{2}} = 2 \\quad \\rightarrow \\quad 8x &= 8x^{2} + 2y^{2} \\\\\n8x &= 8x^{2} + 32x^{2} \\\\\nx &= 5x^{2}\n\\end{align*} This equation has two solutions: x = 0 and x = 1/5. Notice\nthat the x = 0 is invalid since the corresponding value of y is y = 4x =\n0 and $f$ is undefined at (0,0). Therefore, the only valid solution is x\n= 1/5 which corresponds to y = 4x = 4/5. The corresponding value of z is\nz = $f$(1/5,4/5) = ln(4/5).\n\nTherefore, the tangent plane to $f$ is parallel to 2x + 2y - z = 3 at the\npoint P(a,b,c) = (1/5,4/5,ln(4/5))."
+    ], 
+    "sols_raw": [
+        "Two planes are parallel if their normal vectors are parallel. Hence, we will evaluate the normal vectors for the given plane and the function &lt;i>\u0192&lt;/i> to determine the points where they are parallel.\n\nBy inspection of the equation of the plane &lt;i>2x + 2y - z = 3&lt;/i>, we can see that is normal vector is &lt;math>\\mathbf{n}_{1} = [2,2,-1]^{T}&lt;/math>.\n\nThe normal vector to the function &lt;i>\u0192&lt;/i> at the point &lt;i>(x,y)&lt;/i> is given by computing the gradient to &lt;i>F(x,y,z) = \u0192(x,y) - z&lt;/i>:\n:&lt;math>\n\\nabla F(x,y,z) = \\left[F_{x}(x,y,z),F_{y}(x,y,z),F_{z}(x,y,z)\\right]^{T} = \\left[\\frac{8x}{4x^{2} + y^{2}},\\frac{2y}{4x^{2} + y^{2}},-1 \\right]^{T}.\n&lt;/math>\nHence, to determine points where the normal vectors are parallel, we need to solve the following two equations for &lt;i>(x,y)&lt;/i>:\n:&lt;math>\n\\frac{8x}{4x^{2} + y^{2}} = 2, \\quad \\frac{2y}{4x^{2} + y^{2}} = 2\n&lt;/math>\nTaking the difference of the two equations gives us the condition &lt;i>y = 4x&lt;/i>. Taking this result and plugging it into the first equation above gives:\n:&lt;math>\\begin{align}\n\\frac{8x}{4x^{2} + y^{2}} = 2 \\quad \\rightarrow \\quad 8x &amp;= 8x^{2} + 2y^{2} \\\\\n8x &amp;= 8x^{2} + 32x^{2} \\\\\nx &amp;= 5x^{2}\n\\end{align}&lt;/math>\nThis equation has two solutions: &lt;i>x = 0&lt;/i> and &lt;i>x = 1/5&lt;/i>. Notice that the &lt;i>x = 0&lt;/i> is invalid since the corresponding value of &lt;i>y&lt;/i> is &lt;i>y = 4x = 0&lt;/i> and \u0192 is undefined at &lt;i>(0,0)&lt;/i>. Therefore, the only valid solution is &lt;i>x = 1/5&lt;/i> which corresponds to &lt;i>y = 4x = 4/5&lt;/i>. The corresponding value of &lt;i>z&lt;/i> is &lt;i>z = \u0192(1/5,4/5) = ln(4/5)&lt;/i>.\n\n&lt;font style=\"color:blue;\">Therefore, the tangent plane to \u0192 is parallel to &lt;i>2x + 2y - z = 3&lt;/i> at the point &lt;i>P(a,b,c) = (1/5,4/5,ln(4/5))&lt;/i>.&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\\end{aligned}\\]</span></p>\n<p>Find a point <em>P(a,b,c)</em> on the graph of <span class=\"math\">\\(\\displaystyle z=f(x,y)\\)</span> such that the tangent plane to the graph of <span class=\"math\">\\(\\displaystyle z=f(x,y)\\)</span> at the point <em>P</em> is parallel to the plane <span class=\"math\">\\(\\displaystyle 2x+2y-z=3\\)</span>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\n\\end{align*}\n\nFind a point \\emph{P(a,b,c)} on the graph of $\\displaystyle z=f(x,y)$\nsuch that the tangent plane to the graph of $\\displaystyle z=f(x,y)$ at\nthe point \\emph{P} is parallel to the plane $\\displaystyle 2x+2y-z=3$.", 
+    "statement_raw": "Let\n\n:&lt;math>\n\\displaystyle{}z=f(x,y)=\\ln(4x^2+y^2)\n&lt;/math>\n\nFind a point ''P(a,b,c)'' on the graph of &lt;math>\\displaystyle z=f(x,y)&lt;/math> such that the tangent plane to the graph of &lt;math>\\displaystyle z=f(x,y)&lt;/math> at the point ''P'' is parallel to the plane &lt;math>\\displaystyle 2x+2y-z=3&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_02_(b)", 
+    "year": 2012
 }

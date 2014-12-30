@@ -1,14 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_02_(e)", 
-    "course": "MATH103", 
-    "statement": "The Taylor series for the function $\\displaystyle \\frac{1}{1 + x^{2}}$\naround $x=0$ is\n\n$\\displaystyle \\frac{1}{1 + x^{2}} = \\sum_{n=0}^{\\infty}(-1)^{n}x^{2n} = 1 - x^{2} + x^{4} - x^{6} + x^{8} -...$\n\nUse this fact to find the Taylor series for $\\displaystyle \\arctan(x)$\naround $x=0$.", 
-    "year": 2006, 
-    "sols": [
-        "Notice that $\\frac{1}{1+x^2}$ is the derivative of\n$\\displaystyle \\arctan(x)$. Take the integral of its Taylor Series to\nfind the Taylor Series for $\\displaystyle \\arctan(x)$.\n\n\\begin{align*}\n\\arctan(x) &= \\int \\frac{1}{1+x^2}\\,dx \\\\\n&= \\int \\left(1-x^2+x^4-x^6+x^8\\mp\\dots\\right)\\,dx \\\\\n&= x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\frac{x^7}{7}+\\frac{x^9}{9} \\mp \\dots\\end{align*}\n\nLooking at the patterns in these terms, you can see that\n\n\\begin{align*}\\arctan(x) = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\arctan(x)=\\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\\)</span></p>\n", 
+    "answer_latex": " $\\arctan(x)=\\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Notice that <span class=\"math\">\\(\\frac{1}{1+x^2}\\)</span> is the derivative of <span class=\"math\">\\(\\displaystyle \\arctan(x)\\)</span>.</p>\n", 
+        "<p>Take the integral of the Taylor Series of <span class=\"math\">\\(\\frac{1}{1+x^2}\\)</span> to find the Taylor Series for <span class=\"math\">\\(\\displaystyle \\arctan(x)\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Notice that $\\frac{1}{1+x^2}$ is the derivative of\n$\\displaystyle \\arctan(x)$.", 
         "Take the integral of the Taylor Series of $\\frac{1}{1+x^2}$ to find the\nTaylor Series for $\\displaystyle \\arctan(x)$."
-    ]
+    ], 
+    "hints_raw": [
+        "Notice that &lt;math>\\frac{1}{1+x^2}&lt;/math> is the derivative of &lt;math>\\displaystyle \\arctan(x)&lt;/math>.\n", 
+        "Take the integral of the Taylor Series of &lt;math>\\frac{1}{1+x^2}&lt;/math> to find the Taylor Series for &lt;math>\\displaystyle \\arctan(x)&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Notice that <span class=\"math\">\\(\\frac{1}{1+x^2}\\)</span> is the derivative of <span class=\"math\">\\(\\displaystyle \\arctan(x)\\)</span>. Take the integral of its Taylor Series to find the Taylor Series for <span class=\"math\">\\(\\displaystyle \\arctan(x)\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\arctan(x) &amp;= \\int \\frac{1}{1+x^2}\\,dx \\\\\n&amp;= \\int \\left(1-x^2+x^4-x^6+x^8\\mp\\dots\\right)\\,dx \\\\\n&amp;= x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\frac{x^7}{7}+\\frac{x^9}{9} \\mp \\dots\\end{aligned}\\]</span></p>\n<p>Looking at the patterns in these terms, you can see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\arctan(x) = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that $\\frac{1}{1+x^2}$ is the derivative of\n$\\displaystyle \\arctan(x)$. Take the integral of its Taylor Series to\nfind the Taylor Series for $\\displaystyle \\arctan(x)$.\n\n\\begin{align*}\n\\arctan(x) &= \\int \\frac{1}{1+x^2}\\,dx \\\\\n&= \\int \\left(1-x^2+x^4-x^6+x^8\\mp\\dots\\right)\\,dx \\\\\n&= x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\frac{x^7}{7}+\\frac{x^9}{9} \\mp \\dots\n\\end{align*}\n\nLooking at the patterns in these terms, you can see that\n\n\\begin{align*}\n\\arctan(x) = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Notice that &lt;math>\\frac{1}{1+x^2}&lt;/math> is the derivative of &lt;math>\\displaystyle \\arctan(x)&lt;/math>. Take the integral of its Taylor Series to find the Taylor Series for &lt;math>\\displaystyle \\arctan(x)&lt;/math>.\n\n:&lt;math>\\begin{align}\n\\arctan(x) &amp;= \\int \\frac{1}{1+x^2}\\,dx \\\\\n&amp;= \\int \\left(1-x^2+x^4-x^6+x^8\\mp\\dots\\right)\\,dx \\\\\n&amp;= x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\frac{x^7}{7}+\\frac{x^9}{9} \\mp \\dots\n\\end{align}\n&lt;/math>\n\nLooking at the patterns in these terms, you can see that \n\n:&lt;math>\n\\arctan(x) = \\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n+1}}{2n+1}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The Taylor series for the function <span class=\"math\">\\(\\displaystyle \\frac{1}{1 + x^{2}}\\)</span> around <span class=\"math\">\\(x=0\\)</span> is</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{1}{1 + x^{2}} = \\sum_{n=0}^{\\infty}(-1)^{n}x^{2n} = 1 - x^{2} + x^{4} - x^{6} + x^{8} -...\\)</span></p>\n<p>Use this fact to find the Taylor series for <span class=\"math\">\\(\\displaystyle \\arctan(x)\\)</span> around <span class=\"math\">\\(x=0\\)</span>.</p>\n", 
+    "statement_latex": "The Taylor series for the function $\\displaystyle \\frac{1}{1 + x^{2}}$\naround $x=0$ is\n\n$\\displaystyle \\frac{1}{1 + x^{2}} = \\sum_{n=0}^{\\infty}(-1)^{n}x^{2n} = 1 - x^{2} + x^{4} - x^{6} + x^{8} -...$\n\nUse this fact to find the Taylor series for $\\displaystyle \\arctan(x)$\naround $x=0$.", 
+    "statement_raw": "The Taylor series for the function &lt;math> \\displaystyle \\frac{1}{1 + x^{2}} &lt;/math> around &lt;math> x=0 &lt;/math> is \n\n&lt;math> \\displaystyle \\frac{1}{1 + x^{2}} = \\sum_{n=0}^{\\infty}(-1)^{n}x^{2n} = 1 - x^{2} + x^{4} - x^{6} + x^{8} -... &lt;/math>\n\nUse this fact to find the Taylor series for &lt;math> \\displaystyle \\arctan(x) &lt;/math> around &lt;math> x=0 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_02_(e)", 
+    "year": 2006
 }

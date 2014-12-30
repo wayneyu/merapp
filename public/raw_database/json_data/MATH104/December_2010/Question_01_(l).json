@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(l)", 
+    "answer_html": "<p>If <span class=\"math\">\\(x = \\pi\\)</span> is a critical point then <span class=\"math\">\\(2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 0\\)</span> so <span class=\"math\">\\(a = 1/2\\)</span>.</p>\n", 
+    "answer_latex": "If $x = \\pi$ is a critical point then\n$2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 0$ so\n$a = 1/2$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH104", 
-    "statement": "Find the value of the constant a such that\n\n\\begin{align*}\\displaystyle{}f(x)=a\\sin(2x)+x\\cos(x)\\end{align*}\n\nhas a critical point at $x=\\pi$.", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What does it mean (state an equation) for <span class=\"math\">\\(f(x)\\)</span> to have a critical point at <span class=\"math\">\\(x=\\pi\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
+        "What does it mean (state an equation) for $f(x)$ to have a critical\npoint at $x=\\pi$?"
+    ], 
+    "hints_raw": [
+        "What does it mean (state an equation) for &lt;math>f(x)&lt;/math> to have a critical point at &lt;math>x=\\pi&lt;/math>?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (l)", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>Using the chain and product rules, we compute <span class=\"math\">\\(f&#39;(x) = 2 a \\cos(2x) + \\cos(x) - x \\sin(x) = 0\\)</span> at a critical point.</p>\n<p>If <span class=\"math\">\\(x = \\pi\\)</span> is a critical point then <span class=\"math\">\\(2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 2a - 1 - 0 = 0\\)</span> so <span class=\"math\">\\(a = 1/2\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "Using the chain and product rules, we compute\n$f'(x) = 2 a \\cos(2x) + \\cos(x) - x \\sin(x) = 0$ at a critical point.\n\nIf $x = \\pi$ is a critical point then\n$2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 2a - 1 - 0 = 0$ so\n$a = 1/2$."
     ], 
-    "hints": [
-        "What does it mean (state an equation) for $f(x)$ to have a critical\npoint at $x=\\pi$?"
-    ]
+    "sols_raw": [
+        "Using the chain and product rules, we compute &lt;math>f'(x) = 2 a \\cos(2x) + \\cos(x) - x \\sin(x) = 0&lt;/math> at a critical point.\n\nIf &lt;math>x = \\pi&lt;/math> is a critical point then &lt;math>2 a \\cos(2 \\pi) + \\cos(\\pi) - \\pi \\sin (\\pi) = 2a - 1 - 0 = 0&lt;/math> so &lt;math>a = 1/2&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find the value of the constant a such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}f(x)=a\\sin(2x)+x\\cos(x)\\end{aligned}\\]</span></p>\n<p>has a critical point at <span class=\"math\">\\(x=\\pi\\)</span>.</p>\n", 
+    "statement_latex": "Find the value of the constant a such that\n\n\\begin{align*}\n\\displaystyle{}f(x)=a\\sin(2x)+x\\cos(x)\n\\end{align*}\n\nhas a critical point at $x=\\pi$.", 
+    "statement_raw": "Find the value of the constant a such that\n\n:&lt;math>\n\\displaystyle{}f(x)=a\\sin(2x)+x\\cos(x)\n&lt;/math>\n\nhas a critical point at &lt;math>x=\\pi&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_01_(l)", 
+    "year": 2010
 }

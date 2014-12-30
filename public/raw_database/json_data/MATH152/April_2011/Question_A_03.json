@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_A_03", 
-    "course": "MATH152", 
-    "statement": "Given the vectors\n\n\\begin{align*}\n\\mathbf{x}&=[0,-3,2]\\\\\n\\mathbf{y}&=[1,1,1]\\end{align*}\n\nCompute the projection of \\textbf{\\emph{x}} onto the direction of\n\\textbf{\\emph{y}}.", 
-    "year": 2011, 
-    "sols": [
-        "Consider connecting the two vectors into a right triangle similar the\npicture to the right\\includegraphics[width=.5\\textwidth]{Dot_Product.png}. To get the\ncomponent of $\\mathbf{x}$ onto $\\mathbf{y}$, we follow like in the\npicture and\ntake,\\\\\\begin{align*}\\textrm{proj}_\\mathbf{y}\\mathbf{x}=|\\mathbf{x}|\\cos(\\theta)\\hat{\\mathbf{y}}\\end{align*}\\\\where\n$\\theta$ is the angle between the vectors $\\mathbf{x}$ and $\\mathbf{y}$\nand $\\hat{\\mathbf{y}}$ is a unit vector in the direction of\n$\\mathbf{y}$. We can rewrite $\\cos(\\theta)$ in terms of the\n\\href{Wikipedia:Dot_Product}{dot (scalar) product}\nas,\\\\\\begin{align*}\\cos(\\theta)=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{x}||\\mathbf{y}|}.\\end{align*}\\\\Therefore,\nthe projection of $\\mathbf{x}$ onto $\\mathbf{y}$\nis\\\\\\begin{align*}\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|}\\hat{\\mathbf{y}}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}\\end{align*}\\\\where\nwe have recognized\nthat\\\\\\begin{align*}\\hat{\\mathbf{y}}=\\frac{\\mathbf{y}}{|\\mathbf{y}|}.\\end{align*}\\\\Computing\nthe dot product we get,\\\\\\begin{align*}\\mathbf{x}\\cdot\\mathbf{y}=0-3+2=-1\\end{align*}\\\\and for\nthe magnitude of\n$\\mathbf{y}$,\\\\\\begin{align*}|\\mathbf{y}|=\\sqrt{1^2+1^2+1^2}=\\sqrt{3}.\\end{align*}\\\\Therefore\nwe get that the projection of $\\mathbf{x}$ onto $\\mathbf{y}$\nis,\\\\\\begin{align*}\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}=-\\frac{1}{3}\\mathbf{y}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].\\end{align*}\\\\"
+    "answer_html": "<p><span class=\"math\">\\(\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].\\)</span><br /></p>\n", 
+    "answer_latex": " $\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].$ \\\\", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Consider drawing a line segment to form a right triangle with the two vectors. If you knew the angle between the vectors, how would you get the lengths of the perpendicular sides? How could you determine the angle between the vectors?</p>\n"
+    ], 
+    "hints_latex": [
         "Consider drawing a line segment to form a right triangle with the two\nvectors. If you knew the angle between the vectors, how would you get\nthe lengths of the perpendicular sides? How could you determine the\nangle between the vectors?"
-    ]
+    ], 
+    "hints_raw": [
+        "Consider drawing a line segment to form a right triangle with the two vectors.  If you knew the angle between the vectors, how would you get the lengths of the perpendicular sides?  How could you determine the angle between the vectors?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 03", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>Consider connecting the two vectors into a right triangle similar the picture to the right<img src=\"../json_data/MATH152/April_2011/Dot_Product.png\" alt=\"image\" />. To get the component of <span class=\"math\">\\(\\mathbf{x}\\)</span> onto <span class=\"math\">\\(\\mathbf{y}\\)</span>, we follow like in the picture and take,<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=|\\mathbf{x}|\\cos(\\theta)\\hat{\\mathbf{y}}\\end{aligned}\\]</span></p>\n<p><br />where <span class=\"math\">\\(\\theta\\)</span> is the angle between the vectors <span class=\"math\">\\(\\mathbf{x}\\)</span> and <span class=\"math\">\\(\\mathbf{y}\\)</span> and <span class=\"math\">\\(\\hat{\\mathbf{y}}\\)</span> is a unit vector in the direction of <span class=\"math\">\\(\\mathbf{y}\\)</span>. We can rewrite <span class=\"math\">\\(\\cos(\\theta)\\)</span> in terms of the <span>dot (scalar) product</span> as,<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\cos(\\theta)=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{x}||\\mathbf{y}|}.\\end{aligned}\\]</span></p>\n<p><br />Therefore, the projection of <span class=\"math\">\\(\\mathbf{x}\\)</span> onto <span class=\"math\">\\(\\mathbf{y}\\)</span> is<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|}\\hat{\\mathbf{y}}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}\\end{aligned}\\]</span></p>\n<p><br />where we have recognized that<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\hat{\\mathbf{y}}=\\frac{\\mathbf{y}}{|\\mathbf{y}|}.\\end{aligned}\\]</span></p>\n<p><br />Computing the dot product we get,<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}\\cdot\\mathbf{y}=0-3+2=-1\\end{aligned}\\]</span></p>\n<p><br />and for the magnitude of <span class=\"math\">\\(\\mathbf{y}\\)</span>,<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\mathbf{y}|=\\sqrt{1^2+1^2+1^2}=\\sqrt{3}.\\end{aligned}\\]</span></p>\n<p><br />Therefore we get that the projection of <span class=\"math\">\\(\\mathbf{x}\\)</span> onto <span class=\"math\">\\(\\mathbf{y}\\)</span> is,<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}=-\\frac{1}{3}\\mathbf{y}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].\\end{aligned}\\]</span></p>\n<p><br /></p>\n"
+    ], 
+    "sols_latex": [
+        "Consider connecting the two vectors into a right triangle similar the\npicture to the right\\includegraphics[width=0.5\\textwidth]{../json_data/MATH152/April_2011/Dot_Product.png}. To get the\ncomponent of $\\mathbf{x}$ onto $\\mathbf{y}$, we follow like in the\npicture and\ntake,\\\\\\begin{align*}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=|\\mathbf{x}|\\cos(\\theta)\\hat{\\mathbf{y}}\n\\end{align*}\\\\where\n$\\theta$ is the angle between the vectors $\\mathbf{x}$ and $\\mathbf{y}$\nand $\\hat{\\mathbf{y}}$ is a unit vector in the direction of\n$\\mathbf{y}$. We can rewrite $\\cos(\\theta)$ in terms of the\n{dot (scalar) product}\nas,\\\\\\begin{align*}\n\\cos(\\theta)=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{x}||\\mathbf{y}|}.\n\\end{align*}\\\\Therefore,\nthe projection of $\\mathbf{x}$ onto $\\mathbf{y}$\nis\\\\\\begin{align*}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|}\\hat{\\mathbf{y}}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}\n\\end{align*}\\\\where\nwe have recognized\nthat\\\\\\begin{align*}\n\\hat{\\mathbf{y}}=\\frac{\\mathbf{y}}{|\\mathbf{y}|}.\n\\end{align*}\\\\Computing\nthe dot product we get,\\\\\\begin{align*}\n\\mathbf{x}\\cdot\\mathbf{y}=0-3+2=-1\n\\end{align*}\\\\and for\nthe magnitude of\n$\\mathbf{y}$,\\\\\\begin{align*}\n|\\mathbf{y}|=\\sqrt{1^2+1^2+1^2}=\\sqrt{3}.\n\\end{align*}\\\\Therefore\nwe get that the projection of $\\mathbf{x}$ onto $\\mathbf{y}$\nis,\\\\\\begin{align*}\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}=-\\frac{1}{3}\\mathbf{y}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].\n\\end{align*}\\\\"
+    ], 
+    "sols_raw": [
+        "Consider connecting the two vectors into a right triangle similar the picture to the right[[File:Dot_Product.png|thumbnail|alt=Example of Projection]].  To get the component of &lt;math> \\mathbf{x} &lt;/math> onto &lt;math> \\mathbf{y} &lt;/math>, we follow like in the picture and take,\n&lt;br />\n:&lt;math>\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=|\\mathbf{x}|\\cos(\\theta)\\hat{\\mathbf{y}}\n&lt;/math>\n&lt;br />\nwhere &lt;math> \\theta &lt;/math> is the angle between the vectors &lt;math> \\mathbf{x} &lt;/math> and &lt;math> \\mathbf{y} &lt;/math> and &lt;math> \\hat{\\mathbf{y}} &lt;/math> is a unit vector in the direction of &lt;math> \\mathbf{y} &lt;/math>.  We can rewrite &lt;math> \\cos(\\theta) &lt;/math> in terms of the [[Wikipedia:Dot_Product|dot (scalar) product]] as,\n&lt;br />\n:&lt;math>\n\\cos(\\theta)=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{x}||\\mathbf{y}|}.\n&lt;/math>\n&lt;br />\nTherefore, the projection of &lt;math> \\mathbf{x} &lt;/math> onto &lt;math> \\mathbf{y} &lt;/math> is\n&lt;br />\n:&lt;math>\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|}\\hat{\\mathbf{y}}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}\n&lt;/math>\n&lt;br />\nwhere we have recognized that\n&lt;br />\n:&lt;math>\n\\hat{\\mathbf{y}}=\\frac{\\mathbf{y}}{|\\mathbf{y}|}.\n&lt;/math>\n&lt;br />\nComputing the dot product we get,\n&lt;br />\n:&lt;math>\n\\mathbf{x}\\cdot\\mathbf{y}=0-3+2=-1\n&lt;/math>\n&lt;br />\nand for the magnitude of &lt;math>\\mathbf{y}&lt;/math>,\n&lt;br />\n:&lt;math>\n|\\mathbf{y}|=\\sqrt{1^2+1^2+1^2}=\\sqrt{3}.\n&lt;/math>\n&lt;br />\nTherefore we get that the projection of &lt;math> \\mathbf{x} &lt;/math> onto &lt;math> \\mathbf{y} &lt;/math> is,\n&lt;br />\n:&lt;math>\n\\textrm{proj}_\\mathbf{y}\\mathbf{x}=\\frac{\\mathbf{x}\\cdot\\mathbf{y}}{|\\mathbf{y}|^2}\\mathbf{y}=-\\frac{1}{3}\\mathbf{y}=\\left[-\\frac{1}{3},-\\frac{1}{3},-\\frac{1}{3}\\right].\n&lt;/math>\n&lt;br />\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Given the vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}&amp;=[0,-3,2]\\\\\n\\mathbf{y}&amp;=[1,1,1]\\end{aligned}\\]</span></p>\n<p>Compute the projection of <strong><em>x</em></strong> onto the direction of <strong><em>y</em></strong>.</p>\n", 
+    "statement_latex": "Given the vectors\n\n\\begin{align*}\n\\mathbf{x}&=[0,-3,2]\\\\\n\\mathbf{y}&=[1,1,1]\n\\end{align*}\n\nCompute the projection of \\textbf{\\emph{x}} onto the direction of\n\\textbf{\\emph{y}}.", 
+    "statement_raw": "Given the vectors\n\n:&lt;math>\n\\begin{align}\n\\mathbf{x}&amp;=[0,-3,2]\\\\\n\\mathbf{y}&amp;=[1,1,1]\\\\\n\\end{align}\n&lt;/math>\n\nCompute the projection of '''''x''''' onto the direction of '''''y'''''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_03", 
+    "year": 2011
 }

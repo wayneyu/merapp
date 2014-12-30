@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_04_(c)", 
-    "course": "MATH101", 
-    "statement": "Determine, with explanation, whether the series\n\n\\begin{align*}\\sum_{n=2}^{\\infty}\\frac{(-1)^{n}}{n(\\ln n)^{101}}\\end{align*}\n\nconverges absolutely, converges conditionally, or diverges.", 
-    "year": 2012, 
-    "sols": [
-        "We will use the integral test. Note that\n\n\\begin{align*}\\int_2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\int_2^a \\frac{dx}{x\\ln(x)^{101}}\\end{align*}\n\nWe can calculate $\\int_2^a \\frac{dx}{x\\ln(x)^{101}}$ by substitution\nwith $u=\\ln x$ (then \\emph{du=(1/x)dx}) to get\n\n\\begin{align*}\n\\int_2^a \\frac{dx}{x\\ln(x)^{101}} &= \\int_{\\ln(2)}^{\\ln(a)} u^{-101}du \\\\\n&= \\left.-\\frac1{100u^{100}}\\right|_{\\ln(2)}^{\\ln(a)} \\\\\n&= -\\frac1{100}\\left(\\frac1{(\\ln(a))^{100}}-\\frac1{(\\ln(2))^{100}}\\right) \\end{align*}\n\nHence\n\n\\begin{align*}\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\frac1{100}\\left(\\frac{1}{\\ln(2)^{100}}-\\frac{1}{\\ln(a)^{100}}\\right)=\\frac{1}{100\\ln(2)^{100}}.\\end{align*}\n\nThis implies that the series converges absolutely by the integral test."
+    "answer_html": "<p><span class=\"math\">\\(\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\frac{1}{100\\ln(2)^{100}}.\\)</span> This implies that the series converges absolutely by the integral test.</p>\n", 
+    "answer_latex": " $\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\frac{1}{100\\ln(2)^{100}}.$ This implies that the series converges absolutely by the integral test.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Can you integrate <span class=\"math\">\\(\\frac{1}{x(\\ln x)^{101}}\\)</span> ?</p>\n"
+    ], 
+    "hints_latex": [
         "Can you integrate $\\frac{1}{x(\\ln x)^{101}}$ ?"
-    ]
+    ], 
+    "hints_raw": [
+        "Can you integrate &lt;math> \\frac{1}{x(\\ln x)^{101}} &lt;/math> ?\n"
+    ], 
+    "num_votes": 9, 
+    "question": "4 (c)", 
+    "rating": 56, 
+    "sols_html": [
+        "<p>We will use the integral test. Note that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\int_2^a \\frac{dx}{x\\ln(x)^{101}}\\end{aligned}\\]</span></p>\n<p>We can calculate <span class=\"math\">\\(\\int_2^a \\frac{dx}{x\\ln(x)^{101}}\\)</span> by substitution with <span class=\"math\">\\(u=\\ln x\\)</span> (then <em>du=(1/x)dx</em>) to get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_2^a \\frac{dx}{x\\ln(x)^{101}} &amp;= \\int_{\\ln(2)}^{\\ln(a)} u^{-101}du \\\\\n&amp;= \\left.-\\frac1{100u^{100}}\\right|_{\\ln(2)}^{\\ln(a)} \\\\\n&amp;= -\\frac1{100}\\left(\\frac1{(\\ln(a))^{100}}-\\frac1{(\\ln(2))^{100}}\\right) \\end{aligned}\\]</span></p>\n<p>Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\frac1{100}\\left(\\frac{1}{\\ln(2)^{100}}-\\frac{1}{\\ln(a)^{100}}\\right)=\\frac{1}{100\\ln(2)^{100}}.\\end{aligned}\\]</span></p>\n<p>This implies that the series converges absolutely by the integral test.</p>\n"
+    ], 
+    "sols_latex": [
+        "We will use the integral test. Note that\n\n\\begin{align*}\n\\int_2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\int_2^a \\frac{dx}{x\\ln(x)^{101}}\n\\end{align*}\n\nWe can calculate $\\int_2^a \\frac{dx}{x\\ln(x)^{101}}$ by substitution\nwith $u=\\ln x$ (then \\emph{du=(1/x)dx}) to get\n\n\\begin{align*}\n\\int_2^a \\frac{dx}{x\\ln(x)^{101}} &= \\int_{\\ln(2)}^{\\ln(a)} u^{-101}du \\\\\n&= \\left.-\\frac1{100u^{100}}\\right|_{\\ln(2)}^{\\ln(a)} \\\\\n&= -\\frac1{100}\\left(\\frac1{(\\ln(a))^{100}}-\\frac1{(\\ln(2))^{100}}\\right) \n\\end{align*}\n\nHence\n\n\\begin{align*}\n\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\frac1{100}\\left(\\frac{1}{\\ln(2)^{100}}-\\frac{1}{\\ln(a)^{100}}\\right)=\\frac{1}{100\\ln(2)^{100}}.\n\\end{align*}\n\nThis implies that the series converges absolutely by the integral test."
+    ], 
+    "sols_raw": [
+        "We will use the integral test. Note that \n\n:&lt;math>\n\\int_2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\int_2^a \\frac{dx}{x\\ln(x)^{101}}\n&lt;/math>\n\nWe can calculate &lt;math> \\int_2^a \\frac{dx}{x\\ln(x)^{101}} &lt;/math> by substitution with &lt;math>u=\\ln x &lt;/math> (then ''du=(1/x)dx'') to get \n\n:&lt;math>\n\\begin{align}\n\\int_2^a \\frac{dx}{x\\ln(x)^{101}} &amp;= \\int_{\\ln(2)}^{\\ln(a)} u^{-101}du \\\\\n&amp;= \\left.-\\frac1{100u^{100}}\\right|_{\\ln(2)}^{\\ln(a)} \\\\\n&amp;= -\\frac1{100}\\left(\\frac1{(\\ln(a))^{100}}-\\frac1{(\\ln(2))^{100}}\\right) \n\\end{align}\n&lt;/math>\n\nHence\n\n:&lt;math>\\int _2^\\infty \\frac{dx}{x\\ln(x)^{101}}=\\lim_{a\\to \\infty} \\frac1{100}\\left(\\frac{1}{\\ln(2)^{100}}-\\frac{1}{\\ln(a)^{100}}\\right)=\\frac{1}{100\\ln(2)^{100}}&lt;/math>.\n\n\nThis implies that the series converges absolutely by the integral test.\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Determine, with explanation, whether the series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=2}^{\\infty}\\frac{(-1)^{n}}{n(\\ln n)^{101}}\\end{aligned}\\]</span></p>\n<p>converges absolutely, converges conditionally, or diverges.</p>\n", 
+    "statement_latex": "Determine, with explanation, whether the series\n\n\\begin{align*}\n\\sum_{n=2}^{\\infty}\\frac{(-1)^{n}}{n(\\ln n)^{101}}\n\\end{align*}\n\nconverges absolutely, converges conditionally, or diverges.", 
+    "statement_raw": "Determine, with explanation, whether the series \n\n:&lt;math>\n\\sum_{n=2}^{\\infty}\\frac{(-1)^{n}}{n(\\ln n)^{101}}\n&lt;/math>\n\nconverges absolutely, converges conditionally, or diverges.\n", 
+    "term": "April", 
+    "topics": [
+        "Integral_test_for_convergence"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_04_(c)", 
+    "year": 2012
 }

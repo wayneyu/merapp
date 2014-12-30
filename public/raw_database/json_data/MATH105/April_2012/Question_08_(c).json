@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_08_(c)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nSolve the differential equation\n\n\\begin{align*}\\frac{dy}{dx} = xe^{x^2-\\ln(y^2)}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "We begin by rewriting the equation by using exponent and logarithm\nrules:\n\n$\\frac{dy}{dx} = x e^{x^2 - \\ln(y^2)} = x e^{x^2} e^{-\\ln(y^2)} = x e^{x^2} e^{\\ln(y^{-2})} = x e^{x^2} \\frac{1}{y^2}$.\n\nFrom $\\frac{dy}{dx} = x e^{x^2} \\frac{1}{y^2}$, we can separate\nvariables:\n\n$y^2 dy = x e^{x^2} dx$.\n\nNow we integrate:\n\n\\begin{align*}\\int y^2 dy = \\int x e^{x^2} dx \\implies \\frac{y^3}{3} = \\frac{1}{2} e^{x^2} + C_1.\\end{align*}\n\nThe second integral was solved using the substitution $u = x^2$, so that\n$du = 2x dx$ and hence\n\n\\begin{align*}\\int x e^{x^2} dx = \\int \\frac{1}{2} e^u du = \\frac{1}{2} e^u + C_1 = \\frac{1}{2} e^{x^2} + C_1\\end{align*}\n\nWe can solve for \\emph{y}:\n\n\\begin{align*}y^3 = \\frac{3}{2} e^{x^2} + 3C\\end{align*} so\n$y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + 3C_1}$\n\nSince \\emph{C}\\textsubscript{1} is arbitrary, we can just as well write\n\n\\begin{align*}y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + C_2}\\end{align*}\n\nfor \\emph{C}\\textsubscript{2} an arbitrary constant."
+    "answer_html": "<p>for <em>C</em><sub>2</sub> an arbitrary constant.</p>\n", 
+    "answer_latex": "for \\emph{C}\\textsubscript{2} an arbitrary constant.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>First, simplify the right hand side, then use separation of variables.</p>\n"
+    ], 
+    "hints_latex": [
         "First, simplify the right hand side, then use separation of variables."
-    ]
+    ], 
+    "hints_raw": [
+        "First, simplify the right hand side, then use separation of variables.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "8 (c)", 
+    "rating": 46, 
+    "sols_html": [
+        "<p>We begin by rewriting the equation by using exponent and logarithm rules:</p>\n<p><span class=\"math\">\\(\\frac{dy}{dx} = x e^{x^2 - \\ln(y^2)} = x e^{x^2} e^{-\\ln(y^2)} = x e^{x^2} e^{\\ln(y^{-2})} = x e^{x^2} \\frac{1}{y^2}\\)</span>.</p>\n<p>From <span class=\"math\">\\(\\frac{dy}{dx} = x e^{x^2} \\frac{1}{y^2}\\)</span>, we can separate variables:</p>\n<p><span class=\"math\">\\(y^2 dy = x e^{x^2} dx\\)</span>.</p>\n<p>Now we integrate:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int y^2 dy = \\int x e^{x^2} dx \\implies \\frac{y^3}{3} = \\frac{1}{2} e^{x^2} + C_1.\\end{aligned}\\]</span></p>\n<p>The second integral was solved using the substitution <span class=\"math\">\\(u = x^2\\)</span>, so that <span class=\"math\">\\(du = 2x dx\\)</span> and hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x e^{x^2} dx = \\int \\frac{1}{2} e^u du = \\frac{1}{2} e^u + C_1 = \\frac{1}{2} e^{x^2} + C_1\\end{aligned}\\]</span></p>\n<p>We can solve for <em>y</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny^3 = \\frac{3}{2} e^{x^2} + 3C\\end{aligned}\\]</span></p>\n<p>so <span class=\"math\">\\(y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + 3C_1}\\)</span></p>\n<p>Since <em>C</em><sub>1</sub> is arbitrary, we can just as well write</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny = \\sqrt[3]{\\frac{3}{2} e^{x^2} + C_2}\\end{aligned}\\]</span></p>\n<p>for <em>C</em><sub>2</sub> an arbitrary constant.</p>\n"
+    ], 
+    "sols_latex": [
+        "We begin by rewriting the equation by using exponent and logarithm\nrules:\n\n$\\frac{dy}{dx} = x e^{x^2 - \\ln(y^2)} = x e^{x^2} e^{-\\ln(y^2)} = x e^{x^2} e^{\\ln(y^{-2})} = x e^{x^2} \\frac{1}{y^2}$.\n\nFrom $\\frac{dy}{dx} = x e^{x^2} \\frac{1}{y^2}$, we can separate\nvariables:\n\n$y^2 dy = x e^{x^2} dx$.\n\nNow we integrate:\n\n\\begin{align*}\n\\int y^2 dy = \\int x e^{x^2} dx \\implies \\frac{y^3}{3} = \\frac{1}{2} e^{x^2} + C_1.\n\\end{align*}\n\nThe second integral was solved using the substitution $u = x^2$, so that\n$du = 2x dx$ and hence\n\n\\begin{align*}\n\\int x e^{x^2} dx = \\int \\frac{1}{2} e^u du = \\frac{1}{2} e^u + C_1 = \\frac{1}{2} e^{x^2} + C_1\n\\end{align*}\n\nWe can solve for \\emph{y}:\n\n\\begin{align*}\ny^3 = \\frac{3}{2} e^{x^2} + 3C\n\\end{align*} so\n$y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + 3C_1}$\n\nSince \\emph{C}\\textsubscript{1} is arbitrary, we can just as well write\n\n\\begin{align*}\ny = \\sqrt[3]{\\frac{3}{2} e^{x^2} + C_2}\n\\end{align*}\n\nfor \\emph{C}\\textsubscript{2} an arbitrary constant."
+    ], 
+    "sols_raw": [
+        "We begin by rewriting the equation by using exponent and logarithm rules:\n\n&lt;math>\\frac{dy}{dx} = x e^{x^2 - \\ln(y^2)} = x e^{x^2} e^{-\\ln(y^2)} = x e^{x^2} e^{\\ln(y^{-2})} = x e^{x^2} \\frac{1}{y^2}&lt;/math>.\n\nFrom &lt;math>\\frac{dy}{dx} = x e^{x^2} \\frac{1}{y^2}&lt;/math>, we can separate variables:\n\n&lt;math>y^2 dy = x e^{x^2} dx&lt;/math>.\n\nNow we integrate:\n\n:&lt;math>\\int y^2 dy = \\int x e^{x^2} dx \\implies \\frac{y^3}{3} = \\frac{1}{2} e^{x^2} + C_1&lt;/math>.\n\nThe second integral was solved using the substitution &lt;math>u = x^2&lt;/math>, so that &lt;math>du = 2x dx&lt;/math> and hence\n\n:&lt;math>\\int x e^{x^2} dx = \\int \\frac{1}{2} e^u du = \\frac{1}{2} e^u + C_1 = \\frac{1}{2} e^{x^2} + C_1&lt;/math>\n\nWe can solve for ''y'':\n\n:&lt;math>y^3 = \\frac{3}{2} e^{x^2} + 3C&lt;/math> so &lt;math>y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + 3C_1}&lt;/math>\n\nSince ''C''&lt;sub>1&lt;/sub> is arbitrary, we can just as well write\n\n:&lt;math>y = \\sqrt[3]{\\frac{3}{2} e^{x^2} + C_2}&lt;/math>\n\nfor ''C''&lt;sub>2&lt;/sub> an arbitrary constant.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.</em></p>\n<p>Solve the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = xe^{x^2-\\ln(y^2)}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nSolve the differential equation\n\n\\begin{align*}\n\\frac{dy}{dx} = xe^{x^2-\\ln(y^2)}\n\\end{align*}", 
+    "statement_raw": "''Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\nSolve the differential equation\n\n:&lt;math>\n\\frac{dy}{dx} = xe^{x^2-\\ln(y^2)}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(c)", 
+    "year": 2012
 }

@@ -1,15 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_A_13", 
-    "course": "MATH152", 
-    "statement": "The linear transformation $T : \\mathbb{R}^{2} \\to \\mathbb{R}^{2}$ is\ngiven by $T(x) = Mx$ for some matrix $M$. Given that\n$M \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}$\nand\n$M \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}$,\nfind the matrix M.", 
-    "year": 2013, 
-    "sols": [
-        "Notice that you can write the two given matrix-vector equations as a\nmatrix-matrix equation:\n\n\\begin{align*}M\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad M\\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} \\quad \\rightarrow \\quad M\\begin{bmatrix} 1 & 2 \\\\ 1 & 1\\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\0 & 1\\end{bmatrix} = I_{2}.\\end{align*}\nSince M times the matrix of vectors is the 2-x-2 identity matrix, this\nmeans that\n\n\\begin{align*}M = \\begin{bmatrix} 1 & 2 \\\\ 1 & 1\\end{bmatrix}^{-1}.\\end{align*} Using the\n2-x-2 inverse matrix formula, we can write\n\n\\begin{align*}{\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1 & -2 \\\\ -1 & 1\\end{bmatrix} = \\begin{bmatrix} -1 & 2 \\\\ 1 &-1\\end{bmatrix}}.\\end{align*}", 
-        "Since \\emph{M} is a linear transformation,\n\n\\begin{align*}M\\begin{bmatrix}1\\\\ 0\\end{bmatrix} = M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} = \\begin{bmatrix}0\\\\ 1\\end{bmatrix} - \\begin{bmatrix}1\\\\ 0\\end{bmatrix} = \\begin{bmatrix}-1\\\\ 1\\end{bmatrix}\\end{align*}\n\nand\n\n\\begin{align*}M\\begin{bmatrix}0\\\\ 1\\end{bmatrix} = 2M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ 0\\end{bmatrix} - \\begin{bmatrix}0\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ -1\\end{bmatrix}\\end{align*}\n\nHence\n\n\\begin{align*}M = \\begin{bmatrix}-1 & 2\\\\ 1 & -1\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1  -2 \\\\ -1  1\\end{bmatrix} = \\begin{bmatrix} -1  2 \\\\ 1 -1\\end{bmatrix}}.\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1  -2 \\\\ -1  1\\end{bmatrix} = \\begin{bmatrix} -1  2 \\\\ 1 -1\\end{bmatrix}}.$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>You might try to write the two given matrix-vector equations as a single matrix equation. Then you will see M can be determined via a matrix multiplication problem.</p>\n", 
+        "<p>Remember the formula for the inverse of a 2-x-2 matrix:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\begin{bmatrix} a &amp; b \\\\ c &amp; d \\end{bmatrix}\n\\quad \\rightarrow \\quad\nA^{-1} = \\left(\\frac{1}{ad - bc}\\right)\\begin{bmatrix} d &amp; -b \\\\ -c &amp; a \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>provided <span class=\"math\">\\(ad - bc \\ne 0\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "You might try to write the two given matrix-vector equations as a single\nmatrix equation. Then you will see M can be determined via a matrix\nmultiplication problem.", 
-        "Remember the formula for the inverse of a 2-x-2 matrix:\n\n\\begin{align*}A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\n\\quad \\rightarrow \\quad\nA^{-1} = \\left(\\frac{1}{ad - bc}\\right)\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\\end{align*}\nprovided $ad - bc \\ne 0$."
-    ]
+        "Remember the formula for the inverse of a 2-x-2 matrix:\n\n\\begin{align*}\nA = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\n\\quad \\rightarrow \\quad\nA^{-1} = \\left(\\frac{1}{ad - bc}\\right)\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\n\\end{align*}\nprovided $ad - bc \\ne 0$."
+    ], 
+    "hints_raw": [
+        "You might try to write the two given matrix-vector equations as a single matrix equation. Then you will see M can be determined via a matrix multiplication problem.\n", 
+        "Remember the formula for the inverse of a 2-x-2 matrix:\n:&lt;math>\nA = \\begin{bmatrix} a &amp; b \\\\ c &amp; d \\end{bmatrix}\n\\quad \\rightarrow \\quad\nA^{-1} = \\left(\\frac{1}{ad - bc}\\right)\\begin{bmatrix} d &amp; -b \\\\ -c &amp; a \\end{bmatrix}\n&lt;/math>\nprovided &lt;math>ad - bc \\ne 0&lt;/math>.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "A 13", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>Notice that you can write the two given matrix-vector equations as a matrix-matrix equation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad M\\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} \\quad \\rightarrow \\quad M\\begin{bmatrix} 1 &amp; 2 \\\\ 1 &amp; 1\\end{bmatrix} = \\begin{bmatrix} 1 &amp; 0 \\\\0 &amp; 1\\end{bmatrix} = I_{2}.\\end{aligned}\\]</span></p>\n<p>Since M times the matrix of vectors is the 2-x-2 identity matrix, this means that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\begin{bmatrix} 1 &amp; 2 \\\\ 1 &amp; 1\\end{bmatrix}^{-1}.\\end{aligned}\\]</span></p>\n<p>Using the 2-x-2 inverse matrix formula, we can write</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1 &amp; -2 \\\\ -1 &amp; 1\\end{bmatrix} = \\begin{bmatrix} -1 &amp; 2 \\\\ 1 &amp;-1\\end{bmatrix}}.\\end{aligned}\\]</span></p>\n", 
+        "<p>Since <em>M</em> is a linear transformation,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM\\begin{bmatrix}1\\\\ 0\\end{bmatrix} = M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} = \\begin{bmatrix}0\\\\ 1\\end{bmatrix} - \\begin{bmatrix}1\\\\ 0\\end{bmatrix} = \\begin{bmatrix}-1\\\\ 1\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM\\begin{bmatrix}0\\\\ 1\\end{bmatrix} = 2M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ 0\\end{bmatrix} - \\begin{bmatrix}0\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ -1\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM = \\begin{bmatrix}-1 &amp; 2\\\\ 1 &amp; -1\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that you can write the two given matrix-vector equations as a\nmatrix-matrix equation:\n\n\\begin{align*}\nM\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad M\\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} \\quad \\rightarrow \\quad M\\begin{bmatrix} 1 & 2 \\\\ 1 & 1\\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\0 & 1\\end{bmatrix} = I_{2}.\n\\end{align*}\nSince M times the matrix of vectors is the 2-x-2 identity matrix, this\nmeans that\n\n\\begin{align*}\nM = \\begin{bmatrix} 1 & 2 \\\\ 1 & 1\\end{bmatrix}^{-1}.\n\\end{align*} Using the\n2-x-2 inverse matrix formula, we can write\n\n\\begin{align*}\n{\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1 & -2 \\\\ -1 & 1\\end{bmatrix} = \\begin{bmatrix} -1 & 2 \\\\ 1 &-1\\end{bmatrix}}.\n\\end{align*}", 
+        "Since \\emph{M} is a linear transformation,\n\n\\begin{align*}\nM\\begin{bmatrix}1\\\\ 0\\end{bmatrix} = M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} = \\begin{bmatrix}0\\\\ 1\\end{bmatrix} - \\begin{bmatrix}1\\\\ 0\\end{bmatrix} = \\begin{bmatrix}-1\\\\ 1\\end{bmatrix}\n\\end{align*}\n\nand\n\n\\begin{align*}\nM\\begin{bmatrix}0\\\\ 1\\end{bmatrix} = 2M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ 0\\end{bmatrix} - \\begin{bmatrix}0\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ -1\\end{bmatrix}\n\\end{align*}\n\nHence\n\n\\begin{align*}\nM = \\begin{bmatrix}-1 & 2\\\\ 1 & -1\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Notice that you can write the two given matrix-vector equations as a matrix-matrix equation:\n:&lt;math>\nM\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad M\\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} \\quad \\rightarrow \\quad M\\begin{bmatrix} 1 &amp; 2 \\\\ 1 &amp; 1\\end{bmatrix} = \\begin{bmatrix} 1 &amp; 0 \\\\0 &amp; 1\\end{bmatrix} = I_{2}.\n&lt;/math>\nSince M times the matrix of vectors is the 2-x-2 identity matrix, this means that\n:&lt;math>\nM = \\begin{bmatrix} 1 &amp; 2 \\\\ 1 &amp; 1\\end{bmatrix}^{-1}.\n&lt;/math>\nUsing the 2-x-2 inverse matrix formula, we can write\n\n:&lt;math>\n{\\color{blue} M = \\frac{1}{-1}\\begin{bmatrix} 1 &amp; -2 \\\\ -1 &amp; 1\\end{bmatrix} = \\begin{bmatrix} -1 &amp; 2 \\\\ 1 &amp; -1\\end{bmatrix}}.\n&lt;/math>\n", 
+        "Since ''M'' is a linear transformation,\n\n:&lt;math>M\\begin{bmatrix}1\\\\ 0\\end{bmatrix} = M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} = \\begin{bmatrix}0\\\\ 1\\end{bmatrix} - \\begin{bmatrix}1\\\\ 0\\end{bmatrix} = \\begin{bmatrix}-1\\\\ 1\\end{bmatrix}&lt;/math>\n\nand\n\n:&lt;math>\nM\\begin{bmatrix}0\\\\ 1\\end{bmatrix} = 2M\\begin{bmatrix}1\\\\ 1\\end{bmatrix} - M\\begin{bmatrix}2\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ 0\\end{bmatrix} - \\begin{bmatrix}0\\\\ 1\\end{bmatrix} = \\begin{bmatrix}2\\\\ -1\\end{bmatrix}\n&lt;/math>\n\nHence\n\n:&lt;math>\nM = \\begin{bmatrix}-1 &amp; 2\\\\ 1 &amp; -1\\end{bmatrix}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The linear transformation <span class=\"math\">\\(T : \\mathbb{R}^{2} \\to \\mathbb{R}^{2}\\)</span> is given by <span class=\"math\">\\(T(x) = Mx\\)</span> for some matrix <span class=\"math\">\\(M\\)</span>. Given that <span class=\"math\">\\(M \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}\\)</span> and <span class=\"math\">\\(M \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}\\)</span>, find the matrix M.</p>\n", 
+    "statement_latex": "The linear transformation $T : \\mathbb{R}^{2} \\to \\mathbb{R}^{2}$ is\ngiven by $T(x) = Mx$ for some matrix $M$. Given that\n$M \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}$\nand\n$M \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}$,\nfind the matrix M.", 
+    "statement_raw": "The linear transformation &lt;math> T : \\mathbb{R}^{2} \\to \\mathbb{R}^{2}&lt;/math> is given by &lt;math> T(x) = Mx &lt;/math> for some matrix &lt;math> M &lt;/math>. Given that &lt;math> M \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}&lt;/math> and &lt;math> M \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} &lt;/math>, find the matrix M.\n", 
+    "term": "April", 
+    "topics": [
+        "Matrix_operations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_13", 
+    "year": 2013
 }

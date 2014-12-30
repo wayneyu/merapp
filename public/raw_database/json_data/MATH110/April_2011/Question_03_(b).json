@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)", 
-    "course": "MATH110", 
-    "statement": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nWhat does the Mean Value Theorem tell us about the function\n$f(x) = \\sin x$ on the interval \\emph{{[}0,b{]}}, where \\emph{b} is any\npositive number?", 
-    "year": 2011, 
-    "sols": [
-        "Because the function $\\sin x$ is continuous on the interval $[0,b]$ and\nis differentiable on the interval $(0,b)$, we can apply the Mean Value\nTheorem. Thus we know that there is some $c$ in the interval $(0,b)$ so\nthat:\n\n\\begin{align*}\n\\cos(c) &= \\frac{\\sin(b) - \\sin(0)}{b-0} \\\\\n&= \\frac{\\sin(b)}{b}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\cos(c)=\\frac{\\sin(b)}{b}\\)</span></p>\n", 
+    "answer_latex": " $\\cos(c)=\\frac{\\sin(b)}{b}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Does <span class=\"math\">\\(\\sin x\\)</span> satisfy the conditions of the Mean Value Theorem on the interval <span class=\"math\">\\([0,b]\\)</span>? What conclusion can you draw?</p>\n"
+    ], 
+    "hints_latex": [
         "Does $\\sin x$ satisfy the conditions of the Mean Value Theorem on the\ninterval $[0,b]$? What conclusion can you draw?"
-    ]
+    ], 
+    "hints_raw": [
+        "Does &lt;math>\\sin x&lt;/math> satisfy the conditions of the Mean Value Theorem on the interval &lt;math>[0,b]&lt;/math>?  What conclusion can you draw?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3 (b)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>Because the function <span class=\"math\">\\(\\sin x\\)</span> is continuous on the interval <span class=\"math\">\\([0,b]\\)</span> and is differentiable on the interval <span class=\"math\">\\((0,b)\\)</span>, we can apply the Mean Value Theorem. Thus we know that there is some <span class=\"math\">\\(c\\)</span> in the interval <span class=\"math\">\\((0,b)\\)</span> so that:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\cos(c) &amp;= \\frac{\\sin(b) - \\sin(0)}{b-0} \\\\\n&amp;= \\frac{\\sin(b)}{b}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Because the function $\\sin x$ is continuous on the interval $[0,b]$ and\nis differentiable on the interval $(0,b)$, we can apply the Mean Value\nTheorem. Thus we know that there is some $c$ in the interval $(0,b)$ so\nthat:\n\n\\begin{align*}\n\\cos(c) &= \\frac{\\sin(b) - \\sin(0)}{b-0} \\\\\n&= \\frac{\\sin(b)}{b}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Because the function &lt;math>\\sin x&lt;/math> is continuous on the interval &lt;math>[0,b]&lt;/math> and is differentiable on the interval &lt;math>(0,b)&lt;/math>, we can apply the Mean Value Theorem.  Thus we know that there is some &lt;math>c&lt;/math> in the interval &lt;math>(0,b)&lt;/math> so that:\n\n: &lt;math>\\begin{align}\n\\cos(c) &amp;= \\frac{\\sin(b) - \\sin(0)}{b-0} \\\\\n&amp; = \\frac{\\sin(b)}{b}\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>In this question you will state and then apply the Mean Value Theorem.</em></p>\n<p>What does the Mean Value Theorem tell us about the function <span class=\"math\">\\(f(x) = \\sin x\\)</span> on the interval <em><span>[</span>0,b<span>]</span></em>, where <em>b</em> is any positive number?</p>\n", 
+    "statement_latex": "\\emph{In this question you will state and then apply the Mean Value\nTheorem.}\n\nWhat does the Mean Value Theorem tell us about the function\n$f(x) = \\sin x$ on the interval \\emph{{[}0,b{]}}, where \\emph{b} is any\npositive number?", 
+    "statement_raw": "''In this question you will state and then apply the Mean Value Theorem.''\n\nWhat does the Mean Value Theorem tell us about the function &lt;math>f(x) = \\sin x&lt;/math> on the interval ''[0,b]'', where ''b'' is any positive number?\n", 
+    "term": "April", 
+    "topics": [
+        "Mean_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_03_(b)", 
+    "year": 2011
 }

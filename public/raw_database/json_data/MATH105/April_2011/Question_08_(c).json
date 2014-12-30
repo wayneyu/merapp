@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_08_(c)", 
-    "course": "MATH105", 
-    "statement": "\\emph{The productivity (measured in the dollar value of goods produced)\nof a certain country is given by the function}\n\n\\begin{align*}\\displaystyle\nf(x,y) = 160x^{3/4}y^{1/4},\\end{align*}\n\n\\emph{where $x$ denotes the amount (in dollars) invested in labor, and\n$y$ is the amount invested in capital. Recall that the marginal\nproductivity of labor (respectively capital) is the rate of change of\n$f$ with respect to $x$ (respectively $y$), holding $y$ (respectively\n$x$) fixed.}\n\nFind all vectors\n\n\\begin{align*}|\\textbf{v}| = |\\nabla f(81,16)|\\end{align*} that point in the direction of no\nchange in the productivity from its current value.", 
-    "year": 2011, 
-    "sols": [
-        "In\n\\href{Science:Math Exam Resources/Courses/MATH105/April 2011/Question 8 (a)}{part\n(a)} we computed the partial derivatives, allowing us to write the\ngradient vector\n\n\\begin{align*}\\displaystyle\n\\nabla f(x,y) = (120x^{-1/4}y^{1/4}, 40x^{3/4}y^{-3/4})\\end{align*} hence (as\ncalculated previously)\n\n\\begin{align*}\\displaystyle\n\\nabla f(81,16) = (80,135)\\end{align*}\n\nRecall that a perpendicular vector to (a,b) with the same length is is\n(b,-a) and (-b,a). Therefore, the perpendicular vectors (of the same\nlength as the gradient itself) are the vectors\n\n\\begin{align*}\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ErickWong"
     ], 
-    "hints": [
-        "The \\emph{gradient vector}\n\n\\begin{align*}\\displaystyle\n\\nabla f (81,16)\\end{align*} points to the direction of maximal increase of\nproductivity. Any vector perpendicular to that one will have no change\nof productivity (it's the direction of a level curve, that is a curve\nwhere f is constant)."
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The <em>gradient vector</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\nabla f (81,16)\\end{aligned}\\]</span></p>\n<p>points to the direction of maximal increase of productivity. Any vector perpendicular to that one will have no change of productivity (it&#8217;s the direction of a level curve, that is a curve where f is constant).</p>\n"
+    ], 
+    "hints_latex": [
+        "The \\emph{gradient vector}\n\n\\begin{align*}\n\\displaystyle\n\\nabla f (81,16)\n\\end{align*} points to the direction of maximal increase of\nproductivity. Any vector perpendicular to that one will have no change\nof productivity (it's the direction of a level curve, that is a curve\nwhere f is constant)."
+    ], 
+    "hints_raw": [
+        "The ''gradient vector''\n:&lt;math>\\displaystyle\n\\nabla f (81,16)\n&lt;/math>\npoints to the direction of maximal increase of productivity. Any vector perpendicular to that one will have no change of productivity (it's the direction of a level curve, that is a curve where f is constant).\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>In <span>part (a)</span> we computed the partial derivatives, allowing us to write the gradient vector</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\nabla f(x,y) = (120x^{-1/4}y^{1/4}, 40x^{3/4}y^{-3/4})\\end{aligned}\\]</span></p>\n<p>hence (as calculated previously)</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\nabla f(81,16) = (80,135)\\end{aligned}\\]</span></p>\n<p>Recall that a perpendicular vector to (a,b) with the same length is is (b,-a) and (-b,a). Therefore, the perpendicular vectors (of the same length as the gradient itself) are the vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "In\n{part\n(a)} we computed the partial derivatives, allowing us to write the\ngradient vector\n\n\\begin{align*}\n\\displaystyle\n\\nabla f(x,y) = (120x^{-1/4}y^{1/4}, 40x^{3/4}y^{-3/4})\n\\end{align*} hence (as\ncalculated previously)\n\n\\begin{align*}\n\\displaystyle\n\\nabla f(81,16) = (80,135)\n\\end{align*}\n\nRecall that a perpendicular vector to (a,b) with the same length is is\n(b,-a) and (-b,a). Therefore, the perpendicular vectors (of the same\nlength as the gradient itself) are the vectors\n\n\\begin{align*}\n\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "In [[Science:Math Exam Resources/Courses/MATH105/April 2011/Question 8 (a)|part (a)]] we computed the partial derivatives, allowing us to write the gradient vector\n:&lt;math>\\displaystyle\n\\nabla f(x,y) = (120x^{-1/4}y^{1/4}, 40x^{3/4}y^{-3/4})\n&lt;/math>\nhence (as calculated previously)\n:&lt;math>\\displaystyle\n\\nabla f(81,16) = (80,135)\n&lt;/math>\n\nRecall that a perpendicular vector to (a,b) with the same length is is (b,-a) and (-b,a).  Therefore, the perpendicular vectors (of the same length as the gradient itself) are the vectors\n:&lt;math>\\displaystyle\n(-135,80) \\quad\\text{and}\\quad (135,-80)\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p><em>The productivity (measured in the dollar value of goods produced) of a certain country is given by the function</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x,y) = 160x^{3/4}y^{1/4},\\end{aligned}\\]</span></p>\n<p><em>where <span class=\"math\">\\(x\\)</span> denotes the amount (in dollars) invested in labor, and <span class=\"math\">\\(y\\)</span> is the amount invested in capital. Recall that the marginal productivity of labor (respectively capital) is the rate of change of <span class=\"math\">\\(f\\)</span> with respect to <span class=\"math\">\\(x\\)</span> (respectively <span class=\"math\">\\(y\\)</span>), holding <span class=\"math\">\\(y\\)</span> (respectively <span class=\"math\">\\(x\\)</span>) fixed.</em></p>\n<p>Find all vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\textbf{v}| = |\\nabla f(81,16)|\\end{aligned}\\]</span></p>\n<p>that point in the direction of no change in the productivity from its current value.</p>\n", 
+    "statement_latex": "\\emph{The productivity (measured in the dollar value of goods produced)\nof a certain country is given by the function}\n\n\\begin{align*}\n\\displaystyle\nf(x,y) = 160x^{3/4}y^{1/4},\n\\end{align*}\n\n\\emph{where $x$ denotes the amount (in dollars) invested in labor, and\n$y$ is the amount invested in capital. Recall that the marginal\nproductivity of labor (respectively capital) is the rate of change of\n$f$ with respect to $x$ (respectively $y$), holding $y$ (respectively\n$x$) fixed.}\n\nFind all vectors\n\n\\begin{align*}\n|\\textbf{v}| = |\\nabla f(81,16)|\n\\end{align*} that point in the direction of no\nchange in the productivity from its current value.", 
+    "statement_raw": "''The productivity (measured in the dollar value of goods produced) of a certain country is given by the function''\n\n: &lt;math>\\displaystyle\nf(x,y) = 160x^{3/4}y^{1/4},\n&lt;/math>\n\n''where &lt;math> x &lt;/math> denotes the amount (in dollars) invested in labor, and &lt;math> y &lt;/math> is the amount invested in capital. Recall that the marginal productivity of labor (respectively capital) is the rate of change of &lt;math> f &lt;/math> with respect to &lt;math> x &lt;/math> (respectively &lt;math> y &lt;/math>), holding &lt;math> y &lt;/math> (respectively &lt;math> x &lt;/math>) fixed.''\n\nFind all vectors\n:&lt;math> |\\textbf{v}| = |\\nabla f(81,16)| &lt;/math>\nthat point in the direction of no change in the productivity from its current value.\n", 
+    "term": "April", 
+    "topics": [
+        "Gradients", 
+        "Marginal_productivity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2011/Question_08_(c)", 
+    "year": 2011
 }

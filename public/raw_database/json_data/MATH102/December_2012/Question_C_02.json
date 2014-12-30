@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_C_02", 
-    "course": "MATH102", 
-    "statement": "Use the definition of the derivative to calculate the derivative of\n\n\\begin{align*}g(x) = \\sqrt{x}\\end{align*}\n\nThe following might be a useful fact in simplifying the\nlimit\\begin{align*}(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b.\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "Using the definition of the derivative from the hint, we set up:\n\n$g'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h}$\n\nNow we use the hint from the statement of the question. If we multiply\nby a conjugate, we can move the square roots and make our limit easier\nto solve.\n\n\\begin{align*}\ng'(x) &= \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h} * \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} \\\\\n&= \\lim_{h \\to 0} \\frac{x + h - x}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\frac{1}{(\\sqrt{x + 0} + \\sqrt{x})} \\\\\n&= \\frac{1}{2\\sqrt{x}} \\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(g&#39;(x)=\\frac{1}{2\\sqrt{x}}\\)</span></p>\n", 
+    "answer_latex": " $g'(x)=\\frac{1}{2\\sqrt{x}}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The definition of the derivative is:</p>\n<p><span class=\"math\">\\(g&#39;(x) = \\lim_{h \\to 0}\\frac{g(x+h) - g(x)}{h}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The definition of the derivative is:\n\n$g'(x) = \\lim_{h \\to 0}\\frac{g(x+h) - g(x)}{h}$"
-    ]
+    ], 
+    "hints_raw": [
+        "The definition of the derivative is: \n\n&lt;math>g'(x) = \\lim_{h \\to 0}\\frac{g(x+h) - g(x)}{h}&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "C 02", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>Using the definition of the derivative from the hint, we set up:</p>\n<p><span class=\"math\">\\(g&#39;(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h}\\)</span></p>\n<p>Now we use the hint from the statement of the question. If we multiply by a conjugate, we can move the square roots and make our limit easier to solve.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng&#39;(x) &amp;= \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h} * \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{x + h - x}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\frac{1}{(\\sqrt{x + 0} + \\sqrt{x})} \\\\\n&amp;= \\frac{1}{2\\sqrt{x}} \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using the definition of the derivative from the hint, we set up:\n\n$g'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h}$\n\nNow we use the hint from the statement of the question. If we multiply\nby a conjugate, we can move the square roots and make our limit easier\nto solve.\n\n\\begin{align*}\ng'(x) &= \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h} * \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} \\\\\n&= \\lim_{h \\to 0} \\frac{x + h - x}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\lim_{h \\to 0} \\frac{1}{(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&= \\frac{1}{(\\sqrt{x + 0} + \\sqrt{x})} \\\\\n&= \\frac{1}{2\\sqrt{x}} \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using the definition of the derivative from the hint, we set up: \n\n&lt;math>g'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h}&lt;/math>\n\nNow we use the hint from the statement of the question.  If we multiply by a conjugate, we can move the square roots and make our limit easier to solve.  \n\n&lt;math> \\begin{align}\ng'(x) &amp;= \\lim_{h \\to 0} \\frac{\\sqrt{x + h} - \\sqrt{x}}{h} * \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{x + h - x}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\lim_{h \\to 0} \\frac{1}{(\\sqrt{x + h} + \\sqrt{x})} \\\\\n&amp;= \\frac{1}{(\\sqrt{x + 0} + \\sqrt{x})} \\\\\n&amp;= \\frac{1}{2\\sqrt{x}} \\\\\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Use the definition of the derivative to calculate the derivative of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ng(x) = \\sqrt{x}\\end{aligned}\\]</span></p>\n<p>The following might be a useful fact in simplifying the limit</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Use the definition of the derivative to calculate the derivative of\n\n\\begin{align*}\ng(x) = \\sqrt{x}\n\\end{align*}\n\nThe following might be a useful fact in simplifying the\nlimit\\begin{align*}\n(\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b.\n\\end{align*}", 
+    "statement_raw": "Use the definition of the derivative to calculate the derivative of\n\n:&lt;math>\ng(x) = \\sqrt{x}\n&lt;/math>\n\nThe following might be a useful fact in simplifying the limit: &lt;math> (\\sqrt{a}-\\sqrt{b})(\\sqrt{a}+\\sqrt{b}) = a-b&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_definition_of_the_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_02", 
+    "year": 2012
 }

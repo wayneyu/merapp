@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH103", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind all solutions \\emph{y} satisfying d\\emph{y}/d\\emph{t}=0.", 
-    "year": 2012, 
-    "sols": [
-        "Following the instructions of the second hint, if we set \\emph{dy/dt}\nequal to zero and solve, we get:\n\n\\begin{align*}0 = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right)\\end{align*}\n\nThis expression will be zero if $y^2 - k^2 = 0$, or alternatively,\n$y^2 = k^2$. This yields the two constant solutions of \\emph{y} = +\n\\emph{k} and \\emph{y} = -\\emph{k}."
+    "answer_html": "<p>This yields the two constant solutions of <em>y</em> = + <em>k</em> and <em>y</em> = -<em>k</em>.</p>\n", 
+    "answer_latex": "This yields the two constant solutions of \\emph{y} = +\n\\emph{k} and \\emph{y} = -\\emph{k}.", 
+    "contributors": [
+        "IsabellGraf", 
+        "CarmenBruni", 
+        "RobertFraser", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Solutions <em>y</em> that satisfy d<em>y</em>/d<em>t</em> = 0 are also called <em>steady state</em> or <em>equilibrium</em>.</p>\n", 
+        "<p>Simply set the left hand side d<em>y</em>/d<em>t</em> to zero and solve for <em>y</em>. How many constant solutions do you find?</p>\n"
+    ], 
+    "hints_latex": [
         "Solutions \\emph{y} that satisfy d\\emph{y}/d\\emph{t} = 0 are also called\n\\emph{steady state} or \\emph{equilibrium}.", 
         "Simply set the left hand side d\\emph{y}/d\\emph{t} to zero and solve for\n\\emph{y}. How many constant solutions do you find?"
-    ]
+    ], 
+    "hints_raw": [
+        "Solutions ''y'' that satisfy d''y''/d''t'' = 0 are also called ''steady state'' or ''equilibrium''.\n", 
+        "Simply set the left hand side d''y''/d''t'' to zero and solve for ''y''. How many constant solutions do you find?\n"
+    ], 
+    "num_votes": 9, 
+    "question": "4 (a)", 
+    "rating": 67, 
+    "sols_html": [
+        "<p>Following the instructions of the second hint, if we set <em>dy/dt</em> equal to zero and solve, we get:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right)\\end{aligned}\\]</span></p>\n<p>This expression will be zero if <span class=\"math\">\\(y^2 - k^2 = 0\\)</span>, or alternatively, <span class=\"math\">\\(y^2 = k^2\\)</span>. This yields the two constant solutions of <em>y</em> = + <em>k</em> and <em>y</em> = -<em>k</em>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Following the instructions of the second hint, if we set \\emph{dy/dt}\nequal to zero and solve, we get:\n\n\\begin{align*}\n0 = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right)\n\\end{align*}\n\nThis expression will be zero if $y^2 - k^2 = 0$, or alternatively,\n$y^2 = k^2$. This yields the two constant solutions of \\emph{y} = +\n\\emph{k} and \\emph{y} = -\\emph{k}."
+    ], 
+    "sols_raw": [
+        "Following the instructions of the second hint, if we set ''dy/dt'' equal to zero and solve, we get: \n\n: &lt;math>  0 = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right) &lt;/math>\n\nThis expression will be zero if &lt;math>y^2 - k^2 = 0&lt;/math>, or alternatively, &lt;math>y^2 = k^2&lt;/math>.  This yields the two constant solutions of ''y'' = + ''k'' and ''y'' = -''k''.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\lambda\\)</span> is a positive constant, <em>t</em> <span class=\"math\">\\(\\geq\\)</span> 0, <em>k</em> &gt; 0, but <em>y</em> may be positive or negative. Suppose <em>y</em>(0) = <em>y</em><sub>0</sub>.</p>\n<p>Find all solutions <em>y</em> satisfying d<em>y</em>/d<em>t</em>=0.</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind all solutions \\emph{y} satisfying d\\emph{y}/d\\emph{t}=0.", 
+    "statement_raw": "Consider the differential equation\n\n:&lt;math>\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n&lt;/math>\n\nwhere &lt;math> \\lambda &lt;/math> is a positive constant, ''t'' &amp;ge; 0, ''k'' > 0, but ''y'' may be positive or negative. Suppose\n''y''(0) = ''y''&lt;sub>0&lt;/sub>.\n\nFind all solutions ''y'' satisfying d''y''/d''t''=0.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Steady_states"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_04_(a)", 
+    "year": 2012
 }

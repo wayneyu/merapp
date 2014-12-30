@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_08_(b)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\n\\textbf{(b)} Find the limit, if it exists, of the sequence\n\\{a\\textsubscript{k}\\}, where\n\n\\begin{align*}a_k = \\frac{k! \\sin^3(k)}{(k+1)!}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "We wish to find the limit of the sequence\n$a_k = \\frac{k! \\sin^3 (k)}{(k+1)!}$.\n\n\\textbf{Note:} this is a sequence, not a series! The ratio test does not\napply here, despite the fact we see factorials.\n\nLet's first simplify this a little. Note that $(k+1)! = (k+1) k!$, so\nreally\n\n\\begin{align*}a_k = \\frac{k! \\sin^3 (k)}{(k+1) k!} = \\frac{\\sin^3 (k)}{k+1}\\end{align*}\n\nWe now observe that the denominator goes to infinity for large values of\n\\emph{k}, while the enumerator remains bounded between -1 and +1.\nMathematically, $-1 \\leq \\sin^3 (k) \\leq 1$. Hence, we expect the\nsequence to converge to zero.\n\nTo prove this, we use the squeeze theorem:\n\n$\\lim_{k \\rightarrow \\infty} \\frac{-1}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{1}{k+1}$.\n\nThe first and third limits are both 0, hence\n\n$0 \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq 0$\n\nso the squeeze theorem tells us\n\n$\\lim_{k \\rightarrow \\infty} a_k = \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} = 0$."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} a_k = 0\\)</span>.</p>\n", 
+    "answer_latex": "$\\lim_{k \\rightarrow \\infty} a_k = 0$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To start with, can you simplify the factorials?</p>\n", 
+        "<p>After your simplification, what can you say about the numerator and the denominator separately, as <span class=\"math\">\\(k \\rightarrow \\infty\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "To start with, can you simplify the factorials?", 
         "After your simplification, what can you say about the numerator and the\ndenominator separately, as $k \\rightarrow \\infty$?"
-    ]
+    ], 
+    "hints_raw": [
+        "To start with, can you simplify the factorials?\n", 
+        "After your simplification, what can you say about the numerator and the denominator separately, as &lt;math>k \\rightarrow \\infty&lt;/math>?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "8 (b)", 
+    "rating": 34, 
+    "sols_html": [
+        "<p>We wish to find the limit of the sequence <span class=\"math\">\\(a_k = \\frac{k! \\sin^3 (k)}{(k+1)!}\\)</span>.</p>\n<p><strong>Note:</strong> this is a sequence, not a series! The ratio test does not apply here, despite the fact we see factorials.</p>\n<p>Let&#8217;s first simplify this a little. Note that <span class=\"math\">\\((k+1)! = (k+1) k!\\)</span>, so really</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na_k = \\frac{k! \\sin^3 (k)}{(k+1) k!} = \\frac{\\sin^3 (k)}{k+1}\\end{aligned}\\]</span></p>\n<p>We now observe that the denominator goes to infinity for large values of <em>k</em>, while the enumerator remains bounded between -1 and +1. Mathematically, <span class=\"math\">\\(-1 \\leq \\sin^3 (k) \\leq 1\\)</span>. Hence, we expect the sequence to converge to zero.</p>\n<p>To prove this, we use the squeeze theorem:</p>\n<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} \\frac{-1}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{1}{k+1}\\)</span>.</p>\n<p>The first and third limits are both 0, hence</p>\n<p><span class=\"math\">\\(0 \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq 0\\)</span></p>\n<p>so the squeeze theorem tells us</p>\n<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} a_k = \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} = 0\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We wish to find the limit of the sequence\n$a_k = \\frac{k! \\sin^3 (k)}{(k+1)!}$.\n\n\\textbf{Note:} this is a sequence, not a series! The ratio test does not\napply here, despite the fact we see factorials.\n\nLet's first simplify this a little. Note that $(k+1)! = (k+1) k!$, so\nreally\n\n\\begin{align*}\na_k = \\frac{k! \\sin^3 (k)}{(k+1) k!} = \\frac{\\sin^3 (k)}{k+1}\n\\end{align*}\n\nWe now observe that the denominator goes to infinity for large values of\n\\emph{k}, while the enumerator remains bounded between -1 and +1.\nMathematically, $-1 \\leq \\sin^3 (k) \\leq 1$. Hence, we expect the\nsequence to converge to zero.\n\nTo prove this, we use the squeeze theorem:\n\n$\\lim_{k \\rightarrow \\infty} \\frac{-1}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{1}{k+1}$.\n\nThe first and third limits are both 0, hence\n\n$0 \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq 0$\n\nso the squeeze theorem tells us\n\n$\\lim_{k \\rightarrow \\infty} a_k = \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} = 0$."
+    ], 
+    "sols_raw": [
+        "We wish to find the limit of the sequence &lt;math>a_k = \\frac{k! \\sin^3 (k)}{(k+1)!}&lt;/math>.\n\n'''Note:''' this is a sequence, not a series! The ratio test does not apply here, despite the fact we see factorials.\n\nLet's first simplify this a little. Note that &lt;math>(k+1)! = (k+1) k!&lt;/math>, so really\n:&lt;math>\na_k = \\frac{k! \\sin^3 (k)}{(k+1) k!} = \\frac{\\sin^3 (k)}{k+1}\n&lt;/math>\n\nWe now observe that the denominator goes to infinity for large values of ''k'', while the enumerator remains bounded between -1 and +1. Mathematically, &lt;math>-1 \\leq \\sin^3 (k) \\leq 1&lt;/math>. Hence, we expect the sequence to converge to zero.\n\nTo prove this, we use the squeeze theorem:\n\n&lt;math>\\lim_{k \\rightarrow \\infty} \\frac{-1}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq \\lim_{k \\rightarrow \\infty} \\frac{1}{k+1}&lt;/math>.\n\nThe first and third limits are both 0, hence\n\n&lt;math>0 \\leq \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} \\leq 0&lt;/math>\n\nso the squeeze theorem tells us\n\n&lt;math>\\lim_{k \\rightarrow \\infty} a_k = \\lim_{k \\rightarrow \\infty} \\frac{\\sin^3 (k)}{k+1} = 0&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.</em></p>\n<p><strong>(b)</strong> Find the limit, if it exists, of the sequence {a<sub>k</sub>}, where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na_k = \\frac{k! \\sin^3(k)}{(k+1)!}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\n\\textbf{(b)} Find the limit, if it exists, of the sequence\n\\{a\\textsubscript{k}\\}, where\n\n\\begin{align*}\na_k = \\frac{k! \\sin^3(k)}{(k+1)!}\n\\end{align*}", 
+    "statement_raw": "''Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\n'''(b)''' Find the limit, if it exists, of the sequence {a&lt;sub>k&lt;/sub>}, where\n\n:&lt;math>\na_k = \\frac{k! \\sin^3(k)}{(k+1)!}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Sequences"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(b)", 
+    "year": 2012
 }

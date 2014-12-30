@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(m)", 
-    "course": "MATH104", 
-    "statement": "On what intervals is the function\n\n\\begin{align*}\\displaystyle{}f(t)=t^2\\exp(t)\\end{align*}\n\nincreasing? Decreasing?", 
-    "year": 2012, 
-    "sols": [
-        "To determine the values of $t$ where $f(t)$ is increasing, we must solve\nfor the critical points of $f(t)$ and examine the sign of the derivative\nin between the critical points, solving $f'(t) = 0$ gives\n\n\\begin{align*}\n\\displaystyle f'(t) &= 0\\\\\n2t\\exp(t) + t^{2}\\exp(t) &= 0\\\\\n(t^{2} + 2t)\\exp(t) &= 0.\\end{align*} Since the exponential function is never zero for any value\nof $t$, we can solve the above equation by solving\n\n\\begin{align*}\n\\displaystyle t^{2} + 2t &= 0\\\\\nt(t + 2) &= 0, \\quad \\rightarrow \\quad t = 0,\\,-2\\end{align*} Now we need to evaluate the sign of $f'(t)$ in the\nintervals $(-\\infty,-2), (-2,0), (0,\\infty)$. Taking test points\n$t = -3,-1,1$ and plugging them into $f'(t)$ gives:\n\n\\begin{align*}\\displaystyle f'(-3) = 3e^{-3} > 0, \\quad f'(-1) = -e^{-1} < 0, \\quad f'(1) = 3e > 0.\\end{align*}\nSo $f'(t)$ is positive on $(-\\infty,-2),(0,\\infty)$ and negative on\n$\\displaystyle (-2,0)$.\n\nTherefore, $f(t)$ is increasing for $t < -2$, $t > 0$ and decreasing for\n$0 < t < 2$."
+    "answer_html": "<p>Therefore, <span class=\"math\">\\(f(t)\\)</span> is increasing for <span class=\"math\">\\(t &lt; -2\\)</span>, <span class=\"math\">\\(t &gt; 0\\)</span> and decreasing for <span class=\"math\">\\(0 &lt; t &lt; 2\\)</span>.</p>\n", 
+    "answer_latex": "Therefore, $f(t)$ is increasing for $t < -2$, $t > 0$ and decreasing for\n$0 < t < 2$.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>To determine the interval(s) where a function <span class=\"math\">\\(f(t)\\)</span> is increasing, we must search for the values of <span class=\"math\">\\(t\\)</span> where the derivative of <span class=\"math\">\\(f(t)\\)</span> has what quality? What about for intervals where the function is decreasing?</p>\n"
+    ], 
+    "hints_latex": [
         "To determine the interval(s) where a function $f(t)$ is increasing, we\nmust search for the values of $t$ where the derivative of $f(t)$ has\nwhat quality? What about for intervals where the function is decreasing?"
-    ]
+    ], 
+    "hints_raw": [
+        "To determine the interval(s) where a function &lt;math>f(t)&lt;/math> is increasing, we must search for the values of &lt;math>t&lt;/math> where the derivative of &lt;math>f(t)&lt;/math> has what quality? What about for intervals where the function is decreasing?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (m)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>To determine the values of <span class=\"math\">\\(t\\)</span> where <span class=\"math\">\\(f(t)\\)</span> is increasing, we must solve for the critical points of <span class=\"math\">\\(f(t)\\)</span> and examine the sign of the derivative in between the critical points, solving <span class=\"math\">\\(f&#39;(t) = 0\\)</span> gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(t) &amp;= 0\\\\\n2t\\exp(t) + t^{2}\\exp(t) &amp;= 0\\\\\n(t^{2} + 2t)\\exp(t) &amp;= 0.\\end{aligned}\\]</span></p>\n<p>Since the exponential function is never zero for any value of <span class=\"math\">\\(t\\)</span>, we can solve the above equation by solving</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle t^{2} + 2t &amp;= 0\\\\\nt(t + 2) &amp;= 0, \\quad \\rightarrow \\quad t = 0,\\,-2\\end{aligned}\\]</span></p>\n<p>Now we need to evaluate the sign of <span class=\"math\">\\(f&#39;(t)\\)</span> in the intervals <span class=\"math\">\\((-\\infty,-2), (-2,0), (0,\\infty)\\)</span>. Taking test points <span class=\"math\">\\(t = -3,-1,1\\)</span> and plugging them into <span class=\"math\">\\(f&#39;(t)\\)</span> gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(-3) = 3e^{-3} &gt; 0, \\quad f&#39;(-1) = -e^{-1} &lt; 0, \\quad f&#39;(1) = 3e &gt; 0.\\end{aligned}\\]</span></p>\n<p>So <span class=\"math\">\\(f&#39;(t)\\)</span> is positive on <span class=\"math\">\\((-\\infty,-2),(0,\\infty)\\)</span> and negative on <span class=\"math\">\\(\\displaystyle (-2,0)\\)</span>.</p>\n<p>Therefore, <span class=\"math\">\\(f(t)\\)</span> is increasing for <span class=\"math\">\\(t &lt; -2\\)</span>, <span class=\"math\">\\(t &gt; 0\\)</span> and decreasing for <span class=\"math\">\\(0 &lt; t &lt; 2\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "To determine the values of $t$ where $f(t)$ is increasing, we must solve\nfor the critical points of $f(t)$ and examine the sign of the derivative\nin between the critical points, solving $f'(t) = 0$ gives\n\n\\begin{align*}\n\\displaystyle f'(t) &= 0\\\\\n2t\\exp(t) + t^{2}\\exp(t) &= 0\\\\\n(t^{2} + 2t)\\exp(t) &= 0.\n\\end{align*} Since the exponential function is never zero for any value\nof $t$, we can solve the above equation by solving\n\n\\begin{align*}\n\\displaystyle t^{2} + 2t &= 0\\\\\nt(t + 2) &= 0, \\quad \\rightarrow \\quad t = 0,\\,-2\n\\end{align*} Now we need to evaluate the sign of $f'(t)$ in the\nintervals $(-\\infty,-2), (-2,0), (0,\\infty)$. Taking test points\n$t = -3,-1,1$ and plugging them into $f'(t)$ gives:\n\n\\begin{align*}\n\\displaystyle f'(-3) = 3e^{-3} > 0, \\quad f'(-1) = -e^{-1} < 0, \\quad f'(1) = 3e > 0.\n\\end{align*}\nSo $f'(t)$ is positive on $(-\\infty,-2),(0,\\infty)$ and negative on\n$\\displaystyle (-2,0)$.\n\nTherefore, $f(t)$ is increasing for $t < -2$, $t > 0$ and decreasing for\n$0 < t < 2$."
+    ], 
+    "sols_raw": [
+        "To determine the values of &lt;math>t&lt;/math> where &lt;math>f(t)&lt;/math> is increasing, we must solve for the critical points of &lt;math>f(t)&lt;/math> and examine the sign of the derivative in between the critical points, solving &lt;math>f'(t) = 0&lt;/math> gives\n:&lt;math>\n\\begin{align}\n\\displaystyle f'(t) &amp;= 0\\\\\n2t\\exp(t) + t^{2}\\exp(t) &amp;= 0\\\\\n(t^{2} + 2t)\\exp(t) &amp;= 0.\n\\end{align}\n&lt;/math>\nSince the exponential function is never zero for any value of &lt;math>t&lt;/math>, we can solve the above equation by solving\n:&lt;math>\n\\begin{align}\n\\displaystyle t^{2} + 2t &amp;= 0\\\\\nt(t + 2) &amp;= 0, \\quad \\rightarrow \\quad t = 0,\\,-2\n\\end{align}\n&lt;/math>\nNow we need to evaluate the sign of &lt;math>f'(t)&lt;/math> in the intervals &lt;math>(-\\infty,-2), (-2,0), (0,\\infty)&lt;/math>. Taking test points &lt;math>t = -3,-1,1&lt;/math> and plugging them into &lt;math>f'(t)&lt;/math> gives:\n:&lt;math>\n\\displaystyle f'(-3) = 3e^{-3} > 0, \\quad f'(-1) = -e^{-1} &lt; 0, \\quad f'(1) = 3e > 0.  \n&lt;/math>\nSo &lt;math>f'(t)&lt;/math> is positive on &lt;math>(-\\infty,-2),(0,\\infty)&lt;/math> and negative on &lt;math>\\displaystyle(-2,0)&lt;/math>.\n\n&lt;span style=color:#0000FF>Therefore, &lt;math>f(t)&lt;/math> is increasing for &lt;math>t &lt; -2&lt;/math>,  &lt;math>t > 0&lt;/math> and decreasing for &lt;math>0 &lt; t &lt; 2&lt;/math>.&lt;/span>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>On what intervals is the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}f(t)=t^2\\exp(t)\\end{aligned}\\]</span></p>\n<p>increasing? Decreasing?</p>\n", 
+    "statement_latex": "On what intervals is the function\n\n\\begin{align*}\n\\displaystyle{}f(t)=t^2\\exp(t)\n\\end{align*}\n\nincreasing? Decreasing?", 
+    "statement_raw": "On what intervals is the function\n\n:&lt;math>\n\\displaystyle{}f(t)=t^2\\exp(t)\n&lt;/math>\n\nincreasing?  Decreasing?\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(m)", 
+    "year": 2012
 }

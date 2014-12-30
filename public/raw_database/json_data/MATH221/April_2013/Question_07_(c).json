@@ -1,14 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_07_(c)", 
-    "course": "MATH221", 
-    "statement": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear\ntransformation that reflects points through the line \\emph{3x = 4y}.\n\n\\textbf{c)} Compute \\emph{A}\\textsuperscript{1995}.", 
-    "year": 2013, 
-    "sols": [
-        "From the description of \\emph{A}, applying the matrix 1995 to $R^2$ is\nsimply applying the same reflection 1995 times, but as reflections have\norder 2, i.e. applying it twice does nothing, and 1995 is an odd number,\nwe see that $A^{1995} = A$.", 
-        "Alternatively, we can also show this by straightforward computation,\nusing the breakdown in part\n\\href{Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_07_(b)}{b)}:\n\n\\begin{align*}\nA^{1995} &= \\left(B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1}\\right)^{1995} \\\\\n&=  B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array}\\right]^{1995}  B^{-1} \\\\\n&=  B \\left[ \\begin{array}{cc}1^{1995} & 0  \\\\ 0 & (-1)^{1995}\\end{array}\\right]  B^{-1} \\\\\n&= B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1} \\\\\n&= A \\end{align*}"
+    "answer_html": "<p>applying it twice does nothing, and 1995 is an odd number, we see that <span class=\"math\">\\(A^{1995} = A\\)</span>.</p>\n", 
+    "answer_latex": "applying it twice does nothing, and 1995 is an odd number,\nwe see that $A^{1995} = A$.", 
+    "contributors": [
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Consider what happens to a vector after successive reflections - it may help to write down a sample vector and it&#8217;s first 3 or 4 reflections. Do you notice a pattern?</p>\n"
+    ], 
+    "hints_latex": [
         "Consider what happens to a vector after successive reflections - it may\nhelp to write down a sample vector and it's first 3 or 4 reflections. Do\nyou notice a pattern?"
-    ]
+    ], 
+    "hints_raw": [
+        "Consider what happens to a vector after successive reflections - it may help to write down a sample vector and it's first 3 or 4 reflections.  Do you notice a pattern?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From the description of <em>A</em>, applying the matrix 1995 to <span class=\"math\">\\(R^2\\)</span> is simply applying the same reflection 1995 times, but as reflections have order 2, i.e. applying it twice does nothing, and 1995 is an odd number, we see that <span class=\"math\">\\(A^{1995} = A\\)</span>.</p>\n", 
+        "<p>Alternatively, we can also show this by straightforward computation, using the breakdown in part <span>b)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA^{1995} &amp;= \\left(B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array} \\right] B^{-1}\\right)^{1995} \\\\\n&amp;=  B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array}\\right]^{1995}  B^{-1} \\\\\n&amp;=  B \\left[ \\begin{array}{cc}1^{1995} &amp; 0  \\\\ 0 &amp; (-1)^{1995}\\end{array}\\right]  B^{-1} \\\\\n&amp;= B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array} \\right] B^{-1} \\\\\n&amp;= A \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From the description of \\emph{A}, applying the matrix 1995 to $R^2$ is\nsimply applying the same reflection 1995 times, but as reflections have\norder 2, i.e. applying it twice does nothing, and 1995 is an odd number,\nwe see that $A^{1995} = A$.", 
+        "Alternatively, we can also show this by straightforward computation,\nusing the breakdown in part\n{b)}:\n\n\\begin{align*}\nA^{1995} &= \\left(B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1}\\right)^{1995} \\\\\n&=  B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array}\\right]^{1995}  B^{-1} \\\\\n&=  B \\left[ \\begin{array}{cc}1^{1995} & 0  \\\\ 0 & (-1)^{1995}\\end{array}\\right]  B^{-1} \\\\\n&= B \\left[ \\begin{array}{cc}1 & 0  \\\\ 0 & -1\\end{array} \\right] B^{-1} \\\\\n&= A \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From the description of ''A'', applying the matrix 1995 to &lt;math> R^2&lt;/math> is simply applying the same reflection 1995 times, but as reflections have order 2, i.e. applying it twice does nothing, and 1995 is an odd number, we see that &lt;math> A^{1995} = A&lt;/math>.\n", 
+        "Alternatively, we can also show this by straightforward computation, using the breakdown in part [[Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_07_(b)|b)]]:\n\n&lt;math> \n\\begin{align}\nA^{1995} &amp;= \\left(B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array} \\right] B^{-1}\\right)^{1995} \\\\\n&amp;=  B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array}\\right]^{1995}  B^{-1} \\\\\n&amp;=  B \\left[ \\begin{array}{cc}1^{1995} &amp; 0  \\\\ 0 &amp; (-1)^{1995}\\end{array}\\right]  B^{-1} \\\\\n&amp;= B \\left[ \\begin{array}{cc}1 &amp; 0  \\\\ 0 &amp; -1\\end{array} \\right] B^{-1} \\\\\n&amp;= A \n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2\\)</span> be the linear transformation that reflects points through the line <em>3x = 4y</em>.</p>\n<p><strong>c)</strong> Compute <em>A</em><sup>1995</sup>.</p>\n", 
+    "statement_latex": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear\ntransformation that reflects points through the line \\emph{3x = 4y}.\n\n\\textbf{c)} Compute \\emph{A}\\textsuperscript{1995}.", 
+    "statement_raw": "Let &lt;math> T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2 &lt;/math> be the linear transformation that reflects points through the line ''3x = 4y''.\n\n'''c)''' Compute ''A''&lt;sup>1995&lt;/sup>.\n", 
+    "term": "April", 
+    "topics": [
+        "Reflection"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_07_(c)", 
+    "year": 2013
 }

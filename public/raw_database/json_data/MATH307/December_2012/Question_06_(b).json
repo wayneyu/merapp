@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(b)} What are the eigenvalues and eigenvectors of $A^T A$?\n(Note\\begin{align*}A^T = A^*\\end{align*} since \\emph{A} is real.)", 
-    "year": 2012, 
-    "sols": [
-        "From the eigenvalue decomposition\n\n\\begin{align*}\\displaystyle\nA^TA = V\\Sigma^2V^{-1}\\end{align*}\n\nwe see that the eigenvalues of \\emph{A\\textsuperscript{T}A} are the\nsquares of the diagonal entries in $\\displaystyle \\Sigma$, that is\n\n\\begin{align*}\\lambda_{1}=4, \\quad \\lambda_{2}=1, \\quad \\lambda_{3}=\\frac{1}{4}\\end{align*}\n\nFurther, the corresponding eigenvectors of \\emph{A\\textsuperscript{T}A}\nare the column vectors of \\emph{V}, namely\n\n\\begin{align*}\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\n\\end{bmatrix}\n, \\quad \\vec{v_{2}}=\\begin{bmatrix}\n0\\\\\n\\frac{1}{\\sqrt{2}}\\\\\n-\\frac{1}{\\sqrt{2}}\n\\end{bmatrix}\n, \\quad \\vec{v_{3}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Notice that\n\n\\begin{align*}\\displaystyle\nA^TA = A^*A = (U\\Sigma V^*)^*(U\\Sigma V^*) = V\\Sigma^2V^*\\end{align*} Since\n\\emph{V} is real and orthogonal, $\\displaystyle V^* = V^T = V^{-1}$ so\nthat the equation above describes an eigenvalue decomposition.", 
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Notice that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA^TA = A^*A = (U\\Sigma V^*)^*(U\\Sigma V^*) = V\\Sigma^2V^*\\end{aligned}\\]</span></p>\n<p>Since <em>V</em> is real and orthogonal, <span class=\"math\">\\(\\displaystyle V^* = V^T = V^{-1}\\)</span> so that the equation above describes an eigenvalue decomposition.</p>\n", 
+        "<p>For an eigenvalue decomposition <span class=\"math\">\\(\\displaystyle M = TDT^{-1}\\)</span>, the eigenvalues of <em>M</em> fill the diagonal of <em>D</em>, and the eigenvectors of <em>M</em> are the column vectors of <em>T</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Notice that\n\n\\begin{align*}\n\\displaystyle\nA^TA = A^*A = (U\\Sigma V^*)^*(U\\Sigma V^*) = V\\Sigma^2V^*\n\\end{align*} Since\n\\emph{V} is real and orthogonal, $\\displaystyle V^* = V^T = V^{-1}$ so\nthat the equation above describes an eigenvalue decomposition.", 
         "For an eigenvalue decomposition $\\displaystyle M = TDT^{-1}$, the\neigenvalues of \\emph{M} fill the diagonal of \\emph{D}, and the\neigenvectors of \\emph{M} are the column vectors of \\emph{T}."
-    ]
+    ], 
+    "hints_raw": [
+        "Notice that\n\n:&lt;math> \\displaystyle\nA^TA = A^*A = (U\\Sigma V^*)^*(U\\Sigma V^*) = V\\Sigma^2V^*\n&lt;/math>\nSince ''V'' is real and orthogonal, &lt;math>\\displaystyle V^* = V^T = V^{-1}&lt;/math> so that the equation above describes an eigenvalue decomposition.\n", 
+        "For an eigenvalue decomposition &lt;math>\\displaystyle M = TDT^{-1} &lt;/math>, the eigenvalues of ''M'' fill the diagonal of ''D'', and the eigenvectors of ''M'' are the column vectors of ''T''.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From the eigenvalue decomposition</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA^TA = V\\Sigma^2V^{-1}\\end{aligned}\\]</span></p>\n<p>we see that the eigenvalues of <em>A<sup>T</sup>A</em> are the squares of the diagonal entries in <span class=\"math\">\\(\\displaystyle \\Sigma\\)</span>, that is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lambda_{1}=4, \\quad \\lambda_{2}=1, \\quad \\lambda_{3}=\\frac{1}{4}\\end{aligned}\\]</span></p>\n<p>Further, the corresponding eigenvectors of <em>A<sup>T</sup>A</em> are the column vectors of <em>V</em>, namely</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\n\\end{bmatrix}\n, \\quad \\vec{v_{2}}=\\begin{bmatrix}\n0\\\\\n\\frac{1}{\\sqrt{2}}\\\\\n-\\frac{1}{\\sqrt{2}}\n\\end{bmatrix}\n, \\quad \\vec{v_{3}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From the eigenvalue decomposition\n\n\\begin{align*}\n\\displaystyle\nA^TA = V\\Sigma^2V^{-1}\n\\end{align*}\n\nwe see that the eigenvalues of \\emph{A\\textsuperscript{T}A} are the\nsquares of the diagonal entries in $\\displaystyle \\Sigma$, that is\n\n\\begin{align*}\n\\lambda_{1}=4, \\quad \\lambda_{2}=1, \\quad \\lambda_{3}=\\frac{1}{4}\n\\end{align*}\n\nFurther, the corresponding eigenvectors of \\emph{A\\textsuperscript{T}A}\nare the column vectors of \\emph{V}, namely\n\n\\begin{align*}\n\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\n\\end{bmatrix}\n, \\quad \\vec{v_{2}}=\\begin{bmatrix}\n0\\\\\n\\frac{1}{\\sqrt{2}}\\\\\n-\\frac{1}{\\sqrt{2}}\n\\end{bmatrix}\n, \\quad \\vec{v_{3}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From the eigenvalue decomposition\n\n:&lt;math> \\displaystyle\nA^TA = V\\Sigma^2V^{-1}\n&lt;/math>\n\nwe see that the eigenvalues of ''A&lt;sup>T&lt;/sup>A'' are the squares of the diagonal entries in &lt;math>\\displaystyle \\Sigma&lt;/math>, that is\n\n:&lt;math>\\lambda_{1}=4, \\quad \\lambda_{2}=1, \\quad \\lambda_{3}=\\frac{1}{4}&lt;/math>\n\nFurther, the corresponding eigenvectors of ''A&lt;sup>T&lt;/sup>A'' are the column vectors of ''V'', namely\n\n\n:&lt;math>\\vec{v_{1}}=\\begin{bmatrix}\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\\\\\n\\frac{1}{\\sqrt{3}}\n\\end{bmatrix}\n, \\quad \\vec{v_{2}}=\\begin{bmatrix}\n0\\\\\n\\frac{1}{\\sqrt{2}}\\\\\n-\\frac{1}{\\sqrt{2}}\n\\end{bmatrix}\n, \\quad \\vec{v_{3}}=\\begin{bmatrix}\n\\frac{2}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\\\\\n-\\frac{1}{\\sqrt{6}}\n\\end{bmatrix}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is a matrix with singular value decomposition <span class=\"math\">\\(A = U\\Sigma V^*\\)</span> where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nU &amp;= \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma &amp;= \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV &amp;= \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(b)</strong> What are the eigenvalues and eigenvectors of <span class=\"math\">\\(A^T A\\)</span>? (Note</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA^T = A^*\\end{aligned}\\]</span></p>\n<p>since <em>A</em> is real.)</p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(b)} What are the eigenvalues and eigenvectors of $A^T A$?\n(Note\\begin{align*}\nA^T = A^*\n\\end{align*} since \\emph{A} is real.)", 
+    "statement_raw": "Suppose that ''A'' is a matrix with singular value decomposition &lt;math>A = U\\Sigma V^*&lt;/math> where\n\n:&lt;math>\n\\begin{align}\nU = &amp; \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma = &amp; \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV = &amp; \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\n'''(b)''' What are the eigenvalues and eigenvectors of &lt;math>A^T A&lt;/math>? (Note: &lt;math> A^T = A^*&lt;/math> since ''A'' is real.)\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(b)", 
+    "year": 2012
 }

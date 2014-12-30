@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_A_18", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle |-1 + 3i|= \\sqrt{10}\\)</span></p>\n", 
+    "answer_latex": "$\\displaystyle |-1 + 3i|= \\sqrt{10}$", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "IainMoyles"
+    ], 
     "course": "MATH152", 
-    "statement": "For questions \\textbf{A17-A19} below, $u$ and $z$ are the complex\nnumbers given below:\n\n\\begin{align*} u &= 4-2i \\\\ z &= -1+3i \\end{align*}\n\n\\textbf{A18:} Compute $|z|$.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p><span class=\"math\">\\(\\displaystyle |a + bi|= \\sqrt{a^{2} + b^{2}}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "$\\displaystyle |a + bi|= \\sqrt{a^{2} + b^{2}}$"
+    ], 
+    "hints_raw": [
+        "&lt;math>\\displaystyle |a + bi|= \\sqrt{a^{2} + b^{2}} &lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 18", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>Via the hint</p>\n<p><span class=\"math\">\\(\\displaystyle |-1 + 3i|= \\sqrt{(-1)^{2} + 3^{2}} = \\sqrt{10}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "Via the hint\n\n$\\displaystyle |-1 + 3i|= \\sqrt{(-1)^{2} + 3^{2}} = \\sqrt{10}$"
     ], 
-    "hints": [
-        "$\\displaystyle |a + bi|= \\sqrt{a^{2} + b^{2}}$"
-    ]
+    "sols_raw": [
+        "Via the hint\n\n&lt;math>\\displaystyle |-1 + 3i|= \\sqrt{(-1)^{2} + 3^{2}} = \\sqrt{10}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>For questions <strong>A17-A19</strong> below, <span class=\"math\">\\(u\\)</span> and <span class=\"math\">\\(z\\)</span> are the complex numbers given below:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu &amp;= 4-2i \\\\ z &amp;= -1+3i \\end{aligned}\\]</span></p>\n<p><strong>A18:</strong> Compute <span class=\"math\">\\(|z|\\)</span>.</p>\n", 
+    "statement_latex": "For questions \\textbf{A17-A19} below, $u$ and $z$ are the complex\nnumbers given below:\n\n\\begin{align*}\nu &= 4-2i \\\\ z &= -1+3i \n\\end{align*}\n\n\\textbf{A18:} Compute $|z|$.", 
+    "statement_raw": "For questions '''A17-A19''' below, &lt;math>u&lt;/math> and &lt;math>z&lt;/math> are the complex numbers given below:\n\n&lt;math> \\begin{align} u &amp;= 4-2i \\\\ z &amp;= -1+3i \\end{align} &lt;/math>\n\n'''A18:''' Compute &lt;math>|z|&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_18", 
+    "year": 2011
 }

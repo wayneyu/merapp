@@ -1,14 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH152", 
-    "statement": "Consider a random walk that has transition matrix:\n\n\\begin{align*}P=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\\end{align*}\n\nIf the walker starts in state 3 then find the probability that he will\nbe in state 3 again after two steps.", 
-    "year": 2012, 
-    "sols": [
-        "The probability of being at the $i^{th}$ state at the $n^{th}$ time step\nis given by the $i^{th}$ entry in the vector $\\mathbf{p}^{(n)}$, where\n\n\\begin{align*}\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\\end{align*} and $\\mathbf{p}^{(0)}$ is\nthe initial distribution of probability.\n\nIn this case, $\\mathbf{p}^{(0)} = [0,0,1]^{T}$ since we are starting in\nthe third state with probability 1. We want to compute the $3^{rd}$\nentry of $\\mathbf{p}^{(2)}$,\n\n\\begin{align*}\n\\mathbf{p}^{(2)} = P^{2}\\mathbf{p}^{(0)}\n&= \\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}^{2}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/2\\\\\n0  &  0  &  1/4\n\\end{bmatrix}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\\end{bmatrix}\\end{align*} Therefore, the probability of being in the third state at\nthe second step is 1/4."
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{p}^{(2)}=\\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\\end{bmatrix}\\)</span> Therefore, the probability of being in the third state at the second step is 1/4.</p>\n", 
+    "answer_latex": " $\\mathbf{p}^{(2)}=\\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\\end{bmatrix}$  Therefore, the probability of being in the third state at\nthe second step is 1/4.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "The probability of being at the $i^{th}$ state at the $n^{th}$ time step\nis given by the $i^{th}$ entry in the vector $\\mathbf{p}^{(n)}$, where\n\n\\begin{align*}\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\\end{align*} and $\\mathbf{p}^{(0)}$ is\nthe initial distribution of probability.", 
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The probability of being at the <span class=\"math\">\\(i^{th}\\)</span> state at the <span class=\"math\">\\(n^{th}\\)</span> time step is given by the <span class=\"math\">\\(i^{th}\\)</span> entry in the vector <span class=\"math\">\\(\\mathbf{p}^{(n)}\\)</span>, where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(\\mathbf{p}^{(0)}\\)</span> is the initial distribution of probability.</p>\n", 
+        "<p>In our case, what is <span class=\"math\">\\(\\mathbf{p}^{(0)}\\)</span>, when the random walker starts in the third state with probability 1?</p>\n<p>Which entry <span class=\"math\">\\(\\mathbf{p}^{(2)}\\)</span> is the probability that the random walker is in state 3 after 2 steps?</p>\n"
+    ], 
+    "hints_latex": [
+        "The probability of being at the $i^{th}$ state at the $n^{th}$ time step\nis given by the $i^{th}$ entry in the vector $\\mathbf{p}^{(n)}$, where\n\n\\begin{align*}\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\n\\end{align*} and $\\mathbf{p}^{(0)}$ is\nthe initial distribution of probability.", 
         "In our case, what is $\\mathbf{p}^{(0)}$, when the random walker starts\nin the third state with probability 1?\n\nWhich entry $\\mathbf{p}^{(2)}$ is the probability that the random walker\nis in state 3 after 2 steps?"
-    ]
+    ], 
+    "hints_raw": [
+        "The probability of being at the &lt;math>i^{th}&lt;/math> state at the &lt;math>n^{th}&lt;/math> time step is given by the &lt;math>i^{th}&lt;/math> entry in the vector &lt;math>\\mathbf{p}^{(n)}&lt;/math>, where\n:&lt;math>\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\n&lt;/math>\nand &lt;math>\\mathbf{p}^{(0)}&lt;/math> is the initial distribution of probability.\n", 
+        "In our case, what is &lt;math>\\mathbf{p}^{(0)}&lt;/math>, when the random walker starts in the third state with probability 1?\n\nWhich entry &lt;math>\\mathbf{p}^{(2)}&lt;/math> is the probability that the random walker is in state 3 after 2 steps?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "7 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>The probability of being at the <span class=\"math\">\\(i^{th}\\)</span> state at the <span class=\"math\">\\(n^{th}\\)</span> time step is given by the <span class=\"math\">\\(i^{th}\\)</span> entry in the vector <span class=\"math\">\\(\\mathbf{p}^{(n)}\\)</span>, where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(\\mathbf{p}^{(0)}\\)</span> is the initial distribution of probability.</p>\n<p>In this case, <span class=\"math\">\\(\\mathbf{p}^{(0)} = [0,0,1]^{T}\\)</span> since we are starting in the third state with probability 1. We want to compute the <span class=\"math\">\\(3^{rd}\\)</span> entry of <span class=\"math\">\\(\\mathbf{p}^{(2)}\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{p}^{(2)} = P^{2}\\mathbf{p}^{(0)}\n&amp;= \\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}^{2}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/2\\\\\n0  &amp;  0  &amp;  1/4\n\\end{bmatrix}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Therefore, the probability of being in the third state at the second step is 1/4.</p>\n"
+    ], 
+    "sols_latex": [
+        "The probability of being at the $i^{th}$ state at the $n^{th}$ time step\nis given by the $i^{th}$ entry in the vector $\\mathbf{p}^{(n)}$, where\n\n\\begin{align*}\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\n\\end{align*} and $\\mathbf{p}^{(0)}$ is\nthe initial distribution of probability.\n\nIn this case, $\\mathbf{p}^{(0)} = [0,0,1]^{T}$ since we are starting in\nthe third state with probability 1. We want to compute the $3^{rd}$\nentry of $\\mathbf{p}^{(2)}$,\n\n\\begin{align*}\n\\mathbf{p}^{(2)} = P^{2}\\mathbf{p}^{(0)}\n&= \\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}^{2}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/2\\\\\n0  &  0  &  1/4\n\\end{bmatrix}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\\end{bmatrix}\n\\end{align*} Therefore, the probability of being in the third state at\nthe second step is 1/4."
+    ], 
+    "sols_raw": [
+        "The probability of being at the &lt;math>i^{th}&lt;/math> state at the &lt;math>n^{th}&lt;/math> time step is given by the &lt;math>i^{th}&lt;/math> entry in the vector &lt;math>\\mathbf{p}^{(n)}&lt;/math>, where\n:&lt;math>\n\\mathbf{p}^{(n)} = P^{n}\\mathbf{p}^{(0)}\n&lt;/math>\nand &lt;math>\\mathbf{p}^{(0)}&lt;/math> is the initial distribution of probability. \n\nIn this case, &lt;math>\\mathbf{p}^{(0)} = [0,0,1]^{T}&lt;/math> since we are starting in the third state with probability 1. We want to compute the &lt;math>3^{rd}&lt;/math> entry of &lt;math>\\mathbf{p}^{(2)}&lt;/math>,\n\n:&lt;math>\n\\begin{align}\n\\mathbf{p}^{(2)} = P^{2}\\mathbf{p}^{(0)}\n&amp;= \\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}^{2}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/2\\\\\n0  &amp;  0  &amp;  1/4\n\\end{bmatrix}\\begin{bmatrix}\n0\\\\\n0\\\\\n1\n\\end{bmatrix} = \\begin{bmatrix}\n1/4\\\\\n1/2\\\\\n{\\color{blue}1/4}\n\\end{bmatrix}\n\n\\end{align}\n&lt;/math>\n&lt;font style=\"color:blue;\">Therefore, the probability of being in the third state at the second step is 1/4.&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Consider a random walk that has transition matrix:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>If the walker starts in state 3 then find the probability that he will be in state 3 again after two steps.</p>\n", 
+    "statement_latex": "Consider a random walk that has transition matrix:\n\n\\begin{align*}\nP=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\n\\end{align*}\n\nIf the walker starts in state 3 then find the probability that he will\nbe in state 3 again after two steps.", 
+    "statement_raw": "Consider a random walk that has transition matrix:\n\n:&lt;math>\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\n&lt;/math>\n\nIf the walker starts in state 3 then find the probability that he will be in state 3 again after two steps.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(a)", 
+    "year": 2012
 }

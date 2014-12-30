@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_03_(a)", 
+    "answer_html": "<p>5)<span class=\"math\">\\(\\lambda = \\langle x,Ax \\rangle\\)</span> (x was normalized earlier).</p>\n", 
+    "answer_latex": "5)$\\lambda = \\langle x,Ax \\rangle$ (x was normalized earlier).", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Explain how to find the largest (in absolute value) eigenvalue of\n\\emph{A} using the power method.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "3 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Given: A is a real symmetric matrix.</p>\n<p>Assuming: The largest eigenvalue of A is not repeated.</p>\n<p>1) Take a random vector <span class=\"math\">\\(x_0\\)</span>.</p>\n<p>2) Take <span class=\"math\">\\(x_{n+1} = Ax_n\\)</span></p>\n<p>3) Normalize x</p>\n<p>4) If <span class=\"math\">\\(x_n\\)</span> is not close enough to <span class=\"math\">\\(x_{n-1}\\)</span> (ignoring sign flips), go to 2) (&#226;&#128;&#156;close enough&#226;&#128;&#157; being REALLY close)</p>\n<p>-&gt; x is now an approximation of the eigenvector of the largest eigenvalue</p>\n<p>5)<span class=\"math\">\\(\\lambda = \\langle x,Ax \\rangle\\)</span> (x was normalized earlier).</p>\n"
+    ], 
+    "sols_latex": [
         "Given: A is a real symmetric matrix.\n\nAssuming: The largest eigenvalue of A is not repeated.\n\n1) Take a random vector $x_0$.\n\n2) Take $x_{n+1} = Ax_n$\n\n3) Normalize x\n\n4) If $x_n$ is not close enough to $x_{n-1}$ (ignoring sign flips), go\nto 2) (\u00e2\u0080\u009cclose enough\u00e2\u0080\u009d being REALLY close)\n\n-\\textgreater{} x is now an approximation of the eigenvector of the\nlargest eigenvalue\n\n5)$\\lambda = \\langle x,Ax \\rangle$ (x was normalized earlier)."
     ], 
-    "hints": []
+    "sols_raw": [
+        "Given: A is a real symmetric matrix.\n\nAssuming: The largest eigenvalue of A is not repeated.\n\n1) Take a random vector &lt;math>x_0&lt;/math>.\n\n2) Take &lt;math>x_{n+1} = Ax_n&lt;/math>\n\n3) Normalize x\n\n4) If &lt;math>x_n&lt;/math> is not close enough to &lt;math>x_{n-1}&lt;/math> (ignoring sign flips), go to 2) (\u201cclose enough\u201d being REALLY close)\n\n-&amp;gt; x is now an approximation of the eigenvector of the largest eigenvalue\n\n5)&lt;math> \\lambda = \\langle x,Ax \\rangle &lt;/math> (x was normalized earlier).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Explain how to find the largest (in absolute value) eigenvalue of <em>A</em> using the power method.</p>\n", 
+    "statement_latex": "Explain how to find the largest (in absolute value) eigenvalue of\n\\emph{A} using the power method.", 
+    "statement_raw": "Explain how to find the largest (in absolute value) eigenvalue of ''A'' using the power method.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_03_(a)", 
+    "year": 2013
 }

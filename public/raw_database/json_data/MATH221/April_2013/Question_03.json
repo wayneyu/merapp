@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_03", 
+    "answer_html": "<p><span class=\"math\">\\(\\left[ \\begin{array}{cc}\n1 &amp; -1  \\\\ \n1 &amp; 1\n\\end{array} \\right]\\)</span> and <span class=\"math\">\\(\\left[ \\begin{array}{cc}\n-1 &amp; 1  \\\\ \n1 &amp; 1\n\\end{array} \\right]\\)</span></p>\n", 
+    "answer_latex": "$\\left[ \\begin{array}{cc}\n1 & -1  \\\\ \n1 & 1\n\\end{array} \\right]$ and $\\left[ \\begin{array}{cc}\n-1 & 1  \\\\ \n1 & 1\n\\end{array} \\right]$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH221", 
-    "statement": "There are two linear transformations of $R^2$ that map the square with\nvertices at $(0,0), (1,0), (0,1), (1,1)$ to the square with vertices at\n$(0,0), (1,1), (-1,1), (0,2)$. Call them $T_1$ and $T_2$. Determine the\nmatrices of $T_1$ and $T_2$.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>As the matrices must map the square edges to the square edges, we need to figure out where the four corners are mapped to. Use the fact that <em>T<sub>1</sub></em> and <em>T<sub>2</sub></em> are linear, which restricts your options.</p>\n"
+    ], 
+    "hints_latex": [
+        "As the matrices must map the square edges to the square edges, we need\nto figure out where the four corners are mapped to. Use the fact that\n\\emph{T\\textsubscript{1}} and \\emph{T\\textsubscript{2}} are linear,\nwhich restricts your options."
+    ], 
+    "hints_raw": [
+        "As the matrices must map the square edges to the square edges, we need to figure out where the four corners are mapped to. \nUse the fact that ''T&lt;sub>1&lt;/sub>'' and ''T&lt;sub>2&lt;/sub>'' are linear, which restricts your options.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "3", 
+    "rating": 16, 
+    "sols_html": [
+        "<p>As that matrices map the square to the square, it will map the corners to the corners, thus we will see all possible ways to map the four corners to the four new corners.</p>\n<ul>\n<li><p>First, linear transforms must bring the vector <span class=\"math\">\\((0,0)\\)</span> to the vector <span class=\"math\">\\((0,0)\\)</span>. So one of the corners is taken care of already.</p></li>\n<li><p>Next, note that there is a relation between the corners of the original square, that is <span class=\"math\">\\((1,0)+(0,1) = (1,1)\\)</span>. As linear transformation preserve sums, <em>T(a+b) = T(a)+T(b)</em>, we need to have the same relation in the target corners, which we do <span class=\"math\">\\((1,1) + (-1,1) = (0,2)\\)</span>. Hence any linear transform between the two squares must send <em>(1,1)</em> to <em>(0,2)</em>.</p></li>\n<li><p>Thus, we are left with sending <span class=\"math\">\\((0,1),(1,0)\\)</span> to <span class=\"math\">\\((1,1),(-1,1)\\)</span>, and there are two ways to do so. As <span class=\"math\">\\((0,1),(1,0)\\)</span> forms a basis of the matrix, knowing where theses two vectors go also pins down the two matrices uniquely. We simply need to put the result in the columns of the transformation matrix:</p></li>\n</ul>\n<p><span class=\"math\">\\(\\left[ \\begin{array}{cc}\n1 &amp; -1  \\\\ \n1 &amp; 1\n\\end{array} \\right]\\)</span> and <span class=\"math\">\\(\\left[ \\begin{array}{cc}\n-1 &amp; 1  \\\\ \n1 &amp; 1\n\\end{array} \\right]\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "As that matrices map the square to the square, it will map the corners\nto the corners, thus we will see all possible ways to map the four\ncorners to the four new corners.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  First, linear transforms must bring the vector $(0,0)$ to the vector\n  $(0,0)$. So one of the corners is taken care of already.\n\\item\n  Next, note that there is a relation between the corners of the\n  original square, that is $(1,0)+(0,1) = (1,1)$. As linear\n  transformation preserve sums, \\emph{T(a+b) = T(a)+T(b)}, we need to\n  have the same relation in the target corners, which we do\n  $(1,1) + (-1,1) = (0,2)$. Hence any linear transform between the two\n  squares must send \\emph{(1,1)} to \\emph{(0,2)}.\n\\item\n  Thus, we are left with sending $(0,1),(1,0)$ to $(1,1),(-1,1)$, and\n  there are two ways to do so. As $(0,1),(1,0)$ forms a basis of the\n  matrix, knowing where theses two vectors go also pins down the two\n  matrices uniquely. We simply need to put the result in the columns of\n  the transformation matrix:\n\\end{itemize}\n\n$\\left[ \\begin{array}{cc}\n1 & -1  \\\\ \n1 & 1\n\\end{array} \\right]$ and $\\left[ \\begin{array}{cc}\n-1 & 1  \\\\ \n1 & 1\n\\end{array} \\right]$"
     ], 
-    "hints": [
-        "As the matrices must map the square edges to the square edges, we need\nto figure out where the four corners are mapped to. Use the fact that\n\\emph{T\\textsubscript{1}} and \\emph{T\\textsubscript{2}} are linear,\nwhich restricts your options."
-    ]
+    "sols_raw": [
+        "As that matrices map the square to the square, it will map the corners to the corners, thus we will see all possible ways to map the four corners to the four new corners.\n\n* First, linear transforms must bring the vector &lt;math> (0,0)&lt;/math> to the vector &lt;math> (0,0)&lt;/math>. So one of the corners is taken care of already.\n* Next, note that there is a relation between the corners of the original square, that is &lt;math> (1,0)+(0,1) = (1,1)&lt;/math>. As linear transformation preserve sums, ''T(a+b) = T(a)+T(b)'', we need to have the same relation in the target corners, which we do &lt;math> (1,1) + (-1,1) = (0,2)&lt;/math>. Hence any linear transform between the two squares must send ''(1,1)'' to ''(0,2)''.\n* Thus, we are left with sending &lt;math> (0,1),(1,0)&lt;/math> to &lt;math> (1,1),(-1,1)&lt;/math>, and there are two ways to do so. As &lt;math> (0,1),(1,0)&lt;/math> forms a basis of the matrix, knowing where theses two vectors go also pins down the two matrices uniquely. We simply need to put the result in the columns of the transformation matrix:\n\n&lt;math> \\left[ \\begin{array}{cc}\n1 &amp; -1  \\\\ \n1 &amp; 1\n\\end{array} \\right]&lt;/math> and &lt;math> \\left[ \\begin{array}{cc}\n-1 &amp; 1  \\\\ \n1 &amp; 1\n\\end{array} \\right]&lt;/math>\n"
+    ], 
+    "solvers": [
+        "JeromeLefebvre"
+    ], 
+    "statement_html": "<p>There are two linear transformations of <span class=\"math\">\\(R^2\\)</span> that map the square with vertices at <span class=\"math\">\\((0,0), (1,0), (0,1), (1,1)\\)</span> to the square with vertices at <span class=\"math\">\\((0,0), (1,1), (-1,1), (0,2)\\)</span>. Call them <span class=\"math\">\\(T_1\\)</span> and <span class=\"math\">\\(T_2\\)</span>. Determine the matrices of <span class=\"math\">\\(T_1\\)</span> and <span class=\"math\">\\(T_2\\)</span>.</p>\n", 
+    "statement_latex": "There are two linear transformations of $R^2$ that map the square with\nvertices at $(0,0), (1,0), (0,1), (1,1)$ to the square with vertices at\n$(0,0), (1,1), (-1,1), (0,2)$. Call them $T_1$ and $T_2$. Determine the\nmatrices of $T_1$ and $T_2$.", 
+    "statement_raw": "There are two linear transformations of &lt;math> R^2&lt;/math> that map the square with vertices at &lt;math> (0,0), (1,0), (0,1), (1,1)&lt;/math> to the square with vertices at &lt;math> (0,0), (1,1), (-1,1), (0,2)&lt;/math>. Call them &lt;math> T_1&lt;/math> and &lt;math> T_2&lt;/math>. Determine the matrices of &lt;math> T_1&lt;/math> and &lt;math> T_2&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_03", 
+    "year": 2013
 }

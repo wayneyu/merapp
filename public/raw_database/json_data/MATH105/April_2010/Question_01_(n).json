@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_01_(n)", 
-    "course": "MATH105", 
-    "statement": "Find the variance of the random variable \\emph{X} whose density function\nis\n\n\\begin{align*}f(x) = \\frac1{2\\sqrt{x}} \\quad 1 \\leq x \\leq 4.\\end{align*}\n\n\\emph{(You may need the fact that the expected value of the random\nvariable X above is 7/3.)}", 
-    "year": 2010, 
-    "sols": [
-        "From the definition of the variance we can directly compute its value.\n\n\\begin{align*}\n\\mathrm{Var}(X) &= \\int_a^b (x-\\overline{X})^2 f(x)\\, dx = \\int_1^4 \\left(x-\\frac73\\right)^2 \\frac1{2\\sqrt{x}}\\,dx \\\\\n&= \\int_1^4 \\left(\\frac{x^2}{2\\sqrt{x}} - \\frac73 \\frac{x}{\\sqrt{x}} + \\frac{49}9 \\frac1{2\\sqrt{x}}\\right)\\,dx \\\\\n&= \\int_1^4 \\left(\\frac12 x^{3/2} - \\frac73 x^{1/2} + \\frac{49}{18}x^{-1/2}\\right)\\,dx \\\\\n&= \\left.\\left(\\frac12 \\frac25 x^{5/2} - \\frac73 \\frac23 x^{3/2} + \\frac{49}{18} 2x^{1/2}\\right)\\right|_1^4 \\\\\n&= \\frac15\\,32 - \\frac{14}9\\,8 + \\frac{49}9\\,2 - \\left(\\frac15 - \\frac{14}9 + \\frac{49}9\\right) \\\\\n&= \\frac{34}{45}.\\end{align*}", 
-        "Alternatively, we can also use the identity\n\n\\begin{align*}\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\end{align*}\n\nWe're already given $\\mathbb{E}(X) = 7/3$ so we just need\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 f(x) dx$.\n\nWe compute this integral, finding\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 \\frac{1}{2 \\sqrt{x}} dx = \\int_1^4 \\frac{1}{2} x^{3/2} dx = \\frac{1}{5} x^{5/2}|_1^4 = \\frac{1}{5}(32-1) = 31/5.$\n\nThus $\\mathrm{Var}(X) = \\frac{31}{5} - (\\frac{7}{3})^2 = 34/45$."
+    "answer_html": "<p><span class=\"math\">\\(\\mathrm{Var}(X)=\\frac{34}{45}.\\)</span></p>\n", 
+    "answer_latex": " $\\mathrm{Var}(X)=\\frac{34}{45}.$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "The definition of the variance is\n\n\\begin{align*}\\mathrm{Var}(X) = \\int_a^b (x-\\overline{X})^2 f(x)\\, dx\\end{align*}", 
-        "The calculation becomes a little easier when you use the identity\n\n\\begin{align*}\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\end{align*}"
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The definition of the variance is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Var}(X) = \\int_a^b (x-\\overline{X})^2 f(x)\\, dx\\end{aligned}\\]</span></p>\n", 
+        "<p>The calculation becomes a little easier when you use the identity</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The definition of the variance is\n\n\\begin{align*}\n\\mathrm{Var}(X) = \\int_a^b (x-\\overline{X})^2 f(x)\\, dx\n\\end{align*}", 
+        "The calculation becomes a little easier when you use the identity\n\n\\begin{align*}\n\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The definition of the variance is\n\n:&lt;math>\\mathrm{Var}(X) = \\int_a^b (x-\\overline{X})^2 f(x)\\, dx&lt;/math>\n", 
+        "The calculation becomes a little easier when you use the identity\n\n:&lt;math>\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (n)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From the definition of the variance we can directly compute its value.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Var}(X) &amp;= \\int_a^b (x-\\overline{X})^2 f(x)\\, dx = \\int_1^4 \\left(x-\\frac73\\right)^2 \\frac1{2\\sqrt{x}}\\,dx \\\\\n&amp;= \\int_1^4 \\left(\\frac{x^2}{2\\sqrt{x}} - \\frac73 \\frac{x}{\\sqrt{x}} + \\frac{49}9 \\frac1{2\\sqrt{x}}\\right)\\,dx \\\\\n&amp;= \\int_1^4 \\left(\\frac12 x^{3/2} - \\frac73 x^{1/2} + \\frac{49}{18}x^{-1/2}\\right)\\,dx \\\\\n&amp;= \\left.\\left(\\frac12 \\frac25 x^{5/2} - \\frac73 \\frac23 x^{3/2} + \\frac{49}{18} 2x^{1/2}\\right)\\right|_1^4 \\\\\n&amp;= \\frac15\\,32 - \\frac{14}9\\,8 + \\frac{49}9\\,2 - \\left(\\frac15 - \\frac{14}9 + \\frac{49}9\\right) \\\\\n&amp;= \\frac{34}{45}.\\end{aligned}\\]</span></p>\n", 
+        "<p>Alternatively, we can also use the identity</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\\end{aligned}\\]</span></p>\n<p>We&#8217;re already given <span class=\"math\">\\(\\mathbb{E}(X) = 7/3\\)</span> so we just need <span class=\"math\">\\(\\mathbb{E}(X^2) = \\int_1^4 x^2 f(x) dx\\)</span>.</p>\n<p>We compute this integral, finding <span class=\"math\">\\(\\mathbb{E}(X^2) = \\int_1^4 x^2 \\frac{1}{2 \\sqrt{x}} dx = \\int_1^4 \\frac{1}{2} x^{3/2} dx = \\frac{1}{5} x^{5/2}|_1^4 = \\frac{1}{5}(32-1) = 31/5.\\)</span></p>\n<p>Thus <span class=\"math\">\\(\\mathrm{Var}(X) = \\frac{31}{5} - (\\frac{7}{3})^2 = 34/45\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the definition of the variance we can directly compute its value.\n\n\\begin{align*}\n\\mathrm{Var}(X) &= \\int_a^b (x-\\overline{X})^2 f(x)\\, dx = \\int_1^4 \\left(x-\\frac73\\right)^2 \\frac1{2\\sqrt{x}}\\,dx \\\\\n&= \\int_1^4 \\left(\\frac{x^2}{2\\sqrt{x}} - \\frac73 \\frac{x}{\\sqrt{x}} + \\frac{49}9 \\frac1{2\\sqrt{x}}\\right)\\,dx \\\\\n&= \\int_1^4 \\left(\\frac12 x^{3/2} - \\frac73 x^{1/2} + \\frac{49}{18}x^{-1/2}\\right)\\,dx \\\\\n&= \\left.\\left(\\frac12 \\frac25 x^{5/2} - \\frac73 \\frac23 x^{3/2} + \\frac{49}{18} 2x^{1/2}\\right)\\right|_1^4 \\\\\n&= \\frac15\\,32 - \\frac{14}9\\,8 + \\frac{49}9\\,2 - \\left(\\frac15 - \\frac{14}9 + \\frac{49}9\\right) \\\\\n&= \\frac{34}{45}.\n\\end{align*}", 
+        "Alternatively, we can also use the identity\n\n\\begin{align*}\n\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.\n\\end{align*}\n\nWe're already given $\\mathbb{E}(X) = 7/3$ so we just need\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 f(x) dx$.\n\nWe compute this integral, finding\n$\\mathbb{E}(X^2) = \\int_1^4 x^2 \\frac{1}{2 \\sqrt{x}} dx = \\int_1^4 \\frac{1}{2} x^{3/2} dx = \\frac{1}{5} x^{5/2}|_1^4 = \\frac{1}{5}(32-1) = 31/5.$\n\nThus $\\mathrm{Var}(X) = \\frac{31}{5} - (\\frac{7}{3})^2 = 34/45$."
+    ], 
+    "sols_raw": [
+        "From the definition of the variance we can directly compute its value.\n\n:&lt;math>\\begin{align}\n\\mathrm{Var}(X) &amp;= \\int_a^b (x-\\overline{X})^2 f(x)\\, dx = \\int_1^4 \\left(x-\\frac73\\right)^2 \\frac1{2\\sqrt{x}}\\,dx \\\\\n&amp;= \\int_1^4 \\left(\\frac{x^2}{2\\sqrt{x}} - \\frac73 \\frac{x}{\\sqrt{x}} + \\frac{49}9 \\frac1{2\\sqrt{x}}\\right)\\,dx \\\\\n&amp;= \\int_1^4 \\left(\\frac12 x^{3/2} - \\frac73 x^{1/2} + \\frac{49}{18}x^{-1/2}\\right)\\,dx \\\\\n&amp;= \\left.\\left(\\frac12 \\frac25 x^{5/2} - \\frac73 \\frac23 x^{3/2} + \\frac{49}{18} 2x^{1/2}\\right)\\right|_1^4 \\\\\n&amp;= \\frac15\\,32 - \\frac{14}9\\,8 + \\frac{49}9\\,2 - \\left(\\frac15 - \\frac{14}9 + \\frac{49}9\\right) \\\\\n&amp;= \\frac{34}{45}.\n\\end{align}\n&lt;/math>\n", 
+        "Alternatively, we can also use the identity\n\n:&lt;math>\\mathrm{Var}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2.&lt;/math>\n\nWe're already given &lt;math>\\mathbb{E}(X) = 7/3&lt;/math> so we just need &lt;math>\\mathbb{E}(X^2) = \\int_1^4 x^2 f(x) dx&lt;/math>.\n\nWe compute this integral, finding &lt;math>\\mathbb{E}(X^2) = \\int_1^4 x^2 \\frac{1}{2 \\sqrt{x}} dx = \\int_1^4 \\frac{1}{2} x^{3/2} dx = \\frac{1}{5} x^{5/2}|_1^4 = \\frac{1}{5}(32-1) = 31/5.&lt;/math>\n\nThus &lt;math>\\mathrm{Var}(X) = \\frac{31}{5} - (\\frac{7}{3})^2 = 34/45&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Find the variance of the random variable <em>X</em> whose density function is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac1{2\\sqrt{x}} \\quad 1 \\leq x \\leq 4.\\end{aligned}\\]</span></p>\n<p><em>(You may need the fact that the expected value of the random variable X above is 7/3.)</em></p>\n", 
+    "statement_latex": "Find the variance of the random variable \\emph{X} whose density function\nis\n\n\\begin{align*}\nf(x) = \\frac1{2\\sqrt{x}} \\quad 1 \\leq x \\leq 4.\n\\end{align*}\n\n\\emph{(You may need the fact that the expected value of the random\nvariable X above is 7/3.)}", 
+    "statement_raw": "Find the variance of the random variable ''X'' whose density function is\n\n:&lt;math> f(x) = \\frac1{2\\sqrt{x}} \\quad 1 \\leq x \\leq 4&lt;/math>.\n\n''(You may need the fact that the expected value of the random variable X above is 7/3.)''\n", 
+    "term": "April", 
+    "topics": [
+        "Variance"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_01_(n)", 
+    "year": 2010
 }

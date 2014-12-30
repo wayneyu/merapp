@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
-    "course": "MATH110", 
-    "statement": "Explain why there exists a number $c$ in the interval $(1,2)$ satisfying\nthe equation\n\n\\begin{align*}\\displaystyle -x^3+x^2+2x=\\ln(x)+1.\\end{align*}\n\nJustify your answer, citing appropriate theorems.", 
-    "year": 2012, 
-    "sols": [
-        "As suggested by the hint, we will solve for zero on one side of the\nequation, giving:\n\n$-x^3 + x^2 + 2x - \\ln(x) - 1 = 0$\n\nWe now need to show that there is a number \\emph{c} in the interval\n\\emph{(1,2)} that makes the left side equal to zero. This should remind\nyou of the Intermediate Value Theorem (IVT). The statement of the IVT\nsays\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nIf f(x) is continuous on {[}a,b{]} and for some number L, f(a)\n\\textless{} L \\textless{} f(b), then there exists c in (a,b) such that\nf(c) = L.\" In our scenario, the left side of the equation is\n\\emph{f(x)}, \\emph{a = 1}, \\emph{b=2}, and''L = 0'.\n\\end{description}\n\nIn order to use the IVT, we need to check that the function is\ncontinuous on the interval \\emph{{[}1,2{]}}. As each term of the\nfunction is continuous on the interval, the whole function is also\ncontinuous on the interval.\n\nNow we compute \\emph{f(1)} and \\emph{f(2)}.\n\n$f(1) = -1 + 1 + 2 -\\ln(1) -1 = 1 > 0$\n\n$f(2) = -8 + 4 + 4 - \\ln(2) - 1 < 0$\n\nBecause \\emph{f(1) \\textless{} 0 \\textless{} f(2)}, we can now use the\nIVT to conclude that there exists a number \\emph{c} in the interval\n\\emph{(1,2)} such that \\emph{f(c) = 0}."
+    "answer_html": "<p>Because <em>f(1) &lt; 0 &lt; f(2)</em>, we can now use the IVT to conclude that there exists a number <em>c</em> in the interval <em>(1,2)</em> such that <em>f(c) = 0</em>.</p>\n", 
+    "answer_latex": "Because \\emph{f(1) \\textless{} 0 \\textless{} f(2)}, we can now use the\nIVT to conclude that there exists a number \\emph{c} in the interval\n\\emph{(1,2)} such that \\emph{f(c) = 0}.", 
+    "contributors": [
+        "IainMoyles", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try rearranging the equation for zero on one side, which means you now need to show that at some point this equation equals zero. This should remind you of a particular theorem...</p>\n", 
+        "<p>Use the Intermediate Value Theorem.</p>\n"
+    ], 
+    "hints_latex": [
         "Try rearranging the equation for zero on one side, which means you now\nneed to show that at some point this equation equals zero. This should\nremind you of a particular theorem...", 
         "Use the Intermediate Value Theorem."
-    ]
+    ], 
+    "hints_raw": [
+        "Try rearranging the equation for zero on one side, which means you now need to show that at some point this equation equals zero.  This should remind you of a particular theorem...\n", 
+        "Use the Intermediate Value Theorem.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4", 
+    "rating": null, 
+    "sols_html": [
+        "<p>As suggested by the hint, we will solve for zero on one side of the equation, giving:</p>\n<p><span class=\"math\">\\(-x^3 + x^2 + 2x - \\ln(x) - 1 = 0\\)</span></p>\n<p>We now need to show that there is a number <em>c</em> in the interval <em>(1,2)</em> that makes the left side equal to zero. This should remind you of the Intermediate Value Theorem (IVT). The statement of the IVT says</p>\n<dl>\n\n<dd><p>If f(x) is continuous on <span>[</span>a,b<span>]</span> and for some number L, f(a) &lt; L &lt; f(b), then there exists c in (a,b) such that f(c) = L.&quot; In our scenario, the left side of the equation is <em>f(x)</em>, <em>a = 1</em>, <em>b=2</em>, and&#8221;L = 0&#8217;.</p>\n</dd>\n</dl>\n<p>In order to use the IVT, we need to check that the function is continuous on the interval <em><span>[</span>1,2<span>]</span></em>. As each term of the function is continuous on the interval, the whole function is also continuous on the interval.</p>\n<p>Now we compute <em>f(1)</em> and <em>f(2)</em>.</p>\n<p><span class=\"math\">\\(f(1) = -1 + 1 + 2 -\\ln(1) -1 = 1 &gt; 0\\)</span></p>\n<p><span class=\"math\">\\(f(2) = -8 + 4 + 4 - \\ln(2) - 1 &lt; 0\\)</span></p>\n<p>Because <em>f(1) &lt; 0 &lt; f(2)</em>, we can now use the IVT to conclude that there exists a number <em>c</em> in the interval <em>(1,2)</em> such that <em>f(c) = 0</em>.</p>\n"
+    ], 
+    "sols_latex": [
+        "As suggested by the hint, we will solve for zero on one side of the\nequation, giving:\n\n$-x^3 + x^2 + 2x - \\ln(x) - 1 = 0$\n\nWe now need to show that there is a number \\emph{c} in the interval\n\\emph{(1,2)} that makes the left side equal to zero. This should remind\nyou of the Intermediate Value Theorem (IVT). The statement of the IVT\nsays\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nIf f(x) is continuous on {[}a,b{]} and for some number L, f(a)\n\\textless{} L \\textless{} f(b), then there exists c in (a,b) such that\nf(c) = L.\" In our scenario, the left side of the equation is\n\\emph{f(x)}, \\emph{a = 1}, \\emph{b=2}, and''L = 0'.\n\\end{description}\n\nIn order to use the IVT, we need to check that the function is\ncontinuous on the interval \\emph{{[}1,2{]}}. As each term of the\nfunction is continuous on the interval, the whole function is also\ncontinuous on the interval.\n\nNow we compute \\emph{f(1)} and \\emph{f(2)}.\n\n$f(1) = -1 + 1 + 2 -\\ln(1) -1 = 1 > 0$\n\n$f(2) = -8 + 4 + 4 - \\ln(2) - 1 < 0$\n\nBecause \\emph{f(1) \\textless{} 0 \\textless{} f(2)}, we can now use the\nIVT to conclude that there exists a number \\emph{c} in the interval\n\\emph{(1,2)} such that \\emph{f(c) = 0}."
+    ], 
+    "sols_raw": [
+        "As suggested by the hint, we will solve for zero on one side of the equation, giving:\n\n&lt;math> -x^3 + x^2 + 2x - \\ln(x) - 1 = 0&lt;/math>\n\nWe now need to show that there is a number ''c'' in the interval ''(1,2)'' that makes the left side equal to zero.  This should remind you of the Intermediate Value Theorem (IVT).  The statement of the IVT says\n\n:If f(x) is continuous on [a,b] and for some number L, f(a) &lt; L &lt; f(b), then there exists c in (a,b) such that f(c) = L.\"  In our scenario, the left side of the equation is ''f(x)'', ''a = 1'', ''b=2'', and ''L = 0'.  \n\nIn order to use the IVT, we need to check that the function is continuous on the interval ''[1,2]''.  As each term of the function is continuous on the interval, the whole function is also continuous on the interval.  \n\nNow we compute ''f(1)'' and ''f(2)''.  \n\n&lt;math>f(1) = -1 + 1 + 2 -\\ln(1) -1 = 1 > 0&lt;/math>\n\n&lt;math>f(2) = -8 + 4 + 4 - \\ln(2) - 1 &lt; 0 &lt;/math>\n\nBecause ''f(1) &lt; 0 &lt; f(2)'', we can now use the IVT to conclude that there exists a number ''c'' in the interval ''(1,2)'' such that ''f(c) = 0''.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Explain why there exists a number <span class=\"math\">\\(c\\)</span> in the interval <span class=\"math\">\\((1,2)\\)</span> satisfying the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle -x^3+x^2+2x=\\ln(x)+1.\\end{aligned}\\]</span></p>\n<p>Justify your answer, citing appropriate theorems.</p>\n", 
+    "statement_latex": "Explain why there exists a number $c$ in the interval $(1,2)$ satisfying\nthe equation\n\n\\begin{align*}\n\\displaystyle -x^3+x^2+2x=\\ln(x)+1.\n\\end{align*}\n\nJustify your answer, citing appropriate theorems.", 
+    "statement_raw": "Explain why there exists a number &lt;math>c&lt;/math> in the interval &lt;math>(1,2)&lt;/math> satisfying the equation \n\n:&lt;math>\\displaystyle -x^3+x^2+2x=\\ln(x)+1.&lt;/math>\n\nJustify your answer, citing appropriate theorems.\n", 
+    "term": "December", 
+    "topics": [
+        "Intermediate_value_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_04", 
+    "year": 2012
 }

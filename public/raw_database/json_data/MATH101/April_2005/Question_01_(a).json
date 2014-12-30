@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C\\)</span></p>\n", 
+    "answer_latex": "$\\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Questions.} \\emph{Put your answer in the box\nprovided but show your work also. Full marks will be given for correct\nanswers placed in the bo, but at most one mark will be given for\nincorrect answers. Simplify your answer as much as possible.}\n\nEvaluate\n\n$\\int(x^{2}+e^{2x})\\, dx$", 
-    "year": 2005, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p><span class=\"math\">\\(\\int_{a}^{b}(f(x) + g(x))\\, dx = \\int_{a}^{b}f(x) \\, dx + \\int_{a}^{b}g(x)\\, dx\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "$\\int_{a}^{b}(f(x) + g(x))\\, dx = \\int_{a}^{b}f(x) \\, dx + \\int_{a}^{b}g(x)\\, dx$"
+    ], 
+    "hints_raw": [
+        "&lt;math> \\int_{a}^{b}(f(x) + g(x))\\, dx = \\int_{a}^{b}f(x) \\, dx + \\int_{a}^{b}g(x)\\, dx&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (a)", 
+    "rating": 96, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(\\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "$\\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C$"
     ], 
-    "hints": [
-        "$\\int_{a}^{b}(f(x) + g(x))\\, dx = \\int_{a}^{b}f(x) \\, dx + \\int_{a}^{b}g(x)\\, dx$"
-    ]
+    "sols_raw": [
+        "&lt;math> \\int(x^{2} + e^{2x})\\, dx = \\frac{x^{3}}{3} + \\frac{e^{2x}}{2} + C &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions.</strong> <em>Put your answer in the box provided but show your work also. Full marks will be given for correct answers placed in the bo, but at most one mark will be given for incorrect answers. Simplify your answer as much as possible.</em></p>\n<p>Evaluate</p>\n<p><span class=\"math\">\\(\\int(x^{2}+e^{2x})\\, dx\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions.} \\emph{Put your answer in the box\nprovided but show your work also. Full marks will be given for correct\nanswers placed in the bo, but at most one mark will be given for\nincorrect answers. Simplify your answer as much as possible.}\n\nEvaluate\n\n$\\int(x^{2}+e^{2x})\\, dx$", 
+    "statement_raw": "'''Short-Answer Questions.''' ''Put your answer in the box provided but show your work also. Full marks will be given for correct answers placed in the bo, but at most one mark will be given for incorrect answers. Simplify your answer as much as possible.''\n\nEvaluate\n\n&lt;math> \\int(x^{2}+e^{2x})\\, dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_01_(a)", 
+    "year": 2005
 }

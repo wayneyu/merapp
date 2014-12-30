@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_03_(a)", 
-    "course": "MATH152", 
-    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\end{align*}\n\nand transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\end{align*}\n\nWhat are the eigenvalues and eigenvectors of A?", 
-    "year": 2011, 
-    "sols": [
-        "From the hint we recall that an eigenvalue, eigenvector pair satisfies,\n\n\\begin{align*}A\\mathbf{x}=\\lambda\\mathbf{x}.\\end{align*}\n\nWe have in our problem that {[}1,1{]} transforms to {[}2,2{]}, which in\nmatrix form is,\n\n\\begin{align*}A\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n=\n2\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{align*}\n\nTherefore we see that {[}1,1{]} is an eigenvector of A with eigenvalue\n2. For the other case we have that {[}1,-1{]} gets transformed to\n{[}0,0{]}. Therefore,\n\n\\begin{align*}A\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\n=\n0\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\end{align*}\n\nand so we see that {[}1,-1{]} is also an eigenvector with eigenvalue 0.\nRecall that an $n\\times{n}$ matrix has at most n eigenvalues. Therefore\nsince in this case, n=2, we have found all the eigenvalues of the\nsystem. We conclude that A has eigenvalues and eigenvectors,\n\n\\begin{align*}\n\\lambda_1&=2,\\quad{}\\mathbf{x}_1=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\\\\n\\lambda_2&=0,\\quad{}\\mathbf{x}_2=\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lambda_2=\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $\\lambda_2=\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Recall that an eigenvector is a vector such that, left-multiplying it by\nA produces a multiple of itself, i.e.,\n\n\\begin{align*}A\\mathbf{x}=\\lambda\\mathbf{x}.\\end{align*}\n\nDo you see this property in the provided vectors?"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that an eigenvector is a vector such that, left-multiplying it by A produces a multiple of itself, i.e.,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\mathbf{x}=\\lambda\\mathbf{x}.\\end{aligned}\\]</span></p>\n<p>Do you see this property in the provided vectors?</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that an eigenvector is a vector such that, left-multiplying it by\nA produces a multiple of itself, i.e.,\n\n\\begin{align*}\nA\\mathbf{x}=\\lambda\\mathbf{x}.\n\\end{align*}\n\nDo you see this property in the provided vectors?"
+    ], 
+    "hints_raw": [
+        "Recall that an eigenvector is a vector such that, left-multiplying it by A produces a multiple of itself, i.e.,\n\n:&lt;math>\nA\\mathbf{x}=\\lambda\\mathbf{x}.\n&lt;/math>\n\nDo you see this property in the provided vectors?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "B 03 (a)", 
+    "rating": 86, 
+    "sols_html": [
+        "<p>From the hint we recall that an eigenvalue, eigenvector pair satisfies,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\mathbf{x}=\\lambda\\mathbf{x}.\\end{aligned}\\]</span></p>\n<p>We have in our problem that <span>[</span>1,1<span>]</span> transforms to <span>[</span>2,2<span>]</span>, which in matrix form is,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n=\n2\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Therefore we see that <span>[</span>1,1<span>]</span> is an eigenvector of A with eigenvalue 2. For the other case we have that <span>[</span>1,-1<span>]</span> gets transformed to <span>[</span>0,0<span>]</span>. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\n=\n0\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and so we see that <span>[</span>1,-1<span>]</span> is also an eigenvector with eigenvalue 0. Recall that an <span class=\"math\">\\(n\\times{n}\\)</span> matrix has at most n eigenvalues. Therefore since in this case, n=2, we have found all the eigenvalues of the system. We conclude that A has eigenvalues and eigenvectors,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lambda_1&amp;=2,\\quad{}\\mathbf{x}_1=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\\\\n\\lambda_2&amp;=0,\\quad{}\\mathbf{x}_2=\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From the hint we recall that an eigenvalue, eigenvector pair satisfies,\n\n\\begin{align*}\nA\\mathbf{x}=\\lambda\\mathbf{x}.\n\\end{align*}\n\nWe have in our problem that {[}1,1{]} transforms to {[}2,2{]}, which in\nmatrix form is,\n\n\\begin{align*}\nA\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n=\n2\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n\\end{align*}\n\nTherefore we see that {[}1,1{]} is an eigenvector of A with eigenvalue\n2. For the other case we have that {[}1,-1{]} gets transformed to\n{[}0,0{]}. Therefore,\n\n\\begin{align*}\nA\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\n=\n0\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n\\end{align*}\n\nand so we see that {[}1,-1{]} is also an eigenvector with eigenvalue 0.\nRecall that an $n\\times{n}$ matrix has at most n eigenvalues. Therefore\nsince in this case, n=2, we have found all the eigenvalues of the\nsystem. We conclude that A has eigenvalues and eigenvectors,\n\n\\begin{align*}\n\\lambda_1&=2,\\quad{}\\mathbf{x}_1=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\\\\n\\lambda_2&=0,\\quad{}\\mathbf{x}_2=\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From the hint we recall that an eigenvalue, eigenvector pair satisfies,\n\n:&lt;math>\nA\\mathbf{x}=\\lambda\\mathbf{x}.\n&lt;/math>\n\nWe have in our problem that [1,1] transforms to [2,2], which in matrix form is,\n\n:&lt;math>\nA\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n=\n2\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}.\n&lt;/math>\n\nTherefore we see that [1,1] is an eigenvector of A with eigenvalue 2.  For the other case we have that [1,-1] gets transformed to [0,0].  Therefore,\n\n:&lt;math>\nA\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}\n=\n0\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n&lt;/math>\n\nand so we see that [1,-1] is also an eigenvector with eigenvalue 0.  Recall that an &lt;math>n\\times{n}&lt;/math> matrix has at most n eigenvalues.  Therefore since in this case, n=2, we have found all the eigenvalues of the system.  We conclude that A has eigenvalues and eigenvectors,\n\n:&lt;math>\n\\begin{align}\n\\lambda_1&amp;=2,\\quad{}\\mathbf{x}_1=\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix}\\\\\n\\lambda_2&amp;=0,\\quad{}\\mathbf{x}_2=\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix}\n\\end{align}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let A be a <span class=\"math\">\\(2\\times{2}\\)</span> matrix which transforms</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and transforms</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>What are the eigenvalues and eigenvectors of A?</p>\n", 
+    "statement_latex": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n\\end{align*}\n\nand transforms\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\n\\end{align*}\n\nWhat are the eigenvalues and eigenvectors of A?", 
+    "statement_raw": "Let A be a &lt;math>2\\times{2}&lt;/math> matrix which transforms\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n&lt;/math>\n\nand transforms\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\n&lt;/math>\n\nWhat are the eigenvalues and eigenvectors of A?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_03_(a)", 
+    "year": 2011
 }

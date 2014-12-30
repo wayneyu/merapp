@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_06", 
-    "course": "MATH312", 
-    "statement": "\\textbf{Multiple Choice}\n\n$\\displaystyle 10^{200,000,000,000}$ days from today it will be\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  (a) Sunday\n\\item\n  (b) Monday\n\\item\n  (c) Tuesday\n\\item\n  (d) Wednesday\n\\item\n  (e) None of the above.\n\\end{itemize}\n\n\\emph{Assume that the original exam was written on a Monday.}", 
-    "year": 2005, 
-    "sols": [
-        "The answer is \\textbf{d = Wednesday}\n\nProceeding as in the hints, we need to compute\n\n$\\displaystyle 10^{200000000000} \\equiv 3^{200000000000} \\mod{7}$\n\nWe use Euler's formula which states that\n\n$3^{\\phi(7)} = 3^{6} \\equiv 1 \\mod{7}$\n\nNext, notice that $\\displaystyle 200000000000$ is not divisible by 6\n(the sum of the digits is not divisible by 3 so the number is not\ndivisible by 3). However $\\displaystyle 200000000004$ is divisible by 6\nand thus, $\\displaystyle 200000000004-6 = 199999999998 = 6s$ is\ndivisible by 6 (here we let \\emph{s} be an integer). Hence\n\n\\begin{align*}\n10^{200000000000} &\\equiv 3^{200000000000}  \\mod{7}\\\\\n&\\equiv 3^{2}\\cdot 3^{199999999998}  \\mod{7}\\\\\n&\\equiv 2\\cdot (3^{6})^{s}  \\mod{7}\\\\\n&\\equiv 2  \\mod{7}\\end{align*}\n\nand thus, two days from Monday is a Wednesday."
+    "answer_html": "<p><span class=\"math\">\\(\\equiv 2  \\mod{7}\\)</span> and thus, two days from Monday is a Wednesday.</p>\n", 
+    "answer_latex": " $\\equiv 2  \\mod{7}$ and thus, two days from Monday is a Wednesday.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Note that 7 days from now, we are at the same day we were at today. So it suffices to compute this number modulo 7 then count that many days from today (Monday).</p>\n", 
+        "<p>Euler&#8217;s Formula will help a lot.</p>\n"
+    ], 
+    "hints_latex": [
         "Note that 7 days from now, we are at the same day we were at today. So\nit suffices to compute this number modulo 7 then count that many days\nfrom today (Monday).", 
         "Euler's Formula will help a lot."
-    ]
+    ], 
+    "hints_raw": [
+        "Note that 7 days from now, we are at the same day we were at today. So it suffices to compute this number modulo 7 then count that many days from today (Monday).\n", 
+        "Euler's Formula will help a lot.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>d = Wednesday</strong></p>\n<p>Proceeding as in the hints, we need to compute</p>\n<p><span class=\"math\">\\(\\displaystyle 10^{200000000000} \\equiv 3^{200000000000} \\mod{7}\\)</span></p>\n<p>We use Euler&#8217;s formula which states that</p>\n<p><span class=\"math\">\\(3^{\\phi(7)} = 3^{6} \\equiv 1 \\mod{7}\\)</span></p>\n<p>Next, notice that <span class=\"math\">\\(\\displaystyle 200000000000\\)</span> is not divisible by 6 (the sum of the digits is not divisible by 3 so the number is not divisible by 3). However <span class=\"math\">\\(\\displaystyle 200000000004\\)</span> is divisible by 6 and thus, <span class=\"math\">\\(\\displaystyle 200000000004-6 = 199999999998 = 6s\\)</span> is divisible by 6 (here we let <em>s</em> be an integer). Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n10^{200000000000} &amp;\\equiv 3^{200000000000}  \\mod{7}\\\\\n&amp;\\equiv 3^{2}\\cdot 3^{199999999998}  \\mod{7}\\\\\n&amp;\\equiv 2\\cdot (3^{6})^{s}  \\mod{7}\\\\\n&amp;\\equiv 2  \\mod{7}\\end{aligned}\\]</span></p>\n<p>and thus, two days from Monday is a Wednesday.</p>\n"
+    ], 
+    "sols_latex": [
+        "The answer is \\textbf{d = Wednesday}\n\nProceeding as in the hints, we need to compute\n\n$\\displaystyle 10^{200000000000} \\equiv 3^{200000000000} \\mod{7}$\n\nWe use Euler's formula which states that\n\n$3^{\\phi(7)} = 3^{6} \\equiv 1 \\mod{7}$\n\nNext, notice that $\\displaystyle 200000000000$ is not divisible by 6\n(the sum of the digits is not divisible by 3 so the number is not\ndivisible by 3). However $\\displaystyle 200000000004$ is divisible by 6\nand thus, $\\displaystyle 200000000004-6 = 199999999998 = 6s$ is\ndivisible by 6 (here we let \\emph{s} be an integer). Hence\n\n\\begin{align*}\n10^{200000000000} &\\equiv 3^{200000000000}  \\mod{7}\\\\\n&\\equiv 3^{2}\\cdot 3^{199999999998}  \\mod{7}\\\\\n&\\equiv 2\\cdot (3^{6})^{s}  \\mod{7}\\\\\n&\\equiv 2  \\mod{7}\n\\end{align*}\n\nand thus, two days from Monday is a Wednesday."
+    ], 
+    "sols_raw": [
+        "The answer is '''d = Wednesday'''\n\nProceeding as in the hints, we need to compute\n\n&lt;math> \\displaystyle 10^{200000000000} \\equiv 3^{200000000000} \\mod{7}&lt;/math>\n\nWe use Euler's formula which states that \n\n&lt;math> 3^{\\phi(7)} = 3^{6} \\equiv 1 \\mod{7}&lt;/math>\n\nNext, notice that &lt;math> \\displaystyle 200000000000&lt;/math> is not divisible by 6 (the sum of the digits is not divisible by 3 so the number is not divisible by 3). However &lt;math> \\displaystyle 200000000004&lt;/math> is divisible by 6 and thus, &lt;math> \\displaystyle 200000000004-6 = 199999999998 = 6s&lt;/math> is divisible by 6 (here we let ''s'' be an integer). Hence\n\n&lt;math> \\displaystyle \n\\begin{align}\n10^{200000000000} &amp;\\equiv 3^{200000000000}  \\mod{7}\\\\\n&amp;\\equiv 3^{2}\\cdot 3^{199999999998}  \\mod{7}\\\\\n&amp;\\equiv 2\\cdot (3^{6})^{s}  \\mod{7}\\\\\n&amp;\\equiv 2  \\mod{7}\n\\end{align}\n&lt;/math>\n\nand thus, two days from Monday is a Wednesday.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Multiple Choice</strong></p>\n<p><span class=\"math\">\\(\\displaystyle 10^{200,000,000,000}\\)</span> days from today it will be</p>\n<ul>\n<li><p>(a) Sunday</p></li>\n<li><p>(b) Monday</p></li>\n<li><p>(c) Tuesday</p></li>\n<li><p>(d) Wednesday</p></li>\n<li><p>(e) None of the above.</p></li>\n</ul>\n<p><em>Assume that the original exam was written on a Monday.</em></p>\n", 
+    "statement_latex": "\\textbf{Multiple Choice}\n\n$\\displaystyle 10^{200,000,000,000}$ days from today it will be\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  (a) Sunday\n\\item\n  (b) Monday\n\\item\n  (c) Tuesday\n\\item\n  (d) Wednesday\n\\item\n  (e) None of the above.\n\\end{itemize}\n\n\\emph{Assume that the original exam was written on a Monday.}", 
+    "statement_raw": "'''Multiple Choice'''\n\n&lt;math> \\displaystyle 10^{200,000,000,000}&lt;/math> days from today it will be\n\n* (a) Sunday\n* (b) Monday\n* (c) Tuesday\n* (d) Wednesday\n* (e) None of the above.\n\n''Assume that the original exam was written on a Monday.''\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility", 
+        "Euler%27s_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2005/Question_06", 
+    "year": 2005
 }

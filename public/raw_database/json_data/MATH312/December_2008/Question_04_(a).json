@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle b^{n} \\equiv b \\mod{n}\\)</span>.</p>\n", 
+    "answer_latex": "$\\displaystyle b^{n} \\equiv b \\mod{n}$.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Let \\emph{b} be a positive integer. Explain what a pseudoprime to the\nbase \\emph{b} is.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Check your notes for the definition.</p>\n"
+    ], 
+    "hints_latex": [
+        "Check your notes for the definition."
+    ], 
+    "hints_raw": [
+        "Check your notes for the definition.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We say that <em>n</em> is a pseudoprime to the base <em>b</em> if <em>n</em> is a composite integer and</p>\n<p><span class=\"math\">\\(\\displaystyle b^{n} \\equiv b \\mod{n}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "We say that \\emph{n} is a pseudoprime to the base \\emph{b} if \\emph{n}\nis a composite integer and\n\n$\\displaystyle b^{n} \\equiv b \\mod{n}$."
     ], 
-    "hints": [
-        "Check your notes for the definition."
-    ]
+    "sols_raw": [
+        "We say that ''n'' is a pseudoprime to the base ''b'' if ''n'' is a composite integer and \n\n&lt;math> \\displaystyle b^{n} \\equiv b \\mod{n}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <em>b</em> be a positive integer. Explain what a pseudoprime to the base <em>b</em> is.</p>\n", 
+    "statement_latex": "Let \\emph{b} be a positive integer. Explain what a pseudoprime to the\nbase \\emph{b} is.", 
+    "statement_raw": "Let ''b'' be a positive integer. Explain what a pseudoprime to the base ''b'' is.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_04_(a)", 
+    "year": 2008
 }

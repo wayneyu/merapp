@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(e)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle a \\equiv a^{s\\phi(b) + (b-1)t} = (a^{\\phi(b)})^{s}(a^{b-1})^{t} \\equiv 1 \\mod{b}\\)</span>which would be a contradiction.This is what we did above.</p>\n", 
+    "answer_latex": "$\\displaystyle a \\equiv a^{s\\phi(b) + (b-1)t} = (a^{\\phi(b)})^{s}(a^{b-1})^{t} \\equiv 1 \\mod{b}$which would be a contradiction.This is what we did above.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf $\\displaystyle \\gcd(a,b) = 1$, then\n$\\displaystyle a^{b-1} \\equiv 1 \\mod{b}$.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This should remind you of a mixture of Fermat&#8217;s Little Theorem and Euler&#8217;s Theorem. Can you use these to guide your solution?</p>\n"
+    ], 
+    "hints_latex": [
+        "This should remind you of a mixture of Fermat's Little Theorem and\nEuler's Theorem. Can you use these to guide your solution?"
+    ], 
+    "hints_raw": [
+        "This should remind you of a mixture of Fermat's Little Theorem and Euler's Theorem. Can you use these to guide your solution?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The statement is <strong>false</strong></p>\n<p>We seek a counter example and we take the smallest composite number for <em>b</em>, namely <span class=\"math\">\\(\\displaystyle b=4\\)</span>. We then take <span class=\"math\">\\(\\displaystyle a=3\\)</span>. Then</p>\n<p><span class=\"math\">\\(\\displaystyle 3^{4-1} \\equiv 3^{3} \\equiv 27 \\equiv 3 \\not\\equiv 1\\mod{4}\\)</span>.</p>\n<p>For a more enlightening proof, recall that by Euler&#8217;s Theorem</p>\n<p><span class=\"math\">\\(\\displaystyle a^{\\phi(b)} \\equiv 1 \\mod{b}\\)</span></p>\n<p>Thus if we find a value of <em>b</em> where <span class=\"math\">\\(\\displaystyle \\gcd(\\phi(b),b-1) = 1\\)</span> we would be able to construct a counter example since in this case there are integers <em>s</em> and <em>t</em> such that</p>\n<p><span class=\"math\">\\(\\displaystyle s\\phi(b) + (b-1)t = 1\\)</span></p>\n<p>and so choosing an <em>a</em> coprime to <em>b</em> between 2 and b-1 would give us that</p>\n<p><span class=\"math\">\\(\\displaystyle a \\equiv a^{s\\phi(b) + (b-1)t} = (a^{\\phi(b)})^{s}(a^{b-1})^{t} \\equiv 1 \\mod{b}\\)</span></p>\n<p>which would be a contradiction. This is what we did above.</p>\n"
+    ], 
+    "sols_latex": [
         "The statement is \\textbf{false}\n\nWe seek a counter example and we take the smallest composite number for\n\\emph{b}, namely $\\displaystyle b=4$. We then take $\\displaystyle a=3$.\nThen\n\n$\\displaystyle 3^{4-1} \\equiv 3^{3} \\equiv 27 \\equiv 3 \\not\\equiv 1\\mod{4}$.\n\nFor a more enlightening proof, recall that by Euler's Theorem\n\n$\\displaystyle a^{\\phi(b)} \\equiv 1 \\mod{b}$\n\nThus if we find a value of \\emph{b} where\n$\\displaystyle \\gcd(\\phi(b),b-1) = 1$ we would be able to construct a\ncounter example since in this case there are integers \\emph{s} and\n\\emph{t} such that\n\n$\\displaystyle s\\phi(b) + (b-1)t = 1$\n\nand so choosing an \\emph{a} coprime to \\emph{b} between 2 and b-1 would\ngive us that\n\n$\\displaystyle a \\equiv a^{s\\phi(b) + (b-1)t} = (a^{\\phi(b)})^{s}(a^{b-1})^{t} \\equiv 1 \\mod{b}$\n\nwhich would be a contradiction. This is what we did above."
     ], 
-    "hints": [
-        "This should remind you of a mixture of Fermat's Little Theorem and\nEuler's Theorem. Can you use these to guide your solution?"
-    ]
+    "sols_raw": [
+        "The statement is '''false'''\n\nWe seek a counter example and we take the smallest composite number  for ''b'', namely &lt;math> \\displaystyle b=4&lt;/math>. We then take &lt;math> \\displaystyle a=3&lt;/math>. Then \n\n&lt;math> \\displaystyle 3^{4-1} \\equiv 3^{3} \\equiv 27 \\equiv 3 \\not\\equiv 1\\mod{4}&lt;/math>.\n\nFor a more enlightening proof, recall that by Euler's Theorem\n\n&lt;math> \\displaystyle a^{\\phi(b)} \\equiv 1 \\mod{b}&lt;/math>\n\nThus if we find a value of ''b'' where &lt;math> \\displaystyle \\gcd(\\phi(b),b-1) = 1&lt;/math> we would be able to construct a counter example since in this case there are integers ''s'' and ''t'' such that \n\n&lt;math> \\displaystyle s\\phi(b) + (b-1)t = 1&lt;/math>\n\nand so choosing an ''a'' coprime to ''b'' between 2 and b-1 would give us that \n\n&lt;math> \\displaystyle a \\equiv a^{s\\phi(b) + (b-1)t} = (a^{\\phi(b)})^{s}(a^{b-1})^{t} \\equiv 1 \\mod{b}&lt;/math>\n\nwhich would be a contradiction. This is what we did above.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>For each of the following statements, indicate if it holds for every positive integers <span class=\"math\">\\(\\displaystyle a, b, c\\)</span> (if so, a simple <em>true</em> without a proof suffices, if not, a <em>false</em> together with a counterexample is expected).</strong></p>\n<p>If <span class=\"math\">\\(\\displaystyle \\gcd(a,b) = 1\\)</span>, then <span class=\"math\">\\(\\displaystyle a^{b-1} \\equiv 1 \\mod{b}\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf $\\displaystyle \\gcd(a,b) = 1$, then\n$\\displaystyle a^{b-1} \\equiv 1 \\mod{b}$.", 
+    "statement_raw": "'''For each of the following statements, indicate if it holds for every positive integers &lt;math>\\displaystyle a, b, c &lt;/math> (if so, a simple ''true'' without a proof suffices, if not, a ''false'' together with a counterexample is  expected).'''\n\nIf &lt;math> \\displaystyle \\gcd(a,b) = 1&lt;/math>, then &lt;math> \\displaystyle a^{b-1} \\equiv 1 \\mod{b}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Euler%27s_theorem", 
+        "Fermat%27s_little_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_01_(e)", 
+    "year": 2008
 }

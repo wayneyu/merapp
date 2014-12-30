@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_08_(b)", 
+    "answer_html": "<p>Because <em>A</em> is a linear transformation from <span class=\"math\">\\(\\mathbb{R}^5\\)</span>, and the dimension of the column space of <em>A</em> is 3, we conclude that the dimension of the kernel is 2.</p>\n", 
+    "answer_latex": "Because \\emph{A} is a linear\ntransformation from $\\mathbb{R}^5$, and the dimension of the column\nspace of \\emph{A} is 3, we conclude that the dimension of the kernel is\n2.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
+    ], 
     "course": "MATH221", 
-    "statement": "Consider the matrix\n\n\\begin{align*}A = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\\end{align*}\n\n\\textbf{b)} Find the dimension of the nullspace of \\emph{A}.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Think of the matrix <em>A</em> as a linear transformation from <span class=\"math\">\\(\\mathbb{R}^5 \\rightarrow \\mathbb{R}^4\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Think of the matrix \\emph{A} as a linear transformation from\n$\\mathbb{R}^5 \\rightarrow \\mathbb{R}^4$."
+    ], 
+    "hints_raw": [
+        "Think of the matrix ''A'' as a linear transformation from &lt;math>\\mathbb{R}^5 \\rightarrow \\mathbb{R}^4&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>By the rank-nullity theorem, we know that dim(<span class=\"math\">\\(\\mathbb{R}^5\\)</span>) = dim(column space) + dim(kernel). Because <em>A</em> is a linear transformation from <span class=\"math\">\\(\\mathbb{R}^5\\)</span>, and the dimension of the column space of <em>A</em> is 3, we conclude that the dimension of the kernel is 2.</p>\n"
+    ], 
+    "sols_latex": [
         "By the rank-nullity theorem, we know that dim($\\mathbb{R}^5$) =\ndim(column space) + dim(kernel). Because \\emph{A} is a linear\ntransformation from $\\mathbb{R}^5$, and the dimension of the column\nspace of \\emph{A} is 3, we conclude that the dimension of the kernel is\n2."
     ], 
-    "hints": [
-        "Think of the matrix \\emph{A} as a linear transformation from\n$\\mathbb{R}^5 \\rightarrow \\mathbb{R}^4$."
-    ]
+    "sols_raw": [
+        "By the rank-nullity theorem, we know that dim(&lt;math>\\mathbb{R}^5&lt;/math>) = dim(column space) + dim(kernel).  Because ''A'' is a linear transformation from &lt;math>\\mathbb{R}^5&lt;/math>, and the dimension of the column space of ''A'' is 3, we conclude that the dimension of the kernel is 2.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Consider the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left(\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right)\\end{aligned}\\]</span></p>\n<p><strong>b)</strong> Find the dimension of the nullspace of <em>A</em>.</p>\n", 
+    "statement_latex": "Consider the matrix\n\n\\begin{align*}\nA = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\n\\end{align*}\n\n\\textbf{b)} Find the dimension of the nullspace of \\emph{A}.", 
+    "statement_raw": "Consider the matrix\n\n:&lt;math>\nA = \\left(\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right)\n&lt;/math>\n\n'''b)''' Find the dimension of the nullspace of ''A''.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/December_2011/Question_08_(b)", 
+    "year": 2011
 }

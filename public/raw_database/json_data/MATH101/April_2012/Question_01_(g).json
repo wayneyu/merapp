@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(g)", 
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx$completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "Simontse"
+    ], 
     "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nLet\n\n\\begin{align*}R_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}.\\end{align*}\n\nExpress $\\lim_{n \\to \\infty} R_{n}$ as a definite integral. \\emph{Do not\nevaluate this integral.}", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try to write the sum in the form</p>\n<p><span class=\"math\">\\(\\sum_{i=1}^{n}f(x_{i})\\Delta x\\)</span></p>\n<p>where</p>\n<p><span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(x_{i} = a + i\\Delta x\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Try to write the sum in the form\n\n$\\sum_{i=1}^{n}f(x_{i})\\Delta x$\n\nwhere\n\n$\\Delta x = \\frac{b-a}{n}$\n\nand\n\n$x_{i} = a + i\\Delta x$"
+    ], 
+    "hints_raw": [
+        "Try to write the sum in the form\n\n&lt;math>\n\\sum_{i=1}^{n}f(x_{i})\\Delta x\n&lt;/math>\n\nwhere\n\n&lt;math>\n\\Delta x = \\frac{b-a}{n}\n&lt;/math>\n\nand\n\n&lt;math>\nx_{i} = a + i\\Delta x\n&lt;/math>\n"
+    ], 
+    "num_votes": 19, 
+    "question": "1 (g)", 
+    "rating": 46, 
+    "sols_html": [
+        "<p>Notice that <span class=\"math\">\\(e^{i/n}\\)</span> occurs in the summand. This suggests that <span class=\"math\">\\(x_{i} = i/n\\)</span> and so we can take <span class=\"math\">\\(a = 0\\)</span>. Writing the sum as</p>\n<p><span class=\"math\">\\(\\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\sum_{i=1}^{n}\\frac{1}{n}\\cdot \\frac{ie^{i/n}}{n}\\)</span></p>\n<p>the last fraction suggests that a possible function is <span class=\"math\">\\(f(x) = xe^{x}\\)</span> which can be seen by noting that we have</p>\n<p><span class=\"math\">\\(f(x_{i}) = \\frac{ie^{i/n}}{n}.\\)</span></p>\n<p>Also, we have</p>\n<p><span class=\"math\">\\(\\Delta x = \\frac{1}{n} = \\frac{b-a}{n}\\)</span></p>\n<p>and since <span class=\"math\">\\(a=0\\)</span> we have that <span class=\"math\">\\(b=1\\)</span>. Combining this gives</p>\n<p><span class=\"math\">\\(\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
         "Notice that $e^{i/n}$ occurs in the summand. This suggests that\n$x_{i} = i/n$ and so we can take $a = 0$. Writing the sum as\n\n$\\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\sum_{i=1}^{n}\\frac{1}{n}\\cdot \\frac{ie^{i/n}}{n}$\n\nthe last fraction suggests that a possible function is $f(x) = xe^{x}$\nwhich can be seen by noting that we have\n\n$f(x_{i}) = \\frac{ie^{i/n}}{n}.$\n\nAlso, we have\n\n$\\Delta x = \\frac{1}{n} = \\frac{b-a}{n}$\n\nand since $a=0$ we have that $b=1$. Combining this gives\n\n$\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx$\n\ncompleting the question."
     ], 
-    "hints": [
-        "Try to write the sum in the form\n\n$\\sum_{i=1}^{n}f(x_{i})\\Delta x$\n\nwhere\n\n$\\Delta x = \\frac{b-a}{n}$\n\nand\n\n$x_{i} = a + i\\Delta x$"
-    ]
+    "sols_raw": [
+        "Notice that &lt;math>e^{i/n}&lt;/math> occurs in the summand. This suggests that &lt;math> x_{i} = i/n &lt;/math> and so we can take &lt;math> a = 0 &lt;/math>. Writing the sum as\n\n&lt;math>\n\\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\sum_{i=1}^{n}\\frac{1}{n}\\cdot \\frac{ie^{i/n}}{n}\n&lt;/math>\n\nthe last fraction suggests that a possible function is &lt;math> f(x) = xe^{x} &lt;/math> which can be seen by noting that we have\n\n&lt;math>\nf(x_{i}) = \\frac{ie^{i/n}}{n}.\n&lt;/math>\n\nAlso, we have\n\n&lt;math>\n\\Delta x = \\frac{1}{n} = \\frac{b-a}{n}\n&lt;/math>\n\nand since &lt;math> a=0 &lt;/math> we have that &lt;math> b=1 &lt;/math>. Combining this gives\n\n&lt;math>\n\\lim_{n\\to\\infty} \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}} = \\int_{0}^{1}xe^{x}\\,dx\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Question.</strong> Show all your work, simplify your answer as much as possible.</p>\n<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}.\\end{aligned}\\]</span></p>\n<p>Express <span class=\"math\">\\(\\lim_{n \\to \\infty} R_{n}\\)</span> as a definite integral. <em>Do not evaluate this integral.</em></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nLet\n\n\\begin{align*}\nR_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}.\n\\end{align*}\n\nExpress $\\lim_{n \\to \\infty} R_{n}$ as a definite integral. \\emph{Do not\nevaluate this integral.}", 
+    "statement_raw": "'''Short-Answer Question.''' Show all your work, simplify your answer as much as possible.\n\nLet \n\n:&lt;math> R_{n} = \\sum_{i=1}^{n}\\frac{ie^{i/n}}{n^{2}}&lt;/math>. \n\nExpress &lt;math> \\lim_{n \\to \\infty} R_{n}&lt;/math> as a definite integral. ''Do not evaluate this integral.''\n", 
+    "term": "April", 
+    "topics": [
+        "Riemann_sum"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_01_(g)", 
+    "year": 2012
 }

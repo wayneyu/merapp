@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_B_06_(a)", 
-    "course": "MATH152", 
-    "statement": "Consider the linear systems described below. In cases (a)-(d), write a\n\\emph{single}, possible reduced row echelon form of the augmented matrix\nof the system.\n\nTwo equations in two unknowns with unique solution\n\n\\begin{align*}\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "For a vector \\textbf{x}, with components $x_1$ and $x_2$, the unique\nsolution is\n\n\\begin{align*}\nx_1&=2,\\\\\nx_2&=3.\\end{align*}\n\nSince there is a unique solution all pivots must be 1. Since we have two\nequations in two unknowns we have 2 rows and 2 columns. Therefore the\naugmented matrix would look like\n\n\\begin{align*}\\left[\\begin{array}{cc|c}\n1  &  0  &  2\\\\\n0  &  1  &  3\n\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left[\\begin{array}{cc|c}\n1    0    2\\\\\n0    1    3\n\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\left[\\begin{array}{cc|c}\n1    0    2\\\\\n0    1    3\n\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that a unique solution implies there are no free variables; all pivots are 1.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that a unique solution implies there are no free variables; all\npivots are 1."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that a unique solution implies there are no free variables; all pivots are 1.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 06 (a)", 
+    "rating": 97, 
+    "sols_html": [
+        "<p>For a vector <strong>x</strong>, with components <span class=\"math\">\\(x_1\\)</span> and <span class=\"math\">\\(x_2\\)</span>, the unique solution is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_1&amp;=2,\\\\\nx_2&amp;=3.\\end{aligned}\\]</span></p>\n<p>Since there is a unique solution all pivots must be 1. Since we have two equations in two unknowns we have 2 rows and 2 columns. Therefore the augmented matrix would look like</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{cc|c}\n1  &amp;  0  &amp;  2\\\\\n0  &amp;  1  &amp;  3\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "For a vector \\textbf{x}, with components $x_1$ and $x_2$, the unique\nsolution is\n\n\\begin{align*}\nx_1&=2,\\\\\nx_2&=3.\n\\end{align*}\n\nSince there is a unique solution all pivots must be 1. Since we have two\nequations in two unknowns we have 2 rows and 2 columns. Therefore the\naugmented matrix would look like\n\n\\begin{align*}\n\\left[\\begin{array}{cc|c}\n1  &  0  &  2\\\\\n0  &  1  &  3\n\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "For a vector '''x''', with components &lt;math>x_1&lt;/math> and &lt;math>x_2&lt;/math>, the unique solution is\n\n:&lt;math>\n\\begin{align}\nx_1&amp;=2,\\\\\nx_2&amp;=3.\n\\end{align}\n&lt;/math>\n\nSince there is a unique solution all pivots must be 1.  Since we have two equations in two unknowns we have 2 rows and 2 columns.  Therefore the augmented matrix would look like\n\n:&lt;math>\n\\left[\\begin{array}{cc|c}\n1  &amp;  0  &amp;  2\\\\\n0  &amp;  1  &amp;  3\n\\end{array}\\right]\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Consider the linear systems described below. In cases (a)-(d), write a <em>single</em>, possible reduced row echelon form of the augmented matrix of the system.</p>\n<p>Two equations in two unknowns with unique solution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Consider the linear systems described below. In cases (a)-(d), write a\n\\emph{single}, possible reduced row echelon form of the augmented matrix\nof the system.\n\nTwo equations in two unknowns with unique solution\n\n\\begin{align*}\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align*}", 
+    "statement_raw": "Consider the linear systems described below.  In cases (a)-(d), write a ''single'', possible reduced row echelon form of the augmented matrix of the system.\n\nTwo equations in two unknowns with unique solution\n\n:&lt;math>\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\n&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "System_of_linear_equations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_06_(a)", 
+    "year": 2011
 }

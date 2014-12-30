@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Short answer question. Show in detail how you arrive at your\nanswer (work will be considered for this problem).}\n\nUse the formula arc length to find an integral of the form\n\n\\begin{align*}\\int_\\alpha^\\beta h(x)\\,dx,\\end{align*}\n\nwith suitable $\\alpha$, $\\beta$, and \\emph{h}(\\emph{x}), that represents\nthe circumference of the ellipse\n\n\\begin{align*}\\frac{y^2}{a^2} + \\frac{x^2}{b^2} = 1,\\end{align*}\n\nwhere \\emph{a} and \\emph{b} are positive constants. \\textbf{Do not\nevaluate this integral!}", 
-    "year": 2012, 
-    "sols": [
-        "We solve for \\emph{y} to obtain\n\n\\begin{align*}y = \\pm a\\sqrt{1-\\frac{x^2}{b^2}}.\\end{align*}\n\nIt suffices to take the values \\emph{y} $\\geq$ 0 and then multiply the\nresulting arc-length by 2. Then the intersection points with \\emph{y} =\n0 are \\emph{x} = -\\emph{b} and \\emph{x} = \\emph{b}. Taking the\nderivative of $y = a\\sqrt{1-\\frac{x^2}{b^2}}$ yields\n\n\\begin{align*}y'(x) = \\frac12 a\\left(1-\\frac{x^2}{b^2}\\right)^{-1/2}\\left(-\\frac{2x}{b^2}\\right) = -\\frac{ax}{b^2\\sqrt{1-\\frac{x^2}{b^2}}}\\end{align*}\n\nPlugging into the formula for the arc length we obtain our final answer\n(don't forget the 2)\n\n\\begin{align*}L = 2\\int_{-b}^b \\sqrt{1+(y'(x))^2}\\,dx = \\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(L=\\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx.\\)</span></p>\n", 
+    "answer_latex": " $L=\\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx.$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
-        "The arc length formula states that if \\emph{y(x)} is a curve, then its\nlength between \\emph{x} = \\emph{a} and \\emph{x} = \\emph{b} is given by\nthe integral\n\n\\begin{align*}\\int_a^b \\sqrt{1+(y'(x))^2} \\,dx\\end{align*}"
-    ]
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The arc length formula states that if <em>y(x)</em> is a curve, then its length between <em>x</em> = <em>a</em> and <em>x</em> = <em>b</em> is given by the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_a^b \\sqrt{1+(y&#39;(x))^2} \\,dx\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The arc length formula states that if \\emph{y(x)} is a curve, then its\nlength between \\emph{x} = \\emph{a} and \\emph{x} = \\emph{b} is given by\nthe integral\n\n\\begin{align*}\n\\int_a^b \\sqrt{1+(y'(x))^2} \\,dx\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The arc length formula states that if ''y(x)'' is a curve, then its length between ''x'' = ''a'' and ''x'' = ''b'' is given by the integral\n:&lt;math>\n\\int_a^b \\sqrt{1+(y'(x))^2} \\,dx\n&lt;/math>\n"
+    ], 
+    "num_votes": 10, 
+    "question": "2 (b)", 
+    "rating": 14, 
+    "sols_html": [
+        "<p>We solve for <em>y</em> to obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny = \\pm a\\sqrt{1-\\frac{x^2}{b^2}}.\\end{aligned}\\]</span></p>\n<p>It suffices to take the values <em>y</em> <span class=\"math\">\\(\\geq\\)</span> 0 and then multiply the resulting arc-length by 2. Then the intersection points with <em>y</em> = 0 are <em>x</em> = -<em>b</em> and <em>x</em> = <em>b</em>. Taking the derivative of <span class=\"math\">\\(y = a\\sqrt{1-\\frac{x^2}{b^2}}\\)</span> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39;(x) = \\frac12 a\\left(1-\\frac{x^2}{b^2}\\right)^{-1/2}\\left(-\\frac{2x}{b^2}\\right) = -\\frac{ax}{b^2\\sqrt{1-\\frac{x^2}{b^2}}}\\end{aligned}\\]</span></p>\n<p>Plugging into the formula for the arc length we obtain our final answer (don&#8217;t forget the 2)</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nL = 2\\int_{-b}^b \\sqrt{1+(y&#39;(x))^2}\\,dx = \\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We solve for \\emph{y} to obtain\n\n\\begin{align*}\ny = \\pm a\\sqrt{1-\\frac{x^2}{b^2}}.\n\\end{align*}\n\nIt suffices to take the values \\emph{y} $\\geq$ 0 and then multiply the\nresulting arc-length by 2. Then the intersection points with \\emph{y} =\n0 are \\emph{x} = -\\emph{b} and \\emph{x} = \\emph{b}. Taking the\nderivative of $y = a\\sqrt{1-\\frac{x^2}{b^2}}$ yields\n\n\\begin{align*}\ny'(x) = \\frac12 a\\left(1-\\frac{x^2}{b^2}\\right)^{-1/2}\\left(-\\frac{2x}{b^2}\\right) = -\\frac{ax}{b^2\\sqrt{1-\\frac{x^2}{b^2}}}\n\\end{align*}\n\nPlugging into the formula for the arc length we obtain our final answer\n(don't forget the 2)\n\n\\begin{align*}\nL = 2\\int_{-b}^b \\sqrt{1+(y'(x))^2}\\,dx = \\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We solve for ''y'' to obtain\n\n:&lt;math> y = \\pm a\\sqrt{1-\\frac{x^2}{b^2}}. &lt;/math>\n\nIt suffices to take the values ''y'' &amp;ge; 0 and then multiply the resulting arc-length by 2. Then the intersection points with ''y'' = 0 are ''x'' = -''b'' and ''x'' = ''b''. Taking the derivative of &lt;math> y = a\\sqrt{1-\\frac{x^2}{b^2}} &lt;/math> yields\n\n:&lt;math> y'(x) = \\frac12 a\\left(1-\\frac{x^2}{b^2}\\right)^{-1/2}\\left(-\\frac{2x}{b^2}\\right) = -\\frac{ax}{b^2\\sqrt{1-\\frac{x^2}{b^2}}} &lt;/math>\n\nPlugging into the formula for the arc length we obtain our final answer (don't forget the 2)\n\n:&lt;math> L = 2\\int_{-b}^b \\sqrt{1+(y'(x))^2}\\,dx = \\int_{-b}^b 2\\sqrt{1+\\frac{a^2x^2}{b^4(1-\\frac{x^2}{b^2})}}\\,dx. &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Short answer question. Show in detail how you arrive at your answer (work will be considered for this problem).</strong></p>\n<p>Use the formula arc length to find an integral of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_\\alpha^\\beta h(x)\\,dx,\\end{aligned}\\]</span></p>\n<p>with suitable <span class=\"math\">\\(\\alpha\\)</span>, <span class=\"math\">\\(\\beta\\)</span>, and <em>h</em>(<em>x</em>), that represents the circumference of the ellipse</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{y^2}{a^2} + \\frac{x^2}{b^2} = 1,\\end{aligned}\\]</span></p>\n<p>where <em>a</em> and <em>b</em> are positive constants. <strong>Do not evaluate this integral!</strong></p>\n", 
+    "statement_latex": "\\textbf{Short answer question. Show in detail how you arrive at your\nanswer (work will be considered for this problem).}\n\nUse the formula arc length to find an integral of the form\n\n\\begin{align*}\n\\int_\\alpha^\\beta h(x)\\,dx,\n\\end{align*}\n\nwith suitable $\\alpha$, $\\beta$, and \\emph{h}(\\emph{x}), that represents\nthe circumference of the ellipse\n\n\\begin{align*}\n\\frac{y^2}{a^2} + \\frac{x^2}{b^2} = 1,\n\\end{align*}\n\nwhere \\emph{a} and \\emph{b} are positive constants. \\textbf{Do not\nevaluate this integral!}", 
+    "statement_raw": "'''Short answer question. Show in detail how you arrive at your answer (work will be considered for this problem).'''\n\nUse the formula arc length to find an integral of the form\n\n:&lt;math> \\int_\\alpha^\\beta h(x)\\,dx, &lt;/math>\n\nwith suitable &lt;math> \\alpha&lt;/math>, &lt;math>\\beta&lt;/math>, and ''h''(''x''), that represents the circumference of the ellipse\n\n:&lt;math> \\frac{y^2}{a^2} + \\frac{x^2}{b^2} = 1, &lt;/math>\n\nwhere ''a'' and ''b'' are positive constants. '''Do not evaluate this integral!'''\n", 
+    "term": "April", 
+    "topics": [
+        "Arc_length"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_02_(b)", 
+    "year": 2012
 }

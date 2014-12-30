@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Torricelli's Trumpet}\n\nFind the volume of the solid obtained from revolving\n$\\displaystyle y = 1/x$ about the \\emph{x}-axis where \\emph{x} has\ndomain $\\displaystyle [1,\\infty)$.", 
-    "year": 2013, 
-    "sols": [
-        "Using the formula in the hint, we have\n\n\\begin{align*}\nV &= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&= \\pi\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(V=\\pi\\)</span></p>\n", 
+    "answer_latex": " $V=\\pi$ ", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>This is a volume of revolution question. We can easily compute this since we are rotating about the <em>x</em>-axis.</p>\n", 
+        "<p>The formula is given by</p>\n<p><span class=\"math\">\\(\\displaystyle V = \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "This is a volume of revolution question. We can easily compute this\nsince we are rotating about the \\emph{x}-axis.", 
         "The formula is given by\n\n$\\displaystyle V = \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx$"
-    ]
+    ], 
+    "hints_raw": [
+        "This is a volume of revolution question. We can easily compute this since we are rotating about the ''x''-axis.\n", 
+        "The formula is given by\n\n&lt;math> \\displaystyle V = \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx&lt;/math>\n"
+    ], 
+    "num_votes": 17, 
+    "question": "4 (a)", 
+    "rating": 72, 
+    "sols_html": [
+        "<p>Using the formula in the hint, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&amp;= \\pi\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using the formula in the hint, we have\n\n\\begin{align*}\nV &= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&= \\pi\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using the formula in the hint, we have\n\n&lt;math> \n\\begin{align}\nV &amp;= \\pi \\int_{1}^{\\infty}\\frac{1}{x^2}\\,dx \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi \\int_{1}^{b}\\frac{1}{x^2}\\,dx \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi (-x^{-1}) \\big|_{1}^{b} \\\\\n&amp;= \\lim_{b \\to \\infty} \\pi (-b^{-1} -(-(1)^{-1}))\\\\\n&amp;= \\pi\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Torricelli&#8217;s Trumpet</strong></p>\n<p>Find the volume of the solid obtained from revolving <span class=\"math\">\\(\\displaystyle y = 1/x\\)</span> about the <em>x</em>-axis where <em>x</em> has domain <span class=\"math\">\\(\\displaystyle [1,\\infty)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Torricelli's Trumpet}\n\nFind the volume of the solid obtained from revolving\n$\\displaystyle y = 1/x$ about the \\emph{x}-axis where \\emph{x} has\ndomain $\\displaystyle [1,\\infty)$.", 
+    "statement_raw": "'''Torricelli's Trumpet''' \n\nFind the volume of the solid obtained from revolving &lt;math> \\displaystyle y = 1/x&lt;/math> about the ''x''-axis where ''x'' has domain &lt;math> \\displaystyle [1,\\infty)&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_04_(a)", 
+    "year": 2013
 }

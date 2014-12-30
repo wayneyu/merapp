@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_10_(a)", 
-    "course": "MATH110", 
-    "statement": "Explain what it means for a function to be differentiable at the points\n$x=2$ in terms of limits.", 
-    "year": 2013, 
-    "sols": [
-        "A function $f(x)$ is differentiable at the point $x=2$ if the following\nlimit exists\n\n\\begin{align*}\\lim_{x \\to 2}\\frac{f(x)-f(2)}{x-2}\\end{align*}\n\nEquivalently, $f(x)$ is differentiable at the point $x=2$ if the\nfollowing limit exists\n\n\\begin{align*}\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}\\)</span></p>\n", 
+    "answer_latex": " $\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Recall the definition of a derivative at a point $x=a$ is\n\n\\begin{align*}f'(a)=\\lim_{x\\to{}a}\\frac{f(x)-f(a)}{x-a}\\end{align*}\n\nif the limit exists. What must be true for the limit to exist in terms\nof sided limits?"
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall the definition of a derivative at a point <span class=\"math\">\\(x=a\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(a)=\\lim_{x\\to{}a}\\frac{f(x)-f(a)}{x-a}\\end{aligned}\\]</span></p>\n<p>if the limit exists. What must be true for the limit to exist in terms of sided limits?</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall the definition of a derivative at a point $x=a$ is\n\n\\begin{align*}\nf'(a)=\\lim_{x\\to{}a}\\frac{f(x)-f(a)}{x-a}\n\\end{align*}\n\nif the limit exists. What must be true for the limit to exist in terms\nof sided limits?"
+    ], 
+    "hints_raw": [
+        "Recall the definition of a derivative at a point &lt;math>x=a&lt;/math> is\n\n:&lt;math>\nf'(a)=\\lim_{x\\to{}a}\\frac{f(x)-f(a)}{x-a}\n&lt;/math>\n\nif the limit exists.  What must be true for the limit to exist in terms of sided limits?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "10 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A function <span class=\"math\">\\(f(x)\\)</span> is differentiable at the point <span class=\"math\">\\(x=2\\)</span> if the following limit exists</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\to 2}\\frac{f(x)-f(2)}{x-2}\\end{aligned}\\]</span></p>\n<p>Equivalently, <span class=\"math\">\\(f(x)\\)</span> is differentiable at the point <span class=\"math\">\\(x=2\\)</span> if the following limit exists</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "A function $f(x)$ is differentiable at the point $x=2$ if the following\nlimit exists\n\n\\begin{align*}\n\\lim_{x \\to 2}\\frac{f(x)-f(2)}{x-2}\n\\end{align*}\n\nEquivalently, $f(x)$ is differentiable at the point $x=2$ if the\nfollowing limit exists\n\n\\begin{align*}\n\\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "A function &lt;math>f(x)&lt;/math> is differentiable at the point &lt;math>x=2&lt;/math> if the following limit exists\n\n:&lt;math>\\lim_{x \\to 2}\\frac{f(x)-f(2)}{x-2}&lt;/math>\n\nEquivalently, &lt;math>f(x)&lt;/math> is differentiable at the point &lt;math> x=2 &lt;/math> if the following limit exists\n\n:&lt;math> \\lim_{h \\to 0}\\frac{f(2+h)-f(2)}{h} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Explain what it means for a function to be differentiable at the points <span class=\"math\">\\(x=2\\)</span> in terms of limits.</p>\n", 
+    "statement_latex": "Explain what it means for a function to be differentiable at the points\n$x=2$ in terms of limits.", 
+    "statement_raw": "Explain what it means for a function to be differentiable at the points &lt;math>x=2&lt;/math> in terms of limits.\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_definition_of_the_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_10_(a)", 
+    "year": 2013
 }

@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_09_(b)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nFind all vertical and horizontal asymptotes of $\\displaystyle f$, if\nthey exist.", 
-    "year": 2010, 
-    "sols": [
-        "To find the horizontal asymptotes, we evaluate the following limit:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x+1}{x - 1}$\n\nTo evaluate this limit, we need only consider the leading terms - the\n\\emph{x} in both the numerator and denominator. If we think of factoring\nout the \\emph{x} from top and bottom and then canceling, we get:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x(1 + \\frac1x)}{x(1-\\frac1x)} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x}$\n\nThe two $\\frac1x$ terms go to zero as x goes to plus or minus infinity,\nso the limit is as follows:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x} = \\frac11 = 1$\n\nSo $f(x)$ has a horizontal asymptote, given by the equation $y = 1$.\n\nNow to find the vertical asymptotes, we need to find all values $x = a$\nsuch that $\\lim_{x \\to a} f(x)$ diverges to $\\pm \\infty$. The only\ncandidate for a vertical asymptote for this function is the point where\nthe function is undefined, $x = 1$, found in part (a).\n\nIndeed, the limit\n\n$\\lim_{x \\to 1} \\frac{x+1}{x-1}$\n\ngoes to infinity. How does this happen? First consider that when the\ndenominator of a fraction is small, the entire fraction is large (see\nbelow for an example). In our limit, as the \\emph{x}-values get closer\nand closer to 1, the number in the denominator is getting smaller and\nsmaller, closer and closer to zero. Using the previous fact about\nfractions, as the denominator becomes smaller, the entire fraction\ngrows, meaning that the entire function is going to positive or negative\ninfinity. So $f(x)$ has a vertical asymptote at $x = 1$.\n\n\\emph{Example:} The denominator of the fraction\n\n$\\frac{1}{.01}$\n\nis small, but when it is simplified as follows:\n\n$\\frac{1}{.01} = \\frac{1}{\\frac{1}{100}} = 100$\n\nwe can see that entire function is large - in fact it's a large integer,\nnot even a fraction anymore."
+    "answer_html": "<p><span class=\"math\">\\(\\frac{1}{.01} = 100\\)</span>we can see that entire function is large - in fact it&#8217;s a large integer, not even a fraction anymore.</p>\n", 
+    "answer_latex": "$\\frac{1}{.01} = 100$we can see that entire function is large - in fact it's a large integer,\nnot even a fraction anymore.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Horizontal asymptotes are found by taking the limit of the function to infinity.</p>\n", 
+        "<p>Vertical asymptotes consist of all points <span class=\"math\">\\(x = a\\)</span> such that <span class=\"math\">\\(\\lim_{x \\to a} f(x)\\)</span> diverges to <span class=\"math\">\\(\\pm \\infty\\)</span>. To find values where vertical asymptotes might exist, consider those points where the function is undefined.</p>\n"
+    ], 
+    "hints_latex": [
         "Horizontal asymptotes are found by taking the limit of the function to\ninfinity.", 
         "Vertical asymptotes consist of all points $x = a$ such that\n$\\lim_{x \\to a} f(x)$ diverges to $\\pm \\infty$. To find values where\nvertical asymptotes might exist, consider those points where the\nfunction is undefined."
-    ]
+    ], 
+    "hints_raw": [
+        "Horizontal asymptotes are found by taking the limit of the function to infinity.\n", 
+        "Vertical asymptotes consist of all points &lt;math>x = a&lt;/math> such that &lt;math>\\lim_{x \\to a} f(x)&lt;/math> diverges to &lt;math> \\pm \\infty&lt;/math>.  To find values where vertical asymptotes might exist, consider those points where the function is undefined.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To find the horizontal asymptotes, we evaluate the following limit:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to \\pm\\infty} \\frac{x+1}{x - 1}\\)</span></p>\n<p>To evaluate this limit, we need only consider the leading terms - the <em>x</em> in both the numerator and denominator. If we think of factoring out the <em>x</em> from top and bottom and then canceling, we get:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to \\pm\\infty} \\frac{x(1 + \\frac1x)}{x(1-\\frac1x)} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x}\\)</span></p>\n<p>The two <span class=\"math\">\\(\\frac1x\\)</span> terms go to zero as x goes to plus or minus infinity, so the limit is as follows:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x} = \\frac11 = 1\\)</span></p>\n<p>So <span class=\"math\">\\(f(x)\\)</span> has a horizontal asymptote, given by the equation <span class=\"math\">\\(y = 1\\)</span>.</p>\n<p>Now to find the vertical asymptotes, we need to find all values <span class=\"math\">\\(x = a\\)</span> such that <span class=\"math\">\\(\\lim_{x \\to a} f(x)\\)</span> diverges to <span class=\"math\">\\(\\pm \\infty\\)</span>. The only candidate for a vertical asymptote for this function is the point where the function is undefined, <span class=\"math\">\\(x = 1\\)</span>, found in part (a).</p>\n<p>Indeed, the limit</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 1} \\frac{x+1}{x-1}\\)</span></p>\n<p>goes to infinity. How does this happen? First consider that when the denominator of a fraction is small, the entire fraction is large (see below for an example). In our limit, as the <em>x</em>-values get closer and closer to 1, the number in the denominator is getting smaller and smaller, closer and closer to zero. Using the previous fact about fractions, as the denominator becomes smaller, the entire fraction grows, meaning that the entire function is going to positive or negative infinity. So <span class=\"math\">\\(f(x)\\)</span> has a vertical asymptote at <span class=\"math\">\\(x = 1\\)</span>.</p>\n<p><em>Example:</em> The denominator of the fraction</p>\n<p><span class=\"math\">\\(\\frac{1}{.01}\\)</span></p>\n<p>is small, but when it is simplified as follows:</p>\n<p><span class=\"math\">\\(\\frac{1}{.01} = \\frac{1}{\\frac{1}{100}} = 100\\)</span></p>\n<p>we can see that entire function is large - in fact it&#8217;s a large integer, not even a fraction anymore.</p>\n"
+    ], 
+    "sols_latex": [
+        "To find the horizontal asymptotes, we evaluate the following limit:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x+1}{x - 1}$\n\nTo evaluate this limit, we need only consider the leading terms - the\n\\emph{x} in both the numerator and denominator. If we think of factoring\nout the \\emph{x} from top and bottom and then canceling, we get:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{x(1 + \\frac1x)}{x(1-\\frac1x)} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x}$\n\nThe two $\\frac1x$ terms go to zero as x goes to plus or minus infinity,\nso the limit is as follows:\n\n$\\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x} = \\frac11 = 1$\n\nSo $f(x)$ has a horizontal asymptote, given by the equation $y = 1$.\n\nNow to find the vertical asymptotes, we need to find all values $x = a$\nsuch that $\\lim_{x \\to a} f(x)$ diverges to $\\pm \\infty$. The only\ncandidate for a vertical asymptote for this function is the point where\nthe function is undefined, $x = 1$, found in part (a).\n\nIndeed, the limit\n\n$\\lim_{x \\to 1} \\frac{x+1}{x-1}$\n\ngoes to infinity. How does this happen? First consider that when the\ndenominator of a fraction is small, the entire fraction is large (see\nbelow for an example). In our limit, as the \\emph{x}-values get closer\nand closer to 1, the number in the denominator is getting smaller and\nsmaller, closer and closer to zero. Using the previous fact about\nfractions, as the denominator becomes smaller, the entire fraction\ngrows, meaning that the entire function is going to positive or negative\ninfinity. So $f(x)$ has a vertical asymptote at $x = 1$.\n\n\\emph{Example:} The denominator of the fraction\n\n$\\frac{1}{.01}$\n\nis small, but when it is simplified as follows:\n\n$\\frac{1}{.01} = \\frac{1}{\\frac{1}{100}} = 100$\n\nwe can see that entire function is large - in fact it's a large integer,\nnot even a fraction anymore."
+    ], 
+    "sols_raw": [
+        "To find the horizontal asymptotes, we evaluate the following limit: \n\n&lt;math>\\lim_{x \\to \\pm\\infty} \\frac{x+1}{x - 1}&lt;/math>\n\nTo evaluate this limit, we need only consider the leading terms - the ''x'' in both the numerator and denominator.  If we think of factoring out the ''x'' from top and bottom and then canceling, we get:\n\n&lt;math>\\lim_{x \\to \\pm\\infty} \\frac{x(1 + \\frac1x)}{x(1-\\frac1x)} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x}&lt;/math>\n\nThe two &lt;math>\\frac1x&lt;/math> terms go to zero as x goes to plus or minus infinity, so the limit is as follows: \n\n&lt;math>\\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac1x}{1-\\frac1x} = \\frac11 = 1&lt;/math>\n\nSo &lt;math>f(x)&lt;/math> has a horizontal asymptote, given by the equation &lt;math>y = 1&lt;/math>.  \n\n\nNow to find the vertical asymptotes, we need to find all values &lt;math>x = a&lt;/math> such that &lt;math>\\lim_{x \\to a} f(x)&lt;/math> diverges to &lt;math>\\pm \\infty&lt;/math>.  The only candidate for a vertical asymptote for this function is the point where the function is undefined, &lt;math>x = 1&lt;/math>, found in part (a).  \n\nIndeed, the limit\n\n&lt;math> \\lim_{x \\to 1} \\frac{x+1}{x-1}&lt;/math> \n\ngoes to infinity.  How does this happen?  First consider that when the denominator of a fraction is small, the entire fraction is large (see below for an example).  In our limit, as the ''x''-values get closer and closer to 1, the number in the denominator is getting smaller and smaller, closer and closer to zero.  Using the previous fact about fractions, as the denominator becomes smaller, the entire fraction grows, meaning that the entire function is going to positive or negative infinity.  So &lt;math>f(x)&lt;/math> has a vertical asymptote at &lt;math>x = 1&lt;/math>.\n\n\n''Example:'' The denominator of the fraction\n\n&lt;math>\\frac{1}{.01}&lt;/math>\n\nis small, but when it is simplified as follows:\n\n&lt;math>\\frac{1}{.01} = \\frac{1}{\\frac{1}{100}} = 100&lt;/math>\n\nwe can see that entire function is large - in fact it's a large integer, not even a fraction anymore.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\frac{x + 1}{x - 1}\\)</span>.</p>\n<p>Find all vertical and horizontal asymptotes of <span class=\"math\">\\(\\displaystyle f\\)</span>, if they exist.</p>\n", 
+    "statement_latex": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nFind all vertical and horizontal asymptotes of $\\displaystyle f$, if\nthey exist.", 
+    "statement_raw": "Let &lt;math>f(x) = \\frac{x + 1}{x - 1}&lt;/math>.\n\nFind all vertical and horizontal asymptotes of &lt;math>\\displaystyle f&lt;/math>, if they exist.\n", 
+    "term": "December", 
+    "topics": [
+        "Asymptote", 
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_09_(b)", 
+    "year": 2010
 }

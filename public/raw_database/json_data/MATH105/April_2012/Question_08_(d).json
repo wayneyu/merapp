@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_08_(d)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nIdentify and sketch the level curve corresponding to \\emph{z = e} of the\nfunction\n\n\\begin{align*}\\displaystyle\nz = e^{x^2+4y^2}\\end{align*}\n\nLabel the axes of your graph and plot the coordinates of at least four\npoints on the level curve.\n\nAlso, answer the following: The curve is a\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  parabola\n\\item\n  ellipse\n\\item\n  circle\n\\item\n  hyperbola\n\\end{enumerate}", 
-    "year": 2012, 
-    "sols": [
-        "If $z = e$ then\n\n$e = e^{x^2 + 4y^2}$ and by taking the logarithm of both sides:\n\n\\begin{align*}\\displaystyle\n1 = x^2 + 4y^2\\end{align*}\n\nThis is an ellipse.\n\nThe four easiest points are the intercepts.\n\nIf $x=0$ then $4y^2 = 1$ and $y = \\pm 1/2$ are the y-intercepts. If\n$y=0$ then $x^2 = 1$ and $x= \\pm 1$ are the x-intercepts. The sketch is\nbelow:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Ellipse2012.png}\n\\end{description}"
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2012/Ellipse2012.png}\n\\end{description}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try finding the level curve when <em>z</em> = <em>e</em> by setting the equation equal to <em>e</em> and simplifying it to classify the curve.</p>\n<p>To find points on the curve, choose simple values for <em>x</em> (and <em>y</em>) and calculate the corresponding value for <em>y</em> (and <em>x</em>).</p>\n"
+    ], 
+    "hints_latex": [
         "Try finding the level curve when \\emph{z} = \\emph{e} by setting the\nequation equal to \\emph{e} and simplifying it to classify the curve.\n\nTo find points on the curve, choose simple values for \\emph{x} (and\n\\emph{y}) and calculate the corresponding value for \\emph{y} (and\n\\emph{x})."
-    ]
+    ], 
+    "hints_raw": [
+        "Try finding the level curve when ''z'' = ''e'' by setting the equation equal to ''e'' and simplifying it to classify the curve.\n\nTo find points on the curve, choose simple values for ''x'' (and ''y'') and calculate the corresponding value for ''y'' (and ''x'').\n"
+    ], 
+    "num_votes": 1, 
+    "question": "8 (d)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(z = e\\)</span> then</p>\n<p><span class=\"math\">\\(e = e^{x^2 + 4y^2}\\)</span> and by taking the logarithm of both sides:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n1 = x^2 + 4y^2\\end{aligned}\\]</span></p>\n<p>This is an ellipse.</p>\n<p>The four easiest points are the intercepts.</p>\n<p>If <span class=\"math\">\\(x=0\\)</span> then <span class=\"math\">\\(4y^2 = 1\\)</span> and <span class=\"math\">\\(y = \\pm 1/2\\)</span> are the y-intercepts. If <span class=\"math\">\\(y=0\\)</span> then <span class=\"math\">\\(x^2 = 1\\)</span> and <span class=\"math\">\\(x= \\pm 1\\)</span> are the x-intercepts. The sketch is below:</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+    ], 
+    "sols_latex": [
+        "If $z = e$ then\n\n$e = e^{x^2 + 4y^2}$ and by taking the logarithm of both sides:\n\n\\begin{align*}\n\\displaystyle\n1 = x^2 + 4y^2\n\\end{align*}\n\nThis is an ellipse.\n\nThe four easiest points are the intercepts.\n\nIf $x=0$ then $4y^2 = 1$ and $y = \\pm 1/2$ are the y-intercepts. If\n$y=0$ then $x^2 = 1$ and $x= \\pm 1$ are the x-intercepts. The sketch is\nbelow:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2012/Ellipse2012.png}\n\\end{description}"
+    ], 
+    "sols_raw": [
+        "If &lt;math>z = e&lt;/math> then\n\n&lt;math>e = e^{x^2 + 4y^2}&lt;/math> and by taking the logarithm of both sides:\n\n:&lt;math>\\displaystyle\n1 = x^2 + 4y^2&lt;/math>\n\nThis is &lt;b>an ellipse&lt;/b>.\n\nThe four easiest points are the intercepts. \n\nIf &lt;math>x=0&lt;/math> then &lt;math>4y^2 = 1&lt;/math> and &lt;math>y = \\pm 1/2&lt;/math> are the y-intercepts. If &lt;math>y=0&lt;/math> then &lt;math>x^2 = 1&lt;/math> and &lt;math>x= \\pm 1&lt;/math> are the x-intercepts. The sketch is below:\n\n:[[File:Ellipse2012.png|400px|The level curve &lt;math>x^2 + 4y^2 = 1&lt;/math>.]]\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.</em></p>\n<p>Identify and sketch the level curve corresponding to <em>z = e</em> of the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nz = e^{x^2+4y^2}\\end{aligned}\\]</span></p>\n<p>Label the axes of your graph and plot the coordinates of at least four points on the level curve.</p>\n<p>Also, answer the following: The curve is a</p>\n<ol>\n<li><p>parabola</p></li>\n<li><p>ellipse</p></li>\n<li><p>circle</p></li>\n<li><p>hyperbola</p></li>\n</ol>\n", 
+    "statement_latex": "\\emph{Short-answer questions. No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nIdentify and sketch the level curve corresponding to \\emph{z = e} of the\nfunction\n\n\\begin{align*}\n\\displaystyle\nz = e^{x^2+4y^2}\n\\end{align*}\n\nLabel the axes of your graph and plot the coordinates of at least four\npoints on the level curve.\n\nAlso, answer the following: The curve is a\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  parabola\n\\item\n  ellipse\n\\item\n  circle\n\\item\n  hyperbola\n\\end{enumerate}", 
+    "statement_raw": "''Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\nIdentify and sketch the level curve corresponding to ''z = e'' of the function\n\n:&lt;math> \\displaystyle\nz = e^{x^2+4y^2}\n&lt;/math>\n\nLabel the axes of your graph and plot the coordinates of at least four points on the level curve.\n\nAlso, answer the following: The curve is a\n# parabola\n# ellipse\n# circle\n# hyperbola\n", 
+    "term": "April", 
+    "topics": [
+        "Level_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(d)", 
+    "year": 2012
 }

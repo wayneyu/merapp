@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(f)", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int_{-\\infty}^{-1} e^{2x} dx.$ Simplify your answer as much\nas possible.", 
-    "year": 2010, 
-    "sols": [
-        "Letting $u=2x$ we get $du=2dx$ so\n\n\\begin{align*}\n\\int_b^{-1}e^{2x}dx&=\\frac{1}{2}\\int_{2b}^{-2}e^u du\\\\\n&=\\frac{1}{2}e^u\\Big|_{2b}^{-2}\\\\\n&=\\frac{1}{2e^2}-\\frac{e^{2b}}{2}\\end{align*}\n\nWhen $b\\to -\\infty$ we have $\\frac{e^{2b}}{2} \\to 0$ so\n\n\\begin{align*}\\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}-0= \\frac{1}{2e^2}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}\\)</span></p>\n", 
+    "answer_latex": " $\\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "SimonRose", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use change of variables to find the definite integral <span class=\"math\">\\(\\int_b^{-1}e^{2x}dx\\)</span>.</p>\n<p>What happens when <span class=\"math\">\\(b\\to -\\infty\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "Use change of variables to find the definite integral\n$\\int_b^{-1}e^{2x}dx$.\n\nWhat happens when $b\\to -\\infty$?"
-    ]
+    ], 
+    "hints_raw": [
+        "Use change of variables to find the definite integral &lt;math> \\int_b^{-1}e^{2x}dx &lt;/math>.\n\nWhat happens when &lt;math> b\\to -\\infty &lt;/math>?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "1 (f)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>Letting <span class=\"math\">\\(u=2x\\)</span> we get <span class=\"math\">\\(du=2dx\\)</span> so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_b^{-1}e^{2x}dx&amp;=\\frac{1}{2}\\int_{2b}^{-2}e^u du\\\\\n&amp;=\\frac{1}{2}e^u\\Big|_{2b}^{-2}\\\\\n&amp;=\\frac{1}{2e^2}-\\frac{e^{2b}}{2}\\end{aligned}\\]</span></p>\n<p>When <span class=\"math\">\\(b\\to -\\infty\\)</span> we have <span class=\"math\">\\(\\frac{e^{2b}}{2} \\to 0\\)</span> so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}-0= \\frac{1}{2e^2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Letting $u=2x$ we get $du=2dx$ so\n\n\\begin{align*}\n\\int_b^{-1}e^{2x}dx&=\\frac{1}{2}\\int_{2b}^{-2}e^u du\\\\\n&=\\frac{1}{2}e^u\\Big|_{2b}^{-2}\\\\\n&=\\frac{1}{2e^2}-\\frac{e^{2b}}{2}\n\\end{align*}\n\nWhen $b\\to -\\infty$ we have $\\frac{e^{2b}}{2} \\to 0$ so\n\n\\begin{align*}\n\\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}-0= \\frac{1}{2e^2}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Letting &lt;math> u=2x &lt;/math> we get &lt;math> du=2dx &lt;/math> so\n\n:&lt;math> \\begin{align}\n\\int_b^{-1}e^{2x}dx&amp;=\\frac{1}{2}\\int_{2b}^{-2}e^u du\\\\\n&amp;=\\frac{1}{2}e^u\\Big|_{2b}^{-2}\\\\\n&amp;=\\frac{1}{2e^2}-\\frac{e^{2b}}{2}\\\\\n\\end{align}\n&lt;/math>\n\nWhen &lt;math> b\\to -\\infty &lt;/math> we have &lt;math> \\frac{e^{2b}}{2} \\to 0 &lt;/math>  so \n\n:&lt;math> \\int_{-\\infty}^{-1}e^{2x}dx=\\frac{1}{2e^2}-0= \\frac{1}{2e^2}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int_{-\\infty}^{-1} e^{2x} dx.\\)</span> Simplify your answer as much as possible.</p>\n", 
+    "statement_latex": "Evaluate $\\int_{-\\infty}^{-1} e^{2x} dx.$ Simplify your answer as much\nas possible.", 
+    "statement_raw": "Evaluate &lt;math> \\int_{-\\infty}^{-1} e^{2x} dx. &lt;/math> Simplify your answer as much as possible.\n", 
+    "term": "April", 
+    "topics": [
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_01_(f)", 
+    "year": 2010
 }

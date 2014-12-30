@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix}=s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\\)</span></p>\n", 
+    "answer_latex": " $\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix}=s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}$ ", 
     "course": "MATH307", 
-    "statement": "Define a sequence \\emph{x}\\textsubscript{0}, \\emph{x}\\textsubscript{1},\n... by the initial conditions \\emph{x}\\textsubscript{0} = \\emph{a},\n\\emph{x}\\textsubscript{1} = \\emph{b} and \\emph{x}\\textsubscript{2} =\n\\emph{c} together with the recursion relation\n\n\\begin{align*}\\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\\end{align*}\n\nfor \\emph{n} = 0, 1, 2, ...\n\n\\textbf{(c)} Explain how you could ensure that the \\emph{a}, \\emph{b}\nand \\emph{c} you find in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)}{part\n(b)} are real numbers.", 
-    "year": 2010, 
-    "sols": [
-        "For real matrices, just as complex eigenvalues, also complex\neigenvectors come in conjugate pairs. Hence\n\n\\begin{align*}\\displaystyle\nv_2 = \\overline{v_3}\\end{align*}\n\nHence \\emph{v\\textsubscript{2} + v\\textsubscript{3}} is a real vector\nand therefore we ensure that the solution vector \\emph{{[}c, b, a{]}T}\nin\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)}{part\n(b)} is real by choosing real coefficients \\emph{s} and \\emph{t} and\nsetting \\emph{s = t}:\n\n\\begin{align*}\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} = s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\\end{align*}"
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
     ], 
-    "hints": [
+    "hints_html": [
+        "<p>For a real matrix, if <span class=\"math\">\\(\\displaystyle v\\)</span> is an eigenvector to a complex eigenvalue <span class=\"math\">\\(\\displaystyle \\lambda\\)</span>, then <span class=\"math\">\\(\\displaystyle \\overline v\\)</span> is an eigenvector to a complex eigenvalue <span class=\"math\">\\(\\displaystyle \\overline \\lambda\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "For a real matrix, if $\\displaystyle v$ is an eigenvector to a complex\neigenvalue $\\displaystyle \\lambda$, then $\\displaystyle \\overline v$ is\nan eigenvector to a complex eigenvalue $\\displaystyle \\overline \\lambda$"
-    ]
+    ], 
+    "hints_raw": [
+        "For a real matrix, if &lt;math>\\displaystyle v&lt;/math> is an eigenvector to a complex eigenvalue &lt;math>\\displaystyle \\lambda&lt;/math>, then &lt;math>\\displaystyle \\overline v&lt;/math> is an eigenvector to a complex eigenvalue &lt;math>\\displaystyle \\overline \\lambda&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>For real matrices, just as complex eigenvalues, also complex eigenvectors come in conjugate pairs. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nv_2 = \\overline{v_3}\\end{aligned}\\]</span></p>\n<p>Hence <em>v<sub>2</sub> + v<sub>3</sub></em> is a real vector and therefore we ensure that the solution vector <em><span>[</span>c, b, a<span>]</span>T</em> in <span>part (b)</span> is real by choosing real coefficients <em>s</em> and <em>t</em> and setting <em>s = t</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} = s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "For real matrices, just as complex eigenvalues, also complex\neigenvectors come in conjugate pairs. Hence\n\n\\begin{align*}\n\\displaystyle\nv_2 = \\overline{v_3}\n\\end{align*}\n\nHence \\emph{v\\textsubscript{2} + v\\textsubscript{3}} is a real vector\nand therefore we ensure that the solution vector \\emph{{[}c, b, a{]}T}\nin\n{part\n(b)} is real by choosing real coefficients \\emph{s} and \\emph{t} and\nsetting \\emph{s = t}:\n\n\\begin{align*}\n\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} = s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "For real matrices, just as complex eigenvalues, also complex eigenvectors come in conjugate pairs. Hence\n\n:&lt;math> \\displaystyle\nv_2 = \\overline{v_3}\n&lt;/math>\n\nHence ''v&lt;sub>2&lt;/sub> + v&lt;sub>3&lt;/sub>'' is a real vector and therefore we ensure that the solution vector ''[c, b, a]&lt;sup>T&lt;/sub>'' in [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)|part (b)]] is real by choosing real coefficients ''s'' and ''t'' and setting ''s = t'':\n\n:&lt;math>\n\\left\\{\\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} \\text{ such that } \\begin{bmatrix} c \\\\ b \\\\ a \\end{bmatrix} = s (v_2 + v_3) \\text{ for some } s \\in \\mathbb{R}\\right\\}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Define a sequence <em>x</em><sub>0</sub>, <em>x</em><sub>1</sub>, ... by the initial conditions <em>x</em><sub>0</sub> = <em>a</em>, <em>x</em><sub>1</sub> = <em>b</em> and <em>x</em><sub>2</sub> = <em>c</em> together with the recursion relation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\\end{aligned}\\]</span></p>\n<p>for <em>n</em> = 0, 1, 2, ...</p>\n<p><strong>(c)</strong> Explain how you could ensure that the <em>a</em>, <em>b</em> and <em>c</em> you find in <span>part (b)</span> are real numbers.</p>\n", 
+    "statement_latex": "Define a sequence \\emph{x}\\textsubscript{0}, \\emph{x}\\textsubscript{1},\n... by the initial conditions \\emph{x}\\textsubscript{0} = \\emph{a},\n\\emph{x}\\textsubscript{1} = \\emph{b} and \\emph{x}\\textsubscript{2} =\n\\emph{c} together with the recursion relation\n\n\\begin{align*}\n\\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\n\\end{align*}\n\nfor \\emph{n} = 0, 1, 2, ...\n\n\\textbf{(c)} Explain how you could ensure that the \\emph{a}, \\emph{b}\nand \\emph{c} you find in\n{part\n(b)} are real numbers.", 
+    "statement_raw": "Define a sequence ''x''&lt;sub>0&lt;/sub>, ''x''&lt;sub>1&lt;/sub>, ... by the initial conditions ''x''&lt;sub>0&lt;/sub> = ''a'', ''x''&lt;sub>1&lt;/sub> = ''b'' and ''x''&lt;sub>2&lt;/sub> = ''c'' together with the recursion relation\n\n:&lt;math> \\displaystyle\nx_{n+3} = x_{n+2} + x_{n+1} + x_n\n&lt;/math>\n\nfor ''n'' = 0, 1, 2, ...\n\n'''(c)''' Explain how you could ensure that the ''a'', ''b'' and ''c'' you find in [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(b)|part (b)]] are real numbers.\n", 
+    "term": "December", 
+    "topics": [
+        "Recursion"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_05_(c)", 
+    "year": 2010
 }

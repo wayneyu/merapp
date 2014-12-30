@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $\\displaystyle \\lim_{x\\rightarrow0}f(x)$ does not exist and\n$\\displaystyle \\lim_{x\\rightarrow0}g(x)$ does not exist, then\n$\\displaystyle \\lim_{x\\rightarrow0}\\left(f(x)+g(x)\\right)$ does not\nexist.", 
-    "year": 2012, 
-    "sols": [
-        "One common function where $\\lim_{x \\to 0}f(x)$ doesn't exist is the\nrational function $f(x) = \\frac{1}{x}$. The same is true for its\nnegative, $g(x) = -\\frac{1}{x}$. Both have a limit of $\\infty$ or\n$-\\infty$ at 0.\n\nHowever, when these two functions are added together, we get:\n\n$\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = \\lim_{x \\to 0} 0 = 0$\n\nWhich is a perfectly satisfactory limit. Thus, these two functions are a\ncounterexample to this statement, proving it false.\n\nTo see an interactive illustration of this solution, see\n\\href{https://www.desmos.com/calculator/79by0j8hx0}{this page}."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = 0\\)</span>Which is a perfectly satisfactory limit.Thus, these two functions are a counterexample to this statement, proving it false.To see an interactive illustration of this solution, see <span>this page</span>.</p>\n", 
+    "answer_latex": "$\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = 0$Which is a perfectly satisfactory limit.Thus, these two functions are a\ncounterexample to this statement, proving it false.To see an interactive illustration of this solution, see\n{this page}.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>One way in which limits fail to exist are at vertical asymptotes (where the function blows up). What would a function with a vertical asymptote look like? Can you think of other ways in which limits don&#8217;t exist? What would an example function look like for these new behaviours?</p>\n", 
+        "<p>Is there a way to create a g such that the problems you made in f get removed?</p>\n"
+    ], 
+    "hints_latex": [
         "One way in which limits fail to exist are at vertical asymptotes (where\nthe function blows up). What would a function with a vertical asymptote\nlook like? Can you think of other ways in which limits don't exist? What\nwould an example function look like for these new behaviours?", 
         "Is there a way to create a g such that the problems you made in f get\nremoved?"
-    ]
+    ], 
+    "hints_raw": [
+        "One way in which limits fail to exist are at vertical asymptotes (where the function blows up).  What would a function with a vertical asymptote look like?  Can you think of other ways in which limits don't exist?  What would an example function look like for these new behaviours?\n", 
+        "Is there a way to create a g such that the problems you made in f get removed?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>One common function where <span class=\"math\">\\(\\lim_{x \\to 0}f(x)\\)</span> doesn&#8217;t exist is the rational function <span class=\"math\">\\(f(x) = \\frac{1}{x}\\)</span>. The same is true for its negative, <span class=\"math\">\\(g(x) = -\\frac{1}{x}\\)</span>. Both have a limit of <span class=\"math\">\\(\\infty\\)</span> or <span class=\"math\">\\(-\\infty\\)</span> at 0.</p>\n<p>However, when these two functions are added together, we get:</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = \\lim_{x \\to 0} 0 = 0\\)</span></p>\n<p>Which is a perfectly satisfactory limit. Thus, these two functions are a counterexample to this statement, proving it false.</p>\n<p>To see an interactive illustration of this solution, see <span>this page</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "One common function where $\\lim_{x \\to 0}f(x)$ doesn't exist is the\nrational function $f(x) = \\frac{1}{x}$. The same is true for its\nnegative, $g(x) = -\\frac{1}{x}$. Both have a limit of $\\infty$ or\n$-\\infty$ at 0.\n\nHowever, when these two functions are added together, we get:\n\n$\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = \\lim_{x \\to 0} 0 = 0$\n\nWhich is a perfectly satisfactory limit. Thus, these two functions are a\ncounterexample to this statement, proving it false.\n\nTo see an interactive illustration of this solution, see\n{this page}."
+    ], 
+    "sols_raw": [
+        "One common function where &lt;math>\\lim_{x \\to 0}f(x)&lt;/math> doesn't exist is the rational function &lt;math>f(x) = \\frac{1}{x}&lt;/math>.  The same is true for its negative, &lt;math>g(x) = -\\frac{1}{x}&lt;/math>.  Both have a limit of &lt;math>\\infty&lt;/math> or &lt;math>-\\infty&lt;/math> at 0.  \n\nHowever, when these two functions are added together, we get:\n\n&lt;math>\\lim_{x \\to 0} \\frac1x + (-\\frac1x) = \\lim_{x \\to 0} 0 = 0&lt;/math>\n\nWhich is a perfectly satisfactory limit.  Thus, these two functions are a counterexample to this statement, proving it false.  \n\nTo see an interactive illustration of this solution, see [https://www.desmos.com/calculator/79by0j8hx0 this page].\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>If <span class=\"math\">\\(\\displaystyle \\lim_{x\\rightarrow0}f(x)\\)</span> does not exist and <span class=\"math\">\\(\\displaystyle \\lim_{x\\rightarrow0}g(x)\\)</span> does not exist, then <span class=\"math\">\\(\\displaystyle \\lim_{x\\rightarrow0}\\left(f(x)+g(x)\\right)\\)</span> does not exist.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nIf $\\displaystyle \\lim_{x\\rightarrow0}f(x)$ does not exist and\n$\\displaystyle \\lim_{x\\rightarrow0}g(x)$ does not exist, then\n$\\displaystyle \\lim_{x\\rightarrow0}\\left(f(x)+g(x)\\right)$ does not\nexist.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\nIf &lt;math>\\displaystyle\\lim_{x\\rightarrow0}f(x)&lt;/math> does not exist and &lt;math>\\displaystyle\\lim_{x\\rightarrow0}g(x)&lt;/math> does not exist, then &lt;math>\\displaystyle\\lim_{x\\rightarrow0}\\left(f(x)+g(x)\\right)&lt;/math> does not exist.\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_02_(a)", 
+    "year": 2012
 }

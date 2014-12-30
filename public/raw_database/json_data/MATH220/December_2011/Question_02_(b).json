@@ -1,14 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH220", 
-    "statement": "For \\emph{n} \u2208 \\textbf{N}, let \\emph{P}(\\emph{n}) be the statement\n\"\\emph{n} is divisible by 4\", and let \\emph{Q}(\\emph{n}) be the\nstatement \"\\emph{n}\\textsuperscript{2} + 1 is divisible by 3\".\n\nWrite out in words the statement \"\\emph{P}(3) \u2192 \\emph{Q}(4)\", its\nconverse, and its contrapositive.", 
-    "year": 2011, 
-    "sols": [
-        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The statement\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\nP(3) \\Rightarrow Q(4)\\end{align*} is \\emph{``3 is divisible by 4 implies that 17\nis divisible by 3''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{converse} is\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\nQ(4) \\Rightarrow P(3)\\end{align*} hence in words it is \\emph{``17 is divisible by\n3 implies that 3 is divisible by 4''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{contrapositive} is\n\\end{itemize}\n\n\\begin{align*}\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\\end{align*} In words this is \\emph{``17 is not\ndivisible by 3 implies that 3 is not divisible by 4''}."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\\)</span> In words this is <em>&#8220;17 is not divisible by 3 implies that 3 is not divisible by 4&#8221;</em>.</p>\n", 
+    "answer_latex": " $\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)$  In words this is \\emph{``17 is not\ndivisible by 3 implies that 3 is not divisible by 4''}.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "The \\emph{converse} of the statement\n\n\\begin{align*}\\displaystyle\nA \\Rightarrow B\\end{align*} is\n\n\\begin{align*}\\displaystyle\nB \\Rightarrow A\\end{align*}", 
-        "The \\emph{contrapositive} of the statement\n\n\\begin{align*}\\displaystyle\nA \\Rightarrow B\\end{align*} is\n\n\\begin{align*}\\lnot B \\Rightarrow \\lnot A\\end{align*}"
-    ]
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The <em>converse</em> of the statement</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA \\Rightarrow B\\end{aligned}\\]</span></p>\n<p>is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nB \\Rightarrow A\\end{aligned}\\]</span></p>\n", 
+        "<p>The <em>contrapositive</em> of the statement</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nA \\Rightarrow B\\end{aligned}\\]</span></p>\n<p>is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lnot B \\Rightarrow \\lnot A\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The \\emph{converse} of the statement\n\n\\begin{align*}\n\\displaystyle\nA \\Rightarrow B\n\\end{align*} is\n\n\\begin{align*}\n\\displaystyle\nB \\Rightarrow A\n\\end{align*}", 
+        "The \\emph{contrapositive} of the statement\n\n\\begin{align*}\n\\displaystyle\nA \\Rightarrow B\n\\end{align*} is\n\n\\begin{align*}\n\\lnot B \\Rightarrow \\lnot A\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The ''converse'' of the statement\n:&lt;math>\\displaystyle\nA \\Rightarrow B\n&lt;/math>\nis\n:&lt;math>\\displaystyle\nB \\Rightarrow A\n&lt;/math>\n", 
+        "The ''contrapositive'' of the statement\n:&lt;math>\\displaystyle\nA \\Rightarrow B\n&lt;/math>\nis\n:&lt;math>\n\\lnot B \\Rightarrow \\lnot A\n&lt;/math>\n"
+    ], 
+    "num_votes": 4, 
+    "question": "2 (b)", 
+    "rating": 94, 
+    "sols_html": [
+        "<ul>\n<li><p>The statement</p></li>\n</ul>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nP(3) \\Rightarrow Q(4)\\end{aligned}\\]</span></p>\n<p>is <em>&#8220;3 is divisible by 4 implies that 17 is divisible by 3&#8221;</em>.</p>\n<ul>\n<li><p>The <strong>converse</strong> is</p></li>\n</ul>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nQ(4) \\Rightarrow P(3)\\end{aligned}\\]</span></p>\n<p>hence in words it is <em>&#8220;17 is divisible by 3 implies that 3 is divisible by 4&#8221;</em>.</p>\n<ul>\n<li><p>The <strong>contrapositive</strong> is</p></li>\n</ul>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\\end{aligned}\\]</span></p>\n<p>In words this is <em>&#8220;17 is not divisible by 3 implies that 3 is not divisible by 4&#8221;</em>.</p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The statement\n\\end{itemize}\n\n\\begin{align*}\n\\displaystyle\nP(3) \\Rightarrow Q(4)\n\\end{align*} is \\emph{``3 is divisible by 4 implies that 17\nis divisible by 3''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{converse} is\n\\end{itemize}\n\n\\begin{align*}\n\\displaystyle\nQ(4) \\Rightarrow P(3)\n\\end{align*} hence in words it is \\emph{``17 is divisible by\n3 implies that 3 is divisible by 4''}.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The \\textbf{contrapositive} is\n\\end{itemize}\n\n\\begin{align*}\n\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\n\\end{align*} In words this is \\emph{``17 is not\ndivisible by 3 implies that 3 is not divisible by 4''}."
+    ], 
+    "sols_raw": [
+        "* The statement\n:&lt;math>\\displaystyle\nP(3) \\Rightarrow Q(4)\n&lt;/math>\nis ''\"3 is divisible by 4 implies that 17 is divisible by 3\"''. \n\n* The '''converse''' is\n:&lt;math>\\displaystyle\nQ(4) \\Rightarrow P(3)\n&lt;/math>\nhence in words it is ''\"17 is divisible by 3 implies that 3 is divisible by 4\"''.\n\n* The '''contrapositive''' is \n:&lt;math>\\displaystyle\n\\lnot Q(4) \\Rightarrow \\lnot P(3)\n&lt;/math>\nIn words this is ''\"17 is not divisible by 3 implies that 3 is not divisible by 4\"''.\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p>For <em>n</em> <span class=\"math\">\\(\\in\\)</span> <strong>N</strong>, let <em>P</em>(<em>n</em>) be the statement &#8220;<em>n</em> is divisible by 4&#8221;, and let <em>Q</em>(<em>n</em>) be the statement &#8220;<em>n</em><sup>2</sup> + 1 is divisible by 3&#8221;.</p>\n<p>Write out in words the statement &#8220;<em>P</em>(3) <span class=\"math\">\\(\\rightarrow\\)</span> <em>Q</em>(4)&#8221;, its converse, and its contrapositive.</p>\n", 
+    "statement_latex": "For \\emph{n} $\\in$ \\textbf{N}, let \\emph{P}(\\emph{n}) be the statement\n\"\\emph{n} is divisible by 4\", and let \\emph{Q}(\\emph{n}) be the\nstatement \"\\emph{n}\\textsuperscript{2} + 1 is divisible by 3\".\n\nWrite out in words the statement \"\\emph{P}(3) $\\rightarrow$ \\emph{Q}(4)\", its\nconverse, and its contrapositive.", 
+    "statement_raw": "For ''n'' &amp;isin; '''N''', let ''P''(''n'') be the statement \"''n'' is divisible by 4\", and let ''Q''(''n'') be the statement \"''n''&lt;sup>2&lt;/sup> + 1 is divisible by 3\".\n\nWrite out in words the statement \"''P''(3) &amp;rarr; ''Q''(4)\", its converse, and its contrapositive.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_02_(b)", 
+    "year": 2011
 }

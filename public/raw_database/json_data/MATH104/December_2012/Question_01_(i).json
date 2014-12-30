@@ -1,15 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_01_(i)", 
-    "course": "MATH104", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle{}p(q)=e^{3q}.\\end{align*}\n\nConsider its 20th order Taylor polynomial at q=1;\n\n\\begin{align*}T_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\\end{align*}\n\nWhat is $a_{20}$?", 
-    "year": 2012, 
-    "sols": [
-        "Proceeding as in the hints, we compute the 20th derivative to be\n\n\\begin{align*}\np'(q) &= 3e^{3q} \\\\\np''(q) &= 3^{2}e^{3q} \\\\\np'''(q) &= 3^{3}e^{3q} \\\\\n&\\vdots \\\\\np^{(20)}(q) &= 3^{20}e^{3q} \\end{align*}\n\nNow using the second hint, we see that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}$\n\nwhich completes the problem."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle a_{20} = \\frac{3^{20}e^{3}}{20!}\\)</span>which completes the problem.</p>\n", 
+    "answer_latex": "$\\displaystyle a_{20} = \\frac{3^{20}e^{3}}{20!}$which completes the problem.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall (or review) the definition of the 20th order Taylor polynomial of a function <span class=\"math\">\\(p(q)\\)</span> at a point <span class=\"math\">\\(q = a\\)</span> from your text (don&#8217;t let the change of notation scare you! In this case, <em>f</em> is <em>p</em> and <em>x</em> is <em>q</em>).</p>\n", 
+        "<p>Recall that the second order Taylor polynomial of a function <span class=\"math\">\\(p(q)\\)</span> at a point <span class=\"math\">\\(q = a\\)</span> is given by <span class=\"math\">\\(T_{20}(x)\\)</span> where,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle T_{20}(q) = p(a) + p&#39;(a)(q - a) + \\frac{1}{2}p&#39;&#39;(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\\end{aligned}\\]</span></p>\n<p>In our case, <span class=\"math\">\\(a=1\\)</span> and <span class=\"math\">\\(p(q) = e^{3q}\\)</span>.</p>\n<p>However even knowing this, it might not be clear how to proceed - Look at what <span class=\"math\">\\(a_{20}\\)</span> is in the equation above and try to figure out a pattern to help you compute this value.</p>\n", 
+        "<p>The previous hint tells us that</p>\n<p><span class=\"math\">\\(\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!}\\)</span></p>\n<p>So we need to compute the 20th derivative of <span class=\"math\">\\(p(q)\\)</span> at the point <span class=\"math\">\\(q=1\\)</span>. Try computing the first few derivatives and seeing if you can figure out the pattern.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall (or review) the definition of the 20th order Taylor polynomial of\na function $p(q)$ at a point $q = a$ from your text (don't let the\nchange of notation scare you! In this case, \\emph{f} is \\emph{p} and\n\\emph{x} is \\emph{q}).", 
-        "Recall that the second order Taylor polynomial of a function $p(q)$ at a\npoint $q = a$ is given by $T_{20}(x)$ where,\n\n\\begin{align*}\\displaystyle T_{20}(q) = p(a) + p'(a)(q - a) + \\frac{1}{2}p''(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\\end{align*}\n\nIn our case, $a=1$ and $p(q) = e^{3q}$.\n\nHowever even knowing this, it might not be clear how to proceed - Look\nat what $a_{20}$ is in the equation above and try to figure out a\npattern to help you compute this value.", 
+        "Recall that the second order Taylor polynomial of a function $p(q)$ at a\npoint $q = a$ is given by $T_{20}(x)$ where,\n\n\\begin{align*}\n\\displaystyle T_{20}(q) = p(a) + p'(a)(q - a) + \\frac{1}{2}p''(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\n\\end{align*}\n\nIn our case, $a=1$ and $p(q) = e^{3q}$.\n\nHowever even knowing this, it might not be clear how to proceed - Look\nat what $a_{20}$ is in the equation above and try to figure out a\npattern to help you compute this value.", 
         "The previous hint tells us that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!}$\n\nSo we need to compute the 20th derivative of $p(q)$ at the point $q=1$.\nTry computing the first few derivatives and seeing if you can figure out\nthe pattern."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall (or review) the definition of the 20th order Taylor polynomial of a function &lt;math>p(q)&lt;/math> at a point &lt;math>q = a&lt;/math> from your text (don't let the change of notation scare you! In this case, ''f'' is ''p'' and ''x'' is ''q'').\n", 
+        "Recall that the second order Taylor polynomial of a function &lt;math>p(q)&lt;/math> at a point &lt;math>q = a&lt;/math> is given by &lt;math>T_{20}(x)&lt;/math> where,\n:&lt;math>\n\\displaystyle T_{20}(q) = p(a) + p'(a)(q - a) + \\frac{1}{2}p''(a)(q-a)^{2} + .. + \\frac{1}{20!}p^{(20)}(a)(q-a)^{20}\n&lt;/math>\n\nIn our case, &lt;math> a=1 &lt;/math> and &lt;math> p(q) = e^{3q} &lt;/math>.\n\nHowever even knowing this, it might not be clear how to proceed - Look at what &lt;math> a_{20} &lt;/math> is in the equation above and try to figure out a pattern to help you compute this value.\n", 
+        "The previous hint tells us that\n\n&lt;math>\n\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!}\n&lt;/math>\n\nSo we need to compute the 20th derivative of &lt;math> p(q) &lt;/math> at the point &lt;math> q=1 &lt;/math>. Try computing the first few derivatives and seeing if you can figure out the pattern.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (i)", 
+    "rating": 84, 
+    "sols_html": [
+        "<p>Proceeding as in the hints, we compute the 20th derivative to be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np&#39;(q) &amp;= 3e^{3q} \\\\\np&#39;&#39;(q) &amp;= 3^{2}e^{3q} \\\\\np&#39;&#39;&#39;(q) &amp;= 3^{3}e^{3q} \\\\\n&amp;\\vdots \\\\\np^{(20)}(q) &amp;= 3^{20}e^{3q} \\end{aligned}\\]</span></p>\n<p>Now using the second hint, we see that</p>\n<p><span class=\"math\">\\(\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}\\)</span></p>\n<p>which completes the problem.</p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as in the hints, we compute the 20th derivative to be\n\n\\begin{align*}\np'(q) &= 3e^{3q} \\\\\np''(q) &= 3^{2}e^{3q} \\\\\np'''(q) &= 3^{3}e^{3q} \\\\\n&\\vdots \\\\\np^{(20)}(q) &= 3^{20}e^{3q} \n\\end{align*}\n\nNow using the second hint, we see that\n\n$\\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}$\n\nwhich completes the problem."
+    ], 
+    "sols_raw": [
+        "Proceeding as in the hints, we compute the 20th derivative to be\n\n&lt;math>\n\\begin{align}\np'(q) &amp;= 3e^{3q} \\\\\np''(q) &amp;= 3^{2}e^{3q} \\\\\np'''(q) &amp;= 3^{3}e^{3q} \\\\\n&amp;\\vdots \\\\\np^{(20)}(q) &amp;= 3^{20}e^{3q} \\\\\n\\end{align}\n&lt;/math>\n\nNow using the second hint, we see that\n\n&lt;math> \\displaystyle a_{20} = \\frac{p^{(20)}(1)}{20!} = \\frac{3^{20}e^{3}}{20!}&lt;/math>\n\nwhich completes the problem.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}p(q)=e^{3q}.\\end{aligned}\\]</span></p>\n<p>Consider its 20th order Taylor polynomial at q=1;</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\\end{aligned}\\]</span></p>\n<p>What is <span class=\"math\">\\(a_{20}\\)</span>?</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle{}p(q)=e^{3q}.\n\\end{align*}\n\nConsider its 20th order Taylor polynomial at q=1;\n\n\\begin{align*}\nT_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\n\\end{align*}\n\nWhat is $a_{20}$?", 
+    "statement_raw": "Let\n\n:&lt;math>\n\\displaystyle{}p(q)=e^{3q}.\n&lt;/math>\n\nConsider its 20th order Taylor polynomial at q=1;\n\n:&lt;math>\nT_{20}(q)=a_0+a_1(q-1)+a_2(q-1)^2+\\dots+a_{20}(q-1)^{20}\n&lt;/math>\n\nWhat is &lt;math>a_{20}&lt;/math>?\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(i)", 
+    "year": 2012
 }

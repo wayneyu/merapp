@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH215", 
-    "statement": "Find all values of \\emph{a} and \\emph{b} for which the ODE below is an\nexact equation. \\emph{(It is not necessary to solve the ODE.)}\n\n\\begin{align*}ax^3e^{x+y} + bx^4e^{x+y} + 2x + (x^4e^{x+y} + 2y) \\frac{dy}{dx}\u00c2\u00a0= 0\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We begin with assuming there is a governing equation $M(x,y) = 0$ and\ndifferentiating this with respect to x.\n\nThen, $\\frac{d}{dx} M(x,y) = M_x (x,y) + M_y (x,y) \\frac{dy}{dx} = 0$.\n\nHence, $M_x = a x^3 e^{x+y} + bx^4 e^{x+y} + 2x$ and\n$M_y = x^4 e^{x+y} + 2y$.\n\nBy Clairaut's theorem, there must be equality of mixed partial\nderivatives, and $M_{xy} = M_{yx}$. In our problem,\n\n\\begin{align*} M_{xy} &= ax^3 e^{x+y} + bx^4 e^{x+y} \\\\ M_{yx} &= 4x^3 e^{x+y} + x^4 e^{x+y} \\\\ &\\implies a=4, b=1 \\end{align*}\n\nby comparing the coefficients of $x^3 e^{x+y}$ and $x^4 e^{x+y}$."
+    "answer_html": "<p>by comparing the coefficients of <span class=\"math\">\\(x^3 e^{x+y}\\)</span> and <span class=\"math\">\\(x^4 e^{x+y}\\)</span>.</p>\n", 
+    "answer_latex": "by comparing the coefficients of $x^3 e^{x+y}$ and $x^4 e^{x+y}$.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>An differential equation is exact if it can be derived by differentiating an implicit equation <span class=\"math\">\\(M(x,y) = 0\\)</span> with respect to x. After differentiating with respect to x, think about Clairaut&#8217;s theorem...</p>\n"
+    ], 
+    "hints_latex": [
         "An differential equation is exact if it can be derived by\ndifferentiating an implicit equation $M(x,y) = 0$ with respect to x.\nAfter differentiating with respect to x, think about Clairaut's\ntheorem..."
-    ]
+    ], 
+    "hints_raw": [
+        "An differential equation is exact if it can be derived by differentiating an implicit equation &lt;math>M(x,y) = 0&lt;/math> with respect to x. After differentiating with respect to x, think about Clairaut's theorem...\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>We begin with assuming there is a governing equation <span class=\"math\">\\(M(x,y) = 0\\)</span> and differentiating this with respect to x.</p>\n<p>Then, <span class=\"math\">\\(\\frac{d}{dx} M(x,y) = M_x (x,y) + M_y (x,y) \\frac{dy}{dx} = 0\\)</span>.</p>\n<p>Hence, <span class=\"math\">\\(M_x = a x^3 e^{x+y} + bx^4 e^{x+y} + 2x\\)</span> and <span class=\"math\">\\(M_y = x^4 e^{x+y} + 2y\\)</span>.</p>\n<p>By Clairaut&#8217;s theorem, there must be equality of mixed partial derivatives, and <span class=\"math\">\\(M_{xy} = M_{yx}\\)</span>. In our problem,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nM_{xy} &amp;= ax^3 e^{x+y} + bx^4 e^{x+y} \\\\ M_{yx} &amp;= 4x^3 e^{x+y} + x^4 e^{x+y} \\\\ &amp;\\implies a=4, b=1 \\end{aligned}\\]</span></p>\n<p>by comparing the coefficients of <span class=\"math\">\\(x^3 e^{x+y}\\)</span> and <span class=\"math\">\\(x^4 e^{x+y}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We begin with assuming there is a governing equation $M(x,y) = 0$ and\ndifferentiating this with respect to x.\n\nThen, $\\frac{d}{dx} M(x,y) = M_x (x,y) + M_y (x,y) \\frac{dy}{dx} = 0$.\n\nHence, $M_x = a x^3 e^{x+y} + bx^4 e^{x+y} + 2x$ and\n$M_y = x^4 e^{x+y} + 2y$.\n\nBy Clairaut's theorem, there must be equality of mixed partial\nderivatives, and $M_{xy} = M_{yx}$. In our problem,\n\n\\begin{align*}\nM_{xy} &= ax^3 e^{x+y} + bx^4 e^{x+y} \\\\ M_{yx} &= 4x^3 e^{x+y} + x^4 e^{x+y} \\\\ &\\implies a=4, b=1 \n\\end{align*}\n\nby comparing the coefficients of $x^3 e^{x+y}$ and $x^4 e^{x+y}$."
+    ], 
+    "sols_raw": [
+        "We begin with assuming there is a governing equation &lt;math>M(x,y) = 0&lt;/math> and differentiating this with respect to x.\n\nThen, &lt;math>\\frac{d}{dx} M(x,y) = M_x (x,y) + M_y (x,y) \\frac{dy}{dx} = 0&lt;/math>.\n\nHence, &lt;math>M_x = a x^3 e^{x+y} + bx^4 e^{x+y} + 2x&lt;/math> and &lt;math>M_y = x^4 e^{x+y} + 2y&lt;/math>.\n\nBy Clairaut's theorem, there must be equality of mixed partial derivatives, and &lt;math>M_{xy} = M_{yx}&lt;/math>. In our problem,\n\n&lt;math> \\begin{align} M_{xy} &amp;= ax^3 e^{x+y} + bx^4 e^{x+y} \\\\ M_{yx} &amp;= 4x^3 e^{x+y} + x^4 e^{x+y} \\\\ &amp;\\implies a=4, b=1 \\end{align} &lt;/math> \n\nby comparing the coefficients of &lt;math>x^3 e^{x+y}&lt;/math> and &lt;math>x^4 e^{x+y}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find all values of <em>a</em> and <em>b</em> for which the ODE below is an exact equation. <em>(It is not necessary to solve the ODE.)</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nax^3e^{x+y} + bx^4e^{x+y} + 2x + (x^4e^{x+y} + 2y) \\frac{dy}{dx}= 0\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find all values of \\emph{a} and \\emph{b} for which the ODE below is an\nexact equation. \\emph{(It is not necessary to solve the ODE.)}\n\n\\begin{align*}\nax^3e^{x+y} + bx^4e^{x+y} + 2x + (x^4e^{x+y} + 2y) \\frac{dy}{dx}= 0\n\\end{align*}", 
+    "statement_raw": "Find all values of ''a'' and ''b'' for which the ODE below is an exact equation. ''(It is not necessary to solve the ODE.)''\n\n:&lt;math>\nax^3e^{x+y} + bx^4e^{x+y} + 2x + (x^4e^{x+y} + 2y) \\frac{dy}{dx}\u00a0= 0\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Exact_differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_02_(a)", 
+    "year": 2011
 }

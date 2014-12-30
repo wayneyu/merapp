@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_01_(i)", 
-    "course": "MATH101", 
-    "statement": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the series is absolutely convergent, conditionally\nconvergent, or divergent:\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We will use the ratio test to prove that this series is absolutely\nconvergent. Each term in the series is\n\n\\begin{align*}a_n = \\frac{(-2011)^n}{n!}\\end{align*}\n\nand so we have that\n\n\\begin{align*}\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}\\end{align*}\n\nWe see then that $\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 < 1$, and so\nthe series converges absolutely.", 
-        "As per the second hint, we note that the series is given by\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}\\end{align*}\n\nSince the function $e^x$ converges absolutely over the whole real line,\nit follows that this series does as well."
+    "answer_html": "<p>We see then that <span class=\"math\">\\(\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 &lt; 1\\)</span>, and so the series converges absolutely.</p>\n", 
+    "answer_latex": "We see then that $\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 < 1$, and so\nthe series converges absolutely.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try the ratio test.</p>\n", 
+        "<p>Alternatively, try using Taylor series. Recall that the Taylor series centered at 0 for the function <span class=\"math\">\\(e^x\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=0}^\\infty \\frac{x^n}{n!}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try the ratio test.", 
-        "Alternatively, try using Taylor series. Recall that the Taylor series\ncentered at 0 for the function $e^x$ is given by\n\n\\begin{align*}\\sum_{n=0}^\\infty \\frac{x^n}{n!}\\end{align*}"
-    ]
+        "Alternatively, try using Taylor series. Recall that the Taylor series\ncentered at 0 for the function $e^x$ is given by\n\n\\begin{align*}\n\\sum_{n=0}^\\infty \\frac{x^n}{n!}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Try the ratio test.\n", 
+        "Alternatively, try using Taylor series. Recall that the Taylor series centered at 0 for the function &lt;math>e^x&lt;/math> is given by\n\n:&lt;math>\\sum_{n=0}^\\infty \\frac{x^n}{n!}&lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (i)", 
+    "rating": 88, 
+    "sols_html": [
+        "<p>We will use the ratio test to prove that this series is absolutely convergent. Each term in the series is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na_n = \\frac{(-2011)^n}{n!}\\end{aligned}\\]</span></p>\n<p>and so we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}\\end{aligned}\\]</span></p>\n<p>We see then that <span class=\"math\">\\(\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 &lt; 1\\)</span>, and so the series converges absolutely.</p>\n", 
+        "<p>As per the second hint, we note that the series is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}\\end{aligned}\\]</span></p>\n<p>Since the function <span class=\"math\">\\(e^x\\)</span> converges absolutely over the whole real line, it follows that this series does as well.</p>\n"
+    ], 
+    "sols_latex": [
+        "We will use the ratio test to prove that this series is absolutely\nconvergent. Each term in the series is\n\n\\begin{align*}\na_n = \\frac{(-2011)^n}{n!}\n\\end{align*}\n\nand so we have that\n\n\\begin{align*}\n\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}\n\\end{align*}\n\nWe see then that $\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 < 1$, and so\nthe series converges absolutely.", 
+        "As per the second hint, we note that the series is given by\n\n\\begin{align*}\n\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}\n\\end{align*}\n\nSince the function $e^x$ converges absolutely over the whole real line,\nit follows that this series does as well."
+    ], 
+    "sols_raw": [
+        "We will use the ratio test to prove that this series is absolutely convergent. Each term in the series is\n\n:&lt;math>a_n = \\frac{(-2011)^n}{n!}&lt;/math>\n\nand so we have that\n\n:&lt;math>\\frac{a_{n+1}}{a_n} = \\frac{\\frac{(-2011)^{n+1}}{(n+1)!}}{ \\frac{(-2011)^n}{n!}} = \\frac{-2011 n!}{(n+1)!} = -\\frac{2011}{n+1}&lt;/math>\n\nWe see then that &lt;math>\\lim_{n\\to\\infty} \\frac{a_{n+1}}{a_n} = 0 &lt; 1&lt;/math>, and so the series converges absolutely.\n", 
+        "As per the second hint, we note that the series is given by\n\n:&lt;math>\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!} = e^{-2011}&lt;/math>\n\nSince the function &lt;math>e^x&lt;/math> converges absolutely over the whole real line, it follows that this series does as well.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><em>For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.</em></p>\n<p>Determine whether the series is absolutely convergent, conditionally convergent, or divergent:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{For this question, the exam asks to put your answer in the box\nprovided but also to show your work. This question is worth 3 marks.\nFull marks is given for correct answers placed in the box and at most 1\nmark is given for an incorrect answer. You are required to simplify your\nanswers as much as possible.}\n\nDetermine whether the series is absolutely convergent, conditionally\nconvergent, or divergent:\n\n\\begin{align*}\n\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}\n\\end{align*}", 
+    "statement_raw": "''For this question, the exam asks to put your answer in the box provided but also to show your work. This question is worth 3 marks. Full marks is given for correct answers placed in the box and at most 1 mark is given for an incorrect answer. You are required to simplify your answers as much as possible.''\n\nDetermine whether the series is absolutely convergent, conditionally convergent, or divergent:\n\n:&lt;math>\\sum_{n=0}^\\infty \\frac{(-2011)^n}{n!}&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Ratio_test"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_01_(i)", 
+    "year": 2011
 }

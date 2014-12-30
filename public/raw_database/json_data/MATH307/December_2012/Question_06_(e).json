@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_06_(e)", 
-    "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(e)} What are the matrix norm $\\|A^{-1}\\|$ and the condition\nnumber of \\emph{A}?", 
-    "year": 2012, 
-    "sols": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(d)}{part\n(c)}, $A^{-1} = V\\Sigma^{-1}U^T$, and using the same logic as\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)}{part\n(c)} we find that $\\left \\| A^{-1} \\right \\| = \\|\\Sigma^{-1}\\| = 2$. The\ncondition number is then\n\n\\begin{align*}\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\| = 2\\cdot 2=4.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\|=4.\\)</span></p>\n", 
+    "answer_latex": " $\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\|=4.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Use that $A^{-1} = V\\Sigma^{-1}U^T$ and the same argument as in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)}{part\n(c)} to relate the norm of \\emph{A\\textsuperscript{-1}} with the norm of\n$\\Sigma^{-1}$.", 
-        "The condition number is given by\n\n\\begin{align*}\\kappa(A) = \\left\\Vert A^{-1} \\right\\Vert \\cdot \\left\\Vert A \\right\\Vert\\end{align*}"
-    ]
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use that <span class=\"math\">\\(A^{-1} = V\\Sigma^{-1}U^T\\)</span> and the same argument as in <span>part (c)</span> to relate the norm of <em>A<sup>-1</sup></em> with the norm of <span class=\"math\">\\(\\Sigma^{-1}\\)</span>.</p>\n", 
+        "<p>The condition number is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\kappa(A) = \\left\\Vert A^{-1} \\right\\Vert \\cdot \\left\\Vert A \\right\\Vert\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Use that $A^{-1} = V\\Sigma^{-1}U^T$ and the same argument as in\n{part\n(c)} to relate the norm of \\emph{A\\textsuperscript{-1}} with the norm of\n$\\Sigma^{-1}$.", 
+        "The condition number is given by\n\n\\begin{align*}\n\\kappa(A) = \\left\\Vert A^{-1} \\right\\Vert \\cdot \\left\\Vert A \\right\\Vert\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Use that &lt;math>A^{-1} = V\\Sigma^{-1}U^T&lt;/math> and the same argument as in [[Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)|part (c)]] to relate the norm of ''A&lt;sup>-1&lt;/sup>'' with the norm of &lt;math>\\Sigma^{-1}&lt;/math>.\n", 
+        "The condition number is given by\n\n:&lt;math>\\kappa(A) = \\left\\Vert A^{-1} \\right\\Vert \\cdot \\left\\Vert A \\right\\Vert&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From <span>part (c)</span>, <span class=\"math\">\\(A^{-1} = V\\Sigma^{-1}U^T\\)</span>, and using the same logic as <span>part (c)</span> we find that <span class=\"math\">\\(\\left \\| A^{-1} \\right \\| = \\|\\Sigma^{-1}\\| = 2\\)</span>. The condition number is then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\| = 2\\cdot 2=4.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From\n{part\n(c)}, $A^{-1} = V\\Sigma^{-1}U^T$, and using the same logic as\n{part\n(c)} we find that $\\left \\| A^{-1} \\right \\| = \\|\\Sigma^{-1}\\| = 2$. The\ncondition number is then\n\n\\begin{align*}\n\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\| = 2\\cdot 2=4.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(d)|part (c)]], &lt;math>A^{-1} = V\\Sigma^{-1}U^T&lt;/math>, and using the same logic as [[Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(c)|part (c)]] we find that &lt;math>\\left \\| A^{-1} \\right \\| = \\|\\Sigma^{-1}\\| = 2&lt;/math>. The condition number is then\n:&lt;math>\\left \\| A^{-1} \\right \\|\\cdot \\left \\| A \\right \\| = 2\\cdot 2=4.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is a matrix with singular value decomposition <span class=\"math\">\\(A = U\\Sigma V^*\\)</span> where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nU &amp;= \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma &amp;= \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV &amp;= \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(e)</strong> What are the matrix norm <span class=\"math\">\\(\\|A^{-1}\\|\\)</span> and the condition number of <em>A</em>?</p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is a matrix with singular value decomposition\n$A = U\\Sigma V^*$ where\n\n\\begin{align*}\nU &= \\begin{bmatrix}\n1/\\sqrt 2 & 1/\\sqrt 2 & 0 \\\\\n1/\\sqrt 2 & -1/\\sqrt 2 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix} \\\\\n\\Sigma &= \\begin{bmatrix}\n2 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1/2\n\\end{bmatrix} \\\\\nV &= \\begin{bmatrix}\n1/\\sqrt 3 & 0 & 2/\\sqrt 6 \\\\\n1/\\sqrt 3 & 1/\\sqrt 2 & -1/\\sqrt 6 \\\\\n1/\\sqrt 3 & -1/\\sqrt 2 & -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(e)} What are the matrix norm $\\|A^{-1}\\|$ and the condition\nnumber of \\emph{A}?", 
+    "statement_raw": "Suppose that ''A'' is a matrix with singular value decomposition &lt;math>A = U\\Sigma V^*&lt;/math> where\n\n:&lt;math>\n\\begin{align}\nU = &amp; \\begin{bmatrix}\n1/\\sqrt 2 &amp; 1/\\sqrt 2 &amp; 0 \\\\\n1/\\sqrt 2 &amp; -1/\\sqrt 2 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{bmatrix} \\\\\n\\Sigma = &amp; \\begin{bmatrix}\n2 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1/2\n\\end{bmatrix} \\\\\nV = &amp; \\begin{bmatrix}\n1/\\sqrt 3 &amp; 0 &amp; 2/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; 1/\\sqrt 2 &amp; -1/\\sqrt 6 \\\\\n1/\\sqrt 3 &amp; -1/\\sqrt 2 &amp; -1/\\sqrt 6\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\n'''(e)''' What are the matrix norm &lt;math>\\|A^{-1}\\|&lt;/math> and the condition number of ''A''?\n", 
+    "term": "December", 
+    "topics": [
+        "Condition_number", 
+        "Singular_value_decomposition"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_06_(e)", 
+    "year": 2012
 }

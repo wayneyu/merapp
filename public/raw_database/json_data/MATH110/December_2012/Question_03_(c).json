@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_03_(c)", 
+    "answer_html": "<p>You can leave this answer as is.</p>\n", 
+    "answer_latex": "You can leave this answer as is.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH110", 
-    "statement": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(x)$, where $f(x)=\\dfrac{e^{3x}}{3x}$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>You need to use the quotient rule and one other rule to calculate this derivative.</p>\n"
+    ], 
+    "hints_latex": [
+        "You need to use the quotient rule and one other rule to calculate this\nderivative."
+    ], 
+    "hints_raw": [
+        "You need to use the quotient rule and one other rule to calculate this derivative.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To begin calculating this derivative, apply the quotient rule. So</p>\n<p><span class=\"math\">\\(f&#39;(x) = \\frac{(e^{3x})&#39; *(3x) - e^{3x} *(3x)&#39; }{(3x)^2}\\)</span></p>\n<p>The derivative of <em>3x</em> is simple to calculate, but in order to calculate <span class=\"math\">\\((e^{3x})&#39;\\)</span> we will need to use the chain rule as follows:</p>\n<p><span class=\"math\">\\(\\displaystyle (e^{3x})&#39;  = e^{3x}*(3x)&#39; = e^{3x}*3\\)</span></p>\n<p>Plugging this back into the quotient rule, we get:</p>\n<p><span class=\"math\">\\(f&#39;(x) = \\frac{(e^{3x}*3)*(3x) - e^{3x} *(3) }{(3x)^2}\\)</span></p>\n<p>You can leave this answer as is.</p>\n"
+    ], 
+    "sols_latex": [
         "To begin calculating this derivative, apply the quotient rule. So\n\n$f'(x) = \\frac{(e^{3x})' *(3x) - e^{3x} *(3x)' }{(3x)^2}$\n\nThe derivative of \\emph{3x} is simple to calculate, but in order to\ncalculate $(e^{3x})'$ we will need to use the chain rule as follows:\n\n$\\displaystyle (e^{3x})'  = e^{3x}*(3x)' = e^{3x}*3$\n\nPlugging this back into the quotient rule, we get:\n\n$f'(x) = \\frac{(e^{3x}*3)*(3x) - e^{3x} *(3) }{(3x)^2}$\n\nYou can leave this answer as is."
     ], 
-    "hints": [
-        "You need to use the quotient rule and one other rule to calculate this\nderivative."
-    ]
+    "sols_raw": [
+        "To begin calculating this derivative, apply the quotient rule.  So\n\n&lt;math>f'(x) = \\frac{(e^{3x})' *(3x) - e^{3x} *(3x)' }{(3x)^2}&lt;/math>\n\nThe derivative of ''3x'' is simple to calculate, but in order to calculate &lt;math>(e^{3x})'&lt;/math> we will need to use the chain rule as follows:\n\n&lt;math>\\displaystyle (e^{3x})'  = e^{3x}*(3x)' = e^{3x}*3&lt;/math>\n\nPlugging this back into the quotient rule, we get:\n\n&lt;math>f'(x) = \\frac{(e^{3x}*3)*(3x) - e^{3x} *(3) }{(3x)^2}&lt;/math>\n\nYou can leave this answer as is.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Calculate the following derivative. You may leave your answer unsimplified.</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span>, where <span class=\"math\">\\(f(x)=\\dfrac{e^{3x}}{3x}\\)</span>.</p>\n", 
+    "statement_latex": "Calculate the following derivative. You may leave your answer\nunsimplified.\n\n$\\displaystyle f'(x)$, where $f(x)=\\dfrac{e^{3x}}{3x}$.", 
+    "statement_raw": "Calculate the following derivative. You may leave your answer unsimplified.\n\n&lt;math>\\displaystyle f'(x)&lt;/math>, where &lt;math>f(x)=\\dfrac{e^{3x}}{3x}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_03_(c)", 
+    "year": 2012
 }

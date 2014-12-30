@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_06_(a)", 
-    "course": "MATH110", 
-    "statement": "Consider the\nfunction\\begin{align*}f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{align*}\n\n\\textbf{(a)} How many solutions are there to the equation $f(x)=0$?\nJustify your answer.", 
-    "year": 2013, 
-    "sols": [
-        "We first simplify using the exponential rules to get\n$f(x) = e^{x^3 + 2x^2 + x - 3}.$ Then we can solve for $f(x) = 0$.\n\n\\begin{align*}\ne^{x^3 + 2x^2 + x - 3} &= 0\\\\\nx^3 + 2x^2 + x - 3 &= \\ln(0).\\end{align*}\n\nBy taking the natural logarithm of both sides, we get a $\\ln(0)$ on the\nright hand side which is bad since $0$ is not in the domain of the\nnatural logarithm. So we conclude that there cannot be a solution to the\nequation $f(x)=0$. Hence, we have $0$ solutions."
+    "answer_html": "<p>Hence, we have <span class=\"math\">\\(0\\)</span> solutions.</p>\n", 
+    "answer_latex": "Hence, we have $0$ solutions.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
-        "Simplifying the enumerator first might help. Remember the rule for the\nproduct of exponentials\\begin{align*}(e^a)(e^b) = e^{a+b}.\\end{align*}"
-    ]
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Simplifying the enumerator first might help. Remember the rule for the product of exponentials</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(e^a)(e^b) = e^{a+b}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Simplifying the enumerator first might help. Remember the rule for the\nproduct of exponentials\\begin{align*}\n(e^a)(e^b) = e^{a+b}.\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Simplifying the enumerator first might help. Remember the rule for the product of exponentials: &lt;math>(e^a)(e^b) = e^{a+b}.&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We first simplify using the exponential rules to get <span class=\"math\">\\(f(x) = e^{x^3 + 2x^2 + x - 3}.\\)</span> Then we can solve for <span class=\"math\">\\(f(x) = 0\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ne^{x^3 + 2x^2 + x - 3} &amp;= 0\\\\\nx^3 + 2x^2 + x - 3 &amp;= \\ln(0).\\end{aligned}\\]</span></p>\n<p>By taking the natural logarithm of both sides, we get a <span class=\"math\">\\(\\ln(0)\\)</span> on the right hand side which is bad since <span class=\"math\">\\(0\\)</span> is not in the domain of the natural logarithm. So we conclude that there cannot be a solution to the equation <span class=\"math\">\\(f(x)=0\\)</span>. Hence, we have <span class=\"math\">\\(0\\)</span> solutions.</p>\n"
+    ], 
+    "sols_latex": [
+        "We first simplify using the exponential rules to get\n$f(x) = e^{x^3 + 2x^2 + x - 3}.$ Then we can solve for $f(x) = 0$.\n\n\\begin{align*}\ne^{x^3 + 2x^2 + x - 3} &= 0\\\\\nx^3 + 2x^2 + x - 3 &= \\ln(0).\n\\end{align*}\n\nBy taking the natural logarithm of both sides, we get a $\\ln(0)$ on the\nright hand side which is bad since $0$ is not in the domain of the\nnatural logarithm. So we conclude that there cannot be a solution to the\nequation $f(x)=0$. Hence, we have $0$ solutions."
+    ], 
+    "sols_raw": [
+        "We first simplify using the exponential rules to get &lt;math>f(x) = e^{x^3 + 2x^2 + x - 3}.&lt;/math> Then we can solve for &lt;math>f(x) = 0&lt;/math>.\n\n&lt;math>\\begin{align}\ne^{x^3 + 2x^2 + x - 3} &amp;= 0\\\\\nx^3 + 2x^2 + x - 3 &amp;= \\ln(0).\\end{align}&lt;/math>\n\nBy taking the natural logarithm of both sides, we get a &lt;math>\\ln(0)&lt;/math> on the right hand side which is bad since &lt;math>0&lt;/math> is not in the domain of the natural logarithm. So we conclude that there cannot be a solution to the equation &lt;math>f(x)=0&lt;/math>. Hence, we have &lt;math>0&lt;/math> solutions.\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> How many solutions are there to the equation <span class=\"math\">\\(f(x)=0\\)</span>? Justify your answer.</p>\n", 
+    "statement_latex": "Consider the\nfunction\\begin{align*}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\n\\end{align*}\n\n\\textbf{(a)} How many solutions are there to the equation $f(x)=0$?\nJustify your answer.", 
+    "statement_raw": "Consider the function: &lt;math>f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.&lt;/math>\n\n'''(a)''' How many solutions are there to the equation &lt;math>f(x)=0&lt;/math>? Justify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Function_properties"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)", 
+    "year": 2013
 }

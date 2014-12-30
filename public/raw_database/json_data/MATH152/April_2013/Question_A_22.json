@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_A_22", 
+    "answer_html": "<p>The probability of moving from location 3 to location 1 in one time step is <span class=\"math\">\\(\\displaystyle P_{1,3} = 0.1626\\)</span>.</p>\n", 
+    "answer_latex": "The probability of moving from location 3 to location 1 in one time step\nis $\\displaystyle P_{1,3} = 0.1626$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH152", 
-    "statement": "Consider a random walk with three possible states and where the random\nwalker (possibly) changes from state to state once every day according\nto the transition matrix \\emph{P}. Answer the following questions using\nthe martix \\emph{P} and some of its powers given below.\n\n\\begin{align*}\nP = \\begin{bmatrix} 0.0284 & 0.5938 & 0.1626 \\\\ 0.9207 & 0.1579 & 0.1634 \\\\ 0.0509 & 0.2483 & 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 & 0.2907 & 0.2875 \\\\ 0.3843 & 0.3753 & 0.3786 \\\\ 0.3325 & 0.3340 & 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 & 0.2875 & 0.2875 \\\\ 0.3791 & 0.3790 & 0.3790 \\\\ 0.3335 & 0.3335 & 0.3335 \\end{bmatrix}\\end{align*}\n\nWhat is the probability that a walker starting in location 3 is in\nlocation 1 after one time step?", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The probability of moving from location <span class=\"math\">\\(\\displaystyle i\\)</span> to location <span class=\"math\">\\(\\displaystyle j\\)</span> in one time step is <span class=\"math\">\\(\\displaystyle P_{j,i}\\)</span>.</p>\n<p>This is the same as the <em>i</em>-th entry of the vector <em>P<strong>ej</strong></em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "The probability of moving from location $\\displaystyle i$ to location\n$\\displaystyle j$ in one time step is $\\displaystyle P_{j,i}$.\n\nThis is the same as the \\emph{i}-th entry of the vector\n\\emph{P\\textbf{ej}}."
+    ], 
+    "hints_raw": [
+        "The probability of moving from location &lt;math> \\displaystyle i &lt;/math> to location &lt;math> \\displaystyle j &lt;/math> in one time step is &lt;math> \\displaystyle P_{j,i} &lt;/math>.\n\nThis is the same as the ''i''-th entry of the vector ''P'''e&lt;sub>j&lt;sub>'''''.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "A 22", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>The probability of moving from location 3 to location 1 in one time step is <span class=\"math\">\\(\\displaystyle P_{1,3} = 0.1626\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The probability of moving from location 3 to location 1 in one time step\nis $\\displaystyle P_{1,3} = 0.1626$."
     ], 
-    "hints": [
-        "The probability of moving from location $\\displaystyle i$ to location\n$\\displaystyle j$ in one time step is $\\displaystyle P_{j,i}$.\n\nThis is the same as the \\emph{i}-th entry of the vector\n\\emph{P\\textbf{ej}}."
-    ]
+    "sols_raw": [
+        "The probability of moving from location 3 to location 1 in one time step is &lt;math> \\displaystyle P_{1,3} = 0.1626 &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p>Consider a random walk with three possible states and where the random walker (possibly) changes from state to state once every day according to the transition matrix <em>P</em>. Answer the following questions using the martix <em>P</em> and some of its powers given below.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix} 0.0284 &amp; 0.5938 &amp; 0.1626 \\\\ 0.9207 &amp; 0.1579 &amp; 0.1634 \\\\ 0.0509 &amp; 0.2483 &amp; 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 &amp; 0.2907 &amp; 0.2875 \\\\ 0.3843 &amp; 0.3753 &amp; 0.3786 \\\\ 0.3325 &amp; 0.3340 &amp; 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 &amp; 0.2875 &amp; 0.2875 \\\\ 0.3791 &amp; 0.3790 &amp; 0.3790 \\\\ 0.3335 &amp; 0.3335 &amp; 0.3335 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>What is the probability that a walker starting in location 3 is in location 1 after one time step?</p>\n", 
+    "statement_latex": "Consider a random walk with three possible states and where the random\nwalker (possibly) changes from state to state once every day according\nto the transition matrix \\emph{P}. Answer the following questions using\nthe martix \\emph{P} and some of its powers given below.\n\n\\begin{align*}\nP = \\begin{bmatrix} 0.0284 & 0.5938 & 0.1626 \\\\ 0.9207 & 0.1579 & 0.1634 \\\\ 0.0509 & 0.2483 & 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 & 0.2907 & 0.2875 \\\\ 0.3843 & 0.3753 & 0.3786 \\\\ 0.3325 & 0.3340 & 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 & 0.2875 & 0.2875 \\\\ 0.3791 & 0.3790 & 0.3790 \\\\ 0.3335 & 0.3335 & 0.3335 \\end{bmatrix}\n\\end{align*}\n\nWhat is the probability that a walker starting in location 3 is in\nlocation 1 after one time step?", 
+    "statement_raw": "Consider a random walk with three possible states and where the random walker (possibly) changes from state to state once every day according to the transition matrix ''P''. Answer the following questions using the martix ''P'' and some of its powers given below.\n\n&lt;math>\n\\begin{align}\nP = \\begin{bmatrix} 0.0284 &amp; 0.5938 &amp; 0.1626 \\\\ 0.9207 &amp; 0.1579 &amp; 0.1634 \\\\ 0.0509 &amp; 0.2483 &amp; 0.6740 \\end{bmatrix}\n\\\\\nP^{10} = \\begin{bmatrix} 0.2832 &amp; 0.2907 &amp; 0.2875 \\\\ 0.3843 &amp; 0.3753 &amp; 0.3786 \\\\ 0.3325 &amp; 0.3340 &amp; 0.3339 \\end{bmatrix}\n\\\\\nP^{20} = \\begin{bmatrix} 0.2874 &amp; 0.2875 &amp; 0.2875 \\\\ 0.3791 &amp; 0.3790 &amp; 0.3790 \\\\ 0.3335 &amp; 0.3335 &amp; 0.3335 \\end{bmatrix}\n\\end{align}\n&lt;/math>\n\nWhat is the probability that a walker starting in location 3 is in location 1 after one time step?\n", 
+    "term": "April", 
+    "topics": [
+        "Random_walks"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_22", 
+    "year": 2013
 }

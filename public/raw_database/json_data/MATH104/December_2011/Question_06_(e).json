@@ -1,13 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_06_(e)", 
+    "answer_html": "<p>Indeed the error term was greater than the magnitude of the quadratic correction term in the quadratic approximation: (1/162 = 0.0061...&gt; 0.005)</p>\n", 
+    "answer_latex": "Indeed the error\nterm was greater than the magnitude of the quadratic correction term in\nthe quadratic approximation: (1/162 = 0.0061...\\textgreater{} 0.005)", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH104", 
-    "statement": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\ne) Compare the error bound for the linear approximation to $\\ln(0.9)$\nyou found in part (b) to the magnitude of the 2nd degree term of the\nquadratic approximation to $\\ln(0.9)$. Which do you expect to be larger\nand why?", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is the 2nd degree term of the quadratic approximation? How does it compare to the error defined in part (b)? What is the key difference?</p>\n"
+    ], 
+    "hints_latex": [
+        "What is the 2nd degree term of the quadratic approximation? How does it\ncompare to the error defined in part (b)? What is the key difference?"
+    ], 
+    "hints_raw": [
+        "What is the 2nd degree term of the quadratic approximation? How does it compare to the error defined in part (b)? What is the key difference?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "6 (e)", 
+    "rating": 4, 
+    "sols_html": [
+        "<p>We expect that the error term will be larger than or equal to the magnitude of the second-order term in the quadratic approximation. The reason for this is because the two terms have a similar form, but in the error, the <span class=\"math\">\\(M\\)</span> term replaces the <span class=\"math\">\\(\\displaystyle {}f&#39;&#39;(a)\\)</span> term in the quadratic correction, where <span class=\"math\">\\(M\\)</span> is the maximum value of <span class=\"math\">\\(\\displaystyle {}|f&#39;&#39;(x)|\\)</span> on the interval <span class=\"math\">\\([0.9,1]\\)</span>. Indeed the error term was greater than the magnitude of the quadratic correction term in the quadratic approximation: (1/162 = 0.0061... &gt; 0.005)</p>\n"
+    ], 
+    "sols_latex": [
         "We expect that the error term will be larger than or equal to the\nmagnitude of the second-order term in the quadratic approximation. The\nreason for this is because the two terms have a similar form, but in the\nerror, the $M$ term replaces the $\\displaystyle {}f''(a)$ term in the\nquadratic correction, where $M$ is the maximum value of\n$\\displaystyle {}|f''(x)|$ on the interval $[0.9,1]$. Indeed the error\nterm was greater than the magnitude of the quadratic correction term in\nthe quadratic approximation: (1/162 = 0.0061... \\textgreater{} 0.005)"
     ], 
-    "hints": [
-        "What is the 2nd degree term of the quadratic approximation? How does it\ncompare to the error defined in part (b)? What is the key difference?"
-    ]
+    "sols_raw": [
+        "We expect that the error term will be larger than or equal to the magnitude of the second-order term in the quadratic approximation. The reason for this is because the two terms have a similar form, but in the error, the &lt;math>M&lt;/math> term replaces the &lt;math>\\displaystyle{}f''(a)&lt;/math> term in the quadratic correction, where &lt;math>M&lt;/math> is the maximum value of &lt;math>\\displaystyle{}|f''(x)|&lt;/math> on the interval &lt;math>[0.9,1]&lt;/math>. Indeed the error term was greater than the magnitude of the quadratic correction term in the quadratic approximation: (1/162 = 0.0061... > 0.005)\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>In this problem, you will approximate <span class=\"math\">\\(\\ln(0.9)\\)</span> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of <span class=\"math\">\\(\\ln(x)\\)</span> for <span class=\"math\">\\(x\\)</span> near 1 to help you answer some parts of this question.</p>\n<p>e) Compare the error bound for the linear approximation to <span class=\"math\">\\(\\ln(0.9)\\)</span> you found in part (b) to the magnitude of the 2nd degree term of the quadratic approximation to <span class=\"math\">\\(\\ln(0.9)\\)</span>. Which do you expect to be larger and why?</p>\n", 
+    "statement_latex": "In this problem, you will approximate $\\ln(0.9)$ in two ways: one using\nlinear approximation and the other using quadratic approximation. You\nmay find it useful to draw the graph of $\\ln(x)$ for $x$ near 1 to help\nyou answer some parts of this question.\n\ne) Compare the error bound for the linear approximation to $\\ln(0.9)$\nyou found in part (b) to the magnitude of the 2nd degree term of the\nquadratic approximation to $\\ln(0.9)$. Which do you expect to be larger\nand why?", 
+    "statement_raw": "In this problem, you will approximate &lt;math>\\ln(0.9)&lt;/math> in two ways: one using linear approximation and the other using quadratic approximation. You may find it useful to draw the graph of &lt;math>\\ln(x)&lt;/math> for &lt;math>x&lt;/math> near 1 to help you answer some parts of this question.\n\ne) Compare the error bound for the linear approximation to &lt;math>\\ln(0.9)&lt;/math> you found in part (b) to the magnitude of the 2nd degree term of the quadratic approximation to &lt;math>\\ln(0.9)&lt;/math>.\nWhich do you expect to be larger and why?\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation", 
+        "Taylor%27s_remainder_theorem", 
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_06_(e)", 
+    "year": 2011
 }

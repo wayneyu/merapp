@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
+    "answer_html": "<p>Here since we have a decreasing function left of <em>1</em> and an increasing function right of <em>1</em>, we have that <span class=\"math\">\\(x=1\\)</span> is a local minimum.</p>\n", 
+    "answer_latex": "Here since we have a\ndecreasing function left of \\emph{1} and an increasing function right of\n\\emph{1}, we have that $x=1$ is a local minimum.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(b) Find the \\emph{x}-coordinates of the local maxima and local minima\nof $f(x)$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember that local extrema can only occur at critical points (that are also points in the domain). Check the critical points from the previous part and determine if they are local maximums or local minimums (refer to part a for the necessary computations).</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that local extrema can only occur at critical points (that are\nalso points in the domain). Check the critical points from the previous\npart and determine if they are local maximums or local minimums (refer\nto part a for the necessary computations)."
+    ], 
+    "hints_raw": [
+        "Remember that local extrema can only occur at critical points (that are also points in the domain).  Check the critical points from the previous part and determine if they are local maximums or local minimums (refer to part a for the necessary computations).\n"
+    ], 
+    "num_votes": 7, 
+    "question": "6 (b)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>As stated in the hint, local extrema can only occur at critical points that are also points in the domain. Based on our work in part a, we have two critical points, but only <span class=\"math\">\\(x = 1\\)</span> is in the domain. Thus, we only need to check if <span class=\"math\">\\(x = 1\\)</span> is a minimum or maximum. Here since we have a decreasing function left of <em>1</em> and an increasing function right of <em>1</em>, we have that <span class=\"math\">\\(x=1\\)</span> is a local minimum.</p>\n"
+    ], 
+    "sols_latex": [
         "As stated in the hint, local extrema can only occur at critical points\nthat are also points in the domain. Based on our work in part a, we have\ntwo critical points, but only $x = 1$ is in the domain. Thus, we only\nneed to check if $x = 1$ is a minimum or maximum. Here since we have a\ndecreasing function left of \\emph{1} and an increasing function right of\n\\emph{1}, we have that $x=1$ is a local minimum."
     ], 
-    "hints": [
-        "Remember that local extrema can only occur at critical points (that are\nalso points in the domain). Check the critical points from the previous\npart and determine if they are local maximums or local minimums (refer\nto part a for the necessary computations)."
-    ]
+    "sols_raw": [
+        "As stated in the hint, local extrema can only occur at critical points that are also points in the domain.  Based on our work in part a, we have two critical points, but only &lt;math>x = 1&lt;/math> is in the domain.  Thus, we only need to check if &lt;math>x = 1&lt;/math> is a minimum or maximum.  Here since we have a decreasing function left of ''1'' and an increasing function right of ''1'', we have that &lt;math> x=1 &lt;/math> is a local minimum.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 5-11, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions.</strong></p>\n<p>6. Let <span class=\"math\">\\(f(x) = 2x^{3/5} + 3x^{-2/5}\\)</span>. Note that the domain of <span class=\"math\">\\(f\\)</span> is the set of all nonzero real numbers; for example, <span class=\"math\">\\(f(-1) = -2 + 3 = 1\\)</span>.</p>\n<p>(b) Find the <em>x</em>-coordinates of the local maxima and local minima of <span class=\"math\">\\(f(x)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(b) Find the \\emph{x}-coordinates of the local maxima and local minima\nof $f(x)$.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these  questions.'''\n\n6. Let &lt;math>f(x) = 2x^{3/5} + 3x^{-2/5}&lt;/math>. Note that the domain of &amp;fnof; is the set of all nonzero real numbers; for example, &lt;math>f(-1) = -2 + 3 = 1&lt;/math>.\n\n(b) Find the ''x''-coordinates of the local maxima and local minima of &lt;math>f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_06_(b)", 
+    "year": 2012
 }

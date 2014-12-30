@@ -1,13 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_04_(b)", 
-    "course": "MATH103", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind the general solution to the differential equation above.", 
-    "year": 2012, 
-    "sols": [
-        "Separating variables and integrating as an indefinite integral,\n\n\\begin{align*}\n\\frac{y \\; dy}{y^2-k^2} &= -\\lambda t \\; dt \\\\\n\\int \\frac{y \\; dy}{y^2-k^2} &= -\\lambda \\int t \\; dt\\end{align*}\n\nWe make a simple substitution in the \\emph{y} integral \\emph{u}=\n\\emph{y}\\textsuperscript{2}-\\emph{k}\\textsuperscript{2}, d\\emph{u} =\n2\\emph{y} d\\emph{y} to find\n\n\\begin{align*}\n\\int \\frac{\\frac{1}{2} du}{u} &= -\\lambda \\frac{1}{2} t^2 + C_1  \\\\\n\\frac{1}{2} \\ln(|u|) &= -\\lambda \\frac{1}{2} t^2 + C_1 \\\\\n\\ln(|y^2-k^2|) &= -\\lambda  t^2 + C_2,\\end{align*}\n\nwith \\emph{C\\textsubscript{2}}=2\\emph{C\\textsubscript{1}} is the\nconstant of integration. Evaluating this at \\emph{t}=0, we find\n$C_2 = \\ln(|y_0^2-k^2|)$, hence\n\n\\begin{align*}\n\\ln(|y^2-k^2|) &= \\ln(|y_0^2-k^2|) -\\lambda  t^2 \\\\\n|y^2-k^2| &= |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t)^2 &= k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t) &= \\pm \\sqrt{k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2}}\\end{align*}\n\nTo choose branches $\\pm$ we need more specific initial conditions."
+    "answer_html": "<p>To choose branches <span class=\"math\">\\(\\pm\\)</span> we need more specific initial conditions.</p>\n", 
+    "answer_latex": "To choose branches $\\pm$ we need more specific initial conditions.", 
+    "contributors": [
+        "IsabellGraf", 
+        "CarmenBruni", 
+        "RobertFraser", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To solve this differential equation, use separation of variables: Move all the y&#8217;s to the left hand side of the equation, move all the t&#8217;s to the right hand side of the equation, and integrate the left hand side in y and the right hand side in t.</p>\n"
+    ], 
+    "hints_latex": [
         "To solve this differential equation, use separation of variables: Move\nall the y's to the left hand side of the equation, move all the t's to\nthe right hand side of the equation, and integrate the left hand side in\ny and the right hand side in t."
-    ]
+    ], 
+    "hints_raw": [
+        "To solve this differential equation, use separation of variables:  Move all the y's to the left hand side of the equation, move all the t's to the right hand side of the equation, and integrate the left hand side in y and the right hand side in t.\n"
+    ], 
+    "num_votes": 12, 
+    "question": "4 (b)", 
+    "rating": 23, 
+    "sols_html": [
+        "<p>Separating variables and integrating as an indefinite integral,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{y \\; dy}{y^2-k^2} &amp;= -\\lambda t \\; dt \\\\\n\\int \\frac{y \\; dy}{y^2-k^2} &amp;= -\\lambda \\int t \\; dt\\end{aligned}\\]</span></p>\n<p>We make a simple substitution in the <em>y</em> integral <em>u</em>= <em>y</em><sup>2</sup>-<em>k</em><sup>2</sup>, d<em>u</em> = 2<em>y</em> d<em>y</em> to find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\frac{1}{2} du}{u} &amp;= -\\lambda \\frac{1}{2} t^2 + C_1  \\\\\n\\frac{1}{2} \\ln(|u|) &amp;= -\\lambda \\frac{1}{2} t^2 + C_1 \\\\\n\\ln(|y^2-k^2|) &amp;= -\\lambda  t^2 + C_2,\\end{aligned}\\]</span></p>\n<p>with <em>C<sub>2</sub></em>=2<em>C<sub>1</sub></em> is the constant of integration. Evaluating this at <em>t</em>=0, we find <span class=\"math\">\\(C_2 = \\ln(|y_0^2-k^2|)\\)</span>, hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln(|y^2-k^2|) &amp;= \\ln(|y_0^2-k^2|) -\\lambda  t^2 \\\\\n|y^2-k^2| &amp;= |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t)^2 &amp;= k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t) &amp;= \\pm \\sqrt{k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2}}\\end{aligned}\\]</span></p>\n<p>To choose branches <span class=\"math\">\\(\\pm\\)</span> we need more specific initial conditions.</p>\n"
+    ], 
+    "sols_latex": [
+        "Separating variables and integrating as an indefinite integral,\n\n\\begin{align*}\n\\frac{y \\; dy}{y^2-k^2} &= -\\lambda t \\; dt \\\\\n\\int \\frac{y \\; dy}{y^2-k^2} &= -\\lambda \\int t \\; dt\n\\end{align*}\n\nWe make a simple substitution in the \\emph{y} integral \\emph{u}=\n\\emph{y}\\textsuperscript{2}-\\emph{k}\\textsuperscript{2}, d\\emph{u} =\n2\\emph{y} d\\emph{y} to find\n\n\\begin{align*}\n\\int \\frac{\\frac{1}{2} du}{u} &= -\\lambda \\frac{1}{2} t^2 + C_1  \\\\\n\\frac{1}{2} \\ln(|u|) &= -\\lambda \\frac{1}{2} t^2 + C_1 \\\\\n\\ln(|y^2-k^2|) &= -\\lambda  t^2 + C_2,\n\\end{align*}\n\nwith \\emph{C\\textsubscript{2}}=2\\emph{C\\textsubscript{1}} is the\nconstant of integration. Evaluating this at \\emph{t}=0, we find\n$C_2 = \\ln(|y_0^2-k^2|)$, hence\n\n\\begin{align*}\n\\ln(|y^2-k^2|) &= \\ln(|y_0^2-k^2|) -\\lambda  t^2 \\\\\n|y^2-k^2| &= |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t)^2 &= k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t) &= \\pm \\sqrt{k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2}}\n\\end{align*}\n\nTo choose branches $\\pm$ we need more specific initial conditions."
+    ], 
+    "sols_raw": [
+        "Separating variables and integrating as an indefinite integral,\n\n:&lt;math>\n\\begin{align}\n\\frac{y \\; dy}{y^2-k^2} &amp; = -\\lambda t \\; dt \\\\\n\\int \\frac{y \\; dy}{y^2-k^2} &amp; = -\\lambda \\int t \\; dt\n\\end{align}\n&lt;/math>\n\nWe make a simple substitution in the ''y'' integral ''u''= ''y''&lt;sup>2&lt;/sup>-''k''&lt;sup>2&lt;/sup>, d''u'' = 2''y'' d''y'' to find\n\n:&lt;math>\n\\begin{align}\n\\int \\frac{\\frac{1}{2} du}{u} &amp; = -\\lambda \\frac{1}{2} t^2 + C_1  \\\\\n\\frac{1}{2} \\ln(|u|) &amp; = -\\lambda \\frac{1}{2} t^2 + C_1 \\\\\n\\ln(|y^2-k^2|) &amp; = -\\lambda  t^2 + C_2,\n\\end{align}\n&lt;/math>\n\nwith ''C&lt;sub>2&lt;/sub>''=2''C&lt;sub>1&lt;/sub>'' is the constant of integration. Evaluating this at ''t''=0, we find &lt;math>C_2 = \\ln(|y_0^2-k^2|)&lt;/math>, hence\n\n:&lt;math>\n\\begin{align}\n\\ln(|y^2-k^2|) &amp; = \\ln(|y_0^2-k^2|) -\\lambda  t^2 \\\\\n|y^2-k^2| &amp; = |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t)^2 &amp; = k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2} \\\\\ny(t) &amp; = \\pm \\sqrt{k^2 \\pm  |y_0^2-k^2| e^{-\\lambda  t^2}}\n\\end{align}\n&lt;/math>\n\nTo choose branches &lt;math>\\pm&lt;/math> we need more specific initial conditions.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\lambda\\)</span> is a positive constant, <em>t</em> <span class=\"math\">\\(\\geq\\)</span> 0, <em>k</em> &gt; 0, but <em>y</em> may be positive or negative. Suppose <em>y</em>(0) = <em>y</em><sub>0</sub>.</p>\n<p>Find the general solution to the differential equation above.</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n\\end{align*}\n\nwhere $\\lambda$ is a positive constant, \\emph{t} $\\geq$ 0, \\emph{k}\n\\textgreater{} 0, but \\emph{y} may be positive or negative. Suppose\n\\emph{y}(0) = \\emph{y}\\textsubscript{0}.\n\nFind the general solution to the differential equation above.", 
+    "statement_raw": "Consider the differential equation\n\n:&lt;math>\n\\frac{dy}{dt} = -\\lambda t \\left( \\frac{y^2 - k^2}{y} \\right),\n&lt;/math>\n\nwhere &lt;math> \\lambda &lt;/math> is a positive constant, ''t'' &amp;ge; 0, ''k'' > 0, but ''y'' may be positive or negative. Suppose\n''y''(0) = ''y''&lt;sub>0&lt;/sub>.\n\nFind the general solution to the differential equation above.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Initial_value_problem", 
+        "Separation_of_variables"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_04_(b)", 
+    "year": 2012
 }

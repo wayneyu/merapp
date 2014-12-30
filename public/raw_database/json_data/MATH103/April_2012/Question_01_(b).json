@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH103", 
-    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\begin{align*}\\int_1^{\\infty} \\frac {x^2}{x^3+2x+5} \\,dx\\end{align*} converge?\n\nA. Converge.\n\nB. Diverge.", 
-    "year": 2012, 
-    "sols": [
-        "The difference between the highest exponents is 3 - 2 = 1. By the\nintergral \\emph{p} test (with \\emph{p} = 1) this integral diverges.\n\nMore precisely we estimate the integral with\n\n\\begin{align*}\\int_1^\\infty\\frac{x^2}{x^3 + 2x + 5}dx > \\int_1^\\infty\\frac{x^2}{x^3 + 2x^3 + 5x^3}dx = \\frac18\\int_1^\\infty\\frac1xdx\\end{align*}\n\nHere we see exactly how to use the integral \\emph{p} test. We also can\ncontinue with the anti-derivative\n\n\\begin{align*}\\frac18\\int_1^\\infty\\frac1xdx = \\frac18\\lim_{\\alpha\\rightarrow\\infty}[\\text{ln}(x)]_1^\\alpha = \\frac18\\lim_{\\alpha\\rightarrow\\infty}\\text{ln}(\\alpha)=\\infty\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac18\\int_1^\\infty\\frac1xdx=\\infty\\)</span></p>\n", 
+    "answer_latex": " $\\frac18\\int_1^\\infty\\frac1xdx=\\infty$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the integral <em>p</em> test.</p>\n", 
+        "<p>If you do not know how to use the integral <em>p</em> test, estimate the integral with a lower bound first.</p>\n"
+    ], 
+    "hints_latex": [
         "Use the integral \\emph{p} test.", 
         "If you do not know how to use the integral \\emph{p} test, estimate the\nintegral with a lower bound first."
-    ]
+    ], 
+    "hints_raw": [
+        "Use the integral ''p'' test.\n", 
+        "If you do not know how to use the integral ''p'' test, estimate the integral with a lower bound first.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "1 (b)", 
+    "rating": 51, 
+    "sols_html": [
+        "<p>The difference between the highest exponents is 3 - 2 = 1. By the intergral <em>p</em> test (with <em>p</em> = 1) this integral diverges.</p>\n<p>More precisely we estimate the integral with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^\\infty\\frac{x^2}{x^3 + 2x + 5}dx &gt; \\int_1^\\infty\\frac{x^2}{x^3 + 2x^3 + 5x^3}dx = \\frac18\\int_1^\\infty\\frac1xdx\\end{aligned}\\]</span></p>\n<p>Here we see exactly how to use the integral <em>p</em> test. We also can continue with the anti-derivative</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac18\\int_1^\\infty\\frac1xdx = \\frac18\\lim_{\\alpha\\rightarrow\\infty}[\\text{ln}(x)]_1^\\alpha = \\frac18\\lim_{\\alpha\\rightarrow\\infty}\\text{ln}(\\alpha)=\\infty\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The difference between the highest exponents is 3 - 2 = 1. By the\nintergral \\emph{p} test (with \\emph{p} = 1) this integral diverges.\n\nMore precisely we estimate the integral with\n\n\\begin{align*}\n\\int_1^\\infty\\frac{x^2}{x^3 + 2x + 5}dx > \\int_1^\\infty\\frac{x^2}{x^3 + 2x^3 + 5x^3}dx = \\frac18\\int_1^\\infty\\frac1xdx\n\\end{align*}\n\nHere we see exactly how to use the integral \\emph{p} test. We also can\ncontinue with the anti-derivative\n\n\\begin{align*}\n\\frac18\\int_1^\\infty\\frac1xdx = \\frac18\\lim_{\\alpha\\rightarrow\\infty}[\\text{ln}(x)]_1^\\alpha = \\frac18\\lim_{\\alpha\\rightarrow\\infty}\\text{ln}(\\alpha)=\\infty\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The difference between the highest exponents is 3 - 2 = 1. By the intergral ''p'' test (with ''p'' = 1) this integral diverges.\n\nMore precisely we estimate the integral with\n:&lt;math>\n\\int_1^\\infty\\frac{x^2}{x^3 + 2x + 5}dx > \\int_1^\\infty\\frac{x^2}{x^3 + 2x^3 + 5x^3}dx = \\frac18\\int_1^\\infty\\frac1xdx\n&lt;/math>\n\nHere we see exactly how to use the integral ''p'' test. We also can continue with the anti-derivative\n:&lt;math>\n\\frac18\\int_1^\\infty\\frac1xdx = \\frac18\\lim_{\\alpha\\rightarrow\\infty}[\\text{ln}(x)]_1^\\alpha = \\frac18\\lim_{\\alpha\\rightarrow\\infty}\\text{ln}(\\alpha)=\\infty\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).</p>\n<p>Does the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^{\\infty} \\frac {x^2}{x^3+2x+5} \\,dx\\end{aligned}\\]</span></p>\n<p>converge?</p>\n<p>A. Converge.</p>\n<p>B. Diverge.</p>\n", 
+    "statement_latex": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nDoes the integral\n\n\\begin{align*}\n\\int_1^{\\infty} \\frac {x^2}{x^3+2x+5} \\,dx\n\\end{align*} converge?\n\nA. Converge.\n\nB. Diverge.", 
+    "statement_raw": "Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).\n\nDoes the integral\n:&lt;math>\n\\int_1^{\\infty} \\frac {x^2}{x^3+2x+5} \\,dx\n&lt;/math>\nconverge? \n\nA. Converge.\n\nB. Diverge.\n", 
+    "term": "April", 
+    "topics": [
+        "Direct_comparison_test", 
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_01_(b)", 
+    "year": 2012
 }

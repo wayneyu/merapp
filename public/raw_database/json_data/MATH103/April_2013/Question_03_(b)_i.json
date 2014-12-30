@@ -1,17 +1,60 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)_i", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Continuous Probability}.\n\n\\textbf{Consider $\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}$. Convert\n$\\displaystyle f(x)$ into a probability density function (pdf)\n$\\displaystyle p(x)$ on an interval $\\displaystyle (a,b)$}\n\nWith $\\displaystyle p(x) = cf(x)$, find the minimal \\emph{a}, maximal\n\\emph{b}, and the constant $\\displaystyle c > 0$", 
-    "year": 2013, 
-    "sols": [
-        "Firstly, notice that in order for the denominator to be well defined, we\nrequire that $\\displaystyle 1-x > 0$ (strictly greater than 0 since the\ndenominator of a fraction cannot be 0). This gives us that \\emph{b} has\nvalue 1 if it is to be maximal. Now, for a to be minimal, we notice that\nthe denominator is always positive if \\emph{a} is less than 1 so that\ngives no restriction. However the numerator has to be positive in order\nto have a pdf and so we require that \\emph{a} is greater than 0. Lastly,\nthe area condition on a pdf shows us that\n\n$\\displaystyle 1 = \\int_{0}^{1} \\frac{cx}{\\sqrt{1-x}} = \\lim_{q \\to 1^{-}}\\int_{0}^{q}\\frac{cx}{\\sqrt{1-x}}$\n\nLet $\\displaystyle u = 1-x$ so that $\\displaystyle du = -dx$,\n$\\displaystyle u(0) = 1$, $\\displaystyle u(q) = 1-q$ and substituting\ngives\n\n\\begin{align*}\n1 &= \\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{cx}{\\sqrt{1-x}} \\\\\n&= \\lim_{q \\to 1^{-}}\\int_{1}^{1-q}\\frac{-c(1-u)}{\\sqrt{u}} \\\\\n&= \\lim_{q \\to 1^{-}} c\\int_{1-q}^{1}(\\sqrt{u}^{-1}-\\sqrt{u})\\,du \\\\\n&= \\lim_{q \\to 1^{-}} c(2\\sqrt{u} - \\frac{2u^{3/2}}{3})\\big|_{1-q}^{1} \\\\\n&= \\lim_{q \\to 1^{-}} \\big(c(2\\sqrt{1} - \\frac{2(1)^{3/2}}{3}) - c(2\\sqrt{1-q} - \\frac{2(1-q)^{3/2}}{3})\\big)\\\\\n&= c\\left(2 - \\frac{2}{3}\\right)\\\\\n&= \\frac{4c}{3}\\end{align*}\n\nand isolating for c gives us that $c = 3/4$."
+    "answer_html": "<p>and isolating for c gives us that <span class=\"math\">\\(c = 3/4\\)</span>.</p>\n", 
+    "answer_latex": "and isolating for c gives us that $c = 3/4$.", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The function itself gives a natural restriction on how big <em>b</em> can be. What goes wrong with your function if <em>b</em> is too big?</p>\n", 
+        "<p>The fact that a pdf is positive gives you a restriction on <em>a</em>.</p>\n", 
+        "<p>All pdfs have the property that the area under the curve where the function is defined must be 1. Use this to find <em>c</em>.</p>\n", 
+        "<p>To integrate the function, use a substitution.</p>\n", 
+        "<p>The substitution you seek is <span class=\"math\">\\(\\displaystyle u = 1-x\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "The function itself gives a natural restriction on how big \\emph{b} can\nbe. What goes wrong with your function if \\emph{b} is too big?", 
         "The fact that a pdf is positive gives you a restriction on \\emph{a}.", 
         "All pdfs have the property that the area under the curve where the\nfunction is defined must be 1. Use this to find \\emph{c}.", 
         "To integrate the function, use a substitution.", 
         "The substitution you seek is $\\displaystyle u = 1-x$."
-    ]
+    ], 
+    "hints_raw": [
+        "The function itself gives a natural restriction on how big ''b'' can be. What goes wrong with your function if ''b'' is too big?\n", 
+        "The fact that a pdf is positive gives you a restriction on ''a''.\n", 
+        "All pdfs have the property that the area under the curve where the function is defined must be 1. Use this to find ''c''.\n", 
+        "To integrate the function, use a substitution.\n", 
+        "The substitution you seek is &lt;math> \\displaystyle u = 1-x&lt;/math>.\n"
+    ], 
+    "num_votes": 15, 
+    "question": "3 (b) i", 
+    "rating": 5, 
+    "sols_html": [
+        "<p>Firstly, notice that in order for the denominator to be well defined, we require that <span class=\"math\">\\(\\displaystyle 1-x &gt; 0\\)</span> (strictly greater than 0 since the denominator of a fraction cannot be 0). This gives us that <em>b</em> has value 1 if it is to be maximal. Now, for a to be minimal, we notice that the denominator is always positive if <em>a</em> is less than 1 so that gives no restriction. However the numerator has to be positive in order to have a pdf and so we require that <em>a</em> is greater than 0. Lastly, the area condition on a pdf shows us that</p>\n<p><span class=\"math\">\\(\\displaystyle 1 = \\int_{0}^{1} \\frac{cx}{\\sqrt{1-x}} = \\lim_{q \\to 1^{-}}\\int_{0}^{q}\\frac{cx}{\\sqrt{1-x}}\\)</span></p>\n<p>Let <span class=\"math\">\\(\\displaystyle u = 1-x\\)</span> so that <span class=\"math\">\\(\\displaystyle du = -dx\\)</span>, <span class=\"math\">\\(\\displaystyle u(0) = 1\\)</span>, <span class=\"math\">\\(\\displaystyle u(q) = 1-q\\)</span> and substituting gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= \\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{cx}{\\sqrt{1-x}} \\\\\n&amp;= \\lim_{q \\to 1^{-}}\\int_{1}^{1-q}\\frac{-c(1-u)}{\\sqrt{u}} \\\\\n&amp;= \\lim_{q \\to 1^{-}} c\\int_{1-q}^{1}(\\sqrt{u}^{-1}-\\sqrt{u})\\,du \\\\\n&amp;= \\lim_{q \\to 1^{-}} c(2\\sqrt{u} - \\frac{2u^{3/2}}{3})\\big|_{1-q}^{1} \\\\\n&amp;= \\lim_{q \\to 1^{-}} \\big(c(2\\sqrt{1} - \\frac{2(1)^{3/2}}{3}) - c(2\\sqrt{1-q} - \\frac{2(1-q)^{3/2}}{3})\\big)\\\\\n&amp;= c\\left(2 - \\frac{2}{3}\\right)\\\\\n&amp;= \\frac{4c}{3}\\end{aligned}\\]</span></p>\n<p>and isolating for c gives us that <span class=\"math\">\\(c = 3/4\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Firstly, notice that in order for the denominator to be well defined, we\nrequire that $\\displaystyle 1-x > 0$ (strictly greater than 0 since the\ndenominator of a fraction cannot be 0). This gives us that \\emph{b} has\nvalue 1 if it is to be maximal. Now, for a to be minimal, we notice that\nthe denominator is always positive if \\emph{a} is less than 1 so that\ngives no restriction. However the numerator has to be positive in order\nto have a pdf and so we require that \\emph{a} is greater than 0. Lastly,\nthe area condition on a pdf shows us that\n\n$\\displaystyle 1 = \\int_{0}^{1} \\frac{cx}{\\sqrt{1-x}} = \\lim_{q \\to 1^{-}}\\int_{0}^{q}\\frac{cx}{\\sqrt{1-x}}$\n\nLet $\\displaystyle u = 1-x$ so that $\\displaystyle du = -dx$,\n$\\displaystyle u(0) = 1$, $\\displaystyle u(q) = 1-q$ and substituting\ngives\n\n\\begin{align*}\n1 &= \\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{cx}{\\sqrt{1-x}} \\\\\n&= \\lim_{q \\to 1^{-}}\\int_{1}^{1-q}\\frac{-c(1-u)}{\\sqrt{u}} \\\\\n&= \\lim_{q \\to 1^{-}} c\\int_{1-q}^{1}(\\sqrt{u}^{-1}-\\sqrt{u})\\,du \\\\\n&= \\lim_{q \\to 1^{-}} c(2\\sqrt{u} - \\frac{2u^{3/2}}{3})\\big|_{1-q}^{1} \\\\\n&= \\lim_{q \\to 1^{-}} \\big(c(2\\sqrt{1} - \\frac{2(1)^{3/2}}{3}) - c(2\\sqrt{1-q} - \\frac{2(1-q)^{3/2}}{3})\\big)\\\\\n&= c\\left(2 - \\frac{2}{3}\\right)\\\\\n&= \\frac{4c}{3}\n\\end{align*}\n\nand isolating for c gives us that $c = 3/4$."
+    ], 
+    "sols_raw": [
+        "Firstly, notice that in order for the denominator to be well defined, we require that &lt;math> \\displaystyle 1-x > 0&lt;/math> (strictly greater than 0 since the denominator of a fraction cannot be 0). This gives us that ''b'' has value 1 if it is to be maximal. Now, for a to be minimal, we notice that the denominator is always positive if ''a'' is less than 1 so that gives no restriction. However the numerator has to be positive in order to have a pdf and so we require that ''a'' is greater than 0. Lastly, the area condition on a pdf shows us that\n\n&lt;math> \\displaystyle 1 = \\int_{0}^{1} \\frac{cx}{\\sqrt{1-x}} = \\lim_{q \\to 1^{-}}\\int_{0}^{q}\\frac{cx}{\\sqrt{1-x}}&lt;/math>\n\nLet &lt;math> \\displaystyle u = 1-x&lt;/math> so that &lt;math> \\displaystyle du = -dx&lt;/math>, &lt;math> \\displaystyle u(0) = 1&lt;/math>, &lt;math> \\displaystyle u(q) = 1-q&lt;/math> and substituting gives\n\n&lt;math> \n\\begin{align}\n1 &amp;= \\lim_{q \\to 1^{-}}\\int_{0}^{q} \\frac{cx}{\\sqrt{1-x}} \\\\\n&amp;= \\lim_{q \\to 1^{-}}\\int_{1}^{1-q}\\frac{-c(1-u)}{\\sqrt{u}} \\\\\n&amp;= \\lim_{q \\to 1^{-}} c\\int_{1-q}^{1}(\\sqrt{u}^{-1}-\\sqrt{u})\\,du \\\\\n&amp;= \\lim_{q \\to 1^{-}} c(2\\sqrt{u} - \\frac{2u^{3/2}}{3})\\big|_{1-q}^{1} \\\\\n&amp;= \\lim_{q \\to 1^{-}} \\big(c(2\\sqrt{1} - \\frac{2(1)^{3/2}}{3}) - c(2\\sqrt{1-q} - \\frac{2(1-q)^{3/2}}{3})\\big)\\\\\n&amp;= c\\left(2 - \\frac{2}{3}\\right)\\\\\n&amp;= \\frac{4c}{3}\n\\end{align}\n&lt;/math>\n\nand isolating for c gives us that &lt;math> c = 3/4 &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Continuous Probability</strong>.</p>\n<p><strong>Consider <span class=\"math\">\\(\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}\\)</span>. Convert <span class=\"math\">\\(\\displaystyle f(x)\\)</span> into a probability density function (pdf) <span class=\"math\">\\(\\displaystyle p(x)\\)</span> on an interval <span class=\"math\">\\(\\displaystyle (a,b)\\)</span></strong></p>\n<p>With <span class=\"math\">\\(\\displaystyle p(x) = cf(x)\\)</span>, find the minimal <em>a</em>, maximal <em>b</em>, and the constant <span class=\"math\">\\(\\displaystyle c &gt; 0\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Continuous Probability}.\n\n\\textbf{Consider $\\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}$. Convert\n$\\displaystyle f(x)$ into a probability density function (pdf)\n$\\displaystyle p(x)$ on an interval $\\displaystyle (a,b)$}\n\nWith $\\displaystyle p(x) = cf(x)$, find the minimal \\emph{a}, maximal\n\\emph{b}, and the constant $\\displaystyle c > 0$", 
+    "statement_raw": "'''Continuous Probability'''. \n\n'''Consider &lt;math> \\displaystyle f(x) = \\frac{x}{\\sqrt{1-x}}&lt;/math>. Convert &lt;math> \\displaystyle f(x)&lt;/math>  into a probability density function (pdf) &lt;math> \\displaystyle p(x)&lt;/math> on an interval &lt;math> \\displaystyle (a,b)&lt;/math>'''\n\nWith &lt;math> \\displaystyle p(x) = cf(x)&lt;/math>, find the minimal ''a'', maximal ''b'', and the constant &lt;math> \\displaystyle c > 0 &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_03_(b)_i", 
+    "year": 2013
 }

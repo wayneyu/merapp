@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int x^2 \\ln x \\ dx.$", 
-    "year": 2009, 
-    "sols": [
-        "Integrating by parts,\\begin{align*}\n\\int x^2\\ln x\\, dx &= \\frac{x^3}{3} \\ln x - \\int  \\frac{x^3}{3}\\frac{1}{x}\\, dx\\\\\n&= \\frac{x^3}{3} \\ln x -  \\int  \\frac{x^2}{3}\\, dx\\\\\n&= \\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C. \\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int x^2\\ln x\\, dx=\\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C.\\)</span></p>\n", 
+    "answer_latex": " $\\int x^2\\ln x\\, dx=\\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use integration by parts.</p>\n", 
+        "<p>Let <span class=\"math\">\\(f(x)=\\ln x\\)</span> and <span class=\"math\">\\(g&#39;(x)=x^2\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Use integration by parts.", 
         "Let $f(x)=\\ln x$ and $g'(x)=x^2$."
-    ]
+    ], 
+    "hints_raw": [
+        "Use integration by parts.\n", 
+        "Let &lt;math>f(x)=\\ln x&lt;/math> and &lt;math>g'(x)=x^2&lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (d)", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>Integrating by parts,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2\\ln x\\, dx &amp;= \\frac{x^3}{3} \\ln x - \\int  \\frac{x^3}{3}\\frac{1}{x}\\, dx\\\\\n&amp;= \\frac{x^3}{3} \\ln x -  \\int  \\frac{x^2}{3}\\, dx\\\\\n&amp;= \\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C. \\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Integrating by parts,\\begin{align*}\n\\int x^2\\ln x\\, dx &= \\frac{x^3}{3} \\ln x - \\int  \\frac{x^3}{3}\\frac{1}{x}\\, dx\\\\\n&= \\frac{x^3}{3} \\ln x -  \\int  \\frac{x^2}{3}\\, dx\\\\\n&= \\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C. \n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Integrating by parts,&lt;br />\n&lt;math>\\begin{align}\n\\int x^2\\ln x\\, dx &amp;= \\frac{x^3}{3} \\ln x - \\int  \\frac{x^3}{3}\\frac{1}{x}\\, dx\\\\\n&amp;= \\frac{x^3}{3} \\ln x -  \\int  \\frac{x^2}{3}\\, dx\\\\\n&amp;= \\frac{x^3}{3} \\ln x - \\frac{x^3}{9} +C. \\\\\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int x^2 \\ln x \\ dx.\\)</span></p>\n", 
+    "statement_latex": "Evaluate $\\int x^2 \\ln x \\ dx.$", 
+    "statement_raw": "Evaluate &lt;math>\\int x^2 \\ln x \\ dx. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(d)", 
+    "year": 2009
 }

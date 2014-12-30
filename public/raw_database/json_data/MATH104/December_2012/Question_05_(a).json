@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH104", 
-    "statement": "Alice is 5 ft tall and Bob is 6 ft tall. At some instant they are both\nwalking towards a street lamp 15 ft high with Alice west of the lamp and\nBob east of the lamp. Suppose at this instant, Alice is walking at 4\nft/s and the distance between the tips of their shadows is decreasing at\n11 ft/s.\n\nDraw a clear diagram for the situation. Let x be the distance between\nAlice and the lamp, and let y the distance between Bob and the lamp (you\nmay label other distances in your diagram as well).", 
-    "year": 2012, 
-    "sols": [
-        "Consider a 15ft tall lamp at the origin of a grid (so that everyone to\nthe right is a positive distance away and everyone to the left is a\nnegative distance away).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math104Dec12Q5a-lamp.png}\n\\end{figure}\n\nLet x be the distance that Alice is to the \\textbf{left} of the lamp. We\nknow that she is 5ft tall (which is shorter than the lamp post). Next,\nlet y be the distance that Bob is to the \\textbf{right} of the lamp. He\nis 6ft tall and so he is also shorter than the lamp but slightly taller\nthan Alice.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math104Dec12Q5a-alice_and_bob.png}\n\\caption{Math104Dec12Q5a-alice and bob.png}\n\\end{figure}\n\nRays of light will shine from the lamp, touch Alice and Bob and\neventually reach the ground (forming a big triangle with the lamp and\nground). Label the distance between where the light hits the ground for\nAlice and the lamp as C and for Bob, D.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math104Dec12Q5a-light.png}\n\\caption{Math104Dec12Q5a-light.png}\n\\end{figure}\n\nWith this notation then the length of Alice's shadow, for example,\nshould be C-x. To get a better understanding of how we could see the\ngeometry of the problem better and how to go about solving it, it is\noften useful to simplify the diagram. To do this we will replace our\ncharacters with sticks since their dimensions don't affect the problem\nas far as we are concerned. An example of what a more\nmathematically-ready diagram should look like is below:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH104Q5a2012.jpg}\n\\caption{MATH104Q5a2012.jpg}\n\\end{figure}\n\nThe distance between the tips of the shadows is C+D and since we know\nthis is decreasing at 11ft/s, we could write\n\n\\begin{align*}\\frac{d}{dt}(C+D)=-11.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{d}{dt}(C+D)=-11.\\)</span></p>\n", 
+    "answer_latex": " $\\frac{d}{dt}(C+D)=-11.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Each person is walking towards the lamppost, one is to the left of it and one is to the right. Where should we place the lamppost? Who is on the left? Who is on the right?</p>\n", 
+        "<p>We are given that the distance between the tips of the shadow is decreasing. Consider labelling the distance of each person&#8217;s shadow tip to the lamp. What is the total length between the tips?</p>\n"
+    ], 
+    "hints_latex": [
         "Each person is walking towards the lamppost, one is to the left of it\nand one is to the right. Where should we place the lamppost? Who is on\nthe left? Who is on the right?", 
         "We are given that the distance between the tips of the shadow is\ndecreasing. Consider labelling the distance of each person's shadow tip\nto the lamp. What is the total length between the tips?"
-    ]
+    ], 
+    "hints_raw": [
+        "Each person is walking towards the lamppost, one is to the left of it and one is to the right.  Where should we place the lamppost?  Who is on the left?  Who is on the right?\n", 
+        "We are given that the distance between the tips of the shadow is decreasing.  Consider labelling the distance of each person's shadow tip to the lamp.  What is the total length between the tips?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Consider a 15ft tall lamp at the origin of a grid (so that everyone to the right is a positive distance away and everyone to the left is a negative distance away).</p>\n<p><img src=\"../json_data/MATH104/December_2012/Math104Dec12Q5a-lamp.png\" alt=\"image\" /></p>\n<p>Let x be the distance that Alice is to the <strong>left</strong> of the lamp. We know that she is 5ft tall (which is shorter than the lamp post). Next, let y be the distance that Bob is to the <strong>right</strong> of the lamp. He is 6ft tall and so he is also shorter than the lamp but slightly taller than Alice.</p>\n<p><img src=\"../json_data/MATH104/December_2012/Math104Dec12Q5a-alice_and_bob.png\" alt=\"image\" /></p>\n<p>Rays of light will shine from the lamp, touch Alice and Bob and eventually reach the ground (forming a big triangle with the lamp and ground). Label the distance between where the light hits the ground for Alice and the lamp as C and for Bob, D.</p>\n<p><img src=\"../json_data/MATH104/December_2012/Math104Dec12Q5a-light.png\" alt=\"image\" /></p>\n<p>With this notation then the length of Alice&#8217;s shadow, for example, should be C-x. To get a better understanding of how we could see the geometry of the problem better and how to go about solving it, it is often useful to simplify the diagram. To do this we will replace our characters with sticks since their dimensions don&#8217;t affect the problem as far as we are concerned. An example of what a more mathematically-ready diagram should look like is below:</p>\n<p><img src=\"../json_data/MATH104/December_2012/MATH104Q5a2012.jpg\" alt=\"image\" /></p>\n<p>The distance between the tips of the shadows is C+D and since we know this is decreasing at 11ft/s, we could write</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dt}(C+D)=-11.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Consider a 15ft tall lamp at the origin of a grid (so that everyone to\nthe right is a positive distance away and everyone to the left is a\nnegative distance away).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/Math104Dec12Q5a-lamp.png}\n\\end{figure}\n\nLet x be the distance that Alice is to the \\textbf{left} of the lamp. We\nknow that she is 5ft tall (which is shorter than the lamp post). Next,\nlet y be the distance that Bob is to the \\textbf{right} of the lamp. He\nis 6ft tall and so he is also shorter than the lamp but slightly taller\nthan Alice.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/Math104Dec12Q5a-alice_and_bob.png}\n\nRays of light will shine from the lamp, touch Alice and Bob and\neventually reach the ground (forming a big triangle with the lamp and\nground). Label the distance between where the light hits the ground for\nAlice and the lamp as C and for Bob, D.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/Math104Dec12Q5a-light.png}\n\nWith this notation then the length of Alice's shadow, for example,\nshould be C-x. To get a better understanding of how we could see the\ngeometry of the problem better and how to go about solving it, it is\noften useful to simplify the diagram. To do this we will replace our\ncharacters with sticks since their dimensions don't affect the problem\nas far as we are concerned. An example of what a more\nmathematically-ready diagram should look like is below:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104Q5a2012.jpg}\n\nThe distance between the tips of the shadows is C+D and since we know\nthis is decreasing at 11ft/s, we could write\n\n\\begin{align*}\n\\frac{d}{dt}(C+D)=-11.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Consider a 15ft tall lamp at the origin of a grid (so that everyone to the right is a positive distance away and everyone to the left is a negative distance away).\n\n[[File:Math104Dec12Q5a-lamp.png|685px|]]\n\nLet x be the distance that Alice is to the '''left''' of the lamp.  We know that she is 5ft tall (which is shorter than the lamp post).  Next, let y be the distance that Bob is to the '''right''' of the lamp.  He is 6ft tall and so he is also shorter than the lamp but slightly taller than Alice.\n\n[[File:Math104Dec12Q5a-alice and bob.png|685px]]\n\nRays of light will shine from the lamp, touch Alice and Bob and eventually reach the ground (forming a big triangle with the lamp and ground).  Label the distance between where the light hits the ground for Alice and the lamp as C and for Bob, D.\n\n[[File:Math104Dec12Q5a-light.png|685px]]\n\nWith this notation then the length of Alice's shadow, for example, should be C-x.  To get a better understanding of how we could see the geometry of the problem better and how to go about solving it, it is often useful to simplify the diagram.  To do this we will replace our characters with sticks since their dimensions don't affect the problem as far as we are concerned.  An example of what a more mathematically-ready diagram should look like is below:\n\n[[File:MATH104Q5a2012.jpg|685px]]\n\nThe distance between the tips of the shadows is C+D and since we know this is decreasing at 11ft/s, we could write\n\n:&lt;math>\n\\frac{d}{dt}(C+D)=-11.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Alice is 5 ft tall and Bob is 6 ft tall. At some instant they are both walking towards a street lamp 15 ft high with Alice west of the lamp and Bob east of the lamp. Suppose at this instant, Alice is walking at 4 ft/s and the distance between the tips of their shadows is decreasing at 11 ft/s.</p>\n<p>Draw a clear diagram for the situation. Let x be the distance between Alice and the lamp, and let y the distance between Bob and the lamp (you may label other distances in your diagram as well).</p>\n", 
+    "statement_latex": "Alice is 5 ft tall and Bob is 6 ft tall. At some instant they are both\nwalking towards a street lamp 15 ft high with Alice west of the lamp and\nBob east of the lamp. Suppose at this instant, Alice is walking at 4\nft/s and the distance between the tips of their shadows is decreasing at\n11 ft/s.\n\nDraw a clear diagram for the situation. Let x be the distance between\nAlice and the lamp, and let y the distance between Bob and the lamp (you\nmay label other distances in your diagram as well).", 
+    "statement_raw": "Alice is 5 ft tall and Bob is 6 ft tall.  At some instant they are both walking towards a street lamp 15 ft high with Alice west of the lamp and Bob east of the lamp.  Suppose at this instant, Alice is walking at 4 ft/s and the distance between the tips of their shadows is decreasing at 11 ft/s.\n\nDraw a clear diagram for the situation.  Let x be the distance between Alice and the lamp, and let y the distance between Bob and the lamp (you may label other distances in your diagram as well).\n", 
+    "term": "December", 
+    "topics": [
+        "Related_rates"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_05_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
+    "answer_html": "<p><span class=\"math\">\\((-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)\\)</span></p>\n", 
+    "answer_latex": "$(-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)$", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
+    ], 
     "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{align*}\n\n\\textbf{(a)} State the domain of $f$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Remember that a function is undefined when there is a zero in the denominator of a fraction.</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that a function is undefined when there is a zero in the\ndenominator of a fraction."
+    ], 
+    "hints_raw": [
+        "Remember that a function is undefined when there is a zero in the denominator of a fraction.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (a)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>The numerator and denominator are polynomials, which are defined everywhere. However, since <span class=\"math\">\\(f(x)\\)</span> is a fraction, we need to avoid points where the denominator is zero, i.e. where <span class=\"math\">\\(x^2 - 1 = 0\\)</span>. This occurs when <span class=\"math\">\\(x = 1\\)</span> and <span class=\"math\">\\(x = -1\\)</span>. So the domain of <span class=\"math\">\\(f(x)\\)</span> is</p>\n<p><span class=\"math\">\\((-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "The numerator and denominator are polynomials, which are defined\neverywhere. However, since $f(x)$ is a fraction, we need to avoid points\nwhere the denominator is zero, i.e. where $x^2 - 1 = 0$. This occurs\nwhen $x = 1$ and $x = -1$. So the domain of $f(x)$ is\n\n$(-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)$"
     ], 
-    "hints": [
-        "Remember that a function is undefined when there is a zero in the\ndenominator of a fraction."
-    ]
+    "sols_raw": [
+        "The numerator and denominator are polynomials, which are defined everywhere.  However, since &lt;math>f(x)&lt;/math> is a fraction, we need to avoid points where the denominator is zero, i.e. where &lt;math>x^2 - 1 = 0&lt;/math>.  This occurs when &lt;math>x = 1&lt;/math> and &lt;math>x = -1&lt;/math>. So the domain of &lt;math>f(x)&lt;/math> is\n\n&lt;math>(-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> State the domain of <span class=\"math\">\\(f\\)</span>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n\\end{align*}\n\n\\textbf{(a)} State the domain of $f$.", 
+    "statement_raw": "Let\n:&lt;math> \\displaystyle\nf(x) = \\frac{2x^2}{x^2-1}\n&lt;/math>\n\n'''(a)''' State the domain of &amp;fnof;.\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2012/Question_05_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
-    "course": "MATH215", 
-    "statement": "Suppose the motion of a spring-mass system is described by the following\ndifferential equation\n\n\\begin{align*}2u'' + 2\\gamma u' + 18u = 0, \\quad u(0) = 1,\\quad u'(0) = -\\frac{11}2\\end{align*}\n\n\\textbf{(a)} Find all values of the parameter $\\gamma$ for which the\nsystem is overdamped or critically damped (that is the mass cannot pass\nits equilibrium position more than once, so there are no oscillatory\nsolutions).", 
-    "year": 2011, 
-    "sols": [
-        "Given the equation\n\n\\begin{align*}\\displaystyle{}2u'' + 2 \\gamma u' + 18 u = 0,\\end{align*}\n\nwe can obtain the characteristic equation by substituting a solution\n\n\\begin{align*}\\displaystyle{}u(t)=\\exp(rt)\\end{align*}\n\nand looking at the resulting polynomial. Doing this we get\n\n\\begin{align*}\\displaystyle{}2r^2 + 2 \\gamma r + 18 = 0\\end{align*}\n\nwhich has roots\n\n\\begin{align*}\nr &= \\frac{-2\\gamma \\pm \\sqrt{4 \\gamma^2 - 4(2)(18)}}{4} \\\\\n&= -\\frac{\\gamma}{2} \\pm \\frac{\\sqrt{\\gamma^2 - 36}}{2} \\\\\n&= \\frac12\\left(-\\gamma \\pm \\sqrt{\\gamma^2-6^2}\\right)\\end{align*}.\n\nNow we study the behaviour of the roots of the equation. Note that\n$\\gamma > 0$ is necessary for physical damping.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  When $\\gamma^2 - 36 < 0$, there are complex roots to the system, and\n  there are oscillations. Thus the system is \\emph{underdamped}.\n\\item\n  When $\\gamma^2 - 36 > 0$, the square root always yields a real value.\n  Since $\\sqrt{\\gamma^2 - 36} < \\gamma$ (assuming $\\gamma>0$), it\n  follows that both roots are negative (so the amplitude decays) and\n  real (so there are no oscillations). Thus, the system is\n  \\emph{overdamped}.\n\\end{itemize}\n\nThus, there is overdamping for $\\gamma > 6$ and underdamping for\n$\\gamma < 6$ (and therefore critical damping if $\\gamma=6$)."
+    "answer_html": "<p>Thus, there is overdamping for <span class=\"math\">\\(\\gamma &gt; 6\\)</span> and underdamping for <span class=\"math\">\\(\\gamma &lt; 6\\)</span> (and therefore critical damping if <span class=\"math\">\\(\\gamma=6\\)</span>).</p>\n", 
+    "answer_latex": "Thus, there is overdamping for $\\gamma > 6$ and underdamping for\n$\\gamma < 6$ (and therefore critical damping if $\\gamma=6$).", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What are the roots of the characteristic equation as a function of <span class=\"math\">\\(\\gamma\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "What are the roots of the characteristic equation as a function of\n$\\gamma$."
-    ]
+    ], 
+    "hints_raw": [
+        "What are the roots of the characteristic equation as a function of &lt;math>\\gamma&lt;/math>.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (a)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>Given the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}2u&#39;&#39; + 2 \\gamma u&#39; + 18 u = 0,\\end{aligned}\\]</span></p>\n<p>we can obtain the characteristic equation by substituting a solution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}u(t)=\\exp(rt)\\end{aligned}\\]</span></p>\n<p>and looking at the resulting polynomial. Doing this we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}2r^2 + 2 \\gamma r + 18 = 0\\end{aligned}\\]</span></p>\n<p>which has roots</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nr &amp;= \\frac{-2\\gamma \\pm \\sqrt{4 \\gamma^2 - 4(2)(18)}}{4} \\\\\n&amp;= -\\frac{\\gamma}{2} \\pm \\frac{\\sqrt{\\gamma^2 - 36}}{2} \\\\\n&amp;= \\frac12\\left(-\\gamma \\pm \\sqrt{\\gamma^2-6^2}\\right)\\end{aligned}\\]</span></p>\n<p>.</p>\n<p>Now we study the behaviour of the roots of the equation. Note that <span class=\"math\">\\(\\gamma &gt; 0\\)</span> is necessary for physical damping.</p>\n<ul>\n<li><p>When <span class=\"math\">\\(\\gamma^2 - 36 &lt; 0\\)</span>, there are complex roots to the system, and there are oscillations. Thus the system is <em>underdamped</em>.</p></li>\n<li><p>When <span class=\"math\">\\(\\gamma^2 - 36 &gt; 0\\)</span>, the square root always yields a real value. Since <span class=\"math\">\\(\\sqrt{\\gamma^2 - 36} &lt; \\gamma\\)</span> (assuming <span class=\"math\">\\(\\gamma&gt;0\\)</span>), it follows that both roots are negative (so the amplitude decays) and real (so there are no oscillations). Thus, the system is <em>overdamped</em>.</p></li>\n</ul>\n<p>Thus, there is overdamping for <span class=\"math\">\\(\\gamma &gt; 6\\)</span> and underdamping for <span class=\"math\">\\(\\gamma &lt; 6\\)</span> (and therefore critical damping if <span class=\"math\">\\(\\gamma=6\\)</span>).</p>\n"
+    ], 
+    "sols_latex": [
+        "Given the equation\n\n\\begin{align*}\n\\displaystyle{}2u'' + 2 \\gamma u' + 18 u = 0,\n\\end{align*}\n\nwe can obtain the characteristic equation by substituting a solution\n\n\\begin{align*}\n\\displaystyle{}u(t)=\\exp(rt)\n\\end{align*}\n\nand looking at the resulting polynomial. Doing this we get\n\n\\begin{align*}\n\\displaystyle{}2r^2 + 2 \\gamma r + 18 = 0\n\\end{align*}\n\nwhich has roots\n\n\\begin{align*}\nr &= \\frac{-2\\gamma \\pm \\sqrt{4 \\gamma^2 - 4(2)(18)}}{4} \\\\\n&= -\\frac{\\gamma}{2} \\pm \\frac{\\sqrt{\\gamma^2 - 36}}{2} \\\\\n&= \\frac12\\left(-\\gamma \\pm \\sqrt{\\gamma^2-6^2}\\right)\n\\end{align*}.\n\nNow we study the behaviour of the roots of the equation. Note that\n$\\gamma > 0$ is necessary for physical damping.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  When $\\gamma^2 - 36 < 0$, there are complex roots to the system, and\n  there are oscillations. Thus the system is \\emph{underdamped}.\n\\item\n  When $\\gamma^2 - 36 > 0$, the square root always yields a real value.\n  Since $\\sqrt{\\gamma^2 - 36} < \\gamma$ (assuming $\\gamma>0$), it\n  follows that both roots are negative (so the amplitude decays) and\n  real (so there are no oscillations). Thus, the system is\n  \\emph{overdamped}.\n\\end{itemize}\n\nThus, there is overdamping for $\\gamma > 6$ and underdamping for\n$\\gamma < 6$ (and therefore critical damping if $\\gamma=6$)."
+    ], 
+    "sols_raw": [
+        "Given the equation\n\n:&lt;math>\n\\displaystyle{}2u'' + 2 \\gamma u' + 18 u = 0,\n&lt;/math>\n\nwe can obtain the characteristic equation by substituting a solution\n\n:&lt;math>\n\\displaystyle{}u(t)=\\exp(rt)\n&lt;/math>\n\nand looking at the resulting polynomial.  Doing this we get\n\n:&lt;math>\n\\displaystyle{}2r^2 + 2 \\gamma r + 18 = 0\n&lt;/math>\n\nwhich has roots\n\n:&lt;math>\n\\begin{align}\nr &amp;= \\frac{-2\\gamma \\pm \\sqrt{4 \\gamma^2 - 4(2)(18)}}{4} \\\\\n&amp;= -\\frac{\\gamma}{2} \\pm \\frac{\\sqrt{\\gamma^2 - 36}}{2} \\\\\n&amp;= \\frac12\\left(-\\gamma \\pm \\sqrt{\\gamma^2-6^2}\\right)\n\\end{align}\n&lt;/math>.\n\nNow we study the behaviour of the roots of the equation. Note that &lt;math>\\gamma > 0&lt;/math> is necessary for physical damping.\n\n* When &lt;math>\\gamma^2 - 36 &lt; 0&lt;/math>, there are complex roots to the system, and there are oscillations. Thus the system is ''underdamped''.\n* When &lt;math>\\gamma^2 - 36 > 0&lt;/math>, the square root always yields a real value. Since &lt;math>\\sqrt{\\gamma^2 - 36} &lt; \\gamma&lt;/math> (assuming &lt;math>\\gamma>0&lt;/math>), it follows that both roots are negative (so the amplitude decays) and real (so there are no oscillations). Thus, the system is ''overdamped''.\n\nThus, there is overdamping for &lt;math>\\gamma > 6&lt;/math> and underdamping for &lt;math>\\gamma &lt; 6 &lt;/math> (and therefore critical damping if &lt;math>\\gamma=6&lt;/math>).\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Suppose the motion of a spring-mass system is described by the following differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2u&#39;&#39; + 2\\gamma u&#39; + 18u = 0, \\quad u(0) = 1,\\quad u&#39;(0) = -\\frac{11}2\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Find all values of the parameter <span class=\"math\">\\(\\gamma\\)</span> for which the system is overdamped or critically damped (that is the mass cannot pass its equilibrium position more than once, so there are no oscillatory solutions).</p>\n", 
+    "statement_latex": "Suppose the motion of a spring-mass system is described by the following\ndifferential equation\n\n\\begin{align*}\n2u'' + 2\\gamma u' + 18u = 0, \\quad u(0) = 1,\\quad u'(0) = -\\frac{11}2\n\\end{align*}\n\n\\textbf{(a)} Find all values of the parameter $\\gamma$ for which the\nsystem is overdamped or critically damped (that is the mass cannot pass\nits equilibrium position more than once, so there are no oscillatory\nsolutions).", 
+    "statement_raw": "Suppose the motion of a spring-mass system is described by the following differential equation\n\n:&lt;math>\n2u'' + 2\\gamma u' + 18u = 0, \\quad u(0) = 1,\\quad u'(0) = -\\frac{11}2\n&lt;/math>\n\n'''(a)''' Find all values of the parameter &lt;math>\\gamma&lt;/math> for which the system is overdamped or critically damped (that is the mass cannot pass its equilibrium position more than once, so there are no oscillatory solutions).\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_04_(a)", 
+    "year": 2011
 }

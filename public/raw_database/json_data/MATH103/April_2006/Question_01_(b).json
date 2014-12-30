@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "A biased coin with $\\displaystyle P(H) = 1/10$ is tossed 4 times. What\nis the probability of getting at least one H?\n\ni. $\\displaystyle 1 - (9/10)^{4}$\n\nii. $\\displaystyle (1/10)^{4}$\n\niii. $\\displaystyle (1/10)(9/10)^{3}$\n\niv. $\\displaystyle 1 - (1/10)^{4}$\n\nv. $\\displaystyle (9/10)^{4}$", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>A biased coin with <span class=\"math\">\\(\\displaystyle P(H) = 1/10\\)</span> is tossed 4 times. What is the probability of getting at least one H?</p>\n<p>i. <span class=\"math\">\\(\\displaystyle 1 - (9/10)^{4}\\)</span></p>\n<p>ii. <span class=\"math\">\\(\\displaystyle (1/10)^{4}\\)</span></p>\n<p>iii. <span class=\"math\">\\(\\displaystyle (1/10)(9/10)^{3}\\)</span></p>\n<p>iv. <span class=\"math\">\\(\\displaystyle 1 - (1/10)^{4}\\)</span></p>\n<p>v. <span class=\"math\">\\(\\displaystyle (9/10)^{4}\\)</span></p>\n", 
+    "statement_latex": "A biased coin with $\\displaystyle P(H) = 1/10$ is tossed 4 times. What\nis the probability of getting at least one H?\n\ni. $\\displaystyle 1 - (9/10)^{4}$\n\nii. $\\displaystyle (1/10)^{4}$\n\niii. $\\displaystyle (1/10)(9/10)^{3}$\n\niv. $\\displaystyle 1 - (1/10)^{4}$\n\nv. $\\displaystyle (9/10)^{4}$", 
+    "statement_raw": "A biased coin with &lt;math> \\displaystyle P(H) = 1/10 &lt;/math> is tossed 4 times. What is the probability of getting at least one H?\n\ni. &lt;math> \\displaystyle 1 - (9/10)^{4} &lt;/math>\n\nii. &lt;math> \\displaystyle (1/10)^{4} &lt;/math>\n\niii. &lt;math> \\displaystyle (1/10)(9/10)^{3} &lt;/math>\n\niv. &lt;math> \\displaystyle 1 - (1/10)^{4} &lt;/math>\n\nv. &lt;math> \\displaystyle (9/10)^{4} &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Discrete_probability"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_01_(b)", 
+    "year": 2006
 }

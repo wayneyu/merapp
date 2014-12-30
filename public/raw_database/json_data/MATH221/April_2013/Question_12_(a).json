@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_12_(a)", 
-    "course": "MATH221", 
-    "statement": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{a)} Find the 3x3 matrix \\emph{P\\textsubscript{1}} which\nrepresents projection of $\\mathbb{R}^3$ onto a vector orthogonal to this\nplane.", 
-    "year": 2013, 
-    "sols": [
-        "We recall that the formula to compute a projection onto a line spanned\nby the vector \\emph{v} is to take a vector \\emph{x} and mapping it to\n$\\frac{x\\cdot v}{v\\cdot v} v$, that is you take the inner product of the\nvector \\emph{x} with the vector \\emph{v} divide it by the length of the\nvector \\emph{v} and apply this scalar to \\emph{v}. To get a matrix out\nof this, we can simply apply the projection to the standard basis of\n$R^3$ and see where each vector is mapped to.\n\nFirst we note that, for us, the vector \\emph{v} is the normal vector of\nthe plane, i.e.\n$v = \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nThis gives $v\\cdot v = 1 + 1 + 1 = 3$. We are now ready to apply it to a\nstandard basis vector,\n$\\left[ \\begin{array}{ccc} 1 & 0 & 0  \\\\  \\end{array} \\right]$, which\ngets mapped by projection to the vecotr\n$\\frac{1}{3}\\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nSimilarly for the other basis vectors.\n\nThus our matrix for the projection\nis\\begin{align*}\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1 & -1 & 1 \\\\ \n-1 & 1 & -1 \\\\ \n1 & -1 & 1\\\\ \n\\end{array} \\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1  -1  1 \\\\ \n-1  1  -1 \\\\ \n1  -1  1\\\\ \n\\end{array} \\right]\\)</span></p>\n", 
+    "answer_latex": " $\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1  -1  1 \\\\ \n-1  1  -1 \\\\ \n1  -1  1\\\\ \n\\end{array} \\right]$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is the formula that projects one vector onto another?</p>\n", 
+        "<p>To find the projection matrix it suffices to calculate the projections the canonical basis vectors <span>[</span>1,0,0<span>]</span>, <span>[</span>0,1,0<span>]</span>, <span>[</span>0,0,1<span>]</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "What is the formula that projects one vector onto another?", 
         "To find the projection matrix it suffices to calculate the projections\nthe canonical basis vectors {[}1,0,0{]}, {[}0,1,0{]}, {[}0,0,1{]}."
-    ]
+    ], 
+    "hints_raw": [
+        "What is the formula that projects one vector onto another?\n", 
+        "To find the projection matrix it suffices to calculate the projections the canonical basis vectors [1,0,0], [0,1,0], [0,0,1].\n"
+    ], 
+    "num_votes": 1, 
+    "question": "12 (a)", 
+    "rating": 30, 
+    "sols_html": [
+        "<p>We recall that the formula to compute a projection onto a line spanned by the vector <em>v</em> is to take a vector <em>x</em> and mapping it to <span class=\"math\">\\(\\frac{x\\cdot v}{v\\cdot v} v\\)</span>, that is you take the inner product of the vector <em>x</em> with the vector <em>v</em> divide it by the length of the vector <em>v</em> and apply this scalar to <em>v</em>. To get a matrix out of this, we can simply apply the projection to the standard basis of <span class=\"math\">\\(R^3\\)</span> and see where each vector is mapped to.</p>\n<p>First we note that, for us, the vector <em>v</em> is the normal vector of the plane, i.e. <span class=\"math\">\\(v = \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right]\\)</span>. This gives <span class=\"math\">\\(v\\cdot v = 1 + 1 + 1 = 3\\)</span>. We are now ready to apply it to a standard basis vector, <span class=\"math\">\\(\\left[ \\begin{array}{ccc} 1 &amp; 0 &amp; 0  \\\\  \\end{array} \\right]\\)</span>, which gets mapped by projection to the vecotr <span class=\"math\">\\(\\frac{1}{3}\\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right]\\)</span>. Similarly for the other basis vectors.</p>\n<p>Thus our matrix for the projection is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1 &amp; -1 &amp; 1 \\\\ \n-1 &amp; 1 &amp; -1 \\\\ \n1 &amp; -1 &amp; 1\\\\ \n\\end{array} \\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We recall that the formula to compute a projection onto a line spanned\nby the vector \\emph{v} is to take a vector \\emph{x} and mapping it to\n$\\frac{x\\cdot v}{v\\cdot v} v$, that is you take the inner product of the\nvector \\emph{x} with the vector \\emph{v} divide it by the length of the\nvector \\emph{v} and apply this scalar to \\emph{v}. To get a matrix out\nof this, we can simply apply the projection to the standard basis of\n$R^3$ and see where each vector is mapped to.\n\nFirst we note that, for us, the vector \\emph{v} is the normal vector of\nthe plane, i.e.\n$v = \\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nThis gives $v\\cdot v = 1 + 1 + 1 = 3$. We are now ready to apply it to a\nstandard basis vector,\n$\\left[ \\begin{array}{ccc} 1 & 0 & 0  \\\\  \\end{array} \\right]$, which\ngets mapped by projection to the vecotr\n$\\frac{1}{3}\\left[ \\begin{array}{ccc} 1 & -1 & 1  \\\\  \\end{array} \\right]$.\nSimilarly for the other basis vectors.\n\nThus our matrix for the projection\nis\\begin{align*}\n\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1 & -1 & 1 \\\\ \n-1 & 1 & -1 \\\\ \n1 & -1 & 1\\\\ \n\\end{array} \\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We recall that the formula to compute a projection onto a line spanned by the vector ''v'' is to take a vector ''x'' and mapping it to &lt;math> \\frac{x\\cdot v}{v\\cdot v} v&lt;/math>, that is you take the inner product of the vector ''x'' with the vector ''v'' divide it by the length of the vector ''v'' and apply this scalar to ''v''. To get a matrix out of this, we can simply apply the projection to the standard basis of &lt;math> R^3&lt;/math> and see where each vector is mapped to.\n\nFirst we note that, for us, the vector ''v'' is the normal vector of the plane, i.e. &lt;math> v = \\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right] &lt;/math>. This gives &lt;math> v\\cdot v = 1 + 1 + 1 = 3&lt;/math>. We are now ready to apply it to a standard basis vector, &lt;math> \\left[ \\begin{array}{ccc} 1 &amp; 0 &amp; 0  \\\\  \\end{array} \\right] &lt;/math>, which gets mapped by projection to the vecotr &lt;math> \\frac{1}{3}\\left[ \\begin{array}{ccc} 1 &amp; -1 &amp; 1  \\\\  \\end{array} \\right] &lt;/math>. Similarly for the other basis vectors.\n\nThus our matrix for the projection is: &lt;math>\\frac{1}{3} \\left[ \\begin{array}{cccc}\n1 &amp; -1 &amp; 1 \\\\ \n-1 &amp; 1 &amp; -1 \\\\ \n1 &amp; -1 &amp; 1\\\\ \n\\end{array} \\right] &lt;/math>\n"
+    ], 
+    "solvers": [
+        "JeromeLefebvre"
+    ], 
+    "statement_html": "<p>Consider the plane <em>x - y + z = 0</em>.</p>\n<p><strong>a)</strong> Find the 3x3 matrix <em>P<sub>1</sub></em> which represents projection of <span class=\"math\">\\(\\mathbb{R}^3\\)</span> onto a vector orthogonal to this plane.</p>\n", 
+    "statement_latex": "Consider the plane \\emph{x - y + z = 0}.\n\n\\textbf{a)} Find the 3x3 matrix \\emph{P\\textsubscript{1}} which\nrepresents projection of $\\mathbb{R}^3$ onto a vector orthogonal to this\nplane.", 
+    "statement_raw": "Consider the plane ''x - y + z = 0''.\n\n'''a)''' Find the 3x3 matrix ''P&lt;sub>1&lt;/sub>'' which represents projection of &lt;math>\\mathbb{R}^3&lt;/math> onto a vector orthogonal to this plane.\n", 
+    "term": "April", 
+    "topics": [
+        "Orthogonal_projection"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/April_2013/Question_12_(a)", 
+    "year": 2013
 }

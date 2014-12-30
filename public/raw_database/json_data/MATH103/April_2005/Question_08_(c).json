@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_08_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Use the \\textbf{first three terms} of the series in\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(a)}{part\n(a)} to find a numerical approximation of the integral shown below:\n\n\\begin{align*}\\displaystyle \\int_{0}^{1}e^{-x^{2}}\\,dx\\end{align*}\n\nLeave the answer in terms of fractions rather than decimals.", 
-    "year": 2005, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "8 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Use the <strong>first three terms</strong> of the series in <span>part (a)</span> to find a numerical approximation of the integral shown below:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\int_{0}^{1}e^{-x^{2}}\\,dx\\end{aligned}\\]</span></p>\n<p>Leave the answer in terms of fractions rather than decimals.</p>\n", 
+    "statement_latex": "Use the \\textbf{first three terms} of the series in\n{part\n(a)} to find a numerical approximation of the integral shown below:\n\n\\begin{align*}\n\\displaystyle \\int_{0}^{1}e^{-x^{2}}\\,dx\n\\end{align*}\n\nLeave the answer in terms of fractions rather than decimals.", 
+    "statement_raw": "Use the '''first three terms''' of the series in [[Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(a)|part (a)]] to find a numerical approximation of the integral shown below:\n\n:&lt;math> \\displaystyle \\int_{0}^{1}e^{-x^{2}}\\,dx&lt;/math>\n\nLeave the answer in terms of fractions rather than decimals.\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_08_(c)", 
+    "year": 2005
 }

@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nA function $f(x)$ is always positive and satisfies\n$\\displaystyle f'(x) = xf(x)$ for all \\emph{x} and also $f(0) = e$. Find\nthis function.", 
-    "year": 2012, 
-    "sols": [
-        "Let $y = f(x)$. Then the problem becomes\n\n\\begin{align*}\\frac{dy}{dx} = xy\\end{align*}\n\nSeparating and solving yields\n\n\\begin{align*}\n\\frac{dy}{dx} &= xy \\\\\n\\frac{dy}{y} &= xdx \\\\\n\\int\\frac{dy}{y} &= \\int xdx \\\\\n\\ln|y| &= \\frac{x^{2}}{2} + C \\end{align*}\n\nWhen $x=0$ we know that $y=e$ and plugging this information in yields\n\n\\begin{align*}1 = \\ln(e) = \\ln|e| = \\frac{(0)^{2}}{2} + C = C\\end{align*}\n\nContinuing to simplify yields\n\n\\begin{align*}\n\\ln|y| &= \\frac{x^{2}}{2} + C \\\\\n\\ln|y| &= \\frac{x^{2}}{2} + 1 \\\\\n|y| &= e^{x^{2}/2 + 1} \\\\\ny &= \\pm e^{x^{2}/2 + 1} \\end{align*}\n\nSince \\emph{y} is a positive function, we know that the final answer is\n\n\\begin{align*}y = e^{x^{2}/2 + 1}\\end{align*}\n\nas required."
+    "answer_html": "<p><span class=\"math\">\\(y=e^{x^{2}/2 + 1}\\)</span> as required.</p>\n", 
+    "answer_latex": " $y=e^{x^{2}/2 + 1}$ as required.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Convert this problem to a <span>[</span>separable<span>]</span> differential equation and solve.</p>\n"
+    ], 
+    "hints_latex": [
         "Convert this problem to a {[}separable{]} differential equation and\nsolve."
-    ]
+    ], 
+    "hints_raw": [
+        "Convert this problem to a [separable] differential equation and solve.\n"
+    ], 
+    "num_votes": 16, 
+    "question": "1 (e)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(y = f(x)\\)</span>. Then the problem becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = xy\\end{aligned}\\]</span></p>\n<p>Separating and solving yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} &amp;= xy \\\\\n\\frac{dy}{y} &amp;= xdx \\\\\n\\int\\frac{dy}{y} &amp;= \\int xdx \\\\\n\\ln|y| &amp;= \\frac{x^{2}}{2} + C \\end{aligned}\\]</span></p>\n<p>When <span class=\"math\">\\(x=0\\)</span> we know that <span class=\"math\">\\(y=e\\)</span> and plugging this information in yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 = \\ln(e) = \\ln|e| = \\frac{(0)^{2}}{2} + C = C\\end{aligned}\\]</span></p>\n<p>Continuing to simplify yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\ln|y| &amp;= \\frac{x^{2}}{2} + C \\\\\n\\ln|y| &amp;= \\frac{x^{2}}{2} + 1 \\\\\n|y| &amp;= e^{x^{2}/2 + 1} \\\\\ny &amp;= \\pm e^{x^{2}/2 + 1} \\end{aligned}\\]</span></p>\n<p>Since <em>y</em> is a positive function, we know that the final answer is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny = e^{x^{2}/2 + 1}\\end{aligned}\\]</span></p>\n<p>as required.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let $y = f(x)$. Then the problem becomes\n\n\\begin{align*}\n\\frac{dy}{dx} = xy\n\\end{align*}\n\nSeparating and solving yields\n\n\\begin{align*}\n\\frac{dy}{dx} &= xy \\\\\n\\frac{dy}{y} &= xdx \\\\\n\\int\\frac{dy}{y} &= \\int xdx \\\\\n\\ln|y| &= \\frac{x^{2}}{2} + C \n\\end{align*}\n\nWhen $x=0$ we know that $y=e$ and plugging this information in yields\n\n\\begin{align*}\n1 = \\ln(e) = \\ln|e| = \\frac{(0)^{2}}{2} + C = C\n\\end{align*}\n\nContinuing to simplify yields\n\n\\begin{align*}\n\\ln|y| &= \\frac{x^{2}}{2} + C \\\\\n\\ln|y| &= \\frac{x^{2}}{2} + 1 \\\\\n|y| &= e^{x^{2}/2 + 1} \\\\\ny &= \\pm e^{x^{2}/2 + 1} \n\\end{align*}\n\nSince \\emph{y} is a positive function, we know that the final answer is\n\n\\begin{align*}\ny = e^{x^{2}/2 + 1}\n\\end{align*}\n\nas required."
+    ], 
+    "sols_raw": [
+        "Let &lt;math> y = f(x) &lt;/math>. Then the problem becomes\n\n:&lt;math>\n\\frac{dy}{dx} = xy \n&lt;/math>\n\nSeparating and solving yields\n\n:&lt;math>\n\\begin{align}\n\\frac{dy}{dx} &amp;= xy \\\\\n\\frac{dy}{y} &amp;= xdx \\\\\n\\int\\frac{dy}{y} &amp;= \\int xdx \\\\\n\\ln|y| &amp;= \\frac{x^{2}}{2} + C \n\\end{align}\n&lt;/math>\n\nWhen &lt;math> x=0 &lt;/math> we know that &lt;math> y=e &lt;/math> and plugging this information in yields\n\n:&lt;math>\n1 = \\ln(e) = \\ln|e| = \\frac{(0)^{2}}{2} + C = C\n&lt;/math>\n\nContinuing to simplify yields\n\n:&lt;math>\n\\begin{align}\n\\ln|y| &amp;= \\frac{x^{2}}{2} + C \\\\\n\\ln|y| &amp;= \\frac{x^{2}}{2} + 1 \\\\\n|y| &amp;= e^{x^{2}/2 + 1} \\\\\ny &amp;= \\pm e^{x^{2}/2 + 1} \\\\\n\\end{align}\n&lt;/math>\n\nSince ''y'' is a positive function, we know that the final answer is\n\n:&lt;math>\ny = e^{x^{2}/2 + 1}\n&lt;/math>\n\nas required.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Question.</strong> Show all your work, simplify your answer as much as possible.</p>\n<p>A function <span class=\"math\">\\(f(x)\\)</span> is always positive and satisfies <span class=\"math\">\\(\\displaystyle f&#39;(x) = xf(x)\\)</span> for all <em>x</em> and also <span class=\"math\">\\(f(0) = e\\)</span>. Find this function.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Question.} Show all your work, simplify your answer\nas much as possible.\n\nA function $f(x)$ is always positive and satisfies\n$\\displaystyle f'(x) = xf(x)$ for all \\emph{x} and also $f(0) = e$. Find\nthis function.", 
+    "statement_raw": "'''Short-Answer Question.''' Show all your work, simplify your answer as much as possible.\n\nA function &lt;math> f(x) &lt;/math> is always positive and satisfies &lt;math>\\displaystyle f'(x) = xf(x) &lt;/math> for all ''x'' and also &lt;math>f(0) = e &lt;/math>. Find this function.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Initial_value_problem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_01_(e)", 
+    "year": 2012
 }

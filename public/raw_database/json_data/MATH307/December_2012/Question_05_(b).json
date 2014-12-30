@@ -1,9 +1,41 @@
 {
-    "term": "December", 
-    "question": "Question_05_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}P = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(b)} If we begin with equal probabilities of being at each site,\nwhat are the probabilities of being at each site after one step? What is\nthe probability of being at site 6 after two steps?", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(b)</strong> If we begin with equal probabilities of being at each site, what are the probabilities of being at each site after one step? What is the probability of being at site 6 after two steps?</p>\n", 
+    "statement_latex": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}\nP = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(b)} If we begin with equal probabilities of being at each site,\nwhat are the probabilities of being at each site after one step? What is\nthe probability of being at site 6 after two steps?", 
+    "statement_raw": "Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is\n\n:&lt;math>\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\n&lt;/math>\n\n'''(b)''' If we begin with equal probabilities of being at each site, what are the probabilities of being at each site after one step? What is the probability of being at site 6 after two steps?\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_05_(b)", 
+    "year": 2012
 }

@@ -1,16 +1,59 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
-    "course": "MATH103", 
-    "statement": "Evaluate the integral\n$I_1 = \\int_{\\frac12}^1 \\sin(\\pi x) \\cos(\\pi x)\\,dx.$", 
-    "year": 2011, 
-    "sols": [
-        "We first solve the indefinite integral, using the trigonometric identity\n$\\sin(2x) = 2\\sin(x)\\cos(x)$:\n\n\\begin{align*} \\int \\sin(\\pi x)\\cos(\\pi x)\\,dx &= \\int \\frac12 \\sin(2\\pi x)\\,dx \\\\\n&=-\\frac1{4\\pi}\\cos(2\\pi x) + C. \\end{align*}\n\nTherefore\n\n\\begin{align*} I_1 &= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&= \\left.\\frac{-1}{4\\pi}\\cos(2\\pi x)\\right|_{1/2}^1 \\\\\n&= \\frac{-1}{4\\pi} \\cos(2\\pi) + \\frac1{4\\pi} \\cos(\\pi) \\\\\n&= -\\frac1{4\\pi} - \\frac1{4\\pi}\u00c2\u00a0= -\\frac1{2\\pi}. \\end{align*}", 
-        "Alternatively, substitute $u = \\sin(\\pi x).$ Then\n$du = \\pi \\cos(\\pi x)dx$, when $x=1/2$ then $u = \\sin(\\pi/2) = 1$, and\nwhen $x=1$ then $u = \\sin(\\pi) = 0.$ Therefore\n\n\\begin{align*} I_1 &= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&= \\int_1^0 u \\cos(\\pi x)\\frac{du}{\\pi \\cos(\\pi x)} \\\\\n&= \\frac1{\\pi} \\int_1^0 u\\,du \\\\\n&= \\left.\\frac1{2\\pi}u^2\\right|_1^0 \\\\\n&= - \\frac1{2\\pi}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(I_1=-\\frac1{2\\pi}.\\)</span></p>\n", 
+    "answer_latex": " $I_1=-\\frac1{2\\pi}.$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use a trigonometric identity to rewrite the integrand.</p>\n", 
+        "<p><span class=\"math\">\\(\\sin(2x) = 2\\sin (x)\\cos(x)\\)</span>.</p>\n", 
+        "<p>Alternative solution: Use a substitution.</p>\n"
+    ], 
+    "hints_latex": [
         "Use a trigonometric identity to rewrite the integrand.", 
         "$\\sin(2x) = 2\\sin (x)\\cos(x)$.", 
         "Alternative solution: Use a substitution."
-    ]
+    ], 
+    "hints_raw": [
+        "Use a trigonometric identity to rewrite the integrand.\n", 
+        "&lt;math> \\sin(2x) = 2\\sin (x)\\cos(x)&lt;/math>.\n", 
+        "Alternative solution: Use a substitution.\n"
+    ], 
+    "num_votes": 10, 
+    "question": "2 (a)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>We first solve the indefinite integral, using the trigonometric identity <span class=\"math\">\\(\\sin(2x) = 2\\sin(x)\\cos(x)\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\sin(\\pi x)\\cos(\\pi x)\\,dx &amp;= \\int \\frac12 \\sin(2\\pi x)\\,dx \\\\\n&amp;=-\\frac1{4\\pi}\\cos(2\\pi x) + C. \\end{aligned}\\]</span></p>\n<p>Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI_1 &amp;= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&amp;= \\left.\\frac{-1}{4\\pi}\\cos(2\\pi x)\\right|_{1/2}^1 \\\\\n&amp;= \\frac{-1}{4\\pi} \\cos(2\\pi) + \\frac1{4\\pi} \\cos(\\pi) \\\\\n&amp;= -\\frac1{4\\pi} - \\frac1{4\\pi}= -\\frac1{2\\pi}. \\end{aligned}\\]</span></p>\n", 
+        "<p>Alternatively, substitute <span class=\"math\">\\(u = \\sin(\\pi x).\\)</span> Then <span class=\"math\">\\(du = \\pi \\cos(\\pi x)dx\\)</span>, when <span class=\"math\">\\(x=1/2\\)</span> then <span class=\"math\">\\(u = \\sin(\\pi/2) = 1\\)</span>, and when <span class=\"math\">\\(x=1\\)</span> then <span class=\"math\">\\(u = \\sin(\\pi) = 0.\\)</span> Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI_1 &amp;= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&amp;= \\int_1^0 u \\cos(\\pi x)\\frac{du}{\\pi \\cos(\\pi x)} \\\\\n&amp;= \\frac1{\\pi} \\int_1^0 u\\,du \\\\\n&amp;= \\left.\\frac1{2\\pi}u^2\\right|_1^0 \\\\\n&amp;= - \\frac1{2\\pi}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We first solve the indefinite integral, using the trigonometric identity\n$\\sin(2x) = 2\\sin(x)\\cos(x)$:\n\n\\begin{align*}\n\\int \\sin(\\pi x)\\cos(\\pi x)\\,dx &= \\int \\frac12 \\sin(2\\pi x)\\,dx \\\\\n&=-\\frac1{4\\pi}\\cos(2\\pi x) + C. \n\\end{align*}\n\nTherefore\n\n\\begin{align*}\nI_1 &= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&= \\left.\\frac{-1}{4\\pi}\\cos(2\\pi x)\\right|_{1/2}^1 \\\\\n&= \\frac{-1}{4\\pi} \\cos(2\\pi) + \\frac1{4\\pi} \\cos(\\pi) \\\\\n&= -\\frac1{4\\pi} - \\frac1{4\\pi}= -\\frac1{2\\pi}. \n\\end{align*}", 
+        "Alternatively, substitute $u = \\sin(\\pi x).$ Then\n$du = \\pi \\cos(\\pi x)dx$, when $x=1/2$ then $u = \\sin(\\pi/2) = 1$, and\nwhen $x=1$ then $u = \\sin(\\pi) = 0.$ Therefore\n\n\\begin{align*}\nI_1 &= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&= \\int_1^0 u \\cos(\\pi x)\\frac{du}{\\pi \\cos(\\pi x)} \\\\\n&= \\frac1{\\pi} \\int_1^0 u\\,du \\\\\n&= \\left.\\frac1{2\\pi}u^2\\right|_1^0 \\\\\n&= - \\frac1{2\\pi}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We first solve the indefinite integral, using the trigonometric identity &lt;math>\\sin(2x) = 2\\sin(x)\\cos(x)&lt;/math>:\n\n&lt;math> \\begin{align} \\int \\sin(\\pi x)\\cos(\\pi x)\\,dx &amp;= \\int \\frac12 \\sin(2\\pi x)\\,dx \\\\\n&amp;=-\\frac1{4\\pi}\\cos(2\\pi x) + C. \\end{align} &lt;/math>\n\nTherefore\n\n&lt;math>\\begin{align} I_1 &amp;= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&amp;= \\left.\\frac{-1}{4\\pi}\\cos(2\\pi x)\\right|_{1/2}^1 \\\\\n&amp;= \\frac{-1}{4\\pi} \\cos(2\\pi) + \\frac1{4\\pi} \\cos(\\pi) \\\\\n&amp;= -\\frac1{4\\pi} - \\frac1{4\\pi}\u00a0= -\\frac1{2\\pi}. \\end{align} &lt;/math>\n", 
+        "Alternatively, substitute &lt;math> u = \\sin(\\pi x). &lt;/math> Then &lt;math>du = \\pi \\cos(\\pi x)dx&lt;/math>, when &lt;math>x=1/2&lt;/math> then &lt;math>u = \\sin(\\pi/2) = 1&lt;/math>, and when &lt;math>x=1&lt;/math> then &lt;math>u = \\sin(\\pi) = 0.&lt;/math> Therefore\n\n&lt;math>\\begin{align} I_1 &amp;= \\int_{1/2}^1 \\sin(\\pi x)\\cos(\\pi x)\\,dx \\\\\n&amp;= \\int_1^0 u \\cos(\\pi x)\\frac{du}{\\pi \\cos(\\pi x)} \\\\\n&amp;= \\frac1{\\pi} \\int_1^0 u\\,du \\\\\n&amp;= \\left.\\frac1{2\\pi}u^2\\right|_1^0 \\\\\n&amp;= - \\frac1{2\\pi}.\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Evaluate the integral <span class=\"math\">\\(I_1 = \\int_{\\frac12}^1 \\sin(\\pi x) \\cos(\\pi x)\\,dx.\\)</span></p>\n", 
+    "statement_latex": "Evaluate the integral\n$I_1 = \\int_{\\frac12}^1 \\sin(\\pi x) \\cos(\\pi x)\\,dx.$", 
+    "statement_raw": "Evaluate the integral &lt;math> I_1 = \\int_{\\frac12}^1 \\sin(\\pi x) \\cos(\\pi x)\\,dx. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution", 
+        "Trigonometric_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_02_(a)", 
+    "year": 2011
 }

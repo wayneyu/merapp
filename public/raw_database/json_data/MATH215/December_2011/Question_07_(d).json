@@ -1,13 +1,46 @@
 {
-    "term": "December", 
-    "question": "Question_07_(d)", 
-    "course": "MATH215", 
-    "statement": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\\end{align*}\n\n\\textbf{(d)} Sketch the phase portrait of the non-linear system.", 
-    "year": 2011, 
-    "sols": [
-        "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Fig_215_2011_7d_new.jpg}\n\\end{description}"
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg}\n\\end{description}", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "First plot the neighbourhood of the critical points and use the results\nfrom\n\\href{Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_7_(c)}{7c}.\n\nThen fill in the remaining areas by calculating the derivative of the\nsolution at exemplary points."
-    ]
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>First plot the neighbourhood of the critical points and use the results from <span>7c</span>.</p>\n<p>Then fill in the remaining areas by calculating the derivative of the solution at exemplary points.</p>\n"
+    ], 
+    "hints_latex": [
+        "First plot the neighbourhood of the critical points and use the results\nfrom\n{7c}.\n\nThen fill in the remaining areas by calculating the derivative of the\nsolution at exemplary points."
+    ], 
+    "hints_raw": [
+        "First plot the neighbourhood of the critical points and use the results from [[Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_7_(c)|7c]]. \n\nThen fill in the remaining areas by calculating the derivative of the solution at exemplary points.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "7 (d)", 
+    "rating": 1, 
+    "sols_html": [
+        "<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg}\n\\end{description}"
+    ], 
+    "sols_raw": [
+        ":[[File:Fig 215 2011 7d new.jpg|400px|Phase space, in grey the eigenvectors of the linearized systems are plotted]]\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the system of equations</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&#39; &amp;= x(2-x-y) \\\\\ny&#39; &amp;= y(1-x)\\end{aligned}\\]</span></p>\n<p><strong>(d)</strong> Sketch the phase portrait of the non-linear system.</p>\n", 
+    "statement_latex": "Consider the system of equations\n\n\\begin{align*}\nx' &= x(2-x-y) \\\\\ny' &= y(1-x)\n\\end{align*}\n\n\\textbf{(d)} Sketch the phase portrait of the non-linear system.", 
+    "statement_raw": "Consider the system of equations\n\n:&lt;math>\n\\begin{align}\nx' &amp;= x(2-x-y) \\\\\ny' &amp;= y(1-x)\n\\end{align}\n&lt;/math>\n\n'''(d)''' Sketch the phase portrait of the non-linear system.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_07_(d)", 
+    "year": 2011
 }

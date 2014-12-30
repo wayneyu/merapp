@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(h)", 
-    "course": "MATH101", 
-    "statement": "For what values of $r$ does the function $y = x^r$ satisfy the following\ndifferential equation (for $x > 0$)?\n\n\\begin{align*}\\displaystyle\nx^2 y'' + 4xy' + 2y = 0\\end{align*}", 
-    "year": 2009, 
-    "sols": [
-        "When $y  = x^{r}$, we know that $y' = rx^{r-1}$ and\n$y'' = r(r-1)x^{r-2}$. Hence, we have\n\n\\begin{align*}\n0 &= x^2 y'' + 4xy' + 2y \\\\\n&= x^2 (r(r-1)x^{r-2} ) + 4x(rx^{r-1}) + 2x^{r} \\\\\n&= (r^{2}-r)x^{r} + 4rx^{r} + 2x^{r} \\\\\n&= (r^{2}+3r+2)x^{r}\\end{align*}\n\nNow, since $x > 0$ always, we must have that the coefficient of $x^{r}$\nabove has to be 0. Thus, we solve\n\n\\begin{align*}\\displaystyle\n0 = r^{2}+3r+2 = (r+1)(r+2)\\end{align*}\n\nand so $r = -1$ and $r = -2$ completing the question."
+    "answer_html": "<p>and so <span class=\"math\">\\(r = -1\\)</span> and <span class=\"math\">\\(r = -2\\)</span> completing the question.</p>\n", 
+    "answer_latex": "and so $r = -1$ and $r = -2$ completing the question.", 
+    "contributors": [
+        "CindyBlois", 
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try plugging in the values of <span class=\"math\">\\(y,y&#39;,y&#39;&#39;\\)</span> into the differential equation.</p>\n"
+    ], 
+    "hints_latex": [
         "Try plugging in the values of $y,y',y''$ into the differential equation."
-    ]
+    ], 
+    "hints_raw": [
+        "Try plugging in the values of &lt;math> y,y',y'' &lt;/math> into the differential equation.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (h)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>When <span class=\"math\">\\(y  = x^{r}\\)</span>, we know that <span class=\"math\">\\(y&#39; = rx^{r-1}\\)</span> and <span class=\"math\">\\(y&#39;&#39; = r(r-1)x^{r-2}\\)</span>. Hence, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 &amp;= x^2 y&#39;&#39; + 4xy&#39; + 2y \\\\\n&amp;= x^2 (r(r-1)x^{r-2} ) + 4x(rx^{r-1}) + 2x^{r} \\\\\n&amp;= (r^{2}-r)x^{r} + 4rx^{r} + 2x^{r} \\\\\n&amp;= (r^{2}+3r+2)x^{r}\\end{aligned}\\]</span></p>\n<p>Now, since <span class=\"math\">\\(x &gt; 0\\)</span> always, we must have that the coefficient of <span class=\"math\">\\(x^{r}\\)</span> above has to be 0. Thus, we solve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n0 = r^{2}+3r+2 = (r+1)(r+2)\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(r = -1\\)</span> and <span class=\"math\">\\(r = -2\\)</span> completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "When $y  = x^{r}$, we know that $y' = rx^{r-1}$ and\n$y'' = r(r-1)x^{r-2}$. Hence, we have\n\n\\begin{align*}\n0 &= x^2 y'' + 4xy' + 2y \\\\\n&= x^2 (r(r-1)x^{r-2} ) + 4x(rx^{r-1}) + 2x^{r} \\\\\n&= (r^{2}-r)x^{r} + 4rx^{r} + 2x^{r} \\\\\n&= (r^{2}+3r+2)x^{r}\n\\end{align*}\n\nNow, since $x > 0$ always, we must have that the coefficient of $x^{r}$\nabove has to be 0. Thus, we solve\n\n\\begin{align*}\n\\displaystyle\n0 = r^{2}+3r+2 = (r+1)(r+2)\n\\end{align*}\n\nand so $r = -1$ and $r = -2$ completing the question."
+    ], 
+    "sols_raw": [
+        "When &lt;math> y  = x^{r} &lt;/math>, we know that &lt;math> y' = rx^{r-1} &lt;/math> and &lt;math> y'' = r(r-1)x^{r-2} &lt;/math>. Hence, we have\n\n:&lt;math> \n\\begin{align}\n0 &amp;= x^2 y'' + 4xy' + 2y \\\\\n&amp;= x^2 (r(r-1)x^{r-2} ) + 4x(rx^{r-1}) + 2x^{r} \\\\\n&amp;= (r^{2}-r)x^{r} + 4rx^{r} + 2x^{r} \\\\\n&amp;= (r^{2}+3r+2)x^{r}\n\\end{align}\n&lt;/math>\n\nNow, since &lt;math> x > 0 &lt;/math> always, we must have that the coefficient of &lt;math> x^{r} &lt;/math> above has to be 0. Thus, we solve\n\n:&lt;math>\\displaystyle\n0 = r^{2}+3r+2 = (r+1)(r+2)\n&lt;/math>\n\nand so &lt;math> r = -1 &lt;/math> and &lt;math> r = -2 &lt;/math> completing the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>For what values of <span class=\"math\">\\(r\\)</span> does the function <span class=\"math\">\\(y = x^r\\)</span> satisfy the following differential equation (for <span class=\"math\">\\(x &gt; 0\\)</span>)?</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nx^2 y&#39;&#39; + 4xy&#39; + 2y = 0\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "For what values of $r$ does the function $y = x^r$ satisfy the following\ndifferential equation (for $x > 0$)?\n\n\\begin{align*}\n\\displaystyle\nx^2 y'' + 4xy' + 2y = 0\n\\end{align*}", 
+    "statement_raw": "For what values of &lt;math>r&lt;/math> does the function &lt;math>y = x^r&lt;/math> satisfy the following differential equation\n(for &lt;math>x > 0&lt;/math>)?\n:&lt;math>\\displaystyle\nx^2 y'' + 4xy' + 2y = 0\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation_(higher_order)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(h)", 
+    "year": 2009
 }

@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH103", 
-    "statement": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(d)} The value of the integral\n\n\\begin{align*}\\int_1^e \\frac{\\ln(x)}{x^2}\\,dx\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle {} 1-\\frac2{e}$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(ii)} ~ $\\displaystyle {} 1+\\frac2{e}$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(iii)} ~ $\\displaystyle {} 1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(iv)} ~ $\\displaystyle {} \\frac1{e^2}-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(v)} ~ $\\displaystyle {} \\frac{\\ln(e)}{e^2}-\\ln(1)$\n\\end{description}", 
-    "year": 2005, 
-    "sols": [
-        "Simple substitution does not work in this problem, so we will need to\nintegrate by parts. Let $\\displaystyle u=\\ln{x}$ and\n$dv=\\frac{dx}{x^2}=x^{-2}dx$. Then $du=\\frac{dx}{x}$ and\n$v=-x^{-1}=-\\frac{1}{x}$. Thus,\n\n$\\int \\frac{\\ln{x}}{x^2}dx=-\\frac{\\ln{x}}{x}-\\int \\left ( -\\frac{1}{x} \\right ) \\left ( \\frac{dx}{x} \\right )=-\\frac{\\ln{x}}{x}+\\int \\left (\\frac{dx}{x^2}\\right )=-\\frac{\\ln{x}}{x}-\\frac{1}{x}.$\n\nEvaluating the definite integral then gives\n\n$\\int_{1}^{e}\\frac{\\ln{x}}{x^2}dx=\\left ( -\\frac{\\ln{e}}{e}-\\frac{1}{e} \\right )- \\left ( -\\frac{\\ln{1}}{1}-\\frac{1}{1}\n\\right )= \\left(-\\frac{2}{e} \\right )- \\left( 0-1 \\right )=-\\frac{2}{e}+1.$\n\nTherefore, the correct answer is (i)."
+    "answer_html": "<p>Therefore, the correct answer is (i).</p>\n", 
+    "answer_latex": "Therefore, the correct answer is (i).", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Use integration by parts.</p>\n", 
+        "<p>Let <span class=\"math\">\\(u=\\ln{x}, dv = \\frac{dx}{x^2}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Use integration by parts.", 
         "Let $u=\\ln{x}, dv = \\frac{dx}{x^2}$."
-    ]
+    ], 
+    "hints_raw": [
+        "Use integration by parts.\n", 
+        "Let &lt;math>u=\\ln{x}, dv = \\frac{dx}{x^2}&lt;/math>.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (d)", 
+    "rating": 65, 
+    "sols_html": [
+        "<p>Simple substitution does not work in this problem, so we will need to integrate by parts. Let <span class=\"math\">\\(\\displaystyle u=\\ln{x}\\)</span> and <span class=\"math\">\\(dv=\\frac{dx}{x^2}=x^{-2}dx\\)</span>. Then <span class=\"math\">\\(du=\\frac{dx}{x}\\)</span> and <span class=\"math\">\\(v=-x^{-1}=-\\frac{1}{x}\\)</span>. Thus,</p>\n<p><span class=\"math\">\\(\\int \\frac{\\ln{x}}{x^2}dx=-\\frac{\\ln{x}}{x}-\\int \\left ( -\\frac{1}{x} \\right ) \\left ( \\frac{dx}{x} \\right )=-\\frac{\\ln{x}}{x}+\\int \\left (\\frac{dx}{x^2}\\right )=-\\frac{\\ln{x}}{x}-\\frac{1}{x}.\\)</span></p>\n<p>Evaluating the definite integral then gives</p>\n<p><span class=\"math\">\\(\\int_{1}^{e}\\frac{\\ln{x}}{x^2}dx=\\left ( -\\frac{\\ln{e}}{e}-\\frac{1}{e} \\right )- \\left ( -\\frac{\\ln{1}}{1}-\\frac{1}{1}\n\\right )= \\left(-\\frac{2}{e} \\right )- \\left( 0-1 \\right )=-\\frac{2}{e}+1.\\)</span></p>\n<p>Therefore, the correct answer is (i).</p>\n"
+    ], 
+    "sols_latex": [
+        "Simple substitution does not work in this problem, so we will need to\nintegrate by parts. Let $\\displaystyle u=\\ln{x}$ and\n$dv=\\frac{dx}{x^2}=x^{-2}dx$. Then $du=\\frac{dx}{x}$ and\n$v=-x^{-1}=-\\frac{1}{x}$. Thus,\n\n$\\int \\frac{\\ln{x}}{x^2}dx=-\\frac{\\ln{x}}{x}-\\int \\left ( -\\frac{1}{x} \\right ) \\left ( \\frac{dx}{x} \\right )=-\\frac{\\ln{x}}{x}+\\int \\left (\\frac{dx}{x^2}\\right )=-\\frac{\\ln{x}}{x}-\\frac{1}{x}.$\n\nEvaluating the definite integral then gives\n\n$\\int_{1}^{e}\\frac{\\ln{x}}{x^2}dx=\\left ( -\\frac{\\ln{e}}{e}-\\frac{1}{e} \\right )- \\left ( -\\frac{\\ln{1}}{1}-\\frac{1}{1}\n\\right )= \\left(-\\frac{2}{e} \\right )- \\left( 0-1 \\right )=-\\frac{2}{e}+1.$\n\nTherefore, the correct answer is (i)."
+    ], 
+    "sols_raw": [
+        "Simple substitution does not work in this problem, so we will need to integrate by parts. Let &lt;math>\\displaystyle u=\\ln{x}&lt;/math>  and &lt;math>dv=\\frac{dx}{x^2}=x^{-2}dx&lt;/math>. Then &lt;math>du=\\frac{dx}{x}&lt;/math>  and &lt;math> v=-x^{-1}=-\\frac{1}{x}&lt;/math>. Thus,\n \n&lt;math>\n\\int \\frac{\\ln{x}}{x^2}dx=-\\frac{\\ln{x}}{x}-\\int \\left ( -\\frac{1}{x} \\right ) \\left ( \\frac{dx}{x} \\right )=-\\frac{\\ln{x}}{x}+\\int \\left (\\frac{dx}{x^2}\\right )=-\\frac{\\ln{x}}{x}-\\frac{1}{x}.\n&lt;/math>\n\nEvaluating the definite integral then gives \n\n&lt;math>\n\\int_{1}^{e}\\frac{\\ln{x}}{x^2}dx=\\left ( -\\frac{\\ln{e}}{e}-\\frac{1}{e} \\right )- \\left ( -\\frac{\\ln{1}}{1}-\\frac{1}{1}\n\\right )= \\left(-\\frac{2}{e} \\right )- \\left( 0-1 \\right )=-\\frac{2}{e}+1.\n&lt;/math>\n\nTherefore, the correct answer is (i).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Multiple Choice Question: Select <strong>ONE</strong> correct answer <em>(i)</em>, <em>(ii)</em>, <em>(iii)</em>, <em>(iv)</em>, or <em>(v)</em>.</p>\n<p><strong>(d)</strong> The value of the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^e \\frac{\\ln(x)}{x^2}\\,dx\\end{aligned}\\]</span></p>\n<p>is</p>\n<dl>\n\n<dd><p><em>(i)</em> &#160; <span class=\"math\">\\(\\displaystyle {} 1-\\frac2{e}\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>(ii)</em> &#160; <span class=\"math\">\\(\\displaystyle {} 1+\\frac2{e}\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>(iii)</em> &#160; <span class=\"math\">\\(\\displaystyle {} 1\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>(iv)</em> &#160; <span class=\"math\">\\(\\displaystyle {} \\frac1{e^2}-1\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p><em>(v)</em> &#160; <span class=\"math\">\\(\\displaystyle {} \\frac{\\ln(e)}{e^2}-\\ln(1)\\)</span></p>\n</dd>\n</dl>\n", 
+    "statement_latex": "Multiple Choice Question: Select \\textbf{ONE} correct answer \\emph{(i)},\n\\emph{(ii)}, \\emph{(iii)}, \\emph{(iv)}, or \\emph{(v)}.\n\n\\textbf{(d)} The value of the integral\n\n\\begin{align*}\n\\int_1^e \\frac{\\ln(x)}{x^2}\\,dx\n\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(i)} ~ $\\displaystyle {} 1-\\frac2{e}$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(ii)} ~ $\\displaystyle {} 1+\\frac2{e}$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(iii)} ~ $\\displaystyle {} 1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(iv)} ~ $\\displaystyle {} \\frac1{e^2}-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\emph{(v)} ~ $\\displaystyle {} \\frac{\\ln(e)}{e^2}-\\ln(1)$\n\\end{description}", 
+    "statement_raw": "Multiple Choice Question: Select '''ONE''' correct answer ''(i)'', ''(ii)'', ''(iii)'', ''(iv)'', or ''(v)''.\n\n'''(d)''' The value of the integral\n:&lt;math>\n\\int_1^e \\frac{\\ln(x)}{x^2}\\,dx\n&lt;/math>\nis\n\n:''(i)'' &amp;nbsp; &lt;math>\\displaystyle{} 1-\\frac2{e} &lt;/math>\n\n:''(ii)'' &amp;nbsp; &lt;math>\\displaystyle{} 1+\\frac2{e} &lt;/math> \n\n:''(iii)'' &amp;nbsp; &lt;math>\\displaystyle{} 1 &lt;/math> \n\n:''(iv)'' &amp;nbsp; &lt;math>\\displaystyle{} \\frac1{e^2}-1 &lt;/math> \n\n:''(v)'' &amp;nbsp; &lt;math>\\displaystyle{} \\frac{\\ln(e)}{e^2}-\\ln(1) &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_01_(d)", 
+    "year": 2005
 }

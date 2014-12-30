@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH307", 
-    "statement": "Let \\emph{u} be a unit vector and \\emph{Q = I - 2uu\\textsuperscript{T}}.\nShow:\n\n\\textbf{(b)} The matrix \\emph{Q + iI} is invertible.", 
-    "year": 2008, 
-    "sols": [
-        "Recall the definition of the eigenvalue, we know that $-i$ is one of\nQ$^{\\prime}$s eigenvalues when $det(Q+iI)=0$, and $Q+iI$ is invertible\nif and only if $det(Q+iI)\\neq 0$. From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_06_(a)}{part\na}, we know that Q is a symmetric matrix. A symmetric matrix will only\nhave real eigenvalues and since $-i$ is not real, it is not an\neigenvalue of Q and $det(Q+iI)$ is never equal to zero.\n\nTherefore, the matrix $Q+iI$ is invertible."
+    "answer_html": "<p>Therefore, the matrix <span class=\"math\">\\(Q+iI\\)</span> is invertible.</p>\n", 
+    "answer_latex": "Therefore, the matrix $Q+iI$ is invertible.", 
+    "contributors": [
+        "IainMoyles", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Think eigenvalues and recall part (a).</p>\n"
+    ], 
+    "hints_latex": [
         "Think eigenvalues and recall part (a)."
-    ]
+    ], 
+    "hints_raw": [
+        "Think eigenvalues and recall part (a).\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Recall the definition of the eigenvalue, we know that <span class=\"math\">\\(-i\\)</span> is one of Q<span class=\"math\">\\(^{\\prime}\\)</span>s eigenvalues when <span class=\"math\">\\(det(Q+iI)=0\\)</span>, and <span class=\"math\">\\(Q+iI\\)</span> is invertible if and only if <span class=\"math\">\\(det(Q+iI)\\neq 0\\)</span>. From <span>part a</span>, we know that Q is a symmetric matrix. A symmetric matrix will only have real eigenvalues and since <span class=\"math\">\\(-i\\)</span> is not real, it is not an eigenvalue of Q and <span class=\"math\">\\(det(Q+iI)\\)</span> is never equal to zero.</p>\n<p>Therefore, the matrix <span class=\"math\">\\(Q+iI\\)</span> is invertible.</p>\n"
+    ], 
+    "sols_latex": [
+        "Recall the definition of the eigenvalue, we know that $-i$ is one of\nQ$^{\\prime}$s eigenvalues when $det(Q+iI)=0$, and $Q+iI$ is invertible\nif and only if $det(Q+iI)\\neq 0$. From\n{part\na}, we know that Q is a symmetric matrix. A symmetric matrix will only\nhave real eigenvalues and since $-i$ is not real, it is not an\neigenvalue of Q and $det(Q+iI)$ is never equal to zero.\n\nTherefore, the matrix $Q+iI$ is invertible."
+    ], 
+    "sols_raw": [
+        "Recall the definition of the eigenvalue, we know that &lt;math>-i&lt;/math> is one of Q\u2019s eigenvalues when &lt;math>det(Q+iI)=0&lt;/math>, and &lt;math>Q+iI&lt;/math> is invertible if and only if &lt;math>det(Q+iI)\\neq 0&lt;/math>.  From [[Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_06_(a)|part a]], we know that Q is a symmetric matrix.  A symmetric matrix will only have real eigenvalues and since &lt;math>-i&lt;/math> is not real, it is not an eigenvalue of Q and &lt;math>det(Q+iI)&lt;/math> is never equal to zero.\n\nTherefore, the matrix &lt;math>Q+iI&lt;/math> is invertible.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <em>u</em> be a unit vector and <em>Q = I - 2uu<sup>T</sup></em>. Show:</p>\n<p><strong>(b)</strong> The matrix <em>Q + iI</em> is invertible.</p>\n", 
+    "statement_latex": "Let \\emph{u} be a unit vector and \\emph{Q = I - 2uu\\textsuperscript{T}}.\nShow:\n\n\\textbf{(b)} The matrix \\emph{Q + iI} is invertible.", 
+    "statement_raw": "Let ''u'' be a unit vector and ''Q = I - 2uu&lt;sup>T&lt;/sup>''. Show:\n\n'''(b)''' The matrix ''Q + iI'' is invertible.\n", 
+    "term": "December", 
+    "topics": [
+        "Eigenvalues_and_eigenvectors"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_06_(b)", 
+    "year": 2008
 }

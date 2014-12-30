@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
-    "course": "MATH312", 
-    "statement": "Find $\\displaystyle 9^{23} \\mod{31}$", 
-    "year": 2009, 
-    "sols": [
-        "We use the square multiply algorithm to solve this problem. We compute\n$\\displaystyle 9^{2a}$ for \\emph{a} up to 4 to compute this value. We\nsee that\n\n\\begin{align*}\n9 &\\equiv 9 \\mod{31}\\\\\n9^{2} &\\equiv 81 \\equiv 19 \\mod{31} \\\\\n9^{4} &\\equiv (9^{2})^{2} \\equiv 19^{2} \\equiv 361 \\equiv 51 \\equiv 20 \\mod{31} \\\\\n9^{8} &\\equiv (9^{4})^{2} \\equiv 20^{2} \\equiv 400 \\equiv 90 \\equiv 28 \\equiv -3 \\mod{31} \\\\\n9^{16} &\\equiv (9^{8})^{2} \\equiv (-3)^{2} \\equiv 9 \\mod{31}\\end{align*}\n\nNow, we have that\n\n\\begin{align*}\n9^{23} &\\equiv 9^{16}\\cdot 9^{4} \\cdot 9^{2} \\cdot 9^{1} \\mod{31}\\\\\n&\\equiv 9 \\cdot 20 \\cdot 19 \\cdot 9 \\mod{31}\\\\\n&\\equiv 9 \\cdot 9 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 9^{2} \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 19 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 19^{2} \\cdot 20 \\mod{31} \\\\\n&\\equiv 20 \\cdot 20 \\mod{31} \\\\\n&\\equiv 28 \\mod{31}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\equiv 28 \\mod{31}\\)</span></p>\n", 
+    "answer_latex": " $\\equiv 28 \\mod{31}$ ", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Here the square multiply algorithm might be the best approach.</p>\n"
+    ], 
+    "hints_latex": [
         "Here the square multiply algorithm might be the best approach."
-    ]
+    ], 
+    "hints_raw": [
+        "Here the square multiply algorithm might be the best approach.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We use the square multiply algorithm to solve this problem. We compute <span class=\"math\">\\(\\displaystyle 9^{2a}\\)</span> for <em>a</em> up to 4 to compute this value. We see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n9 &amp;\\equiv 9 \\mod{31}\\\\\n9^{2} &amp;\\equiv 81 \\equiv 19 \\mod{31} \\\\\n9^{4} &amp;\\equiv (9^{2})^{2} \\equiv 19^{2} \\equiv 361 \\equiv 51 \\equiv 20 \\mod{31} \\\\\n9^{8} &amp;\\equiv (9^{4})^{2} \\equiv 20^{2} \\equiv 400 \\equiv 90 \\equiv 28 \\equiv -3 \\mod{31} \\\\\n9^{16} &amp;\\equiv (9^{8})^{2} \\equiv (-3)^{2} \\equiv 9 \\mod{31}\\end{aligned}\\]</span></p>\n<p>Now, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n9^{23} &amp;\\equiv 9^{16}\\cdot 9^{4} \\cdot 9^{2} \\cdot 9^{1} \\mod{31}\\\\\n&amp;\\equiv 9 \\cdot 20 \\cdot 19 \\cdot 9 \\mod{31}\\\\\n&amp;\\equiv 9 \\cdot 9 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 9^{2} \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 19 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 19^{2} \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 20 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 28 \\mod{31}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We use the square multiply algorithm to solve this problem. We compute\n$\\displaystyle 9^{2a}$ for \\emph{a} up to 4 to compute this value. We\nsee that\n\n\\begin{align*}\n9 &\\equiv 9 \\mod{31}\\\\\n9^{2} &\\equiv 81 \\equiv 19 \\mod{31} \\\\\n9^{4} &\\equiv (9^{2})^{2} \\equiv 19^{2} \\equiv 361 \\equiv 51 \\equiv 20 \\mod{31} \\\\\n9^{8} &\\equiv (9^{4})^{2} \\equiv 20^{2} \\equiv 400 \\equiv 90 \\equiv 28 \\equiv -3 \\mod{31} \\\\\n9^{16} &\\equiv (9^{8})^{2} \\equiv (-3)^{2} \\equiv 9 \\mod{31}\n\\end{align*}\n\nNow, we have that\n\n\\begin{align*}\n9^{23} &\\equiv 9^{16}\\cdot 9^{4} \\cdot 9^{2} \\cdot 9^{1} \\mod{31}\\\\\n&\\equiv 9 \\cdot 20 \\cdot 19 \\cdot 9 \\mod{31}\\\\\n&\\equiv 9 \\cdot 9 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 9^{2} \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 19 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&\\equiv 19^{2} \\cdot 20 \\mod{31} \\\\\n&\\equiv 20 \\cdot 20 \\mod{31} \\\\\n&\\equiv 28 \\mod{31}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We use the square multiply algorithm to solve this problem. We compute &lt;math> \\displaystyle 9^{2a}&lt;/math> for ''a'' up to 4 to compute this value. We see that\n\n&lt;math> \\displaystyle \n\\begin{align}\n9 &amp;\\equiv 9 \\mod{31}\\\\\n9^{2} &amp;\\equiv 81 \\equiv 19 \\mod{31} \\\\\n9^{4} &amp;\\equiv (9^{2})^{2} \\equiv 19^{2} \\equiv 361 \\equiv 51 \\equiv 20 \\mod{31} \\\\\n9^{8} &amp;\\equiv (9^{4})^{2} \\equiv 20^{2} \\equiv 400 \\equiv 90 \\equiv 28 \\equiv -3 \\mod{31} \\\\\n9^{16} &amp;\\equiv (9^{8})^{2} \\equiv (-3)^{2} \\equiv 9 \\mod{31}\n\\end{align}\n&lt;/math>\n\nNow, we have that \n\n&lt;math> \\displaystyle \n\\begin{align}\n9^{23} &amp;\\equiv 9^{16}\\cdot 9^{4} \\cdot 9^{2} \\cdot 9^{1} \\mod{31}\\\\\n&amp;\\equiv 9 \\cdot 20 \\cdot 19 \\cdot 9 \\mod{31}\\\\\n&amp;\\equiv 9 \\cdot 9 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 9^{2} \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 19 \\cdot 19 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 19^{2} \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 20 \\cdot 20 \\mod{31} \\\\\n&amp;\\equiv 28 \\mod{31}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find <span class=\"math\">\\(\\displaystyle 9^{23} \\mod{31}\\)</span></p>\n", 
+    "statement_latex": "Find $\\displaystyle 9^{23} \\mod{31}$", 
+    "statement_raw": "Find &lt;math> \\displaystyle 9^{23} \\mod{31}&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Modular_arithmetic"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2009/Question_03_(b)", 
+    "year": 2009
 }

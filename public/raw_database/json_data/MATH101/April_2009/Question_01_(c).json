@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy.$", 
-    "year": 2009, 
-    "sols": [
-        "If we use the substitution\n\n\\begin{align*}\\displaystyle u=2y+y^2\\end{align*} then\n\n\\begin{align*}\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy\\end{align*} and\n\n\\begin{align*} \\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&= \\frac13 3^{3/2} \\\\\n&= \\sqrt3.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy=\\sqrt3.\\)</span></p>\n", 
+    "answer_latex": " $\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy=\\sqrt3.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "CarmenBruni", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use a substitution.</p>\n", 
+        "<p>Let <span class=\"math\">\\(u= 2y+y^2.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Use a substitution.", 
         "Let $u= 2y+y^2.$"
-    ]
+    ], 
+    "hints_raw": [
+        "Use a substitution.\n", 
+        "Let &lt;math> u= 2y+y^2.&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (c)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>If we use the substitution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle u=2y+y^2\\end{aligned}\\]</span></p>\n<p>then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &amp;= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&amp;= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&amp;= \\frac13 3^{3/2} \\\\\n&amp;= \\sqrt3.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "If we use the substitution\n\n\\begin{align*}\n\\displaystyle u=2y+y^2\n\\end{align*} then\n\n\\begin{align*}\n\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy\n\\end{align*} and\n\n\\begin{align*}\n\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&= \\frac13 3^{3/2} \\\\\n&= \\sqrt3.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "If we use the substitution\n:&lt;math>\\displaystyle u=2y+y^2&lt;/math>\nthen\n:&lt;math>\\displaystyle du=(2+2y)\\,dy =2(1+y)\\,dy&lt;/math>\nand\n:&lt;math>\\begin{align} \\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy &amp;= \\frac12 \\int_0^3 \\sqrt{u}\\, du\\\\\n&amp;= \\frac12 \\left[\\frac23 u^{3/2}\\right]_0^3\\\\\n&amp;= \\frac13 3^{3/2} \\\\\n&amp;= \\sqrt3.\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy.\\)</span></p>\n", 
+    "statement_latex": "Evaluate $\\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy.$", 
+    "statement_raw": "Evaluate &lt;math> \\int_0^1 (y+1)\\sqrt{2y+y^2}\\,  dy. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(c)", 
+    "year": 2009
 }

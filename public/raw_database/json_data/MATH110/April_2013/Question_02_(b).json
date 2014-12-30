@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\rightarrow -1^{-}} f(x) = 0$\n\\item\n  $\\lim_{x \\rightarrow -1^{+}} f(x) = \\infty$\n\\item\n  $\\lim_{x \\rightarrow 1} f(x) = -\\infty$\n\\end{enumerate}", 
-    "year": 2013, 
-    "sols": [
-        "See the second hint for how each limit translates into a feature of the\ngraph.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Your graph can do whatever it wants to the left of \\emph{x = -1}, so\n  long as it approaches the point \\emph{(-1,0)}. The simplest (yet\n  somewhat boring) way to achieve this is by setting the function to\n  \\emph{0} for \\emph{x \\textless{} -1}.\n\\item\n  Between \\emph{x = -1} and \\emph{x = 1} the function has to fall from\n  $\\infty$ to $-\\infty$.\n\\item\n  To the right of \\emph{x = 1} the function has to come back from\n  $-\\infty$ and then can do whatever you want it to do.\n\\end{enumerate}\n\nThere is a lot of freedom in how your graph may look, but as long as you\nfollow the key points above your graph will be correct. Below is our\nexample \\emph{(the purple lines represent asymptotes)}:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110_April2013_Question2b_solution.jpg}\n\\end{description}"
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_April2013_Question2b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110_April2013_Question2b_solution.jpg}\n\\end{description}", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What does it mean when a limit evaluates to a number? To infinity? Each limit listed above turns into a graph feature like a point or asymptote.</p>\n", 
+        "<p>Each limit translates into the following graph feature:</p>\n<ol>\n<li><p>Approaching <em>x = -1</em> from the left, the graph approaches the point <em>(-1,0)</em>.</p></li>\n<li><p>There is a vertical asymptote at <em>x = -1</em> and the function increases to <span class=\"math\">\\(\\infty\\)</span> as it approaches <em>x = -1</em> from the right.</p></li>\n<li><p>There is a vertical asymptote at <em>x = 1</em> and the function decreases to <span class=\"math\">\\(-\\infty\\)</span> as it approaches <em>x = 1</em> from either side.</p></li>\n</ol>\n"
+    ], 
+    "hints_latex": [
         "What does it mean when a limit evaluates to a number? To infinity? Each\nlimit listed above turns into a graph feature like a point or asymptote.", 
         "Each limit translates into the following graph feature:\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Approaching \\emph{x = -1} from the left, the graph approaches the\n  point \\emph{(-1,0)}.\n\\item\n  There is a vertical asymptote at \\emph{x = -1} and the function\n  increases to $\\infty$ as it approaches \\emph{x = -1} from the right.\n\\item\n  There is a vertical asymptote at \\emph{x = 1} and the function\n  decreases to $-\\infty$ as it approaches \\emph{x = 1} from either side.\n\\end{enumerate}"
-    ]
+    ], 
+    "hints_raw": [
+        "What does it mean when a limit evaluates to a number?  To infinity?  Each limit listed above turns into a graph feature like a point or asymptote.\n", 
+        "Each limit translates into the following graph feature: \n\n# Approaching ''x = -1'' from the left, the graph approaches the point ''(-1,0)''.\n# There is a vertical asymptote at ''x = -1'' and the function increases to &lt;math>\\infty&lt;/math> as it approaches ''x = -1'' from the right.\n# There is a vertical asymptote at ''x = 1'' and the function decreases to &lt;math>-\\infty&lt;/math> as it approaches ''x = 1'' from either side.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>See the second hint for how each limit translates into a feature of the graph.</p>\n<ol>\n<li><p>Your graph can do whatever it wants to the left of <em>x = -1</em>, so long as it approaches the point <em>(-1,0)</em>. The simplest (yet somewhat boring) way to achieve this is by setting the function to <em>0</em> for <em>x &lt; -1</em>.</p></li>\n<li><p>Between <em>x = -1</em> and <em>x = 1</em> the function has to fall from <span class=\"math\">\\(\\infty\\)</span> to <span class=\"math\">\\(-\\infty\\)</span>.</p></li>\n<li><p>To the right of <em>x = 1</em> the function has to come back from <span class=\"math\">\\(-\\infty\\)</span> and then can do whatever you want it to do.</p></li>\n</ol>\n<p>There is a lot of freedom in how your graph may look, but as long as you follow the key points above your graph will be correct. Below is our example <em>(the purple lines represent asymptotes)</em>:</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_April2013_Question2b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+    ], 
+    "sols_latex": [
+        "See the second hint for how each limit translates into a feature of the\ngraph.\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  Your graph can do whatever it wants to the left of \\emph{x = -1}, so\n  long as it approaches the point \\emph{(-1,0)}. The simplest (yet\n  somewhat boring) way to achieve this is by setting the function to\n  \\emph{0} for \\emph{x \\textless{} -1}.\n\\item\n  Between \\emph{x = -1} and \\emph{x = 1} the function has to fall from\n  $\\infty$ to $-\\infty$.\n\\item\n  To the right of \\emph{x = 1} the function has to come back from\n  $-\\infty$ and then can do whatever you want it to do.\n\\end{enumerate}\n\nThere is a lot of freedom in how your graph may look, but as long as you\nfollow the key points above your graph will be correct. Below is our\nexample \\emph{(the purple lines represent asymptotes)}:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110_April2013_Question2b_solution.jpg}\n\\end{description}"
+    ], 
+    "sols_raw": [
+        "See the second hint for how each limit translates into a feature of the graph.\n\n# Your graph can do whatever it wants to the left of ''x = -1'', so long as it approaches the point ''(-1,0)''. The simplest (yet somewhat boring) way to achieve this is by setting the function to ''0'' for ''x &lt; -1''. \n# Between ''x = -1'' and ''x = 1'' the function has to fall from &lt;math>\\infty&lt;/math> to &lt;math>-\\infty&lt;/math>.\n# To the right of ''x = 1'' the function has to come back from &lt;math>-\\infty&lt;/math> and then can do whatever you want it to do.\n\nThere is a lot of freedom in how your graph may look, but as long as you follow the key points above your graph will be correct. Below is our example ''(the purple lines represent asymptotes)'':\n\n:[[File:Math110 April2013 Question2b solution.jpg|350px]]\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Sketch a single function satisfying all of the listed criteria.</em></p>\n<ol>\n<li><p><span class=\"math\">\\(\\lim_{x \\rightarrow -1^{-}} f(x) = 0\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\lim_{x \\rightarrow -1^{+}} f(x) = \\infty\\)</span></p></li>\n<li><p><span class=\"math\">\\(\\lim_{x \\rightarrow 1} f(x) = -\\infty\\)</span></p></li>\n</ol>\n", 
+    "statement_latex": "\\emph{Sketch a single function satisfying all of the listed criteria.}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\lim_{x \\rightarrow -1^{-}} f(x) = 0$\n\\item\n  $\\lim_{x \\rightarrow -1^{+}} f(x) = \\infty$\n\\item\n  $\\lim_{x \\rightarrow 1} f(x) = -\\infty$\n\\end{enumerate}", 
+    "statement_raw": "''Sketch a single function satisfying all of the listed criteria.''\n\n# &lt;math>\\lim_{x \\rightarrow -1^{-}} f(x) = 0 &lt;/math>\n# &lt;math>\\lim_{x \\rightarrow -1^{+}} f(x) = \\infty &lt;/math>\n# &lt;math>\\lim_{x \\rightarrow 1} f(x) = -\\infty &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_02_(b)", 
+    "year": 2013
 }

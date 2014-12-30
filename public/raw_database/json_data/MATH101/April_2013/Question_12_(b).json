@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_12_(b)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work. Simplification of numerical answers is required.}.\n\nExplain why you \\emph{cannot} conclude that\n$\\displaystyle \\sum_{n=2}^\\infty \\frac{n+\\sin n}{1+n^2}$ diverges from\n\\href{Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_12_(a)}{part\n(a)} and the Integral Test.", 
-    "year": 2013, 
-    "sols": [
-        "If $\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}$, then its clear it is\npositive, tends to 0, and agrees with the summands on the natural\nnumbers. So we should prove it is never eventually decreasing. Taking\nthe derivative,\n\n\\begin{align*}\\displaystyle \nf'(x) = \\frac{(1+\\cos x)(1+x^2)-2x(x+\\sin x)}{(1+x^2)^2}\\end{align*}\n\nWe want to show that \\emph{$f$} is never eventually decreasing. For this,\nit suffices to find a sequence \\emph{x\\textsubscript{n}} of values that\ngrow with no limit, and for which \\emph{$f$'(x\\textsubscript{n})} is\npositive. How would be go about finding such a sequence? Let us look at\nthe enumerator more carefully. Our best bet to make\n\\emph{$f$'(x\\textsubscript{n})} positive is to choose\n\\emph{x\\textsubscript{n}} such that the positive term is maximal. This\nis achieved when \\emph{cos(x\\textsubscript{n}) = 1}. In this case,\n\\emph{sin(x\\textsubscript{n}) = 0} and we find that the enumerator\nbecomes\n\\emph{2(1+x\\textsubscript{n}\\textsuperscript{2})-2x\\textsubscript{n}\\textsuperscript{2}\n= 2 \\textgreater{} 0}. Hence, we choose $\\displaystyle x_n = 2n\\pi$ for\nany integer \\emph{n}, and double check that indeed the numerator\nbecomes:\n\n\\begin{align*}\n& (1+\\cos(2n\\pi))(1+(2n\\pi)^2)-2(2n\\pi)((2n\\pi)+\\sin (2n\\pi)) \\\\\n= \\ & 2(1+4n^2\\pi^2)-8n^2\\pi^2 \\\\\n= \\ & 2 > 0\\end{align*}\n\nThe denominator is always positive, so $\\displaystyle f'(x_n) > 0$ for\nthese values of $\\displaystyle x_n$, so that $\\displaystyle f(x_n)$ is\nincreasing at these values of $\\displaystyle x_n$. Since\n$\\displaystyle 2n\\pi$ grows with no limit, $\\displaystyle f(x)$ is never\neventually decreasing, and hence the integral test fails."
+    "answer_html": "<p>Since <span class=\"math\">\\(\\displaystyle 2n\\pi\\)</span> grows with no limit, <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is never eventually decreasing, and hence the integral test fails.</p>\n", 
+    "answer_latex": "Since\n$\\displaystyle 2n\\pi$ grows with no limit, $\\displaystyle f(x)$ is never\neventually decreasing, and hence the integral test fails.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What hypotheses are required for the Integral Test? Which one fails?</p>\n", 
+        "<p>If <span class=\"math\">\\(\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}\\)</span>, then its clear it is positive, tends to 0, and agrees with the summands on the natural numbers. So prove it is never eventually decreasing.</p>\n", 
+        "<p>It might be easiest to prove <span class=\"math\">\\(\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}\\)</span> is never eventually decreasing by differentiating and using a differential calculus result.</p>\n"
+    ], 
+    "hints_latex": [
         "What hypotheses are required for the Integral Test? Which one fails?", 
         "If $\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}$, then its clear it is\npositive, tends to 0, and agrees with the summands on the natural\nnumbers. So prove it is never eventually decreasing.", 
         "It might be easiest to prove\n$\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}$ is never eventually\ndecreasing by differentiating and using a differential calculus result."
-    ]
+    ], 
+    "hints_raw": [
+        "What hypotheses are required for the Integral Test? Which one fails?\n", 
+        "If &lt;math> \\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2} &lt;/math>, then its clear it is positive, tends to 0, and agrees with the summands on the natural numbers. So prove it is never eventually decreasing.\n", 
+        "It might be easiest to prove &lt;math> \\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2} &lt;/math> is never eventually decreasing by differentiating and using a differential calculus result.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "12 (b)", 
+    "rating": 41, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}\\)</span>, then its clear it is positive, tends to 0, and agrees with the summands on the natural numbers. So we should prove it is never eventually decreasing. Taking the derivative,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \nf&#39;(x) = \\frac{(1+\\cos x)(1+x^2)-2x(x+\\sin x)}{(1+x^2)^2}\\end{aligned}\\]</span></p>\n<p>We want to show that <em><span class=\"math\">\\(f\\)</span></em> is never eventually decreasing. For this, it suffices to find a sequence <em>x<sub>n</sub></em> of values that grow with no limit, and for which <em><span class=\"math\">\\(f\\)</span>&#8217;(x<sub>n</sub>)</em> is positive. How would be go about finding such a sequence? Let us look at the enumerator more carefully. Our best bet to make <em><span class=\"math\">\\(f\\)</span>&#8217;(x<sub>n</sub>)</em> positive is to choose <em>x<sub>n</sub></em> such that the positive term is maximal. This is achieved when <em>cos(x<sub>n</sub>) = 1</em>. In this case, <em>sin(x<sub>n</sub>) = 0</em> and we find that the enumerator becomes <em>2(1+x<sub>n</sub><sup>2</sup>)-2x<sub>n</sub><sup>2</sup> = 2 &gt; 0</em>. Hence, we choose <span class=\"math\">\\(\\displaystyle x_n = 2n\\pi\\)</span> for any integer <em>n</em>, and double check that indeed the numerator becomes:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp; (1+\\cos(2n\\pi))(1+(2n\\pi)^2)-2(2n\\pi)((2n\\pi)+\\sin (2n\\pi)) \\\\\n= \\ &amp; 2(1+4n^2\\pi^2)-8n^2\\pi^2 \\\\\n= \\ &amp; 2 &gt; 0\\end{aligned}\\]</span></p>\n<p>The denominator is always positive, so <span class=\"math\">\\(\\displaystyle f&#39;(x_n) &gt; 0\\)</span> for these values of <span class=\"math\">\\(\\displaystyle x_n\\)</span>, so that <span class=\"math\">\\(\\displaystyle f(x_n)\\)</span> is increasing at these values of <span class=\"math\">\\(\\displaystyle x_n\\)</span>. Since <span class=\"math\">\\(\\displaystyle 2n\\pi\\)</span> grows with no limit, <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is never eventually decreasing, and hence the integral test fails.</p>\n"
+    ], 
+    "sols_latex": [
+        "If $\\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2}$, then its clear it is\npositive, tends to 0, and agrees with the summands on the natural\nnumbers. So we should prove it is never eventually decreasing. Taking\nthe derivative,\n\n\\begin{align*}\n\\displaystyle \nf'(x) = \\frac{(1+\\cos x)(1+x^2)-2x(x+\\sin x)}{(1+x^2)^2}\n\\end{align*}\n\nWe want to show that \\emph{$f$} is never eventually decreasing. For this,\nit suffices to find a sequence \\emph{x\\textsubscript{n}} of values that\ngrow with no limit, and for which \\emph{$f$'(x\\textsubscript{n})} is\npositive. How would be go about finding such a sequence? Let us look at\nthe enumerator more carefully. Our best bet to make\n\\emph{$f$'(x\\textsubscript{n})} positive is to choose\n\\emph{x\\textsubscript{n}} such that the positive term is maximal. This\nis achieved when \\emph{cos(x\\textsubscript{n}) = 1}. In this case,\n\\emph{sin(x\\textsubscript{n}) = 0} and we find that the enumerator\nbecomes\n\\emph{2(1+x\\textsubscript{n}\\textsuperscript{2})-2x\\textsubscript{n}\\textsuperscript{2}\n= 2 \\textgreater{} 0}. Hence, we choose $\\displaystyle x_n = 2n\\pi$ for\nany integer \\emph{n}, and double check that indeed the numerator\nbecomes:\n\n\\begin{align*}\n& (1+\\cos(2n\\pi))(1+(2n\\pi)^2)-2(2n\\pi)((2n\\pi)+\\sin (2n\\pi)) \\\\\n= \\ & 2(1+4n^2\\pi^2)-8n^2\\pi^2 \\\\\n= \\ & 2 > 0\n\\end{align*}\n\nThe denominator is always positive, so $\\displaystyle f'(x_n) > 0$ for\nthese values of $\\displaystyle x_n$, so that $\\displaystyle f(x_n)$ is\nincreasing at these values of $\\displaystyle x_n$. Since\n$\\displaystyle 2n\\pi$ grows with no limit, $\\displaystyle f(x)$ is never\neventually decreasing, and hence the integral test fails."
+    ], 
+    "sols_raw": [
+        "If &lt;math> \\displaystyle f(x) = \\frac{x+\\sin x}{1+x^2} &lt;/math>, then its clear it is positive, tends to 0, and agrees with the summands on the natural numbers. So we should prove it is never eventually decreasing. Taking the derivative, \n\n:&lt;math> \n\\displaystyle \nf'(x) = \\frac{(1+\\cos x)(1+x^2)-2x(x+\\sin x)}{(1+x^2)^2}\n&lt;/math>\n\nWe want to show that ''&amp;fnof;'' is never eventually decreasing. For this, it suffices to find a sequence ''x&lt;sub>n&lt;/sub>'' of values that grow with no limit, and for which ''&amp;fnof;'(x&lt;sub>n&lt;/sub>)'' is positive. How would be go about finding such a sequence? Let us look at the enumerator more carefully. Our best bet to make ''&amp;fnof;'(x&lt;sub>n&lt;/sub>)'' positive is to choose ''x&lt;sub>n&lt;/sub>'' such that the positive term is maximal. This is achieved when ''cos(x&lt;sub>n&lt;/sub>) = 1''. In this case, ''sin(x&lt;sub>n&lt;/sub>) = 0'' and we find that the enumerator becomes ''2(1+x&lt;sub>n&lt;/sub>&lt;sup>2&lt;/sup>)-2x&lt;sub>n&lt;/sub>&lt;sup>2&lt;/sup> = 2 > 0''. Hence, we choose &lt;math> \\displaystyle x_n = 2n\\pi&lt;/math> for any integer ''n'', and double check that indeed the numerator becomes:\n\n:&lt;math> \n\\displaystyle \n\\begin{align}\n&amp; (1+\\cos(2n\\pi))(1+(2n\\pi)^2)-2(2n\\pi)((2n\\pi)+\\sin (2n\\pi)) \\\\\n= \\ &amp; 2(1+4n^2\\pi^2)-8n^2\\pi^2 \\\\\n= \\ &amp; 2 > 0\n\\end{align}\n&lt;/math>\n\nThe denominator is always positive, so &lt;math>\\displaystyle f'(x_n) > 0 &lt;/math> for these values of &lt;math> \\displaystyle x_n &lt;/math>, so that &lt;math> \\displaystyle f(x_n) &lt;/math> is increasing at these values of &lt;math> \\displaystyle x_n &lt;/math>. Since &lt;math> \\displaystyle 2n\\pi&lt;/math> grows with no limit, &lt;math> \\displaystyle f(x) &lt;/math> is never eventually decreasing, and hence the integral test fails.\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answer and <strong>show all your work. Simplification of numerical answers is required.</strong>.</p>\n<p>Explain why you <em>cannot</em> conclude that <span class=\"math\">\\(\\displaystyle \\sum_{n=2}^\\infty \\frac{n+\\sin n}{1+n^2}\\)</span> diverges from <span>part (a)</span> and the Integral Test.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answer and \\textbf{show all\nyour work. Simplification of numerical answers is required.}.\n\nExplain why you \\emph{cannot} conclude that\n$\\displaystyle \\sum_{n=2}^\\infty \\frac{n+\\sin n}{1+n^2}$ diverges from\n{part\n(a)} and the Integral Test.", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work. Simplification of numerical answers is required.'''.\n\nExplain why you ''cannot'' conclude that &lt;math> \\displaystyle \\sum_{n=2}^\\infty \\frac{n+\\sin n}{1+n^2} &lt;/math> diverges from [[Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_12_(a)|part (a)]] and the Integral Test.\n", 
+    "term": "April", 
+    "topics": [
+        "Integral_test_for_convergence"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_12_(b)", 
+    "year": 2013
 }

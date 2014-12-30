@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH220", 
-    "statement": "Write the negation of the statement\n\n$\\forall ~x \\in \\mathbb{R}, \\exists ~y \\in \\mathbb{N} {\\rm~s.t.~} x^{2} + y < x + y^{2}$.", 
-    "year": 2011, 
-    "sols": [
-        "The negation of the statement is given by\n\n\\begin{align*}\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\\)</span></p>\n", 
+    "answer_latex": " $\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "Konradbe", 
+        "CameronChristou"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Remember that the negation of the statement &#8220;For all <span class=\"math\">\\(x\\)</span>, <span class=\"math\">\\(P(x)\\)</span> is true.&#8221; is &#8220;There exist an <span class=\"math\">\\(x\\)</span> such that <span class=\"math\">\\(P(x)\\)</span> is false&#8221;.</p>\n"
+    ], 
+    "hints_latex": [
         "Remember that the negation of the statement ``For all $x$, $P(x)$ is\ntrue.'' is ``There exist an $x$ such that $P(x)$ is false''."
-    ]
+    ], 
+    "hints_raw": [
+        "Remember that the negation of the statement \"For all &lt;math>x&lt;/math>, &lt;math>P(x)&lt;/math> is true.\" is \"There exist an &lt;math> x &lt;/math> such that &lt;math>P(x)&lt;/math> is false\".\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The negation of the statement is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The negation of the statement is given by\n\n\\begin{align*}\n\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The negation of the statement is given by\n\n:&lt;math>\\exists x \\in \\mathbb{R}\\ \\textrm{s.t.}\\ \\forall y \\in \\mathbb{N}\\ x^2 +y \\geq x + y^2.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p>Write the negation of the statement</p>\n<p><span class=\"math\">\\(\\forall ~x \\in \\mathbb{R}, \\exists ~y \\in \\mathbb{N} {\\rm~s.t.~} x^{2} + y &lt; x + y^{2}\\)</span>.</p>\n", 
+    "statement_latex": "Write the negation of the statement\n\n$\\forall ~x \\in \\mathbb{R}, \\exists ~y \\in \\mathbb{N} {\\rm~s.t.~} x^{2} + y < x + y^{2}$.", 
+    "statement_raw": "Write the negation of the statement\n\n&lt;math>\\forall ~x \\in \\mathbb{R}, \\exists ~y \\in \\mathbb{N} {\\rm~s.t.~} x^{2} + y &lt; x + y^{2}&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_01_(d)", 
+    "year": 2011
 }

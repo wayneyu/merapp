@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "A calcium channel in a cardiac muscle cell opens and closes in a random\nmanner. Before receiving a signal for contraction, the channel is\nclosed. The channel opens \\emph{t} milliseconds after the signal is\nreceived where \\emph{t} has a probability density given by\n$\\displaystyle p(t) = \\frac{1}{50}e^{-t/50}$ for\n$\\displaystyle 0 < t < \\infty$. Which of the following gives the\nexpected time at which the channel opens?\n\ni. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}e^{-t/50}\\,dt$\n\nii. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}te^{-t/50}\\,dt$\n\niii. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}t^{2}e^{-t/50}\\,dt$\n\niv. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}(t-50)^{2}e^{-t/50}\\,dt$", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>A calcium channel in a cardiac muscle cell opens and closes in a random manner. Before receiving a signal for contraction, the channel is closed. The channel opens <em>t</em> milliseconds after the signal is received where <em>t</em> has a probability density given by <span class=\"math\">\\(\\displaystyle p(t) = \\frac{1}{50}e^{-t/50}\\)</span> for <span class=\"math\">\\(\\displaystyle 0 &lt; t &lt; \\infty\\)</span>. Which of the following gives the expected time at which the channel opens?</p>\n<p>i. <span class=\"math\">\\(\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}e^{-t/50}\\,dt\\)</span></p>\n<p>ii. <span class=\"math\">\\(\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}te^{-t/50}\\,dt\\)</span></p>\n<p>iii. <span class=\"math\">\\(\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}t^{2}e^{-t/50}\\,dt\\)</span></p>\n<p>iv. <span class=\"math\">\\(\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}(t-50)^{2}e^{-t/50}\\,dt\\)</span></p>\n", 
+    "statement_latex": "A calcium channel in a cardiac muscle cell opens and closes in a random\nmanner. Before receiving a signal for contraction, the channel is\nclosed. The channel opens \\emph{t} milliseconds after the signal is\nreceived where \\emph{t} has a probability density given by\n$\\displaystyle p(t) = \\frac{1}{50}e^{-t/50}$ for\n$\\displaystyle 0 < t < \\infty$. Which of the following gives the\nexpected time at which the channel opens?\n\ni. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}e^{-t/50}\\,dt$\n\nii. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}te^{-t/50}\\,dt$\n\niii. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}t^{2}e^{-t/50}\\,dt$\n\niv. $\\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}(t-50)^{2}e^{-t/50}\\,dt$", 
+    "statement_raw": "A calcium channel in a cardiac muscle cell opens and closes in a random manner. Before receiving a signal for contraction, the channel is closed. The channel opens ''t'' milliseconds after the signal is received where ''t'' has a probability density given by &lt;math> \\displaystyle p(t) = \\frac{1}{50}e^{-t/50}&lt;/math> for &lt;math> \\displaystyle 0 &lt; t &lt; \\infty&lt;/math>. Which of the following gives the expected time at which the channel opens?\n\ni. &lt;math> \\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}e^{-t/50}\\,dt&lt;/math>\n\nii. &lt;math> \\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}te^{-t/50}\\,dt&lt;/math>\n\niii. &lt;math> \\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}t^{2}e^{-t/50}\\,dt&lt;/math>\n\niv. &lt;math> \\displaystyle \\frac{1}{50}\\int_{0}^{\\infty}(t-50)^{2}e^{-t/50}\\,dt&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Mean_(continuous)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_01_(c)", 
+    "year": 2006
 }

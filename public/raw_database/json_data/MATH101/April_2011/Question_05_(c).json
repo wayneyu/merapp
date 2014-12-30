@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_05_(c)", 
-    "course": "MATH101", 
-    "statement": "Bird-Bath and Beyond Incorporated is famous for its Quetzal attracting\nbird-feeder solution made from water, honey and cane-sugar. To make\ntheir solution, both honey and a cane-sugar solution are poured into a\n200 L mixing tank. The honey is poured in at a rate of 1 L per minute\nwhile the sugar solution is poured in at 9 L per minute. Note that 1 L\nof honey contains 1 kg of sugar, while the cane-sugar solution contains\n100g of sugar per L. Unfortunately today there is a problem with the\nmixing tank. It was thoroughly cleaned and is initially filled with pure\nwater, but main valve was broken and the water cannot be drained. When\nthe mixing process is started, the honey and sugar-solutions are poured\ninto the tank, and the excess fluid flows out of an emergency valve at\n10 L per minute and onto the floor. You should assume that the solutions\nmix immediately and thoroughly in the tank.\n\n(c) The bird feeder solution can only be sold if there is at least 30 kg\nof sugar in the 200 L tank. If the flow of sugar solution and honey is\nswitched off after 20 minutes, can the result be sold?", 
-    "year": 2011, 
-    "sols": [
-        "Pluggin in \\emph{t=20} we obtain\n\n\\begin{align*}\nS(20) &= 20\\left(1.9-1.9e^{-20/20}\\right) \\\\\n&= 20\\left(1.9-\\frac{1.9}{e}\\right) \\\\\n&= 38-\\frac{38}{e} \\\\\n&\\leq 38 -10 < 30.\\end{align*}\n\nRemember that $\\displaystyle e \\approx 2.7$ and hence\n$\\frac{38}{e} > 10.$\n\nThat means that after 20 minutes there is less than 30kg of sugar in the\ntank. Thus the solution cannot be sold."
+    "answer_html": "<p>Remember that <span class=\"math\">\\(\\displaystyle e \\approx 2.7\\)</span> and hence <span class=\"math\">\\(\\frac{38}{e} &gt; 10.\\)</span>That means that after 20 minutes there is less than 30kg of sugar in the tank.Thus the solution cannot be sold.</p>\n", 
+    "answer_latex": "Remember that $\\displaystyle e \\approx 2.7$ and hence\n$\\frac{38}{e} > 10.$That means that after 20 minutes there is less than 30kg of sugar in the\ntank.Thus the solution cannot be sold.", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Is <em>S(20)</em> larger than <em>30</em>?</p>\n"
+    ], 
+    "hints_latex": [
         "Is \\emph{S(20)} larger than \\emph{30}?"
-    ]
+    ], 
+    "hints_raw": [
+        "Is ''S(20)'' larger than ''30''?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (c)", 
+    "rating": 53, 
+    "sols_html": [
+        "<p>Pluggin in <em>t=20</em> we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS(20) &amp;= 20\\left(1.9-1.9e^{-20/20}\\right) \\\\\n&amp;= 20\\left(1.9-\\frac{1.9}{e}\\right) \\\\\n&amp;= 38-\\frac{38}{e} \\\\\n&amp;\\leq 38 -10 &lt; 30.\\end{aligned}\\]</span></p>\n<p>Remember that <span class=\"math\">\\(\\displaystyle e \\approx 2.7\\)</span> and hence <span class=\"math\">\\(\\frac{38}{e} &gt; 10.\\)</span></p>\n<p>That means that after 20 minutes there is less than 30kg of sugar in the tank. Thus the solution cannot be sold.</p>\n"
+    ], 
+    "sols_latex": [
+        "Pluggin in \\emph{t=20} we obtain\n\n\\begin{align*}\nS(20) &= 20\\left(1.9-1.9e^{-20/20}\\right) \\\\\n&= 20\\left(1.9-\\frac{1.9}{e}\\right) \\\\\n&= 38-\\frac{38}{e} \\\\\n&\\leq 38 -10 < 30.\n\\end{align*}\n\nRemember that $\\displaystyle e \\approx 2.7$ and hence\n$\\frac{38}{e} > 10.$\n\nThat means that after 20 minutes there is less than 30kg of sugar in the\ntank. Thus the solution cannot be sold."
+    ], 
+    "sols_raw": [
+        "Pluggin in ''t=20'' we obtain\n\n:&lt;math> \\begin{align}\nS(20) &amp;= 20\\left(1.9-1.9e^{-20/20}\\right) \\\\\n&amp;= 20\\left(1.9-\\frac{1.9}{e}\\right) \\\\\n&amp;= 38-\\frac{38}{e} \\\\\n&amp;\\leq 38 -10 &lt; 30.\n\\end{align} &lt;/math>\n\nRemember that &lt;math> \\displaystyle e \\approx 2.7 &lt;/math> and hence &lt;math>\\frac{38}{e} > 10.&lt;/math>\n\nThat means that after 20 minutes there is less than 30kg of sugar in the tank. Thus the solution cannot be sold.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Bird-Bath and Beyond Incorporated is famous for its Quetzal attracting bird-feeder solution made from water, honey and cane-sugar. To make their solution, both honey and a cane-sugar solution are poured into a 200 L mixing tank. The honey is poured in at a rate of 1 L per minute while the sugar solution is poured in at 9 L per minute. Note that 1 L of honey contains 1 kg of sugar, while the cane-sugar solution contains 100g of sugar per L. Unfortunately today there is a problem with the mixing tank. It was thoroughly cleaned and is initially filled with pure water, but main valve was broken and the water cannot be drained. When the mixing process is started, the honey and sugar-solutions are poured into the tank, and the excess fluid flows out of an emergency valve at 10 L per minute and onto the floor. You should assume that the solutions mix immediately and thoroughly in the tank.</p>\n<p>(c) The bird feeder solution can only be sold if there is at least 30 kg of sugar in the 200 L tank. If the flow of sugar solution and honey is switched off after 20 minutes, can the result be sold?</p>\n", 
+    "statement_latex": "Bird-Bath and Beyond Incorporated is famous for its Quetzal attracting\nbird-feeder solution made from water, honey and cane-sugar. To make\ntheir solution, both honey and a cane-sugar solution are poured into a\n200 L mixing tank. The honey is poured in at a rate of 1 L per minute\nwhile the sugar solution is poured in at 9 L per minute. Note that 1 L\nof honey contains 1 kg of sugar, while the cane-sugar solution contains\n100g of sugar per L. Unfortunately today there is a problem with the\nmixing tank. It was thoroughly cleaned and is initially filled with pure\nwater, but main valve was broken and the water cannot be drained. When\nthe mixing process is started, the honey and sugar-solutions are poured\ninto the tank, and the excess fluid flows out of an emergency valve at\n10 L per minute and onto the floor. You should assume that the solutions\nmix immediately and thoroughly in the tank.\n\n(c) The bird feeder solution can only be sold if there is at least 30 kg\nof sugar in the 200 L tank. If the flow of sugar solution and honey is\nswitched off after 20 minutes, can the result be sold?", 
+    "statement_raw": "Bird-Bath and Beyond Incorporated is famous for its Quetzal attracting bird-feeder solution made from water, honey and cane-sugar.\nTo make their solution, both honey and a cane-sugar solution are poured into a 200 L mixing tank. The honey is poured in at a rate of 1 L per minute while the sugar solution is poured in at 9 L per minute. Note that 1 L of honey contains 1 kg of sugar, while the cane-sugar solution contains 100g of sugar per L.\nUnfortunately today there is a problem with the mixing tank. It was thoroughly cleaned and is initially filled with pure water, but main valve was broken and the water cannot be drained. When the mixing process is started, the honey and sugar-solutions are poured into the tank, and the excess fluid flows out of an emergency valve at 10 L per minute and onto the floor. You should assume that the solutions mix immediately and thoroughly in the tank.\n\n(c) The bird feeder solution can only be sold if there is at least 30 kg of sugar in the 200 L tank. If the flow of sugar solution and honey is switched off after 20 minutes, can the result be sold?\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_05_(c)", 
+    "year": 2011
 }

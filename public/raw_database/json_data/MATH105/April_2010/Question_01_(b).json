@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH105", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle f(x,y) = xe^{2y} + y^2\\end{align*} Evaluate\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2}\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "We are asked here to compute the second derivative of the given function\nwith respect to \\emph{y}. So we start by taking the first derivative\nwith respect to \\emph{y} and obtain\n\n\\begin{align*}\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y\\end{align*} (Remember that\nwhile doing this, we treat the variable \\emph{x} as if it was a\nconstant). And now we go on for the second derivative with respect to\n\\emph{y} and obtain\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{\\partial^2 f}{\\partial y^2} (x,y)=4x e^{2y} + 2\\)</span></p>\n", 
+    "answer_latex": " $\\frac{\\partial^2 f}{\\partial y^2} (x,y)=4x e^{2y} + 2$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "What does the symbols\n\n\\begin{align*}\\frac{\\partial^2 f}{\\partial y^2}\\end{align*} mean in plain English?", 
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What does the symbols</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{\\partial^2 f}{\\partial y^2}\\end{aligned}\\]</span></p>\n<p>mean in plain English?</p>\n", 
+        "<p>Recall that when computing a partial derivative with respect to the variable <em>y</em>, you have to treat the variable <em>x</em> as if it was a constant, so for example the partial derivative of <em>xy</em> with respect to the variable <em>y</em> is simply <em>x</em> the same way that the derivative of <em>3y</em> with respect to <em>y</em> would be 3.</p>\n"
+    ], 
+    "hints_latex": [
+        "What does the symbols\n\n\\begin{align*}\n\\frac{\\partial^2 f}{\\partial y^2}\n\\end{align*} mean in plain English?", 
         "Recall that when computing a partial derivative with respect to the\nvariable \\emph{y}, you have to treat the variable \\emph{x} as if it was\na constant, so for example the partial derivative of \\emph{xy} with\nrespect to the variable \\emph{y} is simply \\emph{x} the same way that\nthe derivative of \\emph{3y} with respect to \\emph{y} would be 3."
-    ]
+    ], 
+    "hints_raw": [
+        "What does the symbols\n:&lt;math> \\frac{\\partial^2 f}{\\partial y^2}&lt;/math>\nmean in plain English?\n", 
+        "Recall that when computing a partial derivative with respect to the variable ''y'', you have to treat the variable ''x'' as if it was a constant, so for example the partial derivative of ''xy'' with respect to the variable ''y'' is simply ''x'' the same way that the derivative of ''3y'' with respect to ''y'' would be 3.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>We are asked here to compute the second derivative of the given function with respect to <em>y</em>. So we start by taking the first derivative with respect to <em>y</em> and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y\\end{aligned}\\]</span></p>\n<p>(Remember that while doing this, we treat the variable <em>x</em> as if it was a constant). And now we go on for the second derivative with respect to <em>y</em> and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We are asked here to compute the second derivative of the given function\nwith respect to \\emph{y}. So we start by taking the first derivative\nwith respect to \\emph{y} and obtain\n\n\\begin{align*}\n\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y\n\\end{align*} (Remember that\nwhile doing this, we treat the variable \\emph{x} as if it was a\nconstant). And now we go on for the second derivative with respect to\n\\emph{y} and obtain\n\n\\begin{align*}\n\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We are asked here to compute the second derivative of the given function with respect to ''y''. So we start by taking the first derivative with respect to ''y'' and obtain\n:&lt;math>\\frac{\\partial f}{\\partial y} (x,y) = 2x e^{2y} + 2y &lt;/math>\n(Remember that while doing this, we treat the variable ''x'' as if it was a constant). And now we go on for the second derivative with respect to ''y'' and obtain\n:&lt;math>\\frac{\\partial^2 f}{\\partial y^2} (x,y) = \\frac{\\partial }{\\partial y}\\left( \\frac{\\partial f}{\\partial y} (x,y) \\right) = 4x e^{2y} + 2&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x,y) = xe^{2y} + y^2\\end{aligned}\\]</span></p>\n<p>Evaluate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{\\partial^2 f}{\\partial y^2}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle f(x,y) = xe^{2y} + y^2\n\\end{align*} Evaluate\n\n\\begin{align*}\n\\frac{\\partial^2 f}{\\partial y^2}\n\\end{align*}", 
+    "statement_raw": "Let\n:&lt;math> \\displaystyle f(x,y) = xe^{2y} + y^2&lt;/math>\nEvaluate\n:&lt;math> \\frac{\\partial^2 f}{\\partial y^2}&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Multivariable_calculus", 
+        "Partial_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_01_(b)", 
+    "year": 2010
 }

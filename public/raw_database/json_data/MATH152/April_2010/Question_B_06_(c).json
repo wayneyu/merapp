@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_B_06_(c)", 
-    "course": "MATH152", 
-    "statement": "Consider the triangle \\emph{T} in three dimensions with vertices\n\\emph{(0, 1, 2)}, \\emph{(1, 1, 5)} and \\emph{(\u00e2\u0088\u00921, 2, 2)}.\n\nConsider also the plane \\emph{P} that contains \\emph{T}.\n\nWrite an equation for \\emph{P} in the form\n\n\\begin{align*}x + by + cz = d\\end{align*}\n\nwith \\emph{b}, \\emph{c} and \\emph{d} to be determined.", 
-    "year": 2010, 
-    "sols": [
-        "First pick a known vector on \\emph{P}. A convenient choice will be\n\\emph{(0, 1, 2)} (other vertices will work too).\n\nLet \\emph{(x, y, z)} be an arbitrary vector on \\emph{P} (this represents\nall possible vectors on \\emph{P}, drawn with tail at origin and head on\n\\emph{P}), then the difference \\emph{(x, y, z) - (0, 1, 2)} gives a\nvector lying in \\emph{P}.\n\nThis vector must then be perpendicular to the normal vector, which gives\nthe equation:\n\n\\begin{align*}[(x, y, z) - (0, 1, 2)] \\cdot (-3, -3, 1) = 0\\end{align*}\n\nSo\n\n\\begin{align*}-3x - 3y + z = (0, 1, 2) \\cdot (-3, -3, 1) = -1\\end{align*}\n\nDividing both sides by $-3$ gives\n$b = 1, c = -\\frac{1}{3}, d = \\frac{1}{3}$"
+    "answer_html": "<p>Dividing both sides by <span class=\"math\">\\(-3\\)</span> gives <span class=\"math\">\\(b = \\frac{1}{3}\\)</span></p>\n", 
+    "answer_latex": "Dividing both sides by $-3$ gives\n$b = \\frac{1}{3}$", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>There are three unknowns and we know 3 vectors on <em>P</em>, so plugging them in will give a 3 by 3 linear system that can be solved by Gaussian elimination.</p>\n<p>However, this is not an efficient method. We know from part (b) that vectors lying in the plane <em>P</em> (meaning we can draw the heads and tails both in <em>P</em>) should all be perpendicular to the normal vector. Use this information to define an equation using dot product.</p>\n"
+    ], 
+    "hints_latex": [
         "There are three unknowns and we know 3 vectors on \\emph{P}, so plugging\nthem in will give a 3 by 3 linear system that can be solved by Gaussian\nelimination.\n\nHowever, this is not an efficient method. We know from part (b) that\nvectors lying in the plane \\emph{P} (meaning we can draw the heads and\ntails both in \\emph{P}) should all be perpendicular to the normal\nvector. Use this information to define an equation using dot product."
-    ]
+    ], 
+    "hints_raw": [
+        "There are three unknowns and we know 3 vectors on ''P'', so plugging them in will give a 3 by 3 linear system that can be solved by Gaussian elimination.\n\nHowever, this is not an efficient method. We know from part (b) that vectors lying in the plane ''P'' (meaning we can draw the heads and tails both in ''P'') should all be perpendicular to the normal vector. Use this information to define an equation using dot product.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "B 06 (c)", 
+    "rating": 65, 
+    "sols_html": [
+        "<p>First pick a known vector on <em>P</em>. A convenient choice will be <em>(0, 1, 2)</em> (other vertices will work too).</p>\n<p>Let <em>(x, y, z)</em> be an arbitrary vector on <em>P</em> (this represents all possible vectors on <em>P</em>, drawn with tail at origin and head on <em>P</em>), then the difference <em>(x, y, z) - (0, 1, 2)</em> gives a vector lying in <em>P</em>.</p>\n<p>This vector must then be perpendicular to the normal vector, which gives the equation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n[(x, y, z) - (0, 1, 2)] \\cdot (-3, -3, 1) = 0\\end{aligned}\\]</span></p>\n<p>So</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-3x - 3y + z = (0, 1, 2) \\cdot (-3, -3, 1) = -1\\end{aligned}\\]</span></p>\n<p>Dividing both sides by <span class=\"math\">\\(-3\\)</span> gives <span class=\"math\">\\(b = 1, c = -\\frac{1}{3}, d = \\frac{1}{3}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First pick a known vector on \\emph{P}. A convenient choice will be\n\\emph{(0, 1, 2)} (other vertices will work too).\n\nLet \\emph{(x, y, z)} be an arbitrary vector on \\emph{P} (this represents\nall possible vectors on \\emph{P}, drawn with tail at origin and head on\n\\emph{P}), then the difference \\emph{(x, y, z) - (0, 1, 2)} gives a\nvector lying in \\emph{P}.\n\nThis vector must then be perpendicular to the normal vector, which gives\nthe equation:\n\n\\begin{align*}\n[(x, y, z) - (0, 1, 2)] \\cdot (-3, -3, 1) = 0\n\\end{align*}\n\nSo\n\n\\begin{align*}\n-3x - 3y + z = (0, 1, 2) \\cdot (-3, -3, 1) = -1\n\\end{align*}\n\nDividing both sides by $-3$ gives\n$b = 1, c = -\\frac{1}{3}, d = \\frac{1}{3}$"
+    ], 
+    "sols_raw": [
+        "First pick a known vector on ''P''. A convenient choice will be ''(0, 1, 2)'' (other vertices will work too).\n\nLet ''(x, y, z)'' be an arbitrary vector on ''P'' (this represents all possible vectors on ''P'', drawn with tail at origin and head on ''P''), then the difference ''(x, y, z) - (0, 1, 2)'' gives a vector lying in ''P''.\n\nThis vector must then be perpendicular to the normal vector, which gives the equation:\n\n:&lt;math> [(x, y, z) - (0, 1, 2)] \\cdot (-3, -3, 1) = 0 &lt;/math>\n\nSo\n\n:&lt;math> -3x - 3y + z = (0, 1, 2) \\cdot (-3, -3, 1) = -1 &lt;/math>\n\nDividing both sides by &lt;math>-3&lt;/math> gives &lt;math> b = 1, c = -\\frac{1}{3}, d = \\frac{1}{3} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Simontse"
+    ], 
+    "statement_html": "<p>Consider the triangle <em>T</em> in three dimensions with vertices <em>(0, 1, 2)</em>, <em>(1, 1, 5)</em> and <em>(-1, 2, 2)</em>.</p>\n<p>Consider also the plane <em>P</em> that contains <em>T</em>.</p>\n<p>Write an equation for <em>P</em> in the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx + by + cz = d\\end{aligned}\\]</span></p>\n<p>with <em>b</em>, <em>c</em> and <em>d</em> to be determined.</p>\n", 
+    "statement_latex": "Consider the triangle \\emph{T} in three dimensions with vertices\n\\emph{(0, 1, 2)}, \\emph{(1, 1, 5)} and \\emph{(-1, 2, 2)}.\n\nConsider also the plane \\emph{P} that contains \\emph{T}.\n\nWrite an equation for \\emph{P} in the form\n\n\\begin{align*}\nx + by + cz = d\n\\end{align*}\n\nwith \\emph{b}, \\emph{c} and \\emph{d} to be determined.", 
+    "statement_raw": "Consider the triangle ''T'' in three dimensions with vertices ''(0, 1, 2)'', ''(1, 1, 5)'' and ''(\u22121, 2, 2)''.\n\nConsider also the plane ''P'' that contains ''T''.\n\nWrite an equation for ''P'' in the form\n\n:&lt;math> x + by + cz = d &lt;/math>\n\nwith ''b'', ''c'' and ''d'' to be determined.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_06_(c)", 
+    "year": 2010
 }

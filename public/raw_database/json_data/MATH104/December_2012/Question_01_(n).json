@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(n)", 
-    "course": "MATH104", 
-    "statement": "Find the derivative of the function\n\n\\begin{align*}\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "This question requires multiple uses of the chain rule.\n\n\\begin{align*}\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(1 + x)))\\end{align*} Recognizing that\nthe inner function is $u = h(x) = 1 + \\ln(1 + \\ln(1 + x))$ and the outer\nfunction is $g(u) = \\ln(u)$, we apply the chain rule and get\n\n\\begin{align*}\nf'(x) &= g'(h(x))\\cdot h'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot h'(x).\\end{align*} Now we need to use the chain rule again to evaluate\n$h'(x)$. The function $h(x)$ has inner function\n$v = k(x) = 1 + \\ln(1 + x)$ and outer function $j(v) = 1 + \\ln(v)$.\nThus, $h'(x)$ is given by\n\n\\begin{align*}\nh'(x) &= j'(k(x))\\cdot k'(x)\\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot k'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + x)}\\cdot \\frac{1}{1 + x}\\end{align*} Thus putting the pieces together, we write the expression\nfor the derivative of $f$:\n\n\\begin{align*}{\\color{blue}f'(x) = \\frac{1}{1 + \\ln(1 + \\ln(1 + x))}\\cdot\\frac{1}{1 + \\ln(1 + x)}\\cdot\\frac{1}{1 + x}\n}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}f&#39;(x) = \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot\\frac{1}{1 + \\ln(x)}\\cdot\\frac{1}{x}\n}.\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}f'(x) = \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot\\frac{1}{1 + \\ln(x)}\\cdot\\frac{1}{x}\n}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>We need the chain rule for this problem and might need to use it more than once. Can you identify an inner and outer function for <span class=\"math\">\\(f(x)\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "We need the chain rule for this problem and might need to use it more\nthan once. Can you identify an inner and outer function for $f(x)$?"
-    ]
+    ], 
+    "hints_raw": [
+        "We need the chain rule for this problem and might need to use it more than once. Can you identify an inner and outer function for &lt;math>f(x)&lt;/math>?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (n)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>This question requires multiple uses of the chain rule.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(x)))\\end{aligned}\\]</span></p>\n<p>Recognizing that the inner function is <span class=\"math\">\\(u = h(x) = 1 + \\ln(1 + \\ln(x))\\)</span> and the outer function is <span class=\"math\">\\(g(u) = \\ln(u)\\)</span>, we apply the chain rule and get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= g&#39;(h(x))\\cdot h&#39;(x) \\\\\n&amp;= \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot h&#39;(x).\\end{aligned}\\]</span></p>\n<p>Now we need to use the chain rule again to evaluate <span class=\"math\">\\(h&#39;(x)\\)</span>. The function <span class=\"math\">\\(h(x)\\)</span> has inner function <span class=\"math\">\\(v = k(x) = 1 + \\ln(x)\\)</span> and outer function <span class=\"math\">\\(j(v) = 1 + \\ln(v)\\)</span>. Thus, <span class=\"math\">\\(h&#39;(x)\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nh&#39;(x) &amp;= j&#39;(k(x))\\cdot k&#39;(x)\\\\\n&amp;= \\frac{1}{1 + \\ln(x)}\\cdot k&#39;(x) \\\\\n&amp;= \\frac{1}{1 + \\ln(x)}\\cdot \\frac{1}{x}\\end{aligned}\\]</span></p>\n<p>Thus putting the pieces together, we write the expression for the derivative of <span class=\"math\">\\(f\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}f&#39;(x) = \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot\\frac{1}{1 + \\ln(x)}\\cdot\\frac{1}{x}\n}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "This question requires multiple uses of the chain rule.\n\n\\begin{align*}\n\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(x)))\n\\end{align*} Recognizing that the\ninner function is $u = h(x) = 1 + \\ln(1 + \\ln(x))$ and the outer\nfunction is $g(u) = \\ln(u)$, we apply the chain rule and get\n\n\\begin{align*}\nf'(x) &= g'(h(x))\\cdot h'(x) \\\\\n&= \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot h'(x).\n\\end{align*} Now we need to use the chain rule again to evaluate\n$h'(x)$. The function $h(x)$ has inner function $v = k(x) = 1 + \\ln(x)$\nand outer function $j(v) = 1 + \\ln(v)$. Thus, $h'(x)$ is given by\n\n\\begin{align*}\nh'(x) &= j'(k(x))\\cdot k'(x)\\\\\n&= \\frac{1}{1 + \\ln(x)}\\cdot k'(x) \\\\\n&= \\frac{1}{1 + \\ln(x)}\\cdot \\frac{1}{x}\n\\end{align*} Thus putting the pieces together, we write the expression\nfor the derivative of $f$:\n\n\\begin{align*}\n{\\color{blue}f'(x) = \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot\\frac{1}{1 + \\ln(x)}\\cdot\\frac{1}{x}\n}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "This question requires multiple uses of the chain rule.\n:&lt;math>\n\\displaystyle f(x) = \\ln(1 + \\ln(1 + \\ln(x)))\n&lt;/math>\nRecognizing that the inner function is &lt;math>u = h(x) = 1 + \\ln(1 + \\ln(x))&lt;/math> and the outer function is &lt;math>g(u) = \\ln(u)&lt;/math>, we apply the chain rule and get\n:&lt;math>\n\\begin{align}\nf'(x) &amp;= g'(h(x))\\cdot h'(x) \\\\\n&amp;= \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot h'(x).\n\\end{align}\n&lt;/math>\nNow we need to use the chain rule again to evaluate &lt;math>h'(x)&lt;/math>. The function &lt;math>h(x)&lt;/math> has inner function &lt;math>v = k(x) = 1 + \\ln(x)&lt;/math> and outer function &lt;math>j(v) = 1 + \\ln(v)&lt;/math>. Thus, &lt;math>h'(x)&lt;/math> is given by\n:&lt;math>\n\\begin{align}\nh'(x) &amp;= j'(k(x))\\cdot k'(x)\\\\\n&amp;= \\frac{1}{1 + \\ln(x)}\\cdot k'(x) \\\\\n&amp;= \\frac{1}{1 + \\ln(x)}\\cdot \\frac{1}{x}\n\\end{align}\n&lt;/math>\nThus putting the pieces together, we write the expression for the derivative of &lt;math>f&lt;/math>:\n:&lt;math>\n{\\color{blue}\nf'(x) = \\frac{1}{1 + \\ln(1 + \\ln(x))}\\cdot\\frac{1}{1 + \\ln(x)}\\cdot\\frac{1}{x}\n}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Find the derivative of the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the derivative of the function\n\n\\begin{align*}\n\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\n\\end{align*}", 
+    "statement_raw": "Find the derivative of the function\n\n:&lt;math>\n\\displaystyle{}f(x)=\\ln(1+\\ln(1+\\ln(x))).\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(n)", 
+    "year": 2012
 }

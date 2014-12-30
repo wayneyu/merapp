@@ -1,19 +1,66 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\na) The graph of $f(x) = \\frac{1}{2}((x + 3)^{2} - 2)$ crosses the\nx-axis.", 
-    "year": 2013, 
-    "sols": [
-        "\\textbf{Note: The first three parts of this question was identical to\nthat of the October Midterm.}\\\\\\textbf{True:} There are multiple ways to\nsee this.\n\nSolve the quadratic equation.\n\nThe function expands to\\begin{align*}f(x) = \\frac{1}{2}x^2+3x+\\frac{7}{2}.\\end{align*} Which\nthen gives:\n\n\\begin{align*}\nx&= \\frac{-3 \\pm \\sqrt{9 - 4\\left(\\frac{1}{2}\\right)\\left(\\frac{7}{2}\\right)}}{2\\left(\\frac{1}{2}\\right)}\\\\\n &= \\frac{-3 \\pm \\sqrt{9 - 7}}{1}\\\\\nx &= -3 \\pm \\sqrt{2}\\\\end{align*}", 
-        "We can also use the vertex formula by seeing that\n$f(x) =\\frac{1}{2}(x+3)^2-1$, with vertex $(-3,-1)$ which is below the\n\\emph{x}-axis. Next, observe that a parabola is continuous (because its\na polynomial). Combining this with the fact that the parabola has a\npositive coefficient of $\\frac{1}{2}$, meaning that the parabola is\ncurving upwards, we get that it must cross the $x$ axis.", 
-        "We can view this as a graph transformation of $y=x^2$ which touches the\n$x$-axis. Then we shift it $3$ to the left and then $2$ down, so it\nstill touches the $x$-axis. This is then followed by a vertical\ncompression of $2$ (or expansion by $0.5$). This does not change\ndirection of curvature of the function and so it must still touch the\n$x$-axis.", 
-        "We can also use the IVT. The function is a quadratic and hence is\ncontinuous. We then look at $f(-3) = -1 <0$ and then $f(0) = 3.5 >0$.\nThus there must be a point between $-3$ and $0$ that crosses the\n$x$-axis."
+    "answer_html": "<p><span class=\"math\">\\(x=-3 \\pm \\sqrt{2}\\)</span></p>\n", 
+    "answer_latex": " $x=-3 \\pm \\sqrt{2}$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>There are multiple ways to see this and each hint corresponds to each solution.</p>\n<p>For a hint to the first solution, you could always just try to solve this directly using the quadratic formula.</p>\n", 
+        "<p>You could also try to solve this be exploiting the fact that the parabola is given in vertex form.</p>\n", 
+        "<p>One could also reason by starting with the parabola <span class=\"math\">\\(\\displaystyle y = x^{2}\\)</span> and from here trying to get the given parabola by a series of transformations. Argue how these transformations affect the number of roots of the parabola.</p>\n", 
+        "<p>One could also use the Intermediate Value Theorem (IVT) to solve this problem.</p>\n"
+    ], 
+    "hints_latex": [
         "There are multiple ways to see this and each hint corresponds to each\nsolution.\n\nFor a hint to the first solution, you could always just try to solve\nthis directly using the quadratic formula.", 
         "You could also try to solve this be exploiting the fact that the\nparabola is given in vertex form.", 
         "One could also reason by starting with the parabola\n$\\displaystyle y = x^{2}$ and from here trying to get the given parabola\nby a series of transformations. Argue how these transformations affect\nthe number of roots of the parabola.", 
         "One could also use the Intermediate Value Theorem (IVT) to solve this\nproblem."
-    ]
+    ], 
+    "hints_raw": [
+        "There are multiple ways to see this and each hint corresponds to each solution.\n\nFor a hint to the first solution, you could always just try to solve this directly using the quadratic formula.\n", 
+        "You could also try to solve this be exploiting the fact that the parabola is given in vertex form.\n", 
+        "One could also reason by starting with the parabola &lt;math> \\displaystyle y = x^{2} &lt;/math> and from here trying to get the given parabola by a series of transformations. Argue how these transformations affect the number of roots of the parabola.\n", 
+        "One could also use the Intermediate Value Theorem (IVT) to solve this problem.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>Note: The first three parts of this question was identical to that of the October Midterm.</strong><br /><strong>True:</strong> There are multiple ways to see this.</p>\n<p>Solve the quadratic equation.</p>\n<p>The function expands to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{1}{2}x^2+3x+\\frac{7}{2}.\\end{aligned}\\]</span></p>\n<p>Which then gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&amp;= \\frac{-3 \\pm \\sqrt{9 - 4\\left(\\frac{1}{2}\\right)\\left(\\frac{7}{2}\\right)}}{2\\left(\\frac{1}{2}\\right)}\\\\\n &amp;= \\frac{-3 \\pm \\sqrt{9 - 7}}{1}\\\\\nx &amp;= -3 \\pm \\sqrt{2}\\end{aligned}\\]</span></p>\n", 
+        "<p>We can also use the vertex formula by seeing that <span class=\"math\">\\(f(x) =\\frac{1}{2}(x+3)^2-1\\)</span>, with vertex <span class=\"math\">\\((-3,-1)\\)</span> which is below the <em>x</em>-axis. Next, observe that a parabola is continuous (because its a polynomial). Combining this with the fact that the parabola has a positive coefficient of <span class=\"math\">\\(\\frac{1}{2}\\)</span>, meaning that the parabola is curving upwards, we get that it must cross the <span class=\"math\">\\(x\\)</span> axis.</p>\n", 
+        "<p>We can view this as a graph transformation of <span class=\"math\">\\(y=x^2\\)</span> which touches the <span class=\"math\">\\(x\\)</span>-axis. Then we shift it <span class=\"math\">\\(3\\)</span> to the left and then <span class=\"math\">\\(2\\)</span> down, so it still touches the <span class=\"math\">\\(x\\)</span>-axis. This is then followed by a vertical compression of <span class=\"math\">\\(2\\)</span> (or expansion by <span class=\"math\">\\(0.5\\)</span>). This does not change direction of curvature of the function and so it must still touch the <span class=\"math\">\\(x\\)</span>-axis.</p>\n", 
+        "<p>We can also use the IVT. The function is a quadratic and hence is continuous. We then look at <span class=\"math\">\\(f(-3) = -1 &lt;0\\)</span> and then <span class=\"math\">\\(f(0) = 3.5 &gt;0\\)</span>. Thus there must be a point between <span class=\"math\">\\(-3\\)</span> and <span class=\"math\">\\(0\\)</span> that crosses the <span class=\"math\">\\(x\\)</span>-axis.</p>\n"
+    ], 
+    "sols_latex": [
+        "\\textbf{Note: The first three parts of this question was identical to\nthat of the October Midterm.}\\\\\\textbf{True:} There are multiple ways to\nsee this.\n\nSolve the quadratic equation.\n\nThe function expands to\\begin{align*}\nf(x) = \\frac{1}{2}x^2+3x+\\frac{7}{2}.\n\\end{align*} Which\nthen gives:\n\n\\begin{align*}\nx&= \\frac{-3 \\pm \\sqrt{9 - 4\\left(\\frac{1}{2}\\right)\\left(\\frac{7}{2}\\right)}}{2\\left(\\frac{1}{2}\\right)}\\\\\n &= \\frac{-3 \\pm \\sqrt{9 - 7}}{1}\\\\\nx &= -3 \\pm \\sqrt{2}\n\\end{align*}", 
+        "We can also use the vertex formula by seeing that\n$f(x) =\\frac{1}{2}(x+3)^2-1$, with vertex $(-3,-1)$ which is below the\n\\emph{x}-axis. Next, observe that a parabola is continuous (because its\na polynomial). Combining this with the fact that the parabola has a\npositive coefficient of $\\frac{1}{2}$, meaning that the parabola is\ncurving upwards, we get that it must cross the $x$ axis.", 
+        "We can view this as a graph transformation of $y=x^2$ which touches the\n$x$-axis. Then we shift it $3$ to the left and then $2$ down, so it\nstill touches the $x$-axis. This is then followed by a vertical\ncompression of $2$ (or expansion by $0.5$). This does not change\ndirection of curvature of the function and so it must still touch the\n$x$-axis.", 
+        "We can also use the IVT. The function is a quadratic and hence is\ncontinuous. We then look at $f(-3) = -1 <0$ and then $f(0) = 3.5 >0$.\nThus there must be a point between $-3$ and $0$ that crosses the\n$x$-axis."
+    ], 
+    "sols_raw": [
+        "&lt;span>'''Note: The first three parts of this question was identical to that of the October Midterm.'''&lt;/span>&lt;br />&lt;span>'''True:'''&lt;/span> There are multiple ways to see this.\n\nSolve the quadratic equation. \n\nThe function expands to: &lt;math>f(x) = \\frac{1}{2}x^2+3x+\\frac{7}{2}&lt;/math>. Which then gives:\n\n&lt;math>\\begin{align}\nx&amp;= \\frac{-3 \\pm \\sqrt{9 - 4\\left(\\frac{1}{2}\\right)\\left(\\frac{7}{2}\\right)}}{2\\left(\\frac{1}{2}\\right)}\\\\\n &amp;= \\frac{-3 \\pm \\sqrt{9 - 7}}{1}\\\\\nx &amp;= -3 \\pm \\sqrt{2}\\\\\n\\end{align}&lt;/math>\n", 
+        "We can also use the vertex formula by seeing that &lt;math>f(x) =\\frac{1}{2}(x+3)^2-1&lt;/math>, with vertex &lt;math>(-3,-1)&lt;/math> which is below the ''x''-axis. Next, observe that a parabola is continuous (because its a polynomial). Combining this with the fact that the parabola has a positive coefficient of &lt;math>\\frac{1}{2}&lt;/math>, meaning that the parabola is curving upwards, we get that it must cross the &lt;math>x&lt;/math> axis.\n", 
+        "We can view this as a graph transformation of &lt;math>y=x^2&lt;/math> which touches the &lt;math>x&lt;/math>-axis. Then we shift it &lt;math>3&lt;/math> to the left and then &lt;math>2&lt;/math> down, so it still touches the &lt;math>x&lt;/math>-axis. This is then followed by a vertical compression of &lt;math>2&lt;/math> (or expansion by &lt;math>0.5&lt;/math>). This does not change direction of curvature of the function and so it must still touch the &lt;math>x&lt;/math>-axis.\n", 
+        "We can also use the IVT. The function is a quadratic and hence is continuous. We then look at &lt;math>f(-3) = -1 &lt;0&lt;/math> and then &lt;math>f(0) = 3.5 >0&lt;/math>. Thus there must be a point between &lt;math>-3&lt;/math> and &lt;math>0&lt;/math> that crosses the &lt;math>x&lt;/math>-axis.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>a) The graph of <span class=\"math\">\\(f(x) = \\frac{1}{2}((x + 3)^{2} - 2)\\)</span> crosses the x-axis.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\na) The graph of $f(x) = \\frac{1}{2}((x + 3)^{2} - 2)$ crosses the\nx-axis.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\n&lt;b>a)&lt;/b> The graph of &lt;math>f(x) = \\frac{1}{2}((x + 3)^{2} - 2)&lt;/math> crosses the &lt;i>x&lt;/i>-axis.\n", 
+    "term": "December", 
+    "topics": [
+        "Function_properties"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_01_(a)", 
+    "year": 2013
 }

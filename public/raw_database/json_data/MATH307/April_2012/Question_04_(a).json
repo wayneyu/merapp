@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": "$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$", 
+    "contributors": [
+        "CarmenBruni"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider a network arranged in the shape of an octahedron as in this\ndiagram:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307_April_2012_Question_04.png}\n\\end{description}\n\nThe nodes have been labeled with the large numbers and 3 of the edges\n(resistors) have been given orientations and labeled with small numbers.\nAssume all resistances are equal to 1. Let \\emph{D} be the incidence\nmatrix (for some choice of labeling and arrows for the remaining edges)\nand let \\emph{L} be the Laplacian.\n\n\\textbf{(a)} Write down a non-zero vector in \\emph{N(D)}.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Looking at the resistor network, we can make the incidence matrix where the columns are the nodes and the rows are the edges.</p>\n<p><span class=\"math\">\\(D = \\begin{bmatrix}\n-1 &amp; 1 &amp; 0 \\\\\n0 &amp; -1 &amp; 1 \\\\\n-1 &amp; 0 &amp; 1\n\\end{bmatrix}\\)</span></p>\n<p>The first column represents node 1, the second column represents node 2, and the third column represents node 3. An entry of -1 represents an edge leaving the corresponding node column, and an entry of 1 represents an edge entering the corresponding node column.</p>\n<p>To find the nullspace of D, we have to find all vectors <span class=\"math\">\\(\\vec{v}\\)</span> that are solutions to <span class=\"math\">\\(D \\vec{v} = \\vec{0}\\)</span>. For matrix D, it is pretty easy to see that <span class=\"math\">\\(\\vec{v} = \\vec{1}\\)</span> or any multiple of this as only solution to <span class=\"math\">\\(D \\vec{v} = \\vec{0}\\)</span>.</p>\n<p>Therefore:</p>\n<p><span class=\"math\">\\(N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}\\)</span></p>\n<p>Proof:</p>\n<p><span class=\"math\">\\(rref(D) = \n\\begin{bmatrix}\n1 &amp; 0 &amp; -1 \\\\\n0 &amp; 1 &amp; -1 \\\\\n0 &amp; 0 &amp; 0\n\\end{bmatrix}\\)</span></p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\nx_{1} \\\\ x_{2} \\\\ x_{3}\n\\end{bmatrix} = \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}x_{3}\\)</span></p>\n<p><span class=\"math\">\\(N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}\\)</span> Check:</p>\n<p><span class=\"math\">\\(D \\vec{v} = \\vec{0}\\)</span>. <span class=\"math\">\\(\\begin{bmatrix}\n-1 &amp; 1 &amp; 0 \\\\\n0 &amp; -1 &amp; 1 \\\\\n-1 &amp; 0 &amp; 1\n\\end{bmatrix} \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix} = \\begin{bmatrix}\n-1 + 1 \\\\ -1 + 1 \\\\ -1 + 1 \\\\\n\\end{bmatrix} = \\begin{bmatrix}\n0 \\\\ 0 \\\\ 0 \\\\\n\\end{bmatrix}\\)</span></p>\n<p>FINAL ANSWER</p>\n<p><span class=\"math\">\\(N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "Looking at the resistor network, we can make the incidence matrix where\nthe columns are the nodes and the rows are the edges.\n\n$D = \\begin{bmatrix}\n-1 & 1 & 0 \\\\\n0 & -1 & 1 \\\\\n-1 & 0 & 1\n\\end{bmatrix}$\n\nThe first column represents node 1, the second column represents node 2,\nand the third column represents node 3. An entry of -1 represents an\nedge leaving the corresponding node column, and an entry of 1 represents\nan edge entering the corresponding node column.\n\nTo find the nullspace of D, we have to find all vectors $\\vec{v}$ that\nare solutions to $D \\vec{v} = \\vec{0}$. For matrix D, it is pretty easy\nto see that $\\vec{v} = \\vec{1}$ or any multiple of this as only solution\nto $D \\vec{v} = \\vec{0}$.\n\nTherefore:\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$\n\nProof:\n\n$rref(D) = \n\\begin{bmatrix}\n1 & 0 & -1 \\\\\n0 & 1 & -1 \\\\\n0 & 0 & 0\n\\end{bmatrix}$\n\n$\\begin{bmatrix}\nx_{1} \\\\ x_{2} \\\\ x_{3}\n\\end{bmatrix} = \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}x_{3}$\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$ Check:\n\n$D \\vec{v} = \\vec{0}$. $\\begin{bmatrix}\n-1 & 1 & 0 \\\\\n0 & -1 & 1 \\\\\n-1 & 0 & 1\n\\end{bmatrix} \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix} = \\begin{bmatrix}\n-1 + 1 \\\\ -1 + 1 \\\\ -1 + 1 \\\\\n\\end{bmatrix} = \\begin{bmatrix}\n0 \\\\ 0 \\\\ 0 \\\\\n\\end{bmatrix}$\n\nFINAL ANSWER\n\n$N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "Looking at the resistor network, we can make the incidence matrix where the columns are the nodes and the rows are the edges.\n\n&lt;math>D = \\begin{bmatrix}\n-1 &amp; 1 &amp; 0 \\\\\n0 &amp; -1 &amp; 1 \\\\\n-1 &amp; 0 &amp; 1\n\\end{bmatrix}&lt;/math>\n\nThe first column represents node 1, the second column represents node 2, and the third column represents node 3. An entry of -1 represents an edge leaving the corresponding node column, and an entry of 1 represents an edge entering the corresponding node column.\n\nTo find the nullspace of D, we have to find all vectors &lt;math>\\vec{v}&lt;/math> that are solutions to &lt;math>D \\vec{v} = \\vec{0}&lt;/math>. For matrix D, it is pretty easy to see that &lt;math>\\vec{v} = \\vec{1}&lt;/math> or any multiple of this as only solution to &lt;math>D \\vec{v} = \\vec{0}&lt;/math>.\n\nTherefore:\n\n&lt;math>N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}&lt;/math>\n\nProof:\n\n&lt;math>rref(D) = \n\\begin{bmatrix}\n1 &amp; 0 &amp; -1 \\\\\n0 &amp; 1 &amp; -1 \\\\\n0 &amp; 0 &amp; 0\n\\end{bmatrix}&lt;/math>\n\n&lt;math>\\begin{bmatrix}\nx_{1} \\\\ x_{2} \\\\ x_{3}\n\\end{bmatrix} = \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}x_{3}&lt;/math>\n\n&lt;math>N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}&lt;/math> Check:\n\n&lt;math>D \\vec{v} = \\vec{0}&lt;/math>. &lt;math>\\begin{bmatrix}\n-1 &amp; 1 &amp; 0 \\\\\n0 &amp; -1 &amp; 1 \\\\\n-1 &amp; 0 &amp; 1\n\\end{bmatrix} \\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix} = \\begin{bmatrix}\n-1 + 1 \\\\ -1 + 1 \\\\ -1 + 1 \\\\\n\\end{bmatrix} = \\begin{bmatrix}\n0 \\\\ 0 \\\\ 0 \\\\\n\\end{bmatrix}&lt;/math>\n\nFINAL ANSWER\n\n&lt;math>N(D) =\n\\begin{bmatrix}\n1 \\\\ 1 \\\\ 1\n\\end{bmatrix}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider a network arranged in the shape of an octahedron as in this diagram:</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH307/April_2012/MATH307_April_2012_Question_04.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>The nodes have been labeled with the large numbers and 3 of the edges (resistors) have been given orientations and labeled with small numbers. Assume all resistances are equal to 1. Let <em>D</em> be the incidence matrix (for some choice of labeling and arrows for the remaining edges) and let <em>L</em> be the Laplacian.</p>\n<p><strong>(a)</strong> Write down a non-zero vector in <em>N(D)</em>.</p>\n", 
+    "statement_latex": "Consider a network arranged in the shape of an octahedron as in this\ndiagram:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH307/April_2012/MATH307_April_2012_Question_04.png}\n\\end{description}\n\nThe nodes have been labeled with the large numbers and 3 of the edges\n(resistors) have been given orientations and labeled with small numbers.\nAssume all resistances are equal to 1. Let \\emph{D} be the incidence\nmatrix (for some choice of labeling and arrows for the remaining edges)\nand let \\emph{L} be the Laplacian.\n\n\\textbf{(a)} Write down a non-zero vector in \\emph{N(D)}.", 
+    "statement_raw": "Consider a network arranged in the shape of an octahedron as in this diagram:\n\n:[[File:MATH307 April 2012 Question 04.png|300px]]\n\nThe nodes have been labeled with the large numbers and 3 of the edges (resistors) have been given orientations and labeled with small numbers. Assume all resistances are equal to 1. Let ''D'' be the incidence matrix (for some choice of labeling and arrows for the remaining edges) and let ''L'' be the Laplacian.\n\n'''(a)''' Write down a non-zero vector in ''N(D)''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_04_(a)", 
+    "year": 2012
 }

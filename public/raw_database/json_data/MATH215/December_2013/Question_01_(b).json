@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH215", 
-    "statement": "Find the \\emph{form} (but not the values of the coefficients!) of a\nparticular solution of the nonhomogeneous ODE\n\n\\begin{align*}\\displaystyle{}y'' - 4y' + 5y = x \\sin(x)\\end{align*}", 
-    "year": 2013, 
-    "sols": [
-        "We first need to find the homogeneous solution. The characteristic\npolynomial $r^2 - 4r + 5$ has roots\n$r^\\pm = \\frac{4 \\pm \\sqrt{16-20}}{2} = 2 \\pm i$ and hence the\nhomogeneous solution is a linear combination of $e^{2x} \\sin x$ and\n$e^{2x} \\cos x$.\n\nNo such terms appear in the forcing function. The forcing function\n$x \\sin x$ is a degree one polynomial times a sinusoidal function. We\nthus would guess a particular solution of form\n$x_p = (Ax + B) \\sin x + (Cx + D) \\cos x$."
+    "answer_html": "<p>We thus would guess a particular solution of form <span class=\"math\">\\(x_p = (Ax + B) \\sin x + (Cx + D) \\cos x\\)</span>.</p>\n", 
+    "answer_latex": "We\nthus would guess a particular solution of form\n$x_p = (Ax + B) \\sin x + (Cx + D) \\cos x$.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>First things first: what&#8217;s the homogeneous solution?</p>\n", 
+        "<p>Now that we know the forcing term <span class=\"math\">\\(\\displaystyle {} x\\sin(x)\\)</span> is not appearing in the homogeneous solution, what sort of guess would you take for a forcing term that&#8217;s a <em>first degree</em> polynomial times a sinusoidal function?</p>\n"
+    ], 
+    "hints_latex": [
         "First things first: what's the homogeneous solution?", 
         "Now that we know the forcing term $\\displaystyle {} x\\sin(x)$ is not\nappearing in the homogeneous solution, what sort of guess would you take\nfor a forcing term that's a \\emph{first degree} polynomial times a\nsinusoidal function?"
-    ]
+    ], 
+    "hints_raw": [
+        "First things first: what's the homogeneous solution?\n", 
+        "Now that we know the forcing term &lt;math>\\displaystyle{} x\\sin(x)&lt;/math> is not appearing in the homogeneous solution, what sort of guess would you take for a forcing term that's a ''first degree'' polynomial times a sinusoidal function?\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (b)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>We first need to find the homogeneous solution. The characteristic polynomial <span class=\"math\">\\(r^2 - 4r + 5\\)</span> has roots <span class=\"math\">\\(r^\\pm = \\frac{4 \\pm \\sqrt{16-20}}{2} = 2 \\pm i\\)</span> and hence the homogeneous solution is a linear combination of <span class=\"math\">\\(e^{2x} \\sin x\\)</span> and <span class=\"math\">\\(e^{2x} \\cos x\\)</span>.</p>\n<p>No such terms appear in the forcing function. The forcing function <span class=\"math\">\\(x \\sin x\\)</span> is a degree one polynomial times a sinusoidal function. We thus would guess a particular solution of form <span class=\"math\">\\(x_p = (Ax + B) \\sin x + (Cx + D) \\cos x\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We first need to find the homogeneous solution. The characteristic\npolynomial $r^2 - 4r + 5$ has roots\n$r^\\pm = \\frac{4 \\pm \\sqrt{16-20}}{2} = 2 \\pm i$ and hence the\nhomogeneous solution is a linear combination of $e^{2x} \\sin x$ and\n$e^{2x} \\cos x$.\n\nNo such terms appear in the forcing function. The forcing function\n$x \\sin x$ is a degree one polynomial times a sinusoidal function. We\nthus would guess a particular solution of form\n$x_p = (Ax + B) \\sin x + (Cx + D) \\cos x$."
+    ], 
+    "sols_raw": [
+        "We first need to find the homogeneous solution. The characteristic polynomial &lt;math>r^2 - 4r + 5&lt;/math> has roots &lt;math>r^\\pm = \\frac{4 \\pm \\sqrt{16-20}}{2} = 2 \\pm i&lt;/math> and hence the homogeneous solution is a linear combination of &lt;math>e^{2x} \\sin x&lt;/math> and &lt;math>e^{2x} \\cos x&lt;/math>.\n\nNo such terms appear in the forcing function. The forcing function &lt;math> x \\sin x&lt;/math> is a degree one polynomial times a sinusoidal function. We thus would guess a particular solution of form &lt;math>x_p = (Ax + B) \\sin x + (Cx + D) \\cos x&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find the <em>form</em> (but not the values of the coefficients!) of a particular solution of the nonhomogeneous ODE</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}y&#39;&#39; - 4y&#39; + 5y = x \\sin(x)\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the \\emph{form} (but not the values of the coefficients!) of a\nparticular solution of the nonhomogeneous ODE\n\n\\begin{align*}\n\\displaystyle{}y'' - 4y' + 5y = x \\sin(x)\n\\end{align*}", 
+    "statement_raw": "Find the ''form'' (but not the values of the coefficients!) of a particular \nsolution of the nonhomogeneous ODE\n:&lt;math>\\displaystyle{}y'' - 4y' + 5y = x \\sin(x)&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_01_(b)", 
+    "year": 2013
 }

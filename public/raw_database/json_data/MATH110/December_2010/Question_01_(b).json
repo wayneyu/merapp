@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Determine whether each statement is true. If it is, explain why;\nif not, give a counter-example.}\n\nNot all continuous functions are differentiable.", 
-    "year": 2010, 
-    "sols": [
-        "The most common reasons that a function $f$ is non-differentiable at a\npoint \\emph{x = a} are as follows:\n\na) $f$ has a sharp corner (called a cusp) at \\emph{x = a}, where the\ntangent lines from both sides of \\emph{a} converge to different values.\n\nb) $f$ has a vertical tangent line at \\emph{x = a}, that is, the slope\nof the tangent line at \\emph{a} is infinity.\n\nBoth of these conditions can occur for continuous functions. For\nexample:\n\na) The function $f(x) = |x|$ is continuous, but has a sharp corner at\n\\emph{x = 0}.\n\nb) The function $f(x) = \\sqrt[3]{x}$ is continuous, but has a vertical\ntangent line at \\emph{x = 0}.\n\nThus it is clear that there are continuous functions that are not\ndifferentiable, so the statement Not all continuous functions are\ndifferentiable is true. To prove this, it is sufficient to give an\nexample of a function that is continuous but not differentiable, like\none of the functions shown above."
+    "answer_html": "<p>b) The function <span class=\"math\">\\(f(x) = \\sqrt[3]{x}\\)</span> is continuous, but has a vertical tangent line at <em>x = 0</em>. = is continuous, but has a vertical tangent line at <em>x = 0</em>.Thus it is clear that there are continuous functions that are not differentiable, so the statement Not all continuous functions are differentiable is true.To prove this, it is sufficient to give an example of a function that is continuous but not differentiable, like one of the functions shown above.</p>\n", 
+    "answer_latex": "b) The function $f(x) = \\sqrt[3]{x}$ is continuous, but has a vertical\ntangent line at \\emph{x = 0}. = is continuous, but has a vertical\ntangent line at \\emph{x = 0}.Thus it is clear that there are continuous functions that are not\ndifferentiable, so the statement Not all continuous functions are\ndifferentiable is true.To prove this, it is sufficient to give an\nexample of a function that is continuous but not differentiable, like\none of the functions shown above.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>If you think the statement is true, that is not all continuous function are differentiable, you would need to give an example showing a continuous function that is not differentiable.</p>\n<p>If you believe the statement is false, that is all continuous functions are differentiable, you would need to show that given any continuous function, then you must have that it is differentiable <span>[</span>everywhere<span>]</span>.</p>\n<p>As always, it is good to try a few examples to get a feeling for this problem first before trying to answer it.</p>\n", 
+        "<p>Think about what makes a function non-differentiable. Is there a function that has this property but is still continuous?</p>\n"
+    ], 
+    "hints_latex": [
         "If you think the statement is true, that is not all continuous function\nare differentiable, you would need to give an example showing a\ncontinuous function that is not differentiable.\n\nIf you believe the statement is false, that is all continuous functions\nare differentiable, you would need to show that given any continuous\nfunction, then you must have that it is differentiable {[}everywhere{]}.\n\nAs always, it is good to try a few examples to get a feeling for this\nproblem first before trying to answer it.", 
         "Think about what makes a function non-differentiable. Is there a\nfunction that has this property but is still continuous?"
-    ]
+    ], 
+    "hints_raw": [
+        "If you think the statement is true, that is not all continuous function are differentiable, you would need to give an example showing a continuous function that is not differentiable.\n\nIf you believe the statement is false, that is all continuous functions are differentiable, you would need to show that given any continuous function, then you must have that it is differentiable [everywhere].\n\nAs always, it is good to try a few examples to get a feeling for this problem first before trying to answer it.\n", 
+        "Think about what makes a function non-differentiable.  Is there a function that has this property but is still continuous?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The most common reasons that a function <span class=\"math\">\\(f\\)</span> is non-differentiable at a point <em>x = a</em> are as follows:</p>\n<p>a) <span class=\"math\">\\(f\\)</span> has a sharp corner (called a cusp) at <em>x = a</em>, where the tangent lines from both sides of <em>a</em> converge to different values.</p>\n<p>b) <span class=\"math\">\\(f\\)</span> has a vertical tangent line at <em>x = a</em>, that is, the slope of the tangent line at <em>a</em> is infinity.</p>\n<p>Both of these conditions can occur for continuous functions. For example:</p>\n<p>a) The function <span class=\"math\">\\(f(x) = |x|\\)</span> is continuous, but has a sharp corner at <em>x = 0</em>.</p>\n<p>b) The function <span class=\"math\">\\(f(x) = \\sqrt[3]{x}\\)</span> is continuous, but has a vertical tangent line at <em>x = 0</em>.</p>\n<p>Thus it is clear that there are continuous functions that are not differentiable, so the statement Not all continuous functions are differentiable is true. To prove this, it is sufficient to give an example of a function that is continuous but not differentiable, like one of the functions shown above.</p>\n"
+    ], 
+    "sols_latex": [
+        "The most common reasons that a function $f$ is non-differentiable at a\npoint \\emph{x = a} are as follows:\n\na) $f$ has a sharp corner (called a cusp) at \\emph{x = a}, where the\ntangent lines from both sides of \\emph{a} converge to different values.\n\nb) $f$ has a vertical tangent line at \\emph{x = a}, that is, the slope\nof the tangent line at \\emph{a} is infinity.\n\nBoth of these conditions can occur for continuous functions. For\nexample:\n\na) The function $f(x) = |x|$ is continuous, but has a sharp corner at\n\\emph{x = 0}.\n\nb) The function $f(x) = \\sqrt[3]{x}$ is continuous, but has a vertical\ntangent line at \\emph{x = 0}.\n\nThus it is clear that there are continuous functions that are not\ndifferentiable, so the statement Not all continuous functions are\ndifferentiable is true. To prove this, it is sufficient to give an\nexample of a function that is continuous but not differentiable, like\none of the functions shown above."
+    ], 
+    "sols_raw": [
+        "The most common reasons that a function &lt;math>f&lt;/math> is non-differentiable at a point ''x = a'' are as follows: \n\na) &lt;math>f&lt;/math> has a sharp corner (called a cusp) at ''x = a'', where the tangent lines from both sides of ''a'' converge to different values.\n\nb) &lt;math>f&lt;/math> has a vertical tangent line at ''x = a'', that is, the slope of the tangent line at ''a'' is infinity.  \n\n\nBoth of these conditions can occur for continuous functions.  For example: \n\na) The function &lt;math>f(x) = |x| &lt;/math> is continuous, but has a sharp corner at ''x = 0''.  \n\nb) The function &lt;math>f(x) = \\sqrt[3]{x}&lt;/math> is continuous, but has a vertical tangent line at ''x = 0''.\n\nThus it is clear that there are continuous functions that are not differentiable, so the statement &lt;i>Not all continuous functions are differentiable&lt;/i> is true.  To prove this, it is sufficient to give an example of a function that is continuous but not differentiable, like one of the functions shown above.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Determine whether each statement is true. If it is, explain why; if not, give a counter-example.</em></p>\n<p>Not all continuous functions are differentiable.</p>\n", 
+    "statement_latex": "\\emph{Determine whether each statement is true. If it is, explain why;\nif not, give a counter-example.}\n\nNot all continuous functions are differentiable.", 
+    "statement_raw": "''Determine whether each statement is true. If it is, explain why; if not, give a counter-example.''\n\nNot all continuous functions are differentiable.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_01_(b)", 
+    "year": 2010
 }

@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_04_(c)", 
-    "course": "MATH152", 
-    "statement": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nCompute det(A).", 
-    "year": 2011, 
-    "sols": [
-        "Recall from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(b)}{part(b)}\nthat we computed the transformation matrix \\emph{A} as\n\n\\begin{align*}A=\n\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}.\\end{align*}\n\nTo compute the determinant we can use co-factor expansion or any special\ntricks one may have for computing $3\\times{3}$ determinants.\n\n\\begin{align*}\\textrm{det}(A)=\n\\begin{vmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{vmatrix}\n=-1\n\\begin{vmatrix}\n-1  &  -2\\\\\n-1  &  0\n\\end{vmatrix}\n+2\n\\begin{vmatrix}\n-1  &  -2\\\\\n0  &  1\n\\end{vmatrix}\n=0.\\end{align*}\n\nTherefore we conclude that \\emph{det(A)=0}.\n\nIs there anyway we could have expected this before hand?\n\nFirstly, notice that the next part of the question\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(d)}{part(d)}\nasks for \\emph{any} nonzero vector that has a zero cross product. This\nimplies that \\emph{A} has a null space and thus that \\emph{det(A)} is\nzero. However, this reason is somewhat cheating since it involves\nanalyzing the wording of the problem.\n\nA more independent reasoning would be that if the determinant weren't\nzero, we would have an empty null space (or a unique solution to\n\\emph{A\\textbf{x}=\\textbf{0}}). However, we know from the properties of\ncross-products that any vector in a cross product with itself is zero.\nTherefore we know that $\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}$, and\nhence \\emph{T(\\textbf{a}) = A\\textbf{a} = 0}, i.e. \\textbf{a} is in the\nnull space of \\emph{A}. Hence \\emph{det(A)} must be zero.\n\nIn fact, any vector parallel to $\\mathbf{a}$ will also have a zero cross\nproduct since\n\n\\begin{align*}\\mathbf{a}\\times(k\\mathbf{a})=k(\\mathbf{a}\\times\\mathbf{a})=\\mathbf{0}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{a}\\times(k\\mathbf{a})=\\mathbf{0}.\\)</span></p>\n", 
+    "answer_latex": " $\\mathbf{a}\\times(k\\mathbf{a})=\\mathbf{0}.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How can we compute a determinant of a matrix? Can we guess what the determinant will be based on the properties of cross-products?</p>\n"
+    ], 
+    "hints_latex": [
         "How can we compute a determinant of a matrix? Can we guess what the\ndeterminant will be based on the properties of cross-products?"
-    ]
+    ], 
+    "hints_raw": [
+        "How can we compute a determinant of a matrix?  Can we guess what the determinant will be based on the properties of cross-products?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "B 04 (c)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Recall from <span>part(b)</span> that we computed the transformation matrix <em>A</em> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>To compute the determinant we can use co-factor expansion or any special tricks one may have for computing <span class=\"math\">\\(3\\times{3}\\)</span> determinants.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\textrm{det}(A)=\n\\begin{vmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{vmatrix}\n=-1\n\\begin{vmatrix}\n-1  &amp;  -2\\\\\n-1  &amp;  0\n\\end{vmatrix}\n+2\n\\begin{vmatrix}\n-1  &amp;  -2\\\\\n0  &amp;  1\n\\end{vmatrix}\n=0.\\end{aligned}\\]</span></p>\n<p>Therefore we conclude that <em>det(A)=0</em>.</p>\n<p>Is there anyway we could have expected this before hand?</p>\n<p>Firstly, notice that the next part of the question <span>part(d)</span> asks for <em>any</em> nonzero vector that has a zero cross product. This implies that <em>A</em> has a null space and thus that <em>det(A)</em> is zero. However, this reason is somewhat cheating since it involves analyzing the wording of the problem.</p>\n<p>A more independent reasoning would be that if the determinant weren&#8217;t zero, we would have an empty null space (or a unique solution to <em>A<strong>x</strong>=<strong>0</strong></em>). However, we know from the properties of cross-products that any vector in a cross product with itself is zero. Therefore we know that <span class=\"math\">\\(\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}\\)</span>, and hence <em>T(<strong>a</strong>) = A<strong>a</strong> = 0</em>, i.e. <strong>a</strong> is in the null space of <em>A</em>. Hence <em>det(A)</em> must be zero.</p>\n<p>In fact, any vector parallel to <span class=\"math\">\\(\\mathbf{a}\\)</span> will also have a zero cross product since</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{a}\\times(k\\mathbf{a})=k(\\mathbf{a}\\times\\mathbf{a})=\\mathbf{0}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Recall from\n{part(b)}\nthat we computed the transformation matrix \\emph{A} as\n\n\\begin{align*}\nA=\n\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}.\n\\end{align*}\n\nTo compute the determinant we can use co-factor expansion or any special\ntricks one may have for computing $3\\times{3}$ determinants.\n\n\\begin{align*}\n\\textrm{det}(A)=\n\\begin{vmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{vmatrix}\n=-1\n\\begin{vmatrix}\n-1  &  -2\\\\\n-1  &  0\n\\end{vmatrix}\n+2\n\\begin{vmatrix}\n-1  &  -2\\\\\n0  &  1\n\\end{vmatrix}\n=0.\n\\end{align*}\n\nTherefore we conclude that \\emph{det(A)=0}.\n\nIs there anyway we could have expected this before hand?\n\nFirstly, notice that the next part of the question\n{part(d)}\nasks for \\emph{any} nonzero vector that has a zero cross product. This\nimplies that \\emph{A} has a null space and thus that \\emph{det(A)} is\nzero. However, this reason is somewhat cheating since it involves\nanalyzing the wording of the problem.\n\nA more independent reasoning would be that if the determinant weren't\nzero, we would have an empty null space (or a unique solution to\n\\emph{A\\textbf{x}=\\textbf{0}}). However, we know from the properties of\ncross-products that any vector in a cross product with itself is zero.\nTherefore we know that $\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}$, and\nhence \\emph{T(\\textbf{a}) = A\\textbf{a} = 0}, i.e. \\textbf{a} is in the\nnull space of \\emph{A}. Hence \\emph{det(A)} must be zero.\n\nIn fact, any vector parallel to $\\mathbf{a}$ will also have a zero cross\nproduct since\n\n\\begin{align*}\n\\mathbf{a}\\times(k\\mathbf{a})=k(\\mathbf{a}\\times\\mathbf{a})=\\mathbf{0}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Recall from [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(b)|part(b)]] that we computed the transformation matrix ''A'' as\n\n:&lt;math>\nA=\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}\n&lt;/math>.\n\nTo compute the determinant we can use co-factor expansion or any special tricks one may have for computing &lt;math>3\\times{3}&lt;/math> determinants.\n\n:&lt;math>\n\\textrm{det}(A)=\n\\begin{vmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{vmatrix}\n=-1\n\\begin{vmatrix}\n-1  &amp;  -2\\\\\n-1  &amp;  0\n\\end{vmatrix}\n+2\n\\begin{vmatrix}\n-1  &amp;  -2\\\\\n0  &amp;  1\n\\end{vmatrix}\n=0\n&lt;/math>.\n\nTherefore we conclude that ''det(A)=0''.\n\n\nIs there anyway we could have expected this before hand?\n\nFirstly, notice that the next part of the question [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(d)|part(d)]] asks for ''any'' nonzero vector that has a zero cross product.  This implies that ''A'' has a null space and thus that ''det(A)'' is zero.  However, this reason is somewhat cheating since it involves analyzing the wording of the problem.\n\nA more independent reasoning would be that if the determinant weren't zero, we would have an empty null space (or a unique solution to ''A'''x'''='''0''''').  However, we know from the properties of cross-products that any vector in a cross product with itself is zero.  Therefore we know that &lt;math>\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}&lt;/math>, and hence ''T('''a''') = A'''a''' = 0'', i.e. '''a''' is in the null space of ''A''. Hence ''det(A)'' must be zero.\n\nIn fact, any vector parallel to &lt;math>\\mathbf{a}&lt;/math> will also have a zero cross product since\n\n:&lt;math>\n\\mathbf{a}\\times(k\\mathbf{a})=k(\\mathbf{a}\\times\\mathbf{a})=\\mathbf{0}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let a=<span>[</span>1,2,-1<span>]</span>. Consider the transformation <span class=\"math\">\\(T:\\mathbb{R}^3\\to\\mathbb{R}^3\\)</span> defined by <span class=\"math\">\\(T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}\\)</span> for all <strong>x</strong> in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>, where <span class=\"math\">\\(\\times\\)</span> is the cross-product in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>.</p>\n<p>Compute det(A).</p>\n", 
+    "statement_latex": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nCompute det(A).", 
+    "statement_raw": "Let a=[1,2,-1].  Consider the transformation &lt;math>T:\\mathbb{R}^3\\to\\mathbb{R}^3&lt;/math> defined by &lt;math>T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}&lt;/math> for all '''x''' in &lt;math>\\mathbb{R}^3&lt;/math>, where &lt;math>\\times&lt;/math> is the cross-product in &lt;math>\\mathbb{R}^3&lt;/math>.\n\nCompute det(A).\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_04_(c)", 
+    "year": 2011
 }

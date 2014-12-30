@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "Find a number $b > 0$ such that the function $f(x) = x - 1$ has average\nvalue $0$ on the interval $[0,b]$.", 
-    "year": 2010, 
-    "sols": [
-        "We want\n\n\\begin{align*}\n0&=\\frac{1}{b}\\int_0^b(x-1)dx\\\\\n0&=\\frac{1}{b}(\\frac{x^2}{2}-x)|_0^b\\\\\n0&=\\frac{b^2}{2}-b\\\\\nb&=\\frac{b^2}{2}\\\\\n2b&=b^2\\end{align*}\n\nSince $b > 0,$ we can divide both sides by $b$ to find $b=2.$"
+    "answer_html": "<p>Since <span class=\"math\">\\(b &gt; 0,\\)</span> we can divide both sides by <span class=\"math\">\\(b\\)</span> to find <span class=\"math\">\\(b=2.\\)</span></p>\n", 
+    "answer_latex": "Since $b > 0,$ we can divide both sides by $b$ to find $b=2.$", 
+    "contributors": [
+        "CarmenBruni", 
+        "SimonRose", 
+        "IsabellGraf", 
+        "MikeL", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The average of <span class=\"math\">\\(f(x)\\)</span> over the interval <span class=\"math\">\\([a, b]\\)</span> is <span class=\"math\">\\(f_{av}=\\frac{1}{b-a}\\int_a^bf(x)dx\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The average of $f(x)$ over the interval $[a, b]$ is\n$f_{av}=\\frac{1}{b-a}\\int_a^bf(x)dx$"
-    ]
+    ], 
+    "hints_raw": [
+        "The average of &lt;math> f(x) &lt;/math> over the interval &lt;math> [a, b] &lt;/math> is &lt;math> f_{av}=\\frac{1}{b-a}\\int_a^bf(x)dx &lt;/math>\n"
+    ], 
+    "num_votes": 4, 
+    "question": "1 (c)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>We want</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0&amp;=\\frac{1}{b}\\int_0^b(x-1)dx\\\\\n0&amp;=\\frac{1}{b}(\\frac{x^2}{2}-x)|_0^b\\\\\n0&amp;=\\frac{b^2}{2}-b\\\\\nb&amp;=\\frac{b^2}{2}\\\\\n2b&amp;=b^2\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(b &gt; 0,\\)</span> we can divide both sides by <span class=\"math\">\\(b\\)</span> to find <span class=\"math\">\\(b=2.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We want\n\n\\begin{align*}\n0&=\\frac{1}{b}\\int_0^b(x-1)dx\\\\\n0&=\\frac{1}{b}(\\frac{x^2}{2}-x)|_0^b\\\\\n0&=\\frac{b^2}{2}-b\\\\\nb&=\\frac{b^2}{2}\\\\\n2b&=b^2\n\\end{align*}\n\nSince $b > 0,$ we can divide both sides by $b$ to find $b=2.$"
+    ], 
+    "sols_raw": [
+        "We want\n\n&lt;math> \\begin{align}\n0&amp;=\\frac{1}{b}\\int_0^b(x-1)dx\\\\\n0&amp;=\\frac{1}{b}(\\frac{x^2}{2}-x)|_0^b\\\\\n0&amp;=\\frac{b^2}{2}-b\\\\\nb&amp;=\\frac{b^2}{2}\\\\\n2b&amp;=b^2\\\\\n\\end{align}&lt;/math>\n\nSince &lt;math> b > 0,&lt;/math> we can divide both sides by &lt;math>b&lt;/math> to find &lt;math>b=2.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Find a number <span class=\"math\">\\(b &gt; 0\\)</span> such that the function <span class=\"math\">\\(f(x) = x - 1\\)</span> has average value <span class=\"math\">\\(0\\)</span> on the interval <span class=\"math\">\\([0,b]\\)</span>.</p>\n", 
+    "statement_latex": "Find a number $b > 0$ such that the function $f(x) = x - 1$ has average\nvalue $0$ on the interval $[0,b]$.", 
+    "statement_raw": "Find a number &lt;math> b > 0 &lt;/math> such that the function &lt;math> f(x) = x - 1 &lt;/math> has average value &lt;math> 0 &lt;/math> on the interval &lt;math> [0,b] &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Average_value"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_01_(c)", 
+    "year": 2010
 }

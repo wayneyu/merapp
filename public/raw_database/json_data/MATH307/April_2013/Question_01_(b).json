@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH307", 
-    "statement": "Write down the definition of the confidion number \\emph{cond(A)} of a\nmatrix \\emph{A}. Why is this a useful concept?", 
-    "year": 2013, 
-    "sols": [
-        "cond(A) = $\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\end{Vmatrix}$\n\nThe conditions number helps us find the maximum relative error,\n$\\frac{\\begin{Vmatrix}\n\\Delta \\vec{x}\n\\end{Vmatrix}}{\\vec{x}}$, for the solution to $A\\vec{x} = \\vec{b}$\n\nA large condition number for a matrix, A, means that small changes\n(errors) in $\\vec{b}$ can result in large changes (errors) in $\\vec{x}$.\n\nWe get this by considering\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b}\\\\\n\\vec{\\Delta x} &= A^{-1}\\vec{\\Delta b} \\end{align*}\n\nthen\n\n$\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix} = \\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}$\n\ndividing by $\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}$ on both sides produces\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} = \\frac{\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}{\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}}}$\n\nsince $\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}$\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant \\frac{\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}$\n\nsince cond(A) = $\\begin{Vmatrix}\nA\n\\end{Vmatrix}\n\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}$\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}$"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}\\)</span></p>\n", 
+    "answer_latex": "$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Check your notes for the concept of a condition number.</p>\n"
+    ], 
+    "hints_latex": [
         "Check your notes for the concept of a condition number."
-    ]
+    ], 
+    "hints_raw": [
+        "Check your notes for the concept of a condition number.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>cond(A) = <span class=\"math\">\\(\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\end{Vmatrix}\\)</span></p>\n<p>The conditions number helps us find the maximum relative error, <span class=\"math\">\\(\\frac{\\begin{Vmatrix}\n\\Delta \\vec{x}\n\\end{Vmatrix}}{\\vec{x}}\\)</span>, for the solution to <span class=\"math\">\\(A\\vec{x} = \\vec{b}\\)</span></p>\n<p>A large condition number for a matrix, A, means that small changes (errors) in <span class=\"math\">\\(\\vec{b}\\)</span> can result in large changes (errors) in <span class=\"math\">\\(\\vec{x}\\)</span>.</p>\n<p>We get this by considering</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\vec{x} &amp;= \\vec{b}\\\\\n\\vec{\\Delta x} &amp;= A^{-1}\\vec{\\Delta b} \\end{aligned}\\]</span></p>\n<p>then</p>\n<p><span class=\"math\">\\(\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix} = \\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}\\)</span></p>\n<p>dividing by <span class=\"math\">\\(\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}\\)</span> on both sides produces</p>\n<p><span class=\"math\">\\(\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} = \\frac{\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}{\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}}}\\)</span></p>\n<p>since <span class=\"math\">\\(\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\)</span></p>\n<p><span class=\"math\">\\(\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant \\frac{\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}\\)</span></p>\n<p>since cond(A) = <span class=\"math\">\\(\\begin{Vmatrix}\nA\n\\end{Vmatrix}\n\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}\\)</span></p>\n<p><span class=\"math\">\\(\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "cond(A) = $\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\end{Vmatrix}$\n\nThe conditions number helps us find the maximum relative error,\n$\\frac{\\begin{Vmatrix}\n\\Delta \\vec{x}\n\\end{Vmatrix}}{\\vec{x}}$, for the solution to $A\\vec{x} = \\vec{b}$\n\nA large condition number for a matrix, A, means that small changes\n(errors) in $\\vec{b}$ can result in large changes (errors) in $\\vec{x}$.\n\nWe get this by considering\n\n\\begin{align*}\nA\\vec{x} &= \\vec{b}\\\\\n\\vec{\\Delta x} &= A^{-1}\\vec{\\Delta b} \n\\end{align*}\n\nthen\n\n$\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix} = \\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}$\n\ndividing by $\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}$ on both sides produces\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} = \\frac{\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}{\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}}}$\n\nsince $\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}$\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant \\frac{\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}$\n\nsince cond(A) = $\\begin{Vmatrix}\nA\n\\end{Vmatrix}\n\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}$\n\n$\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}$"
+    ], 
+    "sols_raw": [
+        "cond(A) = &lt;math>\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\end{Vmatrix}&lt;/math>\n\nThe conditions number helps us find the maximum relative error, &lt;math>\\frac{\\begin{Vmatrix}\n\\Delta \\vec{x}\n\\end{Vmatrix}}{\\vec{x}}&lt;/math>, for the solution to &lt;math>A\\vec{x} = \\vec{b}&lt;/math>\n\nA large condition number for a matrix, A, means that small changes (errors) in &lt;math>\\vec{b}&lt;/math> can result in large changes (errors) in &lt;math>\\vec{x}&lt;/math>.\n\nWe get this by considering \n\n&lt;math>\n\\begin{align}\nA\\vec{x} &amp;= \\vec{b}\\\\\n\\vec{\\Delta x} &amp;= A^{-1}\\vec{\\Delta b} \n\\end{align}\n&lt;/math>\n\nthen\n\n&lt;math>\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix} = \\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}&lt;/math>\n\ndividing by &lt;math>\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}&lt;/math> on both sides produces\n\n&lt;math>\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} = \\frac{\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}{\\begin{Vmatrix}\n\\vec{x}\n\\end{Vmatrix}}}&lt;/math>\n\nsince &lt;math>\\begin{Vmatrix}\nA\\vec{x}\n\\end{Vmatrix} \\leqslant \\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}&lt;/math>\n\n&lt;math>\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant \\frac{\\begin{Vmatrix}\nA\n\\end{Vmatrix}\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}&lt;/math>\n\nsince cond(A) = &lt;math>\\begin{Vmatrix}\nA\n\\end{Vmatrix}\n\\begin{Vmatrix}\nA^{-1}\n\\end{Vmatrix}&lt;/math>\n\n&lt;math>\\frac{\\begin{Vmatrix}\n\\vec{\\Delta x}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{ x}\n\\end{Vmatrix}} \\leqslant cond(A) \\frac{\\begin{Vmatrix}\n\\vec{\\Delta b}\n\\end{Vmatrix}}{\\begin{Vmatrix}\n\\vec{b}\n\\end{Vmatrix}}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Write down the definition of the confidion number <em>cond(A)</em> of a matrix <em>A</em>. Why is this a useful concept?</p>\n", 
+    "statement_latex": "Write down the definition of the confidion number \\emph{cond(A)} of a\nmatrix \\emph{A}. Why is this a useful concept?", 
+    "statement_raw": "Write down the definition of the confidion number ''cond(A)'' of a matrix ''A''. Why is this a useful concept?\n", 
+    "term": "April", 
+    "topics": [
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_01_(b)", 
+    "year": 2013
 }

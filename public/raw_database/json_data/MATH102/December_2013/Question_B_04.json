@@ -1,0 +1,46 @@
+{
+    "answer_html": "<p>Hence the solution is <span class=\"math\">\\(\\displaystyle {\\color{blue} y =\\cos(2x)}=\\displaystyle {\\color{blue} y =\\cos(2x)}\\)</span>.</p>\n", 
+    "answer_latex": "Hence the solution is\n$\\displaystyle {\\color{blue} y =\\cos(2x)}=\\displaystyle {\\color{blue} y =\\cos(2x)}$.", 
+    "contributors": [
+        "CarmenBruni", 
+        "NicholasHu", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Note that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^2}{dx^2}  \\sin(\\omega x) = -\\omega^2\\sin(\\omega x)\\end{aligned}\\]</span></p>\n<p>and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(\\omega x)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Note that\n\n\\begin{align*}\n\\frac{d^2}{dx^2}  \\sin(\\omega x) = -\\omega^2\\sin(\\omega x)\n\\end{align*}\n\nand that\n\n\\begin{align*}\n\\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(\\omega x)\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Note that\n\n:&lt;math> \\frac{d^2}{dx^2}  \\sin(\\omega x) = -\\omega^2\\sin(\\omega x)&lt;/math>\n\nand that\n\n:&lt;math> \\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(\\omega x)&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 04", 
+    "rating": 43, 
+    "sols_html": [
+        "<p>We can rewrite the differential equation as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y&#39;&#39; = -4y = -2^2 \\cdot y\\end{aligned}\\]</span></p>\n<p>Since</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^2}{dx^2} \\sin(\\omega x) = -\\omega^2\\sin(x)\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(x)\\end{aligned}\\]</span></p>\n<p>we see that <span class=\"math\">\\(\\displaystyle \\sin(\\omega x)\\)</span> and <span class=\"math\">\\(\\displaystyle \\cos(\\omega x)\\)</span> are solutions to the equation, with <span class=\"math\">\\(\\displaystyle \\omega = 2\\)</span>. The solution of the equation must also satisfy the initial condition <span class=\"math\">\\(\\displaystyle y(0)=1\\)</span>, which is only the case for <span class=\"math\">\\(\\displaystyle y = \\cos(2x)\\)</span>. Hence the solution is <span class=\"math\">\\(\\displaystyle {\\color{blue} y =\\cos(2x)}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We can rewrite the differential equation as\n\n\\begin{align*}\n\\displaystyle y'' = -4y = -2^2 \\cdot y\n\\end{align*}\n\nSince\n\n\\begin{align*}\n\\frac{d^2}{dx^2} \\sin(\\omega x) = -\\omega^2\\sin(x)\n\\end{align*}\n\nand\n\n\\begin{align*}\n\\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(x)\n\\end{align*}\n\nwe see that $\\displaystyle \\sin(\\omega x)$ and\n$\\displaystyle \\cos(\\omega x)$ are solutions to the equation, with\n$\\displaystyle \\omega = 2$. The solution of the equation must also\nsatisfy the initial condition $\\displaystyle y(0)=1$, which is only the\ncase for $\\displaystyle y = \\cos(2x)$. Hence the solution is\n$\\displaystyle {\\color{blue} y =\\cos(2x)}$."
+    ], 
+    "sols_raw": [
+        "We can rewrite the differential equation as\n\n:&lt;math>\\displaystyle y'' = -4y = -2^2 \\cdot y&lt;/math>\n\n\nSince\n\n:&lt;math> \\frac{d^2}{dx^2} \\sin(\\omega x) = -\\omega^2\\sin(x)&lt;/math> \n\nand  \n\n:&lt;math> \\frac{d^2}{dx^2} \\cos(\\omega x) = -\\omega^2\\cos(x)&lt;/math>\n\n\nwe see that &lt;math>\\displaystyle \\sin(\\omega x)&lt;/math> and &lt;math>\\displaystyle \\cos(\\omega x)&lt;/math> are solutions to the equation, with &lt;math>\\displaystyle \\omega = 2&lt;/math>. The solution of the equation must also satisfy the initial condition &lt;math>\\displaystyle y(0)=1&lt;/math>, which is only the case for &lt;math>\\displaystyle y = \\cos(2x)&lt;/math>. Hence the solution is &lt;math>\\displaystyle {\\color{blue} y = \\cos(2x)}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>What function satisfies <span class=\"math\">\\(y&#39;&#39; + 4y = 0\\)</span> with initial condition <span class=\"math\">\\(y(0) = 1\\)</span>?</p>\n", 
+    "statement_latex": "What function satisfies $y'' + 4y = 0$ with initial condition\n$y(0) = 1$?", 
+    "statement_raw": "What function satisfies &lt;math>y'' + 4y = 0&lt;/math> with initial condition &lt;math>y(0) = 1&lt;/math>?\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_B_04", 
+    "year": 2013
+}

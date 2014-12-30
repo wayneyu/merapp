@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(c)", 
-    "course": "MATH110", 
-    "statement": "As long as $m < 0$, the line you gave as an answer in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_7_(a)}{(a)}\ncuts out a triangle in the upper righthand quadrant, whose vertices are\nat the origin, the \\emph{x}-intercept, and the \\emph{y}-intercept. Find\n\\emph{m} so that the area of this triangle is as small as possible.", 
-    "year": 2011, 
-    "sols": [
-        "The question is asking us to minimize the area of a triangle. So the\nfunction that we will be minimizing is\n\n\\begin{align*}A = \\frac12 b h\\end{align*}\n\nwhere \\emph{b} is the triangle's base and \\emph{h} is its height. In\norder to optimize (in this case, minimize), we need to reduce this\nformula to a function of one variable.\n\nIf we draw a picture of a line with negative slope that passes through\n(1,1), we will see the triangle formed by the axes and the line and can\nlabel its base and height.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{ScienceMathExamResourcesCoursesMath110April2011Question7cv1.jpg}\n\\caption{ScienceMathExamResourcesCoursesMath110April2011Question7cv1.jpg}\n\\end{figure}\n\nSo the base of the triangle is equal to the distance between 0 and the\nx-intercept of the line (which is simply the value of the x-intercept)\nand similarly, the height is equal to the y-intercept. We calculated the\nx and y intercept in the previous part of the question, so now we can\nsimply plug them into our area formula for \\emph{b} and \\emph{h}.\n\n\\begin{align*}A &= \\frac12 \\left(\\frac{m-1}{m}\\right) (-m+1) \\\\\n&= \\frac{-m^2+2m-1}{2m}\\end{align*}\n\nWe now take the derivative of \\emph{A}...\n\n\\begin{align*}A' &= \\frac{(-2m+2)(2m)-(-m^2+2m - 1)(2)}{4m^2} \\\\\n&= \\frac{-2(m-1)(m)+(m-1)^2}{2m^2} \\\\\n&= \\frac{(m-1)(-2m+m-1)}{2m^2} \\\\\n&= \\frac{(m-1)(-m-1)}{2m^2} \\end{align*}\n\n...and find its critical points. The derivative is undefined when\n$m = 0$. Setting it equal to zero:\n\n\\begin{align*}0 = \\frac{(m-1)(-m-1)}{2m^2}\\end{align*}\n\n\\begin{align*}0 = (m - 1)(-m -1)\\end{align*}\n\nyields additional critical points of $m = -1,$ and $m = 1$. However, as\nstated in the question, $m < 0$, so the only valid critical point is\n$m = -1$. To check that this is a minimum, you could use the first or\nsecond derivative test."
+    "answer_html": "<p>However, as stated in the question, <span class=\"math\">\\(m &lt; 0\\)</span>, so the only valid critical point is <span class=\"math\">\\(m = -1\\)</span>.To check that this is a minimum, you could use the first or second derivative test.</p>\n", 
+    "answer_latex": "However, as\nstated in the question, $m < 0$, so the only valid critical point is\n$m = -1$.To check that this is a minimum, you could use the first or\nsecond derivative test.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Draw a picture of a line and label the sides of the triangle that is formed. How could you write each side in terms of <span class=\"math\">\\(m\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "Draw a picture of a line and label the sides of the triangle that is\nformed. How could you write each side in terms of $m$?"
-    ]
+    ], 
+    "hints_raw": [
+        "Draw a picture of a line and label the sides of the triangle that is formed.  How could you write each side in terms of &lt;math>m&lt;/math>?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The question is asking us to minimize the area of a triangle. So the function that we will be minimizing is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\frac12 b h\\end{aligned}\\]</span></p>\n<p>where <em>b</em> is the triangle&#8217;s base and <em>h</em> is its height. In order to optimize (in this case, minimize), we need to reduce this formula to a function of one variable.</p>\n<p>If we draw a picture of a line with negative slope that passes through (1,1), we will see the triangle formed by the axes and the line and can label its base and height.</p>\n<p><img src=\"../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question7cv1.jpg\" alt=\"image\" /></p>\n<p>So the base of the triangle is equal to the distance between 0 and the x-intercept of the line (which is simply the value of the x-intercept) and similarly, the height is equal to the y-intercept. We calculated the x and y intercept in the previous part of the question, so now we can simply plug them into our area formula for <em>b</em> and <em>h</em>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA &amp;= \\frac12 \\left(\\frac{m-1}{m}\\right) (-m+1) \\\\\n&amp;= \\frac{-m^2+2m-1}{2m}\\end{aligned}\\]</span></p>\n<p>We now take the derivative of <em>A</em>...</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA&#39; &amp;= \\frac{(-2m+2)(2m)-(-m^2+2m - 1)(2)}{4m^2} \\\\\n&amp;= \\frac{-2(m-1)(m)+(m-1)^2}{2m^2} \\\\\n&amp;= \\frac{(m-1)(-2m+m-1)}{2m^2} \\\\\n&amp;= \\frac{(m-1)(-m-1)}{2m^2} \\end{aligned}\\]</span></p>\n<p>...and find its critical points. The derivative is undefined when <span class=\"math\">\\(m = 0\\)</span>. Setting it equal to zero:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = \\frac{(m-1)(-m-1)}{2m^2}\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = (m - 1)(-m -1)\\end{aligned}\\]</span></p>\n<p>yields additional critical points of <span class=\"math\">\\(m = -1,\\)</span> and <span class=\"math\">\\(m = 1\\)</span>. However, as stated in the question, <span class=\"math\">\\(m &lt; 0\\)</span>, so the only valid critical point is <span class=\"math\">\\(m = -1\\)</span>. To check that this is a minimum, you could use the first or second derivative test.</p>\n"
+    ], 
+    "sols_latex": [
+        "The question is asking us to minimize the area of a triangle. So the\nfunction that we will be minimizing is\n\n\\begin{align*}\nA = \\frac12 b h\n\\end{align*}\n\nwhere \\emph{b} is the triangle's base and \\emph{h} is its height. In\norder to optimize (in this case, minimize), we need to reduce this\nformula to a function of one variable.\n\nIf we draw a picture of a line with negative slope that passes through\n(1,1), we will see the triangle formed by the axes and the line and can\nlabel its base and height.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2011/ScienceMathExamResourcesCoursesMath110April2011Question7cv1.jpg}\n\nSo the base of the triangle is equal to the distance between 0 and the\nx-intercept of the line (which is simply the value of the x-intercept)\nand similarly, the height is equal to the y-intercept. We calculated the\nx and y intercept in the previous part of the question, so now we can\nsimply plug them into our area formula for \\emph{b} and \\emph{h}.\n\n\\begin{align*}\nA &= \\frac12 \\left(\\frac{m-1}{m}\\right) (-m+1) \\\\\n&= \\frac{-m^2+2m-1}{2m}\n\\end{align*}\n\nWe now take the derivative of \\emph{A}...\n\n\\begin{align*}\nA' &= \\frac{(-2m+2)(2m)-(-m^2+2m - 1)(2)}{4m^2} \\\\\n&= \\frac{-2(m-1)(m)+(m-1)^2}{2m^2} \\\\\n&= \\frac{(m-1)(-2m+m-1)}{2m^2} \\\\\n&= \\frac{(m-1)(-m-1)}{2m^2} \n\\end{align*}\n\n...and find its critical points. The derivative is undefined when\n$m = 0$. Setting it equal to zero:\n\n\\begin{align*}\n0 = \\frac{(m-1)(-m-1)}{2m^2}\n\\end{align*}\n\n\\begin{align*}\n0 = (m - 1)(-m -1)\n\\end{align*}\n\nyields additional critical points of $m = -1,$ and $m = 1$. However, as\nstated in the question, $m < 0$, so the only valid critical point is\n$m = -1$. To check that this is a minimum, you could use the first or\nsecond derivative test."
+    ], 
+    "sols_raw": [
+        "The question is asking us to minimize the area of a triangle.  So the function that we will be minimizing is\n\n:&lt;math>A = \\frac12 b h&lt;/math>\n\nwhere ''b'' is the triangle's base and ''h'' is its height.  In order to optimize (in this case, minimize), we need to reduce this formula to a function of one variable.  \n\nIf we draw a picture of a line with negative slope that passes through (1,1), we will see the triangle formed by the axes and the line and can label its base and height.  \n\n[[File:ScienceMathExamResourcesCoursesMath110April2011Question7cv1.jpg]] \n\n&lt;!-- [[File:ScienceMathExamResourcesCoursesMath110April2011Question7cv2.jpg]] -->\n\nSo the base of the triangle is equal to the distance between 0 and the x-intercept of the line (which is simply the value of the x-intercept) and similarly, the height is equal to the y-intercept.  We calculated the x and y intercept in the previous part of the question, so now we can simply plug them into our area formula for ''b'' and ''h''.  \n\n:&lt;math>\\begin{align}A &amp;= \\frac12 \\left(\\frac{m-1}{m}\\right) (-m+1) \\\\\n&amp;= \\frac{-m^2+2m-1}{2m}\\end{align}&lt;/math>\n\nWe now take the derivative of ''A''...\n\n:&lt;math>\\begin{align}A' &amp;= \\frac{(-2m+2)(2m)-(-m^2+2m - 1)(2)}{4m^2} \\\\\n&amp;= \\frac{-2(m-1)(m)+(m-1)^2}{2m^2} \\\\\n&amp;= \\frac{(m-1)(-2m+m-1)}{2m^2} \\\\\n&amp;= \\frac{(m-1)(-m-1)}{2m^2} \\end{align}&lt;/math>\n\n...and find its critical points.  The derivative is undefined when &lt;math>m = 0&lt;/math>.  Setting it equal to zero:\n\n:&lt;math>0 = \\frac{(m-1)(-m-1)}{2m^2} &lt;/math>\n:&lt;math>0 = (m - 1)(-m -1) &lt;/math>\n\nyields additional critical points of &lt;math>m = -1,&lt;/math> and &lt;math>m = 1&lt;/math>.  However, as stated in the question, &lt;math>m &lt; 0&lt;/math>, so the only valid critical point is &lt;math>m = -1&lt;/math>.  To check that this is a minimum, you could use the first or second derivative test.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>As long as <span class=\"math\">\\(m &lt; 0\\)</span>, the line you gave as an answer in part <span>(a)</span> cuts out a triangle in the upper righthand quadrant, whose vertices are at the origin, the <em>x</em>-intercept, and the <em>y</em>-intercept. Find <em>m</em> so that the area of this triangle is as small as possible.</p>\n", 
+    "statement_latex": "As long as $m < 0$, the line you gave as an answer in part\n{(a)}\ncuts out a triangle in the upper righthand quadrant, whose vertices are\nat the origin, the \\emph{x}-intercept, and the \\emph{y}-intercept. Find\n\\emph{m} so that the area of this triangle is as small as possible.", 
+    "statement_raw": "As long as &lt;math>m &lt; 0&lt;/math>, the line you gave as an answer in part [[Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_7_(a)|(a)]] cuts out a triangle in the upper righthand quadrant, whose vertices are at the origin, the ''x''-intercept, and the ''y''-intercept. Find ''m'' so that the area of this triangle is as small as possible.\n", 
+    "term": "April", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_07_(c)", 
+    "year": 2011
 }

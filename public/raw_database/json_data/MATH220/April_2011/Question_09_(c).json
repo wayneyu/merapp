@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_09_(c)", 
-    "course": "MATH220", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\end{align*}\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nProve or disprove that \\emph{f} \u00e2\u0097\u008b\\emph{g} must be surjective.", 
-    "year": 2011, 
-    "sols": [
-        "The example that we constructed in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} showed a case where the function \\emph{f} is not surjective and so\nit cannot be possible for $f \\circ g$ to be surjective either. For\nexample, in that case, no negative number is in the image of the\nfunction \\emph{f} and so no negative number can be in the image of\n$f \\circ g$ either."
+    "answer_html": "<p>For example, in that case, no negative number is in the image of the function <em>f</em> and so no negative number can be in the image of <span class=\"math\">\\(f \\circ g\\)</span> either.</p>\n", 
+    "answer_latex": "For\nexample, in that case, no negative number is in the image of the\nfunction \\emph{f} and so no negative number can be in the image of\n$f \\circ g$ either.", 
+    "contributors": [
+        "Konradbe", 
+        "CameronChristou"
     ], 
-    "hints": [
-        "Working on\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} and\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} definitively helps.\n\nIn your example in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)}{part\n(b)} \\emph{f} was not surjective. Can $f \\circ g$ possibly be surjective\nthen?"
-    ]
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Working on <span>part (a)</span> and <span>part (b)</span> definitively helps.</p>\n<p>In your example in <span>part (b)</span> <em>f</em> was not surjective. Can <span class=\"math\">\\(f \\circ g\\)</span> possibly be surjective then?</p>\n"
+    ], 
+    "hints_latex": [
+        "Working on\n{part\n(a)} and\n{part\n(b)} definitively helps.\n\nIn your example in\n{part\n(b)} \\emph{f} was not surjective. Can $f \\circ g$ possibly be surjective\nthen?"
+    ], 
+    "hints_raw": [
+        "Working on [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)|part (a)]] and [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)|part (b)]] definitively helps.\n\nIn your example in [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)|part (b)]] ''f'' was not surjective. Can &lt;math>f \\circ g&lt;/math> possibly be surjective then?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The example that we constructed in <span>part (b)</span> showed a case where the function <em>f</em> is not surjective and so it cannot be possible for <span class=\"math\">\\(f \\circ g\\)</span> to be surjective either. For example, in that case, no negative number is in the image of the function <em>f</em> and so no negative number can be in the image of <span class=\"math\">\\(f \\circ g\\)</span> either.</p>\n"
+    ], 
+    "sols_latex": [
+        "The example that we constructed in\n{part\n(b)} showed a case where the function \\emph{f} is not surjective and so\nit cannot be possible for $f \\circ g$ to be surjective either. For\nexample, in that case, no negative number is in the image of the\nfunction \\emph{f} and so no negative number can be in the image of\n$f \\circ g$ either."
+    ], 
+    "sols_raw": [
+        "The example that we constructed in [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (b)|part (b)]] showed a case where the function ''f'' is not surjective and so it cannot be possible for &lt;math>f \\circ g&lt;/math> to be surjective either. For example, in that case, no negative number is in the image of the function ''f'' and so no negative number can be in the image of &lt;math>f \\circ g&lt;/math> either.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\end{aligned}\\]</span></p>\n<p>be functions so that <em>g</em> &#226;&#151;&#139;<em>f</em> is a surjective function.</p>\n<p>Prove or disprove that <em>f</em> &#226;&#151;&#139;<em>g</em> must be surjective.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\n\\end{align*}\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nProve or disprove that \\emph{f} \u00e2\u0097\u008b\\emph{g} must be surjective.", 
+    "statement_raw": "Let\n\n:&lt;math>\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A&lt;/math>\n\nbe functions so that ''g'' \u25cb''f'' is a surjective function.\n\nProve or disprove that ''f'' \u25cb''g'' must be surjective.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_09_(c)", 
+    "year": 2011
 }

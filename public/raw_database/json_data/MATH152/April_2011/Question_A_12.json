@@ -1,15 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_A_12", 
+    "answer_html": "<p><span class=\"math\">\\(\\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 &amp; -1\\\\ 1 &amp; 0\\end{array}\\right]\\)</span>will do the trick.</p>\n", 
+    "answer_latex": "$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 & -1\\\\ 1 & 0\\end{array}\\right]$will do the trick.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH152", 
-    "statement": "Write the matrix of the rotation which transforms\n$\\left[\\begin{array}{c}0\\\\1\\end{array}\\right]$ to\n$\\left[\\begin{array}{c}-1\\\\0\\end{array}\\right].$", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Either try drawing a picture or try setting up an arbitrary matrix and solving the resulting system of equations.</p>\n", 
+        "<p>Rotation matrices have the form</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c} \\cos(\\theta) &amp; -\\sin(\\theta)\\\\ \\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right]\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Either try drawing a picture or try setting up an arbitrary matrix and\nsolving the resulting system of equations.", 
+        "Rotation matrices have the form\n\n$\\left[\\begin{array}{c c} \\cos(\\theta) & -\\sin(\\theta)\\\\ \\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$"
+    ], 
+    "hints_raw": [
+        "Either try drawing a picture or try setting up an arbitrary matrix and solving the resulting system of equations.\n", 
+        "Rotation matrices have the form\n\n&lt;math> \\left[\\begin{array}{c c} \\cos(\\theta) &amp; -\\sin(\\theta)\\\\ \\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right]&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 12", 
+    "rating": 96, 
+    "sols_html": [
+        "<p>As rotation matrices are of the form</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right]\\)</span></p>\n<p>We must have that</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] \\left[\\begin{array}{c}0\\\\1\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]\\)</span></p>\n<p>This gives us that</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c}-\\sin(\\theta)\\\\\\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]\\)</span></p>\n<p>or more simply</p>\n<p><span class=\"math\">\\(\\displaystyle -\\sin(\\theta) = -1\\)</span></p>\n<p>and</p>\n<p><span class=\"math\">\\(\\displaystyle \\cos(\\theta) = 0\\)</span></p>\n<p>Thus, we plug in these values into our matrix and we see that</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 &amp; -1\\\\ 1 &amp; 0\\end{array}\\right]\\)</span></p>\n<p>will do the trick.</p>\n", 
+        "<p>As rotation matrices have the form</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c} \\cos(\\theta) &amp; -\\sin(\\theta)\\\\ \\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right]\\)</span></p>\n<p>and a diagram shows that we are rotating the first vector (which is a unit vector on the positive y-axis) a total of <span class=\"math\">\\(\\frac{\\pi}{2}\\)</span>, we have that the rotation matrix that solves our problem is</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{c c} \\cos(\\tfrac{\\pi}{2}) &amp; -\\sin(\\tfrac{\\pi}{2})\\\\ \\sin(\\tfrac{\\pi}{2}) &amp; \\cos(\\tfrac{\\pi}{2})\\end{array}\\right] = \\left[\\begin{array}{c c} 0 &amp; -1\\\\ 1 &amp; 0\\end{array}\\right]\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "As rotation matrices are of the form\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$\n\nWe must have that\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right] \\left[\\begin{array}{c}0\\\\1\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]$\n\nThis gives us that\n\n$\\left[\\begin{array}{c}-\\sin(\\theta)\\\\\\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]$\n\nor more simply\n\n$\\displaystyle -\\sin(\\theta) = -1$\n\nand\n\n$\\displaystyle \\cos(\\theta) = 0$\n\nThus, we plug in these values into our matrix and we see that\n\n$\\left[\\begin{array}{c c}\\cos(\\theta) & -\\sin(\\theta)\\\\\\sin(\\theta) & \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 & -1\\\\ 1 & 0\\end{array}\\right]$\n\nwill do the trick.", 
         "As rotation matrices have the form\n\n$\\left[\\begin{array}{c c} \\cos(\\theta) & -\\sin(\\theta)\\\\ \\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$\n\nand a diagram shows that we are rotating the first vector (which is a\nunit vector on the positive y-axis) a total of $\\frac{\\pi}{2}$, we have\nthat the rotation matrix that solves our problem is\n\n$\\left[\\begin{array}{c c} \\cos(\\tfrac{\\pi}{2}) & -\\sin(\\tfrac{\\pi}{2})\\\\ \\sin(\\tfrac{\\pi}{2}) & \\cos(\\tfrac{\\pi}{2})\\end{array}\\right] = \\left[\\begin{array}{c c} 0 & -1\\\\ 1 & 0\\end{array}\\right]$"
     ], 
-    "hints": [
-        "Either try drawing a picture or try setting up an arbitrary matrix and\nsolving the resulting system of equations.", 
-        "Rotation matrices have the form\n\n$\\left[\\begin{array}{c c} \\cos(\\theta) & -\\sin(\\theta)\\\\ \\sin(\\theta) & \\cos(\\theta)\\end{array}\\right]$"
-    ]
+    "sols_raw": [
+        "As rotation matrices are of the form\n\n&lt;math> \\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] &lt;/math>\n\nWe must have that \n\n&lt;math>\\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] \\left[\\begin{array}{c}0\\\\1\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]&lt;/math>\n\nThis gives us that \n\n&lt;math>\\left[\\begin{array}{c}-\\sin(\\theta)\\\\\\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c}-1\\\\0\\end{array}\\right]&lt;/math>\n\nor more simply\n\n&lt;math> \\displaystyle -\\sin(\\theta) = -1 &lt;/math>\n\nand \n\n&lt;math> \\displaystyle \\cos(\\theta) = 0 &lt;/math>\n\nThus, we plug in these values into our matrix and we see that\n\n&lt;math> \\left[\\begin{array}{c c}\\cos(\\theta) &amp; -\\sin(\\theta)\\\\\\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right] = \\left[\\begin{array}{c c} 0 &amp; -1\\\\ 1 &amp; 0\\end{array}\\right] &lt;/math>\n\nwill do the trick.\n", 
+        "As rotation matrices have the form\n\n&lt;math> \\left[\\begin{array}{c c} \\cos(\\theta) &amp; -\\sin(\\theta)\\\\ \\sin(\\theta) &amp; \\cos(\\theta)\\end{array}\\right]&lt;/math>\n\nand a diagram shows that we are rotating the first vector (which is a unit vector on the positive y-axis) a total of &lt;math> \\frac{\\pi}{2}&lt;/math>, we have that the rotation matrix that solves our problem is\n\n&lt;math> \\left[\\begin{array}{c c} \\cos(\\tfrac{\\pi}{2}) &amp; -\\sin(\\tfrac{\\pi}{2})\\\\ \\sin(\\tfrac{\\pi}{2}) &amp; \\cos(\\tfrac{\\pi}{2})\\end{array}\\right] = \\left[\\begin{array}{c c} 0 &amp; -1\\\\ 1 &amp; 0\\end{array}\\right]&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Write the matrix of the rotation which transforms <span class=\"math\">\\(\\left[\\begin{array}{c}0\\\\1\\end{array}\\right]\\)</span> to <span class=\"math\">\\(\\left[\\begin{array}{c}-1\\\\0\\end{array}\\right].\\)</span></p>\n", 
+    "statement_latex": "Write the matrix of the rotation which transforms\n$\\left[\\begin{array}{c}0\\\\1\\end{array}\\right]$ to\n$\\left[\\begin{array}{c}-1\\\\0\\end{array}\\right].$", 
+    "statement_raw": "Write the matrix of the rotation which transforms &lt;math>\\left[\\begin{array}{c}0\\\\1\\end{array}\\right]&lt;/math> to &lt;math>\\left[\\begin{array}{c}-1\\\\0\\end{array}\\right].&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_12", 
+    "year": 2011
 }

@@ -1,14 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_04_(a)", 
-    "course": "MATH101", 
-    "statement": "Evaluate the integral (\\emph{hint}: put $u = \\sqrt{x}$).\n\n\\begin{align*}\\int \\frac{\\sqrt{x}}{x - 1}dx\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Set the following change of variable\n\n\\begin{align*}u = \\sqrt{x}\\end{align*} then we have\n\n\\begin{align*}\\displaystyle{ x = u^2 }\\end{align*} and so\n\n\\begin{align*}\\displaystyle{ dx = 2u \\, du }.\\end{align*} Making this substitution in the\nintegral gives\n\n\\begin{align*}\\int \\frac{\\sqrt{x}}{x-1} dx \n= \\int \\frac{u}{u^2 - 1} \\, 2u \\, du \n= 2\\int \\frac{u^2}{u^2 - 1} du.\\end{align*}\n\nNow we use the method of partial fractions. We have\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&=2 \\int \\frac{u^2}{u^2 - 1} du \\\\\n&= 2 \\int \\frac{u^2 - 1 + 1}{u^2 - 1} du \\\\\n&= 2\\int \\left( 1 + \\frac{1}{u^2 - 1} \\right) du \\\\\n&= 2u + \\int \\frac{2}{u^2 - 1} du \\\\\n&= u + \\int \\frac{2}{(u - 1)(u+1)} du.\\end{align*}\n\nWe want to find numbers $A$ and $B$ such that\n\n\\begin{align*}\\frac{2}{(u - 1)(u+1)} = \\frac{A}{u-1} + \\frac{B}{u+1}.\\end{align*}\n\nMultiplying both sides by $(u-1)(u+1)$ yields\n\n\\begin{align*}\\displaystyle 2 = Au + A + Bu - B.\\end{align*}\n\nEquating coefficients of powers of $u$ on both sides gives\n\n\\begin{align*}\\begin{cases} 0 = A + B\\\\\n2 = A - B \\end{cases}\\end{align*}\n\nFrom the first of these equations we see that $A = - B$. So the second\nequation becomes\n\n\\begin{align*}\\displaystyle\n2 = 2A.\\end{align*} Hence $A = 1$ and $B = -A = -1$. Therefore, we have\n\n\\begin{align*}\\frac{2}{(u - 1)(u+1)} = \\frac{1}{u-1} - \\frac{1}{u+1}.\\end{align*}\n\nUsing this to rewrite the last integral above, we find\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&= 2u + \\int \\frac{2}{(u - 1)(u+1)} du \\\\\n&= 2u + \\int \\frac{1}{u-1} du -  \\int \\frac{1}{u+1} du \\\\\n&= 2u + \\ln|u-1| - \\ln|u+1| + C \\\\\n&= 2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\frac{\\sqrt{x}}{x-1} dx=2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\\)</span></p>\n", 
+    "answer_latex": " $\\int \\frac{\\sqrt{x}}{x-1} dx=2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>If <span class=\"math\">\\(u = \\sqrt{x}\\)</span>, then <span class=\"math\">\\(du = \\frac{1}{2\\sqrt{x}}dx\\)</span>.</p>\n", 
+        "<p>Use partial fractions.</p>\n"
+    ], 
+    "hints_latex": [
         "If $u = \\sqrt{x}$, then $du = \\frac{1}{2\\sqrt{x}}dx$.", 
         "Use partial fractions."
-    ]
+    ], 
+    "hints_raw": [
+        "If &lt;math>u = \\sqrt{x}&lt;/math>, then &lt;math>du = \\frac{1}{2\\sqrt{x}}dx&lt;/math>.\n", 
+        "Use partial fractions.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "4 (a)", 
+    "rating": 44, 
+    "sols_html": [
+        "<p>Set the following change of variable</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = \\sqrt{x}\\end{aligned}\\]</span></p>\n<p>then we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{ x = u^2 }\\end{aligned}\\]</span></p>\n<p>and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{ dx = 2u \\, du }.\\end{aligned}\\]</span></p>\n<p>Making this substitution in the integral gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n= \\int \\frac{u}{u^2 - 1} \\, 2u \\, du \n= 2\\int \\frac{u^2}{u^2 - 1} du.\\end{aligned}\\]</span></p>\n<p>Now we use the method of partial fractions. We have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&amp;=2 \\int \\frac{u^2}{u^2 - 1} du \\\\\n&amp;= 2 \\int \\frac{u^2 - 1 + 1}{u^2 - 1} du \\\\\n&amp;= 2\\int \\left( 1 + \\frac{1}{u^2 - 1} \\right) du \\\\\n&amp;= 2u + \\int \\frac{2}{u^2 - 1} du \\\\\n&amp;= u + \\int \\frac{2}{(u - 1)(u+1)} du.\\end{aligned}\\]</span></p>\n<p>We want to find numbers <span class=\"math\">\\(A\\)</span> and <span class=\"math\">\\(B\\)</span> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{2}{(u - 1)(u+1)} = \\frac{A}{u-1} + \\frac{B}{u+1}.\\end{aligned}\\]</span></p>\n<p>Multiplying both sides by <span class=\"math\">\\((u-1)(u+1)\\)</span> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 2 = Au + A + Bu - B.\\end{aligned}\\]</span></p>\n<p>Equating coefficients of powers of <span class=\"math\">\\(u\\)</span> on both sides gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{cases} 0 = A + B\\\\\n2 = A - B \\end{cases}\\end{aligned}\\]</span></p>\n<p>From the first of these equations we see that <span class=\"math\">\\(A = - B\\)</span>. So the second equation becomes</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n2 = 2A.\\end{aligned}\\]</span></p>\n<p>Hence <span class=\"math\">\\(A = 1\\)</span> and <span class=\"math\">\\(B = -A = -1\\)</span>. Therefore, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{2}{(u - 1)(u+1)} = \\frac{1}{u-1} - \\frac{1}{u+1}.\\end{aligned}\\]</span></p>\n<p>Using this to rewrite the last integral above, we find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&amp;= 2u + \\int \\frac{2}{(u - 1)(u+1)} du \\\\\n&amp;= 2u + \\int \\frac{1}{u-1} du -  \\int \\frac{1}{u+1} du \\\\\n&amp;= 2u + \\ln|u-1| - \\ln|u+1| + C \\\\\n&amp;= 2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Set the following change of variable\n\n\\begin{align*}\nu = \\sqrt{x}\n\\end{align*} then we have\n\n\\begin{align*}\n\\displaystyle{ x = u^2 }\n\\end{align*} and so\n\n\\begin{align*}\n\\displaystyle{ dx = 2u \\, du }.\n\\end{align*} Making this substitution in the\nintegral gives\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n= \\int \\frac{u}{u^2 - 1} \\, 2u \\, du \n= 2\\int \\frac{u^2}{u^2 - 1} du.\n\\end{align*}\n\nNow we use the method of partial fractions. We have\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&=2 \\int \\frac{u^2}{u^2 - 1} du \\\\\n&= 2 \\int \\frac{u^2 - 1 + 1}{u^2 - 1} du \\\\\n&= 2\\int \\left( 1 + \\frac{1}{u^2 - 1} \\right) du \\\\\n&= 2u + \\int \\frac{2}{u^2 - 1} du \\\\\n&= u + \\int \\frac{2}{(u - 1)(u+1)} du.\n\\end{align*}\n\nWe want to find numbers $A$ and $B$ such that\n\n\\begin{align*}\n\\frac{2}{(u - 1)(u+1)} = \\frac{A}{u-1} + \\frac{B}{u+1}.\n\\end{align*}\n\nMultiplying both sides by $(u-1)(u+1)$ yields\n\n\\begin{align*}\n\\displaystyle 2 = Au + A + Bu - B.\n\\end{align*}\n\nEquating coefficients of powers of $u$ on both sides gives\n\n\\begin{align*}\n\\begin{cases} 0 = A + B\\\\\n2 = A - B \\end{cases}\n\\end{align*}\n\nFrom the first of these equations we see that $A = - B$. So the second\nequation becomes\n\n\\begin{align*}\n\\displaystyle\n2 = 2A.\n\\end{align*} Hence $A = 1$ and $B = -A = -1$. Therefore, we have\n\n\\begin{align*}\n\\frac{2}{(u - 1)(u+1)} = \\frac{1}{u-1} - \\frac{1}{u+1}.\n\\end{align*}\n\nUsing this to rewrite the last integral above, we find\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&= 2u + \\int \\frac{2}{(u - 1)(u+1)} du \\\\\n&= 2u + \\int \\frac{1}{u-1} du -  \\int \\frac{1}{u+1} du \\\\\n&= 2u + \\ln|u-1| - \\ln|u+1| + C \\\\\n&= 2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Set the following change of variable\n:&lt;math> u = \\sqrt{x} &lt;/math>\nthen we have\n:&lt;math> \\displaystyle{ x = u^2 }&lt;/math>\nand so\n:&lt;math> \\displaystyle{ dx = 2u \\, du }.&lt;/math>\nMaking this substitution in the integral gives\n\n:&lt;math> \n\\int \\frac{\\sqrt{x}}{x-1} dx \n= \\int \\frac{u}{u^2 - 1} \\, 2u \\, du \n= 2\\int \\frac{u^2}{u^2 - 1} du.\n&lt;/math> \n\nNow we use the method of partial fractions. We have\n\n:&lt;math>\n\\begin{align}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&amp;=2 \\int \\frac{u^2}{u^2 - 1} du \\\\\n&amp;= 2 \\int \\frac{u^2 - 1 + 1}{u^2 - 1} du \\\\\n&amp;= 2\\int \\left( 1 + \\frac{1}{u^2 - 1} \\right) du \\\\\n&amp;= 2u + \\int \\frac{2}{u^2 - 1} du \\\\\n&amp;= u + \\int \\frac{2}{(u - 1)(u+1)} du.\n\\end{align}\n&lt;/math>\n\nWe want to find numbers &lt;math> A &lt;/math> and &lt;math> B &lt;/math> such that\n\n:&lt;math>\n\\frac{2}{(u - 1)(u+1)} = \\frac{A}{u-1} + \\frac{B}{u+1}.\n&lt;/math>\n\nMultiplying both sides by &lt;math> (u-1)(u+1) &lt;/math> yields\n\n:&lt;math>\n\\displaystyle 2 = Au + A + Bu - B.\n&lt;/math>\n\nEquating coefficients of powers of &lt;math> u &lt;/math> on both sides gives\n\n:&lt;math> \\begin{cases} 0 = A + B\\\\\n2 = A - B \\end{cases} &lt;/math>\n\nFrom the first of these equations we see that &lt;math> A = - B &lt;/math>.  So the second equation becomes \n\n:&lt;math>\\displaystyle\n2 = 2A.\n&lt;/math>\nHence &lt;math> A = 1 &lt;/math> and &lt;math> B = -A = -1 &lt;/math>.  Therefore, we have\n\n:&lt;math>\n\\frac{2}{(u - 1)(u+1)} = \\frac{1}{u-1} - \\frac{1}{u+1}.\n&lt;/math>\n\nUsing this to rewrite the last integral above, we find\n\n:&lt;math> \\begin{align}\n\\int \\frac{\\sqrt{x}}{x-1} dx \n&amp;= 2u + \\int \\frac{2}{(u - 1)(u+1)} du \\\\\n&amp;= 2u + \\int \\frac{1}{u-1} du -  \\int \\frac{1}{u+1} du \\\\\n&amp;= 2u + \\ln|u-1| - \\ln|u+1| + C \\\\\n&amp;= 2\\sqrt{x} + \\ln|\\sqrt{x}-1| - \\ln|\\sqrt{x}+1| + C.\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Hambrook"
+    ], 
+    "statement_html": "<p>Evaluate the integral (<em>hint</em>: put <span class=\"math\">\\(u = \\sqrt{x}\\)</span>).</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\sqrt{x}}{x - 1}dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Evaluate the integral (\\emph{hint}: put $u = \\sqrt{x}$).\n\n\\begin{align*}\n\\int \\frac{\\sqrt{x}}{x - 1}dx\n\\end{align*}", 
+    "statement_raw": "Evaluate the integral (''hint'': put &lt;math>u = \\sqrt{x}&lt;/math>).\n\n:&lt;math>\\int \\frac{\\sqrt{x}}{x - 1}dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Partial_fractions", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_04_(a)", 
+    "year": 2011
 }

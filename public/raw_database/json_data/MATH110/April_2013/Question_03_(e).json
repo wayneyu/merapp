@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_03_(e)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(e)} Make a large sketch of the graph of $f$ below, including all\nyou have found in the previous parts of the question.", 
-    "year": 2013, 
-    "sols": [
-        "The function's value is zero at each end of the interval\n\\emph{{[}0,$\\pi${]}}, we have found a maximum at \\emph{$\\pi$/4} and an\ninflection point at \\emph{$\\pi$/2} so your sketch should look something like\nthe plotted function here.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{Math110Q3eApril2013.png}\n\\end{description}\n\nMake sure you visibly identify the maximum and inflection point on your\nsketch of the function."
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110Q3eApril2013.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Make sure you visibly identify the maximum and inflection point on your sketch of the function.</p>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110Q3eApril2013.png}\n\\end{description}Make sure you visibly identify the maximum and inflection point on your\nsketch of the function.", 
+    "contributors": [
+        "DavidKohler", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try incorporating the answers from parts a - d in order: first draw the x-intercepts, then where the graph increases and decreases, and finally adding the concavity.</p>\n"
+    ], 
+    "hints_latex": [
         "Try incorporating the answers from parts a - d in order: first draw the\nx-intercepts, then where the graph increases and decreases, and finally\nadding the concavity."
-    ]
+    ], 
+    "hints_raw": [
+        "Try incorporating the answers from parts a - d in order: first draw the x-intercepts, then where the graph increases and decreases, and finally adding the concavity.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The function&#8217;s value is zero at each end of the interval <em><span>[</span>0,<span class=\"math\">\\(\\pi\\)</span><span>]</span></em>, we have found a maximum at <em><span class=\"math\">\\(\\pi\\)</span>/4</em> and an inflection point at <em><span class=\"math\">\\(\\pi\\)</span>/2</em> so your sketch should look something like the plotted function here.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110Q3eApril2013.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Make sure you visibly identify the maximum and inflection point on your sketch of the function.</p>\n"
+    ], 
+    "sols_latex": [
+        "The function's value is zero at each end of the interval\n\\emph{{[}0,$\\pi${]}}, we have found a maximum at \\emph{$\\pi$/4} and an\ninflection point at \\emph{$\\pi$/2} so your sketch should look something like\nthe plotted function here.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110Q3eApril2013.png}\n\\end{description}\n\nMake sure you visibly identify the maximum and inflection point on your\nsketch of the function."
+    ], 
+    "sols_raw": [
+        "The function's value is zero at each end of the interval ''[0,&amp;pi;]'', we have found a maximum at ''&amp;pi;/4'' and an inflection point at ''&amp;pi;/2'' so your sketch should look something like the plotted function here.\n\n:[[File:Math110Q3eApril2013.gif | 400px ]]\n\nMake sure you visibly identify the maximum and inflection point on your sketch of the function.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\frac{\\sin(x)}{e^{x}}\\)</span> on the interval <span class=\"math\">\\([0, \\pi]\\)</span>. In this question you will sketch this function.</p>\n<p><strong>(e)</strong> Make a large sketch of the graph of <span class=\"math\">\\(f\\)</span> below, including all you have found in the previous parts of the question.</p>\n", 
+    "statement_latex": "Let $f(x) = \\frac{\\sin(x)}{e^{x}}$ on the interval $[0, \\pi]$. In this\nquestion you will sketch this function.\n\n\\textbf{(e)} Make a large sketch of the graph of $f$ below, including all\nyou have found in the previous parts of the question.", 
+    "statement_raw": "Let &lt;math> f(x) = \\frac{\\sin(x)}{e^{x}} &lt;/math> on the interval &lt;math> [0, \\pi] &lt;/math>. In this question you will sketch this function.\n\n'''(e)''' Make a large sketch of the graph of &amp;fnof; below, including all you have found in the previous parts of the question.\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2013/Question_03_(e)", 
+    "year": 2013
 }

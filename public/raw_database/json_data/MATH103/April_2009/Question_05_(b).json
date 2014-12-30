@@ -1,14 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH103", 
-    "statement": "A carrot has the shape formed by revolving the region under the graph of\n\n\\begin{align*}f(x) = \\sqrt{14-x}\\end{align*}\n\nfor $0 \\leq x \\leq 12$ cm about the \\emph{x} axis. The concentration of\nvitamin A is found to vary in the carrot with \\emph{x} according to\n\n\\begin{align*}c(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\\end{align*}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_5\\_(a)\\_5a.png}\n\\end{figure}\n\nWhat is the total amount of vitamin A in the carrot?", 
-    "year": 2009, 
-    "sols": [
-        "To find the amount \\emph{A} of Vitamin A in the carrot, we need to\nmultiply every infinitly small disk with unit $cm^3$ with the passend\nconcentration of Vitamin A and then integrate over all disks:\n\n\\begin{align*}\nA &= \\int_0^{12}\\frac{1}{12}e^{-\\frac{x}{12}}\\left(\\sqrt{14-x}\\right)^2\\pi dx \\\\\n&= \\frac{\\pi}{12}\\int_0^{12}e^{-\\frac{x}{12}}(14-x)dx\\\\\n &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right]\\end{align*}\n\nWe let the former integral as is for now and use integration by parts\nfor the latter. Let \\emph{u = x}, \\emph{du} = \\emph{dx}, \\emph{dv} =\n\\emph{e}\\textsuperscript{-\\emph{x}/12}\\emph{dx} and v =\n-12\\emph{e}\\textsuperscript{-\\emph{x}/12}. Then\n\n\\begin{align*}\nA &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right] \\\\\n&= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\left(\\left.x(-12)e^{-\\frac{x}{12}}\\right|_0^{12} - \\int_0^{12} (-12)e^{-\\frac{x}{12}}\\,dx\\right)\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 14\\int_0^{12} e^{-\\frac{x}{12}}\\,dx - 12\\int_0^{12}e^{-\\frac{x}{12}}\\,dx+(12)(12)e^{-1}-0\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 2\\int_0^{12} e^{-\\frac{x}{12}}\\,dx + (12)(12)e^{-1}\\right] \\\\\n&= \\frac{\\pi}{12} \\left[\\left. 2(-12)e^{-\\frac{x}{12}}\\right|_0^{12} + (12)(12)e^{-1}\\right]\\\\\n&= \\frac{\\pi}{12} \\left[-2(12)(e^{-1}-1)+(12)(12)e^{-1}\\right] \\\\\n&= \\pi\\left[-2e^{-1}+2+12e^{-1}\\right] \\\\\n&= \\pi\\left[\\frac{10}{e}+2\\right] \\\\\n&= \\frac{2\\pi(5+e)}{e}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A=\\frac{2\\pi(5+e)}{e}.\\)</span></p>\n", 
+    "answer_latex": " $A=\\frac{2\\pi(5+e)}{e}.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The amount of Vitamin A is</p>\n<p><code>concentration&#160;x&#160;volume.</code></p>\n", 
+        "<p>You need to multiply the concentration and the disk-volume for every infinitly small disk and then integrate over all disks.</p>\n"
+    ], 
+    "hints_latex": [
         "The amount of Vitamin A is\n\n\\texttt{concentration~x~volume.}", 
         "You need to multiply the concentration and the disk-volume for every\ninfinitly small disk and then integrate over all disks."
-    ]
+    ], 
+    "hints_raw": [
+        "The amount of Vitamin A is\n\n concentration x volume.\n", 
+        "You need to multiply the concentration and the disk-volume for every infinitly small disk and then integrate over all disks.\n"
+    ], 
+    "num_votes": 9, 
+    "question": "5 (b)", 
+    "rating": 17, 
+    "sols_html": [
+        "<p>To find the amount <em>A</em> of Vitamin A in the carrot, we need to multiply every infinitly small disk with unit <span class=\"math\">\\(cm^3\\)</span> with the passend concentration of Vitamin A and then integrate over all disks:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA &amp;= \\int_0^{12}\\frac{1}{12}e^{-\\frac{x}{12}}\\left(\\sqrt{14-x}\\right)^2\\pi dx \\\\\n&amp;= \\frac{\\pi}{12}\\int_0^{12}e^{-\\frac{x}{12}}(14-x)dx\\\\\n &amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right]\\end{aligned}\\]</span></p>\n<p>We let the former integral as is for now and use integration by parts for the latter. Let <em>u = x</em>, <em>du</em> = <em>dx</em>, <em>dv</em> = <em>e</em><sup>-<em>x</em>/12</sup><em>dx</em> and v = -12<em>e</em><sup>-<em>x</em>/12</sup>. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA &amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right] \\\\\n&amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\left(\\left.x(-12)e^{-\\frac{x}{12}}\\right|_0^{12} - \\int_0^{12} (-12)e^{-\\frac{x}{12}}\\,dx\\right)\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[ 14\\int_0^{12} e^{-\\frac{x}{12}}\\,dx - 12\\int_0^{12}e^{-\\frac{x}{12}}\\,dx+(12)(12)e^{-1}-0\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[ 2\\int_0^{12} e^{-\\frac{x}{12}}\\,dx + (12)(12)e^{-1}\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[\\left.2(-12)e^{-\\frac{x}{12}}\\right|_0^{12} + (12)(12)e^{-1}\\right]\\\\\n&amp;= \\frac{\\pi}{12} \\left[-2(12)(e^{-1}-1)+(12)(12)e^{-1}\\right] \\\\\n&amp;= \\pi\\left[-2e^{-1}+2+12e^{-1}\\right] \\\\\n&amp;= \\pi\\left[\\frac{10}{e}+2\\right] \\\\\n&amp;= \\frac{2\\pi(5+e)}{e}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the amount \\emph{A} of Vitamin A in the carrot, we need to\nmultiply every infinitly small disk with unit $cm^3$ with the passend\nconcentration of Vitamin A and then integrate over all disks:\n\n\\begin{align*}\nA &= \\int_0^{12}\\frac{1}{12}e^{-\\frac{x}{12}}\\left(\\sqrt{14-x}\\right)^2\\pi dx \\\\\n&= \\frac{\\pi}{12}\\int_0^{12}e^{-\\frac{x}{12}}(14-x)dx\\\\\n &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right]\n\\end{align*}\n\nWe let the former integral as is for now and use integration by parts\nfor the latter. Let \\emph{u = x}, \\emph{du} = \\emph{dx}, \\emph{dv} =\n\\emph{e}\\textsuperscript{-\\emph{x}/12}\\emph{dx} and v =\n-12\\emph{e}\\textsuperscript{-\\emph{x}/12}. Then\n\n\\begin{align*}\nA &= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right] \\\\\n&= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\left(\\left.x(-12)e^{-\\frac{x}{12}}\\right|_0^{12} - \\int_0^{12} (-12)e^{-\\frac{x}{12}}\\,dx\\right)\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 14\\int_0^{12} e^{-\\frac{x}{12}}\\,dx - 12\\int_0^{12}e^{-\\frac{x}{12}}\\,dx+(12)(12)e^{-1}-0\\right] \\\\\n&= \\frac{\\pi}{12} \\left[ 2\\int_0^{12} e^{-\\frac{x}{12}}\\,dx + (12)(12)e^{-1}\\right] \\\\\n&= \\frac{\\pi}{12} \\left[\\left.2(-12)e^{-\\frac{x}{12}}\\right|_0^{12} + (12)(12)e^{-1}\\right]\\\\\n&= \\frac{\\pi}{12} \\left[-2(12)(e^{-1}-1)+(12)(12)e^{-1}\\right] \\\\\n&= \\pi\\left[-2e^{-1}+2+12e^{-1}\\right] \\\\\n&= \\pi\\left[\\frac{10}{e}+2\\right] \\\\\n&= \\frac{2\\pi(5+e)}{e}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To find the amount ''A'' of Vitamin A in the carrot, we need to multiply every infinitly small disk with unit &lt;math>\\ cm^3&lt;/math> with the \npassend concentration of Vitamin A and then integrate over all disks:\n\n:&lt;math>\\begin{align}\nA &amp;= \\int_0^{12}\\frac{1}{12}e^{-\\frac{x}{12}}\\left(\\sqrt{14-x}\\right)^2\\pi dx \\\\\n&amp;= \\frac{\\pi}{12}\\int_0^{12}e^{-\\frac{x}{12}}(14-x)dx\\\\\n &amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right]\n\\end{align}&lt;/math>\n\nWe let the former integral as is for now and use integration by parts for the latter. Let ''u = x'', ''du'' = ''dx'', ''dv'' = ''e''&lt;sup>-''x''/12&lt;/sup>''dx'' and v = -12''e''&lt;sup>-''x''/12&lt;/sup>. Then\n\n&lt;math> \\begin{align}\nA &amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\int_0^{12}xe^{-\\frac{x}{12}}dx\\right] \\\\\n&amp;= \\frac{\\pi}{12}\\left[\\int_0^{12}14e^{-\\frac{x}{12}}dx - \\left(\\left.x(-12)e^{-\\frac{x}{12}}\\right|_0^{12} - \\int_0^{12} (-12)e^{-\\frac{x}{12}}\\,dx\\right)\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[ 14\\int_0^{12} e^{-\\frac{x}{12}}\\,dx - 12\\int_0^{12}e^{-\\frac{x}{12}}\\,dx+(12)(12)e^{-1}-0\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[ 2\\int_0^{12} e^{-\\frac{x}{12}}\\,dx + (12)(12)e^{-1}\\right] \\\\\n&amp;= \\frac{\\pi}{12} \\left[\\left. 2(-12)e^{-\\frac{x}{12}}\\right|_0^{12} + (12)(12)e^{-1}\\right]\\\\\n&amp;= \\frac{\\pi}{12} \\left[-2(12)(e^{-1}-1)+(12)(12)e^{-1}\\right] \\\\\n&amp;= \\pi\\left[-2e^{-1}+2+12e^{-1}\\right] \\\\\n&amp;= \\pi\\left[\\frac{10}{e}+2\\right] \\\\\n&amp;= \\frac{2\\pi(5+e)}{e}.\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p>A carrot has the shape formed by revolving the region under the graph of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\sqrt{14-x}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(0 \\leq x \\leq 12\\)</span> cm about the <em>x</em> axis. The concentration of vitamin A is found to vary in the carrot with <em>x</em> according to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\\end{aligned}\\]</span></p>\n<p><img src=\"../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png\" alt=\"image\" /></p>\n<p>What is the total amount of vitamin A in the carrot?</p>\n", 
+    "statement_latex": "A carrot has the shape formed by revolving the region under the graph of\n\n\\begin{align*}\nf(x) = \\sqrt{14-x}\n\\end{align*}\n\nfor $0 \\leq x \\leq 12$ cm about the \\emph{x} axis. The concentration of\nvitamin A is found to vary in the carrot with \\emph{x} according to\n\n\\begin{align*}\nc(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3}\n\\end{align*}\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png}\n\nWhat is the total amount of vitamin A in the carrot?", 
+    "statement_raw": "A carrot has the shape formed by revolving the region under the graph of\n\n:&lt;math> f(x) = \\sqrt{14-x} &lt;/math>\n\nfor &lt;math> 0 \\leq x \\leq 12 &lt;/math> cm about the ''x'' axis. The concentration of vitamin A is found to vary in the carrot with ''x'' according to \n\n:&lt;math> c(x) = \\frac1{12} e^{-x/12} \\frac{\\text{mg}}{\\text{cm}^3} &lt;/math>\n\n[[File:Math_Exam_Resources_Courses_MATH103_April_2009_Question_5_(a)_5a.png|350px]]\n\nWhat is the total amount of vitamin A in the carrot?\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_05_(b)", 
+    "year": 2009
 }

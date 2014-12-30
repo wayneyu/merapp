@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_04_(iv)", 
-    "course": "MATH102", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\end{align*} iv) Determine\nthe interval(s) for which f(x) is increasing and decreasing,\nrespectively.", 
-    "year": 2011, 
-    "sols": [
-        "In\n\\href{Science:Math Exam Resources/Courses/MATH102/December 2011/Question 4 (ii)}{part\n\\emph{ii)} of this question} we obtained the sign table of the\nderivative:\n\n\\begin{longtable}[c]{@{}llllll@{}}\n& & $\\displaystyle 0$ & & $\\displaystyle 3$ &\\\\\n$\\displaystyle x$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle (x-3)^2$ & $\\displaystyle +$ & & $\\displaystyle +$ &\n$\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f'(x)$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & $\\displaystyle 0$ & $\\displaystyle +$\\\\\n\u00c2~$\\displaystyle f(x)$ & $\\displaystyle \\searrow$ & &\n$\\displaystyle \\nearrow$ & & $\\displaystyle \\nearrow$\\\\\\\\\n\\end{longtable}\n\nAnd we see there that the function is decreasing on the interval\n($-\\infty$,0) and increasing on the intervals (0,3) and (3,$+\\infty$)."
+    "answer_html": "<p>And we see there that the function is decreasing on the interval (<span class=\"math\">\\(-\\infty\\)</span>,0) and increasing on the intervals (0,3) and (3,<span class=\"math\">\\(+\\infty\\)</span>).</p>\n", 
+    "answer_latex": "And we see there that the function is decreasing on the interval\n($-\\infty$,0) and increasing on the intervals (0,3) and (3,$+\\infty$).", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This was partially if not completely solved two problems ago. Use the derivative and make a sign chart.</p>\n"
+    ], 
+    "hints_latex": [
         "This was partially if not completely solved two problems ago. Use the\nderivative and make a sign chart."
-    ]
+    ], 
+    "hints_raw": [
+        "This was partially if not completely solved two problems ago. Use the derivative and make a sign chart.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (iv)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>In <span>part <em>ii)</em> of this question</span> we obtained the sign table of the derivative:</p>\n<p>[c]<span>@llllll@</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle 0\\)</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle 3\\)</span> &amp;<br /><span class=\"math\">\\(\\displaystyle x\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle 0\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br />&#160;<span class=\"math\">\\(\\displaystyle (x-3)^2\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle 0\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br />&#160;<span class=\"math\">\\(\\displaystyle f&#39;(x)\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle 0\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle 0\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br />&#160;<span class=\"math\">\\(\\displaystyle f(x)\\)</span> &amp; <span class=\"math\">\\(\\displaystyle \\searrow\\)</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle \\nearrow\\)</span> &amp; &amp; <span class=\"math\">\\(\\displaystyle \\nearrow\\)</span><br /><br /></p>\n<p>And we see there that the function is decreasing on the interval (<span class=\"math\">\\(-\\infty\\)</span>,0) and increasing on the intervals (0,3) and (3,<span class=\"math\">\\(+\\infty\\)</span>).</p>\n"
+    ], 
+    "sols_latex": [
+        "In\n{part\n\\emph{ii)} of this question} we obtained the sign table of the\nderivative:\n\n\\begin{longtable}[c]{@{}llllll@{}}\n& & $\\displaystyle 0$ & & $\\displaystyle 3$ &\\\\\n$\\displaystyle x$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & & $\\displaystyle +$\\\\\n~$\\displaystyle (x-3)^2$ & $\\displaystyle +$ & & $\\displaystyle +$ &\n$\\displaystyle 0$ & $\\displaystyle +$\\\\\n~$\\displaystyle f'(x)$ & $\\displaystyle -$ & $\\displaystyle 0$ &\n$\\displaystyle +$ & $\\displaystyle 0$ & $\\displaystyle +$\\\\\n~$\\displaystyle f(x)$ & $\\displaystyle \\searrow$ & &\n$\\displaystyle \\nearrow$ & & $\\displaystyle \\nearrow$\\\\\\\\\n\\end{longtable}\n\nAnd we see there that the function is decreasing on the interval\n($-\\infty$,0) and increasing on the intervals (0,3) and (3,$+\\infty$)."
+    ], 
+    "sols_raw": [
+        "In [[Science:Math Exam Resources/Courses/MATH102/December 2011/Question 4 (ii)|part ''ii)'' of this question]] we obtained the sign table of the derivative:\n\n{| border=\"0\" cellpadding=\"5\" cellspacing=\"0\" style=\"text-align:center;\"\n| style=\"border-bottom: solid 1px;\" |\n| style=\"border-bottom: solid 1px; border-left: solid 1px;\" |\n| style=\"border-bottom: solid 1px;\" |&lt;math>\\displaystyle 0&lt;/math>\n| style=\"border-bottom: solid 1px;\" |\n| style=\"border-bottom: solid 1px;\" |&lt;math>\\displaystyle 3&lt;/math>\n| style=\"border-bottom: solid 1px; border-right: solid 1px;\" |\n|-\n| &lt;math>\\displaystyle x&lt;/math>\n| style=\"border-left: solid 1px;\" | &lt;math>\\displaystyle -&lt;/math>\n| &lt;math>\\displaystyle 0&lt;/math>\n|&lt;math>\\displaystyle +&lt;/math>\n|\n| style=\"border-right: solid 1px;\" | &lt;math>\\displaystyle +&lt;/math>\n|-\n| style=\"border-bottom: solid 1px;\" |\u00a0&lt;math>\\displaystyle (x-3)^2&lt;/math>\n| style=\"border-bottom: solid 1px; border-left: solid 1px;\" | &lt;math>\\displaystyle +&lt;/math>\n| style=\"border-bottom: solid 1px;\" |\n| style=\"border-bottom: solid 1px;\" | &lt;math>\\displaystyle +&lt;/math>\n| style=\"border-bottom: solid 1px;\" | &lt;math>\\displaystyle 0&lt;/math>\n| style=\"border-bottom: solid 1px; border-right: solid 1px;\" | &lt;math>\\displaystyle +&lt;/math>\n|-\n|\u00a0&lt;math>\\displaystyle f'(x)&lt;/math>\n| style=\"border-left: solid 1px;\" | &lt;math>\\displaystyle -&lt;/math>\n| &lt;math>\\displaystyle 0&lt;/math>\n| &lt;math>\\displaystyle +&lt;/math>\n| &lt;math>\\displaystyle 0&lt;/math>\n| style=\"border-right: solid 1px;\" | &lt;math>\\displaystyle +&lt;/math>\n|-\n|\u00a0&lt;math>\\displaystyle f(x)&lt;/math>\n| style=\"border-left: solid 1px;\" | &lt;math>\\displaystyle \\searrow&lt;/math>\n|\n|&lt;math>\\displaystyle \\nearrow&lt;/math>\n|\n| style=\"border-right: solid 1px;\" | &lt;math>\\displaystyle \\nearrow&lt;/math>\n|-\n|}\n\nAnd we see there that the function is decreasing on the interval (-&amp;infin;,0) and increasing on the intervals (0,3) and (3,+&amp;infin;).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\\end{aligned}\\]</span></p>\n<p>iv) Determine the interval(s) for which f(x) is increasing and decreasing, respectively.</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\n\\end{align*} iv) Determine\nthe interval(s) for which f(x) is increasing and decreasing,\nrespectively.", 
+    "statement_raw": "Consider the function\n:&lt;math>\nf(x) = \\frac{1}{4}x^{4} - 2x^{3} + \\frac{9}{2}x^{2}.\n&lt;/math>\niv) Determine the interval(s) for which f(x) is increasing and decreasing, respectively.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_04_(iv)", 
+    "year": 2011
 }

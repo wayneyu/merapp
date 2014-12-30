@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_01_(l)", 
-    "course": "MATH100", 
-    "statement": "Find the absolute maximum value of\n$\\displaystyle f(x) = e^{x}(\\sin x - \\cos x )$ on the interval\n$[\\tfrac{\\pi}{2},2\\pi]$", 
-    "year": 2010, 
-    "sols": [
-        "We first take the derivative to see that\n\n$\\displaystyle f'(x) = e^{x}(\\sin x - \\cos x ) + e^{x}(\\cos x + \\sin x) = 2e^{x}\\sin x$\n\nSetting this to zero, we see that the function is zero whenever\n$\\displaystyle \\sin x =0$ (the exponential funciton is always bigger\nthan 0) and on our interval $[\\tfrac{\\pi}{2},2\\pi]$, this occurs at\n$\\displaystyle \\pi$ and at $\\displaystyle 2\\pi$.\n\nChecking the endpoints and values at the critical points, we have\n\n$\\displaystyle f(\\tfrac{\\pi}{2}) = e^{\\tfrac{\\pi}{2}}(\\sin (\\tfrac{\\pi}{2}) - \\cos (\\tfrac{\\pi}{2}) ) = e^{\\tfrac{\\pi}{2}}$\n\n$\\displaystyle f(\\pi) = e^{\\pi}(\\sin (\\pi) - \\cos (\\pi) ) = e^{\\pi}$\n\n$\\displaystyle f(2\\pi) = e^{2\\pi}(\\sin (2\\pi) - \\cos (2\\pi) ) = -e^{2\\pi}$\n\nHence, our function obtains its absolute maximum at $\\displaystyle \\pi$\nand the value is $\\displaystyle e^\\pi$"
+    "answer_html": "<p>Hence, our function obtains its absolute maximum at <span class=\"math\">\\(\\displaystyle \\pi\\)</span> and the value is <span class=\"math\">\\(\\displaystyle e^\\pi\\)</span></p>\n", 
+    "answer_latex": "Hence, our function obtains its absolute maximum at $\\displaystyle \\pi$\nand the value is $\\displaystyle e^\\pi$", 
+    "contributors": [
+        "Konradbe", 
+        "Alfred"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Maximum values can only occur at the endpoints or critical points. Try all these values and see which is biggest.</p>\n", 
+        "<p>To take the derivative, use the product rule.</p>\n"
+    ], 
+    "hints_latex": [
         "Maximum values can only occur at the endpoints or critical points. Try\nall these values and see which is biggest.", 
         "To take the derivative, use the product rule."
-    ]
+    ], 
+    "hints_raw": [
+        "Maximum values can only occur at the endpoints or critical points. Try all these values and see which is biggest.\n", 
+        "To take the derivative, use the product rule.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "1 (l)", 
+    "rating": 63, 
+    "sols_html": [
+        "<p>We first take the derivative to see that</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(x) = e^{x}(\\sin x - \\cos x ) + e^{x}(\\cos x + \\sin x) = 2e^{x}\\sin x\\)</span></p>\n<p>Setting this to zero, we see that the function is zero whenever <span class=\"math\">\\(\\displaystyle \\sin x =0\\)</span> (the exponential funciton is always bigger than 0) and on our interval <span class=\"math\">\\([\\tfrac{\\pi}{2},2\\pi]\\)</span>, this occurs at <span class=\"math\">\\(\\displaystyle \\pi\\)</span> and at <span class=\"math\">\\(\\displaystyle 2\\pi\\)</span>.</p>\n<p>Checking the endpoints and values at the critical points, we have</p>\n<p><span class=\"math\">\\(\\displaystyle f(\\tfrac{\\pi}{2}) = e^{\\tfrac{\\pi}{2}}(\\sin (\\tfrac{\\pi}{2}) - \\cos (\\tfrac{\\pi}{2}) ) = e^{\\tfrac{\\pi}{2}}\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle f(\\pi) = e^{\\pi}(\\sin (\\pi) - \\cos (\\pi) ) = e^{\\pi}\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle f(2\\pi) = e^{2\\pi}(\\sin (2\\pi) - \\cos (2\\pi) ) = -e^{2\\pi}\\)</span></p>\n<p>Hence, our function obtains its absolute maximum at <span class=\"math\">\\(\\displaystyle \\pi\\)</span> and the value is <span class=\"math\">\\(\\displaystyle e^\\pi\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We first take the derivative to see that\n\n$\\displaystyle f'(x) = e^{x}(\\sin x - \\cos x ) + e^{x}(\\cos x + \\sin x) = 2e^{x}\\sin x$\n\nSetting this to zero, we see that the function is zero whenever\n$\\displaystyle \\sin x =0$ (the exponential funciton is always bigger\nthan 0) and on our interval $[\\tfrac{\\pi}{2},2\\pi]$, this occurs at\n$\\displaystyle \\pi$ and at $\\displaystyle 2\\pi$.\n\nChecking the endpoints and values at the critical points, we have\n\n$\\displaystyle f(\\tfrac{\\pi}{2}) = e^{\\tfrac{\\pi}{2}}(\\sin (\\tfrac{\\pi}{2}) - \\cos (\\tfrac{\\pi}{2}) ) = e^{\\tfrac{\\pi}{2}}$\n\n$\\displaystyle f(\\pi) = e^{\\pi}(\\sin (\\pi) - \\cos (\\pi) ) = e^{\\pi}$\n\n$\\displaystyle f(2\\pi) = e^{2\\pi}(\\sin (2\\pi) - \\cos (2\\pi) ) = -e^{2\\pi}$\n\nHence, our function obtains its absolute maximum at $\\displaystyle \\pi$\nand the value is $\\displaystyle e^\\pi$"
+    ], 
+    "sols_raw": [
+        "We first take the derivative to see that\n\n&lt;math> \\displaystyle f'(x) = e^{x}(\\sin x - \\cos x ) + e^{x}(\\cos x + \\sin x) = 2e^{x}\\sin x &lt;/math> \n\nSetting this to zero, we see that the function is zero whenever &lt;math> \\displaystyle \\sin x =0&lt;/math> (the exponential funciton is always bigger than 0) and on our interval &lt;math> [\\tfrac{\\pi}{2},2\\pi] &lt;/math>, this occurs at &lt;math> \\displaystyle \\pi &lt;/math> and at &lt;math> \\displaystyle 2\\pi &lt;/math>.\n\nChecking the endpoints and values at the critical points, we have\n\n&lt;math> \\displaystyle f(\\tfrac{\\pi}{2}) = e^{\\tfrac{\\pi}{2}}(\\sin (\\tfrac{\\pi}{2}) - \\cos (\\tfrac{\\pi}{2}) ) = e^{\\tfrac{\\pi}{2}} &lt;/math> \n\n&lt;math> \\displaystyle f(\\pi) = e^{\\pi}(\\sin (\\pi) - \\cos (\\pi) ) = e^{\\pi}&lt;/math>\n \n&lt;math> \\displaystyle f(2\\pi) = e^{2\\pi}(\\sin (2\\pi) - \\cos (2\\pi) ) = -e^{2\\pi} &lt;/math> \n\nHence, our function obtains its absolute maximum at &lt;math> \\displaystyle \\pi &lt;/math>  and the value is &lt;math> \\displaystyle e^\\pi &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the absolute maximum value of <span class=\"math\">\\(\\displaystyle f(x) = e^{x}(\\sin x - \\cos x )\\)</span> on the interval <span class=\"math\">\\([\\tfrac{\\pi}{2},2\\pi]\\)</span></p>\n", 
+    "statement_latex": "Find the absolute maximum value of\n$\\displaystyle f(x) = e^{x}(\\sin x - \\cos x )$ on the interval\n$[\\tfrac{\\pi}{2},2\\pi]$", 
+    "statement_raw": "Find the absolute maximum value of &lt;math> \\displaystyle f(x) = e^{x}(\\sin x - \\cos x ) &lt;/math> on the interval &lt;math> [\\tfrac{\\pi}{2},2\\pi] &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(l)", 
+    "year": 2010
 }

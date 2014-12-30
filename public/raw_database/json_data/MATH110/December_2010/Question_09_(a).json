@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_09_(a)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nState the domain of $\\displaystyle f$.", 
-    "year": 2010, 
-    "sols": [
-        "The domain of a function is the set of all values where the function is\ndefined. The function\n\n\\begin{align*}f(x) = \\frac{x+1}{x-1}\\end{align*}\n\nis defined everywhere except where its denominator is equal to zero.\nSetting the denominator equal to zero and solving...\n\n\\begin{align*}\\displaystyle x - 1 = 0\\end{align*}\n\ngives that the denominator is zero when $x = 1$. Thus $f(x)$ is defined\neverywhere except $x = 1$. In interval notation this is written\n$(-\\infty, 1)\\cup(1, \\infty)$, or, equivalently\n\n\\begin{align*}(-\\infty,\\infty) \\backslash \\{1\\}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\((-\\infty,\\infty) \\backslash \\{1\\}\\)</span></p>\n", 
+    "answer_latex": " $(-\\infty,\\infty) \\backslash \\{1\\}$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>A function is undefined if it has a zero in the denominator.</p>\n"
+    ], 
+    "hints_latex": [
         "A function is undefined if it has a zero in the denominator."
-    ]
+    ], 
+    "hints_raw": [
+        "A function is undefined if it has a zero in the denominator.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The domain of a function is the set of all values where the function is defined. The function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{x+1}{x-1}\\end{aligned}\\]</span></p>\n<p>is defined everywhere except where its denominator is equal to zero. Setting the denominator equal to zero and solving...</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x - 1 = 0\\end{aligned}\\]</span></p>\n<p>gives that the denominator is zero when <span class=\"math\">\\(x = 1\\)</span>. Thus <span class=\"math\">\\(f(x)\\)</span> is defined everywhere except <span class=\"math\">\\(x = 1\\)</span>. In interval notation this is written <span class=\"math\">\\((-\\infty, 1)\\cup(1, \\infty)\\)</span>, or, equivalently</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(-\\infty,\\infty) \\backslash \\{1\\}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The domain of a function is the set of all values where the function is\ndefined. The function\n\n\\begin{align*}\nf(x) = \\frac{x+1}{x-1}\n\\end{align*}\n\nis defined everywhere except where its denominator is equal to zero.\nSetting the denominator equal to zero and solving...\n\n\\begin{align*}\n\\displaystyle x - 1 = 0\n\\end{align*}\n\ngives that the denominator is zero when $x = 1$. Thus $f(x)$ is defined\neverywhere except $x = 1$. In interval notation this is written\n$(-\\infty, 1)\\cup(1, \\infty)$, or, equivalently\n\n\\begin{align*}\n(-\\infty,\\infty) \\backslash \\{1\\}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The domain of a function is the set of all values where the function is defined.  The function\n\n:&lt;math>f(x) = \\frac{x+1}{x-1}&lt;/math>\n\nis defined everywhere except where its denominator is equal to zero.  Setting the denominator equal to zero and solving...\n\n:&lt;math>\\displaystyle x - 1 = 0&lt;/math>\n\ngives that the denominator is zero when &lt;math>x = 1&lt;/math>.  Thus &lt;math>f(x)&lt;/math> is defined everywhere except &lt;math>x = 1&lt;/math>.  In interval notation this is written &lt;math>(-\\infty, 1)\\cup(1, \\infty)&lt;/math>, or, equivalently\n\n:&lt;math> (-\\infty,\\infty) \\backslash \\{1\\} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\frac{x + 1}{x - 1}\\)</span>.</p>\n<p>State the domain of <span class=\"math\">\\(\\displaystyle f\\)</span>.</p>\n", 
+    "statement_latex": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nState the domain of $\\displaystyle f$.", 
+    "statement_raw": "Let &lt;math>f(x) = \\frac{x + 1}{x - 1}&lt;/math>.\n\nState the domain of &lt;math>\\displaystyle f&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Function_properties"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_09_(a)", 
+    "year": 2010
 }

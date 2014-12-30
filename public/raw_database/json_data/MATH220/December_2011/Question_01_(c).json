@@ -1,13 +1,46 @@
 {
-    "term": "December", 
-    "question": "Question_01_(c)", 
-    "course": "MATH220", 
-    "statement": "Define what it means for two sets \\emph{A} and \\emph{B} to have the same\ncardinality.", 
-    "year": 2011, 
-    "sols": [
-        "Two sets \\emph{A} and \\emph{B} are said to have the same cardinality if\nthere exists a bijection from one set to the other.\n\nMore precisely, that means there must exist at least one function $f$:\n\\emph{A} \u2192 \\emph{B} such that the function is injective and surjective;\nthat is, for each element \\emph{a} of the set \\emph{A} there exists a\nunique element \\emph{b} in the set \\emph{B} such that $f(a)$ =\n\\emph{b} (that condition is the injectivity) AND for each element\n\\emph{b} of the \\emph{B} there exists a unique element \\emph{a} in the\nset \\emph{A} such that $f(a)$ = \\emph{b} (and this is the condition\nfor surjectivity)."
+    "answer_html": "<p>More precisely, that means there must exist at least one function <span class=\"math\">\\(f\\)</span>: <em>A</em> <span class=\"math\">\\(\\rightarrow\\)</span> <em>B</em> such that the function is injective and surjective; that is, for each element <em>a</em> of the set <em>A</em> there exists a unique element <em>b</em> in the set <em>B</em> such that <span class=\"math\">\\(f(a)\\)</span> = <em>b</em> (that condition is the injectivity) AND for each element <em>b</em> of the <em>B</em> there exists a unique element <em>a</em> in the set <em>A</em> such that <span class=\"math\">\\(f(a)\\)</span> = <em>b</em> (and this is the condition for surjectivity).</p>\n", 
+    "answer_latex": "More precisely, that means there must exist at least one function $f$:\n\\emph{A} $\\rightarrow$ \\emph{B} such that the function is injective and surjective;\nthat is, for each element \\emph{a} of the set \\emph{A} there exists a\nunique element \\emph{b} in the set \\emph{B} such that $f(a)$ =\n\\emph{b} (that condition is the injectivity) AND for each element\n\\emph{b} of the \\emph{B} there exists a unique element \\emph{a} in the\nset \\emph{A} such that $f(a)$ = \\emph{b} (and this is the condition\nfor surjectivity).", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>An example is <strong>not</strong> a definition. But it sure helps to have some examples and counter-examples to understand what you are trying to define.</p>\n"
+    ], 
+    "hints_latex": [
         "An example is \\textbf{not} a definition. But it sure helps to have some\nexamples and counter-examples to understand what you are trying to\ndefine."
-    ]
+    ], 
+    "hints_raw": [
+        "An example is '''not''' a definition. But it sure helps to have some examples and counter-examples to understand what you are trying to define.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (c)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>Two sets <em>A</em> and <em>B</em> are said to have the same cardinality if there exists a bijection from one set to the other.</p>\n<p>More precisely, that means there must exist at least one function <span class=\"math\">\\(f\\)</span>: <em>A</em> <span class=\"math\">\\(\\rightarrow\\)</span> <em>B</em> such that the function is injective and surjective; that is, for each element <em>a</em> of the set <em>A</em> there exists a unique element <em>b</em> in the set <em>B</em> such that <span class=\"math\">\\(f(a)\\)</span> = <em>b</em> (that condition is the injectivity) AND for each element <em>b</em> of the <em>B</em> there exists a unique element <em>a</em> in the set <em>A</em> such that <span class=\"math\">\\(f(a)\\)</span> = <em>b</em> (and this is the condition for surjectivity).</p>\n"
+    ], 
+    "sols_latex": [
+        "Two sets \\emph{A} and \\emph{B} are said to have the same cardinality if\nthere exists a bijection from one set to the other.\n\nMore precisely, that means there must exist at least one function $f$:\n\\emph{A} $\\rightarrow$ \\emph{B} such that the function is injective and surjective;\nthat is, for each element \\emph{a} of the set \\emph{A} there exists a\nunique element \\emph{b} in the set \\emph{B} such that $f(a)$ =\n\\emph{b} (that condition is the injectivity) AND for each element\n\\emph{b} of the \\emph{B} there exists a unique element \\emph{a} in the\nset \\emph{A} such that $f(a)$ = \\emph{b} (and this is the condition\nfor surjectivity)."
+    ], 
+    "sols_raw": [
+        "Two sets ''A'' and ''B'' are said to have the same cardinality if there exists a bijection from one set to the other.\n\nMore precisely, that means there must exist at least one function &amp;fnof;: ''A'' &amp;rarr; ''B'' such that the function is injective and surjective; that is, for each element ''a'' of the set ''A'' there exists a unique element ''b'' in the set ''B'' such that &amp;fnof;(''a'') = ''b'' (that condition is the injectivity) AND for each element ''b'' of the ''B'' there exists a unique element ''a'' in the set ''A'' such that &amp;fnof;(''a'') = ''b'' (and this is the condition for surjectivity).\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Define what it means for two sets <em>A</em> and <em>B</em> to have the same cardinality.</p>\n", 
+    "statement_latex": "Define what it means for two sets \\emph{A} and \\emph{B} to have the same\ncardinality.", 
+    "statement_raw": "Define what it means for two sets ''A'' and ''B'' to have the same cardinality.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_01_(c)", 
+    "year": 2011
 }

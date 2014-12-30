@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(d)", 
-    "course": "MATH104", 
-    "statement": "Find the equation of the tangent line to\n\n\\begin{align*}y = f(x) = \\frac{x+3}{2x+1}\\end{align*}\n\nat the point corresponding to \\emph{x} = 0.", 
-    "year": 2011, 
-    "sols": [
-        "The following solution makes use of the product rule, rather than the\nquotient rule, for differentiation. Writing the given function as:\n\n\\begin{align*}\\displaystyle y(x) = (x+3)(2x+1)^{-1}\\end{align*}\n\nallows us to apply the product rule when taking the derivative:\n\n\\begin{align*}\\frac{dy}{dx} =y'(x) = \\frac{1}{2x+1} - \\frac{2x+6}{(2x+1)^2}\\end{align*}\n\nAt \\emph{x} = 0, the derivative of \\emph{y} is equal to\n\n\\begin{align*}y'(0) &= \\frac{1}{2(0)+1} - \\frac{2(0)+6}{(2(0)+1)^2} \\\\\n&= 1 - 6 \\\\\n&= -5\\end{align*}\n\nThe general ``point-slope form'' for the equation of a straight line is\n\n\\begin{align*}\\displaystyle y - y_1 = m(x - x_1)\\end{align*}\n\nwhere (\\emph{x}\\textsubscript{1},\\emph{y}\\textsubscript{1}) is a point\non the line with slope \\emph{m}. We choose \\emph{x}\\textsubscript{1} = 0\nand hence \\emph{y}\\textsubscript{1} = \\emph{y}(0) = 3. Plugging in these\nvalues yields\n\n\\begin{align*}y - y(0) &= (-5)(x - 0) \\\\\ny -3 &= -5x \\\\\ny&= -5x +3\\end{align*}\n\nTherefore, the required equation is \\emph{y} = -5\\emph{x} +3."
+    "answer_html": "<p>Therefore, the required equation is <em>y</em> = -5<em>x</em> +3.</p>\n", 
+    "answer_latex": "Therefore, the required equation is \\emph{y} = -5\\emph{x} +3.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>In order to find the equation of any line (including a tangent), you need to know the slope of the line and the coordinates of a point on the line.</p>\n<p>How can you find the slope of a tangent line? What is the point on <span class=\"math\">\\(f(x)\\)</span> (and thus the tangent line as well) at <span class=\"math\">\\(x = 0\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "In order to find the equation of any line (including a tangent), you\nneed to know the slope of the line and the coordinates of a point on the\nline.\n\nHow can you find the slope of a tangent line? What is the point on\n$f(x)$ (and thus the tangent line as well) at $x = 0$?"
-    ]
+    ], 
+    "hints_raw": [
+        "In order to find the equation of any line (including a tangent), you need to know the slope of the line and the coordinates of a point on the line.  \n\nHow can you find the slope of a tangent line?  What is the point on &lt;math>f(x)&lt;/math> (and thus the tangent line as well) at &lt;math>x = 0&lt;/math>?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (d)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>The following solution makes use of the product rule, rather than the quotient rule, for differentiation. Writing the given function as:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y(x) = (x+3)(2x+1)^{-1}\\end{aligned}\\]</span></p>\n<p>allows us to apply the product rule when taking the derivative:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} =y&#39;(x) = \\frac{1}{2x+1} - \\frac{2x+6}{(2x+1)^2}\\end{aligned}\\]</span></p>\n<p>At <em>x</em> = 0, the derivative of <em>y</em> is equal to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39;(0) &amp;= \\frac{1}{2(0)+1} - \\frac{2(0)+6}{(2(0)+1)^2} \\\\\n&amp;= 1 - 6 \\\\\n&amp;= -5\\end{aligned}\\]</span></p>\n<p>The general &#8220;point-slope form&#8221; for the equation of a straight line is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y - y_1 = m(x - x_1)\\end{aligned}\\]</span></p>\n<p>where (<em>x</em><sub>1</sub>,<em>y</em><sub>1</sub>) is a point on the line with slope <em>m</em>. We choose <em>x</em><sub>1</sub> = 0 and hence <em>y</em><sub>1</sub> = <em>y</em>(0) = 3. Plugging in these values yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny - y(0) &amp;= (-5)(x - 0) \\\\\ny -3 &amp;= -5x \\\\\ny&amp;= -5x +3\\end{aligned}\\]</span></p>\n<p>Therefore, the required equation is <em>y</em> = -5<em>x</em> +3.</p>\n"
+    ], 
+    "sols_latex": [
+        "The following solution makes use of the product rule, rather than the\nquotient rule, for differentiation. Writing the given function as:\n\n\\begin{align*}\n\\displaystyle y(x) = (x+3)(2x+1)^{-1}\n\\end{align*}\n\nallows us to apply the product rule when taking the derivative:\n\n\\begin{align*}\n\\frac{dy}{dx} =y'(x) = \\frac{1}{2x+1} - \\frac{2x+6}{(2x+1)^2}\n\\end{align*}\n\nAt \\emph{x} = 0, the derivative of \\emph{y} is equal to\n\n\\begin{align*}\ny'(0) &= \\frac{1}{2(0)+1} - \\frac{2(0)+6}{(2(0)+1)^2} \\\\\n&= 1 - 6 \\\\\n&= -5\n\\end{align*}\n\nThe general ``point-slope form'' for the equation of a straight line is\n\n\\begin{align*}\n\\displaystyle y - y_1 = m(x - x_1)\n\\end{align*}\n\nwhere (\\emph{x}\\textsubscript{1},\\emph{y}\\textsubscript{1}) is a point\non the line with slope \\emph{m}. We choose \\emph{x}\\textsubscript{1} = 0\nand hence \\emph{y}\\textsubscript{1} = \\emph{y}(0) = 3. Plugging in these\nvalues yields\n\n\\begin{align*}\ny - y(0) &= (-5)(x - 0) \\\\\ny -3 &= -5x \\\\\ny&= -5x +3\n\\end{align*}\n\nTherefore, the required equation is \\emph{y} = -5\\emph{x} +3."
+    ], 
+    "sols_raw": [
+        "The following solution makes use of the product rule, rather than the quotient rule, for differentiation. Writing the given function as:\n\n:&lt;math>\\displaystyle y(x) = (x+3)(2x+1)^{-1}&lt;/math>\n\nallows us to apply the product rule when taking the derivative:\n\n:&lt;math>\\frac{dy}{dx} =y'(x) = \\frac{1}{2x+1} - \\frac{2x+6}{(2x+1)^2}&lt;/math>\n\nAt ''x'' = 0, the derivative of ''y'' is equal to\n\n:&lt;math>\\begin{align}y'(0) &amp;= \\frac{1}{2(0)+1} - \\frac{2(0)+6}{(2(0)+1)^2} \\\\\n&amp;= 1 - 6 \\\\\n&amp;= -5\n\\end{align}\n&lt;/math>\n\nThe general \"point-slope form\" for the equation of a straight line is \n\n:&lt;math>\\displaystyle y - y_1 = m(x - x_1)&lt;/math>\n\nwhere (''x''&lt;sub>1&lt;/sub>,''y''&lt;sub>1&lt;/sub>) is a point on the line with slope ''m''. We choose ''x''&lt;sub>1&lt;/sub> = 0 and hence ''y''&lt;sub>1&lt;/sub> = ''y''(0) = 3. Plugging in these values yields\n\n:&lt;math>\\begin{align}y - y(0) &amp;= (-5)(x - 0) \\\\\ny -3 &amp;= -5x \\\\\ny&amp;= -5x +3\\end{align}&lt;/math>\n\nTherefore, the required equation is ''y'' = -5''x'' +3.\n"
+    ], 
+    "solvers": [
+        "GregMayer"
+    ], 
+    "statement_html": "<p>Find the equation of the tangent line to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny = f(x) = \\frac{x+3}{2x+1}\\end{aligned}\\]</span></p>\n<p>at the point corresponding to <em>x</em> = 0.</p>\n", 
+    "statement_latex": "Find the equation of the tangent line to\n\n\\begin{align*}\ny = f(x) = \\frac{x+3}{2x+1}\n\\end{align*}\n\nat the point corresponding to \\emph{x} = 0.", 
+    "statement_raw": "Find the equation of the tangent line to \n\n:&lt;math>y = f(x) = \\frac{x+3}{2x+1}&lt;/math> \n\nat the point corresponding to ''x'' = 0.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(d)", 
+    "year": 2011
 }

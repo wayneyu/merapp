@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n5. A sample of the radioactive substance Rhodium-101 decayed to 12.5\\%\nof its original amount after 10 years.\n\n(a) What percentage of the original amount is remaining after another 5\nyears?", 
-    "year": 2012, 
-    "sols": [
-        "Proceeding as the hint, let $\\displaystyle y(t) = Ce^{kt}$ be the\npercentage of material remaining after \\emph{t} years.\n\nAt time 0, we have 100\\% left, so we write:\n\n\\begin{align*} 100 &= y(0) \\\\\n &= Ce^{k0} \\\\\n &= C \\end{align*}\n\nNext, we know that after 10 years, there is 12.5\\% left, thus using\n$C = 100$:\n\n\\begin{align*} 12.5 &= y(10) \\\\\n &= 100e^{10k}\\end{align*}\n\nDividing by 100 and taking natural logarithms of both sides will give:\n\n$\\displaystyle \\ln(12.5/100) = \\ln(e^{10k})$\n\nBecause $e^x$ and $\\ln(x)$ are inverses, the right side simplifies to:\n\n$\\displaystyle \\ln(12.5/100) = 10k$\n\nAnd we can solve for \\emph{k}:\n\n$\\displaystyle k = \\ln(12.5/100)/10 = \\ln(1/8)/10$.\n\nNow, we are looking for the percentage remaining after 15 years (5 years\nafter the initial 10 years), or $\\displaystyle y(15)$, so plugging in\nthe data gives\n$\\displaystyle y(15) = 100e^{15(\\ln(1/8)/10)} = 100e^{\\ln((1/8)^{15/10})} = 100(1/8)^{3/2}$\n\ncompleting the question."
+    "answer_html": "<p>Now, we are looking for the percentage remaining after 15 years (5 years after the initial 10 years), or <span class=\"math\">\\(\\displaystyle y(15)\\)</span>, so plugging in the data gives <span class=\"math\">\\(\\displaystyle y(15) = 100(1/8)^{3/2}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "Now, we are looking for the percentage remaining after 15 years (5 years\nafter the initial 10 years), or $\\displaystyle y(15)$, so plugging in\nthe data gives\n$\\displaystyle y(15) = 100(1/8)^{3/2}$completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that radioactive decay is an example of exponential decay. So use the formula <span class=\"math\">\\(\\displaystyle y(t) = Ce^{kt}\\)</span>, where <span class=\"math\">\\(y(t)\\)</span> is the percentage of material left after <em>t</em> years.</p>\n", 
+        "<p>Now use the data in the question to solve for <em>C</em> (original amount), then <em>k</em> (rate of decay), and finally <em>y(15)</em> (five years after the first 10 years).</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that radioactive decay is an example of exponential decay. So use\nthe formula $\\displaystyle y(t) = Ce^{kt}$, where $y(t)$ is the\npercentage of material left after \\emph{t} years.", 
         "Now use the data in the question to solve for \\emph{C} (original\namount), then \\emph{k} (rate of decay), and finally \\emph{y(15)} (five\nyears after the first 10 years)."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that radioactive decay is an example of exponential decay. So use the formula &lt;math> \\displaystyle y(t) = Ce^{kt}&lt;/math>, where &lt;math>y(t)&lt;/math> is the percentage of material left after ''t'' years.\n", 
+        "Now use the data in the question to solve for ''C'' (original amount), then ''k'' (rate of decay), and finally ''y(15)'' (five years after the first 10 years).\n"
+    ], 
+    "num_votes": 6, 
+    "question": "5 (a)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>Proceeding as the hint, let <span class=\"math\">\\(\\displaystyle y(t) = Ce^{kt}\\)</span> be the percentage of material remaining after <em>t</em> years.</p>\n<p>At time 0, we have 100% left, so we write:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n100 &amp;= y(0) \\\\\n &amp;= Ce^{k0} \\\\\n &amp;= C \\end{aligned}\\]</span></p>\n<p>Next, we know that after 10 years, there is 12.5% left, thus using <span class=\"math\">\\(C = 100\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n12.5 &amp;= y(10) \\\\\n &amp;= 100e^{10k}\\end{aligned}\\]</span></p>\n<p>Dividing by 100 and taking natural logarithms of both sides will give:</p>\n<p><span class=\"math\">\\(\\displaystyle \\ln(12.5/100) = \\ln(e^{10k})\\)</span></p>\n<p>Because <span class=\"math\">\\(e^x\\)</span> and <span class=\"math\">\\(\\ln(x)\\)</span> are inverses, the right side simplifies to:</p>\n<p><span class=\"math\">\\(\\displaystyle \\ln(12.5/100) = 10k\\)</span></p>\n<p>And we can solve for <em>k</em>:</p>\n<p><span class=\"math\">\\(\\displaystyle k = \\ln(12.5/100)/10 = \\ln(1/8)/10\\)</span>.</p>\n<p>Now, we are looking for the percentage remaining after 15 years (5 years after the initial 10 years), or <span class=\"math\">\\(\\displaystyle y(15)\\)</span>, so plugging in the data gives <span class=\"math\">\\(\\displaystyle y(15) = 100e^{15(\\ln(1/8)/10)} = 100e^{\\ln((1/8)^{15/10})} = 100(1/8)^{3/2}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as the hint, let $\\displaystyle y(t) = Ce^{kt}$ be the\npercentage of material remaining after \\emph{t} years.\n\nAt time 0, we have 100\\% left, so we write:\n\n\\begin{align*}\n100 &= y(0) \\\\\n &= Ce^{k0} \\\\\n &= C \n\\end{align*}\n\nNext, we know that after 10 years, there is 12.5\\% left, thus using\n$C = 100$:\n\n\\begin{align*}\n12.5 &= y(10) \\\\\n &= 100e^{10k}\n\\end{align*}\n\nDividing by 100 and taking natural logarithms of both sides will give:\n\n$\\displaystyle \\ln(12.5/100) = \\ln(e^{10k})$\n\nBecause $e^x$ and $\\ln(x)$ are inverses, the right side simplifies to:\n\n$\\displaystyle \\ln(12.5/100) = 10k$\n\nAnd we can solve for \\emph{k}:\n\n$\\displaystyle k = \\ln(12.5/100)/10 = \\ln(1/8)/10$.\n\nNow, we are looking for the percentage remaining after 15 years (5 years\nafter the initial 10 years), or $\\displaystyle y(15)$, so plugging in\nthe data gives\n$\\displaystyle y(15) = 100e^{15(\\ln(1/8)/10)} = 100e^{\\ln((1/8)^{15/10})} = 100(1/8)^{3/2}$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Proceeding as the hint, let &lt;math> \\displaystyle y(t) = Ce^{kt} &lt;/math> be the percentage of material remaining after ''t'' years. \n\nAt time 0, we have 100% left, so we write: \n\n&lt;math> \\displaystyle \\begin{align} 100 &amp;= y(0) \\\\\n &amp;= Ce^{k0} \\\\\n &amp;= C \\end{align} &lt;/math> \n\nNext, we know that after 10 years, there is 12.5% left, thus using &lt;math>C = 100&lt;/math>: \n\n&lt;math> \\displaystyle \\begin{align} 12.5 &amp;= y(10) \\\\\n &amp;= 100e^{10k}\\end{align} &lt;/math> \n\nDividing by 100 and taking natural logarithms of both sides will give: \n\n&lt;math> \\displaystyle \\ln(12.5/100) = \\ln(e^{10k}) &lt;/math> \n\nBecause &lt;math>e^x&lt;/math> and &lt;math>\\ln(x)&lt;/math> are inverses, the right side simplifies to: \n\n&lt;math> \\displaystyle \\ln(12.5/100) = 10k &lt;/math> \n\nAnd we can solve for ''k'':\n\n&lt;math> \\displaystyle k = \\ln(12.5/100)/10 = \\ln(1/8)/10&lt;/math>. \n\nNow, we are looking for the percentage remaining after 15 years (5 years after the initial 10 years), or &lt;math> \\displaystyle y(15)&lt;/math>, so plugging in the data gives \n&lt;math> \\displaystyle y(15) = 100e^{15(\\ln(1/8)/10)} = 100e^{\\ln((1/8)^{15/10})} = 100(1/8)^{3/2}  &lt;/math> \n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 5-11, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions.</strong></p>\n<p>5. A sample of the radioactive substance Rhodium-101 decayed to 12.5% of its original amount after 10 years.</p>\n<p>(a) What percentage of the original amount is remaining after another 5 years?</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n5. A sample of the radioactive substance Rhodium-101 decayed to 12.5\\%\nof its original amount after 10 years.\n\n(a) What percentage of the original amount is remaining after another 5\nyears?", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these  questions.'''\n\n5. A sample of the radioactive substance Rhodium-101 decayed to 12.5% of its original amount after 10 years.\n\n(a) What percentage of the original amount is remaining after another 5 years?\n", 
+    "term": "December", 
+    "topics": [
+        "Exponential_growth_and_decay"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_05_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(m)", 
-    "course": "MATH100", 
-    "statement": "Newton's Method is used to approximate a solution of the equation\n$\\displaystyle e^{x} - x^{2} = 0$, starting with the initial\napproximation $x_{1} = 0$. Find $x_{3}$.", 
-    "year": 2010, 
-    "sols": [
-        "Let us first compute the derivative\n\n\\begin{align*}\\displaystyle f'(x) = e^x -2x\\end{align*}\n\nand now crank up the algorithm.\n\n\\begin{align*}\nx_{2} &= x_1 - \\frac{f(x_1)}{f'(x_1)} \\\\\n&= 0  - \\frac11 = -1 \\\\\nx_3 &= x_2 - \\frac{f(x_2)}{f'(x_2)} \\\\\n&= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&= \\frac{-1-2e^{-1}}{2+e^{-1}}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(x_3=\\frac{-1-2e^{-1}}{2+e^{-1}}\\)</span></p>\n", 
+    "answer_latex": " $x_3=\\frac{-1-2e^{-1}}{2+e^{-1}}$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "Alfred"
     ], 
-    "hints": [
-        "To approximate solutions of $f(x)$ = 0 with Newton's method use\n\n\\begin{align*}x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\,\\end{align*} where\n\\emph{x}\\textsubscript{1} = 0 is given as your starting point."
-    ]
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To approximate solutions of <span class=\"math\">\\(f(x)\\)</span> = 0 with Newton&#8217;s method use</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{n+1} = x_n - \\frac{f(x_n)}{f&#39;(x_n)} \\,\\end{aligned}\\]</span></p>\n<p>where <em>x</em><sub>1</sub> = 0 is given as your starting point.</p>\n"
+    ], 
+    "hints_latex": [
+        "To approximate solutions of $f(x)$ = 0 with Newton's method use\n\n\\begin{align*}\nx_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\,\n\\end{align*} where\n\\emph{x}\\textsubscript{1} = 0 is given as your starting point."
+    ], 
+    "hints_raw": [
+        "To approximate solutions of &amp;fnof;(''x'') = 0 with Newton's method use\n:&lt;math>x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\,&lt;/math>\nwhere ''x''&lt;sub>1&lt;/sub> = 0 is given as your starting point.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (m)", 
+    "rating": 54, 
+    "sols_html": [
+        "<p>Let us first compute the derivative</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f&#39;(x) = e^x -2x\\end{aligned}\\]</span></p>\n<p>and now crank up the algorithm.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{2} &amp;= x_1 - \\frac{f(x_1)}{f&#39;(x_1)} \\\\\n&amp;= 0  - \\frac11 = -1 \\\\\nx_3 &amp;= x_2 - \\frac{f(x_2)}{f&#39;(x_2)} \\\\\n&amp;= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&amp;= \\frac{-1-2e^{-1}}{2+e^{-1}}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let us first compute the derivative\n\n\\begin{align*}\n\\displaystyle f'(x) = e^x -2x\n\\end{align*}\n\nand now crank up the algorithm.\n\n\\begin{align*}\nx_{2} &= x_1 - \\frac{f(x_1)}{f'(x_1)} \\\\\n&= 0  - \\frac11 = -1 \\\\\nx_3 &= x_2 - \\frac{f(x_2)}{f'(x_2)} \\\\\n&= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&= \\frac{-1-2e^{-1}}{2+e^{-1}}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Let us first compute the derivative\n\n:&lt;math>\\displaystyle f'(x) = e^x -2x &lt;/math>\n\nand now crank up the algorithm.\n\n:&lt;math>\\begin{align}\nx_{2} &amp;= x_1 - \\frac{f(x_1)}{f'(x_1)} \\\\\n&amp;= 0  - \\frac11 = -1 \\\\\nx_3 &amp;= x_2 - \\frac{f(x_2)}{f'(x_2)} \\\\\n&amp;= -1 - \\frac{e^{-1}-1}{e^{-1}+2} \\\\\n&amp;= \\frac{-1-2e^{-1}}{2+e^{-1}}\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Newton&#8217;s Method is used to approximate a solution of the equation <span class=\"math\">\\(\\displaystyle e^{x} - x^{2} = 0\\)</span>, starting with the initial approximation <span class=\"math\">\\(x_{1} = 0\\)</span>. Find <span class=\"math\">\\(x_{3}\\)</span>.</p>\n", 
+    "statement_latex": "Newton's Method is used to approximate a solution of the equation\n$\\displaystyle e^{x} - x^{2} = 0$, starting with the initial\napproximation $x_{1} = 0$. Find $x_{3}$.", 
+    "statement_raw": "Newton's Method is used to approximate a solution of the equation &lt;math> \\displaystyle e^{x} - x^{2} = 0 &lt;/math>, starting with the initial approximation &lt;math> x_{1} = 0 &lt;/math>. Find &lt;math> x_{3} &lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_method"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(m)", 
+    "year": 2010
 }

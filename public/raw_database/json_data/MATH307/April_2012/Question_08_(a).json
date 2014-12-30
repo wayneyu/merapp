@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_08_(a)", 
+    "answer_html": "<p>Therefore the eigenvalue is <span class=\"math\">\\(\\lambda = 1\\)</span>.</p>\n", 
+    "answer_latex": "Therefore the eigenvalue is $\\lambda = 1$.", 
     "course": "MATH307", 
-    "statement": "Consider the stochastic matrix\n\n\\begin{align*}P = \\begin{bmatrix}\n0 & 1/4 & 1/3 \\\\\n1 & 1/2 & 1/3 \\\\\n0 & 1/4 & 1/3\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(a)} The vector \\emph{{[}3, 8, 3{]}\\textsuperscript{T}} is an\neigenvector of \\emph{P}. What is the eigenvalue?", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "8 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If <span class=\"math\">\\(\\lambda\\)</span> is an eigenvalue of P with eigenvector <span class=\"math\">\\(v\\)</span>, then</p>\n<p><span class=\"math\">\\(\\displaystyle Pv = \\lambda v\\)</span>.</p>\n<p>Multiplying the matrix with the vector,</p>\n<p><span class=\"math\">\\(Pv = \\begin{bmatrix}\n0 &amp; \\frac{1}{4} &amp; \\frac{1}{3}\\\\ \n1 &amp; \\frac{1}{2} &amp; \\frac{1}{3}\\\\ \n0 &amp; \\frac{1}{4} &amp; \\frac{1}{3}\n\\end{bmatrix} \n\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix}\n= \\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = 1*\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = \\lambda v\\)</span>.</p>\n<p>Therefore the eigenvalue is <span class=\"math\">\\(\\lambda = 1\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "If $\\lambda$ is an eigenvalue of P with eigenvector $v$, then\n\n$\\displaystyle Pv = \\lambda v$.\n\nMultiplying the matrix with the vector,\n\n$Pv = \\begin{bmatrix}\n0 & \\frac{1}{4} & \\frac{1}{3}\\\\ \n1 & \\frac{1}{2} & \\frac{1}{3}\\\\ \n0 & \\frac{1}{4} & \\frac{1}{3}\n\\end{bmatrix} \n\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix}\n= \\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = 1*\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = \\lambda v$.\n\nTherefore the eigenvalue is $\\lambda = 1$."
     ], 
-    "hints": []
+    "sols_raw": [
+        "If &lt;math>\\lambda&lt;/math> is an eigenvalue of P with eigenvector &lt;math>v&lt;/math>, then\n\n&lt;math>\\displaystyle Pv = \\lambda v&lt;/math>.\n\nMultiplying the matrix with the vector,\n\n&lt;math>Pv = \\begin{bmatrix}\n0 &amp; \\frac{1}{4} &amp; \\frac{1}{3}\\\\ \n1 &amp; \\frac{1}{2} &amp; \\frac{1}{3}\\\\ \n0 &amp; \\frac{1}{4} &amp; \\frac{1}{3}\n\\end{bmatrix} \n\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix}\n= \\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = 1*\\begin{bmatrix}\n3\\\\ \n8\\\\ \n3\n\\end{bmatrix} = \\lambda v&lt;/math>.\n\nTherefore the eigenvalue is &lt;math>\\lambda = 1&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the stochastic matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix}\n0 &amp; 1/4 &amp; 1/3 \\\\\n1 &amp; 1/2 &amp; 1/3 \\\\\n0 &amp; 1/4 &amp; 1/3\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> The vector <em><span>[</span>3, 8, 3<span>]</span><sup>T</sup></em> is an eigenvector of <em>P</em>. What is the eigenvalue?</p>\n", 
+    "statement_latex": "Consider the stochastic matrix\n\n\\begin{align*}\nP = \\begin{bmatrix}\n0 & 1/4 & 1/3 \\\\\n1 & 1/2 & 1/3 \\\\\n0 & 1/4 & 1/3\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(a)} The vector \\emph{{[}3, 8, 3{]}\\textsuperscript{T}} is an\neigenvector of \\emph{P}. What is the eigenvalue?", 
+    "statement_raw": "Consider the stochastic matrix\n\n:&lt;math>\nP = \\begin{bmatrix}\n0 &amp; 1/4 &amp; 1/3 \\\\\n1 &amp; 1/2 &amp; 1/3 \\\\\n0 &amp; 1/4 &amp; 1/3\n\\end{bmatrix}\n&lt;/math>\n\n'''(a)''' The vector ''[3, 8, 3]&lt;sup>T&lt;/sup>'' is an eigenvector of ''P''. What is the eigenvalue?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_08_(a)", 
+    "year": 2012
 }

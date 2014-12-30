@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_02_(e)", 
+    "answer_html": "<p>-&gt; The largest eigenvalue is 1-&gt; The eigenvector of the eigenvalue of 1 can be scaled to have no negative entries</p>\n", 
+    "answer_latex": "-\\textgreater{} The largest eigenvalue is 1-\\textgreater{} The eigenvector of the eigenvalue of 1 can be scaled to\nhave no negative entries", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "What can you say about the eigenvalues and eigenvectors of a stochastic\nmatrix?", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>-&gt; The largest eigenvalue is 1</p>\n<p>-&gt; The eigenvector of the eigenvalue of 1 can be scaled to have no negative entries</p>\n"
+    ], 
+    "sols_latex": [
         "-\\textgreater{} The largest eigenvalue is 1\n\n-\\textgreater{} The eigenvector of the eigenvalue of 1 can be scaled to\nhave no negative entries"
     ], 
-    "hints": []
+    "sols_raw": [
+        "-> The largest eigenvalue is 1\n\n-> The eigenvector of the eigenvalue of 1 can be scaled to have no negative entries\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>What can you say about the eigenvalues and eigenvectors of a stochastic matrix?</p>\n", 
+    "statement_latex": "What can you say about the eigenvalues and eigenvectors of a stochastic\nmatrix?", 
+    "statement_raw": "What can you say about the eigenvalues and eigenvectors of a stochastic matrix?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_02_(e)", 
+    "year": 2013
 }

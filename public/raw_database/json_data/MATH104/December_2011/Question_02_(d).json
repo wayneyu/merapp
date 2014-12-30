@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(d)", 
-    "course": "MATH104", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^3+x^2-2x-3}{x^2-3}\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}f'(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}\\end{align*} and\n\n\\begin{align*}f''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}\\end{align*}\n\nOn which intervals is f(x) concave up? On which intervals is f(x)\nconcave down?", 
-    "year": 2011, 
-    "sols": [
-        "In order to find the concavity of the function, we first try to find\npoints where the second derivative is zero or undefined. These points\nwill provide endpoints of intervals for concavity.\n\nFrom\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_2_(b)}{part\n(b)} we know that $f''(x)$ is zero exactly when \\emph{x} = 0, and\nthat $f''(x)$ is undefined for \\emph{x} = \u00b1\n\nWe can now either make a sign table or pick test points between those\nvalues to determine whether we are concave up (second derivative\npositive) or concave down (second derivative negative).\n\nFor convenience, recall that\n\n\\begin{align*}f''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3} = \\frac{2x(x^2+9)}{(x+\\sqrt{3})^3(x-\\sqrt{3})^3}\\end{align*}\n\n\\begin{longtable}[c]{@{}lllll@{}}\n& $(-\\infty,-\\sqrt{3})$ & $(-\\sqrt{3},0)$ & $(0,\\sqrt{3})$ &\n$(\\sqrt{3},\\infty)$\\\\\n$\\displaystyle 2x$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$\\displaystyle x^2+9$ & $\\displaystyle +$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x+\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x-\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\n$\\displaystyle f''(x)$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\nConcavity & Concave Down & Concave Up & Concave Down & Concave Up\\\\\n\\end{longtable}\n\nTherefore $f(x)$ is concave up on $(-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)$\nand concave down on $(-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})$."
+    "answer_html": "<p>Therefore <span class=\"math\">\\(f(x)\\)</span> is concave up on <span class=\"math\">\\((-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)\\)</span> and concave down on <span class=\"math\">\\((-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})\\)</span>.</p>\n", 
+    "answer_latex": "Therefore $f(x)$ is concave up on $(-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)$\nand concave down on $(-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "YichenXu", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Consider how concavity of a function relates to the second derivative.</p>\n"
+    ], 
+    "hints_latex": [
         "Consider how concavity of a function relates to the second derivative."
-    ]
+    ], 
+    "hints_raw": [
+        "Consider how concavity of a function relates to the second derivative.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "2 (d)", 
+    "rating": 46, 
+    "sols_html": [
+        "<p>In order to find the concavity of the function, we first try to find points where the second derivative is zero or undefined. These points will provide endpoints of intervals for concavity.</p>\n<p>From <span>part (b)</span> we know that <span class=\"math\">\\(f&#39;&#39;(x)\\)</span> is zero exactly when <em>x</em> = 0, and that <span class=\"math\">\\(f&#39;&#39;(x)\\)</span> is undefined for <em>x</em> = <span class=\"math\">\\(\\pm\\)</span></p>\n<p>We can now either make a sign table or pick test points between those values to determine whether we are concave up (second derivative positive) or concave down (second derivative negative).</p>\n<p>For convenience, recall that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x) = \\frac{2x(x^2+9)}{(x^2-3)^3} = \\frac{2x(x^2+9)}{(x+\\sqrt{3})^3(x-\\sqrt{3})^3}\\end{aligned}\\]</span></p>\n<p>[c]<span>@lllll@</span> &amp; <span class=\"math\">\\((-\\infty,-\\sqrt{3})\\)</span> &amp; <span class=\"math\">\\((-\\sqrt{3},0)\\)</span> &amp; <span class=\"math\">\\((0,\\sqrt{3})\\)</span> &amp; <span class=\"math\">\\((\\sqrt{3},\\infty)\\)</span><br /><span class=\"math\">\\(\\displaystyle 2x\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br /><span class=\"math\">\\(\\displaystyle x^2+9\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br /><span class=\"math\">\\((x+\\sqrt{3})^3\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br /><span class=\"math\">\\((x-\\sqrt{3})^3\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br /><span class=\"math\">\\(\\displaystyle f&#39;&#39;(x)\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span> &amp; <span class=\"math\">\\(\\displaystyle -\\)</span> &amp; <span class=\"math\">\\(\\displaystyle +\\)</span><br />Concavity &amp; Concave Down &amp; Concave Up &amp; Concave Down &amp; Concave Up<br /></p>\n<p>Therefore <span class=\"math\">\\(f(x)\\)</span> is concave up on <span class=\"math\">\\((-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)\\)</span> and concave down on <span class=\"math\">\\((-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "In order to find the concavity of the function, we first try to find\npoints where the second derivative is zero or undefined. These points\nwill provide endpoints of intervals for concavity.\n\nFrom\n{part\n(b)} we know that $f''(x)$ is zero exactly when \\emph{x} = 0, and\nthat $f''(x)$ is undefined for \\emph{x} = $\\pm$\n\nWe can now either make a sign table or pick test points between those\nvalues to determine whether we are concave up (second derivative\npositive) or concave down (second derivative negative).\n\nFor convenience, recall that\n\n\\begin{align*}\nf''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3} = \\frac{2x(x^2+9)}{(x+\\sqrt{3})^3(x-\\sqrt{3})^3}\n\\end{align*}\n\n\\begin{longtable}[c]{@{}lllll@{}}\n& $(-\\infty,-\\sqrt{3})$ & $(-\\sqrt{3},0)$ & $(0,\\sqrt{3})$ &\n$(\\sqrt{3},\\infty)$\\\\\n$\\displaystyle 2x$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$\\displaystyle x^2+9$ & $\\displaystyle +$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x+\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle +$ & $\\displaystyle +$\\\\\n$(x-\\sqrt{3})^3$ & $\\displaystyle -$ & $\\displaystyle -$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\n$\\displaystyle f''(x)$ & $\\displaystyle -$ & $\\displaystyle +$ &\n$\\displaystyle -$ & $\\displaystyle +$\\\\\nConcavity & Concave Down & Concave Up & Concave Down & Concave Up\\\\\n\\end{longtable}\n\nTherefore $f(x)$ is concave up on $(-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)$\nand concave down on $(-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})$."
+    ], 
+    "sols_raw": [
+        "In order to find the concavity of the function, we first try to find points where the second derivative is zero or undefined. These points will provide endpoints of intervals for concavity.\n\nFrom [[Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_2_(b)|part (b)]] we know that &amp;fnof;&lt;nowiki>''&lt;/nowiki>(''x'') is zero exactly when ''x'' = 0, and that &amp;fnof;&lt;nowiki>''&lt;/nowiki>(''x'') is undefined for ''x'' = &amp;plusmn;{{sqrt|3}}\n\nWe can now either make a sign table or pick test points between those values to determine whether we are concave up (second derivative positive) or concave down (second derivative negative).\n\nFor convenience, recall that\n:&lt;math>\nf''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3} = \\frac{2x(x^2+9)}{(x+\\sqrt{3})^3(x-\\sqrt{3})^3}\n&lt;/math>\n\n{| style=\"border: solid 1px; text-align: center;\"\n|\n! &lt;math>(-\\infty,-\\sqrt{3})&lt;/math>\n! &lt;math>(-\\sqrt{3},0)&lt;/math>\n! &lt;math>(0,\\sqrt{3})&lt;/math>\n! &lt;math>(\\sqrt{3},\\infty)&lt;/math>\n|-\n|&lt;math>\\displaystyle 2x&lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n|-\n|&lt;math>\\displaystyle x^2+9&lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n|-\n|&lt;math>(x+\\sqrt{3})^3&lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n|-\n|&lt;math>(x-\\sqrt{3})^3&lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n|-\n|&lt;math>\\displaystyle f''(x)&lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n| &lt;math>\\displaystyle - &lt;/math>\n| &lt;math>\\displaystyle + &lt;/math>\n|-\n| Concavity\n| Concave Down\n| Concave Up\n| Concave Down\n| Concave Up\n|}\n\nTherefore &lt;math>f(x)&lt;/math> is concave up on &lt;math>(-\\sqrt{3},0)\\cup(\\sqrt{3},\\infty)&lt;/math> and concave down on &lt;math>(-\\infty,-\\sqrt{3})\\cup(0,\\sqrt{3})&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{x^3+x^2-2x-3}{x^2-3}\\end{aligned}\\]</span></p>\n<p>Its first and second derivatives are given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}\\end{aligned}\\]</span></p>\n<p>On which intervals is f(x) concave up? On which intervals is f(x) concave down?</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x) = \\frac{x^3+x^2-2x-3}{x^2-3}\n\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}\nf'(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}\n\\end{align*} and\n\n\\begin{align*}\nf''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}\n\\end{align*}\n\nOn which intervals is f(x) concave up? On which intervals is f(x)\nconcave down?", 
+    "statement_raw": "Consider the function\n:&lt;math>\nf(x) = \\frac{x^3+x^2-2x-3}{x^2-3}\n&lt;/math>\n\nIts first and second derivatives are given by\n:&lt;math>\nf'(x) = \\frac{(x^2-1)(x^2-6)}{(x^2-3)^2}\n&lt;/math>\nand\n:&lt;math>\nf''(x) = \\frac{2x(x^2+9)}{(x^2-3)^3}\n&lt;/math>\n\nOn which intervals is f(x) concave up? On which intervals is f(x) concave down?\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_02_(d)", 
+    "year": 2011
 }

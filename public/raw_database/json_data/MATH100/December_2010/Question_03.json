@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_03", 
-    "course": "MATH100", 
-    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nTwo cylindrical swimming pools are being filled simultaneously with\nwater, at exactly the same rate measured in $m^{3}/min$. The smaller\npool has a radius of $5m$ and the height of the water in the smaller\npool is increasing at a rate of $0.5m/min$. The larger pool has a radius\nof $8m$. How fast is the height of the water increasing in the larger\npool? Your answer must be a specific numerical value.", 
-    "year": 2010, 
-    "sols": [
-        "Let $V_1$, $r_1$, and $h_1$ be the volume, radius, and depth of the\nwater in the large pool and let $V_2$, $r_2$, and $h_2$ be the volume,\nradius, and depth of the water in the small pool. We know that $r_1=8$m\nand $r_2=5$m. Since the pools are being filled at the same rate (in\n$m^3/min$),\n\n\\begin{align*}\\frac{dV_1}{dt} = \\frac{dV_2}{dt}.\\end{align*}\n\nWe know that $\\frac{dh_2}{dt}=0.5 m/min$ and we want to find\n$\\frac{dh_1}{dt}$.\n\nBy the volume formula for a cylinder,\n\n\\begin{align*}V_1 = \\pi\\, r_1^2 h_1\\end{align*} and $V_2 = \\pi\\, r_2^2 h_2$.\n\nNote that $r_1$ and $r_2$ are constants. The variables of the problem\nare $V_1, V_2, h_1,$ and $h_2.$\n\nSince $\\frac{dV_1}{dt} = \\frac{dV_2}{dt}$,\n\n\\begin{align*}\\pi\\, r_1^2 \\frac{dh_1}{dt} =\\pi\\, r_2^2 \\frac{dh_2}{dt}.\\end{align*}\n\nHence, the water depth in the the larger pool is increasing at a rate of\n\n\\begin{align*}\\frac{dh_1}{dt} =\\frac{r_2^2}{r_1^2 } \\frac{dh_2}{dt}  = \\frac{(5m)^2}{(8m)^2} \\frac12 m/min = \\frac{25}{128} m/min.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dh_1}{dt}=\\frac{25}{128} m/min.\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dh_1}{dt}=\\frac{25}{128} m/min.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Clearly define your variables using diagrams or sentences. Which quantities remain constant and which quantities are changing? What data is given and what are you trying to solve for?</p>\n"
+    ], 
+    "hints_latex": [
         "Clearly define your variables using diagrams or sentences. Which\nquantities remain constant and which quantities are changing? What data\nis given and what are you trying to solve for?"
-    ]
+    ], 
+    "hints_raw": [
+        "Clearly define your variables using diagrams or sentences.  Which quantities remain constant and which quantities are changing?  What data is given and what are you trying to solve for?\n"
+    ], 
+    "num_votes": 5, 
+    "question": "3", 
+    "rating": 78, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(V_1\\)</span>, <span class=\"math\">\\(r_1\\)</span>, and <span class=\"math\">\\(h_1\\)</span> be the volume, radius, and depth of the water in the large pool and let <span class=\"math\">\\(V_2\\)</span>, <span class=\"math\">\\(r_2\\)</span>, and <span class=\"math\">\\(h_2\\)</span> be the volume, radius, and depth of the water in the small pool. We know that <span class=\"math\">\\(r_1=8\\)</span>m and <span class=\"math\">\\(r_2=5\\)</span>m. Since the pools are being filled at the same rate (in <span class=\"math\">\\(m^3/min\\)</span>),</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dV_1}{dt} = \\frac{dV_2}{dt}.\\end{aligned}\\]</span></p>\n<p>We know that <span class=\"math\">\\(\\frac{dh_2}{dt}=0.5 m/min\\)</span> and we want to find <span class=\"math\">\\(\\frac{dh_1}{dt}\\)</span>.</p>\n<p>By the volume formula for a cylinder,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV_1 = \\pi\\, r_1^2 h_1\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(V_2 = \\pi\\, r_2^2 h_2\\)</span>.</p>\n<p>Note that <span class=\"math\">\\(r_1\\)</span> and <span class=\"math\">\\(r_2\\)</span> are constants. The variables of the problem are <span class=\"math\">\\(V_1, V_2, h_1,\\)</span> and <span class=\"math\">\\(h_2.\\)</span></p>\n<p>Since <span class=\"math\">\\(\\frac{dV_1}{dt} = \\frac{dV_2}{dt}\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\pi\\, r_1^2 \\frac{dh_1}{dt} =\\pi\\, r_2^2 \\frac{dh_2}{dt}.\\end{aligned}\\]</span></p>\n<p>Hence, the water depth in the the larger pool is increasing at a rate of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dh_1}{dt} =\\frac{r_2^2}{r_1^2 } \\frac{dh_2}{dt}  = \\frac{(5m)^2}{(8m)^2} \\frac12 m/min = \\frac{25}{128} m/min.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let $V_1$, $r_1$, and $h_1$ be the volume, radius, and depth of the\nwater in the large pool and let $V_2$, $r_2$, and $h_2$ be the volume,\nradius, and depth of the water in the small pool. We know that $r_1=8$m\nand $r_2=5$m. Since the pools are being filled at the same rate (in\n$m^3/min$),\n\n\\begin{align*}\n\\frac{dV_1}{dt} = \\frac{dV_2}{dt}.\n\\end{align*}\n\nWe know that $\\frac{dh_2}{dt}=0.5 m/min$ and we want to find\n$\\frac{dh_1}{dt}$.\n\nBy the volume formula for a cylinder,\n\n\\begin{align*}\nV_1 = \\pi\\, r_1^2 h_1\n\\end{align*} and $V_2 = \\pi\\, r_2^2 h_2$.\n\nNote that $r_1$ and $r_2$ are constants. The variables of the problem\nare $V_1, V_2, h_1,$ and $h_2.$\n\nSince $\\frac{dV_1}{dt} = \\frac{dV_2}{dt}$,\n\n\\begin{align*}\n\\pi\\, r_1^2 \\frac{dh_1}{dt} =\\pi\\, r_2^2 \\frac{dh_2}{dt}.\n\\end{align*}\n\nHence, the water depth in the the larger pool is increasing at a rate of\n\n\\begin{align*}\n\\frac{dh_1}{dt} =\\frac{r_2^2}{r_1^2 } \\frac{dh_2}{dt}  = \\frac{(5m)^2}{(8m)^2} \\frac12 m/min = \\frac{25}{128} m/min.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Let &lt;math>V_1 &lt;/math>, &lt;math> r_1&lt;/math>, and &lt;math> h_1&lt;/math> be the volume, radius, and depth of the water in the large pool and let &lt;math>V_2 &lt;/math>, &lt;math> r_2&lt;/math>, and &lt;math> h_2&lt;/math> be the volume, radius, and depth of the water in the small pool.   We know that &lt;math>r_1=8 &lt;/math>m and &lt;math> r_2=5&lt;/math>m.  Since the pools are being filled at the same rate (in &lt;math> m^3/min&lt;/math>), \n\n:&lt;math> \\frac{dV_1}{dt} = \\frac{dV_2}{dt}.&lt;/math> \n\nWe know that &lt;math> \\frac{dh_2}{dt}=0.5 m/min&lt;/math>  and we want to find &lt;math> \\frac{dh_1}{dt}&lt;/math>.\n\nBy the volume formula for a cylinder,\n\n:&lt;math>V_1 = \\pi\\, r_1^2 h_1 &lt;/math>  and  &lt;math>V_2 = \\pi\\, r_2^2 h_2 &lt;/math>.\n\nNote that &lt;math> r_1&lt;/math> and &lt;math> r_2&lt;/math> are constants.  The variables of the problem are &lt;math> V_1, V_2, h_1,&lt;/math> and &lt;math> h_2. &lt;/math> \n\nSince &lt;math> \\frac{dV_1}{dt} = \\frac{dV_2}{dt}&lt;/math>, \n\n:&lt;math>\\pi\\, r_1^2 \\frac{dh_1}{dt} =\\pi\\, r_2^2 \\frac{dh_2}{dt} &lt;/math>.\n\nHence, the water depth in the the larger pool is increasing at a rate of\n:&lt;math> \\frac{dh_1}{dt} =\\frac{r_2^2}{r_1^2 } \\frac{dh_2}{dt}  = \\frac{(5m)^2}{(8m)^2} \\frac12 m/min = \\frac{25}{128} m/min&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.</p>\n<p>Two cylindrical swimming pools are being filled simultaneously with water, at exactly the same rate measured in <span class=\"math\">\\(m^{3}/min\\)</span>. The smaller pool has a radius of <span class=\"math\">\\(5m\\)</span> and the height of the water in the smaller pool is increasing at a rate of <span class=\"math\">\\(0.5m/min\\)</span>. The larger pool has a radius of <span class=\"math\">\\(8m\\)</span>. How fast is the height of the water increasing in the larger pool? Your answer must be a specific numerical value.</p>\n", 
+    "statement_latex": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nTwo cylindrical swimming pools are being filled simultaneously with\nwater, at exactly the same rate measured in $m^{3}/min$. The smaller\npool has a radius of $5m$ and the height of the water in the smaller\npool is increasing at a rate of $0.5m/min$. The larger pool has a radius\nof $8m$. How fast is the height of the water increasing in the larger\npool? Your answer must be a specific numerical value.", 
+    "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nTwo cylindrical swimming pools are being filled simultaneously with water, at exactly the same rate measured in &lt;math>m^{3}/min &lt;/math>. The smaller pool has a radius of &lt;math> 5m &lt;/math> and the height of the water in the smaller pool is increasing at a rate of &lt;math> 0.5m/min &lt;/math>. The larger pool has a radius of &lt;math> 8m &lt;/math>. How fast is the height of the water increasing in the larger pool? Your answer must be a specific numerical value.\n", 
+    "term": "December", 
+    "topics": [
+        "Related_rates"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_03", 
+    "year": 2010
 }

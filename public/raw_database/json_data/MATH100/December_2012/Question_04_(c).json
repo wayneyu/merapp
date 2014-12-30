@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04_(c)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nEvaluate\n\n$\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}$", 
-    "year": 2012, 
-    "sols": [
-        "Proceeding as suggested in the hint, we have\n\n\\begin{align*}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} &= \\lim_{x \\to \\infty}e^{\\ln\\left(1 + \\frac{5}{x}\\right)^{x}} \\\\\n&= e^{\\lim_{x \\to \\infty}x\\ln\\left(1 + \\frac{5}{x}\\right)} \\\\\n&= e^{\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}}}\\end{align*}\n\nWhere we first use that $\\ln(a^{b}) = b \\ln(a)$, and then multiplied the\ntop and bottom by 1/\\emph{x}.\n\nLet us now look at the exponent in more detail. For\n$x \\rightarrow \\infty$ the numerator and the denominator both go to 0\n(since \\emph{ln(1) = 0}). We hence use L'Hospital's rule for the\nexponent:\n\n\\begin{align*}\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}} = \\lim_{x \\to \\infty}\\frac{\\frac{1}{1 + \\tfrac{5}{x}}\\cdot \\frac{-5}{x^{2}}}{-\\tfrac{1}{x^{2}}} = \\lim_{x \\rightarrow \\infty} \\frac{5}{1+\\frac5{x}}\\end{align*}\n\nWhere we cancel the $-\\frac1{x^2}$ in the second step. The remaining\nlimit is straight forward and evaluates to 5. Hence our final answer is\n\n\\begin{align*}\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} = e^5\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}=e^5\\)</span></p>\n", 
+    "answer_latex": " $\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}=e^5$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the fact that</p>\n<p><span class=\"math\">\\(\\displaystyle f(x) = e^{\\ln f(x)}\\)</span></p>\n<p>and move the limit to the exponent (valid since exponentials are continuous functions). Then solve the remaining limit using L&#8217;Hopital&#8217;s rule.</p>\n"
+    ], 
+    "hints_latex": [
         "Use the fact that\n\n$\\displaystyle f(x) = e^{\\ln f(x)}$\n\nand move the limit to the exponent (valid since exponentials are\ncontinuous functions). Then solve the remaining limit using L'Hopital's\nrule."
-    ]
+    ], 
+    "hints_raw": [
+        "Use the fact that\n\n&lt;math>\n\\displaystyle f(x) = e^{\\ln f(x)}\n&lt;/math>\n\nand move the limit to the exponent (valid since exponentials are continuous functions). Then solve the remaining limit using L'Hopital's rule.\n"
+    ], 
+    "num_votes": 14, 
+    "question": "4 (c)", 
+    "rating": 37, 
+    "sols_html": [
+        "<p>Proceeding as suggested in the hint, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} &amp;= \\lim_{x \\to \\infty}e^{\\ln\\left(1 + \\frac{5}{x}\\right)^{x}} \\\\\n&amp;= e^{\\lim_{x \\to \\infty}x\\ln\\left(1 + \\frac{5}{x}\\right)} \\\\\n&amp;= e^{\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}}}\\end{aligned}\\]</span></p>\n<p>Where we first use that <span class=\"math\">\\(\\ln(a^{b}) = b \\ln(a)\\)</span>, and then multiplied the top and bottom by 1/<em>x</em>.</p>\n<p>Let us now look at the exponent in more detail. For <span class=\"math\">\\(x \\rightarrow \\infty\\)</span> the numerator and the denominator both go to 0 (since <em>ln(1) = 0</em>). We hence use L&#8217;Hospital&#8217;s rule for the exponent:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}} = \\lim_{x \\to \\infty}\\frac{\\frac{1}{1 + \\tfrac{5}{x}}\\cdot \\frac{-5}{x^{2}}}{-\\tfrac{1}{x^{2}}} = \\lim_{x \\rightarrow \\infty} \\frac{5}{1+\\frac5{x}}\\end{aligned}\\]</span></p>\n<p>Where we cancel the <span class=\"math\">\\(-\\frac1{x^2}\\)</span> in the second step. The remaining limit is straight forward and evaluates to 5. Hence our final answer is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} = e^5\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as suggested in the hint, we have\n\n\\begin{align*}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} &= \\lim_{x \\to \\infty}e^{\\ln\\left(1 + \\frac{5}{x}\\right)^{x}} \\\\\n&= e^{\\lim_{x \\to \\infty}x\\ln\\left(1 + \\frac{5}{x}\\right)} \\\\\n&= e^{\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}}}\n\\end{align*}\n\nWhere we first use that $\\ln(a^{b}) = b \\ln(a)$, and then multiplied the\ntop and bottom by 1/\\emph{x}.\n\nLet us now look at the exponent in more detail. For\n$x \\rightarrow \\infty$ the numerator and the denominator both go to 0\n(since \\emph{ln(1) = 0}). We hence use L'Hospital's rule for the\nexponent:\n\n\\begin{align*}\n\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}} = \\lim_{x \\to \\infty}\\frac{\\frac{1}{1 + \\tfrac{5}{x}}\\cdot \\frac{-5}{x^{2}}}{-\\tfrac{1}{x^{2}}} = \\lim_{x \\rightarrow \\infty} \\frac{5}{1+\\frac5{x}}\n\\end{align*}\n\nWhere we cancel the $-\\frac1{x^2}$ in the second step. The remaining\nlimit is straight forward and evaluates to 5. Hence our final answer is\n\n\\begin{align*}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} = e^5\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Proceeding as suggested in the hint, we have\n\n\n:&lt;math>\n\\begin{align}\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} &amp;= \\lim_{x \\to \\infty}e^{\\ln\\left(1 + \\frac{5}{x}\\right)^{x}} \\\\\n&amp;= e^{\\lim_{x \\to \\infty}x\\ln\\left(1 + \\frac{5}{x}\\right)} \\\\\n&amp;= e^{\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}}}\n\\end{align}\n&lt;/math>\n\nWhere we first use that &lt;math> \\ln(a^{b}) = b \\ln(a)&lt;/math>, and then multiplied the top and bottom by 1/''x''.\n\nLet us now look at the exponent in more detail. For &lt;math> x \\rightarrow \\infty &lt;/math> the numerator and the denominator both go to 0 (since ''ln(1) = 0''). We hence use L'Hospital's rule for the exponent:\n\n:&lt;math>\n\\lim_{x \\to \\infty}\\frac{\\ln\\left(1 + \\frac{5}{x}\\right)}{\\tfrac{1}{x}} = \\lim_{x \\to \\infty}\\frac{\\frac{1}{1 + \\tfrac{5}{x}}\\cdot \\frac{-5}{x^{2}}}{-\\tfrac{1}{x^{2}}} = \\lim_{x \\rightarrow \\infty} \\frac{5}{1+\\frac5{x}}\n&lt;/math>\n\nWhere we cancel the &lt;math> -\\frac1{x^2} &lt;/math> in the second step. The remaining limit is straight forward and evaluates to 5. Hence our final answer is\n:&lt;math>\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x} = e^5\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Evaluate</p>\n<p><span class=\"math\">\\(\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nEvaluate\n\n$\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}$", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nEvaluate\n\n&lt;math>\n\\lim_{x \\to \\infty}\\left(1 + \\frac{5}{x}\\right)^{x}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_04_(c)", 
+    "year": 2012
 }

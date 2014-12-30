@@ -1,15 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $\\displaystyle y = (\\ln x)^x$, find $\\displaystyle \\frac{dy}{dx}$.", 
-    "year": 2013, 
-    "sols": [
-        "First we take the natural logarithm of both\nsides:\\\\\\\\$y = (\\ln x)^x \\Leftrightarrow \\ln y = \\ln((\\ln x)^x) \\Leftrightarrow \\ln y = x \\cdot \\ln(\\ln x)$\n~~~~(by the laws of logarithms).\n\nWe then differentiate both sides with respect to $x~$, using the product\nand chain rules as needed:\\\\ \\begin{align*}\n\\frac{d}{dx}(\\ln y) &= \\frac{d}{dx}(x \\cdot \\ln(\\ln x))\n\\\\ \\frac{1}{y} \\cdot \\frac{dy}{dx} &= 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{d}{dx}(\\ln x)\n\\\\ \\frac{dy}{dx} &= y \\cdot \\left( \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x}\\right)\n\\\\ \\frac{dy}{dx} &= {\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dy}{dx}={\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dy}{dx}={\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Note that the power and variable exponent rules do not apply here since both the <em>base and the power</em> contain variables.</p>\n", 
+        "<p>Try using <strong>logarithmic differentiation</strong> - begin by taking the (natural) logarithm of both sides.</p>\n", 
+        "<p>Observe that<br /><span class=\"math\">\\(y = f(x)^{g(x)} \\Leftrightarrow \\ln y = \\ln(f(x)^{g(x)}) \\Leftrightarrow \\ln y = g(x)\\ln f(x)\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Note that the power and variable exponent rules do not apply here since\nboth the \\emph{base and the power} contain variables.", 
         "Try using \\textbf{logarithmic differentiation} - begin by taking the\n(natural) logarithm of both sides.", 
         "Observe\nthat\\\\$y = f(x)^{g(x)} \\Leftrightarrow \\ln y = \\ln(f(x)^{g(x)}) \\Leftrightarrow \\ln y = g(x)\\ln f(x)$."
-    ]
+    ], 
+    "hints_raw": [
+        "Note that the power and variable exponent rules do not apply here since both the ''base and the power'' contain variables.\n", 
+        "Try using '''logarithmic differentiation''' - begin by taking the (natural) logarithm of both sides.\n", 
+        "Observe that &lt;br>\n&lt;math>y = f(x)^{g(x)} \\Leftrightarrow \\ln y = \\ln(f(x)^{g(x)}) \\Leftrightarrow \\ln y = g(x)\\ln f(x)&lt;/math>.\n"
+    ], 
+    "num_votes": 12, 
+    "question": "2 (b)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>First we take the natural logarithm of both sides:<br /><br /><span class=\"math\">\\(y = (\\ln x)^x \\Leftrightarrow \\ln y = \\ln((\\ln x)^x) \\Leftrightarrow \\ln y = x \\cdot \\ln(\\ln x)\\)</span> &#160;&#160;&#160;&#160;(by the laws of logarithms).</p>\n<p>We then differentiate both sides with respect to <span class=\"math\">\\(x~\\)</span>, using the product and chain rules as needed:<br /></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx}(\\ln y) &amp;= \\frac{d}{dx}(x \\cdot \\ln(\\ln x))\n\\\\ \\frac{1}{y} \\cdot \\frac{dy}{dx} &amp;= 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{d}{dx}(\\ln x)\n\\\\ \\frac{dy}{dx} &amp;= y \\cdot \\left( \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x}\\right)\n\\\\ \\frac{dy}{dx} &amp;= {\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First we take the natural logarithm of both\nsides:\\\\\\\\$y = (\\ln x)^x \\Leftrightarrow \\ln y = \\ln((\\ln x)^x) \\Leftrightarrow \\ln y = x \\cdot \\ln(\\ln x)$\n~~~~(by the laws of logarithms).\n\nWe then differentiate both sides with respect to $x~$, using the product\nand chain rules as needed:\\\\ \\begin{align*}\n\\frac{d}{dx}(\\ln y) &= \\frac{d}{dx}(x \\cdot \\ln(\\ln x))\n\\\\ \\frac{1}{y} \\cdot \\frac{dy}{dx} &= 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{d}{dx}(\\ln x)\n\\\\ \\frac{dy}{dx} &= y \\cdot \\left( \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x}\\right)\n\\\\ \\frac{dy}{dx} &= {\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "First we take the natural logarithm of both sides: &lt;br>&lt;br>\n&lt;math>y = (\\ln x)^x \\Leftrightarrow \\ln y = \\ln((\\ln x)^x) \\Leftrightarrow \\ln y = x \\cdot \\ln(\\ln x)&lt;/math> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(by the laws of logarithms).\n\n&lt;br>We then differentiate both sides with respect to &lt;math>x~&lt;/math>, using the product and chain rules as needed:&lt;br>\n\n&lt;math>\n\\begin{align}\n\\frac{d}{dx}(\\ln y) &amp;= \\frac{d}{dx}(x \\cdot \\ln(\\ln x))\n\\\\ \\frac{1}{y} \\cdot \\frac{dy}{dx} &amp;= 1 \\cdot \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{d}{dx}(\\ln x)\n\\\\ \\frac{dy}{dx} &amp;= y \\cdot \\left( \\ln(\\ln x) + x \\cdot \\frac{1}{\\ln x} \\cdot \\frac{1}{x}\\right)\n\\\\ \\frac{dy}{dx} &amp;= {\\color{blue} (\\ln x)^x \\left( \\ln(\\ln x) + \\frac{1}{\\ln x}\\right) }\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "NicholasHu"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Question. Simplify your answer as much as possible and show your work.</strong></p>\n<p>If <span class=\"math\">\\(\\displaystyle y = (\\ln x)^x\\)</span>, find <span class=\"math\">\\(\\displaystyle \\frac{dy}{dx}\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $\\displaystyle y = (\\ln x)^x$, find $\\displaystyle \\frac{dy}{dx}$.", 
+    "statement_raw": "'''Short-Answer Question. Simplify your answer as much as possible and show your work.'''\n\nIf &lt;math>\\displaystyle y = (\\ln x)^x&lt;/math>, find &lt;math>\\displaystyle \\frac{dy}{dx}&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_02_(b)", 
+    "year": 2013
 }

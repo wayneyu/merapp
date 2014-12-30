@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
+    "answer_html": "<p>The first and third conditions ensure that the drawing of <span class=\"math\">\\(f\\)</span> has no holes; the second and third conditions ensure that the drawing of <span class=\"math\">\\(f\\)</span> has no jumps.</p>\n", 
+    "answer_latex": "The first and third conditions ensure that the drawing of $f$ has no\nholes; the second and third conditions ensure that the drawing of $f$ has\nno jumps.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
+    ], 
     "course": "MATH110", 
-    "statement": "Define what it means for a function $f$ to be continuous at a point\n\\emph{a}.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>A function is continuous if its graph has no holes or jumps. How can a hole or jump be described using mathematical language?</p>\n"
+    ], 
+    "hints_latex": [
+        "A function is continuous if its graph has no holes or jumps. How can a\nhole or jump be described using mathematical language?"
+    ], 
+    "hints_raw": [
+        "A function is continuous if its graph has no holes or jumps.  How can a hole or jump be described using mathematical language?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A function <span class=\"math\">\\(f\\)</span> is continuous as a point <em>a</em> if:</p>\n<ol>\n<li><p><span class=\"math\">\\(f(a)\\)</span> is defined</p></li>\n</ol>\n<ol>\n<li><p><span class=\"math\">\\(\\displaystyle \\lim_{x \\to a} f(x)\\)</span> exists, i.e. <span class=\"math\">\\(\\displaystyle \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L\\)</span> where <em>L</em> is finite.</p></li>\n</ol>\n<ol>\n<li><p><span class=\"math\">\\(\\displaystyle \\lim_{x \\to a} = f(a)\\)</span></p></li>\n</ol>\n<p>The first and third conditions ensure that the drawing of <span class=\"math\">\\(f\\)</span> has no holes; the second and third conditions ensure that the drawing of <span class=\"math\">\\(f\\)</span> has no jumps.</p>\n"
+    ], 
+    "sols_latex": [
         "A function $f$ is continuous as a point \\emph{a} if:\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f(a)$ is defined\n\\end{enumerate}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle \\lim_{x \\to a} f(x)$ exists, i.e.\n  $\\displaystyle \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L$\n  where \\emph{L} is finite.\n\\end{enumerate}\n\n\\begin{enumerate}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $\\displaystyle \\lim_{x \\to a} = f(a)$\n\\end{enumerate}\n\nThe first and third conditions ensure that the drawing of $f$ has no\nholes; the second and third conditions ensure that the drawing of $f$ has\nno jumps."
     ], 
-    "hints": [
-        "A function is continuous if its graph has no holes or jumps. How can a\nhole or jump be described using mathematical language?"
-    ]
+    "sols_raw": [
+        "A function &amp;fnof; is continuous as a point ''a'' if:\n\n# &amp;fnof;(''a'') is defined\n\n# &lt;math>\\displaystyle \\lim_{x \\to a} f(x)&lt;/math> exists, i.e. &lt;math>\\displaystyle \\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = L&lt;/math> where ''L'' is finite.  \n\n# &lt;math>\\displaystyle \\lim_{x \\to a} = f(a)&lt;/math>\n\nThe first and third conditions ensure that the drawing of &amp;fnof; has no holes; the second and third conditions ensure that the drawing of &amp;fnof; has no jumps.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Define what it means for a function <span class=\"math\">\\(f\\)</span> to be continuous at a point <em>a</em>.</p>\n", 
+    "statement_latex": "Define what it means for a function $f$ to be continuous at a point\n\\emph{a}.", 
+    "statement_raw": "Define what it means for a function &amp;fnof; to be continuous at a point ''a''.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_02_(a)", 
+    "year": 2011
 }

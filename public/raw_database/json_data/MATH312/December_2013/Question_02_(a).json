@@ -1,9 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH312", 
-    "statement": "Find all solutions to the congruence\n$\\displaystyle x^{2} \\equiv 1 \\mod{55}$", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Find all solutions to the congruence <span class=\"math\">\\(\\displaystyle x^{2} \\equiv 1 \\mod{55}\\)</span></p>\n", 
+    "statement_latex": "Find all solutions to the congruence\n$\\displaystyle x^{2} \\equiv 1 \\mod{55}$", 
+    "statement_raw": "Find all solutions to the congruence &lt;math> \\displaystyle  x^{2} \\equiv 1 \\mod{55} &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Chinese_remainder_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2013/Question_02_(a)", 
+    "year": 2013
 }

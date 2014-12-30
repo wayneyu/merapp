@@ -1,15 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
-    "course": "MATH307", 
-    "statement": "Find the \\emph{QR} decomposition of the matrix\n\n\\begin{align*}\\begin{bmatrix}\n0 & 1 \\\\\n1 & 0 \\\\\n0 & -1 \\\\\n-1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\\end{align*}", 
-    "year": 2008, 
-    "sols": [
-        "To begin with, we note that the columns of \\emph{A} are already\northogonal,\n\n\\begin{align*}\\begin{bmatrix}\n0 & 1 & 0 & -1 & 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\\end{align*}\n\nSo we can simply put the normalized columns of \\emph{A} into the matrix\n\\emph{Q}:\n\n\\begin{align*}Q = \\begin{bmatrix}\n0 & \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} & 0 \\\\\n0 & -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} & 0 \\\\\n0 & \\frac1{\\sqrt 3}\n\\end{bmatrix}\\end{align*}\n\nAs a last step, we calculate \\emph{R = Q\\textsuperscript{T}A} to find\n\n\\begin{align*}R = \\begin{bmatrix}\n\\sqrt 2 & 0 \\\\ 0 & \\sqrt 3\n\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(R=\\begin{bmatrix}\n\\sqrt 2  0 \\\\ 0  \\sqrt 3\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $R=\\begin{bmatrix}\n\\sqrt 2  0 \\\\ 0  \\sqrt 3\n\\end{bmatrix}$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What do you notice when you take the dot product of the two columns of <em>A</em>? How does this simplify the computation?</p>\n", 
+        "<p>Since the two columns of <em>A</em> are already orthogonal, we can simply use the normalized columns of <em>A</em> in <em>Q</em>.</p>\n", 
+        "<p>As a last step, since <em>A = QR</em> and <em>Q</em> is orthonormal, find <em>R</em> by computing <em>R = Q<sup>T</sup>A</em>.</p>\n"
+    ], 
+    "hints_latex": [
         "What do you notice when you take the dot product of the two columns of\n\\emph{A}? How does this simplify the computation?", 
         "Since the two columns of \\emph{A} are already orthogonal, we can simply\nuse the normalized columns of \\emph{A} in \\emph{Q}.", 
         "As a last step, since \\emph{A = QR} and \\emph{Q} is orthonormal, find\n\\emph{R} by computing \\emph{R = Q\\textsuperscript{T}A}."
-    ]
+    ], 
+    "hints_raw": [
+        "What do you notice when you take the dot product of the two columns of ''A''? How does this simplify the computation?\n", 
+        "Since the two columns of ''A'' are already orthogonal, we can simply use the normalized columns of ''A'' in ''Q''.\n", 
+        "As a last step, since ''A = QR'' and ''Q'' is orthonormal, find ''R'' by computing ''R = Q&lt;sup>T&lt;/sup>A''.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To begin with, we note that the columns of <em>A</em> are already orthogonal,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n0 &amp; 1 &amp; 0 &amp; -1 &amp; 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\\end{aligned}\\]</span></p>\n<p>So we can simply put the normalized columns of <em>A</em> into the matrix <em>Q</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nQ = \\begin{bmatrix}\n0 &amp; \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} &amp; 0 \\\\\n0 &amp; -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} &amp; 0 \\\\\n0 &amp; \\frac1{\\sqrt 3}\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>As a last step, we calculate <em>R = Q<sup>T</sup>A</em> to find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR = \\begin{bmatrix}\n\\sqrt 2 &amp; 0 \\\\ 0 &amp; \\sqrt 3\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To begin with, we note that the columns of \\emph{A} are already\northogonal,\n\n\\begin{align*}\n\\begin{bmatrix}\n0 & 1 & 0 & -1 & 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0\n\\end{align*}\n\nSo we can simply put the normalized columns of \\emph{A} into the matrix\n\\emph{Q}:\n\n\\begin{align*}\nQ = \\begin{bmatrix}\n0 & \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} & 0 \\\\\n0 & -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} & 0 \\\\\n0 & \\frac1{\\sqrt 3}\n\\end{bmatrix}\n\\end{align*}\n\nAs a last step, we calculate \\emph{R = Q\\textsuperscript{T}A} to find\n\n\\begin{align*}\nR = \\begin{bmatrix}\n\\sqrt 2 & 0 \\\\ 0 & \\sqrt 3\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To begin with, we note that the columns of ''A'' are already orthogonal,\n\n:&lt;math> \\begin{bmatrix}\n0 &amp; 1 &amp; 0 &amp; -1 &amp; 0\n\\end{bmatrix} \\cdot \\begin{bmatrix}\n1 \\\\ 0 \\\\ -1 \\\\ 0 \\\\ 1\n\\end{bmatrix} = 0 &lt;/math>\n\nSo we can simply put the normalized columns of ''A'' into the matrix ''Q'':\n\n:&lt;math> Q = \\begin{bmatrix}\n0 &amp; \\frac1{\\sqrt 3} \\\\\n\\frac1{\\sqrt 2} &amp; 0 \\\\\n0 &amp; -\\frac1{\\sqrt 3} \\\\\n-\\frac1{\\sqrt 2} &amp; 0 \\\\\n0 &amp; \\frac1{\\sqrt 3}\n\\end{bmatrix} &lt;/math>\n\nAs a last step, we calculate ''R = Q&lt;sup>T&lt;/sup>A'' to find\n\n:&lt;math> R = \\begin{bmatrix}\n\\sqrt 2 &amp; 0 \\\\ 0 &amp; \\sqrt 3\n\\end{bmatrix} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Find the <em>QR</em> decomposition of the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n0 &amp; 1 \\\\\n1 &amp; 0 \\\\\n0 &amp; -1 \\\\\n-1 &amp; 0 \\\\\n0 &amp; 1 \\\\\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the \\emph{QR} decomposition of the matrix\n\n\\begin{align*}\n\\begin{bmatrix}\n0 & 1 \\\\\n1 & 0 \\\\\n0 & -1 \\\\\n-1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\n\\end{align*}", 
+    "statement_raw": "Find the ''QR'' decomposition of the matrix\n\n:&lt;math>\n\\begin{bmatrix}\n0 &amp; 1 \\\\\n1 &amp; 0 \\\\\n0 &amp; -1 \\\\\n-1 &amp; 0 \\\\\n0 &amp; 1 \\\\\n\\end{bmatrix}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "QR_decomposition"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_04", 
+    "year": 2008
 }

@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle (2^{18})^{2} \\equiv 2^{36} \\equiv 1 \\mod{1729}\\)</span>and this is a contradiction.Hence 1729 is not prime.</p>\n", 
+    "answer_latex": "$\\displaystyle (2^{18})^{2} \\equiv 2^{36} \\equiv 1 \\mod{1729}$and this is a contradiction.Hence 1729 is not prime.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Show, without using the explicit prime factorization of 1729, but using\nthe following congruences instead, that 1729 is composite.\n\n\\begin{align*}\n2^{18} &\\equiv 1065 \\mod{1729} \\\\\n2^{36} &\\equiv 1 \\mod{1729}\\end{align*}", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This idea is similar to the idea in Miller&#8217;s Test. Suppose that 1729 is prime. How many solutions should <span class=\"math\">\\(\\displaystyle x^{2} - 1 \\equiv 0 \\mod{1729}\\)</span> have?</p>\n"
+    ], 
+    "hints_latex": [
+        "This idea is similar to the idea in Miller's Test. Suppose that 1729 is\nprime. How many solutions should\n$\\displaystyle x^{2} - 1 \\equiv 0 \\mod{1729}$ have?"
+    ], 
+    "hints_raw": [
+        "This idea is similar to the idea in Miller's Test. Suppose that 1729 is prime. How many solutions should &lt;math> \\displaystyle x^{2} - 1 \\equiv 0 \\mod{1729}&lt;/math> have?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Assume towards a contradiction that 1729 is prime. Look at</p>\n<p><span class=\"math\">\\(\\displaystyle x^{2} \\equiv 1 \\mod{1729}\\)</span></p>\n<p>If this were prime, we would have that the only two solutions to this equation are given by <span class=\"math\">\\(\\displaystyle x \\equiv 1 \\mod{1729}\\)</span> and <span class=\"math\">\\(\\displaystyle x \\equiv -1 \\mod{1729}\\)</span> (if you haven&#8217;t seen this before, isolate for 0, factor and argue that because we&#8217;ve assumed that 1729 is prime, it has to divide one of the factors). However, notice that from the given congruences, we have that <span class=\"math\">\\(\\displaystyle 2^{18} \\not\\equiv \\pm 1 \\mod{1729}\\)</span> but</p>\n<p><span class=\"math\">\\(\\displaystyle (2^{18})^{2} \\equiv 2^{36} \\equiv 1 \\mod{1729}\\)</span></p>\n<p>and this is a contradiction. Hence 1729 is not prime.</p>\n"
+    ], 
+    "sols_latex": [
         "Assume towards a contradiction that 1729 is prime. Look at\n\n$\\displaystyle x^{2} \\equiv 1 \\mod{1729}$\n\nIf this were prime, we would have that the only two solutions to this\nequation are given by $\\displaystyle x \\equiv 1 \\mod{1729}$ and\n$\\displaystyle x \\equiv -1 \\mod{1729}$ (if you haven't seen this before,\nisolate for 0, factor and argue that because we've assumed that 1729 is\nprime, it has to divide one of the factors). However, notice that from\nthe given congruences, we have that\n$\\displaystyle 2^{18} \\not\\equiv \\pm 1 \\mod{1729}$ but\n\n$\\displaystyle (2^{18})^{2} \\equiv 2^{36} \\equiv 1 \\mod{1729}$\n\nand this is a contradiction. Hence 1729 is not prime."
     ], 
-    "hints": [
-        "This idea is similar to the idea in Miller's Test. Suppose that 1729 is\nprime. How many solutions should\n$\\displaystyle x^{2} - 1 \\equiv 0 \\mod{1729}$ have?"
-    ]
+    "sols_raw": [
+        "Assume towards a contradiction that 1729 is prime. Look at\n\n&lt;math> \\displaystyle x^{2} \\equiv 1 \\mod{1729}&lt;/math>\n\nIf this were prime, we would have that the only two solutions to this equation are given by &lt;math> \\displaystyle x \\equiv 1 \\mod{1729}&lt;/math> and &lt;math> \\displaystyle x \\equiv -1 \\mod{1729}&lt;/math> (if you haven't seen this before, isolate for 0, factor and argue that because we've assumed that 1729 is prime, it has to divide one of the factors). However, notice that from the given congruences, we have that &lt;math> \\displaystyle 2^{18} \\not\\equiv \\pm 1 \\mod{1729}&lt;/math> but\n\n&lt;math> \\displaystyle (2^{18})^{2} \\equiv 2^{36} \\equiv 1 \\mod{1729}&lt;/math>\n\nand this is a contradiction. Hence 1729 is not prime.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Show, without using the explicit prime factorization of 1729, but using the following congruences instead, that 1729 is composite.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2^{18} &amp;\\equiv 1065 \\mod{1729} \\\\\n2^{36} &amp;\\equiv 1 \\mod{1729}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Show, without using the explicit prime factorization of 1729, but using\nthe following congruences instead, that 1729 is composite.\n\n\\begin{align*}\n2^{18} &\\equiv 1065 \\mod{1729} \\\\\n2^{36} &\\equiv 1 \\mod{1729}\n\\end{align*}", 
+    "statement_raw": "Show, without using the explicit prime factorization of 1729, but using the following congruences instead, that 1729 is composite.\n\n&lt;math> \n\\begin{align}\n2^{18} &amp;\\equiv 1065 \\mod{1729} \\\\\n2^{36} &amp;\\equiv 1 \\mod{1729}\n\\end{align}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Miller%27s_test"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_04_(c)", 
+    "year": 2008
 }

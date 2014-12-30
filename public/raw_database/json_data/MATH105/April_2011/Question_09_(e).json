@@ -1,13 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_09_(e)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nIn the box, write down which of the equations\n\n\\begin{align*}z = x^2 + y^2, \\quad z = x^2 - y^2, \\quad x^2 + y^2 + z^2 = 1, \\quad z^2 = x^2 + y^2\\end{align*}\n\ndescribes the surface with the following diagram?\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture_1.png}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH105\\_April\\_2011\\_Question\\_9\\_(e)\\_picture\\_1.png}\n\\end{figure}\n\nIf $z = f(x,y)$ is the equation of the surface in the diagram, sketch in\nthe space provided below the level curve of $f$ at height $z=2.$\nProvided explicit labels for your sketch.", 
-    "year": 2011, 
-    "sols": [
-        "As the hint suggests, we can check each equation with the point (0,0,0),\nwhich lies on the surface. The point (0,0,0) does not lie on the surface\ngiven by $x^2+y^2+z^2=1$, so we can rule that out.\n\nSince the surface takes negative $z$ values and $z=x^2 +y^2$ only takes\nnon-negative values, we can rule this out as an option as well.\n\nFinally, we notice that the surface is symmetric about the $x,y$ plane\n(this means that for a given (x,y) we get a value z above the xy-plane\nand the same value (but negative), -z below the xy-plane. For this\nreason, we can rule out $z=x^2-y^2$ since for a given (x,y) we only\nproduce one z value.\n\nThus the surface is $z^2=x^2+y^2$.\n\nWe can check that this solution makes sense by solving the equation for\n$z$ to get $z=\\pm \\sqrt{x^2+y^2}$. The two solutions give identical\nsurfaces above and below the $x,y$ plane, the point (0,0,0) does indeed\nlie on the surface $z^2=x^2+y^2$, and as $x$ and $y$ increase, so does\n$z$. These all match the given graph.\n\nThe level curve at $z=2$ is what we would see if we sliced into the\nsurface horizontally at $z=2$ and looked at it from above. We can find\nthe equation by substituting into the equation for the\nsurface\\begin{align*}2^2=x^2+y^2.\\end{align*} This is simply a circle of radius $2$, the graph\nas follows:\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH105\\_April\\_2011\\_Question\\_9\\_(e)\\_picture.jpg}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg}", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ErinMoulding", 
+        "Konradbe", 
+        "MikeL", 
+        "Hambrook"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try to rule out some possibilities by considering whether the 4 functions given satisfy some basic properties which the surface clearly satisfies, i.e.: the point (0,0,0) is on the surface, the surface takes on negative <span class=\"math\">\\(z\\)</span> values and is symmetric about the <span class=\"math\">\\(x, y\\)</span> plane.</p>\n"
+    ], 
+    "hints_latex": [
         "Try to rule out some possibilities by considering whether the 4\nfunctions given satisfy some basic properties which the surface clearly\nsatisfies, i.e.: the point (0,0,0) is on the surface, the surface takes\non negative $z$ values and is symmetric about the $x, y$ plane."
-    ]
+    ], 
+    "hints_raw": [
+        "Try to rule out some possibilities by considering whether the 4 functions given satisfy some basic properties which the surface clearly satisfies, i.e.: the point (0,0,0) is on the surface, the surface takes on negative &lt;math> z &lt;/math> values and is symmetric about the &lt;math> x, y &lt;/math> plane.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "9 (e)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>As the hint suggests, we can check each equation with the point (0,0,0), which lies on the surface. The point (0,0,0) does not lie on the surface given by <span class=\"math\">\\(x^2+y^2+z^2=1\\)</span>, so we can rule that out.</p>\n<p>Since the surface takes negative <span class=\"math\">\\(z\\)</span> values and <span class=\"math\">\\(z=x^2 +y^2\\)</span> only takes non-negative values, we can rule this out as an option as well.</p>\n<p>Finally, we notice that the surface is symmetric about the <span class=\"math\">\\(x,y\\)</span> plane (this means that for a given (x,y) we get a value z above the xy-plane and the same value (but negative), -z below the xy-plane. For this reason, we can rule out <span class=\"math\">\\(z=x^2-y^2\\)</span> since for a given (x,y) we only produce one z value.</p>\n<p>Thus the surface is <span class=\"math\">\\(z^2=x^2+y^2\\)</span>.</p>\n<p>We can check that this solution makes sense by solving the equation for <span class=\"math\">\\(z\\)</span> to get <span class=\"math\">\\(z=\\pm \\sqrt{x^2+y^2}\\)</span>. The two solutions give identical surfaces above and below the <span class=\"math\">\\(x,y\\)</span> plane, the point (0,0,0) does indeed lie on the surface <span class=\"math\">\\(z^2=x^2+y^2\\)</span>, and as <span class=\"math\">\\(x\\)</span> and <span class=\"math\">\\(y\\)</span> increase, so does <span class=\"math\">\\(z\\)</span>. These all match the given graph.</p>\n<p>The level curve at <span class=\"math\">\\(z=2\\)</span> is what we would see if we sliced into the surface horizontally at <span class=\"math\">\\(z=2\\)</span> and looked at it from above. We can find the equation by substituting into the equation for the surface</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2^2=x^2+y^2.\\end{aligned}\\]</span></p>\n<p>This is simply a circle of radius <span class=\"math\">\\(2\\)</span>, the graph as follows:</p>\n<p><img src=\"../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "As the hint suggests, we can check each equation with the point (0,0,0),\nwhich lies on the surface. The point (0,0,0) does not lie on the surface\ngiven by $x^2+y^2+z^2=1$, so we can rule that out.\n\nSince the surface takes negative $z$ values and $z=x^2 +y^2$ only takes\nnon-negative values, we can rule this out as an option as well.\n\nFinally, we notice that the surface is symmetric about the $x,y$ plane\n(this means that for a given (x,y) we get a value z above the xy-plane\nand the same value (but negative), -z below the xy-plane. For this\nreason, we can rule out $z=x^2-y^2$ since for a given (x,y) we only\nproduce one z value.\n\nThus the surface is $z^2=x^2+y^2$.\n\nWe can check that this solution makes sense by solving the equation for\n$z$ to get $z=\\pm \\sqrt{x^2+y^2}$. The two solutions give identical\nsurfaces above and below the $x,y$ plane, the point (0,0,0) does indeed\nlie on the surface $z^2=x^2+y^2$, and as $x$ and $y$ increase, so does\n$z$. These all match the given graph.\n\nThe level curve at $z=2$ is what we would see if we sliced into the\nsurface horizontally at $z=2$ and looked at it from above. We can find\nthe equation by substituting into the equation for the\nsurface\\begin{align*}\n2^2=x^2+y^2.\n\\end{align*} This is simply a circle of radius $2$, the graph\nas follows:\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg}"
+    ], 
+    "sols_raw": [
+        "As the hint suggests, we can check each equation with the point (0,0,0), which lies on the surface.  The point (0,0,0) does not lie on the surface given by &lt;math> x^2+y^2+z^2=1 &lt;/math>, so we can rule that out. \n\nSince the surface takes negative &lt;math> z &lt;/math> values and &lt;math> z=x^2 +y^2 &lt;/math> only takes non-negative values, we can rule this out as an option as well.\n\nFinally, we notice that the surface is symmetric about the &lt;math> x,y &lt;/math> plane (this means that for a given (x,y) we get a value z above the xy-plane and the same value (but negative), -z below the xy-plane.  For this reason, we can rule out &lt;math> z=x^2-y^2 &lt;/math> since for a given (x,y) we only produce one z value. \n\nThus the surface is &lt;math> z^2=x^2+y^2 &lt;/math>.\n\nWe can check that this solution makes sense by solving the equation for &lt;math> z &lt;/math> to get &lt;math> z=\\pm \\sqrt{x^2+y^2} &lt;/math>. The two solutions give identical surfaces above and below the &lt;math> x,y &lt;/math> plane, the point (0,0,0) does indeed lie on the surface &lt;math> z^2=x^2+y^2 &lt;/math>, and as &lt;math> x &lt;/math> and &lt;math> y &lt;/math> increase, so does &lt;math> z &lt;/math>. These all match the given graph. \n\nThe level curve at &lt;math> z=2 &lt;/math> is what we would see if we sliced into the surface horizontally at &lt;math> z=2 &lt;/math> and looked at it from above. We can find the equation by substituting into the equation for the surface: &lt;math> 2^2=x^2+y^2 &lt;/math>. This is simply a circle of radius &lt;math> 2 &lt;/math>, the graph as follows:\n\n[[File:Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture.jpg\u200e|300px]]\n"
+    ], 
+    "solvers": [
+        "StephenKelly"
+    ], 
+    "statement_html": "<p><em>Each of the short-answer questions below is worth 5 points. Put your answer in the box provided and show your work. No credit will be given for the answer without the correct accompanying work.</em></p>\n<p>In the box, write down which of the equations</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nz = x^2 + y^2, \\quad z = x^2 - y^2, \\quad x^2 + y^2 + z^2 = 1, \\quad z^2 = x^2 + y^2\\end{aligned}\\]</span></p>\n<p>describes the surface with the following diagram?</p>\n<p><img src=\"../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture_1.png\" alt=\"image\" /></p>\n<p>If <span class=\"math\">\\(z = f(x,y)\\)</span> is the equation of the surface in the diagram, sketch in the space provided below the level curve of <span class=\"math\">\\(f\\)</span> at height <span class=\"math\">\\(z=2.\\)</span> Provided explicit labels for your sketch.</p>\n", 
+    "statement_latex": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nIn the box, write down which of the equations\n\n\\begin{align*}\nz = x^2 + y^2, \\quad z = x^2 - y^2, \\quad x^2 + y^2 + z^2 = 1, \\quad z^2 = x^2 + y^2\n\\end{align*}\n\ndescribes the surface with the following diagram?\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2011/Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture_1.png}\n\nIf $z = f(x,y)$ is the equation of the surface in the diagram, sketch in\nthe space provided below the level curve of $f$ at height $z=2.$\nProvided explicit labels for your sketch.", 
+    "statement_raw": "''Each of the short-answer questions below is worth 5 points. Put your answer in the box provided and show your work. No credit will be given for the answer without the correct accompanying work.''\n\nIn the box, write down which of the equations\n\n: &lt;math>\nz = x^2 + y^2, \\quad z = x^2 - y^2, \\quad x^2 + y^2 + z^2 = 1, \\quad z^2 = x^2 + y^2\n&lt;/math>\n\ndescribes the surface with the following diagram?\n\n[[File:Math_Exam_Resources_Courses_MATH105_April_2011_Question_9_(e)_picture_1.png]]\n\nIf &lt;math> z = f(x,y) &lt;/math> is the equation of the surface in the diagram, sketch in the space provided below the level curve of &lt;math> f &lt;/math> at height &lt;math> z=2. &lt;/math> Provided explicit labels for your sketch.\n", 
+    "term": "April", 
+    "topics": [
+        "Level_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2011/Question_09_(e)", 
+    "year": 2011
 }

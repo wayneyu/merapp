@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(f)", 
+    "answer_html": "<p>for constants <span class=\"math\">\\(C,D\\)</span>.</p>\n", 
+    "answer_latex": "for constants $C,D$.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH101", 
-    "statement": "Determine the general solution of the differential equation\n$y'' - y' - 2y = 0$.", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Find the roots of the auxiliary polynomial.</p>\n"
+    ], 
+    "hints_latex": [
+        "Find the roots of the auxiliary polynomial."
+    ], 
+    "hints_raw": [
+        "Find the roots of the auxiliary polynomial.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The auxiliary polynomial is</p>\n<p><span class=\"math\">\\(\\displaystyle 0 = r^{2} - r - 2 = (r-2)(r+1)\\)</span></p>\n<p>and so we have roots</p>\n<p><span class=\"math\">\\(\\displaystyle r = -1,2\\)</span></p>\n<p>Thus, the general solution is of the form</p>\n<p><span class=\"math\">\\(y = Ce^{-x} + De^{2x}\\)</span></p>\n<p>for constants <span class=\"math\">\\(C,D\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The auxiliary polynomial is\n\n$\\displaystyle 0 = r^{2} - r - 2 = (r-2)(r+1)$\n\nand so we have roots\n\n$\\displaystyle r = -1,2$\n\nThus, the general solution is of the form\n\n$y = Ce^{-x} + De^{2x}$\n\nfor constants $C,D$."
     ], 
-    "hints": [
-        "Find the roots of the auxiliary polynomial."
-    ]
+    "sols_raw": [
+        "The auxiliary polynomial is\n\n&lt;math>\\displaystyle 0 = r^{2} - r - 2 = (r-2)(r+1) &lt;/math>\n\nand so we have roots\n\n&lt;math>\\displaystyle  r = -1,2 &lt;/math>\n\nThus, the general solution is of the form\n\n&lt;math> y = Ce^{-x} + De^{2x} &lt;/math>\n\nfor constants &lt;math>C,D &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Determine the general solution of the differential equation <span class=\"math\">\\(y&#39;&#39; - y&#39; - 2y = 0\\)</span>.</p>\n", 
+    "statement_latex": "Determine the general solution of the differential equation\n$y'' - y' - 2y = 0$.", 
+    "statement_raw": "Determine the general solution of the differential equation &lt;math> y'' - y' - 2y = 0 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation_(higher_order)"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(f)", 
+    "year": 2006
 }

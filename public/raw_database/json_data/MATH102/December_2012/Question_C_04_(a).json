@@ -1,14 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_C_04_(a)", 
-    "course": "MATH102", 
-    "statement": "Dead leaves accumulate on the ground in a forest at a rate of 5 grams\nper square centimeter per year. At the same time, these leaves decompose\nat a continuous rate of 50 percent per year.\n\n(a) Write a differential equation for the total mass \\emph{Q(t)} of dead\nleaves (per square centimeter) at time \\emph{t}.", 
-    "year": 2012, 
-    "sols": [
-        "We want to find the differential equation of the mass $Q$ of dead\nleaves. This means we find the derivative of $Q$ with respect to time,\ndependent on $Q$.\n\nTherefore, we separate $\\frac{d}{dt}Q$ into $\\frac{d}{dt}Q_+$ the leaves\nthat are added every year and $\\frac{d}{dt} Q_-$, that are removed every\nyear. Such that\n\n$\\frac{d}{dt} Q = \\frac{d}{dt}Q_+ + \\frac{d}{dt}Q_-$\n\nThe leaves (in grams) that are added every year per $cm^2$ are\n\n$\\frac{d}{dt}Q_+ = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2}.$\n\nThe leaves that are removed every year depends on the amount of leaves:\nAccording to the mass of leaves, half of the mass is lost every year:\n\n$\\frac{d}{dt} Q_- = -\\frac{0.5Q}{\\text{year}}.$\n\nSince leave mass is lost, we put a negative sign here. Hence, our final\nanswer is\n\n$\\frac{d}{dt} Q =\\frac{5\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5Q}{\\text{year}}.$\n\n\\emph{Note that this works out nicely so that the unit of Q is\ngrams/cm\\textsuperscript{2}.} With units suppressed, the above is\n\n$\\frac{d}{dt} Q = 5 - 0.5Q.$"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{d}{dt} Q = 5 - 0.5Q.\\)</span></p>\n", 
+    "answer_latex": "$\\frac{d}{dt} Q = 5 - 0.5Q.$", 
+    "contributors": [
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>You want to find an equation for the derivative of <span class=\"math\">\\(Q\\)</span> with respect to time, <span class=\"math\">\\(\\frac{d}{dt} Q\\)</span>, depending on <span class=\"math\">\\(Q\\)</span>.</p>\n", 
+        "<p>The derivative <span class=\"math\">\\(\\frac{d}{dt}Q\\)</span> is a sum of two terms: The first term represents the leaves which are added to the ground every year, the second term presents the leaves which are removed from the ground every year.</p>\n<p>First, try to find these terms separately. Then add them and think about the sign they should have. Which of the terms depends on <em>Q</em>?</p>\n"
+    ], 
+    "hints_latex": [
         "You want to find an equation for the derivative of $Q$ with respect to\ntime, $\\frac{d}{dt} Q$, depending on $Q$.", 
         "The derivative $\\frac{d}{dt}Q$ is a sum of two terms: The first term\nrepresents the leaves which are added to the ground every year, the\nsecond term presents the leaves which are removed from the ground every\nyear.\n\nFirst, try to find these terms separately. Then add them and think about\nthe sign they should have. Which of the terms depends on \\emph{Q}?"
-    ]
+    ], 
+    "hints_raw": [
+        "You want to find an equation for the derivative of &lt;math>\\ Q &lt;/math> with respect to time, &lt;math>\\frac{d}{dt} Q &lt;/math>, depending on &lt;math>\\ Q &lt;/math>.\n", 
+        "The derivative &lt;math> \\frac{d}{dt}Q&lt;/math> is a sum of two terms: The first term represents the leaves which are added to the ground every year, the second term presents the leaves which are removed from the ground every year.\n\nFirst, try to find these terms separately. Then add them and think about the sign they should have. Which of the terms depends on ''Q''?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "C 04 (a)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>We want to find the differential equation of the mass <span class=\"math\">\\(Q\\)</span> of dead leaves. This means we find the derivative of <span class=\"math\">\\(Q\\)</span> with respect to time, dependent on <span class=\"math\">\\(Q\\)</span>.</p>\n<p>Therefore, we separate <span class=\"math\">\\(\\frac{d}{dt}Q\\)</span> into <span class=\"math\">\\(\\frac{d}{dt}Q_+\\)</span> the leaves that are added every year and <span class=\"math\">\\(\\frac{d}{dt} Q_-\\)</span>, that are removed every year. Such that</p>\n<p><span class=\"math\">\\(\\frac{d}{dt} Q = \\frac{d}{dt}Q_+ + \\frac{d}{dt}Q_-\\)</span></p>\n<p>The leaves (in grams) that are added every year per <span class=\"math\">\\(cm^2\\)</span> are</p>\n<p><span class=\"math\">\\(\\frac{d}{dt}Q_+ = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2}.\\)</span></p>\n<p>The leaves that are removed every year depends on the amount of leaves: According to the mass of leaves, half of the mass is lost every year:</p>\n<p><span class=\"math\">\\(\\frac{d}{dt} Q_- = -\\frac{0.5Q}{\\text{year}}.\\)</span></p>\n<p>Since leave mass is lost, we put a negative sign here. Hence, our final answer is</p>\n<p><span class=\"math\">\\(\\frac{d}{dt} Q =\\frac{5\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5Q}{\\text{year}}.\\)</span></p>\n<p><em>Note that this works out nicely so that the unit of Q is grams/cm<sup>2</sup>.</em> With units suppressed, the above is</p>\n<p><span class=\"math\">\\(\\frac{d}{dt} Q = 5 - 0.5Q.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We want to find the differential equation of the mass $Q$ of dead\nleaves. This means we find the derivative of $Q$ with respect to time,\ndependent on $Q$.\n\nTherefore, we separate $\\frac{d}{dt}Q$ into $\\frac{d}{dt}Q_+$ the leaves\nthat are added every year and $\\frac{d}{dt} Q_-$, that are removed every\nyear. Such that\n\n$\\frac{d}{dt} Q = \\frac{d}{dt}Q_+ + \\frac{d}{dt}Q_-$\n\nThe leaves (in grams) that are added every year per $cm^2$ are\n\n$\\frac{d}{dt}Q_+ = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2}.$\n\nThe leaves that are removed every year depends on the amount of leaves:\nAccording to the mass of leaves, half of the mass is lost every year:\n\n$\\frac{d}{dt} Q_- = -\\frac{0.5Q}{\\text{year}}.$\n\nSince leave mass is lost, we put a negative sign here. Hence, our final\nanswer is\n\n$\\frac{d}{dt} Q =\\frac{5\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5Q}{\\text{year}}.$\n\n\\emph{Note that this works out nicely so that the unit of Q is\ngrams/cm\\textsuperscript{2}.} With units suppressed, the above is\n\n$\\frac{d}{dt} Q = 5 - 0.5Q.$"
+    ], 
+    "sols_raw": [
+        "We want to find the differential equation of the mass &lt;math> \\ Q&lt;/math> of dead leaves. This means we find the derivative of &lt;math> \\ Q&lt;/math> with respect to time, dependent on &lt;math> \\ Q&lt;/math>. \n\nTherefore, we separate &lt;math> \\ \\frac{d}{dt}Q&lt;/math> into &lt;math> \\ \\frac{d}{dt}Q_+ &lt;/math> the leaves that are added every year and &lt;math> \\ \\frac{d}{dt} Q_- &lt;/math>, that are removed every year. Such that\n\n&lt;math> \\frac{d}{dt} Q = \\frac{d}{dt}Q_+ + \\frac{d}{dt}Q_-&lt;/math>\n\nThe leaves (in grams) that are added every year per &lt;math> \\ cm^2 &lt;/math> are\n\n&lt;math> \\frac{d}{dt}Q_+ = 5\\frac{\\text{grams}}{\\text{year}\\cdot cm^2}. &lt;/math>\n\nThe leaves that are removed every year depends on the amount of leaves: According to the mass of leaves, half of the mass is lost every year:\n\n&lt;math> \\frac{d}{dt} Q_- = -\\frac{0.5Q}{\\text{year}}.&lt;/math>\n\nSince leave mass is lost, we put a negative sign here. Hence, our final answer is\n\n&lt;math> \\frac{d}{dt} Q =\\frac{5\\text{grams}}{\\text{year}\\cdot cm^2} - \\frac{0.5Q}{\\text{year}}.&lt;/math>\n\n''Note that this works out nicely so that the unit of Q is grams/cm&lt;sup>2&lt;/sup>.'' With units suppressed, the above is \n\n&lt;math> \\frac{d}{dt} Q = 5 - 0.5Q.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Dead leaves accumulate on the ground in a forest at a rate of 5 grams per square centimeter per year. At the same time, these leaves decompose at a continuous rate of 50 percent per year.</p>\n<p>(a) Write a differential equation for the total mass <em>Q(t)</em> of dead leaves (per square centimeter) at time <em>t</em>.</p>\n", 
+    "statement_latex": "Dead leaves accumulate on the ground in a forest at a rate of 5 grams\nper square centimeter per year. At the same time, these leaves decompose\nat a continuous rate of 50 percent per year.\n\n(a) Write a differential equation for the total mass \\emph{Q(t)} of dead\nleaves (per square centimeter) at time \\emph{t}.", 
+    "statement_raw": "Dead leaves accumulate on the ground in a forest at a rate of 5 grams per square centimeter per year.  At the same time, these leaves decompose at a continuous rate of 50 percent per year.  \n\n(a) Write a differential equation for the total mass ''Q(t)'' of dead leaves (per square centimeter) at time ''t''.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_04_(a)", 
+    "year": 2012
 }

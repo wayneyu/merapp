@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_07_(iii)", 
-    "course": "MATH102", 
-    "statement": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its y coordinate changes at a\nrate of 8 units/sec.\n\niii) What is the rate of change of the angle $\\theta$ between the\npositive x-axis and the line connecting the origin and the particle?\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH102_2011_7ii.png}\n\\caption{MATH102 2011 7ii.png}\n\\end{figure}", 
-    "year": 2011, 
-    "sols": [
-        "Notice that\n\n$\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}$\n\nTaking derivatives with respect to time gives\n\n$\\displaystyle \\sec^{2}(\\theta)\\frac{d\\theta}{dt} = \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}}$\n\nFrom the previous parts, we have that\n\n$\\displaystyle \\frac{dx}{dt}\\bigg|_{x=2} = 2$\n\nand we are given that\n\n$\\displaystyle \\frac{dy}{dt}\\bigg|_{x=2} = 8$\n\nand so plugging in the point $\\displaystyle (x(t),y(t)) = (2,4)$ into\nthe triangle, we see that\n\n$\\displaystyle \\sec(\\theta) = \\frac{1}{\\cos(\\theta)} = \\frac{1}{\\frac{2}{\\sqrt{2^{2} + 4^{2}}}} = \\frac{\\sqrt{20}}{2} = \\sqrt{5}$\n\nUsing all this information, we plug in the point $\\displaystyle (2,4)$\nand see that\n\n\\begin{align*}\n \\sec^{2}(\\theta)\\frac{d\\theta}{dt} &= \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}} \\\\\n (\\sqrt{5})^{2}\\frac{d\\theta}{dt} &= \\frac{(8)(2) - (2)(4)}{(2)^{2}} \\\\\n 5\\frac{d\\theta}{dt} &= 2 \\\\\n\\frac{d\\theta}{dt} &= \\frac{2}{5} \\end{align*}\n\nand this completes the question."
+    "answer_html": "<p><span class=\"math\">\\(\\frac{d\\theta}{dt}=\\frac{2}{5}\\)</span> and this completes the question.</p>\n", 
+    "answer_latex": " $\\frac{d\\theta}{dt}=\\frac{2}{5}$ and this completes the question.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>We need to relate the angle with the <em>x</em> and <em>y</em> coordinates. Try using</p>\n<p><span class=\"math\">\\(\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "We need to relate the angle with the \\emph{x} and \\emph{y} coordinates.\nTry using\n\n$\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}$"
-    ]
+    ], 
+    "hints_raw": [
+        "We need to relate the angle with the ''x'' and ''y'' coordinates. Try using\n\n&lt;math> \\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (iii)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Notice that</p>\n<p><span class=\"math\">\\(\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}\\)</span></p>\n<p>Taking derivatives with respect to time gives</p>\n<p><span class=\"math\">\\(\\displaystyle \\sec^{2}(\\theta)\\frac{d\\theta}{dt} = \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}}\\)</span></p>\n<p>From the previous parts, we have that</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dx}{dt}\\bigg|_{x=2} = 2\\)</span></p>\n<p>and we are given that</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dy}{dt}\\bigg|_{x=2} = 8\\)</span></p>\n<p>and so plugging in the point <span class=\"math\">\\(\\displaystyle (x(t),y(t)) = (2,4)\\)</span> into the triangle, we see that</p>\n<p><span class=\"math\">\\(\\displaystyle \\sec(\\theta) = \\frac{1}{\\cos(\\theta)} = \\frac{1}{\\frac{2}{\\sqrt{2^{2} + 4^{2}}}} = \\frac{\\sqrt{20}}{2} = \\sqrt{5}\\)</span></p>\n<p>Using all this information, we plug in the point <span class=\"math\">\\(\\displaystyle (2,4)\\)</span> and see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sec^{2}(\\theta)\\frac{d\\theta}{dt} &amp;= \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}} \\\\\n (\\sqrt{5})^{2}\\frac{d\\theta}{dt} &amp;= \\frac{(8)(2) - (2)(4)}{(2)^{2}} \\\\\n 5\\frac{d\\theta}{dt} &amp;= 2 \\\\\n\\frac{d\\theta}{dt} &amp;= \\frac{2}{5} \\end{aligned}\\]</span></p>\n<p>and this completes the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that\n\n$\\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}$\n\nTaking derivatives with respect to time gives\n\n$\\displaystyle \\sec^{2}(\\theta)\\frac{d\\theta}{dt} = \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}}$\n\nFrom the previous parts, we have that\n\n$\\displaystyle \\frac{dx}{dt}\\bigg|_{x=2} = 2$\n\nand we are given that\n\n$\\displaystyle \\frac{dy}{dt}\\bigg|_{x=2} = 8$\n\nand so plugging in the point $\\displaystyle (x(t),y(t)) = (2,4)$ into\nthe triangle, we see that\n\n$\\displaystyle \\sec(\\theta) = \\frac{1}{\\cos(\\theta)} = \\frac{1}{\\frac{2}{\\sqrt{2^{2} + 4^{2}}}} = \\frac{\\sqrt{20}}{2} = \\sqrt{5}$\n\nUsing all this information, we plug in the point $\\displaystyle (2,4)$\nand see that\n\n\\begin{align*}\n\\sec^{2}(\\theta)\\frac{d\\theta}{dt} &= \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}} \\\\\n (\\sqrt{5})^{2}\\frac{d\\theta}{dt} &= \\frac{(8)(2) - (2)(4)}{(2)^{2}} \\\\\n 5\\frac{d\\theta}{dt} &= 2 \\\\\n\\frac{d\\theta}{dt} &= \\frac{2}{5} \n\\end{align*}\n\nand this completes the question."
+    ], 
+    "sols_raw": [
+        "Notice that\n\n&lt;math> \\displaystyle \\tan(\\theta) = \\frac{y(t)}{x(t)}&lt;/math>\n\nTaking derivatives with respect to time gives\n\n&lt;math> \\displaystyle \\sec^{2}(\\theta)\\frac{d\\theta}{dt} = \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}}&lt;/math>\n\nFrom the previous parts, we have that\n\n&lt;math> \\displaystyle \\frac{dx}{dt}\\bigg|_{x=2} = 2&lt;/math>\n\nand we are given that\n\n&lt;math> \\displaystyle \\frac{dy}{dt}\\bigg|_{x=2} = 8&lt;/math>\n\nand so plugging in the point &lt;math> \\displaystyle (x(t),y(t)) = (2,4)&lt;/math> into the triangle, we see that\n\n&lt;math> \\displaystyle \\sec(\\theta) = \\frac{1}{\\cos(\\theta)} = \\frac{1}{\\frac{2}{\\sqrt{2^{2} + 4^{2}}}} = \\frac{\\sqrt{20}}{2} = \\sqrt{5} &lt;/math>\n\nUsing all this information, we plug in the point &lt;math> \\displaystyle (2,4) &lt;/math> and see that\n\n&lt;math> \\begin{align}\n \\sec^{2}(\\theta)\\frac{d\\theta}{dt} &amp;= \\frac{\\frac{dy}{dt}\\cdot x(t) - \\frac{dx}{dt} \\cdot y(t)}{x(t)^{2}} \\\\\n (\\sqrt{5})^{2}\\frac{d\\theta}{dt} &amp;= \\frac{(8)(2) - (2)(4)}{(2)^{2}} \\\\\n 5\\frac{d\\theta}{dt} &amp;= 2 \\\\\n\\frac{d\\theta}{dt} &amp;= \\frac{2}{5} \\\\\n\\end{align}\n&lt;/math>\n\nand this completes the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>A particle is moving in the (x,y)-plane along the curve <span class=\"math\">\\(y = x^{2}\\)</span>. As it passes through the point P = (2, 4), its y coordinate changes at a rate of 8 units/sec.</p>\n<p>iii) What is the rate of change of the angle <span class=\"math\">\\(\\theta\\)</span> between the positive x-axis and the line connecting the origin and the particle?</p>\n<p><img src=\"../json_data/MATH102/December_2011/MATH102_2011_7ii.png\" alt=\"image\" /></p>\n", 
+    "statement_latex": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its y coordinate changes at a\nrate of 8 units/sec.\n\niii) What is the rate of change of the angle $\\theta$ between the\npositive x-axis and the line connecting the origin and the particle?\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH102/December_2011/MATH102_2011_7ii.png}", 
+    "statement_raw": "A particle is moving in the (x,y)-plane along the curve &lt;math>y = x^{2}&lt;/math>. As it passes through\nthe point P = (2, 4), its y coordinate changes at a rate of 8 units/sec.\n\niii) What is the rate of change of the angle &lt;math>\\theta&lt;/math> between the positive x-axis and the\nline connecting the origin and the particle?\n\n[[File:MATH102 2011 7ii.png]]\n", 
+    "term": "December", 
+    "topics": [
+        "Related_rates"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_07_(iii)", 
+    "year": 2011
 }

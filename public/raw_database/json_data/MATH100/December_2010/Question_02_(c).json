@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_02_(c)", 
-    "course": "MATH100", 
-    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is\n$3^{\\circ}C$. After 30 minutes in a $19^{\\circ}C$ room, its temperature\nis $11^{\\circ}C$.\n\nDetermine when the temperature of the apple is $16^{\\circ}C$.", 
-    "year": 2010, 
-    "sols": [
-        "From the previous question, we know that\n\n\\begin{align*}\nT(t) - 19 =  -16e^{kt}\\end{align*}\n\nwhere\n\n$\\displaystyle k = \\frac{-\\ln(2)}{30}$\n\nSearching for when $T(t) = 16$ yields\n\n\\begin{align*}\n16-19 &= -16e^{kt} \\\\\n-3 &= -16e^{kt} \\\\\n\\frac{3}{16} &= e^{kt} \\\\\n\\ln(3/16) &= kt\\\\\n\\ln(3/16) &= \\frac{-\\ln(2)t}{30} \\\\\nt &= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &= 30\\frac{\\ln(16/3)}{\\ln(2)} \\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(t=30\\frac{\\ln(16/3)}{\\ln(2)}\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $t=30\\frac{\\ln(16/3)}{\\ln(2)}$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>We want to find <em>t</em> subject to <span class=\"math\">\\(T(t) = 19\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "We want to find \\emph{t} subject to $T(t) = 19$."
-    ]
+    ], 
+    "hints_raw": [
+        "We want to find ''t'' subject to &lt;math> T(t) = 19 &lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "2 (c)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>From the previous question, we know that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT(t) - 19 =  -16e^{kt}\\end{aligned}\\]</span></p>\n<p>where</p>\n<p><span class=\"math\">\\(\\displaystyle k = \\frac{-\\ln(2)}{30}\\)</span></p>\n<p>Searching for when <span class=\"math\">\\(T(t) = 16\\)</span> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n16-19 &amp;= -16e^{kt} \\\\\n-3 &amp;= -16e^{kt} \\\\\n\\frac{3}{16} &amp;= e^{kt} \\\\\n\\ln(3/16) &amp;= kt\\\\\n\\ln(3/16) &amp;= \\frac{-\\ln(2)t}{30} \\\\\nt &amp;= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &amp;= 30\\frac{\\ln(16/3)}{\\ln(2)} \\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "From the previous question, we know that\n\n\\begin{align*}\nT(t) - 19 =  -16e^{kt}\n\\end{align*}\n\nwhere\n\n$\\displaystyle k = \\frac{-\\ln(2)}{30}$\n\nSearching for when $T(t) = 16$ yields\n\n\\begin{align*}\n16-19 &= -16e^{kt} \\\\\n-3 &= -16e^{kt} \\\\\n\\frac{3}{16} &= e^{kt} \\\\\n\\ln(3/16) &= kt\\\\\n\\ln(3/16) &= \\frac{-\\ln(2)t}{30} \\\\\nt &= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &= 30\\frac{\\ln(16/3)}{\\ln(2)} \n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "From the previous question, we know that\n\n&lt;math>\n\\begin{align}\nT(t) - 19 =  -16e^{kt}\n\\end{align}\n&lt;/math>\n\nwhere\n\n&lt;math> \\displaystyle\nk = \\frac{-\\ln(2)}{30}\n&lt;/math>\n\nSearching for when &lt;math> T(t) = 16 &lt;/math> yields\n\n&lt;math>\n\\begin{align}\n16-19 &amp;= -16e^{kt} \\\\\n-3 &amp;= -16e^{kt} \\\\\n\\frac{3}{16} &amp;= e^{kt} \\\\\n\\ln(3/16) &amp;= kt\\\\\n\\ln(3/16) &amp;= \\frac{-\\ln(2)t}{30} \\\\\nt &amp;= -30\\frac{\\ln(3/16)}{\\ln(2)} \\\\\nt &amp;= 30\\frac{\\ln(16/3)}{\\ln(2)} \n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.</p>\n<p>When an apple is taken from a refrigerator, its temperature is <span class=\"math\">\\(3^{\\circ}C\\)</span>. After 30 minutes in a <span class=\"math\">\\(19^{\\circ}C\\)</span> room, its temperature is <span class=\"math\">\\(11^{\\circ}C\\)</span>.</p>\n<p>Determine when the temperature of the apple is <span class=\"math\">\\(16^{\\circ}C\\)</span>.</p>\n", 
+    "statement_latex": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is\n$3^{\\circ}C$. After 30 minutes in a $19^{\\circ}C$ room, its temperature\nis $11^{\\circ}C$.\n\nDetermine when the temperature of the apple is $16^{\\circ}C$.", 
+    "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is &lt;math> 3^{\\circ}C &lt;/math>. After 30 minutes in a &lt;math> 19^{\\circ}C &lt;/math> room, its temperature is &lt;math> 11^{\\circ}C&lt;/math>.\n\nDetermine when the temperature of the apple is &lt;math> 16^{\\circ}C&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_law_of_cooling"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_02_(c)", 
+    "year": 2010
 }

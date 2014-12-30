@@ -1,9 +1,41 @@
 {
-    "term": "December", 
-    "question": "Question_05_(d)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}P = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(d)} Each set below contains the absolute values of the\neigenvalues of either \\emph{P} or \\emph{(1/2)P + (1/2)Q}. Check your\nguess for which list is which below and give a reason for your choice.\n\n\\emph{\\{1.00, 0.42, 0.19, 0.19, 0.10, 0.25} are the values: for \\emph{P}\n\u274f, for \\emph{(1/2)P + (1/2)Q} \u274f\n\n\\emph{\\{1.00, 0.85, 0.38, 0.38, 0.21, 0.50} are the values: for \\emph{P}\n\u274f, for \\emph{(1/2)P + (1/2)Q} \u274f", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(d)</strong> Each set below contains the absolute values of the eigenvalues of either <em>P</em> or <em>(1/2)P + (1/2)Q</em>. Check your guess for which list is which below and give a reason for your choice.</p>\n<p><em>{1.00, 0.42, 0.19, 0.19, 0.10, 0.25</em> are the values: for <em>P</em> &#10063;, for <em>(1/2)P + (1/2)Q</em> &#10063;</p>\n<p><em>{1.00, 0.85, 0.38, 0.38, 0.21, 0.50</em> are the values: for <em>P</em> &#10063;, for <em>(1/2)P + (1/2)Q</em> &#10063;</p>\n", 
+    "statement_latex": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}\nP = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(d)} Each set below contains the absolute values of the\neigenvalues of either \\emph{P} or \\emph{(1/2)P + (1/2)Q}. Check your\nguess for which list is which below and give a reason for your choice.\n\n\\emph{\\{1.00, 0.42, 0.19, 0.19, 0.10, 0.25} are the values: for \\emph{P}\n\u274f, for \\emph{(1/2)P + (1/2)Q} \u274f\n\n\\emph{\\{1.00, 0.85, 0.38, 0.38, 0.21, 0.50} are the values: for \\emph{P}\n\u274f, for \\emph{(1/2)P + (1/2)Q} \u274f", 
+    "statement_raw": "Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is\n\n:&lt;math>\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\n&lt;/math>\n\n'''(d)''' Each set below contains the absolute values of the eigenvalues of either ''P'' or ''(1/2)P + (1/2)Q''. Check your guess for which list is which below and give a reason for your choice.\n\n''{1.00, 0.42, 0.19, 0.19, 0.10, 0.25'' are the values: for ''P'' &amp;#x274f;, for ''(1/2)P + (1/2)Q'' &amp;#x274f;\n\n''{1.00, 0.85, 0.38, 0.38, 0.21, 0.50'' are the values: for ''P'' &amp;#x274f;, for ''(1/2)P + (1/2)Q'' &amp;#x274f;\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_05_(d)", 
+    "year": 2012
 }

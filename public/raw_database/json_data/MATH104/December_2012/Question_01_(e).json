@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(e)", 
-    "course": "MATH104", 
-    "statement": "Sketch the graph of a continuous function f(x) satisfying:\n\n\\begin{align*}\\lim_{x\\to0^-}f'(x)=1,\\qquad\\lim_{x\\to0^+}f'(x)=-1,\\qquad{}f(0)=3\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "There are infinitely many possible solutions to this problem. As long\nyou sketch a continuous function that has slope equal to 1 the near\n$x = 0$ on the left, a slope equal to -1 near $x = 0$ on the right and\ntouches the point $(0,3)$, then you should get full marks. Click the\nimages below to see a couple of examples.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH104FINAL_2012_1e_1.png}\n\\caption{A possible solution}\n\\end{figure}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH104FINAL_2012_1e_2.png}\n\\caption{Another possible solution}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The first two conditions specify the behaviour of the slope of the tangent lines of <span class=\"math\">\\(f(x)\\)</span> at points near <span class=\"math\">\\(x = 0\\)</span> and the last condition specifies a point that the function <span class=\"math\">\\(f(x)\\)</span> must pass through.</p>\n"
+    ], 
+    "hints_latex": [
         "The first two conditions specify the behaviour of the slope of the\ntangent lines of $f(x)$ at points near $x = 0$ and the last condition\nspecifies a point that the function $f(x)$ must pass through."
-    ]
+    ], 
+    "hints_raw": [
+        "The first two conditions specify the behaviour of the slope of the tangent lines of &lt;math>f(x)&lt;/math> at points near &lt;math>x = 0&lt;/math> and the last condition specifies a point that the function &lt;math>f(x)&lt;/math> must pass through.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (e)", 
+    "rating": 96, 
+    "sols_html": [
+        "<p>There are infinitely many possible solutions to this problem. As long you sketch a continuous function that has slope equal to 1 the near <span class=\"math\">\\(x = 0\\)</span> on the left, a slope equal to -1 near <span class=\"math\">\\(x = 0\\)</span> on the right and touches the point <span class=\"math\">\\((0,3)\\)</span>, then you should get full marks. Click the images below to see a couple of examples.</p>\n<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_1.png\" alt=\"image\" /></p>\n<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "There are infinitely many possible solutions to this problem. As long\nyou sketch a continuous function that has slope equal to 1 the near\n$x = 0$ on the left, a slope equal to -1 near $x = 0$ on the right and\ntouches the point $(0,3)$, then you should get full marks. Click the\nimages below to see a couple of examples.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_1.png}\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png}"
+    ], 
+    "sols_raw": [
+        "There are infinitely many possible solutions to this problem. As long you sketch a &lt;b>continuous&lt;/b> function that has slope equal to 1 the near &lt;math>x = 0&lt;/math> on the left, a slope equal to -1 near &lt;math>x = 0&lt;/math> on the right and touches the point &lt;math>(0,3)&lt;/math>, then you should get full marks. Click the images below to see a couple of examples.\n\n[[File:MATH104FINAL 2012 1e 1.png|left|thumbnail|400px|alt=Alt text|A possible solution]]\n\n[[File:MATH104FINAL 2012 1e 2.png|left|thumbnail|400px|alt=Alt text|Another possible solution]]\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Sketch the graph of a continuous function f(x) satisfying:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x\\to0^-}f&#39;(x)=1,\\qquad\\lim_{x\\to0^+}f&#39;(x)=-1,\\qquad{}f(0)=3\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Sketch the graph of a continuous function f(x) satisfying:\n\n\\begin{align*}\n\\lim_{x\\to0^-}f'(x)=1,\\qquad\\lim_{x\\to0^+}f'(x)=-1,\\qquad{}f(0)=3\n\\end{align*}", 
+    "statement_raw": "Sketch the graph of a continuous function f(x) satisfying:\n\n:&lt;math>\n\\lim_{x\\to0^-}f'(x)=1,\\qquad\\lim_{x\\to0^+}f'(x)=-1,\\qquad{}f(0)=3\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(e)", 
+    "year": 2012
 }

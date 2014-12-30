@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_08_(d)", 
+    "answer_html": "<p>Since <span class=\"math\">\\(\\displaystyle e^{-t}\\)</span> goes to 0 as <span class=\"math\">\\(\\displaystyle t \\rightarrow \\infty\\)</span>, the solution goes to 0 as well.</p>\n", 
+    "answer_latex": "Since $\\displaystyle e^{-t}$ goes to 0 as\n$\\displaystyle t \\rightarrow \\infty$, the solution goes to 0 as well.", 
+    "contributors": [
+        "WilliamThompson", 
+        "CarmenBruni", 
+        "IainMoyles"
+    ], 
     "course": "MATH152", 
-    "statement": "Consider the 2 x 2 system of differential equations\n\n\\begin{align*}\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\\end{align*}\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nDescribe the trend of the solution as $t\\to\\infty$.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Apply the limit <span class=\"math\">\\(t \\rightarrow \\infty\\)</span> to your solution from part <span>(c)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Apply the limit $t \\rightarrow \\infty$ to your solution from part\n{(c)}."
+    ], 
+    "hints_raw": [
+        "Apply the limit &lt;math>t \\rightarrow \\infty&lt;/math> to your solution from part [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(c)|(c)]].\n"
+    ], 
+    "num_votes": 1, 
+    "question": "8 (d)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>Since <span class=\"math\">\\(\\displaystyle e^{-t}\\)</span> goes to 0 as <span class=\"math\">\\(\\displaystyle t \\rightarrow \\infty\\)</span>, the solution goes to 0 as well.</p>\n"
+    ], 
+    "sols_latex": [
         "Since $\\displaystyle e^{-t}$ goes to 0 as\n$\\displaystyle t \\rightarrow \\infty$, the solution goes to 0 as well."
     ], 
-    "hints": [
-        "Apply the limit $t \\rightarrow \\infty$ to your solution from part\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(c)}{(c)}."
-    ]
+    "sols_raw": [
+        "Since &lt;math>\\displaystyle e^{-t}&lt;/math> goes to 0 as &lt;math>\\displaystyle t \\rightarrow \\infty&lt;/math>, the solution goes to 0 as well.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the 2 x 2 system of differential equations</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x}&#39;(t)=\\begin{bmatrix}\n-1  &amp;  -2\\\\\n2  &amp;  -1\n\\end{bmatrix} \\mathbf{x}(t)\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}\\)</span> is the vector of unknown functions.</p>\n<p>Describe the trend of the solution as <span class=\"math\">\\(t\\to\\infty\\)</span>.</p>\n", 
+    "statement_latex": "Consider the 2 x 2 system of differential equations\n\n\\begin{align*}\n\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &  -2\\\\\n2  &  -1\n\\end{bmatrix} \\mathbf{x}(t)\n\\end{align*}\n\nwhere $\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}$ is the\nvector of unknown functions.\n\nDescribe the trend of the solution as $t\\to\\infty$.", 
+    "statement_raw": "Consider the 2 x 2 system of differential equations\n\n:&lt;math>\n\\mathbf{x}'(t)=\\begin{bmatrix}\n-1  &amp;  -2\\\\\n2  &amp;  -1\n\\end{bmatrix} \\mathbf{x}(t)\n&lt;/math>\n\nwhere &lt;math>\\mathbf{x}(t)=\\begin{bmatrix}x_1(t)\\\\x_2(t)\\end{bmatrix}&lt;/math> is the vector of unknown functions.\n\nDescribe the trend of the solution as &lt;math>t\\to\\infty&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_08_(d)", 
+    "year": 2012
 }

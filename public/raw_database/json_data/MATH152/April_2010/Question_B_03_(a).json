@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_B_03_(a)", 
+    "answer_html": "<p>(Equivalently, to answer this question you could look at the second entry in the first column of the matrix <span class=\"math\">\\(P\\)</span>).</p>\n", 
+    "answer_latex": "(Equivalently, to answer this question you could look at the second\nentry in the first column of the matrix $P$).", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH152", 
-    "statement": "A random walk problem with two states has a transition matrix\n\n\\begin{align*}P = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\\end{align*}\n\na) What is the probability that when the walker is in state 1 it moves\nto state 2?", 
-    "year": 2010, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What vector corresponds to the walker being at state 1 (with certainty 1)?</p>\n"
+    ], 
+    "hints_latex": [
+        "What vector corresponds to the walker being at state 1 (with certainty\n1)?"
+    ], 
+    "hints_raw": [
+        "What vector corresponds to the walker being at state 1 (with certainty 1)?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 03 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>If the walker starts in state 1, then the probability vector is given by</p>\n<p><span class=\"math\">\\(\\mathbf{v} = \\left[ \\begin{array}{c} 1 \\\\ 0 \\end{array} \\right]\\)</span></p>\n<p>(i.e: the walker is in state 1 with probability 1 and in state 2 with probability 0). To compute the probability that the walker is in state 2 after one step, simply compute <span class=\"math\">\\(P\\)</span>v and look at the second entry:</p>\n<p><span class=\"math\">\\(P\\mathbf{v} = \\left[ \\begin{array}{c} 1/3 \\\\ 2/3 \\end{array} \\right]\\)</span></p>\n<p>Thus, the probability of switching from state 1 to state 2 in one time step is 2/3.</p>\n<p>(Equivalently, to answer this question you could look at the second entry in the first column of the matrix <span class=\"math\">\\(P\\)</span>).</p>\n"
+    ], 
+    "sols_latex": [
         "If the walker starts in state 1, then the probability vector is given by\n\n$\\mathbf{v} = \\left[ \\begin{array}{c} 1 \\\\ 0 \\end{array} \\right]$\n\n(i.e: the walker is in state 1 with probability 1 and in state 2 with\nprobability 0). To compute the probability that the walker is in state 2\nafter one step, simply compute $P$v and look at the second entry:\n\n$P\\mathbf{v} = \\left[ \\begin{array}{c} 1/3 \\\\ 2/3 \\end{array} \\right]$\n\nThus, the probability of switching from state 1 to state 2 in one time\nstep is 2/3.\n\n(Equivalently, to answer this question you could look at the second\nentry in the first column of the matrix $P$)."
     ], 
-    "hints": [
-        "What vector corresponds to the walker being at state 1 (with certainty\n1)?"
-    ]
+    "sols_raw": [
+        "If the walker starts in state 1, then the probability vector is given by\n\n&lt;math>\n\\mathbf{v} = \\left[ \\begin{array}{c} 1 \\\\ 0 \\end{array} \\right]\n&lt;/math>\n\n(i.e: the walker is in state 1 with probability 1 and in state 2 with probability 0). To compute the probability that the walker is in state 2 after one step, simply compute &lt;math>P&lt;/math>&lt;b>v&lt;/b> and look at the second entry:\n\n&lt;math>\nP\\mathbf{v} = \\left[ \\begin{array}{c} 1/3 \\\\ 2/3 \\end{array} \\right]\n&lt;/math>\n\nThus, the probability of switching from state 1 to state 2 in one time step is 2/3.\n\n(Equivalently, to answer this question you could look at the second entry in the first column of the matrix &lt;math>P&lt;/math>).\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>A random walk problem with two states has a transition matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\left[\\begin{array}{cc} 1/3 &amp; 1/4 \\\\ 2/3 &amp; 3/4\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>a) What is the probability that when the walker is in state 1 it moves to state 2?</p>\n", 
+    "statement_latex": "A random walk problem with two states has a transition matrix\n\n\\begin{align*}\nP = \\left[\\begin{array}{cc} 1/3 & 1/4 \\\\ 2/3 & 3/4\\end{array}\\right]\n\\end{align*}\n\na) What is the probability that when the walker is in state 1 it moves\nto state 2?", 
+    "statement_raw": "A random walk problem with two states has a transition matrix\n\n:&lt;math>\nP = \\left[\\begin{array}{cc} 1/3 &amp; 1/4 \\\\ 2/3 &amp; 3/4\\end{array}\\right]\n&lt;/math>\n\na) What is the probability that when the walker is in state 1 it moves to state 2?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_B_03_(a)", 
+    "year": 2010
 }

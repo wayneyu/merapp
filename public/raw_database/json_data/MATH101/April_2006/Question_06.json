@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_06", 
-    "course": "MATH101", 
-    "statement": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n\\emph{X} is a random variable with probability density function\n$f(x) = 2xe^{-x^{2}}$ where $x \\geq 0$. Find the median of \\emph{X}.", 
-    "year": 2006, 
-    "sols": [
-        "\\emph{Probability was not covered this year, hence this is not material\nfor the April 2012 exam.}\n\nSince \\emph{f}(\\emph{x}) = 0 for \\emph{x}$\\leq$ 0 it follows that\n\\emph{m} \\textgreater{} 0. Now we can directly compute \\emph{m}:\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx\\end{align*}\n\nWe use the substitution \\emph{u} = \\emph{x}\\textsuperscript{2},\n\\emph{du} = 2\\emph{x} \\emph{dx}. Then \\emph{u}(0) = 0 and\n\\emph{u}(\\emph{m}) = \\emph{m}\\textsuperscript{2}. Hence\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx \\\\\n&= \\int_0^{m^2} e^{-u}\\,du \\\\\n&= \\left.-e^{-u}\\right|_0^{m^2} \\\\\n&= -e^{-m^2}+e^0 \\\\\n&= 1-e^{-m^2}.\\end{align*}\n\nIn other words, \\emph{m} satisfies\n\n\\begin{align*}\n\\frac12 &= 1-e^{-m^2} \\\\\ne^{-m^2} &= \\frac12 \\\\\n-m^2 &= \\ln(2^{-1}) \\\\\nm^2 &= \\ln 2 \\\\\nm &= \\pm\\sqrt{\\ln 2}\\end{align*}\n\nNote that we can rule out the solution $m = -\\sqrt{\\ln 2}$ since we\nalready noted that \\emph{m} is positive.\n\nHence, the solution is $m=\\sqrt{\\ln 2}$."
+    "answer_html": "<p>Hence, the solution is <span class=\"math\">\\(m=\\sqrt{\\ln 2}\\)</span>.</p>\n", 
+    "answer_latex": "Hence, the solution is $m=\\sqrt{\\ln 2}$.", 
+    "contributors": [
+        "Konradbe", 
+        "IsabellGraf"
     ], 
-    "hints": [
-        "The median \\emph{m} is defined as that number, which satisfies\n\n\\begin{align*}\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx\\end{align*}", 
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The median <em>m</em> is defined as that number, which satisfies</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx\\end{aligned}\\]</span></p>\n", 
+        "<p>A simple substitution may be helpful to evaluate the integral.</p>\n"
+    ], 
+    "hints_latex": [
+        "The median \\emph{m} is defined as that number, which satisfies\n\n\\begin{align*}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx\n\\end{align*}", 
         "A simple substitution may be helpful to evaluate the integral."
-    ]
+    ], 
+    "hints_raw": [
+        "The median ''m'' is defined as that number, which satisfies\n\n:&lt;math>\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx\n&lt;/math>\n", 
+        "A simple substitution may be helpful to evaluate the integral.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6", 
+    "rating": null, 
+    "sols_html": [
+        "<p><em>Probability was not covered this year, hence this is not material for the April 2012 exam.</em></p>\n<p>Since <em>f</em>(<em>x</em>) = 0 for <em>x</em><span class=\"math\">\\(\\leq\\)</span> 0 it follows that <em>m</em> &gt; 0. Now we can directly compute <em>m</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx\\end{aligned}\\]</span></p>\n<p>We use the substitution <em>u</em> = <em>x</em><sup>2</sup>, <em>du</em> = 2<em>x</em> <em>dx</em>. Then <em>u</em>(0) = 0 and <em>u</em>(<em>m</em>) = <em>m</em><sup>2</sup>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx \\\\\n&amp;= \\int_0^{m^2} e^{-u}\\,du \\\\\n&amp;= \\left.-e^{-u}\\right|_0^{m^2} \\\\\n&amp;= -e^{-m^2}+e^0 \\\\\n&amp;= 1-e^{-m^2}.\\end{aligned}\\]</span></p>\n<p>In other words, <em>m</em> satisfies</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac12 &amp;= 1-e^{-m^2} \\\\\ne^{-m^2} &amp;= \\frac12 \\\\\n-m^2 &amp;= \\ln(2^{-1}) \\\\\nm^2 &amp;= \\ln 2 \\\\\nm &amp;= \\pm\\sqrt{\\ln 2}\\end{aligned}\\]</span></p>\n<p>Note that we can rule out the solution <span class=\"math\">\\(m = -\\sqrt{\\ln 2}\\)</span> since we already noted that <em>m</em> is positive.</p>\n<p>Hence, the solution is <span class=\"math\">\\(m=\\sqrt{\\ln 2}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "\\emph{Probability was not covered this year, hence this is not material\nfor the April 2012 exam.}\n\nSince \\emph{f}(\\emph{x}) = 0 for \\emph{x}$\\leq$ 0 it follows that\n\\emph{m} \\textgreater{} 0. Now we can directly compute \\emph{m}:\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx\n\\end{align*}\n\nWe use the substitution \\emph{u} = \\emph{x}\\textsuperscript{2},\n\\emph{du} = 2\\emph{x} \\emph{dx}. Then \\emph{u}(0) = 0 and\n\\emph{u}(\\emph{m}) = \\emph{m}\\textsuperscript{2}. Hence\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx \\\\\n&= \\int_0^{m^2} e^{-u}\\,du \\\\\n&= \\left.-e^{-u}\\right|_0^{m^2} \\\\\n&= -e^{-m^2}+e^0 \\\\\n&= 1-e^{-m^2}.\n\\end{align*}\n\nIn other words, \\emph{m} satisfies\n\n\\begin{align*}\n\\frac12 &= 1-e^{-m^2} \\\\\ne^{-m^2} &= \\frac12 \\\\\n-m^2 &= \\ln(2^{-1}) \\\\\nm^2 &= \\ln 2 \\\\\nm &= \\pm\\sqrt{\\ln 2}\n\\end{align*}\n\nNote that we can rule out the solution $m = -\\sqrt{\\ln 2}$ since we\nalready noted that \\emph{m} is positive.\n\nHence, the solution is $m=\\sqrt{\\ln 2}$."
+    ], 
+    "sols_raw": [
+        "''Probability was not covered this year, hence this is not material for the April 2012 exam.''\n\nSince ''f''(''x'') = 0 for ''x''&amp;le; 0 it follows that ''m'' > 0. Now we can directly compute ''m'':\n\n:&lt;math>\\begin{align}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx\n\\end{align} &lt;/math>\n\nWe use the substitution ''u'' = ''x''&lt;sup>2&lt;/sup>, ''du'' = 2''x'' ''dx''. Then ''u''(0) = 0 and ''u''(''m'') = ''m''&lt;sup>2&lt;/sup>. Hence\n\n:&lt;math> \\begin{align}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^m 2xe^{-x^2}\\,dx \\\\\n&amp;= \\int_0^{m^2} e^{-u}\\,du \\\\\n&amp;= \\left.-e^{-u}\\right|_0^{m^2} \\\\\n&amp;= -e^{-m^2}+e^0 \\\\\n&amp;= 1-e^{-m^2}.\n\\end{align} &lt;/math>\n\nIn other words, ''m'' satisfies\n:&lt;math> \\begin{align}\n\\frac12 &amp;= 1-e^{-m^2} \\\\\ne^{-m^2} &amp;= \\frac12 \\\\\n-m^2 &amp;= \\ln(2^{-1}) \\\\\nm^2 &amp;= \\ln 2 \\\\\nm &amp;= \\pm\\sqrt{\\ln 2}\n\\end{align} &lt;/math>\n\nNote that we can rule out the solution &lt;math> m = -\\sqrt{\\ln 2} &lt;/math> since we already noted that ''m'' is positive.\n\nHence, the solution is &lt;math> m=\\sqrt{\\ln 2}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required.</p>\n<p><em>X</em> is a random variable with probability density function <span class=\"math\">\\(f(x) = 2xe^{-x^{2}}\\)</span> where <span class=\"math\">\\(x \\geq 0\\)</span>. Find the median of <em>X</em>.</p>\n", 
+    "statement_latex": "Full-Solution Problems. Justify your answers and show all your work.\nSimplification of answers is not required.\n\n\\emph{X} is a random variable with probability density function\n$f(x) = 2xe^{-x^{2}}$ where $x \\geq 0$. Find the median of \\emph{X}.", 
+    "statement_raw": "&lt;b> Full-Solution Problems. Justify your answers and show all your work. Simplification of answers is not required. &lt;/b>\n\n''X'' is a random variable with probability density function &lt;math> f(x) = 2xe^{-x^{2}} &lt;/math> where &lt;math> x \\geq 0 &lt;/math>. Find the median of ''X''.\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_06", 
+    "year": 2006
 }

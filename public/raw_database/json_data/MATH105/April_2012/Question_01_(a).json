@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = 2|x| &lt; 1\\)</span> and hence absolute convergence is obtained for <span class=\"math\">\\(|x| &lt; 1/2.\\)</span>The radius of convergence is 1/2.</p>\n", 
+    "answer_latex": "$\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = 2|x| < 1$\nand hence absolute convergence is obtained for $|x| < 1/2.$The radius of convergence is 1/2.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH105", 
-    "statement": "Find the radius of convergence of the series\n\n\\begin{align*}\\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k\\end{align*}", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the ratio test.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the ratio test."
+    ], 
+    "hints_raw": [
+        "Use the ratio test.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We can apply the ratio test here. Let <span class=\"math\">\\(a_k = (-1)^k 2^{k+1} x^k,\\)</span> so that the series converges absolutely if</p>\n<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} |\\frac{a_{k+1}}{a_k}| &lt; 1.\\)</span></p>\n<p>In this case, we require</p>\n<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = |(-1)(2)(x)| = 2|x| &lt; 1\\)</span> and hence absolute convergence is obtained for <span class=\"math\">\\(|x| &lt; 1/2.\\)</span></p>\n<p>The radius of convergence is 1/2.</p>\n"
+    ], 
+    "sols_latex": [
         "We can apply the ratio test here. Let $a_k = (-1)^k 2^{k+1} x^k,$ so\nthat the series converges absolutely if\n\n$\\lim_{k \\rightarrow \\infty} |\\frac{a_{k+1}}{a_k}| < 1.$\n\nIn this case, we require\n\n$\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = |(-1)(2)(x)| = 2|x| < 1$\nand hence absolute convergence is obtained for $|x| < 1/2.$\n\nThe radius of convergence is 1/2."
     ], 
-    "hints": [
-        "Use the ratio test."
-    ]
+    "sols_raw": [
+        "We can apply the ratio test here. Let &lt;math>a_k = (-1)^k 2^{k+1} x^k,&lt;/math> so that the series converges absolutely if\n\n&lt;math>\\lim_{k \\rightarrow \\infty} |\\frac{a_{k+1}}{a_k}| &lt; 1.&lt;/math>\n\nIn this case, we require\n\n&lt;math>\\lim_{k \\rightarrow \\infty} |\\frac{(-1)^{k+1} 2^{k+2} x^{k+1}}{(-1)^k 2^{k+1} x^k}| = |(-1)(2)(x)| = 2|x| &lt; 1&lt;/math> and hence absolute convergence is obtained for &lt;math>|x| &lt; 1/2.&lt;/math>\n\nThe radius of convergence is 1/2.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find the radius of convergence of the series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the radius of convergence of the series\n\n\\begin{align*}\n\\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k\n\\end{align*}", 
+    "statement_raw": "Find the radius of convergence of the series\n\n:&lt;math> \\sum_{k=0}^\\infty (-1)^k 2^{k+1}x^k &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Power_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_01_(a)", 
+    "year": 2012
 }

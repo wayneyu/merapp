@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_04", 
-    "course": "MATH220", 
-    "statement": "Let $f$: \\emph{A} \u2192 \\emph{B} be a function. If \\emph{C} \u2286 \\emph{A}, define\n\n\\begin{align*}f(C) = \\{f(x) \\mid x \\in C\\}\\end{align*}\n\nProve that if $f$ is injective, then\n\n\\begin{align*}f(C \\cap D) = f(C) \\cap f(D) \\quad\\text{for all sets } C, D \\subseteq A\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "We want to show that\n\n\\begin{align*}f(C \\cap D) \\subseteq f(C) \\cap f(D)\\end{align*} and that\n\n\\begin{align*}f(C) \\cap f(D) \\subseteq f(C \\cap D)\\end{align*} Let us start with the first.\n\nSuppose that \\emph{y} \u2208 $f({C} \u2229 \\emph{D})$; that is, there is some\n\\emph{x} \u2208 \\emph{C} \u2229 \\emph{D} such that $f(x)$ = \\emph{y}. Since\n\\emph{x} \u2208 \\emph{C} and \\emph{x} \u2208 \\emph{D}, it follows that \\emph{y} \u2208\n$f(C)$ and that \\emph{y} \u2208 $f(D)$, i.e. that \\emph{y} \u2208\n$f(C)$ \u2229 $f(D)$ as desired.\n\n\\emph{Note: This proof in no way uses injectivity; this is a general\nstatement about all functions}.\n\nNow we prove the second statement. Suppose that \\emph{y} \u2208 $f(C)$ \u2229\n$f(D)$. That is, \\emph{y} \u2208 $f(C)$ and \\emph{y} \u2208 $f(D)$.\nEquivalently, there is some \\emph{x}\\textsubscript{1} \u2208 \\emph{C} such\nthat $f({x}\\textsubscript{1})$ = \\emph{y}, and some\n\\emph{x}\\textsubscript{2} \u2208 \\emph{D} such that\n$f({x}\\textsubscript{2})$ = \\emph{y}. We claim that\n\\emph{x}\\textsubscript{1} = \\emph{x}\\textsubscript{2}, and hence\n\\emph{x}\\textsubscript{1} = \\emph{x}\\textsubscript{2} \u2208 \\emph{C} \u2229\n\\emph{D}. But this follows immediately from the injectivity of $f$. It\nfollows now, since $f({x}\\textsubscript{1})$ = \\emph{y} and\n\\emph{x}\\textsubscript{1} \u2208 \\emph{C} \u2229 \\emph{D} that \\emph{y} \u2208\n$f({C} \u2229 \\emph{D})$ as claimed."
+    "answer_html": "<p>It follows now, since <span class=\"math\">\\(f(x_1) = y\\)</span> and <span class=\"math\">\\(x_1 \\in C \\cap D\\)</span> that <span class=\"math\">\\(y \\in f(C \\cap D)\\)</span> as claimed.</p>\n", 
+    "answer_latex": "It follows now, since $f(x_1) = y$ and\n$x_1 \\in C \\cap D$ that $y \\in f(C \\cap D)$ as claimed.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Remember that to show that two sets \\emph{X} and \\emph{Y} are equal, you\nmust show that \\emph{X} \u2286 \\emph{Y} and that \\emph{Y} \u2286 \\emph{X}."
-    ]
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Remember that to show that two sets <em>X</em> and <em>Y</em> are equal, you must show that <em>X</em> <span class=\"math\">\\(\\subseteq\\)</span> <em>Y</em> and that <em>Y</em> <span class=\"math\">\\(\\subseteq\\)</span> <em>X</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that to show that two sets \\emph{X} and \\emph{Y} are equal, you\nmust show that \\emph{X} $\\subseteq$ \\emph{Y} and that \\emph{Y} $\\subseteq$ \\emph{X}."
+    ], 
+    "hints_raw": [
+        "Remember that to show that two sets ''X'' and ''Y'' are equal, you must show that ''X'' &amp;sube; ''Y'' and that ''Y'' &amp;sube; ''X''.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "4", 
+    "rating": 41, 
+    "sols_html": [
+        "<p>We want to show that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(C \\cap D) \\subseteq f(C) \\cap f(D)\\end{aligned}\\]</span></p>\n<p>and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(C) \\cap f(D) \\subseteq f(C \\cap D)\\end{aligned}\\]</span></p>\n<p>Let us start with the first.</p>\n<p>Suppose that <span class=\"math\">\\(y \\in f(C \\cap D)\\)</span>; that is, there is some <span class=\"math\">\\(x \\in C \\cap D\\)</span> such that <span class=\"math\">\\(f(x) = y\\)</span>. Since <span class=\"math\">\\(x \\in C\\)</span> and <span class=\"math\">\\(x \\in D\\)</span>, it follows that <span class=\"math\">\\(y \\in f(C)\\)</span> and that <span class=\"math\">\\(y \\in f(D)\\)</span>, i.e. that <span class=\"math\">\\(y \\in f(C) \\cap f(D)\\)</span> as desired.</p>\n<p><em>Note: This proof in no way uses injectivity; this is a general statement about all functions</em>.</p>\n<p>Now we prove the second statement. Suppose that <span class=\"math\">\\(y \\in f(C) \\cap f(D)\\)</span>. That is, <span class=\"math\">\\(y \\in f(C)\\)</span> and <span class=\"math\">\\(y \\in f(D)\\)</span>. Equivalently, there is some <span class=\"math\">\\(x_1 \\in C\\)</span> such that <span class=\"math\">\\(f(x_1) = y\\)</span>, and some <span class=\"math\">\\(x_2 \\in D\\)</span> such that <span class=\"math\">\\(f(x_2) = y\\)</span>. We claim that <span class=\"math\">\\(x_1 = x_2\\)</span>, and hence <span class=\"math\">\\(x_1 = x_2 \\in C \\cap D\\)</span>. But this follows immediately from the injectivity of <span class=\"math\">\\(f\\)</span>. It follows now, since <span class=\"math\">\\(f(x_1) = y\\)</span> and <span class=\"math\">\\(x_1 \\in C \\cap D\\)</span> that <span class=\"math\">\\(y \\in f(C \\cap D)\\)</span> as claimed.</p>\n"
+    ], 
+    "sols_latex": [
+        "We want to show that\n\n\\begin{align*}\nf(C \\cap D) \\subseteq f(C) \\cap f(D)\n\\end{align*} and that\n\n\\begin{align*}\nf(C) \\cap f(D) \\subseteq f(C \\cap D)\n\\end{align*} Let us start with the first.\n\nSuppose that $y \\in f(C \\cap D)$; that is, there is some\n$x \\in C \\cap D$ such that $f(x) = y$. Since $x \\in C$ and $x \\in D$, it\nfollows that $y \\in f(C)$ and that $y \\in f(D)$, i.e. that\n$y \\in f(C) \\cap f(D)$ as desired.\n\n\\emph{Note: This proof in no way uses injectivity; this is a general\nstatement about all functions}.\n\nNow we prove the second statement. Suppose that $y \\in f(C) \\cap f(D)$.\nThat is, $y \\in f(C)$ and $y \\in f(D)$. Equivalently, there is some\n$x_1 \\in C$ such that $f(x_1) = y$, and some $x_2 \\in D$ such that\n$f(x_2) = y$. We claim that $x_1 = x_2$, and hence\n$x_1 = x_2 \\in C \\cap D$. But this follows immediately from the\ninjectivity of $f$. It follows now, since $f(x_1) = y$ and\n$x_1 \\in C \\cap D$ that $y \\in f(C \\cap D)$ as claimed."
+    ], 
+    "sols_raw": [
+        "We want to show that\n:&lt;math>\nf(C \\cap D) \\subseteq f(C) \\cap f(D)\n&lt;/math>\nand that\n:&lt;math>\nf(C) \\cap f(D) \\subseteq f(C \\cap D)\n&lt;/math>\nLet us start with the first.\n\nSuppose that &lt;math>y \\in f(C \\cap D)&lt;/math>; that is, there is some &lt;math>x \\in C \\cap D&lt;/math> such that &lt;math>f(x) = y&lt;/math>. Since &lt;math>x \\in C&lt;/math> and &lt;math>x \\in D&lt;/math>, it follows that &lt;math>y \\in f(C)&lt;/math> and that &lt;math>y \\in f(D)&lt;/math>, i.e. that &lt;math>y \\in f(C) \\cap f(D)&lt;/math> as desired.\n\n''Note: This proof in no way uses injectivity; this is a general statement about all functions''.\n\nNow we prove the second statement. Suppose that &lt;math>y \\in f(C) \\cap f(D)&lt;/math>. That is, &lt;math>y \\in f(C)&lt;/math> and &lt;math>y \\in f(D)&lt;/math>. Equivalently, there is some &lt;math>x_1 \\in C&lt;/math> such that &lt;math>f(x_1) = y&lt;/math>, and some &lt;math>x_2 \\in D&lt;/math> such that &lt;math>f(x_2) = y&lt;/math>. We claim that &lt;math>x_1 = x_2&lt;/math>, and hence &lt;math>x_1 = x_2 \\in C \\cap D&lt;/math>. But this follows immediately from the injectivity of &lt;math>f&lt;/math>. It follows now, since &lt;math>f(x_1) = y&lt;/math> and &lt;math>x_1 \\in C \\cap D&lt;/math> that &lt;math>y \\in f(C \\cap D)&lt;/math> as claimed.\n"
+    ], 
+    "solvers": [
+        "SimonRose"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f\\)</span>: <em>A</em> <span class=\"math\">\\(\\rightarrow\\)</span> <em>B</em> be a function. If <em>C</em> <span class=\"math\">\\(\\subseteq\\)</span> <em>A</em>, define</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(C) = \\{f(x) \\mid x \\in C\\}\\end{aligned}\\]</span></p>\n<p>Prove that if <span class=\"math\">\\(f\\)</span> is injective, then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(C \\cap D) = f(C) \\cap f(D) \\quad\\text{for all sets } C, D \\subseteq A\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Let $f$: \\emph{A} $\\rightarrow$ \\emph{B} be a function. If \\emph{C} $\\subseteq$ \\emph{A}, define\n\n\\begin{align*}\nf(C) = \\{f(x) \\mid x \\in C\\}\n\\end{align*}\n\nProve that if $f$ is injective, then\n\n\\begin{align*}\nf(C \\cap D) = f(C) \\cap f(D) \\quad\\text{for all sets } C, D \\subseteq A\n\\end{align*}", 
+    "statement_raw": "Let &amp;fnof;: ''A'' &amp;rarr; ''B'' be a function. If ''C'' &amp;sube; ''A'', define\n\n:&lt;math>\nf(C) = \\{f(x) \\mid x \\in C\\}\n&lt;/math>\n\nProve that if &amp;fnof; is injective, then\n:&lt;math>\nf(C \\cap D) = f(C) \\cap f(D) \\quad\\text{for all sets } C, D \\subseteq A\n&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_04", 
+    "year": 2011
 }

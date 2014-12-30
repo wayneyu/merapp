@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_B_01_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\hat{a} = \\begin{bmatrix}\n4/5 \\\\ 3/5\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": "$\\hat{a} = \\begin{bmatrix}\n4/5 \\\\ 3/5\n\\end{bmatrix}$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH152", 
-    "statement": "Let $L$ be the line $3x = 4y$.\n\nFind a \\textbf{unit} vector $\\hat{a}$ in the direction of \\emph{L}.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>First find a point on the line. Then normalize.</p>\n"
+    ], 
+    "hints_latex": [
+        "First find a point on the line. Then normalize."
+    ], 
+    "hints_raw": [
+        "First find a point on the line. Then normalize.\n"
+    ], 
+    "num_votes": 9, 
+    "question": "B 01 (a)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>Notice that <span class=\"math\">\\((x,y) = (4,3)\\)</span> is a point on the line. So the vector</p>\n<p><span class=\"math\">\\(v = \\begin{bmatrix}\n4 \\\\ 3\n\\end{bmatrix}\\)</span></p>\n<p>is a matrix in the direction of <em>L</em>. To make it a unit vector, we divide the coordinates by the length of the vector. The length is given by</p>\n<p><span class=\"math\">\\(\\| v \\| = \\sqrt{(4)^2 + (3)^3} = \\sqrt{25} = 5\\)</span></p>\n<p>Thus, the unit vector is given by</p>\n<p><span class=\"math\">\\(\\hat{a} = \\begin{bmatrix}\n4/5 \\\\ 3/5\n\\end{bmatrix}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "Notice that $(x,y) = (4,3)$ is a point on the line. So the vector\n\n$v = \\begin{bmatrix}\n4 \\\\ 3\n\\end{bmatrix}$\n\nis a matrix in the direction of \\emph{L}. To make it a unit vector, we\ndivide the coordinates by the length of the vector. The length is given\nby\n\n$\\| v \\| = \\sqrt{(4)^2 + (3)^3} = \\sqrt{25} = 5$\n\nThus, the unit vector is given by\n\n$\\hat{a} = \\begin{bmatrix}\n4/5 \\\\ 3/5\n\\end{bmatrix}$"
     ], 
-    "hints": [
-        "First find a point on the line. Then normalize."
-    ]
+    "sols_raw": [
+        "Notice that &lt;math>(x,y) = (4,3) &lt;/math> is a point on the line. So the vector\n\n&lt;math>\nv = \\begin{bmatrix}\n4 \\\\ 3\n\\end{bmatrix}\n&lt;/math>\n\nis a matrix in the direction of ''L''. To make it a unit vector, we divide the coordinates by the length of the vector. The length is given by\n\n&lt;math> \n\\| v \\| = \\sqrt{(4)^2 + (3)^3} = \\sqrt{25} = 5\n&lt;/math>\n\nThus, the unit vector is given by\n\n&lt;math>\n\\hat{a} = \\begin{bmatrix}\n4/5 \\\\ 3/5\n\\end{bmatrix}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(L\\)</span> be the line <span class=\"math\">\\(3x = 4y\\)</span>.</p>\n<p>Find a <strong>unit</strong> vector <span class=\"math\">\\(\\hat{a}\\)</span> in the direction of <em>L</em>.</p>\n", 
+    "statement_latex": "Let $L$ be the line $3x = 4y$.\n\nFind a \\textbf{unit} vector $\\hat{a}$ in the direction of \\emph{L}.", 
+    "statement_raw": "Let &lt;math> L &lt;/math> be the line &lt;math> 3x = 4y &lt;/math>.\n\nFind a '''unit''' vector &lt;math> \\hat{a} &lt;/math> in the direction of ''L''.\n", 
+    "term": "April", 
+    "topics": [
+        "Linear_transformation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_01_(a)", 
+    "year": 2013
 }

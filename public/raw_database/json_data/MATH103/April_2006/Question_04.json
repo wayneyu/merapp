@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_04", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "You are driving your car at 30 m/sec (approximately 108 km/hr) to catch\nyour flight to Costa Rica for summer holidays. A pedestrian runs across\nthe road, forcing you to break hard. Suppose it takes you 1 sec to react\nto the danger, and that when you apply your brakes, you slow down at the\nrate a = -10 m/$\\text{sec}^{2}$. After applying the brakes, how long\nwill it take you to stop? How far will your car move from the instant\nthat the danger is sighted until coming to a complete stop?", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "4", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>You are driving your car at 30 m/sec (approximately 108 km/hr) to catch your flight to Costa Rica for summer holidays. A pedestrian runs across the road, forcing you to break hard. Suppose it takes you 1 sec to react to the danger, and that when you apply your brakes, you slow down at the rate a = -10 m/<span class=\"math\">\\(\\text{sec}^{2}\\)</span>. After applying the brakes, how long will it take you to stop? How far will your car move from the instant that the danger is sighted until coming to a complete stop?</p>\n", 
+    "statement_latex": "You are driving your car at 30 m/sec (approximately 108 km/hr) to catch\nyour flight to Costa Rica for summer holidays. A pedestrian runs across\nthe road, forcing you to break hard. Suppose it takes you 1 sec to react\nto the danger, and that when you apply your brakes, you slow down at the\nrate a = -10 m/$\\text{sec}^{2}$. After applying the brakes, how long\nwill it take you to stop? How far will your car move from the instant\nthat the danger is sighted until coming to a complete stop?", 
+    "statement_raw": "You are driving your car at 30 m/sec (approximately 108 km/hr) to catch your flight to Costa Rica for summer holidays. A pedestrian runs across the road, forcing you to break hard. Suppose it takes you 1 sec to react to the danger, and that when you apply your brakes, you slow down at the rate a = -10 m/&lt;math>\\text{sec}^{2}&lt;/math>. After applying the brakes, how long will it take you to stop? How far will your car move from the instant that the danger is sighted until coming to a complete stop?\n", 
+    "term": "April", 
+    "topics": [
+        "Net_change_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_04", 
+    "year": 2006
 }

@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_04_(a)", 
-    "course": "MATH152", 
-    "statement": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nShow that T is a linear transformation.", 
-    "year": 2011, 
-    "sols": [
-        "Following the hint, we seek to show the properties of a linear\ntransformation,\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y}),\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x}).\\end{align*}\n\nFor the first property,\n\n\\begin{align*}\n&T(\\mathbf{x}+\\mathbf{y})\\\\\n&=(\\mathbf{x}+\\mathbf{y})\\times\\mathbf{a}\\\\\n&=(\\mathbf{x}\\times\\mathbf{a})+(\\mathbf{y}\\times\\mathbf{a})\\\\\n&=T(\\mathbf{x})+T(\\mathbf{y}),\\end{align*}\n\nwhere we have used that the cross product is\n\\href{Wikipedia:Distributive}{distributive} over addition. The second\nproperty holds by the compatibility of scalar multiplication with the\ncross product,\n\n\\begin{align*}\n&T(c\\mathbf{x})\\\\\n&=(c\\mathbf{x})\\times\\mathbf{a}\\\\\n&=c(\\mathbf{x}\\times\\mathbf{a})\\\\\n&=cT(\\mathbf{x}).\\end{align*}\n\nTherefore we have concluded that \\emph{T} is a linear transformation."
+    "answer_html": "<p>Therefore we have concluded that <em>T</em> is a linear transformation.</p>\n", 
+    "answer_latex": "Therefore we have concluded that \\emph{T} is a linear transformation.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Recall that a transformation is linear if\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y})\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x})\\end{align*}\n\nfor some vectors \\textbf{x}, \\textbf{y}, and constant c."
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that a transformation is linear if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT(\\mathbf{x}+\\mathbf{y})&amp;=T(\\mathbf{x})+T(\\mathbf{y})\\\\\nT(c\\mathbf{x})&amp;=cT(\\mathbf{x})\\end{aligned}\\]</span></p>\n<p>for some vectors <strong>x</strong>, <strong>y</strong>, and constant c.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that a transformation is linear if\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y})\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x})\n\\end{align*}\n\nfor some vectors \\textbf{x}, \\textbf{y}, and constant c."
+    ], 
+    "hints_raw": [
+        "Recall that a transformation is linear if\n\n:&lt;math>\n\\begin{align}\nT(\\mathbf{x}+\\mathbf{y})&amp;=T(\\mathbf{x})+T(\\mathbf{y})\\\\\nT(c\\mathbf{x})&amp;=cT(\\mathbf{x})\n\\end{align}\n&lt;/math>\n\nfor some vectors '''x''', '''y''', and constant c.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 04 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>Following the hint, we seek to show the properties of a linear transformation,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT(\\mathbf{x}+\\mathbf{y})&amp;=T(\\mathbf{x})+T(\\mathbf{y}),\\\\\nT(c\\mathbf{x})&amp;=cT(\\mathbf{x}).\\end{aligned}\\]</span></p>\n<p>For the first property,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;T(\\mathbf{x}+\\mathbf{y})\\\\\n&amp;=(\\mathbf{x}+\\mathbf{y})\\times\\mathbf{a}\\\\\n&amp;=(\\mathbf{x}\\times\\mathbf{a})+(\\mathbf{y}\\times\\mathbf{a})\\\\\n&amp;=T(\\mathbf{x})+T(\\mathbf{y}),\\end{aligned}\\]</span></p>\n<p>where we have used that the cross product is <span>distributive</span> over addition. The second property holds by the compatibility of scalar multiplication with the cross product,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;T(c\\mathbf{x})\\\\\n&amp;=(c\\mathbf{x})\\times\\mathbf{a}\\\\\n&amp;=c(\\mathbf{x}\\times\\mathbf{a})\\\\\n&amp;=cT(\\mathbf{x}).\\end{aligned}\\]</span></p>\n<p>Therefore we have concluded that <em>T</em> is a linear transformation.</p>\n"
+    ], 
+    "sols_latex": [
+        "Following the hint, we seek to show the properties of a linear\ntransformation,\n\n\\begin{align*}\nT(\\mathbf{x}+\\mathbf{y})&=T(\\mathbf{x})+T(\\mathbf{y}),\\\\\nT(c\\mathbf{x})&=cT(\\mathbf{x}).\n\\end{align*}\n\nFor the first property,\n\n\\begin{align*}\n&T(\\mathbf{x}+\\mathbf{y})\\\\\n&=(\\mathbf{x}+\\mathbf{y})\\times\\mathbf{a}\\\\\n&=(\\mathbf{x}\\times\\mathbf{a})+(\\mathbf{y}\\times\\mathbf{a})\\\\\n&=T(\\mathbf{x})+T(\\mathbf{y}),\n\\end{align*}\n\nwhere we have used that the cross product is\n{distributive} over addition. The second\nproperty holds by the compatibility of scalar multiplication with the\ncross product,\n\n\\begin{align*}\n&T(c\\mathbf{x})\\\\\n&=(c\\mathbf{x})\\times\\mathbf{a}\\\\\n&=c(\\mathbf{x}\\times\\mathbf{a})\\\\\n&=cT(\\mathbf{x}).\n\\end{align*}\n\nTherefore we have concluded that \\emph{T} is a linear transformation."
+    ], 
+    "sols_raw": [
+        "Following the hint, we seek to show the properties of a linear transformation,\n\n:&lt;math>\n\\begin{align}\nT(\\mathbf{x}+\\mathbf{y})&amp;=T(\\mathbf{x})+T(\\mathbf{y}),\\\\\nT(c\\mathbf{x})&amp;=cT(\\mathbf{x}).\n\\end{align}\n&lt;/math>\n\nFor the first property,\n\n:&lt;math>\n\\begin{align}\n&amp;T(\\mathbf{x}+\\mathbf{y})\\\\\n&amp;=(\\mathbf{x}+\\mathbf{y})\\times\\mathbf{a}\\\\\n&amp;=(\\mathbf{x}\\times\\mathbf{a})+(\\mathbf{y}\\times\\mathbf{a})\\\\\n&amp;=T(\\mathbf{x})+T(\\mathbf{y}),\n\\end{align}\n&lt;/math>\n\nwhere we have used that the cross product is [[Wikipedia:Distributive|distributive]] over addition.  The second property holds by the compatibility of scalar multiplication with the cross product,\n\n:&lt;math>\n\\begin{align}\n&amp;T(c\\mathbf{x})\\\\\n&amp;=(c\\mathbf{x})\\times\\mathbf{a}\\\\\n&amp;=c(\\mathbf{x}\\times\\mathbf{a})\\\\\n&amp;=cT(\\mathbf{x}).\n\\end{align}\n&lt;/math>\n\nTherefore we have concluded that ''T'' is a linear transformation.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let a=<span>[</span>1,2,-1<span>]</span>. Consider the transformation <span class=\"math\">\\(T:\\mathbb{R}^3\\to\\mathbb{R}^3\\)</span> defined by <span class=\"math\">\\(T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}\\)</span> for all <strong>x</strong> in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>, where <span class=\"math\">\\(\\times\\)</span> is the cross-product in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>.</p>\n<p>Show that T is a linear transformation.</p>\n", 
+    "statement_latex": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nShow that T is a linear transformation.", 
+    "statement_raw": "Let a=[1,2,-1].  Consider the transformation &lt;math>T:\\mathbb{R}^3\\to\\mathbb{R}^3&lt;/math> defined by &lt;math>T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}&lt;/math> for all '''x''' in &lt;math>\\mathbb{R}^3&lt;/math>, where &lt;math>\\times&lt;/math> is the cross-product in &lt;math>\\mathbb{R}^3&lt;/math>.\n\nShow that T is a linear transformation.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_04_(a)", 
+    "year": 2011
 }

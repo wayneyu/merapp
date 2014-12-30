@@ -1,14 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_09_(b)", 
-    "course": "MATH220", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\end{align*}\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nGive an example of sets \\emph{A}, \\emph{B} and functions \\emph{f},\n\\emph{g} as above such that \\emph{f} is not surjective.", 
-    "year": 2011, 
-    "sols": [
-        "We showed in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} that the function \\emph{g} will always be surjective, this question\nasks us to give an example to illustrate why the function \\emph{f}\ndoesn't have to be necessarily.\n\nFor example, consider the case where the set \\emph{A} is all the natural\nnumbers including zero: \\emph{A}=\\{ 0, 1, 2, ... \\} and the set \\emph{B}\nis all the integers: \\emph{B} = \\{ ..., -2, -1, 0, 1, 2, ... \\}. Now the\nfunction \\emph{f} just maps a natural number to itself, so\n\n\\begin{align*}\\displaystyle\nf(n) = n \\quad\\text{for all } n=0,1,2,\\dots\\end{align*}\n\nand the function \\emph{g} maps an integer to its absolute value, so\n\n\\begin{align*}\\displaystyle\ng(k) = |k| \\quad\\text{for all } k \\in \\mathbb{Z}\\end{align*}\n\nThen the function $g \\circ f$ is clearly surjective since it takes a\nnatural number back to itself. That is, $(g \\circ f)(a) = a$ for all\n$a \\in A$.\n\nBut the function \\emph{f} isn't surjective since it doesn't map to any\nnegative integer (no negative number has a pre-image under the function\n\\emph{f}). Notice that as shown in\n\\href{Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)}{part\n(a)} the function \\emph{g} is, and has to be, surjective.", 
-        "Another, minimal example is the following:\n\nLet \\emph{A} = \\{a\\}, and \\emph{B} = \\{1,2\\}. Then define\n\n\\begin{align*}f: A \\rightarrow B, \\quad f(a) = 1, \\qquad g: B \\rightarrow A, \\quad g(1) = g(2) = a.\\end{align*}\n\nThen, clearly\n\n\\begin{align*}(g \\circ f) : A \\rightarrow A, \\quad (g \\circ f)(a) = g(f(a)) = g(1) = a,\\end{align*}\n\nand thus $g \\circ f$ is surjective.\n\nHowever, \\emph{f} is not surjective, since $2 \\in B$ does not have a\npre-image in \\emph{A} under \\emph{f}.\n\n''Notice again, that \\emph{g} is, and needs to be, surjective for\n$g \\circ f$ to be surjective."
+    "answer_html": "<p>Notice that as shown in <span>part (a)</span> the function <em>g</em> is, and has to be, surjective.</p>\n", 
+    "answer_latex": "Notice that as shown in\n{part\n(a)} the function \\emph{g} is, and has to be, surjective.", 
+    "contributors": [
+        "CameronChristou"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Start with a choice of sets <em>A</em> and <em>B</em> and functions <em>f</em> and <em>g</em> such that <span class=\"math\">\\(g \\circ f\\)</span> is surjective. If <em>f</em> isn&#8217;t surjective, you won, that&#8217;s your example! If not, can you add some elements to the set <em>B</em> to tweak your example and obtain what you&#8217;re looking for?</p>\n"
+    ], 
+    "hints_latex": [
         "Start with a choice of sets \\emph{A} and \\emph{B} and functions \\emph{f}\nand \\emph{g} such that $g \\circ f$ is surjective. If \\emph{f} isn't\nsurjective, you won, that's your example! If not, can you add some\nelements to the set \\emph{B} to tweak your example and obtain what\nyou're looking for?"
-    ]
+    ], 
+    "hints_raw": [
+        "Start with a choice of sets ''A'' and ''B'' and functions ''f'' and ''g'' such that &lt;math>g \\circ f&lt;/math> is surjective. If ''f'' isn't surjective, you won, that's your example! If not, can you add some elements to the set ''B'' to tweak your example and obtain what you're looking for?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We showed in <span>part (a)</span> that the function <em>g</em> will always be surjective, this question asks us to give an example to illustrate why the function <em>f</em> doesn&#8217;t have to be necessarily.</p>\n<p>For example, consider the case where the set <em>A</em> is all the natural numbers including zero: <em>A</em>={ 0, 1, 2, ... } and the set <em>B</em> is all the integers: <em>B</em> = { ..., -2, -1, 0, 1, 2, ... }. Now the function <em>f</em> just maps a natural number to itself, so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(n) = n \\quad\\text{for all } n=0,1,2,\\dots\\end{aligned}\\]</span></p>\n<p>and the function <em>g</em> maps an integer to its absolute value, so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ng(k) = |k| \\quad\\text{for all } k \\in \\mathbb{Z}\\end{aligned}\\]</span></p>\n<p>Then the function <span class=\"math\">\\(g \\circ f\\)</span> is clearly surjective since it takes a natural number back to itself. That is, <span class=\"math\">\\((g \\circ f)(a) = a\\)</span> for all <span class=\"math\">\\(a \\in A\\)</span>.</p>\n<p>But the function <em>f</em> isn&#8217;t surjective since it doesn&#8217;t map to any negative integer (no negative number has a pre-image under the function <em>f</em>). Notice that as shown in <span>part (a)</span> the function <em>g</em> is, and has to be, surjective.</p>\n", 
+        "<p>Another, minimal example is the following:</p>\n<p>Let <em>A</em> = {a}, and <em>B</em> = {1,2}. Then define</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf: A \\rightarrow B, \\quad f(a) = 1, \\qquad g: B \\rightarrow A, \\quad g(1) = g(2) = a.\\end{aligned}\\]</span></p>\n<p>Then, clearly</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(g \\circ f) : A \\rightarrow A, \\quad (g \\circ f)(a) = g(f(a)) = g(1) = a,\\end{aligned}\\]</span></p>\n<p>and thus <span class=\"math\">\\(g \\circ f\\)</span> is surjective.</p>\n<p>However, <em>f</em> is not surjective, since <span class=\"math\">\\(2 \\in B\\)</span> does not have a pre-image in <em>A</em> under <em>f</em>.</p>\n<p>&#8221;Notice again, that <em>g</em> is, and needs to be, surjective for <span class=\"math\">\\(g \\circ f\\)</span> to be surjective.</p>\n"
+    ], 
+    "sols_latex": [
+        "We showed in\n{part\n(a)} that the function \\emph{g} will always be surjective, this question\nasks us to give an example to illustrate why the function \\emph{f}\ndoesn't have to be necessarily.\n\nFor example, consider the case where the set \\emph{A} is all the natural\nnumbers including zero: \\emph{A}=\\{ 0, 1, 2, ... \\} and the set \\emph{B}\nis all the integers: \\emph{B} = \\{ ..., -2, -1, 0, 1, 2, ... \\}. Now the\nfunction \\emph{f} just maps a natural number to itself, so\n\n\\begin{align*}\n\\displaystyle\nf(n) = n \\quad\\text{for all } n=0,1,2,\\dots\n\\end{align*}\n\nand the function \\emph{g} maps an integer to its absolute value, so\n\n\\begin{align*}\n\\displaystyle\ng(k) = |k| \\quad\\text{for all } k \\in \\mathbb{Z}\n\\end{align*}\n\nThen the function $g \\circ f$ is clearly surjective since it takes a\nnatural number back to itself. That is, $(g \\circ f)(a) = a$ for all\n$a \\in A$.\n\nBut the function \\emph{f} isn't surjective since it doesn't map to any\nnegative integer (no negative number has a pre-image under the function\n\\emph{f}). Notice that as shown in\n{part\n(a)} the function \\emph{g} is, and has to be, surjective.", 
+        "Another, minimal example is the following:\n\nLet \\emph{A} = \\{a\\}, and \\emph{B} = \\{1,2\\}. Then define\n\n\\begin{align*}\nf: A \\rightarrow B, \\quad f(a) = 1, \\qquad g: B \\rightarrow A, \\quad g(1) = g(2) = a.\n\\end{align*}\n\nThen, clearly\n\n\\begin{align*}\n(g \\circ f) : A \\rightarrow A, \\quad (g \\circ f)(a) = g(f(a)) = g(1) = a,\n\\end{align*}\n\nand thus $g \\circ f$ is surjective.\n\nHowever, \\emph{f} is not surjective, since $2 \\in B$ does not have a\npre-image in \\emph{A} under \\emph{f}.\n\n''Notice again, that \\emph{g} is, and needs to be, surjective for\n$g \\circ f$ to be surjective."
+    ], 
+    "sols_raw": [
+        "We showed in [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)|part (a)]] that the function ''g'' will always be surjective, this question asks us to give an example to illustrate why the function ''f'' doesn't have to be necessarily.\n\nFor example, consider the case where the set ''A'' is all the natural numbers including zero: ''A''={ 0, 1, 2, ... } and the set ''B'' is all the integers: ''B'' = { ..., -2, -1, 0, 1, 2, ... }. Now the function ''f'' just maps a natural number to itself, so\n:&lt;math>\\displaystyle\nf(n) = n \\quad\\text{for all } n=0,1,2,\\dots\n&lt;/math>\n\nand the function ''g'' maps an integer to its absolute value, so\n:&lt;math>\\displaystyle\ng(k) = |k| \\quad\\text{for all } k \\in \\mathbb{Z}\n&lt;/math>\n\nThen the function &lt;math>g \\circ f&lt;/math> is clearly surjective since it takes a natural number back to itself. That is, &lt;math>(g \\circ f)(a) = a&lt;/math> for all &lt;math>a \\in A&lt;/math>.\n\nBut the function ''f'' isn't surjective since it doesn't map to any negative integer (no negative number has a pre-image under the function ''f''). Notice that as shown in [[Science:Math Exam Resources/Courses/MATH220/April 2011/Question 09 (a)|part (a)]] the function ''g'' is, and has to be, surjective.\n", 
+        "Another, minimal example is the following:\n\nLet ''A'' = {a}, and ''B'' = {1,2}. Then define\n\n:&lt;math> f: A \\rightarrow B, \\quad f(a) = 1, \\qquad g: B \\rightarrow A, \\quad g(1) = g(2) = a.&lt;/math>\n\nThen, clearly\n\n:&lt;math>(g \\circ f) : A \\rightarrow A, \\quad (g \\circ f)(a) = g(f(a)) = g(1) = a, &lt;/math>\n\nand thus &lt;math>g \\circ f&lt;/math> is surjective.\n\nHowever, ''f'' is not surjective, since &lt;math>2 \\in B&lt;/math> does not have a pre-image in ''A'' under ''f''.\n\n''Notice again, that ''g'' is, and needs to be, surjective for &lt;math>g \\circ f&lt;/math> to be surjective.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\\end{aligned}\\]</span></p>\n<p>be functions so that <em>g</em> &#226;&#151;&#139;<em>f</em> is a surjective function.</p>\n<p>Give an example of sets <em>A</em>, <em>B</em> and functions <em>f</em>, <em>g</em> as above such that <em>f</em> is not surjective.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A\n\\end{align*}\n\nbe functions so that \\emph{g} \u00e2\u0097\u008b\\emph{f} is a surjective function.\n\nGive an example of sets \\emph{A}, \\emph{B} and functions \\emph{f},\n\\emph{g} as above such that \\emph{f} is not surjective.", 
+    "statement_raw": "Let\n\n:&lt;math>\\displaystyle f: A \\to B \\quad\\text{  and  }\\quad g: B \\to A&lt;/math>\n\nbe functions so that ''g'' \u25cb''f'' is a surjective function.\n\nGive an example of sets ''A'', ''B'' and functions ''f'', ''g'' as above such that ''f'' is not surjective.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_09_(b)", 
+    "year": 2011
 }

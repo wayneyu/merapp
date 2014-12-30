@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_07_(b)", 
-    "course": "MATH110", 
-    "statement": "The line you gave as an answer in part\n\\href{Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_7_(a)}{\n(a)} has an \\emph{x}-intercept and a \\emph{y}-intercept. Find these.\n(They will be in terms of \\emph{m}.)", 
-    "year": 2011, 
-    "sols": [
-        "Our line has a \\emph{y}-intercept when $x = 0$. Plugging this into our\nequation of the line, we get\n\n\\begin{align*}y = m(0) - m + 1 = -m + 1.\\end{align*}\n\nSo our \\emph{y}-intercept is $(0, -m + 1)$.\n\nSimilarly, our \\emph{x}-intercept occurs when $y = 0$. Setting our\nequation equal to zero and solving for $x$, we get\n\n\\begin{align*}0 = mx - m + 1\\end{align*}\n\nWe see that if \\emph{m=0}, then there is no \\emph{x}-intercept (the line\nis horizontal). Otherwise\n\n\\begin{align*}x = \\frac{m-1}{m}\\end{align*}\n\nand our \\emph{x}-intercept is $\\left(\\frac{m-1}{m} ,0\\right)$."
+    "answer_html": "<p>and our <em>x</em>-intercept is <span class=\"math\">\\(\\left(\\frac{m-1}{m} ,0\\right)\\)</span>.</p>\n", 
+    "answer_latex": "and our \\emph{x}-intercept is $\\left(\\frac{m-1}{m} ,0\\right)$.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What is the value of x at the y-intercept? The value of y at the x-intercept? How can you use this information to find the other half of the intercept?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the value of x at the y-intercept? The value of y at the\nx-intercept? How can you use this information to find the other half of\nthe intercept?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the value of x at the y-intercept?  The value of y at the x-intercept?  How can you use this information to find the other half of the intercept?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Our line has a <em>y</em>-intercept when <span class=\"math\">\\(x = 0\\)</span>. Plugging this into our equation of the line, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny = m(0) - m + 1 = -m + 1.\\end{aligned}\\]</span></p>\n<p>So our <em>y</em>-intercept is <span class=\"math\">\\((0, -m + 1)\\)</span>.</p>\n<p>Similarly, our <em>x</em>-intercept occurs when <span class=\"math\">\\(y = 0\\)</span>. Setting our equation equal to zero and solving for <span class=\"math\">\\(x\\)</span>, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = mx - m + 1\\end{aligned}\\]</span></p>\n<p>We see that if <em>m=0</em>, then there is no <em>x</em>-intercept (the line is horizontal). Otherwise</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx = \\frac{m-1}{m}\\end{aligned}\\]</span></p>\n<p>and our <em>x</em>-intercept is <span class=\"math\">\\(\\left(\\frac{m-1}{m} ,0\\right)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Our line has a \\emph{y}-intercept when $x = 0$. Plugging this into our\nequation of the line, we get\n\n\\begin{align*}\ny = m(0) - m + 1 = -m + 1.\n\\end{align*}\n\nSo our \\emph{y}-intercept is $(0, -m + 1)$.\n\nSimilarly, our \\emph{x}-intercept occurs when $y = 0$. Setting our\nequation equal to zero and solving for $x$, we get\n\n\\begin{align*}\n0 = mx - m + 1\n\\end{align*}\n\nWe see that if \\emph{m=0}, then there is no \\emph{x}-intercept (the line\nis horizontal). Otherwise\n\n\\begin{align*}\nx = \\frac{m-1}{m}\n\\end{align*}\n\nand our \\emph{x}-intercept is $\\left(\\frac{m-1}{m} ,0\\right)$."
+    ], 
+    "sols_raw": [
+        "Our line has a ''y''-intercept when &lt;math>x = 0&lt;/math>.  Plugging this into our equation of the line, we get\n: &lt;math> y = m(0) - m + 1 = -m + 1&lt;/math>.  \n\nSo our ''y''-intercept is &lt;math>(0, -m + 1)&lt;/math>.  \n\nSimilarly, our ''x''-intercept occurs when &lt;math>y = 0&lt;/math>.  Setting our equation equal to zero and solving for &lt;math>x&lt;/math>, we get\n\n:&lt;math>0 = mx - m + 1&lt;/math>\n\nWe see that if ''m=0'', then there is no ''x''-intercept (the line is horizontal). Otherwise\n\n:&lt;math>x = \\frac{m-1}{m}&lt;/math>\n\nand our ''x''-intercept is &lt;math>\\left(\\frac{m-1}{m} ,0\\right)&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>The line you gave as an answer in part <span> (a)</span> has an <em>x</em>-intercept and a <em>y</em>-intercept. Find these. (They will be in terms of <em>m</em>.)</p>\n", 
+    "statement_latex": "The line you gave as an answer in part\n{\n(a)} has an \\emph{x}-intercept and a \\emph{y}-intercept. Find these.\n(They will be in terms of \\emph{m}.)", 
+    "statement_raw": "The line you gave as an answer in part [[Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_7_(a)|\n(a)]] has an ''x''-intercept and a ''y''-intercept. Find these. (They will be in terms of ''m''.)\n", 
+    "term": "April", 
+    "topics": [
+        "Curve_sketching", 
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_07_(b)", 
+    "year": 2011
 }

@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_202_07_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(2=a_2+b_2+c_2+d_2\\)</span></p>\n", 
+    "answer_latex": " $2=a_2+b_2+c_2+d_2$ ", 
     "course": "MATH307", 
-    "statement": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}f(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\\end{align*}\n\n\\textbf{(b)} \\emph{$f$(x)} must pass through all given points. Write down\nthe linear equations expressing this condition.", 
-    "year": 2013, 
-    "sols": [
-        "We want\n\n\\begin{align*}\n(0,1) &\\Rightarrow p_1(0)=1\\\\\n(1,0) &\\Rightarrow p_1(1)=0\\\\\n(1,0) &\\Rightarrow p_2(1)=0\\\\\n(2,2) &\\Rightarrow p_2(2)=2\\end{align*}\n\nThese translate to:\n\n\\begin{align*}\n1 &= 0+0+0+d_1\\\\\n0 &= a_1+b_1+c_1+d_1\\\\\n0 &= 0+0+0+d_2\\\\\n2 &= a_2+b_2+c_2+d_2\\end{align*}"
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 202 07 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We want</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(0,1) &amp;\\Rightarrow p_1(0)=1\\\\\n(1,0) &amp;\\Rightarrow p_1(1)=0\\\\\n(1,0) &amp;\\Rightarrow p_2(1)=0\\\\\n(2,2) &amp;\\Rightarrow p_2(2)=2\\end{aligned}\\]</span></p>\n<p>These translate to:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= 0+0+0+d_1\\\\\n0 &amp;= a_1+b_1+c_1+d_1\\\\\n0 &amp;= 0+0+0+d_2\\\\\n2 &amp;= a_2+b_2+c_2+d_2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We want\n\n\\begin{align*}\n(0,1) &\\Rightarrow p_1(0)=1\\\\\n(1,0) &\\Rightarrow p_1(1)=0\\\\\n(1,0) &\\Rightarrow p_2(1)=0\\\\\n(2,2) &\\Rightarrow p_2(2)=2\n\\end{align*}\n\nThese translate to:\n\n\\begin{align*}\n1 &= 0+0+0+d_1\\\\\n0 &= a_1+b_1+c_1+d_1\\\\\n0 &= 0+0+0+d_2\\\\\n2 &= a_2+b_2+c_2+d_2\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We want\n\n:&lt;math> \\begin{align}\n(0,1) &amp;\\Rightarrow p_1(0)=1\\\\\n(1,0) &amp;\\Rightarrow p_1(1)=0\\\\\n(1,0) &amp;\\Rightarrow p_2(1)=0\\\\\n(2,2) &amp;\\Rightarrow p_2(2)=2\n\\end{align} &lt;/math>\n\nThese translate to:\n\n:&lt;math> \\begin{align}\n1 &amp;= 0+0+0+d_1\\\\\n0 &amp;= a_1+b_1+c_1+d_1\\\\\n0 &amp;= 0+0+0+d_2\\\\\n2 &amp;= a_2+b_2+c_2+d_2\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>We want to interpolate through <em>(0, 1)</em>, <em>(1, 0)</em>, <em>(2, 2)</em> using cubic splines</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\\end{aligned}\\]</span></p>\n<p><strong>(b)</strong> <em><span class=\"math\">\\(f\\)</span>(x)</em> must pass through all given points. Write down the linear equations expressing this condition.</p>\n", 
+    "statement_latex": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}\nf(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\n\\end{align*}\n\n\\textbf{(b)} \\emph{$f$(x)} must pass through all given points. Write down\nthe linear equations expressing this condition.", 
+    "statement_raw": "We want to interpolate through ''(0, 1)'', ''(1, 0)'', ''(2, 2)'' using cubic splines\n\n:&lt;math>\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\n&lt;/math>\n\n'''(b)''' ''&amp;fnof;(x)'' must pass through all given points. Write down the linear equations expressing this condition.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_202_07_(b)", 
+    "year": 2013
 }

@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH101", 
-    "statement": "Find the average value of $\\displaystyle \\sin(x)$ on the interval\n$\\displaystyle [0,\\pi]$.", 
-    "year": 2005, 
-    "sols": [
-        "Here $a=0$, $b=\\pi$ and $f(x) = \\sin x.$ Thus\n\n\\begin{align*} f_{av} &= \\frac1{\\pi-0} \\int_0^\\pi \\sin x\\,dx \\\\\n&= \\frac1{\\pi} \\left.(-\\cos x)\\right|_0^\\pi \\\\\n&= \\frac1{\\pi} (-\\cos \\pi + \\cos 0) \\\\\n&= \\frac2{\\pi}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f_{av}=\\frac2{\\pi}.\\)</span></p>\n", 
+    "answer_latex": " $f_{av}=\\frac2{\\pi}.$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The average value of a function on the interval <span class=\"math\">\\(\\displaystyle [a,b]\\)</span> is</p>\n<p><span class=\"math\">\\(f_{av} = \\frac1{b-a} \\int_a^b f(x)\\,dx.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The average value of a function on the interval $\\displaystyle [a,b]$ is\n\n$f_{av} = \\frac1{b-a} \\int_a^b f(x)\\,dx.$"
-    ]
+    ], 
+    "hints_raw": [
+        "The average value of a function on the interval &lt;math>\\displaystyle [a,b]&lt;/math> is\n\n&lt;math> f_{av} = \\frac1{b-a} \\int_a^b f(x)\\,dx.&lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (b)", 
+    "rating": 84, 
+    "sols_html": [
+        "<p>Here <span class=\"math\">\\(a=0\\)</span>, <span class=\"math\">\\(b=\\pi\\)</span> and <span class=\"math\">\\(f(x) = \\sin x.\\)</span> Thus</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf_{av} &amp;= \\frac1{\\pi-0} \\int_0^\\pi \\sin x\\,dx \\\\\n&amp;= \\frac1{\\pi} \\left.(-\\cos x)\\right|_0^\\pi \\\\\n&amp;= \\frac1{\\pi} (-\\cos \\pi + \\cos 0) \\\\\n&amp;= \\frac2{\\pi}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Here $a=0$, $b=\\pi$ and $f(x) = \\sin x.$ Thus\n\n\\begin{align*}\nf_{av} &= \\frac1{\\pi-0} \\int_0^\\pi \\sin x\\,dx \\\\\n&= \\frac1{\\pi} \\left.(-\\cos x)\\right|_0^\\pi \\\\\n&= \\frac1{\\pi} (-\\cos \\pi + \\cos 0) \\\\\n&= \\frac2{\\pi}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Here &lt;math>a=0&lt;/math>, &lt;math>b=\\pi&lt;/math> and &lt;math>f(x) = \\sin x.&lt;/math> Thus\n\n&lt;math> \\begin{align} f_{av} &amp;= \\frac1{\\pi-0} \\int_0^\\pi \\sin x\\,dx \\\\\n&amp;= \\frac1{\\pi} \\left.(-\\cos x)\\right|_0^\\pi \\\\\n&amp;= \\frac1{\\pi} (-\\cos \\pi + \\cos 0) \\\\\n&amp;= \\frac2{\\pi}.\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Find the average value of <span class=\"math\">\\(\\displaystyle \\sin(x)\\)</span> on the interval <span class=\"math\">\\(\\displaystyle [0,\\pi]\\)</span>.</p>\n", 
+    "statement_latex": "Find the average value of $\\displaystyle \\sin(x)$ on the interval\n$\\displaystyle [0,\\pi]$.", 
+    "statement_raw": "Find the average value of &lt;math> \\displaystyle \\sin(x) &lt;/math> on the interval &lt;math> \\displaystyle [0,\\pi] &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Average_value"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_01_(b)", 
+    "year": 2005
 }

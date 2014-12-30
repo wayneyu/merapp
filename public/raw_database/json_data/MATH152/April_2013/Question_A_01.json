@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_A_01", 
-    "course": "MATH152", 
-    "statement": "Let\n\n\\begin{align*}a = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\end{align*}\n\nWhat is $a \\times b$?", 
-    "year": 2013, 
-    "sols": [
-        "By the cross product formula,\n\n\\begin{align*}\na \\times b &=\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\n-3&-3&3\\\\\n2&-3&-2\\\\\n\\end{vmatrix} \\\\\n&= \\begin{vmatrix}\n-3&3\\\\\n-3&-2\n\\end{vmatrix}\\mathbf{i}\n-\\begin{vmatrix}\n-3&3\\\\\n2&-2\n\\end{vmatrix}\\mathbf{j}\n+\\begin{vmatrix}\n-3&-3\\\\\n2&-3\n\\end{vmatrix}\\mathbf{k} \\\\\n&= 15 \\mathbf{i} - 0 \\mathbf{j} + 15\\mathbf{k} \\\\\n&= \\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(a \\times b=\\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $a \\times b=\\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CindyBlois", 
+        "CarmenBruni"
     ], 
-    "hints": [
-        "The cross product formula can be interpreted using determinants:\n\n\\begin{align*}\\mathbf{u\\times v}=\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\nu_1&u_2&u_3\\\\\nv_1&v_2&v_3\\\\\n\\end{vmatrix}\\end{align*}", 
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The cross product formula can be interpreted using determinants:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{u\\times v}=\\begin{vmatrix}\n\\mathbf{i}&amp;\\mathbf{j}&amp;\\mathbf{k}\\\\\nu_1&amp;u_2&amp;u_3\\\\\nv_1&amp;v_2&amp;v_3\\\\\n\\end{vmatrix}\\end{aligned}\\]</span></p>\n", 
+        "<p>Use a cofactor expansion to find the determinant of a 3 by 3 matrix. Don&#8217;t forget about the sign of each factor!</p>\n"
+    ], 
+    "hints_latex": [
+        "The cross product formula can be interpreted using determinants:\n\n\\begin{align*}\n\\mathbf{u\\times v}=\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\nu_1&u_2&u_3\\\\\nv_1&v_2&v_3\\\\\n\\end{vmatrix}\n\\end{align*}", 
         "Use a cofactor expansion to find the determinant of a 3 by 3 matrix.\nDon't forget about the sign of each factor!"
-    ]
+    ], 
+    "hints_raw": [
+        "The cross product formula can be interpreted using determinants:\n\n:&lt;math>\\mathbf{u\\times v}=\\begin{vmatrix}\n\\mathbf{i}&amp;\\mathbf{j}&amp;\\mathbf{k}\\\\\nu_1&amp;u_2&amp;u_3\\\\\nv_1&amp;v_2&amp;v_3\\\\\n\\end{vmatrix}&lt;/math>\n", 
+        "Use a cofactor expansion to find the determinant of a 3 by 3 matrix. Don't forget about the sign of each factor!\n"
+    ], 
+    "num_votes": 9, 
+    "question": "A 01", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>By the cross product formula,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na \\times b &amp;=\\begin{vmatrix}\n\\mathbf{i}&amp;\\mathbf{j}&amp;\\mathbf{k}\\\\\n-3&amp;-3&amp;3\\\\\n2&amp;-3&amp;-2\\\\\n\\end{vmatrix} \\\\\n&amp;= \\begin{vmatrix}\n-3&amp;3\\\\\n-3&amp;-2\n\\end{vmatrix}\\mathbf{i}\n-\\begin{vmatrix}\n-3&amp;3\\\\\n2&amp;-2\n\\end{vmatrix}\\mathbf{j}\n+\\begin{vmatrix}\n-3&amp;-3\\\\\n2&amp;-3\n\\end{vmatrix}\\mathbf{k} \\\\\n&amp;= 15 \\mathbf{i} - 0 \\mathbf{j} + 15\\mathbf{k} \\\\\n&amp;= \\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By the cross product formula,\n\n\\begin{align*}\na \\times b &=\\begin{vmatrix}\n\\mathbf{i}&\\mathbf{j}&\\mathbf{k}\\\\\n-3&-3&3\\\\\n2&-3&-2\\\\\n\\end{vmatrix} \\\\\n&= \\begin{vmatrix}\n-3&3\\\\\n-3&-2\n\\end{vmatrix}\\mathbf{i}\n-\\begin{vmatrix}\n-3&3\\\\\n2&-2\n\\end{vmatrix}\\mathbf{j}\n+\\begin{vmatrix}\n-3&-3\\\\\n2&-3\n\\end{vmatrix}\\mathbf{k} \\\\\n&= 15 \\mathbf{i} - 0 \\mathbf{j} + 15\\mathbf{k} \\\\\n&= \\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By the cross product formula, \n\n:&lt;math>\n\\begin{align}\na \\times b &amp; =\\begin{vmatrix}\n\\mathbf{i}&amp;\\mathbf{j}&amp;\\mathbf{k}\\\\\n-3&amp;-3&amp;3\\\\\n2&amp;-3&amp;-2\\\\\n\\end{vmatrix} \\\\\n&amp; = \\begin{vmatrix}\n-3&amp;3\\\\\n-3&amp;-2\n\\end{vmatrix}\\mathbf{i}\n-\\begin{vmatrix}\n-3&amp;3\\\\\n2&amp;-2\n\\end{vmatrix}\\mathbf{j}\n+\\begin{vmatrix}\n-3&amp;-3\\\\\n2&amp;-3\n\\end{vmatrix}\\mathbf{k} \\\\\n&amp; = 15 \\mathbf{i} - 0 \\mathbf{j} + 15\\mathbf{k} \\\\\n&amp; = \\begin{bmatrix}\n15 \\\\ 0 \\\\ 15\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>What is <span class=\"math\">\\(a \\times b\\)</span>?</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\na = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\n\\end{align*}\n\nWhat is $a \\times b$?", 
+    "statement_raw": "Let\n\n:&lt;math>\na = \\begin{bmatrix}\n-3 \\\\ -3 \\\\ 3\n\\end{bmatrix}\n\\qquad \nb = \\begin{bmatrix}\n2 \\\\ -3 \\\\ -2\n\\end{bmatrix}\n\\qquad \nc = \\begin{bmatrix}\n3 \\\\ -4 \\\\ 12\n\\end{bmatrix}\n&lt;/math>\n\nWhat is &lt;math> a \\times b &lt;/math>?\n", 
+    "term": "April", 
+    "topics": [
+        "Matrix_operations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_01", 
+    "year": 2013
 }

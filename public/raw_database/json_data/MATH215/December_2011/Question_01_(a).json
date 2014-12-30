@@ -1,14 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH215", 
-    "statement": "Solve the following linear ODE:\n\n\\begin{align*}y' - \\frac4{t}y = -\\frac2{t^2}, \\quad t > 0.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Following the hints we multiply the equation by\n$\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4$\nyielding:\n\n\\begin{align*}\\frac{1}{t^4} y' - \\frac{4}{t^5}y = -\\frac{2}{t^6}\\end{align*} where we can\nrecognize the left-hand side as the derivative of a single term:\n\n\\begin{align*}\\left( \\frac{1}{t^4} y\\right)' = -\\frac{2}{t^6}\\end{align*}\n\nIntegrating both sides yields\n\n\\begin{align*}\n\\frac{1}{t^4} y &= \\frac{2}{5t^5} + C \\\\\ny &= \\frac{2}{5t} + Ct^4\\end{align*} for an arbitrary constant \\emph{C}.\n\nRemark (not part of solution): Technically\n$\\int \\frac{-4}{t} dt = -4 \\ln(t) + C$ but by multiplying the entire\nequation by the integrating factor, we inevitably divide by it and this\nconstant of integration cancels out."
+    "answer_html": "<p>Remark (not part of solution): Technically <span class=\"math\">\\(\\int \\frac{-4}{t} dt = -4 \\ln(t) + C\\)</span> but by multiplying the entire equation by the integrating factor, we inevitably divide by it and this constant of integration cancels out.</p>\n", 
+    "answer_latex": "Remark (not part of solution): Technically\n$\\int \\frac{-4}{t} dt = -4 \\ln(t) + C$ but by multiplying the entire\nequation by the integrating factor, we inevitably divide by it and this\nconstant of integration cancels out.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>This is a linear ODE. You may wish to consider an integrating factor.</p>\n", 
+        "<p>Given a linear ODE of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y&#39; + p(t) y = q(t)\\end{aligned}\\]</span></p>\n<p>a suitable integrating factor is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\exp\\left(\\int p(t) dt\\right)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "This is a linear ODE. You may wish to consider an integrating factor.", 
-        "Given a linear ODE of the form\n\n\\begin{align*}\\displaystyle y' + p(t) y = q(t)\\end{align*}\n\na suitable integrating factor is\n\n\\begin{align*}\\exp\\left(\\int p(t) dt\\right)\\end{align*}"
-    ]
+        "Given a linear ODE of the form\n\n\\begin{align*}\n\\displaystyle y' + p(t) y = q(t)\n\\end{align*}\n\na suitable integrating factor is\n\n\\begin{align*}\n\\exp\\left(\\int p(t) dt\\right)\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "This is a linear ODE. You may wish to consider an integrating factor.\n", 
+        "Given a linear ODE of the form\n\n:&lt;math> \\displaystyle y' + p(t) y = q(t)&lt;/math>\n\na suitable integrating factor is\n\n:&lt;math> \\exp\\left(\\int p(t) dt\\right)&lt;/math>\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (a)", 
+    "rating": 83, 
+    "sols_html": [
+        "<p>Following the hints we multiply the equation by <span class=\"math\">\\(\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4\\)</span> yielding:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{t^4} y&#39; - \\frac{4}{t^5}y = -\\frac{2}{t^6}\\end{aligned}\\]</span></p>\n<p>where we can recognize the left-hand side as the derivative of a single term:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left( \\frac{1}{t^4} y\\right)&#39; = -\\frac{2}{t^6}\\end{aligned}\\]</span></p>\n<p>Integrating both sides yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{t^4} y &amp;= \\frac{2}{5t^5} + C \\\\\ny &amp;= \\frac{2}{5t} + Ct^4\\end{aligned}\\]</span></p>\n<p>for an arbitrary constant <em>C</em>.</p>\n<p>Remark (not part of solution): Technically <span class=\"math\">\\(\\int \\frac{-4}{t} dt = -4 \\ln(t) + C\\)</span> but by multiplying the entire equation by the integrating factor, we inevitably divide by it and this constant of integration cancels out.</p>\n"
+    ], 
+    "sols_latex": [
+        "Following the hints we multiply the equation by\n$\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4$\nyielding:\n\n\\begin{align*}\n\\frac{1}{t^4} y' - \\frac{4}{t^5}y = -\\frac{2}{t^6}\n\\end{align*} where we can\nrecognize the left-hand side as the derivative of a single term:\n\n\\begin{align*}\n\\left( \\frac{1}{t^4} y\\right)' = -\\frac{2}{t^6}\n\\end{align*}\n\nIntegrating both sides yields\n\n\\begin{align*}\n\\frac{1}{t^4} y &= \\frac{2}{5t^5} + C \\\\\ny &= \\frac{2}{5t} + Ct^4\n\\end{align*} for an arbitrary constant \\emph{C}.\n\nRemark (not part of solution): Technically\n$\\int \\frac{-4}{t} dt = -4 \\ln(t) + C$ but by multiplying the entire\nequation by the integrating factor, we inevitably divide by it and this\nconstant of integration cancels out."
+    ], 
+    "sols_raw": [
+        "Following the hints we multiply the equation by &lt;math>\\exp\\left(\\int -4\\frac{1}{t} dt\\right) = \\exp(-4 \\ln(t)) = 1/t^4&lt;/math> yielding:\n\n:&lt;math>\\frac{1}{t^4} y' - \\frac{4}{t^5}y = -\\frac{2}{t^6}&lt;/math> where we can recognize the left-hand side as the derivative of a single term:\n\n:&lt;math>\\left( \\frac{1}{t^4} y\\right)' = -\\frac{2}{t^6} &lt;/math>\n\nIntegrating both sides yields\n\n:&lt;math> \\begin{align}\n\\frac{1}{t^4} y &amp;= \\frac{2}{5t^5} + C \\\\\ny &amp;= \\frac{2}{5t} + Ct^4\n\\end{align} &lt;/math>\nfor an arbitrary constant ''C''.\n\n&lt;b>Remark (not part of solution)&lt;/b>: Technically &lt;math> \\int \\frac{-4}{t} dt = -4 \\ln(t) + C&lt;/math> but by multiplying the entire equation by the integrating factor, we inevitably divide by it and this constant of integration cancels out.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Solve the following linear ODE:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39; - \\frac4{t}y = -\\frac2{t^2}, \\quad t &gt; 0.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Solve the following linear ODE:\n\n\\begin{align*}\ny' - \\frac4{t}y = -\\frac2{t^2}, \\quad t > 0.\n\\end{align*}", 
+    "statement_raw": "Solve the following linear ODE:\n\n:&lt;math>\ny' - \\frac4{t}y = -\\frac2{t^2}, \\quad t > 0.\n&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_01_(a)", 
+    "year": 2011
 }

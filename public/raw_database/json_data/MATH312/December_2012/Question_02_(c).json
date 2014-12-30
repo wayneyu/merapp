@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(c)", 
-    "course": "MATH312", 
-    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe number 25 passes Miller's test for the base 7.", 
-    "year": 2012, 
-    "sols": [
-        "The answer is \\textbf{true}.\n\nRecall that 7 passes Miller's test if\n\n$\\displaystyle 7^{d} \\equiv 1 \\mod{25}$\n\nor the following holds for some \\emph{r}\n\n$\\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}$\n\nwhere $\\displaystyle 25-1 = 24 = 2^{s}d = 2^{8}\\cdot 3$ and\n$\\displaystyle 0 \\leq r \\leq s-1$. If 7 passes the test, then 25 is a\nprobable prime. If it fails the test, then the number is not prime.\n\nSo we check manually:\n\n\\begin{align*}\n7^{3} &\\equiv 49 \\cdot 7 \\equiv -1 \\cdot 7 \\not\\equiv 1 \\mod{25}\\\\\n7^{2\\cdot3} &\\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}\\end{align*}\n\nThus, 7 passes Miller's test. (Note that 25 is not prime but still 7\npasses Miller's test)."
+    "answer_html": "<p><span class=\"math\">\\(7^{2\\cdot3} \\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}\\)</span> Thus, 7 passes Miller&#8217;s test.(Note that 25 is not prime but still 7 passes Miller&#8217;s test).</p>\n", 
+    "answer_latex": " $7^{2\\cdot3} \\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}$ Thus, 7 passes Miller's test.(Note that 25 is not prime but still 7\npasses Miller's test).", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that 7 passes Miller&#8217;s test if</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{d} \\equiv 1 \\mod{25}\\)</span></p>\n<p>or the following holds for some <em>r</em></p>\n<p><span class=\"math\">\\(\\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}\\)</span></p>\n<p>where <span class=\"math\">\\(\\displaystyle 25-1 = 24 = 2^{s}d\\)</span> and <span class=\"math\">\\(\\displaystyle 0 \\leq r \\leq s-1\\)</span>. If 7 passes the test, then 25 is a probable prime. If it fails the test, then the number is not prime.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that 7 passes Miller's test if\n\n$\\displaystyle 7^{d} \\equiv 1 \\mod{25}$\n\nor the following holds for some \\emph{r}\n\n$\\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}$\n\nwhere $\\displaystyle 25-1 = 24 = 2^{s}d$ and\n$\\displaystyle 0 \\leq r \\leq s-1$. If 7 passes the test, then 25 is a\nprobable prime. If it fails the test, then the number is not prime."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that 7 passes Miller's test if \n\n&lt;math> \\displaystyle 7^{d} \\equiv 1 \\mod{25}&lt;/math>\n\nor the following holds for some ''r'' \n\n&lt;math> \\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}&lt;/math>\n\nwhere &lt;math> \\displaystyle 25-1 = 24 = 2^{s}d&lt;/math> and &lt;math> \\displaystyle 0 \\leq r \\leq s-1&lt;/math>. If 7 passes the test, then 25 is a probable prime. If it fails the test, then the number is not prime.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>true</strong>.</p>\n<p>Recall that 7 passes Miller&#8217;s test if</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{d} \\equiv 1 \\mod{25}\\)</span></p>\n<p>or the following holds for some <em>r</em></p>\n<p><span class=\"math\">\\(\\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}\\)</span></p>\n<p>where <span class=\"math\">\\(\\displaystyle 25-1 = 24 = 2^{s}d = 2^{8}\\cdot 3\\)</span> and <span class=\"math\">\\(\\displaystyle 0 \\leq r \\leq s-1\\)</span>. If 7 passes the test, then 25 is a probable prime. If it fails the test, then the number is not prime.</p>\n<p>So we check manually:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n7^{3} &amp;\\equiv 49 \\cdot 7 \\equiv -1 \\cdot 7 \\not\\equiv 1 \\mod{25}\\\\\n7^{2\\cdot3} &amp;\\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}\\end{aligned}\\]</span></p>\n<p>Thus, 7 passes Miller&#8217;s test. (Note that 25 is not prime but still 7 passes Miller&#8217;s test).</p>\n"
+    ], 
+    "sols_latex": [
+        "The answer is \\textbf{true}.\n\nRecall that 7 passes Miller's test if\n\n$\\displaystyle 7^{d} \\equiv 1 \\mod{25}$\n\nor the following holds for some \\emph{r}\n\n$\\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}$\n\nwhere $\\displaystyle 25-1 = 24 = 2^{s}d = 2^{8}\\cdot 3$ and\n$\\displaystyle 0 \\leq r \\leq s-1$. If 7 passes the test, then 25 is a\nprobable prime. If it fails the test, then the number is not prime.\n\nSo we check manually:\n\n\\begin{align*}\n7^{3} &\\equiv 49 \\cdot 7 \\equiv -1 \\cdot 7 \\not\\equiv 1 \\mod{25}\\\\\n7^{2\\cdot3} &\\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}\n\\end{align*}\n\nThus, 7 passes Miller's test. (Note that 25 is not prime but still 7\npasses Miller's test)."
+    ], 
+    "sols_raw": [
+        "The answer is '''true'''.\n\nRecall that 7 passes Miller's test if \n\n&lt;math> \\displaystyle 7^{d} \\equiv 1 \\mod{25}&lt;/math>\n\nor the following holds for some ''r'' \n\n&lt;math> \\displaystyle 7^{2^{r}d} \\equiv -1 \\mod{25}&lt;/math>\n\nwhere &lt;math> \\displaystyle 25-1 = 24 = 2^{s}d = 2^{8}\\cdot 3&lt;/math> and &lt;math> \\displaystyle 0 \\leq r \\leq s-1&lt;/math>. If 7 passes the test, then 25 is a probable prime. If it fails the test, then the number is not prime.\n\nSo we check manually:\n\n&lt;math> \\displaystyle \n\\begin{align}\n7^{3} &amp;\\equiv 49 \\cdot 7 \\equiv -1 \\cdot 7 \\not\\equiv 1 \\mod{25}\\\\\n7^{2\\cdot3} &amp;\\equiv 49^{3} \\equiv (-1)^3 \\equiv -1 \\mod{25}\n\\end{align}\n&lt;/math>\n\nThus, 7 passes Miller's test. (Note that 25 is not prime but still 7 passes Miller's test).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>State whether the following are true or false with full justification. Each question carries 4 marks.</strong></p>\n<p>The number 25 passes Miller&#8217;s test for the base 7.</p>\n", 
+    "statement_latex": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe number 25 passes Miller's test for the base 7.", 
+    "statement_raw": "'''State whether the following are true or false with full justification. Each question carries 4 marks.'''\n\nThe number 25 passes Miller's test for the base 7.\n", 
+    "term": "December", 
+    "topics": [
+        "Miller%27s_test"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2012/Question_02_(c)", 
+    "year": 2012
 }

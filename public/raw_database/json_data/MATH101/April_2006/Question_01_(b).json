@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int \\cos^2 x\\,dx.$", 
-    "year": 2006, 
-    "sols": [
-        "First we use the double angle formula\n\n$\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}$\n\nto see that\n\n\\begin{align*}\n\\int \\cos^{2}(x) \\, dx  &= \\int \\frac{1+\\cos(2x)}{2} \\, dx \\\\\n&= \\frac{x}{2}  +  \\frac{1}{2}\\int \\cos(2x) \\, dx \\\\\n&=  \\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\int \\cos^{2}(x) \\, dx=\\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $\\int \\cos^{2}(x) \\, dx=\\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C$ completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The double angle formula which is</p>\n<p><span class=\"math\">\\(\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}\\)</span></p>\n<p>will be useful.</p>\n"
+    ], 
+    "hints_latex": [
         "The double angle formula which is\n\n$\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}$\n\nwill be useful."
-    ]
+    ], 
+    "hints_raw": [
+        "The double angle formula which is\n\n&lt;math>\n\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}\n&lt;/math>\n\nwill be useful.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>First we use the double angle formula</p>\n<p><span class=\"math\">\\(\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}\\)</span></p>\n<p>to see that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\cos^{2}(x) \\, dx  &amp;= \\int \\frac{1+\\cos(2x)}{2} \\, dx \\\\\n&amp;= \\frac{x}{2}  +  \\frac{1}{2}\\int \\cos(2x) \\, dx \\\\\n&amp;=  \\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "First we use the double angle formula\n\n$\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}$\n\nto see that\n\n\\begin{align*}\n\\int \\cos^{2}(x) \\, dx  &= \\int \\frac{1+\\cos(2x)}{2} \\, dx \\\\\n&= \\frac{x}{2}  +  \\frac{1}{2}\\int \\cos(2x) \\, dx \\\\\n&=  \\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "First we use the double angle formula\n\n&lt;math>\n\\cos^{2}(x) = \\frac{1+\\cos(2x)}{2}\n&lt;/math>\n\nto see that\n\n&lt;math>\n\\begin{align}\n\\int \\cos^{2}(x) \\, dx  &amp;= \\int \\frac{1+\\cos(2x)}{2} \\, dx \\\\\n&amp;= \\frac{x}{2}  +  \\frac{1}{2}\\int \\cos(2x) \\, dx \\\\\n&amp;=  \\frac{x}{2}+  \\frac{1}{4} \\sin(2x) + C\n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int \\cos^2 x\\,dx.\\)</span></p>\n", 
+    "statement_latex": "Evaluate $\\int \\cos^2 x\\,dx.$", 
+    "statement_raw": "Evaluate &lt;math> \\int \\cos^2 x\\,dx. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Trigonometric_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(b)", 
+    "year": 2006
 }

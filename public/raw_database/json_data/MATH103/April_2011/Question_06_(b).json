@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
-    "course": "MATH103", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dx} = (y^2-1)x.\\end{align*}\n\nSolve for $y(t)$ given the initial value $y(0)=0$.", 
-    "year": 2011, 
-    "sols": [
-        "The differential equation is separable; that is,\n\n\\begin{align*}\n\\frac{dy}{dx}=(y^2-1)x\\implies \\int \\frac{1}{y^2-1} \\, dy = \\int x\\, dx.\\end{align*}\n\nOn the right hand side,\n\n\\begin{align*}\n\\int x\\, dx = \\frac{x^2}2+C_1,\\end{align*}\n\nfor some constant $C_1.$ On the left hand side, we factor\n$y^2-1 = (y+1)(y-1)$ and use partial fractions.\n\n\\begin{align*}\n&\\frac1{(y+1)(y-1)}=\\frac{A}{y+1}+\\frac{B}{y-1}\\\\\n &\\implies 1=A(y-1)+B(y+1).\\end{align*}\n\nThis must be true for all $y$. In particular, at $y=-1$ , $1=-2A$,\nhence, $A=-1/2$. At $y=1$, $1=2B$, hence $B=1/2$. Therefore,\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy&=- \\frac12 \\int \\frac{1}{y+1}\\, dy +\\frac12\\int \\frac{1}{y-1}\\,dy\\\\\n&=- \\frac12 \\ln|y+1| +\\frac12\\ln|y-1| +C_2\\\\\n&=\\frac12 \\ln\\left|\\frac{y-1}{y+1}\\right| +C_2,\\end{align*}\n\nfor some constant $C_2.$ The initial condition is $y(0)=0,$ so at least\nfor small $x$ , we know that $-1<y(x)<1$. This means that \\emph{y}-1 is\nnegative and \\emph{y}+1 is positive. Hence\n\n\\begin{align*}\\left|\\frac{y-1}{y+1}\\right| = - \\frac{y-1}{y+1} = \\frac{1-y}{y+1} = \\frac{1-y}{1+y}.\\end{align*}\n\nTherefore\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy\n&=\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) +C_2.\\end{align*}\n\nEquating the left and right sides of our first equation, we have\n\n\\begin{align*}\n&\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) =  \\frac{x^2}2+ C_1-C_2\\\\\n&\\implies \\frac{1-y}{1+y} =  A e^{x^2}\\\\\n&\\implies 1-y= (1+y) A e^{x^2}\\\\\n&\\implies 1- A e^{x^2}= y(1+ A e^{x^2})\\\\\n&\\implies y= \\frac{1- A e^{x^2}}{1+ A e^{x^2}}.\\end{align*}\n\nwhere $A=e^{2(C_1-C_2)}$. From the initial condition, $y(0)=0$, $A$ must\nbe equal to 1. Hence,\n\n\\begin{align*}\n y(x)= \\frac{1- e^{x^2}}{1+ e^{x^2}}.\\end{align*}\n\nNote that this solution does satisfy $-1<y(x)<1$ for all $x$.\n\nRemember: It is important (and usually easy) to check that your solution\nactually satisfies the differential equation."
+    "answer_html": "<p>Note that this solution does satisfy <span class=\"math\">\\(-1&lt;y(x)&lt;1\\)</span> for all <span class=\"math\">\\(x\\)</span>.Remember: It is important (and usually easy) to check that your solution actually satisfies the differential equation.</p>\n", 
+    "answer_latex": "Note that this solution does satisfy $-1<y(x)<1$ for all $x$.Remember: It is important (and usually easy) to check that your solution\nactually satisfies the differential equation.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This differential equation is separable.</p>\n"
+    ], 
+    "hints_latex": [
         "This differential equation is separable."
-    ]
+    ], 
+    "hints_raw": [
+        "This differential equation is separable.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "6 (b)", 
+    "rating": 27, 
+    "sols_html": [
+        "<p>The differential equation is separable; that is,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx}=(y^2-1)x\\implies \\int \\frac{1}{y^2-1} \\, dy = \\int x\\, dx.\\end{aligned}\\]</span></p>\n<p>On the right hand side,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x\\, dx = \\frac{x^2}2+C_1,\\end{aligned}\\]</span></p>\n<p>for some constant <span class=\"math\">\\(C_1.\\)</span> On the left hand side, we factor <span class=\"math\">\\(y^2-1 = (y+1)(y-1)\\)</span> and use partial fractions.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;\\frac1{(y+1)(y-1)}=\\frac{A}{y+1}+\\frac{B}{y-1}\\\\\n &amp;\\implies 1=A(y-1)+B(y+1).\\end{aligned}\\]</span></p>\n<p>This must be true for all <span class=\"math\">\\(y\\)</span>. In particular, at <span class=\"math\">\\(y=-1\\)</span> , <span class=\"math\">\\(1=-2A\\)</span>, hence, <span class=\"math\">\\(A=-1/2\\)</span>. At <span class=\"math\">\\(y=1\\)</span>, <span class=\"math\">\\(1=2B\\)</span>, hence <span class=\"math\">\\(B=1/2\\)</span>. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{1}{y^2-1}\\, dy&amp;=- \\frac12 \\int \\frac{1}{y+1}\\, dy +\\frac12\\int \\frac{1}{y-1}\\,dy\\\\\n&amp;=- \\frac12 \\ln|y+1| +\\frac12\\ln|y-1| +C_2\\\\\n&amp;=\\frac12 \\ln\\left|\\frac{y-1}{y+1}\\right| +C_2,\\end{aligned}\\]</span></p>\n<p>for some constant <span class=\"math\">\\(C_2.\\)</span> The initial condition is <span class=\"math\">\\(y(0)=0,\\)</span> so at least for small <span class=\"math\">\\(x\\)</span> , we know that <span class=\"math\">\\(-1&lt;y(x)&lt;1\\)</span>. This means that <em>y</em>-1 is negative and <em>y</em>+1 is positive. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left|\\frac{y-1}{y+1}\\right| = - \\frac{y-1}{y+1} = \\frac{1-y}{y+1} = \\frac{1-y}{1+y}.\\end{aligned}\\]</span></p>\n<p>Therefore</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{1}{y^2-1}\\, dy\n&amp;=\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) +C_2.\\end{aligned}\\]</span></p>\n<p>Equating the left and right sides of our first equation, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) =  \\frac{x^2}2+ C_1-C_2\\\\\n&amp;\\implies \\frac{1-y}{1+y} =  A e^{x^2}\\\\\n&amp;\\implies 1-y= (1+y) A e^{x^2}\\\\\n&amp;\\implies 1- A e^{x^2}= y(1+ A e^{x^2})\\\\\n&amp;\\implies y= \\frac{1- A e^{x^2}}{1+ A e^{x^2}}.\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(A=e^{2(C_1-C_2)}\\)</span>. From the initial condition, <span class=\"math\">\\(y(0)=0\\)</span>, <span class=\"math\">\\(A\\)</span> must be equal to 1. Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(x)= \\frac{1- e^{x^2}}{1+ e^{x^2}}.\\end{aligned}\\]</span></p>\n<p>Note that this solution does satisfy <span class=\"math\">\\(-1&lt;y(x)&lt;1\\)</span> for all <span class=\"math\">\\(x\\)</span>.</p>\n<p>Remember: It is important (and usually easy) to check that your solution actually satisfies the differential equation.</p>\n"
+    ], 
+    "sols_latex": [
+        "The differential equation is separable; that is,\n\n\\begin{align*}\n\\frac{dy}{dx}=(y^2-1)x\\implies \\int \\frac{1}{y^2-1} \\, dy = \\int x\\, dx.\n\\end{align*}\n\nOn the right hand side,\n\n\\begin{align*}\n\\int x\\, dx = \\frac{x^2}2+C_1,\n\\end{align*}\n\nfor some constant $C_1.$ On the left hand side, we factor\n$y^2-1 = (y+1)(y-1)$ and use partial fractions.\n\n\\begin{align*}\n&\\frac1{(y+1)(y-1)}=\\frac{A}{y+1}+\\frac{B}{y-1}\\\\\n &\\implies 1=A(y-1)+B(y+1).\n\\end{align*}\n\nThis must be true for all $y$. In particular, at $y=-1$ , $1=-2A$,\nhence, $A=-1/2$. At $y=1$, $1=2B$, hence $B=1/2$. Therefore,\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy&=- \\frac12 \\int \\frac{1}{y+1}\\, dy +\\frac12\\int \\frac{1}{y-1}\\,dy\\\\\n&=- \\frac12 \\ln|y+1| +\\frac12\\ln|y-1| +C_2\\\\\n&=\\frac12 \\ln\\left|\\frac{y-1}{y+1}\\right| +C_2,\n\\end{align*}\n\nfor some constant $C_2.$ The initial condition is $y(0)=0,$ so at least\nfor small $x$ , we know that $-1<y(x)<1$. This means that \\emph{y}-1 is\nnegative and \\emph{y}+1 is positive. Hence\n\n\\begin{align*}\n\\left|\\frac{y-1}{y+1}\\right| = - \\frac{y-1}{y+1} = \\frac{1-y}{y+1} = \\frac{1-y}{1+y}.\n\\end{align*}\n\nTherefore\n\n\\begin{align*}\n\\int \\frac{1}{y^2-1}\\, dy\n&=\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) +C_2.\n\\end{align*}\n\nEquating the left and right sides of our first equation, we have\n\n\\begin{align*}\n&\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) =  \\frac{x^2}2+ C_1-C_2\\\\\n&\\implies \\frac{1-y}{1+y} =  A e^{x^2}\\\\\n&\\implies 1-y= (1+y) A e^{x^2}\\\\\n&\\implies 1- A e^{x^2}= y(1+ A e^{x^2})\\\\\n&\\implies y= \\frac{1- A e^{x^2}}{1+ A e^{x^2}}.\n\\end{align*}\n\nwhere $A=e^{2(C_1-C_2)}$. From the initial condition, $y(0)=0$, $A$ must\nbe equal to 1. Hence,\n\n\\begin{align*}\ny(x)= \\frac{1- e^{x^2}}{1+ e^{x^2}}.\n\\end{align*}\n\nNote that this solution does satisfy $-1<y(x)<1$ for all $x$.\n\nRemember: It is important (and usually easy) to check that your solution\nactually satisfies the differential equation."
+    ], 
+    "sols_raw": [
+        "The differential equation is separable; that is,\n\n:&lt;math> \\begin{align}\n\\frac{dy}{dx}=(y^2-1)x\\implies \\int \\frac{1}{y^2-1} \\, dy = \\int x\\, dx.\n\\end{align}&lt;/math>\n\nOn the right hand side,\n\n:&lt;math> \\begin{align}\n\\int x\\, dx = \\frac{x^2}2+C_1,\n\\end{align}&lt;/math>\n\nfor some constant &lt;math> C_1.&lt;/math>  \nOn the left hand side, we factor &lt;math> y^2-1 = (y+1)(y-1)&lt;/math> and use partial fractions.\n\n:&lt;math> \\begin{align}\n&amp;\\frac1{(y+1)(y-1)}=\\frac{A}{y+1}+\\frac{B}{y-1}\\\\\n &amp;\\implies 1=A(y-1)+B(y+1).\n\\end{align}&lt;/math>\n\nThis must be true for all &lt;math>y &lt;/math>.  In particular, at &lt;math>y=-1 &lt;/math> , &lt;math> 1=-2A &lt;/math>, hence, &lt;math>A=-1/2&lt;/math>. At &lt;math>y=1 &lt;/math>,  &lt;math> 1=2B &lt;/math>, hence &lt;math>B=1/2&lt;/math>.  Therefore,\n\n:&lt;math> \\begin{align}\n\\int \\frac{1}{y^2-1}\\, dy&amp; =- \\frac12 \\int \\frac{1}{y+1}\\, dy +\\frac12\\int \\frac{1}{y-1}\\,dy\\\\\n&amp; =- \\frac12 \\ln|y+1| +\\frac12\\ln|y-1| +C_2\\\\\n&amp; =\\frac12 \\ln\\left|\\frac{y-1}{y+1}\\right| +C_2,\n\\end{align}&lt;/math>\n\nfor some constant &lt;math> C_2.&lt;/math>  \nThe initial condition is &lt;math>y(0)=0, &lt;/math>  so at least for small &lt;math> x&lt;/math>  , we know that &lt;math>-1&lt;y(x)&lt;1 &lt;/math>.  This means that ''y''-1 is negative and ''y''+1 is positive. Hence\n\n:&lt;math>\\left|\\frac{y-1}{y+1}\\right| = - \\frac{y-1}{y+1} = \\frac{1-y}{y+1} = \\frac{1-y}{1+y}. &lt;/math>\n\nTherefore\n\n:&lt;math> \\begin{align}\n\\int \\frac{1}{y^2-1}\\, dy\n&amp; =\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) +C_2.\n\\end{align}&lt;/math>\n\nEquating the left and right sides of our first equation, we have\n\n:&lt;math> \\begin{align}\n&amp;\\frac12 \\ln\\left(\\frac{1-y}{1+y}\\right) =  \\frac{x^2}2+ C_1-C_2\\\\\n&amp;\\implies \\frac{1-y}{1+y} =  A e^{x^2}\\\\\n&amp;\\implies 1-y= (1+y) A e^{x^2}\\\\\n&amp;\\implies 1- A e^{x^2}= y(1+ A e^{x^2})\\\\\n&amp;\\implies y= \\frac{1- A e^{x^2}}{1+ A e^{x^2}}.\n\\end{align}&lt;/math>\n\nwhere &lt;math>A=e^{2(C_1-C_2)} &lt;/math>.  From the initial condition, &lt;math>y(0)=0 &lt;/math>,  &lt;math>A &lt;/math> must be equal to 1.  Hence,\n\n:&lt;math> \\begin{align}\n y(x)= \\frac{1- e^{x^2}}{1+ e^{x^2}}.\n\\end{align}&lt;/math>\n\nNote that this solution does satisfy &lt;math>-1&lt;y(x)&lt;1 &lt;/math> for all &lt;math> x&lt;/math>.\n\nRemember: It is important (and usually easy) to check that your solution actually satisfies the differential equation.\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = (y^2-1)x.\\end{aligned}\\]</span></p>\n<p>Solve for <span class=\"math\">\\(y(t)\\)</span> given the initial value <span class=\"math\">\\(y(0)=0\\)</span>.</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dx} = (y^2-1)x.\n\\end{align*}\n\nSolve for $y(t)$ given the initial value $y(0)=0$.", 
+    "statement_raw": "Consider the differential equation\n:&lt;math> \\frac{dy}{dx} = (y^2-1)x. &lt;/math>\n\nSolve for &lt;math>y(t)&lt;/math> given the initial value &lt;math>y(0)=0&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Initial_value_problem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_06_(b)", 
+    "year": 2011
 }

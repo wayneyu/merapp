@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_A_01", 
-    "course": "MATH152", 
-    "statement": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{align*}\n\nA1: Compute $\\Vert \\mathbf{x} \\Vert$.", 
-    "year": 2010, 
-    "sols": [
-        "The length of a vector, $\\Vert \\mathbf{x} \\Vert$ where \\textbf{x} has\ncomponents $[x_1,x_2,x_3]$ is,\n\n\\begin{align*}||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\\end{align*}\n\nSince \\textbf{x}={[}1,-1,-1{]} then\n\n\\begin{align*}||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(||\\mathbf{x}||=\\sqrt{3}.\\)</span></p>\n", 
+    "answer_latex": " $||\\mathbf{x}||=\\sqrt{3}.$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that <span class=\"math\">\\(\\Vert \\mathbf{x} \\Vert\\)</span> means the length of vector <strong>x</strong>.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that $\\Vert \\mathbf{x} \\Vert$ means the length of vector\n\\textbf{x}."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that &lt;math> \\Vert \\mathbf{x} \\Vert&lt;/math> means the length of vector '''x'''.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 01", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The length of a vector, <span class=\"math\">\\(\\Vert \\mathbf{x} \\Vert\\)</span> where <strong>x</strong> has components <span class=\"math\">\\([x_1,x_2,x_3]\\)</span> is,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\\end{aligned}\\]</span></p>\n<p>Since <strong>x</strong>=<span>[</span>1,-1,-1<span>]</span> then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The length of a vector, $\\Vert \\mathbf{x} \\Vert$ where \\textbf{x} has\ncomponents $[x_1,x_2,x_3]$ is,\n\n\\begin{align*}\n||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\n\\end{align*}\n\nSince \\textbf{x}={[}1,-1,-1{]} then\n\n\\begin{align*}\n||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The length of a vector, &lt;math> \\Vert \\mathbf{x} \\Vert&lt;/math> where '''x''' has components &lt;math>[x_1,x_2,x_3]&lt;/math> is,\n\n:&lt;math>\n||\\mathbf{x}||=\\sqrt{x_1^2+x_2^2+x_3^2}.\n&lt;/math>\n\nSince '''x'''=[1,-1,-1] then\n\n:&lt;math>\n||\\mathbf{x}||=\\sqrt{1+1+1}=\\sqrt{3}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>For questions A1-A3 below, <span class=\"math\">\\(\\mathbf{x}\\)</span> and <span class=\"math\">\\(\\mathbf{y}\\)</span> are the given vectors below.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\\end{aligned}\\]</span></p>\n<p>A1: Compute <span class=\"math\">\\(\\Vert \\mathbf{x} \\Vert\\)</span>.</p>\n", 
+    "statement_latex": "For questions A1-A3 below, $\\mathbf{x}$ and $\\mathbf{y}$ are the given\nvectors below.\n\n\\begin{align*}\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\n\\end{align*}\n\nA1: Compute $\\Vert \\mathbf{x} \\Vert$.", 
+    "statement_raw": "For questions &lt;b>A1-A3&lt;/b> below, &lt;math> \\mathbf{x}&lt;/math> and &lt;math> \\mathbf{y}&lt;/math> are the given vectors below.\n\n:&lt;math>\n\\mathbf{x} = [1,-1,-1], \\quad \\mathbf{y} = [1,1,2],\n&lt;/math>\n\n&lt;b>A1&lt;/b>: Compute &lt;math> \\Vert \\mathbf{x} \\Vert&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_01", 
+    "year": 2010
 }

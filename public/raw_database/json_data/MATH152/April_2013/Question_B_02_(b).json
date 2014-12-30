@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_B_02_(b)", 
-    "course": "MATH152", 
-    "statement": "Let $A = (0,1,2)$, $B = (1,0,3)$ and $C = (1,1,4)$. Let $\\Delta$ be the\ntriangle whose vertices are \\emph{A},\\emph{B}, and \\emph{C}.\n\nProve that $\\Delta$ is a right-angled triangle.", 
-    "year": 2013, 
-    "sols": [
-        "Let\n\n$\\vec{AB} = B-A = \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix} = \\begin{bmatrix}1 & -1 & 1 \\end{bmatrix}$\n\nand let\n\n$\\vec{BC} = C-B = \\begin{bmatrix}1 & 1 & 4 \\end{bmatrix} - \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix}  = \\begin{bmatrix}0 & 1 & 1 \\end{bmatrix}$\n\nas in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_02_(a)}{part\n(a)}. The vector are orthogonal if their dot product is zero.\nCalculating this dot product yields\n\n$\\vec{AB} \\cdot \\vec{BC} = (1)(0) + (-1)(1) + (1)(1) = 0$\n\nThus, vectors $\\vec{BA}$ and $\\vec{CB}$ are orthogonal and so the\ntriangle is right angled."
+    "answer_html": "<p>Thus, vectors <span class=\"math\">\\(\\vec{BA}\\)</span> and <span class=\"math\">\\(\\vec{CB}\\)</span> are orthogonal and so the triangle is right angled.</p>\n", 
+    "answer_latex": "Thus, vectors $\\vec{BA}$ and $\\vec{CB}$ are orthogonal and so the\ntriangle is right angled.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>There is a relationship between the dot product of two vectors and these vectors being orthogonal, do you know what it is?</p>\n"
+    ], 
+    "hints_latex": [
         "There is a relationship between the dot product of two vectors and these\nvectors being orthogonal, do you know what it is?"
-    ]
+    ], 
+    "hints_raw": [
+        "There is a relationship between the dot product of two vectors and these vectors being orthogonal, do you know what it is?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "B 02 (b)", 
+    "rating": 93, 
+    "sols_html": [
+        "<p>Let</p>\n<p><span class=\"math\">\\(\\vec{AB} = B-A = \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix} = \\begin{bmatrix}1 &amp; -1 &amp; 1 \\end{bmatrix}\\)</span></p>\n<p>and let</p>\n<p><span class=\"math\">\\(\\vec{BC} = C-B = \\begin{bmatrix}1 &amp; 1 &amp; 4 \\end{bmatrix} - \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix}  = \\begin{bmatrix}0 &amp; 1 &amp; 1 \\end{bmatrix}\\)</span></p>\n<p>as in <span>part (a)</span>. The vector are orthogonal if their dot product is zero. Calculating this dot product yields</p>\n<p><span class=\"math\">\\(\\vec{AB} \\cdot \\vec{BC} = (1)(0) + (-1)(1) + (1)(1) = 0\\)</span></p>\n<p>Thus, vectors <span class=\"math\">\\(\\vec{BA}\\)</span> and <span class=\"math\">\\(\\vec{CB}\\)</span> are orthogonal and so the triangle is right angled.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let\n\n$\\vec{AB} = B-A = \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix} = \\begin{bmatrix}1 & -1 & 1 \\end{bmatrix}$\n\nand let\n\n$\\vec{BC} = C-B = \\begin{bmatrix}1 & 1 & 4 \\end{bmatrix} - \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix}  = \\begin{bmatrix}0 & 1 & 1 \\end{bmatrix}$\n\nas in\n{part\n(a)}. The vector are orthogonal if their dot product is zero.\nCalculating this dot product yields\n\n$\\vec{AB} \\cdot \\vec{BC} = (1)(0) + (-1)(1) + (1)(1) = 0$\n\nThus, vectors $\\vec{BA}$ and $\\vec{CB}$ are orthogonal and so the\ntriangle is right angled."
+    ], 
+    "sols_raw": [
+        "Let \n\n&lt;math>\n\\vec{AB} = B-A = \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix} = \\begin{bmatrix}1 &amp; -1 &amp; 1 \\end{bmatrix}\n&lt;/math>\n\nand let \n\n&lt;math>\n\\vec{BC} = C-B = \\begin{bmatrix}1 &amp; 1 &amp; 4 \\end{bmatrix} - \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix}  = \\begin{bmatrix}0 &amp; 1 &amp; 1 \\end{bmatrix}\n&lt;/math>\n\nas in [[Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_02_(a)|part (a)]]. The vector are orthogonal if their dot product is zero. Calculating this dot product yields \n\n&lt;math>\n\\vec{AB} \\cdot \\vec{BC} = (1)(0) + (-1)(1) + (1)(1) = 0\n&lt;/math>\n\nThus, vectors &lt;math>\\vec{BA}&lt;/math> and &lt;math>\\vec{CB}&lt;/math> are orthogonal and so the triangle is right angled.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(A = (0,1,2)\\)</span>, <span class=\"math\">\\(B = (1,0,3)\\)</span> and <span class=\"math\">\\(C = (1,1,4)\\)</span>. Let <span class=\"math\">\\(\\Delta\\)</span> be the triangle whose vertices are <em>A</em>,<em>B</em>, and <em>C</em>.</p>\n<p>Prove that <span class=\"math\">\\(\\Delta\\)</span> is a right-angled triangle.</p>\n", 
+    "statement_latex": "Let $A = (0,1,2)$, $B = (1,0,3)$ and $C = (1,1,4)$. Let $\\Delta$ be the\ntriangle whose vertices are \\emph{A},\\emph{B}, and \\emph{C}.\n\nProve that $\\Delta$ is a right-angled triangle.", 
+    "statement_raw": "Let &lt;math> A = (0,1,2) &lt;/math>, &lt;math> B = (1,0,3) &lt;/math> and &lt;math> C = (1,1,4) &lt;/math>. Let &lt;math> \\Delta &lt;/math> be the triangle whose vertices are ''A'',''B'', and ''C''.\n\nProve that &lt;math> \\Delta &lt;/math> is a right-angled triangle.\n", 
+    "term": "April", 
+    "topics": [
+        "Geometric_linear_algebra"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_02_(b)", 
+    "year": 2013
 }

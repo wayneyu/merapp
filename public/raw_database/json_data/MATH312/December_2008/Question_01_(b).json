@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
+    "answer_html": "<p>The answer is <strong>false</strong>.The number 2 is an even prime (the only even prime).</p>\n", 
+    "answer_latex": "The answer is \\textbf{false}.The number 2 is an even prime (the only\neven prime).", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is even, then \\emph{a} is not a prime.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No hint this time. This is a gimmie on this exam.</p>\n"
+    ], 
+    "hints_latex": [
+        "No hint this time. This is a gimmie on this exam."
+    ], 
+    "hints_raw": [
+        "No hint this time. This is a gimmie on this exam.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>false</strong>. The number 2 is an even prime (the only even prime).</p>\n"
+    ], 
+    "sols_latex": [
         "The answer is \\textbf{false}. The number 2 is an even prime (the only\neven prime)."
     ], 
-    "hints": [
-        "No hint this time. This is a gimmie on this exam."
-    ]
+    "sols_raw": [
+        "The answer is '''false'''. The number 2 is an even prime (the only even prime).\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>For each of the following statements, indicate if it holds for every positive integers <span class=\"math\">\\(\\displaystyle a, b, c\\)</span> (if so, a simple <em>true</em> without a proof suffices, if not, a <em>false</em> together with a counterexample is expected).</strong></p>\n<p>If <em>a</em> is even, then <em>a</em> is not a prime.</p>\n", 
+    "statement_latex": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is even, then \\emph{a} is not a prime.", 
+    "statement_raw": "'''For each of the following statements, indicate if it holds for every positive integers &lt;math>\\displaystyle a, b, c &lt;/math> (if so, a simple ''true'' without a proof suffices, if not, a ''false'' together with a counterexample is  expected).'''\n\nIf ''a'' is even, then ''a'' is not a prime.\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_01_(b)", 
+    "year": 2008
 }

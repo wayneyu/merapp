@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH101", 
-    "statement": "Let $\\displaystyle R$ be the finite region bounded above by the curve\n\n\\begin{align*}\\displaystyle y = 4 - x^{2}\\end{align*} and bounded below by\n\n\\begin{align*}\\displaystyle y = 2-x.\\end{align*} Express the volume of the solid obtained by\nrotating $\\displaystyle R$ about the $x$-axis as a definite integral.\nYou do not need to simplify or evaluate this integral.", 
-    "year": 2005, 
-    "sols": [
-        "We would use disc integration to evaluate this volume. First, we need to\ndetermine the $x$ values that define the endpoints of the interval that\nwe need to integrate over. The endpoints are where the curves intersect,\nso we solve $4 - x^{2} = 2 - x$ or\n\n\\begin{align*}x^{2} - x - 2 = 0 \\quad \\rightarrow \\quad (x - 2)(x + 1) = 0\\end{align*}\n\nThus, the endpoints of the interval $x = -1$ and $x = 2$. Since we are\nusing the disc method, we recall that the volume of a single disc with\nradius $r$ and thickness $\\Delta x$ is $\\pi r^{2} \\Delta x$. Since we\nare rotating each curve about the $x$-axis, we can treat the value of\nthe function as the height of each disc.\n\nBy taking a sample point in the interval $(-1,2)$, we can see that\n$4 - x^{2} > 2 - x$ in the domain of integration so we can get the\nvolume of the defined solid by taking the volume of the solid with\nradius $4 - x^{2}$ and subtracting the volume with radius $2 - x$.\n\n\\begin{align*}\nV &= \\int_{-1}^{2}\\pi (4 - x^{2})^{2}\\,dx - \\int_{-1}^{2}\\pi (2 - x)^{2}\\,dx \\\\\n&= \\pi \\int_{-1}^{2} (4 - x^{2})^{2} - (2 - x)^{2}\\,dx\\end{align*}\n\n(Note: If you wish to evaluate the integral, the volume of the solid\nobtained by rotating the region $R$ about the $x$-axis is\n$V = 108\\pi/5$.)"
+    "answer_html": "<p>(Note: If you wish to evaluate the integral, the volume of the solid obtained by rotating the region <span class=\"math\">\\(R\\)</span> about the <span class=\"math\">\\(x\\)</span>-axis is <span class=\"math\">\\(V = 108\\pi/5\\)</span>.)</p>\n", 
+    "answer_latex": "(Note: If you wish to evaluate the integral, the volume of the solid\nobtained by rotating the region $R$ about the $x$-axis is\n$V = 108\\pi/5$.)", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "CameronChristou", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Can you sketch a picture of this volume? How can this help you set your work?</p>\n"
+    ], 
+    "hints_latex": [
         "Can you sketch a picture of this volume? How can this help you set your\nwork?"
-    ]
+    ], 
+    "hints_raw": [
+        "Can you sketch a picture of this volume? How can this help you set your work?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (b)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We would use disc integration to evaluate this volume. First, we need to determine the <span class=\"math\">\\(x\\)</span> values that define the endpoints of the interval that we need to integrate over. The endpoints are where the curves intersect, so we solve <span class=\"math\">\\(4 - x^{2} = 2 - x\\)</span> or</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx^{2} - x - 2 = 0 \\quad \\rightarrow \\quad (x - 2)(x + 1) = 0\\end{aligned}\\]</span></p>\n<p>Thus, the endpoints of the interval <span class=\"math\">\\(x = -1\\)</span> and <span class=\"math\">\\(x = 2\\)</span>. Since we are using the disc method, we recall that the volume of a single disc with radius <span class=\"math\">\\(r\\)</span> and thickness <span class=\"math\">\\(\\Delta x\\)</span> is <span class=\"math\">\\(\\pi r^{2} \\Delta x\\)</span>. Since we are rotating each curve about the <span class=\"math\">\\(x\\)</span>-axis, we can treat the value of the function as the height of each disc.</p>\n<p>By taking a sample point in the interval <span class=\"math\">\\((-1,2)\\)</span>, we can see that <span class=\"math\">\\(4 - x^{2} &gt; 2 - x\\)</span> in the domain of integration so we can get the volume of the defined solid by taking the volume of the solid with radius <span class=\"math\">\\(4 - x^{2}\\)</span> and subtracting the volume with radius <span class=\"math\">\\(2 - x\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\int_{-1}^{2}\\pi (4 - x^{2})^{2}\\,dx - \\int_{-1}^{2}\\pi (2 - x)^{2}\\,dx \\\\\n&amp;= \\pi \\int_{-1}^{2} (4 - x^{2})^{2} - (2 - x)^{2}\\,dx\\end{aligned}\\]</span></p>\n<p>(Note: If you wish to evaluate the integral, the volume of the solid obtained by rotating the region <span class=\"math\">\\(R\\)</span> about the <span class=\"math\">\\(x\\)</span>-axis is <span class=\"math\">\\(V = 108\\pi/5\\)</span>.)</p>\n"
+    ], 
+    "sols_latex": [
+        "We would use disc integration to evaluate this volume. First, we need to\ndetermine the $x$ values that define the endpoints of the interval that\nwe need to integrate over. The endpoints are where the curves intersect,\nso we solve $4 - x^{2} = 2 - x$ or\n\n\\begin{align*}\nx^{2} - x - 2 = 0 \\quad \\rightarrow \\quad (x - 2)(x + 1) = 0\n\\end{align*}\n\nThus, the endpoints of the interval $x = -1$ and $x = 2$. Since we are\nusing the disc method, we recall that the volume of a single disc with\nradius $r$ and thickness $\\Delta x$ is $\\pi r^{2} \\Delta x$. Since we\nare rotating each curve about the $x$-axis, we can treat the value of\nthe function as the height of each disc.\n\nBy taking a sample point in the interval $(-1,2)$, we can see that\n$4 - x^{2} > 2 - x$ in the domain of integration so we can get the\nvolume of the defined solid by taking the volume of the solid with\nradius $4 - x^{2}$ and subtracting the volume with radius $2 - x$.\n\n\\begin{align*}\nV &= \\int_{-1}^{2}\\pi (4 - x^{2})^{2}\\,dx - \\int_{-1}^{2}\\pi (2 - x)^{2}\\,dx \\\\\n&= \\pi \\int_{-1}^{2} (4 - x^{2})^{2} - (2 - x)^{2}\\,dx\n\\end{align*}\n\n(Note: If you wish to evaluate the integral, the volume of the solid\nobtained by rotating the region $R$ about the $x$-axis is\n$V = 108\\pi/5$.)"
+    ], 
+    "sols_raw": [
+        "We would use disc integration to evaluate this volume. First, we need to determine the &lt;math>x&lt;/math> values that define the endpoints of the interval that we need to integrate over. The endpoints are where the curves intersect, so we solve &lt;math>4 - x^{2} = 2 - x&lt;/math> or\n\n:&lt;math>\nx^{2} - x - 2 = 0 \\quad \\rightarrow \\quad (x - 2)(x + 1) = 0\n&lt;/math> \n\nThus, the endpoints of the interval &lt;math>x = -1&lt;/math> and &lt;math>x = 2&lt;/math>. Since we are using the disc method, we recall that the volume of a single disc with radius &lt;math>r&lt;/math> and thickness &lt;math>\\Delta x&lt;/math> is &lt;math>\\pi r^{2} \\Delta x&lt;/math>. Since we are rotating each curve about the &lt;math>x&lt;/math>-axis, we can treat the value of the function as the height of each disc.\n\nBy taking a sample point in the interval &lt;math>(-1,2)&lt;/math>, we can see that &lt;math>4 - x^{2} > 2 - x&lt;/math> in the domain of integration so we can get the volume of the defined solid by taking the volume of the solid with radius &lt;math>4 - x^{2}&lt;/math> and subtracting the volume with radius &lt;math>2 - x&lt;/math>.\n\n:&lt;math>\n\\begin{align}\nV &amp;= \\int_{-1}^{2}\\pi (4 - x^{2})^{2}\\,dx - \\int_{-1}^{2}\\pi (2 - x)^{2}\\,dx \\\\\n&amp;= \\pi \\int_{-1}^{2} (4 - x^{2})^{2} - (2 - x)^{2}\\,dx\n\\end{align}\n&lt;/math>\n\n(Note: If you wish to evaluate the integral, the volume of the solid obtained by rotating the region &lt;math>R&lt;/math> about the &lt;math>x&lt;/math>-axis is &lt;math>V = 108\\pi/5&lt;/math>.)\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\displaystyle R\\)</span> be the finite region bounded above by the curve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y = 4 - x^{2}\\end{aligned}\\]</span></p>\n<p>and bounded below by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y = 2-x.\\end{aligned}\\]</span></p>\n<p>Express the volume of the solid obtained by rotating <span class=\"math\">\\(\\displaystyle R\\)</span> about the <span class=\"math\">\\(x\\)</span>-axis as a definite integral. You do not need to simplify or evaluate this integral.</p>\n", 
+    "statement_latex": "Let $\\displaystyle R$ be the finite region bounded above by the curve\n\n\\begin{align*}\n\\displaystyle y = 4 - x^{2}\n\\end{align*} and bounded below by\n\n\\begin{align*}\n\\displaystyle y = 2-x.\n\\end{align*} Express the volume of the solid obtained by\nrotating $\\displaystyle R$ about the $x$-axis as a definite integral.\nYou do not need to simplify or evaluate this integral.", 
+    "statement_raw": "Let &lt;math> \\displaystyle R&lt;/math> be the finite region bounded above by the curve\n:&lt;math> \\displaystyle y = 4 - x^{2} &lt;/math>\nand bounded below by\n:&lt;math> \\displaystyle y = 2-x &lt;/math>.\nExpress the volume of the solid obtained by rotating &lt;math>\\displaystyle R&lt;/math> about the &lt;math> x &lt;/math>-axis as a definite integral.  You do not need to simplify or evaluate this integral.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_02_(b)", 
+    "year": 2005
 }

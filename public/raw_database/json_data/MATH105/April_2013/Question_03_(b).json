@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)", 
-    "course": "MATH105", 
-    "statement": "Let $f(0) = 1,\\,f(2) = 3$ and $\\displaystyle f'(2) = 4$. Calculate\n$\\int_{0}^{4}f''(\\sqrt{x})\\,dx$ .", 
-    "year": 2013, 
-    "sols": [
-        "We begin evaluating this integral by making a change of variable to deal\nwith the square root:\n\n\\begin{align*}u = \\sqrt{x} \\quad \\rightarrow \\quad du = \\frac{1}{2\\sqrt{x}}\\,dx = \\frac{1}{2u}\\,dx.\\end{align*}\nAnd hence,\n\n\\begin{align*}\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\int_{0}^{2}uf''(u)\\,du.\\end{align*} Now using\nintegration by parts we evaluate the integral. Let $\\displaystyle v=u$\nand $\\displaystyle dw = f''(u)\\,du$ so that we have\n$\\displaystyle dv = du$ and $\\displaystyle w = f'(u)$ (which holds by\nthe Fundamental Theorem of Calculus as $\\displaystyle f'(u)$ is an\nantiderivative of $\\displaystyle f''(u)$. Thus\n\n\\begin{align*}\n2\\int_{0}^{2}uf''(u)\\,du &= 2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) \\end{align*} Now, we once again use the Fundamental Theorem of Calculus\nand note that $\\displaystyle f(u)$ is an antiderivative of\n$\\displaystyle f'(u)$ and this gives\n\n\\begin{align*}\n2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) &= 2\\left( uf'(u) - f(u) \\right) \\Big\\vert_{0}^{2} \\\\\n&= 2\\left( 2f'(2) - f(2) + f(0) \\right)\\end{align*} Plugging the values of the terms given in the statement of\nthe question gives:\n\n\\begin{align*}{\\color{blue}\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) =12.}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}\\int_{0}^{4}f&#39;&#39;(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) =12.}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) =12.}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Start with the substitution <span class=\"math\">\\(u = \\sqrt{x}\\)</span></p>\n", 
+        "<p>There are two techniques to reduce the order of the derivative under the integral: integration by parts and the fundamental theorem of calculus. You want to use both, in the right order.</p>\n"
+    ], 
+    "hints_latex": [
         "Start with the substitution $u = \\sqrt{x}$", 
         "There are two techniques to reduce the order of the derivative under the\nintegral: integration by parts and the fundamental theorem of calculus.\nYou want to use both, in the right order."
-    ]
+    ], 
+    "hints_raw": [
+        "Start with the substitution &lt;math> u = \\sqrt{x} &lt;/math>\n", 
+        "There are two techniques to reduce the order of the derivative under the integral: integration by parts and the fundamental theorem of calculus. You want to use both, in the right order.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "3 (b)", 
+    "rating": 31, 
+    "sols_html": [
+        "<p>We begin evaluating this integral by making a change of variable to deal with the square root:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = \\sqrt{x} \\quad \\rightarrow \\quad du = \\frac{1}{2\\sqrt{x}}\\,dx = \\frac{1}{2u}\\,dx.\\end{aligned}\\]</span></p>\n<p>And hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{4}f&#39;&#39;(\\sqrt{x})\\,dx = 2\\int_{0}^{2}uf&#39;&#39;(u)\\,du.\\end{aligned}\\]</span></p>\n<p>Now using integration by parts we evaluate the integral. Let <span class=\"math\">\\(\\displaystyle v=u\\)</span> and <span class=\"math\">\\(\\displaystyle dw = f&#39;&#39;(u)\\,du\\)</span> so that we have <span class=\"math\">\\(\\displaystyle dv = du\\)</span> and <span class=\"math\">\\(\\displaystyle w = f&#39;(u)\\)</span> (which holds by the Fundamental Theorem of Calculus as <span class=\"math\">\\(\\displaystyle f&#39;(u)\\)</span> is an antiderivative of <span class=\"math\">\\(\\displaystyle f&#39;&#39;(u)\\)</span>. Thus</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2\\int_{0}^{2}uf&#39;&#39;(u)\\,du &amp;= 2\\left(uf&#39;(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f&#39;(u)\\,du \\right) \\end{aligned}\\]</span></p>\n<p>Now, we once again use the Fundamental Theorem of Calculus and note that <span class=\"math\">\\(\\displaystyle f(u)\\)</span> is an antiderivative of <span class=\"math\">\\(\\displaystyle f&#39;(u)\\)</span> and this gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2\\left(uf&#39;(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f&#39;(u)\\,du \\right) &amp;= 2\\left( uf&#39;(u) - f(u) \\right) \\Big\\vert_{0}^{2} \\\\\n&amp;= 2\\left( 2f&#39;(2) - f(2) + f(0) \\right)\\end{aligned}\\]</span></p>\n<p>Plugging the values of the terms given in the statement of the question gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}\\int_{0}^{4}f&#39;&#39;(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) =12.}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We begin evaluating this integral by making a change of variable to deal\nwith the square root:\n\n\\begin{align*}\nu = \\sqrt{x} \\quad \\rightarrow \\quad du = \\frac{1}{2\\sqrt{x}}\\,dx = \\frac{1}{2u}\\,dx.\n\\end{align*}\nAnd hence,\n\n\\begin{align*}\n\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\int_{0}^{2}uf''(u)\\,du.\n\\end{align*} Now using\nintegration by parts we evaluate the integral. Let $\\displaystyle v=u$\nand $\\displaystyle dw = f''(u)\\,du$ so that we have\n$\\displaystyle dv = du$ and $\\displaystyle w = f'(u)$ (which holds by\nthe Fundamental Theorem of Calculus as $\\displaystyle f'(u)$ is an\nantiderivative of $\\displaystyle f''(u)$. Thus\n\n\\begin{align*}\n2\\int_{0}^{2}uf''(u)\\,du &= 2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) \n\\end{align*} Now, we once again use the Fundamental Theorem of Calculus\nand note that $\\displaystyle f(u)$ is an antiderivative of\n$\\displaystyle f'(u)$ and this gives\n\n\\begin{align*}\n2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) &= 2\\left( uf'(u) - f(u) \\right) \\Big\\vert_{0}^{2} \\\\\n&= 2\\left( 2f'(2) - f(2) + f(0) \\right)\n\\end{align*} Plugging the values of the terms given in the statement of\nthe question gives:\n\n\\begin{align*}\n{\\color{blue}\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) =12.}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We begin evaluating this integral by making a change of variable to deal with the square root:\n:&lt;math>\nu = \\sqrt{x} \\quad \\rightarrow \\quad du = \\frac{1}{2\\sqrt{x}}\\,dx = \\frac{1}{2u}\\,dx.\n&lt;/math>\nAnd hence,\n:&lt;math>\n\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\int_{0}^{2}uf''(u)\\,du.\n&lt;/math>\nNow using integration by parts we evaluate the integral. Let &lt;math>\\displaystyle v=u&lt;/math> and &lt;math> \\displaystyle dw = f''(u)\\,du&lt;/math> so that we have &lt;math> \\displaystyle dv = du&lt;/math> and &lt;math> \\displaystyle w = f'(u)&lt;/math> (which holds by the Fundamental Theorem of Calculus as &lt;math> \\displaystyle f'(u)&lt;/math> is an antiderivative of &lt;math> \\displaystyle f''(u)&lt;/math>. Thus\n:&lt;math>\n\\begin{align}\n2\\int_{0}^{2}uf''(u)\\,du &amp;= 2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) \n\\end{align}\n&lt;/math>\nNow, we once again use the Fundamental Theorem of Calculus and note that &lt;math> \\displaystyle f(u)&lt;/math> is an antiderivative of &lt;math> \\displaystyle f'(u)&lt;/math> and this gives\n:&lt;math>\n\\begin{align}\n2\\left(uf'(u) \\Big\\vert_{0}^{2} - \\int_{0}^{2}f'(u)\\,du \\right) &amp;= 2\\left( uf'(u) - f(u) \\right) \\Big\\vert_{0}^{2} \\\\\n&amp;= 2\\left( 2f'(2) - f(2) + f(0) \\right)\n\\end{align}\n&lt;/math>\nPlugging the values of the terms given in the statement of the question gives:\n:&lt;math>\n{\\color{blue}\\int_{0}^{4}f''(\\sqrt{x})\\,dx = 2\\left(2(4) - 3 + 1 \\right) = 12.}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(0) = 1,\\,f(2) = 3\\)</span> and <span class=\"math\">\\(\\displaystyle f&#39;(2) = 4\\)</span>. Calculate <span class=\"math\">\\(\\int_{0}^{4}f&#39;&#39;(\\sqrt{x})\\,dx\\)</span> .</p>\n", 
+    "statement_latex": "Let $f(0) = 1,\\,f(2) = 3$ and $\\displaystyle f'(2) = 4$. Calculate\n$\\int_{0}^{4}f''(\\sqrt{x})\\,dx$ .", 
+    "statement_raw": "Let &lt;math>f(0) = 1,\\,f(2) = 3&lt;/math> and &lt;math>\\displaystyle f'(2) = 4&lt;/math>. Calculate &lt;math>\\int_{0}^{4}f''(\\sqrt{x})\\,dx&lt;/math> .\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus", 
+        "Integration", 
+        "Integration_by_parts", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_03_(b)", 
+    "year": 2013
 }

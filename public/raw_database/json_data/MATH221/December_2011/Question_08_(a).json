@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_08_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\left\\{ \\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\\\ 1 \\end{array} \\right], \\left[\\begin{array}{c} 0 \\\\ 1 \\\\ -2 \\\\ 0 \\end{array} \\right] , \\left[\\begin{array}{c} 2 \\\\ 0 \\\\ 1 \\\\ 1 \\end{array} \\right] \\right\\}\\)</span>.</p>\n", 
+    "answer_latex": "$\\left\\{ \\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\\\ 1 \\end{array} \\right], \\left[\\begin{array}{c} 0 \\\\ 1 \\\\ -2 \\\\ 0 \\end{array} \\right] , \\left[\\begin{array}{c} 2 \\\\ 0 \\\\ 1 \\\\ 1 \\end{array} \\right] \\right\\}$.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH221", 
-    "statement": "Consider the matrix\n\n\\begin{align*}A = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\\end{align*}\n\n\\textbf{a)} Find a basis for the column space of \\emph{A}.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How can the row reduced version of <em>A</em> help you find the column space?</p>\n"
+    ], 
+    "hints_latex": [
+        "How can the row reduced version of \\emph{A} help you find the column\nspace?"
+    ], 
+    "hints_raw": [
+        "How can the row reduced version of ''A'' help you find the column space?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The basis of the column space of <em>A</em> are the columns of <em>A</em> corresponding to the linearly independent columns of the row-reduced version of <em>A</em>. We will find the row reduced matrix for <em>A</em> by performing Gaussian elimination as follows:</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right]\\)</span></p>\n<p>Add row 1 to row 3; subtract row 1 from row 4.</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; -2 &amp; 4 &amp; 3 &amp; 8 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]\\)</span>.</p>\n<p>Add twice row 2 to row 3.</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 3 &amp; 6 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]\\)</span>.</p>\n<p>Multiply row 3 by 1/3.</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]\\)</span>.</p>\n<p>Subtract twice row 3 from row 1; add row 3 to row 4</p>\n<p><span class=\"math\">\\(\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\n\\end{array}\\right]\\)</span>.</p>\n<p>The row reduced version of A has columns 1, 2, and 4 as linearly independent vectors. Therefore, the basis of the column space will be the first, second and fourth column of the <strong>original</strong> matrix <em>A</em>. Hence a basis for the column space is:</p>\n<p><span class=\"math\">\\(\\left\\{ \\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\\\ 1 \\end{array} \\right], \\left[\\begin{array}{c} 0 \\\\ 1 \\\\ -2 \\\\ 0 \\end{array} \\right] , \\left[\\begin{array}{c} 2 \\\\ 0 \\\\ 1 \\\\ 1 \\end{array} \\right] \\right\\}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The basis of the column space of \\emph{A} are the columns of \\emph{A}\ncorresponding to the linearly independent columns of the row-reduced\nversion of \\emph{A}. We will find the row reduced matrix for \\emph{A} by\nperforming Gaussian elimination as follows:\n\n$\\left[\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right]$\n\nAdd row 1 to row 3; subtract row 1 from row 4.\n\n$\\left[\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n0 & -2 & 4 & 3 & 8 \\\\\n0 & 0 & 0 & -1 & -2\n\\end{array}\\right]$.\n\nAdd twice row 2 to row 3.\n\n$\\left[\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n0 & 0 & 0 & 3 & 6 \\\\\n0 & 0 & 0 & -1 & -2\n\\end{array}\\right]$.\n\nMultiply row 3 by 1/3.\n\n$\\left[\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n0 & 0 & 0 & 1 & 2 \\\\\n0 & 0 & 0 & -1 & -2\n\\end{array}\\right]$.\n\nSubtract twice row 3 from row 1; add row 3 to row 4\n\n$\\left[\\begin{array}{ccccc}\n1 & 0 & -1 & 0 & 0 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n0 & 0 & 0 & 1 & 2 \\\\\n0 & 0 & 0 & 0 & 0\n\\end{array}\\right]$.\n\nThe row reduced version of A has columns 1, 2, and 4 as linearly\nindependent vectors. Therefore, the basis of the column space will be\nthe first, second and fourth column of the \\textbf{original} matrix\n\\emph{A}. Hence a basis for the column space is:\n\n$\\left\\{ \\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\\\ 1 \\end{array} \\right], \\left[\\begin{array}{c} 0 \\\\ 1 \\\\ -2 \\\\ 0 \\end{array} \\right] , \\left[\\begin{array}{c} 2 \\\\ 0 \\\\ 1 \\\\ 1 \\end{array} \\right] \\right\\}$."
     ], 
-    "hints": [
-        "How can the row reduced version of \\emph{A} help you find the column\nspace?"
-    ]
+    "sols_raw": [
+        "The basis of the column space of ''A'' are the columns of ''A'' corresponding to the linearly independent columns of the row-reduced version of ''A''.  We will find the row reduced matrix for ''A'' by performing Gaussian elimination as follows:\n\n&lt;math>\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right]&lt;/math>\n\nAdd row 1 to row 3; subtract row 1 from row 4.\n\n&lt;math>\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; -2 &amp; 4 &amp; 3 &amp; 8 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]&lt;/math>.\n\nAdd twice row 2 to row 3.\n\n&lt;math>\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 3 &amp; 6 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]&lt;/math>.\n\nMultiply row 3 by 1/3.\n\n&lt;math>\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; -1 &amp; -2\n\\end{array}\\right]&lt;/math>.\n\nSubtract twice row 3 from row 1; add row 3 to row 4\n\n&lt;math>\\left[\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\n\\end{array}\\right]&lt;/math>.\n\nThe row reduced version of A has columns 1, 2, and 4 as linearly independent vectors.  Therefore, the basis of the column space will be the first, second and fourth column of the '''original''' matrix ''A''.  Hence a basis for the column space is:  \n\n&lt;math>\\left\\{ \\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\\\ 1 \\end{array} \\right], \\left[\\begin{array}{c} 0 \\\\ 1 \\\\ -2 \\\\ 0 \\end{array} \\right] , \\left[\\begin{array}{c} 2 \\\\ 0 \\\\ 1 \\\\ 1 \\end{array} \\right] \\right\\} &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Consider the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left(\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right)\\end{aligned}\\]</span></p>\n<p><strong>a)</strong> Find a basis for the column space of <em>A</em>.</p>\n", 
+    "statement_latex": "Consider the matrix\n\n\\begin{align*}\nA = \\left(\\begin{array}{ccccc}\n1 & 0 & -1 & 2 & 4 \\\\\n0 & 1 & -2 & 0 & -1 \\\\\n-1 & -2 & 5 & 1 & 4 \\\\\n1 & 0 & -1 & 1 & 2\n\\end{array}\\right)\n\\end{align*}\n\n\\textbf{a)} Find a basis for the column space of \\emph{A}.", 
+    "statement_raw": "Consider the matrix\n\n:&lt;math>\nA = \\left(\\begin{array}{ccccc}\n1 &amp; 0 &amp; -1 &amp; 2 &amp; 4 \\\\\n0 &amp; 1 &amp; -2 &amp; 0 &amp; -1 \\\\\n-1 &amp; -2 &amp; 5 &amp; 1 &amp; 4 \\\\\n1 &amp; 0 &amp; -1 &amp; 1 &amp; 2\n\\end{array}\\right)\n&lt;/math>\n\n'''a)''' Find a basis for the column space of ''A''.\n", 
+    "term": "December", 
+    "topics": [
+        "Matrix_operations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/December_2011/Question_08_(a)", 
+    "year": 2011
 }

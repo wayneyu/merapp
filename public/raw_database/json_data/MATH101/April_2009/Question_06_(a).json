@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(y = \\frac{2}{2-x^{2}}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$y = \\frac{2}{2-x^{2}}$completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
+    ], 
     "course": "MATH101", 
-    "statement": "Solve the differential equation:\n\n\\begin{align*}y'=xy^2\\end{align*} with initial conditions $y(0)=1$.", 
-    "year": 2009, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Write</p>\n<p><span class=\"math\">\\(y&#39; = \\frac{dy}{dx}\\)</span></p>\n<p>then try a separation of variables.</p>\n"
+    ], 
+    "hints_latex": [
+        "Write\n\n$y' = \\frac{dy}{dx}$\n\nthen try a separation of variables."
+    ], 
+    "hints_raw": [
+        "Write\n\n&lt;math> y' = \\frac{dy}{dx} &lt;/math>\n\nthen try a separation of variables.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We proceed as in the hint</p>\n<p><span class=\"math\">\\(\\frac{dy}{dx}=xy^2\\)</span></p>\n<p>becomes</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dy}{y^{2}}=xdx\\)</span></p>\n<p>Integrating both sides gives</p>\n<p><span class=\"math\">\\(-y^{-1} = \\frac{x^{2}}{2} + C\\)</span></p>\n<p>Plugging in <span class=\"math\">\\(y(0)=1\\)</span> to solve for the constant yields</p>\n<p><span class=\"math\">\\(\\displaystyle -1 = C\\)</span></p>\n<p>Therefore,</p>\n<p><span class=\"math\">\\(-\\frac{1}{y} = \\frac{x^{2}}{2} -1\\)</span></p>\n<p>and isolating for <em>y</em>, we have</p>\n<p><span class=\"math\">\\(y = \\frac{2}{2-x^{2}}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
         "We proceed as in the hint\n\n$\\frac{dy}{dx}=xy^2$\n\nbecomes\n\n$\\displaystyle \\frac{dy}{y^{2}}=xdx$\n\nIntegrating both sides gives\n\n$-y^{-1} = \\frac{x^{2}}{2} + C$\n\nPlugging in $y(0)=1$ to solve for the constant yields\n\n$\\displaystyle -1 = C$\n\nTherefore,\n\n$-\\frac{1}{y} = \\frac{x^{2}}{2} -1$\n\nand isolating for \\emph{y}, we have\n\n$y = \\frac{2}{2-x^{2}}$\n\ncompleting the question."
     ], 
-    "hints": [
-        "Write\n\n$y' = \\frac{dy}{dx}$\n\nthen try a separation of variables."
-    ]
+    "sols_raw": [
+        "We proceed as in the hint\n\n&lt;math> \\frac{dy}{dx}=xy^2&lt;/math>\n\nbecomes\n\n&lt;math> \\displaystyle \\frac{dy}{y^{2}}=xdx&lt;/math>\n\nIntegrating both sides gives\n\n&lt;math> -y^{-1} = \\frac{x^{2}}{2} + C &lt;/math>\n\nPlugging in &lt;math>y(0)=1&lt;/math> to solve for the constant yields\n\n&lt;math> \\displaystyle -1 = C &lt;/math>\n\nTherefore,\n\n&lt;math> -\\frac{1}{y} = \\frac{x^{2}}{2} -1 &lt;/math>\n\nand isolating for ''y'', we have\n\n&lt;math> y = \\frac{2}{2-x^{2}} &lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Solve the differential equation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39;=xy^2\\end{aligned}\\]</span></p>\n<p>with initial conditions <span class=\"math\">\\(y(0)=1\\)</span>.</p>\n", 
+    "statement_latex": "Solve the differential equation:\n\n\\begin{align*}\ny'=xy^2\n\\end{align*} with initial conditions $y(0)=1$.", 
+    "statement_raw": "Solve the differential equation:\n:&lt;math> y'=xy^2&lt;/math> with initial conditions &lt;math>y(0)=1&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation", 
+        "Initial_value_problem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_06_(a)", 
+    "year": 2009
 }

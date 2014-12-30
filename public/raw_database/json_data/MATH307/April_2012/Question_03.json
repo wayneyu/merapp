@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_03", 
+    "answer_html": "<p>Therefore a basis for R(A<sup>T</sup>) is <span class=\"math\">\\(\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\ \n2\n\\end{bmatrix}\\)</span> and <span class=\"math\">\\(\\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\ \n2\n\\end{bmatrix}\\)</span>.</p>\n", 
+    "answer_latex": "Therefore a basis for R(A\\textsuperscript{T})\nis $\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\ \n2\n\\end{bmatrix}$ and $\\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\ \n2\n\\end{bmatrix}$.", 
     "course": "MATH307", 
-    "statement": "Suppose that \\emph{A} is a \\emph{3 x 4} matrix and\n\n\\begin{align*}\\mathrm{rref}(A) = \\begin{bmatrix}\n1 & 2 & 0 & 2 \\\\\n0 & 0 & 1 & 2 \\\\\n0 & 0 & 0 & 0\n\\end{bmatrix}\\end{align*}\n\nFor each of the following, either find what is asked for, or indicate\nthat there is insufficient information to determine it:\n\n(i) the rank of \\emph{A},\n\n(ii) a basis for \\emph{N(A)},\n\n(iii) a basis for \\emph{R(A)},\n\n(iv) a basis for \\emph{N(A\\textsuperscript{T})},\n\n(v) a basis for \\emph{R(A\\textsuperscript{T})}.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "3", 
+    "rating": null, 
+    "sols_html": [
+        "<p>(i) The rank of A is determined by the number of pivots in rref(A). Therefore, the rank of A is 2.</p>\n<p>(ii) A basis for N(A) is determined by inspecting the free variables of rref(A), which are 2 and 4.</p>\n<p>Let <span class=\"math\">\\(x_{2} = s\\)</span> and <span class=\"math\">\\(x_{4} = t\\)</span>. So, <span class=\"math\">\\(x_{1} = -2x_{2} - 2x_{4}\\)</span> and <span class=\"math\">\\(x_{3} = -2x_{4}\\)</span>. Then we can write:</p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\nx_{1}\\\\ \nx_{2}\\\\ \nx_{3}\\\\ \nx_{4}\n\\end{bmatrix} \n=\ns\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}\n+\nt\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}\\)</span>.</p>\n<p>Therefore, a basis for N(A) is <span class=\"math\">\\(\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}\\)</span> and <span class=\"math\">\\(\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}\\)</span>.</p>\n<p>(iii) A basis for R(A) are the columns of A corresponding to the pivot columns of rref(A). Since we don<span class=\"math\">\\(^{\\prime}\\)</span>t know A, we cannot determine a basis for R(A).</p>\n<p>(iv) A basis for N(A<sup>T</sup>) is determined by inspecting the free variables of rref(A<sup>T</sup>). Since we don<span class=\"math\">\\(^{\\prime}\\)</span>t know rref(A<sup>T</sup>), we cannot determine a basis for N(A<sup>T</sup>).</p>\n<p>(v) A basis for R(A<sup>T</sup>) are the rows of rref(A) that correspond to the pivots. Therefore a basis for R(A<sup>T</sup>) is <span class=\"math\">\\(\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\ \n2\n\\end{bmatrix}\\)</span> and <span class=\"math\">\\(\\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\ \n2\n\\end{bmatrix}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "(i) The rank of A is determined by the number of pivots in rref(A).\nTherefore, the rank of A is 2.\n\n(ii) A basis for N(A) is determined by inspecting the free variables of\nrref(A), which are 2 and 4.\n\nLet $x_{2} = s$ and $x_{4} = t$. So, $x_{1} = -2x_{2} - 2x_{4}$ and\n$x_{3} = -2x_{4}$. Then we can write:\n\n$\\begin{bmatrix}\nx_{1}\\\\ \nx_{2}\\\\ \nx_{3}\\\\ \nx_{4}\n\\end{bmatrix} \n=\ns\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}\n+\nt\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}$.\n\nTherefore, a basis for N(A) is $\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}$ and $\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}$.\n\n(iii) A basis for R(A) are the columns of A corresponding to the pivot\ncolumns of rref(A). Since we don$^{\\prime}$t know A, we cannot determine\na basis for R(A).\n\n(iv) A basis for N(A\\textsuperscript{T}) is determined by inspecting the\nfree variables of rref(A\\textsuperscript{T}). Since we don$^{\\prime}$t\nknow rref(A\\textsuperscript{T}), we cannot determine a basis for\nN(A\\textsuperscript{T}).\n\n(v) A basis for R(A\\textsuperscript{T}) are the rows of rref(A) that\ncorrespond to the pivots. Therefore a basis for R(A\\textsuperscript{T})\nis $\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\ \n2\n\\end{bmatrix}$ and $\\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\ \n2\n\\end{bmatrix}$."
     ], 
-    "hints": []
+    "sols_raw": [
+        "(i) The rank of A is determined by the number of pivots in rref(A). Therefore, the rank of A is 2.\n\n(ii) A basis for N(A) is determined by inspecting the free variables of rref(A), which are 2 and 4.\n\nLet &lt;math>x_{2} = s&lt;/math> and &lt;math>x_{4} = t&lt;/math>. So, &lt;math>x_{1} = -2x_{2} - 2x_{4}&lt;/math> and &lt;math>x_{3} = -2x_{4}&lt;/math>. Then we can write:\n\n&lt;math>\\begin{bmatrix}\nx_{1}\\\\ \nx_{2}\\\\ \nx_{3}\\\\ \nx_{4}\n\\end{bmatrix} \n=\ns\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}\n+\nt\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}&lt;/math>.\n\nTherefore, a basis for N(A) is &lt;math>\\begin{bmatrix}\n-2\\\\ \n1\\\\ \n0\\\\ \n0\n\\end{bmatrix}&lt;/math> and &lt;math>\\begin{bmatrix}\n-2\\\\ \n0\\\\ \n-2\\\\ \n1\n\\end{bmatrix}&lt;/math>.\n\n(iii) A basis for R(A) are the columns of A corresponding to the pivot columns of rref(A). Since we don\u2019t know A, we cannot determine a basis for R(A).\n\n(iv) A basis for N(A&lt;sup>T&lt;/sup>) is determined by inspecting the free variables of rref(A&lt;sup>T&lt;/sup>). Since we don\u2019t know rref(A&lt;sup>T&lt;/sup>), we cannot determine a basis for N(A&lt;sup>T&lt;/sup>).\n\n(v) A basis for R(A&lt;sup>T&lt;/sup>) are the rows of rref(A) that correspond to the pivots. Therefore a basis for R(A&lt;sup>T&lt;/sup>) is &lt;math>\\begin{bmatrix}\n1\\\\ \n2\\\\ \n0\\\\ \n2\n\\end{bmatrix}&lt;/math> and &lt;math>\\begin{bmatrix}\n0\\\\ \n0\\\\ \n1\\\\ \n2\n\\end{bmatrix}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is a <em>3 x 4</em> matrix and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{rref}(A) = \\begin{bmatrix}\n1 &amp; 2 &amp; 0 &amp; 2 \\\\\n0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; 0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>For each of the following, either find what is asked for, or indicate that there is insufficient information to determine it:</p>\n<p>(i) the rank of <em>A</em>,</p>\n<p>(ii) a basis for <em>N(A)</em>,</p>\n<p>(iii) a basis for <em>R(A)</em>,</p>\n<p>(iv) a basis for <em>N(A<sup>T</sup>)</em>,</p>\n<p>(v) a basis for <em>R(A<sup>T</sup>)</em>.</p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is a \\emph{3 x 4} matrix and\n\n\\begin{align*}\n\\mathrm{rref}(A) = \\begin{bmatrix}\n1 & 2 & 0 & 2 \\\\\n0 & 0 & 1 & 2 \\\\\n0 & 0 & 0 & 0\n\\end{bmatrix}\n\\end{align*}\n\nFor each of the following, either find what is asked for, or indicate\nthat there is insufficient information to determine it:\n\n(i) the rank of \\emph{A},\n\n(ii) a basis for \\emph{N(A)},\n\n(iii) a basis for \\emph{R(A)},\n\n(iv) a basis for \\emph{N(A\\textsuperscript{T})},\n\n(v) a basis for \\emph{R(A\\textsuperscript{T})}.", 
+    "statement_raw": "Suppose that ''A'' is a ''3 x 4'' matrix and\n\n:&lt;math>\n\\mathrm{rref}(A) = \\begin{bmatrix}\n1 &amp; 2 &amp; 0 &amp; 2 \\\\\n0 &amp; 0 &amp; 1 &amp; 2 \\\\\n0 &amp; 0 &amp; 0 &amp; 0\n\\end{bmatrix}\n&lt;/math>\n\nFor each of the following, either find what is asked for, or indicate that there is insufficient information to determine it:\n\n(i) the rank of ''A'',\n\n(ii) a basis for ''N(A)'',\n\n(iii) a basis for ''R(A)'',\n\n(iv) a basis for ''N(A&lt;sup>T&lt;/sup>)'',\n\n(v) a basis for ''R(A&lt;sup>T&lt;/sup>)''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_03", 
+    "year": 2012
 }

@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH105", 
-    "statement": "This problem contains three numerical series. For each of them, find out\nwhether it converges or diverges. You should provide appropriate\njustification in order to receive credit.\n\n\\textbf{(b)}\n\n\\begin{align*}\\sum_{k = 1}^{\\infty}\\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}\\,.\\end{align*}", 
-    "year": 2013, 
-    "sols": [
-        "We apply the ratio test for this problem. Let\n\n\\begin{align*}\\quad c = \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right|, \\quad a_{k} = \\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}.\\end{align*}\nBy the ratio test, if $c < 1$, then the series converges. If $c > 1$,\nthe series diverges. If $c = 1$, then no conclusion can be drawn. For\n$k > 0$, all $a_{k}$ are positive so we can remove the absolute value\nsigns in $c$ when evaluating it.\n\n\\begin{align*}\nc &= \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right| = \\lim_{k \\rightarrow \\infty} \\frac{a_{k+1}}{a_{k}} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}10^{k+1}((k+1)!)^{2}}{(2(k+1))!}\\frac{(2k)!}{k^{10}10^{k}(k!)^{2}} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}}{k^{10}}\\frac{10^{k+1}}{10^{k}}\\frac{((k+1)!)^{2}}{(k!)^{2}}\\frac{(2k)!}{(2k+2)!}\\end{align*} Using the fact that $(k+1)! = (k+1)\\cdot k!$ and\n$(2k+2)! = (2k+2)\\cdot(2k+1)\\cdot(2k)!$ we can simplify the fractions\nwith factorial terms, giving us the following:\n\n\\begin{align*}\nc &= \\lim_{k \\rightarrow \\infty} \\left(\\frac{k+1}{k}\\right)^{10} \\cdot 10 \\cdot (k+1)^{2} \\cdot \\frac{1}{(2k + 2)(2k + 1)} \\\\ \n&= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10} \\cdot \\frac{10(k+1)^{2}}{(2k + 2)(2k + 1)} \\end{align*} Dividing both the numerator and denominator by $k^{2}$\ngives:\n\n\\begin{align*}\n&= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}\\\\ \n&= \\frac{10}{4} > 1\\end{align*} Since $c > 1$, this series diverges by the ratio test."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}=\\frac{10}{4} &gt; 1\\)</span> Since <span class=\"math\">\\(c &gt; 1\\)</span>, this series diverges by the ratio test.</p>\n", 
+    "answer_latex": " $\\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}=\\frac{10}{4} > 1$  Since $c > 1$, this series diverges by the ratio test.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Given the appearance of factorial terms in the series, you might try applying the ratio test.</p>\n"
+    ], 
+    "hints_latex": [
         "Given the appearance of factorial terms in the series, you might try\napplying the ratio test."
-    ]
+    ], 
+    "hints_raw": [
+        "Given the appearance of factorial terms in the series, you might try applying the &lt;b>ratio test&lt;/b>.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "2 (b)", 
+    "rating": 47, 
+    "sols_html": [
+        "<p>We apply the ratio test for this problem. Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\quad c = \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right|, \\quad a_{k} = \\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}.\\end{aligned}\\]</span></p>\n<p>By the ratio test, if <span class=\"math\">\\(c &lt; 1\\)</span>, then the series converges. If <span class=\"math\">\\(c &gt; 1\\)</span>, the series diverges. If <span class=\"math\">\\(c = 1\\)</span>, then no conclusion can be drawn. For <span class=\"math\">\\(k &gt; 0\\)</span>, all <span class=\"math\">\\(a_{k}\\)</span> are positive so we can remove the absolute value signs in <span class=\"math\">\\(c\\)</span> when evaluating it.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc &amp;= \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right| = \\lim_{k \\rightarrow \\infty} \\frac{a_{k+1}}{a_{k}} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}10^{k+1}((k+1)!)^{2}}{(2(k+1))!}\\frac{(2k)!}{k^{10}10^{k}(k!)^{2}} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}}{k^{10}}\\frac{10^{k+1}}{10^{k}}\\frac{((k+1)!)^{2}}{(k!)^{2}}\\frac{(2k)!}{(2k+2)!}\\end{aligned}\\]</span></p>\n<p>Using the fact that <span class=\"math\">\\((k+1)! = (k+1)\\cdot k!\\)</span> and <span class=\"math\">\\((2k+2)! = (2k+2)\\cdot(2k+1)\\cdot(2k)!\\)</span> we can simplify the fractions with factorial terms, giving us the following:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nc &amp;= \\lim_{k \\rightarrow \\infty} \\left(\\frac{k+1}{k}\\right)^{10} \\cdot 10 \\cdot (k+1)^{2} \\cdot \\frac{1}{(2k + 2)(2k + 1)} \\\\ \n&amp;= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10} \\cdot \\frac{10(k+1)^{2}}{(2k + 2)(2k + 1)} \\end{aligned}\\]</span></p>\n<p>Dividing both the numerator and denominator by <span class=\"math\">\\(k^{2}\\)</span> gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}\\\\ \n&amp;= \\frac{10}{4} &gt; 1\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(c &gt; 1\\)</span>, this series diverges by the ratio test.</p>\n"
+    ], 
+    "sols_latex": [
+        "We apply the ratio test for this problem. Let\n\n\\begin{align*}\n\\quad c = \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right|, \\quad a_{k} = \\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}.\n\\end{align*}\nBy the ratio test, if $c < 1$, then the series converges. If $c > 1$,\nthe series diverges. If $c = 1$, then no conclusion can be drawn. For\n$k > 0$, all $a_{k}$ are positive so we can remove the absolute value\nsigns in $c$ when evaluating it.\n\n\\begin{align*}\nc &= \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right| = \\lim_{k \\rightarrow \\infty} \\frac{a_{k+1}}{a_{k}} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}10^{k+1}((k+1)!)^{2}}{(2(k+1))!}\\frac{(2k)!}{k^{10}10^{k}(k!)^{2}} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}}{k^{10}}\\frac{10^{k+1}}{10^{k}}\\frac{((k+1)!)^{2}}{(k!)^{2}}\\frac{(2k)!}{(2k+2)!}\n\\end{align*} Using the fact that $(k+1)! = (k+1)\\cdot k!$ and\n$(2k+2)! = (2k+2)\\cdot(2k+1)\\cdot(2k)!$ we can simplify the fractions\nwith factorial terms, giving us the following:\n\n\\begin{align*}\nc &= \\lim_{k \\rightarrow \\infty} \\left(\\frac{k+1}{k}\\right)^{10} \\cdot 10 \\cdot (k+1)^{2} \\cdot \\frac{1}{(2k + 2)(2k + 1)} \\\\ \n&= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10} \\cdot \\frac{10(k+1)^{2}}{(2k + 2)(2k + 1)} \n\\end{align*} Dividing both the numerator and denominator by $k^{2}$\ngives:\n\n\\begin{align*}\n&= \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}\\\\ \n&= \\frac{10}{4} > 1\n\\end{align*} Since $c > 1$, this series diverges by the ratio test."
+    ], 
+    "sols_raw": [
+        "We apply the &lt;b>ratio test&lt;/b> for this problem. Let\n:&lt;math>\n\\quad c = \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right|, \\quad a_{k} = \\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}.\n&lt;/math>\nBy the ratio test, if &lt;math>c &lt; 1&lt;/math>, then the series converges. If &lt;math>c > 1&lt;/math>, the series diverges. If &lt;math>c = 1&lt;/math>, then no conclusion can be drawn. For &lt;math>k > 0&lt;/math>, all &lt;math>a_{k}&lt;/math> are positive so we can remove the absolute value signs in &lt;math>c&lt;/math> when evaluating it.\n:&lt;math>\n\\begin{align}\nc &amp;= \\lim_{k \\rightarrow \\infty}\\left| \\frac{a_{k+1}}{a_{k}}\\right| = \\lim_{k \\rightarrow \\infty} \\frac{a_{k+1}}{a_{k}} \\\\\n&amp; = \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}10^{k+1}((k+1)!)^{2}}{(2(k+1))!}\\frac{(2k)!}{k^{10}10^{k}(k!)^{2}} \\\\\n&amp; = \\lim_{k \\rightarrow \\infty} \\frac{(k+1)^{10}}{k^{10}}\\frac{10^{k+1}}{10^{k}}\\frac{((k+1)!)^{2}}{(k!)^{2}}\\frac{(2k)!}{(2k+2)!}\n\\end{align}\n&lt;/math>\nUsing the fact that &lt;math>(k+1)! = (k+1)\\cdot k!&lt;/math> and &lt;math>(2k+2)! = (2k+2)\\cdot(2k+1)\\cdot(2k)!&lt;/math> we can simplify the fractions with factorial terms, giving us the following:\n:&lt;math>\n\\begin{align}\nc &amp; = \\lim_{k \\rightarrow \\infty} \\left(\\frac{k+1}{k}\\right)^{10} \\cdot 10 \\cdot (k+1)^{2} \\cdot \\frac{1}{(2k + 2)(2k + 1)} \\\\ \n&amp; = \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10} \\cdot \\frac{10(k+1)^{2}}{(2k + 2)(2k + 1)} \n\\end{align}\n&lt;/math>\nDividing both the numerator and denominator by &lt;math>k^{2}&lt;/math> gives:\n:&lt;math>\n\\begin{align}\n&amp; = \\lim_{k \\rightarrow \\infty} \\left(1 + \\frac{1}{k} \\right)^{10}\\frac{10(1+1/k)^{2}}{(2 + 2/k)(2 + 1/k)}\\\\ \n&amp; = \\frac{10}{4} > 1\n\\end{align}\n&lt;/math>\n&lt;font style=\"color:blue\">Since &lt;math>c > 1&lt;/math>, this series diverges by the ratio test.&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>This problem contains three numerical series. For each of them, find out whether it converges or diverges. You should provide appropriate justification in order to receive credit.</p>\n<p><strong>(b)</strong></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k = 1}^{\\infty}\\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}\\,.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "This problem contains three numerical series. For each of them, find out\nwhether it converges or diverges. You should provide appropriate\njustification in order to receive credit.\n\n\\textbf{(b)}\n\n\\begin{align*}\n\\sum_{k = 1}^{\\infty}\\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}\\,.\n\\end{align*}", 
+    "statement_raw": "This problem contains three numerical series. For each of them, find out whether it converges or diverges. You should provide appropriate justification in order to receive credit.\n\n'''(b)'''\n:&lt;math>\n\\sum_{k = 1}^{\\infty}\\frac{k^{10}10^{k}(k!)^{2}}{(2k)!}\\,.\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Ratio_test"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_02_(b)", 
+    "year": 2013
 }

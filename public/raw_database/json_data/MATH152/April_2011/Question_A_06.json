@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_A_06", 
-    "course": "MATH152", 
-    "statement": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6;~7~8~9{]};}\\\\\\texttt{A(2,:)}", 
-    "year": 2011, 
-    "sols": [
-        "For the first line of code\n\n\\texttt{A={[}1~2~3;4~5~6;7~8~9{]};}\n\nwe recall that when declaring a matrix in Matlab, square brackets {[}\nand {]} start and end the declaration. While inside a space indicates to\nmove to the next column while a semicolon instructs to start a new row.\nTherefore we place the entries 1, 2, and 3 in the three columns of the\nfirst row; 4, 5, and 6 in the three columns of the second row and 7, 8,\nand 9 in the three columns of the last row. Therefore the matrix\ngenerated is\n\n\\begin{align*}A=\\begin{bmatrix}\n1  &  2  &  3\\\\\n4  &  5  &  6\\\\\n7  &  8  &  9\n\\end{bmatrix}.\\end{align*}\n\nThe semicolon at the end of the line indicates that output is suppressed\nand so the matrix will not be displayed. For the second line of code\n\n\\texttt{A(2,:)}\n\nwe recall that Matlab recognizes entries in a matrix first by row and\ncolumn so a call A(i,j) would return an element in row i and column j.\nThe colon instructs Matlab to take all the entries of a given field.\nTherefore A(:,j) instructs Matlab to output all entries in column j\nwhile A(i,:) instructs Matlab to output all of the entries in row i.\nTherefore A(2,:) instructs Matlab to output all of the entries from row\n2. If we look at out matrix then the output would be\n\n\\texttt{{[}4~~5~~6{]}}\n\nNotice the lack of semicolon on this output indicates that the output is\n\\textbf{not} suppressed."
+    "answer_html": "<p><span class=\"math\">\\(A=\\begin{bmatrix}\n1    2    3\\\\\n4    5    6\\\\\n7    8    9\n\\end{bmatrix}.\\)</span> The semicolon at the end of the line indicates that output is suppressed and so the matrix will not be displayed.For the second line of code<code>A(2,:)</code>we recall that Matlab recognizes entries in a matrix first by row and column so a call A(i,j) would return an element in row i and column j. The colon instructs Matlab to take all the entries of a given field. Therefore A(:,j) instructs Matlab to output all entries in column j while A(i,:) instructs Matlab to output all of the entries in row i. Therefore A(2,:) instructs Matlab to output all of the entries from row 2.If we look at out matrix then the output would be<code>[4&#160;&#160;5&#160;&#160;6]</code>Notice the lack of semicolon on this output indicates that the output is <strong>not</strong> suppressed.</p>\n", 
+    "answer_latex": " $A=\\begin{bmatrix}\n1    2    3\\\\\n4    5    6\\\\\n7    8    9\n\\end{bmatrix}.$ The semicolon at the end of the line indicates that output is suppressed\nand so the matrix will not be displayed.For the second line of code\\texttt{A(2,:)}we recall that Matlab recognizes entries in a matrix first by row and\ncolumn so a call A(i,j) would return an element in row i and column j.\nThe colon instructs Matlab to take all the entries of a given field.\nTherefore A(:,j) instructs Matlab to output all entries in column j\nwhile A(i,:) instructs Matlab to output all of the entries in row i.\nTherefore A(2,:) instructs Matlab to output all of the entries from row\n2.If we look at out matrix then the output would be\\texttt{{[}4~~5~~6{]}}Notice the lack of semicolon on this output indicates that the output is\n\\textbf{not} suppressed.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What is the difference between a space and a semicolon when defining a matrix. What does the colon do?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the difference between a space and a semicolon when defining a\nmatrix. What does the colon do?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the difference between a space and a semicolon when defining a matrix.  What does the colon do?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "A 06", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>For the first line of code</p>\n<p><code>A=[1&#160;2&#160;3;4&#160;5&#160;6;7&#160;8&#160;9];</code></p>\n<p>we recall that when declaring a matrix in Matlab, square brackets <span>[</span> and <span>]</span> start and end the declaration. While inside a space indicates to move to the next column while a semicolon instructs to start a new row. Therefore we place the entries 1, 2, and 3 in the three columns of the first row; 4, 5, and 6 in the three columns of the second row and 7, 8, and 9 in the three columns of the last row. Therefore the matrix generated is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n1  &amp;  2  &amp;  3\\\\\n4  &amp;  5  &amp;  6\\\\\n7  &amp;  8  &amp;  9\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>The semicolon at the end of the line indicates that output is suppressed and so the matrix will not be displayed. For the second line of code</p>\n<p><code>A(2,:)</code></p>\n<p>we recall that Matlab recognizes entries in a matrix first by row and column so a call A(i,j) would return an element in row i and column j. The colon instructs Matlab to take all the entries of a given field. Therefore A(:,j) instructs Matlab to output all entries in column j while A(i,:) instructs Matlab to output all of the entries in row i. Therefore A(2,:) instructs Matlab to output all of the entries from row 2. If we look at out matrix then the output would be</p>\n<p><code>[4&#160;&#160;5&#160;&#160;6]</code></p>\n<p>Notice the lack of semicolon on this output indicates that the output is <strong>not</strong> suppressed.</p>\n"
+    ], 
+    "sols_latex": [
+        "For the first line of code\n\n\\texttt{A={[}1~2~3;4~5~6;7~8~9{]};}\n\nwe recall that when declaring a matrix in Matlab, square brackets {[}\nand {]} start and end the declaration. While inside a space indicates to\nmove to the next column while a semicolon instructs to start a new row.\nTherefore we place the entries 1, 2, and 3 in the three columns of the\nfirst row; 4, 5, and 6 in the three columns of the second row and 7, 8,\nand 9 in the three columns of the last row. Therefore the matrix\ngenerated is\n\n\\begin{align*}\nA=\\begin{bmatrix}\n1  &  2  &  3\\\\\n4  &  5  &  6\\\\\n7  &  8  &  9\n\\end{bmatrix}.\n\\end{align*}\n\nThe semicolon at the end of the line indicates that output is suppressed\nand so the matrix will not be displayed. For the second line of code\n\n\\texttt{A(2,:)}\n\nwe recall that Matlab recognizes entries in a matrix first by row and\ncolumn so a call A(i,j) would return an element in row i and column j.\nThe colon instructs Matlab to take all the entries of a given field.\nTherefore A(:,j) instructs Matlab to output all entries in column j\nwhile A(i,:) instructs Matlab to output all of the entries in row i.\nTherefore A(2,:) instructs Matlab to output all of the entries from row\n2. If we look at out matrix then the output would be\n\n\\texttt{{[}4~~5~~6{]}}\n\nNotice the lack of semicolon on this output indicates that the output is\n\\textbf{not} suppressed."
+    ], 
+    "sols_raw": [
+        "For the first line of code\n\n A=[1 2 3;4 5 6;7 8 9];\n\nwe recall that when declaring a matrix in Matlab, square brackets [ and ] start and end the declaration.  While inside a space indicates to move to the next column while a semicolon instructs to start a new row.  Therefore we place the entries 1, 2, and 3 in the three columns of the first row; 4, 5, and 6 in the three columns of the second row and 7, 8, and 9 in the three columns of the last row.  Therefore the matrix generated is\n\n:&lt;math>\nA=\\begin{bmatrix}\n1  &amp;  2  &amp;  3\\\\\n4  &amp;  5  &amp;  6\\\\\n7  &amp;  8  &amp;  9\n\\end{bmatrix}.\n&lt;/math>\n\nThe semicolon at the end of the line indicates that output is suppressed and so the matrix will not be displayed.  For the second line of code\n\n A(2,:)\n\nwe recall that Matlab recognizes entries in a matrix first by row and column so a call A(i,j) would return an element in row i and column j.  The colon instructs Matlab to take all the entries of a given field.  Therefore A(:,j) instructs Matlab to output all entries in column j while A(i,:) instructs Matlab to output all of the entries in row i.  Therefore A(2,:) instructs Matlab to output all of the entries from row 2.  If we look at out matrix then the output would be\n\n [4  5  6]\n\nNotice the lack of semicolon on this output indicates that the output is '''not''' suppressed.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>What is the output after the following lines of MATLAB code?</p>\n<p><code>A&#160;=&#160;[1&#160;2&#160;3;&#160;4&#160;5&#160;6;&#160;7&#160;8&#160;9];</code><br /><code>A(2,:)</code></p>\n", 
+    "statement_latex": "What is the output after the following lines of MATLAB code?\n\n\\texttt{A~=~{[}1~2~3;~4~5~6;~7~8~9{]};}\\\\\\texttt{A(2,:)}", 
+    "statement_raw": "What is the output after the following lines of MATLAB code?\n\n A = [1 2 3; 4 5 6; 7 8 9];\n A(2,:)\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_A_06", 
+    "year": 2011
 }

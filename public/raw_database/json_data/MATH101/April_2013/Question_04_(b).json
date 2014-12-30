@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_04_(b)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\n\\textbf{The graph below shows the region between\n$\\displaystyle y = 4+\\pi \\sin x$ and $\\displaystyle y = 4+2\\pi-2x$}\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH101April2013Q4.jpg}\n\\caption{MATH101April2013Q4.jpg}\n\\end{figure}\n\nThe region is rotated about the line $y = -1$. Express in terms of\ndefinite integrals the volume of the resulting solid. \\emph{Do not}\nevaluate the integrals. Also, it is not necessary to simplify them.", 
-    "year": 2013, 
-    "sols": [
-        "To begin with, to get our bounds of integration and where the\nintersection points are, we follow same steps as in\n\\href{Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_04_(a)}{part\n(a)} to find that the curves intersect when\n$\\displaystyle x = \\pi/2, \\pi, 3\\pi/2$. Further, the top function on\n$\\displaystyle [\\pi/2,\\pi]$ is $\\displaystyle 4+\\pi \\sin x$, whereas the\ntop function on $\\displaystyle [\\pi,3\\pi/2]$ is\n$\\displaystyle 4+2\\pi-2x$.\n\nSince we are revolving around the horizontal line\n$\\displaystyle y = -1$, the radius of the discs change for every value\nof \\emph{x}. Hence we will integrate over all \\emph{x} values to get the\nvolume of revolution. To find the radius of the discs as a function of\n\\emph{x}, note that we need to add 1 to the function value since the\nradius is given by\n\n\\begin{align*}\\displaystyle \\text{radius = } \\text{function} - \\text{axis} = f(x)-(-1) = f(x)+1\\end{align*}\n\nwhere $\\displaystyle f(x)$ is the function. The volume of revolution is\ngiven by\n$\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx$,\nso\n\n\\begin{align*}\nV &= \\pi\\int_{\\pi/2}^\\pi [(4+\\pi\\sin x+1)^2-(4+2\\pi-2x+1)^2] \\ dx \\\\\n& \\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx\\)</span></p>\n", 
+    "answer_latex": " $\\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Make sure you remember which direction the discs are going.</p>\n", 
+        "<p>The volume is given by <span class=\"math\">\\(\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx\\)</span></p>\n", 
+        "<p>Remember to revolve around <span class=\"math\">\\(\\displaystyle y = -1\\)</span>, not <span class=\"math\">\\(\\displaystyle y = 0\\)</span>. How does this affect the radius?</p>\n"
+    ], 
+    "hints_latex": [
         "Make sure you remember which direction the discs are going.", 
         "The volume is given by\n$\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx$", 
         "Remember to revolve around $\\displaystyle y = -1$, not\n$\\displaystyle y = 0$. How does this affect the radius?"
-    ]
+    ], 
+    "hints_raw": [
+        "Make sure you remember which direction the discs are going.\n", 
+        "The volume is given by &lt;math>\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx&lt;/math>\n", 
+        "Remember to revolve around &lt;math>\\displaystyle y = -1&lt;/math>, not &lt;math>\\displaystyle y = 0&lt;/math>. How does this affect the radius?\n"
+    ], 
+    "num_votes": 7, 
+    "question": "4 (b)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>To begin with, to get our bounds of integration and where the intersection points are, we follow same steps as in <span>part (a)</span> to find that the curves intersect when <span class=\"math\">\\(\\displaystyle x = \\pi/2, \\pi, 3\\pi/2\\)</span>. Further, the top function on <span class=\"math\">\\(\\displaystyle [\\pi/2,\\pi]\\)</span> is <span class=\"math\">\\(\\displaystyle 4+\\pi \\sin x\\)</span>, whereas the top function on <span class=\"math\">\\(\\displaystyle [\\pi,3\\pi/2]\\)</span> is <span class=\"math\">\\(\\displaystyle 4+2\\pi-2x\\)</span>.</p>\n<p>Since we are revolving around the horizontal line <span class=\"math\">\\(\\displaystyle y = -1\\)</span>, the radius of the discs change for every value of <em>x</em>. Hence we will integrate over all <em>x</em> values to get the volume of revolution. To find the radius of the discs as a function of <em>x</em>, note that we need to add 1 to the function value since the radius is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\text{radius = } \\text{function} - \\text{axis} = f(x)-(-1) = f(x)+1\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\displaystyle f(x)\\)</span> is the function. The volume of revolution is given by <span class=\"math\">\\(\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx\\)</span>, so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\pi\\int_{\\pi/2}^\\pi [(4+\\pi\\sin x+1)^2-(4+2\\pi-2x+1)^2] \\ dx \\\\\n&amp; \\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To begin with, to get our bounds of integration and where the\nintersection points are, we follow same steps as in\n{part\n(a)} to find that the curves intersect when\n$\\displaystyle x = \\pi/2, \\pi, 3\\pi/2$. Further, the top function on\n$\\displaystyle [\\pi/2,\\pi]$ is $\\displaystyle 4+\\pi \\sin x$, whereas the\ntop function on $\\displaystyle [\\pi,3\\pi/2]$ is\n$\\displaystyle 4+2\\pi-2x$.\n\nSince we are revolving around the horizontal line\n$\\displaystyle y = -1$, the radius of the discs change for every value\nof \\emph{x}. Hence we will integrate over all \\emph{x} values to get the\nvolume of revolution. To find the radius of the discs as a function of\n\\emph{x}, note that we need to add 1 to the function value since the\nradius is given by\n\n\\begin{align*}\n\\displaystyle \\text{radius = } \\text{function} - \\text{axis} = f(x)-(-1) = f(x)+1\n\\end{align*}\n\nwhere $\\displaystyle f(x)$ is the function. The volume of revolution is\ngiven by\n$\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx$,\nso\n\n\\begin{align*}\nV &= \\pi\\int_{\\pi/2}^\\pi [(4+\\pi\\sin x+1)^2-(4+2\\pi-2x+1)^2] \\ dx \\\\\n& \\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To begin with, to get our bounds of integration and where the intersection points are, we follow same steps as in [[Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_04_(a)|part (a)]] to find that the curves intersect when &lt;math> \\displaystyle x = \\pi/2, \\pi, 3\\pi/2&lt;/math>. Further, the top function on &lt;math> \\displaystyle [\\pi/2,\\pi]&lt;/math> is &lt;math> \\displaystyle 4+\\pi \\sin x &lt;/math>, whereas the top function on &lt;math> \\displaystyle [\\pi,3\\pi/2]&lt;/math> is &lt;math> \\displaystyle 4+2\\pi-2x &lt;/math>.\n\nSince we are revolving around the horizontal line &lt;math> \\displaystyle y = -1 &lt;/math>, the radius of the discs change for every value of ''x''. Hence we will integrate over all ''x'' values to get the volume of revolution. To find the radius of the discs as a function of ''x'', note that we need to add 1 to the function value since the radius is given by\n\n:&lt;math> \\displaystyle \\text{radius = } \\text{function} - \\text{axis} = f(x)-(-1) = f(x)+1 &lt;/math>\n\nwhere &lt;math> \\displaystyle f(x) &lt;/math> is the function. The volume of revolution is given by &lt;math>\\displaystyle \\pi \\int_a^b (\\text{outer radius}^2-\\text{inner radius}^2) \\ dx&lt;/math>, so\n\n:&lt;math> \n\\displaystyle \n\\begin{align}\nV &amp; = \\pi\\int_{\\pi/2}^\\pi [(4+\\pi\\sin x+1)^2-(4+2\\pi-2x+1)^2] \\ dx \\\\\n&amp; \\qquad + \\pi\\int_{\\pi}^{3\\pi/2} [(4+2\\pi-2x+1)^2-(4+\\pi\\sin x+1)^2] \\ dx\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 4&#226;&#128;&#147;12, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions</strong>.</p>\n<p><strong>The graph below shows the region between <span class=\"math\">\\(\\displaystyle y = 4+\\pi \\sin x\\)</span> and <span class=\"math\">\\(\\displaystyle y = 4+2\\pi-2x\\)</span></strong></p>\n<p><img src=\"../json_data/MATH101/April_2013/MATH101April2013Q4.jpg\" alt=\"image\" /></p>\n<p>The region is rotated about the line <span class=\"math\">\\(y = -1\\)</span>. Express in terms of definite integrals the volume of the resulting solid. <em>Do not</em> evaluate the integrals. Also, it is not necessary to simplify them.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\n\\textbf{The graph below shows the region between\n$\\displaystyle y = 4+\\pi \\sin x$ and $\\displaystyle y = 4+2\\pi-2x$}\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2013/MATH101April2013Q4.jpg}\n\nThe region is rotated about the line $y = -1$. Express in terms of\ndefinite integrals the volume of the resulting solid. \\emph{Do not}\nevaluate the integrals. Also, it is not necessary to simplify them.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 4\u201312, justify your answers and '''show all your work'''. If\na box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these questions'''.\n\n'''The graph below shows the region between &lt;math> \\displaystyle y = 4+\\pi \\sin x&lt;/math> and &lt;math> \\displaystyle y = 4+2\\pi-2x&lt;/math>'''\n\n[[File:MATH101April2013Q4.jpg]]\n\nThe region is rotated about the line &lt;math> y = -1 &lt;/math>. Express in terms of definite integrals the volume of the resulting solid. ''Do not'' evaluate the integrals. Also, it is not necessary to simplify them.\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_04_(b)", 
+    "year": 2013
 }

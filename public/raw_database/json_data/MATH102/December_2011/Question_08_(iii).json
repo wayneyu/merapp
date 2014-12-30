@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_08_(iii)", 
-    "course": "MATH102", 
-    "statement": "You are driving down the highway when you see a sleeping moose. You\napply the brakes and carefully stop your car 20m away from the animal.\nWhile you are looking for your camera the moose wakes up. It instantly\ncharges toward your car at a constant speed of 8m/s. One second later,\nyou start backing away from the moose at a constant acceleration of\n2m/s\\textsuperscript{2}.\n\n\\textbf{(iii)} A few days later you are shopping for a new car. You\nwould like to purchase a faster car to avoid moose accidents. What is\nthe minimum acceleration \\emph{a} that your car would have needed to\navoid being caught by the moose in the previous scenario?", 
-    "year": 2011, 
-    "sols": [
-        "We consider the same problem as in part \\textbf{(i)}, but now we have a\ncar with acceleration \\emph{a}. We will set up the equation for the\ndistance between the moose and car and try to determine values of a such\nthat there is no time where the distance between the car and the moose\nis equal to 0.\n\nAs before, the position of the moose as a function of time, \\emph{m(t)},\nis given by:\n\n\\begin{align*}\\displaystyle m(t) = 12 - 8t.\\end{align*} The position of the car however is now\ngiven by\n\n\\begin{align*}\\displaystyle c(t) = -\\frac{a}{2}t^{2}.\\end{align*} ..and so the distance\nbetween the moose and the car is given by\n\n\\begin{align*}d(t) = c(t) - m(t) = -\\frac{a}{2}t^{2} + 8t - 12.\\end{align*} What we want to do\nnow is to choose a value for the acceleration of the car, \\emph{a}, such\nthat the equation d(T) = 0 has no (real) solution for \\emph{T}. (i.e:\nChoose a so that there is no time where the distance between car and\nmoose is 0).\n\n\\begin{align*}d(T) = -\\frac{a}{2}T^{2} + 8T - 12 = 0 \\quad \\rightarrow \\quad T = \\frac{-8 \\pm \\sqrt{64 - 24a}}{-a}\\end{align*}\nTo ensure that there are no real solutions, we must look for values of a\nsuch that \\emph{64 - 24a} is less than zero.\n\n\\begin{align*}64 - 24a < 0 \\quad \\rightarrow \\quad {\\color{blue}a >\\frac{8}{3}}\\end{align*}\nTherefore, we need a car that has acceleration greater than 8/3 to\nensure that the moose will not hit our car next time this exact\nsituation occurs.\n\n(Technical point: There is no minimum acceleration that our car should\nbe to avoid contact with the moose since we can choose any value of\n\\emph{a} \\textgreater{} 8/3 to avoid it, including \\emph{a} = 8/3 +\n0.00000...01)"
+    "answer_html": "<p><span class=\"math\">\\(64 - 24a &lt; 0 \\quad \\rightarrow \\quad {\\color{blue}a &gt;\\frac{8}{3}}\\)</span> Therefore, we need a car that has acceleration greater than 8/3 to ensure that the moose will not hit our car next time this exact situation occurs.</p>\n", 
+    "answer_latex": " $64 - 24a < 0 \\quad \\rightarrow \\quad {\\color{blue}a >\\frac{8}{3}}$ \nTherefore, we need a car that has acceleration greater than 8/3 to\nensure that the moose will not hit our car next time this exact\nsituation occurs.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Follow the approach from part <strong>(i)</strong>, but replace the acceleration 2m/s with the variable <em>a</em>. Then choose <em>a</em> such that there is no solution to the equation for the hitting time from <strong>(ii)</strong></p>\n"
+    ], 
+    "hints_latex": [
         "Follow the approach from part \\textbf{(i)}, but replace the acceleration\n2m/s with the variable \\emph{a}. Then choose \\emph{a} such that there is\nno solution to the equation for the hitting time from \\textbf{(ii)}"
-    ]
+    ], 
+    "hints_raw": [
+        "Follow the approach from part '''(i)''', but replace the acceleration 2m/s with the variable ''a''. Then choose ''a'' such that there is no solution to the equation for the hitting time from '''(ii)'''\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (iii)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We consider the same problem as in part <strong>(i)</strong>, but now we have a car with acceleration <em>a</em>. We will set up the equation for the distance between the moose and car and try to determine values of a such that there is no time where the distance between the car and the moose is equal to 0.</p>\n<p>As before, the position of the moose as a function of time, <em>m(t)</em>, is given by:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle m(t) = 12 - 8t.\\end{aligned}\\]</span></p>\n<p>The position of the car however is now given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle c(t) = -\\frac{a}{2}t^{2}.\\end{aligned}\\]</span></p>\n<p>Hence the distance between the moose and the car is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nd(t) = |c(t) - m(t)| = \\left|-\\frac{a}{2}t^{2} + 8t - 12\\right|.\\end{aligned}\\]</span></p>\n<p>What we want to do now is to choose a value for the acceleration of the car, <em>a</em>, such that the equation d(T) = 0 has no (real) solution for <em>T</em>. (i.e: Choose a so that there is no time where the distance between car and moose is 0).</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nd(T) = \\left|-\\frac{a}{2}T^{2} + 8T - 12\\right| = 0 \\quad \\rightarrow \\quad T = \\frac{-8 \\pm \\sqrt{64 - 24a}}{-a}\\end{aligned}\\]</span></p>\n<p>To ensure that there are no real solutions, we must look for values of a such that <em>64 - 24a</em> is less than zero.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n64 - 24a &lt; 0 \\quad \\rightarrow \\quad {\\color{blue}a &gt;\\frac{8}{3}}\\end{aligned}\\]</span></p>\n<p>Therefore, we need a car that has acceleration greater than 8/3 to ensure that the moose will not hit our car next time this exact situation occurs.</p>\n"
+    ], 
+    "sols_latex": [
+        "We consider the same problem as in part \\textbf{(i)}, but now we have a\ncar with acceleration \\emph{a}. We will set up the equation for the\ndistance between the moose and car and try to determine values of a such\nthat there is no time where the distance between the car and the moose\nis equal to 0.\n\nAs before, the position of the moose as a function of time, \\emph{m(t)},\nis given by:\n\n\\begin{align*}\n\\displaystyle m(t) = 12 - 8t.\n\\end{align*} The position of the car however is now\ngiven by\n\n\\begin{align*}\n\\displaystyle c(t) = -\\frac{a}{2}t^{2}.\n\\end{align*} Hence the distance between\nthe moose and the car is given by\n\n\\begin{align*}\nd(t) = |c(t) - m(t)| = \\left|-\\frac{a}{2}t^{2} + 8t - 12\\right|.\n\\end{align*}\nWhat we want to do now is to choose a value for the acceleration of the\ncar, \\emph{a}, such that the equation d(T) = 0 has no (real) solution\nfor \\emph{T}. (i.e: Choose a so that there is no time where the distance\nbetween car and moose is 0).\n\n\\begin{align*}\nd(T) = \\left|-\\frac{a}{2}T^{2} + 8T - 12\\right| = 0 \\quad \\rightarrow \\quad T = \\frac{-8 \\pm \\sqrt{64 - 24a}}{-a}\n\\end{align*}\nTo ensure that there are no real solutions, we must look for values of a\nsuch that \\emph{64 - 24a} is less than zero.\n\n\\begin{align*}\n64 - 24a < 0 \\quad \\rightarrow \\quad {\\color{blue}a >\\frac{8}{3}}\n\\end{align*}\nTherefore, we need a car that has acceleration greater than 8/3 to\nensure that the moose will not hit our car next time this exact\nsituation occurs."
+    ], 
+    "sols_raw": [
+        "We consider the same problem as in part '''(i)''', but now we have a car with acceleration ''a''. We will set up the equation for the distance between the moose and car and try to determine values of a such that there is no time where the distance between the car and the moose is equal to 0. \n\nAs before, the position of the moose as a function of time, ''m(t)'', is given by:\n:&lt;math>\n\\displaystyle m(t) = 12 - 8t.\n&lt;/math>\nThe position of the car however is now given by\n:&lt;math>\n\\displaystyle c(t) = -\\frac{a}{2}t^{2}.\n&lt;/math>\nHence the distance between the moose and the car is given by\n:&lt;math>\nd(t) = |c(t) - m(t)| = \\left|-\\frac{a}{2}t^{2} + 8t - 12\\right|.\n&lt;/math>\nWhat we want to do now is to choose a value for the acceleration of the car, ''a'', such that the equation d(T) = 0 has no (real) solution for ''T''. (i.e: Choose a so that there is no time where the distance between car and moose is 0).\n:&lt;math>\nd(T) = \\left|-\\frac{a}{2}T^{2} + 8T - 12\\right| = 0 \\quad \\rightarrow \\quad T = \\frac{-8 \\pm \\sqrt{64 - 24a}}{-a}\n&lt;/math>\nTo ensure that there are no real solutions, we must look for values of a such that ''64 - 24a'' is less than zero.\n:&lt;math>\n64 - 24a &lt; 0 \\quad \\rightarrow \\quad {\\color{blue}a > \\frac{8}{3}}\n&lt;/math>\nTherefore, we need a car that has acceleration greater than 8/3 to ensure that the moose will not hit our car next time this exact situation occurs.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>You are driving down the highway when you see a sleeping moose. You apply the brakes and carefully stop your car 20m away from the animal. While you are looking for your camera the moose wakes up. It instantly charges toward your car at a constant speed of 8m/s. One second later, you start backing away from the moose at a constant acceleration of 2m/s<sup>2</sup>.</p>\n<p><strong>(iii)</strong> A few days later you are shopping for a new car. You would like to purchase a faster car to avoid moose accidents. What is the minimum acceleration <em>a</em> that your car would have needed to avoid being caught by the moose in the previous scenario?</p>\n", 
+    "statement_latex": "You are driving down the highway when you see a sleeping moose. You\napply the brakes and carefully stop your car 20m away from the animal.\nWhile you are looking for your camera the moose wakes up. It instantly\ncharges toward your car at a constant speed of 8m/s. One second later,\nyou start backing away from the moose at a constant acceleration of\n2m/s\\textsuperscript{2}.\n\n\\textbf{(iii)} A few days later you are shopping for a new car. You\nwould like to purchase a faster car to avoid moose accidents. What is\nthe minimum acceleration \\emph{a} that your car would have needed to\navoid being caught by the moose in the previous scenario?", 
+    "statement_raw": "You are driving down the highway when you see a sleeping moose. You apply the brakes and carefully stop your car 20m away from the animal. While you are looking for your camera the moose wakes up. It instantly charges toward your car at a constant speed of 8m/s. One second later, you start backing away from the moose at a constant acceleration of 2m/s&lt;sup>2&lt;/sup>.\n\n'''(iii)''' A few days later you are shopping for a new car. You would like to purchase a faster car to avoid moose accidents. What is the minimum acceleration ''a'' that your car would have needed to avoid being caught by the moose in the previous scenario?\n", 
+    "term": "December", 
+    "topics": [
+        "Equations_of_motion"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_08_(iii)", 
+    "year": 2011
 }

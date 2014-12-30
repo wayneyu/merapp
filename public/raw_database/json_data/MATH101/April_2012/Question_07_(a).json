@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH101", 
-    "statement": "Let $I = \\int_{1}^{2} (1/x)\\, dx$. Write down the trapezoidal\napproximation \\emph{T}\\textsubscript{4} for \\emph{I}.\n\n\\emph{You do not need to simplify your answer.}", 
-    "year": 2012, 
-    "sols": [
-        "The formula for the trapezoidal approximation of the integral is as\nfollows:\n\n\\begin{align*}T_4 = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1)  + 2f(x_2) + 2f(x_3) + f(x_4))\\end{align*}\n\nThe \\emph{4} of $T_4$ means that our interval of integration has been\ndivided into four pieces, each of length \\emph{(b-a)/4=1/4}. So\n$\\Delta x = 1/4$. We also know that $x_0$ and $x_4$ are the endpoints of\nthe interval of integration. So we have\n\n\\begin{align*}\nx_0 &= 1 \\\\\nx_1&= 5/4 \\\\\nx_2 &= 6/4 \\\\\nx_3 &= 7/4 \\\\\nx_4 &= 2 \\end{align*}\n\nWe simply plug this all into the formula given above to get:\n\n\\begin{align*}T_4 = \\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(T_4=\\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\\)</span></p>\n", 
+    "answer_latex": " $T_4=\\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The general formula for the trapezoidal approximation <span class=\"math\">\\(T_n\\)</span> is given by:</p>\n<p><span class=\"math\">\\(T_n = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n))\\)</span></p>\n<p>What are <span class=\"math\">\\(x_0\\)</span> and <span class=\"math\">\\(x_n\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "The general formula for the trapezoidal approximation $T_n$ is given by:\n\n$T_n = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n))$\n\nWhat are $x_0$ and $x_n$?"
-    ]
+    ], 
+    "hints_raw": [
+        "The general formula for the trapezoidal approximation &lt;math>T_n&lt;/math> is given by: \n\n&lt;math>T_n = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n))&lt;/math>\n\nWhat are &lt;math>x_0&lt;/math> and &lt;math>x_n&lt;/math>?\n"
+    ], 
+    "num_votes": 6, 
+    "question": "7 (a)", 
+    "rating": 86, 
+    "sols_html": [
+        "<p>The formula for the trapezoidal approximation of the integral is as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_4 = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1)  + 2f(x_2) + 2f(x_3) + f(x_4))\\end{aligned}\\]</span></p>\n<p>The <em>4</em> of <span class=\"math\">\\(T_4\\)</span> means that our interval of integration has been divided into four pieces, each of length <em>(b-a)/4=1/4</em>. So <span class=\"math\">\\(\\Delta x = 1/4\\)</span>. We also know that <span class=\"math\">\\(x_0\\)</span> and <span class=\"math\">\\(x_4\\)</span> are the endpoints of the interval of integration. So we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_0 &amp;= 1 \\\\\nx_1&amp;= 5/4 \\\\\nx_2 &amp;= 6/4 \\\\\nx_3 &amp;= 7/4 \\\\\nx_4 &amp;= 2 \\end{aligned}\\]</span></p>\n<p>We simply plug this all into the formula given above to get:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_4 = \\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The formula for the trapezoidal approximation of the integral is as\nfollows:\n\n\\begin{align*}\nT_4 = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1)  + 2f(x_2) + 2f(x_3) + f(x_4))\n\\end{align*}\n\nThe \\emph{4} of $T_4$ means that our interval of integration has been\ndivided into four pieces, each of length \\emph{(b-a)/4=1/4}. So\n$\\Delta x = 1/4$. We also know that $x_0$ and $x_4$ are the endpoints of\nthe interval of integration. So we have\n\n\\begin{align*}\nx_0 &= 1 \\\\\nx_1&= 5/4 \\\\\nx_2 &= 6/4 \\\\\nx_3 &= 7/4 \\\\\nx_4 &= 2 \n\\end{align*}\n\nWe simply plug this all into the formula given above to get:\n\n\\begin{align*}\nT_4 = \\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The formula for the trapezoidal approximation of the integral is as follows: \n\n: &lt;math>T_4 = \\frac{\\Delta x}{2} (f(x_0) + 2f(x_1)  + 2f(x_2) + 2f(x_3) + f(x_4))&lt;/math>\n\nThe ''4'' of &lt;math>T_4&lt;/math> means that our interval of integration has been divided into four pieces, each of length ''(b-a)/4=1/4''.  So &lt;math>\\Delta x = 1/4&lt;/math>.  We also know that &lt;math>x_0&lt;/math> and &lt;math>x_4&lt;/math> are the endpoints of the interval of integration.  So we have\n\n&lt;math>\\begin{align}\nx_0 &amp;= 1 \\\\\nx_1&amp;= 5/4 \\\\\nx_2 &amp;= 6/4 \\\\\nx_3 &amp;= 7/4 \\\\\nx_4 &amp;= 2 \\\\\n\\end{align}&lt;/math>\n\nWe simply plug this all into the formula given above to get: \n\n:&lt;math> \nT_4 = \\frac18 \\left(\\frac1{1} + 2 \\frac1{5/4}  + 2 \\frac1{6/4} + 2 \\frac1{7/4} + \\frac1{2}) \\right)\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(I = \\int_{1}^{2} (1/x)\\, dx\\)</span>. Write down the trapezoidal approximation <em>T</em><sub>4</sub> for <em>I</em>.</p>\n<p><em>You do not need to simplify your answer.</em></p>\n", 
+    "statement_latex": "Let $I = \\int_{1}^{2} (1/x)\\, dx$. Write down the trapezoidal\napproximation \\emph{T}\\textsubscript{4} for \\emph{I}.\n\n\\emph{You do not need to simplify your answer.}", 
+    "statement_raw": "Let &lt;math> I = \\int_{1}^{2} (1/x)\\, dx &lt;/math>. Write down the trapezoidal approximation ''T''&lt;sub>4&lt;/sub> for ''I''.\n\n''You do not need to simplify your answer.''\n", 
+    "term": "April", 
+    "topics": [
+        "Trapezoidal_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_07_(a)", 
+    "year": 2012
 }

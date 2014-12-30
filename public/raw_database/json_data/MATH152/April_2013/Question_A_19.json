@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_A_19", 
+    "answer_html": "<p>Then <span class=\"math\">\\(Ax = b\\)</span> corresponds to the given problem.</p>\n", 
+    "answer_latex": "Then $Ax = b$ corresponds to the given problem.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH152", 
-    "statement": "The geometric problem of intersecting two planes $P_{1}$ and $P_{2}$\ngiven respectively by the equations\n\n\\begin{align*}x_{1} + 2x_{2} + 3x_{3} + 4 = 0 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} - 5=0\\end{align*}\n\ncan be written as a matrix equation $Ax = b$. Give possible choices of\n\\emph{A},\\emph{x} and \\emph{b}.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Make <em>x</em> just the vector of the variables. The coefficients of the variables go in the matrix <em>A</em>. In the original equations, put the constants on the right hand side, then put them into the vector <em>b</em>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Make \\emph{x} just the vector of the variables. The coefficients of the\nvariables go in the matrix \\emph{A}. In the original equations, put the\nconstants on the right hand side, then put them into the vector\n\\emph{b}."
+    ], 
+    "hints_raw": [
+        "Make ''x'' just the vector of the variables. The coefficients of the variables go in the matrix ''A''. In the original equations, put the constants on the right hand side, then put them into the vector ''b''.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "A 19", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>Rearranging the equations gives</p>\n<p><span class=\"math\">\\(x_{1} + 2x_{2} + 3x_{3} = -4 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} =5\\)</span></p>\n<p>So if we take</p>\n<p><span class=\"math\">\\(A = \\begin{bmatrix} 1 &amp; 2 &amp; 3 \\\\ -2 &amp; -3 &amp; -4 \\end{bmatrix} \\qquad\nx = \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ x_{3}\\end{bmatrix} \\qquad \nb = \\begin{bmatrix} -4 \\\\ 5\\end{bmatrix}\\)</span></p>\n<p>Then <span class=\"math\">\\(Ax = b\\)</span> corresponds to the given problem.</p>\n"
+    ], 
+    "sols_latex": [
         "Rearranging the equations gives\n\n$x_{1} + 2x_{2} + 3x_{3} = -4 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} =5$\n\nSo if we take\n\n$A = \\begin{bmatrix} 1 & 2 & 3 \\\\ -2 & -3 & -4 \\end{bmatrix} \\qquad\nx = \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ x_{3}\\end{bmatrix} \\qquad \nb = \\begin{bmatrix} -4 \\\\ 5\\end{bmatrix}$\n\nThen $Ax = b$ corresponds to the given problem."
     ], 
-    "hints": [
-        "Make \\emph{x} just the vector of the variables. The coefficients of the\nvariables go in the matrix \\emph{A}. In the original equations, put the\nconstants on the right hand side, then put them into the vector\n\\emph{b}."
-    ]
+    "sols_raw": [
+        "Rearranging the equations gives\n\n&lt;math> \nx_{1} + 2x_{2} + 3x_{3} = -4 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} =5\n&lt;/math>\n\nSo if we take\n\n&lt;math>\nA = \\begin{bmatrix} 1 &amp; 2 &amp; 3 \\\\ -2 &amp; -3 &amp; -4 \\end{bmatrix} \\qquad\nx = \\begin{bmatrix} x_{1} \\\\ x_{2} \\\\ x_{3}\\end{bmatrix} \\qquad \nb = \\begin{bmatrix} -4 \\\\ 5\\end{bmatrix}\n&lt;/math>\n\nThen &lt;math> Ax = b &lt;/math> corresponds to the given problem.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>The geometric problem of intersecting two planes <span class=\"math\">\\(P_{1}\\)</span> and <span class=\"math\">\\(P_{2}\\)</span> given respectively by the equations</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{1} + 2x_{2} + 3x_{3} + 4 = 0 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} - 5=0\\end{aligned}\\]</span></p>\n<p>can be written as a matrix equation <span class=\"math\">\\(Ax = b\\)</span>. Give possible choices of <em>A</em>,<em>x</em> and <em>b</em>.</p>\n", 
+    "statement_latex": "The geometric problem of intersecting two planes $P_{1}$ and $P_{2}$\ngiven respectively by the equations\n\n\\begin{align*}\nx_{1} + 2x_{2} + 3x_{3} + 4 = 0 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} - 5=0\n\\end{align*}\n\ncan be written as a matrix equation $Ax = b$. Give possible choices of\n\\emph{A},\\emph{x} and \\emph{b}.", 
+    "statement_raw": "The geometric problem of intersecting two planes &lt;math> P_{1} &lt;/math> and &lt;math> P_{2} &lt;/math> given respectively by the equations\n\n:&lt;math> \nx_{1} + 2x_{2} + 3x_{3} + 4 = 0 \\qquad \\text{and} \\qquad -2x_{1} -3x_{2} -4x_{3} - 5=0\n&lt;/math>\n\ncan be written as a matrix equation &lt;math> Ax = b &lt;/math>. Give possible choices of ''A'',''x'' and ''b''.\n", 
+    "term": "April", 
+    "topics": [
+        "System_of_linear_equations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_19", 
+    "year": 2013
 }

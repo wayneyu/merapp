@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nLet \\emph{T}\\textsubscript{2}(\\emph{x}) be the second degree Taylor\npolynomial about \\emph{a} = 8 for\n\n\\begin{align*}f(x)= \\sqrt[3]{x}.\\end{align*}\n\nFind \\emph{T}\\textsubscript{2}(\\emph{x}) and simplify your answer.", 
-    "year": 2011, 
-    "sols": [
-        "The general forumla for a second degree Taylor polynomial is:\n\n\\begin{align*}T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\end{align*} To find this for\n$f(x)$, we need to first find $f'(x)$ and\n$f''({x})$:\n\n\\begin{align*}f'(x)=(\\sqrt[3]{x})'=(x^{1/3})'=\\frac{1}{3}x^{-2/3}\\end{align*}\n\n\\begin{align*}f''(x)=(\\frac{1}{3}x^{-2/3})'=-\\frac{2}{9}x^{-5/3}\\end{align*} And now we can\nevaluate at \\emph{a} = 8 to get\n\n\\begin{align*}f(8)=8^{1/3}=2\\end{align*}\n\n\\begin{align*}f'(8)=\\frac{1}{3}8^{-2/3}=\\frac{1}{3} \\cdot \\frac{1}{4} = \\frac{1}{12}\\end{align*}\n\n\\begin{align*}f''(8)=-\\frac{2}{9}8^{-5/3} = -\\frac{2}{9} \\cdot \\frac{1}{2^5} = -\\frac{2}{9 \\cdot 32} = - \\frac{1}{144}\\end{align*}\n\nWe can now plug these in to the equation for the second Taylor\npolynomial and obtain:\n\n\\begin{align*}T_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2\\end{align*} (This is\nsimplified enough for the purpose of Taylor polynomials)."
+    "answer_html": "<p><span class=\"math\">\\(T_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2\\)</span> (This is simplified enough for the purpose of Taylor polynomials).</p>\n", 
+    "answer_latex": " $T_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2$  (This is\nsimplified enough for the purpose of Taylor polynomials).", 
+    "contributors": [
+        "Konradbe", 
+        "YihanWu", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Recall that the general forumla for a second degree Taylor polynomial\nis:\n\n\\begin{align*}T_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\\end{align*}"
-    ]
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall that the general forumla for a second degree Taylor polynomial is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_2(x)=f(a)+f&#39;(a)(x-a)+\\frac{f&#39;&#39;(a)}{2}(x-a)^2\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that the general forumla for a second degree Taylor polynomial\nis:\n\n\\begin{align*}\nT_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Recall that the general forumla for a second degree Taylor polynomial is:\n:&lt;math>\nT_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\n&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "4 (a)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>The general forumla for a second degree Taylor polynomial is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_2(x)=f(a)+f&#39;(a)(x-a)+\\frac{f&#39;&#39;(a)}{2}(x-a)^2\\end{aligned}\\]</span></p>\n<p>To find this for <span class=\"math\">\\(f(x)\\)</span>, we need to first find <span class=\"math\">\\(f&#39;(x)\\)</span> and <span class=\"math\">\\(f&#39;&#39;({x})\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x)=(\\sqrt[3]{x})&#39;=(x^{1/3})&#39;=\\frac{1}{3}x^{-2/3}\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x)=(\\frac{1}{3}x^{-2/3})&#39;=-\\frac{2}{9}x^{-5/3}\\end{aligned}\\]</span></p>\n<p>And now we can evaluate at <em>a</em> = 8 to get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(8)=8^{1/3}=2\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(8)=\\frac{1}{3}8^{-2/3}=\\frac{1}{3} \\cdot \\frac{1}{4} = \\frac{1}{12}\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(8)=-\\frac{2}{9}8^{-5/3} = -\\frac{2}{9} \\cdot \\frac{1}{2^5} = -\\frac{2}{9 \\cdot 32} = - \\frac{1}{144}\\end{aligned}\\]</span></p>\n<p>We can now plug these in to the equation for the second Taylor polynomial and obtain:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2\\end{aligned}\\]</span></p>\n<p>(This is simplified enough for the purpose of Taylor polynomials).</p>\n"
+    ], 
+    "sols_latex": [
+        "The general forumla for a second degree Taylor polynomial is:\n\n\\begin{align*}\nT_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\n\\end{align*} To find this for\n$f(x)$, we need to first find $f'(x)$ and\n$f''({x})$:\n\n\\begin{align*}\nf'(x)=(\\sqrt[3]{x})'=(x^{1/3})'=\\frac{1}{3}x^{-2/3}\n\\end{align*}\n\n\\begin{align*}\nf''(x)=(\\frac{1}{3}x^{-2/3})'=-\\frac{2}{9}x^{-5/3}\n\\end{align*} And now we can\nevaluate at \\emph{a} = 8 to get\n\n\\begin{align*}\nf(8)=8^{1/3}=2\n\\end{align*}\n\n\\begin{align*}\nf'(8)=\\frac{1}{3}8^{-2/3}=\\frac{1}{3} \\cdot \\frac{1}{4} = \\frac{1}{12}\n\\end{align*}\n\n\\begin{align*}\nf''(8)=-\\frac{2}{9}8^{-5/3} = -\\frac{2}{9} \\cdot \\frac{1}{2^5} = -\\frac{2}{9 \\cdot 32} = - \\frac{1}{144}\n\\end{align*}\n\nWe can now plug these in to the equation for the second Taylor\npolynomial and obtain:\n\n\\begin{align*}\nT_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2\n\\end{align*} (This is\nsimplified enough for the purpose of Taylor polynomials)."
+    ], 
+    "sols_raw": [
+        "The general forumla for a second degree Taylor polynomial is:\n:&lt;math>\nT_2(x)=f(a)+f'(a)(x-a)+\\frac{f''(a)}{2}(x-a)^2\n&lt;/math>\nTo find this for &amp;fnof;(''x''), we need to first find &amp;fnof;'(''x'') and &amp;fnof;\u2033(''x''):\n:&lt;math>\nf'(x)=(\\sqrt[3]{x})'=(x^{1/3})'=\\frac{1}{3}x^{-2/3}\n&lt;/math>\n:&lt;math>\nf''(x)=(\\frac{1}{3}x^{-2/3})'=-\\frac{2}{9}x^{-5/3}\n&lt;/math>\nAnd now we can evaluate at ''a'' = 8 to get\n:&lt;math>\nf(8)=8^{1/3}=2\n&lt;/math>\n:&lt;math>\nf'(8)=\\frac{1}{3}8^{-2/3}=\\frac{1}{3} \\cdot \\frac{1}{4} = \\frac{1}{12}\n&lt;/math>\n:&lt;math>\nf''(8)=-\\frac{2}{9}8^{-5/3} = -\\frac{2}{9} \\cdot \\frac{1}{2^5} = -\\frac{2}{9 \\cdot 32} = - \\frac{1}{144}\n&lt;/math>\n\nWe can now plug these in to the equation for the second Taylor polynomial and obtain:\n:&lt;math>\nT_2(x)=2+\\frac{1}{12}(x-8) - \\frac{1}{288}(x-8)^2\n&lt;/math>\n(This is simplified enough for the purpose of Taylor polynomials).\n"
+    ], 
+    "solvers": [
+        "Alfred"
+    ], 
+    "statement_html": "<p><em><strong>Full-Solution Problems.</strong> In questions 2-8, justify your answers and <strong>show all your work.</strong> If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.</em></p>\n<p>Let <em>T</em><sub>2</sub>(<em>x</em>) be the second degree Taylor polynomial about <em>a</em> = 8 for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)= \\sqrt[3]{x}.\\end{aligned}\\]</span></p>\n<p>Find <em>T</em><sub>2</sub>(<em>x</em>) and simplify your answer.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Full-Solution Problems.} In questions 2-8, justify your\nanswers and \\textbf{show all your work.} If a box is provided, write\nyour final answer there. Simplification of answers is not required\nunless explicitly stated.}\n\nLet \\emph{T}\\textsubscript{2}(\\emph{x}) be the second degree Taylor\npolynomial about \\emph{a} = 8 for\n\n\\begin{align*}\nf(x)= \\sqrt[3]{x}.\n\\end{align*}\n\nFind \\emph{T}\\textsubscript{2}(\\emph{x}) and simplify your answer.", 
+    "statement_raw": "'''''Full-Solution Problems.''' In questions 2-8, justify your answers and '''show all your work.''' If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly stated.''\n\nLet ''T''&lt;sub>2&lt;/sub>(''x'')  be the second degree Taylor polynomial about ''a'' = 8 for\n:&lt;math> f(x)= \\sqrt[3]{x}. &lt;/math>\n\nFind ''T''&lt;sub>2&lt;/sub>(''x'') and simplify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_04_(a)", 
+    "year": 2011
 }

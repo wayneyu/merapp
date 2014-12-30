@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_05", 
-    "course": "MATH100", 
-    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nCobblestone Engineering has been contracted to build a bridge and a\npathway from Calculus City located at point A on the shoreline of a 6km\nwide river that runs west to east, to a power plant at point B on the\nopposite shoreline, 8km to the east. It costs 40 dollars per km to build\na bridge over the river and 20 dollars per km to build a pathway along a\nshoreline. How should the company proceed in order to minimize the total\ncost? Be sure to justify that the total cost is indeed a minimum.", 
-    "year": 2010, 
-    "sols": [
-        "According to the picture,\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{BridgeMath101Dec2010.jpg}\n\\caption{BridgeMath101Dec2010.jpg}\n\\end{figure}\n\nThus, the cost equation is\n\n$\\displaystyle C = 40d + 20(8-x)$\n\nTo get this in terms of one variable, note by the Pythagorean theorem,\nwe have\n\n$\\displaystyle d^{2} = 6^{2} + x^{2}$\n\nHence, we have\n\n$\\displaystyle C = 40\\sqrt{36+x^{2}} + 20(8-x)$\n\nDifferentiating yields\n\n\\begin{align*}\nC' &= \\frac{40(2x)}{2\\sqrt{36+x^{2}}} -20\\\\\n&= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\end{align*}\n\nSetting the derivative to 0 yields\n\n\\begin{align*}\n0 &= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\\\\n0 &= 40x - 20\\sqrt{36+x^{2}} \\\\\n\\sqrt{36+x^{2}} &= 2x  \\\\\n36+x^{2} &= 4x^{2}  \\\\\n36 &= 3x^{2}  \\\\\n12 &= x^{2}  \\\\\n\\pm 2\\sqrt{3} &= x  \\end{align*}\n\nNotice that the negative answer is inadmissable since it corresponds to\na side length (and \\emph{x} should be positive to minimize cost). Now,\nthe endpoints are \\emph{x} = 0 and \\emph{x} = 8. Then,\n\n$\\displaystyle C(0) = 40\\sqrt{36+0^{2}} + 20(8-0) = 240 + 160 = 400$\n\n\\begin{align*}\nC(2\\sqrt{3}) &= 40\\sqrt{36+(2\\sqrt{3})^{2}} + 20(8-2\\sqrt{3}) \\\\\n&= 40\\sqrt{36 + 12} + 160 - 40\\sqrt{3} \\\\\n&= 160\\sqrt{3} + 160 - 40\\sqrt{3} \\\\\n&= 120\\sqrt{3} + 160 < 400 \\end{align*}\n\n$\\displaystyle C(8) = 40\\sqrt{36+8^{2}} + 20(8-8) = 40\\sqrt{100} = 400$\n\nand so the minimum occurs at $\\displaystyle x = 2\\sqrt{3}$"
+    "answer_html": "<p>and so the minimum occurs at <span class=\"math\">\\(\\displaystyle x = 2\\sqrt{3}\\)</span></p>\n", 
+    "answer_latex": "and so the minimum occurs at $\\displaystyle x = 2\\sqrt{3}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try to draw a picture first of the situation. Draw a line from point A intersecting the opposite shore line at a point P. Call this distance <em>d</em> and call the distance from the opposite site of A to P the value <em>x</em>.</p>\n", 
+        "<p>Write an equation for the total cost, then get it down to one variable.</p>\n"
+    ], 
+    "hints_latex": [
         "Try to draw a picture first of the situation. Draw a line from point A\nintersecting the opposite shore line at a point P. Call this distance\n\\emph{d} and call the distance from the opposite site of A to P the\nvalue \\emph{x}.", 
         "Write an equation for the total cost, then get it down to one variable."
-    ]
+    ], 
+    "hints_raw": [
+        "Try to draw a picture first of the situation. Draw a line from point A intersecting the opposite shore line at a point P. Call this distance ''d'' and call the distance from the opposite site of A to P the value ''x''.\n", 
+        "Write an equation for the total cost, then get it down to one variable.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "5", 
+    "rating": 78, 
+    "sols_html": [
+        "<p>According to the picture,</p>\n<p><img src=\"../json_data/MATH100/December_2010/BridgeMath101Dec2010.jpg\" alt=\"image\" /></p>\n<p>Thus, the cost equation is</p>\n<p><span class=\"math\">\\(\\displaystyle C = 40d + 20(8-x)\\)</span></p>\n<p>To get this in terms of one variable, note by the Pythagorean theorem, we have</p>\n<p><span class=\"math\">\\(\\displaystyle d^{2} = 6^{2} + x^{2}\\)</span></p>\n<p>Hence, we have</p>\n<p><span class=\"math\">\\(\\displaystyle C = 40\\sqrt{36+x^{2}} + 20(8-x)\\)</span></p>\n<p>Differentiating yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nC&#39; &amp;= \\frac{40(2x)}{2\\sqrt{36+x^{2}}} -20\\\\\n&amp;= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\end{aligned}\\]</span></p>\n<p>Setting the derivative to 0 yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 &amp;= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\\\\n0 &amp;= 40x - 20\\sqrt{36+x^{2}} \\\\\n\\sqrt{36+x^{2}} &amp;= 2x  \\\\\n36+x^{2} &amp;= 4x^{2}  \\\\\n36 &amp;= 3x^{2}  \\\\\n12 &amp;= x^{2}  \\\\\n\\pm 2\\sqrt{3} &amp;= x  \\end{aligned}\\]</span></p>\n<p>Notice that the negative answer is inadmissable since it corresponds to a side length (and <em>x</em> should be positive to minimize cost). Now, the endpoints are <em>x</em> = 0 and <em>x</em> = 8. Then,</p>\n<p><span class=\"math\">\\(\\displaystyle C(0) = 40\\sqrt{36+0^{2}} + 20(8-0) = 240 + 160 = 400\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nC(2\\sqrt{3}) &amp;= 40\\sqrt{36+(2\\sqrt{3})^{2}} + 20(8-2\\sqrt{3}) \\\\\n&amp;= 40\\sqrt{36 + 12} + 160 - 40\\sqrt{3} \\\\\n&amp;= 160\\sqrt{3} + 160 - 40\\sqrt{3} \\\\\n&amp;= 120\\sqrt{3} + 160 &lt; 400 \\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\(\\displaystyle C(8) = 40\\sqrt{36+8^{2}} + 20(8-8) = 40\\sqrt{100} = 400\\)</span></p>\n<p>and so the minimum occurs at <span class=\"math\">\\(\\displaystyle x = 2\\sqrt{3}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "According to the picture,\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH100/December_2010/BridgeMath101Dec2010.jpg}\n\nThus, the cost equation is\n\n$\\displaystyle C = 40d + 20(8-x)$\n\nTo get this in terms of one variable, note by the Pythagorean theorem,\nwe have\n\n$\\displaystyle d^{2} = 6^{2} + x^{2}$\n\nHence, we have\n\n$\\displaystyle C = 40\\sqrt{36+x^{2}} + 20(8-x)$\n\nDifferentiating yields\n\n\\begin{align*}\nC' &= \\frac{40(2x)}{2\\sqrt{36+x^{2}}} -20\\\\\n&= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\n\\end{align*}\n\nSetting the derivative to 0 yields\n\n\\begin{align*}\n0 &= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\\\\n0 &= 40x - 20\\sqrt{36+x^{2}} \\\\\n\\sqrt{36+x^{2}} &= 2x  \\\\\n36+x^{2} &= 4x^{2}  \\\\\n36 &= 3x^{2}  \\\\\n12 &= x^{2}  \\\\\n\\pm 2\\sqrt{3} &= x  \n\\end{align*}\n\nNotice that the negative answer is inadmissable since it corresponds to\na side length (and \\emph{x} should be positive to minimize cost). Now,\nthe endpoints are \\emph{x} = 0 and \\emph{x} = 8. Then,\n\n$\\displaystyle C(0) = 40\\sqrt{36+0^{2}} + 20(8-0) = 240 + 160 = 400$\n\n\\begin{align*}\nC(2\\sqrt{3}) &= 40\\sqrt{36+(2\\sqrt{3})^{2}} + 20(8-2\\sqrt{3}) \\\\\n&= 40\\sqrt{36 + 12} + 160 - 40\\sqrt{3} \\\\\n&= 160\\sqrt{3} + 160 - 40\\sqrt{3} \\\\\n&= 120\\sqrt{3} + 160 < 400 \n\\end{align*}\n\n$\\displaystyle C(8) = 40\\sqrt{36+8^{2}} + 20(8-8) = 40\\sqrt{100} = 400$\n\nand so the minimum occurs at $\\displaystyle x = 2\\sqrt{3}$"
+    ], 
+    "sols_raw": [
+        "According to the picture,\n\n[[File:BridgeMath101Dec2010.jpg|400px]]\n\nThus, the cost equation is\n\n&lt;math>\n\\displaystyle\nC = 40d + 20(8-x)\n&lt;/math>\n\nTo get this in terms of one variable, note by the Pythagorean theorem, we have\n\n&lt;math>\n\\displaystyle\nd^{2} = 6^{2} + x^{2}\n&lt;/math>\n\nHence, we have\n\n&lt;math>\n\\displaystyle\nC = 40\\sqrt{36+x^{2}} + 20(8-x)\n&lt;/math>\n\nDifferentiating yields\n\n&lt;math>\n\\begin{align}\nC' &amp;= \\frac{40(2x)}{2\\sqrt{36+x^{2}}} -20\\\\\n&amp;= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\n\\end{align}\n&lt;/math>\n\nSetting the derivative to 0 yields\n\n&lt;math>\n\\begin{align}\n0 &amp;= \\frac{40x - 20\\sqrt{36+x^{2}}}{\\sqrt{36 + x^{2}}}\\\\\n0 &amp;= 40x - 20\\sqrt{36+x^{2}} \\\\\n\\sqrt{36+x^{2}} &amp;= 2x  \\\\\n36+x^{2} &amp;= 4x^{2}  \\\\\n36 &amp;= 3x^{2}  \\\\\n12 &amp;= x^{2}  \\\\\n\\pm 2\\sqrt{3} &amp;= x  \n\\end{align}\n&lt;/math>\n\nNotice that the negative answer is inadmissable since it corresponds to a side length (and ''x'' should be positive to minimize cost). Now, the endpoints are ''x'' = 0 and ''x'' = 8. Then,\n\n&lt;math>\n\\displaystyle\nC(0) = 40\\sqrt{36+0^{2}} + 20(8-0) = 240 + 160 = 400\n&lt;/math>\n\n&lt;math>\n\\begin{align}\nC(2\\sqrt{3}) &amp;= 40\\sqrt{36+(2\\sqrt{3})^{2}} + 20(8-2\\sqrt{3}) \\\\\n&amp;= 40\\sqrt{36 + 12} + 160 - 40\\sqrt{3} \\\\\n&amp;= 160\\sqrt{3} + 160 - 40\\sqrt{3} \\\\\n&amp;= 120\\sqrt{3} + 160 &lt; 400 \n\\end{align}\n&lt;/math>\n\n&lt;math>\n\\displaystyle\nC(8) = 40\\sqrt{36+8^{2}} + 20(8-8) = 40\\sqrt{100} = 400\n&lt;/math>\n\nand so the minimum occurs at &lt;math> \\displaystyle x = 2\\sqrt{3} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.</p>\n<p>Cobblestone Engineering has been contracted to build a bridge and a pathway from Calculus City located at point A on the shoreline of a 6km wide river that runs west to east, to a power plant at point B on the opposite shoreline, 8km to the east. It costs 40 dollars per km to build a bridge over the river and 20 dollars per km to build a pathway along a shoreline. How should the company proceed in order to minimize the total cost? Be sure to justify that the total cost is indeed a minimum.</p>\n", 
+    "statement_latex": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nCobblestone Engineering has been contracted to build a bridge and a\npathway from Calculus City located at point A on the shoreline of a 6km\nwide river that runs west to east, to a power plant at point B on the\nopposite shoreline, 8km to the east. It costs 40 dollars per km to build\na bridge over the river and 20 dollars per km to build a pathway along a\nshoreline. How should the company proceed in order to minimize the total\ncost? Be sure to justify that the total cost is indeed a minimum.", 
+    "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nCobblestone Engineering has been contracted to build a bridge and a pathway from Calculus City located at point A on the shoreline of a 6km wide river that runs west to east, to a power plant at point B on the opposite shoreline, 8km to the east. It costs 40 dollars per km to build a bridge over the river and 20 dollars per km to build a pathway along a shoreline. How should the company proceed in order to minimize the total cost? Be sure to justify that the total cost is indeed a minimum.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_05", 
+    "year": 2010
 }

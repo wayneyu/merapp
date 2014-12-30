@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(k)", 
-    "course": "MATH105", 
-    "statement": "Suppose that money is deposited steadily into a savings account at the\nrate of \\$3000 per year. Determine the balance at the end of 5 years if\nthe account pays 6\\% interest compounded continuously.", 
-    "year": 2010, 
-    "sols": [
-        "The instantaneous rate of change of capital has two components:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  We continuously add money at a rate of \\$3,000 per year;\n\\item\n  We earn 6\\% interest compounded continuously.\n\\end{itemize}\n\nIf we denote by \\emph{A(t)} the balance of the account at time \\emph{t},\nthen we can write the differential equation\n\n\\begin{align*}\n\\frac{dA}{dt} &= 3000 + 6%\\,A(t) \\\\\n&= 3000 + 0.06\\,A(t)\\end{align*}\n\nWe solve this equation using separation of variables:\n\n\\begin{align*}\\int \\frac{dA}{3000+0.06A} = \\int\\,dt\\end{align*}\n\nSolving both sides separately yields\n\n\\begin{align*}\\frac1{0.06} \\ln|3000+0.06A| + C_1 = t + C_2\\end{align*}\n\nSince \\emph{A} is positive, as the amount of money in the account, we\ncan drop the absolute value sign. This yields\n\n\\begin{align*}\\displaystyle \\ln(3000+0.06A) = 0.06t + C_3\\end{align*}\n\nor, equivalently\n\n\\begin{align*}3000 + 0.06A = e^{0.06t + C_3} = e^{0.06t}e^{C_3} = C_4 e^{0.06t}.\\end{align*}\n\n\\emph{C\\textsubscript{4}} is another arbitrary, but positive constant.\nHence we obtain for \\emph{A(t)}:\n\n\\begin{align*}A(t) = \\frac1{0.06}\\left(C_4e^{0.06t}-3000\\right).\\end{align*}\n\nNow it's time to think about the initial condition. Since the account\ndoes not start with any balance initially, we know that \\emph{A(0) = 0}.\nThis yields for \\emph{C\\textsubscript{4}} that\n\n\\begin{align*}0 = \\frac1{0.06}\\left(C_4e^{0}-3000\\right), \\quad \\text{which implies} \\quad C_4 = 3000.\\end{align*}\n\nWith this we finally find the expression for the balance in dollars at\n\\emph{t} years:\n\n\\begin{align*}A(t) = \\frac{3000}{0.06}\\left(e^{0.06t}-1\\right).\\end{align*}\n\nThis implies that at \\emph{t = 5} years the balance is\n\n\\begin{align*}A(5) = \\frac{3000}{0.06}\\left(e^{0.06\\cdot 5}-1\\right) = 17 492.94\\end{align*}\n\n\\emph{Reality check:} Without interest we would expect to see \\emph{5 x\n3000 = 15 000} dollars in the account. The amount with interest should\nbe in the same order of magnitude and a little larger."
+    "answer_html": "<p><em>Reality check:</em> Without interest we would expect to see <em>5 x 3000 = 15 000</em> dollars in the account.The amount with interest should be in the same order of magnitude and a little larger.</p>\n", 
+    "answer_latex": "\\emph{Reality check:} Without interest we would expect to see \\emph{5 x\n3000 = 15 000} dollars in the account.The amount with interest should\nbe in the same order of magnitude and a little larger.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ErinMoulding"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Can you describe the instantaneous rate of change of capital as a differential equation?</p>\n"
+    ], 
+    "hints_latex": [
         "Can you describe the instantaneous rate of change of capital as a\ndifferential equation?"
-    ]
+    ], 
+    "hints_raw": [
+        "Can you describe the instantaneous rate of change of capital as a differential equation?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (k)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The instantaneous rate of change of capital has two components:</p>\n<ul>\n<li><p>We continuously add money at a rate of \\$3,000 per year;</p></li>\n<li><p>We earn 6% interest compounded continuously.</p></li>\n</ul>\n<p>If we denote by <em>A(t)</em> the balance of the account at time <em>t</em>, then we can write the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dA}{dt} &amp;= 3000 + 6&amp;= 3000 + 0.06\\,A(t)\\end{aligned}\\]</span></p>\n<p>We solve this equation using separation of variables:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{dA}{3000+0.06A} = \\int\\,dt\\end{aligned}\\]</span></p>\n<p>Solving both sides separately yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac1{0.06} \\ln|3000+0.06A| + C_1 = t + C_2\\end{aligned}\\]</span></p>\n<p>Since <em>A</em> is positive, as the amount of money in the account, we can drop the absolute value sign. This yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\ln(3000+0.06A) = 0.06t + C_3\\end{aligned}\\]</span></p>\n<p>or, equivalently</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n3000 + 0.06A = e^{0.06t + C_3} = e^{0.06t}e^{C_3} = C_4 e^{0.06t}.\\end{aligned}\\]</span></p>\n<p><em>C<sub>4</sub></em> is another arbitrary, but positive constant. Hence we obtain for <em>A(t)</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA(t) = \\frac1{0.06}\\left(C_4e^{0.06t}-3000\\right).\\end{aligned}\\]</span></p>\n<p>Now it&#8217;s time to think about the initial condition. Since the account does not start with any balance initially, we know that <em>A(0) = 0</em>. This yields for <em>C<sub>4</sub></em> that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 = \\frac1{0.06}\\left(C_4e^{0}-3000\\right), \\quad \\text{which implies} \\quad C_4 = 3000.\\end{aligned}\\]</span></p>\n<p>With this we finally find the expression for the balance in dollars at <em>t</em> years:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA(t) = \\frac{3000}{0.06}\\left(e^{0.06t}-1\\right).\\end{aligned}\\]</span></p>\n<p>This implies that at <em>t = 5</em> years the balance is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA(5) = \\frac{3000}{0.06}\\left(e^{0.06\\cdot 5}-1\\right) = 17 492.94\\end{aligned}\\]</span></p>\n<p><em>Reality check:</em> Without interest we would expect to see <em>5 x 3000 = 15 000</em> dollars in the account. The amount with interest should be in the same order of magnitude and a little larger.</p>\n"
+    ], 
+    "sols_latex": [
+        "The instantaneous rate of change of capital has two components:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  We continuously add money at a rate of \\textbackslash{}\\$3,000 per\n  year;\n\\item\n  We earn 6\\% interest compounded continuously.\n\\end{itemize}\n\nIf we denote by \\emph{A(t)} the balance of the account at time \\emph{t},\nthen we can write the differential equation\n\n\\begin{align*}\n\\frac{dA}{dt} &= 3000 + 6%\\,A(t) \\\\\n&= 3000 + 0.06\\,A(t)\n\\end{align*}\n\nWe solve this equation using separation of variables:\n\n\\begin{align*}\n\\int \\frac{dA}{3000+0.06A} = \\int\\,dt\n\\end{align*}\n\nSolving both sides separately yields\n\n\\begin{align*}\n\\frac1{0.06} \\ln|3000+0.06A| + C_1 = t + C_2\n\\end{align*}\n\nSince \\emph{A} is positive, as the amount of money in the account, we\ncan drop the absolute value sign. This yields\n\n\\begin{align*}\n\\displaystyle \\ln(3000+0.06A) = 0.06t + C_3\n\\end{align*}\n\nor, equivalently\n\n\\begin{align*}\n3000 + 0.06A = e^{0.06t + C_3} = e^{0.06t}e^{C_3} = C_4 e^{0.06t}.\n\\end{align*}\n\n\\emph{C\\textsubscript{4}} is another arbitrary, but positive constant.\nHence we obtain for \\emph{A(t)}:\n\n\\begin{align*}\nA(t) = \\frac1{0.06}\\left(C_4e^{0.06t}-3000\\right).\n\\end{align*}\n\nNow it's time to think about the initial condition. Since the account\ndoes not start with any balance initially, we know that \\emph{A(0) = 0}.\nThis yields for \\emph{C\\textsubscript{4}} that\n\n\\begin{align*}\n0 = \\frac1{0.06}\\left(C_4e^{0}-3000\\right), \\quad \\text{which implies} \\quad C_4 = 3000.\n\\end{align*}\n\nWith this we finally find the expression for the balance in dollars at\n\\emph{t} years:\n\n\\begin{align*}\nA(t) = \\frac{3000}{0.06}\\left(e^{0.06t}-1\\right).\n\\end{align*}\n\nThis implies that at \\emph{t = 5} years the balance is\n\n\\begin{align*}\nA(5) = \\frac{3000}{0.06}\\left(e^{0.06\\cdot 5}-1\\right) = 17 492.94\n\\end{align*}\n\n\\emph{Reality check:} Without interest we would expect to see \\emph{5 x\n3000 = 15 000} dollars in the account. The amount with interest should\nbe in the same order of magnitude and a little larger."
+    ], 
+    "sols_raw": [
+        "The instantaneous rate of change of capital has two components:\n* We continuously add money at a rate of $3,000 per year;\n* We earn 6% interest compounded continuously.\nIf we denote by ''A(t)'' the balance of the account at time ''t'', then we can write the differential equation\n:&lt;math> \\begin{align}\n\\frac{dA}{dt} &amp;= 3000 + 6%\\,A(t) \\\\\n&amp;= 3000 + 0.06\\,A(t)\n\\end{align}\n&lt;/math>\n\nWe solve this equation using separation of variables:\n\n:&lt;math> \\int \\frac{dA}{3000+0.06A} = \\int\\,dt &lt;/math>\n\nSolving both sides separately yields\n\n:&lt;math> \\frac1{0.06} \\ln|3000+0.06A| + C_1 = t + C_2 &lt;/math>\n\nSince ''A'' is positive, as the amount of money in the account, we can drop the absolute value sign. This yields\n\n:&lt;math> \\displaystyle \\ln(3000+0.06A) = 0.06t + C_3 &lt;/math>\n\nor, equivalently \n\n:&lt;math> 3000 + 0.06A = e^{0.06t + C_3} = e^{0.06t}e^{C_3} = C_4 e^{0.06t}. &lt;/math>\n\n''C&lt;sub>4&lt;/sub>'' is another arbitrary, but positive constant. Hence we obtain for ''A(t)'':\n\n:&lt;math> A(t) = \\frac1{0.06}\\left(C_4e^{0.06t}-3000\\right). &lt;/math>\n\nNow it's time to think about the initial condition. Since the account does not start with any balance initially, we know that ''A(0) = 0''. This yields for ''C&lt;sub>4&lt;/sub>'' that\n\n:&lt;math> 0 = \\frac1{0.06}\\left(C_4e^{0}-3000\\right), \\quad \\text{which implies} \\quad C_4 = 3000. &lt;/math>\n\nWith this we finally find the expression for the balance in dollars at ''t'' years:\n\n:&lt;math> A(t) = \\frac{3000}{0.06}\\left(e^{0.06t}-1\\right). &lt;/math>\n\nThis implies that at ''t = 5'' years the balance is\n\n:&lt;math> A(5) = \\frac{3000}{0.06}\\left(e^{0.06\\cdot 5}-1\\right) = 17 492.94 &lt;/math>\n\n''Reality check:'' Without interest we would expect to see ''5 x 3000 = 15 000'' dollars in the account. The amount with interest should be in the same order of magnitude and a little larger.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Suppose that money is deposited steadily into a savings account at the rate of \\$3000 per year. Determine the balance at the end of 5 years if the account pays 6% interest compounded continuously.</p>\n", 
+    "statement_latex": "Suppose that money is deposited steadily into a savings account at the\nrate of \\textbackslash{}\\$3000 per year. Determine the balance at the\nend of 5 years if the account pays 6\\% interest compounded continuously.", 
+    "statement_raw": "Suppose that money is deposited steadily into a savings account at the rate of $3000 per year. Determine the balance at the end of 5 years if the account pays 6% interest compounded continuously.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_01_(k)", 
+    "year": 2010
 }

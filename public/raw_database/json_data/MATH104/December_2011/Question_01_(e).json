@@ -1,14 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_01_(e)", 
-    "course": "MATH104", 
-    "statement": "Find the \\emph{x}-coordinate of the absolute maximum of\n\n\\begin{align*}f(x) = x\\sqrt{2-x^2}\\end{align*}\n\non its domain.", 
-    "year": 2011, 
-    "sols": [
-        "The absolute maximum of \\emph{f} may occur at the critical points (if it\nhas any), or at the endpoints of its domain. We can solve this problem\nby finding the domain of \\emph{f} first, then by finding its critical\npoints.\n\n\\subsection{Determine the Domain of\n$f$}\\label{determine-the-domain-of-ux192}\n\nBecause of the square root, the domain of \\emph{f} is defined where\n$2 - x^2$ is positive or zero. Therefore,\n\n\\begin{align*} 0 \n&\\le 2 - x^2 \\\\\nx^2&\\le 2 \\\\\nx &\\le \\pm \\sqrt{2}\\end{align*}\n\nThe domain of the given function is\n\n\\begin{align*}[-\\sqrt{2},+\\sqrt{2}]\\end{align*}\n\n\\subsection{Find the Critical Points of\n$f$}\\label{find-the-critical-points-of-ux192}\n\nThe critical points of $f$ are located where its derivative is zero. Let's\nfind the derivative of $f$:\n\n\\begin{align*} \n\\frac{df}{dx} &= \\frac{d}{dx}\\Big(x\\sqrt{2-x^2}\\Big) \\\\\n&= \\Big(\\frac{d}{dx}(x)\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{d}{dx}(\\sqrt{2-x^2})\\Big) \\\\\n&= \\Big(1\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}\\frac{d}{dx}(2-x^2)\\Big) \\\\\n&= \\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}(-2x)\\Big) \\\\\n&= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\end{align*}\n\nSetting this to zero and solving for \\emph{x} yields the critical\npoints:\n\n\\begin{align*} \n0 &= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\\\\n\\frac{2x^2}{2\\sqrt{2-x^2} } &= \\sqrt{2-x^2} \\\\\n2x^2 &= 2(2-x^2)\\\\\n2x^2 &= 4-2x^2\\\\\n4x^2 &= 4 \\\\\nx^2 &= 1 \\\\\nx &= \\pm 1\\end{align*} Therefore, there are two critical points at -1 and +1.\n\n\\subsection{Find Absolute Maximum on the\nDomain}\\label{find-absolute-maximum-on-the-domain}\n\nThe absolute maximum could occur at the two critical points, or at the\nendpoints of the domain.\n\n\\begin{align*}\nf(-\\sqrt{2}) &= 0 \\\\\nf(-1) &= -1 \\\\\nf(+1) &= +1 \\\\\nf(+\\sqrt{2}) &= 0\\end{align*}\n\nThe absolute maximum occurs at \\emph{x} = +1."
+    "answer_html": "<p>The absolute maximum occurs at <em>x</em> = +1.</p>\n", 
+    "answer_latex": "The absolute maximum occurs at \\emph{x} = +1.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Find the domain of <span class=\"math\">\\(f(x)\\)</span>.</p>\n", 
+        "<p>An absolute maximum will occur either at the endpoints of the domain or as a local maximum inside the domain.</p>\n"
+    ], 
+    "hints_latex": [
         "Find the domain of $f(x)$.", 
         "An absolute maximum will occur either at the endpoints of the domain or\nas a local maximum inside the domain."
-    ]
+    ], 
+    "hints_raw": [
+        "Find the domain of &lt;math>f(x)&lt;/math>.\n", 
+        "An absolute maximum will occur either at the endpoints of the domain or as a local maximum inside the domain.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (e)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The absolute maximum of <em>f</em> may occur at the critical points (if it has any), or at the endpoints of its domain. We can solve this problem by finding the domain of <em>f</em> first, then by finding its critical points.</p>\n<h2 id=\"determine-the-domain-of-ux192\">Determine the Domain of <span class=\"math\">\\(f\\)</span></h2>\n<p>Because of the square root, the domain of <em>f</em> is defined where <span class=\"math\">\\(2 - x^2\\)</span> is positive or zero. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 \n&amp;\\le 2 - x^2 \\\\\nx^2&amp;\\le 2 \\\\\nx &amp;\\le \\pm \\sqrt{2}\\end{aligned}\\]</span></p>\n<p>The domain of the given function is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n[-\\sqrt{2},+\\sqrt{2}]\\end{aligned}\\]</span></p>\n<h2 id=\"find-the-critical-points-of-ux192\">Find the Critical Points of <span class=\"math\">\\(f\\)</span></h2>\n<p>The critical points of <span class=\"math\">\\(f\\)</span> are located where its derivative is zero. Let&#8217;s find the derivative of <span class=\"math\">\\(f\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{df}{dx} &amp;= \\frac{d}{dx}\\Big(x\\sqrt{2-x^2}\\Big) \\\\\n&amp;= \\Big(\\frac{d}{dx}(x)\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{d}{dx}(\\sqrt{2-x^2})\\Big) \\\\\n&amp;= \\Big(1\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}\\frac{d}{dx}(2-x^2)\\Big) \\\\\n&amp;= \\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}(-2x)\\Big) \\\\\n&amp;= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\end{aligned}\\]</span></p>\n<p>Setting this to zero and solving for <em>x</em> yields the critical points:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n0 &amp;= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\\\\n\\frac{2x^2}{2\\sqrt{2-x^2} } &amp;= \\sqrt{2-x^2} \\\\\n2x^2 &amp;= 2(2-x^2)\\\\\n2x^2 &amp;= 4-2x^2\\\\\n4x^2 &amp;= 4 \\\\\nx^2 &amp;= 1 \\\\\nx &amp;= \\pm 1\\end{aligned}\\]</span></p>\n<p>Therefore, there are two critical points at -1 and +1.</p>\n<h2 id=\"find-absolute-maximum-on-the-domain\">Find Absolute Maximum on the Domain</h2>\n<p>The absolute maximum could occur at the two critical points, or at the endpoints of the domain.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(-\\sqrt{2}) &amp;= 0 \\\\\nf(-1) &amp;= -1 \\\\\nf(+1) &amp;= +1 \\\\\nf(+\\sqrt{2}) &amp;= 0\\end{aligned}\\]</span></p>\n<p>The absolute maximum occurs at <em>x</em> = +1.</p>\n"
+    ], 
+    "sols_latex": [
+        "The absolute maximum of \\emph{f} may occur at the critical points (if it\nhas any), or at the endpoints of its domain. We can solve this problem\nby finding the domain of \\emph{f} first, then by finding its critical\npoints.\n\n\\subsection{Determine the Domain of\n$f$}\\label{determine-the-domain-of-ux192}\n\nBecause of the square root, the domain of \\emph{f} is defined where\n$2 - x^2$ is positive or zero. Therefore,\n\n\\begin{align*}\n0 \n&\\le 2 - x^2 \\\\\nx^2&\\le 2 \\\\\nx &\\le \\pm \\sqrt{2}\n\\end{align*}\n\nThe domain of the given function is\n\n\\begin{align*}\n[-\\sqrt{2},+\\sqrt{2}]\n\\end{align*}\n\n\\subsection{Find the Critical Points of\n$f$}\\label{find-the-critical-points-of-ux192}\n\nThe critical points of $f$ are located where its derivative is zero. Let's\nfind the derivative of $f$:\n\n\\begin{align*}\n\\frac{df}{dx} &= \\frac{d}{dx}\\Big(x\\sqrt{2-x^2}\\Big) \\\\\n&= \\Big(\\frac{d}{dx}(x)\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{d}{dx}(\\sqrt{2-x^2})\\Big) \\\\\n&= \\Big(1\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}\\frac{d}{dx}(2-x^2)\\Big) \\\\\n&= \\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}(-2x)\\Big) \\\\\n&= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\n\\end{align*}\n\nSetting this to zero and solving for \\emph{x} yields the critical\npoints:\n\n\\begin{align*}\n0 &= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\\\\n\\frac{2x^2}{2\\sqrt{2-x^2} } &= \\sqrt{2-x^2} \\\\\n2x^2 &= 2(2-x^2)\\\\\n2x^2 &= 4-2x^2\\\\\n4x^2 &= 4 \\\\\nx^2 &= 1 \\\\\nx &= \\pm 1\n\\end{align*} Therefore, there are two critical points at -1 and +1.\n\n\\subsection{Find Absolute Maximum on the\nDomain}\\label{find-absolute-maximum-on-the-domain}\n\nThe absolute maximum could occur at the two critical points, or at the\nendpoints of the domain.\n\n\\begin{align*}\nf(-\\sqrt{2}) &= 0 \\\\\nf(-1) &= -1 \\\\\nf(+1) &= +1 \\\\\nf(+\\sqrt{2}) &= 0\n\\end{align*}\n\nThe absolute maximum occurs at \\emph{x} = +1."
+    ], 
+    "sols_raw": [
+        "The absolute maximum of ''f'' may occur at the critical points (if it has any), or at the endpoints of its domain. We can solve this problem by finding the domain of ''f'' first, then by finding its critical points. \n\n==Determine the Domain of &amp;fnof;==\n\nBecause of the square root, the domain of ''f'' is defined where &lt;math>2 - x^2&lt;/math> is positive or zero. Therefore,\n\n:&lt;math>\\begin{align} 0 \n&amp;\\le 2 - x^2 \\\\\nx^2&amp;\\le 2 \\\\\nx &amp;\\le \\pm \\sqrt{2}\n\\end{align}\n&lt;/math>\n\nThe domain of the given function is \n\n:&lt;math>[-\\sqrt{2},+\\sqrt{2}]&lt;/math>\n\n==Find the Critical Points of &amp;fnof;==\n\nThe critical points of &amp;fnof; are located where its derivative is zero. Let's find the derivative of &amp;fnof;:\n\n\n:&lt;math>\\begin{align} \n\\frac{df}{dx} &amp;= \\frac{d}{dx}\\Big(x\\sqrt{2-x^2}\\Big) \\\\\n&amp;= \\Big(\\frac{d}{dx}(x)\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{d}{dx}(\\sqrt{2-x^2})\\Big) \\\\\n&amp;= \\Big(1\\Big)\\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}\\frac{d}{dx}(2-x^2)\\Big) \\\\\n&amp;= \\sqrt{2-x^2} + x\\Big(\\frac{1}{2\\sqrt{2-x^2}}(-2x)\\Big) \\\\\n&amp;= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\\\\n\\end{align}\n&lt;/math>\n\nSetting this to zero and solving for ''x'' yields the critical points:\n\n:&lt;math>\\begin{align} \n0 &amp;= \\sqrt{2-x^2} - \\frac{2x^2}{2\\sqrt{2-x^2} }\\\\\n\\frac{2x^2}{2\\sqrt{2-x^2} } &amp;= \\sqrt{2-x^2} \\\\\n2x^2 &amp;= 2(2-x^2)\\\\\n2x^2 &amp;= 4-2x^2\\\\\n4x^2 &amp;= 4 \\\\\nx^2 &amp;= 1 \\\\\nx &amp;= \\pm 1\n\\end{align}\n&lt;/math>\nTherefore, there are two critical points at -1 and +1.\n\n==Find Absolute Maximum on the Domain==\n\nThe absolute maximum could occur at the two critical points, or at the endpoints of the domain. \n\n:&lt;math>\\begin{align}\nf(-\\sqrt{2}) &amp;= 0 \\\\\nf(-1) &amp;= -1 \\\\\nf(+1) &amp;= +1 \\\\\nf(+\\sqrt{2}) &amp;= 0\n\\end{align}\n&lt;/math>\n\nThe absolute maximum occurs at ''x'' = +1.\n"
+    ], 
+    "solvers": [
+        "GregMayer"
+    ], 
+    "statement_html": "<p>Find the <em>x</em>-coordinate of the absolute maximum of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = x\\sqrt{2-x^2}\\end{aligned}\\]</span></p>\n<p>on its domain.</p>\n", 
+    "statement_latex": "Find the \\emph{x}-coordinate of the absolute maximum of\n\n\\begin{align*}\nf(x) = x\\sqrt{2-x^2}\n\\end{align*}\n\non its domain.", 
+    "statement_raw": "Find the ''x''-coordinate of the absolute maximum of \n\n:&lt;math>f(x) = x\\sqrt{2-x^2}&lt;/math>\n\non its domain.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(e)", 
+    "year": 2011
 }

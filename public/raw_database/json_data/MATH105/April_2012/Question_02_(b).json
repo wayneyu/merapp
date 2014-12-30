@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH105", 
-    "statement": "\\emph{This problem contains three numerical series. For each of them,\nfind out whether it converges or diverges. You should provide\nappropriate justification in order to receive credit.}\n\n\\begin{align*}\\sum_{k=1}^\\infty \\frac{k^4-2k^3+2}{k^5+k^2+k}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "When we look at this series, we note that the leading power of the\nnumerator is \\emph{k}\\textsuperscript{4} and the leading power of the\ndenominator is \\emph{k}\\textsuperscript{5}. Thus, for \\emph{k} very\nlarge, we would expect the terms in the series to look like\n\\emph{k}\\textsuperscript{4}/\\emph{k}\\textsuperscript{5} = 1/\\emph{k}.\n\nWe will use the limit comparison test with\n\n\\begin{align*}a_k = \\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k} \\text{ and } b_k = \\frac{1}{k}\\end{align*}\n\nWe compute\n\n\\begin{align*}\n\\lim_{k \\rightarrow \\infty} \\frac{a_k}{b_k} &= \\lim_{k \\rightarrow \\infty} (\\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k})/(\\frac{1}{k}) \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{k^5 - 2k^4 + 2k}{k^5 + k^2 + k} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{k^5/k^5 - 2k^4/k^5 + 2k/k^5}{k^5/k^5 + k^2/k^5 + k/k^5} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{1 - 2/k + 2/k^4}{1 + 1/k^3 + 1/k^4} \\\\\n&= \\frac{1-0+0}{1+0+0} = 1\\end{align*}\n\nAs this limit is nonzero and finite, $\\sum_{k=1}^{\\infty} a_k$ converges\nif and only if $\\sum_{k=1}^{\\infty} b_k$ converges.\n\nThe series $\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}$\ndiverges (it's worth remembering - or being able to show with the\nintegral test - that $\\sum_{k=1}^\\infty \\frac{1}{k^p}$ converges if\n$p > 1$ and diverges if $p \\leq 1$).\n\nThe conclusion is that the series diverges!"
+    "answer_html": "<p>The series <span class=\"math\">\\(\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}\\)</span> diverges (it&#8217;s worth remembering - or being able to show with the integral test - that <span class=\"math\">\\(\\sum_{k=1}^\\infty \\frac{1}{k^p}=\\sum_{k=1}^\\infty \\frac{1}{k^p}\\)</span> converges if <span class=\"math\">\\(p &gt; 1\\)</span> and diverges if <span class=\"math\">\\(p \\leq 1\\)</span>).The conclusion is that the series diverges!</p>\n", 
+    "answer_latex": "The series $\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}$\ndiverges (it's worth remembering - or being able to show with the\nintegral test - that $\\sum_{k=1}^\\infty \\frac{1}{k^p}=\\sum_{k=1}^\\infty \\frac{1}{k^p}$ converges if\n$p > 1$ and diverges if $p \\leq 1$).The conclusion is that the series diverges!", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Compare the highest exponents of the numerator and the denominator to make an educated guess. Then confirm your guess using the limit comparison test.</p>\n"
+    ], 
+    "hints_latex": [
         "Compare the highest exponents of the numerator and the denominator to\nmake an educated guess. Then confirm your guess using the limit\ncomparison test."
-    ]
+    ], 
+    "hints_raw": [
+        "Compare the highest exponents of the numerator and the denominator to make an educated guess. Then confirm your guess using the limit comparison test.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (b)", 
+    "rating": 60, 
+    "sols_html": [
+        "<p>When we look at this series, we note that the leading power of the numerator is <em>k</em><sup>4</sup> and the leading power of the denominator is <em>k</em><sup>5</sup>. Thus, for <em>k</em> very large, we would expect the terms in the series to look like <em>k</em><sup>4</sup>/<em>k</em><sup>5</sup> = 1/<em>k</em>.</p>\n<p>We will use the limit comparison test with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na_k = \\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k} \\text{ and } b_k = \\frac{1}{k}\\end{aligned}\\]</span></p>\n<p>We compute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{k \\rightarrow \\infty} \\frac{a_k}{b_k} &amp;= \\lim_{k \\rightarrow \\infty} (\\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k})/(\\frac{1}{k}) \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{k^5 - 2k^4 + 2k}{k^5 + k^2 + k} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{k^5/k^5 - 2k^4/k^5 + 2k/k^5}{k^5/k^5 + k^2/k^5 + k/k^5} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{1 - 2/k + 2/k^4}{1 + 1/k^3 + 1/k^4} \\\\\n&amp;= \\frac{1-0+0}{1+0+0} = 1\\end{aligned}\\]</span></p>\n<p>As this limit is nonzero and finite, <span class=\"math\">\\(\\sum_{k=1}^{\\infty} a_k\\)</span> converges if and only if <span class=\"math\">\\(\\sum_{k=1}^{\\infty} b_k\\)</span> converges.</p>\n<p>The series <span class=\"math\">\\(\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}\\)</span> diverges (it&#8217;s worth remembering - or being able to show with the integral test - that <span class=\"math\">\\(\\sum_{k=1}^\\infty \\frac{1}{k^p}\\)</span> converges if <span class=\"math\">\\(p &gt; 1\\)</span> and diverges if <span class=\"math\">\\(p \\leq 1\\)</span>).</p>\n<p>The conclusion is that the series diverges!</p>\n"
+    ], 
+    "sols_latex": [
+        "When we look at this series, we note that the leading power of the\nnumerator is \\emph{k}\\textsuperscript{4} and the leading power of the\ndenominator is \\emph{k}\\textsuperscript{5}. Thus, for \\emph{k} very\nlarge, we would expect the terms in the series to look like\n\\emph{k}\\textsuperscript{4}/\\emph{k}\\textsuperscript{5} = 1/\\emph{k}.\n\nWe will use the limit comparison test with\n\n\\begin{align*}\na_k = \\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k} \\text{ and } b_k = \\frac{1}{k}\n\\end{align*}\n\nWe compute\n\n\\begin{align*}\n\\lim_{k \\rightarrow \\infty} \\frac{a_k}{b_k} &= \\lim_{k \\rightarrow \\infty} (\\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k})/(\\frac{1}{k}) \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{k^5 - 2k^4 + 2k}{k^5 + k^2 + k} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{k^5/k^5 - 2k^4/k^5 + 2k/k^5}{k^5/k^5 + k^2/k^5 + k/k^5} \\\\\n&= \\lim_{k \\rightarrow \\infty} \\frac{1 - 2/k + 2/k^4}{1 + 1/k^3 + 1/k^4} \\\\\n&= \\frac{1-0+0}{1+0+0} = 1\n\\end{align*}\n\nAs this limit is nonzero and finite, $\\sum_{k=1}^{\\infty} a_k$ converges\nif and only if $\\sum_{k=1}^{\\infty} b_k$ converges.\n\nThe series $\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}$\ndiverges (it's worth remembering - or being able to show with the\nintegral test - that $\\sum_{k=1}^\\infty \\frac{1}{k^p}$ converges if\n$p > 1$ and diverges if $p \\leq 1$).\n\nThe conclusion is that the series diverges!"
+    ], 
+    "sols_raw": [
+        "When we look at this series, we note that the leading power of the numerator is ''k''&lt;sup>4&lt;/sup> and the leading power of the denominator is ''k''&lt;sup>5&lt;/sup>. Thus, for ''k'' very large, we would expect the terms in the series to look like ''k''&lt;sup>4&lt;/sup>/''k''&lt;sup>5&lt;/sup> = 1/''k''.\n\nWe will use the limit comparison test with\n:&lt;math>\na_k = \\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k} \\text{ and } b_k = \\frac{1}{k}\n&lt;/math>\n\nWe compute\n:&lt;math>\\begin{align}\n\\lim_{k \\rightarrow \\infty} \\frac{a_k}{b_k} &amp;= \\lim_{k \\rightarrow \\infty} (\\frac{k^4 - 2k^3 + 2}{k^5 + k^2 + k})/(\\frac{1}{k}) \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{k^5 - 2k^4 + 2k}{k^5 + k^2 + k} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{k^5/k^5 - 2k^4/k^5 + 2k/k^5}{k^5/k^5 + k^2/k^5 + k/k^5} \\\\\n&amp;= \\lim_{k \\rightarrow \\infty} \\frac{1 - 2/k + 2/k^4}{1 + 1/k^3 + 1/k^4} \\\\\n&amp;= \\frac{1-0+0}{1+0+0} = 1\n\\end{align}\n&lt;/math>\n\nAs this limit is nonzero and finite, &lt;math>\\sum_{k=1}^{\\infty} a_k&lt;/math> converges if and only if &lt;math>\\sum_{k=1}^{\\infty} b_k&lt;/math> converges.\n\nThe series &lt;math>\\sum_{k=1}^\\infty b_k = \\sum_{k=1}^\\infty \\frac{1}{k}&lt;/math> diverges (it's worth remembering - or being able to show with the integral test - that &lt;math>\\sum_{k=1}^\\infty \\frac{1}{k^p}&lt;/math> converges if &lt;math>p > 1&lt;/math> and diverges if &lt;math>p \\leq 1&lt;/math>).\n\nThe conclusion is that the series diverges!\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>This problem contains three numerical series. For each of them, find out whether it converges or diverges. You should provide appropriate justification in order to receive credit.</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=1}^\\infty \\frac{k^4-2k^3+2}{k^5+k^2+k}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{This problem contains three numerical series. For each of them,\nfind out whether it converges or diverges. You should provide\nappropriate justification in order to receive credit.}\n\n\\begin{align*}\n\\sum_{k=1}^\\infty \\frac{k^4-2k^3+2}{k^5+k^2+k}\n\\end{align*}", 
+    "statement_raw": "''This problem contains three numerical series. For each of them, \ufb01nd out whether it converges or diverges. You should provide appropriate justi\ufb01cation in order to receive credit.''\n\n:&lt;math>\n\\sum_{k=1}^\\infty \\frac{k^4-2k^3+2}{k^5+k^2+k}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Limit_comparison_test"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_02_(b)", 
+    "year": 2012
 }

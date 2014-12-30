@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
-    "course": "MATH101", 
-    "statement": "Evaluate\n\n$\\int \\frac{x^{3} - 2x}{\\sqrt{x}}\\, dx$", 
-    "year": 2008, 
-    "sols": [
-        "As suggested by the hint, we have\n\n\\begin{align*} \\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx &= \\int\\frac{x^{3}}{\\sqrt{x}}\\, dx - \\int\\frac{2x}{\\sqrt{x}}\\, dx \\\\\n&= \\int x^{5/2} \\, dx -2 \\int x^{1/2} \\, dx \\\\\n&= \\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx=\\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\\)</span></p>\n", 
+    "answer_latex": " $\\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx=\\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Split up the fraction into two parts. Then evaluate the sum as a sum of easy to evaluate integrals.</p>\n"
+    ], 
+    "hints_latex": [
         "Split up the fraction into two parts. Then evaluate the sum as a sum of\neasy to evaluate integrals."
-    ]
+    ], 
+    "hints_raw": [
+        "Split up the fraction into two parts. Then evaluate the sum as a sum of easy to evaluate integrals.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (a)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>As suggested by the hint, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx &amp;= \\int\\frac{x^{3}}{\\sqrt{x}}\\, dx - \\int\\frac{2x}{\\sqrt{x}}\\, dx \\\\\n&amp;= \\int x^{5/2} \\, dx -2 \\int x^{1/2} \\, dx \\\\\n&amp;= \\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "As suggested by the hint, we have\n\n\\begin{align*}\n\\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx &= \\int\\frac{x^{3}}{\\sqrt{x}}\\, dx - \\int\\frac{2x}{\\sqrt{x}}\\, dx \\\\\n&= \\int x^{5/2} \\, dx -2 \\int x^{1/2} \\, dx \\\\\n&= \\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "As suggested by the hint, we have\n\n:&lt;math> \\begin{align} \\int\\frac{x^{3}-2x}{\\sqrt{x}} \\, dx &amp;= \\int\\frac{x^{3}}{\\sqrt{x}}\\, dx - \\int\\frac{2x}{\\sqrt{x}}\\, dx \\\\\n&amp;= \\int x^{5/2} \\, dx -2 \\int x^{1/2} \\, dx \\\\\n&amp;= \\frac{2x^{7/2}}{7} - \\frac{4x^{3/2}}{3} + C.\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Evaluate</p>\n<p><span class=\"math\">\\(\\int \\frac{x^{3} - 2x}{\\sqrt{x}}\\, dx\\)</span></p>\n", 
+    "statement_latex": "Evaluate\n\n$\\int \\frac{x^{3} - 2x}{\\sqrt{x}}\\, dx$", 
+    "statement_raw": "Evaluate\n\n&lt;math> \\int \\frac{x^{3} - 2x}{\\sqrt{x}}\\, dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_01_(a)", 
+    "year": 2008
 }

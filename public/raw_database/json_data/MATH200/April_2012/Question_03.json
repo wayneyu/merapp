@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_03", 
-    "course": "MATH200", 
-    "statement": "Let $\\displaystyle z=f(x,y)$, where $\\displaystyle f(x,y)$ has\ncontinuous second order partial derivatives, and\n\n\\begin{align*}\nx&=2t^2, & y&=t^3, & & \\\\\nf_x(2,1)&=5, & f_y(2,1)&=-2, & & \\\\\nf_{xx}(2,1)&=2, & f_{xy}(2,1)&=1, & f_{yy}(2,1)&=-4\\end{align*}\n\nFind $\\frac{\\textrm{d}^2z}{\\textrm{d}t^2}$ when \\emph{t=1}.", 
-    "year": 2012, 
-    "sols": [
-        "First we evaluate the first derivative of z with respect to t using the\nmultivariable chain rule.\n\n\\begin{align*}\n\\frac{dz}{dt} &= f_{x}\\frac{dx}{dt} + f_{y}\\frac{dy}{dt}\n&= f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\end{align*} We then take the next derivative of z by taking the\nderivative with respect to t of the above result, using the\nmultivariable chain rule again as well as the product rule.\n\n\\begin{align*}\n\\frac{d^{2}z}{dt^{2}} &= \\frac{d}{dt}\\left(f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\right) \\\\\n&= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y}\\end{align*} Next, we recognize that if t = 1, then (x,y) = (2,1).\nThus, we can use the information given in the question about the partial\nderivatives of f to evaluate $d^{2}z/dt^{2}$ at t = 1:\n\n\\begin{align*}\n\\frac{d^{2}z}{dt^{2}} &= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y} \\\\\n\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} &= 4(2(4) + 3) + 4(5) + 3(4 - 4(3)) + 6(-2) \\\\\n&= 4(11) + 20 + 3(-8) - 12 = 28\\end{align*} Therefore,\n${\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} =28}.$"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1}=28\\)</span> Therefore, <span class=\"math\">\\({\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} =28}.\\)</span></p>\n", 
+    "answer_latex": " $\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1}=28$  Therefore,\n${\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} =28}.$", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "To evaluate the derivative of a multivariable function g = g(x,y) with\nrespect to t where x,y are functions of t, we need to use the chain rule\nfor multivariable functions:\n\n\\begin{align*}\\frac{dg}{dt} = \\frac{\\partial g}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial g}{\\partial y}\\frac{dy}{dt} = g_{x}\\frac{dx}{dt} + g_{y}\\frac{dy}{dt}.\\end{align*}", 
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>To evaluate the derivative of a multivariable function g = g(x,y) with respect to t where x,y are functions of t, we need to use the chain rule for multivariable functions:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dg}{dt} = \\frac{\\partial g}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial g}{\\partial y}\\frac{dy}{dt} = g_{x}\\frac{dx}{dt} + g_{y}\\frac{dy}{dt}.\\end{aligned}\\]</span></p>\n", 
+        "<p>After applying the multivariable chain rule to <em><span class=\"math\">\\(f\\)</span></em> once, you will need to apply it again to <em>d<span class=\"math\">\\(f\\)</span>/dt</em> since the partial derivatives of <em><span class=\"math\">\\(f\\)</span></em> are also functions of <em>x</em>, <em>y</em>.</p>\n<p>You will also need the product rule.</p>\n"
+    ], 
+    "hints_latex": [
+        "To evaluate the derivative of a multivariable function g = g(x,y) with\nrespect to t where x,y are functions of t, we need to use the chain rule\nfor multivariable functions:\n\n\\begin{align*}\n\\frac{dg}{dt} = \\frac{\\partial g}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial g}{\\partial y}\\frac{dy}{dt} = g_{x}\\frac{dx}{dt} + g_{y}\\frac{dy}{dt}.\n\\end{align*}", 
         "After applying the multivariable chain rule to \\emph{$f$} once, you will\nneed to apply it again to \\emph{d$f$/dt} since the partial derivatives of\n\\emph{$f$} are also functions of \\emph{x}, \\emph{y}.\n\nYou will also need the product rule."
-    ]
+    ], 
+    "hints_raw": [
+        "To evaluate the derivative of a multivariable function g = g(x,y) with respect to t where x,y are functions of t, we need to use the &lt;b>chain rule&lt;/b> for multivariable functions:\n\n:&lt;math>\n\\frac{dg}{dt} = \\frac{\\partial g}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial g}{\\partial y}\\frac{dy}{dt} = g_{x}\\frac{dx}{dt} + g_{y}\\frac{dy}{dt}.\n&lt;/math>\n", 
+        "After applying the multivariable chain rule to ''&amp;fnof;'' once, you will need to apply it again to ''d&amp;fnof;/dt'' since the partial derivatives of ''&amp;fnof;'' are also functions of ''x'', ''y''.\n\nYou will also need the product rule.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>First we evaluate the first derivative of z with respect to t using the multivariable chain rule.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dz}{dt} &amp;= f_{x}\\frac{dx}{dt} + f_{y}\\frac{dy}{dt}\n&amp;= f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\end{aligned}\\]</span></p>\n<p>We then take the next derivative of z by taking the derivative with respect to t of the above result, using the multivariable chain rule again as well as the product rule.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^{2}z}{dt^{2}} &amp;= \\frac{d}{dt}\\left(f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\right) \\\\\n&amp;= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y}\\end{aligned}\\]</span></p>\n<p>Next, we recognize that if t = 1, then (x,y) = (2,1). Thus, we can use the information given in the question about the partial derivatives of f to evaluate <span class=\"math\">\\(d^{2}z/dt^{2}\\)</span> at t = 1:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^{2}z}{dt^{2}} &amp;= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y} \\\\\n\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} &amp;= 4(2(4) + 3) + 4(5) + 3(4 - 4(3)) + 6(-2) \\\\\n&amp;= 4(11) + 20 + 3(-8) - 12 = 28\\end{aligned}\\]</span></p>\n<p>Therefore, <span class=\"math\">\\({\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} =28}.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "First we evaluate the first derivative of z with respect to t using the\nmultivariable chain rule.\n\n\\begin{align*}\n\\frac{dz}{dt} &= f_{x}\\frac{dx}{dt} + f_{y}\\frac{dy}{dt}\n&= f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\n\\end{align*} We then take the next derivative of z by taking the\nderivative with respect to t of the above result, using the\nmultivariable chain rule again as well as the product rule.\n\n\\begin{align*}\n\\frac{d^{2}z}{dt^{2}} &= \\frac{d}{dt}\\left(f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\right) \\\\\n&= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y}\n\\end{align*} Next, we recognize that if t = 1, then (x,y) = (2,1).\nThus, we can use the information given in the question about the partial\nderivatives of f to evaluate $d^{2}z/dt^{2}$ at t = 1:\n\n\\begin{align*}\n\\frac{d^{2}z}{dt^{2}} &= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y} \\\\\n\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} &= 4(2(4) + 3) + 4(5) + 3(4 - 4(3)) + 6(-2) \\\\\n&= 4(11) + 20 + 3(-8) - 12 = 28\n\\end{align*} Therefore,\n${\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} =28}.$"
+    ], 
+    "sols_raw": [
+        "First we evaluate the first derivative of z with respect to t using the multivariable chain rule.\n:&lt;math>\n\\begin{align}\n\\frac{dz}{dt} &amp;= f_{x}\\frac{dx}{dt} + f_{y}\\frac{dy}{dt}\n&amp;= f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\n\\end{align}\n&lt;/math>\nWe then take the next derivative of z by taking the derivative with respect to t of the above result, using the multivariable chain rule again as well as the product rule.\n:&lt;math>\n\\begin{align}\n\\frac{d^{2}z}{dt^{2}} &amp;= \\frac{d}{dt}\\left(f_{x}\\cdot 4t + f_{y}\\cdot 3t^{2}\\right) \\\\\n&amp;= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y}\n\\end{align}\n&lt;/math>\nNext, we recognize that if t = 1, then (x,y) = (2,1). Thus, we can use the information given in the question about the partial derivatives of f to evaluate &lt;math>d^{2}z/dt^{2}&lt;/math> at t = 1:\n:&lt;math>\n\\begin{align}\n\\frac{d^{2}z}{dt^{2}} &amp;= 4t(f_{xx}\\cdot 4t + f_{xy}\\cdot 3t^{2}) + 4f_{x} + 3t^{2}(f_{yx}\\cdot 4t + f_{yy} 3t^{2}) + 6t \\cdot f_{y} \\\\\n\\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} &amp;= 4(2(4) + 3) + 4(5) + 3(4 - 4(3)) + 6(-2) \\\\\n&amp;= 4(11) + 20 + 3(-8) - 12 = 28\n\\end{align}\n&lt;/math>\nTherefore, \n&lt;math>\n{\\color{blue} \\frac{d^{2}z}{dt^{2}}\\Big\\vert_{t = 1} = 28}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\displaystyle z=f(x,y)\\)</span>, where <span class=\"math\">\\(\\displaystyle f(x,y)\\)</span> has continuous second order partial derivatives, and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx&amp;=2t^2, &amp; y&amp;=t^3, &amp; &amp; \\\\\nf_x(2,1)&amp;=5, &amp; f_y(2,1)&amp;=-2, &amp; &amp; \\\\\nf_{xx}(2,1)&amp;=2, &amp; f_{xy}(2,1)&amp;=1, &amp; f_{yy}(2,1)&amp;=-4\\end{aligned}\\]</span></p>\n<p>Find <span class=\"math\">\\(\\frac{\\textrm{d}^2z}{\\textrm{d}t^2}\\)</span> when <em>t=1</em>.</p>\n", 
+    "statement_latex": "Let $\\displaystyle z=f(x,y)$, where $\\displaystyle f(x,y)$ has\ncontinuous second order partial derivatives, and\n\n\\begin{align*}\nx&=2t^2, & y&=t^3, & & \\\\\nf_x(2,1)&=5, & f_y(2,1)&=-2, & & \\\\\nf_{xx}(2,1)&=2, & f_{xy}(2,1)&=1, & f_{yy}(2,1)&=-4\n\\end{align*}\n\nFind $\\frac{\\textrm{d}^2z}{\\textrm{d}t^2}$ when \\emph{t=1}.", 
+    "statement_raw": "Let &lt;math>\\displaystyle z=f(x,y)&lt;/math>, where &lt;math>\\displaystyle f(x,y)&lt;/math> has continuous second order partial derivatives, and\n\n:&lt;math>\n\\begin{align}\nx&amp;=2t^2, &amp; y&amp;=t^3, &amp; &amp; \\\\\nf_x(2,1)&amp;=5, &amp; f_y(2,1)&amp;=-2, &amp; &amp; \\\\\nf_{xx}(2,1)&amp;=2, &amp; f_{xy}(2,1)&amp;=1, &amp; f_{yy}(2,1)&amp;=-4\n\\end{align}\n&lt;/math>\n\nFind &lt;math>\\frac{\\textrm{d}^2z}{\\textrm{d}t^2}&lt;/math> when ''t=1''.\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_derivative"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_03", 
+    "year": 2012
 }

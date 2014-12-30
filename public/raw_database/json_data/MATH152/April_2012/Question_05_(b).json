@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH152", 
-    "statement": "The following matrix A depends on a parameter p. Find all the values of\nof the parameter p for which the corresponding matrix is not invertible.\n\n\\begin{align*}A=\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n100  &  200  &  300  &  401\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}\\end{align*}", 
-    "year": 2012, 
-    "sols": [
-        "We begin by taking our matrix and applying row operations. First, we\ntake 100 times the first row and subtract it from the second row to turn\nthe matrix\n\n$A=\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n100  &  200  &  300  &  401\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}$\n\ninto\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}$\n\nNext we subtract $p+2$ times the second row to the third row and also\nadd $-3p+2$ times the second row to the fourth row giving\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  -p  &  -2p+1  & 0\n\\end{bmatrix}$\n\nNext, we add the third row to the fourth row to get\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\n\\end{bmatrix}$\n\nSwap the second row with the third row and the resulting third row with\nthe fourth row (so this introduces no change in the sign since we swap\ntwice and so multiply the determinant $(-1)^{2}=1$) giving\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\\\\\n0  &  0  &  0  &  1\n\\end{bmatrix}$\n\nNow we take determinants and notice that the determinant of \\emph{A} is\nthe same as the determinant of the above matrix. Since the above matrix\nis upper triangular, the determinant can be taken by multiplying the\nentries on the diagonal to give\n\n$\\det(A) = \\det\\left(\n\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\\\\\n0  &  0  &  0  &  1\n\\end{bmatrix} \\right)\n= p(-p+2)$\n\nThis is zero when $\\displaystyle p=0$ or when $\\displaystyle p=2.$"
+    "answer_html": "<p>This is zero when <span class=\"math\">\\(\\displaystyle p=0\\)</span> or when <span class=\"math\">\\(\\displaystyle p=2.\\)</span></p>\n", 
+    "answer_latex": "This is zero when $\\displaystyle p=0$ or when $\\displaystyle p=2.$", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The determinant is your friend. A matrix is noninvertible if its determinant is zero. For which values of <em>p</em> is the determinant of this matrix zero?</p>\n", 
+        "<p>To find the determinant simplify the matrix first by using row operations.</p>\n"
+    ], 
+    "hints_latex": [
         "The determinant is your friend. A matrix is noninvertible if its\ndeterminant is zero. For which values of \\emph{p} is the determinant of\nthis matrix zero?", 
         "To find the determinant simplify the matrix first by using row\noperations."
-    ]
+    ], 
+    "hints_raw": [
+        "The determinant is your friend. A matrix is noninvertible if its determinant is zero. For which values of ''p'' is the determinant of this matrix zero?\n", 
+        "To find the determinant simplify the matrix first by using row operations.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "5 (b)", 
+    "rating": 79, 
+    "sols_html": [
+        "<p>We begin by taking our matrix and applying row operations. First, we take 100 times the first row and subtract it from the second row to turn the matrix</p>\n<p><span class=\"math\">\\(A=\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n100  &amp;  200  &amp;  300  &amp;  401\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix}\\)</span></p>\n<p>into</p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix}\\)</span></p>\n<p>Next we subtract <span class=\"math\">\\(p+2\\)</span> times the second row to the third row and also add <span class=\"math\">\\(-3p+2\\)</span> times the second row to the fourth row giving</p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp; 0\n\\end{bmatrix}\\)</span></p>\n<p>Next, we add the third row to the fourth row to get</p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\n\\end{bmatrix}\\)</span></p>\n<p>Swap the second row with the third row and the resulting third row with the fourth row (so this introduces no change in the sign since we swap twice and so multiply the determinant <span class=\"math\">\\((-1)^{2}=1\\)</span>) giving</p>\n<p><span class=\"math\">\\(\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\\\\\n0  &amp;  0  &amp;  0  &amp;  1\n\\end{bmatrix}\\)</span></p>\n<p>Now we take determinants and notice that the determinant of <em>A</em> is the same as the determinant of the above matrix. Since the above matrix is upper triangular, the determinant can be taken by multiplying the entries on the diagonal to give</p>\n<p><span class=\"math\">\\(\\det(A) = \\det\\left(\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\\\\\n0  &amp;  0  &amp;  0  &amp;  1\n\\end{bmatrix} \\right)\n= p(-p+2)\\)</span></p>\n<p>This is zero when <span class=\"math\">\\(\\displaystyle p=0\\)</span> or when <span class=\"math\">\\(\\displaystyle p=2.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We begin by taking our matrix and applying row operations. First, we\ntake 100 times the first row and subtract it from the second row to turn\nthe matrix\n\n$A=\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n100  &  200  &  300  &  401\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}$\n\ninto\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}$\n\nNext we subtract $p+2$ times the second row to the third row and also\nadd $-3p+2$ times the second row to the fourth row giving\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  -p  &  -2p+1  & 0\n\\end{bmatrix}$\n\nNext, we add the third row to the fourth row to get\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  0  &  0  &  1\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\n\\end{bmatrix}$\n\nSwap the second row with the third row and the resulting third row with\nthe fourth row (so this introduces no change in the sign since we swap\ntwice and so multiply the determinant $(-1)^{2}=1$) giving\n\n$\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\\\\\n0  &  0  &  0  &  1\n\\end{bmatrix}$\n\nNow we take determinants and notice that the determinant of \\emph{A} is\nthe same as the determinant of the above matrix. Since the above matrix\nis upper triangular, the determinant can be taken by multiplying the\nentries on the diagonal to give\n\n$\\det(A) = \\det\\left(\n\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n0  &  p  &  p+1  &  0\\\\\n0  &  0  &  -p+2  & 0\\\\\n0  &  0  &  0  &  1\n\\end{bmatrix} \\right)\n= p(-p+2)$\n\nThis is zero when $\\displaystyle p=0$ or when $\\displaystyle p=2.$"
+    ], 
+    "sols_raw": [
+        "We begin by taking our matrix and applying row operations. First, we take 100 times the first row and subtract it from the second row to turn the matrix\n\n&lt;math>\nA=\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n100  &amp;  200  &amp;  300  &amp;  401\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix} \n&lt;/math>\n\ninto \n\n&lt;math>\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix} \n&lt;/math>\n\nNext we subtract &lt;math> p+2 &lt;/math> times the second row to the third row and also add &lt;math> -3p+2 &lt;/math> times the second row to the fourth row giving\n\n&lt;math>\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp; 0\n\\end{bmatrix} \n&lt;/math>\n\nNext, we add the third row to the fourth row to get\n\n&lt;math>\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  0  &amp;  0  &amp;  1\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\n\\end{bmatrix} \n&lt;/math>\n\nSwap the second row with the third row and the resulting third row with the fourth row (so this introduces no change in the sign since we swap twice and so multiply the determinant &lt;math> (-1)^{2}=1 &lt;/math>) giving\n\n&lt;math>\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\\\\\n0  &amp;  0  &amp;  0  &amp;  1\n\\end{bmatrix} \n&lt;/math>\n\nNow we take determinants and notice that the determinant of ''A'' is the same as the determinant of the above matrix. Since the above matrix is upper triangular, the determinant can be taken by multiplying the entries on the diagonal to give\n\n&lt;math>\n\\det(A) = \\det\\left(\n\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n0  &amp;  p  &amp;  p+1  &amp;  0\\\\\n0  &amp;  0  &amp;  -p+2  &amp; 0\\\\\n0  &amp;  0  &amp;  0  &amp;  1\n\\end{bmatrix} \\right)\n= p(-p+2)\n&lt;/math>\n\nThis is zero when &lt;math> \\displaystyle p=0 &lt;/math> or when &lt;math> \\displaystyle p=2. &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>The following matrix A depends on a parameter p. Find all the values of of the parameter p for which the corresponding matrix is not invertible.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n100  &amp;  200  &amp;  300  &amp;  401\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "The following matrix A depends on a parameter p. Find all the values of\nof the parameter p for which the corresponding matrix is not invertible.\n\n\\begin{align*}\nA=\\begin{bmatrix}\n1  &  2  &  3  &  4\\\\\n100  &  200  &  300  &  401\\\\\n0  &  p  &  p+1  &  p+2\\\\\n0  &  -p  &  -2p+1  &  -3p+2\n\\end{bmatrix}\n\\end{align*}", 
+    "statement_raw": "The following matrix A depends on a parameter p.  Find all the values of of the parameter p for which the corresponding matrix is not invertible.\n\n:&lt;math>\nA=\\begin{bmatrix}\n1  &amp;  2  &amp;  3  &amp;  4\\\\\n100  &amp;  200  &amp;  300  &amp;  401\\\\\n0  &amp;  p  &amp;  p+1  &amp;  p+2\\\\\n0  &amp;  -p  &amp;  -2p+1  &amp;  -3p+2\n\\end{bmatrix}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Determinants", 
+        "Invertibility"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_05_(b)", 
+    "year": 2012
 }

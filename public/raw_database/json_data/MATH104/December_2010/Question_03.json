@@ -1,14 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_03", 
-    "course": "MATH104", 
-    "statement": "A city's supply of an herb comes from many small home businesses. The\nsupply q of the herb is a function of the street price p. The Elasticity\nof Supply is by definition equal to\n\n\\begin{align*}-\\frac{p}{q}\\frac{\\textrm{d}q}{\\textrm{d}p}.\\end{align*}\n\nSuppose that a city's weekly supply q of the herb, in millions of grams,\nis related to the street price, p, in dollars per gram, by the equation\n\n\\begin{align*}\\displaystyle{}p^3+p=2q^3+q^2+10.\\end{align*}\n\nCalculate the elasticity of supply when p=3. Please simplify. Note that\nwhen p=3, we have q=2.", 
-    "year": 2010, 
-    "sols": [
-        "In order to find $dq/dp,$ we differentiate both sides of the supply\nequation with respect to $p$.\n\n\\begin{align*}3p^2+1=(6q^2+2q)\\frac{dq}{dp}\\end{align*} Solving for $dq/dp,$\n\n\\begin{align*}\\frac{dq}{dp} =\\frac{3p^2+1}{6q^2+2q}\\end{align*} Hence, the elasticity of\nsupply is\n\n\\begin{align*}-\\frac{p}{q}\\frac{dq}{dp} =-\\frac{p}{q}\\frac{3p^2+1}{6q^2+2q}.\\end{align*}\nEvaluating this when $p=3$ and $q=2$, we obtain\n\n\\begin{align*}-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}\\frac{28}{28}=-\\frac{3}{2}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}.\\)</span></p>\n", 
+    "answer_latex": " $-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}.$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Note that the definition of elasticity depends varies from person to person and text to text; depending on where you look, you may or may not find a minus sign in front of <span class=\"math\">\\(\\frac{p}{q} \\frac{dq}{dp}.\\)</span> For this problem, we are given a definition, so we&#8217;ll use this in the solution. On your exam, you might not be given the definition of elasticity. In this case, please use the definition that you were given in class. (In 2012, we did not include a minus sign in front.)</p>\n", 
+        "<p>Use implicit differentiation to find <span class=\"math\">\\(dq/dp\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Note that the definition of elasticity depends varies from person to\nperson and text to text; depending on where you look, you may or may not\nfind a minus sign in front of $\\frac{p}{q} \\frac{dq}{dp}.$ For this\nproblem, we are given a definition, so we'll use this in the solution.\nOn your exam, you might not be given the definition of elasticity. In\nthis case, please use the definition that you were given in class. (In\n2012, we did not include a minus sign in front.)", 
         "Use implicit differentiation to find $dq/dp$."
-    ]
+    ], 
+    "hints_raw": [
+        "Note that the definition of elasticity depends varies from person to person and text to text; depending on where you look, you may or may not find a minus sign in front of &lt;math> \\frac{p}{q} \\frac{dq}{dp}. &lt;/math>  For this problem, we are given a definition, so we'll use this in the solution.  On your exam, you might not be given the definition of elasticity.  In this case, please use the definition that you were given in class.  (In 2012, we did not include a minus sign in front.)\n", 
+        "Use implicit differentiation to find &lt;math>dq/dp &lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "3", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>In order to find <span class=\"math\">\\(dq/dp,\\)</span> we differentiate both sides of the supply equation with respect to <span class=\"math\">\\(p\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n3p^2+1=(6q^2+2q)\\frac{dq}{dp}\\end{aligned}\\]</span></p>\n<p>Solving for <span class=\"math\">\\(dq/dp,\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dq}{dp} =\\frac{3p^2+1}{6q^2+2q}\\end{aligned}\\]</span></p>\n<p>Hence, the elasticity of supply is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{p}{q}\\frac{dq}{dp} =-\\frac{p}{q}\\frac{3p^2+1}{6q^2+2q}.\\end{aligned}\\]</span></p>\n<p>Evaluating this when <span class=\"math\">\\(p=3\\)</span> and <span class=\"math\">\\(q=2\\)</span>, we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}\\frac{28}{28}=-\\frac{3}{2}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "In order to find $dq/dp,$ we differentiate both sides of the supply\nequation with respect to $p$.\n\n\\begin{align*}\n3p^2+1=(6q^2+2q)\\frac{dq}{dp}\n\\end{align*} Solving for $dq/dp,$\n\n\\begin{align*}\n\\frac{dq}{dp} =\\frac{3p^2+1}{6q^2+2q}\n\\end{align*} Hence, the elasticity of\nsupply is\n\n\\begin{align*}\n-\\frac{p}{q}\\frac{dq}{dp} =-\\frac{p}{q}\\frac{3p^2+1}{6q^2+2q}.\n\\end{align*}\nEvaluating this when $p=3$ and $q=2$, we obtain\n\n\\begin{align*}\n-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}\\frac{28}{28}=-\\frac{3}{2}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "In order to find &lt;math>dq/dp, &lt;/math> we differentiate both sides of the supply equation with respect to &lt;math>p &lt;/math>.\n:&lt;math>3p^2+1=(6q^2+2q)\\frac{dq}{dp} &lt;/math>\nSolving for &lt;math>dq/dp,&lt;/math>\n:&lt;math>\\frac{dq}{dp} =\\frac{3p^2+1}{6q^2+2q}&lt;/math>\nHence, the elasticity of supply is\n:&lt;math>-\\frac{p}{q}\\frac{dq}{dp} =-\\frac{p}{q}\\frac{3p^2+1}{6q^2+2q}.&lt;/math>\nEvaluating this when &lt;math> p=3&lt;/math> and &lt;math> q=2&lt;/math>, we obtain\n:&lt;math>-\\frac{3}{2}\\frac{3(3)^2+1}{6(2)^2+2(2)}=-\\frac{3}{2}\\frac{28}{28}=-\\frac{3}{2}.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>A city&#8217;s supply of an herb comes from many small home businesses. The supply q of the herb is a function of the street price p. The Elasticity of Supply is by definition equal to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\frac{p}{q}\\frac{\\textrm{d}q}{\\textrm{d}p}.\\end{aligned}\\]</span></p>\n<p>Suppose that a city&#8217;s weekly supply q of the herb, in millions of grams, is related to the street price, p, in dollars per gram, by the equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}p^3+p=2q^3+q^2+10.\\end{aligned}\\]</span></p>\n<p>Calculate the elasticity of supply when p=3. Please simplify. Note that when p=3, we have q=2.</p>\n", 
+    "statement_latex": "A city's supply of an herb comes from many small home businesses. The\nsupply q of the herb is a function of the street price p. The Elasticity\nof Supply is by definition equal to\n\n\\begin{align*}\n-\\frac{p}{q}\\frac{\\textrm{d}q}{\\textrm{d}p}.\n\\end{align*}\n\nSuppose that a city's weekly supply q of the herb, in millions of grams,\nis related to the street price, p, in dollars per gram, by the equation\n\n\\begin{align*}\n\\displaystyle{}p^3+p=2q^3+q^2+10.\n\\end{align*}\n\nCalculate the elasticity of supply when p=3. Please simplify. Note that\nwhen p=3, we have q=2.", 
+    "statement_raw": "A city's supply of an herb comes from many small home businesses.  The supply q of the herb is a function of the street price p.  The Elasticity of Supply is by definition equal to\n\n:&lt;math>\n-\\frac{p}{q}\\frac{\\textrm{d}q}{\\textrm{d}p}.\n&lt;/math>\n\nSuppose that a city's weekly supply q of the herb, in millions of grams, is related to the street price, p, in dollars per gram, by the equation\n\n:&lt;math>\n\\displaystyle{}p^3+p=2q^3+q^2+10.\n&lt;/math>\n\nCalculate the elasticity of supply when p=3.  Please simplify.  Note that when p=3, we have q=2.\n", 
+    "term": "December", 
+    "topics": [
+        "Implicit_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_03", 
+    "year": 2010
 }

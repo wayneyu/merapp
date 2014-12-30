@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH221", 
-    "statement": "Find the standard matrix of the linear transformation of\n\\textbf{R}\\textsuperscript{3} which reflects across the \\emph{yz}-plane.", 
-    "year": 2011, 
-    "sols": [
-        "To find the standard matrix of this linear transformation, we simply\nconsider the image of the three base vectors.\n\nThe vector {[}1, 0, 0{]} is sent to the vector {[}-1, 0, 0{]} and the\nvectors {[}0, 1, 0{]} and {[}0, 0, 1{]} simply remain where they are\n(since they belong to the \\emph{yz}-plane itself). Hence the standard\nmatrix of this linear transformation is\n\n\\begin{align*}\\left[ \\begin{array}{ccc}\n-1 & 0 & 0\\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left[ \\begin{array}{ccc}\n-1  0  0\\\\\n0  1  0 \\\\\n0  0  1\n\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\left[ \\begin{array}{ccc}\n-1  0  0\\\\\n0  1  0 \\\\\n0  0  1\n\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH221", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What does this transformation do to the three basis vectors <span>[</span>1,0,0<span>]</span>, <span>[</span>0,1,0<span>]</span>, and <span>[</span>0,0,1<span>]</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "What does this transformation do to the three basis vectors {[}1,0,0{]},\n{[}0,1,0{]}, and {[}0,0,1{]}?"
-    ]
+    ], 
+    "hints_raw": [
+        "What does this transformation do to the three basis vectors [1,0,0], [0,1,0], and [0,0,1]?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To find the standard matrix of this linear transformation, we simply consider the image of the three base vectors.</p>\n<p>The vector <span>[</span>1, 0, 0<span>]</span> is sent to the vector <span>[</span>-1, 0, 0<span>]</span> and the vectors <span>[</span>0, 1, 0<span>]</span> and <span>[</span>0, 0, 1<span>]</span> simply remain where they are (since they belong to the <em>yz</em>-plane itself). Hence the standard matrix of this linear transformation is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[ \\begin{array}{ccc}\n-1 &amp; 0 &amp; 0\\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the standard matrix of this linear transformation, we simply\nconsider the image of the three base vectors.\n\nThe vector {[}1, 0, 0{]} is sent to the vector {[}-1, 0, 0{]} and the\nvectors {[}0, 1, 0{]} and {[}0, 0, 1{]} simply remain where they are\n(since they belong to the \\emph{yz}-plane itself). Hence the standard\nmatrix of this linear transformation is\n\n\\begin{align*}\n\\left[ \\begin{array}{ccc}\n-1 & 0 & 0\\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "To find the standard matrix of this linear transformation, we simply consider the image of the three base vectors.\n\nThe vector [1, 0, 0] is sent to the vector [-1, 0, 0] and the vectors [0, 1, 0] and [0, 0, 1] simply remain where they are (since they belong to the ''yz''-plane itself). Hence the standard matrix of this linear transformation is\n:&lt;math>\n\\left[ \\begin{array}{ccc}\n-1 &amp; 0 &amp; 0\\\\\n0 &amp; 1 &amp; 0 \\\\\n0 &amp; 0 &amp; 1\n\\end{array}\\right]\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Find the standard matrix of the linear transformation of <strong>R</strong><sup>3</sup> which reflects across the <em>yz</em>-plane.</p>\n", 
+    "statement_latex": "Find the standard matrix of the linear transformation of\n\\textbf{R}\\textsuperscript{3} which reflects across the \\emph{yz}-plane.", 
+    "statement_raw": "Find the standard matrix of the linear transformation of '''R'''&lt;sup>3&lt;/sup> which reflects across the ''yz''-plane.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH221/December_2011/Question_05_(a)", 
+    "year": 2011
 }

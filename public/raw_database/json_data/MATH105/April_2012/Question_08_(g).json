@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_08_(g)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Short-answer questions! No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nFor a certain function \\emph{$f$(x)}, the following equation holds:\n\n\\begin{align*}\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1-\\frac{k^2}{n^2}} = \\int_0^1 f(x)\\,dx.\\end{align*}\n\nFind \\emph{$f$(x)}.", 
-    "year": 2012, 
-    "sols": [
-        "We wish to find $f(x)$ so that\n\n\\begin{align*}\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} = \\int_0^1 f(x) dx.\\end{align*}\n\nThis requires making the limit of the Riemann sum (the expression on the\nleft) look more like:\n\n\\begin{align*}\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k).\\end{align*}\n\nOur interval is $[a,b] = [0,1]$ and this makes\n$\\Delta x = \\frac{1-0}{n} = \\frac{1}{n}$. We also know\n$x_k = 0 + k \\Delta x = \\frac{k}{n}.$ Let's rewrite the sum in terms of\n$\\Delta x$ and $x_k$:\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} &= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{1}{n} \\frac{k}{n} \\sqrt{1 - \\frac{k^2}{n^2}} \\\\\n&= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x (k \\Delta x) \\sqrt{1 - (k \\Delta x)^2} \\\\\n&= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}.\\end{align*}\n\nIn comparing what we want,\n$\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k)$, with\n$\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}$,\nwe must $f(x) = x \\sqrt{1 - x^2}$.\n\nTherefore $f(x) = x \\sqrt{1 - x^2}$."
+    "answer_html": "<p>Therefore <span class=\"math\">\\(f(x) = x \\sqrt{1 - x^2}\\)</span>.</p>\n", 
+    "answer_latex": "Therefore $f(x) = x \\sqrt{1 - x^2}$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
     ], 
-    "hints": [
-        "Alarm bells should be triggered into thinking this is a Riemann sum.\n\nRecall that for a function $f(x)$ we have that the general formula for a\nRiemann sum is\n\n\\begin{align*}\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k) = \\int_{a}^{b}f(x)\\,dx\\end{align*}\n\nwhere $\\Delta x = \\frac{b-a}{n}$ and lastly, $x_k = a + k\\Delta x$"
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Alarm bells should be triggered into thinking this is a Riemann sum.</p>\n<p>Recall that for a function <span class=\"math\">\\(f(x)\\)</span> we have that the general formula for a Riemann sum is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k) = \\int_{a}^{b}f(x)\\,dx\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span> and lastly, <span class=\"math\">\\(x_k = a + k\\Delta x\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Alarm bells should be triggered into thinking this is a Riemann sum.\n\nRecall that for a function $f(x)$ we have that the general formula for a\nRiemann sum is\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k) = \\int_{a}^{b}f(x)\\,dx\n\\end{align*}\n\nwhere $\\Delta x = \\frac{b-a}{n}$ and lastly, $x_k = a + k\\Delta x$"
+    ], 
+    "hints_raw": [
+        "Alarm bells should be triggered into thinking this is a Riemann sum.\n\nRecall that for a function &lt;math> f(x) &lt;/math> we have that the general formula for a Riemann sum is\n\n:&lt;math>\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k) = \\int_{a}^{b}f(x)\\,dx &lt;/math>\n\nwhere &lt;math> \\Delta x = \\frac{b-a}{n} &lt;/math> and lastly, &lt;math>x_k = a + k\\Delta x&lt;/math>\n"
+    ], 
+    "num_votes": 4, 
+    "question": "8 (g)", 
+    "rating": 67, 
+    "sols_html": [
+        "<p>We wish to find <span class=\"math\">\\(f(x)\\)</span> so that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} = \\int_0^1 f(x) dx.\\end{aligned}\\]</span></p>\n<p>This requires making the limit of the Riemann sum (the expression on the left) look more like:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k).\\end{aligned}\\]</span></p>\n<p>Our interval is <span class=\"math\">\\([a,b] = [0,1]\\)</span> and this makes <span class=\"math\">\\(\\Delta x = \\frac{1-0}{n} = \\frac{1}{n}\\)</span>. We also know <span class=\"math\">\\(x_k = 0 + k \\Delta x = \\frac{k}{n}.\\)</span> Let&#8217;s rewrite the sum in terms of <span class=\"math\">\\(\\Delta x\\)</span> and <span class=\"math\">\\(x_k\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} &amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{1}{n} \\frac{k}{n} \\sqrt{1 - \\frac{k^2}{n^2}} \\\\\n&amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x (k \\Delta x) \\sqrt{1 - (k \\Delta x)^2} \\\\\n&amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}.\\end{aligned}\\]</span></p>\n<p>In comparing what we want, <span class=\"math\">\\(\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k)\\)</span>, with <span class=\"math\">\\(\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}\\)</span>, we must <span class=\"math\">\\(f(x) = x \\sqrt{1 - x^2}\\)</span>.</p>\n<p>Therefore <span class=\"math\">\\(f(x) = x \\sqrt{1 - x^2}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We wish to find $f(x)$ so that\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} = \\int_0^1 f(x) dx.\n\\end{align*}\n\nThis requires making the limit of the Riemann sum (the expression on the\nleft) look more like:\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k).\n\\end{align*}\n\nOur interval is $[a,b] = [0,1]$ and this makes\n$\\Delta x = \\frac{1-0}{n} = \\frac{1}{n}$. We also know\n$x_k = 0 + k \\Delta x = \\frac{k}{n}.$ Let's rewrite the sum in terms of\n$\\Delta x$ and $x_k$:\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} &= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{1}{n} \\frac{k}{n} \\sqrt{1 - \\frac{k^2}{n^2}} \\\\\n&= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x (k \\Delta x) \\sqrt{1 - (k \\Delta x)^2} \\\\\n&= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}.\n\\end{align*}\n\nIn comparing what we want,\n$\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k)$, with\n$\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}$,\nwe must $f(x) = x \\sqrt{1 - x^2}$.\n\nTherefore $f(x) = x \\sqrt{1 - x^2}$."
+    ], 
+    "sols_raw": [
+        "We wish to find &lt;math>f(x)&lt;/math> so that\n\n:&lt;math>\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} = \\int_0^1 f(x) dx.&lt;/math>\n\nThis requires making the limit of the Riemann sum (the expression on the left) look more like:\n\n:&lt;math>\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k)&lt;/math>.\n\nOur interval is &lt;math>[a,b] = [0,1]&lt;/math> and this makes &lt;math>\\Delta x = \\frac{1-0}{n} = \\frac{1}{n}&lt;/math>. We also know &lt;math>x_k = 0 + k \\Delta x = \\frac{k}{n}.&lt;/math> Let's rewrite the sum in terms of &lt;math>\\Delta x&lt;/math> and &lt;math>x_k&lt;/math>:\n\n:&lt;math>\n\\begin{align}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1 - \\frac{k^2}{n^2}} &amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{1}{n} \\frac{k}{n} \\sqrt{1 - \\frac{k^2}{n^2}} \\\\\n&amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x (k \\Delta x) \\sqrt{1 - (k \\Delta x)^2} \\\\\n&amp;= \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}.\n\\end{align}\n&lt;/math>\n\nIn comparing what we want, &lt;math>\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\Delta x f(x_k)&lt;/math>, with &lt;math> \\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n (\\Delta x) x_k \\sqrt{1 - x_k^2}&lt;/math>, we must &lt;math>f(x) = x \\sqrt{1 - x^2}&lt;/math>.\n\nTherefore &lt;math>f(x) = x \\sqrt{1 - x^2}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><em>Short-answer questions! No credit will be given for the answer (even if it is correct) without the accompanying work.</em></p>\n<p>For a certain function <em><span class=\"math\">\\(f\\)</span>(x)</em>, the following equation holds:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1-\\frac{k^2}{n^2}} = \\int_0^1 f(x)\\,dx.\\end{aligned}\\]</span></p>\n<p>Find <em><span class=\"math\">\\(f\\)</span>(x)</em>.</p>\n", 
+    "statement_latex": "\\emph{Short-answer questions! No credit will be given for the answer\n(even if it is correct) without the accompanying work.}\n\nFor a certain function \\emph{$f$(x)}, the following equation holds:\n\n\\begin{align*}\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1-\\frac{k^2}{n^2}} = \\int_0^1 f(x)\\,dx.\n\\end{align*}\n\nFind \\emph{$f$(x)}.", 
+    "statement_raw": "''Short-answer questions! No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\nFor a certain function ''&amp;fnof;(x)'', the following equation holds:\n\n:&lt;math>\n\\lim_{n \\rightarrow \\infty} \\sum_{k=1}^n \\frac{k}{n^2} \\sqrt{1-\\frac{k^2}{n^2}} = \\int_0^1 f(x)\\,dx.\n&lt;/math>\n\nFind ''&amp;fnof;(x)''.\n", 
+    "term": "April", 
+    "topics": [
+        "Riemann_sum"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(g)", 
+    "year": 2012
 }

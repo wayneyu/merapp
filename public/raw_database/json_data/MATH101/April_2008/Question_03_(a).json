@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_03_(a)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.\\end{align*}", 
-    "year": 2008, 
-    "sols": [
-        "We follow the hints and first rewrite the integral.\n\n\\begin{align*}\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.\\end{align*}\nNow we substitute\n\n\\begin{align*}u = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.\\end{align*}\nFurther, for $x=1$ we have $u=1$, and for $x=2$ we have $u=1/2$.\nTherefore,\n\n\\begin{align*}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&= -\\int_1^{1/2} e^u\\,du \\\\\n&= \\int_{1/2}^1 e^u\\,du \\\\\n&= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&= e-e^{1/2}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_1^2 x^{-2}e^{x^{-1}}\\,dx=e-e^{1/2}.\\)</span></p>\n", 
+    "answer_latex": " $\\int_1^2 x^{-2}e^{x^{-1}}\\,dx=e-e^{1/2}.$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try a substitution.</p>\n", 
+        "<p>Maybe it helps to rewrite the integrand as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try a substitution.", 
-        "Maybe it helps to rewrite the integrand as\n\n\\begin{align*}\\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}.\\end{align*}"
-    ]
+        "Maybe it helps to rewrite the integrand as\n\n\\begin{align*}\n\\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}.\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Try a substitution.\n", 
+        "Maybe it helps to rewrite the integrand as\n:&lt;math> \\frac{e^{1/x}}{x^2} = x^{-2} e^{x^{-1}}. &lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "3 (a)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We follow the hints and first rewrite the integral.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.\\end{aligned}\\]</span></p>\n<p>Now we substitute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.\\end{aligned}\\]</span></p>\n<p>Further, for <span class=\"math\">\\(x=1\\)</span> we have <span class=\"math\">\\(u=1\\)</span>, and for <span class=\"math\">\\(x=2\\)</span> we have <span class=\"math\">\\(u=1/2\\)</span>. Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &amp;= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&amp;= -\\int_1^{1/2} e^u\\,du \\\\\n&amp;= \\int_{1/2}^1 e^u\\,du \\\\\n&amp;= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&amp;= e-e^{1/2}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We follow the hints and first rewrite the integral.\n\n\\begin{align*}\n\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.\n\\end{align*}\nNow we substitute\n\n\\begin{align*}\nu = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.\n\\end{align*}\nFurther, for $x=1$ we have $u=1$, and for $x=2$ we have $u=1/2$.\nTherefore,\n\n\\begin{align*}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&= -\\int_1^{1/2} e^u\\,du \\\\\n&= \\int_{1/2}^1 e^u\\,du \\\\\n&= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&= e-e^{1/2}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We follow the hints and first rewrite the integral.\n:&lt;math> \\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx = \\int_1^2 x^{-2}e^{x^{-1}}\\,dx.&lt;/math>\nNow we substitute\n:&lt;math> u = x^{-1}, \\quad \\frac{du}{dx} = -x^{-2}, \\quad dx = -x^2\\,du.&lt;/math>\nFurther, for &lt;math>x=1&lt;/math> we have &lt;math>u=1&lt;/math>, and for &lt;math>x=2&lt;/math> we have &lt;math>u=1/2&lt;/math>. Therefore,\n\n&lt;math>\\begin{align}\n\\int_1^2 x^{-2}e^{x^{-1}}\\,dx &amp;= \\int_1^{1/2} x^{-2}e^u(-x^2\\,du) \\\\\n&amp;= -\\int_1^{1/2} e^u\\,du \\\\\n&amp;= \\int_{1/2}^1 e^u\\,du \\\\\n&amp;= \\left.e^{u}\\right|_{1/2}^1 \\\\\n&amp;= e-e^{1/2}.\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem.</strong> Justify your answers and <strong>show all your work.</strong> Simplification of answers is not required.</p>\n<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem.} Justify your answers and \\textbf{show\nall your work.} Simplification of answers is not required.\n\nEvaluate the following integral.\n\n\\begin{align*}\n\\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.\n\\end{align*}", 
+    "statement_raw": "'''Full-Solution Problem.''' Justify your answers and '''show all your work.''' Simplification of answers is not required.\n\nEvaluate the following integral.\n\n:&lt;math> \\int_1^2 \\frac{e^{1/x}}{x^2}\\,dx.&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_03_(a)", 
+    "year": 2008
 }

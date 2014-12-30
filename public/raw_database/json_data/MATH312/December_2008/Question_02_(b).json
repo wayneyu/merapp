@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH312", 
-    "statement": "Find the last three digits of the decimal expansion of\n$\\displaystyle 2009^{1202}$.", 
-    "year": 2008, 
-    "sols": [
-        "Euler's theorem tells us that if $\\displaystyle \\gcd(a,1000)=1$ then\n\n$\\displaystyle a^{\\phi(1000)} \\equiv a^{\\phi(8)\\phi(125)} \\equiv a^{4\\cdot 100} \\equiv a^{400} \\equiv 1 \\mod{1000}$.\n\nThus, we have\n\n$\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}$\n\nand so the last three digits are 081."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}\\)</span>and so the last three digits are 081.</p>\n", 
+    "answer_latex": "$\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}$and so the last three digits are 081.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Consider the number modulo 1000.</p>\n", 
+        "<p>Use Euler&#8217;s theorem.</p>\n"
+    ], 
+    "hints_latex": [
         "Consider the number modulo 1000.", 
         "Use Euler's theorem."
-    ]
+    ], 
+    "hints_raw": [
+        "Consider the number modulo 1000.\n", 
+        "Use Euler's theorem.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Euler&#8217;s theorem tells us that if <span class=\"math\">\\(\\displaystyle \\gcd(a,1000)=1\\)</span> then</p>\n<p><span class=\"math\">\\(\\displaystyle a^{\\phi(1000)} \\equiv a^{\\phi(8)\\phi(125)} \\equiv a^{4\\cdot 100} \\equiv a^{400} \\equiv 1 \\mod{1000}\\)</span>.</p>\n<p>Thus, we have</p>\n<p><span class=\"math\">\\(\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}\\)</span></p>\n<p>and so the last three digits are 081.</p>\n"
+    ], 
+    "sols_latex": [
+        "Euler's theorem tells us that if $\\displaystyle \\gcd(a,1000)=1$ then\n\n$\\displaystyle a^{\\phi(1000)} \\equiv a^{\\phi(8)\\phi(125)} \\equiv a^{4\\cdot 100} \\equiv a^{400} \\equiv 1 \\mod{1000}$.\n\nThus, we have\n\n$\\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}$\n\nand so the last three digits are 081."
+    ], 
+    "sols_raw": [
+        "Euler's theorem tells us that if &lt;math> \\displaystyle \\gcd(a,1000)=1&lt;/math> then\n\n&lt;math> \\displaystyle a^{\\phi(1000)} \\equiv a^{\\phi(8)\\phi(125)} \\equiv a^{4\\cdot 100} \\equiv a^{400} \\equiv 1 \\mod{1000}&lt;/math>.\n\nThus, we have \n\n&lt;math> \\displaystyle 2009^{2012} \\equiv 9^{1202} \\equiv (9^{400})^{3}9^{2} \\equiv 81 \\mod{1000}&lt;/math>\n\nand so the last three digits are 081.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the last three digits of the decimal expansion of <span class=\"math\">\\(\\displaystyle 2009^{1202}\\)</span>.</p>\n", 
+    "statement_latex": "Find the last three digits of the decimal expansion of\n$\\displaystyle 2009^{1202}$.", 
+    "statement_raw": "Find the last three digits of the decimal expansion of &lt;math> \\displaystyle 2009^{1202}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Euler%27s_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_02_(b)", 
+    "year": 2008
 }

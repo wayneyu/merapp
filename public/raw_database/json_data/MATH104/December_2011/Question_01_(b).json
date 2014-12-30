@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH104", 
-    "statement": "Find the value of \\emph{a} for which \\emph{f}(\\emph{x}) is continuous at\n\\emph{x} = 1, where\n\n\\begin{align*}f(x) = \\begin{cases}\n2x^2-\\ln(x) & \\text{if } x \\ge 1,\\\\\nx^3-4ax & \\text{if } x <1.\n\\end{cases}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "For \\emph{f}(\\emph{x}) to be continuous at the point \\emph{x} = 1, we\nneed\n\n\\begin{align*}\\displaystyle 2x^2-\\ln(x) = x^3-4ax\\end{align*}\n\nat \\emph{x} = 1. Substituting \\emph{x} = 1 into this equation and\nsolving for \\emph{a} yields\n\n\\begin{align*}\n2(1)^2-\\ln(1) &= (1)^3-4a(1) \\\\\n2 - 0 &= 1-4a \\\\\n1 &= -4a \\\\\na&=-1/4\\end{align*} Therefore, \\emph{a} = -1/4."
+    "answer_html": "<p><span class=\"math\">\\(a=-1/4\\)</span> Therefore, <em>a</em> = -1/4.</p>\n", 
+    "answer_latex": " $a=-1/4$  Therefore, \\emph{a} = -1/4.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A function is continuous at <span class=\"math\">\\(x = a\\)</span> if the limit from the left, from the right, and <span class=\"math\">\\(f(a)\\)</span> all agree.</p>\n"
+    ], 
+    "hints_latex": [
         "A function is continuous at $x = a$ if the limit from the left, from the\nright, and $f(a)$ all agree."
-    ]
+    ], 
+    "hints_raw": [
+        "A function is continuous at &lt;math>x = a&lt;/math> if the limit from the left, from the right, and &lt;math>f(a)&lt;/math> all agree.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b)", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>For <em>f</em>(<em>x</em>) to be continuous at the point <em>x</em> = 1, we need</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 2x^2-\\ln(x) = x^3-4ax\\end{aligned}\\]</span></p>\n<p>at <em>x</em> = 1. Substituting <em>x</em> = 1 into this equation and solving for <em>a</em> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2(1)^2-\\ln(1) &amp;= (1)^3-4a(1) \\\\\n2 - 0 &amp;= 1-4a \\\\\n1 &amp;= -4a \\\\\na&amp;=-1/4\\end{aligned}\\]</span></p>\n<p>Therefore, <em>a</em> = -1/4.</p>\n"
+    ], 
+    "sols_latex": [
+        "For \\emph{f}(\\emph{x}) to be continuous at the point \\emph{x} = 1, we\nneed\n\n\\begin{align*}\n\\displaystyle 2x^2-\\ln(x) = x^3-4ax\n\\end{align*}\n\nat \\emph{x} = 1. Substituting \\emph{x} = 1 into this equation and\nsolving for \\emph{a} yields\n\n\\begin{align*}\n2(1)^2-\\ln(1) &= (1)^3-4a(1) \\\\\n2 - 0 &= 1-4a \\\\\n1 &= -4a \\\\\na&=-1/4\n\\end{align*} Therefore, \\emph{a} = -1/4."
+    ], 
+    "sols_raw": [
+        "For ''f''(''x'') to be continuous at the point ''x'' = 1, we need \n\n:&lt;math>\\displaystyle 2x^2-\\ln(x) = x^3-4ax&lt;/math>\n\nat ''x'' = 1. Substituting ''x'' = 1 into this equation and solving for ''a'' yields\n\n:&lt;math>\\begin{align}\n2(1)^2-\\ln(1) &amp;= (1)^3-4a(1) \\\\\n2 - 0 &amp;= 1-4a \\\\\n1 &amp;= -4a \\\\\na&amp;=-1/4\n\\end{align}\n&lt;/math>\nTherefore, ''a'' = -1/4.\n"
+    ], 
+    "solvers": [
+        "GregMayer"
+    ], 
+    "statement_html": "<p>Find the value of <em>a</em> for which <em>f</em>(<em>x</em>) is continuous at <em>x</em> = 1, where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\n2x^2-\\ln(x) &amp; \\text{if } x \\ge 1,\\\\\nx^3-4ax &amp; \\text{if } x &lt;1.\n\\end{cases}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find the value of \\emph{a} for which \\emph{f}(\\emph{x}) is continuous at\n\\emph{x} = 1, where\n\n\\begin{align*}\nf(x) = \\begin{cases}\n2x^2-\\ln(x) & \\text{if } x \\ge 1,\\\\\nx^3-4ax & \\text{if } x <1.\n\\end{cases}\n\\end{align*}", 
+    "statement_raw": "Find the value of ''a'' for which ''f''(''x'') is continuous at ''x'' = 1, where\n\n:&lt;math>f(x) = \\begin{cases}\n2x^2-\\ln(x) &amp; \\text{if } x \\ge 1,\\\\\nx^3-4ax &amp; \\text{if } x &lt;1.\n\\end{cases}&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Continuity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(b)", 
+    "year": 2011
 }

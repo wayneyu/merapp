@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Calculate $\\displaystyle \\sum_{k=1}^{10}(k+3)^{2}$", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Calculate <span class=\"math\">\\(\\displaystyle \\sum_{k=1}^{10}(k+3)^{2}\\)</span></p>\n", 
+    "statement_latex": "Calculate $\\displaystyle \\sum_{k=1}^{10}(k+3)^{2}$", 
+    "statement_raw": "Calculate &lt;math> \\displaystyle \\sum_{k=1}^{10}(k+3)^{2} &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Summations"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_02_(a)", 
+    "year": 2006
 }

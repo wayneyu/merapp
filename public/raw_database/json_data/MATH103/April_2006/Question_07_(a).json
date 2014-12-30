@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "In an experiment involving a bacteria population, $N(t)$ denotes the\nsize of the population (measured in thousands of individuals) as a\nfunction of time, starting at $t=0$. The initial population is\n$N(0) = N_{0}$.\n\na) Suppose the population growth is governed by the differential\nequation\n\n$\\displaystyle \\frac{dN}{dt} = \\frac{N}{t+1}$\n\nFind $N(t)$ if $N(0)=2$.", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "7 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>In an experiment involving a bacteria population, <span class=\"math\">\\(N(t)\\)</span> denotes the size of the population (measured in thousands of individuals) as a function of time, starting at <span class=\"math\">\\(t=0\\)</span>. The initial population is <span class=\"math\">\\(N(0) = N_{0}\\)</span>.</p>\n<p>a) Suppose the population growth is governed by the differential equation</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dN}{dt} = \\frac{N}{t+1}\\)</span></p>\n<p>Find <span class=\"math\">\\(N(t)\\)</span> if <span class=\"math\">\\(N(0)=2\\)</span>.</p>\n", 
+    "statement_latex": "In an experiment involving a bacteria population, $N(t)$ denotes the\nsize of the population (measured in thousands of individuals) as a\nfunction of time, starting at $t=0$. The initial population is\n$N(0) = N_{0}$.\n\na) Suppose the population growth is governed by the differential\nequation\n\n$\\displaystyle \\frac{dN}{dt} = \\frac{N}{t+1}$\n\nFind $N(t)$ if $N(0)=2$.", 
+    "statement_raw": "In an experiment involving a bacteria population, &lt;math> N(t) &lt;/math> denotes the size of the population (measured in thousands of individuals) as a function of time, starting at &lt;math> t=0 &lt;/math>. The initial population is &lt;math> N(0) = N_{0} &lt;/math>.\n\na) Suppose the population growth is governed by the differential equation\n\n&lt;math>\n\\displaystyle\n\\frac{dN}{dt} = \\frac{N}{t+1}\n&lt;/math>\n\nFind &lt;math> N(t) &lt;/math> if &lt;math> N(0)=2 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_07_(a)", 
+    "year": 2006
 }

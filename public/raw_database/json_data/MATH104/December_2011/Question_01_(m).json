@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(m)", 
-    "course": "MATH104", 
-    "statement": "Find two positive real numbers $m$ and $n$ whose product is 50 and whose\nsum is as small as possible.", 
-    "year": 2011, 
-    "sols": [
-        "We wish to minimize the quantity $S = m + n$ subject to $mn = 50$. Using\nour constraint we rewrite $S$ as\n\n\\begin{align*}S = m + \\frac{50}{m}.\\end{align*}\n\nTo determine the minimum of this quantity $S$, we first find the\ncritical points of $S$:\n\n\\begin{align*}\n\\frac{dS}{dm} = 1 - \\frac{50}{m^{2}} &= 0 \\quad \\rightarrow \\quad m^{2} = 50.\\end{align*}\n\nDropping the negative solution, we find\n\n\\begin{align*}m = \\sqrt{50}.\\end{align*}\n\nThe corresponding value for $n$ is determined from the constraint\n$mn = 50$, and is therefore equal to\n\n\\begin{align*}n = 50/\\sqrt{50} = \\sqrt{50}.\\end{align*}\n\nIs this critical point a local minimum? Apply the second derivative\ntest:\n\n\\begin{align*}\\frac{d^{2}S}{dm^{2}} = \\frac{100}{m^{3}} > 0\\end{align*} at the critical point.\nTherefore, this critical point is a minimum of $S$ and the two values\n$m,n$ that have product equal to 50 and the smallest sum are\n\n\\begin{align*}m = \\sqrt{50}, \\ n = \\sqrt{50}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(m=\\sqrt{50}.\\)</span></p>\n", 
+    "answer_latex": " $m=\\sqrt{50}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "GregMayer", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A common error for this type of question is to look for solutions <span class=\"math\">\\(m\\)</span>,<span class=\"math\">\\(n\\)</span> that are integers through trial and error. This is an optimization problem. As such, you should determine what quantity you want to optimize and what your constraint is.</p>\n"
+    ], 
+    "hints_latex": [
         "A common error for this type of question is to look for solutions\n$m$,$n$ that are integers through trial and error. This is an\noptimization problem. As such, you should determine what quantity you\nwant to optimize and what your constraint is."
-    ]
+    ], 
+    "hints_raw": [
+        "A common error for this type of question is to look for solutions &lt;math>m&lt;/math>,&lt;math>n&lt;/math> that are integers through trial and error. This is an optimization problem. As such, you should determine what quantity you want to optimize and what your constraint is.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (m)", 
+    "rating": 82, 
+    "sols_html": [
+        "<p>We wish to minimize the quantity <span class=\"math\">\\(S = m + n\\)</span> subject to <span class=\"math\">\\(mn = 50\\)</span>. Using our constraint we rewrite <span class=\"math\">\\(S\\)</span> as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS = m + \\frac{50}{m}.\\end{aligned}\\]</span></p>\n<p>To determine the minimum of this quantity <span class=\"math\">\\(S\\)</span>, we first find the critical points of <span class=\"math\">\\(S\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dS}{dm} = 1 - \\frac{50}{m^{2}} &amp;= 0 \\quad \\rightarrow \\quad m^{2} = 50.\\end{aligned}\\]</span></p>\n<p>Dropping the negative solution, we find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nm = \\sqrt{50}.\\end{aligned}\\]</span></p>\n<p>The corresponding value for <span class=\"math\">\\(n\\)</span> is determined from the constraint <span class=\"math\">\\(mn = 50\\)</span>, and is therefore equal to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nn = 50/\\sqrt{50} = \\sqrt{50}.\\end{aligned}\\]</span></p>\n<p>Is this critical point a local minimum? Apply the second derivative test:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^{2}S}{dm^{2}} = \\frac{100}{m^{3}} &gt; 0\\end{aligned}\\]</span></p>\n<p>at the critical point. Therefore, this critical point is a minimum of <span class=\"math\">\\(S\\)</span> and the two values <span class=\"math\">\\(m,n\\)</span> that have product equal to 50 and the smallest sum are</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nm = \\sqrt{50}, \\ n = \\sqrt{50}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We wish to minimize the quantity $S = m + n$ subject to $mn = 50$. Using\nour constraint we rewrite $S$ as\n\n\\begin{align*}\nS = m + \\frac{50}{m}.\n\\end{align*}\n\nTo determine the minimum of this quantity $S$, we first find the\ncritical points of $S$:\n\n\\begin{align*}\n\\frac{dS}{dm} = 1 - \\frac{50}{m^{2}} &= 0 \\quad \\rightarrow \\quad m^{2} = 50.\n\\end{align*}\n\nDropping the negative solution, we find\n\n\\begin{align*}\nm = \\sqrt{50}.\n\\end{align*}\n\nThe corresponding value for $n$ is determined from the constraint\n$mn = 50$, and is therefore equal to\n\n\\begin{align*}\nn = 50/\\sqrt{50} = \\sqrt{50}.\n\\end{align*}\n\nIs this critical point a local minimum? Apply the second derivative\ntest:\n\n\\begin{align*}\n\\frac{d^{2}S}{dm^{2}} = \\frac{100}{m^{3}} > 0\n\\end{align*} at the critical point.\nTherefore, this critical point is a minimum of $S$ and the two values\n$m,n$ that have product equal to 50 and the smallest sum are\n\n\\begin{align*}\nm = \\sqrt{50}, \\ n = \\sqrt{50}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We wish to minimize the quantity &lt;math>S = m + n&lt;/math> subject to &lt;math>mn = 50&lt;/math>. Using our constraint we rewrite &lt;math>S&lt;/math> as\n\n:&lt;math>\nS = m + \\frac{50}{m}.\n&lt;/math>\n\nTo determine the minimum of this quantity &lt;math>S&lt;/math>, we first find the critical points of &lt;math>S&lt;/math>:\n\n:&lt;math>\n\\begin{align}\n\\frac{dS}{dm} = 1 - \\frac{50}{m^{2}} &amp;= 0 \\quad \\rightarrow \\quad m^{2} = 50.\n\\end{align}\n&lt;/math>\n\nDropping the negative solution, we find \n\n:&lt;math>m = \\sqrt{50}.&lt;/math>\n\nThe corresponding value for &lt;math>n&lt;/math> is determined from the constraint &lt;math>mn = 50&lt;/math>, and is therefore equal to \n\n:&lt;math>n = 50/\\sqrt{50} = \\sqrt{50}.&lt;/math>\n\nIs this critical point a local minimum? Apply the second derivative test:\n\n:&lt;math>\n\\frac{d^{2}S}{dm^{2}} = \\frac{100}{m^{3}} > 0\n&lt;/math>\nat the critical point. Therefore, this critical point is a minimum of &lt;math>S&lt;/math> and the two values &lt;math>m,n&lt;/math> that have product equal to 50 and the smallest sum are\n:&lt;math>m = \\sqrt{50}, \\ n = \\sqrt{50}.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Find two positive real numbers <span class=\"math\">\\(m\\)</span> and <span class=\"math\">\\(n\\)</span> whose product is 50 and whose sum is as small as possible.</p>\n", 
+    "statement_latex": "Find two positive real numbers $m$ and $n$ whose product is 50 and whose\nsum is as small as possible.", 
+    "statement_raw": "Find two positive real numbers &lt;math>m&lt;/math> and &lt;math>n&lt;/math> whose product is 50 and whose sum is as small as possible.\n", 
+    "term": "December", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(m)", 
+    "year": 2011
 }

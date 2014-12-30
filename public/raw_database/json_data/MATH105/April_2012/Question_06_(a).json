@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p>We wish to maximize the revenue <span class=\"math\">\\(f(p,q) = pq\\)</span> subject to the constraint <span class=\"math\">\\(g(p,q) = 800\\)</span>.</p>\n", 
+    "answer_latex": "We wish to maximize the revenue $f(p,q) = pq$ subject to the constraint\n$g(p,q) = 800$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH105", 
-    "statement": "According to market research, the demand curve for a local pizza\nrestaurant satisfies the following relation: if \\emph{p} is the price of\na pizza (in dollars), and \\emph{q} is the number of pizzas sold per day,\nthen\n\n\\begin{align*}\\displaystyle\np^2 + 4q^2 = 800.\\end{align*}\n\nThe restaurant owners want to determine what price the restaurant should\ncharge for each pizza in order to make their daily revenue as high as\npossible.\n\n\\textbf{(a)} Formulate this as a constrained optimization problem,\nclearly stating the objective function and the constraint.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Is the given equation the revenue or the constraint? How is the other one calculated?</p>\n"
+    ], 
+    "hints_latex": [
+        "Is the given equation the revenue or the constraint? How is the other\none calculated?"
+    ], 
+    "hints_raw": [
+        "Is the given equation the revenue or the constraint? How is the other one calculated?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "6 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>We wish to maximize the revenue <span class=\"math\">\\(f(p,q) = pq\\)</span> subject to the constraint <span class=\"math\">\\(g(p,q) = p^2 + 4q^2 = 800\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "We wish to maximize the revenue $f(p,q) = pq$ subject to the constraint\n$g(p,q) = p^2 + 4q^2 = 800$."
     ], 
-    "hints": [
-        "Is the given equation the revenue or the constraint? How is the other\none calculated?"
-    ]
+    "sols_raw": [
+        "We wish to &lt;b>maximize&lt;/b> the revenue &lt;math>f(p,q) = pq&lt;/math> &lt;b>subject to the constraint&lt;/b> &lt;math>g(p,q) = p^2 + 4q^2 = 800&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>According to market research, the demand curve for a local pizza restaurant satisfies the following relation: if <em>p</em> is the price of a pizza (in dollars), and <em>q</em> is the number of pizzas sold per day, then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np^2 + 4q^2 = 800.\\end{aligned}\\]</span></p>\n<p>The restaurant owners want to determine what price the restaurant should charge for each pizza in order to make their daily revenue as high as possible.</p>\n<p><strong>(a)</strong> Formulate this as a constrained optimization problem, clearly stating the objective function and the constraint.</p>\n", 
+    "statement_latex": "According to market research, the demand curve for a local pizza\nrestaurant satisfies the following relation: if \\emph{p} is the price of\na pizza (in dollars), and \\emph{q} is the number of pizzas sold per day,\nthen\n\n\\begin{align*}\n\\displaystyle\np^2 + 4q^2 = 800.\n\\end{align*}\n\nThe restaurant owners want to determine what price the restaurant should\ncharge for each pizza in order to make their daily revenue as high as\npossible.\n\n\\textbf{(a)} Formulate this as a constrained optimization problem,\nclearly stating the objective function and the constraint.", 
+    "statement_raw": "According to market research, the demand curve for a local pizza restaurant satis\ufb01es the following relation: if ''p'' is the price of a pizza (in dollars), and ''q'' is the number of pizzas sold per day, then\n\n:&lt;math> \\displaystyle\np^2 + 4q^2 = 800.\n&lt;/math>\n\nThe restaurant owners want to determine what price the restaurant should charge for each pizza in order to make their daily revenue as high as possible.\n\n'''(a)''' Formulate this as a constrained optimization problem, clearly stating the objective function and the constraint.\n", 
+    "term": "April", 
+    "topics": [
+        "Lagrange_multipliers", 
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_06_(a)", 
+    "year": 2012
 }

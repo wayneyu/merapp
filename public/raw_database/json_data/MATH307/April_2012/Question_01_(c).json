@@ -1,9 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Suppose you are given a set of \\emph{N} data points\n\\emph{(x\\textsubscript{n}, y\\textsubscript{n})}, with\n\\emph{x\\textsubscript{n}} increasing, and you wish to interpolate these\npoints with a spline function \\emph{$f$}, where \\emph{$f$(x)} is given by\nthe cubic polynomial \\emph{p\\textsubscript{n}(x)} on each interval\n\\emph{(x\\textsubscript{n}, x\\textsubscript{n+1})} for \\emph{n = 1, ...,\nN-1}:\n\n\\begin{align*}\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\\end{align*}\n\n\\textbf{(c)} Now suppose \\emph{y\\textsubscript{1} = y\\textsubscript{N}}\nand you wish the spline to be \\emph{periodic}, which means adding the\ntwo conditions $\\displaystyle f'(x_1) = f'(x_N)$ and\n$\\displaystyle f''(x_1) = f''(x_N)$. Write down the two equations\nrequired for these conditions.", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Suppose you are given a set of <em>N</em> data points <em>(x<sub>n</sub>, y<sub>n</sub>)</em>, with <em>x<sub>n</sub></em> increasing, and you wish to interpolate these points with a spline function <em><span class=\"math\">\\(f\\)</span></em>, where <em><span class=\"math\">\\(f\\)</span>(x)</em> is given by the cubic polynomial <em>p<sub>n</sub>(x)</em> on each interval <em>(x<sub>n</sub>, x<sub>n+1</sub>)</em> for <em>n = 1, ..., N-1</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> Now suppose <em>y<sub>1</sub> = y<sub>N</sub></em> and you wish the spline to be <em>periodic</em>, which means adding the two conditions <span class=\"math\">\\(\\displaystyle f&#39;(x_1) = f&#39;(x_N)\\)</span> and <span class=\"math\">\\(\\displaystyle f&#39;&#39;(x_1) = f&#39;&#39;(x_N)\\)</span>. Write down the two equations required for these conditions.</p>\n", 
+    "statement_latex": "Suppose you are given a set of \\emph{N} data points\n\\emph{(x\\textsubscript{n}, y\\textsubscript{n})}, with\n\\emph{x\\textsubscript{n}} increasing, and you wish to interpolate these\npoints with a spline function \\emph{$f$}, where \\emph{$f$(x)} is given by\nthe cubic polynomial \\emph{p\\textsubscript{n}(x)} on each interval\n\\emph{(x\\textsubscript{n}, x\\textsubscript{n+1})} for \\emph{n = 1, ...,\nN-1}:\n\n\\begin{align*}\n\\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\n\\end{align*}\n\n\\textbf{(c)} Now suppose \\emph{y\\textsubscript{1} = y\\textsubscript{N}}\nand you wish the spline to be \\emph{periodic}, which means adding the\ntwo conditions $\\displaystyle f'(x_1) = f'(x_N)$ and\n$\\displaystyle f''(x_1) = f''(x_N)$. Write down the two equations\nrequired for these conditions.", 
+    "statement_raw": "Suppose you are given a set of ''N'' data points ''(x&lt;sub>n&lt;/sub>, y&lt;sub>n&lt;/sub>)'', with ''x&lt;sub>n&lt;/sub>'' increasing, and you wish to interpolate these points with a spline function ''&amp;fnof;'', where ''&amp;fnof;(x)'' is given by the cubic polynomial ''p&lt;sub>n&lt;/sub>(x)'' on each interval ''(x&lt;sub>n&lt;/sub>, x&lt;sub>n+1&lt;/sub>)'' for ''n = 1, ..., N-1'':\n\n:&lt;math> \\displaystyle\np_n(x) = a_n(x-x_n)^3 + b_n(x-x_n)^2 + c_n(x-x_n) + d_n\n&lt;/math>\n\n'''(c)''' Now suppose ''y&lt;sub>1&lt;/sub> = y&lt;sub>N&lt;/sub>'' and you wish the spline to be ''periodic'', which means adding the two conditions &lt;math>\\displaystyle f'(x_1) = f'(x_N)&lt;/math> and &lt;math>\\displaystyle f''(x_1) = f''(x_N)&lt;/math>. Write down the two equations required for these conditions.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_01_(c)", 
+    "year": 2012
 }

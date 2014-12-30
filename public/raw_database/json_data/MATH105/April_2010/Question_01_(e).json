@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
-    "course": "MATH105", 
-    "statement": "Compute the average value of\n\n\\begin{align*}f(x) = \\frac1{x}\\end{align*}\n\nover the interval 1 $\\leq$ \\emph{x} $\\leq$ \\emph{e}.", 
-    "year": 2010, 
-    "sols": [
-        "This is simple matter of evaluating an integral. From the definition of\nthe average value of a function on an interval, we can write an\nexpression for the average value of $1/x$ on the interval $[1,e]$:\n\n\\begin{align*}\nf_{avg} &= \\frac{1}{e - 1}\\int_{1}^{e}\\frac{1}{x}\\,dx \\\\ &= \\frac{1}{e - 1}\\ln(x)\\Big\\vert_{1}^{e}\n\\\\f_{avg} &= \\frac{1}{e - 1}\\end{align*}\n\nSo the average value of $1/x$ on the interval $[1,e]$ is $(e - 1)^{-1}$."
+    "answer_html": "<p>So the average value of <span class=\"math\">\\(1/x\\)</span> on the interval <span class=\"math\">\\([1,e]\\)</span> is <span class=\"math\">\\((e - 1)^{-1}\\)</span>.</p>\n", 
+    "answer_latex": "So the average value of $1/x$ on the interval $[1,e]$ is $(e - 1)^{-1}$.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "What is the definition for the average value of a function, $f(x)$, on\nan interval, $[a,b]$?\n\nSee the related\n\\href{http://en.wikipedia.org/wiki/Mean\\#Mean_of_a_function}{wikipedia\narticle}. Note that mean and average have the same meaning in this\ncontext."
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is the definition for the average value of a function, <span class=\"math\">\\(f(x)\\)</span>, on an interval, <span class=\"math\">\\([a,b]\\)</span>?</p>\n<p>See the related <span>wikipedia article</span>. Note that mean and average have the same meaning in this context.</p>\n"
+    ], 
+    "hints_latex": [
+        "What is the definition for the average value of a function, $f(x)$, on\nan interval, $[a,b]$?\n\nSee the related\n{wikipedia\narticle}. Note that mean and average have the same meaning in this\ncontext."
+    ], 
+    "hints_raw": [
+        "What is the definition for the average value of a function, &lt;math>f(x)&lt;/math>, on an interval, &lt;math>[a,b]&lt;/math>?\n\nSee the related [http://en.wikipedia.org/wiki/Mean#Mean_of_a_function wikipedia article]. Note that mean and average have the same meaning in this context.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (e)", 
+    "rating": 76, 
+    "sols_html": [
+        "<p>This is simple matter of evaluating an integral. From the definition of the average value of a function on an interval, we can write an expression for the average value of <span class=\"math\">\\(1/x\\)</span> on the interval <span class=\"math\">\\([1,e]\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf_{avg} &amp;= \\frac{1}{e - 1}\\int_{1}^{e}\\frac{1}{x}\\,dx \\\\ &amp;= \\frac{1}{e - 1}\\ln(x)\\Big\\vert_{1}^{e}\n\\\\f_{avg} &amp;= \\frac{1}{e - 1}\\end{aligned}\\]</span></p>\n<p>So the average value of <span class=\"math\">\\(1/x\\)</span> on the interval <span class=\"math\">\\([1,e]\\)</span> is <span class=\"math\">\\((e - 1)^{-1}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "This is simple matter of evaluating an integral. From the definition of\nthe average value of a function on an interval, we can write an\nexpression for the average value of $1/x$ on the interval $[1,e]$:\n\n\\begin{align*}\nf_{avg} &= \\frac{1}{e - 1}\\int_{1}^{e}\\frac{1}{x}\\,dx \\\\ &= \\frac{1}{e - 1}\\ln(x)\\Big\\vert_{1}^{e}\n\\\\f_{avg} &= \\frac{1}{e - 1}\n\\end{align*}\n\nSo the average value of $1/x$ on the interval $[1,e]$ is $(e - 1)^{-1}$."
+    ], 
+    "sols_raw": [
+        "This is simple matter of evaluating an integral. From the definition of the average value of a function on an interval, we can write an expression for the average value of &lt;math>1/x&lt;/math> on the interval &lt;math>[1,e]&lt;/math>:\n\n:&lt;math>\n\\begin{align}\nf_{avg} &amp;= \\frac{1}{e - 1}\\int_{1}^{e}\\frac{1}{x}\\,dx \\\\ &amp;= \\frac{1}{e - 1}\\ln(x)\\Big\\vert_{1}^{e}\n\\\\f_{avg} &amp;= \\frac{1}{e - 1}\n\\end{align}\n&lt;/math>\n\nSo the average value of &lt;math>1/x&lt;/math> on the interval &lt;math>[1,e]&lt;/math> is &lt;math>(e - 1)^{-1}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Compute the average value of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac1{x}\\end{aligned}\\]</span></p>\n<p>over the interval 1 <span class=\"math\">\\(\\leq\\)</span> <em>x</em> <span class=\"math\">\\(\\leq\\)</span> <em>e</em>.</p>\n", 
+    "statement_latex": "Compute the average value of\n\n\\begin{align*}\nf(x) = \\frac1{x}\n\\end{align*}\n\nover the interval 1 $\\leq$ \\emph{x} $\\leq$ \\emph{e}.", 
+    "statement_raw": "Compute the average value of\n\n:&lt;math> f(x) = \\frac1{x} &lt;/math>\n\nover the interval 1 \u2264 ''x'' \u2264 ''e''.\n", 
+    "term": "April", 
+    "topics": [
+        "Riemann_sum"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2010/Question_01_(e)", 
+    "year": 2010
 }

@@ -1,15 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH100", 
-    "statement": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is\n$3^{\\circ}C$. After 30 minutes in a $19^{\\circ}C$ room, its temperature\nis $11^{\\circ}C$.\n\nFind the temperature of the apple 90 minutes after it is taken from the\nrefrigerator, expressed as an integer number of degrees Celsius.", 
-    "year": 2010, 
-    "sols": [
-        "Proceeding as in the hints, let\n\n$\\displaystyle y(t) = T(t) - 19$\n\nThen, Newton's law of cooling reads\n\n$\\displaystyle \\frac{dy}{dt} = \\frac{dT}{dt} = k(T(t) - 19) = ky(t)$\n\nSolving this differential equation gives\n\n$\\displaystyle y(t) = y(0)e^{kt}$\n\nIn terms of \\emph{T} and using the initial condition $T(0) = 3$, we have\n\n$\\displaystyle T(t) - 19 = (T(0) - 19)e^{kt} = (3-19)e^{kt} = -16e^{kt}$\n\nAfter 30 minutes, we know $T(30) = 11$ and so\n\n$\\displaystyle -16e^{30k} = T(30)-19 = 11-19 = -8$\n\nSolving for \\emph{k} by isolating and taking logarithms gives\n\n$\\displaystyle k = \\frac{\\ln(1/2)}{30} = -\\frac{\\ln(2)}{30}$\n\nWe want to find the temperature after 90 minutes and so\n\n\\begin{align*}\nT(90) - 19  &= -16e^{90\\cdot(-\\ln(2))/30} \\\\\n&= -16e^{-3\\ln(2)} \\\\\n&= -16e^{\\ln(2^{-3})} \\\\\n&= -16(1/8) \\\\\n&= -2\\end{align*}\n\nand thus $T(90) = 19-2 = 17$ degrees celsius"
+    "answer_html": "<p>and thus <span class=\"math\">\\(T(90) = 17\\)</span> degrees celsius</p>\n", 
+    "answer_latex": "and thus $T(90) = 17$ degrees celsius", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "The simplest differential equation we can solve for is\n\n\\begin{align*}\n\\frac{dy}{dt} = ky\\end{align*}\n\nwhich gives the solution\n\n\\begin{align*}\ny(t) = y(0)e^{kt}.\\end{align*}\n\nHow can we make our current equation look like this?", 
-        "Set\n\n\\begin{align*}\ny(t) = T(t) - 19\\end{align*}\n\nThen use the hint to get the differential equation.", 
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The simplest differential equation we can solve for is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = ky\\end{aligned}\\]</span></p>\n<p>which gives the solution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = y(0)e^{kt}.\\end{aligned}\\]</span></p>\n<p>How can we make our current equation look like this?</p>\n", 
+        "<p>Set</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = T(t) - 19\\end{aligned}\\]</span></p>\n<p>Then use the hint to get the differential equation.</p>\n", 
+        "<p>The last step is to solve for <em>k</em> using the given information.</p>\n"
+    ], 
+    "hints_latex": [
+        "The simplest differential equation we can solve for is\n\n\\begin{align*}\n\\frac{dy}{dt} = ky\n\\end{align*}\n\nwhich gives the solution\n\n\\begin{align*}\ny(t) = y(0)e^{kt}.\n\\end{align*}\n\nHow can we make our current equation look like this?", 
+        "Set\n\n\\begin{align*}\ny(t) = T(t) - 19\n\\end{align*}\n\nThen use the hint to get the differential equation.", 
         "The last step is to solve for \\emph{k} using the given information."
-    ]
+    ], 
+    "hints_raw": [
+        "The simplest differential equation we can solve for is\n\n&lt;math>\n\\begin{align}\n\\frac{dy}{dt} = ky\n\\end{align}\n&lt;/math>\n\nwhich gives the solution\n\n&lt;math>\n\\begin{align}\ny(t) = y(0)e^{kt}.\n\\end{align}\n&lt;/math>\n\nHow can we make our current equation look like this?\n", 
+        "Set \n\n&lt;math>\n\\begin{align}\ny(t) = T(t) - 19\n\\end{align}\n&lt;/math>\n\nThen use the hint to get the differential equation.\n", 
+        "The last step is to solve for ''k'' using the given information.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "2 (b)", 
+    "rating": 73, 
+    "sols_html": [
+        "<p>Proceeding as in the hints, let</p>\n<p><span class=\"math\">\\(\\displaystyle y(t) = T(t) - 19\\)</span></p>\n<p>Then, Newton&#8217;s law of cooling reads</p>\n<p><span class=\"math\">\\(\\displaystyle \\frac{dy}{dt} = \\frac{dT}{dt} = k(T(t) - 19) = ky(t)\\)</span></p>\n<p>Solving this differential equation gives</p>\n<p><span class=\"math\">\\(\\displaystyle y(t) = y(0)e^{kt}\\)</span></p>\n<p>In terms of <em>T</em> and using the initial condition <span class=\"math\">\\(T(0) = 3\\)</span>, we have</p>\n<p><span class=\"math\">\\(\\displaystyle T(t) - 19 = (T(0) - 19)e^{kt} = (3-19)e^{kt} = -16e^{kt}\\)</span></p>\n<p>After 30 minutes, we know <span class=\"math\">\\(T(30) = 11\\)</span> and so</p>\n<p><span class=\"math\">\\(\\displaystyle -16e^{30k} = T(30)-19 = 11-19 = -8\\)</span></p>\n<p>Solving for <em>k</em> by isolating and taking logarithms gives</p>\n<p><span class=\"math\">\\(\\displaystyle k = \\frac{\\ln(1/2)}{30} = -\\frac{\\ln(2)}{30}\\)</span></p>\n<p>We want to find the temperature after 90 minutes and so</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nT(90) - 19  &amp;= -16e^{90\\cdot(-\\ln(2))/30} \\\\\n&amp;= -16e^{-3\\ln(2)} \\\\\n&amp;= -16e^{\\ln(2^{-3})} \\\\\n&amp;= -16(1/8) \\\\\n&amp;= -2\\end{aligned}\\]</span></p>\n<p>and thus <span class=\"math\">\\(T(90) = 19-2 = 17\\)</span> degrees celsius</p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as in the hints, let\n\n$\\displaystyle y(t) = T(t) - 19$\n\nThen, Newton's law of cooling reads\n\n$\\displaystyle \\frac{dy}{dt} = \\frac{dT}{dt} = k(T(t) - 19) = ky(t)$\n\nSolving this differential equation gives\n\n$\\displaystyle y(t) = y(0)e^{kt}$\n\nIn terms of \\emph{T} and using the initial condition $T(0) = 3$, we have\n\n$\\displaystyle T(t) - 19 = (T(0) - 19)e^{kt} = (3-19)e^{kt} = -16e^{kt}$\n\nAfter 30 minutes, we know $T(30) = 11$ and so\n\n$\\displaystyle -16e^{30k} = T(30)-19 = 11-19 = -8$\n\nSolving for \\emph{k} by isolating and taking logarithms gives\n\n$\\displaystyle k = \\frac{\\ln(1/2)}{30} = -\\frac{\\ln(2)}{30}$\n\nWe want to find the temperature after 90 minutes and so\n\n\\begin{align*}\nT(90) - 19  &= -16e^{90\\cdot(-\\ln(2))/30} \\\\\n&= -16e^{-3\\ln(2)} \\\\\n&= -16e^{\\ln(2^{-3})} \\\\\n&= -16(1/8) \\\\\n&= -2\n\\end{align*}\n\nand thus $T(90) = 19-2 = 17$ degrees celsius"
+    ], 
+    "sols_raw": [
+        "Proceeding as in the hints, let\n\n&lt;math>\n\\displaystyle\ny(t) = T(t) - 19\n&lt;/math>\n\nThen, Newton's law of cooling reads\n\n&lt;math>\n\\displaystyle\n\\frac{dy}{dt} = \\frac{dT}{dt} = k(T(t) - 19) = ky(t)\n&lt;/math>\n\nSolving this differential equation gives\n\n&lt;math>\n\\displaystyle\ny(t) = y(0)e^{kt}\n&lt;/math>\n\nIn terms of ''T'' and using the initial condition &lt;math> T(0) = 3 &lt;/math>, we have\n\n&lt;math>\n\\displaystyle\nT(t) - 19 = (T(0) - 19)e^{kt} = (3-19)e^{kt} = -16e^{kt}\n&lt;/math>\n\nAfter 30 minutes, we know &lt;math>T(30) = 11 &lt;/math> and so\n\n&lt;math>\n\\displaystyle\n-16e^{30k} = T(30)-19 = 11-19 = -8\n&lt;/math>\n\nSolving for ''k'' by isolating and taking logarithms gives\n\n&lt;math>\n\\displaystyle\nk = \\frac{\\ln(1/2)}{30} = -\\frac{\\ln(2)}{30}\n&lt;/math>\n\nWe want to find the temperature after 90 minutes and so\n\n&lt;math>\n\\begin{align}\nT(90) - 19  &amp;= -16e^{90\\cdot(-\\ln(2))/30} \\\\\n&amp;= -16e^{-3\\ln(2)} \\\\\n&amp;= -16e^{\\ln(2^{-3})} \\\\\n&amp;= -16(1/8) \\\\\n&amp;= -2\n\\end{align}\n&lt;/math>\n\nand thus &lt;math> T(90) = 19-2 = 17 &lt;/math> degrees celsius\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.</p>\n<p>When an apple is taken from a refrigerator, its temperature is <span class=\"math\">\\(3^{\\circ}C\\)</span>. After 30 minutes in a <span class=\"math\">\\(19^{\\circ}C\\)</span> room, its temperature is <span class=\"math\">\\(11^{\\circ}C\\)</span>.</p>\n<p>Find the temperature of the apple 90 minutes after it is taken from the refrigerator, expressed as an integer number of degrees Celsius.</p>\n", 
+    "statement_latex": "Full-Solution Problems. In questions 2-8, justify your answers and show\nall your work. If a box is provided, write your final answer there.\nSimplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is\n$3^{\\circ}C$. After 30 minutes in a $19^{\\circ}C$ room, its temperature\nis $11^{\\circ}C$.\n\nFind the temperature of the apple 90 minutes after it is taken from the\nrefrigerator, expressed as an integer number of degrees Celsius.", 
+    "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is &lt;math> 3^{\\circ}C &lt;/math>. After 30 minutes in a &lt;math> 19^{\\circ}C &lt;/math> room, its temperature is &lt;math> 11^{\\circ}C&lt;/math>.\n\nFind the temperature of the apple 90 minutes after it is taken from the refrigerator, expressed as an integer number of degrees Celsius.\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_law_of_cooling"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_02_(b)", 
+    "year": 2010
 }

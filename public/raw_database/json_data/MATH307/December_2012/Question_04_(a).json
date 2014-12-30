@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_04_(a)", 
-    "course": "MATH307", 
-    "statement": "Consider the Fourier series\n\n\\begin{align*}t^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\end{align*}\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(a)} What is the definition of the inner product\n$\\langle f,g \\rangle$ for two complex valued function \\emph{$f$(t)} and\n\\emph{g(t)} defined on $0 \\leq t \\leq 1$?", 
-    "year": 2012, 
-    "sols": [
-        "The inner product is defined as\n\n\\begin{align*}\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\\end{align*}\n\nThis is the continuous equivalent of the inner product for vectors,\nwhere we have the sum of the multiplied components of the vectors."
+    "answer_html": "<p><span class=\"math\">\\(\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\\)</span> This is the continuous equivalent of the inner product for vectors, where we have the sum of the multiplied components of the vectors.</p>\n", 
+    "answer_latex": " $\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt$ This is the continuous equivalent of the inner product for vectors,\nwhere we have the sum of the multiplied components of the vectors.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The inner product of two functions returns a single number, and considers the entire domain of both complex functions.</p>\n"
+    ], 
+    "hints_latex": [
         "The inner product of two functions returns a single number, and\nconsiders the entire domain of both complex functions."
-    ]
+    ], 
+    "hints_raw": [
+        "The inner product of two functions returns a single number, and considers the entire domain of both complex functions.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The inner product is defined as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\\end{aligned}\\]</span></p>\n<p>This is the continuous equivalent of the inner product for vectors, where we have the sum of the multiplied components of the vectors.</p>\n"
+    ], 
+    "sols_latex": [
+        "The inner product is defined as\n\n\\begin{align*}\n\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt\n\\end{align*}\n\nThis is the continuous equivalent of the inner product for vectors,\nwhere we have the sum of the multiplied components of the vectors."
+    ], 
+    "sols_raw": [
+        "The inner product is defined as\n\n:&lt;math>\\left \\langle f,g \\right \\rangle=\\int_{0}^{1}f(t)\\overline{g(t)}dt&lt;/math>\n\nThis is the continuous equivalent of the inner product for vectors, where we have the sum of the multiplied components of the vectors.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the Fourier series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(0 \\leq t \\leq 1\\)</span>.</p>\n<p><strong>(a)</strong> What is the definition of the inner product <span class=\"math\">\\(\\langle f,g \\rangle\\)</span> for two complex valued function <em><span class=\"math\">\\(f\\)</span>(t)</em> and <em>g(t)</em> defined on <span class=\"math\">\\(0 \\leq t \\leq 1\\)</span>?</p>\n", 
+    "statement_latex": "Consider the Fourier series\n\n\\begin{align*}\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\n\\end{align*}\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(a)} What is the definition of the inner product\n$\\langle f,g \\rangle$ for two complex valued function \\emph{$f$(t)} and\n\\emph{g(t)} defined on $0 \\leq t \\leq 1$?", 
+    "statement_raw": "Consider the Fourier series\n\n:&lt;math>\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\n&lt;/math>\n\nfor &lt;math>0 \\leq t \\leq 1&lt;/math>.\n\n'''(a)''' What is the definition of the inner product &lt;math>\\langle f,g \\rangle&lt;/math> for two complex valued function ''&amp;fnof;(t)'' and ''g(t)'' defined on &lt;math>0 \\leq t \\leq 1&lt;/math>?\n", 
+    "term": "December", 
+    "topics": [
+        "Fourier_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_04_(a)", 
+    "year": 2012
 }

@@ -1,13 +1,49 @@
 {
-    "term": "April", 
-    "question": "Question_08_(e)", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\end{align*}\n\nDetermine where $f$ is concave up and where it is concave down.", 
-    "year": 2011, 
-    "sols": [
-        "We find the second derivative of $f$ by using the quotient rule on the\nfirst derivative:\n\n\\begin{align*}\nf''(x) &= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \\end{align*}\n\nWe find possible inflection points by setting $\\displaystyle f''(x)$\nequal to zero and also by determining where it is undefined. In this\ncase, $\\displaystyle f''$ is never zero and is undefined when\n$x = -2, 2$. Because these points are not included in our domain,\n\\emph{$f$} has no inflection points, i.e. \\emph{$f$} does not change its\nconcavity. Therefore, it suffices to find the concavity at any point in\nthe domain, e.g. at \\emph{x = 0}:\n\n\\begin{align*}f''(0) = \\frac{-8}{16} < 0\\end{align*}\n\nand hence \\emph{$f$} is concave down on its whole domain."
+    "answer_html": "<p>and hence <em><span class=\"math\">\\(f\\)</span></em> is concave down on its whole domain.</p>\n", 
+    "answer_latex": "and hence \\emph{$f$} is concave down on its whole domain.", 
+    "contributors": [
+        "Konradbe", 
+        "PamS"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>A function&#8217;s concavity is related to the sign of its second derivative.</p>\n"
+    ], 
+    "hints_latex": [
         "A function's concavity is related to the sign of its second derivative."
-    ]
+    ], 
+    "hints_raw": [
+        "A function's concavity is related to the sign of its second derivative.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We find the second derivative of <span class=\"math\">\\(f\\)</span> by using the quotient rule on the first derivative:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(x) &amp;= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&amp;= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \\end{aligned}\\]</span></p>\n<p>We find possible inflection points by setting <span class=\"math\">\\(\\displaystyle f&#39;&#39;(x)\\)</span> equal to zero and also by determining where it is undefined. In this case, <span class=\"math\">\\(\\displaystyle f&#39;&#39;\\)</span> is never zero and is undefined when <span class=\"math\">\\(x = -2, 2\\)</span>. Because these points are not included in our domain, <em><span class=\"math\">\\(f\\)</span></em> has no inflection points, i.e. <em><span class=\"math\">\\(f\\)</span></em> does not change its concavity. Therefore, it suffices to find the concavity at any point in the domain, e.g. at <em>x = 0</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;&#39;(0) = \\frac{-8}{16} &lt; 0\\end{aligned}\\]</span></p>\n<p>and hence <em><span class=\"math\">\\(f\\)</span></em> is concave down on its whole domain.</p>\n"
+    ], 
+    "sols_latex": [
+        "We find the second derivative of $f$ by using the quotient rule on the\nfirst derivative:\n\n\\begin{align*}\nf''(x) &= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \n\\end{align*}\n\nWe find possible inflection points by setting $\\displaystyle f''(x)$\nequal to zero and also by determining where it is undefined. In this\ncase, $\\displaystyle f''$ is never zero and is undefined when\n$x = -2, 2$. Because these points are not included in our domain,\n\\emph{$f$} has no inflection points, i.e. \\emph{$f$} does not change its\nconcavity. Therefore, it suffices to find the concavity at any point in\nthe domain, e.g. at \\emph{x = 0}:\n\n\\begin{align*}\nf''(0) = \\frac{-8}{16} < 0\n\\end{align*}\n\nand hence \\emph{$f$} is concave down on its whole domain."
+    ], 
+    "sols_raw": [
+        "We find the second derivative of &lt;math>f&lt;/math> by using the quotient rule on the first derivative:\n\n:&lt;math>\\begin{align}\nf''(x) &amp;= \\frac{2(x^2 - 4) - 2x(2x)}{(x^2 - 4)^2} \\\\\n&amp;= \\frac{-2x^2 - 8}{(x^2 - 4)^2} \n\\end{align}&lt;/math>\n\nWe find possible inflection points by setting &lt;math>\\displaystyle f''(x)&lt;/math> equal to zero and also by determining where it is undefined.  In this case, &lt;math>\\displaystyle f''&lt;/math> is never zero and is undefined when &lt;math>x = -2, 2&lt;/math>.  Because these points are not included in our domain, ''&amp;fnof;'' has no inflection points, i.e. ''&amp;fnof;'' does not change its concavity. Therefore, it suffices to find the concavity at any point in the domain, e.g. at ''x = 0'':\n\n:&lt;math>f''(0) = \\frac{-8}{16} &lt; 0 &lt;/math>\n\nand hence ''&amp;fnof;'' is concave down on its whole domain.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\\end{aligned}\\]</span></p>\n<p>Determine where <span class=\"math\">\\(f\\)</span> is concave up and where it is concave down.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\n\\end{align*}\n\nDetermine where $f$ is concave up and where it is concave down.", 
+    "statement_raw": "Let\n\n:&lt;math> \\displaystyle\nf(x) = \\ln\\left(4-x^2\\right)\n&lt;/math>\n\nDetermine where &amp;fnof; is concave up and where it is concave down.\n", 
+    "term": "April", 
+    "topics": [
+        "Concavity", 
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_08_(e)", 
+    "year": 2011
 }

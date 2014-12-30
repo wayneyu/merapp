@@ -1,9 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH312", 
-    "statement": "Suppose $\\displaystyle a,b,m$ are integers with\n$\\displaystyle (a,m) = (b,m) = 1$. Let\n$\\displaystyle s = \\text{ord}_{m}(a)$ and\n$\\displaystyle t = \\text{ord}_{m}(b)$ and suppose that\n$\\displaystyle (s, t) = 1$ . Then show that\n$\\displaystyle \\text{ord}_{m}(ab) = st$ .", 
-    "year": 2013, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Suppose <span class=\"math\">\\(\\displaystyle a,b,m\\)</span> are integers with <span class=\"math\">\\(\\displaystyle (a,m) = (b,m) = 1\\)</span>. Let <span class=\"math\">\\(\\displaystyle s = \\text{ord}_{m}(a)\\)</span> and <span class=\"math\">\\(\\displaystyle t = \\text{ord}_{m}(b)\\)</span> and suppose that <span class=\"math\">\\(\\displaystyle (s, t) = 1\\)</span> . Then show that <span class=\"math\">\\(\\displaystyle \\text{ord}_{m}(ab) = st\\)</span> .</p>\n", 
+    "statement_latex": "Suppose $\\displaystyle a,b,m$ are integers with\n$\\displaystyle (a,m) = (b,m) = 1$. Let\n$\\displaystyle s = \\text{ord}_{m}(a)$ and\n$\\displaystyle t = \\text{ord}_{m}(b)$ and suppose that\n$\\displaystyle (s, t) = 1$ . Then show that\n$\\displaystyle \\text{ord}_{m}(ab) = st$ .", 
+    "statement_raw": "Suppose &lt;math> \\displaystyle a,b,m&lt;/math> are integers with &lt;math> \\displaystyle (a,m) = (b,m) = 1 &lt;/math>. Let &lt;math> \\displaystyle s = \\text{ord}_{m}(a)&lt;/math>  and &lt;math> \\displaystyle t = \\text{ord}_{m}(b)&lt;/math>  and suppose that &lt;math> \\displaystyle (s, t) = 1&lt;/math> . Then show that &lt;math> \\displaystyle \\text{ord}_{m}(ab) = st &lt;/math> .\n", 
+    "term": "December", 
+    "topics": [
+        "Order_of_an_integer"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2013/Question_05_(a)", 
+    "year": 2013
 }

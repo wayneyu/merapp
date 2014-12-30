@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
+    "answer_html": "<p>We say that <span class=\"math\">\\(f\\)</span> is injective if whenever we have <span class=\"math\">\\(f(x) = f(y)\\)</span> for <span class=\"math\">\\(x,y \\in A\\)</span> then <span class=\"math\">\\(x=y\\)</span>.</p>\n", 
+    "answer_latex": "We say that $f$ is injective if whenever we have $f(x) = f(y)$ for\n$x,y \\in A$ then $x=y$.", 
+    "contributors": [
+        "DavidKohler", 
+        "SimonRose", 
+        "CameronChristou"
+    ], 
     "course": "MATH220", 
-    "statement": "Define what it means for a function $f : A \\to B$ to be injective.", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>An injective function is also called a one to one function.</p>\n"
+    ], 
+    "hints_latex": [
+        "An injective function is also called a one to one function."
+    ], 
+    "hints_raw": [
+        "An injective function is also called a one to one function.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (e)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>We say that <span class=\"math\">\\(f\\)</span> is injective if whenever we have <span class=\"math\">\\(f(x) = f(y)\\)</span> for <span class=\"math\">\\(x,y \\in A\\)</span> then <span class=\"math\">\\(x=y\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "We say that $f$ is injective if whenever we have $f(x) = f(y)$ for\n$x,y \\in A$ then $x=y$."
     ], 
-    "hints": [
-        "An injective function is also called a one to one function."
-    ]
+    "sols_raw": [
+        "We say that &lt;math> f &lt;/math> is injective if whenever we have &lt;math> f(x) = f(y) &lt;/math> for &lt;math> x,y \\in A &lt;/math> then &lt;math> x=y &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Define what it means for a function <span class=\"math\">\\(f : A \\to B\\)</span> to be injective.</p>\n", 
+    "statement_latex": "Define what it means for a function $f : A \\to B$ to be injective.", 
+    "statement_raw": "Define what it means for a function &lt;math> f : A \\to B &lt;/math> to be injective.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_01_(e)", 
+    "year": 2011
 }

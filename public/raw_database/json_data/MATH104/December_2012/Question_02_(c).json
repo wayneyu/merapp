@@ -1,13 +1,46 @@
 {
-    "term": "December", 
-    "question": "Question_02_(c)", 
-    "course": "MATH104", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x)=\\frac{2x^3}{3x^2-9}\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}f'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\end{align*}\n\nFind the x coordinate of all local maxima, local minima, and inflection\npoints. Be sure to indicate which is which.", 
-    "year": 2012, 
-    "sols": [
-        "By\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)}{part(a)}\nand\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)}{part(b)}\nof this problem we see that the function changes from decreasing to\nincreasing at $x = -3$, so there is a local maximum there, and the\nfunction changes from decreasing to increasing at $x = 3$, so there is a\nlocal minimum at \\emph{x=3}. The function changes concavity at $x = 0$,\nso there is an inflection point at \\emph{x = 0}.\n\n\\textbf{(Notice that $x = \\pm\\sqrt{3}$ are not points in the domain and\nhence cannot be extrema or inflection points.)}"
+    "answer_html": "<p><strong>(Notice that <span class=\"math\">\\(x = \\pm\\sqrt{3}\\)</span> are not points in the domain and hence cannot be extrema or inflection points.)</strong></p>\n", 
+    "answer_latex": "\\textbf{(Notice that $x = \\pm\\sqrt{3}$ are not points in the domain and\nhence cannot be extrema or inflection points.)}", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Remember that local extrema can only occur at the points in the domain where the derivative is zero or undefined and the function swaps from increasing to decreasing or vice versa. Inflection points are points in the domain where the second derivative is zero or undefined and the concavity changes.</p>\n"
+    ], 
+    "hints_latex": [
         "Remember that local extrema can only occur at the points in the domain\nwhere the derivative is zero or undefined and the function swaps from\nincreasing to decreasing or vice versa. Inflection points are points in\nthe domain where the second derivative is zero or undefined and the\nconcavity changes."
-    ]
+    ], 
+    "hints_raw": [
+        "Remember that local extrema can only occur at the points in the domain where the derivative is zero or undefined and the function swaps from increasing to decreasing or vice versa. Inflection points are points in the domain where the second derivative is zero or undefined and the concavity changes.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>By <span>part(a)</span> and <span>part(b)</span> of this problem we see that the function changes from decreasing to increasing at <span class=\"math\">\\(x = -3\\)</span>, so there is a local maximum there, and the function changes from decreasing to increasing at <span class=\"math\">\\(x = 3\\)</span>, so there is a local minimum at <em>x=3</em>. The function changes concavity at <span class=\"math\">\\(x = 0\\)</span>, so there is an inflection point at <em>x = 0</em>.</p>\n<p><strong>(Notice that <span class=\"math\">\\(x = \\pm\\sqrt{3}\\)</span> are not points in the domain and hence cannot be extrema or inflection points.)</strong></p>\n"
+    ], 
+    "sols_latex": [
+        "By\n{part(a)}\nand\n{part(b)}\nof this problem we see that the function changes from decreasing to\nincreasing at $x = -3$, so there is a local maximum there, and the\nfunction changes from decreasing to increasing at $x = 3$, so there is a\nlocal minimum at \\emph{x=3}. The function changes concavity at $x = 0$,\nso there is an inflection point at \\emph{x = 0}.\n\n\\textbf{(Notice that $x = \\pm\\sqrt{3}$ are not points in the domain and\nhence cannot be extrema or inflection points.)}"
+    ], 
+    "sols_raw": [
+        "By [[Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)|part(a)]] and [[Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_2_(a)|part(b)]] of this problem we see that the function changes from decreasing to increasing at &lt;math>x = -3&lt;/math>, so there is a local maximum there, and the function changes from decreasing to increasing at &lt;math>x = 3&lt;/math>, so there is a local minimum at ''x=3''.  The function changes concavity at &lt;math>x = 0&lt;/math>, so there is an inflection point at ''x = 0''.  \n\n\n'''(Notice that &lt;math> x = \\pm\\sqrt{3} &lt;/math> are not points in the domain and hence cannot be extrema or inflection points.)'''\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)=\\frac{2x^3}{3x^2-9}\\end{aligned}\\]</span></p>\n<p>Its first and second derivatives are given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f&#39;&#39;(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\\end{aligned}\\]</span></p>\n<p>Find the x coordinate of all local maxima, local minima, and inflection points. Be sure to indicate which is which.</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x)=\\frac{2x^3}{3x^2-9}\n\\end{align*}\n\nIts first and second derivatives are given by\n\n\\begin{align*}\nf'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\n\\end{align*}\n\nFind the x coordinate of all local maxima, local minima, and inflection\npoints. Be sure to indicate which is which.", 
+    "statement_raw": "Consider the function\n\n:&lt;math>\nf(x)=\\frac{2x^3}{3x^2-9}\n&lt;/math>\n\nIts first and second derivatives are given by\n\n:&lt;math>\nf'(x)=\\frac{2x^2(x^2-9)}{3(x^2-3)^2},\\qquad{}f''(x)=\\frac{4x(x^2+9)}{(x^2-3)^3}\n&lt;/math>\n\nFind the x coordinate of all local maxima, local minima, and inflection points.  Be sure to indicate which is which.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_02_(c)", 
+    "year": 2012
 }

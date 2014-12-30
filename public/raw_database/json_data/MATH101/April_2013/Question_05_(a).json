@@ -1,15 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nUsing a limit of right-endpoint Riemann sums, evaluate\n$\\displaystyle \\int_2^4 x^2 \\ dx$. No credit will be given for the use\nof antidifferentiation, but you may use it to check your answer. You may\nuse the formulas $\\displaystyle \\sum_{i=1}^n i = n(n+1)/2$ and\n$\\displaystyle \\sum_{i=1}^n i^2 = n(n+1)(2n+1)/6$.", 
-    "year": 2013, 
-    "sols": [
-        "The widths of the rectangles in a $\\displaystyle n$-rectangle Riemann\nsum is given by\n\n$\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}$,\n\nand the right-hand endpoints are given by\n\n$\\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}$.\n\nThen using the given formulas,\n\n\\begin{align*}\n\\int_2^4 x^2 \\ dx &= \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i) \\Delta x \\\\\n&= \\lim_{n \\to \\infty} \\sum_{i=1}^n \\left(2+i\\frac{2}{n}\\right)^2 \\cdot \\frac{2}{n} \\\\\n&= \\lim_{n \\to \\infty} \\frac{2}{n}\\sum_{i=1}^n \\left(4+\\frac{8}{n}i+\\frac{4}{n^2}i^2\\right) \\\\\n&= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(\\sum_{i=1}^n 1 + \\frac{2}{n}\\sum_{i=1}^n i + \\frac{1}{n^2}\\sum_{i=1}^n i^2\\right) \\\\\n&= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(n + \\frac{2}{n}\\frac{n(n+1)}{2} + \\frac{1}{n^2}\\frac{n(n+1)(2n+1)}{6}\\right) \\\\\n&= 8\\left(1+1+\\frac{1}{3}\\right) \\\\\n&= \\frac{56}{3}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_2^4 x^2 \\ dx=\\frac{56}{3}\\)</span></p>\n", 
+    "answer_latex": " $\\int_2^4 x^2 \\ dx=\\frac{56}{3}$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Riemann sum is given by <span class=\"math\">\\(\\displaystyle \\sum_{i=1}^n f(x_i^*)\\Delta x\\)</span>. What should you use for <span class=\"math\">\\(\\displaystyle x_i^*\\)</span>?</p>\n", 
+        "<p>The right-hand endpoints are given by <span class=\"math\">\\(\\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}\\)</span>.</p>\n", 
+        "<p>The widths of the rectangles in a <span class=\"math\">\\(\\displaystyle n\\)</span>-rectangle Riemann sum is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "The Riemann sum is given by\n$\\displaystyle \\sum_{i=1}^n f(x_i^*)\\Delta x$. What should you use for\n$\\displaystyle x_i^*$?", 
         "The right-hand endpoints are given by\n$\\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}$.", 
         "The widths of the rectangles in a $\\displaystyle n$-rectangle Riemann\nsum is given by\n\n$\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}$."
-    ]
+    ], 
+    "hints_raw": [
+        "The Riemann sum is given by &lt;math> \\displaystyle \\sum_{i=1}^n f(x_i^*)\\Delta x &lt;/math>. What should you use for &lt;math> \\displaystyle x_i^*&lt;/math>?\n", 
+        "The right-hand endpoints are given by &lt;math> \\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}&lt;/math>.\n", 
+        "The widths of the rectangles in a &lt;math> \\displaystyle n&lt;/math>-rectangle Riemann sum is given by\n\n&lt;math> \\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}&lt;/math>.\n"
+    ], 
+    "num_votes": 11, 
+    "question": "5 (a)", 
+    "rating": 62, 
+    "sols_html": [
+        "<p>The widths of the rectangles in a <span class=\"math\">\\(\\displaystyle n\\)</span>-rectangle Riemann sum is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}\\)</span>,</p>\n<p>and the right-hand endpoints are given by</p>\n<p><span class=\"math\">\\(\\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}\\)</span>.</p>\n<p>Then using the given formulas,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_2^4 x^2 \\ dx &amp;= \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i) \\Delta x \\\\\n&amp;= \\lim_{n \\to \\infty} \\sum_{i=1}^n \\left(2+i\\frac{2}{n}\\right)^2 \\cdot \\frac{2}{n} \\\\\n&amp;= \\lim_{n \\to \\infty} \\frac{2}{n}\\sum_{i=1}^n \\left(4+\\frac{8}{n}i+\\frac{4}{n^2}i^2\\right) \\\\\n&amp;= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(\\sum_{i=1}^n 1 + \\frac{2}{n}\\sum_{i=1}^n i + \\frac{1}{n^2}\\sum_{i=1}^n i^2\\right) \\\\\n&amp;= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(n + \\frac{2}{n}\\frac{n(n+1)}{2} + \\frac{1}{n^2}\\frac{n(n+1)(2n+1)}{6}\\right) \\\\\n&amp;= 8\\left(1+1+\\frac{1}{3}\\right) \\\\\n&amp;= \\frac{56}{3}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The widths of the rectangles in a $\\displaystyle n$-rectangle Riemann\nsum is given by\n\n$\\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}$,\n\nand the right-hand endpoints are given by\n\n$\\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}$.\n\nThen using the given formulas,\n\n\\begin{align*}\n\\int_2^4 x^2 \\ dx &= \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i) \\Delta x \\\\\n&= \\lim_{n \\to \\infty} \\sum_{i=1}^n \\left(2+i\\frac{2}{n}\\right)^2 \\cdot \\frac{2}{n} \\\\\n&= \\lim_{n \\to \\infty} \\frac{2}{n}\\sum_{i=1}^n \\left(4+\\frac{8}{n}i+\\frac{4}{n^2}i^2\\right) \\\\\n&= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(\\sum_{i=1}^n 1 + \\frac{2}{n}\\sum_{i=1}^n i + \\frac{1}{n^2}\\sum_{i=1}^n i^2\\right) \\\\\n&= \\lim_{n \\to \\infty} \\frac{8}{n}\\left(n + \\frac{2}{n}\\frac{n(n+1)}{2} + \\frac{1}{n^2}\\frac{n(n+1)(2n+1)}{6}\\right) \\\\\n&= 8\\left(1+1+\\frac{1}{3}\\right) \\\\\n&= \\frac{56}{3}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The widths of the rectangles in a &lt;math> \\displaystyle n&lt;/math>-rectangle Riemann sum is given by\n\n&lt;math> \\displaystyle \\Delta x = \\frac{b-a}{n} = \\frac{4-2}{n} = \\frac{2}{n}&lt;/math>,\n\nand the right-hand endpoints are given by\n\n&lt;math> \\displaystyle x_i = a+i\\Delta x = 2+i \\tfrac{2}{n}&lt;/math>.\n\nThen using the given formulas,\n\n:&lt;math> \n\\displaystyle \n\\begin{align}\n\\int_2^4 x^2 \\ dx &amp; = \\lim_{n \\to \\infty} \\sum_{i=1}^n f(x_i) \\Delta x \\\\\n&amp; = \\lim_{n \\to \\infty} \\sum_{i=1}^n \\left(2+i\\frac{2}{n}\\right)^2 \\cdot \\frac{2}{n} \\\\\n&amp; = \\lim_{n \\to \\infty} \\frac{2}{n}\\sum_{i=1}^n \\left(4+\\frac{8}{n}i+\\frac{4}{n^2}i^2\\right) \\\\\n&amp; = \\lim_{n \\to \\infty} \\frac{8}{n}\\left(\\sum_{i=1}^n 1 + \\frac{2}{n}\\sum_{i=1}^n i + \\frac{1}{n^2}\\sum_{i=1}^n i^2\\right) \\\\\n&amp; = \\lim_{n \\to \\infty} \\frac{8}{n}\\left(n + \\frac{2}{n}\\frac{n(n+1)}{2} + \\frac{1}{n^2}\\frac{n(n+1)(2n+1)}{6}\\right) \\\\\n&amp; = 8\\left(1+1+\\frac{1}{3}\\right) \\\\\n&amp; = \\frac{56}{3}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 4&#226;&#128;&#147;12, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions</strong>.</p>\n<p>Using a limit of right-endpoint Riemann sums, evaluate <span class=\"math\">\\(\\displaystyle \\int_2^4 x^2 \\ dx\\)</span>. No credit will be given for the use of antidifferentiation, but you may use it to check your answer. You may use the formulas <span class=\"math\">\\(\\displaystyle \\sum_{i=1}^n i = n(n+1)/2\\)</span> and <span class=\"math\">\\(\\displaystyle \\sum_{i=1}^n i^2 = n(n+1)(2n+1)/6\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nUsing a limit of right-endpoint Riemann sums, evaluate\n$\\displaystyle \\int_2^4 x^2 \\ dx$. No credit will be given for the use\nof antidifferentiation, but you may use it to check your answer. You may\nuse the formulas $\\displaystyle \\sum_{i=1}^n i = n(n+1)/2$ and\n$\\displaystyle \\sum_{i=1}^n i^2 = n(n+1)(2n+1)/6$.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 4\u201312, justify your answers and '''show all your work'''. If\na box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these questions'''.\n\nUsing a limit of right-endpoint Riemann sums, evaluate &lt;math> \\displaystyle \\int_2^4 x^2 \\ dx&lt;/math>. No credit will be given for the use of antidifferentiation, but you may use it to check your answer. You may use the formulas &lt;math> \\displaystyle \\sum_{i=1}^n i = n(n+1)/2&lt;/math> and &lt;math> \\displaystyle \\sum_{i=1}^n i^2 = n(n+1)(2n+1)/6 &lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_05_(a)", 
+    "year": 2013
 }

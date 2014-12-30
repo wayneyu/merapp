@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH101", 
-    "statement": "The length of time in minutes it takes students to solve a certain\nmathematics problem (on probability) is a continuous random variable\nwhose probability density function is\n\n\\begin{align*}f(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), & \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, & \\text{otherwise.} \\end{cases}\\end{align*}\n\n(a) Find the value of the positive constant $k$.", 
-    "year": 2005, 
-    "sols": [
-        "First, note that \\emph{cos}(\\emph{x}/10) $\\geq$ 0 and\n\\emph{sin}(\\emph{x}/10) $\\geq$ 0 for any 0 $\\leq$ x $\\leq$ 5$\\pi$. Hence we\nneed \\emph{k} $\\geq$ 0 as well.\n\nTo satisfy the second condition we require\n\n\\begin{align*}1 = \\int_{-\\infty}^\\infty f(x)\\,dx = \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx.\\end{align*}\n\nThe integral can easily be solved using the substitution \\emph{u} =\n\\emph{sin}(\\emph{x}/10), \\emph{du} = 1/10 \\emph{cos}(\\emph{x}/10), so\nthat \\emph{u}(0) = 0 and \\emph{u}(5$\\pi$) = \\emph{sin}($\\pi$/2) = 1. Hence we\nneed to choose \\emph{k} such that\n\n\\begin{align*}\n1 &= \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&= \\int_0^1 10ku^2\\,du \\\\\n&= \\left.\\frac{10ku^3}3\\right|_0^1 \\\\\n&= \\frac{10}3 k\\end{align*}\n\nHence we choose''' \\emph{k} = 3/10. '''"
+    "answer_html": "<p><span class=\"math\">\\(1=\\frac{10}3 k\\)</span> Hence we choose&#8221;&#8217;</p>\n", 
+    "answer_latex": " $1=\\frac{10}3 k$ Hence we choose'''", 
+    "contributors": [
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>For <span class=\"math\">\\(f\\)</span> to be a probability density function it needs to satisfy two conditions:</p>\n<ul>\n<li><p><span class=\"math\">\\(f\\)</span>(x) <span class=\"math\">\\(\\geq\\)</span> 0 for all <em>x</em>,</p></li>\n<li><p><span class=\"math\">\\(\\int_{-\\infty}^\\infty f(x)\\,dx = 1.\\)</span></p></li>\n</ul>\n<p>Choose <em>k</em> such that both conditions are fulfilled.</p>\n"
+    ], 
+    "hints_latex": [
         "For $f$ to be a probability density function it needs to satisfy two\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$(x) $\\geq$ 0 for all \\emph{x},\n\\item\n  $\\int_{-\\infty}^\\infty f(x)\\,dx = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled."
-    ]
+    ], 
+    "hints_raw": [
+        "For &amp;fnof; to be a probability density function it needs to satisfy two conditions:\n\n* &amp;fnof;(x) &amp;ge; 0 for all ''x'',\n* &lt;math> \\int_{-\\infty}^\\infty f(x)\\,dx = 1. &lt;/math>\n\nChoose ''k'' such that both conditions are fulfilled.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First, note that <em>cos</em>(<em>x</em>/10) <span class=\"math\">\\(\\geq\\)</span> 0 and <em>sin</em>(<em>x</em>/10) <span class=\"math\">\\(\\geq\\)</span> 0 for any 0 <span class=\"math\">\\(\\leq\\)</span> x <span class=\"math\">\\(\\leq\\)</span> 5<span class=\"math\">\\(\\pi\\)</span>. Hence we need <em>k</em> <span class=\"math\">\\(\\geq\\)</span> 0 as well.</p>\n<p>To satisfy the second condition we require</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 = \\int_{-\\infty}^\\infty f(x)\\,dx = \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx.\\end{aligned}\\]</span></p>\n<p>The integral can easily be solved using the substitution <em>u</em> = <em>sin</em>(<em>x</em>/10), <em>du</em> = 1/10 <em>cos</em>(<em>x</em>/10), so that <em>u</em>(0) = 0 and <em>u</em>(5<span class=\"math\">\\(\\pi\\)</span>) = <em>sin</em>(<span class=\"math\">\\(\\pi\\)</span>/2) = 1. Hence we need to choose <em>k</em> such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&amp;= \\int_0^1 10ku^2\\,du \\\\\n&amp;= \\left.\\frac{10ku^3}3\\right|_0^1 \\\\\n&amp;= \\frac{10}3 k\\end{aligned}\\]</span></p>\n<p>Hence we choose&#8221;&#8217; <em>k</em> = 3/10. &#8221;&#8217;</p>\n"
+    ], 
+    "sols_latex": [
+        "First, note that \\emph{cos}(\\emph{x}/10) $\\geq$ 0 and\n\\emph{sin}(\\emph{x}/10) $\\geq$ 0 for any 0 $\\leq$ x $\\leq$ 5$\\pi$. Hence we\nneed \\emph{k} $\\geq$ 0 as well.\n\nTo satisfy the second condition we require\n\n\\begin{align*}\n1 = \\int_{-\\infty}^\\infty f(x)\\,dx = \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx.\n\\end{align*}\n\nThe integral can easily be solved using the substitution \\emph{u} =\n\\emph{sin}(\\emph{x}/10), \\emph{du} = 1/10 \\emph{cos}(\\emph{x}/10), so\nthat \\emph{u}(0) = 0 and \\emph{u}(5$\\pi$) = \\emph{sin}($\\pi$/2) = 1. Hence we\nneed to choose \\emph{k} such that\n\n\\begin{align*}\n1 &= \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&= \\int_0^1 10ku^2\\,du \\\\\n&= \\left.\\frac{10ku^3}3\\right|_0^1 \\\\\n&= \\frac{10}3 k\n\\end{align*}\n\nHence we choose''' \\emph{k} = 3/10. '''"
+    ], 
+    "sols_raw": [
+        "First, note that ''cos''(''x''/10) &amp;ge; 0 and ''sin''(''x''/10) &amp;ge; 0 for any 0 &amp;le; x &amp;le; 5&amp;pi;. Hence we need ''k'' &amp;ge; 0 as well.\n\nTo satisfy the second condition we require\n\n:&lt;math> 1 = \\int_{-\\infty}^\\infty f(x)\\,dx = \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx. &lt;/math>\n\nThe integral can easily be solved using the substitution ''u'' = ''sin''(''x''/10), ''du'' = 1/10 ''cos''(''x''/10), so that ''u''(0) = 0 and ''u''(5&amp;pi;) = ''sin''(&amp;pi;/2) = 1. Hence we need to choose ''k'' such that\n\n:&lt;math> \\begin{align}\n1 &amp;= \\int_0^{5\\pi} k\\cos\\left(\\frac{x}{10}\\right) \\sin^2\\left(\\frac{x}{10}\\right)\\,dx \\\\\n&amp;= \\int_0^1 10ku^2\\,du \\\\\n&amp;= \\left.\\frac{10ku^3}3\\right|_0^1 \\\\\n&amp;= \\frac{10}3 k\n\\end{align}\n&lt;/math>\n\nHence we choose ''' ''k'' = 3/10. '''\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The length of time in minutes it takes students to solve a certain mathematics problem (on probability) is a continuous random variable whose probability density function is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), &amp; \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, &amp; \\text{otherwise.} \\end{cases}\\end{aligned}\\]</span></p>\n<p>(a) Find the value of the positive constant <span class=\"math\">\\(k\\)</span>.</p>\n", 
+    "statement_latex": "The length of time in minutes it takes students to solve a certain\nmathematics problem (on probability) is a continuous random variable\nwhose probability density function is\n\n\\begin{align*}\nf(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), & \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, & \\text{otherwise.} \\end{cases}\n\\end{align*}\n\n(a) Find the value of the positive constant $k$.", 
+    "statement_raw": "The length of time in minutes it takes students to solve a certain mathematics problem (on probability) is a continuous random variable whose probability density function is\n\n:&lt;math> f(x) = \\begin{cases} k\\cos(x/10)\\sin^2(x/10), &amp; \\text{if } 0 \\leq x \\leq 5\\pi, \\\\\n0, &amp; \\text{otherwise.} \\end{cases} &lt;/math>\n\n(a) Find the value of the positive constant &lt;math>k&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_07_(a)", 
+    "year": 2005
 }

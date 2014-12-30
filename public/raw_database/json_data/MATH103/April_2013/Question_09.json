@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_09", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Sketching Antiderivatives}\n\nConsider the sketch $\\displaystyle f(x)$ below.\n\nProvide a sketch of the antiderivative\n$\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds$ for\n$\\displaystyle -1.5 < x < 1.5$. Make sure to clearly indicate local\nmaxima and minima of $\\displaystyle A(x)$\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M103W2013Q9Question.jpg}\n\\caption{M103W2013Q9Question.jpg}\n\\end{figure}", 
-    "year": 2013, 
-    "sols": [
-        "Attached is a picture. Notice that there is a local minimum at\n$\\displaystyle x = -0.4$ and a local maximum at\n$\\displaystyle x = -1.4$. Also note that plugging in \\emph{a} into the\nintegral gives\n\n$\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{M103W2013Q9Answer.jpg}\n\\end{description}"
+    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg}\n\\end{description}", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>There are three key values to note - what happens at <em>a</em> and what happens at the two locations where the function goes from positive to negative?</p>\n", 
+        "<p>Don&#8217;t forget, if you start at <em>a</em> and go left you actually get more negative since integrals also encode a sense of direction.</p>\n", 
+        "<p>Your function should be smooth (meaning differentiable everywhere - so no corners allowed!)</p>\n"
+    ], 
+    "hints_latex": [
         "There are three key values to note - what happens at \\emph{a} and what\nhappens at the two locations where the function goes from positive to\nnegative?", 
         "Don't forget, if you start at \\emph{a} and go left you actually get more\nnegative since integrals also encode a sense of direction.", 
         "Your function should be smooth (meaning differentiable everywhere - so\nno corners allowed!)"
-    ]
+    ], 
+    "hints_raw": [
+        "There are three key values to note - what happens at ''a'' and what happens at the two locations where the function goes from positive to negative?\n", 
+        "Don't forget, if you start at ''a'' and go left you actually get more negative since integrals also encode a sense of direction.\n", 
+        "Your function should be smooth (meaning differentiable everywhere - so no corners allowed!)\n"
+    ], 
+    "num_votes": 7, 
+    "question": "9", 
+    "rating": 47, 
+    "sols_html": [
+        "<p>Attached is a picture. Notice that there is a local minimum at <span class=\"math\">\\(\\displaystyle x = -0.4\\)</span> and a local maximum at <span class=\"math\">\\(\\displaystyle x = -1.4\\)</span>. Also note that plugging in <em>a</em> into the integral gives</p>\n<p><span class=\"math\">\\(\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0\\)</span>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+    ], 
+    "sols_latex": [
+        "Attached is a picture. Notice that there is a local minimum at\n$\\displaystyle x = -0.4$ and a local maximum at\n$\\displaystyle x = -1.4$. Also note that plugging in \\emph{a} into the\nintegral gives\n\n$\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg}\n\\end{description}"
+    ], 
+    "sols_raw": [
+        "Attached is a picture. Notice that there is a local minimum at &lt;math> \\displaystyle x = -0.4&lt;/math> and a local maximum at &lt;math> \\displaystyle x = -1.4&lt;/math>. Also note that plugging in ''a'' into the integral gives \n\n&lt;math> \\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0&lt;/math>.\n\n:[[File:M103W2013Q9Answer.jpg|300px]]\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Sketching Antiderivatives</strong></p>\n<p>Consider the sketch <span class=\"math\">\\(\\displaystyle f(x)\\)</span> below.</p>\n<p>Provide a sketch of the antiderivative <span class=\"math\">\\(\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds\\)</span> for <span class=\"math\">\\(\\displaystyle -1.5 &lt; x &lt; 1.5\\)</span>. Make sure to clearly indicate local maxima and minima of <span class=\"math\">\\(\\displaystyle A(x)\\)</span></p>\n<p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Question.jpg\" alt=\"image\" /></p>\n", 
+    "statement_latex": "\\textbf{Sketching Antiderivatives}\n\nConsider the sketch $\\displaystyle f(x)$ below.\n\nProvide a sketch of the antiderivative\n$\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds$ for\n$\\displaystyle -1.5 < x < 1.5$. Make sure to clearly indicate local\nmaxima and minima of $\\displaystyle A(x)$\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Question.jpg}", 
+    "statement_raw": "'''Sketching Antiderivatives'''\n\nConsider the sketch &lt;math> \\displaystyle f(x)&lt;/math> below.\n\nProvide a sketch of the antiderivative &lt;math> \\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds&lt;/math> for &lt;math> \\displaystyle -1.5 &lt; x &lt; 1.5&lt;/math>. Make sure to clearly indicate local maxima and minima of &lt;math> \\displaystyle A(x)&lt;/math>\n\n[[File:M103W2013Q9Question.jpg|300px]]\n", 
+    "term": "April", 
+    "topics": [
+        "Antiderivative_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_09", 
+    "year": 2013
 }

@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_05_(c)", 
-    "course": "MATH110", 
-    "statement": "Differentiate the following function.\n\n\\begin{align*}\\displaystyle h(x) = \\ln (\\ln (x^2 + 2x))\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Here we have several compositions going on. So a first step, would be to\ncompute the derivative of\n\n\\begin{align*}\\displaystyle\n\\ln(x^2+2x)\\end{align*}\n\nWe do this using the chain rule:\n\n\\begin{align*}\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\\end{align*}\n\nHere we have that\n\n\\begin{align*}\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = x^2+2x\\end{align*} and\n\n\\begin{align*}\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = 2x+2\\end{align*}\n\nAnd so:\n\n\\begin{align*}\\displaystyle\n( \\ln(x^2+2x) )' = \\frac{1}{x^2+2x} (2x+2) = \\frac{2x+2}{x^2+2x}\\end{align*}\n\nAnd so now, we can use the chain rule again to compute the derivative of\n\n\\begin{align*}\\displaystyle\n\\ln(\\ln(x^2+2x))\\end{align*}\n\nUsing:\n\n\\begin{align*}\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\\end{align*}\n\nWhere\n\n\\begin{align*}\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = \\ln(x^2+2x)\\end{align*} and we have\n\n\\begin{align*}\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = \\frac{2x+2}{x^2+2x}\\end{align*}\n\nAnd so we obtain\n\n\\begin{align*}\\displaystyle\nh'(x) = \\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\nh&#39;(x)=\\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle\nh'(x)=\\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Watch out for the multiple use of the chain rule.</p>\n"
+    ], 
+    "hints_latex": [
         "Watch out for the multiple use of the chain rule."
-    ]
+    ], 
+    "hints_raw": [
+        "Watch out for the multiple use of the chain rule.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Here we have several compositions going on. So a first step, would be to compute the derivative of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\ln(x^2+2x)\\end{aligned}\\]</span></p>\n<p>We do this using the chain rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n( p(q(x)) )&#39; = p&#39;(q(x)) \\cdot q&#39;(x)\\end{aligned}\\]</span></p>\n<p>Here we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = x^2+2x\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np&#39;(x) = \\frac{1}{x} \\qquad q&#39;(x) = 2x+2\\end{aligned}\\]</span></p>\n<p>And so:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n( \\ln(x^2+2x) )&#39; = \\frac{1}{x^2+2x} (2x+2) = \\frac{2x+2}{x^2+2x}\\end{aligned}\\]</span></p>\n<p>And so now, we can use the chain rule again to compute the derivative of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\ln(\\ln(x^2+2x))\\end{aligned}\\]</span></p>\n<p>Using:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n( p(q(x)) )&#39; = p&#39;(q(x)) \\cdot q&#39;(x)\\end{aligned}\\]</span></p>\n<p>Where</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = \\ln(x^2+2x)\\end{aligned}\\]</span></p>\n<p>and we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\np&#39;(x) = \\frac{1}{x} \\qquad q&#39;(x) = \\frac{2x+2}{x^2+2x}\\end{aligned}\\]</span></p>\n<p>And so we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nh&#39;(x) = \\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Here we have several compositions going on. So a first step, would be to\ncompute the derivative of\n\n\\begin{align*}\n\\displaystyle\n\\ln(x^2+2x)\n\\end{align*}\n\nWe do this using the chain rule:\n\n\\begin{align*}\n\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n\\end{align*}\n\nHere we have that\n\n\\begin{align*}\n\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = x^2+2x\n\\end{align*} and\n\n\\begin{align*}\n\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = 2x+2\n\\end{align*}\n\nAnd so:\n\n\\begin{align*}\n\\displaystyle\n( \\ln(x^2+2x) )' = \\frac{1}{x^2+2x} (2x+2) = \\frac{2x+2}{x^2+2x}\n\\end{align*}\n\nAnd so now, we can use the chain rule again to compute the derivative of\n\n\\begin{align*}\n\\displaystyle\n\\ln(\\ln(x^2+2x))\n\\end{align*}\n\nUsing:\n\n\\begin{align*}\n\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n\\end{align*}\n\nWhere\n\n\\begin{align*}\n\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = \\ln(x^2+2x)\n\\end{align*} and we have\n\n\\begin{align*}\n\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = \\frac{2x+2}{x^2+2x}\n\\end{align*}\n\nAnd so we obtain\n\n\\begin{align*}\n\\displaystyle\nh'(x) = \\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Here we have several compositions going on. So a first step, would be to compute the derivative of\n:&lt;math>\\displaystyle\n\\ln(x^2+2x)\n&lt;/math>\n\nWe do this using the chain rule:\n:&lt;math>\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n&lt;/math>\n\nHere we have that\n:&lt;math>\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = x^2+2x\n&lt;/math>\nand\n:&lt;math>\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = 2x+2\n&lt;/math>\n\nAnd so:\n:&lt;math>\\displaystyle\n( \\ln(x^2+2x) )' = \\frac{1}{x^2+2x} (2x+2) = \\frac{2x+2}{x^2+2x}\n&lt;/math>\n\nAnd so now, we can use the chain rule again to compute the derivative of\n:&lt;math>\\displaystyle\n\\ln(\\ln(x^2+2x))\n&lt;/math>\n\nUsing:\n:&lt;math>\\displaystyle\n( p(q(x)) )' = p'(q(x)) \\cdot q'(x)\n&lt;/math>\n\nWhere\n:&lt;math>\\displaystyle\np(x) = \\ln(x) \\qquad q(x) = \\ln(x^2+2x)\n&lt;/math>\nand we have\n:&lt;math>\\displaystyle\np'(x) = \\frac{1}{x} \\qquad q'(x) = \\frac{2x+2}{x^2+2x}\n&lt;/math>\n\nAnd so we obtain\n:&lt;math>\\displaystyle\nh'(x) = \\frac{1}{\\ln(x^2+2x)} \\cdot \\frac{2x+2}{x^2+2x}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Differentiate the following function.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle h(x) = \\ln (\\ln (x^2 + 2x))\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Differentiate the following function.\n\n\\begin{align*}\n\\displaystyle h(x) = \\ln (\\ln (x^2 + 2x))\n\\end{align*}", 
+    "statement_raw": "Differentiate the following function. \n\n: &lt;math>\\displaystyle h(x) = \\ln (\\ln (x^2 + 2x))&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_05_(c)", 
+    "year": 2011
 }

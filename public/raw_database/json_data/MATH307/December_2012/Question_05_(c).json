@@ -1,9 +1,41 @@
 {
-    "term": "December", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}P = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\\end{align*}\n\n\\textbf{(c)} Introduce a damping factor of 1/2 so that the surfer now\nmoves according to the stochastic matrix \\emph{(1/2)P + (1/2)Q} where\n\\emph{Q} is the stochastic matrix describing a surfer picking any site\nat random (including the current site). Beginning equal probabilities of\nbeing at each site, what are the probabilities of being at each site\nafter one step?", 
-    "year": 2012, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "RQ", 
+        "CH", 
+        "CS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p><strong>(c)</strong> Introduce a damping factor of 1/2 so that the surfer now moves according to the stochastic matrix <em>(1/2)P + (1/2)Q</em> where <em>Q</em> is the stochastic matrix describing a surfer picking any site at random (including the current site). Beginning equal probabilities of being at each site, what are the probabilities of being at each site after one step?</p>\n", 
+    "statement_latex": "Consider an internet with six sites. The stochastic matrix describing\nthe behaviour of a web surfer (with damping factor zero) is\n\n\\begin{align*}\nP = \\begin{bmatrix}\n0 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n\\frac12 & 0 & \\frac13 & 0 & 0 & 0 \\\\\n0 & \\frac13 & 0 & 0 & 0 & \\frac12 \\\\\n\\frac12 & \\frac13 & 0 & 0 & \\frac12 & 0 \\\\\n0 & \\frac13 & 0 & 1 & 0 & \\frac12 \\\\\n0 & 0 & \\frac13 & 0 & \\frac12 & 0\n\\end{bmatrix}\n\\end{align*}\n\n\\textbf{(c)} Introduce a damping factor of 1/2 so that the surfer now\nmoves according to the stochastic matrix \\emph{(1/2)P + (1/2)Q} where\n\\emph{Q} is the stochastic matrix describing a surfer picking any site\nat random (including the current site). Beginning equal probabilities of\nbeing at each site, what are the probabilities of being at each site\nafter one step?", 
+    "statement_raw": "Consider an internet with six sites. The stochastic matrix describing the behaviour of a web surfer (with damping factor zero) is\n\n:&lt;math>\nP = \\begin{bmatrix}\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n\\frac12 &amp; 0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 0 &amp; 0 &amp; \\frac12 \\\\\n\\frac12 &amp; \\frac13 &amp; 0 &amp; 0 &amp; \\frac12 &amp; 0 \\\\\n0 &amp; \\frac13 &amp; 0 &amp; 1 &amp; 0 &amp; \\frac12 \\\\\n0 &amp; 0 &amp; \\frac13 &amp; 0 &amp; \\frac12 &amp; 0\n\\end{bmatrix}\n&lt;/math>\n\n'''(c)''' Introduce a damping factor of 1/2 so that the surfer now moves according to the stochastic matrix ''(1/2)P + (1/2)Q'' where ''Q'' is the stochastic matrix describing a surfer picking any site at random (including the current site). Beginning equal probabilities of being at each site, what are the probabilities of being at each site after one step?\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_05_(c)", 
+    "year": 2012
 }

@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\n$\\displaystyle 1 -2x^{2}$ is the second order Taylor polynomial (around\n$x=0$) for which one of the following functions?\n\ni. $\\displaystyle 1 -\\sin(4x)$\n\nii. $\\displaystyle e^{-x^{2}}$\n\niii. $\\displaystyle \\cos(2x)$\n\niv. $\\displaystyle e^{-4x}$\n\nv. $\\displaystyle \\cos(x)$", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "1 (e)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>For each of the following multiple-choice questions, there is one correct answer. Circle the corresponding (roman) numeral.</p>\n<p><span class=\"math\">\\(\\displaystyle 1 -2x^{2}\\)</span> is the second order Taylor polynomial (around <span class=\"math\">\\(x=0\\)</span>) for which one of the following functions?</p>\n<p>i. <span class=\"math\">\\(\\displaystyle 1 -\\sin(4x)\\)</span></p>\n<p>ii. <span class=\"math\">\\(\\displaystyle e^{-x^{2}}\\)</span></p>\n<p>iii. <span class=\"math\">\\(\\displaystyle \\cos(2x)\\)</span></p>\n<p>iv. <span class=\"math\">\\(\\displaystyle e^{-4x}\\)</span></p>\n<p>v. <span class=\"math\">\\(\\displaystyle \\cos(x)\\)</span></p>\n", 
+    "statement_latex": "For each of the following multiple-choice questions, there is one\ncorrect answer. Circle the corresponding (roman) numeral.\n\n$\\displaystyle 1 -2x^{2}$ is the second order Taylor polynomial (around\n$x=0$) for which one of the following functions?\n\ni. $\\displaystyle 1 -\\sin(4x)$\n\nii. $\\displaystyle e^{-x^{2}}$\n\niii. $\\displaystyle \\cos(2x)$\n\niv. $\\displaystyle e^{-4x}$\n\nv. $\\displaystyle \\cos(x)$", 
+    "statement_raw": "For each of the following multiple-choice questions, there is one correct answer. Circle the corresponding (roman) numeral.\n\n&lt;math> \\displaystyle 1 -2x^{2} &lt;/math> is the second order Taylor polynomial (around &lt;math>x=0 &lt;/math>) for which one of the following functions?\n\ni. &lt;math> \\displaystyle 1 -\\sin(4x) &lt;/math>\n\nii. &lt;math> \\displaystyle e^{-x^{2}} &lt;/math>\n\niii. &lt;math> \\displaystyle \\cos(2x) &lt;/math>\n\niv. &lt;math> \\displaystyle e^{-4x} &lt;/math>\n\nv. &lt;math> \\displaystyle \\cos(x) &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_01_(e)", 
+    "year": 2006
 }

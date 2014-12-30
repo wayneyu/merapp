@@ -1,13 +1,46 @@
 {
-    "term": "December", 
-    "question": "Question_01_(f)", 
-    "course": "MATH220", 
-    "statement": "State the strong principle of mathematical induction.", 
-    "year": 2011, 
-    "sols": [
-        "Strong mathematical induction is a method to prove a statement\n\\emph{S}(\\emph{n}) is true for all natural numbers \\emph{n}. It is given\nby the following.\n\nSuppose that for every natural number \\emph{n}, that we have the\nimplication\n\n\\begin{align*}\\big(\\forall\\,k < n, S(k)\\big) \\Rightarrow S(n)\\end{align*}\n\nThen for every natural number \\emph{n}, the statement \\emph{S}(\\emph{n})\nis true."
+    "answer_html": "<p>Then for every natural number <em>n</em>, the statement <em>S</em>(<em>n</em>) is true.</p>\n", 
+    "answer_latex": "Then for every natural number \\emph{n}, the statement \\emph{S}(\\emph{n})\nis true.", 
+    "contributors": [
+        "Konradbe", 
+        "SimonRose", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Mathematical induction involves wanting to prove statements over all natural numbers. How do we do this?</p>\n"
+    ], 
+    "hints_latex": [
         "Mathematical induction involves wanting to prove statements over all\nnatural numbers. How do we do this?"
-    ]
+    ], 
+    "hints_raw": [
+        "Mathematical induction involves wanting to prove statements over all natural numbers. How do we do this?\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (f)", 
+    "rating": 66, 
+    "sols_html": [
+        "<p>Strong mathematical induction is a method to prove a statement <em>S</em>(<em>n</em>) is true for all natural numbers <em>n</em>. It is given by the following.</p>\n<p>Suppose that for every natural number <em>n</em>, that we have the implication</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\big(\\forall\\,k &lt; n, S(k)\\big) \\Rightarrow S(n)\\end{aligned}\\]</span></p>\n<p>Then for every natural number <em>n</em>, the statement <em>S</em>(<em>n</em>) is true.</p>\n"
+    ], 
+    "sols_latex": [
+        "Strong mathematical induction is a method to prove a statement\n\\emph{S}(\\emph{n}) is true for all natural numbers \\emph{n}. It is given\nby the following.\n\nSuppose that for every natural number \\emph{n}, that we have the\nimplication\n\n\\begin{align*}\n\\big(\\forall\\,k < n, S(k)\\big) \\Rightarrow S(n)\n\\end{align*}\n\nThen for every natural number \\emph{n}, the statement \\emph{S}(\\emph{n})\nis true."
+    ], 
+    "sols_raw": [
+        "Strong mathematical induction is a method to prove a statement ''S''(''n'') is true for all natural numbers ''n''. It is given by the following.\n\nSuppose that for every natural number ''n'', that we have the implication\n\n:&lt;math>\n\\big(\\forall\\,k &lt; n, S(k)\\big) \\Rightarrow S(n)\n&lt;/math>\n\nThen for every natural number ''n'', the statement ''S''(''n'') is true.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>State the strong principle of mathematical induction.</p>\n", 
+    "statement_latex": "State the strong principle of mathematical induction.", 
+    "statement_raw": "State the strong principle of mathematical induction.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/December_2011/Question_01_(f)", 
+    "year": 2011
 }

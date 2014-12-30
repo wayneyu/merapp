@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_06_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(a) Determine the interval(s) where $f(x)$ is increasing, and the\ninterval(s) where $f(x)$ is decreasing.", 
-    "year": 2012, 
-    "sols": [
-        "Differentiating $\\displaystyle f(x) = 2x^{3/5} + 3x^{-2/5}$ gives\n\n$\\displaystyle f'(x) = \\frac{6x^{-2/5}}{5} + \\frac{-6x^{-7/5}}{5} = \\frac{6x^{-7/5}}{5}(x-1)$.\n\nThus the critical numbers are $x=1$ and $x=0$ (notice here our\nderivative and our function are both undefined). So we check the\nintervals $\\displaystyle (-\\infty,0),(0,1),(1,\\infty)$ individually.\n\nCase 1\\begin{align*}\\displaystyle (-\\infty,0)\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = -1$,\nwhich gives a value of $12/5 > 0$. Thus the function is increasing on\nthis interval.\n\nCase 2\\begin{align*}\\displaystyle (0,1)\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = 1/2$,\nwhich gives a value of $6\\cdot 2^{7/5}/5(-1/2) < 0$. Thus the function\nis decreasing on this interval.\n\nCase 3\\begin{align*}\\displaystyle (1,\\infty)\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = 2$,\nwhich gives a value of $6\\cdot 2^{-7/5}/5 > 0$. Thus the function is\nincreasing on this interval.\n\n\\textbf{Summary}\n\nOverall, the function in increasing on $(-\\infty, 0) \\cup (1, \\infty)$\nand decreasing on $\\displaystyle (0, 1)$."
+    "answer_html": "<p>Overall, the function in increasing on <span class=\"math\">\\((-\\infty, 0) \\cup (1, \\infty)\\)</span> and decreasing on <span class=\"math\">\\(\\displaystyle (0, 1)\\)</span>.</p>\n", 
+    "answer_latex": "Overall, the function in increasing on $(-\\infty, 0) \\cup (1, \\infty)$\nand decreasing on $\\displaystyle (0, 1)$.", 
+    "contributors": [
+        "Konradbe", 
+        "KristinaB", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Differentiate and check the sign of the derivative between critical points.</p>\n"
+    ], 
+    "hints_latex": [
         "Differentiate and check the sign of the derivative between critical\npoints."
-    ]
+    ], 
+    "hints_raw": [
+        "Differentiate and check the sign of the derivative between critical points.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "6 (a)", 
+    "rating": 68, 
+    "sols_html": [
+        "<p>Differentiating <span class=\"math\">\\(\\displaystyle f(x) = 2x^{3/5} + 3x^{-2/5}\\)</span> gives</p>\n<p><span class=\"math\">\\(\\displaystyle f&#39;(x) = \\frac{6x^{-2/5}}{5} + \\frac{-6x^{-7/5}}{5} = \\frac{6x^{-7/5}}{5}(x-1)\\)</span>.</p>\n<p>Thus the critical numbers are <span class=\"math\">\\(x=1\\)</span> and <span class=\"math\">\\(x=0\\)</span> (notice here our derivative and our function are both undefined). So we check the intervals <span class=\"math\">\\(\\displaystyle (-\\infty,0),(0,1),(1,\\infty)\\)</span> individually.</p>\n<p>Case 1</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle (-\\infty,0)\\end{aligned}\\]</span></p>\n<p>We test that the derivative at a point in the interval, say <span class=\"math\">\\(x = -1\\)</span>, which gives a value of <span class=\"math\">\\(12/5 &gt; 0\\)</span>. Thus the function is increasing on this interval.</p>\n<p>Case 2</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle (0,1)\\end{aligned}\\]</span></p>\n<p>We test that the derivative at a point in the interval, say <span class=\"math\">\\(x = 1/2\\)</span>, which gives a value of <span class=\"math\">\\(6\\cdot 2^{7/5}/5(-1/2) &lt; 0\\)</span>. Thus the function is decreasing on this interval.</p>\n<p>Case 3</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle (1,\\infty)\\end{aligned}\\]</span></p>\n<p>We test that the derivative at a point in the interval, say <span class=\"math\">\\(x = 2\\)</span>, which gives a value of <span class=\"math\">\\(6\\cdot 2^{-7/5}/5 &gt; 0\\)</span>. Thus the function is increasing on this interval.</p>\n<p><strong>Summary</strong></p>\n<p>Overall, the function in increasing on <span class=\"math\">\\((-\\infty, 0) \\cup (1, \\infty)\\)</span> and decreasing on <span class=\"math\">\\(\\displaystyle (0, 1)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Differentiating $\\displaystyle f(x) = 2x^{3/5} + 3x^{-2/5}$ gives\n\n$\\displaystyle f'(x) = \\frac{6x^{-2/5}}{5} + \\frac{-6x^{-7/5}}{5} = \\frac{6x^{-7/5}}{5}(x-1)$.\n\nThus the critical numbers are $x=1$ and $x=0$ (notice here our\nderivative and our function are both undefined). So we check the\nintervals $\\displaystyle (-\\infty,0),(0,1),(1,\\infty)$ individually.\n\nCase 1\\begin{align*}\n\\displaystyle (-\\infty,0)\n\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = -1$,\nwhich gives a value of $12/5 > 0$. Thus the function is increasing on\nthis interval.\n\nCase 2\\begin{align*}\n\\displaystyle (0,1)\n\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = 1/2$,\nwhich gives a value of $6\\cdot 2^{7/5}/5(-1/2) < 0$. Thus the function\nis decreasing on this interval.\n\nCase 3\\begin{align*}\n\\displaystyle (1,\\infty)\n\\end{align*}\n\nWe test that the derivative at a point in the interval, say $x = 2$,\nwhich gives a value of $6\\cdot 2^{-7/5}/5 > 0$. Thus the function is\nincreasing on this interval.\n\n\\textbf{Summary}\n\nOverall, the function in increasing on $(-\\infty, 0) \\cup (1, \\infty)$\nand decreasing on $\\displaystyle (0, 1)$."
+    ], 
+    "sols_raw": [
+        "Differentiating &lt;math>\\displaystyle f(x) = 2x^{3/5} + 3x^{-2/5}&lt;/math> gives\n\n&lt;math>\\displaystyle f'(x) = \\frac{6x^{-2/5}}{5} + \\frac{-6x^{-7/5}}{5} = \\frac{6x^{-7/5}}{5}(x-1)&lt;/math>.\n\nThus the critical numbers are &lt;math> x=1 &lt;/math> and &lt;math>x=0 &lt;/math> (notice here our derivative and our function are both undefined).  So we check the intervals &lt;math> \\displaystyle (-\\infty,0),(0,1),(1,\\infty) &lt;/math> individually. \n\nCase 1: &lt;math> \\displaystyle (-\\infty,0) &lt;/math>\n\nWe test that the derivative at a point in the interval, say &lt;math> x = -1 &lt;/math>, which gives a value of &lt;math> 12/5 > 0 &lt;/math>. Thus the function is increasing on this interval.\n\nCase 2: &lt;math> \\displaystyle (0,1) &lt;/math>\n\nWe test that the derivative at a point in the interval, say &lt;math> x = 1/2 &lt;/math>, which gives a value of &lt;math> 6\\cdot 2^{7/5}/5(-1/2) &lt; 0 &lt;/math>.  Thus the function is decreasing on this interval.\n\nCase 3: &lt;math> \\displaystyle (1,\\infty) &lt;/math>\n\nWe test that the derivative at a point in the interval, say &lt;math> x = 2 &lt;/math>, which gives a value of &lt;math> 6\\cdot 2^{-7/5}/5 > 0 &lt;/math>. Thus the function is increasing on this interval.\n\n\n'''Summary'''\n\nOverall, the function in increasing on &lt;math> (-\\infty, 0) \\cup (1, \\infty) &lt;/math> and decreasing on &lt;math> \\displaystyle (0, 1) &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 5-11, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions.</strong></p>\n<p>6. Let <span class=\"math\">\\(f(x) = 2x^{3/5} + 3x^{-2/5}\\)</span>. Note that the domain of <span class=\"math\">\\(f\\)</span> is the set of all nonzero real numbers; for example, <span class=\"math\">\\(f(-1) = -2 + 3 = 1\\)</span>.</p>\n<p>(a) Determine the interval(s) where <span class=\"math\">\\(f(x)\\)</span> is increasing, and the interval(s) where <span class=\"math\">\\(f(x)\\)</span> is decreasing.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 5-11, justify your answers\nand \\textbf{show all your work}. If a box is provided, write your final\nanswer there. \\textbf{Unless otherwise indicated, simplification of\nnumerical answers is required in these questions.}\n\n6. Let $f(x) = 2x^{3/5} + 3x^{-2/5}$. Note that the domain of $f$ is the\nset of all nonzero real numbers; for example, $f(-1) = -2 + 3 = 1$.\n\n(a) Determine the interval(s) where $f(x)$ is increasing, and the\ninterval(s) where $f(x)$ is decreasing.", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these  questions.'''\n\n6. Let &lt;math>f(x) = 2x^{3/5} + 3x^{-2/5}&lt;/math>. Note that the domain of &amp;fnof; is the set of all nonzero real numbers; for example, &lt;math>f(-1) = -2 + 3 = 1&lt;/math>.\n\n(a) Determine the interval(s) where &lt;math>f(x)&lt;/math> is increasing, and the interval(s) where &lt;math>f(x)&lt;/math> is\ndecreasing.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_06_(a)", 
+    "year": 2012
 }

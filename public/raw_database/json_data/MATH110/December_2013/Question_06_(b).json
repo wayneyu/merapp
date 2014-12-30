@@ -1,15 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH110", 
-    "statement": "Consider the\nfunction\\begin{align*}f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{align*}\n\n\\textbf{(b)} Find the derivative of $f(x)$.", 
-    "year": 2013, 
-    "sols": [
-        "Since we have simplified, we can simply apply the chain rule to it using\n$u = x^3 + 2x^2 + x - 3$.\n\n\\begin{align*}\nf(u) &= e^u & f'(u) &= e^u\\\\\nu(x) &  x^3 + 2x^2 + x - 3 & u'(x) &=  3x^2 + 4x + 1.\\end{align*}\n\nCombining, we get:\n\n$f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}$", 
-        "Alternatively, we can start with the initial function and use log-diff:\n\n\\begin{align*}\nf(x) &= \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\\n\\ln(f(x)) &= \\ln\\left(\\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\right)\\\\\n&= \\ln\\left(e^{\\left(x^3\\right)}\\right) + \\ln\\left(e^{\\left(2x^2\\right)}\\right) + \\ln\\left(e^{x}\\right) - \\ln\\left({e^3}\\right)\\\\\n&= x^3 \\ln\\left(e\\right) + 2x^2 \\ln\\left(e\\right) +x \\ln\\left(e\\right) - 3\\ln\\left(e\\right)\\\\\n\\ln(f(x))&= x^3 + 2x^2 +x - 3\\\\\n{\\frac{{\\rm d}}{{\\rm d}x}} \\ln(f(x)) &= {\\frac{{\\rm d}}{{\\rm d}x}} \\left(x^3 + 2x^2 +x - 3\\right)\\\\\n\\frac{f'(x)}{f(x)} &= 3x^2 + 4x +1\\\\\nf'(x) &= \\left(3x^2 + 4x +1\\right) f(x)\\\\\nf'(x) &= \\left(3x^2 + 4x +1\\right)\\cdot \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}\\)</span></p>\n", 
+    "answer_latex": "$f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Simplify the function first as was done in\n\\href{Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)}{part\n(a)} and then use the chain rule.", 
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Simplify the function first as was done in <span>part (a)</span> and then use the chain rule.</p>\n", 
+        "<p>You can also differentiate this using logarithmic differentiation.</p>\n"
+    ], 
+    "hints_latex": [
+        "Simplify the function first as was done in\n{part\n(a)} and then use the chain rule.", 
         "You can also differentiate this using logarithmic differentiation."
-    ]
+    ], 
+    "hints_raw": [
+        "Simplify the function first as was done in [[Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(a)|part (a)]] and then use the chain rule.\n", 
+        "You can also differentiate this using logarithmic differentiation.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since we have simplified, we can simply apply the chain rule to it using <span class=\"math\">\\(u = x^3 + 2x^2 + x - 3\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(u) &amp;= e^u &amp; f&#39;(u) &amp;= e^u\\\\\nu(x) &amp;  x^3 + 2x^2 + x - 3 &amp; u&#39;(x) &amp;=  3x^2 + 4x + 1.\\end{aligned}\\]</span></p>\n<p>Combining, we get:</p>\n<p><span class=\"math\">\\(f&#39;(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}\\)</span></p>\n", 
+        "<p>Alternatively, we can start with the initial function and use log-diff:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) &amp;= \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\\n\\ln(f(x)) &amp;= \\ln\\left(\\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\right)\\\\\n&amp;= \\ln\\left(e^{\\left(x^3\\right)}\\right) + \\ln\\left(e^{\\left(2x^2\\right)}\\right) + \\ln\\left(e^{x}\\right) - \\ln\\left({e^3}\\right)\\\\\n&amp;= x^3 \\ln\\left(e\\right) + 2x^2 \\ln\\left(e\\right) +x \\ln\\left(e\\right) - 3\\ln\\left(e\\right)\\\\\n\\ln(f(x))&amp;= x^3 + 2x^2 +x - 3\\\\\n{\\frac{{\\rm d}}{{\\rm d}x}} \\ln(f(x)) &amp;= {\\frac{{\\rm d}}{{\\rm d}x}} \\left(x^3 + 2x^2 +x - 3\\right)\\\\\n\\frac{f&#39;(x)}{f(x)} &amp;= 3x^2 + 4x +1\\\\\nf&#39;(x) &amp;= \\left(3x^2 + 4x +1\\right) f(x)\\\\\nf&#39;(x) &amp;= \\left(3x^2 + 4x +1\\right)\\cdot \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since we have simplified, we can simply apply the chain rule to it using\n$u = x^3 + 2x^2 + x - 3$.\n\n\\begin{align*}\nf(u) &= e^u & f'(u) &= e^u\\\\\nu(x) &  x^3 + 2x^2 + x - 3 & u'(x) &=  3x^2 + 4x + 1.\n\\end{align*}\n\nCombining, we get:\n\n$f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}$", 
+        "Alternatively, we can start with the initial function and use log-diff:\n\n\\begin{align*}\nf(x) &= \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\\n\\ln(f(x)) &= \\ln\\left(\\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\right)\\\\\n&= \\ln\\left(e^{\\left(x^3\\right)}\\right) + \\ln\\left(e^{\\left(2x^2\\right)}\\right) + \\ln\\left(e^{x}\\right) - \\ln\\left({e^3}\\right)\\\\\n&= x^3 \\ln\\left(e\\right) + 2x^2 \\ln\\left(e\\right) +x \\ln\\left(e\\right) - 3\\ln\\left(e\\right)\\\\\n\\ln(f(x))&= x^3 + 2x^2 +x - 3\\\\\n{\\frac{{\\rm d}}{{\\rm d}x}} \\ln(f(x)) &= {\\frac{{\\rm d}}{{\\rm d}x}} \\left(x^3 + 2x^2 +x - 3\\right)\\\\\n\\frac{f'(x)}{f(x)} &= 3x^2 + 4x +1\\\\\nf'(x) &= \\left(3x^2 + 4x +1\\right) f(x)\\\\\nf'(x) &= \\left(3x^2 + 4x +1\\right)\\cdot \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Since we have simplified, we can simply apply the chain rule to it using &lt;math>u = x^3 + 2x^2 + x - 3&lt;/math>.\n\n&lt;math>\\begin{align}\nf(u) &amp;= e^u &amp; f'(u) &amp;= e^u\\\\\nu(x) &amp;  x^3 + 2x^2 + x - 3 &amp; u'(x) &amp;=  3x^2 + 4x + 1.\\end{align}&lt;/math>\n\nCombining, we get:\n\n&lt;math>f'(x) = \\left(3x^2 + 4x + 1\\right)\\cdot e^{x^3 + 2x^2 + x - 3}&lt;/math>\n", 
+        "Alternatively, we can start with the initial function and use log-diff:\n\n&lt;math>\\begin{align}\nf(x) &amp;= \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\\n\\ln(f(x)) &amp;= \\ln\\left(\\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\right)\\\\\n&amp;= \\ln\\left(e^{\\left(x^3\\right)}\\right) + \\ln\\left(e^{\\left(2x^2\\right)}\\right) + \\ln\\left(e^{x}\\right) - \\ln\\left({e^3}\\right)\\\\\n&amp;= x^3 \\ln\\left(e\\right) + 2x^2 \\ln\\left(e\\right) +x \\ln\\left(e\\right) - 3\\ln\\left(e\\right)\\\\\n\\ln(f(x))&amp;= x^3 + 2x^2 +x - 3\\\\\n{\\frac{{\\rm d}}{{\\rm d}x}} \\ln(f(x)) &amp;= {\\frac{{\\rm d}}{{\\rm d}x}} \\left(x^3 + 2x^2 +x - 3\\right)\\\\\n\\frac{f'(x)}{f(x)} &amp;= 3x^2 + 4x +1\\\\\nf'(x) &amp;= \\left(3x^2 + 4x +1\\right) f(x)\\\\\nf'(x) &amp;= \\left(3x^2 + 4x +1\\right)\\cdot \\frac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}\\\\\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\\end{aligned}\\]</span></p>\n<p><strong>(b)</strong> Find the derivative of <span class=\"math\">\\(f(x)\\)</span>.</p>\n", 
+    "statement_latex": "Consider the\nfunction\\begin{align*}\nf(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.\n\\end{align*}\n\n\\textbf{(b)} Find the derivative of $f(x)$.", 
+    "statement_raw": "Consider the function: &lt;math>f(x) = \\dfrac{e^{\\left(x^3\\right)}e^{\\left(2x^2\\right)}e^{x}}{e^3}.&lt;/math>\n\n'''(b)''' Find the derivative of &lt;math>f(x)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule", 
+        "Logarithmic_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_06_(b)", 
+    "year": 2013
 }

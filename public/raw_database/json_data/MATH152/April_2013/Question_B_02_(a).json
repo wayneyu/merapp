@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_B_02_(a)", 
-    "course": "MATH152", 
-    "statement": "Let $A = (0,1,2)$, $B = (1,0,3)$ and $C = (1,1,4)$. Let $\\Delta$ be the\ntriangle whose vertices are \\emph{A},\\emph{B}, and \\emph{C}.\n\nFind the area of $\\Delta$.", 
-    "year": 2013, 
-    "sols": [
-        "Let\n\n\\begin{align*}v_{AB} = B-A = \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix} = \\begin{bmatrix}1 & -1 & 1 \\end{bmatrix}\\end{align*}\n\nand let\n\n\\begin{align*}v_{AC} = C-A = \\begin{bmatrix}1 & 1 & 4 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix}  = \\begin{bmatrix}1 & 0 & 2 \\end{bmatrix}\\end{align*}\n\nThen, the area of a triangle is given by\n\n\\begin{align*}\n\\text{Area} &= 1/2\\|v_{AB}\\times v_{AC}\\|\\end{align*}\n\nComputing the cross product gives\n\n\\begin{align*}\nv_{AB}\\times v_{AC} = \\begin{bmatrix} -2 & -1 & 1 \\end{bmatrix}\\end{align*}\n\nTaking the norm and dividing by 2 yields\n\n\\begin{align*}\n\\text{Area} &= 1/2\\|v_{AB}\\times v_{AC}\\| = 1/2 \\|\\begin{bmatrix} -2 & -1 & 1 \\end{bmatrix}\\| = \\frac{\\sqrt{(-2)^2 + (-1)^2 + 1^2}}{2} = \\frac{\\sqrt{6}}{2}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\text{Area}=\\frac{\\sqrt{6}}{2}\\)</span></p>\n", 
+    "answer_latex": " $\\text{Area}=\\frac{\\sqrt{6}}{2}$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Compute the vectors corresponding to the line through A and B and the other vector corresponding to the line through A and C.</p>\n"
+    ], 
+    "hints_latex": [
         "Compute the vectors corresponding to the line through A and B and the\nother vector corresponding to the line through A and C."
-    ]
+    ], 
+    "hints_raw": [
+        "Compute the vectors corresponding to the line through A and B and the other vector corresponding to the line through A and C.\n"
+    ], 
+    "num_votes": 5, 
+    "question": "B 02 (a)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nv_{AB} = B-A = \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix} = \\begin{bmatrix}1 &amp; -1 &amp; 1 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nv_{AC} = C-A = \\begin{bmatrix}1 &amp; 1 &amp; 4 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix}  = \\begin{bmatrix}1 &amp; 0 &amp; 2 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Then, the area of a triangle is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\text{Area} &amp;= 1/2\\|v_{AB}\\times v_{AC}\\|\\end{aligned}\\]</span></p>\n<p>Computing the cross product gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nv_{AB}\\times v_{AC} = \\begin{bmatrix} -2 &amp; -1 &amp; 1 \\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Taking the norm and dividing by 2 yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\text{Area} &amp;= 1/2\\|v_{AB}\\times v_{AC}\\| = 1/2 \\|\\begin{bmatrix} -2 &amp; -1 &amp; 1 \\end{bmatrix}\\| = \\frac{\\sqrt{(-2)^2 + (-1)^2 + 1^2}}{2} = \\frac{\\sqrt{6}}{2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let\n\n\\begin{align*}\nv_{AB} = B-A = \\begin{bmatrix}1 & 0 & 3 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix} = \\begin{bmatrix}1 & -1 & 1 \\end{bmatrix}\n\\end{align*}\n\nand let\n\n\\begin{align*}\nv_{AC} = C-A = \\begin{bmatrix}1 & 1 & 4 \\end{bmatrix} - \\begin{bmatrix}0 & 1 & 2 \\end{bmatrix}  = \\begin{bmatrix}1 & 0 & 2 \\end{bmatrix}\n\\end{align*}\n\nThen, the area of a triangle is given by\n\n\\begin{align*}\n\\text{Area} &= 1/2\\|v_{AB}\\times v_{AC}\\|\n\\end{align*}\n\nComputing the cross product gives\n\n\\begin{align*}\nv_{AB}\\times v_{AC} = \\begin{bmatrix} -2 & -1 & 1 \\end{bmatrix}\n\\end{align*}\n\nTaking the norm and dividing by 2 yields\n\n\\begin{align*}\n\\text{Area} &= 1/2\\|v_{AB}\\times v_{AC}\\| = 1/2 \\|\\begin{bmatrix} -2 & -1 & 1 \\end{bmatrix}\\| = \\frac{\\sqrt{(-2)^2 + (-1)^2 + 1^2}}{2} = \\frac{\\sqrt{6}}{2}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Let \n:&lt;math>\nv_{AB} = B-A = \\begin{bmatrix}1 &amp; 0 &amp; 3 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix} = \\begin{bmatrix}1 &amp; -1 &amp; 1 \\end{bmatrix}\n&lt;/math>\n\nand let \n:&lt;math>\nv_{AC} = C-A = \\begin{bmatrix}1 &amp; 1 &amp; 4 \\end{bmatrix} - \\begin{bmatrix}0 &amp; 1 &amp; 2 \\end{bmatrix}  = \\begin{bmatrix}1 &amp; 0 &amp; 2 \\end{bmatrix}\n&lt;/math>\n\nThen, the area of a triangle is given by\n:&lt;math>\n\\begin{align}\n\\text{Area} &amp;= 1/2\\|v_{AB}\\times v_{AC}\\|\n\\end{align}\n&lt;/math>\n\nComputing the cross product gives\n:&lt;math>\n\\begin{align}\nv_{AB}\\times v_{AC} = \\begin{bmatrix} -2 &amp; -1 &amp; 1 \\end{bmatrix}\n\\end{align}\n&lt;/math>\n\nTaking the norm and dividing by 2 yields\n:&lt;math>\n\\begin{align}\n\\text{Area} &amp;= 1/2\\|v_{AB}\\times v_{AC}\\| = 1/2 \\|\\begin{bmatrix} -2 &amp; -1 &amp; 1 \\end{bmatrix}\\| = \\frac{\\sqrt{(-2)^2 + (-1)^2 + 1^2}}{2} = \\frac{\\sqrt{6}}{2}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(A = (0,1,2)\\)</span>, <span class=\"math\">\\(B = (1,0,3)\\)</span> and <span class=\"math\">\\(C = (1,1,4)\\)</span>. Let <span class=\"math\">\\(\\Delta\\)</span> be the triangle whose vertices are <em>A</em>,<em>B</em>, and <em>C</em>.</p>\n<p>Find the area of <span class=\"math\">\\(\\Delta\\)</span>.</p>\n", 
+    "statement_latex": "Let $A = (0,1,2)$, $B = (1,0,3)$ and $C = (1,1,4)$. Let $\\Delta$ be the\ntriangle whose vertices are \\emph{A},\\emph{B}, and \\emph{C}.\n\nFind the area of $\\Delta$.", 
+    "statement_raw": "Let &lt;math> A = (0,1,2) &lt;/math>, &lt;math> B = (1,0,3) &lt;/math> and &lt;math> C = (1,1,4) &lt;/math>. Let &lt;math> \\Delta &lt;/math> be the triangle whose vertices are ''A'',''B'', and ''C''.\n\nFind the area of &lt;math> \\Delta &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Geometric_linear_algebra"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_B_02_(a)", 
+    "year": 2013
 }

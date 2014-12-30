@@ -1,14 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH104", 
-    "statement": "Consider the curve $x^2+y^3-2xy=0$. Assume that the point \\emph{(x,y) =\n(1,1)} lies on the curve, and that nearby points on the curve satisfy\n\\emph{y=f(x)} for some function of \\emph{f(x)}.\n\nFind $\\displaystyle {}f''(1)$.", 
-    "year": 2012, 
-    "sols": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)}{part\n(a)}, we have\n\n\\begin{align*}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \\end{align*}\n\nDifferentiating again gives\n\n\\begin{align*}\n2+3\\left(2y\\left(\\frac{dy}{dx}\\right)^2 + y^{2}\\frac{d^{2}y}{dx^{2}}\\right) -2\\frac{dy}{dx}-2\\left(\\frac{dy}{dx} + x\\frac{d^{2}y}{dx^{2}}\\right)=0 \\end{align*}\n\nIsolating for the second derivative gives\n\n\\begin{align*}\n2 + 6y\\left(\\frac{dy}{dx}\\right)^2 + 3y^{2}\\frac{d^{2}y}{dx^{2}} - 4\\frac{dy}{dx} -2x \\frac{d^{2}y}{dx^2}  &=0 \\\\\n2 -4\\frac{dy}{dx}+6y\\left(\\frac{dy}{dx}\\right)^2 +(3y^{2}-2x) \\frac{d^{2}y}{dx^2}  &=0\\\\\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2 + 4\\frac{dy}{dx}-6y\\left(\\frac{dy}{dx}\\right)^2}{3y^{2}-2x}\\end{align*}\n\nNow we plug in $x= y =1$ into this equation. From\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)}{part\n(a)}, we know that the derivative at 1 is 0 and thus, we get\n\n\\begin{align*}\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2+ 4(0)-6(1)(0)^2}{3(1)^{2}-2(1)} = \\frac{-2}{1} = -2\\end{align*}\n\nand so $\\displaystyle f''(1) = -2$"
+    "answer_html": "<p>and so <span class=\"math\">\\(\\displaystyle f&#39;&#39;(1) = -2\\)</span></p>\n", 
+    "answer_latex": "and so $\\displaystyle f''(1) = -2$", 
+    "contributors": [
+        "WilliamThompson", 
+        "KaterynaMelnykova", 
+        "IainMoyles", 
+        "ChristinaKoch", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p><span class=\"math\">\\(y(x)\\)</span> is defined implicitly. How do we differentiate functions that are defined this way?</p>\n", 
+        "<p>Use implicit differentiation to find <span class=\"math\">\\(\\frac{d^{2}y}{dx^2}\\)</span> and evaluate at <span class=\"math\">\\(x=y=1\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "$y(x)$ is defined implicitly. How do we differentiate functions that are\ndefined this way?", 
         "Use implicit differentiation to find $\\frac{d^{2}y}{dx^2}$ and evaluate\nat $x=y=1$."
-    ]
+    ], 
+    "hints_raw": [
+        "&lt;math>y(x)&lt;/math> is defined implicitly.  How do we differentiate functions that are defined this way?\n", 
+        "Use implicit differentiation to find &lt;math>\\frac{d^{2}y}{dx^2} &lt;/math> and evaluate at &lt;math>x=y=1 &lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "6 (b)", 
+    "rating": 5, 
+    "sols_html": [
+        "<p>From <span>part (a)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \\end{aligned}\\]</span></p>\n<p>Differentiating again gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2+3\\left(2y\\left(\\frac{dy}{dx}\\right)^2 + y^{2}\\frac{d^{2}y}{dx^{2}}\\right) -2\\frac{dy}{dx}-2\\left(\\frac{dy}{dx} + x\\frac{d^{2}y}{dx^{2}}\\right)=0 \\end{aligned}\\]</span></p>\n<p>Isolating for the second derivative gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2 + 6y\\left(\\frac{dy}{dx}\\right)^2 + 3y^{2}\\frac{d^{2}y}{dx^{2}} - 4\\frac{dy}{dx} -2x \\frac{d^{2}y}{dx^2}  &amp;=0 \\\\\n2 -4\\frac{dy}{dx}+6y\\left(\\frac{dy}{dx}\\right)^2 +(3y^{2}-2x) \\frac{d^{2}y}{dx^2}  &amp;=0\\\\\n\\frac{d^{2}y}{dx^2}  &amp;= \\frac{-2 + 4\\frac{dy}{dx}-6y\\left(\\frac{dy}{dx}\\right)^2}{3y^{2}-2x}\\end{aligned}\\]</span></p>\n<p>Now we plug in <span class=\"math\">\\(x= y =1\\)</span> into this equation. From <span>part (a)</span>, we know that the derivative at 1 is 0 and thus, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d^{2}y}{dx^2}  &amp;= \\frac{-2+ 4(0)-6(1)(0)^2}{3(1)^{2}-2(1)} = \\frac{-2}{1} = -2\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(\\displaystyle f&#39;&#39;(1) = -2\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From\n{part\n(a)}, we have\n\n\\begin{align*}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \n\\end{align*}\n\nDifferentiating again gives\n\n\\begin{align*}\n2+3\\left(2y\\left(\\frac{dy}{dx}\\right)^2 + y^{2}\\frac{d^{2}y}{dx^{2}}\\right) -2\\frac{dy}{dx}-2\\left(\\frac{dy}{dx} + x\\frac{d^{2}y}{dx^{2}}\\right)=0 \n\\end{align*}\n\nIsolating for the second derivative gives\n\n\\begin{align*}\n2 + 6y\\left(\\frac{dy}{dx}\\right)^2 + 3y^{2}\\frac{d^{2}y}{dx^{2}} - 4\\frac{dy}{dx} -2x \\frac{d^{2}y}{dx^2}  &=0 \\\\\n2 -4\\frac{dy}{dx}+6y\\left(\\frac{dy}{dx}\\right)^2 +(3y^{2}-2x) \\frac{d^{2}y}{dx^2}  &=0\\\\\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2 + 4\\frac{dy}{dx}-6y\\left(\\frac{dy}{dx}\\right)^2}{3y^{2}-2x}\n\\end{align*}\n\nNow we plug in $x= y =1$ into this equation. From\n{part\n(a)}, we know that the derivative at 1 is 0 and thus, we get\n\n\\begin{align*}\n\\frac{d^{2}y}{dx^2}  &= \\frac{-2+ 4(0)-6(1)(0)^2}{3(1)^{2}-2(1)} = \\frac{-2}{1} = -2\n\\end{align*}\n\nand so $\\displaystyle f''(1) = -2$"
+    ], 
+    "sols_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)|part (a)]], we have\n\n&lt;math>\n\\begin{align}\n2x+3y^2 \\frac{dy}{dx}-2y-2x\\frac{dy}{dx}=0 \n\\end{align}\n&lt;/math>\n\nDifferentiating again gives\n\n&lt;math>\n\\begin{align}\n2+3\\left(2y\\left(\\frac{dy}{dx}\\right)^2 + y^{2}\\frac{d^{2}y}{dx^{2}}\\right) -2\\frac{dy}{dx}-2\\left(\\frac{dy}{dx} + x\\frac{d^{2}y}{dx^{2}}\\right)=0 \n\\end{align}\n&lt;/math>\n\nIsolating for the second derivative gives\n\n&lt;math>\n\\begin{align}\n2 + 6y\\left(\\frac{dy}{dx}\\right)^2 + 3y^{2}\\frac{d^{2}y}{dx^{2}} - 4\\frac{dy}{dx} -2x \\frac{d^{2}y}{dx^2}  &amp;=0 \\\\\n2 -4\\frac{dy}{dx}+6y\\left(\\frac{dy}{dx}\\right)^2 +(3y^{2}-2x) \\frac{d^{2}y}{dx^2}  &amp;=0\\\\\n\\frac{d^{2}y}{dx^2}  &amp;= \\frac{-2 + 4\\frac{dy}{dx}-6y\\left(\\frac{dy}{dx}\\right)^2}{3y^{2}-2x}\n\\end{align}\n&lt;/math>\n\nNow we plug in &lt;math> x= y =1 &lt;/math> into this equation. From [[Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_6_(a)|part (a)]], we know that the derivative at 1 is 0 and thus, we get\n\n&lt;math>\n\\begin{align}\n\\frac{d^{2}y}{dx^2}  &amp;= \\frac{-2+ 4(0)-6(1)(0)^2}{3(1)^{2}-2(1)} = \\frac{-2}{1} = -2\n\\end{align}\n&lt;/math>\n\nand so &lt;math> \\displaystyle f''(1) = -2 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the curve <span class=\"math\">\\(x^2+y^3-2xy=0\\)</span>. Assume that the point <em>(x,y) = (1,1)</em> lies on the curve, and that nearby points on the curve satisfy <em>y=f(x)</em> for some function of <em>f(x)</em>.</p>\n<p>Find <span class=\"math\">\\(\\displaystyle {}f&#39;&#39;(1)\\)</span>.</p>\n", 
+    "statement_latex": "Consider the curve $x^2+y^3-2xy=0$. Assume that the point \\emph{(x,y) =\n(1,1)} lies on the curve, and that nearby points on the curve satisfy\n\\emph{y=f(x)} for some function of \\emph{f(x)}.\n\nFind $\\displaystyle {}f''(1)$.", 
+    "statement_raw": "Consider the curve &lt;math>x^2+y^3-2xy=0&lt;/math>.  Assume that the point ''(x,y) = (1,1)'' lies on the curve, and that nearby points on the curve satisfy ''y=f(x)'' for some function of ''f(x)''.\n\nFind &lt;math>\\displaystyle{}f''(1)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Concavity", 
+        "Implicit_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_06_(b)", 
+    "year": 2012
 }

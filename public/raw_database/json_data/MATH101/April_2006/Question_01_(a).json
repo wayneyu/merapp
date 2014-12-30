@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(f_{av} = 0\\)</span></p>\n", 
+    "answer_latex": "$f_{av} = 0$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH101", 
-    "statement": "Find the average value of $\\displaystyle \\cos(x)$ on the interval\n$\\displaystyle [0, \\pi].$", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The formula for the average value of a function is</p>\n<p><span class=\"math\">\\(f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The formula for the average value of a function is\n\n$f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx$"
+    ], 
+    "hints_raw": [
+        "The formula for the average value of a function is\n\n&lt;math>\nf_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx\n&lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>Applying the formula gives</p>\n<p><span class=\"math\">\\(f_{av} = \\frac{1}{\\pi-0}\\int_{0}^{\\pi}\\cos x\\, dx = \\frac1{\\pi} \\sin(x) |_{0}^{\\pi} = \\frac{\\sin(\\pi) - \\sin(0)}{\\pi} = 0\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "Applying the formula gives\n\n$f_{av} = \\frac{1}{\\pi-0}\\int_{0}^{\\pi}\\cos x\\, dx = \\frac1{\\pi} \\sin(x) |_{0}^{\\pi} = \\frac{\\sin(\\pi) - \\sin(0)}{\\pi} = 0$"
     ], 
-    "hints": [
-        "The formula for the average value of a function is\n\n$f_{av} = \\frac{1}{b-a}\\int_{a}^{b}f(x)\\, dx$"
-    ]
+    "sols_raw": [
+        "Applying the formula gives\n\n&lt;math>\nf_{av} = \\frac{1}{\\pi-0}\\int_{0}^{\\pi}\\cos x\\, dx = \\frac1{\\pi} \\sin(x) |_{0}^{\\pi} = \\frac{\\sin(\\pi) - \\sin(0)}{\\pi} = 0\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the average value of <span class=\"math\">\\(\\displaystyle \\cos(x)\\)</span> on the interval <span class=\"math\">\\(\\displaystyle [0, \\pi].\\)</span></p>\n", 
+    "statement_latex": "Find the average value of $\\displaystyle \\cos(x)$ on the interval\n$\\displaystyle [0, \\pi].$", 
+    "statement_raw": "Find the average value of &lt;math>\\displaystyle \\cos(x) &lt;/math> on the interval &lt;math>\\displaystyle [0, \\pi]. &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Average_value"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(a)", 
+    "year": 2006
 }

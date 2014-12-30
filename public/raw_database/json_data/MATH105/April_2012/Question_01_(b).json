@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
+    "answer_html": "<p>The series sums to <span class=\"math\">\\(2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.\\)</span></p>\n", 
+    "answer_latex": "The series sums to\n$2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.$", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch"
+    ], 
     "course": "MATH105", 
-    "statement": "You are given the formula for the sum of a geometric series, namely:\n\n\\begin{align*}1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| < 1.\\end{align*}\n\nUse this fact to evaluate the series in part\n\\href{Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_1_(a)}{(a)}.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Note that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\\end{aligned}\\]</span></p>\n<p>Try to find a suitable value for <em>r</em> in our case.</p>\n"
+    ], 
+    "hints_latex": [
+        "Note that\n\n\\begin{align*}\n1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\n\\end{align*} Try to find a suitable\nvalue for \\emph{r} in our case."
+    ], 
+    "hints_raw": [
+        "Note that\n:&lt;math>\n1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\n&lt;/math>\nTry to find a suitable value for ''r'' in our case.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "1 (b)", 
+    "rating": 68, 
+    "sols_html": [
+        "<p>The trick here is to recognize the series given as a geometric series.</p>\n<p>The question provides the formula <span class=\"math\">\\(1 + r + r^2 + ... = \\sum_{k=0}^{\\infty} r^k = \\frac{1}{1-r}\\)</span> for <span class=\"math\">\\(|r| &lt; 1.\\)</span></p>\n<p>Essentially, would like to evaluate the series by finding a suitable r so that this formula can be applied.</p>\n<p>Let&#8217;s first re-express <span class=\"math\">\\(\\sum_{k=0}^{\\infty} (-1)^k 2^{k+1} x^k =\\sum_{k=0}^{\\infty} 2 (-1)^k 2^k x^k\\)</span> as <span class=\"math\">\\(2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k\\)</span> so that all terms in the summation have an exponent of k and the indexing starts at 0.</p>\n<p>Now we note that <span class=\"math\">\\(2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k = 2 \\sum_{k=0}^{\\infty} [(-1)(2)(x)]^k = 2 \\sum_{k=0}^{\\infty} (-2x)^k\\)</span>.</p>\n<p>The formula provided now works with <span class=\"math\">\\(r = -2x\\)</span>. The series sums to <span class=\"math\">\\(2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "The trick here is to recognize the series given as a geometric series.\n\nThe question provides the formula\n$1 + r + r^2 + ... = \\sum_{k=0}^{\\infty} r^k = \\frac{1}{1-r}$ for\n$|r| < 1.$\n\nEssentially, would like to evaluate the series by finding a suitable r\nso that this formula can be applied.\n\nLet's first re-express\n$\\sum_{k=0}^{\\infty} (-1)^k 2^{k+1} x^k =\\sum_{k=0}^{\\infty} 2 (-1)^k 2^k x^k$\nas $2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k$ so that all terms in the\nsummation have an exponent of k and the indexing starts at 0.\n\nNow we note that\n$2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k = 2 \\sum_{k=0}^{\\infty} [(-1)(2)(x)]^k = 2 \\sum_{k=0}^{\\infty} (-2x)^k$.\n\nThe formula provided now works with $r = -2x$. The series sums to\n$2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.$"
     ], 
-    "hints": [
-        "Note that\n\n\\begin{align*}1 + r + r^2 + \\dots = \\sum_{k=0}^\\infty r^k\\end{align*} Try to find a suitable\nvalue for \\emph{r} in our case."
-    ]
+    "sols_raw": [
+        "The trick here is to recognize the series given as a geometric series.\n\nThe question provides the formula &lt;math>1 + r + r^2 + ... = \\sum_{k=0}^{\\infty} r^k = \\frac{1}{1-r}&lt;/math> for &lt;math>|r| &lt; 1.&lt;/math>\n\nEssentially, would like to evaluate the series by finding a suitable r so that this formula can be applied.\n\nLet's first re-express &lt;math> \\sum_{k=0}^{\\infty} (-1)^k 2^{k+1} x^k =\\sum_{k=0}^{\\infty} 2 (-1)^k 2^k x^k&lt;/math> as &lt;math> 2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k&lt;/math> so that all terms in the summation have an exponent of k and the indexing starts at 0.\n\nNow we note that &lt;math> 2 \\sum_{k=0}^{\\infty} (-1)^k 2^{k} x^k = 2 \\sum_{k=0}^{\\infty} [(-1)(2)(x)]^k = 2 \\sum_{k=0}^{\\infty} (-2x)^k&lt;/math>.\n\nThe formula provided now works with &lt;math>r = -2x&lt;/math>. The series sums to &lt;math>2 \\times \\frac{1}{1 - (-2x)} = \\frac{2}{1 + 2x}.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>You are given the formula for the sum of a geometric series, namely:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| &lt; 1.\\end{aligned}\\]</span></p>\n<p>Use this fact to evaluate the series in part <span>(a)</span>.</p>\n", 
+    "statement_latex": "You are given the formula for the sum of a geometric series, namely:\n\n\\begin{align*}\n1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| < 1.\n\\end{align*}\n\nUse this fact to evaluate the series in part\n{(a)}.", 
+    "statement_raw": "You are given the formula for the sum of a geometric series, namely:\n\n:&lt;math>\n1+r+r^2+\\cdots = \\frac1{1-r}, \\qquad |r| &lt; 1.\n&lt;/math>\n\nUse this fact to evaluate the series in part [[Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_1_(a)|(a)]].\n", 
+    "term": "April", 
+    "topics": [
+        "Geometric_series", 
+        "Power_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_01_(b)", 
+    "year": 2012
 }

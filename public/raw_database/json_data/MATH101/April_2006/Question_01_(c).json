@@ -1,16 +1,58 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "Evaluate\n\n\\begin{align*}\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx\\end{align*}", 
-    "year": 2006, 
-    "sols": [
-        "$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$", 
-        "We still have\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx+ x - \\frac{x^{3}}{3}$\n\nTo evaluate the last integral, let $x = \\sin\\theta$ so that\n$dx = \\cos\\theta d\\theta$ and thus, we have\n\n\\begin{align*}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx &= \\int \\left(\\frac{\\cos\\theta}{\\sqrt{1-\\sin^{2}\\theta}} \\right) \\, d \\theta\\\\\n&= \\int \\left(\\frac{\\cos\\theta}{\\cos\\theta} \\right) \\, d \\theta\\\\\n&= \\int  \\, d \\theta \\\\\n&=  \\theta + C\\\\\n&= \\arcsin(x) + C\\end{align*}\n\nand so\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C\\)</span></p>\n", 
+    "answer_latex": "$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Just do it.</p>\n", 
+        "<p>Alternatively, you could evaluate the last two terms easily and then use a trig substitution on the first integral.</p>\n", 
+        "<p>Following hint 2, you can use <span class=\"math\">\\(x = \\sin\\theta\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Just do it.", 
         "Alternatively, you could evaluate the last two terms easily and then use\na trig substitution on the first integral.", 
         "Following hint 2, you can use $x = \\sin\\theta$"
-    ]
+    ], 
+    "hints_raw": [
+        "Just do it.\n", 
+        "Alternatively, you could evaluate the last two terms easily and then use a trig substitution on the first integral.\n", 
+        "Following hint 2, you can use &lt;math> x = \\sin\\theta &lt;/math>\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (c)", 
+    "rating": 77, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C\\)</span></p>\n", 
+        "<p>We still have</p>\n<p><span class=\"math\">\\(\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx+ x - \\frac{x^{3}}{3}\\)</span></p>\n<p>To evaluate the last integral, let <span class=\"math\">\\(x = \\sin\\theta\\)</span> so that <span class=\"math\">\\(dx = \\cos\\theta d\\theta\\)</span> and thus, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx &amp;= \\int \\left(\\frac{\\cos\\theta}{\\sqrt{1-\\sin^{2}\\theta}} \\right) \\, d \\theta\\\\\n&amp;= \\int \\left(\\frac{\\cos\\theta}{\\cos\\theta} \\right) \\, d \\theta\\\\\n&amp;= \\int  \\, d \\theta \\\\\n&amp;=  \\theta + C\\\\\n&amp;= \\arcsin(x) + C\\end{aligned}\\]</span></p>\n<p>and so</p>\n<p><span class=\"math\">\\(\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$", 
+        "We still have\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx+ x - \\frac{x^{3}}{3}$\n\nTo evaluate the last integral, let $x = \\sin\\theta$ so that\n$dx = \\cos\\theta d\\theta$ and thus, we have\n\n\\begin{align*}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx &= \\int \\left(\\frac{\\cos\\theta}{\\sqrt{1-\\sin^{2}\\theta}} \\right) \\, d \\theta\\\\\n&= \\int \\left(\\frac{\\cos\\theta}{\\cos\\theta} \\right) \\, d \\theta\\\\\n&= \\int  \\, d \\theta \\\\\n&=  \\theta + C\\\\\n&= \\arcsin(x) + C\n\\end{align*}\n\nand so\n\n$\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C$"
+    ], 
+    "sols_raw": [
+        "&lt;math>\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C\n&lt;/math>\n", 
+        "We still have\n\n&lt;math>\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx+ x - \\frac{x^{3}}{3} \n&lt;/math>\n\nTo evaluate the last integral, let &lt;math> x = \\sin\\theta &lt;/math> so that &lt;math> dx = \\cos\\theta d\\theta &lt;/math> and thus, we have\n\n&lt;math>\n\\begin{align}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} \\right) \\, dx &amp;= \\int \\left(\\frac{\\cos\\theta}{\\sqrt{1-\\sin^{2}\\theta}} \\right) \\, d \\theta\\\\\n&amp;= \\int \\left(\\frac{\\cos\\theta}{\\cos\\theta} \\right) \\, d \\theta\\\\\n&amp;= \\int  \\, d \\theta \\\\\n&amp;=  \\theta + C\\\\\n&amp;= \\arcsin(x) + C\n\\end{align}\n&lt;/math>\n\nand so \n\n&lt;math>\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx = \\arcsin(x) + x - \\frac{x^{3}}{3} + C\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Evaluate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Evaluate\n\n\\begin{align*}\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx\n\\end{align*}", 
+    "statement_raw": "Evaluate\n\n:&lt;math>\n\\int \\left(\\frac{1}{\\sqrt{1-x^{2}}} + 1 - x^{2}\\right)\\, dx\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus", 
+        "Integration", 
+        "Trigonometric_substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(c)", 
+    "year": 2006
 }

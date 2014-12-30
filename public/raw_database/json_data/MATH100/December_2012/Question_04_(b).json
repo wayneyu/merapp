@@ -1,15 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_04_(b)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nEvaluate\n\n$\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})}$", 
-    "year": 2012, 
-    "sols": [
-        "Plugging in $x=0$ in the limit gives an indeterminant form $0/0$ and so\nwe may attempt to use L'Hopital's rule to get\n\n$\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} = \\lim_{x \\to 0}\\frac{6xe^{3x^{2}}}{2x\\cos(x^{2})}= \\lim_{x \\to 0}\\frac{3e^{3x^{2}}}{\\cos(x^{2})} = \\frac{3e^{0}}{1}=3$", 
-        "Using Taylor Polynomials we get\n\n\\begin{align*}\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} &= \\lim_{x \\to 0}\\frac{(1 + (3x^{2})^1/1 + (3x^{2})^{2}/2 + ...)-1}{x^{2} - x^{6}/3 + ...}\\\\\n&=  \\lim_{x \\to 0}\\frac{3x^{2} + (3x^{2})^{2}/2 + ...}{x^{2} - x^{6}/3 + ...}\\\\\n&=  \\lim_{x \\to 0}\\frac{3 + 9x^{2}/2 + ...}{1 - x^{4}/3 + ...} \\\\\n&= 3\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} =3\\)</span></p>\n", 
+    "answer_latex": "$\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} =3$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try L&#8217;Hopital&#8217;s rule.</p>\n", 
+        "<p>Failing L&#8217;Hopital&#8217;s rule (or if you don&#8217;t know it) one can also use Taylor polynomials.</p>\n"
+    ], 
+    "hints_latex": [
         "Try L'Hopital's rule.", 
         "Failing L'Hopital's rule (or if you don't know it) one can also use\nTaylor polynomials."
-    ]
+    ], 
+    "hints_raw": [
+        "Try L'Hopital's rule.\n", 
+        "Failing L'Hopital's rule (or if you don't know it) one can also use Taylor polynomials.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "4 (b)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>Plugging in <span class=\"math\">\\(x=0\\)</span> in the limit gives an indeterminant form <span class=\"math\">\\(0/0\\)</span> and so we may attempt to use L&#8217;Hopital&#8217;s rule to get</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} = \\lim_{x \\to 0}\\frac{6xe^{3x^{2}}}{2x\\cos(x^{2})}= \\lim_{x \\to 0}\\frac{3e^{3x^{2}}}{\\cos(x^{2})} = \\frac{3e^{0}}{1}=3\\)</span></p>\n", 
+        "<p>Using Taylor Polynomials we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} &amp;= \\lim_{x \\to 0}\\frac{(1 + (3x^{2})^1/1 + (3x^{2})^{2}/2 + ...)-1}{x^{2} - x^{6}/3 + ...}\\\\\n&amp;=  \\lim_{x \\to 0}\\frac{3x^{2} + (3x^{2})^{2}/2 + ...}{x^{2} - x^{6}/3 + ...}\\\\\n&amp;=  \\lim_{x \\to 0}\\frac{3 + 9x^{2}/2 + ...}{1 - x^{4}/3 + ...} \\\\\n&amp;= 3\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Plugging in $x=0$ in the limit gives an indeterminant form $0/0$ and so\nwe may attempt to use L'Hopital's rule to get\n\n$\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} = \\lim_{x \\to 0}\\frac{6xe^{3x^{2}}}{2x\\cos(x^{2})}= \\lim_{x \\to 0}\\frac{3e^{3x^{2}}}{\\cos(x^{2})} = \\frac{3e^{0}}{1}=3$", 
+        "Using Taylor Polynomials we get\n\n\\begin{align*}\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} &= \\lim_{x \\to 0}\\frac{(1 + (3x^{2})^1/1 + (3x^{2})^{2}/2 + ...)-1}{x^{2} - x^{6}/3 + ...}\\\\\n&=  \\lim_{x \\to 0}\\frac{3x^{2} + (3x^{2})^{2}/2 + ...}{x^{2} - x^{6}/3 + ...}\\\\\n&=  \\lim_{x \\to 0}\\frac{3 + 9x^{2}/2 + ...}{1 - x^{4}/3 + ...} \\\\\n&= 3\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Plugging in &lt;math>x=0&lt;/math> in the limit gives an indeterminant form &lt;math>0/0&lt;/math> and so we may attempt to use L'Hopital's rule to get\n\n&lt;math>\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} = \\lim_{x \\to 0}\\frac{6xe^{3x^{2}}}{2x\\cos(x^{2})}= \\lim_{x \\to 0}\\frac{3e^{3x^{2}}}{\\cos(x^{2})} = \\frac{3e^{0}}{1}=3\n&lt;/math>\n", 
+        "Using Taylor Polynomials we get\n\n:&lt;math>\n\\begin{align}\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})} &amp;= \\lim_{x \\to 0}\\frac{(1 + (3x^{2})^1/1 + (3x^{2})^{2}/2 + ...)-1}{x^{2} - x^{6}/3 + ...}\\\\\n&amp;=  \\lim_{x \\to 0}\\frac{3x^{2} + (3x^{2})^{2}/2 + ...}{x^{2} - x^{6}/3 + ...}\\\\\n&amp;=  \\lim_{x \\to 0}\\frac{3 + 9x^{2}/2 + ...}{1 - x^{4}/3 + ...} \\\\\n&amp;= 3\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Evaluate</p>\n<p><span class=\"math\">\\(\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})}\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nEvaluate\n\n$\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})}$", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nEvaluate \n\n&lt;math>\n\\lim_{x \\to 0}\\frac{e^{3x^{2}}-1}{\\sin(x^{2})}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_04_(b)", 
+    "year": 2012
 }

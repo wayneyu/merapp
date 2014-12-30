@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_07_(a)", 
-    "course": "MATH105", 
-    "statement": "Consider\n\n\\begin{align*}\\displaystyle\nf(x,y) = xye^y + \\frac12 x^2 -2.\\end{align*}\n\n\\textbf{(a)} Find all critical points of this function.", 
-    "year": 2012, 
-    "sols": [
-        "To find the critical points of $f(x,y) = xye^y + \\frac{1}{2} x^2 - 2$,\nwe need to set both partial derivatives to 0:\n\n\\begin{align*}\\displaystyle f_x = ye^y + x = 0\\end{align*}\n\nand, using the product rule,\n\n\\begin{align*}\\displaystyle f_y = x(e^y + ye^y) = 0\\end{align*}\n\nTo solve the simultaneous system, we should first factor the equations\nas best we can (this makes it easier to find conditions that are\nnecessary for the derivatives to vanish).\n\nNothing can be done for the first equation so we leave it:\n\n\\begin{align*}(1) \\qquad f_x = ye^y + x = 0\\end{align*}\n\nFor the second equation, we write:\n\n\\begin{align*}(2) \\qquad f_y = x e^y (1+y) = 0\\end{align*}\n\nIt's easier to work with the equation above first. From above, we\nconsider the possibilities that:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{x} = 0,\n\\item\n  \\emph{e}\\textsuperscript{\\emph{y}} = 0 (this is impossible), or\n\\item\n  1+\\emph{y} = 0, which happens when \\emph{y} = -1.\n\\end{itemize}\n\nLet's now use the possibilities above in the equation (1): $f$x =\n\\emph{ye}\\textsuperscript{\\emph{y}} + \\emph{x} = 0.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  If \\emph{x} = 0, then \\emph{ye}\\textsuperscript{\\emph{y}} + 0 = 0\n  implies \\emph{ye}\\textsuperscript{\\emph{y}} = 0, so \\emph{y} = 0\n  (recall $e^y \\neq 0$). \\textbf{Thus, $(0,0)$ is a critical point.}\n\\item\n  If \\emph{y} = -1 then -\\emph{e}\\textsuperscript{-1} + \\emph{x} = 0\n  implies \\emph{x} = \\emph{e}\\textsuperscript{-1}. \\textbf{Thus,\n  $(e^{-1}, -1)$ is a critical point.}\n\\end{itemize}"
+    "answer_html": "<ul>\n<li><p><strong>Thus, <span class=\"math\">\\((e^{-1}, -1)\\)</span> is a critical point.</strong></p></li>\n</ul>\n", 
+    "answer_latex": "\\begin{itemize}\\item \\textbf{Thus,\n  $(e^{-1}, -1)$ is a critical point.}\n\\end{itemize}", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "ChristinaKoch", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Both partial derivatives, <span class=\"math\">\\(f\\)</span><sub><em>x</em></sub> and <span class=\"math\">\\(f\\)</span><sub><em>y</em></sub> must vanish (equal 0) at a critical point.</p>\n", 
+        "<p>Remember to use the product rule. Also, <em>e</em><sup><em>y</em></sup> does not vanish for any value of <em>y</em>.</p>\n"
+    ], 
+    "hints_latex": [
         "Both partial derivatives, $f$\\textsubscript{\\emph{x}} and\n$f$\\textsubscript{\\emph{y}} must vanish (equal 0) at a critical point.", 
         "Remember to use the product rule. Also,\n\\emph{e}\\textsuperscript{\\emph{y}} does not vanish for any value of\n\\emph{y}."
-    ]
+    ], 
+    "hints_raw": [
+        "Both partial derivatives, &amp;fnof;&lt;sub>''x''&lt;/sub> and &amp;fnof;&lt;sub>''y''&lt;/sub> must vanish (equal 0) at a critical point.\n", 
+        "Remember to use the product rule. Also, ''e''&lt;sup>''y''&lt;/sup> does not vanish for any value of ''y''.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "7 (a)", 
+    "rating": 50, 
+    "sols_html": [
+        "<p>To find the critical points of <span class=\"math\">\\(f(x,y) = xye^y + \\frac{1}{2} x^2 - 2\\)</span>, we need to set both partial derivatives to 0:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f_x = ye^y + x = 0\\end{aligned}\\]</span></p>\n<p>and, <strong>using the product rule</strong>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle f_y = xe^y + xye^y=x(e^y + ye^y) = 0\\end{aligned}\\]</span></p>\n<p>To solve the simultaneous system, we should first factor the equations as best we can (this makes it easier to find conditions that are necessary for the derivatives to vanish).</p>\n<p>Nothing can be done for the first equation so we leave it:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(1) \\qquad f_x = ye^y + x = 0\\end{aligned}\\]</span></p>\n<p>For the second equation, we write:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(2) \\qquad f_y = x e^y (1+y) = 0\\end{aligned}\\]</span></p>\n<p>It&#8217;s easier to work with the equation above first. From above, we consider the possibilities that:</p>\n<ul>\n<li><p><em>x</em> = 0,</p></li>\n<li><p><em>e</em><sup><em>y</em></sup> = 0 (this is impossible), or</p></li>\n<li><p>1+<em>y</em> = 0, which happens when <em>y</em> = -1.</p></li>\n</ul>\n<p>Let&#8217;s now use the possibilities above in the equation (1): <span class=\"math\">\\(f\\)</span>x = <em>ye</em><sup><em>y</em></sup> + <em>x</em> = 0.</p>\n<ul>\n<li><p>If <em>x</em> = 0, then <em>ye</em><sup><em>y</em></sup> + 0 = 0 implies <em>ye</em><sup><em>y</em></sup> = 0, so <em>y</em> = 0 (recall <span class=\"math\">\\(e^y \\neq 0\\)</span>). <strong>Thus, <span class=\"math\">\\((0,0)\\)</span> is a critical point.</strong></p></li>\n<li><p>If <em>y</em> = -1 then -<em>e</em><sup>-1</sup> + <em>x</em> = 0 implies <em>x</em> = <em>e</em><sup>-1</sup>. <strong>Thus, <span class=\"math\">\\((e^{-1}, -1)\\)</span> is a critical point.</strong></p></li>\n</ul>\n"
+    ], 
+    "sols_latex": [
+        "To find the critical points of $f(x,y) = xye^y + \\frac{1}{2} x^2 - 2$,\nwe need to set both partial derivatives to 0:\n\n\\begin{align*}\n\\displaystyle f_x = ye^y + x = 0\n\\end{align*}\n\nand, \\textbf{using the product rule},\n\n\\begin{align*}\n\\displaystyle f_y = xe^y + xye^y=x(e^y + ye^y) = 0\n\\end{align*}\n\nTo solve the simultaneous system, we should first factor the equations\nas best we can (this makes it easier to find conditions that are\nnecessary for the derivatives to vanish).\n\nNothing can be done for the first equation so we leave it:\n\n\\begin{align*}\n(1) \\qquad f_x = ye^y + x = 0\n\\end{align*}\n\nFor the second equation, we write:\n\n\\begin{align*}\n(2) \\qquad f_y = x e^y (1+y) = 0\n\\end{align*}\n\nIt's easier to work with the equation above first. From above, we\nconsider the possibilities that:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  \\emph{x} = 0,\n\\item\n  \\emph{e}\\textsuperscript{\\emph{y}} = 0 (this is impossible), or\n\\item\n  1+\\emph{y} = 0, which happens when \\emph{y} = -1.\n\\end{itemize}\n\nLet's now use the possibilities above in the equation (1): $f$x =\n\\emph{ye}\\textsuperscript{\\emph{y}} + \\emph{x} = 0.\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  If \\emph{x} = 0, then \\emph{ye}\\textsuperscript{\\emph{y}} + 0 = 0\n  implies \\emph{ye}\\textsuperscript{\\emph{y}} = 0, so \\emph{y} = 0\n  (recall $e^y \\neq 0$). \\textbf{Thus, $(0,0)$ is a critical point.}\n\\item\n  If \\emph{y} = -1 then -\\emph{e}\\textsuperscript{-1} + \\emph{x} = 0\n  implies \\emph{x} = \\emph{e}\\textsuperscript{-1}. \\textbf{Thus,\n  $(e^{-1}, -1)$ is a critical point.}\n\\end{itemize}"
+    ], 
+    "sols_raw": [
+        "To find the critical points of &lt;math>f(x,y) = xye^y + \\frac{1}{2} x^2 - 2&lt;/math>, we need to set both partial derivatives to 0:\n\n:&lt;math>\\displaystyle f_x = ye^y + x = 0&lt;/math>\n\nand, '''using the product rule''',\n\n:&lt;math>\\displaystyle f_y = xe^y + xye^y=x(e^y + ye^y) = 0 &lt;/math>\n\nTo solve the simultaneous system, we should first factor the equations as best we can (this makes it easier to find conditions that are necessary for the derivatives to vanish).\n\nNothing can be done for the first equation so we leave it:\n\n:&lt;math>(1) \\qquad f_x = ye^y + x = 0&lt;/math>\n\nFor the second equation, we write:\n\n:&lt;math>(2) \\qquad f_y = x e^y (1+y) = 0&lt;/math>\n\nIt's easier to work with the equation above first. From above, we consider the possibilities that:\n\n* ''x'' = 0,\n* ''e''&lt;sup>''y''&lt;/sup> = 0 (this is impossible), or\n* 1+''y'' = 0, which happens when ''y'' = -1.\n\nLet's now use the possibilities above in the equation (1): &amp;fnof;&lt;sub>x&lt;/sup> = ''ye''&lt;sup>''y''&lt;/sup> + ''x'' = 0.\n\n* If ''x'' = 0, then ''ye''&lt;sup>''y''&lt;/sup> + 0 = 0 implies ''ye''&lt;sup>''y''&lt;/sup> = 0, so ''y'' = 0 (recall &lt;math>e^y \\neq 0&lt;/math>). '''Thus, &lt;math>(0,0)&lt;/math> is a critical point.'''\n* If ''y'' = -1 then -''e''&lt;sup>-1&lt;/sup> + ''x'' = 0 implies ''x'' = ''e''&lt;sup>-1&lt;/sup>. '''Thus, &lt;math>(e^{-1}, -1)&lt;/math> is a critical point.'''\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Consider</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x,y) = xye^y + \\frac12 x^2 -2.\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Find all critical points of this function.</p>\n", 
+    "statement_latex": "Consider\n\n\\begin{align*}\n\\displaystyle\nf(x,y) = xye^y + \\frac12 x^2 -2.\n\\end{align*}\n\n\\textbf{(a)} Find all critical points of this function.", 
+    "statement_raw": "Consider\n\n:&lt;math> \\displaystyle\nf(x,y) = xye^y + \\frac12 x^2 -2.\n&lt;/math>\n\n'''(a)''' Find all critical points of this function.\n", 
+    "term": "April", 
+    "topics": [
+        "Optimization"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_07_(a)", 
+    "year": 2012
 }

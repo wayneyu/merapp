@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_201_05_(b)", 
+    "answer_html": "<p>Also by Rank-Nullity theorem: <em>dim(N(D<sup>T</sup>)) = n - r(D) = 7 - 5 = 2</em> and hence these two loop current vectors form a basis in <em>N(D<sup>T</sup>)</em> and any other loop current can be expressed using a linear combination of these two basis vectors.</p>\n", 
+    "answer_latex": "Also by Rank-Nullity theorem:\n\\emph{dim(N(D\\textsuperscript{T})) = n - r(D) = 7 - 5 = 2} and hence\nthese two loop current vectors form a basis in\n\\emph{N(D\\textsuperscript{T})} and any other loop current can be\nexpressed using a linear combination of these two basis vectors.", 
     "course": "MATH307", 
-    "statement": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(b)} Write down 2 independent loop vectors. Is any other loop\nvector a linear combination of these? Give a reason.", 
-    "year": 2013, 
-    "sols": [
-        "Reading off graph (using -1 indicated opposite direction as shown, +1 to\nindicate same direction as shown) (each row corresponds to an edge)\n\n\\begin{align*}\\vec{v_1} = \\begin{bmatrix}\n1\\\\0\\\\-1\\\\1\\\\0\\\\-1\\\\0\n\\end{bmatrix}, \\vec{v_2} = \\begin{bmatrix}\n0\\\\-1\\\\0\\\\1\\\\-1\\\\0\\\\1\n\\end{bmatrix}\\end{align*}\n\nThese form a complete basis in \\emph{N(D\\textsuperscript{T})} if the\n\\emph{dim(N(D\\textsuperscript{T})) = 2}. So (if \\emph{D} has \\emph{n}\nrows and \\emph{m} columns): \\emph{dim(N(D)) = 1} (\\# of connected\ncircuits). Therefore, \\emph{r(D) = m - dim(N(D)) = 6 - 1 = 5} (by\nRank-Nullity theorem). Also by Rank-Nullity theorem:\n\\emph{dim(N(D\\textsuperscript{T})) = n - r(D) = 7 - 5 = 2} and hence\nthese two loop current vectors form a basis in\n\\emph{N(D\\textsuperscript{T})} and any other loop current can be\nexpressed using a linear combination of these two basis vectors."
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 201 05 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Reading off graph (using -1 indicated opposite direction as shown, +1 to indicate same direction as shown) (each row corresponds to an edge)</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\vec{v_1} = \\begin{bmatrix}\n1\\\\0\\\\-1\\\\1\\\\0\\\\-1\\\\0\n\\end{bmatrix}, \\vec{v_2} = \\begin{bmatrix}\n0\\\\-1\\\\0\\\\1\\\\-1\\\\0\\\\1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>These form a complete basis in <em>N(D<sup>T</sup>)</em> if the <em>dim(N(D<sup>T</sup>)) = 2</em>. So (if <em>D</em> has <em>n</em> rows and <em>m</em> columns): <em>dim(N(D)) = 1</em> (# of connected circuits). Therefore, <em>r(D) = m - dim(N(D)) = 6 - 1 = 5</em> (by Rank-Nullity theorem). Also by Rank-Nullity theorem: <em>dim(N(D<sup>T</sup>)) = n - r(D) = 7 - 5 = 2</em> and hence these two loop current vectors form a basis in <em>N(D<sup>T</sup>)</em> and any other loop current can be expressed using a linear combination of these two basis vectors.</p>\n"
+    ], 
+    "sols_latex": [
+        "Reading off graph (using -1 indicated opposite direction as shown, +1 to\nindicate same direction as shown) (each row corresponds to an edge)\n\n\\begin{align*}\n\\vec{v_1} = \\begin{bmatrix}\n1\\\\0\\\\-1\\\\1\\\\0\\\\-1\\\\0\n\\end{bmatrix}, \\vec{v_2} = \\begin{bmatrix}\n0\\\\-1\\\\0\\\\1\\\\-1\\\\0\\\\1\n\\end{bmatrix}\n\\end{align*}\n\nThese form a complete basis in \\emph{N(D\\textsuperscript{T})} if the\n\\emph{dim(N(D\\textsuperscript{T})) = 2}. So (if \\emph{D} has \\emph{n}\nrows and \\emph{m} columns): \\emph{dim(N(D)) = 1} (\\# of connected\ncircuits). Therefore, \\emph{r(D) = m - dim(N(D)) = 6 - 1 = 5} (by\nRank-Nullity theorem). Also by Rank-Nullity theorem:\n\\emph{dim(N(D\\textsuperscript{T})) = n - r(D) = 7 - 5 = 2} and hence\nthese two loop current vectors form a basis in\n\\emph{N(D\\textsuperscript{T})} and any other loop current can be\nexpressed using a linear combination of these two basis vectors."
+    ], 
+    "sols_raw": [
+        "Reading off graph (using -1 indicated opposite direction as shown, +1 to indicate same direction as shown) (each row corresponds to an edge)\n\n:&lt;math>\\vec{v_1} = \\begin{bmatrix}\n1\\\\0\\\\-1\\\\1\\\\0\\\\-1\\\\0\n\\end{bmatrix}, \\vec{v_2} = \\begin{bmatrix}\n0\\\\-1\\\\0\\\\1\\\\-1\\\\0\\\\1\n\\end{bmatrix}\n&lt;/math>\n\nThese form a complete basis in ''N(D&lt;sup>T&lt;/sup>)'' if the ''dim(N(D&lt;sup>T&lt;/sup>)) = 2''. So (if ''D'' has ''n'' rows and ''m'' columns): ''dim(N(D)) = 1'' (# of connected circuits). Therefore, ''r(D) = m - dim(N(D)) = 6 - 1 = 5'' (by Rank-Nullity theorem). Also by Rank-Nullity theorem: ''dim(N(D&lt;sup>T&lt;/sup>)) = n - r(D) = 7 - 5 = 2'' and hence these two loop current vectors form a basis in ''N(D&lt;sup>T&lt;/sup>)'' and any other loop current can be expressed using a linear combination of these two basis vectors.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the following graph, interpreted as a resistor network with all resistances <em>R = 1</em>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p><strong>(b)</strong> Write down 2 independent loop vectors. Is any other loop vector a linear combination of these? Give a reason.</p>\n", 
+    "statement_latex": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(b)} Write down 2 independent loop vectors. Is any other loop\nvector a linear combination of these? Give a reason.", 
+    "statement_raw": "Consider the following graph, interpreted as a resistor network with all resistances ''R = 1''.\n\n:[[File:MATH307April2013Section201Q5a.png|300px]]\n\n'''(b)''' Write down 2 independent loop vectors. Is any other loop vector a linear combination of these? Give a reason.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(b)", 
+    "year": 2013
 }

@@ -1,13 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH103", 
-    "statement": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this questions.}\n\nTo find the integral\n\n\\begin{align*}\\int x^2 e^{2x}\\, dx\\end{align*} using integration by parts, the best choice for\n\\emph{u} and \\emph{dv} in the first step would be\n\n\\begin{align*}\\mathbf{i.}\\quad u=x, \\ dv=xe^{2x}\\,dx\\end{align*}\n\n\\begin{align*}\\mathbf{ii.}\\quad u=x^2, \\ dv=e^{2x}\\,dx\\end{align*}\n\n\\begin{align*}\\mathbf{iii.}\\quad u=xe^{2x}, \\ dv=x\\,dx\\end{align*}\n\n\\begin{align*}\\mathbf{iv.}\\quad u=e^{2x}, \\ dv=x^2\\,dx\\end{align*}\n\n\\begin{align*}\\mathbf{v.}\\quad u=x, \\ dv=e^{2x}\\,dx\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "We want to integrate\n\n\\begin{align*}\\int x^2e^{2x}dx\\end{align*} with integration by parts. We have three possible\nproducts:\n\na) $1\\cdot x^2e^{2x}$\n\nb) $x\\cdot xe^{2x}$\n\nc) $x^2\\cdot e^{2x}$\n\nThe first product doesn't make sense to choose since the second term is\nneither easy to derivate nor to integrate.\n\nThe second product also doesn't make sense because the second term is\nnot easy to integrate. Also choosing $xe^{2x}$ as $u$ and $x$ as $dv$ is\nnot good since integrating $x$ AND derivating $xe^{2x}$ makes the\nequation more complicated.\n\nSo it must be the third product. It doesn't matter, if we choose\n$e^{2x}$ as $u$ or $dv$ because the integral is the same (excapt for\nconstants). If we choose $x^2$ as $dv$, we get $x^3/3$ as $v$, what\nmakes the equation more complicated. So we take $x^2$ as $u$ and get\n$du=2x$ and $e^{2x}$ $dv$ and get $v=e^{2x}/2$. That simplified the\nequation. \\textbf{So we take answer ii.}\n\nIntegration would work now like this:\n\n\\begin{align*}\n\\int x^2e^{2x}dx &= \\frac12 x^2e^{2x} - \\int 2x\\frac12 e^{2x}dx\\\\\n &= \\frac12 x^2e^{2x} - \\underbrace{\\int xe^{2x}dx}_{\\text{integrate by parts again}}\\\\\n &= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\int\\frac12 e^{2x}dx\\\\\n &= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int x^2e^{2x}dx=\\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c\\)</span></p>\n", 
+    "answer_latex": " $\\int x^2e^{2x}dx=\\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c$ ", 
+    "contributors": [
+        "CindyBlois", 
+        "Konradbe", 
+        "DavidKohler", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>You can either try each case or try to guess what would happen if you tried each case without actually writing each.</p>\n"
+    ], 
+    "hints_latex": [
         "You can either try each case or try to guess what would happen if you\ntried each case without actually writing each."
-    ]
+    ], 
+    "hints_raw": [
+        "You can either try each case or try to guess what would happen if you tried each case without actually writing each.\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (b)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>We want to integrate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2e^{2x}dx\\end{aligned}\\]</span></p>\n<p>with integration by parts. We have three possible products:</p>\n<p>a) <span class=\"math\">\\(1\\cdot x^2e^{2x}\\)</span></p>\n<p>b) <span class=\"math\">\\(x\\cdot xe^{2x}\\)</span></p>\n<p>c) <span class=\"math\">\\(x^2\\cdot e^{2x}\\)</span></p>\n<p>The first product doesn&#8217;t make sense to choose since the second term is neither easy to derivate nor to integrate.</p>\n<p>The second product also doesn&#8217;t make sense because the second term is not easy to integrate. Also choosing <span class=\"math\">\\(xe^{2x}\\)</span> as <span class=\"math\">\\(u\\)</span> and <span class=\"math\">\\(x\\)</span> as <span class=\"math\">\\(dv\\)</span> is not good since integrating <span class=\"math\">\\(x\\)</span> AND derivating <span class=\"math\">\\(xe^{2x}\\)</span> makes the equation more complicated.</p>\n<p>So it must be the third product. It doesn&#8217;t matter, if we choose <span class=\"math\">\\(e^{2x}\\)</span> as <span class=\"math\">\\(u\\)</span> or <span class=\"math\">\\(dv\\)</span> because the integral is the same (excapt for constants). If we choose <span class=\"math\">\\(x^2\\)</span> as <span class=\"math\">\\(dv\\)</span>, we get <span class=\"math\">\\(x^3/3\\)</span> as <span class=\"math\">\\(v\\)</span>, what makes the equation more complicated. So we take <span class=\"math\">\\(x^2\\)</span> as <span class=\"math\">\\(u\\)</span> and get <span class=\"math\">\\(du=2x\\)</span> and <span class=\"math\">\\(e^{2x}\\)</span> <span class=\"math\">\\(dv\\)</span> and get <span class=\"math\">\\(v=e^{2x}/2\\)</span>. That simplified the equation. <strong>So we take answer ii.</strong></p>\n<p>Integration would work now like this:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2e^{2x}dx &amp;= \\frac12 x^2e^{2x} - \\int 2x\\frac12 e^{2x}dx\\\\\n &amp;= \\frac12 x^2e^{2x} - \\underbrace{\\int xe^{2x}dx}_{\\text{integrate by parts again}}\\\\\n &amp;= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\int\\frac12 e^{2x}dx\\\\\n &amp;= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We want to integrate\n\n\\begin{align*}\n\\int x^2e^{2x}dx\n\\end{align*} with integration by parts. We have three possible\nproducts:\n\na) $1\\cdot x^2e^{2x}$\n\nb) $x\\cdot xe^{2x}$\n\nc) $x^2\\cdot e^{2x}$\n\nThe first product doesn't make sense to choose since the second term is\nneither easy to derivate nor to integrate.\n\nThe second product also doesn't make sense because the second term is\nnot easy to integrate. Also choosing $xe^{2x}$ as $u$ and $x$ as $dv$ is\nnot good since integrating $x$ AND derivating $xe^{2x}$ makes the\nequation more complicated.\n\nSo it must be the third product. It doesn't matter, if we choose\n$e^{2x}$ as $u$ or $dv$ because the integral is the same (excapt for\nconstants). If we choose $x^2$ as $dv$, we get $x^3/3$ as $v$, what\nmakes the equation more complicated. So we take $x^2$ as $u$ and get\n$du=2x$ and $e^{2x}$ $dv$ and get $v=e^{2x}/2$. That simplified the\nequation. \\textbf{So we take answer ii.}\n\nIntegration would work now like this:\n\n\\begin{align*}\n\\int x^2e^{2x}dx &= \\frac12 x^2e^{2x} - \\int 2x\\frac12 e^{2x}dx\\\\\n &= \\frac12 x^2e^{2x} - \\underbrace{\\int xe^{2x}dx}_{\\text{integrate by parts again}}\\\\\n &= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\int\\frac12 e^{2x}dx\\\\\n &= \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We want to integrate\n:&lt;math>\n\\int x^2e^{2x}dx\n&lt;/math>\nwith integration by parts. We have three possible products:\n\n\na) &lt;math> 1\\cdot x^2e^{2x} &lt;/math>\n\nb) &lt;math> x\\cdot xe^{2x} &lt;/math>\n\nc) &lt;math> x^2\\cdot e^{2x} &lt;/math>\n\n\nThe first product doesn't make sense to choose since the second term is neither easy to derivate nor to integrate.\n\nThe second product also doesn't make sense because the second term is not easy to integrate. Also choosing &lt;math> xe^{2x}&lt;/math> as &lt;math>u &lt;/math> and &lt;math>x &lt;/math> as &lt;math>dv &lt;/math> is not good since integrating &lt;math> x&lt;/math> AND derivating &lt;math>xe^{2x} &lt;/math> makes the equation more complicated. \n\nSo it must be the third product. It doesn't matter, if we choose &lt;math>e^{2x} &lt;/math> as &lt;math>u &lt;/math> or &lt;math> dv&lt;/math> because the integral is the same (excapt for constants). If we choose &lt;math>x^2 &lt;/math> as &lt;math>dv &lt;/math>, we get &lt;math>x^3/3 &lt;/math> as &lt;math>v &lt;/math>, what makes the equation more complicated.\nSo we take &lt;math>x^2 &lt;/math> as &lt;math> u&lt;/math> and get &lt;math> du=2x&lt;/math> and &lt;math>e^{2x} &lt;/math> &lt;math>dv &lt;/math> and get &lt;math> v=e^{2x}/2&lt;/math>. That simplified the equation. '''So we take answer ii.'''\n\nIntegration would work now like this:\n\n:&lt;math>\\begin{align}\n\\int x^2e^{2x}dx =&amp; \\frac12 x^2e^{2x} - \\int 2x\\frac12 e^{2x}dx\\\\\n =&amp; \\frac12 x^2e^{2x} - \\underbrace{\\int xe^{2x}dx}_{\\text{integrate by parts again}}\\\\\n =&amp; \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\int\\frac12 e^{2x}dx\\\\\n =&amp; \\frac12 x^2e^{2x} - \\frac12 xe^{2x} + \\frac14 e^{2x} + c\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IsabellGraf"
+    ], 
+    "statement_html": "<p><em>Multiple Choice Question: Exactly ONE of the answers provided is correct. There is no partial credit in this questions.</em></p>\n<p>To find the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2 e^{2x}\\, dx\\end{aligned}\\]</span></p>\n<p>using integration by parts, the best choice for <em>u</em> and <em>dv</em> in the first step would be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{i.}\\quad u=x, \\ dv=xe^{2x}\\,dx\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{ii.}\\quad u=x^2, \\ dv=e^{2x}\\,dx\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{iii.}\\quad u=xe^{2x}, \\ dv=x\\,dx\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{iv.}\\quad u=e^{2x}, \\ dv=x^2\\,dx\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{v.}\\quad u=x, \\ dv=e^{2x}\\,dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Multiple Choice Question: Exactly ONE of the answers provided is\ncorrect. There is no partial credit in this questions.}\n\nTo find the integral\n\n\\begin{align*}\n\\int x^2 e^{2x}\\, dx\n\\end{align*} using integration by parts, the best choice for\n\\emph{u} and \\emph{dv} in the first step would be\n\n\\begin{align*}\n\\mathbf{i.}\\quad u=x, \\ dv=xe^{2x}\\,dx\n\\end{align*}\n\n\\begin{align*}\n\\mathbf{ii.}\\quad u=x^2, \\ dv=e^{2x}\\,dx\n\\end{align*}\n\n\\begin{align*}\n\\mathbf{iii.}\\quad u=xe^{2x}, \\ dv=x\\,dx\n\\end{align*}\n\n\\begin{align*}\n\\mathbf{iv.}\\quad u=e^{2x}, \\ dv=x^2\\,dx\n\\end{align*}\n\n\\begin{align*}\n\\mathbf{v.}\\quad u=x, \\ dv=e^{2x}\\,dx\n\\end{align*}", 
+    "statement_raw": "''Multiple Choice Question: Exactly ONE of the answers provided is correct. There is no partial credit in this questions.''\n\nTo find the integral\n:&lt;math>\n\\int x^2 e^{2x}\\, dx\n&lt;/math>\nusing integration by parts, the best choice for ''u'' and ''dv'' in the first step would be\n\n:&lt;math>\\mathbf{i.}\\quad u=x, \\ dv=xe^{2x}\\,dx &lt;/math>   \n\n:&lt;math>\\mathbf{ii.}\\quad u=x^2, \\ dv=e^{2x}\\,dx &lt;/math>  \n\n:&lt;math>\\mathbf{iii.}\\quad u=xe^{2x}, \\ dv=x\\,dx &lt;/math>  \n\n:&lt;math>\\mathbf{iv.}\\quad u=e^{2x}, \\ dv=x^2\\,dx &lt;/math>  \n\n:&lt;math>\\mathbf{v.}\\quad u=x, \\ dv=e^{2x}\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_01_(b)", 
+    "year": 2010
 }

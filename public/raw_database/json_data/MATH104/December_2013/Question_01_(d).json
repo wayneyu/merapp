@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(d)", 
-    "course": "MATH104", 
-    "statement": "Find the slope of the tangent line to $\\displaystyle y = \\ln(x^2)$ at\n$\\displaystyle x = e^2$.", 
-    "year": 2013, 
-    "sols": [
-        "Using the hint, we find the derivative at the given point. Applying the\nchain rule we find\n\n\\begin{align*}\ny &= \\ln\\left(x^2\\right) \\\\\n\\frac{dy}{dx} &= \\frac1{x^2} \\cdot 2x \\\\\n\\frac{dy}{dx} &= \\frac2{x} \\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\\end{align*}", 
-        "Using the hint, we find the derivative at the given point. In the first\nstep below, we use our logarithm rules to see that\n$\\ln(x^{2}) = 2\\ln(x)$. Hence\n\n\\begin{align*}\ny &= \\ln(x^{2})\\\\\ny &= 2\\ln(x)\\\\\n\\frac{dy}{dx} &= \\frac{2}{x}\\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left.\\frac{dy}{dx}\\right|_{x = e^{2}}={\\color{blue} \\frac{2}{e^{2}}}\\)</span></p>\n", 
+    "answer_latex": " $\\left.\\frac{dy}{dx}\\right|_{x = e^{2}}={\\color{blue} \\frac{2}{e^{2}}}$ ", 
+    "contributors": [
+        "NicholasHu"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Remember that the slope of the tangent line is the same as the derivative at the given point.</p>\n"
+    ], 
+    "hints_latex": [
         "Remember that the slope of the tangent line is the same as the\nderivative at the given point."
-    ]
+    ], 
+    "hints_raw": [
+        "Remember that the slope of the tangent line is the same as the derivative at the given point.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (d)", 
+    "rating": 93, 
+    "sols_html": [
+        "<p>Using the hint, we find the derivative at the given point. Applying the chain rule we find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= \\ln\\left(x^2\\right) \\\\\n\\frac{dy}{dx} &amp;= \\frac1{x^2} \\cdot 2x \\\\\n\\frac{dy}{dx} &amp;= \\frac2{x} \\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &amp;= {\\color{blue} \\frac{2}{e^{2}}}\\end{aligned}\\]</span></p>\n", 
+        "<p>Using the hint, we find the derivative at the given point. In the first step below, we use our logarithm rules to see that <span class=\"math\">\\(\\ln(x^{2}) = 2\\ln(x)\\)</span>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= \\ln(x^{2})\\\\\ny &amp;= 2\\ln(x)\\\\\n\\frac{dy}{dx} &amp;= \\frac{2}{x}\\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &amp;= {\\color{blue} \\frac{2}{e^{2}}}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using the hint, we find the derivative at the given point. Applying the\nchain rule we find\n\n\\begin{align*}\ny &= \\ln\\left(x^2\\right) \\\\\n\\frac{dy}{dx} &= \\frac1{x^2} \\cdot 2x \\\\\n\\frac{dy}{dx} &= \\frac2{x} \\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\n\\end{align*}", 
+        "Using the hint, we find the derivative at the given point. In the first\nstep below, we use our logarithm rules to see that\n$\\ln(x^{2}) = 2\\ln(x)$. Hence\n\n\\begin{align*}\ny &= \\ln(x^{2})\\\\\ny &= 2\\ln(x)\\\\\n\\frac{dy}{dx} &= \\frac{2}{x}\\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &= {\\color{blue} \\frac{2}{e^{2}}}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using the hint, we find the derivative at the given point. Applying the chain rule we find\n\n&lt;math>\\begin{align}\ny &amp;= \\ln\\left(x^2\\right) \\\\\n\\frac{dy}{dx} &amp;= \\frac1{x^2} \\cdot 2x \\\\\n\\frac{dy}{dx} &amp;= \\frac2{x} \\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &amp;= {\\color{blue} \\frac{2}{e^{2}}}\n\\end{align}&lt;/math>\n", 
+        "Using the hint, we find the derivative at the given point. In the first step below, we use our logarithm rules to see that &lt;math> \\ln(x^{2}) = 2\\ln(x) &lt;/math>. Hence\n\n&lt;math>\n\\begin{align}\ny &amp;= \\ln(x^{2})\\\\\ny &amp;= 2\\ln(x)\\\\\n\\frac{dy}{dx} &amp;= \\frac{2}{x}\\\\\n\\left.\\frac{dy}{dx}\\right|_{x = e^{2}} &amp;= {\\color{blue} \\frac{2}{e^{2}}}\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Find the slope of the tangent line to <span class=\"math\">\\(\\displaystyle y = \\ln(x^2)\\)</span> at <span class=\"math\">\\(\\displaystyle x = e^2\\)</span>.</p>\n", 
+    "statement_latex": "Find the slope of the tangent line to $\\displaystyle y = \\ln(x^2)$ at\n$\\displaystyle x = e^2$.", 
+    "statement_raw": "Find the slope of the tangent line to &lt;math>\\displaystyle y = \\ln(x^2)&lt;/math> at &lt;math>\\displaystyle x = e^2&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_01_(d)", 
+    "year": 2013
 }

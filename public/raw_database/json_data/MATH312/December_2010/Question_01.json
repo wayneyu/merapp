@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_01", 
-    "course": "MATH312", 
-    "statement": "Let \\emph{n} be an integer. Show that there does not exist a prime\nnumber $\\displaystyle p \\geq 2$ which divides both\n$\\displaystyle 8n + 3$ and $\\displaystyle 5n + 2.$", 
-    "year": 2010, 
-    "sols": [
-        "Proceed by contradiction. Suppose that there exist integers \\emph{x} and\n\\emph{y} such that $\\displaystyle px = 8n+3$ and\n$\\displaystyle py = 5n+2$. Multiplying the first by 5 and the second\nequation by 8 gives\n\n\\begin{align*}\n5px &= 40n + 15 \\\\\n8py &= 40n + 16 \\end{align*}\n\nsubtracting the two equations gives $\\displaystyle p(8y-5x) = 1$ and as\n\\emph{p} is prime, it divides the left hand side but not the right hand\nside which is a contradiction. Hence no such prime number can exist."
+    "answer_html": "<p>subtracting the two equations gives <span class=\"math\">\\(\\displaystyle p(8y-5x) = 1\\)</span> and as <em>p</em> is prime, it divides the left hand side but not the right hand side which is a contradiction.Hence no such prime number can exist.</p>\n", 
+    "answer_latex": "subtracting the two equations gives $\\displaystyle p(8y-5x) = 1$ and as\n\\emph{p} is prime, it divides the left hand side but not the right hand\nside which is a contradiction.Hence no such prime number can exist.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Proceed by contradiction. Write out what it means for <em>p</em> to divide the given numbers.</p>\n", 
+        "<p>Eliminate for <em>n</em> and factor to reach a contradiction.</p>\n"
+    ], 
+    "hints_latex": [
         "Proceed by contradiction. Write out what it means for \\emph{p} to divide\nthe given numbers.", 
         "Eliminate for \\emph{n} and factor to reach a contradiction."
-    ]
+    ], 
+    "hints_raw": [
+        "Proceed by contradiction. Write out what it means for ''p'' to divide the given numbers.\n", 
+        "Eliminate for ''n'' and factor to reach a contradiction.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Proceed by contradiction. Suppose that there exist integers <em>x</em> and <em>y</em> such that <span class=\"math\">\\(\\displaystyle px = 8n+3\\)</span> and <span class=\"math\">\\(\\displaystyle py = 5n+2\\)</span>. Multiplying the first by 5 and the second equation by 8 gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n5px &amp;= 40n + 15 \\\\\n8py &amp;= 40n + 16 \\end{aligned}\\]</span></p>\n<p>subtracting the two equations gives <span class=\"math\">\\(\\displaystyle p(8y-5x) = 1\\)</span> and as <em>p</em> is prime, it divides the left hand side but not the right hand side which is a contradiction. Hence no such prime number can exist.</p>\n"
+    ], 
+    "sols_latex": [
+        "Proceed by contradiction. Suppose that there exist integers \\emph{x} and\n\\emph{y} such that $\\displaystyle px = 8n+3$ and\n$\\displaystyle py = 5n+2$. Multiplying the first by 5 and the second\nequation by 8 gives\n\n\\begin{align*}\n5px &= 40n + 15 \\\\\n8py &= 40n + 16 \n\\end{align*}\n\nsubtracting the two equations gives $\\displaystyle p(8y-5x) = 1$ and as\n\\emph{p} is prime, it divides the left hand side but not the right hand\nside which is a contradiction. Hence no such prime number can exist."
+    ], 
+    "sols_raw": [
+        "Proceed by contradiction. Suppose that there exist integers ''x'' and ''y'' such that &lt;math> \\displaystyle px = 8n+3 &lt;/math> and &lt;math> \\displaystyle py = 5n+2 &lt;/math>. Multiplying the first by 5 and the second equation by 8 gives\n\n&lt;math> \n\\begin{align}\n5px &amp;= 40n + 15 \\\\\n8py &amp;= 40n + 16 \\\\\n\\end{align}\n&lt;/math>\n\nsubtracting the two equations gives &lt;math> \\displaystyle p(8y-5x) = 1 &lt;/math> and as ''p'' is prime, it divides the left hand side but not the right hand side which is a contradiction. Hence no such prime number can exist.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <em>n</em> be an integer. Show that there does not exist a prime number <span class=\"math\">\\(\\displaystyle p \\geq 2\\)</span> which divides both <span class=\"math\">\\(\\displaystyle 8n + 3\\)</span> and <span class=\"math\">\\(\\displaystyle 5n + 2.\\)</span></p>\n", 
+    "statement_latex": "Let \\emph{n} be an integer. Show that there does not exist a prime\nnumber $\\displaystyle p \\geq 2$ which divides both\n$\\displaystyle 8n + 3$ and $\\displaystyle 5n + 2.$", 
+    "statement_raw": "Let ''n'' be an integer. Show that there does not exist a prime number &lt;math> \\displaystyle p \\geq 2 &lt;/math> which divides both &lt;math>\\displaystyle 8n + 3 &lt;/math> and &lt;math>\\displaystyle 5n + 2. &lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2010/Question_01", 
+    "year": 2010
 }

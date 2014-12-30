@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_10_(a)", 
-    "course": "MATH110", 
-    "statement": "Let\n\n\\begin{align*}f(x) = x + 2x^2\\sin\\left(\\frac{1}{x} \\right)\\end{align*}\n\n(a) Find $f'(x)$.", 
-    "year": 2011, 
-    "sols": [
-        "We need to make sure to use both the product rule since we have\n2\\emph{x}\\textsuperscript{2} multiplied by \\emph{sin}(1/\\emph{x}) and\nthen use the chain rule to deal with \\emph{sin}(1/\\emph{x}).\n\nWe obtain:\n\n\\begin{align*}\nf'(x) &= 1 + 4x \\cdot \\sin(1/x) + 2x^2 \\cdot \\cos(1/x) \\cdot (-x^{-2}) \\\\\n&= 1 + 4x\\sin(1/x) - 2\\cos(1/x)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=1 + 4x\\sin(1/x) - 2\\cos(1/x)\\)</span></p>\n", 
+    "answer_latex": " $f'(x)=1 + 4x\\sin(1/x) - 2\\cos(1/x)$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What rules of differentiation will you need here?</p>\n"
+    ], 
+    "hints_latex": [
         "What rules of differentiation will you need here?"
-    ]
+    ], 
+    "hints_raw": [
+        "What rules of differentiation will you need here?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "10 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>We need to make sure to use both the product rule since we have 2<em>x</em><sup>2</sup> multiplied by <em>sin</em>(1/<em>x</em>) and then use the chain rule to deal with <em>sin</em>(1/<em>x</em>).</p>\n<p>We obtain:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= 1 + 4x \\cdot \\sin(1/x) + 2x^2 \\cdot \\cos(1/x) \\cdot (-x^{-2}) \\\\\n&amp;= 1 + 4x\\sin(1/x) - 2\\cos(1/x)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We need to make sure to use both the product rule since we have\n2\\emph{x}\\textsuperscript{2} multiplied by \\emph{sin}(1/\\emph{x}) and\nthen use the chain rule to deal with \\emph{sin}(1/\\emph{x}).\n\nWe obtain:\n\n\\begin{align*}\nf'(x) &= 1 + 4x \\cdot \\sin(1/x) + 2x^2 \\cdot \\cos(1/x) \\cdot (-x^{-2}) \\\\\n&= 1 + 4x\\sin(1/x) - 2\\cos(1/x)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We need to make sure to use both the product rule since we have 2''x''&lt;sup>2&lt;/sup> multiplied by ''sin''(1/''x'') and then use the chain rule to deal with ''sin''(1/''x'').\n\nWe obtain:\n:&lt;math>\\begin{align}\nf'(x) &amp;= 1 + 4x \\cdot \\sin(1/x) + 2x^2 \\cdot \\cos(1/x) \\cdot (-x^{-2}) \\\\\n&amp;= 1 + 4x\\sin(1/x) - 2\\cos(1/x)\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = x + 2x^2\\sin\\left(\\frac{1}{x} \\right)\\end{aligned}\\]</span></p>\n<p>(a) Find <span class=\"math\">\\(f&#39;(x)\\)</span>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nf(x) = x + 2x^2\\sin\\left(\\frac{1}{x} \\right)\n\\end{align*}\n\n(a) Find $f'(x)$.", 
+    "statement_raw": "Let \n: &lt;math>f(x) = x + 2x^2\\sin\\left(\\frac{1}{x} \\right) &lt;/math>\n\n\n(a) Find &amp;fnof;'(''x'').\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_10_(a)", 
+    "year": 2011
 }

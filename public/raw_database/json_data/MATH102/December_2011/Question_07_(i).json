@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_07_(i)", 
-    "course": "MATH102", 
-    "statement": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its \\emph{y} coordinate changes\nat a rate of 8 units/sec.\n\ni) Find $dx/dt$ at the instant the particle is at the point P.", 
-    "year": 2011, 
-    "sols": [
-        "The question is asking us to find the rate of change of the variable x.\n(i.e: We want to solve for dx/dt). Using implicit differentiation and\nthe equation $y = x^{2}$ we will derive a value for these quantities as\nfollows:\n\n\\begin{align*}\n\\frac{d}{dt}y &= \\frac{d}{dt}x^{2} \\\\\n\\frac{dy}{dt} &= 2x\\frac{dx}{dt} \\quad \\rightarrow \\quad \\frac{dx}{dt} = \\frac{1}{2x}\\frac{dy}{dt}\\end{align*} From the information about the rate of change of y at the\npoint P, we make the appropriate substitutions in the equation to\ndetermine dx/dt:\n\n\\begin{align*}\\frac{dx}{dt} = \\frac{1}{2(2)}8 = 2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} =2}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{dx}{dt}=2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} =2}\\)</span></p>\n", 
+    "answer_latex": " $\\frac{dx}{dt}=2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} =2}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Remember that the rate of change of a quantity <span class=\"math\">\\(z\\)</span> is just the derivative of that quantity with respect to time, (i.e: dz/dt).</p>\n"
+    ], 
+    "hints_latex": [
         "Remember that the rate of change of a quantity $z$ is just the\nderivative of that quantity with respect to time, (i.e: dz/dt)."
-    ]
+    ], 
+    "hints_raw": [
+        "Remember that the rate of change of a quantity &lt;math>z&lt;/math> is just the derivative of that quantity with respect to time, (i.e: dz/dt).\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7 (i)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The question is asking us to find the rate of change of the variable x. (i.e: We want to solve for dx/dt). Using implicit differentiation and the equation <span class=\"math\">\\(y = x^{2}\\)</span> we will derive a value for these quantities as follows:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dt}y &amp;= \\frac{d}{dt}x^{2} \\\\\n\\frac{dy}{dt} &amp;= 2x\\frac{dx}{dt} \\quad \\rightarrow \\quad \\frac{dx}{dt} = \\frac{1}{2x}\\frac{dy}{dt}\\end{aligned}\\]</span></p>\n<p>From the information about the rate of change of y at the point P, we make the appropriate substitutions in the equation to determine dx/dt:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dx}{dt} = \\frac{1}{2(2)}8 = 2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} =2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The question is asking us to find the rate of change of the variable x.\n(i.e: We want to solve for dx/dt). Using implicit differentiation and\nthe equation $y = x^{2}$ we will derive a value for these quantities as\nfollows:\n\n\\begin{align*}\n\\frac{d}{dt}y &= \\frac{d}{dt}x^{2} \\\\\n\\frac{dy}{dt} &= 2x\\frac{dx}{dt} \\quad \\rightarrow \\quad \\frac{dx}{dt} = \\frac{1}{2x}\\frac{dy}{dt}\n\\end{align*} From the information about the rate of change of y at the\npoint P, we make the appropriate substitutions in the equation to\ndetermine dx/dt:\n\n\\begin{align*}\n\\frac{dx}{dt} = \\frac{1}{2(2)}8 = 2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} =2}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The question is asking us to find the rate of change of the variable x. (i.e: We want to solve for dx/dt). Using implicit differentiation and the equation &lt;math>y = x^{2}&lt;/math> we will derive a value for these quantities as follows:\n:&lt;math>\n\\begin{align}\n\\frac{d}{dt}y &amp;= \\frac{d}{dt}x^{2} \\\\\n\\frac{dy}{dt} &amp;= 2x\\frac{dx}{dt} \\quad \\rightarrow \\quad \\frac{dx}{dt} = \\frac{1}{2x}\\frac{dy}{dt}\n\\end{align}\n&lt;/math>\nFrom the information about the rate of change of y at the point P, we make the appropriate substitutions in the equation to determine dx/dt:\n:&lt;math>\n\\frac{dx}{dt} = \\frac{1}{2(2)}8 = 2 \\quad \\rightarrow \\quad {\\color{blue}\\frac{dx}{dt} = 2}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>A particle is moving in the (x,y)-plane along the curve <span class=\"math\">\\(y = x^{2}\\)</span>. As it passes through the point P = (2, 4), its <em>y</em> coordinate changes at a rate of 8 units/sec.</p>\n<p>i) Find <span class=\"math\">\\(dx/dt\\)</span> at the instant the particle is at the point P.</p>\n", 
+    "statement_latex": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its \\emph{y} coordinate changes\nat a rate of 8 units/sec.\n\ni) Find $dx/dt$ at the instant the particle is at the point P.", 
+    "statement_raw": "A particle is moving in the (x,y)-plane along the curve &lt;math>y = x^{2}&lt;/math>. As it passes through\nthe point P = (2, 4), its ''y'' coordinate changes at a rate of 8 units/sec.\n\ni) Find &lt;math>dx/dt&lt;/math> at the instant the particle is at the point P.\n", 
+    "term": "December", 
+    "topics": [
+        "Related_rates"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_07_(i)", 
+    "year": 2011
 }

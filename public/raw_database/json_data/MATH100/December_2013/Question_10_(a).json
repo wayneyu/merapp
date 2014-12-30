@@ -1,15 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_10_(a)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the first Maclaurin polynomial for\n$\\displaystyle f(x) = \\ln(1-x^2)$.", 
-    "year": 2013, 
-    "sols": [
-        "The equation of the \\emph{first degree} \\textbf{Maclaurin polynomial}\nfor \\emph{f} is $\\displaystyle T_1(x) = f(0) + f'(0) \\cdot x$.\n\nFor $\\displaystyle f(x)=\\ln(1-x^2)$ we have\n$\\displaystyle f(0) = \\ln(1 - 0^2) = 0$. To find $\\displaystyle f'(0)$,\nwe differentiate $\\displaystyle f(x)$ using the chain rule:\n\n\\begin{align*}\nf'(x) &= \\frac{1}{1-x^2} \\cdot \\frac{d}{dx} (1-x^2) \\\\\n&= \\frac{-2x}{1-x^2} \\\\\nf'(0) &= 0\\end{align*}\n\nThus the first degree Maclaurin polynomial for $\\displaystyle f$ is\n$\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}$."
+    "answer_html": "<p>Thus the first degree Maclaurin polynomial for <span class=\"math\">\\(\\displaystyle f\\)</span> is <span class=\"math\">\\(\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}=\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}\\)</span>.</p>\n", 
+    "answer_latex": "Thus the first degree Maclaurin polynomial for $\\displaystyle f$ is\n$\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}=\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}$.", 
+    "contributors": [
+        "NicholasHu"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>A <strong>Maclaurin polynomial</strong> is a Taylor polynomial centred at <span class=\"math\">\\(x = 0\\)</span> (i.e, <span class=\"math\">\\(a = 0\\)</span>).</p>\n", 
+        "<p>At the point where the approximation is made, the <em>first</em> degree Taylor/Maclaurin polynomial has the same <em>first</em> derivative as the function which it approximates (i.e., <span class=\"math\">\\(\\displaystyle T_1&#39;(0) = f&#39;(0)\\)</span>).</p>\n", 
+        "<p>Recall that the equation of a <em>first degree</em> Taylor polynomial centred at <span class=\"math\">\\(a\\)</span> is given by <span class=\"math\">\\(T_1(x) = f(a) + \\frac{f&#39;(a)}{1!}(x-a)\\)</span> and that for a Maclaurin polynomial, <span class=\"math\">\\(a = 0.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "A \\textbf{Maclaurin polynomial} is a Taylor polynomial centred at\n$x = 0$ (i.e, $a = 0$).", 
         "At the point where the approximation is made, the \\emph{first} degree\nTaylor/Maclaurin polynomial has the same \\emph{first} derivative as the\nfunction which it approximates (i.e., $\\displaystyle T_1'(0) = f'(0)$).", 
         "Recall that the equation of a \\emph{first degree} Taylor polynomial\ncentred at $a$ is given by $T_1(x) = f(a) + \\frac{f'(a)}{1!}(x-a)$ and\nthat for a Maclaurin polynomial, $a = 0.$"
-    ]
+    ], 
+    "hints_raw": [
+        "A '''Maclaurin polynomial''' is a Taylor polynomial centred at &lt;math>x = 0&lt;/math> (i.e, &lt;math>a = 0&lt;/math>).\n", 
+        "At the point where the approximation is made, the ''first'' degree Taylor/Maclaurin polynomial has the same ''first'' derivative as the function which it approximates (i.e., &lt;math>\\displaystyle T_1'(0) = f'(0)&lt;/math>).\n", 
+        "Recall that the equation of a ''first degree'' Taylor polynomial centred at &lt;math>a&lt;/math> is given by\n&lt;math>T_1(x) = f(a) + \\frac{f'(a)}{1!}(x-a)&lt;/math>\nand that for a Maclaurin polynomial, &lt;math>a = 0.&lt;/math>\n"
+    ], 
+    "num_votes": 9, 
+    "question": "10 (a)", 
+    "rating": 88, 
+    "sols_html": [
+        "<p>The equation of the <em>first degree</em> <strong>Maclaurin polynomial</strong> for <em>f</em> is <span class=\"math\">\\(\\displaystyle T_1(x) = f(0) + f&#39;(0) \\cdot x\\)</span>.</p>\n<p>For <span class=\"math\">\\(\\displaystyle f(x)=\\ln(1-x^2)\\)</span> we have <span class=\"math\">\\(\\displaystyle f(0) = \\ln(1 - 0^2) = 0\\)</span>. To find <span class=\"math\">\\(\\displaystyle f&#39;(0)\\)</span>, we differentiate <span class=\"math\">\\(\\displaystyle f(x)\\)</span> using the chain rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{1}{1-x^2} \\cdot \\frac{d}{dx} (1-x^2) \\\\\n&amp;= \\frac{-2x}{1-x^2} \\\\\nf&#39;(0) &amp;= 0\\end{aligned}\\]</span></p>\n<p>Thus the first degree Maclaurin polynomial for <span class=\"math\">\\(\\displaystyle f\\)</span> is <span class=\"math\">\\(\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The equation of the \\emph{first degree} \\textbf{Maclaurin polynomial}\nfor \\emph{f} is $\\displaystyle T_1(x) = f(0) + f'(0) \\cdot x$.\n\nFor $\\displaystyle f(x)=\\ln(1-x^2)$ we have\n$\\displaystyle f(0) = \\ln(1 - 0^2) = 0$. To find $\\displaystyle f'(0)$,\nwe differentiate $\\displaystyle f(x)$ using the chain rule:\n\n\\begin{align*}\nf'(x) &= \\frac{1}{1-x^2} \\cdot \\frac{d}{dx} (1-x^2) \\\\\n&= \\frac{-2x}{1-x^2} \\\\\nf'(0) &= 0\n\\end{align*}\n\nThus the first degree Maclaurin polynomial for $\\displaystyle f$ is\n$\\displaystyle {\\color{blue} T_1(x) = 0 + 0x =0}$."
+    ], 
+    "sols_raw": [
+        "The equation of the ''first degree'' '''Maclaurin polynomial''' for ''f'' is &lt;math>\\displaystyle T_1(x) = f(0) + f'(0) \\cdot x&lt;/math>.\n\nFor &lt;math>\\displaystyle f(x)=\\ln(1-x^2)&lt;/math> we have &lt;math>\\displaystyle f(0) = \\ln(1 - 0^2) = 0&lt;/math>. To find &lt;math>\\displaystyle f'(0)&lt;/math>, we differentiate &lt;math>\\displaystyle f(x)&lt;/math> using the chain rule:\n\n\n&lt;math>\n\\begin{align}\nf'(x) &amp;= \\frac{1}{1-x^2} \\cdot \\frac{d}{dx} (1-x^2) \\\\\n&amp;= \\frac{-2x}{1-x^2} \\\\\nf'(0) &amp;= 0\n\\end{align}\n&lt;/math>\n\n\nThus the first degree Maclaurin polynomial for &lt;math>\\displaystyle f&lt;/math> is &lt;math>\\displaystyle {\\color{blue} T_1(x) = 0 + 0x = 0}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problem. Justify your answer and show your work. Full simplification of numerical answers is required unless explicitly stated otherwise.</strong></p>\n<p>Find the first Maclaurin polynomial for <span class=\"math\">\\(\\displaystyle f(x) = \\ln(1-x^2)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problem. Justify your answer and show your work.\nFull simplification of numerical answers is required unless explicitly\nstated otherwise.}\n\nFind the first Maclaurin polynomial for\n$\\displaystyle f(x) = \\ln(1-x^2)$.", 
+    "statement_raw": "'''Full-Solution Problem. Justify your answer and show your work. Full simplification of numerical answers is required unless explicitly stated otherwise.'''\n\nFind the first Maclaurin polynomial for &lt;math>\\displaystyle f(x) = \\ln(1-x^2)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_10_(a)", 
+    "year": 2013
 }

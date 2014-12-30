@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)_ii", 
-    "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nFind the equation of the tangent line $y=mx+b \\,$ to the graph of\n$f(x)=\\cos(\\pi x)\\,$ at $x=1/2 \\,$.", 
-    "year": 2011, 
-    "sols": [
-        "The tangent line must have the same slope as the function $f(x)$ at\n$x = 1/2$. Solving for the slope $m$, we get\n\n\\begin{align*}m = f'(1/2) = -\\pi\\sin\\left(\\frac{\\pi}{2}\\right) = -\\pi.\\end{align*} The tangent\nline must also touch the function at $x = 1/2$. We use this to solve for\nthe y-intercept:\n\n\\begin{align*}\ny &= mx + b \\\\\n\\cos\\left(\\frac{\\pi}{2}\\right) &= -\\pi\\left(\\frac{1}{2}\\right) + b \\\\\n0 &= -\\frac{\\pi}{2} + b \\\\\nb &= \\frac{\\pi}{2}\\end{align*} Therefore, the tangent line to $f(x) = \\cos(\\pi x)$ at\n$x = 1/2$ is:\n\n\\begin{align*}{\\color{blue}y = -\\pi x + \\frac{\\pi}{2}}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}y = -\\pi x + \\frac{\\pi}{2}}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}y = -\\pi x + \\frac{\\pi}{2}}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "YihanWu", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>You are given a point. To find the equation of a line you need either another point or the slope of the line. We can find the slope of the tangent line by using derivatives.</p>\n"
+    ], 
+    "hints_latex": [
         "You are given a point. To find the equation of a line you need either\nanother point or the slope of the line. We can find the slope of the\ntangent line by using derivatives."
-    ]
+    ], 
+    "hints_raw": [
+        "You are given a point. To find the equation of a line you need either another point or the slope of the line. We can find the slope of the tangent line by using derivatives.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (b) ii", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>The tangent line must have the same slope as the function <span class=\"math\">\\(f(x)\\)</span> at <span class=\"math\">\\(x = 1/2\\)</span>. Solving for the slope <span class=\"math\">\\(m\\)</span>, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nm = f&#39;(1/2) = -\\pi\\sin\\left(\\frac{\\pi}{2}\\right) = -\\pi.\\end{aligned}\\]</span></p>\n<p>The tangent line must also touch the function at <span class=\"math\">\\(x = 1/2\\)</span>. We use this to solve for the y-intercept:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= mx + b \\\\\n\\cos\\left(\\frac{\\pi}{2}\\right) &amp;= -\\pi\\left(\\frac{1}{2}\\right) + b \\\\\n0 &amp;= -\\frac{\\pi}{2} + b \\\\\nb &amp;= \\frac{\\pi}{2}\\end{aligned}\\]</span></p>\n<p>Therefore, the tangent line to <span class=\"math\">\\(f(x) = \\cos(\\pi x)\\)</span> at <span class=\"math\">\\(x = 1/2\\)</span> is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}y = -\\pi x + \\frac{\\pi}{2}}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The tangent line must have the same slope as the function $f(x)$ at\n$x = 1/2$. Solving for the slope $m$, we get\n\n\\begin{align*}\nm = f'(1/2) = -\\pi\\sin\\left(\\frac{\\pi}{2}\\right) = -\\pi.\n\\end{align*} The tangent\nline must also touch the function at $x = 1/2$. We use this to solve for\nthe y-intercept:\n\n\\begin{align*}\ny &= mx + b \\\\\n\\cos\\left(\\frac{\\pi}{2}\\right) &= -\\pi\\left(\\frac{1}{2}\\right) + b \\\\\n0 &= -\\frac{\\pi}{2} + b \\\\\nb &= \\frac{\\pi}{2}\n\\end{align*} Therefore, the tangent line to $f(x) = \\cos(\\pi x)$ at\n$x = 1/2$ is:\n\n\\begin{align*}\n{\\color{blue}y = -\\pi x + \\frac{\\pi}{2}}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The tangent line must have the same slope as the function &lt;math>f(x)&lt;/math> at &lt;math>x = 1/2&lt;/math>. Solving for the slope &lt;math>m&lt;/math>, we get\n:&lt;math>\nm = f'(1/2) = -\\pi\\sin\\left(\\frac{\\pi}{2}\\right) = -\\pi.\n&lt;/math>\nThe tangent line must also touch the function at &lt;math>x = 1/2&lt;/math>. We use this to solve for the y-intercept:\n:&lt;math>\n\\begin{align}\ny &amp;= mx + b \\\\\n\\cos\\left(\\frac{\\pi}{2}\\right) &amp;= -\\pi\\left(\\frac{1}{2}\\right) + b \\\\\n0 &amp;= -\\frac{\\pi}{2} + b \\\\\nb &amp;= \\frac{\\pi}{2}\n\\end{align}\n&lt;/math>\nTherefore, the tangent line to &lt;math>f(x) = \\cos(\\pi x)&lt;/math> at &lt;math>x = 1/2&lt;/math> is:\n:&lt;math>\n{\\color{blue}\ny = -\\pi x + \\frac{\\pi}{2}}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> A correct answer in the box gives full marks. For partial marks work needs to be shown.</em></p>\n<p>Find the equation of the tangent line <span class=\"math\">\\(y=mx+b \\,\\)</span> to the graph of <span class=\"math\">\\(f(x)=\\cos(\\pi x)\\,\\)</span> at <span class=\"math\">\\(x=1/2 \\,\\)</span>.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nFind the equation of the tangent line $y=mx+b \\,$ to the graph of\n$f(x)=\\cos(\\pi x)\\,$ at $x=1/2 \\,$.", 
+    "statement_raw": "'''''Short-Answer Questions.''' A correct answer in the box gives full marks. For partial marks work needs to be shown.''\n\nFind the equation of the tangent line &lt;math> y=mx+b \\, &lt;/math> to the graph of &lt;math> f(x)=\\cos(\\pi x)\\,&lt;/math> at &lt;math> x=1/2 \\,&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_01_(b)_ii", 
+    "year": 2011
 }

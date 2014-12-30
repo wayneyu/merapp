@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_01_(j)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}$completing the question.", 
+    "contributors": [
+        "Konradbe", 
+        "ErinMoulding"
+    ], 
     "course": "MATH105", 
-    "statement": "Find the area under the graph of $\\displaystyle y = e^{-2x}$ for\n$\\displaystyle x \\geq 0$", 
-    "year": 2009, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>To proceed, we want to evaluate the integral</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{\\infty}e^{-2x}\\,dx\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "To proceed, we want to evaluate the integral\n\n$\\displaystyle \\int_{0}^{\\infty}e^{-2x}\\,dx$"
+    ], 
+    "hints_raw": [
+        "To proceed, we want to evaluate the integral\n\n&lt;math> \\displaystyle \\int_{0}^{\\infty}e^{-2x}\\,dx &lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (j)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>This question is asking for the value of</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx\\)</span></p>\n<p>To solve this, we solve the improper integral as follows. First change to a limit</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx\\)</span></p>\n<p>Next we integrate:</p>\n<p><span class=\"math\">\\(\\displaystyle \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b}\\)</span></p>\n<p>Plug in the endpoints:</p>\n<p><span class=\"math\">\\(\\displaystyle \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b} = \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right)\\)</span></p>\n<p>And we notice that the first limit is 0 (<em>e</em> to a large negative number is 0) and the second is independent of the limit and thus</p>\n<p><span class=\"math\">\\(\\displaystyle \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right) = \\frac{1}{2}\\)</span></p>\n<p>Thus</p>\n<p><span class=\"math\">\\(\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
         "This question is asking for the value of\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx$\n\nTo solve this, we solve the improper integral as follows. First change\nto a limit\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx$\n\nNext we integrate:\n\n$\\displaystyle \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b}$\n\nPlug in the endpoints:\n\n$\\displaystyle \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b} = \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right)$\n\nAnd we notice that the first limit is 0 (\\emph{e} to a large negative\nnumber is 0) and the second is independent of the limit and thus\n\n$\\displaystyle \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right) = \\frac{1}{2}$\n\nThus\n\n$\\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}$\n\ncompleting the question."
     ], 
-    "hints": [
-        "To proceed, we want to evaluate the integral\n\n$\\displaystyle \\int_{0}^{\\infty}e^{-2x}\\,dx$"
-    ]
+    "sols_raw": [
+        "This question is asking for the value of\n\n&lt;math> \\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx&lt;/math> \n\nTo solve this, we solve the improper integral as follows. First change to a limit\n\n&lt;math> \\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx &lt;/math> \n\nNext we integrate:\n\n&lt;math> \\displaystyle \\lim_{b \\to \\infty} \\int_{0}^{b}e^{-2x}\\,dx = \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b} &lt;/math> \n\nPlug in the endpoints:\n\n&lt;math> \\displaystyle  \\lim_{b \\to \\infty} \\frac{e^{-2x}}{-2} \\Bigr|_{0}^{b} = \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right) &lt;/math> \n\nAnd we notice that the first limit is 0 (''e'' to a large negative number is 0) and the second is independent of the limit and thus\n\n&lt;math> \\displaystyle  \\lim_{b \\to \\infty}\\left( \\frac{e^{-2b}}{-2} -  \\frac{e^{-2(0)}}{-2} \\right) = \\frac{1}{2} &lt;/math> \n\nThus\n\n&lt;math> \\displaystyle \\int_{0}^{\\infty} e^{-2x}\\,dx = \\frac{1}{2}&lt;/math> \n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the area under the graph of <span class=\"math\">\\(\\displaystyle y = e^{-2x}\\)</span> for <span class=\"math\">\\(\\displaystyle x \\geq 0\\)</span></p>\n", 
+    "statement_latex": "Find the area under the graph of $\\displaystyle y = e^{-2x}$ for\n$\\displaystyle x \\geq 0$", 
+    "statement_raw": "Find the area under the graph of &lt;math> \\displaystyle y = e^{-2x} &lt;/math> for  &lt;math> \\displaystyle x \\geq 0 &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Improper_integral"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2009/Question_01_(j)", 
+    "year": 2009
 }

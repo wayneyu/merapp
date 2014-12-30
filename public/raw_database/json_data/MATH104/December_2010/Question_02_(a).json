@@ -1,14 +1,56 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
-    "course": "MATH104", 
-    "statement": "Find an equation of the tangent line to the curve\n\n\\begin{align*}\\displaystyle{}x^3+xy^2+y^3=13\\end{align*}\n\nat the point (1,2) on the curve. Please simplify.", 
-    "year": 2010, 
-    "sols": [
-        "To find the slope of the tangent line, we consider $y$ as a function of\n$x$ near the point (1,2) and use implicit differentiation to find\n$\\frac{dy}{dx}$:\n\n\\begin{align*}3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0\\end{align*}\n\nIsolating $\\frac{dy}{dx}$,\n\n\\begin{align*}\\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.\\end{align*}\n\nHence,\n\n\\begin{align*}\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .\\end{align*}\n\nThe slope of the tangent line to the curve at $(x,y)=(1,2)$ is then\n\n\\begin{align*}\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.\\end{align*}\n\nSince the tangent line passes through the point $(1,2)$ and has slope\n$-7/16$, its equation is\n\n\\begin{align*}y - 2 = \\frac{-7}{16}(x-1).\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(y - 2=\\frac{-7}{16}(x-1).\\)</span></p>\n", 
+    "answer_latex": " $y - 2=\\frac{-7}{16}(x-1).$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "ChristinaKoch", 
+        "CindyBlois", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>What is the slope of the tangent line? Do you know one point that the tangent line passes through?</p>\n", 
+        "<p>The slope of the tangent line is the derivative of <span class=\"math\">\\(y\\)</span> with respect to <span class=\"math\">\\(x\\)</span>, <span class=\"math\">\\(\\frac{dy}{dx},\\)</span> evaluated at <span class=\"math\">\\(x=1\\)</span> and <span class=\"math\">\\(y=2.\\)</span> Use implicit differentiation to find <span class=\"math\">\\(\\frac{dy}{dx}.\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "What is the slope of the tangent line? Do you know one point that the\ntangent line passes through?", 
         "The slope of the tangent line is the derivative of $y$ with respect to\n$x$, $\\frac{dy}{dx},$ evaluated at $x=1$ and $y=2.$ Use implicit\ndifferentiation to find $\\frac{dy}{dx}.$"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the slope of the tangent line?  Do you know one point that the tangent line passes through?\n", 
+        "The slope of the tangent line is the derivative of &lt;math> y&lt;/math> with respect to &lt;math> x&lt;/math>, &lt;math> \\frac{dy}{dx},&lt;/math> evaluated at &lt;math>x=1 &lt;/math> and &lt;math>y=2. &lt;/math>  Use implicit differentiation to find &lt;math> \\frac{dy}{dx}.&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (a)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>To find the slope of the tangent line, we consider <span class=\"math\">\\(y\\)</span> as a function of <span class=\"math\">\\(x\\)</span> near the point (1,2) and use implicit differentiation to find <span class=\"math\">\\(\\frac{dy}{dx}\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0\\end{aligned}\\]</span></p>\n<p>Isolating <span class=\"math\">\\(\\frac{dy}{dx}\\)</span>,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.\\end{aligned}\\]</span></p>\n<p>Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .\\end{aligned}\\]</span></p>\n<p>The slope of the tangent line to the curve at <span class=\"math\">\\((x,y)=(1,2)\\)</span> is then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.\\end{aligned}\\]</span></p>\n<p>Since the tangent line passes through the point <span class=\"math\">\\((1,2)\\)</span> and has slope <span class=\"math\">\\(-7/16\\)</span>, its equation is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny - 2 = \\frac{-7}{16}(x-1).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the slope of the tangent line, we consider $y$ as a function of\n$x$ near the point (1,2) and use implicit differentiation to find\n$\\frac{dy}{dx}$:\n\n\\begin{align*}\n3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0\n\\end{align*}\n\nIsolating $\\frac{dy}{dx}$,\n\n\\begin{align*}\n\\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.\n\\end{align*}\n\nHence,\n\n\\begin{align*}\n\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .\n\\end{align*}\n\nThe slope of the tangent line to the curve at $(x,y)=(1,2)$ is then\n\n\\begin{align*}\n\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.\n\\end{align*}\n\nSince the tangent line passes through the point $(1,2)$ and has slope\n$-7/16$, its equation is\n\n\\begin{align*}\ny - 2 = \\frac{-7}{16}(x-1).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "\n\nTo find the slope of the tangent line, we consider &lt;math> y&lt;/math> as a function of &lt;math> x&lt;/math> near the point (1,2) and use implicit differentiation to find &lt;math> \\frac{dy}{dx}&lt;/math>:\n\n:&lt;math>3x^2 + y^2 + 2xy \\frac{dy}{dx} + 3y^2 \\frac{dy}{dx} = 0&lt;/math> \n\nIsolating &lt;math>\\frac{dy}{dx}&lt;/math>,\n\n:&lt;math> \\left(2xy+3y^2\\right) \\frac{dy}{dx}  =  -3x^2 -y^2.&lt;/math> \n\nHence, \n:&lt;math>\\frac{dy}{dx} = \\frac{-3x^2 - y^2}{2xy + 3y^2} .&lt;/math>\n\nThe slope of the tangent line to the curve at &lt;math>(x,y)=(1,2)&lt;/math> is then\n:&lt;math>\\frac{dy}{dx}= \\frac{-3(1)^2-2^2}{2(1)(2)+3(2)^2} = \\frac{-7}{16}.&lt;/math>\n\nSince the tangent line passes through the point &lt;math>(1,2)&lt;/math> and has slope &lt;math>-7/16&lt;/math>, its equation is\n: &lt;math>y - 2 = \\frac{-7}{16}(x-1).&lt;/math>\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Find an equation of the tangent line to the curve</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x^3+xy^2+y^3=13\\end{aligned}\\]</span></p>\n<p>at the point (1,2) on the curve. Please simplify.</p>\n", 
+    "statement_latex": "Find an equation of the tangent line to the curve\n\n\\begin{align*}\n\\displaystyle{}x^3+xy^2+y^3=13\n\\end{align*}\n\nat the point (1,2) on the curve. Please simplify.", 
+    "statement_raw": "Find an equation of the tangent line to the curve\n\n:&lt;math>\n\\displaystyle{}x^3+xy^2+y^3=13\n&lt;/math>\n\nat the point (1,2) on the curve.  Please simplify.\n", 
+    "term": "December", 
+    "topics": [
+        "Implicit_differentiation", 
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_02_(a)", 
+    "year": 2010
 }

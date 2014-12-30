@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_07", 
-    "course": "MATH307", 
-    "statement": "Consider the symmetric matrix\n\n$A = \\begin{bmatrix}\n-2 &1 &0 \\\\ \n1 &-2 &1 \\\\ \n0& 1 &-2 \n\\end{bmatrix}$\n\nCompute the matrix norms $\\left \\| A \\right \\|_{\\infty}$ and\n$\\left \\| A \\right \\|_{2 }$", 
-    "year": 2008, 
-    "sols": [
-        "The infinity norm of a matrix is the infinity norm of the vector whose\nentries are the 1-norm of each row, so it will be\n\n\\begin{align*}\\displaystyle \\left \\| A \\right \\|_{\\infty} = \\max\\{2+1+0, 1+2+1, 0+1+2\\} = 4.\\end{align*}\n\nThe 2-norm of a matrix is the largest of the absolute values of the\neigenvalues. So we need to calculate the eigenvalues of \\emph{A} as the\nroots of the characteristic polynomial\n\n\\begin{align*}\n\\det(A-\\lambda I) &= \\det\\begin{vmatrix}\n-2-\\lambda & 1 & 0 \\\\\n1 & -2-\\lambda & 1 \\\\\n0 & 1 & -2-\\lambda \\end{vmatrix} \\\\\n&= (-2-\\lambda) \\det\\begin{vmatrix}\n-2-\\lambda & 1 \\\\\n1 & -2-\\lambda \\end{vmatrix} - (1)\\det\\begin{vmatrix}\n1 & 0 \\\\\n1 & -2-\\lambda \\end{vmatrix} \\\\\n&= (-2-\\lambda)((-2-\\lambda)(-2-\\lambda)-1)-(-2-\\lambda) \\\\\n&= (-2-\\lambda)(\\lambda^2+4\\lambda+2)\\end{align*}\n\nHence, the eigenvalues of \\emph{A} are $\\displaystyle \\lambda_1 = 2$ and\n$\\lambda_{2,3} = \\frac{-4\\pm\\sqrt{16-8}}2 = -2\\pm\\sqrt 2$. The 2-norm of\n\\emph{A} is the largest of the absolute values of these and therefore\n$\\left \\| A \\right \\|_{2 }$ = $2+\\sqrt{2}$."
+    "answer_html": "<p>The 2-norm of <em>A</em> is the largest of the absolute values of these and therefore <span class=\"math\">\\(\\left \\| A \\right \\|_{2 }\\)</span> = <span class=\"math\">\\(2+\\sqrt{2}\\)</span>.</p>\n", 
+    "answer_latex": "The 2-norm of\n\\emph{A} is the largest of the absolute values of these and therefore\n$\\left \\| A \\right \\|_{2 }$ = $2+\\sqrt{2}$.", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The infinity norm of a matrix is simply the maximum absolute row sum of the matrix, that is, the largest 1-norm of its rows.</p>\n<p>The 2-norm for a symmetric matrix is the largest absolute value of the eigenvalues.</p>\n"
+    ], 
+    "hints_latex": [
         "The infinity norm of a matrix is simply the maximum absolute row sum of\nthe matrix, that is, the largest 1-norm of its rows.\n\nThe 2-norm for a symmetric matrix is the largest absolute value of the\neigenvalues."
-    ]
+    ], 
+    "hints_raw": [
+        "The infinity norm of a matrix is simply the maximum absolute row sum of the matrix, that is, the largest 1-norm of its rows.\n\nThe 2-norm for a symmetric matrix is the largest absolute value of the eigenvalues.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "7", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The infinity norm of a matrix is the infinity norm of the vector whose entries are the 1-norm of each row, so it will be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\left \\| A \\right \\|_{\\infty} = \\max\\{2+1+0, 1+2+1, 0+1+2\\} = 4.\\end{aligned}\\]</span></p>\n<p>The 2-norm of a matrix is the largest of the absolute values of the eigenvalues. So we need to calculate the eigenvalues of <em>A</em> as the roots of the characteristic polynomial</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\det(A-\\lambda I) &amp;= \\det\\begin{vmatrix}\n-2-\\lambda &amp; 1 &amp; 0 \\\\\n1 &amp; -2-\\lambda &amp; 1 \\\\\n0 &amp; 1 &amp; -2-\\lambda \\end{vmatrix} \\\\\n&amp;= (-2-\\lambda) \\det\\begin{vmatrix}\n-2-\\lambda &amp; 1 \\\\\n1 &amp; -2-\\lambda \\end{vmatrix} - (1)\\det\\begin{vmatrix}\n1 &amp; 0 \\\\\n1 &amp; -2-\\lambda \\end{vmatrix} \\\\\n&amp;= (-2-\\lambda)((-2-\\lambda)(-2-\\lambda)-1)-(-2-\\lambda) \\\\\n&amp;= (-2-\\lambda)(\\lambda^2+4\\lambda+2)\\end{aligned}\\]</span></p>\n<p>Hence, the eigenvalues of <em>A</em> are <span class=\"math\">\\(\\displaystyle \\lambda_1 = 2\\)</span> and <span class=\"math\">\\(\\lambda_{2,3} = \\frac{-4\\pm\\sqrt{16-8}}2 = -2\\pm\\sqrt 2\\)</span>. The 2-norm of <em>A</em> is the largest of the absolute values of these and therefore <span class=\"math\">\\(\\left \\| A \\right \\|_{2 }\\)</span> = <span class=\"math\">\\(2+\\sqrt{2}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The infinity norm of a matrix is the infinity norm of the vector whose\nentries are the 1-norm of each row, so it will be\n\n\\begin{align*}\n\\displaystyle \\left \\| A \\right \\|_{\\infty} = \\max\\{2+1+0, 1+2+1, 0+1+2\\} = 4.\n\\end{align*}\n\nThe 2-norm of a matrix is the largest of the absolute values of the\neigenvalues. So we need to calculate the eigenvalues of \\emph{A} as the\nroots of the characteristic polynomial\n\n\\begin{align*}\n\\det(A-\\lambda I) &= \\det\\begin{vmatrix}\n-2-\\lambda & 1 & 0 \\\\\n1 & -2-\\lambda & 1 \\\\\n0 & 1 & -2-\\lambda \\end{vmatrix} \\\\\n&= (-2-\\lambda) \\det\\begin{vmatrix}\n-2-\\lambda & 1 \\\\\n1 & -2-\\lambda \\end{vmatrix} - (1)\\det\\begin{vmatrix}\n1 & 0 \\\\\n1 & -2-\\lambda \\end{vmatrix} \\\\\n&= (-2-\\lambda)((-2-\\lambda)(-2-\\lambda)-1)-(-2-\\lambda) \\\\\n&= (-2-\\lambda)(\\lambda^2+4\\lambda+2)\n\\end{align*}\n\nHence, the eigenvalues of \\emph{A} are $\\displaystyle \\lambda_1 = 2$ and\n$\\lambda_{2,3} = \\frac{-4\\pm\\sqrt{16-8}}2 = -2\\pm\\sqrt 2$. The 2-norm of\n\\emph{A} is the largest of the absolute values of these and therefore\n$\\left \\| A \\right \\|_{2 }$ = $2+\\sqrt{2}$."
+    ], 
+    "sols_raw": [
+        "The infinity norm of a matrix is the infinity norm of the vector whose entries are the 1-norm of each row, so it will be\n\n:&lt;math>\\displaystyle \\left \\| A \\right \\|_{\\infty} = \\max\\{2+1+0, 1+2+1, 0+1+2\\} = 4. &lt;/math>\n\n\nThe 2-norm of a matrix is the largest of the absolute values of the eigenvalues. So we need to calculate the eigenvalues of ''A'' as the roots of the characteristic polynomial\n\n:&lt;math>\\begin{align}\n\\det(A-\\lambda I) &amp;= \\det\\begin{vmatrix}\n-2-\\lambda &amp; 1 &amp; 0 \\\\\n1 &amp; -2-\\lambda &amp; 1 \\\\\n0 &amp; 1 &amp; -2-\\lambda \\end{vmatrix} \\\\\n&amp;= (-2-\\lambda) \\det\\begin{vmatrix}\n-2-\\lambda &amp; 1 \\\\\n1 &amp; -2-\\lambda \\end{vmatrix} - (1)\\det\\begin{vmatrix}\n1 &amp; 0 \\\\\n1 &amp; -2-\\lambda \\end{vmatrix} \\\\\n&amp;= (-2-\\lambda)((-2-\\lambda)(-2-\\lambda)-1)-(-2-\\lambda) \\\\\n&amp;= (-2-\\lambda)(\\lambda^2+4\\lambda+2)\n\\end{align}&lt;/math>\n\nHence, the eigenvalues of ''A'' are &lt;math>\\displaystyle \\lambda_1 = 2&lt;/math> and &lt;math>\\lambda_{2,3} = \\frac{-4\\pm\\sqrt{16-8}}2 = -2\\pm\\sqrt 2&lt;/math>. The 2-norm of ''A'' is the largest of the absolute values of these and therefore  &lt;math>\\left \\| A \\right \\|_{2 }&lt;/math> = &lt;math>2+\\sqrt{2}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the symmetric matrix</p>\n<p><span class=\"math\">\\(A = \\begin{bmatrix}\n-2 &amp;1 &amp;0 \\\\ \n1 &amp;-2 &amp;1 \\\\ \n0&amp; 1 &amp;-2 \n\\end{bmatrix}\\)</span></p>\n<p>Compute the matrix norms <span class=\"math\">\\(\\left \\| A \\right \\|_{\\infty}\\)</span> and <span class=\"math\">\\(\\left \\| A \\right \\|_{2 }\\)</span></p>\n", 
+    "statement_latex": "Consider the symmetric matrix\n\n$A = \\begin{bmatrix}\n-2 &1 &0 \\\\ \n1 &-2 &1 \\\\ \n0& 1 &-2 \n\\end{bmatrix}$\n\nCompute the matrix norms $\\left \\| A \\right \\|_{\\infty}$ and\n$\\left \\| A \\right \\|_{2 }$", 
+    "statement_raw": "Consider the symmetric matrix\n\n&lt;math>A = \\begin{bmatrix}\n-2 &amp;1 &amp;0 \\\\ \n1 &amp;-2 &amp;1 \\\\ \n0&amp; 1 &amp;-2 \n\\end{bmatrix}&lt;/math>\n\nCompute the matrix norms &lt;math>\\left \\| A \\right \\|_{\\infty}&lt;/math> and &lt;math>\\left \\| A \\right \\|_{2 }&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2008/Question_07", 
+    "year": 2008
 }

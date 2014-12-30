@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)", 
-    "course": "MATH200", 
-    "statement": "Consider the function\n\n\\begin{align*}\\displaystyle\nf(x,y) = e^{-x^{2} + 4y^{2}}\\end{align*}\n\na) Draw a ``contour map'' of $f$, showing all types of level curves that\noccur.", 
-    "year": 2011, 
-    "sols": [
-        "The level curves of $f(x,y)$ satisfy $f(x,y) = C$ for arbitrary values\nof $C$ such that a solution to $f(x,y) = C$ exists. Starting with that\nequation we have\n\n\\begin{align*}\\displaystyle\ne^{-x^2 + 4y^2} = C.\\end{align*} We notice that we can take the natural logarithm\nof both sides giving us\n\n\\begin{align*}\\displaystyle\n-x^2 + 4y^2 = \\ln(C),\\end{align*} where $\\ln(C)$ is just an arbitrary constant as\nwell! In other words, the level curves of $e^{-x^2 + 4y^2}$ look the\nsame as those of $-x^2 + 4y^2 = g(x,y)$. The only difference between the\nlevel curves in each situation is the values of $C$ corresponding to\neach specific curve. The level curves of $g(x,y)$ are hyperbolae.\n\nIf we choose five different values of\n$C$\\begin{align*}C = e^{-2}, e^{-1}, 1, e^{1}, e^{2}\\end{align*} and draw the resulting level\ncurves, we get the figure below. (Hint: If you begin drawing the level\ncurves starting with $C = 1$, the remaining curves should be easier to\ndraw)\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{MATH200_Dec2011_Q1a_figure.png}\n\\caption{Some level curves of f(x,y)}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH200/December_2011/MATH200_Dec2011_Q1a_figure.png\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH200/December_2011/MATH200_Dec2011_Q1a_figure.png}", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Remember that level curves satisfy <span class=\"math\">\\(f(x,y) = C\\)</span> where <span class=\"math\">\\(C\\)</span> is constant. Varying the value of <span class=\"math\">\\(C\\)</span> will give different level curves.</p>\n", 
+        "<p>Don&#8217;t let the appearance of the exponential function trick into thinking this problem is more difficult than it is. Consider that if <span class=\"math\">\\(f(x,y) = C\\)</span>, then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\ln(f(x,y)) = \\ln(C)\\end{aligned}\\]</span></p>\n<p>provided <span class=\"math\">\\(C &gt; 0\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Remember that level curves satisfy $f(x,y) = C$ where $C$ is constant.\nVarying the value of $C$ will give different level curves.", 
-        "Don't let the appearance of the exponential function trick into thinking\nthis problem is more difficult than it is. Consider that if\n$f(x,y) = C$, then\n\n\\begin{align*}\\displaystyle \\ln(f(x,y)) = \\ln(C)\\end{align*} provided $C > 0$."
-    ]
+        "Don't let the appearance of the exponential function trick into thinking\nthis problem is more difficult than it is. Consider that if\n$f(x,y) = C$, then\n\n\\begin{align*}\n\\displaystyle \\ln(f(x,y)) = \\ln(C)\n\\end{align*} provided $C > 0$."
+    ], 
+    "hints_raw": [
+        "Remember that &lt;b>level curves&lt;/b> satisfy\n&lt;math>\nf(x,y) = C\n&lt;/math>\nwhere &lt;math>C&lt;/math> is constant. Varying the value of &lt;math>C&lt;/math> will give different level curves.\n", 
+        "Don't let the appearance of the exponential function trick into thinking this problem is more difficult than it is. Consider that if &lt;math>f(x,y) = C&lt;/math>, then \n:&lt;math>\\displaystyle \\ln(f(x,y)) = \\ln(C)\n&lt;/math>\nprovided &lt;math>C > 0&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a)", 
+    "rating": 40, 
+    "sols_html": [
+        "<p>The level curves of <span class=\"math\">\\(f(x,y)\\)</span> satisfy <span class=\"math\">\\(f(x,y) = C\\)</span> for arbitrary values of <span class=\"math\">\\(C\\)</span> such that a solution to <span class=\"math\">\\(f(x,y) = C\\)</span> exists. Starting with that equation we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ne^{-x^2 + 4y^2} = C.\\end{aligned}\\]</span></p>\n<p>We notice that we can take the natural logarithm of both sides giving us</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n-x^2 + 4y^2 = \\ln(C),\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\ln(C)\\)</span> is just an arbitrary constant as well! In other words, the level curves of <span class=\"math\">\\(e^{-x^2 + 4y^2}\\)</span> look the same as those of <span class=\"math\">\\(-x^2 + 4y^2 = g(x,y)\\)</span>. The only difference between the level curves in each situation is the values of <span class=\"math\">\\(C\\)</span> corresponding to each specific curve. The level curves of <span class=\"math\">\\(g(x,y)\\)</span> are hyperbolae.</p>\n<p>If we choose five different values of <span class=\"math\">\\(C\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nC = e^{-2}, e^{-1}, 1, e^{1}, e^{2}\\end{aligned}\\]</span></p>\n<p>and draw the resulting level curves, we get the figure below. (Hint: If you begin drawing the level curves starting with <span class=\"math\">\\(C = 1\\)</span>, the remaining curves should be easier to draw)</p>\n<p><img src=\"../json_data/MATH200/December_2011/MATH200_Dec2011_Q1a_figure.png\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "The level curves of $f(x,y)$ satisfy $f(x,y) = C$ for arbitrary values\nof $C$ such that a solution to $f(x,y) = C$ exists. Starting with that\nequation we have\n\n\\begin{align*}\n\\displaystyle\ne^{-x^2 + 4y^2} = C.\n\\end{align*} We notice that we can take the natural logarithm\nof both sides giving us\n\n\\begin{align*}\n\\displaystyle\n-x^2 + 4y^2 = \\ln(C),\n\\end{align*} where $\\ln(C)$ is just an arbitrary constant as\nwell! In other words, the level curves of $e^{-x^2 + 4y^2}$ look the\nsame as those of $-x^2 + 4y^2 = g(x,y)$. The only difference between the\nlevel curves in each situation is the values of $C$ corresponding to\neach specific curve. The level curves of $g(x,y)$ are hyperbolae.\n\nIf we choose five different values of\n$C$\\begin{align*}\nC = e^{-2}, e^{-1}, 1, e^{1}, e^{2}\n\\end{align*} and draw the resulting level\ncurves, we get the figure below. (Hint: If you begin drawing the level\ncurves starting with $C = 1$, the remaining curves should be easier to\ndraw)\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH200/December_2011/MATH200_Dec2011_Q1a_figure.png}"
+    ], 
+    "sols_raw": [
+        "The level curves of &lt;math>f(x,y)&lt;/math> satisfy &lt;math>f(x,y) = C&lt;/math> for arbitrary values of &lt;math>C&lt;/math> such that a solution to &lt;math>f(x,y) = C&lt;/math> exists. Starting with that equation we have\n:&lt;math>\\displaystyle\ne^{-x^2 + 4y^2} = C.\n&lt;/math>\nWe notice that we can take the natural logarithm of both sides giving us\n:&lt;math>\\displaystyle\n-x^2 + 4y^2 = \\ln(C),\n&lt;/math>\nwhere &lt;math>\\ln(C)&lt;/math> is just an arbitrary constant as well! In other words, the level curves of &lt;math>e^{-x^2 + 4y^2}&lt;/math> look the same as those of &lt;math>-x^2 + 4y^2 = g(x,y)&lt;/math>. The only difference between the level curves in each situation is the values of &lt;math>C&lt;/math> corresponding to each specific curve. The level curves of &lt;math>g(x,y)&lt;/math> are hyperbolae.\n\nIf we choose five different values of &lt;math>C&lt;/math>: &lt;math>C = e^{-2}, e^{-1}, 1, e^{1}, e^{2}&lt;/math> and draw the resulting level curves, we get the figure below. (&lt;i>Hint: If you begin drawing the level curves starting with &lt;math>C = 1&lt;/math>, the remaining curves should be easier to draw&lt;/i>)\n\n[[File:MATH200 Dec2011 Q1a figure.png|center|frame|Some level curves of f(x,y)]]\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x,y) = e^{-x^{2} + 4y^{2}}\\end{aligned}\\]</span></p>\n<p>a) Draw a &#8220;contour map&#8221; of <span class=\"math\">\\(f\\)</span>, showing all types of level curves that occur.</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\n\\displaystyle\nf(x,y) = e^{-x^{2} + 4y^{2}}\n\\end{align*}\n\na) Draw a ``contour map'' of $f$, showing all types of level curves that\noccur.", 
+    "statement_raw": "Consider the function\n:&lt;math>\\displaystyle\nf(x,y) = e^{-x^{2} + 4y^{2}}\n&lt;/math>\n\na) Draw a \"contour map\" of &lt;math>f&lt;/math>, showing all types of level curves that occur.\n", 
+    "term": "December", 
+    "topics": [
+        "Level_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/December_2011/Question_01_(a)", 
+    "year": 2011
 }

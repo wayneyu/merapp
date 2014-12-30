@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_02_(f)", 
+    "answer_html": "<p>Thus <span class=\"math\">\\(y = \\sqrt{x}\\)</span> has no horizontal tangent lines, so the statement is true.</p>\n", 
+    "answer_latex": "Thus $y = \\sqrt{x}$ has no horizontal tangent lines, so the statement is\ntrue.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH110", 
-    "statement": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nThe curve $y=\\sqrt{x}$ has no horizontal tangent lines.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>In order for a function to have horizontal tangent lines, at some point its derivative must be equal to zero.</p>\n"
+    ], 
+    "hints_latex": [
+        "In order for a function to have horizontal tangent lines, at some point\nits derivative must be equal to zero."
+    ], 
+    "hints_raw": [
+        "In order for a function to have horizontal tangent lines, at some point its derivative must be equal to zero.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Horizontal tangent lines occur when the derivative equals zero. The derivative of <em>y</em> is</p>\n<p><span class=\"math\">\\(y&#39; = \\frac{1}{2\\sqrt{x}}\\)</span></p>\n<p>However, this derivative is never zero, because for all positive values of <em>x</em> (the domain of the derivative), <span class=\"math\">\\(y&#39;\\)</span> will be a positive number, not zero.</p>\n<p>Thus <span class=\"math\">\\(y = \\sqrt{x}\\)</span> has no horizontal tangent lines, so the statement is true.</p>\n"
+    ], 
+    "sols_latex": [
         "Horizontal tangent lines occur when the derivative equals zero. The\nderivative of \\emph{y} is\n\n$y' = \\frac{1}{2\\sqrt{x}}$\n\nHowever, this derivative is never zero, because for all positive values\nof \\emph{x} (the domain of the derivative), $y'$ will be a positive\nnumber, not zero.\n\nThus $y = \\sqrt{x}$ has no horizontal tangent lines, so the statement is\ntrue."
     ], 
-    "hints": [
-        "In order for a function to have horizontal tangent lines, at some point\nits derivative must be equal to zero."
-    ]
+    "sols_raw": [
+        "Horizontal tangent lines occur when the derivative equals zero.  The derivative of ''y'' is\n\n&lt;math>y' = \\frac{1}{2\\sqrt{x}}&lt;/math>\n\nHowever, this derivative is never zero, because for all positive values of ''x'' (the domain of the derivative), &lt;math>y'&lt;/math> will be a positive number, not zero.  \n\nThus &lt;math>y = \\sqrt{x}&lt;/math> has no horizontal tangent lines, so the statement is true.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.</p>\n<p>The curve <span class=\"math\">\\(y=\\sqrt{x}\\)</span> has no horizontal tangent lines.</p>\n", 
+    "statement_latex": "Determine whether the following statement is true or false. If it is\ntrue, provide justification. If it is false, provide a counterexample.\n\nThe curve $y=\\sqrt{x}$ has no horizontal tangent lines.", 
+    "statement_raw": "Determine whether the following statement is true or false. If it is true, provide justification. If it is false, provide a counterexample.\n\nThe curve &lt;math>y=\\sqrt{x}&lt;/math> has no horizontal tangent lines.\n", 
+    "term": "December", 
+    "topics": [
+        "Asymptote"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_02_(f)", 
+    "year": 2012
 }

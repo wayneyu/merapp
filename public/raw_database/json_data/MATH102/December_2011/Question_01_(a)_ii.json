@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_01_(a)_ii", 
-    "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nFind the derivative of\n\n:\nf(x)=\\textbackslash{}frac\\{x\\}\\{\\textbackslash{}ln(\\textbackslash{}frac\\{1\\}\\{x\\})\\}", 
-    "year": 2011, 
-    "sols": [
-        "This is a quotient of functions and so let $\\displaystyle f(x) = x$ and\n$\\displaystyle g(x) = \\ln(\\tfrac{1}{x})$. Then, by the quotient rule, we\nhave\n\n\\begin{align*}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} = \\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^{2}}\\end{align*}\n\nNow, $\\displaystyle f'(x) = 1$ and for $\\displaystyle g'(x)$, we use the\nchain rule to see that\n\n$\\displaystyle g'(x) = \\frac{1}{\\tfrac{1}{x}}(-x^{-2}) = -\\frac{1}{x}$\n\nNote, we could also have noticed that\n\n$\\displaystyle g(x) = \\ln(\\tfrac{1}{x}) = -\\ln(x)$ and hence\n$\\displaystyle g'(x) = -\\frac{1}{x}$.\n\nThus, combining all this information, we have\n\n\\begin{align*}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} &= \\frac{(1)(\\ln(\\tfrac{1}{x})) - x\\bigg(\\frac{-1}{x}\\bigg)}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\ \n&= \\frac{\\ln(\\tfrac{1}{x}) + 1}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\\n&= \\frac{-\\ln(x) + 1}{(-\\ln(x))^{2}} \\\\\n&= \\frac{1-\\ln(x)}{(\\ln(x))^{2}}\\end{align*}\n\nand any of the last three answers would be accepted."
+    "answer_html": "<p>and any of the last three answers would be accepted.</p>\n", 
+    "answer_latex": "and any of the last three answers would be accepted.", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Alfred"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try to run through an algorithm every time you compute a derivative. Do you just know the derivative? If not what rules can you apply in this situation? Notice that you&#8217;re dividing two functions and that the bottom function is a composition of two functions.</p>\n", 
+        "<p>The quotient rule reads if <span class=\"math\">\\(\\displaystyle h(x) = \\frac{f(x)}{g(x)}\\)</span> then</p>\n<p><span class=\"math\">\\(\\displaystyle h&#39;(x) = \\frac{f&#39;(x)g(x) - f(x)g&#39;(x)}{g(x)^{2}}\\)</span>.</p>\n<p>The chain rule reads if <span class=\"math\">\\(\\displaystyle h(x) = f(g(x))\\)</span> then</p>\n<p><span class=\"math\">\\(\\displaystyle h&#39;(x) = f&#39;(g(x))g&#39;(x)\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Try to run through an algorithm every time you compute a derivative. Do\nyou just know the derivative? If not what rules can you apply in this\nsituation? Notice that you're dividing two functions and that the bottom\nfunction is a composition of two functions.", 
         "The quotient rule reads if $\\displaystyle h(x) = \\frac{f(x)}{g(x)}$ then\n\n$\\displaystyle h'(x) = \\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^{2}}$.\n\nThe chain rule reads if $\\displaystyle h(x) = f(g(x))$ then\n\n$\\displaystyle h'(x) = f'(g(x))g'(x)$."
-    ]
+    ], 
+    "hints_raw": [
+        "Try to run through an algorithm every time you compute a derivative. Do you just know the derivative? If not what rules can you apply in this situation? Notice that you're dividing two functions and that the bottom function is a composition of two functions.\n", 
+        "The quotient rule reads if  &lt;math> \\displaystyle h(x) = \\frac{f(x)}{g(x)}&lt;/math> then\n\n&lt;math> \\displaystyle h'(x) = \\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^{2}}&lt;/math>.\n\nThe chain rule reads if &lt;math> \\displaystyle h(x) = f(g(x))&lt;/math> then\n\n&lt;math> \\displaystyle h'(x) = f'(g(x))g'(x)&lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (a) ii", 
+    "rating": 85, 
+    "sols_html": [
+        "<p>This is a quotient of functions and so let <span class=\"math\">\\(\\displaystyle f(x) = x\\)</span> and <span class=\"math\">\\(\\displaystyle g(x) = \\ln(\\tfrac{1}{x})\\)</span>. Then, by the quotient rule, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} = \\frac{f&#39;(x)g(x) - f(x)g&#39;(x)}{g(x)^{2}}\\end{aligned}\\]</span></p>\n<p>Now, <span class=\"math\">\\(\\displaystyle f&#39;(x) = 1\\)</span> and for <span class=\"math\">\\(\\displaystyle g&#39;(x)\\)</span>, we use the chain rule to see that</p>\n<p><span class=\"math\">\\(\\displaystyle g&#39;(x) = \\frac{1}{\\tfrac{1}{x}}(-x^{-2}) = -\\frac{1}{x}\\)</span></p>\n<p>Note, we could also have noticed that</p>\n<p><span class=\"math\">\\(\\displaystyle g(x) = \\ln(\\tfrac{1}{x}) = -\\ln(x)\\)</span> and hence <span class=\"math\">\\(\\displaystyle g&#39;(x) = -\\frac{1}{x}\\)</span>.</p>\n<p>Thus, combining all this information, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} &amp;= \\frac{(1)(\\ln(\\tfrac{1}{x})) - x\\bigg(\\frac{-1}{x}\\bigg)}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\ \n&amp;= \\frac{\\ln(\\tfrac{1}{x}) + 1}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\\n&amp;= \\frac{-\\ln(x) + 1}{(-\\ln(x))^{2}} \\\\\n&amp;= \\frac{1-\\ln(x)}{(\\ln(x))^{2}}\\end{aligned}\\]</span></p>\n<p>and any of the last three answers would be accepted.</p>\n"
+    ], 
+    "sols_latex": [
+        "This is a quotient of functions and so let $\\displaystyle f(x) = x$ and\n$\\displaystyle g(x) = \\ln(\\tfrac{1}{x})$. Then, by the quotient rule, we\nhave\n\n\\begin{align*}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} = \\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^{2}}\n\\end{align*}\n\nNow, $\\displaystyle f'(x) = 1$ and for $\\displaystyle g'(x)$, we use the\nchain rule to see that\n\n$\\displaystyle g'(x) = \\frac{1}{\\tfrac{1}{x}}(-x^{-2}) = -\\frac{1}{x}$\n\nNote, we could also have noticed that\n\n$\\displaystyle g(x) = \\ln(\\tfrac{1}{x}) = -\\ln(x)$ and hence\n$\\displaystyle g'(x) = -\\frac{1}{x}$.\n\nThus, combining all this information, we have\n\n\\begin{align*}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} &= \\frac{(1)(\\ln(\\tfrac{1}{x})) - x\\bigg(\\frac{-1}{x}\\bigg)}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\ \n&= \\frac{\\ln(\\tfrac{1}{x}) + 1}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\\n&= \\frac{-\\ln(x) + 1}{(-\\ln(x))^{2}} \\\\\n&= \\frac{1-\\ln(x)}{(\\ln(x))^{2}}\n\\end{align*}\n\nand any of the last three answers would be accepted."
+    ], 
+    "sols_raw": [
+        "This is a quotient of functions and so let &lt;math> \\displaystyle f(x) = x&lt;/math> and &lt;math> \\displaystyle g(x) = \\ln(\\tfrac{1}{x})&lt;/math>. Then, by the quotient rule, we have\n\n&lt;math> \n\\begin{align}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} = \\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^{2}}\n\\end{align}\n &lt;/math>\n\nNow, &lt;math> \\displaystyle f'(x) = 1 &lt;/math> and for &lt;math> \\displaystyle g'(x)&lt;/math>, we use the chain rule to see that\n\n&lt;math> \\displaystyle g'(x) = \\frac{1}{\\tfrac{1}{x}}(-x^{-2}) = -\\frac{1}{x}&lt;/math>\n\nNote, we could also have noticed that \n\n&lt;math> \\displaystyle g(x) = \\ln(\\tfrac{1}{x}) = -\\ln(x)&lt;/math> and hence &lt;math> \\displaystyle g'(x) = -\\frac{1}{x}&lt;/math>.\n\nThus, combining all this information, we have\n\n&lt;math> \n\\begin{align}\n\\frac{d}{dx} \\frac{x}{\\ln(\\tfrac{1}{x})} &amp;= \\frac{(1)(\\ln(\\tfrac{1}{x})) - x\\bigg(\\frac{-1}{x}\\bigg)}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\ \n&amp;= \\frac{\\ln(\\tfrac{1}{x}) + 1}{(\\ln(\\tfrac{1}{x}))^{2}} \\\\\n&amp;= \\frac{-\\ln(x) + 1}{(-\\ln(x))^{2}} \\\\\n&amp;= \\frac{1-\\ln(x)}{(\\ln(x))^{2}}\n\\end{align}\n &lt;/math>\n\nand any of the last three answers would be accepted.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> A correct answer in the box gives full marks. For partial marks work needs to be shown.</em></p>\n<p>Find the derivative of</p>\n<p>: f(x)=\\frac{x}{\\ln(\\frac{1}{x})}</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\nFind the derivative of\n\n:\nf(x)=\\textbackslash{}frac\\{x\\}\\{\\textbackslash{}ln(\\textbackslash{}frac\\{1\\}\\{x\\})\\}", 
+    "statement_raw": "'''''Short-Answer Questions.''' A correct answer in the box gives full marks. For partial marks work needs to be shown.''\n\nFind the derivative of\n:&lt;math>\nf(x)=\\frac{x}{\\ln(\\frac{1}{x})}\n", 
+    "term": "December", 
+    "topics": [
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_01_(a)_ii", 
+    "year": 2011
 }

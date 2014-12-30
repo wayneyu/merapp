@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_A_27", 
-    "course": "MATH152", 
-    "statement": "Suppose that \\emph{A} is an $8 \\times 8$ invertible matrix and \\emph{b}\nis a column vector with 8 entries. Both \\emph{A} and \\emph{b} have been\nentered into MATLAB. What commands would you use to compute the vector\n\\textbf{x} that solves the linear system\n\n\\begin{align*}A \\mathbf{x} = \\mathbf{b}?\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "If we have a linear system\n\n\\begin{align*}A\\mathbf{x}=\\mathbf{b}\\end{align*}\n\nthen Matlab can solve this via the \\textbackslash{} operator. Therefore\nif we type\n\n\\texttt{x=A\\textbackslash{}b;}\n\nthen the vector \\emph{x} produced by Matlab is the solution to the\nlinear system.\n\n\\textbf{Note.} Since \\emph{A} is invertible, it is possible to get the\nsolution by typing\n\n\\texttt{x=inv(A)*b;}\n\nbut you are generally discouraged from using the inv() operation in\nMatlab to solve linear systems. (That's because calculating the inverse\nof a matrix \\emph{A} is an overkill here, there is faster ways of\nfinding \\emph{x} that don't require the matrix inverse.)"
+    "answer_html": "<p>(That&#8217;s because calculating the inverse of a matrix <em>A</em> is an overkill here, there is faster ways of finding <em>x</em> that don&#8217;t require the matrix inverse.)</p>\n", 
+    "answer_latex": "(That's because calculating the inverse\nof a matrix \\emph{A} is an overkill here, there is faster ways of\nfinding \\emph{x} that don't require the matrix inverse.)", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What is the special Matlab command for solving a linear system?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the special Matlab command for solving a linear system?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the special Matlab command for solving a linear system?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 27", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>If we have a linear system</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\mathbf{x}=\\mathbf{b}\\end{aligned}\\]</span></p>\n<p>then Matlab can solve this via the \\ operator. Therefore if we type</p>\n<p><code>x=A\\b;</code></p>\n<p>then the vector <em>x</em> produced by Matlab is the solution to the linear system.</p>\n<p><strong>Note.</strong> Since <em>A</em> is invertible, it is possible to get the solution by typing</p>\n<p><code>x=inv(A)*b;</code></p>\n<p>but you are generally discouraged from using the inv() operation in Matlab to solve linear systems. (That&#8217;s because calculating the inverse of a matrix <em>A</em> is an overkill here, there is faster ways of finding <em>x</em> that don&#8217;t require the matrix inverse.)</p>\n"
+    ], 
+    "sols_latex": [
+        "If we have a linear system\n\n\\begin{align*}\nA\\mathbf{x}=\\mathbf{b}\n\\end{align*}\n\nthen Matlab can solve this via the \\textbackslash{} operator. Therefore\nif we type\n\n\\texttt{x=A\\textbackslash{}b;}\n\nthen the vector \\emph{x} produced by Matlab is the solution to the\nlinear system.\n\n\\textbf{Note.} Since \\emph{A} is invertible, it is possible to get the\nsolution by typing\n\n\\texttt{x=inv(A)*b;}\n\nbut you are generally discouraged from using the inv() operation in\nMatlab to solve linear systems. (That's because calculating the inverse\nof a matrix \\emph{A} is an overkill here, there is faster ways of\nfinding \\emph{x} that don't require the matrix inverse.)"
+    ], 
+    "sols_raw": [
+        "If we have a linear system\n\n:&lt;math>\nA\\mathbf{x}=\\mathbf{b}\n&lt;/math>\n\nthen Matlab can solve this via the \\ operator.  Therefore if we type\n\n x=A\\b;\n\nthen the vector ''x'' produced by Matlab is the solution to the linear system.\n\n'''Note.''' Since ''A'' is invertible, it is possible to get the solution by typing\n\n x=inv(A)*b;\n\nbut you are generally discouraged from using the inv() operation in Matlab to solve linear systems. (That's because calculating the inverse of a matrix ''A'' is an overkill here, there is faster ways of finding ''x'' that don't require the matrix inverse.)\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Suppose that <em>A</em> is an <span class=\"math\">\\(8 \\times 8\\)</span> invertible matrix and <em>b</em> is a column vector with 8 entries. Both <em>A</em> and <em>b</em> have been entered into MATLAB. What commands would you use to compute the vector <strong>x</strong> that solves the linear system</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA \\mathbf{x} = \\mathbf{b}?\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Suppose that \\emph{A} is an $8 \\times 8$ invertible matrix and \\emph{b}\nis a column vector with 8 entries. Both \\emph{A} and \\emph{b} have been\nentered into MATLAB. What commands would you use to compute the vector\n\\textbf{x} that solves the linear system\n\n\\begin{align*}\nA \\mathbf{x} = \\mathbf{b}?\n\\end{align*}", 
+    "statement_raw": "Suppose that ''A'' is an &lt;math> 8 \\times 8 &lt;/math> invertible matrix and ''b'' is a column vector with 8 entries. Both ''A'' and ''b'' have been entered into MATLAB. What commands would you use to compute the vector '''x''' that solves the linear system\n\n:&lt;math> A \\mathbf{x} = \\mathbf{b}? &lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_27", 
+    "year": 2010
 }

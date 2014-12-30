@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle y(3xy+2) = 8\\)</span></p>\n", 
+    "answer_latex": "$\\displaystyle y(3xy+2) = 8$", 
+    "contributors": [
+        "WilliamThompson", 
+        "CarmenBruni"
+    ], 
     "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind an equation for the level curve of\n$\\displaystyle f(x,y) = 3xy^{2} + 2y - 1$ that goes through the point\n$\\displaystyle (1,-2)$.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A level curve of a function <span class=\"math\">\\(\\displaystyle f(x,y)\\)</span> is the set of points <span class=\"math\">\\(\\displaystyle x,y\\)</span> satisfying the equation</p>\n<p><span class=\"math\">\\(\\displaystyle f(x,y) = constant\\)</span></p>\n<p>What does it mean for the constant, when we know that a special point <span class=\"math\">\\(\\displaystyle (a_1,a_2)\\)</span> satisfies this equation? Can you calculate the constant?</p>\n"
+    ], 
+    "hints_latex": [
+        "A level curve of a function $\\displaystyle f(x,y)$ is the set of points\n$\\displaystyle x,y$ satisfying the equation\n\n$\\displaystyle f(x,y) = constant$\n\nWhat does it mean for the constant, when we know that a special point\n$\\displaystyle (a_1,a_2)$ satisfies this equation? Can you calculate the\nconstant?"
+    ], 
+    "hints_raw": [
+        "A level curve of a function &lt;math>\\displaystyle f(x,y)&lt;/math> is the set of points &lt;math>\\displaystyle x,y &lt;/math> satisfying the equation\n\n&lt;math>\\displaystyle f(x,y) = constant &lt;/math>\n\nWhat does it mean for the constant, when we know that a special point &lt;math>\\displaystyle (a_1,a_2)&lt;/math> satisfies this equation?\nCan you calculate the constant?\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (b)", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>In the equation of a level curve we want to know all <span class=\"math\">\\(\\displaystyle x,y \\in\\mathbb{R}\\)</span>, such that <span class=\"math\">\\(\\displaystyle f(x,y)\\)</span> is constant. Since the point <span class=\"math\">\\(\\displaystyle (1,-2)\\)</span> shall lie in the level curve, we search for the set satisfying</p>\n<p><span class=\"math\">\\(\\displaystyle f(x,y) = f(1,-2).\\)</span></p>\n<p>This means</p>\n<p><span class=\"math\">\\(\\displaystyle 3xy^2 + 2y - 1 = 7\\)</span></p>\n<p>We can simplify this equation to</p>\n<p><span class=\"math\">\\(\\displaystyle y(3xy+2) = 8\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "In the equation of a level curve we want to know all\n$\\displaystyle x,y \\in\\mathbb{R}$, such that $\\displaystyle f(x,y)$ is\nconstant. Since the point $\\displaystyle (1,-2)$ shall lie in the level\ncurve, we search for the set satisfying\n\n$\\displaystyle f(x,y) = f(1,-2).$\n\nThis means\n\n$\\displaystyle 3xy^2 + 2y - 1 = 7$\n\nWe can simplify this equation to\n\n$\\displaystyle y(3xy+2) = 8$"
     ], 
-    "hints": [
-        "A level curve of a function $\\displaystyle f(x,y)$ is the set of points\n$\\displaystyle x,y$ satisfying the equation\n\n$\\displaystyle f(x,y) = constant$\n\nWhat does it mean for the constant, when we know that a special point\n$\\displaystyle (a_1,a_2)$ satisfies this equation? Can you calculate the\nconstant?"
-    ]
+    "sols_raw": [
+        "In the equation of a level curve we want to know all &lt;math>\\displaystyle x,y \\in\\mathbb{R}&lt;/math>, such that &lt;math>\\displaystyle f(x,y)&lt;/math> is constant. \nSince the point &lt;math>\\displaystyle (1,-2)&lt;/math> shall lie in the level curve, we search for the set satisfying\n\n&lt;math>\\displaystyle f(x,y) = f(1,-2). &lt;/math>\n\nThis means\n\n&lt;math>\\displaystyle 3xy^2 + 2y - 1 = 7 &lt;/math>\n\nWe can simplify this equation to\n\n&lt;math>\\displaystyle y(3xy+2) = 8 &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Find an equation for the level curve of <span class=\"math\">\\(\\displaystyle f(x,y) = 3xy^{2} + 2y - 1\\)</span> that goes through the point <span class=\"math\">\\(\\displaystyle (1,-2)\\)</span>.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind an equation for the level curve of\n$\\displaystyle f(x,y) = 3xy^{2} + 2y - 1$ that goes through the point\n$\\displaystyle (1,-2)$.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nFind an equation for the level curve of &lt;math>\\displaystyle f(x,y) = 3xy^{2} + 2y - 1&lt;/math> that goes through the point &lt;math>\\displaystyle (1,-2)&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(b)", 
+    "year": 2013
 }

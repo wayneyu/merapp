@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_01_(i)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind the derivative of\n\n\\begin{align*}\\displaystyle\ny=\\sin^{-1}(3x+1)\\end{align*} {[}Note: Another notation for\nsin\\textsuperscript{-1} is arcsin{]}", 
-    "year": 2011, 
-    "sols": [
-        "Using the fact that\n\n\\begin{align*}\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\\end{align*} and the chain\nrule, we get\n\n\\begin{align*}\n\\frac{d}{dx} y &= \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n &= \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n &= \\frac{1}{\\sqrt{1-(9x^2+6x+1)}} \\cdot 3  \\\\\n &= \\frac{3}{\\sqrt{-9x^2 - 6x}}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{d}{dx} y=\\frac{3}{\\sqrt{1-(3x+1)^2}}.\\)</span></p>\n", 
+    "answer_latex": " $\\frac{d}{dx} y=\\frac{3}{\\sqrt{1-(3x+1)^2}}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler", 
+        "Alfred"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What is the derivative of <span class=\"math\">\\(\\sin^{-1}(x)\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the derivative of $\\sin^{-1}(x)$?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the derivative of &lt;math>\\sin^{-1}(x)&lt;/math>?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (i)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>Using the fact that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\\end{aligned}\\]</span></p>\n<p>and the chain rule, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx} y &amp;= \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n &amp;= \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n &amp;= \\frac{3}{\\sqrt{1-(3x+1)^2}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using the fact that\n\n\\begin{align*}\n\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\n\\end{align*} and the chain\nrule, we get\n\n\\begin{align*}\n\\frac{d}{dx} y &= \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n &= \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n &= \\frac{3}{\\sqrt{1-(3x+1)^2}}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using the fact that\n:&lt;math> \n\\frac{d}{dx} \\sin^{-1}(x) = \\frac1{\\sqrt{1-x^2}},\n&lt;/math>\nand the chain rule, we get\n:&lt;math>\n\\begin{align}\n\\frac{d}{dx} y &amp; = \\frac{d}{dx}  \\sin^{-1} (3x +1)  \\\\\n &amp; = \\frac{1}{\\sqrt{1-(3x+1)^2}} \\cdot \\frac{d}{dx} (3x+1)    \\\\\n &amp; = \\frac{3}{\\sqrt{1-(3x+1)^2}}.\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "SteveBennoun"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.</em></p>\n<p>Find the derivative of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=\\sin^{-1}(3x+1)\\end{aligned}\\]</span></p>\n<p><span>[</span>Note: Another notation for sin<sup>-1</sup> is arcsin<span>]</span></p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nFind the derivative of\n\n\\begin{align*}\n\\displaystyle\ny=\\sin^{-1}(3x+1)\n\\end{align*} {[}Note: Another notation for\nsin\\textsuperscript{-1} is arcsin{]}", 
+    "statement_raw": "'''''Short-Answer Questions.''' Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.''\n\nFind the derivative of\n:&lt;math>\\displaystyle\ny=\\sin^{-1}(3x+1)\n&lt;/math>\n[Note: Another notation for sin&lt;sup>-1&lt;/sup> is arcsin]\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_01_(i)", 
+    "year": 2011
 }

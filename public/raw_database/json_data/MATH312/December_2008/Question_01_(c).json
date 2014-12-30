@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(c)", 
+    "answer_html": "<p>Since <span class=\"math\">\\(\\displaystyle \\gcd(a,2) = 1\\)</span>, we have that <span class=\"math\">\\(\\displaystyle \\phi(2a) = \\phi(a)\\)</span> completing the proof.</p>\n", 
+    "answer_latex": "Since $\\displaystyle \\gcd(a,2) = 1$, we\nhave that $\\displaystyle \\phi(2a) = \\phi(a)$ completing\nthe proof.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is odd, then $\\displaystyle \\phi(2a) = \\phi(a)$.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Notice that since <em>a</em> is odd, we have that <span class=\"math\">\\(\\displaystyle \\gcd(a,2) = 1\\)</span>. Use multiplicativity.</p>\n"
+    ], 
+    "hints_latex": [
+        "Notice that since \\emph{a} is odd, we have that\n$\\displaystyle \\gcd(a,2) = 1$. Use multiplicativity."
+    ], 
+    "hints_raw": [
+        "Notice that since ''a'' is odd, we have that &lt;math> \\displaystyle \\gcd(a,2) = 1&lt;/math>. Use multiplicativity.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>true</strong>. Since <span class=\"math\">\\(\\displaystyle \\gcd(a,2) = 1\\)</span>, we have that <span class=\"math\">\\(\\displaystyle \\phi(2a) = \\phi(2)\\phi(a) = \\phi(a)\\)</span> completing the proof.</p>\n"
+    ], 
+    "sols_latex": [
         "The answer is \\textbf{true}. Since $\\displaystyle \\gcd(a,2) = 1$, we\nhave that $\\displaystyle \\phi(2a) = \\phi(2)\\phi(a) = \\phi(a)$ completing\nthe proof."
     ], 
-    "hints": [
-        "Notice that since \\emph{a} is odd, we have that\n$\\displaystyle \\gcd(a,2) = 1$. Use multiplicativity."
-    ]
+    "sols_raw": [
+        "The answer is '''true'''. Since &lt;math> \\displaystyle \\gcd(a,2) = 1&lt;/math>, we have that &lt;math> \\displaystyle \\phi(2a) = \\phi(2)\\phi(a) = \\phi(a)&lt;/math> completing the proof.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>For each of the following statements, indicate if it holds for every positive integers <span class=\"math\">\\(\\displaystyle a, b, c\\)</span> (if so, a simple <em>true</em> without a proof suffices, if not, a <em>false</em> together with a counterexample is expected).</strong></p>\n<p>If <em>a</em> is odd, then <span class=\"math\">\\(\\displaystyle \\phi(2a) = \\phi(a)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{For each of the following statements, indicate if it holds for\nevery positive integers $\\displaystyle a, b, c$ (if so, a simple\n\\emph{true} without a proof suffices, if not, a \\emph{false} together\nwith a counterexample is expected).}\n\nIf \\emph{a} is odd, then $\\displaystyle \\phi(2a) = \\phi(a)$.", 
+    "statement_raw": "'''For each of the following statements, indicate if it holds for every positive integers &lt;math>\\displaystyle a, b, c &lt;/math> (if so, a simple ''true'' without a proof suffices, if not, a ''false'' together with a counterexample is  expected).'''\n\nIf ''a'' is odd, then &lt;math> \\displaystyle \\phi(2a) = \\phi(a)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Multiplicative_functions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_01_(c)", 
+    "year": 2008
 }

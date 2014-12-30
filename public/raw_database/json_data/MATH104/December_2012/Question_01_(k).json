@@ -1,15 +1,56 @@
 {
-    "term": "December", 
-    "question": "Question_01_(k)", 
-    "course": "MATH104", 
-    "statement": "The quadratic approximation of a demand function q(p) at p=10 is\n\n\\begin{align*}\\displaystyle{}T_2(p)=2-4(p-10)+3(p-10)^2.\\end{align*}\n\nCalculuate $\\epsilon(10)$ where $\\epsilon(p)$ is the price-elasticity of\ndemand.", 
-    "year": 2012, 
-    "sols": [
-        "Using the hints, we have\n\n\\begin{align*}\n\\epsilon(p) &= \\frac{p \\cdot q'(p)}{q(p)} \\\\\n\\epsilon(10) &= \\frac{10 \\cdot q'(10)}{q(10)} = \\frac{10 (-4))}{2} = -20\\end{align*}\n\nwhere the values of $q(10) =2$ are read from the given degree 2 Taylor\npolynomial expansion and similarly for $q'(10)$."
+    "answer_html": "<p>where the values of <span class=\"math\">\\(q(10) =2\\)</span> are read from the given degree 2 Taylor polynomial expansion and similarly for <span class=\"math\">\\(q&#39;(10)\\)</span>.</p>\n", 
+    "answer_latex": "where the values of $q(10) =2$ are read from the given degree 2 Taylor\npolynomial expansion and similarly for $q'(10)$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "ChristinaKoch", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that the formula for the price-elasticity of demand is</p>\n<p><span class=\"math\">\\(\\displaystyle \\epsilon(p) = \\frac{p\\cdot q&#39;(p)}{q(p)}\\)</span>.</p>\n", 
+        "<p>The problem requests that we fine <span class=\"math\">\\(\\epsilon(10)\\)</span> which is given by</p>\n<p><span class=\"math\">\\(\\displaystyle \\epsilon(10) = \\frac{10\\cdot q&#39;(10)}{q(10)}\\)</span></p>\n<p>so we need to find the values <span class=\"math\">\\(q(10)\\)</span> and <span class=\"math\">\\(q&#39;(10)\\)</span>. How can we do this with the given information?</p>\n", 
+        "<p>Recall that the quadratic approximation is just the second degree Taylor polynomial given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle T_{2}(p) = q(10) + q&#39;(10)(p - 10) + \\frac{1}{2}q&#39;&#39;(10)(p-10)^{2}.\\end{aligned}\\]</span></p>\n<p>Compare this with the given to find the unknown values as given in the previous hint.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that the formula for the price-elasticity of demand is\n\n$\\displaystyle \\epsilon(p) = \\frac{p\\cdot q'(p)}{q(p)}$.", 
         "The problem requests that we fine $\\epsilon(10)$ which is given by\n\n$\\displaystyle \\epsilon(10) = \\frac{10\\cdot q'(10)}{q(10)}$\n\nso we need to find the values $q(10)$ and $q'(10)$. How can we do this\nwith the given information?", 
-        "Recall that the quadratic approximation is just the second degree Taylor\npolynomial given by\n\n\\begin{align*}\\displaystyle T_{2}(p) = q(10) + q'(10)(p - 10) + \\frac{1}{2}q''(10)(p-10)^{2}.\\end{align*}\n\nCompare this with the given to find the unknown values as given in the\nprevious hint."
-    ]
+        "Recall that the quadratic approximation is just the second degree Taylor\npolynomial given by\n\n\\begin{align*}\n\\displaystyle T_{2}(p) = q(10) + q'(10)(p - 10) + \\frac{1}{2}q''(10)(p-10)^{2}.\n\\end{align*}\n\nCompare this with the given to find the unknown values as given in the\nprevious hint."
+    ], 
+    "hints_raw": [
+        "Recall that the formula for the price-elasticity of demand is\n\n&lt;math> \\displaystyle \\epsilon(p) = \\frac{p\\cdot q'(p)}{q(p)}&lt;/math>.\n", 
+        "The problem requests that we fine &lt;math> \\epsilon(10) &lt;/math> which is given by\n\n&lt;math> \\displaystyle \\epsilon(10) = \\frac{10\\cdot q'(10)}{q(10)}&lt;/math>\n\nso we need to find the values &lt;math> q(10) &lt;/math> and &lt;math> q'(10) &lt;/math>. How can we do this with the given information?\n", 
+        "Recall that the quadratic approximation is just the second degree Taylor polynomial given by\n\n:&lt;math>\n\\displaystyle T_{2}(p) = q(10) + q'(10)(p - 10) + \\frac{1}{2}q''(10)(p-10)^{2}.\n&lt;/math>\n\nCompare this with the given to find the unknown values as given in the previous hint.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (k)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Using the hints, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\epsilon(p) &amp;= \\frac{p \\cdot q&#39;(p)}{q(p)} \\\\\n\\epsilon(10) &amp;= \\frac{10 \\cdot q&#39;(10)}{q(10)} = \\frac{10 (-4))}{2} = -20\\end{aligned}\\]</span></p>\n<p>where the values of <span class=\"math\">\\(q(10) =2\\)</span> are read from the given degree 2 Taylor polynomial expansion and similarly for <span class=\"math\">\\(q&#39;(10)\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Using the hints, we have\n\n\\begin{align*}\n\\epsilon(p) &= \\frac{p \\cdot q'(p)}{q(p)} \\\\\n\\epsilon(10) &= \\frac{10 \\cdot q'(10)}{q(10)} = \\frac{10 (-4))}{2} = -20\n\\end{align*}\n\nwhere the values of $q(10) =2$ are read from the given degree 2 Taylor\npolynomial expansion and similarly for $q'(10)$."
+    ], 
+    "sols_raw": [
+        "Using the hints, we have\n\n&lt;math>\n\\begin{align}\n\\epsilon(p) &amp;= \\frac{p \\cdot q'(p)}{q(p)} \\\\\n\\epsilon(10) &amp;= \\frac{10 \\cdot q'(10)}{q(10)} = \\frac{10 (-4))}{2} = -20\n\\end{align}\n&lt;/math>\n\nwhere the values of &lt;math> q(10) =2 &lt;/math> are read from the given degree 2 Taylor polynomial expansion and similarly for &lt;math> q'(10) &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>The quadratic approximation of a demand function q(p) at p=10 is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}T_2(p)=2-4(p-10)+3(p-10)^2.\\end{aligned}\\]</span></p>\n<p>Calculuate <span class=\"math\">\\(\\epsilon(10)\\)</span> where <span class=\"math\">\\(\\epsilon(p)\\)</span> is the price-elasticity of demand.</p>\n", 
+    "statement_latex": "The quadratic approximation of a demand function q(p) at p=10 is\n\n\\begin{align*}\n\\displaystyle{}T_2(p)=2-4(p-10)+3(p-10)^2.\n\\end{align*}\n\nCalculuate $\\epsilon(10)$ where $\\epsilon(p)$ is the price-elasticity of\ndemand.", 
+    "statement_raw": "The quadratic approximation of a demand function q(p) at p=10 is\n\n:&lt;math>\n\\displaystyle{}T_2(p)=2-4(p-10)+3(p-10)^2.\n&lt;/math>\n\nCalculuate &lt;math>\\epsilon(10)&lt;/math> where &lt;math>\\epsilon(p)&lt;/math> is the price-elasticity of demand.\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(k)", 
+    "year": 2012
 }

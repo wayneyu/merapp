@@ -1,11 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_06_(c)", 
-    "course": "MATH104", 
-    "statement": "Is your approximation for $\\sqrt[3]{7}$ too large or too small? Explain.\nUse the information together with the error bound you found in\n\\href{Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_06_(b)}{part\n(b)} to construct the smallest interval you can guarantee contains the\ntrue value of $\\sqrt[3]{7}.$", 
-    "year": 2013, 
-    "sols": [
-        "Since the double derivative on (0,\\textbackslash{}infty) is negative,\nthe function is concave down there. Thus, the tangent line is an over\nestimate of the function. Hence, our true value must lie in the interval\n\n$\\displaystyle [23/12 - 2\\cdot7^{-5/3}/9,23/12]$"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle {\\color{blue} \\left[\\frac{23}{12} - \\frac{7^{-5/3}}{9},\\frac{23}{12}\\right]}\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle {\\color{blue} \\left[\\frac{23}{12} - \\frac{7^{-5/3}}{9},\\frac{23}{12}\\right]}$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": []
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>A linear approximation to a function has a concavity of 0 for all <span class=\"math\">\\(x\\)</span> but the function <span class=\"math\">\\(f(x)\\)</span> does not have a concavity of zero. Use this fact to determine if the linear approximation lies above or below the function <span class=\"math\">\\(f(x)\\)</span> at <span class=\"math\">\\(x = 7\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "A linear approximation to a function has a concavity of 0 for all $x$\nbut the function $f(x)$ does not have a concavity of zero. Use this fact\nto determine if the linear approximation lies above or below the\nfunction $f(x)$ at $x = 7$."
+    ], 
+    "hints_raw": [
+        "A linear approximation to a function has a concavity of 0 for all &lt;math>x&lt;/math> but the function &lt;math>f(x)&lt;/math> does not have a concavity of zero. Use this fact to determine if the linear approximation lies above or below the function &lt;math>f(x)&lt;/math> at &lt;math>x = 7&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since the second derivative <span class=\"math\">\\(f&#39;&#39;(x) = \\frac{-2x^{-5/3}}{9}\\)</span> is negative on <span class=\"math\">\\((0,\\infty)\\)</span>, the function <span class=\"math\">\\(f(x)\\)</span> is concave down there. Thus, the tangent line is an over estimate of the function and the true value must lie in the interval</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle {\\color{blue} \\left[\\frac{23}{12} - \\frac{7^{-5/3}}{9},\\frac{23}{12}\\right]}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since the second derivative $f''(x) = \\frac{-2x^{-5/3}}{9}$ is negative\non $(0,\\infty)$, the function $f(x)$ is concave down there. Thus, the\ntangent line is an over estimate of the function and the true value must\nlie in the interval\n\n\\begin{align*}\n\\displaystyle {\\color{blue} \\left[\\frac{23}{12} - \\frac{7^{-5/3}}{9},\\frac{23}{12}\\right]}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Since the second derivative &lt;math>f''(x) = \\frac{-2x^{-5/3}}{9}&lt;/math> is negative on &lt;math>(0,\\infty)&lt;/math>, the function &lt;math>f(x)&lt;/math> is concave down there. Thus, the tangent line is an over estimate of the function and the true value must lie in the interval\n\n:&lt;math> \\displaystyle {\\color{blue} \\left[\\frac{23}{12} - \\frac{7^{-5/3}}{9},\\frac{23}{12}\\right] }&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Is your approximation for <span class=\"math\">\\(\\sqrt[3]{7}\\)</span> too large or too small? Explain. Use the information together with the error bound you found in <span>part (b)</span> to construct the smallest interval you can guarantee contains the true value of <span class=\"math\">\\(\\sqrt[3]{7}.\\)</span></p>\n", 
+    "statement_latex": "Is your approximation for $\\sqrt[3]{7}$ too large or too small? Explain.\nUse the information together with the error bound you found in\n{part\n(b)} to construct the smallest interval you can guarantee contains the\ntrue value of $\\sqrt[3]{7}.$", 
+    "statement_raw": "Is your approximation for &lt;math>\\sqrt[3]{7}&lt;/math> too large or too small? Explain. Use the information together with the error bound you found in [[Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_06_(b)|part (b)]] to construct the smallest interval you can guarantee contains the true value of &lt;math>\\sqrt[3]{7}.&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_06_(c)", 
+    "year": 2013
 }

@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_06_(c)", 
-    "course": "MATH307", 
-    "statement": "Explain how the orthogonality of the functions $e^{2\\pi inx}$ allows you\nto relate the inner product in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)}{part\n(b)} to the sum\n\n\\begin{align*}\\sum_{n = -\\infty}^\\infty |c_n|^2\\end{align*} Use your answer to to calculate\nthe infinite sum\n\n\\begin{align*}\\sum_{n = 1}^\\infty n^{-2}\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "According to Parseval's identity it holds that\n\n\\begin{align*}\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\int_0^1 |f(x)|^2 dx\\end{align*}\n\nwhere \\emph{c\\textsubscript{n}} are the Fourier coefficients of\n\\emph{$f$(x)}. In\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)}{part\n(b)} we calculated the right hand side and found that the above equals\nto \\emph{1/3}.\n\nIn\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)} we found that the Fourier coefficients are $c_{0} = \\frac{1}{2}$\nand $c_{n}=-\\frac{1}{2\\pi in}$. Hence\n\n\\begin{align*}\n\\frac13 &= \\sum_{n=-\\infty}^\\infty |c_n|^2 \\\\\n&= |c_0|^2 + 2\\sum_{n=1}^\\infty \\left|c_n\\right|^2 \\\\\n&= \\left|\\frac12\\right| + 2 \\sum_{n=1}^\\infty \\left|-\\frac1{2\\pi in}\\right|^2 \\\\\n&= \\frac14 + \\frac1{2\\pi^2} \\sum_{n=1}^\\infty \\frac1{n^2}\\end{align*}\n\nwhere we have noted that $\\displaystyle {}|c_{-n}|^2=|c_n|^2$ in\nsplitting up the sum. Solving for the remaining series yields the final\nanswer\n\n\\begin{align*}\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}\\)</span></p>\n", 
+    "answer_latex": " $\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}$ ", 
+    "contributors": [
+        "IainMoyles"
     ], 
-    "hints": [
-        "Use Parseval's identity\n\n\\begin{align*}\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\frac{1}{L}\\int_{0}^L |f(x)|^2 \\, dx,\\end{align*}\n\nand your results from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)} and\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)}{part\n(b)}."
-    ]
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Use Parseval&#8217;s identity</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\frac{1}{L}\\int_{0}^L |f(x)|^2 \\, dx,\\end{aligned}\\]</span></p>\n<p>and your results from <span>part (a)</span> and <span>part (b)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use Parseval's identity\n\n\\begin{align*}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\frac{1}{L}\\int_{0}^L |f(x)|^2 \\, dx,\n\\end{align*}\n\nand your results from\n{part\n(a)} and\n{part\n(b)}."
+    ], 
+    "hints_raw": [
+        "Use Parseval's identity\n\n:&lt;math>\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\frac{1}{L}\\int_{0}^L |f(x)|^2 \\, dx,&lt;/math>\n\nand your results from [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)|part (a)]] and [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)|part (b)]].\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>According to Parseval&#8217;s identity it holds that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\int_0^1 |f(x)|^2 dx\\end{aligned}\\]</span></p>\n<p>where <em>c<sub>n</sub></em> are the Fourier coefficients of <em><span class=\"math\">\\(f\\)</span>(x)</em>. In <span>part (b)</span> we calculated the right hand side and found that the above equals to <em>1/3</em>.</p>\n<p>In <span>part (a)</span> we found that the Fourier coefficients are <span class=\"math\">\\(c_{0} = \\frac{1}{2}\\)</span> and <span class=\"math\">\\(c_{n}=-\\frac{1}{2\\pi in}\\)</span>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac13 &amp;= \\sum_{n=-\\infty}^\\infty |c_n|^2 \\\\\n&amp;= |c_0|^2 + 2\\sum_{n=1}^\\infty \\left|c_n\\right|^2 \\\\\n&amp;= \\left|\\frac12\\right| + 2 \\sum_{n=1}^\\infty \\left|-\\frac1{2\\pi in}\\right|^2 \\\\\n&amp;= \\frac14 + \\frac1{2\\pi^2} \\sum_{n=1}^\\infty \\frac1{n^2}\\end{aligned}\\]</span></p>\n<p>where we have noted that <span class=\"math\">\\(\\displaystyle {}|c_{-n}|^2=|c_n|^2\\)</span> in splitting up the sum. Solving for the remaining series yields the final answer</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "According to Parseval's identity it holds that\n\n\\begin{align*}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\int_0^1 |f(x)|^2 dx\n\\end{align*}\n\nwhere \\emph{c\\textsubscript{n}} are the Fourier coefficients of\n\\emph{$f$(x)}. In\n{part\n(b)} we calculated the right hand side and found that the above equals\nto \\emph{1/3}.\n\nIn\n{part\n(a)} we found that the Fourier coefficients are $c_{0} = \\frac{1}{2}$\nand $c_{n}=-\\frac{1}{2\\pi in}$. Hence\n\n\\begin{align*}\n\\frac13 &= \\sum_{n=-\\infty}^\\infty |c_n|^2 \\\\\n&= |c_0|^2 + 2\\sum_{n=1}^\\infty \\left|c_n\\right|^2 \\\\\n&= \\left|\\frac12\\right| + 2 \\sum_{n=1}^\\infty \\left|-\\frac1{2\\pi in}\\right|^2 \\\\\n&= \\frac14 + \\frac1{2\\pi^2} \\sum_{n=1}^\\infty \\frac1{n^2}\n\\end{align*}\n\nwhere we have noted that $\\displaystyle {}|c_{-n}|^2=|c_n|^2$ in\nsplitting up the sum. Solving for the remaining series yields the final\nanswer\n\n\\begin{align*}\n\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "According to Parseval's identity it holds that\n\n:&lt;math>\n\\sum_{n=-\\infty}^\\infty |c_n|^2 = \\int_0^1 |f(x)|^2 dx\n&lt;/math>\n\nwhere ''c&lt;sub>n&lt;/sub>'' are the Fourier coefficients of ''&amp;fnof;(x)''. In [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)|part (b)]] we calculated the right hand side and found that the above equals to ''1/3''.\n\nIn [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)|part (a)]] we found that the Fourier coefficients are &lt;math>c_{0} = \\frac{1}{2}&lt;/math> and &lt;math>c_{n}=-\\frac{1}{2\\pi in}&lt;/math>. Hence\n\n:&lt;math>\\begin{align}\n\\frac13 &amp;= \\sum_{n=-\\infty}^\\infty |c_n|^2 \\\\\n&amp;= |c_0|^2 + 2\\sum_{n=1}^\\infty \\left|c_n\\right|^2 \\\\\n&amp;= \\left|\\frac12\\right| + 2 \\sum_{n=1}^\\infty \\left|-\\frac1{2\\pi in}\\right|^2 \\\\\n&amp;= \\frac14 + \\frac1{2\\pi^2} \\sum_{n=1}^\\infty \\frac1{n^2}\n\\end{align}&lt;/math>\n\nwhere we have noted that &lt;math>\\displaystyle{}|c_{-n}|^2=|c_n|^2&lt;/math> in splitting up the sum.  Solving for the remaining series yields the final answer\n\n:&lt;math>\\sum_{n=1}^{\\infty} n^{-2}=\\frac{\\pi^2}{6}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Explain how the orthogonality of the functions <span class=\"math\">\\(e^{2\\pi inx}\\)</span> allows you to relate the inner product in <span>part (b)</span> to the sum</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n = -\\infty}^\\infty |c_n|^2\\end{aligned}\\]</span></p>\n<p>Use your answer to to calculate the infinite sum</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n = 1}^\\infty n^{-2}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Explain how the orthogonality of the functions $e^{2\\pi inx}$ allows you\nto relate the inner product in\n{part\n(b)} to the sum\n\n\\begin{align*}\n\\sum_{n = -\\infty}^\\infty |c_n|^2\n\\end{align*} Use your answer to to calculate\nthe infinite sum\n\n\\begin{align*}\n\\sum_{n = 1}^\\infty n^{-2}\n\\end{align*}", 
+    "statement_raw": "Explain how the orthogonality of the functions &lt;math>e^{2\\pi inx}&lt;/math> allows you to relate the inner product in [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(b)|part (b)]] to the sum\n\n:&lt;math>\n\\sum_{n = -\\infty}^\\infty |c_n|^2\n&lt;/math>\nUse your answer to to calculate the in\ufb01nite sum\n\n:&lt;math>\n\\sum_{n = 1}^\\infty n^{-2}\n&lt;/math>\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(c)", 
+    "year": 2010
 }

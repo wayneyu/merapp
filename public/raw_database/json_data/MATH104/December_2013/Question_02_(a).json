@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle (x^{2}-4)^{2} = 0\\)</span> and so <span class=\"math\">\\(\\displaystyle 0 = (x-2)(x+2)\\)</span> giving solutions <span class=\"math\">\\(\\displaystyle x = \\pm 2\\)</span>.</p>\n", 
+    "answer_latex": "$\\displaystyle (x^{2}-4)^{2} = 0$ and so\n$\\displaystyle 0 = (x-2)(x+2)$ giving solutions\n$\\displaystyle x = \\pm 2$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
+    ], 
     "course": "MATH104", 
-    "statement": "Consider the function\n\n\\begin{align*}f(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}f'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{align*}\n\na) Find all x such that f'(x) = 0 or f'(x) does not exist.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that a fraction is 0 or undefined if either the numerator or the denominator is equal to 0.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that a fraction is 0 or undefined if either the numerator or the\ndenominator is equal to 0."
+    ], 
+    "hints_raw": [
+        "Recall that a fraction is 0 or undefined if either the numerator or the denominator is equal to 0.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (a)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>Setting the numerator and the denominator of the first derivative to 0 gives</p>\n<p><span class=\"math\">\\(\\displaystyle -8x = 0\\)</span> and so <span class=\"math\">\\(\\displaystyle x=0\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle (x^{2}-4)^{2} = 0\\)</span> and so <span class=\"math\">\\(\\displaystyle 0 = x^{2}-4 = (x-2)(x+2)\\)</span> giving solutions <span class=\"math\">\\(\\displaystyle x = \\pm 2\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "Setting the numerator and the denominator of the first derivative to 0\ngives\n\n$\\displaystyle -8x = 0$ and so $\\displaystyle x=0$\n\n$\\displaystyle (x^{2}-4)^{2} = 0$ and so\n$\\displaystyle 0 = x^{2}-4 = (x-2)(x+2)$ giving solutions\n$\\displaystyle x = \\pm 2$."
     ], 
-    "hints": [
-        "Recall that a fraction is 0 or undefined if either the numerator or the\ndenominator is equal to 0."
-    ]
+    "sols_raw": [
+        "Setting the numerator and the denominator of the first derivative to 0 gives\n\n&lt;math> \\displaystyle -8x = 0&lt;/math> and so &lt;math> \\displaystyle x=0&lt;/math>\n\n&lt;math> \\displaystyle (x^{2}-4)^{2} = 0&lt;/math> and so &lt;math> \\displaystyle 0 = x^{2}-4 = (x-2)(x+2)&lt;/math> giving solutions &lt;math> \\displaystyle x = \\pm 2&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\\end{aligned}\\]</span></p>\n<p>Its first and second derivatives are given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f&#39;&#39;(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Find all <span class=\"math\">\\(x\\)</span> such that <span class=\"math\">\\(f&#39;(x) = 0\\)</span> or <span class=\"math\">\\(f&#39;(x)\\)</span> does not exist.</p>\n", 
+    "statement_latex": "Consider the function\n\n\\begin{align*}\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\n\\end{align*} Its first and second derivatives are\ngiven by\n\n\\begin{align*}\nf'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\n\\end{align*}\n\n\\textbf{(a)} Find all $x$ such that $f'(x) = 0$ or $f'(x)$ does not\nexist.", 
+    "statement_raw": "Consider the function\n:&lt;math>\nf(x) = \\frac{x^{2}}{x^{2} - 4}.\n&lt;/math>\nIts first and second derivatives are given by\n:&lt;math>\nf'(x) = -\\frac{8x}{(x^{2} - 4)^{2}}, \\quad f''(x) = \\frac{8(3x^{2} + 4)}{(x^{2} - 4)^{3}}\n&lt;/math>\n\n'''(a)''' Find all &lt;math>x&lt;/math> such that &lt;math>f'(x) = 0&lt;/math> or &lt;math>f'(x)&lt;/math> does not exist.\n", 
+    "term": "December", 
+    "topics": [
+        "Curve_sketching"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_02_(a)", 
+    "year": 2013
 }

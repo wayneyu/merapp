@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_05_(b)", 
-    "course": "MATH103", 
-    "statement": "Consider the curve given by\n\n\\begin{align*}\\displaystyle y = f(x) = \\frac{1}{x^{p}}\\end{align*}\n\nfor $\\displaystyle 1 \\leq x \\leq B$ where $\\displaystyle p,B$ are\nconstants with $\\displaystyle B > 1$ and $\\displaystyle p > 0$.\n\n(b) Compute the volume obtained by revolving the same region about the\n\\emph{x}-axis. (Later we will refer to this volume as V).", 
-    "year": 2005, 
-    "sols": [
-        "For similar reasons to\n\\href{Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_05_(a)}{part\n(a)} we will have two cases because we will have to worry about the\nintegral we are doing. There will be a unique situation if we are ever\nintegrating \\emph{1/x} which occurs when \\emph{p=1/2} because\n\n\\begin{align*}V=\\int_{1}^B\\pi\\left [ \\frac{1}{x^p} \\right ]^2 dx=\\int_{1}^B\\pi\\frac{1}{x^{2p}} dx.\\end{align*}\n\nIf $p\\neq{}1/2$ then when we rotate the function\n$y = f(x) = \\frac{1}{x^p}$ about the \\emph{x}-axis over the interval\n{[}1,\\emph{B}{]}, the volume obtained is\n\n\\begin{align*}\nV &= \\int_{1}^{B} \\pi \\left [ \\frac{1}{x^p} \\right ]^2 dx = \\pi \\int_{1}^{B} \\frac{1}{x^{2p}} dx = \\pi \\int_{1}^{B} x^{-2p} dx \\\\\n&= \\pi \\left [ \\frac{x^{-2p+1}}{-2p+1} \\right ]_{1}^{B} = \\frac{\\pi}{1-2p} \\left ( B^{1-2p} - 1 \\right )\\end{align*}\n\nIf \\emph{p=1/2} then\n\n\\begin{align*}\nV&= \\int_1^B\\pi\\left[\\frac{1}{x^{1/2}}\\right]^2dx=\\pi\\int_1^B\\frac{1}{x}dx\\\\\n&=\\pi\\left[\\ln{x}\\right]_{x=1}^{x=B}=\\pi\\ln{B}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(V=\\pi\\ln{B}\\)</span></p>\n", 
+    "answer_latex": " $V=\\pi\\ln{B}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The volume <em>V</em> obtained by rotating a function <em>y=f(x)</em> around the <em>x</em>-axis (for <span class=\"math\">\\(a \\leq x \\leq b\\)</span>) is <span class=\"math\">\\(V = \\int_{a}^{b} \\pi [f(x)]^2 dx.\\)</span></p>\n", 
+        "<p>We have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x)^2=\\frac{1}{x^{2p}}.\\end{aligned}\\]</span></p>\n<p>Are there any values of <em>p</em> that makes this integral special compared to other values?</p>\n"
+    ], 
+    "hints_latex": [
         "The volume \\emph{V} obtained by rotating a function \\emph{y=f(x)} around\nthe \\emph{x}-axis (for $a \\leq x \\leq b$) is\n$V = \\int_{a}^{b} \\pi [f(x)]^2 dx.$", 
-        "We have\n\n\\begin{align*}f(x)^2=\\frac{1}{x^{2p}}.\\end{align*}\n\nAre there any values of \\emph{p} that makes this integral special\ncompared to other values?"
-    ]
+        "We have\n\n\\begin{align*}\nf(x)^2=\\frac{1}{x^{2p}}.\n\\end{align*}\n\nAre there any values of \\emph{p} that makes this integral special\ncompared to other values?"
+    ], 
+    "hints_raw": [
+        "The volume ''V'' obtained by rotating a function ''y=f(x)'' around the ''x''-axis (for &lt;math> a \\leq x \\leq b &lt;/math>) is &lt;/br>\n&lt;math>\nV = \\int_{a}^{b} \\pi [f(x)]^2 dx.\n&lt;/math>\n", 
+        "We have\n\n:&lt;math>\nf(x)^2=\\frac{1}{x^{2p}}.\n&lt;/math>\n\nAre there any values of ''p'' that makes this integral special compared to other values?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>For similar reasons to <span>part (a)</span> we will have two cases because we will have to worry about the integral we are doing. There will be a unique situation if we are ever integrating <em>1/x</em> which occurs when <em>p=1/2</em> because</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV=\\int_{1}^B\\pi\\left [ \\frac{1}{x^p} \\right ]^2 dx=\\int_{1}^B\\pi\\frac{1}{x^{2p}} dx.\\end{aligned}\\]</span></p>\n<p>If <span class=\"math\">\\(p\\neq{}1/2\\)</span> then when we rotate the function <span class=\"math\">\\(y = f(x) = \\frac{1}{x^p}\\)</span> about the <em>x</em>-axis over the interval <span>[</span>1,<em>B</em><span>]</span>, the volume obtained is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV &amp;= \\int_{1}^{B} \\pi \\left [ \\frac{1}{x^p} \\right ]^2 dx = \\pi \\int_{1}^{B} \\frac{1}{x^{2p}} dx = \\pi \\int_{1}^{B} x^{-2p} dx \\\\\n&amp;= \\pi \\left [ \\frac{x^{-2p+1}}{-2p+1} \\right ]_{1}^{B} = \\frac{\\pi}{1-2p} \\left ( B^{1-2p} - 1 \\right )\\end{aligned}\\]</span></p>\n<p>If <em>p=1/2</em> then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nV&amp;= \\int_1^B\\pi\\left[\\frac{1}{x^{1/2}}\\right]^2dx=\\pi\\int_1^B\\frac{1}{x}dx\\\\\n&amp;=\\pi\\left[\\ln{x}\\right]_{x=1}^{x=B}=\\pi\\ln{B}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "For similar reasons to\n{part\n(a)} we will have two cases because we will have to worry about the\nintegral we are doing. There will be a unique situation if we are ever\nintegrating \\emph{1/x} which occurs when \\emph{p=1/2} because\n\n\\begin{align*}\nV=\\int_{1}^B\\pi\\left [ \\frac{1}{x^p} \\right ]^2 dx=\\int_{1}^B\\pi\\frac{1}{x^{2p}} dx.\n\\end{align*}\n\nIf $p\\neq{}1/2$ then when we rotate the function\n$y = f(x) = \\frac{1}{x^p}$ about the \\emph{x}-axis over the interval\n{[}1,\\emph{B}{]}, the volume obtained is\n\n\\begin{align*}\nV &= \\int_{1}^{B} \\pi \\left [ \\frac{1}{x^p} \\right ]^2 dx = \\pi \\int_{1}^{B} \\frac{1}{x^{2p}} dx = \\pi \\int_{1}^{B} x^{-2p} dx \\\\\n&= \\pi \\left [ \\frac{x^{-2p+1}}{-2p+1} \\right ]_{1}^{B} = \\frac{\\pi}{1-2p} \\left ( B^{1-2p} - 1 \\right )\n\\end{align*}\n\nIf \\emph{p=1/2} then\n\n\\begin{align*}\nV&= \\int_1^B\\pi\\left[\\frac{1}{x^{1/2}}\\right]^2dx=\\pi\\int_1^B\\frac{1}{x}dx\\\\\n&=\\pi\\left[\\ln{x}\\right]_{x=1}^{x=B}=\\pi\\ln{B}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "For similar reasons to [[Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_05_(a)|part (a)]] we will have two cases because we will have to worry about the integral we are doing.  There will be a unique situation if we are ever integrating ''1/x'' which occurs when ''p=1/2'' because\n\n:&lt;math>\nV=\\int_{1}^B\\pi\\left [ \\frac{1}{x^p} \\right ]^2 dx=\\int_{1}^B\\pi\\frac{1}{x^{2p}} dx.\n&lt;/math>\n\nIf &lt;math>p\\neq{}1/2&lt;/math> then when we rotate the function &lt;math> y = f(x) = \\frac{1}{x^p} &lt;/math> about the ''x''-axis over the interval [1,''B''], the volume obtained is &lt;/br>\n\n:&lt;math> \\begin{align}\nV &amp; = \\int_{1}^{B} \\pi \\left [ \\frac{1}{x^p} \\right ]^2 dx = \\pi \\int_{1}^{B} \\frac{1}{x^{2p}} dx = \\pi \\int_{1}^{B} x^{-2p} dx \\\\\n&amp; = \\pi \\left [ \\frac{x^{-2p+1}}{-2p+1} \\right ]_{1}^{B} = \\frac{\\pi}{1-2p} \\left ( B^{1-2p} - 1 \\right )\n\\end{align}.\n&lt;/math>\n\nIf ''p=1/2'' then\n\n:&lt;math>\n\\begin{align}\nV&amp;= \\int_1^B\\pi\\left[\\frac{1}{x^{1/2}}\\right]^2dx=\\pi\\int_1^B\\frac{1}{x}dx\\\\\n&amp;=\\pi\\left[\\ln{x}\\right]_{x=1}^{x=B}=\\pi\\ln{B}\n\\end{align}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "NghiHuynh"
+    ], 
+    "statement_html": "<p>Consider the curve given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y = f(x) = \\frac{1}{x^{p}}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(\\displaystyle 1 \\leq x \\leq B\\)</span> where <span class=\"math\">\\(\\displaystyle p,B\\)</span> are constants with <span class=\"math\">\\(\\displaystyle B &gt; 1\\)</span> and <span class=\"math\">\\(\\displaystyle p &gt; 0\\)</span>.</p>\n<p>(b) Compute the volume obtained by revolving the same region about the <em>x</em>-axis. (Later we will refer to this volume as V).</p>\n", 
+    "statement_latex": "Consider the curve given by\n\n\\begin{align*}\n\\displaystyle y = f(x) = \\frac{1}{x^{p}}\n\\end{align*}\n\nfor $\\displaystyle 1 \\leq x \\leq B$ where $\\displaystyle p,B$ are\nconstants with $\\displaystyle B > 1$ and $\\displaystyle p > 0$.\n\n(b) Compute the volume obtained by revolving the same region about the\n\\emph{x}-axis. (Later we will refer to this volume as V).", 
+    "statement_raw": "Consider the curve given by\n\n:&lt;math> \\displaystyle y = f(x) = \\frac{1}{x^{p}}&lt;/math>\n\nfor &lt;math> \\displaystyle 1 \\leq x \\leq B&lt;/math> where &lt;math> \\displaystyle p,B&lt;/math> are constants with &lt;math> \\displaystyle B > 1&lt;/math> and &lt;math> \\displaystyle p > 0&lt;/math>.\n\n(b) Compute the volume obtained by revolving the same region about the ''x''-axis. (Later we will refer to this volume as V).\n", 
+    "term": "April", 
+    "topics": [
+        "Solid_of_revolution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_05_(b)", 
+    "year": 2005
 }

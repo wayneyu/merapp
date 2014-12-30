@@ -1,14 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(c)", 
-    "course": "MATH101", 
-    "statement": "Express $\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}$ as a\ndefinite integral. Do not evaluate this integral.", 
-    "year": 2007, 
-    "sols": [
-        "Notice that our question is equivalent to\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{1}{n} \\cdot \\frac{i^{4}}{n^{4}}$\n\nThe values for the Riemann sum look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n}$\n\n$\\displaystyle x_{i} = 0 + \\frac{i}{n}  = \\frac{i}{n}$\n\nand so\n\n$\\displaystyle a = 0$\n\nand so with the above in the $\\Delta x$, we can deduce that\n\n$\\displaystyle b = 1$\n\nand our function should be\n\n$f(x) = x^{4}$\n\nHence, we have\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx$\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx$completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This is a Riemann sum problem. Try isolating a factor of <span class=\"math\">\\(\\frac{1}{n}\\)</span></p>\n", 
+        "<p>The values should look like</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = \\frac{1}{n}\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle x_{i} = \\frac{i}{n}\\)</span></p>\n<p>and so</p>\n<p><span class=\"math\">\\(\\displaystyle a = 0\\)</span></p>\n<p>See if you can determine the rest of the values.</p>\n"
+    ], 
+    "hints_latex": [
         "This is a Riemann sum problem. Try isolating a factor of $\\frac{1}{n}$", 
         "The values should look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n}$\n\n$\\displaystyle x_{i} = \\frac{i}{n}$\n\nand so\n\n$\\displaystyle a = 0$\n\nSee if you can determine the rest of the values."
-    ]
+    ], 
+    "hints_raw": [
+        "This is a Riemann sum problem. Try isolating a factor of &lt;math> \\frac{1}{n} &lt;/math>\n", 
+        "The values should look like\n\n&lt;math> \\displaystyle \\Delta x = \\frac{1}{n} &lt;/math>\n\n&lt;math> \\displaystyle x_{i} = \\frac{i}{n} &lt;/math>\n\nand so\n\n&lt;math> \\displaystyle a = 0  &lt;/math>\n\nSee if you can determine the rest of the values.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "1 (c)", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>Notice that our question is equivalent to</p>\n<p><span class=\"math\">\\(\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{1}{n} \\cdot \\frac{i^{4}}{n^{4}}\\)</span></p>\n<p>The values for the Riemann sum look like</p>\n<p><span class=\"math\">\\(\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n}\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle x_{i} = 0 + \\frac{i}{n}  = \\frac{i}{n}\\)</span></p>\n<p>and so</p>\n<p><span class=\"math\">\\(\\displaystyle a = 0\\)</span></p>\n<p>and so with the above in the <span class=\"math\">\\(\\Delta x\\)</span>, we can deduce that</p>\n<p><span class=\"math\">\\(\\displaystyle b = 1\\)</span></p>\n<p>and our function should be</p>\n<p><span class=\"math\">\\(f(x) = x^{4}\\)</span></p>\n<p>Hence, we have</p>\n<p><span class=\"math\">\\(\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that our question is equivalent to\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{1}{n} \\cdot \\frac{i^{4}}{n^{4}}$\n\nThe values for the Riemann sum look like\n\n$\\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n}$\n\n$\\displaystyle x_{i} = 0 + \\frac{i}{n}  = \\frac{i}{n}$\n\nand so\n\n$\\displaystyle a = 0$\n\nand so with the above in the $\\Delta x$, we can deduce that\n\n$\\displaystyle b = 1$\n\nand our function should be\n\n$f(x) = x^{4}$\n\nHence, we have\n\n$\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Notice that our question is equivalent to\n\n&lt;math> \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{1}{n} \\cdot \\frac{i^{4}}{n^{4}}  &lt;/math>\n\nThe values for the Riemann sum look like\n\n&lt;math> \\displaystyle \\Delta x = \\frac{1}{n} = \\frac{b-a}{n} &lt;/math>\n\n&lt;math> \\displaystyle x_{i} = 0 + \\frac{i}{n}  = \\frac{i}{n}&lt;/math>\n\nand so\n\n&lt;math> \\displaystyle a = 0  &lt;/math>\n\nand so with the above in the &lt;math> \\Delta x &lt;/math>, we can deduce that\n\n&lt;math> \\displaystyle b = 1  &lt;/math>\n\nand our function should be\n\n&lt;math> f(x) = x^{4} &lt;/math>\n\nHence, we have\n\n&lt;math> \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}  = \\int_{0}^{1}x^{4}\\, dx  &lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Express <span class=\"math\">\\(\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}\\)</span> as a definite integral. Do not evaluate this integral.</p>\n", 
+    "statement_latex": "Express $\\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}}$ as a\ndefinite integral. Do not evaluate this integral.", 
+    "statement_raw": "Express &lt;math> \\lim_{n \\to \\infty} \\sum_{i=1}^{n}\\frac{i^{4}}{n^{5}} &lt;/math> as a definite integral. Do not evaluate this integral.\n", 
+    "term": "April", 
+    "topics": [
+        "Riemann_sum"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_01_(c)", 
+    "year": 2007
 }

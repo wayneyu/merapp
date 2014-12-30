@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_04_(b)", 
-    "course": "MATH200", 
-    "statement": "The temperature at a point (x,y,z) is given by\n\n\\begin{align*}\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\end{align*}\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nIn which direction does the temperature decrease most rapidly?", 
-    "year": 2012, 
-    "sols": [
-        "For any given unit vector $\\displaystyle {}\\widehat{\\mathbf{u}}$, the\nrate of change of temperature at \\emph{P} in direction\n$\\displaystyle {}\\widehat{\\mathbf{u}}$ is the scalar\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1) &= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}} \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\,\\left\\vert\\widehat{\\mathbf{u}}\\right\\vert\\cos(\\theta) \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\cos(\\theta)\\end{align*}\n\nwhere $\\theta$ is the angle between the given vectors. (Recall that\n$\\displaystyle {}\\vert{\\widehat{\\mathbf{u}}}\\vert=1$.) For optimum\n\\emph{decrease}, we should make the directional derivative as small as\npossible. Since our only degree of freedom is the angle above and we\nknow that\n\n\\begin{align*}\\displaystyle{}-1\\leq\\cos\\theta\\leq1\\end{align*}\n\nwe should arrange $\\displaystyle {}\\cos\\theta=-1$ by choosing $\\theta$=$\\pi$, i.e.,\nby making $\\displaystyle {} \\widehat{\\mathbf{u}}$ parallel to\n$-\\nabla T(1,2,-1)$:\n\n\\begin{align*}\\widehat{\\mathbf{u}} = \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert}\n= \\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\\end{align*} This is the\ndirection of most rapid temperature decrease."
+    "answer_html": "<p><span class=\"math\">\\(\\widehat{\\mathbf{u}}=\\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\\)</span> This is the direction of most rapid temperature decrease.</p>\n", 
+    "answer_latex": " $\\widehat{\\mathbf{u}}=\\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}$  This is the\ndirection of most rapid temperature decrease.", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Recall that for two vectors\n\n\\begin{align*}\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta.\\end{align*}\n\nHow would we choose $\\theta$ to make this dot product the smallest? How\ncan we relate this idea to the directional derivative?"
-    ]
+    "course": "MATH200", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that for two vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta.\\end{aligned}\\]</span></p>\n<p>How would we choose <span class=\"math\">\\(\\theta\\)</span> to make this dot product the smallest? How can we relate this idea to the directional derivative?</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that for two vectors\n\n\\begin{align*}\n\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta.\n\\end{align*}\n\nHow would we choose $\\theta$ to make this dot product the smallest? How\ncan we relate this idea to the directional derivative?"
+    ], 
+    "hints_raw": [
+        "Recall that for two vectors\n\n:&lt;math>\n\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta.\n&lt;/math>\n\nHow would we choose &lt;math>\\theta&lt;/math> to make this dot product the smallest?  How can we relate this idea to the directional derivative?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (b)", 
+    "rating": 75, 
+    "sols_html": [
+        "<p>For any given unit vector <span class=\"math\">\\(\\displaystyle {}\\widehat{\\mathbf{u}}\\)</span>, the rate of change of temperature at <em>P</em> in direction <span class=\"math\">\\(\\displaystyle {}\\widehat{\\mathbf{u}}\\)</span> is the scalar</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1) &amp;= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}} \\\\\n&amp;= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\,\\left\\vert\\widehat{\\mathbf{u}}\\right\\vert\\cos(\\theta) \\\\\n&amp;= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\cos(\\theta)\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\theta\\)</span> is the angle between the given vectors. (Recall that <span class=\"math\">\\(\\displaystyle {}\\vert{\\widehat{\\mathbf{u}}}\\vert=1\\)</span>.) For optimum <em>decrease</em>, we should make the directional derivative as small as possible. Since our only degree of freedom is the angle above and we know that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}-1\\leq\\cos\\theta\\leq1\\end{aligned}\\]</span></p>\n<p>we should arrange <span class=\"math\">\\(\\displaystyle {}\\cos\\theta=-1\\)</span> by choosing <span class=\"math\">\\(\\theta\\)</span>=<span class=\"math\">\\(\\pi\\)</span>, i.e., by making <span class=\"math\">\\(\\displaystyle {} \\widehat{\\mathbf{u}}\\)</span> parallel to <span class=\"math\">\\(-\\nabla T(1,2,-1)\\)</span>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\widehat{\\mathbf{u}} = \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert}\n= \\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\\end{aligned}\\]</span></p>\n<p>This is the direction of most rapid temperature decrease.</p>\n"
+    ], 
+    "sols_latex": [
+        "For any given unit vector $\\displaystyle {}\\widehat{\\mathbf{u}}$, the\nrate of change of temperature at \\emph{P} in direction\n$\\displaystyle {}\\widehat{\\mathbf{u}}$ is the scalar\n\n\\begin{align*}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1) &= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}} \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\,\\left\\vert\\widehat{\\mathbf{u}}\\right\\vert\\cos(\\theta) \\\\\n&= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\cos(\\theta)\n\\end{align*}\n\nwhere $\\theta$ is the angle between the given vectors. (Recall that\n$\\displaystyle {}\\vert{\\widehat{\\mathbf{u}}}\\vert=1$.) For optimum\n\\emph{decrease}, we should make the directional derivative as small as\npossible. Since our only degree of freedom is the angle above and we\nknow that\n\n\\begin{align*}\n\\displaystyle{}-1\\leq\\cos\\theta\\leq1\n\\end{align*}\n\nwe should arrange $\\displaystyle {}\\cos\\theta=-1$ by choosing $\\theta$=$\\pi$, i.e.,\nby making $\\displaystyle {} \\widehat{\\mathbf{u}}$ parallel to\n$-\\nabla T(1,2,-1)$:\n\n\\begin{align*}\n\\widehat{\\mathbf{u}} = \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert}\n= \\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\n\\end{align*} This is the\ndirection of most rapid temperature decrease."
+    ], 
+    "sols_raw": [
+        "For any given unit vector &lt;math>\\displaystyle{}\\widehat{\\mathbf{u}}&lt;/math>,\nthe rate of change of temperature at ''P''\nin direction &lt;math>\\displaystyle{}\\widehat{\\mathbf{u}}&lt;/math>\nis the scalar\n\n:&lt;math>\\begin{align}\nD_{\\widehat{\\mathbf{u}}} T(1,2,-1) &amp;= \\nabla T(1,2,-1)\\cdot\\widehat{\\mathbf{u}} \\\\\n&amp;= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\,\\left\\vert\\widehat{\\mathbf{u}}\\right\\vert\\cos(\\theta) \\\\\n&amp;= \\left\\vert \\nabla T(1,2,-1) \\right\\vert \\cos(\\theta)\n\\end{align}\n&lt;/math>\n\nwhere &amp;theta; is the angle between the given vectors. (Recall that &lt;math>\\displaystyle{}\\vert{\\widehat{\\mathbf{u}}}\\vert=1&lt;/math>.)\nFor optimum ''decrease'', we should make the directional derivative as small as possible.  Since our only degree of freedom is the angle above and we know that\n\n:&lt;math>\n\\displaystyle{}-1\\leq\\cos\\theta\\leq1\n&lt;/math>\n\nwe should arrange &lt;math>\\displaystyle{}\\cos\\theta=-1&lt;/math>\nby choosing &amp;theta;=&amp;pi;, i.e.,\nby making &lt;math>\\displaystyle{} \\widehat{\\mathbf{u}} &lt;/math> parallel to &lt;math>-\\nabla T(1,2,-1)&lt;/math>:\n\n:&lt;math>\n\\widehat{\\mathbf{u}} = \\frac{-\\nabla T(1,2,-1)}{\\left\\vert -\\nabla T(1,2,-1)\\right\\vert}\n= \\frac{\\left\\langle 2,2,-3\\right\\rangle}{\\sqrt{17}}\n&lt;/math>\nThis is the direction of most rapid temperature decrease.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The temperature at a point (x,y,z) is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\\end{aligned}\\]</span></p>\n<p>where T is measured in centigrade and x,y,z in metres.</p>\n<p>In which direction does the temperature decrease most rapidly?</p>\n", 
+    "statement_latex": "The temperature at a point (x,y,z) is given by\n\n\\begin{align*}\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\n\\end{align*}\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nIn which direction does the temperature decrease most rapidly?", 
+    "statement_raw": "The temperature at a point (x,y,z) is given by\n\n:&lt;math>\n\\displaystyle{}T(x,y,z)=5\\exp(-2x^2-y^2-3z^2)\n&lt;/math>\n\nwhere T is measured in centigrade and x,y,z in metres.\n\nIn which direction does the temperature decrease most rapidly?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH200/April_2012/Question_04_(b)", 
+    "year": 2012
 }

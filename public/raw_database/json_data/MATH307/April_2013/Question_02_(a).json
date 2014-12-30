@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
+    "answer_html": "<p>A hermitian matrix is a matrix <span class=\"math\">\\(A\\)</span> such that <span class=\"math\">\\(A=A^*\\)</span>.A matrix that is its own conjugate transpose.All symmetric matrices with all real entries are hermitian.</p>\n", 
+    "answer_latex": "A hermitian matrix is a matrix $A$ such that $A=A^*$.A matrix that is\nits own conjugate transpose.All symmetric matrices with all real\nentries are hermitian.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "Write down the definition of a Hermitian matrix.", 
-    "year": 2013, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "2 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>A hermitian matrix is a matrix <span class=\"math\">\\(A\\)</span> such that <span class=\"math\">\\(A=A^*\\)</span>. A matrix that is its own conjugate transpose. All symmetric matrices with all real entries are hermitian.</p>\n"
+    ], 
+    "sols_latex": [
         "A hermitian matrix is a matrix $A$ such that $A=A^*$. A matrix that is\nits own conjugate transpose. All symmetric matrices with all real\nentries are hermitian."
     ], 
-    "hints": []
+    "sols_raw": [
+        "A hermitian matrix is a matrix &lt;math>A&lt;/math> such that &lt;math>A=A^*&lt;/math>. A matrix that is its own conjugate transpose. All symmetric matrices with all real entries are hermitian.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Write down the definition of a Hermitian matrix.</p>\n", 
+    "statement_latex": "Write down the definition of a Hermitian matrix.", 
+    "statement_raw": "Write down the definition of a Hermitian matrix.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_02_(a)", 
+    "year": 2013
 }

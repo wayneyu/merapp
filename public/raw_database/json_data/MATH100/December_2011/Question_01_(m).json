@@ -1,14 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_01_(m)", 
-    "course": "MATH100", 
-    "statement": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nUse Newton's Method to find the second approximation\n\\emph{x}\\textsubscript{2} to\n\n\\begin{align*}\\sqrt[6]{2}\\end{align*} starting with the inital approximation\n\\emph{x}\\textsubscript{1}=1.", 
-    "year": 2011, 
-    "sols": [
-        "The strength of Newton's method is on root finding. We're asked to\napproximate\n\n\\begin{align*}\\displaystyle{}x=2^{1/6}\\end{align*}\n\nwhich we can write as a root finding problem,\n\n\\begin{align*}\\displaystyle{}x^6-2=0.\\end{align*}\n\nWith this in mind, let\n\n\\begin{align*}\\displaystyle{}f(x) = x^6-2.\\end{align*}\n\nTaking the derivative gives\n\n\\begin{align*}\\displaystyle{}f'(x) = 6x^5.\\end{align*}\n\nWe start with $x_1=1$ as our first iteration and so if we apply Newton's\nMethod, we get,\n\n\\begin{align*}x_{2} = x_{1} - \\frac{f(x_{1})}{f'(x_{1})} = 1 - \\frac{f(1)}{f'(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\\end{align*}\n\nIf we actually compute $2^{1/6}$ we get\n\n\\begin{align*}\\displaystyle{}2^{1/6}\\approx{}1.122462048\\end{align*}\n\nand so $\\frac{7}{6}=1.166666667$ is already in good agreement."
+    "answer_html": "<p>and so <span class=\"math\">\\(\\frac{7}{6}=1.166666667\\)</span> is already in good agreement.</p>\n", 
+    "answer_latex": "and so $\\frac{7}{6}=1.166666667$ is already in good agreement.", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles", 
+        "ChristinaKoch", 
+        "Alfred", 
+        "Konradbe", 
+        "MikeL"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How can we turn this into a root finding problem?</p>\n", 
+        "<p>The formula for Newton&#8217;s Method is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{n+1} = x_{n} - \\frac{f(x_{n})}{f&#39;(x_{n})}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "How can we turn this into a root finding problem?", 
-        "The formula for Newton's Method is\n\n\\begin{align*}x_{n+1} = x_{n} - \\frac{f(x_{n})}{f'(x_{n})}\\end{align*}"
-    ]
+        "The formula for Newton's Method is\n\n\\begin{align*}\nx_{n+1} = x_{n} - \\frac{f(x_{n})}{f'(x_{n})}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "How can we turn this into a root finding problem?\n", 
+        "The formula for Newton's Method is\n\n:&lt;math>\nx_{n+1} = x_{n} - \\frac{f(x_{n})}{f'(x_{n})}\n&lt;/math>\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (m)", 
+    "rating": 57, 
+    "sols_html": [
+        "<p>The strength of Newton&#8217;s method is on root finding. We&#8217;re asked to approximate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x=2^{1/6}\\end{aligned}\\]</span></p>\n<p>which we can write as a root finding problem,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}x^6-2=0.\\end{aligned}\\]</span></p>\n<p>With this in mind, let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}f(x) = x^6-2.\\end{aligned}\\]</span></p>\n<p>Taking the derivative gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}f&#39;(x) = 6x^5.\\end{aligned}\\]</span></p>\n<p>We start with <span class=\"math\">\\(x_1=1\\)</span> as our first iteration and so if we apply Newton&#8217;s Method, we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{2} = x_{1} - \\frac{f(x_{1})}{f&#39;(x_{1})} = 1 - \\frac{f(1)}{f&#39;(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\\end{aligned}\\]</span></p>\n<p>If we actually compute <span class=\"math\">\\(2^{1/6}\\)</span> we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}2^{1/6}\\approx{}1.122462048\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(\\frac{7}{6}=1.166666667\\)</span> is already in good agreement.</p>\n"
+    ], 
+    "sols_latex": [
+        "The strength of Newton's method is on root finding. We're asked to\napproximate\n\n\\begin{align*}\n\\displaystyle{}x=2^{1/6}\n\\end{align*}\n\nwhich we can write as a root finding problem,\n\n\\begin{align*}\n\\displaystyle{}x^6-2=0.\n\\end{align*}\n\nWith this in mind, let\n\n\\begin{align*}\n\\displaystyle{}f(x) = x^6-2.\n\\end{align*}\n\nTaking the derivative gives\n\n\\begin{align*}\n\\displaystyle{}f'(x) = 6x^5.\n\\end{align*}\n\nWe start with $x_1=1$ as our first iteration and so if we apply Newton's\nMethod, we get,\n\n\\begin{align*}\nx_{2} = x_{1} - \\frac{f(x_{1})}{f'(x_{1})} = 1 - \\frac{f(1)}{f'(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\n\\end{align*}\n\nIf we actually compute $2^{1/6}$ we get\n\n\\begin{align*}\n\\displaystyle{}2^{1/6}\\approx{}1.122462048\n\\end{align*}\n\nand so $\\frac{7}{6}=1.166666667$ is already in good agreement."
+    ], 
+    "sols_raw": [
+        "The strength of Newton's method is on root finding.  We're asked to approximate\n\n:&lt;math>\n\\displaystyle{}x=2^{1/6}\n&lt;/math>\n\nwhich we can write as a root finding problem,\n\n:&lt;math>\n\\displaystyle{}x^6-2=0.\n&lt;/math>\n\nWith this in mind, let\n\n:&lt;math>\n\\displaystyle{}f(x) = x^6-2. \n&lt;/math>\n\nTaking the derivative gives\n\n:&lt;math>\n\\displaystyle{}f'(x) = 6x^5.\n&lt;/math>\n\nWe start with &lt;math>x_1=1&lt;/math> as our first iteration and so if we apply Newton's Method, we get,\n\n:&lt;math>\nx_{2} = x_{1} - \\frac{f(x_{1})}{f'(x_{1})} = 1 - \\frac{f(1)}{f'(1)} = 1 - \\frac{-1}{6} = 1+\\frac{1}{6} = \\frac{7}{6}.\n&lt;/math>\n\nIf we actually compute &lt;math>2^{1/6}&lt;/math> we get\n\n:&lt;math>\n\\displaystyle{}2^{1/6}\\approx{}1.122462048\n&lt;/math>\n\nand so &lt;math>\\frac{7}{6}=1.166666667&lt;/math> is already in good agreement.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Questions.</strong> Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.</em></p>\n<p>Use Newton&#8217;s Method to find the second approximation <em>x</em><sub>2</sub> to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sqrt[6]{2}\\end{aligned}\\]</span></p>\n<p>starting with the inital approximation <em>x</em><sub>1</sub>=1.</p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Questions.} Put your answer in the box\nprovided but show your work also. Each question is worth 3 marks, but\nnot all questions are of equal difficulty. Full marks will be given for\ncorrect answers placed in the box, but at most 1 mark will be given for\nincorrect answers. Unless otherwise stated, it is not necessary to\nsimplify your answers in this question.}\n\nUse Newton's Method to find the second approximation\n\\emph{x}\\textsubscript{2} to\n\n\\begin{align*}\n\\sqrt[6]{2}\n\\end{align*} starting with the inital approximation\n\\emph{x}\\textsubscript{1}=1.", 
+    "statement_raw": "'''''Short-Answer Questions.''' Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.''\n\nUse Newton's Method to find the second approximation ''x''&lt;sub>2&lt;/sub> to\n:&lt;math>\\sqrt[6]{2}&lt;/math>\nstarting with the inital approximation ''x''&lt;sub>1&lt;/sub>=1.\n", 
+    "term": "December", 
+    "topics": [
+        "Newton%27s_method"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_01_(m)", 
+    "year": 2011
 }

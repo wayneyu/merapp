@@ -1,15 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_01_(g)", 
-    "course": "MATH104", 
-    "statement": "Find the second order Taylor polynomial for\n\n\\begin{align*}\\displaystyle{}y=\\arctan(x)\\end{align*}\n\nat x=1.", 
-    "year": 2012, 
-    "sols": [
-        "For our problem, we have that $a = 1$ and $f(x) = \\arctan(x)$.\nEvaluating the derivatives, we get\n\n\\begin{align*}f'(x) = \\frac{1}{1 + x^{2}}, \\quad f''(x) = \\frac{-2x}{(1 + x^{2})^{2}}\\end{align*}\nThus,\n\n\\begin{align*}\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f'(1) = \\frac{1}{2}, \\quad f''(1) = -\\frac{1}{2}\\end{align*}\nand so the 2nd order Taylor polynomial is\n\n\\begin{align*}{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall (or review) the definition of the 2nd order Taylor polynomial of a function <span class=\"math\">\\(f(x)\\)</span> at a point <span class=\"math\">\\(x = a\\)</span> from your text. In this case, what is the function <span class=\"math\">\\(f(x)\\)</span> and what is <span class=\"math\">\\(a\\)</span>?</p>\n", 
+        "<p>Recall that the second order Taylor polynomial of a function <span class=\"math\">\\(f(x)\\)</span> at a point <span class=\"math\">\\(x = a\\)</span> is given by <span class=\"math\">\\(T_{2}(x)\\)</span> where,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle T_{2}(x) = f(a) + f&#39;(a)(x - a) + \\frac{1}{2}f&#39;&#39;(a)(x-a)^{2}\\end{aligned}\\]</span></p>\n<p>In our case, <span class=\"math\">\\(a=1\\)</span> and <span class=\"math\">\\(f(x) = \\arctan(x)\\)</span>.</p>\n", 
+        "<p>Recall the derivative of <em>arctan(x)</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{d}{dx} \\arctan(x) = \\frac1{1+x^2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "Recall (or review) the definition of the 2nd order Taylor polynomial of\na function $f(x)$ at a point $x = a$ from your text. In this case, what\nis the function $f(x)$ and what is $a$?", 
-        "Recall that the second order Taylor polynomial of a function $f(x)$ at a\npoint $x = a$ is given by $T_{2}(x)$ where,\n\n\\begin{align*}\\displaystyle T_{2}(x) = f(a) + f'(a)(x - a) + \\frac{1}{2}f''(a)(x-a)^{2}\\end{align*}\n\nIn our case, $a=1$ and $f(x) = \\arctan(x)$.", 
-        "Recall the derivative of \\emph{arctan(x)}\n\n\\begin{align*}\\frac{d}{dx} \\arctan(x) = \\frac1{1+x^2}\\end{align*}"
-    ]
+        "Recall that the second order Taylor polynomial of a function $f(x)$ at a\npoint $x = a$ is given by $T_{2}(x)$ where,\n\n\\begin{align*}\n\\displaystyle T_{2}(x) = f(a) + f'(a)(x - a) + \\frac{1}{2}f''(a)(x-a)^{2}\n\\end{align*}\n\nIn our case, $a=1$ and $f(x) = \\arctan(x)$.", 
+        "Recall the derivative of \\emph{arctan(x)}\n\n\\begin{align*}\n\\frac{d}{dx} \\arctan(x) = \\frac1{1+x^2}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Recall (or review) the definition of the 2nd order Taylor polynomial of a function &lt;math>f(x)&lt;/math> at a point &lt;math>x = a&lt;/math> from your text. In this case, what is the function &lt;math>f(x)&lt;/math> and what is &lt;math>a&lt;/math>?\n", 
+        "Recall that the second order Taylor polynomial of a function &lt;math>f(x)&lt;/math> at a point &lt;math>x = a&lt;/math> is given by &lt;math>T_{2}(x)&lt;/math> where,\n:&lt;math>\n\\displaystyle T_{2}(x) = f(a) + f'(a)(x - a) + \\frac{1}{2}f''(a)(x-a)^{2}\n&lt;/math>\n\nIn our case, &lt;math> a=1 &lt;/math> and &lt;math> f(x) = \\arctan(x) &lt;/math>.\n", 
+        "Recall the derivative of ''arctan(x)''\n\n:&lt;math>\n\\frac{d}{dx} \\arctan(x) = \\frac1{1+x^2}\n&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (g)", 
+    "rating": 84, 
+    "sols_html": [
+        "<p>For our problem, we have that <span class=\"math\">\\(a = 1\\)</span> and <span class=\"math\">\\(f(x) = \\arctan(x)\\)</span>. Evaluating the derivatives, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) = \\frac{1}{1 + x^{2}}, \\quad f&#39;&#39;(x) = \\frac{-2x}{(1 + x^{2})^{2}}\\end{aligned}\\]</span></p>\n<p>Thus,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f&#39;(1) = \\frac{1}{2}, \\quad f&#39;&#39;(1) = -\\frac{1}{2}\\end{aligned}\\]</span></p>\n<p>and so the 2nd order Taylor polynomial is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "For our problem, we have that $a = 1$ and $f(x) = \\arctan(x)$.\nEvaluating the derivatives, we get\n\n\\begin{align*}\nf'(x) = \\frac{1}{1 + x^{2}}, \\quad f''(x) = \\frac{-2x}{(1 + x^{2})^{2}}\n\\end{align*}\nThus,\n\n\\begin{align*}\n\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f'(1) = \\frac{1}{2}, \\quad f''(1) = -\\frac{1}{2}\n\\end{align*}\nand so the 2nd order Taylor polynomial is\n\n\\begin{align*}\n{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x -1)^{2}}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "For our problem, we have that &lt;math>a = 1&lt;/math> and &lt;math>f(x) = \\arctan(x)&lt;/math>. Evaluating the derivatives, we get\n:&lt;math>\nf'(x) = \\frac{1}{1 + x^{2}}, \\quad f''(x) = \\frac{-2x}{(1 + x^{2})^{2}}\n&lt;/math>\nThus,\n:&lt;math>\n\\displaystyle\nf(1) = \\arctan(1) = \\frac{\\pi}{4}, \\quad f'(1) = \\frac{1}{2}, \\quad f''(1) = -\\frac{1}{2}\n&lt;/math>\nand so the 2nd order Taylor polynomial is\n:&lt;math>\n{\\color{blue}T_{2}(x) = \\frac{\\pi}{4} + \\frac{1}{2}(x - 1) - \\frac{1}{4}(x - 1)^{2}}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Find the second order Taylor polynomial for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}y=\\arctan(x)\\end{aligned}\\]</span></p>\n<p>at x=1.</p>\n", 
+    "statement_latex": "Find the second order Taylor polynomial for\n\n\\begin{align*}\n\\displaystyle{}y=\\arctan(x)\n\\end{align*}\n\nat x=1.", 
+    "statement_raw": "Find the second order Taylor polynomial for\n\n:&lt;math>\n\\displaystyle{}y=\\arctan(x)\n&lt;/math>\n\nat x=1.\n", 
+    "term": "December", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(g)", 
+    "year": 2012
 }

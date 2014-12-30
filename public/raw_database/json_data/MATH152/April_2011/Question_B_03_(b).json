@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_03_(b)", 
-    "course": "MATH152", 
-    "statement": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\end{align*}\n\nand transforms\n\n\\begin{align*}\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\end{align*}\n\nIs A invertible? Justify briefly.", 
-    "year": 2011, 
-    "sols": [
-        "Recall that a matrix is invertible if and only if its determinant,\ndet(A) $\\neq$ 0. Also recall that the determinant of a matrix is the\nproduct of its eigenvalues. In\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B3_(a)}{part(a)},\nwe deduced that the eigenvalues were $\\lambda_1=2$ and $\\lambda_2=0$.\nTherefore we have that,\n\n\\begin{align*}\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\\end{align*}\n\nTherefore we conclude that det(A)=0 and thus that the matrix A is\n\\textbf{not} invertible."
+    "answer_html": "<p>Therefore we conclude that det(A)=0 and thus that the matrix A is <strong>not</strong> invertible.</p>\n", 
+    "answer_latex": "Therefore we conclude that det(A)=0 and thus that the matrix A is\n\\textbf{not} invertible.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How do eigenvalues relate to the invertibility of A?</p>\n"
+    ], 
+    "hints_latex": [
         "How do eigenvalues relate to the invertibility of A?"
-    ]
+    ], 
+    "hints_raw": [
+        "How do eigenvalues relate to the invertibility of A?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "B 03 (b)", 
+    "rating": 94, 
+    "sols_html": [
+        "<p>Recall that a matrix is invertible if and only if its determinant, det(A) <span class=\"math\">\\(\\neq\\)</span> 0. Also recall that the determinant of a matrix is the product of its eigenvalues. In <span>part(a)</span>, we deduced that the eigenvalues were <span class=\"math\">\\(\\lambda_1=2\\)</span> and <span class=\"math\">\\(\\lambda_2=0\\)</span>. Therefore we have that,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\\end{aligned}\\]</span></p>\n<p>Therefore we conclude that det(A)=0 and thus that the matrix A is <strong>not</strong> invertible.</p>\n"
+    ], 
+    "sols_latex": [
+        "Recall that a matrix is invertible if and only if its determinant,\ndet(A) $\\neq$ 0. Also recall that the determinant of a matrix is the\nproduct of its eigenvalues. In\n{part(a)},\nwe deduced that the eigenvalues were $\\lambda_1=2$ and $\\lambda_2=0$.\nTherefore we have that,\n\n\\begin{align*}\n\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\n\\end{align*}\n\nTherefore we conclude that det(A)=0 and thus that the matrix A is\n\\textbf{not} invertible."
+    ], 
+    "sols_raw": [
+        "Recall that a matrix is invertible if and only if its determinant, det(A) &amp;ne; 0.  Also recall that the determinant of a matrix is the product of its eigenvalues.  In [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B3_(a)|part(a)]], we deduced that the eigenvalues were &lt;math>\\lambda_1=2&lt;/math> and &lt;math>\\lambda_2=0&lt;/math>.  Therefore we have that,\n\n:&lt;math>\n\\displaystyle{}\\textrm{det}(A)=\\lambda_1\\lambda_2=2(0)=0.\n&lt;/math>\n\nTherefore we conclude that det(A)=0 and thus that the matrix A is '''not''' invertible.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let A be a <span class=\"math\">\\(2\\times{2}\\)</span> matrix which transforms</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and transforms</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Is A invertible? Justify briefly.</p>\n", 
+    "statement_latex": "Let A be a $2\\times{2}$ matrix which transforms\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n\\end{align*}\n\nand transforms\n\n\\begin{align*}\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\n\\end{align*}\n\nIs A invertible? Justify briefly.", 
+    "statement_raw": "Let A be a &lt;math>2\\times{2}&lt;/math> matrix which transforms\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n2\\\\\n2\n\\end{bmatrix}\n&lt;/math>\n\nand transforms\n\n:&lt;math>\n\\begin{bmatrix}\n1\\\\\n-1\n\\end{bmatrix} \\quad \\text{to} \\quad \\begin{bmatrix}\n0\\\\\n0\n\\end{bmatrix}.\n&lt;/math>\n\nIs A invertible?  Justify briefly.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_03_(b)", 
+    "year": 2011
 }

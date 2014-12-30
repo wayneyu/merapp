@@ -1,15 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_A_15", 
-    "course": "MATH152", 
-    "statement": "List all eigenvalues of\n$\\left[\\begin{array}{cc} 3 & 1 \\\\ 1 & 3 \\end{array}\\right]$.", 
-    "year": 2010, 
-    "sols": [
-        "We calculate the characteristic polynomial.\n\n\\begin{align*}\np(\\lambda) &= \\mathrm{det}(A-\\lambda I) \\\\\n&= \\mathrm{det}\\left(\\left[\\begin{array}{cc}3-\\lambda & 1 \\\\ 1 & 3-\\lambda \\end{array}\\right]\\right) \\\\\n&= (3-\\lambda)^2 -1 = \\lambda^2-6\\lambda+8\\end{align*} Setting $p(\\lambda) = 0$ we obtain\n\n\\begin{align*}\\displaystyle\n\\lambda = \\frac{6 \\pm \\sqrt{6^2-4(1)(8)}}2 = \\frac{6 \\pm 2}2\\end{align*} Therefore\nthe eigenvalues are $\\lambda = 2$ and $\\lambda = 4$.", 
-        "Using Hint 2 we can set up the following two equations:\n\n\\begin{align*}\n\\mathrm{trace}(A) = 6 &= \\lambda_1 + \\lambda_2 \\\\\n\\mathrm{det}(A) = 8 &= \\lambda_1 \\lambda_2\\end{align*} From here we quickly see the solutions $\\lambda = 2$ and\n$\\lambda = 4$."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\n\\lambda=\\frac{6 \\pm 2}2\\)</span> Therefore the eigenvalues are <span class=\"math\">\\(\\lambda = 2\\)</span> and <span class=\"math\">\\(\\lambda = 4\\)</span>.</p>\n", 
+    "answer_latex": " $\\displaystyle\n\\lambda=\\frac{6 \\pm 2}2$  Therefore\nthe eigenvalues are $\\lambda = 2$ and $\\lambda = 4$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Eigenvalues are the zeros of characteristic polynomial\n\n\\begin{align*}\\displaystyle\n\\mathrm{det}(A-\\lambda I)\\end{align*} where \\emph{I} is the identity matrix.", 
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Eigenvalues are the zeros of characteristic polynomial</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\mathrm{det}(A-\\lambda I)\\end{aligned}\\]</span></p>\n<p>where <em>I</em> is the identity matrix.</p>\n", 
+        "<p>It is sometimes faster to use the fact that the sum and product of the eigenvalues equals the trace and determinant of the matrix, respectively.</p>\n"
+    ], 
+    "hints_latex": [
+        "Eigenvalues are the zeros of characteristic polynomial\n\n\\begin{align*}\n\\displaystyle\n\\mathrm{det}(A-\\lambda I)\n\\end{align*} where \\emph{I} is the identity matrix.", 
         "It is sometimes faster to use the fact that the sum and product of the\neigenvalues equals the trace and determinant of the matrix,\nrespectively."
-    ]
+    ], 
+    "hints_raw": [
+        "Eigenvalues are the zeros of characteristic polynomial\n:&lt;math> \\displaystyle\n\\mathrm{det}(A-\\lambda I)\n&lt;/math>\nwhere ''I'' is the identity matrix.\n", 
+        "It is sometimes faster to use the fact that the sum and product of the eigenvalues equals the trace and determinant of the matrix, respectively.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "A 15", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>We calculate the characteristic polynomial.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np(\\lambda) &amp;= \\mathrm{det}(A-\\lambda I) \\\\\n&amp;= \\mathrm{det}\\left(\\left[\\begin{array}{cc}3-\\lambda &amp; 1 \\\\ 1 &amp; 3-\\lambda \\end{array}\\right]\\right) \\\\\n&amp;= (3-\\lambda)^2 -1 = \\lambda^2-6\\lambda+8\\end{aligned}\\]</span></p>\n<p>Setting <span class=\"math\">\\(p(\\lambda) = 0\\)</span> we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\lambda = \\frac{6 \\pm \\sqrt{6^2-4(1)(8)}}2 = \\frac{6 \\pm 2}2\\end{aligned}\\]</span></p>\n<p>Therefore the eigenvalues are <span class=\"math\">\\(\\lambda = 2\\)</span> and <span class=\"math\">\\(\\lambda = 4\\)</span>.</p>\n", 
+        "<p>Using Hint 2 we can set up the following two equations:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathrm{trace}(A) = 6 &amp;= \\lambda_1 + \\lambda_2 \\\\\n\\mathrm{det}(A) = 8 &amp;= \\lambda_1 \\lambda_2\\end{aligned}\\]</span></p>\n<p>From here we quickly see the solutions <span class=\"math\">\\(\\lambda = 2\\)</span> and <span class=\"math\">\\(\\lambda = 4\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We calculate the characteristic polynomial.\n\n\\begin{align*}\np(\\lambda) &= \\mathrm{det}(A-\\lambda I) \\\\\n&= \\mathrm{det}\\left(\\left[\\begin{array}{cc}3-\\lambda & 1 \\\\ 1 & 3-\\lambda \\end{array}\\right]\\right) \\\\\n&= (3-\\lambda)^2 -1 = \\lambda^2-6\\lambda+8\n\\end{align*} Setting $p(\\lambda) = 0$ we obtain\n\n\\begin{align*}\n\\displaystyle\n\\lambda = \\frac{6 \\pm \\sqrt{6^2-4(1)(8)}}2 = \\frac{6 \\pm 2}2\n\\end{align*} Therefore\nthe eigenvalues are $\\lambda = 2$ and $\\lambda = 4$.", 
+        "Using Hint 2 we can set up the following two equations:\n\n\\begin{align*}\n\\mathrm{trace}(A) = 6 &= \\lambda_1 + \\lambda_2 \\\\\n\\mathrm{det}(A) = 8 &= \\lambda_1 \\lambda_2\n\\end{align*} From here we quickly see the solutions $\\lambda = 2$ and\n$\\lambda = 4$."
+    ], 
+    "sols_raw": [
+        "We calculate the characteristic polynomial.\n:&lt;math> \\begin{align}\np(\\lambda) &amp;= \\mathrm{det}(A-\\lambda I) \\\\\n&amp;= \\mathrm{det}\\left(\\left[\\begin{array}{cc}3-\\lambda &amp; 1 \\\\ 1 &amp; 3-\\lambda \\end{array}\\right]\\right) \\\\\n&amp;= (3-\\lambda)^2 -1 = \\lambda^2-6\\lambda+8\n\\end{align}\n&lt;/math>\nSetting &lt;math>p(\\lambda) = 0&lt;/math> we obtain\n:&lt;math> \\displaystyle\n\\lambda = \\frac{6 \\pm \\sqrt{6^2-4(1)(8)}}2 = \\frac{6 \\pm 2}2\n&lt;/math>\nTherefore the eigenvalues are &lt;math>\\lambda = 2&lt;/math> and &lt;math>\\lambda = 4&lt;/math>.\n", 
+        "Using Hint 2 we can set up the following two equations:\n:&lt;math> \\begin{align}\n\\mathrm{trace}(A) = 6 &amp;= \\lambda_1 + \\lambda_2 \\\\\n\\mathrm{det}(A) = 8 &amp;= \\lambda_1 \\lambda_2\n\\end{align}\n&lt;/math>\nFrom here we quickly see the solutions &lt;math>\\lambda = 2&lt;/math> and &lt;math>\\lambda = 4&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>List all eigenvalues of <span class=\"math\">\\(\\left[\\begin{array}{cc} 3 &amp; 1 \\\\ 1 &amp; 3 \\end{array}\\right]\\)</span>.</p>\n", 
+    "statement_latex": "List all eigenvalues of\n$\\left[\\begin{array}{cc} 3 & 1 \\\\ 1 & 3 \\end{array}\\right]$.", 
+    "statement_raw": "List all eigenvalues of &lt;math> \\left[\\begin{array}{cc} 3 &amp; 1 \\\\ 1 &amp; 3 \\end{array}\\right]&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_15", 
+    "year": 2010
 }

@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH105", 
-    "statement": "If\n\n\\begin{align*}F(x) = \\int_0^x \\ln(2+\\sin t)\\,dt\\end{align*} and\n\n\\begin{align*}G(y) = \\int_y^0 \\ln(2+\\sin t)\\,dt,\\end{align*}\n\nfind $\\displaystyle F'\\left(\\frac{\\pi}2\\right)$ and\n$\\displaystyle G'\\left(\\frac{\\pi}2\\right)$.", 
-    "year": 2012, 
-    "sols": [
-        "By the Fundamental Theorem of Calculus, if\n\n\\begin{align*}F(x) = \\int_0^x \\ln(2 + \\sin t) dt\\end{align*}\n\nthen\n\n\\begin{align*}\\displaystyle F'(x) = \\ln(2 + \\sin x).\\end{align*}\n\nSimilarly,\n\n\\begin{align*}G(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt\\end{align*}\n\nso the Fundamental Theorem of Calculus tells us that\n\n\\begin{align*}\\displaystyle G'(y) = - \\ln(2 + \\sin y).\\end{align*}\n\nWe now can evaluate\n\n\\begin{align*}\\displaystyle F'(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3\\end{align*}\nand\n\n\\begin{align*}\\displaystyle G'(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle G&#39;(\\pi/2)=- \\ln 3.\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle G'(\\pi/2)=- \\ln 3.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use a <em>fundamental</em> theorem that connects integration and differentiation.</p>\n"
+    ], 
+    "hints_latex": [
         "Use a \\emph{fundamental} theorem that connects integration and\ndifferentiation."
-    ]
+    ], 
+    "hints_raw": [
+        "Use a ''fundamental'' theorem that connects integration and differentiation.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "5 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>By the Fundamental Theorem of Calculus, if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(x) = \\int_0^x \\ln(2 + \\sin t) dt\\end{aligned}\\]</span></p>\n<p>then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle F&#39;(x) = \\ln(2 + \\sin x).\\end{aligned}\\]</span></p>\n<p>Similarly,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nG(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt\\end{aligned}\\]</span></p>\n<p>so the Fundamental Theorem of Calculus tells us that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle G&#39;(y) = - \\ln(2 + \\sin y).\\end{aligned}\\]</span></p>\n<p>We now can evaluate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle F&#39;(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle G&#39;(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By the Fundamental Theorem of Calculus, if\n\n\\begin{align*}\nF(x) = \\int_0^x \\ln(2 + \\sin t) dt\n\\end{align*}\n\nthen\n\n\\begin{align*}\n\\displaystyle F'(x) = \\ln(2 + \\sin x).\n\\end{align*}\n\nSimilarly,\n\n\\begin{align*}\nG(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt\n\\end{align*}\n\nso the Fundamental Theorem of Calculus tells us that\n\n\\begin{align*}\n\\displaystyle G'(y) = - \\ln(2 + \\sin y).\n\\end{align*}\n\nWe now can evaluate\n\n\\begin{align*}\n\\displaystyle F'(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3\n\\end{align*}\nand\n\n\\begin{align*}\n\\displaystyle G'(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By the Fundamental Theorem of Calculus, if\n\n:&lt;math>F(x) = \\int_0^x \\ln(2 + \\sin t) dt&lt;/math>\n\nthen\n\n:&lt;math>\\displaystyle F'(x) = \\ln(2 + \\sin x)&lt;/math>.\n\nSimilarly,\n\n:&lt;math>G(y) = \\int_y^0 \\ln(2 + \\sin t) dt = - \\int_0^y \\ln(2 + \\sin t) dt&lt;/math>\n\nso the Fundamental Theorem of Calculus tells us that\n\n:&lt;math>\\displaystyle G'(y) = - \\ln(2 + \\sin y).&lt;/math>\n\nWe now can evaluate\n\n:&lt;math>\\displaystyle F'(\\pi/2) = \\ln(2 + \\sin(\\pi/2)) = \\ln (2+1) = \\ln 3&lt;/math>\nand\n:&lt;math>\\displaystyle G'(\\pi/2) = - \\ln(2+\\sin(\\pi/2)) = -\\ln (2+1) = - \\ln 3.&lt;/math>\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>If</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(x) = \\int_0^x \\ln(2+\\sin t)\\,dt\\end{aligned}\\]</span></p>\n<p>and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nG(y) = \\int_y^0 \\ln(2+\\sin t)\\,dt,\\end{aligned}\\]</span></p>\n<p>find <span class=\"math\">\\(\\displaystyle F&#39;\\left(\\frac{\\pi}2\\right)\\)</span> and <span class=\"math\">\\(\\displaystyle G&#39;\\left(\\frac{\\pi}2\\right)\\)</span>.</p>\n", 
+    "statement_latex": "If\n\n\\begin{align*}\nF(x) = \\int_0^x \\ln(2+\\sin t)\\,dt\n\\end{align*} and\n\n\\begin{align*}\nG(y) = \\int_y^0 \\ln(2+\\sin t)\\,dt,\n\\end{align*}\n\nfind $\\displaystyle F'\\left(\\frac{\\pi}2\\right)$ and\n$\\displaystyle G'\\left(\\frac{\\pi}2\\right)$.", 
+    "statement_raw": "If\n\n:&lt;math>\nF(x) = \\int_0^x \\ln(2+\\sin t)\\,dt\n&lt;/math>\nand\n:&lt;math>\nG(y) = \\int_y^0 \\ln(2+\\sin t)\\,dt,\n&lt;/math>\n\nfind &lt;math>\\displaystyle F'\\left(\\frac{\\pi}2\\right)&lt;/math> and &lt;math>\\displaystyle G'\\left(\\frac{\\pi}2\\right)&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_05_(a)", 
+    "year": 2012
 }

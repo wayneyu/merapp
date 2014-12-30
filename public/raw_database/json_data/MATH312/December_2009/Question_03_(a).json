@@ -1,14 +1,53 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
-    "course": "MATH312", 
-    "statement": "Find the last three decimal digits of the number\n$\\displaystyle 7^{999}$.", 
-    "year": 2009, 
-    "sols": [
-        "Since considering a number modulo 1000 gives the last 3 digits, it\nsuffices to consider this number modulo 1000. Now\n\n$\\displaystyle \\phi(1000) = \\phi(2^{3}\\cdot5^{3}) = \\phi(8)\\phi(125) = (4)(100) = 400$\n\nEuler's Theorem (valid throughout since\n$\\displaystyle \\gcd(7,1000) = 1$) states that\n\n$\\displaystyle 7^{400} \\equiv 7^{\\phi(1000)} \\equiv 1 \\mod{1000}$\n\nand so we have\n\n\\begin{align*}\n7^{999} &\\equiv 7^{400}\\cdot 7^{400}\\cdot 7^{199} \\mod{1000}\\\\\n&\\equiv 7^{199} \\mod{1000}\\end{align*}\n\nLet's examine $\\displaystyle 7^{200}$. Notice that\n\n$\\displaystyle \\phi(8) = 4 \\quad \\text{and} \\quad \\phi(125) = 100$\n\nand so by Euler's Theorem, we have\n\n$\\displaystyle 7^{200} \\equiv (7^{4})^{50} \\equiv 1 \\mod{8}$.\n\nThus $\\displaystyle 7^{200} = 1 + 8s$ for some integer \\emph{s}.\nFurther,\n\n$\\displaystyle 1 + 8s \\equiv 7^{200} \\equiv (7^{100})^{2} \\equiv 1 \\mod{125}$\n\nand so $\\displaystyle 8s \\equiv 0 \\mod{125}$ giving\n$\\displaystyle s = 125t$ for some integer \\emph{t}. Thus,\n$\\displaystyle 7^{200} = 1 + 8s = 1 + 1000t$. So\n$\\displaystyle 7^{200} \\equiv 1 \\mod{1000}$. Hence\n\n$\\displaystyle 7^{199} \\equiv 7^{-1} \\mod{1000}$.\n\nTo complete the proof, we need to find the inverse of 7 modulo 1000. We\ncan do this via the Euclidean algorithm.\n\n\\begin{align*}\n1000 &= 7(142) + 6\\\\\n7 &= 6(1) + 1\\end{align*}\n\nand back substituting gives\n\n\\begin{align*}\n1 &= 7 -6(1)\\\\\n1 &= 7 - (1000 - 7(142))(1)\\\\\n1 &= 7(143) -1000(1)\\end{align*}\n\nand so the inverse of 7 modulo 1000 is 143. Hence\n\n$\\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}$\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}$completing the question.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH312", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>It suffices to consider the number modulo 1000.</p>\n", 
+        "<p>Euler&#8217;s theorem will help.</p>\n"
+    ], 
+    "hints_latex": [
         "It suffices to consider the number modulo 1000.", 
         "Euler's theorem will help."
-    ]
+    ], 
+    "hints_raw": [
+        "It suffices to consider the number modulo 1000.\n", 
+        "Euler's theorem will help.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Since considering a number modulo 1000 gives the last 3 digits, it suffices to consider this number modulo 1000. Now</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(1000) = \\phi(2^{3}\\cdot5^{3}) = \\phi(8)\\phi(125) = (4)(100) = 400\\)</span></p>\n<p>Euler&#8217;s Theorem (valid throughout since <span class=\"math\">\\(\\displaystyle \\gcd(7,1000) = 1\\)</span>) states that</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{400} \\equiv 7^{\\phi(1000)} \\equiv 1 \\mod{1000}\\)</span></p>\n<p>and so we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n7^{999} &amp;\\equiv 7^{400}\\cdot 7^{400}\\cdot 7^{199} \\mod{1000}\\\\\n&amp;\\equiv 7^{199} \\mod{1000}\\end{aligned}\\]</span></p>\n<p>Let&#8217;s examine <span class=\"math\">\\(\\displaystyle 7^{200}\\)</span>. Notice that</p>\n<p><span class=\"math\">\\(\\displaystyle \\phi(8) = 4 \\quad \\text{and} \\quad \\phi(125) = 100\\)</span></p>\n<p>and so by Euler&#8217;s Theorem, we have</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{200} \\equiv (7^{4})^{50} \\equiv 1 \\mod{8}\\)</span>.</p>\n<p>Thus <span class=\"math\">\\(\\displaystyle 7^{200} = 1 + 8s\\)</span> for some integer <em>s</em>. Further,</p>\n<p><span class=\"math\">\\(\\displaystyle 1 + 8s \\equiv 7^{200} \\equiv (7^{100})^{2} \\equiv 1 \\mod{125}\\)</span></p>\n<p>and so <span class=\"math\">\\(\\displaystyle 8s \\equiv 0 \\mod{125}\\)</span> giving <span class=\"math\">\\(\\displaystyle s = 125t\\)</span> for some integer <em>t</em>. Thus, <span class=\"math\">\\(\\displaystyle 7^{200} = 1 + 8s = 1 + 1000t\\)</span>. So <span class=\"math\">\\(\\displaystyle 7^{200} \\equiv 1 \\mod{1000}\\)</span>. Hence</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{199} \\equiv 7^{-1} \\mod{1000}\\)</span>.</p>\n<p>To complete the proof, we need to find the inverse of 7 modulo 1000. We can do this via the Euclidean algorithm.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1000 &amp;= 7(142) + 6\\\\\n7 &amp;= 6(1) + 1\\end{aligned}\\]</span></p>\n<p>and back substituting gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n1 &amp;= 7 -6(1)\\\\\n1 &amp;= 7 - (1000 - 7(142))(1)\\\\\n1 &amp;= 7(143) -1000(1)\\end{aligned}\\]</span></p>\n<p>and so the inverse of 7 modulo 1000 is 143. Hence</p>\n<p><span class=\"math\">\\(\\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Since considering a number modulo 1000 gives the last 3 digits, it\nsuffices to consider this number modulo 1000. Now\n\n$\\displaystyle \\phi(1000) = \\phi(2^{3}\\cdot5^{3}) = \\phi(8)\\phi(125) = (4)(100) = 400$\n\nEuler's Theorem (valid throughout since\n$\\displaystyle \\gcd(7,1000) = 1$) states that\n\n$\\displaystyle 7^{400} \\equiv 7^{\\phi(1000)} \\equiv 1 \\mod{1000}$\n\nand so we have\n\n\\begin{align*}\n7^{999} &\\equiv 7^{400}\\cdot 7^{400}\\cdot 7^{199} \\mod{1000}\\\\\n&\\equiv 7^{199} \\mod{1000}\n\\end{align*}\n\nLet's examine $\\displaystyle 7^{200}$. Notice that\n\n$\\displaystyle \\phi(8) = 4 \\quad \\text{and} \\quad \\phi(125) = 100$\n\nand so by Euler's Theorem, we have\n\n$\\displaystyle 7^{200} \\equiv (7^{4})^{50} \\equiv 1 \\mod{8}$.\n\nThus $\\displaystyle 7^{200} = 1 + 8s$ for some integer \\emph{s}.\nFurther,\n\n$\\displaystyle 1 + 8s \\equiv 7^{200} \\equiv (7^{100})^{2} \\equiv 1 \\mod{125}$\n\nand so $\\displaystyle 8s \\equiv 0 \\mod{125}$ giving\n$\\displaystyle s = 125t$ for some integer \\emph{t}. Thus,\n$\\displaystyle 7^{200} = 1 + 8s = 1 + 1000t$. So\n$\\displaystyle 7^{200} \\equiv 1 \\mod{1000}$. Hence\n\n$\\displaystyle 7^{199} \\equiv 7^{-1} \\mod{1000}$.\n\nTo complete the proof, we need to find the inverse of 7 modulo 1000. We\ncan do this via the Euclidean algorithm.\n\n\\begin{align*}\n1000 &= 7(142) + 6\\\\\n7 &= 6(1) + 1\n\\end{align*}\n\nand back substituting gives\n\n\\begin{align*}\n1 &= 7 -6(1)\\\\\n1 &= 7 - (1000 - 7(142))(1)\\\\\n1 &= 7(143) -1000(1)\n\\end{align*}\n\nand so the inverse of 7 modulo 1000 is 143. Hence\n\n$\\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Since considering a number modulo 1000 gives the last 3 digits, it suffices to consider this number modulo 1000. Now\n\n&lt;math> \\displaystyle \\phi(1000) = \\phi(2^{3}\\cdot5^{3}) = \\phi(8)\\phi(125) = (4)(100) = 400&lt;/math>\n\nEuler's Theorem (valid throughout since &lt;math> \\displaystyle \\gcd(7,1000) = 1&lt;/math>) states that \n\n&lt;math> \\displaystyle 7^{400} \\equiv 7^{\\phi(1000)} \\equiv 1 \\mod{1000}&lt;/math>\n\nand so we have\n\n&lt;math> \\displaystyle \n\\begin{align}\n7^{999} &amp;\\equiv 7^{400}\\cdot 7^{400}\\cdot 7^{199} \\mod{1000}\\\\\n&amp;\\equiv 7^{199} \\mod{1000}\n\\end{align}\n&lt;/math>\n\nLet's examine &lt;math> \\displaystyle 7^{200}&lt;/math>. Notice that \n\n&lt;math> \\displaystyle \\phi(8) = 4 \\quad \\text{and} \\quad \\phi(125) = 100&lt;/math>\n\nand so by Euler's Theorem, we have\n\n&lt;math> \\displaystyle 7^{200} \\equiv (7^{4})^{50} \\equiv 1 \\mod{8}&lt;/math>.\n\nThus &lt;math> \\displaystyle 7^{200} = 1 + 8s&lt;/math> for some integer ''s''. Further,\n\n&lt;math> \\displaystyle 1 + 8s \\equiv 7^{200} \\equiv (7^{100})^{2} \\equiv 1 \\mod{125}&lt;/math>\n\nand so &lt;math> \\displaystyle 8s \\equiv 0 \\mod{125}&lt;/math> giving  &lt;math> \\displaystyle s = 125t&lt;/math> for some integer ''t''. Thus, &lt;math> \\displaystyle 7^{200} = 1 + 8s = 1 + 1000t&lt;/math>. So &lt;math> \\displaystyle 7^{200} \\equiv 1 \\mod{1000}&lt;/math>. Hence\n\n&lt;math> \\displaystyle 7^{199} \\equiv 7^{-1} \\mod{1000}&lt;/math>.\n\nTo complete the proof, we need to find the inverse of 7 modulo 1000. We can do this via the Euclidean algorithm.\n\n&lt;math> \\displaystyle \n\\begin{align}\n1000 &amp;= 7(142) + 6\\\\\n7 &amp;= 6(1) + 1\n\\end{align}\n&lt;/math>\n\nand back substituting gives \n\n&lt;math> \\displaystyle \n\\begin{align}\n1 &amp;= 7 -6(1)\\\\\n1 &amp;= 7 - (1000 - 7(142))(1)\\\\\n1 &amp;= 7(143) -1000(1)\n\\end{align}\n&lt;/math>\n\nand so the inverse of 7 modulo 1000 is 143. Hence \n\n&lt;math> \\displaystyle 7^{999} \\equiv 7^{199} \\equiv 7^{-1} \\equiv 143 \\mod{1000}&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find the last three decimal digits of the number <span class=\"math\">\\(\\displaystyle 7^{999}\\)</span>.</p>\n", 
+    "statement_latex": "Find the last three decimal digits of the number\n$\\displaystyle 7^{999}$.", 
+    "statement_raw": "Find the last three decimal digits of the number &lt;math> \\displaystyle 7^{999}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Chinese_remainder_theorem", 
+        "Euclidean_algorithm", 
+        "Euler%27s_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2009/Question_03_(a)", 
+    "year": 2009
 }

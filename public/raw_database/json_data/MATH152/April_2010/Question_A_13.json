@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_A_13", 
-    "course": "MATH152", 
-    "statement": "Write the matrix \\emph{A} that would result from the following lines of\nMATLAB code:\n\n\\texttt{A~=~zeros(3,3);}\\\\\\texttt{for~i=1:2}\\\\\\texttt{~A(i,i)~=~-5;}\\\\\\texttt{~A(i,i+1)~=~1;}\\\\\\texttt{end}\\\\\\texttt{A(3,3)~=~-2;}", 
-    "year": 2010, 
-    "sols": [
-        "The first line of code creates the 3 by 3 zeros matrix:\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{array}\\right]\\end{align*}\n\nThen we enter the for-loop. In the first iteration, the entry\n\\emph{A(1,1)} is set to \\emph{-5} and \\emph{A(1,2)} is set to \\emph{1},\nresulting in\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} {\\color{green} -5} & {\\color{green} 1} & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0\\end{array}\\right]\\end{align*}\n\nIn the second iteration the entry \\emph{A(2,2)} is set to \\emph{-5} and\n\\emph{A(2,3)} is set to \\emph{1}, hence\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} -5 & 1 & 0 \\\\ 0 & {\\color{green} -5} & {\\color{green} 1} \\\\ 0 & 0 & 0\\end{array}\\right]\\end{align*}\n\nFinally, the entry \\emph{A(3,3)} is set to \\emph{-2}. So the final\nanswer is\n\n\\begin{align*}A = \\left[\\begin{array}{ccc} -5 & 1 & 0 \\\\ 0 & -5 & 1 \\\\ 0 & 0 & -2 \\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A=\\left[\\begin{array}{ccc} -5  1  0 \\\\ 0  -5  1 \\\\ 0  0  -2 \\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $A=\\left[\\begin{array}{ccc} -5  1  0 \\\\ 0  -5  1 \\\\ 0  0  -2 \\end{array}\\right]$ ", 
+    "contributors": [
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>What is the dimension of <em>A</em>? Initially, all entries are 0. How many entries are changed in total? Which?</p>\n"
+    ], 
+    "hints_latex": [
         "What is the dimension of \\emph{A}? Initially, all entries are 0. How\nmany entries are changed in total? Which?"
-    ]
+    ], 
+    "hints_raw": [
+        "What is the dimension of ''A''? Initially, all entries are 0. How many entries are changed in total? Which?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 13", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>The first line of code creates the 3 by 3 zeros matrix:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>Then we enter the for-loop. In the first iteration, the entry <em>A(1,1)</em> is set to <em>-5</em> and <em>A(1,2)</em> is set to <em>1</em>, resulting in</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} {\\color{green} -5} &amp; {\\color{green} 1} &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>In the second iteration the entry <em>A(2,2)</em> is set to <em>-5</em> and <em>A(2,3)</em> is set to <em>1</em>, hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} -5 &amp; 1 &amp; 0 \\\\ 0 &amp; {\\color{green} -5} &amp; {\\color{green} 1} \\\\ 0 &amp; 0 &amp; 0\\end{array}\\right]\\end{aligned}\\]</span></p>\n<p>Finally, the entry <em>A(3,3)</em> is set to <em>-2</em>. So the final answer is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\left[\\begin{array}{ccc} -5 &amp; 1 &amp; 0 \\\\ 0 &amp; -5 &amp; 1 \\\\ 0 &amp; 0 &amp; -2 \\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The first line of code creates the 3 by 3 zeros matrix:\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{array}\\right]\n\\end{align*}\n\nThen we enter the for-loop. In the first iteration, the entry\n\\emph{A(1,1)} is set to \\emph{-5} and \\emph{A(1,2)} is set to \\emph{1},\nresulting in\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} {\\color{green} -5} & {\\color{green} 1} & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0\\end{array}\\right]\n\\end{align*}\n\nIn the second iteration the entry \\emph{A(2,2)} is set to \\emph{-5} and\n\\emph{A(2,3)} is set to \\emph{1}, hence\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} -5 & 1 & 0 \\\\ 0 & {\\color{green} -5} & {\\color{green} 1} \\\\ 0 & 0 & 0\\end{array}\\right]\n\\end{align*}\n\nFinally, the entry \\emph{A(3,3)} is set to \\emph{-2}. So the final\nanswer is\n\n\\begin{align*}\nA = \\left[\\begin{array}{ccc} -5 & 1 & 0 \\\\ 0 & -5 & 1 \\\\ 0 & 0 & -2 \\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The first line of code creates the 3 by 3 zeros matrix:\n\n:&lt;math> A = \\left[\\begin{array}{ccc} 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\end{array}\\right] &lt;/math>\n\nThen we enter the for-loop. In the first iteration, the entry ''A(1,1)'' is set to ''-5'' and ''A(1,2)'' is set to ''1'', resulting in\n\n:&lt;math> A = \\left[\\begin{array}{ccc} {\\color{green} -5} &amp; {\\color{green} 1} &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\end{array}\\right] &lt;/math>\n\nIn the second iteration the entry ''A(2,2)'' is set to ''-5'' and ''A(2,3)'' is set to ''1'', hence\n\n:&lt;math> A = \\left[\\begin{array}{ccc} -5 &amp; 1 &amp; 0 \\\\ 0 &amp; {\\color{green} -5} &amp; {\\color{green} 1} \\\\ 0 &amp; 0 &amp; 0 \\end{array}\\right] &lt;/math>\n\nFinally, the entry ''A(3,3)'' is set to ''-2''. So the final answer is\n\n:&lt;math> A = \\left[\\begin{array}{ccc} -5 &amp; 1 &amp; 0 \\\\ 0 &amp; -5 &amp; 1 \\\\ 0 &amp; 0 &amp; -2 \\end{array}\\right] &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Write the matrix <em>A</em> that would result from the following lines of MATLAB code:</p>\n<p><code>A&#160;=&#160;zeros(3,3);</code><br /><code>for&#160;i=1:2</code><br /><code>&#160;A(i,i)&#160;=&#160;-5;</code><br /><code>&#160;A(i,i+1)&#160;=&#160;1;</code><br /><code>end</code><br /><code>A(3,3)&#160;=&#160;-2;</code></p>\n", 
+    "statement_latex": "Write the matrix \\emph{A} that would result from the following lines of\nMATLAB code:\n\n\\texttt{A~=~zeros(3,3);}\\\\\\texttt{for~i=1:2}\\\\\\texttt{~A(i,i)~=~-5;}\\\\\\texttt{~A(i,i+1)~=~1;}\\\\\\texttt{end}\\\\\\texttt{A(3,3)~=~-2;}", 
+    "statement_raw": "Write the matrix ''A'' that would result from the following lines of MATLAB code:\n\n A = zeros(3,3);\n for i=1:2\n  A(i,i) = -5;\n  A(i,i+1) = 1;\n end\n A(3,3) = -2;\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_13", 
+    "year": 2010
 }

@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_01_(e)", 
-    "course": "MATH103", 
-    "statement": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nThe value of the integral\n\n\\begin{align*}\\int_0^{\\infty} x^2 e^{-x} \\,dx\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nA. $e-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nB. $2e-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nC. $0.5e$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nD. $1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nE. $2$\n\\end{description}", 
-    "year": 2012, 
-    "sols": [
-        "Using integration by parts, we get\n\n\\begin{align*}\\int x^2 e^{-x} dx = -x^2 e^{-x} + \\int 2x e^{-x} dx\\end{align*}\n\nAnd using integration by parts again on this integral we obtain\n\n\\begin{align*}\\int 2xe^{-x} dx = -2x e^{-x} + 2 \\int e^{-x} dx = -2x e^{-x} -2e^{-x} +C\\end{align*}\n\nwe get\n\n\\begin{align*}\\int x^2 e^{-x} dx = (-x^2 -2x-2)e^{-x} +C\\end{align*}\n\nNow that we have the antiderivative, we can compute the improper\nintegral\n\n\\begin{align*}\\int_0^{\\infty} x^2 e^{-x} dx = \\lim_{b\\to \\infty}\\Bigl(\n(-x^2-2x-2)e^{-x} \\bigr|_{0}^b \\Bigr) = 2\\end{align*}\n\nAnd so the correct answer is E."
+    "answer_html": "<p>And so the correct answer is E.</p>\n", 
+    "answer_latex": "And so the correct answer is E.", 
+    "contributors": [
+        "CarmenBruni", 
+        "DavidKohler", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use integration by parts.</p>\n", 
+        "<p>Then use integration by parts another time.</p>\n"
+    ], 
+    "hints_latex": [
         "Use integration by parts.", 
         "Then use integration by parts another time."
-    ]
+    ], 
+    "hints_raw": [
+        "Use integration by parts.\n", 
+        "Then use integration by parts another time.\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (e)", 
+    "rating": 58, 
+    "sols_html": [
+        "<p>Using integration by parts, we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2 e^{-x} dx = -x^2 e^{-x} + \\int 2x e^{-x} dx\\end{aligned}\\]</span></p>\n<p>And using integration by parts again on this integral we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int 2xe^{-x} dx = -2x e^{-x} + 2 \\int e^{-x} dx = -2x e^{-x} -2e^{-x} +C\\end{aligned}\\]</span></p>\n<p>we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int x^2 e^{-x} dx = (-x^2 -2x-2)e^{-x} +C\\end{aligned}\\]</span></p>\n<p>Now that we have the antiderivative, we can compute the improper integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^{\\infty} x^2 e^{-x} dx = \\lim_{b\\to \\infty}\\Bigl(\n(-x^2-2x-2)e^{-x} \\bigr|_{0}^b \\Bigr) = 2\\end{aligned}\\]</span></p>\n<p>And so the correct answer is E.</p>\n"
+    ], 
+    "sols_latex": [
+        "Using integration by parts, we get\n\n\\begin{align*}\n\\int x^2 e^{-x} dx = -x^2 e^{-x} + \\int 2x e^{-x} dx\n\\end{align*}\n\nAnd using integration by parts again on this integral we obtain\n\n\\begin{align*}\n\\int 2xe^{-x} dx = -2x e^{-x} + 2 \\int e^{-x} dx = -2x e^{-x} -2e^{-x} +C\n\\end{align*}\n\nwe get\n\n\\begin{align*}\n\\int x^2 e^{-x} dx = (-x^2 -2x-2)e^{-x} +C\n\\end{align*}\n\nNow that we have the antiderivative, we can compute the improper\nintegral\n\n\\begin{align*}\n\\int_0^{\\infty} x^2 e^{-x} dx = \\lim_{b\\to \\infty}\\Bigl(\n(-x^2-2x-2)e^{-x} \\bigr|_{0}^b \\Bigr) = 2\n\\end{align*}\n\nAnd so the correct answer is E."
+    ], 
+    "sols_raw": [
+        "Using integration by parts, we get\n:&lt;math>\n\\int x^2 e^{-x} dx = -x^2 e^{-x} + \\int 2x e^{-x} dx\n&lt;/math>\n\nAnd using integration by parts again on this integral we obtain\n:&lt;math>\n\\int 2xe^{-x} dx = -2x e^{-x} + 2 \\int e^{-x} dx = -2x e^{-x} -2e^{-x} +C\n&lt;/math>\n\nwe get\n:&lt;math>\n\\int x^2 e^{-x} dx = (-x^2 -2x-2)e^{-x} +C\n&lt;/math>\n\nNow that we have the antiderivative, we can compute the improper integral\n:&lt;math>\n\\int_0^{\\infty} x^2 e^{-x} dx = \\lim_{b\\to \\infty}\\Bigl(\n(-x^2-2x-2)e^{-x} \\bigr|_{0}^b \\Bigr) = 2\n&lt;/math>\n\nAnd so the correct answer is E.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).</p>\n<p>The value of the integral</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^{\\infty} x^2 e^{-x} \\,dx\\end{aligned}\\]</span></p>\n<p>is</p>\n<dl>\n\n<dd><p>A. <span class=\"math\">\\(e-1\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p>B. <span class=\"math\">\\(2e-1\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p>C. <span class=\"math\">\\(0.5e\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p>D. <span class=\"math\">\\(1\\)</span></p>\n</dd>\n</dl>\n<dl>\n\n<dd><p>E. <span class=\"math\">\\(2\\)</span></p>\n</dd>\n</dl>\n", 
+    "statement_latex": "Answer the following multiple choice question. Check your answer very\ncarefully. Your answer will be marked right or wrong (work will not be\nconsidered for this problem).\n\nThe value of the integral\n\n\\begin{align*}\n\\int_0^{\\infty} x^2 e^{-x} \\,dx\n\\end{align*} is\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nA. $e-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nB. $2e-1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nC. $0.5e$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nD. $1$\n\\end{description}\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\nE. $2$\n\\end{description}", 
+    "statement_raw": "Answer the following multiple choice question. Check your answer very carefully. Your answer will be marked right or wrong (work will not be considered for this problem).\n\nThe value of the integral\n:&lt;math>\n\\int_0^{\\infty} x^2 e^{-x} \\,dx\n&lt;/math>\nis\n\n:A. &lt;math> e-1 &lt;/math>\n\n:B. &lt;math> 2e-1 &lt;/math>\n\n:C. &lt;math> 0.5e &lt;/math>\n\n:D. &lt;math> 1 &lt;/math>\n\n:E. &lt;math> 2 &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2012/Question_01_(e)", 
+    "year": 2012
 }

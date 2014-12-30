@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_01_(b)", 
-    "course": "MATH103", 
-    "statement": "\\emph{Multiple Choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nYou are out fishing. Every time you cast your line, the probability that\nyou catch a fish is 1/4. What is the probability that you catch at least\none fish within the first 2 attempts?\n\n(a) 1/16\n\n(b) 7/16\n\n(c) 1/2\n\n(d) 9/16\n\n(e) 15/16", 
-    "year": 2009, 
-    "sols": [
-        "This is a Bernoulli process with probability of success \\emph{p = 1/4},\nand \\emph{n = 2} repetitions.\n\nLet \\emph{X} be the random variable that counts the number of successful\ncasts. Then\n\n\\begin{align*}\n\\text{Prob(at least 1 success)} &= \\text{Prob}(X \\geq 1) \\\\\n&= \\text{Prob}(X = 1 \\text{ or } X = 2) \\\\\n&= \\text{Prob}(X = 1) + \\text{Prob}(X = 2) \\\\\n&= C(2,1)\\left(\\frac14\\right)^1 \\left(1-\\frac14\\right)^{2-1} \\\\\n&\\text{ }+ C(2,2)\\left(\\frac14\\right)^2 \\left(1-\\frac14\\right)^{2-2} \\\\\n&= \\frac7{16}.\\end{align*}\n\nHence, answer \\textbf{(b)} is correct.", 
-        "We can also use a tree diagram to solve this. Recall that we multiply\nalong branches, and then sum the results.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH103_April_2009_Question_1_(b)_Fishing.jpg}\n\\caption{Math\\_Exam\\_Resources\\_Courses\\_MATH103\\_April\\_2009\\_Question\\_1\\_(b)\\_Fishing.jpg}\n\\end{figure}"
+    "answer_html": "<p>Hence, answer <strong>(b)</strong> is correct.</p>\n", 
+    "answer_latex": "Hence, answer \\textbf{(b)} is correct.", 
+    "contributors": [
+        "IainMoyles", 
+        "IsabellGraf"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>This is a Bernoulli process. What is your random variable? What is <em>n</em>, what is <em>p</em>?</p>\n"
+    ], 
+    "hints_latex": [
         "This is a Bernoulli process. What is your random variable? What is\n\\emph{n}, what is \\emph{p}?"
-    ]
+    ], 
+    "hints_raw": [
+        "This is a Bernoulli process. What is your random variable? What is ''n'', what is ''p''?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (b)", 
+    "rating": 58, 
+    "sols_html": [
+        "<p>This is a Bernoulli process with probability of success <em>p = 1/4</em>, and <em>n = 2</em> repetitions.</p>\n<p>Let <em>X</em> be the random variable that counts the number of successful casts. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\text{Prob(at least 1 success)} &amp;= \\text{Prob}(X \\geq 1) \\\\\n&amp;= \\text{Prob}(X = 1 \\text{ or } X = 2) \\\\\n&amp;= \\text{Prob}(X = 1) + \\text{Prob}(X = 2) \\\\\n&amp;= C(2,1)\\left(\\frac14\\right)^1 \\left(1-\\frac14\\right)^{2-1} \\\\\n&amp;\\text{ }+ C(2,2)\\left(\\frac14\\right)^2 \\left(1-\\frac14\\right)^{2-2} \\\\\n&amp;= \\frac7{16}.\\end{aligned}\\]</span></p>\n<p>Hence, answer <strong>(b)</strong> is correct.</p>\n", 
+        "<p>We can also use a tree diagram to solve this. Recall that we multiply along branches, and then sum the results.</p>\n<p><img src=\"../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_1_(b)_Fishing.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "This is a Bernoulli process with probability of success \\emph{p = 1/4},\nand \\emph{n = 2} repetitions.\n\nLet \\emph{X} be the random variable that counts the number of successful\ncasts. Then\n\n\\begin{align*}\n\\text{Prob(at least 1 success)} &= \\text{Prob}(X \\geq 1) \\\\\n&= \\text{Prob}(X = 1 \\text{ or } X = 2) \\\\\n&= \\text{Prob}(X = 1) + \\text{Prob}(X = 2) \\\\\n&= C(2,1)\\left(\\frac14\\right)^1 \\left(1-\\frac14\\right)^{2-1} \\\\\n&\\text{ }+ C(2,2)\\left(\\frac14\\right)^2 \\left(1-\\frac14\\right)^{2-2} \\\\\n&= \\frac7{16}.\n\\end{align*}\n\nHence, answer \\textbf{(b)} is correct.", 
+        "We can also use a tree diagram to solve this. Recall that we multiply\nalong branches, and then sum the results.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2009/Math_Exam_Resources_Courses_MATH103_April_2009_Question_1_(b)_Fishing.jpg}"
+    ], 
+    "sols_raw": [
+        "This is a Bernoulli process with probability of success ''p = 1/4'', and ''n = 2'' repetitions.\n\nLet ''X'' be the random variable that counts the number of successful casts. Then\n\n:&lt;math> \\begin{align}\n\\text{Prob(at least 1 success)} &amp;= \\text{Prob}(X \\geq 1) \\\\\n&amp;= \\text{Prob}(X = 1 \\text{ or } X = 2) \\\\\n&amp;= \\text{Prob}(X = 1) + \\text{Prob}(X = 2) \\\\\n&amp;= C(2,1)\\left(\\frac14\\right)^1 \\left(1-\\frac14\\right)^{2-1} \\\\\n&amp;\\text{ }+ C(2,2)\\left(\\frac14\\right)^2 \\left(1-\\frac14\\right)^{2-2} \\\\\n&amp;= \\frac7{16}.\n\\end{align}\n&lt;/math>\n\nHence, answer '''(b)''' is correct.\n", 
+        "We can also use a tree diagram to solve this. Recall that we multiply along branches, and then sum the results.\n\n[[File:Math_Exam_Resources_Courses_MATH103_April_2009_Question_1_(b)_Fishing.jpg|700px]]\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p><em>Multiple Choice question: Select ONE correct answer. You will not be graded for any work.</em></p>\n<p>You are out fishing. Every time you cast your line, the probability that you catch a fish is 1/4. What is the probability that you catch at least one fish within the first 2 attempts?</p>\n<p>(a) 1/16</p>\n<p>(b) 7/16</p>\n<p>(c) 1/2</p>\n<p>(d) 9/16</p>\n<p>(e) 15/16</p>\n", 
+    "statement_latex": "\\emph{Multiple Choice question: Select ONE correct answer. You will not\nbe graded for any work.}\n\nYou are out fishing. Every time you cast your line, the probability that\nyou catch a fish is 1/4. What is the probability that you catch at least\none fish within the first 2 attempts?\n\n(a) 1/16\n\n(b) 7/16\n\n(c) 1/2\n\n(d) 9/16\n\n(e) 15/16", 
+    "statement_raw": "''Multiple Choice question: Select ONE correct answer. You will not be graded for any work.''\n\nYou are out fishing. Every time you cast your line, the probability that you catch a fish is 1/4. What is the probability that you catch at least one fish within the first 2 attempts?\n\n(a) 1/16\n\n(b) 7/16\n\n(c) 1/2\n\n(d) 9/16\n\n(e) 15/16\n", 
+    "term": "April", 
+    "topics": [
+        "Bernoulli_process"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2009/Question_01_(b)", 
+    "year": 2009
 }

@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_01_(g)", 
-    "course": "MATH105", 
-    "statement": "Find $\\int 5x \\sin(x+1)\\,dx$", 
-    "year": 2009, 
-    "sols": [
-        "We proceed by integration by parts. Let $\\displaystyle u = 5x$ and\n$\\displaystyle dv = \\sin(x+1)\\,dx$ so that $\\displaystyle du = 5$ and\n$\\displaystyle v = -\\cos(x+1)$. Then\n\n\\begin{align*}\n\\int 5x \\sin(x+1)\\,dx &= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&= -5x\\cos(x+1) +5\\sin(x+1) + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int 5x \\sin(x+1)\\,dx=-5x\\cos(x+1) +5\\sin(x+1) + C\\)</span></p>\n", 
+    "answer_latex": " $\\int 5x \\sin(x+1)\\,dx=-5x\\cos(x+1) +5\\sin(x+1) + C$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ErinMoulding"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What integration technique works well for products?</p>\n", 
+        "<p>Try integration by parts.</p>\n", 
+        "<p>Use <span class=\"math\">\\(\\displaystyle u = 5x\\)</span> and <span class=\"math\">\\(\\displaystyle dv = \\sin(x+1)\\,dx\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "What integration technique works well for products?", 
         "Try integration by parts.", 
         "Use $\\displaystyle u = 5x$ and $\\displaystyle dv = \\sin(x+1)\\,dx$."
-    ]
+    ], 
+    "hints_raw": [
+        "What integration technique works well for products?\n", 
+        "Try integration by parts.\n", 
+        "Use &lt;math> \\displaystyle u = 5x &lt;/math> and &lt;math> \\displaystyle dv = \\sin(x+1)\\,dx &lt;/math>.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (g)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>We proceed by integration by parts. Let <span class=\"math\">\\(\\displaystyle u = 5x\\)</span> and <span class=\"math\">\\(\\displaystyle dv = \\sin(x+1)\\,dx\\)</span> so that <span class=\"math\">\\(\\displaystyle du = 5\\)</span> and <span class=\"math\">\\(\\displaystyle v = -\\cos(x+1)\\)</span>. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int 5x \\sin(x+1)\\,dx &amp;= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&amp;= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&amp;= -5x\\cos(x+1) +5\\sin(x+1) + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed by integration by parts. Let $\\displaystyle u = 5x$ and\n$\\displaystyle dv = \\sin(x+1)\\,dx$ so that $\\displaystyle du = 5$ and\n$\\displaystyle v = -\\cos(x+1)$. Then\n\n\\begin{align*}\n\\int 5x \\sin(x+1)\\,dx &= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&= -5x\\cos(x+1) +5\\sin(x+1) + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We proceed by integration by parts. Let &lt;math> \\displaystyle u = 5x &lt;/math> and &lt;math> \\displaystyle dv = \\sin(x+1)\\,dx &lt;/math> so that &lt;math> \\displaystyle du = 5 &lt;/math> and &lt;math> \\displaystyle v = -\\cos(x+1) &lt;/math>. Then \n\n&lt;math> \n\\begin{align}\n\\int 5x \\sin(x+1)\\,dx &amp;= 5x(-\\cos(x+1)) - \\int 5(-\\cos(x+1))\\,dx\\\\\n&amp;= -5x\\cos(x+1) +5 \\int \\cos(x+1)\\,dx\\\\\n&amp;= -5x\\cos(x+1) +5\\sin(x+1) + C\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find <span class=\"math\">\\(\\int 5x \\sin(x+1)\\,dx\\)</span></p>\n", 
+    "statement_latex": "Find $\\int 5x \\sin(x+1)\\,dx$", 
+    "statement_raw": "Find &lt;math> \\int 5x \\sin(x+1)\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2009/Question_01_(g)", 
+    "year": 2009
 }

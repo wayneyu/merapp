@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_04_(d)", 
-    "course": "MATH152", 
-    "statement": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nFind \\emph{any} nonzero vector \\textbf{x} such that\nT(\\textbf{x})=\\textbf{0}.", 
-    "year": 2011, 
-    "sols": [
-        "In\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(b)}{part(b)},\nwe have that\n\n\\begin{align*}A=\n\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}\\end{align*}\n\nand in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(c)}{part(c)}\nwe concluded that det(A)=0. Therefore A has a null space and there are\nmany solutions such that A\\textbf{x}=\\textbf{0}. We could perform some\nsort of Gaussian elimination and determine the entire null-space but the\nquestion asks for \\textbf{any} vector and so we are permitted to just\nguess. In fact we saw in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(c)}{part(c)}\nthat any vector parallel to \\textbf{a} had a zero cross product.\nTherefore $T(\\mathbf{a})=\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}$.\n\n''Note that, since \\emph{T(\\textbf{a}) = A\\textbf{a}} we can also verify\nthis using the matrix representation:\n\n\\begin{align*}\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\\\\\n0\n\\end{bmatrix}.\\end{align*}\n\nTherefore a vector such that T(\\textbf{x})=\\textbf{0} is\n\\textbf{x}=\\textbf{a} (or any vector of the form \\emph{k\\textbf{a}}, due\nto the linearity of \\emph{T})."
+    "answer_html": "<p>Therefore a vector such that T(<strong>x</strong>)=<strong>0</strong> is <strong>x</strong>=<strong>a</strong> (or any vector of the form <em>k<strong>a</strong></em>, due to the linearity of <em>T</em>).</p>\n", 
+    "answer_latex": "Therefore a vector such that T(\\textbf{x})=\\textbf{0} is\n\\textbf{x}=\\textbf{a} (or any vector of the form \\emph{k\\textbf{a}}, due\nto the linearity of \\emph{T}).", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Do we know anything about cross-products that produce the zero vector?</p>\n"
+    ], 
+    "hints_latex": [
         "Do we know anything about cross-products that produce the zero vector?"
-    ]
+    ], 
+    "hints_raw": [
+        "Do we know anything about cross-products that produce the zero vector?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 04 (d)", 
+    "rating": 74, 
+    "sols_html": [
+        "<p>In <span>part(b)</span>, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA=\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>and in <span>part(c)</span> we concluded that det(A)=0. Therefore A has a null space and there are many solutions such that A<strong>x</strong>=<strong>0</strong>. We could perform some sort of Gaussian elimination and determine the entire null-space but the question asks for <strong>any</strong> vector and so we are permitted to just guess. In fact we saw in <span>part(c)</span> that any vector parallel to <strong>a</strong> had a zero cross product. Therefore <span class=\"math\">\\(T(\\mathbf{a})=\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}\\)</span>.</p>\n<p>&#8221;Note that, since <em>T(<strong>a</strong>) = A<strong>a</strong></em> we can also verify this using the matrix representation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\\\\\n0\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Therefore a vector such that T(<strong>x</strong>)=<strong>0</strong> is <strong>x</strong>=<strong>a</strong> (or any vector of the form <em>k<strong>a</strong></em>, due to the linearity of <em>T</em>).</p>\n"
+    ], 
+    "sols_latex": [
+        "In\n{part(b)},\nwe have that\n\n\\begin{align*}\nA=\n\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}\n\\end{align*}\n\nand in\n{part(c)}\nwe concluded that det(A)=0. Therefore A has a null space and there are\nmany solutions such that A\\textbf{x}=\\textbf{0}. We could perform some\nsort of Gaussian elimination and determine the entire null-space but the\nquestion asks for \\textbf{any} vector and so we are permitted to just\nguess. In fact we saw in\n{part(c)}\nthat any vector parallel to \\textbf{a} had a zero cross product.\nTherefore $T(\\mathbf{a})=\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}$.\n\n''Note that, since \\emph{T(\\textbf{a}) = A\\textbf{a}} we can also verify\nthis using the matrix representation:\n\n\\begin{align*}\n\\begin{bmatrix}\n0  &  -1  &  -2\\\\\n1  &  0   &  1\\\\\n2  &  -1  &  0\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\\\\\n0\n\\end{bmatrix}.\n\\end{align*}\n\nTherefore a vector such that T(\\textbf{x})=\\textbf{0} is\n\\textbf{x}=\\textbf{a} (or any vector of the form \\emph{k\\textbf{a}}, due\nto the linearity of \\emph{T})."
+    ], 
+    "sols_raw": [
+        "In [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(b)|part(b)]], we have that\n\n:&lt;math>\nA=\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}\n&lt;/math>\n\nand in [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(c)|part(c)]] we concluded that det(A)=0.  Therefore A has a null space and there are many solutions such that A'''x'''='''0'''.  We could perform some sort of Gaussian elimination and determine the entire null-space but the question asks for '''any''' vector and so we are permitted to just guess.  In fact we saw in [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B4_(c)|part(c)]] that any vector parallel to '''a''' had a zero cross product.  Therefore &lt;math>T(\\mathbf{a})=\\mathbf{a}\\times\\mathbf{a}=\\mathbf{0}&lt;/math>. \n\n''Note that, since ''T('''a''') = A'''a''''' we can also verify this using the matrix representation:\n\n:&lt;math>\n\\begin{bmatrix}\n0  &amp;  -1  &amp;  -2\\\\\n1  &amp;  0   &amp;  1\\\\\n2  &amp;  -1  &amp;  0\n\\end{bmatrix}\n\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n0\\\\\n0\\\\\n0\n\\end{bmatrix}.\n&lt;/math>\n\nTherefore a vector such that T('''x''')='''0''' is '''x'''='''a''' (or any vector of the form ''k'''a''''', due to the linearity of ''T'').\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let a=<span>[</span>1,2,-1<span>]</span>. Consider the transformation <span class=\"math\">\\(T:\\mathbb{R}^3\\to\\mathbb{R}^3\\)</span> defined by <span class=\"math\">\\(T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}\\)</span> for all <strong>x</strong> in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>, where <span class=\"math\">\\(\\times\\)</span> is the cross-product in <span class=\"math\">\\(\\mathbb{R}^3\\)</span>.</p>\n<p>Find <em>any</em> nonzero vector <strong>x</strong> such that T(<strong>x</strong>)=<strong>0</strong>.</p>\n", 
+    "statement_latex": "Let a={[}1,2,-1{]}. Consider the transformation\n$T:\\mathbb{R}^3\\to\\mathbb{R}^3$ defined by\n$T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}$ for all \\textbf{x} in\n$\\mathbb{R}^3$, where $\\times$ is the cross-product in $\\mathbb{R}^3$.\n\nFind \\emph{any} nonzero vector \\textbf{x} such that\nT(\\textbf{x})=\\textbf{0}.", 
+    "statement_raw": "Let a=[1,2,-1].  Consider the transformation &lt;math>T:\\mathbb{R}^3\\to\\mathbb{R}^3&lt;/math> defined by &lt;math>T(\\mathbf{x})=\\mathbf{x}\\times\\mathbf{a}&lt;/math> for all '''x''' in &lt;math>\\mathbb{R}^3&lt;/math>, where &lt;math>\\times&lt;/math> is the cross-product in &lt;math>\\mathbb{R}^3&lt;/math>.\n\nFind ''any'' nonzero vector '''x''' such that T('''x''')='''0'''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_04_(d)", 
+    "year": 2011
 }

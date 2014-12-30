@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH110", 
-    "statement": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}f(x) = \\frac{\\sqrt{x}}{\\cos(x)}\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "The function $f(x)$ consists of one function dividing another. This\nmeans we should use the quotient rule to find the derivative.\n\nChanging $\\sqrt{x}$ to $x^{\\frac12}$, and applying the quotient rule we\nget:\n\n\\begin{align*}\nf'(x) &= \\frac{(x^{\\frac12} )'\\cos x - x^{\\frac12}(\\cos x)'}{\\cos^2 x} \\\\\n &= \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n &= \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\\end{align*}\n\nThis answer is sufficient, however, we can simplify this term by\nmultiplying the numerator and the denominator by $2\\sqrt{x}$ to get\n\n\\begin{align*}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\\)</span></p>\n", 
+    "answer_latex": " $\\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Which derivative rule do you need to use here?</p>\n", 
+        "<p>Since we see a quotient, I suggest the quotient rule.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left(\\frac{f}{g}\\right)&#39; = \\frac{f&#39;g-g&#39;f}{g^2}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "Which derivative rule do you need to use here?", 
-        "Since we see a quotient, I suggest the quotient rule.\n\n\\begin{align*}\\left(\\frac{f}{g}\\right)' = \\frac{f'g-g'f}{g^2}\\end{align*}"
-    ]
+        "Since we see a quotient, I suggest the quotient rule.\n\n\\begin{align*}\n\\left(\\frac{f}{g}\\right)' = \\frac{f'g-g'f}{g^2}\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "Which derivative rule do you need to use here?\n", 
+        "Since we see a quotient, I suggest the quotient rule.\n\n:&lt;math>\n\\left(\\frac{f}{g}\\right)' = \\frac{f'g-g'f}{g^2}\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The function <span class=\"math\">\\(f(x)\\)</span> consists of one function dividing another. This means we should use the quotient rule to find the derivative.</p>\n<p>Changing <span class=\"math\">\\(\\sqrt{x}\\)</span> to <span class=\"math\">\\(x^{\\frac12}\\)</span>, and applying the quotient rule we get:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{(x^{\\frac12} )&#39;\\cos x - x^{\\frac12}(\\cos x)&#39;}{\\cos^2 x} \\\\\n &amp;= \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n &amp;= \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\\end{aligned}\\]</span></p>\n<p>This answer is sufficient, however, we can simplify this term by multiplying the numerator and the denominator by <span class=\"math\">\\(2\\sqrt{x}\\)</span> to get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The function $f(x)$ consists of one function dividing another. This\nmeans we should use the quotient rule to find the derivative.\n\nChanging $\\sqrt{x}$ to $x^{\\frac12}$, and applying the quotient rule we\nget:\n\n\\begin{align*}\nf'(x) &= \\frac{(x^{\\frac12} )'\\cos x - x^{\\frac12}(\\cos x)'}{\\cos^2 x} \\\\\n &= \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n &= \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\n\\end{align*}\n\nThis answer is sufficient, however, we can simplify this term by\nmultiplying the numerator and the denominator by $2\\sqrt{x}$ to get\n\n\\begin{align*}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The function &lt;math>f(x)&lt;/math> consists of one function dividing another.  This means we should use the quotient rule to find the derivative.  \n\nChanging &lt;math>\\sqrt{x}&lt;/math> to &lt;math>x^{\\frac12}&lt;/math>, and applying the quotient rule we get:\n\n&lt;math> \\begin{align}\nf'(x) &amp; = \\frac{(x^{\\frac12} )'\\cos x - x^{\\frac12}(\\cos x)'}{\\cos^2 x} \\\\\n &amp; = \\frac{\\frac12x^{-\\frac12}\\cos x - x^{\\frac12}(-\\sin x)}{\\cos^2 x} \\\\\n &amp; = \\frac{\\frac{\\cos x}{2\\sqrt{x}} + \\sqrt{x}\\sin x}{\\cos^2 x}\n\n\\end{align} &lt;/math>\n\nThis answer is sufficient, however, we can simplify this term by multiplying the numerator and the denominator by &lt;math>2\\sqrt{x}&lt;/math> to get\n\n&lt;math> \\begin{align}\n= \\frac{\\cos x+ 2x \\sin x}{2\\sqrt{x} \\cos^2 x}\n\\end{align} &lt;/math>\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p><em>Find the derivative of the following function.</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\frac{\\sqrt{x}}{\\cos(x)}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{Find the derivative of the following function.}\n\n\\begin{align*}\nf(x) = \\frac{\\sqrt{x}}{\\cos(x)}\n\\end{align*}", 
+    "statement_raw": "''Find the derivative of the following function.''\n\n:&lt;math>\nf(x) = \\frac{\\sqrt{x}}{\\cos(x)}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_02_(b)", 
+    "year": 2010
 }

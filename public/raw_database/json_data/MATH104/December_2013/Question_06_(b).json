@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_06_(b)", 
-    "course": "MATH104", 
-    "statement": "Use the formuala $|\\text{Error}| \\leq \\frac{M}{2}(x-a)^2,$ where\n$M > 0$, to estimate an error bound for your approximation of\n$\\sqrt[3]{7}$ from\n\\href{Science:Math Exam Resources/Courses/MATH104/December 2013/Question 06 (a)}{part\n(a)}. It will be useful to remember how to find such an $M.$", 
-    "year": 2013, 
-    "sols": [
-        "Our function we are considering is $\\displaystyle f(x) = x^{1/3}$.\nTaking derivatives gives\n\n$\\displaystyle f'(x) = x^{-2/3}/3$\n\n$\\displaystyle f''(x) = -2x^{-5/3}/9$\n\nOn the interval of length 1 around the point 8, we see that the maximum\nvalue on the second derivative of the absolute value of the double\nderivative is given by\n\n$\\displaystyle |f''(x)| = |-2x^{-5/3}/9| \\leq 2x^{-5/3}/9 \\leq 2\\cdot7^{-5/3}/9$\n\ntrue since the function $\\displaystyle x^{-5/3}$ is a decreasing\nfunction. Thus, the absolute value of hte error is bounded by\n\n$\\displaystyle 2\\cdot7^{-5/3}/18 \\cdot (9-8)^{2} = 2\\cdot7^{-5/3}/18$"
+    "answer_html": "<p><span class=\"math\">\\(|\\mathrm{Error}| \\leq \\frac{1}{2}M(x-a)^2={\\color{blue} \\frac{7^{-5/3}}{9}.}\\)</span></p>\n", 
+    "answer_latex": " $|\\mathrm{Error}| \\leq \\frac{1}{2}M(x-a)^2={\\color{blue} \\frac{7^{-5/3}}{9}.}$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "To find a value for M, it would suffice to find an upper bound on the\nsecond derivative and use this as the value for \\emph{M}."
-    ]
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>To find a value for <span class=\"math\">\\(M\\)</span>, it would suffice to find an upper bound on the absolute value of the second derivative and use this as the value for <span class=\"math\">\\(M\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "To find a value for $M$, it would suffice to find an upper bound on the\nabsolute value of the second derivative and use this as the value for\n$M$."
+    ], 
+    "hints_raw": [
+        "To find a value for &lt;math>M&lt;/math>, it would suffice to find an upper bound on the absolute value of the second derivative and use this as the value for &lt;math>M&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Our function we are considering is <span class=\"math\">\\(\\displaystyle f(x) = x^{1/3}\\)</span>. Taking derivatives gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{x^{-2/3}}{3} \\\\\nf&#39;&#39;(x) &amp;= \\frac{-2x^{-5/3}}{9}\\end{aligned}\\]</span></p>\n<p>Since the linear approximation is centred about <span class=\"math\">\\(a = 8\\)</span> we are looking for the maximum value of <span class=\"math\">\\(|f&#39;&#39;(x)| = \\frac{2}{9}x^{-5/3}\\)</span> on the interval <span class=\"math\">\\(\\displaystyle {}[7, 8]\\)</span>. Since <span class=\"math\">\\(x^{-5/3}\\)</span> is decreasing, the maximum value is attained at <span class=\"math\">\\(x=7\\)</span>, that is, <span class=\"math\">\\(M = |f&#39;&#39;(7)|.\\)</span> Overall we find that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n|\\mathrm{Error}| \\leq \\frac{1}{2}M(x-a)^2 = \\frac{1}{2}\\cdot \\frac{2}{9} 7^{-5/3}(7-8)^2 = {\\color{blue} \\frac{7^{-5/3}}{9}.}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Our function we are considering is $\\displaystyle f(x) = x^{1/3}$.\nTaking derivatives gives\n\n\\begin{align*}\nf'(x) &= \\frac{x^{-2/3}}{3} \\\\\nf''(x) &= \\frac{-2x^{-5/3}}{9}\n\\end{align*}\n\nSince the linear approximation is centred about $a = 8$ we are looking\nfor the maximum value of $|f''(x)| = \\frac{2}{9}x^{-5/3}$ on the\ninterval $\\displaystyle {}[7, 8]$. Since $x^{-5/3}$ is decreasing, the\nmaximum value is attained at $x=7$, that is, $M = |f''(7)|.$ Overall we\nfind that\n\n\\begin{align*}\n|\\mathrm{Error}| \\leq \\frac{1}{2}M(x-a)^2 = \\frac{1}{2}\\cdot \\frac{2}{9} 7^{-5/3}(7-8)^2 = {\\color{blue} \\frac{7^{-5/3}}{9}.}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Our function we are considering is &lt;math> \\displaystyle f(x) = x^{1/3}&lt;/math>. Taking derivatives gives\n\n:&lt;math>\\begin{align}\nf'(x) &amp;= \\frac{x^{-2/3}}{3} \\\\\nf''(x) &amp;= \\frac{-2x^{-5/3}}{9}\n\\end{align}&lt;/math>\n\nSince the linear approximation is centred about &lt;math>a = 8&lt;/math> we are looking for the maximum value of &lt;math>|f''(x)| = \\frac{2}{9}x^{-5/3}&lt;/math> on the interval &lt;math>\\displaystyle{}[7, 8]&lt;/math>. Since &lt;math>x^{-5/3}&lt;/math> is decreasing, the maximum value is attained at &lt;math>x=7&lt;/math>, that is, &lt;math>M = |f''(7)|.&lt;/math> Overall we find that\n:&lt;math>\n|\\mathrm{Error}| \\leq \\frac{1}{2}M(x-a)^2 = \\frac{1}{2}\\cdot \\frac{2}{9} 7^{-5/3}(7-8)^2 = {\\color{blue} \\frac{7^{-5/3}}{9} .}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Use the formuala <span class=\"math\">\\(|\\text{Error}| \\leq \\frac{M}{2}(x-a)^2,\\)</span> where <span class=\"math\">\\(M &gt; 0\\)</span>, to estimate an error bound for your approximation of <span class=\"math\">\\(\\sqrt[3]{7}\\)</span> from <span>part (a)</span>. It will be useful to remember how to find such an <span class=\"math\">\\(M.\\)</span></p>\n", 
+    "statement_latex": "Use the formuala $|\\text{Error}| \\leq \\frac{M}{2}(x-a)^2,$ where\n$M > 0$, to estimate an error bound for your approximation of\n$\\sqrt[3]{7}$ from\n{part\n(a)}. It will be useful to remember how to find such an $M.$", 
+    "statement_raw": "Use the formuala &lt;math>|\\text{Error}| \\leq \\frac{M}{2}(x-a)^2,&lt;/math> where &lt;math>M > 0&lt;/math>, to estimate an error bound for your approximation of &lt;math>\\sqrt[3]{7}&lt;/math> from [[Science:Math Exam Resources/Courses/MATH104/December 2013/Question 06 (a)|part (a)]]. It will be useful to remember how to find such an &lt;math>M.&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2013/Question_06_(b)", 
+    "year": 2013
 }

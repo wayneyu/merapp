@@ -1,9 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_03_(b)", 
+    "answer_html": "<p>No content found.</p>\n", 
+    "answer_latex": "No content found.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
+    ], 
     "course": "MATH103", 
-    "statement": "Evaluate the following integral.\n\n$\\displaystyle \\int \\frac{1}{(x-5)(x+1)}\\,dx$", 
-    "year": 2006, 
-    "sols": [], 
-    "hints": []
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "CS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "3 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "sols_latex": [
+        "No content found."
+    ], 
+    "sols_raw": [
+        "No content found."
+    ], 
+    "statement_html": "<p>Evaluate the following integral.</p>\n<p><span class=\"math\">\\(\\displaystyle \\int \\frac{1}{(x-5)(x+1)}\\,dx\\)</span></p>\n", 
+    "statement_latex": "Evaluate the following integral.\n\n$\\displaystyle \\int \\frac{1}{(x-5)(x+1)}\\,dx$", 
+    "statement_raw": "Evaluate the following integral.\n\n&lt;math>\\displaystyle \\int \\frac{1}{(x-5)(x+1)}\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_fractions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_03_(b)", 
+    "year": 2006
 }

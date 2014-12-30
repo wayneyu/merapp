@@ -1,14 +1,52 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH103", 
-    "statement": "Consider the curve given by\n\n\\begin{align*}\\displaystyle y = f(x) = \\frac{1}{x^{p}}\\end{align*}\n\nfor $\\displaystyle 1 \\leq x \\leq B$ where $\\displaystyle p,B$ are\nconstants with $\\displaystyle B > 1$ and $\\displaystyle p > 0$.\n\n(a) Compute the area of the region between this curve and the\n\\emph{x}-axis for $\\displaystyle 1 \\leq x \\leq B$. (Later we will refer\nto this area as A.)", 
-    "year": 2005, 
-    "sols": [
-        "There are actually two cases we have to consider here, if \\emph{p=1} and\nif $p\\neq1$. We will see why below:\n\nFirst assume that $p\\neq1$. Given the function $y=f(x)=\\frac{1}{x^p}$ on\nthe interval {[}1,\\emph{B}{]}, the area between this curve and the\n\\emph{x}-axis is\n\n\\begin{align*}\nA &= \\int_{1}^{B}\\frac{1}{x^p}dx = \\int_{1}^{B}x^{-p}dx \\\\\n&= \\left [ \\frac{x^{-p+1}}{-p+1} \\right ]_{1}^{B} = \\frac{1}{1-p} \\left ( B^{1-p}-1 \\right)\\end{align*}\n\nNote that, if \\emph{p=1}, then the above does not work because we would\ndivide by \\emph{1-p=0}.\n\nHence we treat \\emph{p=1} separately. The function becomes\n$y=f(x)=\\frac{1}{x}$ and on the interval {[}1,\\emph{B}{]}, the area\nbetween this curve and the \\emph{x}-axis is\n\n\\begin{align*}\nA &= \\int_{1}^{B}\\frac{1}{x}dx\\\\\n&= \\left [ \\ln{x} \\right ]_{1}^{B} = \\ln{B}\\end{align*}\n\nSo our final answer is\n\n\\begin{align*}A = \\int_1^B \\frac{1}{x^p}\\,dx=\n\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),&p\\neq{1}\\\\\n\\ln{B},&p=1\n\\end{cases}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(A=\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),p\\neq{1}\\\\\n\\ln{B},p=1\n\\end{cases}\\)</span></p>\n", 
+    "answer_latex": " $A=\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),p\\neq{1}\\\\\n\\ln{B},p=1\n\\end{cases}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The area <em>A</em> under the graph of a function <em>y = f(x)</em> on the interval <span>[</span>a,b<span>]</span> is<br /><span class=\"math\">\\(A = \\int_{a}^{b}f(x)dx\\)</span></p>\n", 
+        "<p>Note the subtlety when <em>p = 1</em>, this is a special case that needs to be treated separately!</p>\n"
+    ], 
+    "hints_latex": [
         "The area \\emph{A} under the graph of a function \\emph{y = f(x)} on the\ninterval {[}a,b{]} is\\\\$A = \\int_{a}^{b}f(x)dx$", 
         "Note the subtlety when \\emph{p = 1}, this is a special case that needs\nto be treated separately!"
-    ]
+    ], 
+    "hints_raw": [
+        "The area ''A'' under the graph of a function ''y = f(x)'' on the interval [a,b] is &lt;br /> \n&lt;math> \nA = \\int_{a}^{b}f(x)dx\n&lt;/math>\n", 
+        "Note the subtlety when ''p = 1'', this is a special case that needs to be treated separately!\n"
+    ], 
+    "num_votes": 1, 
+    "question": "5 (a)", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>There are actually two cases we have to consider here, if <em>p=1</em> and if <span class=\"math\">\\(p\\neq1\\)</span>. We will see why below:</p>\n<p>First assume that <span class=\"math\">\\(p\\neq1\\)</span>. Given the function <span class=\"math\">\\(y=f(x)=\\frac{1}{x^p}\\)</span> on the interval <span>[</span>1,<em>B</em><span>]</span>, the area between this curve and the <em>x</em>-axis is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA &amp;= \\int_{1}^{B}\\frac{1}{x^p}dx = \\int_{1}^{B}x^{-p}dx \\\\\n&amp;= \\left [ \\frac{x^{-p+1}}{-p+1} \\right ]_{1}^{B} = \\frac{1}{1-p} \\left ( B^{1-p}-1 \\right)\\end{aligned}\\]</span></p>\n<p>Note that, if <em>p=1</em>, then the above does not work because we would divide by <em>1-p=0</em>.</p>\n<p>Hence we treat <em>p=1</em> separately. The function becomes <span class=\"math\">\\(y=f(x)=\\frac{1}{x}\\)</span> and on the interval <span>[</span>1,<em>B</em><span>]</span>, the area between this curve and the <em>x</em>-axis is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA &amp;= \\int_{1}^{B}\\frac{1}{x}dx\\\\\n&amp;= \\left [ \\ln{x} \\right ]_{1}^{B} = \\ln{B}\\end{aligned}\\]</span></p>\n<p>So our final answer is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\int_1^B \\frac{1}{x^p}\\,dx=\n\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),&amp;p\\neq{1}\\\\\n\\ln{B},&amp;p=1\n\\end{cases}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "There are actually two cases we have to consider here, if \\emph{p=1} and\nif $p\\neq1$. We will see why below:\n\nFirst assume that $p\\neq1$. Given the function $y=f(x)=\\frac{1}{x^p}$ on\nthe interval {[}1,\\emph{B}{]}, the area between this curve and the\n\\emph{x}-axis is\n\n\\begin{align*}\nA &= \\int_{1}^{B}\\frac{1}{x^p}dx = \\int_{1}^{B}x^{-p}dx \\\\\n&= \\left [ \\frac{x^{-p+1}}{-p+1} \\right ]_{1}^{B} = \\frac{1}{1-p} \\left ( B^{1-p}-1 \\right)\n\\end{align*}\n\nNote that, if \\emph{p=1}, then the above does not work because we would\ndivide by \\emph{1-p=0}.\n\nHence we treat \\emph{p=1} separately. The function becomes\n$y=f(x)=\\frac{1}{x}$ and on the interval {[}1,\\emph{B}{]}, the area\nbetween this curve and the \\emph{x}-axis is\n\n\\begin{align*}\nA &= \\int_{1}^{B}\\frac{1}{x}dx\\\\\n&= \\left [ \\ln{x} \\right ]_{1}^{B} = \\ln{B}\n\\end{align*}\n\nSo our final answer is\n\n\\begin{align*}\nA = \\int_1^B \\frac{1}{x^p}\\,dx=\n\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),&p\\neq{1}\\\\\n\\ln{B},&p=1\n\\end{cases}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "There are actually two cases we have to consider here, if ''p=1'' and if &lt;math>p\\neq1&lt;/math>.  We will see why below:\n\nFirst assume that &lt;math>p\\neq1&lt;/math>.  Given the function &lt;math> y=f(x)=\\frac{1}{x^p} &lt;/math> on the interval [1,''B''], the area between this curve and the ''x''-axis is &lt;/br>\n\n:&lt;math> \\begin{align}\nA &amp; = \\int_{1}^{B}\\frac{1}{x^p}dx = \\int_{1}^{B}x^{-p}dx \\\\\n&amp; = \\left [ \\frac{x^{-p+1}}{-p+1} \\right ]_{1}^{B} = \\frac{1}{1-p} \\left ( B^{1-p}-1 \\right)\n\\end{align}\n&lt;/math>\n\nNote that, if ''p=1'', then the above does not work because we would divide by ''1-p=0''.\n\nHence we treat ''p=1'' separately. The function becomes &lt;math>y=f(x)=\\frac{1}{x}&lt;/math> and on the interval [1,''B''], the area between this curve and the ''x''-axis is &lt;/br>\n\n:&lt;math> \\begin{align}\nA &amp; = \\int_{1}^{B}\\frac{1}{x}dx\\\\\n&amp; = \\left [ \\ln{x} \\right ]_{1}^{B} = \\ln{B}\n\\end{align}\n&lt;/math>\n\nSo our final answer is\n\n:&lt;math>\nA = \\int_1^B \\frac{1}{x^p}\\,dx=\n\\begin{cases}\n\\frac{1}{1-p} \\left ( B^{1-p}-1 \\right),&amp;p\\neq{1}\\\\\n\\ln{B},&amp;p=1\n\\end{cases}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "NghiHuynh"
+    ], 
+    "statement_html": "<p>Consider the curve given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle y = f(x) = \\frac{1}{x^{p}}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(\\displaystyle 1 \\leq x \\leq B\\)</span> where <span class=\"math\">\\(\\displaystyle p,B\\)</span> are constants with <span class=\"math\">\\(\\displaystyle B &gt; 1\\)</span> and <span class=\"math\">\\(\\displaystyle p &gt; 0\\)</span>.</p>\n<p>(a) Compute the area of the region between this curve and the <em>x</em>-axis for <span class=\"math\">\\(\\displaystyle 1 \\leq x \\leq B\\)</span>. (Later we will refer to this area as A.)</p>\n", 
+    "statement_latex": "Consider the curve given by\n\n\\begin{align*}\n\\displaystyle y = f(x) = \\frac{1}{x^{p}}\n\\end{align*}\n\nfor $\\displaystyle 1 \\leq x \\leq B$ where $\\displaystyle p,B$ are\nconstants with $\\displaystyle B > 1$ and $\\displaystyle p > 0$.\n\n(a) Compute the area of the region between this curve and the\n\\emph{x}-axis for $\\displaystyle 1 \\leq x \\leq B$. (Later we will refer\nto this area as A.)", 
+    "statement_raw": "Consider the curve given by\n\n:&lt;math> \\displaystyle y = f(x) = \\frac{1}{x^{p}}&lt;/math>\n\nfor &lt;math> \\displaystyle 1 \\leq x \\leq B&lt;/math> where &lt;math> \\displaystyle p,B&lt;/math> are constants with &lt;math> \\displaystyle B > 1&lt;/math> and &lt;math> \\displaystyle p > 0&lt;/math>.\n\n(a) Compute the area of the region between this curve and the ''x''-axis for &lt;math> \\displaystyle 1 \\leq x \\leq B&lt;/math>. (Later we will refer to this area as A.)\n", 
+    "term": "April", 
+    "topics": [
+        "Area_between_two_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2005/Question_05_(a)", 
+    "year": 2005
 }

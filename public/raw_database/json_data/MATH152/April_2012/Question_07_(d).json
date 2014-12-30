@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_07_(d)", 
-    "course": "MATH152", 
-    "statement": "Consider a random walk that has transition matrix:\n\n\\begin{align*}P=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\\end{align*}\n\nBased on the results in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_7_(b)}{(b)},\nexplain why the probability vector always approaches the equilibrium\nfound in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(c)}{(c)},\nregardless of the initial probability vector $\\mathbf{x}(0)$.", 
-    "year": 2012, 
-    "sols": [
-        "The stationary distribution is the eigenvector corresponding to\neigenvalue 1. The other two eigenvectors correspond to eigenvalues with\nabsolute value strictly less than 1. This means that only the component\nof the initial distribution that is parallel to the stationary\ndistribution will maintain its length over repeated applications of P.\nSince the 3x3 matrix \\emph{P} has three distinct eigenvalues, every\nvector of initial conditions can be composed to a sum of eigenvectors.\nHence, all components of the initial distribution that are not parallel\nto the stationary distribution will decay with repeated applications of\nP.\n\nHence, all initial distributions eventually converge to the stationary\ndistribution computed in part\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(c)}{(c)}."
+    "answer_html": "<p>This means that only the component of the initial distribution that is parallel to the stationary distribution will maintain its length over repeated applications of P. Since the 3x3 matrix <em>P</em> has three distinct eigenvalues, every vector of initial conditions can be composed to a sum of eigenvectors. Hence, all components of the initial distribution that are not parallel to the stationary distribution will decay with repeated applications of P.Hence, all initial distributions eventually converge to the stationary distribution computed in part <span>(c)</span>.</p>\n", 
+    "answer_latex": "This means that only the component\nof the initial distribution that is parallel to the stationary\ndistribution will maintain its length over repeated applications of P.\nSince the 3x3 matrix \\emph{P} has three distinct eigenvalues, every\nvector of initial conditions can be composed to a sum of eigenvectors.\nHence, all components of the initial distribution that are not parallel\nto the stationary distribution will decay with repeated applications of\nP.Hence, all initial distributions eventually converge to the stationary\ndistribution computed in part\n{(c)}.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Remember that for any matrix $\\displaystyle P$, all\neigenvector-eigenvalue combinations $(\\mathbf{v},\\lambda)$ satisfy\n\n\\begin{align*}P\\mathbf{v} = \\lambda \\mathbf{v} \\quad \\rightarrow \\quad P^{n}\\mathbf{v} = \\lambda^{n} \\mathbf{v}.\\end{align*}\nWhat happens when $\\displaystyle \\lambda = 1$ versus when\n$\\displaystyle |\\lambda| < 1$ as $n \\rightarrow \\infty$?"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Remember that for any matrix <span class=\"math\">\\(\\displaystyle P\\)</span>, all eigenvector-eigenvalue combinations <span class=\"math\">\\((\\mathbf{v},\\lambda)\\)</span> satisfy</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP\\mathbf{v} = \\lambda \\mathbf{v} \\quad \\rightarrow \\quad P^{n}\\mathbf{v} = \\lambda^{n} \\mathbf{v}.\\end{aligned}\\]</span></p>\n<p>What happens when <span class=\"math\">\\(\\displaystyle \\lambda = 1\\)</span> versus when <span class=\"math\">\\(\\displaystyle |\\lambda| &lt; 1\\)</span> as <span class=\"math\">\\(n \\rightarrow \\infty\\)</span>?</p>\n"
+    ], 
+    "hints_latex": [
+        "Remember that for any matrix $\\displaystyle P$, all\neigenvector-eigenvalue combinations $(\\mathbf{v},\\lambda)$ satisfy\n\n\\begin{align*}\nP\\mathbf{v} = \\lambda \\mathbf{v} \\quad \\rightarrow \\quad P^{n}\\mathbf{v} = \\lambda^{n} \\mathbf{v}.\n\\end{align*}\nWhat happens when $\\displaystyle \\lambda = 1$ versus when\n$\\displaystyle |\\lambda| < 1$ as $n \\rightarrow \\infty$?"
+    ], 
+    "hints_raw": [
+        "Remember that for any matrix &lt;math>\\displaystyle P&lt;/math>, all eigenvector-eigenvalue combinations &lt;math>(\\mathbf{v},\\lambda)&lt;/math> satisfy\n:&lt;math>P\\mathbf{v} = \\lambda \\mathbf{v} \\quad \\rightarrow \\quad P^{n}\\mathbf{v} = \\lambda^{n} \\mathbf{v}.\n&lt;/math>\nWhat happens when &lt;math>\\displaystyle \\lambda = 1&lt;/math> versus when &lt;math>\\displaystyle|\\lambda| &lt; 1&lt;/math> as &lt;math>n \\rightarrow \\infty&lt;/math>?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "7 (d)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The stationary distribution is the eigenvector corresponding to eigenvalue 1. The other two eigenvectors correspond to eigenvalues with absolute value strictly less than 1. This means that only the component of the initial distribution that is parallel to the stationary distribution will maintain its length over repeated applications of P. Since the 3x3 matrix <em>P</em> has three distinct eigenvalues, every vector of initial conditions can be composed to a sum of eigenvectors. Hence, all components of the initial distribution that are not parallel to the stationary distribution will decay with repeated applications of P.</p>\n<p>Hence, all initial distributions eventually converge to the stationary distribution computed in part <span>(c)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The stationary distribution is the eigenvector corresponding to\neigenvalue 1. The other two eigenvectors correspond to eigenvalues with\nabsolute value strictly less than 1. This means that only the component\nof the initial distribution that is parallel to the stationary\ndistribution will maintain its length over repeated applications of P.\nSince the 3x3 matrix \\emph{P} has three distinct eigenvalues, every\nvector of initial conditions can be composed to a sum of eigenvectors.\nHence, all components of the initial distribution that are not parallel\nto the stationary distribution will decay with repeated applications of\nP.\n\nHence, all initial distributions eventually converge to the stationary\ndistribution computed in part\n{(c)}."
+    ], 
+    "sols_raw": [
+        "The stationary distribution is the eigenvector corresponding to eigenvalue 1. The other two eigenvectors correspond to eigenvalues with absolute value strictly less than 1. This means that only the component of the initial distribution that is parallel to the stationary distribution will maintain its length over repeated applications of P. Since the 3x3 matrix ''P'' has three distinct eigenvalues, every vector of initial conditions can be composed to a sum of eigenvectors. Hence, all  components of the initial distribution that are not parallel to the stationary distribution will decay with repeated applications of P.\n\nHence, all initial distributions eventually converge to the stationary distribution computed in part [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(c)|(c)]].\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Consider a random walk that has transition matrix:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Based on the results in <span>(b)</span>, explain why the probability vector always approaches the equilibrium found in <span>(c)</span>, regardless of the initial probability vector <span class=\"math\">\\(\\mathbf{x}(0)\\)</span>.</p>\n", 
+    "statement_latex": "Consider a random walk that has transition matrix:\n\n\\begin{align*}\nP=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\n\\end{align*}\n\nBased on the results in\n{(b)},\nexplain why the probability vector always approaches the equilibrium\nfound in\n{(c)},\nregardless of the initial probability vector $\\mathbf{x}(0)$.", 
+    "statement_raw": "Consider a random walk that has transition matrix:\n\n:&lt;math>\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\n&lt;/math>\n\nBased on the results in [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_7_(b)|(b)]], explain why the probability vector always approaches the equilibrium found in [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(c)|(c)]], regardless of the initial probability vector &lt;math>\\mathbf{x}(0)&lt;/math>.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(d)", 
+    "year": 2012
 }

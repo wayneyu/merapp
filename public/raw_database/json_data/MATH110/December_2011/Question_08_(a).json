@@ -1,13 +1,45 @@
 {
-    "term": "December", 
-    "question": "Question_08_(a)", 
-    "course": "MATH110", 
-    "statement": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(a) Suppose that \\emph{a \u2260 0}. Find the equation of the line tangent to\nthe curve at\n\n\\begin{align*}x = \\frac{b}{a}.\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "If \\emph{a} is different than zero, then the given curve is a polynomial\nof degree 7. Let\n\n\\begin{align*}\\displaystyle\nf(x) = (ax+b)^7\\end{align*} then its derivative (using the chain rule) is\n\n\\begin{align*}\\displaystyle\nf'(x) = 7(ax+b)^6 \\cdot a = 7a(ax+b)^6\\end{align*} and so the slope of the tangent\nline to this curve at the point \\emph{x} = \\emph{b}/\\emph{a} is\n\n\\begin{align*}\\displaystyle\nf'(b/a) = 7a(a \\left( \\frac{b}{a} \\right) +b)^6 = 7a(2b)^6 = 2^6 \\cdot 7 a b^6\\end{align*}\nAnd the \\emph{y} coordinate of that point is $f(b/a)$ which is\n\n\\begin{align*}\\displaystyle\nf(b/a) = (a \\left( \\frac{b}{a} \\right) +b)^7 = (2b)^7 = 2^7b^7\\end{align*} So\nusing the standard equation\n\n\\begin{align*}\\displaystyle\ny=m(x-x_0)+y_0\\end{align*} for a line of slope \\emph{m} and going through the\npoint (\\emph{x}\\textsubscript{0}, \\emph{y}\\textsubscript{0}) we obtain\n\n\\begin{align*}\\displaystyle\ny=2^6 \\cdot 7 a b^6 (x-\\frac{b}{a}) + 2^7b^7\\end{align*} which you can simplify a\nbit and obtain\n\n\\begin{align*}\\displaystyle\ny=2^6 \\cdot 7 a b^6 x - 2^6 \\cdot 5 b^7\\end{align*} or if you compute things out\n\n\\begin{align*}\\displaystyle\ny=448 a b^6 x - 320 b^7\\end{align*} You don't need to do the last two steps during\na test usually."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle\ny=448 a b^6 x - 320 b^7\\)</span> You don&#8217;t need to do the last two steps during a test usually.</p>\n", 
+    "answer_latex": " $\\displaystyle\ny=448 a b^6 x - 320 b^7$  You don't need to do the last two steps during\na test usually.", 
+    "contributors": [
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>If it looks like keeping track of a lot of symbols and having an answer that will depend on both <em>a</em> and <em>b</em>, then you are on the right track.</p>\n"
+    ], 
+    "hints_latex": [
         "If it looks like keeping track of a lot of symbols and having an answer\nthat will depend on both \\emph{a} and \\emph{b}, then you are on the\nright track."
-    ]
+    ], 
+    "hints_raw": [
+        "If it looks like keeping track of a lot of symbols and having an answer that will depend on both ''a'' and ''b'', then you are on the right track.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "8 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If <em>a</em> is different than zero, then the given curve is a polynomial of degree 7. Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x) = (ax+b)^7\\end{aligned}\\]</span></p>\n<p>then its derivative (using the chain rule) is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf&#39;(x) = 7(ax+b)^6 \\cdot a = 7a(ax+b)^6\\end{aligned}\\]</span></p>\n<p>and so the slope of the tangent line to this curve at the point <em>x</em> = <em>b</em>/<em>a</em> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf&#39;(b/a) = 7a(a \\left( \\frac{b}{a} \\right) +b)^6 = 7a(2b)^6 = 2^6 \\cdot 7 a b^6\\end{aligned}\\]</span></p>\n<p>And the <em>y</em> coordinate of that point is <span class=\"math\">\\(f(b/a)\\)</span> which is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(b/a) = (a \\left( \\frac{b}{a} \\right) +b)^7 = (2b)^7 = 2^7b^7\\end{aligned}\\]</span></p>\n<p>So using the standard equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=m(x-x_0)+y_0\\end{aligned}\\]</span></p>\n<p>for a line of slope <em>m</em> and going through the point (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) we obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=2^6 \\cdot 7 a b^6 (x-\\frac{b}{a}) + 2^7b^7\\end{aligned}\\]</span></p>\n<p>which you can simplify a bit and obtain</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=2^6 \\cdot 7 a b^6 x - 2^6 \\cdot 5 b^7\\end{aligned}\\]</span></p>\n<p>or if you compute things out</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\ny=448 a b^6 x - 320 b^7\\end{aligned}\\]</span></p>\n<p>You don&#8217;t need to do the last two steps during a test usually.</p>\n"
+    ], 
+    "sols_latex": [
+        "If \\emph{a} is different than zero, then the given curve is a polynomial\nof degree 7. Let\n\n\\begin{align*}\n\\displaystyle\nf(x) = (ax+b)^7\n\\end{align*} then its derivative (using the chain rule) is\n\n\\begin{align*}\n\\displaystyle\nf'(x) = 7(ax+b)^6 \\cdot a = 7a(ax+b)^6\n\\end{align*} and so the slope of the tangent\nline to this curve at the point \\emph{x} = \\emph{b}/\\emph{a} is\n\n\\begin{align*}\n\\displaystyle\nf'(b/a) = 7a(a \\left( \\frac{b}{a} \\right) +b)^6 = 7a(2b)^6 = 2^6 \\cdot 7 a b^6\n\\end{align*}\nAnd the \\emph{y} coordinate of that point is $f(b/a)$ which is\n\n\\begin{align*}\n\\displaystyle\nf(b/a) = (a \\left( \\frac{b}{a} \\right) +b)^7 = (2b)^7 = 2^7b^7\n\\end{align*} So\nusing the standard equation\n\n\\begin{align*}\n\\displaystyle\ny=m(x-x_0)+y_0\n\\end{align*} for a line of slope \\emph{m} and going through the\npoint (\\emph{x}\\textsubscript{0}, \\emph{y}\\textsubscript{0}) we obtain\n\n\\begin{align*}\n\\displaystyle\ny=2^6 \\cdot 7 a b^6 (x-\\frac{b}{a}) + 2^7b^7\n\\end{align*} which you can simplify a\nbit and obtain\n\n\\begin{align*}\n\\displaystyle\ny=2^6 \\cdot 7 a b^6 x - 2^6 \\cdot 5 b^7\n\\end{align*} or if you compute things out\n\n\\begin{align*}\n\\displaystyle\ny=448 a b^6 x - 320 b^7\n\\end{align*} You don't need to do the last two steps during\na test usually."
+    ], 
+    "sols_raw": [
+        "If ''a'' is different than zero, then the given curve is a polynomial of degree 7. Let\n:&lt;math>\\displaystyle\nf(x) = (ax+b)^7\n&lt;/math>\nthen its derivative (using the chain rule) is\n:&lt;math>\\displaystyle\nf'(x) = 7(ax+b)^6 \\cdot a = 7a(ax+b)^6\n&lt;/math>\nand so the slope of the tangent line to this curve at the point ''x'' = ''b''/''a'' is\n:&lt;math>\\displaystyle\nf'(b/a) = 7a(a \\left( \\frac{b}{a} \\right) +b)^6 = 7a(2b)^6 = 2^6 \\cdot 7 a b^6\n&lt;/math>\nAnd the ''y'' coordinate of that point is &lt;math>f(b/a)&lt;/math> which is\n:&lt;math>\\displaystyle\nf(b/a) = (a \\left( \\frac{b}{a} \\right) +b)^7 = (2b)^7 = 2^7b^7\n&lt;/math>\nSo using the standard equation \n:&lt;math>\\displaystyle\ny=m(x-x_0)+y_0\n&lt;/math>\nfor a line of slope ''m'' and going through the point (''x''&lt;sub>0&lt;/sub>, ''y''&lt;sub>0&lt;/sub>) we obtain\n:&lt;math>\\displaystyle\ny=2^6 \\cdot 7 a b^6 (x-\\frac{b}{a}) + 2^7b^7\n&lt;/math>\nwhich you can simplify a bit and obtain\n:&lt;math>\\displaystyle\ny=2^6 \\cdot 7 a b^6 x - 2^6 \\cdot 5 b^7\n&lt;/math>\nor if you compute things out\n:&lt;math>\\displaystyle\ny=448 a b^6 x - 320 b^7\n&lt;/math>\nYou don't need to do the last two steps during a test usually.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(y = (ax + b)^7\\)</span>, where <em>a</em> and <em>b</em> are constant.</p>\n<p>(a) Suppose that <em>a &#8800; 0</em>. Find the equation of the line tangent to the curve at</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx = \\frac{b}{a}.\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Let $y = (ax + b)^7$, where \\emph{a} and \\emph{b} are constant.\n\n(a) Suppose that \\emph{a \u2260 0}. Find the equation of the line tangent to\nthe curve at\n\n\\begin{align*}\nx = \\frac{b}{a}.\n\\end{align*}", 
+    "statement_raw": "Let &lt;math>y = (ax + b)^7 &lt;/math>, where ''a'' and ''b'' are constant.  \n\n(a) Suppose that ''a &amp;#8800; 0''.  Find the equation of the line tangent to the curve at \n: &lt;math> x = \\frac{b}{a}&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2011/Question_08_(a)", 
+    "year": 2011
 }

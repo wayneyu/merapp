@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_A_22", 
-    "course": "MATH152", 
-    "statement": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\begin{align*}u = 3 + 2i, \\quad z = 1 - i\\end{align*}\n\nA22: Evaluate $2u - z$. Your answer should be in the form $a + ib$ where\n$a$ and $b$ are real numbers.", 
-    "year": 2010, 
-    "sols": [
-        "This is straight forward:\n\n\\begin{align*}2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(2u -z=5+5i\\)</span></p>\n", 
+    "answer_latex": " $2u -z=5+5i$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Multiplying a complex number means multiplying the real and the imaginary part. Adding complex numbers means adding the real parts and adding the imaginary parts separately.</p>\n"
+    ], 
+    "hints_latex": [
         "Multiplying a complex number means multiplying the real and the\nimaginary part. Adding complex numbers means adding the real parts and\nadding the imaginary parts separately."
-    ]
+    ], 
+    "hints_raw": [
+        "Multiplying a complex number means multiplying the real and the imaginary part. Adding complex numbers means adding the real parts and adding the imaginary parts separately.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 22", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>This is straight forward:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "This is straight forward:\n\n\\begin{align*}\n2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "This is straight forward:\n\n:&lt;math> 2u -z = 2(3+2i)-(1-i) = 6+4i-1+i = (6-1) + (4+1)i = 5+5i &lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>For questions A22 - A24 below, <span class=\"math\">\\(u\\)</span>, <span class=\"math\">\\(z\\)</span> are complex numbers given below:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = 3 + 2i, \\quad z = 1 - i\\end{aligned}\\]</span></p>\n<p>A22: Evaluate <span class=\"math\">\\(2u - z\\)</span>. Your answer should be in the form <span class=\"math\">\\(a + ib\\)</span> where <span class=\"math\">\\(a\\)</span> and <span class=\"math\">\\(b\\)</span> are real numbers.</p>\n", 
+    "statement_latex": "For questions A22 - A24 below, $u$, $z$ are complex numbers given below:\n\n\\begin{align*}\nu = 3 + 2i, \\quad z = 1 - i\n\\end{align*}\n\nA22: Evaluate $2u - z$. Your answer should be in the form $a + ib$ where\n$a$ and $b$ are real numbers.", 
+    "statement_raw": "For questions &lt;b>A22 - A24&lt;/b> below, &lt;math>u&lt;/math>, &lt;math>z&lt;/math> are complex numbers given below:\n\n:&lt;math>\nu = 3 + 2i, \\quad z = 1 - i\n&lt;/math>\n\n&lt;b>A22&lt;/b>: Evaluate &lt;math>2u - z&lt;/math>. Your answer should be in the form &lt;math>a + ib&lt;/math> where &lt;math>a&lt;/math> and &lt;math>b&lt;/math> are real numbers.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2010/Question_A_22", 
+    "year": 2010
 }

@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(d)", 
-    "course": "MATH104", 
-    "statement": "Let\n\n\\begin{align*}\\displaystyle{}h(x)=\\exp(f(x))+[f(x)]^2\\end{align*}\n\nwhere $f(1)=2$, $f'(1)=5$. Find $h'(1)$.", 
-    "year": 2012, 
-    "sols": [
-        "Taking the derivative of $h(x)$ and using the chain rule, we get:\n\n\\begin{align*}\\displaystyle h'(x) = \\exp(f(x))f'(x) + 2f(x)f'(x)\\end{align*} Substituting\n$x = 1$ and using the given values of $f(1)$ and $f'(1)$ gives:\n\n\\begin{align*}\nh'(1) &= \\exp(f(1))f'(1) + 2f(1)f'(1)\\\\\n&= 5\\exp(2) + 2(2)(5)\\\\\n&= 5e^{2} + 20\\end{align*} Therefore,\n${\\color{blue}\\displaystyle h'(1) = 5e^{2} +20}$."
+    "answer_html": "<p><span class=\"math\">\\(h&#39;(1)=5e^{2} + 20\\)</span> Therefore, <span class=\"math\">\\({\\color{blue}\\displaystyle h&#39;(1) = 5e^{2} +20}\\)</span>.</p>\n", 
+    "answer_latex": " $h'(1)=5e^{2} + 20$  Therefore,\n${\\color{blue}\\displaystyle h'(1) = 5e^{2} +20}$.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Remember to use the chain rule when differentiating <span class=\"math\">\\(h(x)\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "Remember to use the chain rule when differentiating $h(x)$."
-    ]
+    ], 
+    "hints_raw": [
+        "Remember to use the chain rule when differentiating &lt;math>h(x)&lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (d)", 
+    "rating": 89, 
+    "sols_html": [
+        "<p>Taking the derivative of <span class=\"math\">\\(h(x)\\)</span> and using the chain rule, we get:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle h&#39;(x) = \\exp(f(x))f&#39;(x) + 2f(x)f&#39;(x)\\end{aligned}\\]</span></p>\n<p>Substituting <span class=\"math\">\\(x = 1\\)</span> and using the given values of <span class=\"math\">\\(f(1)\\)</span> and <span class=\"math\">\\(f&#39;(1)\\)</span> gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nh&#39;(1) &amp;= \\exp(f(1))f&#39;(1) + 2f(1)f&#39;(1)\\\\\n&amp;= 5\\exp(2) + 2(2)(5)\\\\\n&amp;= 5e^{2} + 20\\end{aligned}\\]</span></p>\n<p>Therefore, <span class=\"math\">\\({\\color{blue}\\displaystyle h&#39;(1) = 5e^{2} +20}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Taking the derivative of $h(x)$ and using the chain rule, we get:\n\n\\begin{align*}\n\\displaystyle h'(x) = \\exp(f(x))f'(x) + 2f(x)f'(x)\n\\end{align*} Substituting\n$x = 1$ and using the given values of $f(1)$ and $f'(1)$ gives:\n\n\\begin{align*}\nh'(1) &= \\exp(f(1))f'(1) + 2f(1)f'(1)\\\\\n&= 5\\exp(2) + 2(2)(5)\\\\\n&= 5e^{2} + 20\n\\end{align*} Therefore,\n${\\color{blue}\\displaystyle h'(1) = 5e^{2} +20}$."
+    ], 
+    "sols_raw": [
+        "Taking the derivative of &lt;math>h(x)&lt;/math> and using the chain rule, we get:\n:&lt;math>\n\\displaystyle h'(x) = \\exp(f(x))f'(x) + 2f(x)f'(x)\n&lt;/math>\nSubstituting &lt;math>x = 1&lt;/math> and using the given values of &lt;math>f(1)&lt;/math> and &lt;math>f'(1)&lt;/math> gives:\n:&lt;math>\n\\begin{align}\nh'(1) &amp;= \\exp(f(1))f'(1) + 2f(1)f'(1)\\\\\n&amp;= 5\\exp(2) + 2(2)(5)\\\\\n&amp;= 5e^{2} + 20\n\\end{align}\n&lt;/math>\nTherefore, &lt;math>{\\color{blue}\\displaystyle h'(1) = 5e^{2} + 20}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}h(x)=\\exp(f(x))+[f(x)]^2\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(f(1)=2\\)</span>, <span class=\"math\">\\(f&#39;(1)=5\\)</span>. Find <span class=\"math\">\\(h&#39;(1)\\)</span>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\n\\displaystyle{}h(x)=\\exp(f(x))+[f(x)]^2\n\\end{align*}\n\nwhere $f(1)=2$, $f'(1)=5$. Find $h'(1)$.", 
+    "statement_raw": "Let\n\n:&lt;math>\n\\displaystyle{}h(x)=\\exp(f(x))+[f(x)]^2\n&lt;/math>\n\nwhere &lt;math>f(1)=2&lt;/math>, &lt;math>f'(1)=5&lt;/math>.  Find &lt;math>h'(1)&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Chain_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(d)", 
+    "year": 2012
 }

@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_04_(d)", 
-    "course": "MATH307", 
-    "statement": "Consider the Fourier series\n\n\\begin{align*}t^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\end{align*}\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(d)} Given that $c_n = \\frac1{2\\pi^2 n^2}$ for $n \\not= 0$, use\nParseval's formula to find the value of the infinite sum\n$\\sum_{n=1}^\\infty \\frac1{n^4}$. Calculate a numerical expression - you\ndo not need to simplify your answer.", 
-    "year": 2012, 
-    "sols": [
-        "Consider the Fourier series\n\n\\begin{align*}t^2-t=\\sum_{n=-\\infty }^{\\infty }c_ne^{2\\pi int}\\end{align*}\n\nfor $0\\leq t\\leq 1$. Parseval$^{\\prime}$s formula says\n\n\\begin{align*}\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\\end{align*}\n\nPlugging $\\displaystyle f(t)=t^2-t$ in the left hand side we calculate\n\n\\begin{align*}\\left \\langle f,f \\right \\rangle=\\int_{0}^{1}(t^4-2t^3+t^2)dt=\\frac{1}{5}-\\frac{1}{2}+\\frac{1}{3}=\\frac{1}{30}\\end{align*}\n\nPlugging in the given and calculated values for\n\\emph{c\\textsubscript{n}} in the right hand side we compute\n\n\\begin{align*}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 &= \\sum_{n=-\\infty}^{-1} |c_n|^2 + |c_0|^2 + \\sum_{n=1}^\\infty |c_n|^2 \\\\\n&= \\sum_{n=-\\infty}^{-1} \\frac{1}{4\\pi^4n^4} + \\left|-\\frac16\\right| + \\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&= \\frac1{36} + 2\\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&= \\frac1{36} + \\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\\end{align*}\n\nCombining the left hand side and the right hand side of Parseval's\nformula we can find\n\n\\begin{align*}\\frac{1}{30}-\\frac{1}{36}=\\frac{1}{180}=\\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\\end{align*}\n\nTherefore, the infinite sum is\n\n\\begin{align*}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}\\)</span></p>\n", 
+    "answer_latex": " $\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "Parseval's formula says that\n\n\\begin{align*}\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\\end{align*}\n\nCalculate the integral on the left hand side and plug in the given and\ncalculated values for \\emph{c\\textsubscript{n}} on the right hand side.\nThen, isolate for $\\sum_{n=1}^\\infty \\frac1{n^4}$"
-    ]
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Parseval&#8217;s formula says that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\\end{aligned}\\]</span></p>\n<p>Calculate the integral on the left hand side and plug in the given and calculated values for <em>c<sub>n</sub></em> on the right hand side. Then, isolate for <span class=\"math\">\\(\\sum_{n=1}^\\infty \\frac1{n^4}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "Parseval's formula says that\n\n\\begin{align*}\n\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\n\\end{align*}\n\nCalculate the integral on the left hand side and plug in the given and\ncalculated values for \\emph{c\\textsubscript{n}} on the right hand side.\nThen, isolate for $\\sum_{n=1}^\\infty \\frac1{n^4}$"
+    ], 
+    "hints_raw": [
+        "Parseval's formula says that\n\n:&lt;math>\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2&lt;/math>\n\nCalculate the integral on the left hand side and plug in the given and calculated values for ''c&lt;sub>n&lt;/sub>'' on the right hand side. Then, isolate for &lt;math>\\sum_{n=1}^\\infty \\frac1{n^4}&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "4 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Consider the Fourier series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^2-t=\\sum_{n=-\\infty }^{\\infty }c_ne^{2\\pi int}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(0\\leq t\\leq 1\\)</span>. Parseval<span class=\"math\">\\(^{\\prime}\\)</span>s formula says</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\\end{aligned}\\]</span></p>\n<p>Plugging <span class=\"math\">\\(\\displaystyle f(t)=t^2-t\\)</span> in the left hand side we calculate</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left \\langle f,f \\right \\rangle=\\int_{0}^{1}(t^4-2t^3+t^2)dt=\\frac{1}{5}-\\frac{1}{2}+\\frac{1}{3}=\\frac{1}{30}\\end{aligned}\\]</span></p>\n<p>Plugging in the given and calculated values for <em>c<sub>n</sub></em> in the right hand side we compute</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 &amp;= \\sum_{n=-\\infty}^{-1} |c_n|^2 + |c_0|^2 + \\sum_{n=1}^\\infty |c_n|^2 \\\\\n&amp;= \\sum_{n=-\\infty}^{-1} \\frac{1}{4\\pi^4n^4} + \\left|-\\frac16\\right| + \\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&amp;= \\frac1{36} + 2\\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&amp;= \\frac1{36} + \\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\\end{aligned}\\]</span></p>\n<p>Combining the left hand side and the right hand side of Parseval&#8217;s formula we can find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{1}{30}-\\frac{1}{36}=\\frac{1}{180}=\\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\\end{aligned}\\]</span></p>\n<p>Therefore, the infinite sum is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Consider the Fourier series\n\n\\begin{align*}\nt^2-t=\\sum_{n=-\\infty }^{\\infty }c_ne^{2\\pi int}\n\\end{align*}\n\nfor $0\\leq t\\leq 1$. Parseval$^{\\prime}$s formula says\n\n\\begin{align*}\n\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2\n\\end{align*}\n\nPlugging $\\displaystyle f(t)=t^2-t$ in the left hand side we calculate\n\n\\begin{align*}\n\\left \\langle f,f \\right \\rangle=\\int_{0}^{1}(t^4-2t^3+t^2)dt=\\frac{1}{5}-\\frac{1}{2}+\\frac{1}{3}=\\frac{1}{30}\n\\end{align*}\n\nPlugging in the given and calculated values for\n\\emph{c\\textsubscript{n}} in the right hand side we compute\n\n\\begin{align*}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 &= \\sum_{n=-\\infty}^{-1} |c_n|^2 + |c_0|^2 + \\sum_{n=1}^\\infty |c_n|^2 \\\\\n&= \\sum_{n=-\\infty}^{-1} \\frac{1}{4\\pi^4n^4} + \\left|-\\frac16\\right| + \\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&= \\frac1{36} + 2\\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&= \\frac1{36} + \\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\n\\end{align*}\n\nCombining the left hand side and the right hand side of Parseval's\nformula we can find\n\n\\begin{align*}\n\\frac{1}{30}-\\frac{1}{36}=\\frac{1}{180}=\\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\n\\end{align*}\n\nTherefore, the infinite sum is\n\n\\begin{align*}\n\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Consider the Fourier series\n\n:&lt;math>t^2-t=\\sum_{n=-\\infty }^{\\infty }c_ne^{2\\pi int}&lt;/math>\n\nfor &lt;math>0\\leq t\\leq 1&lt;/math>. Parseval\u2019s formula says\n\n:&lt;math>\\int_{0}^{1}|f(t)^2|dt=\\left \\langle f,f \\right \\rangle=\\sum_{n=-\\infty }^{\\infty }|c_n|^2&lt;/math>\n\nPlugging &lt;math>\\displaystyle f(t)=t^2-t&lt;/math> in the left hand side we calculate\n\n:&lt;math>\\left \\langle f,f \\right \\rangle=\\int_{0}^{1}(t^4-2t^3+t^2)dt=\\frac{1}{5}-\\frac{1}{2}+\\frac{1}{3}=\\frac{1}{30}&lt;/math>\n\nPlugging in the given and calculated values for ''c&lt;sub>n&lt;/sub>'' in the right hand side we compute\n\n:&lt;math>\\begin{align}\n\\sum_{n=-\\infty}^\\infty |c_n|^2 &amp;= \\sum_{n=-\\infty}^{-1} |c_n|^2 + |c_0|^2 + \\sum_{n=1}^\\infty |c_n|^2 \\\\\n&amp;= \\sum_{n=-\\infty}^{-1} \\frac{1}{4\\pi^4n^4} + \\left|-\\frac16\\right| + \\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&amp;= \\frac1{36} + 2\\sum_{n=1}^\\infty \\frac{1}{4\\pi^4n^4} \\\\\n&amp;= \\frac1{36} + \\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}\n\\end{align}&lt;/math>\n\nCombining the left hand side and the right hand side of Parseval's formula we can find\n\n:&lt;math>\\frac{1}{30}-\\frac{1}{36}=\\frac{1}{180}=\\frac{1}{2\\pi^4}\\sum_{n=1}^{\\infty }\\frac{1}{n^4}&lt;/math>\n\nTherefore, the infinite sum is\n\n:&lt;math>\\sum_{n=1}^{\\infty }\\frac{1}{n^4}=\\frac{\\pi^4}{90}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the Fourier series</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(0 \\leq t \\leq 1\\)</span>.</p>\n<p><strong>(d)</strong> Given that <span class=\"math\">\\(c_n = \\frac1{2\\pi^2 n^2}\\)</span> for <span class=\"math\">\\(n \\not= 0\\)</span>, use Parseval&#8217;s formula to find the value of the infinite sum <span class=\"math\">\\(\\sum_{n=1}^\\infty \\frac1{n^4}\\)</span>. Calculate a numerical expression - you do not need to simplify your answer.</p>\n", 
+    "statement_latex": "Consider the Fourier series\n\n\\begin{align*}\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\n\\end{align*}\n\nfor $0 \\leq t \\leq 1$.\n\n\\textbf{(d)} Given that $c_n = \\frac1{2\\pi^2 n^2}$ for $n \\not= 0$, use\nParseval's formula to find the value of the infinite sum\n$\\sum_{n=1}^\\infty \\frac1{n^4}$. Calculate a numerical expression - you\ndo not need to simplify your answer.", 
+    "statement_raw": "Consider the Fourier series\n\n:&lt;math>\nt^2 - t = \\sum_{n = -\\infty}^\\infty c_ne^{2\\pi int}\n&lt;/math>\n\nfor &lt;math>0 \\leq t \\leq 1&lt;/math>.\n\n'''(d)''' Given that &lt;math>c_n = \\frac1{2\\pi^2 n^2}&lt;/math> for &lt;math>n \\not= 0&lt;/math>, use Parseval's formula to find the value of the infinite sum &lt;math>\\sum_{n=1}^\\infty \\frac1{n^4}&lt;/math>. Calculate a numerical expression - you do not need to simplify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Fourier_series", 
+        "Parsevals_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_04_(d)", 
+    "year": 2012
 }

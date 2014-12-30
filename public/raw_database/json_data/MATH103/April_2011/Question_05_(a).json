@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_05_(a)", 
-    "course": "MATH103", 
-    "statement": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nWhat is the probability density function for the failure time of\nlightbulb $A$?", 
-    "year": 2011, 
-    "sols": [
-        "The probability density function is the derivative of the cumulative\ndistribution function,\n\n\\begin{align*}\np_A(t) &= F_A'(t) = \\frac{d}{dt} (1-e^{-t}) = 0-(-e^{-t})=e^{-t}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(p_A(t)=e^{-t}.\\)</span></p>\n", 
+    "answer_latex": " $p_A(t)=e^{-t}.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>How is the probability density function related to the cumulative distribution function?</p>\n"
+    ], 
+    "hints_latex": [
         "How is the probability density function related to the cumulative\ndistribution function?"
-    ]
+    ], 
+    "hints_raw": [
+        "How is the probability density function related to the cumulative distribution function?\n"
+    ], 
+    "num_votes": 4, 
+    "question": "5 (a)", 
+    "rating": 65, 
+    "sols_html": [
+        "<p>The probability density function is the derivative of the cumulative distribution function,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np_A(t) &amp;= F_A&#39;(t) = \\frac{d}{dt} (1-e^{-t}) = 0-(-e^{-t})=e^{-t}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The probability density function is the derivative of the cumulative\ndistribution function,\n\n\\begin{align*}\np_A(t) &= F_A'(t) = \\frac{d}{dt} (1-e^{-t}) = 0-(-e^{-t})=e^{-t}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The probability density function is the derivative of the cumulative distribution function,\n\n&lt;math> \\begin{align}\np_A(t) &amp;= F_A'(t) = \\frac{d}{dt} (1-e^{-t}) = 0-(-e^{-t})=e^{-t}.\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>In a room two different lightbulbs <span class=\"math\">\\(A\\)</span> and <span class=\"math\">\\(B\\)</span> are installed. According to the packaging, lightbulb <span class=\"math\">\\(A\\)</span> fails before time <span class=\"math\">\\(t\\)</span> with probability <span class=\"math\">\\(F_A(t)=1-e^{-t}\\)</span> (<span class=\"math\">\\(t\\)</span> in months). Lightbulb <span class=\"math\">\\(B\\)</span> has a probability density function for the failure time given by <span class=\"math\">\\(p_B(t)=Ce^{-2t}.\\)</span></p>\n<p>What is the probability density function for the failure time of lightbulb <span class=\"math\">\\(A\\)</span>?</p>\n", 
+    "statement_latex": "In a room two different lightbulbs $A$ and $B$ are installed. According\nto the packaging, lightbulb $A$ fails before time $t$ with probability\n$F_A(t)=1-e^{-t}$ ($t$ in months). Lightbulb $B$ has a probability\ndensity function for the failure time given by $p_B(t)=Ce^{-2t}.$\n\nWhat is the probability density function for the failure time of\nlightbulb $A$?", 
+    "statement_raw": "In a  room two different lightbulbs &lt;math>A&lt;/math> and &lt;math>B&lt;/math> are installed. According to the packaging, lightbulb &lt;math>A&lt;/math> fails before time &lt;math>t&lt;/math> with probability &lt;math>F_A(t)=1-e^{-t}&lt;/math> (&lt;math>t&lt;/math> in months). Lightbulb &lt;math>B&lt;/math> has a probability density function for the failure time given by &lt;math>p_B(t)=Ce^{-2t}.&lt;/math>\n\nWhat is the probability density function for the failure time of lightbulb &lt;math>A&lt;/math>?\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_05_(a)", 
+    "year": 2011
 }

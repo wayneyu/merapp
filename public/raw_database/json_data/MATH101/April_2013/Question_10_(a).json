@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_10_(a)", 
-    "course": "MATH101", 
-    "statement": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nFind the power series representation for\n$\\displaystyle \\int \\frac{1}{1+x^3} \\ dx$ centred at 0 (i.e. in powers\nof $\\displaystyle x$)", 
-    "year": 2013, 
-    "sols": [
-        "Since\n\n\\begin{align*}\\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n\\end{align*}\n\nwe have\n\n\\begin{align*}\\displaystyle \n\\frac{1}{1+x^3} = \\frac{1}{1-(-x^3)} = \\sum_{n=0}^\\infty (-x^3)^n = \\sum_{n=0}^\\infty (-1)^nx^{3n}\\end{align*}\n\nIntegrating term by term,\n\n\\begin{align*}\n\\int \\frac{1}{1+x^3} \\ dx &= \\int \\left(\\sum_{n=0}^\\infty (-1)^nx^{3n}\\right) \\ dx \\\\\n&= \\sum_{n=0}^\\infty \\int (-1)^nx^{3n} \\ dx \\\\\n&= \\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\frac{1}{1+x^3} \\ dx=\\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C\\)</span></p>\n", 
+    "answer_latex": " $\\int \\frac{1}{1+x^3} \\ dx=\\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Think about the first examples of power series that you learned, and try to modify it.</p>\n", 
+        "<p>Recall <span class=\"math\">\\(\\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n\\)</span>.</p>\n", 
+        "<p>Don&#8217;t forget the constant of integration!</p>\n"
+    ], 
+    "hints_latex": [
         "Think about the first examples of power series that you learned, and try\nto modify it.", 
         "Recall $\\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n$.", 
         "Don't forget the constant of integration!"
-    ]
+    ], 
+    "hints_raw": [
+        "Think about the first examples of power series that you learned, and try to modify it.\n", 
+        "Recall &lt;math> \\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n &lt;/math>.\n", 
+        "Don't forget the constant of integration!\n"
+    ], 
+    "num_votes": 9, 
+    "question": "10 (a)", 
+    "rating": 54, 
+    "sols_html": [
+        "<p>Since</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n\\end{aligned}\\]</span></p>\n<p>we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \n\\frac{1}{1+x^3} = \\frac{1}{1-(-x^3)} = \\sum_{n=0}^\\infty (-x^3)^n = \\sum_{n=0}^\\infty (-1)^nx^{3n}\\end{aligned}\\]</span></p>\n<p>Integrating term by term,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{1}{1+x^3} \\ dx &amp;= \\int \\left(\\sum_{n=0}^\\infty (-1)^nx^{3n}\\right) \\ dx \\\\\n&amp;= \\sum_{n=0}^\\infty \\int (-1)^nx^{3n} \\ dx \\\\\n&amp;= \\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Since\n\n\\begin{align*}\n\\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n\n\\end{align*}\n\nwe have\n\n\\begin{align*}\n\\displaystyle \n\\frac{1}{1+x^3} = \\frac{1}{1-(-x^3)} = \\sum_{n=0}^\\infty (-x^3)^n = \\sum_{n=0}^\\infty (-1)^nx^{3n}\n\\end{align*}\n\nIntegrating term by term,\n\n\\begin{align*}\n\\int \\frac{1}{1+x^3} \\ dx &= \\int \\left(\\sum_{n=0}^\\infty (-1)^nx^{3n}\\right) \\ dx \\\\\n&= \\sum_{n=0}^\\infty \\int (-1)^nx^{3n} \\ dx \\\\\n&= \\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Since\n\n:&lt;math> \\displaystyle \\frac{1}{1-t} = \\sum_{n=0}^\\infty t^n &lt;/math>\n\nwe have\n\n:&lt;math> \\displaystyle \n\\frac{1}{1+x^3} = \\frac{1}{1-(-x^3)} = \\sum_{n=0}^\\infty (-x^3)^n = \\sum_{n=0}^\\infty (-1)^nx^{3n} &lt;/math>\n\nIntegrating term by term,\n\n:&lt;math> \\displaystyle \n\\begin{align}\n\\int \\frac{1}{1+x^3} \\ dx &amp; = \\int \\left(\\sum_{n=0}^\\infty (-1)^nx^{3n}\\right) \\ dx \\\\\n&amp; = \\sum_{n=0}^\\infty \\int (-1)^nx^{3n} \\ dx \\\\\n&amp; = \\left(\\sum_{n=0}^\\infty \\frac{(-1)^n}{3n+1}x^{3n+1}\\right) + C\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p><strong>Full-Solution Problems</strong>. In questions 4&#226;&#128;&#147;12, justify your answers and <strong>show all your work</strong>. If a box is provided, write your final answer there. <strong>Unless otherwise indicated, simplification of numerical answers is required in these questions</strong>.</p>\n<p>Find the power series representation for <span class=\"math\">\\(\\displaystyle \\int \\frac{1}{1+x^3} \\ dx\\)</span> centred at 0 (i.e. in powers of <span class=\"math\">\\(\\displaystyle x\\)</span>)</p>\n", 
+    "statement_latex": "\\textbf{Full-Solution Problems}. In questions 4\u00e2\u0080\u009312, justify your\nanswers and \\textbf{show all your work}. If a box is provided, write\nyour final answer there. \\textbf{Unless otherwise indicated,\nsimplification of numerical answers is required in these questions}.\n\nFind the power series representation for\n$\\displaystyle \\int \\frac{1}{1+x^3} \\ dx$ centred at 0 (i.e. in powers\nof $\\displaystyle x$)", 
+    "statement_raw": "'''Full-Solution Problems'''. In questions 4\u201312, justify your answers and '''show all your work'''. If\na box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these questions'''.\n\nFind the power series representation for &lt;math> \\displaystyle \\int \\frac{1}{1+x^3} \\ dx&lt;/math> centred at 0 (i.e. in powers of &lt;math> \\displaystyle x&lt;/math>)\n", 
+    "term": "April", 
+    "topics": [
+        "Power_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2013/Question_10_(a)", 
+    "year": 2013
 }

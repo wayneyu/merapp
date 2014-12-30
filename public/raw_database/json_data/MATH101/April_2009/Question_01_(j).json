@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_01_(j)", 
-    "course": "MATH101", 
-    "statement": "Give the Simpson$^{\\prime}$s rule approximation to\n\n\\begin{align*}\\int_0^2 \\sin(e^x) \\,dx\\end{align*} using 4 equal subintervals (do not simplify\nyour answer).", 
-    "year": 2009, 
-    "sols": [
-        "The formula for the Simpson's rule is given by\n\n\\begin{align*}S_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{align*}\n\nWhen $n=4$, we have that\n\n\\begin{align*}x_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\\end{align*}\n\nand thus, the Simpson's rule approximation that we need is\n\n\\begin{align*}\nS_{n} &= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(S_{n}=\\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\\)</span></p>\n", 
+    "answer_latex": " $S_{n}=\\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))$ ", 
+    "contributors": [
+        "CindyBlois", 
+        "Konradbe", 
+        "DavidKohler", 
+        "Simontse"
     ], 
-    "hints": [
-        "The formula for the\n\\href{http://en.wikipedia.org/wiki/Simpson's_rule}{Simpson's rule} is\ngiven by\n\n\\begin{align*}S_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{align*}\n\nwhere as always $n$ is an even integer."
-    ]
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The formula for the <span>Simpson&#8217;s rule</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{aligned}\\]</span></p>\n<p>where as always <span class=\"math\">\\(n\\)</span> is an even integer.</p>\n"
+    ], 
+    "hints_latex": [
+        "The formula for the\n{Simpson's rule} is\ngiven by\n\n\\begin{align*}\nS_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\n\\end{align*}\n\nwhere as always $n$ is an even integer."
+    ], 
+    "hints_raw": [
+        "The formula for the [http://en.wikipedia.org/wiki/Simpson's_rule Simpson's rule] is given by\n\n:&lt;math>\nS_{n} := \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\n&lt;/math>\n\nwhere as always &lt;math> n &lt;/math> is an even integer.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (j)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The formula for the Simpson&#8217;s rule is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\\end{aligned}\\]</span></p>\n<p>When <span class=\"math\">\\(n=4\\)</span>, we have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nx_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\\end{aligned}\\]</span></p>\n<p>and thus, the Simpson&#8217;s rule approximation that we need is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS_{n} &amp;= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&amp;= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The formula for the Simpson's rule is given by\n\n\\begin{align*}\nS_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\n\\end{align*}\n\nWhen $n=4$, we have that\n\n\\begin{align*}\nx_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\n\\end{align*}\n\nand thus, the Simpson's rule approximation that we need is\n\n\\begin{align*}\nS_{n} &= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The formula for the Simpson's rule is given by\n\n:&lt;math>\nS_{n} = \\frac{\\Delta x}{3}\\left(f(x_{0}) + 4f(x_{1}) + 2f(x_{2}) + ... + 4f(x_{n-1}) + f(x_{n})\\right)\n&lt;/math>\n\nWhen &lt;math> n=4 &lt;/math>, we have that \n\n:&lt;math>\nx_{i} = a + i\\Delta x = 0 + \\frac{(2-0)i}{4} = \\frac{i}{2}\n&lt;/math>\n\nand thus, the Simpson's rule approximation that we need is\n\n:&lt;math>\\begin{align}\nS_{n} &amp;= \\frac{1}{2\\cdot 3}\\left(f(0) + 4f(0.5) + 2f(1) +4f(1.5) + f(2)\\right)\\\\\n&amp;= \\frac{1}{6}(\\sin(e^0) + 4\\sin(e^{0.5}) + 2\\sin(e^1) + 4\\sin(e^{1.5}) + \\sin(e^2))\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Give the Simpson<span class=\"math\">\\(^{\\prime}\\)</span>s rule approximation to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^2 \\sin(e^x) \\,dx\\end{aligned}\\]</span></p>\n<p>using 4 equal subintervals (do not simplify your answer).</p>\n", 
+    "statement_latex": "Give the Simpson$^{\\prime}$s rule approximation to\n\n\\begin{align*}\n\\int_0^2 \\sin(e^x) \\,dx\n\\end{align*} using 4 equal subintervals (do not simplify\nyour answer).", 
+    "statement_raw": "Give the Simpson\u2019s rule approximation to\n:&lt;math>\n\\int_0^2 \\sin(e^x) \\,dx\n&lt;/math>\nusing 4 equal subintervals (do not simplify your answer).\n", 
+    "term": "April", 
+    "topics": [
+        "Simpson%27s_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(j)", 
+    "year": 2009
 }

@@ -1,14 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH215", 
-    "statement": "Given the function\n\n\\begin{align*}f(t) = \\begin{cases}\n0, & t<1 \\\\\n2\\pi, & 1 \\leq t < 2 \\\\\n\\pi, & t \\geq 2\n\\end{cases}\\end{align*}\n\n\\textbf{(a)} Find the Laplace transform of \\emph{f(t)}.", 
-    "year": 2011, 
-    "sols": [
-        "The Laplace transform, F(s), for a function f(t) is given by\n\n\\begin{align*}F(s)=\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt.\\end{align*}\n\nSince our function is piecewise defined we can split up the integral and\nwrite\n\n\\begin{align*}\nF(s)&=\\int_0^1f(t)dt+\\int_1^2f(t)\\exp(-st)dt+\\int_2^\\infty{}f(t)\\exp(-st)dt\\\\\nF(s)&=\\int_0^10dt+2\\pi\\int_1^2\\exp(-st)dt+\\pi\\int_2^\\infty\\exp(-st)dt.\\end{align*}\n\nThe first integral is just zero. For the second integral we get,\n\n\\begin{align*}2\\pi\\int_1^2\\exp(-st)dt=-\\left.\\frac{2\\pi}{s}\\exp(-st)\\right|_1^2=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s).\\end{align*}\n\nFor the third integral we get\n\n\\begin{align*}\\pi\\int_2^\\infty\\exp(-st)dt=-\\left.\\frac{\\pi}{s}\\exp(-st)\\right|_2^\\infty=\\frac{\\pi}{s}\\exp(-2s).\\end{align*}\n\nAdding the two integrals together we get\n\n\\begin{align*}F(s)=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s)+\\frac{\\pi}{s}\\exp(-2s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(F(s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\\)</span></p>\n", 
+    "answer_latex": " $F(s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "ChristinaKoch", 
+        "Konradbe", 
+        "MikeL"
     ], 
-    "hints": [
-        "Recall that the Laplace transform for a function f(t) is\n\n\\begin{align*}\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt\\end{align*}", 
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall that the Laplace transform for a function f(t) is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt\\end{aligned}\\]</span></p>\n", 
+        "<p>How do we integrate a piecewise function?</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that the Laplace transform for a function f(t) is\n\n\\begin{align*}\n\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt\n\\end{align*}", 
         "How do we integrate a piecewise function?"
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that the Laplace transform for a function f(t) is\n\n:&lt;math>\n\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt\n&lt;/math>\n", 
+        "How do we integrate a piecewise function?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (a)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>The Laplace transform, F(s), for a function f(t) is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(s)=\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt.\\end{aligned}\\]</span></p>\n<p>Since our function is piecewise defined we can split up the integral and write</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(s)&amp;=\\int_0^1f(t)dt+\\int_1^2f(t)\\exp(-st)dt+\\int_2^\\infty{}f(t)\\exp(-st)dt\\\\\nF(s)&amp;=\\int_0^10dt+2\\pi\\int_1^2\\exp(-st)dt+\\pi\\int_2^\\infty\\exp(-st)dt.\\end{aligned}\\]</span></p>\n<p>The first integral is just zero. For the second integral we get,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2\\pi\\int_1^2\\exp(-st)dt=-\\left.\\frac{2\\pi}{s}\\exp(-st)\\right|_1^2=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s).\\end{aligned}\\]</span></p>\n<p>For the third integral we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\pi\\int_2^\\infty\\exp(-st)dt=-\\left.\\frac{\\pi}{s}\\exp(-st)\\right|_2^\\infty=\\frac{\\pi}{s}\\exp(-2s).\\end{aligned}\\]</span></p>\n<p>Adding the two integrals together we get</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nF(s)=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s)+\\frac{\\pi}{s}\\exp(-2s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The Laplace transform, F(s), for a function f(t) is given by\n\n\\begin{align*}\nF(s)=\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt.\n\\end{align*}\n\nSince our function is piecewise defined we can split up the integral and\nwrite\n\n\\begin{align*}\nF(s)&=\\int_0^1f(t)dt+\\int_1^2f(t)\\exp(-st)dt+\\int_2^\\infty{}f(t)\\exp(-st)dt\\\\\nF(s)&=\\int_0^10dt+2\\pi\\int_1^2\\exp(-st)dt+\\pi\\int_2^\\infty\\exp(-st)dt.\n\\end{align*}\n\nThe first integral is just zero. For the second integral we get,\n\n\\begin{align*}\n2\\pi\\int_1^2\\exp(-st)dt=-\\left.\\frac{2\\pi}{s}\\exp(-st)\\right|_1^2=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s).\n\\end{align*}\n\nFor the third integral we get\n\n\\begin{align*}\n\\pi\\int_2^\\infty\\exp(-st)dt=-\\left.\\frac{\\pi}{s}\\exp(-st)\\right|_2^\\infty=\\frac{\\pi}{s}\\exp(-2s).\n\\end{align*}\n\nAdding the two integrals together we get\n\n\\begin{align*}\nF(s)=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s)+\\frac{\\pi}{s}\\exp(-2s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The Laplace transform, F(s), for a function f(t) is given by\n\n:&lt;math>\nF(s)=\\mathcal{L}(f(t))=\\int_0^\\infty{}f(t)\\exp(-st)dt.\n&lt;/math>\n\nSince our function is piecewise defined we can split up the integral and write\n\n:&lt;math>\n\\begin{align}\nF(s)&amp;=\\int_0^1f(t)dt+\\int_1^2f(t)\\exp(-st)dt+\\int_2^\\infty{}f(t)\\exp(-st)dt\\\\\nF(s)&amp;=\\int_0^10dt+2\\pi\\int_1^2\\exp(-st)dt+\\pi\\int_2^\\infty\\exp(-st)dt.\n\\end{align}\n&lt;/math>\n\nThe first integral is just zero.  For the second integral we get,\n\n:&lt;math>\n2\\pi\\int_1^2\\exp(-st)dt=-\\left.\\frac{2\\pi}{s}\\exp(-st)\\right|_1^2=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s).\n&lt;/math>\n\nFor the third integral we get\n:&lt;math>\n\\pi\\int_2^\\infty\\exp(-st)dt=-\\left.\\frac{\\pi}{s}\\exp(-st)\\right|_2^\\infty=\\frac{\\pi}{s}\\exp(-2s).\n&lt;/math>\n\nAdding the two integrals together we get\n\n:&lt;math>\nF(s)=-\\frac{2\\pi}{s}\\exp(-2s)+\\frac{2\\pi}{s}\\exp(-s)+\\frac{\\pi}{s}\\exp(-2s)=\\frac{\\pi}{s}\\left(2\\exp(-s)-\\exp(-2s)\\right).\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Given the function</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(t) = \\begin{cases}\n0, &amp; t&lt;1 \\\\\n2\\pi, &amp; 1 \\leq t &lt; 2 \\\\\n\\pi, &amp; t \\geq 2\n\\end{cases}\\end{aligned}\\]</span></p>\n<p><strong>(a)</strong> Find the Laplace transform of <em>f(t)</em>.</p>\n", 
+    "statement_latex": "Given the function\n\n\\begin{align*}\nf(t) = \\begin{cases}\n0, & t<1 \\\\\n2\\pi, & 1 \\leq t < 2 \\\\\n\\pi, & t \\geq 2\n\\end{cases}\n\\end{align*}\n\n\\textbf{(a)} Find the Laplace transform of \\emph{f(t)}.", 
+    "statement_raw": "Given the function\n\n:&lt;math>\nf(t) = \\begin{cases}\n0, &amp; t&lt;1 \\\\\n2\\pi, &amp; 1 \\leq t &lt; 2 \\\\\n\\pi, &amp; t \\geq 2\n\\end{cases}\n&lt;/math>\n\n'''(a)''' Find the Laplace transform of ''f(t)''.\n", 
+    "term": "December", 
+    "topics": [
+        "Laplace_transforms"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2011/Question_05_(a)", 
+    "year": 2011
 }

@@ -1,14 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_04_(b)", 
-    "course": "MATH103", 
-    "statement": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\begin{align*}I = \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "Let $\\displaystyle u = \\ln(x)$ so that $du = \\tfrac{1}{x} dx$.\n\nNotice that $\\displaystyle u(e) = \\ln(e) = 1$ and\n$\\displaystyle u(e^{2}) = \\ln(e^{2}) = 2\\ln(e) = 2$. Hence\n\n$\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\int_{1}^{2} \\frac{1}{u}\\, du = \\ln(u)\\mid_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)$\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\ln(2)\\)</span>completing the question.</p>\n", 
+    "answer_latex": "$\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\ln(2)$completing the question.", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles", 
+        "CindyBlois"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Try a substitution. Which function has a derivative that is already in the problem?</p>\n", 
+        "<p>Try the substitution <span class=\"math\">\\(u = ln(x)\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try a substitution. Which function has a derivative that is already in\nthe problem?", 
         "Try the substitution $u = ln(x)$"
-    ]
+    ], 
+    "hints_raw": [
+        "Try a substitution. Which function has a derivative that is already in the problem?\n", 
+        "Try the substitution &lt;math>u = ln(x) &lt;/math>\n"
+    ], 
+    "num_votes": 7, 
+    "question": "4 (b)", 
+    "rating": 71, 
+    "sols_html": [
+        "<p>Let <span class=\"math\">\\(\\displaystyle u = \\ln(x)\\)</span> so that <span class=\"math\">\\(du = \\tfrac{1}{x} dx\\)</span>.</p>\n<p>Notice that <span class=\"math\">\\(\\displaystyle u(e) = \\ln(e) = 1\\)</span> and <span class=\"math\">\\(\\displaystyle u(e^{2}) = \\ln(e^{2}) = 2\\ln(e) = 2\\)</span>. Hence</p>\n<p><span class=\"math\">\\(\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\int_{1}^{2} \\frac{1}{u}\\, du = \\ln(u)\\mid_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)\\)</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let $\\displaystyle u = \\ln(x)$ so that $du = \\tfrac{1}{x} dx$.\n\nNotice that $\\displaystyle u(e) = \\ln(e) = 1$ and\n$\\displaystyle u(e^{2}) = \\ln(e^{2}) = 2\\ln(e) = 2$. Hence\n\n$\\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\int_{1}^{2} \\frac{1}{u}\\, du = \\ln(u)\\mid_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)$\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Let &lt;math>\\displaystyle u = \\ln(x) &lt;/math> so that &lt;math>du = \\tfrac{1}{x} dx &lt;/math>.\n\nNotice that &lt;math>\\displaystyle u(e) = \\ln(e) = 1 &lt;/math> and &lt;math>\\displaystyle u(e^{2}) = \\ln(e^{2}) = 2\\ln(e) = 2 &lt;/math>. Hence\n\n&lt;math>  \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx = \\int_{1}^{2} \\frac{1}{u}\\, du = \\ln(u)\\mid_{1}^{2} = \\ln(2) - \\ln(1) = \\ln(2)&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Compute the following integrals. (Leave your answers in terms of <span class=\"math\">\\(e\\)</span> or <span class=\"math\">\\(\\ln()\\)</span>.)</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\begin{align*}\nI = \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx\n\\end{align*}", 
+    "statement_raw": "Compute the following integrals. (Leave your answers in terms of &lt;math>e&lt;/math> or &lt;math>\\ln()&lt;/math>.)\n\n:&lt;math> I = \\int_e^{e^2} \\frac1{x\\ln(x)}\\,dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_04_(b)", 
+    "year": 2010
 }

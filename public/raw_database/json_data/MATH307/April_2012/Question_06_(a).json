@@ -1,11 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_06_(a)", 
+    "answer_html": "<p><span class=\"math\">\\(c_{n} = \\frac{1}{T}\\int_{0}^{T}e^{-2\\pi \\ i\\frac{n}{T}t}y(t)dt\\)</span></p>\n", 
+    "answer_latex": "$c_{n} = \\frac{1}{T}\\int_{0}^{T}e^{-2\\pi \\ i\\frac{n}{T}t}y(t)dt$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "A continuous measurement of the temperature in Vancouver, \\emph{y(t)},\nfor $0 \\leq t \\leq T$, is decomposed as a Fourier series of the form\n\n\\begin{align*}y(t) = \\sum_{n=-\\infty}^\\infty c_n e^{2\\pi i\\omega_n t}\\end{align*} where\n$\\omega_n = n/T$.\n\nWhat important property do the set of functions\n$\\displaystyle \\{e^{2\\pi i\\omega t}\\}$ have? What is the expression for\nthe Fourier coefficients \\emph{c\\textsubscript{n}} in terms of\n\\emph{y(t)}?", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "6 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>For the first half of the question, the set of functions <span class=\"math\">\\(\\{e^{2\\pi i\\omega _nt}\\}\\)</span> form an orthonormal basis for the space <span class=\"math\">\\(L^2([0,T])\\)</span>.</p>\n<p>Using Euler<span class=\"math\">\\(^{\\prime}\\)</span>s formula we can express <span class=\"math\">\\(e^{2\\pi iw_{n}t}\\)</span> as <span class=\"math\">\\(\\displaystyle \\cos(2\\pi w_{n}t) + i\\sin(2\\pi w_{n}t)\\)</span></p>\n<p>So the temperature function y(t) can be viewed as a wave-like function with period T decomposed into a combination of sinusoidal waves. The Fourier series represents it as a purely oscillatory components with frequency <span class=\"math\">\\(\\omega _{n}\\)</span>. Here the phase is 0.</p>\n<p>For the Fourier coefficients <span class=\"math\">\\(c_{n}\\)</span>, since we have y(t) = <span class=\"math\">\\(\\sum_{n=-\\propto }^{\\propto }c_{n}e^{2\\pi iw_{n}t}\\)</span> then we an wirte <span class=\"math\">\\(c_{n}\\)</span> as</p>\n<p><span class=\"math\">\\(c_{n} = \\frac{1}{T-0}\\int_{0}^{T}e^{-2\\pi i\\omega _{n}t}y(t)dt = \\frac{1}{T}\\int_{0}^{T}e^{-2\\pi \\ i\\frac{n}{T}t}y(t)dt\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "For the first half of the question, the set of functions\n$\\{e^{2\\pi i\\omega _nt}\\}$ form an orthonormal basis for the space\n$L^2([0,T])$.\n\nUsing Euler$^{\\prime}$s formula we can express $e^{2\\pi iw_{n}t}$ as\n$\\displaystyle \\cos(2\\pi w_{n}t) + i\\sin(2\\pi w_{n}t)$\n\nSo the temperature function y(t) can be viewed as a wave-like function\nwith period T decomposed into a combination of sinusoidal waves. The\nFourier series represents it as a purely oscillatory components with\nfrequency $\\omega _{n}$. Here the phase is 0.\n\nFor the Fourier coefficients $c_{n}$, since we have y(t) =\n$\\sum_{n=-\\propto }^{\\propto }c_{n}e^{2\\pi iw_{n}t}$ then we an wirte\n$c_{n}$ as\n\n$c_{n} = \\frac{1}{T-0}\\int_{0}^{T}e^{-2\\pi i\\omega _{n}t}y(t)dt = \\frac{1}{T}\\int_{0}^{T}e^{-2\\pi \\ i\\frac{n}{T}t}y(t)dt$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "For the first half of the question, the set of functions &lt;math>\\{e^{2\\pi i\\omega _nt}\\}&lt;/math> form an orthonormal basis for the space &lt;math>L^2([0,T])&lt;/math>.\n\nUsing Euler\u2019s formula we can express &lt;math>e^{2\\pi iw_{n}t}&lt;/math> as &lt;math>\\displaystyle \\cos(2\\pi w_{n}t) + i\\sin(2\\pi w_{n}t)&lt;/math>\n\nSo the temperature function y(t) can be viewed as a wave-like function with period T decomposed into a combination of sinusoidal waves. The Fourier series represents it as a purely oscillatory components with frequency &lt;math>\\omega _{n}&lt;/math>. Here the phase is 0.\n\nFor the Fourier coefficients &lt;math>c_{n}&lt;/math>, since we have y(t) = &lt;math>\\sum_{n=-\\propto }^{\\propto }c_{n}e^{2\\pi iw_{n}t}&lt;/math> then we an wirte &lt;math>c_{n}&lt;/math> as\n\n&lt;math>c_{n} = \\frac{1}{T-0}\\int_{0}^{T}e^{-2\\pi i\\omega _{n}t}y(t)dt = \\frac{1}{T}\\int_{0}^{T}e^{-2\\pi \\ i\\frac{n}{T}t}y(t)dt&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>A continuous measurement of the temperature in Vancouver, <em>y(t)</em>, for <span class=\"math\">\\(0 \\leq t \\leq T\\)</span>, is decomposed as a Fourier series of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t) = \\sum_{n=-\\infty}^\\infty c_n e^{2\\pi i\\omega_n t}\\end{aligned}\\]</span></p>\n<p>where <span class=\"math\">\\(\\omega_n = n/T\\)</span>.</p>\n<p>What important property do the set of functions <span class=\"math\">\\(\\displaystyle \\{e^{2\\pi i\\omega t}\\}\\)</span> have? What is the expression for the Fourier coefficients <em>c<sub>n</sub></em> in terms of <em>y(t)</em>?</p>\n", 
+    "statement_latex": "A continuous measurement of the temperature in Vancouver, \\emph{y(t)},\nfor $0 \\leq t \\leq T$, is decomposed as a Fourier series of the form\n\n\\begin{align*}\ny(t) = \\sum_{n=-\\infty}^\\infty c_n e^{2\\pi i\\omega_n t}\n\\end{align*} where\n$\\omega_n = n/T$.\n\nWhat important property do the set of functions\n$\\displaystyle \\{e^{2\\pi i\\omega t}\\}$ have? What is the expression for\nthe Fourier coefficients \\emph{c\\textsubscript{n}} in terms of\n\\emph{y(t)}?", 
+    "statement_raw": "A continuous measurement of the temperature in Vancouver, ''y(t)'', for &lt;math>0 \\leq t \\leq T&lt;/math>, is decomposed as a Fourier series of the form\n\n:&lt;math>\ny(t) = \\sum_{n=-\\infty}^\\infty c_n e^{2\\pi i\\omega_n t}\n&lt;/math>\nwhere &lt;math>\\omega_n = n/T&lt;/math>.\n\nWhat important property do the set of functions &lt;math>\\displaystyle \\{e^{2\\pi i\\omega t}\\}&lt;/math> have? What is the expression for the Fourier coefficients ''c&lt;sub>n&lt;/sub>'' in terms of ''y(t)''?\n", 
+    "term": "April", 
+    "topics": [
+        "Fourier_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2012/Question_06_(a)", 
+    "year": 2012
 }

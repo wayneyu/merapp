@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_B_01_(b)", 
-    "course": "MATH152", 
-    "statement": "Three identical fields of size one hectare are planted with different\namounts of three kinds of wheat (types 1, 2 and 3). The first field is\ndivided in three equal parts with one type of wheat planted on each\npart. It yields 12 tons of total harvest. The second field is divided in\ntwo equal parts with type 2 planted on one part and type 3 planted on\nthe other. It yields 10 tons. The third field is divided in two equal\nparts with type 1 planted on one part and type 2 on the other. It yields\n16 tons.\n\nWrite the system you found above in augmented matrix form.", 
-    "year": 2011, 
-    "sols": [
-        "Recall from\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B1_(a)}{part\n(a)} that we have our linear system of the form\n\n\\begin{align*}A\\mathbf{x}=\\mathbf{b}\\end{align*}\n\nis:\n\n\\begin{align*}\n\\begin{bmatrix}\n\\frac{1}{3}  &  \\frac{1}{3}  &  \\frac{1}{3}\\\\\\\\\n0  &  \\frac{1}{2}  &  \\frac{1}{2}\\\\\\\\\n\\frac{1}{2}  &  \\frac{1}{2}  &  0\n\\end{bmatrix}\n\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\n\\end{bmatrix}\n&=\n\\begin{bmatrix}\n12\\\\\n10\\\\\n16\n\\end{bmatrix}\\end{align*}\n\nTherefore, we form an augmented matrix by adding the output vector\n\\textbf{b} as a new column in A. Therefore the augmented matrix is\n\n\\begin{align*}\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}  &  \\frac{1}{3}  &  \\frac{1}{3}  &  12\\\\\n  &  &  &\\\\\n0  &  \\frac{1}{2}  &  \\frac{1}{2}  &  10\\\\\n  &  &  &\\\\\n\\frac{1}{2}  &  \\frac{1}{2}  &  0  &  16\n\\end{array}\\right]\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}    \\frac{1}{3}    \\frac{1}{3}    12\\\\\n      \\\\\n0    \\frac{1}{2}    \\frac{1}{2}    10\\\\\n      \\\\\n\\frac{1}{2}    \\frac{1}{2}    0    16\n\\end{array}\\right]\\)</span></p>\n", 
+    "answer_latex": " $\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}    \\frac{1}{3}    \\frac{1}{3}    12\\\\\n      \\\\\n0    \\frac{1}{2}    \\frac{1}{2}    10\\\\\n      \\\\\n\\frac{1}{2}    \\frac{1}{2}    0    16\n\\end{array}\\right]$ ", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
-        "Recall that an augmented matrix A with a vector \\textbf{b} is\n\n\\begin{align*}[A|\\mathbf{b}].\\end{align*}\n\nThis notation refers to the original matrix A with an extra column (in\nthis case \\textbf{b}) appended on."
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall that an augmented matrix A with a vector <strong>b</strong> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n[A|\\mathbf{b}].\\end{aligned}\\]</span></p>\n<p>This notation refers to the original matrix A with an extra column (in this case <strong>b</strong>) appended on.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that an augmented matrix A with a vector \\textbf{b} is\n\n\\begin{align*}\n[A|\\mathbf{b}].\n\\end{align*}\n\nThis notation refers to the original matrix A with an extra column (in\nthis case \\textbf{b}) appended on."
+    ], 
+    "hints_raw": [
+        "Recall that an augmented matrix A with a vector '''b''' is\n\n:&lt;math>\n[A|\\mathbf{b}].\n&lt;/math>\n\nThis notation refers to the original matrix A with an extra column (in this case '''b''') appended on.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 01 (b)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>Recall from <span>part (a)</span> that we have our linear system of the form</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA\\mathbf{x}=\\mathbf{b}\\end{aligned}\\]</span></p>\n<p>is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n\\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  \\frac{1}{3}\\\\\\\\\n0  &amp;  \\frac{1}{2}  &amp;  \\frac{1}{2}\\\\\\\\\n\\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  0\n\\end{bmatrix}\n\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\n\\end{bmatrix}\n&amp;=\n\\begin{bmatrix}\n12\\\\\n10\\\\\n16\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Therefore, we form an augmented matrix by adding the output vector <strong>b</strong> as a new column in A. Therefore the augmented matrix is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  12\\\\\n  &amp;  &amp;  &amp;\\\\\n0  &amp;  \\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  10\\\\\n  &amp;  &amp;  &amp;\\\\\n\\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  0  &amp;  16\n\\end{array}\\right]\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Recall from\n{part\n(a)} that we have our linear system of the form\n\n\\begin{align*}\nA\\mathbf{x}=\\mathbf{b}\n\\end{align*}\n\nis:\n\n\\begin{align*}\n\\begin{bmatrix}\n\\frac{1}{3}  &  \\frac{1}{3}  &  \\frac{1}{3}\\\\\\\\\n0  &  \\frac{1}{2}  &  \\frac{1}{2}\\\\\\\\\n\\frac{1}{2}  &  \\frac{1}{2}  &  0\n\\end{bmatrix}\n\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\n\\end{bmatrix}\n&=\n\\begin{bmatrix}\n12\\\\\n10\\\\\n16\n\\end{bmatrix}\n\\end{align*}\n\nTherefore, we form an augmented matrix by adding the output vector\n\\textbf{b} as a new column in A. Therefore the augmented matrix is\n\n\\begin{align*}\n\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}  &  \\frac{1}{3}  &  \\frac{1}{3}  &  12\\\\\n  &  &  &\\\\\n0  &  \\frac{1}{2}  &  \\frac{1}{2}  &  10\\\\\n  &  &  &\\\\\n\\frac{1}{2}  &  \\frac{1}{2}  &  0  &  16\n\\end{array}\\right]\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Recall from [[Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B1_(a)|part (a)]] that we have our linear system of the form\n\n:&lt;math>A\\mathbf{x}=\\mathbf{b}&lt;/math>\n\nis:\n:&lt;math>\n\\begin{align}\n\\begin{bmatrix}\n\\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  \\frac{1}{3}\\\\\\\\\n0  &amp;  \\frac{1}{2}  &amp;  \\frac{1}{2}\\\\\\\\\n\\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  0\n\\end{bmatrix}\n\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\n\\end{bmatrix}\n&amp;=\n\\begin{bmatrix}\n12\\\\\n10\\\\\n16\n\\end{bmatrix}\n\\end{align}\n&lt;/math>\n\nTherefore, we form an augmented matrix by adding the output vector '''b''' as a new column in A.  Therefore the augmented matrix is\n\n:&lt;math>\n\\left[\\begin{array}{ccc|c}\n\\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  \\frac{1}{3}  &amp;  12\\\\\n  &amp;  &amp;  &amp;\\\\\n0  &amp;  \\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  10\\\\\n  &amp;  &amp;  &amp;\\\\\n\\frac{1}{2}  &amp;  \\frac{1}{2}  &amp;  0  &amp;  16\n\\end{array}\\right]\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Three identical fields of size one hectare are planted with different amounts of three kinds of wheat (types 1, 2 and 3). The first field is divided in three equal parts with one type of wheat planted on each part. It yields 12 tons of total harvest. The second field is divided in two equal parts with type 2 planted on one part and type 3 planted on the other. It yields 10 tons. The third field is divided in two equal parts with type 1 planted on one part and type 2 on the other. It yields 16 tons.</p>\n<p>Write the system you found above in augmented matrix form.</p>\n", 
+    "statement_latex": "Three identical fields of size one hectare are planted with different\namounts of three kinds of wheat (types 1, 2 and 3). The first field is\ndivided in three equal parts with one type of wheat planted on each\npart. It yields 12 tons of total harvest. The second field is divided in\ntwo equal parts with type 2 planted on one part and type 3 planted on\nthe other. It yields 10 tons. The third field is divided in two equal\nparts with type 1 planted on one part and type 2 on the other. It yields\n16 tons.\n\nWrite the system you found above in augmented matrix form.", 
+    "statement_raw": "Three identical fields of size one hectare are planted with different amounts of three kinds of wheat (types 1, 2 and 3).  The first field is divided in three equal parts with one type of wheat planted on each part.  It yields 12 tons of total harvest.  The second field is divided in two equal parts with type 2 planted on one part and type 3 planted on the other.  It yields 10 tons.  The third field is divided in two equal parts with type 1 planted on one part and type 2 on the other.  It yields 16 tons.\n\nWrite the system you found above in augmented matrix form.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_01_(b)", 
+    "year": 2011
 }

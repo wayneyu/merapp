@@ -1,15 +1,54 @@
 {
-    "term": "December", 
-    "question": "Question_05_(b)", 
-    "course": "MATH110", 
-    "statement": "Find the equation of the line tangent to the curve\n$y=\\dfrac{\\cos x}{\\sin x}$ at $x=\\dfrac{5\\pi}{3}$.", 
-    "year": 2013, 
-    "sols": [
-        "To find the equation of the tangent line, we need to find the slope via\nthe derivative. We can either apply the quotient rule or the power rule\n(by recognising $y = \\tan(x)^{-1}$. Using the quotient rule:\n\n\\begin{align*}\nu(x) &= \\cos(x) & u'(x) = -\\sin(x)\\\\\nv(x) &= \\sin(x) & v'(x) = \\cos(x)\\end{align*}\n\nThis gives:\n\n\\begin{align*}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &= \\frac{v u' - u v'}{v^2}\\\\\n&= \\frac{\\sin(x) \\cdot (-\\sin(x) - \\cos(x) \\cdot \\cos(x)}{[\\sin(x)]^2}\\\\\n&= \\frac{- \\sin^2(x) - \\cos^2(x) }{\\sin^2(x)}\\\\\n&= \\frac{- \\left( \\sin^2(x) + \\cos^2(x)\\right) }{\\sin^2(x)}\\\\\n&= \\frac{-1}{\\sin^2(x)}\\\\end{align*}\n\nAt $x =\\frac{5\\pi}{3}$, we have\n$\\sin\\left(\\frac{5\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}$ (from part (a)),\nand so that means that the slope of the curve at $x =\\frac{5\\pi}{3}$ is\n\n\\begin{align*}\ny' &= \\frac{-1}{\\sin^2\\left(x\\right)}\\\\\n&= \\frac{-1}{\\sin^2\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{-1}{\\left[-\\frac{\\sqrt{3}}{2}\\right]^2}\\\\\n&= \\frac{-1}{\\frac{3}{4}}\\\\\n&= \\frac{-4}{3}\\\\end{align*}\n\nWe will also need the $y$-value at the point\n\n\\begin{align*}\ny &= \\frac{\\cos(x)}{\\sin(x)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{2\\pi}{3}\\right)}\\\\\n&= \\frac{1}{-\\sqrt{3}}\\\\\n&= -\\frac{\\sqrt{3}}{3}\\end{align*}\n\n(here we used the fact that the function $\\displaystyle \\tan(x)$ is\n$\\pi$ periodic and then applied the computation from part (a)).\n\nThis means our tangent line is:\n\n$y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)$"
+    "answer_html": "<p><span class=\"math\">\\(y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)\\)</span></p>\n", 
+    "answer_latex": "$y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)$", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>To compute the tangent line at a point, what important concept in this course do we need to utilize?</p>\n", 
+        "<p>You will need to compute the derivative (which is the slope of the tangent line to the curve at a point). This can be done using the quotient rule.</p>\n", 
+        "<p>Don&#8217;t forget to find the <em>y</em> value of the point, plug in the <em>x</em> coordinate into the original equation.</p>\n"
+    ], 
+    "hints_latex": [
         "To compute the tangent line at a point, what important concept in this\ncourse do we need to utilize?", 
         "You will need to compute the derivative (which is the slope of the\ntangent line to the curve at a point). This can be done using the\nquotient rule.", 
         "Don't forget to find the \\emph{y} value of the point, plug in the\n\\emph{x} coordinate into the original equation."
-    ]
+    ], 
+    "hints_raw": [
+        "To compute the tangent line at a point, what important concept in this course do we need to utilize?\n", 
+        "You will need to compute the derivative (which is the slope of the tangent line to the curve at a point). This can be done using the quotient rule.\n", 
+        "Don't forget to find the ''y'' value of the point, plug in the ''x'' coordinate into the original equation.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "5 (b)", 
+    "rating": 50, 
+    "sols_html": [
+        "<p>To find the equation of the tangent line, we need to find the slope via the derivative. We can either apply the quotient rule or the power rule (by recognising <span class=\"math\">\\(y = \\tan(x)^{-1}\\)</span>. Using the quotient rule:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu(x) &amp;= \\cos(x) &amp; u&#39;(x) = -\\sin(x)\\\\\nv(x) &amp;= \\sin(x) &amp; v&#39;(x) = \\cos(x)\\end{aligned}\\]</span></p>\n<p>This gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &amp;= \\frac{v u&#39; - u v&#39;}{v^2}\\\\\n&amp;= \\frac{\\sin(x) \\cdot (-\\sin(x) - \\cos(x) \\cdot \\cos(x)}{[\\sin(x)]^2}\\\\\n&amp;= \\frac{- \\sin^2(x) - \\cos^2(x) }{\\sin^2(x)}\\\\\n&amp;= \\frac{- \\left( \\sin^2(x) + \\cos^2(x)\\right) }{\\sin^2(x)}\\\\\n&amp;= \\frac{-1}{\\sin^2(x)}\\end{aligned}\\]</span></p>\n<p>At <span class=\"math\">\\(x =\\frac{5\\pi}{3}\\)</span>, we have <span class=\"math\">\\(\\sin\\left(\\frac{5\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}\\)</span> (from part (a)), and so that means that the slope of the curve at <span class=\"math\">\\(x =\\frac{5\\pi}{3}\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39; &amp;= \\frac{-1}{\\sin^2\\left(x\\right)}\\\\\n&amp;= \\frac{-1}{\\sin^2\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&amp;= \\frac{-1}{\\left[-\\frac{\\sqrt{3}}{2}\\right]^2}\\\\\n&amp;= \\frac{-1}{\\frac{3}{4}}\\\\\n&amp;= \\frac{-4}{3}\\end{aligned}\\]</span></p>\n<p>We will also need the <span class=\"math\">\\(y\\)</span>-value at the point</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= \\frac{\\cos(x)}{\\sin(x)}\\\\\n&amp;= \\frac{1}{\\tan\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&amp;= \\frac{1}{\\tan\\left(\\frac{2\\pi}{3}\\right)}\\\\\n&amp;= \\frac{1}{-\\sqrt{3}}\\\\\n&amp;= -\\frac{\\sqrt{3}}{3}\\end{aligned}\\]</span></p>\n<p>(here we used the fact that the function <span class=\"math\">\\(\\displaystyle \\tan(x)\\)</span> is <span class=\"math\">\\(\\pi\\)</span> periodic and then applied the computation from part (a)).</p>\n<p>This means our tangent line is:</p>\n<p><span class=\"math\">\\(y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "To find the equation of the tangent line, we need to find the slope via\nthe derivative. We can either apply the quotient rule or the power rule\n(by recognising $y = \\tan(x)^{-1}$. Using the quotient rule:\n\n\\begin{align*}\nu(x) &= \\cos(x) & u'(x) = -\\sin(x)\\\\\nv(x) &= \\sin(x) & v'(x) = \\cos(x)\n\\end{align*}\n\nThis gives:\n\n\\begin{align*}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &= \\frac{v u' - u v'}{v^2}\\\\\n&= \\frac{\\sin(x) \\cdot (-\\sin(x) - \\cos(x) \\cdot \\cos(x)}{[\\sin(x)]^2}\\\\\n&= \\frac{- \\sin^2(x) - \\cos^2(x) }{\\sin^2(x)}\\\\\n&= \\frac{- \\left( \\sin^2(x) + \\cos^2(x)\\right) }{\\sin^2(x)}\\\\\n&= \\frac{-1}{\\sin^2(x)}\n\\end{align*}\n\nAt $x =\\frac{5\\pi}{3}$, we have\n$\\sin\\left(\\frac{5\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}$ (from part (a)),\nand so that means that the slope of the curve at $x =\\frac{5\\pi}{3}$ is\n\n\\begin{align*}\ny' &= \\frac{-1}{\\sin^2\\left(x\\right)}\\\\\n&= \\frac{-1}{\\sin^2\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{-1}{\\left[-\\frac{\\sqrt{3}}{2}\\right]^2}\\\\\n&= \\frac{-1}{\\frac{3}{4}}\\\\\n&= \\frac{-4}{3}\n\\end{align*}\n\nWe will also need the $y$-value at the point\n\n\\begin{align*}\ny &= \\frac{\\cos(x)}{\\sin(x)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&= \\frac{1}{\\tan\\left(\\frac{2\\pi}{3}\\right)}\\\\\n&= \\frac{1}{-\\sqrt{3}}\\\\\n&= -\\frac{\\sqrt{3}}{3}\n\\end{align*}\n\n(here we used the fact that the function $\\displaystyle \\tan(x)$ is\n$\\pi$ periodic and then applied the computation from part (a)).\n\nThis means our tangent line is:\n\n$y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)$"
+    ], 
+    "sols_raw": [
+        "To find the equation of the tangent line, we need to find the slope via the derivative. We can either apply the quotient rule or the power rule (by recognising &lt;math>y = \\tan(x)^{-1}&lt;/math>. Using the quotient rule:\n\n&lt;math>\\begin{align}\nu(x) &amp;= \\cos(x) &amp; u'(x) = -\\sin(x)\\\\\nv(x) &amp;= \\sin(x) &amp; v'(x) = \\cos(x)\\end{align}&lt;/math>\n\nThis gives:\n\n&lt;math>\\begin{align}\n{\\frac{{\\rm d} {y}}{{\\rm d}x}} &amp;= \\frac{v u' - u v'}{v^2}\\\\\n&amp;= \\frac{\\sin(x) \\cdot (-\\sin(x) - \\cos(x) \\cdot \\cos(x)}{[\\sin(x)]^2}\\\\\n&amp;= \\frac{- \\sin^2(x) - \\cos^2(x) }{\\sin^2(x)}\\\\\n&amp;= \\frac{- \\left( \\sin^2(x) + \\cos^2(x)\\right) }{\\sin^2(x)}\\\\\n&amp;= \\frac{-1}{\\sin^2(x)}\\\\\\end{align}&lt;/math>\n\nAt &lt;math>x =\\frac{5\\pi}{3}&lt;/math>, we have &lt;math>\\sin\\left(\\frac{5\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}&lt;/math> (from part (a)), and so that means that the slope of the curve at &lt;math>x =\\frac{5\\pi}{3}&lt;/math> is\n\n&lt;math>\\begin{align}\ny' &amp;= \\frac{-1}{\\sin^2\\left(x\\right)}\\\\\n&amp;= \\frac{-1}{\\sin^2\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&amp;= \\frac{-1}{\\left[-\\frac{\\sqrt{3}}{2}\\right]^2}\\\\\n&amp;= \\frac{-1}{\\frac{3}{4}}\\\\\n&amp;= \\frac{-4}{3}\\\\\\end{align}&lt;/math>\n\nWe will also need the &lt;math>y&lt;/math>-value at the point\n\n&lt;math>\\begin{align}\ny &amp;= \\frac{\\cos(x)}{\\sin(x)}\\\\\n&amp;= \\frac{1}{\\tan\\left(\\frac{5\\pi}{3}\\right)}\\\\\n&amp;= \\frac{1}{\\tan\\left(\\frac{2\\pi}{3}\\right)}\\\\\n&amp;= \\frac{1}{-\\sqrt{3}}\\\\\n&amp;= -\\frac{\\sqrt{3}}{3}\\end{align}&lt;/math>\n\n(here we used the fact that the function &lt;math> \\displaystyle \\tan(x) &lt;/math> is &lt;math> \\pi &lt;/math> periodic and then applied the computation from part (a)).\n\nThis means our tangent line is:\n\n&lt;math>y = -\\frac{\\sqrt{3}}{3} - \\frac{4}{3}\\left(x - \\frac{5\\pi}{3}\\right)&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Find the equation of the line tangent to the curve <span class=\"math\">\\(y=\\dfrac{\\cos x}{\\sin x}\\)</span> at <span class=\"math\">\\(x=\\dfrac{5\\pi}{3}\\)</span>.</p>\n", 
+    "statement_latex": "Find the equation of the line tangent to the curve\n$y=\\dfrac{\\cos x}{\\sin x}$ at $x=\\dfrac{5\\pi}{3}$.", 
+    "statement_raw": "Find the equation of the line tangent to the curve &lt;math>y=\\dfrac{\\cos x}{\\sin x}&lt;/math> at &lt;math>x=\\dfrac{5\\pi}{3}&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Quotient_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_05_(b)", 
+    "year": 2013
 }

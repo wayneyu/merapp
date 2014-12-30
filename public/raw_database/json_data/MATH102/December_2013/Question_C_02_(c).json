@@ -1,0 +1,48 @@
+{
+    "answer_html": "<p>Now we solve for <span class=\"math\">\\(t_* = \\frac{\\ln(2)}{\\alpha N}\\)</span></p>\n", 
+    "answer_latex": "Now we solve for\n$t_* = \\frac{\\ln(2)}{\\alpha N}$", 
+    "contributors": [
+        "NicholasHu", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>In the steady state of an ODE, the derivative equals <span class=\"math\">\\(0\\)</span>. Hence solve the equation</p>\n<p><span class=\"math\">\\(0 = I - \\alpha N F\\)</span></p>\n<p>for <span class=\"math\">\\(F\\)</span>.</p>\n", 
+        "<p>The solution <span class=\"math\">\\(F\\)</span> of the equation is</p>\n<p><span class=\"math\">\\(F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "In the steady state of an ODE, the derivative equals $0$. Hence solve\nthe equation\n\n$0 = I - \\alpha N F$\n\nfor $F$.", 
+        "The solution $F$ of the equation is\n\n$F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})$"
+    ], 
+    "hints_raw": [
+        "In the steady state of an ODE, the derivative equals &lt;math>0&lt;/math>. Hence solve the equation\n\n&lt;math> 0 = I - \\alpha N F&lt;/math>\n\nfor &lt;math> F&lt;/math>.\n", 
+        "The solution &lt;math> F&lt;/math> of the equation is\n\n&lt;math> F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "C 02 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<ul>\n<li><p>In the steady state, the derivative is equal to <span class=\"math\">\\(0\\)</span>. Hence we solve the equation</p></li>\n</ul>\n<p><span class=\"math\">\\(I - \\alpha N F\\)</span> for <span class=\"math\">\\(F\\)</span> and obtain</p>\n<p><span class=\"math\">\\(F_* = \\frac{I}{N\\alpha}\\)</span></p>\n<ul>\n<li><p>The solution <span class=\"math\">\\(F\\)</span> of the equation is</p></li>\n</ul>\n<p><span class=\"math\">\\(F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})\\)</span></p>\n<p>In order to find <span class=\"math\">\\(t_*\\)</span>, where <span class=\"math\">\\(F(t_*) = \\frac{F_*}{2}\\)</span>, we set</p>\n<p><span class=\"math\">\\(\\frac{F_*}{2} = \\frac{I}{\\alpha N}(1-e^{-\\alpha Nt_*})\\)</span></p>\n<p>and use that <span class=\"math\">\\(\\frac{F_*}{2} = \\frac{I}{2\\alpha N}\\)</span> to find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{I}{2\\alpha N} = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t_*})\\quad\\Rightarrow\\quad\n \\frac12 = e^{-\\alpha Nt_*} \\quad\\Rightarrow\\quad\n \\ln(\\frac12) = -\\alpha Nt_*\\end{aligned}\\]</span></p>\n<p>Now we solve for <span class=\"math\">\\(t_* = -\\frac{\\ln(\\frac12)}{\\alpha N} = -\\frac{\\ln(1) - \\ln(2)}{\\alpha N} = -\\frac{0 - \\ln(2)}{\\alpha N} = \\frac{\\ln(2)}{\\alpha N}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  In the steady state, the derivative is equal to $0$. Hence we solve\n  the equation\n\\end{itemize}\n\n$I - \\alpha N F$ for $F$ and obtain\n\n$F_* = \\frac{I}{N\\alpha}$\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  The solution $F$ of the equation is\n\\end{itemize}\n\n$F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})$\n\nIn order to find $t_*$, where $F(t_*) = \\frac{F_*}{2}$, we set\n\n$\\frac{F_*}{2} = \\frac{I}{\\alpha N}(1-e^{-\\alpha Nt_*})$\n\nand use that $\\frac{F_*}{2} = \\frac{I}{2\\alpha N}$ to find\n\n\\begin{align*}\n\\frac{I}{2\\alpha N} = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t_*})\\quad\\Rightarrow\\quad\n \\frac12 = e^{-\\alpha Nt_*} \\quad\\Rightarrow\\quad\n \\ln(\\frac12) = -\\alpha Nt_*\n\\end{align*}\n\nNow we solve for\n$t_* = -\\frac{\\ln(\\frac12)}{\\alpha N} = -\\frac{\\ln(1) - \\ln(2)}{\\alpha N} = -\\frac{0 - \\ln(2)}{\\alpha N} = \\frac{\\ln(2)}{\\alpha N}$"
+    ], 
+    "sols_raw": [
+        "* In the steady state, the derivative is equal to &lt;math> 0&lt;/math>. Hence we solve the equation\n\n&lt;math> I - \\alpha N F&lt;/math> for &lt;math> F&lt;/math> and obtain\n\n&lt;math> F_* = \\frac{I}{N\\alpha}&lt;/math>\n\n\n* The solution &lt;math> F&lt;/math> of the equation is \n\n&lt;math> F(t) = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t})&lt;/math> \n\nIn order to find &lt;math> t_*&lt;/math>, \nwhere &lt;math>F(t_*) = \\frac{F_*}{2}&lt;/math>, we set\n\n\n&lt;math> \\frac{F_*}{2} = \\frac{I}{\\alpha N}(1-e^{-\\alpha Nt_*})&lt;/math>\n\nand use that &lt;math> \\frac{F_*}{2} = \\frac{I}{2\\alpha N}&lt;/math> to find\n\n&lt;math> \\begin{align}\n\\frac{I}{2\\alpha N} = \\frac{I}{\\alpha N}(1-e^{-\\alpha N t_*})\\quad\\Rightarrow\\quad\n \\frac12 = e^{-\\alpha Nt_*} \\quad\\Rightarrow\\quad\n \\ln(\\frac12) = -\\alpha Nt_*\n\\end{align}&lt;/math>\n\nNow we solve for &lt;math> t_* = -\\frac{\\ln(\\frac12)}{\\alpha N} = -\\frac{\\ln(1) - \\ln(2)}{\\alpha N} = -\\frac{0 - \\ln(2)}{\\alpha N} = \\frac{\\ln(2)}{\\alpha N}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>The population of fish in a particular lake is given by the function <em>F(t)</em> where <em>F</em> is measured in number of fish and <em>t</em> is measured in days. A company that manages fish stocks is hired to restock the lake, adding fish at a constant rate. Only <em>N</em> fishers are allowed to fish in the lake at a time. A simple model for this scenario is given by the equation:</p>\n<p><span class=\"math\">\\(\\frac{dF}{dt} = I - \\alpha N F\\)</span></p>\n<p>Where <em>I</em> and <span class=\"math\">\\(\\alpha\\)</span> are constant and two cases for <em>N</em> are considered.</p>\n<p>Case 1: Suppose <em>N</em> is a constant. What is the steady state number of fish <span class=\"math\">\\((F_*)\\)</span> in the lake? If the lake has no fish in it initially, at what time <span class=\"math\">\\((t_*)\\)</span> does the population size reach half its steady state value <span class=\"math\">\\(F_*/2\\)</span>? (You do not have to show a derivation of the solution <em>F(t)</em> of the equation for full points - simply stating it is sufficient - but you must show the rest of the calculation.)</p>\n", 
+    "statement_latex": "The population of fish in a particular lake is given by the function\n\\emph{F(t)} where \\emph{F} is measured in number of fish and \\emph{t} is\nmeasured in days. A company that manages fish stocks is hired to restock\nthe lake, adding fish at a constant rate. Only \\emph{N} fishers are\nallowed to fish in the lake at a time. A simple model for this scenario\nis given by the equation:\n\n$\\frac{dF}{dt} = I - \\alpha N F$\n\nWhere \\emph{I} and $\\alpha$ are constant and two cases for \\emph{N} are\nconsidered.\n\nCase 1: Suppose \\emph{N} is a constant. What is the steady state number\nof fish $(F_*)$ in the lake? If the lake has no fish in it initially, at\nwhat time $(t_*)$ does the population size reach half its steady state\nvalue $F_*/2$? (You do not have to show a derivation of the solution\n\\emph{F(t)} of the equation for full points - simply stating it is\nsufficient - but you must show the rest of the calculation.)", 
+    "statement_raw": "The population of fish in a particular lake is given by the function ''F(t)'' where ''F'' is measured in number of fish and ''t'' is measured in days.  A company that manages fish stocks is hired to restock the lake, adding fish at a constant rate.  Only ''N'' fishers are allowed to fish in the lake at a time.  A simple model for this scenario is given by the equation: \n\n&lt;math>\\frac{dF}{dt} = I - \\alpha N F &lt;/math>\n\nWhere ''I'' and &lt;math>\\alpha&lt;/math> are constant and two cases for ''N'' are considered.  \n\nCase 1: Suppose ''N'' is a constant.  What is the steady state number of fish &lt;math>(F_*)&lt;/math> in the lake?  If the lake has no fish in it initially, at what time &lt;math>(t_*)&lt;/math> does the population size reach half its steady state value &lt;math>F_*/2&lt;/math>?  (You do not have to show a derivation of the solution ''F(t)'' of the equation for full points - simply stating it is sufficient - but you must show the rest of the calculation.)\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_C_02_(c)", 
+    "year": 2013
+}

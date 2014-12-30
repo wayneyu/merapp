@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH307", 
-    "statement": "Let\n\n\\begin{align*}A = \\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & a & 0 \\\\\n0 & 0 & 2\n\\end{bmatrix}\\end{align*}\n\nwhere \\emph{a} is a real number.\n\n\\textbf{(b)} For what values of \\emph{a} (if any) is \\emph{cond(A)} not\ndefined? Give a reason.", 
-    "year": 2010, 
-    "sols": [
-        "Please refer to\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(a)}{part\n(a)} regarding the computation of $\\parallel A\\parallel$\n\nRecall that\n\n$\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel$\n\nWith \\emph{A} being a diagonal matrix, its inverse is given by:\n\n$A^{-1} = \\begin{bmatrix}\n1 & 0 & 0\\\\ \n0 & \\frac{1}{a} & 0\\\\ \n0 & 0 & \\frac{1}{2}\n\\end{bmatrix}$\n\nvalid for all values where \\emph{a} is nonzero. When \\emph{a} is zero,\nthis inverse, and hence cond(A) is undefined. Similar to\n$\\parallel A\\parallel$ , we have\n$\\parallel A^{-1}\\parallel = \\max\\{\\parallel 1\\parallel ,\\parallel \\frac{1}{a}\\parallel ,\\parallel \\frac{1}{2}\\parallel \\}$\nand these are defined for all nonzer values of \\emph{a}.\n\nSo cond(A) is defined for all values of a, except a = 0."
+    "answer_html": "<p>So cond(A) is defined for all values of a, except a = 0.</p>\n", 
+    "answer_latex": "So cond(A) is defined for all values of a, except a = 0.", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that</p>\n<p><span class=\"math\">\\(\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel\\)</span>.</p>\n<p>For which values of <em>a</em> is <em>A</em> not invertible?</p>\n"
+    ], 
+    "hints_latex": [
         "Recall that\n\n$\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel$.\n\nFor which values of \\emph{a} is \\emph{A} not invertible?"
-    ]
+    ], 
+    "hints_raw": [
+        "Recall that \n\n&lt;math>\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel&lt;/math>.\n\nFor which values of ''a'' is ''A'' not invertible?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Please refer to <span>part (a)</span> regarding the computation of <span class=\"math\">\\(\\parallel A\\parallel\\)</span></p>\n<p>Recall that</p>\n<p><span class=\"math\">\\(\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel\\)</span></p>\n<p>With <em>A</em> being a diagonal matrix, its inverse is given by:</p>\n<p><span class=\"math\">\\(A^{-1} = \\begin{bmatrix}\n1 &amp; 0 &amp; 0\\\\ \n0 &amp; \\frac{1}{a} &amp; 0\\\\ \n0 &amp; 0 &amp; \\frac{1}{2}\n\\end{bmatrix}\\)</span></p>\n<p>valid for all values where <em>a</em> is nonzero. When <em>a</em> is zero, this inverse, and hence cond(A) is undefined. Similar to <span class=\"math\">\\(\\parallel A\\parallel\\)</span> , we have <span class=\"math\">\\(\\parallel A^{-1}\\parallel = \\max\\{\\parallel 1\\parallel ,\\parallel \\frac{1}{a}\\parallel ,\\parallel \\frac{1}{2}\\parallel \\}\\)</span> and these are defined for all nonzer values of <em>a</em>.</p>\n<p>So cond(A) is defined for all values of a, except a = 0.</p>\n"
+    ], 
+    "sols_latex": [
+        "Please refer to\n{part\n(a)} regarding the computation of $\\parallel A\\parallel$\n\nRecall that\n\n$\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel$\n\nWith \\emph{A} being a diagonal matrix, its inverse is given by:\n\n$A^{-1} = \\begin{bmatrix}\n1 & 0 & 0\\\\ \n0 & \\frac{1}{a} & 0\\\\ \n0 & 0 & \\frac{1}{2}\n\\end{bmatrix}$\n\nvalid for all values where \\emph{a} is nonzero. When \\emph{a} is zero,\nthis inverse, and hence cond(A) is undefined. Similar to\n$\\parallel A\\parallel$ , we have\n$\\parallel A^{-1}\\parallel = \\max\\{\\parallel 1\\parallel ,\\parallel \\frac{1}{a}\\parallel ,\\parallel \\frac{1}{2}\\parallel \\}$\nand these are defined for all nonzer values of \\emph{a}.\n\nSo cond(A) is defined for all values of a, except a = 0."
+    ], 
+    "sols_raw": [
+        "Please refer to [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(a)|part (a)]] regarding the computation of &lt;math>\\parallel A\\parallel&lt;/math>\n\nRecall that \n\n&lt;math>\\text{cond}(A) = \\parallel A\\parallel \\cdot \\parallel A^{-1}\\parallel&lt;/math>\n\nWith ''A'' being a diagonal matrix, its inverse is given by:\n\n&lt;math>A^{-1} = \\begin{bmatrix}\n1 &amp; 0 &amp; 0\\\\ \n0 &amp; \\frac{1}{a} &amp; 0\\\\ \n0 &amp; 0 &amp; \\frac{1}{2}\n\\end{bmatrix}&lt;/math>\n\nvalid for all values where ''a'' is nonzero. When ''a'' is zero, this inverse, and hence cond(A) is undefined.  Similar to &lt;math>\\parallel A\\parallel&lt;/math> , we have &lt;math> \\parallel A^{-1}\\parallel = \\max\\{\\parallel 1\\parallel ,\\parallel \\frac{1}{a}\\parallel ,\\parallel \\frac{1}{2}\\parallel \\}&lt;/math> and these are defined for all nonzer values of ''a''.\n\nSo cond(A) is defined for all values of a, except a = 0.\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nA = \\begin{bmatrix}\n1 &amp; 0 &amp; 0 \\\\\n0 &amp; a &amp; 0 \\\\\n0 &amp; 0 &amp; 2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>where <em>a</em> is a real number.</p>\n<p><strong>(b)</strong> For what values of <em>a</em> (if any) is <em>cond(A)</em> not defined? Give a reason.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nA = \\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & a & 0 \\\\\n0 & 0 & 2\n\\end{bmatrix}\n\\end{align*}\n\nwhere \\emph{a} is a real number.\n\n\\textbf{(b)} For what values of \\emph{a} (if any) is \\emph{cond(A)} not\ndefined? Give a reason.", 
+    "statement_raw": "Let\n\n:&lt;math>\nA = \\begin{bmatrix}\n1 &amp; 0 &amp; 0 \\\\\n0 &amp; a &amp; 0 \\\\\n0 &amp; 0 &amp; 2\n\\end{bmatrix}\n&lt;/math>\n\nwhere ''a'' is a real number.\n\n'''(b)''' For what values of ''a'' (if any) is ''cond(A)'' not defined? Give a reason.\n", 
+    "term": "December", 
+    "topics": [
+        "Condition_number", 
+        "Matrix_norm"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_01_(b)", 
+    "year": 2010
 }

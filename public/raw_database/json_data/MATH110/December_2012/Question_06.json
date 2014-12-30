@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_06", 
-    "course": "MATH110", 
-    "statement": "Let\n$f(x)= \\begin{cases}\\sqrt{x - \\frac34} & x \\leq 1 \\\\ ax + b & x > 1 \\end{cases}$\n\nFind constants $a$ and $b$ such that the function $f(x)$ is\ndifferentiable on the interval $(-\\infty,\\infty)$. Justify your answer.", 
-    "year": 2012, 
-    "sols": [
-        "In order for $f(x)$ to be differentiable, the derivative at any point\nmust be equal from both the left and right. Since $f(x)$ is clearly\ndifferentiable at all points in $(-\\infty,\\infty)$ other than \\emph{x =\n1}, our point of interest is $x = 1$.\n\nThe derivative of $f(x)$ at \\emph{x = 1} from the left will be\n\n$\\left(\\sqrt{x - \\frac34}\\right)' = \\frac{1}{2\\sqrt{x - \\frac34}}$\n\nwhich when evaluated at \\emph{x = 1} gives $\\frac{1}{2\\sqrt{1/4}} = 1$\n\nThe derivative of $f(x)$ at \\emph{x = 1} from the right will be\n\n$(ax + b)' = a$\n\nTo be differentiable, these must be equal, so\n\n$a = 1$\n\nThis gives us the value for \\emph{a}. Now we also know that in order for\nthe function to be differentiable, it must also be continuous. In\nparticular, this means both the right and left hand limits at \\emph{x =\n1} must be equal. So we have:\n\n\\begin{align*}\n\\displaystyle \\lim_{x \\to 1^-} f(x) &= \\lim_{x \\to 1^+}f(x) \\\\\n\\displaystyle \\lim_{x \\to 1^-} \\sqrt{x - \\frac34} &= \\lim_{x \\to 1^+} 1x + b\\\\\n\\displaystyle \\sqrt{1/4} &= 1 + b \\\\\n\\frac{-1}{2} &= b\\end{align*}\n\nSo $f(x)$ will be differentiable when \\emph{a = 1} and \\emph{b = -1/2}"
+    "answer_html": "<p>So <span class=\"math\">\\(f(x)\\)</span> will be differentiable when <em>a = 1</em> and <em>b = -1/2</em> = will be differentiable when <em>a = 1</em> and <em>b = -1/2</em></p>\n", 
+    "answer_latex": "So $f(x)$ will be differentiable when \\emph{a = 1} and \\emph{b = -1/2} = will be differentiable when \\emph{a = 1} and \\emph{b = -1/2}", 
+    "contributors": [
+        "ThomasWong", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>In order for a function to be differentiable over the domain, it should be differentiable within each piece of the function as well as on the boundary. What are the conditions for a function to be differentiable at a point? How is differentiability related to continuity?</p>\n", 
+        "<p>In order for a function to be differentiable at a point, the derivative must be equal on both sides of the point. Also, differentiable functions are also continuous, meaning that the value of the function must also be equal on both sides of any point.</p>\n"
+    ], 
+    "hints_latex": [
         "In order for a function to be differentiable over the domain, it should\nbe differentiable within each piece of the function as well as on the\nboundary. What are the conditions for a function to be differentiable at\na point? How is differentiability related to continuity?", 
         "In order for a function to be differentiable at a point, the derivative\nmust be equal on both sides of the point. Also, differentiable functions\nare also continuous, meaning that the value of the function must also be\nequal on both sides of any point."
-    ]
+    ], 
+    "hints_raw": [
+        "In order for a function to be differentiable over the domain, it should be differentiable within each piece of the function as well as on the boundary. What are the conditions for a function to be differentiable at a point? How is differentiability related to continuity?\n", 
+        "In order for a function to be differentiable at a point, the derivative must be equal on both sides of the point.  Also, differentiable functions are also continuous, meaning that the value of the function must also be equal on both sides of any point.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6", 
+    "rating": null, 
+    "sols_html": [
+        "<p>In order for <span class=\"math\">\\(f(x)\\)</span> to be differentiable, the derivative at any point must be equal from both the left and right. Since <span class=\"math\">\\(f(x)\\)</span> is clearly differentiable at all points in <span class=\"math\">\\((-\\infty,\\infty)\\)</span> other than <em>x = 1</em>, our point of interest is <span class=\"math\">\\(x = 1\\)</span>.</p>\n<p>The derivative of <span class=\"math\">\\(f(x)\\)</span> at <em>x = 1</em> from the left will be</p>\n<p><span class=\"math\">\\(\\left(\\sqrt{x - \\frac34}\\right)&#39; = \\frac{1}{2\\sqrt{x - \\frac34}}\\)</span></p>\n<p>which when evaluated at <em>x = 1</em> gives <span class=\"math\">\\(\\frac{1}{2\\sqrt{1/4}} = 1\\)</span></p>\n<p>The derivative of <span class=\"math\">\\(f(x)\\)</span> at <em>x = 1</em> from the right will be</p>\n<p><span class=\"math\">\\((ax + b)&#39; = a\\)</span></p>\n<p>To be differentiable, these must be equal, so</p>\n<p><span class=\"math\">\\(a = 1\\)</span></p>\n<p>This gives us the value for <em>a</em>. Now we also know that in order for the function to be differentiable, it must also be continuous. In particular, this means both the right and left hand limits at <em>x = 1</em> must be equal. So we have:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\lim_{x \\to 1^-} f(x) &amp;= \\lim_{x \\to 1^+}f(x) \\\\\n\\displaystyle \\lim_{x \\to 1^-} \\sqrt{x - \\frac34} &amp;= \\lim_{x \\to 1^+} 1x + b\\\\\n\\displaystyle \\sqrt{1/4} &amp;= 1 + b \\\\\n\\frac{-1}{2} &amp;= b\\end{aligned}\\]</span></p>\n<p>So <span class=\"math\">\\(f(x)\\)</span> will be differentiable when <em>a = 1</em> and <em>b = -1/2</em></p>\n"
+    ], 
+    "sols_latex": [
+        "In order for $f(x)$ to be differentiable, the derivative at any point\nmust be equal from both the left and right. Since $f(x)$ is clearly\ndifferentiable at all points in $(-\\infty,\\infty)$ other than \\emph{x =\n1}, our point of interest is $x = 1$.\n\nThe derivative of $f(x)$ at \\emph{x = 1} from the left will be\n\n$\\left(\\sqrt{x - \\frac34}\\right)' = \\frac{1}{2\\sqrt{x - \\frac34}}$\n\nwhich when evaluated at \\emph{x = 1} gives $\\frac{1}{2\\sqrt{1/4}} = 1$\n\nThe derivative of $f(x)$ at \\emph{x = 1} from the right will be\n\n$(ax + b)' = a$\n\nTo be differentiable, these must be equal, so\n\n$a = 1$\n\nThis gives us the value for \\emph{a}. Now we also know that in order for\nthe function to be differentiable, it must also be continuous. In\nparticular, this means both the right and left hand limits at \\emph{x =\n1} must be equal. So we have:\n\n\\begin{align*}\n\\displaystyle \\lim_{x \\to 1^-} f(x) &= \\lim_{x \\to 1^+}f(x) \\\\\n\\displaystyle \\lim_{x \\to 1^-} \\sqrt{x - \\frac34} &= \\lim_{x \\to 1^+} 1x + b\\\\\n\\displaystyle \\sqrt{1/4} &= 1 + b \\\\\n\\frac{-1}{2} &= b\n\\end{align*}\n\nSo $f(x)$ will be differentiable when \\emph{a = 1} and \\emph{b = -1/2}"
+    ], 
+    "sols_raw": [
+        "In order for &lt;math>f(x)&lt;/math> to be differentiable, the derivative at any point must be equal from both the left and right.  Since &lt;math>f(x)&lt;/math> is clearly differentiable at all points in &lt;math>(-\\infty,\\infty)&lt;/math> other than ''x = 1'', our point of interest is &lt;math>x = 1&lt;/math>.\n\nThe derivative of &lt;math>f(x)&lt;/math> at ''x = 1'' from the left will be\n\n&lt;math>\\left(\\sqrt{x - \\frac34}\\right)' = \\frac{1}{2\\sqrt{x - \\frac34}}&lt;/math>\n\nwhich when evaluated at ''x = 1'' gives &lt;math>\\frac{1}{2\\sqrt{1/4}} = 1 &lt;/math>\n\nThe derivative of &lt;math>f(x)&lt;/math> at ''x = 1'' from the right will be\n\n&lt;math>(ax + b)' = a&lt;/math>\n\nTo be differentiable, these must be equal, so \n\n&lt;math>a = 1&lt;/math>\n\nThis gives us the value for ''a''.  Now we also know that in order for the function to be differentiable, it must also be continuous.  In particular, this means both the right and left hand limits at ''x = 1'' must be equal.  So we have:\n\n&lt;math>\\begin{align}\n\\displaystyle \\lim_{x \\to 1^-} f(x) &amp;= \\lim_{x \\to 1^+}f(x) \\\\\n\\displaystyle \\lim_{x \\to 1^-} \\sqrt{x - \\frac34} &amp;= \\lim_{x \\to 1^+} 1x + b\\\\\n\\displaystyle \\sqrt{1/4} &amp;= 1 + b \\\\\n\\frac{-1}{2} &amp;= b\n\\end{align}&lt;/math>\n\nSo &lt;math>f(x)&lt;/math> will be differentiable when ''a = 1'' and ''b = -1/2''\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x)= \\begin{cases}\\sqrt{x - \\frac34} &amp; x \\leq 1 \\\\ ax + b &amp; x &gt; 1 \\end{cases}\\)</span></p>\n<p>Find constants <span class=\"math\">\\(a\\)</span> and <span class=\"math\">\\(b\\)</span> such that the function <span class=\"math\">\\(f(x)\\)</span> is differentiable on the interval <span class=\"math\">\\((-\\infty,\\infty)\\)</span>. Justify your answer.</p>\n", 
+    "statement_latex": "Let\n$f(x)= \\begin{cases}\\sqrt{x - \\frac34} & x \\leq 1 \\\\ ax + b & x > 1 \\end{cases}$\n\nFind constants $a$ and $b$ such that the function $f(x)$ is\ndifferentiable on the interval $(-\\infty,\\infty)$. Justify your answer.", 
+    "statement_raw": "Let \n&lt;math>f(x)= \\begin{cases}\\sqrt{x - \\frac34} &amp; x \\leq 1 \\\\ ax + b &amp; x > 1 \\end{cases}&lt;/math>\n\nFind constants &lt;math>a&lt;/math> and &lt;math>b&lt;/math> such that the function &lt;math>f(x)&lt;/math> is differentiable on the interval &lt;math>(-\\infty,\\infty)&lt;/math>. Justify your answer.\n", 
+    "term": "December", 
+    "topics": [
+        "Continuity"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2012/Question_06", 
+    "year": 2012
 }

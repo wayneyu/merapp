@@ -1,0 +1,52 @@
+{
+    "answer_html": "<p>Thus the answer is <span class=\"math\">\\({ \\color{blue} \\text{(D)}}\\)</span>.</p>\n", 
+    "answer_latex": "Thus the answer is ${ \\color{blue} \\text{(D)}}$.", 
+    "contributors": [
+        "Konradbe", 
+        "NicholasHu", 
+        "ChristinaKoch"
+    ], 
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall that over and under estimating the approximation is dependent on concavity. If the function is concave up, we have an underestimate. If it is concave down, it is an overestimate.</p>\n", 
+        "<p>To check concavity, we need to look at the second derivative.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that over and under estimating the approximation is dependent on\nconcavity. If the function is concave up, we have an underestimate. If\nit is concave down, it is an overestimate.", 
+        "To check concavity, we need to look at the second derivative."
+    ], 
+    "hints_raw": [
+        "Recall that over and under estimating the approximation is dependent on concavity. If the function is concave up, we have an underestimate. If it is concave down, it is an overestimate.\n", 
+        "To check concavity, we need to look at the second derivative.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "A 05", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>Taking the second derivative of our function gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= \\cos(x)\\\\\ny&#39; &amp;= -\\sin(x)\\\\\ny&#39;&#39; &amp;= -\\cos(x)\\end{aligned}\\]</span></p>\n<p>To the immediate left of <span class=\"math\">\\(x = \\pi/2\\)</span>, the second derivative is negative and to its immediate right it is positive. So we get an <em>overestimate</em> when <span class=\"math\">\\(x &lt; \\pi/2\\)</span> and an <em>underestimate</em> when <span class=\"math\">\\(x &gt; \\pi/2\\)</span>. Thus the answer is <span class=\"math\">\\({ \\color{blue} \\text{(D)}}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Taking the second derivative of our function gives\n\n\\begin{align*}\ny &= \\cos(x)\\\\\ny' &= -\\sin(x)\\\\\ny'' &= -\\cos(x)\n\\end{align*}\n\nTo the immediate left of $x = \\pi/2$, the second derivative is negative\nand to its immediate right it is positive. So we get an\n\\emph{overestimate} when $x < \\pi/2$ and an \\emph{underestimate} when\n$x > \\pi/2$. Thus the answer is ${ \\color{blue} \\text{(D)}}$."
+    ], 
+    "sols_raw": [
+        "Taking the second derivative of our function gives\n\n&lt;math>\n\\begin{align}\ny &amp;= \\cos(x)\\\\\ny' &amp;= -\\sin(x)\\\\\ny'' &amp;= -\\cos(x)\n\\end{align}\n&lt;/math>\n\n\nTo the immediate left of &lt;math>x = \\pi/2&lt;/math>, the second derivative is negative and to its immediate right it is positive. So we get an ''overestimate'' when &lt;math>x &lt; \\pi/2&lt;/math> and an ''underestimate'' when &lt;math>x > \\pi/2&lt;/math>. Thus the answer is &lt;math>{ \\color{blue} \\text{(D)} }&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Consider the function <span class=\"math\">\\(y = \\cos(x)\\)</span> and the tangent line to this function at the point <span class=\"math\">\\(x = \\pi/2\\)</span>. Using that tangent line as a linear approximation of the function would lead to</p>\n<p>(a) overestimating the value of the actual function for any nearby <span class=\"math\">\\(x\\)</span>.</p>\n<p>(b) underestimating the value of the actual function for any nearby <span class=\"math\">\\(x\\)</span>.</p>\n<p>(c) overestimating the function when <span class=\"math\">\\(x &gt; \\pi/2\\)</span> and underestimating the function when <span class=\"math\">\\(x &lt; \\pi/2\\)</span>.</p>\n<p>(d) overestimating the function when <span class=\"math\">\\(x &lt; \\pi/2\\)</span> and underestimating the function when <span class=\"math\">\\(x &gt; \\pi/2\\)</span>.</p>\n<p>(e) overestimating the function when <span class=\"math\">\\(x &lt; 0\\)</span> and underestimating the function when <span class=\"math\">\\(x &gt; 0\\)</span>.</p>\n", 
+    "statement_latex": "Consider the function $y = \\cos(x)$ and the tangent line to this\nfunction at the point $x = \\pi/2$. Using that tangent line as a linear\napproximation of the function would lead to\n\n(a) overestimating the value of the actual function for any nearby $x$.\n\n(b) underestimating the value of the actual function for any nearby $x$.\n\n(c) overestimating the function when $x > \\pi/2$ and underestimating the\nfunction when $x < \\pi/2$.\n\n(d) overestimating the function when $x < \\pi/2$ and underestimating the\nfunction when $x > \\pi/2$.\n\n(e) overestimating the function when $x < 0$ and underestimating the\nfunction when $x > 0$.", 
+    "statement_raw": "Consider the function &lt;math>y = \\cos(x)&lt;/math> and the tangent line to this function at the point &lt;math>x = \\pi/2&lt;/math>.  Using that tangent line as a linear approximation of the function would lead to\n\n(a) overestimating the value of the actual function for any nearby &lt;math>x&lt;/math>.  \n\n(b) underestimating the value of the actual function for any nearby &lt;math>x&lt;/math>.  \n\n(c) overestimating the function when &lt;math>x > \\pi/2&lt;/math> and underestimating the function when &lt;math>x &lt; \\pi/2 &lt;/math>.\n\n(d) overestimating the function when &lt;math>x &lt; \\pi/2&lt;/math> and underestimating the function when &lt;math>x > \\pi/2 &lt;/math>.\n\n(e) overestimating the function when &lt;math>x &lt; 0 &lt;/math> and underestimating the function when &lt;math>x > 0&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Linear_approximation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_A_05", 
+    "year": 2013
+}

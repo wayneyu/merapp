@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_09_(f)", 
-    "course": "MATH105", 
-    "statement": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nA discrete random variable takes only two values, $0$ and $1.$ Find\n$p = P_r(X = 1)$ if the variance of $X$ is $1/4.$", 
-    "year": 2011, 
-    "sols": [
-        "The variance for a discrete random variable is defined to be\n\n\\begin{align*}\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\end{align*}\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\begin{align*}\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\end{align*}\n\nIn this case, there are only two possible outcomes $X = 0$ or $X = 1$.\nIf we define the probability $P(X = 1)$ with $p$ then by the law that\nthe sum of the probabilities for all events must sum to one, we know\nthat $P(X = 0) = 1 - P(X = 1) = 1 - p$. Thus,\n\n\\begin{align*}\\,\\mu = 0P(X = 0) + 1P(X = 1) = p.\\end{align*} Now we can use the definition of\nvariance and get an equation for $p$.\n\n\\begin{align*}\n\\operatorname{Var}(X) = (0-p)^{2}\\underbrace{P(X = 0)}_{=1-p} + (1 - p)^{2}P(X = 1) &= 1/4 \\\\  \n-p^{2}(1 - p) + (1 - p)^{2}p &= 1/4 \\\\ \n-p^{2} + p - 1/4 &= 0\\\\ \np^{2} - p + 1/4 &= 0 \\\\ \n(p - 1/2)^{2} &= 0\\end{align*} Thus, the value of $p$ such that Var(X) = 1/4 is\n$p = 1/2$."
+    "answer_html": "<p><span class=\"math\">\\((p - 1/2)^{2}=0\\)</span> Thus, the value of <span class=\"math\">\\(p\\)</span> such that Var(X) = 1/4 is <span class=\"math\">\\(p = 1/2\\)</span>.</p>\n", 
+    "answer_latex": " $(p - 1/2)^{2}=0$  Thus, the value of $p$ such that Var(X) = 1/4 is\n$p = 1/2$.", 
+    "contributors": [
+        "DavidKohler", 
+        "CarmenBruni", 
+        "IainMoyles", 
+        "Konradbe", 
+        "Hambrook"
     ], 
-    "hints": [
-        "The variance for a discrete random variable is defined to be\n\n\\begin{align*}\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\end{align*}\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\begin{align*}\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\end{align*}"
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The variance for a discrete random variable is defined to be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\end{aligned}\\]</span></p>\n<p>where the values <span class=\"math\">\\(x_{i}\\)</span>, are the possible outcomes for the random variable <span class=\"math\">\\(X\\)</span> and <span class=\"math\">\\(\\mu\\)</span> is the mean:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The variance for a discrete random variable is defined to be\n\n\\begin{align*}\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\n\\end{align*}\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\begin{align*}\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "The variance for a discrete random variable is defined to be\n\n:&lt;math>\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\n&lt;/math>\n\nwhere the values &lt;math>x_{i}&lt;/math>, are the possible outcomes for the random variable &lt;math>X&lt;/math> and &lt;math>\\mu&lt;/math> is the mean:\n\n:&lt;math>\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\n&lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The variance for a discrete random variable is defined to be</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\\end{aligned}\\]</span></p>\n<p>where the values <span class=\"math\">\\(x_{i}\\)</span>, are the possible outcomes for the random variable <span class=\"math\">\\(X\\)</span> and <span class=\"math\">\\(\\mu\\)</span> is the mean:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\\end{aligned}\\]</span></p>\n<p>In this case, there are only two possible outcomes <span class=\"math\">\\(X = 0\\)</span> or <span class=\"math\">\\(X = 1\\)</span>. If we define the probability <span class=\"math\">\\(P(X = 1)\\)</span> with <span class=\"math\">\\(p\\)</span> then by the law that the sum of the probabilities for all events must sum to one, we know that <span class=\"math\">\\(P(X = 0) = 1 - P(X = 1) = 1 - p\\)</span>. Thus,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\,\\mu = 0P(X = 0) + 1P(X = 1) = p.\\end{aligned}\\]</span></p>\n<p>Now we can use the definition of variance and get an equation for <span class=\"math\">\\(p\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\operatorname{Var}(X) = (0-p)^{2}\\underbrace{P(X = 0)}_{=1-p} + (1 - p)^{2}P(X = 1) &amp;= 1/4 \\\\  \n-p^{2}(1 - p) + (1 - p)^{2}p &amp;= 1/4 \\\\ \n-p^{2} + p - 1/4 &amp;= 0\\\\ \np^{2} - p + 1/4 &amp;= 0 \\\\ \n(p - 1/2)^{2} &amp;= 0\\end{aligned}\\]</span></p>\n<p>Thus, the value of <span class=\"math\">\\(p\\)</span> such that Var(X) = 1/4 is <span class=\"math\">\\(p = 1/2\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The variance for a discrete random variable is defined to be\n\n\\begin{align*}\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\n\\end{align*}\n\nwhere the values $x_{i}$, are the possible outcomes for the random\nvariable $X$ and $\\mu$ is the mean:\n\n\\begin{align*}\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\n\\end{align*}\n\nIn this case, there are only two possible outcomes $X = 0$ or $X = 1$.\nIf we define the probability $P(X = 1)$ with $p$ then by the law that\nthe sum of the probabilities for all events must sum to one, we know\nthat $P(X = 0) = 1 - P(X = 1) = 1 - p$. Thus,\n\n\\begin{align*}\n\\,\\mu = 0P(X = 0) + 1P(X = 1) = p.\n\\end{align*} Now we can use the definition of\nvariance and get an equation for $p$.\n\n\\begin{align*}\n\\operatorname{Var}(X) = (0-p)^{2}\\underbrace{P(X = 0)}_{=1-p} + (1 - p)^{2}P(X = 1) &= 1/4 \\\\  \n-p^{2}(1 - p) + (1 - p)^{2}p &= 1/4 \\\\ \n-p^{2} + p - 1/4 &= 0\\\\ \np^{2} - p + 1/4 &= 0 \\\\ \n(p - 1/2)^{2} &= 0\n\\end{align*} Thus, the value of $p$ such that Var(X) = 1/4 is\n$p = 1/2$."
+    ], 
+    "sols_raw": [
+        "The variance for a discrete random variable is defined to be\n\n:&lt;math>\n\\operatorname{Var}(X) = \\sum_{x_{i}}(x_{i} - \\mu)^{2}P(X = x_{i})\n&lt;/math>\n\nwhere the values &lt;math>x_{i}&lt;/math>, are the possible outcomes for the random variable &lt;math>X&lt;/math> and &lt;math>\\mu&lt;/math> is the mean:\n\n:&lt;math>\n\\mu = \\sum_{x_{i}}x_{i}P(X = x_{i}).\n&lt;/math>\n\nIn this case, there are only two possible outcomes &lt;math>X = 0&lt;/math> or &lt;math>X = 1&lt;/math>. If we define the probability &lt;math>P(X = 1)&lt;/math> with &lt;math>p&lt;/math> then by the law that the sum of the probabilities for all events must sum to one, we know that &lt;math>P(X = 0) = 1 - P(X = 1) = 1 - p&lt;/math>. Thus,\n\n:&lt;math>\n\\,\\mu = 0P(X = 0) + 1P(X = 1) = p.\n&lt;/math>\nNow we can use the definition of variance and get an equation for &lt;math>p&lt;/math>.\n:&lt;math>\n\\begin{align}\n\\operatorname{Var}(X) = (0-p)^{2}\\underbrace{P(X = 0)}_{=1-p} + (1 - p)^{2}P(X = 1) &amp;= 1/4 \\\\  \n-p^{2}(1 - p) + (1 - p)^{2}p &amp;= 1/4 \\\\ \n-p^{2} + p - 1/4 &amp;= 0\\\\ \np^{2} - p + 1/4 &amp;= 0 \\\\ \n(p - 1/2)^{2} &amp;= 0\n\\end{align}\n&lt;/math>\nThus, the value of &lt;math>p&lt;/math> such that Var(X) = 1/4 is &lt;math>p = 1/2&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p><em>Each of the short-answer questions below is worth 5 points. Put your answer in the box provided and show your work. No credit will be given for the answer without the correct accompanying work.</em></p>\n<p>A discrete random variable takes only two values, <span class=\"math\">\\(0\\)</span> and <span class=\"math\">\\(1.\\)</span> Find <span class=\"math\">\\(p = P_r(X = 1)\\)</span> if the variance of <span class=\"math\">\\(X\\)</span> is <span class=\"math\">\\(1/4.\\)</span></p>\n", 
+    "statement_latex": "\\emph{Each of the short-answer questions below is worth 5 points. Put\nyour answer in the box provided and show your work. No credit will be\ngiven for the answer without the correct accompanying work.}\n\nA discrete random variable takes only two values, $0$ and $1.$ Find\n$p = P_r(X = 1)$ if the variance of $X$ is $1/4.$", 
+    "statement_raw": "''Each of the short-answer questions below is worth 5 points. Put your answer in the box provided and show your work. No credit will be given for the answer without the correct accompanying work.''\n\nA discrete random variable takes only two values, &lt;math> 0 &lt;/math> and &lt;math> 1. &lt;/math>  Find &lt;math> p = P_r(X = 1) &lt;/math> if the variance of &lt;math> X &lt;/math> is &lt;math> 1/4. &lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2011/Question_09_(f)", 
+    "year": 2011
 }

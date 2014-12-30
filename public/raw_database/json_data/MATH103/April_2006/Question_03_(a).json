@@ -1,13 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_03_(a)", 
-    "course": "MATH103", 
-    "statement": "Evaluate the following integrals.\n\n$\\displaystyle \\int \\frac{\\cos(x)}{\\sin(x)}\\,dx$", 
-    "year": 2006, 
-    "sols": [
-        "Let:\n\n\\begin{align*}u = \\sin(x), \\quad du=\\cos(x)dx\\end{align*}\n\nThen the integral nicely simplifies to\n\n\\begin{align*}\\int \\frac{\\cos(x)dx}{\\sin(x)} = \\int \\frac{du}{u} = \\ln|u|= \\ln|\\sin(x)|\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int \\frac{\\cos(x)dx}{\\sin(x)}=\\ln|\\sin(x)|\\)</span></p>\n", 
+    "answer_latex": " $\\int \\frac{\\cos(x)dx}{\\sin(x)}=\\ln|\\sin(x)|$ ", 
+    "contributors": [
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Use a substitution.</p>\n"
+    ], 
+    "hints_latex": [
         "Use a substitution."
-    ]
+    ], 
+    "hints_raw": [
+        "Use a substitution.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "3 (a)", 
+    "rating": 96, 
+    "sols_html": [
+        "<p>Let:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nu = \\sin(x), \\quad du=\\cos(x)dx\\end{aligned}\\]</span></p>\n<p>Then the integral nicely simplifies to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int \\frac{\\cos(x)dx}{\\sin(x)} = \\int \\frac{du}{u} = \\ln|u|= \\ln|\\sin(x)|\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let:\n\n\\begin{align*}\nu = \\sin(x), \\quad du=\\cos(x)dx\n\\end{align*}\n\nThen the integral nicely simplifies to\n\n\\begin{align*}\n\\int \\frac{\\cos(x)dx}{\\sin(x)} = \\int \\frac{du}{u} = \\ln|u|= \\ln|\\sin(x)|\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Let:\n:&lt;math>\nu = \\sin(x), \\quad du=\\cos(x)dx\n&lt;/math>\n\nThen the integral nicely simplifies to\n:&lt;math>\n\\int \\frac{\\cos(x)dx}{\\sin(x)} = \\int \\frac{du}{u} = \\ln|u|= \\ln|\\sin(x)|\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Evaluate the following integrals.</p>\n<p><span class=\"math\">\\(\\displaystyle \\int \\frac{\\cos(x)}{\\sin(x)}\\,dx\\)</span></p>\n", 
+    "statement_latex": "Evaluate the following integrals.\n\n$\\displaystyle \\int \\frac{\\cos(x)}{\\sin(x)}\\,dx$", 
+    "statement_raw": "Evaluate the following integrals.\n\n&lt;math>\\displaystyle \\int \\frac{\\cos(x)}{\\sin(x)}\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2006/Question_03_(a)", 
+    "year": 2006
 }

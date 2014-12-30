@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_07_(b)", 
-    "course": "MATH215", 
-    "statement": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{align*}\n\n(b) If $y_0 = 3/2$, use Euler$^{\\prime}$s method with step size $h = 1$\nto approximate the solution $y(2)$ at time $t=2$.", 
-    "year": 2013, 
-    "sols": [
-        "We have $\\displaystyle dy/dt = -y(y-1)^2$ so that if $y(t_0) = y_0$ then\n\n\\begin{align*}y(t_0 + h) \\approx y(t_0) + h \\frac{dy}{dt}|_{t=t_0} = y(t_0) + h[-y_0 (y_0 - 1)^2]\\end{align*}\n\nWe denote \\emph{y\\textsubscript{0} = 3/2} and \\emph{t\\textsubscript{0} =\n0} so that\n\n\\begin{align*}y(1) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 1\\left[\\frac{-3}{2}\\left(\\frac{1}{2}\\right)^2\\right] = 3/2 - 3/8 = 9/8.\\end{align*}\n\nContinuing in this process,\n\n\\begin{align*}y(2) \\approx y_2 = y_1 + h[-y_1 (y_1 - 1)^2] = \\frac{9}{8} - \\frac{9}{8} \\left(\\frac{1}{8}\\right)^2 = \\frac{9}{8} - \\frac{9}{8^3} = \\frac{9 \\times 8^2 - 9}{8^3} = \\frac{567}{512}.\\end{align*}\n\n\\emph{Notice how this approximated solution slowly approaches the\nequilibrium value y=1.}"
+    "answer_html": "<p><em>Notice how this approximated solution slowly approaches the equilibrium value y=1.</em></p>\n", 
+    "answer_latex": "\\emph{Notice how this approximated solution slowly approaches the\nequilibrium value y=1.}", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Euler&#8217;s method is derived by using a tangent line to a solution curve to approximate the value of the solution a time step h later.</p>\n"
+    ], 
+    "hints_latex": [
         "Euler's method is derived by using a tangent line to a solution curve to\napproximate the value of the solution a time step h later."
-    ]
+    ], 
+    "hints_raw": [
+        "Euler's method is derived by using a tangent line to a solution curve to approximate the value of the solution a time step h later.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "7 (b)", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>We have <span class=\"math\">\\(\\displaystyle dy/dt = -y(y-1)^2\\)</span> so that if <span class=\"math\">\\(y(t_0) = y_0\\)</span> then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(t_0 + h) \\approx y(t_0) + h \\frac{dy}{dt}|_{t=t_0} = y(t_0) + h[-y_0 (y_0 - 1)^2]\\end{aligned}\\]</span></p>\n<p>We denote <em>y<sub>0</sub> = 3/2</em> and <em>t<sub>0</sub> = 0</em> so that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(1) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 1\\left[\\frac{-3}{2}\\left(\\frac{1}{2}\\right)^2\\right] = 3/2 - 3/8 = 9/8.\\end{aligned}\\]</span></p>\n<p>Continuing in this process,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny(2) \\approx y_2 = y_1 + h[-y_1 (y_1 - 1)^2] = \\frac{9}{8} - \\frac{9}{8} \\left(\\frac{1}{8}\\right)^2 = \\frac{9}{8} - \\frac{9}{8^3} = \\frac{9 \\times 8^2 - 9}{8^3} = \\frac{567}{512}.\\end{aligned}\\]</span></p>\n<p><em>Notice how this approximated solution slowly approaches the equilibrium value y=1.</em></p>\n"
+    ], 
+    "sols_latex": [
+        "We have $\\displaystyle dy/dt = -y(y-1)^2$ so that if $y(t_0) = y_0$ then\n\n\\begin{align*}\ny(t_0 + h) \\approx y(t_0) + h \\frac{dy}{dt}|_{t=t_0} = y(t_0) + h[-y_0 (y_0 - 1)^2]\n\\end{align*}\n\nWe denote \\emph{y\\textsubscript{0} = 3/2} and \\emph{t\\textsubscript{0} =\n0} so that\n\n\\begin{align*}\ny(1) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 1\\left[\\frac{-3}{2}\\left(\\frac{1}{2}\\right)^2\\right] = 3/2 - 3/8 = 9/8.\n\\end{align*}\n\nContinuing in this process,\n\n\\begin{align*}\ny(2) \\approx y_2 = y_1 + h[-y_1 (y_1 - 1)^2] = \\frac{9}{8} - \\frac{9}{8} \\left(\\frac{1}{8}\\right)^2 = \\frac{9}{8} - \\frac{9}{8^3} = \\frac{9 \\times 8^2 - 9}{8^3} = \\frac{567}{512}.\n\\end{align*}\n\n\\emph{Notice how this approximated solution slowly approaches the\nequilibrium value y=1.}"
+    ], 
+    "sols_raw": [
+        "We have &lt;math>\\displaystyle dy/dt = -y(y-1)^2&lt;/math> so that if &lt;math>y(t_0) = y_0&lt;/math> then \n:&lt;math>y(t_0 + h) \\approx y(t_0) + h \\frac{dy}{dt}|_{t=t_0} = y(t_0) + h[-y_0 (y_0 - 1)^2] &lt;/math>\n\nWe denote ''y&lt;sub>0&lt;/sub> = 3/2'' and ''t&lt;sub>0&lt;/sub> = 0'' so that\n:&lt;math>y(1) \\approx y_1 = y_0 + h [-y_0 (y_0 - 1)^2] = 3/2 + 1\\left[\\frac{-3}{2}\\left(\\frac{1}{2}\\right)^2\\right] = 3/2 - 3/8 = 9/8&lt;/math>.\n\nContinuing in this process,\n:&lt;math>y(2) \\approx y_2 = y_1 + h[-y_1 (y_1 - 1)^2] = \\frac{9}{8} - \\frac{9}{8} \\left(\\frac{1}{8}\\right)^2 = \\frac{9}{8} - \\frac{9}{8^3} = \\frac{9 \\times 8^2 - 9}{8^3} = \\frac{567}{512}.&lt;/math>\n\n\n''Notice how this approximated solution slowly approaches the equilibrium value y=1.''\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p>Consider the following initial value problem for a first-order autonomous ODE:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\\end{aligned}\\]</span></p>\n<p>(b) If <span class=\"math\">\\(y_0 = 3/2\\)</span>, use Euler<span class=\"math\">\\(^{\\prime}\\)</span>s method with step size <span class=\"math\">\\(h = 1\\)</span> to approximate the solution <span class=\"math\">\\(y(2)\\)</span> at time <span class=\"math\">\\(t=2\\)</span>.</p>\n", 
+    "statement_latex": "Consider the following initial value problem for a first-order\nautonomous ODE:\n\n\\begin{align*}\n\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0\n\\end{align*}\n\n(b) If $y_0 = 3/2$, use Euler$^{\\prime}$s method with step size $h = 1$\nto approximate the solution $y(2)$ at time $t=2$.", 
+    "statement_raw": "Consider the following initial value problem for a first-order autonomous ODE: \n\n:&lt;math>\\frac{dy}{dt} = -y (y-1)^2, \\quad y(0) = y_0&lt;/math>\n\n(b) If &lt;math>y_0 = 3/2&lt;/math>, use Euler\u2019s method with step size &lt;math>h = 1&lt;/math> to approximate the solution &lt;math>y(2)&lt;/math> at time &lt;math>t=2&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_07_(b)", 
+    "year": 2013
 }

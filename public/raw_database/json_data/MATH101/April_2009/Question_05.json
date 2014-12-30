@@ -1,17 +1,61 @@
 {
-    "term": "April", 
-    "question": "Question_05", 
-    "course": "MATH101", 
-    "statement": "Let \\emph{X} be a random variable with probability density function:\n\n\\begin{align*}f(x) = \\begin{cases} kx(1-x^4) & \\text{ if } 0 \\leq x \\leq 1,\\\\ 0 & \\text{ if } x < 0 \\text{ or } x > 1. \\end{cases}\\end{align*}\n\n(a) Find the value of \\emph{k}.\n\n(b) Find the mean $\\mu$.\n\n(c) Find an algebraic equation satisfied by the median \\emph{m}.", 
-    "year": 2009, 
-    "sols": [
-        "\\textbf{(a)} Using hint 1 we see that \\emph{k} needs to be a positive\nconstant. We can calculate \\emph{k} directly by integrating:\n\n\\begin{align*}\n\\int_{-\\infty}^\\infty f(x)\\,dx &= \\int_{-\\infty}^0 0\\,dx + \\int_0^1 kx(1-x^4)\\,dx + \\int_1^\\infty 0\\,dx \\\\\n&= k \\int_0^1 (x-x^5)\\,dx \\\\\n&= k\\left.\\left(\\frac{x^2}2-\\frac{x^6}6\\right)\\right|_0^1 \\\\\n&= k \\left(\\frac12 - \\frac16\\right) \\\\\n&= \\frac{k}3.\\end{align*}\n\nThe only way that this integral has value 1 is when \\textbf{\\emph{k} =\n3}.", 
-        "\\textbf{(b)} Using the second hint and the fact that \\emph{k} = 3 the\ncalculation is straight forward\n\n\\begin{align*}\n\\mu &= \\int_{-\\infty}^\\infty xf(x)\\,dx \\\\\n&= \\int_0^1 (x)3x(1-x^4)\\,dx \\\\\n&= 3\u00c2\u00a0\\int_0^1 (x^2-x^6)\\,dx \\\\\n&= 3\\left.\\left(\\frac{x^3}3 - \\frac{x^7}7\\right)\\right|_0^1 \\\\\n&= 3\\left(\\frac13 - \\frac17\\right) \\\\\n&= \\frac47.\\end{align*}", 
-        "\\textbf{(c)} Following the third hint we need to find that value\n\\emph{m} which satisfies\n\n\\begin{align*}\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\\end{align*}\n\nSince $\\int_{-\\infty}^0 f(x)\\,dx = 0 = \\int_1^\\infty f(x)\\,dx$ it is\nclear that \\emph{m} needs to be a number between 0 and 1. Therefore the\nalgebraic equation that \\emph{m} satisfies is the following;\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_0^m 3x(1-x^4)\\,dx \\\\\n&= 3\\left.\\left(\\frac{x^2}2 - \\frac{x^6}6\\right)\\right|_0^m \\\\\n&= 3\\left(\\frac{m^2}2 - \\frac{m^6}6\\right).\\end{align*}"
+    "answer_html": "<p>The only way that this integral has value 1 is when <strong><em>k</em> = 3</strong>.</p>\n", 
+    "answer_latex": "The only way that this integral has value 1 is when \\textbf{\\emph{k} =\n3}.", 
+    "contributors": [
+        "DavidKohler", 
+        "IainMoyles", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>For <span class=\"math\">\\(f\\)</span> to be a probability density function it needs to satisfy two conditions:</p>\n<ul>\n<li><p><span class=\"math\">\\(f\\)</span>(x) <span class=\"math\">\\(\\geq\\)</span> 0 for all <em>x</em>,</p></li>\n<li><p><span class=\"math\">\\(\\int_{-\\infty}^\\infty f(x)\\,dx = 1.\\)</span></p></li>\n</ul>\n<p>Choose <em>k</em> such that both conditions are fulfilled.</p>\n", 
+        "<p>The formula for the mean <span class=\"math\">\\(\\mu\\)</span> is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\mu = \\int_{-\\infty}^\\infty xf(x)\\,dx.\\end{aligned}\\]</span></p>\n", 
+        "<p>The median <em>m</em> is that number which satisfies</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "For $f$ to be a probability density function it needs to satisfy two\nconditions:\n\n\\begin{itemize}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item\n  $f$(x) $\\geq$ 0 for all \\emph{x},\n\\item\n  $\\int_{-\\infty}^\\infty f(x)\\,dx = 1.$\n\\end{itemize}\n\nChoose \\emph{k} such that both conditions are fulfilled.", 
-        "The formula for the mean $\\mu$ is given by\n\n\\begin{align*}\\displaystyle \\mu = \\int_{-\\infty}^\\infty xf(x)\\,dx.\\end{align*}", 
-        "The median \\emph{m} is that number which satisfies\n\n\\begin{align*}\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\\end{align*}"
-    ]
+        "The formula for the mean $\\mu$ is given by\n\n\\begin{align*}\n\\displaystyle \\mu = \\int_{-\\infty}^\\infty xf(x)\\,dx.\n\\end{align*}", 
+        "The median \\emph{m} is that number which satisfies\n\n\\begin{align*}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "For &amp;fnof; to be a probability density function it needs to satisfy two conditions:\n\n* &amp;fnof;(x) &amp;ge; 0 for all ''x'',\n* &lt;math> \\int_{-\\infty}^\\infty f(x)\\,dx = 1. &lt;/math>\n\nChoose ''k'' such that both conditions are fulfilled.\n", 
+        "The formula for the mean &lt;math>\\mu&lt;/math> is given by\n\n:&lt;math>\\displaystyle \\mu = \\int_{-\\infty}^\\infty xf(x)\\,dx. &lt;/math>\n", 
+        "The median ''m'' is that number which satisfies\n\n:&lt;math> \\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx. &lt;/math>\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5", 
+    "rating": null, 
+    "sols_html": [
+        "<p><strong>(a)</strong> Using hint 1 we see that <em>k</em> needs to be a positive constant. We can calculate <em>k</em> directly by integrating:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-\\infty}^\\infty f(x)\\,dx &amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^1 kx(1-x^4)\\,dx + \\int_1^\\infty 0\\,dx \\\\\n&amp;= k \\int_0^1 (x-x^5)\\,dx \\\\\n&amp;= k\\left.\\left(\\frac{x^2}2-\\frac{x^6}6\\right)\\right|_0^1 \\\\\n&amp;= k \\left(\\frac12 - \\frac16\\right) \\\\\n&amp;= \\frac{k}3.\\end{aligned}\\]</span></p>\n<p>The only way that this integral has value 1 is when <strong><em>k</em> = 3</strong>.</p>\n", 
+        "<p><strong>(b)</strong> Using the second hint and the fact that <em>k</em> = 3 the calculation is straight forward</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mu &amp;= \\int_{-\\infty}^\\infty xf(x)\\,dx \\\\\n&amp;= \\int_0^1 (x)3x(1-x^4)\\,dx \\\\\n&amp;= 3\\int_0^1 (x^2-x^6)\\,dx \\\\\n&amp;= 3\\left.\\left(\\frac{x^3}3 - \\frac{x^7}7\\right)\\right|_0^1 \\\\\n&amp;= 3\\left(\\frac13 - \\frac17\\right) \\\\\n&amp;= \\frac47.\\end{aligned}\\]</span></p>\n", 
+        "<p><strong>(c)</strong> Following the third hint we need to find that value <em>m</em> which satisfies</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\\end{aligned}\\]</span></p>\n<p>Since <span class=\"math\">\\(\\int_{-\\infty}^0 f(x)\\,dx = 0 = \\int_1^\\infty f(x)\\,dx\\)</span> it is clear that <em>m</em> needs to be a number between 0 and 1. Therefore the algebraic equation that <em>m</em> satisfies is the following;</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_0^m 3x(1-x^4)\\,dx \\\\\n&amp;= 3\\left.\\left(\\frac{x^2}2 - \\frac{x^6}6\\right)\\right|_0^m \\\\\n&amp;= 3\\left(\\frac{m^2}2 - \\frac{m^6}6\\right).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\textbf{(a)} Using hint 1 we see that \\emph{k} needs to be a positive\nconstant. We can calculate \\emph{k} directly by integrating:\n\n\\begin{align*}\n\\int_{-\\infty}^\\infty f(x)\\,dx &= \\int_{-\\infty}^0 0\\,dx + \\int_0^1 kx(1-x^4)\\,dx + \\int_1^\\infty 0\\,dx \\\\\n&= k \\int_0^1 (x-x^5)\\,dx \\\\\n&= k\\left.\\left(\\frac{x^2}2-\\frac{x^6}6\\right)\\right|_0^1 \\\\\n&= k \\left(\\frac12 - \\frac16\\right) \\\\\n&= \\frac{k}3.\n\\end{align*}\n\nThe only way that this integral has value 1 is when \\textbf{\\emph{k} =\n3}.", 
+        "\\textbf{(b)} Using the second hint and the fact that \\emph{k} = 3 the\ncalculation is straight forward\n\n\\begin{align*}\n\\mu &= \\int_{-\\infty}^\\infty xf(x)\\,dx \\\\\n&= \\int_0^1 (x)3x(1-x^4)\\,dx \\\\\n&= 3\\int_0^1 (x^2-x^6)\\,dx \\\\\n&= 3\\left.\\left(\\frac{x^3}3 - \\frac{x^7}7\\right)\\right|_0^1 \\\\\n&= 3\\left(\\frac13 - \\frac17\\right) \\\\\n&= \\frac47.\n\\end{align*}", 
+        "\\textbf{(c)} Following the third hint we need to find that value\n\\emph{m} which satisfies\n\n\\begin{align*}\n\\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx.\n\\end{align*}\n\nSince $\\int_{-\\infty}^0 f(x)\\,dx = 0 = \\int_1^\\infty f(x)\\,dx$ it is\nclear that \\emph{m} needs to be a number between 0 and 1. Therefore the\nalgebraic equation that \\emph{m} satisfies is the following;\n\n\\begin{align*}\n\\frac12 &= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&= \\int_0^m 3x(1-x^4)\\,dx \\\\\n&= 3\\left.\\left(\\frac{x^2}2 - \\frac{x^6}6\\right)\\right|_0^m \\\\\n&= 3\\left(\\frac{m^2}2 - \\frac{m^6}6\\right).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "'''(a)''' Using hint 1 we see that ''k'' needs to be a positive constant. We can calculate ''k'' directly by integrating:\n\n:&lt;math> \\begin{align}\n\\int_{-\\infty}^\\infty f(x)\\,dx &amp;= \\int_{-\\infty}^0 0\\,dx + \\int_0^1 kx(1-x^4)\\,dx + \\int_1^\\infty 0\\,dx \\\\\n&amp;= k \\int_0^1 (x-x^5)\\,dx \\\\\n&amp;= k\\left.\\left(\\frac{x^2}2-\\frac{x^6}6\\right)\\right|_0^1 \\\\\n&amp;= k \\left(\\frac12 - \\frac16\\right) \\\\\n&amp;= \\frac{k}3.\n\\end{align}\n&lt;/math>\n\nThe only way that this integral has value 1 is when '''''k'' = 3'''.\n", 
+        "'''(b)''' Using the second hint and the fact that ''k'' = 3 the calculation is straight forward\n\n:&lt;math> \\begin{align}\n\\mu &amp;= \\int_{-\\infty}^\\infty xf(x)\\,dx \\\\\n&amp;= \\int_0^1 (x)3x(1-x^4)\\,dx \\\\\n&amp;= 3\u00a0\\int_0^1 (x^2-x^6)\\,dx \\\\\n&amp;= 3\\left.\\left(\\frac{x^3}3 - \\frac{x^7}7\\right)\\right|_0^1 \\\\\n&amp;= 3\\left(\\frac13 - \\frac17\\right) \\\\\n&amp;= \\frac47.\n\\end{align}\n&lt;/math>\n", 
+        "'''(c)''' Following the third hint we need to find that value ''m'' which satisfies\n\n:&lt;math> \\int_{-\\infty}^m f(x)\\,dx = \\frac12 = \\int_m^\\infty f(x)\\,dx. &lt;/math>\n\nSince &lt;math> \\int_{-\\infty}^0 f(x)\\,dx = 0 = \\int_1^\\infty f(x)\\,dx &lt;/math> it is clear that ''m'' needs to be a number between 0 and 1. Therefore the algebraic equation that ''m'' satisfies is the following;\n\n:&lt;math> \\begin{align}\n\\frac12 &amp;= \\int_{-\\infty}^m f(x)\\,dx \\\\\n&amp;= \\int_0^m 3x(1-x^4)\\,dx \\\\\n&amp;= 3\\left.\\left(\\frac{x^2}2 - \\frac{x^6}6\\right)\\right|_0^m \\\\\n&amp;= 3\\left(\\frac{m^2}2 - \\frac{m^6}6\\right).\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let <em>X</em> be a random variable with probability density function:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases} kx(1-x^4) &amp; \\text{ if } 0 \\leq x \\leq 1,\\\\ 0 &amp; \\text{ if } x &lt; 0 \\text{ or } x &gt; 1. \\end{cases}\\end{aligned}\\]</span></p>\n<p>(a) Find the value of <em>k</em>.</p>\n<p>(b) Find the mean <span class=\"math\">\\(\\mu\\)</span>.</p>\n<p>(c) Find an algebraic equation satisfied by the median <em>m</em>.</p>\n", 
+    "statement_latex": "Let \\emph{X} be a random variable with probability density function:\n\n\\begin{align*}\nf(x) = \\begin{cases} kx(1-x^4) & \\text{ if } 0 \\leq x \\leq 1,\\\\ 0 & \\text{ if } x < 0 \\text{ or } x > 1. \\end{cases}\n\\end{align*}\n\n(a) Find the value of \\emph{k}.\n\n(b) Find the mean $\\mu$.\n\n(c) Find an algebraic equation satisfied by the median \\emph{m}.", 
+    "statement_raw": "Let ''X'' be a random variable with probability density function:\n\n:&lt;math>f(x) = \\begin{cases} kx(1-x^4) &amp; \\text{ if } 0 \\leq x \\leq 1,\\\\ 0 &amp; \\text{ if } x &lt; 0 \\text{ or } x > 1. \\end{cases}&lt;/math>\n\n(a) Find the value of ''k''.\n\n(b) Find the mean &lt;math>\\mu&lt;/math>.\n\n(c) Find an algebraic equation satisfied by the median ''m''.\n", 
+    "term": "April", 
+    "topics": [
+        "Probability_density_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_05", 
+    "year": 2009
 }

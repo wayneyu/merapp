@@ -1,14 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_01_(c)", 
-    "course": "MATH215", 
-    "statement": "$y_1(x) = x$ and $y_2(x) = -x$ are both solutions of the first-order\ninitial value problem:\n\n\\begin{align*}y y' = x, \\;\\; y(0) = 0.\\end{align*}\n\nDoes this contradict the existence and uniqueness theorem (`Picard's\ntheorem' or `Cauchy-Lipschitz theorem')? Explain.", 
-    "year": 2013, 
-    "sols": [
-        "Picard's theorem (at least one version of it) states that initial value\nproblems of the form $\\frac{dy}{dx} = f(x,y), \\quad y(x_0) = y_0$ have a\nunique solution over some interval I containing $x_0$ provided f is\ncontinuous at $(x_0, y_0)$.\n\nIf we rearrange the ODE problem $y \\frac{dy}{dx} = x, \\quad y(0) = 0$,\nwe get $\\frac{dy}{dx} = \\frac{x}{y}, \\quad y(0) = 0$. When $x=0$, $y=0$,\nbut $\\displaystyle \\frac{x}{y}$ is not continuous at (0,0) because it is\nnot defined. Therefore the theorem cannot be used and uniqueness is not\nguaranteed."
+    "answer_html": "<p>When <span class=\"math\">\\(x=0\\)</span>, <span class=\"math\">\\(y=0\\)</span>, but <span class=\"math\">\\(\\displaystyle \\frac{x}{y}\\)</span> is not continuous at (0,0) because it is not defined.Therefore the theorem cannot be used and uniqueness is not guaranteed.</p>\n", 
+    "answer_latex": "When $x=0$, $y=0$,\nbut $\\displaystyle \\frac{x}{y}$ is not continuous at (0,0) because it is\nnot defined.Therefore the theorem cannot be used and uniqueness is not\nguaranteed.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH215", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The point of a mathematical theorem is that it always holds true provided the conditions are satisfied. Hence this example does not contradict the theorem, but instead does not satisfy the conditions of the theorem.</p>\n", 
+        "<p>Picard&#8217;s theorem ensures existence and uniqueness of a solution <strong>provided</strong> the differential equation is of a certain form. What form?</p>\n"
+    ], 
+    "hints_latex": [
         "The point of a mathematical theorem is that it always holds true\nprovided the conditions are satisfied. Hence this example does not\ncontradict the theorem, but instead does not satisfy the conditions of\nthe theorem.", 
         "Picard's theorem ensures existence and uniqueness of a solution\n\\textbf{provided} the differential equation is of a certain form. What\nform?"
-    ]
+    ], 
+    "hints_raw": [
+        "The point of a mathematical theorem is that it always holds true provided the conditions are satisfied. Hence this example does not contradict the theorem, but instead does not satisfy the conditions of the theorem.\n", 
+        "Picard's theorem ensures existence and uniqueness of a solution '''provided''' the differential equation is of a certain form. What form?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "1 (c)", 
+    "rating": 36, 
+    "sols_html": [
+        "<p>Picard&#8217;s theorem (at least one version of it) states that initial value problems of the form <span class=\"math\">\\(\\frac{dy}{dx} = f(x,y), \\quad y(x_0) = y_0\\)</span> have a unique solution over some interval I containing <span class=\"math\">\\(x_0\\)</span> provided f is continuous at <span class=\"math\">\\((x_0, y_0)\\)</span>.</p>\n<p>If we rearrange the ODE problem <span class=\"math\">\\(y \\frac{dy}{dx} = x, \\quad y(0) = 0\\)</span>, we get <span class=\"math\">\\(\\frac{dy}{dx} = \\frac{x}{y}, \\quad y(0) = 0\\)</span>. When <span class=\"math\">\\(x=0\\)</span>, <span class=\"math\">\\(y=0\\)</span>, but <span class=\"math\">\\(\\displaystyle \\frac{x}{y}\\)</span> is not continuous at (0,0) because it is not defined. Therefore the theorem cannot be used and uniqueness is not guaranteed.</p>\n"
+    ], 
+    "sols_latex": [
+        "Picard's theorem (at least one version of it) states that initial value\nproblems of the form $\\frac{dy}{dx} = f(x,y), \\quad y(x_0) = y_0$ have a\nunique solution over some interval I containing $x_0$ provided f is\ncontinuous at $(x_0, y_0)$.\n\nIf we rearrange the ODE problem $y \\frac{dy}{dx} = x, \\quad y(0) = 0$,\nwe get $\\frac{dy}{dx} = \\frac{x}{y}, \\quad y(0) = 0$. When $x=0$, $y=0$,\nbut $\\displaystyle \\frac{x}{y}$ is not continuous at (0,0) because it is\nnot defined. Therefore the theorem cannot be used and uniqueness is not\nguaranteed."
+    ], 
+    "sols_raw": [
+        "Picard's theorem (at least one version of it) states that initial value problems of the form &lt;math>\\frac{dy}{dx} = f(x,y), \\quad y(x_0) = y_0&lt;/math> have a unique solution over some interval I containing &lt;math>x_0&lt;/math> provided f is continuous at &lt;math>(x_0, y_0)&lt;/math>.\n\nIf we rearrange the ODE problem &lt;math>y \\frac{dy}{dx} = x, \\quad y(0) = 0&lt;/math>, we get &lt;math>\\frac{dy}{dx} = \\frac{x}{y}, \\quad y(0) = 0&lt;/math>. When &lt;math>x=0&lt;/math>, &lt;math>y=0&lt;/math>, but &lt;math>\\displaystyle \\frac{x}{y}&lt;/math> is not continuous at (0,0) because it is not defined. Therefore the theorem cannot be used and uniqueness is not guaranteed.\n"
+    ], 
+    "solvers": [
+        "MikeL"
+    ], 
+    "statement_html": "<p><span class=\"math\">\\(y_1(x) = x\\)</span> and <span class=\"math\">\\(y_2(x) = -x\\)</span> are both solutions of the first-order initial value problem:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny y&#39; = x, \\;\\; y(0) = 0.\\end{aligned}\\]</span></p>\n<p>Does this contradict the existence and uniqueness theorem (&#8216;Picard&#8217;s theorem&#8217; or &#8216;Cauchy-Lipschitz theorem&#8217;)? Explain.</p>\n", 
+    "statement_latex": "$y_1(x) = x$ and $y_2(x) = -x$ are both solutions of the first-order\ninitial value problem:\n\n\\begin{align*}\ny y' = x, \\;\\; y(0) = 0.\n\\end{align*}\n\nDoes this contradict the existence and uniqueness theorem (`Picard's\ntheorem' or `Cauchy-Lipschitz theorem')? Explain.", 
+    "statement_raw": "&lt;math>y_1(x) = x&lt;/math> and &lt;math>y_2(x) = -x&lt;/math> are both solutions of the first-order initial value problem:\n\n:&lt;math>y y' = x, \\;\\; y(0) = 0&lt;/math>.\n\nDoes this contradict the existence and uniqueness theorem (`Picard's theorem' or `Cauchy-Lipschitz theorem')? Explain.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH215/December_2013/Question_01_(c)", 
+    "year": 2013
 }

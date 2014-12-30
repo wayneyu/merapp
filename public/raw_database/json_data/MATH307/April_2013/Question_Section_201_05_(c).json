@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_201_05_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(S=\\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1  -1\\\\ -1  1 \\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $S=\\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1  -1\\\\ -1  1 \\end{bmatrix}$ ", 
     "course": "MATH307", 
-    "statement": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=.5\\textwidth]{MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(c)} Suppose that by attaching a battery, the voltage at vertex\n1 is held at \\emph{b\\textsubscript{1}} and the voltage at vertex 2 is\nheld at \\emph{b\\textsubscript{2}}. Write down vectors \\textbf{\\emph{v}}\nand \\emph{\\textbf{J}} so that the equation \\emph{L\\textbf{v}} =\n\\textbf{\\emph{J}} describes this situation. Explain what each entry of\n\\textbf{\\emph{v}} and \\textbf{\\emph{J}} represents, and how you can use\nthe entries to compute the effective resistance between vertices 1 and\n2.", 
-    "year": 2013, 
-    "sols": [
-        "\\begin{align*}\\vec{v} = \\begin{bmatrix}\nb_1\\\\b_2\\\\v_3\\\\v_4\\\\v_5\\\\v_6\n\\end{bmatrix}\\end{align*}\n\nHere every entry is the voltage at the corresponding node.\n\\emph{b\\textsubscript{1}} and \\emph{b\\textsubscript{2}} are the voltages\nheld by the battery connected at nodes 1 and 2.\n\n\\begin{align*}\\vec{J} = \\begin{bmatrix}\nc\\\\-c\\\\0\\\\0\\\\0\\\\0\n\\end{bmatrix}\\end{align*}\n\nHere every entry is the current flowing into/out of the corresponding\nnode. \\emph{c} is the current coming out of node 1 from the battery,\n\\emph{-c} is the current coming out of node 2 from the battery.\n\nTo find \\emph{R\\textsubscript{eff}} remember Ohm's law: \\emph{V=IR}.\nHence\n\n\\begin{align*}R_{\\mathrm{eff}} = \\frac{b_2-b_1}{c}\\end{align*}\n\nNotice that \\emph{c} is determined by the resistance of the rest of the\ncircuit. If \\emph{c} is unknown, the effective resistance can be\ncomputed using Schur$^{\\prime}$s Complement. Remember:\n\n\\begin{align*}S = \\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1 & -1\\\\ -1 & 1 \\end{bmatrix}\\end{align*}"
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 201 05 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><span class=\"math\">\\[\\begin{aligned}\n\\vec{v} = \\begin{bmatrix}\nb_1\\\\b_2\\\\v_3\\\\v_4\\\\v_5\\\\v_6\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Here every entry is the voltage at the corresponding node. <em>b<sub>1</sub></em> and <em>b<sub>2</sub></em> are the voltages held by the battery connected at nodes 1 and 2.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\vec{J} = \\begin{bmatrix}\nc\\\\-c\\\\0\\\\0\\\\0\\\\0\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Here every entry is the current flowing into/out of the corresponding node. <em>c</em> is the current coming out of node 1 from the battery, <em>-c</em> is the current coming out of node 2 from the battery.</p>\n<p>To find <em>R<sub>eff</sub></em> remember Ohm&#8217;s law: <em>V=IR</em>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR_{\\mathrm{eff}} = \\frac{b_2-b_1}{c}\\end{aligned}\\]</span></p>\n<p>Notice that <em>c</em> is determined by the resistance of the rest of the circuit. If <em>c</em> is unknown, the effective resistance can be computed using Schur<span class=\"math\">\\(^{\\prime}\\)</span>s Complement. Remember:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS = \\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1 &amp; -1\\\\ -1 &amp; 1 \\end{bmatrix}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "\\begin{align*}\n\\vec{v} = \\begin{bmatrix}\nb_1\\\\b_2\\\\v_3\\\\v_4\\\\v_5\\\\v_6\n\\end{bmatrix}\n\\end{align*}\n\nHere every entry is the voltage at the corresponding node.\n\\emph{b\\textsubscript{1}} and \\emph{b\\textsubscript{2}} are the voltages\nheld by the battery connected at nodes 1 and 2.\n\n\\begin{align*}\n\\vec{J} = \\begin{bmatrix}\nc\\\\-c\\\\0\\\\0\\\\0\\\\0\n\\end{bmatrix}\n\\end{align*}\n\nHere every entry is the current flowing into/out of the corresponding\nnode. \\emph{c} is the current coming out of node 1 from the battery,\n\\emph{-c} is the current coming out of node 2 from the battery.\n\nTo find \\emph{R\\textsubscript{eff}} remember Ohm's law: \\emph{V=IR}.\nHence\n\n\\begin{align*}\nR_{\\mathrm{eff}} = \\frac{b_2-b_1}{c}\n\\end{align*}\n\nNotice that \\emph{c} is determined by the resistance of the rest of the\ncircuit. If \\emph{c} is unknown, the effective resistance can be\ncomputed using Schur$^{\\prime}$s Complement. Remember:\n\n\\begin{align*}\nS = \\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1 & -1\\\\ -1 & 1 \\end{bmatrix}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        ":&lt;math>\\vec{v} = \\begin{bmatrix}\nb_1\\\\b_2\\\\v_3\\\\v_4\\\\v_5\\\\v_6\n\\end{bmatrix}&lt;/math>\n\nHere every entry is the voltage at the corresponding node. ''b&lt;sub>1&lt;/sub>'' and ''b&lt;sub>2&lt;/sub>'' are the voltages held by the battery connected at nodes 1 and 2.\n\n:&lt;math>\\vec{J} = \\begin{bmatrix}\nc\\\\-c\\\\0\\\\0\\\\0\\\\0\n\\end{bmatrix}&lt;/math>\n\nHere every entry is the current flowing into/out of the corresponding node. ''c'' is the current coming out of node 1 from the battery, ''-c'' is the current coming out of node 2 from the battery.\n\nTo find ''R&lt;sub>eff&lt;/sub>'' remember Ohm's law: ''V=IR''. Hence\n\n:&lt;math>R_{\\mathrm{eff}} = \\frac{b_2-b_1}{c}&lt;/math>\n\nNotice that ''c'' is determined by the resistance of the rest of the circuit. If ''c'' is unknown, the effective resistance can be computed using Schur\u2019s Complement. Remember:\n\n:&lt;math> S = \\frac{1}{R_{\\mathrm{eff}}}\\begin{bmatrix} 1 &amp; -1\\\\ -1 &amp; 1 \\end{bmatrix}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Consider the following graph, interpreted as a resistor network with all resistances <em>R = 1</em>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p><strong>(c)</strong> Suppose that by attaching a battery, the voltage at vertex 1 is held at <em>b<sub>1</sub></em> and the voltage at vertex 2 is held at <em>b<sub>2</sub></em>. Write down vectors <strong><em>v</em></strong> and <em><strong>J</strong></em> so that the equation <em>L<strong>v</strong></em> = <strong><em>J</em></strong> describes this situation. Explain what each entry of <strong><em>v</em></strong> and <strong><em>J</em></strong> represents, and how you can use the entries to compute the effective resistance between vertices 1 and 2.</p>\n", 
+    "statement_latex": "Consider the following graph, interpreted as a resistor network with all\nresistances \\emph{R = 1}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH307/April_2013/MATH307April2013Section201Q5a.png}\n\\end{description}\n\n\\textbf{(c)} Suppose that by attaching a battery, the voltage at vertex\n1 is held at \\emph{b\\textsubscript{1}} and the voltage at vertex 2 is\nheld at \\emph{b\\textsubscript{2}}. Write down vectors \\textbf{\\emph{v}}\nand \\emph{\\textbf{J}} so that the equation \\emph{L\\textbf{v}} =\n\\textbf{\\emph{J}} describes this situation. Explain what each entry of\n\\textbf{\\emph{v}} and \\textbf{\\emph{J}} represents, and how you can use\nthe entries to compute the effective resistance between vertices 1 and\n2.", 
+    "statement_raw": "Consider the following graph, interpreted as a resistor network with all resistances ''R = 1''.\n\n:[[File:MATH307April2013Section201Q5a.png|300px]]\n\n'''(c)''' Suppose that by attaching a battery, the voltage at vertex 1 is held at ''b&lt;sub>1&lt;/sub>'' and the voltage at vertex 2 is held at ''b&lt;sub>2&lt;/sub>''. Write down vectors '''''v''''' and '''''J''''' so that the equation ''L'''v''''' = '''''J''''' describes this situation. Explain what each entry of '''''v''''' and '''''J''''' represents, and how you can use the entries to compute the effective resistance between vertices 1 and 2.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_201_05_(c)", 
+    "year": 2013
 }

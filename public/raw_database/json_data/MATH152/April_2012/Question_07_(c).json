@@ -1,14 +1,48 @@
 {
-    "term": "April", 
-    "question": "Question_07_(c)", 
-    "course": "MATH152", 
-    "statement": "Consider a random walk that has transition matrix:\n\n\\begin{align*}P=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\\end{align*}\n\nFind the equilibrium probability vector (i.e. the vector at which\nprobabilities remain unchanged from one step to the next).", 
-    "year": 2012, 
-    "sols": [
-        "The stationary probability density, $\\bar{\\mathbf{p}}$, satisfies the\nequation:\n\n\\begin{align*}\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\\end{align*} We notice that\n$\\bar{\\mathbf{p}}$ must be the eigenvector with corresponding eigenvalue\n$\\lambda = 1$. Thus, we need to solve for this eigenvector (making sure\nall the entries sum to 1 in order for it to be a probability\ndistribution) using the equation $(P - I)\\bar{\\mathbf{p}} = \\mathbf{0}$\n\n\\begin{align*}\\begin{bmatrix}\n-3/4  &  1/4  &  1/4\\\\\n3/4  &  -1/4  &  1/4\\\\\n0  &  0  &  -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}} = \\mathbf{0} \\quad \\rightarrow \\quad \n\\bar{\\mathbf{p}} = \\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.\\end{align*}\n\nTherefore, the stationary probabilities are probability 1/4 of being in\nstate 1, probability 3/4 of being in state 2, and zero probability of\nbeing in state 3."
+    "answer_html": "<p><span class=\"math\">\\(\\begin{bmatrix}\n-3/4    1/4    1/4\\\\\n3/4    -1/4    1/4\\\\\n0    0    -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}}=\\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.\\)</span> Therefore, the stationary probabilities are probability 1/4 of being in state 1, probability 3/4 of being in state 2, and zero probability of being in state 3.</p>\n", 
+    "answer_latex": " $\\begin{bmatrix}\n-3/4    1/4    1/4\\\\\n3/4    -1/4    1/4\\\\\n0    0    -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}}=\\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.$ Therefore, the stationary probabilities are probability 1/4 of being in\nstate 1, probability 3/4 of being in state 2, and zero probability of\nbeing in state 3.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "The stationary probability density, $\\bar{\\mathbf{p}}$, satisfies the\nequation:\n\n\\begin{align*}\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\\end{align*}", 
-        "Consider your work in\n\\href{Science:Math Exam Resources/Courses/MATH152/April 2012/Question 7 (b)}{part\n(b)}. Can you use eigenvectors to help you answer this question?"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>The stationary probability density, <span class=\"math\">\\(\\bar{\\mathbf{p}}\\)</span>, satisfies the equation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\\end{aligned}\\]</span></p>\n", 
+        "<p>Consider your work in <span>part (b)</span>. Can you use eigenvectors to help you answer this question?</p>\n"
+    ], 
+    "hints_latex": [
+        "The stationary probability density, $\\bar{\\mathbf{p}}$, satisfies the\nequation:\n\n\\begin{align*}\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\n\\end{align*}", 
+        "Consider your work in\n{part\n(b)}. Can you use eigenvectors to help you answer this question?"
+    ], 
+    "hints_raw": [
+        "The stationary probability density, &lt;math>\\bar{\\mathbf{p}}&lt;/math>, satisfies the equation:\n:&lt;math>\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\n&lt;/math>\n", 
+        "Consider your work in [[Science:Math Exam Resources/Courses/MATH152/April 2012/Question 7 (b)|part (b)]]. Can you use eigenvectors to help you answer this question?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "7 (c)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>The stationary probability density, <span class=\"math\">\\(\\bar{\\mathbf{p}}\\)</span>, satisfies the equation:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\\end{aligned}\\]</span></p>\n<p>We notice that <span class=\"math\">\\(\\bar{\\mathbf{p}}\\)</span> must be the eigenvector with corresponding eigenvalue <span class=\"math\">\\(\\lambda = 1\\)</span>. Thus, we need to solve for this eigenvector (making sure all the entries sum to 1 in order for it to be a probability distribution) using the equation <span class=\"math\">\\((P - I)\\bar{\\mathbf{p}} = \\mathbf{0}\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n-3/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  -1/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}} = \\mathbf{0} \\quad \\rightarrow \\quad \n\\bar{\\mathbf{p}} = \\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>Therefore, the stationary probabilities are probability 1/4 of being in state 1, probability 3/4 of being in state 2, and zero probability of being in state 3.</p>\n"
+    ], 
+    "sols_latex": [
+        "The stationary probability density, $\\bar{\\mathbf{p}}$, satisfies the\nequation:\n\n\\begin{align*}\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\n\\end{align*} We notice that\n$\\bar{\\mathbf{p}}$ must be the eigenvector with corresponding eigenvalue\n$\\lambda = 1$. Thus, we need to solve for this eigenvector (making sure\nall the entries sum to 1 in order for it to be a probability\ndistribution) using the equation $(P - I)\\bar{\\mathbf{p}} = \\mathbf{0}$\n\n\\begin{align*}\n\\begin{bmatrix}\n-3/4  &  1/4  &  1/4\\\\\n3/4  &  -1/4  &  1/4\\\\\n0  &  0  &  -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}} = \\mathbf{0} \\quad \\rightarrow \\quad \n\\bar{\\mathbf{p}} = \\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.\n\\end{align*}\n\nTherefore, the stationary probabilities are probability 1/4 of being in\nstate 1, probability 3/4 of being in state 2, and zero probability of\nbeing in state 3."
+    ], 
+    "sols_raw": [
+        "The stationary probability density, &lt;math>\\bar{\\mathbf{p}}&lt;/math>, satisfies the equation:\n:&lt;math>\n\\bar{\\mathbf{p}} = P\\bar{\\mathbf{p}}.\n&lt;/math>\nWe notice that &lt;math>\\bar{\\mathbf{p}}&lt;/math> must be the eigenvector with corresponding eigenvalue &lt;math>\\lambda = 1&lt;/math>. Thus, we need to solve for this eigenvector (making sure all the entries sum to 1 in order for it to be a probability distribution) using the equation &lt;math>(P - I)\\bar{\\mathbf{p}} = \\mathbf{0}&lt;/math>\n:&lt;math>\n\\begin{bmatrix}\n-3/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  -1/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  -1/2\n\\end{bmatrix}\\bar{\\mathbf{p}} = \\mathbf{0} \\quad \\rightarrow \\quad \n\\bar{\\mathbf{p}} = \\begin{bmatrix}1/4 \\\\ 3/4 \\\\ 0\\end{bmatrix}.&lt;/math>\n\n&lt;font style=\"color:blue;\">Therefore, the stationary probabilities are probability 1/4 of being in state 1, probability 3/4 of being in state 2, and zero probability of being in state 3.&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>Consider a random walk that has transition matrix:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Find the equilibrium probability vector (i.e. the vector at which probabilities remain unchanged from one step to the next).</p>\n", 
+    "statement_latex": "Consider a random walk that has transition matrix:\n\n\\begin{align*}\nP=\\begin{bmatrix}\n1/4  &  1/4  &  1/4\\\\\n3/4  &  3/4  &  1/4\\\\\n0  &  0  &  1/2\n\\end{bmatrix}\n\\end{align*}\n\nFind the equilibrium probability vector (i.e. the vector at which\nprobabilities remain unchanged from one step to the next).", 
+    "statement_raw": "Consider a random walk that has transition matrix:\n\n:&lt;math>\nP=\\begin{bmatrix}\n1/4  &amp;  1/4  &amp;  1/4\\\\\n3/4  &amp;  3/4  &amp;  1/4\\\\\n0  &amp;  0  &amp;  1/2\n\\end{bmatrix}\n&lt;/math>\n\nFind the equilibrium probability vector (i.e. the vector at which probabilities remain unchanged from one step to the next).\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_07_(c)", 
+    "year": 2012
 }

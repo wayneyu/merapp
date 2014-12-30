@@ -1,15 +1,54 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFill in the blanks with right, left, or midpoint; an interval; and a\nvalue of $n$.\n\n$\\sum_{k=0}^{3}f(1.5 + k)\\cdot 1$ is a \\_\\_\\_\\_\\_\\_\\_\\_\\_ Riemann sum\nfor $\\displaystyle f$ on the interval {[}\\_\\_\\_\\_ , \\_\\_\\_\\_{]} with\n$\\displaystyle n =$ \\_\\_\\_\\_\\_\\_.", 
-    "year": 2013, 
-    "sols": [
-        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a left Riemann sum from 1.5 to 5.5 with $n=4$ rectangles.\n\nIf we look at our left endpoint formula in the hint, we realize that\n\n\\begin{align*}\na&=1.5\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\\end{align*}\n\nThis last relation tells us that b=n+a=5.5.", 
-        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a midpoint Riemann sum from 1 to 5 with $n=4$ rectangles.\n\nWe can recognize this by writing\n\n\\begin{align*}\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(1+(k+1/2))\\end{align*}\n\nwhich is in the form of our midpoint formula in the hint if we take\n\n\\begin{align*}\na&=1\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\\end{align*}\n\nThis last relation tells us that b=n+a=5.", 
-        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a right endpoint Riemann sum from 0.5 to 4.5 with $n=4$\nrectangles.\n\nWe can recognize this by writing\n\n\\begin{align*}\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(0.5+(k+1))\\end{align*}\n\nwhich is in the form of our right endpoint formula in the hint if we\ntake\n\n\\begin{align*}\na&=0.5\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\\end{align*}\n\nThis last relation tells us that b=n+a=4.5."
+    "answer_html": "<p>This last relation tells us that b=n+a=5.5.</p>\n", 
+    "answer_latex": "This last relation tells us that b=n+a=5.5.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
-        "The left Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\\sum_{k=0}^{n-1} f(a+k\\Delta x)\\cdot\\Delta x\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$\n\nThe midpoint Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\\sum_{k=0}^{n-1} f(a+(k+1/2)\\Delta x)\\cdot\\Delta x\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$\n\nThe right Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\\sum_{k=1}^{n} f(a+k\\Delta x)\\cdot\\Delta x\\end{align*}\n\nor\n\n\\begin{align*}\\sum_{k=0}^{n-1} f(a+(k+1)\\Delta x)\\cdot\\Delta x\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$"
-    ]
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>The left Riemann sum of a function <em><span class=\"math\">\\(f\\)</span></em> over the interval <em><span>[</span>a,b<span>]</span></em> with <em>n</em> intervals is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^{n-1} f(a+k\\Delta x)\\cdot\\Delta x\\end{aligned}\\]</span></p>\n<p>with <span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span></p>\n<p>The midpoint Riemann sum of a function <em><span class=\"math\">\\(f\\)</span></em> over the interval <em><span>[</span>a,b<span>]</span></em> with <em>n</em> intervals is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^{n-1} f(a+(k+1/2)\\Delta x)\\cdot\\Delta x\\end{aligned}\\]</span></p>\n<p>with <span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span></p>\n<p>The right Riemann sum of a function <em><span class=\"math\">\\(f\\)</span></em> over the interval <em><span>[</span>a,b<span>]</span></em> with <em>n</em> intervals is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=1}^{n} f(a+k\\Delta x)\\cdot\\Delta x\\end{aligned}\\]</span></p>\n<p>or</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^{n-1} f(a+(k+1)\\Delta x)\\cdot\\Delta x\\end{aligned}\\]</span></p>\n<p>with <span class=\"math\">\\(\\Delta x = \\frac{b-a}{n}\\)</span></p>\n"
+    ], 
+    "hints_latex": [
+        "The left Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\n\\sum_{k=0}^{n-1} f(a+k\\Delta x)\\cdot\\Delta x\n\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$\n\nThe midpoint Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\n\\sum_{k=0}^{n-1} f(a+(k+1/2)\\Delta x)\\cdot\\Delta x\n\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$\n\nThe right Riemann sum of a function \\emph{$f$} over the interval\n\\emph{{[}a,b{]}} with \\emph{n} intervals is given by\n\n\\begin{align*}\n\\sum_{k=1}^{n} f(a+k\\Delta x)\\cdot\\Delta x\n\\end{align*}\n\nor\n\n\\begin{align*}\n\\sum_{k=0}^{n-1} f(a+(k+1)\\Delta x)\\cdot\\Delta x\n\\end{align*} with\n$\\Delta x = \\frac{b-a}{n}$"
+    ], 
+    "hints_raw": [
+        "The left Riemann sum of a function ''&amp;fnof;'' over the interval ''[a,b]'' with ''n'' intervals is given by\n:&lt;math>\n\\sum_{k=0}^{n-1} f(a+k\\Delta x)\\cdot\\Delta x\n&lt;/math>\nwith &lt;math>\\Delta x = \\frac{b-a}{n}&lt;/math>\n\n\n\nThe midpoint Riemann sum of a function ''&amp;fnof;'' over the interval ''[a,b]'' with ''n'' intervals is given by\n:&lt;math>\n\\sum_{k=0}^{n-1} f(a+(k+1/2)\\Delta x)\\cdot\\Delta x\n&lt;/math>\nwith &lt;math>\\Delta x = \\frac{b-a}{n}&lt;/math>\n\n\n\nThe right Riemann sum of a function ''&amp;fnof;'' over the interval ''[a,b]'' with ''n'' intervals is given by\n:&lt;math>\n\\sum_{k=1}^{n} f(a+k\\Delta x)\\cdot\\Delta x\n&lt;/math>\n\nor\n\n:&lt;math>\n\\sum_{k=0}^{n-1} f(a+(k+1)\\Delta x)\\cdot\\Delta x\n&lt;/math>\nwith &lt;math>\\Delta x = \\frac{b-a}{n}&lt;/math>\n"
+    ], 
+    "num_votes": 8, 
+    "question": "1 (d)", 
+    "rating": 57, 
+    "sols_html": [
+        "<p>There are multiple correct answers to this problem. The following is but one of three possible interpretations:</p>\n<p>This is a left Riemann sum from 1.5 to 5.5 with <span class=\"math\">\\(n=4\\)</span> rectangles.</p>\n<p>If we look at our left endpoint formula in the hint, we realize that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na&amp;=1.5\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\\end{aligned}\\]</span></p>\n<p>This last relation tells us that b=n+a=5.5.</p>\n", 
+        "<p>There are multiple correct answers to this problem. The following is but one of three possible interpretations:</p>\n<p>This is a midpoint Riemann sum from 1 to 5 with <span class=\"math\">\\(n=4\\)</span> rectangles.</p>\n<p>We can recognize this by writing</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(1+(k+1/2))\\end{aligned}\\]</span></p>\n<p>which is in the form of our midpoint formula in the hint if we take</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na&amp;=1\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\\end{aligned}\\]</span></p>\n<p>This last relation tells us that b=n+a=5.</p>\n", 
+        "<p>There are multiple correct answers to this problem. The following is but one of three possible interpretations:</p>\n<p>This is a right endpoint Riemann sum from 0.5 to 4.5 with <span class=\"math\">\\(n=4\\)</span> rectangles.</p>\n<p>We can recognize this by writing</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(0.5+(k+1))\\end{aligned}\\]</span></p>\n<p>which is in the form of our right endpoint formula in the hint if we take</p>\n<p><span class=\"math\">\\[\\begin{aligned}\na&amp;=0.5\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\\end{aligned}\\]</span></p>\n<p>This last relation tells us that b=n+a=4.5.</p>\n"
+    ], 
+    "sols_latex": [
+        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a left Riemann sum from 1.5 to 5.5 with $n=4$ rectangles.\n\nIf we look at our left endpoint formula in the hint, we realize that\n\n\\begin{align*}\na&=1.5\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\n\\end{align*}\n\nThis last relation tells us that b=n+a=5.5.", 
+        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a midpoint Riemann sum from 1 to 5 with $n=4$ rectangles.\n\nWe can recognize this by writing\n\n\\begin{align*}\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(1+(k+1/2))\n\\end{align*}\n\nwhich is in the form of our midpoint formula in the hint if we take\n\n\\begin{align*}\na&=1\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\n\\end{align*}\n\nThis last relation tells us that b=n+a=5.", 
+        "There are multiple correct answers to this problem. The following is but\none of three possible interpretations:\n\nThis is a right endpoint Riemann sum from 0.5 to 4.5 with $n=4$\nrectangles.\n\nWe can recognize this by writing\n\n\\begin{align*}\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(0.5+(k+1))\n\\end{align*}\n\nwhich is in the form of our right endpoint formula in the hint if we\ntake\n\n\\begin{align*}\na&=0.5\\\\\nn&=4\\\\\n\\Delta{x}&=\\frac{b-a}{n}=1.\n\\end{align*}\n\nThis last relation tells us that b=n+a=4.5."
+    ], 
+    "sols_raw": [
+        "There are &lt;b>multiple correct answers&lt;/b> to this problem. The following is but one of three possible interpretations:\n\nThis is a left Riemann sum from 1.5 to 5.5 with &lt;math>n=4&lt;/math> rectangles.\n\nIf we look at our left endpoint formula in the hint, we realize that\n\n:&lt;math>\n\\begin{align}\na&amp;=1.5\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\n\\end{align}\n&lt;/math>\n\nThis last relation tells us that b=n+a=5.5.\n", 
+        "There are &lt;b>multiple correct answers&lt;/b> to this problem. The following is but one of three possible interpretations:\n\nThis is a midpoint Riemann sum from 1 to 5 with &lt;math>n=4&lt;/math> rectangles.\n\nWe can recognize this by writing\n\n:&lt;math>\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(1+(k+1/2))\n&lt;/math>\n\nwhich is in the form of our midpoint formula in the hint if we take\n\n:&lt;math>\n\\begin{align}\na&amp;=1\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\n\\end{align}\n&lt;/math>\n\nThis last relation tells us that b=n+a=5.\n", 
+        "There are &lt;b>multiple correct answers&lt;/b> to this problem. The following is but one of three possible interpretations:\n\nThis is a right endpoint Riemann sum from 0.5 to 4.5 with &lt;math>n=4&lt;/math> rectangles.\n\nWe can recognize this by writing\n\n:&lt;math>\n\\sum_{k=0}^3f(1.5+k)=\\sum_{k=0}^3f(0.5+(k+1))\n&lt;/math>\n\nwhich is in the form of our right endpoint formula in the hint if we take\n\n:&lt;math>\n\\begin{align}\na&amp;=0.5\\\\\nn&amp;=4\\\\\n\\Delta{x}&amp;=\\frac{b-a}{n}=1.\n\\end{align}\n&lt;/math>\n\nThis last relation tells us that b=n+a=4.5.\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Fill in the blanks with right, left, or midpoint; an interval; and a value of <span class=\"math\">\\(n\\)</span>.</p>\n<p><span class=\"math\">\\(\\sum_{k=0}^{3}f(1.5 + k)\\cdot 1\\)</span> is a _________ Riemann sum for <span class=\"math\">\\(\\displaystyle f\\)</span> on the interval <span>[</span>____ , ____<span>]</span> with <span class=\"math\">\\(\\displaystyle n =\\)</span> ______.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFill in the blanks with right, left, or midpoint; an interval; and a\nvalue of $n$.\n\n$\\sum_{k=0}^{3}f(1.5 + k)\\cdot 1$ is a \\_\\_\\_\\_\\_\\_\\_\\_\\_ Riemann sum\nfor $\\displaystyle f$ on the interval {[}\\_\\_\\_\\_ , \\_\\_\\_\\_{]} with\n$\\displaystyle n =$ \\_\\_\\_\\_\\_\\_.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nFill in the blanks with right, left, or midpoint; an interval; and a value of &lt;math>n&lt;/math>.\n\n&lt;math>\\sum_{k=0}^{3}f(1.5 + k)\\cdot 1&lt;/math>  is a _________ Riemann sum for &lt;math>\\displaystyle f&lt;/math> on the interval [____ , ____] with &lt;math>\\displaystyle n = &lt;/math> ______.\n", 
+    "term": "April", 
+    "topics": [
+        "Riemann_sum"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(d)", 
+    "year": 2013
 }

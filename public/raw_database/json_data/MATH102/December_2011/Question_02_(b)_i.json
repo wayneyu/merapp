@@ -1,14 +1,52 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)_i", 
-    "course": "MATH102", 
-    "statement": "Consider the differential equation\n\n\\begin{align*}\\frac{dy}{dt} = y^3-y^2-2y\\end{align*}\n\nFind\n\n\\begin{align*}\\lim_{t \\to \\infty} y(t)\\end{align*}\n\nfor \\emph{y}(0) = 1.\n\n\\emph{Hint:} A sketch of the polynomial may be helpful.", 
-    "year": 2011, 
-    "sols": [
-        "Let's follow the hint and sketch a graph of the polynomial on the right\nhand side. Note that\n\n\\begin{align*}\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1).\\end{align*} The roots are\nat 0, 2 and -1.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{M102graph.jpg}\n\\caption{A graph of $\\frac{dy}{dt}$ vs. $y$}\n\\end{figure}\n\nWe are given that y(0)=1, which is in between 0 and 2. In this region,\n$y$ and $y+1$ are both positive and $y-2$ is negative. Therefore,\n$\\frac{dy}{dt}<0$, which means that $y$ is decreasing (throughout the\ninterval (0,2)). As $y$ approaches zero, we see that $\\frac{dy}{dt}$\nalso approaches zero. (Note that $y$ could never cross zero, since\n$\\frac{dy}{dt}=0$ at the point where $y=0$. In other words, if $y$ ever\nhits 0, it stays there!)\n\nTherefore,\n\n\\begin{align*}\\lim_{t\\to\\infty} y(t)=0.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\lim_{t\\to\\infty} y(t)=0.\\)</span></p>\n", 
+    "answer_latex": " $\\lim_{t\\to\\infty} y(t)=0.$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Is <span class=\"math\">\\(y\\)</span> increasing or decreasing when <span class=\"math\">\\(t=0\\)</span>? Using the graph of <span class=\"math\">\\(dy/dt\\)</span> vs. <span class=\"math\">\\(y\\)</span> as the hint in the problem suggests, how can you predict the behaviour of <span class=\"math\">\\(y\\)</span> as time passes?</p>\n", 
+        "<p>What do the zeros of</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = y^3-y^2-2y\\end{aligned}\\]</span></p>\n<p>represent?</p>\n"
+    ], 
+    "hints_latex": [
         "Is $y$ increasing or decreasing when $t=0$? Using the graph of $dy/dt$\nvs. $y$ as the hint in the problem suggests, how can you predict the\nbehaviour of $y$ as time passes?", 
-        "What do the zeros of\n\n\\begin{align*}\\frac{dy}{dt} = y^3-y^2-2y\\end{align*} represent?"
-    ]
+        "What do the zeros of\n\n\\begin{align*}\n\\frac{dy}{dt} = y^3-y^2-2y\n\\end{align*} represent?"
+    ], 
+    "hints_raw": [
+        "Is &lt;math>y &lt;/math> increasing or decreasing when &lt;math>t=0 &lt;/math>?  Using the graph of &lt;math>dy/dt &lt;/math> vs. &lt;math>y &lt;/math> as the hint in the problem suggests, how can you predict the behaviour of &lt;math>y&lt;/math> as time passes?\n", 
+        "What do the zeros of \n:&lt;math>\n\\frac{dy}{dt} = y^3-y^2-2y\n&lt;/math>\nrepresent?\n"
+    ], 
+    "num_votes": 3, 
+    "question": "2 (b) i", 
+    "rating": 25, 
+    "sols_html": [
+        "<p>Let&#8217;s follow the hint and sketch a graph of the polynomial on the right hand side. Note that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1).\\end{aligned}\\]</span></p>\n<p>The roots are at 0, 2 and -1.</p>\n<p><img src=\"../json_data/MATH102/December_2011/M102graph.jpg\" alt=\"image\" /></p>\n<p>We are given that y(0)=1, which is in between 0 and 2. In this region, <span class=\"math\">\\(y\\)</span> and <span class=\"math\">\\(y+1\\)</span> are both positive and <span class=\"math\">\\(y-2\\)</span> is negative. Therefore, <span class=\"math\">\\(\\frac{dy}{dt}&lt;0\\)</span>, which means that <span class=\"math\">\\(y\\)</span> is decreasing (throughout the interval (0,2)). As <span class=\"math\">\\(y\\)</span> approaches zero, we see that <span class=\"math\">\\(\\frac{dy}{dt}\\)</span> also approaches zero. (Note that <span class=\"math\">\\(y\\)</span> could never cross zero, since <span class=\"math\">\\(\\frac{dy}{dt}=0\\)</span> at the point where <span class=\"math\">\\(y=0\\)</span>. In other words, if <span class=\"math\">\\(y\\)</span> ever hits 0, it stays there!)</p>\n<p>Therefore,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{t\\to\\infty} y(t)=0.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Let's follow the hint and sketch a graph of the polynomial on the right\nhand side. Note that\n\n\\begin{align*}\n\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1).\n\\end{align*} The roots are\nat 0, 2 and -1.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH102/December_2011/M102graph.jpg}\n\nWe are given that y(0)=1, which is in between 0 and 2. In this region,\n$y$ and $y+1$ are both positive and $y-2$ is negative. Therefore,\n$\\frac{dy}{dt}<0$, which means that $y$ is decreasing (throughout the\ninterval (0,2)). As $y$ approaches zero, we see that $\\frac{dy}{dt}$\nalso approaches zero. (Note that $y$ could never cross zero, since\n$\\frac{dy}{dt}=0$ at the point where $y=0$. In other words, if $y$ ever\nhits 0, it stays there!)\n\nTherefore,\n\n\\begin{align*}\n\\lim_{t\\to\\infty} y(t)=0.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "\n\nLet's follow the hint and sketch a graph of the polynomial on the right hand side.  Note that \n:&lt;math>\\frac{dy}{dt}=y^3-y^2-2y = y( y^2-y-2) = y( y-2)(y+1). &lt;/math>\nThe roots are at 0, 2 and -1.  \n\n[[File:M102graph.jpg|thumb|A graph of &lt;math>\\frac{dy}{dt} &lt;/math> vs. &lt;math>y &lt;/math>]]\n\nWe are given that y(0)=1, which is in between 0 and 2.  In this region, &lt;math>y &lt;/math> and &lt;math>y+1 &lt;/math> are both positive and &lt;math>y-2 &lt;/math> is negative.  Therefore, &lt;math> \\frac{dy}{dt}&lt;0&lt;/math>, which means that &lt;math>y &lt;/math> is decreasing (throughout the interval (0,2)).   As &lt;math> y&lt;/math> approaches zero, we see that &lt;math> \\frac{dy}{dt}&lt;/math> also approaches zero.  (Note that &lt;math>y &lt;/math> could never cross zero, since &lt;math> \\frac{dy}{dt}=0&lt;/math> at the point where &lt;math> y=0&lt;/math>.  In other words, if &lt;math>y &lt;/math> ever hits 0, it stays there!)\n\nTherefore,\n:&lt;math>\\lim_{t\\to\\infty} y(t)=0. &lt;/math>\n"
+    ], 
+    "solvers": [
+        "CindyBlois"
+    ], 
+    "statement_html": "<p>Consider the differential equation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{dy}{dt} = y^3-y^2-2y\\end{aligned}\\]</span></p>\n<p>Find</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\lim_{t \\to \\infty} y(t)\\end{aligned}\\]</span></p>\n<p>for <em>y</em>(0) = 1.</p>\n<p><em>Hint:</em> A sketch of the polynomial may be helpful.</p>\n", 
+    "statement_latex": "Consider the differential equation\n\n\\begin{align*}\n\\frac{dy}{dt} = y^3-y^2-2y\n\\end{align*}\n\nFind\n\n\\begin{align*}\n\\lim_{t \\to \\infty} y(t)\n\\end{align*}\n\nfor \\emph{y}(0) = 1.\n\n\\emph{Hint:} A sketch of the polynomial may be helpful.", 
+    "statement_raw": "Consider the differential equation\n\n:&lt;math>\n\\frac{dy}{dt} = y^3-y^2-2y\n&lt;/math>\n\nFind\n\n:&lt;math>\n\\lim_{t \\to \\infty} y(t)\n&lt;/math>\n\nfor ''y''(0) = 1.\n\n''Hint:'' A sketch of the polynomial may be helpful.\n", 
+    "term": "December", 
+    "topics": [
+        "Differential_equation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_02_(b)_i", 
+    "year": 2011
 }

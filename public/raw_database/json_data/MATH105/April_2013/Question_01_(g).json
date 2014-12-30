@@ -1,14 +1,53 @@
 {
-    "term": "April", 
-    "question": "Question_01_(g)", 
-    "course": "MATH105", 
-    "statement": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind the area of the region bounded by the graph of\n$\\displaystyle f(x) = \\frac{1}{(2x - 4)^{2}}$ and the $x$-axis between\n$x = 0$ and $x = 1$.", 
-    "year": 2013, 
-    "sols": [
-        "We proceed directly using the hints. First, the area is given by\n\n\\begin{align*}\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx\\end{align*}\n\nUsing the substitution \\emph{u = 2x-4} we find \\emph{du = 2dx}. When\n\\emph{x = 0} we find \\emph{u = -4}, when \\emph{x = 1} we find \\emph{u =\n-2}. Hence\n\n\\begin{align*}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx &= \\int_{-4}^{-2}\\frac1{u^2} \\frac{du}2\\\\\n&= \\frac12 \\int_{-4}^{-2}u^{-2}du \\\\\n&= \\frac12 \\left.(-u^{-1})\\right|_{-4}^{-2} \\\\\n&= -\\frac12 ((-2)^{-1}-(-4)^{-1}) \\\\\n&= -\\frac12 \\left(-\\frac12 + \\frac14\\right)\\\\\n&= \\frac18\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx=\\frac18\\)</span></p>\n", 
+    "answer_latex": " $\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx=\\frac18$ ", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The area between a curve and the <em>x</em>-axis is just the integral from the function on the region.</p>\n", 
+        "<p>Use the substitution <em>u = 2x-4</em>.</p>\n"
+    ], 
+    "hints_latex": [
         "The area between a curve and the \\emph{x}-axis is just the integral from\nthe function on the region.", 
         "Use the substitution \\emph{u = 2x-4}."
-    ]
+    ], 
+    "hints_raw": [
+        "The area between a curve and the ''x''-axis is just the integral from the function on the region.\n", 
+        "Use the substitution ''u = 2x-4''.\n"
+    ], 
+    "num_votes": 6, 
+    "question": "1 (g)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>We proceed directly using the hints. First, the area is given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx\\end{aligned}\\]</span></p>\n<p>Using the substitution <em>u = 2x-4</em> we find <em>du = 2dx</em>. When <em>x = 0</em> we find <em>u = -4</em>, when <em>x = 1</em> we find <em>u = -2</em>. Hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx &amp;= \\int_{-4}^{-2}\\frac1{u^2} \\frac{du}2\\\\\n&amp;= \\frac12 \\int_{-4}^{-2}u^{-2}du \\\\\n&amp;= \\frac12 \\left.(-u^{-1})\\right|_{-4}^{-2} \\\\\n&amp;= -\\frac12 ((-2)^{-1}-(-4)^{-1}) \\\\\n&amp;= -\\frac12 \\left(-\\frac12 + \\frac14\\right)\\\\\n&amp;= \\frac18\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed directly using the hints. First, the area is given by\n\n\\begin{align*}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx\n\\end{align*}\n\nUsing the substitution \\emph{u = 2x-4} we find \\emph{du = 2dx}. When\n\\emph{x = 0} we find \\emph{u = -4}, when \\emph{x = 1} we find \\emph{u =\n-2}. Hence\n\n\\begin{align*}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx &= \\int_{-4}^{-2}\\frac1{u^2} \\frac{du}2\\\\\n&= \\frac12 \\int_{-4}^{-2}u^{-2}du \\\\\n&= \\frac12 \\left.(-u^{-1})\\right|_{-4}^{-2} \\\\\n&= -\\frac12 ((-2)^{-1}-(-4)^{-1}) \\\\\n&= -\\frac12 \\left(-\\frac12 + \\frac14\\right)\\\\\n&= \\frac18\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We proceed directly using the hints. First, the area is given by\n:&lt;math>\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx\n&lt;/math>\n\nUsing the substitution ''u = 2x-4'' we find ''du = 2dx''. When ''x = 0'' we find ''u = -4'', when ''x = 1'' we find ''u = -2''. Hence\n\n:&lt;math>\n\\begin{align}\n\\int_{0}^{1}\\frac{1}{(2x-4)^{2}}dx &amp;= \\int_{-4}^{-2}\\frac1{u^2} \\frac{du}2\\\\\n&amp;= \\frac12 \\int_{-4}^{-2}u^{-2}du \\\\\n&amp;= \\frac12 \\left.(-u^{-1})\\right|_{-4}^{-2} \\\\\n&amp;= -\\frac12 ((-2)^{-1}-(-4)^{-1}) \\\\\n&amp;= -\\frac12 \\left(-\\frac12 + \\frac14\\right)\\\\\n&amp;= \\frac18\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Short-Answer Questions. Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Find the area of the region bounded by the graph of <span class=\"math\">\\(\\displaystyle f(x) = \\frac{1}{(2x - 4)^{2}}\\)</span> and the <span class=\"math\">\\(x\\)</span>-axis between <span class=\"math\">\\(x = 0\\)</span> and <span class=\"math\">\\(x = 1\\)</span>.</p>\n", 
+    "statement_latex": "Short-Answer Questions. Put your answer in the box provided but show\nyour work also. Each question is worth 3 marks, but not all questions\nare of equal difficulty.\n\nFind the area of the region bounded by the graph of\n$\\displaystyle f(x) = \\frac{1}{(2x - 4)^{2}}$ and the $x$-axis between\n$x = 0$ and $x = 1$.", 
+    "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nFind the area of the region bounded by the graph of &lt;math>\\displaystyle f(x) = \\frac{1}{(2x - 4)^{2}}&lt;/math> and the &lt;math>x&lt;/math>-axis between &lt;math>x = 0&lt;/math> and &lt;math>x = 1&lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus", 
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(g)", 
+    "year": 2013
 }

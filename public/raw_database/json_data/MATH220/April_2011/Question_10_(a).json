@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_10_(a)", 
-    "course": "MATH220", 
-    "statement": "Let $A \\subset \\mathbb R$ be a bounded set of real numbers and let\n$B \\subseteq A$ be a nonempty subset of \\emph{A}. Prove that \\emph{B} is\nalso bounded and that\n\n\\begin{align*}\\inf(A) \\leq \\sup(B) \\leq \\sup(A).\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "By definition of the supremum of a set, sup(\\emph{B}) is the smallest\nreal number that is larger or equal to all the numbers in the set\n\\emph{B}. Since all the numbers of the set \\emph{B} are also numbers of\nthe set \\emph{A}, we can conclude that sup(\\emph{A}) is also larger or\nequal to all the numbers of the set \\emph{B} (since it is larger or\nequal to all numbers in the set \\emph{A}) but since sup(\\emph{B}) is the\nsmallest real number with that property we can conclude that\n\n\\begin{align*}\\sup(B) \\leq \\sup(A)\\end{align*}\n\nNow inf(\\emph{A}) is a number that is less or equal than any number in\nthe set \\emph{A} and so since \\emph{B} is a subset, it is in particular\nless or equal to any number in the set \\emph{B}. Since sup(\\emph{B}) is\nlarger than any number in the set \\emph{B} we can conclude that\n\n\\begin{align*}\\inf(A) \\leq \\sup(B)\\end{align*}\n\n\\textbf{\\emph{Note:}} \\emph{we could actually prove the more interesting\nand stronger statement:}\n\n\\begin{align*}\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\\)</span></p>\n", 
+    "answer_latex": " $\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CameronChristou"
     ], 
-    "hints": [
-        "Recall the definition of\n\\href{http://en.wikipedia.org/wiki/Supremum}{supremum} and\n\\href{http://en.wikipedia.org/wiki/Infimum}{infimum} of sets of real\nnumbers."
-    ]
+    "course": "MATH220", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Recall the definition of <span>supremum</span> and <span>infimum</span> of sets of real numbers.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall the definition of\n{supremum} and\n{infimum} of sets of real\nnumbers."
+    ], 
+    "hints_raw": [
+        "Recall the definition of [http://en.wikipedia.org/wiki/Supremum supremum] and [http://en.wikipedia.org/wiki/Infimum infimum] of sets of real numbers.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "10 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>By definition of the supremum of a set, sup(<em>B</em>) is the smallest real number that is larger or equal to all the numbers in the set <em>B</em>. Since all the numbers of the set <em>B</em> are also numbers of the set <em>A</em>, we can conclude that sup(<em>A</em>) is also larger or equal to all the numbers of the set <em>B</em> (since it is larger or equal to all numbers in the set <em>A</em>) but since sup(<em>B</em>) is the smallest real number with that property we can conclude that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\sup(B) \\leq \\sup(A)\\end{aligned}\\]</span></p>\n<p>Now inf(<em>A</em>) is a number that is less or equal than any number in the set <em>A</em> and so since <em>B</em> is a subset, it is in particular less or equal to any number in the set <em>B</em>. Since sup(<em>B</em>) is larger than any number in the set <em>B</em> we can conclude that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\inf(A) \\leq \\sup(B)\\end{aligned}\\]</span></p>\n<p><strong><em>Note:</em></strong> <em>we could actually prove the more interesting and stronger statement:</em></p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By definition of the supremum of a set, sup(\\emph{B}) is the smallest\nreal number that is larger or equal to all the numbers in the set\n\\emph{B}. Since all the numbers of the set \\emph{B} are also numbers of\nthe set \\emph{A}, we can conclude that sup(\\emph{A}) is also larger or\nequal to all the numbers of the set \\emph{B} (since it is larger or\nequal to all numbers in the set \\emph{A}) but since sup(\\emph{B}) is the\nsmallest real number with that property we can conclude that\n\n\\begin{align*}\n\\sup(B) \\leq \\sup(A)\n\\end{align*}\n\nNow inf(\\emph{A}) is a number that is less or equal than any number in\nthe set \\emph{A} and so since \\emph{B} is a subset, it is in particular\nless or equal to any number in the set \\emph{B}. Since sup(\\emph{B}) is\nlarger than any number in the set \\emph{B} we can conclude that\n\n\\begin{align*}\n\\inf(A) \\leq \\sup(B)\n\\end{align*}\n\n\\textbf{\\emph{Note:}} \\emph{we could actually prove the more interesting\nand stronger statement:}\n\n\\begin{align*}\n\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By definition of the supremum of a set, sup(''B'') is the smallest real number that is larger or equal to all the numbers in the set ''B''. Since all the numbers of the set ''B'' are also numbers of the set ''A'', we can conclude that sup(''A'') is also larger or equal to all the numbers of the set ''B'' (since it is larger or equal to all numbers in the set ''A'') but since sup(''B'') is the smallest real number with that property we can conclude that\n:&lt;math>\n\\sup(B) \\leq \\sup(A)\n&lt;/math>\n\nNow inf(''A'') is a number that is less or equal than any number in the set ''A'' and so since ''B'' is a subset, it is in particular less or equal to any number in the set ''B''. Since sup(''B'') is larger than any number in the set ''B'' we can conclude that\n:&lt;math>\n\\inf(A) \\leq \\sup(B)\n&lt;/math>\n\n'''''Note:''''' ''we could actually prove the more interesting and stronger statement:''\n:&lt;math>\n\\inf(A) \\leq \\inf(B) \\leq \\sup(B) \\leq \\sup(A).\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(A \\subset \\mathbb R\\)</span> be a bounded set of real numbers and let <span class=\"math\">\\(B \\subseteq A\\)</span> be a nonempty subset of <em>A</em>. Prove that <em>B</em> is also bounded and that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\inf(A) \\leq \\sup(B) \\leq \\sup(A).\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Let $A \\subset \\mathbb R$ be a bounded set of real numbers and let\n$B \\subseteq A$ be a nonempty subset of \\emph{A}. Prove that \\emph{B} is\nalso bounded and that\n\n\\begin{align*}\n\\inf(A) \\leq \\sup(B) \\leq \\sup(A).\n\\end{align*}", 
+    "statement_raw": "Let &lt;math>A \\subset \\mathbb R&lt;/math> be a bounded set of real numbers and let &lt;math>B \\subseteq A&lt;/math> be a nonempty subset of ''A''. Prove that ''B'' is also bounded and that\n\n:&lt;math>\\inf(A) \\leq \\sup(B) \\leq \\sup(A).&lt;/math>\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2011/Question_10_(a)", 
+    "year": 2011
 }

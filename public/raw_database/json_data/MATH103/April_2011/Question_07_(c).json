@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_07_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(x\\cos(x) =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}\\)</span>.</p>\n", 
+    "answer_latex": "$x\\cos(x) =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "SimonRose"
+    ], 
     "course": "MATH103", 
-    "statement": "Find the Taylor series for the function $f(x) = x\\cos x$. Write your\nanswer in summation notation. (Hint: the Taylor series for $\\sin x$ may\nbe helpful.)\n\n(Taylor series for\n$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}.$)", 
-    "year": 2011, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The Taylor series for <span class=\"math\">\\(\\sin(x)\\)</span> is</p>\n<p><span class=\"math\">\\(\\sin(x) = \\sum_{k=0}^{\\infty} (-1)^{k}\\frac{x^{2k+1}}{(2k+1)!} = x - \\frac{x^{3}}{3!} + \\frac{x^{5}}{5!} - \\ldots\\)</span>.</p>\n", 
+        "<p>The derivative of <span class=\"math\">\\(\\sin(x)\\)</span> is <span class=\"math\">\\(\\cos(x)\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "The Taylor series for $\\sin(x)$ is\n\n$\\sin(x) = \\sum_{k=0}^{\\infty} (-1)^{k}\\frac{x^{2k+1}}{(2k+1)!} = x - \\frac{x^{3}}{3!} + \\frac{x^{5}}{5!} - \\ldots$.", 
+        "The derivative of $\\sin(x)$ is $\\cos(x)$."
+    ], 
+    "hints_raw": [
+        "The Taylor series for &lt;math>\\sin(x)&lt;/math> is\n\n&lt;math> \\sin(x) = \\sum_{k=0}^{\\infty} (-1)^{k}\\frac{x^{2k+1}}{(2k+1)!} = x - \\frac{x^{3}}{3!} + \\frac{x^{5}}{5!} - \\ldots&lt;/math>.\n", 
+        "The derivative of &lt;math> \\sin(x) &lt;/math> is &lt;math> \\cos(x)&lt;/math>.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "7 (c)", 
+    "rating": 56, 
+    "sols_html": [
+        "<p>Using the fact that <span class=\"math\">\\(\\cos(x)\\)</span> is the derivative of <span class=\"math\">\\(\\sin(x)\\)</span>, we can use the Taylor series of <span class=\"math\">\\(\\sin(x)\\)</span> to obtain the Taylor series of <span class=\"math\">\\(\\cos(x)\\)</span>. Specifically,</p>\n<p><span class=\"math\">\\(\\cos(x) = \\frac{d}{dx} \\sin(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\ldots = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}\\)</span>.</p>\n<p>Therefore, to find <span class=\"math\">\\(x \\cos(x)\\)</span> we multiply the taylor series for <span class=\"math\">\\(\\cos(x)\\)</span> by the factor <span class=\"math\">\\(x\\)</span>. That is</p>\n<p><span class=\"math\">\\(x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}\\)</span>.</p>\n", 
+        "<p>The first solution assumes that the Taylor series for <span class=\"math\">\\(\\cos(x)\\)</span> is not known in advance. The Taylor series for <span class=\"math\">\\(\\sin(x)\\)</span> is known since it was given in the statement of a previous question.</p>\n<p>If the Taylor series for <span class=\"math\">\\(\\cos(x)\\)</span> is known, then we can start the solution from the starting point</p>\n<p><span class=\"math\">\\(\\cos(x) = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}\\)</span>.</p>\n<p>At this point, we multiply the sum by <span class=\"math\">\\(x\\)</span> to obtain</p>\n<p><span class=\"math\">\\(x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "Using the fact that $\\cos(x)$ is the derivative of $\\sin(x)$, we can use\nthe Taylor series of $\\sin(x)$ to obtain the Taylor series of $\\cos(x)$.\nSpecifically,\n\n$\\cos(x) = \\frac{d}{dx} \\sin(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\ldots = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}$.\n\nTherefore, to find $x \\cos(x)$ we multiply the taylor series for\n$\\cos(x)$ by the factor $x$. That is\n\n$x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}$.", 
         "The first solution assumes that the Taylor series for $\\cos(x)$ is not\nknown in advance. The Taylor series for $\\sin(x)$ is known since it was\ngiven in the statement of a previous question.\n\nIf the Taylor series for $\\cos(x)$ is known, then we can start the\nsolution from the starting point\n\n$\\cos(x) = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!}$.\n\nAt this point, we multiply the sum by $x$ to obtain\n\n$x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!}$."
     ], 
-    "hints": [
-        "The Taylor series for $\\sin(x)$ is\n\n$\\sin(x) = \\sum_{k=0}^{\\infty} (-1)^{k}\\frac{x^{2k+1}}{(2k+1)!} = x - \\frac{x^{3}}{3!} + \\frac{x^{5}}{5!} - \\ldots$.", 
-        "The derivative of $\\sin(x)$ is $\\cos(x)$."
-    ]
+    "sols_raw": [
+        "Using the fact that &lt;math> \\cos(x) &lt;/math> is the derivative of &lt;math> \\sin(x) &lt;/math>, we can use the Taylor series of &lt;math> \\sin(x) &lt;/math> to obtain the Taylor series of &lt;math> \\cos(x) &lt;/math>.  Specifically,\n\n&lt;math> \\cos(x) = \\frac{d}{dx} \\sin(x) = 1 - \\frac{x^{2}}{2!} + \\frac{x^{4}}{4!} - \\ldots = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} &lt;/math>.\n\nTherefore, to find &lt;math> x \\cos(x) &lt;/math> we multiply the taylor series for &lt;math> \\cos(x) &lt;/math> by the factor &lt;math> x &lt;/math>.  That is \n\n&lt;math> x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!} &lt;/math>.\n", 
+        "The first solution assumes that the Taylor series for &lt;math> \\cos(x) &lt;/math> is not known in advance.  The Taylor series for &lt;math> \\sin(x) &lt;/math> is known since it was given in the statement of a previous question.  \n\nIf the Taylor series for &lt;math> \\cos(x) &lt;/math> is known, then we can start the solution from the starting point \n\n&lt;math> \\cos(x) = \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} &lt;/math>.\n\nAt this point, we multiply the sum by &lt;math> x &lt;/math> to obtain\n\n&lt;math> x\\cos(x) = x \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k}}{(2k)!} =  \\sum_{k=0}^{\\infty}(-1)^{k}\\frac{x^{2k+1}}{(2k)!} &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CameronChristou"
+    ], 
+    "statement_html": "<p>Find the Taylor series for the function <span class=\"math\">\\(f(x) = x\\cos x\\)</span>. Write your answer in summation notation. (Hint: the Taylor series for <span class=\"math\">\\(\\sin x\\)</span> may be helpful.)</p>\n<p>(Taylor series for <span class=\"math\">\\(\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}.\\)</span>)</p>\n", 
+    "statement_latex": "Find the Taylor series for the function $f(x) = x\\cos x$. Write your\nanswer in summation notation. (Hint: the Taylor series for $\\sin x$ may\nbe helpful.)\n\n(Taylor series for\n$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}.$)", 
+    "statement_raw": "Find the Taylor series for the function &lt;math>f(x) = x\\cos x&lt;/math>. Write your answer in summation notation. (Hint: the Taylor series for &lt;math> \\sin x&lt;/math> may be helpful.)\n\n(Taylor series for &lt;math> \\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\dots = \\sum_{k=0}^\\infty (-1)^k \\frac{x^{2k+1}}{(2k+1)!}.&lt;/math>)\n", 
+    "term": "April", 
+    "topics": [
+        "Taylor_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2011/Question_07_(c)", 
+    "year": 2011
 }

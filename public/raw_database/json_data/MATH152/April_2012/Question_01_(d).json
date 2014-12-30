@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_01_(d)", 
-    "course": "MATH152", 
-    "statement": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nCalculate the area of the triangle ABC.", 
-    "year": 2012, 
-    "sols": [
-        "The area of the parallelogram spanned by two vectors is the magnitude of\ntheir cross product. The area of a triangle is half the area of a\nparallelogram. The parallelogram form by A, B, and C is spanned by\n$\\vec{AB}$ and $\\vec{AC}$ which in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)},\nwe already determined were\n\n\\begin{align*}\n\\vec{AB}&=[-2,2,1]\\\\\n\\vec{AC}&=[-1,1,1].\\end{align*}\n\nWe need the cross product of this, but as we saw in\n\\href{Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)}{1(a)},\nthis is just the normal vector to the plane $S_2$ and therefore\n$\\vec{AB}\\times\\vec{AC}=\\mathbf{m}=[1,1,0]$. Therefore the area of the\ntriangle is\n\n\\begin{align*}\\textrm{area}=\\frac{1}{2}||\\vec{AB}\\times\\vec{AC}||=\\frac{1}{2}||\\mathbf{m}||=\\frac{1}{2}\\sqrt{1^2+1^2+0^2}=\\frac{1}{2}\\sqrt{2}.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\textrm{area}=\\frac{1}{2}\\sqrt{2}.\\)</span></p>\n", 
+    "answer_latex": " $\\textrm{area}=\\frac{1}{2}\\sqrt{2}.$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How can we relate the area of a triangle formed between two vectors to the cross product?</p>\n"
+    ], 
+    "hints_latex": [
         "How can we relate the area of a triangle formed between two vectors to\nthe cross product?"
-    ]
+    ], 
+    "hints_raw": [
+        "How can we relate the area of a triangle formed between two vectors to the cross product?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (d)", 
+    "rating": 92, 
+    "sols_html": [
+        "<p>The area of the parallelogram spanned by two vectors is the magnitude of their cross product. The area of a triangle is half the area of a parallelogram. The parallelogram form by A, B, and C is spanned by <span class=\"math\">\\(\\vec{AB}\\)</span> and <span class=\"math\">\\(\\vec{AC}\\)</span> which in <span>1(a)</span>, we already determined were</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\vec{AB}&amp;=[-2,2,1]\\\\\n\\vec{AC}&amp;=[-1,1,1].\\end{aligned}\\]</span></p>\n<p>We need the cross product of this, but as we saw in <span>1(a)</span>, this is just the normal vector to the plane <span class=\"math\">\\(S_2\\)</span> and therefore <span class=\"math\">\\(\\vec{AB}\\times\\vec{AC}=\\mathbf{m}=[1,1,0]\\)</span>. Therefore the area of the triangle is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\textrm{area}=\\frac{1}{2}||\\vec{AB}\\times\\vec{AC}||=\\frac{1}{2}||\\mathbf{m}||=\\frac{1}{2}\\sqrt{1^2+1^2+0^2}=\\frac{1}{2}\\sqrt{2}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The area of the parallelogram spanned by two vectors is the magnitude of\ntheir cross product. The area of a triangle is half the area of a\nparallelogram. The parallelogram form by A, B, and C is spanned by\n$\\vec{AB}$ and $\\vec{AC}$ which in\n{1(a)},\nwe already determined were\n\n\\begin{align*}\n\\vec{AB}&=[-2,2,1]\\\\\n\\vec{AC}&=[-1,1,1].\n\\end{align*}\n\nWe need the cross product of this, but as we saw in\n{1(a)},\nthis is just the normal vector to the plane $S_2$ and therefore\n$\\vec{AB}\\times\\vec{AC}=\\mathbf{m}=[1,1,0]$. Therefore the area of the\ntriangle is\n\n\\begin{align*}\n\\textrm{area}=\\frac{1}{2}||\\vec{AB}\\times\\vec{AC}||=\\frac{1}{2}||\\mathbf{m}||=\\frac{1}{2}\\sqrt{1^2+1^2+0^2}=\\frac{1}{2}\\sqrt{2}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The area of the parallelogram spanned by two vectors is the magnitude of their cross product.  The area of a triangle is half the area of a parallelogram.  The parallelogram form by A, B, and C is spanned by &lt;math>\\vec{AB}&lt;/math> and &lt;math>\\vec{AC}&lt;/math> which in [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)|1(a)]], we already determined were\n\n:&lt;math>\n\\begin{align}\n\\vec{AB}&amp;=[-2,2,1]\\\\\n\\vec{AC}&amp;=[-1,1,1].\n\\end{align}\n&lt;/math>\n\nWe need the cross product of this, but as we saw in [[Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_1_(a)|1(a)]], this is just the normal vector to the plane &lt;math>S_2&lt;/math> and therefore &lt;math>\\vec{AB}\\times\\vec{AC}=\\mathbf{m}=[1,1,0]&lt;/math>.  Therefore the area of the triangle is\n\n:&lt;math>\n\\textrm{area}=\\frac{1}{2}||\\vec{AB}\\times\\vec{AC}||=\\frac{1}{2}||\\mathbf{m}||=\\frac{1}{2}\\sqrt{1^2+1^2+0^2}=\\frac{1}{2}\\sqrt{2}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(S_1\\)</span> be the plane perpendicular to <span class=\"math\">\\(\\mathbf{n}=[2,1,-1]\\)</span> and through the point P=<span>[</span>1,-1,0<span>]</span>. Let <span class=\"math\">\\(S_2\\)</span> be the plane through the points A=<span>[</span>1,0,0<span>]</span>, B=<span>[</span>-1,2,1<span>]</span>, C=<span>[</span>0,1,1<span>]</span>. By L, we denote the line of intersection of <span class=\"math\">\\(S_1\\)</span> and <span class=\"math\">\\(S_2\\)</span>.</p>\n<p>Calculate the area of the triangle ABC.</p>\n", 
+    "statement_latex": "Let $S_1$ be the plane perpendicular to $\\mathbf{n}=[2,1,-1]$ and\nthrough the point P={[}1,-1,0{]}. Let $S_2$ be the plane through the\npoints A={[}1,0,0{]}, B={[}-1,2,1{]}, C={[}0,1,1{]}. By L, we denote the\nline of intersection of $S_1$ and $S_2$.\n\nCalculate the area of the triangle ABC.", 
+    "statement_raw": "Let &lt;math>S_1&lt;/math> be the plane perpendicular to &lt;math>\\mathbf{n}=[2,1,-1]&lt;/math> and through the point P=[1,-1,0].  Let &lt;math>S_2&lt;/math> be the plane through the points A=[1,0,0], B=[-1,2,1], C=[0,1,1].  By L, we denote the line of intersection of &lt;math>S_1&lt;/math> and &lt;math>S_2&lt;/math>.\n\nCalculate the area of the triangle ABC.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_01_(d)", 
+    "year": 2012
 }

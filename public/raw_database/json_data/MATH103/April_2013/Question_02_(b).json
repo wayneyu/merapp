@@ -1,15 +1,56 @@
 {
-    "term": "April", 
-    "question": "Question_02_(b)", 
-    "course": "MATH103", 
-    "statement": "\\textbf{Integration: Short Answer Problems - Evaluate the following\nintegrals: state if a definite integral does not exist; use limits for\nimproper integrals. (full marks for correct answer; work must be shown\nfor partial marks)}\n\n$\\displaystyle I_b = \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx$", 
-    "year": 2013, 
-    "sols": [
-        "Proceeding as in the hint, let\n$\\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big)$ and\n$\\displaystyle dv = dx$. Then via the chain rule, we have\n$\\displaystyle du = \\frac{\\tfrac{-1}{x^2}}{\\tfrac{1}{x^2} + 1} = \\frac{-1}{x^2+1}$\nand $\\displaystyle v=x$ so integrating by parts gives us\n\n\\begin{align*}\nI_b &=  \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx \\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) -\\int \\frac{-x}{x^2+1}\\,dx\\end{align*}\n\nNow let $\\displaystyle w = x^2+1$ so that $\\displaystyle dw = 2x \\ dx$\nand thus the above becomes after substitution\n\n\\begin{align*}\nI_b &= x\\arctan\\big(\\tfrac{1}{x}\\big) +\\int \\frac{x}{x^2+1}\\,dx\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\int \\frac{dw}{2w}\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|w| + C\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(I_b=x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C\\)</span></p>\n", 
+    "answer_latex": " $I_b=x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C$ ", 
+    "contributors": [
+        "Konradbe", 
+        "VincentChan"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>This is a special case of integration by parts.</p>\n", 
+        "<p>Make <span class=\"math\">\\(\\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big)\\)</span> and <span class=\"math\">\\(\\displaystyle dv = dx\\)</span>.</p>\n", 
+        "<p>Don&#8217;t forget your constant!</p>\n"
+    ], 
+    "hints_latex": [
         "This is a special case of integration by parts.", 
         "Make $\\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big)$ and\n$\\displaystyle dv = dx$.", 
         "Don't forget your constant!"
-    ]
+    ], 
+    "hints_raw": [
+        "This is a special case of integration by parts.\n", 
+        "Make &lt;math> \\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big) &lt;/math> and &lt;math> \\displaystyle dv = dx&lt;/math>.\n", 
+        "Don't forget your constant!\n"
+    ], 
+    "num_votes": 20, 
+    "question": "2 (b)", 
+    "rating": 24, 
+    "sols_html": [
+        "<p>Proceeding as in the hint, let <span class=\"math\">\\(\\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big)\\)</span> and <span class=\"math\">\\(\\displaystyle dv = dx\\)</span>. Then via the chain rule, we have <span class=\"math\">\\(\\displaystyle du = \\frac{\\tfrac{-1}{x^2}}{\\tfrac{1}{x^2} + 1} = \\frac{-1}{x^2+1}\\)</span> and <span class=\"math\">\\(\\displaystyle v=x\\)</span> so integrating by parts gives us</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI_b &amp;=  \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx \\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) -\\int \\frac{-x}{x^2+1}\\,dx\\end{aligned}\\]</span></p>\n<p>Now let <span class=\"math\">\\(\\displaystyle w = x^2+1\\)</span> so that <span class=\"math\">\\(\\displaystyle dw = 2x \\ dx\\)</span> and thus the above becomes after substitution</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI_b &amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) +\\int \\frac{x}{x^2+1}\\,dx\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\int \\frac{dw}{2w}\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|w| + C\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Proceeding as in the hint, let\n$\\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big)$ and\n$\\displaystyle dv = dx$. Then via the chain rule, we have\n$\\displaystyle du = \\frac{\\tfrac{-1}{x^2}}{\\tfrac{1}{x^2} + 1} = \\frac{-1}{x^2+1}$\nand $\\displaystyle v=x$ so integrating by parts gives us\n\n\\begin{align*}\nI_b &=  \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx \\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) -\\int \\frac{-x}{x^2+1}\\,dx\n\\end{align*}\n\nNow let $\\displaystyle w = x^2+1$ so that $\\displaystyle dw = 2x \\ dx$\nand thus the above becomes after substitution\n\n\\begin{align*}\nI_b &= x\\arctan\\big(\\tfrac{1}{x}\\big) +\\int \\frac{x}{x^2+1}\\,dx\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\int \\frac{dw}{2w}\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|w| + C\\\\\n&= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Proceeding as in the hint, let &lt;math> \\displaystyle u=\\arctan\\big(\\tfrac{1}{x}\\big) &lt;/math> and &lt;math> \\displaystyle dv = dx&lt;/math>. Then via the chain rule, we have &lt;math> \\displaystyle du = \\frac{\\tfrac{-1}{x^2}}{\\tfrac{1}{x^2} + 1} = \\frac{-1}{x^2+1}&lt;/math> and &lt;math> \\displaystyle v=x &lt;/math> so integrating by parts gives us\n\n&lt;math> \n\\begin{align}\nI_b &amp;=  \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx \\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) -\\int \\frac{-x}{x^2+1}\\,dx\n\\end{align}\n&lt;/math>\n\nNow let &lt;math> \\displaystyle w = x^2+1&lt;/math> so that &lt;math> \\displaystyle dw = 2x \\ dx&lt;/math> and thus the above becomes after substitution\n\n&lt;math> \n\\begin{align}\nI_b &amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) +\\int \\frac{x}{x^2+1}\\,dx\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\int \\frac{dw}{2w}\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|w| + C\\\\\n&amp;= x\\arctan\\big(\\tfrac{1}{x}\\big) + \\frac{1}{2} \\cdot \\ln|x^2+1| + C\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Integration: Short Answer Problems - Evaluate the following integrals: state if a definite integral does not exist; use limits for improper integrals. (full marks for correct answer; work must be shown for partial marks)</strong></p>\n<p><span class=\"math\">\\(\\displaystyle I_b = \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Integration: Short Answer Problems - Evaluate the following\nintegrals: state if a definite integral does not exist; use limits for\nimproper integrals. (full marks for correct answer; work must be shown\nfor partial marks)}\n\n$\\displaystyle I_b = \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx$", 
+    "statement_raw": "'''Integration: Short Answer Problems - Evaluate the following integrals: state if a definite integral does not exist; use limits for improper integrals. (full marks for correct answer; work must be shown for partial marks)'''\n\n&lt;math> \\displaystyle I_b = \\int \\arctan\\big(\\tfrac{1}{x}\\big)\\,dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Integration_by_parts", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2013/Question_02_(b)", 
+    "year": 2013
 }

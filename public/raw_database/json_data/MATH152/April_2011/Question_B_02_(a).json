@@ -1,13 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_B_02_(a)", 
-    "course": "MATH152", 
-    "statement": "Consider the differential equation system\n\n\\begin{align*}\\mathbf{y}'=A\\mathbf{y}\\end{align*}\n\nwhere A has eigenvalues $\\lambda_1=-1$ and $\\lambda_2=-2$ with\ncorresponding eigenvectors\n\n\\begin{align*}\n\\mathbf{k}_1=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{align*}\n\nWhat is the general solution of the system of differential equations?", 
-    "year": 2011, 
-    "sols": [
-        "Recall that a solution to\n\n\\begin{align*}\\mathbf{y}'=A\\mathbf{y}\\end{align*}\n\nwith eigenvalues $\\lambda_1$, $\\lambda_2$ and eigenvectors\n$\\mathbf{k}_1,\\mathbf{k}_2$ is\n\n\\begin{align*}\\mathbf{y}(t)=c_1\\mathbf{k}_1\\exp(\\lambda_1{t})+c_2\\mathbf{k}_2\\exp(\\lambda_2{t}).\\end{align*}\n\nTherefore, for this specific example, the solution is,\n\n\\begin{align*}\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\)</span></p>\n", 
+    "answer_latex": " $\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).$ ", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
-        "How can we write solutions in terms of,\n\n\\begin{align*}\\exp(\\lambda_1{t}),\\quad\\exp(\\lambda_2{t})\\end{align*}?"
-    ]
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>How can we write solutions in terms of,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\exp(\\lambda_1{t}),\\quad\\exp(\\lambda_2{t})\\end{aligned}\\]</span></p>\n<p>?</p>\n"
+    ], 
+    "hints_latex": [
+        "How can we write solutions in terms of,\n\n\\begin{align*}\n\\exp(\\lambda_1{t}),\\quad\\exp(\\lambda_2{t})\n\\end{align*}?"
+    ], 
+    "hints_raw": [
+        "How can we write solutions in terms of,\n\n:&lt;math>\n\\exp(\\lambda_1{t}),\\quad\\exp(\\lambda_2{t})\n&lt;/math>?\n"
+    ], 
+    "num_votes": 2, 
+    "question": "B 02 (a)", 
+    "rating": 98, 
+    "sols_html": [
+        "<p>Recall that a solution to</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}&#39;=A\\mathbf{y}\\end{aligned}\\]</span></p>\n<p>with eigenvalues <span class=\"math\">\\(\\lambda_1\\)</span>, <span class=\"math\">\\(\\lambda_2\\)</span> and eigenvectors <span class=\"math\">\\(\\mathbf{k}_1,\\mathbf{k}_2\\)</span> is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(t)=c_1\\mathbf{k}_1\\exp(\\lambda_1{t})+c_2\\mathbf{k}_2\\exp(\\lambda_2{t}).\\end{aligned}\\]</span></p>\n<p>Therefore, for this specific example, the solution is,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Recall that a solution to\n\n\\begin{align*}\n\\mathbf{y}'=A\\mathbf{y}\n\\end{align*}\n\nwith eigenvalues $\\lambda_1$, $\\lambda_2$ and eigenvectors\n$\\mathbf{k}_1,\\mathbf{k}_2$ is\n\n\\begin{align*}\n\\mathbf{y}(t)=c_1\\mathbf{k}_1\\exp(\\lambda_1{t})+c_2\\mathbf{k}_2\\exp(\\lambda_2{t}).\n\\end{align*}\n\nTherefore, for this specific example, the solution is,\n\n\\begin{align*}\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Recall that a solution to\n\n:&lt;math>\n\\mathbf{y}'=A\\mathbf{y}\n&lt;/math>\n\nwith eigenvalues &lt;math>\\lambda_1&lt;/math>, &lt;math>\\lambda_2&lt;/math> and eigenvectors &lt;math>\\mathbf{k}_1,\\mathbf{k}_2&lt;/math> is\n\n:&lt;math>\n\\mathbf{y}(t)=c_1\\mathbf{k}_1\\exp(\\lambda_1{t})+c_2\\mathbf{k}_2\\exp(\\lambda_2{t}).\n&lt;/math>\n\nTherefore, for this specific example, the solution is,\n\n:&lt;math>\n\\mathbf{y}(t)=c_1\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix}\\exp(-t)\n+ c_2\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}\\exp(-2t).\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "IainMoyles"
+    ], 
+    "statement_html": "<p>Consider the differential equation system</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{y}&#39;=A\\mathbf{y}\\end{aligned}\\]</span></p>\n<p>where A has eigenvalues <span class=\"math\">\\(\\lambda_1=-1\\)</span> and <span class=\"math\">\\(\\lambda_2=-2\\)</span> with corresponding eigenvectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\mathbf{k}_1=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\\end{aligned}\\]</span></p>\n<p>What is the general solution of the system of differential equations?</p>\n", 
+    "statement_latex": "Consider the differential equation system\n\n\\begin{align*}\n\\mathbf{y}'=A\\mathbf{y}\n\\end{align*}\n\nwhere A has eigenvalues $\\lambda_1=-1$ and $\\lambda_2=-2$ with\ncorresponding eigenvectors\n\n\\begin{align*}\n\\mathbf{k}_1=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align*}\n\nWhat is the general solution of the system of differential equations?", 
+    "statement_raw": "Consider the differential equation system\n\n:&lt;math>\n\\mathbf{y}'=A\\mathbf{y}\n&lt;/math>\n\nwhere A has eigenvalues &lt;math>\\lambda_1=-1&lt;/math> and &lt;math>\\lambda_2=-2&lt;/math> with corresponding eigenvectors\n\n:&lt;math>\n\\begin{align}\n\\mathbf{k}_1=\n\\begin{bmatrix}\n1\\\\\n2\n\\end{bmatrix},\\qquad\n\\mathbf{k}_2=\n\\begin{bmatrix}\n2\\\\\n3\n\\end{bmatrix}.\n\\end{align}\n&lt;/math>\n\nWhat is the general solution of the system of differential equations?\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2011/Question_B_02_(a)", 
+    "year": 2011
 }

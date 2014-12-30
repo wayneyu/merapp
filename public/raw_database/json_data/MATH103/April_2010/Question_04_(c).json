@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_04_(c)", 
-    "course": "MATH103", 
-    "statement": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\begin{align*}I = \\int_0^1 \\frac{x}{(2-x)(1+2x)}\\,dx\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "We proceed by partial fractions. Let A and B be constants such that\n\n\\begin{align*}\\frac{x}{(2-x)(1 + 2x)} = \\frac{A}{2-x} + \\frac{B}{1 + 2x} = \\frac{A(1+2x) + B(2-x)}{(2-x)(1 + 2x)}\\end{align*}\n\nSince the denominators are the same, the numerators must be equal and\nhence\n\n\\begin{align*}\\displaystyle x = A(1+2x) + B(2-x)\\end{align*}\n\nNow, since this equality holds for all values of x, we can plug in\nspecific values for x to get the coefficients. At $x=2$, we have\n\n\\begin{align*}\\displaystyle 2 = A(1 + 2(2)) + B(2-(2)) = 5A\\end{align*}\n\nand so $A = \\tfrac{2}{5}$. At $x = -\\tfrac{1}{2}$, we have\n\n\\begin{align*}-\\tfrac{1}{2} = A(1 + 2(-\\tfrac{1}{2})) + B(2-(-\\tfrac{1}{2})) = \\tfrac{5}{2}B\\end{align*}\n\nand so $B = \\tfrac{-1}{5}$. Hence, we have\n\n\\begin{align*}\n&\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx\\\\\n&= \\int_{0}^{1} \\frac{\\tfrac{2}{5}}{2-x}\\,dx + \\int_{0}^{1} \\frac{\\tfrac{-1}{5}}{1 + 2x}\\,dx \\\\\n&= \\left.\\left(\\frac25 \\ln|2-x|(-1) - \\frac15\\ln|1 + 2x|\\frac12\\right)\\right|_{0}^{1} \\\\\n&= \\left.\\left(\\frac{-2}{5}\\ln|2-x| - \\frac{1}{10}\\ln|1 + 2x|\\right)\\right|_{0}^{1}\\\\\n&= \\frac{-2}{5}\\ln|2-1| - \\frac{1}{10}\\ln|1 + 2(1)| - \\frac{-2}{5}\\ln|2-0| - \\frac{1}{10}\\ln|1 + 2(0)|\\\\\n&= - \\frac{1}{10}\\ln|3| - \\frac{-2}{5}\\ln|2|\\\\\n&= - \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx=- \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}\\)</span></p>\n", 
+    "answer_latex": " $\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx=- \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}$ ", 
+    "contributors": [
+        "DavidKohler", 
+        "Konradbe", 
+        "IainMoyles", 
+        "CindyBlois"
     ], 
-    "hints": [
+    "course": "MATH103", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The factored bottom should make partial fractions a natural choice for a technique to attempt this problem.</p>\n"
+    ], 
+    "hints_latex": [
         "The factored bottom should make partial fractions a natural choice for a\ntechnique to attempt this problem."
-    ]
+    ], 
+    "hints_raw": [
+        "The factored bottom should make partial fractions a natural choice for a technique to attempt this problem.\n"
+    ], 
+    "num_votes": 3, 
+    "question": "4 (c)", 
+    "rating": 70, 
+    "sols_html": [
+        "<p>We proceed by partial fractions. Let A and B be constants such that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\frac{x}{(2-x)(1 + 2x)} = \\frac{A}{2-x} + \\frac{B}{1 + 2x} = \\frac{A(1+2x) + B(2-x)}{(2-x)(1 + 2x)}\\end{aligned}\\]</span></p>\n<p>Since the denominators are the same, the numerators must be equal and hence</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle x = A(1+2x) + B(2-x)\\end{aligned}\\]</span></p>\n<p>Now, since this equality holds for all values of x, we can plug in specific values for x to get the coefficients. At <span class=\"math\">\\(x=2\\)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle 2 = A(1 + 2(2)) + B(2-(2)) = 5A\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(A = \\tfrac{2}{5}\\)</span>. At <span class=\"math\">\\(x = -\\tfrac{1}{2}\\)</span>, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n-\\tfrac{1}{2} = A(1 + 2(-\\tfrac{1}{2})) + B(2-(-\\tfrac{1}{2})) = \\tfrac{5}{2}B\\end{aligned}\\]</span></p>\n<p>and so <span class=\"math\">\\(B = \\tfrac{-1}{5}\\)</span>. Hence, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n&amp;\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx\\\\\n&amp;= \\int_{0}^{1} \\frac{\\tfrac{2}{5}}{2-x}\\,dx + \\int_{0}^{1} \\frac{\\tfrac{-1}{5}}{1 + 2x}\\,dx \\\\\n&amp;= \\left.\\left(\\frac25 \\ln|2-x|(-1) - \\frac15\\ln|1 + 2x|\\frac12\\right)\\right|_{0}^{1} \\\\\n&amp;= \\left.\\left(\\frac{-2}{5}\\ln|2-x| - \\frac{1}{10}\\ln|1 + 2x|\\right)\\right|_{0}^{1}\\\\\n&amp;= \\frac{-2}{5}\\ln|2-1| - \\frac{1}{10}\\ln|1 + 2(1)| - \\frac{-2}{5}\\ln|2-0| - \\frac{1}{10}\\ln|1 + 2(0)|\\\\\n&amp;= - \\frac{1}{10}\\ln|3| - \\frac{-2}{5}\\ln|2|\\\\\n&amp;= - \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed by partial fractions. Let A and B be constants such that\n\n\\begin{align*}\n\\frac{x}{(2-x)(1 + 2x)} = \\frac{A}{2-x} + \\frac{B}{1 + 2x} = \\frac{A(1+2x) + B(2-x)}{(2-x)(1 + 2x)}\n\\end{align*}\n\nSince the denominators are the same, the numerators must be equal and\nhence\n\n\\begin{align*}\n\\displaystyle x = A(1+2x) + B(2-x)\n\\end{align*}\n\nNow, since this equality holds for all values of x, we can plug in\nspecific values for x to get the coefficients. At $x=2$, we have\n\n\\begin{align*}\n\\displaystyle 2 = A(1 + 2(2)) + B(2-(2)) = 5A\n\\end{align*}\n\nand so $A = \\tfrac{2}{5}$. At $x = -\\tfrac{1}{2}$, we have\n\n\\begin{align*}\n-\\tfrac{1}{2} = A(1 + 2(-\\tfrac{1}{2})) + B(2-(-\\tfrac{1}{2})) = \\tfrac{5}{2}B\n\\end{align*}\n\nand so $B = \\tfrac{-1}{5}$. Hence, we have\n\n\\begin{align*}\n&\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx\\\\\n&= \\int_{0}^{1} \\frac{\\tfrac{2}{5}}{2-x}\\,dx + \\int_{0}^{1} \\frac{\\tfrac{-1}{5}}{1 + 2x}\\,dx \\\\\n&= \\left.\\left(\\frac25 \\ln|2-x|(-1) - \\frac15\\ln|1 + 2x|\\frac12\\right)\\right|_{0}^{1} \\\\\n&= \\left.\\left(\\frac{-2}{5}\\ln|2-x| - \\frac{1}{10}\\ln|1 + 2x|\\right)\\right|_{0}^{1}\\\\\n&= \\frac{-2}{5}\\ln|2-1| - \\frac{1}{10}\\ln|1 + 2(1)| - \\frac{-2}{5}\\ln|2-0| - \\frac{1}{10}\\ln|1 + 2(0)|\\\\\n&= - \\frac{1}{10}\\ln|3| - \\frac{-2}{5}\\ln|2|\\\\\n&= - \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We proceed by partial fractions. Let A and B be constants such that\n\n:&lt;math>\n\\frac{x}{(2-x)(1 + 2x)} = \\frac{A}{2-x} + \\frac{B}{1 + 2x} = \\frac{A(1+2x) + B(2-x)}{(2-x)(1 + 2x)}\n&lt;/math>\n\nSince the denominators are the same, the numerators must be equal and hence\n\n:&lt;math>\n\\displaystyle x = A(1+2x) + B(2-x)\n&lt;/math>\n\nNow, since this equality holds for all values of x, we can plug in specific values for x to get the coefficients. At &lt;math> x=2 &lt;/math>, we have\n\n:&lt;math>\n\\displaystyle 2 = A(1 + 2(2)) + B(2-(2)) = 5A\n&lt;/math>\n\nand so &lt;math> A = \\tfrac{2}{5} &lt;/math>. At &lt;math>x = -\\tfrac{1}{2}&lt;/math>, we have\n\n:&lt;math>\n-\\tfrac{1}{2} = A(1 + 2(-\\tfrac{1}{2})) + B(2-(-\\tfrac{1}{2})) = \\tfrac{5}{2}B\n&lt;/math>\n\nand so &lt;math> B = \\tfrac{-1}{5} &lt;/math>. Hence, we have\n\n:&lt;math>\n\\begin{align}\n&amp;\\int_{0}^{1} \\frac{x}{(2-x)(1 + 2x)}\\,dx\\\\\n&amp;= \\int_{0}^{1} \\frac{\\tfrac{2}{5}}{2-x}\\,dx + \\int_{0}^{1} \\frac{\\tfrac{-1}{5}}{1 + 2x}\\,dx \\\\\n&amp;= \\left.\\left(\\frac25 \\ln|2-x|(-1) - \\frac15\\ln|1 + 2x|\\frac12\\right)\\right|_{0}^{1} \\\\\n&amp;= \\left.\\left(\\frac{-2}{5}\\ln|2-x| - \\frac{1}{10}\\ln|1 + 2x|\\right)\\right|_{0}^{1}\\\\\n&amp;= \\frac{-2}{5}\\ln|2-1| - \\frac{1}{10}\\ln|1 + 2(1)| - \\frac{-2}{5}\\ln|2-0| - \\frac{1}{10}\\ln|1 + 2(0)|\\\\\n&amp;= - \\frac{1}{10}\\ln|3| - \\frac{-2}{5}\\ln|2|\\\\\n&amp;= - \\frac{\\ln(3)}{10} + \\frac{2\\ln(2)}{5}\n\\end{align}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Compute the following integrals. (Leave your answers in terms of <span class=\"math\">\\(e\\)</span> or <span class=\"math\">\\(\\ln()\\)</span>.)</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nI = \\int_0^1 \\frac{x}{(2-x)(1+2x)}\\,dx\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Compute the following integrals. (Leave your answers in terms of $e$ or\n$\\ln()$.)\n\n\\begin{align*}\nI = \\int_0^1 \\frac{x}{(2-x)(1+2x)}\\,dx\n\\end{align*}", 
+    "statement_raw": "Compute the following integrals. (Leave your answers in terms of &lt;math>e&lt;/math> or &lt;math>\\ln()&lt;/math>.)\n\n:&lt;math> I = \\int_0^1 \\frac{x}{(2-x)(1+2x)}\\,dx&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Partial_fractions"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH103/April_2010/Question_04_(c)", 
+    "year": 2010
 }

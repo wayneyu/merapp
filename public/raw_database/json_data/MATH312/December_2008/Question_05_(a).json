@@ -1,13 +1,47 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
+    "answer_html": "<p>so the value of the ciphertext is <span class=\"math\">\\(\\displaystyle C = 35\\)</span>.Note: You do not need to actually perform the above computation.It is given to us.</p>\n", 
+    "answer_latex": "so the value of the ciphertext is $\\displaystyle C = 35$.Note: You do\nnot need to actually perform the above computation.It is given to us.", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(a)} Bob knows that (the plaintext) $\\displaystyle P = 101$, he\ncomputes the ciphertext $\\displaystyle C = 35$ and communicates this\nnumber to Alice. Explain how Bob computed \\emph{C}.", 
-    "year": 2008, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "RS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>No hint here. Review your notes for the RSA protocol (or check out the Wikipedia page).</p>\n"
+    ], 
+    "hints_latex": [
+        "No hint here. Review your notes for the RSA protocol (or check out the\nWikipedia page)."
+    ], 
+    "hints_raw": [
+        "No hint here. Review your notes for the RSA protocol (or check out the Wikipedia page).\n"
+    ], 
+    "num_votes": 0, 
+    "question": "5 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To compute the ciphertext given the plain text, one must compute</p>\n<p><span class=\"math\">\\(\\displaystyle P^{e} \\mod{n}\\)</span></p>\n<p>and in this case, we have</p>\n<p><span class=\"math\">\\(\\displaystyle 101^{1189} \\equiv 35 \\mod{1271}\\)</span></p>\n<p>so the value of the ciphertext is <span class=\"math\">\\(\\displaystyle C = 35\\)</span>. Note: You do not need to actually perform the above computation. It is given to us.</p>\n"
+    ], 
+    "sols_latex": [
         "To compute the ciphertext given the plain text, one must compute\n\n$\\displaystyle P^{e} \\mod{n}$\n\nand in this case, we have\n\n$\\displaystyle 101^{1189} \\equiv 35 \\mod{1271}$\n\nso the value of the ciphertext is $\\displaystyle C = 35$. Note: You do\nnot need to actually perform the above computation. It is given to us."
     ], 
-    "hints": [
-        "No hint here. Review your notes for the RSA protocol (or check out the\nWikipedia page)."
-    ]
+    "sols_raw": [
+        "To compute the ciphertext given the plain text, one must compute\n\n&lt;math> \\displaystyle P^{e} \\mod{n}&lt;/math>\n\nand in this case, we have \n\n&lt;math> \\displaystyle 101^{1189} \\equiv 35 \\mod{1271}&lt;/math>\n\nso the value of the ciphertext is &lt;math> \\displaystyle C = 35&lt;/math>. Note: You do not need to actually perform the above computation. It is given to us.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Alice wants Bob to send her a secret integer <em>P</em> between 0 and 1250 using RSA encryption with key <span class=\"math\">\\(\\displaystyle (e, n) = (1189, 1271)\\)</span> (so the exponent is 1189 and the modulus is 1271, it is way too small to be really secure, but basic RSA encryption and decryption methods still work of course).</p>\n<p><strong>(a)</strong> Bob knows that (the plaintext) <span class=\"math\">\\(\\displaystyle P = 101\\)</span>, he computes the ciphertext <span class=\"math\">\\(\\displaystyle C = 35\\)</span> and communicates this number to Alice. Explain how Bob computed <em>C</em>.</p>\n", 
+    "statement_latex": "Alice wants Bob to send her a secret integer \\emph{P} between 0 and 1250\nusing RSA encryption with key $\\displaystyle (e, n) = (1189, 1271)$ (so\nthe exponent is 1189 and the modulus is 1271, it is way too small to be\nreally secure, but basic RSA encryption and decryption methods still\nwork of course).\n\n\\textbf{(a)} Bob knows that (the plaintext) $\\displaystyle P = 101$, he\ncomputes the ciphertext $\\displaystyle C = 35$ and communicates this\nnumber to Alice. Explain how Bob computed \\emph{C}.", 
+    "statement_raw": "Alice wants Bob to send her a secret integer ''P'' between 0 and 1250 using RSA encryption with key &lt;math> \\displaystyle (e, n) = (1189, 1271)&lt;/math> (so the exponent is 1189 and the modulus is 1271, it is way too small to be really secure, but basic RSA encryption and decryption methods still work of course).\n\n'''(a)''' Bob knows that (the plaintext) &lt;math> \\displaystyle P = 101 &lt;/math>, he computes the ciphertext &lt;math> \\displaystyle C = 35 &lt;/math> and communicates this number to Alice. Explain how Bob computed ''C''.\n", 
+    "term": "December", 
+    "topics": [
+        "RSA"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_05_(a)", 
+    "year": 2008
 }

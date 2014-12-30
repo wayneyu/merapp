@@ -1,15 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_03_(b)", 
+    "answer_html": "<p><span class=\"math\">\\(b_{1}=\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": " $b_{1}=\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}$ ", 
     "course": "MATH307", 
-    "statement": "Let\n\n\\begin{align*}S = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\end{align*}\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(b)} Write down a basis for \\emph{S}.", 
-    "year": 2012, 
-    "sols": [
-        "If \\emph{S} is the null space of the matrix \\emph{A} from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(a)}{part\n(a)}, then the basis for \\emph{S} can be found as the basis of\n\\emph{N(A)}. Let's choose the simplest form $A= \\begin{bmatrix}\n1 & 1 & 1\n\\end{bmatrix}.$\n\nWe see that we choose \\emph{x\\textsubscript{2}} and\n\\emph{x\\textsubscript{3}} to be free variables when we set\n\\emph{x\\textsubscript{1} = -x\\textsubscript{2}-x\\textsubscript{3}}. That\nis, the kernel \\emph{N(A)} (and with it the subspace \\emph{S}) can be\nexpressed as\n\n\\begin{align*}\\begin{bmatrix}\nx_{1}\\\\\nx_{2}\\\\\nx_{3}\n\\end{bmatrix} = x_{2}\\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix} + x_{3}\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{align*}\n\nIn other words, a basis for \\emph{S} is given by the two vectors\n\n\\begin{align*}b_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{align*}", 
+    "flags": [
+        "QGQ", 
+        "RH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use the matrix <em>A</em> from <span>part (a)</span> and calculate its kernel as usual.</p>\n", 
+        "<p>For an alternative solution, what is the dimension (number of free variables) of <em>S</em>? Fix the free variable(s) and express the remaining variable(s) in terms of those.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use the matrix \\emph{A} from\n{part\n(a)} and calculate its kernel as usual.", 
+        "For an alternative solution, what is the dimension (number of free\nvariables) of \\emph{S}? Fix the free variable(s) and express the\nremaining variable(s) in terms of those."
+    ], 
+    "hints_raw": [
+        "Use the matrix ''A'' from [[Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(a)|part (a)]] and calculate its kernel as usual.\n", 
+        "For an alternative solution, what is the dimension (number of free variables) of ''S''? Fix the free variable(s) and express the remaining variable(s) in terms of those.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (b)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>If <em>S</em> is the null space of the matrix <em>A</em> from <span>part (a)</span>, then the basis for <em>S</em> can be found as the basis of <em>N(A)</em>. Let&#8217;s choose the simplest form <span class=\"math\">\\(A= \\begin{bmatrix}\n1 &amp; 1 &amp; 1\n\\end{bmatrix}.\\)</span></p>\n<p>We see that we choose <em>x<sub>2</sub></em> and <em>x<sub>3</sub></em> to be free variables when we set <em>x<sub>1</sub> = -x<sub>2</sub>-x<sub>3</sub></em>. That is, the kernel <em>N(A)</em> (and with it the subspace <em>S</em>) can be expressed as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\nx_{1}\\\\\nx_{2}\\\\\nx_{3}\n\\end{bmatrix} = x_{2}\\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix} + x_{3}\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>In other words, a basis for <em>S</em> is given by the two vectors</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nb_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n", 
+        "<p>The dimension of <em>S</em> is 2, because if we fix two of <em>x<sub>1</sub></em>, <em>x<sub>2</sub></em>, <em>x<sub>3</sub></em> we can always choose the remaining such that the equation <em>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = 0</em> is satisfied. So let us choose <em>x<sub>2</sub> = r</em> and <em>x<sub>3</sub> = s</em>. Then <em>x<sub>1</sub> = -x<sub>2</sub>-x<sub>3</sub>=-r-s</em>. That is, <em>S</em> can be expressed as all vectors of the form <span class=\"math\">\\(\\begin{bmatrix} -r-s \\\\ r \\\\ s\\end{bmatrix} = r\\begin{bmatrix}-1 \\\\ 1 \\\\ 0\\end{bmatrix} + s\\begin{bmatrix}-1 \\\\ 0 \\\\ 1\\end{bmatrix}\\)</span>. In other words, a basis for <em>S</em> is given by the vectors <span class=\"math\">\\(b_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "If \\emph{S} is the null space of the matrix \\emph{A} from\n{part\n(a)}, then the basis for \\emph{S} can be found as the basis of\n\\emph{N(A)}. Let's choose the simplest form $A= \\begin{bmatrix}\n1 & 1 & 1\n\\end{bmatrix}.$\n\nWe see that we choose \\emph{x\\textsubscript{2}} and\n\\emph{x\\textsubscript{3}} to be free variables when we set\n\\emph{x\\textsubscript{1} = -x\\textsubscript{2}-x\\textsubscript{3}}. That\nis, the kernel \\emph{N(A)} (and with it the subspace \\emph{S}) can be\nexpressed as\n\n\\begin{align*}\n\\begin{bmatrix}\nx_{1}\\\\\nx_{2}\\\\\nx_{3}\n\\end{bmatrix} = x_{2}\\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix} + x_{3}\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\end{align*}\n\nIn other words, a basis for \\emph{S} is given by the two vectors\n\n\\begin{align*}\nb_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\n\\end{align*}", 
         "The dimension of \\emph{S} is 2, because if we fix two of\n\\emph{x\\textsubscript{1}}, \\emph{x\\textsubscript{2}},\n\\emph{x\\textsubscript{3}} we can always choose the remaining such that\nthe equation \\emph{x\\textsubscript{1} + x\\textsubscript{2} +\nx\\textsubscript{3} = 0} is satisfied. So let us choose\n\\emph{x\\textsubscript{2} = r} and \\emph{x\\textsubscript{3} = s}. Then\n\\emph{x\\textsubscript{1} = -x\\textsubscript{2}-x\\textsubscript{3}=-r-s}.\nThat is, \\emph{S} can be expressed as all vectors of the form\n$\\begin{bmatrix} -r-s \\\\ r \\\\ s\\end{bmatrix} = r\\begin{bmatrix}-1 \\\\ 1 \\\\ 0\\end{bmatrix} + s\\begin{bmatrix}-1 \\\\ 0 \\\\ 1\\end{bmatrix}$.\nIn other words, a basis for \\emph{S} is given by the vectors\n$b_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}$"
     ], 
-    "hints": [
-        "Use the matrix \\emph{A} from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(a)}{part\n(a)} and calculate its kernel as usual.", 
-        "For an alternative solution, what is the dimension (number of free\nvariables) of \\emph{S}? Fix the free variable(s) and express the\nremaining variable(s) in terms of those."
-    ]
+    "sols_raw": [
+        "If ''S'' is the null space of the matrix ''A'' from [[Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(a)|part (a)]], then the basis for ''S'' can be found as the basis of ''N(A)''. Let's choose the simplest form &lt;math>A= \\begin{bmatrix}\n1 &amp; 1 &amp; 1\n\\end{bmatrix}.&lt;/math>\n\nWe see that we choose ''x&lt;sub>2&lt;/sub>'' and ''x&lt;sub>3&lt;/sub>'' to be free variables when we set ''x&lt;sub>1&lt;/sub> = -x&lt;sub>2&lt;/sub>-x&lt;sub>3&lt;/sub>''. That is, the kernel ''N(A)'' (and with it the subspace ''S'') can be expressed as\n\n:&lt;math>\\begin{bmatrix}\nx_{1}\\\\\nx_{2}\\\\\nx_{3}\n\\end{bmatrix} = x_{2}\\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix} + x_{3}\\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}&lt;/math>\n\nIn other words, a basis for ''S'' is given by the two vectors\n:&lt;math>\nb_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\n&lt;/math>\n", 
+        "The dimension of ''S'' is 2, because if we fix two of ''x&lt;sub>1&lt;/sub>'', ''x&lt;sub>2&lt;/sub>'', ''x&lt;sub>3&lt;/sub>'' we can always choose the remaining such that the equation ''x&lt;sub>1&lt;/sub> + x&lt;sub>2&lt;/sub> + x&lt;sub>3&lt;/sub> = 0'' is satisfied. So let us choose ''x&lt;sub>2&lt;/sub> = r'' and ''x&lt;sub>3&lt;/sub> = s''. Then ''x&lt;sub>1&lt;/sub> = -x&lt;sub>2&lt;/sub>-x&lt;sub>3&lt;/sub>=-r-s''. That is, ''S'' can be expressed as all vectors of the form &lt;math>\\begin{bmatrix} -r-s \\\\ r \\\\ s\\end{bmatrix} = r\\begin{bmatrix}-1 \\\\ 1 \\\\ 0\\end{bmatrix} + s\\begin{bmatrix}-1 \\\\ 0 \\\\ 1\\end{bmatrix}&lt;/math>. In other words, a basis for ''S'' is given by the vectors &lt;math>\nb_{1} = \\begin{bmatrix}\n-1\\\\\n1\\\\\n0\n\\end{bmatrix}, \\quad b_{2} = \\begin{bmatrix}\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>Let</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nS = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\\end{aligned}\\]</span></p>\n<p>be the subspace of vectors in <span class=\"math\">\\(\\mathbb R^3\\)</span> whose components sum to zero.</p>\n<p><strong>(b)</strong> Write down a basis for <em>S</em>.</p>\n", 
+    "statement_latex": "Let\n\n\\begin{align*}\nS = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\n\\end{align*}\n\nbe the subspace of vectors in $\\mathbb R^3$ whose components sum to\nzero.\n\n\\textbf{(b)} Write down a basis for \\emph{S}.", 
+    "statement_raw": "Let\n\n:&lt;math>\nS = \\left\\{[x_1, x_2, x_3]^T:\\, x_1 + x_2 + x_3 = 0\\right\\}\n&lt;/math>\n\nbe the subspace of vectors in &lt;math>\\mathbb R^3&lt;/math> whose components sum to zero.\n\n'''(b)''' Write down a basis for ''S''.\n", 
+    "term": "December", 
+    "topics": [
+        "Nullspace", 
+        "Vector_space"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2012/Question_03_(b)", 
+    "year": 2012
 }

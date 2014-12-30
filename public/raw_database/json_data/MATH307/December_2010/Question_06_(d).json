@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_06_(d)", 
-    "course": "MATH307", 
-    "statement": "What points in the plane would you plot to produce a frequency-amplitude\nplot for the function in\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}?", 
-    "year": 2010, 
-    "sols": [
-        "From\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}, we figured out that $c_{n} = -\\frac{1}{2\\pi in}$. The modulus of\nthis complex number, $\\left | c_n \\right |$, is the amplitude of\noscillation with frequency $\\omega _n=n$ since L is equal to 1. We have\nthat\n\n\\begin{align*}\\left| c_n \\right|= \\left| -\\frac{1}{2\\pi in} \\right|= \\frac1{2\\pi n} \\left|\\frac{-1}{i}\\right| = \\frac{1}{2\\pi n}\\end{align*}\n\nfor $n\\neq 0$. When $n = 0$, the amplitude is equal to\n$\\left| c_0 \\right|$ which is $c_{0} = \\frac{1}{2}$ from\n\\href{Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)}{part\n(a)}. Therefore the points for a frequency amplitude plot are\n$\\displaystyle (n,|c_n|)$ given by\n\n\\begin{align*}\n(0,&1/2)\\\\\n(1,&1/2\\pi)\\\\\n(2,&1/4\\pi)\\\\\n&\\vdots\\\\\n(n,&1/2n\\pi)\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\((n,1/2n\\pi)\\)</span></p>\n", 
+    "answer_latex": " $(n,1/2n\\pi)$ ", 
+    "contributors": [
+        "CarmenBruni", 
+        "IainMoyles"
     ], 
-    "hints": [
-        "Recall that the frequency for\n\n\\begin{align*}\\displaystyle{}e^{2\\pi{}inx/L}\\end{align*}\n\nis\n\n\\begin{align*}\\displaystyle{}\\omega=\\frac{n}{L}\\end{align*}\n\nand that for complex coefficient $c_n$, the amplitude is the modulus\n$\\displaystyle {}|c_n|$."
-    ]
+    "course": "MATH307", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Recall that the frequency for</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}e^{2\\pi{}inx/L}\\end{aligned}\\]</span></p>\n<p>is</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle{}\\omega=\\frac{n}{L}\\end{aligned}\\]</span></p>\n<p>and that for complex coefficient <span class=\"math\">\\(c_n\\)</span>, the amplitude is the modulus <span class=\"math\">\\(\\displaystyle {}|c_n|\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
+        "Recall that the frequency for\n\n\\begin{align*}\n\\displaystyle{}e^{2\\pi{}inx/L}\n\\end{align*}\n\nis\n\n\\begin{align*}\n\\displaystyle{}\\omega=\\frac{n}{L}\n\\end{align*}\n\nand that for complex coefficient $c_n$, the amplitude is the modulus\n$\\displaystyle {}|c_n|$."
+    ], 
+    "hints_raw": [
+        "Recall that the frequency for\n\n:&lt;math>\n\\displaystyle{}e^{2\\pi{}inx/L}\n&lt;/math>\n\nis\n\n:&lt;math>\n\\displaystyle{}\\omega=\\frac{n}{L}\n&lt;/math>\n\nand that for complex coefficient &lt;math>c_n&lt;/math>, the amplitude is the modulus &lt;math>\\displaystyle{}|c_n|&lt;/math>.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "6 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>From <span>part (a)</span>, we figured out that <span class=\"math\">\\(c_{n} = -\\frac{1}{2\\pi in}\\)</span>. The modulus of this complex number, <span class=\"math\">\\(\\left | c_n \\right |\\)</span>, is the amplitude of oscillation with frequency <span class=\"math\">\\(\\omega _n=n\\)</span> since L is equal to 1. We have that</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\left| c_n \\right|= \\left| -\\frac{1}{2\\pi in} \\right|= \\frac1{2\\pi n} \\left|\\frac{-1}{i}\\right| = \\frac{1}{2\\pi n}\\end{aligned}\\]</span></p>\n<p>for <span class=\"math\">\\(n\\neq 0\\)</span>. When <span class=\"math\">\\(n = 0\\)</span>, the amplitude is equal to <span class=\"math\">\\(\\left| c_0 \\right|\\)</span> which is <span class=\"math\">\\(c_{0} = \\frac{1}{2}\\)</span> from <span>part (a)</span>. Therefore the points for a frequency amplitude plot are <span class=\"math\">\\(\\displaystyle (n,|c_n|)\\)</span> given by</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(0,&amp;1/2)\\\\\n(1,&amp;1/2\\pi)\\\\\n(2,&amp;1/4\\pi)\\\\\n&amp;\\vdots\\\\\n(n,&amp;1/2n\\pi)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "From\n{part\n(a)}, we figured out that $c_{n} = -\\frac{1}{2\\pi in}$. The modulus of\nthis complex number, $\\left | c_n \\right |$, is the amplitude of\noscillation with frequency $\\omega _n=n$ since L is equal to 1. We have\nthat\n\n\\begin{align*}\n\\left| c_n \\right|= \\left| -\\frac{1}{2\\pi in} \\right|= \\frac1{2\\pi n} \\left|\\frac{-1}{i}\\right| = \\frac{1}{2\\pi n}\n\\end{align*}\n\nfor $n\\neq 0$. When $n = 0$, the amplitude is equal to\n$\\left| c_0 \\right|$ which is $c_{0} = \\frac{1}{2}$ from\n{part\n(a)}. Therefore the points for a frequency amplitude plot are\n$\\displaystyle (n,|c_n|)$ given by\n\n\\begin{align*}\n(0,&1/2)\\\\\n(1,&1/2\\pi)\\\\\n(2,&1/4\\pi)\\\\\n&\\vdots\\\\\n(n,&1/2n\\pi)\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "From [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)|part (a)]], we figured out that &lt;math>c_{n} = -\\frac{1}{2\\pi in}&lt;/math>.  The modulus of this complex number, &lt;math>\\left | c_n \\right |&lt;/math>, is the amplitude of oscillation with frequency &lt;math>\\omega _n=n&lt;/math> since L is equal to 1.  We have that\n\n:&lt;math>\n\\left| c_n \\right|= \\left| -\\frac{1}{2\\pi in} \\right|= \\frac1{2\\pi n} \\left|\\frac{-1}{i}\\right| = \\frac{1}{2\\pi n}\n&lt;/math>\n\nfor &lt;math>n\\neq 0&lt;/math>.  When &lt;math>n = 0&lt;/math>, the amplitude is equal to &lt;math>\\left| c_0 \\right|&lt;/math> which is &lt;math>c_{0} = \\frac{1}{2}&lt;/math> from [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)|part (a)]]. Therefore the points for a frequency amplitude plot are &lt;math>\\displaystyle(n,|c_n|)&lt;/math> given by\n\n:&lt;math>\n\\begin{align}\n(0,&amp;1/2)\\\\\n(1,&amp;1/2\\pi)\\\\\n(2,&amp;1/4\\pi)\\\\\n&amp;\\vdots\\\\\n(n,&amp;1/2n\\pi)\n\\end{align}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>What points in the plane would you plot to produce a frequency-amplitude plot for the function in <span>part (a)</span>?</p>\n", 
+    "statement_latex": "What points in the plane would you plot to produce a frequency-amplitude\nplot for the function in\n{part\n(a)}?", 
+    "statement_raw": "What points in the plane would you plot to produce a frequency-amplitude plot for the function in [[Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(a)|part (a)]]?\n", 
+    "term": "December", 
+    "topics": [
+        "Fourier_series"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/December_2010/Question_06_(d)", 
+    "year": 2010
 }

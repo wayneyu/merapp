@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_03_(a)", 
-    "course": "MATH110", 
-    "statement": "Let $\\displaystyle f(x) = x^{6}$\n\nWhat is the derivative of $f(x)$?", 
-    "year": 2013, 
-    "sols": [
-        "Using the power rule with $n=6$.\n\n\\begin{align*}\nf'(x)&= 6x^5.\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=6x^5.\\)</span></p>\n", 
+    "answer_latex": " $f'(x)=6x^5.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Apply the power rule.</p>\n"
+    ], 
+    "hints_latex": [
         "Apply the power rule."
-    ]
+    ], 
+    "hints_raw": [
+        "Apply the power rule.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "3 (a)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>Using the power rule with <span class=\"math\">\\(n=6\\)</span>.</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x)&amp;= 6x^5.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Using the power rule with $n=6$.\n\n\\begin{align*}\nf'(x)&= 6x^5.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Using the power rule with &lt;math>n=6&lt;/math>.\n\n&lt;math>\\begin{align}\nf'(x)&amp;= 6x^5.\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "ThomasWong"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(\\displaystyle f(x) = x^{6}\\)</span></p>\n<p>What is the derivative of <span class=\"math\">\\(f(x)\\)</span>?</p>\n", 
+    "statement_latex": "Let $\\displaystyle f(x) = x^{6}$\n\nWhat is the derivative of $f(x)$?", 
+    "statement_raw": "Let &lt;math> \\displaystyle f(x) = x^{6} &lt;/math>\n\nWhat is the derivative of &lt;math>f(x)&lt;/math>?\n", 
+    "term": "December", 
+    "topics": [
+        "Power_rule"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2013/Question_03_(a)", 
+    "year": 2013
 }

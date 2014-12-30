@@ -1,11 +1,44 @@
 {
-    "term": "April", 
-    "question": "Question_05_(c)", 
+    "answer_html": "<p><span class=\"math\">\\(b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}\\)</span></p>\n", 
+    "answer_latex": "$b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$", 
+    "contributors": [
+        "Konradbe"
+    ], 
     "course": "MATH307", 
-    "statement": "A matrix \\emph{A} and a vector \\emph{b} are given by\n\n$\\displaystyle A = \\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$\n\n$\\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}$\n\nSplit b into $b= b^\\perp +b^\\parallel$, where $b^\\parallel$ is in R(A)\nand $b^\\perp$ is in $R(A)^\\perp$ (i.e. the orthogonal complement of\nR(A).)", 
-    "year": 2006, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "CH", 
+        "RS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "5 (c)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>To find <span class=\"math\">\\(b^\\perp\\)</span> we take the project of b onto the null space <span class=\"math\">\\(u_3\\)</span> from part b</p>\n<p><span class=\"math\">\\(proj_{u_3}=(u_3\\cdot b)u_3\\)</span></p>\n<p><span class=\"math\">\\(=\\frac{1}{ 3} (\\begin{bmatrix}\n1 &amp; -1 &amp; 1\n\\end{bmatrix}\\cdot \\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix})\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}\\)</span></p>\n<p>We can find <span class=\"math\">\\(b^\\parallel\\)</span> by vector addition</p>\n<p><span class=\"math\">\\(b-b^\\perp = b^\\parallel\\)</span></p>\n<p><span class=\"math\">\\(=\\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix}-\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}\\)</span></p>\n<p><span class=\"math\">\\(b^\\parallel =\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}\\)</span></p>\n<p><span class=\"math\">\\(b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
         "To find $b^\\perp$ we take the project of b onto the null space $u_3$\nfrom part b\n\n$proj_{u_3}=(u_3\\cdot b)u_3$\n\n$=\\frac{1}{ 3} (\\begin{bmatrix}\n1 & -1 & 1\n\\end{bmatrix}\\cdot \\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix})\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$\n\nWe can find $b^\\parallel$ by vector addition\n\n$b-b^\\perp = b^\\parallel$\n\n$=\\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix}-\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}$\n\n$b^\\parallel =\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}$\n\n$b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}$"
     ], 
-    "hints": []
+    "sols_raw": [
+        "To find &lt;math>b^\\perp&lt;/math> we take the project of b onto the null space &lt;math>u_3&lt;/math> from part b\n\n&lt;math>proj_{u_3}=(u_3\\cdot b)u_3&lt;/math>\n\n&lt;math>=\\frac{1}{ 3} (\\begin{bmatrix}\n1 &amp; -1 &amp; 1\n\\end{bmatrix}\\cdot \\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix})\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}&lt;/math>\n\nWe can find &lt;math>b^\\parallel&lt;/math> by vector addition\n\n&lt;math>b-b^\\perp = b^\\parallel&lt;/math>\n\n&lt;math>=\\begin{bmatrix}\n2\\\\\n3\\\\\n4\n\\end{bmatrix}-\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}=\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}&lt;/math>\n\n&lt;math>b^\\parallel =\\begin{bmatrix}\n1\\\\\n4\\\\\n3\n\\end{bmatrix}&lt;/math>\n\n&lt;math>b^\\perp =\\begin{bmatrix}\n1\\\\\n-1\\\\\n1\n\\end{bmatrix}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>A matrix <em>A</em> and a vector <em>b</em> are given by</p>\n<p><span class=\"math\">\\(\\displaystyle A = \\begin{bmatrix} 1 &amp; 0 \\\\ 1 &amp; 1 \\\\ 0 &amp; 1 \\end{bmatrix}\\)</span></p>\n<p><span class=\"math\">\\(\\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}\\)</span></p>\n<p>Split b into <span class=\"math\">\\(b= b^\\perp +b^\\parallel\\)</span>, where <span class=\"math\">\\(b^\\parallel\\)</span> is in R(A) and <span class=\"math\">\\(b^\\perp\\)</span> is in <span class=\"math\">\\(R(A)^\\perp\\)</span> (i.e. the orthogonal complement of R(A).)</p>\n", 
+    "statement_latex": "A matrix \\emph{A} and a vector \\emph{b} are given by\n\n$\\displaystyle A = \\begin{bmatrix} 1 & 0 \\\\ 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$\n\n$\\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}$\n\nSplit b into $b= b^\\perp +b^\\parallel$, where $b^\\parallel$ is in R(A)\nand $b^\\perp$ is in $R(A)^\\perp$ (i.e. the orthogonal complement of\nR(A).)", 
+    "statement_raw": "A matrix ''A'' and a vector ''b'' are given by\n\n&lt;math> \\displaystyle A = \\begin{bmatrix} 1 &amp; 0 \\\\ 1 &amp; 1 \\\\ 0 &amp; 1 \\end{bmatrix}&lt;/math>\n\n&lt;math> \\displaystyle b = \\begin{bmatrix} 2 \\\\ 3 \\\\ 4 \\end{bmatrix}&lt;/math>\n\nSplit b into &lt;math>b= b^\\perp +b^\\parallel&lt;/math>, where &lt;math>b^\\parallel&lt;/math> is in R(A) and &lt;math>b^\\perp&lt;/math> is in &lt;math>R(A)^\\perp&lt;/math> (i.e. the orthogonal complement of R(A).)\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2006/Question_05_(c)", 
+    "year": 2006
 }

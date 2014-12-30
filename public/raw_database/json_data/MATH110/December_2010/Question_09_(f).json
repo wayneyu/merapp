@@ -1,13 +1,44 @@
 {
-    "term": "December", 
-    "question": "Question_09_(f)", 
-    "course": "MATH110", 
-    "statement": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nSketch the graph of $\\displaystyle f$.", 
-    "year": 2010, 
-    "sols": [
-        "First we draw the asymptotes and x- and y-intercepts. Using parts (b)\nand (c) of the question, we know there are two asymptotes: x = 1 and y =\n1, and two intercepts: (0, -1) and (-1, 0).\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1b.jpg}\n\\caption{Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1b.jpg}\n\\end{figure}\n\nFrom this picture, it is pretty clear to know where the left half of the\nfunction should go - it must pass through the two intercepts, is\ndecreasing, and goes towards the horizontal and vertical asymptotes.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1c.jpg}\n\\caption{Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1c.jpg}\n\\end{figure}\n\nThe right half of the function is a little trickier, but not by much. It\nmust either go in the upper-right or lower-right quadrant formed by the\ntwo asymptotes. However, in the lower quadrant, the function would have\nto be increasing. Thus it must be in the upper right quadrant,\ndecreasing from infinity and going towards 1.\n\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.5\\textwidth]{Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1d.jpg}\n\\caption{Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1d.jpg}\n\\end{figure}"
+    "answer_html": "<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1d.jpg\" alt=\"image\" /></p>\n", 
+    "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1d.jpg}", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Try sketching the asymptotes and intercepts first. Where should the function go to fit these conditions?</p>\n"
+    ], 
+    "hints_latex": [
         "Try sketching the asymptotes and intercepts first. Where should the\nfunction go to fit these conditions?"
-    ]
+    ], 
+    "hints_raw": [
+        "Try sketching the asymptotes and intercepts first.  Where should the function go to fit these conditions?\n"
+    ], 
+    "num_votes": 0, 
+    "question": "9 (f)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>First we draw the asymptotes and x- and y-intercepts. Using parts (b) and (c) of the question, we know there are two asymptotes: x = 1 and y = 1, and two intercepts: (0, -1) and (-1, 0).</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1b.jpg\" alt=\"image\" /></p>\n<p>From this picture, it is pretty clear to know where the left half of the function should go - it must pass through the two intercepts, is decreasing, and goes towards the horizontal and vertical asymptotes.</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1c.jpg\" alt=\"image\" /></p>\n<p>The right half of the function is a little trickier, but not by much. It must either go in the upper-right or lower-right quadrant formed by the two asymptotes. However, in the lower quadrant, the function would have to be increasing. Thus it must be in the upper right quadrant, decreasing from infinity and going towards 1.</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1d.jpg\" alt=\"image\" /></p>\n"
+    ], 
+    "sols_latex": [
+        "First we draw the asymptotes and x- and y-intercepts. Using parts (b)\nand (c) of the question, we know there are two asymptotes: x = 1 and y =\n1, and two intercepts: (0, -1) and (-1, 0).\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1b.jpg}\n\nFrom this picture, it is pretty clear to know where the left half of the\nfunction should go - it must pass through the two intercepts, is\ndecreasing, and goes towards the horizontal and vertical asymptotes.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1c.jpg}\n\nThe right half of the function is a little trickier, but not by much. It\nmust either go in the upper-right or lower-right quadrant formed by the\ntwo asymptotes. However, in the lower quadrant, the function would have\nto be increasing. Thus it must be in the upper right quadrant,\ndecreasing from infinity and going towards 1.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Courses_MATH110_December_2010Question_09_(f)Solution_1d.jpg}"
+    ], 
+    "sols_raw": [
+        "First we draw the asymptotes and x- and y-intercepts.  Using parts (b) and (c) of the question, we know there are two asymptotes: x = 1 and y = 1, and two intercepts: (0, -1) and (-1, 0).  \n\n[[File:Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1b.jpg]]\n\nFrom this picture, it is pretty clear to know where the left half of the function should go - it must pass through the two intercepts, is decreasing, and goes towards the horizontal and vertical asymptotes.  \n\n[[File:Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1c.jpg]]\n\nThe right half of the function is a little trickier, but not by much.  It must either go in the upper-right or lower-right quadrant formed by the two asymptotes.  However, in the lower quadrant, the function would have to be increasing.  Thus it must be in the upper right quadrant, decreasing from infinity and going towards 1.  \n\n[[File:Math Exam Resources Courses MATH110 December 2010Question 09 (f)Solution 1d.jpg]]\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\frac{x + 1}{x - 1}\\)</span>.</p>\n<p>Sketch the graph of <span class=\"math\">\\(\\displaystyle f\\)</span>.</p>\n", 
+    "statement_latex": "Let $f(x) = \\frac{x + 1}{x - 1}$.\n\nSketch the graph of $\\displaystyle f$.", 
+    "statement_raw": "Let &lt;math>f(x) = \\frac{x + 1}{x - 1}&lt;/math>.\n\nSketch the graph of &lt;math>\\displaystyle f&lt;/math>.\n", 
+    "term": "December", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_09_(f)", 
+    "year": 2010
 }

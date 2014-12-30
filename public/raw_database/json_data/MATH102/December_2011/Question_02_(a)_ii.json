@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_02_(a)_ii", 
-    "course": "MATH102", 
-    "statement": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\begin{align*}\\displaystyle B = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x}\\end{align*}", 
-    "year": 2011, 
-    "sols": [
-        "Notice that we cannot simply plug in $x = 3$ as we will get $B = 0/0$,\nan indeterminate form.\n\nTo evaluate this limit, factor the numerator and denominator of the\nfraction as much as possible:\n\n\\begin{align*}B = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x} = \\lim_{x \\to 3}\\frac{(x - 3)(x + 1)}{(x - 3)x}.\\end{align*}\n\nNotice that there is a term that can be cancelled out from the numerator\nand denominator and rewrite the limit:\n\n\\begin{align*}B = \\lim_{x \\to 3}\\frac{x + 1}{x}.\\end{align*} Using the properties of limits,\nwe can now evaluate this limit by plugging in the value $x = 3$\n\n: B = \\textbackslash{}frac\\{\\textbackslash{}lim\\_\\{x \\textbackslash{}to\n3\\} x + 1\\}\\{\\textbackslash{}lim\\_\\{x \\textbackslash{}to 3\\} x\\} =\n\\textbackslash{}frac\\{4\\}\\{3\\} \\textbackslash{}quad\n\\textbackslash{}rightarrow \\textbackslash{}quad\n\\{\\textbackslash{}color\\{blue\\}B = \\textbackslash{}frac\\{4\\}\\{3\\}\\}."
+    "answer_html": "<p><span class=\"math\">\\(B=\\frac{4}{3} \\quad \\rightarrow \\quad {\\color{blue}B =\\frac{4}{3}}.\\)</span></p>\n", 
+    "answer_latex": " $B=\\frac{4}{3} \\quad \\rightarrow \\quad {\\color{blue}B =\\frac{4}{3}}.$ ", 
+    "contributors": [
+        "Konradbe", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH102", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Why does plugging in <span class=\"math\">\\(x = 3\\)</span> into the fraction not work? Maybe some factoring can help here.</p>\n"
+    ], 
+    "hints_latex": [
         "Why does plugging in $x = 3$ into the fraction not work? Maybe some\nfactoring can help here."
-    ]
+    ], 
+    "hints_raw": [
+        "Why does plugging in &lt;math>x = 3&lt;/math> into the fraction not work? Maybe some factoring can help here.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "2 (a) ii", 
+    "rating": 97, 
+    "sols_html": [
+        "<p>Notice that we cannot simply plug in <span class=\"math\">\\(x = 3\\)</span> as we will get <span class=\"math\">\\(B = 0/0\\)</span>, an indeterminate form.</p>\n<p>To evaluate this limit, factor the numerator and denominator of the fraction as much as possible:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x} = \\lim_{x \\to 3}\\frac{(x - 3)(x + 1)}{(x - 3)x}.\\end{aligned}\\]</span></p>\n<p>Notice that there is a term that can be cancelled out from the numerator and denominator and rewrite the limit:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB = \\lim_{x \\to 3}\\frac{x + 1}{x}.\\end{aligned}\\]</span></p>\n<p>Using the properties of limits, we can now evaluate this limit by plugging in the value <span class=\"math\">\\(x = 3\\)</span></p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB = \\frac{\\lim_{x \\to 3} x + 1}{\\lim_{x \\to 3} x} = \\frac{4}{3} \\quad \\rightarrow \\quad {\\color{blue}B =\\frac{4}{3}}.\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "Notice that we cannot simply plug in $x = 3$ as we will get $B = 0/0$,\nan indeterminate form.\n\nTo evaluate this limit, factor the numerator and denominator of the\nfraction as much as possible:\n\n\\begin{align*}\nB = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x} = \\lim_{x \\to 3}\\frac{(x - 3)(x + 1)}{(x - 3)x}.\n\\end{align*}\n\nNotice that there is a term that can be cancelled out from the numerator\nand denominator and rewrite the limit:\n\n\\begin{align*}\nB = \\lim_{x \\to 3}\\frac{x + 1}{x}.\n\\end{align*} Using the properties of limits,\nwe can now evaluate this limit by plugging in the value $x = 3$\n\n\\begin{align*}\nB = \\frac{\\lim_{x \\to 3} x + 1}{\\lim_{x \\to 3} x} = \\frac{4}{3} \\quad \\rightarrow \\quad {\\color{blue}B =\\frac{4}{3}}.\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "Notice that we cannot simply plug in &lt;math>x = 3&lt;/math> as we will get &lt;math>B = 0/0&lt;/math>, an indeterminate form.\n\nTo evaluate this limit, factor the numerator and denominator of the fraction as much as possible:\n:&lt;math>\nB = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x} = \\lim_{x \\to 3}\\frac{(x - 3)(x + 1)}{(x - 3)x}.\n&lt;/math>\n\nNotice that there is a term that can be cancelled out from the numerator and denominator and rewrite the limit:\n:&lt;math>\nB = \\lim_{x \\to 3}\\frac{x + 1}{x}.\n&lt;/math>\nUsing the properties of limits, we can now evaluate this limit by plugging in the value &lt;math>x = 3&lt;/math>\n:&lt;math>\nB = \\frac{\\lim_{x \\to 3} x + 1}{\\lim_{x \\to 3} x} = \\frac{4}{3} \\quad \\rightarrow \\quad {\\color{blue}B = \\frac{4}{3}}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p><em><strong>Short-Answer Problems.</strong> A correct answer in the box gives full marks. For partial marks work needs to be shown.</em></p>\n<p><em>Note: If a limit does not exist, indicate whether it approaches <span class=\"math\">\\(+\\infty\\)</span> or <span class=\"math\">\\(-\\infty\\)</span>.</em></p>\n<p>Find the limit</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle B = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "\\emph{\\textbf{Short-Answer Problems.} A correct answer in the box gives\nfull marks. For partial marks work needs to be shown.}\n\n\\emph{Note: If a limit does not exist, indicate whether it approaches\n$+\\infty$ or $-\\infty$.}\n\nFind the limit\n\n\\begin{align*}\n\\displaystyle B = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x}\n\\end{align*}", 
+    "statement_raw": "'''''Short-Answer Problems.''' A correct answer in the box gives full marks. For partial marks work needs to be shown.''\n\n''Note: If a limit does not exist, indicate whether it approaches &lt;math>+\\infty&lt;/math> or &lt;math>-\\infty&lt;/math>.''\n\nFind the limit\n:&lt;math>\n\\displaystyle B = \\lim_{x \\to 3}\\frac{x^{2} - 2x - 3}{x^{2} - 3x}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_02_(a)_ii", 
+    "year": 2011
 }

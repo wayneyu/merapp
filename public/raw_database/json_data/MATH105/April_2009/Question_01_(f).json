@@ -1,15 +1,55 @@
 {
-    "term": "April", 
-    "question": "Question_01_(f)", 
-    "course": "MATH105", 
-    "statement": "Find $\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx$", 
-    "year": 2009, 
-    "sols": [
-        "We proceed as suggested by the hints. Let\n$\\displaystyle u = x^{2} - 4x + 7$ so that\n$\\displaystyle du = (2x - 4)dx = 2(x-2)dx$. This gives\n\n\\begin{align*}\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx = \\int \\frac{du}{2u^{2}}\\end{align*}\n\nIntegrating gives\n\n\\begin{align*}\\displaystyle \\int \\frac{du}{2u^{2}} = \\frac{-1}{2u} + C = \\frac{-1}{2(x^{2}-4x+7)} + C\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle \\int \\frac{du}{2u^{2}}=\\frac{-1}{2(x^{2}-4x+7)} + C\\)</span></p>\n", 
+    "answer_latex": " $\\displaystyle \\int \\frac{du}{2u^{2}}=\\frac{-1}{2(x^{2}-4x+7)} + C$ ", 
+    "contributors": [
+        "Konradbe", 
+        "ErinMoulding"
     ], 
-    "hints": [
+    "course": "MATH105", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>What&#8217;s the relationship between the denominator (the term that is being squared) and the numerator? How can this help us integrate?</p>\n", 
+        "<p>Try a substitution.</p>\n", 
+        "<p>Try <span class=\"math\">\\(\\displaystyle u = x^{2} - 4x + 7\\)</span>.</p>\n"
+    ], 
+    "hints_latex": [
         "What's the relationship between the denominator (the term that is being\nsquared) and the numerator? How can this help us integrate?", 
         "Try a substitution.", 
         "Try $\\displaystyle u = x^{2} - 4x + 7$."
-    ]
+    ], 
+    "hints_raw": [
+        "What's the relationship between the denominator (the term that is being squared) and the numerator? How can this help us integrate?\n", 
+        "Try a substitution.\n", 
+        "Try &lt;math> \\displaystyle u = x^{2} - 4x + 7 &lt;/math>.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "1 (f)", 
+    "rating": 81, 
+    "sols_html": [
+        "<p>We proceed as suggested by the hints. Let <span class=\"math\">\\(\\displaystyle u = x^{2} - 4x + 7\\)</span> so that <span class=\"math\">\\(\\displaystyle du = (2x - 4)dx = 2(x-2)dx\\)</span>. This gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx = \\int \\frac{du}{2u^{2}}\\end{aligned}\\]</span></p>\n<p>Integrating gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle \\int \\frac{du}{2u^{2}} = \\frac{-1}{2u} + C = \\frac{-1}{2(x^{2}-4x+7)} + C\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "We proceed as suggested by the hints. Let\n$\\displaystyle u = x^{2} - 4x + 7$ so that\n$\\displaystyle du = (2x - 4)dx = 2(x-2)dx$. This gives\n\n\\begin{align*}\n\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx = \\int \\frac{du}{2u^{2}}\n\\end{align*}\n\nIntegrating gives\n\n\\begin{align*}\n\\displaystyle \\int \\frac{du}{2u^{2}} = \\frac{-1}{2u} + C = \\frac{-1}{2(x^{2}-4x+7)} + C\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "We proceed as suggested by the hints. Let &lt;math> \\displaystyle u = x^{2} - 4x + 7 &lt;/math> so that &lt;math> \\displaystyle du = (2x - 4)dx = 2(x-2)dx&lt;/math>. This gives\n\n:&lt;math> \\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx = \\int \\frac{du}{2u^{2}} &lt;/math>\n\nIntegrating gives\n\n:&lt;math> \\displaystyle \\int \\frac{du}{2u^{2}} = \\frac{-1}{2u} + C = \\frac{-1}{2(x^{2}-4x+7)} + C&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Find <span class=\"math\">\\(\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx\\)</span></p>\n", 
+    "statement_latex": "Find $\\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx$", 
+    "statement_raw": "Find &lt;math> \\displaystyle \\int \\frac{x-2}{(x^{2}-4x + 7)^{2}}\\,dx &lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Integration", 
+        "Substitution"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2009/Question_01_(f)", 
+    "year": 2009
 }

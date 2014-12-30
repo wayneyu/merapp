@@ -1,11 +1,41 @@
 {
-    "term": "April", 
-    "question": "Question_Section_202_07_(d)", 
+    "answer_html": "<p><span class=\"math\">\\(6a_2+2b_2=0\\)</span></p>\n", 
+    "answer_latex": " $6a_2+2b_2=0$ ", 
     "course": "MATH307", 
-    "statement": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}f(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\\end{align*}\n\n\\textbf{(d)} At the endpoints we have zero second derivatives. Write\ndown the linear equations expressing this condition.", 
-    "year": 2013, 
-    "sols": [
-        "The two endpoints are $(0,1)$ and $(2,2)$. This condition can be written\nas:\n\n\\begin{align*}\np_1''(0) &= 0\\\\\np_2''(2) &=0\\end{align*}\n\nThe first derivatives:\n\n\\begin{align*}\np_1'(x) &= 3a_1x^2+2b_1x+c_1 \\\\\np_2'(x) &= 3a_2(x-1)^2+2b_2(x-1)+c_2\\end{align*}\n\nand the second derivatives:\n\n\\begin{align*}\np_1''(x) &= 6a_1x+2b_1\\Rightarrow p_1''(0)=2b_1 \\\\\np_2''(x) &= 6a_2(x-1)+2b_2 \\Rightarrow p_2''(2)=6a_2+2b_2\\end{align*}\n\nTherefore the equations are:\n\n\\begin{align*} 2b_1 &= 0\\\\\n6a_2+2b_2 &= 0\\end{align*}"
+    "flags": [
+        "RQ", 
+        "CH", 
+        "RS", 
+        "CT"
     ], 
-    "hints": []
+    "hints_html": [
+        "<p>No content found.</p>\n"
+    ], 
+    "hints_latex": [
+        "No content found."
+    ], 
+    "hints_raw": [
+        "No content found."
+    ], 
+    "num_votes": 0, 
+    "question": "Section 202 07 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The two endpoints are <span class=\"math\">\\((0,1)\\)</span> and <span class=\"math\">\\((2,2)\\)</span>. This condition can be written as:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np_1&#39;&#39;(0) &amp;= 0\\\\\np_2&#39;&#39;(2) &amp;=0\\end{aligned}\\]</span></p>\n<p>The first derivatives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np_1&#39;(x) &amp;= 3a_1x^2+2b_1x+c_1 \\\\\np_2&#39;(x) &amp;= 3a_2(x-1)^2+2b_2(x-1)+c_2\\end{aligned}\\]</span></p>\n<p>and the second derivatives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\np_1&#39;&#39;(x) &amp;= 6a_1x+2b_1\\Rightarrow p_1&#39;&#39;(0)=2b_1 \\\\\np_2&#39;&#39;(x) &amp;= 6a_2(x-1)+2b_2 \\Rightarrow p_2&#39;&#39;(2)=6a_2+2b_2\\end{aligned}\\]</span></p>\n<p>Therefore the equations are:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n2b_1 &amp;= 0\\\\\n6a_2+2b_2 &amp;= 0\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The two endpoints are $(0,1)$ and $(2,2)$. This condition can be written\nas:\n\n\\begin{align*}\np_1''(0) &= 0\\\\\np_2''(2) &=0\n\\end{align*}\n\nThe first derivatives:\n\n\\begin{align*}\np_1'(x) &= 3a_1x^2+2b_1x+c_1 \\\\\np_2'(x) &= 3a_2(x-1)^2+2b_2(x-1)+c_2\n\\end{align*}\n\nand the second derivatives:\n\n\\begin{align*}\np_1''(x) &= 6a_1x+2b_1\\Rightarrow p_1''(0)=2b_1 \\\\\np_2''(x) &= 6a_2(x-1)+2b_2 \\Rightarrow p_2''(2)=6a_2+2b_2\n\\end{align*}\n\nTherefore the equations are:\n\n\\begin{align*}\n2b_1 &= 0\\\\\n6a_2+2b_2 &= 0\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "The two endpoints are &lt;math>(0,1)&lt;/math> and &lt;math>(2,2)&lt;/math>. This condition can be written as:\n\n:&lt;math>\\begin{align}\np_1''(0) &amp;= 0\\\\\np_2''(2) &amp;=0\n\\end{align}&lt;/math>\n\nThe first derivatives:\n\n:&lt;math>\\begin{align}\np_1'(x) &amp;= 3a_1x^2+2b_1x+c_1 \\\\\np_2'(x) &amp;= 3a_2(x-1)^2+2b_2(x-1)+c_2\n\\end{align}&lt;/math>\n\nand the second derivatives:\n\n:&lt;math>\\begin{align}\np_1''(x) &amp;= 6a_1x+2b_1\\Rightarrow p_1''(0)=2b_1 \\\\\np_2''(x) &amp;= 6a_2(x-1)+2b_2 \\Rightarrow p_2''(2)=6a_2+2b_2\n\\end{align}&lt;/math>\n\nTherefore the equations are:\n\n:&lt;math>\\begin{align} 2b_1 &amp;= 0\\\\\n6a_2+2b_2 &amp;= 0\n\\end{align}&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Konradbe"
+    ], 
+    "statement_html": "<p>We want to interpolate through <em>(0, 1)</em>, <em>(1, 0)</em>, <em>(2, 2)</em> using cubic splines</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\\end{aligned}\\]</span></p>\n<p><strong>(d)</strong> At the endpoints we have zero second derivatives. Write down the linear equations expressing this condition.</p>\n", 
+    "statement_latex": "We want to interpolate through \\emph{(0, 1)}, \\emph{(1, 0)}, \\emph{(2,\n2)} using cubic splines\n\n\\begin{align*}\nf(x) = \\begin{cases}\np_1(x), & 0 \\leq x \\leq 1 \\\\\np_2(x), & 1 \\leq x \\leq 2\n\\end{cases}\n\\end{align*}\n\n\\textbf{(d)} At the endpoints we have zero second derivatives. Write\ndown the linear equations expressing this condition.", 
+    "statement_raw": "We want to interpolate through ''(0, 1)'', ''(1, 0)'', ''(2, 2)'' using cubic splines\n\n:&lt;math>\nf(x) = \\begin{cases}\np_1(x), &amp; 0 \\leq x \\leq 1 \\\\\np_2(x), &amp; 1 \\leq x \\leq 2\n\\end{cases}\n&lt;/math>\n\n'''(d)''' At the endpoints we have zero second derivatives. Write down the linear equations expressing this condition.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH307/April_2013/Question_Section_202_07_(d)", 
+    "year": 2013
 }

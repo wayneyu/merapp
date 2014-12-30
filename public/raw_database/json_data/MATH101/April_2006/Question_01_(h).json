@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(h)", 
-    "course": "MATH101", 
-    "statement": "A particle is moved along the \\emph{x}-axis by a force that measures\n$x^{3/2}$N at a point \\emph{x} m from the origin. How much work is done\nin moving the particle from the origin to a point $10$ m away from the\norigin?", 
-    "year": 2006, 
-    "sols": [
-        "$W = \\int_{0}^{10}x^{3/2} \\, dx = \\left. \\frac{2x^{5/2}}{5} \\right|_{0}^{10} = \\frac{2\\sqrt{100000}}{5} = 40\\sqrt{10}$"
+    "answer_html": "<p><span class=\"math\">\\(W = 40\\sqrt{10}\\)</span></p>\n", 
+    "answer_latex": "$W = 40\\sqrt{10}$", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Just an integral in disguise!</p>\n"
+    ], 
+    "hints_latex": [
         "Just an integral in disguise!"
-    ]
+    ], 
+    "hints_raw": [
+        "Just an integral in disguise!\n"
+    ], 
+    "num_votes": 0, 
+    "question": "1 (h)", 
+    "rating": null, 
+    "sols_html": [
+        "<p><span class=\"math\">\\(W = \\int_{0}^{10}x^{3/2} \\, dx = \\left.\\frac{2x^{5/2}}{5} \\right|_{0}^{10} = \\frac{2\\sqrt{100000}}{5} = 40\\sqrt{10}\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "$W = \\int_{0}^{10}x^{3/2} \\, dx = \\left.\\frac{2x^{5/2}}{5} \\right|_{0}^{10} = \\frac{2\\sqrt{100000}}{5} = 40\\sqrt{10}$"
+    ], 
+    "sols_raw": [
+        "&lt;math>\nW = \\int_{0}^{10}x^{3/2} \\, dx = \\left. \\frac{2x^{5/2}}{5} \\right|_{0}^{10} = \\frac{2\\sqrt{100000}}{5} = 40\\sqrt{10}\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>A particle is moved along the <em>x</em>-axis by a force that measures <span class=\"math\">\\(x^{3/2}\\)</span>N at a point <em>x</em> m from the origin. How much work is done in moving the particle from the origin to a point <span class=\"math\">\\(10\\)</span> m away from the origin?</p>\n", 
+    "statement_latex": "A particle is moved along the \\emph{x}-axis by a force that measures\n$x^{3/2}$N at a point \\emph{x} m from the origin. How much work is done\nin moving the particle from the origin to a point $10$ m away from the\norigin?", 
+    "statement_raw": "A particle is moved along the ''x''-axis by a force that measures &lt;math> x^{3/2} &lt;/math>N at a point ''x'' m from the origin. How much work is done in moving the particle from the origin to a point &lt;math> 10 &lt;/math> m away from the origin?\n", 
+    "term": "April", 
+    "topics": [
+        "Work"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(h)", 
+    "year": 2006
 }

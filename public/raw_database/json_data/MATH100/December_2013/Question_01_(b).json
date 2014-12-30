@@ -1,14 +1,51 @@
 {
-    "term": "December", 
-    "question": "Question_01_(b)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $2x-3 \\leq f(x) \\leq x^2-4x+6$ for $x \\geq -1$, find\n$\\lim_{x \\to 3}f(x).$", 
-    "year": 2013, 
-    "sols": [
-        "Firstly, we are given that $2x-3 \\leq f(x) \\leq x^2-4x+6$ for all\n$x \\in [-1, \\infty)$. Since $3 \\in [-1, \\infty)$, the initial condition\nof the squeeze theorem is satisfied.\n\nNow, since $\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}$ and$\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}$, we conclude by the\nsqueeze theorem that $\\lim_{x \\to 3} f(x) = {\\color{blue}3}$."
+    "answer_html": "<p>Now, since <span class=\"math\">\\(\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}\\)</span> and<span class=\"math\">\\(\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}\\)</span>, we conclude by the squeeze theorem that <span class=\"math\">\\(\\lim_{x \\to 3} f(x) = {\\color{blue}3}\\)</span>.</p>\n", 
+    "answer_latex": "Now, since $\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}$ and$\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}$, we conclude by the\nsqueeze theorem that $\\lim_{x \\to 3} f(x) = {\\color{blue}3}$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Try applying the <strong>squeeze theorem</strong>.</p>\n", 
+        "<p>The squeeze theorem states that if <span class=\"math\">\\(g(x) \\leq f(x) \\leq h(x)\\)</span> for all <span class=\"math\">\\(\\displaystyle x\\)</span> in some interval <span class=\"math\">\\(\\displaystyle I\\)</span>, and <span class=\"math\">\\(a \\in I\\)</span>, then:<br /><br /><span class=\"math\">\\(\\lim_{x \\to a} g(x) = \\lim_{x \\to a} h(x) = L \\implies \\lim_{x \\to a} f(x) = L\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "Try applying the \\textbf{squeeze theorem}.", 
         "The squeeze theorem states that if $g(x) \\leq f(x) \\leq h(x)$ for all\n$\\displaystyle x$ in some interval $\\displaystyle I$, and $a \\in I$,\nthen:\\\\\\\\$\\lim_{x \\to a} g(x) = \\lim_{x \\to a} h(x) = L \\implies \\lim_{x \\to a} f(x) = L$"
-    ]
+    ], 
+    "hints_raw": [
+        "Try applying the '''squeeze theorem'''.\n", 
+        "The squeeze theorem states that if &lt;math>g(x) \\leq f(x) \\leq h(x)&lt;/math> for all &lt;math>\\displaystyle x&lt;/math> in some interval &lt;math>\\displaystyle I&lt;/math>, and &lt;math>a \\in I&lt;/math>, then:&lt;br>&lt;br>\n&lt;math> \\lim_{x \\to a} g(x) = \\lim_{x \\to a} h(x) = L \\implies \\lim_{x \\to a} f(x) = L&lt;/math>\n"
+    ], 
+    "num_votes": 10, 
+    "question": "1 (b)", 
+    "rating": 95, 
+    "sols_html": [
+        "<p>Firstly, we are given that <span class=\"math\">\\(2x-3 \\leq f(x) \\leq x^2-4x+6\\)</span> for all <span class=\"math\">\\(x \\in [-1, \\infty)\\)</span>. Since <span class=\"math\">\\(3 \\in [-1, \\infty)\\)</span>, the initial condition of the squeeze theorem is satisfied.</p>\n<p>Now, since <span class=\"math\">\\(\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}\\)</span> and<span class=\"math\">\\(\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}\\)</span>, we conclude by the squeeze theorem that <span class=\"math\">\\(\\lim_{x \\to 3} f(x) = {\\color{blue}3}\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "Firstly, we are given that $2x-3 \\leq f(x) \\leq x^2-4x+6$ for all\n$x \\in [-1, \\infty)$. Since $3 \\in [-1, \\infty)$, the initial condition\nof the squeeze theorem is satisfied.\n\nNow, since $\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}$ and$\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}$, we conclude by the\nsqueeze theorem that $\\lim_{x \\to 3} f(x) = {\\color{blue}3}$."
+    ], 
+    "sols_raw": [
+        "Firstly, we are given that &lt;math>2x-3 \\leq f(x) \\leq x^2-4x+6&lt;/math> for all &lt;math>x \\in [-1, \\infty)&lt;/math>. Since &lt;math>3 \\in [-1, \\infty)&lt;/math>, the initial condition of the squeeze theorem is satisfied.\n\nNow, since &lt;math>\\lim_{x \\to 3} 2x-3 = {\\color{OliveGreen} 3}&lt;/math> and &lt;math>\\lim_{x \\to 3} x^2-4x+6 = {\\color{OliveGreen} 3}&lt;/math>, we conclude by the squeeze theorem that &lt;math>\\lim_{x \\to 3} f(x) = {\\color{blue} 3}&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "NicholasHu"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Question. Simplify your answer as much as possible and show your work.</strong></p>\n<p>If <span class=\"math\">\\(2x-3 \\leq f(x) \\leq x^2-4x+6\\)</span> for <span class=\"math\">\\(x \\geq -1\\)</span>, find <span class=\"math\">\\(\\lim_{x \\to 3}f(x).\\)</span></p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Question. Simplify your answer as much as possible\nand show your work.}\n\nIf $2x-3 \\leq f(x) \\leq x^2-4x+6$ for $x \\geq -1$, find\n$\\lim_{x \\to 3}f(x).$", 
+    "statement_raw": "'''Short-Answer Question. Simplify your answer as much as possible and show your work.'''\n\nIf &lt;math>2x-3 \\leq f(x) \\leq x^2-4x+6&lt;/math> for &lt;math>x \\geq -1&lt;/math>, find &lt;math>\\lim_{x \\to 3}f(x).&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Limit_of_a_function"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_01_(b)", 
+    "year": 2013
 }

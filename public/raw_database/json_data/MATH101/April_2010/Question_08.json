@@ -1,13 +1,46 @@
 {
-    "term": "April", 
-    "question": "Question_08", 
-    "course": "MATH101", 
-    "statement": "Evaluate $\\int_0^1(6-3x^2)dx$ by computing the limit of the\nright-endpoint Riemann sums $R_n$ as $n\\rightarrow\\infty$.\\\\You may use\nthe formula $\\sum_{i=1}^{n}i^{2}=n(n+1)(2n+1)/6$.\\\\\\emph{No credit will\nbe given for computing this integral using antidifferentiation, although\nyou may use antidifferentiation to check your answer.}", 
-    "year": 2010, 
-    "sols": [
-        "The interval has size 1 so $\\Delta x=\\frac{1}{n}$. The interval is\n$[0,1]$ so $x_i=\\frac{i}{n}$. In this case $f(x)=6-3x^2$ so the right\nRiemann sum is:\n\n\\begin{align*}\nR_n&=\\sum_{i=1}^n(6-3(\\frac{i}{n})^2)(\\frac{1}{n})\\\\\n&=\\frac{6}{n}\\sum_{i=1}^n1-\\frac{3}{n^3}\\sum_{i=1}^ni^2\\\\\n&=\\frac{6}{n}(n)-\\frac{3}{n^3}\\frac{n(n+1)(2n+1)}{6}\\\\\n&=6-\\frac{n(n+1)(2n+1)}{2n^3}\\end{align*}\n\nSo the integral is:\n\n\\begin{align*}\n\\int_0^1(6-3x^2)dx&=\\lim_{n\\to \\infty} R_n\\\\\n&=\\lim_{n \\to \\infty}(6-\\frac{n(n+1)(2n+1)}{2n^3})\\\\\n&=6-\\lim_{n \\to \\infty}\\frac{2n^3+3n^2+n}{2n^3}\\\\\n&=6-\\lim_{n \\to \\infty}\\frac{2+3/n+1/n^2}{2}\\\\\n&=6-\\frac{2-0-0}{2}=6-1=5\\end{align*}\n\nChecking our answer, we see that\n\n$\\int_0^1(6-3x^2)dx = (6x - x^{3})\\mid_{0}^{1} = 6(1)-(1)^{3} - (6(0)-(0)^{3}) = 6-1 =5$\n\nwhich matches the above."
+    "answer_html": "<p><span class=\"math\">\\(\\int_0^1(6-3x^2)dx =5\\)</span>which matches the above.</p>\n", 
+    "answer_latex": "$\\int_0^1(6-3x^2)dx =5$which matches the above.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "Simontse"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>The right Riemann sum for the function <span class=\"math\">\\(f(x)\\)</span> is:</p>\n<p><span class=\"math\">\\(R_n=\\sum_{i=1}^nf(x_i)\\Delta x\\)</span></p>\n"
+    ], 
+    "hints_latex": [
         "The right Riemann sum for the function $f(x)$ is:\n\n$R_n=\\sum_{i=1}^nf(x_i)\\Delta x$"
-    ]
+    ], 
+    "hints_raw": [
+        "The right Riemann sum for the function &lt;math> f(x) &lt;/math> is:\n\n&lt;math>\nR_n=\\sum_{i=1}^nf(x_i)\\Delta x\n&lt;/math>\n"
+    ], 
+    "num_votes": 1, 
+    "question": "8", 
+    "rating": 17, 
+    "sols_html": [
+        "<p>The interval has size 1 so <span class=\"math\">\\(\\Delta x=\\frac{1}{n}\\)</span>. The interval is <span class=\"math\">\\([0,1]\\)</span> so <span class=\"math\">\\(x_i=\\frac{i}{n}\\)</span>. In this case <span class=\"math\">\\(f(x)=6-3x^2\\)</span> so the right Riemann sum is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nR_n&amp;=\\sum_{i=1}^n(6-3(\\frac{i}{n})^2)(\\frac{1}{n})\\\\\n&amp;=\\frac{6}{n}\\sum_{i=1}^n1-\\frac{3}{n^3}\\sum_{i=1}^ni^2\\\\\n&amp;=\\frac{6}{n}(n)-\\frac{3}{n^3}\\frac{n(n+1)(2n+1)}{6}\\\\\n&amp;=6-\\frac{n(n+1)(2n+1)}{2n^3}\\end{aligned}\\]</span></p>\n<p>So the integral is:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\int_0^1(6-3x^2)dx&amp;=\\lim_{n\\to \\infty} R_n\\\\\n&amp;=\\lim_{n \\to \\infty}(6-\\frac{n(n+1)(2n+1)}{2n^3})\\\\\n&amp;=6-\\lim_{n \\to \\infty}\\frac{2n^3+3n^2+n}{2n^3}\\\\\n&amp;=6-\\lim_{n \\to \\infty}\\frac{2+3/n+1/n^2}{2}\\\\\n&amp;=6-\\frac{2-0-0}{2}=6-1=5\\end{aligned}\\]</span></p>\n<p>Checking our answer, we see that</p>\n<p><span class=\"math\">\\(\\int_0^1(6-3x^2)dx = (6x - x^{3})\\mid_{0}^{1} = 6(1)-(1)^{3} - (6(0)-(0)^{3}) = 6-1 =5\\)</span></p>\n<p>which matches the above.</p>\n"
+    ], 
+    "sols_latex": [
+        "The interval has size 1 so $\\Delta x=\\frac{1}{n}$. The interval is\n$[0,1]$ so $x_i=\\frac{i}{n}$. In this case $f(x)=6-3x^2$ so the right\nRiemann sum is:\n\n\\begin{align*}\nR_n&=\\sum_{i=1}^n(6-3(\\frac{i}{n})^2)(\\frac{1}{n})\\\\\n&=\\frac{6}{n}\\sum_{i=1}^n1-\\frac{3}{n^3}\\sum_{i=1}^ni^2\\\\\n&=\\frac{6}{n}(n)-\\frac{3}{n^3}\\frac{n(n+1)(2n+1)}{6}\\\\\n&=6-\\frac{n(n+1)(2n+1)}{2n^3}\n\\end{align*}\n\nSo the integral is:\n\n\\begin{align*}\n\\int_0^1(6-3x^2)dx&=\\lim_{n\\to \\infty} R_n\\\\\n&=\\lim_{n \\to \\infty}(6-\\frac{n(n+1)(2n+1)}{2n^3})\\\\\n&=6-\\lim_{n \\to \\infty}\\frac{2n^3+3n^2+n}{2n^3}\\\\\n&=6-\\lim_{n \\to \\infty}\\frac{2+3/n+1/n^2}{2}\\\\\n&=6-\\frac{2-0-0}{2}=6-1=5\n\\end{align*}\n\nChecking our answer, we see that\n\n$\\int_0^1(6-3x^2)dx = (6x - x^{3})\\mid_{0}^{1} = 6(1)-(1)^{3} - (6(0)-(0)^{3}) = 6-1 =5$\n\nwhich matches the above."
+    ], 
+    "sols_raw": [
+        "The interval has size 1 so &lt;math> \\Delta x=\\frac{1}{n} &lt;/math>. The interval is &lt;math> [0,1] &lt;/math> so &lt;math> x_i=\\frac{i}{n} &lt;/math>. In this case &lt;math> f(x)=6-3x^2 &lt;/math> so the right Riemann sum is:\n\n&lt;math>\n\\begin{align}\nR_n&amp;=\\sum_{i=1}^n(6-3(\\frac{i}{n})^2)(\\frac{1}{n})\\\\\n&amp;=\\frac{6}{n}\\sum_{i=1}^n1-\\frac{3}{n^3}\\sum_{i=1}^ni^2\\\\\n&amp;=\\frac{6}{n}(n)-\\frac{3}{n^3}\\frac{n(n+1)(2n+1)}{6}\\\\\n&amp;=6-\\frac{n(n+1)(2n+1)}{2n^3}\n\\end{align}\n&lt;/math>\n\nSo the integral is:\n\n&lt;math>\n\\begin{align}\n\\int_0^1(6-3x^2)dx&amp;=\\lim_{n\\to \\infty} R_n\\\\\n&amp;=\\lim_{n \\to \\infty}(6-\\frac{n(n+1)(2n+1)}{2n^3})\\\\\n&amp;=6-\\lim_{n \\to \\infty}\\frac{2n^3+3n^2+n}{2n^3}\\\\\n&amp;=6-\\lim_{n \\to \\infty}\\frac{2+3/n+1/n^2}{2}\\\\\n&amp;=6-\\frac{2-0-0}{2}=6-1=5\n\\end{align}\n&lt;/math>\n\nChecking our answer, we see that\n\n&lt;math>\n\\int_0^1(6-3x^2)dx = (6x - x^{3})\\mid_{0}^{1} = 6(1)-(1)^{3} - (6(0)-(0)^{3}) = 6-1 =5\n&lt;/math>\n\nwhich matches the above.\n"
+    ], 
+    "solvers": [
+        "GaloHigueraRojo"
+    ], 
+    "statement_html": "<p>Evaluate <span class=\"math\">\\(\\int_0^1(6-3x^2)dx\\)</span> by computing the limit of the right-endpoint Riemann sums <span class=\"math\">\\(R_n\\)</span> as <span class=\"math\">\\(n\\rightarrow\\infty\\)</span>.<br />You may use the formula <span class=\"math\">\\(\\sum_{i=1}^{n}i^{2}=n(n+1)(2n+1)/6\\)</span>.<br /><em>No credit will be given for computing this integral using antidifferentiation, although you may use antidifferentiation to check your answer.</em></p>\n", 
+    "statement_latex": "Evaluate $\\int_0^1(6-3x^2)dx$ by computing the limit of the\nright-endpoint Riemann sums $R_n$ as $n\\rightarrow\\infty$.\\\\You may use\nthe formula $\\sum_{i=1}^{n}i^{2}=n(n+1)(2n+1)/6$.\\\\\\emph{No credit will\nbe given for computing this integral using antidifferentiation, although\nyou may use antidifferentiation to check your answer.}", 
+    "statement_raw": "Evaluate &lt;math>\\int_0^1(6-3x^2)dx&lt;/math> by computing the limit of the right-endpoint Riemann sums &lt;math>R_n&lt;/math> as &lt;math>n\\rightarrow\\infty&lt;/math>. &lt;br />\nYou may use the formula &lt;math>\\sum_{i=1}^{n}i^{2}=n(n+1)(2n+1)/6&lt;/math>. &lt;br />\n''No credit will be given for computing this integral using antidifferentiation, although you may use antidifferentiation to check your answer.''\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_08", 
+    "year": 2010
 }

@@ -1,14 +1,51 @@
 {
-    "term": "April", 
-    "question": "Question_A_21", 
-    "course": "MATH152", 
-    "statement": "Calculate the determinant of the matrix\n\n\\begin{align*}B = \\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n1 & 3 & 5 & 1\\\\\n3 & 5 & 6 & 2\\\\\n-2 & 2 & 3 & 1\\\\\n\\end{bmatrix}\\end{align*}", 
-    "year": 2013, 
-    "sols": [
-        "We will row reduce until we arrive at an upper triangular matrix, taking\ncare to keep track of changes to the determinant due to elementary row\noperations. First, let's use the first row as a\npivot\\begin{align*}\\displaystyle R2 \\to R2-R1,\\end{align*} $\\displaystyle R3 \\to R3-3R1$, and\n$\\displaystyle R4 \\to R4+2R1$. This doesn't change the determinant, and\nwe end up with\n\n\\begin{align*}\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & -1 & -3 & -1\\\\\n0 & 6 & 9 & 3\\\\\n\\end{bmatrix}\\end{align*}\n\nNow use the second row as a pivot\\begin{align*}\\displaystyle R3 \\to R3+R2\\end{align*} and\n$\\displaystyle R4 \\to R4-6R2$. This doesn't change the determinant, and\nwe end up with\n\n\\begin{align*}\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & 0 & -1 & -1\\\\\n0 & 0 & -3 & 3\\\\\n\\end{bmatrix}\\end{align*}\n\nNow use the third row as a pivot\\begin{align*}\\displaystyle R4 \\to R4-3R3.\\end{align*} This\ndoesn't change the determinant, and we end up with\n\n\\begin{align*}\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & 0 & -1 & -1\\\\\n0 & 0 & 0 & 6\\\\\n\\end{bmatrix}\\end{align*}\n\nSince this matrix is upper triangular, the determinant is the product of\nthe diagonal entries, $\\displaystyle -6$. The original matrix has the\nsame determinant since we only added multiples of one row to another,\nwhich does not affect the determinant. Thus,\n$\\displaystyle \\det B = -6$."
+    "answer_html": "<p>Thus, <span class=\"math\">\\(\\displaystyle \\det B = -6\\)</span>.</p>\n", 
+    "answer_latex": "Thus,\n$\\displaystyle \\det B = -6$.", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "QGT"
+    ], 
+    "hints_html": [
+        "<p>Instead of cofactor expansion, it might be easier to row reduce to an upper triangular matrix.</p>\n", 
+        "<p>Adding a multiple of one row to another row does not change the value of the determinant.</p>\n"
+    ], 
+    "hints_latex": [
         "Instead of cofactor expansion, it might be easier to row reduce to an\nupper triangular matrix.", 
         "Adding a multiple of one row to another row does not change the value of\nthe determinant."
-    ]
+    ], 
+    "hints_raw": [
+        "Instead of cofactor expansion, it might be easier to row reduce to an upper triangular matrix.\n", 
+        "Adding a multiple of one row to another row does not change the value of the determinant.\n"
+    ], 
+    "num_votes": 7, 
+    "question": "A 21", 
+    "rating": 87, 
+    "sols_html": [
+        "<p>We will row reduce until we arrive at an upper triangular matrix, taking care to keep track of changes to the determinant due to elementary row operations. First, let&#8217;s use the first row as a pivot</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle R2 \\to R2-R1,\\end{aligned}\\]</span></p>\n<p><span class=\"math\">\\(\\displaystyle R3 \\to R3-3R1\\)</span>, and <span class=\"math\">\\(\\displaystyle R4 \\to R4+2R1\\)</span>. This doesn&#8217;t change the determinant, and we end up with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; -1 &amp; -3 &amp; -1\\\\\n0 &amp; 6 &amp; 9 &amp; 3\\\\\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Now use the second row as a pivot</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle R3 \\to R3+R2\\end{aligned}\\]</span></p>\n<p>and <span class=\"math\">\\(\\displaystyle R4 \\to R4-6R2\\)</span>. This doesn&#8217;t change the determinant, and we end up with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; 0 &amp; -1 &amp; -1\\\\\n0 &amp; 0 &amp; -3 &amp; 3\\\\\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Now use the third row as a pivot</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle R4 \\to R4-3R3.\\end{aligned}\\]</span></p>\n<p>This doesn&#8217;t change the determinant, and we end up with</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; 0 &amp; -1 &amp; -1\\\\\n0 &amp; 0 &amp; 0 &amp; 6\\\\\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n<p>Since this matrix is upper triangular, the determinant is the product of the diagonal entries, <span class=\"math\">\\(\\displaystyle -6\\)</span>. The original matrix has the same determinant since we only added multiples of one row to another, which does not affect the determinant. Thus, <span class=\"math\">\\(\\displaystyle \\det B = -6\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "We will row reduce until we arrive at an upper triangular matrix, taking\ncare to keep track of changes to the determinant due to elementary row\noperations. First, let's use the first row as a\npivot\\begin{align*}\n\\displaystyle R2 \\to R2-R1,\n\\end{align*} $\\displaystyle R3 \\to R3-3R1$, and\n$\\displaystyle R4 \\to R4+2R1$. This doesn't change the determinant, and\nwe end up with\n\n\\begin{align*}\n\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & -1 & -3 & -1\\\\\n0 & 6 & 9 & 3\\\\\n\\end{bmatrix}\n\\end{align*}\n\nNow use the second row as a pivot\\begin{align*}\n\\displaystyle R3 \\to R3+R2\n\\end{align*} and\n$\\displaystyle R4 \\to R4-6R2$. This doesn't change the determinant, and\nwe end up with\n\n\\begin{align*}\n\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & 0 & -1 & -1\\\\\n0 & 0 & -3 & 3\\\\\n\\end{bmatrix}\n\\end{align*}\n\nNow use the third row as a pivot\\begin{align*}\n\\displaystyle R4 \\to R4-3R3.\n\\end{align*} This\ndoesn't change the determinant, and we end up with\n\n\\begin{align*}\n\\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n0 & 1 & 2 & 0\\\\\n0 & 0 & -1 & -1\\\\\n0 & 0 & 0 & 6\\\\\n\\end{bmatrix}\n\\end{align*}\n\nSince this matrix is upper triangular, the determinant is the product of\nthe diagonal entries, $\\displaystyle -6$. The original matrix has the\nsame determinant since we only added multiples of one row to another,\nwhich does not affect the determinant. Thus,\n$\\displaystyle \\det B = -6$."
+    ], 
+    "sols_raw": [
+        "We will row reduce until we arrive at an upper triangular matrix, taking care to keep track of changes to the determinant due to elementary row operations. First, let's use the first row as a pivot: &lt;math> \\displaystyle R2 \\to R2-R1 &lt;/math>, &lt;math> \\displaystyle R3 \\to R3-3R1 &lt;/math>, and &lt;math> \\displaystyle R4 \\to R4+2R1 &lt;/math>. This doesn't change the determinant, and we end up with\n\n:&lt;math>\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; -1 &amp; -3 &amp; -1\\\\\n0 &amp; 6 &amp; 9 &amp; 3\\\\\n\\end{bmatrix}\n&lt;/math>\n\nNow use the second row as a pivot: &lt;math> \\displaystyle R3 \\to R3+R2 &lt;/math> and &lt;math> \\displaystyle R4 \\to R4-6R2 &lt;/math>. This doesn't change the determinant, and we end up with\n\n:&lt;math>\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; 0 &amp; -1 &amp; -1\\\\\n0 &amp; 0 &amp; -3 &amp; 3\\\\\n\\end{bmatrix}\n&lt;/math>\n\nNow use the third row as a pivot: &lt;math> \\displaystyle R4 \\to R4-3R3 &lt;/math>. This doesn't change the determinant, and we end up with\n\n:&lt;math>\n\\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n0 &amp; 1 &amp; 2 &amp; 0\\\\\n0 &amp; 0 &amp; -1 &amp; -1\\\\\n0 &amp; 0 &amp; 0 &amp; 6\\\\\n\\end{bmatrix}\n&lt;/math>\n\nSince this matrix is upper triangular, the determinant is the product of the diagonal entries, &lt;math> \\displaystyle -6 &lt;/math>. The original matrix has the same determinant since we only added multiples of one row to another, which does not affect the determinant. Thus, &lt;math> \\displaystyle \\det B = -6 &lt;/math>.\n"
+    ], 
+    "solvers": [
+        "VincentChan"
+    ], 
+    "statement_html": "<p>Calculate the determinant of the matrix</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nB = \\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n1 &amp; 3 &amp; 5 &amp; 1\\\\\n3 &amp; 5 &amp; 6 &amp; 2\\\\\n-2 &amp; 2 &amp; 3 &amp; 1\\\\\n\\end{bmatrix}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Calculate the determinant of the matrix\n\n\\begin{align*}\nB = \\begin{bmatrix}\n1 & 2 & 3 & 1\\\\\n1 & 3 & 5 & 1\\\\\n3 & 5 & 6 & 2\\\\\n-2 & 2 & 3 & 1\\\\\n\\end{bmatrix}\n\\end{align*}", 
+    "statement_raw": "Calculate the determinant of the matrix \n\n:&lt;math>\nB = \\begin{bmatrix}\n1 &amp; 2 &amp; 3 &amp; 1\\\\\n1 &amp; 3 &amp; 5 &amp; 1\\\\\n3 &amp; 5 &amp; 6 &amp; 2\\\\\n-2 &amp; 2 &amp; 3 &amp; 1\\\\\n\\end{bmatrix}\n&lt;/math>\n", 
+    "term": "April", 
+    "topics": [
+        "Determinants"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2013/Question_A_21", 
+    "year": 2013
 }

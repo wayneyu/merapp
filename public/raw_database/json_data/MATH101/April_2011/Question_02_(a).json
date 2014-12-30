@@ -1,13 +1,50 @@
 {
-    "term": "April", 
-    "question": "Question_02_(a)", 
-    "course": "MATH101", 
-    "statement": "Find the total area of the finite plane region lying between the curves\n$y=x$ and $y = x^3$.", 
-    "year": 2011, 
-    "sols": [
-        "The curves $y=x$ and $y=x^3$ intersect at the points\n$(-1,-1), \\text{ } (0,0), \\text{ } (1,1).$ By symmetry, the area of the\nregion bounded by the curves between $x=-1$ and $x=0$ is equal to the\narea of the region bounded by the curves between $x=0$ and $x=1$. So the\ntotal area will be equal to two times the area of the region between\n$x=0$ and $x=1$.\n\nBetween $x=0$ and $x=1$, we have $x \\geq x^3$; that is, the curve $y=x$\nis above the curve $y=x^3$. So the area bounded by the curves and\nbetween $x=0$ and $x=1$ is\n\n$\\int_{0}^{1} (\\text{upper} - \\text{lower}) dx = \\int_{0}^{1} (x-x^3) dx$\n\n$= \\left. \\left( \\frac{x^2}{2} - \\frac{x^4}{4} \\right) \n\\right\\vert_{0}^{1}  = \\left( \\frac{1^2}{2} - \\frac{1^4}{4} \\right) - \\left( \\frac{0}{2} - \\frac{0}{4} \\right) = \\frac{1}{4}.$\n\nThe total area of the region is two times this:\n\n$A = 2\\cdot \\frac{1}{4} = \\frac{1}{2}.$"
+    "answer_html": "<p><span class=\"math\">\\(A = \\frac{1}{2}.\\)</span></p>\n", 
+    "answer_latex": "$A = \\frac{1}{2}.$", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler", 
+        "SimonRose"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Start by sketching the region.</p>\n"
+    ], 
+    "hints_latex": [
         "Start by sketching the region."
-    ]
+    ], 
+    "hints_raw": [
+        "Start by sketching the region.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "2 (a)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>The curves <span class=\"math\">\\(y=x\\)</span> and <span class=\"math\">\\(y=x^3\\)</span> intersect at the points <span class=\"math\">\\((-1,-1), \\text{ } (0,0), \\text{ } (1,1).\\)</span> By symmetry, the area of the region bounded by the curves between <span class=\"math\">\\(x=-1\\)</span> and <span class=\"math\">\\(x=0\\)</span> is equal to the area of the region bounded by the curves between <span class=\"math\">\\(x=0\\)</span> and <span class=\"math\">\\(x=1\\)</span>. So the total area will be equal to two times the area of the region between <span class=\"math\">\\(x=0\\)</span> and <span class=\"math\">\\(x=1\\)</span>.</p>\n<p>Between <span class=\"math\">\\(x=0\\)</span> and <span class=\"math\">\\(x=1\\)</span>, we have <span class=\"math\">\\(x \\geq x^3\\)</span>; that is, the curve <span class=\"math\">\\(y=x\\)</span> is above the curve <span class=\"math\">\\(y=x^3\\)</span>. So the area bounded by the curves and between <span class=\"math\">\\(x=0\\)</span> and <span class=\"math\">\\(x=1\\)</span> is</p>\n<p><span class=\"math\">\\(\\int_{0}^{1} (\\text{upper} - \\text{lower}) dx = \\int_{0}^{1} (x-x^3) dx\\)</span></p>\n<p><span class=\"math\">\\(= \\left.\\left( \\frac{x^2}{2} - \\frac{x^4}{4} \\right) \n\\right\\vert_{0}^{1}  = \\left( \\frac{1^2}{2} - \\frac{1^4}{4} \\right) - \\left( \\frac{0}{2} - \\frac{0}{4} \\right) = \\frac{1}{4}.\\)</span></p>\n<p>The total area of the region is two times this:</p>\n<p><span class=\"math\">\\(A = 2\\cdot \\frac{1}{4} = \\frac{1}{2}.\\)</span></p>\n"
+    ], 
+    "sols_latex": [
+        "The curves $y=x$ and $y=x^3$ intersect at the points\n$(-1,-1), \\text{ } (0,0), \\text{ } (1,1).$ By symmetry, the area of the\nregion bounded by the curves between $x=-1$ and $x=0$ is equal to the\narea of the region bounded by the curves between $x=0$ and $x=1$. So the\ntotal area will be equal to two times the area of the region between\n$x=0$ and $x=1$.\n\nBetween $x=0$ and $x=1$, we have $x \\geq x^3$; that is, the curve $y=x$\nis above the curve $y=x^3$. So the area bounded by the curves and\nbetween $x=0$ and $x=1$ is\n\n$\\int_{0}^{1} (\\text{upper} - \\text{lower}) dx = \\int_{0}^{1} (x-x^3) dx$\n\n$= \\left.\\left( \\frac{x^2}{2} - \\frac{x^4}{4} \\right) \n\\right\\vert_{0}^{1}  = \\left( \\frac{1^2}{2} - \\frac{1^4}{4} \\right) - \\left( \\frac{0}{2} - \\frac{0}{4} \\right) = \\frac{1}{4}.$\n\nThe total area of the region is two times this:\n\n$A = 2\\cdot \\frac{1}{4} = \\frac{1}{2}.$"
+    ], 
+    "sols_raw": [
+        "The curves &lt;math> y=x &lt;/math> and &lt;math> y=x^3 &lt;/math> intersect at the points &lt;math> (-1,-1), \\text{ } (0,0), \\text{ } (1,1). &lt;/math>  By symmetry, the area of the region bounded by the curves between &lt;math> x=-1 &lt;/math> and &lt;math> x=0 &lt;/math> is equal to the area of the region bounded by the curves between &lt;math> x=0 &lt;/math> and &lt;math> x=1 &lt;/math>.  So the total area will be equal to two times the area of the region between &lt;math> x=0 &lt;/math> and &lt;math> x=1 &lt;/math>.\n\nBetween &lt;math> x=0 &lt;/math> and &lt;math> x=1 &lt;/math>, we have &lt;math> x \\geq x^3 &lt;/math>; that is, the curve &lt;math> y=x &lt;/math> is above the curve &lt;math> y=x^3 &lt;/math>.  So the area bounded by the curves and between &lt;math> x=0 &lt;/math> and &lt;math> x=1 &lt;/math> is \n\n&lt;math>\n\\int_{0}^{1} (\\text{upper} - \\text{lower}) dx = \\int_{0}^{1} (x-x^3) dx &lt;/math>\n\n&lt;math> = \\left. \\left( \\frac{x^2}{2} - \\frac{x^4}{4} \\right) \n\\right\\vert_{0}^{1}  = \\left( \\frac{1^2}{2} - \\frac{1^4}{4} \\right) - \\left( \\frac{0}{2} - \\frac{0}{4} \\right) = \\frac{1}{4}.\n&lt;/math>\n\nThe total area of the region is two times this:\n\n&lt;math>\nA = 2\\cdot \\frac{1}{4} = \\frac{1}{2}.\n&lt;/math>\n"
+    ], 
+    "solvers": [
+        "Hambrook"
+    ], 
+    "statement_html": "<p>Find the total area of the finite plane region lying between the curves <span class=\"math\">\\(y=x\\)</span> and <span class=\"math\">\\(y = x^3\\)</span>.</p>\n", 
+    "statement_latex": "Find the total area of the finite plane region lying between the curves\n$y=x$ and $y = x^3$.", 
+    "statement_raw": "Find the total area of the finite plane region lying between the curves &lt;math>y=x&lt;/math> and &lt;math>y = x^3 &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Area_between_two_curves"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2011/Question_02_(a)", 
+    "year": 2011
 }

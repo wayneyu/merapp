@@ -1,13 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_01_(h)", 
-    "course": "MATH104", 
-    "statement": "You bought a rare stamp collection for 10 million dollars. The\nauctioneer who sold it to you estimated its value would increase at 12\\%\nper year, compounded continuously. If you want to wait until the\ncollection has tripled in value before you sell, how many years will you\nbe waiting?", 
-    "year": 2011, 
-    "sols": [
-        "Let the value of the stamp collection at time \\emph{t} be\n\\emph{v}(\\emph{t}), and the time at which the collection was purchased\nbe time \\emph{t} = 0. Then\n\n\\begin{align*}\\displaystyle v(0) = 10\\end{align*}\n\nmillion dollars, and\n\n\\begin{align*}\\displaystyle v(t) = 10 e^{0.12t}.\\end{align*}\n\nIf we wait until the collection has tripled in value, then we would be\nwaiting until $v(t) = 30$ million dollars.\n\nSo, we solve the following equation for \\emph{t}:\n\n\\begin{align*} \n30 &= 10 e^{0.12t} \\\\\n3 &= e^{0.12t} \\\\\n\\ln(3) &= 0.12t \\\\\nt &= \\frac{\\ln(3)}{0.12}\\end{align*}\n\nTherefore, we'll be waiting\n\n\\begin{align*}t = \\frac{\\ln(3)}{0.12}\\end{align*}\n\nyears.\n\n\\textbf{Note:} This is a little more than 9 years. Also, using the rules\nof logarithms, we could also express the solution as\n\n\\begin{align*}\\displaystyle t = \\ln(3^{25/3})\\end{align*}\n\nWhether this simplification would be necessary is up to your instructor."
+    "answer_html": "<p><span class=\"math\">\\(\\displaystyle t=\\ln(3^{25/3})\\)</span> Whether this simplification would be necessary is up to your instructor.</p>\n", 
+    "answer_latex": " $\\displaystyle t=\\ln(3^{25/3})$ Whether this simplification would be necessary is up to your instructor.", 
+    "contributors": [
+        "WilliamThompson", 
+        "DavidKohler", 
+        "Konradbe", 
+        "ChristinaKoch"
     ], 
-    "hints": [
+    "course": "MATH104", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Which formula would you use to calculate continuously compounded interest? Once you have that formula, which variable are you solving for?</p>\n"
+    ], 
+    "hints_latex": [
         "Which formula would you use to calculate continuously compounded\ninterest? Once you have that formula, which variable are you solving\nfor?"
-    ]
+    ], 
+    "hints_raw": [
+        "Which formula would you use to calculate continuously compounded interest?  Once you have that formula, which variable are you solving for?\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (h)", 
+    "rating": 99, 
+    "sols_html": [
+        "<p>Let the value of the stamp collection at time <em>t</em> be <em>v</em>(<em>t</em>), and the time at which the collection was purchased be time <em>t</em> = 0. Then</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle v(0) = 10\\end{aligned}\\]</span></p>\n<p>million dollars, and</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle v(t) = 10 e^{0.12t}.\\end{aligned}\\]</span></p>\n<p>If we wait until the collection has tripled in value, then we would be waiting until <span class=\"math\">\\(v(t) = 30\\)</span> million dollars.</p>\n<p>So, we solve the following equation for <em>t</em>:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n30 &amp;= 10 e^{0.12t} \\\\\n3 &amp;= e^{0.12t} \\\\\n\\ln(3) &amp;= 0.12t \\\\\nt &amp;= \\frac{\\ln(3)}{0.12}\\end{aligned}\\]</span></p>\n<p>Therefore, we&#8217;ll be waiting</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nt = \\frac{\\ln(3)}{0.12}\\end{aligned}\\]</span></p>\n<p>years.</p>\n<p><strong>Note:</strong> This is a little more than 9 years. Also, using the rules of logarithms, we could also express the solution as</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle t = \\ln(3^{25/3})\\end{aligned}\\]</span></p>\n<p>Whether this simplification would be necessary is up to your instructor.</p>\n"
+    ], 
+    "sols_latex": [
+        "Let the value of the stamp collection at time \\emph{t} be\n\\emph{v}(\\emph{t}), and the time at which the collection was purchased\nbe time \\emph{t} = 0. Then\n\n\\begin{align*}\n\\displaystyle v(0) = 10\n\\end{align*}\n\nmillion dollars, and\n\n\\begin{align*}\n\\displaystyle v(t) = 10 e^{0.12t}.\n\\end{align*}\n\nIf we wait until the collection has tripled in value, then we would be\nwaiting until $v(t) = 30$ million dollars.\n\nSo, we solve the following equation for \\emph{t}:\n\n\\begin{align*}\n30 &= 10 e^{0.12t} \\\\\n3 &= e^{0.12t} \\\\\n\\ln(3) &= 0.12t \\\\\nt &= \\frac{\\ln(3)}{0.12}\n\\end{align*}\n\nTherefore, we'll be waiting\n\n\\begin{align*}\nt = \\frac{\\ln(3)}{0.12}\n\\end{align*}\n\nyears.\n\n\\textbf{Note:} This is a little more than 9 years. Also, using the rules\nof logarithms, we could also express the solution as\n\n\\begin{align*}\n\\displaystyle t = \\ln(3^{25/3})\n\\end{align*}\n\nWhether this simplification would be necessary is up to your instructor."
+    ], 
+    "sols_raw": [
+        "Let the value of the stamp collection at time ''t'' be ''v''(''t''), and the time at which the collection was purchased be time ''t'' = 0. Then \n\n:&lt;math>\\displaystyle v(0) = 10&lt;/math>\n\nmillion dollars, and \n\n:&lt;math>\\displaystyle v(t) = 10 e^{0.12t}.&lt;/math>\n\nIf we wait until the collection has tripled in value, then we would be waiting until &lt;math> v(t) = 30&lt;/math> million dollars.\n\nSo, we solve the following equation for ''t'':\n\n:&lt;math>\\begin{align} \n30 &amp;= 10 e^{0.12t} \\\\\n3 &amp;= e^{0.12t} \\\\\n\\ln(3) &amp;= 0.12t \\\\\nt &amp; = \\frac{\\ln(3)}{0.12}\n\\end{align}\n&lt;/math>\n\nTherefore, we'll be waiting\n\n:&lt;math>\nt = \\frac{\\ln(3)}{0.12}\n&lt;/math>\n\nyears. \n\n'''Note:''' This is a little more than 9 years. Also, using the rules of logarithms, we could also express the solution as\n\n:&lt;math> \\displaystyle t = \\ln(3^{25/3})\n&lt;/math>\n\nWhether this simplification would be necessary is up to your instructor.\n"
+    ], 
+    "solvers": [
+        "GregMayer"
+    ], 
+    "statement_html": "<p>You bought a rare stamp collection for 10 million dollars. The auctioneer who sold it to you estimated its value would increase at 12% per year, compounded continuously. If you want to wait until the collection has tripled in value before you sell, how many years will you be waiting?</p>\n", 
+    "statement_latex": "You bought a rare stamp collection for 10 million dollars. The\nauctioneer who sold it to you estimated its value would increase at 12\\%\nper year, compounded continuously. If you want to wait until the\ncollection has tripled in value before you sell, how many years will you\nbe waiting?", 
+    "statement_raw": "You bought a rare stamp collection for 10 million dollars. The auctioneer who sold it to you estimated its value would increase at 12% per year, compounded continuously. If you want to wait until the collection has tripled in value before you sell, how many years will you be waiting?\n", 
+    "term": "December", 
+    "topics": [
+        "Exponential_growth_and_decay"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2011/Question_01_(h)", 
+    "year": 2011
 }

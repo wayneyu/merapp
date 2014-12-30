@@ -1,13 +1,49 @@
 {
-    "term": "December", 
-    "question": "Question_02_(d)", 
+    "answer_html": "<p>Thus 7 divides <span class=\"math\">\\(\\displaystyle 2^{39}-1\\)</span>.</p>\n", 
+    "answer_latex": "Thus 7 divides $\\displaystyle 2^{39}-1$.", 
+    "contributors": [
+        "VincentChan", 
+        "Konradbe"
+    ], 
     "course": "MATH312", 
-    "statement": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe number $\\displaystyle 2^{39}-1$ is divisible by 7.", 
-    "year": 2012, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Use Fermat&#8217;s Little Theorem.</p>\n"
+    ], 
+    "hints_latex": [
+        "Use Fermat's Little Theorem."
+    ], 
+    "hints_raw": [
+        "Use Fermat's Little Theorem.\n"
+    ], 
+    "num_votes": 0, 
+    "question": "2 (d)", 
+    "rating": null, 
+    "sols_html": [
+        "<p>The answer is <strong>true</strong></p>\n<p>From Fermat&#8217;s Little Theorem, we have</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{6} \\equiv 1\\mod{7}\\)</span></p>\n<p>and hence</p>\n<p><span class=\"math\">\\(\\displaystyle 2^{39} \\equiv (2^{6})^{6} \\cdot 2^{3} \\equiv (1)^{6} \\cdot 8 \\equiv 8 \\equiv 1 \\mod{7}\\)</span></p>\n<p>Thus 7 divides <span class=\"math\">\\(\\displaystyle 2^{39}-1\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
         "The answer is \\textbf{true}\n\nFrom Fermat's Little Theorem, we have\n\n$\\displaystyle 2^{6} \\equiv 1\\mod{7}$\n\nand hence\n\n$\\displaystyle 2^{39} \\equiv (2^{6})^{6} \\cdot 2^{3} \\equiv (1)^{6} \\cdot 8 \\equiv 8 \\equiv 1 \\mod{7}$\n\nThus 7 divides $\\displaystyle 2^{39}-1$."
     ], 
-    "hints": [
-        "Use Fermat's Little Theorem."
-    ]
+    "sols_raw": [
+        "The answer is '''true'''\n\nFrom Fermat's Little Theorem, we have\n\n&lt;math> \\displaystyle 2^{6} \\equiv 1\\mod{7}&lt;/math>\n\nand hence\n\n&lt;math> \\displaystyle 2^{39} \\equiv (2^{6})^{6} \\cdot 2^{3} \\equiv (1)^{6} \\cdot 8 \\equiv 8 \\equiv 1 \\mod{7}&lt;/math>\n\nThus 7 divides &lt;math> \\displaystyle 2^{39}-1&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>State whether the following are true or false with full justification. Each question carries 4 marks.</strong></p>\n<p>The number <span class=\"math\">\\(\\displaystyle 2^{39}-1\\)</span> is divisible by 7.</p>\n", 
+    "statement_latex": "\\textbf{State whether the following are true or false with full\njustification. Each question carries 4 marks.}\n\nThe number $\\displaystyle 2^{39}-1$ is divisible by 7.", 
+    "statement_raw": "'''State whether the following are true or false with full justification. Each question carries 4 marks.'''\n\nThe number &lt;math> \\displaystyle 2^{39}-1 &lt;/math> is divisible by 7.\n", 
+    "term": "December", 
+    "topics": [
+        "Divisibility", 
+        "Fermat%27s_little_theorem"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2012/Question_02_(d)", 
+    "year": 2012
 }

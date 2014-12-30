@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_06_(b)", 
-    "course": "MATH152", 
-    "statement": "This question requires little or no calculations.\n\nIf $A=C^{-1}BC$, where \\emph{C} is an invertible matrix, and det\n\\emph{B}=12, det \\emph{C}=-3. Calculate det \\emph{A}.", 
-    "year": 2012, 
-    "sols": [
-        "By the equation $A = C^{-1}BC$, we can see that $A,B$ are similar\nmatrices.\n\nOne of the properties of similar matrices is that their determinants are\nequal. Hence,\n\n\\begin{align*}{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\\end{align*}"
+    "answer_html": "<p><span class=\"math\">\\({\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\\)</span></p>\n", 
+    "answer_latex": " ${\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}$ ", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
     ], 
-    "hints": [
+    "course": "MATH152", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>If<span class=\"math\">\\(A=C^{-1}BC\\)</span>, then <span class=\"math\">\\(A\\)</span>, <span class=\"math\">\\(B\\)</span> are similar matrices.</p>\n"
+    ], 
+    "hints_latex": [
         "If$A=C^{-1}BC$, then $A$, $B$ are similar matrices."
-    ]
+    ], 
+    "hints_raw": [
+        "If&lt;math>A=C^{-1}BC&lt;/math>, then &lt;math>A&lt;/math>, &lt;math>B&lt;/math> are &lt;b>similar&lt;/b> matrices.\n"
+    ], 
+    "num_votes": 4, 
+    "question": "6 (b)", 
+    "rating": 58, 
+    "sols_html": [
+        "<p>By the equation <span class=\"math\">\\(A = C^{-1}BC\\)</span>, we can see that <span class=\"math\">\\(A,B\\)</span> are similar matrices.</p>\n<p>One of the properties of similar matrices is that their determinants are equal. Hence,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\\end{aligned}\\]</span></p>\n"
+    ], 
+    "sols_latex": [
+        "By the equation $A = C^{-1}BC$, we can see that $A,B$ are similar\nmatrices.\n\nOne of the properties of similar matrices is that their determinants are\nequal. Hence,\n\n\\begin{align*}\n{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) =12}\n\\end{align*}"
+    ], 
+    "sols_raw": [
+        "By the equation &lt;math>A = C^{-1}BC&lt;/math>, we can see that &lt;math>A,B&lt;/math> are &lt;b>similar&lt;/b> matrices.\n\nOne of the properties of similar matrices is that their determinants are equal. &lt;font style=\"color:blue;\">Hence,\n:&lt;math>\n{\\color{blue}\\operatorname{Det}(A) = \\operatorname{Det}(B) = 12}\n&lt;/math>&lt;/font>\n"
+    ], 
+    "solvers": [
+        "WilliamThompson"
+    ], 
+    "statement_html": "<p>This question requires little or no calculations.</p>\n<p>If <span class=\"math\">\\(A=C^{-1}BC\\)</span>, where <em>C</em> is an invertible matrix, and det <em>B</em>=12, det <em>C</em>=-3. Calculate det <em>A</em>.</p>\n", 
+    "statement_latex": "This question requires little or no calculations.\n\nIf $A=C^{-1}BC$, where \\emph{C} is an invertible matrix, and det\n\\emph{B}=12, det \\emph{C}=-3. Calculate det \\emph{A}.", 
+    "statement_raw": "This question requires little or no calculations.\n\nIf &lt;math>A=C^{-1}BC&lt;/math>, where ''C'' is an invertible matrix, and det ''B''=12, det ''C''=-3.  Calculate det ''A''.\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH152/April_2012/Question_06_(b)", 
+    "year": 2012
 }

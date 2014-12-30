@@ -1,13 +1,48 @@
 {
-    "term": "December", 
-    "question": "Question_05_(a)", 
-    "course": "MATH110", 
-    "statement": "Two curves are said to \\emph{intersect orthogonally at x =a} if\n(\\emph{i}) they intersect at \\emph{x = a} and (\\emph{ii}) their tangent\nlines are perpendicular at \\emph{x = a}.\n\nVerify that the curves $y = \\frac16 \\sqrt{2x^2+7}$ and\n$y = -2x^2 + 7x -\\frac{13}{6}$ intersect at $x = 3$.", 
-    "year": 2010, 
-    "sols": [
-        "The two curves will intersect at $x = 3$ if their y-values are the same\nat $x = 3$. To find the y-values, we just plug $x = 3$ into each curve.\n\nThe first curve gives:\n\n\\begin{align*}\ny &= \\frac16 \\sqrt{2(3)^2 + 7} \\\\\n&= \\frac16 \\sqrt{25} \\\\\n&= \\frac56  \\end{align*}\n\nThe second curve gives:\n\n\\begin{align*}\ny &= -2(3)^2 + 7(3) -\\frac{13}{6}\\\\\n&= -18 + 21 -\\frac{13}{6}\\\\\n&= 3 -\\frac{13}{6}\\\\\n&= \\frac{18}{6} -\\frac{13}{6} \\\\\n&= \\frac56 \\end{align*}\n\nThese two y-values are equal, so the curves do intersect at $x = 3$."
+    "answer_html": "<p>These two y-values are equal, so the curves do intersect at <span class=\"math\">\\(x = 3\\)</span>.</p>\n", 
+    "answer_latex": "These two y-values are equal, so the curves do intersect at $x = 3$.", 
+    "contributors": [
+        "WilliamThompson", 
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH110", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Two curves intersect at an x-value if their y-values are the same at that point.</p>\n"
+    ], 
+    "hints_latex": [
         "Two curves intersect at an x-value if their y-values are the same at\nthat point."
-    ]
+    ], 
+    "hints_raw": [
+        "Two curves intersect at an x-value if their y-values are the same at that point.\n"
+    ], 
+    "num_votes": 2, 
+    "question": "5 (a)", 
+    "rating": 39, 
+    "sols_html": [
+        "<p>The two curves will intersect at <span class=\"math\">\\(x = 3\\)</span> if their y-values are the same at <span class=\"math\">\\(x = 3\\)</span>. To find the y-values, we just plug <span class=\"math\">\\(x = 3\\)</span> into each curve.</p>\n<p>The first curve gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= \\frac16 \\sqrt{2(3)^2 + 7} \\\\\n&amp;= \\frac16 \\sqrt{25} \\\\\n&amp;= \\frac56  \\end{aligned}\\]</span></p>\n<p>The second curve gives:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny &amp;= -2(3)^2 + 7(3) -\\frac{13}{6}\\\\\n&amp;= -18 + 21 -\\frac{13}{6}\\\\\n&amp;= 3 -\\frac{13}{6}\\\\\n&amp;= \\frac{18}{6} -\\frac{13}{6} \\\\\n&amp;= \\frac56 \\end{aligned}\\]</span></p>\n<p>These two y-values are equal, so the curves do intersect at <span class=\"math\">\\(x = 3\\)</span>.</p>\n"
+    ], 
+    "sols_latex": [
+        "The two curves will intersect at $x = 3$ if their y-values are the same\nat $x = 3$. To find the y-values, we just plug $x = 3$ into each curve.\n\nThe first curve gives:\n\n\\begin{align*}\ny &= \\frac16 \\sqrt{2(3)^2 + 7} \\\\\n&= \\frac16 \\sqrt{25} \\\\\n&= \\frac56  \n\\end{align*}\n\nThe second curve gives:\n\n\\begin{align*}\ny &= -2(3)^2 + 7(3) -\\frac{13}{6}\\\\\n&= -18 + 21 -\\frac{13}{6}\\\\\n&= 3 -\\frac{13}{6}\\\\\n&= \\frac{18}{6} -\\frac{13}{6} \\\\\n&= \\frac56 \n\\end{align*}\n\nThese two y-values are equal, so the curves do intersect at $x = 3$."
+    ], 
+    "sols_raw": [
+        "The two curves will intersect at &lt;math>x = 3&lt;/math> if their y-values are the same at &lt;math>x = 3&lt;/math>.  To find the y-values, we just plug &lt;math>x = 3&lt;/math> into each curve.  \n\nThe first curve gives: \n\n&lt;math>\\begin{align}\ny &amp;= \\frac16 \\sqrt{2(3)^2 + 7} \\\\\n&amp;= \\frac16 \\sqrt{25} \\\\\n&amp;= \\frac56  \\end{align} &lt;/math>\n\nThe second curve gives: \n\n&lt;math>\\begin{align}\ny &amp;= -2(3)^2 + 7(3) -\\frac{13}{6}\\\\\n&amp;= -18 + 21 -\\frac{13}{6}\\\\\n&amp;= 3 -\\frac{13}{6}\\\\\n&amp;= \\frac{18}{6} -\\frac{13}{6} \\\\\n&amp;= \\frac56 \\end{align} &lt;/math>\n\nThese two y-values are equal, so the curves do intersect at &lt;math>x = 3&lt;/math>.\n"
+    ], 
+    "solvers": [
+        "ChristinaKoch"
+    ], 
+    "statement_html": "<p>Two curves are said to <em>intersect orthogonally at x =a</em> if (<em>i</em>) they intersect at <em>x = a</em> and (<em>ii</em>) their tangent lines are perpendicular at <em>x = a</em>.</p>\n<p>Verify that the curves <span class=\"math\">\\(y = \\frac16 \\sqrt{2x^2+7}\\)</span> and <span class=\"math\">\\(y = -2x^2 + 7x -\\frac{13}{6}\\)</span> intersect at <span class=\"math\">\\(x = 3\\)</span>.</p>\n", 
+    "statement_latex": "Two curves are said to \\emph{intersect orthogonally at x =a} if\n(\\emph{i}) they intersect at \\emph{x = a} and (\\emph{ii}) their tangent\nlines are perpendicular at \\emph{x = a}.\n\nVerify that the curves $y = \\frac16 \\sqrt{2x^2+7}$ and\n$y = -2x^2 + 7x -\\frac{13}{6}$ intersect at $x = 3$.", 
+    "statement_raw": "Two curves are said to ''intersect orthogonally at x =a'' if (''i'') they intersect at ''x = a'' and (''ii'') their tangent lines are perpendicular at ''x = a''.  \n\nVerify that the curves &lt;math> y = \\frac16 \\sqrt{2x^2+7}&lt;/math> and &lt;math>y = -2x^2 + 7x -\\frac{13}{6}&lt;/math> intersect at &lt;math>x = 3&lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Tangent_line"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/December_2010/Question_05_(a)", 
+    "year": 2010
 }

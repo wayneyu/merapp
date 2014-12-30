@@ -1,14 +1,50 @@
 {
-    "term": "December", 
-    "question": "Question_02_(b)", 
-    "course": "MATH100", 
-    "statement": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nFind the slope of the tangent line to the curve\n$\\displaystyle y + x\\cos y = \\cos x$ at the point $(0,1)$.", 
-    "year": 2012, 
-    "sols": [
-        "Implicitly differentiating gives\n\n\\begin{align*}\ny' + \\cos y + x\\tfrac{d}{dx}(\\cos y) &= -\\sin x \\\\\ny' + \\cos y + x(-\\sin y)(y')&= -\\sin x\\end{align*}\n\nPlugging in $(x,y) = (0,1)$ gives\n\n\\begin{align*}\ny' + \\cos(1) + 0(-\\sin(1))(y')&= -\\sin (0) \\\\\ny' + \\cos(1) &= 0\\\\\ny' &= - \\cos(1)\\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(y&#39;=- \\cos(1)\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $y'=- \\cos(1)$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Recall the relationship between slopes of tangent lines and derivatives.</p>\n", 
+        "<p>Implicitly differentiate with respect to <em>x</em> and then plug in <span class=\"math\">\\((0,1)\\)</span>. Solve for <span class=\"math\">\\(y&#39;\\)</span> to get the slope since the derivative at a point is equal to the slope of the tangent line to the curve at that point.</p>\n"
+    ], 
+    "hints_latex": [
         "Recall the relationship between slopes of tangent lines and derivatives.", 
         "Implicitly differentiate with respect to \\emph{x} and then plug in\n$(0,1)$. Solve for $y'$ to get the slope since the derivative at a point\nis equal to the slope of the tangent line to the curve at that point."
-    ]
+    ], 
+    "hints_raw": [
+        "Recall the relationship between slopes of tangent lines and derivatives.\n", 
+        "Implicitly differentiate with respect to ''x'' and then plug in &lt;math> (0,1)&lt;/math>. Solve for &lt;math> y'&lt;/math> to get the slope since the derivative at a point is equal to the slope of the tangent line to the curve at that point.\n"
+    ], 
+    "num_votes": 11, 
+    "question": "2 (b)", 
+    "rating": 91, 
+    "sols_html": [
+        "<p>Implicitly differentiating gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39; + \\cos y + x\\tfrac{d}{dx}(\\cos y) &amp;= -\\sin x \\\\\ny&#39; + \\cos y + x(-\\sin y)(y&#39;)&amp;= -\\sin x\\end{aligned}\\]</span></p>\n<p>Plugging in <span class=\"math\">\\((x,y) = (0,1)\\)</span> gives</p>\n<p><span class=\"math\">\\[\\begin{aligned}\ny&#39; + \\cos(1) + 0(-\\sin(1))(y&#39;)&amp;= -\\sin (0) \\\\\ny&#39; + \\cos(1) &amp;= 0\\\\\ny&#39; &amp;= - \\cos(1)\\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Implicitly differentiating gives\n\n\\begin{align*}\ny' + \\cos y + x\\tfrac{d}{dx}(\\cos y) &= -\\sin x \\\\\ny' + \\cos y + x(-\\sin y)(y')&= -\\sin x\n\\end{align*}\n\nPlugging in $(x,y) = (0,1)$ gives\n\n\\begin{align*}\ny' + \\cos(1) + 0(-\\sin(1))(y')&= -\\sin (0) \\\\\ny' + \\cos(1) &= 0\\\\\ny' &= - \\cos(1)\n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Implicitly differentiating gives\n\n&lt;math> \n\\begin{align}\ny' + \\cos y + x\\tfrac{d}{dx}(\\cos y) &amp;= -\\sin x \\\\\ny' + \\cos y + x(-\\sin y)(y')&amp;= -\\sin x\n\\end{align}\n&lt;/math>\n\nPlugging in &lt;math> (x,y) = (0,1)&lt;/math> gives\n\n&lt;math> \n\\begin{align}\ny' + \\cos(1) + 0(-\\sin(1))(y')&amp;= -\\sin (0) \\\\\ny' + \\cos(1) &amp;= 0\\\\\ny' &amp;= - \\cos(1)\n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p><strong>Short-Answer Questions</strong>. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. <strong>Simplify your answers as much as possible, and show your work</strong>. Each question is worth 3 marks, but not all questions are of equal difficulty.</p>\n<p>Find the slope of the tangent line to the curve <span class=\"math\">\\(\\displaystyle y + x\\cos y = \\cos x\\)</span> at the point <span class=\"math\">\\((0,1)\\)</span>.</p>\n", 
+    "statement_latex": "\\textbf{Short-Answer Questions}. Questions 1-4 are short-answer\nquestions. Put your answers in the boxes provided. \\textbf{Simplify your\nanswers as much as possible, and show your work}. Each question is worth\n3 marks, but not all questions are of equal difficulty.\n\nFind the slope of the tangent line to the curve\n$\\displaystyle y + x\\cos y = \\cos x$ at the point $(0,1)$.", 
+    "statement_raw": "'''Short-Answer Questions'''. Questions 1-4 are short-answer questions. Put your answers in the boxes provided. '''Simplify your answers as much as possible, and show your work'''. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\n\nFind the slope of the tangent line to the curve &lt;math>\\displaystyle  y + x\\cos y = \\cos x &lt;/math> at the point &lt;math> (0,1) &lt;/math>.\n", 
+    "term": "December", 
+    "topics": [
+        "Implicit_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_02_(b)", 
+    "year": 2012
 }

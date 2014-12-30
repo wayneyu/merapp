@@ -1,15 +1,55 @@
 {
-    "term": "December", 
-    "question": "Question_01_(h)", 
-    "course": "MATH100", 
-    "statement": "Find $f'({x})$, if\n\n\\begin{align*}\\displaystyle\nf(x)=(\\tan{x})^{\\cos{x}}\\end{align*}", 
-    "year": 2010, 
-    "sols": [
-        "To differentiate this, we should use logarithmic differentiation. First,\nwe rewrite the function:\n\n\\begin{align*}\\displaystyle\n\\ln(f(x)) = \\ln{((\\tan{x})^{\\cos{x}})} = \\cos(x)\\ln{(\\tan{x})}\\end{align*} And\nthen use implicit differentiation\n\n\\begin{align*}\n(\\ln(f(x)))' &= (\\cos(x)\\ln{(\\tan(x))})'\\\\\n\\frac{1}{f(x)}f'(x) &= \\cos(x)(\\ln{(\\tan(x))})'-\\sin(x)\\ln{(\\tan(x))}\\\\\n&=\\cos(x)\\frac{\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\end{align*} (Remember that the derivative of $\\tan(x)$ is\n$\\sec^2(x)$). Now, simply solve for $f'(x)$ to obtain the answer:\n\n\\begin{align*}\nf'(x) &= f(x)\\left(\\frac{\\cos(x)\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{\\sec(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{1}{\\sin(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\\end{align*} (Note that $\\cos(x)\\sec^2(x) = \\sec(x)$.)"
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(x)=(\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\\)</span> (Note that <span class=\"math\">\\(\\cos(x)\\sec^2(x) = \\sec(x)\\)</span>.)</p>\n", 
+    "answer_latex": " $f'(x)=(\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)$  (Note that $\\cos(x)\\sec^2(x) = \\sec(x)$.)", 
+    "contributors": [
+        "Konradbe", 
+        "CarmenBruni", 
+        "DavidKohler"
     ], 
-    "hints": [
+    "course": "MATH100", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>You certainly CANNOT use the power rule (it only works if the exponent is a number). So what else can you do?</p>\n", 
+        "<p>Logarithms have awesome properties with respect to exponents.</p>\n", 
+        "<p>For instance,</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\log(a^n) = n \\log(a)\\end{aligned}\\]</span></p>\n"
+    ], 
+    "hints_latex": [
         "You certainly CANNOT use the power rule (it only works if the exponent\nis a number). So what else can you do?", 
         "Logarithms have awesome properties with respect to exponents.", 
-        "For instance,\n\n\\begin{align*}\\displaystyle\n\\log(a^n) = n \\log(a)\\end{align*}"
-    ]
+        "For instance,\n\n\\begin{align*}\n\\displaystyle\n\\log(a^n) = n \\log(a)\n\\end{align*}"
+    ], 
+    "hints_raw": [
+        "You certainly CANNOT use the power rule (it only works if the exponent is a number). So what else can you do?\n", 
+        "Logarithms have awesome properties with respect to exponents.\n", 
+        "For instance,\n:&lt;math>\\displaystyle\n\\log(a^n) = n \\log(a)\n&lt;/math>\n"
+    ], 
+    "num_votes": 5, 
+    "question": "1 (h)", 
+    "rating": 80, 
+    "sols_html": [
+        "<p>To differentiate this, we should use logarithmic differentiation. First, we rewrite the function:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n\\ln(f(x)) = \\ln{((\\tan{x})^{\\cos{x}})} = \\cos(x)\\ln{(\\tan{x})}\\end{aligned}\\]</span></p>\n<p>And then use implicit differentiation</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n(\\ln(f(x)))&#39; &amp;= (\\cos(x)\\ln{(\\tan(x))})&#39;\\\\\n\\frac{1}{f(x)}f&#39;(x) &amp;= \\cos(x)(\\ln{(\\tan(x))})&#39;-\\sin(x)\\ln{(\\tan(x))}\\\\\n&amp;=\\cos(x)\\frac{\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\end{aligned}\\]</span></p>\n<p>(Remember that the derivative of <span class=\"math\">\\(\\tan(x)\\)</span> is <span class=\"math\">\\(\\sec^2(x)\\)</span>). Now, simply solve for <span class=\"math\">\\(f&#39;(x)\\)</span> to obtain the answer:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= f(x)\\left(\\frac{\\cos(x)\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\frac{\\sec(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\frac{1}{\\sin(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\\end{aligned}\\]</span></p>\n<p>(Note that <span class=\"math\">\\(\\cos(x)\\sec^2(x) = \\sec(x)\\)</span>.)</p>\n"
+    ], 
+    "sols_latex": [
+        "To differentiate this, we should use logarithmic differentiation. First,\nwe rewrite the function:\n\n\\begin{align*}\n\\displaystyle\n\\ln(f(x)) = \\ln{((\\tan{x})^{\\cos{x}})} = \\cos(x)\\ln{(\\tan{x})}\n\\end{align*} And\nthen use implicit differentiation\n\n\\begin{align*}\n(\\ln(f(x)))' &= (\\cos(x)\\ln{(\\tan(x))})'\\\\\n\\frac{1}{f(x)}f'(x) &= \\cos(x)(\\ln{(\\tan(x))})'-\\sin(x)\\ln{(\\tan(x))}\\\\\n&=\\cos(x)\\frac{\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\n\\end{align*} (Remember that the derivative of $\\tan(x)$ is\n$\\sec^2(x)$). Now, simply solve for $f'(x)$ to obtain the answer:\n\n\\begin{align*}\nf'(x) &= f(x)\\left(\\frac{\\cos(x)\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{\\sec(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\frac{1}{\\sin(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&= (\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\n\\end{align*} (Note that $\\cos(x)\\sec^2(x) = \\sec(x)$.)"
+    ], 
+    "sols_raw": [
+        "To differentiate this, we should use logarithmic differentiation. First, we rewrite the function:\n:&lt;math>\\displaystyle\n\\ln(f(x)) = \\ln{((\\tan{x})^{\\cos{x}})} = \\cos(x)\\ln{(\\tan{x})}\n&lt;/math>\nAnd then use implicit differentiation\n:&lt;math>\\displaystyle\n\\begin{align}\n(\\ln(f(x)))' &amp;= (\\cos(x)\\ln{(\\tan(x))})'\\\\\n\\frac{1}{f(x)}f'(x) &amp;= \\cos(x)(\\ln{(\\tan(x))})'-\\sin(x)\\ln{(\\tan(x))}\\\\\n&amp;=\\cos(x)\\frac{\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\n\\end{align}&lt;/math>\n(Remember that the derivative of &lt;math>\\tan(x)&lt;/math> is &lt;math>\\sec^2(x)&lt;/math>). Now, simply solve for &amp;fnof;'(''x'') to obtain the answer:\n:&lt;math>\\begin{align}\nf'(x) &amp;= f(x)\\left(\\frac{\\cos(x)\\sec^2(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\frac{\\sec(x)}{\\tan(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\frac{1}{\\sin(x)}-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n&amp;= (\\tan(x))^{\\cos(x)}\\left(\\csc(x)-\\sin(x)\\ln{(\\tan(x))}\\right)\\\\\n\\end{align}&lt;/math>\n(Note that &lt;math>\\cos(x)\\sec^2(x) = \\sec(x) &lt;/math>.)\n"
+    ], 
+    "solvers": [
+        "Alfred"
+    ], 
+    "statement_html": "<p>Find <span class=\"math\">\\(f&#39;({x})\\)</span>, if</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\nf(x)=(\\tan{x})^{\\cos{x}}\\end{aligned}\\]</span></p>\n", 
+    "statement_latex": "Find $f'({x})$, if\n\n\\begin{align*}\n\\displaystyle\nf(x)=(\\tan{x})^{\\cos{x}}\n\\end{align*}", 
+    "statement_raw": "{{Math Exam Resources/Courses/MATH100/December 2010/Question 1/Statement/Header}}\n\nFind &amp;fnof;\u2019(''x''), if\n:&lt;math>\\displaystyle\nf(x)=(\\tan{x})^{\\cos{x}}\n&lt;/math>\n", 
+    "term": "December", 
+    "topics": [
+        "Logarithmic_differentiation"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(h)", 
+    "year": 2010
 }

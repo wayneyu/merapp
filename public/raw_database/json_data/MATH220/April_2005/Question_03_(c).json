@@ -1,13 +1,45 @@
 {
-    "term": "April", 
-    "question": "Question_03_(c)", 
+    "answer_html": "<p>Cantor&#8217;s Diagonalization Argument is used to prove that the set of all real numbers is uncountable.More precisely, it says that if you claim that the set of all real numbers is actually countable, that is, you have a bijection between all real number and the natural numbers, then he would be able to exhibit you a real number (using the diagonalization argument) that is <strong>not</strong> listed by your bijection.This means it is a contradiction to assume that such a bijection could exist and hence the real numbers are uncountable.</p>\n", 
+    "answer_latex": "Cantor's Diagonalization Argument is used to prove that the set of all\nreal numbers is uncountable.More precisely, it says that if you claim that the set of all real\nnumbers is actually countable, that is, you have a bijection between all\nreal number and the natural numbers, then he would be able to exhibit\nyou a real number (using the diagonalization argument) that is\n\\textbf{not} listed by your bijection.This means it is a contradiction\nto assume that such a bijection could exist and hence the real numbers\nare uncountable.", 
+    "contributors": [
+        "Konradbe", 
+        "IainMoyles"
+    ], 
     "course": "MATH220", 
-    "statement": "What does ``Cantor's Diagonalization Argument'' prove? (You don't have\nto describe the proof itself - just what it proves.)", 
-    "year": 2005, 
-    "sols": [
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "CT"
+    ], 
+    "hints_html": [
+        "<p>Here the question simply aims at having you write a very short paragraph about what Cantor&#8217;s argument proves, no need for complicated math, just a sentence or two that explains what he proved with that argument. (Yes, that&#8217;s math too :) )</p>\n"
+    ], 
+    "hints_latex": [
+        "Here the question simply aims at having you write a very short paragraph\nabout what Cantor's argument proves, no need for complicated math, just\na sentence or two that explains what he proved with that argument. (Yes,\nthat's math too :) )"
+    ], 
+    "hints_raw": [
+        "Here the question simply aims at having you write a very short paragraph about what Cantor's argument proves, no need for complicated math, just a sentence or two that explains what he proved with that argument. (Yes, that's math too :) )\n"
+    ], 
+    "num_votes": 1, 
+    "question": "3 (c)", 
+    "rating": 100, 
+    "sols_html": [
+        "<p>Cantor&#8217;s Diagonalization Argument is used to prove that the set of all real numbers is uncountable.</p>\n<p>More precisely, it says that if you claim that the set of all real numbers is actually countable, that is, you have a bijection between all real number and the natural numbers, then he would be able to exhibit you a real number (using the diagonalization argument) that is <strong>not</strong> listed by your bijection. This means it is a contradiction to assume that such a bijection could exist and hence the real numbers are uncountable.</p>\n"
+    ], 
+    "sols_latex": [
         "Cantor's Diagonalization Argument is used to prove that the set of all\nreal numbers is uncountable.\n\nMore precisely, it says that if you claim that the set of all real\nnumbers is actually countable, that is, you have a bijection between all\nreal number and the natural numbers, then he would be able to exhibit\nyou a real number (using the diagonalization argument) that is\n\\textbf{not} listed by your bijection. This means it is a contradiction\nto assume that such a bijection could exist and hence the real numbers\nare uncountable."
     ], 
-    "hints": [
-        "Here the question simply aims at having you write a very short paragraph\nabout what Cantor's argument proves, no need for complicated math, just\na sentence or two that explains what he proved with that argument. (Yes,\nthat's math too :) )"
-    ]
+    "sols_raw": [
+        "Cantor's Diagonalization Argument is used to prove that the set of all real numbers is uncountable.\n\nMore precisely, it says that if you claim that the set of all real numbers is actually countable, that is, you have a bijection between all real number and the natural numbers, then he would be able to exhibit you a real number (using the diagonalization argument) that is '''not''' listed by your bijection. This means it is a contradiction to assume that such a bijection could exist and hence the real numbers are uncountable.\n"
+    ], 
+    "solvers": [
+        "DavidKohler"
+    ], 
+    "statement_html": "<p>What does &#8220;Cantor&#8217;s Diagonalization Argument&#8221; prove? (You don&#8217;t have to describe the proof itself - just what it proves.)</p>\n", 
+    "statement_latex": "What does ``Cantor's Diagonalization Argument'' prove? (You don't have\nto describe the proof itself - just what it proves.)", 
+    "statement_raw": "What does \"Cantor's Diagonalization Argument\" prove? (You don't have to describe the proof itself - just what it proves.)\n", 
+    "term": "April", 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH220/April_2005/Question_03_(c)", 
+    "year": 2005
 }

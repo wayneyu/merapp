@@ -1,13 +1,47 @@
 {
-    "term": "April", 
-    "question": "Question_01_(k)", 
-    "course": "MATH101", 
-    "statement": "Let $f(x) = \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt$. Compute\n$\\displaystyle f'(1)$.", 
-    "year": 2006, 
-    "sols": [
-        "Using the fundamental theorem of calculus and the chain rule, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx} \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} \\int_{x}^{0} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} -\\int_{0}^{x} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= -\\sqrt{x^{4}+1} + 2x \\sqrt{x^{8}+1} \\end{align*}.\n\nPlugging in $x=1$ yields\n\n\\begin{align*}\nf'(1) &= -\\sqrt{1^{4}+1} + 2(1) \\sqrt{(1)^{8}+1} \\\\\n&= -\\sqrt{2} + 2\\sqrt{2} \\\\\n&= \\sqrt{2} \\end{align*}\n\ncompleting the question."
+    "answer_html": "<p><span class=\"math\">\\(f&#39;(1)=\\sqrt{2}\\)</span> completing the question.</p>\n", 
+    "answer_latex": " $f'(1)=\\sqrt{2}$ completing the question.", 
+    "contributors": [
+        "Konradbe"
     ], 
-    "hints": [
+    "course": "MATH101", 
+    "flags": [
+        "QGQ", 
+        "QGH", 
+        "QGS", 
+        "RT"
+    ], 
+    "hints_html": [
+        "<p>Break up the integral and use the fundamental theorem of calculus part 1.</p>\n"
+    ], 
+    "hints_latex": [
         "Break up the integral and use the fundamental theorem of calculus part\n1."
-    ]
+    ], 
+    "hints_raw": [
+        "Break up the integral and use the fundamental theorem of calculus part 1.\n"
+    ], 
+    "num_votes": 1, 
+    "question": "1 (k)", 
+    "rating": 90, 
+    "sols_html": [
+        "<p>Using the fundamental theorem of calculus and the chain rule, we have</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(x) &amp;= \\frac{d}{dx} \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= \\frac{d}{dx} \\int_{x}^{0} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= \\frac{d}{dx} -\\int_{0}^{x} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= -\\sqrt{x^{4}+1} + 2x \\sqrt{x^{8}+1} \\end{aligned}\\]</span></p>\n<p>.</p>\n<p>Plugging in <span class=\"math\">\\(x=1\\)</span> yields</p>\n<p><span class=\"math\">\\[\\begin{aligned}\nf&#39;(1) &amp;= -\\sqrt{1^{4}+1} + 2(1) \\sqrt{(1)^{8}+1} \\\\\n&amp;= -\\sqrt{2} + 2\\sqrt{2} \\\\\n&amp;= \\sqrt{2} \\end{aligned}\\]</span></p>\n<p>completing the question.</p>\n"
+    ], 
+    "sols_latex": [
+        "Using the fundamental theorem of calculus and the chain rule, we have\n\n\\begin{align*}\nf'(x) &= \\frac{d}{dx} \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} \\int_{x}^{0} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= \\frac{d}{dx} -\\int_{0}^{x} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&= -\\sqrt{x^{4}+1} + 2x \\sqrt{x^{8}+1} \n\\end{align*}.\n\nPlugging in $x=1$ yields\n\n\\begin{align*}\nf'(1) &= -\\sqrt{1^{4}+1} + 2(1) \\sqrt{(1)^{8}+1} \\\\\n&= -\\sqrt{2} + 2\\sqrt{2} \\\\\n&= \\sqrt{2} \n\\end{align*}\n\ncompleting the question."
+    ], 
+    "sols_raw": [
+        "Using the fundamental theorem of calculus and the chain rule, we have\n\n:&lt;math> \n\\begin{align}\nf'(x) &amp;= \\frac{d}{dx} \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= \\frac{d}{dx} \\int_{x}^{0} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= \\frac{d}{dx} -\\int_{0}^{x} \\sqrt{t^{4}+1}\\, dt + \\frac{d}{dx} \\int_{0}^{x^{2}} \\sqrt{t^{4}+1}\\, dt \\\\\n&amp;= -\\sqrt{x^{4}+1} + 2x \\sqrt{x^{8}+1} \\\\\n\\end{align}\n&lt;/math>.\n\nPlugging in &lt;math> x=1 &lt;/math> yields\n\n:&lt;math> \n\\begin{align}\nf'(1) &amp;= -\\sqrt{1^{4}+1} + 2(1) \\sqrt{(1)^{8}+1} \\\\\n&amp;= -\\sqrt{2} + 2\\sqrt{2} \\\\\n&amp;= \\sqrt{2} \\\\\n\\end{align}\n&lt;/math>\n\ncompleting the question.\n"
+    ], 
+    "solvers": [
+        "CarmenBruni"
+    ], 
+    "statement_html": "<p>Let <span class=\"math\">\\(f(x) = \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt\\)</span>. Compute <span class=\"math\">\\(\\displaystyle f&#39;(1)\\)</span>.</p>\n", 
+    "statement_latex": "Let $f(x) = \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt$. Compute\n$\\displaystyle f'(1)$.", 
+    "statement_raw": "Let &lt;math> f(x) = \\int_{x}^{x^{2}} \\sqrt{t^{4}+1}\\, dt &lt;/math>. Compute &lt;math>\\displaystyle f'(1) &lt;/math>.\n", 
+    "term": "April", 
+    "topics": [
+        "Fundamental_theorem_of_calculus"
+    ], 
+    "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2006/Question_01_(k)", 
+    "year": 2006
 }

@@ -3,11 +3,32 @@
 @main(course + " " + term_year){
 <h2>Questions available</h2>
 
-With easiness (number of votes)
+With easiness rating
 
-<ul class="questionsList">
+<ul id="exam_questions_list" class="exam_questions_list">
     @for( question <- questions ){
-        <li class="question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a> @question.rating (@question.num_votes)</li>
+        <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>
+            @if(question.num_votes > 0){
+            <span class="easiness_rating" title=@question.num_votes>@question.rating%</span>
+            } else {
+            <span class="easiness_rating" title=@question.num_votes>-</span>
+            }</li>
     }
 </ul>
+
+<script>
+$(".easiness_rating").each(function(){
+    var val = parseInt($(this).text().replace("%",""));
+    if (val < 33) {var col = "#FF0000";}
+    else if (val < 66) {var col = "#FF9900";}
+    else if (val <= 100) {var col = "#006600";}
+    else {var col = "#A0A0A0";} // no vote available
+    $(this).css("color", col);
+    $(this).attr("title", $(this).attr("title") + " total votes");
+    });
+</script>
 }
+
+
+
+

@@ -3,6 +3,7 @@
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
 @sols = @{qn.sols}
+@topics = @{qn.topics}
 @latexbuttons = {
 <div id="inputbuttons">
     <!-- SYMBOLS -->
@@ -168,11 +169,9 @@
 
 <div id="tags">
     <ul>
-    <li><span>#Tags:</span></li>
-    <li><span>#Math</span></li>
-    <li><span>#Hard</span></li>
-    <li><span>#Impossible</span></li>
-    <li><span>#Numbers</span></li>
+    @for( topic <- topics ){
+        <li><span>@Html(topic)</span></li>
+        }
     </ul>
 </div>
 

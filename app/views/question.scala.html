@@ -102,13 +102,13 @@
 
 <div class="main_box">
     <div class="box_title">@q</div>
-    <div>@stmt</div>
+    <div>@Html(stmt)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id="statement_edit">
     <div id="latex_box">
         @latexbuttons
-        <textarea>@stmt</textarea>
+        <textarea>@Html(stmt)</textarea>
         <div class="latex_edit_render_area"></div>
         <div>
             <button class="render_button">render</button>
@@ -125,13 +125,13 @@
     <div class="main_box hideable_box">
 }
     <div class="box_title">Hint (@(ind+1))</div>
-    <div>@h</div>
+    <div>@Html(h)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id=@("hints_"+ind+"_edit")>
     <div id="latex_box">
         @latexbuttons
-        <textarea>@h</textarea>
+        <textarea>@Html(h)</textarea>
         <div class="latex_edit_render_area"></div>
         <div>
             <button class="render_button">render</button>
@@ -149,13 +149,13 @@
     <div class="main_box hideable_box">
 }
     <div class="box_title">Solution (@(ind+1))</div>
-    <div>@s</div>
+    <div>@Html(s)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id=@("sols_"+ind+"_edit")>
     <div id="latex_box">
         @latexbuttons
-        <textarea>@s</textarea>
+        <textarea>@Html(s)</textarea>
         <div class="latex_edit_render_area"></div>
         <div>
             <button class="render_button">render</button>

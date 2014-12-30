@@ -37,9 +37,9 @@ object Question {
         (JsPath \ "year").read[Int] and
         (JsPath \ "term").read[String] and
         (JsPath \ "question").read[String] and
-        (JsPath \ "statement").read[String] and
-        (JsPath \ "hints").read[List[String]] and
-        (JsPath \ "sols").read[List[String]]
+        (JsPath \ "statement_html").read[String] and
+        (JsPath \ "hints_html").read[List[String]] and
+        (JsPath \ "sols_html").read[List[String]]
     )(Question.apply _)
 
   implicit object QuestionReader extends BSONDocumentReader[Question] {
@@ -49,9 +49,9 @@ object Question {
         doc.getAs[Int]("year").get,
         doc.getAs[String]("term").get,
         doc.getAs[String]("question").get,
-        doc.getAs[String]("statement").get,
-        doc.getAs[List[String]]("hints").get,
-        doc.getAs[List[String]]("sols").get
+        doc.getAs[String]("statement_html").get,
+        doc.getAs[List[String]]("hints_html").get,
+        doc.getAs[List[String]]("sols_html").get
       )
     }
   }

@@ -65,11 +65,11 @@ object Question {
         doc.getAs[List[String]]("hints_html").get,
         doc.getAs[List[String]]("sols_html").get,
         doc.getAs[List[String]]("topics").getOrElse(Nil),
-        doc.getAs[List[String]]("solvers").get,
-        doc.getAs[Int]("rating").get,
+        doc.getAs[List[String]]("solvers").getOrElse(Nil),
+        doc.getAs[Int]("rating").getOrElse(-1),
         doc.getAs[Int]("num_votes").get,
-        doc.getAs[List[String]]("flags").get,
-        doc.getAs[List[String]]("contributors").get
+        doc.getAs[List[String]]("flags").getOrElse(Nil),
+        doc.getAs[List[String]]("contributors").getOrElse(Nil)
       )
     }
   }

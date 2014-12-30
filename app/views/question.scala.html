@@ -4,6 +4,11 @@
 @hints = @{qn.hints}
 @sols = @{qn.sols}
 @topics = @{qn.topics}
+@rating = @{qn.rating}
+@num_votes = @{qn.num_votes}
+@solvers = @{qn.solvers}
+@contributors = @{qn.contributors}
+@flags = @{qn.flags}
 @latexbuttons = {
 <div id="inputbuttons">
     <!-- SYMBOLS -->
@@ -101,6 +106,8 @@
     }
 </div>
 
+Easiness: @rating (@num_votes total votes)
+
 <div class="main_box">
     <div class="box_title">@q</div>
     <div>@Html(stmt)</div>
@@ -175,5 +182,5 @@
     </ul>
 </div>
 
-
+This question was solved by @solvers.map {solver=>@solver}.mkString(", ") with the help of @contributors.map {contr=>@contr}.mkString(", ").
 }

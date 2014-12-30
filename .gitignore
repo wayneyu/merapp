@@ -20,3 +20,4 @@ dist
 *.jpg
 *.log
 *.toc
+mongolab.conf

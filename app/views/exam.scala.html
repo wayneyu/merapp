@@ -3,20 +3,33 @@
 @main(course + " " + term_year){
 <h2>Questions available</h2>
 
-With easiness rating
+Average easiness: <span class="exam_easiness easiness_rating"></span><br><br>
 
 <ul id="exam_questions_list" class="exam_questions_list">
     @for( question <- questions ){
         <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>
-            @if(question.num_votes > 0){
-            <span class="easiness_rating" title=@question.num_votes>@question.rating%</span>
+            <span class="easiness_rating" title=@question.num_votes>@if(question.num_votes > 0){
+            @question.rating%
             } else {
-            <span class="easiness_rating" title=@question.num_votes>-</span>
-            }</li>
+            -
+            }</span></li>
     }
 </ul>
 
+<br>
 <script>
+
+var total_easiness = 0;
+var num_rated_questions = 0;
+$(".easiness_rating").each(function(){
+    var val = parseInt($(this).text().replace("%",""));
+    if(!isNaN(val)){
+        total_easiness = total_easiness + val;
+        num_rated_questions = num_rated_questions + 1;
+    }
+});
+$(".exam_easiness").text(Math.round(total_easiness/num_rated_questions) + "%");
+
 $(".easiness_rating").each(function(){
     var val = parseInt($(this).text().replace("%",""));
     if (val < 33) {var col = "#FF0000";}
@@ -24,11 +37,7 @@ $(".easiness_rating").each(function(){
     else if (val <= 100) {var col = "#006600";}
     else {var col = "#A0A0A0";} // no vote available
     $(this).css("color", col);
-    $(this).attr("title", $(this).attr("title") + " total votes");
+    $(this).attr("title", $(this).attr("title") + " vote(s)");
     });
 </script>
 }
-
-
-
-

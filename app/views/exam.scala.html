@@ -1,4 +1,4 @@
-@(course: String, term_year: String, questions: List[String])
+@(course: String, term_year: String, questions: List[Question])
 
 @main(course + " " + term_year){
 <h2>Questions available</h2>
@@ -7,7 +7,7 @@ With easiness (number of votes)
 
 <ul class="questionsList">
     @for( question <- questions ){
-        <li class="question"><a href="@routes.QuestionController.question(course, term_year, question)">@question</a> 99% (5)</li>
+        <li class="question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a> @question.rating (@question.num_votes)</li>
     }
 </ul>
 }

@@ -1,4 +1,4 @@
-@(course: String, exams: List[String])
+@(course: String, exams: List[String], topics: List[String])
 
 @main(course){
 <div id="exams">
@@ -21,10 +21,12 @@
             <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Solutions</a></td>
         </tr>
     }
+
     </table>
 
-    @* <h2>Topics</h2>
-    List all topics in this course. Ideally with weight?
-    *@
+    <h2>Topics</h2>
+    @for( topic <- topics ){
+        @topic
+    }
 </div>
 }

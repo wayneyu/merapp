@@ -84,7 +84,6 @@ object QuestionController extends Controller with MongoController {
   def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async {
     val (term: String, year: Int) = getTermAndYear(term_year)
 
-
     val question = questionQuery(course, term_year, q)
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
@@ -316,6 +315,17 @@ object QuestionController extends Controller with MongoController {
 
   }
 
+  def allTopicsCourse(course: String) = Action.async {
+    val topics = topicsForCourse(course)
+
+    topics.map{
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONArray]("topics").getOrElse(BSONArray(Nil)))
+      )))
+    }
+
+  }
+
   def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
     Logger.info("Find exam  = " + course + " " + term_year)
     val (term: String, year: Int) = getTermAndYear(term_year)
@@ -442,18 +452,44 @@ object QuestionController extends Controller with MongoController {
 
   }
 
-  def course(course: String) = Action.async {
+  def topicsForCourse(course: String): Future[List[BSONDocument]] = {
+    val command = Aggregate(collection.name, Seq(
+      Match(BSONDocument("course" -> course)),
+      Project("_id"->BSONInteger(0), "topics" -> BSONInteger(1), "term" -> BSONInteger(1))
+    ))
 
-    val exams = examsForCourse(course)
+    val topics = db.command(command)
 
-    exams.map{
-        docList =>
-          Ok(views.html.course(course, docList.map{
-            d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-          }))
-      }
-
+    topics.map{ _.toList }
   }
+
+  def course(course: String) = Action.async {
+    val exams = examsForCourse(course)
+    val topics = topicsForCourse(course)
+
+    val res = for {
+      t <- topics
+      e <- exams
+    } yield (e, t)
+
+    var list_of_topics = List[String]()
+    topics.map(t => t.map{
+      x => {
+        list_of_topics = list_of_topics ++ x.getAs[List[String]]("topics").getOrElse(Nil);
+        println(list_of_topics.toList) // HELP: does eventually print the correct list to the console. Must be due to lazy evaluation of Future[...]
+      }
+    })
+    println("I will be printed first")
+
+    res.map{ case(exams, topics) =>
+      Ok(views.html.course(course,
+        exams.map{
+          d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
+        }, list_of_topics // HELP: is still empty when this is called, hence the view doesn't get the correct list of topics. Please make this evaluate in time.
+      ))
+    }
+  }
+
 
   def exam(course: String, year: String, term: String): Action[AnyContent] = exam(course, term + "_" + year)
 

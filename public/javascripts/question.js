@@ -259,6 +259,11 @@ $(document).ready(function (){
           }
         })
     });
+
+    $("#questionSelect").on('change', function(e){
+        $("#findQuestionBtn").click();
+    });
+
 })
 
 $.fn.insertAtCaret = function (insertion,notMath) {

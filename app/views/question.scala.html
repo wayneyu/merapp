@@ -106,7 +106,10 @@
     }
 </div>
 
-Easiness: @rating (@num_votes total votes)
+Easiness: @if(num_votes > 0){
+                @rating (@num_votes @if(num_votes > 1){votes} else {vote})
+            } else {-}
+
 
 <div class="main_box">
     <div class="box_title">@q</div>
@@ -182,5 +185,14 @@ Easiness: @rating (@num_votes total votes)
     </ul>
 </div>
 
-This question was solved by @solvers.map {solver=>@solver}.mkString(", ") with the help of @contributors.map {contr=>@contr}.mkString(", ").
+@if(solvers){
+        This question was solved by <b>@solvers.map {solver=>@solver}.mkString(", ")</b>
+            @if(contributors) {
+                with the help of <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+            } else {.}
+        } else {
+            @if(contributors) {
+                The following people have worked on this question: <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+            }
+        }
 }

@@ -22,6 +22,7 @@ case class Question ( course: String,
                      statement: String,
                      hints: List[String],
                      sols: List[String],
+                     answer: String,
                      topics: List[String],
                      solvers: List[String],
                      rating: Int,
@@ -46,6 +47,7 @@ object Question {
         (JsPath \ "statement_html").read[String] and
         (JsPath \ "hints_html").read[List[String]] and
         (JsPath \ "sols_html").read[List[String]] and
+        (JsPath \ "answer_html").read[String] and
         (JsPath \ "topics").read[List[String]] and
         (JsPath \ "solvers").read[List[String]] and
         (JsPath \ "rating").read[Int] and
@@ -64,6 +66,7 @@ object Question {
         doc.getAs[String]("statement_html").get,
         doc.getAs[List[String]]("hints_html").get,
         doc.getAs[List[String]]("sols_html").get,
+        doc.getAs[String]("answer_html").get,
         doc.getAs[List[String]]("topics").getOrElse(Nil),
         doc.getAs[List[String]]("solvers").getOrElse(Nil),
         doc.getAs[Int]("rating").getOrElse(-1),
@@ -74,7 +77,7 @@ object Question {
     }
   }
 
-  val empty = Question("",-1,"","No Question","",Nil,Nil,Nil,Nil, -1, -1, Nil, Nil)
+  val empty = Question("",-1,"","No Question","",Nil,Nil,"",Nil,Nil, -1, -1, Nil, Nil)
 
 //  def empty(course: String, year: String, term: String) =
 //    Question(course, year.toInt, term, "No Question","",Nil,Nil)

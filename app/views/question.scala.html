@@ -3,6 +3,7 @@
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
 @sols = @{qn.sols}
+@answer = @{qn.answer}
 @topics = @{qn.topics}
 @rating = @{qn.rating}
 @num_votes = @{qn.num_votes}
@@ -135,7 +136,7 @@ Easiness: @if(num_votes > 0){
 }else{
     <div class="main_box hideable_box">
 }
-    <div class="box_title">Hint (@(ind+1))</div>
+    <div class="box_title">Hint @if(ind > 0){(ind+1))}</div>
     <div>@Html(h)</div>
 </div>
 @if(editable){
@@ -153,13 +154,37 @@ Easiness: @if(num_votes > 0){
 }
 }
 
+@if(editable){
+    <div class="main_box">
+}else{
+    <div class="main_box hideable_box">
+}
+<div class="box_title">Final answer</div>
+    <div>@Html(answer)</div>
+</div>
+@if(editable){
+<div class="latex_edit_area" id=@("answer_edit")>
+    <div id="latex_box">
+            @latexbuttons
+        <textarea>@Html(answer)</textarea>
+
+        <div class="latex_edit_render_area"></div>
+        <div>
+            <button class="render_button">render</button>
+            <button class="submit_button">submit changes</button>
+        </div>
+    </div>
+</div>
+}
+
+
 @for( (s, ind) <- sols.zipWithIndex ) {
 @if(editable){
     <div class="main_box">
 }else{
     <div class="main_box hideable_box">
 }
-    <div class="box_title">Solution (@(ind+1))</div>
+    <div class="box_title">Full Solution @if(ind > 0){(ind+1))}</div>
     <div>@Html(s)</div>
 </div>
 @if(editable){

@@ -185,3 +185,13 @@ background-color: #eeeeee;
 .questionsList{
     list-style-type: none;
 }
+
+#prev_question{
+    float: left;
+    padding-left: 5px;
+}
+
+#next_question{
+    float: right;
+    padding-right: 5px;
+}

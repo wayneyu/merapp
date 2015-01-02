@@ -264,7 +264,23 @@ $(document).ready(function (){
         $("#findQuestionBtn").click();
     });
 
-})
+    var current_question = $("#questionSelect option:selected").text();
+    var all_questions = [];
+    $("#questionSelect").children().each(function() {all_questions.push($(this).text())});
+    console.log(all_questions);
+    var current_question_index = all_questions.indexOf(current_question);
+    if (current_question_index == 0) {
+            $("#prev_question").remove();
+        } else {
+            $("#prev_question").prop("href", all_questions[current_question_index-1]);
+        }
+    if (current_question_index == all_questions.length - 1) {
+            $("#next_question").remove();
+        } else {
+            $("#next_question").prop("href", all_questions[current_question_index+1]);
+        }
+
+});
 
 $.fn.insertAtCaret = function (insertion,notMath) {
   return this.each(function(){
@@ -325,3 +341,4 @@ function isInMathEnvironment(aString) {
   return bool;
 
 };
+

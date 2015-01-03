@@ -467,25 +467,23 @@ object QuestionController extends Controller with MongoController {
     val exams = examsForCourse(course)
     val topics = topicsForCourse(course)
 
+    val list_of_topics = topics.map{
+      l => l.flatMap(
+        doc => doc.getAs[List[String]]("topics").getOrElse(Nil)
+      ).toSet.toList.sorted
+    }
+
     val res = for {
-      t <- topics
       e <- exams
+      t <- list_of_topics
     } yield (e, t)
 
-    var list_of_topics = List[String]()
-    topics.map(t => t.map{
-      x => {
-        list_of_topics = list_of_topics ++ x.getAs[List[String]]("topics").getOrElse(Nil);
-        println(list_of_topics.toList) // HELP: does eventually print the correct list to the console. Must be due to lazy evaluation of Future[...]
-      }
-    })
-    println("I will be printed first")
-
     res.map{ case(exams, topics) =>
+      Logger.info(topics mkString "," )
       Ok(views.html.course(course,
         exams.map{
           d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-        }, list_of_topics // HELP: is still empty when this is called, hence the view doesn't get the correct list of topics. Please make this evaluate in time.
+        }, topics
       ))
     }
   }

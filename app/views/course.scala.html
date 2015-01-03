@@ -26,7 +26,7 @@
 
     <h2>Topics</h2>
     @for( topic <- topics ){
-        @topic
+        @topic.replace("_"," "),
     }
 </div>
 }

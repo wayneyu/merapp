@@ -13,7 +13,7 @@
         "QGT"
     ], 
     "hints_html": [
-        "<p>The hardest part here is to find the boundaries for the region of integration. Often it is very helpful to make a sketch, like this (boundaries of the region are in red):</p>\n<p><img src=\"../json_data/MATH200/December_2011/Math200Dec11Q7.jpg\" alt=\"image\" /></p>\n"
+        "<p>The hardest part here is to find the boundaries for the region of integration. Often it is very helpful to make a sketch, like this (boundaries of the region are in red):</p>\n<p><img src=\"/assets/raw_database/json_data/MATH200/December_2011/Math200Dec11Q7.jpg\" alt=\"image\" /></p>\n"
     ], 
     "hints_latex": [
         "The hardest part here is to find the boundaries for the region of\nintegration. Often it is very helpful to make a sketch, like this\n(boundaries of the region are in red):\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH200/December_2011/Math200Dec11Q7.jpg}"

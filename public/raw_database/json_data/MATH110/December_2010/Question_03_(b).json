@@ -1,5 +1,5 @@
 {
-    "answer_html": "<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg\" alt=\"image\" /></p>\n", 
+    "answer_html": "<p><img src=\"/assets/raw_database/json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg\" alt=\"image\" /></p>\n", 
     "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg}", 
     "contributors": [
         "Konradbe"
@@ -24,7 +24,7 @@
     "question": "3 (b)", 
     "rating": null, 
     "sols_html": [
-        "<p>The following picture is a sample illustration of the Intermediate Value Theorem.</p>\n<p><img src=\"../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg\" alt=\"image\" /></p>\n"
+        "<p>The following picture is a sample illustration of the Intermediate Value Theorem.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg\" alt=\"image\" /></p>\n"
     ], 
     "sols_latex": [
         "The following picture is a sample illustration of the Intermediate Value\nTheorem.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/December_2010/Math_Exam_Resources_Math_110_December_2010_Question_3_b_Solution_1.jpg}"

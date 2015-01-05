@@ -15,9 +15,6 @@ dist
 /.settings
 *.tex
 *.pdf
-*.png
-*.jpeg
-*.jpg
 *.log
 *.toc
 mongolab.conf

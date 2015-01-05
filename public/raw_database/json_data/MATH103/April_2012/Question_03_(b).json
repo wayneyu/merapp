@@ -40,7 +40,7 @@
     "solvers": [
         "RobertFraser"
     ], 
-    "statement_html": "<p>Consider the area <em>A</em> between a circle of radius 1 in the first quadrant and <span class=\"math\">\\(f(x)\\)</span>=<em>x</em>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH103/April_2012/Math_Exam_Resources_Courses_MATH103_April_2012_Question_3_(a)_Fig.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Find the volume of the solid obtained by rotating <em>A</em> about the <em>y</em>-axis.</p>\n", 
+    "statement_html": "<p>Consider the area <em>A</em> between a circle of radius 1 in the first quadrant and <span class=\"math\">\\(f(x)\\)</span>=<em>x</em>.</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH103/April_2012/Math_Exam_Resources_Courses_MATH103_April_2012_Question_3_(a)_Fig.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Find the volume of the solid obtained by rotating <em>A</em> about the <em>y</em>-axis.</p>\n", 
     "statement_latex": "Consider the area \\emph{A} between a circle of radius 1 in the first\nquadrant and $f(x)$=\\emph{x}.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2012/Math_Exam_Resources_Courses_MATH103_April_2012_Question_3_(a)_Fig.jpg}\n\\end{description}\n\nFind the volume of the solid obtained by rotating \\emph{A} about the\n\\emph{y}-axis.", 
     "statement_raw": "Consider the area ''A'' between a circle of radius 1 in the first quadrant and &amp;fnof;(''x'')=''x''.\n\n:[[File:Math_Exam_Resources_Courses_MATH103_April_2012_Question_3_(a)_Fig.jpg|250px]]\n\n\nFind the volume of the solid obtained by rotating ''A'' about the ''y''-axis.\n", 
     "term": "April", 

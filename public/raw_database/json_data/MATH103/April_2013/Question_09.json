@@ -1,5 +1,5 @@
 {
-    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_html": "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
     "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg}\n\\end{description}", 
     "contributors": [
         "Konradbe", 
@@ -31,7 +31,7 @@
     "question": "9", 
     "rating": 47, 
     "sols_html": [
-        "<p>Attached is a picture. Notice that there is a local minimum at <span class=\"math\">\\(\\displaystyle x = -0.4\\)</span> and a local maximum at <span class=\"math\">\\(\\displaystyle x = -1.4\\)</span>. Also note that plugging in <em>a</em> into the integral gives</p>\n<p><span class=\"math\">\\(\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0\\)</span>.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+        "<p>Attached is a picture. Notice that there is a local minimum at <span class=\"math\">\\(\\displaystyle x = -0.4\\)</span> and a local maximum at <span class=\"math\">\\(\\displaystyle x = -1.4\\)</span>. Also note that plugging in <em>a</em> into the integral gives</p>\n<p><span class=\"math\">\\(\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0\\)</span>.</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH103/April_2013/M103W2013Q9Answer.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
     ], 
     "sols_latex": [
         "Attached is a picture. Notice that there is a local minimum at\n$\\displaystyle x = -0.4$ and a local maximum at\n$\\displaystyle x = -1.4$. Also note that plugging in \\emph{a} into the\nintegral gives\n\n$\\displaystyle A(a) = \\int_{a}^{a}f(s)\\,ds = 0$.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Answer.jpg}\n\\end{description}"
@@ -42,7 +42,7 @@
     "solvers": [
         "CarmenBruni"
     ], 
-    "statement_html": "<p><strong>Sketching Antiderivatives</strong></p>\n<p>Consider the sketch <span class=\"math\">\\(\\displaystyle f(x)\\)</span> below.</p>\n<p>Provide a sketch of the antiderivative <span class=\"math\">\\(\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds\\)</span> for <span class=\"math\">\\(\\displaystyle -1.5 &lt; x &lt; 1.5\\)</span>. Make sure to clearly indicate local maxima and minima of <span class=\"math\">\\(\\displaystyle A(x)\\)</span></p>\n<p><img src=\"../json_data/MATH103/April_2013/M103W2013Q9Question.jpg\" alt=\"image\" /></p>\n", 
+    "statement_html": "<p><strong>Sketching Antiderivatives</strong></p>\n<p>Consider the sketch <span class=\"math\">\\(\\displaystyle f(x)\\)</span> below.</p>\n<p>Provide a sketch of the antiderivative <span class=\"math\">\\(\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds\\)</span> for <span class=\"math\">\\(\\displaystyle -1.5 &lt; x &lt; 1.5\\)</span>. Make sure to clearly indicate local maxima and minima of <span class=\"math\">\\(\\displaystyle A(x)\\)</span></p>\n<p><img src=\"/assets/raw_database/json_data/MATH103/April_2013/M103W2013Q9Question.jpg\" alt=\"image\" /></p>\n", 
     "statement_latex": "\\textbf{Sketching Antiderivatives}\n\nConsider the sketch $\\displaystyle f(x)$ below.\n\nProvide a sketch of the antiderivative\n$\\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds$ for\n$\\displaystyle -1.5 < x < 1.5$. Make sure to clearly indicate local\nmaxima and minima of $\\displaystyle A(x)$\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2013/M103W2013Q9Question.jpg}", 
     "statement_raw": "'''Sketching Antiderivatives'''\n\nConsider the sketch &lt;math> \\displaystyle f(x)&lt;/math> below.\n\nProvide a sketch of the antiderivative &lt;math> \\displaystyle A(x) = \\int_{a}^{x}f(s)\\,ds&lt;/math> for &lt;math> \\displaystyle -1.5 &lt; x &lt; 1.5&lt;/math>. Make sure to clearly indicate local maxima and minima of &lt;math> \\displaystyle A(x)&lt;/math>\n\n[[File:M103W2013Q9Question.jpg|300px]]\n", 
     "term": "April", 

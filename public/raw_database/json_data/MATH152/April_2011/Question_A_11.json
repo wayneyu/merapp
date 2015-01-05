@@ -35,7 +35,7 @@
     "solvers": [
         "IainMoyles"
     ], 
-    "statement_html": "<p><img src=\"../json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png\" alt=\"image\" /></p>\n<p>Write a linear equation that expresses the current through the current source 1 in terms of the loop currents in the diagram.</p>\n", 
+    "statement_html": "<p><img src=\"/assets/raw_database/json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png\" alt=\"image\" /></p>\n<p>Write a linear equation that expresses the current through the current source 1 in terms of the loop currents in the diagram.</p>\n", 
     "statement_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png}\n\nWrite a linear equation that expresses the current through the current\nsource 1 in terms of the loop currents in the diagram.", 
     "statement_raw": "[[File:Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png|500px]]\n\nWrite a linear equation that expresses the current through the current source 1 in terms of the loop currents in the diagram.\n", 
     "term": "April", 

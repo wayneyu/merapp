@@ -1,5 +1,5 @@
 {
-    "answer_html": "<p><img src=\"../json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg\" alt=\"image\" /></p>\n", 
+    "answer_html": "<p><img src=\"/assets/raw_database/json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg\" alt=\"image\" /></p>\n", 
     "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg}", 
     "contributors": [
         "Konradbe"
@@ -24,7 +24,7 @@
     "question": "2 (c)", 
     "rating": null, 
     "sols_html": [
-        "<p>A picture is included below.</p>\n<p>Imagine yourself standing on the <em>x</em>-axis at <em>x</em>=-1 looking towards the rotated object. This top down view (the circles in the picture) show that what we are doing is taking a cylinder of radius 1 and height <span class=\"math\">\\(\\pi\\)</span>, and subtracting from it the shape that we get from removing the inner shape of radius <span class=\"math\">\\((1-\\sin(x))^{2}\\)</span>. This gives the volume to be</p>\n<p><span class=\"math\">\\(V = \\int_{0}^{\\pi} \\pi(1^{2} - (1-\\sin(x))^{2}) \\, dx = \\pi\\int_{0}^{\\pi}(2\\sin(x) -\\sin^{2}(x)) \\, dx\\)</span></p>\n<p>completing the question.</p>\n<p><img src=\"../json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg\" alt=\"image\" /></p>\n"
+        "<p>A picture is included below.</p>\n<p>Imagine yourself standing on the <em>x</em>-axis at <em>x</em>=-1 looking towards the rotated object. This top down view (the circles in the picture) show that what we are doing is taking a cylinder of radius 1 and height <span class=\"math\">\\(\\pi\\)</span>, and subtracting from it the shape that we get from removing the inner shape of radius <span class=\"math\">\\((1-\\sin(x))^{2}\\)</span>. This gives the volume to be</p>\n<p><span class=\"math\">\\(V = \\int_{0}^{\\pi} \\pi(1^{2} - (1-\\sin(x))^{2}) \\, dx = \\pi\\int_{0}^{\\pi}(2\\sin(x) -\\sin^{2}(x)) \\, dx\\)</span></p>\n<p>completing the question.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg\" alt=\"image\" /></p>\n"
     ], 
     "sols_latex": [
         "A picture is included below.\n\nImagine yourself standing on the \\emph{x}-axis at \\emph{x}=-1 looking\ntowards the rotated object. This top down view (the circles in the\npicture) show that what we are doing is taking a cylinder of radius 1\nand height $\\pi$, and subtracting from it the shape that we get from\nremoving the inner shape of radius $(1-\\sin(x))^{2}$. This gives the\nvolume to be\n\n$V = \\int_{0}^{\\pi} \\pi(1^{2} - (1-\\sin(x))^{2}) \\, dx = \\pi\\int_{0}^{\\pi}(2\\sin(x) -\\sin^{2}(x)) \\, dx$\n\ncompleting the question.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH101/April_2007/MATH101Apr2007Q2c.jpeg}"

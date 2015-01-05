@@ -1,5 +1,5 @@
 {
-    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_April2013_1b.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_html": "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Math110_April2013_1b.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
     "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110_April2013_1b.png}\n\\end{description}", 
     "contributors": [
         "WilliamThompson", 
@@ -31,7 +31,7 @@
     "question": "1 (b)", 
     "rating": 47, 
     "sols_html": [
-        "<p>This statement is <strong>false</strong>.</p>\n<p>Consider, for example, the graph of <span class=\"math\">\\(f(x) = \\tan(x)\\)</span> for -<span class=\"math\">\\(\\pi\\)</span>/2 &lt; <em>x</em> &lt; <span class=\"math\">\\(\\pi\\)</span>/2. Nowhere do we have <span class=\"math\">\\(\\displaystyle f&#39;(x) = \\sec(x) = 0\\)</span>, but still the curve switches from concave down to concave up.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_April2013_1b.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+        "<p>This statement is <strong>false</strong>.</p>\n<p>Consider, for example, the graph of <span class=\"math\">\\(f(x) = \\tan(x)\\)</span> for -<span class=\"math\">\\(\\pi\\)</span>/2 &lt; <em>x</em> &lt; <span class=\"math\">\\(\\pi\\)</span>/2. Nowhere do we have <span class=\"math\">\\(\\displaystyle f&#39;(x) = \\sec(x) = 0\\)</span>, but still the curve switches from concave down to concave up.</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Math110_April2013_1b.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
         "<p>The statement is <strong>false</strong>.</p>\n<p>Two more examples are <span class=\"math\">\\(f(x)=\\sin(x)\\)</span>, <span class=\"math\">\\(0&lt;x&lt;\\pi\\)</span>, and <span class=\"math\">\\(f(x)=\\cos(x)\\)</span>, <span class=\"math\">\\(-\\pi/2&lt;x&lt;\\pi/2\\)</span>. The argument is the same as in solution 1.</p>\n"
     ], 
     "sols_latex": [

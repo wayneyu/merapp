@@ -1,5 +1,5 @@
 {
-    "answer_html": "<p><img src=\"../json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg\" alt=\"image\" /></p>\n", 
+    "answer_html": "<p><img src=\"/assets/raw_database/json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg\" alt=\"image\" /></p>\n", 
     "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg}", 
     "contributors": [
         "WilliamThompson", 
@@ -25,7 +25,7 @@
     "question": "2 (g)", 
     "rating": null, 
     "sols_html": [
-        "<p>We draw where our function is increasing, decreasing, concave up, concave down as well as the only local extrema we found on a graph. We also include the asymptotes.</p>\n<p><img src=\"../json_data/MATH104/December_2013/M104_Dec2013_Q2g1.jpg\" alt=\"image\" /></p>\n<p>Then we draw.</p>\n<p><img src=\"../json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg\" alt=\"image\" /></p>\n"
+        "<p>We draw where our function is increasing, decreasing, concave up, concave down as well as the only local extrema we found on a graph. We also include the asymptotes.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH104/December_2013/M104_Dec2013_Q2g1.jpg\" alt=\"image\" /></p>\n<p>Then we draw.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg\" alt=\"image\" /></p>\n"
     ], 
     "sols_latex": [
         "We draw where our function is increasing, decreasing, concave up,\nconcave down as well as the only local extrema we found on a graph. We\nalso include the asymptotes.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2013/M104_Dec2013_Q2g1.jpg}\n\nThen we draw.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2013/M104_Dec2013_Q2g2.jpg}"

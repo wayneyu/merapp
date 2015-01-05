@@ -1,5 +1,5 @@
 {
-    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_html": "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
     "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg}\n\\end{description}", 
     "contributors": [
         "DavidKohler", 
@@ -26,7 +26,7 @@
     "question": "7 (d)", 
     "rating": 1, 
     "sols_html": [
-        "<dl>\n\n<dd><p><img src=\"../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+        "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
     ], 
     "sols_latex": [
         "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH215/December_2011/Fig_215_2011_7d_new.jpg}\n\\end{description}"

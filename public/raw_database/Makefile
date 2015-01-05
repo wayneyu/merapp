@@ -12,9 +12,13 @@ clean:
 	rm -rf json_data
 	rm -rf test
 
-.PHONY: all, clean, update_json, update_mongo_locally, upload_mongo, upload_mongo_only
+.PHONY: all, clean, correct_image_path, update_json, update_mongo_locally, upload_mongo, upload_mongo_only
 .DELETE_ON_ERROR:
 .SECONDARY:
+
+## correct image path in html version
+correct_image_path:
+	find json_data -type f -name *.json -print0 | xargs -0 sed -i 's:\"\.\./json_data/MATH:\"/assets/raw_database/json_data/MATH:g'
 
 ## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
 upload_mongo_only:

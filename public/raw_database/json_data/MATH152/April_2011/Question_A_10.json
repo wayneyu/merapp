@@ -35,7 +35,7 @@
     "solvers": [
         "IainMoyles"
     ], 
-    "statement_html": "<p><img src=\"../json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png\" alt=\"image\" /></p>\n<p>In term of these unknowns <span>[</span>found in A9<span>]</span>, write the linear equation that represents Kirchhoff&#8217;s law of voltage drops around the third loop (corresponding to <span class=\"math\">\\(i_3\\)</span>) in the circuit above.</p>\n", 
+    "statement_html": "<p><img src=\"/assets/raw_database/json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png\" alt=\"image\" /></p>\n<p>In term of these unknowns <span>[</span>found in A9<span>]</span>, write the linear equation that represents Kirchhoff&#8217;s law of voltage drops around the third loop (corresponding to <span class=\"math\">\\(i_3\\)</span>) in the circuit above.</p>\n", 
     "statement_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH152/April_2011/Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png}\n\nIn term of these unknowns {[}found in A9{]}, write the linear equation\nthat represents Kirchhoff's law of voltage drops around the third loop\n(corresponding to $i_3$) in the circuit above.", 
     "statement_raw": "[[File:Math_Exam_Resources_Courses_MATH152_April_2011_Question_A9_picture_1.png|500px]]\n\nIn term of these unknowns [found in A9], write the linear equation that represents Kirchhoff's law of voltage drops around the third loop (corresponding to &lt;math>i_3&lt;/math>) in the circuit above.\n", 
     "term": "April", 

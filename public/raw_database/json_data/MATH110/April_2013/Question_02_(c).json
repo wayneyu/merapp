@@ -1,5 +1,5 @@
 {
-    "answer_html": "<p><img src=\"../json_data/MATH110/April_2013/Crit_and_inflect.jpg\" alt=\"image\" /></p>\n", 
+    "answer_html": "<p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Crit_and_inflect.jpg\" alt=\"image\" /></p>\n", 
     "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Crit_and_inflect.jpg}", 
     "contributors": [
         "DavidKohler", 
@@ -26,7 +26,7 @@
     "question": "2 (c)", 
     "rating": null, 
     "sols_html": [
-        "<p>Your drawing should have a function that changes concavity at <em>x = 1</em>. Critical points are where we find a minimum, maximum, or a &#8220;corner&#8221; where the derivative does not exist. Your graph should have one of these features at <em>x = 2</em>.</p>\n<p>In our example below the function switches from concave up to concave down at <em>x = 1</em> and has a maximum at <em>x = 2</em>.</p>\n<p><img src=\"../json_data/MATH110/April_2013/Crit_and_inflect.jpg\" alt=\"image\" /></p>\n"
+        "<p>Your drawing should have a function that changes concavity at <em>x = 1</em>. Critical points are where we find a minimum, maximum, or a &#8220;corner&#8221; where the derivative does not exist. Your graph should have one of these features at <em>x = 2</em>.</p>\n<p>In our example below the function switches from concave up to concave down at <em>x = 1</em> and has a maximum at <em>x = 2</em>.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Crit_and_inflect.jpg\" alt=\"image\" /></p>\n"
     ], 
     "sols_latex": [
         "Your drawing should have a function that changes concavity at \\emph{x =\n1}. Critical points are where we find a minimum, maximum, or a\n``corner'' where the derivative does not exist. Your graph should have\none of these features at \\emph{x = 2}.\n\nIn our example below the function switches from concave up to concave\ndown at \\emph{x = 1} and has a maximum at \\emph{x = 2}.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Crit_and_inflect.jpg}"

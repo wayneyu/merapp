@@ -37,7 +37,7 @@
     "solvers": [
         "CarmenBruni"
     ], 
-    "statement_html": "<p>A particle is moving in the (x,y)-plane along the curve <span class=\"math\">\\(y = x^{2}\\)</span>. As it passes through the point P = (2, 4), its y coordinate changes at a rate of 8 units/sec.</p>\n<p>ii) What is the rate of change of the particle&#8217;s distance <span class=\"math\">\\(D(t)\\)</span> to the origin at this instant?</p>\n<p><img src=\"../json_data/MATH102/December_2011/MATH102_2011_7ii.png\" alt=\"image\" /></p>\n", 
+    "statement_html": "<p>A particle is moving in the (x,y)-plane along the curve <span class=\"math\">\\(y = x^{2}\\)</span>. As it passes through the point P = (2, 4), its y coordinate changes at a rate of 8 units/sec.</p>\n<p>ii) What is the rate of change of the particle&#8217;s distance <span class=\"math\">\\(D(t)\\)</span> to the origin at this instant?</p>\n<p><img src=\"/assets/raw_database/json_data/MATH102/December_2011/MATH102_2011_7ii.png\" alt=\"image\" /></p>\n", 
     "statement_latex": "A particle is moving in the (x,y)-plane along the curve $y = x^{2}$. As\nit passes through the point P = (2, 4), its y coordinate changes at a\nrate of 8 units/sec.\n\nii) What is the rate of change of the particle's distance $D(t)$ to the\norigin at this instant?\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH102/December_2011/MATH102_2011_7ii.png}", 
     "statement_raw": "A particle is moving in the (x,y)-plane along the curve &lt;math>y = x^{2}&lt;/math>. As it passes through\nthe point P = (2, 4), its y coordinate changes at a rate of 8 units/sec.\n\nii) What is the rate of change of the particle's distance &lt;math>D(t)&lt;/math> to the origin at this instant?\n\n[[File:MATH102 2011 7ii.png]]\n", 
     "term": "December", 

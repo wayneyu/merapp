@@ -1,5 +1,5 @@
 {
-    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_html": "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
     "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg}\n\\end{description}", 
     "contributors": [
         "DavidKohler", 
@@ -25,7 +25,7 @@
     "question": "9 (b)", 
     "rating": 100, 
     "sols_html": [
-        "<p>The function <span class=\"math\">\\(\\displaystyle f(x) = e^x\\)</span> is concave up, so all tangent lines, including our linear approximation, will lie below the graph.</p>\n<p>The purple graph is <em>f(x)</em>, the blue line is the linear approximation <em>L(x) = x+1</em> from <span>part (a)</span>. Thus our linear approximation is an underestimate.</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+        "<p>The function <span class=\"math\">\\(\\displaystyle f(x) = e^x\\)</span> is concave up, so all tangent lines, including our linear approximation, will lie below the graph.</p>\n<p>The purple graph is <em>f(x)</em>, the blue line is the linear approximation <em>L(x) = x+1</em> from <span>part (a)</span>. Thus our linear approximation is an underestimate.</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
     ], 
     "sols_latex": [
         "The function $\\displaystyle f(x) = e^x$ is concave up, so all tangent\nlines, including our linear approximation, will lie below the graph.\n\nThe purple graph is \\emph{f(x)}, the blue line is the linear\napproximation \\emph{L(x) = x+1} from\n{part\n(a)}. Thus our linear approximation is an underestimate.\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH110/April_2013/Math110_april2013_question9b_solution.jpg}\n\\end{description}"

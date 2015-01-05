@@ -24,7 +24,7 @@
     "question": "1 (l)", 
     "rating": null, 
     "sols_html": [
-        "<p>None of these have to be true! The fact that the limit exists does not imply anything about the value at that point. In fact, <span class=\"math\">\\(f(x)\\)</span> need not even be defined at <span class=\"math\">\\(a\\)</span>. Therefore, the following is a counter example</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH104/December_2013/MATH104_Dec2013_Q01l.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Hence, the correct answer is (E).</p>\n"
+        "<p>None of these have to be true! The fact that the limit exists does not imply anything about the value at that point. In fact, <span class=\"math\">\\(f(x)\\)</span> need not even be defined at <span class=\"math\">\\(a\\)</span>. Therefore, the following is a counter example</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH104/December_2013/MATH104_Dec2013_Q01l.jpg\" alt=\"image\" /></p>\n</dd>\n</dl>\n<p>Hence, the correct answer is (E).</p>\n"
     ], 
     "sols_latex": [
         "None of these have to be true! The fact that the limit exists does not\nimply anything about the value at that point. In fact, $f(x)$ need not\neven be defined at $a$. Therefore, the following is a counter example\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2013/MATH104_Dec2013_Q01l.jpg}\n\\end{description}\n\nHence, the correct answer is (E)."

@@ -33,7 +33,7 @@
     "sols_raw": [
         "No content found."
     ], 
-    "statement_html": "<p>Consider the cumulative distribution function <span class=\"math\">\\(\\displaystyle F(x)\\)</span> on <span class=\"math\">\\(\\displaystyle 0 \\leq x \\leq 10\\)</span> shown below.</p>\n<p><img src=\"../json_data/MATH103/April_2005/MATH103April2005Q3.jpg\" alt=\"image\" /></p>\n<p>(a) Sketch the probability density function <span class=\"math\">\\(\\displaystyle p(x)\\)</span>.</p>\n", 
+    "statement_html": "<p>Consider the cumulative distribution function <span class=\"math\">\\(\\displaystyle F(x)\\)</span> on <span class=\"math\">\\(\\displaystyle 0 \\leq x \\leq 10\\)</span> shown below.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH103/April_2005/MATH103April2005Q3.jpg\" alt=\"image\" /></p>\n<p>(a) Sketch the probability density function <span class=\"math\">\\(\\displaystyle p(x)\\)</span>.</p>\n", 
     "statement_latex": "Consider the cumulative distribution function $\\displaystyle F(x)$ on\n$\\displaystyle 0 \\leq x \\leq 10$ shown below.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH103/April_2005/MATH103April2005Q3.jpg}\n\n(a) Sketch the probability density function $\\displaystyle p(x)$.", 
     "statement_raw": "Consider the cumulative distribution function &lt;math> \\displaystyle F(x) &lt;/math> on &lt;math> \\displaystyle 0 \\leq x \\leq 10&lt;/math> shown below.\n\n[[File:MATH103April2005Q3.jpg]]\n\n(a) Sketch the probability density function &lt;math> \\displaystyle p(x)&lt;/math>.\n", 
     "term": "April", 

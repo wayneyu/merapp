@@ -1,5 +1,5 @@
 {
-    "answer_html": "<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n", 
+    "answer_html": "<p><img src=\"/assets/raw_database/json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n", 
     "answer_latex": "\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png}", 
     "contributors": [
         "Konradbe", 
@@ -27,7 +27,7 @@
     "question": "1 (e)", 
     "rating": 96, 
     "sols_html": [
-        "<p>There are infinitely many possible solutions to this problem. As long you sketch a continuous function that has slope equal to 1 the near <span class=\"math\">\\(x = 0\\)</span> on the left, a slope equal to -1 near <span class=\"math\">\\(x = 0\\)</span> on the right and touches the point <span class=\"math\">\\((0,3)\\)</span>, then you should get full marks. Click the images below to see a couple of examples.</p>\n<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_1.png\" alt=\"image\" /></p>\n<p><img src=\"../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n"
+        "<p>There are infinitely many possible solutions to this problem. As long you sketch a continuous function that has slope equal to 1 the near <span class=\"math\">\\(x = 0\\)</span> on the left, a slope equal to -1 near <span class=\"math\">\\(x = 0\\)</span> on the right and touches the point <span class=\"math\">\\((0,3)\\)</span>, then you should get full marks. Click the images below to see a couple of examples.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH104/December_2012/MATH104FINAL_2012_1e_1.png\" alt=\"image\" /></p>\n<p><img src=\"/assets/raw_database/json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png\" alt=\"image\" /></p>\n"
     ], 
     "sols_latex": [
         "There are infinitely many possible solutions to this problem. As long\nyou sketch a continuous function that has slope equal to 1 the near\n$x = 0$ on the left, a slope equal to -1 near $x = 0$ on the right and\ntouches the point $(0,3)$, then you should get full marks. Click the\nimages below to see a couple of examples.\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_1.png}\n\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH104/December_2012/MATH104FINAL_2012_1e_2.png}"

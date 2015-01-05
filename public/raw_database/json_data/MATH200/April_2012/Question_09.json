@@ -12,7 +12,7 @@
         "QGT"
     ], 
     "hints_html": [
-        "<p>Make a sketch of the sphere and the paraboloid to find the region of integration.</p>\n<p><img src=\"../json_data/MATH200/April_2012/Math200Apr12Q9.jpg\" alt=\"image\" /></p>\n", 
+        "<p>Make a sketch of the sphere and the paraboloid to find the region of integration.</p>\n<p><img src=\"/assets/raw_database/json_data/MATH200/April_2012/Math200Apr12Q9.jpg\" alt=\"image\" /></p>\n", 
         "<p>According to the figure in Hint 1, the region of integration is bounded from below by the paraboloid <span class=\"math\">\\(\\displaystyle z=x^2+y^2\\)</span> and from above by the sphere <span class=\"math\">\\(\\displaystyle x^2+y^2+z^2 = 6\\)</span></p>\n", 
         "<p>Switch to cylindrical coordinates and calculate the intersection of the paraboloid and the sphere to find the upper integration boundary for the radius.</p>\n"
     ], 

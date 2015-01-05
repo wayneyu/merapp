@@ -1,5 +1,5 @@
 {
-    "answer_html": "<dl>\n\n<dd><p><img src=\"../json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
+    "answer_html": "<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n", 
     "answer_latex": "\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2012/Ellipse2012.png}\n\\end{description}", 
     "contributors": [
         "Konradbe", 
@@ -26,7 +26,7 @@
     "question": "8 (d)", 
     "rating": 100, 
     "sols_html": [
-        "<p>If <span class=\"math\">\\(z = e\\)</span> then</p>\n<p><span class=\"math\">\\(e = e^{x^2 + 4y^2}\\)</span> and by taking the logarithm of both sides:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n1 = x^2 + 4y^2\\end{aligned}\\]</span></p>\n<p>This is an ellipse.</p>\n<p>The four easiest points are the intercepts.</p>\n<p>If <span class=\"math\">\\(x=0\\)</span> then <span class=\"math\">\\(4y^2 = 1\\)</span> and <span class=\"math\">\\(y = \\pm 1/2\\)</span> are the y-intercepts. If <span class=\"math\">\\(y=0\\)</span> then <span class=\"math\">\\(x^2 = 1\\)</span> and <span class=\"math\">\\(x= \\pm 1\\)</span> are the x-intercepts. The sketch is below:</p>\n<dl>\n\n<dd><p><img src=\"../json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
+        "<p>If <span class=\"math\">\\(z = e\\)</span> then</p>\n<p><span class=\"math\">\\(e = e^{x^2 + 4y^2}\\)</span> and by taking the logarithm of both sides:</p>\n<p><span class=\"math\">\\[\\begin{aligned}\n\\displaystyle\n1 = x^2 + 4y^2\\end{aligned}\\]</span></p>\n<p>This is an ellipse.</p>\n<p>The four easiest points are the intercepts.</p>\n<p>If <span class=\"math\">\\(x=0\\)</span> then <span class=\"math\">\\(4y^2 = 1\\)</span> and <span class=\"math\">\\(y = \\pm 1/2\\)</span> are the y-intercepts. If <span class=\"math\">\\(y=0\\)</span> then <span class=\"math\">\\(x^2 = 1\\)</span> and <span class=\"math\">\\(x= \\pm 1\\)</span> are the x-intercepts. The sketch is below:</p>\n<dl>\n\n<dd><p><img src=\"/assets/raw_database/json_data/MATH105/April_2012/Ellipse2012.png\" alt=\"image\" /></p>\n</dd>\n</dl>\n"
     ], 
     "sols_latex": [
         "If $z = e$ then\n\n$e = e^{x^2 + 4y^2}$ and by taking the logarithm of both sides:\n\n\\begin{align*}\n\\displaystyle\n1 = x^2 + 4y^2\n\\end{align*}\n\nThis is an ellipse.\n\nThe four easiest points are the intercepts.\n\nIf $x=0$ then $4y^2 = 1$ and $y = \\pm 1/2$ are the y-intercepts. If\n$y=0$ then $x^2 = 1$ and $x= \\pm 1$ are the x-intercepts. The sketch is\nbelow:\n\n\\begin{description}\n\\itemsep1pt\\parskip0pt\\parsep0pt\n\\item[]\n\\includegraphics[width=0.5\\textwidth]{../json_data/MATH105/April_2012/Ellipse2012.png}\n\\end{description}"

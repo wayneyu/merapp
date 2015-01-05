@@ -23,6 +23,7 @@ GET     /questions/:course/:term_year/:q                controllers.QuestionCont
 GET     /questions/:course/:term_year/:q/json           controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
 GET     /questions/:course/:term_year/:q/edit           controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
 POST    /questions/:course/:term_year/:q/edit           controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
+POST    /questions/upload                               controllers.QuestionController.upload(url: String)
 
 POST    /questions/submit                               controllers.QuestionController.questionSubmit()
 POST    /questions/search/submit                        controllers.QuestionController.searchByKeywordsSubmit()

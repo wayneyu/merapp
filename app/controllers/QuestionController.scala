@@ -30,7 +30,7 @@ object QuestionController extends Controller with MongoController {
 
   val collection = db[BSONCollection]("questions")
 
-  def questions = Action.async {
+  def questions = Action.async { implicit request =>
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
 
@@ -81,7 +81,7 @@ object QuestionController extends Controller with MongoController {
 
   def questionEdit(course: String, term_year: String, q: String) = question(course, term_year, q, true)
 
-  def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async {
+  def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async { implicit request =>
     val (term: String, year: Int) = getTermAndYear(term_year)
 
     val question = questionQuery(course, term_year, q)
@@ -532,4 +532,19 @@ object QuestionController extends Controller with MongoController {
     }
   }
 
+  def upload(path: String) = Action(parse.multipartFormData) { request =>
+    request.body.file("file").map { file =>
+      import java.io.File
+      val FILE_FOLDER = "public/raw_database/json_data/"
+      val filename = file.filename
+      val pattern = "questions\\/(.*?\\/.*?)\\/".r
+      val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
+      val to = new File(FILE_FOLDER + subfolder, filename)
+      Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
+      file.ref.moveTo(to, true)
+      Ok("File uploaded to " + to.getPath)
+    }.getOrElse {
+      BadRequest("Image missing")
+    }
+  }
 }

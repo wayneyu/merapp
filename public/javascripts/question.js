@@ -38,7 +38,7 @@ $(document).ready(function (){
     $("[id$='_edit'] .submit_button").click(function (){
         var parentId = $(this).parent().parent().parent().attr('id');
         debugger;
-        var key = parentId.match('.*(?=_edit)')[0].replace('_','.');
+        var key = parentId.match('.*(?=_edit)')[0].replace(/_(?!.*_)/,".")
         var url = window.location.pathname;
         var textarea = $("#" + parentId + " textarea");
         var newValue = textarea.val();

@@ -309,9 +309,50 @@ object QuestionController extends Controller with MongoController {
 
     questions.map{
       st => Ok(BSONArrayFormat.writes(
-        BSONArray(st.map(d => d.getAs[BSONString]("question").get)
+        BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)
       )))
     }
+
+  }
+
+  def questionSort(tis: BSONDocument, tat: BSONDocument): Boolean = {
+    questionSort(tis.getAs[String]("question").get, tat.getAs[String]("question").get)
+  }
+
+  def questionSort(tis: BSONString, tat: BSONString): Boolean = {
+    questionSort(tis.value, tat.value)
+  }
+
+  def questionSort(tis: String, tat: String): Boolean = {
+    val pattern = ".*\\([a-zA-Z]+\\).*"
+    val str1 = tis
+    val str2 = tat
+    def diff(s1: String, s2: String) = Math.abs(s1.size - s2.size)
+    val postfix = " (a)"
+    val prefix = "0"
+
+    def prep(nprefix: Int, str: String,  npostfix: Int) = prefix*nprefix + str + postfix*npostfix
+
+    def append(str1: String, str2: String): (String, String) = {
+      val m1 = str1.matches(pattern)
+      val m2 = str2.matches(pattern)
+      if (!(m1 ^ m2)) (str1, str2)
+      else if (m2) (prep(0, str1, 1), str2)
+      else (str1, prep(0, str2, 1))
+    }
+
+    def prepend(str1: String, str2: String): (String, String) = {
+      val n1 = str1.size
+      val n2 = str2.size
+      if (n1 < n2) (prep(diff(str1, str2), str1, 0), str2)
+      else if (n1 > n2) (str1, prep(diff(str1, str2), str2, 0))
+      else (str1, str2)
+    }
+
+    val (s1, s2) = append(str1, str2)
+    val (ss1, ss2) = prepend(s1, s2)
+
+    ss1 < ss2
 
   }
 
@@ -337,7 +378,7 @@ object QuestionController extends Controller with MongoController {
 
     val questions = db.command(command)
 
-    questions.map{ _.toList }
+    questions.map{ _.toList.sortWith(questionSort) }
   }
 
   def searchById(id: String) = Action.async {

@@ -469,7 +469,7 @@ object QuestionController extends Controller with MongoController {
 
     val list_of_topics = topics.map{
       l => l.flatMap(
-        doc => doc.getAs[List[String]]("topics").getOrElse(Nil)
+        doc => doc.getAs[List[String]]("topics").getOrElse(List("no_topic_specified"))
       ).toList.sorted
     }
 

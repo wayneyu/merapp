@@ -25,8 +25,9 @@
     </table>
 
     <h2>Topics</h2>
+    <i>The percentage of questions in @course involving a particular topic.</i><br><br>
     @for( topic <- topics ){
-        <span class="topic">@topic</span>
+        <span class="topic">@topic.replace("_"," ").replace("%27","'")</span>
     }
 </div>
 

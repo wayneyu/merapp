@@ -1,0 +1,73 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=HYSI-AHUqRM", 
+            "text": "Introcution to Limits", 
+            "title": "Main ideas"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=zpcBkRpqHqQ", 
+            "text": "An example", 
+            "title": "Limits by Factoring and Cancelling"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=g0ni2_P32eo", 
+            "text": "An example", 
+            "title": "Limit by Finding a Common Denominator"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=eCQupcOGkRg", 
+            "text": "An example", 
+            "title": "Computing a limit by expanding and simplifying"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=WVj284EvgBI", 
+            "text": "An example", 
+            "title": "Computing a limit by multiplying by a conjugate"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=TUPkwGlrT8A", 
+            "text": "An example", 
+            "title": "Limits with Absolute Values"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=8Yj07PBIw9M", 
+            "text": "Examples", 
+            "title": "The Limit sin(x)/x Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=iyTPDuh-LF8", 
+            "text": "Like a lemon!", 
+            "title": "Squeeze Theorem"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=-vwcLvb9A0s", 
+            "text": "An example", 
+            "title": "Infinite Limits"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=FVJNuukADeQ", 
+            "text": "Use at own risk!", 
+            "title": "Infinite Limit Shortcuts"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=mrKg_5CsfX0", 
+            "text": "A trickier example", 
+            "title": "Infinite Limits with a Radical"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Limit_of_a_function", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Limit_of_a_function"
+}

@@ -40,7 +40,7 @@
     "statement_raw": "'''''Full-Solution Problem.''' Justify your answers and '''show all your work.''' Simplification of answers is not required unless explicitly stated.''\n\nLet &lt;math>T_2(x)&lt;/math> be the second degree Taylor polynomial about &lt;math>a=8&lt;/math> for\n:&lt;math>\nf(x)= \\sqrt[3]{x}\n&lt;/math>\n\nIs &lt;math>T_2(8.1)&lt;/math> larger than &lt;math>\\sqrt[3]{8.1}&lt;/math>? Please justify your answer.\n", 
     "term": "December", 
     "topics": [
-        "Taylor%27s_remainder_theorem", 
+        "Taylor's_remainder_theorem", 
         "Taylor_series"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_04_(b)", 

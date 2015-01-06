@@ -40,8 +40,8 @@
     "statement_raw": "'''For each of the following congruences, find the least nonnegative integer ''x'' that satisfies it.'''\n\n&lt;math> \\displaystyle -9x \\equiv 3^{162} \\mod{17}&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_theorem", 
-        "Fermat%27s_little_theorem"
+        "Euler's_theorem", 
+        "Fermat's_little_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_02_(a)_iv", 
     "year": 2008

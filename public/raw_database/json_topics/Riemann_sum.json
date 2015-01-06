@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=LkdodHMcBuc", 
+            "text": null, 
+            "title": "The basics of the definite integral and Riemann sums"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=Gi8_a7NlKAQ", 
+            "text": "Approximating area under a curve (definite integral) using rectangles.", 
+            "title": "The rectangle method"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=gFpHHTxsDkI", 
+            "text": "A two part series on computing definite integrals using Riemann sums.", 
+            "title": "An example computation (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=GE4OLfmJ8P8", 
+            "text": "A two part series on computing definite integrals using Riemann sums.", 
+            "title": "An example computation (Part 2)"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Riemann_sum", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Riemann_sum"
+}

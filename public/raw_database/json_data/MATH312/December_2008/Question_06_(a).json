@@ -40,7 +40,7 @@
     "statement_raw": "The purpose of this problem is to prove the following theorem.\n\n'''Theorem 1.''' For all positive integers &lt;math> \\displaystyle a,m&lt;/math> we have &lt;math> \\displaystyle a^{m} \\equiv a^{m-\\phi(m)} \\mod{m}&lt;/math>\n\nLet &lt;math> \\displaystyle a,m&lt;/math> be positive integers. For &lt;math> \\displaystyle m=1&lt;/math>, the theorem holds trivially, so we assume from now on that &lt;math> \\displaystyle m > 1 &lt;/math> and write its prime-power factorization as &lt;math>\\displaystyle m = p_{1}^{e_{1}} \\cdot ... \\cdot p_{k}^{e_{k}}&lt;/math> for different primes &lt;math> \\displaystyle p_{1},...,p_{k}&lt;/math> and positive integer exponents &lt;math> \\displaystyle e_{1},...,e_{k}&lt;/math> and some positive integer ''k''. Let &lt;math> \\displaystyle i \\in \\{1,..,k\\}&lt;/math> and focus on the prime power &lt;math> \\displaystyle p_{i}^{e_{i}}&lt;/math> in the prime-power factorization of ''m''.\n\n'''(a)''' Prove that if &lt;math> \\displaystyle p_{i}\\nmid a&lt;/math> then &lt;math> \\displaystyle p_{i}^{e_{i}} \\mid (a^{\\phi(m)}-1)&lt;/math>\n\n''Hint:'' Use Euler's theorem and prove/use that &lt;math> \\displaystyle \\phi(p_{i}^{e_{i}}) \\mid \\phi(m)&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_theorem"
+        "Euler's_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_06_(a)", 
     "year": 2008

@@ -46,7 +46,7 @@
     "statement_raw": "Suppose that &lt;math> \\displaystyle p = 8n+5 &lt;/math> is a prime and that ''a'' is a quadratic residue modulo ''p''. Show that the two solutions of &lt;math> \\displaystyle x^2 \\equiv a \\mod{p} &lt;/math> are given by one of the following possibilities: &lt;math> \\displaystyle x \\equiv \\pm a^{n+1} \\mod{p} &lt;/math> or &lt;math> \\displaystyle x \\equiv \\pm 2^{2n+1}a^{n+1} \\mod{p}&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_criterion", 
+        "Euler's_criterion", 
         "Legendre_symbol"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2006/Question_03", 

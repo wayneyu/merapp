@@ -41,7 +41,7 @@
     "statement_raw": "Full-Solution Problems. In questions 2-8, justify your answers and show all your work. If a box is provided, write your final answer there. Simplification of answers is not required unless explicitly requested.\n\nWhen an apple is taken from a refrigerator, its temperature is &lt;math> 3^{\\circ}C &lt;/math>. After 30 minutes in a &lt;math> 19^{\\circ}C &lt;/math> room, its temperature is &lt;math> 11^{\\circ}C&lt;/math>.\n\nAssuming that the temperature of the apple satisfies Newton's Law of Cooling, write the differential equation satisfied by the temperature &lt;math> T(t) &lt;/math> of the apple at time ''t''.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_law_of_cooling"
+        "Newton's_law_of_cooling"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_02_(a)", 
     "year": 2010

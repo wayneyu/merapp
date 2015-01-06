@@ -1,0 +1,37 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=x_0YWeHXZFE", 
+            "text": null, 
+            "title": "On work and Hooke's law (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=_YXA8JeGLjo", 
+            "text": null, 
+            "title": "On work and Hooke's law (Part 2)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=fJtxJv5sdqo", 
+            "text": "Draining a tank can take a lot of work. How much work? Click on the next video to find out!", 
+            "title": "Example: Draining a tank"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=2pbInn9PkHQ", 
+            "text": null, 
+            "title": "Example: The cable lifting problem (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=oWcN96kcbkM", 
+            "text": null, 
+            "title": "Example: The cable lifting problem (Part 2)"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Work", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Work"
+}

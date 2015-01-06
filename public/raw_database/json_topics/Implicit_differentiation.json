@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=5yTVUZCaU6k", 
+            "text": "Here are the core concepts of implicit differentiation.", 
+            "title": "Main ideas"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=anq_8ARu08g", 
+            "text": "Another example of implicit differentiation.", 
+            "title": "More Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=2dv_PfEFZXY", 
+            "text": "Yet another example of implicit differentiation.", 
+            "title": "More Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=X0aw9-kXfY4", 
+            "text": "Taking a double derivative implicitly.", 
+            "title": "Second Derivative"
+        }
+    ], 
+    "parent": "Differentiate", 
+    "topic": "Implicit_differentiation", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Implicit_differentiation"
+}

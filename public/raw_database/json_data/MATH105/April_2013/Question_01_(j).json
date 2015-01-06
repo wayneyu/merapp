@@ -41,7 +41,7 @@
     "statement_raw": "&lt;b>Short-Answer Questions&lt;/b>. Put your answer in the box provided but show your\nwork also. Each question is worth 3 marks, but not all questions are of equal difficulty.\n\nFind a bound for the error in approximating &lt;math>\\displaystyle \\int_{1}^{5}\\frac{1}{x}\\,dx&lt;/math> using Simpson\u2019s rule with &lt;math>n = 4&lt;/math>.\nDo not write down Simpson\u2019s rule approximation &lt;math>\\displaystyle S_{4}&lt;/math>.\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2013/Question_01_(j)", 
     "year": 2013

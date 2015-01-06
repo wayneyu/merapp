@@ -48,7 +48,7 @@
     "statement_raw": "'''''Short-Answer Questions.''' Put your answer in the box provided but show your work also. Each question is worth 3 marks, but not all questions are of equal difficulty. Full marks will be given for correct answers placed in the box, but at most 1 mark will be given for incorrect answers. Unless otherwise stated, it is not necessary to simplify your answers in this question.''\n\nUse Newton's Method to find the second approximation ''x''&lt;sub>2&lt;/sub> to\n:&lt;math>\\sqrt[6]{2}&lt;/math>\nstarting with the inital approximation ''x''&lt;sub>1&lt;/sub>=1.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2011/Question_01_(m)", 
     "year": 2011

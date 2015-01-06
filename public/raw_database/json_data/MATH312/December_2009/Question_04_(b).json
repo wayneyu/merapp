@@ -44,7 +44,7 @@
     "statement_raw": "Suppose that ''p'' is an odd prime. Then show that \n\n&lt;math> \\displaystyle 1^{2} \\cdot 3^{2} \\cdot 5^{2} \\cdot ... \\cdot (p-2)^{2} \\equiv (-1)^{(p+1)/2} \\mod{p}&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Wilson%27s_theorem"
+        "Wilson's_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2009/Question_04_(b)", 
     "year": 2009

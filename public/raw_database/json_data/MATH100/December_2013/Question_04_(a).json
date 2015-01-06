@@ -44,7 +44,7 @@
     "statement_raw": "'''Short-Answer Question. Simplify your answer as much as possible and show your work.'''\n\nUse Newton's method with an initial approximation of &lt;math>\\displaystyle x_1 = -1&lt;/math> to find &lt;math>\\displaystyle x_2&lt;/math>, where &lt;math>\\displaystyle x_2&lt;/math> is the second approximation to the root of the equation &lt;math>x^7 + 4 = 0&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2013/Question_04_(a)", 
     "year": 2013

@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=hEPk36Yncxg", 
+            "text": "A review on summation notation.", 
+            "title": "A quick review"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=xjmy5hkZccY", 
+            "text": null, 
+            "title": "Geometric series (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=C8piSCOdo1Y", 
+            "text": null, 
+            "title": "Geometric series (Part 2)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=7tDK_UjdWOs", 
+            "text": "Another example of geometric series expressing decimals as rational numbers.", 
+            "title": "Geometric series with rational numbers"
+        }
+    ], 
+    "parent": "Approximations_and_series", 
+    "topic": "Geometric_series", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Geometric_series"
+}

@@ -40,7 +40,7 @@
     "statement_raw": "Write down the Simpson's Rule approximation &lt;math> S_{4} &lt;/math> for &lt;math> \\int_{0}^{4}\\frac{1}{1 + x^{3}}\\, dx &lt;/math>. You may leave your answer expressed as a sum of fractions.\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2007/Question_01_(d)", 
     "year": 2007

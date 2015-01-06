@@ -46,7 +46,7 @@
     "statement_raw": "Let ''n'' be an integer such that &lt;math> \\displaystyle n > 1&lt;/math>. Prove that &lt;math> \\displaystyle n \\nmid (2^{n}-1)&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Fermat%27s_little_theorem"
+        "Fermat's_little_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2011/Question_01", 
     "year": 2011

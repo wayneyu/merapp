@@ -40,7 +40,7 @@
     "statement_raw": "For which of the following values of ''k'' does &lt;math> \\displaystyle x^2 + y^2 = k! &lt;/math> have a solution with ''x'', ''y'' integers: \n\n(a) &lt;math> \\displaystyle k = 6 &lt;/math>\n(b) &lt;math> \\displaystyle k = 12 &lt;/math>\n(c) &lt;math> \\displaystyle k = 24 &lt;/math>\n(d) &lt;math> \\displaystyle k = 48 &lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Fermat%27s_theorem_on_sums_of_two_squares"
+        "Fermat's_theorem_on_sums_of_two_squares"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2006/Question_04", 
     "year": 2006

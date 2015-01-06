@@ -42,7 +42,7 @@
     "statement_raw": "Let &lt;math> I = \\int_{1}^{2} (1/x)\\, dx &lt;/math>. Without computing ''I'', find an upper bound for &lt;math> |I - S_{4}|&lt;/math>. You may use the fact that if &lt;math>|f^{(4)}(x)|\\leq K&lt;/math> on the interval &lt;math> [a,b]&lt;/math>, then the error in using ''S''&lt;sub>''n''&lt;/sub> to approximate &lt;math>\\int_{a}^{b}f(x)\\,dx&lt;/math> has absolute value less than or equal to &lt;math>K(b-a)^{5}/180n^{4}&lt;/math>.\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_07_(c)", 
     "year": 2012

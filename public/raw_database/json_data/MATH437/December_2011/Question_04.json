@@ -49,7 +49,7 @@
     "statement_raw": "Let &lt;math> \\displaystyle p \\geq 5&lt;/math> be a prime number. Let &lt;math> \\displaystyle a,b \\in \\mathbb{N}&lt;/math> such that \n\n(i) &lt;math> \\displaystyle \\gcd(a,b) = 1&lt;/math>\n\n(ii)&lt;math> \\displaystyle \\sum_{i=1}^{p-1}\\frac{1}{i} = \\frac{a}{b}&lt;/math>.\n\nProve that &lt;math> \\displaystyle p^{2} \\mid a&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Wilson%27s_theorem"
+        "Wilson's_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2011/Question_04", 
     "year": 2011

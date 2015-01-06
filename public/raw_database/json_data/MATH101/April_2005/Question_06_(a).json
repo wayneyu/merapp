@@ -46,7 +46,7 @@
     "statement_raw": "A tree trunk is 60 feet long and has circular cross sections. The diameters in feet measured at 10-foot intervals starting at the bottom of the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in cubic feet, is computed using the formula\n\n:&lt;math> V = \\int_0^{60} A(y)\\,dy, &lt;/math>\n\nwhere &lt;math>A(y)&lt;/math> is the cross-sectional area of the trunk, in square feet, &lt;math>y&lt;/math> feet above the bottom of the tree.\n\n(a) Using a Simpson's Rule approximation for &lt;math>V&lt;/math>, give an estimate for the volume of wood in the tree trunk.\n\n(Do not simplify your answer.)\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_06_(a)", 
     "year": 2005

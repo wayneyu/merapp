@@ -46,7 +46,7 @@
     "statement_raw": "'''Full-Solution Problems'''. In questions 5-11, justify your answers and '''show all your work'''. If a box is provided, write your final answer there. '''Unless otherwise indicated, simplification of numerical answers is required in these questions.'''\n\nGive a complete proof that for all ''x'' satisfying &lt;math> -1 \\leq x \\leq 1&lt;/math>,\n\n\n&lt;math>\n0 \\leq \\cos(x) - \\left(1 - \\frac{x^{2}}{2}\\right) \\leq \\frac{1}{24}\n&lt;/math>\n\n\nHint: A question on Taylor polynomials has not yet appeared on this exam.\n", 
     "term": "December", 
     "topics": [
-        "Taylor%27s_remainder_theorem", 
+        "Taylor's_remainder_theorem", 
         "Taylor_series"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2012/Question_11", 

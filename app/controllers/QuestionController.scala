@@ -466,6 +466,7 @@ object QuestionController extends Controller with MongoController {
   def course(course: String) = Action.async {
     val exams = examsForCourse(course)
     val topics = topicsForCourse(course)
+    val num_questions = topics.map{ ts => ts.size }
 
     val list_of_topics = topics.map{
       l => l.flatMap(
@@ -476,14 +477,15 @@ object QuestionController extends Controller with MongoController {
     val res = for {
       e <- exams
       t <- list_of_topics
-    } yield (e, t)
+      num_questions <- num_questions
+    } yield (e, t, num_questions)
 
-    res.map{ case(exams, topics) =>
+    res.map{ case(exams, topics, num_questions) =>
       Logger.info(topics mkString "," )
       Ok(views.html.course(course,
         exams.map{
           d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-        }, topics
+        }, topics, num_questions
       ))
     }
   }

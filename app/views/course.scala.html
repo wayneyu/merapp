@@ -1,4 +1,4 @@
-@(course: String, exams: List[String], topics: List[String])
+@(course: String, exams: List[String], topics: List[String], num_questions: Int)
 
 @main(course){
 <div id="exams">
@@ -34,7 +34,7 @@
 <svg class="chart"></svg>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 
-<script>
+<script> // Prepares data and plots the topics bar graph.
 var frequencies = {};
 $(".topic").each(function(){
     new_topic = $(this).text();
@@ -43,8 +43,8 @@ $(".topic").each(function(){
     $(this).text("");
 });
 
-var data_list = [];
-all_values = [];
+var data_list = [],
+    all_values = [];
 for (var key in frequencies) {
     var val = frequencies[key];
     all_values.push(val);
@@ -63,7 +63,7 @@ var x = d3.scale.linear()
 
 var chart = d3.select(".chart")
     .attr("width", width)
-    .attr("height", barHeight * data_list.length);
+    .attr("height", barHeight * @num_questions);
 
 var bar = chart.selectAll("g")
     .data(data_list)
@@ -78,8 +78,7 @@ bar.append("text")
     .attr("x", function(d) { return 0; })
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
-    .text(function(d) { return '(' + Math.round(100*d.value/d3.sum(all_values)) + '%) ' + d.name; });
-    // TODO: The percentage is off because it counts the number of individual topics, not the number of questions.
+    .text(function(d) { return '(' + (100*d.value/@num_questions).toFixed(1) + '%) ' + d.name; });
     //.on("click", function() { window.open("http://google.com"); }); // to add a link
 </script>
 

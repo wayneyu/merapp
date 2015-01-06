@@ -46,7 +46,7 @@
     "statement_raw": "You are using the Newton-Raphson Method to approximate a solution of an equation &lt;i>f(x) = x&lt;/i> and you make an initial guess &lt;math>x_0 = 3&lt;/math> to the solution.  If the tangent line to &lt;i>y = f(x)&lt;/i> at &lt;i>x = 3&lt;/i> has the equation &lt;i>y = 5x - 7&lt;/i>, what is the next approximation &lt;math>x_1&lt;/math> to the solution?\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2010/Question_01_(g)", 
     "year": 2010

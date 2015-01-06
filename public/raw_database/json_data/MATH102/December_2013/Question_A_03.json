@@ -42,7 +42,7 @@
     "statement_raw": "Consider the differential equation and initial condition\n\n&lt;math>\\frac{dy}{dt} = 2 - y^2,\\quad y(0) = 1&lt;/math>\n\nUse Euler's method with one step of size &lt;math>\\Delta t = 0.1&lt;/math> to approximate the value of the solution at time &lt;math>t = 0.1&lt;/math>\n\n(a) &lt;math> y(0.1) = 2 &lt;/math>\n\n(b) &lt;math> y(0.1) = 2.1 &lt;/math>\n\n(c) &lt;math> y(0.1) = 2.2&lt;/math>\n\n(d) &lt;math> y(0.1) = 1.2&lt;/math>\n\n(e) &lt;math> y(0.1) = 1.1&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_method"
+        "Euler's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2013/Question_A_03", 
     "year": 2013

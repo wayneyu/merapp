@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=RGtCw5E7gBc", 
+            "text": null, 
+            "title": "Overview of Euler's method"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=nYXclUjpFaw", 
+            "text": null, 
+            "title": "Example 1"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=RsJ4m8n6H80", 
+            "text": null, 
+            "title": "Example 2"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=AwdwCAqcdMQ", 
+            "text": null, 
+            "title": "Example 3"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Euler's_method", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Euler's_method"
+}

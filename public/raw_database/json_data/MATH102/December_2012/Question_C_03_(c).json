@@ -41,7 +41,7 @@
     "statement_raw": "This question is about approximating the value of &lt;math> b = \\sqrt{48} &lt;/math>.\n\n'''(c)''' Determine an appropriate function that has a zero at ''b'' and apply one iteration of Newton's method (i.e. find ''x&lt;sub>1&lt;/sub>'') to estimate ''b'' starting with an initial guess ''x&lt;sub>0&lt;/sub>'' that is the nearest integer to the actual value.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2012/Question_C_03_(c)", 
     "year": 2012

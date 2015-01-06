@@ -41,7 +41,7 @@
     "statement_raw": "''Evaluate the following limit, if it exists.''\n\n:&lt;math> \\displaystyle\n\\lim_{x \\to \\pi^+} \\frac{\\sin x}{x-\\pi}\n&lt;/math>\n", 
     "term": "April", 
     "topics": [
-        "L%27Hopital%27s_rule", 
+        "L'Hopital's_rule", 
         "Limit_of_a_function"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH110/April_2011/Question_02_(a)", 

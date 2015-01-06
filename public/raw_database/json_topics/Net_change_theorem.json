@@ -1,0 +1,19 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=brNADtx8Qu8", 
+            "text": "Here are videos on applications of this theorem to position, velocity and acceleration.", 
+            "title": "Application (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=-sYy0XMed4Y", 
+            "text": "Here are videos on applications of this theorem to position, velocity and acceleration.", 
+            "title": "Application (Part 2)"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Net_change_theorem", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Net_change_theorem"
+}

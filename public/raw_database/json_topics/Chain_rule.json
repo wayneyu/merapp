@@ -1,0 +1,73 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=6kScLENCXLg", 
+            "text": "Here is an introduction to the chain rule.", 
+            "title": "Main ideas"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=S0f-mtRVu-k", 
+            "text": "Here are some basic problems", 
+            "title": "Main ideas"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=cngzQ5xIOBY", 
+            "text": "Here is a problem that mixes techniques.", 
+            "title": "Chain Rule, Product Rule and Factoring"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=cngzQ5xIOBY", 
+            "text": "Here is another problem that mixes techniques.", 
+            "title": "Chain Rule, Product Rule and Simplifying"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=iKdkJi554Qg", 
+            "text": "Here is another problem that mixes techniques.", 
+            "title": "Chain Rule, Product Rule and Simplifying"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=IZzSvA8zBTY", 
+            "text": "Here is another problem that mixes techniques.", 
+            "title": "Chain Rule, Quotient Rule and Simplifying"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=k8S9MKPXZZ8", 
+            "text": "This example is a more complicated example of differentiating", 
+            "title": "Harder Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=zwuQAOFvIV4", 
+            "text": "This example is a more complicated example of differentiating", 
+            "title": "Harder Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=VxWapdOEUnM", 
+            "text": "This example is a more complicated example of differentiating", 
+            "title": "Harder Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=lnTJ7bERPpI", 
+            "text": "This example is a more complicated example of differentiating", 
+            "title": "Harder Examples"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=eqVEjX2yAFM", 
+            "text": "This example is a more complicated example of differentiating", 
+            "title": "Harder Examples"
+        }
+    ], 
+    "parent": "Differentiate", 
+    "topic": "Chain_rule", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Chain_rule"
+}

@@ -42,7 +42,7 @@
     "statement_raw": "Newton's Method is used to approximate a solution of the equation &lt;math> \\displaystyle e^{x} - x^{2} = 0 &lt;/math>, starting with the initial approximation &lt;math> x_{1} = 0 &lt;/math>. Find &lt;math> x_{3} &lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH100/December_2010/Question_01_(m)", 
     "year": 2010

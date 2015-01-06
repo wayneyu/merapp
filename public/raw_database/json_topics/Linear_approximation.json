@@ -1,0 +1,19 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=llV8Zo7IbaY", 
+            "text": "Here is a video highlighting the main ideas of linear approximation.", 
+            "title": "Main ideas"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=30n1eiu8lFs", 
+            "text": "Here is a video discussing the error term in a linear approximation (in other words, a Taylor series approximation with ''n'' equal 1).", 
+            "title": "The error term"
+        }
+    ], 
+    "parent": "Approximations_and_series", 
+    "topic": "Linear_approximation", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Linear_approximation"
+}

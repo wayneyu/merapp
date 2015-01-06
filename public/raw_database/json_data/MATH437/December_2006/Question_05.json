@@ -49,7 +49,7 @@
     "statement_raw": "Show that if ''d'' is an odd squarefree integer then a necessary condition for the equation &lt;math> \\displaystyle x^2 -d  y^2 = -1 &lt;/math> to have an integer solution is that all the primes dividing ''d'' must be of the form &lt;math> \\displaystyle 4n + 1 &lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_criterion", 
+        "Euler's_criterion", 
         "Legendre_symbol", 
         "Pell_equation"
     ], 

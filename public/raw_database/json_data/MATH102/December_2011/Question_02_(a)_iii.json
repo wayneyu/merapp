@@ -22,7 +22,7 @@
     ], 
     "hints_raw": [
         "As &lt;math>x \\to \\infty&lt;/math>, what does &lt;math>e^{-x}&lt;/math> approach? Can you think of a way to rewrite this limit in terms of a different variable?\n", 
-        "If the value of the limit\n:&lt;math>\n\\lim_{z \\rightarrow 0}\\frac{\\sin{z}}{z}\n&lt;/math>\nis unfamiliar to you, it can be evaluated using [http://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule L'Hopital's rule] or by using the fact that\n:&lt;math>\n\\sin(z) \\approx z - \\frac{z^{3}}{6}\n&lt;/math>\nfor &lt;math>z&lt;/math> near 0.\n"
+        "If the value of the limit\n:&lt;math>\n\\lim_{z \\rightarrow 0}\\frac{\\sin{z}}{z}\n&lt;/math>\nis unfamiliar to you, it can be evaluated using [http://en.wikipedia.org/wiki/L'H%C3%B4pital's_rule L'Hopital's rule] or by using the fact that\n:&lt;math>\n\\sin(z) \\approx z - \\frac{z^{3}}{6}\n&lt;/math>\nfor &lt;math>z&lt;/math> near 0.\n"
     ], 
     "num_votes": 1, 
     "question": "2 (a) iii", 

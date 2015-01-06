@@ -27,7 +27,7 @@
     <h2>Topics</h2>
     <i>The percentage of questions in @course involving a particular topic.</i><br><br>
     @for( topic <- topics ){
-        <span class="topic">@topic.replace("_"," ").replace("%27","'")</span>
+        <span class="topic">@topic.replace("_"," ")</span>
     }
 </div>
 
@@ -63,7 +63,7 @@ var x = d3.scale.linear()
 
 var chart = d3.select(".chart")
     .attr("width", width)
-    .attr("height", barHeight * @num_questions);
+    .attr("height", barHeight * data_list.length);
 
 var bar = chart.selectAll("g")
     .data(data_list)

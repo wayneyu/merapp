@@ -41,8 +41,8 @@
     "statement_raw": "'''For each of the following statements, indicate if it holds for every positive integers &lt;math>\\displaystyle a, b, c &lt;/math> (if so, a simple ''true'' without a proof suffices, if not, a ''false'' together with a counterexample is  expected).'''\n\nIf &lt;math> \\displaystyle \\gcd(a,b) = 1&lt;/math>, then &lt;math> \\displaystyle a^{b-1} \\equiv 1 \\mod{b}&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_theorem", 
-        "Fermat%27s_little_theorem"
+        "Euler's_theorem", 
+        "Fermat's_little_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_01_(e)", 
     "year": 2008

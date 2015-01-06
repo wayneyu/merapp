@@ -52,7 +52,7 @@
     "statement_raw": "Let &lt;math> \\displaystyle a \\in \\mathbb{Z}&lt;/math> such that &lt;math> \\displaystyle a \\equiv 5 \\mod{8}&lt;/math> and let &lt;math> \\displaystyle \\alpha \\in \\mathbb{N}&lt;/math>.\n\n'''(i)''' Prove that the order of ''a'' modulo &lt;math> \\displaystyle 2^{\\alpha + 2}&lt;/math> is &lt;math> \\displaystyle 2^{\\alpha}&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_theorem", 
+        "Euler's_theorem", 
         "Mathematical_induction"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH437/December_2011/Question_07_(i)", 

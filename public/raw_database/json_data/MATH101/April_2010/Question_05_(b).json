@@ -41,7 +41,7 @@
     "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nAn unknown function &lt;math> f(x) &lt;/math> has the following values: &lt;math> f(0) = 1&lt;/math>, &lt;math> f(1) = 2&lt;/math>, &lt;math> f(2) = 0&lt;/math>, &lt;math> f(3) = -2&lt;/math>, &lt;math> f(4) = -4. &lt;/math>\n\nWrite down the Simpson's approximation &lt;math> S_4 &lt;/math> for &lt;math> \\int_0^4 f(x) dx. &lt;/math>\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_05_(b)", 
     "year": 2010

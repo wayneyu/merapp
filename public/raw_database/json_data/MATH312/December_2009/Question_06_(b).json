@@ -47,7 +47,7 @@
     "statement_raw": "For any positive integers ''a'' and ''n'', show that &lt;math> \\displaystyle a \\equiv a^{4n+1} \\mod{10}&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Euler%27s_theorem"
+        "Euler's_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2009/Question_06_(b)", 
     "year": 2009

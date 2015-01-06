@@ -21,7 +21,7 @@
         "What does a single step of Newton's method look like? (It may be helpful\nto review\n{Newton's\nMethod}.)"
     ], 
     "hints_raw": [
-        "What does a single step of Newton's method look like? (It may be helpful to review [http://en.wikipedia.org/wiki/Newton%27s_method Newton's Method].)\n"
+        "What does a single step of Newton's method look like? (It may be helpful to review [http://en.wikipedia.org/wiki/Newton's_method Newton's Method].)\n"
     ], 
     "num_votes": 3, 
     "question": "1 (c)", 
@@ -43,7 +43,7 @@
     "statement_raw": "'''''Short-Answer Questions.''' A correct answer in the box gives full marks. For partial marks work needs to be shown.''\n\nConsider the function &lt;math> f(x)=x^3-x+1 \\, &lt;/math>. Use one step of Newton's method to improve the initial guess &lt;math> x_0=-1 \\, &lt;/math> for the zero (root) of &lt;math> f(x)\\,&lt;/math>.\n", 
     "term": "December", 
     "topics": [
-        "Newton%27s_method"
+        "Newton's_method"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH102/December_2011/Question_01_(c)", 
     "year": 2011

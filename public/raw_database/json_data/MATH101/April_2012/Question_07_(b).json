@@ -42,7 +42,7 @@
     "statement_raw": "Let &lt;math> I = \\int_{1}^{2} (1/x)\\, dx &lt;/math>. Write down the Simpson's approximation ''S''&lt;sub>4&lt;/sub> for ''I''.\n\n''You do not need to simplify your answer.''\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2012/Question_07_(b)", 
     "year": 2012

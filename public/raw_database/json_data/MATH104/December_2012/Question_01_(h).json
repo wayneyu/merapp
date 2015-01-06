@@ -43,7 +43,7 @@
     "statement_raw": "Suppose you approximate cos(0.25) by L(0.25), where L(x) is the linear approximation of cos(x) at x=0.  Provide an estimate for the absolute value of the error in your approximation.\n", 
     "term": "December", 
     "topics": [
-        "Taylor%27s_remainder_theorem"
+        "Taylor's_remainder_theorem"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH104/December_2012/Question_01_(h)", 
     "year": 2012

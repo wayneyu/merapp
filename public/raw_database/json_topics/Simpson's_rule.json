@@ -1,0 +1,19 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=ns3k-Lz7qWU", 
+            "text": null, 
+            "title": "Introduction to Simpson's rule"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=qVXIU6mKank", 
+            "text": null, 
+            "title": "The error bound in Simpson's rule"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Simpson's_rule", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Simpson's_rule"
+}

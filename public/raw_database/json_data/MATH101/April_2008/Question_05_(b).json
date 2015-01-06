@@ -41,7 +41,7 @@
     "statement_raw": "Let\n:&lt;math>I = \\int_0^1 \\cos(x^2)\\,dx&lt;/math>\n\nIt can be shown that the 4th derivative of\n:&lt;math>\\displaystyle \\cos(x^2)&lt;/math>\nhas absolute value at most 60 on the interval [0,1]. Using this bound, find the smallest positive integer ''n'' you can such that the Simpson's Rule approximation &lt;math>S_n&lt;/math> for &lt;math>I&lt;/math> has error less or equal to 0.001. You may use the fact that if\n:&lt;math>|f^{(4)}(t)| \\leq K&lt;/math>\non the interval &lt;math>[a\\text{, }b]&lt;/math>, then the error in using &lt;math>S_n&lt;/math> to approximate\n:&lt;math>\\int_a^b f(x)\\,dx&lt;/math>\nhas absolute value less than or equal to\n:&lt;math>\\frac{K(b-a)^5}{180n^4}&lt;/math>\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2008/Question_05_(b)", 
     "year": 2008

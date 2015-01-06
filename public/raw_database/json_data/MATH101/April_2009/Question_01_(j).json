@@ -43,7 +43,7 @@
     "statement_raw": "Give the Simpson\u2019s rule approximation to\n:&lt;math>\n\\int_0^2 \\sin(e^x) \\,dx\n&lt;/math>\nusing 4 equal subintervals (do not simplify your answer).\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2009/Question_01_(j)", 
     "year": 2009

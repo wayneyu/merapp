@@ -41,7 +41,7 @@
     "statement_raw": "A tree trunk is 60 feet long and has circular cross sections. The diameters in feet measured at 10-foot intervals starting at the bottom of the tree are 10, 8, 7, 6, 5, 4, and 3. The volume of the tree, in cubic feet, is computed using the formula\n\n:&lt;math> V = \\int_0^{60} A(y)\\,dy, &lt;/math>\n\nwhere &lt;math>A(y)&lt;/math> is the cross-sectional area of the trunk, in square feet, &lt;math>y&lt;/math> feet above the bottom of the tree.\n\n(b) It is known that the fourth derivative of &lt;math>A(y)&lt;/math> has values that lie between 3 and 30,000. How many measurements of the tree's diameter (equally spaced along the tree trunk) would be needed in order to estimate its volume using Simpson's Rule to an accuracy of 1 cubic foot? You may use the fact that the error made in approximating a definite integral &lt;math>\\int_a^b f(x)\\,dx&lt;/math> by the corresponding Simpson's Rule approximation &lt;math>S_n&lt;/math> is at most &lt;math>(M(b-a)^5)/(180n^4)&lt;/math>, where &lt;math>\\left|f^{(4)}(x)\\right|\\leq M &lt;/math> on the interval &lt;math>[a,b]&lt;/math>.\n\nYou must give your answer as explicit integer for full marks.\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2005/Question_06_(b)", 
     "year": 2005

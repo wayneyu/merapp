@@ -42,7 +42,7 @@
     "statement_raw": "''Short-answer questions. No credit will be given for the answer (even if it is correct) without the accompanying work.''\n\nFind a bound for the error in approximating\n\n:&lt;math>\n\\int_0^1 \\left[e^{-2x}+3x^3\\right]\\,dx\n&lt;/math>\nusing Simpson\u2019s rule with ''n'' = 6 subintervals. There is no need to simplify your answer.\n\n'''Do not write down the Simpson\u2019s rule approximation ''S''&lt;sub>''n''&lt;/sub>.'''\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH105/April_2012/Question_08_(f)", 
     "year": 2012

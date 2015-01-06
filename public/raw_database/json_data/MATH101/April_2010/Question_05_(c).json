@@ -41,7 +41,7 @@
     "statement_raw": "'''Full-Solution Problem.''' Justify your answer and '''show all your work.''' Simplification of the answer is not required.\n\nAn unknown function &lt;math> f(x) &lt;/math> has the following values: &lt;math> f(0) = 1&lt;/math>, &lt;math> f(1) = 2&lt;/math>, &lt;math> f(2) = 0&lt;/math>, &lt;math> f(3) = -2&lt;/math>, &lt;math> f(4) = -4. &lt;/math>\n\nIt is known that the fourth derivative &lt;math> f^{(4)}(x) &lt;/math> lies between &lt;math> -3 &lt;/math> and &lt;math>2&lt;/math> on the interval &lt;math>[0,4]&lt;/math>. What is the largest possible value that &lt;math>\\int_0^4 f(x)dx&lt;/math> could have? You may use the fact that if &lt;math>\\left|f^{(4)}(x)\\right| \\leq K &lt;/math> on the interval &lt;math>[a,b]&lt;/math>, then the error in using &lt;math>S_n&lt;/math> to approximate &lt;math>\\int_a^b f(x)dx&lt;/math> has absolute value less than or equal to &lt;math> K(b-a)^5/180n^4 &lt;/math>.\n", 
     "term": "April", 
     "topics": [
-        "Simpson%27s_rule"
+        "Simpson's_rule"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH101/April_2010/Question_05_(c)", 
     "year": 2010

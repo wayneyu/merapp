@@ -40,7 +40,7 @@
     "statement_raw": "Show, without using the explicit prime factorization of 1729, but using the following congruences instead, that 1729 is composite.\n\n&lt;math> \n\\begin{align}\n2^{18} &amp;\\equiv 1065 \\mod{1729} \\\\\n2^{36} &amp;\\equiv 1 \\mod{1729}\n\\end{align}\n&lt;/math>\n", 
     "term": "December", 
     "topics": [
-        "Miller%27s_test"
+        "Miller's_test"
     ], 
     "url": "http://wiki.ubc.ca/Science:Math_Exam_Resources/Courses/MATH312/December_2008/Question_04_(c)", 
     "year": 2008

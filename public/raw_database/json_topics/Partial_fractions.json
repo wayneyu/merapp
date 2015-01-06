@@ -1,0 +1,31 @@
+{
+    "content": [
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=ddvS319b-tQ", 
+            "text": "Here is a video on the partial fraction basics. Everything from long division to repeated factors in the denominator is covered here.", 
+            "title": "The basics"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=cgOf3alK40", 
+            "text": null, 
+            "title": "Examples (Part 1)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=9AXr7dIr0Ng", 
+            "text": null, 
+            "title": "Examples (Part 2)"
+        }, 
+        {
+            "credit": "PatrickJMT", 
+            "src": "https://www.youtube.com/watch?v=D8OncQ9-dHY", 
+            "text": null, 
+            "title": "Examples (Part 3)"
+        }
+    ], 
+    "parent": "None", 
+    "topic": "Partial_fractions", 
+    "url": "http://wiki.ubc.ca/Category:MER_Tag_Partial_fractions"
+}

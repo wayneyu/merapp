@@ -12,6 +12,7 @@ GET    /editor          controllers.Application.editor
 
 GET    /questions                                       controllers.Application.questions
 GET    /questions/search                                controllers.Application.search
+GET    /questions/:topic                                controllers.QuestionController.allQuestionsTopic(topic: String)
 GET    /questions/search/term/:course                   controllers.QuestionController.distinctTerms(course: String)
 GET    /questions/search/year/:course/:term             controllers.QuestionController.distinctYears(course: String, term: String)
 GET    /questions/search/question/:course/:term_year    controllers.QuestionController.distinctQuestions(course: String, term_year: String)

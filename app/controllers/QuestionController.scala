@@ -359,12 +359,21 @@ object QuestionController extends Controller with MongoController {
   def allTopicsCourse(course: String) = Action.async {
     val topics = topicsForCourse(course)
 
-    topics.map{
+    topics.map {
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONArray]("topics").getOrElse(BSONArray(Nil)))
       )))
     }
+  }
 
+  def allQuestionsTopic(topic: String) = Action.async {
+    val questions = questionsForTopic(topic)
+
+    questions.map {
+      st => Ok(BSONArrayFormat.writes(BSONArray(
+        st.map(d => d.getAs[BSONArray]("question").getOrElse(BSONArray(Nil)))
+      )))
+    }
   }
 
   def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
@@ -502,6 +511,19 @@ object QuestionController extends Controller with MongoController {
     val topics = db.command(command)
 
     topics.map{ _.toList }
+  }
+
+  def questionsForTopic(topic: String): Future[List[BSONDocument]] = {
+
+    val command = Aggregate(collection.name, Seq(
+        Match(BSONDocument("topic" -> topic)), // HELP: Does not find anything. Maybe we have to use "$in" here, but I don't understand the syntax. http://docs.mongodb.org/manual/reference/operator/query/in/
+        Project("_id"->BSONInteger(0), "question" -> BSONInteger(1))
+      )
+    )
+
+    val questions = db.command(command)
+
+    questions.map{ _.toList }
   }
 
   def course(course: String) = Action.async {

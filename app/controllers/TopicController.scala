@@ -45,7 +45,7 @@ object TopicController extends Controller with MongoController {
   }
 
   def topicsBSON(): Future[List[BSONDocument]] = {
-    Logger.info("Retrive distinct topics")
+    Logger.info("Retrieve distinct topics")
 
     val command = Aggregate(collection.name, Seq(
       Sort(Seq(Ascending("topic")))

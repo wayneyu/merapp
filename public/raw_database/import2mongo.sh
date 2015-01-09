@@ -8,7 +8,7 @@ for i in $LIST_Q; do
 	echo $i
 	mongoimport --db $DBNAME --collection $COLLECTIONNAME_Q --file $i --jsonArray
 done
-mongo $DBNAME --eval "db.questions.ensureIndex({statement_html:\"text\",hints_html:\"text\",solutions_html:\"text\",answer_html:\"text\"})"
+mongo $DBNAME --eval "db.questions.ensureIndex({statement_html:\"text\",hints_html:\"text\",solutions_html:\"text\",answer_html:\"text\",topics:\"text\"})"
 echo "Total number of QUESTIONS in the database:"
 mongo $DBNAME --eval "db.questions.count()"
 

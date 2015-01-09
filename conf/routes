@@ -32,7 +32,8 @@ GET     /exams                                          controllers.Application.
 GET     /exams/:course                                  controllers.QuestionController.course(course: String)
 GET     /exams/:course/:term_year                       controllers.QuestionController.exam(course: String, term_year: String)
 
-GET     /topics/:course                                 controllers.QuestionController.allTopicsCourse(course)
+GET     /topics                                         controllers.Application.topics()
+GET     /topics/:topic                                  controllers.TopicController.topic(topic: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /javascriptRoutes  controllers.Application.javascriptRoutes

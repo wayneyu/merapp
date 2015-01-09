@@ -1,0 +1,9 @@
+.youtubeFrame {
+    width: 100%
+}
+
+.topics_list {
+   colums: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}

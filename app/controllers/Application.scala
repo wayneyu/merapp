@@ -34,6 +34,8 @@ object Application extends Controller {
 
   def exams = QuestionController.exams()
 
+  def topics = TopicController.topics()
+
   def javascriptRoutes = Action { implicit request =>
     Logger.info("javascriptRoutes: ")
     Ok(

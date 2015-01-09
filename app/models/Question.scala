@@ -4,16 +4,9 @@ package models
  * Created by wayneyu on 12/11/14.
  */
 
-import java.net.URL
-
-import controllers.{Application, QuestionController}
-import reactivemongo.bson.{BSONDocumentReader, BSONDocument, BSONObjectID}
-import play.api.libs.json.{JsPath, Reads, Json}
-import play.api.data._
-import play.api.data.Forms._
+import reactivemongo.bson.{BSONDocumentReader, BSONDocument}
+import play.api.libs.json.{JsPath, Reads}
 import play.api.libs.functional.syntax._
-import views.html.question
-
 
 case class Question ( course: String,
                      year: Int,

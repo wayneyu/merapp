@@ -1,0 +1,12 @@
+@(topics: List[Topic])
+
+@main("Topics"){
+
+<ul class="topics_list">
+    @for( topic <- topics ){
+        <li class="topic">
+            <a href="@routes.TopicController.topic(topic.topic)">@topic.topic.replace("_", " ")</a>
+        </li>
+    }
+</ul>
+}

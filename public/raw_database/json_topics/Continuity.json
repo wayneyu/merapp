@@ -2,13 +2,13 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=hlorAjS0xWE", 
+            "src": "https://www.youtube.com/embed/hlorAjS0xWE", 
             "text": "An example", 
             "title": "Main ideas"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=VUEM6vWJvE4", 
+            "src": "https://www.youtube.com/embed/VUEM6vWJvE4", 
             "text": "An example", 
             "title": "Main ideas"
         }

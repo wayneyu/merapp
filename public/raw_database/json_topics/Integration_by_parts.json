@@ -2,19 +2,19 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=dqaDSlYdRcs", 
+            "src": "https://www.youtube.com/embed/dqaDSlYdRcs", 
             "text": "This video explains by example the idea behind integration by parts.", 
             "title": "The main ideas of integration by parts"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=zGGI4PkHzhI", 
+            "src": "https://www.youtube.com/embed/zGGI4PkHzhI", 
             "text": "Here's an example of a definite integral.", 
             "title": "Definite integral"
         }, 
         {
             "credit": "PatrickJMT}}", 
-            "src": "https://www.youtube.com/watch?v=_MuKOm8IHBA", 
+            "src": "https://www.youtube.com/embed/_MuKOm8IHBA", 
             "text": "If at first you don't succeed, try try again! Here is an example of doing integration by parts twice.", 
             "title": "Integrate by parts twice"
         }

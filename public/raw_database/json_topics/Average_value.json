@@ -2,7 +2,7 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=62Lj-g5owgo", 
+            "src": "https://www.youtube.com/embed/62Lj-g5owgo", 
             "text": "Here is a video with a sample average value computation.", 
             "title": "Sample computation"
         }

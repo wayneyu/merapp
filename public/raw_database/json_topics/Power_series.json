@@ -2,31 +2,31 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=XWGPjZK0Yzw", 
+            "src": "https://www.youtube.com/embed/XWGPjZK0Yzw", 
             "text": null, 
             "title": "A video explaining power series representations."
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=qPl9nr8my2Q", 
+            "src": "https://www.youtube.com/embed/qPl9nr8my2Q", 
             "text": null, 
             "title": "A video explaining how to integrate and differentiate power series"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=_L2VcGjp670", 
+            "src": "https://www.youtube.com/embed/_L2VcGjp670", 
             "text": null, 
             "title": "Multiplying and dividing power series"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=01LzAU__J-0", 
+            "src": "https://www.youtube.com/embed/01LzAU__J-0", 
             "text": null, 
             "title": "The interval of convergence"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=MM3BXtVu9eM", 
+            "src": "https://www.youtube.com/embed/MM3BXtVu9eM", 
             "text": null, 
             "title": "The radius of convergence"
         }

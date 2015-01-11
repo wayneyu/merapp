@@ -2,25 +2,25 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=LkdodHMcBuc", 
+            "src": "https://www.youtube.com/embed/LkdodHMcBuc", 
             "text": null, 
             "title": "The basics of the definite integral and Riemann sums"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=Gi8_a7NlKAQ", 
+            "src": "https://www.youtube.com/embed/Gi8_a7NlKAQ", 
             "text": "Approximating area under a curve (definite integral) using rectangles.", 
             "title": "The rectangle method"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=gFpHHTxsDkI", 
+            "src": "https://www.youtube.com/embed/gFpHHTxsDkI", 
             "text": "A two part series on computing definite integrals using Riemann sums.", 
             "title": "An example computation (Part 1)"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=GE4OLfmJ8P8", 
+            "src": "https://www.youtube.com/embed/GE4OLfmJ8P8", 
             "text": "A two part series on computing definite integrals using Riemann sums.", 
             "title": "An example computation (Part 2)"
         }

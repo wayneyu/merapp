@@ -2,13 +2,13 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=ilRkVcAxdCo", 
+            "src": "https://www.youtube.com/embed/ilRkVcAxdCo", 
             "text": "Here's a video explaining this test.", 
             "title": "Alternating series estimation theorem"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=3ZOS69YTxQ8", 
+            "src": "https://www.youtube.com/embed/3ZOS69YTxQ8", 
             "text": "An example of how to use the alternating series estimation theorem.", 
             "title": "Example of alternating series estimation theorem"
         }

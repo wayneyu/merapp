@@ -2,19 +2,19 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=DRFyNHdVgUA", 
+            "src": "https://www.youtube.com/embed/DRFyNHdVgUA", 
             "text": "A video explaining how to compute the area between two curves", 
             "title": "Basics"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=70NQ3ISYihw", 
+            "src": "https://www.youtube.com/embed/70NQ3ISYihw", 
             "text": "Here is a two part video on computing the area between two curves using the ''y'' coordinate.", 
             "title": "Using the ''y'' coordinate (part 1)"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=Xne6Hv9useE", 
+            "src": "https://www.youtube.com/embed/Xne6Hv9useE", 
             "text": "Here is a two part video on computing the area between two curves using the ''y'' coordinate.", 
             "title": "Using the ''y'' coordinate (part 2)"
         }

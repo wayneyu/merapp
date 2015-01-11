@@ -1,12 +1,5 @@
 {
-    "content": [
-        {
-            "credit": "PatrickJMT [for external credit]", 
-            "src": "https://www.youtube.com/watch?v=zGGI4PkHzhI [youtube id]", 
-            "text": "Here's an example of a definite integral. [optional]", 
-            "title": "Definite integral"
-        }
-    ], 
+    "content": [], 
     "parent": "None", 
     "topic": "Discrete_Fourier_transform", 
     "url": "http://wiki.ubc.ca/Category:MER_Tag_Discrete_Fourier_transform"

@@ -2,13 +2,13 @@
     "content": [
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=ns3k-Lz7qWU", 
+            "src": "https://www.youtube.com/embed/ns3k-Lz7qWU", 
             "text": null, 
             "title": "Introduction to Simpson's rule"
         }, 
         {
             "credit": "PatrickJMT", 
-            "src": "https://www.youtube.com/watch?v=qVXIU6mKank", 
+            "src": "https://www.youtube.com/embed/qVXIU6mKank", 
             "text": null, 
             "title": "The error bound in Simpson's rule"
         }

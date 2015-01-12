@@ -506,8 +506,12 @@ object QuestionController extends Controller with MongoController {
   def questionsForTopic(topic: String): Future[List[BSONDocument]] = {
 
     val command = Aggregate(collection.name, Seq(
+<<<<<<< HEAD
         Match(BSONDocument("topics" -> BSONDocument("$in" -> BSONArray(topic)))),
         Sort(Seq(Ascending("course"), Ascending("year"), Ascending("term"), Ascending("question")))
+=======
+        Match(BSONDocument("topics" -> BSONDocument("$in" -> BSONArray(topic))))
+>>>>>>> d4fbc27ff1e7aafcf63829f0ed196a4563b6bcc2
       )
     )
 

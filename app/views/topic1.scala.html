@@ -1,7 +1,0 @@
-@(topic: String, questions: List[Question])
-
-@main(topic){
-    @for(q <- questions){
-        @q.course - @q.term @q.year - @q.question @if(q.num_votes > 0){(@q.rating%)} <br />
-    }
-}

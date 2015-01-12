@@ -24,6 +24,7 @@ case class Question ( course: String,
                      contributors: List[String]){
 
   def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
+  def link: String = course + " - " + term + " " + year + " - " + question
 
 }
 

@@ -2,7 +2,7 @@ package controllers
 
 // Reactive Mongo plugin, including the JSON-specialized collection
 
-import models.Topic
+import models.{Question, Topic}
 
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
@@ -24,11 +24,17 @@ object TopicController extends Controller with MongoController {
   val collection = db[BSONCollection]("topics")
 
   def topic(topic: String) = Action.async {
-    val res = topicBSON(topic)
+    val topicResult = topicBSON(topic)
+    val questionsResult = QuestionController.questionsForTopic(topic)
+
+    val res = for {
+      tr <- topicResult
+      qr <- questionsResult
+    } yield (tr, qr)
 
     res.map{
-      d => Ok(views.html.topic(
-        d.as[Topic]
+      case (tr, qr) => Ok(views.html.topic(
+        tr.as[Topic], qr.map( _.as[Question] )
       ))
     }
 

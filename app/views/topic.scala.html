@@ -1,11 +1,17 @@
-@(topic: Topic)
+@(topic: Topic, questions: List[Question])
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
+        <h1>Questions available</h1>
+        @for(q <- questions){
+            <a href="@q.url">@q.link</a> @if(q.num_votes > 0){(@q.rating%)} <br />
+        }
+
+        <h1>Contents available</h1>
         @if(topic.contents.isEmpty){
             <p>No contents yet.</p>
         }else{
             @for(content <- topic.contents){
-                <h1>@content.title</h1>
+                <h2>@content.title</h2>
                 <p>@content.text</p>
                 <div class="youtubeFrame">
                     <iframe src="@content.src"

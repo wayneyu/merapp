@@ -10,7 +10,7 @@
 }
 
 @if( results.isEmpty ){
-    <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, or solutions.</p>
+    <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, solutions, or on any of our topics page.</p>
 } else {
     @for( r <- results ){
         <p><a class="searchResult" href=@r>@r.replace("%20", " ")</a></p>

@@ -1,7 +1,7 @@
 package controllers
 
 import controllers.Application._
-import models.{April, December, Term, Question}
+import models._
 import play.Routes
 import play.api._
 import play.api.libs.json._
@@ -395,7 +395,7 @@ object QuestionController extends Controller with MongoController {
   def searchByKeywords(searchString: String) = Action.async {
     val res = searchByKeywordsQuery(searchString)
     res.map{ l =>
-      Ok (views.html.search( l.map( e => e.as[Question].url)))
+      Ok (views.html.search( l.map( e => e.as[SearchResult] ) ))
     }
   }
 
@@ -411,22 +411,20 @@ object QuestionController extends Controller with MongoController {
   }
 
   def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
+    // Search for keywords in statement, solutions, hints, answers and topics field of Questions collection
+    // Results are returned as an array of BSONDocument of {course: , questions:, statement_html: , term: , year: score:}
     Logger.info("searching for " + searchString)
 
-    val searchCommand = BSONDocument(
-      "text" -> collection.name,
-      "search" -> searchString
-//      "filter" -> BSONDocument("year"->2013)
-    )
+    val searchCommand = Aggregate(collection.name, Seq(
+      Match(BSONDocument("$text" -> BSONDocument("$search" -> searchString))),
+      Project("_id"->BSONInteger(0), "textScore" -> BSONDocument("$meta" -> "textScore"), "course" -> BSONInteger(1),
+        "year" -> BSONInteger(1), "term" -> BSONInteger(1), "question" -> BSONInteger(1), "statement_html" -> BSONInteger(1)),
+      Sort(Seq(Descending("textScore")))
+    ))
 
-    val result : Future[BSONDocument]= db.command(RawCommand(searchCommand))
-    result.map {
-      doc => doc.getAs[List[BSONDocument]]("results") match {
-        case Some(list) => list.map( _.getAs[BSONDocument]("obj").get )
-        case None => Nil
-      }
-    }
+    val result = db.command(searchCommand)
 
+    result.map { _.toList }
   }
 
   def bson2url(doc: BSONDocument) = Json.toJson(doc).as[Question].url

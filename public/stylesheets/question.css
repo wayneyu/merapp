@@ -203,3 +203,8 @@ img:not(#mascot){
    margin-left: auto;
    margin-right: auto
  }
+
+.result_stmt{
+    font-family: 'Helvetica Neue';
+    font-size: 10pt;
+}

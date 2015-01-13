@@ -1,19 +1,22 @@
-@(results: Seq[String])
+@(results: Seq[SearchResult])
 
 @main("Search by Keywords"){
 
 <div id="selection">
 
 @helper.form(action = routes.QuestionController.searchByKeywordsSubmit()) {
-    <input type="text" name="searchString">
+    <input type="text" size="30" name="searchString">
     <input id="searchBtn" type="submit" value="Search">
 }
 
+<br/><br/>
 @if( results.isEmpty ){
     <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, solutions, or on any of our topics page.</p>
 } else {
     @for( r <- results ){
-        <p><a class="searchResult" href=@r>@r.replace("%20", " ")</a></p>
+        <p><a class="searchResult" href=@r.url>@r.link.replace("%20", " ")</a>   relevance: @r.score</p>
+        <div class="result_stmt">@Html(r.statement)</div>
+        <br/><br/>
     }
 }
 

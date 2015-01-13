@@ -1,6 +1,6 @@
 @(results: Seq[String])
 
-@main("Search"){
+@main("Search by Keywords"){
 
 <div id="selection">
 
@@ -10,10 +10,10 @@
 }
 
 @if( results.isEmpty ){
-    <p>No results found.</p>
+    <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, solutions, or on any of our topics page.</p>
 } else {
     @for( r <- results ){
-        <p><a class="searchResult" href=@r>@r</a></p>
+        <p><a class="searchResult" href=@r>@r.replace("%20", " ")</a></p>
     }
 }
 

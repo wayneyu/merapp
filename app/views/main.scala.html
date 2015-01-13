@@ -7,7 +7,9 @@
         <title>@title</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
-                tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ] }
+                tex2jax: { inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+                           processEscapes: true
+                         }
             });
         </script>
 
@@ -58,7 +60,7 @@
               <li><a href=@routes.Application.team>About Us</a></li>
               <li><a href=@routes.Application.editor>Latex Editor</a></li>
               <li><a href=@routes.Application.questions>Questions</a></li>
-              <li><a href=@routes.Application.search>Search Questions</a></li>
+              <li><a href=@routes.Application.search>Find Keywords</a></li>
               <li><a href=@routes.Application.exams>Exams</a></li>
               <li><a href=@routes.Application.topics>Topics</a></li>
             </ul>

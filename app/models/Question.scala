@@ -24,6 +24,7 @@ case class Question ( course: String,
                      contributors: List[String]){
 
   def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
+
   def link: String = course + " - " + term + " " + year + " - " + question
 
 }
@@ -73,9 +74,41 @@ object Question {
 
   val empty = Question("",-1,"","No Question","",Nil,Nil,"",Nil,Nil, -1, -1, Nil, Nil)
 
-//  def empty(course: String, year: String, term: String) =
-//    Question(course, year.toInt, term, "No Question","",Nil,Nil)
 }
+
+case class SearchResult (course: String,
+                      year: Int,
+                      term: String,
+                      question: String,
+                      statement: String,
+                      textScore: Double) {
+
+  def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
+
+  def link: String = course + " - " + term + " " + year + " - " + question
+
+  def score = BigDecimal(textScore).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
+}
+
+object SearchResult {
+
+  implicit object SearchResultReader extends BSONDocumentReader[SearchResult] {
+    def read(doc: BSONDocument): SearchResult = {
+      SearchResult(
+        doc.getAs[String]("course").get,
+        doc.getAs[Int]("year").get,
+        doc.getAs[String]("term").get,
+        doc.getAs[String]("question").get,
+        doc.getAs[String]("statement_html").get,
+        doc.getAs[Double]("textScore").get
+      )
+    }
+  }
+
+  val empty = SearchResult("", -1, "", "", "", 0)
+
+}
+
 
 sealed trait Term
 case object December extends Term

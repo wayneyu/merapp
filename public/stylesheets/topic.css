@@ -2,6 +2,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 67%;
+    padding: 0.5em;
+    border: 1px solid #AAAAAA;
+    background: #DDDDDD;
+
 }
 
 .topics_list {

@@ -1,7 +1,7 @@
 @(topic: Topic, questions: List[Question])
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
-        <h1>Questions available</h1>
+        <h1>Questions</h1>
         @if(questions.isEmpty){
         <p>No questions yet.</p>
         }else{
@@ -10,19 +10,20 @@
             }
         }
 
-        <h1>Contents available</h1>
+        <h1>Additional Content</h1>
         @if(topic.contents.isEmpty){
-            <p>No contents yet.</p>
+            <p>No additional content yet. Feel free to recommend a source to us.</p>
         }else{
             @for(content <- topic.contents){
-                <h2>@content.title</h2>
-                <p>@content.text</p>
-                <div class="youtubeFrame">
-                    <iframe src="@content.src"
-                            width=100% height=320 frameborder="0" allowfullscreen>
-                    </iframe>
+                <div class="topic_content_box">
+                    <h2>@content.title</h2>
+                    <p>@content.text</p>
+                    <div class="youtubeFrame">
+                        <iframe src="@content.src"
+                                width=100% height=320 frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
-                <br><br>
             }
         }
 }

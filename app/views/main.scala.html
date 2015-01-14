@@ -1,8 +1,5 @@
 @(title: String)(content: Html)
-
 <!DOCTYPE html>
-
-<html>
     <head>
         <title>@title</title>
         <script type="text/x-mathjax-config">
@@ -25,45 +22,49 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="@routes.Assets.at("javascripts/question.js")" type="text/javascript"></script>
 
+        <link rel="icon" href="@routes.Assets.at("/images/favicon.ico")" type="image/x-icon"/>
+
     </head>
     <body>
+    
         <div class="wrapper">
-            <table id="banner">
-            <tbody>
-            <tr>
-            <td style="color:#000;">
-
-            <table style="white-space:nowrap; border:none; background:none; position:relative">
-            <tbody><tr>
-            <td style="padding: 2px; white-space:nowrap; color:#FFFFFF;">
-            <a href="@routes.Application.index" title="Science:Math Exam Resources">
-            <img id="mascot" alt="Math kid.jpg" src="@routes.Assets.at("images/268px-Math_kid.jpg")" width="200" height="150">
-            </a>
-            </td></tr></tbody>
-            </table>
-
-            </td>
-
-            <td style="padding-right:5px; float:right;">
-            </td>
-            <td style="background:#2F4F4F; left:258px; font-weight:normal; height:150px; width:100%; color: white; font-size:50pt; line-height:120%; text-align:center;">
-            <b>@title</b>
-            </td>
-            </tr></tbody>
-            </table>
-
-            @content
-
-            <br /><br />
-
             <ul id="nav">
               <li><a href=@routes.Application.team>About Us</a></li>
               <li><a href=@routes.Application.editor>Latex Editor</a></li>
               <li><a href=@routes.Application.questions>Questions</a></li>
-              <li><a href=@routes.Application.search>Find Keywords</a></li>
               <li><a href=@routes.Application.exams>Exams</a></li>
               <li><a href=@routes.Application.topics>Topics</a></li>
+              <li><a href=@routes.Application.search>Find Keywords</a></li>
             </ul>
+            <table id="banner">
+                <tbody>
+                <tr>
+                <td style="color:#000;">
+
+                <table style="white-space:nowrap; border:none; background:none; position:relative">
+                <tbody><tr>
+                <td style="padding: 2px; white-space:nowrap; color:#FFFFFF;">
+                <a href="@routes.Application.index" title="Science:Math Exam Resources">
+                <img id="mascot" alt="Math kid.jpg" src="@routes.Assets.at("images/268px-Math_kid.jpg")" width="200" height="150">
+                </a>
+                </td></tr></tbody>
+                </table>
+
+                </td>
+
+                <td style="padding-right:5px; float:right;">
+                </td>
+                <td style="background:#2F4F4F; left:258px; font-weight:normal; height:150px; width:100%; color: white; font-size:50pt; line-height:120%; text-align:center;">
+                <b>@title</b>
+                </td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="content_container">
+
+            @content
+
+            </div>
         </div>
     </body>
 </html>

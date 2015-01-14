@@ -71,6 +71,6 @@ object TopicController extends Controller with MongoController {
 
     val topics = db.command(command)
 
-    topics.map{ _(0) }
+    topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
   }
 }

@@ -17,20 +17,14 @@ case class Topic(contents: List[TopicContent],
 }
 
 object Topic {
-  implicit val TopicReads: Reads[Topic] = (
-    (JsPath \ "content").read[List[TopicContent]] and
-      (JsPath \ "parent").read[String] and
-      (JsPath \ "topic").read[String] and
-      (JsPath \ "url").read[String]
-    )(Topic.apply _)
 
   implicit object TopicReader extends BSONDocumentReader[Topic] {
     def read(doc: BSONDocument): Topic = {
       Topic(
         doc.getAs[List[TopicContent]]("content").getOrElse(Nil),
-        doc.getAs[String]("parent").get,
-        doc.getAs[String]("topic").get,
-        doc.getAs[String]("url").get
+        doc.getAs[String]("parent").getOrElse(""),
+        doc.getAs[String]("topic").getOrElse(""),
+        doc.getAs[String]("url").getOrElse("")
       )
     }
   }

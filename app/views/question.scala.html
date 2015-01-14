@@ -222,7 +222,7 @@ Easiness: @if(num_votes > 0){
 <div id="tags">
     <ul>
     @for( topic <- topics ){
-        <li><span>@topic.replace("_"," ")</span></li>
+        <li><span><a href="@routes.TopicController.topic(topic)">@topic.replace("_"," ")</a></span></li>
         }
     </ul>
 </div>

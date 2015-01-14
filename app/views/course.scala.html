@@ -27,7 +27,7 @@
     <h2>Topics</h2>
     <i>The percentage of questions in @course involving a particular topic.</i><br><br>
     @for( topic <- topics ){
-        <span class="topic">@topic.replace("_"," ")</span>
+        <span class="topic"><a href="@routes.TopicController.topic(topic)">@topic.replace("_","\u0020")</a></span>
     }
 </div>
 
@@ -78,8 +78,8 @@ bar.append("text")
     .attr("x", function(d) { return 0; })
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
-    .text(function(d) { return '(' + (100*d.value/@num_questions).toFixed(1) + '%) ' + d.name; });
-    //.on("click", function() { window.open("http://google.com"); }); // to add a link
+    .text(function(d) { return '(' + (100*d.value/@num_questions).toFixed(1) + '%) ' + d.name; })
+    .on("click", function() { window.location.assign("/topics/" + $(this).text().match(/\s.*$/g)[0].trim().replace(/\s/g,"_") ); }); // to add a link
 </script>
 
 }

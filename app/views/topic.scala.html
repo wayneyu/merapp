@@ -2,8 +2,12 @@
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
         <h1>Questions available</h1>
-        @for(q <- questions){
-            <a href="@q.url">@q.link</a> @if(q.num_votes > 0){(@q.rating%)} <br />
+        @if(questions.isEmpty){
+        <p>No questions yet.</p>
+        }else{
+            @for(q <- questions){
+                <a href="@q.url">@q.link</a> @if(q.num_votes > 0){(@q.rating%)} <br />
+            }
         }
 
         <h1>Contents available</h1>

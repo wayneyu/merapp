@@ -23,14 +23,13 @@ correct_image_path:
 ## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
 upload_mongo_only:
 	mongodump --db merdb --collection questions --out ~/tmp
+	mongodump --db merdb --collection topics --out ~/tmp
 	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/ --drop
 
 ## upload_mongo: updates online mongo db from local mongo db
-upload_mongo: update_mongo_locally
-	mongodump --db merdb --collection questions --out ~/tmp
-	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/ --drop
+upload_mongo: update_mongo_locally upload_mongo_only
 
-## upload_mongo_locally_only: updates local mongo db WITHOUT refreshing questions locally
+## update_mongo_locally_only: updates local mongo db WITHOUT refreshing questions locally
 update_mongo_locally_only: import2mongo.sh
 	./import2mongo.sh
 

@@ -103,13 +103,13 @@
         }
     </select>
 
-    <input id="findQuestionBtn" type="submit" value="Find Question">
+    <input id="findQuestionBtn" type="submit" value="Jump to Question">
     }
 </div>
 
-Easiness: @if(num_votes > 0){
+<!--Easiness: @if(num_votes > 0){
                 @rating (@num_votes @if(num_votes > 1){votes} else {vote})
-            } else {-}
+            } else {-} -->
 
 <br>
 
@@ -121,7 +121,9 @@ Easiness: @if(num_votes > 0){
 <br>
 
 <div class="main_box">
-    <div class="box_title">@q</div>
+    <div class="box_title"> @q <div style="float:right; text-align: right; font-size: 12px;">Easiness: @if(num_votes > 0){
+                @rating <br> (@num_votes @if(num_votes > 1){votes} else {vote})
+            } else {-} </div></div>
     <div>@Html(stmt)</div>
 </div>
 @if(editable){

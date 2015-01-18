@@ -111,6 +111,7 @@ background-color: #eeeeee;
   border: 1px solid black;
   padding: 10px;
   background-color: #ffffff;
+  color: #666666;
   margin-bottom: 1em;
 }
 
@@ -119,7 +120,7 @@ background-color: #eeeeee;
   border: 1px solid black;
   padding: 10px;
   color: #ffffff;
-  background-color: #00AAAA;
+  background-color: #2F4F4F;
 }
 
 #latex_box button {
@@ -132,7 +133,10 @@ background-color: #eeeeee;
 }
 
 #selection{
-    padding-top: 20px
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid #AAAAAA;
+    text-align: right;
 }
 
 #selection select, input{

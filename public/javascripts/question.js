@@ -1,4 +1,4 @@
-$(document).ready(function (){
+ $(document).ready(function (){
 
     $("div.hideable_box>div+div").fadeOut(0);
 
@@ -37,6 +37,8 @@ $(document).ready(function (){
 
     $("[id$='_edit'] .submit_button").click(function (){
         var parentId = $(this).parent().parent().parent().attr('id');
+        console.log("hello");
+        console.log(parentId);
         debugger;
         var key = parentId.match('.*(?=_edit)')[0].replace(/_(?!.*_)/,".")
         var url = window.location.pathname;
@@ -57,148 +59,148 @@ $(document).ready(function (){
 
 
 
-    //$("#latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
-    $("#latex_box #inputbuttons #button1").click(function() {   //this will apply to all anchor tags
-       //$("#latex_box textarea").val($("#latex_box textarea").val()+'$x_1$');
-       $("#latex_box textarea").insertAtCaret('_{n}',false);
+    //$(".latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
+    $(".latex_box").find("#button1").click(function() {   //this will apply to all anchor tags
+       //$(".latex_box textarea").val($(".latex_box textarea").val()+'$x_1$');
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('_{n}',false);
     });
 
-    //$("#latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
-    $("#latex_box #inputbuttons #button2").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\int_{a}^{b} f(x)\\,dx',false);
+    //$(".latex_box #tags ul li:nth-child(2)").click(function() {   //this will apply to all anchor tags
+    $(".latex_box").find("#button2").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\int_{a}^{b} f(x)\\,dx',false);
     });
 
-    $("#latex_box #inputbuttons #button3").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\alpha',false);
+    $(".latex_box").find("#button3").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\alpha',false);
     });
 
-    $("#latex_box #inputbuttons #button4").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\frac{d}{dx}',false);
+    $(".latex_box").find("#button4").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\frac{d}{dx}',false);
     });
 
-    $("#latex_box #inputbuttons #button5").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('<font color="blue"> blue text </font>',true)
+    $(".latex_box").find("#button5").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('<font color="blue"> blue text </font>',true)
     });
 
-    $("#latex_box #inputbuttons #button6").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n',true)
+    $(".latex_box").find("#button6").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\n\\begin{equation}\n f(x) = g(x) + a \n\\end{equation} \n',true)
     });
 
-    $("#latex_box #inputbuttons #button7").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\left(   \\right)',false)
+    $(".latex_box").find("#button7").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\left(   \\right)',false)
     });
 
-    $("#latex_box #inputbuttons #button8").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\left[   \\right]',false)
+    $(".latex_box").find("#button8").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\left[   \\right]',false)
     });
 
-    $("#latex_box #inputbuttons #button9").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\lim_{x \\rightarrow a}',false)
+    $(".latex_box").find("#button9").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\lim_{x \\rightarrow a}',false)
     });
 
-    $("#latex_box #inputbuttons #button10").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\infty',false)
+    $(".latex_box").find("#button10").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\infty',false)
     });
 
-    $("#latex_box #inputbuttons #button11").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\pi',false)
+    $(".latex_box").find("#button11").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\pi',false)
     });
 
-    $("#latex_box #inputbuttons #button12").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\beta',false)
+    $(".latex_box").find("#button12").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\beta',false)
     });
 
-    $("#latex_box #inputbuttons #button13").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\gamma',false)
+    $(".latex_box").find("#button13").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\gamma',false)
     });
 
-    $("#latex_box #inputbuttons #button14").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\delta',false)
+    $(".latex_box").find("#button14").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\delta',false)
     });
 
-    $("#latex_box #inputbuttons #button15").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\epsilon',false)
+    $(".latex_box").find("#button15").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\epsilon',false)
     });
 
-    $("#latex_box #inputbuttons #button16").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\n\\begin{align}\n f(x) &= g(x) + a \\\\ \n      &= \\cos(x) \n\\end{align} \n',true)
+    $(".latex_box").find("#button16").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\n\\begin{align}\n f(x) &= g(x) + a \\\\ \n      &= \\cos(x) \n\\end{align} \n',true)
     });
 
-    $("#latex_box #inputbuttons #button17").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('^{p}',false)
+    $(".latex_box").find("#button17").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('^{p}',false)
     });
 
-    $("#latex_box #inputbuttons #button18").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\lambda',false)
+    $(".latex_box").find("#button18").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\lambda',false)
     });
 
-    $("#latex_box #inputbuttons #button19").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\frac{d^{2}}{dx^{2}}',false);
+    $(".latex_box").find("#button19").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\frac{d^{2}}{dx^{2}}',false);
     });
 
-    $("#latex_box #inputbuttons #button20").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\frac{a}{b}',false);
+    $(".latex_box").find("#button20").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\frac{a}{b}',false);
     });
 
-    $("#latex_box #inputbuttons #button21").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\mathbb{R}',false);
+    $(".latex_box").find("#button21").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\mathbb{R}',false);
     });
 
-    $("#latex_box #inputbuttons #button22").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\mathbb{C}',false);
+    $(".latex_box").find("#button22").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\mathbb{C}',false);
     });
 
-    $("#latex_box #inputbuttons #button23").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\leq',false);
+    $(".latex_box").find("#button23").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\leq',false);
     });
 
-    $("#latex_box #inputbuttons #button24").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\geq',false);
+    $(".latex_box").find("#button24").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\geq',false);
     });
 
-    $("#latex_box #inputbuttons #button25").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('>',false);
+    $(".latex_box").find("#button25").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('>',false);
     });
 
-    $("#latex_box #inputbuttons #button26").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('<',false);
+    $(".latex_box").find("#button26").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('<',false);
     });
 
-    $("#latex_box #inputbuttons #button27").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\sin(  )',false);
+    $(".latex_box").find("#button27").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\sin(  )',false);
     });
 
-    $("#latex_box #inputbuttons #button28").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\cos(  )',false);
+    $(".latex_box").find("#button28").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\cos(  )',false);
     });
 
-    $("#latex_box #inputbuttons #button29").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\sim',false);
+    $(".latex_box").find("#button29").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\sim',false);
     });
 
-    $("#latex_box #inputbuttons #button30").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\sum_{i = 0}^{N}',false);
+    $(".latex_box").find("#button30").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\sum_{i = 0}^{N}',false);
     });
 
-    $("#latex_box #inputbuttons #button31").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\dots',false);
+    $(".latex_box").find("#button31").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\dots',false);
     });
 
-    $("#latex_box #inputbuttons #button32").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('<font color="red"> red text </font>',true)
+    $(".latex_box").find("#button32").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('<font color="red"> red text </font>',true)
     });
 
-    $("#latex_box #inputbuttons #button33").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}',false);
+    $(".latex_box").find("#button33").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}',false);
     });
 
-    $("#latex_box #inputbuttons #button34").click(function() {   //this will apply to all anchor tags
-       $("#latex_box textarea").insertAtCaret('f(x) = \\begin{cases} a &\\mbox{if } x \\geq 0 \\\\ b &\\mbox{if } x < 0 \\end{cases}',false);
+    $(".latex_box").find("#button34").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("textarea").insertAtCaret('f(x) = \\begin{cases} a &\\mbox{if } x \\geq 0 \\\\ b &\\mbox{if } x < 0 \\end{cases}',false);
     });
 
-    $("#latex_box button").click(function() {   //this will apply to all anchor tags
-       $("#latex_box p").empty();
-       $("#latex_box p").append( $("#latex_box textarea").val() );
+    $(".latex_box button").click(function() {   //this will apply to all anchor tags
+       $(this).closest(".latex_box").find("p").empty();
+       $(this).closest(".latex_box").find("p").append( $(this).closest(".latex_box").find("textarea").val() );
        MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
     });
 
@@ -279,6 +281,17 @@ $(document).ready(function (){
         } else {
             $("#next_question").prop("href", all_questions[current_question_index+1]);
         }
+
+    $(".easiness_rating").each(function(){
+        var val = parseInt($(this).text().replace("%",""));
+        if (val < 33) {var col = "#FF0000";}
+        else if (val < 66) {var col = "#FF9900";}
+        else if (val <= 100) {var col = "#006600";}
+        else {var col = "#A0A0A0";} // no vote available
+        $(this).css("color", col);
+        $(this).attr("title", $(this).attr("title") + " vote(s)");
+        });
+
 
 });
 

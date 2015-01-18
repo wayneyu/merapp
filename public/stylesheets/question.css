@@ -59,17 +59,17 @@ background-color: #fff;
 border: 1px solid #eeeeee;
 }
 
-#latex_box
+.latex_box
 {
   width:800px;
 }
 
-#latex_box #tags {
+.latex_box #tags {
   margin-top: 20px;
   margin-bottom: 2px
 }
 
-#latex_box #tags ul
+.latex_box #tags ul
 {
 margin: 0;
 padding: 0;
@@ -77,9 +77,9 @@ list-style-type: none;
 text-align: left;
 }
 
-#latex_box #tags ul li { display: inline; }
+.latex_box #tags ul li { display: inline; }
 
-#latex_box #tags ul li span
+.latex_box #tags ul li span
 {
 text-decoration: none;
 padding: .2em 1em;
@@ -88,25 +88,25 @@ background-color: #fff;
 border: 1px solid #eeeeee;
 }
 
-#latex_box #tags ul li span:hover
+.latex_box #tags ul li span:hover
 {
 background-color: #eeeeee;
 }
 
-#latex_box #inputbuttons
+.latex_box #inputbuttons
 {
   font-size: 10pt;
   margin-bottom: 1em;
 }
 
-#latex_box #inputbuttons .buttonbox
+.latex_box #inputbuttons .buttonbox
 {
-  display:inline-block;
+  display: inline-block;
   line-height: 3.2em;
   padding: 0.5em;
 }
 
-#latex_box #inputbuttons a
+.latex_box #inputbuttons a
 {
   border: 1px solid black;
   padding: 10px;
@@ -115,7 +115,7 @@ background-color: #eeeeee;
   margin-bottom: 1em;
 }
 
-#latex_box #inputbuttons a:hover
+.latex_box #inputbuttons a:hover
 {
   border: 1px solid black;
   padding: 10px;
@@ -123,12 +123,12 @@ background-color: #eeeeee;
   background-color: #2F4F4F;
 }
 
-#latex_box button {
+.latex_box button {
   background-color: #ffffff;
   font-size: 20px;
 }
 
-#latex_box button:hover {
+.latex_box button:hover {
     background-color: #eeeeee;
 }
 

@@ -121,14 +121,19 @@
 <br>
 
 <div class="main_box">
-    <div class="box_title"> @q <div style="float:right; text-align: right; font-size: 12px;">Easiness: @if(num_votes > 0){
-                @rating <br> (@num_votes @if(num_votes > 1){votes} else {vote})
-            } else {-} </div></div>
+    <div class="box_title">
+        @q
+        <div style="float:right; text-align: right; font-size: 12px; color: #000000; background-color: #FFFFFF;">
+            @if(num_votes > 0){
+                Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span> <br> (@num_votes @if(num_votes > 1){votes} else {vote})
+            } else {-}
+        </div>
+    </div>
     <div>@Html(stmt)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id="statement_html_edit">
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(stmt)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -141,17 +146,13 @@
 }
 
 @for( (h, ind) <- hints.zipWithIndex ) {
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
-}
-    <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
-    <div>@Html(h)</div>
-</div>
+    <div class="main_box @if(editable){hideable_box}">
+        <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
+        <div>@Html(h)</div>
+    </div>
 @if(editable){
 <div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(h)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -164,17 +165,13 @@
 }
 }
 
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
-}
-<div class="box_title">Final answer</div>
+<div class="main_box @if(editable){hideable_box}">
+    <div class="box_title">Final answer</div>
     <div>@Html(answer)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id=@("answer_html_edit")>
-    <div id="latex_box">
+    <div class="latex_box">
             @latexbuttons
         <textarea>@Html(answer)</textarea>
 
@@ -189,17 +186,13 @@
 
 
 @for( (s, ind) <- sols.zipWithIndex ) {
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
-}
-    <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-    <div>@Html(s)</div>
-</div>
+    <div class="main_box @if(editable){hideable_box}">
+        <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
+        <div>@Html(s)</div>
+    </div>
 @if(editable){
 <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(s)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -230,13 +223,13 @@
 </div>
 
 @if(solvers){
-        This question was solved by <b>@solvers.map {solver=>@solver}.mkString(", ")</b>
+        This question was solved by <Strong>@solvers.map {solver=>@solver}.mkString(", ")</Strong>
             @if(contributors) {
-                with the help of <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+                with the help of <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
             } else {.}
         } else {
             @if(contributors) {
-                The following people have worked on this question: <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+                The following people have worked on this question: <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
             }
         }
 }

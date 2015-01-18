@@ -31,15 +31,5 @@ $(".question_easiness").each(function(){
 });
 $(".exam_easiness").text(Math.round(total_easiness/num_rated_questions) + "%");
 $(".rating_count").text(total_ratings);
-
-$(".easiness_rating").each(function(){
-    var val = parseInt($(this).text().replace("%",""));
-    if (val < 33) {var col = "#FF0000";}
-    else if (val < 66) {var col = "#FF9900";}
-    else if (val <= 100) {var col = "#006600";}
-    else {var col = "#A0A0A0";} // no vote available
-    $(this).css("color", col);
-    $(this).attr("title", $(this).attr("title") + " vote(s)");
-    });
 </script>
 }

@@ -199,9 +199,9 @@
     });
 
     $(".latex_box button").click(function() {   //this will apply to all anchor tags
-       $(this).closest(".latex_box").find("p").empty();
-       $(this).closest(".latex_box").find("p").append( $(this).closest(".latex_box").find("textarea").val() );
-       MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // refreshes the view in some sense
+       $(this).closest(".latex_box").find(".latex_edit_render_area").empty();
+       $(this).closest(".latex_box").find(".latex_edit_render_area").append( $(this).closest(".latex_box").find("textarea").val() );
+       MathJax.Hub.Queue(["Typeset", MathJax.Hub]); // refreshes the view in some sense
     });
 
 

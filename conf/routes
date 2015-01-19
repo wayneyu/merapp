@@ -8,7 +8,7 @@ GET    /                           controllers.Application.index
 # Team member page (Static)
 GET    /team                       controllers.Application.team
 
-GET    /editor          controllers.Application.editor
+# GET    /editor          controllers.Application.editor
 
 GET    /questions                                       controllers.Application.questions
 GET    /questions/search                                controllers.Application.search
@@ -21,9 +21,9 @@ GET    /questions/search/:keyString                     controllers.QuestionCont
 
 GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)
 GET    /questions/:course/:term_year/:q/json            controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
-GET    /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
-POST   /questions/:course/:term_year/:q/edit            controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
-POST   /questions/upload                                controllers.QuestionController.upload(url: String)
+# GET    /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
+# POST   /questions/:course/:term_year/:q/edit            controllers.QuestionController.findAndModify(course: String, term_year: String, q: String)
+# POST   /questions/upload                                controllers.QuestionController.upload(url: String)
 
 POST   /questions/submit                                controllers.QuestionController.questionSubmit()
 POST   /questions/search/submit                         controllers.QuestionController.searchByKeywordsSubmit()

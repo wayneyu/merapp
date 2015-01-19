@@ -223,14 +223,16 @@
 }
 }
 
+<!--
 @if(editable){
     <div>
     Upload image:
-    @helper.form(action = routes.QuestionController.upload(request.path), 'enctype -> "multipart/form-data") {
+    (AT)helper.form(action = routes.QuestionController.upload(request.path), 'enctype -> "multipart/form-data") {
         <input type="file" name="file"><input type="submit">
     }
     </div>
 }
+-->
 
 <div id="tags">
     <ul>

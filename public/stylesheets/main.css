@@ -72,7 +72,7 @@ th{
     vertical-align: bottom;
     list-style-type: none;
 }
-#nav a {
+#nav a:not(#feedback) {
     display: block;
     min-height: 100%;
     padding: 4px 10px;
@@ -117,4 +117,14 @@ th{
 
 #exam {
     text-align: left;
+}
+
+#feedback {
+    font-size: 16pt;
+    display: block;
+    min-height: 100%;
+    padding: 4px 10px;
+    background-color: #2F4F4F;
+    color: red;
+    border-radius: 6px 6px 0 0;    
 }

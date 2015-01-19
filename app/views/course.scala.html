@@ -6,15 +6,17 @@
     <table style="width:100%;">
         <tr>
             <th>Term</th>
-            <th>Instructors</th>
+<!--            <th>Instructors</th>
             <th>Easiness</th>
+-->
             <th colspan="3">.pdf downloads</th>
         </tr>
         <tr>
         @for( exam <- exams ){
-            <td><div class="exam"><a href="@routes.QuestionController.exam(course, exam)">@exam</a></div></td>
+            <td><div class="exam"><a href="@routes.QuestionController.exam(course, exam)">@exam.replace("_"," ")</a></div></td>
+<!--            <td>(todo)</td>
             <td>(todo)</td>
-            <td>(todo)</td>
+-->
             <td>Questions</td>
             <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers</a></td>
             <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Solutions</a></td>

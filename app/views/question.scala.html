@@ -107,10 +107,6 @@
     }
 </div>
 
-<!--Easiness: @if(num_votes > 0){
-                @rating (@num_votes @if(num_votes > 1){votes} else {vote})
-            } else {-} -->
-
 <br>
 
 <div id="prev_next_question">
@@ -145,6 +141,20 @@
 </div>
 }
 
+@if(!editable){
+    <div class="message">
+    Make sure you understand the problem fully: 
+    <ul>
+    <li>What is the question asking you to do? 
+    <li>Are there specific conditions or constraints that you should take note of?</li>
+    <li>How will you know if your answer is correct from your work only? </li>
+    <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
+    </ul>
+
+    If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
+    </div>    
+}
+
 @for( (h, ind) <- hints.zipWithIndex ) {
     <div class="main_box @if(!editable){hideable_box}">
         <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
@@ -163,6 +173,15 @@
     </div>
 </div>
 }
+}
+
+@if(!editable){
+    <div class="message">Checking a solution serves two purposes:
+    <ul>
+        <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+        <li>if you have solved the problem and would like to check your work. </li>
+    </ul>
+    </div>
 }
 
 <div class="main_box @if(!editable){hideable_box}">

@@ -120,11 +120,10 @@ th{
 }
 
 #feedback {
-    font-size: 16pt;
     display: block;
     min-height: 100%;
     padding: 4px 10px;
     background-color: #2F4F4F;
     color: red;
-    border-radius: 6px 6px 0 0;    
+    border-radius: 6px 6px 0 0;
 }

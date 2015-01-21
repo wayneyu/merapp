@@ -15,7 +15,7 @@ import scala.io.Source
 object Application extends Controller {
 
   def index = Action.async {
-    Future(Ok(views.html.index("Welcome to Math Exam/Education Resources (MER)! Click any of the tabs above to get started.")))
+    Future(Ok(views.html.index()))
   }
 
   def team = Action.async {

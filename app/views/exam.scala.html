@@ -1,6 +1,6 @@
 @(course: String, term_year: String, questions: List[Question])
 
-@main(course + " " + term_year){
+@main(course.replace("MATH", "MATH ") + " " + term_year.replace("_", " ")){
 <h2>Questions available</h2>
 
 Average easiness: <span class="exam_easiness easiness_rating"></span> (total of <span class="rating_count">0</span> votes).<br><br>

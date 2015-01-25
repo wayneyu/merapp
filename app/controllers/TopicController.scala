@@ -3,17 +3,14 @@ package controllers
 // Reactive Mongo plugin, including the JSON-specialized collection
 
 import models.{Question, Topic}
-
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.{Action, Controller}
 import play.modules.reactivemongo.MongoController
-import reactivemongo.api.Cursor
-import reactivemongo.bson.BSONDocument
-import reactivemongo.core.commands.{Match, Ascending, Sort, Aggregate}
-
 import reactivemongo.api.collections.default.BSONCollection
-import reactivemongo.bson._
+import reactivemongo.bson.{BSONDocument, _}
+import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
+
 import scala.concurrent.Future
 
 /**

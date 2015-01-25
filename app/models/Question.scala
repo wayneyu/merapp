@@ -4,9 +4,9 @@ package models
  * Created by wayneyu on 12/11/14.
  */
 
-import reactivemongo.bson.{BSONDocumentReader, BSONDocument}
-import play.api.libs.json.{JsPath, Reads}
 import play.api.libs.functional.syntax._
+import play.api.libs.json.{JsPath, Reads}
+import reactivemongo.bson.{BSONDocument, BSONDocumentReader}
 
 case class Question ( course: String,
                      year: Int,

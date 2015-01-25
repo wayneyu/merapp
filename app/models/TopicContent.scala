@@ -1,8 +1,8 @@
 package models
 
+import play.api.libs.functional.syntax._
 import play.api.libs.json.{JsPath, Reads}
 import reactivemongo.bson.{BSONDocument, BSONDocumentReader}
-import play.api.libs.functional.syntax._
 
 /**
  * Created by wayneyu on 1/8/15.

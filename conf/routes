@@ -38,3 +38,10 @@ GET    /topics/:topic                                   controllers.TopicControl
 # Map static resources from the /public folder to the /assets URL path
 GET    /javascriptRoutes                                controllers.Application.javascriptRoutes
 GET    /assets/*file                                    controllers.Assets.at(path="/public", file)
+
+# SocialSecure sample code routes
+GET        /auth/user           @controllers.AuthController.userprofile
+GET        /auth/link-result         @controllers.AuthController.linkResult
+GET        /custom/login        @controllers.CustomLoginController.login
+GET        /custom/logout       @controllers.CustomLoginController.logout
+->         /auth                securesocial.Routes

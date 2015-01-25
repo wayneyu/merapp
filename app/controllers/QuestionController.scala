@@ -1,19 +1,16 @@
 package controllers
 
-import controllers.Application._
 import models._
-import play.Routes
 import play.api._
+import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json._
 import play.api.mvc._
-import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
-import play.modules.reactivemongo.json.BSONFormats._
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
-import scala.util.{Success, Failure}
-import scala.collection.mutable.ListBuffer
+
+import scala.concurrent.Future
+import scala.util.{Failure, Success}
 
 // Reactive Mongo imports
 import reactivemongo.api._
@@ -21,7 +18,6 @@ import reactivemongo.core.commands._
 
 // Reactive Mongo plugin, including the JSON-specialized collection
 import play.modules.reactivemongo.MongoController
-import play.modules.reactivemongo.json.collection.JSONCollection
 
 /**
  * Created by wayneyu on 11/1/14.

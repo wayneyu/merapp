@@ -18,3 +18,4 @@ dist
 *.log
 *.toc
 mongolab.conf
+securesocial.conf

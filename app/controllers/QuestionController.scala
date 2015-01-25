@@ -458,8 +458,8 @@ object QuestionController extends Controller with MongoController {
 
         result.map{
             case Some(doc) =>
-//              Ok(BSONDocument.pretty(doc))
-              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
+                Ok("Updating Questions not possible at this point")
+//              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
             case None =>
               Ok("Question was not updated.")
           }

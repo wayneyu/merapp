@@ -26,8 +26,8 @@ h1{
 
 h2{
 	color:#7491A3;
-	margin-top: 0px;
-	border-bottom: 3px solid #7491A3;
+	margin-top: 2em;
+	/*border-top: 1px solid #7491A3;*/
 }
 
 a{
@@ -43,6 +43,15 @@ ul{
 	list-style-type:none;
 }
 
+th{
+    font-size: 16pt;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    text-align: left;
+    background: #2F4F4F;
+    color: #FFFFFF;
+}
+
 /*.wrapper ul {
     margin: 0;
     padding: 0;
@@ -54,7 +63,6 @@ ul{
     text-align: right;
     margin-bottom: 0px;
     margin-left: 0px;
-    text-align: right;
 }
 
 #nav li {
@@ -64,7 +72,7 @@ ul{
     vertical-align: bottom;
     list-style-type: none;
 }
-#nav a {
+#nav a:not(#feedback) {
     display: block;
     min-height: 100%;
     padding: 4px 10px;
@@ -76,7 +84,7 @@ ul{
 /* -- SEARCH RESULTS -- */
 #search_bar_box{
 	padding: 0.5em;
-	border: 1px solid #AAAAAA;
+	border: 0px solid #AAAAAA;
 	margin-bottom: 0.5em;
 	text-align: right;
 }
@@ -88,9 +96,9 @@ ul{
 }
 
 .result a{
-	background: #7491A3;
-	color: #FFFFFF;
+	color: #7491A3;
 	padding: 0.5em;
+    font-weight: bold;
 }
 
 /* -- TOPIC CONTENT --*/
@@ -99,4 +107,23 @@ ul{
 	padding: 0.5em;
 	border: 1px solid #AAAAAA;
 	margin-bottom: 0.5em;
+}
+
+.topic_content_box h2{
+    margin-top: 0em;
+}
+
+/* -- COURSE PAGES --*/
+
+#exam {
+    text-align: left;
+}
+
+#feedback {
+    display: block;
+    min-height: 100%;
+    padding: 4px 10px;
+    background-color: #2F4F4F;
+    color: red;
+    border-radius: 6px 6px 0 0;
 }

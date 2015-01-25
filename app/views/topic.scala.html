@@ -1,16 +1,25 @@
 @(topic: Topic, questions: List[Question])
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
-        <h1>Questions</h1>
+        <h1>Related questions</h1>
         @if(questions.isEmpty){
         <p>No questions yet.</p>
         }else{
+            <table>
+            <tr>
+                <th>Question</th>
+                <th>Easiness</th>
+            </tr>
             @for(q <- questions){
-                <a href="@q.url">@q.link</a> @if(q.num_votes > 0){(@q.rating%)} <br />
+                <tr>
+                    <td style="padding-right: 1em;"><a href="@q.url">@q.link</a></td> 
+                    <td align="left">@if(q.num_votes > 0){<span class="easiness_rating" title="@q.num_votes">@q.rating%</span> (@q.num_votes votes)}else{<font style="color:#AAAAAA;">unrated</font>} </td>
+                </tr>
             }
+            </table>
         }
 
-        <h1>Additional Content</h1>
+        <h1>Additional content</h1>
         @if(topic.contents.isEmpty){
             <p>No additional content yet. Feel free to recommend a source to us.</p>
         }else{

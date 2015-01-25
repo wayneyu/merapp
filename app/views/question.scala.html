@@ -103,13 +103,9 @@
         }
     </select>
 
-    <input id="findQuestionBtn" type="submit" value="Find Question">
+    <input id="findQuestionBtn" type="submit" value="Jump to Question">
     }
 </div>
-
-Easiness: @if(num_votes > 0){
-                @rating (@num_votes @if(num_votes > 1){votes} else {vote})
-            } else {-}
 
 <br>
 
@@ -121,12 +117,19 @@ Easiness: @if(num_votes > 0){
 <br>
 
 <div class="main_box">
-    <div class="box_title">@q</div>
+    <div class="box_title">
+        @q
+        <div style="float:right; text-align: right; font-size: 12px; color: #000000; background-color: #FFFFFF;">
+            @if(num_votes > 0){
+                Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span> <br> (@num_votes @if(num_votes > 1){votes} else {vote})
+            } else {-}
+        </div>
+    </div>
     <div>@Html(stmt)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id="statement_html_edit">
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(stmt)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -138,18 +141,28 @@ Easiness: @if(num_votes > 0){
 </div>
 }
 
-@for( (h, ind) <- hints.zipWithIndex ) {
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
+@if(!editable){
+    <div class="message">
+    Make sure you understand the problem fully: 
+    <ul>
+    <li>What is the question asking you to do? 
+    <li>Are there specific conditions or constraints that you should take note of?</li>
+    <li>How will you know if your answer is correct from your work only? </li>
+    <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
+    </ul>
+
+    If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
+    </div>    
 }
-    <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
-    <div>@Html(h)</div>
-</div>
+
+@for( (h, ind) <- hints.zipWithIndex ) {
+    <div class="main_box @if(!editable){hideable_box}">
+        <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
+        <div>@Html(h)</div>
+    </div>
 @if(editable){
 <div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(h)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -162,20 +175,24 @@ Easiness: @if(num_votes > 0){
 }
 }
 
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
+@if(!editable){
+    <div class="message">Checking a solution serves two purposes:
+    <ul>
+        <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+        <li>if you have solved the problem and would like to check your work. </li>
+    </ul>
+    </div>
 }
-<div class="box_title">Final answer</div>
+
+<div class="main_box @if(!editable){hideable_box}">
+    <div class="box_title">Final answer</div>
     <div>@Html(answer)</div>
 </div>
 @if(editable){
 <div class="latex_edit_area" id=@("answer_html_edit")>
-    <div id="latex_box">
-            @latexbuttons
+    <div class="latex_box">
+        @latexbuttons
         <textarea>@Html(answer)</textarea>
-
         <div class="latex_edit_render_area"></div>
         <div>
             <button class="render_button">render</button>
@@ -187,17 +204,13 @@ Easiness: @if(num_votes > 0){
 
 
 @for( (s, ind) <- sols.zipWithIndex ) {
-@if(editable){
-    <div class="main_box">
-}else{
-    <div class="main_box hideable_box">
-}
-    <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-    <div>@Html(s)</div>
-</div>
+    <div class="main_box @if(!editable){hideable_box}">
+        <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
+        <div>@Html(s)</div>
+    </div>
 @if(editable){
 <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
-    <div id="latex_box">
+    <div class="latex_box">
         @latexbuttons
         <textarea>@Html(s)</textarea>
         <div class="latex_edit_render_area"></div>
@@ -210,14 +223,16 @@ Easiness: @if(num_votes > 0){
 }
 }
 
+<!--
 @if(editable){
     <div>
     Upload image:
-    @helper.form(action = routes.QuestionController.upload(request.path), 'enctype -> "multipart/form-data") {
+    (AT)helper.form(action = routes.QuestionController.upload(request.path), 'enctype -> "multipart/form-data") {
         <input type="file" name="file"><input type="submit">
     }
     </div>
 }
+-->
 
 <div id="tags">
     <ul>
@@ -228,13 +243,13 @@ Easiness: @if(num_votes > 0){
 </div>
 
 @if(solvers){
-        This question was solved by <b>@solvers.map {solver=>@solver}.mkString(", ")</b>
+        This question was solved by <Strong>@solvers.map {solver=>@solver}.mkString(", ")</Strong>
             @if(contributors) {
-                with the help of <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+                with the help of <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
             } else {.}
         } else {
             @if(contributors) {
-                The following people have worked on this question: <i>@contributors.map {contr=>@contr}.mkString(", ")</i>.
+                The following people have worked on this question: <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
             }
         }
 }

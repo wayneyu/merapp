@@ -8,7 +8,9 @@ import play.api.mvc._
 import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
+import securesocial.core.RuntimeEnvironment
 import service.User
+import service.{SuperUser, Contributor, Visitor, User}
 
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
@@ -50,9 +52,8 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
     }
   }
 
-	def question(course: String, term_year: String, q: String, editable: Boolean = false) = UserAwareAction.async { implicit request =>
-		implicit val user = request.user
-
+	def questionResult(course: String, term_year: String, q: String, editable: Boolean = false)
+	                  (implicit request: RequestHeader, env: RuntimeEnvironment[User], user: Option[User]): Future[Result] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val question = questionQuery(course, term_year, q)
@@ -78,6 +79,20 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 					Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
 			}
 		}
+		}
+	}
+
+	def question(course: String, term_year: String, q: String) = UserAwareAction.async { implicit request =>
+		implicit val user = request.user
+		questionResult(course, term_year, q, false)
+	}
+
+	def questionEdit(course: String, term_year: String, q: String) = SecuredAction.async { implicit request =>
+		implicit val user = Some(request.user)
+		request.user match {
+			case u: Visitor => questionResult(course, term_year, q, true)
+			case u: Contributor => questionResult(course, term_year, q, true)
+			case u: SuperUser => questionResult(course, term_year, q, true)
 		}
 	}
 
@@ -168,8 +183,6 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   def questionInJson(course: String, term_year: String, q: String) = Action.async {
     questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
   }
-
-  def questionEdit(course: String, term_year: String, q: String) = question(course, term_year, q, true)
 
   def question(course: String, term: String, year: Int, q: String): Action[AnyContent] = question(course, term+"_"+year, q)
 

@@ -16,11 +16,11 @@
  */
 import java.lang.reflect.Constructor
 
-import controllers.{ServiceComponent, CustomRoutesService}
+import controllers.CustomRoutesService
 import org.sedis.Dress
 import play._
 import securesocial.core.{AuthenticationMethod, RuntimeEnvironment}
-import service.{User, RedisUserService, AuthEventListener}
+import service.{ServiceComponent, User, RedisUserService, AuthEventListener}
 
 import play.api.Play.current
 import redis.clients.jedis._

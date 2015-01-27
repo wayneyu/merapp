@@ -9,8 +9,7 @@ import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.RuntimeEnvironment
-import service.User
-import service.{SuperUser, Contributor, Visitor, User}
+import service._
 
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future

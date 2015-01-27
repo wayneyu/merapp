@@ -16,9 +16,13 @@
  */
 package controllers
 
+import play.api.Logger
 import play.api.mvc.{Action, RequestHeader}
 import securesocial.core._
-import service.User
+import service._
+import scala.concurrent.ExecutionContext.Implicits.global
+
+import scala.concurrent.Future
 
 trait AuthController extends securesocial.core.SecureSocial[User] with ServiceComponent{
 
@@ -48,4 +52,17 @@ case class WithProvider(provider: String) extends Authorization[User] {
   }
 }
 
-object AuthController extends AuthController
+object AuthController extends AuthController{
+
+	def modifyUserType[T <: User](userKey: String, provider: String, userType: String) = SecuredAction.async { implicit request =>
+		request.user match {
+			case _@(_: Visitor | _: Contributor) => Future(Unauthorized("Current user does not have permission to modify user."))
+			case _: SuperUser =>
+				val res = env.userService.modifyUserType(userKey, provider, userType)
+				res.map {
+					s => Ok("Modify " + userKey + " to " + userType + ": " + s)
+				}
+		}
+	}
+
+}

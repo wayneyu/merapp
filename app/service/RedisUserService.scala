@@ -26,12 +26,13 @@ import scala.concurrent.Future
 import play.api.cache.Cache
 
 import scala.concurrent.ExecutionContext.Implicits._
+import scala.reflect.ClassTag
 
 class RedisUserService extends UserService[User] {
   val logger = Logger("application.controllers.InMemoryUserService")
 
-  val userColletionKey = "users"
-  val tokensColletionKey = "tokens"
+	val userColletionKey = "users"
+	val tokensColletionKey = "tokens"
 
   private def setUserById(userKey: UserKey, user: User) = {
     Cache.set(userKey.key, user)
@@ -52,6 +53,10 @@ class RedisUserService extends UserService[User] {
     }
     Cache.set(userColletionKey, updatedUsers)
   }
+
+	def getUsers: Option[List[User]] = {
+		Cache.getAs[List[User]](userColletionKey)
+	}
 
   private def getUserById(userKey: UserKey): Option[User] = {
     getUserById(userKey.key)
@@ -106,7 +111,6 @@ class RedisUserService extends UserService[User] {
   }
 
   private def updateProfile(profile: BasicProfile, user: User): Future[User] = {
-    Logger.info("updateProfile should be: before: " + user + " after: " + profile )
     val identities = user.identities
     val idx = identities.indexWhere(i => i.providerId == profile.providerId && i.userId == profile.userId)
     val updatedList = idx match {
@@ -123,7 +127,6 @@ class RedisUserService extends UserService[User] {
       case u: SuperUser => SuperUser(updatedMain, updatedList)
     }
     setUserById(user.userkey, updatedUser)
-    Logger.info("updateProfile for User: " + user + ". with user: " + updatedUser)
     Future.successful(updatedUser)
   }
 
@@ -154,6 +157,20 @@ class RedisUserService extends UserService[User] {
         )
     }
   }
+
+	def modifyUserType(userId: String, provider: String, userClass: String): Future[String] = {
+		getUserById(UserKey(provider, userId)) match {
+			case Some(existingUser) =>
+				val promotedUser = userClass match {
+					case "Visitor" => Visitor(existingUser.main, existingUser.identities)
+					case "Contributor" => Contributor(existingUser.main, existingUser.identities)
+					case "SuperUser" => SuperUser(existingUser.main, existingUser.identities)
+				}
+				setUserById(existingUser.userkey, promotedUser)
+				Future.successful(promotedUser.userkey.key)
+			case None => Future.successful("User not found")
+		}
+	}
 
   def link(current: User, to: BasicProfile): Future[User] = {
     updateProfile(to, current)

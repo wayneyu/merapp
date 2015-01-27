@@ -8,7 +8,7 @@ import play.modules.reactivemongo.MongoController
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
-import service.User
+import service.{ServiceComponent, User}
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 

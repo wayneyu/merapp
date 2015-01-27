@@ -4,7 +4,7 @@ import play.Routes
 import play.api.{Logger, Play}
 import play.api.libs.json.Json
 import securesocial.core.{RuntimeEnvironment, SecureSocial}
-import service.User
+import service.{ServiceComponent, User}
 
 import play.api.libs.ws.WS
 import play.api.Play.current

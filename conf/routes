@@ -39,9 +39,10 @@ GET    /topics/:topic                                   controllers.TopicControl
 GET    /javascriptRoutes                                controllers.Application.javascriptRoutes
 GET    /assets/*file                                    controllers.Assets.at(path="/public", file)
 
-# SocialSecure sample code routes
+# SocialSecure routes
 GET        /auth/user           controllers.AuthController.userprofile
 GET        /auth/link-result    controllers.AuthController.linkResult
+GET        /auth/modify/:user/:provider/:to    controllers.AuthController.modifyUserType(user: String, provider: String, to: String)
 GET        /custom/login        controllers.CustomLoginController.login
 GET        /custom/logout       controllers.CustomLoginController.logout
 ->         /auth                securesocial.Routes

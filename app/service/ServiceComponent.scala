@@ -1,7 +1,7 @@
-package controllers
+package service
 
+import controllers.CustomRoutesService
 import securesocial.core.RuntimeEnvironment
-import service.{AuthEventListener, RedisUserService, User}
 
 /**
  * Created by wayneyu on 1/25/15.

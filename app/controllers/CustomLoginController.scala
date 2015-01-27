@@ -5,7 +5,7 @@ import play.api.mvc.{RequestHeader, Action, AnyContent}
 import securesocial.controllers.BaseLoginPage
 import securesocial.core.{IdentityProvider, RuntimeEnvironment}
 import securesocial.core.services.RoutesService
-import service.User
+import service.{ServiceComponent, User}
 
 trait CustomLoginController extends BaseLoginPage[User] with ServiceComponent {
 

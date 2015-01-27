@@ -90,9 +90,70 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 	def questionEdit(course: String, term_year: String, q: String) = SecuredAction.async { implicit request =>
 		implicit val user = Some(request.user)
 		request.user match {
-			case u: Visitor => questionResult(course, term_year, q, true)
-			case u: Contributor => questionResult(course, term_year, q, true)
-			case u: SuperUser => questionResult(course, term_year, q, true)
+			case _: Visitor => Future(Unauthorized("Current user does not have permission to edit."))
+			case _: Contributor => questionResult(course, term_year, q, true)
+			case _: SuperUser => questionResult(course, term_year, q, true)
+		}
+	}
+
+	def questionFindAndModify(course: String, term_year: String, q:String) = SecuredAction.async(parse.json) { request =>
+		request.user match {
+			case _: Visitor => Future(Unauthorized("Current user does not have permission to edit."))
+			case _ @ ( _: Contributor | _: SuperUser) =>
+				val (term, year) = getTermAndYear(term_year)
+				Logger.info("Editing " + course + "/" + term + "/" + year + "/" + q)
+
+				val bson = BSONDocumentFormat.reads(request.body)
+
+				bson match {
+
+					case e: JsError => Future(BadRequest("Invalid JSON passed."))
+
+					case b: JsSuccess[BSONDocument] =>
+					{
+						val selector = BSONDocument(
+							"course" -> course, "term" -> term,
+							"year" -> year.toInt, "question" -> q)
+
+						val modifier = BSONDocument(
+							"$set" -> b.get)
+
+						val command = FindAndModify(
+							collection.name,
+							selector,
+							Update(modifier, true))
+
+						val result = db.command(command)
+
+						result.map{
+							case Some(doc) =>
+								Redirect(routes.QuestionController.questionEdit(course, term_year, q))
+							case None =>
+								BadRequest("Question was not updated.")
+						}
+
+					}
+				}
+		}
+	}
+
+	def upload(path: String) = SecuredAction.async(parse.multipartFormData) { request =>
+		request.user match {
+			case _: Visitor => Future(Unauthorized("Current user does not have permission to upload."))
+			case _ @ (_: Contributor | _:SuperUser) =>
+				request.body.file("file").map { file =>
+					import java.io.File
+					val FILE_FOLDER = "public/raw_database/json_data/"
+					val filename = file.filename
+					val pattern = "questions\\/(.*?\\/.*?)\\/".r
+					val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
+					val to = new File(FILE_FOLDER + subfolder, filename)
+					Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
+					file.ref.moveTo(to, true)
+					Future(Ok("File uploaded to " + to.getPath))
+				}.getOrElse {
+					Future(BadRequest("Image missing"))
+				}
 		}
 	}
 
@@ -500,46 +561,6 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
     jsoList.foldLeft(JsArray())((acc, x) => acc ++ Json.arr(x))
   }
 
-  def findAndModify(course: String, term_year: String, q:String) = Action.async(parse.json) { request =>
-
-    val (term, year) = getTermAndYear(term_year)
-    Logger.info("Editing " + course + "/" + term + "/" + year + "/" + q)
-
-    val bson = BSONDocumentFormat.reads(request.body)
-
-    bson match {
-
-      case e: JsError => Future(BadRequest("Invalid JSON passed."))
-
-      case b: JsSuccess[BSONDocument] =>
-      {
-        val selector = BSONDocument(
-          "course" -> course, "term" -> term,
-          "year" -> year.toInt, "question" -> q)
-
-        val modifier = BSONDocument(
-          "$set" -> b.get)
-
-        val command = FindAndModify(
-          collection.name,
-          selector,
-          Update(modifier, true))
-
-        val result = db.command(command)
-
-        result.map{
-            case Some(doc) =>
-                Ok("Updating Questions not possible at this point")
-//              Redirect(routes.QuestionController.questionEdit(course, term_year, q))
-            case None =>
-              Ok("Question was not updated.")
-          }
-
-      }
-    }
-
-  }
-
   def examsForCourse(course: String): Future[List[BSONDocument]] = {
 
     Logger.info("Find exams for " + course)
@@ -603,21 +624,6 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
     }
   }
 
-  def upload(path: String) = Action(parse.multipartFormData) { request =>
-    request.body.file("file").map { file =>
-      import java.io.File
-      val FILE_FOLDER = "public/raw_database/json_data/"
-      val filename = file.filename
-      val pattern = "questions\\/(.*?\\/.*?)\\/".r
-      val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
-      val to = new File(FILE_FOLDER + subfolder, filename)
-      Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
-      file.ref.moveTo(to, true)
-      Ok("File uploaded to " + to.getPath)
-    }.getOrElse {
-      BadRequest("Image missing")
-    }
-  }
 }
 
 

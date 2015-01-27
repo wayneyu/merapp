@@ -39,13 +39,16 @@
         var parentId = $(this).parent().parent().parent().attr('id');
         console.log("hello");
         console.log(parentId);
-        debugger;
-        var key = parentId.match('.*(?=_edit)')[0].replace(/_(?!.*_)/,".")
+        var key = parentId.match('.*(?=_edit)')[0]
+        if ("hints_html_0_edit".match('_[0-9]*_') == undefined){
+            key = key.match('.*(?=_edit)')[0].replace(/_(?!.*_)/,".")
+        }
         var url = window.location.pathname;
         var textarea = $("#" + parentId + " textarea");
         var newValue = textarea.val();
         var data = {};
         data[key] = newValue;
+        debugger;
         $.ajax({
           contentType: 'application/json',
           type: 'POST',
@@ -53,6 +56,9 @@
           data: JSON.stringify(data),
           success: function(d){
             location.reload();
+          },
+          error: function(obj, st, err){
+            alert(err);
           }
         });
     });

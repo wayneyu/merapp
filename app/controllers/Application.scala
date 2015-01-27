@@ -3,32 +3,39 @@ package controllers
 import play.Routes
 import play.api.{Logger, Play}
 import play.api.libs.json.Json
+import securesocial.core.{RuntimeEnvironment, SecureSocial}
+import service.User
 
-import scala.concurrent.ExecutionContext.Implicits._
 import play.api.libs.ws.WS
 import play.api.Play.current
 import play.api.mvc._
 
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.io.Source
 
-object Application extends Controller {
+trait ApplicationController extends securesocial.core.SecureSocial[User] with ServiceComponent{
 
-  def index = Action.async {
+  override implicit val env = AuthRuntimeEnvironment
+
+  def index = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     Future(Ok(views.html.index()))
   }
 
-  def team = Action.async {
-    Future(Ok(views.html.team("About Us")))
+  def team = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
+    Future(Ok(views.html.team()))
   }
 
   def questions = QuestionController.questions()
 
-  def editor = Action.async {
+  def editor = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     Future(Ok(views.html.editor()))
   }
 
-  def search = Action.async {
+  def search = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     Future(Ok(views.html.search(List())))
   }
 
@@ -39,11 +46,11 @@ object Application extends Controller {
   def javascriptRoutes = Action { implicit request =>
     Logger.info("javascriptRoutes: ")
     Ok(
-      Routes.javascriptRouter("jsRoutes",
-        routes.javascript.QuestionController.distinctYears,
-        routes.javascript.QuestionController.distinctCourses
-      )
+      Routes.javascriptRouter("jsRoutes")
     ).as("text/javascript")
   }
 
+
 }
+
+object Application extends ApplicationController

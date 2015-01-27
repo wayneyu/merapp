@@ -1,5 +1,4 @@
-@(user: service.User)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User])
-@import securesocial.core.IdentityProvider
+@(user: service.User)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], currentUser: Option[service.User])
 
 @import securesocial.core.IdentityProvider
 @import securesocial.core.providers.UsernamePasswordProvider

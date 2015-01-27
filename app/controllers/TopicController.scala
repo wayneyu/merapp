@@ -1,26 +1,29 @@
 package controllers
 
-// Reactive Mongo plugin, including the JSON-specialized collection
-
 import models.{Question, Topic}
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.{Action, Controller}
 import play.modules.reactivemongo.MongoController
 import reactivemongo.api.collections.default.BSONCollection
-import reactivemongo.bson.{BSONDocument, _}
+import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
-
+import service.User
+import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
 /**
  * Created by wayneyu on 1/8/15.
  */
-object TopicController extends Controller with MongoController {
+
+trait TopicController extends securesocial.core.SecureSocial[User] with ServiceComponent with MongoController {
+
+  override implicit val env = AuthRuntimeEnvironment
 
   val collection = db[BSONCollection]("topics")
 
-  def topic(topic: String) = Action.async {
+  def topic(topic: String) = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     val topicResult = topicBSON(topic)
     val questionsResult = QuestionController.questionsForTopic(topic)
 
@@ -37,7 +40,8 @@ object TopicController extends Controller with MongoController {
 
   }
 
-  def topics() = Action.async {
+  def topics() = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     val alltopics = topicsBSON()
 
     alltopics.map{
@@ -71,3 +75,5 @@ object TopicController extends Controller with MongoController {
     topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
   }
 }
+
+object TopicController extends TopicController

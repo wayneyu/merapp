@@ -1,4 +1,4 @@
-@(course: String, term_year: String, questions: List[Question])
+@(course: String, term_year: String, questions: List[Question])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
 
 @main(course.replace("MATH", "MATH ") + " " + term_year.replace("_", " ")){
 <h2>Questions available</h2>

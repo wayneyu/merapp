@@ -1,4 +1,4 @@
-@(current: service.User)(implicit request: RequestHeader)
+@(current: service.User)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
 
 @main("Account Link Result") {
 <div class="page-header">

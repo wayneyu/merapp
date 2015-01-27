@@ -1,4 +1,16 @@
-@(title: String)(content: Html)
+@(title: String)(content: Html)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+
+@import play.api.libs.concurrent.Execution.Implicits._
+@import securesocial.core.SecureSocial
+@import scala.util.{Failure, Success}
+
+@loginMsg = @{
+    user match {
+        case Some(u) => "Hi, " + u.main.firstName.getOrElse("")
+        case None => ""
+    }
+}
+
 <!DOCTYPE html>
     <head>
         <title>@title</title>
@@ -35,7 +47,12 @@
               <li><a href=@routes.Application.topics>Topics</a></li>
               <li><a href=@routes.Application.search>Find Keywords</a></li>
               <li><a href="http://goo.gl/forms/rru68Ci0mH" id="feedback">GIVE FEEDBACK</a>
-              <li><a href=@securesocial.controllers.routes.LoginPage.login>Login</a></li>
+              <li>
+                @user match {
+                    case Some(u) => {<a href=@securesocial.controllers.routes.LoginPage.logout>@loginMsg. Logout</a>}
+                    case None => {<a href=@securesocial.controllers.routes.LoginPage.login>Login</a>}
+                }
+              </li>
               <!--<li><a href=(AT)routes.Application.editor>LaTeX Editor</a></li>-->
             </ul>
             <table id="banner">

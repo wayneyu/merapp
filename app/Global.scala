@@ -16,7 +16,7 @@
  */
 import java.lang.reflect.Constructor
 
-import controllers.CustomRoutesService
+import controllers.{ServiceComponent, CustomRoutesService}
 import org.sedis.Dress
 import play._
 import securesocial.core.{AuthenticationMethod, RuntimeEnvironment}
@@ -27,16 +27,17 @@ import redis.clients.jedis._
 import com.typesafe.plugin.RedisPlugin
 
 
-object Global extends play.api.GlobalSettings {
+object Global extends play.api.GlobalSettings with ServiceComponent{
 
   /**
    * The runtime environment for this sample app.
    */
-  object MyRuntimeEnvironment extends RuntimeEnvironment.Default[User] {
-    override lazy val routes = new CustomRoutesService()
-    override lazy val userService: RedisUserService = new RedisUserService()
-    override lazy val eventListeners = List(new AuthEventListener())
-  }
+//  object AuthRuntimeEnvironment extends RuntimeEnvironment.Default[User] {
+//    override lazy val routes = new CustomRoutesService()
+//    override lazy val userService: RedisUserService = new RedisUserService()
+//    override lazy val eventListeners = List(new AuthEventListener())
+//  }
+
 
   /**
    * An implementation that checks if the controller expects a RuntimeEnvironment and
@@ -53,7 +54,7 @@ object Global extends play.api.GlobalSettings {
       val params = c.getParameterTypes
       params.length == 1 && params(0) == classOf[RuntimeEnvironment[User]]
     }.map {
-      _.asInstanceOf[Constructor[A]].newInstance(MyRuntimeEnvironment)
+      _.asInstanceOf[Constructor[A]].newInstance(AuthRuntimeEnvironment)
     }
     instance.getOrElse(super.getControllerInstance(controllerClass))
   }

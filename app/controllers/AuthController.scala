@@ -20,9 +20,12 @@ import play.api.mvc.{Action, RequestHeader}
 import securesocial.core._
 import service.User
 
-class AuthController(override implicit val env: RuntimeEnvironment[User]) extends securesocial.core.SecureSocial[User] {
+trait AuthController extends securesocial.core.SecureSocial[User] with ServiceComponent{
+
+  override implicit val env = AuthRuntimeEnvironment
 
   def userprofile = SecuredAction { implicit request =>
+	  implicit val user = Some(request.user)
     Ok(views.html.userprofile(request.user))
   }
 
@@ -32,6 +35,7 @@ class AuthController(override implicit val env: RuntimeEnvironment[User]) extend
 //  }
 
   def linkResult = SecuredAction { implicit request =>
+	  implicit val user = Some(request.user)
     Ok(views.html.linkResult(request.user))
   }
 
@@ -43,3 +47,5 @@ case class WithProvider(provider: String) extends Authorization[User] {
     user.main.providerId == provider
   }
 }
+
+object AuthController extends AuthController

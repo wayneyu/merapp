@@ -8,25 +8,26 @@ import play.api.mvc._
 import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
+import service.User
 
+import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
 
-// Reactive Mongo imports
 import reactivemongo.api._
 import reactivemongo.core.commands._
 
-// Reactive Mongo plugin, including the JSON-specialized collection
 import play.modules.reactivemongo.MongoController
 
 /**
  * Created by wayneyu on 11/1/14.
  */
-object QuestionController extends Controller with MongoController {
+trait QuestionController extends securesocial.core.SecureSocial[User] with MongoController {
 
   val collection = db[BSONCollection]("questions")
 
-  def questions = Action.async { implicit request =>
+  def questions = UserAwareAction.async { implicit request =>
+	  implicit val user = request.user
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
 
@@ -48,6 +49,99 @@ object QuestionController extends Controller with MongoController {
       Ok(views.html.question(Question.empty, false)(courseList, Nil, yearList, Nil, "", "", "", ""))
     }
   }
+
+	def question(course: String, term_year: String, q: String, editable: Boolean = false) = UserAwareAction.async { implicit request =>
+		implicit val user = request.user
+
+		val (term: String, year: Int) = getTermAndYear(term_year)
+
+		val question = questionQuery(course, term_year, q)
+		val coursesResult = distinctCourses()
+		val yearsResult = distinctYears()
+		val questionsResult = examQuestions(course, term_year)
+
+		val res = for {
+			cr <- coursesResult
+			yr <- yearsResult
+			q <- question
+			qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
+		} yield (cr, yr, q, qr)
+
+		res.map { case (courseList, yearList, question, questionsList) =>
+		{
+			question match {
+				case j :: js =>
+					Logger.info("No. of questions found: " + question.length.toString())
+					val Q = j.as[Question]
+					Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
+				case Nil =>
+					Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+			}
+		}
+		}
+	}
+
+	def course(course: String) = UserAwareAction.async { implicit request =>
+		implicit val user = request.user
+		val exams = examsForCourse(course)
+		val topics = topicsForCourse(course)
+		val num_questions = topics.map{ ts => ts.size }
+
+		val list_of_topics = topics.map{
+			l => l.flatMap(
+				doc => doc.getAs[List[String]]("topics").getOrElse(List("no_topic_specified"))
+			).toList.sorted
+		}
+
+		val res = for {
+			e <- exams
+			t <- list_of_topics
+			num_questions <- num_questions
+		} yield (e, t, num_questions)
+
+		res.map{ case(exams, topics, num_questions) =>
+			Logger.info(topics mkString "," )
+			Ok(views.html.course(course,
+				exams.map{
+					d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
+				}, topics, num_questions
+			))
+		}
+	}
+
+	def searchByKeywords(searchString: String) = UserAwareAction.async { implicit request =>
+		implicit val user = request.user
+		val res = searchByKeywordsQuery(searchString)
+		res.map{ l =>
+			Ok (views.html.search( l.map( e => e.as[SearchResult] ) ))
+		}
+	}
+
+	def exam(course: String, term_year: String) = UserAwareAction.async { implicit request =>
+		implicit val user = request.user
+		val questions = examQuestions(course, term_year)
+
+		questions.map{
+			l => Ok(views.html.exam(course, term_year, l.map( d => d.as[Question] )) )
+		}
+	}
+
+	def exams() = UserAwareAction.async{ implicit request =>
+		implicit val user = request.user
+		val allyears = distinctYears().map(_.sorted)
+		val allcourses = distinctCourses()
+		val exams = distinctExams()
+
+		val res = for{
+			c <- allcourses
+			y <- allyears
+			e <- exams
+		} yield (c, y, e)
+
+		res.map{
+			ex => Ok(views.html.exams(ex._1, ex._2, ex._3))
+		}
+	}
 
   def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
     val (term: String, year: Int) = getTermAndYear(term_year)
@@ -76,35 +170,6 @@ object QuestionController extends Controller with MongoController {
   }
 
   def questionEdit(course: String, term_year: String, q: String) = question(course, term_year, q, true)
-
-  def question(course: String, term_year: String, q: String, editable: Boolean = false) = Action.async { implicit request =>
-    val (term: String, year: Int) = getTermAndYear(term_year)
-
-    val question = questionQuery(course, term_year, q)
-    val coursesResult = distinctCourses()
-    val yearsResult = distinctYears()
-    val questionsResult = examQuestions(course, term_year)
-
-    val res = for {
-      cr <- coursesResult
-      yr <- yearsResult
-      q <- question
-      qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
-    } yield (cr, yr, q, qr)
-
-    res.map { case (courseList, yearList, question, questionsList) =>
-      {
-        question match {
-          case j :: js =>
-            Logger.info("No. of questions found: " + question.length.toString())
-            val Q = j.as[Question]
-            Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
-          case Nil =>
-            Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
-        }
-      }
-    }
-  }
 
   def question(course: String, term: String, year: Int, q: String): Action[AnyContent] = question(course, term+"_"+year, q)
 
@@ -388,13 +453,6 @@ object QuestionController extends Controller with MongoController {
     result.map( list => Ok(BSONArray.pretty(BSONArray(list))) )
   }
 
-  def searchByKeywords(searchString: String) = Action.async {
-    val res = searchByKeywordsQuery(searchString)
-    res.map{ l =>
-      Ok (views.html.search( l.map( e => e.as[SearchResult] ) ))
-    }
-  }
-
   def searchByKeywordsSubmit() = Action { request =>
     val form = request.body.asFormUrlEncoded
     form match {
@@ -510,59 +568,10 @@ object QuestionController extends Controller with MongoController {
     questions.map{ _.toList }
   }
 
-  def course(course: String) = Action.async {
-    val exams = examsForCourse(course)
-    val topics = topicsForCourse(course)
-    val num_questions = topics.map{ ts => ts.size }
 
-    val list_of_topics = topics.map{
-      l => l.flatMap(
-        doc => doc.getAs[List[String]]("topics").getOrElse(List("no_topic_specified"))
-      ).toList.sorted
-    }
-
-    val res = for {
-      e <- exams
-      t <- list_of_topics
-      num_questions <- num_questions
-    } yield (e, t, num_questions)
-
-    res.map{ case(exams, topics, num_questions) =>
-      Logger.info(topics mkString "," )
-      Ok(views.html.course(course,
-        exams.map{
-          d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-        }, topics, num_questions
-      ))
-    }
-  }
 
 
   def exam(course: String, year: String, term: String): Action[AnyContent] = exam(course, term + "_" + year)
-
-  def exam(course: String, term_year: String) = Action.async {
-    val questions = examQuestions(course, term_year)
-
-    questions.map{
-        l => Ok(views.html.exam(course, term_year, l.map( d => d.as[Question] )) )
-      }
-  }
-
-  def exams() = Action.async{
-    val allyears = distinctYears().map(_.sorted)
-    val allcourses = distinctCourses()
-    val exams = distinctExams()
-
-    val res = for{
-      c <- allcourses
-      y <- allyears
-      e <- exams
-    } yield (c, y, e)
-
-    res.map{
-      ex => Ok(views.html.exams(ex._1, ex._2, ex._3))
-    }
-  }
 
   def distinctExams(): Future[List[(String, String, String)]] = {
 
@@ -596,4 +605,9 @@ object QuestionController extends Controller with MongoController {
       BadRequest("Image missing")
     }
   }
+}
+
+
+object QuestionController extends QuestionController with ServiceComponent{
+  override implicit val env = AuthRuntimeEnvironment
 }

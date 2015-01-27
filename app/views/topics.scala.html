@@ -1,4 +1,4 @@
-@(topics: List[Topic])
+@(topics: List[Topic])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
 
 @main("Topics"){
 A list of key topics is below, each with associated questions and additional content. Click on a topic to see more.<br>

@@ -40,8 +40,8 @@ GET    /javascriptRoutes                                controllers.Application.
 GET    /assets/*file                                    controllers.Assets.at(path="/public", file)
 
 # SocialSecure sample code routes
-GET        /auth/user           @controllers.AuthController.userprofile
-GET        /auth/link-result         @controllers.AuthController.linkResult
-GET        /custom/login        @controllers.CustomLoginController.login
-GET        /custom/logout       @controllers.CustomLoginController.logout
+GET        /auth/user           controllers.AuthController.userprofile
+GET        /auth/link-result    controllers.AuthController.linkResult
+GET        /custom/login        controllers.CustomLoginController.login
+GET        /custom/logout       controllers.CustomLoginController.logout
 ->         /auth                securesocial.Routes

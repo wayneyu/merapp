@@ -8,7 +8,7 @@ import play.modules.reactivemongo.MongoController
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
-import service.{ServiceComponent, User}
+import service.{MongoDAO, ServiceComponent, User}
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
@@ -24,8 +24,8 @@ trait TopicController extends securesocial.core.SecureSocial[User] with ServiceC
 
   def topic(topic: String) = UserAwareAction.async { implicit request =>
 	  implicit val user = request.user
-    val topicResult = topicBSON(topic)
-    val questionsResult = QuestionController.questionsForTopic(topic)
+    val topicResult = MongoDAO.topicBSON(topic)
+    val questionsResult = MongoDAO.questionsForTopic(topic)
 
     val res = for {
       tr <- topicResult
@@ -34,7 +34,7 @@ trait TopicController extends securesocial.core.SecureSocial[User] with ServiceC
 
     res.map{
       case (tr, qr) => Ok(views.html.topic(
-        tr.as[Topic], qr.map( _.as[Question] )
+        tr.as[Topic], qr.map( _.as[Question] ).toList
       ))
     }
 
@@ -42,38 +42,15 @@ trait TopicController extends securesocial.core.SecureSocial[User] with ServiceC
 
   def topics() = UserAwareAction.async { implicit request =>
 	  implicit val user = request.user
-    val alltopics = topicsBSON()
+    val alltopics = MongoDAO.topicsBSON()
 
     alltopics.map{
       l => Ok(views.html.topics(
-        l.map { t => t.as[Topic] }
+        l.map { t => t.as[Topic] }.toList
       ))
     }
   }
 
-  def topicsBSON(): Future[List[BSONDocument]] = {
-    Logger.info("Retrieve distinct topics")
-
-    val command = Aggregate(collection.name, Seq(
-      Sort(Seq(Ascending("topic")))
-    ))
-
-    val topics = db.command(command)
-
-    topics.map{ _.toList }
-  }
-
-  def topicBSON(topic: String): Future[BSONDocument] = {
-    Logger.info("Finding topic: " + topic)
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("topic" -> topic))
-    ))
-
-    val topics = db.command(command)
-
-    topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
-  }
 }
 
 object TopicController extends TopicController

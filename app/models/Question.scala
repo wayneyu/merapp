@@ -6,7 +6,8 @@ package models
 
 import play.api.libs.functional.syntax._
 import play.api.libs.json.{JsPath, Reads}
-import reactivemongo.bson.{BSONDocument, BSONDocumentReader}
+import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
+import reactivemongo.bson._
 
 case class Question ( course: String,
                      year: Int,
@@ -26,7 +27,6 @@ case class Question ( course: String,
   def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
 
   def link: String = course + " - " + term + " " + year + " - " + question
-
 }
 
 
@@ -71,6 +71,25 @@ object Question {
       )
     }
   }
+
+	implicit object QuestionWriter extends BSONDocumentWriter[Question] {
+		def write(q: Question): BSONDocument = BSONDocument(
+			"course" -> BSONString(q.course),
+			"year" -> BSONInteger(q.year),
+			"term" -> BSONString(q.term),
+			"question" -> BSONString(q.question),
+			"statement_html" -> BSONString(q.statement),
+			"hints_html" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"sols_html" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"answer_html" -> BSONString(q.answer),
+			"topics" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"solvers" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"rating" -> BSONInteger(q.rating),
+			"num_votes" -> BSONInteger(q.num_votes),
+			"flags" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"contributors" -> BSONArray(q.topics.map{ BSONString(_) })
+		)
+	}
 
   val empty = Question("",-1,"","No Question","",Nil,Nil,"",Nil,Nil, -1, -1, Nil, Nil)
 

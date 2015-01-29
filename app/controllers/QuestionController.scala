@@ -25,8 +25,6 @@ import play.modules.reactivemongo.MongoController
  */
 trait QuestionController extends securesocial.core.SecureSocial[User] with MongoController {
 
-  val collection = db[BSONCollection]("questions")
-
   def questions = UserAwareAction.async { implicit request =>
 	  implicit val user = request.user
     val coursesResult = distinctCourses()
@@ -55,7 +53,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 	                  (implicit request: RequestHeader, env: RuntimeEnvironment[User], user: Option[User]): Future[Result] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
-		val question = questionQuery(course, term_year, q)
+		val question = MongoDAO.questionQuery(course, term_year, q)
 		val coursesResult = distinctCourses()
 		val yearsResult = distinctYears()
 		val questionsResult = examQuestions(course, term_year)
@@ -67,17 +65,16 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 			qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
 		} yield (cr, yr, q, qr)
 
-		res.map { case (courseList, yearList, question, questionsList) =>
-		{
-			question match {
-				case j :: js =>
-					Logger.info("No. of questions found: " + question.length.toString())
-					val Q = j.as[Question]
-					Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
-				case Nil =>
-					Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+		res.map { case (courseList, yearList, question, questionsList) => {
+				question match {
+					case j :: js =>
+						Logger.info("No. of questions found: " + question.length.toString())
+						val Q = j.as[Question]
+						Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
+					case Nil =>
+						Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+				}
 			}
-		}
 		}
 	}
 
@@ -99,38 +96,19 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 		request.user match {
 			case _: Visitor => Future(Unauthorized("Current user does not have permission to edit."))
 			case _ @ ( _: Contributor | _: SuperUser) =>
-				val (term, year) = getTermAndYear(term_year)
-				Logger.info("Editing " + course + "/" + term + "/" + year + "/" + q)
+				Logger.info("Editing " + course + "/" + term_year + "/" + q)
 
 				val bson = BSONDocumentFormat.reads(request.body)
 
 				bson match {
-
 					case e: JsError => Future(BadRequest("Invalid JSON passed."))
-
-					case b: JsSuccess[BSONDocument] =>
-					{
-						val selector = BSONDocument(
-							"course" -> course, "term" -> term,
-							"year" -> year.toInt, "question" -> q)
-
-						val modifier = BSONDocument(
-							"$set" -> b.get)
-
-						val command = FindAndModify(
-							collection.name,
-							selector,
-							Update(modifier, true))
-
-						val result = db.command(command)
-
-						result.map{
+					case b: JsSuccess[BSONDocument] => {
+						MongoDAO.questionFindAndModify(course, term_year, q, b.get).map{
 							case Some(doc) =>
 								Redirect(routes.QuestionController.questionEdit(course, term_year, q))
 							case None =>
 								BadRequest("Question was not updated.")
 						}
-
 					}
 				}
 		}
@@ -158,9 +136,9 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 
 	def course(course: String) = UserAwareAction.async { implicit request =>
 		implicit val user = request.user
-		val exams = examsForCourse(course)
-		val topics = topicsForCourse(course)
-		val num_questions = topics.map{ ts => ts.size }
+		val exams = MongoDAO.examsForCourse(course)
+		val topics = MongoDAO.topicsForCourse(course)
+		val num_questions = topics.map{ _.size }
 
 		val list_of_topics = topics.map{
 			l => l.flatMap(
@@ -179,7 +157,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 			Ok(views.html.course(course,
 				exams.map{
 					d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-				}, topics, num_questions
+				}.toList, topics, num_questions
 			))
 		}
 	}
@@ -218,21 +196,6 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 		}
 	}
 
-  def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
-    val (term: String, year: Int) = getTermAndYear(term_year)
-
-    // let's do our query
-    val cursor: Cursor[BSONDocument] = collection.
-    // find all people with name `name`
-    find(BSONDocument("course" -> course, "term" -> term, "year" -> year, "question" -> q)).
-    // perform the query and get a cursor of JsObject
-    cursor[BSONDocument]
-
-    // gather all the JsObjects in a list
-    val question: Future[List[BSONDocument]] = cursor.collect[List]()
-    question
-  }
-
   def getTermAndYear(term_year: String): (String, Int) = {
     val tysplit = term_year.split("_")
     val term = tysplit(0)
@@ -241,10 +204,10 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def questionInJson(course: String, term_year: String, q: String) = Action.async {
-    questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
+    MongoDAO.questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
   }
 
-  def question(course: String, term: String, year: Int, q: String): Action[AnyContent] = question(course, term+"_"+year, q)
+  def question(course: String, term: String, year: Int, q: String): Action[AnyContent] = question(course, term + "_" + year, q)
 
   def questionSubmit() = Action { request =>
     val form = request.body.asFormUrlEncoded
@@ -260,168 +223,67 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def distinctCourses(): Future[List[String]] = {
-    // set up query
-    val command = Aggregate(collection.name, Seq(
-      GroupField("course")("course" -> First("course")),
-      Sort(Seq(Ascending("course"))),
-      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctCourses().map{
       st => st.map( d => d.getAs[String]("course").get ).toList
     }
   }
 
   def distinctCourses(year: Int): Future[List[String]] = {
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("year" -> year)),
-      GroupField("course")("course" -> First("course")),
-      Sort(Seq(Descending("course"))),
-      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctCourses(year).map{
       st => st.map( d => d.getAs[String]("course").get ).toList
     }
-
   }
 
   def distinctCourses(year: Int, term: String) = Action.async {
-    Logger.info("distinctCourses(year -> " + year + ", term-> " + term + ")")
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("year" -> year, "term" -> term )),
-      GroupField("course")("course" -> First("course")),
-      Sort(Seq(Descending("course"))),
-      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctCourses(year, term).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("course").get)
       )))
     }
   }
 
-
   def distinctYears(): Future[List[String]] = {
-    val command = Aggregate(collection.name, Seq(
-      GroupField("year")("year" -> First("year")),
-      Sort(Seq(Descending("year"))),
-      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctYears().map{
       st => st.map(d => d.getAs[Int]("year").get.toString).toList
     }
   }
 
   def distinctYears(course: String): Future[List[String]] = {
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course)),
-      GroupField("year")("year" -> First("year")),
-      Sort(Seq(Descending("year"))),
-      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctYears(course).map{
       st => st.map(d => d.getAs[Int]("year").get.toString()).toList
     }
-
   }
 
   def distinctYears(course: String, term: String) = Action.async {
-    Logger.info("distinctYears(course-> " + course + ", term-> " + term + ")")
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course, "term" -> term )),
-      GroupField("year")("year" -> First("year")),
-      Sort(Seq(Descending("year"))),
-      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
-         st => Ok(BSONArrayFormat.writes(BSONArray(
-           st.map(d => d.getAs[BSONInteger]("year").get)
-         )))
-      }
-
+    MongoDAO.distinctYears(course, term).map{
+       st => Ok(BSONArrayFormat.writes(BSONArray(
+         st.map(d => d.getAs[BSONInteger]("year").get)
+       )))
+    }
   }
 
   def distinctTerms(): Future[List[String]] = {
-    val command = Aggregate(collection.name, Seq(
-      GroupField("term")("term" -> First("term")),
-      Sort(Seq(Ascending("term"))),
-      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctTerms().map{
       st => st.map(d => d.getAs[String]("term").get).toList
     }
   }
 
   def distinctTermsList(course: String): Future[List[String]] = {
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course)),
-      GroupField("term")("term" -> First("term")),
-      Sort(Seq(Ascending("term"))),
-      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctTermsList(course).map{
       st => st.map(d => d.getAs[String]("term").get).toList
     }
-
   }
 
   def distinctTerms(course: String) = Action.async {
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course)),
-      GroupField("term")("term" -> First("term")),
-      Sort(Seq(Ascending("term"))),
-      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+		MongoDAO.distinctTerms(course).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
       )))
     }
-
   }
 
   def distinctTerms(course: String, year: String) = Action.async {
-    Logger.info("distinctYears(course-> " + course + ", year-> " + year + ")")
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course, "year" -> year)),
-      GroupField("term")("term" -> First("term")),
-      Sort(Seq(Ascending("term"))),
-      Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{
+    MongoDAO.distinctTerms(course, year).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
       )))
@@ -429,24 +291,11 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def distinctQuestions(course: String, term_year: String) = Action.async {
-    Logger.info("Find exam  = " + course + " " + term_year)
-    val (term: String, year: Int) = getTermAndYear(term_year)
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-      GroupField("question")("question"->First("question")),
-      Sort(Seq(Ascending("question"))),
-      Project("_id" -> BSONInteger(0), "question"->BSONInteger(1))
-    ))
-
-    val questions = db.command(command)
-
-    questions.map{
+    MongoDAO.distinctQuestions(course, term_year).map{
       st => Ok(BSONArrayFormat.writes(
         BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)
       )))
     }
-
   }
 
   def questionSort(tis: BSONDocument, tat: BSONDocument): Boolean = {
@@ -491,7 +340,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def allTopicsCourse(course: String) = Action.async {
-    val topics = topicsForCourse(course)
+    val topics = MongoDAO.topicsForCourse(course)
 
     topics.map {
       st => Ok(BSONArrayFormat.writes(BSONArray(
@@ -501,29 +350,11 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-    Logger.info("Find exam  = " + course + " " + term_year)
-    val (term: String, year: Int) = getTermAndYear(term_year)
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-      Sort(Seq(Ascending("question")))
-    ))
-
-    val questions = db.command(command)
-
-    questions.map{ _.toList.sortWith(questionSort) }
+    MongoDAO.examQuestions(course, term_year).map{ _.toList.sortWith(questionSort) }
   }
 
   def searchById(id: String) = Action.async {
-    Logger.info("search question with id = " + id)
-    val cursor = collection.
-      // find with case-insensitive and use . to match any chars options
-      find( BSONDocument("_id" -> BSONObjectID(id))).
-      cursor[BSONDocument]
-
-    val result: Future[List[BSONDocument]] = cursor.collect[List]()
-
-    result.map( list => Ok(BSONArray.pretty(BSONArray(list))) )
+    MongoDAO.searchById(id).map( list => Ok(BSONArray.pretty(BSONArray(list))) )
   }
 
   def searchByKeywordsSubmit() = Action { request =>
@@ -538,20 +369,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
-    // Search for keywords in statement, solutions, hints, answers and topics field of Questions collection
-    // Results are returned as an array of BSONDocument of {course: , questions:, statement_html: , term: , year: score:}
-    Logger.info("searching for " + searchString)
-
-    val searchCommand = Aggregate(collection.name, Seq(
-      Match(BSONDocument("$text" -> BSONDocument("$search" -> searchString))),
-      Project("_id"->BSONInteger(0), "textScore" -> BSONDocument("$meta" -> "textScore"), "course" -> BSONInteger(1),
-        "year" -> BSONInteger(1), "term" -> BSONInteger(1), "question" -> BSONInteger(1), "statement_html" -> BSONInteger(1)),
-      Sort(Seq(Descending("textScore")))
-    ))
-
-    val result = db.command(searchCommand)
-
-    result.map { _.toList }
+     MongoDAO.searchByKeywordsQuery(searchString).map{ _.toList }
   }
 
   def bson2url(doc: BSONDocument) = Json.toJson(doc).as[Question].url
@@ -561,62 +379,13 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
   def examsForCourse(course: String): Future[List[BSONDocument]] = {
-
-    Logger.info("Find exams for " + course)
-
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course)),
-      GroupMulti("year" -> "year", "term" -> "term")("year" -> First("year"), "term" -> First("term")),
-      Sort(Seq(Descending("year"), Ascending("term"))),
-      Project("_id"->BSONInteger(0), "year" -> BSONInteger(1), "term" -> BSONInteger(1))
-    ))
-
-    val res = db.command(command)
-
-    res.map{ _.toList }
-
+		MongoDAO.examsForCourse(course).map{ _.toList }
   }
-
-  def topicsForCourse(course: String): Future[List[BSONDocument]] = {
-    val command = Aggregate(collection.name, Seq(
-      Match(BSONDocument("course" -> course)),
-      Project("_id"->BSONInteger(0), "topics" -> BSONInteger(1), "term" -> BSONInteger(1))
-    ))
-
-    val topics = db.command(command)
-
-    topics.map{ _.toList }
-  }
-
-  def questionsForTopic(topic: String): Future[List[BSONDocument]] = {
-
-    val command = Aggregate(collection.name, Seq(
-        Match(BSONDocument("topics" -> BSONDocument("$in" -> BSONArray(topic)))),
-        Sort(Seq(Ascending("course"), Ascending("year"), Ascending("term"), Ascending("question")))
-      )
-    )
-
-    val questions = db.command(command)
-
-    questions.map{ _.toList }
-  }
-
-
-
 
   def exam(course: String, year: String, term: String): Action[AnyContent] = exam(course, term + "_" + year)
 
   def distinctExams(): Future[List[(String, String, String)]] = {
-
-    val command = Aggregate(collection.name, Seq(
-      GroupMulti("course" -> "course", "year" -> "year", "term" -> "term")
-        ("course" -> First("course"), "year" -> First("year"), "term" -> First("term")),
-      Project("_id"->BSONInteger(0), "course" -> BSONInteger(1), "year" -> BSONInteger(1), "term" -> BSONInteger(1))
-    ))
-
-    val exams = db.command(command)
-
-    exams.map{
+    MongoDAO.distinctExams().map{
       st => st.map(
         d => (d.getAs[String]("course").get, d.getAs[Int]("year").get.toString, d.getAs[String]("term").get)
       ).toList

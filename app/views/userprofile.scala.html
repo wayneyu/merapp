@@ -3,9 +3,18 @@
 @import securesocial.core.IdentityProvider
 @import securesocial.core.providers.UsernamePasswordProvider
 @import securesocial.core.AuthenticationMethod._
+@import service.{Visitor, Contributor, SuperUser}
 @import play.api.{Logger, Play}
 @import helper._
 @import play.api.Play
+
+@userType = @{
+    user match{
+        case _:Visitor => "Visitor"
+        case _:Contributor => "Contributor"
+        case _:SuperUser => "SuperUser"
+        case _ => "Unknown user type"}
+}
 
 @main("User Profile") {
 <div class="page-header">
@@ -23,7 +32,7 @@
         <li>Logged in from: @user.main.providerId</li>
         <li>Email: @user.main.email.map { email => @email }.getOrElse("Not Available")</li>
         <li>Authentication method: @user.main.authMethod</li>
-        <li>Access level: @user.accessMode</li>
+        <li>Access level: @userType</li>
     </ul>
 
     @user.main.oAuth1Info.map { info =>

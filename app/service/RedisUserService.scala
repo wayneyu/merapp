@@ -18,6 +18,8 @@ package service
 
 import play.api.Logger
 import play.api.Play.current
+import reactivemongo.api.collections.default.BSONCollection
+import reactivemongo.bson._
 import securesocial.core._
 import securesocial.core.providers.{MailToken, UsernamePasswordProvider}
 import securesocial.core.services.{SaveMode, UserService}
@@ -26,7 +28,7 @@ import scala.concurrent.Future
 import play.api.cache.Cache
 
 import scala.concurrent.ExecutionContext.Implicits._
-import scala.reflect.ClassTag
+import play.modules.reactivemongo.MongoController
 
 class RedisUserService extends UserService[User] {
   val logger = Logger("application.controllers.InMemoryUserService")
@@ -52,6 +54,8 @@ class RedisUserService extends UserService[User] {
       case None => List(user.userkey)
     }
     Cache.set(userColletionKey, updatedUsers)
+	  //TODO backup to mongo
+		MongoDAO.addUser(user)
   }
 
 	def getUsers: Option[List[User]] = {
@@ -133,7 +137,10 @@ class RedisUserService extends UserService[User] {
   def save(userProfile: BasicProfile, mode: SaveMode): Future[User] = {
     mode match {
       case SaveMode.SignUp =>
-        val newUser = Visitor(userProfile, List(userProfile)) // default to visitor, users are manually promoted by SuperUser
+	      val newUser = (userProfile.userId, userProfile.providerId) match {
+		      case ("merapp.info@gmail.com", "userpass") => SuperUser(userProfile, List(userProfile))
+		      case _ => Visitor(userProfile, List(userProfile)) // default to visitor, users are manually promoted by SuperUser
+	      }
         setUserById(newUser.userkey, newUser)
         addUser(newUser)
         Future.successful(newUser)
@@ -148,7 +155,6 @@ class RedisUserService extends UserService[User] {
             addUser(newUser)
             Future.successful(newUser)
         }
-
       case SaveMode.PasswordChange =>
         findProfile(userProfile).map { user =>
           updateProfile(userProfile, user) }.getOrElse(
@@ -238,27 +244,108 @@ class RedisUserService extends UserService[User] {
   }
 }
 
-trait User extends Serializable{
-  val SerialVersionUID: Long
-  val main: BasicProfile
-  val identities: List[BasicProfile]
-  val accessMode: String
-  def userkey: UserKey = UserKey(this)
-  def emailkey: Option[EmailKey] = EmailKey(this)
+trait User extends Serializable {
+	val SerialVersionUID: Long
+	val main: BasicProfile
+	val identities: List[BasicProfile]
+
+	def userkey: UserKey = UserKey(this)
+	def emailkey: Option[EmailKey] = EmailKey(this)
+}
+
+object User{
+
+	implicit object UserWriter extends BSONDocumentWriter[User] {
+		def write(u: User): BSONDocument = BSONDocument(
+			"uid" -> BSONString(u.userkey.key),
+			"identities" -> BSONArray(u.identities.map{ i => BSONString(UserKey(i).key) })
+		)
+	}
+
+	implicit object BasicProfileWriter extends BSONDocumentWriter[BasicProfile] {
+		def write(p: BasicProfile): BSONDocument = {
+			val params = List( "uid" -> Option(BSONString(UserKey(p).key)),
+												"userId" -> Option(BSONString(p.userId)),
+												"providerId" -> Option(BSONString(p.providerId)),
+												"authMethod" -> Option(BSONString(p.authMethod.method)),
+												"firstName" -> p.firstName.map{BSONString(_)},
+												"lastName" -> p.lastName.map{BSONString(_)},
+												"fullName" -> p.fullName.map{BSONString(_)},
+												"email" -> p.email.map{BSONString(_)},
+												"avatarUrl" -> p.avatarUrl.map{BSONString(_)},
+												"oAuth1Info" -> p.oAuth1Info.map{ info => BSONDocument(
+													"token" -> BSONString(info.token),
+													"secret" -> BSONString(info.secret)) },
+												"oAuth2Info" -> p.oAuth2Info.map{info => BSONDocument(
+													"accessToken" -> BSONString(info.accessToken),
+													"tokenType" -> BSONString(info.tokenType.getOrElse("")),
+													"expiresIn" -> BSONInteger(info.expiresIn.getOrElse(-1)),
+													"refreshToken" -> BSONString( info.refreshToken.getOrElse(""))) },
+												"passwordInfo" -> p.passwordInfo.map{ info => BSONDocument(
+													"hasher" -> BSONString(info.hasher),
+													"password" -> BSONString(info.password),
+													"salt" -> BSONString(info.salt.getOrElse(""))) })
+
+			BSONDocument(params.filter{ p => p._2.isDefined }.map{ p => (p._1, p._2.get) })
+		}
+	}
+
+	implicit object OAuth1InfoReader extends BSONDocumentReader[OAuth1Info] {
+		def read(doc: BSONDocument): OAuth1Info = {
+			OAuth1Info(
+				doc.getAs[String]("token").get,
+				doc.getAs[String]("Secret").get)
+		}
+	}
+
+	implicit object OAuth2InfoReader extends BSONDocumentReader[OAuth2Info] {
+		def read(doc: BSONDocument): OAuth2Info = {
+			OAuth2Info(
+					doc.getAs[String]("accessToken").get,
+					doc.getAs[String]("tokenType").get match {case "" => None; case s:String => Some(s)},
+					doc.getAs[Int]("expiresIn").get match {case -1 => None; case s:Int => Some(s)},
+					doc.getAs[String]("refreshToken").get match {case "" => None; case s:String => Some(s)})
+			}
+	}
+
+	implicit object PasswordInfoReader extends BSONDocumentReader[PasswordInfo] {
+		def read(doc: BSONDocument): PasswordInfo = {
+			PasswordInfo(
+				doc.getAs[String]("hasher").get,
+				doc.getAs[String]("password").get,
+				doc.getAs[String]("salt").get match {case "" => None; case s:String => Some(s)})
+			}
+	}
+
+	implicit object BasicProfileReader extends BSONDocumentReader[BasicProfile] {
+		def read(doc: BSONDocument): BasicProfile = {
+			BasicProfile(
+				doc.getAs[String]("userId").get,
+				doc.getAs[String]("providerId").get,
+				doc.getAs[String]("firstName"),
+				doc.getAs[String]("lastName"),
+				doc.getAs[String]("fullName"),
+				doc.getAs[String]("email"),
+				doc.getAs[String]("avatarUrl"),
+				AuthenticationMethod(doc.getAs[String]("authMethod").get),
+				doc.getAs[OAuth1Info]("oAuth1Info"),
+				doc.getAs[OAuth2Info]("oAuth2Info"),
+				doc.getAs[PasswordInfo]("passwordInfo")
+			)
+		}
+	}
 }
 
 case class Visitor(main: BasicProfile, identities: List[BasicProfile]) extends User{
   val SerialVersionUID = -1037302500704416308L
-  val accessMode = "Visitor"
 }
 case class Contributor(main: BasicProfile, identities: List[BasicProfile]) extends User{
   val SerialVersionUID = -1037302500704416309L
-  val accessMode = "Contributor"
 }
 case class SuperUser(main: BasicProfile, identities: List[BasicProfile]) extends User{
   val SerialVersionUID = -1037302500704416310L
-  val accessMode = "SuperUser"
 }
+
 
 
 trait Key {

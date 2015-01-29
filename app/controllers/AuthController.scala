@@ -54,7 +54,7 @@ case class WithProvider(provider: String) extends Authorization[User] {
 
 object AuthController extends AuthController{
 
-	def modifyUserType[T <: User](userKey: String, provider: String, userType: String) = SecuredAction.async { implicit request =>
+	def modifyUserType(userKey: String, provider: String, userType: String) = SecuredAction.async { implicit request =>
 		request.user match {
 			case _@(_: Visitor | _: Contributor) => Future(Unauthorized("Current user does not have permission to modify user."))
 			case _: SuperUser =>

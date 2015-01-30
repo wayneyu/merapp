@@ -31,6 +31,7 @@ import scala.concurrent.ExecutionContext.Implicits._
 import play.modules.reactivemongo.MongoController
 
 class RedisUserService extends UserService[User] {
+
   val logger = Logger("application.controllers.InMemoryUserService")
 
 	val userColletionKey = "users"
@@ -48,6 +49,7 @@ class RedisUserService extends UserService[User] {
   }
 
   private def addUser(user: User) = {
+	  Logger.info("addUser " + user)
     val users = Cache.getAs[List[String]](userColletionKey)
     val updatedUsers = users match {
       case Some(l) => user.userkey::l
@@ -59,7 +61,8 @@ class RedisUserService extends UserService[User] {
   }
 
 	def getUsers: Option[List[User]] = {
-		Cache.getAs[List[User]](userColletionKey)
+		val keys = Cache.getAs[List[UserKey]](userColletionKey)
+		keys.map{ _.flatMap{ k => getUserById(k)} }
 	}
 
   private def getUserById(userKey: UserKey): Option[User] = {

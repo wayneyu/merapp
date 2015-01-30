@@ -40,9 +40,11 @@ GET    /javascriptRoutes                                controllers.Application.
 GET    /assets/*file                                    controllers.Assets.at(path="/public", file)
 
 # SocialSecure routes
-GET        /auth/user           controllers.AuthController.userprofile
-GET        /auth/link-result    controllers.AuthController.linkResult
-GET        /auth/modify/:user/:provider/:to    controllers.AuthController.modifyUserType(user: String, provider: String, to: String)
-GET        /custom/login        controllers.CustomLoginController.login
-GET        /custom/logout       controllers.CustomLoginController.logout
-->         /auth                securesocial.Routes
+GET        /users                                       controllers.AuthController.users
+GET        /users/modify/:user/:provider/:to            controllers.AuthController.modifyUserType(user: String, provider: String, to: String)
+POST       /users/modify                                controllers.AuthController.modifyUserSubmit
+GET        /auth/user                                   controllers.AuthController.userprofile
+GET        /auth/link-result                            controllers.AuthController.linkResult
+GET        /custom/login                                controllers.CustomLoginController.login
+GET        /custom/logout                               controllers.CustomLoginController.logout
+->         /auth                                        securesocial.Routes

@@ -17,5 +17,5 @@ dist
 *.pdf
 *.log
 *.toc
-mongolab.conf
+.env
 securesocial.conf

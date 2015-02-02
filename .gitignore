@@ -18,4 +18,3 @@ dist
 *.log
 *.toc
 .env
-securesocial.conf

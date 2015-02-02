@@ -1,5 +1,4 @@
-@(user: service.User)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], currentUser: Option[service.User])
-
+@(useropt: Option[service.User])(implicit context: service.AppContext[AnyContent], requst: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User])
 @import securesocial.core.IdentityProvider
 @import securesocial.core.providers.UsernamePasswordProvider
 @import securesocial.core.AuthenticationMethod._
@@ -8,6 +7,12 @@
 @import helper._
 @import play.api.Play
 
+@user = @{
+    useropt match {
+        case Some(u) => u
+        case None => context.user.get
+    }
+}
 @userType = @{
     user match{
         case _:Visitor => "Visitor"

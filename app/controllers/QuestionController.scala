@@ -2,6 +2,7 @@ package controllers
 
 import models._
 import play.api._
+import play.api.libs.Files.TemporaryFile
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json._
 import play.api.mvc._
@@ -23,10 +24,9 @@ import play.modules.reactivemongo.MongoController
 /**
  * Created by wayneyu on 11/1/14.
  */
-trait QuestionController extends securesocial.core.SecureSocial[User] with MongoController {
+object QuestionController extends ServiceComponent with MongoController {
 
-  def questions = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def questions = UserAwaredAction.async { implicit context =>
     val coursesResult = distinctCourses()
     val yearsResult = distinctYears()
 
@@ -50,7 +50,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
   }
 
 	def questionResult(course: String, term_year: String, q: String, editable: Boolean = false)
-	                  (implicit request: RequestHeader, env: RuntimeEnvironment[User], user: Option[User]): Future[Result] = {
+	                  (implicit context: AppContext[AnyContent]): Future[Result] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val question = MongoDAO.questionQuery(course, term_year, q)
@@ -78,64 +78,49 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 		}
 	}
 
-	def question(course: String, term_year: String, q: String) = UserAwareAction.async { implicit request =>
-		implicit val user = request.user
+	def question(course: String, term_year: String, q: String) = UserAwaredAction.async { implicit context =>
 		questionResult(course, term_year, q, false)
 	}
 
-	def questionEdit(course: String, term_year: String, q: String) = SecuredAction.async { implicit request =>
-		implicit val user = Some(request.user)
-		request.user match {
-			case _: Visitor => Future(Unauthorized("Current user does not have permission to edit."))
-			case _: Contributor => questionResult(course, term_year, q, true)
-			case _: SuperUser => questionResult(course, term_year, q, true)
-		}
+	def questionEdit(course: String, term_year: String, q: String) = ContributorAction.async { implicit context =>
+		questionResult(course, term_year, q, true)
 	}
 
-	def questionFindAndModify(course: String, term_year: String, q:String) = SecuredAction.async(parse.json) { request =>
-		request.user match {
-			case _: Visitor => Future(Unauthorized("Current user does not have permission to edit."))
-			case _ @ ( _: Contributor | _: SuperUser) =>
-				Logger.info("Editing " + course + "/" + term_year + "/" + q)
+	def questionFindAndModify(course: String, term_year: String, q:String) = ContributorAction.async(parse.json) { implicit context: AppContext[JsValue] =>
+		Logger.info("Editing " + course + "/" + term_year + "/" + q)
 
-				val bson = BSONDocumentFormat.reads(request.body)
+		val bson = BSONDocumentFormat.reads(context.request.body)
 
-				bson match {
-					case e: JsError => Future(BadRequest("Invalid JSON passed."))
-					case b: JsSuccess[BSONDocument] => {
-						MongoDAO.questionFindAndModify(course, term_year, q, b.get).map{
-							case Some(doc) =>
-								Redirect(routes.QuestionController.questionEdit(course, term_year, q))
-							case None =>
-								BadRequest("Question was not updated.")
-						}
-					}
+		bson match {
+			case e: JsError => Future(BadRequest("Invalid JSON passed."))
+			case b: JsSuccess[BSONDocument] => {
+				MongoDAO.questionFindAndModify(course, term_year, q, b.get).map{
+					case Some(doc) =>
+						Redirect(routes.QuestionController.questionEdit(course, term_year, q))
+					case None =>
+						BadRequest("Question was not updated.")
 				}
+			}
 		}
 	}
 
-	def upload(path: String) = SecuredAction.async(parse.multipartFormData) { request =>
-		request.user match {
-			case _: Visitor => Future(Unauthorized("Current user does not have permission to upload."))
-			case _ @ (_: Contributor | _:SuperUser) =>
-				request.body.file("file").map { file =>
-					import java.io.File
-					val FILE_FOLDER = "public/raw_database/json_data/"
-					val filename = file.filename
-					val pattern = "questions\\/(.*?\\/.*?)\\/".r
-					val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
-					val to = new File(FILE_FOLDER + subfolder, filename)
-					Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
-					file.ref.moveTo(to, true)
-					Future(Ok("File uploaded to " + to.getPath))
-				}.getOrElse {
-					Future(BadRequest("Image missing"))
-				}
+	def upload(path: String) = ContributorAction.async(parse.multipartFormData) { implicit context: AppContext[MultipartFormData[TemporaryFile]] =>
+		context.request.body.file("file").map { file =>
+			import java.io.File
+			val FILE_FOLDER = "public/raw_database/json_data/"
+			val filename = file.filename
+			val pattern = "questions\\/(.*?\\/.*?)\\/".r
+			val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
+			val to = new File(FILE_FOLDER + subfolder, filename)
+			Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
+			file.ref.moveTo(to, true)
+			Future(Ok("File uploaded to " + to.getPath))
+		}.getOrElse {
+			Future(BadRequest("Image missing"))
 		}
 	}
 
-	def course(course: String) = UserAwareAction.async { implicit request =>
-		implicit val user = request.user
+	def course(course: String) = UserAwaredAction.async { implicit context =>
 		val exams = MongoDAO.examsForCourse(course)
 		val topics = MongoDAO.topicsForCourse(course)
 		val num_questions = topics.map{ _.size }
@@ -162,16 +147,14 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 		}
 	}
 
-	def searchByKeywords(searchString: String) = UserAwareAction.async { implicit request =>
-		implicit val user = request.user
+	def searchByKeywords(searchString: String) = UserAwaredAction.async { implicit context =>
 		val res = searchByKeywordsQuery(searchString)
 		res.map{ l =>
 			Ok (views.html.search( l.map( e => e.as[SearchResult] ) ))
 		}
 	}
 
-	def exam(course: String, term_year: String) = UserAwareAction.async { implicit request =>
-		implicit val user = request.user
+	def exam(course: String, term_year: String) = UserAwaredAction.async { implicit context =>
 		val questions = examQuestions(course, term_year)
 
 		questions.map{
@@ -179,8 +162,7 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
 		}
 	}
 
-	def exams() = UserAwareAction.async{ implicit request =>
-		implicit val user = request.user
+	def exams() = UserAwaredAction.async { implicit context =>
 		val allyears = distinctYears().map(_.sorted)
 		val allcourses = distinctCourses()
 		val exams = distinctExams()
@@ -392,9 +374,4 @@ trait QuestionController extends securesocial.core.SecureSocial[User] with Mongo
     }
   }
 
-}
-
-
-object QuestionController extends QuestionController with ServiceComponent{
-  override implicit val env = AuthRuntimeEnvironment
 }

@@ -1,4 +1,4 @@
-@()(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@()(implicit context: service.AppContext[AnyContent])
 
 @main("MER") {
     <p>Welcome to <em>Math Educational Resources</em>! Click any of the tabs above to get started.</p>

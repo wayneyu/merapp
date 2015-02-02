@@ -1,4 +1,4 @@
-@(topic: Topic, questions: List[Question])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@(topic: Topic, questions: List[Question])(implicit context: service.AppContext[AnyContent])
 
 @name = @{topic.topic.replace("_"," ")}
 @main(name){

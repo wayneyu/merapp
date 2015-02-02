@@ -1,7 +1,8 @@
-@(users: Seq[service.User])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], currentUser: Option[service.User])
+@(users: Seq[service.User])(implicit context: service.AppContext[AnyContent])
 @import service.{Visitor, Contributor, SuperUser}
+@user = @{context.user}
 
-@main("Users list"){
+@main("Manage Users"){
 <table>
     <tr>
         <th>UserId</th>

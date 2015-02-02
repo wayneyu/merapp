@@ -1,4 +1,4 @@
-@(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])(implicit context: service.AppContext[AnyContent])
 @main("Exams"){
 
 <div class="questionsDiv">

@@ -355,18 +355,18 @@ object MongoDAO extends Controller with MongoController {
 		topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
 	}
 
-	def addUser(user: User): Future[Option[BSONDocument]] = {
+	def updateUser(user: User): Future[Option[BSONDocument]] = {
 		implicit val userWriter = User.UserWriter
 		implicit val profileWriter = User.BasicProfileWriter
-		user.identities.foreach( p => addProfile(UserKey(p), p))
-		addProfile(user.userkey, user.main)
+		user.identities.foreach( p => updateProfile(UserKey(p), p))
+		updateProfile(user.userkey, user.main)
 		val selector = BSONDocument("uid" -> user.userkey.key)
 		val modifier = BSONDocument("$set" -> User.UserWriter.write(user))
 		val command = FindAndModify(usersCollection.name, selector, Update(modifier, false), true)
 		db.command(command)
 	}
 
-	def addProfile(userKey: UserKey, profile: BasicProfile)(implicit writer: BSONDocumentWriter[BasicProfile]): Future[Option[BSONDocument]] = {
+	def updateProfile(userKey: UserKey, profile: BasicProfile)(implicit writer: BSONDocumentWriter[BasicProfile]): Future[Option[BSONDocument]] = {
 		val selector = BSONDocument( "uid" -> userKey.key)
 		val modifier = BSONDocument("$set" -> writer.write(profile))
 		val command = FindAndModify(profilesCollection.name, selector, Update(modifier, false), true)

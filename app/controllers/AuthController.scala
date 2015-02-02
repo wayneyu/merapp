@@ -18,43 +18,64 @@ package controllers
 
 import play.api.Logger
 import play.api.data.Form
-import play.api.mvc.{Result, AnyContent, Action, RequestHeader}
+import play.api.mvc._
 import securesocial.core._
 import service._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 import scala.concurrent.Future
 
-trait AuthController extends securesocial.core.SecureSocial[User] with ServiceComponent{
+object AuthController extends ServiceComponent{
 
-  override implicit val env = AuthRuntimeEnvironment
-
-  def userprofile = SecuredAction { implicit request =>
-	  implicit val user = Some(request.user)
-    Ok(views.html.userprofile(request.user))
+  def userprofile(user: User) = SuperUserAction { implicit context =>
+	  implicit val environ: RuntimeEnvironment[User] = env
+	  implicit val request: Request[AnyContent] = context.request
+    Ok(views.html.userprofile(Some(user)))
   }
+
+	def userprofile = VisitorAction.async { implicit context =>
+		implicit val environ: RuntimeEnvironment[User] = env
+		implicit val request: Request[AnyContent] = context.request
+		Future(Ok(views.html.userprofile(None)))
+	}
 
   // a sample action using an authorization implementation
 //  def onlyTwitter = SecuredAction(WithProvider("google")) { implicit request =>
 //    Ok("You can see this because you logged in using Twitter")
 //  }
 
-  def linkResult = SecuredAction { implicit request =>
-	  implicit val user = Some(request.user)
-    Ok(views.html.linkResult(request.user))
+  def linkResult = VisitorAction.async { implicit context =>
+    Future(Ok(views.html.linkResult()))
   }
 
-	def users = SecuredAction.async { implicit request =>
-		implicit val user = Some(request.user)
-		Future(
-			request.user match {
-				case _ @ (_:Visitor | _:Contributor) => BadRequest("Access denied due to insufficient permission.")
-				case _:SuperUser =>
-					val users = env.userService.getUsers.getOrElse(Nil)
-					 Ok(views.html.users(users))
-			}
-		)
+	def users = SuperUserAction.async { implicit context =>
+		val users = env.userService.getUsers.getOrElse(Nil)
+		Future(Ok(views.html.users(users)))
 	}
+
+	def modifyUserType(userId: String, provider: String, userType: String) = SuperUserAction.async { implicit context =>
+		val res = env.userService.modifyUserType(userId, provider, userType)
+		res.map {
+			s => Ok("Modify user with userId: " + userId + " to " + userType + ": " + s)
+		}
+	}
+
+	def modifyUserSubmit() = SuperUserAction.async { implicit request =>
+		val form = request.body.asFormUrlEncoded
+		form match {
+			case Some(map) => {
+				env.userService.modifyUserType(
+					map.getOrElse("userId", Seq(""))(0),
+					map.getOrElse("providerId", Seq(""))(0),
+					map.getOrElse("userType", Seq(""))(0)).map{
+					s => Redirect(controllers.routes.AuthController.users())
+				}
+			}
+			case None => Future(BadRequest("Modify user type failed: no data submitted."))
+		}
+	}
+
+//	def backupUsers() = SecuredAction
 
 }
 
@@ -63,34 +84,4 @@ case class WithProvider(provider: String) extends Authorization[User] {
   def isAuthorized(user: User, request: RequestHeader) = {
     user.main.providerId == provider
   }
-}
-
-object AuthController extends AuthController{
-
-	def modifyUserType(userId: String, provider: String, userType: String) = SecuredAction.async { implicit request =>
-		request.user match {
-			case _@(_: Visitor | _: Contributor) => Future(Unauthorized("Current user does not have permission to modify user."))
-			case _: SuperUser =>
-				val res = env.userService.modifyUserType(userId, provider, userType)
-				res.map {
-					s => Ok("Modify user with userId: " + userId + " to " + userType + ": " + s)
-				}
-		}
-	}
-
-	def modifyUserSubmit() = SecuredAction.async { implicit request =>
-		val form = request.body.asFormUrlEncoded
-		form match {
-			case Some(map) => {
-				env.userService.modifyUserType(
-					map.getOrElse("userId", Seq(""))(0),
-					map.getOrElse("providerId", Seq(""))(0),
-					map.getOrElse("userType", Seq(""))(0)).map{
-					 s => Redirect(controllers.routes.AuthController.users())
-					}
-			}
-			case None => Future(BadRequest("Modify user type failed: no data submitted."))
-		}
-	}
-
 }

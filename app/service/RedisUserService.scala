@@ -38,7 +38,8 @@ class RedisUserService extends UserService[User] {
 	val tokensColletionKey = "tokens"
 
   private def setUserById(userKey: UserKey, user: User) = {
-    Cache.set(userKey.key, user)
+	  Logger.info("setUserById:  userKey " + " user: " + user)
+	  Cache.set(userKey.key, user)
     for (identity <- user.identities) {
       linkProfileToUser(ProfileKey(identity), user)
       EmailKey(identity) match {
@@ -46,18 +47,18 @@ class RedisUserService extends UserService[User] {
         case None =>
       }
     }
+	  MongoDAO.updateUser(user)
   }
 
   private def addUser(user: User) = {
-	  Logger.info("addUser " + user)
+	  Logger.info("addUser: " + user)
     val users = Cache.getAs[List[String]](userColletionKey)
     val updatedUsers = users match {
       case Some(l) => user.userkey::l
       case None => List(user.userkey)
     }
     Cache.set(userColletionKey, updatedUsers)
-	  //TODO backup to mongo
-		MongoDAO.addUser(user)
+		MongoDAO.updateUser(user)
   }
 
 	def getUsers: Option[List[User]] = {
@@ -261,6 +262,12 @@ object User{
 	implicit object UserWriter extends BSONDocumentWriter[User] {
 		def write(u: User): BSONDocument = BSONDocument(
 			"uid" -> BSONString(u.userkey.key),
+			"type" -> BSONString(u match {
+				case _:Visitor => "Visitor"
+				case _:Contributor => "Contributor"
+				case _:SuperUser => "SuperUser"
+				case _ => "Unknown"
+			}),
 			"identities" -> BSONArray(u.identities.map{ i => BSONString(UserKey(i).key) })
 		)
 	}
@@ -348,7 +355,6 @@ case class Contributor(main: BasicProfile, identities: List[BasicProfile]) exten
 case class SuperUser(main: BasicProfile, identities: List[BasicProfile]) extends User{
   val SerialVersionUID = -1037302500704416310L
 }
-
 
 
 trait Key {

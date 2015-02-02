@@ -1,14 +1,15 @@
-@(current: service.User)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@()(implicit context: service.AppContext[AnyContent])
+@currentUser = @{context.user.get}
 
 @main("Account Link Result") {
 <div class="page-header">
-    <h2><img src="@current.main.avatarUrl.getOrElse("")" alt="@current.main.firstName.getOrElse("")" width="40px" height="40px"/> Hey @current.main.firstName.getOrElse("")</h2>
+    <h2><img src="@currentUser.main.avatarUrl.getOrElse("")" alt="@currentUser.main.firstName.getOrElse("")" width="40px" height="40px"/> Hey @currentUser.main.firstName.getOrElse("")</h2>
 </div>
 
 <div class="clearfix">
     <h2>You are linked to the following accounts:</h2>
 
-    @current.identities.map { linked =>
+    @currentUser.identities.map { linked =>
         <h2>@linked.providerId
         </h2>
         <ul>

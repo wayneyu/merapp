@@ -1,9 +1,10 @@
-@(title: String)(content: Html)(implicit request: RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@(title: String)(content: Html)(implicit context: service.AppContext[AnyContent])
 
 @import play.api.libs.concurrent.Execution.Implicits._
 @import securesocial.core.SecureSocial
 @import scala.util.{Failure, Success}
 
+@user = @{context.user}
 @loginMsg = @{
     user match {
         case Some(u) => "Hi, " + u.main.firstName.getOrElse("")

@@ -4,7 +4,7 @@ import play.Routes
 import play.api.{Logger, Play}
 import play.api.libs.json.Json
 import securesocial.core.{RuntimeEnvironment, SecureSocial}
-import service.{ServiceComponent, User}
+import service._
 
 import play.api.libs.ws.WS
 import play.api.Play.current
@@ -13,29 +13,23 @@ import play.api.mvc._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
-trait ApplicationController extends securesocial.core.SecureSocial[User] with ServiceComponent{
+object Application extends ServiceComponent {
 
-  override implicit val env = AuthRuntimeEnvironment
-
-  def index = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def index = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.index()))
   }
 
-  def team = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def team = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.team()))
   }
 
   def questions = QuestionController.questions()
 
-  def editor = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def editor = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.editor()))
   }
 
-  def search = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def search = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.search(List())))
   }
 
@@ -52,5 +46,3 @@ trait ApplicationController extends securesocial.core.SecureSocial[User] with Se
 
 
 }
-
-object Application extends ApplicationController

@@ -1,4 +1,4 @@
-@(results: Seq[SearchResult])(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@(results: Seq[SearchResult])(implicit context: service.AppContext[AnyContent])
 
 @main("Search by Keywords"){
 

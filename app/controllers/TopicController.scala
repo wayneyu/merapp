@@ -3,12 +3,12 @@ package controllers
 import models.{Question, Topic}
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import play.api.mvc.{Action, Controller}
+import play.api.mvc.{AnyContent, Action, Controller}
 import play.modules.reactivemongo.MongoController
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
-import service.{MongoDAO, ServiceComponent, User}
+import service._
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
@@ -16,14 +16,9 @@ import scala.concurrent.Future
  * Created by wayneyu on 1/8/15.
  */
 
-trait TopicController extends securesocial.core.SecureSocial[User] with ServiceComponent with MongoController {
+object TopicController extends ServiceComponent {
 
-  override implicit val env = AuthRuntimeEnvironment
-
-  val collection = db[BSONCollection]("topics")
-
-  def topic(topic: String) = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def topic(topic: String) = UserAwaredAction.async { implicit context =>
     val topicResult = MongoDAO.topicBSON(topic)
     val questionsResult = MongoDAO.questionsForTopic(topic)
 
@@ -40,8 +35,7 @@ trait TopicController extends securesocial.core.SecureSocial[User] with ServiceC
 
   }
 
-  def topics() = UserAwareAction.async { implicit request =>
-	  implicit val user = request.user
+  def topics() = UserAwaredAction.async { implicit context =>
     val alltopics = MongoDAO.topicsBSON()
 
     alltopics.map{
@@ -52,5 +46,3 @@ trait TopicController extends securesocial.core.SecureSocial[User] with ServiceC
   }
 
 }
-
-object TopicController extends TopicController

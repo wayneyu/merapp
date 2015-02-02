@@ -1,4 +1,4 @@
-@(course: String, exams: List[String], topics: List[String], num_questions: Int)(implicit request: play.api.mvc.RequestHeader, env: securesocial.core.RuntimeEnvironment[service.User], user: Option[service.User])
+@(course: String, exams: List[String], topics: List[String], num_questions: Int)(implicit context: service.AppContext[AnyContent])
 
 @main(course){
 <div id="exams">

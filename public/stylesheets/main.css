@@ -9,8 +9,15 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-bottom: 2px solid #2F4F4F;
+}
+
+.footer{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 #content_container{
@@ -72,13 +79,19 @@ th{
     vertical-align: bottom;
     list-style-type: none;
 }
-#nav a:not(#feedback) {
+#nav a:not(#user):not(#login) {
     display: block;
     min-height: 100%;
     padding: 4px 10px;
     background-color: #2F4F4F;
     color: white;
     border-radius: 6px 6px 0 0;
+}
+#user{
+    text-decoration: underline;
+}
+#login{
+    left-margin: 2em;
 }
 
 /* -- SEARCH RESULTS -- */
@@ -117,13 +130,4 @@ th{
 
 #exam {
     text-align: left;
-}
-
-#feedback {
-    display: block;
-    min-height: 100%;
-    padding: 4px 10px;
-    background-color: #2F4F4F;
-    color: red;
-    border-radius: 6px 6px 0 0;
 }

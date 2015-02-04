@@ -27,8 +27,7 @@ trait AuthService extends securesocial.core.SecureSocial[User]{
     override lazy val userService: RedisUserService = new RedisUserService()
     override lazy val eventListeners = List(new AuthEventListener())
 		override lazy val providers = ListMap(
-			// TODO support facebook
-//			include(new FacebookProvider(routes, cacheService, oauth2ClientFor(FacebookProvider.Facebook))),
+			include(new FacebookProvider(routes, cacheService, oauth2ClientFor(FacebookProvider.Facebook))),
 			// TODO support Twitter
 //			include(new TwitterProvider(routes, cacheService, oauth1ClientFor(TwitterProvider.Twitter))),
 			include(new GoogleProvider(routes, cacheService, oauth2ClientFor(GoogleProvider.Google))),

@@ -131,3 +131,11 @@ th{
 #exam {
     text-align: left;
 }
+
+#mascot{
+   width:200px;
+   height:150px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+}

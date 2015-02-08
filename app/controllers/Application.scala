@@ -38,7 +38,7 @@ object Application extends ServiceComponent {
   def topics = TopicController.topics()
 
   def javascriptRoutes = Action { implicit request =>
-    Logger.info("javascriptRoutes: ")
+    Logger.debug("javascriptRoutes: ")
     Ok(
       Routes.javascriptRouter("jsRoutes")
     ).as("text/javascript")

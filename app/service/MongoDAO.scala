@@ -79,7 +79,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctCourses(year: Int, term: String): Future[Stream[BSONDocument]] = {
-		Logger.info("distinctCourses(year -> " + year + ", term-> " + term + ")")
+		Logger.debug("distinctCourses(year -> " + year + ", term-> " + term + ")")
 
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("year" -> year, "term" -> term )),
@@ -113,7 +113,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctYears(course: String, term: String): Future[Stream[BSONDocument]] = {
-		Logger.info("distinctYears(course-> " + course + ", term-> " + term + ")")
+		Logger.debug("distinctYears(course-> " + course + ", term-> " + term + ")")
 
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("course" -> course, "term" -> term )),
@@ -159,7 +159,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctTerms(course: String, year: String): Future[Stream[BSONDocument]] = {
-		Logger.info("distinctYears(course-> " + course + ", year-> " + year + ")")
+		Logger.debug("distinctYears(course-> " + course + ", year-> " + year + ")")
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("course" -> course, "year" -> year)),
 			GroupField("term")("term" -> First("term")),
@@ -171,7 +171,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctQuestions(course: String, term_year: String): Future[Stream[BSONDocument]] = {
-		Logger.info("Find exam  = " + course + " " + term_year)
+		Logger.debug("Find exam  = " + course + " " + term_year)
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val command = Aggregate(questionCollection.name, Seq(
@@ -226,7 +226,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-		Logger.info("Find exam  = " + course + " " + term_year)
+		Logger.debug("Find exam  = " + course + " " + term_year)
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val command = Aggregate(questionCollection.name, Seq(
@@ -240,7 +240,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def searchById(id: String): Future[List[BSONDocument]] = {
-		Logger.info("search question with id = " + id)
+		Logger.debug("search question with id = " + id)
 		val cursor = questionCollection.
 			// find with case-insensitive and use . to match any chars options
 			find( BSONDocument("_id" -> BSONObjectID(id))).
@@ -252,7 +252,7 @@ object MongoDAO extends Controller with MongoController {
 	def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
 		// Search for keywords in statement, solutions, hints, answers and topics field of Questions collection
 		// Results are returned as an array of BSONDocument of {course: , questions:, statement_html: , term: , year: score:}
-		Logger.info("searching for " + searchString)
+		Logger.debug("searching for " + searchString)
 
 		val searchCommand = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("$text" -> BSONDocument("$search" -> searchString))),
@@ -274,7 +274,7 @@ object MongoDAO extends Controller with MongoController {
 
 	def examsForCourse(course: String): Future[Stream[BSONDocument]] = {
 
-		Logger.info("Find exams for " + course)
+		Logger.debug("Find exams for " + course)
 
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("course" -> course)),
@@ -335,7 +335,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def topicsBSON(): Future[Stream[BSONDocument]] = {
-		Logger.info("Retrieve distinct topics")
+		Logger.debug("Retrieve distinct topics")
 
 		val command = Aggregate(topicsCollection.name, Seq(
 			Sort(Seq(Ascending("topic")))
@@ -344,7 +344,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def topicBSON(topic: String): Future[BSONDocument] = {
-		Logger.info("Finding topic: " + topic)
+		Logger.debug("Finding topic: " + topic)
 
 		val command = Aggregate(topicsCollection.name, Seq(
 			Match(BSONDocument("topic" -> topic))

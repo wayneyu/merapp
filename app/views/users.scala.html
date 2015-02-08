@@ -13,7 +13,7 @@
     </tr>
         @for( user <- users ){
             <tr><div id="user">
-                <td><a href="">@user.main.userId</a></td>
+                <td>@user.main.userId</td>
                 <td>@user.main.providerId</td>
                 <td>@{user.main.firstName.getOrElse("") + " " + user.main.lastName.getOrElse("")}</td>
                 <td>

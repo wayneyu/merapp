@@ -232,12 +232,13 @@
     </div>
 }
 
-<div id="tags">
-    <ul>
-    @for( topic <- topics ){
-        <li><span><a href="@routes.TopicController.topic(topic)">@topic.replace("_"," ")</a></span></li>
+<div id="question_topics">
+    Topics
+    <select class="js-example-tags form-control" multiple="multiple">
+        @for( topic <- topics ){
+        <option selected="selected">@topic.replace("_"," ")</option>
         }
-    </ul>
+    </select>
 </div>
 
 @if(solvers){
@@ -250,4 +251,19 @@
                 The following people have worked on this question: <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
             }
         }
+
 }
+
+
+
+<script>
+$(".question_tags").select2({
+  tags: true,
+  tokenSeparators: [',', ' ']
+})
+$(".js-example-tags").select2({
+  tags: true,
+  tokenSeparators: [',', ' ']
+})
+
+</script>

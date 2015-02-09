@@ -38,7 +38,7 @@ class RedisUserService extends UserService[User] {
 	val tokensColletionKey = "tokens"
 
   private def setUserById(userKey: UserKey, user: User) = {
-	  Logger.info("setUserById:  userKey " + " user: " + user)
+	  Logger.debug("setUserById:  userKey " + " user: " + user)
 	  Cache.set(userKey.key, user)
     for (identity <- user.identities) {
       linkProfileToUser(ProfileKey(identity), user)
@@ -51,7 +51,7 @@ class RedisUserService extends UserService[User] {
   }
 
   private def addUser(user: User) = {
-	  Logger.info("addUser: " + user)
+	  Logger.debug("addUser: " + user)
     val users = Cache.getAs[List[String]](userColletionKey)
     val updatedUsers = users match {
       case Some(l) => user.userkey::l
@@ -71,7 +71,7 @@ class RedisUserService extends UserService[User] {
   }
 
   private def getUserById(userKey: String): Option[User] = {
-    Logger.info("getUserById: " + userKey)
+    Logger.debug("getUserById: " + userKey)
     Cache.getAs[User](userKey)
   }
 
@@ -83,8 +83,8 @@ class RedisUserService extends UserService[User] {
   private def getUserByEmail(emailKey: EmailKey): Option[User] = {
     val userKey = Cache.getAs[String](emailKey.key)
     userKey match {
-      case Some(s) => Logger.info("getUserByEmail: found userKey: " + userKey)
-      case None => Logger.info("no userkey found for email: " + emailKey.key)
+      case Some(s) => Logger.debug("getUserByEmail: found userKey: " + userKey)
+      case None => Logger.debug("no userkey found for email: " + emailKey.key)
     }
     userKey.flatMap[User]( getUserById )
   }
@@ -94,20 +94,20 @@ class RedisUserService extends UserService[User] {
   }
 
   private def linkEmailToUser(emailKey: EmailKey, user: User) = {
-    Logger.info("linkEmailToUser: " + emailKey.key + "->" + UserKey(user).key)
+    Logger.debug("linkEmailToUser: " + emailKey.key + "->" + UserKey(user).key)
     Cache.set(emailKey.key, UserKey(user).key)
   }
 
   def find(providerId: String, userId: String): Future[Option[BasicProfile]] = {
-    Logger.info("find " + providerId + " " + userId)
+    Logger.debug("find " + providerId + " " + userId)
     val result = getUserById(UserKey(providerId, userId)).map[BasicProfile](_.main)
     Future.successful(result)
   }
 
   def findByEmailAndProvider(email: String, providerId: String): Future[Option[BasicProfile]] = {
-    Logger.info("findByEmailAndProvider " + email + " " + providerId)
+    Logger.debug("findByEmailAndProvider " + email + " " + providerId)
     val result = getUserByEmail(EmailKey(providerId, email)).map[BasicProfile](_.main)
-    Logger.info(result match {
+    Logger.debug(result match {
       case Some(p) => p.userId
       case None => "user not found"
     })
@@ -226,7 +226,7 @@ class RedisUserService extends UserService[User] {
   override def updatePasswordInfo(user: User, info: PasswordInfo): Future[Option[BasicProfile]] = {
     Future.successful {
       val found = getUserById(user.userkey)
-      Logger.info("updating password for user: " + found.get.toString)
+      Logger.debug("updating password for user: " + found.get.toString)
       found.flatMap[BasicProfile]{ user =>
         user.identities.find(_.providerId == UsernamePasswordProvider.UsernamePassword)
       }.map{ profile =>

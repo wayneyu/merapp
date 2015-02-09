@@ -55,7 +55,7 @@ object QuestionController extends ServiceComponent with MongoController {
 
 		val question = MongoDAO.questionQuery(course, term_year, q)
 		val coursesResult = distinctCourses()
-		val yearsResult = distinctYears()
+		val yearsResult = distinctYears(course, term)
 		val questionsResult = examQuestions(course, term_year)
 
 		val res = for {
@@ -216,7 +216,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctCourses(year: Int, term: String) = Action.async {
+  def distinctCoursesResp(year: Int, term: String) = Action.async {
     MongoDAO.distinctCourses(year, term).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("course").get)
@@ -236,7 +236,13 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctYears(course: String, term: String) = Action.async {
+	def distinctYears(course: String, term: String): Future[List[String]] = {
+		MongoDAO.distinctYears(course, term).map{
+			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
+		}
+	}
+
+  def distinctYearsResp(course: String, term: String) = Action.async {
     MongoDAO.distinctYears(course, term).map{
        st => Ok(BSONArrayFormat.writes(BSONArray(
          st.map(d => d.getAs[BSONInteger]("year").get)
@@ -256,7 +262,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTerms(course: String) = Action.async {
+  def distinctTermsResp(course: String) = Action.async {
 		MongoDAO.distinctTerms(course).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -264,7 +270,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTerms(course: String, year: String) = Action.async {
+  def distinctTermsResp(course: String, year: String) = Action.async {
     MongoDAO.distinctTerms(course, year).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -272,7 +278,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctQuestions(course: String, term_year: String) = Action.async {
+  def distinctQuestionsResp(course: String, term_year: String) = Action.async {
     MongoDAO.distinctQuestions(course, term_year).map{
       st => Ok(BSONArrayFormat.writes(
         BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)

@@ -379,23 +379,7 @@ object QuestionController extends ServiceComponent with MongoController {
       ).toList
     }
   }
-
-	def upload(path: String) = Action(parse.multipartFormData) { request =>
-	  request.body.file("file").map { file =>
-	    import java.io.File
-	    val FILE_FOLDER = "public/raw_database/json_data/"
-	    val filename = file.filename
-	    val pattern = "questions\\/(.*?\\/.*?)\\/".r
-	    val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
-	    val to = new File(FILE_FOLDER + subfolder, filename)
-	    Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
-	    file.ref.moveTo(to, true)
-	    Ok("File uploaded to " + to.getPath)
-	  }.getOrElse {
-	    BadRequest("Image missing")
-	  }
-	}
-
+	
 	def addTopic(course: String, term_year: String, q: String, topic: String) = ContributorAction.async { implicit context =>
 		MongoDAO.addTopic(course, term_year, q, topic).map{
 			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))

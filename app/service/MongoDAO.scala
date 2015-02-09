@@ -159,7 +159,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctTerms(course: String, year: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("distinctYears(course-> " + course + ", year-> " + year + ")")
+		Logger.debug("distinctTerms(course-> " + course + ", year-> " + year + ")")
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("course" -> course, "year" -> year)),
 			GroupField("term")("term" -> First("term")),
@@ -171,7 +171,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctQuestions(course: String, term_year: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("Find exam  = " + course + " " + term_year)
+		Logger.debug("Distinct questions  = " + course + " " + term_year)
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val command = Aggregate(questionCollection.name, Seq(
@@ -226,7 +226,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-		Logger.debug("Find exam  = " + course + " " + term_year)
+		Logger.debug("Exam questions for " + course + " " + term_year)
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val command = Aggregate(questionCollection.name, Seq(

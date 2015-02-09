@@ -225,7 +225,7 @@
                 var option = $('<option />').val(term).text(term);
                 term_selector.append(option)
               })
-              $("#termSelect option").change();
+              $("#termSelect").change();
            }
         })
     })
@@ -244,7 +244,7 @@
                 var option = $('<option />').val(year).text(year);
                 year_selector.append(option)
             })
-            $("#yearSelect option").change();
+            $("#yearSelect").change();
           }
         })
     });

@@ -12,10 +12,10 @@ GET    /team                       controllers.Application.team
 
 GET    /questions                                       controllers.Application.questions
 GET    /questions/search                                controllers.Application.search
-GET    /questions/search/term/:course                   controllers.QuestionController.distinctTerms(course: String)
-GET    /questions/search/year/:course/:term             controllers.QuestionController.distinctYears(course: String, term: String)
-GET    /questions/search/question/:course/:term_year    controllers.QuestionController.distinctQuestions(course: String, term_year: String)
-GET    /questions/search/course/:year/:term             controllers.QuestionController.distinctCourses(year: Int, term: String)
+GET    /questions/search/term/:course                   controllers.QuestionController.distinctTermsResp(course: String)
+GET    /questions/search/year/:course/:term             controllers.QuestionController.distinctYearsResp(course: String, term: String)
+GET    /questions/search/question/:course/:term_year    controllers.QuestionController.distinctQuestionsResp(course: String, term_year: String)
+GET    /questions/search/course/:year/:term             controllers.QuestionController.distinctCoursesResp(year: Int, term: String)
 GET    /questions/search/id/:id                         controllers.QuestionController.searchById(id: String)
 GET    /questions/search/:keyString                     controllers.QuestionController.searchByKeywords(keyString: String)
 

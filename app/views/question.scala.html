@@ -234,12 +234,18 @@
 
 <div id="question_topics">
     Topics
-    <select class="js-example-tags form-control" multiple="multiple">
-        @for( topic <- topics ){
+    <select class="js-example-tags form-control" multiple="multiple" @if(!editable){disabled="true"}>
+        @for( topic <- topics ){ // HELP: Should loop over all topics. selected the topics of this question.
         <option selected="selected">@topic.replace("_"," ")</option>
         }
     </select>
 </div>
+
+<div id="question_rating">
+    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;"/>
+    <!-- see http://plugins.krajee.com/star-rating/demo -->
+</div>
+
 
 @if(solvers){
         This question was solved by <Strong>@solvers.map {solver=>@solver}.mkString(", ")</Strong>
@@ -255,15 +261,37 @@
 }
 
 
-
 <script>
+$( document ).ready(function() {
+
 $(".question_tags").select2({
   tags: true,
   tokenSeparators: [',', ' ']
-})
+    })
+
 $(".js-example-tags").select2({
   tags: true,
-  tokenSeparators: [',', ' ']
-})
+  tokenSeparators: [',']
+    })
 
+$("#my_rating").rating({
+    stars: 10,
+    min: 0,
+    max: 10,
+    step: 1,
+    starCaptions: {1: "Impossible", 2: "Very difficult", 3: "Difficult", 4: "A little difficult",
+                   5: "A good challenge", 6: "OK", 7: "Relatively simple", 8: "Simple", 9: "Very simple",
+                   10: "Aced it"},
+    starCaptionClasses: {1: "text-danger", 2: "text-danger",
+                         3: "text-warning", 4: "text-warning",
+                         5: "text-info", 6: "text-info",
+                         7: "text-primary", 8: "text-primary",
+                         9: "text-success", 10: "text-success"}
+    });
+$('#my_rating').on('rating.change', function(event, value, caption) {
+    console.log(value);
+    console.log(caption);
+});
+
+})
 </script>

@@ -289,8 +289,19 @@ $("#my_rating").rating({
                          9: "text-success", 10: "text-success"}
     });
 $('#my_rating').on('rating.change', function(event, value, caption) {
+    debugger;
     console.log(value);
     console.log(caption);
+    $.ajax({
+      contentType: 'application/json',
+      type: 'GET',
+      url: window.location.pathname + "/vote/" + value,
+      success: function(d){
+      },
+      error: function(obj, st, err){
+        alert(err);
+      }
+    });
 });
 
 })

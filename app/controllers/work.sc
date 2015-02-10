@@ -1,1 +1,5 @@
-val list = List("1 (a)", "2 (a)", "3 (c)", "10 (a)", "10 (b)")
+import models.Question
+
+val qid = "MATH220+April_2011+1\\s(a)"
+Question.parseQid(qid)
+

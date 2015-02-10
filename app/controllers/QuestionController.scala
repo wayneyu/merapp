@@ -1,5 +1,7 @@
 package controllers
 
+import java.util.{Calendar, Date}
+
 import models._
 import play.api._
 import play.api.libs.Files.TemporaryFile
@@ -380,4 +382,13 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
+	def vote(course: String, term_year: String, question: String, rating: Int) = VisitorAction.async { implicit context =>
+		val timestamp = Calendar.getInstance().getTimeInMillis
+		val vote = Vote(context.user.get.userkey.key, Question.qid(course, term_year, question), timestamp, rating)
+		val res = MongoDAO.insertVote(vote, course, term_year, question)
+
+		res.map{
+			st => Ok("")
+		}
+	}
 }

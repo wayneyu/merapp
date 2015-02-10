@@ -35,6 +35,8 @@ GET    /exams/:course/:term_year                        controllers.QuestionCont
 GET    /topics                                          controllers.Application.topics()
 GET    /topics/:topic                                   controllers.TopicController.topic(topic: String)
 
+GET    /questions/:course/:term_year/:q/vote/:rating    controllers.QuestionController.vote(course: String, term_year: String, q: String, rating: Int)
+
 # Map static resources from the /public folder to the /assets URL path
 GET    /javascriptRoutes                                controllers.Application.javascriptRoutes
 GET    /assets/*file                                    controllers.Assets.at(path="/public", file)

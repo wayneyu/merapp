@@ -1,5 +1,7 @@
 package service
 
+import java.util.{Date, Calendar}
+
 import models._
 import play.api._
 import play.api.libs.json._
@@ -7,6 +9,7 @@ import play.api.mvc._
 import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
+import reactivemongo.core.protocol.Insert
 import securesocial.core.BasicProfile
 import service.User.UserWriter
 import service.User.UserWriter
@@ -29,6 +32,7 @@ object MongoDAO extends Controller with MongoController {
 	val topicsCollection = db[BSONCollection]("topics")
 	val usersCollection = db[BSONCollection]("users")
 	val profilesCollection = db[BSONCollection]("profiles")
+	val votesCollection = db[BSONCollection]("votes")
 
 	def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
@@ -370,6 +374,27 @@ object MongoDAO extends Controller with MongoController {
 		val selector = BSONDocument( "uid" -> userKey.key)
 		val modifier = BSONDocument("$set" -> writer.write(profile))
 		val command = FindAndModify(profilesCollection.name, selector, Update(modifier, false), true)
+		db.command(command)
+	}
+
+	def insertVote(vote: Vote, course: String, term_year: String, q: String): Future[Option[BSONDocument]] = {
+		votesCollection.insert[Vote](vote)
+
+		val (term, year) = getTermAndYear(term_year)
+
+		val selector = BSONDocument(
+			"course" -> course, "term" -> term,
+			"year" -> year.toInt, "question" -> q)
+
+		val modifier = BSONDocument(
+			"$inc" -> BSONDocument("num_votes" -> BSONInteger(1))
+		)
+
+		val command = FindAndModify(
+			questionCollection.name,
+			selector,
+			Update(modifier, false))
+
 		db.command(command)
 	}
 }

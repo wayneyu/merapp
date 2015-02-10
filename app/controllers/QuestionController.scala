@@ -28,24 +28,16 @@ object QuestionController extends ServiceComponent with MongoController {
 
   def questions = UserAwaredAction.async { implicit context =>
     val coursesResult = distinctCourses()
-    val yearsResult = distinctYears()
 
     val courseAndYearResult = for {
       cr <- coursesResult
-      yr <- yearsResult
-    } yield (cr, yr)
+      tr <- distinctTerms(cr(0))
+      yr <- distinctYears(cr(0), tr(0))
+	    qr <- distinctQuestions(cr(0), getTermYear(tr(0), yr(0)))
+    } yield (cr, tr, yr, qr)
 
-    coursesResult onComplete {
-      case Success(res) => Logger.debug("No. of courses found: " + res.length.toString())
-      case Failure(exception) =>
-    }
-    yearsResult onComplete {
-      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
-      case Failure(exception) =>
-    }
-
-    courseAndYearResult.map { case (courseList, yearList) =>
-      Ok(views.html.question(Question.empty, false)(courseList, Nil, yearList, Nil, "", "", "", ""))
+    courseAndYearResult.map { case (courseList, termList, yearList, questionList) =>
+      Ok(views.html.question(Question.empty, false)(courseList, termList, yearList, questionList, "", "", "", ""))
     }
   }
 
@@ -54,25 +46,27 @@ object QuestionController extends ServiceComponent with MongoController {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
 		val question = MongoDAO.questionQuery(course, term_year, q)
+		val termsResult = distinctTerms(course)
 		val coursesResult = distinctCourses()
 		val yearsResult = distinctYears(course, term)
-		val questionsResult = examQuestions(course, term_year)
+		val questionsResult = distinctQuestions(course, term_year)
 
 		val res = for {
 			cr <- coursesResult
+			tr <- termsResult
 			yr <- yearsResult
 			q <- question
-			qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
-		} yield (cr, yr, q, qr)
+			qr <- questionsResult
+		} yield (cr, tr, yr, q, qr)
 
-		res.map { case (courseList, yearList, question, questionsList) => {
+		res.map { case (courseList, termList, yearList, question, questionsList) => {
 				question match {
 					case j :: js =>
 						Logger.debug("No. of questions found: " + question.length.toString())
 						val Q = j.as[Question]
-						Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
+						Ok(views.html.question(Q, editable)(courseList, termList, yearList, questionsList, course, year.toString, term, q))
 					case Nil =>
-						Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+						Ok(views.html.question(Question.empty, editable)(courseList, termList, yearList, Nil, course, year.toString, term, q))
 				}
 			}
 		}
@@ -185,6 +179,8 @@ object QuestionController extends ServiceComponent with MongoController {
     (term, year)
   }
 
+	def getTermYear(term: String, year: String) = term + "_" + year
+
   def questionInJson(course: String, term_year: String, q: String) = Action.async {
     MongoDAO.questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
   }
@@ -216,7 +212,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctCoursesResp(year: Int, term: String) = Action.async {
+  def distinctCoursesJSON(year: Int, term: String) = Action.async {
     MongoDAO.distinctCourses(year, term).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("course").get)
@@ -242,7 +238,7 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
-  def distinctYearsResp(course: String, term: String) = Action.async {
+  def distinctYearsJSON(course: String, term: String) = Action.async {
     MongoDAO.distinctYears(course, term).map{
        st => Ok(BSONArrayFormat.writes(BSONArray(
          st.map(d => d.getAs[BSONInteger]("year").get)
@@ -256,13 +252,13 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTermsList(course: String): Future[List[String]] = {
-    MongoDAO.distinctTermsList(course).map{
+  def distinctTerms(course: String): Future[List[String]] = {
+    MongoDAO.distinctTerms(course).map{
       st => st.map(d => d.getAs[String]("term").get).toList
     }
   }
 
-  def distinctTermsResp(course: String) = Action.async {
+  def distinctTermsJSON(course: String) = Action.async {
 		MongoDAO.distinctTerms(course).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -270,7 +266,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTermsResp(course: String, year: String) = Action.async {
+  def distinctTermsJSON(course: String, year: String) = Action.async {
     MongoDAO.distinctTerms(course, year).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -278,7 +274,13 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctQuestionsResp(course: String, term_year: String) = Action.async {
+	def distinctQuestions(course: String, term_year: String): Future[List[String]] = {
+		MongoDAO.distinctQuestions(course, term_year).map{
+			st => st.map(d => d.getAs[String]("question").get).sortWith(questionSort).toList
+		}
+	}
+
+  def distinctQuestionsJSON(course: String, term_year: String) = Action.async {
     MongoDAO.distinctQuestions(course, term_year).map{
       st => Ok(BSONArrayFormat.writes(
         BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)

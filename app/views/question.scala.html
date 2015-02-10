@@ -234,23 +234,23 @@
 
 <div id="question_topics">
     Topics
-    <select class="js-example-tags form-control" multiple="multiple">
+    <select class="question_tags form-control" multiple="multiple">
         @for( topic <- topics ){
-        <option selected="selected">@topic.replace("_"," ")</option>
+        <option selected="selected" value=@topic.replace("_"," ")>@topic.replace("_"," ")</option>
         }
     </select>
 </div>
 
 @if(solvers){
-        This question was solved by <Strong>@solvers.map {solver=>@solver}.mkString(", ")</Strong>
-            @if(contributors) {
-                with the help of <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
-            } else {.}
-        } else {
-            @if(contributors) {
-                The following people have worked on this question: <em>@contributors.map {contr=>@contr}.mkString(", ")</em>.
-            }
-        }
+This question was solved by <Strong>@solvers.mkString(", ")</Strong>
+    @if(contributors) {
+        with the help of <em>@contributors.mkString(", ")</em>.
+    } else {.}
+} else {
+    @if(contributors) {
+        The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
+    }
+}
 
 }
 
@@ -261,9 +261,32 @@ $(".question_tags").select2({
   tags: true,
   tokenSeparators: [',', ' ']
 })
-$(".js-example-tags").select2({
-  tags: true,
-  tokenSeparators: [',', ' ']
+.on("select2:select", function(e){
+    var newTag = e.params.data.id;
+    console.log(newTag);
+    $.ajax({
+      type: 'GET',
+      url: window.location.pathname + "/topics/add/" + newTag,
+      success: function(d){
+        console.log("added new tag");
+      },
+      error: function(obj, st, err){
+        alert(err + "\n" + obj.responseText);
+      }
+    })
 })
-
+.on("select2:unselect",function(e){
+    var removedTag = e.params.data.id;
+    console.log(removedTag);
+    $.ajax({
+      type: 'GET',
+      url: window.location.pathname + "/topics/remove/" + removedTag,
+      success: function(d){
+        console.log("removed tag");
+      },
+      error: function(obj, st, err){
+        alert(err + "\n" + obj.responseText);
+      }
+    })
+})
 </script>

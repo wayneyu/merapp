@@ -14,6 +14,7 @@ import reactivemongo.bson._
 import securesocial.core.RuntimeEnvironment
 import service._
 
+import scala.collection.immutable.Stream.Empty
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
@@ -389,6 +390,17 @@ object QuestionController extends ServiceComponent with MongoController {
 
 		res.map{
 			st => Ok("")
+		}
+	}
+
+	def rating(course: String, term_year: String, question: String) = VisitorAction.async { implicit context =>
+		val qid = Question.qid(course, term_year, question)
+		val res = MongoDAO.getRating(context.user.get, qid)
+		res.map{
+			st => st match {
+				case x #:: xs => Ok(st(0).getAs[Int]("rating").get.toString)
+				case Empty => Ok("No rating")
+			}
 		}
 	}
 }

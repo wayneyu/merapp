@@ -1,7 +1,5 @@
 package service
 
-import java.util.{Date, Calendar}
-
 import models._
 import play.api._
 import play.api.libs.json._
@@ -9,11 +7,7 @@ import play.api.mvc._
 import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
-import reactivemongo.core.protocol.Insert
 import securesocial.core.BasicProfile
-import service.User.UserWriter
-import service.User.UserWriter
-import views.html.course
 
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
@@ -395,6 +389,15 @@ object MongoDAO extends Controller with MongoController {
 			selector,
 			Update(modifier, false))
 
+		db.command(command)
+	}
+
+	def getRating(user: User, qid: String): Future[Stream[BSONDocument]] = {
+		val command = Aggregate(votesCollection.name, Seq(
+			Match(BSONDocument("userid" -> user.userkey.key, "qid" -> qid)),
+			Sort(Seq(Descending("timestamp"))),
+			Project("_id"->BSONInteger(0), "rating" -> BSONInteger(1))
+		))
 		db.command(command)
 	}
 }

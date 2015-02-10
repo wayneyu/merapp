@@ -36,11 +36,11 @@ object QuestionController extends ServiceComponent with MongoController {
     } yield (cr, yr)
 
     coursesResult onComplete {
-      case Success(res) => Logger.info("No. of courses found: " + res.length.toString())
+      case Success(res) => Logger.debug("No. of courses found: " + res.length.toString())
       case Failure(exception) =>
     }
     yearsResult onComplete {
-      case Success(res) => Logger.info("No. of years found: " + res.length.toString())
+      case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
       case Failure(exception) =>
     }
 
@@ -55,7 +55,7 @@ object QuestionController extends ServiceComponent with MongoController {
 
 		val question = MongoDAO.questionQuery(course, term_year, q)
 		val coursesResult = distinctCourses()
-		val yearsResult = distinctYears()
+		val yearsResult = distinctYears(course, term)
 		val questionsResult = examQuestions(course, term_year)
 
 		val res = for {
@@ -68,7 +68,7 @@ object QuestionController extends ServiceComponent with MongoController {
 		res.map { case (courseList, yearList, question, questionsList) => {
 				question match {
 					case j :: js =>
-						Logger.info("No. of questions found: " + question.length.toString())
+						Logger.debug("No. of questions found: " + question.length.toString())
 						val Q = j.as[Question]
 						Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
 					case Nil =>
@@ -87,7 +87,7 @@ object QuestionController extends ServiceComponent with MongoController {
 	}
 
 	def questionFindAndModify(course: String, term_year: String, q:String) = ContributorAction.async(parse.json) { implicit context: AppContext[JsValue] =>
-		Logger.info("Editing " + course + "/" + term_year + "/" + q)
+		Logger.debug("Editing " + course + "/" + term_year + "/" + q)
 
 		val bson = BSONDocumentFormat.reads(context.request.body)
 
@@ -112,7 +112,7 @@ object QuestionController extends ServiceComponent with MongoController {
 			val pattern = "questions\\/(.*?\\/.*?)\\/".r
 			val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
 			val to = new File(FILE_FOLDER + subfolder, filename)
-			Logger.info("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
+			Logger.debug("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
 			file.ref.moveTo(to, true)
 			Future(Ok("File uploaded to " + to.getPath))
 		}.getOrElse {
@@ -138,7 +138,7 @@ object QuestionController extends ServiceComponent with MongoController {
 		} yield (e, t, num_questions)
 
 		res.map{ case(exams, topics, num_questions) =>
-			Logger.info(topics mkString "," )
+			Logger.debug(topics mkString "," )
 			Ok(views.html.course(course,
 				exams.map{
 					d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
@@ -216,7 +216,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctCourses(year: Int, term: String) = Action.async {
+  def distinctCoursesResp(year: Int, term: String) = Action.async {
     MongoDAO.distinctCourses(year, term).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("course").get)
@@ -236,7 +236,13 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctYears(course: String, term: String) = Action.async {
+	def distinctYears(course: String, term: String): Future[List[String]] = {
+		MongoDAO.distinctYears(course, term).map{
+			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
+		}
+	}
+
+  def distinctYearsResp(course: String, term: String) = Action.async {
     MongoDAO.distinctYears(course, term).map{
        st => Ok(BSONArrayFormat.writes(BSONArray(
          st.map(d => d.getAs[BSONInteger]("year").get)
@@ -256,7 +262,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTerms(course: String) = Action.async {
+  def distinctTermsResp(course: String) = Action.async {
 		MongoDAO.distinctTerms(course).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -264,7 +270,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctTerms(course: String, year: String) = Action.async {
+  def distinctTermsResp(course: String, year: String) = Action.async {
     MongoDAO.distinctTerms(course, year).map{
       st => Ok(BSONArrayFormat.writes(BSONArray(
         st.map(d => d.getAs[BSONString]("term").get)
@@ -272,7 +278,7 @@ object QuestionController extends ServiceComponent with MongoController {
     }
   }
 
-  def distinctQuestions(course: String, term_year: String) = Action.async {
+  def distinctQuestionsResp(course: String, term_year: String) = Action.async {
     MongoDAO.distinctQuestions(course, term_year).map{
       st => Ok(BSONArrayFormat.writes(
         BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)

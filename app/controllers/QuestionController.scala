@@ -48,11 +48,11 @@ object QuestionController extends ServiceComponent with MongoController {
     }
 
     courseAndYearResult.map { case (courseList, yearList) =>
-      Ok(views.html.question(Question.empty, false)(courseList, Nil, yearList, Nil, "", "", "", ""))
+      Ok(views.html.question(Question.empty, false)(courseList, Nil, yearList, Nil, "", "", "", "", None))
     }
   }
 
-	def questionResult(course: String, term_year: String, q: String, editable: Boolean = false)
+	private def questionResult(course: String, term_year: String, q: String, editable: Boolean = false)
 	                  (implicit context: AppContext[AnyContent]): Future[Result] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
@@ -60,22 +60,27 @@ object QuestionController extends ServiceComponent with MongoController {
 		val coursesResult = distinctCourses()
 		val yearsResult = distinctYears(course, term)
 		val questionsResult = examQuestions(course, term_year)
+		val ratingResult = context.user match {
+			case Some(u) => userRating(u, course, term_year, q)
+			case None => Future(None)
+		}
 
 		val res = for {
 			cr <- coursesResult
 			yr <- yearsResult
 			q <- question
 			qr <- questionsResult.map( l => l.map( _.as[Question].question ) )
-		} yield (cr, yr, q, qr)
+			r <- ratingResult
+		} yield (cr, yr, q, qr, r)
 
-		res.map { case (courseList, yearList, question, questionsList) => {
+		res.map { case (courseList, yearList, question, questionsList, rating) => {
 				question match {
 					case j :: js =>
 						Logger.debug("No. of questions found: " + question.length.toString())
 						val Q = j.as[Question]
-						Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q))
+						Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, q, rating))
 					case Nil =>
-						Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q))
+						Ok(views.html.question(Question.empty, editable)(courseList, Nil, yearList, Nil, course, year.toString, term, q, None))
 				}
 			}
 		}
@@ -393,13 +398,12 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
-	def rating(course: String, term_year: String, question: String) = VisitorAction.async { implicit context =>
+	def userRating(user: User, course: String, term_year: String, question: String): Future[Option[Int]] = {
 		val qid = Question.qid(course, term_year, question)
-		val res = MongoDAO.getRating(context.user.get, qid)
+		val res = MongoDAO.getRating(user, qid)
 		res.map{
-			st => st match {
-				case x #:: xs => Ok(st(0).getAs[Int]("rating").get.toString)
-				case Empty => Ok("No rating")
+			st => st.headOption.flatMap[Int]{
+				_.getAs[Int]("rating")
 			}
 		}
 	}

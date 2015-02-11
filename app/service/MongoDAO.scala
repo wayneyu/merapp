@@ -9,6 +9,7 @@ import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.BasicProfile
 
+import scala.collection.immutable.Stream.Empty
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
@@ -16,6 +17,8 @@ import reactivemongo.api._
 import reactivemongo.core.commands._
 
 import play.modules.reactivemongo.MongoController
+
+import scala.util.{Failure, Success}
 
 /**
  * Created by wayneyu on 01/27/15.
@@ -371,25 +374,74 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
-	def insertVote(vote: Vote, course: String, term_year: String, q: String): Future[Option[BSONDocument]] = {
-		votesCollection.insert[Vote](vote)
+	def insertVote(vote: Vote, course: String, term_year: String, qstr: String): Future[Option[BSONDocument]] = {
 
-		val (term, year) = getTermAndYear(term_year)
+		votesCollection.insert[Vote](vote)
+		for {
+			lv <- lastVote(vote)
+			q <- questionQuery(course, term_year, qstr)
+			upd <- updateQuestionRating(q.head.as[Question], lv, vote)
+		} yield upd
+
+	}
+
+	def updateQuestionRating(q: Question, lastVote: Option[Vote], vote: Vote): Future[Option[BSONDocument]] = {
 
 		val selector = BSONDocument(
-			"course" -> course, "term" -> term,
-			"year" -> year.toInt, "question" -> q)
+			"course" -> q.course, "term" -> q.term,
+			"year" -> q.year, "question" -> q.question)
 
-		val modifier = BSONDocument(
-			"$inc" -> BSONDocument("num_votes" -> BSONInteger(1))
-		)
-
-		val command = FindAndModify(
+		def command(numVoteInc: Int, newRating: Int)  = FindAndModify(
 			questionCollection.name,
 			selector,
-			Update(modifier, false))
+			Update(BSONDocument(
+				"$inc" -> BSONDocument("num_votes" -> BSONInteger(numVoteInc)),
+				"$set" -> BSONDocument("rating" -> BSONInteger(newRating))
+			), true))
 
-		db.command(command)
+		val oldTotalRating = q.num_votes * q.rating //rating = -1 is taken care of by num_votes = 0
+		Logger.debug("oldTotalRating:  " + q.num_votes + " * " + q.rating + " = " + oldTotalRating)
+
+		// Find the rating difference between newVote and lastVote.
+		// If the user has voted before, lastOption.isDefined == true
+		val res = lastVote match {
+			case Some(v) =>
+				if (!v.qid.equals(vote.qid) || !v.userid.equals(vote.userid))
+					throw new IllegalArgumentException("updateQuestionRating, lastVote: " + lastVote + " vote: " + vote)
+				db.command(command(0, (oldTotalRating + 10*(vote.rating - v.rating))/q.num_votes))
+			case None =>
+				db.command(command(1, (oldTotalRating + 10*vote.rating)/(q.num_votes + 1)))
+		}
+
+		res onComplete {
+			case Success(res) =>
+				val q = res.map(_.as[Question]).get
+				Logger.debug("new rating: " + q.rating + " num_votes: " + q.num_votes)
+			case Failure(exception) =>
+		}
+
+		res
+	}
+
+	def lastVote(vote: Vote): Future[Option[Vote]] = {
+		// get last vote from user
+		val command = Aggregate(votesCollection.name, Seq(
+			Match(BSONDocument("qid" -> vote.qid, "userid" -> vote.userid,
+				"timestamp" -> BSONDocument(Seq("$lt" -> BSONDateTime(vote.timestamp)))
+			)),
+			Sort(Seq(Descending("timestamp")))
+		))
+
+		val res = db.command(command)
+
+		res onComplete {
+			case Success(res) => Logger.debug("last vote: " + res.headOption.map(_.as[Vote].toString()))
+			case Failure(exception) =>
+		}
+
+		res.map{
+			st => st.map{l => l.as[Vote]}.headOption
+		}
 	}
 
 	def getRating(user: User, qid: String): Future[Stream[BSONDocument]] = {

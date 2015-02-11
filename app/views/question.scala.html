@@ -1,4 +1,4 @@
-@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String)(implicit context: service.AppContext[AnyContent])
+@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
 @q = @{qn.question}
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
@@ -242,7 +242,7 @@
 </div>
 
 <div id="question_rating">
-    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;"/>
+    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}>
     <!-- see http://plugins.krajee.com/star-rating/demo -->
 </div>
 
@@ -297,6 +297,7 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
       type: 'GET',
       url: window.location.pathname + "/vote/" + value,
       success: function(d){
+        location.reload();
       },
       error: function(obj, st, err){
         alert(err);

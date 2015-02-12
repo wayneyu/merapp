@@ -446,7 +446,10 @@ object MongoDAO extends Controller with MongoController {
 			case Failure(exception) =>
 		}
 
-		res
+		res.map{ opt => opt.map{ doc =>
+			BSONDocument("rating" -> doc.get("rating"), "num_votes" -> doc.get("num_votes"))
+			}
+		}
 	}
 
 	def lastVote(vote: Vote): Future[Option[Vote]] = {

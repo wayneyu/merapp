@@ -28,6 +28,9 @@ POST   /questions/upload                                controllers.QuestionCont
 POST   /questions/submit                                controllers.QuestionController.questionSubmit()
 POST   /questions/search/submit                         controllers.QuestionController.searchByKeywordsSubmit()
 
+GET    /questions/:course/:term_year/:q/topics/add/:topic    controllers.QuestionController.addTopic(course: String, term_year: String, q: String, topic: String)
+GET    /questions/:course/:term_year/:q/topics/remove/:topic    controllers.QuestionController.removeTopic(course: String, term_year: String, q: String, topic: String)
+
 GET    /exams                                           controllers.Application.exams()
 GET    /exams/:course                                   controllers.QuestionController.course(course: String)
 GET    /exams/:course/:term_year                        controllers.QuestionController.exam(course: String, term_year: String)

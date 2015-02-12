@@ -381,5 +381,16 @@ object QuestionController extends ServiceComponent with MongoController {
       ).toList
     }
   }
+	
+	def addTopic(course: String, term_year: String, q: String, topic: String) = ContributorAction.async { implicit context =>
+		MongoDAO.addTopic(course, term_year, q, topic).map{
+			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))
+		}
+	}
 
+	def removeTopic(course: String, term_year: String, q: String, topic: String) = ContributorAction.async { implicit context =>
+		MongoDAO.removeTopic(course, term_year, q, topic).map{
+			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))
+		}
+	}
 }

@@ -355,6 +355,32 @@ object MongoDAO extends Controller with MongoController {
 		topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
 	}
 
+	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONDocument]] = {
+		updateTopic(course, term_year, q, topic, "$addToSet")
+	}
+
+	def removeTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONDocument]] = {
+		updateTopic(course, term_year, q, topic, "$pull")
+	}
+
+	private def updateTopic(course: String, term_year: String, q:String, topic: String, opt: String): Future[Option[BSONDocument]] = {
+		val (term, year) = getTermAndYear(term_year)
+
+		val selector = BSONDocument(
+			"course" -> course, "term" -> term,
+			"year" -> year.toInt, "question" -> q)
+
+		val modifier = BSONDocument(
+			opt -> BSONDocument("topics" -> BSONString(topic)))
+
+		val command = FindAndModify(
+			questionCollection.name,
+			selector,
+			Update(modifier, true))
+
+		db.command(command)
+	}
+
 	def updateUser(user: User): Future[Option[BSONDocument]] = {
 		implicit val userWriter = User.UserWriter
 		implicit val profileWriter = User.BasicProfileWriter

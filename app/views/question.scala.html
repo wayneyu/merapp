@@ -1,4 +1,4 @@
-@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String)(implicit context: service.AppContext[AnyContent])
+@(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
 @q = @{qn.question}
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
@@ -234,12 +234,18 @@
 
 <div id="question_topics">
     Topics
-    <select class="question_tags form-control" multiple="multiple">
+    <select class="question_tags form-control" multiple="multiple" @if(!editable){disabled="true"}>
         @for( topic <- topics ){
         <option selected="selected" value=@topic.replace("_"," ")>@topic.replace("_"," ")</option>
         }
     </select>
 </div>
+
+<div id="question_rating">
+    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}>
+    <!-- see http://plugins.krajee.com/star-rating/demo -->
+</div>
+
 
 @if(solvers){
 This question was solved by <Strong>@solvers.mkString(", ")</Strong>
@@ -255,8 +261,40 @@ This question was solved by <Strong>@solvers.mkString(", ")</Strong>
 }
 
 
-
 <script>
+$( document ).ready(function() {
+
+$("#my_rating").rating({
+    stars: 10,
+    min: 0,
+    max: 10,
+    step: 1,
+    starCaptions: {1: "Impossible", 2: "Very difficult", 3: "Difficult", 4: "A little difficult",
+                   5: "A good challenge", 6: "OK", 7: "Relatively simple", 8: "Simple", 9: "Very simple",
+                   10: "Aced it"},
+    starCaptionClasses: {1: "text-danger", 2: "text-danger",
+                         3: "text-warning", 4: "text-warning",
+                         5: "text-info", 6: "text-info",
+                         7: "text-primary", 8: "text-primary",
+                         9: "text-success", 10: "text-success"}
+    });
+$('#my_rating').on('rating.change', function(event, value, caption) {
+    debugger;
+    console.log(value);
+    console.log(caption);
+    $.ajax({
+      contentType: 'application/json',
+      type: 'GET',
+      url: window.location.pathname + "/vote/" + value,
+      success: function(d){
+        location.reload();
+      },
+      error: function(obj, st, err){
+        alert(err);
+      }
+    });
+});
+
 $(".question_tags").select2({
   tags: true,
   tokenSeparators: [',', ' ']
@@ -288,5 +326,6 @@ $(".question_tags").select2({
         alert(err + "\n" + obj.responseText);
       }
     })
+>>>>>>> develop
 })
 </script>

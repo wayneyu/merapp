@@ -93,6 +93,14 @@ object Question {
 
   val empty = Question("",-1,"","No Question","",Nil,Nil,"",Nil,Nil, -1, -1, Nil, Nil)
 
+	def qid(course: String, term_year: String, q: String) = (course + "+" + term_year + "+" + q).replace(" ", "\\s")
+
+	def parseQid(qid: String) = {
+		val pattern = """(.*)\+(.*)_(\d\d\d\d)\+(.*)""".r
+		qid.replace("\\s", " ") match {
+			case pattern(course, term, year, q) => (course, term, year.toInt, q)
+		}
+	}
 }
 
 case class SearchResult (course: String,

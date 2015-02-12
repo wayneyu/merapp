@@ -8,10 +8,8 @@ import play.modules.reactivemongo.json.BSONFormats._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.BasicProfile
-import service.User.UserWriter
-import service.User.UserWriter
-import views.html.course
 
+import scala.collection.immutable.Stream.Empty
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
@@ -19,6 +17,8 @@ import reactivemongo.api._
 import reactivemongo.core.commands._
 
 import play.modules.reactivemongo.MongoController
+
+import scala.util.{Failure, Success}
 
 /**
  * Created by wayneyu on 01/27/15.
@@ -29,6 +29,7 @@ object MongoDAO extends Controller with MongoController {
 	val topicsCollection = db[BSONCollection]("topics")
 	val usersCollection = db[BSONCollection]("users")
 	val profilesCollection = db[BSONCollection]("profiles")
+	val votesCollection = db[BSONCollection]("votes")
 
 	def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
@@ -396,6 +397,85 @@ object MongoDAO extends Controller with MongoController {
 		val selector = BSONDocument( "uid" -> userKey.key)
 		val modifier = BSONDocument("$set" -> writer.write(profile))
 		val command = FindAndModify(profilesCollection.name, selector, Update(modifier, false), true)
+		db.command(command)
+	}
+
+	def insertVote(vote: Vote, course: String, term_year: String, qstr: String): Future[Option[BSONDocument]] = {
+
+		votesCollection.insert[Vote](vote)
+		for {
+			lv <- lastVote(vote)
+			q <- questionQuery(course, term_year, qstr)
+			upd <- updateQuestionRating(q.head.as[Question], lv, vote)
+		} yield upd
+
+	}
+
+	def updateQuestionRating(q: Question, lastVote: Option[Vote], vote: Vote): Future[Option[BSONDocument]] = {
+
+		val selector = BSONDocument(
+			"course" -> q.course, "term" -> q.term,
+			"year" -> q.year, "question" -> q.question)
+
+		def command(numVoteInc: Int, newRating: Int)  = FindAndModify(
+			questionCollection.name,
+			selector,
+			Update(BSONDocument(
+				"$inc" -> BSONDocument("num_votes" -> BSONInteger(numVoteInc)),
+				"$set" -> BSONDocument("rating" -> BSONInteger(newRating))
+			), true))
+
+		val oldTotalRating = q.num_votes * q.rating //rating = -1 is taken care of by num_votes = 0
+		Logger.debug("oldTotalRating:  " + q.num_votes + " * " + q.rating + " = " + oldTotalRating)
+
+		// Find the rating difference between newVote and lastVote.
+		// If the user has voted before, lastOption.isDefined == true
+		val res = lastVote match {
+			case Some(v) =>
+				if (!v.qid.equals(vote.qid) || !v.userid.equals(vote.userid))
+					throw new IllegalArgumentException("updateQuestionRating, lastVote: " + lastVote + " vote: " + vote)
+				db.command(command(0, (oldTotalRating + 10*(vote.rating - v.rating))/q.num_votes))
+			case None =>
+				db.command(command(1, (oldTotalRating + 10*vote.rating)/(q.num_votes + 1)))
+		}
+
+		res onComplete {
+			case Success(res) =>
+				val q = res.map(_.as[Question]).get
+				Logger.debug("new rating: " + q.rating + " num_votes: " + q.num_votes)
+			case Failure(exception) =>
+		}
+
+		res
+	}
+
+	def lastVote(vote: Vote): Future[Option[Vote]] = {
+		// get last vote from user
+		val command = Aggregate(votesCollection.name, Seq(
+			Match(BSONDocument("qid" -> vote.qid, "userid" -> vote.userid,
+				"timestamp" -> BSONDocument(Seq("$lt" -> BSONDateTime(vote.timestamp)))
+			)),
+			Sort(Seq(Descending("timestamp")))
+		))
+
+		val res = db.command(command)
+
+		res onComplete {
+			case Success(res) => Logger.debug("last vote: " + res.headOption.map(_.as[Vote].toString()))
+			case Failure(exception) =>
+		}
+
+		res.map{
+			st => st.map{l => l.as[Vote]}.headOption
+		}
+	}
+
+	def getRating(user: User, qid: String): Future[Stream[BSONDocument]] = {
+		val command = Aggregate(votesCollection.name, Seq(
+			Match(BSONDocument("userid" -> user.userkey.key, "qid" -> qid)),
+			Sort(Seq(Descending("timestamp"))),
+			Project("_id"->BSONInteger(0), "rating" -> BSONInteger(1))
+		))
 		db.command(command)
 	}
 }

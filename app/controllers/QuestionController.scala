@@ -39,17 +39,8 @@ object QuestionController extends ServiceComponent with MongoController {
 			qr <- distinctQuestions(cr(0), getTermYear(tr(0), yr(0)))
 		} yield (cr, tr, yr, qr)
 
-		coursesResult onComplete {
-			case Success(res) => Logger.debug("No. of courses found: " + res.length.toString())
-			case Failure(exception) =>
-		}
-		yearsResult onComplete {
-			case Success(res) => Logger.debug("No. of years found: " + res.length.toString())
-			case Failure(exception) =>
-		}
-
-		courseAndYearResult.map { case (courseList, yearList) =>
-			Ok(views.html.question(Question.empty, false)(courseList, Nil, yearList, Nil, "", "", "", "", None))
+		courseAndYearResult.map { case (courseList, termList, yearList, questionList) =>
+			Ok(views.html.question(Question.empty, false)(courseList, termList, yearList, questionList, "", "", "", "", None))
 		}
 	}
 
@@ -72,7 +63,7 @@ object QuestionController extends ServiceComponent with MongoController {
 			tr <- termsResult
 			yr <- yearsResult
 			q <- question
-			qr <- questionsResult.map(l => l.map(_.as[Question].question))
+			qr <- questionsResult
 			r <- ratingResult
 		} yield (cr, yr, q, qr, r)
 

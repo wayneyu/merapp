@@ -242,7 +242,8 @@
 </div>
 
 <div id="question_rating">
-    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}>
+    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
+    @if(!context.user.isDefined){data-disabled="true"}>
     <!-- see http://plugins.krajee.com/star-rating/demo -->
 </div>
 
@@ -262,8 +263,6 @@ This question was solved by <Strong>@solvers.mkString(", ")</Strong>
 
 
 <script>
-$( document ).ready(function() {
-
 $("#my_rating").rating({
     stars: 10,
     min: 0,

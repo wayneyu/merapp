@@ -356,6 +356,18 @@ object MongoDAO extends Controller with MongoController {
 		topics.map{ l => if (l.isEmpty) BSONDocument() else l(0) }
 	}
 
+	def topicSearchBSON(searchString: String): Future[Stream[BSONDocument]] = {
+		Logger.debug("Searching topic: " + searchString)
+
+		val command = Aggregate(topicsCollection.name, Seq(
+			Match(BSONDocument("topic" -> BSONRegex(searchString, "i"))),
+			Project("_id"->BSONInteger(0), "topic" -> BSONInteger(1)),
+			Sort(Seq(Ascending("topic")))
+		))
+
+		db.command(command)
+	}
+
 	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONDocument]] = {
 		updateTopic(course, term_year, q, topic, "$addToSet")
 	}
@@ -479,4 +491,3 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 }
-

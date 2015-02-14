@@ -5,6 +5,7 @@ import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.{AnyContent, Action, Controller}
 import play.modules.reactivemongo.MongoController
+import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
@@ -44,5 +45,14 @@ object TopicController extends ServiceComponent {
       ))
     }
   }
+
+	def topicsSearch(searchTerm: String) = UserAwaredAction.async { implicit context =>
+		val alltopics = MongoDAO.topicSearchBSON(searchTerm)
+
+		alltopics.map { st =>
+		   Ok(BSONArrayFormat.writes(BSONArray(
+			  st)))
+		}
+	}
 
 }

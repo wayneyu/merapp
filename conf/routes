@@ -23,22 +23,22 @@ GET    /questions/:course/:term_year/:q                 controllers.QuestionCont
 GET    /questions/:course/:term_year/:q/json            controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
 GET    /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)
 POST   /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionFindAndModify(course: String, term_year: String, q: String)
+POST   /questions/:course/:term_year/:q/edit/addtopic/:topic    controllers.QuestionController.addTopic(course: String, term_year: String, q: String, topic: String)
+POST   /questions/:course/:term_year/:q/edit/removetopic/:topic    controllers.QuestionController.removeTopic(course: String, term_year: String, q: String, topic: String)
 POST   /questions/upload                                controllers.QuestionController.upload(url: String)
 
 POST   /questions/submit                                controllers.QuestionController.questionSubmit()
 POST   /questions/search/submit                         controllers.QuestionController.searchByKeywordsSubmit()
-
-GET    /questions/:course/:term_year/:q/topics/add/:topic    controllers.QuestionController.addTopic(course: String, term_year: String, q: String, topic: String)
-GET    /questions/:course/:term_year/:q/topics/remove/:topic    controllers.QuestionController.removeTopic(course: String, term_year: String, q: String, topic: String)
 
 GET    /exams                                           controllers.Application.exams()
 GET    /exams/:course                                   controllers.QuestionController.course(course: String)
 GET    /exams/:course/:term_year                        controllers.QuestionController.exam(course: String, term_year: String)
 
 GET    /topics                                          controllers.Application.topics()
+GET    /topics/search                                   controllers.TopicController.topicsSearch(q: String)
 GET    /topics/:topic                                   controllers.TopicController.topic(topic: String)
 
-GET    /questions/:course/:term_year/:q/vote/:rating    controllers.QuestionController.vote(course: String, term_year: String, q: String, rating: Int)
+POST   /questions/:course/:term_year/:q/vote/:rating    controllers.QuestionController.vote(course: String, term_year: String, q: String, rating: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET    /javascriptRoutes                                controllers.Application.javascriptRoutes
@@ -50,6 +50,6 @@ GET        /users/modify/:user/:provider/:to            controllers.AuthControll
 POST       /users/modify                                controllers.AuthController.modifyUserSubmit
 GET        /auth/user                                   controllers.AuthController.userprofile
 GET        /auth/link-result                            controllers.AuthController.linkResult
-GET        /custom/login                                controllers.CustomLoginController.login
-GET        /custom/logout                               controllers.CustomLoginController.logout
+GET        /login                                       controllers.CustomLoginController.login
+GET        /logout                                      controllers.CustomLoginController.logout
 ->         /auth                                        securesocial.Routes

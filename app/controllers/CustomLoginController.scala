@@ -12,7 +12,6 @@ trait CustomLoginController extends BaseLoginPage[User] with ServiceComponent {
   override implicit val env = AuthRuntimeEnvironment
 
   override def login: Action[AnyContent] = {
-    Logger.debug("using CustomLoginController")
     super.login
   }
 }

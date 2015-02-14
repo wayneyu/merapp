@@ -404,6 +404,12 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+	def removeTopic(course: String, term_year: String, q: String, topic: String) = ContributorAction.async { implicit context =>
+		MongoDAO.removeTopic(course, term_year, q, topic).map {
+			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))
+		}
+	}
+
 	def vote(course: String, term_year: String, question: String, rating: Int) = VisitorAction.async { implicit context =>
 		val timestamp = Calendar.getInstance().getTimeInMillis
 		val vote = Vote(context.user.get.userkey.key, Question.qid(course, term_year, question), timestamp, rating)
@@ -421,12 +427,6 @@ object QuestionController extends ServiceComponent with MongoController {
 			st => st.headOption.flatMap[Int] {
 				_.getAs[Int]("rating")
 			}
-		}
-	}
-
-	def removeTopic(course: String, term_year: String, q: String, topic: String) = ContributorAction.async { implicit context =>
-		MongoDAO.removeTopic(course, term_year, q, topic).map {
-			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))
 		}
 	}
 }

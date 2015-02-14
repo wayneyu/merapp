@@ -1,5 +1,7 @@
 @(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
 @q = @{qn.question}
+@course = @{qn.course}
+@term_year = @{ qn.term + "_" + qn.year.toString() }
 @stmt = @{qn.statement}
 @hints = @{qn.hints}
 @sols = @{qn.sols}
@@ -109,8 +111,9 @@
 
 <br>
 
-<div id="prev_next_question">
+<div id="prev_next_question" style="margin: 0 auto; text-align: center;">
     <a id="prev_question">&larr; Previous question</a>
+    @if(context.user.isDefined){<a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>}
     <a id="next_question">Next question &rarr;</a>
 </div>
 
@@ -232,14 +235,11 @@
     </div>
 }
 
-<div id="question_topics">
+<div id="question_topics" style="width: 90%;">
     Topics
-    <select class="question_tags form-control" multiple="multiple" @if(!editable){disabled="true"}>
-        @for( topic <- topics ){
-        <option selected="selected" value=@topic.replace("_"," ")>@topic.replace("_"," ")</option>
-        }
-    </select>
+    <input type="hidden" class="question_tags"  value=@topics.mkString(",") @if(!editable){disabled}>
 </div>
+
 
 <div id="question_rating">
     <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
@@ -263,6 +263,7 @@ This question was solved by <Strong>@solvers.mkString(", ")</Strong>
 
 
 <script>
+$(document).ready(function(){
 $("#my_rating").rating({
     stars: 10,
     min: 0,
@@ -282,8 +283,7 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
     console.log(value);
     console.log(caption);
     $.ajax({
-      contentType: 'application/json',
-      type: 'GET',
+      type: 'POST',
       url: window.location.pathname + "/vote/" + value,
       success: function(d){
         location.reload();
@@ -296,34 +296,75 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
 
 $(".question_tags").select2({
   tags: true,
-  tokenSeparators: [',', ' ']
-})
-.on("select2:select", function(e){
-    var newTag = e.params.data.id;
-    console.log(newTag);
-    $.ajax({
-      type: 'GET',
-      url: window.location.pathname + "/topics/add/" + newTag,
-      success: function(d){
-        console.log("added new tag");
-      },
-      error: function(obj, st, err){
-        alert(err + "\n" + obj.responseText);
+  tokenSeparators: [",", " "],
+  minimumInputLength: 1,
+  text: function(obj){
+    return obj.topic;
+  },
+  createSearchChoice: function(term, data) {
+    if ($(data).filter(function() {
+      return this.topic.localeCompare(term) === 0;
+    }).length === 0) {
+      return {
+        id: term,
+        topic: term
+      };
+    }
+  },
+  multiple: true,
+  ajax: {
+    url: '/topics/search',
+    dataType: "json",
+    data: function(term, page) {
+      return {
+        q: term
+      };
+    },
+    results: function(data) {
+      for (var i = 0; i<data.length; i++) {
+          data[i].id = i;
       }
-    })
+      return {
+        results: data
+      };
+    },
+    cache: true
+  },
+  initSelection: function (element, callback) {
+    var data = [];
+    $(element.val().split(",")).each(function () {
+        data.push({id: this, topic: this});
+    });
+    callback(data);
+  }
 })
-.on("select2:unselect",function(e){
-    var removedTag = e.params.data.id;
-    console.log(removedTag);
-    $.ajax({
-      type: 'GET',
-      url: window.location.pathname + "/topics/remove/" + removedTag,
-      success: function(d){
+.on("select2-selecting", function(e){
+	var newTag = e.choice.topic;
+	console.log(newTag);
+	$.ajax({
+        type: 'POST',
+        url: window.location.pathname + "/addtopic/" + newTag,
+        success: function(d){
+            console.log("added new tag");
+        },
+        error: function(obj, st, err){
+            alert(err + "\n" + obj.responseText);
+        }
+	})
+})
+.on("select2-removed",function(e){
+var removedTag = e.val;
+console.log(removedTag);
+$.ajax({
+    type: 'POST',
+    url: window.location.pathname + "/removetopic/" + removedTag,
+    success: function(d){
         console.log("removed tag");
-      },
-      error: function(obj, st, err){
+    },
+    error: function(obj, st, err){
         alert(err + "\n" + obj.responseText);
-      }
-    })
+    }
 })
+});
+});
 </script>

@@ -200,6 +200,10 @@ background-color: #eeeeee;
     padding-right: 5px;
 }
 
+#edit_question{
+    text-align: center;
+}
+
 .result_stmt{
     font-family: 'Helvetica Neue';
     font-size: 10pt;

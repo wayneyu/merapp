@@ -22,11 +22,11 @@
                          }
             });
         </script>
-
+<!--
         <script type="text/javascript"
                 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
-
+-->
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/question.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/course.css")">
@@ -48,8 +48,8 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <ul id="nav">
+            <ul class="nav nav-tabs" id="nav_top">
+               <li><div style="width: 120pt;">&nbsp;</div></li>
               <li><a href=@routes.Application.team>About Us</a></li>
               <li><a href=@routes.Application.exams>Exams</a></li>
               <li><a href=@routes.Application.questions>Questions</a></li>
@@ -75,8 +75,8 @@
                 <table style="white-space:nowrap; border:none; background:none; position:relative">
                 <tbody><tr>
                 <td style="padding: 2px; white-space:nowrap; color:#FFFFFF;">
-                <a href="@routes.Application.index" title="Science:Math Exam Resources">
-                <img id="mascot" alt="Math kid.jpg" src="@routes.Assets.at("images/268px-Math_kid.jpg")" width="200" height="150">
+                <a href="@routes.Application.index" title="Science:Math Education Resources">
+                <img id="mascot" alt="MER penguin" src="@routes.Assets.at("images/MER_penguin_2_face_right.png")">
                 </a>
                 </td></tr></tbody>
                 </table>
@@ -96,8 +96,6 @@
             @content
 
             </div>
-
-        </div>
         <div class="footer">
             <a href="http://goo.gl/forms/rru68Ci0mH" id="feedback">GIVE FEEDBACK</a>
         </div>

@@ -5,6 +5,16 @@
     position:relative;
 }
 
+body {
+    background: url('../images/maths-beautiful-pictures-hd-quality-190476.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat:no-repeat;
+}
+
 .wrapper{
     width: 800px;
     margin-left: auto;
@@ -72,6 +82,16 @@ th{
     margin-left: 0px;
 }
 
+#nav_top {
+    background: url('../images/bg-chalkboard.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat:no-repeat;
+}
+
 #nav li {
     display: table-cell;
     padding-right: 2px;
@@ -79,6 +99,7 @@ th{
     vertical-align: bottom;
     list-style-type: none;
 }
+
 #nav a:not(#user):not(#login) {
     display: block;
     min-height: 100%;
@@ -87,6 +108,26 @@ th{
     color: white;
     border-radius: 6px 6px 0 0;
 }
+
+.white_background_box {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 5px;
+    padding-top: 8px;
+    box-shadow: 6px 6px 5px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,255,255,0.95);
+}
+
+.text_large {
+    font-size: 20pt;
+}
+
+.text_small {
+    font-size: 8pt;
+}
+
 #user{
     text-decoration: underline;
 }
@@ -138,4 +179,10 @@ th{
    display: block;
    margin-left: auto;
    margin-right: auto
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

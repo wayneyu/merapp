@@ -368,12 +368,18 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
-	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONDocument]] = {
-		updateTopic(course, term_year, q, topic, "$addToSet")
+	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONArray]] = {
+		for{
+			a <- updateTopic(course, term_year, q, topic, "$addToSet")
+			b <- upsertToTopics(topic)
+		} yield a.flatMap{_.getAs[BSONArray]("topics")}
 	}
 
-	def removeTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONDocument]] = {
-		updateTopic(course, term_year, q, topic, "$pull")
+	def removeTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONArray]] = {
+		for {
+			a <- updateTopic(course, term_year, q, topic, "$pull")
+			b <- removeFromTopics(topic)
+		} yield a.flatMap{_.getAs[BSONArray]("topics")}
 	}
 
 	private def updateTopic(course: String, term_year: String, q:String, topic: String, opt: String): Future[Option[BSONDocument]] = {
@@ -389,8 +395,21 @@ object MongoDAO extends Controller with MongoController {
 		val command = FindAndModify(
 			questionCollection.name,
 			selector,
-			Update(modifier, true))
+			Update(modifier, true), false)
 
+		db.command(command)
+	}
+
+	private def upsertToTopics(topic: String): Future[Option[BSONDocument]] = {
+		val selector = BSONDocument("topic" -> topic)
+		val modifier = BSONDocument("$setOnInsert" -> BSON.write(Topic(topic = topic)))
+		val command = FindAndModify(topicsCollection.name, selector, Update(modifier, false), true)
+		db.command(command)
+	}
+
+	private def removeFromTopics(topic: String): Future[Option[BSONDocument]] = {
+		val selector = BSONDocument("content" -> BSONArray(), "url" -> "", "parent" -> "", "topic" -> topic)
+		val command = FindAndModify(topicsCollection.name, selector, Remove, false)
 		db.command(command)
 	}
 

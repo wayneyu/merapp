@@ -1,85 +1,87 @@
 @(course: String, exams: List[String], topics: List[String], num_questions: Int)(implicit context: service.AppContext[AnyContent])
 
 @main(course){
-<div id="exams">
-    <h2>Available final exams</h2>
-    <table style="width:100%;">
-        <tr>
-            <th>Term</th>
-<!--            <th>Instructors</th>
-            <th>Easiness</th>
--->
-            <th colspan="3">.pdf downloads</th>
-        </tr>
-        <tr>
-        @for( exam <- exams ){
-            <td><div class="exam"><a href="@routes.QuestionController.exam(course, exam)">@exam.replace("_"," ")</a></div></td>
-<!--            <td>(todo)</td>
-            <td>(todo)</td>
--->
-            <td>Questions</td>
-            <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers</a></td>
-            <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Solutions</a></td>
-        </tr>
-    }
-    </table>
+<div class="white_background_box_90">
+    <div id="exams">
+        <h2>Available final exams</h2>
+        <table style="width:100%;">
+            <tr>
+                <th>Term</th>
+    <!--            <th>Instructors</th>
+                <th>Easiness</th>
+    -->
+                <th colspan="3">.pdf downloads</th>
+            </tr>
+            <tr>
+            @for( exam <- exams ){
+                <td><div class="exam"><a href="@routes.QuestionController.exam(course, exam)">@exam.replace("_"," ")</a></div></td>
+    <!--            <td>(todo)</td>
+                <td>(todo)</td>
+    -->
+                <td>Questions</td>
+                <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers</a></td>
+                <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Solutions</a></td>
+            </tr>
+        }
+        </table>
 
-    <h2>Topics</h2>
-    <i>The percentage of questions in @course involving a particular topic.</i><br><br>
-    @for( topic <- topics ){
-        <span class="topic"><a href="@routes.TopicController.topic(topic)">@topic.replace("_","\u0020")</a></span>
+        <h2>Topics</h2>
+        <em>The percentage of questions in @course involving a particular topic.</em><br><br>
+        @for( topic <- topics ){
+            <span class="topic"><a href="@routes.TopicController.topic(topic)">@topic.replace("_","\u0020")</a></span>
+        }
+    </div>
+
+
+    <svg class="chart"></svg>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <script> // Prepares data and plots the topics bar graph.
+    var frequencies = {};
+    $(".topic").each(function(){
+        new_topic = $(this).text();
+        frequencies[new_topic] = frequencies[new_topic] || 0;
+        frequencies[new_topic]++;
+        $(this).text("");
+    });
+
+    var data_list = [],
+        all_values = [];
+    for (var key in frequencies) {
+        var val = frequencies[key];
+        all_values.push(val);
+        data_list.push({name: key, value: val});
     }
+    data_list.sort(function(a,b) {
+        return - a.value + b.value;
+    });
+
+    var width = 420,
+        barHeight = 20;
+
+    var x = d3.scale.linear()
+        .domain([0, d3.max(all_values)])
+        .range([0, width]);
+
+    var chart = d3.select(".chart")
+        .attr("width", width)
+        .attr("height", barHeight * data_list.length);
+
+    var bar = chart.selectAll("g")
+        .data(data_list)
+        .enter().append("g")
+        .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+
+    bar.append("rect")
+        .attr("width", function(d) { return x(d.value) })
+        .attr("height", barHeight - 1);
+
+    bar.append("text")
+        .attr("x", function(d) { return 0; })
+        .attr("y", barHeight / 2)
+        .attr("dy", ".35em")
+        .text(function(d) { return '(' + (100*d.value/@num_questions).toFixed(1) + '%) ' + d.name; })
+        .on("click", function() { window.location.assign("/topics/" + $(this).text().match(/\s.*$/g)[0].trim().replace(/\s/g,"_") ); }); // to add a link
+    </script>
 </div>
-
-<svg class="chart"></svg>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-
-<script> // Prepares data and plots the topics bar graph.
-var frequencies = {};
-$(".topic").each(function(){
-    new_topic = $(this).text();
-    frequencies[new_topic] = frequencies[new_topic] || 0;
-    frequencies[new_topic]++;
-    $(this).text("");
-});
-
-var data_list = [],
-    all_values = [];
-for (var key in frequencies) {
-    var val = frequencies[key];
-    all_values.push(val);
-    data_list.push({name: key, value: val});
-}
-data_list.sort(function(a,b) {
-    return - a.value + b.value;
-});
-
-var width = 420,
-    barHeight = 20;
-
-var x = d3.scale.linear()
-    .domain([0, d3.max(all_values)])
-    .range([0, width]);
-
-var chart = d3.select(".chart")
-    .attr("width", width)
-    .attr("height", barHeight * data_list.length);
-
-var bar = chart.selectAll("g")
-    .data(data_list)
-    .enter().append("g")
-    .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
-
-bar.append("rect")
-    .attr("width", function(d) { return x(d.value) })
-    .attr("height", barHeight - 1);
-
-bar.append("text")
-    .attr("x", function(d) { return 0; })
-    .attr("y", barHeight / 2)
-    .attr("dy", ".35em")
-    .text(function(d) { return '(' + (100*d.value/@num_questions).toFixed(1) + '%) ' + d.name; })
-    .on("click", function() { window.location.assign("/topics/" + $(this).text().match(/\s.*$/g)[0].trim().replace(/\s/g,"_") ); }); // to add a link
-</script>
-
 }

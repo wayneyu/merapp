@@ -3,41 +3,43 @@
 @user = @{context.user}
 
 @main("Manage Users"){
-<table>
-    <tr>
-        <th>UserId</th>
-        <th>Provider</th>
-        <th>Name</th>
-        <th>Access Level</th>
-        <th>Set Level</th>
-    </tr>
-        @for( user <- users ){
-            <tr><div id="user">
-                <td>@user.main.userId</td>
-                <td>@user.main.providerId</td>
-                <td>@{user.main.firstName.getOrElse("") + " " + user.main.lastName.getOrElse("")}</td>
-                <td>
-                    @user match {
-                        case _:Visitor => {Visitor}
-                        case _:Contributor => {Contributor}
-                        case _:SuperUser => {SuperUser}
-                    }
-                </td>
-                <td>
-                    @helper.form(action = routes.AuthController.modifyUserSubmit()) {
-                        <select name="userType">
-                            <option value="Visitor">Visitor</option>
-                            <option value="Contributor">Contributor</option>
-                            <option value="SuperUser">SuperUser</option>
-                        </select>
-                        <input type="hidden" name="providerId" value=@user.main.providerId>
-                        <input type="hidden" name="userId" value=@user.main.userId>
-                        <input type="submit" value="Change Access">
-                    }
-                </td>
-                </div></td>
-            </tr>
-        }
-    </tr>
-</table>
+<div class="white_background_box_90">
+    <table>
+        <tr>
+            <th>UserId</th>
+            <th>Provider</th>
+            <th>Name</th>
+            <th>Access Level</th>
+            <th>Set Level</th>
+        </tr>
+            @for( user <- users ){
+                <tr><div id="user">
+                    <td>@user.main.userId</td>
+                    <td>@user.main.providerId</td>
+                    <td>@{user.main.firstName.getOrElse("") + " " + user.main.lastName.getOrElse("")}</td>
+                    <td>
+                        @user match {
+                            case _:Visitor => {Visitor}
+                            case _:Contributor => {Contributor}
+                            case _:SuperUser => {SuperUser}
+                        }
+                    </td>
+                    <td>
+                        @helper.form(action = routes.AuthController.modifyUserSubmit()) {
+                            <select name="userType">
+                                <option value="Visitor">Visitor</option>
+                                <option value="Contributor">Contributor</option>
+                                <option value="SuperUser">SuperUser</option>
+                            </select>
+                            <input type="hidden" name="providerId" value=@user.main.providerId>
+                            <input type="hidden" name="userId" value=@user.main.userId>
+                            <input type="submit" value="Change Access">
+                        }
+                    </td>
+                    </div></td>
+                </tr>
+            }
+        </tr>
+    </table>
+</div>
 }

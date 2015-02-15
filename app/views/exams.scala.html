@@ -1,38 +1,38 @@
 @(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])(implicit context: service.AppContext[AnyContent])
 @main("Exams"){
-
-<div class="questionsDiv">
-    <table id="qtable">
-        <thead>
-            <tr id="vehicles">
-            <th></th>
-            @for( y <- allyears){
-                <th id="year">@y</th>
-            }
-           </tr>
-        </thead>
-        <tbody id="scrolling">
-        @for( c <- allcourses ){
-        <tr id="row">
-            <td><a href="@routes.QuestionController.course(c)">@c</a></td>
-            @for( y <- allyears ){
-                <td id="year">|
-                    @if( exams.contains( (c, y, "December") ) ){
-                        <a href="@routes.QuestionController.exam(c, "December_"+y)">Dec</a>
-                    } else {
-                        ---
+<div class="white_background_box_90">
+    <div class="questionsDiv" style="font-size: 15pt;">
+        <table id="qtable">
+            <thead>
+                <tr id="vehicles">
+                <th></th>
+                @for( y <- allyears){
+                    <th id="year">@y</th>
+                }
+               </tr>
+            </thead>
+            <tbody id="scrolling">
+            @for( c <- allcourses ){
+                <tr id="row">
+                    <td><a href="@routes.QuestionController.course(c)">@c</a></td>
+                    @for( y <- allyears ){
+                        <td id="year">|
+                            @if( exams.contains( (c, y, "December") ) ){
+                                <a href="@routes.QuestionController.exam(c, "December_"+y)">Dec</a>
+                            } else {
+                                ---
+                            }
+                            @if( exams.contains( (c, y, "April") )){
+                                <a href="@routes.QuestionController.exam(c, "April_"+y)">Apr</a>
+                            } else {
+                                ---
+                            }
+                        </td>
                     }
-                    @if( exams.contains( (c, y, "April") )){
-                        <a href="@routes.QuestionController.exam(c, "April_"+y)">Apr</a>
-                    } else {
-                        ---
-                    }
-                </td>
+                </tr>
             }
-        </tr>
-        }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </div>
-
 }

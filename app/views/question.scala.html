@@ -107,7 +107,7 @@
         </select>
 
         <input id="findQuestionBtn" type="submit" value="Jump to Question">
-        }
+    }
     </div>
 
     <br>
@@ -166,19 +166,19 @@
             <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
             <div>@Html(h)</div>
         </div>
-    @if(editable){
-    <div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
-        <div class="latex_box">
-            @latexbuttons
-            <textarea>@Html(h)</textarea>
-            <div class="latex_edit_render_area"></div>
-            <div>
-                <button class="render_button">render</button>
-                <button class="submit_button">submit changes</button>
+        @if(editable){
+            <div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
+                <div class="latex_box">
+                    @latexbuttons
+                    <textarea>@Html(h)</textarea>
+                    <div class="latex_edit_render_area"></div>
+                    <div>
+                        <button class="render_button">render</button>
+                        <button class="submit_button">submit changes</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    }
+        }
     }
 
     @if(!editable){
@@ -195,19 +195,19 @@
         <div>@Html(answer)</div>
     </div>
     @if(editable){
-    <div class="latex_edit_area" id=@("answer_html_edit")>
-        <div class="latex_box">
-            @latexbuttons
-            <textarea>@Html(answer)</textarea>
-            <div class="latex_edit_render_area"></div>
-            <div>
-                <button class="render_button">render</button>
-                <button class="submit_button">submit changes</button>
+        <div class="latex_edit_area" id=@("answer_html_edit")>
+            <div class="latex_box">
+                @latexbuttons
+                <textarea>@Html(answer)</textarea>
+                <div class="latex_edit_render_area"></div>
+                <div>
+                    <button class="render_button">render</button>
+                    <button class="submit_button">submit changes</button>
+                </div>
             </div>
         </div>
-    </div>
+    }
 </div>
-}
 }
 
 @if(editable){
@@ -222,19 +222,19 @@
             <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
             <div>@Html(s)</div>
         </div>
-    @if(editable){
-    <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
-        <div class="latex_box">
-            @latexbuttons
-            <textarea>@Html(s)</textarea>
-            <div class="latex_edit_render_area"></div>
-            <div>
-                <button class="render_button">render</button>
-                <button class="submit_button">submit changes</button>
+        @if(editable){
+            <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
+                <div class="latex_box">
+                    @latexbuttons
+                    <textarea>@Html(s)</textarea>
+                    <div class="latex_edit_render_area"></div>
+                    <div>
+                        <button class="render_button">render</button>
+                        <button class="submit_button">submit changes</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    }
+        }
     }
 
 
@@ -251,10 +251,10 @@
 </div>
 
     @if(solvers){
-    This question was solved by <Strong>@solvers.mkString(", ")</Strong>
-        @if(contributors) {
-            with the help of <em>@contributors.mkString(", ")</em>.
-        } else {.}
+        This question was solved by <Strong>@solvers.mkString(", ")</Strong>
+            @if(contributors) {
+                with the help of <em>@contributors.mkString(", ")</em>.
+            } else {.}
     } else {
         @if(contributors) {
             The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
@@ -391,3 +391,4 @@ $(".question_tags").select2({
 });
 });
 </script>
+}

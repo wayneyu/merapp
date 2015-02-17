@@ -12,6 +12,7 @@ body {
   font-family: serif;
   font-size: 12pt;
   border: 1px solid #eeeeee;
+  background-color: #FFFFFF;
 }
 
 #tags, #selection {

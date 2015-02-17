@@ -416,7 +416,8 @@ object QuestionController extends ServiceComponent with MongoController {
 		val res = MongoDAO.insertVote(vote, course, term_year, question)
 
 		res.map {
-			st => Ok("")
+			case Some(doc) => Ok(BSONDocumentFormat.writes(doc))
+			case None => BadRequest("Error adding vote")
 		}
 	}
 

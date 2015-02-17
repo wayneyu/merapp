@@ -2,49 +2,49 @@
 @currentUser = @{context.user.get}
 
 @main("Account Link Result") {
-<div class="page-header">
-    <h2><img src="@currentUser.main.avatarUrl.getOrElse("")" alt="@currentUser.main.firstName.getOrElse("")" width="40px" height="40px"/> Hey @currentUser.main.firstName.getOrElse("")</h2>
-</div>
+<div class="white_background_box_90">
+    <div class="page-header">
+        <h2><img src="@currentUser.main.avatarUrl.getOrElse("")" alt="@currentUser.main.firstName.getOrElse("")" width="40px" height="40px"/> Hey @currentUser.main.firstName.getOrElse("")</h2>
+    </div>
 
-<div class="clearfix">
-    <h2>You are linked to the following accounts:</h2>
+    <div class="clearfix">
+        <h2>You are linked to the following accounts:</h2>
 
-    @currentUser.identities.map { linked =>
-        <h2>@linked.providerId
-        </h2>
-        <ul>
-            <li>User Id: @linked.userId</li>
-            <li>Fist name: @linked.firstName.getOrElse("")</li>
-            <li>Last name: @linked.lastName.getOrElse("")</li>
-            <li>Full name: @linked.fullName.getOrElse("")</li>
-            <li>Logged in from: @linked.providerId</li>
-            <li>Email: @linked.email.map { email => @email }.getOrElse("Not Available")</li>
-            <li>Authentication method: @linked.authMethod</li>
-        </ul>
+        @currentUser.identities.map { linked =>
+            <h2>@linked.providerId</h2>
+            <ul>
+                <li>User Id: @linked.userId</li>
+                <li>Fist name: @linked.firstName.getOrElse("")</li>
+                <li>Last name: @linked.lastName.getOrElse("")</li>
+                <li>Full name: @linked.fullName.getOrElse("")</li>
+                <li>Logged in from: @linked.providerId</li>
+                <li>Email: @linked.email.map { email => @email }.getOrElse("Not Available")</li>
+                <li>Authentication method: @linked.authMethod</li>
+            </ul>
 
-        @linked.oAuth1Info.map { info =>
-        <h4>OAuth1 Info</h4>
+            @linked.oAuth1Info.map { info =>
+                <h4>OAuth1 Info</h4>
 
-        <ul>
-            <li>Token: @info.token</li>
-            <li>Secret: @info.secret</li>
-        </ul>
+                <ul>
+                    <li>Token: @info.token</li>
+                    <li>Secret: @info.secret</li>
+                </ul>
+            }
+
+            @linked.oAuth2Info.map { info =>
+                <h4>OAuth2 Info</h4>
+
+                <ul>
+                    <li>Access Token: @info.accessToken</li>
+                    @info.tokenType.map { t => <li>Token Type: @t</li> }
+                    @info.expiresIn.map { exp => <li>Expires in: @exp seconds</li>}
+                    @info.refreshToken.map { rt => <li>Refresh Token: @rt</li>}
+                </ul>
+            }
+            <hr>
         }
+    </div>
 
-        @linked.oAuth2Info.map { info =>
-        <h4>OAuth2 Info</h4>
-
-        <ul>
-            <li>Access Token: @info.accessToken</li>
-            @info.tokenType.map { t => <li>Token Type: @t</li> }
-            @info.expiresIn.map { exp => <li>Expires in: @exp seconds</li>}
-            @info.refreshToken.map { rt => <li>Refresh Token: @rt</li>}
-        </ul>
-        }
-
-        <hr>
-    }
+    <a class="btn" href="/">Ok</a>
 </div>
-
-<a class="btn" href="/">Ok</a>
 }

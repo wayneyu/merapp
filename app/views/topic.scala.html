@@ -2,38 +2,41 @@
 
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
-        <h1>Related questions</h1>
-        @if(questions.isEmpty){
+<div class="white_background_box_90">
+    <h1>Related questions</h1>
+    
+    @if(questions.isEmpty){
         <p>No questions yet.</p>
-        }else{
-            <table>
+    }else{
+        <table>
+        <tr>
+            <th>Question</th>
+            <th>Easiness</th>
+        </tr>
+        @for(q <- questions){
             <tr>
-                <th>Question</th>
-                <th>Easiness</th>
+                <td style="padding-right: 1em;"><a href="@q.url">@q.link</a></td> 
+                <td align="left">@if(q.num_votes > 0){<span class="easiness_rating" title="@q.num_votes">@q.rating%</span> (@q.num_votes votes)}else{<font style="color:#AAAAAA;">unrated</font>} </td>
             </tr>
-            @for(q <- questions){
-                <tr>
-                    <td style="padding-right: 1em;"><a href="@q.url">@q.link</a></td> 
-                    <td align="left">@if(q.num_votes > 0){<span class="easiness_rating" title="@q.num_votes">@q.rating%</span> (@q.num_votes votes)}else{<font style="color:#AAAAAA;">unrated</font>} </td>
-                </tr>
-            }
-            </table>
         }
+        </table>
+    }
 
-        <h1>Additional content</h1>
-        @if(topic.contents.isEmpty){
-            <p>No additional content yet. Feel free to recommend a source to us.</p>
-        }else{
-            @for(content <- topic.contents){
-                <div class="topic_content_box">
-                    <h2>@content.title</h2>
-                    <p>@content.text</p>
-                    <div class="youtubeFrame">
-                        <iframe src="@content.src"
-                                width=100% height=320 frameborder="0" allowfullscreen>
-                        </iframe>
-                    </div>
+    <h1>Additional content</h1>
+    @if(topic.contents.isEmpty){
+        <p>No additional content yet. Feel free to recommend a source to us.</p>
+    }else{
+        @for(content <- topic.contents){
+            <div class="topic_content_box">
+                <h2>@content.title</h2>
+                <p>@content.text</p>
+                <div class="youtubeFrame">
+                    <iframe src="@content.src"
+                            width=100% height=320 frameborder="0" allowfullscreen>
+                    </iframe>
                 </div>
-            }
+            </div>
         }
+    }
+</div>
 }

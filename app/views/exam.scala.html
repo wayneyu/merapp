@@ -1,35 +1,38 @@
 @(course: String, term_year: String, questions: List[Question])(implicit context: service.AppContext[AnyContent])
 
 @main(course.replace("MATH", "MATH ") + " " + term_year.replace("_", " ")){
-<h2>Questions available</h2>
+<div class="white_background_box_90">
+    <h2>Questions available</h2>
 
-Average easiness: <span class="exam_easiness easiness_rating"></span> (total of <span class="rating_count">0</span> votes).<br><br>
+    Average easiness: <span class="exam_easiness easiness_rating"></span> (total of <span class="rating_count">0</span> votes).<br><br>
 
-<ul id="exam_questions_list" class="exam_questions_list">
-    @for( question <- questions ){
-        <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>
-            <span class="question_easiness easiness_rating" title=@question.num_votes>@if(question.num_votes > 0){
-            @question.rating%
-            } else {
-            -
-            }</span></li>
-    }
-</ul>
-
+    <ul id="exam_questions_list" class="exam_questions_list">
+        @for( question <- questions ){
+            <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>
+                <span class="question_easiness easiness_rating" title=@question.num_votes>
+                    @if(question.num_votes > 0){
+                        @question.rating%
+                    } else {
+                        -
+                    }
+                </span>
+            </li>
+        }
+    </ul>
+</div>
 <script>
-
-var total_easiness = 0;
-var num_rated_questions = 0;
-var total_ratings = 0;
-$(".question_easiness").each(function(){
-    var val = parseInt($(this).text().replace("%",""));
-    if(!isNaN(val)){
-        total_easiness += val;
-        num_rated_questions += 1;
-        total_ratings += parseInt($(this).attr("title"));
-    }
-});
-$(".exam_easiness").text(Math.round(total_easiness/num_rated_questions) + "%");
-$(".rating_count").text(total_ratings);
+    var total_easiness = 0;
+    var num_rated_questions = 0;
+    var total_ratings = 0;
+    $(".question_easiness").each(function(){
+        var val = parseInt($(this).text().replace("%",""));
+        if(!isNaN(val)){
+            total_easiness += val;
+            num_rated_questions += 1;
+            total_ratings += parseInt($(this).attr("title"));
+        }
+    });
+    $(".exam_easiness").text(Math.round(total_easiness/num_rated_questions) + "%");
+    $(".rating_count").text(total_ratings);
 </script>
 }

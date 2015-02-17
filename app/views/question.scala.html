@@ -66,50 +66,51 @@
 
 
 @main("Questions"){
-<div id="selection">
-@helper.form(action = routes.QuestionController.questionSubmit()) {
+<div class="white_background_box_90">
+    <div id="selection">
+    @helper.form(action = routes.QuestionController.questionSubmit()) {
 
-    <select id="courseSelect" name="course">
-        @for( course <- courses ){
-            <option value=@course @if(course == selectedCourse){selected}>@course</option>
-        }
-        @if(courses.isEmpty && !selectedCourse.isEmpty){
-            <option value=@selectedCourse>@selectedCourse</option>
-        }
-    </select>
+        <select id="courseSelect" name="course">
+            @for( course <- courses ){
+                <option value=@course @if(course == selectedCourse){selected}>@course</option>
+            }
+            @if(courses.isEmpty && !selectedCourse.isEmpty){
+                <option value=@selectedCourse>@selectedCourse</option>
+            }
+        </select>
 
-    <select id="termSelect" name="term">
-        @for( term <- terms ) {
-            <option value=@term @if(term == selectedTerm){selected}>@term</option>
-        }
-        @if(terms.isEmpty && !selectedTerm.isEmpty){
-            <option value=@selectedTerm>@selectedTerm</option>
-        }
-    </select>
+        <select id="termSelect" name="term">
+            @for( term <- terms ) {
+                <option value=@term @if(term == selectedTerm){selected}>@term</option>
+            }
+            @if(terms.isEmpty && !selectedTerm.isEmpty){
+                <option value=@selectedTerm>@selectedTerm</option>
+            }
+        </select>
 
-    <select id="yearSelect" name="year">
-        @for( year <- years ){
-            <option value=@year @if(year == selectedYear){selected}>@year</option>
-        }
-        @if( years.isEmpty && !selectedYear.isEmpty){
-            <option value=@selectedYear>@selectedYear</option>
-        }
-    </select>
+        <select id="yearSelect" name="year">
+            @for( year <- years ){
+                <option value=@year @if(year == selectedYear){selected}>@year</option>
+            }
+            @if( years.isEmpty && !selectedYear.isEmpty){
+                <option value=@selectedYear>@selectedYear</option>
+            }
+        </select>
 
-    <select id="questionSelect" name="question">
-        @for( question <- questions ){
-            <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
-        }
-        @if( questions.isEmpty && !selectedQuestion.isEmpty){
-            <option value=@selectedQuestion>@selectedQuestion</option>
-        }
-    </select>
+        <select id="questionSelect" name="question">
+            @for( question <- questions ){
+                <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
+            }
+            @if( questions.isEmpty && !selectedQuestion.isEmpty){
+                <option value=@selectedQuestion>@selectedQuestion</option>
+            }
+        </select>
 
-    <input id="findQuestionBtn" type="submit" value="Jump to Question">
-    }
-</div>
+        <input id="findQuestionBtn" type="submit" value="Jump to Question">
+        }
+    </div>
 
-<br>
+    <br>
 
 <div id="prev_next_question" style="margin: 0 auto; text-align: center;">
     <a id="prev_question">&larr; Previous question</a>
@@ -117,123 +118,116 @@
     <a id="next_question">Next question &rarr;</a>
 </div>
 
-<br>
+    <br>
 
-<div class="main_box">
-    <div class="box_title">
-        @q
-        <div style="float:right; text-align: right; font-size: 12px; color: #000000; background-color: #FFFFFF;">
-            @if(num_votes > 0){
-                Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span> <br> (@num_votes @if(num_votes > 1){votes} else {vote})
-            } else {-}
+    <div class="main_box">
+        <div class="box_title">
+            @q
+            <div style="float:right; text-align: right; font-size: 12px; color: #000000; background-color: #FFFFFF;">
+                @if(num_votes > 0){
+                    Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span>
+                    <br>
+                    <span class="num_votes">(@num_votes @if(num_votes > 1){votes} else {vote})</span>
+                } else {-}
+            </div>
+        </div>
+        <div>@Html(stmt)</div>
+    </div>
+    @if(editable){
+    <div class="latex_edit_area" id="statement_html_edit">
+        <div class="latex_box">
+            @latexbuttons
+            <textarea>@Html(stmt)</textarea>
+            <div class="latex_edit_render_area"></div>
+            <div>
+                <button class="render_button">render</button>
+                <button class="submit_button">submit changes</button>
+            </div>
         </div>
     </div>
-    <div>@Html(stmt)</div>
-</div>
-@if(editable){
-<div class="latex_edit_area" id="statement_html_edit">
-    <div class="latex_box">
-        @latexbuttons
-        <textarea>@Html(stmt)</textarea>
-        <div class="latex_edit_render_area"></div>
-        <div>
-            <button class="render_button">render</button>
-            <button class="submit_button">submit changes</button>
-        </div>
-    </div>
-</div>
-}
-
-@if(!editable){
-    <div class="message">
-    Make sure you understand the problem fully: 
-    <ul>
-    <li>What is the question asking you to do? 
-    <li>Are there specific conditions or constraints that you should take note of?</li>
-    <li>How will you know if your answer is correct from your work only? </li>
-    <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
-    </ul>
-
-    If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
-    </div>    
-}
-
-@for( (h, ind) <- hints.zipWithIndex ) {
-    <div class="main_box @if(!editable){hideable_box}">
-        <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
-        <div>@Html(h)</div>
-    </div>
-@if(editable){
-<div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
-    <div class="latex_box">
-        @latexbuttons
-        <textarea>@Html(h)</textarea>
-        <div class="latex_edit_render_area"></div>
-        <div>
-            <button class="render_button">render</button>
-            <button class="submit_button">submit changes</button>
-        </div>
-    </div>
-</div>
-}
-}
-
-@if(!editable){
-    <div class="message">Checking a solution serves two purposes:
-    <ul>
-        <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
-        <li>if you have solved the problem and would like to check your work. </li>
-    </ul>
-    </div>
-}
-
-<div class="main_box @if(!editable){hideable_box}">
-    <div class="box_title">Final answer</div>
-    <div>@Html(answer)</div>
-</div>
-@if(editable){
-<div class="latex_edit_area" id=@("answer_html_edit")>
-    <div class="latex_box">
-        @latexbuttons
-        <textarea>@Html(answer)</textarea>
-        <div class="latex_edit_render_area"></div>
-        <div>
-            <button class="render_button">render</button>
-            <button class="submit_button">submit changes</button>
-        </div>
-    </div>
-</div>
-}
-
-
-@for( (s, ind) <- sols.zipWithIndex ) {
-    <div class="main_box @if(!editable){hideable_box}">
-        <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-        <div>@Html(s)</div>
-    </div>
-@if(editable){
-<div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
-    <div class="latex_box">
-        @latexbuttons
-        <textarea>@Html(s)</textarea>
-        <div class="latex_edit_render_area"></div>
-        <div>
-            <button class="render_button">render</button>
-            <button class="submit_button">submit changes</button>
-        </div>
-    </div>
-</div>
-}
-}
-
-@if(editable){
-    <div>
-    Upload image:
-    (AT)helper.form(action = routes.QuestionController.upload(request.path), 'enctype -> "multipart/form-data") {
-        <input type="file" name="file"><input type="submit">
     }
+
+    @if(!editable){
+        <div class="message">
+        Make sure you understand the problem fully: 
+        <ul>
+        <li>What is the question asking you to do? 
+        <li>Are there specific conditions or constraints that you should take note of?</li>
+        <li>How will you know if your answer is correct from your work only? </li>
+        <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
+        </ul>
+
+        If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
+        </div>    
+    }
+
+    @for( (h, ind) <- hints.zipWithIndex ) {
+        <div class="main_box @if(!editable){hideable_box}">
+            <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
+            <div>@Html(h)</div>
+        </div>
+    @if(editable){
+    <div class="latex_edit_area" id=@("hints_html_"+ind+"_edit")>
+        <div class="latex_box">
+            @latexbuttons
+            <textarea>@Html(h)</textarea>
+            <div class="latex_edit_render_area"></div>
+            <div>
+                <button class="render_button">render</button>
+                <button class="submit_button">submit changes</button>
+            </div>
+        </div>
     </div>
-}
+    }
+    }
+
+    @if(!editable){
+        <div class="message">Checking a solution serves two purposes:
+        <ul>
+            <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+            <li>if you have solved the problem and would like to check your work. </li>
+        </ul>
+        </div>
+    }
+
+    <div class="main_box @if(!editable){hideable_box}">
+        <div class="box_title">Final answer</div>
+        <div>@Html(answer)</div>
+    </div>
+    @if(editable){
+    <div class="latex_edit_area" id=@("answer_html_edit")>
+        <div class="latex_box">
+            @latexbuttons
+            <textarea>@Html(answer)</textarea>
+            <div class="latex_edit_render_area"></div>
+            <div>
+                <button class="render_button">render</button>
+                <button class="submit_button">submit changes</button>
+            </div>
+        </div>
+    </div>
+    }
+
+
+    @for( (s, ind) <- sols.zipWithIndex ) {
+        <div class="main_box @if(!editable){hideable_box}">
+            <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
+            <div>@Html(s)</div>
+        </div>
+    @if(editable){
+    <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
+        <div class="latex_box">
+            @latexbuttons
+            <textarea>@Html(s)</textarea>
+            <div class="latex_edit_render_area"></div>
+            <div>
+                <button class="render_button">render</button>
+                <button class="submit_button">submit changes</button>
+            </div>
+        </div>
+    </div>
+    }
+    }
 
 <div id="question_topics" style="width: 90%;">
     Topics
@@ -247,18 +241,18 @@
     <!-- see http://plugins.krajee.com/star-rating/demo -->
 </div>
 
-
-@if(solvers){
-This question was solved by <Strong>@solvers.mkString(", ")</Strong>
-    @if(contributors) {
-        with the help of <em>@contributors.mkString(", ")</em>.
-    } else {.}
-} else {
-    @if(contributors) {
-        The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
+    @if(solvers){
+    This question was solved by <Strong>@solvers.mkString(", ")</Strong>
+        @if(contributors) {
+            with the help of <em>@contributors.mkString(", ")</em>.
+        } else {.}
+    } else {
+        @if(contributors) {
+            The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
+        }
     }
-}
 
+</div>
 }
 
 
@@ -286,7 +280,9 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
       type: 'POST',
       url: window.location.pathname + "/vote/" + value,
       success: function(d){
-        location.reload();
+        debugger;
+        $("span.easiness_rating")[0].textContent = d.rating + "%";
+        $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
       },
       error: function(obj, st, err){
         alert(err);
@@ -323,7 +319,7 @@ $(".question_tags").select2({
     results: function(data) {
       for (var i = 0; i<data.length; i++) {
           data[i].id = i;
-      }
+     }
       return {
         results: data
       };

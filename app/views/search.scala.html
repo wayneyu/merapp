@@ -1,26 +1,27 @@
 @(results: Seq[SearchResult])(implicit context: service.AppContext[AnyContent])
 
 @main("Search by Keywords"){
-
-<div id="selection">
-<div id="search_bar_box">
-@helper.form(action = routes.QuestionController.searchByKeywordsSubmit()) {
-    <input type="text" size="30" name="searchString">
-    <input id="searchBtn" type="submit" value="Search">
-}
+<div class="white_background_box_90">
+    <div id="selection">
+        <div id="search_bar_box">
+        @helper.form(action = routes.QuestionController.searchByKeywordsSubmit()) {
+            <input type="text" size="30" name="searchString">
+            <input id="searchBtn" type="submit" value="Search">
+        }
+        </div>
+    </div>
+    <div id="results_box">
+        @if( results.isEmpty ){
+            <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, solutions, or on any of our topics page.</p>
+        } else {
+            @for( r <- results ){
+            	<div class="result">
+                	<div style="float:right; margin-top:0.5em;"><font style="color: #AAAAAA;">relevance: @r.score</font></div>
+                    <p><a href=@r.url>@r.link.replace("%20", " ")</a></p>
+                    <div class="result_stmt">@Html(r.statement)</div>
+                </div>
+            }
+        }
+    </div>
 </div>
-</div>
-<div id="results_box">
-@if( results.isEmpty ){
-    <p><Strong>No results found.</Strong> Try different keywords and we'll see if they appear in any of our questions, hints, solutions, or on any of our topics page.</p>
-} else {
-    @for( r <- results ){
-    	<div class="result">
-    	<div style="float:right; margin-top:0.5em;"><font style="color: #AAAAAA;">relevance: @r.score</font></div>
-        <p><a href=@r.url>@r.link.replace("%20", " ")</a></p>
-        <div class="result_stmt">@Html(r.statement)</div></div>
-    }
-}
-</div>
-
 }

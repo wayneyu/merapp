@@ -1,13 +1,16 @@
 @(topics: List[Topic])(implicit context: service.AppContext[AnyContent])
 
 @main("Topics"){
-A list of key topics is below, each with associated questions and additional content. Click on a topic to see more.<br>
-If you cannot find the topic you want, try searching in the "Find Keywords" tab above.
-<ul class="topics_list">
-    @for( topic <- topics ){
-        <li class="topic">
-            <a href="@routes.TopicController.topic(topic.topic)">@topic.topic.replace("_", " ")</a>
-        </li>
-    }
-</ul>
+<div class="white_background_box_90">
+    <p>A list of key topics is below, each with associated questions and additional content. Click on a topic to see more.</p>
+
+    <p>If you cannot find the topic you want, try searching in the "Find Keywords" tab above.</p>
+    <ul class="topics_list">
+        @for( topic <- topics ){
+            <li class="topic">
+                <a href="@routes.TopicController.topic(topic.topic)">@topic.topic.replace("_", " ")</a>
+            </li>
+        }
+    </ul>
+</div>
 }

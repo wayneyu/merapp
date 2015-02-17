@@ -5,30 +5,52 @@
     position:relative;
 }
 
-.wrapper{
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #2F4F4F;
+body {
+    height: 100%;
 }
 
-.footer{
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+#abc {
+    text-color: red;
 }
+#wrap
+{
+    min-height: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+    background: url('../images/maths-beautiful-pictures-hd-quality-190476-bright.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat:no-repeat;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:250px; /* this needs to be bigger than footer height*/
+  padding-top:42px; /* this needs to be bigger than footer height*/
+}
+
+
+#footer {
+    background: url('../images/chalkboard-black.jpg');
+}
+
 
 #content_container{
 	margin-top: 1em;
 	margin-bottom: 1em;
+	width: 100%;
 }
 
 h1{
 	padding-bottom: 0.5em
 	color:#2F4F4F;
-	border-top: 3px solid #2F4F4F;
+/*	border-top: 3px solid #2F4F4F; */
 }
 
 h2{
@@ -72,6 +94,16 @@ th{
     margin-left: 0px;
 }
 
+#nav_top {
+    background: url('../images/chalkboard-black.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat:no-repeat;
+}
+
 #nav li {
     display: table-cell;
     padding-right: 2px;
@@ -79,6 +111,7 @@ th{
     vertical-align: bottom;
     list-style-type: none;
 }
+
 #nav a:not(#user):not(#login) {
     display: block;
     min-height: 100%;
@@ -87,6 +120,40 @@ th{
     color: white;
     border-radius: 6px 6px 0 0;
 }
+
+.white_background_box {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 5px;
+    padding-top: 8px;
+    box-shadow: 6px 6px 5px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,255,255,0.95);
+}
+
+.white_background_box_90 {
+    width: 90%;
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 20px;
+    padding-top: 8px;
+    box-shadow: 6px 6px 5px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,255,255,0.95);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_large {
+    font-size: 20pt;
+}
+
+.text_small {
+    font-size: 8pt;
+}
+
 #user{
     text-decoration: underline;
 }
@@ -133,9 +200,14 @@ th{
 }
 
 #mascot{
-   width:200px;
    height:150px;
    display: block;
    margin-left: auto;
    margin-right: auto
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

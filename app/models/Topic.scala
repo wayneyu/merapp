@@ -1,16 +1,14 @@
 package models
 
-import reactivemongo.bson.{BSONDocument, BSONDocumentReader}
+import reactivemongo.bson._
 
 /**
  * Created by wayneyu on 1/8/15.
  */
-case class Topic(contents: List[TopicContent],
-                 parent: String,
+case class Topic(contents: List[TopicContent] = Nil,
+                 parent: String = "",
                  topic: String,
-                 url: String) {
-
-}
+                 url: String = "")
 
 object Topic {
 
@@ -24,6 +22,17 @@ object Topic {
       )
     }
   }
+
+	implicit object TopicWriter extends BSONDocumentWriter[Topic] {
+		def write(t: Topic): BSONDocument = {
+			BSONDocument(
+				"content" -> BSONArray(t.contents.map{BSON.write(_)}.toList),
+				"parent" -> BSONString(t.parent),
+				"topic" -> BSONString(t.topic),
+				"url" -> BSONString(t.url)
+			)
+		}
+	}
 
   val empty = Topic(Nil, "", "", "")
 

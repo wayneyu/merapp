@@ -206,8 +206,16 @@
             </div>
         </div>
     </div>
-    }
+</div>
+}
+}
 
+@if(editable){
+    <div>
+    Upload image:
+    @helper.form(action = routes.QuestionController.upload(context.request.path), 'enctype -> "multipart/form-data") {
+        <input type="file" name="file"><input type="submit">
+    }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
         <div class="main_box @if(!editable){hideable_box}">
@@ -229,9 +237,10 @@
     }
     }
 
+
 <div id="question_topics" style="width: 90%;">
     Topics
-    <input type="hidden" class="question_tags"  value=@topics.mkString(",") @if(!editable){disabled}>
+    <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
 </div>
 
 
@@ -290,7 +299,9 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
     });
 });
 
+var topicsCache = [];
 $(".question_tags").select2({
+<<<<<<< HEAD
   tags: true,
   tokenSeparators: [",", " "],
   minimumInputLength: 1,
@@ -299,11 +310,11 @@ $(".question_tags").select2({
   },
   createSearchChoice: function(term, data) {
     if ($(data).filter(function() {
-      return this.topic.localeCompare(term) === 0;
+      return this.text.localeCompare(term) === 0;
     }).length === 0) {
       return {
         id: term,
-        topic: term
+        text: term
       };
     }
   },
@@ -324,23 +335,39 @@ $(".question_tags").select2({
         results: data
       };
     },
-    cache: true
-  },
-  initSelection: function (element, callback) {
-    var data = [];
-    $(element.val().split(",")).each(function () {
-        data.push({id: this, topic: this});
-    });
-    callback(data);
-  }
+    multiple: true,
+    data:{ results: topicsCache},
+    initSelection: function (element, callback) {
+        var data = [];
+        $(element.val().split(",")).each(function () {
+            data.push({id: this, text: this});
+        });
+        callback(data);
+    }
+})
+.on("select2-opening", function(e){
+    if (topicsCache.length === 0) {
+        $.ajax({
+            url: '/topics/search',
+            dataType: "json",
+            data: { q:"" },
+            success: function(data) {
+              for (var i = 0; i<data.length; i++) {
+                  topicsCache.push({text: data[i].topic, id: i});
+              }
+            }
+        })
+    }
 })
 .on("select2-selecting", function(e){
-	var newTag = e.choice.topic;
+	var newTag = e.choice.text;
 	console.log(newTag);
 	$.ajax({
         type: 'POST',
         url: window.location.pathname + "/addtopic/" + newTag,
         success: function(d){
+            debugger;
+            $(".question_tags");
             console.log("added new tag");
         },
         error: function(obj, st, err){
@@ -348,19 +375,19 @@ $(".question_tags").select2({
         }
 	})
 })
-.on("select2-removed",function(e){
-var removedTag = e.val;
-console.log(removedTag);
-$.ajax({
-    type: 'POST',
-    url: window.location.pathname + "/removetopic/" + removedTag,
-    success: function(d){
-        console.log("removed tag");
-    },
-    error: function(obj, st, err){
-        alert(err + "\n" + obj.responseText);
-    }
-})
+.on("select2-removing",function(e){
+    var removedTag = e.choice.text;
+    console.log("removing tag " + removedTag);
+    $.ajax({
+        type: 'POST',
+        url: window.location.pathname + "/removetopic/" + removedTag,
+        success: function(d){
+            console.log("removed tag");
+        },
+        error: function(obj, st, err){
+            alert(err + "\n" + obj.responseText);
+        }
+    })
 });
 });
 </script>

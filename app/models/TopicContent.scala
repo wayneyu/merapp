@@ -2,7 +2,7 @@ package models
 
 import play.api.libs.functional.syntax._
 import play.api.libs.json.{JsPath, Reads}
-import reactivemongo.bson.{BSONDocument, BSONDocumentReader}
+import reactivemongo.bson.{BSONString, BSONDocumentWriter, BSONDocument, BSONDocumentReader}
 
 /**
  * Created by wayneyu on 1/8/15.
@@ -33,6 +33,17 @@ object TopicContent {
       )
     }
   }
+
+	implicit object TopicContentWriter extends BSONDocumentWriter[TopicContent] {
+		def write(c: TopicContent): BSONDocument = {
+			BSONDocument(
+				"credit" -> BSONString(c.credit),
+				"src" -> BSONString(c.src),
+				"text" -> BSONString(c.text),
+				"title" -> BSONString(c.title)
+			)
+		}
+	}
 
   val empty = TopicContent("", "", "", "")
 

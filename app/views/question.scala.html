@@ -107,16 +107,16 @@
         </select>
 
         <input id="findQuestionBtn" type="submit" value="Jump to Question">
-        }
+    }
     </div>
 
     <br>
 
-<div id="prev_next_question" style="margin: 0 auto; text-align: center;">
-    <a id="prev_question">&larr; Previous question</a>
-    @if(context.user.isDefined){<a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>}
-    <a id="next_question">Next question &rarr;</a>
-</div>
+    <div id="prev_next_question" style="margin: 0 auto; text-align: center;">
+        <a id="prev_question">&larr; Previous question</a>
+        @if(context.user.isDefined){<a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>}
+        <a id="next_question">Next question &rarr;</a>
+    </div>
 
     <br>
 
@@ -184,7 +184,7 @@
     @if(!editable){
         <div class="message">Checking a solution serves two purposes:
         <ul>
-            <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+            <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li>
             <li>if you have solved the problem and would like to check your work. </li>
         </ul>
         </div>
@@ -206,22 +206,13 @@
             </div>
         </div>
     </div>
-</div>
-}
-}
-
-@if(editable){
-    <div>
-    Upload image:
-    @helper.form(action = routes.QuestionController.upload(context.request.path), 'enctype -> "multipart/form-data") {
-        <input type="file" name="file"><input type="submit">
     }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
-        <div class="main_box @if(!editable){hideable_box}">
-            <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-            <div>@Html(s)</div>
-        </div>
+    <div class="main_box @if(!editable){hideable_box}">
+        <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
+        <div>@Html(s)</div>
+    </div>
     @if(editable){
     <div class="latex_edit_area" id=@("sols_html_"+ind+"_edit")>
         <div class="latex_box">
@@ -237,18 +228,25 @@
     }
     }
 
+    @if(editable){
+        <div>
+        Upload image:
+        @helper.form(action = routes.QuestionController.upload(context.request.path), 'enctype -> "multipart/form-data") {
+            <input type="file" name="file"><input type="submit">
+        }
+        </div>
+    }
 
-<div id="question_topics" style="width: 90%;">
-    Topics
-    <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
-</div>
+    <div id="question_topics" style="width: 90%;">
+        Topics
+        <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
+    </div>
 
-
-<div id="question_rating">
-    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
-    @if(!context.user.isDefined){data-disabled="true"}>
-    <!-- see http://plugins.krajee.com/star-rating/demo -->
-</div>
+    <div id="question_rating">
+        <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
+        @if(!context.user.isDefined){data-disabled="true"}>
+        <!-- see http://plugins.krajee.com/star-rating/demo -->
+    </div>
 
     @if(solvers){
     This question was solved by <Strong>@solvers.mkString(", ")</Strong>
@@ -263,7 +261,6 @@
 
 </div>
 }
-
 
 <script>
 $(document).ready(function(){
@@ -301,48 +298,27 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
 
 var topicsCache = [];
 $(".question_tags").select2({
-<<<<<<< HEAD
-  tags: true,
-  tokenSeparators: [",", " "],
-  minimumInputLength: 1,
-  text: function(obj){
-    return obj.topic;
-  },
-  createSearchChoice: function(term, data) {
-    if ($(data).filter(function() {
-      return this.text.localeCompare(term) === 0;
-    }).length === 0) {
-      return {
-        id: term,
-        text: term
-      };
-    }
-  },
-  multiple: true,
-  ajax: {
-    url: '/topics/search',
-    dataType: "json",
-    data: function(term, page) {
-      return {
-        q: term
-      };
-    },
-    results: function(data) {
-      for (var i = 0; i<data.length; i++) {
-          data[i].id = i;
-     }
-      return {
-        results: data
-      };
+    tags: true,
+    tokenSeparators: [",", " "],
+    minimumInputLength: 1,
+    createSearchChoice: function(term, data) {
+        if ($(data).filter(function() {
+          return this.text.localeCompare(term) === 0;
+        }).length === 0) {
+          return {
+            id: term,
+            text: term
+          };
+        }
     },
     multiple: true,
     data:{ results: topicsCache},
     initSelection: function (element, callback) {
-        var data = [];
-        $(element.val().split(",")).each(function () {
-            data.push({id: this, text: this});
-        });
-        callback(data);
+    var data = [];
+    $(element.val().split(",")).each(function () {
+        data.push({id: this, text: this});
+    });
+    callback(data);
     }
 })
 .on("select2-opening", function(e){

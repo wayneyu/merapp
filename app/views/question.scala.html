@@ -68,55 +68,56 @@
 @main("Questions"){
 <div class="white_background_box_90">
     <div id="selection">
-    @helper.form(action = routes.QuestionController.questionSubmit()) {
+        @helper.form(action = routes.QuestionController.questionSubmit()) {
+            <select id="courseSelect" name="course">
+                @for( course <- courses ){
+                    <option value=@course @if(course == selectedCourse){selected}>@course</option>
+                }
+                @if(courses.isEmpty && !selectedCourse.isEmpty){
+                    <option value=@selectedCourse>@selectedCourse</option>
+                }
+            </select>
 
-        <select id="courseSelect" name="course">
-            @for( course <- courses ){
-                <option value=@course @if(course == selectedCourse){selected}>@course</option>
-            }
-            @if(courses.isEmpty && !selectedCourse.isEmpty){
-                <option value=@selectedCourse>@selectedCourse</option>
-            }
-        </select>
+            <select id="termSelect" name="term">
+                @for( term <- terms ) {
+                    <option value=@term @if(term == selectedTerm){selected}>@term</option>
+                }
+                @if(terms.isEmpty && !selectedTerm.isEmpty){
+                    <option value=@selectedTerm>@selectedTerm</option>
+                }
+            </select>
 
-        <select id="termSelect" name="term">
-            @for( term <- terms ) {
-                <option value=@term @if(term == selectedTerm){selected}>@term</option>
-            }
-            @if(terms.isEmpty && !selectedTerm.isEmpty){
-                <option value=@selectedTerm>@selectedTerm</option>
-            }
-        </select>
+            <select id="yearSelect" name="year">
+                @for( year <- years ){
+                    <option value=@year @if(year == selectedYear){selected}>@year</option>
+                }
+                @if( years.isEmpty && !selectedYear.isEmpty){
+                    <option value=@selectedYear>@selectedYear</option>
+                }
+            </select>
 
-        <select id="yearSelect" name="year">
-            @for( year <- years ){
-                <option value=@year @if(year == selectedYear){selected}>@year</option>
-            }
-            @if( years.isEmpty && !selectedYear.isEmpty){
-                <option value=@selectedYear>@selectedYear</option>
-            }
-        </select>
+            <select id="questionSelect" name="question">
+                @for( question <- questions ){
+                    <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
+                }
+                @if( questions.isEmpty && !selectedQuestion.isEmpty){
+                    <option value=@selectedQuestion>@selectedQuestion</option>
+                }
+            </select>
 
-        <select id="questionSelect" name="question">
-            @for( question <- questions ){
-                <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
-            }
-            @if( questions.isEmpty && !selectedQuestion.isEmpty){
-                <option value=@selectedQuestion>@selectedQuestion</option>
-            }
-        </select>
-
-        <input id="findQuestionBtn" type="submit" value="Jump to Question">
-    }
+            <input id="findQuestionBtn" type="submit" value="Jump to Question">
+        }
     </div>
 
     <br>
 
-<div id="prev_next_question" style="margin: 0 auto; text-align: center;">
-    <a id="prev_question">&larr; Previous question</a>
-    @if(context.user.isDefined){<a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>}
-    <a id="next_question">Next question &rarr;</a>
-</div>
+    <div id="prev_next_question" style="margin: 0 auto; text-align: center;">
+        <a id="prev_question">&larr; Previous question</a>
+        @if(context.user.isDefined){
+            <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>
+        }
+        <a id="next_question">Next question &rarr;</a>
+    </div>
 
     <br>
 
@@ -131,30 +132,32 @@
                 } else {-}
             </div>
         </div>
+
         <div>@Html(stmt)</div>
     </div>
+
     @if(editable){
-    <div class="latex_edit_area" id="statement_html_edit">
-        <div class="latex_box">
-            @latexbuttons
-            <textarea>@Html(stmt)</textarea>
-            <div class="latex_edit_render_area"></div>
-            <div>
-                <button class="render_button">render</button>
-                <button class="submit_button">submit changes</button>
+        <div class="latex_edit_area" id="statement_html_edit">
+            <div class="latex_box">
+                @latexbuttons
+                <textarea>@Html(stmt)</textarea>
+                <div class="latex_edit_render_area"></div>
+                <div>
+                    <button class="render_button">render</button>
+                    <button class="submit_button">submit changes</button>
+                </div>
             </div>
         </div>
-    </div>
     }
 
     @if(!editable){
         <div class="message">
         Make sure you understand the problem fully: 
         <ul>
-        <li>What is the question asking you to do? 
-        <li>Are there specific conditions or constraints that you should take note of?</li>
-        <li>How will you know if your answer is correct from your work only? </li>
-        <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
+            <li>What is the question asking you to do? 
+            <li>Are there specific conditions or constraints that you should take note of?</li>
+            <li>How will you know if your answer is correct from your work only? </li>
+            <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
         </ul>
 
         If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
@@ -164,6 +167,7 @@
     @for( (h, ind) <- hints.zipWithIndex ) {
         <div class="main_box @if(!editable){hideable_box}">
             <div class="box_title">Hint @if(ind > 0){(@{ind+1})}</div>
+
             <div>@Html(h)</div>
         </div>
         @if(editable){
@@ -183,17 +187,19 @@
 
     @if(!editable){
         <div class="message">Checking a solution serves two purposes:
-        <ul>
-            <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
-            <li>if you have solved the problem and would like to check your work. </li>
-        </ul>
+            <ul>
+                <li>Helping you if, after having used the hint, you still are stuck on the problem or... </li> 
+                <li>if you have solved the problem and would like to check your work. </li>
+            </ul>
         </div>
     }
 
     <div class="main_box @if(!editable){hideable_box}">
         <div class="box_title">Final answer</div>
+
         <div>@Html(answer)</div>
     </div>
+
     @if(editable){
         <div class="latex_edit_area" id=@("answer_html_edit")>
             <div class="latex_box">
@@ -207,19 +213,20 @@
             </div>
         </div>
     }
-</div>
-}
 
-@if(editable){
-    <div>
-    Upload image:
-    @helper.form(action = routes.QuestionController.upload(context.request.path), 'enctype -> "multipart/form-data") {
-        <input type="file" name="file"><input type="submit">
+
+    @if(editable){
+        <div>
+            Upload image:
+            @helper.form(action = routes.QuestionController.upload(context.request.path), 'enctype -> "multipart/form-data") {
+                <input type="file" name="file"><input type="submit">
+            }
     }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
         <div class="main_box @if(!editable){hideable_box}">
             <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
+
             <div>@Html(s)</div>
         </div>
         @if(editable){
@@ -238,17 +245,17 @@
     }
 
 
-<div id="question_topics" style="width: 90%;">
-    Topics
-    <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
-</div>
+    <div id="question_topics" style="width: 90%;">
+        Topics
+        <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
+    </div>
 
 
-<div id="question_rating">
-    <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
-    @if(!context.user.isDefined){data-disabled="true"}>
-    <!-- see http://plugins.krajee.com/star-rating/demo -->
-</div>
+    <div id="question_rating">
+        <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
+        @if(!context.user.isDefined){data-disabled="true"}>
+        <!-- see http://plugins.krajee.com/star-rating/demo -->
+    </div>
 
     @if(solvers){
         This question was solved by <Strong>@solvers.mkString(", ")</Strong>
@@ -267,128 +274,128 @@
 
 <script>
 $(document).ready(function(){
-$("#my_rating").rating({
-    stars: 10,
-    min: 0,
-    max: 10,
-    step: 1,
-    starCaptions: {1: "Impossible", 2: "Very difficult", 3: "Difficult", 4: "A little difficult",
-                   5: "A good challenge", 6: "OK", 7: "Relatively simple", 8: "Simple", 9: "Very simple",
-                   10: "Aced it"},
-    starCaptionClasses: {1: "text-danger", 2: "text-danger",
-                         3: "text-warning", 4: "text-warning",
-                         5: "text-info", 6: "text-info",
-                         7: "text-primary", 8: "text-primary",
-                         9: "text-success", 10: "text-success"}
+    $("#my_rating").rating({
+        stars: 10,
+        min: 0,
+        max: 10,
+        step: 1,
+        starCaptions: {1: "Impossible", 2: "Very difficult", 3: "Difficult", 4: "A little difficult",
+                       5: "A good challenge", 6: "OK", 7: "Relatively simple", 8: "Simple", 9: "Very simple",
+                       10: "Aced it"},
+        starCaptionClasses: {1: "text-danger", 2: "text-danger",
+                             3: "text-warning", 4: "text-warning",
+                             5: "text-info", 6: "text-info",
+                             7: "text-primary", 8: "text-primary",
+                             9: "text-success", 10: "text-success"}
     });
-$('#my_rating').on('rating.change', function(event, value, caption) {
-    debugger;
-    console.log(value);
-    console.log(caption);
-    $.ajax({
-      type: 'POST',
-      url: window.location.pathname + "/vote/" + value,
-      success: function(d){
-        debugger;
-        $("span.easiness_rating")[0].textContent = d.rating + "%";
-        $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
-      },
-      error: function(obj, st, err){
-        alert(err);
-      }
-    });
-});
 
-var topicsCache = [];
-$(".question_tags").select2({
-<<<<<<< HEAD
-  tags: true,
-  tokenSeparators: [",", " "],
-  minimumInputLength: 1,
-  text: function(obj){
-    return obj.topic;
-  },
-  createSearchChoice: function(term, data) {
-    if ($(data).filter(function() {
-      return this.text.localeCompare(term) === 0;
-    }).length === 0) {
-      return {
-        id: term,
-        text: term
-      };
-    }
-  },
-  multiple: true,
-  ajax: {
-    url: '/topics/search',
-    dataType: "json",
-    data: function(term, page) {
-      return {
-        q: term
-      };
-    },
-    results: function(data) {
-      for (var i = 0; i<data.length; i++) {
-          data[i].id = i;
-     }
-      return {
-        results: data
-      };
-    },
-    multiple: true,
-    data:{ results: topicsCache},
-    initSelection: function (element, callback) {
-        var data = [];
-        $(element.val().split(",")).each(function () {
-            data.push({id: this, text: this});
-        });
-        callback(data);
-    }
-})
-.on("select2-opening", function(e){
-    if (topicsCache.length === 0) {
+    $('#my_rating').on('rating.change', function(event, value, caption) {
+        debugger;
+        console.log(value);
+        console.log(caption);
         $.ajax({
-            url: '/topics/search',
-            dataType: "json",
-            data: { q:"" },
-            success: function(data) {
-              for (var i = 0; i<data.length; i++) {
-                  topicsCache.push({text: data[i].topic, id: i});
-              }
-            }
-        })
-    }
-})
-.on("select2-selecting", function(e){
-	var newTag = e.choice.text;
-	console.log(newTag);
-	$.ajax({
-        type: 'POST',
-        url: window.location.pathname + "/addtopic/" + newTag,
-        success: function(d){
+          type: 'POST',
+          url: window.location.pathname + "/vote/" + value,
+          success: function(d){
             debugger;
-            $(".question_tags");
-            console.log("added new tag");
-        },
-        error: function(obj, st, err){
-            alert(err + "\n" + obj.responseText);
+            $("span.easiness_rating")[0].textContent = d.rating + "%";
+            $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
+          },
+          error: function(obj, st, err){
+            alert(err);
+          }
+        });
+    });
+
+    var topicsCache = [];
+    $(".question_tags").select2({
+      tags: true,
+      tokenSeparators: [","],
+      minimumInputLength: 1,
+      text: function(obj){
+        return obj.topic;
+      },
+      createSearchChoice: function(term, data) {
+        if ($(data).filter(function() {
+          return this.text.localeCompare(term) === 0;
+        }).length === 0) {
+          return {
+            id: term,
+            text: term
+          };
         }
-	})
-})
-.on("select2-removing",function(e){
-    var removedTag = e.choice.text;
-    console.log("removing tag " + removedTag);
-    $.ajax({
-        type: 'POST',
-        url: window.location.pathname + "/removetopic/" + removedTag,
-        success: function(d){
-            console.log("removed tag");
+      },
+      multiple: true,
+      ajax: {
+        url: '/topics/search',
+        dataType: "json",
+        data: function(term, page) {
+          return {
+            q: term
+          };
         },
-        error: function(obj, st, err){
-            alert(err + "\n" + obj.responseText);
+        results: function(data) {
+          for (var i = 0; i<data.length; i++) {
+              data[i].id = i;
+         }
+          return {
+            results: data
+          };
+        },
+        multiple: true,
+        data:{ results: topicsCache},
+        initSelection: function (element, callback) {
+            var data = [];
+            $(element.val().split(",")).each(function () {
+                data.push({id: this, text: this});
+            });
+            callback(data);
         }
     })
-});
+    .on("select2-opening", function(e){
+        if (topicsCache.length === 0) {
+            $.ajax({
+                url: '/topics/search',
+                dataType: "json",
+                data: { q:"" },
+                success: function(data) {
+                  for (var i = 0; i<data.length; i++) {
+                      topicsCache.push({text: data[i].topic, id: i});
+                  }
+                }
+            })
+        }
+    })
+    .on("select2-selecting", function(e){
+        var newTag = e.choice.text;
+        console.log(newTag);
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/addtopic/" + newTag,
+            success: function(d){
+                debugger;
+                $(".question_tags");
+                console.log("added new tag");
+            },
+            error: function(obj, st, err){
+                alert(err + "\n" + obj.responseText);
+            }
+        })
+    })
+    .on("select2-removing",function(e){
+        var removedTag = e.choice.text;
+        console.log("removing tag " + removedTag);
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/removetopic/" + removedTag,
+            success: function(d){
+                console.log("removed tag");
+            },
+            error: function(obj, st, err){
+                alert(err + "\n" + obj.responseText);
+            }
+        })
+    });
+    };
 });
 </script>
-}

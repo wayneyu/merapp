@@ -1,20 +1,17 @@
 #banner{
     color: #000;
     width: 100%;
-    background:#2F4F4F;
-    position:relative;
+    background: #2F4F4F;
+    position: relative;
 }
 
 body {
     height: 100%;
 }
 
-#abc {
-    text-color: red;
-}
 #wrap
 {
-    min-height: 100%;
+    overflow: hidden;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -26,13 +23,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 #main {
-  overflow:auto;
-  padding-bottom:250px; /* this needs to be bigger than footer height*/
-  padding-top:42px; /* this needs to be bigger than footer height*/
+  overflow: hidden;
+  padding-bottom: 250px; /* this needs to be bigger than footer height*/
+  padding-top: 42px; /* this needs to be bigger than footer height*/
 }
 
 
@@ -49,27 +46,27 @@ body {
 
 h1{
 	padding-bottom: 0.5em
-	color:#2F4F4F;
+	color: #2F4F4F;
 /*	border-top: 3px solid #2F4F4F; */
 }
 
 h2{
-	color:#7491A3;
+	color: #7491A3;
 	margin-top: 2em;
 	/*border-top: 1px solid #7491A3;*/
 }
 
 a{
-	color:#7491A3;
+	color: #7491A3;
 	text-decoration: none;
 }
 
 a:hover{
-	color:#96B3C5;
+	color: #96B3C5;
 }
 
 ul{
-	list-style-type:none;
+	list-style-type: none;
 }
 
 th{
@@ -101,7 +98,7 @@ th{
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 #nav li {
@@ -157,6 +154,7 @@ th{
 #user{
     text-decoration: underline;
 }
+
 #login{
     left-margin: 2em;
 }
@@ -200,7 +198,7 @@ th{
 }
 
 #mascot{
-   height:150px;
+   height: 150px;
    display: block;
    margin-left: auto;
    margin-right: auto

@@ -271,18 +271,17 @@
 <script>
 $(document).ready(function(){
 $("#my_rating").rating({
-    stars: 10,
+    stars: 5,
     min: 0,
-    max: 10,
+    max: 5,
     step: 1,
-    starCaptions: {1: "Impossible", 2: "Very difficult", 3: "Difficult", 4: "A little difficult",
-                   5: "A good challenge", 6: "OK", 7: "Relatively simple", 8: "Simple", 9: "Very simple",
-                   10: "Aced it"},
-    starCaptionClasses: {1: "text-danger", 2: "text-danger",
-                         3: "text-warning", 4: "text-warning",
-                         5: "text-info", 6: "text-info",
-                         7: "text-primary", 8: "text-primary",
-                         9: "text-success", 10: "text-success"}
+    starCaptions: {1: "Way over my head", 2: "Difficult", 3: "A good challenge", 4: "Relatively simple",
+                   5: "Easy as &pi;"},
+    starCaptionClasses: {1: "text-danger",
+                         2: "text-warning",
+                         3: "text-info",
+                         4: "text-primary",
+                         5: "text-success"}
 });
 
 var topicsCache = [];

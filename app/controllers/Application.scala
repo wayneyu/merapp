@@ -1,6 +1,7 @@
 package controllers
 
 import play.Routes
+import play.api.cache.Cached
 import play.api.{Logger, Play}
 import play.api.libs.json.Json
 import securesocial.core.{RuntimeEnvironment, SecureSocial}
@@ -15,15 +16,21 @@ import scala.concurrent.Future
 
 object Application extends ServiceComponent {
 
-  def index = UserAwaredAction.async { implicit context =>
-    Future(Ok(views.html.index()))
+  def index = Cached(routes.Application.index().url) {
+	  UserAwaredAction.async { implicit context =>
+		  Future(Ok(views.html.index()))
+	  }
   }
 
-  def team = UserAwaredAction.async { implicit context =>
-    Future(Ok(views.html.team()))
+  def team = Cached(routes.Application.team().url) {
+	  UserAwaredAction.async { implicit context =>
+		  Future(Ok(views.html.team()))
+	  }
   }
 
-  def questions = QuestionController.questions()
+  def questions = Cached(routes.Application.questions().url) {
+	  QuestionController.questions()
+  }
 
   def editor = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.editor()))
@@ -33,9 +40,13 @@ object Application extends ServiceComponent {
     Future(Ok(views.html.search(List())))
   }
 
-  def exams = QuestionController.exams()
+  def exams = Cached(routes.Application.exams().url) {
+	  QuestionController.exams()
+  }
 
-  def topics = TopicController.topics()
+  def topics = Cached(routes.Application.topics().url) {
+	  TopicController.topics()
+  }
 
   def javascriptRoutes = Action { implicit request =>
     Logger.debug("javascriptRoutes: ")
@@ -43,6 +54,4 @@ object Application extends ServiceComponent {
       Routes.javascriptRouter("jsRoutes")
     ).as("text/javascript")
   }
-
-
 }

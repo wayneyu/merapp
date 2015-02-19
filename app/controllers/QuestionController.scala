@@ -3,7 +3,9 @@ package controllers
 import java.util.{Calendar, Date}
 
 import models._
-import play.api._
+import play.api.Logger
+import play.api.Play.current
+import play.api.cache.Cached
 import play.api.libs.Files.TemporaryFile
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json._
@@ -151,10 +153,12 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
-	def searchByKeywords(searchString: String) = UserAwaredAction.async { implicit context =>
-		val res = searchByKeywordsQuery(searchString)
-		res.map { l =>
-			Ok(views.html.search(l.map(e => e.as[SearchResult])))
+	def searchByKeywords(searchString: String) = Cached(routes.QuestionController.searchByKeywords(searchString).url) {
+		UserAwaredAction.async { implicit context =>
+			val res = searchByKeywordsQuery(searchString)
+			res.map { l =>
+				Ok(views.html.search(l.map(e => e.as[SearchResult])))
+			}
 		}
 	}
 

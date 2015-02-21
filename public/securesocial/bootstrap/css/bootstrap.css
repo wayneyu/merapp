@@ -3189,11 +3189,12 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a {
   display: block;
+  color:black;
 }
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #ffeeee;
 }
 
 .nav > .pull-right {
@@ -3523,7 +3524,7 @@ input[type="submit"].btn.btn-mini {
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
   border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
+  *border-right-color: #ff0000;
 }
 
 .tabs-right > .nav-tabs {

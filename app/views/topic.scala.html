@@ -3,6 +3,7 @@
 @name = @{topic.topic.replace("_"," ")}
 @main(name){
 <div class="white_background_box_90">
+<div>
     <h1>Related questions</h1>
     
     @if(questions.isEmpty){
@@ -21,7 +22,8 @@
         }
         </table>
     }
-
+    </div>
+    <div>
     <h1>Additional content</h1>
     @if(topic.contents.isEmpty){
         <p>No additional content yet. Feel free to recommend a source to us.</p>
@@ -38,5 +40,6 @@
             </div>
         }
     }
+    </div>
 </div>
 }

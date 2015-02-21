@@ -24,11 +24,11 @@ body {
   font-weight: 300;
   font-size: 20pt;
   color: #FFFFFF;
-  background: #2F4F4F;
+  background: #7491A3;
 }
 
 .hideable_box>.box_title:hover {
-  background-color: #3F5F5F;
+  background-color: #96B3C5;
 }
 
 .box_title, .box_title+div, .latex_edit_render_area {
@@ -211,7 +211,26 @@ background-color: #eeeeee;
 }
 
 #question_topics {
-   margin-left: auto;
-   margin-right: auto;
    width: 50%;
+   position:absolute; 
+   left:0;
+}
+
+#question_rating {
+   width: 45%;  
+   position:absolute; 
+   right:0; 
+   text-align: right;
+}
+
+.question_bottom_box{
+  position:relative;
+  height: 60px;
+}
+
+.easiness_rating_box{
+  float:right; 
+  text-align: right;
+  font-size: 20pt; 
+  color: #FFFFFF;
 }

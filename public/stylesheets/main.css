@@ -17,7 +17,8 @@ body {
     height: 100%;
     /* Negative indent footer by it's height */
     margin: 0 auto -60px;
-    background: url('../images/maths-beautiful-pictures-hd-quality-190476-bright.jpg');
+    /*background: url('../images/maths-beautiful-pictures-hd-quality-190476.jpg');*/
+    background: #FFFFFF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,14 +28,16 @@ body {
 }
 
 #main {
-  overflow: hidden;
-  padding-bottom: 250px; /* this needs to be bigger than footer height*/
-  padding-top: 42px; /* this needs to be bigger than footer height*/
+    overflow: hidden;
+    padding-bottom: 100px; /* this needs to be bigger than footer height*/
+    padding-top: 42px; /* this needs to be bigger than footer height*/
+    background-color: #DDDDDD;
 }
 
 
 #footer {
-    background: url('../images/chalkboard-black.jpg');
+    /*background: url('../images/chalkboard-black.jpg');*/
+    /*background: #666666;*/
 }
 
 
@@ -70,29 +73,25 @@ ul{
 }
 
 th{
-    font-size: 16pt;
+    font-size: 18pt;
     padding-left: 0.25em;
     padding-right: 0.25em;
     text-align: left;
-    background: #2F4F4F;
+    background: #7491A3;
     color: #FFFFFF;
 }
-
-/*.wrapper ul {
-    margin: 0;
-    padding: 0;
-}*/
 
 #nav {
     display: table;
     table-layout: fixed;
-    text-align: right;
+    text-align: left;
     margin-bottom: 0px;
     margin-left: 0px;
 }
 
 #nav_top {
-    background: url('../images/chalkboard-black.jpg');
+    /*background: url('../images/chalkboard-black.jpg');*/
+    background: #FFFFFF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -107,6 +106,7 @@ th{
     height: auto;
     vertical-align: bottom;
     list-style-type: none;
+    background-color: #444400;
 }
 
 #nav a:not(#user):not(#login) {
@@ -114,13 +114,13 @@ th{
     min-height: 100%;
     padding: 4px 10px;
     background-color: #2F4F4F;
-    color: white;
+    color: black;
     border-radius: 6px 6px 0 0;
 }
 
 .white_background_box {
     margin-top: 35px;
-    border: 2px solid;
+    border: 1px solid #CCCCCC;
     border-radius: 25px;
     padding: 5px;
     padding-top: 8px;
@@ -132,7 +132,7 @@ th{
 .white_background_box_90 {
     width: 90%;
     margin-top: 35px;
-    border: 2px solid;
+    border: 1px solid #CCCCCC;
     border-radius: 25px;
     padding: 20px;
     padding-top: 8px;

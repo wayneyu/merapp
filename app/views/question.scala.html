@@ -124,12 +124,11 @@
     <div class="main_box">
         <div class="box_title">
             @q
-            <div style="float:right; text-align: right; font-size: 12px; color: #000000; background-color: #FFFFFF;">
+            <div class="easiness_rating_box">
                 @if(num_votes > 0){
                     Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span>
-                    <br>
                     <span class="num_votes">(@num_votes @if(num_votes > 1){votes} else {vote})</span>
-                } else {-}
+                } else {}
             </div>
         </div>
 
@@ -243,27 +242,29 @@
         </div>
     }
 
-    <div id="question_topics" style="width: 90%;">
-        Topics
-        <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
+    <div class="question_bottom_box">
+        <div id="question_topics" style="width: 50%;  position:absolute; left:0;">
+            Topics
+            <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
+        </div>
+        <div id="question_rating" style="width: 45%;  position:absolute; right:0; text-align: right;">
+            <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
+            @if(!context.user.isDefined){data-disabled="true"}>
+            <!-- see http://plugins.krajee.com/star-rating/demo -->
+        </div>
     </div>
-
-    <div id="question_rating">
-        <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
-        @if(!context.user.isDefined){data-disabled="true"}>
-        <!-- see http://plugins.krajee.com/star-rating/demo -->
-    </div>
-
     @if(solvers){
+        <div style="text-align: right; margin-top:10px;">
         This question was solved by <Strong>@solvers.mkString(", ")</Strong>
             @if(contributors) {
-                with the help of <em>@contributors.mkString(", ")</em>.
+                with the help of <em>@contributors.mkString(", ")</em>.</div>
             } else {.}
     } else {
         @if(contributors) {
             The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
         }
     }
+    
 
 </div>
 }

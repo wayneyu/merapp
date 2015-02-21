@@ -1,13 +1,13 @@
 @(allcourses: Seq[String], allyears: Seq[String], exams: Seq[(String, String, String)])(implicit context: service.AppContext[AnyContent])
 @main("Exams"){
 <div class="white_background_box_90">
-    <div class="questionsDiv" style="font-size: 15pt;">
-        <table id="qtable">
+    <div class="questionsDiv">
+        <!-- <table id="qtable" style="margin-left:auto; margin-right:auto;">
             <thead>
                 <tr id="vehicles">
                 <th></th>
                 @for( y <- allyears){
-                    <th id="year">@y</th>
+                    <th id="year" style="text-align:center;">@y</th>
                 }
                </tr>
             </thead>
@@ -32,7 +32,24 @@
                 </tr>
             }
             </tbody>
-        </table>
+        </table> -->
+        @for(c <- allcourses){
+            <div style="display:inline-block; margin: 0.25em; vertical-align:top; border: 1px solid #DDDDDD;">
+            <a href="@routes.QuestionController.course(c)"><h3 style="background: #7491A3; color: #FFFFFF; margin:0; padding: 0.25em;">@c</h3></a><br>
+            <div style="padding: 0em 1em 1em 1em;">
+            @for( y <- allyears ){
+                            @if( exams.contains( (c, y, "December") ) ){
+                                <a href="@routes.QuestionController.exam(c, "December_"+y)">Dec @y</a><br>
+                            }
+                            @if( exams.contains( (c, y, "April") )){
+                                <a href="@routes.QuestionController.exam(c, "April_"+y)">Apr @y</a><br>
+                            }
+                    }
+
+            </div>
+            </div>
+
+        }
     </div>
 </div>
 }

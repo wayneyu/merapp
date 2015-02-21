@@ -41,14 +41,14 @@
     <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/star-rating.min.js")" type="text/javascript"></script>
 
-    <link rel="icon" href="@routes.Assets.at("/images/MERS_penguin_3.png")"/>
+    <link rel="icon" href="@routes.Assets.at("/images/MERS_penguin_3_face.png")"/>
 
 </head>
 
 <body>
     <div id="wrap">
         <div id="main">
-            <ul class="nav nav-tabs navbar-fixed-top tabs-right" id="nav_top" style="border-top: 5px solid #DD3355; border-bottom: 5px solid #DD3355;">
+            <ul class="nav nav-tabs navbar-fixed-top tabs-right" id="nav_top" style="border-top: 5px solid #DD3355;">
                 <li><div style="width: 120pt;">&nbsp;</div></li>
                 <li>@user match {
                         case Some(u) => {
@@ -82,7 +82,7 @@
     </div>
         
     <div id="footer">
-        <ul class="nav nav-tabs" id="nav_bottom" style="border-top: 5px solid #DD3355; border-bottom: 5px solid #DD3355;">
+        <ul class="nav nav-tabs" id="nav_bottom" style="border-top: 5px solid #DD3355;">
             <li><div style="width: 120pt;">&nbsp;</div></li>
             <li><a href="http://goo.gl/forms/rru68Ci0mH" id="feedback">GIVE FEEDBACK</a></li>
             <li><a href=@routes.Application.team>About Us</a></li>

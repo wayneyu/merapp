@@ -2,10 +2,7 @@
 
 @main(course.replace("MATH", "MATH ") + " " + term_year.replace("_", " ")){
 <div class="white_background_box_90">
-    <h2>Questions available</h2>
-
-    Average easiness: <span class="exam_easiness easiness_rating"></span> (total of <span class="rating_count">0</span> votes).<br><br>
-
+    <div style="width:100%;"><h2 style="display:inline-block; width:50%;">Questions available</h2><div style="display:inline-block; text-align:right; width:50%;">Average easiness: <span class="exam_easiness easiness_rating"></span><br>(total of <span class="rating_count">0</span> votes).</div></div>
     <ul id="exam_questions_list" class="exam_questions_list">
         @for( question <- questions ){
             <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>

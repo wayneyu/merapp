@@ -213,14 +213,14 @@ background-color: #eeeeee;
 #question_topics {
    width: 50%;
    position:absolute; 
-   left:0;
+   right:0;
 }
 
 #question_rating {
    width: 45%;  
    position:absolute; 
-   right:0; 
-   text-align: right;
+   left:0; 
+   text-align: left;
 }
 
 .question_bottom_box{

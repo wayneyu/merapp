@@ -243,14 +243,14 @@
     }
 
     <div class="question_bottom_box">
-        <div id="question_topics" style="width: 50%;  position:absolute; left:0;">
-            Topics
-            <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
-        </div>
-        <div id="question_rating" style="width: 45%;  position:absolute; right:0; text-align: right;">
+    	<div id="question_rating" style="width: 45%;">
             <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
             @if(!context.user.isDefined){data-disabled="true"}>
             <!-- see http://plugins.krajee.com/star-rating/demo -->
+        </div>
+        <div id="question_topics" style="width: 50%;">
+            Topics
+            <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
         </div>
     </div>
     @if(solvers){

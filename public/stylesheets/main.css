@@ -13,6 +13,7 @@ body {
 {
     overflow: hidden;
     min-height: 100%;
+    min-width:800px;
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */

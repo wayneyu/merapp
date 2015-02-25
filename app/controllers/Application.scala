@@ -19,6 +19,10 @@ object Application extends ServiceComponent {
     Future(Ok(views.html.index()))
   }
 
+  def indexAB = UserAwaredAction.async { implicit context =>
+    Future(Ok(views.html.indexAB()))
+  }
+
   def team = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.team()))
   }

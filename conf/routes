@@ -3,12 +3,15 @@
 # ~~~~
 
 # Home page
-GET    /                           controllers.Application.index
+GET    /                                                controllers.Application.index
+
+# For A/B testing, see https://github.com/wayneyu/merapp/issues/97
+GET    /indexAB                                         controllers.Application.indexAB
 
 # Team member page (Static)
-GET    /team                       controllers.Application.team
+GET    /team                                            controllers.Application.team
 
-# GET    /editor          controllers.Application.editor
+# GET    /editor                                          controllers.Application.editor
 
 GET    /questions                                       controllers.Application.questions
 GET    /questions/search                                controllers.Application.search

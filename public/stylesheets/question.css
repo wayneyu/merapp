@@ -211,21 +211,21 @@ background-color: #eeeeee;
 }
 
 #question_topics {
-   width: 50%;
-   position:absolute; 
-   right:0;
+   width: 49%;
+   /*position:absolute; 
+   right:0;*/
 }
 
 #question_rating {
-   width: 45%;  
-   position:absolute; 
-   left:0; 
+   width: 49%;  
+   /*position:absolute; 
+   left:0; */
    text-align: left;
 }
 
 .question_bottom_box{
-  position:relative;
-  height: 60px;
+  /*position:relative;
+  height: 60px;*/
 }
 
 .easiness_rating_box{

@@ -1,9 +1,6 @@
-This is your new Play application
+Math Educational Resources
 =================================
 
-[Deployed on heroku](http://merapp.herokuapp.com/)
+Welcome to the Math Educational Resources! This repository is served on the our [webapp on heroku](http://merapp.herokuapp.com/).
 
-This file will be packaged with your application, when using `activator dist`.
-
-
-We now have issues.
+[![Stories in Ready](https://badge.waffle.io/wayneyu/merapp.png?label=ready&title=Ready)](http://waffle.io/wayneyu/merapp) Task management from [waffle.io](https://waffle.io/).

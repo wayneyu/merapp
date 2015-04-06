@@ -85,12 +85,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 <li><a href=@routes.Application.exams>Exams</a></li>
                 <li><a href=@routes.Application.questions>Questions</a></li>
             </ul>
-        <div class="row" style="background:#7491A3; height: 150px;">
-            <div class="col-md-1"></div>
-            <div class="col-md-2">
+        <div class="row" style="background:#7491A3; height: 150px; padding-left:50px; width:2000px;">
+            <div style="display:inline; border: 0px dashed #0000FF;">
                 <a href="@routes.Application.index" title="Science:Math Education Resources"><img id="mascot" alt="MER penguin" src="@routes.Assets.at("images/MERS_penguin_3_right.png")"></a>
             </div>
-            <div class="col-md-7" style="height: 100%; vertical-align: middle;"> <div style="vertical-align: middle; color: white; font-size: 40pt; padding-top: 40px;"><Strong>@title</Strong></div></div>
+            <div style="display:inline; vertical-align: middle; color: white; font-size: 40pt; font-weight:400; padding-top: 0px; border: 0px dashed #FF00FF;">
+                @title
+            </div>
+            <!--</div>-->
         </div>
 
         <div id="content_container">

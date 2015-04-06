@@ -248,9 +248,10 @@
             @if(!context.user.isDefined){data-disabled="true"}>
             <!-- see http://plugins.krajee.com/star-rating/demo -->
         </div>
-        <div id="question_topics" style="display:inline-block;">
-            Topics
-            <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
+        <div style="display:inline-block; width: 49%; text-align: top;">
+            <b>Need more help?</b><br> <!--Visit the <a href="http://www.math.ubc.ca/~MLC/">Math Learning Centre</a> in LSK 301/302 to get help from Math Graduate student TAs or let us help you <a href="https://docs.google.com/forms/d/1nV32JI4R3Mp96lYtLIpNEE-LB_T-fEHz-8lfAZXd430/viewform">find a private tutor</a>. -->
+            <div style="display:inline-block; width:49%; background: #7491A3; border: 1px solid #DD3355; padding: 1em; text-align: center;"><a style="font-weight: bold; color:white" href="http://www.math.ubc.ca/~MLC/">Math Learning Centre</a></div>
+            <div style="display:inline-block; width:49%; background: #7491A3; border: 1px solid #DD3355; padding: 1em; text-align: center;"><a style="font-weight: bold; color:white" href="https://docs.google.com/forms/d/1nV32JI4R3Mp96lYtLIpNEE-LB_T-fEHz-8lfAZXd430/viewform">Find a private tutor</a></div>
         </div><br>
         @if(solvers){
         <div style="display:inline-block; width: 49%;">
@@ -263,8 +264,9 @@
             The following people have worked on this question: <em>@contributors.mkString(", ")</em>.
         }
     }
-        <div style="display:inline-block; width: 49%;">
-        <b>Need more help?</b> Visit the <a href="http://www.math.ubc.ca/~MLC/">Math Learning Centre</a> in LSK 301/302 to get help from Math Graduate student TAs or let us help you <a href="https://docs.google.com/forms/d/1nV32JI4R3Mp96lYtLIpNEE-LB_T-fEHz-8lfAZXd430/viewform">find a private tutor</a>.
+        <div id="question_topics" style="display:inline-block;">
+            <b>Question Tags</b>
+            <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
         </div>
     </div>
     

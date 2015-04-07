@@ -16,15 +16,11 @@ clean:
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-## correct image path in html version
-correct_image_path:
-	find json_data -type f -name *.json -print0 | xargs -0 sed -i 's:\"\.\./json_data/MATH:\"/assets/raw_database/json_data/MATH:g'
-
 ## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
 upload_mongo_only:
 	mongodump --db merdb --collection questions --out ~/tmp
 	mongodump --db merdb --collection topics --out ~/tmp
-	mongorestore --username $(MERWEBAPP_MONGODB_USERNAME) --password $(MERWEBAPP_MONGODB_PASS) --host $(MERWEBAPP_MONGODB_HOST) --db $(MERWEBAPP_MONGODB_USERNAME) ~/tmp/merdb/ --drop
+	mongorestore --username $(MONGOLAB_USERNAME) --password $(MONGOLAB_PASSWORD) --host $(MONGOLAB_HOST) --db $(MONGOLAB_DB) ~/tmp/merdb/ --drop
 
 ## upload_mongo: updates online mongo db from local mongo db
 upload_mongo: update_mongo_locally upload_mongo_only

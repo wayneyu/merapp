@@ -55,7 +55,7 @@ object Question {
     def read(doc: BSONDocument): Question = {
       Question(
         doc.getAs[String]("course").get,
-        doc.getAs[Double]("year").get.toInt,
+        doc.getAs[Int]("year").get,
         doc.getAs[String]("term").get,
         doc.getAs[String]("question").get,
         doc.getAs[String]("statement_html").get,
@@ -64,8 +64,8 @@ object Question {
         doc.getAs[String]("answer_html").get,
         doc.getAs[List[String]]("topics").getOrElse(Nil),
         doc.getAs[List[String]]("solvers").getOrElse(Nil),
-        doc.getAs[Double]("rating").get,
-        doc.getAs[Double]("num_votes").get.toInt,
+        doc.getAs[Double]("rating").getOrElse(-1),
+        doc.getAs[Int]("num_votes").get,
         doc.getAs[List[String]]("flags").getOrElse(Nil),
         doc.getAs[List[String]]("contributors").getOrElse(Nil)
       )

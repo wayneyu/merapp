@@ -17,7 +17,7 @@
         @for(q <- questions){
             <tr>
                 <td style="padding-right: 1em;"><a href="@q.url">@q.link</a></td> 
-                <td align="left">@if(q.num_votes > 0){<span class="easiness_rating" title="@q.num_votes">@(Math.floor(q.rating*10)/10.toDouble)</span> (@q.num_votes votes)}else{<font style="color:#AAAAAA;">unrated</font>} </td>
+                <td align="left">@if(q.num_votes > 0){<span class="easiness_rating" title="@q.num_votes">@(Math.floor(q.rating*10)/10.toDouble)</span> <span class="num_votes">(@q.num_votes @if(q.num_votes > 1){votes} else {vote})</span>}else{<font style="color:#AAAAAA;">unrated</font>} </td>
             </tr>
         }
         </table>

@@ -145,7 +145,7 @@ object QuestionController extends ServiceComponent with MongoController {
 			Logger.debug(topics mkString ",")
 			Ok(views.html.course(course,
 				exams.map {
-					d => d.getAs[String]("term").get + "_" + d.getAs[Double]("year").get.toInt.toString
+					d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
 				}.toList, topics, num_questions
 			))
 		}
@@ -232,19 +232,19 @@ object QuestionController extends ServiceComponent with MongoController {
 
 	def distinctYears(): Future[List[String]] = {
 		MongoDAO.distinctYears().map {
-			st => st.map(d => d.getAs[Double]("year").get.toInt.toString).toList
+			st => st.map(d => d.getAs[Int]("year").get.toString).toList
 		}
 	}
 
 	def distinctYears(course: String): Future[List[String]] = {
 		MongoDAO.distinctYears(course).map {
-			st => st.map(d => d.getAs[Double]("year").get.toInt.toString()).toList
+			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
 		}
 	}
 
 	def distinctYears(course: String, term: String): Future[List[String]] = {
 		MongoDAO.distinctYears(course, term).map {
-			st => st.map(d => d.getAs[Double]("year").get.toInt.toString()).toList
+			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
 		}
 	}
 
@@ -393,7 +393,7 @@ object QuestionController extends ServiceComponent with MongoController {
 	def distinctExams(): Future[List[(String, String, String)]] = {
 		MongoDAO.distinctExams().map {
 			st => st.map(
-				d => (d.getAs[String]("course").get, d.getAs[Double]("year").get.toInt.toString, d.getAs[String]("term").get)
+				d => (d.getAs[String]("course").get, d.getAs[Int]("year").get.toString, d.getAs[String]("term").get)
 			).toList
 		}
 	}

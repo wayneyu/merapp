@@ -126,7 +126,7 @@
             @q
             <div class="easiness_rating_box">
                 @if(num_votes > 0){
-                    Easiness: <span class="easiness_rating" title=@num_votes>@rating%</span>
+                    Easiness: <span class="easiness_rating" title=@num_votes>@(Math.round(rating*10)/10.toDouble)/5</span>
                     <span class="num_votes">(@num_votes @if(num_votes > 1){votes} else {vote})</span>
                 } else {}
             </div>

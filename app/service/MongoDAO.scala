@@ -465,9 +465,9 @@ object MongoDAO extends Controller with MongoController {
 			case Some(v) =>
 				if (!v.qid.equals(vote.qid) || !v.userid.equals(vote.userid))
 					throw new IllegalArgumentException("updateQuestionRating, lastVote: " + lastVote + " vote: " + vote)
-				db.command(command(0, (oldTotalRating + 10*(vote.rating - v.rating))/q.num_votes))
+				db.command(command(0, 1)) // FIXME!! WORKING WITH DOUBLES NOW (oldTotalRating + 10*(vote.rating - v.rating))/q.num_votes))
 			case None =>
-				db.command(command(1, (oldTotalRating + 10*vote.rating)/(q.num_votes + 1)))
+				db.command(command(1, 1)) // FIXME!! WORKING WITH DOUBLES NOW (oldTotalRating + 10*vote.rating)/(q.num_votes + 1)))
 		}
 
 		res onComplete {

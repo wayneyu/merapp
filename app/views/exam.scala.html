@@ -8,7 +8,7 @@
             <li class="exam_question"><a href="@routes.QuestionController.question(course, term_year, question.question)">@question.question</a>
                 <span class="question_easiness easiness_rating" title=@question.num_votes>
                     @if(question.num_votes > 0){
-                        @question.rating%
+                        @(Math.round(question.rating * 10)/10.toDouble)/5
                     } else {
                         -
                     }
@@ -29,7 +29,7 @@
             total_ratings += parseInt($(this).attr("title"));
         }
     });
-    $(".exam_easiness").text(Math.round(total_easiness/num_rated_questions) + "%");
+    $(".exam_easiness").text(Math.round(10*total_easiness/num_rated_questions)/10 + "/5");
     $(".rating_count").text(total_ratings);
 </script>
 }

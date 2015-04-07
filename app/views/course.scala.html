@@ -9,13 +9,12 @@
                     <th style="padding-left:0.25em;">Exam</th>
                     <th style="padding-left:0.25em;">.pdf downloads</th>
                 </tr>
-                <tr>
+
                 @for( exam <- exams ){
-                    <td><a href="@routes.QuestionController.exam(course, exam)">@exam.replace("_"," ")</a></td>
-                    <td>Questions | <a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers Only</a> | <a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Full Solutions</a></td><!--
-                    <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers Only</a></td>
-                    <td><a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Full Solutions</a></td>
-                 --></tr>
+                    <tr>
+                        <td><a href="@routes.QuestionController.exam(course, exam)">@exam.replace("_"," ")</a></td>
+                        <td>Questions | <a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Answers.pdf?raw=true">Answers Only</a> | <a href="https://github.com/MER-wiki/pdf_version/blob/gh-pages/pdfs/@(course)_@(exam)_Solutions.pdf?raw=true">Full Solutions</a></td>
+                    </tr>
                 }
             </table>
         </div>
@@ -26,15 +25,6 @@
             }<br>
             <svg class="chart"></svg>
         </div>
-
-        <!--<div style="width=30%; display: inline-block; border:1px solid red;">
-            <h2>Topics</h2>
-            <em>The percentage of questions in @course involving a particular topic.</em><br><br>
-            @for( topic <- topics ){
-                <span class="topic"><a href="@routes.TopicController.topic(topic)">@topic.replace("_","\u0020")</a></span>
-            }
-            <svg class="chart"></svg>
-        </div> -->
 
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script> // Prepares data and plots the topics bar graph.

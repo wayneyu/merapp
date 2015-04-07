@@ -19,7 +19,7 @@ case class Question ( course: String,
                      answer: String,
                      topics: List[String],
                      solvers: List[String],
-                     rating: Int,
+                     rating: Double,
                      num_votes: Int,
                      flags: List[String],
                      contributors: List[String]){
@@ -45,7 +45,7 @@ object Question {
         (JsPath \ "answer_html").read[String] and
         (JsPath \ "topics").read[List[String]] and
         (JsPath \ "solvers").read[List[String]] and
-        (JsPath \ "rating").read[Int] and
+        (JsPath \ "rating").read[Double] and
         (JsPath \ "num_votes").read[Int] and
         (JsPath \ "flags").read[List[String]] and
         (JsPath \ "contributors").read[List[String]]
@@ -55,7 +55,7 @@ object Question {
     def read(doc: BSONDocument): Question = {
       Question(
         doc.getAs[String]("course").get,
-        doc.getAs[Int]("year").get,
+        doc.getAs[Double]("year").get.toInt,
         doc.getAs[String]("term").get,
         doc.getAs[String]("question").get,
         doc.getAs[String]("statement_html").get,
@@ -64,8 +64,8 @@ object Question {
         doc.getAs[String]("answer_html").get,
         doc.getAs[List[String]]("topics").getOrElse(Nil),
         doc.getAs[List[String]]("solvers").getOrElse(Nil),
-        doc.getAs[Int]("rating").getOrElse(-1),
-        doc.getAs[Int]("num_votes").get,
+        doc.getAs[Double]("rating").get,
+        doc.getAs[Double]("num_votes").get.toInt,
         doc.getAs[List[String]]("flags").getOrElse(Nil),
         doc.getAs[List[String]]("contributors").getOrElse(Nil)
       )
@@ -84,7 +84,7 @@ object Question {
 			"answer_html" -> BSONString(q.answer),
 			"topics" -> BSONArray(q.topics.map{ BSONString(_) }),
 			"solvers" -> BSONArray(q.topics.map{ BSONString(_) }),
-			"rating" -> BSONInteger(q.rating),
+			"rating" -> BSONDouble(q.rating),
 			"num_votes" -> BSONInteger(q.num_votes),
 			"flags" -> BSONArray(q.topics.map{ BSONString(_) }),
 			"contributors" -> BSONArray(q.topics.map{ BSONString(_) })

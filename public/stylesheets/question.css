@@ -234,3 +234,8 @@ background-color: #eeeeee;
   font-size: 20pt; 
   color: #FFFFFF;
 }
+
+.question_image {
+    width: 50%;
+    text-align: center;
+}

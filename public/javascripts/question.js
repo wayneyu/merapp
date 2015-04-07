@@ -289,10 +289,12 @@
         }
 
     $(".easiness_rating").each(function(){
-        var val = parseInt($(this).text().replace("%",""));
-        if (val < 33) {var col = "#FF0000";}
-        else if (val < 66) {var col = "#FF9900";}
-        else if (val <= 100) {var col = "#006600";}
+        var val = parseFloat($(this).text());
+        if (val < 1.5) {var col = "#d9534f";}
+        else if (val < 2.5) {var col = "#f0ad4e";}
+        else if (val < 3.5) {var col = "#5bc0de";}
+        else if (val < 4.5) {var col = "#5cb85c";}
+        else if (val <= 5) {var col = "#008000";}
         else {var col = "#A0A0A0";} // no vote available
         $(this).css("color", col);
         $(this).attr("title", $(this).attr("title") + " vote(s)");

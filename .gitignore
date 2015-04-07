@@ -19,3 +19,5 @@ dist
 *.toc
 *.env
 *.DS_Store
+public/raw_database/json_data/MATH*/*/*.json
+public/raw_database/json_topics/*.json

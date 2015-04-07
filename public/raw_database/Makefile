@@ -2,45 +2,20 @@
 help: Makefile
 	@sed -n 's/##//p' $<
 
-## all: update mongo db from scratch
-all: update_json, update_mongo_locally, upload_mongo
-
-## clean: remove all intermediate files: csv and json
-clean:
-	rm questions_meta.csv
-	rm questions_topic.csv
-	rm -rf json_data
-	rm -rf test
-
-.PHONY: all, clean, correct_image_path, update_json, update_mongo_locally, upload_mongo, upload_mongo_only
+.PHONY: upload_mongo update_mongo_locally update_json
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-## upload_mongo_only: updates online mongo db from local mongo db WITHOUT refreshing questions locally
-upload_mongo_only:
+## upload_mongo: updates online mongo db from local mongo db
+upload_mongo:
 	mongodump --db merdb --collection questions --out ~/tmp
 	mongodump --db merdb --collection topics --out ~/tmp
 	mongorestore --username $(MONGOLAB_USERNAME) --password $(MONGOLAB_PASSWORD) --host $(MONGOLAB_HOST) --db $(MONGOLAB_DB) ~/tmp/merdb/ --drop
 
-## upload_mongo: updates online mongo db from local mongo db
-upload_mongo: update_mongo_locally upload_mongo_only
-
-## update_mongo_locally_only: updates local mongo db WITHOUT refreshing questions locally
-update_mongo_locally_only: import2mongo.sh
+## update_mongo_locally: updates local mongo db
+update_mongo_locally: import2mongo.sh
 	./import2mongo.sh
 
-## update_mongo_locally: updates local mongo db from json files
-update_mongo_locally: import2mongo.sh update_json
-	./import2mongo.sh
-
-## update_json: downloads all json files (takes a few hours)
-update_json: MER2json.py questions_meta.csv questions_topic.csv
-	python $< --no-latex --overwrite
-
-## questions_meta_csv: writes meta information to csv
-questions_meta.csv: MER2csv.py
-	python $<
-
-## questions_topic.csv: writes questions-topic to csv
-questions_topic.csv: MER2csv.py
-	python $< --topic
+## update_json: updates json files
+update_json:
+	echo "Please check out sister repo at https://github.com/MathEducationResources/scrape_wiki_content"

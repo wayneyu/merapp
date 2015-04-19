@@ -19,6 +19,9 @@ GET    /questions/search/course/:year/:term             controllers.QuestionCont
 GET    /questions/search/id/:id                         controllers.QuestionController.searchById(id: String)
 GET    /questions/search/:keyString                     controllers.QuestionController.searchByKeywords(keyString: String)
 
+GET    /numSols                                         controllers.QuestionController.getCount()
+GET    /contributors                                    controllers.QuestionController.getContributors()
+
 GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)
 GET    /questions/:course/:term_year/:q/json            controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
 GET    /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)

@@ -448,12 +448,12 @@ object MongoDAO extends Controller with MongoController {
 			"course" -> q.course, "term" -> q.term,
 			"year" -> q.year, "question" -> q.question)
 
-		def command(numVoteInc: Int, newRating: Int)  = FindAndModify(
+		def command(numVoteInc: Int, newRating: Double)  = FindAndModify(
 			questionCollection.name,
 			selector,
 			Update(BSONDocument(
 				"$inc" -> BSONDocument("num_votes" -> BSONInteger(numVoteInc)),
-				"$set" -> BSONDocument("rating" -> BSONInteger(newRating))
+				"$set" -> BSONDocument("rating" -> BSONDouble(newRating))
 			), true))
 
 		val oldTotalRating = q.num_votes * q.rating //rating = -1 is taken care of by num_votes = 0
@@ -465,9 +465,9 @@ object MongoDAO extends Controller with MongoController {
 			case Some(v) =>
 				if (!v.qid.equals(vote.qid) || !v.userid.equals(vote.userid))
 					throw new IllegalArgumentException("updateQuestionRating, lastVote: " + lastVote + " vote: " + vote)
-				db.command(command(0, 1)) // FIXME!! WORKING WITH DOUBLES NOW (oldTotalRating + 10*(vote.rating - v.rating))/q.num_votes))
+				db.command(command(0, (oldTotalRating + (vote.rating - v.rating))/q.num_votes))
 			case None =>
-				db.command(command(1, 1)) // FIXME!! WORKING WITH DOUBLES NOW (oldTotalRating + 10*vote.rating)/(q.num_votes + 1)))
+				db.command(command(1, (oldTotalRating + vote.rating)/(q.num_votes + 1)))
 		}
 
 		res onComplete {

@@ -109,7 +109,13 @@
     }
     </div>
 
+    <div id="back_from_question">
+        Back to <a href="@routes.QuestionController.course(selectedCourse)">@selectedCourse</a> or <a href="@routes.QuestionController.exam(selectedCourse, term_year)">@term_year.replace("_", " ")</a>.
+    </div>
+
+
     <br>
+
 
     <div id="prev_next_question" style="margin: 0 auto; text-align: center;">
         <a id="prev_question">&larr; Previous question</a>

@@ -290,6 +290,24 @@ $("#my_rating").rating({
                          5: "text-success"}
 });
 
+$('#my_rating').on('rating.change', function(event, value, caption) {
+    debugger;
+    console.log(value);
+    console.log(caption);
+    $.ajax({
+      type: 'POST',
+      url: window.location.pathname + "/vote/" + value,
+      success: function(d){
+        debugger;
+        $("span.easiness_rating")[0].textContent = d.rating + "%";
+        $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
+      },
+      error: function(obj, st, err){
+        alert(err);
+      }
+    })
+});
+
 var topicsCache = [];
 $(".question_tags").select2({
     tags: true,
@@ -313,22 +331,6 @@ $(".question_tags").select2({
             data.push({id: this, text: this});
         });
         callback(data);
-    }
-})
-.on("select2-opening", function(e){
-    if (topicsCache.length === 0) {
-        $.ajax({
-          type: 'POST',
-          url: window.location.pathname + "/vote/" + value,
-          success: function(d){
-            debugger;
-            $("span.easiness_rating")[0].textContent = d.rating + "%";
-            $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
-          },
-          error: function(obj, st, err){
-            alert(err);
-          }
-        });
     }
 })
 .on("select2-selecting", function(e){

@@ -19,20 +19,24 @@
 
     <h1> The Team </h1>
 
-    The <Strong>MER wiki</Strong> has had many contributors over the years. At the present time the key members are as follows:
+    The <Strong>MER wiki</Strong> has had many contributors over the years. At present the key members are as follows:
     <ul>
         <li><a href="http://www.math.ubc.ca/~konradbe/">Bernhard Konrad</a></li>
-        <li><a href="http://www.math.ubc.ca/~wft/">William Thompson</a></li>
         <li><a href="http://www.math.ubc.ca/~cbruni/">Carmen Bruni</a></li>
-        <li><a href="http://www.math.ubc.ca/~mlrtlm/">Michael Lindstrom</a></li>
         <li><a href="http://www.math.ubc.ca/~imoyles/">Iain Moyles</a></li>
-        <li><a href="https://github.com/ChristinaLK">Christina Koch</a></li>
         <li><a href="http://www.sfu.ca/~imgraf/">Isabell Graf</a></li>
+        <li><a href="http://www.math.ubc.ca/~mlrtlm/">Michael Lindstrom</a></li>
+        <li><a href="http://www.math.ubc.ca/~wft/">William Thompson</a></li>
         <li><a href="http://edcp.educ.ubc.ca/jiao-ji/">Jiao Ji</a></li>
         <li><a href="https://github.com/wayneyu">Wayne Yu</a></li>
         <li><a href="https://github.com/sidazhou">Sida Zhou</a></li>
     </ul>
-    If you are interested in becoming involved with MER wiki, don't hesitate to contact us at <em>(mer-wiki)(at)(math)(dot)(ubc)(dot)(ca)</em>.<br><br>
+
+    <p><Strong>Thank you to all MER contributors over the years: </Strong><span id="allContributors"></span></p>
+
+    <p>If you are interested in becoming involved with MER wiki, don't hesitate to contact us at <em>(mer-wiki)(at)(math)(dot)(ubc)(dot)(ca)</em>.</p>
+
+
 
     <h1> Copyright and License </h1>
 
@@ -50,3 +54,17 @@
     <h2>Happy Studying!</h2>
 </div>
 }
+
+<script>
+    function addAllContributors(){
+        var contr = $("#allContributors");
+        var response = $.getJSON("./contributors").done(function(data){
+            var len = data.length;
+            $.each(data, function(index, c){
+                if (index != len -1){contr.append(c + ", ");} else {contr.append(c + ".");}
+            });
+        });
+    };
+
+    addAllContributors();
+</script>

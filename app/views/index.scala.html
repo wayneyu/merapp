@@ -10,6 +10,16 @@
 
         <p>Math Education Resources <em>(MER)</em> provides free hints and peer-reviewed solutions to previous math exams administered at the University of British Columbia - grouped by topic and rated by difficulty. Additional learning content is also provided on our topics pages. Click on any of the tabs above to start studying!</p>
 
+        <p>In total we have collected <Strong><span id="numberOfGoodQualitySolutions"></span></Strong> peer-reviewed Hints and Solutions, and counting!</p>
+
     </div>
 </div>
 }
+
+<script>
+    function addNumberOfGoodQualitySolutions(){
+        var response = $.getJSON("./numSols").done(function(data){$("#numberOfGoodQualitySolutions").text(data);});
+    };
+
+    addNumberOfGoodQualitySolutions();
+</script>

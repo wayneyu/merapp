@@ -305,7 +305,7 @@ $('#my_rating').on('rating.change', function(event, value, caption) {
       url: window.location.pathname + "/vote/" + value,
       success: function(d){
         debugger;
-        $("span.easiness_rating")[0].textContent = d.rating + "%";
+        $("span.easiness_rating")[0].textContent = d.rating.toFixed(1);
         $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
       },
       error: function(obj, st, err){

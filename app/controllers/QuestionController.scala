@@ -298,6 +298,45 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+
+	def numberOfGoodQualitySolutions() = Action.async {
+		MongoDAO.numberOfGoodQualitySolutions().map {
+			st => Ok(BSONArrayFormat.writes(BSONArray(st)))
+		}
+	}
+
+
+	def distinctContributors() = UserAwaredAction.async {
+		implicit context => MongoDAO.
+			distinctContributors().map {
+			st => Ok(BSONArrayFormat.writes(BSONArray(
+				st.map(
+					d => d.getAs[BSONString]("contributors").getOrElse(BSONArray(Nil))
+				)
+			)
+			))
+		}
+	}
+/*
+
+			Action.async {
+			MongoDAO.getContributors().map {
+				st => Ok(BSONArrayFormat.writes(
+				BSONArray(st.map(d => d.getAs[BSONString]("contributors").get).sortWith(questionSort))
+				))
+			}
+		}
+*/
+
+		/*
+		MongoDAO.numberOfGoodQualitySolutions().map {
+			st => st(BSONArrayFormat.writes(
+			BSONArray(st.map(d => d.getAs[BSONString]("question").get))
+			))
+		}
+		*/
+
+
 	def questionSort(tis: BSONDocument, tat: BSONDocument): Boolean = {
 		questionSort(tis.getAs[String]("question").get, tat.getAs[String]("question").get)
 	}

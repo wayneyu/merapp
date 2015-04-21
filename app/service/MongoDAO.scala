@@ -171,6 +171,31 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
+	def numberOfGoodQualitySolutions(): Future[Int] = {
+		// count the number of solutions with the flag 'QGS' (indicating good quality solution)
+		// db.questions.runCommand({count: 'questions', query: { flags: "QGS"}})
+		// FIXME!
+		val count = db.command(Count(
+			questionCollection.name,
+			Some(BSONDocument("flags" -> "QGS"))
+		))
+
+		count
+	}
+
+	def distinctContributors(): Future[Stream[BSONDocument]] = {
+		// List all contributors
+		// db.questions.distinct("contributors")
+		val command = Aggregate(questionCollection.name, Seq(
+			Unwind("contributors"),
+			GroupField("contributors")("contributors" -> First("contributors")),
+			Sort(Seq(Ascending("contributors"))),
+			Project("_id" -> BSONInteger(0), "contributors" -> BSONInteger(1))
+		))
+
+		db.command(command)
+	}
+
 	def distinctQuestions(course: String, term_year: String): Future[Stream[BSONDocument]] = {
 		Logger.debug("Distinct questions  = " + course + " " + term_year)
 		val (term: String, year: Int) = getTermAndYear(term_year)

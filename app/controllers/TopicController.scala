@@ -55,4 +55,14 @@ object TopicController extends ServiceComponent {
 		}
 	}
 
+  def displayAllTopics() = UserAwaredAction.async { implicit context =>
+    val alltopics = MongoDAO.topicParentAndChildren()
+
+    alltopics.map { st =>
+      Ok(BSONArrayFormat.writes(BSONArray(
+      st)))
+
+    }
+  }
+
 }

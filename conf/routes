@@ -37,6 +37,7 @@ GET    /exams/:course/:term_year                        controllers.QuestionCont
 GET    /topics                                          controllers.Application.topics()
 GET    /topics/search                                   controllers.TopicController.topicsSearch(q: String)
 GET    /topics/withParents                                  controllers.TopicController.displayAllTopics()
+GET    /topics/count                                  controllers.TopicController.displayTopicsCount()
 GET    /topics/:topic                                   controllers.TopicController.topic(topic: String)
 
 

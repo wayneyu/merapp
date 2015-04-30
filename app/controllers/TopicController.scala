@@ -13,6 +13,11 @@ import service._
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
+
+import scala.concurrent.{Future, Await}
+import scala.concurrent.duration._
+import scala.util.parsing.json.JSONObject
+
 /**
  * Created by wayneyu on 1/8/15.
  */
@@ -55,14 +60,88 @@ object TopicController extends ServiceComponent {
 		}
 	}
 
-  def displayAllTopics() = UserAwaredAction.async { implicit context =>
-    val alltopics = MongoDAO.topicParentAndChildren()
+  def displayAllTopics() = Action {
+    // Creates JSON for topics bubble chart. Format is
+//    {
+//      "name": "MER Topics",
+//      "children":[
+//      {
+//        "name" : "Parent1",
+//        "children" : [
+//        {"name": "subtopic1", "size": 3, "url": "/topics/subtopic1"},
+//        {"name": "subtopic2", "size": 5, "url": "/topics/subtopic2"}
+//        ]
+//      },
+//      {
+//        "name" : "Parent2",
+//        "children" : [
+//        {"name": "subtopic3", "size": 15, "url": "/topics/subtopic3"}
+//        ]
+//      }
+//      ]
+//    }
+//    size is the number of questions on the particular subtopic
+    
+    val topicsParentandChildren = MongoDAO.topicParentAndChildren()
 
-    alltopics.map { st =>
-      Ok(BSONArrayFormat.writes(BSONArray(
-      st)))
-
+    val stream_parent_sub = topicsParentandChildren.map { st =>
+      for {
+        s <- st
+        parent <- s.getAs[String]("_id")
+        childList <- s.getAs[List[String]]("subtopics")
+      } yield (parent, childList)
     }
+
+    // obtain helper function
+    val countPerTopic = getCountPerTopic()
+
+    var array_of_parents: BSONArray = BSONArray.empty
+
+    // TODO: Remove Await
+    Await.result(stream_parent_sub map (_.toList), 5.seconds) foreach {
+      case (parent, sublist) => {
+        var array_of_children: BSONArray = BSONArray.empty
+        sublist foreach {
+          case (topic) => array_of_children = array_of_children add BSONDocument("name" -> topic, "size" -> countPerTopic(topic), "url" -> BSONString("/topics/" + topic))
+        }
+        array_of_parents = array_of_parents add BSONDocument("name" -> parent, "children" -> array_of_children)
+      }
+    }
+
+    val res: BSONDocument = BSONDocument("name" -> "MER Topics", "children" -> array_of_parents)
+
+    Ok(BSONArrayFormat.writes(BSONArray(res)))
   }
+
+
+  def getCountPerTopic(): Map[String, Int] = {
+    // Returns a map as lookup table for number of questions on each topic.
+
+    val questionsPerTopic = MongoDAO.questionsPerTopic()
+    var myMap: Map[String, Int] = Map.empty
+
+    val stream_topic_count = questionsPerTopic.map { st =>
+      for {
+        s <- st
+        topic <- s.getAs[String]("_id")
+        num_questions <- s.getAs[Int]("num_questions")
+      } yield (topic, num_questions)
+    }
+
+    // TODO: Remove await
+    Await.result(stream_topic_count map (_.toList), 5.seconds) foreach {
+      case(topic, num_questions) => myMap = myMap ++ Map(topic -> num_questions)
+    }
+
+    myMap
+  }
+
+
+  def displayTopicsCount() = Action {
+    val CountPerTopic = getCountPerTopic()
+    Ok(scala.util.parsing.json.JSONObject(CountPerTopic).toString())
+  }
+
+
 
 }

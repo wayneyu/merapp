@@ -368,20 +368,26 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
-	def topicParentAndChildren(): Future[Stream[BSONDocument]] = {
-		// 1. To get all parent topics with children:
+
+	def questionsPerTopic(): Future[Stream[BSONDocument]] = {
+		// To get the number of questions per topic
+		// db.questions.aggregate([{"$unwind": "$topics"}, {"$group": {"_id" : "$topics", total: {$sum: 1}}}])
+		val command = Aggregate(questionCollection.name, Seq(
+		Unwind("topics"),
+		GroupField("topics")(("num_questions", SumValue(1)))
+		))
+
+		db.command(command)
+	}
+
+	def 	topicParentAndChildren(): Future[Stream[BSONDocument]] = {
+		// To get all parent topics with children:
 		// db.topics.aggregate([{"$group": {"_id" : "$parent", subtopics: {$addToSet: "$topic"}}}])
 		val command = Aggregate(topicsCollection.name, Seq(
 			GroupField("parent")("subtopics" -> AddToSet("topic"))
 		))
 
 		db.command(command)
-
-		// 2. To get the number of questions per topic (weight of each node above):
-		// db.questions.aggregate([{"$unwind": "$topics"}, {"$group": {"_id" : "$topics", total: {$sum: 1}}}])
-		// TODO: One solution would be to store the result of the second query as a map, then loop through every subtopic and add the number of questions
-		// Alternatively: Query database for each topic individually for a count
-		// db.questions.find({"topics": "Chain_rule"}).count()
 	}
 
 

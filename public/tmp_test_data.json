@@ -2,15 +2,6 @@
  "name": "top level",
  "children":[
  {
-  "name" : "sdtesting", "children" : [
-   {"name": "child1", "size": 500},
-   {"name": "child w whild", "children": [
-    {"name":"gc1", "size": 400},
-    {"name":"gc2", "size": 400}
-   ]}
-   ]
-  },
- {
   "name" : "Differentiate",
   "children" : [
    {"name": "Tangent_line", "size": 500},

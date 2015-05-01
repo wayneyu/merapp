@@ -144,11 +144,11 @@
     @if(context.user.isDefined){
         <p id="statement_quality">
             <div><Strong>Statement:</Strong>
-                <div class="btn-group" id="statement_quality_buttons">
-                    <button type="radio" class="btn quality_missing @if(statement_missing){active}">Missing</button>
-                    <button type="radio" class="btn quality_review @if(statement_review){active}">Need(s) review</button>
-                    <button type="radio" class="btn quality_improve @if(statement_improve){active}">Need(s) improvement</button>
-                    <button type="radio" class="btn quality_good @if(statement_good){active}">Good quality</button>
+                <div class="btn-group quality_buttons" id="statement_quality_buttons">
+                    <button type="radio" class="btn quality_missing @if(statement_missing){active}" value="CQ">Missing</button>
+                    <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Need(s) review</button>
+                    <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Need(s) improvement</button>
+                    <button type="radio" class="btn quality_good @if(statement_good){active}" value="QGQ">Good quality</button>
                 </div>
             </div>
         </p>
@@ -198,11 +198,11 @@
     @if(context.user.isDefined){
         <p id="hint_quality">
             <div><Strong>Hints:</Strong>
-                <div class="btn-group" id="hint_quality_buttons">
-                    <button type="button" class="btn quality_missing @if(hint_missing){active}">Missing</button>
-                    <button type="button" class="btn quality_review @if(hint_review){active}">Need(s) review</button>
-                    <button type="button" class="btn quality_improve @if(hint_improve){active}">Need(s) improvement</button>
-                    <button type="button" class="btn quality_good @if(hint_good){active}">Good quality</button>
+                <div class="btn-group quality_buttons" id="hint_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(hint_missing){active}" value="CH">Missing</button>
+                    <button type="button" class="btn quality_review @if(hint_review){active}" value="RH">Need(s) review</button>
+                    <button type="button" class="btn quality_improve @if(hint_improve){active}" value="QBH">Need(s) improvement</button>
+                    <button type="button" class="btn quality_good @if(hint_good){active}" value="QGH">Good quality</button>
                 </div>
             </div>
         </p>
@@ -261,11 +261,11 @@
     @if(context.user.isDefined){
         <p id="solution_quality">
             <div><Strong>Solutions:</Strong>
-                <div class="btn-group" id="solution_quality_buttons">
-                    <button type="button" class="btn quality_missing @if(solution_missing){active}">Missing</button>
-                    <button type="button" class="btn quality_review @if(solution_review){active}">Need(s) review</button>
-                    <button type="button" class="btn quality_improve @if(solution_improve){active}">Need(s) improvement</button>
-                    <button type="button" class="btn quality_good @if(solution_good){active}">Good quality</button>
+                <div class="btn-group quality_buttons" id="solution_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(solution_missing){active}" value="CS">Missing</button>
+                    <button type="button" class="btn quality_review @if(solution_review){active}" value="RS">Need(s) review</button>
+                    <button type="button" class="btn quality_improve @if(solution_improve){active}" value="QBS">Need(s) improvement</button>
+                    <button type="button" class="btn quality_good @if(solution_good){active}" value="QGS">Good quality</button>
                 </div>
             </div>
         </p>
@@ -423,19 +423,19 @@ $(".question_tags").select2({
 });
 });
 
-$('body').on('click', '#statement_quality_buttons button', function (e) {
+$('body').on('click', '.quality_buttons button', function (e) {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
+    var newQualityFlag = $(this).val();
+    $.ajax({
+        type: 'POST',
+        url: window.location.pathname + "/updateQuality/" + newQualityFlag,
+        success: function(d){
+            //
+        },
+        error: function(obj, st, err){
+            alert(err + "\n" + obj.responseText);
+        }
+    })
 });
-
-$('body').on('click', '#hint_quality_buttons button', function (e) {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-});
-
-$('body').on('click', '#solution_quality_buttons button', function (e) {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-});
-
 </script>

@@ -469,4 +469,10 @@ object QuestionController extends ServiceComponent with MongoController {
 			}
 		}
 	}
+
+	def updatedQualityFlag(course: String, term_year: String, q: String, newQualityFlag: String) = ContributorAction.async { implicit context =>
+		MongoDAO.updateQualityFlag(course, term_year, q, newQualityFlag).map {
+		o => Ok(BSONArrayFormat.writes(o.getOrElse(BSONArray())))
+	}
+	}
 }

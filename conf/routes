@@ -28,6 +28,8 @@ GET    /questions/:course/:term_year/:q/edit            controllers.QuestionCont
 POST   /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionFindAndModify(course: String, term_year: String, q: String)
 POST   /questions/:course/:term_year/:q/edit/addtopic/:topic    controllers.QuestionController.addTopic(course: String, term_year: String, q: String, topic: String)
 POST   /questions/:course/:term_year/:q/edit/removetopic/:topic    controllers.QuestionController.removeTopic(course: String, term_year: String, q: String, topic: String)
+POST   /questions/:course/:term_year/:q/updateQuality/:newQualityFlag   controllers.QuestionController.updatedQualityFlag(course: String, term_year: String, q: String, newQualityFlag: String)
+
 POST   /questions/upload                                controllers.QuestionController.upload(url: String)
 
 POST   /questions/submit                                controllers.QuestionController.questionSubmit()

@@ -395,34 +395,16 @@ object MongoDAO extends Controller with MongoController {
 
 	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONArray]] = {
 		for{
-			a <- updateTopic(course, term_year, q, topic, "$addToSet")
+			a <- updateArray(course, term_year, q, "topics", topic, "$addToSet")
 			b <- upsertToTopics(topic)
 		} yield a.flatMap{_.getAs[BSONArray]("topics")}
 	}
 
 	def removeTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONArray]] = {
 		for {
-			a <- updateTopic(course, term_year, q, topic, "$pull")
+			a <- updateArray(course, term_year, q, "topics", topic, "$pull")
 			b <- removeFromTopics(topic)
 		} yield a.flatMap{_.getAs[BSONArray]("topics")}
-	}
-
-	private def updateTopic(course: String, term_year: String, q:String, topic: String, opt: String): Future[Option[BSONDocument]] = {
-		val (term, year) = getTermAndYear(term_year)
-
-		val selector = BSONDocument(
-			"course" -> course, "term" -> term,
-			"year" -> year.toInt, "question" -> q)
-
-		val modifier = BSONDocument(
-			opt -> BSONDocument("topics" -> BSONString(topic)))
-
-		val command = FindAndModify(
-			questionCollection.name,
-			selector,
-			Update(modifier, true), false)
-
-		db.command(command)
 	}
 
 	private def upsertToTopics(topic: String): Future[Option[BSONDocument]] = {
@@ -435,6 +417,45 @@ object MongoDAO extends Controller with MongoController {
 	private def removeFromTopics(topic: String): Future[Option[BSONDocument]] = {
 		val selector = BSONDocument("content" -> BSONArray(), "url" -> "", "parent" -> "", "topic" -> topic)
 		val command = FindAndModify(topicsCollection.name, selector, Remove, false)
+		db.command(command)
+	}
+
+	def updateQualityFlag(course: String, term_year: String, q: String, newQualityFlag: String): Future[Option[BSONArray]] = {
+		// Adds newQualityFlag to "flags" and removes all other quality flags of the same type (Statement, Hint or Solution)
+		def flags_to_remove(): List[String] = {
+			// Returns all quality flags of the same type (Statement, Hint or Solution) as newQualityFlag, except newQualityFlag
+			val Statement_or_Hint_or_Solution = newQualityFlag takeRight 1
+			val current_quality = newQualityFlag(newQualityFlag.length-1)
+			val endings = List("C", "R", "QB", "QG") diff List(current_quality)
+			endings map (_ + Statement_or_Hint_or_Solution)
+		}
+
+		flags_to_remove() map {
+			updateArray(course, term_year, q, "flags", _, "$pull")
+		}
+
+		for {
+			a <- updateArray(course, term_year, q, "flags", newQualityFlag, "$addToSet")
+		} yield a.flatMap{_.getAs[BSONArray]("flags")}
+	}
+
+
+	private def updateArray(course: String, term_year: String, q:String, whichArray: String, newValue: String, opt: String): Future[Option[BSONDocument]] = {
+		// Updates whichArray in db.questions with newValue
+		val (term, year) = getTermAndYear(term_year)
+
+		val selector = BSONDocument(
+			"course" -> course, "term" -> term,
+			"year" -> year.toInt, "question" -> q)
+
+		val modifier = BSONDocument(
+			opt -> BSONDocument(whichArray -> BSONString(newValue)))
+
+		val command = FindAndModify(
+			questionCollection.name,
+			selector,
+			Update(modifier, true), false)
+
 		db.command(command)
 	}
 

@@ -12,6 +12,18 @@
 @solvers = @{qn.solvers}
 @contributors = @{qn.contributors}
 @flags = @{qn.flags}
+@statement_missing = @{flags.contains("CQ")}
+@statement_review = @{flags.contains("RQ")}
+@statement_improve = @{flags.contains("QBQ")}
+@statement_good = @{flags.contains("QGQ")}
+@hint_missing = @{flags.contains("CH")}
+@hint_review = @{flags.contains("RH")}
+@hint_improve = @{flags.contains("QBH")}
+@hint_good = @{flags.contains("QGH")}
+@solution_missing = @{flags.contains("CS")}
+@solution_review = @{flags.contains("RS")}
+@solution_improve = @{flags.contains("QBS")}
+@solution_good = @{flags.contains("QGS")}
 @latexbuttons = {
 <div id="inputbuttons">
     <!-- SYMBOLS -->
@@ -109,10 +121,12 @@
     }
     </div>
 
-    <div id="back_from_question">
-        Back to <a href="@routes.QuestionController.course(selectedCourse)">@selectedCourse</a> or <a href="@routes.QuestionController.exam(selectedCourse, term_year)">@term_year.replace("_", " ")</a>.
-    </div>
 
+    @if(selectedCourse){
+        <div id="back_from_question">
+            Back to <a href="@routes.QuestionController.course(selectedCourse)">@selectedCourse</a> or <a href="@routes.QuestionController.exam(selectedCourse, term_year)">@term_year.replace("_", " ")</a>.
+        </div>
+    }
 
     <br>
 
@@ -127,17 +141,29 @@
 
     <br>
 
+    @if(context.user.isDefined){
+        <p id="statement_quality">
+            <div><Strong>Statement:</Strong>
+                <div class="btn-group" id="statement_quality_buttons">
+                    <button type="radio" class="btn quality_missing @if(statement_missing){active}">Missing</button>
+                    <button type="radio" class="btn quality_review @if(statement_review){active}">Need(s) review</button>
+                    <button type="radio" class="btn quality_improve @if(statement_improve){active}">Need(s) improvement</button>
+                    <button type="radio" class="btn quality_good @if(statement_good){active}">Good quality</button>
+                </div>
+            </div>
+        </p>
+    }
+
     <div class="main_box">
         <div class="box_title">
             @q
-            <div class="easiness_rating_box">
-                @if(num_votes > 0){
+            @if(num_votes > 0){
+                <div class="easiness_rating_box">
                     Easiness: <span class="easiness_rating" title=@num_votes>@(Math.round(rating*10)/10.toDouble)/5</span>
                     <span class="num_votes">(@num_votes @if(num_votes > 1){votes} else {vote})</span>
-                } else {}
-            </div>
+                </div>
+            }
         </div>
-
         <div>@Html(stmt)</div>
     </div>
 
@@ -167,6 +193,19 @@
 
         If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
         </div>    
+    }
+
+    @if(context.user.isDefined){
+        <p id="hint_quality">
+            <div><Strong>Hints:</Strong>
+                <div class="btn-group" id="hint_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(hint_missing){active}">Missing</button>
+                    <button type="button" class="btn quality_review @if(hint_review){active}">Need(s) review</button>
+                    <button type="button" class="btn quality_improve @if(hint_improve){active}">Need(s) improvement</button>
+                    <button type="button" class="btn quality_good @if(hint_good){active}">Good quality</button>
+                </div>
+            </div>
+        </p>
     }
 
     @for( (h, ind) <- hints.zipWithIndex ) {
@@ -217,6 +256,19 @@
                 </div>
             </div>
         </div>
+    }
+
+    @if(context.user.isDefined){
+        <p id="solution_quality">
+            <div><Strong>Solutions:</Strong>
+                <div class="btn-group" id="solution_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(solution_missing){active}">Missing</button>
+                    <button type="button" class="btn quality_review @if(solution_review){active}">Need(s) review</button>
+                    <button type="button" class="btn quality_improve @if(solution_improve){active}">Need(s) improvement</button>
+                    <button type="button" class="btn quality_good @if(solution_good){active}">Good quality</button>
+                </div>
+            </div>
+        </p>
     }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
@@ -370,4 +422,20 @@ $(".question_tags").select2({
     })
 });
 });
+
+$('body').on('click', '#statement_quality_buttons button', function (e) {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+});
+
+$('body').on('click', '#hint_quality_buttons button', function (e) {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+});
+
+$('body').on('click', '#solution_quality_buttons button', function (e) {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+});
+
 </script>

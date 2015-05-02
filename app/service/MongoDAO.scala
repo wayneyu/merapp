@@ -423,10 +423,10 @@ object MongoDAO extends Controller with MongoController {
 	def updateQualityFlag(course: String, term_year: String, q: String, newQualityFlag: String): Future[Option[BSONArray]] = {
 		// Adds newQualityFlag to "flags" and removes all other quality flags of the same type (Statement, Hint or Solution)
 		def flags_to_remove(): List[String] = {
-			// Returns all quality flags of the same type (Statement, Hint or Solution) as newQualityFlag, except newQualityFlag
+			// Returns all quality flags of the same type (Statement, Hint or Solution) as newQualityFlag
 			val Statement_or_Hint_or_Solution = newQualityFlag takeRight 1
 			val current_quality = newQualityFlag(newQualityFlag.length-1)
-			val endings = List("C", "R", "QB", "QG") diff List(current_quality)
+			val endings = List("C", "R", "QB", "QG")
 			endings map (_ + Statement_or_Hint_or_Solution)
 		}
 
@@ -435,7 +435,7 @@ object MongoDAO extends Controller with MongoController {
 		}
 
 		for {
-			a <- updateArray(course, term_year, q, "flags", newQualityFlag, "$addToSet")
+			a <- updateArray(course, term_year, q, "flags", newQualityFlag, "$push")
 		} yield a.flatMap{_.getAs[BSONArray]("flags")}
 	}
 

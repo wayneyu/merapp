@@ -424,18 +424,21 @@ $(".question_tags").select2({
 });
 
 $('body').on('click', '.quality_buttons button', function (e) {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    var newQualityFlag = $(this).val();
-    $.ajax({
-        type: 'POST',
-        url: window.location.pathname + "/updateQuality/" + newQualityFlag,
-        success: function(d){
-            //
-        },
-        error: function(obj, st, err){
-            alert(err + "\n" + obj.responseText);
-        }
-    })
+    if (!$(this).hasClass('active')){
+        <!--Only fire if active button changed-->
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        var newQualityFlag = $(this).val();
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/updateQuality/" + newQualityFlag,
+            success: function(d){
+                //
+            },
+            error: function(obj, st, err){
+                alert(err + "\n" + obj.responseText);
+            }
+        })
+    };
 });
 </script>

@@ -33,9 +33,9 @@ object TopicController extends ServiceComponent {
       qr <- questionsResult
     } yield (tr, qr)
 
-    res.map{
+    res.map {
       case (tr, qr) => Ok(views.html.topic(
-        tr.as[Topic], qr.map( _.as[Question] ).toList
+        tr.as[Topic], qr.map(_.as[Question]).toList
       ))
     }
 
@@ -44,104 +44,122 @@ object TopicController extends ServiceComponent {
   def topics() = UserAwaredAction.async { implicit context =>
     val alltopics = MongoDAO.topicsBSON()
 
-    alltopics.map{
+    alltopics.map {
       l => Ok(views.html.topics(
         l.map { t => t.as[Topic] }.toList
       ))
     }
   }
 
-	def topicsSearch(searchTerm: String) = UserAwaredAction.async { implicit context =>
-		val alltopics = MongoDAO.topicSearchBSON(searchTerm)
+  def topicsSearch(searchTerm: String) = UserAwaredAction.async { implicit context =>
+    val alltopics = MongoDAO.topicSearchBSON(searchTerm)
 
-		alltopics.map { st =>
-		   Ok(BSONArrayFormat.writes(BSONArray(
-			  st)))
-		}
-	}
+    alltopics.map { st =>
+      Ok(BSONArrayFormat.writes(BSONArray(
+        st)))
+    }
+  }
 
-  def displayAllTopics() = Action {
+  def displayAllTopics() = Action.async { implicit context =>
     // Creates JSON for topics bubble chart. Format is
-//    {
-//      "name": "MER Topics",
-//      "children":[
-//      {
-//        "name" : "Parent1",
-//        "children" : [
-//        {"name": "subtopic1", "size": 3, "url": "/topics/subtopic1"},
-//        {"name": "subtopic2", "size": 5, "url": "/topics/subtopic2"}
-//        ]
-//      },
-//      {
-//        "name" : "Parent2",
-//        "children" : [
-//        {"name": "subtopic3", "size": 15, "url": "/topics/subtopic3"}
-//        ]
-//      }
-//      ]
-//    }
-//    size is the number of questions on the particular subtopic
-    
+    //    {
+    //      "name": "MER Topics",
+    //      "children":[
+    //      {
+    //        "name" : "Parent1",
+    //        "children" : [
+    //        {"name": "subtopic1", "size": 3, "url": "/topics/subtopic1"},
+    //        {"name": "subtopic2", "size": 5, "url": "/topics/subtopic2"}
+    //        ]
+    //      },
+    //      {
+    //        "name" : "Parent2",
+    //        "children" : [
+    //        {"name": "subtopic3", "size": 15, "url": "/topics/subtopic3"}
+    //        ]
+    //      }
+    //      ]
+    //    }
+    //    size is the number of questions on the particular subtopic
+
     val topicsParentandChildren = MongoDAO.topicParentAndChildren()
 
     val stream_parent_sub = topicsParentandChildren.map { st =>
       for {
-        s <- st
+        s <- st.toSeq
         parent <- s.getAs[String]("_id")
         childList <- s.getAs[List[String]]("subtopics")
-      } yield (parent, childList)
+      } yield parent -> childList
     }
 
     // obtain helper function
     val countPerTopic = getCountPerTopic()
 
+    // set up array to hold all complete parent topics
     var array_of_parents: BSONArray = BSONArray.empty
 
-    // TODO: Remove Await
-    Await.result(stream_parent_sub map (_.toList), 5.seconds) foreach {
-      case (parent, sublist) => {
-        var array_of_children: BSONArray = BSONArray.empty
-        sublist foreach {
-          case (topic) => array_of_children = array_of_children add BSONDocument("name" -> topic, "size" -> countPerTopic(topic), "url" -> BSONString("/topics/" + topic))
+/* A for-comprehension would be great here, but the version below does not quite work (in progress)
+    val array_of_parents: Future[BSONArray] = for {
+      countMap <- countPerTopic
+      parent_sublist_tuple <- stream_parent_sub
+      (parent, sublist) <- parent_sublist_tuple
+      array_of_children = sublist.foldLeft(BSONArray.empty) {(acc, topic) =>
+        acc add BSONDocument("name" -> topic.replace("_", " "),
+          "size" -> countMap(topic),
+          "url" -> BSONString("/topics/" + topic))
+      }
+      array_of_parents = BSONDocument("name" -> parent, "children" -> array_of_children)
+    } yield array_of_parents //yield BSONDocument("name" -> "MER Topics", "children" -> array_of_parents)
+
+    array_of_parents.onSuccess{
+      case array => Future(Ok(BSONArrayFormat.writes(BSONArray(BSONDocument("name" -> "MER Topics", "children" -> array)))))
+      case _ => Future(Ok)
+    }
+*/
+    //val res = BSONDocument("name" -> "MER Topics", "children" -> array_of_parents)
+//    Ok(BSONArrayFormat.writes(BSONArray(res)))
+
+    countPerTopic.flatMap {countMap =>
+      stream_parent_sub.map { x =>
+        x foreach {
+          case (parent, subList) => {
+            var array_of_children: BSONArray = BSONArray.empty
+            subList foreach {
+              case (topic) => array_of_children = array_of_children add BSONDocument("name" -> topic, "size" -> countMap(topic), "url" -> BSONString("/topics/" + topic))
+            }
+            array_of_parents = array_of_parents add BSONDocument("name" -> parent, "children" -> array_of_children)
+          }
         }
-        array_of_parents = array_of_parents add BSONDocument("name" -> parent, "children" -> array_of_children)
+
+        val res: BSONDocument = BSONDocument("name" -> "MER Topics", "children" -> array_of_parents)
+        Ok(BSONArrayFormat.writes(BSONArray(res)))
       }
     }
-
-    val res: BSONDocument = BSONDocument("name" -> "MER Topics", "children" -> array_of_parents)
-
-    Ok(BSONArrayFormat.writes(BSONArray(res)))
   }
 
 
-  def getCountPerTopic(): Map[String, Int] = {
+  def getCountPerTopic(): Future[Map[String, Int]] = {
     // Returns a map as lookup table for number of questions on each topic.
 
     val questionsPerTopic = MongoDAO.questionsPerTopic()
-    var myMap: Map[String, Int] = Map.empty
 
     val stream_topic_count = questionsPerTopic.map { st =>
       for {
-        s <- st
+        s <- st.toSeq
         topic <- s.getAs[String]("_id")
         num_questions <- s.getAs[Int]("num_questions")
-      } yield (topic, num_questions)
+      } yield topic -> num_questions //myMap = myMap ++ Map(topic -> num_questions) //yield (topic, num_questions)
     }
-
-    // TODO: Remove await
-    Await.result(stream_topic_count map (_.toList), 5.seconds) foreach {
-      case(topic, num_questions) => myMap = myMap ++ Map(topic -> num_questions)
-    }
-
-    myMap
+    stream_topic_count.map(sequence => sequence.toMap)
   }
 
 
-  def displayTopicsCount() = Action {
+  def displayTopicsCount() = Action.async { implicit context =>
     val CountPerTopic = getCountPerTopic()
-    Ok(scala.util.parsing.json.JSONObject(CountPerTopic).toString())
+
+    CountPerTopic.map { st =>
+      Ok(BSONArrayFormat.writes(BSONArray(
+        st.toString())))
+    }
   }
-
-
-
 }

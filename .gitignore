@@ -21,3 +21,10 @@ dist
 *.DS_Store
 public/raw_database/json_data/MATH*/*/*.json
 public/raw_database/json_topics/*.json
+
+build.sbt
+project/.sbtserver
+project/.sbtserver.lock
+project/play-fork-run.sbt
+project/sbt-ui.sbt
+/tmp

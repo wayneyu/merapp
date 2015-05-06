@@ -393,6 +393,29 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
+
+	def questionsPerTopic(): Future[Stream[BSONDocument]] = {
+		// To get the number of questions per topic
+		// db.questions.aggregate([{"$unwind": "$topics"}, {"$group": {"_id" : "$topics", total: {$sum: 1}}}])
+		val command = Aggregate(questionCollection.name, Seq(
+		Unwind("topics"),
+		GroupField("topics")(("num_questions", SumValue(1)))
+		))
+
+		db.command(command)
+	}
+
+	def 	topicParentAndChildren(): Future[Stream[BSONDocument]] = {
+		// To get all parent topics with children:
+		// db.topics.aggregate([{"$group": {"_id" : "$parent", subtopics: {$addToSet: "$topic"}}}])
+		val command = Aggregate(topicsCollection.name, Seq(
+			GroupField("parent")("subtopics" -> AddToSet("topic"))
+		))
+
+		db.command(command)
+	}
+
+
 	def addTopic(course: String, term_year: String, q:String, topic: String): Future[Option[BSONArray]] = {
 		for{
 			a <- updateTopic(course, term_year, q, topic, "$addToSet")
@@ -457,7 +480,6 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def insertVote(vote: Vote, course: String, term_year: String, qstr: String): Future[Option[BSONDocument]] = {
-
 		votesCollection.insert[Vote](vote)
 		for {
 			lv <- lastVote(vote)

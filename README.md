@@ -34,8 +34,8 @@ today=`date '+%Y_%m_%d_%H_%M_%S'`; out="./backup_$today"; export $(cat prod.env)
 
 import into local db
 `mongod --config /usr/local/etc/mongod.conf`
-`pw -aux | grep mongod`
-mongorestore backup_[today]/heroku_app29524184/ -d merdb
+`ps aux | grep mongod`
+`mongorestore backup_[today]/heroku_app29524184/ -d merdb`
 
 `export $(cat .env)`
 `./activator ~run`

@@ -275,7 +275,6 @@
     var current_question = $("#questionSelect option:selected").text();
     var all_questions = [];
     $("#questionSelect").children().each(function() {all_questions.push($(this).text())});
-    console.log(all_questions);
     var current_question_index = all_questions.indexOf(current_question);
     if (current_question_index == 0) {
             $("#prev_question").remove();

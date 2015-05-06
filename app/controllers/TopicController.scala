@@ -125,9 +125,9 @@ object TopicController extends ServiceComponent {
           case (parent, subList) => {
             var array_of_children: BSONArray = BSONArray.empty
             subList foreach {
-              case (topic) => array_of_children = array_of_children add BSONDocument("name" -> topic, "size" -> countMap(topic), "url" -> BSONString("/topics/" + topic))
+              case (topic) => array_of_children = array_of_children add BSONDocument("name" -> topic.replace("_", " "), "size" -> countMap(topic), "url" -> BSONString("/topics/" + topic))
             }
-            array_of_parents = array_of_parents add BSONDocument("name" -> parent, "children" -> array_of_children)
+            array_of_parents = array_of_parents add BSONDocument("name" -> parent.replace("_", " "), "children" -> array_of_children)
           }
         }
 

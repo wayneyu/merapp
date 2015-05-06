@@ -2,9 +2,9 @@
 
 @main("Topics"){
 <div class="white_background_box_90 topics">
-    <p>A list of key topics is below, each with associated questions and additional content. Click on a topic to see more.</p>
+    <p>A list of key topics is below, each with associated questions and additional content. Click on a topic to see more. If you cannot find the topic you want, try searching in the "Find Keywords" tab above.</p>
+    <span id="topics_bubble_chart" class="center" style="display: block"></span>
 
-    <p>If you cannot find the topic you want, try searching in the "Find Keywords" tab above.</p>
     <ul class="topics_list">
         @for( topic <- topics ){
             <li class="topic">
@@ -12,14 +12,15 @@
             </li>
         }
     </ul>
+
 </div>
 
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/topics.css")">
+<link rel="stylesheet" media="screen" href='@routes.Assets.at("stylesheets/topics.css")'>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-
-var margin = 20,
-  diameter = 960;
+<!-- For bubble chart -->
+var margin = 10,
+  diameter = 560;
 
 var color = d3.scale.linear()
   .domain([-1, 5])
@@ -31,7 +32,7 @@ var pack = d3.layout.pack()
   .size([diameter - margin, diameter - margin])
   .value(function(d) { return d.size; })
 
-var svg = d3.select(".topics").append("svg")
+var svg = d3.select("#topics_bubble_chart").append("svg")
   .attr("width", diameter)
   .attr("height", diameter)
   .append("g")
@@ -43,6 +44,8 @@ d3.json("/topics/withParents", function(error, root) {
   var focus = root,
     nodes = pack.nodes(root),
     view;
+
+  var focus_on_root = true;
 
   var circle = svg.selectAll("circle")
     .data(nodes)
@@ -56,9 +59,14 @@ d3.json("/topics/withParents", function(error, root) {
     .on("click", function(d) {
       if (focus !== d) {
         d3.event.stopPropagation();
-        if ( d.children !== undefined ) {
+        if ( d.children !== undefined) {
+          <!--Clicked on parent topic so zoom there-->
           zoom(d);
-        } else if ( d.children === undefined ) {
+        } else if (focus.name == "MER Topics"){
+          <!--Clicked on subtopic from outer layer, so zoom to parent-->
+          zoom(d.parent);
+        } else {
+          <!--Clicked on subtopic from within parent, so forward to subtopic-->
           window.location.href = d.url;
         }
       }
@@ -74,10 +82,6 @@ d3.json("/topics/withParents", function(error, root) {
     .text(function(d) { return d.name; });
 
   var node = svg.selectAll("circle,text");
-
-  d3.select(".topics")
-    .style("background", color(-1))
-    .on("click", function() { console.log("zoom root"); zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
 
@@ -106,7 +110,6 @@ d3.json("/topics/withParents", function(error, root) {
 });
 
 d3.select(self.frameElement).style("height", diameter + "px");
-
 </script>
 
 }

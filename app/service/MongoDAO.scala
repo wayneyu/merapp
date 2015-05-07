@@ -423,11 +423,24 @@ object MongoDAO extends Controller with MongoController {
 	def updateQualityFlag(course: String, term_year: String, q: String, newQualityFlag: String): Future[Option[BSONArray]] = {
 		// Adds newQualityFlag to "flags" and removes all other quality flags of the same type (Statement, Hint or Solution)
 		def flags_to_remove(): List[String] = {
-			// Returns all quality flags of the same type (Statement, Hint or Solution) as newQualityFlag
-			val Statement_or_Hint_or_Solution = newQualityFlag takeRight 1
-			val current_quality = newQualityFlag(newQualityFlag.length-1)
-			val endings = List("C", "R", "QB", "QG")
-			endings map (_ + Statement_or_Hint_or_Solution)
+			// Returns all quality flags of the same type (Question Statement (Q), Hint(H) or Solution) as newQualityFlag,
+			// except newQualityFlag itself.
+			// Because adding and removing is a future, so the order is not guaranteed,
+			// we have to make sure to exclude the newQualityFlag from the list of flags to remove.
+			// Otherwise adding might be performed first and newQualityFlag is removed immediately after.
+
+			// Quality flags have the form AB, where A indicates the current_quality and B is either Q (Question Statement),
+			// H (Hint) or S (Solution).
+			// eg RS means that Review is needed for the Solution
+
+			val QStatement_or_Hint_or_Solution = newQualityFlag takeRight 1
+			val current_quality = newQualityFlag slice (0, newQualityFlag.length-1)
+			// C = Content needs to be added.
+			// R = Review please.
+			// QB = Quality is bad/should be improved.
+			// QG = Quality is good. Final approval.
+			val qualityFlags = List("C", "R", "QB", "QG") diff List(current_quality)
+			qualityFlags map (_ + QStatement_or_Hint_or_Solution)
 		}
 
 		flags_to_remove() map {

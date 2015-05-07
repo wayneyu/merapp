@@ -1,4 +1,6 @@
 @(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
+@import service.{Visitor, Contributor, SuperUser}
+@user = @{context.user}
 @q = @{qn.question}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
@@ -141,17 +143,21 @@
 
     <br>
 
-    @if(context.user.isDefined){
-        <p id="statement_quality">
-            <div><Strong>Statement:</Strong>
-                <div class="btn-group quality_buttons" id="statement_quality_buttons">
-                    <button type="radio" class="btn quality_missing @if(statement_missing){active}" value="CQ">Missing</button>
-                    <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Need(s) review</button>
-                    <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Need(s) improvement</button>
-                    <button type="radio" class="btn quality_good @if(statement_good){active}" value="QGQ">Good quality</button>
+    <!--Contributors and SuperUsers are allowed to change the quality flags-->
+    @user match {
+        case _:Contributor | _:SuperUser => {
+            <p id="statement_quality">
+                <div><Strong>Statement:</Strong>
+                    <div class="btn-group quality_buttons" id="statement_quality_buttons">
+                        <button type="radio" class="btn quality_missing @if(statement_missing){active}" value="CQ">Missing</button>
+                        <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Need(s) review</button>
+                        <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Need(s) improvement</button>
+                        <button type="radio" class="btn quality_good @if(statement_good){active}" value="QGQ">Good quality</button>
+                    </div>
                 </div>
-            </div>
-        </p>
+            </p>
+        }
+        case _ => {}
     }
 
     <div class="main_box">

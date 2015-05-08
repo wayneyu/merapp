@@ -1,0 +1,12 @@
+@(flags: List[(String, Int)])(implicit context: service.AppContext[AnyContent])
+
+@main("Dashboard for Contributors"){
+<div class="white_background_box_90">
+    List all questions with the following flag:
+    <ul>
+        @for(f <- flags){
+            <li>(total: @f._2 questions) <a href="@routes.QuestionController.dashboard_flag(f._1)">@f._1</a></li>
+        }
+    </ul>
+</div>
+}

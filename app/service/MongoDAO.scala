@@ -171,18 +171,6 @@ object MongoDAO extends Controller with MongoController {
 		db.command(command)
 	}
 
-	def numberOfGoodQualitySolutions(): Future[Int] = {
-		// count the number of solutions with the flag 'QGS' (indicating good quality solution)
-		// db.questions.runCommand({count: 'questions', query: { flags: "QGS"}})
-		// FIXME!
-		val count = db.command(Count(
-			questionCollection.name,
-			Some(BSONDocument("flags" -> "QGS"))
-		))
-
-		count
-	}
-
 	def distinctContributors(): Future[Stream[BSONDocument]] = {
 		// List all contributors
 		// db.questions.distinct("contributors")
@@ -558,5 +546,25 @@ object MongoDAO extends Controller with MongoController {
 			Project("_id"->BSONInteger(0), "rating" -> BSONInteger(1))
 		))
 		db.command(command)
+	}
+
+	def questionsWithFlag(flag: String): Future[Stream[BSONDocument]] = {
+		val command = Aggregate(questionCollection.name, Seq(
+			Match(BSONDocument("flags" -> flag))
+		))
+		db.command(command)
+	}
+
+	def questionsWithFlagCount(flag: String): Future[Int] = {
+		val count = db.command(Count(
+			questionCollection.name,
+			Some(BSONDocument("flags" -> flag))
+		))
+		count
+	}
+
+	def numberOfGoodQualitySolutions(): Future[Int] = {
+		// count the number of solutions with the flag 'QGS' (indicating good quality solution)
+		questionsWithFlagCount("QGS")
 	}
 }

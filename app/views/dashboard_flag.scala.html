@@ -1,0 +1,26 @@
+@(title: String, questions: List[Question])(implicit context: service.AppContext[AnyContent])
+
+@main("Questions with the flag " + title){
+<div class="white_background_box_90">
+    <table class="questions_with_flag">
+        <tr>
+            <th>Course</th>
+            <th>Exam</th>
+            <th>Question</th>
+            <th>Flags</th>
+        </tr>
+        @for( q <- questions ){
+        <tr>
+            <td><a href="@routes.QuestionController.course(q.course)">@q.course</a></td>
+            <td><a href="@routes.QuestionController.exam(q.course, { q.term + '_' + q.year.toString() })">@q.term @q.year</a></td>
+            <td><a href="@routes.QuestionController.question(q.course, { q.term + '_' + q.year.toString() }, q.question)">
+                @q.question</a></td>
+
+            <td>@for( f <- q.flags ){
+                @f }
+            </td>
+        </tr>
+        }
+    </table>
+</div>
+}

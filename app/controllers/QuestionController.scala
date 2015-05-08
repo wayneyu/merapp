@@ -469,4 +469,30 @@ object QuestionController extends ServiceComponent with MongoController {
 			}
 		}
 	}
+
+	def dashboard_flag(flag: String) = UserAwaredAction.async { implicit context =>
+		val questions = MongoDAO.questionsWithFlag(flag).map {
+			_.toList
+		}
+
+		questions.map { st =>
+			Ok(views.html.dashboard_flag(flag, st.map(q => q.as[Question])))
+		}
+	}
+
+	def dashboard() = UserAwaredAction { implicit context =>
+		val qualityFlags = List("C", "R", "QB", "QG")
+		val contentTypes = List("Q", "H", "S")
+
+		val cross = for {
+			q <- qualityFlags
+			c <- contentTypes
+		// TODO! FIXME!
+		// count should be turned from Future[Int] to Int. Then uncomment next two lines
+		// count <- MongoDAO.questionsWithFlagCount(q + c)
+		//} yield (q + c, count)
+		} yield (q + c, 0) // replace the 0 with the actual count
+
+		Ok(views.html.dashboard(cross))
+	}
 }

@@ -469,4 +469,10 @@ object QuestionController extends ServiceComponent with MongoController {
 			}
 		}
 	}
+
+	def exams_in_progress() = UserAwaredAction { implicit context =>
+		// Display exams in progress to contributors
+		//Ok("hello")
+		Ok(views.html.dashboard_exams_in_progress("abc"))
+	}
 }

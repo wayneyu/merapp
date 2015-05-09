@@ -469,4 +469,72 @@ object QuestionController extends ServiceComponent with MongoController {
 			}
 		}
 	}
+
+
+	def exams_in_progress() = UserAwaredAction { implicit context =>
+		Ok(views.html.dashboard_exams_in_progress("Exams in progress"))
+	}
+
+	def flags_per_exam() = Action.async { implicit context =>
+//		Prepares json for donut chart for exams in progress on the dashboard
+		val flags_per_exam = MongoDAO.flags_per_exam()
+
+		val exam_flag_to_count = flags_per_exam.map { st =>
+			for {
+				s <- st.toSeq
+				x <- s.getAs[BSONDocument]("_id")
+				course <- x.getAs[String]("course")
+				term <- x.getAs[String]("term")
+				year <- x.getAs[Int]("year")
+				course_term_year = course + "_" + term.replace("December", "Dec").replace("April", "Apr") + "_" + year.toString
+				flag <- x.getAs[String]("flag")
+				count <- s.getAs[Int]("num_questions")
+			} yield (course_term_year, flag) -> count
+		} map (sequence => sequence.toMap)
+
+		val all_exams = flags_per_exam.map { st =>
+			for {
+				s <- st.toSeq
+				x <- s.getAs[BSONDocument]("_id")
+				course <- x.getAs[String]("course")
+				term <- x.getAs[String]("term")
+				year <- x.getAs[Int]("year")
+				course_term_year = course + "_" + term.replace("December", "Dec").replace("April", "Apr") + "_" + year.toString
+				url = "/exams/" + course + "/" + term + "_" + year.toString
+			} yield (course_term_year, url)
+		}
+
+		var res: BSONArray = BSONArray.empty
+
+		exam_flag_to_count.flatMap { get_count =>
+			all_exams map { exams =>
+				exams.distinct.sortWith(_._1 < _._1) foreach {
+					case (exam, url) =>
+						val CQ = get_count.getOrElse((exam, "CQ"), 0)
+						val RQ = get_count.getOrElse((exam, "RQ"), 0)
+						val QBQ = get_count.getOrElse((exam, "QBQ"), 0)
+						val QGQ = get_count.getOrElse((exam, "QGQ"), 0)
+						val CH = get_count.getOrElse((exam, "CH"), 0)
+						val RH = get_count.getOrElse((exam, "RH"), 0)
+						val QBH = get_count.getOrElse((exam, "QBH"), 0)
+						val QGH = get_count.getOrElse((exam, "QGH"), 0)
+						val CS = get_count.getOrElse((exam, "CS"), 0)
+						val RS = get_count.getOrElse((exam, "RS"), 0)
+						val QBS = get_count.getOrElse((exam, "QBS"), 0)
+						val QGS = get_count.getOrElse((exam, "QGS"), 0)
+
+						if (CQ + RQ + QBQ + CH + RH + QBH + CS + RS + QBS > 0)
+							res = res add BSONDocument(
+								"exam" -> exam.replace("_", " "),
+								"url" -> url,
+								"progress" -> BSONInteger(100*(2*QGQ + 5*QGH + 13*QGS + QBQ + 4*QBH + 12*QBS + RQ + 3*RH + 9*RS)/20/(CQ+RQ+QBQ+QGQ)),
+								"Statements" -> List(QGQ, QBQ, RQ, CQ),
+								"Hints" -> List(QGH, QBH, RH, CH),
+								"Solutions" -> List(QGS, QBS, RS, CS)
+							)
+				}
+				Ok(BSONArrayFormat.writes(res))
+			}
+		}
+	}
 }

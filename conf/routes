@@ -24,6 +24,7 @@ GET    /contributors                                    controllers.QuestionCont
 
 
 GET    /dashboard/exams_in_progress                     controllers.QuestionController.exams_in_progress()
+GET    /dashboard/exams_in_progress/flags_per_exam      controllers.QuestionController.flags_per_exam()
 
 
 GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)

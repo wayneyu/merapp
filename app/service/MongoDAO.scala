@@ -559,4 +559,12 @@ object MongoDAO extends Controller with MongoController {
 		))
 		db.command(command)
 	}
+
+	def flags_per_exam(): Future[Stream[BSONDocument]] = {
+		val command = Aggregate(questionCollection.name, Seq(
+			Unwind("flags"),
+			GroupMulti("course" -> "course", "term" -> "term", "year" -> "year", "flag" -> "flags")(("num_questions", SumValue(1)))
+		))
+		db.command(command)
+	}
 }

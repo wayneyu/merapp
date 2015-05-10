@@ -72,7 +72,7 @@ for (var i = 0; i < dataset.length; ++i) {
         .text("Solutions")
 
 
-//    Finally, add progress percentag
+//    Finally, add progress percentage
     var text = svg.append("text")
         .attr("x", 0)
         .attr("y", -6 + 2*circle_width)

@@ -362,3 +362,113 @@ function isInMathEnvironment(aString) {
 
 };
 
+
+
+$(document).ready(function(){
+$("#my_rating").rating({
+    stars: 5,
+    min: 0,
+    max: 5,
+    step: 1,
+    starCaptions: {1: "Way over my head", 2: "Difficult", 3: "A good challenge", 4: "Relatively simple",
+                   5: "Easy as &pi;"},
+    starCaptionClasses: {1: "text-danger",
+                         2: "text-warning",
+                         3: "text-info",
+                         4: "text-primary",
+                         5: "text-success"}
+});
+
+$('#my_rating').on('rating.change', function(event, value, caption) {
+    debugger;
+    console.log(value);
+    console.log(caption);
+    $.ajax({
+      type: 'POST',
+      url: window.location.pathname + "/vote/" + value,
+      success: function(d){
+        debugger;
+        $("span.easiness_rating")[0].textContent = d.rating.toFixed(1);
+        $("span.num_votes")[0].textContent = "(" + d.num_votes + " votes)";
+      },
+      error: function(obj, st, err){
+        alert(err);
+      }
+    })
+});
+
+var topicsCache = [];
+$(".question_tags").select2({
+    tags: true,
+    tokenSeparators: [",", " "],
+    minimumInputLength: 1,
+    createSearchChoice: function(term, data) {
+        if ($(data).filter(function() {
+          return this.text.localeCompare(term) === 0;
+        }).length === 0) {
+          return {
+            id: term,
+            text: term
+          };
+        }
+    },
+    multiple: true,
+    data:{ results: topicsCache},
+    initSelection: function (element, callback) {
+        var data = [];
+        $(element.val().split(",")).each(function () {
+            data.push({id: this, text: this});
+        });
+        callback(data);
+    }
+})
+.on("select2-selecting", function(e){
+    var newTag = e.choice.text;
+    console.log(newTag);
+    $.ajax({
+        type: 'POST',
+        url: window.location.pathname + "/addtopic/" + newTag,
+        success: function(d){
+            debugger;
+            $(".question_tags");
+            console.log("added new tag");
+        },
+        error: function(obj, st, err){
+            alert(err + "\n" + obj.responseText);
+        }
+    })
+})
+.on("select2-removing",function(e){
+    var removedTag = e.choice.text;
+    console.log("removing tag " + removedTag);
+    $.ajax({
+        type: 'POST',
+        url: window.location.pathname + "/removetopic/" + removedTag,
+        success: function(d){
+            console.log("removed tag");
+        },
+        error: function(obj, st, err){
+            alert(err + "\n" + obj.responseText);
+        }
+    })
+});
+});
+
+$('body').on('click', '.quality_buttons button', function (e) {
+    if (!$(this).hasClass('active')){
+        <!--Only fire if active button changed-->
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        var newQualityFlag = $(this).val();
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/updateQuality/" + newQualityFlag,
+            success: function(d){
+                //
+            },
+            error: function(obj, st, err){
+                alert(err + "\n" + obj.responseText);
+            }
+        })
+    };
+});

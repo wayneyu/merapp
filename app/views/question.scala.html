@@ -143,21 +143,18 @@
 
     <br>
 
-    <!--Contributors and SuperUsers are allowed to change the quality flags-->
-    @user match {
-        case _:Contributor | _:SuperUser => {
+    <!--TODO: Contributors and SuperUsers are allowed to change the quality flags-->
+    @if(context.user.isDefined){
             <p id="statement_quality">
                 <div><Strong>Statement:</Strong>
                     <div class="btn-group quality_buttons" id="statement_quality_buttons">
                         <button type="radio" class="btn quality_missing @if(statement_missing){active}" value="CQ">Missing</button>
-                        <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Need(s) review</button>
-                        <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Need(s) improvement</button>
+                        <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Needs review</button>
+                        <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Needs improvement</button>
                         <button type="radio" class="btn quality_good @if(statement_good){active}" value="QGQ">Good quality</button>
                     </div>
                 </div>
             </p>
-        }
-        case _ => {}
     }
 
     <div class="main_box">
@@ -203,11 +200,11 @@
 
     @if(context.user.isDefined){
         <p id="hint_quality">
-            <div><Strong>Hints:</Strong>
+            <div><Strong>Hint(s):</Strong>
                 <div class="btn-group quality_buttons" id="hint_quality_buttons">
                     <button type="button" class="btn quality_missing @if(hint_missing){active}" value="CH">Missing</button>
-                    <button type="button" class="btn quality_review @if(hint_review){active}" value="RH">Need(s) review</button>
-                    <button type="button" class="btn quality_improve @if(hint_improve){active}" value="QBH">Need(s) improvement</button>
+                    <button type="button" class="btn quality_review @if(hint_review){active}" value="RH">Needs review</button>
+                    <button type="button" class="btn quality_improve @if(hint_improve){active}" value="QBH">Needs improvement</button>
                     <button type="button" class="btn quality_good @if(hint_good){active}" value="QGH">Good quality</button>
                 </div>
             </div>
@@ -266,11 +263,11 @@
 
     @if(context.user.isDefined){
         <p id="solution_quality">
-            <div><Strong>Solutions:</Strong>
+            <div><Strong>Solution(s):</Strong>
                 <div class="btn-group quality_buttons" id="solution_quality_buttons">
                     <button type="button" class="btn quality_missing @if(solution_missing){active}" value="CS">Missing</button>
-                    <button type="button" class="btn quality_review @if(solution_review){active}" value="RS">Need(s) review</button>
-                    <button type="button" class="btn quality_improve @if(solution_improve){active}" value="QBS">Need(s) improvement</button>
+                    <button type="button" class="btn quality_review @if(solution_review){active}" value="RS">Needs review</button>
+                    <button type="button" class="btn quality_improve @if(solution_improve){active}" value="QBS">Needs improvement</button>
                     <button type="button" class="btn quality_good @if(solution_good){active}" value="QGS">Good quality</button>
                 </div>
             </div>

@@ -261,3 +261,7 @@ button[class*=" quality_"] {
     border-width: 1px;
     border-color: black;
 }
+
+.latex_button {
+    white-space: nowrap;
+}

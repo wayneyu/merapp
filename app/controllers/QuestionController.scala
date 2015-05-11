@@ -470,11 +470,6 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
-
-	def exams_in_progress() = UserAwaredAction { implicit context =>
-		Ok(views.html.dashboard_exams_in_progress("Exams in progress"))
-	}
-
 	def flags_per_exam() = Action.async { implicit context =>
 //		Prepares json for donut chart for exams in progress on the dashboard
 		val flags_per_exam = MongoDAO.flags_per_exam()
@@ -535,6 +530,52 @@ object QuestionController extends ServiceComponent with MongoController {
 				}
 				Ok(BSONArrayFormat.writes(res))
 			}
+		}
+	}
+
+	def dashboard_flag(flag: String) = UserAwaredAction.async { implicit context =>
+		val questions = MongoDAO.questionsWithFlag(flag).map {
+			_.toList
+		}
+
+		questions.map { st =>
+			Ok(views.html.dashboard_flag(flag, st.map(q => q.as[Question])))
+		}
+	}
+
+
+	def flags_to_human(flag: String): String = {
+		// translates cryptic flag abbreviations to english
+		flag match {
+			case "CQ" => "Content for question statement"
+			case "RQ" => "Review question statement"
+			case "QBQ" => "Improve question statement"
+			case "QGQ" => "Good quality question statement"
+			case "CH" => "Content for hint"
+			case "RH" => "Review hint"
+			case "QBH" => "Improve hint"
+			case "QGH" => "Good quality hint"
+			case "CS" => "Content for solution"
+			case "RS" => "Review solution"
+			case "QBS" => "Improve solution"
+			case "QGS" => "Good quality solution"
+		}
+	}
+
+
+	def dashboard() = UserAwaredAction.async { implicit context =>
+		val qualityFlags = List("R", "QB")
+		val contentTypes = List("Q", "H", "S")
+
+		val flags = for {
+			q <- qualityFlags
+			c <- contentTypes
+		} yield q + c
+
+		val res = Future.traverse(flags)(f => Future(flags_to_human(f)) zip MongoDAO.questionsWithFlagCount(f))
+
+		res map { st =>
+			Ok(views.html.dashboard(st))
 		}
 	}
 }

@@ -1,3 +1,7 @@
+//Start: Report number of exams in progress
+$.getJSON("dashboard/flags_per_exam").done(function(data){$("#num_exam_in_progress").text(data.length);});
+//End: Report number of exams in progress
+
 //Begin: Donut charts for exams in progress
 var width = 260,
 height = 250,
@@ -10,7 +14,7 @@ var pie = d3.layout.pie()
 
 var arc = d3.svg.arc();
 
-d3.json("/dashboard/exams_in_progress/flags_per_exam", function(error, dataset) {
+d3.json("/dashboard/flags_per_exam", function(error, dataset) {
 if (error) return console.error(error);
 
 for (var i = 0; i < dataset.length; ++i) {

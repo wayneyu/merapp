@@ -1,0 +1,37 @@
+@(flags: List[(String, Int)])(implicit context: service.AppContext[AnyContent])
+
+@main("Dashboard for Contributors"){
+<div class="white_background_box_90">
+    <h1>Questions in progress</h1>
+    The following number of questions statements, hints and solutions need review or improvement.
+    <table>
+        <tr>
+            <th style="padding-right:15px">Flag</th>
+            <th>Count</th>
+        </tr>
+        @for(f <- flags){
+            <tr>
+                <td style="padding-right:15px">
+                    <a href="@routes.QuestionController.dashboard_flag(f._1)">@f._1</a>
+                </td>
+                <td>
+                    @f._2
+                </td>
+            </tr>
+        }
+        </table>
+
+    <h1>Exams in progress</h1>
+    <p> The following <Strong id="num_exam_in_progress"></Strong> exams need some work. We require
+        <Strong style="color: #5bc0de">content</Strong>,
+        <Strong style="color: #f0ad4e">review</Strong>,
+        <Strong style="color: #d9534f">improvement</Strong> so that all questions become
+        <Strong style="color: #5cb85c">good quality</Strong>.
+    </p>
+
+    <div id="exams_in_progress"></div>
+</div>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="@routes.Assets.at("javascripts/dashboard_visualizations.js")" type="text/javascript"></script>
+}

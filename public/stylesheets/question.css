@@ -239,3 +239,7 @@ background-color: #eeeeee;
     width: 50%;
     text-align: center;
 }
+
+.questions_with_flag th, .questions_with_flag td {
+    padding: 0 10px 0 10px;
+}

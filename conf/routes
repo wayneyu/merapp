@@ -23,8 +23,11 @@ GET    /numSols                                         controllers.QuestionCont
 GET    /contributors                                    controllers.QuestionController.distinctContributors()
 
 
-GET    /dashboard/exams_in_progress                     controllers.QuestionController.exams_in_progress()
-GET    /dashboard/exams_in_progress/flags_per_exam      controllers.QuestionController.flags_per_exam()
+# For contributors
+GET    /dashboard                                       controllers.QuestionController.dashboard()
+GET    /dashboard/flags_per_exam                        controllers.QuestionController.flags_per_exam()
+GET    /dashboard/:flag                                 controllers.QuestionController.dashboard_flag(flag)
+
 
 
 GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)

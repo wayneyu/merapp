@@ -2,11 +2,22 @@
 
 @main("Dashboard for Contributors"){
 <div class="white_background_box_90">
-    List all questions with the following flag:
-    <ul>
+    The following number of questions statements, hints and solutions need review or improvement.
+    <table>
+        <tr>
+            <th style="padding-right:15px">Flag</th>
+            <th>Count</th>
+        </tr>
         @for(f <- flags){
-            <li>(total: @f._2 questions) <a href="@routes.QuestionController.dashboard_flag(f._1)">@f._1</a></li>
+            <tr>
+                <td>
+                    <a href="@routes.QuestionController.dashboard_flag(f._1)">@f._1</a>
+                </td>
+                <td>
+                    @f._2
+                </td>
+            </tr>
         }
-    </ul>
+        </table>
 </div>
 }

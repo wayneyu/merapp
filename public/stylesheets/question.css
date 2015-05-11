@@ -243,3 +243,29 @@ background-color: #eeeeee;
 .questions_with_flag th, .questions_with_flag td {
     padding: 0 10px 0 10px;
 }
+
+.quality_missing.active {
+    background-color: SkyBlue;
+}
+
+.quality_review.active {
+    background-color: orange;
+}
+
+.quality_improve.active {
+    background-color: OrangeRed;
+}
+
+.quality_good.active {
+    background-color: LimeGreen;
+}
+
+button[class*=" quality_"] {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.latex_button {
+    white-space: nowrap;
+}

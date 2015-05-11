@@ -1,4 +1,6 @@
 @(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
+@import service.{Visitor, Contributor, SuperUser}
+@user = @{context.user}
 @q = @{qn.question}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
@@ -12,50 +14,62 @@
 @solvers = @{qn.solvers}
 @contributors = @{qn.contributors}
 @flags = @{qn.flags}
+@statement_missing = @{flags.contains("CQ")}
+@statement_review = @{flags.contains("RQ")}
+@statement_improve = @{flags.contains("QBQ")}
+@statement_good = @{flags.contains("QGQ")}
+@hint_missing = @{flags.contains("CH")}
+@hint_review = @{flags.contains("RH")}
+@hint_improve = @{flags.contains("QBH")}
+@hint_good = @{flags.contains("QGH")}
+@solution_missing = @{flags.contains("CS")}
+@solution_review = @{flags.contains("RS")}
+@solution_improve = @{flags.contains("QBS")}
+@solution_good = @{flags.contains("QGS")}
 @latexbuttons = {
 <div id="inputbuttons">
     <!-- SYMBOLS -->
     <div class=buttonbox style="width:40%;">
-        <a id="button17">${\color{lightgray}x}^{p}$</a>
-        <a id="button1">${\color{lightgray}x}_{n}$</a>
-        <a id="button3">$\alpha$</a>
-        <a id="button12">$\beta$</a>
-        <a id="button13">$\gamma$</a>
-        <a id="button14">$\delta$</a>
-        <a id="button15">$\epsilon$</a>
-        <a id="button18">$\lambda$</a>
-        <a id="button11">$\pi$</a>
-        <a id="button10">$\infty$</a>
-        <a id="button21">$\mathbb{R}$</a>
-        <a id="button22">$\mathbb{C}$</a>
-        <a id="button26">$<$</a>
-        <a id="button23">$\leq$</a>
-        <a id="button25">$>$</a>
-        <a id="button24">$\geq$</a>
-        <a id="button29">$\sim$</a>
-        <a id="button31">$\dots$</a>
+        <a id="button17" class="latex_button">${\color{lightgray}x}^{p}$</a>
+        <a id="button1" class="latex_button">${\color{lightgray}x}_{n}$</a>
+        <a id="button3" class="latex_button">$\alpha$</a>
+        <a id="button12" class="latex_button">$\beta$</a>
+        <a id="button13" class="latex_button">$\gamma$</a>
+        <a id="button14" class="latex_button">$\delta$</a>
+        <a id="button15" class="latex_button">$\epsilon$</a>
+        <a id="button18" class="latex_button">$\lambda$</a>
+        <a id="button11" class="latex_button">$\pi$</a>
+        <a id="button10" class="latex_button">$\infty$</a>
+        <a id="button21" class="latex_button">$\mathbb{R}$</a>
+        <a id="button22" class="latex_button">$\mathbb{C}$</a>
+        <a id="button26" class="latex_button">$<$</a>
+        <a id="button23" class="latex_button">$\leq$</a>
+        <a id="button25" class="latex_button">$>$</a>
+        <a id="button24" class="latex_button">$\geq$</a>
+        <a id="button29" class="latex_button">$\sim$</a>
+        <a id="button31" class="latex_button">$\dots$</a>
     </div>
     <!-- OPERATORS -->
     <div class=buttonbox style="width:30%;">
-        <a id="button20">$\frac{a}{b}$</a>
-        <a id="button4">$\frac{d}{dx}$</a>
-        <a id="button19">$\frac{d^{2}}{dx^{2}}$</a>
-        <a id="button2">$\int_{a}^{b}f(x)\,dx$</a>
-        <a id="button9">$\lim_{x \rightarrow a}$</a>
-        <a id="button27">$\sin\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button28">$\cos\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button30">$\sum_{i = 0}^{N}$</a>
+        <a id="button20" class="latex_button">$\frac{a}{b}$</a>
+        <a id="button4" class="latex_button">$\frac{d}{dx}$</a>
+        <a id="button19" class="latex_button">$\frac{d^{2}}{dx^{2}}$</a>
+        <a id="button2" class="latex_button">$\int_{a}^{b}f(x)\,dx$</a>
+        <a id="button9" class="latex_button">$\lim_{x \rightarrow a}$</a>
+        <a id="button27" class="latex_button">$\sin\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button28" class="latex_button">$\cos\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button30" class="latex_button">$\sum_{i = 0}^{N}$</a>
     </div>
     <!-- ENVIRONMENTS, ETC. -->
     <div class=buttonbox style="width:20%;">
-        <a id="button5"><font color="blue">blue text</font></a>
-        <a id="button32"><font color="red">red text</font></a>
-        <a id="button6">equation</a>
-        <a id="button16">align</a>
-        <a id="button33">matrix</a>
-        <a id="button34">piecewise</a>
-        <a id="button7">$\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button8">$\left[{\color{lightgray}\dots} \right]$</a>
+        <a id="button5" class="latex_button"><font color="blue">blue text</font></a>
+        <a id="button32" class="latex_button"><font color="red">red text</font></a>
+        <a id="button6" class="latex_button">equation</a>
+        <a id="button16" class="latex_button">align</a>
+        <a id="button33" class="latex_button">matrix</a>
+        <a id="button34" class="latex_button">piecewise</a>
+        <a id="button7" class="latex_button">$\left({\color{lightgray}\dots} \right)$</a>
+        <a id="button8" class="latex_button">$\left[{\color{lightgray}\dots} \right]$</a>
     </div>
 </div>
 <div class="message">
@@ -109,35 +123,57 @@
     }
     </div>
 
-    <div id="back_from_question">
-        Back to <a href="@routes.QuestionController.course(selectedCourse)">@selectedCourse</a> or <a href="@routes.QuestionController.exam(selectedCourse, term_year)">@term_year.replace("_", " ")</a>.
-    </div>
+
+    @if(selectedCourse){
+        <div id="back_from_question">
+            Back to <a href="@routes.QuestionController.course(selectedCourse)">@selectedCourse</a> or <a href="@routes.QuestionController.exam(selectedCourse, term_year)">@term_year.replace("_", " ")</a>.
+        </div>
+    }
 
 
     <br>
 
 
     <div id="prev_next_question" style="margin: 0 auto; text-align: center;">
-        <a id="prev_question">&larr; Previous question</a>
-        @if(context.user.isDefined){
-            <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>
+        @if(!(editable)){
+            <a id="prev_question">&larr; Previous question</a>
+            @if(context.user.isDefined){
+                <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>
+            }
+            <a id="next_question">Next question &rarr;</a>
+        } else {
+        <a href="@routes.QuestionController.question(course, term_year, q)">Back to question view</a>
         }
-        <a id="next_question">Next question &rarr;</a>
     </div>
 
+
     <br>
+
+    
+    <!--TODO: Contributors and SuperUsers are allowed to change the quality flags-->
+    @if(context.user.isDefined & selectedCourse){
+            <p id="statement_quality">
+                <div><Strong>Statement:</Strong>
+                    <div class="btn-group quality_buttons" id="statement_quality_buttons">
+                        <button type="radio" class="btn quality_missing @if(statement_missing){active}" value="CQ">Missing</button>
+                        <button type="radio" class="btn quality_review @if(statement_review){active}" value="RQ">Needs review</button>
+                        <button type="radio" class="btn quality_improve @if(statement_improve){active}" value="QBQ">Needs improvement</button>
+                        <button type="radio" class="btn quality_good @if(statement_good){active}" value="QGQ">Good quality</button>
+                    </div>
+                </div>
+            </p>
+    }
 
     <div class="main_box">
         <div class="box_title">
             @q
-            <div class="easiness_rating_box">
-                @if(num_votes > 0){
+            @if(num_votes > 0){
+                <div class="easiness_rating_box">
                     Easiness: <span class="easiness_rating" title=@num_votes>@(Math.round(rating*10)/10.toDouble)/5</span>
                     <span class="num_votes">(@num_votes @if(num_votes > 1){votes} else {vote})</span>
-                } else {}
-            </div>
+                </div>
+            }
         </div>
-
         <div>@Html(stmt)</div>
     </div>
 
@@ -167,6 +203,19 @@
 
         If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
         </div>    
+    }
+
+    @if(context.user.isDefined & selectedCourse){
+        <p id="hint_quality">
+            <div><Strong>Hint(s):</Strong>
+                <div class="btn-group quality_buttons" id="hint_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(hint_missing){active}" value="CH">Missing</button>
+                    <button type="button" class="btn quality_review @if(hint_review){active}" value="RH">Needs review</button>
+                    <button type="button" class="btn quality_improve @if(hint_improve){active}" value="QBH">Needs improvement</button>
+                    <button type="button" class="btn quality_good @if(hint_good){active}" value="QGH">Good quality</button>
+                </div>
+            </div>
+        </p>
     }
 
     @for( (h, ind) <- hints.zipWithIndex ) {
@@ -217,6 +266,19 @@
                 </div>
             </div>
         </div>
+    }
+
+    @if(context.user.isDefined & selectedCourse){
+        <p id="solution_quality">
+            <div><Strong>Solution(s):</Strong>
+                <div class="btn-group quality_buttons" id="solution_quality_buttons">
+                    <button type="button" class="btn quality_missing @if(solution_missing){active}" value="CS">Missing</button>
+                    <button type="button" class="btn quality_review @if(solution_review){active}" value="RS">Needs review</button>
+                    <button type="button" class="btn quality_improve @if(solution_improve){active}" value="QBS">Needs improvement</button>
+                    <button type="button" class="btn quality_good @if(solution_good){active}" value="QGS">Good quality</button>
+                </div>
+            </div>
+        </p>
     }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
@@ -369,5 +431,24 @@ $(".question_tags").select2({
         }
     })
 });
+});
+
+$('body').on('click', '.quality_buttons button', function (e) {
+    if (!$(this).hasClass('active')){
+        <!--Only fire if active button changed-->
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        var newQualityFlag = $(this).val();
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/updateQuality/" + newQualityFlag,
+            success: function(d){
+                //
+            },
+            error: function(obj, st, err){
+                alert(err + "\n" + obj.responseText);
+            }
+        })
+    };
 });
 </script>

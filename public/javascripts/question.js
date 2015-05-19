@@ -36,19 +36,17 @@
     });
 
     $("[id$='_edit'] .submit_button").click(function (){
-        var parentId = $(this).parent().parent().parent().attr('id');
-        console.log("hello");
-        console.log(parentId);
-        var key = parentId.match('.*(?=_edit)')[0]
-        if ("hints_html_0_edit".match('_[0-9]*_') == undefined){
-            key = key.match('.*(?=_edit)')[0].replace(/_(?!.*_)/,".")
-        }
         var url = window.location.pathname;
-        var textarea = $("#" + parentId + " textarea");
-        var newValue = textarea.val();
+
+        var parentId = $(this).parent().parent().parent().attr('id');
+        var newValue = $("#" + parentId + " textarea").val();
+
+//        key is of the form type_html_edit or type_html-num_edit where type is one of [statement, hints, answer, sols]
+//        if type indicates the array hints or sols we want to rewrite it to type_html.num because that is what MongoDB expects
         var data = {};
+        var key = parentId.split('_edit')[0].replace('-', '.');
         data[key] = newValue;
-        debugger;
+
         $.ajax({
           contentType: 'application/json',
           type: 'POST',

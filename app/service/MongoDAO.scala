@@ -210,7 +210,7 @@ object MongoDAO extends Controller with MongoController {
 		val pattern = ".*\\([a-zA-Z]+\\).*"
 		val str1 = tis
 		val str2 = tat
-		def diff(s1: String, s2: String) = Math.abs(s1.size - s2.size)
+		def diff(s1: String, s2: String) = Math.abs(s1.length - s2.length)
 		val postfix = " (a)"
 		val prefix = "0"
 
@@ -225,8 +225,8 @@ object MongoDAO extends Controller with MongoController {
 		}
 
 		def prepend(str1: String, str2: String): (String, String) = {
-			val n1 = str1.size
-			val n2 = str2.size
+			val n1 = str1.length
+			val n2 = str2.length
 			if (n1 < n2) (prep(diff(str1, str2), str1, 0), str2)
 			else if (n1 > n2) (str1, prep(diff(str1, str2), str2, 0))
 			else (str1, str2)
@@ -532,7 +532,7 @@ object MongoDAO extends Controller with MongoController {
 		// If the user has voted before, lastOption.isDefined == true
 		val res = lastVote match {
 			case Some(v) =>
-				if (!v.qid.equals(vote.qid) || !v.userid.equals(vote.userid))
+				if (!v.questionID.equals(vote.questionID) || !v.userID.equals(vote.userID))
 					throw new IllegalArgumentException("updateQuestionRating, lastVote: " + lastVote + " vote: " + vote)
 				db.command(command(0, (oldTotalRating + (vote.rating - v.rating))/q.num_votes))
 			case None =>
@@ -540,8 +540,8 @@ object MongoDAO extends Controller with MongoController {
 		}
 
 		res onComplete {
-			case Success(res) =>
-				val q = res.map(_.as[Question]).get
+			case Success(qr) =>
+				val q = qr.map(_.as[Question]).get
 				Logger.debug("new rating: " + q.rating + " num_votes: " + q.num_votes)
 			case Failure(exception) =>
 		}
@@ -555,16 +555,16 @@ object MongoDAO extends Controller with MongoController {
 	def lastVote(vote: Vote): Future[Option[Vote]] = {
 		// get last vote from user
 		val command = Aggregate(votesCollection.name, Seq(
-			Match(BSONDocument("qid" -> vote.qid, "userid" -> vote.userid,
-				"timestamp" -> BSONDocument(Seq("$lt" -> BSONDateTime(vote.timestamp)))
+			Match(BSONDocument("questionID" -> vote.questionID, "userID" -> vote.userID,
+				"time" -> BSONDocument(Seq("$lt" -> BSONDateTime(vote.time)))
 			)),
-			Sort(Seq(Descending("timestamp")))
+			Sort(Seq(Descending("time")))
 		))
 
 		val res = db.command(command)
 
 		res onComplete {
-			case Success(res) => Logger.debug("last vote: " + res.headOption.map(_.as[Vote].toString()))
+			case Success(v) => Logger.debug("last vote: " + v.headOption.map(_.as[Vote].toString()))
 			case Failure(exception) =>
 		}
 
@@ -575,8 +575,8 @@ object MongoDAO extends Controller with MongoController {
 
 	def getRating(user: User, qid: String): Future[Stream[BSONDocument]] = {
 		val command = Aggregate(votesCollection.name, Seq(
-			Match(BSONDocument("userid" -> user.userkey.key, "qid" -> qid)),
-			Sort(Seq(Descending("timestamp"))),
+			Match(BSONDocument("userID" -> user.userkey.key, "questionID" -> qid)),
+			Sort(Seq(Descending("time"))),
 			Project("_id"->BSONInteger(0), "rating" -> BSONInteger(1))
 		))
 		db.command(command)

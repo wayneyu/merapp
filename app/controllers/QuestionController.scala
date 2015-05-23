@@ -451,6 +451,7 @@ object QuestionController extends ServiceComponent with MongoController {
 
 	def vote(course: String, term_year: String, question: String, rating: Int) = VisitorAction.async { implicit context =>
 		val timestamp = Calendar.getInstance().getTimeInMillis
+
 		val vote = Vote(context.user.get.userkey.key, Question.qid(course, term_year, question), timestamp, rating)
 		val res = MongoDAO.insertVote(vote, course, term_year, question)
 

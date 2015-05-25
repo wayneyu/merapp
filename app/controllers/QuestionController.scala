@@ -80,6 +80,7 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+
 	def question(course: String, term_year: String, q: String) = UserAwaredAction.async { implicit context =>
 		questionResult(course, term_year, q, false)
 	}

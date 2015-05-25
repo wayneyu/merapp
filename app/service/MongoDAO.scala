@@ -31,6 +31,14 @@ object MongoDAO extends Controller with MongoController {
 	val profilesCollection = db[BSONCollection]("profiles")
 	val votesCollection = db[BSONCollection]("votes")
 
+	def questionQuery(ID: String): Future[List[BSONDocument]] = {
+		val cursor: Cursor[BSONDocument] = questionCollection.
+			find(BSONDocument("ID" -> ID)).
+			cursor[BSONDocument]
+
+		// gather all the JsObjects in a list
+		cursor.collect[List]()
+	}
 	def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
 		val (term: String, year: Int) = getTermAndYear(term_year)
 
@@ -271,7 +279,8 @@ object MongoDAO extends Controller with MongoController {
 		val searchCommand = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("$text" -> BSONDocument("$search" -> searchString))),
 			Project("_id"->BSONInteger(0), "textScore" -> BSONDocument("$meta" -> "textScore"), "course" -> BSONInteger(1),
-				"year" -> BSONInteger(1), "term" -> BSONInteger(1), "question" -> BSONInteger(1), "statement_html" -> BSONInteger(1)),
+				"year" -> BSONInteger(1), "term" -> BSONInteger(1), "question" -> BSONInteger(1), "statement_html" -> BSONInteger(1),
+			"ID" -> BSONInteger(1)),
 			Sort(Seq(Descending("textScore")))
 		))
 

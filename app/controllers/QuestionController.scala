@@ -34,9 +34,9 @@ object QuestionController extends ServiceComponent with MongoController {
 
 		val courseAndYearResult = for {
 			cr <- coursesResult
-			tr <- distinctTerms(cr(0))
-			yr <- distinctYears(cr(0), tr(0))
-			qr <- distinctQuestions(cr(0), getTermYear(tr(0), yr(0)))
+			tr <- distinctTerms(cr.head)
+			yr <- distinctYears(cr.head, tr.head)
+			qr <- distinctQuestions(cr.head, tr.head, yr.head)
 		} yield (cr, tr, yr, qr)
 
 		courseAndYearResult.map { case (courseList, termList, yearList, questionList) =>
@@ -46,7 +46,7 @@ object QuestionController extends ServiceComponent with MongoController {
 
 	private def questionResult(course: String, term_year: String, q: String, editable: Boolean = false)
 	                          (implicit context: AppContext[AnyContent]): Future[Result] = {
-		val (term: String, year: Int) = getTermAndYear(term_year)
+		val (term: String, year: Int) = assets.term_and_year_from_term_year(term_year)
 
 		val question = MongoDAO.questionQuery(course, term_year, q)
 		val termsResult = distinctTerms(course)
@@ -183,15 +183,6 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
-	def getTermAndYear(term_year: String): (String, Int) = {
-		val tysplit = term_year.split("_")
-		val term = tysplit(0)
-		val year = tysplit(1).toInt
-		(term, year)
-	}
-
-	def getTermYear(term: String, year: String) = term + "_" + year
-
 	def questionInJson(course: String, term_year: String, q: String) = Action.async {
 		MongoDAO.questionQuery(course, term_year, q).map(l => Ok(BSONArray.pretty(BSONArray(l))))
 	}
@@ -286,15 +277,23 @@ object QuestionController extends ServiceComponent with MongoController {
 	}
 
 	def distinctQuestions(course: String, term_year: String): Future[List[String]] = {
-		MongoDAO.distinctQuestions(course, term_year).map {
-			st => st.map(d => d.getAs[String]("question").get).sortWith(questionSort).toList
+		MongoDAO.distinct_question_numbers_for_course_and_term_year(course, term_year).map {
+			st => st.map(d => d.getAs[String]("number").get).toList
 		}
 	}
 
-	def distinctQuestionsJSON(course: String, term_year: String) = Action.async {
-		MongoDAO.distinctQuestions(course, term_year).map {
+	def distinctQuestions(course: String, term: String, year: String): Future[List[String]] = {
+		distinctQuestions(course, assets.term_year_from_term_and_year(term, year))
+	}
+
+  def distinctQuestions(course: String, term: String, year: Int): Future[List[String]] = {
+    distinctQuestions(course, assets.term_year_from_term_and_year(term, year))
+  }
+
+  def distinctQuestionsJSON(course: String, term_year: String) = Action.async {
+		MongoDAO.distinct_question_numbers_for_course_and_term_year(course, term_year).map {
 			st => Ok(BSONArrayFormat.writes(
-				BSONArray(st.map(d => d.getAs[BSONString]("question").get).sortWith(questionSort)
+				BSONArray(st.map(d => d.getAs[BSONString]("number").get)
 				)))
 		}
 	}
@@ -318,66 +317,6 @@ object QuestionController extends ServiceComponent with MongoController {
 			))
 		}
 	}
-/*
-
-			Action.async {
-			MongoDAO.getContributors().map {
-				st => Ok(BSONArrayFormat.writes(
-				BSONArray(st.map(d => d.getAs[BSONString]("contributors").get).sortWith(questionSort))
-				))
-			}
-		}
-*/
-
-		/*
-		MongoDAO.numberOfGoodQualitySolutions().map {
-			st => st(BSONArrayFormat.writes(
-			BSONArray(st.map(d => d.getAs[BSONString]("question").get))
-			))
-		}
-		*/
-
-
-	def questionSort(tis: BSONDocument, tat: BSONDocument): Boolean = {
-		questionSort(tis.getAs[String]("question").get, tat.getAs[String]("question").get)
-	}
-
-	def questionSort(tis: BSONString, tat: BSONString): Boolean = {
-		questionSort(tis.value, tat.value)
-	}
-
-	def questionSort(tis: String, tat: String): Boolean = {
-		val pattern = ".*\\([a-zA-Z]+\\).*"
-		val str1 = tis
-		val str2 = tat
-		def diff(s1: String, s2: String) = Math.abs(s1.size - s2.size)
-		val postfix = " (a)"
-		val prefix = "0"
-
-		def prep(nprefix: Int, str: String, npostfix: Int) = prefix * nprefix + str + postfix * npostfix
-
-		def append(str1: String, str2: String): (String, String) = {
-			val m1 = str1.matches(pattern)
-			val m2 = str2.matches(pattern)
-			if (!(m1 ^ m2)) (str1, str2)
-			else if (m2) (prep(0, str1, 1), str2)
-			else (str1, prep(0, str2, 1))
-		}
-
-		def prepend(str1: String, str2: String): (String, String) = {
-			val n1 = str1.size
-			val n2 = str2.size
-			if (n1 < n2) (prep(diff(str1, str2), str1, 0), str2)
-			else if (n1 > n2) (str1, prep(diff(str1, str2), str2, 0))
-			else (str1, str2)
-		}
-
-		val (s1, s2) = append(str1, str2)
-		val (ss1, ss2) = prepend(s1, s2)
-
-		ss1 < ss2
-
-	}
 
 	def allTopicsCourse(course: String) = Action.async {
 		val topics = MongoDAO.topicsForCourse(course)
@@ -390,8 +329,8 @@ object QuestionController extends ServiceComponent with MongoController {
 	}
 
 	def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-		MongoDAO.examQuestions(course, term_year).map {
-			_.toList.sortWith(questionSort)
+		MongoDAO.list_question_BSONDocument_for_course_and_term_year(course, term_year).map {
+			_.toList
 		}
 	}
 

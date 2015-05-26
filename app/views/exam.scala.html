@@ -6,7 +6,7 @@
     <ul id="exam_questions_list" class="exam_questions_list">
         @for( question <- questions ){
             <li class="exam_question">
-                <a href="@routes.QuestionController.question(course, term_year, question.question)">
+                <a href="@routes.QuestionController.question(course, term_year, question.number)">
                     @if(context.user.isDefined){
                         <!--Show quality flags in the order Statements, Hint, Solution for logged-in users-->
                         @for( f <- question.flags ){

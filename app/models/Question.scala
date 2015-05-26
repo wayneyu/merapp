@@ -8,7 +8,7 @@ import play.api.libs.functional.syntax._
 import play.api.libs.json.{JsPath, Reads}
 import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
 import reactivemongo.bson._
-import helpers._
+import assets._
 
 case class Question(course: String,
                      year: Int,
@@ -151,8 +151,8 @@ case class SearchResult (ID: String,
                       statement: String,
                       textScore: Double) {
 
-  val (course, term_year, number) = helpers.course_and_term_year_and_number_from_ID(ID)
-  val number_human: String = helpers.number_human_from_number(number)
+  val (course, term_year, number) = assets.course_and_term_year_and_number_from_ID(ID)
+  val number_human: String = assets.number_human_from_number(number)
 
   def url: String = controllers.routes.QuestionController.question(course, term_year, number_human).url
 

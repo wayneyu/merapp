@@ -1,6 +1,7 @@
 package service
 
 import models._
+import assets._
 import play.api._
 import play.api.libs.json._
 import play.api.mvc._
@@ -9,7 +10,6 @@ import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.BasicProfile
 
-import scala.collection.immutable.Stream.Empty
 import scala.concurrent.ExecutionContext.Implicits._
 import scala.concurrent.Future
 
@@ -23,6 +23,7 @@ import scala.util.{Failure, Success}
 /**
  * Created by wayneyu on 01/27/15.
  */
+
 object MongoDAO extends Controller with MongoController {
 
 	val questionCollection = db[BSONCollection]("questions")
@@ -32,155 +33,109 @@ object MongoDAO extends Controller with MongoController {
 	val votesCollection = db[BSONCollection]("votes")
 
 	def questionQuery(ID: String): Future[List[BSONDocument]] = {
-		val cursor: Cursor[BSONDocument] = questionCollection.
-			find(BSONDocument("ID" -> ID)).
-			cursor[BSONDocument]
-
-		// gather all the JsObjects in a list
-		cursor.collect[List]()
-	}
-	def questionQuery(course: String, term_year: String, q:String): Future[List[BSONDocument]] = {
-		val (term: String, year: Int) = getTermAndYear(term_year)
-
-		// let's do our query
-		val cursor: Cursor[BSONDocument] = questionCollection.
-			// find all people with name `name`
-			find(BSONDocument("course" -> course, "term" -> term, "year" -> year, "question" -> q)).
-			// perform the query and get a cursor of JsObject
-			cursor[BSONDocument]
-
+		val cursor: Cursor[BSONDocument] = questionCollection
+			.find(BSONDocument("ID" -> ID))
+			.cursor[BSONDocument]
 		// gather all the JsObjects in a list
 		cursor.collect[List]()
 	}
 
-	def getTermAndYear(term_year: String): (String, Int) = {
-		val tysplit = term_year.split("_")
-		val term = tysplit(0)
-		val year = tysplit(1).toInt
-		(term, year)
+	def questionQuery(course: String, term_year: String, number: String): Future[List[BSONDocument]] = {
+		val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, number)
+		Logger.debug("from question_query")
+		Logger.debug(ID)
+		questionQuery(ID)
 	}
 
-	def questionInJson(course: String, term_year: String, q: String) = Action.async {
-		questionQuery(course, term_year, q).map( l => Ok(BSONArray.pretty(BSONArray(l))) )
+	def questionInJson(course: String, term_year: String, number: String) = Action.async {
+		questionQuery(course, term_year, number)
+			.map(l =>
+			  Ok(BSONArray.pretty(BSONArray(l)))
+			)
 	}
 
-	def distinctCourses(): Future[Stream[BSONDocument]] = {
-		// set up query
-		val command = Aggregate(questionCollection.name, Seq(
-			GroupField("course")("course" -> First("course")),
-			Sort(Seq(Ascending("course"))),
-			Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-		))
-
-		db.command(command)
+	def distinctCourses(MatchCondition: BSONDocument = BSONDocument()): Future[Stream[BSONDocument]] = {
+		if (MatchCondition.isEmpty) {
+			val command = Aggregate(questionCollection.name, Seq(
+				GroupField("course")("course" -> First("course")),
+				Sort(Seq(Ascending("course"))),
+				Project("_id" -> BSONInteger(0), "course" -> BSONInteger(1))
+			))
+			db.command(command)
+		} else {
+			val command = Aggregate(questionCollection.name, Seq(
+				Match(MatchCondition),
+				GroupField("course")("course" -> First("course")),
+				Sort(Seq(Ascending("course"))),
+				Project("_id" -> BSONInteger(0), "course" -> BSONInteger(1))
+			))
+			db.command(command)
+		}
 	}
 
 	def distinctCourses(year: Int): Future[Stream[BSONDocument]] = {
-
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("year" -> year)),
-			GroupField("course")("course" -> First("course")),
-			Sort(Seq(Descending("course"))),
-			Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctCourses(MatchCondition = BSONDocument("year" -> year))
 	}
 
 	def distinctCourses(year: Int, term: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("distinctCourses(year -> " + year + ", term-> " + term + ")")
-
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("year" -> year, "term" -> term )),
-			GroupField("course")("course" -> First("course")),
-			Sort(Seq(Descending("course"))),
-			Project("_id"->BSONInteger(0), "course" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctCourses(MatchCondition = BSONDocument("year" -> year, "term" -> term))
 	}
 
-	def distinctYears(): Future[Stream[BSONDocument]] = {
-		val command = Aggregate(questionCollection.name, Seq(
-			GroupField("year")("year" -> First("year")),
-			Sort(Seq(Descending("year"))),
-			Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-		))
-
-		db.command(command)
+	def distinctYears(MatchCondition: BSONDocument = BSONDocument()): Future[Stream[BSONDocument]] = {
+		if (MatchCondition.isEmpty) {
+			val command = Aggregate(questionCollection.name, Seq(
+				GroupField("year")("year" -> First("year")),
+				Sort(Seq(Descending("year"))),
+				Project("_id" -> BSONInteger(0), "year" -> BSONInteger(1))
+			))
+			db.command(command)
+		} else {
+			val command = Aggregate(questionCollection.name, Seq(
+  			Match(MatchCondition),
+				GroupField("year")("year" -> First("year")),
+				Sort(Seq(Descending("year"))),
+				Project("_id" -> BSONInteger(0), "year" -> BSONInteger(1))
+			))
+			db.command(command)
+		}
 	}
 
 	def distinctYears(course: String): Future[Stream[BSONDocument]] = {
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course)),
-			GroupField("year")("year" -> First("year")),
-			Sort(Seq(Descending("year"))),
-			Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctYears(MatchCondition = BSONDocument("course" -> course))
 	}
 
 	def distinctYears(course: String, term: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("distinctYears(course-> " + course + ", term-> " + term + ")")
-
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course, "term" -> term )),
-			GroupField("year")("year" -> First("year")),
-			Sort(Seq(Descending("year"))),
-			Project("_id"->BSONInteger(0), "year" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctYears(MatchCondition = BSONDocument("course" -> course, "term" -> term ))
 	}
 
-	def distinctTerms(): Future[Stream[BSONDocument]] = {
-		val command = Aggregate(questionCollection.name, Seq(
-			GroupField("term")("term" -> First("term")),
-			Sort(Seq(Ascending("term"))),
-			Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-		))
-
-		db.command(command)
-	}
-
-	def distinctTermsList(course: String): Future[Stream[BSONDocument]] = {
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course)),
-			GroupField("term")("term" -> First("term")),
-			Sort(Seq(Ascending("term"))),
-			Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-		))
-
-		db.command(command)
+	def distinctTerms(MatchCondition: BSONDocument = BSONDocument()): Future[Stream[BSONDocument]] = {
+		if (MatchCondition.isEmpty) {
+			val command = Aggregate(questionCollection.name, Seq(
+				GroupField("term")("term" -> First("term")),
+				Sort(Seq(Ascending("term"))),
+				Project("_id" -> BSONInteger(0), "term" -> BSONInteger(1))
+			))
+			db.command(command)
+		} else {
+			val command = Aggregate(questionCollection.name, Seq(
+  			Match(MatchCondition),
+				GroupField("term")("term" -> First("term")),
+				Sort(Seq(Ascending("term"))),
+				Project("_id" -> BSONInteger(0), "term" -> BSONInteger(1))
+			))
+			db.command(command)
+		}
 	}
 
 	def distinctTerms(course: String): Future[Stream[BSONDocument]] = {
-
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course)),
-			GroupField("term")("term" -> First("term")),
-			Sort(Seq(Ascending("term"))),
-			Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctTerms(MatchCondition = BSONDocument("course" -> course))
 	}
 
 	def distinctTerms(course: String, year: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("distinctTerms(course-> " + course + ", year-> " + year + ")")
-		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course, "year" -> year)),
-			GroupField("term")("term" -> First("term")),
-			Sort(Seq(Ascending("term"))),
-			Project("_id"->BSONInteger(0), "term" -> BSONInteger(1))
-		))
-
-		db.command(command)
+		distinctTerms(MatchCondition = BSONDocument("course" -> course, "year" -> year))
 	}
 
 	def distinctContributors(): Future[Stream[BSONDocument]] = {
-		// List all contributors
 		// db.questions.distinct("contributors")
 		val command = Aggregate(questionCollection.name, Seq(
 			Unwind("contributors"),
@@ -188,84 +143,32 @@ object MongoDAO extends Controller with MongoController {
 			Sort(Seq(Ascending("contributors"))),
 			Project("_id" -> BSONInteger(0), "contributors" -> BSONInteger(1))
 		))
-
 		db.command(command)
 	}
 
-	def distinctQuestions(course: String, term_year: String): Future[Stream[BSONDocument]] = {
-		Logger.debug("Distinct questions  = " + course + " " + term_year)
-		val (term: String, year: Int) = getTermAndYear(term_year)
-
+	def distinct_question_numbers_for_course_and_term_year(course: String, term_year: String): Future[Stream[BSONDocument]] = {
 		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-			GroupField("question")("question"->First("question")),
-			Sort(Seq(Ascending("question"))),
-			Project("_id" -> BSONInteger(0), "question"->BSONInteger(1))
+			Match(BSONDocument("course" -> course, "term_year" -> term_year)),
+			GroupField("number")("number" -> First("number")),
+			Sort(Seq(Ascending("number"))),
+			Project("_id" -> BSONInteger(0), "number" -> BSONInteger(1))
 		))
-
 		db.command(command)
 	}
 
-	def questionSort(tis: BSONDocument, tat: BSONDocument): Boolean = {
-		questionSort(tis.getAs[String]("question").get, tat.getAs[String]("question").get)
-	}
-
-	def questionSort(tis: BSONString, tat: BSONString): Boolean = {
-		questionSort(tis.value, tat.value)
-	}
-
-	def questionSort(tis: String, tat: String): Boolean = {
-		val pattern = ".*\\([a-zA-Z]+\\).*"
-		val str1 = tis
-		val str2 = tat
-		def diff(s1: String, s2: String) = Math.abs(s1.length - s2.length)
-		val postfix = " (a)"
-		val prefix = "0"
-
-		def prep(nprefix: Int, str: String,  npostfix: Int) = prefix*nprefix + str + postfix*npostfix
-
-		def append(str1: String, str2: String): (String, String) = {
-			val m1 = str1.matches(pattern)
-			val m2 = str2.matches(pattern)
-			if (!(m1 ^ m2)) (str1, str2)
-			else if (m2) (prep(0, str1, 1), str2)
-			else (str1, prep(0, str2, 1))
-		}
-
-		def prepend(str1: String, str2: String): (String, String) = {
-			val n1 = str1.length
-			val n2 = str2.length
-			if (n1 < n2) (prep(diff(str1, str2), str1, 0), str2)
-			else if (n1 > n2) (str1, prep(diff(str1, str2), str2, 0))
-			else (str1, str2)
-		}
-
-		val (s1, s2) = append(str1, str2)
-		val (ss1, ss2) = prepend(s1, s2)
-
-		ss1 < ss2
-
-	}
-
-	def examQuestions(course: String, term_year: String): Future[List[BSONDocument]] = {
-		Logger.debug("Exam questions for " + course + " " + term_year)
-		val (term: String, year: Int) = getTermAndYear(term_year)
-
+	def list_question_BSONDocument_for_course_and_term_year(course: String, term_year: String): Future[List[BSONDocument]] = {
 		val command = Aggregate(questionCollection.name, Seq(
-			Match(BSONDocument("course" -> course, "year" -> year, "term" -> term)),
-			Sort(Seq(Ascending("question")))
+			Match(BSONDocument("course" -> course, "term_year" -> term_year)),
+			Sort(Seq(Ascending("number")))
 		))
-
-		val questions = db.command(command)
-
-		questions.map{ _.toList.sortWith(questionSort) }
+		db.command(command).map{_.toList}
 	}
 
 	def searchById(id: String): Future[List[BSONDocument]] = {
 		Logger.debug("search question with id = " + id)
 		val cursor = questionCollection.
 			// find with case-insensitive and use . to match any chars options
-			find( BSONDocument("_id" -> BSONObjectID(id))).
+			find(BSONDocument("_id" -> BSONObjectID(id))).
 			cursor[BSONDocument]
 
 		cursor.collect[List]()
@@ -340,7 +243,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def questionFindAndModify(course: String, term_year: String, q:String, bson: BSONDocument): Future[Option[BSONDocument]] = {
-		val (term, year) = getTermAndYear(term_year)
+		val (term, year) = assets.term_and_year_from_term_year(term_year)
 
 		val selector = BSONDocument(
 			"course" -> course, "term" -> term,
@@ -475,7 +378,7 @@ object MongoDAO extends Controller with MongoController {
 
 	private def updateArray(course: String, term_year: String, q:String, whichArray: String, newValue: String, opt: String): Future[Option[BSONDocument]] = {
 		// Updates whichArray in db.questions with newValue
-		val (term, year) = getTermAndYear(term_year)
+		val (term, year) = assets.term_and_year_from_term_year(term_year)
 
 		val selector = BSONDocument(
 			"course" -> course, "term" -> term,

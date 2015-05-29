@@ -112,7 +112,7 @@
 
             <select id="questionSelect" name="question">
                 @for( question <- questions ){
-                    <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
+                    <option value="@question" @if(question == selectedQuestion){selected}>@assets.number_human_from_number(question)</option>
                 }
                 @if( questions.isEmpty && !selectedQuestion.isEmpty){
                     <option value=@selectedQuestion>@selectedQuestion</option>
@@ -166,7 +166,7 @@
 
     <div class="main_box">
         <div class="box_title">
-            @q
+            @assets.number_human_from_number(q)
             @if(num_votes > 0){
                 <div class="easiness_rating_box">
                     Easiness: <span class="easiness_rating" title=@num_votes>@(Math.round(rating*10)/10.toDouble)/5</span>

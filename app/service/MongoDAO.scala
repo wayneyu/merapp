@@ -1,7 +1,6 @@
 package service
 
 import models._
-import assets._
 import play.api._
 import play.api.libs.json._
 import play.api.mvc._
@@ -32,6 +31,10 @@ object MongoDAO extends Controller with MongoController {
 	val profilesCollection = db[BSONCollection]("profiles")
 	val votesCollection = db[BSONCollection]("votes")
 
+
+
+	// FINDING THINGS
+
 	def questionQuery(ID: String): Future[List[BSONDocument]] = {
 		val cursor: Cursor[BSONDocument] = questionCollection
 			.find(BSONDocument("ID" -> ID))
@@ -42,8 +45,7 @@ object MongoDAO extends Controller with MongoController {
 
 	def questionQuery(course: String, term_year: String, number: String): Future[List[BSONDocument]] = {
 		val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, number)
-		Logger.debug("from question_query")
-		Logger.debug(ID)
+		Logger.debug(s"from question_query: ID = $ID")
 		questionQuery(ID)
 	}
 
@@ -176,17 +178,16 @@ object MongoDAO extends Controller with MongoController {
 
 	def searchByKeywordsQuery(searchString: String): Future[List[BSONDocument]] = {
 		// Search for keywords in statement, solutions, hints, answers and topics field of Questions collection
-		// Results are returned as an array of BSONDocument of {course: , questions:, statement_html: , term: , year: score:}
+		// Results are returned as an array of BSONDocument
 		Logger.debug("searching for " + searchString)
 
 		val searchCommand = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("$text" -> BSONDocument("$search" -> searchString))),
-			Project("_id"->BSONInteger(0), "textScore" -> BSONDocument("$meta" -> "textScore"), "course" -> BSONInteger(1),
-				"year" -> BSONInteger(1), "term" -> BSONInteger(1), "question" -> BSONInteger(1), "statement_html" -> BSONInteger(1),
-			"ID" -> BSONInteger(1)),
+			Project("_id" -> BSONInteger(0), "textScore" -> BSONDocument("$meta" -> "textScore"), "course" -> BSONInteger(1),
+				"year" -> BSONInteger(1), "term" -> BSONInteger(1), "number" -> BSONInteger(1),
+				"statement_html" -> BSONInteger(1), "ID" -> BSONInteger(1)),
 			Sort(Seq(Descending("textScore")))
 		))
-
 		val result = db.command(searchCommand)
 
 		result.map { _.toList }
@@ -222,7 +223,6 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def questionsForTopic(topic: String): Future[Stream[BSONDocument]] = {
-
 		val command = Aggregate(questionCollection.name, Seq(
 				Match(BSONDocument("topics" -> BSONDocument("$in" -> BSONArray(topic)))),
 				Sort(Seq(Ascending("course"), Ascending("year"), Ascending("term"), Ascending("question")))

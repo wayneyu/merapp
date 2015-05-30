@@ -1,12 +1,10 @@
 var appendBarChart = function(dataArray, el) {
-
     // appending percentages, should be wrapped in a function
     var totalCount = dataArray.map(function(d){return d.count;})
                     .reduce(function(sum, el) { //sum
                       return sum + el;
                     }, 0);
     dataArray = dataArray.map(function(d){ d.percentage = d.count/totalCount *100; return d;});
-
 
 
     var margin = {top: 20, right: 20, bottom: 40, left: 40};
@@ -70,17 +68,17 @@ var appendBarChart = function(dataArray, el) {
                     .html("") //just initializing
                     ;
 
-var getTooltipText = function (d) {
-  var text =  "answer: " + d.choice +
-              "<br>" +
-              "percentage: " + parseInt(d.percentage) + "%" +
-              "<br>" +
-              "count: " + parseInt(d.count) +
-              "<br>" +
-              "correctness: " + "N/A"
-              ;
-  return text;
-};
+    var getTooltipText = function (d) {
+      var text =  "answer: " + d.choice +
+                  "<br>" +
+                  "percentage: " + parseInt(d.percentage) + "%" +
+                  "<br>" +
+                  "count: " + parseInt(d.count) +
+                  "<br>" +
+                  "correctness: " + "N/A"
+                  ;
+      return text;
+    };
 
     var bars = canvas.append("g")
           .attr("class", "bars")
@@ -113,7 +111,6 @@ var getTooltipText = function (d) {
 
 
 if (true) { //if is multiple choice question //sdTODO
-
   $('.student_choice').click(function(){
     // $.ajax({
     //     type: 'POST',
@@ -156,10 +153,4 @@ if (true) { //if is multiple choice question //sdTODO
       //toggle visibility
     }
   });
-
-
-
-
-
-
 }

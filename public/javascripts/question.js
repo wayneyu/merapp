@@ -258,8 +258,8 @@
           success: function(d){
             var question_selector = $("#questionSelect")
             question_selector.empty()
-            $.each(d, function(value, question) {
-                var option = $('<option />').val(question).text(question);
+            $.each(d, function(index, q) {
+                var option = $('<option />').val(q.number).text(q.number_human);
                 question_selector.append(option)
             })
           }
@@ -270,9 +270,9 @@
         $("#findQuestionBtn").click();
     });
 
-    var current_question = $("#questionSelect option:selected").text();
+    var current_question = $("#questionSelect option:selected").val();
     var all_questions = [];
-    $("#questionSelect").children().each(function() {all_questions.push($(this).text())});
+    $("#questionSelect").children().each(function() {all_questions.push($(this).val())});
     var current_question_index = all_questions.indexOf(current_question);
     if (current_question_index == 0) {
             $("#prev_question").remove();

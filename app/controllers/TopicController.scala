@@ -42,9 +42,9 @@ object TopicController extends ServiceComponent {
   }
 
   def topics() = UserAwaredAction.async { implicit context =>
-    val alltopics = MongoDAO.topicsBSON()
+    val allTopics = MongoDAO.topicsBSON()
 
-    alltopics.map {
+    allTopics.map {
       l => Ok(views.html.topics(
         l.map { t => t.as[Topic] }.toList
       ))
@@ -52,9 +52,9 @@ object TopicController extends ServiceComponent {
   }
 
   def topicsSearch(searchTerm: String) = UserAwaredAction.async { implicit context =>
-    val alltopics = MongoDAO.topicSearchBSON(searchTerm)
+    val allTopics = MongoDAO.topicSearchBSON(searchTerm)
 
-    alltopics.map { st =>
+    allTopics.map { st =>
       Ok(BSONArrayFormat.writes(BSONArray(
         st)))
     }

@@ -17,7 +17,7 @@
             @for( r <- results ){
             	<div class="result">
                 	<div style="float:right; margin-top:0.5em;"><font style="color: #AAAAAA;">relevance: @r.score</font></div>
-                    <p><a href=@r.url>@r.link.replace("%20", " ")</a></p>
+                    <p><a href=@routes.QuestionController.question(r.course, r.term_year, r.number)>@r.link</a></p>
                     <div class="result_stmt">@Html(r.statement)</div>
                 </div>
             }

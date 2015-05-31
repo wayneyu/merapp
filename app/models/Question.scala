@@ -8,11 +8,18 @@ import play.api.libs.functional.syntax._
 import play.api.libs.json.{JsPath, Reads}
 import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
 import reactivemongo.bson._
+import assets._
 
-case class Question ( course: String,
+case class Question(course: String,
                      year: Int,
                      term: String,
-                     question: String,
+                     term_year: String,
+                     number: String,
+                     number_human: String,
+                     question: String, // deprecated, use number_human
+                     ID: String,
+                     is_multiple_choice: Boolean,
+                     multiple_choice_answers: List[String],
                      statement: String,
                      hints: List[String],
                      sols: List[String],
@@ -22,23 +29,29 @@ case class Question ( course: String,
                      rating: Double,
                      num_votes: Int,
                      flags: List[String],
-                     contributors: List[String]){
+                     contributors: List[String])
+{
+  def url: String = controllers.routes.QuestionController.question(course, term_year, number).url
 
-  def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
-
-  def link: String = course + " - " + term + " " + year + " - " + question
+  def link: String = course + " - " + term + " " + year + " - " + number_human
 }
 
 
 object Question {
-  // Generates Writes and Reads for Feed and User thanks to Json Macros
+// Generates Writes and Reads for Feed and User thanks to Json Macros
 //  implicit val questionWrite = Json.format[Question]
 
   implicit val QuestionReads: Reads[Question] = (
-      (JsPath \ "course").read[String] and
+        (JsPath \ "course").read[String] and
         (JsPath \ "year").read[Int] and
         (JsPath \ "term").read[String] and
+        (JsPath \ "term_year").read[String] and
+        (JsPath \ "number").read[String] and
+        (JsPath \ "number_human").read[String] and
         (JsPath \ "question").read[String] and
+        (JsPath \ "ID").read[String] and
+        (JsPath \ "is_multiple_choice").read[Boolean] and
+        (JsPath \ "multiple_choice_answers").read[List[String]] and
         (JsPath \ "statement_html").read[String] and
         (JsPath \ "hints_html").read[List[String]] and
         (JsPath \ "sols_html").read[List[String]] and
@@ -57,7 +70,13 @@ object Question {
         doc.getAs[String]("course").get,
         doc.getAs[Int]("year").get,
         doc.getAs[String]("term").get,
-        doc.getAs[String]("question").get,
+        doc.getAs[String]("term_year").getOrElse(""),
+        doc.getAs[String]("number").getOrElse(""),
+        doc.getAs[String]("number_human").getOrElse(""),
+        doc.getAs[String]("question").getOrElse(""),
+        doc.getAs[String]("ID").getOrElse(""),
+        doc.getAs[Boolean]("is_multiple_choice").getOrElse(false),
+        doc.getAs[List[String]]("multiple_choice_answers").getOrElse(Nil),
         doc.getAs[String]("statement_html").get,
         doc.getAs[List[String]]("hints_html").get,
         doc.getAs[List[String]]("sols_html").get,
@@ -77,7 +96,13 @@ object Question {
 			"course" -> BSONString(q.course),
 			"year" -> BSONInteger(q.year),
 			"term" -> BSONString(q.term),
-			"question" -> BSONString(q.question),
+      "term_year" -> BSONString(q.term_year),
+      "number" -> BSONString(q.number),
+      "number_human" -> BSONString(q.number_human),
+      "question" -> BSONString(q.question),
+      "ID" -> BSONString(q.ID),
+      "is_multiple_choice" -> BSONBoolean(q.is_multiple_choice),
+      "multiple_choice_answers" -> BSONArray(q.multiple_choice_answers),
 			"statement_html" -> BSONString(q.statement),
 			"hints_html" -> BSONArray(q.topics.map{ BSONString(_) }),
 			"sols_html" -> BSONArray(q.topics.map{ BSONString(_) }),
@@ -91,28 +116,47 @@ object Question {
 		)
 	}
 
-  val empty = Question("",-1,"","No Question","",Nil,Nil,"",Nil,Nil, -1, -1, Nil, Nil)
+  val empty = Question(course = "",
+                       year = -1,
+                       term = "",
+                       term_year = "",
+                       number = "",
+                       number_human = "",
+                       question = "",
+                       ID = "",
+                       is_multiple_choice = false,
+                       multiple_choice_answers = Nil,
+                       statement = "No Content Found",
+                       hints = Nil,
+                       sols = Nil,
+                       answer = "" ,
+                       topics = Nil,
+                       solvers = Nil,
+                       rating = -1,
+                       num_votes = 0,
+                       flags = Nil,
+                       contributors = Nil)
 
-	def qid(course: String, term_year: String, q: String) = (course + "+" + term_year + "+" + q).replace(" ", "\\s")
+  def qid(course: String, term_year: String, q: String) = (course + "+" + term_year + "+" + q).replace(" ", "\\s")
 
 	def parseQid(qid: String) = {
-		val pattern = """(.*)\+(.*)_(\d\d\d\d)\+(.*)""".r
-		qid.replace("\\s", " ") match {
-			case pattern(course, term, year, q) => (course, term, year.toInt, q)
+		val pattern = """(.*)\+(.*)\+(.*)_(\d\d\d\d)\+(.*)""".r
+		qid match {
+			case pattern(school, course, term, year, number) => (course, term, year.toInt, number)
 		}
 	}
 }
 
-case class SearchResult (course: String,
-                      year: Int,
-                      term: String,
-                      question: String,
+case class SearchResult (ID: String,
                       statement: String,
                       textScore: Double) {
 
-  def url: String = controllers.routes.QuestionController.question(course, term + "_" + year, question).url
+  val (course, term_year, number) = assets.course_and_term_year_and_number_from_ID(ID)
+  val number_human: String = assets.number_human_from_number(number)
 
-  def link: String = course + " - " + term + " " + year + " - " + question
+  def url: String = controllers.routes.QuestionController.question(course, term_year, number_human).url
+
+  def link: String = course + " - " + term_year.replace("_", " ") + " - " + number_human
 
   def score = BigDecimal(textScore).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
 }
@@ -122,17 +166,16 @@ object SearchResult {
   implicit object SearchResultReader extends BSONDocumentReader[SearchResult] {
     def read(doc: BSONDocument): SearchResult = {
       SearchResult(
-        doc.getAs[String]("course").get,
-        doc.getAs[Int]("year").get,
-        doc.getAs[String]("term").get,
-        doc.getAs[String]("question").get,
-        doc.getAs[String]("statement_html").get,
-        doc.getAs[Double]("textScore").get
+        doc.getAs[String]("ID").getOrElse(""),
+        doc.getAs[String]("statement_html").getOrElse(""),
+        doc.getAs[Double]("textScore").getOrElse(0)
       )
     }
   }
 
-  val empty = SearchResult("", -1, "", "", "", 0)
+  val empty = SearchResult(ID = "",
+                           statement = "",
+                           textScore = 0)
 
 }
 

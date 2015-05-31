@@ -2,6 +2,7 @@
 @import service.{Visitor, Contributor, SuperUser}
 @user = @{context.user}
 @q = @{qn.question}
+@number = @{qn.number}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
 @stmt = @{qn.statement}
@@ -112,7 +113,7 @@
 
             <select id="questionSelect" name="question">
                 @for( question <- questions ){
-                    <option value="@question" @if(question == selectedQuestion){selected}>@question</option>
+                    <option value="@question" @if(question == selectedQuestion){selected}>@assets.number_human_from_number(question)</option>
                 }
                 @if( questions.isEmpty && !selectedQuestion.isEmpty){
                     <option value=@selectedQuestion>@selectedQuestion</option>
@@ -138,11 +139,11 @@
         @if(!(editable)){
             <a id="prev_question">&larr; Previous question</a>
             @if(context.user.isDefined){
-                <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>
+                <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, number)">Edit question</a>
             }
             <a id="next_question">Next question &rarr;</a>
         } else {
-        <a href="@routes.QuestionController.question(course, term_year, q)">Back to question view</a>
+        <a href="@routes.QuestionController.question(course, term_year, number)">Back to question view</a>
         }
     </div>
 
@@ -166,7 +167,7 @@
 
     <div class="main_box">
         <div class="box_title">
-            @q
+            @assets.number_human_from_number(q)
             @if(num_votes > 0){
                 <div class="easiness_rating_box">
                     Easiness: <span class="easiness_rating" title=@num_votes>@(Math.round(rating*10)/10.toDouble)/5</span>
@@ -313,7 +314,7 @@
     <div class="question_bottom_box">
     	<div id="question_rating" style="display:inline-block;">
             <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
-            @if(!context.user.isDefined){data-disabled="true"}>
+            @if(!context.user.isDefined | editable){data-disabled="true"}>
             <!-- see http://plugins.krajee.com/star-rating/demo -->
         </div>
         <div style="display:inline-block; width: 49%; text-align: top;">

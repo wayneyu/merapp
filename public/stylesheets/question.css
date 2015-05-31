@@ -212,13 +212,13 @@ background-color: #eeeeee;
 
 #question_topics {
    width: 49%;
-   /*position:absolute; 
+   /*position:absolute;
    right:0;*/
 }
 
 #question_rating {
-   width: 49%;  
-   /*position:absolute; 
+   width: 49%;
+   /*position:absolute;
    left:0; */
    text-align: left;
 }
@@ -229,9 +229,9 @@ background-color: #eeeeee;
 }
 
 .easiness_rating_box{
-  float:right; 
+  float:right;
   text-align: right;
-  font-size: 20pt; 
+  font-size: 20pt;
   color: #FFFFFF;
 }
 
@@ -269,3 +269,35 @@ button[class*=" quality_"] {
 .latex_button {
     white-space: nowrap;
 }
+
+
+
+
+/* should be in question_visualizations.css ? */
+/*hard coded .main_box*/
+   svg {
+    cursor:default;
+  }
+
+   .bars {
+    cursor:help;
+  }
+
+   .xAxis, .yAxis {
+    font-size: 15px;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+
+   .main_box div.bar-chart-tooltip {
+    font-size: 12px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #888;
+    padding: 0px 3px 0px 3px;
+  }
+
+
+

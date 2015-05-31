@@ -3,6 +3,7 @@
 @user = @{context.user}
 @q = @{qn.question}
 @number = @{qn.number}
+@multiple_choice_answers = @{qn.multiple_choice_answers}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
 @stmt = @{qn.statement}
@@ -190,6 +191,23 @@
                 </div>
             </div>
         </div>
+    }
+
+    @if(!editable){
+       @if( {qn.is_multiple_choice} ){
+        <div id="multiple_choice">
+            <div id="multiple_choice_buttons">
+                <button data-value="a">a</button>
+                <button data-value="b">b</button>
+                <button data-value="c">c</button>
+                <button data-value="d">d</button>
+            </div>
+            <div id="multiple_choice_result">
+                <button id="multiple_choice_show_results">Show results!</button>
+                <div id="multiple_choice_chart"></div>
+            </div>
+        </div>
+        }
     }
 
     @if(!editable){

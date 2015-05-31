@@ -67,7 +67,7 @@ object QuestionController extends ServiceComponent with MongoController {
 		res.map { case (courseList, yearList, question, questionsList, rating) =>
 			question match {
 				case j :: js =>
-					Logger.debug("No. of questions found: " + question.length.toString())
+					Logger.debug("No. of questions found: " + question.length.toString)
 					val Q = j.as[Question]
 					Logger.debug(Q.url)
 					Ok(views.html.question(Q, editable)(courseList, Nil, yearList, questionsList, course, year.toString, term, number, rating))

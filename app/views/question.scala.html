@@ -197,10 +197,9 @@
        @if( {qn.is_multiple_choice} ){
         <div id="multiple_choice">
             <div id="multiple_choice_buttons">
-                <button data-value="a">a</button>
-                <button data-value="b">b</button>
-                <button data-value="c">c</button>
-                <button data-value="d">d</button>
+                @for( mc <- {qn.multiple_choice_answers} ){
+                <button data-value="@mc.choice">@mc.choice</button>
+                }
             </div>
             <div id="multiple_choice_result">
                 <button id="multiple_choice_show_results">Show results!</button>

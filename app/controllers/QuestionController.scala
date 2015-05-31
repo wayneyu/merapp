@@ -120,6 +120,16 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+	def multiple_choice_data_array(course: String, term_year: String, n: String) = UserAwaredAction { implicit context =>
+		// TODO: Make async
+		Ok(BSONArrayFormat.writes(BSONArray(
+			BSONDocument("choice" -> "a", "count" -> 9),
+			BSONDocument("choice" -> "b", "count" -> 5),
+			BSONDocument("choice" -> "c", "count" -> 12),
+			BSONDocument("choice" -> "d", "count" -> 8)
+		)))
+	}
+
 	def course(course: String) = UserAwaredAction.async { implicit context =>
 		val exams = MongoDAO.examsForCourse(course)
 		val topics = MongoDAO.topicsForCourse(course)

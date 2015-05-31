@@ -113,7 +113,7 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 	def distinctYears(course: String, term: String): Future[Stream[BSONDocument]] = {
-		distinctYears(MatchCondition = BSONDocument("course" -> course, "term" -> term ))
+		distinctYears(MatchCondition = BSONDocument("course" -> course, "term" -> term))
 	}
 
 
@@ -188,9 +188,9 @@ object MongoDAO extends Controller with MongoController {
 	def distinct_question_numbers_for_course_and_term_year(course: String, term_year: String): Future[Stream[BSONDocument]] = {
 		val command = Aggregate(questionCollection.name, Seq(
 			Match(BSONDocument("course" -> course, "term_year" -> term_year)),
-			GroupField("number")("number" -> First("number")),
+			GroupField("number")("number" -> First("number"), "number_human" -> First("number_human")),
 			Sort(Seq(Ascending("number"))),
-			Project("_id" -> BSONInteger(0), "number" -> BSONInteger(1))
+			Project("_id" -> BSONInteger(0), "number" -> BSONInteger(1), "number_human" -> BSONInteger(1))
 		))
 		db.command(command)
 	}

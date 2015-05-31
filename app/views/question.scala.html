@@ -2,6 +2,7 @@
 @import service.{Visitor, Contributor, SuperUser}
 @user = @{context.user}
 @q = @{qn.question}
+@number = @{qn.number}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
 @stmt = @{qn.statement}
@@ -138,11 +139,11 @@
         @if(!(editable)){
             <a id="prev_question">&larr; Previous question</a>
             @if(context.user.isDefined){
-                <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, q)">Edit question</a>
+                <a id="edit_question" href="@routes.QuestionController.questionEdit(course, term_year, number)">Edit question</a>
             }
             <a id="next_question">Next question &rarr;</a>
         } else {
-        <a href="@routes.QuestionController.question(course, term_year, q)">Back to question view</a>
+        <a href="@routes.QuestionController.question(course, term_year, number)">Back to question view</a>
         }
     </div>
 
@@ -313,7 +314,7 @@
     <div class="question_bottom_box">
     	<div id="question_rating" style="display:inline-block;">
             <input id="my_rating" data-show-clear="false" data-symbol="&#x2714;" @if(userRating.isDefined){value=@userRating.get.toString}
-            @if(!context.user.isDefined){data-disabled="true"}>
+            @if(!context.user.isDefined | editable){data-disabled="true"}>
             <!-- see http://plugins.krajee.com/star-rating/demo -->
         </div>
         <div style="display:inline-block; width: 49%; text-align: top;">

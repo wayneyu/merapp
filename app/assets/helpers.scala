@@ -14,7 +14,7 @@ package object assets {
   }
 
   def number_human_from_number(number: String): String = {
-    number.replaceAll("0(\\d)", "\\1").replace("_", " ")
+    number.replaceAll("0(\\d)", "$1").replace("_", " ")
   }
 
   def term_and_year_from_term_year(term_year: String): (String, Int) = {

@@ -134,14 +134,16 @@ $(document).ready(function (){
   var dataArray;
 
   $('#multiple_choice button#multiple_choice_show_results').click(function(){
-    var el = "div#multiple_choice_chart"; //sdTODO make a separate div for the showresult
+    var el = "div#multiple_choice_chart";
 
-    if(typeof dataArray === 'undefined') { // fetch dataArray from d3 ajax call //sdTODO
+    if(typeof dataArray === 'undefined') {
     $.ajax({
         type: 'GET',
         url: window.location.pathname + "/multiple_choice_data_array",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         success: function(response){
-            dataArray = response;
+            dataArray = response["multiple_choice_answers"];
             appendBarChart(dataArray, el);
         },
         error: function(obj, st, err){

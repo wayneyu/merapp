@@ -38,10 +38,6 @@ object QuestionController extends ServiceComponent with MongoController {
 		} yield (cr, tr, yr, nr)
 
 		courseAndYearResult.map { case (courseList, termList, yearList, numberList) =>
-			Logger.debug(courseList toString)
-			Logger.debug(termList toString)
-			Logger.debug(yearList toString)
-			Logger.debug(numberList toString)
 			Ok(views.html.question(Question.empty, editable = false)(courseList, termList, yearList, numberList, "", "", "", "", None))
 		}
 	}
@@ -93,14 +89,13 @@ object QuestionController extends ServiceComponent with MongoController {
 
 		bson match {
 			case e: JsError => Future(BadRequest("Invalid JSON passed."))
-			case b: JsSuccess[BSONDocument] => {
+			case b: JsSuccess[BSONDocument] =>
 				MongoDAO.questionFindAndModify(course, term_year, q, b.get).map {
 					case Some(doc) =>
 						Redirect(routes.QuestionController.questionEdit(course, term_year, q))
 					case None =>
 						BadRequest("Question was not updated.")
 				}
-			}
 		}
 	}
 
@@ -113,22 +108,20 @@ object QuestionController extends ServiceComponent with MongoController {
 			val subfolder = pattern.findFirstMatchIn(path).map(m => m.group(1)).getOrElse("")
 			val to = new File(FILE_FOLDER + subfolder, filename)
 			Logger.debug("URL: " + path + " Uploading " + filename + " " + file.contentType + " Moving image to " + to.getCanonicalPath)
-			file.ref.moveTo(to, true)
+			file.ref.moveTo(to, replace=true)
 			Future(Ok("File uploaded to " + to.getPath))
 		}.getOrElse {
 			Future(BadRequest("Image missing"))
 		}
 	}
 
-	def multiple_choice_data_array(course: String, term_year: String, n: String) = UserAwaredAction { implicit context =>
-		// TODO: Make async
-		Ok(BSONArrayFormat.writes(BSONArray(
-			BSONDocument("choice" -> "a", "count" -> 9),
-			BSONDocument("choice" -> "b", "count" -> 5),
-			BSONDocument("choice" -> "c", "count" -> 12),
-			BSONDocument("choice" -> "d", "count" -> 8)
-		)))
-	}
+	def multiple_choice_data_array(course: String, term_year: String, n: String) = UserAwaredAction.async { implicit context =>
+    val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, n)
+    val mca = MongoDAO.getMultipleChoiceAnswers(ID)
+    mca.map { answers =>
+      Ok(BSONDocumentFormat.writes(answers.head)) // MongoDB returns arrays, but all is data in first element
+    }
+  }
 
 	def course(course: String) = UserAwaredAction.async { implicit context =>
 		val exams = MongoDAO.examsForCourse(course)
@@ -149,12 +142,12 @@ object QuestionController extends ServiceComponent with MongoController {
 			num_questions <- num_questions
 		} yield (e, t, num_questions)
 
-		res.map { case (exams, topics, num_questions) =>
-			Logger.debug(topics mkString ",")
+		res.map { case (e, t, n_q) =>
+			Logger.debug(t mkString ",")
 			Ok(views.html.course(course,
-				exams.map {
+				e.map {
 					d => d.getAs[String]("term").get + "_" + d.getAs[Int]("year").get.toString
-				}.toList, topics, num_questions
+				}.toList, t, n_q
 			))
 		}
 	}
@@ -199,13 +192,12 @@ object QuestionController extends ServiceComponent with MongoController {
 	def questionSubmit() = Action { request =>
 		val form = request.body.asFormUrlEncoded
 		form match {
-			case Some(map) => {
-				Redirect(controllers.routes.QuestionController.question(
-					map.getOrElse("course", Seq(""))(0),
-					map.getOrElse("term", Seq(""))(0) + "_" + map.getOrElse("year", Seq(""))(0),
-					map.getOrElse("question", Seq(""))(0)))
-			}
-			case None => Redirect(controllers.routes.QuestionController.question("", "", ""))
+			case Some(map) =>
+				Redirect(routes.QuestionController.question(
+					map.getOrElse("course", Seq("")).head,
+					map.getOrElse("term", Seq("")).head + "_" + map.getOrElse("year", Seq("")).head,
+					map.getOrElse("question", Seq("")).head))
+			case None => Redirect(routes.QuestionController.question("", "", ""))
 		}
 	}
 
@@ -237,13 +229,13 @@ object QuestionController extends ServiceComponent with MongoController {
 
 	def distinctYears(course: String): Future[List[String]] = {
 		MongoDAO.distinctYears(course).map {
-			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
+			st => st.map(d => d.getAs[Int]("year").get.toString).toList
 		}
 	}
 
 	def distinctYears(course: String, term: String): Future[List[String]] = {
 		MongoDAO.distinctYears(course, term).map {
-			st => st.map(d => d.getAs[Int]("year").get.toString()).toList
+			st => st.map(d => d.getAs[Int]("year").get.toString).toList
 		}
 	}
 
@@ -354,10 +346,9 @@ object QuestionController extends ServiceComponent with MongoController {
 	def searchByKeywordsSubmit() = Action { request =>
 		val form = request.body.asFormUrlEncoded
 		form match {
-			case Some(map) => {
-				val searchString = map.getOrElse("searchString", Seq(""))(0)
+			case Some(map) =>
+				val searchString = map.getOrElse("searchString", Seq("")).head
 				Redirect(routes.QuestionController.searchByKeywords(searchString))
-			}
 			case None => Ok("")
 		}
 	}

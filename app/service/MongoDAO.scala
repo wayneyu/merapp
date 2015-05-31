@@ -567,4 +567,14 @@ object MongoDAO extends Controller with MongoController {
     ))
     db.command(command)
   }
+
+
+	// multiple choice
+	def getMultipleChoiceAnswers(ID: String): Future[Stream[BSONDocument]] = {
+    val command = Aggregate(questionCollection.name, Seq(
+    Match(BSONDocument("ID" -> ID)),
+    Project("_id" -> BSONInteger(0), "multiple_choice_answers" -> BSONInteger(1))
+    ))
+    db.command(command)
+  }
 }

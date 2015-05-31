@@ -1,4 +1,11 @@
 var appendBarChart = function(dataArray, el) {
+
+  // // sample dataArray for format
+  // dataArray = [
+  //       {"choice":"A","count":100},
+  //       {"choice":"B","count":200}
+  //       ];
+
     // appending percentages, should be wrapped in a function
     var totalCount = dataArray.map(function(d){return d.count;})
                     .reduce(function(sum, el) { //sum
@@ -110,11 +117,11 @@ var appendBarChart = function(dataArray, el) {
 }
 
 
-if (true) { //if is multiple choice question //sdTODO
+$(document).ready(function (){
   $('.student_choice').click(function(){
     // $.ajax({
     //     type: 'POST',
-    //     url: window.location.pathname + "/topics/add/" + newTag,
+    //     url: window.location.pathname + "/multiple_choice_data_array",
     //     success: function(d){
     //       console.log("added new tag");
     //     },
@@ -124,46 +131,26 @@ if (true) { //if is multiple choice question //sdTODO
     //   })
   });
 
-  $('.show_results').click(function(){
-    var el = ".main_box"; //sdTODO make a separate div for the showresult
+  var dataArray;
+
+  $('#multiple_choice button#multiple_choice_show_results').click(function(){
+    var el = "div#multiple_choice_chart"; //sdTODO make a separate div for the showresult
 
     if(typeof dataArray === 'undefined') { // fetch dataArray from d3 ajax call //sdTODO
-    // $.ajax({
-    //     type: 'GET',
-    //     url: window.location.pathname + "/topics/add/" + newTag,
-    //     success: function(d){
-            var dataArray = [ //test data
-                  {"choice":"A","count":100},
-                  {"choice":"B","count":200},
-                  {"choice":"C","count":300},
-                  {"choice":"D","count":400},
-                  {"choice":"E","count":150},
-                  {"choice":"F","count":250},
-                  ];
-
+    $.ajax({
+        type: 'GET',
+        url: window.location.pathname + "/multiple_choice_data_array",
+        success: function(response){
+            dataArray = response;
             appendBarChart(dataArray, el);
-
-    //       console.log("added new tag");
-    //     },
-    //     error: function(obj, st, err){
-    //       alert(err + "\n" + obj.responseText);
-    //     }
-    //   })
+        },
+        error: function(obj, st, err){
+          console.log("error");
+        }
+      });
     } else {
       //toggle visibility
+      $(el).toggle();
     }
   });
-
-// // sdtesting
-//     var el = ".main_box"; //sdTODO make a separate div for the showresult
-//     var dataArray = [ //test data
-//                   {"choice":"A","count":100},
-//                   {"choice":"B","count":200},
-//                   {"choice":"C","count":300},
-//                   {"choice":"D","count":400},
-//                   {"choice":"E","count":150},
-//                   {"choice":"F","count":250},
-//                   ];
-//     appendBarChart(dataArray, el);
-
-}
+});

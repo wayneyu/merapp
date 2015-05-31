@@ -274,7 +274,6 @@ button[class*=" quality_"] {
 
 
 /* should be in question_visualizations.css ? */
-/*hard coded .main_box*/
    svg {
     cursor:default;
   }
@@ -289,8 +288,11 @@ button[class*=" quality_"] {
     shape-rendering: crispEdges;
   }
 
+  #multiple_choice #multiple_choice_result {
+    border: 1px solid #EEE;
+  }
 
-   .main_box div.bar-chart-tooltip {
+  #multiple_choice #multiple_choice_result .bar-chart-tooltip {
     font-size: 12px;
     background-color: white;
     border: 2px solid black;

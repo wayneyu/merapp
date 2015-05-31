@@ -274,22 +274,23 @@ button[class*=" quality_"] {
 
 
 /* should be in question_visualizations.css ? */
-  svg {
+/*hard coded .main_box*/
+   svg {
     cursor:default;
   }
 
-  .bars {
+   .bars {
     cursor:help;
   }
 
-  .xAxis, .yAxis {
+   .xAxis, .yAxis {
     font-size: 15px;
     stroke: #000;
     shape-rendering: crispEdges;
   }
 
 
-  .tooltip {
+   .main_box div.bar-chart-tooltip {
     font-size: 12px;
     background-color: white;
     border: 2px solid black;

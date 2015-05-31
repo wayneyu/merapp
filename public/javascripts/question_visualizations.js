@@ -61,7 +61,7 @@ var appendBarChart = function(dataArray, el) {
     // http://bl.ocks.org/biovisualize/1016860
     var tooltip = d3.select(el)
                     .append("div")
-                    .attr("class", "tooltip")
+                    .attr("class", "bar-chart-tooltip")
                     .style("position", "absolute")
                     .style("z-index", "10")
                     .style("visibility", "hidden")
@@ -153,4 +153,17 @@ if (true) { //if is multiple choice question //sdTODO
       //toggle visibility
     }
   });
+
+// // sdtesting
+//     var el = ".main_box"; //sdTODO make a separate div for the showresult
+//     var dataArray = [ //test data
+//                   {"choice":"A","count":100},
+//                   {"choice":"B","count":200},
+//                   {"choice":"C","count":300},
+//                   {"choice":"D","count":400},
+//                   {"choice":"E","count":150},
+//                   {"choice":"F","count":250},
+//                   ];
+//     appendBarChart(dataArray, el);
+
 }

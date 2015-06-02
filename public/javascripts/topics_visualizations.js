@@ -43,6 +43,17 @@ d3.json("/topics/withParents", function(error, root) {
     }
   }
 
+  var handleFillOpacity = function(d) { //must style after text has been rendered
+    var someRadius = d.parent === undefined ? root.r : d.parent.r;
+    var radius = d.r * diameter / (someRadius * 2 + margin);
+      if (this.getBBox().width>2*radius) {
+        return 0.33; //for developement purposes
+      }
+      else {
+        return 1;
+      }
+  }
+
   var circle = svg.selectAll("circle")
     .data(nodes)
     .enter()
@@ -52,7 +63,9 @@ d3.json("/topics/withParents", function(error, root) {
     .each(function(d){
       d3.selectAll(".node--leaf").on("click", function(d){ console.log("hep");});
     })
-    .on("click", handleClick);
+    .on("click", handleClick)
+    // .on('click', function(d) {debugger;})
+    ;
 
   var text = svg.selectAll("text")
     .data(nodes)
@@ -62,15 +75,7 @@ d3.json("/topics/withParents", function(error, root) {
     .text(function(d) { return d.name; })
     .style('cursor','pointer')
     //sdTODO hide text instead of making them opaque 0, to avoid clicking mistakes
-    .style("fill-opacity",      function(d) { //must style after text has been rendered
-      var radius = d.r * diameter / (root.r * 2 + margin); //sdTODO, consolidate with   var radius = d.r * diameter / (d.parent.r * 2 + margin);
-        if (this.getBBox().width>2*radius) {
-          return 0.33;
-        }
-        else {
-          return 1;
-        }
-      })
+    .style("fill-opacity", handleFillOpacity)
     .style("display", function(d) { return d.parent === root ? null : "none"; })
     // .on('click', function(d) {debugger;})
     .on("click", handleClick)
@@ -96,17 +101,7 @@ d3.json("/topics/withParents", function(error, root) {
       .each("end", function(d) {
         if (d.parent !== focus) this.style.display = "none";
         // http://bost.ocks.org/mike/transition/
-        d3.select(this).style("fill-opacity",
-         function(d) { //must style after text has been rendered
-          var radius = d.r * diameter / (d.parent.r * 2 + margin);
-            if (this.getBBox().width>2*radius) {
-              return 0.33;
-            }
-            else {
-              return 1;
-            }
-          }
-    );
+        d3.select(this).style("fill-opacity",handleFillOpacity);
       });
   }
 

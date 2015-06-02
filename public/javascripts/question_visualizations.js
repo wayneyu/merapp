@@ -22,7 +22,7 @@ var appendBarChart = function(dataArray, el) {
     var barColorDefault = 'black';
 
     var xScale = d3.scale.ordinal()
-                    .domain( dataArray.map(function(d){return d.percentage;}) )
+                    .domain( dataArray.map(function(d,i){return i;}) )
                     .rangeRoundBands([0, width], 0.3);
 
     // http://bl.ocks.org/d3noob/8952219

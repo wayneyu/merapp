@@ -50,6 +50,22 @@ d3.json("/topics/withParents", function(error, root) {
           window.location.href = d.url;
         }
       }
+
+
+
+
+
+
+
+      // console.log( "var k:" + diameter / (root.r * 2 + margin) ) ;
+      console.log( "circle radius:" + d.r * diameter / (root.r * 2 + margin) );
+      var radius = d.r * diameter / (root.r * 2 + margin);
+
+
+
+
+
+
     });
 
   var text = svg.selectAll("text")

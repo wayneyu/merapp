@@ -154,5 +154,8 @@ $(document).ready(function (){
       //toggle visibility
       $(el).toggle();
     }
+
+    var text = $('button#multiple_choice_show_results').text();
+    $('button#multiple_choice_show_results').text(text == "Show results!" ? "Hide results" : "Show results!");
   });
 });

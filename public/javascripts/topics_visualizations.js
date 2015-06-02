@@ -54,14 +54,25 @@ d3.json("/topics/withParents", function(error, root) {
       }
   }
 
-  var handleDisplay = function(d) {
+  // var handleDisplay = function(d) { //doesnt work, due to conflated logic regarding dislay
+  //   var someRadius = d.parent === undefined ? root.r : d.parent.r;
+  //   var radius = d.r * diameter / (someRadius * 2 + margin);
+  //     if (this.getBBox().width>2*radius) {
+  //       return 'none';
+  //     }
+  //     else {
+  //       return 'inline';
+  //     }
+  // }
+
+  var handleVisibility = function(d) { //doesnt work
     var someRadius = d.parent === undefined ? root.r : d.parent.r;
     var radius = d.r * diameter / (someRadius * 2 + margin);
       if (this.getBBox().width>2*radius) {
-        return 'none';
+        return 'hidden';
       }
       else {
-        return 'inline';
+        return 'visible';
       }
   }
 
@@ -105,10 +116,11 @@ d3.json("/topics/withParents", function(error, root) {
     .attr("class", "label")
     .text(function(d) { return d.name; })
     .style('cursor','pointer')
-    .style("fill-opacity", handleFillOpacity)
+    .style("fill-opacity", handleFillOpacity) //redudant/ doesnt do anything, helps in development when handleVisibility is commented out
     .style("display", function(d) { return d.parent === root ? null : "none"; })
     .style("pointer-events", 'none') //transparent to the events, aka pass it to the level below
     // .style("display", handleDisplay) //doesnt work, sdTODO
+    .style("visibility", handleVisibility)
     .on("click", handleClick)
     ;
 
@@ -135,6 +147,7 @@ d3.json("/topics/withParents", function(error, root) {
         d3.select(this)
           .style("fill-opacity",handleFillOpacity)
           // .style("display", handleDisplay) //doesnt work, sdTODO
+          .style("visibility", handleVisibility)
           ;
       });
   }

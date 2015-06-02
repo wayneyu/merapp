@@ -54,6 +54,17 @@ d3.json("/topics/withParents", function(error, root) {
       }
   }
 
+  var handleDisplay = function(d) {
+    var someRadius = d.parent === undefined ? root.r : d.parent.r;
+    var radius = d.r * diameter / (someRadius * 2 + margin);
+      if (this.getBBox().width>2*radius) {
+        return 'none';
+      }
+      else {
+        return 'inline';
+      }
+  }
+
   var circle = svg.selectAll("circle")
     .data(nodes)
     .enter()
@@ -74,10 +85,9 @@ d3.json("/topics/withParents", function(error, root) {
     .attr("class", "label")
     .text(function(d) { return d.name; })
     .style('cursor','pointer')
-    //sdTODO hide text instead of making them opaque 0, to avoid clicking mistakes
     .style("fill-opacity", handleFillOpacity)
     .style("display", function(d) { return d.parent === root ? null : "none"; })
-    // .on('click', function(d) {debugger;})
+    // .style("display", handleDisplay) //doesnt work, sdTODO
     .on("click", handleClick)
     ;
 
@@ -101,7 +111,10 @@ d3.json("/topics/withParents", function(error, root) {
       .each("end", function(d) {
         if (d.parent !== focus) this.style.display = "none";
         // http://bost.ocks.org/mike/transition/
-        d3.select(this).style("fill-opacity",handleFillOpacity);
+        d3.select(this)
+          .style("fill-opacity",handleFillOpacity)
+          // .style("display", handleDisplay) //doesnt work, sdTODO
+          ;
       });
   }
 

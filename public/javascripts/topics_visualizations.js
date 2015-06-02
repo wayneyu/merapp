@@ -65,6 +65,16 @@ d3.json("/topics/withParents", function(error, root) {
       }
   }
 
+  // http://bl.ocks.org/biovisualize/1016860
+  var tooltip = d3.select('#topics_bubble_chart')
+                  .append("div")
+                  .attr("class", "bubble-chart-tooltip")
+                  .style("position", "absolute")
+                  .style("z-index", "10")
+                  .style("visibility", "hidden")
+                  .html("") //just initializing
+                  ;
+
   var circle = svg.selectAll("circle")
     .data(nodes)
     .enter()
@@ -76,6 +86,16 @@ d3.json("/topics/withParents", function(error, root) {
     })
     .on("click", handleClick)
     // .on('click', function(d) {debugger;})
+    .on('mouseover', function(d){
+          tooltip.html(d.name);
+          tooltip.style("visibility", "visible");
+          })
+    .on('mouseout', function(d){
+          tooltip.style("visibility", "hidden");
+          })
+    .on("mousemove", function(){
+          tooltip.style("top", (event.pageY+8)+"px").style("left",(event.pageX+13)+"px");
+          })
     ;
 
   var text = svg.selectAll("text")
@@ -87,6 +107,7 @@ d3.json("/topics/withParents", function(error, root) {
     .style('cursor','pointer')
     .style("fill-opacity", handleFillOpacity)
     .style("display", function(d) { return d.parent === root ? null : "none"; })
+    .style("pointer-events", 'none') //transparent to the events, aka pass it to the level below
     // .style("display", handleDisplay) //doesnt work, sdTODO
     .on("click", handleClick)
     ;

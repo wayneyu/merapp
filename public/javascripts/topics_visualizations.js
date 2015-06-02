@@ -27,6 +27,22 @@ d3.json("/topics/withParents", function(error, root) {
 
   var focus_on_root = true;
 
+  var handleClick = function(d) {
+    if (focus !== d) {
+      d3.event.stopPropagation();
+      if ( d.children !== undefined) {
+        // <!--Clicked on parent topic so zoom there-->
+        zoom(d);
+      } else if (focus !== d.parent){
+        // <!--Clicked on subtopic from outside, so zoom to parent-->
+        zoom(d.parent);
+      } else {
+        // <!--Clicked on subtopic from within parent, so forward to subtopic-->
+        window.location.href = d.url;
+      }
+    }
+  }
+
   var circle = svg.selectAll("circle")
     .data(nodes)
     .enter()
@@ -36,21 +52,7 @@ d3.json("/topics/withParents", function(error, root) {
     .each(function(d){
       d3.selectAll(".node--leaf").on("click", function(d){ console.log("hep");});
     })
-    .on("click", function(d) {
-      if (focus !== d) {
-        d3.event.stopPropagation();
-        if ( d.children !== undefined) {
-          // <!--Clicked on parent topic so zoom there-->
-          zoom(d);
-        } else if (focus !== d.parent){
-          // <!--Clicked on subtopic from outside, so zoom to parent-->
-          zoom(d.parent);
-        } else {
-          // <!--Clicked on subtopic from within parent, so forward to subtopic-->
-          window.location.href = d.url;
-        }
-      }
-    });
+    .on("click", handleClick);
 
   var text = svg.selectAll("text")
     .data(nodes)
@@ -58,6 +60,8 @@ d3.json("/topics/withParents", function(error, root) {
     .append("text")
     .attr("class", "label")
     .text(function(d) { return d.name; })
+    .style('cursor','pointer')
+    //sdTODO hide text instead of making them opaque 0, to avoid clicking mistakes
     .style("fill-opacity",      function(d) { //must style after text has been rendered
       var radius = d.r * diameter / (root.r * 2 + margin); //sdTODO, consolidate with   var radius = d.r * diameter / (d.parent.r * 2 + margin);
         if (this.getBBox().width>2*radius) {
@@ -69,6 +73,7 @@ d3.json("/topics/withParents", function(error, root) {
       })
     .style("display", function(d) { return d.parent === root ? null : "none"; })
     // .on('click', function(d) {debugger;})
+    .on("click", handleClick)
     ;
 
   var node = svg.selectAll("circle,text");

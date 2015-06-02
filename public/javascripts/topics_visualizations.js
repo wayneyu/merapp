@@ -40,32 +40,16 @@ d3.json("/topics/withParents", function(error, root) {
       if (focus !== d) {
         d3.event.stopPropagation();
         if ( d.children !== undefined) {
-          <!--Clicked on parent topic so zoom there-->
+          // <!--Clicked on parent topic so zoom there-->
           zoom(d);
         } else if (focus !== d.parent){
-          <!--Clicked on subtopic from outside, so zoom to parent-->
+          // <!--Clicked on subtopic from outside, so zoom to parent-->
           zoom(d.parent);
         } else {
-          <!--Clicked on subtopic from within parent, so forward to subtopic-->
+          // <!--Clicked on subtopic from within parent, so forward to subtopic-->
           window.location.href = d.url;
         }
       }
-
-
-
-
-
-
-
-      // console.log( "var k:" + diameter / (root.r * 2 + margin) ) ;
-      console.log( "circle radius:" + d.r * diameter / (root.r * 2 + margin) );
-      var radius = d.r * diameter / (root.r * 2 + margin);
-
-
-
-
-
-
     });
 
   var text = svg.selectAll("text")
@@ -73,10 +57,19 @@ d3.json("/topics/withParents", function(error, root) {
     .enter()
     .append("text")
     .attr("class", "label")
-    .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+    .text(function(d) { return d.name; })
+    .style("fill-opacity",      function(d) { //must style after text has been rendered
+      var radius = d.r * diameter / (root.r * 2 + margin); //sdTODO, consolidate with   var radius = d.r * diameter / (d.parent.r * 2 + margin);
+        if (this.getBBox().width>2*radius) {
+          return 0.33;
+        }
+        else {
+          return 1;
+        }
+      })
     .style("display", function(d) { return d.parent === root ? null : "none"; })
-    .style("font-size", "90%")
-    .text(function(d) { return d.name; });
+    // .on('click', function(d) {debugger;})
+    ;
 
   var node = svg.selectAll("circle,text");
 
@@ -94,9 +87,22 @@ d3.json("/topics/withParents", function(error, root) {
 
     transition.selectAll("text")
       .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-      .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
       .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
-      .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+      .each("end", function(d) {
+        if (d.parent !== focus) this.style.display = "none";
+        // http://bost.ocks.org/mike/transition/
+        d3.select(this).style("fill-opacity",
+         function(d) { //must style after text has been rendered
+          var radius = d.r * diameter / (d.parent.r * 2 + margin);
+            if (this.getBBox().width>2*radius) {
+              return 0.33;
+            }
+            else {
+              return 1;
+            }
+          }
+    );
+      });
   }
 
   function zoomTo(v) {

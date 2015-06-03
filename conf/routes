@@ -57,6 +57,7 @@ GET    /topics/:topic                                   controllers.TopicControl
 
 
 POST   /questions/:course/:term_year/:q/vote/:rating    controllers.QuestionController.vote(course: String, term_year: String, q: String, rating: Int)
+POST   /questions/:course/:term_year/:n/multipleChoice/:indexString    controllers.QuestionController.submitMultipleChoice(course: String, term_year: String, n: String, indexString: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET    /javascriptRoutes                                controllers.Application.javascriptRoutes

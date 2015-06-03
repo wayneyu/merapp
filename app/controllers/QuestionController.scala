@@ -415,6 +415,30 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+
+
+	def submitMultipleChoice(course: String, term_year: String, number: String, indexString: String) = Action.async { implicit context =>
+		val timestamp = Calendar.getInstance().getTimeInMillis
+		val indexArray = indexString.split("_").map(_.toInt)
+		val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, number)
+
+    // TODO
+    // using dummy user for testing. Change Action.async to VisitorAction.async and use context.user.get.userkey.key for userID
+    // val userID = context.user.get.userkey.key
+
+    val userID = "testing"
+		val mc = MultipleChoice(userID, ID, timestamp, indexArray.toList)
+
+    val res = MongoDAO.insertMultipleChoice(mc, ID)
+
+		res.map {
+			case Some(doc) => Ok(BSONDocumentFormat.writes(doc))
+			case None => BadRequest("Error adding multiple choice answer")
+		}
+	}
+
+
+
 	def flags_per_exam() = Action.async { implicit context =>
 //		Prepares json for donut chart for exams in progress on the dashboard
 		val flags_per_exam = MongoDAO.flags_per_exam()

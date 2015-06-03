@@ -119,16 +119,17 @@ var appendBarChart = function(dataArray, el) {
 
 $(document).ready(function (){
   $('.student_choice').click(function(){
-    // $.ajax({
-    //     type: 'POST',
-    //     url: window.location.pathname + "/multiple_choice_data_array",
-    //     success: function(d){
-    //       console.log("added new tag");
-    //     },
-    //     error: function(obj, st, err){
-    //       alert(err + "\n" + obj.responseText);
-    //     }
-    //   })
+    var indexArray = this.value; // to be updated to underscore_separated indices of selected buttons
+     $.ajax({
+         type: 'POST',
+         url: window.location.pathname + "/multipleChoice/" + indexArray,
+         success: function(d){
+           console.log("New answer recorded");
+         },
+         error: function(obj, st, err){
+           alert(err + "\n" + obj.responseText);
+         }
+       })
   });
 
   var dataArray;

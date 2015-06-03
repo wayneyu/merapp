@@ -197,8 +197,8 @@
        @if( {qn.is_multiple_choice} ){
         <div id="multiple_choice">
             <div id="multiple_choice_buttons">
-                @for( mc <- {qn.multiple_choice_answers} ){
-                <button data-value="@mc.choice">@mc.choice</button>
+                @for( (mc, index) <- {qn.multiple_choice_answers}.zipWithIndex ){
+                <button class="student_choice" value="@index">@mc.choice</button>
                 }
             </div>
             <div id="multiple_choice_result">

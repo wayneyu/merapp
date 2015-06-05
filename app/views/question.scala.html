@@ -198,11 +198,14 @@
         <div id="multiple_choice">
             <div id="multiple_choice_buttons">
                 @for( (mc, index) <- {qn.multiple_choice_answers}.zipWithIndex ){
-                <button class="student_choice" value="@index">@mc.choice</button>
+                <button type="button" class="btn student_choice" value="@index">@mc.choice</button>
                 }
             </div>
+            <div id="multiple_choice_submit">
+                <button type="button" class="btn" id="multiple_choice_submit_button">Lock and record my answer!</button>
+            </div>
             <div id="multiple_choice_result">
-                <button id="multiple_choice_show_results">Show results!</button>
+                <button type="button" class="btn" id="multiple_choice_show_results">Show results!</button>
                 <div id="multiple_choice_chart"></div>
             </div>
         </div>

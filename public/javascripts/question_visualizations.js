@@ -117,20 +117,42 @@ var appendBarChart = function(dataArray, el) {
 }
 
 
+var record_student_answer = function() {
+    // disables all student_choice elements and sends student data to the database
+    var student_answers_array = [];
+    $('.student_choice').each(function(ind, elem){
+        $(this).prop('disabled', true);
+        if ($(this).hasClass('active')) {
+            student_answers_array.push(ind.toString());
+        }
+    })
+
+    // only submit if at least one answer has been chosen
+    if (student_answers_array.length > 0) {
+        $.ajax({
+            type: 'POST',
+            url: window.location.pathname + "/multipleChoice/" + student_answers_array.join('_'),
+            success: function(d){
+              console.log("New answer recorded");
+            },
+            error: function(obj, st, err){
+              alert(err + "\n" + obj.responseText);
+            }
+        })
+    }
+};
+
+
 $(document).ready(function (){
   $('.student_choice').click(function(){
-    var indexArray = this.value; // to be updated to underscore_separated indices of selected buttons
-     $.ajax({
-         type: 'POST',
-         url: window.location.pathname + "/multipleChoice/" + indexArray,
-         success: function(d){
-           console.log("New answer recorded");
-         },
-         error: function(obj, st, err){
-           alert(err + "\n" + obj.responseText);
-         }
-       })
+    $(this).toggleClass('active');
   });
+
+  $('#multiple_choice_submit_button').click(function(){
+    $(this).prop('disabled', true).hide();
+    record_student_answer();
+  });
+
 
   var dataArray;
 
@@ -138,19 +160,25 @@ $(document).ready(function (){
     var el = "div#multiple_choice_chart";
 
     if(typeof dataArray === 'undefined') {
-    $.ajax({
-        type: 'GET',
-        url: window.location.pathname + "/multiple_choice_data_array",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function(response){
-            dataArray = response["multiple_choice_answers"];
-            appendBarChart(dataArray, el);
-        },
-        error: function(obj, st, err){
-          console.log("error");
+        if (!($('#multiple_choice_submit_button').prop('disabled'))) {
+            // if the student answer has not been recorded yet, do it now.
+            $('#multiple_choice_submit_button').prop('disabled', true).hide();
+            record_student_answer();
         }
-      });
+
+        $.ajax({
+            type: 'GET',
+            url: window.location.pathname + "/multiple_choice_data_array",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(response){
+                dataArray = response["multiple_choice_answers"];
+                appendBarChart(dataArray, el);
+            },
+            error: function(obj, st, err){
+                console.log("error");
+            }
+        });
     } else {
       //toggle visibility
       $(el).toggle();

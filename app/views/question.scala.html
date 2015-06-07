@@ -3,6 +3,7 @@
 @user = @{context.user}
 @q = @{qn.question}
 @number = @{qn.number}
+@multiple_choice_answers = @{qn.multiple_choice_answers}
 @course = @{qn.course}
 @term_year = @{ qn.term + "_" + qn.year.toString() }
 @stmt = @{qn.statement}
@@ -150,7 +151,7 @@
 
     <br>
 
-    
+
     <!--TODO: Contributors and SuperUsers are allowed to change the quality flags-->
     @if(context.user.isDefined & selectedCourse){
             <p id="statement_quality">
@@ -193,17 +194,21 @@
     }
 
     @if(!editable){
+        @multipleChoice(qn.is_multiple_choice, qn.multiple_choice_answers)
+    }
+
+    @if(!editable){
         <div class="message">
-        Make sure you understand the problem fully: 
+        Make sure you understand the problem fully:
         <ul>
-            <li>What is the question asking you to do? 
+            <li>What is the question asking you to do?
             <li>Are there specific conditions or constraints that you should take note of?</li>
             <li>How will you know if your answer is correct from your work only? </li>
             <li>Can you rephrase the question in your own words in a way that makes sense to you? </li>
         </ul>
 
-        If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it! 
-        </div>    
+        If you are stuck, check the hint below. Consider it for a while. Does it give you a new idea on how to approach the problem? If so, try it!
+        </div>
     }
 
     @if(context.user.isDefined & selectedCourse){
@@ -338,9 +343,11 @@
             <input style="width: 100%;" type="hidden" class="question_tags" @if(!editable){disabled} value=@topics.mkString(",")>
         </div>
     </div>
-    
+
 
 </div>
 }
 
 <script src="@routes.Assets.at("javascripts/question.js")" type="text/javascript"></script>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script src="@routes.Assets.at("javascripts/question_visualizations.js")" type="text/javascript"></script>

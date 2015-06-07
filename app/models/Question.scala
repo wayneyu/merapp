@@ -5,37 +5,77 @@ package models
  */
 
 import play.api.libs.functional.syntax._
-import play.api.libs.json.{JsPath, Reads}
+import play.api.libs.json.{Writes, JsPath, Reads}
 import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
 import reactivemongo.bson._
-import assets._
+import play.api.libs.json.Reads._ // Custom validation helpers
 
+
+
+// multiple_choice_answers
+case class multiple_choice_answers(
+            choice: String,
+            count: Int
+)
+
+object multiple_choice_answers {
+  implicit val multiple_choice_answers_reads: Reads[multiple_choice_answers] = (
+    (JsPath \ "choice").read[String] and
+    (JsPath \ "count").read[Int]
+    )(multiple_choice_answers.apply _)
+
+  implicit object multiple_choice_answers_reader extends BSONDocumentReader[multiple_choice_answers] {
+    def read(doc: BSONDocument): multiple_choice_answers = {
+      multiple_choice_answers(
+        doc.getAs[String]("choice").getOrElse(""),
+        doc.getAs[Int]("count").getOrElse(0)
+      )
+    }
+
+    implicit val multiple_choice_answers_writes: Writes[multiple_choice_answers] = (
+      (JsPath \ "choice").write[String] and
+        (JsPath \ "count").write[Int]
+      )(unlift(multiple_choice_answers.unapply))
+
+    implicit object multiple_choice_answers_writer extends BSONDocumentWriter[multiple_choice_answers] {
+      def write(mc: multiple_choice_answers): BSONDocument = BSONDocument(
+        "choice" -> BSONString(mc.choice),
+        "count" -> BSONInteger(mc.count)
+      )
+    }
+
+    val empty = multiple_choice_answers(choice = "",
+      count = 0)
+  }
+}
+
+
+// Question
 case class Question(course: String,
-                     year: Int,
-                     term: String,
-                     term_year: String,
-                     number: String,
-                     number_human: String,
-                     question: String, // deprecated, use number_human
-                     ID: String,
-                     is_multiple_choice: Boolean,
-                     multiple_choice_answers: List[String],
-                     statement: String,
-                     hints: List[String],
-                     sols: List[String],
-                     answer: String,
-                     topics: List[String],
-                     solvers: List[String],
-                     rating: Double,
-                     num_votes: Int,
-                     flags: List[String],
-                     contributors: List[String])
+                    term: String,
+                    year: Int,
+                    term_year: String,
+                    number: String,
+                    number_human: String,
+                    question: String, // deprecated, use number_human
+                    ID: String,
+                    is_multiple_choice: Boolean,
+                    multiple_choice_answers: List[multiple_choice_answers],
+                    statement: String,
+                    hints: List[String],
+                    sols: List[String],
+                    answer: String,
+                    topics: List[String],
+                    solvers: List[String],
+                    rating: Double,
+                    num_votes: Int,
+                    flags: List[String],
+                    contributors: List[String])
 {
   def url: String = controllers.routes.QuestionController.question(course, term_year, number).url
 
   def link: String = course + " - " + term + " " + year + " - " + number_human
 }
-
 
 object Question {
 // Generates Writes and Reads for Feed and User thanks to Json Macros
@@ -43,15 +83,15 @@ object Question {
 
   implicit val QuestionReads: Reads[Question] = (
         (JsPath \ "course").read[String] and
-        (JsPath \ "year").read[Int] and
         (JsPath \ "term").read[String] and
+        (JsPath \ "year").read[Int] and
         (JsPath \ "term_year").read[String] and
         (JsPath \ "number").read[String] and
         (JsPath \ "number_human").read[String] and
         (JsPath \ "question").read[String] and
         (JsPath \ "ID").read[String] and
         (JsPath \ "is_multiple_choice").read[Boolean] and
-        (JsPath \ "multiple_choice_answers").read[List[String]] and
+        (JsPath \ "multiple_choice_answers").read[List[multiple_choice_answers]] and
         (JsPath \ "statement_html").read[String] and
         (JsPath \ "hints_html").read[List[String]] and
         (JsPath \ "sols_html").read[List[String]] and
@@ -68,15 +108,15 @@ object Question {
     def read(doc: BSONDocument): Question = {
       Question(
         doc.getAs[String]("course").get,
-        doc.getAs[Int]("year").get,
         doc.getAs[String]("term").get,
+        doc.getAs[Int]("year").get,
         doc.getAs[String]("term_year").getOrElse(""),
         doc.getAs[String]("number").getOrElse(""),
         doc.getAs[String]("number_human").getOrElse(""),
         doc.getAs[String]("question").getOrElse(""),
         doc.getAs[String]("ID").getOrElse(""),
         doc.getAs[Boolean]("is_multiple_choice").getOrElse(false),
-        doc.getAs[List[String]]("multiple_choice_answers").getOrElse(Nil),
+        doc.getAs[List[multiple_choice_answers]]("multiple_choice_answers").getOrElse(Nil),
         doc.getAs[String]("statement_html").get,
         doc.getAs[List[String]]("hints_html").get,
         doc.getAs[List[String]]("sols_html").get,
@@ -94,31 +134,31 @@ object Question {
 	implicit object QuestionWriter extends BSONDocumentWriter[Question] {
 		def write(q: Question): BSONDocument = BSONDocument(
 			"course" -> BSONString(q.course),
-			"year" -> BSONInteger(q.year),
 			"term" -> BSONString(q.term),
+      "year" -> BSONInteger(q.year),
       "term_year" -> BSONString(q.term_year),
       "number" -> BSONString(q.number),
       "number_human" -> BSONString(q.number_human),
       "question" -> BSONString(q.question),
       "ID" -> BSONString(q.ID),
       "is_multiple_choice" -> BSONBoolean(q.is_multiple_choice),
-      "multiple_choice_answers" -> BSONArray(q.multiple_choice_answers),
+      "multiple_choice_answers" -> BSONArray(q.multiple_choice_answers.map{mc => BSONString(mc.toString)}),
 			"statement_html" -> BSONString(q.statement),
-			"hints_html" -> BSONArray(q.topics.map{ BSONString(_) }),
-			"sols_html" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"hints_html" -> BSONArray(q.topics.map{ BSONString }),
+			"sols_html" -> BSONArray(q.topics.map{ BSONString }),
 			"answer_html" -> BSONString(q.answer),
-			"topics" -> BSONArray(q.topics.map{ BSONString(_) }),
-			"solvers" -> BSONArray(q.topics.map{ BSONString(_) }),
+			"topics" -> BSONArray(q.topics.map{ BSONString }),
+			"solvers" -> BSONArray(q.topics.map{ BSONString }),
 			"rating" -> BSONDouble(q.rating),
 			"num_votes" -> BSONInteger(q.num_votes),
-			"flags" -> BSONArray(q.topics.map{ BSONString(_) }),
-			"contributors" -> BSONArray(q.topics.map{ BSONString(_) })
+			"flags" -> BSONArray(q.topics.map{ BSONString }),
+			"contributors" -> BSONArray(q.topics.map{ BSONString })
 		)
 	}
 
   val empty = Question(course = "",
-                       year = -1,
                        term = "",
+                       year = -1,
                        term_year = "",
                        number = "",
                        number_human = "",
@@ -147,6 +187,7 @@ object Question {
 	}
 }
 
+// SearchResult
 case class SearchResult (ID: String,
                       statement: String,
                       textScore: Double) {

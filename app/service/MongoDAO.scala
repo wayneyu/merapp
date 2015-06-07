@@ -30,6 +30,7 @@ object MongoDAO extends Controller with MongoController {
 	val usersCollection = db[BSONCollection]("users")
 	val profilesCollection = db[BSONCollection]("profiles")
 	val votesCollection = db[BSONCollection]("votes")
+	val multipleChoiceCollection = db[BSONCollection]("multipleChoice")
 
 
 
@@ -567,4 +568,52 @@ object MongoDAO extends Controller with MongoController {
     ))
     db.command(command)
   }
+
+
+	// MULTIPLE CHOICE ANSWERS
+
+	def getMultipleChoiceAnswers(ID: String): Future[Stream[BSONDocument]] = {
+    val command = Aggregate(questionCollection.name, Seq(
+    Match(BSONDocument("ID" -> ID)),
+    Project("_id" -> BSONInteger(0), "multiple_choice_answers" -> BSONInteger(1))
+    ))
+    db.command(command)
+  }
+
+  def insertMultipleChoice(mc: MultipleChoice, ID: String): Future[Option[BSONDocument]] = {
+    // use multipleChoiceWriter to insert into logging database
+    multipleChoiceCollection.insert[MultipleChoice](mc)
+    // update corresponding json value in questions database
+    updateQuestionMultipleChoice(mc, ID)
+  }
+
+  def insertMultipleChoice(mc: MultipleChoice, course: String, term_year: String, number: String): Unit = {
+    val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, number)
+    insertMultipleChoice(mc, ID)
+  }
+
+  def updateQuestionMultipleChoice(mc: MultipleChoice, ID: String):  Future[Option[BSONDocument]] = {
+    val selector = BSONDocument("ID" -> ID)
+    // db.questions.update({"ID": ID}, {"$inc": {"multiple_choice_answers.INDEX.count": 1}})
+    def updateCountCommand(index: Int)  = FindAndModify(
+      questionCollection.name,
+      selector,
+      Update(BSONDocument(
+        "$inc" -> BSONDocument("multiple_choice_answers." + s"$index" + ".count" -> BSONInteger(1))
+      ), fetchNewObject = true))
+
+    val res = for {
+      ind <- mc.indexArray
+    } yield db.command(updateCountCommand(ind))
+
+    res.head.map{ opt => opt.map{ doc =>
+      BSONDocument("multiple_choice_answers" -> doc.get("multiple_choice_answers"))
+    }
+    }
+  }
+
+
 }
+
+
+// a.flatMap{_.getAs[BSONArray]("topics")

@@ -1,0 +1,27 @@
+@(is_multiple_choice: Boolean, multiple_choice_answers: List[multiple_choice_answers])
+
+@*****************************************
+* logic for multipleChoice answer option *
+*****************************************@
+
+@if( {is_multiple_choice} ){
+<div id="multiple_choice">
+    <div>This is a <Strong>multiple choice question!</Strong> We encourage you to find your own answer and lock it <em>before looking at the solution.</em></div>
+    <div id="multiple_choice_input">
+        <div id="multiple_choice_buttons">
+            @for( (mc, index) <- {multiple_choice_answers}.zipWithIndex ){
+            <button type="button" class="btn student_choice" value="@index">@mc.choice</button>
+            }
+        </div>
+        <div id="multiple_choice_submit">
+            <button type="button" class="btn" id="multiple_choice_submit_button">Lock and record my answer!</button>
+        </div>
+    </div>
+
+    <div id="multiple_choice_result">
+        <button type="button" class="btn" id="multiple_choice_show_results">Show results!</button> to compare to what other students answered.
+        <div id="multiple_choice_chart"></div>
+    </div>
+</div>
+}
+

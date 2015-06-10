@@ -83,6 +83,10 @@ th{
     margin-left: 2em;
 }
 
+hr {
+    border-color: #96B3C5;
+}
+
 #exams td{
     padding-left: 0.25em;
 }

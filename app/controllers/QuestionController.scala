@@ -73,6 +73,13 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+	def question() = UserAwaredAction.async { implicit context =>
+		// Default to a hard-coded question when no question is selected
+		val course = "MATH100"
+		val term_year = "December_2014"
+		val q = "01_(a)"
+		questionResult(course, term_year, q, editable = false)
+	}
 
 	def question(course: String, term_year: String, q: String) = UserAwaredAction.async { implicit context =>
 		questionResult(course, term_year, q, editable = false)

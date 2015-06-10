@@ -23,7 +23,7 @@ object Application extends ServiceComponent {
     Future(Ok(views.html.team()))
   }
 
-  def questions = QuestionController.questions()
+  def questions = QuestionController.question()
 
   def editor = UserAwaredAction.async { implicit context =>
     Future(Ok(views.html.editor()))

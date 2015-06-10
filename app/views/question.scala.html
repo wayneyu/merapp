@@ -1,5 +1,6 @@
 @(qn: Question, editable: Boolean)(courses: List[String], terms: List[String], years: List[String], questions: List[String], selectedCourse: String, selectedYear: String, selectedTerm: String, selectedQuestion: String, userRating: Option[Int])(implicit context: service.AppContext[AnyContent])
 @import service.{Visitor, Contributor, SuperUser}
+@import helpers_views._
 @user = @{context.user}
 @q = @{qn.question}
 @number = @{qn.number}
@@ -28,58 +29,6 @@
 @solution_review = @{flags.contains("RS")}
 @solution_improve = @{flags.contains("QBS")}
 @solution_good = @{flags.contains("QGS")}
-@latexbuttons = {
-<div id="inputbuttons">
-    <!-- SYMBOLS -->
-    <div class=buttonbox style="width:40%;">
-        <a id="button17" class="latex_button">${\color{lightgray}x}^{p}$</a>
-        <a id="button1" class="latex_button">${\color{lightgray}x}_{n}$</a>
-        <a id="button3" class="latex_button">$\alpha$</a>
-        <a id="button12" class="latex_button">$\beta$</a>
-        <a id="button13" class="latex_button">$\gamma$</a>
-        <a id="button14" class="latex_button">$\delta$</a>
-        <a id="button15" class="latex_button">$\epsilon$</a>
-        <a id="button18" class="latex_button">$\lambda$</a>
-        <a id="button11" class="latex_button">$\pi$</a>
-        <a id="button10" class="latex_button">$\infty$</a>
-        <a id="button21" class="latex_button">$\mathbb{R}$</a>
-        <a id="button22" class="latex_button">$\mathbb{C}$</a>
-        <a id="button26" class="latex_button">$<$</a>
-        <a id="button23" class="latex_button">$\leq$</a>
-        <a id="button25" class="latex_button">$>$</a>
-        <a id="button24" class="latex_button">$\geq$</a>
-        <a id="button29" class="latex_button">$\sim$</a>
-        <a id="button31" class="latex_button">$\dots$</a>
-    </div>
-    <!-- OPERATORS -->
-    <div class=buttonbox style="width:30%;">
-        <a id="button20" class="latex_button">$\frac{a}{b}$</a>
-        <a id="button4" class="latex_button">$\frac{d}{dx}$</a>
-        <a id="button19" class="latex_button">$\frac{d^{2}}{dx^{2}}$</a>
-        <a id="button2" class="latex_button">$\int_{a}^{b}f(x)\,dx$</a>
-        <a id="button9" class="latex_button">$\lim_{x \rightarrow a}$</a>
-        <a id="button27" class="latex_button">$\sin\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button28" class="latex_button">$\cos\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button30" class="latex_button">$\sum_{i = 0}^{N}$</a>
-    </div>
-    <!-- ENVIRONMENTS, ETC. -->
-    <div class=buttonbox style="width:20%;">
-        <a id="button5" class="latex_button"><font color="blue">blue text</font></a>
-        <a id="button32" class="latex_button"><font color="red">red text</font></a>
-        <a id="button6" class="latex_button">equation</a>
-        <a id="button16" class="latex_button">align</a>
-        <a id="button33" class="latex_button">matrix</a>
-        <a id="button34" class="latex_button">piecewise</a>
-        <a id="button7" class="latex_button">$\left({\color{lightgray}\dots} \right)$</a>
-        <a id="button8" class="latex_button">$\left[{\color{lightgray}\dots} \right]$</a>
-    </div>
-</div>
-<div class="message">
-    All math must be written between a pair of '$' characters or in the 'equation' or 'align' environments which can be input by clicking the corresponding buttons below.<br><br>
-    Most math symbols are input as you would expect (i.e. the '+' operator is just the '+' button on the keyboard). Other symbols/functions can be input by clicking the buttons directly below. If you can't find the symbol you're looking for, you might be able to find it <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">here</a>.
-</div>
-}
-
 
 @main("Questions"){
 <div class="white_background_box_90">
@@ -182,7 +131,7 @@
     @if(editable){
         <div class="latex_edit_area" id="statement_html_edit">
             <div class="latex_box">
-                @latexbuttons
+                @_latex_buttons()
                 <textarea>@Html(stmt)</textarea>
                 <div class="latex_edit_render_area"></div>
                 <div>
@@ -194,7 +143,7 @@
     }
 
     @if(!editable){
-        @multipleChoice(qn.is_multiple_choice, qn.multiple_choice_answers)
+        @_multipleChoice(qn.is_multiple_choice, qn.multiple_choice_answers)
     }
 
     @if(!editable){
@@ -233,7 +182,7 @@
         @if(editable){
             <div class="latex_edit_area" id=@("hints_html-"+ind+"_edit")>
                 <div class="latex_box">
-                    @latexbuttons
+                    @_latex_buttons()
                     <textarea>@Html(h)</textarea>
                     <div class="latex_edit_render_area"></div>
                     <div>
@@ -263,7 +212,7 @@
     @if(editable){
         <div class="latex_edit_area" id=@("answer_html_edit")>
             <div class="latex_box">
-                @latexbuttons
+                @_latex_buttons()
                 <textarea>@Html(answer)</textarea>
                 <div class="latex_edit_render_area"></div>
                 <div>
@@ -290,12 +239,17 @@
     @for( (s, ind) <- sols.zipWithIndex ) {
     <div class="main_box @if(!editable){hideable_box}">
         <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-        <div>@Html(s)</div>
+        <div>
+            @_typo_form(s"https://docs.google.com/forms/d/1n6Pf-fegzLB4n1QYTHmxvIcIWr4swidLaTm1kekZk38/viewform?entry.86513335=$selectedCourse&entry.1104878578&entry.554346562=$selectedTerm+$selectedYear&entry.488130431&entry.2101116491=$selectedQuestion&entry.572580842&entry.336854578")
+            <hr>
+            <div>@Html(s)</div>
+        </div>
+
     </div>
     @if(editable){
     <div class="latex_edit_area" id=@("sols_html-"+ind+"_edit")>
         <div class="latex_box">
-            @latexbuttons
+            @_latex_buttons()
             <textarea>@Html(s)</textarea>
             <div class="latex_edit_render_area"></div>
             <div>

@@ -65,7 +65,7 @@ d3.json("/topics/withParents", function(error, root) {
   //     }
   // }
 
-  var handleVisibility = function(d) { //doesnt work
+  var handleVisibility = function(d) {
     var someRadius = d.parent === undefined ? root.r : d.parent.r;
     var radius = d.r * diameter / (someRadius * 2 + margin);
       if (this.getBBox().width>2*radius) {
@@ -140,13 +140,13 @@ d3.json("/topics/withParents", function(error, root) {
       .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
       .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
       .each("end", function(d) {
-        if (d.parent !== focus) this.style.display = "none";
         // http://bost.ocks.org/mike/transition/
         d3.select(this)
           .style("fill-opacity",handleFillOpacity)
           // .style("display", handleDisplay) //doesnt work, sdTODO
           .style("visibility", handleVisibility)
           ;
+        if (d.parent !== focus) this.style.display = "none";
       });
   }
 

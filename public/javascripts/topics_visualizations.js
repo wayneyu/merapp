@@ -102,7 +102,7 @@ d3.json("/topics/withParents", function(error, root) {
           tooltip.style("visibility", "hidden");
           })
     .on("mousemove", function(){
-          tooltip.style("top", (event.pageY+8)+"px").style("left",(event.pageX+13)+"px");
+          tooltip.style("top", (d3.event.pageY+8)+"px").style("left",(d3.event.pageX+13)+"px");
           })
     ;
 

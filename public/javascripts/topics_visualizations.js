@@ -92,9 +92,6 @@ d3.json("/topics/withParents", function(error, root) {
     .append("circle")
     .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
     .style("fill", function(d) { return d.children ? color(d.depth) : null; })
-    .each(function(d){
-      d3.selectAll(".node--leaf").on("click", function(d){ console.log("hep");});
-    })
     .on("click", handleClick)
     // .on('click', function(d) {debugger;})
     .on('mouseover', function(d){

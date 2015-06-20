@@ -15,8 +15,8 @@ var appendBarChart = function(dataArray, el) {
 
 
     var margin = {top: 20, right: 20, bottom: 40, left: 40};
-    var width = 300 - margin.left - margin.right;
-    var height = 120 - margin.top - margin.bottom;
+    var width = 400 - margin.left - margin.right;
+    var height = 200 - margin.top - margin.bottom;
 
     var barColorOnHover = 'grey';
     var barColorDefault = 'black';
@@ -111,7 +111,7 @@ var appendBarChart = function(dataArray, el) {
                   tooltip.style("visibility", "hidden");
                   })
             .on("mousemove", function(){
-                  tooltip.style("top", (event.pageY+8)+"px").style("left",(event.pageX+13)+"px");
+                  tooltip.style("top", (d3.event.pageY+8)+"px").style("left",(d3.event.pageX+13)+"px");
             })
     ;
 }

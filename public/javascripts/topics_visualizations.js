@@ -120,13 +120,14 @@ d3.json("/topics/withParents", function(error, root) {
     .style("display", function(d) { return d.parent === root ? null : "none"; })
     .style("pointer-events", 'none') //transparent to the events, aka pass it to the level below
     // .style("display", handleDisplay) //doesnt work, sdTODO
-    .style("visibility", handleVisibility)
     .on("click", handleClick)
     ;
 
   var node = svg.selectAll("circle,text");
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+  text.style("visibility", handleVisibility); //firefox can only getBBox() on svg elements _after_ rendering
 
   function zoom(d) {
     var focus0 = focus; focus = d;

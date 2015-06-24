@@ -470,3 +470,32 @@ $('body').on('click', '.quality_buttons button', function (e) {
         })
     };
 });
+
+display_prediction_result = function(reply) {
+    var res = "<Strong>Most likely topics of this question:</Strong><br><ul>";
+    jQuery.each(reply.topics, function() {
+        res += "<li>" + this.topic.replace(/_/g, " ") + " <em>(" + this.parent_topic.replace(/_/g, " ") + ")</em></li>";
+    })
+    res = res.concat("</ul>");
+    $("#predict_topic_result").hide().append(res).fadeIn(1200);
+}
+
+$('body').on('click', '#predict_topic_button', function (e) {
+    var data = {statement: $(this).val()};
+    $.ajax({
+        url: "http://54.67.49.244/api/result",
+        type: "POST",
+        data: JSON.stringify(data, null, '\t'),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+            display_prediction_result(result)
+            $('#predict_topic_button').prop('disabled', true)
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+             console.log('Could not predict topic');
+        }
+        });
+
+})
+

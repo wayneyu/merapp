@@ -115,6 +115,13 @@
             </p>
     }
 
+    <!-- Predict topic -->
+    @if(course == "MATH103") {
+    <!--Restrict to a subset of questions for testing-->
+        @_predict_topics(stmt)
+    }
+
+
     <div class="main_box">
         <div class="box_title">
             @assets.number_human_from_number(q)

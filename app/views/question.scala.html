@@ -134,9 +134,7 @@
         </div>
         <div>@Html(stmt)</div>
     </div>
-
-    @if(editable){
-        <div class="latex_edit_area" id="statement_html_edit">
+        <div class="latex_edit_area" id="statement_html_edit" style="display:none">
             <div class="latex_box">
                 @_latex_buttons()
                 <textarea>@Html(stmt)</textarea>
@@ -147,7 +145,7 @@
                 </div>
             </div>
         </div>
-    }
+        <button class="show_edit">Edit content above.</button>
 
     @if(!editable){
         @_multipleChoice(qn.is_multiple_choice, qn.multiple_choice_answers)
@@ -186,8 +184,7 @@
 
             <div>@Html(h)</div>
         </div>
-        @if(editable){
-            <div class="latex_edit_area" id=@("hints_html-"+ind+"_edit")>
+            <div class="latex_edit_area" id=@("hints_html-"+ind+"_edit") style="display:none">
                 <div class="latex_box">
                     @_latex_buttons()
                     <textarea>@Html(h)</textarea>
@@ -198,8 +195,9 @@
                     </div>
                 </div>
             </div>
-        }
+            <button class="show_edit">Edit content above.</button>
     }
+    <button class="add_content_button" id=@("hints_html-"+hints.length+"_edit")>Add another hint.</button>
 
     @if(!editable){
         <div class="message">Checking a solution serves two purposes:
@@ -216,8 +214,7 @@
         <div>@Html(answer)</div>
     </div>
 
-    @if(editable){
-        <div class="latex_edit_area" id=@("answer_html_edit")>
+        <div class="latex_edit_area" id=@("answer_html_edit") style="display:none">
             <div class="latex_box">
                 @_latex_buttons()
                 <textarea>@Html(answer)</textarea>
@@ -228,7 +225,7 @@
                 </div>
             </div>
         </div>
-    }
+        <button class="show_edit">Edit content above.</button>
 
     @if(context.user.isDefined & selectedCourse){
         <p id="solution_quality">
@@ -253,8 +250,7 @@
         </div>
 
     </div>
-    @if(editable){
-    <div class="latex_edit_area" id=@("sols_html-"+ind+"_edit")>
+    <div class="latex_edit_area" id=@("sols_html-"+ind+"_edit") style="display:none">
         <div class="latex_box">
             @_latex_buttons()
             <textarea>@Html(s)</textarea>
@@ -265,7 +261,7 @@
             </div>
         </div>
     </div>
-        }
+    <button class="show_edit">Edit content above.</button>
     }
 
     @if(editable){

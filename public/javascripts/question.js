@@ -499,3 +499,7 @@ $('body').on('click', '#predict_topic_button', function (e) {
 
 })
 
+$(".show_edit").click(function() {
+  $(this).prev().toggle();
+});
+

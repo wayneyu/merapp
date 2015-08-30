@@ -198,6 +198,9 @@
             <button class="show_edit">Edit content above.</button>
     }
     <button class="add_content_button" id=@("hints_html-"+hints.length+"_edit")>Add another hint.</button>
+    @if( hints.length > 1) {
+    <button class="remove_content_button" id=@("hints_html-"+hints.length+"_edit")>Remove last hint.</button>
+    }
 
     @if(!editable){
         <div class="message">Checking a solution serves two purposes:
@@ -262,6 +265,10 @@
         </div>
     </div>
     <button class="show_edit">Edit content above.</button>
+    }
+    <button class="add_content_button" id=@("sols_html-"+sols.length+"_edit")>Add another solution.</button>
+    @if( sols.length > 1) {
+    <button class="remove_content_button" id=@("sols_html-"+sols.length+"_edit")>Remove last solution.</button>
     }
 
     @if(editable){

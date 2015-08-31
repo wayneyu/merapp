@@ -134,6 +134,7 @@
         </div>
         <div>@Html(stmt)</div>
     </div>
+    @if(context.user.isDefined & selectedCourse){
         <div class="latex_edit_area" id="statement_html_edit" style="display:none">
             <div class="latex_box">
                 @_latex_buttons()
@@ -146,6 +147,7 @@
             </div>
         </div>
         <button class="show_edit">Edit content above.</button>
+    }
 
     @if(!editable){
         @_multipleChoice(qn.is_multiple_choice, qn.multiple_choice_answers)
@@ -184,6 +186,7 @@
 
             <div>@Html(h)</div>
         </div>
+        @if(context.user.isDefined & selectedCourse){
             <div class="latex_edit_area" id=@("hints_html-"+ind+"_edit") style="display:none">
                 <div class="latex_box">
                     @_latex_buttons()
@@ -196,11 +199,16 @@
                 </div>
             </div>
             <button class="show_edit">Edit content above.</button>
+        }
     }
-    <button class="add_content_button" id=@("hints_html-"+hints.length+"_edit")>Add another hint.</button>
-    @if( hints.length > 1) {
-    <button class="remove_content_button" id=@("hints_html-"+hints.length+"_edit")>Remove last hint.</button>
+
+    @if(context.user.isDefined & selectedCourse){
+        <button class="add_content_button" id=@("hints_html-" + hints.length + "_edit")>Add another hint.</button>
+        @if( hints.length > 1) {
+            <button class="remove_content_button" id=@("hints_html-" + (hints.length-1) + "_edit")>Remove last hint.</button>
+        }
     }
+
 
     @if(!editable){
         <div class="message">Checking a solution serves two purposes:
@@ -216,7 +224,7 @@
 
         <div>@Html(answer)</div>
     </div>
-
+    @if(context.user.isDefined & selectedCourse){
         <div class="latex_edit_area" id=@("answer_html_edit") style="display:none">
             <div class="latex_box">
                 @_latex_buttons()
@@ -229,6 +237,7 @@
             </div>
         </div>
         <button class="show_edit">Edit content above.</button>
+    }
 
     @if(context.user.isDefined & selectedCourse){
         <p id="solution_quality">
@@ -244,31 +253,36 @@
     }
 
     @for( (s, ind) <- sols.zipWithIndex ) {
-    <div class="main_box @if(!editable){hideable_box}">
-        <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
-        <div>
-            @_typo_form(s"https://docs.google.com/forms/d/1n6Pf-fegzLB4n1QYTHmxvIcIWr4swidLaTm1kekZk38/viewform?entry.86513335=$selectedCourse&entry.1104878578&entry.554346562=$selectedTerm+$selectedYear&entry.488130431&entry.2101116491=$selectedQuestion&entry.572580842&entry.336854578")
-            <hr>
-            <div>@Html(s)</div>
-        </div>
-
-    </div>
-    <div class="latex_edit_area" id=@("sols_html-"+ind+"_edit") style="display:none">
-        <div class="latex_box">
-            @_latex_buttons()
-            <textarea>@Html(s)</textarea>
-            <div class="latex_edit_render_area"></div>
+        <div class="main_box @if(!editable){hideable_box}">
+            <div class="box_title">Full Solution @if(ind > 0){(@{ind+1})}</div>
             <div>
-                <button class="render_button">render</button>
-                <button class="submit_button">submit changes</button>
+                @_typo_form(s"https://docs.google.com/forms/d/1n6Pf-fegzLB4n1QYTHmxvIcIWr4swidLaTm1kekZk38/viewform?entry.86513335=$selectedCourse&entry.1104878578&entry.554346562=$selectedTerm+$selectedYear&entry.488130431&entry.2101116491=$selectedQuestion&entry.572580842&entry.336854578")
+                <hr>
+                <div>@Html(s)</div>
             </div>
         </div>
-    </div>
-    <button class="show_edit">Edit content above.</button>
+
+        @if(context.user.isDefined & selectedCourse){
+            <div class="latex_edit_area" id=@("sols_html-"+ind+"_edit") style="display:none">
+                <div class="latex_box">
+                    @_latex_buttons()
+                    <textarea>@Html(s)</textarea>
+                    <div class="latex_edit_render_area"></div>
+                    <div>
+                        <button class="render_button">render</button>
+                        <button class="submit_button">submit changes</button>
+                    </div>
+                </div>
+            </div>
+            <button class="show_edit">Edit content above.</button>
+        }
     }
-    <button class="add_content_button" id=@("sols_html-"+sols.length+"_edit")>Add another solution.</button>
-    @if( sols.length > 1) {
-    <button class="remove_content_button" id=@("sols_html-"+sols.length+"_edit")>Remove last solution.</button>
+
+    @if(context.user.isDefined & selectedCourse){
+        <button class="add_content_button" id=@("sols_html-" + sols.length + "_edit")>Add another solution.</button>
+        @if( sols.length > 1) {
+            <button class="remove_content_button" id=@("sols_html-" + (sols.length-1) + "_edit")>Remove last solution.</button>
+        }
     }
 
     @if(editable){

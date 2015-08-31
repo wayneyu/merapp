@@ -87,6 +87,31 @@
         });
     });
 
+    $(".remove_content_button").click(function (){
+        var id = $(this).attr('id');
+        var which = id.split('-')[0] // hints_html or sols_html
+        var where = id.split('_edit')[0].split('-')[1];
+
+        var url = window.location.pathname + '/delete/' + which + '/' + where;
+        console.log(url)
+        var data = {'dummy': 'dummy'};
+
+        $.ajax({
+          contentType: 'application/json',
+          type: 'POST',
+          url: url,
+          data: JSON.stringify(data),
+          success: function(d){
+            location.reload();
+            console.log(url);
+          },
+          error: function(obj, st, err){
+            alert(err);
+          }
+        });
+    });
+
+
 
 
     //$(".latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags

@@ -106,6 +106,12 @@ object QuestionController extends ServiceComponent with MongoController {
 		}
 	}
 
+	def questionFindAndDeleteInArrary(course: String, term_year: String, q: String, what: String, where: Int) = ContributorAction.async(parse.json) { implicit context: AppContext[JsValue] =>
+		MongoDAO.removeInArray(course, term_year, q, what, where).map {
+			o => Ok(BSONDocumentFormat.writes(o.getOrElse(BSONDocument())))
+		}
+	}
+
 	def upload(path: String) = ContributorAction.async(parse.multipartFormData) { implicit context: AppContext[MultipartFormData[TemporaryFile]] =>
 		context.request.body.file("file").map { file =>
 			import java.io.File

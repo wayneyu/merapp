@@ -31,6 +31,8 @@ GET    /dashboard/:flag                                 controllers.QuestionCont
 
 
 GET    /questions/:course/:term_year/:q                 controllers.QuestionController.question(course: String, term_year: String, q: String)
+POST   /questions/:course/:term_year/:q                 controllers.QuestionController.questionFindAndModify(course: String, term_year: String, q: String)
+POST   /questions/:course/:term_year/:q/delete/:what/:where    controllers.QuestionController.questionFindAndDeleteInArrary(course: String, term_year: String, q: String, what: String, where: Int)
 GET    /questions/:course/:term_year/:q/json            controllers.QuestionController.questionInJson(course: String, term_year: String, q: String)
 GET    /questions/:course/:term_year/:n/multiple_choice_data_array                 controllers.QuestionController.multiple_choice_data_array(course: String, term_year: String, n: String)
 GET    /questions/:course/:term_year/:q/edit            controllers.QuestionController.questionEdit(course: String, term_year: String, q: String)

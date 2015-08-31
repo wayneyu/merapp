@@ -394,6 +394,42 @@ object MongoDAO extends Controller with MongoController {
 	}
 
 
+  def removeInArray(ID: String, what: String, where: Int): Future[Option[BSONDocument]] = {
+    // Removes element in array what by index where
+    val array_position = what + "." + where
+
+    val selector = BSONDocument("ID" -> ID)
+
+    // Deleting in MongoDB requires two steps:
+    // 1. Unset value (to null)
+    // 2. Remove null values
+
+    val modifier_unset = BSONDocument(
+      "$unset" -> BSONDocument(array_position -> 1)
+    )
+    val command_unset = FindAndModify(
+      questionCollection.name,
+      selector,
+      Update(modifier_unset, fetchNewObject = true),
+      upsert = true)
+    db.command(command_unset)
+
+    val modifier_remove = BSONDocument(
+      "$pull" -> BSONDocument(what -> BSONNull)
+    )
+    val command_remove = FindAndModify(
+      questionCollection.name,
+      selector,
+      Update(modifier_remove, fetchNewObject = false),
+      upsert = true)
+    db.command(command_remove)
+  }
+
+
+  def removeInArray(course: String, term_year: String, number: String, what: String, where: Int): Future[Option[BSONDocument]] = {
+    val ID = assets.ID_from_course_and_term_year_and_number(course, term_year, number)
+    removeInArray(ID, what, where)
+  }
 
 
 

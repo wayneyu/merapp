@@ -61,6 +61,57 @@
         });
     });
 
+    $(".add_content_button").click(function (){
+        var url = window.location.pathname;
+
+        var id = $(this).attr('id');
+        var newValue = "Insert new content please."
+
+//        key is of the form type_html_edit or type_html-num_edit where type is one of [statement, hints, answer, sols]
+//        if type indicates the array hints or sols we want to rewrite it to type_html.num because that is what MongoDB expects
+        var data = {};
+        var key = id.split('_edit')[0].replace('-', '.');
+        data[key] = newValue;
+
+        $.ajax({
+          contentType: 'application/json',
+          type: 'POST',
+          url: url,
+          data: JSON.stringify(data),
+          success: function(d){
+            location.reload();
+          },
+          error: function(obj, st, err){
+            alert(err);
+          }
+        });
+    });
+
+    $(".remove_content_button").click(function (){
+        var id = $(this).attr('id');
+        var which = id.split('-')[0] // hints_html or sols_html
+        var where = id.split('_edit')[0].split('-')[1];
+
+        var url = window.location.pathname + '/delete/' + which + '/' + where;
+        console.log(url)
+        var data = {'dummy': 'dummy'};
+
+        $.ajax({
+          contentType: 'application/json',
+          type: 'POST',
+          url: url,
+          data: JSON.stringify(data),
+          success: function(d){
+            location.reload();
+            console.log(url);
+          },
+          error: function(obj, st, err){
+            alert(err);
+          }
+        });
+    });
+
+
 
 
     //$(".latex_box #tags ul li:nth-child(1)").click(function() {   //this will apply to all anchor tags
@@ -498,4 +549,8 @@ $('body').on('click', '#predict_topic_button', function (e) {
         });
 
 })
+
+$(".show_edit").click(function() {
+  $(this).prev().toggle();
+});
 

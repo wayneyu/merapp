@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws,
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.0.akka23",
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.7.play23",
   "ws.securesocial" %% "securesocial" % "3.0-M1",
   "com.typesafe.play.plugins" %% "play-plugins-redis" % "2.3.1"
 )

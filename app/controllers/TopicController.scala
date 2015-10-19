@@ -6,7 +6,7 @@ import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.{AnyContent, Action, Controller}
 import play.modules.reactivemongo.MongoController
 import play.modules.reactivemongo.json.BSONFormats.BSONArrayFormat
-import reactivemongo.api.collections.default.BSONCollection
+import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.bson._
 import reactivemongo.core.commands.{Aggregate, Ascending, Match, Sort}
 import service._

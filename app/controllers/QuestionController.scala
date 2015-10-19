@@ -9,7 +9,7 @@ import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json._
 import play.api.mvc._
 import play.modules.reactivemongo.json.BSONFormats._
-import reactivemongo.api.collections.default.BSONCollection
+import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.RuntimeEnvironment
 import service._

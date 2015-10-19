@@ -18,7 +18,7 @@ package service
 
 import play.api.Logger
 import play.api.Play.current
-import reactivemongo.api.collections.default.BSONCollection
+import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.bson._
 import securesocial.core._
 import securesocial.core.providers.{MailToken, UsernamePasswordProvider}

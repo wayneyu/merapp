@@ -2,10 +2,9 @@ package service
 
 import models._
 import play.api._
-//import play.api.libs.json._
+import reactivemongo.api.collections.bson.BSONCollection
+
 import play.api.mvc._
-//import play.modules.reactivemongo.json.BSONFormats._
-import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson._
 import securesocial.core.BasicProfile
 
